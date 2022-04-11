@@ -16,14 +16,17 @@ import_group:
   release_imports: TRUE
   products:
     - id: ro
+    - id: omo
+      module_type: mirror
     - id: omim
       mirror_from: https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl
       module_type: custom
     - id: ordo
       mirror_from: http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl
+      module_type: custom
     - id: ncit
       module_type: custom
-    - id: do
+    - id: doid
       module_type: custom
     - id: icd10cm
       module_type: custom
@@ -32,22 +35,6 @@ import_group:
       module_type: custom
       mirror_from: https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl
 robot_java_args: '-Xmx20G'
-robot_report:
-  release_reports: False
-  fail_on: ERROR
-  use_labels: False
-  custom_profile: True
-  report_on:
-    - edit
-  custom_sparql_checks:
-    - equivalent-classes
-    - owldef-self-reference
-    - illegal-annotation-property
-    - taxon-range
-    - orcid-contributor
-    - obsolete-replaced_by
-  custom_sparql_exports:
-    - basic-report
 owltools_memory: '20G'
 create_obo_metadata: FALSE
 documentation:

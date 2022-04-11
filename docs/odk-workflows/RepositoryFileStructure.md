@@ -17,10 +17,11 @@ These are the current imports in MONDO-INGEST
 | Import | URL | Type |
 | ------ | --- | ---- |
 | ro | http://purl.obolibrary.org/obo/ro.owl | None |
+| omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
 | omim | https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl | custom |
-| ordo | http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl | None |
+| ordo | http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl | custom |
 | ncit | http://purl.obolibrary.org/obo/ncit.owl | custom |
-| do | http://purl.obolibrary.org/obo/do.owl | custom |
+| doid | http://purl.obolibrary.org/obo/doid.owl | custom |
 | icd10cm | https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb | custom |
 | icd10who | https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl | custom |
 
