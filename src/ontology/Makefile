@@ -13,8 +13,9 @@
 # ----------------------------------------
 # Standard Constants
 # ----------------------------------------
-# these can be overwritten on the command line
-
+# - these can be overwritten on the command line
+# - SPARQL_VALIDATION_CHECKS: ordo-mapping-annotations: If ORDO releases new mapping precision strings, this query can be
+# ...re-updated by instantiating its Jinja2 tempate by runing `src/scripts/ordo_report_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py`
 URIBASE=                    http://purl.obolibrary.org/obo
 ONT=                        mondo-ingest
 ONTBASE=                    $(URIBASE)/$(ONT)
@@ -28,6 +29,7 @@ RELEASEDIR=                 ../..
 REPORTDIR=                  reports
 TEMPLATEDIR=                ../templates
 TMPDIR=                     tmp
+MAPPINGSDIR=                mappings
 MIRRORDIR=                  mirror
 IMPORTDIR=                  imports
 SUBSETDIR=                  subsets
@@ -38,7 +40,7 @@ REPORT_FAIL_ON =            None
 REPORT_LABEL =              -l true
 REPORT_PROFILE_OPTS =       
 OBO_FORMAT_OPTIONS =        
-SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri 
+SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri ordo-mapping-annotations
 SPARQL_EXPORTS =            basic-report class-count-by-prefix edges xrefs obsoletes synonyms 
 ODK_VERSION_MAKEFILE =      v1.3.1
 

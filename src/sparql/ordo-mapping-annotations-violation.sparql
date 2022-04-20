@@ -1,0 +1,66 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix IAO: <http://purl.obolibrary.org/obo/IAO_>
+prefix ECO: <http://purl.obolibrary.org/obo/ECO_>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix oio: <http://www.geneontology.org/formats/oboInOwl#>
+prefix def: <http://purl.obolibrary.org/obo/IAO_0000115>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix obo: <http://purl.obolibrary.org/obo/>
+prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+
+SELECT ?cls ?mapping_precision_string
+
+WHERE {
+  VALUES ?mapping { oboInOwl:hasDbXref }
+  ?cls a owl:Class;
+     	?mapping ?value .
+
+  	?xref_anno a owl:Axiom ;
+           owl:annotatedSource ?cls ;
+           owl:annotatedProperty ?mapping ;
+           owl:annotatedTarget ?value ;
+           ECO:0000218 ?mapping_precision_string .
+
+  FILTER( !isBlank(?cls))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- NTBT (ORPHA code's Narrower Term maps to a Broader Term).\n- Inclusion term (The ORPHA code is included under a ICD10 category and has not its own code)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- NTBT (ORPHA code's Narrower Term maps to a Broader Term).\n- Attributed (The ICD10 code is attributed by Orphanet)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "NTBT (ORPHA code's Narrower Term maps to a Broader Term)"))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- NTBT (ORPHA code's Narrower Term maps to a Broader Term).\n- Index term (The ORPHA code is listed in the ICD10 Index)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- NTBT (ORPHA code's Narrower Term maps to a Broader Term).\n- Specific code (The ORPHA code has its own code in the ICD10)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "E (Exact mapping: the two concepts are equivalent)"))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- E (Exact mapping: the two concepts are equivalent).\n- Specific code (The ORPHA code has its own code in the ICD10)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- E (Exact mapping: the two concepts are equivalent).\n- Index term (The ORPHA code is listed in the ICD10 Index)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- E (Exact mapping: the two concepts are equivalent).\n- Inclusion term (The ORPHA code is included under a ICD10 category and has not its own code)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "BTNT (ORPHA code's Broader Term maps to a Narrower Term)"))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- BTNT (ORPHA code's Broader Term maps to a Narrower Term).\n- Specific code (The ORPHA code has its own code in the ICD10)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- BTNT (ORPHA code's Broader Term maps to a Narrower Term).\n- Attributed (The ICD10 code is attributed by Orphanet)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- BTNT (ORPHA code's Broader Term maps to a Narrower Term).\n- Inclusion term (The ORPHA code is included under a ICD10 category and has not its own code)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- BTNT (ORPHA code's Broader Term maps to a Narrower Term).\n- Index term (The ORPHA code is listed in the ICD10 Index)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "W (Wrong mapping: the two concepts are different)"))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- ND (not yet decided/unable to decide).\n- Attributed (The ICD10 code is attributed by Orphanet)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "ND (not yet decided/unable to decide)"))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- ND (not yet decided/unable to decide).\n- Index term (The ORPHA code is listed in the ICD10 Index)."))
+  
+    FILTER( !STRSTARTS(STR(?mapping_precision_string), "- ND (not yet decided/unable to decide).\n- Specific code (The ORPHA code has its own code in the ICD10)."))
+  
+}

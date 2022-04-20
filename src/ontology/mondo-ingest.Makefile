@@ -2,6 +2,10 @@
 ## 
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
+####################################
+### Standard constants #############
+####################################
+MAPPINGSDIR=                mappings
 
 ####################################
 ### Relevant signature #############
@@ -41,7 +45,12 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 			--update ../sparql/fix_illegal_punning_omim.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
 
-
+# $(COMPONENTSDIR)/ordo.owl:
+# - cavaets: The SPARQL update queries with the file name pattern `add-annotation-based-mappings[0-9].*\.ru` were last created on 2022/04/25.
+# ...If there is a new `ordo.owl` that has new ORDO 'mapping_precision_strings', then it is necessary to re-run
+# ...scripts/ordo_report_mapping_annotations/ordo_create_sparql__add_annotation_based_mappings.py
+# ...in order to create updated SPARQL update queries. Then, this makefile goal will need to be updated to use those new query files.
+# ...Also, the existing files with this name pattern should be deleted prior to running the script.
 $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ordo.owl.owl --select imports \
 		merge \
@@ -52,12 +61,18 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 			--update ../sparql/ordo-construct-subclass-from-part-of.ru \
 			--update ../sparql/ordo-construct-subsets.ru \
 			--update ../sparql/ordo-construct-d2g.ru \
+			--update ../sparql/ordo-add-annotation-based-mappings.ru \
 		filter -T $(TMPDIR)/ordo_relevant_signature.txt --trim false \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
 		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ordo.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ordo.owl -o $@; fi
 
+$(COMPONENTSDIR)/ordo.json: $(COMPONENTSDIR)/ordo.owl
+	$(ROBOT) convert -i $(COMPONENTSDIR)/ordo.owl -o $(COMPONENTSDIR)/ordo.json
+
+$(MAPPINGSDIR)/ordo.sssom.tsv: $(COMPONENTSDIR)/ordo.json
+	sssom parse $(COMPONENTSDIR)/ordo.json -I obographs-json -m $(MAPPINGSDIR)/ordo_metadata.sssom.yml -o $(MAPPINGSDIR)/ordo.sssom.tsv
 
 $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
@@ -65,7 +80,6 @@ $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		remove --term "http://purl.obolibrary.org/obo/NCIT_C179199" --axioms "equivalent" \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ncit.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ncit.owl -o $@; fi
-
 
 $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-doid.owl.owl --select imports \
@@ -115,8 +129,6 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 		relax \
 		reduce -r ELK \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
-
-
 
 ALL_COMPONENT_IDS=$(strip $(patsubst components/%.owl,%, $(OTHER_SRC)))
 
@@ -182,4 +194,3 @@ deploy-mondo-ingest:
 	@test $(GHVERSION)
 	ls -alt $(DEPLOY_ASSETS_MONDO_INGEST)
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
-
