@@ -102,7 +102,7 @@ $(IMPORTDIR)/icd10who_import.owl: $(MIRRORDIR)/icd10who.owl $(TMPDIR)/icd10who_r
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
 
-$(COMPONENTSDIR)/merged.owl: $(IMPORT_OWL_FILES)
+$(COMPONENTSDIR)/merged.owl:
 	if [ $(IMP) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $(IMPORT_OWL_FILES)) \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/merged.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/merged.owl -o $@; fi
 
@@ -119,3 +119,10 @@ ALL_SOURCE_DOCS=$(foreach n,$(IMPORTS), ../../docs/sources/$(n).md)
 	j2 "$(SOURCE_DOC_TEMPLATE)" $< > $@
 
 documentation: $(ALL_SOURCE_DOCS)
+
+build-mondo-ingest:
+	$(MAKE) refresh-imports
+	$(MAKE) prepare_release
+
+prepare_release:
+	echo "WARNING: Do not use prepare_release, use make build-mondo-ingest instead!"
