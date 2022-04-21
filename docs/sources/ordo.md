@@ -12,25 +12,25 @@
 
 
 ## Preprocessing:
-* EntityRemoval: 
-  * Orphanet:317343
-  * Orphanet:317344
-  * Orphanet:317345
-  * Orphanet:317346
-  * Orphanet:317348
-  * Orphanet:317349
-  * Orphanet:327767
-  * Orphanet:410295
-  * Orphanet:410296
-  * Orphanet:465410
-  * Orphanet:C016
-  * Orphanet:C017
-  * Orphanet:C020
-  * Orphanet:C022
-  * Orphanet:C025
-  * Orphanet:C026
-* EntityRemoval: Removing information that are on obsolete Mondo terms (MONDO:ObsoleteEquivalent).
-* Update: Updating the source with various SPARQL preprocessing steps
+* **EntityRemoval**: 
+    * Orphanet:317343
+    * Orphanet:317344
+    * Orphanet:317345
+    * Orphanet:317346
+    * Orphanet:317348
+    * Orphanet:317349
+    * Orphanet:327767
+    * Orphanet:410295
+    * Orphanet:410296
+    * Orphanet:465410
+    * Orphanet:C016
+    * Orphanet:C017
+    * Orphanet:C020
+    * Orphanet:C022
+    * Orphanet:C025
+    * Orphanet:C026
+* **EntityRemoval**: Removing information that are on obsolete Mondo terms (MONDO:ObsoleteEquivalent).
+* **Update**: Updating the source with various SPARQL preprocessing steps
     * [MONDO_INGEST_QUERY:fix_deprecated.ru](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_deprecated.ru)
     * [MONDO_INGEST_QUERY:fix_complex_reification.ru](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_complex_reification.ru)
     * [MONDO_INGEST_QUERY:fix_xref_prefixes.ru](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_xref_prefixes.ru)
@@ -45,5 +45,7 @@
 * For every orphanet class that is associated with more than a gene, we should check if that gene is associated with a subclass. If so, we could have a gap. We may want to use the d2g links for gap filling.
 * ORDO d2g relations follow some-some logic rather than OWL's all-some semantics. It is important not to import them blindly, see comments.
 
+
+The data pipeline that generates the source is implemented in `make`, in this source file: [src/ontology/mondo-ingest.Makefile](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/ontology/mondo-ingest.Makefile).
 
 You can make issues or ask questions about this source [here](https://github.com/monarch-initiative/mondo-ingest/issues).
