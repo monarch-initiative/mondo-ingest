@@ -3,12 +3,6 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-define generate_module
-	if [ $(IMP) = true ]; then $(ROBOT) remove -i $(MIRRORDIR)/$(1).owl -T $(TMPDIR)/$(1)_relevant_signature.txt --select complement --select "classes individuals" --trim false \
-		query --update ../sparql/fix_omimps.ru --update ../sparql/fix_hgnc_mappings.ru --update ../sparql/fix_deprecated.ru --update ../sparql/fix_complex_reification.ru \
-		annotate --ontology-iri $(URIBASE)/mondo/sources/$(1).owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/$(1).owl -o $@; fi
-endef
-
 ####################################
 ### Relevant signature #############
 ####################################
@@ -32,14 +26,23 @@ $(TMPDIR)/ordo_relevant_signature.txt: $(MIRRORDIR)/ordo.owl | $(TMPDIR)
 ### Ingest Modules #################
 ####################################
 
-# This section is concerned with identifiying 
+# This section is concerned with transforming the incoming sources into the
+# Monarch Ingest schema.
 
 $(IMPORTDIR)/omim_import.owl: $(MIRRORDIR)/omim.owl $(TMPDIR)/omim_relevant_signature.txt
-	$(call generate_module,omim)
-	
+	if [ $(IMP) = true ]; then $(ROBOT) remove -i $< --select imports \
+		remove -T $(TMPDIR)/omim_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		query \
+			--update ../sparql/fix_omimps.ru \
+			--update ../sparql/fix_hgnc_mappings.ru \
+			--update ../sparql/fix_deprecated.ru \
+			--update ../sparql/fix_complex_reification.ru \
+		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
+
 
 $(IMPORTDIR)/ordo_import.owl: $(MIRRORDIR)/ordo.owl $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt
-	$(ROBOT) merge -i $(MIRRORDIR)/ordo.owl \
+	$(ROBOT) remove -i $(MIRRORDIR)/ordo.owl --select imports \
+		merge \
 		query \
 			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
@@ -53,16 +56,64 @@ $(IMPORTDIR)/ordo_import.owl: $(MIRRORDIR)/ordo.owl $(TMPDIR)/ordo_relevant_sign
 		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ordo.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ordo.owl -o $@
 
+
 $(IMPORTDIR)/ncit_import.owl: $(MIRRORDIR)/ncit.owl $(TMPDIR)/ncit_relevant_signature.txt
-	$(ROBOT) remove -i $< -T $(TMPDIR)/ncit_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+	if [ $(IMP) = true ]; then $(ROBOT) remove -i $< --select imports \
+		remove -T $(TMPDIR)/ncit_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		remove -T config/properties.txt --select complement --select properties --trim true \
 		remove --term "http://purl.obolibrary.org/obo/NCIT_C179199" --axioms "equivalent" \
-		annotate --ontology-iri $(URIBASE)/mondo/sources/ncit.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ncit.owl -o $@
+		annotate --ontology-iri $(URIBASE)/mondo/sources/ncit.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ncit.owl -o $@; fi
+
 
 $(IMPORTDIR)/doid_import.owl: $(MIRRORDIR)/doid.owl $(TMPDIR)/doid_relevant_signature.txt
-	$(call generate_module,doid)
+	if [ $(IMP) = true ]; then $(ROBOT) remove -i $< --select imports \
+		remove -T $(TMPDIR)/doid_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		query \
+			--update ../sparql/fix_omimps.ru \
+			--update ../sparql/fix_hgnc_mappings.ru \
+			--update ../sparql/fix_deprecated.ru \
+			--update ../sparql/fix_complex_reification.ru \
+		remove -T config/properties.txt --select complement --select properties --trim true \
+		annotate --ontology-iri $(URIBASE)/mondo/sources/doid.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/doid.owl -o $@; fi
+
 
 $(IMPORTDIR)/icd10cm_import.owl: $(MIRRORDIR)/icd10cm.owl $(TMPDIR)/icd10cm_relevant_signature.txt
-	$(call generate_module,icd10cm)
+	if [ $(IMP) = true ]; then $(ROBOT) remove -i $< --select imports \
+		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select individuals \
+		remove --term "http://www.w3.org/2004/02/skos/core#notation" \
+		query \
+			--update ../sparql/fix_omimps.ru \
+			--update ../sparql/fix_hgnc_mappings.ru \
+			--update ../sparql/fix_deprecated.ru \
+			--update ../sparql/fix_complex_reification.ru \
+		remove -T config/properties.txt --select complement --select properties --trim true \
+		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
+
 
 $(IMPORTDIR)/icd10who_import.owl: $(MIRRORDIR)/icd10who.owl $(TMPDIR)/icd10who_relevant_signature.txt
-	$(call generate_module,icd10who)
+	if [ $(IMP) = true ]; then $(ROBOT) remove -i $< --select imports \
+		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select individuals \
+		query \
+			--update ../sparql/fix_omimps.ru \
+			--update ../sparql/fix_hgnc_mappings.ru \
+			--update ../sparql/fix_deprecated.ru \
+			--update ../sparql/fix_complex_reification.ru \
+		remove -T config/properties.txt --select complement --select properties --trim true \
+		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
+
+
+#################
+# Documentation #
+#################
+SOURCE_DOC_TEMPLATE=config/source_documentation.md.j2
+ALL_SOURCE_DOCS=$(foreach n,$(IMPORTS), ../../docs/sources/$(n).md)
+
+../../docs/sources/:
+	mkdir -p $@
+
+../../docs/sources/%.md: metadata/%.yml | ../../docs/sources/
+	j2 "$(SOURCE_DOC_TEMPLATE)" $< > $@
+
+documentation: $(ALL_SOURCE_DOCS)

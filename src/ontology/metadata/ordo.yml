@@ -1,0 +1,70 @@
+id: ORDO
+label: Orphanet Rare Disease Ontology
+prefix_map:
+  Orphanet: http://www.orpha.net/ORDO/Orphanet_
+issue_tracker: https://github.com/Orphanet/ORDO/issues
+homepage: http://www.orphadata.org/
+description: >
+  "The Orphanet Rare Disease ontology (ORDO) was jointly developed by Orphanet and the EBI to provide a structured vocabulary for rare diseases capturing relationships between diseases, genes and other relevant features which will form a useful resource for the computational analysis of rare diseases (https://www.orphadata.org)."
+preprocessing:
+  - type: EntityRemoval
+    entities:
+      - id: Orphanet:317343
+        type: owl:ObjectProperty
+      - id: Orphanet:317344
+        type: owl:ObjectProperty
+      - id: Orphanet:317345
+        type: owl:ObjectProperty
+      - id: Orphanet:317346
+        type: owl:ObjectProperty
+      - id: Orphanet:317348
+        type: owl:ObjectProperty
+      - id: Orphanet:317349
+        type: owl:ObjectProperty
+      - id: Orphanet:327767
+        type: owl:ObjectProperty
+      - id: Orphanet:410295
+        type: owl:ObjectProperty
+      - id: Orphanet:410296
+        type: owl:ObjectProperty
+      - id: Orphanet:465410
+        type: owl:ObjectProperty
+      - id: Orphanet:C016
+        type: owl:ObjectProperty
+      - id: Orphanet:C017
+        type: owl:ObjectProperty
+      - id: Orphanet:C020
+        type: owl:ObjectProperty
+      - id: Orphanet:C022
+        type: owl:ObjectProperty
+      - id: Orphanet:C025
+        type: owl:ObjectProperty
+      - id: Orphanet:C026
+        type: owl:ObjectProperty
+  - type: EntityRemoval
+    comment: Removing information that are on obsolete Mondo terms (MONDO:ObsoleteEquivalent).
+  - type: Update
+    comment: Updating the source with various SPARQL preprocessing steps
+    queries:
+        - id: MONDO_INGEST_QUERY:fix_deprecated.ru
+          see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_deprecated.ru
+        - id: MONDO_INGEST_QUERY:fix_complex_reification.ru
+          see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_complex_reification.ru
+        - id: MONDO_INGEST_QUERY:fix_xref_prefixes.ru
+          see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_xref_prefixes.ru
+        - id: MONDO_INGEST_QUERY:ordo-construct-subclass-from-part-of.ru
+          see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/ordo-construct-subclass-from-part-of.ru
+        - id: MONDO_INGEST_QUERY:ordo-construct-subsets.ru
+          see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/ordo-construct-subsets.ru
+        - id: MONDO_INGEST_QUERY:ordo-construct-d2g.ru
+          see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/ordo-construct-d2g.ru
+curation_instructions:
+  - description: For every orphanet class that is associated with more than a gene, we should check if that gene is associated with a subclass. If so, we could have a gap. We may want to use the d2g links for gap filling.
+  - description: ORDO d2g relations follow some-some logic rather than OWL's all-some semantics. It is important not to import them blindly, see comments.
+comment: >
+  ORDO is not really OWL in the strict sense. For example, disease 2 gene relationships follow the 
+  'some, some' logic (a disease may have basis in the mutation of one of these), 
+  while the OWL interpretation of these axioms is that the disease has basis in the mutation of 
+  all of them. Example: ramona wartz disease can have a mutation in _any_ (not all) of the genes
+  recorded in ORDO. This is why great care needs to be taking interpreting diesease 2 gene relationships during ingest!
+
