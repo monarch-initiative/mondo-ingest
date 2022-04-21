@@ -90,7 +90,6 @@ $(IMPORTDIR)/icd10cm_import.owl: $(MIRRORDIR)/icd10cm.owl $(TMPDIR)/icd10cm_rele
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
 
-
 $(IMPORTDIR)/icd10who_import.owl: $(MIRRORDIR)/icd10who.owl $(TMPDIR)/icd10who_relevant_signature.txt
 	if [ $(IMP) = true ]; then $(ROBOT) remove -i $< --select imports \
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select complement --select "classes individuals" --trim false \
@@ -103,6 +102,9 @@ $(IMPORTDIR)/icd10who_import.owl: $(MIRRORDIR)/icd10who.owl $(TMPDIR)/icd10who_r
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
 
+$(COMPONENTSDIR)/merged.owl: $(IMPORT_OWL_FILES)
+	if [ $(IMP) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $(IMPORT_OWL_FILES)) \
+		annotate --ontology-iri $(URIBASE)/mondo/sources/merged.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/merged.owl -o $@; fi
 
 #################
 # Documentation #

@@ -10,29 +10,10 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/mondo-ingest.owl>
-
-Import(<http://purl.obolibrary.org/obo/mondo-ingest/imports/ro_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/mondo-ingest/imports/omim_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/mondo-ingest/imports/ordo_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/mondo-ingest/imports/ncit_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/mondo-ingest/imports/do_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/mondo-ingest/imports/icd10cm_import.owl>)
-
-Import(<http://purl.obolibrary.org/obo/mondo-ingest/imports/icd10who_import.owl>)
-
-
-Import(<http://purl.obolibrary.org/obo/mondo-ingest/patterns/definitions.owl>)
-Annotation(dcterms:description "None")
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:description "This ontology contain different disease ontology and is created purely for alignment purposes.")
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Mondo Disease Ontology Ingest")
 
-
-Declaration(Class(<http://purl.obolibrary.org/obo/MONDO-INGEST_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -44,15 +25,6 @@ Declaration(AnnotationProperty(dcterms:title))
 AnnotationAssertion(rdfs:label dcterms:description "description")
 AnnotationAssertion(rdfs:label dcterms:license "license")
 AnnotationAssertion(rdfs:label dcterms:title "title")
-
-############################
-#   Classes
-############################
-
-# Class: <http://purl.obolibrary.org/obo/MONDO-INGEST_0000000> (root node)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MONDO-INGEST_0000000> "root node"@en)
-
 
 )
 
