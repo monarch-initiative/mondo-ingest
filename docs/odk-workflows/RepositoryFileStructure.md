@@ -18,12 +18,6 @@ These are the current imports in MONDO-INGEST
 | ------ | --- | ---- |
 | ro | http://purl.obolibrary.org/obo/ro.owl | None |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
-| omim | https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl | custom |
-| ordo | http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl | custom |
-| ncit | http://purl.obolibrary.org/obo/ncit.owl | custom |
-| doid | http://purl.obolibrary.org/obo/doid.owl | custom |
-| icd10cm | https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb | custom |
-| icd10who | https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl | custom |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:
@@ -36,4 +30,9 @@ These are the components in MONDO-INGEST
 
 | Filename | URL |
 | -------- | --- |
-| merged.owl | None |
+| omim.owl | https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl |
+| ordo.owl | http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl |
+| ncit.owl | http://purl.obolibrary.org/obo/ncit.owl |
+| doid.owl | http://purl.obolibrary.org/obo/ncit.owl |
+| icd10cm.owl | https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb |
+| icd10who.owl | https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl |

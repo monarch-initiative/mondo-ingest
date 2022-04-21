@@ -46,7 +46,7 @@ TODAY ?=                    $(shell date +%Y-%m-%d)
 OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
-OTHER_SRC =                 $(COMPONENTSDIR)/merged.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/omim.owl $(COMPONENTSDIR)/ordo.owl $(COMPONENTSDIR)/ncit.owl $(COMPONENTSDIR)/doid.owl $(COMPONENTSDIR)/icd10cm.owl $(COMPONENTSDIR)/icd10who.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
 FORMATS = $(sort  owl obo json owl)
@@ -91,7 +91,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro omo omim ordo ncit doid icd10cm icd10who
+IMPORTS =  ro omo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -262,30 +262,6 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combine
 		query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-## Module for ontology: omim
-
-$(IMPORTDIR)/omim_import.owl: $(MIRRORDIR)/omim.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in mondo-ingest.Makefile!" && false
-## Module for ontology: ordo
-
-$(IMPORTDIR)/ordo_import.owl: $(MIRRORDIR)/ordo.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in mondo-ingest.Makefile!" && false
-## Module for ontology: ncit
-
-$(IMPORTDIR)/ncit_import.owl: $(MIRRORDIR)/ncit.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in mondo-ingest.Makefile!" && false
-## Module for ontology: doid
-
-$(IMPORTDIR)/doid_import.owl: $(MIRRORDIR)/doid.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in mondo-ingest.Makefile!" && false
-## Module for ontology: icd10cm
-
-$(IMPORTDIR)/icd10cm_import.owl: $(MIRRORDIR)/icd10cm.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in mondo-ingest.Makefile!" && false
-## Module for ontology: icd10who
-
-$(IMPORTDIR)/icd10who_import.owl: $(MIRRORDIR)/icd10who.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in mondo-ingest.Makefile!" && false
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -332,6 +308,76 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 
 
 
+.PHONY: component-download-omim.owl
+component-download-omim.owl: | $(TMPDIR)
+	if [ $(IMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+
+$(COMPONENTSDIR)/omim.owl:  component-download-omim.owl
+	if [ $(COMP) = true ] ; then if cmp -s $(TMPDIR)/component-download-omim.owl.owl $@ ; then echo "Component identical."; else echo "Component is different, updating." && cp $(TMPDIR)/component-download-omim.owl.owl $@; fi; fi
+
+.PRECIOUS: $(COMPONENTSDIR)/omim.owl
+
+
+
+.PHONY: component-download-ordo.owl
+component-download-ordo.owl: | $(TMPDIR)
+	if [ $(IMP) = true ]; then $(ROBOT) merge -I http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+
+$(COMPONENTSDIR)/ordo.owl:  component-download-ordo.owl
+	if [ $(COMP) = true ] ; then if cmp -s $(TMPDIR)/component-download-ordo.owl.owl $@ ; then echo "Component identical."; else echo "Component is different, updating." && cp $(TMPDIR)/component-download-ordo.owl.owl $@; fi; fi
+
+.PRECIOUS: $(COMPONENTSDIR)/ordo.owl
+
+
+
+.PHONY: component-download-ncit.owl
+component-download-ncit.owl: | $(TMPDIR)
+	if [ $(IMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/ncit.owl \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+
+$(COMPONENTSDIR)/ncit.owl:  component-download-ncit.owl
+	if [ $(COMP) = true ] ; then if cmp -s $(TMPDIR)/component-download-ncit.owl.owl $@ ; then echo "Component identical."; else echo "Component is different, updating." && cp $(TMPDIR)/component-download-ncit.owl.owl $@; fi; fi
+
+.PRECIOUS: $(COMPONENTSDIR)/ncit.owl
+
+
+
+.PHONY: component-download-doid.owl
+component-download-doid.owl: | $(TMPDIR)
+	if [ $(IMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/ncit.owl \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+
+$(COMPONENTSDIR)/doid.owl:  component-download-doid.owl
+	if [ $(COMP) = true ] ; then if cmp -s $(TMPDIR)/component-download-doid.owl.owl $@ ; then echo "Component identical."; else echo "Component is different, updating." && cp $(TMPDIR)/component-download-doid.owl.owl $@; fi; fi
+
+.PRECIOUS: $(COMPONENTSDIR)/doid.owl
+
+
+
+.PHONY: component-download-icd10cm.owl
+component-download-icd10cm.owl: | $(TMPDIR)
+	if [ $(IMP) = true ]; then $(ROBOT) merge -I https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+
+$(COMPONENTSDIR)/icd10cm.owl:  component-download-icd10cm.owl
+	if [ $(COMP) = true ] ; then if cmp -s $(TMPDIR)/component-download-icd10cm.owl.owl $@ ; then echo "Component identical."; else echo "Component is different, updating." && cp $(TMPDIR)/component-download-icd10cm.owl.owl $@; fi; fi
+
+.PRECIOUS: $(COMPONENTSDIR)/icd10cm.owl
+
+
+
+.PHONY: component-download-icd10who.owl
+component-download-icd10who.owl: | $(TMPDIR)
+	if [ $(IMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+
+$(COMPONENTSDIR)/icd10who.owl:  component-download-icd10who.owl
+	if [ $(COMP) = true ] ; then if cmp -s $(TMPDIR)/component-download-icd10who.owl.owl $@ ; then echo "Component identical."; else echo "Component is different, updating." && cp $(TMPDIR)/component-download-icd10who.owl.owl $@; fi; fi
+
+.PRECIOUS: $(COMPONENTSDIR)/icd10who.owl
+
 
 
 # ----------------------------------------
@@ -356,48 +402,6 @@ mirror-ro: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/omo.owl
 mirror-omo: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/omo.owl --create-dirs -o $(MIRRORDIR)/omo.owl --retry 4 --max-time 200 && $(ROBOT) convert -i $(MIRRORDIR)/omo.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: omim
-.PHONY: mirror-omim
-.PRECIOUS: $(MIRRORDIR)/omim.owl
-mirror-omim: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: ordo
-.PHONY: mirror-ordo
-.PRECIOUS: $(MIRRORDIR)/ordo.owl
-mirror-ordo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: ncit
-.PHONY: mirror-ncit
-.PRECIOUS: $(MIRRORDIR)/ncit.owl
-mirror-ncit: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/ncit.owl --create-dirs -o $(MIRRORDIR)/ncit.owl --retry 4 --max-time 200 && $(ROBOT) convert -i $(MIRRORDIR)/ncit.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: doid
-.PHONY: mirror-doid
-.PRECIOUS: $(MIRRORDIR)/doid.owl
-mirror-doid: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/doid.owl --create-dirs -o $(MIRRORDIR)/doid.owl --retry 4 --max-time 200 && $(ROBOT) convert -i $(MIRRORDIR)/doid.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: icd10cm
-.PHONY: mirror-icd10cm
-.PRECIOUS: $(MIRRORDIR)/icd10cm.owl
-mirror-icd10cm: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: icd10who
-.PHONY: mirror-icd10who
-.PRECIOUS: $(MIRRORDIR)/icd10who.owl
-mirror-icd10who: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

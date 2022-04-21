@@ -18,22 +18,6 @@ import_group:
     - id: ro
     - id: omo
       module_type: mirror
-    - id: omim
-      mirror_from: https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl
-      module_type: custom
-    - id: ordo
-      mirror_from: http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl
-      module_type: custom
-    - id: ncit
-      module_type: custom
-    - id: doid
-      module_type: custom
-    - id: icd10cm
-      module_type: custom
-      mirror_from: https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
-    - id: icd10who
-      module_type: custom
-      mirror_from: https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl
 robot_java_args: '-Xmx20G'
 owltools_memory: '20G'
 create_obo_metadata: FALSE
@@ -41,4 +25,15 @@ documentation:
   documentation_system: mkdocs
 components:
   products:
-    - filename: merged.owl
+    - filename: omim.owl
+      source: https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl
+    - filename: ordo.owl
+      source: http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl
+    - filename: ncit.owl
+      source: http://purl.obolibrary.org/obo/ncit.owl
+    - filename: doid.owl
+      source: http://purl.obolibrary.org/obo/ncit.owl
+    - filename: icd10cm.owl
+      source: https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
+    - filename: icd10who.owl
+      source: https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl

@@ -10,6 +10,11 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/mondo-ingest.owl>
+
+Import(<http://purl.obolibrary.org/obo/mondo-ingest/imports/ro_import.owl>)
+
+Import(<http://purl.obolibrary.org/obo/mondo-ingest/imports/omo_import.owl>)
+
 Annotation(dcterms:description "This ontology contain different disease ontology and is created purely for alignment purposes.")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Mondo Disease Ontology Ingest")
