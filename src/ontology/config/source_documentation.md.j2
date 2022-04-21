@@ -1,0 +1,25 @@
+# MONDO - {{ id.upper() }} Alignment
+
+**Source name:** {{ label|default(id) }}
+
+**Source description:** {{ description }}
+
+**Homepage:** {{ homepage|default("None") }}
+
+**Comments about this source:** {{ comment|default("None") }}
+
+{% if preprocessing is defined %}
+## Preprocessing:
+{% for p in preprocessing -%}
+* {{ p.type }}: {{ p.comment|default("") }}{% if p.entities is defined %}{% for e in p.entities %}
+  * {{ e.id }}{% endfor %}{% endif %}{% if p.queries is defined %}{% for e in p.queries %}
+    * [{{ e.id }}]({{ e.see_also }}){% endfor %}{% endif %}
+{% endfor %}{% endif %}
+
+{% if curation_instructions is defined %}
+## Curation Instructions
+{% for c in curation_instructions %}
+* {{ c.description }}{% endfor %}
+{% endif %}
+
+You can make issues or ask questions about this source [here](https://github.com/monarch-initiative/mondo-ingest/issues).
