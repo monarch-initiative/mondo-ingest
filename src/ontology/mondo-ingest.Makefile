@@ -13,8 +13,8 @@
 
 # Obtains the entities of interest from an ontology, as specified in a bespoke sparql query (bespoke
 # for that ontology).
-$(TMPDIR)/%_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
-	$(ROBOT) query -i $(TMPDIR)/$<.owl -q "../sparql/$*-relevant-signature.sparql" $@
+$(TMPDIR)/%_relevant_signature.txt: component-download-%.owl | $(TMPDIR)
+	$(ROBOT) query -i "$(TMPDIR)/$<.owl" -q "../sparql/$*-relevant-signature.sparql" $@
 
 ### ORDO needs to be structurally changed before the query can be run..
 $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
@@ -79,7 +79,7 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt
 ICD10CM_URL="https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb"
 
 component-download-icd10cm.owl: | $(TMPDIR)
-	if [ $(IMP) = true ]; then wget $(ICD10CM_URL) -O $(TMPDIR)/icd10cm.tmp.owl && $(ROBOT) merge -i $(TMPDIR)/icd10cm.tmp.owl \
+	if [ $(MIR) = true ]; then wget $(ICD10CM_URL) -O $(TMPDIR)/icd10cm.tmp.owl && $(ROBOT) merge -i $(TMPDIR)/icd10cm.tmp.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt
@@ -118,18 +118,34 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 # Documentation #
 #################
 SOURCE_DOC_TEMPLATE=config/source_documentation.md.j2
+SOURCE_METRICS_TEMPLATE=config/source_metrics.md.j2
 ALL_SOURCE_DOCS=$(foreach n,$(IMPORTS), ../../docs/sources/$(n).md)
+ALL_METRICS_DOCS=$(foreach n,$(IMPORTS), ../../docs/metrics/$(n).md)
+ALL_DOCS=$(ALL_SOURCE_DOCS) $(ALL_METRICS_DOCS)
 
-../../docs/sources/:
+../../docs/sources/ ../../docs/metrics/:
 	mkdir -p $@
 
 ../../docs/sources/%.md: metadata/%.yml | ../../docs/sources/
 	j2 "$(SOURCE_DOC_TEMPLATE)" $< > $@
 
-documentation: $(ALL_SOURCE_DOCS)
+PREFIXES_METRICS=--prefix 'OMIM: http://omim.org/entry/' \
+	--prefix 'CHR: http://purl.obolibrary.org/obo/CHR_' \
+	--prefix 'UMLS: http://linkedlifedata.com/resource/umls/id/' \
+	--prefix 'HGNC: https://www.genenames.org/data/gene-symbol-report/\#!/hgnc_id/' \
+	--prefix 'biolink: https://w3id.org/biolink/vocab/'
+
+metadata/%-metrics.json: #components/%.owl
+	$(ROBOT) measure $(PREFIXES_METRICS) -i components/$*.owl --format json --metrics extended --output $@
+
+../../docs/metrics/%.md: | ../../docs/metrics/
+	j2 "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
+
+documentation: $(ALL_DOCS)
 
 build-mondo-ingest:
 	$(MAKE) refresh-imports
+	$(MAKE) documentation
 	$(MAKE) prepare_release
 
 DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) ../../mondo-ingest.owl ../../mondo-ingest.obo
