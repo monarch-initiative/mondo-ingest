@@ -135,10 +135,10 @@ PREFIXES_METRICS=--prefix 'OMIM: http://omim.org/entry/' \
 	--prefix 'HGNC: https://www.genenames.org/data/gene-symbol-report/\#!/hgnc_id/' \
 	--prefix 'biolink: https://w3id.org/biolink/vocab/'
 
-metadata/%-metrics.json: #components/%.owl
+metadata/%-metrics.json: components/%.owl
 	$(ROBOT) measure $(PREFIXES_METRICS) -i components/$*.owl --format json --metrics extended --output $@
 
-../../docs/metrics/%.md: | ../../docs/metrics/
+../../docs/metrics/%.md: metadata/%-metrics.json | ../../docs/metrics/
 	j2 "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
 
 documentation: $(ALL_DOCS)
