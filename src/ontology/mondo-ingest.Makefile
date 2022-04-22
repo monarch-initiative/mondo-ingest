@@ -119,8 +119,9 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 #################
 SOURCE_DOC_TEMPLATE=config/source_documentation.md.j2
 SOURCE_METRICS_TEMPLATE=config/source_metrics.md.j2
-ALL_SOURCE_DOCS=$(foreach n,$(IMPORTS), ../../docs/sources/$(n).md)
-ALL_METRICS_DOCS=$(foreach n,$(IMPORTS), ../../docs/metrics/$(n).md)
+ALL_COMPONENT_IDS=$(strip $(patsubst components/%.owl,%, $(OTHER_SRC)))
+ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/sources/$(n).md)
+ALL_METRICS_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/metrics/$(n).md)
 ALL_DOCS=$(ALL_SOURCE_DOCS) $(ALL_METRICS_DOCS)
 
 ../../docs/sources/ ../../docs/metrics/:

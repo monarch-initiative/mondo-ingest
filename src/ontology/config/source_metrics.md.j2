@@ -1,4 +1,4 @@
-{% set id = metrics.ontology_iri | replace('http://purl.obolibrary.org/obo/mondo-ingest/component-download-','') | replace('.owl', '') | upper() -%}
+{% set id = metrics.ontology_iri | replace('http://purl.obolibrary.org/obo/mondo/sources/','') | replace('.owl', '') | upper() -%}
 # Metrics {{ id }}
 
 **IRI:** {{ metrics.ontology_iri|default(id) }}
