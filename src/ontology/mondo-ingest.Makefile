@@ -138,7 +138,7 @@ MONDO_SSSOM_CONFIG_URL=https://raw.githubusercontent.com/monarch-initiative/mond
 metadata/mondo.sssom.config.yml:
 	wget $(MONDO_SSSOM_CONFIG_URL) -O $@
 
-../../mappings/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
+../../mappings/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml | ../../mappings/
 	sssom parse $< -I obographs-json -m metadata/mondo.sssom.config.yml -o $@
 
 mappings: sssom $(ALL_MAPPINGS)
@@ -152,7 +152,7 @@ ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/sources/$(n).md)
 ALL_METRICS_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/metrics/$(n).md)
 ALL_DOCS=$(ALL_SOURCE_DOCS) $(ALL_METRICS_DOCS)
 
-../../docs/sources/ ../../docs/metrics/:
+../../docs/sources/ ../../docs/metrics/ ../../mappings/:
 	mkdir -p $@
 
 ../../docs/sources/%.md: metadata/%.yml | ../../docs/sources/
