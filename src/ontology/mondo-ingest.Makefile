@@ -152,7 +152,7 @@ ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/sources/$(n).md)
 ALL_METRICS_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/metrics/$(n).md)
 ALL_DOCS=$(ALL_SOURCE_DOCS) $(ALL_METRICS_DOCS)
 
-../../docs/sources/ ../../docs/metrics/ ../../mappings/:
+../../docs/sources/ ../../docs/metrics/ ../mappings/:
 	mkdir -p $@
 
 ../../docs/sources/%.md: metadata/%.yml | ../../docs/sources/
