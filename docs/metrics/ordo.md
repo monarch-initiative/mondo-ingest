@@ -1,6 +1,7 @@
-# Metrics HTTP://PURL.OBOLIBRARY.ORG/OBO/MONDO/SOURCES/ORDO
+# Metrics ORDO
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ordo.owl
+
 **Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-04-22/ordo.owl
 
 ### Entities and axioms

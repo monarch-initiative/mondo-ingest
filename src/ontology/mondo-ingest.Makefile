@@ -14,12 +14,13 @@
 # Obtains the entities of interest from an ontology, as specified in a bespoke sparql query (bespoke
 # for that ontology).
 $(TMPDIR)/%_relevant_signature.txt: component-download-%.owl | $(TMPDIR)
-	$(ROBOT) query -i "$(TMPDIR)/$<.owl" -q "../sparql/$*-relevant-signature.sparql" $@
+	if [ $(COMP) = true ]; then $(ROBOT) query -i "$(TMPDIR)/$<.owl" -q "../sparql/$*-relevant-signature.sparql" $@; fi
+.PRECIOUS: $(TMPDIR)/%_relevant_signature.txt
 
 ### ORDO needs to be structurally changed before the query can be run..
 $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
-	$(ROBOT) query -i $(TMPDIR)/$<.owl --update ../sparql/ordo-construct-subclass-from-part-of.ru \
-		query -q "../sparql/ordo-relevant-signature.sparql" $@
+	if [ $(COMP) = true ]; then $(ROBOT) query -i $(TMPDIR)/$<.owl --update ../sparql/ordo-construct-subclass-from-part-of.ru \
+		query -q "../sparql/ordo-relevant-signature.sparql" $@; fi
 .PRECIOUS: $(TMPDIR)/ordo_relevant_signature.txt
 
 #######################################
@@ -138,6 +139,7 @@ PREFIXES_METRICS=--prefix 'OMIM: http://omim.org/entry/' \
 
 metadata/%-metrics.json: components/%.owl
 	$(ROBOT) measure $(PREFIXES_METRICS) -i components/$*.owl --format json --metrics extended --output $@
+.PRECIOUS: metadata/%-metrics.json
 
 ../../docs/metrics/%.md: metadata/%-metrics.json | ../../docs/metrics/
 	j2 "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@

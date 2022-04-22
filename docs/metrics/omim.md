@@ -1,6 +1,7 @@
-# Metrics HTTP://PURL.OBOLIBRARY.ORG/OBO/MONDO/SOURCES/OMIM
+# Metrics OMIM
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/omim.owl
+
 **Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-04-22/omim.owl
 
 ### Entities and axioms

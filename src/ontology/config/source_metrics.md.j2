@@ -2,6 +2,7 @@
 # Metrics {{ id }}
 
 **IRI:** {{ metrics.ontology_iri|default(id) }}
+
 **Version IRI:** {{ metrics.ontology_version_iri|default(id) }}
 
 ### Entities and axioms
@@ -49,7 +50,7 @@
 {% for key, value in metrics.class_expression_count.items() %}| {{ key }} | {{ value }} |
 {% endfor %}
 
-More information about the source can be found [in the documentation](../sources.md).
+More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
 
 You can make issues or ask questions about this source [here](https://github.com/monarch-initiative/mondo-ingest/issues).
 
