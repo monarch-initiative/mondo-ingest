@@ -115,12 +115,34 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 		reduce -r ELK \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 
+
+
+ALL_COMPONENT_IDS=$(strip $(patsubst components/%.owl,%, $(OTHER_SRC)))
+
+#################
+# Mappings ######
+#################
+ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), ../../mappings/$(n).md)
+
+$(TMPDIR)/component-%.json: components/%.owl
+	$(ROBOT) convert -i $< -f json -o $@
+.PRECIOUS: $(TMPDIR)/component-%.json
+
+MONDO_SSSOM_CONFIG_URL=https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/metadata/mondo.sssom.config.yml
+
+metadata/mondo.sssom.config.yml:
+	wget $(MONDO_SSSOM_CONFIG_URL) -O $@
+
+../../mappings/%.md: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
+	sssom parse $< -I obographs-json -m metadata/mondo.sssom.config.yml -o $@
+
+mappings: $(ALL_MAPPINGS)
+
 #################
 # Documentation #
 #################
 SOURCE_DOC_TEMPLATE=config/source_documentation.md.j2
 SOURCE_METRICS_TEMPLATE=config/source_metrics.md.j2
-ALL_COMPONENT_IDS=$(strip $(patsubst components/%.owl,%, $(OTHER_SRC)))
 ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/sources/$(n).md)
 ALL_METRICS_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/metrics/$(n).md)
 ALL_DOCS=$(ALL_SOURCE_DOCS) $(ALL_METRICS_DOCS)
