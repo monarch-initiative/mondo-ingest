@@ -310,7 +310,7 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 
 .PHONY: component-download-omim.owl
 component-download-omim.owl: | $(TMPDIR)
-	if [ $(IMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl \
+	if [ $(COMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/omim.owl:  component-download-omim.owl
@@ -322,7 +322,7 @@ $(COMPONENTSDIR)/omim.owl:  component-download-omim.owl
 
 .PHONY: component-download-ordo.owl
 component-download-ordo.owl: | $(TMPDIR)
-	if [ $(IMP) = true ]; then $(ROBOT) merge -I http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl \
+	if [ $(COMP) = true ]; then $(ROBOT) merge -I http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/ordo.owl:  component-download-ordo.owl
@@ -334,7 +334,7 @@ $(COMPONENTSDIR)/ordo.owl:  component-download-ordo.owl
 
 .PHONY: component-download-ncit.owl
 component-download-ncit.owl: | $(TMPDIR)
-	if [ $(IMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/ncit.owl \
+	if [ $(COMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/ncit.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/ncit.owl:  component-download-ncit.owl
@@ -346,7 +346,7 @@ $(COMPONENTSDIR)/ncit.owl:  component-download-ncit.owl
 
 .PHONY: component-download-doid.owl
 component-download-doid.owl: | $(TMPDIR)
-	if [ $(IMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/ncit.owl \
+	if [ $(COMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/ncit.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/doid.owl:  component-download-doid.owl
@@ -358,7 +358,7 @@ $(COMPONENTSDIR)/doid.owl:  component-download-doid.owl
 
 .PHONY: component-download-icd10cm.owl
 component-download-icd10cm.owl: | $(TMPDIR)
-	if [ $(IMP) = true ]; then $(ROBOT) merge -I https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb \
+	if [ $(COMP) = true ]; then $(ROBOT) merge -I https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/icd10cm.owl:  component-download-icd10cm.owl
@@ -370,7 +370,7 @@ $(COMPONENTSDIR)/icd10cm.owl:  component-download-icd10cm.owl
 
 .PHONY: component-download-icd10who.owl
 component-download-icd10who.owl: | $(TMPDIR)
-	if [ $(IMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl \
+	if [ $(COMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/icd10who.owl:  component-download-icd10who.owl
