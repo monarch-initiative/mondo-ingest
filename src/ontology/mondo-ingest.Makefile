@@ -29,7 +29,7 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 
 # This section is concerned with transforming the incoming sources into the
 # Monarch Ingest schema.
-
+# https://github.com/monarch-initiative/omim/issues/60
 $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
 		remove -T $(TMPDIR)/omim_relevant_signature.txt --select complement --select "classes individuals" --trim false \
