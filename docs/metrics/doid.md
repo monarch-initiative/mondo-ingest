@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-04-22/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-04-26/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
-| Annotation properties | 23 |
-| Axioms | 105383 |
-| Logical axioms | 15161 |
-| Classes | 14675 |
+| Annotation properties | 12 |
+| Axioms | 876371 |
+| Logical axioms | 202351 |
+| Classes | 172473 |
 | Object properties | 0 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,46 +32,38 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 75533 |
-| DisjointClasses | 26 |
-| Declaration | 14689 |
-| SubClassOf | 15135 |
+| AnnotationAssertion | 501522 |
+| EquivalentClasses | 5375 |
+| DatatypeDefinition | 19 |
+| DisjointClasses | 171 |
+| Declaration | 172498 |
+| SubClassOf | 196786 |
 
 
 #### Entity namespaces: axiom counts by namespace
 
 | Metric | Value |
 | ------ | ----- |
-| oboInOwl | 10 |
-| owl | 1 |
-| DOID | 13406 |
-| HP | 101 |
-| xsd | 2 |
-| CL | 63 |
-| skos | 5 |
-| rdfs | 2 |
-| FOODON | 24 |
-| NCBITaxon | 318 |
-| TRANS | 13 |
-| SYMP | 251 |
-| dc11 | 2 |
+| prefix_unknown | 1 |
+| NCIT | 172494 |
+| owl | 3 |
+| oboInOwl | 3 |
 | rdf | 1 |
-| CHEBI | 89 |
-| IAO | 2 |
-| UBERON | 385 |
-| SO | 16 |
-| GENO | 9 |
-| dc | 1 |
+| IAO | 1 |
+| xsd | 1 |
+| rdfs | 2 |
+| dc | 3 |
 
 
 #### Class expressions used
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 45157 |
+| Class | 583923 |
+| ObjectIntersectionOf | 5375 |
 
 
-More information about the source can be found [in the documentation](../sources.md).
+More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
 
 You can make issues or ask questions about this source [here](https://github.com/monarch-initiative/mondo-ingest/issues).
 
