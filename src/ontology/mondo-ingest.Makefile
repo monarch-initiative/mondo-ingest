@@ -167,6 +167,9 @@ metadata/%-metrics.json: components/%.owl
 ../../docs/metrics/%.md: metadata/%-metrics.json | ../../docs/metrics/
 	j2 "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
 
+j2:
+	pip install j2cli j2cli[yaml]
+
 documentation: $(ALL_DOCS)
 
 build-mondo-ingest:
