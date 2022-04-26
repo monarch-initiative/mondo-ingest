@@ -2,7 +2,7 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/icd10cm.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-04-22/icd10cm.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-04-26/icd10cm.owl
 
 ### Entities and axioms
 
@@ -52,7 +52,7 @@
 | Class | 287904 |
 
 
-More information about the source can be found [in the documentation](../sources.md).
+More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
 
 You can make issues or ask questions about this source [here](https://github.com/monarch-initiative/mondo-ingest/issues).
 
