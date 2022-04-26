@@ -170,7 +170,7 @@ metadata/%-metrics.json: components/%.owl
 j2:
 	pip install j2cli j2cli[yaml]
 
-documentation: $(ALL_DOCS)
+documentation: j2 $(ALL_DOCS)
 
 build-mondo-ingest:
 	$(MAKE) refresh-imports
