@@ -38,6 +38,7 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 			--update ../sparql/fix_hgnc_mappings.ru \
 			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
+			--update ../sparql/fix_illegal_punning_omim.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
 
 
