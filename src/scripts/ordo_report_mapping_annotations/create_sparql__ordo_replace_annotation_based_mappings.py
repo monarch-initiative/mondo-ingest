@@ -13,7 +13,7 @@ TODO 1: `robot` --> `sh run.sh robot...`
 """
 import os
 import subprocess
-from typing import Dict, List
+from typing import Dict
 
 from jinja2 import Template
 
@@ -31,10 +31,10 @@ SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 REQS_ERR = '`{}` must be present. To get it, run `sh src/ontology/run.sh make component-download-ordo.owl`.'
 # # Config
 CONFIG = {
-    'query_template_path': {
+    'input_paths': {
         'ontology': os.path.join(SOURCES_DIR, 'ordo.owl.owl'),
         'ontology_backup': os.path.join(SOURCES_DIR, 'component-download-ordo.owl.owl'),
-        'sparql_query': os.path.join(SPARQL_DIR, 'ordo-add-annotation-based-mappings.ru.jinja2'),
+        'sparql_query': os.path.join(SPARQL_DIR, 'ordo-replace-annotation-based-mappings.ru.jinja2'),
     },
     'output_path': os.path.join(PROJECT_DIR, 'ordo-new.owl'),
     'run_command': False  # If false, just instantiates templates and saves. If true, also runs them.
@@ -60,33 +60,26 @@ def sparql_jinja2_file_query__via_robot(
         os.makedirs(results_dirpath, exist_ok=True)
 
     # Instantiate template
-    i = 0
-    instantiated_paths: List[str] = []
-    for mapping_precision_string, relationship_curie in mapping_str__curie__map.items():
-        i += 1
-        with open(query_template_path, 'r') as f:
-            template_str = f.read()
-        template_obj = Template(template_str)
-        instantiated_str = template_obj.render(
-            mapping_precision_string=mapping_precision_string,
-            relationship_curie=relationship_curie)
-        instantiated_query_filename = os.path.basename(query_template_path).replace('.ru.jinja2', f'{str(i)}.ru')
-        instantiated_query_path = os.path.join(SPARQL_DIR, instantiated_query_filename)
-        if run_command:
-            instantiated_query_cache_path = os.path.join(results_dirpath, instantiated_query_filename)
-            # if not (os.path.exists(instantiated_query_path) and use_cache):
-            # Save to cache
-            with open(instantiated_query_cache_path, 'w') as f:
-                f.write(instantiated_str)
-        # Save to sparql dir
-        with open(instantiated_query_path, 'w') as f:
+    # TODO
+    with open(query_template_path, 'r') as f:
+        template_str = f.read()
+    template_obj = Template(template_str)
+    instantiated_str = template_obj.render(mapping_str__curie__map=mapping_str__curie__map)
+    instantiated_query_filename = os.path.basename(query_template_path).replace('.ru.jinja2', '.ru')
+    instantiated_query_path = os.path.join(SPARQL_DIR, instantiated_query_filename)
+    if run_command:
+        instantiated_query_cache_path = os.path.join(results_dirpath, instantiated_query_filename)
+        # if not (os.path.exists(instantiated_query_path) and use_cache):
+        # Save to cache
+        with open(instantiated_query_cache_path, 'w') as f:
             f.write(instantiated_str)
-        instantiated_paths.append(instantiated_query_path)
+    # Save to sparql dir
+    with open(instantiated_query_path, 'w') as f:
+        f.write(instantiated_str)
 
     report = {}
     if run_command:
-        update_args = '--update ' + ' --update '.join(instantiated_paths)  # skips first --update, so add to beginning
-        command_str = f'robot query --input {onto_path} {update_args} --output {output_path}'
+        command_str = f'robot query --input {onto_path} --update {instantiated_query_path} --output {output_path}'
 
         # Cache and run
         # if not (os.path.exists(results_path) and use_cache):

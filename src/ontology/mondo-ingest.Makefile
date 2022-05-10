@@ -61,7 +61,7 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 			--update ../sparql/ordo-construct-subclass-from-part-of.ru \
 			--update ../sparql/ordo-construct-subsets.ru \
 			--update ../sparql/ordo-construct-d2g.ru \
-			--update ../sparql/ordo-add-annotation-based-mappings.ru \
+			--update ../sparql/ordo-replace-annotation-based-mappings.ru \
 		filter -T $(TMPDIR)/ordo_relevant_signature.txt --trim false \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
