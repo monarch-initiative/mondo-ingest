@@ -37,3 +37,21 @@ components:
       source: https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
     - filename: icd10who.owl
       source: https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl
+robot_report:
+  release_reports: False
+  fail_on : ERROR
+  use_labels : False
+  custom_profile : True
+  report_on :
+    - edit
+  custom_sparql_checks :
+    - equivalent-classes
+    - owldef-self-reference
+    - properties-as-annotation-and-object
+    - missing-label
+    - illegal-annotation-property
+    - orcid-contributor
+    - iri-range
+    - ordo-mapping-annotations
+  custom_sparql_exports :
+    - basic-report

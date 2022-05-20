@@ -1,0 +1,16 @@
+mapping_set_id: http://purl.obolibrary.org/obo/mondo/mondo-ingest/mapping/ordo.sssom.tsv
+mapping_set_description: >
+  The file `ordo.sssom.tsv` is generated from within the mondo-ingest repository (https://github.com/monarch-initiative/mondo-ingest),
+  by running the command `make mappings/ordo.sssom.tsv` from within `src/ontology`.
+license: https://creativecommons.org/licenses/by/4.0/
+creator_id: https://orcid.org/0000-0002-2906-7319
+curie_map:
+  ICD10: http://apps.who.int/classifications/icd10/browse/2010/en#/
+  MedDRA: http://purl.bioontology.org/ontology/MEDDRA/
+  MESH: https://meshb.nlm.nih.gov/record/ui?ui=
+  oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+  OMIM: https://omim.org/entry/
+  Orphanet: http://www.orpha.net/ORDO/Orphanet_
+  skos: http://www.w3.org/2004/02/skos/core#
+  sssom: https://mapping-commons.github.io/sssom/purl/
+  UMLS: http://linkedlifedata.com/resource/umls/id/
