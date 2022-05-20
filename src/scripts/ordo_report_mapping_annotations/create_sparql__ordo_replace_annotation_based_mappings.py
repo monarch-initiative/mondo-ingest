@@ -5,8 +5,10 @@ Resources
 1. https://www.orpha.net/orphacom/cahiers/docs/GB/Orphanet_ICD10_coding_rules.pdf
 
 Prerequisites to run this script:
-1. `src/ontology/mirror/ordo.owl.owl` must be present. To get it, run `sh src/ontology/run.sh make component-download-ordo.owl`.
-2. Your pwd (present working directory) should be `src/scripts/ordo_report_mapping_annotations` in order for local imports to work.
+1. `src/ontology/mirror/ordo.owl.owl` must be present. To get it, run:
+`sh src/ontology/run.sh make component-download-ordo.owl`.
+2. Your pwd (present working directory) should be `src/scripts/ordo_report_mapping_annotations` in order for local
+imports to work.
 
 TODO's
 TODO 1: `robot` --> `sh run.sh robot...`
@@ -22,6 +24,8 @@ from report_mapping_annotations import run as get_report
 
 # Vars
 # # Paths
+# todo: I wonder if handling this duplicated code fragment (these path variables) would be a good idea.
+# noinspection DuplicatedCode
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 CACHE_DIR = os.path.join(SCRIPT_DIR, 'cache')
 PROJECT_DIR = os.path.join(SCRIPT_DIR, '..', '..', '..')
