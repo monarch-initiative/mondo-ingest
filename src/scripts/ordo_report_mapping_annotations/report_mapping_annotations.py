@@ -37,7 +37,7 @@ CONFIG = {
         'sparql_query': os.path.join(SPARQL_DIR, 'ordo-select-mapping-annotations.sparql'),
     },
     'use_cache': False,
-    '_print': False
+    '_print': True
 }
 
 
@@ -120,7 +120,7 @@ def get_ordo_mappings_report(
     return d2
 
 
-def run(input_paths: Dict[str, str] = CONFIG['query_template_path'], use_cache=False, _print=False) -> Dict:
+def run(input_paths: Dict[str, str] = CONFIG['query_template_path'], use_cache=False, _print=True) -> Dict:
     """Prints results in JSON"""
     # Check prerequisites
     onto_path: str = input_paths['ontology']

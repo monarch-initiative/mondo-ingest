@@ -2,6 +2,9 @@
 ## 
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
+.PHONY: deploy-mondo-ingest build-mondo-ingest documentation mappings update-jinja-sparql-queries \
+report-mapping-annotations
+
 ####################################
 ### Standard constants #############
 ####################################
@@ -45,12 +48,6 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 			--update ../sparql/fix_illegal_punning_omim.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
 
-# $(COMPONENTSDIR)/ordo.owl:
-# - cavaets: The SPARQL update queries with the file name pattern `add-annotation-based-mappings[0-9].*\.ru` were last created on 2022/04/25.
-# ...If there is a new `ordo.owl` that has new ORDO 'mapping_precision_strings', then it is necessary to re-run
-# ...scripts/ordo_report_mapping_annotations/ordo_create_sparql__add_annotation_based_mappings.py
-# ...in order to create updated SPARQL update queries. Then, this makefile goal will need to be updated to use those new query files.
-# ...Also, the existing files with this name pattern should be deleted prior to running the script.
 $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ordo.owl.owl --select imports \
 		merge \
@@ -150,6 +147,18 @@ metadata/mondo.sssom.config.yml:
 	sssom parse $< -I obographs-json -m metadata/mondo.sssom.config.yml -o $@
 
 mappings: $(ALL_MAPPINGS)
+
+#################
+# Utils #########
+#################
+# Documentation for this commands in this section is in: `docs/developer/ordo.md`
+
+report-mapping-annotations:
+	python $(SCRIPTSDIR)/ordo_report_mapping_annotations.py
+
+update-jinja-sparql-queries:
+	python $(SCRIPTSDIR)/create_sparql__ordo_replace_annotation_based_mappings.py
+	python $(SCRIPTSDIR)/create_sparql__ordo_mapping_annotations_violation.py
 
 #################
 # Documentation #

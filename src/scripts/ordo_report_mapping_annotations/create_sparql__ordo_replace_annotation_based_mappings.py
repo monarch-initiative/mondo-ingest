@@ -40,6 +40,8 @@ CONFIG = {
         'ontology_backup': os.path.join(SOURCES_DIR, 'component-download-ordo.owl.owl'),
         'sparql_query': os.path.join(SPARQL_DIR, 'ordo-replace-annotation-based-mappings.ru.jinja2'),
     },
+    # output_path: If `run_command` is True, will generate this. However, this is not part of the pipeline, so this
+    # ...output is probably just for ad-hoc analysis purposes.
     'output_path': os.path.join(PROJECT_DIR, 'ordo-new.owl'),
     'run_command': False  # If false, just instantiates templates and saves. If true, also runs them.
     # 'use_cache': True  # saves instantiated strings to cache/ anyway, but doesn't re-use them atm
@@ -109,7 +111,7 @@ def run(input_paths: Dict[str, str], output_path: str, run_command=False):
             raise FileNotFoundError(err)
 
     # Get current mappings
-    report: Dict = get_report()
+    report: Dict = get_report(_print=False)
     mapping_str__curie__map: Dict[str, str] = {}
     for mapping_info in report.values():
         for string in mapping_info['unique_mapping_strings']:
