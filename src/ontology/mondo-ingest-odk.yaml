@@ -39,7 +39,7 @@ components:
       source: https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl
 robot_report:
   release_reports: False
-  fail_on : ERROR
+  fail_on : None
   use_labels : False
   custom_profile : True
   report_on :
