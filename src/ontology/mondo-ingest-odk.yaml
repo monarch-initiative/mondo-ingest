@@ -45,12 +45,7 @@ robot_report:
   report_on :
     - edit
   custom_sparql_checks :
-    - equivalent-classes
-    - owldef-self-reference
     - properties-as-annotation-and-object
-    - illegal-annotation-property
-    - orcid-contributor
-    - iri-range
     - ordo-mapping-annotations
   custom_sparql_exports :
     - basic-report

@@ -39,7 +39,7 @@ REPORT_FAIL_ON =            ERROR
 REPORT_LABEL =              
 REPORT_PROFILE_OPTS =       --profile $(ROBOT_PROFILE)
 OBO_FORMAT_OPTIONS =        
-SPARQL_VALIDATION_CHECKS =  equivalent-classes owldef-self-reference properties-as-annotation-and-object illegal-annotation-property orcid-contributor iri-range ordo-mapping-annotations 
+SPARQL_VALIDATION_CHECKS =  properties-as-annotation-and-object ordo-mapping-annotations 
 SPARQL_EXPORTS =            basic-report 
 ODK_VERSION_MAKEFILE =      v1.3.1
 
