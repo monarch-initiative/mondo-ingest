@@ -30,7 +30,7 @@ These are the components in MONDO-INGEST
 
 | Filename | URL |
 | -------- | --- |
-| omim.owl | https://github.com/monarch-initiative/omim/releases/download/latest/omim.ttl |
+| omim.owl | https://github.com/monarch-initiative/omim/releases/latest/download/omim.ttl |
 | ordo.owl | http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl |
 | ncit.owl | http://purl.obolibrary.org/obo/ncit.owl |
 | doid.owl | http://purl.obolibrary.org/obo/ncit.owl |
