@@ -40,6 +40,7 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
 		remove -T $(TMPDIR)/omim_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		remove -T config/remove.txt --axioms equivalent \
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
