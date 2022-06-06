@@ -202,6 +202,8 @@ documentation: j2 $(ALL_DOCS)
 
 build-mondo-ingest:
 	$(MAKE) refresh-imports
+	$(MAKE) documentation
+	$(MAKE) mappings
 	$(MAKE) prepare_release
 
 DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) ../../mondo-ingest.owl ../../mondo-ingest.obo
