@@ -207,7 +207,7 @@ build-mondo-ingest:
 	$(MAKE) mappings
 	$(MAKE) prepare_release
 
-DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) ../../mondo-ingest.owl ../../mondo-ingest.obo
+DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
 
 deploy-mondo-ingest:
 	@test $(GHVERSION)
