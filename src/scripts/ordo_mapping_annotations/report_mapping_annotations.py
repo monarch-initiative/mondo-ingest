@@ -29,7 +29,7 @@ SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 REQS_ERR = '`{}` must be present. To get it, run `sh src/ontology/run.sh make component-download-ordo.owl`.'
 # # Config
 CONFIG = {
-    'query_template_path': {
+    'input_paths': {
         'ontology': os.path.join(SOURCES_DIR, 'ordo.owl.owl'),
         'ontology_backup': os.path.join(SOURCES_DIR, 'component-download-ordo.owl.owl'),
         'mapping_code_meanings': os.path.join(
@@ -120,7 +120,7 @@ def get_ordo_mappings_report(
     return d2
 
 
-def run(input_paths: Dict[str, str] = CONFIG['query_template_path'], use_cache=False, _print=True) -> Dict:
+def run(input_paths: Dict[str, str] = CONFIG['input_paths'], use_cache=False, _print=True) -> Dict:
     """Prints results in JSON"""
     # Check prerequisites
     onto_path: str = input_paths['ontology']

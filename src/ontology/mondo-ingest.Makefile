@@ -160,11 +160,11 @@ mappings: sssom $(ALL_MAPPINGS)
 # Documentation for this commands in this section is in: `docs/developer/ordo.md`
 
 report-mapping-annotations:
-	python3 -m pip install -r $(RELEASEDIR)/requirements.txt
+# 	python3 -m pip install -r $(RELEASEDIR)/requirements.txt
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
 
 update-jinja-sparql-queries:
-	python3 -m pip install -r $(RELEASEDIR)/requirements.txts
+# 	python3 -m pip install -r $(RELEASEDIR)/requirements.txt
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
