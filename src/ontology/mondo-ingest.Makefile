@@ -160,11 +160,9 @@ mappings: sssom $(ALL_MAPPINGS)
 # Documentation for this commands in this section is in: `docs/developer/ordo.md`
 
 report-mapping-annotations:
-# 	python3 -m pip install -r $(RELEASEDIR)/requirements.txt
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
 
 update-jinja-sparql-queries:
-# 	python3 -m pip install -r $(RELEASEDIR)/requirements.txt
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
@@ -213,3 +211,26 @@ deploy-mondo-ingest:
 	@test $(GHVERSION)
 	ls -alt $(DEPLOY_ASSETS_MONDO_INGEST)
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
+
+tmp/mondo-ingest.owl:
+	wget https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/mondo-ingest.owl -O $@
+
+tmp/mondo.owl:
+	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
+
+tmp/mondo.sssom.tsv:
+	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
+
+tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
+	sssom convert $< -O rdf -o $@
+
+# Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
+
+tmp/merged.owl: tmp/mondo.owl tmp/mondo-ingest.owl tmp/mondo.sssom.ttl
+	$(ROBOT) merge -i tmp/mondo.owl -i tmp/mondo-ingest.owl -i tmp/mondo.sssom.ttl -o $@
+
+$(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
+	$(ROBOT) query -i tmp/merged.owl --query $< $@
+
+.PHONY: mondo-ordo-subclass
+mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
