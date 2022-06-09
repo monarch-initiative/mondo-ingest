@@ -66,12 +66,6 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ordo.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ordo.owl -o $@; fi
 
-$(COMPONENTSDIR)/ordo.json: $(COMPONENTSDIR)/ordo.owl
-	$(ROBOT) convert -i $(COMPONENTSDIR)/ordo.owl -o $(COMPONENTSDIR)/ordo.json
-
-$(MAPPINGSDIR)/ordo.sssom.tsv: $(COMPONENTSDIR)/ordo.json
-	sssom parse $(COMPONENTSDIR)/ordo.json -I obographs-json -m $(MAPPINGSDIR)/ordo_metadata.sssom.yml -o $(MAPPINGSDIR)/ordo.sssom.tsv
-
 $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
 		remove -T $(TMPDIR)/ncit_relevant_signature.txt --select complement --select "classes individuals" --trim false \
@@ -151,6 +145,12 @@ metadata/mondo.sssom.config.yml:
 
 ../mappings/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
 	sssom parse $< -I obographs-json -m metadata/mondo.sssom.config.yml -o $@
+
+$(MAPPINGSDIR)/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
+	sssom parse $(COMPONENTSDIR)/ordo.json -I obographs-json -m metadata/ordo.metadata.sssom.yml -o $@
+
+$(MAPPINGSDIR)/doid.sssom.tsv: $(TMPDIR)/component-doid.json
+	sssom parse $(COMPONENTSDIR)/doid.json -I obographs-json -m metadata/doid.metadata.sssom.yml -o $@
 
 mappings: sssom $(ALL_MAPPINGS)
 

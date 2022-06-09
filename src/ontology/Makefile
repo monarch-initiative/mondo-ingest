@@ -354,7 +354,7 @@ $(COMPONENTSDIR)/ncit.owl:  component-download-ncit.owl
 
 .PHONY: component-download-doid.owl
 component-download-doid.owl: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/ncit.owl \
+	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/doid.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/doid.owl:  component-download-doid.owl

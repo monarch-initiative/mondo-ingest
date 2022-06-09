@@ -33,6 +33,6 @@ These are the components in MONDO-INGEST
 | omim.owl | https://github.com/monarch-initiative/omim/releases/latest/download/omim.ttl |
 | ordo.owl | http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl |
 | ncit.owl | http://purl.obolibrary.org/obo/ncit.owl |
-| doid.owl | http://purl.obolibrary.org/obo/ncit.owl |
+| doid.owl | http://purl.obolibrary.org/obo/doid.owl |
 | icd10cm.owl | https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb |
 | icd10who.owl | https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl |
