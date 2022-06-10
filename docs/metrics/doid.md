@@ -2,17 +2,17 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-04-26/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-06-09/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
-| Annotation properties | 12 |
-| Axioms | 876371 |
-| Logical axioms | 202351 |
-| Classes | 172473 |
-| Object properties | 0 |
+| Annotation properties | 24 |
+| Axioms | 120439 |
+| Logical axioms | 20491 |
+| Classes | 17898 |
+| Object properties | 2 |
 | Data properties | 0 |
 | Individuals | 0 |
 
@@ -32,35 +32,50 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 501522 |
-| EquivalentClasses | 5375 |
-| DatatypeDefinition | 19 |
-| DisjointClasses | 171 |
-| Declaration | 172498 |
-| SubClassOf | 196786 |
+| AnnotationAssertion | 82035 |
+| DisjointClasses | 26 |
+| Declaration | 17913 |
+| SubClassOf | 20465 |
 
 
 #### Entity namespaces: axiom counts by namespace
 
 | Metric | Value |
 | ------ | ----- |
-| prefix_unknown | 1 |
-| NCIT | 172494 |
+| DISDRIV | 8 |
+| NCIT | 1 |
 | owl | 3 |
-| oboInOwl | 3 |
-| rdf | 1 |
-| IAO | 1 |
-| xsd | 1 |
+| DOID | 13463 |
+| HP | 439 |
+| xsd | 2 |
+| skos | 5 |
+| BFO | 2 |
 | rdfs | 2 |
-| dc | 3 |
+| FOODON | 56 |
+| UPHENO | 1 |
+| TRANS | 32 |
+| CHEBI | 373 |
+| UBERON | 788 |
+| SO | 245 |
+| ExO | 4 |
+| oboInOwl | 10 |
+| CL | 184 |
+| NCBITaxon | 1095 |
+| SYMP | 960 |
+| ECO | 13 |
+| dc11 | 2 |
+| rdf | 1 |
+| IAO | 2 |
+| obo | 204 |
+| GENO | 31 |
+| dc | 1 |
 
 
 #### Class expressions used
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 583923 |
-| ObjectIntersectionOf | 5375 |
+| Class | 59039 |
 
 
 More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
