@@ -8,7 +8,7 @@ report-mapping-annotations
 ####################################
 ### Standard constants #############
 ####################################
-MAPPINGSDIR=                mappings
+MAPPINGSDIR=../mappings
 
 ####################################
 ### Relevant signature #############
@@ -146,11 +146,15 @@ metadata/mondo.sssom.config.yml:
 ../mappings/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
 	sssom parse $< -I obographs-json -m metadata/mondo.sssom.config.yml -o $@
 
-$(MAPPINGSDIR)/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
+../mappings/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
 	sssom parse $(COMPONENTSDIR)/ordo.json -I obographs-json -m metadata/ordo.metadata.sssom.yml -o $@
 
-$(MAPPINGSDIR)/doid.sssom.tsv: $(TMPDIR)/component-doid.json
+../mappings/doid.sssom.tsv: $(TMPDIR)/component-doid.json
 	sssom parse $(COMPONENTSDIR)/doid.json -I obographs-json -m metadata/doid.metadata.sssom.yml -o $@
+
+../mappings/omim.sssom.tsv: $(TMPDIR)/component-omim.json
+	sssom parse $(COMPONENTSDIR)/omim.json -I obographs-json -m metadata/omim.metadata.sssom.yml -o $@
+
 
 mappings: sssom $(ALL_MAPPINGS)
 
