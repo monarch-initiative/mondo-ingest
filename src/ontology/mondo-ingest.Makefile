@@ -144,16 +144,16 @@ metadata/mondo.sssom.config.yml:
 	wget $(MONDO_SSSOM_CONFIG_URL) -O $@
 
 ../mappings/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
-	sssom parse $< -I obographs-json -m metadata/mondo.sssom.config.yml -o $@
+	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
 
 ../mappings/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
-	sssom parse $< -I obographs-json -m metadata/ordo.metadata.sssom.yml -o $@
+	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/ordo.metadata.sssom.yml -o $@
 
 ../mappings/doid.sssom.tsv: $(TMPDIR)/component-doid.json
-	sssom parse $< -I obographs-json -m metadata/doid.metadata.sssom.yml -o $@
+	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/doid.metadata.sssom.yml -o $@
 
 ../mappings/omim.sssom.tsv: $(TMPDIR)/component-omim.json
-	sssom parse $< -I obographs-json -m metadata/omim.metadata.sssom.yml -o $@
+	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/omim.metadata.sssom.yml -o $@
 
 mappings: sssom $(ALL_MAPPINGS)
 
