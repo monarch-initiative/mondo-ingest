@@ -238,8 +238,8 @@ $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupport
 .PHONY: mondo-ordo-subclass
 mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
 
-reports/mirror_signature-%.tsv: mirror/%.owl
-	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
+reports/mirror_signature-%.tsv: component-download-%.owl
+	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
 
 reports/component_signature-%.tsv: components/%.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
