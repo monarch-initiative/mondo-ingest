@@ -237,3 +237,16 @@ $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupport
 
 .PHONY: mondo-ordo-subclass
 mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
+
+reports/mirror_signature-%.tsv: mirror/%.owl
+	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
+
+reports/component_signature-%.tsv: components/%.owl
+	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
+
+ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
+ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror_signature-$(n).tsv)
+
+.PHONY: signature_reports
+signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
+	echo "Finished running signature reports.."
