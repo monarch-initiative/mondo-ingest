@@ -1,0 +1,725 @@
+term_id	term_label	exclusion_reason	exclude_children
+ICD10CM:B95	"Streptococcus, Staphylococcus, and Enterococcus as the cause of diseases classified elsewhere"	disease causing agents	TRUE
+ICD10CM:B96	Other bacterial agents as the cause of diseases classified elsewhere	disease causing agents	TRUE
+ICD10CM:B97	Viral agents as the cause of diseases classified elsewhere	disease causing agents	TRUE
+ICD10CM:C7A	Malignant neuroendocrine tumors (C7A)	phenotype for tumor	TRUE
+ICD10CM:C7B	Secondary neuroendocrine tumors (C7B)	phenotype (for metastasis)	TRUE
+ICD10CM:D78	Intraoperative and postprocedural complications of the spleen	this is a post surgery/procedure complication (does not follow a pathological process). 	TRUE
+ICD10CM:E15	Nondiabetic hypoglycemic coma	phenotype	TRUE
+ICD10CM:E16.0	Drug-induced hypoglycemia without coma	phenotype	TRUE
+ICD10CM:E16.1	Other hypoglycemia	phenotype	TRUE
+ICD10CM:E16.2	"Hypoglycemia, unspecified"	phenotype	TRUE
+ICD10CM:E16.3	Increased secretion of glucagon	phenotype	TRUE
+ICD10CM:E16.4	Increased secretion of gastrin	phenotype	TRUE
+ICD10CM:E36	Intraoperative complications of endocrine system	this is a post surgery/procedure complication (does not follow a pathological process). 	TRUE
+ICD10CM:E89	"Postprocedural endocrine and metabolic complications and disorders, not elsewhere classified"	this is a post surgery/procedure complication (does not follow a pathological process). 	TRUE
+ICD10CM:H59	"Intraoperative and postprocedural complications and disorders of eye and adnexa, not elsewhere classified"	this is a post surgery/procedure complication (does not follow a pathological process). 	TRUE
+ICD10CM:H95	"Intraoperative and postprocedural complications and disorders of ear and mastoid process, not elsewhere classified"	this is a post surgery/procedure complication (does not follow a pathological process). 	TRUE
+ICD10CM:J95	"Intraoperative and postprocedural complications and disorders of respiratory system, not elsewhere classified"	this is a post surgery/procedure complication (does not follow a pathological process). 	TRUE
+ICD10CM:K40	Inguinal hernia	phenotype	TRUE
+ICD10CM:K41	Femoral hernia	phenotype	TRUE
+ICD10CM:K42	Umbilical hernia	phenotype	TRUE
+ICD10CM:K43	Ventral hernia	phenotype	TRUE
+ICD10CM:K44	Diaphragmatic hernia	phenotype	TRUE
+ICD10CM:K45	Other abdominal hernia	phenotype	TRUE
+ICD10CM:K46	Unspecified abdominal hernia	phenotype	TRUE
+ICD10CM:L49	Exfoliation due to erythematous conditions according to extent of body surface involved	phenotype	TRUE
+ICD10CM:L76	Intraoperative and postprocedural complications of skin and subcutaneous tissue	not disease	TRUE
+ICD10CM:M26	Dentofacial anomalies [including malocclusion]	phenotype	TRUE
+ICD10CM:M40	Kyphosis and lordosis	phenotype	TRUE
+ICD10CM:M96	"Intraoperative and postprocedural complications and disorders of musculoskeletal system, not elsewhere classified"	this is a post surgery/procedure complication (does not follow a pathological process). 	TRUE
+ICD10CM:M99	"Biomechanical lesions, not elsewhere classified"	phenotype	TRUE
+ICD10CM:N99	"Intraoperative and postprocedural complications and disorders of genitourinary system, not elsewhere classified"	conditions causes by external factor	TRUE
+ICD10CM:O0		biological process	TRUE
+ICD10CM:O1		biological process	TRUE
+ICD10CM:O2		biological process	TRUE
+ICD10CM:O3		biological process	TRUE
+ICD10CM:O30	Multiple gestation	behavior	TRUE
+ICD10CM:O31	Complications specific to multiple gestation	behavior	TRUE
+ICD10CM:O32	Maternal care for malpresentation of fetus	behavior	TRUE
+ICD10CM:O33	Maternal care for disproportion	behavior	TRUE
+ICD10CM:O34	Maternal care for abnormality of pelvic organs	behavior	TRUE
+ICD10CM:O35	Maternal care for known or suspected fetal abnormality and damage	behavior	TRUE
+ICD10CM:O36	Maternal care for other fetal problems	behavior	TRUE
+ICD10CM:O37		behavior	TRUE
+ICD10CM:O38		behavior	TRUE
+ICD10CM:O39		behavior	TRUE
+ICD10CM:O4		biological process	TRUE
+ICD10CM:O40	Polyhydramnios	behavior	TRUE
+ICD10CM:O41	Other disorders of amniotic fluid and membranes	behavior	TRUE
+ICD10CM:O42	Premature rupture of membranes	behavior	TRUE
+ICD10CM:O43	Placental disorders	behavior	TRUE
+ICD10CM:O44	Placenta previa	behavior	TRUE
+ICD10CM:O45	Premature separation of placenta [abruptio placentae]	behavior	TRUE
+ICD10CM:O46	"Antepartum hemorrhage, not elsewhere classified"	behavior	TRUE
+ICD10CM:O47	False labor	behavior	TRUE
+ICD10CM:O48	Late pregnancy	behavior	TRUE
+ICD10CM:O5		biological process	TRUE
+ICD10CM:O6		biological process	TRUE
+ICD10CM:O60	Preterm labor	conditions causes by external factor	TRUE
+ICD10CM:O61	Failed induction of labor	conditions causes by external factor	TRUE
+ICD10CM:O62	Abnormalities of forces of labor	conditions causes by external factor	TRUE
+ICD10CM:O63	Long labor	conditions causes by external factor	TRUE
+ICD10CM:O64	Obstructed labor due to malposition and malpresentation of fetus	conditions causes by external factor	TRUE
+ICD10CM:O65	Obstructed labor due to maternal pelvic abnormality	conditions causes by external factor	TRUE
+ICD10CM:O66	Other obstructed labor	conditions causes by external factor	TRUE
+ICD10CM:O67	"Labor and delivery complicated by intrapartum hemorrhage, not elsewhere classified"	conditions causes by external factor	TRUE
+ICD10CM:O68	Labor and delivery complicated by abnormality of fetal acid-base balance	conditions causes by external factor	TRUE
+ICD10CM:O69	Labor and delivery complicated by umbilical cord complications	conditions causes by external factor	TRUE
+ICD10CM:O7		biological process	TRUE
+ICD10CM:O70	Perineal laceration during delivery	conditions causes by external factor	TRUE
+ICD10CM:O71	Other obstetric trauma	conditions causes by external factor	TRUE
+ICD10CM:O72	Postpartum hemorrhage	conditions causes by external factor	TRUE
+ICD10CM:O73	"Retained placenta and membranes, without hemorrhage"	conditions causes by external factor	TRUE
+ICD10CM:O74	Complications of anesthesia during labor and delivery	conditions causes by external factor	TRUE
+ICD10CM:O75	"Other complications of labor and delivery, not elsewhere classified"	conditions causes by external factor	TRUE
+ICD10CM:O76	Abnormality in fetal heart rate and rhythm complicating labor and delivery	conditions causes by external factor	TRUE
+ICD10CM:O77	Other fetal stress complicating labor and delivery	conditions causes by external factor	TRUE
+ICD10CM:O8		biological process	TRUE
+ICD10CM:O80	Encounter for full-term uncomplicated delivery	medical action	TRUE
+ICD10CM:O81		medical action	TRUE
+ICD10CM:O82	Encounter for cesarean delivery without indication	medical action	TRUE
+ICD10CM:O85	Puerperal sepsis	phenotype	TRUE
+ICD10CM:O86	Other puerperal infections	phenotype	TRUE
+ICD10CM:O87	Venous complications and hemorrhoids in the puerperium	phenotype	TRUE
+ICD10CM:O88	Obstetric embolism	phenotype	TRUE
+ICD10CM:O89	Complications of anesthesia during the puerperium	phenotype	TRUE
+ICD10CM:O9		medical action	TRUE
+ICD10CM:O90	"Complications of the puerperium, not elsewhere classified"	phenotype	TRUE
+ICD10CM:O91	"Infections of breast associated with pregnancy, the puerperium and lactation"	phenotype	TRUE
+ICD10CM:O92	Other disorders of breast and disorders of lactation associated with pregnancy and the puerperium	phenotype	TRUE
+ICD10CM:P0		conditions causes by external factor	TRUE
+ICD10CM:P1		conditions causes by external factor	TRUE
+ICD10CM:P10	Intracranial laceration and hemorrhage due to birth injury	complication	TRUE
+ICD10CM:P11	Other birth injuries to central nervous system	complication	TRUE
+ICD10CM:P12	Birth injury to scalp	complication	TRUE
+ICD10CM:P13	Birth injury to skeleton	complication	TRUE
+ICD10CM:P14	Birth injury to peripheral nervous system	complication	TRUE
+ICD10CM:P15	Other birth injuries	complication	TRUE
+ICD10CM:P2		conditions causes by external factor	TRUE
+ICD10CM:P3		conditions causes by external factor	TRUE
+ICD10CM:P36	Bacterial sepsis of newborn		TRUE
+ICD10CM:P4		conditions causes by external factor	TRUE
+ICD10CM:P5		phenotype	TRUE
+ICD10CM:P50	Newborn affected by intrauterine (fetal) blood loss	phenotype	TRUE
+ICD10CM:P51	Umbilical hemorrhage of newborn	phenotype	TRUE
+ICD10CM:P52	Intracranial nontraumatic hemorrhage of newborn	phenotype	TRUE
+ICD10CM:P53	Hemorrhagic disease of newborn	phenotype	TRUE
+ICD10CM:P54	Other neonatal hemorrhages	phenotype	TRUE
+ICD10CM:P58	Neonatal jaundice due to other excessive hemolysis	phenotype	TRUE
+ICD10CM:P59	Neonatal jaundice from other and unspecified causes	phenotype	TRUE
+ICD10CM:P6		phenotype	TRUE
+ICD10CM:P60	Disseminated intravascular coagulation of newborn	phenotype	TRUE
+ICD10CM:P7		phenotype	TRUE
+ICD10CM:P8		phenotype	TRUE
+ICD10CM:P80	Hypothermia of newborn	"conditions, but not disease?"	TRUE
+ICD10CM:P81	Other disturbances of temperature regulation of newborn	"conditions, but not disease?"	TRUE
+ICD10CM:P82		"conditions, but not disease?"	TRUE
+ICD10CM:P83	Other conditions of integument specific to newborn	"conditions, but not disease?"	TRUE
+ICD10CM:P84	Other problems with newborn	phenotype	TRUE
+ICD10CM:P9		phenotype	TRUE
+ICD10CM:P90	Convulsions of newborn	phenotype	FALSE
+ICD10CM:P91	Other disturbances of cerebral status of newborn	phenotype	FALSE
+ICD10CM:P92	Feeding problems of newborn	phenotype	FALSE
+ICD10CM:P93	Reactions and intoxications due to drugs administered to newborn	phenotype	FALSE
+ICD10CM:P94		phenotype	FALSE
+ICD10CM:P95	Stillbirth	phenotype	FALSE
+ICD10CM:P96		phenotype	FALSE
+ICD10CM:R0		phenotypes	TRUE
+ICD10CM:R1		phenotypes	TRUE
+ICD10CM:R10	Abdominal and pelvic pain	phenotypes	TRUE
+ICD10CM:R11	Nausea and vomiting	phenotypes	TRUE
+ICD10CM:R12	Heartburn	phenotypes	TRUE
+ICD10CM:R13	Aphagia and dysphagia	phenotypes	TRUE
+ICD10CM:R14	Flatulence and related conditions	phenotypes	TRUE
+ICD10CM:R15	Fecal incontinence	phenotypes	TRUE
+ICD10CM:R16	"Hepatomegaly and splenomegaly, not elsewhere classified"	phenotypes	TRUE
+ICD10CM:R17	Unspecified jaundice	phenotypes	TRUE
+ICD10CM:R18	Ascites	phenotypes	TRUE
+ICD10CM:R19	Other symptoms and signs involving the digestive system and abdomen	phenotypes	TRUE
+ICD10CM:R2		phenotypes	TRUE
+ICD10CM:R20	Disturbances of skin sensation	phenotypes	TRUE
+ICD10CM:R21	Rash and other nonspecific skin eruption	phenotypes	TRUE
+ICD10CM:R22	"Localized swelling, mass and lump of skin and subcutaneous tissue"	phenotypes	TRUE
+ICD10CM:R23	Other skin changes	phenotypes	TRUE
+ICD10CM:R24		phenotypes	TRUE
+ICD10CM:R25	Abnormal involuntary movements	phenotypes	TRUE
+ICD10CM:R26	Abnormalities of gait and mobility	phenotypes	TRUE
+ICD10CM:R27	Other lack of coordination	phenotypes	TRUE
+ICD10CM:R28		phenotypes	TRUE
+ICD10CM:R29	Other symptoms and signs involving the nervous and musculoskeletal systems	phenotypes	TRUE
+ICD10CM:R3		phenotypes	TRUE
+ICD10CM:R30	Pain associated with micturition	phenotypes	TRUE
+ICD10CM:R31	Hematuria	phenotypes	TRUE
+ICD10CM:R32	Unspecified urinary incontinence	phenotypes	TRUE
+ICD10CM:R33	Retention of urine	phenotypes	TRUE
+ICD10CM:R34	Anuria and oliguria	phenotypes	TRUE
+ICD10CM:R35	Polyuria	phenotypes	TRUE
+ICD10CM:R36	Urethral discharge	phenotypes	TRUE
+ICD10CM:R37	"Sexual dysfunction, unspecified"	phenotypes	TRUE
+ICD10CM:R38		phenotypes	TRUE
+ICD10CM:R39	Other and unspecified symptoms and signs involving the genitourinary system	phenotypes	TRUE
+ICD10CM:R4		phenotypes	TRUE
+ICD10CM:R40	"Somnolence, stupor and coma"	phenotypes	TRUE
+ICD10CM:R41	Other symptoms and signs involving cognitive functions and awareness	phenotypes	TRUE
+ICD10CM:R42	Dizziness and giddiness	phenotypes	TRUE
+ICD10CM:R43	Disturbances of smell and taste	phenotypes	TRUE
+ICD10CM:R44	Other symptoms and signs involving general sensations and perceptions	phenotypes	TRUE
+ICD10CM:R45	Symptoms and signs involving emotional state	phenotypes	TRUE
+ICD10CM:R46	Symptoms and signs involving appearance and behavior	phenotypes	TRUE
+ICD10CM:R47	"Speech disturbances, not elsewhere classified"	phenotypes	TRUE
+ICD10CM:R48	"Dyslexia and other symbolic dysfunctions, not elsewhere classified"	phenotypes	TRUE
+ICD10CM:R49	Voice and resonance disorders	phenotypes	TRUE
+ICD10CM:R5		phenotypes	TRUE
+ICD10CM:R50	Fever of other and unknown origin	phenotypes	TRUE
+ICD10CM:R51	Headache	phenotypes	TRUE
+ICD10CM:R52	"Pain, unspecified"	phenotypes	TRUE
+ICD10CM:R53	Malaise and fatigue	phenotypes	TRUE
+ICD10CM:R54	Age-related physical debility	phenotypes	TRUE
+ICD10CM:R55	Syncope and collapse	phenotypes	TRUE
+ICD10CM:R56	"Convulsions, not elsewhere classified"	phenotypes	TRUE
+ICD10CM:R57	"Shock, not elsewhere classified"	phenotypes	TRUE
+ICD10CM:R58	"Hemorrhage, not elsewhere classified"	phenotypes	TRUE
+ICD10CM:R59	Enlarged lymph nodes	phenotypes	TRUE
+ICD10CM:R6		phenotypes	TRUE
+ICD10CM:R60	"Edema, not elsewhere classified"	phenotypes	TRUE
+ICD10CM:R61	Generalized hyperhidrosis	phenotypes	TRUE
+ICD10CM:R62	Lack of expected normal physiological development in childhood and adults	phenotypes	TRUE
+ICD10CM:R63	Symptoms and signs concerning food and fluid intake	phenotypes	TRUE
+ICD10CM:R64	Cachexia	phenotypes	TRUE
+ICD10CM:R65	Symptoms and signs specifically associated with systemic inflammation and infection	phenotypes	TRUE
+ICD10CM:R66		phenotypes	TRUE
+ICD10CM:R67		phenotypes	TRUE
+ICD10CM:R68	Other general symptoms and signs	phenotypes	TRUE
+ICD10CM:R69	"Illness, unspecified"	phenotypes	TRUE
+ICD10CM:R7		phenotypes	TRUE
+ICD10CM:R70	Elevated erythrocyte sedimentation rate and abnormality of plasma viscosity	phenotypes	TRUE
+ICD10CM:R71	Abnormality of red blood cells	phenotypes	TRUE
+ICD10CM:R72		phenotypes	TRUE
+ICD10CM:R73	Elevated blood glucose level	phenotypes	TRUE
+ICD10CM:R74	Abnormal serum enzyme levels	phenotypes	TRUE
+ICD10CM:R75	Inconclusive laboratory evidence of human immunodeficiency virus [HIV]	phenotypes	TRUE
+ICD10CM:R76	Other abnormal immunological findings in serum	phenotypes	TRUE
+ICD10CM:R77	Other abnormalities of plasma proteins	phenotypes	TRUE
+ICD10CM:R78	"Findings of drugs and other substances, not normally found in blood"	phenotypes	TRUE
+ICD10CM:R79	Other abnormal findings of blood chemistry	phenotypes	TRUE
+ICD10CM:R8		phenotypes	TRUE
+ICD10CM:R80	Proteinuria	phenotypes	TRUE
+ICD10CM:R81	Glycosuria	phenotypes	TRUE
+ICD10CM:R82	Other and unspecified abnormal findings in urine	phenotypes	TRUE
+ICD10CM:R83	Abnormal findings in cerebrospinal fluid	phenotypes	TRUE
+ICD10CM:R84	Abnormal findings in specimens from respiratory organs and thorax	phenotypes	TRUE
+ICD10CM:R85	Abnormal findings in specimens from digestive organs and abdominal cavity	phenotypes	TRUE
+ICD10CM:R86	Abnormal findings in specimens from male genital organs	phenotypes	TRUE
+ICD10CM:R87	Abnormal findings in specimens from female genital organs	phenotypes	TRUE
+ICD10CM:R88	Abnormal findings in other body fluids and substances	phenotypes	TRUE
+ICD10CM:R89	"Abnormal findings in specimens from other organs, systems and tissues"	phenotypes	TRUE
+ICD10CM:R9		phenotypes	TRUE
+ICD10CM:R90	Abnormal findings on diagnostic imaging of central nervous system	phenotypes	TRUE
+ICD10CM:R91	Abnormal findings on diagnostic imaging of lung	phenotypes	TRUE
+ICD10CM:R92	Abnormal and inconclusive findings on diagnostic imaging of breast	phenotypes	TRUE
+ICD10CM:R93	Abnormal findings on diagnostic imaging of other body structures	phenotypes	TRUE
+ICD10CM:R94	Abnormal results of function studies	phenotypes	TRUE
+ICD10CM:R95		phenotypes	TRUE
+ICD10CM:R96		phenotypes	TRUE
+ICD10CM:R97	Abnormal tumor markers	phenotypes	TRUE
+ICD10CM:R98		phenotypes	TRUE
+ICD10CM:R99	Ill-defined and unknown cause of mortality	phenotypes	TRUE
+ICD10CM:T15	Foreign body on external eye	exclude presence of environmental materials	TRUE
+ICD10CM:T16	Foreign body in ear	exclude presence of environmental materials	TRUE
+ICD10CM:T17	Foreign body in respiratory tract	exclude presence of environmental materials	TRUE
+ICD10CM:T18	Foreign body in alimentary tract	exclude presence of environmental materials	TRUE
+ICD10CM:T19	Foreign body in genitourinary tract	exclude presence of environmental materials	TRUE
+ICD10CM:T66	"Radiation sickness, unspecified"		TRUE
+ICD10CM:T67	Effects of heat and light		TRUE
+ICD10CM:T68	Hypothermia		TRUE
+ICD10CM:T69	Other effects of reduced temperature		TRUE
+ICD10CM:T70	Effects of air pressure and water pressure		TRUE
+ICD10CM:T71	Asphyxiation		TRUE
+ICD10CM:T72			TRUE
+ICD10CM:T73	Effects of other deprivation		TRUE
+ICD10CM:T74	"Adult and child abuse, neglect and other maltreatment, confirmed"		TRUE
+ICD10CM:T75	Other and unspecified effects of other external causes		TRUE
+ICD10CM:T76	"Adult and child abuse, neglect and other maltreatment, suspected"		TRUE
+ICD10CM:T77			TRUE
+ICD10CM:T78	"Adverse effects, not elsewhere classified"		TRUE
+ICD10CM:T79	"Certain early complications of trauma, not elsewhere classified"	traumatic cause	TRUE
+ICD10CM:V0		conditions caused by external force	TRUE
+ICD10CM:V00	Pedestrian conveyance accident	conditions caused by external force	TRUE
+ICD10CM:V01	Pedestrian injured in collision with pedal cycle	conditions caused by external force	TRUE
+ICD10CM:V02	Pedestrian injured in collision with two- or three-wheeled motor vehicle	conditions caused by external force	TRUE
+ICD10CM:V03	"Pedestrian injured in collision with car, pick-up truck or van"	conditions caused by external force	TRUE
+ICD10CM:V04	Pedestrian injured in collision with heavy transport vehicle or bus	conditions caused by external force	TRUE
+ICD10CM:V05	Pedestrian injured in collision with railway train or railway vehicle	conditions caused by external force	TRUE
+ICD10CM:V06	Pedestrian injured in collision with other nonmotor vehicle	conditions caused by external force	TRUE
+ICD10CM:V07		conditions caused by external force	TRUE
+ICD10CM:V08		conditions caused by external force	TRUE
+ICD10CM:V09	Pedestrian injured in other and unspecified transport accidents	conditions caused by external force	TRUE
+ICD10CM:V1		conditions caused by external force	TRUE
+ICD10CM:V10	Pedal cycle rider injured in collision with pedestrian or animal	conditions caused by external force	TRUE
+ICD10CM:V11	Pedal cycle rider injured in collision with other pedal cycle	conditions caused by external force	TRUE
+ICD10CM:V12	Pedal cycle rider injured in collision with two- or three-wheeled motor vehicle	conditions caused by external force	TRUE
+ICD10CM:V13	"Pedal cycle rider injured in collision with car, pick-up truck or van"	conditions caused by external force	TRUE
+ICD10CM:V14	Pedal cycle rider injured in collision with heavy transport vehicle or bus	conditions caused by external force	TRUE
+ICD10CM:V15	Pedal cycle rider injured in collision with railway train or railway vehicle	conditions caused by external force	TRUE
+ICD10CM:V16	Pedal cycle rider injured in collision with other nonmotor vehicle	conditions caused by external force	TRUE
+ICD10CM:V17	Pedal cycle rider injured in collision with fixed or stationary object	conditions caused by external force	TRUE
+ICD10CM:V18	Pedal cycle rider injured in noncollision transport accident	conditions caused by external force	TRUE
+ICD10CM:V19	Pedal cycle rider injured in other and unspecified transport accidents	conditions caused by external force	TRUE
+ICD10CM:V2		conditions caused by external force	TRUE
+ICD10CM:V20	Motorcycle rider injured in collision with pedestrian or animal	conditions caused by external force	TRUE
+ICD10CM:V21	Motorcycle rider injured in collision with pedal cycle	conditions caused by external force	TRUE
+ICD10CM:V22	Motorcycle rider injured in collision with two- or three-wheeled motor vehicle	conditions caused by external force	TRUE
+ICD10CM:V23	"Motorcycle rider injured in collision with car, pick-up truck or van"	conditions caused by external force	TRUE
+ICD10CM:V24	Motorcycle rider injured in collision with heavy transport vehicle or bus	conditions caused by external force	TRUE
+ICD10CM:V25	Motorcycle rider injured in collision with railway train or railway vehicle	conditions caused by external force	TRUE
+ICD10CM:V26	Motorcycle rider injured in collision with other nonmotor vehicle	conditions caused by external force	TRUE
+ICD10CM:V27	Motorcycle rider injured in collision with fixed or stationary object	conditions caused by external force	TRUE
+ICD10CM:V28	Motorcycle rider injured in noncollision transport accident	conditions caused by external force	TRUE
+ICD10CM:V29	Motorcycle rider injured in other and unspecified transport accidents	conditions caused by external force	TRUE
+ICD10CM:V3		conditions caused by external force	TRUE
+ICD10CM:V30	Occupant of three-wheeled motor vehicle injured in collision with pedestrian or animal	conditions caused by external force	TRUE
+ICD10CM:V31	Occupant of three-wheeled motor vehicle injured in collision with pedal cycle	conditions caused by external force	TRUE
+ICD10CM:V32	Occupant of three-wheeled motor vehicle injured in collision with two- or three-wheeled motor vehicle	conditions caused by external force	TRUE
+ICD10CM:V33	"Occupant of three-wheeled motor vehicle injured in collision with car, pick-up truck or van"	conditions caused by external force	TRUE
+ICD10CM:V34	Occupant of three-wheeled motor vehicle injured in collision with heavy transport vehicle or bus	conditions caused by external force	TRUE
+ICD10CM:V35	Occupant of three-wheeled motor vehicle injured in collision with railway train or railway vehicle	conditions caused by external force	TRUE
+ICD10CM:V36	Occupant of three-wheeled motor vehicle injured in collision with other nonmotor vehicle	conditions caused by external force	TRUE
+ICD10CM:V37	Occupant of three-wheeled motor vehicle injured in collision with fixed or stationary object	conditions caused by external force	TRUE
+ICD10CM:V38	Occupant of three-wheeled motor vehicle injured in noncollision transport accident	conditions caused by external force	TRUE
+ICD10CM:V39	Occupant of three-wheeled motor vehicle injured in other and unspecified transport accidents	conditions caused by external force	TRUE
+ICD10CM:V4		conditions caused by external force	TRUE
+ICD10CM:V40	Car occupant injured in collision with pedestrian or animal	conditions caused by external force	TRUE
+ICD10CM:V41	Car occupant injured in collision with pedal cycle	conditions caused by external force	TRUE
+ICD10CM:V42	Car occupant injured in collision with two- or three-wheeled motor vehicle	conditions caused by external force	TRUE
+ICD10CM:V43	"Car occupant injured in collision with car, pick-up truck or van"	conditions caused by external force	TRUE
+ICD10CM:V44	Car occupant injured in collision with heavy transport vehicle or bus	conditions caused by external force	TRUE
+ICD10CM:V45	Car occupant injured in collision with railway train or railway vehicle	conditions caused by external force	TRUE
+ICD10CM:V46	Car occupant injured in collision with other nonmotor vehicle	conditions caused by external force	TRUE
+ICD10CM:V47	Car occupant injured in collision with fixed or stationary object	conditions caused by external force	TRUE
+ICD10CM:V48	Car occupant injured in noncollision transport accident	conditions caused by external force	TRUE
+ICD10CM:V49	Car occupant injured in other and unspecified transport accidents	conditions caused by external force	TRUE
+ICD10CM:V5		conditions caused by external force	TRUE
+ICD10CM:V50	Occupant of pick-up truck or van injured in collision with pedestrian or animal	conditions caused by external force	TRUE
+ICD10CM:V51	Occupant of pick-up truck or van injured in collision with pedal cycle	conditions caused by external force	TRUE
+ICD10CM:V52	Occupant of pick-up truck or van injured in collision with two- or three-wheeled motor vehicle	conditions caused by external force	TRUE
+ICD10CM:V53	"Occupant of pick-up truck or van injured in collision with car, pick-up truck or van"	conditions caused by external force	TRUE
+ICD10CM:V54	Occupant of pick-up truck or van injured in collision with heavy transport vehicle or bus	conditions caused by external force	TRUE
+ICD10CM:V55	Occupant of pick-up truck or van injured in collision with railway train or railway vehicle	conditions caused by external force	TRUE
+ICD10CM:V56	Occupant of pick-up truck or van injured in collision with other nonmotor vehicle	conditions caused by external force	TRUE
+ICD10CM:V57	Occupant of pick-up truck or van injured in collision with fixed or stationary object	conditions caused by external force	TRUE
+ICD10CM:V58	Occupant of pick-up truck or van injured in noncollision transport accident	conditions caused by external force	TRUE
+ICD10CM:V59	Occupant of pick-up truck or van injured in other and unspecified transport accidents	conditions caused by external force	TRUE
+ICD10CM:V6		conditions caused by external force	TRUE
+ICD10CM:V60	Occupant of heavy transport vehicle injured in collision with pedestrian or animal	conditions caused by external force	TRUE
+ICD10CM:V61	Occupant of heavy transport vehicle injured in collision with pedal cycle	conditions caused by external force	TRUE
+ICD10CM:V62	Occupant of heavy transport vehicle injured in collision with two- or three-wheeled motor vehicle	conditions caused by external force	TRUE
+ICD10CM:V63	"Occupant of heavy transport vehicle injured in collision with car, pick-up truck or van"	conditions caused by external force	TRUE
+ICD10CM:V64	Occupant of heavy transport vehicle injured in collision with heavy transport vehicle or bus	conditions caused by external force	TRUE
+ICD10CM:V65	Occupant of heavy transport vehicle injured in collision with railway train or railway vehicle	conditions caused by external force	TRUE
+ICD10CM:V66	Occupant of heavy transport vehicle injured in collision with other nonmotor vehicle	conditions caused by external force	TRUE
+ICD10CM:V67	Occupant of heavy transport vehicle injured in collision with fixed or stationary object	conditions caused by external force	TRUE
+ICD10CM:V68	Occupant of heavy transport vehicle injured in noncollision transport accident	conditions caused by external force	TRUE
+ICD10CM:V69	Occupant of heavy transport vehicle injured in other and unspecified transport accidents	conditions caused by external force	TRUE
+ICD10CM:V7		conditions caused by external force	TRUE
+ICD10CM:V70	Bus occupant injured in collision with pedestrian or animal	conditions caused by external force	TRUE
+ICD10CM:V71	Bus occupant injured in collision with pedal cycle	conditions caused by external force	TRUE
+ICD10CM:V72	Bus occupant injured in collision with two- or three-wheeled motor vehicle	conditions caused by external force	TRUE
+ICD10CM:V73	"Bus occupant injured in collision with car, pick-up truck or van"	conditions caused by external force	TRUE
+ICD10CM:V74	Bus occupant injured in collision with heavy transport vehicle or bus	conditions caused by external force	TRUE
+ICD10CM:V75	Bus occupant injured in collision with railway train or railway vehicle	conditions caused by external force	TRUE
+ICD10CM:V76	Bus occupant injured in collision with other nonmotor vehicle	conditions caused by external force	TRUE
+ICD10CM:V77	Bus occupant injured in collision with fixed or stationary object	conditions caused by external force	TRUE
+ICD10CM:V78	Bus occupant injured in noncollision transport accident	conditions caused by external force	TRUE
+ICD10CM:V79	Bus occupant injured in other and unspecified transport accidents	conditions caused by external force	TRUE
+ICD10CM:V8		conditions caused by external force	TRUE
+ICD10CM:V80	Animal-rider or occupant of animal-drawn vehicle injured in transport accident	conditions caused by external force	TRUE
+ICD10CM:V81	Occupant of railway train or railway vehicle injured in transport accident	conditions caused by external force	TRUE
+ICD10CM:V82	Occupant of powered streetcar injured in transport accident	conditions caused by external force	TRUE
+ICD10CM:V83	Occupant of special vehicle mainly used on industrial premises injured in transport accident	conditions caused by external force	TRUE
+ICD10CM:V84	Occupant of special vehicle mainly used in agriculture injured in transport accident	conditions caused by external force	TRUE
+ICD10CM:V85	Occupant of special construction vehicle injured in transport accident	conditions caused by external force	TRUE
+ICD10CM:V86	"Occupant of special all-terrain or other off-road motor vehicle, injured in transport accident"	conditions caused by external force	TRUE
+ICD10CM:V87	Traffic accident of specified type but victim's mode of transport unknown	conditions caused by external force	TRUE
+ICD10CM:V88	Nontraffic accident of specified type but victim's mode of transport unknown	conditions caused by external force	TRUE
+ICD10CM:V89	"Motor- or nonmotor-vehicle accident, type of vehicle unspecified"	conditions caused by external force	TRUE
+ICD10CM:V9		conditions caused by external force	TRUE
+ICD10CM:V90	Drowning and submersion due to accident to watercraft	conditions caused by external force	TRUE
+ICD10CM:V91	Other injury due to accident to watercraft	conditions caused by external force	TRUE
+ICD10CM:V92	"Drowning and submersion due to accident on board watercraft, without accident to watercraft"	conditions caused by external force	TRUE
+ICD10CM:V93	"Other injury due to accident on board watercraft, without accident to watercraft"	conditions caused by external force	TRUE
+ICD10CM:V94	Other and unspecified water transport accidents	conditions caused by external force	TRUE
+ICD10CM:V95	Accident to powered aircraft causing injury to occupant	conditions caused by external force	TRUE
+ICD10CM:V96	Accident to nonpowered aircraft causing injury to occupant	conditions caused by external force	TRUE
+ICD10CM:V97	Other specified air transport accidents	conditions caused by external force	TRUE
+ICD10CM:V98	Other specified transport accidents	conditions caused by external force	TRUE
+ICD10CM:V99	Unspecified transport accident	conditions caused by external force	TRUE
+ICD10CM:W0		conditions caused by external force	TRUE
+ICD10CM:W00	Fall due to ice and snow	conditions caused by external force	TRUE
+ICD10CM:W01	"Fall on same level from slipping, tripping and stumbling"	conditions caused by external force	TRUE
+ICD10CM:W02		conditions caused by external force	TRUE
+ICD10CM:W03	Other fall on same level due to collision with another person	conditions caused by external force	TRUE
+ICD10CM:W04	Fall while being carried or supported by other persons	conditions caused by external force	TRUE
+ICD10CM:W05	"Fall from non-moving wheelchair, nonmotorized scooter and motorized mobility scooter"	conditions caused by external force	TRUE
+ICD10CM:W06	Fall from bed	conditions caused by external force	TRUE
+ICD10CM:W07	Fall from chair	conditions caused by external force	TRUE
+ICD10CM:W08	Fall from other furniture	conditions caused by external force	TRUE
+ICD10CM:W09	Fall on and from playground equipment	conditions caused by external force	TRUE
+ICD10CM:W1		conditions caused by external force	TRUE
+ICD10CM:W10	Fall on and from stairs and steps	conditions caused by external force	TRUE
+ICD10CM:W11	Fall on and from ladder	conditions caused by external force	TRUE
+ICD10CM:W12	Fall on and from scaffolding	conditions caused by external force	TRUE
+ICD10CM:W13	"Fall from, out of or through building or structure"	conditions caused by external force	TRUE
+ICD10CM:W14	Fall from tree	conditions caused by external force	TRUE
+ICD10CM:W15	Fall from cliff	conditions caused by external force	TRUE
+ICD10CM:W16	"Fall, jump or diving into water"	conditions caused by external force	TRUE
+ICD10CM:W17	Other fall from one level to another	conditions caused by external force	TRUE
+ICD10CM:W18	"Other slipping, tripping and stumbling and falls"	conditions caused by external force	TRUE
+ICD10CM:W19	Unspecified fall	conditions caused by external force	TRUE
+ICD10CM:W2		conditions caused by external force	TRUE
+ICD10CM:W20	"Struck by thrown, projected or falling object"	conditions caused by external force	TRUE
+ICD10CM:W21	Striking against or struck by sports equipment	conditions caused by external force	TRUE
+ICD10CM:W22	Striking against or struck by other objects	conditions caused by external force	TRUE
+ICD10CM:W23	"Caught, crushed, jammed or pinched in or between objects"	conditions caused by external force	TRUE
+ICD10CM:W24	"Contact with lifting and transmission devices, not elsewhere classified"	conditions caused by external force	TRUE
+ICD10CM:W25	Contact with sharp glass	conditions caused by external force	TRUE
+ICD10CM:W26	Contact with other sharp objects	conditions caused by external force	TRUE
+ICD10CM:W27	Contact with nonpowered hand tool	conditions caused by external force	TRUE
+ICD10CM:W28	Contact with powered lawn mower	conditions caused by external force	TRUE
+ICD10CM:W29	Contact with other powered hand tools and household machinery	conditions caused by external force	TRUE
+ICD10CM:W3		conditions caused by external force	TRUE
+ICD10CM:W30	Contact with agricultural machinery	conditions caused by external force	TRUE
+ICD10CM:W31	Contact with other and unspecified machinery	conditions caused by external force	TRUE
+ICD10CM:W32	Accidental handgun discharge and malfunction	conditions caused by external force	TRUE
+ICD10CM:W33	"Accidental rifle, shotgun and larger firearm discharge and malfunction"	conditions caused by external force	TRUE
+ICD10CM:W34	Accidental discharge and malfunction from other and unspecified firearms and guns	conditions caused by external force	TRUE
+ICD10CM:W35	Explosion and rupture of boiler	conditions caused by external force	TRUE
+ICD10CM:W36	Explosion and rupture of gas cylinder	conditions caused by external force	TRUE
+ICD10CM:W37	"Explosion and rupture of pressurized tire, pipe or hose"	conditions caused by external force	TRUE
+ICD10CM:W38	Explosion and rupture of other specified pressurized devices	conditions caused by external force	TRUE
+ICD10CM:W39	Discharge of firework	conditions caused by external force	TRUE
+ICD10CM:W4		conditions caused by external force	TRUE
+ICD10CM:W40	Explosion of other materials	conditions caused by external force	TRUE
+ICD10CM:W41		conditions caused by external force	TRUE
+ICD10CM:W42	Exposure to noise	conditions caused by external force	TRUE
+ICD10CM:W43		conditions caused by external force	TRUE
+ICD10CM:W44		conditions caused by external force	TRUE
+ICD10CM:W45	Foreign body or object entering through skin	conditions caused by external force	TRUE
+ICD10CM:W46	Contact with hypodermic needle	conditions caused by external force	TRUE
+ICD10CM:W47		conditions caused by external force	TRUE
+ICD10CM:W48		conditions caused by external force	TRUE
+ICD10CM:W49	Exposure to other inanimate mechanical forces	conditions caused by external force	TRUE
+ICD10CM:W5		conditions caused by external force	TRUE
+ICD10CM:W50	"Accidental hit, strike, kick, twist, bite or scratch by another person"	conditions caused by external force	TRUE
+ICD10CM:W51	Accidental striking against or bumped into by another person	conditions caused by external force	TRUE
+ICD10CM:W52	"Crushed, pushed or stepped on by crowd or human stampede"	conditions caused by external force	TRUE
+ICD10CM:W53	Contact with rodent	conditions caused by external force	TRUE
+ICD10CM:W54	Contact with dog	conditions caused by external force	TRUE
+ICD10CM:W55	Contact with other mammals	conditions caused by external force	TRUE
+ICD10CM:W56	Contact with nonvenomous marine animal	conditions caused by external force	TRUE
+ICD10CM:W57	Bitten or stung by nonvenomous insect and other nonvenomous arthropods	conditions caused by external force	TRUE
+ICD10CM:W58	Contact with crocodile or alligator	conditions caused by external force	TRUE
+ICD10CM:W59	Contact with other nonvenomous reptiles	conditions caused by external force	TRUE
+ICD10CM:W6		conditions caused by external force	TRUE
+ICD10CM:W60	Contact with nonvenomous plant thorns and spines and sharp leaves	conditions caused by external force	TRUE
+ICD10CM:W61	Contact with birds (domestic) (wild)	conditions caused by external force	TRUE
+ICD10CM:W62	Contact with nonvenomous amphibians	conditions caused by external force	TRUE
+ICD10CM:W63		conditions caused by external force	TRUE
+ICD10CM:W64	Exposure to other animate mechanical forces	conditions caused by external force	TRUE
+ICD10CM:W65	Accidental drowning and submersion while in bath-tub	conditions caused by external force	TRUE
+ICD10CM:W66		conditions caused by external force	TRUE
+ICD10CM:W67	Accidental drowning and submersion while in swimming-pool	conditions caused by external force	TRUE
+ICD10CM:W68		conditions caused by external force	TRUE
+ICD10CM:W69	Accidental drowning and submersion while in natural water	conditions caused by external force	TRUE
+ICD10CM:W7		conditions caused by external force	TRUE
+ICD10CM:W70		conditions caused by external force	TRUE
+ICD10CM:W71		conditions caused by external force	TRUE
+ICD10CM:W72		conditions caused by external force	TRUE
+ICD10CM:W73	Other specified cause of accidental non-transport drowning and submersion	conditions caused by external force	TRUE
+ICD10CM:W74	Unspecified cause of accidental drowning and submersion	conditions caused by external force	TRUE
+ICD10CM:W75		conditions caused by external force	TRUE
+ICD10CM:W76		conditions caused by external force	TRUE
+ICD10CM:W77		conditions caused by external force	TRUE
+ICD10CM:W78		conditions caused by external force	TRUE
+ICD10CM:W79		conditions caused by external force	TRUE
+ICD10CM:W8		conditions caused by external force	TRUE
+ICD10CM:W80		conditions caused by external force	TRUE
+ICD10CM:W81		conditions caused by external force	TRUE
+ICD10CM:W82		conditions caused by external force	TRUE
+ICD10CM:W83		conditions caused by external force	TRUE
+ICD10CM:W84		conditions caused by external force	TRUE
+ICD10CM:W85	Exposure to electric transmission lines	conditions caused by external force	TRUE
+ICD10CM:W86	Exposure to other specified electric current	conditions caused by external force	TRUE
+ICD10CM:W87		conditions caused by external force	TRUE
+ICD10CM:W88	Exposure to ionizing radiation	conditions caused by external force	TRUE
+ICD10CM:W89	Exposure to man-made visible and ultraviolet light	conditions caused by external force	TRUE
+ICD10CM:W9		conditions caused by external force	TRUE
+ICD10CM:W90	Exposure to other nonionizing radiation	conditions caused by external force	TRUE
+ICD10CM:W91		conditions caused by external force	TRUE
+ICD10CM:W92	Exposure to excessive heat of man-made origin	conditions caused by external force	TRUE
+ICD10CM:W93	Exposure to excessive cold of man-made origin	conditions caused by external force	TRUE
+ICD10CM:W94	Exposure to high and low air pressure and changes in air pressure	conditions caused by external force	TRUE
+ICD10CM:W95		conditions caused by external force	TRUE
+ICD10CM:W96		conditions caused by external force	TRUE
+ICD10CM:W97		conditions caused by external force	TRUE
+ICD10CM:W98		conditions caused by external force	TRUE
+ICD10CM:W99	Exposure to other man-made environmental factors	conditions caused by external force	TRUE
+ICD10CM:X0		conditions caused by external force	TRUE
+ICD10CM:X00	Exposure to uncontrolled fire in building or structure	conditions caused by external force	TRUE
+ICD10CM:X01	"Exposure to uncontrolled fire, not in building or structure"	conditions caused by external force	TRUE
+ICD10CM:X02	Exposure to controlled fire in building or structure	conditions caused by external force	TRUE
+ICD10CM:X03	"Exposure to controlled fire, not in building or structure"	conditions caused by external force	TRUE
+ICD10CM:X04	Exposure to ignition of highly flammable material	conditions caused by external force	TRUE
+ICD10CM:X05	Exposure to ignition or melting of nightwear	conditions caused by external force	TRUE
+ICD10CM:X06	Exposure to ignition or melting of other clothing and apparel	conditions caused by external force	TRUE
+ICD10CM:X07		conditions caused by external force	TRUE
+ICD10CM:X08	"Exposure to other specified smoke, fire and flames"	conditions caused by external force	TRUE
+ICD10CM:X09		conditions caused by external force	TRUE
+ICD10CM:X1		conditions caused by external force	TRUE
+ICD10CM:X10	"Contact with hot drinks, food, fats and cooking oils"	conditions caused by external force	TRUE
+ICD10CM:X11	Contact with hot tap-water	conditions caused by external force	TRUE
+ICD10CM:X12	Contact with other hot fluids	conditions caused by external force	TRUE
+ICD10CM:X13	Contact with steam and other hot vapors	conditions caused by external force	TRUE
+ICD10CM:X14	Contact with hot air and other hot gases	conditions caused by external force	TRUE
+ICD10CM:X15	Contact with hot household appliances	conditions caused by external force	TRUE
+ICD10CM:X16	"Contact with hot heating appliances, radiators and pipes"	conditions caused by external force	TRUE
+ICD10CM:X17	"Contact with hot engines, machinery and tools"	conditions caused by external force	TRUE
+ICD10CM:X18	Contact with other hot metals	conditions caused by external force	TRUE
+ICD10CM:X19	Contact with other heat and hot substances	conditions caused by external force	TRUE
+ICD10CM:X2		conditions caused by external force	TRUE
+ICD10CM:X20		conditions caused by external force	TRUE
+ICD10CM:X21		conditions caused by external force	TRUE
+ICD10CM:X22		conditions caused by external force	TRUE
+ICD10CM:X23		conditions caused by external force	TRUE
+ICD10CM:X24		conditions caused by external force	TRUE
+ICD10CM:X25		conditions caused by external force	TRUE
+ICD10CM:X26		conditions caused by external force	TRUE
+ICD10CM:X27		conditions caused by external force	TRUE
+ICD10CM:X28		conditions caused by external force	TRUE
+ICD10CM:X29		conditions caused by external force	TRUE
+ICD10CM:X3		conditions caused by external force	TRUE
+ICD10CM:X30	Exposure to excessive natural heat	conditions caused by external force	TRUE
+ICD10CM:X31	Exposure to excessive natural cold	conditions caused by external force	TRUE
+ICD10CM:X32	Exposure to sunlight	conditions caused by external force	TRUE
+ICD10CM:X33		conditions caused by external force	TRUE
+ICD10CM:X34	Earthquake	conditions caused by external force	TRUE
+ICD10CM:X35	Volcanic eruption	conditions caused by external force	TRUE
+ICD10CM:X36	"Avalanche, landslide and other earth movements"	conditions caused by external force	TRUE
+ICD10CM:X37	Cataclysmic storm	conditions caused by external force	TRUE
+ICD10CM:X38	Flood	conditions caused by external force	TRUE
+ICD10CM:X39	Exposure to other forces of nature	conditions caused by external force	TRUE
+ICD10CM:X4		conditions caused by external force	TRUE
+ICD10CM:X40		conditions caused by external force	TRUE
+ICD10CM:X41		conditions caused by external force	TRUE
+ICD10CM:X42		conditions caused by external force	TRUE
+ICD10CM:X43		conditions caused by external force	TRUE
+ICD10CM:X44		conditions caused by external force	TRUE
+ICD10CM:X45		conditions caused by external force	TRUE
+ICD10CM:X46		conditions caused by external force	TRUE
+ICD10CM:X47		conditions caused by external force	TRUE
+ICD10CM:X48		conditions caused by external force	TRUE
+ICD10CM:X49		conditions caused by external force	TRUE
+ICD10CM:X5		conditions caused by external force	TRUE
+ICD10CM:X50	Overexertion and strenuous or repetitive movements	conditions caused by external force	TRUE
+ICD10CM:X51		conditions caused by external force	TRUE
+ICD10CM:X52	Prolonged stay in weightless environment	conditions caused by external force	TRUE
+ICD10CM:X53		conditions caused by external force	TRUE
+ICD10CM:X54		conditions caused by external force	TRUE
+ICD10CM:X55		conditions caused by external force	TRUE
+ICD10CM:X56		conditions caused by external force	TRUE
+ICD10CM:X57		conditions caused by external force	TRUE
+ICD10CM:X58	Exposure to other specified factors	conditions caused by external force	TRUE
+ICD10CM:X59		conditions caused by external force	TRUE
+ICD10CM:X6		conditions caused by external force	TRUE
+ICD10CM:X60		conditions caused by external force	TRUE
+ICD10CM:X61		conditions caused by external force	TRUE
+ICD10CM:X62		conditions caused by external force	TRUE
+ICD10CM:X63		conditions caused by external force	TRUE
+ICD10CM:X64		conditions caused by external force	TRUE
+ICD10CM:X65		conditions caused by external force	TRUE
+ICD10CM:X66		conditions caused by external force	TRUE
+ICD10CM:X67		conditions caused by external force	TRUE
+ICD10CM:X68		conditions caused by external force	TRUE
+ICD10CM:X69		conditions caused by external force	TRUE
+ICD10CM:X7		conditions caused by external force	TRUE
+ICD10CM:X70		conditions caused by external force	TRUE
+ICD10CM:X71	Intentional self-harm by drowning and submersion	conditions caused by external force	TRUE
+ICD10CM:X72	Intentional self-harm by handgun discharge	conditions caused by external force	TRUE
+ICD10CM:X73	"Intentional self-harm by rifle, shotgun and larger firearm discharge"	conditions caused by external force	TRUE
+ICD10CM:X74	Intentional self-harm by other and unspecified firearm and gun discharge	conditions caused by external force	TRUE
+ICD10CM:X75	Intentional self-harm by explosive material	conditions caused by external force	TRUE
+ICD10CM:X76	"Intentional self-harm by smoke, fire and flames"	conditions caused by external force	TRUE
+ICD10CM:X77	"Intentional self-harm by steam, hot vapors and hot objects"	conditions caused by external force	TRUE
+ICD10CM:X78	Intentional self-harm by sharp object	conditions caused by external force	TRUE
+ICD10CM:X79	Intentional self-harm by blunt object	conditions caused by external force	TRUE
+ICD10CM:X8		conditions caused by external force	TRUE
+ICD10CM:X80	Intentional self-harm by jumping from a high place	conditions caused by external force	TRUE
+ICD10CM:X81	Intentional self-harm by jumping or lying in front of moving object	conditions caused by external force	TRUE
+ICD10CM:X82	Intentional self-harm by crashing of motor vehicle	conditions caused by external force	TRUE
+ICD10CM:X83	Intentional self-harm by other specified means	conditions caused by external force	TRUE
+ICD10CM:X84		conditions caused by external force	TRUE
+ICD10CM:X85		conditions caused by external force	TRUE
+ICD10CM:X86		conditions caused by external force	TRUE
+ICD10CM:X87		conditions caused by external force	TRUE
+ICD10CM:X88		conditions caused by external force	TRUE
+ICD10CM:X89		conditions caused by external force	TRUE
+ICD10CM:X90		conditions caused by external force	TRUE
+ICD10CM:X91		conditions caused by external force	TRUE
+ICD10CM:X92	Assault by drowning and submersion	conditions caused by external force	TRUE
+ICD10CM:X93	Assault by handgun discharge	conditions caused by external force	TRUE
+ICD10CM:X94	"Assault by rifle, shotgun and larger firearm discharge"	conditions caused by external force	TRUE
+ICD10CM:X95	Assault by other and unspecified firearm and gun discharge	conditions caused by external force	TRUE
+ICD10CM:X96	Assault by explosive material	conditions caused by external force	TRUE
+ICD10CM:X97	"Assault by smoke, fire and flames"	conditions caused by external force	TRUE
+ICD10CM:X98	"Assault by steam, hot vapors and hot objects"	conditions caused by external force	TRUE
+ICD10CM:X99	Assault by sharp object	conditions caused by external force	TRUE
+ICD10CM:Y21	"Drowning and submersion, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y22	"Handgun discharge, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y23	"Rifle, shotgun and larger firearm discharge, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y24	"Other and unspecified firearm discharge, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y25	"Contact with explosive material, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y26	"Exposure to smoke, fire and flames, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y27	"Contact with steam, hot vapors and hot objects, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y28	"Contact with sharp object, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y29	"Contact with blunt object, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y30	"Falling, jumping or pushed from a high place, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y31	"Falling, lying or running before or into moving object, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y32	"Crashing of motor vehicle, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y33	"Other specified events, undetermined intent"	conditions caused by external force	TRUE
+ICD10CM:Y35	Legal intervention	conditions caused by external force	TRUE
+ICD10CM:Y36	Operations of war	conditions caused by external force	TRUE
+ICD10CM:Y37	Military operations	conditions caused by external force	TRUE
+ICD10CM:Y38	Terrorism	conditions caused by external force	TRUE
+ICD10CM:Y62	Failure of sterile precautions during surgical and medical care	conditions caused by external force	TRUE
+ICD10CM:Y63	Failure in dosage during surgical and medical care	conditions caused by external force	TRUE
+ICD10CM:Y64	Contaminated medical or biological substances	conditions caused by external force	TRUE
+ICD10CM:Y65	Other misadventures during surgical and medical care	conditions caused by external force	TRUE
+ICD10CM:Y66	Nonadministration of surgical and medical care	conditions caused by external force	TRUE
+ICD10CM:Y67		conditions caused by external force	TRUE
+ICD10CM:Y68		conditions caused by external force	TRUE
+ICD10CM:Y69	Unspecified misadventure during surgical and medical care	conditions caused by external force	TRUE
+ICD10CM:Y70	Anesthesiology devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y71	Cardiovascular devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y72	Otorhinolaryngological devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y73	Gastroenterology and urology devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y74	General hospital and personal-use devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y75	Neurological devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y76	Obstetric and gynecological devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y77	Ophthalmic devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y78	Radiological devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y79	Orthopedic devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y80	Physical medicine devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y81	General- and plastic-surgery devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y82	Other and unspecified medical devices associated with adverse incidents	conditions caused by external force	TRUE
+ICD10CM:Y83	"Surgical operation and other surgical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure"	conditions caused by external force	TRUE
+ICD10CM:Y84	"Other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure"	conditions caused by external force	TRUE
+ICD10CM:Y90	Evidence of alcohol involvement determined by blood alcohol level	conditions caused by external force	TRUE
+ICD10CM:Y91		conditions caused by external force	TRUE
+ICD10CM:Y92	Place of occurrence of the external cause	conditions caused by external force	TRUE
+ICD10CM:Y93	Activity codes	conditions caused by external force	TRUE
+ICD10CM:Y94		conditions caused by external force	TRUE
+ICD10CM:Y95	Nosocomial condition	conditions caused by external force	TRUE
+ICD10CM:Y96		conditions caused by external force	TRUE
+ICD10CM:Y97		conditions caused by external force	TRUE
+ICD10CM:Y98		conditions caused by external force	TRUE
+ICD10CM:Y99	External cause status	conditions caused by external force	TRUE
+ICD10CM:Z0		medical action	TRUE
+ICD10CM:Z1		medical action	TRUE
+ICD10CM:Z10		medical action	TRUE
+ICD10CM:Z11	Encounter for screening for infectious and parasitic diseases	medical action	TRUE
+ICD10CM:Z12	Encounter for screening for malignant neoplasms	medical action	TRUE
+ICD10CM:Z13	Encounter for screening for other diseases and disorders	medical action	TRUE
+ICD10CM:Z14	Genetic carrier	phenotype	TRUE
+ICD10CM:Z15	Genetic susceptibility to disease	various reasons below to exclude these	TRUE
+ICD10CM:Z16	Resistance to antimicrobial drugs	various reasons below to exclude these	TRUE
+ICD10CM:Z17	Estrogen receptor status	biomarker	TRUE
+ICD10CM:Z18	Retained foreign body fragments	exclude presence of environmental materials	TRUE
+ICD10CM:Z19	Hormone sensitivity malignancy status	biomarker	TRUE
+ICD10CM:Z2		medical action	TRUE
+ICD10CM:Z20	Contact with and (suspected) exposure to communicable diseases	risk factor	TRUE
+ICD10CM:Z21	Asymptomatic human immunodeficiency virus [HIV] infection status	risk factor	TRUE
+ICD10CM:Z22	Carrier of infectious disease	risk factor	TRUE
+ICD10CM:Z23	Encounter for immunization	risk factor	TRUE
+ICD10CM:Z24		risk factor	TRUE
+ICD10CM:Z25		risk factor	TRUE
+ICD10CM:Z26		risk factor	TRUE
+ICD10CM:Z27		risk factor	TRUE
+ICD10CM:Z28	Immunization not carried out and underimmunization status	risk factor	TRUE
+ICD10CM:Z29	Encounter for other prophylactic measures	risk factor	TRUE
+ICD10CM:Z3		medical action	TRUE
+ICD10CM:Z30	Encounter for contraceptive management	medical action	TRUE
+ICD10CM:Z31	Encounter for procreative management	medical action	TRUE
+ICD10CM:Z32	Encounter for pregnancy test and childbirth and childcare instruction	medical action	TRUE
+ICD10CM:Z33	Pregnant state	medical action	TRUE
+ICD10CM:Z34	Encounter for supervision of normal pregnancy	medical action	TRUE
+ICD10CM:Z35		medical action	TRUE
+ICD10CM:Z36	Encounter for antenatal screening of mother	medical action	TRUE
+ICD10CM:Z37	Outcome of delivery	medical action	TRUE
+ICD10CM:Z38	Liveborn infants according to place of birth and type of delivery	medical action	TRUE
+ICD10CM:Z39	Encounter for maternal postpartum care and examination	medical action	TRUE
+ICD10CM:Z4		medical action	TRUE
+ICD10CM:Z40	Encounter for prophylactic surgery	medical action	TRUE
+ICD10CM:Z41	Encounter for procedures for purposes other than remedying health state	medical action	TRUE
+ICD10CM:Z42	Encounter for plastic and reconstructive surgery following medical procedure or healed injury	medical action	TRUE
+ICD10CM:Z43	Encounter for attention to artificial openings	medical action	TRUE
+ICD10CM:Z44	Encounter for fitting and adjustment of external prosthetic device	medical action	TRUE
+ICD10CM:Z45	Encounter for adjustment and management of implanted device	medical action	TRUE
+ICD10CM:Z46	Encounter for fitting and adjustment of other devices	medical action	TRUE
+ICD10CM:Z47	Orthopedic aftercare	medical action	TRUE
+ICD10CM:Z48	Encounter for other postprocedural aftercare	medical action	TRUE
+ICD10CM:Z49	Encounter for care involving renal dialysis	medical action	TRUE
+ICD10CM:Z5		medical action	TRUE
+ICD10CM:Z50		medical action	TRUE
+ICD10CM:Z51	Encounter for other aftercare and medical care	medical action	TRUE
+ICD10CM:Z52	Donors of organs and tissues	medical action	TRUE
+ICD10CM:Z53	"Persons encountering health services for specific procedures and treatment, not carried out"	medical action	TRUE
+ICD10CM:Z54		various reasons below to exclude these	TRUE
+ICD10CM:Z55	Problems related to education and literacy	risk factor	TRUE
+ICD10CM:Z56	Problems related to employment and unemployment	risk factor	TRUE
+ICD10CM:Z57	Occupational exposure to risk factors	risk factor	TRUE
+ICD10CM:Z58	Problems related to physical environment	risk factor	TRUE
+ICD10CM:Z59	Problems related to housing and economic circumstances	risk factor	TRUE
+ICD10CM:Z6		medical action	TRUE
+ICD10CM:Z60	Problems related to social environment	risk factor	TRUE
+ICD10CM:Z61		risk factor	TRUE
+ICD10CM:Z62	Problems related to upbringing	risk factor	TRUE
+ICD10CM:Z63	"Other problems related to primary support group, including family circumstances"	risk factor	TRUE
+ICD10CM:Z64	Problems related to certain psychosocial circumstances	risk factor	TRUE
+ICD10CM:Z65	Problems related to other psychosocial circumstances	risk factor	TRUE
+ICD10CM:Z66	Do not resuscitate	trait	TRUE
+ICD10CM:Z67	Blood type	trait	TRUE
+ICD10CM:Z68	Body mass index [BMI]	trait	TRUE
+ICD10CM:Z69	Encounter for mental health services for victim and perpetrator of abuse	medical action	TRUE
+ICD10CM:Z7		medical action	TRUE
+ICD10CM:Z70	"Counseling related to sexual attitude, behavior and orientation"	medical action	TRUE
+ICD10CM:Z71	"Persons encountering health services for other counseling and medical advice, not elsewhere classified"	medical action	TRUE
+ICD10CM:Z72	Problems related to lifestyle	medical action	TRUE
+ICD10CM:Z73	Problems related to life management difficulty	medical action	TRUE
+ICD10CM:Z74	Problems related to care provider dependency	medical action	TRUE
+ICD10CM:Z75	Problems related to medical facilities and other health care	medical action	TRUE
+ICD10CM:Z76	Persons encountering health services in other circumstances	medical action	TRUE
+ICD10CM:Z77	Other contact with and (suspected) exposures hazardous to health	risk factor	TRUE
+ICD10CM:Z78	Other specified health status	risk factor	TRUE
+ICD10CM:Z79	Long term (current) drug therapy	risk factor	TRUE
+ICD10CM:Z8		medical action	TRUE
+ICD10CM:Z80	Family history of primary malignant neoplasm	risk factor	TRUE
+ICD10CM:Z81	Family history of mental and behavioral disorders	risk factor	TRUE
+ICD10CM:Z82	Family history of certain disabilities and chronic diseases (leading to disablement)	risk factor	TRUE
+ICD10CM:Z83	Family history of other specific disorders	risk factor	TRUE
+ICD10CM:Z84	Family history of other conditions	risk factor	TRUE
+ICD10CM:Z85	Personal history of malignant neoplasm	risk factor	TRUE
+ICD10CM:Z86	Personal history of certain other diseases	risk factor	TRUE
+ICD10CM:Z87	Personal history of other diseases and conditions	risk factor	TRUE
+ICD10CM:Z88	"Allergy status to drugs, medicaments and biological substances"	risk factor	TRUE
+ICD10CM:Z89	Acquired absence of limb	risk factor	TRUE
+ICD10CM:Z9		medical action	TRUE
+ICD10CM:Z90	"Acquired absence of organs, not elsewhere classified"	risk factor	TRUE
+ICD10CM:Z91	"Personal risk factors, not elsewhere classified"	risk factor	TRUE
+ICD10CM:Z92	Personal history of medical treatment	risk factor	TRUE
+ICD10CM:Z93	Artificial opening status	risk factor	TRUE
+ICD10CM:Z94	Transplanted organ and tissue status	risk factor	TRUE
+ICD10CM:Z95	Presence of cardiac and vascular implants and grafts	risk factor	TRUE
+ICD10CM:Z96	Presence of other functional implants	risk factor	TRUE
+ICD10CM:Z97	Presence of other devices	risk factor	TRUE
+ICD10CM:Z98	Other postprocedural states	risk factor	TRUE
+ICD10CM:Z99	"Dependence on enabling machines and devices, not elsewhere classified"	risk factor	TRUE
