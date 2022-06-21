@@ -1,0 +1,9 @@
+prefix owl:  <http://www.w3.org/2002/07/owl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+
+select ?term_id ?term_label where {
+  ?term_id a owl:Class;
+    skos:prefLabel ?term_label .
+  FILTER (REGEX(?term_label, "{{ regexp }}"))
+  # FILTER(isIRI(?term_id) && (STRSTARTS(str(?term_id), "{{ iri }}")))  # Would be good to filter out xrefs from other ontologies. This could be done here or in Python.
+}

@@ -1,0 +1,9 @@
+prefix ICD10CM: <http://purl.bioontology.org/ontology/ICD10CM/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+
+select ?term_id ?child_id ?child_label where {
+  VALUES ?term_id { {{values}} }
+  ?child_id rdfs:subClassOf{{property_path_qualifier}} ?term_id ;
+    skos:prefLabel ?child_label .
+}
