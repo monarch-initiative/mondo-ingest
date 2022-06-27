@@ -15,6 +15,8 @@ TODO's
   - todo: later: see below: #x3
   - todo: later: see below: #x4: Switch from SPARQL to OAK.
   - todo: later: When constructing exclusion TSV: bug: ICD10CM:C7A-C7A reported as term, but should be ICD10CM:C7A
+  - todo: later: QA: possible conflicts in icd10cm_exclusions.tsv: Add a check to raise an error in event of a parent
+     class having `True` for `exclude_children`, but the child class has `False`.
 """
 import os
 import subprocess
@@ -165,19 +167,22 @@ def expand_ontological_exclusions(
     return df_results
 
 
-def run(onto_path: str, exclusions_path: str, save=CONFIG['save']) -> Union[Dict[str, pd.DataFrame], None]:
+# TODO: use relevant_signature_path
+def run(
+    onto_path: str, exclusions_path: str, relevant_signature_path: str, onto_name: str, save=CONFIG['save']
+) -> Union[Dict[str, pd.DataFrame], None]:
     """Run"""
     # Vars
     df_explicit_results = None
     df_regex_results = None
     exclusion_fields = ['exclusion_reason', 'exclude_children']
     sep = '\t' if exclusions_path.endswith('.tsv') else ',' if exclusions_path.endswith('.csv') else ''
-    onto_name = os.path.basename(onto_path).split('.')[0]
     df_results_path = os.path.join(CONFIG_DIR, f'{onto_name}_exclusion_reasons.robot.template.tsv')
     df_results_simple_path = os.path.join(CONFIG_DIR, f'{onto_name}_term_exclusions.txt')
 
     # Prepare data
     df = pd.read_csv(exclusions_path, sep=sep).fillna('')
+    df['term_id'] = df['term_id'].apply(lambda x: x.strip())
     if len(df) == 0:
         return None
 
@@ -190,9 +195,10 @@ def run(onto_path: str, exclusions_path: str, save=CONFIG['save']) -> Union[Dict
         df_explicit_results = expand_ontological_exclusions(onto_path, df_explicit, cache_suffix='1')
 
     # Query 2: on regex pattern
-    # todo: later: #x4: use OAK when `.ttl` is supported: https://github.com/INCATools/ontology-access-kit/issues/134
+    # todo: later: #x4: use OAK: When ready, can use maybe use xxxImplementation().basic_search(regex_pattern)
+    #  ...where xxxImplementation is the one recommended in one of these discussions:
+    #  https://github.com/INCATools/ontology-access-kit/issues/134
     #  https://incatools.github.io/ontology-access-kit/intro/tutorial02.html
-    #  When ready, can use maybe use ProntoImplementation().basic_search(regex_pattern)
     search_results: List[pd.DataFrame] = []
     for index, row in df_regex.iterrows():
         regex_pattern = row['term_label'].replace(CONFIG['regex_prefix'], '')
@@ -222,11 +228,16 @@ def run(onto_path: str, exclusions_path: str, save=CONFIG['save']) -> Union[Dict
     # terms. It is also theoretically possible that there may be some cases where there is a different exclusion_reason
     # for a term that is within both (a) and (b). In that case, duplicate terms will remain, showing both reasons.
     df_results = df_results.drop_duplicates()
+    # - Filter: terms not in relevant_signature.txt, e.g. terms actually in ICD / that we care about
+    df_relevant_terms = pd.read_csv(relevant_signature_path).fillna('')
+    df_relevant_terms['term'] = df_relevant_terms['term'].apply(uri_to_curie)
+    relevant_terms: List[str] = list(set(df_relevant_terms['term']))
+    df_results = df_results[df_results['term_id'].isin(relevant_terms)]
     # - df_results_simple: Simpler dataframe which is easier to use downstream for other purposes
     df_results_simple = df_results[['term_id']]
     # - df_results: Add special meta rows
-    df_special_rows = pd.DataFrame([{'term_id': 'ID', 'exclusion_reason': 'AI rdfs:seeAlso'}])
-    df_results = pd.concat([df_special_rows, df_results])
+    df_added_row = pd.DataFrame([{'term_id': 'ID', 'exclusion_reason': 'AI rdfs:seeAlso'}])
+    df_results = pd.concat([df_added_row, df_results])
 
     # Save & return
     if save:
@@ -251,11 +262,18 @@ def cli_get_parser() -> ArgumentParser:
     parser.add_argument(
         '-o', '--onto-path',
         help='Path to the ontology file to query.')
-
     parser.add_argument(
         '-e', '--exclusions-path',
         help='Path to a TSV which should have the following fields: `term_id` (str), `term_label` (str), '
              '`exclusion_reason` (str), and `exclude_children` (bool).')
+    parser.add_argument(
+        '-s', '--relevant-signature-path',
+        help='Path to a "relevant signature" file, which contains a list of all of the terms in an ontology that are '
+             'of that ontology itself and relevant, as opposed to, for example, classes from another ontology that'
+             ' happen to be in the ontological file passed in `--onto-path`.')
+    parser.add_argument(
+        '-n', '--onto-name',
+        help='Name of the ontology.')
 
     return parser
 
@@ -270,15 +288,6 @@ def cli_validate(d: Dict) -> Dict:
         path = d[k]
         if not os.path.exists(path):
             d[k] = os.path.join(ONTOLOGY_DIR, path)
-
-    # File extensions: Format if necessary
-    # TODO: temporary hack; need to get .owl versions of these eventually
-    onto_path = d['onto_path']
-    dir_path = os.path.dirname(onto_path)
-    filename = os.path.basename(onto_path)
-    if filename.lower().startswith('icd10') and not os.path.exists(onto_path):
-        filename = filename.replace('.owl', '.ttl')
-        d['onto_path'] = os.path.join(dir_path, filename)
 
     # Check if exists
     for k in path_arg_keys:

@@ -160,7 +160,7 @@ mappings: sssom $(ALL_MAPPINGS)
 #################
 # Utils #########
 #################
-# Documentation for `report-mapping-annotations` and `update-jinja-sparql-queries`: `docs/developer/ordo.md`
+# Documentation for `repo   rt-mapping-annotations` and `update-jinja-sparql-queries`: `docs/developer/ordo.md`
 report-mapping-annotations:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
 
@@ -168,8 +168,12 @@ update-jinja-sparql-queries:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
-config/%_term_exclusions.txt: config/%_term_exclusions.tsv mirror/%.owl
-	python3 ../scripts/exclusion_term_expansion/exclusion_term_expansion.py --exclusions-path $(word 1,$^) --onto-path $(word 2,$^)
+config/%_term_exclusions.txt: config/%_exclusions.tsv component-download-%.owl $(TMPDIR)/%_relevant_signature.txt
+	python3 ../scripts/exclusion_term_expansion/exclusion_term_expansion.py \
+	--exclusions-path $(word 1,$^) \
+	--onto-path $(TMPDIR)/$(word 2,$^).owl \
+	--relevant-signature-path $(word 3,$^) \
+	--onto-name $*
 
 #################
 # Documentation #
