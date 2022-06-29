@@ -6,5 +6,5 @@ WHERE {
     UNION
     { ?term ?p2 ?o2 . }
   }
-  FILTER(isIRI(?term) && (regex(str(?term), "http://omim.org/entry/") || regex(str(?term), "http://www.omim.org/phenotypicSeries/")))
+  FILTER(isIRI(?term) && (regex(str(?term), "https://omim.org/entry/") || regex(str(?term), "https://www.omim.org/phenotypicSeries/")))
 }

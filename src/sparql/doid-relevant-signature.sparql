@@ -2,9 +2,15 @@
 SELECT DISTINCT ?term
 WHERE {
   { 
-    { ?s1 ?p1 ?term . }
+    { 
+     ?s1 ?p1 ?term . 
+     ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/DOID_4> .
+    }
     UNION
-    { ?term ?p2 ?o2 . }
+    { 
+      ?term ?p2 ?o2 . 
+      ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/DOID_4> .
+    }
   }
   FILTER(isIRI(?term))
 }

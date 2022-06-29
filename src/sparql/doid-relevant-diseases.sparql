@@ -14,17 +14,19 @@ SELECT DISTINCT ?term ?label ?deprecated
 WHERE {
   { 
     { 
-      ?s1 ?p1 ?term . 
-       OPTIONAL {
-         ?term rdfs:label ?label
-       }
-       OPTIONAL {
-         ?term owl:deprecated ?deprecated
-       }
+     ?s1 ?p1 ?term . 
+     ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/DOID_4> .
+     OPTIONAL {
+       ?term rdfs:label ?label
+     }
+     OPTIONAL {
+       ?term owl:deprecated ?deprecated
+     }
     }
     UNION
     { 
       ?term ?p2 ?o2 . 
+      ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/DOID_4> .
       OPTIONAL {
         ?term rdfs:label ?label
       }
@@ -33,5 +35,5 @@ WHERE {
       }
     }
   }
-  FILTER(isIRI(?term) && (regex(str(?term), "http://purl.obolibrary.org/obo/DOID_")))
+  FILTER(isIRI(?term))
 }

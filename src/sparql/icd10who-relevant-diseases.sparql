@@ -33,5 +33,5 @@ WHERE {
       }
     }
   }
-  FILTER(isIRI(?term))
+  FILTER(isIRI(?term) && (regex(str(?term), "https://icd.who.int/browse10/2019/en#/")))
 }
