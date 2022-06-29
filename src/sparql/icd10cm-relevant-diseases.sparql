@@ -33,5 +33,5 @@ WHERE {
       }
     }
   }
-  FILTER(isIRI(?term))
+  FILTER(isIRI(?term) && (regex(str(?term), "http://purl.bioontology.org/ontology/ICD10CM/")))
 }
