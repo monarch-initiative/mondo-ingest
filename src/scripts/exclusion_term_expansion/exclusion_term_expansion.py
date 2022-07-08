@@ -5,6 +5,8 @@ Outputs two files:
 
 # Resources
 - GitHub issue: https://github.com/monarch-initiative/mondo-ingest/issues/22
+- ICD10CM exclusions, online: https://docs.google.com/spreadsheets/d/1cZPUReTl34Vu2a03tm2921ehARiIpp4fjeQfS27XzKA/edit#gid=1119821904
+- Ophanet/ORDO exclusions, online: https://docs.google.com/spreadsheets/d/16ftBJ8mYqEvSEVNi1tGxIlDfL88vYrs7tSUjSnGqrBw/edit#gid=0
 
 TODO's
   - todo: Do we need to worry about edge case where exclusion table is empty? (e.g. we include such a table for all
@@ -13,7 +15,7 @@ TODO's
      ontology, but how to determine the appropriate prefix just based on the 2 file params, but could have edge cases.
   - todo: later: see below: #x2
   - todo: later: see below: #x3
-  - todo: later: see below: #x4: Switch from SPARQL to OAK.
+  - todo: later: see below: #x4: Switch from SPARQL to OAK. (SqliteImpl() is faster than SparqlWrapper (which uses rdflib)
   - todo: later: When constructing exclusion TSV: bug: ICD10CM:C7A-C7A reported as term, but should be ICD10CM:C7A
   - todo: later: QA: possible conflicts in icd10cm_exclusions.tsv: Add a check to raise an error in event of a parent
      class having `True` for `exclude_children`, but the child class has `False`.
@@ -38,17 +40,18 @@ CONFIG = {
 
 # # Static
 THIS_SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
-CACHE_DIR = os.path.join(THIS_SCRIPT_DIR, 'cache')
 SCRIPTS_DIR = os.path.join(THIS_SCRIPT_DIR, '..')
 PROJECT_DIR = os.path.join(SCRIPTS_DIR, '..')
-ONTOLOGY_DIR = os.path.join(PROJECT_DIR, 'ontology')
+ONTOLOGY_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology')
+TEMP_DIR = os.path.join(ONTOLOGY_DIR, 'tmp')
+CACHE_DIR = TEMP_DIR
 CONFIG_DIR = os.path.join(ONTOLOGY_DIR, 'config')
 SPARQL_DIR = os.path.join(PROJECT_DIR, 'sparql')
 SPARQL_CHILD_INCLUSION_PATH = os.path.join(SPARQL_DIR, 'get-terms-children.sparql.jinja2')
 SPARQL_TERM_REGEX_PATH = os.path.join(SPARQL_DIR, 'get-terms-by-regex.sparql.jinja2')
 
-
 # Functions
+# TODO: use: https://bioregistry.readthedocs.io/en/latest/api/bioregistry.curie_from_iri.html?highlight=get_curie#bioregistry.curie_from_iri
 def uri_to_curie(uri: str) -> str:
     """Takes an ontological URI and returns a CURIE. Works on the following patterns:
     - http://.../PREFIX/CODE
@@ -151,12 +154,9 @@ def expand_ontological_exclusions(
     # # JOIN: To get exclusion_reason
     df_kids1_results2 = pd.merge(df_kids1_results, exclusions_df, how='left', on='term_id').fillna('')
     # # Drop parent term data
-    df_kids1_results2 = df_kids1_results2[['child_id', 'child_label', 'exclusion_reason']]
+    df_kids1_results2 = df_kids1_results2[['child_id', 'exclusion_reason']]
     # # Rename child fields as they are now top-level terms
-    df_kids1_results2 = df_kids1_results2.rename(columns={
-        'child_id': 'term_id',
-        'child_label': 'term_label',
-    })
+    df_kids1_results2 = df_kids1_results2.rename(columns={'child_id': 'term_id'})
     # # Drop unneeded fields
     df_kids0 = df_kids0[export_fields]
     df_kids1_results2 = df_kids1_results2[export_fields]
@@ -167,7 +167,6 @@ def expand_ontological_exclusions(
     return df_results
 
 
-# TODO: use relevant_signature_path
 def run(
     onto_path: str, exclusions_path: str, relevant_signature_path: str, onto_name: str, save=CONFIG['save']
 ) -> Union[Dict[str, pd.DataFrame], None]:
@@ -236,6 +235,8 @@ def run(
     # - df_results_simple: Simpler dataframe which is easier to use downstream for other purposes
     df_results_simple = df_results[['term_id']]
     # - df_results: Add special meta rows
+    # todo: Utilize `has_exclusion_reason`, pending modno#5177 completion:
+    #  https://github.com/monarch-initiative/mondo/issues/5177#issue-1304502840
     df_added_row = pd.DataFrame([{'term_id': 'ID', 'exclusion_reason': 'AI rdfs:seeAlso'}])
     df_results = pd.concat([df_added_row, df_results])
 
