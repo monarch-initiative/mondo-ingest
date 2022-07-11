@@ -212,6 +212,28 @@ $(REPORTDIR)/term_exclusions.txt $(REPORTDIR)/exclusion_reasons.robot.template.t
 $(REPORTDIR)/term_exclusions.ttl: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_exclusion_reasons.ttl)
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
+# TODO: Add .PHONY here and below to top of file?
+# TODO: need a purl for this?
+# TODO: use this target: tmp/mondo.sssom.tsv
+.PHONY: mondo-mappings
+MONDO_MAPPINGS_TSV = 'https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo.sssom.tsv'
+mondo-mappings:
+	wget ${MONDO_MAPPINGS_TSV} -P ../analysis/excluded_terms_in_mondo/ignored/mappings/
+
+# TODO: Need to add dependency for sig/mirror files?
+.PHONY: excluded_terms_in_mondo
+# TODO: can put two file names as the target names
+# excluded-terms-in-mondo: mondo-mappings
+#     'outpath_xrefed_terms': os.path.join(PROJECT_DIR, 'excluded_terms_in_mondo - xrefs.csv'),
+#     'outpath_in_terms': os.path.join(THIS_SCRIPT_DIR, 'ignored', 'output', 'excluded_terms_in_mondo - in_mondo.csv'),
+# TODO: update my script to accept this positional param $@
+# TODO: change from CSV to TSV output
+# note: why not use $@: will only pick the calling target (e.g. if someone calls for the firs tone)
+$(REPORTDIR)/excluded_terms_in_mondo_xrefs.csv $(REPORTDIR)/excluded_terms_in_mondo.csv: mondo-mappings
+	python3 -m ../scripts/excluded_terms_in_mondo \
+	$(REPORTDIR)/excluded_terms_in_mondo_xrefs.csv \
+	$(REPORTDIR)/excluded_terms_in_mondo.csv
+
 #################
 # Documentation #
 #################
