@@ -68,6 +68,7 @@ def run(
 ) -> Dict[str, pd.DataFrame]:
     """Wrapper to run for all ontologies"""
     onto_field = 'ontology'
+    term_id_field = 'term_id'
     mirror_field = '1_in_mirror_tsv'
     component_field = '2_in_component_tsv'
     mappings_field = '3_in_mondo_xrefs'
@@ -93,14 +94,14 @@ def run(
         term_appearances = {}
         for term in mirror_set:
             term_appearances[term] = {
-                mirror_field: True, component_field: False, mappings_field: False}
+                term_id_field: term, mirror_field: True, component_field: False, mappings_field: False}
         for term in component_set:
             if term not in term_appearances:
-                term_appearances[term] = {mirror_field: False, mappings_field: False}
+                term_appearances[term] = {term_id_field: term, mirror_field: False, mappings_field: False}
             term_appearances[term][component_field] = True
         for term in mondo_mappings_set:
             if term not in term_appearances:
-                term_appearances[term] = {mirror_field: False, component_field: False}
+                term_appearances[term] = {term_id_field: term, mirror_field: False, component_field: False}
             term_appearances[term][mappings_field] = True
         df_i = pd.DataFrame(list(term_appearances.values()))
         # Analyze
@@ -119,7 +120,7 @@ def run(
             'pct_in1_notIn2_in3__over_in1': round(summary_count / len(mirror_set), 4) if summary_count > 0 else 0
         }])
         # Format & return
-        df_i = df_i[[onto_field, mirror_field, component_field, mappings_field, analytical_field]]
+        df_i = df_i[[onto_field, term_id_field, mirror_field, component_field, mappings_field, analytical_field]]
         df_list.append(df_i)
         df_summary_list.append(df_summary_i)
 
@@ -129,8 +130,8 @@ def run(
 
     # Format
     df = df.sort_values(
-        [onto_field, analytical_field, mirror_field, component_field, mappings_field],
-        ascending=[True, False, False, False, False])
+        [onto_field, analytical_field, term_id_field, mirror_field, component_field, mappings_field],
+        ascending=[True, False, True, False, False, False])
     df_summary = df_summary.sort_values([summary_count_field], ascending=[False])
 
     # Save & return
