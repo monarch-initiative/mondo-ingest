@@ -17,8 +17,9 @@ import pandas as pd
 THIS_SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 ANALYSIS_DIR = os.path.join(THIS_SCRIPT_DIR, '..')
 PROJECT_DIR = os.path.join(ANALYSIS_DIR, '..', '..')
-MAPPINGS_DIR = os.path.join(THIS_SCRIPT_DIR, 'ignored', 'mappings')
+TEMP_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology', 'tmp')
 REPORTS_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology', 'reports')
+MAPPINGS_DIR = TEMP_DIR
 SIGNATURE_FILES_DIR = REPORTS_DIR
 OUTDIR = REPORTS_DIR
 # # Config
@@ -62,6 +63,7 @@ def load_and_format_tsv(onto_name: str, pattern: str, _dir: str = SIGNATURE_FILE
     return df
 
 
+# TODO: add labels. Chris recommends: https://incatools.github.io/ontology-access-kit/cli.html#runoak-fill-table
 def run(
     ontologies: List[str], mondo_mappings_path: str, component_sig_pattern: str, mirror_sig_pattern: str,
     outpath: str, save=CONFIG['save']
