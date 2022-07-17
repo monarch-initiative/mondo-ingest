@@ -12,3 +12,5 @@ preprocessing:
     entities:
       - id: skos:notation
         type: owl:DataProperty
+base_prefix_map:
+  ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
