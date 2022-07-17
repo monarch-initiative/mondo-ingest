@@ -250,3 +250,14 @@ ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror
 .PHONY: signature_reports
 signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
 	echo "Finished running signature reports.."
+
+slurp/:
+	mkdir -p $@
+
+slurp/%.tsv: components/%.owl tmp/mondo.sssom.tsv reports/mirror-signature-mondo.tsv | slurp/
+	python $(SCRIPTSDIR)/migrate.py -i $< --mapping-file tmp/mondo.sssom.tsv --min-id 123000 --mondo-terms reports/mirror-signature-mondo.tsv --output $@
+	# Feel free to change the signature. Min ID is the next available Mondo ID.
+
+slurp-%: slurp/%.tsv
+
+slurp: slurp-omim
