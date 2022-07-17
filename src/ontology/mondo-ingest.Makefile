@@ -320,7 +320,6 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 #############################
 #### Lexical matching #######
 #############################
-
 tmp/merged.db: tmp/merged.owl
 	semsql make $@
 
@@ -328,3 +327,17 @@ mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-
 	python $^ run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
 
 lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
+
+#############################
+########### Slurp ###########
+#############################
+slurp/:
+	mkdir -p $@
+
+slurp/%.tsv: components/%.owl tmp/mondo.sssom.tsv reports/mirror-signature-mondo.tsv | slurp/
+	python $(SCRIPTSDIR)/migrate.py -i $< --mapping-file tmp/mondo.sssom.tsv --min-id 123000 --mondo-terms reports/mirror-signature-mondo.tsv --output $@
+	# Feel free to change the signature. Min ID is the next available Mondo ID.
+
+slurp-%: slurp/%.tsv
+
+slurp: slurp-omim
