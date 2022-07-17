@@ -27,8 +27,11 @@ from report_mapping_annotations import run as get_report
 # todo: I wonder if handling this duplicated code fragment (these path variables) would be a good idea.
 # noinspection DuplicatedCode
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
-CACHE_DIR = os.path.join(SCRIPT_DIR, 'cache')
-PROJECT_DIR = os.path.join(SCRIPT_DIR, '..', '..', '..')
+SCRIPTS_DIR = os.path.join(SCRIPT_DIR, '..')
+PROJECT_DIR = os.path.join(SCRIPTS_DIR, '..')
+ONTOLOGY_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology')
+TEMP_DIR = os.path.join(ONTOLOGY_DIR, 'tmp')
+CACHE_DIR = TEMP_DIR
 SOURCES_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology', 'tmp')
 SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 # # Messages
