@@ -329,7 +329,7 @@ mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-
 lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
 
 #############################
-########### Slurp ###########
+###### Slurp pipeline #######
 #############################
 slurp/:
 	mkdir -p $@
