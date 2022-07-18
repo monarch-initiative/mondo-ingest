@@ -255,7 +255,8 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 #### Lexical matching #######
 #############################
 
-mappings/mondo-sources-all-lexical.sssom.tsv: tmp/merged.owl metadata/mondo.sssom.config.yml
-	python $(SCRIPTDIR)/match-mondo-sources-all-lexical.py tmp/merged.owl metadata/mondo.sssom.config.yml $@
+mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTDIR)/match-mondo-sources-all-lexical.py tmp/merged.owl metadata/mondo.sssom.config.yml
+	python $^ $@
+	# The $^ includes the python script, basically all paramters after the colon :
 
 lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
