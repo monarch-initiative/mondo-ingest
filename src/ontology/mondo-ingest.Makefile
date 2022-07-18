@@ -250,3 +250,12 @@ ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror
 .PHONY: signature_reports
 signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
 	echo "Finished running signature reports.."
+
+#############################
+#### Lexical matching #######
+#############################
+
+mappings/mondo-sources-all-lexical.sssom.tsv: tmp/merged.owl metadata/mondo.sssom.config.yml
+	python $(SCRIPTDIR)/match-mondo-sources-all-lexical.py tmp/merged.owl metadata/mondo.sssom.config.yml $@
+
+lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
