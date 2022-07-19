@@ -9,7 +9,7 @@ report-mapping-annotations
 ### Standard constants #############
 ####################################
 MAPPINGSDIR=../mappings
-
+SCRIPTDIR=../scripts
 ####################################
 ### Relevant signature #############
 ####################################
