@@ -9,7 +9,7 @@ report-mapping-annotations
 ### Standard constants #############
 ####################################
 MAPPINGSDIR=../mappings
-
+SCRIPTDIR=../scripts
 ####################################
 ### Relevant signature #############
 ####################################
@@ -250,3 +250,13 @@ ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror
 .PHONY: signature_reports
 signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
 	echo "Finished running signature reports.."
+
+#############################
+#### Lexical matching #######
+#############################
+
+mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTDIR)/match-mondo-sources-all-lexical.py tmp/merged.owl metadata/mondo.sssom.config.yml
+	python $^ $@
+	# The $^ includes the python script, basically all paramters after the colon :
+
+lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
