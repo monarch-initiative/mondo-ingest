@@ -9,7 +9,6 @@ report-mapping-annotations
 ### Standard constants #############
 ####################################
 MAPPINGSDIR=../mappings
-SCRIPTDIR=../scripts
 ####################################
 ### Relevant signature #############
 ####################################
@@ -258,7 +257,7 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 tmp/merged.db: tmp/merged.owl
 	semsql make $@
 
-mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTDIR)/match-mondo-sources-all-lexical.py tmp/merged.db metadata/mondo.sssom.config.yml
+mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db metadata/mondo.sssom.config.yml
 	python $^ $@
 	# The $^ includes the python script, basically all paramters after the colon :
 
