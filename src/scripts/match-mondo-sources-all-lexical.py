@@ -93,21 +93,3 @@ def run(input:str, config: str, rules:str, output: str):
 
 if __name__ == '__main__':
     main()
-    # input = None
-    # config_file = None
-    # output = None
-    # rules = None
-    # # TODO: there must be a better way to parse arguments.
-    # for arg in sys.argv:
-    #     if arg.endswith('.db'):
-    #         input = arg
-    #     elif arg.endswith('_rules.yaml') or arg.endswith('_rules.yml'):
-    #         rules = arg
-    #     elif arg.endswith('.yaml') or arg.endswith('.yml'):
-    #         config_file = arg
-    #     elif arg.endswith('.tsv'):
-    #         output = arg
-    #     else:
-    #         logging.info(f"{arg} has no further use from here on.")
-    
-    # run(input=input, config_file=config_file, rules=rules, output=output)
