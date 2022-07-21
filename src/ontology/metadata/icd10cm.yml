@@ -4,6 +4,7 @@ description: >
 homepage: https://bioportal.bioontology.org/ontologies/ICD10CM
 prefix_map:
   skos: "http://www.w3.org/2004/02/skos/core#"
+  ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
 preprocessing:
   - type: EntityRemoval
     comment: >

@@ -169,11 +169,7 @@ update-jinja-sparql-queries:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
 config/%_term_exclusions.txt: config/%_exclusions.tsv component-download-%.owl $(TMPDIR)/%_relevant_signature.txt
-	python3 ../scripts/exclusion_term_expansion/exclusion_term_expansion.py \
-	--exclusions-path $(word 1,$^) \
-	--onto-path $(TMPDIR)/$(word 2,$^).owl \
-	--relevant-signature-path $(word 3,$^) \
-	--onto-name $*
+	python3 ../scripts/exclusion_term_expansion.py --onto-name $*
 
 #################
 # Documentation #
