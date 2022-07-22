@@ -384,7 +384,7 @@ def _fill_empty_optional_cli_args(d: Dict) -> Dict:
         'onto_path': os.path.join(TEMP_DIR, 'component-download-{}.owl.owl'),
         'config_path': os.path.join(METADATA_DIR, '{}.yml'),
         'exclusions_path': os.path.join(CONFIG_DIR, '{}_exclusions.tsv'),
-        'relevant_signature_path': os.path.join(TEMP_DIR, '{}_relevant_signature.txt'),
+        # 'relevant_signature_path': os.path.join(TEMP_DIR, '{}_relevant_signature.txt'),
         'mirror_signature_path': os.path.join(REPORTS_DIR, 'mirror_signature-{}.tsv'),
         'component_signature_path': os.path.join(REPORTS_DIR, 'component_signature-{}.tsv'),
     }

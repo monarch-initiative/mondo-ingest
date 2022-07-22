@@ -3,7 +3,7 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 .PHONY: deploy-mondo-ingest build-mondo-ingest documentation mappings update-jinja-sparql-queries \
-report-mapping-annotations
+report-mapping-annotations python-install-dependencies
 
 ####################################
 ### Standard constants #############
@@ -160,16 +160,20 @@ mappings: sssom $(ALL_MAPPINGS)
 #################
 # Utils #########
 #################
+python-install-dependencies:
+	python3 -m pip install --upgrade pip
+	python3 -m pip install -r $(RELEASEDIR)/requirements.txt
+
 # Documentation for `repo   rt-mapping-annotations` and `update-jinja-sparql-queries`: `docs/developer/ordo.md`
-report-mapping-annotations:
+report-mapping-annotations: python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
 
-update-jinja-sparql-queries:
+update-jinja-sparql-queries: python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
-config/%_term_exclusions.txt: config/%_exclusions.tsv component-download-%.owl $(TMPDIR)/%_relevant_signature.txt
-	python3 ../scripts/exclusion_term_expansion.py --onto-name $*
+config/%_term_exclusions.txt: config/%_exclusions.tsv component-download-%.owl $(TMPDIR)/%_relevant_signature.txt python-install-dependencies
+	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py --onto-name $*
 
 #################
 # Documentation #

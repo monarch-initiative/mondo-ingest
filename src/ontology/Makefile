@@ -311,7 +311,7 @@ $(COMPONENTSDIR)/omim.owl:  component-download-omim.owl
 
 .PHONY: component-download-ordo.owl
 component-download-ordo.owl: | $(TMPDIR)
-	if [ $(IMP) = true ]; then $(ROBOT) merge -I http://www.orphadata.org/data/ORDO/ORDO_en_4.0.owl \
+	if [ $(IMP) = true ]; then $(ROBOT) merge -I http://www.orphadata.org/data/ORDO/ORDO_en_4.1.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/ordo.owl:  component-download-ordo.owl
