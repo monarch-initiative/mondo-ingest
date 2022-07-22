@@ -21,9 +21,9 @@ from oaklib.utilities.lexical.lexical_indexer import (
     save_lexical_index
 )
 from sssom.writers import write_table
+from sssom.io import get_metadata_and_prefix_map
 import sys
 from pathlib import Path
-import yaml
 import click
 
 SRC = Path(__file__).resolve().parents[1]
@@ -68,21 +68,23 @@ def main(verbose: int, quiet: bool):
 )
 @output_option
 def run(input:str, config: str, rules:str, output: str):
-    with open(config, "r") as f:
-        sssom_yaml = yaml.safe_load(f)
-        
+    # Implemented `meta` param in `lexical_index_to_sssom`
+    # with open(config, "r") as f:
+    #     sssom_yaml = yaml.safe_load(f)
+    meta = get_metadata_and_prefix_map(config)
+
     resource = OntologyResource(slug=f"sqlite:///{Path(input).absolute()}")
     oi = SqlImplementation(resource=resource)
     lexical_index = create_lexical_index(oi)
     save_lexical_index(lexical_index, OUT_INDEX_DB)
-    msdf = lexical_index_to_sssom(oi, lexical_index)
+
     if rules:
-        msdf = lexical_index_to_sssom(oi, lexical_index, ruleset=load_mapping_rules(rules))
+        msdf = lexical_index_to_sssom(oi, lexical_index, ruleset=load_mapping_rules(rules),meta=meta)
     else:
-        msdf = lexical_index_to_sssom(oi, lexical_index)
+        msdf = lexical_index_to_sssom(oi, lexical_index,meta=meta)
     
-    msdf.prefix_map = sssom_yaml['curie_map']
-    msdf.metadata = sssom_yaml['global_metadata']
+    # msdf.prefix_map = sssom_yaml['curie_map']
+    # msdf.metadata = sssom_yaml['global_metadata']
 
     with open(str(SRC / Path(output)), "w", encoding="utf8") as f:
         write_table(msdf, f)
