@@ -35,7 +35,6 @@ output_option = click.option(
     "-o",
     "--output",
     help="Path for output file.",
-    type=click.File(mode="w"),
     default=sys.stdout,
 )
 
@@ -71,7 +70,7 @@ def main(verbose: int, quiet: bool):
 def run(input:str, config: str, rules:str, output: str):
     with open(config, "r") as f:
         sssom_yaml = yaml.safe_load(f)
-
+        
     resource = OntologyResource(slug=f"sqlite:///{Path(input).absolute()}")
     oi = SqlImplementation(resource=resource)
     lexical_index = create_lexical_index(oi)
@@ -85,8 +84,7 @@ def run(input:str, config: str, rules:str, output: str):
     msdf.prefix_map = sssom_yaml['curie_map']
     msdf.metadata = sssom_yaml['global_metadata']
 
-    # target_location = 
-    with open(SRC / output, "w", encoding="utf8") as f:
+    with open(str(SRC / Path(output)), "w", encoding="utf8") as f:
         write_table(msdf, f)
 
 
