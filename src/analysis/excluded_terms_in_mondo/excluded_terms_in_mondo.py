@@ -24,7 +24,7 @@ SIGNATURE_FILES_DIR = REPORTS_DIR
 OUTDIR = REPORTS_DIR
 # # Config
 CONFIG = {
-    # todo: get list from mondo config yml:
+    # todo: get list from mondo config yml: (i dont see that file here, and sssom file doesnt have this. in Mondo repo?)
     'ontologies': ['doid', 'icd10cm', 'icd10who', 'ncit', 'omim', 'ordo'],
     'mondo_mappings_path': os.path.join(MAPPINGS_DIR, 'mondo.sssom.tsv'),
     'component_sig_pattern': 'component_signature-{}.tsv',

@@ -229,7 +229,7 @@ mondo-mappings:
 # TODO: update my script to accept this positional param $@
 # TODO: change from CSV to TSV output
 # note: why not use $@: will only pick the calling target (e.g. if someone calls for the firs tone)
-$(REPORTDIR)/excluded_terms_in_mondo_xrefs.csv $(REPORTDIR)/excluded_terms_in_mondo.csv: mondo-mappings
+$(REPORTDIR)/excluded_terms_in_mondo_xrefs.csv $(REPORTDIR)/excluded_terms_in_mondo.csv: mondo-mappings python-install-dependencies
 	python3 -m ../scripts/excluded_terms_in_mondo \
 	$(REPORTDIR)/excluded_terms_in_mondo_xrefs.csv \
 	$(REPORTDIR)/excluded_terms_in_mondo.csv
