@@ -11,14 +11,8 @@ Outputs two files:
   https://docs.google.com/spreadsheets/d/16ftBJ8mYqEvSEVNi1tGxIlDfL88vYrs7tSUjSnGqrBw/edit#gid=0
 
 TODO's
-  - todo: Do we need to worry about edge case where exclusion table is empty? (e.g. we include such a table for all
-     ontologies, but there exists 1 where we don't exclude anything.
-  - todo: later: see below: #x1: regex results: would be good to filter out by IRI or prefix that is not from source
-     ontology, but how to determine the appropriate prefix just based on the 2 file params, but could have edge cases.
-  - todo: later: see below: #x2
   - todo: later: see below: #x3
   - todo: later: see below: #x4: SPARQL to OAK. (SqliteImpl() is faster than SparqlWrapper (which uses rdflib)
-  - todo: later: When constructing exclusion TSV: bug: ICD10CM:C7A-C7A reported as term, but should be ICD10CM:C7A
   - todo: later: QA: possible conflicts in icd10cm_exclusions.tsv: Add a check to raise an error in event of a parent
      class having `True` for `exclude_children`, but the child class has `False`.
 """
@@ -35,8 +29,7 @@ import pandas as pd
 # Vars
 # # Config
 CONFIG = {
-    'use_cache': True,
-    'include_superclass': False,  # is this the correct name for what this does: * property path qualifier
+    'use_cache': False,
     'save': True,  # save dataframes to disk
     'regex_prefix': 'REGEX:'  # used to know which rows in exclusion TSVs are regex pattern searches
 }
@@ -55,7 +48,6 @@ CONFIG_DIR = os.path.join(ONTOLOGY_DIR, 'config')
 SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 SPARQL_CHILD_INCLUSION_PATH = os.path.join(SPARQL_DIR, 'get-terms-children.sparql.jinja2')
 SPARQL_TERM_REGEX_PATH = os.path.join(SPARQL_DIR, 'get-terms-by-regex.sparql.jinja2')
-ONTO_NON_OWNED_PREFIXES = ['oboInOwl', 'owl', 'rdfs', 'skos', 'sssom']
 
 
 # Functions
@@ -75,15 +67,12 @@ def uri_to_curie(uri: str) -> str:
     return curie
 
 
-# todo: later #x2: terms vs regexp: this would be better as a class or done some other way probably
-# todo: later #x3: could be nice to add param to auto-do uri_to_curie()
+# todo: later #x3: could be nice to add param to auto-do uri_to_curie(), or just replace this with OAK
 def sparql_jinja2_robot_query(
     query_template_path: str, onto_path: str, use_cache=CONFIG['use_cache'],
-    include_superclass=CONFIG['include_superclass'], cache_suffix: str = None,
-    prefixes: List[str] = None, terms: List[str] = None, regexp: str = None
+    cache_suffix: str = None, prefixes: List[str] = None, terms: List[str] = None, regexp: str = None
 ) -> pd.DataFrame:
     """Query ontology using SPARQL query file
-    include_superclass: See: # https://www.w3.org/TR/sparql11-query/#propertypaths
     cache_suffix: Caches are named using the input ontology and SPARQL files. However, it can be the case that
       there are two different queries which use these same files, but have other differences. This param is used
       to distinguish between such cases.
@@ -114,7 +103,6 @@ def sparql_jinja2_robot_query(
     elif terms:
         instantiated_str = template_obj.render(
             prefixes=prefixes,
-            property_path_qualifier='*' if include_superclass else '+',
             values=' '.join(terms))
     elif regexp:
         instantiated_str = template_obj.render(
@@ -133,16 +121,6 @@ def sparql_jinja2_robot_query(
 
     # Read results and return
     try:
-        # TODO: Results now that I have added prefix?
-        #  - if not, check my instantiated sparql query & compare w/ onto file
-        #  Ontologies checked:
-        #  - icd10cm
-        #  Ontologies to check:
-        #  - icd10who: no intensional exclusion table yet
-        #  - omim: no intensional exclusion table yet
-        #  - doid: issues downloading
-        #  - ncit: issues downloading
-        #  - ordo: issues downloading
         df = pd.read_csv(results_path).fillna('')
     except pd.errors.EmptyDataError:
         # remove: so that it doesn't read this from cache, though it could be that there were really no results.
@@ -230,7 +208,6 @@ def get_non_inclusions(
 
 def expand_intensional_exclusions(
     onto_path: str, exclusions_path: str, prefix_sparql_strings: List[str],
-    # relevant_signature_path: str,
 ) -> pd.DataFrame:
     """Expand intensional exclusions"""
     # Vars
@@ -267,9 +244,6 @@ def expand_intensional_exclusions(
             cache_suffix=f'r{str(index)}')
         if len(search_result_df) > 0:
             search_result_df['term_id'] = search_result_df['term_id'].apply(uri_to_curie)
-            # todo later: #x1: would be good to filter out by IRI or prefix that is not from source ontology
-            #  ...This can be done (a) in Python, or (b) in SPARQL, if using that.
-            # search_result_df = search_result_df[search_result_df['term_id'].str.startswith(prefix)]
             for fld in exclusion_fields:
                 search_result_df[fld] = row[fld]
             search_results.append(search_result_df)
@@ -289,31 +263,12 @@ def expand_intensional_exclusions(
     # for a term that is within both (a) and (b). In that case, duplicate terms will remain, showing both reasons.
     df_results = df_results.drop_duplicates()
 
-    # TODO: Verify w/ Nico that I should indeed not be filtering using relevant_signature.
-    #  Because then I get 0 exclusions as a result. Also, it's no longer in his requirements:
-    #  https://docs.google.com/document/d/1-bFd6GeHcLHImjKImML_j0uAyKENIlb5NN64oGP4rwY/edit#
-    #  ...then, remove everything else about --relevant-signature from this script.
-    # TODO: If I remove this, need to remov eall other commented out instances of relevant_signature in file
-    # - Filter: terms not in relevant_signature.txt, e.g. terms actually in onto that we care about
-    # df_relevant_terms = pd.read_csv(relevant_signature_path).fillna('')
-    # df_relevant_terms['term'] = df_relevant_terms['term'].apply(uri_to_curie)
-    # relevant_terms: List[str] = list(set(df_relevant_terms['term']))
-    # # todo: redundancy betw?: `relevant_terms_accidentally_excluded` and `~df_results['term_id'].isin(relevant_terms)`
-    # df_results_set = set(df_results['term_id'])
-    # relevant_terms_accidentally_excluded = [x for x in relevant_terms if x in df_results_set]
-    # if relevant_terms_accidentally_excluded:
-    #     print(f'Warning: The extensionalization of intensional exclusion table resulted in the following terms which '
-    #           f'would have been excluded, but are contained within {os.path.basename(relevant_signature_path)}, and'
-    #           f' thus have been removed from exclusion: {relevant_terms_accidentally_excluded}', file=sys.stderr)
-    # df_results = df_results[~df_results['term_id'].isin(relevant_terms)]
-
     return df_results
 
 
 def run(
     onto_name: str, onto_path: str, exclusions_path: str, mirror_signature_path: str, component_signature_path: str,
     config_path: str, save=CONFIG['save']
-    # relevant_signature_path: str,
 ) -> Union[Dict[str, pd.DataFrame], None]:
     """Run"""
     # Vars
@@ -323,13 +278,12 @@ def run(
     # Prefixes
     with open(config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
-    prefix_uri_map = {k: v for k, v in onto_config['prefix_map'].items() if k not in ONTO_NON_OWNED_PREFIXES}
+    prefix_uri_map = onto_config['base_prefix_map']
     prefix_sparql_strings = [f'prefix {k}: <{v}>' for k, v in prefix_uri_map.items()]
 
     # Get excluded terms
     expanded_intensional_exclusions_df = expand_intensional_exclusions(
         onto_path=onto_path, exclusions_path=exclusions_path, prefix_sparql_strings=prefix_sparql_strings)
-    # relevant_signature_path=relevant_signature_path,)
     non_inclusions_df = get_non_inclusions(
         mirror_signature_path=mirror_signature_path, component_signature_path=component_signature_path,
         prefix_uris=list(prefix_uri_map.values()))
@@ -342,9 +296,7 @@ def run(
     # - df_results_simple: Simpler dataframe which is easier to use downstream for other purposes
     df_results_simple = df_results[['term_id']]
     # - df_results: Add special meta rows
-    # todo: Utilize `has_exclusion_reason`, pending mondo#5177 completion:
-    #  https://github.com/monarch-initiative/mondo/issues/5177#issue-1304502840
-    df_added_row = pd.DataFrame([{'term_id': 'ID', 'exclusion_reason': 'AI rdfs:seeAlso'}])
+    df_added_row = pd.DataFrame([{'term_id': 'ID', 'exclusion_reason': 'AI MONDOREL:has_exclusion_reason'}])
     df_results = pd.concat([df_added_row, df_results])
 
     # Save & return
@@ -384,7 +336,6 @@ def _fill_empty_optional_cli_args(d: Dict) -> Dict:
         'onto_path': os.path.join(TEMP_DIR, 'component-download-{}.owl.owl'),
         'config_path': os.path.join(METADATA_DIR, '{}.yml'),
         'exclusions_path': os.path.join(CONFIG_DIR, '{}_exclusions.tsv'),
-        # 'relevant_signature_path': os.path.join(TEMP_DIR, '{}_relevant_signature.txt'),
         'mirror_signature_path': os.path.join(REPORTS_DIR, 'mirror_signature-{}.tsv'),
         'component_signature_path': os.path.join(REPORTS_DIR, 'component_signature-{}.tsv'),
     }
@@ -408,18 +359,12 @@ def cli_get_parser() -> ArgumentParser:
         help='Optional. Path to the ontology file to query.')
     parser.add_argument(
         '-c', '--config-path', required=False,
-        help='Optional. Path to a config `.yml` for the ontology which contains a `prefix_map` which contains a list '
-             'of prefixes owned by the ontology. Used to filter out terms. Excludes the following prefixes if listed '
-             f'there: {ONTO_NON_OWNED_PREFIXES}')
+        help='Optional. Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
+             'list of prefixes owned by the ontology. Used to filter out terms.')
     parser.add_argument(
         '-e', '--exclusions-path', required=False,
         help='Optional. Path to a TSV which should have the following fields: `term_id` (str), `term_label` (str), '
              '`exclusion_reason` (str), and `exclude_children` (bool).')
-    parser.add_argument(
-        '-s', '--relevant-signature-path', required=False,
-        help='Optional. Path to a "relevant signature" file, which contains a list class URIs from an ontology '
-             'that are of that ontology itself and relevant, as opposed to, for example, classes from another ontology '
-             'that happen to be in the ontological file passed in `--onto-path`.')
     parser.add_argument(
         '-m', '--mirror-signature-path', required=False,
         help='Optional. Path to a "mirror signature" file, which contains a list of class URIs from the unaltered '
