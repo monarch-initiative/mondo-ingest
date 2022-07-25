@@ -23,7 +23,7 @@ $(TMPDIR)/%_relevant_signature.txt: component-download-%.owl | $(TMPDIR)
 	if [ $(COMP) = true ]; then $(ROBOT) query -i "$(TMPDIR)/$<.owl" -q "../sparql/$*-relevant-signature.sparql" $@; fi
 .PRECIOUS: $(TMPDIR)/%_relevant_signature.txt
 
-### ORDO needs to be structurally changed before the query can be run..
+### ORDO needs to be structurally changed before the query can be run_excluded_terms_in_mondo_xrefs..
 $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 	if [ $(COMP) = true ]; then $(ROBOT) query -i $(TMPDIR)/$<.owl --update ../sparql/ordo-construct-subclass-from-part-of.ru \
 		query -q "../sparql/ordo-relevant-signature.sparql" $@; fi
@@ -212,27 +212,14 @@ $(REPORTDIR)/term_exclusions.txt $(REPORTDIR)/exclusion_reasons.robot.template.t
 $(REPORTDIR)/term_exclusions.ttl: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_exclusion_reasons.ttl)
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
-# TODO: Add .PHONY here and below to top of file?
-# TODO: need a purl for this?
-# TODO: use this target: tmp/mondo.sssom.tsv
-.PHONY: mondo-mappings
-MONDO_MAPPINGS_TSV = 'https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo.sssom.tsv'
-mondo-mappings:
-	wget ${MONDO_MAPPINGS_TSV} -P ../analysis/excluded_terms_in_mondo/ignored/mappings/
+# TODO: create
+# $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo.tsv: $(TMPDIR)/mondo.sssom.tsv
 
-# TODO: Need to add dependency for sig/mirror files?
-.PHONY: excluded_terms_in_mondo
-# TODO: can put two file names as the target names
-# excluded-terms-in-mondo: mondo-mappings
-#     'outpath_xrefed_terms': os.path.join(PROJECT_DIR, 'excluded_terms_in_mondo - xrefs.csv'),
-#     'outpath_in_terms': os.path.join(THIS_SCRIPT_DIR, 'ignored', 'output', 'excluded_terms_in_mondo - in_mondo.csv'),
-# TODO: update my script to accept this positional param $@
-# TODO: change from CSV to TSV output
-# note: why not use $@: will only pick the calling target (e.g. if someone calls for the firs tone)
-$(REPORTDIR)/excluded_terms_in_mondo_xrefs.csv $(REPORTDIR)/excluded_terms_in_mondo.csv: mondo-mappings python-install-dependencies
-	python3 -m ../scripts/excluded_terms_in_mondo \
-	$(REPORTDIR)/excluded_terms_in_mondo_xrefs.csv \
-	$(REPORTDIR)/excluded_terms_in_mondo.csv
+# TODO: temp for when I don't want `python-install-dependencies`
+$(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/excluded_terms_in_mondo.tsv: $(TMPDIR)/mondo.sssom.tsv python-install-dependencies
+	python3 ../analysis/excluded_terms_in_mondo.py \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--outpath $@
 
 #################
 # Documentation #
