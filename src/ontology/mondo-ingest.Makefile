@@ -334,10 +334,16 @@ lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
 slurp/:
 	mkdir -p $@
 
+# Feel free to change the signature. Min ID is the next available Mondo ID.
 slurp/%.tsv: components/%.owl tmp/mondo.sssom.tsv reports/mirror-signature-mondo.tsv | slurp/
-	python $(SCRIPTSDIR)/migrate.py -i $< --mapping-file tmp/mondo.sssom.tsv --min-id 123000 --mondo-terms reports/mirror-signature-mondo.tsv --output $@
-	# Feel free to change the signature. Min ID is the next available Mondo ID.
+	python $(SCRIPTSDIR)/migrate.py \
+	-i $< \
+	--mapping-file tmp/mondo.sssom.tsv \
+	--min-id 123000 \
+	--mondo-terms reports/mirror-signature-mondo.tsv \
+	--output $@
 
 slurp-%: slurp/%.tsv
 
+# TODO: add more ontologies, e.g.: doid, icd10cm, icd10who, ncit, ordo
 slurp: slurp-omim
