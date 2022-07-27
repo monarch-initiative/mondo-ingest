@@ -1,3 +1,5 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 ### For Disease Ontology, we are interested in all terms
 SELECT DISTINCT ?term
 WHERE {

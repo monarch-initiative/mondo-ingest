@@ -3,7 +3,7 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 .PHONY: deploy-mondo-ingest build-mondo-ingest documentation mappings update-jinja-sparql-queries \
-report-mapping-annotations
+report-mapping-annotations python-install-dependencies
 
 ####################################
 ### Standard constants #############
@@ -160,14 +160,27 @@ mappings: sssom $(ALL_MAPPINGS)
 #################
 # Utils #########
 #################
-# Documentation for this commands in this section is in: `docs/developer/ordo.md`
+# Documentation for `report-mapping-annotations` and `update-jinja-sparql-queries`: `docs/developer/ordo.md`
+# TODO: When https://github.com/monarch-initiative/mondo-ingest/issues/43 is fixed, can change back to `requirements.txt`
+python-install-dependencies:
+	python3 -m pip install --upgrade pip
+	python3 -m pip install -r $(RELEASEDIR)/requirements-unlocked.txt
 
-report-mapping-annotations:
+report-mapping-annotations: python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
 
-update-jinja-sparql-queries:
+update-jinja-sparql-queries: python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
+
+config/%_term_exclusions.txt: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml python-install-dependencies
+	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py \
+	--onto-name $* \
+	--exclusions-path $(word 1,$^) \
+	--onto-path $(TMPDIR)/$(word 2,$^).owl \
+	--mirror-signature-path $(word 3,$^) \
+	--component-signature-path $(word 4,$^) \
+	--config-path $(word 5,$^)
 
 #################
 # Documentation #
