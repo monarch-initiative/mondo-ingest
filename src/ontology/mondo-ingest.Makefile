@@ -212,14 +212,21 @@ $(REPORTDIR)/term_exclusions.txt $(REPORTDIR)/exclusion_reasons.robot.template.t
 $(REPORTDIR)/term_exclusions.ttl: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_exclusion_reasons.ttl)
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
-# TODO: create
+# TODO:
 # $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo.tsv: $(TMPDIR)/mondo.sssom.tsv
-
 # TODO: temp for when I don't want `python-install-dependencies`
-$(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/excluded_terms_in_mondo.tsv: $(TMPDIR)/mondo.sssom.tsv python-install-dependencies
+$(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/excluded_terms_in_mondo.tsv: $(TMPDIR)/mondo.sssom.tsv tmp/mondo.owl python-install-dependencies
 	python3 ../analysis/excluded_terms_in_mondo.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--mondo-path tmp/mondo.owl \
+	--onto-name xxx \
+	--onto-config-path xxx \
+	--onto-exclusions-path xxx \
+	--mondo-mappings-path xxx \
 	--outpath $@
+# todo: an if statement here should route to one of these:
+# 	--outpath-classes xxx \
+# 	--outpath--xrefs xxx \
 
 #################
 # Documentation #

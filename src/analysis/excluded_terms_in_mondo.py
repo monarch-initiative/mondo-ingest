@@ -32,16 +32,15 @@ OUTFILE_ARGS = {
 }
 # # Config
 CONFIG = {
-    # todo: get list from mondo config yml: (i dont see that file here, and sssom file doesnt have this. in Mondo repo?)
-    'ontologies': ['icd10cm'],
-    # 'ontologies': ['doid', 'icd10cm', 'icd10who', 'ncit', 'omim', 'ordo'],
-    'mondo_mappings_path': os.path.join(MAPPINGS_DIR, 'mondo.sssom.tsv'),
-    'config_pattern': '{}.yml',
-    'component_sig_pattern': 'component_signature-{}.tsv',
-    'mirror_sig_pattern': 'mirror_signature-{}.tsv',
-    # outpath: summary will be saved in same dir, with _summary at end of name
-    'outpath_excluded_terms_in_mondo': os.path.join(OUTDIR, 'excluded_terms_in_mondo.tsv'),
-    'outpath_excluded_terms_in_mondo_xrefs': os.path.join(OUTDIR, 'excluded_terms_in_mondo_xrefs.tsv'),
+    # 'ontologies': ['icd10cm'],
+    # # 'ontologies': ['doid', 'icd10cm', 'icd10who', 'ncit', 'omim', 'ordo'],
+    # 'mondo_mappings_path': os.path.join(MAPPINGS_DIR, 'mondo.sssom.tsv'),
+    # 'config_pattern': '{}.yml',
+    # 'component_sig_pattern': 'component_signature-{}.tsv',
+    # 'mirror_sig_pattern': 'mirror_signature-{}.tsv',
+    # # outpath: summary will be saved in same dir, with _summary at end of name
+    # 'outpath_excluded_terms_in_mondo': os.path.join(OUTDIR, 'excluded_terms_in_mondo.tsv'),
+    # 'outpath_excluded_terms_in_mondo_xrefs': os.path.join(OUTDIR, 'excluded_terms_in_mondo_xrefs.tsv'),
     'save': True,  # save dataframes to disk
 }
 
@@ -110,8 +109,10 @@ def run_excluded_terms_in_mondo(
 
 # TODO: add labels. Chris recommends: https://incatools.github.io/ontology-access-kit/cli.html#runoak-fill-table
 def run_excluded_terms_in_mondo_xrefs(
-    ontologies: List[str], mondo_mappings_path: str, config_pattern: str, component_sig_pattern: str,
-    mirror_sig_pattern: str, outpath: str, save=CONFIG['save']
+    # ontologies: List[str], mondo_mappings_path: str, config_pattern: str, component_sig_pattern: str,
+    # mirror_sig_pattern: str, outpath: str,
+    onto_name: str, onto_config_path: str, onto_exclusions_path: str, mondo_mappings_path: str, outpath_classes: str,
+    outpath_xrefs: str, save=CONFIG['save']
 ) -> Dict[str, pd.DataFrame]:
     """Wrapper to run for all ontologies: Find excluded terms in Mondo xrefs"""
     onto_field = 'ontology'
@@ -260,40 +261,66 @@ def cli_get_parser() -> ArgumentParser:
     parser = ArgumentParser(description=package_description)
 
     parser.add_argument(
-        '-on', '--ontologies',  required=False,
-        default=CONFIG['ontologies'],
-        help='List of ontology names to analyze.')
+        '-n', '--onto-name', required=True,
+        help='Name of the ontology.')
+    parser.add_argument(
+        '-c', '--onto-config-path', required=False,
+        help='Optional. Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
+             'list of prefixes owned by the ontology. Used to filter out terms.')
+    parser.add_argument(
+        '-e', '--onto-exclusions-path', required=False,
+        help='Optional. Path to a TSV which should have the following fields: `term_id` (str), `term_label` (str), '
+             '`exclusion_reason` (str), and `exclude_children` (bool).')
+    parser.add_argument(
+        '-M', '--mondo-path',  required=False,
+        help='Path to `mondo.owl`.')
     parser.add_argument(
         '-m', '--mondo-mappings-path',  required=False,
-        default=CONFIG['mondo_mappings_path'],
         help='Path to `mondo.sssom.tsv`.')
     parser.add_argument(
-        '-c', '--config-pattern', required=False,
-        default=CONFIG['config_pattern'],
-        help='Python-formattable pattern for config `.yml` for the ontology which contains a `base_prefix_map` which'
-             ' contains a list of prefixes owned by the ontology. Used to filter out terms.')
-    parser.add_argument(
-        '-cp', '--component-sig-pattern', required=False,
-        default=CONFIG['component_sig_pattern'],
-        help='Python-formattable pattern for component signature files.')
-    parser.add_argument(
-        '-mp', '--mirror-sig-pattern', required=False,
-        default=CONFIG['mirror_sig_pattern'],
-        help='Python-formattable pattern for mirror signature files.')
-    # todo: Ideally to avoid confusion, should have only (a) -oi and -ox, or (b) -o.
-    #  Pending resolution: https://github.com/monarch-initiative/mondo-ingest/pull/35#discussion_r930447057
-    parser.add_argument(
-        '-oi', '--outpath-excluded-terms-in-mondo',
+        '-oi', '--outpath-classes',
         help='Path for output file for list of excluded terms in Mondo.')
     parser.add_argument(
-        '-ox', '--outpath-excluded-terms-in-mondo-xrefs',
+        '-ox', '--outpath-xrefs',
         help='Path for output file for list of excluded terms that have cross-references in Mondo.')
-    parser.add_argument(
-        '-o', '--outpath',
-        help='Path for output file. The name matters. Must be one of either (a) '
-             '`reports/excluded_terms_in_mondo_xrefs.tsv`, or (b) `reports/excluded_terms_in_mondo.tsv`, the `reports/`'
-             ' dir being in `src/ontology/`. The name of the file will determine the analysis run, the results of which'
-             ' will go into the file at that path.')
+    # parser.add_argument(
+    #     '-o', '--onto-path', required=False,
+    #     help='Optional. Path to the ontology file to query.')
+    # parser.add_argument(
+    #     '-cs', '--component-signature-path', required=False,
+    #     help='Optional. Path to a "component signature" file, which contains a list of class URIs from Mondo\'s '
+    #          '"alignment module" for the ontology, an alignment module being defined as the list of classes we care '
+    #          'about (e.g. all diseases).')
+    # parser.add_argument(
+    #     '-m', '--mirror-signature-path', required=False,
+    #     help='Optional. Path to a "mirror signature" file, which contains a list of class URIs from the unaltered '
+    #          'source ontology.')
+    # parser.add_argument(
+    #     '-on', '--ontologies',  required=False,
+    #     default=CONFIG['ontologies'],
+    #     help='List of ontology names to analyze.')
+    # parser.add_argument(
+    #     '-c', '--config-pattern', required=False,
+    #     default=CONFIG['config_pattern'],
+    #     help='Python-formattable pattern for config `.yml` for the ontology which contains a `base_prefix_map` which'
+    #          ' contains a list of prefixes owned by the ontology. Used to filter out terms.')
+    # parser.add_argument(
+    #     '-cp', '--component-sig-pattern', required=False,
+    #     default=CONFIG['component_sig_pattern'],
+    #     help='Python-formattable pattern for component signature files.')
+    # parser.add_argument(
+    #     '-mp', '--mirror-sig-pattern', required=False,
+    #     default=CONFIG['mirror_sig_pattern'],
+    #     help='Python-formattable pattern for mirror signature files.')
+    # todo: Ideally to avoid confusion, should have only (a) -oi and -ox, or (b) -o.
+    #  Pending resolution: https://github.com/monarch-initiative/mondo-ingest/pull/35#discussion_r930447057
+    # parser.add_argument(
+    #     '-o', '--outpath',
+    #     help='Path for output file. The name matters. Must be one of either (a) '
+    #          '`reports/excluded_terms_in_mondo_xrefs.tsv`, or (b) `reports/excluded_terms_in_mondo.tsv`, the `reports/`'
+    #          ' dir being in `src/ontology/`. The name of the file will determine the analysis run, the results of which'
+    #          ' will go into the file at that path.')
+
     return parser
 
 
