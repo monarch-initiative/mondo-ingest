@@ -23,7 +23,7 @@ $(TMPDIR)/%_relevant_signature.txt: component-download-%.owl | $(TMPDIR)
 	if [ $(COMP) = true ]; then $(ROBOT) query -i "$(TMPDIR)/$<.owl" -q "../sparql/$*-relevant-signature.sparql" $@; fi
 .PRECIOUS: $(TMPDIR)/%_relevant_signature.txt
 
-### ORDO needs to be structurally changed before the query can be run_excluded_terms_in_mondo_xrefs..
+### ORDO needs to be structurally changed before the query can be run..
 $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 	if [ $(COMP) = true ]; then $(ROBOT) query -i $(TMPDIR)/$<.owl --update ../sparql/ordo-construct-subclass-from-part-of.ru \
 		query -q "../sparql/ordo-relevant-signature.sparql" $@; fi
@@ -212,21 +212,21 @@ $(REPORTDIR)/term_exclusions.txt $(REPORTDIR)/exclusion_reasons.robot.template.t
 $(REPORTDIR)/term_exclusions.ttl: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_exclusion_reasons.ttl)
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
-# TODO:
-# $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo.tsv: $(TMPDIR)/mondo.sssom.tsv
-# TODO: temp for when I don't want `python-install-dependencies`
-$(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/excluded_terms_in_mondo.tsv: $(TMPDIR)/mondo.sssom.tsv tmp/mondo.owl python-install-dependencies
-	python3 ../analysis/excluded_terms_in_mondo.py \
+# TODO: Need to write something that combines these all together
+$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo.tsv: $(TMPDIR)/mondo.sssom.tsv tmp/mondo.owl metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv python-install-dependencies
+	python3 ../analysis/problematic_exclusions.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--mondo-path tmp/mondo.owl \
-	--onto-name xxx \
-	--onto-config-path xxx \
-	--onto-exclusions-path xxx \
-	--mondo-mappings-path xxx \
+	--onto-name $* \
+	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
+	--onto-config-path metadata/$*.yml \
+	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
+	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
 	--outpath $@
 # todo: an if statement here should route to one of these:
 # 	--outpath-classes xxx \
 # 	--outpath--xrefs xxx \
+# 	--onto-exclusions-path config/%_term_exclusions.txt \
 
 #################
 # Documentation #

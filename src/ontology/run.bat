@@ -1,1 +1,1 @@
-docker run_excluded_terms_in_mondo_xrefs -v %cd%\..\..\:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx20G' -e JAVA_OPTS='-Xmx20G' --rm -ti obolibrary/odkfull %*
+docker run -v %cd%\..\..\:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx20G' -e JAVA_OPTS='-Xmx20G' --rm -ti obolibrary/odkfull %*

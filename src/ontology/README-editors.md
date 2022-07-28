@@ -63,9 +63,9 @@ There are two ways to include new classes in an import module
  1. Reference an external ontology class in the edit ontology. In Protege: "add new entity", then paste in the PURL
  2. Add to the imports/ont_terms.txt file, for example imports/go_terms.txt
 
-After doing this, you can run_excluded_terms_in_mondo_xrefs
+After doing this, you can run
 
-`./run_excluded_terms_in_mondo_xrefs.sh make all_imports`
+`./run.sh make all_imports`
 
 to regenerate imports.
 
@@ -88,7 +88,7 @@ specified on a per-term basis in the TSV file.
 Design pattern docs are checked for validity via Travis, but can be
 tested locally using
 
-`./run_excluded_terms_in_mondo_xrefs.sh make patterns`
+`./run.sh make patterns`
 
 In addition to running standard tests, this command generates an owl
 file (`src/patterns/pattern.owl`), which demonstrates the relationships
@@ -98,9 +98,9 @@ between design patterns.
 added to `src/patterns/pattern.owl` for all imports generated in
 `src/imports/*_import.owl`.   This will be automated in a future release.')
 
-To compile design patterns to terms run_excluded_terms_in_mondo_xrefs:
+To compile design patterns to terms run:
 
-`./run_excluded_terms_in_mondo_xrefs.sh make ../patterns/definitions.owl`
+`./run.sh make ../patterns/definitions.owl`
 
 This generates a file (`src/patterns/definitions.owl`).  You then need
 to add an import statement to the editor's file to import the
@@ -112,7 +112,7 @@ committed and pushed, AND the travis build passes.
 
 These instructions assume you have
 [docker](https://www.docker.com/get-docker). This folder has a script
-[run_excluded_terms_in_mondo_xrefs.sh](run.sh) that wraps docker commands.
+[run.sh](run.sh) that wraps docker commands.
 
 to release:
 
@@ -123,11 +123,11 @@ first type
 to make sure you are on master
 
     cd src/ontology
-    sh run_excluded_terms_in_mondo_xrefs.sh make all
+    sh run.sh make all
 
 If this looks good type:
 
-    sh run_excluded_terms_in_mondo_xrefs.sh make prepare_release
+    sh run.sh make prepare_release
 
 This generates derived files such as mondo-ingest.owl and mondo-ingest.obo and places
 them in the top level (../..).
