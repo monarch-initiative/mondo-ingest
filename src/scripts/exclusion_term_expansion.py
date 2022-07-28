@@ -22,8 +22,8 @@ from argparse import ArgumentParser
 from typing import Dict, List, Union
 
 import yaml
-from jinja2 import Template
 import pandas as pd
+from jinja2 import Template
 
 
 # Vars
@@ -35,7 +35,6 @@ CONFIG = {
 }
 
 # # Static
-# noinspection DuplicatedCode
 THIS_SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 SCRIPTS_DIR = THIS_SCRIPT_DIR
 PROJECT_DIR = os.path.join(SCRIPTS_DIR, '..', '..')
@@ -51,19 +50,22 @@ SPARQL_TERM_REGEX_PATH = os.path.join(SPARQL_DIR, 'get-terms-by-regex.sparql.jin
 
 
 # Functions
-# TODO: use: https://bioregistry.readthedocs.io/
-#  en/latest/api/bioregistry.curie_from_iri.html?highlight=get_curie#bioregistry.curie_from_iri
-def uri_to_curie(uri: str) -> str:
-    """Takes an ontological URI and returns a CURIE. Works on the following patterns:
-    - http://.../PREFIX/CODE
-    - http://.../PREFIX_CODE"""
-    uri_list: List[str] = uri.split('/')
-    end_bit = uri_list[-1]
-    if '_' in end_bit:
-        curie = end_bit.replace('_', ':')
-    else:
-        curie = uri_list[-2] + ':' + end_bit
-    curie = curie.replace('<', '').replace('>', '')
+# TODO: evaluate https://github.com/cthoyt/curies , which likely has fully superseded new bioregistry option
+#  https://github.com/biopragmatics/bioregistry/issues/480#issuecomment-1199235747
+def uri_to_curie(uri: str, prefix_map: Dict[str, str]) -> str:
+    """Takes an ontological URI and returns a CURIE. Works on the following patterns
+    todo: eventually OAK might also have an optimal solution for this."""
+    if uri.startswith('<'):
+        uri = uri[1:]
+    if uri.endswith('>'):
+        uri = uri[:-1]
+    curie = None
+    for k, v in prefix_map.items():
+        if uri.startswith(v):
+            curie = uri.replace(v, f"{k}:")
+    if not curie:
+        err = f'Could not locate a suitable URI base in `prefix_map`:\n- uri: {uri}\n- prefix_map: {prefix_map}'
+        raise ValueError(err)
     return curie
 
 
@@ -132,13 +134,13 @@ def sparql_jinja2_robot_query(
 
 
 def expand_ontological_exclusions(
-    onto_path: str, exclusions_df: pd.DataFrame, prefix_sparql_strings: List[str] = None, cache_suffix: str = None,
+    onto_path: str, exclusions_df: pd.DataFrame, prefix_map: Dict[str, str], cache_suffix: str = None,
     export_fields=['term_id', 'exclusion_reason'], uri_fields=['term_id', 'child_id']
 ) -> pd.DataFrame:
     """Using an ontology file and an exclusions file, query and get return an extensional list of exclusions.
-    cache_suffix: Used by and explained in sparql_jinja2_robot_query().
-    prefix_sparql_strings: of the form 'prefix [PREFIX]: <[URI]>"""
+    cache_suffix: Used by and explained in sparql_jinja2_robot_query()."""
     # Variable names: kids0=Children excluded; kids1=Children included
+    prefix_sparql_strings = [f'prefix {k}: <{v}>' for k, v in prefix_map.items()]
     df_kids1 = exclusions_df[exclusions_df['exclude_children'] == False]
     df_kids0 = exclusions_df[exclusions_df['exclude_children'] == True]
 
@@ -155,7 +157,7 @@ def expand_ontological_exclusions(
         # Massage results
         # # Convert URI back to prefix
         for fld in uri_fields:
-            df_kids1_results_1st[fld] = df_kids1_results_1st[fld].apply(uri_to_curie)
+            df_kids1_results_1st[fld] = df_kids1_results_1st[fld].apply(uri_to_curie, prefix_map=prefix_map)
         # # JOIN: To get exclusion_reason
         df_kids1_results = pd.merge(df_kids1_results_1st, exclusions_df, how='left', on='term_id').fillna('')
         # # Drop parent term data
@@ -207,7 +209,7 @@ def get_non_inclusions(
 
 
 def expand_intensional_exclusions(
-    onto_path: str, exclusions_path: str, prefix_sparql_strings: List[str],
+    onto_path: str, exclusions_path: str, prefix_map: Dict[str, str],
 ) -> pd.DataFrame:
     """Expand intensional exclusions"""
     # Vars
@@ -226,7 +228,7 @@ def expand_intensional_exclusions(
     # Query 1: on explicit term_id
     if len(df_explicit) > 0:
         df_explicit_results = expand_ontological_exclusions(
-            onto_path=onto_path, exclusions_df=df_explicit, prefix_sparql_strings=prefix_sparql_strings,
+            onto_path=onto_path, exclusions_df=df_explicit, prefix_map=prefix_map,
             cache_suffix='1')
 
     # Query 2: on regex pattern
@@ -251,7 +253,8 @@ def expand_intensional_exclusions(
         # - Combine each of the regex search results
         df_regex_pre_results = pd.concat(search_results)
         # - Query for children
-        df_regex_results = expand_ontological_exclusions(onto_path, df_regex_pre_results, cache_suffix='2')
+        df_regex_results = expand_ontological_exclusions(
+            onto_path=onto_path, exclusions_df=df_regex_pre_results, cache_suffix='2', prefix_map=prefix_map)
 
     # Combine & massage
     # - CONCAT: Combine results of all queries
@@ -279,11 +282,10 @@ def run(
     with open(config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
     prefix_uri_map = onto_config['base_prefix_map']
-    prefix_sparql_strings = [f'prefix {k}: <{v}>' for k, v in prefix_uri_map.items()]
 
     # Get excluded terms
     expanded_intensional_exclusions_df = expand_intensional_exclusions(
-        onto_path=onto_path, exclusions_path=exclusions_path, prefix_sparql_strings=prefix_sparql_strings)
+        onto_path=onto_path, exclusions_path=exclusions_path, prefix_map=prefix_uri_map)
     non_inclusions_df = get_non_inclusions(
         mirror_signature_path=mirror_signature_path, component_signature_path=component_signature_path,
         prefix_uris=list(prefix_uri_map.values()))
