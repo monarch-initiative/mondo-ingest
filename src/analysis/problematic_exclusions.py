@@ -46,6 +46,7 @@ CONFIG = {
 
 
 # Functions
+# TODO: evaluate new bioregistry option https://github.com/biopragmatics/bioregistry/issues/480#issuecomment-1199235747
 def uri_to_curie(uri: str, prefix_map: Dict[str, str] = None) -> str:
     """Takes an ontological URI and returns a CURIE. Works on the following patterns
     # todo: defaulting prefix_map to None is temp for now but need to change to oak anyway soon
