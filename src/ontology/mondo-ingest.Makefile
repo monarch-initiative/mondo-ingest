@@ -9,7 +9,6 @@ report-mapping-annotations python-install-dependencies
 ### Standard constants #############
 ####################################
 MAPPINGSDIR=../mappings
-
 ####################################
 ### Relevant signature #############
 ####################################
@@ -263,3 +262,16 @@ ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror
 .PHONY: signature_reports
 signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
 	echo "Finished running signature reports.."
+
+#############################
+#### Lexical matching #######
+#############################
+
+tmp/merged.db: tmp/merged.owl
+	semsql make $@
+
+mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py 
+	python $^ run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
+	# The $^ includes the python script, basically all paramters after the colon :
+
+lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
