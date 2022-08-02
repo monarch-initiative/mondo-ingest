@@ -30,10 +30,13 @@ import click
 import yaml
 from sssom.constants import SUBJECT_ID, OBJECT_ID
 from sssom.util import KEY_FEATURES, get_prefix_from_curie
+from sssom.parsers import parse_sssom_table
 
 SRC = Path(__file__).resolve().parents[1]
 ONTOLOGY_DIR = SRC / "ontology"
 OUT_INDEX_DB = ONTOLOGY_DIR / "tmp/merged.db.lexical.yaml"
+TEMP_DIR = ONTOLOGY_DIR / "tmp"
+SSSOM_MAP_FILE = TEMP_DIR / "mondo.sssom.tsv"
 # KEY_FEATURES = [SUBJECT_ID, OBJECT_ID]
 
 input_argument = click.argument("input", required=True, type=click.Path())
@@ -75,11 +78,13 @@ def main(verbose: int, quiet: bool):
 @output_option
 def run(input:str, config: str, rules:str, output: str):
     # Implemented `meta` param in `lexical_index_to_sssom`
-    # with open(config, "r") as f:
-    #     sssom_yaml = yaml.safe_load(f)
+
     meta = get_metadata_and_prefix_map(config)
     with open(config, "r") as f:
         yml = yaml.safe_load(f)
+
+    # Get mondo.sssom.tsv
+    mapping_msdf = parse_sssom_table(SSSOM_MAP_FILE)
 
     prefix_of_interest = yml['subject_prefixes']
 
@@ -96,7 +101,23 @@ def run(input:str, config: str, rules:str, output: str):
     # msdf.prefix_map = sssom_yaml['curie_map']
     # msdf.metadata = sssom_yaml['global_metadata']
     msdf.df = filter_prefixes(df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID])
+    # TODO: replace line below by msdf.remove_mappings(mapping_msdf) once imported from SSSOM.
+    msdf.df = (
+            pd.merge(
+                msdf.df,
+                mapping_msdf.df,
+                on=KEY_FEATURES,
+                how="outer",
+                suffixes=("", "_2"),
+                indicator=True,
+            )
+            .query("_merge == 'left_only'")
+            .drop("_merge", axis=1)
+            .reset_index(drop=True)
+        )
+    msdf.df = msdf.df[msdf.df.columns.drop(list(msdf.df.filter(regex=r"_2")))]
     msdf.clean_prefix_map()
+    
 
     with open(str(SRC / Path(output)), "w", encoding="utf8") as f:
         write_table(msdf, f)
