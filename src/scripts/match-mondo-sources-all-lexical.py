@@ -97,7 +97,6 @@ def run(input:str, config: str, rules:str, output: str):
     # msdf.metadata = sssom_yaml['global_metadata']
     msdf.df = filter_prefixes(df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID])
     msdf.clean_prefix_map()
-    import pdb; pdb.set_trace()
 
     with open(str(SRC / Path(output)), "w", encoding="utf8") as f:
         write_table(msdf, f)
