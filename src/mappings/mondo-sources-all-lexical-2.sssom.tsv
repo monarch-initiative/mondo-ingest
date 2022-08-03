@@ -1,0 +1,98 @@
+# curie_map:
+#   DOID: http://purl.obolibrary.org/obo/DOID_
+#   MONDO: http://purl.obolibrary.org/obo/MONDO_
+#   NCIT: http://purl.obolibrary.org/obo/NCIT_
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/299d1b67-58f6-4103-88e2-55fe63736fda
+# mapping_tool: oaklib
+# object_match_field:
+# - rdfs:label
+# subject_match_field:
+# - rdfs:label
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+MONDO:0001103	giardiasis	skos:closeMatch	NCIT:C77213	Giardia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Giardia
+MONDO:0001441	pica disease	skos:exactMatch	NCIT:C71234	Pica	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Pica
+MONDO:0003539	T-cell adult acute lymphocytic leukemia	skos:exactMatch	NCIT:C3183	T Acute Lymphoblastic Leukemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	T Acute Lymphoblastic Leukemia
+MONDO:0004990	breast tumor luminal A or B	skos:narrowMatch	DOID:0060548	luminal breast carcinoma A	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	luminal breast cancer
+MONDO:0004990	breast tumor luminal A or B	skos:narrowMatch	DOID:0060548	luminal breast carcinoma A	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	breast tumor luminal
+MONDO:0005047	infertility disorder	skos:exactMatch	NCIT:C63385	Sterile	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Sterile
+MONDO:0005731	dipetalonemiasis	skos:closeMatch	NCIT:C119326	Mansonella perstans	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Mansonella perstans
+MONDO:0005774	glanders	skos:closeMatch	NCIT:C86226	Burkholderia mallei	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Burkholderia mallei
+MONDO:0005801	human T-lymphotropic virus 1 infectious disease	skos:closeMatch	NCIT:C14223	HTLV-1	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	HTLV-1
+MONDO:0005810	infectious mononucleosis	skos:exactMatch	NCIT:C44044	Mono	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Mono
+MONDO:0005824	Legionnaires' disease	skos:exactMatch	NCIT:C76353	Legionella	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Legionella
+MONDO:0006001	urinary schistosomiasis	skos:exactMatch	NCIT:C124388	Schistosoma haematobium	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Schistosoma haematobium
+MONDO:0007545	Eosinophilopenia	skos:exactMatch	NCIT:C113712	Eosinophilopenia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	Eosinophilopenia
+MONDO:0007545	Eosinophilopenia	skos:exactMatch	NCIT:C113712	Eosinophilopenia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Eosinophilopenia
+MONDO:0009215	Fanconi anemia complementation group A	skos:closeMatch	NCIT:C62505	Fanconi Anemia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Fanconi Anemia
+MONDO:0009755	neutrophil actin dysfunction	skos:closeMatch	NCIT:C675	NAD	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	NAD
+MONDO:0011126	acute insulin response	skos:closeMatch	NCIT:C73434	Air	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Air
+MONDO:0012957	multiple sclerosis, susceptibility to, 3	skos:exactMatch	NCIT:C161799	MS3	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	MS3
+MONDO:0015766	cholera	skos:exactMatch	NCIT:C86841	Vibrio cholerae	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Vibrio cholerae
+MONDO:0017832	mycobacterium xenopi infection	skos:closeMatch	NCIT:C150881	Mycobacterium xenopi	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Mycobacterium xenopi
+MONDO:0017858	acute erythroid leukemia	skos:exactMatch	NCIT:C7152	Erythroleukemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Erythroleukemia
+MONDO:0017879	hantavirus pulmonary syndrome	skos:closeMatch	NCIT:C14213	Hantavirus	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Hantavirus
+MONDO:0018959	potassium-aggravated myotonia	skos:closeMatch	NCIT:C122789	Myotonia Fluctuans	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Myotonia Fluctuans
+MONDO:0019121	pneumocystosis	skos:exactMatch	NCIT:C124358	Pneumocystis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Pneumocystis
+MONDO:0019632	Lyme disease	skos:exactMatch	NCIT:C86206	Borrelia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Borrelia
+MONDO:0020689	AIDS dementia complex	skos:closeMatch	NCIT:C2864	AIDS Dementia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	AIDS Dementia
+MONDO:0020689	AIDS dementia complex	skos:closeMatch	NCIT:C3715	AIDS Encephalopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	AIDS Encephalopathy
+MONDO:0020731	arbovirus infection	skos:closeMatch	NCIT:C34396	Arthropod-Borne Viral Infection	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Arthropod-Borne Viral Infection
+MONDO:0020767	cauda equina syndrome with neurogenic bladder	skos:closeMatch	NCIT:C34453	Cauda Equina Syndrome with Neurogenic Bladder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Cauda Equina Syndrome with Neurogenic Bladder
+MONDO:0020773	cerebrospinal fluid rhinorrhea	skos:closeMatch	NCIT:C84627	Cerebrospinal Fluid Rhinorrhea	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Cerebrospinal Fluid Rhinorrhea
+MONDO:0020782	chronic gingivitis	skos:closeMatch	NCIT:C34474	Chronic Gingivitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Chronic Gingivitis
+MONDO:0020791	corneal dystrophy, Meesmann, 1	skos:closeMatch	NCIT:C84795	Meesmann Corneal Dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Meesmann Corneal Dystrophy
+MONDO:0020815	dentigerous cyst	skos:closeMatch	NCIT:C173832	Dentigerous Cyst	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Dentigerous Cyst
+MONDO:0020838	anterior nasal diphtheria	skos:closeMatch	NCIT:C34542	Anterior Nasal Diphtheria	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Anterior Nasal Diphtheria
+MONDO:0020860	faucial diphtheria	skos:closeMatch	NCIT:C34545	Faucial Diphtheria	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Faucial Diphtheria
+MONDO:0020863	laryngeal diphtheria	skos:closeMatch	NCIT:C34546	Laryngeal Diphtheria	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Laryngeal Diphtheria
+MONDO:0020866	nasopharyngeal diphtheria	skos:closeMatch	NCIT:C34547	Nasopharyngeal Diphtheria	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Nasopharyngeal Diphtheria
+MONDO:0020920	escherichia coli infection	skos:closeMatch	NCIT:C34594	Escherichia Coli Infection	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Escherichia Coli Infection
+MONDO:0020974	laryngeal granuloma	skos:closeMatch	NCIT:C3068	Laryngeal Granuloma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Laryngeal Granuloma
+MONDO:0020977	granulomatous prostatitis	skos:closeMatch	NCIT:C26789	Granulomatous Prostatitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Granulomatous Prostatitis
+MONDO:0020983	myocardial rupture	skos:closeMatch	NCIT:C34668	Cardiac Rupture	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Cardiac Rupture
+MONDO:0020989	hereditary persistence of fetal hemoglobin	skos:closeMatch	NCIT:C129072	Hereditary Persistence of Fetal Hemoglobin	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Hereditary Persistence of Fetal Hemoglobin
+MONDO:0021032	herpes zoster with dermatitis of eyelid	skos:closeMatch	NCIT:C34696	Herpes Zoster Dermatitis of Eyelid	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Herpes Zoster Dermatitis of Eyelid
+MONDO:0021060	RASopathy	skos:exactMatch	NCIT:C179667	RASopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	RASopathy
+MONDO:0021060	RASopathy	skos:exactMatch	NCIT:C179667	RASopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	RASopathy
+MONDO:0021175	herpetic vulvovaginitis	skos:closeMatch	NCIT:C34697	Herpetic Vulvovaginitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Herpetic Vulvovaginitis
+MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Accelerated Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive
+MONDO:0021377	hypertrophic lichen planus	skos:closeMatch	NCIT:C34779	Hypertrophic Lichen Planus	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Hypertrophic Lichen Planus
+MONDO:0021559	non-autoimmune hemolytic anemia	skos:closeMatch	NCIT:C34853	Non-Autoimmune Hemolytic Anemia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Non-Autoimmune Hemolytic Anemia
+MONDO:0021562	omphalitis	skos:closeMatch	NCIT:C116008	Omphalitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Omphalitis
+MONDO:0021718	polyneuritis	skos:closeMatch	NCIT:C26864	Polyneuritis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Polyneuritis
+MONDO:0021736	proctosigmoiditis	skos:closeMatch	NCIT:C34950	Proctosigmoiditis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Proctosigmoiditis
+MONDO:0021750	pyonephrosis	skos:closeMatch	NCIT:C123032	Pyonephrosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Pyonephrosis
+MONDO:0021765	radiculitis	skos:closeMatch	NCIT:C78581	Radiculitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Radiculitis
+MONDO:0021783	streptococcal sore throat	skos:closeMatch	NCIT:C116003	Streptococcal Pharyngitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Streptococcal Pharyngitis
+MONDO:0021895	temporomandibular joint dysfunction syndrome	skos:closeMatch	NCIT:C35066	Temporomandibular Joint Dysfunction Syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Temporomandibular Joint Dysfunction Syndrome
+MONDO:0021925	tracheobronchitis	skos:closeMatch	NCIT:C122784	Tracheobronchitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Tracheobronchitis
+MONDO:0021929	traumatic myositis ossificans	skos:closeMatch	NCIT:C35081	Traumatic Myositis Ossificans	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Traumatic Myositis Ossificans
+MONDO:0021953	tuberculous fibrosis of lung	skos:closeMatch	NCIT:C35088	Tuberculous Fibrosis of Lung	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Tuberculous Fibrosis of Lung
+MONDO:0021960	ureteritis	skos:closeMatch	NCIT:C78666	Ureteritis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Ureteritis
+MONDO:0022037	large-cell immunoblastic lymphoma	skos:closeMatch	NCIT:C3461	Immunoblastic Lymphoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Immunoblastic Lymphoma
+MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Lobular Capillary Hemangioma
+MONDO:0022103	chronic prostatitis	skos:closeMatch	NCIT:C26930	Chronic Prostatitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Chronic Prostatitis
+MONDO:0022293	vascular disorder of penis	skos:closeMatch	NCIT:C35218	Penile Vascular Disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Penile Vascular Disorder
+MONDO:0022394	cervical intraepithelial neoplasia	skos:closeMatch	NCIT:C3782	Cervical Intraepithelial Neoplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Cervical Intraepithelial Neoplasia
+MONDO:0022538	leukoplakia of gingiva	skos:closeMatch	NCIT:C3881	Leukoplakia of Gingiva	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Leukoplakia of Gingiva
+MONDO:0022749	non-neoplastic nevus	skos:closeMatch	NCIT:C3937	Non-Neoplastic Nevus	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Non-Neoplastic Nevus
+MONDO:0023023	neonatal dacryocystitis	skos:closeMatch	NCIT:C116819	Neonatal Dacryocystitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Neonatal Dacryocystitis
+MONDO:0023054	klumpke's paralysis	skos:closeMatch	NCIT:C116724	Klumpke Palsy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Klumpke Palsy
+MONDO:0023161	viral myocarditis	skos:closeMatch	NCIT:C128381	Viral Myocarditis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Viral Myocarditis
+MONDO:0023164	viral pericarditis	skos:closeMatch	NCIT:C128405	Viral Pericarditis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Viral Pericarditis
+MONDO:0023273	pigmented dermatofibrosarcoma protuberans	skos:closeMatch	NCIT:C9430	Pigmented Dermatofibrosarcoma Protuberans	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Pigmented Dermatofibrosarcoma Protuberans
+MONDO:0023415	congenital candidiasis	skos:closeMatch	NCIT:C116811	Congenital Candidiasis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Congenital Candidiasis
+MONDO:0023554	acquired testicular failure	skos:closeMatch	NCIT:C131091	Acquired Testicular Failure	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Acquired Testicular Failure
+MONDO:0023557	infective vaginitis	skos:closeMatch	NCIT:C84353	Vaginal Infection	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Vaginal Infection
+MONDO:0023599	mesomelic dysplasia	skos:closeMatch	NCIT:C121156	Mesomelic Dysplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Mesomelic Dysplasia
+MONDO:0023603	hereditary disorder of connective tissue	skos:closeMatch	NCIT:C97075	Hereditary Connective Tissue Disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Hereditary Connective Tissue Disorder
+MONDO:0023682	tympanic paraganglioma	skos:closeMatch	NCIT:C8428	Tympanic Paraganglioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Tympanic Paraganglioma
+MONDO:0024249	pityriasis lichenoides	skos:closeMatch	NCIT:C37871	Pityriasis Lichenoides et Varioliformis Acuta	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Pityriasis Lichenoides et Varioliformis Acuta
+MONDO:0025487	murine acquired immunodeficiency syndrome	skos:closeMatch	NCIT:C21881	MAIDS	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	MAIDS
+MONDO:0043317	amyopathic dermatomyositis	skos:closeMatch	NCIT:C113266	ADM	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	ADM
+
