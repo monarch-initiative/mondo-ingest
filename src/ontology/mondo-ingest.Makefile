@@ -2,8 +2,8 @@
 ## 
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
-.PHONY: deploy-mondo-ingest build-mondo-ingest documentation mappings update-jinja-sparql-queries \
-report-mapping-annotations python-install-dependencies excluded-xrefs-in-mondo
+.PHONY: build-mondo-ingest deploy-mondo-ingest documentation excluded-xrefs-in-mondo mappings \
+python-install-dependencies report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries
 
 ####################################
 ### Standard constants #############
@@ -177,13 +177,13 @@ metadata/mondo.sssom.config.yml:
 mappings: sssom $(ALL_MAPPINGS)
 
 #################
-# Utils #########
+##### Utils #####
 #################
 # Documentation for `report-mapping-annotations` and `update-jinja-sparql-queries`: `docs/developer/ordo.md`
 # TODO: When https://github.com/monarch-initiative/mondo-ingest/issues/43 is fixed, can change back to `requirements.txt`
 python-install-dependencies:
 	python3 -m pip install --upgrade pip
-	python3 -m pip install -r $(RELEASEDIR)/requirements-unlocked.txt
+	python3 -m pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
 
 report-mapping-annotations: python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
@@ -304,6 +304,9 @@ $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupport
 .PHONY: mondo-ordo-subclass
 mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
 
+reports/mirror_signature-mondo.tsv: tmp/mondo.owl
+	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
+
 reports/mirror_signature-%.tsv: component-download-%.owl
 	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
 
@@ -320,6 +323,7 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 #############################
 #### Lexical matching #######
 #############################
+# todo: this depends on `semsql`, a reapidly changing library. Add prereq / solution we decided on for `python-install-dependencies`?
 tmp/merged.db: tmp/merged.owl
 	semsql make $@
 
@@ -331,19 +335,40 @@ lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
 #############################
 ###### Slurp pipeline #######
 #############################
+# TODO: (a) Move this to Makefile, or (b) refactor this away.
+.PHONY: component-download-mondo.owl
+component-download-mondo.owl: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/mondo.owl \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+
+# TODO: (a) Move this to Makefile, or (b) refactor this away, or (c) DELETE this goal.
+# ...I think (c) is most likely, as `reports/mirror_signature-%.tsv` needs `component-download-%.owl`.
+# ...`reports/component_signature-%.tsv` is what needs `components/%.owl`, but that shouldn't be needed here.
+# $(COMPONENTSDIR)/mondo.owl: component-download-mondo.owl
+# 	if [ $(COMP) = true ] ; then if cmp -s $(TMPDIR)/component-download-mondo.owl.owl $@ ; then echo "Component identical."; else echo "Component is different, updating." && cp $(TMPDIR)/component-download-mondo.owl.owl $@; fi; fi
+
+# todo: add back prereq when done developing: mirror/%.owl
+# mirror/%.db: mirror/%.owl
+mirror/%.db: python-install-dependencies
+	@rm .template.db.tmp
+	semsql make $@
+	@rm .template.db.tmp
+
 slurp/:
 	mkdir -p $@
 
-# Feel free to change the signature. Min ID is the next available Mondo ID.
-slurp/%.tsv: components/%.owl tmp/mondo.sssom.tsv reports/mirror-signature-mondo.tsv | slurp/
+# min-id: the next available Mondo ID
+slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/mirror_signature-mondo.tsv python-install-dependencies | slurp/
+# TODO: Temporary debugging:
+	pip freeze | grep oaklib; \
 	python $(SCRIPTSDIR)/migrate.py \
-	-i $< \
-	--mapping-file tmp/mondo.sssom.tsv \
+	--ontology-path $(COMPONENTSDIR)/$*.owl \
+	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
+	--onto-config-path metadata/$*.yml \
 	--min-id 123000 \
-	--mondo-terms reports/mirror-signature-mondo.tsv \
-	--output $@
+	--mondo-terms-path $(REPORTDIR)/mirror_signature-mondo.tsv \
+	--outpath $@
 
 slurp-%: slurp/%.tsv
 
-# TODO: add more ontologies, e.g.: doid, icd10cm, icd10who, ncit, ordo
-slurp: slurp-omim
+slurp-all: slurp-omim slurp-doid slurp-ncit slurp-ordo slurp-icd10cm slurp-icd10who

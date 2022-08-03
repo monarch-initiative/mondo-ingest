@@ -7,6 +7,7 @@ semantic.cache/
 *.tmp.obo
 *.tmp.owl
 *.tmp.json
+*.db
 
 .DS_Store
 
@@ -62,6 +63,7 @@ src/ontology/imports/*_terms_combined.txt
 src/ontology/components/*.owl
 src/ontology/components/*.json
 src/ontology/components/*_terms_combined.txt
+src/ontology/components/*relation-graph*
 
 src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt
