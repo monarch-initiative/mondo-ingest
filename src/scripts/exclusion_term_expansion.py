@@ -141,8 +141,8 @@ def expand_ontological_exclusions(
     cache_suffix: Used by and explained in sparql_jinja2_robot_query()."""
     # Variable names: kids0=Children excluded; kids1=Children included
     prefix_sparql_strings = [f'prefix {k}: <{v}>' for k, v in prefix_map.items()]
-    df_kids1 = exclusions_df[exclusions_df['exclude_children'] == False]
-    df_kids0 = exclusions_df[exclusions_df['exclude_children'] == True]
+    df_kids1 = exclusions_df[exclusions_df['exclude_children'] == True]
+    df_kids0 = exclusions_df[exclusions_df['exclude_children'] == False]
 
     # Terms w/ non-excluded children
     if len(df_kids1) > 0:
@@ -181,27 +181,28 @@ def expand_ontological_exclusions(
     return df_results
 
 
-def read_and_format_signature_file(path: str, prefix_uris: List[str], return_type=['df', 'set'][0]) -> pd.DataFrame:
+def read_and_format_signature_file(path: str, prefix_map: Dict[str, str], return_type=['df', 'set'][0]) -> pd.DataFrame:
     """Read and format signature file"""
     df = pd.read_csv(path).fillna('')
     col = list(df.columns)[0]  # all sig files have 1 col: typically 'term' or '?term'
     term_uris = list(df[col])
+    prefix_uris = list(prefix_map.values())
     relevant_terms = [term for term in term_uris if any([uri in term for uri in prefix_uris])]
     df2 = pd.DataFrame()
     if relevant_terms:
         df2 = pd.DataFrame([{'term_id': term} for term in relevant_terms])
-        df2['term_id'] = df2['term_id'].apply(uri_to_curie)
+        df2['term_id'] = df2['term_id'].apply(uri_to_curie, prefix_map=prefix_map)
     if return_type == 'set':
         df2 = set(df2['term_id']) if len(df2) > 0 else set()
     return df2
 
 
 def get_non_inclusions(
-    mirror_signature_path: str, component_signature_path: str, prefix_uris: List[str]
+    mirror_signature_path: str, component_signature_path: str, prefix_map: Dict[str, str]
 ) -> pd.DataFrame:
     """Get non-inclusions. """
-    mirror_set = read_and_format_signature_file(mirror_signature_path, prefix_uris, return_type='set')
-    component_set = read_and_format_signature_file(component_signature_path, prefix_uris, return_type='set')
+    mirror_set = read_and_format_signature_file(mirror_signature_path, prefix_map, return_type='set')
+    component_set = read_and_format_signature_file(component_signature_path, prefix_map, return_type='set')
     non_inclusions_ids = [x for x in mirror_set if x not in component_set]
     non_inclusions_rows = [{'term_id': x, 'exclusion_reason': 'MONDO:excludeNonDisease'} for x in non_inclusions_ids]
 
@@ -245,7 +246,7 @@ def expand_intensional_exclusions(
             regexp=regex_pattern,
             cache_suffix=f'r{str(index)}')
         if len(search_result_df) > 0:
-            search_result_df['term_id'] = search_result_df['term_id'].apply(uri_to_curie)
+            search_result_df['term_id'] = search_result_df['term_id'].apply(uri_to_curie, prefix_map=prefix_map)
             for fld in exclusion_fields:
                 search_result_df[fld] = row[fld]
             search_results.append(search_result_df)
@@ -288,7 +289,7 @@ def run(
         onto_path=onto_path, exclusions_path=exclusions_path, prefix_map=prefix_uri_map)
     non_inclusions_df = get_non_inclusions(
         mirror_signature_path=mirror_signature_path, component_signature_path=component_signature_path,
-        prefix_uris=list(prefix_uri_map.values()))
+        prefix_map=prefix_uri_map)
     df_results = pd.concat([expanded_intensional_exclusions_df, non_inclusions_df])
     if len(df_results) == 0:
         df_results = pd.DataFrame()

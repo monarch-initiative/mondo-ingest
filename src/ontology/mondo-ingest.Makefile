@@ -3,7 +3,7 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 .PHONY: deploy-mondo-ingest build-mondo-ingest documentation mappings update-jinja-sparql-queries \
-report-mapping-annotations python-install-dependencies
+report-mapping-annotations python-install-dependencies all-exclusions
 
 ####################################
 ### Standard constants #############
@@ -172,7 +172,7 @@ update-jinja-sparql-queries: python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
-config/%_term_exclusions.txt: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml python-install-dependencies
+config/%_term_exclusions.txt config/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml python-install-dependencies
 	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py \
 	--onto-name $* \
 	--exclusions-path $(word 1,$^) \
@@ -180,6 +180,8 @@ config/%_term_exclusions.txt: config/%_exclusions.tsv component-download-%.owl $
 	--mirror-signature-path $(word 3,$^) \
 	--component-signature-path $(word 4,$^) \
 	--config-path $(word 5,$^)
+
+all-exclusions: config/ordo_term_exclusions.txt config/doid_term_exclusions.txt config/omim_term_exclusions.txt config/icd10cm_term_exclusions.txt config/icd10who_term_exclusions.txt config/ncit_term_exclusions.txt
 
 #################
 # Documentation #
