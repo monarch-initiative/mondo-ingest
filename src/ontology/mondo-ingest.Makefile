@@ -91,9 +91,9 @@ component-download-icd10cm.owl: | $(TMPDIR)
 
 $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd10cm.owl.owl --select imports \
+		remove -T config/remove_properties.txt \
 		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select individuals \
-		remove --term "http://www.w3.org/2004/02/skos/core#notation" \
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
