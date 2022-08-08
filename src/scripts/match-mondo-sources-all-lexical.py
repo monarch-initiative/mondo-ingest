@@ -29,10 +29,15 @@ import click
 import yaml
 
 from sssom.constants import SUBJECT_ID, OBJECT_ID
-from sssom.util import KEY_FEATURES, get_prefix_from_curie, MappingSetDataFrame, filter_prefixes
+from sssom.util import (
+    KEY_FEATURES, 
+    get_prefix_from_curie, 
+    MappingSetDataFrame, 
+    filter_prefixes
+)
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
-from sssom.io import get_metadata_and_prefix_map, run_sql_query
+from sssom.io import get_metadata_and_prefix_map, filter_file
 
 SRC = Path(__file__).resolve().parents[1]
 ONTOLOGY_DIR = SRC / "ontology"
@@ -104,23 +109,7 @@ def run(input:str, config: str, rules:str, output: str):
     # msdf.metadata = sssom_yaml['global_metadata']
     
     msdf.df = filter_prefixes(df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID])
-    # TODO: replace line below by msdf.remove_mappings(mapping_msdf) once imported from SSSOM.
     msdf.remove_mappings(mapping_msdf)
-    # msdf.df = (
-    #         pd.merge(
-    #             msdf.df,
-    #             mapping_msdf.df,
-    #             on=KEY_FEATURES,
-    #             how="outer",
-    #             suffixes=("", "_2"),
-    #             indicator=True,
-    #         )
-    #         .query("_merge == 'left_only'")
-    #         .drop("_merge", axis=1)
-    #         .reset_index(drop=True)
-    #     )
-    # msdf.df = msdf.df[msdf.df.columns.drop(list(msdf.df.filter(regex=r"_2")))]
-    # msdf.clean_prefix_map()
 
     with open(str(SRC / Path(output)), "w", encoding="utf8") as f:
         write_table(msdf, f)
@@ -135,74 +124,6 @@ def run(input:str, config: str, rules:str, output: str):
             output=f,
             **kwargs
             )
-
-# TODO: Replace the method below by sssom.utils.filter_prefixes.
-# def filter_prefixes(
-#     df: pd.DataFrame, filter_prefixes: List[str], features: list = KEY_FEATURES
-# ) -> pd.DataFrame:
-#     """Filter any row where a CURIE in one of the key column uses one of the given prefixes.
-
-#     :param df: Pandas DataFrame
-#     :param filter_prefixes: List of prefixes
-#     :param features: List of dataframe column names dataframe to consider
-#     :return: Pandas Dataframe
-#     """
-#     filter_prefix_set = set(filter_prefixes)
-#     rows = []
-
-#     for _, row in df.iterrows():
-#         prefixes = {get_prefix_from_curie(curie) for curie in row[features]}
-#         # Confirm if all of the CURIEs in the list above appear in the filter_prefixes list.
-#         # If TRUE, append row.
-#         if all(prefix in filter_prefix_set for prefix in prefixes):
-#             rows.append(row)
-#     if rows:
-#         return pd.DataFrame(rows)
-#     else:
-#         return pd.DataFrame(columns=features)
-
-def filter_file(input: str, output: TextIO, **kwargs) -> MappingSetDataFrame:
-    """Filter a dataframe by dynamically generating queries based on user input.
-
-    e.g. sssom filter --subject_id x:% --subject_id y:% --object_id y:% --object_id z:% tests/data/basic.tsv
-
-    yields the query:
-
-    "SELECT * FROM df WHERE (subject_id LIKE 'x:%'  OR subject_id LIKE 'y:%')
-     AND (object_id LIKE 'y:%'  OR object_id LIKE 'z:%') " and displays the output.
-
-    :param input: DataFrame to be queried over.
-    :param output: Output location.
-    :param **kwargs: Filter options provided by user which generate queries (e.g.: --subject_id x:%).
-    :raises ValueError: If parameter provided is invalid.
-    :return: Filtered MappingSetDataFrame object.
-    """
-    params = {k: v for k, v in kwargs.items() if v}
-    query = "SELECT * FROM df WHERE ("
-    multiple_params = True if len(params) > 1 else False
-
-    # Check if all params are legit
-    input_df: pd.DataFrame = parse_sssom_table(input).df
-    if not input_df.empty and len(input_df.columns) > 0:
-        column_list = list(input_df.columns)
-    else:
-        raise ValueError(f"{input} is either not a SSSOM TSV file or an empty one.")
-    legit_params = all(p in column_list for p in params)
-    if not legit_params:
-        invalids = [p for p in params if p not in column_list]
-        raise ValueError(f"The params are invalid: {invalids}")
-
-    for idx, (k, v) in enumerate(params.items(), start=1):
-        query += k + " LIKE '" + v[0] + "' "
-        if len(v) > 1:
-            for exp in v[1:]:
-                query += " OR "
-                query += k + " LIKE '" + exp + "') "
-        else:
-            query += ") "
-        if multiple_params and idx != len(params):
-            query += " AND ("
-    return run_sql_query(query=query, inputs=[input], output=output)
 
 if __name__ == '__main__':
     main()
