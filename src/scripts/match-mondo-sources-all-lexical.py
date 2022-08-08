@@ -29,7 +29,7 @@ import click
 import yaml
 
 from sssom.constants import SUBJECT_ID, OBJECT_ID
-from sssom.util import KEY_FEATURES, get_prefix_from_curie, MappingSetDataFrame
+from sssom.util import KEY_FEATURES, get_prefix_from_curie, MappingSetDataFrame, filter_prefixes
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
 from sssom.io import get_metadata_and_prefix_map, run_sql_query
@@ -102,23 +102,25 @@ def run(input:str, config: str, rules:str, output: str):
     
     # msdf.prefix_map = sssom_yaml['curie_map']
     # msdf.metadata = sssom_yaml['global_metadata']
+    
     msdf.df = filter_prefixes(df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID])
     # TODO: replace line below by msdf.remove_mappings(mapping_msdf) once imported from SSSOM.
-    msdf.df = (
-            pd.merge(
-                msdf.df,
-                mapping_msdf.df,
-                on=KEY_FEATURES,
-                how="outer",
-                suffixes=("", "_2"),
-                indicator=True,
-            )
-            .query("_merge == 'left_only'")
-            .drop("_merge", axis=1)
-            .reset_index(drop=True)
-        )
-    msdf.df = msdf.df[msdf.df.columns.drop(list(msdf.df.filter(regex=r"_2")))]
-    msdf.clean_prefix_map()
+    msdf.remove_mappings(mapping_msdf)
+    # msdf.df = (
+    #         pd.merge(
+    #             msdf.df,
+    #             mapping_msdf.df,
+    #             on=KEY_FEATURES,
+    #             how="outer",
+    #             suffixes=("", "_2"),
+    #             indicator=True,
+    #         )
+    #         .query("_merge == 'left_only'")
+    #         .drop("_merge", axis=1)
+    #         .reset_index(drop=True)
+    #     )
+    # msdf.df = msdf.df[msdf.df.columns.drop(list(msdf.df.filter(regex=r"_2")))]
+    # msdf.clean_prefix_map()
 
     with open(str(SRC / Path(output)), "w", encoding="utf8") as f:
         write_table(msdf, f)
@@ -135,29 +137,29 @@ def run(input:str, config: str, rules:str, output: str):
             )
 
 # TODO: Replace the method below by sssom.utils.filter_prefixes.
-def filter_prefixes(
-    df: pd.DataFrame, filter_prefixes: List[str], features: list = KEY_FEATURES
-) -> pd.DataFrame:
-    """Filter any row where a CURIE in one of the key column uses one of the given prefixes.
+# def filter_prefixes(
+#     df: pd.DataFrame, filter_prefixes: List[str], features: list = KEY_FEATURES
+# ) -> pd.DataFrame:
+#     """Filter any row where a CURIE in one of the key column uses one of the given prefixes.
 
-    :param df: Pandas DataFrame
-    :param filter_prefixes: List of prefixes
-    :param features: List of dataframe column names dataframe to consider
-    :return: Pandas Dataframe
-    """
-    filter_prefix_set = set(filter_prefixes)
-    rows = []
+#     :param df: Pandas DataFrame
+#     :param filter_prefixes: List of prefixes
+#     :param features: List of dataframe column names dataframe to consider
+#     :return: Pandas Dataframe
+#     """
+#     filter_prefix_set = set(filter_prefixes)
+#     rows = []
 
-    for _, row in df.iterrows():
-        prefixes = {get_prefix_from_curie(curie) for curie in row[features]}
-        # Confirm if all of the CURIEs in the list above appear in the filter_prefixes list.
-        # If TRUE, append row.
-        if all(prefix in filter_prefix_set for prefix in prefixes):
-            rows.append(row)
-    if rows:
-        return pd.DataFrame(rows)
-    else:
-        return pd.DataFrame(columns=features)
+#     for _, row in df.iterrows():
+#         prefixes = {get_prefix_from_curie(curie) for curie in row[features]}
+#         # Confirm if all of the CURIEs in the list above appear in the filter_prefixes list.
+#         # If TRUE, append row.
+#         if all(prefix in filter_prefix_set for prefix in prefixes):
+#             rows.append(row)
+#     if rows:
+#         return pd.DataFrame(rows)
+#     else:
+#         return pd.DataFrame(columns=features)
 
 def filter_file(input: str, output: TextIO, **kwargs) -> MappingSetDataFrame:
     """Filter a dataframe by dynamically generating queries based on user input.
