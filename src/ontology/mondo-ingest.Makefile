@@ -3,7 +3,7 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 .PHONY: deploy-mondo-ingest build-mondo-ingest documentation mappings update-jinja-sparql-queries \
-report-mapping-annotations python-install-dependencies all-exclusions
+report-mapping-annotations python-install-dependencies
 
 ####################################
 ### Standard constants #############
@@ -181,7 +181,11 @@ config/%_term_exclusions.txt config/%_exclusion_reasons.robot.template.tsv: conf
 	--component-signature-path $(word 4,$^) \
 	--config-path $(word 5,$^)
 
-all-exclusions: config/ordo_term_exclusions.txt config/doid_term_exclusions.txt config/omim_term_exclusions.txt config/icd10cm_term_exclusions.txt config/icd10who_term_exclusions.txt config/ncit_term_exclusions.txt
+# Combines all tables
+config/term_exclusions.txt config/exclusion_reasons.robot.template.tsv: config/ordo_term_exclusions.txt config/doid_term_exclusions.txt config/omim_term_exclusions.txt config/icd10cm_term_exclusions.txt config/icd10who_term_exclusions.txt config/ncit_term_exclusions.txt
+	@rm config/term_exclusions.txt; rm config/exclusion_reasons.robot.template.tsv; \
+	cat config/*_term_exclusions.txt > config/term_exclusions.txt; \
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' config/*_exclusion_reasons.robot.template.tsv > config/exclusion_reasons.robot.template.tsv
 
 #################
 # Documentation #
