@@ -172,6 +172,9 @@ update-jinja-sparql-queries: python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
+#################
+### Exclusions ##
+#################
 config/%_term_exclusions.txt config/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml python-install-dependencies
 	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py \
 	--onto-name $* \
@@ -186,6 +189,16 @@ config/term_exclusions.txt config/exclusion_reasons.robot.template.tsv: config/o
 	@rm config/term_exclusions.txt; rm config/exclusion_reasons.robot.template.tsv; \
 	cat config/*_term_exclusions.txt > config/term_exclusions.txt; \
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' config/*_exclusion_reasons.robot.template.tsv > config/exclusion_reasons.robot.template.tsv
+
+# todo: Is it desired for there to be merged `.ttl` and `.obo` files? How to do that? Pass multiple `--input` and use the merged `config/exclusion_reasons.robot.template.tsv` for --template?
+# TODO: add back these prerequisites to this target:
+# config/%_exclusion_reasons.ttl: mirror/%.owl config/%_exclusion_reasons.robot.template.tsv
+config/%_exclusion_reasons.ttl:
+	robot template --input mirror/$*.owl --template config/$*_exclusion_reasons.robot.template.tsv --output config/$*_exclusion_reasons.ttl
+
+# TODO: Fix error: Optional.get() cannot be called on an absent value
+config/%_exclusion_reasons.obo: mirror/%.owl config/%_exclusion_reasons.robot.template.tsv
+	robot template --input mirror/$*.owl --template config/$*_exclusion_reasons.robot.template.tsv --output config/$*_exclusion_reasons.obo
 
 #################
 # Documentation #
