@@ -194,11 +194,8 @@ config/term_exclusions.txt config/exclusion_reasons.robot.template.tsv: config/o
 # TODO: add back these prerequisites to this target:
 # config/%_exclusion_reasons.ttl: mirror/%.owl config/%_exclusion_reasons.robot.template.tsv
 config/%_exclusion_reasons.ttl:
-	robot template --input mirror/$*.owl --template config/$*_exclusion_reasons.robot.template.tsv --output config/$*_exclusion_reasons.ttl
-
-# TODO: Fix error: Optional.get() cannot be called on an absent value
-config/%_exclusion_reasons.obo: mirror/%.owl config/%_exclusion_reasons.robot.template.tsv
-	robot template --input mirror/$*.owl --template config/$*_exclusion_reasons.robot.template.tsv --output config/$*_exclusion_reasons.obo
+	robot template --input mirror/$*.owl --add-prefixes config/context.json \
+	--template config/$*_exclusion_reasons.robot.template.tsv --output config/$*_exclusion_reasons.ttl
 
 #################
 # Documentation #
