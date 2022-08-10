@@ -197,6 +197,12 @@ config/%_exclusion_reasons.ttl:
 	robot template --input mirror/$*.owl --add-prefixes config/context.json \
 	--template config/$*_exclusion_reasons.robot.template.tsv --output config/$*_exclusion_reasons.ttl
 
+
+ALL_EXCLUSION_TTLS = $(patsubst %, config/%_exclusion_reasons.ttl, $(ALL_COMPONENT_IDS))
+
+config/merged_exclusions.ttl: $(ALL_EXCLUSION_TTLS)
+	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
+
 #################
 # Documentation #
 #################
