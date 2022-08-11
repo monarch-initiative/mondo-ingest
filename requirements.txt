@@ -16,6 +16,7 @@ charset-normalizer==2.0.12
 class-resolver==0.3.10
 click==8.1.3
 commonmark==0.9.1
+curies==0.1.5
 decorator==5.1.1
 Deprecated==1.2.13
 deprecation==2.1.0
@@ -34,7 +35,7 @@ idna==3.3
 imagesize==1.3.0
 importlib-metadata==4.11.3
 isodate==0.6.1
-Jinja2==3.1.1
+Jinja2==3.1.2
 joblib==1.1.0
 json-flattener==0.1.9
 jsonasobj==1.3.1
@@ -64,7 +65,7 @@ nxontology==0.4.1
 oaklib==0.1.34
 openpyxl==3.0.10
 packaging==21.3
-pandas==1.4.2
+pandas==1.4.3
 pandasql==0.7.3
 parse==1.19.0
 pbr==5.8.1
@@ -82,6 +83,7 @@ PyShEx==0.8.1
 PyShExC==0.9.1
 pystow==0.4.4
 python-dateutil==2.8.2
+PyTrie==0.4.0
 pytz==2022.1
 PyYAML==6.0
 ratelimit==2.2.1
@@ -99,10 +101,11 @@ ruamel.yaml==0.17.21
 ruamel.yaml.clib==0.2.6
 scikit-learn==1.0.2
 scipy==1.8.0
-semsql==0.1.7
+semsql==0.2.0
 ShExJSG==0.8.2
 six==1.16.0
 snowballstemmer==2.2.0
+sortedcontainers==2.4.0
 sparqlslurper==0.5.1
 SPARQLWrapper==2.0.0
 Sphinx==4.5.0
@@ -115,7 +118,7 @@ sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
 SQLAlchemy==1.4.36
 SQLAlchemy-Utils==0.38.2
-sssom==0.3.11
+sssom==0.3.14
 sssom-schema==0.9.4
 stevedore==3.5.0
 threadpoolctl==3.1.0
