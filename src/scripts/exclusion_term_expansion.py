@@ -271,14 +271,10 @@ def expand_intensional_exclusions(
 
 
 def run(
-    onto_name: str, onto_path: str, exclusions_path: str, mirror_signature_path: str, component_signature_path: str,
-    config_path: str, save=CONFIG['save']
+    onto_path: str, exclusions_path: str, mirror_signature_path: str, component_signature_path: str,
+    config_path: str, outpath_txt: str, outpath_robot_template_tsv: str, save=CONFIG['save']
 ) -> Union[Dict[str, pd.DataFrame], None]:
     """Run"""
-    # Vars
-    df_results_path = os.path.join(CONFIG_DIR, f'{onto_name}_exclusion_reasons.robot.template.tsv')
-    df_results_simple_path = os.path.join(CONFIG_DIR, f'{onto_name}_term_exclusions.txt')
-
     # Prefixes
     with open(config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
@@ -304,12 +300,12 @@ def run(
 
     # Save & return
     if save:
-        df_results.to_csv(df_results_path, sep='\t', index=False)
-        df_results_simple.to_csv(df_results_simple_path, index=False, header=False)
+        df_results.to_csv(outpath_robot_template_tsv, sep='\t', index=False)
+        df_results_simple.to_csv(outpath_txt, index=False, header=False)
 
     return {
-        df_results_path: df_results,
-        df_results_simple_path: df_results_simple
+        outpath_robot_template_tsv: df_results,
+        outpath_txt: df_results_simple
     }
 
 
@@ -319,7 +315,7 @@ def cli_validate(d: Dict) -> Dict:
     # - Likely that they will be passed as relative paths with respect to ONTOLOGY_DIR.
     # - This checks for that and updates to absolute path if necessary.
     # todo: should be an easy way to determine if a string is a path (even if no file exists there)
-    path_arg_keys = [x for x in list(d.keys()) if x.endswith('path')]
+    path_arg_keys = [x for x in list(d.keys()) if x.endswith('path') and 'outpath' not in x]
     for k in path_arg_keys:
         path = d[k]
         if not os.path.exists(path):
@@ -333,53 +329,42 @@ def cli_validate(d: Dict) -> Dict:
     return d
 
 
-def _fill_empty_optional_cli_args(d: Dict) -> Dict:
-    """Fill empty optional command line arguments"""
-    arg_path_patterns = {
-        'onto_path': os.path.join(TEMP_DIR, 'component-download-{}.owl.owl'),
-        'config_path': os.path.join(METADATA_DIR, '{}.yml'),
-        'exclusions_path': os.path.join(CONFIG_DIR, '{}_exclusions.tsv'),
-        'mirror_signature_path': os.path.join(REPORTS_DIR, 'mirror_signature-{}.tsv'),
-        'component_signature_path': os.path.join(REPORTS_DIR, 'component_signature-{}.tsv'),
-    }
-    for arg, path_pattern in arg_path_patterns.items():
-        if arg not in d or not d[arg]:
-            d[arg] = path_pattern.format(d['onto_name'])
-    return d
-
-
 def cli_get_parser() -> ArgumentParser:
     """Add required fields to parser."""
     package_description = \
         'Takes in a full ontology and an exclusions TSV and extracts a simple list of terms.\n'\
         'Outputs two files:\n'\
-        '1. a simple list of terms (config/ONTO_NAME_term_exclusions.txt)\n'\
-        '2. a simple two column file with the term_id and the exclusion reason\n'
+        '1. a simple list of terms (e.g. ONTO_NAME_term_exclusions.txt)\n'\
+        '2. a simple two column file with the term_id and the exclusion reason (e.g. ' \
+        'ONTO_NAME_exclusion_reasons.robot.template.tsv)\n'
     parser = ArgumentParser(description=package_description)
 
     parser.add_argument(
-        '-o', '--onto-path', required=False,
+        '-o', '--onto-path', required=True,
         help='Optional. Path to the ontology file to query.')
     parser.add_argument(
-        '-c', '--config-path', required=False,
+        '-c', '--config-path', required=True,
         help='Optional. Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
              'list of prefixes owned by the ontology. Used to filter out terms.')
     parser.add_argument(
-        '-e', '--exclusions-path', required=False,
+        '-e', '--exclusions-path', required=True,
         help='Optional. Path to a TSV which should have the following fields: `term_id` (str), `term_label` (str), '
              '`exclusion_reason` (str), and `exclude_children` (bool).')
     parser.add_argument(
-        '-m', '--mirror-signature-path', required=False,
+        '-m', '--mirror-signature-path', required=True,
         help='Optional. Path to a "mirror signature" file, which contains a list of class URIs from the unaltered '
              'source ontology.')
     parser.add_argument(
-        '-cs', '--component-signature-path', required=False,
+        '-cs', '--component-signature-path', required=True,
         help='Optional. Path to a "component signature" file, which contains a list of class URIs from Mondo\'s '
              '"alignment module" for the ontology, an alignment module being defined as the list of classes we care '
              'about (e.g. all diseases).')
     parser.add_argument(
-        '-n', '--onto-name', required=True,
-        help='Name of the ontology.')
+        '-ot', '--outpath-txt', required=True,
+        help='Path to create ONTO_NAME_term_exclusions.txt.')
+    parser.add_argument(
+        '-or', '--outpath-robot-template-tsv', required=True,
+        help='Path to create ONTO_NAME_exclusion_reasons.robot.template.tsv.')
 
     return parser
 
@@ -389,7 +374,6 @@ def cli() -> Dict[str, pd.DataFrame]:
     parser = cli_get_parser()
     kwargs = parser.parse_args()
     kwargs_dict: Dict = vars(kwargs)
-    kwargs_dict = _fill_empty_optional_cli_args(kwargs_dict)
     kwargs_dict = cli_validate(kwargs_dict)
     return run(**kwargs_dict)
 

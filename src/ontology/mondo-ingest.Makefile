@@ -172,20 +172,30 @@ update-jinja-sparql-queries: python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
-config/%_term_exclusions.txt config/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml python-install-dependencies
+#################
+### Exclusions ##
+#################
+# Exclusions: by ontology
+$(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml python-install-dependencies
 	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py \
-	--onto-name $* \
-	--exclusions-path $(word 1,$^) \
-	--onto-path $(TMPDIR)/$(word 2,$^).owl \
-	--mirror-signature-path $(word 3,$^) \
-	--component-signature-path $(word 4,$^) \
-	--config-path $(word 5,$^)
+	--exclusions-path config/$*_exclusions.tsv \
+	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
+	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
+	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
+	--config-path metadata/$*.yml \
+	--outpath-txt $(REPORTDIR)/$*_term_exclusions.txt \
+	--outpath-robot-template-tsv $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv
 
-# Combines all tables
-config/term_exclusions.txt config/exclusion_reasons.robot.template.tsv: config/ordo_term_exclusions.txt config/doid_term_exclusions.txt config/omim_term_exclusions.txt config/icd10cm_term_exclusions.txt config/icd10who_term_exclusions.txt config/ncit_term_exclusions.txt
-	@rm config/term_exclusions.txt; rm config/exclusion_reasons.robot.template.tsv; \
-	cat config/*_term_exclusions.txt > config/term_exclusions.txt; \
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' config/*_exclusion_reasons.robot.template.tsv > config/exclusion_reasons.robot.template.tsv
+$(REPORTDIR)/%_exclusion_reasons.ttl: mirror/%.owl $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
+	$(ROBOT) template --input mirror/$*.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
+
+# Exclusions: combined
+$(REPORTDIR)/term_exclusions.txt $(REPORTDIR)/exclusion_reasons.robot.template.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_term_exclusions.txt)
+	cat $(REPORTDIR)/*_term_exclusions.txt > $(REPORTDIR)/term_exclusions.txt; \
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*_exclusion_reasons.robot.template.tsv > $(REPORTDIR)/exclusion_reasons.robot.template.tsv
+
+$(REPORTDIR)/term_exclusions.ttl: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_exclusion_reasons.ttl)
+	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
 #################
 # Documentation #
