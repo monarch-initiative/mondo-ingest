@@ -38,6 +38,8 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 # https://github.com/monarch-initiative/omim/issues/60
 $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
+		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		remove -T $(TMPDIR)/omim_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/remove.txt --axioms equivalent \
 		query \
@@ -51,6 +53,8 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ordo.owl.owl --select imports \
 		merge \
+		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		query \
 			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
@@ -61,12 +65,12 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 			--update ../sparql/ordo-replace-annotation-based-mappings.ru \
 		filter -T $(TMPDIR)/ordo_relevant_signature.txt --trim false \
 		remove -T config/properties.txt --select complement --select properties --trim true \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ordo.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ordo.owl -o $@; fi
 
 $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
+		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		remove -T $(TMPDIR)/ncit_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		remove --term "http://purl.obolibrary.org/obo/NCIT_C179199" --axioms "equivalent" \
@@ -74,6 +78,8 @@ $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt
 
 $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-doid.owl.owl --select imports \
+		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		remove -T $(TMPDIR)/doid_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		query \
 			--update ../sparql/fix_omimps.ru \
@@ -104,6 +110,8 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt
 
 $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd10who.owl.owl --select imports \
+		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select individuals \
 		query \
