@@ -3,7 +3,7 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 .PHONY: deploy-mondo-ingest build-mondo-ingest documentation mappings update-jinja-sparql-queries \
-report-mapping-annotations python-install-dependencies
+report-mapping-annotations python-install-dependencies excluded-xrefs-in-mondo
 
 ####################################
 ### Standard constants #############
@@ -204,6 +204,15 @@ $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.templa
 $(REPORTDIR)/%_exclusion_reasons.ttl: mirror/%.owl $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
 	$(ROBOT) template --input mirror/$*.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
 
+$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: $(TMPDIR)/mondo.sssom.tsv tmp/mondo.owl metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv python-install-dependencies
+	python3 $(RELEASEDIR)/src/analysis/problematic_exclusions.py \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
+	--onto-config-path metadata/$*.yml \
+	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
+	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
+	--outpath $@
+
 # Exclusions: combined
 $(REPORTDIR)/term_exclusions.txt $(REPORTDIR)/exclusion_reasons.robot.template.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_term_exclusions.txt)
 	cat $(REPORTDIR)/*_term_exclusions.txt > $(REPORTDIR)/term_exclusions.txt; \
@@ -211,6 +220,15 @@ $(REPORTDIR)/term_exclusions.txt $(REPORTDIR)/exclusion_reasons.robot.template.t
 
 $(REPORTDIR)/term_exclusions.ttl: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_exclusion_reasons.ttl)
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
+
+# todo: the merged _summary.tsv has a column `filename` on the right. would be better if it was named `ontology` and was on the left, and was sorted by most->least terms.
+$(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/excluded_terms_in_mondo_xrefs_summary.tsv:: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_excluded_terms_in_mondo_xrefs.tsv)
+	awk '(NR == 1) || (FNR > 1)' $(REPORTDIR)/*_excluded_terms_in_mondo_xrefs.tsv > $@
+	@awk -v OFS='\t' 'NR == 1 { print $$0, "filename" } FNR > 1 { print $$0, FILENAME }' \
+	reports/*_excluded_terms_in_mondo_xrefs_summary.tsv \
+	> $(REPORTDIR)/excluded_terms_in_mondo_xrefs_summary.tsv
+
+excluded-xrefs-in-mondo: $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv
 
 #################
 # Documentation #
