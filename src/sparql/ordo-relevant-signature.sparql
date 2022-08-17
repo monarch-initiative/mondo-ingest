@@ -7,8 +7,9 @@ SELECT DISTINCT ?term
 WHERE {
   { 
     { 
+    VALUES ?ordo_roots {<http://www.orpha.net/ORDO/Orphanet_557493> <http://www.orpha.net/ORDO/Orphanet_557492> <http://www.orpha.net/ORDO/Orphanet_557494>}
      ?s1 ?p1 ?term .
-     ?term rdfs:subClassOf* <http://www.orpha.net/ORDO/Orphanet_377788> .
+     ?term rdfs:subClassOf* ?ordo_roots .
      FILTER NOT EXISTS {
        ?term xref: ?xref .
        FILTER(STRSTARTS(str(?xref),"HGNC:"))
@@ -17,8 +18,9 @@ WHERE {
     }
     UNION
     { 
+      VALUES ?ordo_roots {<http://www.orpha.net/ORDO/Orphanet_557493> <http://www.orpha.net/ORDO/Orphanet_557492> <http://www.orpha.net/ORDO/Orphanet_557494>}
       ?term ?p2 ?o2 .
-      ?term rdfs:subClassOf* <http://www.orpha.net/ORDO/Orphanet_377788> .
+      ?term rdfs:subClassOf* ?ordo_roots .
       FILTER NOT EXISTS {
         ?term xref: ?xref .
         FILTER(STRSTARTS(str(?xref),"HGNC:"))
