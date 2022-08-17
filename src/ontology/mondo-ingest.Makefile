@@ -3,7 +3,7 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 .PHONY: deploy-mondo-ingest build-mondo-ingest documentation mappings update-jinja-sparql-queries \
-report-mapping-annotations python-install-dependencies
+report-mapping-annotations python-install-dependencies excluded-xrefs-in-mondo
 
 ####################################
 ### Standard constants #############
@@ -227,6 +227,8 @@ $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/excluded_terms_in_mo
 	@awk -v OFS='\t' 'NR == 1 { print $$0, "filename" } FNR > 1 { print $$0, FILENAME }' \
 	reports/*_excluded_terms_in_mondo_xrefs_summary.tsv \
 	> $(REPORTDIR)/excluded_terms_in_mondo_xrefs_summary.tsv
+
+excluded-xrefs-in-mondo: $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv
 
 #################
 # Documentation #
