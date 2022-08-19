@@ -28,6 +28,8 @@ src/ontology/mirror/*
 src/ontology/reports/*
 !src/ontology/reports/README.md
 !src/ontology/reports/*excluded_terms_in_mondo_xrefs.tsv
+!src/ontology/reports/*exclusion_reasons.robot.template.tsv
+!src/ontology/reports/*term_exclusions.txt
 src/ontology/mondo-ingest.owl
 src/ontology/mondo-ingest.obo
 src/ontology/mondo-ingest.json
