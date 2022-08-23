@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-06-11/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2022-08-22/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 24 |
-| Axioms | 120439 |
-| Logical axioms | 20491 |
-| Classes | 17898 |
+| Axioms | 109510 |
+| Logical axioms | 15266 |
+| Classes | 12519 |
 | Object properties | 2 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,42 +32,37 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 82035 |
+| AnnotationAssertion | 81709 |
 | DisjointClasses | 26 |
-| Declaration | 17913 |
-| SubClassOf | 20465 |
+| Declaration | 12535 |
+| SubClassOf | 15240 |
 
 
 #### Entity namespaces: axiom counts by namespace
 
 | Metric | Value |
 | ------ | ----- |
-| DISDRIV | 8 |
-| NCIT | 1 |
-| owl | 3 |
-| DOID | 13463 |
-| HP | 439 |
+| oboInOwl | 10 |
+| owl | 2 |
+| DOID | 11034 |
+| HP | 102 |
 | xsd | 2 |
+| CL | 63 |
 | skos | 5 |
 | BFO | 2 |
 | rdfs | 2 |
-| FOODON | 56 |
-| UPHENO | 1 |
-| TRANS | 32 |
-| CHEBI | 373 |
-| UBERON | 788 |
-| SO | 245 |
-| ExO | 4 |
-| oboInOwl | 10 |
-| CL | 184 |
-| NCBITaxon | 1095 |
-| SYMP | 960 |
-| ECO | 13 |
+| FOODON | 24 |
+| NCBITaxon | 318 |
+| TRANS | 13 |
+| SYMP | 269 |
 | dc11 | 2 |
 | rdf | 1 |
+| CHEBI | 89 |
 | IAO | 2 |
-| obo | 204 |
-| GENO | 31 |
+| UBERON | 391 |
+| SO | 16 |
+| obo | 191 |
+| GENO | 9 |
 | dc | 1 |
 
 
@@ -75,7 +70,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 59039 |
+| Class | 43211 |
 
 
 More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
