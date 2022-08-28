@@ -185,10 +185,12 @@ python-install-dependencies:
 	python3 -m pip install --upgrade pip
 	python3 -m pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
 
-report-mapping-annotations: python-install-dependencies
+report-mapping-annotations: 
+	$(MAKE) python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
 
-update-jinja-sparql-queries: python-install-dependencies
+update-jinja-sparql-queries:
+	$(MAKE) python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
@@ -196,7 +198,8 @@ update-jinja-sparql-queries: python-install-dependencies
 ### Exclusions ##
 #################
 # Exclusions: by ontology
-$(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml python-install-dependencies
+$(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml
+	$(MAKE) python-install-dependencies
 	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py \
 	--exclusions-path config/$*_exclusions.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
@@ -209,7 +212,8 @@ $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.templa
 $(REPORTDIR)/%_exclusion_reasons.ttl: mirror/%.owl $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
 	$(ROBOT) template --input mirror/$*.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
 
-$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: $(TMPDIR)/mondo.sssom.tsv tmp/mondo.owl metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv python-install-dependencies
+$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: $(TMPDIR)/mondo.sssom.tsv tmp/mondo.owl metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv
+	$(MAKE) python-install-dependencies
 	python3 $(RELEASEDIR)/src/analysis/problematic_exclusions.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
@@ -305,7 +309,7 @@ $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupport
 mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
 
 reports/mirror_signature-mondo.tsv: tmp/mondo.owl
-	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
+	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
 
 reports/mirror_signature-%.tsv: component-download-%.owl
 	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
@@ -349,7 +353,8 @@ component-download-mondo.owl: | $(TMPDIR)
 
 # todo: add back prereq when done developing: mirror/%.owl
 # mirror/%.db: mirror/%.owl
-mirror/%.db: python-install-dependencies
+mirror/%.db: 
+	$(MAKE) python-install-dependencies
 	@rm .template.db.tmp
 	semsql make $@
 	@rm .template.db.tmp
@@ -358,8 +363,9 @@ slurp/:
 	mkdir -p $@
 
 # min-id: the next available Mondo ID
-slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/mirror_signature-mondo.tsv python-install-dependencies | slurp/
-# TODO: Temporary debugging:
+slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
+	$(MAKE) python-install-dependencies
+	# TODO: Temporary debugging:
 	pip freeze | grep oaklib; \
 	python $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
@@ -369,6 +375,8 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/mirro
 	--mondo-terms-path $(REPORTDIR)/mirror_signature-mondo.tsv \
 	--outpath $@
 
-slurp-%: slurp/%.tsv
+slurp-%:
+	$(MAKE) python-install-dependencies
+	$(MAKE) slurp/%.tsv
 
 slurp-all: slurp-omim slurp-doid slurp-ncit slurp-ordo slurp-icd10cm slurp-icd10who
