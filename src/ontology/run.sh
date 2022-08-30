@@ -45,7 +45,7 @@ if [ -n "$USE_SINGULARITY" ]; then
         -W $WORK_DIR \
         docker://obolibrary/$ODK_IMAGE:$ODK_TAG $TIMECMD "$@"
 else
-    docker run -v $VOLUME_BIND -v $PWD/config/prefixes_curated.csv:/usr/local/lib/python3.10/dist-packages/semsql/builder/prefixes/prefixes_curated.csv -w $WORK_DIR -e ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS" -e JAVA_OPTS="$ODK_JAVA_OPTS" --rm -ti obolibrary/$ODK_IMAGE:$ODK_TAG $TIMECMD "$@"
+    docker run -v $VOLUME_BIND -v $PWD/config/prefixes.csv:/usr/local/lib/python3.10/dist-packages/semsql/builder/prefixes/prefixes.csv -w $WORK_DIR -e ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS" -e JAVA_OPTS="$ODK_JAVA_OPTS" --rm -ti obolibrary/$ODK_IMAGE:$ODK_TAG $TIMECMD "$@"
 fi
 
 case "$@" in
