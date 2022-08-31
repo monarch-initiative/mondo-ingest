@@ -20,11 +20,11 @@ header.
 
 Created by running `cd src/ontology; sh run.sh make <ONTOLOGY_NAME>_term_exclusions.txt`.
 
-### 3b. `term_exclusions.txt`
+### 3b. `excluded_terms.txt`
 A concatentation of all `<ONTOLOGY_NAME>_term_exclusions.txt`. Similarly, is a simple list of terms with no column 
 header.
 
-Created by running `cd src/ontology; sh run.sh make reports/term_exclusions.txt`.
+Created by running `cd src/ontology; sh run.sh make reports/excluded_terms.txt`.
 
 ### 4a. `<ONTOLOGY_NAME>_exclusion_reasons.robot.template.tsv`
 A variation of `<ONTOLOGY_NAME>_term_exclusions.txt` with additional information. The final list of terms to exclude 

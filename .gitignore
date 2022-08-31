@@ -30,7 +30,7 @@ src/ontology/reports/*
 !src/ontology/reports/README.md
 !src/ontology/reports/*excluded_terms_in_mondo_xrefs.tsv
 !src/ontology/reports/*exclusion_reasons.robot.template.tsv
-!src/ontology/reports/*term_exclusions.txt
+!src/ontology/reports/*excluded_terms.txt
 src/ontology/mondo-ingest.owl
 src/ontology/mondo-ingest.obo
 src/ontology/mondo-ingest.json
@@ -60,10 +60,7 @@ src/ontology/imports/*.owl
 src/ontology/imports/*.json
 src/ontology/imports/*_terms_combined.txt
 
-src/ontology/components/*.owl
-src/ontology/components/*.json
-src/ontology/components/*_terms_combined.txt
-src/ontology/components/*relation-graph*
+src/ontology/components/*
 
 src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt

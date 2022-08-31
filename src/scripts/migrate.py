@@ -8,14 +8,18 @@ TODO's:
   -
 """
 from argparse import ArgumentParser
-from typing import Dict, List, Union
+from typing import Dict, List, Set, Tuple, Union
 
 import curies
 import pandas as pd
 import oaklib
 import yaml
 from oaklib.implementations import ProntoImplementation, SqlImplementation
+from oaklib.interfaces.basic_ontology_interface import RELATIONSHIP
 from oaklib.resource import OntologyResource
+from oaklib.types import CURIE, URI
+
+TRIPLE = RELATIONSHIP
 
 
 # TODO: implement this func
@@ -26,42 +30,43 @@ def determine_next_available_mondo_id(min_id: str, mondo_termlist_df: pd.DataFra
     return next_id
 
 
-def _get_direct_parents(ontology: Union[ProntoImplementation, SqlImplementation], curie: str):
-    """Get CURIEs of parents of a class
+def _get_direct_owned_parents(ontology: ProntoImplementation, owned_prefix_map: Dict[str, str], uri: str) -> List[str]:
+    """Get URIs of direct parents of a class. Only returns parents that are 'owned' by the ontology.
+
     ontology: Haven't decided yet which implementation I'll use. Would use superclass, but they use mult inheritance.
+    owned_prefix_map: All the prefixes that are 'owned' by the ontology. Keys are CURIE prefixes and values are URIs.
     """
-    # todo: SqlImplementation: pending fixes:
-    #  - entities(): https://github.com/INCATools/ontology-access-kit/issues/235
-    #  - relationships(subjects=[CURIE]): https://github.com/INCATools/ontology-access-kit/issues/238
-    if isinstance(ontology, SqlImplementation):
-        # rels: Iterator[Tuple] = ontology.relationships([curie])
-        pass
-    if isinstance(ontology, ProntoImplementation):
-        # todo: pending 0 results fix: https://github.com/INCATools/ontology-access-kit/issues/237
-        # todo: I probably need only 1 of these
-        # rels_in: Dict = ontology.incoming_relationship_map(curie)
-        # rels_out: Dict = ontology.outgoing_relationship_map(curie)
-        pass
+    # These vars are here for stability reasons, just in case I get CURIES where I expect URIs or vice versa.
+    subclass_preds = [x + 'subClassOf' for x in ['rdfs:', 'http://www.w3.org/2000/01/rdf-schema#']]
+    owned_prefixes = set(owned_prefix_map.keys())
+    uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
+
+    # TODO: Finish this, commit, update PR message, delete stuff in run()
+    direct_owned_parent_uris: List[URI] = []
+    rels: List[TRIPLE] = [x for x in ontology.relationships(subjects=[uri])]
+    for rel in rels:
+        subject, predicate, object = rel
+        object_curie: CURIE = uri_converter.compress(object)  # This check is probably easier/faster if CURIE than URI
+        if predicate in subclass_preds and object_curie.split(':')[0] in owned_prefixes:
+            subject_uri: URI = uri_converter.expand(subject)  # Just in case got back a CURIE
+            direct_owned_parent_uris.append(subject_uri)
+
+    return direct_owned_parent_uris
 
 
-    # TODO: How to get just the *direct* parents? look at relationships and see if rdfs:subClassOf?
-    #  ...Until above issues fixed, will need to get all relationships at beginning of run() func and use that
-    p = []
-    # for rel, parents in rels.items():
-    #     # print(f'  {rel} ! {ontology.get_label_by_curie(rel)}')
-    #     for parent in parents:
-    #         # print(f'    {parent} ! {ontology.get_label_by_curie(parent)}')
-    #         p.append(parent)
-    return p
-
-
-def _get_curies_all_owned_terms(
-    ontology: Union[SqlImplementation, ProntoImplementation], owned_prefix_map: Dict[str, str]
+def _get_all_owned_terms(
+    ontology: Union[SqlImplementation, ProntoImplementation], owned_prefix_map: Dict[str, str], mode=['uri', 'curie'][0]
 ) -> List[str]:
     """Get all terms as CURIEs
+
     ontology: Haven't decided yet which implementation I'll use. Would use superclass, but they use mult inheritance.
+    owned_prefix_map: All the prefixes that are 'owned' by the ontology. Keys are CURIE prefixes and values are URIs.
+    mode: If 'uri', returns terms as URIs, else CURIEs if 'curie'.
     todo: owned_terms: if slow, can speed this up by grouping prefixes by splitting on : and filter out
     """
+    if mode not in ['uri', 'curie']:
+        raise ValueError('`_get_curies_all_owned_terms()`: `mode` must be one of "uri" or "curie".')
+
     # Get all terms: CURIES or URIs
     terms = [x for x in ontology.entities()]
 
@@ -74,57 +79,80 @@ def _get_curies_all_owned_terms(
         else:
             curie_terms_1.append(t)
 
-    # - Convert from URI if needed
     uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
-    curie_terms_2 = []
-    terms_with_no_known_prefix = []
-    for uri in uri_terms:
-        curie = uri_converter.compress(uri)
-        if curie:
-            curie_terms_2.append(curie)
-        else:
-            terms_with_no_known_prefix.append(uri)
-    curie_terms = curie_terms_1 + curie_terms_2
-
-    # Filter: Terms 'owned' by ontology
-    owned_terms = [x for x in curie_terms if any([x.startswith(y) for y in owned_prefix_map.keys()])]
+    # Note: These code blocks are a little redundant with each other, but probably easier to read this way.
+    if mode == 'curie':
+        curie_terms_2 = []
+        for uri in uri_terms:
+            curie = uri_converter.compress(uri)
+            if curie:
+                curie_terms_2.append(curie)
+        curie_terms = curie_terms_1 + curie_terms_2
+        owned_terms = [x for x in curie_terms if any([x.startswith(y) for y in owned_prefix_map.keys()])]
+    else:  # uri
+        uri_terms_2 = []
+        for uri in uri_terms:
+            uri = uri_converter.expand(uri)
+            if uri:
+                uri_terms_2.append(uri)
+        uri_terms = uri_terms + uri_terms_2
+        owned_terms = [x for x in uri_terms if any([x.startswith(y) for y in owned_prefix_map.values()])]
 
     return owned_terms
 
 
 def run(ontology_path: str, onto_config_path: str, sssom_map_path: str, min_id: str, mondo_terms_path: str, outpath: str) -> pd.DataFrame:
     """Run slurp pipeline for given ontology"""
-    # Prefixes
-    with open(onto_config_path, 'r') as stream:
-        onto_config = yaml.safe_load(stream)
-
-    # Read source files
+    # Read inputs
     # todo's: Ontology implementation selection
     #  i. If trouble, can try `SparqlImplementation`, but ~6 min to load and queries slow (cuz rdflib)
     #  ii. use Sql > Pronto when .entities() fixed: https://github.com/INCATools/ontology-access-kit/issues/235
+    with open(onto_config_path, 'r') as stream:
+        onto_config = yaml.safe_load(stream)
+        owned_prefix_map: Dict[str, str] = onto_config['base_prefix_map']
     # ontology = SqlImplementation(OntologyResource(slug=ontology_path, local=True))
     ontology = ProntoImplementation(OntologyResource(slug=ontology_path, local=True))
-
-    # TODO: Repurpose the following two working lines. use this to get all rels, convert to curies, then use.
-    # ontology_sql = SqlImplementation(OntologyResource(slug=ontology_path, local=True))
-    # all_rels = [x for x in ontology_sql.relationships()]  # len=32,926 (of triples)
-
     sssom_df = pd.read_csv(sssom_map_path, comment='#', sep='\t')
     mondo_termlist_df = pd.read_csv(mondo_terms_path, comment='#', sep='\t')
 
-    # Initialize variables
-    source_onto_curies: List[str] = _get_curies_all_owned_terms(ontology, owned_prefix_map=onto_config['base_prefix_map'])
-    sssom_object_ids = set(sssom_df['object_id'])
+    # TODO: delete this section
+    # Get relationships
+    edge_triples_uris_and_curies: List[Tuple] = [x for x in ontology.relationships()]
+    # - If is URI, try to convert to CURIE
+    edge_triples_curies: List[Tuple] = []
+    owned_prefix_map: Dict[str, URI] = onto_config['base_prefix_map']
+    uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
+    for triple in edge_triples_uris_and_curies:
+        new_triple = ()
+        for uri_or_curie in triple:
+            curie: CURIE = uri_converter.compress(uri_or_curie)
+            new_triple += (curie,) if curie else (uri_or_curie,)
+        edge_triples_curies.append(new_triple)
+    # - Build lookup dict of all the direct parents of each term. Only includes direct parents owned by the ontology.
+    term_parent_map: Dict[str, List[str]] = {}
+    owned_prefixes = set(onto_config['base_prefix_map'].keys())
+    for triple in edge_triples_curies:
+        subject, predicate, object = triple
+        if subject not in term_parent_map:
+            term_parent_map[subject] = []
+        if predicate == 'rdfs:subClassOf' and object.split(':')[0] in owned_prefixes:
+            term_parent_map[subject].append(object)
 
+    # TODO: For entities, get term URIs and CURIEs so I can do easy later
+    #  - might want a func for this
+    #  - make feature request for curies lib. Term class w/ URI and CURIE property.
     # Get slurpable terms
     slurpable_terms = []
-    for t in source_onto_curies:
+    owned_term_uris: List[Union[URI, CURIE]] = _get_all_owned_terms(ontology, owned_prefix_map, mode='uri')
+    sssom_object_ids: Set[CURIE] = set(sssom_df['object_id'])
+    for t in owned_term_uris:
         if t not in sssom_object_ids:
             migrate = True
             # todo: finish _get_direct_parents()
-            direct_parents: List[str] = _get_direct_parents(ontology, t)
-            slurpable_parents: List[str] = []
+            direct_parents: List[URI] = _get_direct_owned_parents(ontology, owned_prefix_map, t)
+            slurpable_parents: List[URI] = []
             for parent in direct_parents:
+                # TODO: parent['uri']
                 if parent not in sssom_object_ids:
                     migrate = False
                     break
@@ -144,6 +172,7 @@ def run(ontology_path: str, onto_config_path: str, sssom_map_path: str, min_id: 
                 label = oaklib.get_label(t)
                 # todo: Find the correct way of doing this:
                 definition = oaklib.get_definition(t)
+                # TODO: Convert uri to curie
                 slurpable_terms.append({'mondo_id': next_mondo_id, 'xref': t, 'label': label, 'definition': definition})
 
     result = pd.DataFrame(slurpable_terms)

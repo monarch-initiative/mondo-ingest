@@ -3,7 +3,7 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 .PHONY: build-mondo-ingest deploy-mondo-ingest documentation excluded-xrefs-in-mondo mappings \
-python-install-dependencies report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries
+report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries
 
 ####################################
 ### Standard constants #############
@@ -179,18 +179,10 @@ mappings: sssom $(ALL_MAPPINGS)
 #################
 ##### Utils #####
 #################
-# Documentation for `report-mapping-annotations` and `update-jinja-sparql-queries`: `docs/developer/ordo.md`
-# TODO: When https://github.com/monarch-initiative/mondo-ingest/issues/43 is fixed, can change back to `requirements.txt`
-python-install-dependencies:
-	python3 -m pip install --upgrade pip
-	python3 -m pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
-
-report-mapping-annotations: 
-	$(MAKE) python-install-dependencies
+report-mapping-annotations:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
 
 update-jinja-sparql-queries:
-	$(MAKE) python-install-dependencies
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
@@ -199,7 +191,6 @@ update-jinja-sparql-queries:
 #################
 # Exclusions: by ontology
 $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml
-	$(MAKE) python-install-dependencies
 	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py \
 	--exclusions-path config/$*_exclusions.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
@@ -213,7 +204,6 @@ $(REPORTDIR)/%_exclusion_reasons.ttl: mirror/%.owl $(REPORTDIR)/%_exclusion_reas
 	$(ROBOT) template --input mirror/$*.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
 
 $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: $(TMPDIR)/mondo.sssom.tsv tmp/mondo.owl metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv
-	$(MAKE) python-install-dependencies
 	python3 $(RELEASEDIR)/src/analysis/problematic_exclusions.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
@@ -223,11 +213,11 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 	--outpath $@
 
 # Exclusions: combined
-$(REPORTDIR)/term_exclusions.txt $(REPORTDIR)/exclusion_reasons.robot.template.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_term_exclusions.txt)
-	cat $(REPORTDIR)/*_term_exclusions.txt > $(REPORTDIR)/term_exclusions.txt; \
+$(REPORTDIR)/excluded_terms.txt $(REPORTDIR)/exclusion_reasons.robot.template.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_term_exclusions.txt)
+	cat $(REPORTDIR)/*_term_exclusions.txt > $(REPORTDIR)/excluded_terms.txt; \
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*_exclusion_reasons.robot.template.tsv > $(REPORTDIR)/exclusion_reasons.robot.template.tsv
 
-$(REPORTDIR)/term_exclusions.ttl: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_exclusion_reasons.ttl)
+$(REPORTDIR)/excluded_terms.ttl: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_exclusion_reasons.ttl)
 	$(ROBOT) merge $(patsubst %, -i %, $^) -o $@
 
 # todo: the merged _summary.tsv has a column `filename` on the right. would be better if it was named `ontology` and was on the left, and was sorted by most->least terms.
@@ -327,7 +317,6 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 #############################
 #### Lexical matching #######
 #############################
-# todo: this depends on `semsql`, a reapidly changing library. Add prereq / solution we decided on for `python-install-dependencies`?
 tmp/merged.db: tmp/merged.owl
 	semsql make $@
 
@@ -339,22 +328,14 @@ lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
 #############################
 ###### Slurp pipeline #######
 #############################
-# TODO: (a) Move this to Makefile, or (b) refactor this away.
 .PHONY: component-download-mondo.owl
 component-download-mondo.owl: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/mondo.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
-# TODO: (a) Move this to Makefile, or (b) refactor this away, or (c) DELETE this goal.
-# ...I think (c) is most likely, as `reports/mirror_signature-%.tsv` needs `component-download-%.owl`.
-# ...`reports/component_signature-%.tsv` is what needs `components/%.owl`, but that shouldn't be needed here.
-# $(COMPONENTSDIR)/mondo.owl: component-download-mondo.owl
-# 	if [ $(COMP) = true ] ; then if cmp -s $(TMPDIR)/component-download-mondo.owl.owl $@ ; then echo "Component identical."; else echo "Component is different, updating." && cp $(TMPDIR)/component-download-mondo.owl.owl $@; fi; fi
-
-# todo: add back prereq when done developing: mirror/%.owl
-# mirror/%.db: mirror/%.owl
-mirror/%.db: 
-	$(MAKE) python-install-dependencies
+# TODO: development: While developing, can temporarily remove mirror/%.owl prereq for speed
+# mirror/%.db:
+mirror/%.db: mirror/%.owl
 	@rm .template.db.tmp
 	semsql make $@
 	@rm .template.db.tmp
@@ -364,9 +345,6 @@ slurp/:
 
 # min-id: the next available Mondo ID
 slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
-	$(MAKE) python-install-dependencies
-	# TODO: Temporary debugging:
-	pip freeze | grep oaklib; \
 	python $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
 	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
@@ -376,7 +354,6 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/mirro
 	--outpath $@
 
 slurp-%:
-	$(MAKE) python-install-dependencies
 	$(MAKE) slurp/%.tsv
 
 slurp-all: slurp-omim slurp-doid slurp-ncit slurp-ordo slurp-icd10cm slurp-icd10who
