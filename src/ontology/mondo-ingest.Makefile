@@ -344,16 +344,21 @@ slurp/:
 	mkdir -p $@
 
 # min-id: the next available Mondo ID
+# TODO: `pip install` stuff is temporary until ODK docker up to date w/ recent OAK updates
+# TODO: Check if removing --rf from run.sh will fix need for pip install. havent been able to try yet; docker issue
 slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
+	# pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
 	python $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
 	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
-	--min-id 123000 \
+	--min-id 850000 \
+	--max-id 999999 \
 	--mondo-terms-path $(REPORTDIR)/mirror_signature-mondo.tsv \
+	--slurp-dir-path slurp/ \
 	--outpath $@
 
 slurp-%:
-	$(MAKE) slurp/%.tsv
+	$(MAKE) slurp/$*.tsv
 
-slurp-all: slurp-omim slurp-doid slurp-ncit slurp-ordo slurp-icd10cm slurp-icd10who
+slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit

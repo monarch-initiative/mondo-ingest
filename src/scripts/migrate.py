@@ -1,5 +1,10 @@
 """Slurp migration pipeline
 
+Basically, we:
+1. Look at all unmapped terms T
+2. If all of parents of T are mapped, designate for slurping (we only slurp if parents are already slurped, iteratively)
+3. Extract basic information about T and export as ROBOT template
+
 Resources
 - https://incatools.github.io/ontology-access-kit/
 - https://incatools.github.io/ontology-access-kit/intro/tutorial02.html
@@ -8,175 +13,73 @@ TODO's:
   -
 """
 from argparse import ArgumentParser
-from typing import Dict, List, Set, Tuple, Union
+from typing import Dict, List, Set, Union
 
-import curies
 import pandas as pd
-import oaklib
 import yaml
-from oaklib.implementations import ProntoImplementation, SqlImplementation
-from oaklib.interfaces.basic_ontology_interface import RELATIONSHIP
-from oaklib.resource import OntologyResource
+from oaklib.implementations import ProntoImplementation
 from oaklib.types import CURIE, URI
 
-TRIPLE = RELATIONSHIP
+from utils import CACHE_DIR, PREFIX, Term, _get_all_owned_terms, _get_next_available_mondo_id, \
+    get_mondo_term_ids, _load_ontology
+
+ROBOT_TEMPLATE_HEADER = {
+    'mondo_id': 'ID', 'xref': 'A oboInOwl:hasDbXref', 'label': 'LABEL', 'definition': 'A IAO:0000115',
+    'parents': 'SC %'}
 
 
-# TODO: implement this func
-# todo: IDs should be int or str? prolly str
-def determine_next_available_mondo_id(min_id: str, mondo_termlist_df: pd.DataFrame) -> str:
-    """Starting from `min_id`, count up and check until finding the next ID."""
-    next_id = str(0)
-    return next_id
-
-
-def _get_direct_owned_parents(ontology: ProntoImplementation, owned_prefix_map: Dict[str, str], uri: str) -> List[str]:
-    """Get URIs of direct parents of a class. Only returns parents that are 'owned' by the ontology.
-
-    ontology: Haven't decided yet which implementation I'll use. Would use superclass, but they use mult inheritance.
-    owned_prefix_map: All the prefixes that are 'owned' by the ontology. Keys are CURIE prefixes and values are URIs.
+def slurp(
+    ontology_path: str, onto_config_path: str, sssom_map_path: str, min_id: int, max_id: int, mondo_terms_path: str,
+    slurp_dir_path: str, outpath: str, use_cache=False
+) -> pd.DataFrame:
+    """Run slurp pipeline for given ontology
+    todo: tried on an older computer and it was indeed too slow. Has to do w/ term class / utils, probably.
     """
-    # These vars are here for stability reasons, just in case I get CURIES where I expect URIs or vice versa.
-    subclass_preds = [x + 'subClassOf' for x in ['rdfs:', 'http://www.w3.org/2000/01/rdf-schema#']]
-    owned_prefixes = set(owned_prefix_map.keys())
-    uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
-
-    # TODO: Finish this, commit, update PR message, delete stuff in run()
-    direct_owned_parent_uris: List[URI] = []
-    rels: List[TRIPLE] = [x for x in ontology.relationships(subjects=[uri])]
-    for rel in rels:
-        subject, predicate, object = rel
-        object_curie: CURIE = uri_converter.compress(object)  # This check is probably easier/faster if CURIE than URI
-        if predicate in subclass_preds and object_curie.split(':')[0] in owned_prefixes:
-            subject_uri: URI = uri_converter.expand(subject)  # Just in case got back a CURIE
-            direct_owned_parent_uris.append(subject_uri)
-
-    return direct_owned_parent_uris
-
-
-def _get_all_owned_terms(
-    ontology: Union[SqlImplementation, ProntoImplementation], owned_prefix_map: Dict[str, str], mode=['uri', 'curie'][0]
-) -> List[str]:
-    """Get all terms as CURIEs
-
-    ontology: Haven't decided yet which implementation I'll use. Would use superclass, but they use mult inheritance.
-    owned_prefix_map: All the prefixes that are 'owned' by the ontology. Keys are CURIE prefixes and values are URIs.
-    mode: If 'uri', returns terms as URIs, else CURIEs if 'curie'.
-    todo: owned_terms: if slow, can speed this up by grouping prefixes by splitting on : and filter out
-    """
-    if mode not in ['uri', 'curie']:
-        raise ValueError('`_get_curies_all_owned_terms()`: `mode` must be one of "uri" or "curie".')
-
-    # Get all terms: CURIES or URIs
-    terms = [x for x in ontology.entities()]
-
-    # Get CURIES
-    uri_terms = []
-    curie_terms_1 = []
-    for t in terms:
-        if t.startswith('http'):
-            uri_terms.append(t)
-        else:
-            curie_terms_1.append(t)
-
-    uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
-    # Note: These code blocks are a little redundant with each other, but probably easier to read this way.
-    if mode == 'curie':
-        curie_terms_2 = []
-        for uri in uri_terms:
-            curie = uri_converter.compress(uri)
-            if curie:
-                curie_terms_2.append(curie)
-        curie_terms = curie_terms_1 + curie_terms_2
-        owned_terms = [x for x in curie_terms if any([x.startswith(y) for y in owned_prefix_map.keys()])]
-    else:  # uri
-        uri_terms_2 = []
-        for uri in uri_terms:
-            uri = uri_converter.expand(uri)
-            if uri:
-                uri_terms_2.append(uri)
-        uri_terms = uri_terms + uri_terms_2
-        owned_terms = [x for x in uri_terms if any([x.startswith(y) for y in owned_prefix_map.values()])]
-
-    return owned_terms
-
-
-def run(ontology_path: str, onto_config_path: str, sssom_map_path: str, min_id: str, mondo_terms_path: str, outpath: str) -> pd.DataFrame:
-    """Run slurp pipeline for given ontology"""
     # Read inputs
-    # todo's: Ontology implementation selection
-    #  i. If trouble, can try `SparqlImplementation`, but ~6 min to load and queries slow (cuz rdflib)
-    #  ii. use Sql > Pronto when .entities() fixed: https://github.com/INCATools/ontology-access-kit/issues/235
+    ontology: ProntoImplementation = _load_ontology(ontology_path, use_cache)
     with open(onto_config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
-        owned_prefix_map: Dict[str, str] = onto_config['base_prefix_map']
-    # ontology = SqlImplementation(OntologyResource(slug=ontology_path, local=True))
-    ontology = ProntoImplementation(OntologyResource(slug=ontology_path, local=True))
-    sssom_df = pd.read_csv(sssom_map_path, comment='#', sep='\t')
-    mondo_termlist_df = pd.read_csv(mondo_terms_path, comment='#', sep='\t')
+        owned_prefix_map: Dict[PREFIX, URI] = onto_config['base_prefix_map']
+    sssom_df: pd.DataFrame = pd.read_csv(sssom_map_path, comment='#', sep='\t')
+    mondo_term_ids: Set[int] = get_mondo_term_ids(mondo_terms_path, slurp_dir_path)
 
-    # TODO: delete this section
-    # Get relationships
-    edge_triples_uris_and_curies: List[Tuple] = [x for x in ontology.relationships()]
-    # - If is URI, try to convert to CURIE
-    edge_triples_curies: List[Tuple] = []
-    owned_prefix_map: Dict[str, URI] = onto_config['base_prefix_map']
-    uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
-    for triple in edge_triples_uris_and_curies:
-        new_triple = ()
-        for uri_or_curie in triple:
-            curie: CURIE = uri_converter.compress(uri_or_curie)
-            new_triple += (curie,) if curie else (uri_or_curie,)
-        edge_triples_curies.append(new_triple)
-    # - Build lookup dict of all the direct parents of each term. Only includes direct parents owned by the ontology.
-    term_parent_map: Dict[str, List[str]] = {}
-    owned_prefixes = set(onto_config['base_prefix_map'].keys())
-    for triple in edge_triples_curies:
-        subject, predicate, object = triple
-        if subject not in term_parent_map:
-            term_parent_map[subject] = []
-        if predicate == 'rdfs:subClassOf' and object.split(':')[0] in owned_prefixes:
-            term_parent_map[subject].append(object)
+    # Intermediates
+    owned_terms: List[Term] = _get_all_owned_terms(
+        ontology=ontology, owned_prefix_map=owned_prefix_map, ontology_path=ontology_path, cache_dir_path=CACHE_DIR,
+        onto_config_path=onto_config_path, use_cache=use_cache)
+    owned_term_curies: List[CURIE] = [x.curie for x in owned_terms]
+    sssom_object_ids: Set[Union[URI, CURIE]] = set(sssom_df['object_id'])  # Usually CURIE, but spec allows URI
+    unmapped_terms: List[Term] = [x for x in owned_terms if x.curie not in sssom_object_ids]
 
-    # TODO: For entities, get term URIs and CURIEs so I can do easy later
-    #  - might want a func for this
-    #  - make feature request for curies lib. Term class w/ URI and CURIE property.
-    # Get slurpable terms
-    slurpable_terms = []
-    owned_term_uris: List[Union[URI, CURIE]] = _get_all_owned_terms(ontology, owned_prefix_map, mode='uri')
-    sssom_object_ids: Set[CURIE] = set(sssom_df['object_id'])
-    for t in owned_term_uris:
-        if t not in sssom_object_ids:
-            migrate = True
-            # todo: finish _get_direct_parents()
-            direct_parents: List[URI] = _get_direct_owned_parents(ontology, owned_prefix_map, t)
-            slurpable_parents: List[URI] = []
-            for parent in direct_parents:
-                # TODO: parent['uri']
-                if parent not in sssom_object_ids:
-                    migrate = False
-                    break
-                else:
-                    obj_data = sssom_df[sssom_df['object_id'] == parent]
-                    pred = str(obj_data['predicate_id'])
-                    if pred in ['skos:exactMatch', 'skos:narrowMatch']:
-                        # In other words, if the parent is mapped, and the mapping is either exact or narrower, OK to add
-                        # todo: Ok to add
-                        slurpable_parents.append(obj_data['subject_id'])
-                    else:
-                        pass  # Its fine, just continue looking for other parents in this case
-            if migrate and slurpable_parents:
-                # TODO: implement this func:
-                next_mondo_id = determine_next_available_mondo_id(min_id, mondo_termlist_df)  # satrting from min_id, then counting up and checking if it does not already exist.
-                # todo: Find the correct way of doing this:
-                label = oaklib.get_label(t)
-                # todo: Find the correct way of doing this:
-                definition = oaklib.get_definition(t)
-                # TODO: Convert uri to curie
-                slurpable_terms.append({'mondo_id': next_mondo_id, 'xref': t, 'label': label, 'definition': definition})
+    # Determine slurpable terms
+    # - Slurpable term: A term for which all parents are already slurped. In other words, no parent is owned by the
+    # ontology but unmapped in Mondo.
+    next_mondo_id = min_id
+    terms_to_slurp: List[Dict[str, str]] = []
+    for t in unmapped_terms:
+        # If all T.parents mapped, and at least one of them is an exact or narrow match, designate T for slurping
+        # (i.e. only slurp if parents are already slurped)
+        qualified_parents = True
+        parent_mondo_ids = []
+        for parent_curie in t.direct_owned_parent_curies:
+            # Conversely, if any of T.parents is unmapped, T is not to be slurped
+            if parent_curie in sssom_object_ids:
+                parent_df: pd.DataFrame = sssom_df[sssom_df['object_id'] == parent_curie]
+                parent_mondo_id = parent_df.to_dict('records')[0]['subject_id']
+                parent_mondo_ids.append(parent_mondo_id)
+            if parent_curie not in sssom_object_ids and parent_curie in owned_term_curies:
+                qualified_parents = False
+                break
+        if qualified_parents:
+            next_mondo_id, mondo_term_ids = _get_next_available_mondo_id(next_mondo_id, max_id, mondo_term_ids)
+            # mondo_id = 'MONDO:' + ('0' * (len(str(next_mondo_id)) - 7)) + str(next_mondo_id)  # min->max needs no pad
+            mondo_id = 'MONDO:' + str(next_mondo_id)
+            terms_to_slurp.append({
+                'mondo_id': mondo_id, 'xref': t.curie, 'label': t.label if t.label else '',
+                'definition': t.definition if t.definition else '', 'parents': '|'.join(parent_mondo_ids)})
 
-    result = pd.DataFrame(slurpable_terms)
-    result.to_csv(outpath, sep="\t")
+    result = pd.DataFrame([ROBOT_TEMPLATE_HEADER] + terms_to_slurp)
+    result.to_csv(outpath, sep="\t", index=False)
     return result
 
 
@@ -193,20 +96,36 @@ def cli():
         help='Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
              'list of prefixes owned by the ontology. Used to filter out terms.')
     parser.add_argument(
-        '-m', '--sssom-map-path', required=True,
+        '-s', '--sssom-map-path', required=True,
         help='Path to file containing all known Mondo mappings, in SSSOM format.')
     parser.add_argument(
-        '-i', '--min-id', required=True,
-        help='The ID from which we want to begin searching from in order to locate any currently unslurped terms.')
+        '-m', '--min-id', required=True,
+        help='The Mondo ID from which we want to begin to possibly allow for assignment of new Mondo IDs for any'
+             ' unslurped terms.')
+    parser.add_argument(
+        '-M', '--max-id', required=True,
+        help='The max Mondo ID we should ever assign for any unslurped terms.')
     parser.add_argument(
         '-t', '--mondo-terms-path', required=True,
         help='Path to a file that contains a list of all Mondo terms.')
     parser.add_argument(
+        '-l', '--slurp-dir-path', required=True,
+        help='Path to `slurp/` dir where other slurp files are checked so that any assigned Mondo IDs are not re-used')
+    parser.add_argument(
         '-O', '--outpath', required=True,
         help='Path to save the output slurp `.tsv` file, containing list of new terms to integrate into Mondo.')
+    parser.add_argument(
+        '-C', '--use-cache', required=False, action='store_true', default=False,
+        help='Use cached ontology and owned_terms objects?')
     d: Dict = vars(parser.parse_args())
+
+    # Reformatting
+    d['min_id'] = int(d['min_id'])
+    d['max_id'] = int(d['max_id'])
     # todo: Convert paths to absolute paths, as I've done before? Or expect always be run from src/ontology and ok?
-    run(**d)
+
+    # Run
+    slurp(**d)
 
 
 if __name__ == '__main__':
