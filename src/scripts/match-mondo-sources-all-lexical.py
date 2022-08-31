@@ -29,12 +29,7 @@ import click
 import yaml
 
 from sssom.constants import SUBJECT_ID, OBJECT_ID
-from sssom.util import (
-    KEY_FEATURES, 
-    get_prefix_from_curie, 
-    MappingSetDataFrame, 
-    filter_prefixes
-)
+from sssom.util import filter_prefixes
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
 from sssom.io import get_metadata_and_prefix_map, filter_file
@@ -124,6 +119,7 @@ def run(input:str, config: str, rules:str, output: str):
             output=f,
             **kwargs
             )
+
 
 if __name__ == '__main__':
     main()

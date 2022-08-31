@@ -1,14 +1,17 @@
 # curie_map:
 #   DOID: http://purl.obolibrary.org/obo/DOID_
+#   ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
+#   ICD10WHO: https://icd.who.int/browse10/2019/en#/
 #   MONDO: http://purl.obolibrary.org/obo/MONDO_
 #   NCIT: http://purl.obolibrary.org/obo/NCIT_
 #   owl: http://www.w3.org/2002/07/owl#
 #   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
 #   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/b4f4dee9-be39-4458-9153-f9cae8bb280e
+# mapping_set_id: https://w3id.org/sssom/mappings/c605f2e8-4f55-4d96-8c89-f2541e27d496
 # mapping_tool: oaklib
 # object_match_field:
 # - rdfs:label
@@ -18,8 +21,8 @@ subject_id	subject_label	predicate_id	object_id	object_label	mapping_justificati
 MONDO:0001103	giardiasis	skos:closeMatch	NCIT:C77213	Giardia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Giardia
 MONDO:0001441	pica disease	skos:exactMatch	NCIT:C71234	Pica	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Pica
 MONDO:0003539	T-cell adult acute lymphocytic leukemia	skos:exactMatch	NCIT:C3183	T Acute Lymphoblastic Leukemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	T Acute Lymphoblastic Leukemia
-MONDO:0004990	breast tumor luminal A or B	skos:narrowMatch	DOID:0060548	luminal breast carcinoma A	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	luminal breast cancer
 MONDO:0004990	breast tumor luminal A or B	skos:narrowMatch	DOID:0060548	luminal breast carcinoma A	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	breast tumor luminal
+MONDO:0004990	breast tumor luminal A or B	skos:narrowMatch	DOID:0060548	luminal breast carcinoma A	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	luminal breast cancer
 MONDO:0005047	infertility disorder	skos:exactMatch	NCIT:C63385	Sterile	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	Sterile
 MONDO:0005731	dipetalonemiasis	skos:closeMatch	NCIT:C119326	Mansonella perstans	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Mansonella perstans
 MONDO:0005774	glanders	skos:closeMatch	NCIT:C86226	Burkholderia mallei	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	Burkholderia mallei

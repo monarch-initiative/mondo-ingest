@@ -1,0 +1,11 @@
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+ICD10CM:B36.2	White piedra	skos:narrowMatch	MONDO:0000253	piedra	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	White piedra	UNIQUE_2
+ICD10CM:B67	Echinococcosis	skos:narrowMatch	MONDO:0005738	echinococcosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	hydatidosis	UNIQUE_2
+ICD10CM:C46.0	Kaposi's sarcoma of skin	skos:narrowMatch	MONDO:0005055	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	Kaposi's sarcoma of skin	UNIQUE_2
+ICD10CM:C46.3	Kaposi's sarcoma of lymph nodes	skos:narrowMatch	MONDO:0005055	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	Kaposi's sarcoma of lymph nodes	UNIQUE_2
+ICD10CM:C46.4	Kaposi's sarcoma of gastrointestinal sites	skos:narrowMatch	MONDO:0005055	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	Kaposi's sarcoma of gastrointestinal sites	UNIQUE_2
+ICD10CM:E76.210	Morquio A mucopolysaccharidoses	skos:narrowMatch	MONDO:0018938	mucopolysaccharidosis type 4	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	Morquio syndrome A	UNIQUE_2
+ICD10CM:J02	Acute pharyngitis	skos:narrowMatch	MONDO:0002258	pharyngitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	acute sore throat	UNIQUE_2
+ICD10CM:L13.1	Subcorneal pustular dermatitis	skos:narrowMatch	MONDO:0006617	vesiculobullous skin disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	Sneddon-Wilkinson disease	UNIQUE_2
+ICD10CM:Q05	Spina bifida	skos:narrowMatch	MONDO:0017069	spina bifida cystica	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	myelomeningocele	UNIQUE_2
+ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	skos:narrowMatch	MONDO:0021005	faciodigitogenital syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	Aarskog syndrome	UNIQUE_2

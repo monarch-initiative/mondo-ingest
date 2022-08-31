@@ -1,0 +1,5 @@
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+ICD10CM:D80-D89	Certain disorders involving the immune mechanism (D80-D89)	skos:broadMatch	MONDO:0008399	sarcoidosis, susceptibility to, 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	sarcoidosis	UNIQUE_2
+ICD10CM:E70.331	Hermansky-Pudlak syndrome	skos:broadMatch	MONDO:0030903	Hermansky-Pudlak syndrome 11	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	Hermansky-Pudlak syndrome	UNIQUE_2
+ICD10CM:G11.11	Friedreich ataxia	skos:broadMatch	MONDO:0100340	Friedreich ataxia 1	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	Friedreich ataxia	UNIQUE_2
+ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	skos:broadMatch	MONDO:0010589	Aarskog-Scott syndrome, X-linked	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	Aarskog syndrome	UNIQUE_2
