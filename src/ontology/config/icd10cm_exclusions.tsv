@@ -1,115 +1,113 @@
 term_id	term_label	exclusion_reason	exclude_children
-ICD10CM:B95-B97	Bacterial and viral infectious agents	disease causing agents	True
-ICD10CM:C7A-C7A	Malignant neuroendocrine tumors	phenotype for tumor	True
-ICD10CM:C7B-C7B	Secondary neuroendocrine tumors	phenotype (for metastasis)	True
-ICD10CM:D78-D78	Intraoperative and postprocedural complications of the spleen	this is a post surgery/procedure complication (does not follow a pathological process). 	True
-ICD10CM:E36-E36	Intraoperative complications of endocrine system	this is a post surgery/procedure complication (does not follow a pathological process). 	True
-ICD10CM:E89-E89	Postprocedural endocrine and metabolic complications and disorders, not elsewhere classified	this is a post surgery/procedure complication (does not follow a pathological process). 	True
-ICD10CM:H59-H59	Intraoperative and postprocedural complications and disorders of eye and adnexa, not elsewhere classified	this is a post surgery/procedure complication (does not follow a pathological process). 	True
-ICD10CM:H95-H95	Intraoperative and postprocedural complications and disorders of ear and mastoid process, not elsewhere classified	this is a post surgery/procedure complication (does not follow a pathological process). 	True
-ICD10CM:J95-J95	Intraoperative and postprocedural complications and disorders of respiratory system, not elsewhere classified	this is a post surgery/procedure complication (does not follow a pathological process). 	True
-ICD10CM:K40-K46	Hernia	phenotype	True
-ICD10CM:L76-L76	Intraoperative and postprocedural complications of skin and subcutaneous tissue	not disease	True
-ICD10CM:M96-M96	Intraoperative and postprocedural complications and disorders of musculoskeletal system, not elsewhere classified	this is a post surgery/procedure complication (does not follow a pathological process). 	True
-ICD10CM:M99-M99	Biomechanical lesions, not elsewhere classified	phenotype	True
-ICD10CM:N99-N99	Intraoperative and postprocedural complications and disorders of genitourinary system, not elsewhere classified	conditions causes by external factor	True
-ICD10CM:O00-O08	Pregnancy with abortive outcome	biological process	True
-ICD10CM:O09-O09	Supervision of high risk pregnancy	medical action	True
-ICD10CM:O30-O48	Maternal care related to the fetus and amniotic cavity and possible delivery problems	behavior	True
-ICD10CM:O60-O77	Complications of labor and delivery	conditions causes by external factor	True
-ICD10CM:O80-O82	Encounter for delivery	medical action	True
-ICD10CM:O85-O92	Complications predominantly related to the puerperium	phenotype	True
-ICD10CM:P00-P04	Newborn affected by maternal factors and by complications of pregnancy, labor, and delivery	conditions causes by external factor	True
-ICD10CM:P05-P08	Disorders of newborn related to length of gestation and fetal growth	phenotype	True
-ICD10CM:P09-P09	Abnormal findings on neonatal screening	phenotype	True
-ICD10CM:P10-P15	Birth trauma	complication	True
-ICD10CM:P36	Bacterial sepsis of newborn		True
-ICD10CM:P80-P83	Conditions involving the integument and temperature regulation of newborn	conditions, but not disease?	True
-ICD10CM:P84-P84	Other problems with newborn	phenotype	True
-ICD10CM:P90-P96	Other disorders originating in the perinatal period	phenotype	False
-ICD10CM:P90	Convulsions of newborn		True
-ICD10CM:P91	Other disturbances of cerebral status of newborn		True
-ICD10CM:P92	Feeding problems of newborn		True
-ICD10CM:P93	Reactions and intoxications due to drugs administered to newborn		True
-ICD10CM:P95	Stillbirth		True
-ICD10CM:R00-R99	Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified	phenotypes	True
-ICD10CM:R00-R09	Symptoms and signs involving the circulatory and respiratory systems	phenotypes	True
-ICD10CM:R10-R19	Symptoms and signs involving the digestive system and abdomen	phenotypes	True
-ICD10CM:R20-R23	Symptoms and signs involving the skin and subcutaneous tissue	phenotypes	True
-ICD10CM:R25-R29	Symptoms and signs involving the nervous and musculoskeletal systems	phenotypes	True
-ICD10CM:R30-R39	Symptoms and signs involving the genitourinary system	phenotypes	True
-ICD10CM:R40-R46	Symptoms and signs involving cognition, perception, emotional state and behavior	phenotypes	True
-ICD10CM:R47-R49	Symptoms and signs involving speech and voice	phenotypes	True
-ICD10CM:R50-R69	General symptoms and signs	phenotypes	True
-ICD10CM:R70-R79	Abnormal findings on examination of blood, without diagnosis	phenotypes	True
-ICD10CM:R80-R82	Abnormal findings on examination of urine, without diagnosis	phenotypes	True
-ICD10CM:R83-R89	Abnormal findings on examination of other body fluids, substances and tissues, without diagnosis	phenotypes	True
-ICD10CM:R90-R94	Abnormal findings on diagnostic imaging and in function studies, without diagnosis	phenotypes	True
-ICD10CM:R97-R97	Abnormal tumor markers	phenotypes	True
-ICD10CM:R99-R99	Ill-defined and unknown cause of mortality	phenotypes	True
-ICD10CM:T15-T19	Effects of foreign body entering through natural orifice	exclude presence of environmental materials	True
-ICD10CM:T66-T78	Other and unspecified effects of external causes		True
-ICD10CM:T79-T79	Certain early complications of trauma	traumatic cause	True
-ICD10CM:V00-Y99	External causes of morbidity	conditions caused by external force	True
-ICD10CM:V00-V09	Pedestrian injured in transport accident	conditions caused by external force	True
-ICD10CM:V10-V19	Pedal cycle rider injured in transport accident	conditions caused by external force	True
-ICD10CM:V20-V29	Motorcycle rider injured in transport accident	conditions caused by external force	True
-ICD10CM:V30-V39	Occupant of three-wheeled motor vehicle injured in transport accident	conditions caused by external force	True
-ICD10CM:V40-V49	Car occupant injured in transport accident	conditions caused by external force	True
-ICD10CM:V50-V59	Occupant of pick-up truck or van injured in transport accident	conditions caused by external force	True
-ICD10CM:V60-V69	Occupant of heavy transport vehicle injured in transport accident	conditions caused by external force	True
-ICD10CM:V70-V79	Bus occupant injured in transport accident	conditions caused by external force	True
-ICD10CM:V80-V89	Other land transport accidents	conditions caused by external force	True
-ICD10CM:V90-V94	Water transport accidents	conditions caused by external force	True
-ICD10CM:V95-V97	Air and space transport accidents	conditions caused by external force	True
-ICD10CM:V98-V99	Other and unspecified transport accidents	conditions caused by external force	True
-ICD10CM:W00-W19	Slipping, tripping, stumbling and falls	conditions caused by external force	True
-ICD10CM:W20-W49	Exposure to inanimate mechanical forces	conditions caused by external force	True
-ICD10CM:W50-W64	Exposure to animate mechanical forces	conditions caused by external force	True
-ICD10CM:W65-W74	Accidental non-transport drowning and submersion	conditions caused by external force	True
-ICD10CM:W85-W99	Exposure to electric current, radiation and extreme ambient air temperature and pressure	conditions caused by external force	True
-ICD10CM:X00-X08	Exposure to smoke, fire and flames	conditions caused by external force	True
-ICD10CM:X10-X19	Contact with heat and hot substances	conditions caused by external force	True
-ICD10CM:X30-X39	Exposure to forces of nature	conditions caused by external force	True
-ICD10CM:X50-X50	Overexertion and strenuous or repetitive movements	conditions caused by external force	True
-ICD10CM:X52-X58	Accidental exposure to other specified factors	conditions caused by external force	True
-ICD10CM:X71-X83	Intentional self-harm	conditions caused by external force	True
-ICD10CM:X92-Y09	Assault	conditions caused by external force	True
-ICD10CM:Y21-Y33	Event of undetermined intent	conditions caused by external force	True
-ICD10CM:Y35-Y38	Legal intervention, operations of war, military operations, and terrorism	conditions caused by external force	True
-ICD10CM:Y62-Y69	Misadventures to patients during surgical and medical care	conditions caused by external force	True
-ICD10CM:Y70-Y82	Medical devices associated with adverse incidents in diagnostic and therapeutic use	conditions caused by external force	True
-ICD10CM:Y83-Y84	Surgical and other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure	conditions caused by external force	True
-ICD10CM:Y90-Y99	Supplementary factors related to causes of morbidity classified elsewhere	conditions caused by external force	True
-ICD10CM:Z00-Z99	Factors influencing health status and contact with health services	various reasons below to exclude these	True
-ICD10CM:Z00-Z13	Persons encountering health services for examinations	medical action	True
-ICD10CM:Z17-Z17	Estrogen receptor status	biomarker	True
-ICD10CM:Z18-Z18	Retained foreign body fragments	exclude presence of environmental materials	True
-ICD10CM:Z19-Z19	Hormone sensitivity malignancy status	biomarker	True
-ICD10CM:Z20-Z29	Persons with potential health hazards related to communicable diseases	risk factor	True
-ICD10CM:Z30-Z39	Persons encountering health services in circumstances related to reproduction	medical action	True
-ICD10CM:Z40-Z53	Encounters for other specific health care	medical action	True
-ICD10CM:Z55-Z65	Persons with potential health hazards related to socioeconomic and psychosocial circumstances	risk factor	True
-ICD10CM:Z66-Z66	Do not resuscitate status	trait	True
-ICD10CM:Z67-Z67	Blood type	trait	True
-ICD10CM:Z68-Z68	Body mass index (BMI)	trait	True
-ICD10CM:Z69-Z76	Persons encountering health services in other circumstances	medical action	True
-ICD10CM:Z77-Z99	Persons with potential health hazards related to family and personal history and certain conditions influencing health status	risk factor	True
-ICD10CM:L49	Exfoliation due to erythematous conditions according to extent of body surface involved	phenotype	True
-ICD10CM:M26	Dentofacial anomalies [including malocclusion]	phenotype	True
-ICD10CM:M40	Kyphosis and lordosis	phenotype	True
-ICD10CM:P50	Newborn affected by intrauterine (fetal) blood loss	phenotype	True
-ICD10CM:P51	Umbilical hemorrhage of newborn	phenotype	True
-ICD10CM:P52	Intracranial nontraumatic hemorrhage of newborn	phenotype	True
-ICD10CM:P53	Hemorrhagic disease of newborn	phenotype	True
-ICD10CM:P54	Other neonatal hemorrhages	phenotype	True
-ICD10CM:P58	Neonatal jaundice due to other excessive hemolysis	phenotype	True
-ICD10CM:P59	Neonatal jaundice from other and unspecified causes	phenotype	True
-ICD10CM:P60	Disseminated intravascular coagulation of newborn	phenotype	True
-ICD10CM:E15	Nondiabetic hypoglycemic coma	phenotype	True
-ICD10CM:E16.0	Drug-induced hypoglycemia without coma	phenotype	True
-ICD10CM:E16.1	Other hypoglycemia	phenotype	True
-ICD10CM:E16.2	Hypoglycemia, unspecified	phenotype	True
-ICD10CM:E16.3	Increased secretion of glucagon	phenotype	True
-ICD10CM:E16.4	Increased secretion of gastrin	phenotype	True
-ICD10CM:Z14	Genetic carrier	phenotype	True
+ICD10CM:Z17-Z17	Estrogen receptor status	MONDO:excludeBiomarker	TRUE
+ICD10CM:Z19-Z19	Hormone sensitivity malignancy status	MONDO:excludeBiomarker	TRUE
+ICD10CM:B95-B97	Bacterial and viral infectious agents	MONDO:excludeCausalAgents	TRUE
+ICD10CM:P10-P15	Birth trauma	MONDO:excludeComplication	TRUE
+ICD10CM:N99-N99	Intraoperative and postprocedural complications and disorders of genitourinary system, not elsewhere classified	MONDO:excludeComplication	TRUE
+ICD10CM:L76-L76	Intraoperative and postprocedural complications of skin and subcutaneous tissue	MONDO:excludeComplication	TRUE
+ICD10CM:O85-O92	Complications predominantly related to the puerperium	MONDO:excludeComplication	TRUE
+ICD10CM:D78-D78	Intraoperative and postprocedural complications of the spleen	MONDO:excludeComplication	TRUE
+ICD10CM:E36-E36	Intraoperative complications of endocrine system	MONDO:excludeComplication	TRUE
+ICD10CM:E89-E89	Postprocedural endocrine and metabolic complications and disorders, not elsewhere classified	MONDO:excludeComplication	TRUE
+ICD10CM:H59-H59	Intraoperative and postprocedural complications and disorders of eye and adnexa, not elsewhere classified	MONDO:excludeComplication	TRUE
+ICD10CM:H95-H95	Intraoperative and postprocedural complications and disorders of ear and mastoid process, not elsewhere classified	MONDO:excludeComplication	TRUE
+ICD10CM:J95-J95	Intraoperative and postprocedural complications and disorders of respiratory system, not elsewhere classified	MONDO:excludeComplication	TRUE
+ICD10CM:M96-M96	Intraoperative and postprocedural complications and disorders of musculoskeletal system, not elsewhere classified	MONDO:excludeComplication	TRUE
+ICD10CM:T79-T79	Certain early complications of trauma	MONDO:excludeComplication	TRUE
+ICD10CM:O60-O77	Complications of labor and delivery	MONDO:excludeComplication|MONDO:excludeBiologicalProcess	TRUE
+ICD10CM:P80-P83	Conditions involving the integument and temperature regulation of newborn	MONDO:excludeCondition	TRUE
+ICD10CM:V80-V89	Other land transport accidents	MONDO:excludeEvent	TRUE
+ICD10CM:V90-V94	Water transport accidents	MONDO:excludeEvent	TRUE
+ICD10CM:V95-V97	Air and space transport accidents	MONDO:excludeEvent	TRUE
+ICD10CM:V98-V99	Other and unspecified transport accidents	MONDO:excludeEvent	TRUE
+ICD10CM:W00-W19	Slipping, tripping, stumbling and falls	MONDO:excludeEvent	TRUE
+ICD10CM:W20-W49	Exposure to inanimate mechanical forces	MONDO:excludeEvent	TRUE
+ICD10CM:W50-W64	Exposure to animate mechanical forces	MONDO:excludeEvent	TRUE
+ICD10CM:W65-W74	Accidental non-transport drowning and submersion	MONDO:excludeEvent	TRUE
+ICD10CM:W85-W99	Exposure to electric current, radiation and extreme ambient air temperature and pressure	MONDO:excludeEvent	TRUE
+ICD10CM:X00-X08	Exposure to smoke, fire and flames	MONDO:excludeEvent	TRUE
+ICD10CM:X10-X19	Contact with heat and hot substances	MONDO:excludeEvent	TRUE
+ICD10CM:X30-X39	Exposure to forces of nature	MONDO:excludeEvent	TRUE
+ICD10CM:X50-X50	Overexertion and strenuous or repetitive movements	MONDO:excludeEvent	TRUE
+ICD10CM:X52-X58	Accidental exposure to other specified factors	MONDO:excludeEvent	TRUE
+ICD10CM:X71-X83	Intentional self-harm	MONDO:excludeEvent	TRUE
+ICD10CM:X92-Y09	Assault	MONDO:excludeEvent	TRUE
+ICD10CM:Y21-Y33	Event of undetermined intent	MONDO:excludeEvent	TRUE
+ICD10CM:Y35-Y38	Legal intervention, operations of war, military operations, and terrorism	MONDO:excludeEvent	TRUE
+ICD10CM:Y62-Y69	Misadventures to patients during surgical and medical care	MONDO:excludeEvent	TRUE
+ICD10CM:T15-T19	Effects of foreign body entering through natural orifice	MONDO:excludeEvent|MONDO:excludeNonDisease	TRUE
+ICD10CM:V00-Y99	External causes of morbidity	MONDO:excludeEvent|MONDO:excludePopulation	TRUE
+ICD10CM:Y90-Y99	Supplementary factors related to causes of morbidity classified elsewhere	MONDO:excludeExternalFactor	TRUE
+ICD10CM:Z00-Z99	Factors influencing health status and contact with health services	MONDO:excludeExternalFactor	TRUE
+ICD10CM:O30-O48	Maternal care related to the fetus and amniotic cavity and possible delivery problems	MONDO:excludeMedicalAction	FALSE
+ICD10CM:Y83-Y84	Surgical and other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure	MONDO:excludeMedicalAction	TRUE
+ICD10CM:O09-O09	Supervision of high risk pregnancy	MONDO:excludeMedicalAction	TRUE
+ICD10CM:O80-O82	Encounter for delivery	MONDO:excludeMedicalAction	TRUE
+ICD10CM:Z40-Z53	Encounters for other specific health care	MONDO:excludeMedicalAction|MONDO:excludePopulation	TRUE
+ICD10CM:Y70-Y82	Medical devices associated with adverse incidents in diagnostic and therapeutic use	MONDO:excludeNonDisease	TRUE
+ICD10CM:Z18-Z18	Retained foreign body fragments	MONDO:excludeNonDisease	TRUE
+ICD10CM:R99-R99	Ill-defined and unknown cause of mortality	MONDO:excludeNonDisease	TRUE
+ICD10CM:Z66-Z66	Do not resuscitate status	MONDO:excludeNonDisease	TRUE
+ICD10CM:O00-O08	Pregnancy with abortive outcome	MONDO:excludePhenotype	TRUE
+ICD10CM:K40-K46	Hernia	MONDO:excludePhenotype	TRUE
+ICD10CM:M99-M99	Biomechanical lesions, not elsewhere classified	MONDO:excludePhenotype	TRUE
+ICD10CM:P05-P08	Disorders of newborn related to length of gestation and fetal growth	MONDO:excludePhenotype	TRUE
+ICD10CM:P09-P09	Abnormal findings on neonatal screening	MONDO:excludePhenotype	TRUE
+ICD10CM:P84-P84	Other problems with newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:P90-P96	Other disorders originating in the perinatal period	MONDO:excludePhenotype	FALSE
+ICD10CM:L49	Exfoliation due to erythematous conditions according to extent of body surface involved	MONDO:excludePhenotype	TRUE
+ICD10CM:M26	Dentofacial anomalies [including malocclusion]	MONDO:excludePhenotype	TRUE
+ICD10CM:M40	Kyphosis and lordosis	MONDO:excludePhenotype	TRUE
+ICD10CM:P51	Umbilical hemorrhage of newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:P52	Intracranial nontraumatic hemorrhage of newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:P53	Hemorrhagic disease of newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:P54	Other neonatal hemorrhages	MONDO:excludePhenotype	TRUE
+ICD10CM:P58	Neonatal jaundice due to other excessive hemolysis	MONDO:excludePhenotype	TRUE
+ICD10CM:P59	Neonatal jaundice from other and unspecified causes	MONDO:excludePhenotype	TRUE
+ICD10CM:P60	Disseminated intravascular coagulation of newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:E15	Nondiabetic hypoglycemic coma	MONDO:excludePhenotype	TRUE
+ICD10CM:E16.0	Drug-induced hypoglycemia without coma	MONDO:excludePhenotype	TRUE
+ICD10CM:E16.1	Other hypoglycemia	MONDO:excludePhenotype	TRUE
+ICD10CM:E16.2	Hypoglycemia, unspecified	MONDO:excludePhenotype	TRUE
+ICD10CM:E16.3	Increased secretion of glucagon	MONDO:excludePhenotype	TRUE
+ICD10CM:E16.4	Increased secretion of gastrin	MONDO:excludePhenotype	TRUE
+ICD10CM:R00-R99	Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified	MONDO:excludePhenotype	TRUE
+ICD10CM:R00-R09	Symptoms and signs involving the circulatory and respiratory systems	MONDO:excludePhenotype	TRUE
+ICD10CM:R10-R19	Symptoms and signs involving the digestive system and abdomen	MONDO:excludePhenotype	TRUE
+ICD10CM:R20-R23	Symptoms and signs involving the skin and subcutaneous tissue	MONDO:excludePhenotype	TRUE
+ICD10CM:R25-R29	Symptoms and signs involving the nervous and musculoskeletal systems	MONDO:excludePhenotype	TRUE
+ICD10CM:R30-R39	Symptoms and signs involving the genitourinary system	MONDO:excludePhenotype	TRUE
+ICD10CM:R40-R46	Symptoms and signs involving cognition, perception, emotional state and behavior	MONDO:excludePhenotype	TRUE
+ICD10CM:R47-R49	Symptoms and signs involving speech and voice	MONDO:excludePhenotype	TRUE
+ICD10CM:R50-R69	General symptoms and signs	MONDO:excludePhenotype	TRUE
+ICD10CM:R70-R79	Abnormal findings on examination of blood, without diagnosis	MONDO:excludePhenotype	TRUE
+ICD10CM:R80-R82	Abnormal findings on examination of urine, without diagnosis	MONDO:excludePhenotype	TRUE
+ICD10CM:R83-R89	Abnormal findings on examination of other body fluids, substances and tissues, without diagnosis	MONDO:excludePhenotype	TRUE
+ICD10CM:R90-R94	Abnormal findings on diagnostic imaging and in function studies, without diagnosis	MONDO:excludePhenotype	TRUE
+ICD10CM:R97-R97	Abnormal tumor markers	MONDO:excludePhenotype	TRUE
+ICD10CM:P36	Bacterial sepsis of newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:P90	Convulsions of newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:P91	Other disturbances of cerebral status of newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:P92	Feeding problems of newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:P93	Reactions and intoxications due to drugs administered to newborn	MONDO:excludePhenotype	TRUE
+ICD10CM:P95	Stillbirth	MONDO:excludePhenotype	TRUE
+ICD10CM:T66-T78	Other and unspecified effects of external causes	MONDO:excludePhenotype	TRUE
+ICD10CM:V00-V09	Pedestrian injured in transport accident	MONDO:excludePopulation	TRUE
+ICD10CM:V10-V19	Pedal cycle rider injured in transport accident	MONDO:excludePopulation	TRUE
+ICD10CM:V20-V29	Motorcycle rider injured in transport accident	MONDO:excludePopulation	TRUE
+ICD10CM:V30-V39	Occupant of three-wheeled motor vehicle injured in transport accident	MONDO:excludePopulation	TRUE
+ICD10CM:V40-V49	Car occupant injured in transport accident	MONDO:excludePopulation	TRUE
+ICD10CM:V50-V59	Occupant of pick-up truck or van injured in transport accident	MONDO:excludePopulation	TRUE
+ICD10CM:V60-V69	Occupant of heavy transport vehicle injured in transport accident	MONDO:excludePopulation	TRUE
+ICD10CM:V70-V79	Bus occupant injured in transport accident	MONDO:excludePopulation	TRUE
+ICD10CM:P00-P04	Newborn affected by maternal factors and by complications of pregnancy, labor, and delivery	MONDO:excludePopulation	TRUE
+ICD10CM:Z00-Z13	Persons encountering health services for examinations	MONDO:excludePopulation	TRUE
+ICD10CM:Z30-Z39	Persons encountering health services in circumstances related to reproduction	MONDO:excludePopulation	TRUE
+ICD10CM:Z69-Z76	Persons encountering health services in other circumstances	MONDO:excludePopulation	TRUE
+ICD10CM:P50	Newborn affected by intrauterine (fetal) blood loss	MONDO:excludePopulation	TRUE
+ICD10CM:Z20-Z29	Persons with potential health hazards related to communicable diseases	MONDO:excludePopulation	TRUE
+ICD10CM:Z55-Z65	Persons with potential health hazards related to socioeconomic and psychosocial circumstances	MONDO:excludePopulation	TRUE
+ICD10CM:Z77-Z99	Persons with potential health hazards related to family and personal history and certain conditions influencing health status	MONDO:excludePopulation	TRUE
+ICD10CM:Z14	Genetic carrier	MONDO:excludeRiskFactor	TRUE
+ICD10CM:Z67-Z67	Blood type	MONDO:excludeTrait	TRUE
+ICD10CM:Z68-Z68	Body mass index (BMI)	MONDO:excludeTrait	TRUE
