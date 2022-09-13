@@ -1,0 +1,11 @@
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0000253	White piedra	skos:narrowMatch	ICD10CM:B36.2	piedra	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	White piedra	LEXMATCH
+MONDO:0002258	Acute pharyngitis	skos:narrowMatch	ICD10CM:J02	pharyngitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	acute sore throat	LEXMATCH
+MONDO:0005055	Kaposi's sarcoma of gastrointestinal sites	skos:narrowMatch	ICD10CM:C46.4	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	Kaposi's sarcoma of gastrointestinal sites	LEXMATCH
+MONDO:0005055	Kaposi's sarcoma of skin	skos:narrowMatch	ICD10CM:C46.0	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	Kaposi's sarcoma of skin	COMMON_TO_BOTH
+MONDO:0005055	Kaposi's sarcoma of lymph nodes	skos:narrowMatch	ICD10CM:C46.3	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	Kaposi's sarcoma of lymph nodes	COMMON_TO_BOTH
+MONDO:0005738	Echinococcosis	skos:narrowMatch	ICD10CM:B67	echinococcosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	hydatidosis	LEXMATCH
+MONDO:0006617	Subcorneal pustular dermatitis	skos:narrowMatch	ICD10CM:L13.1	vesiculobullous skin disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	Sneddon-Wilkinson disease	LEXMATCH
+MONDO:0017069	Spina bifida	skos:narrowMatch	ICD10CM:Q05	spina bifida cystica	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	myelomeningocele	LEXMATCH
+MONDO:0018938	Morquio A mucopolysaccharidoses	skos:narrowMatch	ICD10CM:E76.210	mucopolysaccharidosis type 4	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	Morquio syndrome A	LEXMATCH
+MONDO:0021005	Other congenital malformation syndromes predominantly associated with short stature	skos:narrowMatch	ICD10CM:Q87.19	faciodigitogenital syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	Aarskog syndrome	LEXMATCH

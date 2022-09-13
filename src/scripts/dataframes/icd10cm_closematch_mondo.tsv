@@ -1,8 +1,8 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
 ICD10CM:A15.0	Tuberculosis of lung	skos:closeMatch	MONDO:0021953	tuberculous fibrosis of lung	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Tuberculous fibrosis of lung	LEXMATCH
 ICD10CM:A21	Tularemia	skos:closeMatch	MONDO:0018077	tularemia	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	rabbit fever	LEXMATCH
-ICD10CM:A23	Brucellosis	skos:closeMatch	MONDO:0005683	brucellosis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Malta fever	LEXMATCH
 ICD10CM:A23	Brucellosis	skos:closeMatch	MONDO:0005683	brucellosis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Mediterranean fever	LEXMATCH
+ICD10CM:A23	Brucellosis	skos:closeMatch	MONDO:0005683	brucellosis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Malta fever	LEXMATCH
 ICD10CM:A25.1	Streptobacillosis	skos:closeMatch	MONDO:0020533	streptobacillary rat-bite fever	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Streptobacillosis	LEXMATCH
 ICD10CM:A36.0	Pharyngeal diphtheria	skos:closeMatch	MONDO:0020860	faucial diphtheria	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Diphtheritic membranous angina	LEXMATCH
 ICD10CM:A36.1	Nasopharyngeal diphtheria	skos:closeMatch	MONDO:0020866	nasopharyngeal diphtheria	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Nasopharyngeal diphtheria	LEXMATCH
@@ -10,8 +10,8 @@ ICD10CM:A36.2	Laryngeal diphtheria	skos:closeMatch	MONDO:0020863	laryngeal dipht
 ICD10CM:A36.2	Laryngeal diphtheria	skos:closeMatch	MONDO:0020863	laryngeal diphtheria	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Diphtheritic laryngotracheitis	LEXMATCH
 ICD10CM:A69.1	Other Vincent's infections	skos:closeMatch	MONDO:0006865	necrotizing ulcerative gingivitis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Vincent's gingivitis	LEXMATCH
 ICD10CM:A74.0	Chlamydial conjunctivitis	skos:closeMatch	MONDO:0005808	inclusion conjunctivitis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Paratrachoma	LEXMATCH
-ICD10CM:A81.0	Creutzfeldt-Jakob disease	skos:closeMatch	MONDO:0007403	inherited Creutzfeldt-Jakob disease	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Creutzfeldt-Jakob disease	LEXMATCH
 ICD10CM:A81.0	Creutzfeldt-Jakob disease	skos:closeMatch	MONDO:0005357	Creutzfeldt Jacob disease	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Creutzfeldt-Jakob disease	LEXMATCH
+ICD10CM:A81.0	Creutzfeldt-Jakob disease	skos:closeMatch	MONDO:0007403	inherited Creutzfeldt-Jakob disease	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Creutzfeldt-Jakob disease	LEXMATCH
 ICD10CM:A81.09	Other Creutzfeldt-Jakob disease	skos:closeMatch	MONDO:0007403	inherited Creutzfeldt-Jakob disease	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	CJD	LEXMATCH
 ICD10CM:A81.83	Fatal familial insomnia	skos:closeMatch	MONDO:0010808	fatal familial insomnia	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	FFI	LEXMATCH
 ICD10CM:A92.2	Venezuelan equine fever	skos:closeMatch	MONDO:0006005	Venezuelan equine encephalitis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Venezuelan equine fever	LEXMATCH
@@ -26,8 +26,8 @@ ICD10CM:B73	Onchocerciasis	skos:closeMatch	MONDO:0017137	onchocerciasis	semapv:L
 ICD10CM:B74.0	Filariasis due to Wuchereria bancrofti	skos:closeMatch	MONDO:0005761	filarial elephantiasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Bancroftian filariasis	LEXMATCH
 ICD10CM:B75	Trichinellosis	skos:closeMatch	MONDO:0019444	trichinellosis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	trichiniasis	LEXMATCH
 ICD10CM:B79	Trichuriasis	skos:closeMatch	MONDO:0005996	trichuriasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	trichocephaliasis	LEXMATCH
-ICD10CM:B80	Enterobiasis	skos:closeMatch	MONDO:0005746	enterobiasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	oxyuriasis	LEXMATCH
 ICD10CM:B80	Enterobiasis	skos:closeMatch	MONDO:0005746	enterobiasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	pinworm infection	LEXMATCH
+ICD10CM:B80	Enterobiasis	skos:closeMatch	MONDO:0005746	enterobiasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	oxyuriasis	LEXMATCH
 ICD10CM:C4A	Merkel cell carcinoma	skos:closeMatch	MONDO:0002822	trabecular adenocarcinoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Merkel cell carcinoma	LEXMATCH
 ICD10CM:D56.3	Thalassemia minor	skos:closeMatch	MONDO:0019402	beta thalassemia	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Beta thalassemia minor	LEXMATCH
 ICD10CM:D61.01	Constitutional (pure) red blood cell aplasia	skos:closeMatch	MONDO:0007110	Diamond-Blackfan anemia 1	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Blackfan-Diamond syndrome	LEXMATCH
@@ -39,14 +39,14 @@ ICD10CM:E66.2	Morbid (severe) obesity with alveolar hypoventilation	skos:closeMa
 ICD10CM:E70.310	X-linked ocular albinism	skos:closeMatch	MONDO:0021019	X-linked recessive ocular albinism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	X-linked ocular albinism	LEXMATCH
 ICD10CM:E71.440	Ruvalcaba-Myhre-Smith syndrome	skos:closeMatch	MONDO:0007924	Bannayan-Riley-Ruvalcaba syndrome	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Ruvalcaba-Myhre-Smith syndrome	LEXMATCH
 ICD10CM:E72.59	Other disorders of glycine metabolism	skos:closeMatch	MONDO:0009070	D-glyceric aciduria	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	D-glycericacidemia	LEXMATCH
-ICD10CM:E72.81	Disorders of gamma aminobutyric acid metabolism	skos:closeMatch	MONDO:0010083	succinic semialdehyde dehydrogenase deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	SSADHD	LEXMATCH
 ICD10CM:E72.81	Disorders of gamma aminobutyric acid metabolism	skos:closeMatch	MONDO:0010083	succinic semialdehyde dehydrogenase deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	GABA metabolic defect	LEXMATCH
+ICD10CM:E72.81	Disorders of gamma aminobutyric acid metabolism	skos:closeMatch	MONDO:0010083	succinic semialdehyde dehydrogenase deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	SSADHD	LEXMATCH
 ICD10CM:E76.03	Scheie's syndrome	skos:closeMatch	MONDO:0011759	Hurler-Scheie syndrome	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Scheie's syndrome	LEXMATCH
 ICD10CM:E88.02	Plasminogen deficiency	skos:closeMatch	MONDO:0009009	hypoplasminogenemia	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Dysplasminogenemia	LEXMATCH
 ICD10CM:F01	Vascular dementia	skos:closeMatch	MONDO:0043224	multi-infarct dementia	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	arteriosclerotic dementia	LEXMATCH
+ICD10CM:F31	Bipolar disorder	skos:closeMatch	MONDO:0010648	major affective disorder 2	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	manic-depressive illness	LEXMATCH
 ICD10CM:F31	Bipolar disorder	skos:closeMatch	MONDO:0004985	bipolar disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	manic-depressive illness	LEXMATCH
 ICD10CM:F31	Bipolar disorder	skos:closeMatch	MONDO:0007440	major affective disorder 1	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	manic-depressive psychosis	LEXMATCH
-ICD10CM:F31	Bipolar disorder	skos:closeMatch	MONDO:0010648	major affective disorder 2	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	manic-depressive illness	LEXMATCH
 ICD10CM:F31	Bipolar disorder	skos:closeMatch	MONDO:0004985	bipolar disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	manic-depressive psychosis	LEXMATCH
 ICD10CM:F65	Paraphilias	skos:closeMatch	MONDO:0000596	paraphilic disorder	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Paraphilias	LEXMATCH
 ICD10CM:G04.31	Postinfectious acute necrotizing hemorrhagic encephalopathy	skos:closeMatch	MONDO:0011953	familial acute necrotizing encephalopathy	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Postinfectious acute necrotizing hemorrhagic encephalopathy	LEXMATCH
@@ -67,8 +67,8 @@ ICD10CM:I67.850	Cerebral autosomal dominant arteriopathy with subcortical infarc
 ICD10CM:I74.09	Other arterial embolism and thrombosis of abdominal aorta	skos:closeMatch	MONDO:0043683	Leriche syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Leriche's syndrome	LEXMATCH
 ICD10CM:I82.0	Budd-Chiari syndrome	skos:closeMatch	MONDO:0006786	hepatic vein thrombosis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Budd-Chiari syndrome	LEXMATCH
 ICD10CM:J02	Acute pharyngitis	skos:closeMatch	MONDO:0015306	Lemierre syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	acute sore throat	LEXMATCH
-ICD10CM:J02.0	Streptococcal pharyngitis	skos:closeMatch	MONDO:0021783	streptococcal sore throat	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Streptococcal sore throat	LEXMATCH
 ICD10CM:J02.0	Streptococcal pharyngitis	skos:closeMatch	MONDO:0021783	streptococcal sore throat	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Streptococcal pharyngitis	LEXMATCH
+ICD10CM:J02.0	Streptococcal pharyngitis	skos:closeMatch	MONDO:0021783	streptococcal sore throat	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Streptococcal sore throat	LEXMATCH
 ICD10CM:J45	Asthma	skos:closeMatch	MONDO:0004784	allergic asthma	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	atopic asthma	LEXMATCH
 ICD10CM:J60	Coalworker's pneumoconiosis	skos:closeMatch	MONDO:0015926	pneumoconiosis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Black lung disease	LEXMATCH
 ICD10CM:K05.1	Chronic gingivitis	skos:closeMatch	MONDO:0020782	chronic gingivitis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Chronic gingivitis	LEXMATCH
@@ -84,8 +84,8 @@ ICD10CM:L72.11	Pilar cyst	skos:closeMatch	MONDO:0012328	trichilemmal cyst	semapv
 ICD10CM:L74.52	Secondary focal hyperhidrosis	skos:closeMatch	MONDO:0007753	Frey syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Frey's syndrome	LEXMATCH
 ICD10CM:M61.0	Myositis ossificans traumatica	skos:closeMatch	MONDO:0021929	traumatic myositis ossificans	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Myositis ossificans traumatica	LEXMATCH
 ICD10CM:N13.6	Pyonephrosis	skos:closeMatch	MONDO:0021750	pyonephrosis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Pyonephrosis	LEXMATCH
-ICD10CM:N40	Benign prostatic hyperplasia	skos:closeMatch	MONDO:0010811	benign prostatic hyperplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	BPH	LEXMATCH
 ICD10CM:N40	Benign prostatic hyperplasia	skos:closeMatch	MONDO:0021259	prostate neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	nodular prostate	LEXMATCH
+ICD10CM:N40	Benign prostatic hyperplasia	skos:closeMatch	MONDO:0010811	benign prostatic hyperplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	BPH	LEXMATCH
 ICD10CM:N41.1	Chronic prostatitis	skos:closeMatch	MONDO:0022103	chronic prostatitis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Chronic prostatitis	LEXMATCH
 ICD10CM:N41.4	Granulomatous prostatitis	skos:closeMatch	MONDO:0020977	granulomatous prostatitis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Granulomatous prostatitis	LEXMATCH
 ICD10CM:N48.6	Induration penis plastica	skos:closeMatch	MONDO:0006361	penile fibromatosis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Peyronie's disease	LEXMATCH
@@ -94,15 +94,15 @@ ICD10CM:Q05	Spina bifida	skos:closeMatch	MONDO:0019773	myelomeningocele	semapv:L
 ICD10CM:Q61.9	Cystic kidney disease, unspecified	skos:closeMatch	MONDO:0009571	Meckel syndrome, type 1	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Meckel-Gruber syndrome	LEXMATCH
 ICD10CM:Q74.0	Other congenital malformations of upper limb(s), including shoulder girdle	skos:closeMatch	MONDO:0008482	Sprengel deformity	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Sprengel's deformity	LEXMATCH
 ICD10CM:Q75.1	Craniofacial dysostosis	skos:closeMatch	MONDO:0007405	Crouzon syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Crouzon's disease	LEXMATCH
-ICD10CM:Q75.4	Mandibulofacial dysostosis	skos:closeMatch	MONDO:0002457	Treacher-Collins syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Treacher Collins syndrome	LEXMATCH
 ICD10CM:Q75.4	Mandibulofacial dysostosis	skos:closeMatch	MONDO:0007944	Treacher Collins syndrome 1	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Treacher Collins syndrome	LEXMATCH
+ICD10CM:Q75.4	Mandibulofacial dysostosis	skos:closeMatch	MONDO:0002457	Treacher-Collins syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Treacher Collins syndrome	LEXMATCH
 ICD10CM:Q78.0	Osteogenesis imperfecta	skos:closeMatch	MONDO:0019019	osteogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Fragilitas ossium	LEXMATCH
 ICD10CM:Q80.4	Harlequin fetus	skos:closeMatch	MONDO:0009443	autosomal recessive congenital ichthyosis 4B	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	Harlequin fetus	LEXMATCH
 ICD10CM:Q85.01	Neurofibromatosis, type 1	skos:closeMatch	MONDO:0018975	neurofibromatosis type 1	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Von Recklinghausen disease	LEXMATCH
 ICD10CM:Q87.0	Congenital malformation syndromes predominantly affecting facial appearance	skos:closeMatch	MONDO:0008006	Mobius syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Moebius syndrome	LEXMATCH
-ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	skos:closeMatch	MONDO:0007387	Cornelia de Lange syndrome 1	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	De Lange syndrome	LEXMATCH
-ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	skos:closeMatch	MONDO:0007030	autosomal dominant Aarskog syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Aarskog syndrome	LEXMATCH
 ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	skos:closeMatch	MONDO:0008104	Noonan syndrome 1	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Noonan syndrome	LEXMATCH
+ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	skos:closeMatch	MONDO:0007030	autosomal dominant Aarskog syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Aarskog syndrome	LEXMATCH
+ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	skos:closeMatch	MONDO:0007387	Cornelia de Lange syndrome 1	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	De Lange syndrome	LEXMATCH
 ICD10CM:Q87.2	Congenital malformation syndromes predominantly involving limbs	skos:closeMatch	MONDO:0008642	VACTERL/vater association	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	VATER syndrome	LEXMATCH
 ICD10CM:Q87.3	Congenital malformation syndromes involving early overgrowth	skos:closeMatch	MONDO:0007299	Sotos syndrome 1	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Sotos syndrome	LEXMATCH
 ICD10CM:T70.29	Other effects of high altitude	skos:closeMatch	MONDO:0021811	acute mountain sickness	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	Mountain sickness	LEXMATCH
