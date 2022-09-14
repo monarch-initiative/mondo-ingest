@@ -1,11 +1,74 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
-ICD10CM:B36.2	White piedra	skos:narrowMatch	MONDO:0000253	piedra	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	White piedra	LEXMATCH
+ICD10CM:A65	Nonvenereal syphilis	skos:narrowMatch	MONDO:0007000	Treponema infectious disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	bejel	LEXMATCH
+ICD10CM:B19.0	Unspecified viral hepatitis with hepatic coma	skos:narrowMatch	MONDO:0006011	viral hepatitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	unspecified viral hepatitis with hepatic coma	LEXMATCH
+ICD10CM:B36.2	White piedra	skos:narrowMatch	MONDO:0000253	piedra	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	white piedra	LEXMATCH
+ICD10CM:B36.3	Black piedra	skos:narrowMatch	MONDO:0000253	piedra	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	black piedra	LEXMATCH
+ICD10CM:B37.7	Candidal sepsis	skos:narrowMatch	MONDO:0002026	candidiasis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	systemic candidiasis	LEXMATCH
+ICD10CM:B37.7	Candidal sepsis	skos:narrowMatch	MONDO:0002026	candidiasis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	disseminated candidiasis	LEXMATCH
 ICD10CM:B67	Echinococcosis	skos:narrowMatch	MONDO:0005738	echinococcosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	hydatidosis	LEXMATCH
-ICD10CM:C46.0	Kaposi's sarcoma of skin	skos:narrowMatch	MONDO:0005055	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	Kaposi's sarcoma of skin	LEXMATCH
-ICD10CM:C46.3	Kaposi's sarcoma of lymph nodes	skos:narrowMatch	MONDO:0005055	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	Kaposi's sarcoma of lymph nodes	LEXMATCH
-ICD10CM:C46.4	Kaposi's sarcoma of gastrointestinal sites	skos:narrowMatch	MONDO:0005055	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	Kaposi's sarcoma of gastrointestinal sites	LEXMATCH
-ICD10CM:E76.210	Morquio A mucopolysaccharidoses	skos:narrowMatch	MONDO:0018938	mucopolysaccharidosis type 4	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	Morquio syndrome A	LEXMATCH
+ICD10CM:B67.8	Echinococcosis, unspecified, of liver	skos:narrowMatch	MONDO:0005738	echinococcosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	echinococcosis, unspecified, of liver	LEXMATCH
+ICD10CM:C01	Malignant neoplasm of base of tongue	skos:narrowMatch	MONDO:0004631	tongue cancer	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	malignant neoplasm of fixed part of tongue nos	LEXMATCH
+ICD10CM:C01	Malignant neoplasm of base of tongue	skos:narrowMatch	MONDO:0004631	tongue cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of base of tongue	LEXMATCH
+ICD10CM:C02.0	Malignant neoplasm of dorsal surface of tongue	skos:narrowMatch	MONDO:0004631	tongue cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of dorsal surface of tongue	LEXMATCH
+ICD10CM:C02.1	Malignant neoplasm of border of tongue	skos:narrowMatch	MONDO:0004631	tongue cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of border of tongue	LEXMATCH
+ICD10CM:C02.2	Malignant neoplasm of ventral surface of tongue	skos:narrowMatch	MONDO:0004631	tongue cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of ventral surface of tongue	LEXMATCH
+ICD10CM:C02.3	Malignant neoplasm of anterior two-thirds of tongue, part unspecified	skos:narrowMatch	MONDO:0004631	tongue cancer	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	malignant neoplasm of mobile part of tongue nos	LEXMATCH
+ICD10CM:C02.3	Malignant neoplasm of anterior two-thirds of tongue, part unspecified	skos:narrowMatch	MONDO:0004631	tongue cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of anterior two-thirds of tongue, part unspecified	LEXMATCH
+ICD10CM:C04	Malignant neoplasm of floor of mouth	skos:narrowMatch	MONDO:0005515	oral cavity cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of floor of mouth	LEXMATCH
+ICD10CM:C04.1	Malignant neoplasm of lateral floor of mouth	skos:narrowMatch	MONDO:0005515	oral cavity cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of lateral floor of mouth	LEXMATCH
+ICD10CM:C10.1	Malignant neoplasm of anterior surface of epiglottis	skos:narrowMatch	MONDO:0004473	epiglottis cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of anterior surface of epiglottis	LEXMATCH
+ICD10CM:C16.1	Malignant neoplasm of fundus of stomach	skos:narrowMatch	MONDO:0004950	gastric carcinoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of fundus of stomach	LEXMATCH
+ICD10CM:C16.2	Malignant neoplasm of body of stomach	skos:narrowMatch	MONDO:0001056	gastric cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of body of stomach	LEXMATCH
+ICD10CM:C34	Malignant neoplasm of bronchus and lung	skos:narrowMatch	MONDO:0001672	bronchus cancer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of bronchus and lung	LEXMATCH
+ICD10CM:C46.0	Kaposi's sarcoma of skin	skos:narrowMatch	MONDO:0005055	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	kaposi's sarcoma of skin	LEXMATCH
+ICD10CM:C46.3	Kaposi's sarcoma of lymph nodes	skos:narrowMatch	MONDO:0005055	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	kaposi's sarcoma of lymph nodes	LEXMATCH
+ICD10CM:C46.4	Kaposi's sarcoma of gastrointestinal sites	skos:narrowMatch	MONDO:0005055	Kaposi's sarcoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	kaposi's sarcoma of gastrointestinal sites	LEXMATCH
+ICD10CM:C71.1	Malignant neoplasm of frontal lobe	skos:narrowMatch	MONDO:0001421	frontal lobe neoplasm	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	malignant neoplasm of frontal lobe	LEXMATCH
+ICD10CM:C90.3	Solitary plasmacytoma	skos:narrowMatch	MONDO:0005615	plasmacytoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	solitary plasmacytoma	LEXMATCH
+ICD10CM:D13.7	Benign neoplasm of endocrine pancreas	skos:narrowMatch	MONDO:0005815	pancreatic neuroendocrine neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	islet cell tumor	LEXMATCH
+ICD10CM:E72.11	Homocystinuria	skos:narrowMatch	MONDO:0004737	homocystinuria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	cystathionine synthase deficiency	LEXMATCH
+ICD10CM:E76.210	Morquio A mucopolysaccharidoses	skos:narrowMatch	MONDO:0018938	mucopolysaccharidosis type 4	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	morquio syndrome a	LEXMATCH
+ICD10CM:F31.9	Bipolar disorder, unspecified	skos:narrowMatch	MONDO:0004985	bipolar disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	manic depression	LEXMATCH
+ICD10CM:F34.1	Dysthymic disorder	skos:narrowMatch	MONDO:0005379	neurotic disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	neurotic depression	LEXMATCH
+ICD10CM:F34.1	Dysthymic disorder	skos:narrowMatch	MONDO:0005379	neurotic disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	depressive neurosis	LEXMATCH
+ICD10CM:G35	Multiple sclerosis	skos:narrowMatch	MONDO:0005301	multiple sclerosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	generalized multiple sclerosis	LEXMATCH
+ICD10CM:G47.31	Primary central sleep apnea	skos:narrowMatch	MONDO:0004731	central sleep apnea syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	primary central sleep apnea	LEXMATCH
+ICD10CM:G60.0	Hereditary motor and sensory neuropathy	skos:narrowMatch	MONDO:0002316	motor peripheral neuropathy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	hereditary motor and sensory neuropathy	LEXMATCH
+ICD10CM:H20	Iridocyclitis	skos:narrowMatch	MONDO:0006651	anterior uveitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	iridocyclitis	LEXMATCH
+ICD10CM:H20.01	Primary iridocyclitis	skos:narrowMatch	MONDO:0004773	iridocyclitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	primary iridocyclitis	LEXMATCH
+ICD10CM:H30.2	Posterior cyclitis	skos:narrowMatch	MONDO:0006806	intermediate uveitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	pars planitis	LEXMATCH
+ICD10CM:H35.52	Pigmentary retinal dystrophy	skos:narrowMatch	MONDO:0100444	RLBP1-related retinopathy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	pigmentary retinal dystrophy	LEXMATCH
+ICD10CM:H35.52	Pigmentary retinal dystrophy	skos:narrowMatch	MONDO:0100443	RDH5-related retinopathy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	pigmentary retinal dystrophy	LEXMATCH
+ICD10CM:H46.2	Nutritional optic neuropathy	skos:narrowMatch	MONDO:0041403	toxic amblyopia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	nutritional optic neuropathy	LEXMATCH
+ICD10CM:H53.33	Simultaneous visual perception without fusion	skos:narrowMatch	MONDO:0001564	binocular vision disease	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	simultaneous visual perception without fusion	LEXMATCH
+ICD10CM:I05.1	Rheumatic mitral insufficiency	skos:narrowMatch	MONDO:0003767	mitral valve disorder	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	rheumatic mitral insufficiency	LEXMATCH
+ICD10CM:I06.0	Rheumatic aortic stenosis	skos:narrowMatch	MONDO:0004978	aortic stenosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	rheumatic aortic stenosis	LEXMATCH
+ICD10CM:I15.0	Renovascular hypertension	skos:narrowMatch	MONDO:0001105	renal hypertension	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	renovascular hypertension	LEXMATCH
+ICD10CM:I63	Cerebral infarction	skos:narrowMatch	MONDO:0011057	cerebrovascular disorder	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	cerebral infarction	LEXMATCH
 ICD10CM:J02	Acute pharyngitis	skos:narrowMatch	MONDO:0002258	pharyngitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	acute sore throat	LEXMATCH
-ICD10CM:L13.1	Subcorneal pustular dermatitis	skos:narrowMatch	MONDO:0006617	vesiculobullous skin disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	Sneddon-Wilkinson disease	LEXMATCH
+ICD10CM:J02	Acute pharyngitis	skos:narrowMatch	MONDO:0002258	pharyngitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	acute pharyngitis	LEXMATCH
+ICD10CM:J20	Acute bronchitis	skos:narrowMatch	MONDO:0003781	bronchitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	acute bronchitis	LEXMATCH
+ICD10CM:J30.89	Other allergic rhinitis	skos:narrowMatch	MONDO:0011786	allergic rhinitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	perennial allergic rhinitis	LEXMATCH
+ICD10CM:J31.2	Chronic pharyngitis	skos:narrowMatch	MONDO:0002258	pharyngitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	chronic sore throat	LEXMATCH
+ICD10CM:J31.2	Chronic pharyngitis	skos:narrowMatch	MONDO:0002258	pharyngitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	chronic pharyngitis	LEXMATCH
+ICD10CM:J35.02	Chronic adenoiditis	skos:narrowMatch	MONDO:0000261	adenoiditis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	chronic adenoiditis	LEXMATCH
+ICD10CM:J65	Pneumoconiosis associated with tuberculosis	skos:narrowMatch	MONDO:0005960	silicosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	silicotuberculosis	LEXMATCH
+ICD10CM:J67.4	Maltworker's lung	skos:narrowMatch	MONDO:0002266	malt worker's lung	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	alveolitis due to aspergillus clavatus	LEXMATCH
+ICD10CM:J96.0	Acute respiratory failure	skos:narrowMatch	MONDO:0021113	respiratory failure	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	acute respiratory failure	LEXMATCH
+ICD10CM:J96.1	Chronic respiratory failure	skos:narrowMatch	MONDO:0021113	respiratory failure	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	chronic respiratory failure	LEXMATCH
+ICD10CM:K05.0	Acute gingivitis	skos:narrowMatch	MONDO:0002508	gingivitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	acute gingivitis	LEXMATCH
+ICD10CM:K05.1	Chronic gingivitis	skos:narrowMatch	MONDO:0002508	gingivitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	chronic gingivitis	LEXMATCH
+ICD10CM:K25.1	Acute gastric ulcer with perforation	skos:narrowMatch	MONDO:0001126	gastric ulcer	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	acute gastric ulcer with perforation	LEXMATCH
+ICD10CM:K35	Acute appendicitis	skos:narrowMatch	MONDO:0005649	appendicitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	acute appendicitis	LEXMATCH
+ICD10CM:K35.2	Acute appendicitis with generalized peritonitis	skos:narrowMatch	MONDO:0005649	appendicitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	acute appendicitis with generalized peritonitis	LEXMATCH
+ICD10CM:K81.0	Acute cholecystitis	skos:narrowMatch	MONDO:0002155	cholecystitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	acute cholecystitis	LEXMATCH
+ICD10CM:K81.1	Chronic cholecystitis	skos:narrowMatch	MONDO:0002155	cholecystitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	chronic cholecystitis	LEXMATCH
+ICD10CM:L13.1	Subcorneal pustular dermatitis	skos:narrowMatch	MONDO:0006617	vesiculobullous skin disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	sneddon-wilkinson disease	LEXMATCH
+ICD10CM:L63	Alopecia areata	skos:narrowMatch	MONDO:0004907	alopecia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	alopecia areata	LEXMATCH
+ICD10CM:M33.1	Other dermatomyositis	skos:narrowMatch	MONDO:0016367	dermatomyositis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	adult dermatomyositis	LEXMATCH
+ICD10CM:N84.0	Polyp of corpus uteri	skos:narrowMatch	MONDO:0004701	uterine polyp	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	polyp of endometrium	LEXMATCH
 ICD10CM:Q05	Spina bifida	skos:narrowMatch	MONDO:0017069	spina bifida cystica	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	myelomeningocele	LEXMATCH
-ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	skos:narrowMatch	MONDO:0021005	faciodigitogenital syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	Aarskog syndrome	LEXMATCH
+ICD10CM:Q11.2	Microphthalmos	skos:narrowMatch	MONDO:0021129	microphthalmia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	microphthalmos	LEXMATCH
+ICD10CM:Q38.3	Other congenital malformations of tongue	skos:narrowMatch	MONDO:0007655	fissured tongue	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	congenital fissure of tongue	LEXMATCH
+ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	skos:narrowMatch	MONDO:0021005	faciodigitogenital syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasNarrowSynonym	aarskog syndrome	LEXMATCH
+ICD10CM:T78.3	Angioneurotic edema	skos:narrowMatch	MONDO:0010481	angioedema	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasNarrowSynonym	angioneurotic edema	LEXMATCH

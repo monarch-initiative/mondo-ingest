@@ -1,1020 +1,195 @@
 object_id	subject_label	predicate_id	subject_id	mapping_justification	object_label	comment	mapping_tool	confidence	subject_match_field	object_match_field	match_string	levenshtein_dist	jaccard_index	monge_elkan
-ICD10CM:J31.0	chronic rhinitis	skos:exactMatch	MONDO:0004514	Unspecified	Chronic rhinitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B83.4	internal hirudiniasis	skos:exactMatch	MONDO:0024302	Unspecified	Internal hirudiniasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M12.3	palindromic rheumatism	skos:exactMatch	MONDO:0001332	Unspecified	Palindromic rheumatism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F52.31	female orgasmic disorder	skos:exactMatch	MONDO:0004258	Unspecified	Female orgasmic disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B85.3	Pthirus pubis infestation	skos:exactMatch	MONDO:0001794	Unspecified	Phthiriasis	MONDO_MAPPINGS						18	0.6153846153846154	1.976
-ICD10CM:P00-P96	perinatal disease	skos:exactMatch	MONDO:0100086	Unspecified	Certain conditions originating in the perinatal period (P00-P96)	MONDO_MAPPINGS						53	0.7538461538461538	1.9411764705882353
-ICD10CM:N30.3	trigonitis	skos:exactMatch	MONDO:0001732	Unspecified	Trigonitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J37.0	chronic laryngitis	skos:exactMatch	MONDO:0001369	Unspecified	Chronic laryngitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N84.0	uterine polyp	skos:exactMatch	MONDO:0004701	Unspecified	Polyp of corpus uteri	MONDO_MAPPINGS						19	0.5217391304347826	1.9289940828402368
-ICD10CM:A42.2	cervicofacial actinomycosis	skos:exactMatch	MONDO:0005699	Unspecified	Cervicofacial actinomycosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A24.0	glanders	skos:exactMatch	MONDO:0005774	Unspecified	Glanders	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q31.3	laryngocele	skos:exactMatch	MONDO:0016530	Unspecified	Laryngocele	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A36.3	cutaneous diphtheria	skos:exactMatch	MONDO:0001479	Unspecified	Cutaneous diphtheria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H53.31	abnormal retinal correspondence	skos:exactMatch	MONDO:0001565	Unspecified	Abnormal retinal correspondence	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H54	blindness (disorder)	skos:exactMatch	MONDO:0001941	Unspecified	Blindness and low vision	MONDO_MAPPINGS						12	0.5333333333333333	1.96
-ICD10CM:M31.2	nasal cavity and paranasal sinus lethal midline granuloma	skos:exactMatch	MONDO:0006828	Unspecified	Lethal midline granuloma	MONDO_MAPPINGS						33	0.5789473684210527	1.984918436441982
-ICD10CM:D00.1	esophagus carcinoma in situ	skos:exactMatch	MONDO:0004708	Unspecified	Carcinoma in situ of esophagus	MONDO_MAPPINGS						23	0.09999999999999998	1.962962962962963
-ICD10CM:A18.31	tuberculous peritonitis	skos:exactMatch	MONDO:0006000	Unspecified	Tuberculous peritonitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H34	retinal vascular occlusion	skos:exactMatch	MONDO:0002089	Unspecified	Retinal vascular occlusions	MONDO_MAPPINGS						1	0.03703703703703709	1.9615384615384615
-ICD10CM:L80	vitiligo	skos:exactMatch	MONDO:0008661	Unspecified	Vitiligo	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K13.5	oral submucous fibrosis	skos:exactMatch	MONDO:0018166	Unspecified	Oral submucous fibrosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A52.3	neurosyphilis	skos:exactMatch	MONDO:0004944	Unspecified	Neurosyphilis, unspecified	MONDO_MAPPINGS						13	0.5	1.9230769230769231
-ICD10CM:E34.51	complete androgen insensitivity syndrome	skos:exactMatch	MONDO:0021023	Unspecified	Complete androgen insensitivity syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B35.1	tinea unguium	skos:exactMatch	MONDO:0001628	Unspecified	Tinea unguium	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J43	pulmonary emphysema	skos:exactMatch	MONDO:0004849	Unspecified	Emphysema	MONDO_MAPPINGS						10	0.5263157894736843	1.96398891966759
-ICD10CM:Q89.3	situs inversus	skos:exactMatch	MONDO:0010029	Unspecified	Situs inversus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N42.83	prostatic cyst	skos:exactMatch	MONDO:0001202	Unspecified	Cyst of prostate	MONDO_MAPPINGS						13	0.33333333333333337	1.933673469387755
-ICD10CM:G71.12	Thomsen and Becker disease	skos:exactMatch	MONDO:0009710	Unspecified	Myotonia congenita	MONDO_MAPPINGS						19	0.6666666666666667	1.9748520710059172
-ICD10CM:F44.81	multiple personality disorder	skos:exactMatch	MONDO:0001159	Unspecified	Dissociative identity disorder	MONDO_MAPPINGS						17	0.4473684210526315	1.9738406658739596
-ICD10CM:M94.2	chondromalacia	skos:exactMatch	MONDO:0002342	Unspecified	Chondromalacia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M31.7	microscopic polyangiitis	skos:exactMatch	MONDO:0019124	Unspecified	Microscopic polyangiitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B36.1	tinea nigra	skos:exactMatch	MONDO:0004677	Unspecified	Tinea nigra	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B85.2	lice infestation	skos:exactMatch	MONDO:0003472	Unspecified	Pediculosis, unspecified	MONDO_MAPPINGS						19	0.5714285714285714	1.94921875
-ICD10CM:A22.0	cutaneous anthrax	skos:exactMatch	MONDO:0004215	Unspecified	Cutaneous anthrax	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C15-C26	digestive system cancer	skos:exactMatch	MONDO:0002516	Unspecified	Malignant neoplasms of digestive organs (C15-C26)	MONDO_MAPPINGS						36	0.5882352941176471	1.9584120982986768
-ICD10CM:L93.0	discoid lupus erythematosus	skos:exactMatch	MONDO:0019558	Unspecified	Discoid lupus erythematosus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K29.4	chronic atrophic gastritis	skos:exactMatch	MONDO:0006665	Unspecified	Chronic atrophic gastritis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D72.810	lymphopenia	skos:exactMatch	MONDO:0003783	Unspecified	Lymphocytopenia	MONDO_MAPPINGS						4	0.2666666666666667	1.9090909090909092
-ICD10CM:D25.1	uterus interstitial leiomyoma	skos:exactMatch	MONDO:0001843	Unspecified	Intramural leiomyoma of uterus	MONDO_MAPPINGS						23	0.36111111111111116	1.9655172413793103
-ICD10CM:H10.44	vernal conjunctivitis	skos:exactMatch	MONDO:0002313	Unspecified	Vernal conjunctivitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G62.81	critical illness polyneuropathy	skos:exactMatch	MONDO:0001957	Unspecified	Critical illness polyneuropathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J66.0	byssinosis	skos:exactMatch	MONDO:0006688	Unspecified	Byssinosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K14.2	median rhomboid glossitis	skos:exactMatch	MONDO:0001880	Unspecified	Median rhomboid glossitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A52.11	tabes dorsalis	skos:exactMatch	MONDO:0005977	Unspecified	Tabes dorsalis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L41	parapsoriasis	skos:exactMatch	MONDO:0006592	Unspecified	Parapsoriasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K59.0	constipation disorder	skos:exactMatch	MONDO:0002203	Unspecified	Constipation	MONDO_MAPPINGS						9	0.4285714285714286	1.965986394557823
-ICD10CM:J81	pulmonary edema	skos:exactMatch	MONDO:0006932	Unspecified	Pulmonary edema	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Z15	inherited disease susceptibility	skos:exactMatch	MONDO:0020573	Unspecified	Genetic susceptibility to disease	MONDO_MAPPINGS						25	0.2432432432432432	1.970703125
-ICD10CM:Q71.13	obsolete congenital absence of upper arm and forearm with hand present, bilateral	skos:exactMatch	MONDO:0017495	Unspecified	Congenital absence of upper arm and forearm with hand present, bilateral	MONDO_MAPPINGS						9	0.11111111111111116	1.9876543209876543
-ICD10CM:J01.1	acute frontal sinusitis	skos:exactMatch	MONDO:0001912	Unspecified	Acute frontal sinusitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A92.1	O'nyong'nyong fever	skos:exactMatch	MONDO:0000342	Unspecified	O'nyong-nyong fever	MONDO_MAPPINGS						1	0.09999999999999998	1.9473684210526316
-ICD10CM:C86.3	subcutaneous panniculitis-like T-cell lymphoma	skos:exactMatch	MONDO:0019475	Unspecified	Subcutaneous panniculitis-like T-cell lymphoma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N21	urolithiasis	skos:exactMatch	MONDO:0024647	Unspecified	Calculus of lower urinary tract	MONDO_MAPPINGS						26	0.7714285714285715	1.9236111111111112
-ICD10CM:B58	toxoplasmosis	skos:exactMatch	MONDO:0005989	Unspecified	Toxoplasmosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B08.1	molluscum contagiosum	skos:exactMatch	MONDO:0005855	Unspecified	Molluscum contagiosum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M54.1	radiculopathy	skos:exactMatch	MONDO:0002959	Unspecified	Radiculopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H44.0	purulent endophthalmitis	skos:exactMatch	MONDO:0004863	Unspecified	Purulent endophthalmitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C86.1	hepatosplenic T-cell lymphoma	skos:exactMatch	MONDO:0019474	Unspecified	Hepatosplenic T-cell lymphoma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C05.1	soft palate cancer	skos:exactMatch	MONDO:0004611	Unspecified	Malignant neoplasm of soft palate	MONDO_MAPPINGS						27	0.5833333333333333	1.9537037037037037
-ICD10CM:D80.7	transient hypogammaglobulinemia of infancy	skos:exactMatch	MONDO:0015698	Unspecified	Transient hypogammaglobulinemia of infancy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H55.03	spontaneous ocular nystagmus	skos:exactMatch	MONDO:0001361	Unspecified	Visual deprivation nystagmus	MONDO_MAPPINGS						18	0.3529411764705882	1.965561224489796
-ICD10CM:L50	urticaria	skos:exactMatch	MONDO:0005492	Unspecified	Urticaria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:R48.1	agnosia	skos:exactMatch	MONDO:0005638	Unspecified	Agnosia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F42	obsessive-compulsive disorder	skos:exactMatch	MONDO:0008114	Unspecified	Obsessive-compulsive disorder	MONDO_MAPPINGS						0	0.0	0.0
+ICD10CM:B00	herpes simplex infectious disease	skos:exactMatch	MONDO:0004609	Unspecified	Herpesviral [herpes simplex] infections	MONDO_MAPPINGS						23	0.2857142857142857	1.9715335169880623
+ICD10CM:T20-T25	burn	skos:exactMatch	MONDO:0043519	Unspecified	Burns and corrosions of external body surface, specified by site (T20-T25)	MONDO_MAPPINGS						70	0.9459459459459459	1.75
+ICD10CM:M19	osteoarthritis	skos:exactMatch	MONDO:0005178	Unspecified	Other and unspecified osteoarthritis	MONDO_MAPPINGS						22	0.6111111111111112	1.9285714285714286
+ICD10CM:F10-F19	substance-related disorder	skos:exactMatch	MONDO:0002494	Unspecified	Mental and behavioral disorders due to psychoactive substance use (F10-F19)	MONDO_MAPPINGS						63	0.6533333333333333	1.9615384615384615
 ICD10CM:B06	rubella	skos:exactMatch	MONDO:0004656	Unspecified	Rubella [German measles]	MONDO_MAPPINGS						17	0.7083333333333333	1.8571428571428572
-ICD10CM:G93.5	brain compression	skos:exactMatch	MONDO:0001291	Unspecified	Compression of brain	MONDO_MAPPINGS						15	0.15000000000000002	1.9411764705882353
-ICD10CM:H02.21	cicatricial lagophthalmos	skos:exactMatch	MONDO:0001623	Unspecified	Cicatricial lagophthalmos	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D51.2	transcobalamin II deficiency	skos:exactMatch	MONDO:0010149	Unspecified	Transcobalamin II deficiency	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K52.832	lymphocytic colitis	skos:exactMatch	MONDO:0000704	Unspecified	Lymphocytic colitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q35-Q37	cleft lip/palate	skos:exactMatch	MONDO:0016044	Unspecified	Cleft lip and cleft palate (Q35-Q37)	MONDO_MAPPINGS						21	0.5945945945945945	1.94140625
-ICD10CM:F80.1	expressive language disorder	skos:exactMatch	MONDO:0001276	Unspecified	Expressive language disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N83.1	corpus luteum cyst	skos:exactMatch	MONDO:0001625	Unspecified	Corpus luteum cyst	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B35	dermatophytosis	skos:exactMatch	MONDO:0004678	Unspecified	Dermatophytosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K70.1	alcoholic hepatitis	skos:exactMatch	MONDO:0001505	Unspecified	Alcoholic hepatitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J18.9	pneumonia	skos:exactMatch	MONDO:0005249	Unspecified	Pneumonia, unspecified organism	MONDO_MAPPINGS						22	0.7096774193548387	1.8888888888888888
-ICD10CM:M94.1	relapsing polychondritis	skos:exactMatch	MONDO:0019125	Unspecified	Relapsing polychondritis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D73	splenic disorder	skos:exactMatch	MONDO:0002332	Unspecified	Diseases of spleen	MONDO_MAPPINGS						14	0.5217391304347826	1.94921875
-ICD10CM:E71.121	propionic acidemia	skos:exactMatch	MONDO:0011628	Unspecified	Propionic acidemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H16.2	keratoconjunctivitis	skos:exactMatch	MONDO:0004768	Unspecified	Keratoconjunctivitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K59.02	outlet dysfunction constipation	skos:exactMatch	MONDO:0002202	Unspecified	Outlet dysfunction constipation	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A22.2	gastrointestinal anthrax	skos:exactMatch	MONDO:0001701	Unspecified	Gastrointestinal anthrax	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C13	hypopharynx cancer	skos:exactMatch	MONDO:0005806	Unspecified	Malignant neoplasm of hypopharynx	MONDO_MAPPINGS						28	0.5833333333333333	1.9506172839506173
-ICD10CM:Q60.0	renal agenesis, unilateral	skos:exactMatch	MONDO:0019636	Unspecified	Renal agenesis, unilateral	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F34.0	cyclothymic disorder	skos:exactMatch	MONDO:0004572	Unspecified	Cyclothymic disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K86.81	exocrine pancreatic insufficiency	skos:exactMatch	MONDO:0001684	Unspecified	Exocrine pancreatic insufficiency	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A28.0	pasteurellosis	skos:exactMatch	MONDO:0005901	Unspecified	Pasteurellosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L88	pyoderma gangrenosum	skos:exactMatch	MONDO:0018824	Unspecified	Pyoderma gangrenosum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E88.81	abdominal obesity-metabolic syndrome	skos:exactMatch	MONDO:0000816	Unspecified	Metabolic syndrome	MONDO_MAPPINGS						18	0.5	1.9729938271604939
-ICD10CM:C50.6	female breast axillary tail cancer	skos:exactMatch	MONDO:0002069	Unspecified	Malignant neoplasm of axillary tail of breast	MONDO_MAPPINGS						25	0.42000000000000004	1.972318339100346
-ICD10CM:F41.1	generalized anxiety disorder	skos:exactMatch	MONDO:0001942	Unspecified	Generalized anxiety disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N60.2	obsolete breast fibroadenosis	skos:exactMatch	MONDO:0001012	Unspecified	Fibroadenosis of breast	MONDO_MAPPINGS						21	0.2666666666666667	1.966706302021403
-ICD10CM:H55.04	dissociated nystagmus	skos:exactMatch	MONDO:0001655	Unspecified	Dissociated nystagmus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B66.5	fasciolopsiasis	skos:exactMatch	MONDO:0004672	Unspecified	Fasciolopsiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C25.4	pancreatic endocrine carcinoma	skos:exactMatch	MONDO:0005893	Unspecified	Malignant neoplasm of endocrine pancreas	MONDO_MAPPINGS						24	0.4444444444444444	1.9666666666666666
-ICD10CM:G57.5	tarsal tunnel syndrome	skos:exactMatch	MONDO:0006994	Unspecified	Tarsal tunnel syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M31.1	thrombotic microangiopathy	skos:exactMatch	MONDO:0019737	Unspecified	Thrombotic microangiopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N94.2	vaginismus	skos:exactMatch	MONDO:0021723	Unspecified	Vaginismus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E61.2	magnesium deficiency	skos:exactMatch	MONDO:0006844	Unspecified	Magnesium deficiency	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E54	scurvy	skos:exactMatch	MONDO:0009412	Unspecified	Ascorbic acid deficiency	MONDO_MAPPINGS						20	0.8461538461538461	1.8888888888888888
-ICD10CM:H53.6	night blindness	skos:exactMatch	MONDO:0004588	Unspecified	Night blindness	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q45.1	annular pancreas	skos:exactMatch	MONDO:0008183	Unspecified	Annular pancreas	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M80-M85	bone disorder	skos:exactMatch	MONDO:0005381	Unspecified	Disorders of bone density and structure (M80-M85)	MONDO_MAPPINGS						39	0.7346938775510203	1.9230769230769231
-ICD10CM:H69.0	patulous eustachian tube	skos:exactMatch	MONDO:0001508	Unspecified	Patulous Eustachian tube	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A36	diphtheria	skos:exactMatch	MONDO:0005504	Unspecified	Diphtheria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E72.23	citrullinemia	skos:exactMatch	MONDO:0015991	Unspecified	Citrullinemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H51.2	internuclear ophthalmoplegia	skos:exactMatch	MONDO:0003417	Unspecified	Internuclear ophthalmoplegia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B55.1	cutaneous leishmaniasis	skos:exactMatch	MONDO:0005446	Unspecified	Cutaneous leishmaniasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D10-D36	benign neoplasm	skos:exactMatch	MONDO:0005165	Unspecified	Benign neoplasms, except benign neuroendocrine tumors (D10-D36)	MONDO_MAPPINGS						48	0.7619047619047619	1.9333333333333333
-ICD10CM:O15	eclampsia	skos:exactMatch	MONDO:0001754	Unspecified	Eclampsia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.13	recurrent hypersomnia	skos:exactMatch	MONDO:0004617	Unspecified	Recurrent hypersomnia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E23.2	diabetes insipidus	skos:exactMatch	MONDO:0004782	Unspecified	Diabetes insipidus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G90.0	idiopathic peripheral autonomic neuropathy	skos:exactMatch	MONDO:0001295	Unspecified	Idiopathic peripheral autonomic neuropathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C13.1	aryepiglottic fold cancer	skos:exactMatch	MONDO:0004637	Unspecified	Malignant neoplasm of aryepiglottic fold, hypopharyngeal aspect	MONDO_MAPPINGS						41	0.625	1.96
-ICD10CM:K14.1	geographic tongue	skos:exactMatch	MONDO:0005771	Unspecified	Geographic tongue	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C96.A	histiocytic sarcoma	skos:exactMatch	MONDO:0019479	Unspecified	Histiocytic sarcoma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P61.5	transient neonatal neutropenia	skos:exactMatch	MONDO:0001241	Unspecified	Transient neonatal neutropenia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G35-G37	demyelinating disease of central nervous system	skos:exactMatch	MONDO:0020800	Unspecified	Demyelinating diseases of the central nervous system (G35-G37)	MONDO_MAPPINGS						15	0.24193548387096775	1.9787234042553192
-ICD10CM:B35.3	tinea pedis	skos:exactMatch	MONDO:0005984	Unspecified	Tinea pedis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F52.32	male orgasm disorder	skos:exactMatch	MONDO:0003522	Unspecified	Male orgasmic disorder	MONDO_MAPPINGS						2	0.09090909090909094	1.95
-ICD10CM:F65.3	voyeurism	skos:exactMatch	MONDO:0001135	Unspecified	Voyeurism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M72.1	knuckle pads	skos:exactMatch	MONDO:0007865	Unspecified	Knuckle pads	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I42	cardiomyopathy	skos:exactMatch	MONDO:0004994	Unspecified	Cardiomyopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D29.1	benign neoplasm of prostate	skos:exactMatch	MONDO:0021510	Unspecified	Benign neoplasm of prostate	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q81	epidermolysis bullosa	skos:exactMatch	MONDO:0006541	Unspecified	Epidermolysis bullosa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F65.51	sexual masochism disorder	skos:exactMatch	MONDO:0001139	Unspecified	Sexual masochism	MONDO_MAPPINGS						9	0.36	1.9664
-ICD10CM:Q35.1	cleft hard palate	skos:exactMatch	MONDO:0015092	Unspecified	Cleft hard palate	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N64.1	fat necrosis of breast	skos:exactMatch	MONDO:0001101	Unspecified	Fat necrosis of breast	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.0	insomnia	skos:exactMatch	MONDO:0013600	Unspecified	Insomnia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B70.0	diphyllobothriasis	skos:exactMatch	MONDO:0015260	Unspecified	Diphyllobothriasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I87.0	post-thrombotic syndrome	skos:exactMatch	MONDO:0005928	Unspecified	Postthrombotic syndrome	MONDO_MAPPINGS						1	0.04166666666666663	1.9600694444444444
-ICD10CM:H35.51	vitreoretinal dystrophy	skos:exactMatch	MONDO:0001923	Unspecified	Vitreoretinal dystrophy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E40	kwashiorkor	skos:exactMatch	MONDO:0006826	Unspecified	Kwashiorkor	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J80	acute respiratory distress syndrome	skos:exactMatch	MONDO:0006502	Unspecified	Acute respiratory distress syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E83.1	iron metabolism disease	skos:exactMatch	MONDO:0002279	Unspecified	Disorders of iron metabolism	MONDO_MAPPINGS						21	0.30000000000000004	1.9565217391304348
-ICD10CM:J84.82	adult pulmonary Langerhans cell histiocytosis	skos:exactMatch	MONDO:0020520	Unspecified	Adult pulmonary Langerhans cell histiocytosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q22.1	congenital pulmonary valve stenosis	skos:exactMatch	MONDO:0017865	Unspecified	Congenital pulmonary valve stenosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E71.120	methylmalonic acidemia	skos:exactMatch	MONDO:0002012	Unspecified	Methylmalonic acidemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F65.0	fetishism	skos:exactMatch	MONDO:0001504	Unspecified	Fetishism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C09.0	tonsillar fossa cancer	skos:exactMatch	MONDO:0004690	Unspecified	Malignant neoplasm of tonsillar fossa	MONDO_MAPPINGS						28	0.525	1.9586776859504131
-ICD10CM:K62.7	radiation proctitis	skos:exactMatch	MONDO:0019084	Unspecified	Radiation proctitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A48.0	gas gangrene	skos:exactMatch	MONDO:0005767	Unspecified	Gas gangrene	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L43	lichen planus	skos:exactMatch	MONDO:0006572	Unspecified	Lichen planus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P35.0	congenital rubella syndrome	skos:exactMatch	MONDO:0017361	Unspecified	Congenital rubella syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B48.0	lobomycosis	skos:exactMatch	MONDO:0001616	Unspecified	Lobomycosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L40.1	generalized pustular psoriasis	skos:exactMatch	MONDO:0100491	Unspecified	Generalized pustular psoriasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N46	male infertility	skos:exactMatch	MONDO:0005372	Unspecified	Male infertility	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q62.0	congenital hydronephrosis	skos:exactMatch	MONDO:0007741	Unspecified	Congenital hydronephrosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N48.1	balanitis	skos:exactMatch	MONDO:0006672	Unspecified	Balanitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H66.1	chronic tubotympanic suppurative otitis media	skos:exactMatch	MONDO:0001964	Unspecified	Chronic tubotympanic suppurative otitis media	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E73.0	congenital lactase deficiency	skos:exactMatch	MONDO:0009115	Unspecified	Congenital lactase deficiency	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J04.1	tracheitis	skos:exactMatch	MONDO:0005990	Unspecified	Acute tracheitis	MONDO_MAPPINGS						6	0.375	1.9
-ICD10CM:Q40.1	displacement of cardia through esophageal hiatus	skos:exactMatch	MONDO:0001562	Unspecified	Congenital hiatus hernia	MONDO_MAPPINGS						36	0.56	1.9817708333333333
-ICD10CM:C45	mesothelioma	skos:exactMatch	MONDO:0005065	Unspecified	Mesothelioma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q52.11	transverse vaginal septum	skos:exactMatch	MONDO:0015850	Unspecified	Transverse vaginal septum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G83.4	cauda equina syndrome	skos:exactMatch	MONDO:0005693	Unspecified	Cauda equina syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A20.0	bubonic plague	skos:exactMatch	MONDO:0001112	Unspecified	Bubonic plague	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G11	hereditary ataxia	skos:exactMatch	MONDO:0100309	Unspecified	Hereditary ataxia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A70-A74	chlamydia infectious disease	skos:exactMatch	MONDO:0021697	Unspecified	Other diseases caused by chlamydiae (A70-A74)	MONDO_MAPPINGS						36	0.5102040816326531	1.9668367346938775
-ICD10CM:B66.0	opisthorchiasis	skos:exactMatch	MONDO:0005884	Unspecified	Opisthorchiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B44	aspergillosis	skos:exactMatch	MONDO:0005657	Unspecified	Aspergillosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q80	inherited ichthyosis	skos:exactMatch	MONDO:0015947	Unspecified	Congenital ichthyosis	MONDO_MAPPINGS						6	0.42307692307692313	1.955
-ICD10CM:Q82.2	mastocytosis	skos:exactMatch	MONDO:0007950	Unspecified	Congenital cutaneous mastocytosis	MONDO_MAPPINGS						21	0.6363636363636364	1.9166666666666667
-ICD10CM:K62.6	ulcer of anus and rectum	skos:exactMatch	MONDO:0001772	Unspecified	Ulcer of anus and rectum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q30.0	choanal atresia	skos:exactMatch	MONDO:0012155	Unspecified	Choanal atresia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M76.5	patellar tendinitis	skos:exactMatch	MONDO:0001042	Unspecified	Patellar tendinitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I27.0	primary pulmonary hypertension	skos:exactMatch	MONDO:0001999	Unspecified	Primary pulmonary hypertension	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F60.0	paranoid personality disorder	skos:exactMatch	MONDO:0001163	Unspecified	Paranoid personality disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L08.1	erythrasma	skos:exactMatch	MONDO:0002885	Unspecified	Erythrasma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L90.3	atrophoderma of Pierini and Pasini	skos:exactMatch	MONDO:0022513	Unspecified	Atrophoderma of Pasini and Pierini	MONDO_MAPPINGS						6	0.0	1.9705882352941178
-ICD10CM:L94.6	ainhum	skos:exactMatch	MONDO:0007074	Unspecified	Ainhum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K35-K38	disorder of appendix	skos:exactMatch	MONDO:0056798	Unspecified	Diseases of appendix (K35-K38)	MONDO_MAPPINGS						14	0.5294117647058824	1.955
-ICD10CM:K52.82	eosinophilic colitis	skos:exactMatch	MONDO:0018439	Unspecified	Eosinophilic colitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.25	circadian rhythm sleep disorder, jet lag type	skos:exactMatch	MONDO:0024381	Unspecified	Circadian rhythm sleep disorder, jet lag type	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N80.1	ovarian endometriosis	skos:exactMatch	MONDO:0006337	Unspecified	Endometriosis of ovary	MONDO_MAPPINGS						17	0.28	1.9523809523809523
-ICD10CM:D04	skin carcinoma in situ	skos:exactMatch	MONDO:0004641	Unspecified	Carcinoma in situ of skin	MONDO_MAPPINGS						13	0.12	1.9545454545454546
-ICD10CM:B66.4	paragonimiasis	skos:exactMatch	MONDO:0005895	Unspecified	Paragonimiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K05.3	chronic periodontitis	skos:exactMatch	MONDO:0005593	Unspecified	Chronic periodontitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E28	ovarian dysfunction	skos:exactMatch	MONDO:0001889	Unspecified	Ovarian dysfunction	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.33	obstructive sleep apnea syndrome	skos:exactMatch	MONDO:0007147	Unspecified	Obstructive sleep apnea (adult) (pediatric)	MONDO_MAPPINGS						17	0.4375	1.970703125
-ICD10CM:D59.3	hemolytic-uremic syndrome	skos:exactMatch	MONDO:0001549	Unspecified	Hemolytic-uremic syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L85.0	acquired ichthyosis	skos:exactMatch	MONDO:0018683	Unspecified	Acquired ichthyosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H53.54	red color blindness	skos:exactMatch	MONDO:0010565	Unspecified	Protanomaly	MONDO_MAPPINGS						17	0.8	1.9778393351800554
-ICD10CM:I80.0	thrombophlebitis	skos:exactMatch	MONDO:0002800	Unspecified	Phlebitis and thrombophlebitis of superficial vessels of lower extremities	MONDO_MAPPINGS						58	0.7837837837837838	1.9375
-ICD10CM:H35.54	dystrophies primarily involving the retinal pigment epithelium	skos:exactMatch	MONDO:0001924	Unspecified	Dystrophies primarily involving the retinal pigment epithelium	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A20	plague	skos:exactMatch	MONDO:0019095	Unspecified	Plague	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C65	renal pelvis carcinoma	skos:exactMatch	MONDO:0005519	Unspecified	Malignant neoplasm of renal pelvis	MONDO_MAPPINGS						27	0.4864864864864865	1.9586776859504131
-ICD10CM:K29.8	duodenitis	skos:exactMatch	MONDO:0004627	Unspecified	Duodenitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L40.3	pustulosis palmaris et plantaris	skos:exactMatch	MONDO:0015597	Unspecified	Pustulosis palmaris et plantaris	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D61.82	myelophthisic anemia	skos:exactMatch	MONDO:0005868	Unspecified	Myelophthisis	MONDO_MAPPINGS						8	0.4285714285714286	1.9625
-ICD10CM:N81.84	pelvic muscle wasting	skos:exactMatch	MONDO:0001327	Unspecified	Pelvic muscle wasting	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I49.5	sick sinus syndrome	skos:exactMatch	MONDO:0001823	Unspecified	Sick sinus syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I09.2	chronic rheumatic pericarditis	skos:exactMatch	MONDO:0002133	Unspecified	Chronic rheumatic pericarditis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I89.1	lymphangitis	skos:exactMatch	MONDO:0005832	Unspecified	Lymphangitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C71.4	occipital lobe neoplasm	skos:exactMatch	MONDO:0004709	Unspecified	Malignant neoplasm of occipital lobe	MONDO_MAPPINGS						29	0.36111111111111116	1.9565217391304348
-ICD10CM:Q90-Q99	chromosomal disorder	skos:exactMatch	MONDO:0019040	Unspecified	Chromosomal abnormalities, not elsewhere classified (Q90-Q99)	MONDO_MAPPINGS						44	0.6935483870967742	1.95
-ICD10CM:H18.0	corneal deposit	skos:exactMatch	MONDO:0001308	Unspecified	Corneal pigmentations and deposits	MONDO_MAPPINGS						19	0.5588235294117647	1.9333333333333333
-ICD10CM:C32.1	supraglottis cancer	skos:exactMatch	MONDO:0001724	Unspecified	Malignant neoplasm of supraglottis	MONDO_MAPPINGS						29	0.5675675675675675	1.9529085872576177
-ICD10CM:N75.0	Bartholin duct cyst	skos:exactMatch	MONDO:0004593	Unspecified	Cyst of Bartholin's gland	MONDO_MAPPINGS						18	0.4285714285714286	1.9501385041551247
-ICD10CM:H47.2	optic atrophy	skos:exactMatch	MONDO:0003608	Unspecified	Optic atrophy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N50.0	atrophy of testis	skos:exactMatch	MONDO:0001415	Unspecified	Atrophy of testis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J84.842	pulmonary interstitial glycogenosis	skos:exactMatch	MONDO:0016321	Unspecified	Pulmonary interstitial glycogenosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K52.831	collagenous colitis	skos:exactMatch	MONDO:0000703	Unspecified	Collagenous colitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K00.1	teeth, supernumerary	skos:exactMatch	MONDO:0008533	Unspecified	Supernumerary teeth	MONDO_MAPPINGS						13	0.050000000000000044	1.9525
-ICD10CM:N89.4	leukoplakia of vagina	skos:exactMatch	MONDO:0004679	Unspecified	Leukoplakia of vagina	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C00	lip cancer	skos:exactMatch	MONDO:0006834	Unspecified	Malignant neoplasm of lip	MONDO_MAPPINGS						21	0.75	1.93
-ICD10CM:N60.0	solitary cyst of breast	skos:exactMatch	MONDO:0001009	Unspecified	Solitary cyst of breast	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B74	filariasis	skos:exactMatch	MONDO:0016075	Unspecified	Filariasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E83.3	phosphorus metabolism disease	skos:exactMatch	MONDO:0002319	Unspecified	Disorders of phosphorus metabolism and phosphatases	MONDO_MAPPINGS						24	0.43137254901960786	1.9655172413793103
-ICD10CM:Q72.13	congenital absence of thigh and lower leg with foot present, bilateral	skos:exactMatch	MONDO:0017497	Unspecified	Congenital absence of thigh and lower leg with foot present, bilateral	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B15-B19	viral hepatitis	skos:exactMatch	MONDO:0006011	Unspecified	Viral hepatitis (B15-B19)	MONDO_MAPPINGS						10	0.4	1.9333333333333333
-ICD10CM:A20-A28	zoonotic bacterial infection	skos:exactMatch	MONDO:0044746	Unspecified	Certain zoonotic bacterial diseases (A20-A28)	MONDO_MAPPINGS						24	0.47916666666666663	1.965561224489796
-ICD10CM:N25.1	nephrogenic diabetes insipidus	skos:exactMatch	MONDO:0016383	Unspecified	Nephrogenic diabetes insipidus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L40	psoriasis	skos:exactMatch	MONDO:0005083	Unspecified	Psoriasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J30	rhinitis	skos:exactMatch	MONDO:0003014	Unspecified	Vasomotor and allergic rhinitis	MONDO_MAPPINGS						23	0.7419354838709677	1.875
-ICD10CM:P78.0	perinatal intestinal perforation	skos:exactMatch	MONDO:0002196	Unspecified	Perinatal intestinal perforation	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L01	impetigo	skos:exactMatch	MONDO:0004592	Unspecified	Impetigo	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A98.2	Kyasanur forest disease	skos:exactMatch	MONDO:0017881	Unspecified	Kyasanur Forest disease	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H52.4	presbyopia	skos:exactMatch	MONDO:0001330	Unspecified	Presbyopia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B36.0	pityriasis versicolor	skos:exactMatch	MONDO:0005915	Unspecified	Pityriasis versicolor	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.2	circadian rhythm sleep disorder	skos:exactMatch	MONDO:0024361	Unspecified	Circadian rhythm sleep disorders	MONDO_MAPPINGS						1	0.03125	1.967741935483871
-ICD10CM:K20.0	eosinophilic esophagitis	skos:exactMatch	MONDO:0005361	Unspecified	Eosinophilic esophagitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G58.7	mononeuritis multiplex	skos:exactMatch	MONDO:0002128	Unspecified	Mononeuritis multiplex	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E72.04	cystinosis	skos:exactMatch	MONDO:0016239	Unspecified	Cystinosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B42	sporotrichosis	skos:exactMatch	MONDO:0005968	Unspecified	Sporotrichosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A57	chancroid	skos:exactMatch	MONDO:0001797	Unspecified	Chancroid	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L50.1	idiopathic urticaria	skos:exactMatch	MONDO:0044211	Unspecified	Idiopathic urticaria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H52.31	anisometropia	skos:exactMatch	MONDO:0001478	Unspecified	Anisometropia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M75.0	frozen shoulder	skos:exactMatch	MONDO:0006763	Unspecified	Adhesive capsulitis of shoulder	MONDO_MAPPINGS						21	0.6470588235294117	1.9422222222222223
-ICD10CM:H35.82	retinal ischemia	skos:exactMatch	MONDO:0001538	Unspecified	Retinal ischemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B35.2	tinea manuum	skos:exactMatch	MONDO:0001699	Unspecified	Tinea manuum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M47	spondylosis	skos:exactMatch	MONDO:0002253	Unspecified	Spondylosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M15-M19	osteoarthritis	skos:exactMatch	MONDO:0005178	Unspecified	Osteoarthritis (M15-M19)	MONDO_MAPPINGS						10	0.41666666666666663	1.9285714285714286
-ICD10CM:Q40.0	hypertrophic pyloric stenosis	skos:exactMatch	MONDO:0001560	Unspecified	Congenital hypertrophic pyloric stenosis	MONDO_MAPPINGS						11	0.275	1.9655172413793103
-ICD10CM:Q72.73	split foot, bilateral	skos:exactMatch	MONDO:0017514	Unspecified	Split foot, bilateral	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B37	candidiasis	skos:exactMatch	MONDO:0002026	Unspecified	Candidiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A33	tetanus neonatorum	skos:exactMatch	MONDO:0001737	Unspecified	Tetanus neonatorum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q24.1	levocardia	skos:exactMatch	MONDO:0019862	Unspecified	Levocardia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E34.0	carcinoid syndrome	skos:exactMatch	MONDO:0100347	Unspecified	Carcinoid syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q87.82	arterial tortuosity syndrome	skos:exactMatch	MONDO:0008818	Unspecified	Arterial tortuosity syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q45.2	congenital pancreatic cyst	skos:exactMatch	MONDO:0017783	Unspecified	Congenital pancreatic cyst	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M81	osteoporosis	skos:exactMatch	MONDO:0005298	Unspecified	Osteoporosis without current pathological fracture	MONDO_MAPPINGS						38	0.76	1.9166666666666667
-ICD10CM:H16.0	corneal ulcer	skos:exactMatch	MONDO:0004577	Unspecified	Corneal ulcer	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L50.5	cholinergic urticaria	skos:exactMatch	MONDO:0006534	Unspecified	Cholinergic urticaria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N80.0	endometriosis of uterus	skos:exactMatch	MONDO:0010888	Unspecified	Endometriosis of uterus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:T75.3	motion sickness	skos:exactMatch	MONDO:0008015	Unspecified	Motion sickness	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N76.6	ulceration of vulva	skos:exactMatch	MONDO:0001551	Unspecified	Ulceration of vulva	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E72.3	inborn disorder of lysine and hydroxylysine metabolism	skos:exactMatch	MONDO:0017351	Unspecified	Disorders of lysine and hydroxylysine metabolism	MONDO_MAPPINGS						8	0.1454545454545455	1.9814814814814814
-ICD10CM:B85-B89	parasitic ectoparasitic infectious disease	skos:exactMatch	MONDO:0002875	Unspecified	Pediculosis, acariasis and other infestations (B85-B89)	MONDO_MAPPINGS						38	0.4098360655737705	1.9761904761904763
-ICD10CM:G56.0	carpal tunnel syndrome	skos:exactMatch	MONDO:0007275	Unspecified	Carpal tunnel syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L65.2	alopecia mucinosa	skos:exactMatch	MONDO:0006551	Unspecified	Alopecia mucinosa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q80.0	autosomal dominant ichthyosis vulgaris	skos:exactMatch	MONDO:0007810	Unspecified	Ichthyosis vulgaris	MONDO_MAPPINGS						19	0.5	1.9771468144044322
-ICD10CM:D56	thalassemia	skos:exactMatch	MONDO:0000984	Unspecified	Thalassemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H50.1	exotropia	skos:exactMatch	MONDO:0001286	Unspecified	Exotropia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P37.1	congenital toxoplasmosis	skos:exactMatch	MONDO:0005715	Unspecified	Congenital toxoplasmosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M77.3	heel spur	skos:exactMatch	MONDO:0002209	Unspecified	Calcaneal spur	MONDO_MAPPINGS						7	0.5625	1.9012345679012346
-ICD10CM:H10.1	Angelucci syndrome	skos:exactMatch	MONDO:0001224	Unspecified	Acute atopic conjunctivitis	MONDO_MAPPINGS						22	0.6764705882352942	1.962962962962963
-ICD10CM:N80.6	endometriosis in cutaneous scar	skos:exactMatch	MONDO:0001287	Unspecified	Endometriosis in cutaneous scar	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K13.3	oral hairy leukoplakia	skos:exactMatch	MONDO:0000743	Unspecified	Hairy leukoplakia	MONDO_MAPPINGS						5	0.2272727272727273	1.9545454545454546
-ICD10CM:K04.1	dental pulp necrosis	skos:exactMatch	MONDO:0001326	Unspecified	Necrosis of pulp	MONDO_MAPPINGS						18	0.36363636363636365	1.9575
-ICD10CM:C90.2	extramedullary plasmacytoma	skos:exactMatch	MONDO:0002754	Unspecified	Extramedullary plasmacytoma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N90.5	obsolete atrophic vulva	skos:exactMatch	MONDO:0001932	Unspecified	Atrophy of vulva	MONDO_MAPPINGS						13	0.43999999999999995	1.9678638941398865
-ICD10CM:I67.4	hypertensive encephalopathy	skos:exactMatch	MONDO:0006796	Unspecified	Hypertensive encephalopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M75.1	rotator cuff syndrome	skos:exactMatch	MONDO:0007028	Unspecified	Rotator cuff tear or rupture, not specified as traumatic	MONDO_MAPPINGS						39	0.6491228070175439	1.9546485260770976
-ICD10CM:A68.1	tick-borne relapsing fever	skos:exactMatch	MONDO:0001621	Unspecified	Tick-borne relapsing fever	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B66.3	fascioliasis	skos:exactMatch	MONDO:0004668	Unspecified	Fascioliasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K03.4	hypercementosis	skos:exactMatch	MONDO:0006790	Unspecified	Hypercementosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C40.3	cancer of short bone of lower limb	skos:exactMatch	MONDO:0000953	Unspecified	Malignant neoplasm of short bones of lower limb	MONDO_MAPPINGS						16	0.38	1.972318339100346
-ICD10CM:M48.3	Kummell disease	skos:exactMatch	MONDO:0003940	Unspecified	Traumatic spondylopathy	MONDO_MAPPINGS						18	0.7333333333333334	1.951111111111111
-ICD10CM:K29.2	alcoholic gastritis	skos:exactMatch	MONDO:0004640	Unspecified	Alcoholic gastritis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F17	nicotine dependence	skos:exactMatch	MONDO:0008575	Unspecified	Nicotine dependence	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I68.0	cerebral amyloid angiopathy	skos:exactMatch	MONDO:0005620	Unspecified	Cerebral amyloid angiopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H47.9	visual pathway disorder	skos:exactMatch	MONDO:0001834	Unspecified	Unspecified disorder of visual pathways	MONDO_MAPPINGS						32	0.41025641025641024	1.9565217391304348
-ICD10CM:D11.0	benign neoplasm of parotid gland	skos:exactMatch	MONDO:0021494	Unspecified	Benign neoplasm of parotid gland	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D64.4	congenital dyserythropoietic anemia	skos:exactMatch	MONDO:0019403	Unspecified	Congenital dyserythropoietic anemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D81.819	multiple carboxylase deficiency	skos:exactMatch	MONDO:0015454	Unspecified	Biotin-dependent carboxylase deficiency, unspecified	MONDO_MAPPINGS						25	0.49090909090909096	1.9687825182101977
-ICD10CM:B48.1	rhinosporidiosis	skos:exactMatch	MONDO:0005946	Unspecified	Rhinosporidiosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K56.1	intussusception	skos:exactMatch	MONDO:0007835	Unspecified	Intussusception	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L92.2	granuloma faciale	skos:exactMatch	MONDO:0035879	Unspecified	Granuloma faciale [eosinophilic granuloma of skin]	MONDO_MAPPINGS						33	0.6599999999999999	1.9411764705882353
-ICD10CM:N80.4	endometriosis of rectovaginal septum and vagina	skos:exactMatch	MONDO:0001288	Unspecified	Endometriosis of rectovaginal septum and vagina	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I85.00	esophageal varices without bleeding	skos:exactMatch	MONDO:0021644	Unspecified	Esophageal varices without bleeding	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E20	hypoparathyroidism	skos:exactMatch	MONDO:0001220	Unspecified	Hypoparathyroidism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G40	epilepsy	skos:exactMatch	MONDO:0005027	Unspecified	Epilepsy and recurrent seizures	MONDO_MAPPINGS						23	0.7419354838709677	1.875
-ICD10CM:E71.110	isovaleric acidemia	skos:exactMatch	MONDO:0009475	Unspecified	Isovaleric acidemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E74.12	hereditary fructose intolerance	skos:exactMatch	MONDO:0009249	Unspecified	Hereditary fructose intolerance	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L74.4	anhidrosis	skos:exactMatch	MONDO:0006527	Unspecified	Anhidrosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q24.6	congenital heart block	skos:exactMatch	MONDO:0009326	Unspecified	Congenital heart block	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I09.81	rheumatic congestive heart failure	skos:exactMatch	MONDO:0001899	Unspecified	Rheumatic heart failure	MONDO_MAPPINGS						11	0.32352941176470584	1.9749134948096885
-ICD10CM:R80	proteinuria	skos:exactMatch	MONDO:0003634	Unspecified	Proteinuria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A52.02	syphilitic aortitis	skos:exactMatch	MONDO:0006992	Unspecified	Syphilitic aortitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P61.0	transient neonatal thrombocytopenia	skos:exactMatch	MONDO:0004877	Unspecified	Transient neonatal thrombocytopenia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q60-Q64	urogenital tract malformation	skos:exactMatch	MONDO:0019356	Unspecified	Congenital malformations of the urinary system (Q60-Q64)	MONDO_MAPPINGS						42	0.4821428571428571	1.9655172413793103
-ICD10CM:K70-K77	liver disorder	skos:exactMatch	MONDO:0005154	Unspecified	Diseases of liver (K70-K77)	MONDO_MAPPINGS						21	0.6333333333333333	1.9285714285714286
-ICD10CM:F50.0	anorexia nervosa	skos:exactMatch	MONDO:0005351	Unspecified	Anorexia nervosa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B39	histoplasmosis	skos:exactMatch	MONDO:0018312	Unspecified	Histoplasmosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.23	circadian rhythm sleep disorder, irregular sleep wake type	skos:exactMatch	MONDO:0024379	Unspecified	Circadian rhythm sleep disorder, irregular sleep wake type	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K76.81	hepatopulmonary syndrome	skos:exactMatch	MONDO:0004694	Unspecified	Hepatopulmonary syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q61	cystic kidney disease	skos:exactMatch	MONDO:0002473	Unspecified	Cystic kidney disease	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C92.3	myeloid sarcoma	skos:exactMatch	MONDO:0006861	Unspecified	Myeloid sarcoma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L44.0	pityriasis rubra pilaris	skos:exactMatch	MONDO:0100017	Unspecified	Pityriasis rubra pilaris	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I40.0	bacterial myocarditis	skos:exactMatch	MONDO:0001114	Unspecified	Infective myocarditis	MONDO_MAPPINGS						8	0.3846153846153846	1.9569160997732427
-ICD10CM:A48.52	wound botulism	skos:exactMatch	MONDO:0015803	Unspecified	Wound botulism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L93	lupus erythematosus	skos:exactMatch	MONDO:0004670	Unspecified	Lupus erythematosus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C12	pyriform sinus cancer	skos:exactMatch	MONDO:0004733	Unspecified	Malignant neoplasm of pyriform sinus	MONDO_MAPPINGS						29	0.5384615384615384	1.9569160997732427
-ICD10CM:M45	ankylosing spondylitis	skos:exactMatch	MONDO:0005306	Unspecified	Ankylosing spondylitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I81	portal vein thrombosis	skos:exactMatch	MONDO:0001339	Unspecified	Portal vein thrombosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H18.4	corneal degeneration	skos:exactMatch	MONDO:0001515	Unspecified	Corneal degeneration	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B69	cysticercosis	skos:exactMatch	MONDO:0015484	Unspecified	Cysticercosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L55	sunburn	skos:exactMatch	MONDO:0005326	Unspecified	Sunburn	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E83.110	hereditary hemochromatosis	skos:exactMatch	MONDO:0006507	Unspecified	Hereditary hemochromatosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H00-H59	disorder of orbital region	skos:exactMatch	MONDO:0002022	Unspecified	Diseases of the eye and adnexa (H00-H59)	MONDO_MAPPINGS						29	0.7307692307692308	1.9718934911242603
-ICD10CM:M08.4	obsolete pauciarticular juvenile rheumatoid arthritis	skos:exactMatch	MONDO:0005251	Unspecified	Pauciarticular juvenile rheumatoid arthritis	MONDO_MAPPINGS						9	0.16981132075471694	1.9814880740477039
-ICD10CM:Q50.4	embryonic cyst of fallopian tube	skos:exactMatch	MONDO:0024652	Unspecified	Embryonic cyst of fallopian tube	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L66.1	lichen planopilaris	skos:exactMatch	MONDO:0018879	Unspecified	Lichen planopilaris	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G70.0	myasthenia gravis	skos:exactMatch	MONDO:0009688	Unspecified	Myasthenia gravis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N84.3	polyp of vulva	skos:exactMatch	MONDO:0021396	Unspecified	Polyp of vulva	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H02.2	lagophthalmos	skos:exactMatch	MONDO:0001604	Unspecified	Lagophthalmos	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q72.1	congenital absence of thigh and lower leg with foot present	skos:exactMatch	MONDO:0017442	Unspecified	Congenital absence of thigh and lower leg with foot present	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H50.05	alternating esotropia	skos:exactMatch	MONDO:0004913	Unspecified	Alternating esotropia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D10.1	benign neoplasm of tongue	skos:exactMatch	MONDO:0021476	Unspecified	Benign neoplasm of tongue	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A52.2	asymptomatic neurosyphilis	skos:exactMatch	MONDO:0000927	Unspecified	Asymptomatic neurosyphilis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E71.0	maple syrup urine disease	skos:exactMatch	MONDO:0009563	Unspecified	Maple-syrup-urine disease	MONDO_MAPPINGS						2	0.14814814814814814	1.96
-ICD10CM:Q23.4	hypoplastic left heart syndrome	skos:exactMatch	MONDO:0004933	Unspecified	Hypoplastic left heart syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F65.2	exhibitionism	skos:exactMatch	MONDO:0000983	Unspecified	Exhibitionism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H65-H75	middle ear disorder	skos:exactMatch	MONDO:0003276	Unspecified	Diseases of middle ear and mastoid (H65-H75)	MONDO_MAPPINGS						29	0.6304347826086957	1.9473684210526316
-ICD10CM:G25.83	benign shuddering attacks	skos:exactMatch	MONDO:0002085	Unspecified	Benign shuddering attacks	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D56.2	delta-beta-thalassemia	skos:exactMatch	MONDO:0016489	Unspecified	Delta-beta thalassemia	MONDO_MAPPINGS						1	0.08695652173913049	1.9545454545454546
-ICD10CM:P29.1	idiopathic neonatal atrial flutter	skos:exactMatch	MONDO:0018684	Unspecified	Neonatal cardiac dysrhythmia	MONDO_MAPPINGS						25	0.4878048780487805	1.9731833910034602
-ICD10CM:I27.1	kyphoscoliotic heart disease	skos:exactMatch	MONDO:0001492	Unspecified	Kyphoscoliotic heart disease	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D58.0	hereditary spherocytosis	skos:exactMatch	MONDO:0019350	Unspecified	Hereditary spherocytosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q00.2	iniencephaly	skos:exactMatch	MONDO:0018968	Unspecified	Iniencephaly	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A20.7	septicemic plague	skos:exactMatch	MONDO:0005956	Unspecified	Septicemic plague	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H35.3	degeneration of macula and posterior pole	skos:exactMatch	MONDO:0002175	Unspecified	Degeneration of macula and posterior pole	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A07.0	balantidiasis	skos:exactMatch	MONDO:0005662	Unspecified	Balantidiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I85.01	esophageal varices with bleeding	skos:exactMatch	MONDO:0021645	Unspecified	Esophageal varices with bleeding	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G00-G99	nervous system disorder	skos:exactMatch	MONDO:0005071	Unspecified	Diseases of the nervous system (G00-G99)	MONDO_MAPPINGS						25	0.5348837209302326	1.9565217391304348
-ICD10CM:B88.3	external hirudiniasis	skos:exactMatch	MONDO:0024303	Unspecified	External hirudiniasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F45.22	body dysmorphic disorder	skos:exactMatch	MONDO:0000690	Unspecified	Body dysmorphic disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C72.0	spinal cord cancer	skos:exactMatch	MONDO:0003544	Unspecified	Malignant neoplasm of spinal cord	MONDO_MAPPINGS						24	0.5833333333333333	1.9444444444444444
-ICD10CM:G51	facial nerve disorder	skos:exactMatch	MONDO:0002098	Unspecified	Facial nerve disorders	MONDO_MAPPINGS						1	0.045454545454545414	1.9523809523809523
-ICD10CM:J93.0	spontaneous tension pneumothorax	skos:exactMatch	MONDO:0002075	Unspecified	Spontaneous tension pneumothorax	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q77.5	diastrophic dysplasia	skos:exactMatch	MONDO:0009107	Unspecified	Diastrophic dysplasia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G62.1	alcoholic polyneuropathy	skos:exactMatch	MONDO:0006645	Unspecified	Alcoholic polyneuropathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A83.3	st. Louis encephalitis	skos:exactMatch	MONDO:0005969	Unspecified	St Louis encephalitis	MONDO_MAPPINGS						1	0.045454545454545414	1.9566115702479339
-ICD10CM:F63.3	trichotillomania	skos:exactMatch	MONDO:0013189	Unspecified	Trichotillomania	MONDO_MAPPINGS						0	0.0	0.0
 ICD10CM:I10-I16	hypertensive disorder	skos:exactMatch	MONDO:0005044	Unspecified	Hypertensive diseases (I10-I16)	MONDO_MAPPINGS						14	0.5142857142857142	1.9546485260770976
-ICD10CM:A81.81	kuru	skos:exactMatch	MONDO:0006825	Unspecified	Kuru	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.3	sleep apnea syndrome	skos:exactMatch	MONDO:0005296	Unspecified	Sleep apnea	MONDO_MAPPINGS						9	0.44999999999999996	1.9625
-ICD10CM:N80.5	endometriosis of intestine	skos:exactMatch	MONDO:0001284	Unspecified	Endometriosis of intestine	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B65.3	cercarial dermatitis	skos:exactMatch	MONDO:0001260	Unspecified	Cercarial dermatitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L51	erythema multiforme	skos:exactMatch	MONDO:0006545	Unspecified	Erythema multiforme	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N20-N23	urolithiasis	skos:exactMatch	MONDO:0024647	Unspecified	Urolithiasis (N20-N23)	MONDO_MAPPINGS						10	0.4545454545454546	1.9166666666666667
-ICD10CM:H40.2	primary angle-closure glaucoma	skos:exactMatch	MONDO:0001868	Unspecified	Primary angle-closure glaucoma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D53.0	protein-deficiency anemia	skos:exactMatch	MONDO:0001638	Unspecified	Protein deficiency anemia	MONDO_MAPPINGS						1	0.07692307692307687	1.9616
-ICD10CM:A32	listeriosis	skos:exactMatch	MONDO:0005828	Unspecified	Listeriosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q12.3	congenital primary aphakia	skos:exactMatch	MONDO:0012456	Unspecified	Congenital aphakia	MONDO_MAPPINGS						8	0.3076923076923077	1.967455621301775
-ICD10CM:Q78.1	polyostotic fibrous dysplasia	skos:exactMatch	MONDO:0008274	Unspecified	Polyostotic fibrous dysplasia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H18.53	corneal granular dystrophy	skos:exactMatch	MONDO:0001490	Unspecified	Granular corneal dystrophy	MONDO_MAPPINGS						12	0.0	1.9615384615384615
-ICD10CM:D18.03	intra-abdominal hemangioma	skos:exactMatch	MONDO:0002337	Unspecified	Hemangioma of intra-abdominal structures	MONDO_MAPPINGS						24	0.35	1.9615384615384615
-ICD10CM:J06.0	acute laryngopharyngitis	skos:exactMatch	MONDO:0001218	Unspecified	Acute laryngopharyngitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M35.5	fibrosclerosis, multifocal	skos:exactMatch	MONDO:0009230	Unspecified	Multifocal fibrosclerosis	MONDO_MAPPINGS						23	0.038461538461538436	1.96301775147929
-ICD10CM:H50.42	monofixation syndrome	skos:exactMatch	MONDO:0004899	Unspecified	Monofixation syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C43-C44	skin cancer	skos:exactMatch	MONDO:0002898	Unspecified	Melanoma and other malignant neoplasms of skin (C43-C44)	MONDO_MAPPINGS						49	0.8035714285714286	1.9090909090909092
-ICD10CM:B38	coccidioidomycosis	skos:exactMatch	MONDO:0005706	Unspecified	Coccidioidomycosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A54.31	gonococcal conjunctivitis	skos:exactMatch	MONDO:0015455	Unspecified	Gonococcal conjunctivitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q06.2	diastematomyelia	skos:exactMatch	MONDO:0009106	Unspecified	Diastematomyelia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H74.4	polyp of middle ear	skos:exactMatch	MONDO:0004223	Unspecified	Polyp of middle ear	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N40-N53	male reproductive system disorder	skos:exactMatch	MONDO:0003150	Unspecified	Diseases of male genital organs (N40-N53)	MONDO_MAPPINGS						34	0.6296296296296297	1.9742883379247016
-ICD10CM:B55	leishmaniasis	skos:exactMatch	MONDO:0011989	Unspecified	Leishmaniasis	MONDO_MAPPINGS						0	0.0	0.0
-MONDO:0000088	precocious puberty	skos:exactMatch	ICD10CM:E30.1	Unspecified	precocious puberty	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E30.1	precocious puberty	skos:exactMatch	MONDO:0000088	Unspecified	Precocious puberty	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D56.3	thalassemia minor	skos:exactMatch	MONDO:0044210	Unspecified	Thalassemia minor	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I86.1	varicocele	skos:exactMatch	MONDO:0001498	Unspecified	Scrotal varices	MONDO_MAPPINGS						12	0.4375	1.9
-ICD10CM:Q17.2	microtia	skos:exactMatch	MONDO:0010920	Unspecified	Microtia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B50-B64	protozoa infectious disease	skos:exactMatch	MONDO:0002428	Unspecified	Protozoal diseases (B50-B64)	MONDO_MAPPINGS						18	0.5135135135135135	1.9684499314128945
-ICD10CM:B74.3	loiasis	skos:exactMatch	MONDO:0016566	Unspecified	Loiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A82	rabies	skos:exactMatch	MONDO:0019173	Unspecified	Rabies	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H04.31	phlegmonous dacryocystitis	skos:exactMatch	MONDO:0001611	Unspecified	Phlegmonous dacryocystitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N45.1	epididymitis	skos:exactMatch	MONDO:0004779	Unspecified	Epididymitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A92.4	Rift valley fever	skos:exactMatch	MONDO:0017880	Unspecified	Rift Valley fever	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K26	duodenal ulcer	skos:exactMatch	MONDO:0005412	Unspecified	Duodenal ulcer	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N32.3	bladder diverticulum	skos:exactMatch	MONDO:0007197	Unspecified	Diverticulum of bladder	MONDO_MAPPINGS						19	0.13043478260869568	1.95
-ICD10CM:D89.810	acute graft versus host disease	skos:exactMatch	MONDO:0020546	Unspecified	Acute graft-versus-host disease	MONDO_MAPPINGS						2	0.12121212121212122	1.967741935483871
-ICD10CM:Q60.4	renal hypoplasia, bilateral	skos:exactMatch	MONDO:0019980	Unspecified	Renal hypoplasia, bilateral	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M77.1	epicondylitis	skos:exactMatch	MONDO:0001875	Unspecified	Lateral epicondylitis	MONDO_MAPPINGS						8	0.38095238095238093	1.9230769230769231
-ICD10CM:N25	impaired renal function disease	skos:exactMatch	MONDO:0001343	Unspecified	Disorders resulting from impaired renal tubular function	MONDO_MAPPINGS						40	0.4464285714285714	1.967741935483871
-ICD10CM:A77	spotted fever	skos:exactMatch	MONDO:0001195	Unspecified	Spotted fever [tick-borne rickettsioses]	MONDO_MAPPINGS						27	0.675	1.9230769230769231
-ICD10CM:B03	smallpox	skos:exactMatch	MONDO:0004651	Unspecified	Smallpox	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L50.3	familial dermatographia	skos:exactMatch	MONDO:0007448	Unspecified	Dermatographic urticaria	MONDO_MAPPINGS						19	0.3793103448275862	1.9621928166351608
-ICD10CM:G21.0	neuroleptic malignant syndrome	skos:exactMatch	MONDO:0019790	Unspecified	Malignant neuroleptic syndrome	MONDO_MAPPINGS						20	0.0	1.9666666666666666
-ICD10CM:J98.3	compensatory emphysema	skos:exactMatch	MONDO:0000924	Unspecified	Compensatory emphysema	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I85	esophageal varices	skos:exactMatch	MONDO:0001221	Unspecified	Esophageal varices	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G23.2	striatonigral degeneration	skos:exactMatch	MONDO:0003122	Unspecified	Striatonigral degeneration	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q31.5	congenital laryngomalacia	skos:exactMatch	MONDO:0007878	Unspecified	Congenital laryngomalacia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N80	endometriosis	skos:exactMatch	MONDO:0005133	Unspecified	Endometriosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C75.4	malignant carotid body paraganglioma	skos:exactMatch	MONDO:0004650	Unspecified	Malignant neoplasm of carotid body	MONDO_MAPPINGS						21	0.29268292682926833	1.9722222222222223
-ICD10CM:D07.0	endometrium carcinoma in situ	skos:exactMatch	MONDO:0003315	Unspecified	Carcinoma in situ of endometrium	MONDO_MAPPINGS						27	0.09375	1.9655172413793103
-ICD10CM:J01.0	acute maxillary sinusitis	skos:exactMatch	MONDO:0002186	Unspecified	Acute maxillary sinusitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J13	streptococcal pneumonia	skos:exactMatch	MONDO:0005972	Unspecified	Pneumonia due to Streptococcus pneumoniae	MONDO_MAPPINGS						20	0.47619047619047616	1.9584120982986768
-ICD10CM:B53	malaria	skos:exactMatch	MONDO:0005136	Unspecified	Other specified malaria	MONDO_MAPPINGS						16	0.6956521739130435	1.8571428571428572
-ICD10CM:I65.0	vertebral artery occlusion	skos:exactMatch	MONDO:0001258	Unspecified	Occlusion and stenosis of vertebral artery	MONDO_MAPPINGS						35	0.38095238095238093	1.9615384615384615
-ICD10CM:I42.0	dilated cardiomyopathy	skos:exactMatch	MONDO:0005021	Unspecified	Dilated cardiomyopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P70.2	neonatal diabetes mellitus	skos:exactMatch	MONDO:0016391	Unspecified	Neonatal diabetes mellitus	MONDO_MAPPINGS						0	0.0	0.0
+ICD10CM:N81.12	lateral cystocele	skos:exactMatch	MONDO:0001885	Unspecified	Cystocele, lateral	MONDO_MAPPINGS						15	0.05555555555555558	1.9411764705882353
+ICD10CM:N10-N16	interstitial nephritis	skos:exactMatch	MONDO:0001085	Unspecified	Renal tubulo-interstitial diseases (N10-N16)	MONDO_MAPPINGS						30	0.5957446808510638	1.9586776859504131
+ICD10CM:A92.1	O'nyong'nyong fever	skos:exactMatch	MONDO:0000342	Unspecified	O'nyong-nyong fever	MONDO_MAPPINGS						1	0.09999999999999998	1.9473684210526316
+ICD10CM:C13.1	aryepiglottic fold cancer	skos:exactMatch	MONDO:0004637	Unspecified	Malignant neoplasm of aryepiglottic fold, hypopharyngeal aspect	MONDO_MAPPINGS						41	0.625	1.96
+ICD10CM:A75-A79	Rickettsiosis	skos:exactMatch	MONDO:0006956	Unspecified	Rickettsioses (A75-A79)	MONDO_MAPPINGS						11	0.5	1.9230769230769231
+ICD10CM:M81	osteoporosis	skos:exactMatch	MONDO:0005298	Unspecified	Osteoporosis without current pathological fracture	MONDO_MAPPINGS						38	0.76	1.9166666666666667
+ICD10CM:Q10.2	isolated congenital entropion	skos:exactMatch	MONDO:0034971	Unspecified	Congenital entropion	MONDO_MAPPINGS						9	0.31034482758620685	1.9678953626634959
+ICD10CM:L90.3	atrophoderma of Pierini and Pasini	skos:exactMatch	MONDO:0022513	Unspecified	Atrophoderma of Pasini and Pierini	MONDO_MAPPINGS						6	0.0	1.9705882352941178
+ICD10CM:A15-A19	tuberculosis	skos:exactMatch	MONDO:0018076	Unspecified	Tuberculosis (A15-A19)	MONDO_MAPPINGS						10	0.4545454545454546	1.9166666666666667
+ICD10CM:N00-N99	obsolete disorder of genitourinary system	skos:exactMatch	MONDO:0021145	Unspecified	Diseases of the genitourinary system (N00-N99)	MONDO_MAPPINGS						27	0.38888888888888884	1.9767995240928018
+ICD10CM:A81.82	Gerstmann-Straussler-Scheinker syndrome	skos:exactMatch	MONDO:0007656	Unspecified	Gerstmann-StrÃ¤ussler-Scheinker syndrome	MONDO_MAPPINGS						2	0.07317073170731703	1.9743589743589745
+ICD10CM:G47.33	obstructive sleep apnea syndrome	skos:exactMatch	MONDO:0007147	Unspecified	Obstructive sleep apnea (adult) (pediatric)	MONDO_MAPPINGS						17	0.4375	1.970703125
+ICD10CM:D86.3	skin sarcoidosis	skos:exactMatch	MONDO:0006611	Unspecified	Sarcoidosis of skin	MONDO_MAPPINGS						13	0.1578947368421053	1.9375
+ICD10CM:D55-D59	hemolytic anemia	skos:exactMatch	MONDO:0003664	Unspecified	Hemolytic anemias (D55-D59)	MONDO_MAPPINGS						11	0.40740740740740744	1.9375
+ICD10CM:A52.3	neurosyphilis	skos:exactMatch	MONDO:0004944	Unspecified	Neurosyphilis, unspecified	MONDO_MAPPINGS						13	0.5	1.9230769230769231
 ICD10CM:K82	gallbladder disorder	skos:exactMatch	MONDO:0005281	Unspecified	Other diseases of gallbladder	MONDO_MAPPINGS						24	0.4193548387096774	1.95
-ICD10CM:Q44.4	bile duct cyst	skos:exactMatch	MONDO:0018805	Unspecified	Choledochal cyst	MONDO_MAPPINGS						8	0.5714285714285714	1.9438775510204083
-ICD10CM:N80.3	endometriosis of pelvic peritoneum	skos:exactMatch	MONDO:0001285	Unspecified	Endometriosis of pelvic peritoneum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B20-B20	HIV infectious disease	skos:exactMatch	MONDO:0005109	Unspecified	Human immunodeficiency virus [HIV] disease (B20)	MONDO_MAPPINGS						30	0.5714285714285714	1.9566115702479339
-ICD10CM:D12.0	benign neoplasm of cecum	skos:exactMatch	MONDO:0021464	Unspecified	Benign neoplasm of cecum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H65.0	acute serous otitis media	skos:exactMatch	MONDO:0001312	Unspecified	Acute serous otitis media	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J38.6	laryngostenosis	skos:exactMatch	MONDO:0001305	Unspecified	Stenosis of larynx	MONDO_MAPPINGS						16	0.26315789473684215	1.9377777777777778
-ICD10CM:H10.5	blepharoconjunctivitis	skos:exactMatch	MONDO:0002307	Unspecified	Blepharoconjunctivitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B35-B49	fungal infectious disease	skos:exactMatch	MONDO:0002041	Unspecified	Mycoses (B35-B49)	MONDO_MAPPINGS						24	0.8333333333333334	1.984
-ICD10CM:I75.81	atheroembolism of kidney	skos:exactMatch	MONDO:0002004	Unspecified	Atheroembolism of kidney	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K62.3	rectal prolapse	skos:exactMatch	MONDO:0004754	Unspecified	Rectal prolapse	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:R82.3	hemoglobinuria	skos:exactMatch	MONDO:0003656	Unspecified	Hemoglobinuria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D73.3	splenic abscess	skos:exactMatch	MONDO:0002333	Unspecified	Abscess of spleen	MONDO_MAPPINGS						14	0.3157894736842105	1.9377777777777778
-ICD10CM:H83.0	labyrinthitis	skos:exactMatch	MONDO:0002008	Unspecified	Labyrinthitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D73.1	hypersplenism	skos:exactMatch	MONDO:0006795	Unspecified	Hypersplenism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D18.02	intracranial hemangioma	skos:exactMatch	MONDO:0002328	Unspecified	Hemangioma of intracranial structures	MONDO_MAPPINGS						24	0.3783783783783784	1.9565217391304348
-ICD10CM:A37.1	Bordetella parapertussis infectious disease	skos:exactMatch	MONDO:0001353	Unspecified	Whooping cough due to Bordetella parapertussis	MONDO_MAPPINGS						41	0.38181818181818183	1.9772850189291509
-ICD10CM:E70.41	histidinemia	skos:exactMatch	MONDO:0009345	Unspecified	Histidinemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C06.1	vestibule of mouth cancer	skos:exactMatch	MONDO:0004727	Unspecified	Malignant neoplasm of vestibule of mouth	MONDO_MAPPINGS						29	0.4883720930232558	1.9648
-ICD10CM:H18.1	bullous keratopathy	skos:exactMatch	MONDO:0001180	Unspecified	Bullous keratopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B60.0	babesiosis	skos:exactMatch	MONDO:0005661	Unspecified	Babesiosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A30.3	borderline leprosy	skos:exactMatch	MONDO:0005125	Unspecified	Borderline leprosy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G92	toxic encephalopathy	skos:exactMatch	MONDO:0005527	Unspecified	Toxic encephalopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K04.0	pulpitis	skos:exactMatch	MONDO:0006937	Unspecified	Pulpitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A21.1	oculoglandular tularemia	skos:exactMatch	MONDO:0001665	Unspecified	Oculoglandular tularemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N70-N77	pelvic inflammatory disease	skos:exactMatch	MONDO:0000922	Unspecified	Inflammatory diseases of female pelvic organs (N70-N77)	MONDO_MAPPINGS						42	0.509090909090909	1.962962962962963
-ICD10CM:Q71.23	congenital absence of both forearm and hand, bilateral	skos:exactMatch	MONDO:0017499	Unspecified	Congenital absence of both forearm and hand, bilateral	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:R47.01	aphasia	skos:exactMatch	MONDO:0000598	Unspecified	Aphasia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C08	salivary gland cancer	skos:exactMatch	MONDO:0004669	Unspecified	Malignant neoplasm of other and unspecified major salivary glands	MONDO_MAPPINGS						52	0.696969696969697	1.9523809523809523
-ICD10CM:C16	gastric cancer	skos:exactMatch	MONDO:0001056	Unspecified	Malignant neoplasm of stomach	MONDO_MAPPINGS						25	0.696969696969697	1.9387755102040816
+ICD10CM:D10-D36	benign neoplasm	skos:exactMatch	MONDO:0005165	Unspecified	Benign neoplasms, except benign neuroendocrine tumors (D10-D36)	MONDO_MAPPINGS						48	0.7619047619047619	1.9333333333333333
+ICD10CM:N40-N53	male reproductive system disorder	skos:exactMatch	MONDO:0003150	Unspecified	Diseases of male genital organs (N40-N53)	MONDO_MAPPINGS						34	0.6296296296296297	1.9742883379247016
+ICD10CM:G21.0	neuroleptic malignant syndrome	skos:exactMatch	MONDO:0019790	Unspecified	Malignant neuroleptic syndrome	MONDO_MAPPINGS						20	0.0	1.9666666666666666
+ICD10CM:C50.2	female breast upper-inner quadrant cancer	skos:exactMatch	MONDO:0002067	Unspecified	Malignant neoplasm of upper-inner quadrant of breast	MONDO_MAPPINGS						25	0.368421052631579	1.9767995240928018
+ICD10CM:I21	myocardial infarction	skos:exactMatch	MONDO:0005068	Unspecified	Acute myocardial infarction	MONDO_MAPPINGS						6	0.2222222222222222	1.9523809523809523
+ICD10CM:N60-N65	breast disorder	skos:exactMatch	MONDO:0002657	Unspecified	Disorders of breast (N60-N65)	MONDO_MAPPINGS						22	0.48275862068965514	1.9333333333333333
+ICD10CM:I21.9	acute myocardial infarction	skos:exactMatch	MONDO:0004781	Unspecified	Acute myocardial infarction, unspecified	MONDO_MAPPINGS						13	0.32499999999999996	1.962962962962963
+ICD10CM:Q25.2	aorta atresia	skos:exactMatch	MONDO:0001863	Unspecified	Atresia of aorta	MONDO_MAPPINGS						11	0.1875	1.9230769230769231
+ICD10CM:I70-I79	vascular disorder	skos:exactMatch	MONDO:0005385	Unspecified	Diseases of arteries, arterioles and capillaries (I70-I79)	MONDO_MAPPINGS						49	0.75	1.9480968858131489
 ICD10CM:H80-H83	inner ear disorder	skos:exactMatch	MONDO:0002467	Unspecified	Diseases of inner ear (H80-H83)	MONDO_MAPPINGS						21	0.5588235294117647	1.9444444444444444
-ICD10CM:K91.5	postcholecystectomy syndrome	skos:exactMatch	MONDO:0006916	Unspecified	Postcholecystectomy syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A59	trichomoniasis	skos:exactMatch	MONDO:0002154	Unspecified	Trichomoniasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E28.0	obsolete hyperestrogenism	skos:exactMatch	MONDO:0001946	Unspecified	Estrogen excess	MONDO_MAPPINGS						20	0.5185185185185186	1.9712
-ICD10CM:I00-I02	rheumatic fever	skos:exactMatch	MONDO:0017767	Unspecified	Acute rheumatic fever (I00-I02)	MONDO_MAPPINGS						16	0.5161290322580645	1.9333333333333333
-ICD10CM:F52.0	hypoactive sexual desire disorder	skos:exactMatch	MONDO:0001821	Unspecified	Hypoactive sexual desire disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F95.0	transient tic disorder	skos:exactMatch	MONDO:0002419	Unspecified	Transient tic disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q23	congenital mitral valve insufficiency and/or stenosis	skos:exactMatch	MONDO:0019817	Unspecified	Congenital malformations of aortic and mitral valves	MONDO_MAPPINGS						32	0.359375	1.9822000711997152
-ICD10CM:H60.2	malignant otitis externa	skos:exactMatch	MONDO:0001050	Unspecified	Malignant otitis externa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A30.0	indeterminate leprosy	skos:exactMatch	MONDO:0001391	Unspecified	Indeterminate leprosy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P39.0	neonatal infective mastitis	skos:exactMatch	MONDO:0001736	Unspecified	Neonatal infective mastitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J67.2	bird fancier's lung	skos:exactMatch	MONDO:0005668	Unspecified	Bird fancier's lung	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C51.1	labia minora cancer	skos:exactMatch	MONDO:0001526	Unspecified	Malignant neoplasm of labium minus	MONDO_MAPPINGS						26	0.6052631578947368	1.9584487534626038
-ICD10CM:H25-H28	lens disorder	skos:exactMatch	MONDO:0001176	Unspecified	Disorders of lens (H25-H28)	MONDO_MAPPINGS						22	0.5185185185185186	1.9230769230769231
-ICD10CM:R82.1	myoglobinuria	skos:exactMatch	MONDO:0000866	Unspecified	Myoglobinuria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N84	polyp	skos:exactMatch	MONDO:0005079	Unspecified	Polyp of female genital tract	MONDO_MAPPINGS						24	0.8275862068965517	1.8
-ICD10CM:C66	ureter cancer	skos:exactMatch	MONDO:0008627	Unspecified	Malignant neoplasm of ureter	MONDO_MAPPINGS						23	0.6774193548387097	1.9349112426035502
-ICD10CM:E72.11	homocystinuria	skos:exactMatch	MONDO:0004737	Unspecified	Homocystinuria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M85.4	solitary bone cyst	skos:exactMatch	MONDO:0019372	Unspecified	Solitary bone cyst	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A48.3	toxic shock syndrome	skos:exactMatch	MONDO:0001881	Unspecified	Toxic shock syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H02.22	mechanical lagophthalmos	skos:exactMatch	MONDO:0001622	Unspecified	Mechanical lagophthalmos	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E87.6	potassium deficiency disease	skos:exactMatch	MONDO:0003019	Unspecified	Hypokalemia	MONDO_MAPPINGS						24	0.7419354838709677	1.9821428571428572
+ICD10CM:M42	osteochondrosis	skos:exactMatch	MONDO:0018381	Unspecified	Spinal osteochondrosis	MONDO_MAPPINGS						7	0.31818181818181823	1.9333333333333333
+ICD10CM:A77	spotted fever	skos:exactMatch	MONDO:0001195	Unspecified	Spotted fever [tick-borne rickettsioses]	MONDO_MAPPINGS						27	0.675	1.9230769230769231
+ICD10CM:N21	urolithiasis	skos:exactMatch	MONDO:0024647	Unspecified	Calculus of lower urinary tract	MONDO_MAPPINGS						26	0.7714285714285715	1.9236111111111112
+ICD10CM:C09.1	tonsillar pillar cancer	skos:exactMatch	MONDO:0004642	Unspecified	Malignant neoplasm of tonsillar pillar (anterior) (posterior)	MONDO_MAPPINGS						40	0.6666666666666667	1.9603024574669188
+ICD10CM:B85-B89	parasitic ectoparasitic infectious disease	skos:exactMatch	MONDO:0002875	Unspecified	Pediculosis, acariasis and other infestations (B85-B89)	MONDO_MAPPINGS						38	0.4098360655737705	1.9761904761904763
+ICD10CM:E71.0	maple syrup urine disease	skos:exactMatch	MONDO:0009563	Unspecified	Maple-syrup-urine disease	MONDO_MAPPINGS						2	0.14814814814814814	1.96
+ICD10CM:H47.6	visual cortex disorder	skos:exactMatch	MONDO:0003584	Unspecified	Disorders of visual cortex	MONDO_MAPPINGS						19	0.15384615384615385	1.9545454545454546
+ICD10CM:N90.5	obsolete atrophic vulva	skos:exactMatch	MONDO:0001932	Unspecified	Atrophy of vulva	MONDO_MAPPINGS						13	0.43999999999999995	1.9678638941398865
+ICD10CM:K00.1	teeth, supernumerary	skos:exactMatch	MONDO:0008533	Unspecified	Supernumerary teeth	MONDO_MAPPINGS						13	0.050000000000000044	1.9525
+ICD10CM:K70-K77	liver disorder	skos:exactMatch	MONDO:0005154	Unspecified	Diseases of liver (K70-K77)	MONDO_MAPPINGS						21	0.6333333333333333	1.9285714285714286
+ICD10CM:C40.3	cancer of short bone of lower limb	skos:exactMatch	MONDO:0000953	Unspecified	Malignant neoplasm of short bones of lower limb	MONDO_MAPPINGS						16	0.38	1.972318339100346
+ICD10CM:N32.0	bladder neck obstruction	skos:exactMatch	MONDO:0006679	Unspecified	Bladder-neck obstruction	MONDO_MAPPINGS						1	0.07999999999999996	1.9583333333333333
+ICD10CM:G83.81	Brown-Sequard syndrome	skos:exactMatch	MONDO:0003754	Unspecified	Brown-SÃ©quard syndrome	MONDO_MAPPINGS						2	0.125	1.9545454545454546
+ICD10CM:H40.1	glaucoma 1, open angle, E	skos:exactMatch	MONDO:0007665	Unspecified	Open-angle glaucoma	MONDO_MAPPINGS						22	0.3076923076923077	1.9648
+ICD10CM:G93.5	brain compression	skos:exactMatch	MONDO:0001291	Unspecified	Compression of brain	MONDO_MAPPINGS						15	0.15000000000000002	1.9411764705882353
+ICD10CM:H47.4	disorder of optic chiasm	skos:exactMatch	MONDO:0003568	Unspecified	Disorders of optic chiasm	MONDO_MAPPINGS						1	0.040000000000000036	1.9583333333333333
+ICD10CM:K00-K95	digestive system disorder	skos:exactMatch	MONDO:0004335	Unspecified	Diseases of the digestive system (K00-K95)	MONDO_MAPPINGS						25	0.5111111111111111	1.9632
+ICD10CM:C15-C26	digestive system cancer	skos:exactMatch	MONDO:0002516	Unspecified	Malignant neoplasms of digestive organs (C15-C26)	MONDO_MAPPINGS						36	0.5882352941176471	1.9584120982986768
+ICD10CM:K03	tooth hard tissue disease	skos:exactMatch	MONDO:0002220	Unspecified	Other diseases of hard tissues of teeth	MONDO_MAPPINGS						24	0.3589743589743589	1.96
+ICD10CM:Q90-Q99	chromosomal disorder	skos:exactMatch	MONDO:0019040	Unspecified	Chromosomal abnormalities, not elsewhere classified (Q90-Q99)	MONDO_MAPPINGS						44	0.6935483870967742	1.95
+ICD10CM:F30-F39	mood disorder	skos:exactMatch	MONDO:0005371	Unspecified	Mood [affective] disorders (F30-F39)	MONDO_MAPPINGS						23	0.6388888888888888	1.9230769230769231
+ICD10CM:A70-A74	chlamydia infectious disease	skos:exactMatch	MONDO:0021697	Unspecified	Other diseases caused by chlamydiae (A70-A74)	MONDO_MAPPINGS						36	0.5102040816326531	1.9668367346938775
+ICD10CM:H90	hearing loss disorder	skos:exactMatch	MONDO:0005365	Unspecified	Conductive and sensorineural hearing loss	MONDO_MAPPINGS						33	0.4878048780487805	1.9523809523809523
+ICD10CM:Q25.21	aortic arch interruption	skos:exactMatch	MONDO:0009010	Unspecified	Interruption of aortic arch	MONDO_MAPPINGS						24	0.11111111111111116	1.9583333333333333
+ICD10CM:E70.40	inborn disorder of histidine metabolism	skos:exactMatch	MONDO:0019228	Unspecified	Disorders of histidine metabolism, unspecified	MONDO_MAPPINGS						21	0.30000000000000004	1.9743589743589745
+ICD10CM:E08-E13	diabetes mellitus	skos:exactMatch	MONDO:0005015	Unspecified	Diabetes mellitus (E08-E13)	MONDO_MAPPINGS						10	0.37037037037037035	1.9411764705882353
+ICD10CM:I40	myocarditis	skos:exactMatch	MONDO:0004496	Unspecified	Acute myocarditis	MONDO_MAPPINGS						6	0.3529411764705882	1.9090909090909092
+ICD10CM:C40	cancer affecting bone of limb skeleton	skos:exactMatch	MONDO:0024311	Unspecified	Malignant neoplasm of bone and articular cartilage of limbs	MONDO_MAPPINGS						44	0.484375	1.9743767313019391
+ICD10CM:M12.2	tenosynovial giant cell tumor, diffuse type	skos:exactMatch	MONDO:0024686	Unspecified	Villonodular synovitis (pigmented)	MONDO_MAPPINGS						35	0.39583333333333337	1.9789075175770687
+ICD10CM:L92.2	granuloma faciale	skos:exactMatch	MONDO:0035879	Unspecified	Granuloma faciale [eosinophilic granuloma of skin]	MONDO_MAPPINGS						33	0.6599999999999999	1.9411764705882353
+ICD10CM:Q82.2	mastocytosis	skos:exactMatch	MONDO:0007950	Unspecified	Congenital cutaneous mastocytosis	MONDO_MAPPINGS						21	0.6363636363636364	1.9166666666666667
+ICD10CM:G51.4	isolated facial myokymia	skos:exactMatch	MONDO:0016373	Unspecified	Facial myokymia	MONDO_MAPPINGS						9	0.375	1.9652777777777777
+ICD10CM:M04-M04	autoinflammatory syndrome	skos:exactMatch	MONDO:0019751	Unspecified	Autoinflammatory syndromes (M04)	MONDO_MAPPINGS						7	0.21875	1.96
+ICD10CM:M60-M63	muscle tissue disorder	skos:exactMatch	MONDO:0003939	Unspecified	Disorders of muscles (M60-M63)	MONDO_MAPPINGS						24	0.47058823529411764	1.9566115702479339
+ICD10CM:E78.5	hyperlipidemia	skos:exactMatch	MONDO:0021187	Unspecified	Hyperlipidemia, unspecified	MONDO_MAPPINGS						13	0.4814814814814815	1.9285714285714286
+ICD10CM:A20-A28	zoonotic bacterial infection	skos:exactMatch	MONDO:0044746	Unspecified	Certain zoonotic bacterial diseases (A20-A28)	MONDO_MAPPINGS						24	0.47916666666666663	1.965561224489796
+ICD10CM:N70-N77	pelvic inflammatory disease	skos:exactMatch	MONDO:0000922	Unspecified	Inflammatory diseases of female pelvic organs (N70-N77)	MONDO_MAPPINGS						42	0.509090909090909	1.962962962962963
 MONDO:0000226	mineral metabolism disease	skos:exactMatch	ICD10CM:E83	Unspecified	mineral metabolism disease	MONDO_MAPPINGS						0	0.0	0.0
 ICD10CM:E83	mineral metabolism disease	skos:exactMatch	MONDO:0000226	Unspecified	Disorders of mineral metabolism	MONDO_MAPPINGS						21	0.2727272727272727	1.9615384615384615
-ICD10CM:D47.2	monoclonal gammopathy	skos:exactMatch	MONDO:0004960	Unspecified	Monoclonal gammopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G71.0	muscular dystrophy	skos:exactMatch	MONDO:0020121	Unspecified	Muscular dystrophy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L90.0	lichen sclerosus et atrophicus	skos:exactMatch	MONDO:0007899	Unspecified	Lichen sclerosus et atrophicus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q60.1	bilateral renal agenesis	skos:exactMatch	MONDO:0015986	Unspecified	Renal agenesis, bilateral	MONDO_MAPPINGS						21	0.040000000000000036	1.9583333333333333
-ICD10CM:C50.2	female breast upper-inner quadrant cancer	skos:exactMatch	MONDO:0002067	Unspecified	Malignant neoplasm of upper-inner quadrant of breast	MONDO_MAPPINGS						25	0.368421052631579	1.9767995240928018
-ICD10CM:L95.0	livedoid vasculopathy	skos:exactMatch	MONDO:0025514	Unspecified	Livedoid vasculitis	MONDO_MAPPINGS						5	0.33333333333333337	1.9591836734693877
-ICD10CM:Q38.1	ankyloglossia	skos:exactMatch	MONDO:0007125	Unspecified	Ankyloglossia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M75.4	shoulder impingement syndrome	skos:exactMatch	MONDO:0006968	Unspecified	Impingement syndrome of shoulder	MONDO_MAPPINGS						21	0.09375	1.9655172413793103
-ICD10CM:F70-F79	intellectual disability	skos:exactMatch	MONDO:0001071	Unspecified	Intellectual Disabilities (F70-F79)	MONDO_MAPPINGS						13	0.38888888888888884	1.9584120982986768
-ICD10CM:L60-L75	skin appendage disorder	skos:exactMatch	MONDO:0024481	Unspecified	Disorders of skin appendages (L60-L75)	MONDO_MAPPINGS						23	0.39473684210526316	1.9565217391304348
-ICD10CM:C31.2	frontal sinus cancer	skos:exactMatch	MONDO:0001756	Unspecified	Malignant neoplasm of frontal sinus	MONDO_MAPPINGS						29	0.5526315789473684	1.955
-ICD10CM:M33.2	polymyositis	skos:exactMatch	MONDO:0019127	Unspecified	Polymyositis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M72.6	necrotizing fasciitis	skos:exactMatch	MONDO:0004835	Unspecified	Necrotizing fasciitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K52.3	indeterminate colitis	skos:exactMatch	MONDO:0006038	Unspecified	Indeterminate colitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N25.81	secondary hyperparathyroidism of renal origin	skos:exactMatch	MONDO:0001530	Unspecified	Secondary hyperparathyroidism of renal origin	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G57.0	lesion of sciatic nerve	skos:exactMatch	MONDO:0001543	Unspecified	Lesion of sciatic nerve	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q35.3	cleft soft palate	skos:exactMatch	MONDO:0007338	Unspecified	Cleft soft palate	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L73.2	hidradenitis suppurativa	skos:exactMatch	MONDO:0006559	Unspecified	Hidradenitis suppurativa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J32.2	chronic ethmoidal sinusitis	skos:exactMatch	MONDO:0004757	Unspecified	Chronic ethmoidal sinusitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E78.5	hyperlipidemia	skos:exactMatch	MONDO:0021187	Unspecified	Hyperlipidemia, unspecified	MONDO_MAPPINGS						13	0.4814814814814815	1.9285714285714286
-ICD10CM:F60.2	antisocial personality disorder	skos:exactMatch	MONDO:0001164	Unspecified	Antisocial personality disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H50.6	mechanical strabismus	skos:exactMatch	MONDO:0004753	Unspecified	Mechanical strabismus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K76.5	hepatic veno-occlusive disease	skos:exactMatch	MONDO:0019514	Unspecified	Hepatic veno-occlusive disease	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D14.2	benign neoplasm of trachea	skos:exactMatch	MONDO:0021517	Unspecified	Benign neoplasm of trachea	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I15	hypertensive disorder	skos:exactMatch	MONDO:0005044	Unspecified	Secondary hypertension	MONDO_MAPPINGS						20	0.40740740740740744	1.9546485260770976
-ICD10CM:L90.4	acrodermatitis chronica atrophicans	skos:exactMatch	MONDO:0006524	Unspecified	Acrodermatitis chronica atrophicans	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N81.81	perineocele	skos:exactMatch	MONDO:0001559	Unspecified	Perineocele	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D13.1	benign neoplasm of stomach	skos:exactMatch	MONDO:0021449	Unspecified	Benign neoplasm of stomach	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C06.2	retromolar area cancer	skos:exactMatch	MONDO:0004682	Unspecified	Malignant neoplasm of retromolar area	MONDO_MAPPINGS						28	0.525	1.9586776859504131
-ICD10CM:Q81.0	epidermolysis bullosa simplex	skos:exactMatch	MONDO:0017610	Unspecified	Epidermolysis bullosa simplex	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F40.0	agoraphobia	skos:exactMatch	MONDO:0003709	Unspecified	Agoraphobia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H53.61	abnormal threshold of rods	skos:exactMatch	MONDO:0001396	Unspecified	Abnormal dark adaptation curve	MONDO_MAPPINGS						18	0.5263157894736843	1.9689349112426036
-ICD10CM:N42.0	prostate calculus	skos:exactMatch	MONDO:0001776	Unspecified	Calculus of prostate	MONDO_MAPPINGS						19	0.15000000000000002	1.9411764705882353
-ICD10CM:A39	meningococcal infection	skos:exactMatch	MONDO:0005373	Unspecified	Meningococcal infection	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J32.0	chronic maxillary sinusitis	skos:exactMatch	MONDO:0001122	Unspecified	Chronic maxillary sinusitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M30.0	polyarteritis nodosa	skos:exactMatch	MONDO:0019170	Unspecified	Polyarteritis nodosa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H74.0	tympanosclerosis	skos:exactMatch	MONDO:0001443	Unspecified	Tympanosclerosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F80.2	mixed receptive-expressive language disorder	skos:exactMatch	MONDO:0001568	Unspecified	Mixed receptive-expressive language disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G24	dystonic disorder	skos:exactMatch	MONDO:0003441	Unspecified	Dystonia	MONDO_MAPPINGS						10	0.6111111111111112	1.958477508650519
-ICD10CM:N43.4	spermatocele	skos:exactMatch	MONDO:0006977	Unspecified	Spermatocele of epididymis	MONDO_MAPPINGS						14	0.5384615384615384	1.9166666666666667
-ICD10CM:E06.0	acute thyroiditis	skos:exactMatch	MONDO:0001949	Unspecified	Acute thyroiditis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M04-M04	autoinflammatory syndrome	skos:exactMatch	MONDO:0019751	Unspecified	Autoinflammatory syndromes (M04)	MONDO_MAPPINGS						7	0.21875	1.96
-ICD10CM:I00-I99	vascular disorder	skos:exactMatch	MONDO:0005385	Unspecified	Diseases of the circulatory system (I00-I99)	MONDO_MAPPINGS						35	0.7021276595744681	1.944636678200692
-ICD10CM:H46.3	toxic optic neuropathy	skos:exactMatch	MONDO:0001688	Unspecified	Toxic optic neuropathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F63.0	pathological gambling	skos:exactMatch	MONDO:0011662	Unspecified	Pathological gambling	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G95.1	vascular myelopathy	skos:exactMatch	MONDO:0002552	Unspecified	Vascular myelopathies	MONDO_MAPPINGS						3	0.18181818181818177	1.9473684210526316
-ICD10CM:K22.4	dyskinesia of esophagus	skos:exactMatch	MONDO:0004729	Unspecified	Dyskinesia of esophagus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L68.1	acquired hypertrichosis lanuginosa	skos:exactMatch	MONDO:0016380	Unspecified	Acquired hypertrichosis lanuginosa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E08-E13	diabetes mellitus	skos:exactMatch	MONDO:0005015	Unspecified	Diabetes mellitus (E08-E13)	MONDO_MAPPINGS						10	0.37037037037037035	1.9411764705882353
-ICD10CM:A81.2	progressive multifocal leukoencephalopathy	skos:exactMatch	MONDO:0016318	Unspecified	Progressive multifocal leukoencephalopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L71	rosacea	skos:exactMatch	MONDO:0006604	Unspecified	Rosacea	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C14.2	Waldeyer's ring cancer	skos:exactMatch	MONDO:0004685	Unspecified	Malignant neoplasm of Waldeyer's ring	MONDO_MAPPINGS						29	0.525	1.9586776859504131
-ICD10CM:H46	optic neuritis	skos:exactMatch	MONDO:0005885	Unspecified	Optic neuritis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D72.823	leukemoid reaction	skos:exactMatch	MONDO:0006829	Unspecified	Leukemoid reaction	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J30.0	vasomotor rhinitis	skos:exactMatch	MONDO:0006004	Unspecified	Vasomotor rhinitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q77.0	achondrogenesis	skos:exactMatch	MONDO:0019648	Unspecified	Achondrogenesis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A07.4	cyclosporiasis	skos:exactMatch	MONDO:0005725	Unspecified	Cyclosporiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C05.0	hard palate cancer	skos:exactMatch	MONDO:0004719	Unspecified	Malignant neoplasm of hard palate	MONDO_MAPPINGS						26	0.5833333333333333	1.9506172839506173
-ICD10CM:A43	nocardiosis	skos:exactMatch	MONDO:0017776	Unspecified	Nocardiosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P28.5	neonatal respiratory failure	skos:exactMatch	MONDO:0001207	Unspecified	Respiratory failure of newborn	MONDO_MAPPINGS						20	0.2941176470588235	1.9642857142857142
-ICD10CM:D16.5	benign neoplasm of lower jaw bone	skos:exactMatch	MONDO:0021522	Unspecified	Benign neoplasm of lower jaw bone	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F44.0	dissociative amnesia	skos:exactMatch	MONDO:0001185	Unspecified	Dissociative amnesia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N00-N99	obsolete disorder of genitourinary system	skos:exactMatch	MONDO:0021145	Unspecified	Diseases of the genitourinary system (N00-N99)	MONDO_MAPPINGS						27	0.38888888888888884	1.9767995240928018
-ICD10CM:T20-T25	burn	skos:exactMatch	MONDO:0043519	Unspecified	Burns and corrosions of external body surface, specified by site (T20-T25)	MONDO_MAPPINGS						70	0.9459459459459459	1.75
-ICD10CM:N70.01	acute salpingitis	skos:exactMatch	MONDO:0001173	Unspecified	Acute salpingitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E55	vitamin D deficiency	skos:exactMatch	MONDO:0100471	Unspecified	Vitamin D deficiency	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D07.5	grade III prostatic intraepithelial neoplasia	skos:exactMatch	MONDO:0006234	Unspecified	Carcinoma in situ of prostate	MONDO_MAPPINGS						33	0.52	1.9807407407407407
-ICD10CM:Q71.2	congenital absence of both forearm and hand	skos:exactMatch	MONDO:0017443	Unspecified	Congenital absence of both forearm and hand	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I25.3	heart aneurysm	skos:exactMatch	MONDO:0006779	Unspecified	Aneurysm of heart	MONDO_MAPPINGS						14	0.17647058823529416	1.9285714285714286
-ICD10CM:A98.5	hantavirus hemorrhagic fever with renal syndrome	skos:exactMatch	MONDO:0005784	Unspecified	Hemorrhagic fever with renal syndrome	MONDO_MAPPINGS						11	0.22916666666666663	1.9796006944444444
-ICD10CM:L43.1	bullous lichen planus	skos:exactMatch	MONDO:0018056	Unspecified	Bullous lichen planus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E70.40	inborn disorder of histidine metabolism	skos:exactMatch	MONDO:0019228	Unspecified	Disorders of histidine metabolism, unspecified	MONDO_MAPPINGS						21	0.30000000000000004	1.9743589743589745
-ICD10CM:L50.0	allergic urticaria	skos:exactMatch	MONDO:0006526	Unspecified	Allergic urticaria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N32.0	bladder neck obstruction	skos:exactMatch	MONDO:0006679	Unspecified	Bladder-neck obstruction	MONDO_MAPPINGS						1	0.07999999999999996	1.9583333333333333
-ICD10CM:L44.1	lichen nitidus	skos:exactMatch	MONDO:0006571	Unspecified	Lichen nitidus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F60.6	avoidant personality disorder	skos:exactMatch	MONDO:0002027	Unspecified	Avoidant personality disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I82.1	thrombophlebitis migrans	skos:exactMatch	MONDO:0001954	Unspecified	Thrombophlebitis migrans	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K04.5	chronic apical periodontitis	skos:exactMatch	MONDO:0001251	Unspecified	Chronic apical periodontitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C71.2	temporal lobe cancer	skos:exactMatch	MONDO:0002218	Unspecified	Malignant neoplasm of temporal lobe	MONDO_MAPPINGS						29	0.5526315789473684	1.955
-ICD10CM:N47.6	balanoposthitis	skos:exactMatch	MONDO:0001618	Unspecified	Balanoposthitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N45.2	orchitis	skos:exactMatch	MONDO:0006882	Unspecified	Orchitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G91.0	communicating hydrocephalus	skos:exactMatch	MONDO:0002045	Unspecified	Communicating hydrocephalus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B04	monkeypox	skos:exactMatch	MONDO:0002594	Unspecified	Monkeypox	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H11.0	pterygium	skos:exactMatch	MONDO:0005085	Unspecified	Pterygium of eye	MONDO_MAPPINGS						7	0.4375	1.8888888888888888
-ICD10CM:B87.1	wound myiasis	skos:exactMatch	MONDO:0015622	Unspecified	Wound myiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q85.02	neurofibromatosis type 2	skos:exactMatch	MONDO:0007039	Unspecified	Neurofibromatosis, type 2	MONDO_MAPPINGS						1	0.040000000000000036	1.9583333333333333
-ICD10CM:L82.0	inflamed seborrheic keratosis	skos:exactMatch	MONDO:0001337	Unspecified	Inflamed seborrheic keratosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F63.1	pyromania	skos:exactMatch	MONDO:0001522	Unspecified	Pyromania	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K76.6	portal hypertension	skos:exactMatch	MONDO:0005080	Unspecified	Portal hypertension	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B40	blastomycosis	skos:exactMatch	MONDO:0005672	Unspecified	Blastomycosis	MONDO_MAPPINGS						0	0.0	0.0
+ICD10CM:C51-C58	female reproductive organ cancer	skos:exactMatch	MONDO:0001416	Unspecified	Malignant neoplasms of female genital organs (C51-C58)	MONDO_MAPPINGS						39	0.6129032258064516	1.9716796875
+ICD10CM:A85	encephalitis	skos:exactMatch	MONDO:0019956	Unspecified	Other viral encephalitis, not elsewhere classified	MONDO_MAPPINGS						38	0.76	1.9166666666666667
+ICD10CM:F53	postpartum psychosis	skos:exactMatch	MONDO:0018623	Unspecified	Mental and behavioral disorders associated with the puerperium, not elsewhere classified	MONDO_MAPPINGS						76	0.8	1.9525
+ICD10CM:E71.511	obsolete neonatal adrenoleukodystrophy	skos:exactMatch	MONDO:0018598	Unspecified	Neonatal adrenoleukodystrophy	MONDO_MAPPINGS						9	0.23684210526315785	1.9743767313019391
+ICD10CM:N25	impaired renal function disease	skos:exactMatch	MONDO:0001343	Unspecified	Disorders resulting from impaired renal tubular function	MONDO_MAPPINGS						40	0.4464285714285714	1.967741935483871
+ICD10CM:E72.3	inborn disorder of lysine and hydroxylysine metabolism	skos:exactMatch	MONDO:0017351	Unspecified	Disorders of lysine and hydroxylysine metabolism	MONDO_MAPPINGS						8	0.1454545454545455	1.9814814814814814
+ICD10CM:Q44.6	autosomal dominant polycystic liver disease	skos:exactMatch	MONDO:0000447	Unspecified	Cystic disease of liver	MONDO_MAPPINGS						31	0.5	1.9799891833423473
 ICD10CM:B90-B94	post-infectious disorder	skos:exactMatch	MONDO:0021669	Unspecified	Sequelae of infectious and parasitic diseases (B90-B94)	MONDO_MAPPINGS						40	0.6140350877192983	1.9583333333333333
 ICD10CM:C64-C68	malignant urinary system neoplasm	skos:exactMatch	MONDO:0006295	Unspecified	Malignant neoplasms of urinary tract (C64-C68)	MONDO_MAPPINGS						28	0.42000000000000004	1.9696969696969697
-ICD10CM:H02.3	blepharochalasis	skos:exactMatch	MONDO:0002660	Unspecified	Blepharochalasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G51.1	geniculate ganglionitis	skos:exactMatch	MONDO:0001873	Unspecified	Geniculate ganglionitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I45.81	long QT syndrome	skos:exactMatch	MONDO:0002442	Unspecified	Long QT syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B45	cryptococcosis	skos:exactMatch	MONDO:0005724	Unspecified	Cryptococcosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N60.3	breast fibrosis	skos:exactMatch	MONDO:0006118	Unspecified	Fibrosclerosis of breast	MONDO_MAPPINGS						16	0.375	1.9333333333333333
-ICD10CM:C53.0	malignant neoplasm of endocervix	skos:exactMatch	MONDO:0021309	Unspecified	Malignant neoplasm of endocervix	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K06.0	gingival recession	skos:exactMatch	MONDO:0001268	Unspecified	Gingival recession	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K91.850	pouchitis	skos:exactMatch	MONDO:0005312	Unspecified	Pouchitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B47	mycetoma	skos:exactMatch	MONDO:0016823	Unspecified	Mycetoma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K63.5	polyp of colon	skos:exactMatch	MONDO:0021400	Unspecified	Polyp of colon	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M79.7	fibromyalgia	skos:exactMatch	MONDO:0005546	Unspecified	Fibromyalgia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A30	leprosy	skos:exactMatch	MONDO:0005124	Unspecified	Leprosy [Hansen's disease]	MONDO_MAPPINGS						19	0.7307692307692308	1.8571428571428572
-ICD10CM:N81.11	midline cystocele	skos:exactMatch	MONDO:0001886	Unspecified	Cystocele, midline	MONDO_MAPPINGS						16	0.05555555555555558	1.9411764705882353
-ICD10CM:L08.0	pyoderma	skos:exactMatch	MONDO:0002922	Unspecified	Pyoderma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D13.0	benign neoplasm of esophagus	skos:exactMatch	MONDO:0021459	Unspecified	Benign neoplasm of esophagus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q00-Q99	disorder of development or morphogenesis	skos:exactMatch	MONDO:0021147	Unspecified	Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)	MONDO_MAPPINGS						62	0.611764705882353	1.976875
-ICD10CM:H68	eustachian tube disorder	skos:exactMatch	MONDO:0004866	Unspecified	Eustachian salpingitis and obstruction	MONDO_MAPPINGS						23	0.5238095238095238	1.9583333333333333
-ICD10CM:I70-I79	vascular disorder	skos:exactMatch	MONDO:0005385	Unspecified	Diseases of arteries, arterioles and capillaries (I70-I79)	MONDO_MAPPINGS						49	0.75	1.9480968858131489
-ICD10CM:K76.4	peliosis hepatis	skos:exactMatch	MONDO:0004717	Unspecified	Peliosis hepatis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J35.02	adenoiditis	skos:exactMatch	MONDO:0000261	Unspecified	Chronic adenoiditis	MONDO_MAPPINGS						8	0.42105263157894735	1.9090909090909092
-ICD10CM:P53	hemorrhagic disease of newborn	skos:exactMatch	MONDO:0006784	Unspecified	Hemorrhagic disease of newborn	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H53.51	achromatopsia	skos:exactMatch	MONDO:0018852	Unspecified	Achromatopsia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P61.2	anemia of prematurity	skos:exactMatch	MONDO:0001239	Unspecified	Anemia of prematurity	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q00-Q07	central nervous system malformation	skos:exactMatch	MONDO:0020022	Unspecified	Congenital malformations of the nervous system (Q00-Q07)	MONDO_MAPPINGS						37	0.4035087719298246	1.9714285714285715
-ICD10CM:D61.3	idiopathic aplastic anemia	skos:exactMatch	MONDO:0012197	Unspecified	Idiopathic aplastic anemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G51.3	clonic hemifacial spasm	skos:exactMatch	MONDO:0007713	Unspecified	Clonic hemifacial spasm	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G80.3	athetoid cerebral palsy	skos:exactMatch	MONDO:0022697	Unspecified	Athetoid cerebral palsy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B48.3	geotrichosis	skos:exactMatch	MONDO:0005772	Unspecified	Geotrichosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K59.4	anal spasm	skos:exactMatch	MONDO:0001274	Unspecified	Anal spasm	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G89.4	chronic pain syndrome	skos:exactMatch	MONDO:0024317	Unspecified	Chronic pain syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D13.6	benign neoplasm of pancreas	skos:exactMatch	MONDO:0021470	Unspecified	Benign neoplasm of pancreas	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F30-F39	mood disorder	skos:exactMatch	MONDO:0005371	Unspecified	Mood [affective] disorders (F30-F39)	MONDO_MAPPINGS						23	0.6388888888888888	1.9230769230769231
-ICD10CM:H40-H42	glaucoma	skos:exactMatch	MONDO:0005041	Unspecified	Glaucoma (H40-H42)	MONDO_MAPPINGS						10	0.5555555555555556	1.875
-ICD10CM:H01.0	blepharitis	skos:exactMatch	MONDO:0004785	Unspecified	Blepharitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q23.2	congenital mitral stenosis	skos:exactMatch	MONDO:0020398	Unspecified	Congenital mitral stenosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H49.4	progressive external ophthalmoplegia	skos:exactMatch	MONDO:0005181	Unspecified	Progressive external ophthalmoplegia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H10-H11	conjunctival disorder	skos:exactMatch	MONDO:0006170	Unspecified	Disorders of conjunctiva (H10-H11)	MONDO_MAPPINGS						23	0.4285714285714286	1.9546485260770976
-ICD10CM:H31.21	choroideremia	skos:exactMatch	MONDO:0010557	Unspecified	Choroideremia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.4	narcolepsy-cataplexy syndrome	skos:exactMatch	MONDO:0016158	Unspecified	Narcolepsy and cataplexy	MONDO_MAPPINGS						14	0.29032258064516125	1.9678953626634959
-ICD10CM:G45.4	transient global amnesia	skos:exactMatch	MONDO:0001617	Unspecified	Transient global amnesia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N48.3	priapism	skos:exactMatch	MONDO:0004745	Unspecified	Priapism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F60.81	narcissistic personality disorder	skos:exactMatch	MONDO:0002411	Unspecified	Narcissistic personality disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L83	acanthosis nigricans	skos:exactMatch	MONDO:0007035	Unspecified	Acanthosis nigricans	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H53.52	acquired color blindness	skos:exactMatch	MONDO:0001828	Unspecified	Acquired color vision deficiency	MONDO_MAPPINGS						13	0.4	1.9600694444444444
-ICD10CM:K40-K46	obsolete hernia	skos:exactMatch	MONDO:0024583	Unspecified	Hernia (K40-K46)	MONDO_MAPPINGS						16	0.7083333333333333	1.96
-ICD10CM:C09	tonsil cancer	skos:exactMatch	MONDO:0006998	Unspecified	Malignant neoplasm of tonsil	MONDO_MAPPINGS						23	0.6774193548387097	1.9408284023668638
-ICD10CM:C19	rectosigmoid junction cancer	skos:exactMatch	MONDO:0002425	Unspecified	Malignant neoplasm of rectosigmoid junction	MONDO_MAPPINGS						29	0.4565217391304348	1.9642857142857142
-ICD10CM:G12.2	motor neuron disorder	skos:exactMatch	MONDO:0020128	Unspecified	Motor neuron disease	MONDO_MAPPINGS						4	0.29166666666666663	1.9523809523809523
-ICD10CM:C84.0	mycosis fungoides	skos:exactMatch	MONDO:0009691	Unspecified	Mycosis fungoides	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K82.1	hydrops of gallbladder	skos:exactMatch	MONDO:0004859	Unspecified	Hydrops of gallbladder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J84.841	neuroendocrine cell hyperplasia of infancy	skos:exactMatch	MONDO:0016322	Unspecified	Neuroendocrine cell hyperplasia of infancy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:R09.1	pleurisy	skos:exactMatch	MONDO:0000986	Unspecified	Pleurisy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H90	hearing loss disorder	skos:exactMatch	MONDO:0005365	Unspecified	Conductive and sensorineural hearing loss	MONDO_MAPPINGS						33	0.4878048780487805	1.9523809523809523
-ICD10CM:D29.4	benign neoplasm of scrotum	skos:exactMatch	MONDO:0021472	Unspecified	Benign neoplasm of scrotum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D73.5	splenic infarction	skos:exactMatch	MONDO:0006978	Unspecified	Infarction of spleen	MONDO_MAPPINGS						16	0.2727272727272727	1.9444444444444444
-ICD10CM:K70.3	alcoholic liver cirrhosis	skos:exactMatch	MONDO:0006644	Unspecified	Alcoholic cirrhosis of liver	MONDO_MAPPINGS						15	0.1071428571428571	1.96
-ICD10CM:G47.31	primary central sleep apnea syndrome	skos:exactMatch	MONDO:0024356	Unspecified	Primary central sleep apnea	MONDO_MAPPINGS						9	0.25	1.9737654320987654
-ICD10CM:A58	granuloma inguinale	skos:exactMatch	MONDO:0005777	Unspecified	Granuloma inguinale	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:T80-T88	iatrogenic disease	skos:exactMatch	MONDO:0043543	Unspecified	Complications of surgical and medical care, not elsewhere classified (T80-T88)	MONDO_MAPPINGS						64	0.7692307692307692	1.9444444444444444
-ICD10CM:R41.1	anterograde amnesia	skos:exactMatch	MONDO:0003398	Unspecified	Anterograde amnesia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N48.0	leukoplakia of penis	skos:exactMatch	MONDO:0006830	Unspecified	Leukoplakia of penis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A00	cholera	skos:exactMatch	MONDO:0015766	Unspecified	Cholera	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H00	eyelid disorder	skos:exactMatch	MONDO:0003382	Unspecified	Hordeolum and chalazion	MONDO_MAPPINGS						19	0.7333333333333334	1.9422222222222223
-ICD10CM:F20.81	schizophreniform disorder	skos:exactMatch	MONDO:0001265	Unspecified	Schizophreniform disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:O90.3	peripartum cardiomyopathy	skos:exactMatch	MONDO:0018920	Unspecified	Peripartum cardiomyopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L01.03	bullous impetigo	skos:exactMatch	MONDO:0018182	Unspecified	Bullous impetigo	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F60.4	histrionic personality disorder	skos:exactMatch	MONDO:0002613	Unspecified	Histrionic personality disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D32	benign neoplasm of meninges	skos:exactMatch	MONDO:0021527	Unspecified	Benign neoplasm of meninges	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I46	cardiac arrest	skos:exactMatch	MONDO:0000745	Unspecified	Cardiac arrest	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M62.84	sarcopenia	skos:exactMatch	MONDO:0006516	Unspecified	Sarcopenia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D68.61	antiphospholipid syndrome	skos:exactMatch	MONDO:8000010	Unspecified	Antiphospholipid syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K25	gastric ulcer	skos:exactMatch	MONDO:0001126	Unspecified	Gastric ulcer	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K14.4	atrophic glossitis	skos:exactMatch	MONDO:0001989	Unspecified	Atrophy of tongue papillae	MONDO_MAPPINGS						17	0.625	1.9567901234567902
-ICD10CM:E74.0	glycogen storage disease	skos:exactMatch	MONDO:0002412	Unspecified	Glycogen storage disease	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I20-I25	myocardial ischemia	skos:exactMatch	MONDO:0024644	Unspecified	Ischemic heart diseases (I20-I25)	MONDO_MAPPINGS						25	0.631578947368421	1.9556786703601108
-ICD10CM:G44.51	hemicrania continua	skos:exactMatch	MONDO:0018615	Unspecified	Hemicrania continua	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N10-N16	interstitial nephritis	skos:exactMatch	MONDO:0001085	Unspecified	Renal tubulo-interstitial diseases (N10-N16)	MONDO_MAPPINGS						30	0.5957446808510638	1.9586776859504131
-ICD10CM:B35.4	tinea corporis	skos:exactMatch	MONDO:0001461	Unspecified	Tinea corporis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A39.0	meningococcal meningitis	skos:exactMatch	MONDO:0018059	Unspecified	Meningococcal meningitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K75.4	autoimmune hepatitis	skos:exactMatch	MONDO:0016264	Unspecified	Autoimmune hepatitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A00-A09	intestinal infectious disease	skos:exactMatch	MONDO:0000916	Unspecified	Intestinal infectious diseases (A00-A09)	MONDO_MAPPINGS						11	0.275	1.9655172413793103
-ICD10CM:K05.4	periodontitis	skos:exactMatch	MONDO:0005076	Unspecified	Periodontosis	MONDO_MAPPINGS						2	0.2666666666666667	1.9230769230769231
-ICD10CM:F60.5	obsessive-compulsive personality disorder	skos:exactMatch	MONDO:0001158	Unspecified	Obsessive-compulsive personality disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M35.7	hypermobility syndrome	skos:exactMatch	MONDO:0001798	Unspecified	Hypermobility syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L10.1	pemphigus vegetans	skos:exactMatch	MONDO:0019322	Unspecified	Pemphigus vegetans	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F52.4	premature ejaculation	skos:exactMatch	MONDO:0001780	Unspecified	Premature ejaculation	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F32	depressive disorder	skos:exactMatch	MONDO:0002050	Unspecified	Depressive episode	MONDO_MAPPINGS						4	0.23809523809523814	1.9473684210526316
-ICD10CM:H47.6	visual cortex disorder	skos:exactMatch	MONDO:0003584	Unspecified	Disorders of visual cortex	MONDO_MAPPINGS						19	0.15384615384615385	1.9545454545454546
-ICD10CM:I21	myocardial infarction	skos:exactMatch	MONDO:0005068	Unspecified	Acute myocardial infarction	MONDO_MAPPINGS						6	0.2222222222222222	1.9523809523809523
-ICD10CM:B86	scabies	skos:exactMatch	MONDO:0004525	Unspecified	Scabies	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q82.1	xeroderma pigmentosum	skos:exactMatch	MONDO:0019600	Unspecified	Xeroderma pigmentosum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H60.4	cholesteatoma of external ear	skos:exactMatch	MONDO:0006532	Unspecified	Cholesteatoma of external ear	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A00-B99	infectious disease	skos:exactMatch	MONDO:0005550	Unspecified	Certain infectious and parasitic diseases (A00-B99)	MONDO_MAPPINGS						33	0.6470588235294117	1.9444444444444444
-ICD10CM:N97.2	female infertility of uterine origin	skos:exactMatch	MONDO:0001753	Unspecified	Female infertility of uterine origin	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H18.55	macular corneal dystrophy	skos:exactMatch	MONDO:0009020	Unspecified	Macular corneal dystrophy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H00.1	chalazion	skos:exactMatch	MONDO:0005844	Unspecified	Chalazion	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D81.810	biotinidase deficiency	skos:exactMatch	MONDO:0009665	Unspecified	Biotinidase deficiency	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P37.5	neonatal candidiasis	skos:exactMatch	MONDO:0004824	Unspecified	Neonatal candidiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E83.52	hypercalcemia disease	skos:exactMatch	MONDO:0001566	Unspecified	Hypercalcemia	MONDO_MAPPINGS						8	0.38095238095238093	1.961451247165533
-ICD10CM:G47.61	periodic limb movement disorder	skos:exactMatch	MONDO:0005905	Unspecified	Periodic limb movement disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D61.0	inherited aplastic anemia	skos:exactMatch	MONDO:0001713	Unspecified	Constitutional aplastic anemia	MONDO_MAPPINGS						12	0.4285714285714286	1.9648
-ICD10CM:D89.811	chronic graft versus host disease	skos:exactMatch	MONDO:0020547	Unspecified	Chronic graft-versus-host disease	MONDO_MAPPINGS						2	0.11428571428571432	1.9696969696969697
-ICD10CM:Q03	congenital hydrocephalus	skos:exactMatch	MONDO:0016349	Unspecified	Congenital hydrocephalus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C31.1	ethmoid sinus cancer	skos:exactMatch	MONDO:0001763	Unspecified	Malignant neoplasm of ethmoidal sinus	MONDO_MAPPINGS						31	0.575	1.9575
-ICD10CM:H47.4	disorder of optic chiasm	skos:exactMatch	MONDO:0003568	Unspecified	Disorders of optic chiasm	MONDO_MAPPINGS						1	0.040000000000000036	1.9583333333333333
-ICD10CM:L10.0	pemphigus vulgaris	skos:exactMatch	MONDO:0008219	Unspecified	Pemphigus vulgaris	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q12.4	obsolete isolated microspherophakia	skos:exactMatch	MONDO:0034977	Unspecified	Spherophakia	MONDO_MAPPINGS						23	0.6571428571428571	1.9795918367346939
-ICD10CM:H53.62	acquired night blindness	skos:exactMatch	MONDO:0001296	Unspecified	Acquired night blindness	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H50.15	alternating exotropia	skos:exactMatch	MONDO:0001281	Unspecified	Alternating exotropia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E67.3	hypervitaminosis D	skos:exactMatch	MONDO:0004937	Unspecified	Hypervitaminosis D	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B65-B83	helminthiasis	skos:exactMatch	MONDO:0004664	Unspecified	Helminthiases (B65-B83)	MONDO_MAPPINGS						11	0.5	1.9230769230769231
-ICD10CM:B55.0	visceral leishmaniasis	skos:exactMatch	MONDO:0005445	Unspecified	Visceral leishmaniasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K14.0	glossitis	skos:exactMatch	MONDO:0006771	Unspecified	Glossitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q27.1	congenital renal artery stenosis	skos:exactMatch	MONDO:0019993	Unspecified	Congenital renal artery stenosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.22	circadian rhythm sleep disorder, advanced sleep phase type	skos:exactMatch	MONDO:0024378	Unspecified	Circadian rhythm sleep disorder, advanced sleep phase type	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C22.3	liver angiosarcoma	skos:exactMatch	MONDO:0002387	Unspecified	Angiosarcoma of liver	MONDO_MAPPINGS						15	0.1428571428571429	1.9444444444444444
-ICD10CM:M70.2	olecranon bursitis	skos:exactMatch	MONDO:0001557	Unspecified	Olecranon bursitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q04.2	holoprosencephaly	skos:exactMatch	MONDO:0016296	Unspecified	Holoprosencephaly	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L12.3	acquired epidermolysis bullosa	skos:exactMatch	MONDO:0018747	Unspecified	Acquired epidermolysis bullosa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D35.1	benign neoplasm of parathyroid gland	skos:exactMatch	MONDO:0021463	Unspecified	Benign neoplasm of parathyroid gland	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H83.2	obsolete labyrinthine dysfunction	skos:exactMatch	MONDO:0003571	Unspecified	Labyrinthine dysfunction	MONDO_MAPPINGS						9	0.2727272727272727	1.9696969696969697
-ICD10CM:E22.1	hyperprolactinemia	skos:exactMatch	MONDO:0005804	Unspecified	Hyperprolactinemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I47.2	ventricular tachycardia	skos:exactMatch	MONDO:0005477	Unspecified	Ventricular tachycardia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q72.23	congenital absence of both lower leg and foot, bilateral	skos:exactMatch	MONDO:0017501	Unspecified	Congenital absence of both lower leg and foot, bilateral	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q60.3	renal hypoplasia, unilateral	skos:exactMatch	MONDO:0019979	Unspecified	Renal hypoplasia, unilateral	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J32.1	chronic frontal sinusitis	skos:exactMatch	MONDO:0001120	Unspecified	Chronic frontal sinusitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J45	asthma	skos:exactMatch	MONDO:0004979	Unspecified	Asthma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N30.0	acute cystitis	skos:exactMatch	MONDO:0001650	Unspecified	Acute cystitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M10	gout	skos:exactMatch	MONDO:0005393	Unspecified	Gout	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K28.0	gastrojejunal ulcer	skos:exactMatch	MONDO:0001155	Unspecified	Acute gastrojejunal ulcer with hemorrhage	MONDO_MAPPINGS						22	0.5365853658536586	1.9473684210526316
-ICD10CM:J84.112	interstitial lung disease 2	skos:exactMatch	MONDO:0800029	Unspecified	Idiopathic pulmonary fibrosis	MONDO_MAPPINGS						23	0.6	1.9698216735253773
-ICD10CM:A44	bartonellosis	skos:exactMatch	MONDO:0005664	Unspecified	Bartonellosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M41	scoliosis	skos:exactMatch	MONDO:0005392	Unspecified	Scoliosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G11.4	hereditary spastic paraplegia	skos:exactMatch	MONDO:0019064	Unspecified	Hereditary spastic paraplegia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E71.511	obsolete neonatal adrenoleukodystrophy	skos:exactMatch	MONDO:0018598	Unspecified	Neonatal adrenoleukodystrophy	MONDO_MAPPINGS						9	0.23684210526315785	1.9743767313019391
-ICD10CM:J98.2	interstitial emphysema	skos:exactMatch	MONDO:0000923	Unspecified	Interstitial emphysema	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q56.3	pseudohermaphroditism	skos:exactMatch	MONDO:0005518	Unspecified	Pseudohermaphroditism, unspecified	MONDO_MAPPINGS						13	0.38235294117647056	1.9523809523809523
-ICD10CM:E40-E46	nutritional deficiency disease	skos:exactMatch	MONDO:0006873	Unspecified	Malnutrition (E40-E46)	MONDO_MAPPINGS						21	0.631578947368421	1.9755555555555555
-ICD10CM:A20.2	pneumonic plague	skos:exactMatch	MONDO:0001024	Unspecified	Pneumonic plague	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N21.9	lower urinary tract calculus	skos:exactMatch	MONDO:0004828	Unspecified	Calculus of lower urinary tract, unspecified	MONDO_MAPPINGS						23	0.36363636363636365	1.9642857142857142
-ICD10CM:A75-A79	Rickettsiosis	skos:exactMatch	MONDO:0006956	Unspecified	Rickettsioses (A75-A79)	MONDO_MAPPINGS						11	0.5	1.9230769230769231
-ICD10CM:B76.1	necatoriasis	skos:exactMatch	MONDO:0005870	Unspecified	Necatoriasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E26	hyperaldosteronism	skos:exactMatch	MONDO:0003009	Unspecified	Hyperaldosteronism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A81.82	Gerstmann-Straussler-Scheinker syndrome	skos:exactMatch	MONDO:0007656	Unspecified	Gerstmann-StrÃ¤ussler-Scheinker syndrome	MONDO_MAPPINGS						2	0.07317073170731703	1.9743589743589745
-ICD10CM:Q44.6	autosomal dominant polycystic liver disease	skos:exactMatch	MONDO:0000447	Unspecified	Cystic disease of liver	MONDO_MAPPINGS						31	0.5	1.9799891833423473
-ICD10CM:E26.02	glucocorticoid-remediable aldosteronism	skos:exactMatch	MONDO:0007080	Unspecified	Glucocorticoid-remediable aldosteronism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G44.82	headache associated with sexual activity	skos:exactMatch	MONDO:0011848	Unspecified	Headache associated with sexual activity	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.419	narcolepsy without cataplexy	skos:exactMatch	MONDO:0019371	Unspecified	Narcolepsy without cataplexy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L75	apocrine sweat gland disorder	skos:exactMatch	MONDO:0024467	Unspecified	Apocrine sweat disorders	MONDO_MAPPINGS						7	0.23333333333333328	1.9678953626634959
-ICD10CM:E07.81	euthyroid sick syndrome	skos:exactMatch	MONDO:0006755	Unspecified	Sick-euthyroid syndrome	MONDO_MAPPINGS						10	0.08333333333333337	1.9565217391304348
-ICD10CM:I70.1	renal artery atheroma	skos:exactMatch	MONDO:0001876	Unspecified	Atherosclerosis of renal artery	MONDO_MAPPINGS						25	0.4242424242424242	1.9546485260770976
-ICD10CM:A50-A64	sexually transmitted disease	skos:exactMatch	MONDO:0021681	Unspecified	Infections with a predominantly sexual mode of transmission (A50-A64)	MONDO_MAPPINGS						53	0.5942028985507246	1.9642857142857142
-ICD10CM:K83.0	cholangitis	skos:exactMatch	MONDO:0004789	Unspecified	Cholangitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C10.0	vallecula cancer	skos:exactMatch	MONDO:0004607	Unspecified	Malignant neoplasm of vallecula	MONDO_MAPPINGS						23	0.6176470588235294	1.94140625
-ICD10CM:N36.5	urethral false passage	skos:exactMatch	MONDO:0004760	Unspecified	Urethral false passage	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J00-J99	respiratory system disorder	skos:exactMatch	MONDO:0005087	Unspecified	Diseases of the respiratory system (J00-J99)	MONDO_MAPPINGS						25	0.4893617021276596	1.962962962962963
-ICD10CM:D86.81	obsolete sarcoid meningitis	skos:exactMatch	MONDO:0001424	Unspecified	Sarcoid meningitis	MONDO_MAPPINGS						9	0.33333333333333337	1.9657064471879286
-ICD10CM:N95.2	postmenopausal atrophic vaginitis	skos:exactMatch	MONDO:0001410	Unspecified	Postmenopausal atrophic vaginitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A66	yaws	skos:exactMatch	MONDO:0006019	Unspecified	Yaws	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H52.1	myopia	skos:exactMatch	MONDO:0001384	Unspecified	Myopia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q10.1	congenital ectropion	skos:exactMatch	MONDO:0020161	Unspecified	Congenital ectropion	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C86.5	angioimmunoblastic T-cell lymphoma	skos:exactMatch	MONDO:0004977	Unspecified	Angioimmunoblastic T-cell lymphoma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I20.0	intermediate coronary syndrome	skos:exactMatch	MONDO:0006805	Unspecified	Unstable angina	MONDO_MAPPINGS						25	0.7142857142857143	1.9822222222222223
-ICD10CM:D02.1	trachea carcinoma in situ	skos:exactMatch	MONDO:0004661	Unspecified	Carcinoma in situ of trachea	MONDO_MAPPINGS						19	0.1071428571428571	1.96
-ICD10CM:J45.991	cough variant asthma	skos:exactMatch	MONDO:0001491	Unspecified	Cough variant asthma	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M60.1	myositis fibrosa	skos:exactMatch	MONDO:0004881	Unspecified	Interstitial myositis	MONDO_MAPPINGS						16	0.45833333333333337	1.9453125
-ICD10CM:F50.2	bulimia nervosa	skos:exactMatch	MONDO:0005452	Unspecified	Bulimia nervosa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K90.3	pancreatic steatorrhea	skos:exactMatch	MONDO:0001079	Unspecified	Pancreatic steatorrhea	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C10	oropharynx cancer	skos:exactMatch	MONDO:0004608	Unspecified	Malignant neoplasm of oropharynx	MONDO_MAPPINGS						27	0.6	1.9480968858131489
-ICD10CM:B70.1	sparganosis	skos:exactMatch	MONDO:0005963	Unspecified	Sparganosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F34.1	dysthymic disorder	skos:exactMatch	MONDO:0001442	Unspecified	Dysthymic disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M12.4	intermittent hydrarthrosis	skos:exactMatch	MONDO:0018015	Unspecified	Intermittent hydrarthrosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D73.2	chronic congestive splenomegaly	skos:exactMatch	MONDO:0001367	Unspecified	Chronic congestive splenomegaly	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D10.0	benign neoplasm of lip	skos:exactMatch	MONDO:0021496	Unspecified	Benign neoplasm of lip	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B37.3	vulvovaginal candidiasis	skos:exactMatch	MONDO:0006014	Unspecified	Candidiasis of vulva and vagina	MONDO_MAPPINGS						24	0.28125	1.9583333333333333
-ICD10CM:H40.1	glaucoma 1, open angle, E	skos:exactMatch	MONDO:0007665	Unspecified	Open-angle glaucoma	MONDO_MAPPINGS						22	0.3076923076923077	1.9648
-ICD10CM:L92.0	granuloma annulare	skos:exactMatch	MONDO:0006554	Unspecified	Granuloma annulare	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D45	acquired polycythemia vera	skos:exactMatch	MONDO:0009891	Unspecified	Polycythemia vera	MONDO_MAPPINGS						9	0.34615384615384615	1.9659763313609468
-ICD10CM:A07.2	cryptosporidiosis	skos:exactMatch	MONDO:0015474	Unspecified	Cryptosporidiosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E28.3	primary ovarian failure	skos:exactMatch	MONDO:0005387	Unspecified	Primary ovarian failure	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G83.81	Brown-Sequard syndrome	skos:exactMatch	MONDO:0003754	Unspecified	Brown-SÃ©quard syndrome	MONDO_MAPPINGS						2	0.125	1.9545454545454546
-ICD10CM:Q25.2	aorta atresia	skos:exactMatch	MONDO:0001863	Unspecified	Atresia of aorta	MONDO_MAPPINGS						11	0.1875	1.9230769230769231
-ICD10CM:D12.8	benign neoplasm of rectum	skos:exactMatch	MONDO:0021462	Unspecified	Benign neoplasm of rectum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A87	viral meningitis	skos:exactMatch	MONDO:0007015	Unspecified	Viral meningitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F60.1	schizoid personality disorder	skos:exactMatch	MONDO:0001161	Unspecified	Schizoid personality disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A46	erysipelas	skos:exactMatch	MONDO:0001266	Unspecified	Erysipelas	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E24.0	ACTH-dependent Cushing syndrome	skos:exactMatch	MONDO:0020528	Unspecified	Pituitary-dependent Cushing's disease	MONDO_MAPPINGS						16	0.38095238095238093	1.9698231009365244
-ICD10CM:F53	postpartum psychosis	skos:exactMatch	MONDO:0018623	Unspecified	Mental and behavioral disorders associated with the puerperium, not elsewhere classified	MONDO_MAPPINGS						76	0.8	1.9525
-ICD10CM:E70-E88	metabolic disease	skos:exactMatch	MONDO:0005066	Unspecified	Metabolic disorders (E70-E88)	MONDO_MAPPINGS						13	0.4666666666666667	1.9411764705882353
-ICD10CM:O00-O08	pregnancy disorder with abortive outcome	skos:exactMatch	MONDO:0041526	Unspecified	Pregnancy with abortive outcome (O00-O08)	MONDO_MAPPINGS						19	0.3125	1.976875
-ICD10CM:G24.5	blepharospasm	skos:exactMatch	MONDO:0011728	Unspecified	Blepharospasm	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C40.2	cancer of long bone of lower limb	skos:exactMatch	MONDO:0000952	Unspecified	Malignant neoplasm of long bones of lower limb	MONDO_MAPPINGS						16	0.3877551020408163	1.9715335169880623
-ICD10CM:K90.1	tropical sprue	skos:exactMatch	MONDO:0001078	Unspecified	Tropical sprue	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N47.1	phimosis	skos:exactMatch	MONDO:0006904	Unspecified	Phimosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B41	paracoccidioidomycosis	skos:exactMatch	MONDO:0005894	Unspecified	Paracoccidioidomycosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I21.9	acute myocardial infarction	skos:exactMatch	MONDO:0004781	Unspecified	Acute myocardial infarction, unspecified	MONDO_MAPPINGS						13	0.32499999999999996	1.962962962962963
-ICD10CM:L87.2	elastosis perforans serpiginosa	skos:exactMatch	MONDO:0007529	Unspecified	Elastosis perforans serpiginosa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C31.3	sphenoidal sinus cancer	skos:exactMatch	MONDO:0001994	Unspecified	Malignant neoplasm of sphenoid sinus	MONDO_MAPPINGS						29	0.4871794871794872	1.9621928166351608
-ICD10CM:E00-E90	obsolete nutritional or metabolic disease	skos:exactMatch	MONDO:0024297	Unspecified		MONDO_MAPPINGS						41	1.0	2.0
-ICD10CM:C84.4	mature T-cell and NK-cell non-Hodgkin lymphoma	skos:exactMatch	MONDO:0000430	Unspecified	Peripheral T-cell lymphoma, not classified	MONDO_MAPPINGS						35	0.4285714285714286	1.9801512287334593
-ICD10CM:D01.2	rectum carcinoma in situ	skos:exactMatch	MONDO:0004725	Unspecified	Carcinoma in situ of rectum	MONDO_MAPPINGS						17	0.11111111111111116	1.9583333333333333
-ICD10CM:A15.6	pleural tuberculosis	skos:exactMatch	MONDO:0005922	Unspecified	Tuberculous pleurisy	MONDO_MAPPINGS						16	0.18181818181818177	1.9525
-ICD10CM:B77	ascariasis	skos:exactMatch	MONDO:0005654	Unspecified	Ascariasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J80-J84	interstitial lung disease	skos:exactMatch	MONDO:0015925	Unspecified	Other respiratory diseases principally affecting the interstitium (J80-J84)	MONDO_MAPPINGS						60	0.6666666666666667	1.96
-ICD10CM:D33.4	benign neoplasm of spinal cord	skos:exactMatch	MONDO:0021506	Unspecified	Benign neoplasm of spinal cord	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M72.4	nodular fasciitis	skos:exactMatch	MONDO:0004187	Unspecified	Pseudosarcomatous fibromatosis	MONDO_MAPPINGS						21	0.5757575757575757	1.9480968858131489
-ICD10CM:B00.0	herpes simplex dermatitis	skos:exactMatch	MONDO:0004712	Unspecified	Eczema herpeticum	MONDO_MAPPINGS						17	0.5517241379310345	1.9696
-ICD10CM:P61.1	polycythemia neonatorum	skos:exactMatch	MONDO:0001238	Unspecified	Polycythemia neonatorum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A30.1	tuberculoid leprosy	skos:exactMatch	MONDO:0005126	Unspecified	Tuberculoid leprosy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B37.81	esophageal candidiasis	skos:exactMatch	MONDO:0001648	Unspecified	Candidal esophagitis	MONDO_MAPPINGS						17	0.17391304347826086	1.9545454545454546
-ICD10CM:H60-H95	auditory system disorder	skos:exactMatch	MONDO:0002409	Unspecified	Diseases of the ear and mastoid process (H60-H95)	MONDO_MAPPINGS						40	0.6226415094339622	1.9635416666666667
-ICD10CM:G51.4	isolated facial myokymia	skos:exactMatch	MONDO:0016373	Unspecified	Facial myokymia	MONDO_MAPPINGS						9	0.375	1.9652777777777777
-ICD10CM:I70	atherosclerosis	skos:exactMatch	MONDO:0005311	Unspecified	Atherosclerosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E41	marasmus	skos:exactMatch	MONDO:0006848	Unspecified	Nutritional marasmus	MONDO_MAPPINGS						12	0.6	1.875
-ICD10CM:C88.2	heavy chain disease	skos:exactMatch	MONDO:0019464	Unspecified	Heavy chain disease	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J35.01	tonsillitis	skos:exactMatch	MONDO:0001039	Unspecified	Chronic tonsillitis	MONDO_MAPPINGS						8	0.42105263157894735	1.9090909090909092
-ICD10CM:J01.3	acute sphenoidal sinusitis	skos:exactMatch	MONDO:0001624	Unspecified	Acute sphenoidal sinusitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J84.81	lymphangioleiomyomatosis	skos:exactMatch	MONDO:0011705	Unspecified	Lymphangioleiomyomatosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I67.2	cerebral atherosclerosis	skos:exactMatch	MONDO:0006694	Unspecified	Cerebral atherosclerosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D10.7	benign neoplasm of hypopharynx	skos:exactMatch	MONDO:0021461	Unspecified	Benign neoplasm of hypopharynx	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F20.0	paranoid schizophrenia	skos:exactMatch	MONDO:0001484	Unspecified	Paranoid schizophrenia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K14.3	hypertrophy of tongue papillae	skos:exactMatch	MONDO:0001689	Unspecified	Hypertrophy of tongue papillae	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K59.31	toxic megacolon	skos:exactMatch	MONDO:0002105	Unspecified	Toxic megacolon	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B36.3	black piedra	skos:exactMatch	MONDO:0005669	Unspecified	Black piedra	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L93.1	subacute cutaneous lupus erythematosus	skos:exactMatch	MONDO:0015573	Unspecified	Subacute cutaneous lupus erythematosus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C40.1	cancer of short bone of upper limb	skos:exactMatch	MONDO:0024312	Unspecified	Malignant neoplasm of short bones of upper limb	MONDO_MAPPINGS						16	0.38	1.972318339100346
-ICD10CM:G03.1	chronic meningitis	skos:exactMatch	MONDO:0001007	Unspecified	Chronic meningitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G25.0	essential tremor	skos:exactMatch	MONDO:0003233	Unspecified	Essential tremor	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q25.21	aortic arch interruption	skos:exactMatch	MONDO:0009010	Unspecified	Interruption of aortic arch	MONDO_MAPPINGS						24	0.11111111111111116	1.9583333333333333
-ICD10CM:Q01.2	occipital encephalocele	skos:exactMatch	MONDO:0017080	Unspecified	Occipital encephalocele	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N10	acute pyelonephritis	skos:exactMatch	MONDO:0003529	Unspecified	Acute pyelonephritis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D29.0	benign neoplasm of penis	skos:exactMatch	MONDO:0021458	Unspecified	Benign neoplasm of penis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D68.0	von Willebrand disease (hereditary or acquired)	skos:exactMatch	MONDO:0024574	Unspecified	Von Willebrand's disease	MONDO_MAPPINGS						27	0.5510204081632653	1.9823449524671797
-ICD10CM:K90.0	celiac disease	skos:exactMatch	MONDO:0005130	Unspecified	Celiac disease	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J32.3	chronic sphenoidal sinusitis	skos:exactMatch	MONDO:0001123	Unspecified	Chronic sphenoidal sinusitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L50.4	vibratory urticaria	skos:exactMatch	MONDO:0006618	Unspecified	Vibratory urticaria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K02	dental caries	skos:exactMatch	MONDO:0005276	Unspecified	Dental caries	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C38.4	pleural cancer	skos:exactMatch	MONDO:0006294	Unspecified	Malignant neoplasm of pleura	MONDO_MAPPINGS						22	0.6451612903225806	1.9387755102040816
-ICD10CM:C40	cancer affecting bone of limb skeleton	skos:exactMatch	MONDO:0024311	Unspecified	Malignant neoplasm of bone and articular cartilage of limbs	MONDO_MAPPINGS						44	0.484375	1.9743767313019391
-ICD10CM:K59.1	functional diarrhea	skos:exactMatch	MONDO:0001272	Unspecified	Functional diarrhea	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D56.0	alpha thalassemia	skos:exactMatch	MONDO:0011399	Unspecified	Alpha thalassemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B87.0	cutaneous myiasis	skos:exactMatch	MONDO:0020568	Unspecified	Cutaneous myiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N81.12	lateral cystocele	skos:exactMatch	MONDO:0001885	Unspecified	Cystocele, lateral	MONDO_MAPPINGS						15	0.05555555555555558	1.9411764705882353
-ICD10CM:K03	tooth hard tissue disease	skos:exactMatch	MONDO:0002220	Unspecified	Other diseases of hard tissues of teeth	MONDO_MAPPINGS						24	0.3589743589743589	1.96
-MONDO:0000237	erysipeloid	skos:exactMatch	ICD10CM:A26	Unspecified	erysipeloid	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A26	erysipeloid	skos:exactMatch	MONDO:0000237	Unspecified	Erysipeloid	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.24	non-24-hour sleep-wake syndrome	skos:exactMatch	MONDO:0019137	Unspecified	Circadian rhythm sleep disorder, free running type	MONDO_MAPPINGS						39	0.6271186440677966	1.9750260145681582
-ICD10CM:Q25.0	patent ductus arteriosus	skos:exactMatch	MONDO:0011827	Unspecified	Patent ductus arteriosus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G35	multiple sclerosis	skos:exactMatch	MONDO:0005301	Unspecified	Multiple sclerosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q56	indeterminate sex and/or pseudohermaphroditism	skos:exactMatch	MONDO:0024665	Unspecified	Indeterminate sex and pseudohermaphroditism	MONDO_MAPPINGS						3	0.06521739130434778	1.9787334593572778
-ICD10CM:I06.1	aortic valve insufficiency	skos:exactMatch	MONDO:0005648	Unspecified	Rheumatic aortic insufficiency	MONDO_MAPPINGS						12	0.303030303030303	1.9659763313609468
-ICD10CM:K04.4	acute apical periodontitis	skos:exactMatch	MONDO:0001338	Unspecified	Acute apical periodontitis of pulpal origin	MONDO_MAPPINGS						17	0.39534883720930236	1.9615384615384615
-ICD10CM:N17	acute kidney failure	skos:exactMatch	MONDO:0002492	Unspecified	Acute kidney failure	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C50.3	female breast lower-inner quadrant cancer	skos:exactMatch	MONDO:0002068	Unspecified	Malignant neoplasm of lower-inner quadrant of breast	MONDO_MAPPINGS						25	0.368421052631579	1.9767995240928018
-ICD10CM:N28.85	pyeloureteritis cystica	skos:exactMatch	MONDO:0002410	Unspecified	Pyeloureteritis cystica	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I60-I69	cerebrovascular disorder	skos:exactMatch	MONDO:0011057	Unspecified	Cerebrovascular diseases (I60-I69)	MONDO_MAPPINGS						14	0.4736842105263158	1.9583333333333333
-ICD10CM:E75.4	neuronal ceroid lipofuscinosis	skos:exactMatch	MONDO:0016295	Unspecified	Neuronal ceroid lipofuscinosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N60-N65	breast disorder	skos:exactMatch	MONDO:0002657	Unspecified	Disorders of breast (N60-N65)	MONDO_MAPPINGS						22	0.48275862068965514	1.9333333333333333
-ICD10CM:A21.3	gastrointestinal tularemia	skos:exactMatch	MONDO:0001916	Unspecified	Gastrointestinal tularemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F63.2	kleptomania	skos:exactMatch	MONDO:0001520	Unspecified	Kleptomania	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M42	osteochondrosis	skos:exactMatch	MONDO:0018381	Unspecified	Spinal osteochondrosis	MONDO_MAPPINGS						7	0.31818181818181823	1.9333333333333333
-ICD10CM:B07.0	plantar wart	skos:exactMatch	MONDO:0001795	Unspecified	Plantar wart	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.26	circadian rhythm sleep disorder, shift work type	skos:exactMatch	MONDO:0024382	Unspecified	Circadian rhythm sleep disorder, shift work type	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K04.2	pulp degeneration	skos:exactMatch	MONDO:0001216	Unspecified	Pulp degeneration	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B74.4	mansonelliasis	skos:exactMatch	MONDO:0005838	Unspecified	Mansonelliasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A03	shigellosis	skos:exactMatch	MONDO:0019345	Unspecified	Shigellosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E70.21	tyrosinemia	skos:exactMatch	MONDO:0004741	Unspecified	Tyrosinemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E70.3	albinism	skos:exactMatch	MONDO:0043209	Unspecified	Albinism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H52.0	hyperopia	skos:exactMatch	MONDO:0004891	Unspecified	Hypermetropia	MONDO_MAPPINGS						4	0.3076923076923077	1.8888888888888888
-ICD10CM:J67.1	bagassosis	skos:exactMatch	MONDO:0001540	Unspecified	Bagassosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A68	relapsing fever	skos:exactMatch	MONDO:0019633	Unspecified	Relapsing fevers	MONDO_MAPPINGS						1	0.0625	1.9333333333333333
-ICD10CM:D59.0	drug-induced autoimmune hemolytic anemia	skos:exactMatch	MONDO:0019535	Unspecified	Drug-induced autoimmune hemolytic anemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L23	allergic contact dermatitis	skos:exactMatch	MONDO:0006525	Unspecified	Allergic contact dermatitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K60.3	anal fistula	skos:exactMatch	MONDO:0000754	Unspecified	Anal fistula	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A54.33	gonococcal keratitis	skos:exactMatch	MONDO:0004852	Unspecified	Gonococcal keratitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G61.81	chronic inflammatory demyelinating polyneuritis	skos:exactMatch	MONDO:0002335	Unspecified	Chronic inflammatory demyelinating polyneuritis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A15-A19	tuberculosis	skos:exactMatch	MONDO:0018076	Unspecified	Tuberculosis (A15-A19)	MONDO_MAPPINGS						10	0.4545454545454546	1.9166666666666667
-ICD10CM:D15.1	benign neoplasm of heart	skos:exactMatch	MONDO:0021450	Unspecified	Benign neoplasm of heart	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E26.0	primary aldosteronism	skos:exactMatch	MONDO:0001422	Unspecified	Primary hyperaldosteronism	MONDO_MAPPINGS						5	0.1923076923076923	1.9523809523809523
-ICD10CM:H81.2	vestibular neuronitis	skos:exactMatch	MONDO:0006008	Unspecified	Vestibular neuronitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H34.1	central retinal artery occlusion	skos:exactMatch	MONDO:0001633	Unspecified	Central retinal artery occlusion	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A30.5	lepromatous leprosy	skos:exactMatch	MONDO:0005127	Unspecified	Lepromatous leprosy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q22.4	congenital tricuspid stenosis	skos:exactMatch	MONDO:0019813	Unspecified	Congenital tricuspid stenosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N00-N08	glomerular disorder	skos:exactMatch	MONDO:0019722	Unspecified	Glomerular diseases (N00-N08)	MONDO_MAPPINGS						14	0.5454545454545454	1.9473684210526316
-ICD10CM:F65.52	sexual sadism disorder	skos:exactMatch	MONDO:0001132	Unspecified	Sexual sadism	MONDO_MAPPINGS						9	0.40909090909090906	1.9607438016528926
-ICD10CM:F95.1	chronic tic disorder	skos:exactMatch	MONDO:0001074	Unspecified	Chronic motor or vocal tic disorder	MONDO_MAPPINGS						15	0.4285714285714286	1.95
-ICD10CM:I86.3	vulval varices	skos:exactMatch	MONDO:0021642	Unspecified	Vulval varices	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E00-E07	thyroid gland disorder	skos:exactMatch	MONDO:0003240	Unspecified	Disorders of thyroid gland (E00-E07)	MONDO_MAPPINGS						22	0.38888888888888884	1.9545454545454546
-ICD10CM:H44.2	degenerative myopia	skos:exactMatch	MONDO:0001383	Unspecified	Degenerative myopia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D55-D59	hemolytic anemia	skos:exactMatch	MONDO:0003664	Unspecified	Hemolytic anemias (D55-D59)	MONDO_MAPPINGS						11	0.40740740740740744	1.9375
-ICD10CM:C88.0	Waldenstrom macroglobulinemia	skos:exactMatch	MONDO:0100280	Unspecified	WaldenstrÃ¶m macroglobulinemia	MONDO_MAPPINGS						2	0.09677419354838712	1.9655172413793103
-ICD10CM:I31.4	cardiac tamponade	skos:exactMatch	MONDO:0001297	Unspecified	Cardiac tamponade	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I86.2	pelvic varices	skos:exactMatch	MONDO:0004869	Unspecified	Pelvic varices	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.11	idiopathic hypersomnia with long sleep time	skos:exactMatch	MONDO:0016451	Unspecified	Idiopathic hypersomnia with long sleep time	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q79.3	gastroschisis	skos:exactMatch	MONDO:0009264	Unspecified	Gastroschisis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F43.0	acute stress disorder	skos:exactMatch	MONDO:0003763	Unspecified	Acute stress reaction	MONDO_MAPPINGS						8	0.31999999999999995	1.9569160997732427
-ICD10CM:M87	osteonecrosis	skos:exactMatch	MONDO:0005380	Unspecified	Osteonecrosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L56.3	solar urticaria	skos:exactMatch	MONDO:0019945	Unspecified	Solar urticaria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q21.3	tetralogy of fallot	skos:exactMatch	MONDO:0008542	Unspecified	Tetralogy of Fallot	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I77.71	carotid artery dissection	skos:exactMatch	MONDO:0004763	Unspecified	Dissection of carotid artery	MONDO_MAPPINGS						23	0.1071428571428571	1.96
-ICD10CM:D00.2	stomach carcinoma in situ	skos:exactMatch	MONDO:0004716	Unspecified	Carcinoma in situ of stomach	MONDO_MAPPINGS						19	0.1071428571428571	1.96
-ICD10CM:I42.6	alcoholic cardiomyopathy	skos:exactMatch	MONDO:0006643	Unspecified	Alcoholic cardiomyopathy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A59.0	Trichomonas vaginitis urogenital infection	skos:exactMatch	MONDO:0005993	Unspecified	Urogenital trichomoniasis	MONDO_MAPPINGS						31	0.40476190476190477	1.9773242630385488
-ICD10CM:K31.84	gastroparesis	skos:exactMatch	MONDO:0006769	Unspecified	Gastroparesis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M19	osteoarthritis	skos:exactMatch	MONDO:0005178	Unspecified	Other and unspecified osteoarthritis	MONDO_MAPPINGS						22	0.6111111111111112	1.9285714285714286
-ICD10CM:D46.A	refractory cytopenia with multilineage dysplasia	skos:exactMatch	MONDO:0019453	Unspecified	Refractory cytopenia with multilineage dysplasia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q71.1	congenital absence of upper arm and forearm with hand present	skos:exactMatch	MONDO:0017441	Unspecified	Congenital absence of upper arm and forearm with hand present	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J84.116	cryptogenic organizing pneumonia	skos:exactMatch	MONDO:0015264	Unspecified	Cryptogenic organizing pneumonia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H46.2	toxic or nutritional optic neuropathy	skos:exactMatch	MONDO:0001431	Unspecified	Nutritional optic neuropathy	MONDO_MAPPINGS						9	0.2432432432432432	1.9737034331628927
-ICD10CM:N81	prolapse of female genital organ	skos:exactMatch	MONDO:0001592	Unspecified	Female genital prolapse	MONDO_MAPPINGS						18	0.28125	1.96875
-ICD10CM:K82.4	cholesterolosis of gallbladder	skos:exactMatch	MONDO:0000987	Unspecified	Cholesterolosis of gallbladder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:R48.2	apraxia	skos:exactMatch	MONDO:0000665	Unspecified	Apraxia	MONDO_MAPPINGS						0	0.0	0.0
+ICD10CM:B15-B19	viral hepatitis	skos:exactMatch	MONDO:0006011	Unspecified	Viral hepatitis (B15-B19)	MONDO_MAPPINGS						10	0.4	1.9333333333333333
+ICD10CM:I00-I02	rheumatic fever	skos:exactMatch	MONDO:0017767	Unspecified	Acute rheumatic fever (I00-I02)	MONDO_MAPPINGS						16	0.5161290322580645	1.9333333333333333
 ICD10CM:G25.71	drug-induced akathisia	skos:exactMatch	MONDO:0006731	Unspecified	Drug induced akathisia	MONDO_MAPPINGS						1	0.08695652173913049	1.9566115702479339
-ICD10CM:M12.2	tenosynovial giant cell tumor, diffuse type	skos:exactMatch	MONDO:0024686	Unspecified	Villonodular synovitis (pigmented)	MONDO_MAPPINGS						35	0.39583333333333337	1.9789075175770687
-ICD10CM:Q25.1	aorta coarctation	skos:exactMatch	MONDO:0007345	Unspecified	Coarctation of aorta	MONDO_MAPPINGS						14	0.15000000000000002	1.9411764705882353
-ICD10CM:D10.4	benign neoplasm of tonsil	skos:exactMatch	MONDO:0021513	Unspecified	Benign neoplasm of tonsil	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P57.0	kernicterus due to isoimmunization	skos:exactMatch	MONDO:0006567	Unspecified	Kernicterus due to isoimmunization	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I42.1	hypertrophic cardiomyopathy	skos:exactMatch	MONDO:0005045	Unspecified	Obstructive hypertrophic cardiomyopathy	MONDO_MAPPINGS						12	0.3076923076923077	1.962962962962963
-ICD10CM:G47.12	idiopathic hypersomnia without long sleep time	skos:exactMatch	MONDO:0016452	Unspecified	Idiopathic hypersomnia without long sleep time	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K00-K95	digestive system disorder	skos:exactMatch	MONDO:0004335	Unspecified	Diseases of the digestive system (K00-K95)	MONDO_MAPPINGS						25	0.5111111111111111	1.9632
-ICD10CM:D15.0	benign neoplasm of thymus	skos:exactMatch	MONDO:0021512	Unspecified	Benign neoplasm of thymus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H70.2	petrositis	skos:exactMatch	MONDO:0001109	Unspecified	Petrositis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A21.0	ulceroglandular tularemia	skos:exactMatch	MONDO:0001413	Unspecified	Ulceroglandular tularemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G80	cerebral palsy	skos:exactMatch	MONDO:0006497	Unspecified	Cerebral palsy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C09.1	tonsillar pillar cancer	skos:exactMatch	MONDO:0004642	Unspecified	Malignant neoplasm of tonsillar pillar (anterior) (posterior)	MONDO_MAPPINGS						40	0.6666666666666667	1.9603024574669188
-ICD10CM:H44.5	eye degenerative disorder	skos:exactMatch	MONDO:0004884	Unspecified	Degenerated conditions of globe	MONDO_MAPPINGS						22	0.4864864864864865	1.9632
-ICD10CM:G91.1	obstructive hydrocephalus	skos:exactMatch	MONDO:0001896	Unspecified	Obstructive hydrocephalus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K11.6	mucocele of salivary gland	skos:exactMatch	MONDO:0001600	Unspecified	Mucocele of salivary gland	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I70.91	generalized atherosclerosis	skos:exactMatch	MONDO:0002275	Unspecified	Generalized atherosclerosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P83.4	infant gynecomastia	skos:exactMatch	MONDO:0001323	Unspecified	Breast engorgement of newborn	MONDO_MAPPINGS						23	0.6285714285714286	1.9584487534626038
-ICD10CM:Q77.3	chondrodysplasia punctata	skos:exactMatch	MONDO:0019701	Unspecified	Chondrodysplasia punctata	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D10.6	benign neoplasm of nasopharynx	skos:exactMatch	MONDO:0021478	Unspecified	Benign neoplasm of nasopharynx	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A54.32	gonococcal iridocyclitis	skos:exactMatch	MONDO:0004774	Unspecified	Gonococcal iridocyclitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D09.0	bladder carcinoma in situ	skos:exactMatch	MONDO:0004703	Unspecified	Carcinoma in situ of bladder	MONDO_MAPPINGS						19	0.1071428571428571	1.96
-ICD10CM:D10.2	benign neoplasm of floor of mouth	skos:exactMatch	MONDO:0021520	Unspecified	Benign neoplasm of floor of mouth	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q75.0	craniosynostosis	skos:exactMatch	MONDO:0015469	Unspecified	Craniosynostosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H60-H62	external ear disorder	skos:exactMatch	MONDO:0002776	Unspecified	Diseases of external ear (H60-H62)	MONDO_MAPPINGS						21	0.5135135135135135	1.9523809523809523
-ICD10CM:L10	pemphigus	skos:exactMatch	MONDO:0006594	Unspecified	Pemphigus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A50	congenital syphilis	skos:exactMatch	MONDO:0005714	Unspecified	Congenital syphilis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I27.81	cor pulmonale	skos:exactMatch	MONDO:0004596	Unspecified	Cor pulmonale (chronic)	MONDO_MAPPINGS						10	0.4347826086956522	1.9230769230769231
-ICD10CM:E20.1	pseudohypoparathyroidism	skos:exactMatch	MONDO:0019992	Unspecified	Pseudohypoparathyroidism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D89.0	polyclonal hypergammaglobulinemia	skos:exactMatch	MONDO:0002272	Unspecified	Polyclonal hypergammaglobulinemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B55.2	mucocutaneous leishmaniasis	skos:exactMatch	MONDO:0005859	Unspecified	Mucocutaneous leishmaniasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H52.32	aniseikonia	skos:exactMatch	MONDO:0000309	Unspecified	Aniseikonia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D12.1	benign neoplasm of appendix	skos:exactMatch	MONDO:0021465	Unspecified	Benign neoplasm of appendix	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D35.2	benign neoplasm of pituitary gland	skos:exactMatch	MONDO:0021439	Unspecified	Benign neoplasm of pituitary gland	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N47.2	paraphimosis	skos:exactMatch	MONDO:0006889	Unspecified	Paraphimosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C33	tracheal cancer	skos:exactMatch	MONDO:0001407	Unspecified	Malignant neoplasm of trachea	MONDO_MAPPINGS						23	0.625	1.9333333333333333
-ICD10CM:P29.3	alveolar capillary dysplasia with misalignment of pulmonary veins	skos:exactMatch	MONDO:0009934	Unspecified	Persistent fetal circulation	MONDO_MAPPINGS						52	0.6323529411764706	1.987455621301775
-ICD10CM:D50-D89	hematologic disorder	skos:exactMatch	MONDO:0005570	Unspecified	Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)	MONDO_MAPPINGS						93	0.8165137614678899	1.95
-ICD10CM:G37.2	central pontine myelinolysis	skos:exactMatch	MONDO:0006692	Unspecified	Central pontine myelinolysis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J15.0	Klebsiella pneumonia	skos:exactMatch	MONDO:0030602	Unspecified	Pneumonia due to Klebsiella pneumoniae	MONDO_MAPPINGS						18	0.4736842105263158	1.95
-ICD10CM:Q31.1	congenital subglottic stenosis	skos:exactMatch	MONDO:0015395	Unspecified	Congenital subglottic stenosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L63	alopecia areata	skos:exactMatch	MONDO:0005340	Unspecified	Alopecia areata	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K83.2	perforation of bile duct	skos:exactMatch	MONDO:0001710	Unspecified	Perforation of bile duct	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47	sleep-wake disorder	skos:exactMatch	MONDO:0003406	Unspecified	Sleep disorders	MONDO_MAPPINGS						6	0.30000000000000004	1.9584487534626038
-ICD10CM:N85.7	hemometra	skos:exactMatch	MONDO:0006782	Unspecified	Hematometra	MONDO_MAPPINGS						2	0.18181818181818177	1.8888888888888888
+ICD10CM:E28.0	obsolete hyperestrogenism	skos:exactMatch	MONDO:0001946	Unspecified	Estrogen excess	MONDO_MAPPINGS						20	0.5185185185185186	1.9712
+ICD10CM:N20-N23	urolithiasis	skos:exactMatch	MONDO:0024647	Unspecified	Urolithiasis (N20-N23)	MONDO_MAPPINGS						10	0.4545454545454546	1.9166666666666667
+ICD10CM:N00-N08	glomerular disorder	skos:exactMatch	MONDO:0019722	Unspecified	Glomerular diseases (N00-N08)	MONDO_MAPPINGS						14	0.5454545454545454	1.9473684210526316
+ICD10CM:J00-J99	respiratory system disorder	skos:exactMatch	MONDO:0005087	Unspecified	Diseases of the respiratory system (J00-J99)	MONDO_MAPPINGS						25	0.4893617021276596	1.962962962962963
+ICD10CM:C40.1	cancer of short bone of upper limb	skos:exactMatch	MONDO:0024312	Unspecified	Malignant neoplasm of short bones of upper limb	MONDO_MAPPINGS						16	0.38	1.972318339100346
 ICD10CM:C00-D49	neoplasm	skos:exactMatch	MONDO:0005070	Unspecified	Neoplasms (C00-D49)	MONDO_MAPPINGS						11	0.5789473684210527	1.875
-ICD10CM:J04.0	acute laryngitis	skos:exactMatch	MONDO:0004777	Unspecified	Acute laryngitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N73.3	acute female pelvic peritonitis	skos:exactMatch	MONDO:0004940	Unspecified	Female acute pelvic peritonitis	MONDO_MAPPINGS						10	0.0	1.967741935483871
-ICD10CM:D01.5	liver carcinoma in situ	skos:exactMatch	MONDO:0004715	Unspecified	Carcinoma in situ of liver, gallbladder and bile ducts	MONDO_MAPPINGS						42	0.5740740740740741	1.9565217391304348
-ICD10CM:H16	keratitis	skos:exactMatch	MONDO:0003085	Unspecified	Keratitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q10.2	isolated congenital entropion	skos:exactMatch	MONDO:0034971	Unspecified	Congenital entropion	MONDO_MAPPINGS						9	0.31034482758620685	1.9678953626634959
-ICD10CM:M65.2	calcific tendinitis	skos:exactMatch	MONDO:0001903	Unspecified	Calcific tendinitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E23.0	hypopituitarism	skos:exactMatch	MONDO:0005152	Unspecified	Hypopituitarism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H35.4	peripheral retinal degeneration	skos:exactMatch	MONDO:0001451	Unspecified	Peripheral retinal degeneration	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E74.11	essential fructosuria	skos:exactMatch	MONDO:0009252	Unspecified	Essential fructosuria	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G25.81	restless legs syndrome	skos:exactMatch	MONDO:0005391	Unspecified	Restless legs syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F10-F19	substance-related disorder	skos:exactMatch	MONDO:0002494	Unspecified	Mental and behavioral disorders due to psychoactive substance use (F10-F19)	MONDO_MAPPINGS						63	0.6533333333333333	1.9615384615384615
-ICD10CM:H60	otitis externa	skos:exactMatch	MONDO:0004795	Unspecified	Otitis externa	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L40.4	guttate psoriasis	skos:exactMatch	MONDO:0023297	Unspecified	Guttate psoriasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H74.1	adhesive otitis media	skos:exactMatch	MONDO:0001234	Unspecified	Adhesive middle ear disease	MONDO_MAPPINGS						14	0.4516129032258065	1.9591836734693877
-ICD10CM:N25.0	renal osteodystrophy	skos:exactMatch	MONDO:0006946	Unspecified	Renal osteodystrophy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B71.0	hymenolepiasis	skos:exactMatch	MONDO:0005802	Unspecified	Hymenolepiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E71.540	rhizomelic chondrodysplasia punctata	skos:exactMatch	MONDO:0015776	Unspecified	Rhizomelic chondrodysplasia punctata	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A48.51	infant botulism	skos:exactMatch	MONDO:0015804	Unspecified	Infant botulism	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C32.2	subglottis cancer	skos:exactMatch	MONDO:0001293	Unspecified	Malignant neoplasm of subglottis	MONDO_MAPPINGS						28	0.6	1.9515570934256055
-ICD10CM:B08.010	cowpox	skos:exactMatch	MONDO:0005720	Unspecified	Cowpox	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K00.3	dental fluorosis	skos:exactMatch	MONDO:0006722	Unspecified	Mottled teeth	MONDO_MAPPINGS						14	0.7391304347826086	1.96875
-ICD10CM:A36.85	diphtheritic cystitis	skos:exactMatch	MONDO:0001681	Unspecified	Diphtheritic cystitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L60.5	yellow nail syndrome	skos:exactMatch	MONDO:0007921	Unspecified	Yellow nail syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q72.2	congenital absence of both lower leg and foot	skos:exactMatch	MONDO:0017444	Unspecified	Congenital absence of both lower leg and foot	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B72	dracunculiasis	skos:exactMatch	MONDO:0016472	Unspecified	Dracunculiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D68.311	acquired hemophilia	skos:exactMatch	MONDO:0019139	Unspecified	Acquired hemophilia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J47	bronchiectasis	skos:exactMatch	MONDO:0004822	Unspecified	Bronchiectasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L21.0	seborrheic infantile dermatitis	skos:exactMatch	MONDO:0006609	Unspecified	Seborrhea capitis	MONDO_MAPPINGS						16	0.5	1.9739854318418315
-ICD10CM:G80-G83	palsy	skos:exactMatch	MONDO:0006496	Unspecified	Cerebral palsy and other paralytic syndromes (G80-G83)	MONDO_MAPPINGS						49	0.9074074074074074	1.8
-ICD10CM:E56.1	vitamin K deficiency hemorrhagic disease	skos:exactMatch	MONDO:0001244	Unspecified	Deficiency of vitamin K	MONDO_MAPPINGS						26	0.46341463414634143	1.979375
-ICD10CM:B68	taeniasis	skos:exactMatch	MONDO:0000367	Unspecified	Taeniasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B56	trypanosomiasis	skos:exactMatch	MONDO:0000940	Unspecified	African trypanosomiasis	MONDO_MAPPINGS						8	0.34782608695652173	1.9333333333333333
-ICD10CM:N62	hypertrophy of breast	skos:exactMatch	MONDO:0001100	Unspecified	Hypertrophy of breast	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H71	cholesteatoma of middle ear	skos:exactMatch	MONDO:0006533	Unspecified	Cholesteatoma of middle ear	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B81.0	anisakiasis	skos:exactMatch	MONDO:0015200	Unspecified	Anisakiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C51-C58	female reproductive organ cancer	skos:exactMatch	MONDO:0001416	Unspecified	Malignant neoplasms of female genital organs (C51-C58)	MONDO_MAPPINGS						39	0.6129032258064516	1.9716796875
-ICD10CM:G12.21	amyotrophic lateral sclerosis	skos:exactMatch	MONDO:0004976	Unspecified	Amyotrophic lateral sclerosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G47.21	circadian rhythm sleep disorder, delayed sleep phase type	skos:exactMatch	MONDO:0024377	Unspecified	Circadian rhythm sleep disorder, delayed sleep phase type	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D01.0	colon carcinoma in situ	skos:exactMatch	MONDO:0004663	Unspecified	Carcinoma in situ of colon	MONDO_MAPPINGS						15	0.11538461538461542	1.9565217391304348
-ICD10CM:R41.2	retrograde amnesia	skos:exactMatch	MONDO:0003040	Unspecified	Retrograde amnesia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K82.0	occlusion of gallbladder	skos:exactMatch	MONDO:0004858	Unspecified	Obstruction of gallbladder	MONDO_MAPPINGS						6	0.2142857142857143	1.9583333333333333
-ICD10CM:A83.2	eastern equine encephalitis	skos:exactMatch	MONDO:0005736	Unspecified	Eastern equine encephalitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C10.1	epiglottis cancer	skos:exactMatch	MONDO:0004473	Unspecified	Malignant neoplasm of anterior surface of epiglottis	MONDO_MAPPINGS						43	0.6981132075471699	1.9411764705882353
-ICD10CM:N45.3	epididymo-orchitis	skos:exactMatch	MONDO:0004778	Unspecified	Epididymo-orchitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G91	hydrocephalus	skos:exactMatch	MONDO:0001150	Unspecified	Hydrocephalus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:H10.4	chronic conjunctivitis	skos:exactMatch	MONDO:0002314	Unspecified	Chronic conjunctivitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F60.7	dependent personality disorder	skos:exactMatch	MONDO:0001157	Unspecified	Dependent personality disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G00.2	streptococcal meningitis	skos:exactMatch	MONDO:0001316	Unspecified	Streptococcal meningitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L12.0	bullous pemphigoid	skos:exactMatch	MONDO:0019082	Unspecified	Bullous pemphigoid	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L95.1	erythema elevatum diutinum	skos:exactMatch	MONDO:0019526	Unspecified	Erythema elevatum diutinum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B35.5	tinea imbricata	skos:exactMatch	MONDO:0000245	Unspecified	Tinea imbricata	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q86.1	fetal hydantoin syndrome	skos:exactMatch	MONDO:0016008	Unspecified	Fetal hydantoin syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M60-M63	muscle tissue disorder	skos:exactMatch	MONDO:0003939	Unspecified	Disorders of muscles (M60-M63)	MONDO_MAPPINGS						24	0.47058823529411764	1.9566115702479339
-ICD10CM:N97	female infertility	skos:exactMatch	MONDO:0021124	Unspecified	Female infertility	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L75.1	chromhidrosis	skos:exactMatch	MONDO:0022171	Unspecified	Chromhidrosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q82.0	lymphatic malformation	skos:exactMatch	MONDO:0019313	Unspecified	Hereditary lymphedema	MONDO_MAPPINGS						20	0.6129032258064516	1.9648760330578512
-ICD10CM:K00.0	anodontia	skos:exactMatch	MONDO:0008797	Unspecified	Anodontia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B59	pneumocystosis	skos:exactMatch	MONDO:0019121	Unspecified	Pneumocystosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J84.02	pulmonary alveolar microlithiasis	skos:exactMatch	MONDO:0009928	Unspecified	Pulmonary alveolar microlithiasis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G20-G26	extrapyramidal and movement disease	skos:exactMatch	MONDO:0001815	Unspecified	Extrapyramidal and movement disorders (G20-G26)	MONDO_MAPPINGS						14	0.326530612244898	1.9714285714285715
-ICD10CM:A80.4	acute nonparalytic poliomyelitis	skos:exactMatch	MONDO:0003231	Unspecified	Acute nonparalytic poliomyelitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F63.81	intermittent explosive disorder	skos:exactMatch	MONDO:0001521	Unspecified	Intermittent explosive disorder	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L10.81	paraneoplastic pemphigus	skos:exactMatch	MONDO:0018974	Unspecified	Paraneoplastic pemphigus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D89.1	cryoglobulinemia	skos:exactMatch	MONDO:0005576	Unspecified	Cryoglobulinemia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N41.3	prostatocystitis	skos:exactMatch	MONDO:0001506	Unspecified	Prostatocystitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B44.81	allergic bronchopulmonary aspergillosis	skos:exactMatch	MONDO:0015243	Unspecified	Allergic bronchopulmonary aspergillosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I73.81	erythromelalgia	skos:exactMatch	MONDO:0016028	Unspecified	Erythromelalgia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J84.2	lymphoid interstitial pneumonia	skos:exactMatch	MONDO:0009537	Unspecified	Lymphoid interstitial pneumonia	MONDO_MAPPINGS						0	0.0	0.0
+ICD10CM:N43.4	spermatocele	skos:exactMatch	MONDO:0006977	Unspecified	Spermatocele of epididymis	MONDO_MAPPINGS						14	0.5384615384615384	1.9166666666666667
+ICD10CM:F32	depressive disorder	skos:exactMatch	MONDO:0002050	Unspecified	Depressive episode	MONDO_MAPPINGS						4	0.23809523809523814	1.9473684210526316
+ICD10CM:I00-I99	vascular disorder	skos:exactMatch	MONDO:0005385	Unspecified	Diseases of the circulatory system (I00-I99)	MONDO_MAPPINGS						35	0.7021276595744681	1.944636678200692
+ICD10CM:J30	rhinitis	skos:exactMatch	MONDO:0003014	Unspecified	Vasomotor and allergic rhinitis	MONDO_MAPPINGS						23	0.7419354838709677	1.875
+ICD10CM:B20-B20	HIV infectious disease	skos:exactMatch	MONDO:0005109	Unspecified	Human immunodeficiency virus [HIV] disease (B20)	MONDO_MAPPINGS						30	0.5714285714285714	1.9566115702479339
 ICD10CM:N28.81	kidney hypertrophy	skos:exactMatch	MONDO:0004841	Unspecified	Hypertrophy of kidney	MONDO_MAPPINGS						17	0.1428571428571429	1.9444444444444444
-ICD10CM:N84.2	polyp of vagina	skos:exactMatch	MONDO:0021394	Unspecified	Polyp of vagina	MONDO_MAPPINGS						0	0.0	0.0
+ICD10CM:D89.811	chronic graft versus host disease	skos:exactMatch	MONDO:0020547	Unspecified	Chronic graft-versus-host disease	MONDO_MAPPINGS						2	0.11428571428571432	1.9696969696969697
+ICD10CM:H11.0	pterygium	skos:exactMatch	MONDO:0005085	Unspecified	Pterygium of eye	MONDO_MAPPINGS						7	0.4375	1.8888888888888888
+ICD10CM:D89.810	acute graft versus host disease	skos:exactMatch	MONDO:0020546	Unspecified	Acute graft-versus-host disease	MONDO_MAPPINGS						2	0.12121212121212122	1.967741935483871
+ICD10CM:D56.2	delta-beta-thalassemia	skos:exactMatch	MONDO:0016489	Unspecified	Delta-beta thalassemia	MONDO_MAPPINGS						1	0.08695652173913049	1.9545454545454546
+ICD10CM:H68	eustachian tube disorder	skos:exactMatch	MONDO:0004866	Unspecified	Eustachian salpingitis and obstruction	MONDO_MAPPINGS						23	0.5238095238095238	1.9583333333333333
+ICD10CM:Q00-Q07	central nervous system malformation	skos:exactMatch	MONDO:0020022	Unspecified	Congenital malformations of the nervous system (Q00-Q07)	MONDO_MAPPINGS						37	0.4035087719298246	1.9714285714285715
+ICD10CM:B50-B64	protozoa infectious disease	skos:exactMatch	MONDO:0002428	Unspecified	Protozoal diseases (B50-B64)	MONDO_MAPPINGS						18	0.5135135135135135	1.9684499314128945
+ICD10CM:M80-M85	bone disorder	skos:exactMatch	MONDO:0005381	Unspecified	Disorders of bone density and structure (M80-M85)	MONDO_MAPPINGS						39	0.7346938775510203	1.9230769230769231
+ICD10CM:C50.3	female breast lower-inner quadrant cancer	skos:exactMatch	MONDO:0002068	Unspecified	Malignant neoplasm of lower-inner quadrant of breast	MONDO_MAPPINGS						25	0.368421052631579	1.9767995240928018
+ICD10CM:G20-G26	extrapyramidal and movement disease	skos:exactMatch	MONDO:0001815	Unspecified	Extrapyramidal and movement disorders (G20-G26)	MONDO_MAPPINGS						14	0.326530612244898	1.9714285714285715
+ICD10CM:G51	facial nerve disorder	skos:exactMatch	MONDO:0002098	Unspecified	Facial nerve disorders	MONDO_MAPPINGS						1	0.045454545454545414	1.9523809523809523
+ICD10CM:E83.3	phosphorus metabolism disease	skos:exactMatch	MONDO:0002319	Unspecified	Disorders of phosphorus metabolism and phosphatases	MONDO_MAPPINGS						24	0.43137254901960786	1.9655172413793103
+ICD10CM:K35-K38	disorder of appendix	skos:exactMatch	MONDO:0056798	Unspecified	Diseases of appendix (K35-K38)	MONDO_MAPPINGS						14	0.5294117647058824	1.955
+ICD10CM:H60-H95	auditory system disorder	skos:exactMatch	MONDO:0002409	Unspecified	Diseases of the ear and mastoid process (H60-H95)	MONDO_MAPPINGS						40	0.6226415094339622	1.9635416666666667
+ICD10CM:N81.11	midline cystocele	skos:exactMatch	MONDO:0001886	Unspecified	Cystocele, midline	MONDO_MAPPINGS						16	0.05555555555555558	1.9411764705882353
+ICD10CM:D53.0	protein-deficiency anemia	skos:exactMatch	MONDO:0001638	Unspecified	Protein deficiency anemia	MONDO_MAPPINGS						1	0.07692307692307687	1.9616
+ICD10CM:A00-B99	infectious disease	skos:exactMatch	MONDO:0005550	Unspecified	Certain infectious and parasitic diseases (A00-B99)	MONDO_MAPPINGS						33	0.6470588235294117	1.9444444444444444
+ICD10CM:F70-F79	intellectual disability	skos:exactMatch	MONDO:0001071	Unspecified	Intellectual Disabilities (F70-F79)	MONDO_MAPPINGS						13	0.38888888888888884	1.9584120982986768
+ICD10CM:K40-K46	obsolete hernia	skos:exactMatch	MONDO:0024583	Unspecified	Hernia (K40-K46)	MONDO_MAPPINGS						16	0.7083333333333333	1.96
+ICD10CM:Q56.3	pseudohermaphroditism	skos:exactMatch	MONDO:0005518	Unspecified	Pseudohermaphroditism, unspecified	MONDO_MAPPINGS						13	0.38235294117647056	1.9523809523809523
+ICD10CM:E00-E90	obsolete nutritional or metabolic disease	skos:exactMatch	MONDO:0024297	Unspecified		MONDO_MAPPINGS						41	1.0	2.0
+ICD10CM:E40-E46	nutritional deficiency disease	skos:exactMatch	MONDO:0006873	Unspecified	Malnutrition (E40-E46)	MONDO_MAPPINGS						21	0.631578947368421	1.9755555555555555
+ICD10CM:B35-B49	fungal infectious disease	skos:exactMatch	MONDO:0002041	Unspecified	Mycoses (B35-B49)	MONDO_MAPPINGS						24	0.8333333333333334	1.984
+ICD10CM:D81.819	multiple carboxylase deficiency	skos:exactMatch	MONDO:0015454	Unspecified	Biotin-dependent carboxylase deficiency, unspecified	MONDO_MAPPINGS						25	0.49090909090909096	1.9687825182101977
+ICD10CM:H44.5	eye degenerative disorder	skos:exactMatch	MONDO:0004884	Unspecified	Degenerated conditions of globe	MONDO_MAPPINGS						22	0.4864864864864865	1.9632
+ICD10CM:A50-A64	sexually transmitted disease	skos:exactMatch	MONDO:0021681	Unspecified	Infections with a predominantly sexual mode of transmission (A50-A64)	MONDO_MAPPINGS						53	0.5942028985507246	1.9642857142857142
+ICD10CM:N81	prolapse of female genital organ	skos:exactMatch	MONDO:0001592	Unspecified	Female genital prolapse	MONDO_MAPPINGS						18	0.28125	1.96875
+ICD10CM:C84.4	mature T-cell and NK-cell non-Hodgkin lymphoma	skos:exactMatch	MONDO:0000430	Unspecified	Peripheral T-cell lymphoma, not classified	MONDO_MAPPINGS						35	0.4285714285714286	1.9801512287334593
+ICD10CM:H40-H42	glaucoma	skos:exactMatch	MONDO:0005041	Unspecified	Glaucoma (H40-H42)	MONDO_MAPPINGS						10	0.5555555555555556	1.875
+ICD10CM:C08	salivary gland cancer	skos:exactMatch	MONDO:0004669	Unspecified	Malignant neoplasm of other and unspecified major salivary glands	MONDO_MAPPINGS						52	0.696969696969697	1.9523809523809523
+ICD10CM:I27.81	cor pulmonale	skos:exactMatch	MONDO:0004596	Unspecified	Cor pulmonale (chronic)	MONDO_MAPPINGS						10	0.4347826086956522	1.9230769230769231
+ICD10CM:J18.9	pneumonia	skos:exactMatch	MONDO:0005249	Unspecified	Pneumonia, unspecified organism	MONDO_MAPPINGS						22	0.7096774193548387	1.8888888888888888
+ICD10CM:P00-P96	perinatal disease	skos:exactMatch	MONDO:0100086	Unspecified	Certain conditions originating in the perinatal period (P00-P96)	MONDO_MAPPINGS						53	0.7538461538461538	1.9411764705882353
+ICD10CM:D73	splenic disorder	skos:exactMatch	MONDO:0002332	Unspecified	Diseases of spleen	MONDO_MAPPINGS						14	0.5217391304347826	1.94921875
+ICD10CM:J80-J84	interstitial lung disease	skos:exactMatch	MONDO:0015925	Unspecified	Other respiratory diseases principally affecting the interstitium (J80-J84)	MONDO_MAPPINGS						60	0.6666666666666667	1.96
+ICD10CM:I20-I25	myocardial ischemia	skos:exactMatch	MONDO:0024644	Unspecified	Ischemic heart diseases (I20-I25)	MONDO_MAPPINGS						25	0.631578947368421	1.9556786703601108
+ICD10CM:N73.3	acute female pelvic peritonitis	skos:exactMatch	MONDO:0004940	Unspecified	Female acute pelvic peritonitis	MONDO_MAPPINGS						10	0.0	1.967741935483871
+ICD10CM:L75	apocrine sweat gland disorder	skos:exactMatch	MONDO:0024467	Unspecified	Apocrine sweat disorders	MONDO_MAPPINGS						7	0.23333333333333328	1.9678953626634959
+ICD10CM:N60.2	obsolete breast fibroadenosis	skos:exactMatch	MONDO:0001012	Unspecified	Fibroadenosis of breast	MONDO_MAPPINGS						21	0.2666666666666667	1.966706302021403
+ICD10CM:A30	leprosy	skos:exactMatch	MONDO:0005124	Unspecified	Leprosy [Hansen's disease]	MONDO_MAPPINGS						19	0.7307692307692308	1.8571428571428572
+ICD10CM:Q71.13	obsolete congenital absence of upper arm and forearm with hand present, bilateral	skos:exactMatch	MONDO:0017495	Unspecified	Congenital absence of upper arm and forearm with hand present, bilateral	MONDO_MAPPINGS						9	0.11111111111111116	1.9876543209876543
+ICD10CM:C88.0	Waldenstrom macroglobulinemia	skos:exactMatch	MONDO:0100280	Unspecified	WaldenstrÃ¶m macroglobulinemia	MONDO_MAPPINGS						2	0.09677419354838712	1.9655172413793103
+ICD10CM:E70-E88	metabolic disease	skos:exactMatch	MONDO:0005066	Unspecified	Metabolic disorders (E70-E88)	MONDO_MAPPINGS						13	0.4666666666666667	1.9411764705882353
+ICD10CM:E83.1	iron metabolism disease	skos:exactMatch	MONDO:0002279	Unspecified	Disorders of iron metabolism	MONDO_MAPPINGS						21	0.30000000000000004	1.9565217391304348
+ICD10CM:H65-H75	middle ear disorder	skos:exactMatch	MONDO:0003276	Unspecified	Diseases of middle ear and mastoid (H65-H75)	MONDO_MAPPINGS						29	0.6304347826086957	1.9473684210526316
+ICD10CM:Q35-Q37	cleft lip/palate	skos:exactMatch	MONDO:0016044	Unspecified	Cleft lip and cleft palate (Q35-Q37)	MONDO_MAPPINGS						21	0.5945945945945945	1.94140625
+ICD10CM:D86.81	obsolete sarcoid meningitis	skos:exactMatch	MONDO:0001424	Unspecified	Sarcoid meningitis	MONDO_MAPPINGS						9	0.33333333333333337	1.9657064471879286
+ICD10CM:C40.2	cancer of long bone of lower limb	skos:exactMatch	MONDO:0000952	Unspecified	Malignant neoplasm of long bones of lower limb	MONDO_MAPPINGS						16	0.3877551020408163	1.9715335169880623
+ICD10CM:N84	polyp	skos:exactMatch	MONDO:0005079	Unspecified	Polyp of female genital tract	MONDO_MAPPINGS						24	0.8275862068965517	1.8
+ICD10CM:A37.1	Bordetella parapertussis infectious disease	skos:exactMatch	MONDO:0001353	Unspecified	Whooping cough due to Bordetella parapertussis	MONDO_MAPPINGS						41	0.38181818181818183	1.9772850189291509
+ICD10CM:Q12.4	obsolete isolated microspherophakia	skos:exactMatch	MONDO:0034977	Unspecified	Spherophakia	MONDO_MAPPINGS						23	0.6571428571428571	1.9795918367346939
+ICD10CM:M08.4	obsolete pauciarticular juvenile rheumatoid arthritis	skos:exactMatch	MONDO:0005251	Unspecified	Pauciarticular juvenile rheumatoid arthritis	MONDO_MAPPINGS						9	0.16981132075471694	1.9814880740477039
+ICD10CM:B56	trypanosomiasis	skos:exactMatch	MONDO:0000940	Unspecified	African trypanosomiasis	MONDO_MAPPINGS						8	0.34782608695652173	1.9333333333333333
+ICD10CM:Q00-Q99	disorder of development or morphogenesis	skos:exactMatch	MONDO:0021147	Unspecified	Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)	MONDO_MAPPINGS						62	0.611764705882353	1.976875
+ICD10CM:Z15	inherited disease susceptibility	skos:exactMatch	MONDO:0020573	Unspecified	Genetic susceptibility to disease	MONDO_MAPPINGS						25	0.2432432432432432	1.970703125
+ICD10CM:A00-A09	intestinal infectious disease	skos:exactMatch	MONDO:0000916	Unspecified	Intestinal infectious diseases (A00-A09)	MONDO_MAPPINGS						11	0.275	1.9655172413793103
+ICD10CM:D73.3	splenic abscess	skos:exactMatch	MONDO:0002333	Unspecified	Abscess of spleen	MONDO_MAPPINGS						14	0.3157894736842105	1.9377777777777778
+ICD10CM:D50-D89	hematologic disorder	skos:exactMatch	MONDO:0005570	Unspecified	Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)	MONDO_MAPPINGS						93	0.8165137614678899	1.95
+ICD10CM:B65-B83	helminthiasis	skos:exactMatch	MONDO:0004664	Unspecified	Helminthiases (B65-B83)	MONDO_MAPPINGS						11	0.5	1.9230769230769231
+ICD10CM:A83.3	st. Louis encephalitis	skos:exactMatch	MONDO:0005969	Unspecified	St Louis encephalitis	MONDO_MAPPINGS						1	0.045454545454545414	1.9566115702479339
+ICD10CM:G80-G83	palsy	skos:exactMatch	MONDO:0006496	Unspecified	Cerebral palsy and other paralytic syndromes (G80-G83)	MONDO_MAPPINGS						49	0.9074074074074074	1.8
+ICD10CM:D73.5	splenic infarction	skos:exactMatch	MONDO:0006978	Unspecified	Infarction of spleen	MONDO_MAPPINGS						16	0.2727272727272727	1.9444444444444444
+ICD10CM:H60-H62	external ear disorder	skos:exactMatch	MONDO:0002776	Unspecified	Diseases of external ear (H60-H62)	MONDO_MAPPINGS						21	0.5135135135135135	1.9523809523809523
+ICD10CM:P83.4	infant gynecomastia	skos:exactMatch	MONDO:0001323	Unspecified	Breast engorgement of newborn	MONDO_MAPPINGS						23	0.6285714285714286	1.9584487534626038
+ICD10CM:G40	epilepsy	skos:exactMatch	MONDO:0005027	Unspecified	Epilepsy and recurrent seizures	MONDO_MAPPINGS						23	0.7419354838709677	1.875
+ICD10CM:H25-H28	lens disorder	skos:exactMatch	MONDO:0001176	Unspecified	Disorders of lens (H25-H28)	MONDO_MAPPINGS						22	0.5185185185185186	1.9230769230769231
 ICD10CM:F52.3	orgasm disorder	skos:exactMatch	MONDO:0040674	Unspecified	Orgasmic disorder	MONDO_MAPPINGS						2	0.11764705882352944	1.9333333333333333
-ICD10CM:N81.0	prolapse of urethra	skos:exactMatch	MONDO:0001514	Unspecified	Urethrocele	MONDO_MAPPINGS						16	0.5714285714285714	1.9695290858725762
+ICD10CM:C10.0	vallecula cancer	skos:exactMatch	MONDO:0004607	Unspecified	Malignant neoplasm of vallecula	MONDO_MAPPINGS						23	0.6176470588235294	1.94140625
+ICD10CM:M75.4	shoulder impingement syndrome	skos:exactMatch	MONDO:0006968	Unspecified	Impingement syndrome of shoulder	MONDO_MAPPINGS						21	0.09375	1.9655172413793103
+ICD10CM:H47.9	visual pathway disorder	skos:exactMatch	MONDO:0001834	Unspecified	Unspecified disorder of visual pathways	MONDO_MAPPINGS						32	0.41025641025641024	1.9565217391304348
+ICD10CM:Q56	indeterminate sex and/or pseudohermaphroditism	skos:exactMatch	MONDO:0024665	Unspecified	Indeterminate sex and pseudohermaphroditism	MONDO_MAPPINGS						3	0.06521739130434778	1.9787334593572778
+ICD10CM:M15-M19	osteoarthritis	skos:exactMatch	MONDO:0005178	Unspecified	Osteoarthritis (M15-M19)	MONDO_MAPPINGS						10	0.41666666666666663	1.9285714285714286
+ICD10CM:H00	eyelid disorder	skos:exactMatch	MONDO:0003382	Unspecified	Hordeolum and chalazion	MONDO_MAPPINGS						19	0.7333333333333334	1.9422222222222223
+ICD10CM:Q23	congenital mitral valve insufficiency and/or stenosis	skos:exactMatch	MONDO:0019817	Unspecified	Congenital malformations of aortic and mitral valves	MONDO_MAPPINGS						32	0.359375	1.9822000711997152
+ICD10CM:G35-G37	demyelinating disease of central nervous system	skos:exactMatch	MONDO:0020800	Unspecified	Demyelinating diseases of the central nervous system (G35-G37)	MONDO_MAPPINGS						15	0.24193548387096775	1.9787234042553192
+ICD10CM:G00-G99	nervous system disorder	skos:exactMatch	MONDO:0005071	Unspecified	Diseases of the nervous system (G00-G99)	MONDO_MAPPINGS						25	0.5348837209302326	1.9565217391304348
+ICD10CM:T80-T88	iatrogenic disease	skos:exactMatch	MONDO:0043543	Unspecified	Complications of surgical and medical care, not elsewhere classified (T80-T88)	MONDO_MAPPINGS						64	0.7692307692307692	1.9444444444444444
+ICD10CM:G47.2	circadian rhythm sleep disorder	skos:exactMatch	MONDO:0024361	Unspecified	Circadian rhythm sleep disorders	MONDO_MAPPINGS						1	0.03125	1.967741935483871
+ICD10CM:O00-O08	pregnancy disorder with abortive outcome	skos:exactMatch	MONDO:0041526	Unspecified	Pregnancy with abortive outcome (O00-O08)	MONDO_MAPPINGS						19	0.3125	1.976875
+ICD10CM:H34	retinal vascular occlusion	skos:exactMatch	MONDO:0002089	Unspecified	Retinal vascular occlusions	MONDO_MAPPINGS						1	0.03703703703703709	1.9615384615384615
+ICD10CM:H54	blindness (disorder)	skos:exactMatch	MONDO:0001941	Unspecified	Blindness and low vision	MONDO_MAPPINGS						12	0.5333333333333333	1.96
+ICD10CM:L60-L75	skin appendage disorder	skos:exactMatch	MONDO:0024481	Unspecified	Disorders of skin appendages (L60-L75)	MONDO_MAPPINGS						23	0.39473684210526316	1.9565217391304348
+ICD10CM:G47.4	narcolepsy-cataplexy syndrome	skos:exactMatch	MONDO:0016158	Unspecified	Narcolepsy and cataplexy	MONDO_MAPPINGS						14	0.29032258064516125	1.9678953626634959
+ICD10CM:H18.0	corneal deposit	skos:exactMatch	MONDO:0001308	Unspecified	Corneal pigmentations and deposits	MONDO_MAPPINGS						19	0.5588235294117647	1.9333333333333333
+ICD10CM:B53	malaria	skos:exactMatch	MONDO:0005136	Unspecified	Other specified malaria	MONDO_MAPPINGS						16	0.6956521739130435	1.8571428571428572
+ICD10CM:I15	hypertensive disorder	skos:exactMatch	MONDO:0005044	Unspecified	Secondary hypertension	MONDO_MAPPINGS						20	0.40740740740740744	1.9546485260770976
+ICD10CM:A68	relapsing fever	skos:exactMatch	MONDO:0019633	Unspecified	Relapsing fevers	MONDO_MAPPINGS						1	0.0625	1.9333333333333333
+ICD10CM:I25.3	heart aneurysm	skos:exactMatch	MONDO:0006779	Unspecified	Aneurysm of heart	MONDO_MAPPINGS						14	0.17647058823529416	1.9285714285714286
+ICD10CM:H00-H59	disorder of orbital region	skos:exactMatch	MONDO:0002022	Unspecified	Diseases of the eye and adnexa (H00-H59)	MONDO_MAPPINGS						29	0.7307692307692308	1.9718934911242603
 ICD10CM:Q93.3	chromosome 4 short arm deletion	skos:exactMatch	MONDO:0022762	Unspecified	Deletion of short arm of chromosome 4	MONDO_MAPPINGS						25	0.16216216216216217	1.967741935483871
-ICD10CM:I40	myocarditis	skos:exactMatch	MONDO:0004496	Unspecified	Acute myocarditis	MONDO_MAPPINGS						6	0.3529411764705882	1.9090909090909092
-ICD10CM:K56.2	intestinal volvulus	skos:exactMatch	MONDO:0004570	Unspecified	Volvulus	MONDO_MAPPINGS						11	0.5789473684210527	1.9722991689750693
-ICD10CM:D15.2	benign neoplasm of mediastinum	skos:exactMatch	MONDO:0021521	Unspecified	Benign neoplasm of mediastinum	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C71.3	parietal lobe cancer	skos:exactMatch	MONDO:0001952	Unspecified	Malignant neoplasm of parietal lobe	MONDO_MAPPINGS						27	0.5526315789473684	1.955
-ICD10CM:H55.01	congenital nystagmus	skos:exactMatch	MONDO:0005712	Unspecified	Congenital nystagmus	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:K76.7	hepatorenal syndrome	skos:exactMatch	MONDO:0001382	Unspecified	Hepatorenal syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:P94.0	transient neonatal myasthenia gravis	skos:exactMatch	MONDO:0018326	Unspecified	Transient neonatal myasthenia gravis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:F65.4	pedophilia	skos:exactMatch	MONDO:0001692	Unspecified	Pedophilia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:C50	breast cancer	skos:exactMatch	MONDO:0007254	Unspecified	Malignant neoplasm of breast	MONDO_MAPPINGS						23	0.6774193548387097	1.9349112426035502
-ICD10CM:Q01.0	frontal encephalocele	skos:exactMatch	MONDO:0016020	Unspecified	Frontal encephalocele	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N18.9	chronic kidney disease	skos:exactMatch	MONDO:0005300	Unspecified	Chronic kidney disease, unspecified	MONDO_MAPPINGS						13	0.37142857142857144	1.9545454545454546
-ICD10CM:Q77.4	achondroplasia	skos:exactMatch	MONDO:0007037	Unspecified	Achondroplasia	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A85	encephalitis	skos:exactMatch	MONDO:0019956	Unspecified	Other viral encephalitis, not elsewhere classified	MONDO_MAPPINGS						38	0.76	1.9166666666666667
-ICD10CM:A68.0	louse-borne relapsing fever	skos:exactMatch	MONDO:0001620	Unspecified	Louse-borne relapsing fever	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D25.0	submucous uterine fibroid	skos:exactMatch	MONDO:0001664	Unspecified	Submucous leiomyoma of uterus	MONDO_MAPPINGS						17	0.4571428571428572	1.9632
-ICD10CM:N43.1	infected hydrocele	skos:exactMatch	MONDO:0004919	Unspecified	Infected hydrocele	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:I15.0	renovascular hypertension	skos:exactMatch	MONDO:0006947	Unspecified	Renovascular hypertension	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:Q22.6	hypoplastic right heart syndrome	skos:exactMatch	MONDO:0020291	Unspecified	Hypoplastic right heart syndrome	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:L65.0	telogen effluvium	skos:exactMatch	MONDO:0002153	Unspecified	Telogen effluvium	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D58.1	hereditary elliptocytosis	skos:exactMatch	MONDO:0017319	Unspecified	Hereditary elliptocytosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:G00.1	pneumococcal meningitis	skos:exactMatch	MONDO:0006913	Unspecified	Pneumococcal meningitis	MONDO_MAPPINGS						0	0.0	0.0
+ICD10CM:I60-I69	cerebrovascular disorder	skos:exactMatch	MONDO:0011057	Unspecified	Cerebrovascular diseases (I60-I69)	MONDO_MAPPINGS						14	0.4736842105263158	1.9583333333333333
+ICD10CM:H10-H11	conjunctival disorder	skos:exactMatch	MONDO:0006170	Unspecified	Disorders of conjunctiva (H10-H11)	MONDO_MAPPINGS						23	0.4285714285714286	1.9546485260770976
 ICD10CM:Q52.3	hymen, imperforate	skos:exactMatch	MONDO:0009375	Unspecified	Imperforate hymen	MONDO_MAPPINGS						13	0.05555555555555558	1.9475308641975309
-ICD10CM:N30.4	radiation cystitis	skos:exactMatch	MONDO:0004112	Unspecified	Irradiation cystitis	MONDO_MAPPINGS						2	0.09999999999999998	1.9444444444444444
-ICD10CM:C68.0	urethra cancer	skos:exactMatch	MONDO:0004192	Unspecified	Malignant neoplasm of urethra	MONDO_MAPPINGS						24	0.65625	1.9387755102040816
-ICD10CM:E31.0	autoimmune polyendocrinopathy	skos:exactMatch	MONDO:0017278	Unspecified	Autoimmune polyglandular failure	MONDO_MAPPINGS						14	0.475	1.9678953626634959
-ICD10CM:H35.5	inherited retinal dystrophy	skos:exactMatch	MONDO:0019118	Unspecified	Hereditary retinal dystrophy	MONDO_MAPPINGS						7	0.16666666666666663	1.962962962962963
-ICD10CM:M89.0	algoneurodystrophy	skos:exactMatch	MONDO:0001859	Unspecified	Algoneurodystrophy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:B00	herpes simplex infectious disease	skos:exactMatch	MONDO:0004609	Unspecified	Herpesviral [herpes simplex] infections	MONDO_MAPPINGS						23	0.2857142857142857	1.9715335169880623
-ICD10CM:G12.22	progressive bulbar palsy	skos:exactMatch	MONDO:0008890	Unspecified	Progressive bulbar palsy	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N88.0	uterine cervix leukoplakia	skos:exactMatch	MONDO:0004702	Unspecified	Leukoplakia of cervix uteri	MONDO_MAPPINGS						21	0.1724137931034483	1.96301775147929
-ICD10CM:D86.3	skin sarcoidosis	skos:exactMatch	MONDO:0006611	Unspecified	Sarcoidosis of skin	MONDO_MAPPINGS						13	0.1578947368421053	1.9375
-ICD10CM:A83.1	western equine encephalitis	skos:exactMatch	MONDO:0019380	Unspecified	Western equine encephalitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:D02.0	larynx carcinoma in situ	skos:exactMatch	MONDO:0004696	Unspecified	Carcinoma in situ of larynx	MONDO_MAPPINGS						17	0.11111111111111116	1.9583333333333333
-ICD10CM:C26.1	spleen cancer	skos:exactMatch	MONDO:0005966	Unspecified	Malignant neoplasm of spleen	MONDO_MAPPINGS						23	0.6774193548387097	1.9408284023668638
-ICD10CM:A27	leptospirosis	skos:exactMatch	MONDO:0005825	Unspecified	Leptospirosis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:E67.0	hypervitaminosis A	skos:exactMatch	MONDO:0006798	Unspecified	Hypervitaminosis A	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:A87.2	lymphocytic choriomeningitis	skos:exactMatch	MONDO:0001449	Unspecified	Lymphocytic choriomeningitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:J98.51	mediastinitis	skos:exactMatch	MONDO:0004492	Unspecified	Mediastinitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:N70.11	chronic salpingitis	skos:exactMatch	MONDO:0003617	Unspecified	Chronic salpingitis	MONDO_MAPPINGS						0	0.0	0.0
-ICD10CM:M22.4	chondromalacia patellae	skos:exactMatch	MONDO:0008207	Unspecified	Chondromalacia patellae	MONDO_MAPPINGS						0	0.0	0.0
+ICD10CM:J13	streptococcal pneumonia	skos:exactMatch	MONDO:0005972	Unspecified	Pneumonia due to Streptococcus pneumoniae	MONDO_MAPPINGS						20	0.47619047619047616	1.9584120982986768
+ICD10CM:C43-C44	skin cancer	skos:exactMatch	MONDO:0002898	Unspecified	Melanoma and other malignant neoplasms of skin (C43-C44)	MONDO_MAPPINGS						49	0.8035714285714286	1.9090909090909092
+ICD10CM:H83.2	obsolete labyrinthine dysfunction	skos:exactMatch	MONDO:0003571	Unspecified	Labyrinthine dysfunction	MONDO_MAPPINGS						9	0.2727272727272727	1.9696969696969697
+ICD10CM:N21.9	lower urinary tract calculus	skos:exactMatch	MONDO:0004828	Unspecified	Calculus of lower urinary tract, unspecified	MONDO_MAPPINGS						23	0.36363636363636365	1.9642857142857142
+ICD10CM:E00-E07	thyroid gland disorder	skos:exactMatch	MONDO:0003240	Unspecified	Disorders of thyroid gland (E00-E07)	MONDO_MAPPINGS						22	0.38888888888888884	1.9545454545454546
+ICD10CM:Q60-Q64	urogenital tract malformation	skos:exactMatch	MONDO:0019356	Unspecified	Congenital malformations of the urinary system (Q60-Q64)	MONDO_MAPPINGS						42	0.4821428571428571	1.9655172413793103
