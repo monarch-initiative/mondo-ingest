@@ -44,6 +44,7 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 		remove -T config/remove.txt --axioms equivalent \
 		query \
 			--update ../sparql/fix_omimps.ru \
+			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
 			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
@@ -59,6 +60,7 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/fix_xref_prefixes.ru \
+			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/ordo-construct-subclass-from-part-of.ru \
 			--update ../sparql/ordo-construct-subsets.ru \
 			--update ../sparql/ordo-construct-d2g.ru \
@@ -85,6 +87,7 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
 			--update ../sparql/fix_deprecated.ru \
+			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_complex_reification.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/doid.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/doid.owl -o $@; fi
@@ -109,6 +112,7 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | compone
 		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select individuals \
 		query \
 			--update ../sparql/fix_omimps.ru \
+			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
 			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
@@ -123,6 +127,7 @@ $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select individuals \
 		query \
 			--update ../sparql/fix_omimps.ru \
+			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
 			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
