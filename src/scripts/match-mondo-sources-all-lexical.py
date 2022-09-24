@@ -111,7 +111,7 @@ def run(input:str, config: str, rules:str, output: str):
 
     objects = msdf.df[OBJECT_ID].drop_duplicates()
     prefixes = objects.str.split(":").str.get(0).drop_duplicates()
-    prefix_args = tuple([x+":%" for _, x in prefixes.iteritems() if x != "MONDO"])
+    prefix_args = tuple([x+":%" for _, x in prefixes.items() if x != "MONDO"])
     kwargs = {"subject_id": ("MONDO:%",), "object_id": prefix_args}
     with open(str(SRC / Path(output.replace("lexical", "lexical-2"))), "w") as f:
         filter_file(
