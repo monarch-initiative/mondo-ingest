@@ -92,7 +92,9 @@ def run(input:str, config: str, rules:str, output: str):
 
     resource = OntologyResource(slug=f"sqlite:///{Path(input).absolute()}")
     oi = SqlImplementation(resource=resource)
-    lexical_index = create_lexical_index(oi)
+    ruleset = load_mapping_rules(rules)
+    syn_rules = [x.synonymizer for x in ruleset.rules if x.synonymizer]
+    lexical_index = create_lexical_index(oi=oi, synonym_rules=syn_rules)
     save_lexical_index(lexical_index, OUT_INDEX_DB)
 
     if rules:

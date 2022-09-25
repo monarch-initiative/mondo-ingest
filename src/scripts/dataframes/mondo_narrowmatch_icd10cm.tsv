@@ -5,26 +5,27 @@ MONDO:0000261	Chronic adenoiditis	skos:narrowMatch	ICD10CM:J35.02	adenoiditis	se
 MONDO:0001056	Malignant neoplasm of body of stomach	skos:narrowMatch	ICD10CM:C16.2	gastric cancer	semapv:LexicalMatching	LEXMATCH
 MONDO:0001105	Renovascular hypertension	skos:narrowMatch	ICD10CM:I15.0	renal hypertension	semapv:LexicalMatching	LEXMATCH
 MONDO:0001126	Acute gastric ulcer with perforation	skos:narrowMatch	ICD10CM:K25.1	gastric ulcer	semapv:LexicalMatching	LEXMATCH
+MONDO:0001246	Typhus fever due to Rickettsia typhi	skos:narrowMatch	ICD10CM:A75.2	typhus	semapv:RegularExpressionReplacement	COMMON_TO_BOTH
 MONDO:0001421	Malignant neoplasm of frontal lobe	skos:narrowMatch	ICD10CM:C71.1	frontal lobe neoplasm	semapv:LexicalMatching	LEXMATCH
 MONDO:0001564	Simultaneous visual perception without fusion	skos:narrowMatch	ICD10CM:H53.33	binocular vision disease	semapv:LexicalMatching	LEXMATCH
 MONDO:0001672	Malignant neoplasm of bronchus and lung	skos:narrowMatch	ICD10CM:C34	bronchus cancer	semapv:LexicalMatching	LEXMATCH
 MONDO:0002026	Candidal sepsis	skos:narrowMatch	ICD10CM:B37.7	candidiasis	semapv:LexicalMatching	LEXMATCH
 MONDO:0002155	Chronic cholecystitis	skos:narrowMatch	ICD10CM:K81.1	cholecystitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0002155	Acute cholecystitis	skos:narrowMatch	ICD10CM:K81.0	cholecystitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0002258	Chronic pharyngitis	skos:narrowMatch	ICD10CM:J31.2	pharyngitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0002258	Acute pharyngitis	skos:narrowMatch	ICD10CM:J02	pharyngitis	semapv:LexicalMatching	LEXMATCH
+MONDO:0002258	Chronic pharyngitis	skos:narrowMatch	ICD10CM:J31.2	pharyngitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0002266	Maltworker's lung	skos:narrowMatch	ICD10CM:J67.4	malt worker's lung	semapv:LexicalMatching	LEXMATCH
 MONDO:0002316	Hereditary motor and sensory neuropathy	skos:narrowMatch	ICD10CM:G60.0	motor peripheral neuropathy	semapv:LexicalMatching	LEXMATCH
-MONDO:0002508	Chronic gingivitis	skos:narrowMatch	ICD10CM:K05.1	gingivitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0002508	Acute gingivitis	skos:narrowMatch	ICD10CM:K05.0	gingivitis	semapv:LexicalMatching	LEXMATCH
+MONDO:0002508	Chronic gingivitis	skos:narrowMatch	ICD10CM:K05.1	gingivitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0003767	Rheumatic mitral insufficiency	skos:narrowMatch	ICD10CM:I05.1	mitral valve disorder	semapv:LexicalMatching	LEXMATCH
 MONDO:0003781	Acute bronchitis	skos:narrowMatch	ICD10CM:J20	bronchitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0004473	Malignant neoplasm of anterior surface of epiglottis	skos:narrowMatch	ICD10CM:C10.1	epiglottis cancer	semapv:LexicalMatching	COMMON_TO_BOTH
 MONDO:0004631	Malignant neoplasm of dorsal surface of tongue	skos:narrowMatch	ICD10CM:C02.0	tongue cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0004631	Malignant neoplasm of border of tongue	skos:narrowMatch	ICD10CM:C02.1	tongue cancer	semapv:LexicalMatching	LEXMATCH
 MONDO:0004631	Malignant neoplasm of base of tongue	skos:narrowMatch	ICD10CM:C01	tongue cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0004631	Malignant neoplasm of anterior two-thirds of tongue, part unspecified	skos:narrowMatch	ICD10CM:C02.3	tongue cancer	semapv:LexicalMatching	LEXMATCH
+MONDO:0004631	Malignant neoplasm of border of tongue	skos:narrowMatch	ICD10CM:C02.1	tongue cancer	semapv:LexicalMatching	LEXMATCH
 MONDO:0004631	Malignant neoplasm of ventral surface of tongue	skos:narrowMatch	ICD10CM:C02.2	tongue cancer	semapv:LexicalMatching	LEXMATCH
+MONDO:0004631	Malignant neoplasm of anterior two-thirds of tongue, part unspecified	skos:narrowMatch	ICD10CM:C02.3	tongue cancer	semapv:LexicalMatching	LEXMATCH
 MONDO:0004701	Polyp of corpus uteri	skos:narrowMatch	ICD10CM:N84.0	uterine polyp	semapv:LexicalMatching	COMMON_TO_BOTH
 MONDO:0004731	Primary central sleep apnea	skos:narrowMatch	ICD10CM:G47.31	central sleep apnea syndrome	semapv:LexicalMatching	LEXMATCH
 MONDO:0004737	Homocystinuria	skos:narrowMatch	ICD10CM:E72.11	homocystinuria	semapv:LexicalMatching	COMMON_TO_BOTH
@@ -38,13 +39,14 @@ MONDO:0005055	Kaposi's sarcoma of skin	skos:narrowMatch	ICD10CM:C46.0	Kaposi's s
 MONDO:0005055	Kaposi's sarcoma of gastrointestinal sites	skos:narrowMatch	ICD10CM:C46.4	Kaposi's sarcoma	semapv:LexicalMatching	LEXMATCH
 MONDO:0005301	Multiple sclerosis	skos:narrowMatch	ICD10CM:G35	multiple sclerosis	semapv:LexicalMatching	COMMON_TO_BOTH
 MONDO:0005379	Dysthymic disorder	skos:narrowMatch	ICD10CM:F34.1	neurotic disorder	semapv:LexicalMatching	LEXMATCH
-MONDO:0005515	Malignant neoplasm of floor of mouth	skos:narrowMatch	ICD10CM:C04	oral cavity cancer	semapv:LexicalMatching	LEXMATCH
+MONDO:0005498	Wound botulism	skos:narrowMatch	ICD10CM:A48.52	botulism	semapv:RegularExpressionReplacement	LEXMATCH
 MONDO:0005515	Malignant neoplasm of lateral floor of mouth	skos:narrowMatch	ICD10CM:C04.1	oral cavity cancer	semapv:LexicalMatching	LEXMATCH
+MONDO:0005515	Malignant neoplasm of floor of mouth	skos:narrowMatch	ICD10CM:C04	oral cavity cancer	semapv:LexicalMatching	LEXMATCH
 MONDO:0005615	Solitary plasmacytoma	skos:narrowMatch	ICD10CM:C90.3	plasmacytoma	semapv:LexicalMatching	COMMON_TO_BOTH
-MONDO:0005649	Acute appendicitis with generalized peritonitis	skos:narrowMatch	ICD10CM:K35.2	appendicitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0005649	Acute appendicitis	skos:narrowMatch	ICD10CM:K35	appendicitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0005738	Echinococcosis, unspecified, of liver	skos:narrowMatch	ICD10CM:B67.8	echinococcosis	semapv:LexicalMatching	LEXMATCH
+MONDO:0005649	Acute appendicitis with generalized peritonitis	skos:narrowMatch	ICD10CM:K35.2	appendicitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0005738	Echinococcosis	skos:narrowMatch	ICD10CM:B67	echinococcosis	semapv:LexicalMatching	LEXMATCH
+MONDO:0005738	Echinococcosis, unspecified, of liver	skos:narrowMatch	ICD10CM:B67.8	echinococcosis	semapv:LexicalMatching	LEXMATCH
 MONDO:0005815	Benign neoplasm of endocrine pancreas	skos:narrowMatch	ICD10CM:D13.7	pancreatic neuroendocrine neoplasm	semapv:LexicalMatching	LEXMATCH
 MONDO:0005960	Pneumoconiosis associated with tuberculosis	skos:narrowMatch	ICD10CM:J65	silicosis	semapv:LexicalMatching	LEXMATCH
 MONDO:0006011	Unspecified viral hepatitis with hepatic coma	skos:narrowMatch	ICD10CM:B19.0	viral hepatitis	semapv:LexicalMatching	LEXMATCH
@@ -52,6 +54,7 @@ MONDO:0006617	Subcorneal pustular dermatitis	skos:narrowMatch	ICD10CM:L13.1	vesi
 MONDO:0006651	Iridocyclitis	skos:narrowMatch	ICD10CM:H20	anterior uveitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0006806	Posterior cyclitis	skos:narrowMatch	ICD10CM:H30.2	intermediate uveitis	semapv:LexicalMatching	LEXMATCH
 MONDO:0007000	Nonvenereal syphilis	skos:narrowMatch	ICD10CM:A65	Treponema infectious disease	semapv:LexicalMatching	LEXMATCH
+MONDO:0007113	Angelman syndrome	skos:narrowMatch	ICD10CM:Q93.51	Angelman syndrome	semapv:RegularExpressionReplacement	COMMON_TO_BOTH
 MONDO:0007655	Other congenital malformations of tongue	skos:narrowMatch	ICD10CM:Q38.3	fissured tongue	semapv:LexicalMatching	LEXMATCH
 MONDO:0010481	Angioneurotic edema	skos:narrowMatch	ICD10CM:T78.3	angioedema	semapv:LexicalMatching	LEXMATCH
 MONDO:0011057	Cerebral infarction	skos:narrowMatch	ICD10CM:I63	cerebrovascular disorder	semapv:LexicalMatching	LEXMATCH
@@ -59,10 +62,12 @@ MONDO:0011786	Other allergic rhinitis	skos:narrowMatch	ICD10CM:J30.89	allergic r
 MONDO:0016367	Other dermatomyositis	skos:narrowMatch	ICD10CM:M33.1	dermatomyositis	semapv:LexicalMatching	LEXMATCH
 MONDO:0017069	Spina bifida	skos:narrowMatch	ICD10CM:Q05	spina bifida cystica	semapv:LexicalMatching	LEXMATCH
 MONDO:0018938	Morquio A mucopolysaccharidoses	skos:narrowMatch	ICD10CM:E76.210	mucopolysaccharidosis type 4	semapv:LexicalMatching	LEXMATCH
+MONDO:0019563	CR(E)ST syndrome	skos:narrowMatch	ICD10CM:M34.1	CREST syndrome	semapv:RegularExpressionReplacement	LEXMATCH
 MONDO:0021005	Other congenital malformation syndromes predominantly associated with short stature	skos:narrowMatch	ICD10CM:Q87.19	faciodigitogenital syndrome	semapv:LexicalMatching	LEXMATCH
 MONDO:0021113	Chronic respiratory failure	skos:narrowMatch	ICD10CM:J96.1	respiratory failure	semapv:LexicalMatching	LEXMATCH
 MONDO:0021113	Acute respiratory failure	skos:narrowMatch	ICD10CM:J96.0	respiratory failure	semapv:LexicalMatching	LEXMATCH
 MONDO:0021129	Microphthalmos	skos:narrowMatch	ICD10CM:Q11.2	microphthalmia	semapv:LexicalMatching	LEXMATCH
 MONDO:0041403	Nutritional optic neuropathy	skos:narrowMatch	ICD10CM:H46.2	toxic amblyopia	semapv:LexicalMatching	LEXMATCH
+MONDO:0100125	Hallucinogen abuse with hallucinogen persisting perception disorder (flashbacks)	skos:narrowMatch	ICD10CM:F16.183	hallucinogen-persisting perception disorder	semapv:RegularExpressionReplacement	LEXMATCH
 MONDO:0100443	Pigmentary retinal dystrophy	skos:narrowMatch	ICD10CM:H35.52	RDH5-related retinopathy	semapv:LexicalMatching	LEXMATCH
 MONDO:0100444	Pigmentary retinal dystrophy	skos:narrowMatch	ICD10CM:H35.52	RLBP1-related retinopathy	semapv:LexicalMatching	LEXMATCH
