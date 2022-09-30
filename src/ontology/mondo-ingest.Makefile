@@ -3,7 +3,7 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 .PHONY: build-mondo-ingest deploy-mondo-ingest documentation excluded-xrefs-in-mondo mappings \
-report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries
+report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries exclusions-%
 
 ####################################
 ### Standard constants #############
@@ -212,7 +212,13 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
 	--outpath $@
 
-# Exclusions: combined
+# Exclusions: all artefacts for single ontology
+exclusions-%:
+	$(MAKE) $(REPORTDIR)/$*_term_exclusions.txt \
+	$(MAKE) $(REPORTDIR)/$*_exclusion_reasons.ttl \
+	$(MAKE) $(REPORTDIR)/$*_excluded_terms_in_mondo_xrefs.tsv
+
+# Exclusions: running for all ontologies
 $(REPORTDIR)/excluded_terms.txt $(REPORTDIR)/exclusion_reasons.robot.template.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_term_exclusions.txt)
 	cat $(REPORTDIR)/*_term_exclusions.txt > $(REPORTDIR)/excluded_terms.txt; \
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*_exclusion_reasons.robot.template.tsv > $(REPORTDIR)/exclusion_reasons.robot.template.tsv
@@ -344,14 +350,14 @@ slurp/:
 	mkdir -p $@
 
 # min-id: the next available Mondo ID
-# TODO: `pip install` stuff is temporary until ODK docker up to date w/ recent OAK updates
-# TODO: Check if removing --rf from run.sh will fix need for pip install. havent been able to try yet; docker issue
-slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
-	# pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
-	python $(SCRIPTSDIR)/migrate.py \
+# todo: `pip install` stuff is temporarily here until we come up with a fix. otherwise docker won't work
+slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
+	pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
+	python3 $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
 	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
+	--onto-exclusions-path reports/$*_term_exclusions.txt \
 	--min-id 850000 \
 	--max-id 999999 \
 	--mondo-terms-path $(REPORTDIR)/mirror_signature-mondo.tsv \

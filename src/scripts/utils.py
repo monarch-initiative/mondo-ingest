@@ -13,7 +13,7 @@ from oaklib import OntologyResource
 from oaklib.implementations import ProntoImplementation, SqlImplementation
 from oaklib.interfaces.basic_ontology_interface import RELATIONSHIP
 from oaklib.types import CURIE, URI
-
+from pandas.errors import EmptyDataError
 
 PREFIX = str
 TRIPLE = RELATIONSHIP
@@ -24,8 +24,7 @@ TEMP_DIR = os.path.join(ONTOLOGY_DIR, 'tmp')
 CACHE_DIR = TEMP_DIR
 
 
-# TODO: there are remaining todo's in this class
-# TODO: Improve/replace 'direct_owned_parent_curies' method: Take a look at: ProntoImpl hierararchical_parents()
+# todo: there are remaining todo's in this class
 class Term:
     """A lightweight class representing an ontological (e.g. RDF/OWL) term class."""
 
@@ -72,23 +71,25 @@ class Term:
             self.fetch_missing_props(
                 ontology=ontology, owned_prefix_map=owned_prefix_map, general_prefix_map=general_prefix_map)
 
-    def _get_direct_owned_parents(
-        self, ontology: ProntoImplementation = None, owned_prefix_map: Dict[PREFIX, URI] = None
-    ) -> List[URI]:
-        """Wrapper for: _get_direct_owned_parents()
-
-        Side effects: Also sets self.direct_owned_parent_curies"""
-        # Get params from wherever supplied
-        prefix_map = owned_prefix_map if owned_prefix_map else self.owned_prefix_map
-        onto = ontology if ontology else self.ontology
-        if not (prefix_map and onto):
-            raise ValueError('Term._get_direct_owned_parents(): Must supply both `ontology` and `owned_prefix_map`.')
-
-        self.direct_owned_parent_uris = _get_direct_owned_parent_uris(
-            curie=self.curie, ontology=self.ontology, owned_prefix_map=self.owned_prefix_map)
-        if self.direct_owned_parent_uris:
-            self.direct_owned_parent_curies = [self._converter.compress(x) for x in self.direct_owned_parent_uris]
-        return self.direct_owned_parent_uris
+    # Deactivated. parents are being fetched in batch right now
+    # todo: Refer to "todo #1" on _get_direct_owned_parents() for more details
+    # def _get_direct_owned_parents(
+    #     self, ontology: ProntoImplementation = None, owned_prefix_map: Dict[PREFIX, URI] = None
+    # ) -> List[URI]:
+    #     """Wrapper for: _get_direct_owned_parents()
+    #
+    #     Side effects: Also sets self.direct_owned_parent_curies"""
+    #     # Get params from wherever supplied
+    #     prefix_map = owned_prefix_map if owned_prefix_map else self.owned_prefix_map
+    #     onto = ontology if ontology else self.ontology
+    #     if not (prefix_map and onto):
+    #         raise ValueError('Term._get_direct_owned_parents(): Must supply both `ontology` and `owned_prefix_map`.')
+    #
+    #     self.direct_owned_parent_uris = _get_direct_owned_parent_uris(
+    #         curie=self.curie, ontology=self.ontology, owned_prefix_map=self.owned_prefix_map)
+    #     if self.direct_owned_parent_uris:
+    #         self.direct_owned_parent_curies = [self._converter.compress(x) for x in self.direct_owned_parent_uris]
+    #     return self.direct_owned_parent_uris
 
     def fetch_missing_props(
         self, ontology: ProntoImplementation = None, general_prefix_map: Dict[PREFIX, URI] = None,
@@ -118,18 +119,23 @@ class Term:
             self.uri = uri if uri != self.curie else None
 
         # Set: label, definition
-        # todo: When OAK supports: I feel like this would be faster to do outside the Term class itself
+        # todo: Assign in batch (when OAK supports): I feel like would be faster to do outside the Term class itself
         #  ...e.g. build a dict of CURIE-> Term, then use use ontology.labels() on all curies and set label
         #  ...Right now, OAK ProntoImplementation labels() is just proxy for label(), though SqlImplementation has, and
         #  ...Both of them have definition() but not definitions().
         if ontology:
-            self.label = ontology.label(self.curie)
-            self.definition = ontology.definition(self.curie)
+            self.label = ontology.label(self.uri)
+            if not self.label:
+                self.label = ontology.label(self.curie)
+            self.definition = ontology.definition(self.uri)
+            if not self.definition:
+                self.definition = ontology.definition(self.curie)
 
         # Set: direct_owned_parent_uris
-        if ontology and owned_prefix_map:
-            self.direct_owned_parent_uris = self._get_direct_owned_parents(
-                owned_prefix_map=owned_prefix_map if owned_prefix_map else self.owned_prefix_map)
+        # todo #1: Linked to work on _get_direct_owned_parents(), pending OAK fixes
+        # if ontology and owned_prefix_map:
+        #     self.direct_owned_parent_uris = self._get_direct_owned_parents(
+        #         owned_prefix_map=owned_prefix_map if owned_prefix_map else self.owned_prefix_map)
 
     def __repr__(self):
         return f'<Term({self.curie if self.curie else self.uri})>'
@@ -156,8 +162,6 @@ def _load_ontology(ontology_path: str, use_cache=False) -> ProntoImplementation:
     return ontology
 
 
-# TODO: implement this func
-# todo: IDs should be int or str? prolly str
 def _get_next_available_mondo_id(min_id: int, max_id: int, mondo_ids: Set[int]) -> (int, Set[int]):
     """Starting from `min_id`, count up and check until finding the next ID.
 
@@ -201,42 +205,55 @@ def get_mondo_term_ids(mondo_terms_path: str, slurp_dir_path: str) -> Set[int]:
     return set(mondo_ids)
 
 
-# TODO: Can't get ProntoImpleemntation or SqlImplementation to work. Doing this in bulk using SPARQL outside of Term atm
+# Deactivated. parents are being fetched in batch right now
+# todo #1: When OAK (ProntoImpleemntation or SqlImplementation) is fixed, re-implement
+#  - ensure that gets only direct is_a parents, not further ancestors
 # noinspection PyUnusedLocal
-def _get_direct_owned_parent_uris(
-    ontology: ProntoImplementation, owned_prefix_map: Dict[PREFIX, URI], curie: CURIE
-) -> List[URI]:
-    """Get URIs of direct parents of a class. Only returns parents that are 'owned' by the ontology.
+# def _get_direct_owned_parent_uris(
+#     ontology: ProntoImplementation, owned_prefix_map: Dict[PREFIX, URI], curie: CURIE
+# ) -> List[URI]:
+#     """Get URIs of direct parents of a class. Only returns parents that are 'owned' by the ontology.
+#
+#     ontology: Haven't decided yet which implementation I'll use. Would use superclass, but they use mult inheritance.
+#     owned_prefix_map: All the prefixes that are 'owned' by the ontology. Keys are CURIE prefixes and values are URIs.
+#     """
+#     # These vars are here for stability reasons, just in case I get CURIES where I expect URIs or vice versa.
+#     subclass_preds = [x + 'subClassOf' for x in ['rdfs:', 'http://www.w3.org/2000/01/rdf-schema#']]
+#     owned_prefixes = set(owned_prefix_map.keys())
+#     uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
+#
+#     direct_owned_parent_uris: List[URI] = []
+#     # rels1: List[CURIE] = ontology.hierararchical_parents(curie)
+#     # resl2: List[CURIE] = ontology.outgoing_relationship_map(curie).get('rdfs:subClassOf', [])
+#     # rels: List[TRIPLE] = [x for x in ontology.relationships(subjects=[curie])]
+#     # for rel in rels:
+#     #     subject, predicate, obj = rel
+#     #     object_curie: CURIE = uri_converter.compress(obj) if obj.startswith('http') else obj
+#     #     if predicate in subclass_preds and object_curie.split(':')[0] in owned_prefixes:
+#     #         subject_uri: URI = subject if subject.startswith('http') else uri_converter.expand(subject)
+#     #         direct_owned_parent_uris.append(subject_uri)
+#     # direct_owned_parent_uris = [x for x in direct_owned_parent_uris if x]
+#
+#     return direct_owned_parent_uris
 
-    ontology: Haven't decided yet which implementation I'll use. Would use superclass, but they use mult inheritance.
-    owned_prefix_map: All the prefixes that are 'owned' by the ontology. Keys are CURIE prefixes and values are URIs.
-    """
-    # These vars are here for stability reasons, just in case I get CURIES where I expect URIs or vice versa.
-    subclass_preds = [x + 'subClassOf' for x in ['rdfs:', 'http://www.w3.org/2000/01/rdf-schema#']]
-    owned_prefixes = set(owned_prefix_map.keys())
-    uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
 
-    direct_owned_parent_uris: List[URI] = []
-    # rels1: List[CURIE] = ontology.hierararchical_parents(curie)
-    # resl2: List[CURIE] = ontology.outgoing_relationship_map(curie).get('rdfs:subClassOf', [])
-    # rels: List[TRIPLE] = [x for x in ontology.relationships(subjects=[curie])]
-    # for rel in rels:
-    #     subject, predicate, obj = rel
-    #     object_curie: CURIE = uri_converter.compress(obj) if obj.startswith('http') else obj
-    #     if predicate in subclass_preds and object_curie.split(':')[0] in owned_prefixes:
-    #         subject_uri: URI = subject if subject.startswith('http') else uri_converter.expand(subject)
-    #         direct_owned_parent_uris.append(subject_uri)
-    # direct_owned_parent_uris = [x for x in direct_owned_parent_uris if x]
-
-    return direct_owned_parent_uris
+def get_excluded_terms(path) -> Set[CURIE]:
+    """From path to a simple line break delimited text file with no header, get list of terms that are excluded from
+    inclusion into Mondo."""
+    try:
+        return set(pd.read_csv(path, header=None)[0])
+    except EmptyDataError:  # empty file
+        return set()
 
 
+# todo: Improvement. Currently, we're returning 'owned terms', which are defined as all the terms that are listed and have the proper prefix.
+#  ..but, we need to improve this and import the ones 'of interest'. so this should come from the signature file?
 def _get_all_owned_terms(
     ontology: Union[SqlImplementation, ProntoImplementation], owned_prefix_map: Dict[PREFIX, URI], ontology_path: str,
     mode=['term', 'uri', 'curie'][0], silent=True, cache_dir_path: str = None, onto_config_path: str = None,
     use_cache=False
 ) -> List[Union[Term, URI, CURIE]]:
-    """Get all terms
+    """Get all relevant owned terms
 
     ontology: Haven't decided yet which implementation I'll use. Would use superclass, but they use mult inheritance.
     owned_prefix_map: All the prefixes that are 'owned' by the ontology. Keys are CURIE prefixes and values are URIs.
@@ -297,7 +314,7 @@ def _get_all_owned_terms(
         for _index, row in direct_parents_df.iterrows():
             if row['term_id'] not in direct_owned_parents_map:
                 direct_owned_parents_map[row['term_id']] = []
-            if row['parent_id'] and any([row['parent_id'].startswith(y) for y in owned_prefix_map.keys()]):
+            if row['parent_id'] and any([row['parent_id'].startswith(x) for x in owned_prefix_map.keys()]):
                 direct_owned_parents_map[row['term_id']].append(row['parent_id'])
 
         # Converting to curies for the purpose of lookup in above map

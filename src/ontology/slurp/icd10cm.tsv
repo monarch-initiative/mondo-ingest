@@ -1,25 +1,22 @@
-mondo_id	xref	label	definition	parents
-ID	A oboInOwl:hasDbXref	LABEL	A IAO:0000115	SC %
-MONDO:850001	ICD10CM:A00-B99			
-MONDO:850002	ICD10CM:C00-D49			
-MONDO:850003	ICD10CM:D50-D89			
-MONDO:850004	ICD10CM:E00-E89			
-MONDO:850005	ICD10CM:F01-F99			
-MONDO:850006	ICD10CM:G00-G99			
-MONDO:850007	ICD10CM:H00-H59			
-MONDO:850008	ICD10CM:H60-H95			
-MONDO:850009	ICD10CM:I00-I99			
-MONDO:850010	ICD10CM:ICD-10-CM			
-MONDO:850011	ICD10CM:J00-J99			
-MONDO:850012	ICD10CM:K00-K95			
-MONDO:850013	ICD10CM:L00-L99			
-MONDO:850014	ICD10CM:M00-M99			
-MONDO:850015	ICD10CM:N00-N99			
-MONDO:850016	ICD10CM:O00-O9A			
-MONDO:850017	ICD10CM:P00-P96			
-MONDO:850018	ICD10CM:Q00-Q99			
-MONDO:850019	ICD10CM:R00-R99			
-MONDO:850020	ICD10CM:S00-T88			
-MONDO:850021	ICD10CM:U00-U85			
-MONDO:850022	ICD10CM:V00-Y99			
-MONDO:850023	ICD10CM:Z00-Z99			
+mondo_id	mondo_label	xref	xref_source	original_label	definition	parents
+ID	LABEL	A oboInOwl:hasDbXref	>A oboInOwl:source SPLIT=|		A IAO:0000115	SC %
+MONDO:850001	certain infectious and parasitic diseases (a00-b99)	ICD10CM:A00-B99	MONDO:equivalentTo	Certain infectious and parasitic diseases (A00-B99)		
+MONDO:850002	neoplasms (c00-d49)	ICD10CM:C00-D49	MONDO:equivalentTo	Neoplasms (C00-D49)		
+MONDO:850003	diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (d50-d89)	ICD10CM:D50-D89	MONDO:equivalentTo	Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)		
+MONDO:850004	endocrine, nutritional and metabolic diseases (e00-e89)	ICD10CM:E00-E89	MONDO:equivalentTo	Endocrine, nutritional and metabolic diseases (E00-E89)		
+MONDO:850005	mental, behavioral and neurodevelopmental disorders (f01-f99)	ICD10CM:F01-F99	MONDO:equivalentTo	Mental, Behavioral and Neurodevelopmental disorders (F01-F99)		
+MONDO:850006	diseases of the nervous system (g00-g99)	ICD10CM:G00-G99	MONDO:equivalentTo	Diseases of the nervous system (G00-G99)		
+MONDO:850007	diseases of the eye and adnexa (h00-h59)	ICD10CM:H00-H59	MONDO:equivalentTo	Diseases of the eye and adnexa (H00-H59)		
+MONDO:850008	diseases of the ear and mastoid process (h60-h95)	ICD10CM:H60-H95	MONDO:equivalentTo	Diseases of the ear and mastoid process (H60-H95)		
+MONDO:850009	diseases of the circulatory system (i00-i99)	ICD10CM:I00-I99	MONDO:equivalentTo	Diseases of the circulatory system (I00-I99)		
+MONDO:850010	icd-10-cm tabular list of diseases and injuries	ICD10CM:ICD-10-CM	MONDO:equivalentTo	ICD-10-CM TABULAR LIST of DISEASES and INJURIES		
+MONDO:850011	diseases of the respiratory system (j00-j99)	ICD10CM:J00-J99	MONDO:equivalentTo	Diseases of the respiratory system (J00-J99)		
+MONDO:850012	diseases of the digestive system (k00-k95)	ICD10CM:K00-K95	MONDO:equivalentTo	Diseases of the digestive system (K00-K95)		
+MONDO:850013	diseases of the skin and subcutaneous tissue (l00-l99)	ICD10CM:L00-L99	MONDO:equivalentTo	Diseases of the skin and subcutaneous tissue (L00-L99)		
+MONDO:850014	diseases of the musculoskeletal system and connective tissue (m00-m99)	ICD10CM:M00-M99	MONDO:equivalentTo	Diseases of the musculoskeletal system and connective tissue (M00-M99)		
+MONDO:850015	diseases of the genitourinary system (n00-n99)	ICD10CM:N00-N99	MONDO:equivalentTo	Diseases of the genitourinary system (N00-N99)		
+MONDO:850016	pregnancy, childbirth and the puerperium (o00-o9a)	ICD10CM:O00-O9A	MONDO:equivalentTo	Pregnancy, childbirth and the puerperium (O00-O9A)		
+MONDO:850017	certain conditions originating in the perinatal period (p00-p96)	ICD10CM:P00-P96	MONDO:equivalentTo	Certain conditions originating in the perinatal period (P00-P96)		
+MONDO:850018	congenital malformations, deformations and chromosomal abnormalities (q00-q99)	ICD10CM:Q00-Q99	MONDO:equivalentTo	Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)		
+MONDO:850019	injury, poisoning and certain other consequences of external causes (s00-t88)	ICD10CM:S00-T88	MONDO:equivalentTo	Injury, poisoning and certain other consequences of external causes (S00-T88)		
+MONDO:850020	codes for special purposes (u00-u85)	ICD10CM:U00-U85	MONDO:equivalentTo	Codes for special purposes (U00-U85)		
