@@ -558,6 +558,10 @@ slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
 #############################
 ###### Synchronization ######
 #############################
+# TODO: Will this cause a conflict w/ the 'sync' phony goal?
+sync/:
+	mkdir -p $@
+
 .PHONY: sync
 sync: sync-subclassof
 
@@ -592,6 +596,35 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--mondo-ingest-db-path $(TMPDIR)/mondo-ingest.db \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml
+
+# TODO: @joeflack4: I originally tagged nico on this, but I wonder if this part is necessary still. we now have %.db
+tmp/mondo-ingest.db:
+	touch tmp/mondo-ingest.db
+tmp/mondo-ingest-without-excluded.db: tmp/mondo-ingest.db
+	cp $< $@
+
+# TODO: rename the output since this is just for synonyms
+# todo: `pip install` stuff is temporarily here until we come up with a fix. otherwise docker won't work
+# TODO: is this pip stuff still necessary?
+sync/mondo-sync-%.owl: tmp/mondo.owl tmp/mondo-ingest-without-excluded.db $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.owl | sync/
+	pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
+	python3 $(SCRIPTSDIR)/sync_synonym.py \
+	--mondo-path tmp/mondo.owl \
+	--mondo-sans-exclusions-path tmp/mondo-ingest-without-excluded.db \
+	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
+	--ontology-path $(COMPONENTSDIR)/$*.owl \
+	--onto-config-path metadata/$*.yml \
+	--outpath-synonyms sync/synonyms-$*.robot.template.tsv \
+	--outpath $@
+
+# TODO: merge all `synonyms-%.robot.template.tsv`. Look at $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv
+synonyms.robot.template.tsv:
+	echo
+
+sync-%:
+	$(MAKE) sync/$*.tsv
+
+sync-all: sync-omim sync-doid sync-ordo sync-icd10cm sync-icd10who sync-ncit
 
 ##################################
 ## Externally managed content ####
