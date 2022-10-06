@@ -214,8 +214,8 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 
 # Exclusions: all artefacts for single ontology
 exclusions-%:
-	$(MAKE) $(REPORTDIR)/$*_term_exclusions.txt \
-	$(MAKE) $(REPORTDIR)/$*_exclusion_reasons.ttl \
+	$(MAKE) $(REPORTDIR)/$*_term_exclusions.txt
+	$(MAKE) $(REPORTDIR)/$*_exclusion_reasons.ttl
 	$(MAKE) $(REPORTDIR)/$*_excluded_terms_in_mondo_xrefs.tsv
 
 # Exclusions: running for all ontologies
@@ -297,6 +297,7 @@ tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
 
 tmp/merged.owl: tmp/mondo.owl tmp/mondo-ingest.owl tmp/mondo.sssom.ttl
 	$(ROBOT) merge -i tmp/mondo.owl -i tmp/mondo-ingest.owl -i tmp/mondo.sssom.ttl -o $@
+	$(ROBOT) merge -i tmp/mondo.owl -i tmp/mondo-ingest.owl -i tmp/mondo.sssom.ttl  --add-prefixes config/context.json -o $@
 
 $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
 	$(ROBOT) query -i tmp/merged.owl --query $< $@
