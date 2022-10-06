@@ -26,7 +26,7 @@ mondo-ingest-base.json
 
 src/ontology/mirror
 src/ontology/mirror/*
-src/ontology/reports/*
+src/ontology/reports/*.ttl
 !src/ontology/reports/README.md
 !src/ontology/reports/*excluded_terms_in_mondo_xrefs.tsv
 !src/ontology/reports/*exclusion_reasons.robot.template.tsv
