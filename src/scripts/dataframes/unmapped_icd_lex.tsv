@@ -786,8 +786,6 @@ MONDO:0043875	tumor lysis syndrome	skos:exactMatch	ICD10CM:E88.3	semapv:LexicalM
 MONDO:0043875	tumor lysis syndrome	skos:exactMatch	ICD10CM:E88.3	semapv:LexicalMatching	Tumor lysis syndrome	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tumor lysis syndrome
 MONDO:0043875	tumor lysis syndrome	skos:exactMatch	ICD10CM:E88.3	semapv:RegularExpressionReplacement	Tumor lysis syndrome	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	tumor lysis syndrome
 MONDO:0011565	metabolic syndrome X	skos:exactMatch	ICD10CM:E88.81	semapv:LexicalMatching	Metabolic syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	dysmetabolic syndrome x
-MONDO:0002002	postsurgical hypothyroidism	skos:exactMatch	ICD10CM:E89.0	semapv:LexicalMatching	Postprocedural hypothyroidism	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	postsurgical hypothyroidism
-MONDO:0002239	post-surgical hypoinsulinemia	skos:exactMatch	ICD10CM:E89.1	semapv:LexicalMatching	Postprocedural hypoinsulinemia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	postsurgical hypoinsulinemia
 MONDO:0004648	vascular dementia	skos:exactMatch	ICD10CM:F01	semapv:LexicalMatching	Vascular dementia	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	vascular dementia
 MONDO:0004648	vascular dementia	skos:exactMatch	ICD10CM:F01	semapv:LexicalMatching	Vascular dementia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	vascular dementia
 MONDO:0004648	vascular dementia	skos:exactMatch	ICD10CM:F01.5	semapv:LexicalMatching	Vascular dementia	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	vascular dementia
@@ -1454,7 +1452,6 @@ MONDO:0009887	desquamative interstitial pneumonia	skos:exactMatch	ICD10CM:J84.11
 MONDO:0009887	desquamative interstitial pneumonia	skos:exactMatch	ICD10CM:J84.117	semapv:LexicalMatching	Desquamative interstitial pneumonia	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	desquamative interstitial pneumonia
 MONDO:0005242	empyema	skos:exactMatch	ICD10CM:J86.9	semapv:RegularExpressionReplacement	Pyothorax without fistula	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	empyema
 MONDO:0006783	hemopneumothorax	skos:exactMatch	ICD10CM:J94.2	semapv:LexicalMatching	Hemothorax	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	hemopneumothorax
-MONDO:0000265	aspiration pneumonia	skos:exactMatch	ICD10CM:J95.4	semapv:LexicalMatching	Chemical pneumonitis due to anesthesia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	mendelson's syndrome
 MONDO:0001208	acute respiratory failure	skos:exactMatch	ICD10CM:J96.0	semapv:LexicalMatching	Acute respiratory failure	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	acute respiratory failure
 MONDO:0001208	acute respiratory failure	skos:exactMatch	ICD10CM:J96.0	semapv:LexicalMatching	Acute respiratory failure	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	acute respiratory failure
 MONDO:0020830	diaphragmitis	skos:exactMatch	ICD10CM:J98.6	semapv:LexicalMatching	Disorders of diaphragm	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	diaphragmatitis
@@ -1524,9 +1521,6 @@ MONDO:0002268	dyspepsia	skos:exactMatch	ICD10CM:K30	semapv:LexicalMatching	Funct
 MONDO:0001878	acquired hypertrophic pyloric stenosis	skos:exactMatch	ICD10CM:K31.1	semapv:LexicalMatching	Adult hypertrophic pyloric stenosis	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	adult hypertrophic pyloric stenosis
 MONDO:0043465	achlorhydria	skos:exactMatch	ICD10CM:K31.83	semapv:LexicalMatching	Achlorhydria	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	achlorhydria
 MONDO:0043465	achlorhydria	skos:exactMatch	ICD10CM:K31.83	semapv:LexicalMatching	Achlorhydria	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	achlorhydria
-MONDO:0005711	congenital diaphragmatic hernia	skos:exactMatch	ICD10CM:K44	semapv:LexicalMatching	Diaphragmatic hernia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	diaphragmatic hernia
-MONDO:0007721	hiatus hernia	skos:exactMatch	ICD10CM:K44	semapv:RegularExpressionReplacement	Diaphragmatic hernia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hiatus hernia
-MONDO:0007721	hiatus hernia	skos:exactMatch	ICD10CM:K44	semapv:RegularExpressionReplacement	Diaphragmatic hernia	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	hiatus hernia
 MONDO:0005011	Crohn disease	skos:exactMatch	ICD10CM:K50	semapv:RegularExpressionReplacement	Crohn's disease [regional enteritis]	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	crohn's disease
 MONDO:0005011	Crohn disease	skos:exactMatch	ICD10CM:K50.1	semapv:LexicalMatching	Crohn's disease of large intestine	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	granulomatous colitis
 MONDO:0005101	ulcerative colitis	skos:exactMatch	ICD10CM:K51	semapv:RegularExpressionReplacement	Ulcerative colitis	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	ulcerative colitis
@@ -1874,16 +1868,6 @@ MONDO:0015299	Asherman syndrome	skos:exactMatch	ICD10CM:N85.6	semapv:LexicalMatc
 MONDO:0001938	vulvar dystrophy	skos:exactMatch	ICD10CM:N90.4	semapv:LexicalMatching	Leukoplakia of vulva	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	dystrophy of vulva
 MONDO:0021722	vulvodynia	skos:exactMatch	ICD10CM:N94.81	semapv:LexicalMatching	Vulvodynia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	vulvodynia
 MONDO:0021722	vulvodynia	skos:exactMatch	ICD10CM:N94.81	semapv:LexicalMatching	Vulvodynia	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	vulvodynia
-MONDO:0000755	ectopic pregnancy	skos:exactMatch	ICD10CM:O00	semapv:LexicalMatching	Ectopic pregnancy	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ectopic pregnancy
-MONDO:0043759	abdominal ectopic pregnancy	skos:exactMatch	ICD10CM:O00.0	semapv:LexicalMatching	Abdominal pregnancy	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	abdominal pregnancy
-MONDO:0043762	tubal pregnancy	skos:exactMatch	ICD10CM:O00.1	semapv:LexicalMatching	Tubal pregnancy	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	tubal pregnancy
-MONDO:0043762	tubal pregnancy	skos:exactMatch	ICD10CM:O00.1	semapv:LexicalMatching	Tubal pregnancy	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tubal pregnancy
-MONDO:0044098	ovarian ectopic pregnancy	skos:exactMatch	ICD10CM:O00.2	semapv:LexicalMatching	Ovarian pregnancy	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	ovarian pregnancy
-MONDO:0044101	pregnancy, cornual	skos:exactMatch	ICD10CM:O00.8	semapv:LexicalMatching	Other ectopic pregnancy	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	cornual pregnancy
-MONDO:0006248	hydatidiform mole	skos:exactMatch	ICD10CM:O01	semapv:LexicalMatching	Hydatidiform mole	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	hydatidiform mole
-MONDO:0006248	hydatidiform mole	skos:exactMatch	ICD10CM:O01	semapv:LexicalMatching	Hydatidiform mole	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hydatidiform mole
-MONDO:0016785	complete hydatidiform mole	skos:exactMatch	ICD10CM:O01.0	semapv:LexicalMatching	Classical hydatidiform mole	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	classical hydatidiform mole
-MONDO:0016785	complete hydatidiform mole	skos:exactMatch	ICD10CM:O01.0	semapv:LexicalMatching	Classical hydatidiform mole	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	complete hydatidiform mole
 MONDO:0005081	preeclampsia	skos:exactMatch	ICD10CM:O14	semapv:LexicalMatching	Pre-eclampsia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pre-eclampsia
 MONDO:0001641	severe pre-eclampsia	skos:exactMatch	ICD10CM:O14.1	semapv:LexicalMatching	Severe pre-eclampsia	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	severe pre-eclampsia
 MONDO:0008585	HELLP syndrome	skos:exactMatch	ICD10CM:O14.2	semapv:LexicalMatching	HELLP syndrome	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hellp syndrome
@@ -1894,21 +1878,6 @@ MONDO:0001065	supine hypotensive syndrome	skos:exactMatch	ICD10CM:O26.5	semapv:L
 MONDO:0008353	pruritic urticarial papules and plaques of pregnancy	skos:exactMatch	ICD10CM:O26.86	semapv:RegularExpressionReplacement	Pruritic urticarial papules and plaques of pregnancy (PUPPP)	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pruritic urticarial papules and plaques of pregnancy
 MONDO:0008353	pruritic urticarial papules and plaques of pregnancy	skos:exactMatch	ICD10CM:O26.86	semapv:LexicalMatching	Pruritic urticarial papules and plaques of pregnancy (PUPPP)	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	polymorphic eruption of pregnancy
 MONDO:0008353	pruritic urticarial papules and plaques of pregnancy	skos:exactMatch	ICD10CM:O26.86	semapv:RegularExpressionReplacement	Pruritic urticarial papules and plaques of pregnancy (PUPPP)	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pruritic urticarial papules and plaques of pregnancy
-MONDO:0004585	polyhydramnios	skos:exactMatch	ICD10CM:O40	semapv:RegularExpressionReplacement	Polyhydramnios	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	polyhydramnios
-MONDO:0004585	polyhydramnios	skos:exactMatch	ICD10CM:O40	semapv:LexicalMatching	Polyhydramnios	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	polyhydramnios
-MONDO:0004585	polyhydramnios	skos:exactMatch	ICD10CM:O40	semapv:LexicalMatching	Polyhydramnios	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	polyhydramnios
-MONDO:0005881	oligohydramnios	skos:exactMatch	ICD10CM:O41.0	semapv:RegularExpressionReplacement	Oligohydramnios	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	oligohydramnios
-MONDO:0005881	oligohydramnios	skos:exactMatch	ICD10CM:O41.0	semapv:LexicalMatching	Oligohydramnios	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	oligohydramnios
-MONDO:0005881	oligohydramnios	skos:exactMatch	ICD10CM:O41.0	semapv:LexicalMatching	Oligohydramnios	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	oligohydramnios
-MONDO:0000409	chorioamnionitis	skos:exactMatch	ICD10CM:O41.12	semapv:LexicalMatching	Chorioamnionitis	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	chorioamnionitis
-MONDO:0005916	placenta accreta	skos:exactMatch	ICD10CM:O43.21	semapv:LexicalMatching	Placenta accreta	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	placenta accreta
-MONDO:0005918	placenta praevia	skos:exactMatch	ICD10CM:O44	semapv:LexicalMatching	Placenta previa	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	placenta previa
-MONDO:0004846	placental abruption	skos:exactMatch	ICD10CM:O45	semapv:RegularExpressionReplacement	Premature separation of placenta [abruptio placentae]	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	premature separation of placenta
-MONDO:0044014	postpartum thyroiditis	skos:exactMatch	ICD10CM:O90.5	semapv:LexicalMatching	Postpartum thyroiditis	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	postpartum thyroiditis
-MONDO:0044014	postpartum thyroiditis	skos:exactMatch	ICD10CM:O90.5	semapv:LexicalMatching	Postpartum thyroiditis	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	postpartum thyroiditis
-MONDO:0009256	galactorrhea	skos:exactMatch	ICD10CM:O92.6	semapv:LexicalMatching	Galactorrhea	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	galactorrhea
-MONDO:0009256	galactorrhea	skos:exactMatch	ICD10CM:O92.6	semapv:RegularExpressionReplacement	Galactorrhea	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	galactorrhea
-MONDO:0009256	galactorrhea	skos:exactMatch	ICD10CM:O92.6	semapv:LexicalMatching	Galactorrhea	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	galactorrhea
 MONDO:0700081	newborn respiratory distress syndrome	skos:exactMatch	ICD10CM:P22.0	semapv:LexicalMatching	Respiratory distress syndrome of newborn	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	respiratory distress syndrome of newborn
 MONDO:0700081	newborn respiratory distress syndrome	skos:exactMatch	ICD10CM:P22.0	semapv:LexicalMatching	Respiratory distress syndrome of newborn	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hyaline membrane disease
 MONDO:0006851	meconium aspiration syndrome	skos:exactMatch	ICD10CM:P24.0	semapv:LexicalMatching	Meconium aspiration	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	meconium aspiration
@@ -1920,10 +1889,6 @@ MONDO:0022430	persistent fetal circulation syndrome	skos:exactMatch	ICD10CM:P29.
 MONDO:0018477	bilirubin encephalopathy	skos:exactMatch	ICD10CM:P57	semapv:LexicalMatching	Kernicterus	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	kernicterus
 MONDO:0001555	neonatal thyrotoxicosis	skos:exactMatch	ICD10CM:P72.1	semapv:LexicalMatching	Transitory neonatal hyperthyroidism	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	neonatal thyrotoxicosis
 MONDO:0009275	neonatal hemochromatosis	skos:exactMatch	ICD10CM:P78.84	semapv:LexicalMatching	Gestational alloimmune liver disease	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	neonatal hemochromatosis
-MONDO:0043783	sclerema neonatorum	skos:exactMatch	ICD10CM:P83.0	semapv:LexicalMatching	Sclerema neonatorum	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	sclerema neonatorum
-MONDO:0043783	sclerema neonatorum	skos:exactMatch	ICD10CM:P83.0	semapv:LexicalMatching	Sclerema neonatorum	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	sclerema neonatorum
-MONDO:0018361	neonatal scleroderma	skos:exactMatch	ICD10CM:P83.88	semapv:LexicalMatching	Other specified conditions of integument specific to newborn	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	neonatal scleroderma
-MONDO:0015742	periventricular leukomalacia	skos:exactMatch	ICD10CM:P91.2	semapv:LexicalMatching	Neonatal cerebral leukomalacia	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	periventricular leukomalacia
 MONDO:0005566	neonatal abstinence syndrome	skos:exactMatch	ICD10CM:P96.1	semapv:LexicalMatching	Neonatal withdrawal symptoms from maternal use of drugs of addiction	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	neonatal abstinence syndrome
 MONDO:0019795	acalvaria	skos:exactMatch	ICD10CM:Q00.0	semapv:LexicalMatching	Anencephaly	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	acrania
 MONDO:0000819	anencephaly	skos:exactMatch	ICD10CM:Q00.0	semapv:LexicalMatching	Anencephaly	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	anencephaly
@@ -2210,49 +2175,9 @@ MONDO:0008434	Smith-Magenis syndrome	skos:exactMatch	ICD10CM:Q93.88	semapv:Lexic
 MONDO:0008434	Smith-Magenis syndrome	skos:exactMatch	ICD10CM:Q93.88	semapv:LexicalMatching	Other microdeletions	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	smith-magenis syndrome
 MONDO:0010383	fragile X syndrome	skos:exactMatch	ICD10CM:Q99.2	semapv:LexicalMatching	Fragile X chromosome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	fragile x syndrome
 MONDO:0010383	fragile X syndrome	skos:exactMatch	ICD10CM:Q99.2	semapv:LexicalMatching	Fragile X chromosome	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	fragile x syndrome
-MONDO:0002268	dyspepsia	skos:exactMatch	ICD10CM:R10.13	semapv:LexicalMatching	Epigastric pain	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	dyspepsia
-MONDO:0000663	anosognosia	skos:exactMatch	ICD10CM:R41.89	semapv:LexicalMatching	Other symptoms and signs involving cognitive functions and awareness	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	anosognosia
-MONDO:0010528	anosmia	skos:exactMatch	ICD10CM:R43.0	semapv:RegularExpressionReplacement	Anosmia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	anosmia
-MONDO:0010528	anosmia	skos:exactMatch	ICD10CM:R43.0	semapv:LexicalMatching	Anosmia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	anosmia
-MONDO:0010528	anosmia	skos:exactMatch	ICD10CM:R43.0	semapv:LexicalMatching	Anosmia	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	anosmia
-MONDO:0016226	specific language disorder	skos:exactMatch	ICD10CM:R47.02	semapv:LexicalMatching	Dysphasia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	dysphasia
-MONDO:0000680	astereognosia	skos:exactMatch	ICD10CM:R48.1	semapv:RegularExpressionReplacement	Agnosia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	astereognosia
-MONDO:0000680	astereognosia	skos:exactMatch	ICD10CM:R48.1	semapv:RegularExpressionReplacement	Agnosia	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	astereognosia
-MONDO:0000668	autotopagnosia	skos:exactMatch	ICD10CM:R48.1	semapv:LexicalMatching	Agnosia	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	autotopagnosia
-MONDO:0000685	visual agnosia	skos:exactMatch	ICD10CM:R48.3	semapv:LexicalMatching	Visual agnosia	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	visual agnosia
-MONDO:0000685	visual agnosia	skos:exactMatch	ICD10CM:R48.3	semapv:RegularExpressionReplacement	Visual agnosia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	visual agnosia
-MONDO:0000678	simultanagnosia	skos:exactMatch	ICD10CM:R48.3	semapv:RegularExpressionReplacement	Visual agnosia	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	simultanagnosia
-MONDO:0000685	visual agnosia	skos:exactMatch	ICD10CM:R48.3	semapv:LexicalMatching	Visual agnosia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	visual agnosia
-MONDO:0003227	prosopagnosia	skos:exactMatch	ICD10CM:R48.3	semapv:LexicalMatching	Visual agnosia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	prosopagnosia
-MONDO:0003227	prosopagnosia	skos:exactMatch	ICD10CM:R48.3	semapv:LexicalMatching	Visual agnosia	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	prosopagnosia
-MONDO:0003227	prosopagnosia	skos:exactMatch	ICD10CM:R48.3	semapv:RegularExpressionReplacement	Visual agnosia	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	prosopagnosia
-MONDO:0000716	agraphia	skos:exactMatch	ICD10CM:R48.8	semapv:LexicalMatching	Other symbolic dysfunctions	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	agraphia
-MONDO:0005833	lymphatic system disorder	skos:exactMatch	ICD10CM:R59	semapv:LexicalMatching	Enlarged lymph nodes	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	swollen glands
-MONDO:0006920	prediabetes syndrome	skos:exactMatch	ICD10CM:R73.03	semapv:LexicalMatching	Prediabetes	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	prediabetes
-MONDO:0004743	hyperhomocysteinemia	skos:exactMatch	ICD10CM:R79.83	semapv:LexicalMatching	Abnormal findings of blood amino-acid level	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	homocysteinemia
-MONDO:0001882	bacteriuria	skos:exactMatch	ICD10CM:R82.71	semapv:RegularExpressionReplacement	Bacteriuria	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	bacteriuria
-MONDO:0001882	bacteriuria	skos:exactMatch	ICD10CM:R82.71	semapv:LexicalMatching	Bacteriuria	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	bacteriuria
-MONDO:0001882	bacteriuria	skos:exactMatch	ICD10CM:R82.71	semapv:LexicalMatching	Bacteriuria	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	bacteriuria
-MONDO:0001953	pyuria	skos:exactMatch	ICD10CM:R82.81	semapv:LexicalMatching	Pyuria	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pyuria
-MONDO:0001953	pyuria	skos:exactMatch	ICD10CM:R82.81	semapv:LexicalMatching	Pyuria	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pyuria
-MONDO:0001953	pyuria	skos:exactMatch	ICD10CM:R82.81	semapv:RegularExpressionReplacement	Pyuria	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pyuria
-MONDO:0006931	pulmonary coin lesion	skos:exactMatch	ICD10CM:R91.1	semapv:LexicalMatching	Solitary pulmonary nodule	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	coin lesion lung
 MONDO:0043230	ciguatera fish poisoning	skos:exactMatch	ICD10CM:T61.0	semapv:LexicalMatching	Ciguatera fish poisoning	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	ciguatera fish poisoning
 MONDO:0043230	ciguatera fish poisoning	skos:exactMatch	ICD10CM:T61.0	semapv:LexicalMatching	Ciguatera fish poisoning	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ciguatera fish poisoning
 MONDO:0018755	scorpion envenomation	skos:exactMatch	ICD10CM:T63.2	semapv:LexicalMatching	Toxic effect of venom of scorpion	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	toxic effect of venom of scorpion
 MONDO:0018755	scorpion envenomation	skos:exactMatch	ICD10CM:T63.2X	semapv:LexicalMatching	Toxic effect of venom of scorpion	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	toxic effect of venom of scorpion
-MONDO:0100053	anaphylaxis	skos:exactMatch	ICD10CM:T78.2	semapv:LexicalMatching	Anaphylactic shock, unspecified	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	anaphylaxis
-MONDO:0010481	angioedema	skos:exactMatch	ICD10CM:T78.3	semapv:LexicalMatching	Angioneurotic edema	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	quincke's edema
-MONDO:0010481	angioedema	skos:exactMatch	ICD10CM:T78.3	semapv:LexicalMatching	Angioneurotic edema	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	giant urticaria
-MONDO:0019013	non-histaminic angioedema	skos:exactMatch	ICD10CM:T78.3	semapv:LexicalMatching	Angioneurotic edema	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	angioneurotic edema
-MONDO:0006660	arthus reaction	skos:exactMatch	ICD10CM:T78.41	semapv:LexicalMatching	Arthus phenomenon	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	arthus phenomenon
-MONDO:0006660	arthus reaction	skos:exactMatch	ICD10CM:T78.41	semapv:LexicalMatching	Arthus phenomenon	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	arthus reaction
-MONDO:0006660	arthus reaction	skos:exactMatch	ICD10CM:T78.41	semapv:RegularExpressionReplacement	Arthus phenomenon	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	arthus reaction
-MONDO:0006660	arthus reaction	skos:exactMatch	ICD10CM:T78.41	semapv:LexicalMatching	Arthus phenomenon	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	arthus reaction
-MONDO:0043549	crush syndrome	skos:exactMatch	ICD10CM:T79.5	semapv:LexicalMatching	Traumatic anuria	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	crush syndrome
-MONDO:0043549	crush syndrome	skos:exactMatch	ICD10CM:T79.5	semapv:LexicalMatching	Traumatic anuria	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	crush syndrome
-MONDO:0003528	Volkmann contracture	skos:exactMatch	ICD10CM:T79.6	semapv:LexicalMatching	Traumatic ischemia of muscle	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	volkmann's ischemic contracture
 MONDO:0043789	serum sickness	skos:exactMatch	ICD10CM:T80.6	semapv:LexicalMatching	Other serum reactions	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	serum sickness
 MONDO:0043789	serum sickness	skos:exactMatch	ICD10CM:T80.6	semapv:LexicalMatching	Other serum reactions	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	serum sickness
-MONDO:0040753	latent tuberculosis infection	skos:exactMatch	ICD10CM:Z22.7	semapv:RegularExpressionReplacement	Latent tuberculosis	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	latent tuberculosis infection
-MONDO:0005902	peanut allergic reaction	skos:exactMatch	ICD10CM:Z91.010	semapv:LexicalMatching	Allergy to peanuts	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	allergy to peanuts
