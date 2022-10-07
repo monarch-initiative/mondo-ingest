@@ -9,6 +9,7 @@ Outputs two files:
   https://docs.google.com/spreadsheets/d/1cZPUReTl34Vu2a03tm2921ehARiIpp4fjeQfS27XzKA/edit#gid=1119821904
 - Ophanet/ORDO exclusions, online:
   https://docs.google.com/spreadsheets/d/16ftBJ8mYqEvSEVNi1tGxIlDfL88vYrs7tSUjSnGqrBw/edit#gid=0
+- Mondo exclusion reasons: https://mondo.readthedocs.io/en/latest/editors-guide/exclusion-reasons/
 
 TODO's
   - todo: later: see below: #x3
@@ -142,7 +143,7 @@ def expand_ontological_exclusions(
     # Variable names: kids0=Children excluded; kids1=Children included
     prefix_sparql_strings = [f'prefix {k}: <{v}>' for k, v in prefix_map.items()]
     df_kids1 = exclusions_df[exclusions_df['exclude_children'] == True]
-    df_kids0 = exclusions_df[exclusions_df['exclude_children'] == False]
+    df_kids0 = exclusions_df[exclusions_df['exclude_children'] != True]
 
     # Terms w/ non-excluded children
     if len(df_kids1) > 0:
