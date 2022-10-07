@@ -75,8 +75,7 @@ def slurp(
                 break
         if qualified_parents:
             next_mondo_id, mondo_term_ids = _get_next_available_mondo_id(next_mondo_id, max_id, mondo_term_ids)
-            # mondo_id = 'MONDO:' + ('0' * (len(str(next_mondo_id)) - 7)) + str(next_mondo_id)  # min->max needs no pad
-            mondo_id = 'MONDO:' + str(next_mondo_id)
+            mondo_id = 'MONDO:' + str(next_mondo_id).zfill(7)  # leading 0-padding
             mondo_label = t.label.lower() if t.label else ''
             terms_to_slurp.append({
                 'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
