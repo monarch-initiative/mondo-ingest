@@ -1,22 +1,22 @@
 subject_id	subject_label	predicate_id	object_id	mapping_justification	object_label	comment	mapping_tool	confidence	subject_match_field	object_match_field	match_string
-ID		>A oboInOwl:source	A oboInOwl:hasDbXref		>A sssom:object_label						
-MONDO:0009821	lethal osteosclerotic bone dysplasia	skos:exactMatch	OMIM:259775	semapv:LexicalMatching	raine syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	osteomalacia, sclerosing, with cerebral calcification
-MONDO:0009821	lethal osteosclerotic bone dysplasia	skos:exactMatch	OMIM:259775	semapv:LexicalMatching	raine syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	raine syndrome
-MONDO:0009821	lethal osteosclerotic bone dysplasia	skos:exactMatch	OMIM:259775	semapv:LexicalMatching	raine syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	raine syndrome
-MONDO:0012997	cholestasis-pigmentary retinopathy-cleft palate syndrome	skos:exactMatch	OMIM:301068	semapv:LexicalMatching	hardikar syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hardikar syndrome
-MONDO:0012997	cholestasis-pigmentary retinopathy-cleft palate syndrome	skos:exactMatch	OMIM:301068	semapv:LexicalMatching	hardikar syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	hardikar syndrome
-MONDO:0017715	3-hydroxyacyl-CoA dehydrogenase deficiency	skos:exactMatch	OMIM:231530	semapv:LexicalMatching	3-hydroxyacyl-coa dehydrogenase deficiency	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	3-hydroxyacyl-coa dehydrogenase deficiency
-MONDO:0017715	3-hydroxyacyl-CoA dehydrogenase deficiency	skos:exactMatch	OMIM:231530	semapv:LexicalMatching	3-hydroxyacyl-coa dehydrogenase deficiency	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	3-hydroxyacyl-coa dehydrogenase deficiency
-MONDO:0018346	ferro-cerebro-cutaneous syndrome	skos:exactMatch	OMIM:301072	semapv:LexicalMatching	neurodevelopmental disorder with epilepsy and hemochromatosis	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	ferro-cerebro-cutaneous syndrome
-MONDO:0018582	GCGR-related hyperglucagonemia	skos:exactMatch	OMIM:619290	semapv:LexicalMatching	mahvash disease	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	mahvash disease
-MONDO:0018582	GCGR-related hyperglucagonemia	skos:exactMatch	OMIM:619290	semapv:LexicalMatching	mahvash disease	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	mahvash disease
-MONDO:0018690	Holmes-Adie syndrome	skos:exactMatch	OMIM:103100	semapv:LexicalMatching	adie pupil	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	holmes-adie syndrome
-MONDO:0018690	Holmes-Adie syndrome	skos:exactMatch	OMIM:103100	semapv:LexicalMatching	adie pupil	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	holmes-adie syndrome
-MONDO:0018690	Holmes-Adie syndrome	skos:exactMatch	OMIM:103100	semapv:LexicalMatching	adie pupil	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	adie syndrome
-MONDO:0019105	renal nutcracker syndrome	skos:exactMatch	OMIM:259775	semapv:LexicalMatching	raine syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	rns
-MONDO:0020457	6-phosphogluconate dehydrogenase deficiency	skos:exactMatch	OMIM:619199	semapv:LexicalMatching	6-phosphogluconate dehydrogenase deficiency	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	6-phosphogluconate dehydrogenase deficiency
-MONDO:0020457	6-phosphogluconate dehydrogenase deficiency	skos:exactMatch	OMIM:619199	semapv:LexicalMatching	6-phosphogluconate dehydrogenase deficiency	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	6-phosphogluconate dehydrogenase deficiency
-MONDO:0020485	King-Denborough syndrome	skos:exactMatch	OMIM:619542	semapv:LexicalMatching	king-denborough syndrome	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	king-denborough syndrome
-MONDO:0020485	King-Denborough syndrome	skos:exactMatch	OMIM:619542	semapv:LexicalMatching	king-denborough syndrome	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	king-denborough syndrome
-MONDO:0036193	parkinsonism with polyneuropathy	skos:exactMatch	OMIM:619279	semapv:LexicalMatching	parkinsonism with polyneuropathy	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	parkinsonism with polyneuropathy
-MONDO:0036193	parkinsonism with polyneuropathy	skos:exactMatch	OMIM:619279	semapv:LexicalMatching	parkinsonism with polyneuropathy	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	parkinsonism with polyneuropathy
+ID		A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label							
+MONDO:0009821	lethal osteosclerotic bone dysplasia	MONDO:equivalentTo	OMIM:259775	semapv:LexicalMatching	raine syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	osteomalacia, sclerosing, with cerebral calcification
+MONDO:0009821	lethal osteosclerotic bone dysplasia	MONDO:equivalentTo	OMIM:259775	semapv:LexicalMatching	raine syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	raine syndrome
+MONDO:0009821	lethal osteosclerotic bone dysplasia	MONDO:equivalentTo	OMIM:259775	semapv:LexicalMatching	raine syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	raine syndrome
+MONDO:0012997	cholestasis-pigmentary retinopathy-cleft palate syndrome	MONDO:equivalentTo	OMIM:301068	semapv:LexicalMatching	hardikar syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hardikar syndrome
+MONDO:0012997	cholestasis-pigmentary retinopathy-cleft palate syndrome	MONDO:equivalentTo	OMIM:301068	semapv:LexicalMatching	hardikar syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	hardikar syndrome
+MONDO:0017715	3-hydroxyacyl-CoA dehydrogenase deficiency	MONDO:equivalentTo	OMIM:231530	semapv:LexicalMatching	3-hydroxyacyl-coa dehydrogenase deficiency	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	3-hydroxyacyl-coa dehydrogenase deficiency
+MONDO:0017715	3-hydroxyacyl-CoA dehydrogenase deficiency	MONDO:equivalentTo	OMIM:231530	semapv:LexicalMatching	3-hydroxyacyl-coa dehydrogenase deficiency	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	3-hydroxyacyl-coa dehydrogenase deficiency
+MONDO:0018346	ferro-cerebro-cutaneous syndrome	MONDO:equivalentTo	OMIM:301072	semapv:LexicalMatching	neurodevelopmental disorder with epilepsy and hemochromatosis	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	ferro-cerebro-cutaneous syndrome
+MONDO:0018582	GCGR-related hyperglucagonemia	MONDO:equivalentTo	OMIM:619290	semapv:LexicalMatching	mahvash disease	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	rdfs:label	mahvash disease
+MONDO:0018582	GCGR-related hyperglucagonemia	MONDO:equivalentTo	OMIM:619290	semapv:LexicalMatching	mahvash disease	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	mahvash disease
+MONDO:0018690	Holmes-Adie syndrome	MONDO:equivalentTo	OMIM:103100	semapv:LexicalMatching	adie pupil	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	holmes-adie syndrome
+MONDO:0018690	Holmes-Adie syndrome	MONDO:equivalentTo	OMIM:103100	semapv:LexicalMatching	adie pupil	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	holmes-adie syndrome
+MONDO:0018690	Holmes-Adie syndrome	MONDO:equivalentTo	OMIM:103100	semapv:LexicalMatching	adie pupil	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	adie syndrome
+MONDO:0019105	renal nutcracker syndrome	MONDO:equivalentTo	OMIM:259775	semapv:LexicalMatching	raine syndrome	LEXMATCH	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	rns
+MONDO:0020457	6-phosphogluconate dehydrogenase deficiency	MONDO:equivalentTo	OMIM:619199	semapv:LexicalMatching	6-phosphogluconate dehydrogenase deficiency	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	6-phosphogluconate dehydrogenase deficiency
+MONDO:0020457	6-phosphogluconate dehydrogenase deficiency	MONDO:equivalentTo	OMIM:619199	semapv:LexicalMatching	6-phosphogluconate dehydrogenase deficiency	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	6-phosphogluconate dehydrogenase deficiency
+MONDO:0020485	King-Denborough syndrome	MONDO:equivalentTo	OMIM:619542	semapv:LexicalMatching	king-denborough syndrome	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	king-denborough syndrome
+MONDO:0020485	King-Denborough syndrome	MONDO:equivalentTo	OMIM:619542	semapv:LexicalMatching	king-denborough syndrome	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	king-denborough syndrome
+MONDO:0036193	parkinsonism with polyneuropathy	MONDO:equivalentTo	OMIM:619279	semapv:LexicalMatching	parkinsonism with polyneuropathy	LEXMATCH	oaklib	0.8497788951776651	rdfs:label	rdfs:label	parkinsonism with polyneuropathy
+MONDO:0036193	parkinsonism with polyneuropathy	MONDO:equivalentTo	OMIM:619279	semapv:LexicalMatching	parkinsonism with polyneuropathy	LEXMATCH	oaklib	0.8	rdfs:label	oio:hasExactSynonym	parkinsonism with polyneuropathy
