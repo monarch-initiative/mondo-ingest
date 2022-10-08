@@ -368,7 +368,12 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_ter
 	--slurp-dir-path slurp/ \
 	--outpath $@
 
-slurp-%:
+slurp-no-updates-%:
 	$(MAKE) slurp/$*.tsv
+
+slurp-all-no-updates: slurp-no-updates-omim slurp-no-updates-doid slurp-no-updates-ordo slurp-no-updates-icd10cm slurp-no-updates-icd10who slurp-no-updates-ncit
+
+slurp-%:
+	$(MAKE) slurp/$*.tsv -B
 
 slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit
