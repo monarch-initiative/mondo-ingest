@@ -82,8 +82,12 @@ def slurp(
                 'original_label': t.label if t.label else '', 'definition': t.definition if t.definition else '',
                 'parents': '|'.join(parent_mondo_ids)})
 
-    result = pd.DataFrame([ROBOT_TEMPLATE_HEADER] + terms_to_slurp)
-    result.to_csv(outpath, sep="\t", index=False)
+    # Sort, add robot row, save and return
+    result = pd.DataFrame(terms_to_slurp)
+    result = result.sort_values(
+        ['mondo_id', 'mondo_label', 'xref', 'xref_source', 'original_label', 'definition', 'parents'])
+    result = pd.concat([pd.DataFrame([ROBOT_TEMPLATE_HEADER]), result])
+    result.to_csv(outpath, sep='\t', index=False)
     return result
 
 
