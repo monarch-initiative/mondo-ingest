@@ -1,73 +1,57 @@
-subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	comment
-MONDO:0000253	White piedra	skos:narrowMatch	ICD10CM:B36.2	piedra	semapv:LexicalMatching	LEXMATCH
-MONDO:0000253	Black piedra	skos:narrowMatch	ICD10CM:B36.3	piedra	semapv:LexicalMatching	LEXMATCH
-MONDO:0000261	Chronic adenoiditis	skos:narrowMatch	ICD10CM:J35.02	adenoiditis	semapv:LexicalMatching	COMMON_TO_BOTH
-MONDO:0001056	Malignant neoplasm of body of stomach	skos:narrowMatch	ICD10CM:C16.2	gastric cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0001105	Renovascular hypertension	skos:narrowMatch	ICD10CM:I15.0	renal hypertension	semapv:LexicalMatching	LEXMATCH
-MONDO:0001126	Acute gastric ulcer with perforation	skos:narrowMatch	ICD10CM:K25.1	gastric ulcer	semapv:LexicalMatching	LEXMATCH
-MONDO:0001246	Typhus fever due to Rickettsia typhi	skos:narrowMatch	ICD10CM:A75.2	typhus	semapv:RegularExpressionReplacement	COMMON_TO_BOTH
-MONDO:0001421	Malignant neoplasm of frontal lobe	skos:narrowMatch	ICD10CM:C71.1	frontal lobe neoplasm	semapv:LexicalMatching	LEXMATCH
-MONDO:0001564	Simultaneous visual perception without fusion	skos:narrowMatch	ICD10CM:H53.33	binocular vision disease	semapv:LexicalMatching	LEXMATCH
-MONDO:0001672	Malignant neoplasm of bronchus and lung	skos:narrowMatch	ICD10CM:C34	bronchus cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0002026	Candidal sepsis	skos:narrowMatch	ICD10CM:B37.7	candidiasis	semapv:LexicalMatching	LEXMATCH
-MONDO:0002155	Chronic cholecystitis	skos:narrowMatch	ICD10CM:K81.1	cholecystitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0002155	Acute cholecystitis	skos:narrowMatch	ICD10CM:K81.0	cholecystitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0002258	Acute pharyngitis	skos:narrowMatch	ICD10CM:J02	pharyngitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0002258	Chronic pharyngitis	skos:narrowMatch	ICD10CM:J31.2	pharyngitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0002266	Maltworker's lung	skos:narrowMatch	ICD10CM:J67.4	malt worker's lung	semapv:LexicalMatching	LEXMATCH
-MONDO:0002316	Hereditary motor and sensory neuropathy	skos:narrowMatch	ICD10CM:G60.0	motor peripheral neuropathy	semapv:LexicalMatching	LEXMATCH
-MONDO:0002508	Acute gingivitis	skos:narrowMatch	ICD10CM:K05.0	gingivitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0002508	Chronic gingivitis	skos:narrowMatch	ICD10CM:K05.1	gingivitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0003767	Rheumatic mitral insufficiency	skos:narrowMatch	ICD10CM:I05.1	mitral valve disorder	semapv:LexicalMatching	LEXMATCH
-MONDO:0003781	Acute bronchitis	skos:narrowMatch	ICD10CM:J20	bronchitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0004473	Malignant neoplasm of anterior surface of epiglottis	skos:narrowMatch	ICD10CM:C10.1	epiglottis cancer	semapv:LexicalMatching	COMMON_TO_BOTH
-MONDO:0004631	Malignant neoplasm of dorsal surface of tongue	skos:narrowMatch	ICD10CM:C02.0	tongue cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0004631	Malignant neoplasm of base of tongue	skos:narrowMatch	ICD10CM:C01	tongue cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0004631	Malignant neoplasm of border of tongue	skos:narrowMatch	ICD10CM:C02.1	tongue cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0004631	Malignant neoplasm of ventral surface of tongue	skos:narrowMatch	ICD10CM:C02.2	tongue cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0004631	Malignant neoplasm of anterior two-thirds of tongue, part unspecified	skos:narrowMatch	ICD10CM:C02.3	tongue cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0004701	Polyp of corpus uteri	skos:narrowMatch	ICD10CM:N84.0	uterine polyp	semapv:LexicalMatching	COMMON_TO_BOTH
-MONDO:0004731	Primary central sleep apnea	skos:narrowMatch	ICD10CM:G47.31	central sleep apnea syndrome	semapv:LexicalMatching	LEXMATCH
-MONDO:0004737	Homocystinuria	skos:narrowMatch	ICD10CM:E72.11	homocystinuria	semapv:LexicalMatching	COMMON_TO_BOTH
-MONDO:0004773	Primary iridocyclitis	skos:narrowMatch	ICD10CM:H20.01	iridocyclitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0004907	Alopecia areata	skos:narrowMatch	ICD10CM:L63	alopecia	semapv:LexicalMatching	LEXMATCH
-MONDO:0004950	Malignant neoplasm of fundus of stomach	skos:narrowMatch	ICD10CM:C16.1	gastric carcinoma	semapv:LexicalMatching	LEXMATCH
-MONDO:0004978	Rheumatic aortic stenosis	skos:narrowMatch	ICD10CM:I06.0	aortic stenosis	semapv:LexicalMatching	LEXMATCH
-MONDO:0004985	Bipolar disorder, unspecified	skos:narrowMatch	ICD10CM:F31.9	bipolar disorder	semapv:LexicalMatching	LEXMATCH
-MONDO:0005055	Kaposi's sarcoma of lymph nodes	skos:narrowMatch	ICD10CM:C46.3	Kaposi's sarcoma	semapv:LexicalMatching	COMMON_TO_BOTH
-MONDO:0005055	Kaposi's sarcoma of skin	skos:narrowMatch	ICD10CM:C46.0	Kaposi's sarcoma	semapv:LexicalMatching	COMMON_TO_BOTH
-MONDO:0005055	Kaposi's sarcoma of gastrointestinal sites	skos:narrowMatch	ICD10CM:C46.4	Kaposi's sarcoma	semapv:LexicalMatching	LEXMATCH
-MONDO:0005301	Multiple sclerosis	skos:narrowMatch	ICD10CM:G35	multiple sclerosis	semapv:LexicalMatching	COMMON_TO_BOTH
-MONDO:0005379	Dysthymic disorder	skos:narrowMatch	ICD10CM:F34.1	neurotic disorder	semapv:LexicalMatching	LEXMATCH
-MONDO:0005498	Wound botulism	skos:narrowMatch	ICD10CM:A48.52	botulism	semapv:RegularExpressionReplacement	LEXMATCH
-MONDO:0005515	Malignant neoplasm of lateral floor of mouth	skos:narrowMatch	ICD10CM:C04.1	oral cavity cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0005515	Malignant neoplasm of floor of mouth	skos:narrowMatch	ICD10CM:C04	oral cavity cancer	semapv:LexicalMatching	LEXMATCH
-MONDO:0005615	Solitary plasmacytoma	skos:narrowMatch	ICD10CM:C90.3	plasmacytoma	semapv:LexicalMatching	COMMON_TO_BOTH
-MONDO:0005649	Acute appendicitis	skos:narrowMatch	ICD10CM:K35	appendicitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0005649	Acute appendicitis with generalized peritonitis	skos:narrowMatch	ICD10CM:K35.2	appendicitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0005738	Echinococcosis	skos:narrowMatch	ICD10CM:B67	echinococcosis	semapv:LexicalMatching	LEXMATCH
-MONDO:0005738	Echinococcosis, unspecified, of liver	skos:narrowMatch	ICD10CM:B67.8	echinococcosis	semapv:LexicalMatching	LEXMATCH
-MONDO:0005815	Benign neoplasm of endocrine pancreas	skos:narrowMatch	ICD10CM:D13.7	pancreatic neuroendocrine neoplasm	semapv:LexicalMatching	LEXMATCH
-MONDO:0005960	Pneumoconiosis associated with tuberculosis	skos:narrowMatch	ICD10CM:J65	silicosis	semapv:LexicalMatching	LEXMATCH
-MONDO:0006011	Unspecified viral hepatitis with hepatic coma	skos:narrowMatch	ICD10CM:B19.0	viral hepatitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0006617	Subcorneal pustular dermatitis	skos:narrowMatch	ICD10CM:L13.1	vesiculobullous skin disease	semapv:LexicalMatching	LEXMATCH
-MONDO:0006651	Iridocyclitis	skos:narrowMatch	ICD10CM:H20	anterior uveitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0006806	Posterior cyclitis	skos:narrowMatch	ICD10CM:H30.2	intermediate uveitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0007000	Nonvenereal syphilis	skos:narrowMatch	ICD10CM:A65	Treponema infectious disease	semapv:LexicalMatching	LEXMATCH
-MONDO:0007113	Angelman syndrome	skos:narrowMatch	ICD10CM:Q93.51	Angelman syndrome	semapv:RegularExpressionReplacement	COMMON_TO_BOTH
-MONDO:0007655	Other congenital malformations of tongue	skos:narrowMatch	ICD10CM:Q38.3	fissured tongue	semapv:LexicalMatching	LEXMATCH
-MONDO:0010481	Angioneurotic edema	skos:narrowMatch	ICD10CM:T78.3	angioedema	semapv:LexicalMatching	LEXMATCH
-MONDO:0011057	Cerebral infarction	skos:narrowMatch	ICD10CM:I63	cerebrovascular disorder	semapv:LexicalMatching	LEXMATCH
-MONDO:0011786	Other allergic rhinitis	skos:narrowMatch	ICD10CM:J30.89	allergic rhinitis	semapv:LexicalMatching	LEXMATCH
-MONDO:0016367	Other dermatomyositis	skos:narrowMatch	ICD10CM:M33.1	dermatomyositis	semapv:LexicalMatching	LEXMATCH
-MONDO:0017069	Spina bifida	skos:narrowMatch	ICD10CM:Q05	spina bifida cystica	semapv:LexicalMatching	LEXMATCH
-MONDO:0018938	Morquio A mucopolysaccharidoses	skos:narrowMatch	ICD10CM:E76.210	mucopolysaccharidosis type 4	semapv:LexicalMatching	LEXMATCH
-MONDO:0019563	CR(E)ST syndrome	skos:narrowMatch	ICD10CM:M34.1	CREST syndrome	semapv:RegularExpressionReplacement	LEXMATCH
-MONDO:0021005	Other congenital malformation syndromes predominantly associated with short stature	skos:narrowMatch	ICD10CM:Q87.19	faciodigitogenital syndrome	semapv:LexicalMatching	LEXMATCH
-MONDO:0021113	Chronic respiratory failure	skos:narrowMatch	ICD10CM:J96.1	respiratory failure	semapv:LexicalMatching	LEXMATCH
-MONDO:0021113	Acute respiratory failure	skos:narrowMatch	ICD10CM:J96.0	respiratory failure	semapv:LexicalMatching	LEXMATCH
-MONDO:0021129	Microphthalmos	skos:narrowMatch	ICD10CM:Q11.2	microphthalmia	semapv:LexicalMatching	LEXMATCH
-MONDO:0041403	Nutritional optic neuropathy	skos:narrowMatch	ICD10CM:H46.2	toxic amblyopia	semapv:LexicalMatching	LEXMATCH
-MONDO:0100125	Hallucinogen abuse with hallucinogen persisting perception disorder (flashbacks)	skos:narrowMatch	ICD10CM:F16.183	hallucinogen-persisting perception disorder	semapv:RegularExpressionReplacement	LEXMATCH
-MONDO:0100443	Pigmentary retinal dystrophy	skos:narrowMatch	ICD10CM:H35.52	RDH5-related retinopathy	semapv:LexicalMatching	LEXMATCH
-MONDO:0100444	Pigmentary retinal dystrophy	skos:narrowMatch	ICD10CM:H35.52	RLBP1-related retinopathy	semapv:LexicalMatching	LEXMATCH
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0000461	nutritional biotin deficiency	skos:narrowMatch	ICD10CM:E53.8	Deficiency of other specified B group vitamins	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	biotin deficiency	LEXMATCH
+MONDO:0000870	childhood acute lymphoblastic leukemia	skos:narrowMatch	ICD10CM:C91.0	Acute lymphoblastic leukemia [ALL]	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	acute lymphoblastic leukemia	LEXMATCH
+MONDO:0000914	cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 1	skos:narrowMatch	ICD10CM:I67.850	Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy	LEXMATCH
+MONDO:0001493	chronic pulmonary heart disease	skos:narrowMatch	ICD10CM:I27.81	Cor pulmonale (chronic)	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	cor pulmonale	LEXMATCH
+MONDO:0001838	acute gonococcal prostatitis	skos:narrowMatch	ICD10CM:A54.22	Gonococcal prostatitis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	gonococcal prostatitis	LEXMATCH
+MONDO:0001947	suppurative thyroiditis	skos:narrowMatch	ICD10CM:E06.0	Acute thyroiditis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	abscess of thyroid	LEXMATCH
+MONDO:0002204	transient arthritis	skos:narrowMatch	ICD10CM:M12.8	Other specific arthropathies, not elsewhere classified	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	transient arthropathy	LEXMATCH
+MONDO:0003541	adult acute lymphoblastic leukemia	skos:narrowMatch	ICD10CM:C91.0	Acute lymphoblastic leukemia [ALL]	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	acute lymphoblastic leukemia	LEXMATCH
+MONDO:0004639	perinatal necrotizing enterocolitis	skos:narrowMatch	ICD10CM:K55.3	Necrotizing enterocolitis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	necrotizing enterocolitis	LEXMATCH
+MONDO:0005260	autism	skos:narrowMatch	ICD10CM:F84.0	Autistic disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	autism spectrum disorder	LEXMATCH
+MONDO:0005393	gout	skos:narrowMatch	ICD10CM:M1A	Chronic gout	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	chronic gout	LEXMATCH
+MONDO:0005712	congenital nystagmus	skos:narrowMatch	ICD10CM:H55.0	Nystagmus	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	nystagmus	LEXMATCH
+MONDO:0006507	hereditary hemochromatosis	skos:narrowMatch	ICD10CM:E83.11	Hemochromatosis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	hemochromatosis	LEXMATCH
+MONDO:0007098	ACys amyloidosis	skos:narrowMatch	ICD10CM:I68.0	Cerebral amyloid angiopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	cerebral amyloid angiopathy	LEXMATCH
+MONDO:0007157	arthrogryposis, distal, type 1A	skos:narrowMatch	ICD10CM:Q74.3	Arthrogryposis multiplex congenita	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	arthrogryposis multiplex congenita	LEXMATCH
+MONDO:0007540	multiple endocrine neoplasia type 1	skos:narrowMatch	ICD10CM:E31.2	Multiple endocrine neoplasia [MEN] syndromes	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	multiple endocrine adenomatosis	LEXMATCH
+MONDO:0007738	spondyloepiphyseal dysplasia with congenital joint dislocations	skos:narrowMatch	ICD10CM:Q77.7	Spondyloepiphyseal dysplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	spondyloepiphyseal dysplasia	LEXMATCH
+MONDO:0007896	acute monocytic leukemia	skos:narrowMatch	ICD10CM:C93	Monocytic leukemia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	monocytic leukemia	LEXMATCH
+MONDO:0008030	facioscapulohumeral muscular dystrophy 1	skos:narrowMatch	ICD10CM:G71.02	Facioscapulohumeral muscular dystrophy	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	facioscapulohumeral muscular dystrophy	LEXMATCH
+MONDO:0008251	familial pityriasis rubra pilaris	skos:narrowMatch	ICD10CM:L44.0	Pityriasis rubra pilaris	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	pityriasis rubra pilaris	LEXMATCH
+MONDO:0008310	Hutchinson-Gilford progeria syndrome	skos:narrowMatch	ICD10CM:E34.8	Other specified endocrine disorders	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	progeria	LEXMATCH
+MONDO:0008319	protoporphyria, erythropoietic, 1	skos:narrowMatch	ICD10CM:E80.0	Hereditary erythropoietic porphyria	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	erythropoietic protoporphyria	LEXMATCH
+MONDO:0008399	sarcoidosis, susceptibility to, 1	skos:narrowMatch	ICD10CM:D80-D89	Certain disorders involving the immune mechanism (D80-D89)	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	sarcoidosis	LEXMATCH
+MONDO:0008399	sarcoidosis, susceptibility to, 1	skos:narrowMatch	ICD10CM:D86	Sarcoidosis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	sarcoidosis	LEXMATCH
+MONDO:0008791	anencephaly 1	skos:narrowMatch	ICD10CM:Q00.0	Anencephaly	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	anencephaly	LEXMATCH
+MONDO:0008988	citrullinemia type I	skos:narrowMatch	ICD10CM:E72.23	Citrullinemia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	citrullinemia	LEXMATCH
+MONDO:0009100	type 1 diabetes mellitus 1	skos:narrowMatch	ICD10CM:E10	Type 1 diabetes mellitus	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	type 1 diabetes mellitus	LEXMATCH
+MONDO:0009277	glaucoma 3A	skos:narrowMatch	ICD10CM:Q15.0	Congenital glaucoma	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	buphthalmos	LEXMATCH
+MONDO:0009349	holoprosencephaly 1	skos:narrowMatch	ICD10CM:Q87.0	Congenital malformation syndromes predominantly affecting facial appearance	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	cyclopia	LEXMATCH
+MONDO:0009666	holocarboxylase synthetase deficiency	skos:narrowMatch	ICD10CM:D81.81	Biotin-dependent carboxylase deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	multiple carboxylase deficiency	LEXMATCH
+MONDO:0009738	sialidosis type 2	skos:narrowMatch	ICD10CM:E77.1	Defects in glycoprotein degradation	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	sialidosis	LEXMATCH
+MONDO:0009773	odonto-onycho-dermal dysplasia	skos:narrowMatch	ICD10CM:Q82.4	Ectodermal dysplasia (anhidrotic)	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	ectodermal dysplasia	LEXMATCH
+MONDO:0009943	Pyle disease	skos:narrowMatch	ICD10CM:Q78.5	Metaphyseal dysplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	metaphyseal dysplasia	LEXMATCH
+MONDO:0010576	X-linked mixed hearing loss with perilymphatic gusher	skos:narrowMatch	ICD10CM:H91.9	Unspecified hearing loss	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	high frequency deafness	LEXMATCH
+MONDO:0010589	Aarskog-Scott syndrome, X-linked	skos:narrowMatch	ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	aarskog syndrome	LEXMATCH
+MONDO:0011908	juvenile myelomonocytic leukemia	skos:narrowMatch	ICD10CM:C93.1	Chronic myelomonocytic leukemia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	chronic myelomonocytic leukemia	LEXMATCH
+MONDO:0012004	parathyroid gland carcinoma	skos:narrowMatch	ICD10CM:C75.0	Malignant neoplasm of parathyroid gland	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	malignant neoplasm of parathyroid gland	LEXMATCH
+MONDO:0014013	maternal riboflavin deficiency	skos:narrowMatch	ICD10CM:E53.0	Riboflavin deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	riboflavin deficiency	LEXMATCH
+MONDO:0015459	nasopharyngeal carcinoma	skos:narrowMatch	ICD10CM:C11	Malignant neoplasm of nasopharynx	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	malignant neoplasm of nasopharynx	LEXMATCH
+MONDO:0015626	Charcot-Marie-Tooth disease	skos:narrowMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	hereditary motor and sensory neuropathy	LEXMATCH
+MONDO:0017282	alveolar echinococcosis	skos:narrowMatch	ICD10CM:B67	Echinococcosis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	echinococcosis	LEXMATCH
+MONDO:0017363	idiopathic chronic eosinophilic pneumonia	skos:narrowMatch	ICD10CM:J82.81	Chronic eosinophilic pneumonia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	chronic eosinophilic pneumonia	LEXMATCH
+MONDO:0018100	familial primary hypomagnesemia	skos:narrowMatch	ICD10CM:E83.42	Hypomagnesemia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	hypomagnesemia	LEXMATCH
+MONDO:0018543	autosomal dominant hypocalcemia	skos:narrowMatch	ICD10CM:E83.51	Hypocalcemia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	hypocalcemia	LEXMATCH
+MONDO:0018767	severe primary trimethylaminuria	skos:narrowMatch	ICD10CM:E72.52	Trimethylaminuria	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	trimethylaminuria	LEXMATCH
+MONDO:0018931	mucolipidosis type III	skos:narrowMatch	ICD10CM:E77.0	Defects in post-translational modification of lysosomal enzymes	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	mucolipidosis iii	LEXMATCH
+MONDO:0018975	neurofibromatosis type 1	skos:narrowMatch	ICD10CM:Q85.0	Neurofibromatosis (nonmalignant)	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	neurofibromatosis	LEXMATCH
+MONDO:0019478	adult nodular lymphocyte predominant Hodgkin lymphoma	skos:narrowMatch	ICD10CM:C81.0	Nodular lymphocyte predominant Hodgkin lymphoma	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	nodular lymphocyte predominant hodgkin lymphoma	LEXMATCH
+MONDO:0019565	hereditary von Willebrand disease	skos:narrowMatch	ICD10CM:D68.0	Von Willebrand's disease	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	vascular hemophilia	LEXMATCH
+MONDO:0020113	primary acquired red cell aplasia	skos:narrowMatch	ICD10CM:D60	Acquired pure red cell aplasia [erythroblastopenia]	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	red cell aplasia	LEXMATCH
+MONDO:0020730	carpal tunnel syndrome 1	skos:narrowMatch	ICD10CM:G56.0	Carpal tunnel syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	carpal tunnel syndrome	LEXMATCH
+MONDO:0024507	aniridia 1	skos:narrowMatch	ICD10CM:Q13.1	Absence of iris	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	aniridia	LEXMATCH
+MONDO:0030903	Hermansky-Pudlak syndrome 11	skos:narrowMatch	ICD10CM:E70.331	Hermansky-Pudlak syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	hermansky-pudlak syndrome	LEXMATCH
+MONDO:0044747	human anaplasmosis	skos:narrowMatch	ICD10CM:A79.82	Anaplasmosis [A. phagocytophilum]	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	anaplasmosis	LEXMATCH
+MONDO:0100002	food protein-induced allergic proctocolitis	skos:narrowMatch	ICD10CM:K52.29	Other allergic and dietetic gastroenteritis and colitis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	allergic proctocolitis	LEXMATCH
+MONDO:0100340	Friedreich ataxia 1	skos:narrowMatch	ICD10CM:G11.11	Friedreich ataxia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	friedreich ataxia	LEXMATCH
