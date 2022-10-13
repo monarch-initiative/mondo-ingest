@@ -1,0 +1,40 @@
+subject_id	subject_label	predicate_id	object_id	object_label	levenshtein_dist	semantic_similarity	mapping_justification	confidence	subject_match_field	object_match_field	match_string	notes
+MONDO:0001694	diffuse interstitial keratitis	ICD10CM:H16.32	MONDO:equivalentTo	Diffuse interstitial keratitis	0	0.9585983074447497	semapv:LexicalMatching	0.849778895	rdfs:label	rdfs:label	diffuse interstitial keratitis	
+MONDO:0015358	hereditary motor and sensory neuropathy	ICD10CM:G60.0	MONDO:equivalentTo	Hereditary motor and sensory neuropathy	0	0.975588521979855	semapv:LexicalMatching	0.849778895	rdfs:label	rdfs:label	hereditary motor and sensory neuropathy	
+MONDO:0009756	Niemann-Pick disease type A	ICD10CM:E75.240	MONDO:equivalentTo	Niemann-Pick disease type A	0	1.0	semapv:LexicalMatching	0.849778895	rdfs:label	rdfs:label	niemann-pick disease type a	
+MONDO:0018982	Niemann-Pick disease type C	ICD10CM:E75.242	MONDO:equivalentTo	Niemann-Pick disease type C	0	1.0	semapv:LexicalMatching	0.849778895	rdfs:label	rdfs:label	niemann-pick disease type c	
+MONDO:0017078	cephalocele	ICD10CM:Q01	MONDO:equivalentTo	Encephalocele	2	0.4109519514946853	semapv:LexicalMatching	0.8	oio:hasExactSynonym	rdfs:label	encephalocele	
+MONDO:0100340	Friedreich ataxia 1	ICD10CM:G11.11	MONDO:equivalentTo	Friedreich ataxia	2	0.9643816957996666	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	friedreich ataxia with retained reflexes	
+MONDO:0019314	cutaneous mastocytoma	ICD10CM:D47.01	MONDO:equivalentTo	Cutaneous mastocytosis	3	0.5608911340045329	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	solitary mastocytoma	
+MONDO:0005659	atrophic rhinitis	ICD10CM:J31.0	MONDO:equivalentTo	Chronic rhinitis	4	0.7857152224821129	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	ozena	
+MONDO:0007793	hypochondroplasia	ICD10CM:Q77.4	MONDO:equivalentTo	Achondroplasia	4	1.000000044623871	semapv:LexicalMatching	0.8	rdfs:label	oio:hasExactSynonym	hypochondroplasia	
+MONDO:0018874	acute myeloid leukemia	ICD10CM:C92.0	MONDO:equivalentTo	Acute myeloblastic leukemia	6	0.9348459234714112	semapv:LexicalMatching	0.8	oio:hasExactSynonym	rdfs:label	acute myeloblastic leukemia	
+MONDO:0001895	acute retrobulbar neuritis	ICD10CM:H46.1	MONDO:equivalentTo	Retrobulbar neuritis	6	0.9450079906947132	semapv:RegularExpressionReplacement	0.8	oio:hasExactSynonym	rdfs:label	retrobulbar neuritis	
+MONDO:0019260	adult neuronal ceroid lipofuscinosis	ICD10CM:E75.4	MONDO:equivalentTo	Neuronal ceroid lipofuscinosis	6	0.9668725095762193	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	kufs disease	
+MONDO:0017079	meningoencephalocele	ICD10CM:Q01	MONDO:equivalentTo	Encephalocele	7	0.35864242532500645	semapv:LexicalMatching	0.8	rdfs:label	oio:hasExactSynonym	meningoencephalocele	
+MONDO:0017079	meningoencephalocele	ICD10CM:Q01	MONDO:equivalentTo	Encephalocele	7	0.35864242532500645	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	meningoencephalocele	
+MONDO:0005900	parotitis	ICD10CM:K11.2	MONDO:equivalentTo	Sialoadenitis	7	0.516695845220086	semapv:LexicalMatching	0.8	rdfs:label	oio:hasExactSynonym	parotitis	
+MONDO:0021001	hemochromatosis type 1	ICD10CM:E83.11	MONDO:equivalentTo	Hemochromatosis	7	0.7297365098300067	semapv:LexicalMatching	0.8	oio:hasExactSynonym	rdfs:label	hemochromatosis	
+MONDO:0007540	multiple endocrine neoplasia type 1	ICD10CM:E31.21	MONDO:equivalentTo	Multiple endocrine neoplasia [MEN] type I	7	0.8491169451526214	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	wermer's syndrome	
+MONDO:0018408	cystic echinococcosis	ICD10CM:B67	MONDO:equivalentTo	Echinococcosis	7	0.8576091664326645	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hydatidosis	
+MONDO:0009692	primary myelofibrosis	ICD10CM:D47.4	MONDO:equivalentTo	Osteomyelofibrosis	8	0.32104025512110135	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	chronic idiopathic myelofibrosis	
+MONDO:0008090	cyclic hematopoiesis	ICD10CM:D70.4	MONDO:equivalentTo	Cyclic neutropenia	8	0.5164241682604032	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	periodic neutropenia	
+MONDO:0021061	neurofibromatosis	ICD10CM:Q85.02	MONDO:equivalentTo	Neurofibromatosis, type 2	8	0.7440955536871847	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	acoustic neurofibromatosis	
+MONDO:0001947	suppurative thyroiditis	ICD10CM:E06.0	MONDO:equivalentTo	Acute thyroiditis	8	0.8261728399997601	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	suppurative thyroiditis	
+MONDO:0001947	suppurative thyroiditis	ICD10CM:E06.0	MONDO:equivalentTo	Acute thyroiditis	8	0.8261728399997601	semapv:LexicalMatching	0.8	rdfs:label	oio:hasExactSynonym	suppurative thyroiditis	
+MONDO:0019287	ectodermal dysplasia syndrome	ICD10CM:Q82.4	MONDO:equivalentTo	Ectodermal dysplasia (anhidrotic)	8	0.8820180825571476	semapv:RegularExpressionReplacement	0.8	oio:hasExactSynonym	rdfs:label	ectodermal dysplasia	
+MONDO:0017069	spina bifida cystica	ICD10CM:Q05	MONDO:equivalentTo	Spina bifida	8	0.937509943998848	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	meningomyelocele	
+MONDO:0018646	sclerosing cholangitis	ICD10CM:K83.01	MONDO:equivalentTo	Primary sclerosing cholangitis	8	0.953232685099299	semapv:RegularExpressionReplacement	0.8	oio:hasExactSynonym	rdfs:label	primary sclerosing cholangitis	
+MONDO:0018646	sclerosing cholangitis	ICD10CM:K83.01	MONDO:equivalentTo	Primary sclerosing cholangitis	8	0.953232685099299	semapv:LexicalMatching	0.8	oio:hasExactSynonym	rdfs:label	primary sclerosing cholangitis	
+MONDO:0019795	acalvaria	ICD10CM:Q00.0	MONDO:equivalentTo	Anencephaly	9	0.4070664179925379	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	acrania	
+MONDO:0005800	hordeolum	ICD10CM:H00.01	MONDO:equivalentTo	Hordeolum externum	9	0.4226689477324209	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	stye	
+MONDO:0004566	postgastrectomy syndrome	ICD10CM:K91.1	MONDO:equivalentTo	Postgastric surgery syndromes	9	0.5298425489442208	semapv:LexicalMatching	0.8	rdfs:label	oio:hasExactSynonym	postgastrectomy syndrome	
+MONDO:0000995	familial periodic paralysis	ICD10CM:G72.3	MONDO:equivalentTo	Periodic paralysis	9	0.767311327165129	semapv:LexicalMatching	0.8	rdfs:label	oio:hasExactSynonym	familial periodic paralysis	
+MONDO:0000995	familial periodic paralysis	ICD10CM:G72.3	MONDO:equivalentTo	Periodic paralysis	9	0.767311327165129	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	familial periodic paralysis	
+MONDO:0005338	open-angle glaucoma	ICD10CM:H40.13	MONDO:equivalentTo	Pigmentary glaucoma	9	0.8468071950908327	semapv:LexicalMatching	0.8	oio:hasExactSynonym	rdfs:label	pigmentary glaucoma	
+MONDO:0019154	androgen insensitivity syndrome	ICD10CM:E34.51	MONDO:equivalentTo	Complete androgen insensitivity syndrome	9	0.9127144804114921	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	goldberg-maxwell syndrome	
+MONDO:0005150	age-related macular degeneration	ICD10CM:H35.30	MONDO:equivalentTo	Unspecified macular degeneration	9	0.9249334360890025	semapv:LexicalMatching	0.8	rdfs:label	oio:hasExactSynonym	age-related macular degeneration	
+MONDO:0005150	age-related macular degeneration	ICD10CM:H35.30	MONDO:equivalentTo	Unspecified macular degeneration	9	0.9249334360890025	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	age-related macular degeneration	
+MONDO:0002350	familial nephrotic syndrome	ICD10CM:N04	MONDO:equivalentTo	Nephrotic syndrome	9	0.9401130376501254	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	congenital nephrotic syndrome	
+MONDO:0019262	juvenile neuronal ceroid lipofuscinosis	ICD10CM:E75.4	MONDO:equivalentTo	Neuronal ceroid lipofuscinosis	9	0.9643064302026385	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	spielmeyer-vogt disease	
+MONDO:0019262	juvenile neuronal ceroid lipofuscinosis	ICD10CM:E75.4	MONDO:equivalentTo	Neuronal ceroid lipofuscinosis	9	0.9643064302026385	semapv:LexicalMatching	0.8	oio:hasExactSynonym	oio:hasExactSynonym	batten disease	
