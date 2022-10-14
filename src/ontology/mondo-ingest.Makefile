@@ -57,6 +57,7 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
 		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		query \
+			--update ../sparql/fix_partof.ru \
 			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/fix_xref_prefixes.ru \
@@ -218,6 +219,9 @@ exclusions-%:
 	$(MAKE) $(REPORTDIR)/$*_exclusion_reasons.ttl
 	$(MAKE) $(REPORTDIR)/$*_excluded_terms_in_mondo_xrefs.tsv
 
+exclusions-all:
+	$(MAKE) $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
+
 # Exclusions: running for all ontologies
 $(REPORTDIR)/excluded_terms.txt $(REPORTDIR)/exclusion_reasons.robot.template.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_term_exclusions.txt)
 	cat $(REPORTDIR)/*_term_exclusions.txt > $(REPORTDIR)/excluded_terms.txt; \
@@ -296,7 +300,6 @@ tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
 
 tmp/merged.owl: tmp/mondo.owl tmp/mondo-ingest.owl tmp/mondo.sssom.ttl
-	$(ROBOT) merge -i tmp/mondo.owl -i tmp/mondo-ingest.owl -i tmp/mondo.sssom.ttl -o $@
 	$(ROBOT) merge -i tmp/mondo.owl -i tmp/mondo-ingest.owl -i tmp/mondo.sssom.ttl  --add-prefixes config/context.json -o $@
 
 $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
@@ -365,7 +368,12 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_ter
 	--slurp-dir-path slurp/ \
 	--outpath $@
 
-slurp-%:
+slurp-no-updates-%:
 	$(MAKE) slurp/$*.tsv
+
+slurp-all-no-updates: slurp-no-updates-omim slurp-no-updates-doid slurp-no-updates-ordo slurp-no-updates-icd10cm slurp-no-updates-icd10who slurp-no-updates-ncit
+
+slurp-%:
+	$(MAKE) slurp/$*.tsv -B
 
 slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit

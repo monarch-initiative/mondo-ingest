@@ -292,6 +292,10 @@ def run(
         df_results = pd.DataFrame()
         df_results['term_id'] = ''
 
+    # Sort
+    if len(df_results) > 0:
+        df_results = df_results.sort_values(['term_id', 'exclusion_reason'])
+
     # Add simplified version
     # - df_results_simple: Simpler dataframe which is easier to use downstream for other purposes
     df_results_simple = df_results[['term_id']]

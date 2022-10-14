@@ -75,16 +75,19 @@ def slurp(
                 break
         if qualified_parents:
             next_mondo_id, mondo_term_ids = _get_next_available_mondo_id(next_mondo_id, max_id, mondo_term_ids)
-            # mondo_id = 'MONDO:' + ('0' * (len(str(next_mondo_id)) - 7)) + str(next_mondo_id)  # min->max needs no pad
-            mondo_id = 'MONDO:' + str(next_mondo_id)
+            mondo_id = 'MONDO:' + str(next_mondo_id).zfill(7)  # leading 0-padding
             mondo_label = t.label.lower() if t.label else ''
             terms_to_slurp.append({
                 'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
                 'original_label': t.label if t.label else '', 'definition': t.definition if t.definition else '',
                 'parents': '|'.join(parent_mondo_ids)})
 
-    result = pd.DataFrame([ROBOT_TEMPLATE_HEADER] + terms_to_slurp)
-    result.to_csv(outpath, sep="\t", index=False)
+    # Sort, add robot row, save and return
+    result = pd.DataFrame(terms_to_slurp)
+    result = result.sort_values(
+        ['mondo_id', 'mondo_label', 'xref', 'xref_source', 'original_label', 'definition', 'parents'])
+    result = pd.concat([pd.DataFrame([ROBOT_TEMPLATE_HEADER]), result])
+    result.to_csv(outpath, sep='\t', index=False)
     return result
 
 
