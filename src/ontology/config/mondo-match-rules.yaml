@@ -73,3 +73,10 @@ rules:
       match: r'\[[^)]*\]'
       match_scope: "*"
       replacement: ""
+  
+  - synonymizer:
+      the_rule: Broad match terms with the term 'other' in them.
+      match: r'(?i)^Other '
+      match_scope: "*"
+      replacement: ""
+      qualifier: "broad"
