@@ -3,16 +3,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 # For SNOMED, we are only interested in the Disease or Disorder branch
 SELECT DISTINCT ?term
 WHERE {
-  { 
-    { 
-     ?s1 ?p1 ?term . 
-     ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/NCIT_C2991> .
+VALUES ?roots {<http://purl.obolibrary.org/obo/NCIT_C2991> <http://purl.obolibrary.org/obo/NCIT_C134533>}
+  {
+    {
+     ?s1 ?p1 ?term .
+     ?term rdfs:subClassOf* ?roots .
     }
     UNION
-    { 
-      ?term ?p2 ?o2 . 
-      ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/NCIT_C2991> .
+    {
+      ?term ?p2 ?o2 .
+      ?term rdfs:subClassOf* ?roots .
     }
+
   }
   FILTER(isIRI(?term))
 }
