@@ -11,7 +11,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/e58c780a-b766-4214-a313-2929430bcdea
+# mapping_set_id: https://w3id.org/sssom/mappings/372a0adf-caa1-4201-8d58-6dfcc2c12275
 # mapping_tool: oaklib
 # object_match_field:
 # - oio:hasBroadSynonym
@@ -36,18 +36,18 @@ MONDO:0000380	paranasal sinus carcinoma	skos:closeMatch	NCIT:C6017	Paranasal Sin
 MONDO:0000380	paranasal sinus carcinoma	skos:closeMatch	NCIT:C8193	Paranasal Sinus Squamous Cell Carcinoma	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	paranasal sinus squamous cell carcinoma		
 MONDO:0000380	paranasal sinus carcinoma	skos:closeMatch	NCIT:C6019	Paranasal Sinus Adenoid Cystic Carcinoma	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	paranasal sinus adenoid cystic carcinoma		
 MONDO:0000380	paranasal sinus carcinoma	skos:closeMatch	NCIT:C6018	Paranasal Sinus Mucoepidermoid Carcinoma	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	paranasal sinus mucoepidermoid carcinoma		
-MONDO:0000408	fetal alcohol spectrum disorder	skos:closeMatch	NCIT:C92728	Alcohol Related Neurodevelopmental Disorder	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	alcohol related neurodevelopmental disorder		
 MONDO:0000408	fetal alcohol spectrum disorder	skos:closeMatch	NCIT:C84713	Fetal Alcohol Syndrome	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	fetal alcohol syndrome		
+MONDO:0000408	fetal alcohol spectrum disorder	skos:closeMatch	NCIT:C92728	Alcohol Related Neurodevelopmental Disorder	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	alcohol related neurodevelopmental disorder		
 MONDO:0000437	cerebellar ataxia	skos:closeMatch	NCIT:C82341	Spinocerebellar Ataxia	semapv:LexicalMatching	oaklib		oio:hasNarrowSynonym	rdfs:label	spinocerebellar ataxia		
 MONDO:0000437	cerebellar ataxia	skos:exactMatch	NCIT:C26702	Ataxia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	ataxia		
 MONDO:0000440	metabolic acidosis	skos:exactMatch	NCIT:C28228	Metabolic Acidosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	metabolic acidosis		
 MONDO:0000465	atrioventricular block	skos:narrowMatch	ICD10CM:I44.39	Other atrioventricular block	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	atrioventricular block		semapv:RegularExpressionReplacement
 MONDO:0000465	atrioventricular block	skos:narrowMatch	ICD10CM:I44.39	Other atrioventricular block	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	atrioventricular block	semapv:RegularExpressionReplacement	semapv:RegularExpressionReplacement
 MONDO:0000465	atrioventricular block	skos:narrowMatch	ICD10CM:I44.39	Other atrioventricular block	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	atrioventricular block		semapv:RegularExpressionReplacement
-MONDO:0000476	generalized dystonia	skos:closeMatch	NCIT:C157577	Dystonia 12	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	dystonia 12		
-MONDO:0000476	generalized dystonia	skos:closeMatch	NCIT:C34564	Idiopathic Torsion Dystonia	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	idiopathic torsion dystonia		
 MONDO:0000476	generalized dystonia	skos:closeMatch	NCIT:C35527	Familial Dystonia	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	familial dystonia		
 MONDO:0000476	generalized dystonia	skos:closeMatch	NCIT:C34564	Idiopathic Torsion Dystonia	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	idiopathic torsion dystonia		
+MONDO:0000476	generalized dystonia	skos:closeMatch	NCIT:C34564	Idiopathic Torsion Dystonia	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	idiopathic torsion dystonia		
+MONDO:0000476	generalized dystonia	skos:closeMatch	NCIT:C157577	Dystonia 12	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	dystonia 12		
 MONDO:0000481	cervical dystonia	skos:closeMatch	NCIT:C85072	Spasmodic Torticollis	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	spasmodic torticollis		
 MONDO:0000541	jejunal adenocarcinoma	skos:exactMatch	NCIT:C181158	Jejunal Adenocarcinoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	jejunal adenocarcinoma		
 MONDO:0000541	jejunal adenocarcinoma	skos:exactMatch	NCIT:C181158	Jejunal Adenocarcinoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	jejunal adenocarcinoma	semapv:RegularExpressionReplacement	
@@ -165,10 +165,10 @@ MONDO:0001409	esophagitis	skos:closeMatch	NCIT:C97066	Acute Esophagitis	semapv:L
 MONDO:0001422	primary aldosteronism	skos:narrowMatch	ICD10CM:E26.09	Other primary hyperaldosteronism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	primary hyperaldosteronism		semapv:RegularExpressionReplacement
 MONDO:0001441	pica disease	skos:exactMatch	NCIT:C71234	Pica	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pica		
 MONDO:0001449	lymphocytic choriomeningitis	skos:exactMatch	NCIT:C174114	Lymphocytic Meningitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	lymphocytic meningitis		
-MONDO:0001475	neutropenia	skos:narrowMatch	ICD10CM:D70.8	Other neutropenia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	neutropenia		semapv:RegularExpressionReplacement
 MONDO:0001475	neutropenia	skos:narrowMatch	ICD10CM:D70.8	Other neutropenia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	neutropenia		semapv:RegularExpressionReplacement
-MONDO:0001475	neutropenia	skos:exactMatch	NCIT:C80520	Neutropenia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	neutropenia		
+MONDO:0001475	neutropenia	skos:narrowMatch	ICD10CM:D70.8	Other neutropenia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	neutropenia		semapv:RegularExpressionReplacement
 MONDO:0001475	neutropenia	skos:exactMatch	NCIT:C80520	Neutropenia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	neutropenia		
+MONDO:0001475	neutropenia	skos:exactMatch	NCIT:C80520	Neutropenia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	neutropenia		
 MONDO:0001505	alcoholic hepatitis	skos:exactMatch	NCIT:C34352	Acute Alcoholic Hepatitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	acute alcoholic hepatitis		
 MONDO:0001505	alcoholic hepatitis	skos:exactMatch	NCIT:C34352	Acute Alcoholic Hepatitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	acute alcoholic hepatitis		
 MONDO:0001515	corneal degeneration	skos:narrowMatch	ICD10CM:H18.49	Other corneal degeneration	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	corneal degeneration		semapv:RegularExpressionReplacement
@@ -199,13 +199,13 @@ MONDO:0001684	exocrine pancreatic insufficiency	skos:closeMatch	NCIT:C84316	Panc
 MONDO:0001698	tinea profunda	skos:closeMatch	NCIT:C35073	Deep Seated Dermatophytosis	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	deep seated dermatophytosis		
 MONDO:0001703	color vision disorder	skos:closeMatch	NCIT:C3891	Color Blindness	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	color blindness		
 MONDO:0001713	inherited aplastic anemia	skos:narrowMatch	ICD10CM:D61.09	Other constitutional aplastic anemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	constitutional aplastic anemia		semapv:RegularExpressionReplacement
-MONDO:0001718	scleritis	skos:narrowMatch	ICD10CM:H15.09	Other scleritis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	scleritis		semapv:RegularExpressionReplacement
 MONDO:0001718	scleritis	skos:narrowMatch	ICD10CM:H15.09	Other scleritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	scleritis		semapv:RegularExpressionReplacement
 MONDO:0001718	scleritis	skos:narrowMatch	ICD10CM:H15.09	Other scleritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	scleritis	semapv:RegularExpressionReplacement	semapv:RegularExpressionReplacement
-MONDO:0001741	hyperparathyroidism	skos:narrowMatch	ICD10CM:E21.2	Other hyperparathyroidism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hyperparathyroidism		semapv:RegularExpressionReplacement
+MONDO:0001718	scleritis	skos:narrowMatch	ICD10CM:H15.09	Other scleritis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	scleritis		semapv:RegularExpressionReplacement
 MONDO:0001741	hyperparathyroidism	skos:narrowMatch	ICD10CM:E21.2	Other hyperparathyroidism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hyperparathyroidism		semapv:RegularExpressionReplacement
-MONDO:0001741	hyperparathyroidism	skos:narrowMatch	ICD10WHO:E21.2	Other hyperparathyroidism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hyperparathyroidism		semapv:RegularExpressionReplacement
+MONDO:0001741	hyperparathyroidism	skos:narrowMatch	ICD10CM:E21.2	Other hyperparathyroidism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hyperparathyroidism		semapv:RegularExpressionReplacement
 MONDO:0001741	hyperparathyroidism	skos:narrowMatch	ICD10WHO:E21.2	Other hyperparathyroidism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hyperparathyroidism		semapv:RegularExpressionReplacement
+MONDO:0001741	hyperparathyroidism	skos:narrowMatch	ICD10WHO:E21.2	Other hyperparathyroidism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hyperparathyroidism		semapv:RegularExpressionReplacement
 MONDO:0001744	angle-closure glaucoma	skos:exactMatch	NCIT:C34639	Angle Closure Glaucoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	angle closure glaucoma		
 MONDO:0001751	cholestasis	skos:exactMatch	NCIT:C83006	Cholestasis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cholestasis		
 MONDO:0001776	prostate calculus	skos:exactMatch	NCIT:C26936	Prostatic Stone	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	prostatic stone		
@@ -221,17 +221,17 @@ MONDO:0001901	selective IgG subclass deficiency	skos:closeMatch	NCIT:C27142	Sele
 MONDO:0001909	renal tubular acidosis	skos:exactMatch	NCIT:C28129	Renal Tubular Acidosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	renal tubular acidosis		
 MONDO:0001911	tracheal calcification	skos:exactMatch	NCIT:C35314	Tracheal Calcification	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tracheal calcification		
 MONDO:0001913	oligospermia	skos:exactMatch	NCIT:C34860	Oligospermia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	oligospermia		
-MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10CM:H66.3X	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media		semapv:RegularExpressionReplacement
 MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10WHO:H66.3	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media		semapv:RegularExpressionReplacement
 MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10WHO:H66.3	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media		semapv:RegularExpressionReplacement
-MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10CM:H66.3	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media		semapv:RegularExpressionReplacement
-MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10CM:H66.3	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media		semapv:RegularExpressionReplacement
 MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10CM:H66.3X	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media		semapv:RegularExpressionReplacement
+MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10CM:H66.3X	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media		semapv:RegularExpressionReplacement
+MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10CM:H66.3	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media		semapv:RegularExpressionReplacement
+MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10CM:H66.3	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media		semapv:RegularExpressionReplacement
 MONDO:0001941	blindness (disorder)	skos:closeMatch	NCIT:C97109	Blindness	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	blindness		
 MONDO:0001952	parietal lobe cancer	skos:closeMatch	NCIT:C5573	Parietal Lobe Neoplasm	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	parietal lobe neoplasm		
+MONDO:0001953	pyuria	skos:exactMatch	NCIT:C119028	Pyuria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pyuria	semapv:RegularExpressionReplacement	
 MONDO:0001953	pyuria	skos:exactMatch	NCIT:C119028	Pyuria	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pyuria		
 MONDO:0001953	pyuria	skos:exactMatch	NCIT:C119028	Pyuria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pyuria		
-MONDO:0001953	pyuria	skos:exactMatch	NCIT:C119028	Pyuria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pyuria	semapv:RegularExpressionReplacement	
 MONDO:0001982	Niemann-Pick disease	skos:narrowMatch	ICD10CM:E75.248	Other Niemann-Pick disease	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	niemann-pick disease		semapv:RegularExpressionReplacement
 MONDO:0001999	primary pulmonary hypertension	skos:exactMatch	NCIT:C168400	Primary Pulmonary Hypertension	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	primary pulmonary hypertension		
 MONDO:0001999	primary pulmonary hypertension	skos:exactMatch	NCIT:C168400	Primary Pulmonary Hypertension	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary pulmonary hypertension		
@@ -921,7 +921,6 @@ MONDO:0005723	Cryptococcal meningitis	skos:exactMatch	NCIT:C174113	Cryptococcal 
 MONDO:0005731	dipetalonemiasis	skos:closeMatch	NCIT:C119326	Mansonella perstans	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	mansonella perstans		
 MONDO:0005738	echinococcosis	skos:narrowMatch	ICD10CM:B67.99	Other echinococcosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	echinococcosis		semapv:RegularExpressionReplacement
 MONDO:0005738	echinococcosis	skos:narrowMatch	ICD10CM:B67.99	Other echinococcosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	echinococcosis		semapv:RegularExpressionReplacement
-MONDO:0005755	equine infectious anemia	skos:exactMatch	NCIT:C84694	Equine Infectious Anemia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	equine infectious anemia		
 MONDO:0005758	eunuchism	skos:exactMatch	NCIT:C113348	Hypergonadotropic Hypogonadism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	hypergonadotropic hypogonadism	semapv:RegularExpressionReplacement	
 MONDO:0005774	glanders	skos:closeMatch	NCIT:C86226	Burkholderia mallei	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	burkholderia mallei		
 MONDO:0005783	hemopericardium	skos:exactMatch	NCIT:C111644	Hemopericardium	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	hemopericardium		
@@ -954,19 +953,19 @@ MONDO:0005885	optic neuritis	skos:narrowMatch	ICD10CM:H46.8	Other optic neuritis
 MONDO:0005915	pityriasis versicolor	skos:closeMatch	NCIT:C112833	Tinea Versicolor	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	tinea versicolor		
 MONDO:0005916	placenta accreta	skos:closeMatch	NCIT:C113386	Placenta Percreta	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	placenta percreta		
 MONDO:0005916	placenta accreta	skos:closeMatch	NCIT:C113385	Placenta Increta	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	placenta increta		
-MONDO:0005965	spinal stenosis	skos:closeMatch	NCIT:C177445	Lumbar Spinal Stenosis	semapv:LexicalMatching	oaklib		oio:hasNarrowSynonym	rdfs:label	lumbar spinal stenosis		
 MONDO:0005965	spinal stenosis	skos:exactMatch	NCIT:C177444	Spinal Stenosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spinal stenosis		
+MONDO:0005965	spinal stenosis	skos:closeMatch	NCIT:C177445	Lumbar Spinal Stenosis	semapv:LexicalMatching	oaklib		oio:hasNarrowSynonym	rdfs:label	lumbar spinal stenosis		
 MONDO:0005972	streptococcal pneumonia	skos:exactMatch	NCIT:C157959	Pneumococcal Pneumonia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pneumococcal pneumonia		
 MONDO:0005988	toxocariasis	skos:exactMatch	NCIT:C85194	Toxocariasis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	toxocariasis		
 MONDO:0005997	tricuspid valve stenosis	skos:exactMatch	NCIT:C50783	Tricuspid Valve Stenosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tricuspid valve stenosis		
+MONDO:0006001	urinary schistosomiasis	skos:exactMatch	NCIT:C35362	Bladder Schistosomiasis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	bladder schistosomiasis		
 MONDO:0006001	urinary schistosomiasis	skos:exactMatch	NCIT:C124388	Schistosoma haematobium	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	schistosoma haematobium	semapv:RegularExpressionReplacement	
 MONDO:0006001	urinary schistosomiasis	skos:exactMatch	NCIT:C124388	Schistosoma haematobium	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	schistosoma haematobium		
-MONDO:0006001	urinary schistosomiasis	skos:exactMatch	NCIT:C35362	Bladder Schistosomiasis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	bladder schistosomiasis		
 MONDO:0006005	Venezuelan equine encephalitis	skos:closeMatch	NCIT:C35121	Venezuelan Equine Fever	semapv:LexicalMatching	oaklib		oio:hasRelatedSynonym	rdfs:label	venezuelan equine fever		
 MONDO:0006006	verrucous carcinoma	skos:exactMatch	NCIT:C164248	Warty Carcinoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	warty carcinoma		
 MONDO:0006007	vesicoureteral reflux	skos:exactMatch	NCIT:C84467	Vesicoureteral Reflux	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	vesicoureteral reflux		
-MONDO:0006007	vesicoureteral reflux	skos:exactMatch	NCIT:C84467	Vesicoureteral Reflux	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	vesicoureteral reflux		
 MONDO:0006007	vesicoureteral reflux	skos:exactMatch	NCIT:C84467	Vesicoureteral Reflux	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	vesicoureteral reflux	semapv:RegularExpressionReplacement	
+MONDO:0006007	vesicoureteral reflux	skos:exactMatch	NCIT:C84467	Vesicoureteral Reflux	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	vesicoureteral reflux		
 MONDO:0006012	viral pneumonia	skos:narrowMatch	ICD10CM:J12.8	Other viral pneumonia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	viral pneumonia		semapv:RegularExpressionReplacement
 MONDO:0006012	viral pneumonia	skos:narrowMatch	ICD10WHO:J12.8	Other viral pneumonia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	viral pneumonia		semapv:RegularExpressionReplacement
 MONDO:0006012	viral pneumonia	skos:narrowMatch	ICD10CM:J12.89	Other viral pneumonia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	viral pneumonia		semapv:RegularExpressionReplacement
