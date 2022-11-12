@@ -44,7 +44,6 @@ def update_mapping_progress_in_docs():
 
     # Create main page
     stats_rows: List[Dict] = []
-    ontology_names: List[str] = []
     for path in status_table_paths:
         ontology_name = os.path.basename(path).replace('_mapping_status.tsv', '')
         df = pd.read_csv(path, sep='\t').fillna('')
@@ -53,7 +52,6 @@ def update_mapping_progress_in_docs():
         unmapped_mappable_df = unmapped_mappable_df.drop(columns=['is_mapped', 'is_excluded', 'is_deprecated'])
         n_mappable = len(mappable_df)
         n_unmapped_mappable = len(unmapped_mappable_df)
-        ontology_names.append(ontology_name)
         n_deprecated = f"{len(df[df['is_deprecated']] == True):,}"
         stats_rows.append({
             'Ontology': f'[{ontology_name.upper()}](./unmapped_{ontology_name.lower()}.md)',
@@ -66,8 +64,7 @@ def update_mapping_progress_in_docs():
             '% unmapped _(mappable)_': str(round((n_unmapped_mappable / n_mappable) * 100, 1)) + '%',
         })
     stats_df = pd.DataFrame(stats_rows).sort_values(['% unmapped _(mappable)_'], ascending=False)
-    instantiated_str: str = Template(JINJA_MAIN_PAGE).render(
-        ontology_names=ontology_names, stats_markdown_table=stats_df.to_markdown(index=False))
+    instantiated_str: str = Template(JINJA_MAIN_PAGE).render(stats_markdown_table=stats_df.to_markdown(index=False))
     with open(OUT_PATH, 'w') as f:
         f.write(instantiated_str)
 

@@ -186,7 +186,7 @@ unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_st
 $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.db
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
 	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
-	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
 	--db-path $(COMPONENTSDIR)/$*.db \
 	--outpath-simple $(REPORTDIR)/$*_unmapped_terms.tsv \
@@ -366,6 +366,25 @@ lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py ../mappings/mondo-so
 extract-unmapped-matches: lexmatch/README.md
 
 #############################
+######### Analysis ##########
+#############################
+.PHONY: mapped-deprecated-terms
+mapped-deprecated-terms: mapped-deprecated-terms-artefacts mapped-deprecated-terms-docs
+
+.PHONY: mapped-deprecated-terms-docs
+mapped-deprecated-terms-docs:
+	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py --docs
+
+.PHONY: mapped-deprecated-terms-artefacts
+mapped-deprecated-terms-artefacts: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
+
+$(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mapping_status.tsv tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py \
+	--mondo-mappings-path tmp/mondo.sssom.tsv \
+	--mapping-status-path $(REPORTDIR)/$*_mapping_status.tsv \
+	--outpath $@
+
+#############################
 ###### Slurp pipeline #######
 #############################
 .PHONY: component-download-mondo.owl
@@ -394,7 +413,7 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_ter
 	pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
 	python3 $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
-	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
 	--onto-exclusions-path reports/$*_term_exclusions.txt \
 	--min-id 850000 \
@@ -436,7 +455,17 @@ help:
 	@echo "A table of all terms for ontology %, along with labels, and other columns is_excluded, is_mapped, is_deprecated.\n"
 	@echo "reports/%_unmapped_terms.tsv"
 	@echo "A table of unmapped terms for ontology % and their labels.\n"
+	@echo "unmapped-terms-docs"
+	@echo "Creates mapping progress report (docs/reports/unmapped.md) and pages for each ontology which list their umapped terms."
 	@echo "mapping-progress-report"
 	@echo "Creates mapping progress report (docs/reports/unmapped.md) and pages for each ontology which list their umapped terms. Also generates reports/%_mapping_status.tsv and reports/%_unmapped_terms.tsv for all ontologies.\n"
 	@echo "reports/mirror_signature-%.tsv"
 	@echo "A table with a single column '?term' which includes all of the class IRIs in an ontology.\n"
+	@echo "reports/%_mapped_deprecated_terms.robot.template.tsv"
+	@echo "A table of all of the deprecated terms from a given ontology that have existing mappings in Mondo.\n"
+	@echo "mapped-deprecated-terms-artefacts"
+	@echo "Creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"
+	@echo "mapped-deprecated-terms-docs"
+	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.\n"
+	@echo "mapped-deprecated-terms"
+	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"

@@ -21,7 +21,7 @@ from sssom.util import is_curie
 
 
 def create_mapping_status_tables(
-    db_path: str, exclusions_path: str, sssom_map_path: str, onto_config_path: str, outpath_full: str,
+    db_path: str, exclusions_path: str, mondo_mappings_path: str, onto_config_path: str, outpath_full: str,
     outpath_simple: str
 ) -> Dict[str, pd.DataFrame]:
     """Create mapping status tables"""
@@ -36,7 +36,7 @@ def create_mapping_status_tables(
             f'{alias}:': f'{preferred}:' for preferred, alias in onto_config['prefix_aliases'].items()} \
             if 'prefix_aliases' in onto_config else {}
     excluded_terms: Set[CURIE] = set(pd.read_csv(exclusions_path, header=None, names=['id']).fillna('')['id'])
-    mapped_terms: Set[CURIE] = set(pd.read_csv(sssom_map_path, sep='\t', comment='#').fillna('')['object_id'])
+    mapped_terms: Set[CURIE] = set(pd.read_csv(mondo_mappings_path, sep='\t', comment='#').fillna('')['object_id'])
     oi = get_implementation_from_shorthand(db_path)
 
     # Get all terms and labels
@@ -109,7 +109,7 @@ def cli():
         help='Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
              'list of prefixes owned by the ontology. Used to filter out terms.')
     parser.add_argument(
-        '-s', '--sssom-map-path', required=True,
+        '-m', '--mondo-mappings-path', required=True,
         help='Path to file containing all known Mondo mappings, in SSSOM format.')
     create_mapping_status_tables(**vars(parser.parse_args()))
 
