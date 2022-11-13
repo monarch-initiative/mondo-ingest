@@ -7,7 +7,7 @@ from oaklib import OntologyResource
 from oaklib.implementations import SqlImplementation
 from sssom import compare_dataframes
 from sssom.parsers import parse_sssom_table, split_dataframe
-from sssom.util import MappingSetDataFrame
+from sssom.util import MappingSetDataFrame, filter_redundant_rows
 
 SRC = dirname(dirname(abspath(__file__)))
 MAPPINGS = join(SRC, "mappings")
@@ -277,7 +277,8 @@ def get_unmapped_df(comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_l
     ]
 
     new_df = pd.concat([unmapped_lex_df, unmapped_mondo_df], axis=0)
-    return new_df
+    filtered_new_df = filter_redundant_rows(new_df)
+    return filtered_new_df
 
 
 def export_unmatched_exact(unmapped_df, match_type, fn):
