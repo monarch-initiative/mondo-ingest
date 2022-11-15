@@ -1,5 +1,5 @@
 ## Summary of mappings:
-Number of mappings in /Users/HHegde/Desktop/gitRepo/monarch-initiative/mondo-ingest/src/ontology/lexmatch/unmapped_icd_lex.tsv: 1961
+Number of mappings in /Users/HHegde/Desktop/gitRepo/monarch-initiative/mondo-ingest/src/ontology/lexmatch/unmapped_icd_lex.tsv: 1961 \n
 Number of mappings in /Users/HHegde/Desktop/gitRepo/monarch-initiative/mondo-ingest/src/ontology/lexmatch/unmapped_omim_lex.tsv: 1
 Number of mappings in /Users/HHegde/Desktop/gitRepo/monarch-initiative/mondo-ingest/src/ontology/lexmatch/unmapped_ordo_lex.tsv: 1
 Number of mappings in /Users/HHegde/Desktop/gitRepo/monarch-initiative/mondo-ingest/src/ontology/lexmatch/unmapped_doid_lex.tsv: 1395
