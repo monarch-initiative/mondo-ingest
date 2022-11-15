@@ -1,5 +1,6 @@
 import logging
 from os.path import abspath, dirname, join
+from typing import TextIO
 
 import click
 import pandas as pd
@@ -7,13 +8,12 @@ from oaklib import OntologyResource
 from oaklib.implementations import SqlImplementation
 from sssom import compare_dataframes
 from sssom.parsers import parse_sssom_table, split_dataframe
-from sssom.util import MappingSetDataFrame, filter_redundant_rows
+from sssom.util import MappingSetDataFrame, filter_redundant_rows, sort_df_rows_columns
 
 SRC = dirname(dirname(abspath(__file__)))
 MAPPINGS = join(SRC, "mappings")
 ONTS_DIR = join(SRC, "ontology")
 LEXMATCH_DIR = join(ONTS_DIR, "lexmatch")
-MONDOMATCH_DIR = join(ONTS_DIR, "mondo-match")
 SPLIT_DIR = join(ONTS_DIR, "split-mapping-set")
 TMP = join(ONTS_DIR, "tmp")
 REPORTS_DIR = join(ONTS_DIR, "reports")
@@ -47,13 +47,32 @@ def main(verbose: int, quiet: bool):
         logger.setLevel(level=logging.ERROR)
 
 
-@main.command()
-@input_argument
-def run(input: str):
-    msdf_lex = parse_sssom_table(join(MAPPINGS, input))
+@main.command("extract_unmapped_matches")
+@click.option(
+    "--matches",
+    type=click.File(mode="r"),
+    help="Lexmatch SSSOM file.",
+)
+@click.option(
+    "-o",
+    "--output-dir",
+    type=click.Path(),
+    help="Output directory where all results must be saved.",
+    default=LEXMATCH_DIR,
+)
+@click.option(
+    "--summary",
+    type=click.File(mode="w+"),
+    help="Add summary to markdown file.",
+)
+def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
+    mondo_match_dir = join(output_dir, "mondo-only")
+    msdf_lex = parse_sssom_table(matches.name)
     msdf_mondo = parse_sssom_table(MONDO_SSSOM)
     # Get the exclusion list
     exclusion_list = []
+    summary.write("## Summary of mappings:")
+    summary.write("\n")
     for file_path in EXCLUSION_FILES:
         with open(file_path) as f_input:
             exclusion_list.extend(f_input.read().split("\n"))
@@ -159,44 +178,48 @@ def run(input: str):
         ncit_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
     )
 
-    export_unmatched_exact(unmapped_icd_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_icd_lex.tsv"))
     export_unmatched_exact(
-        unmapped_omim_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_omim_lex.tsv")
+        unmapped_icd_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_icd_lex.tsv"), summary
     )
     export_unmatched_exact(
-        unmapped_ordo_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_ordo_lex.tsv")
+        unmapped_omim_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_omim_lex.tsv"), summary
     )
     export_unmatched_exact(
-        unmapped_doid_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_doid_lex.tsv")
+        unmapped_ordo_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_ordo_lex.tsv"), summary
     )
     export_unmatched_exact(
-        unmapped_ncit_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_ncit_lex.tsv")
+        unmapped_doid_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_doid_lex.tsv"), summary
+    )
+    export_unmatched_exact(
+        unmapped_ncit_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_ncit_lex.tsv"), summary
     )
 
     export_unmatched_exact(
-        unmapped_icd_df,
-        "MONDO_MAPPINGS",
-        join(MONDOMATCH_DIR, "unmapped_icd_mondo.tsv"),
+        unmapped_icd_df, "MONDO_MAPPINGS", join(mondo_match_dir, "unmapped_icd_mondo.tsv"), summary
     )
     export_unmatched_exact(
         unmapped_omim_df,
         "MONDO_MAPPINGS",
-        join(MONDOMATCH_DIR, "unmapped_omim_mondo.tsv"),
+        join(mondo_match_dir, "unmapped_omim_mondo.tsv"),
+        summary
     )
     export_unmatched_exact(
         unmapped_ordo_df,
         "MONDO_MAPPINGS",
-        join(MONDOMATCH_DIR, "unmapped_ordo_mondo.tsv"),
+        join(mondo_match_dir, "unmapped_ordo_mondo.tsv"),
+        summary
     )
     export_unmatched_exact(
         unmapped_doid_df,
         "MONDO_MAPPINGS",
-        join(MONDOMATCH_DIR, "unmapped_doid_mondo.tsv"),
+        join(mondo_match_dir, "unmapped_doid_mondo.tsv"),
+        summary
     )
     export_unmatched_exact(
         unmapped_ncit_df,
         "MONDO_MAPPINGS",
-        join(MONDOMATCH_DIR, "unmapped_ncit_mondo.tsv"),
+        join(mondo_match_dir, "unmapped_ncit_mondo.tsv"),
+        summary
     )
 
     combined_df = pd.concat(
@@ -209,12 +232,17 @@ def run(input: str):
         ]
     )
 
-    combined_msdf = make_msdf(combined_df, msdf_lex.prefix_map, msdf_lex.metadata)
+    combined_msdf = MappingSetDataFrame(df = combined_df, prefix_map= msdf_lex.prefix_map, metadata= msdf_lex.metadata)
     df_dict = split_dataframe(combined_msdf)
 
     for match in df_dict.keys():
         fn = match + ".tsv"
+        
+        summary.write("Number of mappings in " + fn + ": " + str(len(df_dict[match].df)))
+        summary.write("\n")
         df_dict[match].df.to_csv(join(SPLIT_DIR, fn), sep="\t", index=False)
+
+    summary.close()
 
 
 def add_distance(df, col_name, txt_dist_pkg):
@@ -281,8 +309,11 @@ def get_unmapped_df(comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_l
     return filtered_new_df
 
 
-def export_unmatched_exact(unmapped_df, match_type, fn):
-
+def export_unmatched_exact(unmapped_df, match_type, fn, summary):
+    columns_to_remove = ["subject_preprocessing", "object_preprocessing"]
+    if any(item in columns_to_remove for item in unmapped_df.columns):
+        cols = [col_name for col_name in unmapped_df.columns if col_name in columns_to_remove]
+        unmapped_df.drop(cols, axis=1, inplace=True)
     unmapped_exact = unmapped_df[
         (unmapped_df["comment"] == match_type) & (unmapped_df["predicate_id"] == "skos:exactMatch")
     ]
@@ -298,17 +329,12 @@ def export_unmatched_exact(unmapped_df, match_type, fn):
         [pd.DataFrame.from_dict(robot_row_dict, orient="columns"), unmapped_exact],
         axis=0,
     )
-    #     unmapped_exact.index += 1
-    #     unmapped_exact = unmapped_exact.sort_index()
     unmapped_exact = unmapped_exact[column_seq]
-    dir_name = join(SRC, fn)
-    unmapped_exact.to_csv(join(dir_name, fn), sep="\t", index=False)
-    return unmapped_exact.head()
-
-
-def make_msdf(df, prefix_map, meta):
-    combined_msdf = MappingSetDataFrame(df=df, prefix_map=prefix_map, metadata=meta)
-    return combined_msdf
+    unmapped_exact = sort_df_rows_columns(unmapped_exact)
+    unmapped_exact = unmapped_exact.drop_duplicates()
+    summary.write("Number of mappings in " + fn + ": " + str(len(unmapped_exact)))
+    summary.write("\n")
+    unmapped_exact.to_csv(join(fn), sep="\t", index=False)
 
 
 def mapped_curie_list(df):
