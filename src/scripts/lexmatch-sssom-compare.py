@@ -238,7 +238,7 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     for match in df_dict.keys():
         fn = match + ".tsv"
         
-        summary.write(" * Number of mappings in " + fn + ": " + str(len(df_dict[match].df)))
+        summary.write(" * Number of mappings in " + match + ": " + str(len(df_dict[match].df)))
         summary.write("\n")
         df_dict[match].df.to_csv(join(SPLIT_DIR, fn), sep="\t", index=False)
 
@@ -332,7 +332,8 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = unmapped_exact[column_seq]
     unmapped_exact = sort_df_rows_columns(unmapped_exact)
     unmapped_exact = unmapped_exact.drop_duplicates()
-    summary.write(" * Number of mappings in " + fn + ": " + str(len(unmapped_exact)))
+    actual_fn = fn.split("/")[-1].strip('.tsv')
+    summary.write(" * Number of mappings in " + actual_fn + ": " + str(len(unmapped_exact)))
     summary.write("\n")
     unmapped_exact.to_csv(join(fn), sep="\t", index=False)
 
