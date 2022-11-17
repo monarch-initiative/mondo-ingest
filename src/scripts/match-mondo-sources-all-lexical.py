@@ -12,7 +12,6 @@
 
 import logging
 from pathlib import Path
-from typing import List, TextIO
 from oaklib.resource import OntologyResource
 from oaklib.implementations.sqldb.sql_implementation import SqlImplementation
 from oaklib.utilities.lexical.lexical_indexer import (
@@ -21,10 +20,7 @@ from oaklib.utilities.lexical.lexical_indexer import (
     load_mapping_rules,
     save_lexical_index,
 )
-import pandas as pd
-
 import sys
-from pathlib import Path
 import click
 import yaml
 
