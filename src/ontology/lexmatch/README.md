@@ -9,11 +9,11 @@
  * Number of mappings in `unmapped_ordo_mondo`: 1
  * Number of mappings in `unmapped_doid_mondo`: 1
  * Number of mappings in `unmapped_ncit_mondo`: 1
- * Number of mappings in `mondo_broadmatch_doid`: 24
- * Number of mappings in `mondo_narrowmatch_doid`: 25
- * Number of mappings in `mondo_exactmatch_doid`: 1394
- * Number of mappings in `mondo_broadmatch_ncit`: 14
- * Number of mappings in `mondo_exactmatch_ncit`: 503
+ * Number of mappings in `mondo_exactmatch_icd10cm`: 1960
  * Number of mappings in `mondo_broadmatch_icd10cm`: 66
  * Number of mappings in `mondo_narrowmatch_icd10cm`: 409
- * Number of mappings in `mondo_exactmatch_icd10cm`: 1960
+ * Number of mappings in `mondo_exactmatch_doid`: 1394
+ * Number of mappings in `mondo_broadmatch_doid`: 24
+ * Number of mappings in `mondo_narrowmatch_doid`: 25
+ * Number of mappings in `mondo_exactmatch_ncit`: 503
+ * Number of mappings in `mondo_broadmatch_ncit`: 14

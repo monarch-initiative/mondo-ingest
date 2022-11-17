@@ -113,15 +113,15 @@ def run(input: str, config: str, rules: str, output: str):
     )
     msdf.remove_mappings(mapping_msdf)
 
-    with open(str(SRC / Path(output)), "w", encoding="utf8") as f:
+    with open(str(Path(output)), "w", encoding="utf8") as f:
         write_table(msdf, f)
 
     objects = msdf.df[OBJECT_ID].drop_duplicates()
     prefixes = objects.str.split(":").str.get(0).drop_duplicates()
     prefix_args = tuple([x + ":%" for _, x in prefixes.items() if x != "MONDO"])
     kwargs = {"subject_id": ("MONDO:%",), "object_id": prefix_args}
-    with open(str(SRC / Path(output.replace("lexical", "lexical-2"))), "w") as f:
-        filter_file(input=str(SRC / Path(output)), output=f, **kwargs)
+    with open(str(Path(output.replace("lexical", "lexical-2"))), "w") as f:
+        filter_file(input=str(Path(output)), output=f, **kwargs)
 
 
 if __name__ == "__main__":

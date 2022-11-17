@@ -338,7 +338,7 @@ lexical_matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
 ###################################
 #### Lexmatch-SSSOM-compare #######
 ###################################
-lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py 
+lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py ../mappings/mondo-sources-all-lexical.sssom.tsv
 	python $< extract_unmapped_matches --matches ../mappings/mondo-sources-all-lexical.sssom.tsv --output-dir lexmatch --summary $@
 
 extract-unmapped-matches: lexmatch/README.md
