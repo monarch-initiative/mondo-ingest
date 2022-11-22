@@ -14,7 +14,7 @@ SRC = dirname(dirname(abspath(__file__)))
 MAPPINGS = join(SRC, "mappings")
 ONTS_DIR = join(SRC, "ontology")
 LEXMATCH_DIR = join(ONTS_DIR, "lexmatch")
-SPLIT_DIR = join(ONTS_DIR, "split-mapping-set")
+SPLIT_DIR = join(LEXMATCH_DIR, "split-mapping-set")
 TMP = join(ONTS_DIR, "tmp")
 REPORTS_DIR = join(ONTS_DIR, "reports")
 MONDO_SSSOM = join(TMP, "mondo.sssom.tsv")
@@ -71,6 +71,14 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     msdf_mondo = parse_sssom_table(MONDO_SSSOM)
     # Get the exclusion list
     exclusion_list = []
+    summary.write("# MONDO ingest lexical mapping pipeline.")
+    summary.write("\n")
+    summary.write("## Content of directories:")
+    summary.write("\n")
+    summary.write("* mondo-only: Positive mappings in MONDO not caught by the lexical mapping pipeline")
+    summary.write("\n")
+    summary.write("* split-mapping-set: Unmapped mappings broken down by predicate_id")
+    summary.write("\n")
     summary.write("## Summary of mappings:")
     summary.write("\n")
     for file_path in EXCLUSION_FILES:
