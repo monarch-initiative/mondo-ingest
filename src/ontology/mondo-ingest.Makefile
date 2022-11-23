@@ -330,10 +330,18 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 tmp/merged.db: tmp/merged.owl
 	semsql make $@
 
-mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py 
+../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py 
 	python $^ run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
 
-lexical_matches: mappings/mondo-sources-all-lexical.sssom.tsv
+lexical_matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
+
+###################################
+#### Lexmatch-SSSOM-compare #######
+###################################
+lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py ../mappings/mondo-sources-all-lexical.sssom.tsv
+	python $< extract_unmapped_matches --matches ../mappings/mondo-sources-all-lexical.sssom.tsv --output-dir lexmatch --summary $@
+
+extract-unmapped-matches: lexmatch/README.md
 
 #############################
 ###### Slurp pipeline #######
