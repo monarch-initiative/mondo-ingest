@@ -2,6 +2,7 @@
 import os
 import pickle
 import subprocess
+import sys
 from datetime import datetime
 from glob import glob
 from typing import Dict, List, Set, Union
@@ -15,12 +16,16 @@ from oaklib.interfaces.basic_ontology_interface import RELATIONSHIP
 from oaklib.types import CURIE, URI
 from pandas.errors import EmptyDataError
 
+
 PREFIX = str
 TRIPLE = RELATIONSHIP
 SCRIPTS_DIR = os.path.dirname(os.path.realpath(__file__))
 PROJECT_DIR = os.path.join(SCRIPTS_DIR, '..', '..')
 ONTOLOGY_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology')
+REPORTS_DIR = os.path.join(ONTOLOGY_DIR, 'reports')
+SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 TEMP_DIR = os.path.join(ONTOLOGY_DIR, 'tmp')
+DOCS_DIR = os.path.join(PROJECT_DIR, 'docs')
 CACHE_DIR = TEMP_DIR
 
 
@@ -120,7 +125,7 @@ class Term:
 
         # Set: label, definition
         # todo: Assign in batch (when OAK supports): I feel like would be faster to do outside the Term class itself
-        #  ...e.g. build a dict of CURIE-> Term, then use use ontology.labels() on all curies and set label
+        #  ...e.g. build a dict of CURIE-> Term, then use use ontology.labels() on all curie_list and set label
         #  ...Right now, OAK ProntoImplementation labels() is just proxy for label(), though SqlImplementation has, and
         #  ...Both of them have definition() but not definitions().
         if ontology:
@@ -180,7 +185,7 @@ def _get_next_available_mondo_id(min_id: int, max_id: int, mondo_ids: Set[int]) 
 
 def get_mondo_term_ids(mondo_terms_path: str, slurp_dir_path: str) -> Set[int]:
     """From path to file of mondo terms, get set of Mondo IDs as integers.
-    # todo: Consider using `curies` package, though needing another prefix_map only for this seems even less optimal
+    # todo: Consider using `curie_list` package, though needing another prefix_map only for this seems even less optimal
     """
     # Get mondo IDs from Mondo
     mondo_base_uri = 'http://purl.obolibrary.org/obo/MONDO_'
@@ -203,47 +208,6 @@ def get_mondo_term_ids(mondo_terms_path: str, slurp_dir_path: str) -> Set[int]:
         print()
 
     return set(mondo_ids)
-
-
-# Deactivated. parents are being fetched in batch right now
-# todo #1: When OAK (ProntoImpleemntation or SqlImplementation) is fixed, re-implement
-#  - ensure that gets only direct is_a parents, not further ancestors
-# noinspection PyUnusedLocal
-# def _get_direct_owned_parent_uris(
-#     ontology: ProntoImplementation, owned_prefix_map: Dict[PREFIX, URI], curie: CURIE
-# ) -> List[URI]:
-#     """Get URIs of direct parents of a class. Only returns parents that are 'owned' by the ontology.
-#
-#     ontology: Haven't decided yet which implementation I'll use. Would use superclass, but they use mult inheritance.
-#     owned_prefix_map: All the prefixes that are 'owned' by the ontology. Keys are CURIE prefixes and values are URIs.
-#     """
-#     # These vars are here for stability reasons, just in case I get CURIES where I expect URIs or vice versa.
-#     subclass_preds = [x + 'subClassOf' for x in ['rdfs:', 'http://www.w3.org/2000/01/rdf-schema#']]
-#     owned_prefixes = set(owned_prefix_map.keys())
-#     uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
-#
-#     direct_owned_parent_uris: List[URI] = []
-#     # rels1: List[CURIE] = ontology.hierararchical_parents(curie)
-#     # resl2: List[CURIE] = ontology.outgoing_relationship_map(curie).get('rdfs:subClassOf', [])
-#     # rels: List[TRIPLE] = [x for x in ontology.relationships(subjects=[curie])]
-#     # for rel in rels:
-#     #     subject, predicate, obj = rel
-#     #     object_curie: CURIE = uri_converter.compress(obj) if obj.startswith('http') else obj
-#     #     if predicate in subclass_preds and object_curie.split(':')[0] in owned_prefixes:
-#     #         subject_uri: URI = subject if subject.startswith('http') else uri_converter.expand(subject)
-#     #         direct_owned_parent_uris.append(subject_uri)
-#     # direct_owned_parent_uris = [x for x in direct_owned_parent_uris if x]
-#
-#     return direct_owned_parent_uris
-
-
-def get_excluded_terms(path) -> Set[CURIE]:
-    """From path to a simple line break delimited text file with no header, get list of terms that are excluded from
-    inclusion into Mondo."""
-    try:
-        return set(pd.read_csv(path, header=None)[0])
-    except EmptyDataError:  # empty file
-        return set()
 
 
 # todo: Improvement. Currently, we're returning 'owned terms', which are defined as all the terms that are listed and have the proper prefix.
@@ -303,7 +267,7 @@ def _get_all_owned_terms(
         owned_terms = uri_terms_owned + uri_terms_2
     else:  # Term
         # Get parents through SPARQL
-        # - Need to pass curies to sparql; otherwise get: error: "Unresolved prefixed name: https:"
+        # - Need to pass curie_list to sparql; otherwise get: error: "Unresolved prefixed name: https:"
         query_terms = curie_terms_owned + [uri_converter.compress(x) for x in uri_terms_owned]
         direct_parents_df: pd.DataFrame = jinja_sparql(
             onto_path=ontology_path,
@@ -317,7 +281,7 @@ def _get_all_owned_terms(
             if row['parent_id'] and any([row['parent_id'].startswith(x) for x in owned_prefix_map.keys()]):
                 direct_owned_parents_map[row['term_id']].append(row['parent_id'])
 
-        # Converting to curies for the purpose of lookup in above map
+        # Converting to curie_list for the purpose of lookup in above map
         uri_terms_owned2 = []
         curie_terms_owned2 = curie_terms_owned
         for uri in uri_terms_owned:
@@ -342,15 +306,57 @@ def _get_all_owned_terms(
         with open(cache_path, 'wb') as f:
             pickle.dump(owned_terms, f, protocol=pickle.HIGHEST_PROTOCOL)
     if not silent:
-        # ~21 sec: not sure if it's how I'm using OAK/curies, or the libs themselves.
+        # ~21 sec: not sure if it's how I'm using OAK/curie_list, or the libs themselves.
         print('Completed compilation of all terms in x seconds: ', (t1 - t0).seconds)
 
     return owned_terms
 
 
+# Note: More performant to fetch all parents in batch, which is how it's being done in slurp right now
+# noinspection PyUnusedLocal
+def _get_direct_owned_parent_uris(
+    ontology: ProntoImplementation, owned_prefix_map: Dict[PREFIX, URI], curie: CURIE
+) -> List[URI]:
+    """Get URIs of direct parents of a class. Only returns parents that are 'owned' by the ontology.
+
+    ontology: Haven't decided yet which implementation I'll use. Would use superclass, but they use mult inheritance.
+    owned_prefix_map: All the prefixes that are 'owned' by the ontology. Keys are CURIE prefixes and values are URIs.
+
+    todo #1: When OAK (ProntoImpleemntation or SqlImplementation) is fixed, re-implement
+      - ensure that gets only direct is_a parents, not further ancestors
+    """
+    # These vars are here for stability reasons, just in case I get CURIES where I expect URIs or vice versa.
+    subclass_preds = [x + 'subClassOf' for x in ['rdfs:', 'http://www.w3.org/2000/01/rdf-schema#']]
+    owned_prefixes = set(owned_prefix_map.keys())
+    uri_converter = curies.Converter.from_prefix_map(owned_prefix_map)
+
+    direct_owned_parent_uris: List[URI] = []
+    # rels1: List[CURIE] = ontology.hierararchical_parents(curie)
+    # resl2: List[CURIE] = ontology.outgoing_relationship_map(curie).get('rdfs:subClassOf', [])
+    # rels: List[TRIPLE] = [x for x in ontology.relationships(subjects=[curie])]
+    # for rel in rels:
+    #     subject, predicate, obj = rel
+    #     object_curie: CURIE = uri_converter.compress(obj) if obj.startswith('http') else obj
+    #     if predicate in subclass_preds and object_curie.split(':')[0] in owned_prefixes:
+    #         subject_uri: URI = subject if subject.startswith('http') else uri_converter.expand(subject)
+    #         direct_owned_parent_uris.append(subject_uri)
+    # direct_owned_parent_uris = [x for x in direct_owned_parent_uris if x]
+
+    return direct_owned_parent_uris
+
+
+def get_excluded_terms(path) -> Set[CURIE]:
+    """From path to a simple line break delimited text file with no header, get list of terms that are excluded from
+    inclusion into Mondo."""
+    try:
+        return set(pd.read_csv(path, header=None)[0])
+    except EmptyDataError:  # empty file
+        return set()
+
+
 # noinspection DuplicatedCode
 def jinja_sparql(
-    onto_path: str, jinja_path: str, prefix_map: Dict[str, str] = None, use_cache=False, **kwargs
+    onto_path: str, jinja_path: str, prefix_map: Dict[str, str] = None, use_cache=False, verbose=False, **kwargs
 ) -> pd.DataFrame:
     """Run jinja on sparql"""
     prefix_sparql_strings = [f'prefix {k}: <{v}>' for k, v in prefix_map.items()] if prefix_map else None
@@ -386,7 +392,11 @@ def jinja_sparql(
             f.write(instantiated_str)
         with open(command_save_path, 'w') as f:
             f.write(command_str)
-        subprocess.run(command_str.split())
+        result = subprocess.run(command_str.split())
+        stderr, stdout = result.stderr, result.stdout
+        if verbose:
+            print(stdout)
+            print(stderr, file=sys.stderr)
 
     # Read results and return
     try:
@@ -399,3 +409,26 @@ def jinja_sparql(
         df = pd.DataFrame()
 
     return df
+
+
+def get_labels(
+    onto_path: str, curie_list: List[CURIE] = None, uri_list: List[URI] = None, prefix_map: Dict[str, str] = None,
+    use_cache=False
+) -> List[Union[str, None]]:
+    """Get labels for all terms within the given ontology
+
+    If label not found, returns None at the given index.
+
+    todo's
+      - There should not be duplicates. I think some of these terms have multiple labels. should address this.
+    """
+    if curie_list and uri_list:
+        raise ValueError('Must provide either curie_list or uri_list, not both.')
+    elif curie_list and not prefix_map:
+        raise ValueError('Must provide prefix_map if providing curie_list.')
+    values = curie_list if curie_list else uri_list
+    df: pd.DataFrame = jinja_sparql(
+        onto_path=onto_path, jinja_path=os.path.join(SPARQL_DIR, 'get-labels.sparql.jinja2'), prefix_map=prefix_map,
+        use_cache=use_cache, values=' '.join(values))
+    df = df.drop_duplicates(subset=['term_id'])
+    return list(df['label'])
