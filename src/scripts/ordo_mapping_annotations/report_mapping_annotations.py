@@ -36,7 +36,7 @@ CONFIG = {
         'ontology': os.path.join(SOURCES_DIR, 'ordo.owl.owl'),
         'ontology_backup': os.path.join(SOURCES_DIR, 'component-download-ordo.owl.owl'),
         'mapping_code_meanings': os.path.join(
-            PROJECT_DIR, 'src', 'ontology', 'config', 'ordo-mapping-codes_relationship-curies.csv'),
+            PROJECT_DIR, 'src', 'ontology', 'config', 'ordo-mapping-codes_relationship-curie_list.csv'),
         'sparql_query': os.path.join(SPARQL_DIR, 'ordo-select-mapping-annotations.sparql'),
     },
     'use_cache': False,
