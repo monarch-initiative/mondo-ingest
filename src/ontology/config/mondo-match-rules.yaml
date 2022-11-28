@@ -80,3 +80,21 @@ rules:
       match_scope: "*"
       replacement: ""
       qualifier: "broad"
+
+  - synonymizer:
+      the_rule: Replace disease with disorder in the label.
+      match: r'disease'
+      match_scope: "*"
+      replacement: "disorder"
+
+  - synonymizer:
+      the_rule: Replace disease with disorder in the label.
+      match: r'(?<!type)\s(\d)'
+      match_scope: "*"
+      replacement: "type $2"
+
+  - synonymizer:
+      the_rule: Replace disease with disorder in the label.
+      match: r'\'s'
+      match_scope: "*"
+      replacement: "s"
