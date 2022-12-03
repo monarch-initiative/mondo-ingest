@@ -120,7 +120,12 @@ def sparql_jinja2_robot_query(
             f.write(instantiated_str)
         with open(command_save_path, 'w') as f:
             f.write(command_str)
-        subprocess.run(command_str.split())
+        result = subprocess.run(command_str.split(), capture_output=True, text=True)
+        stderr, stdout = result.stderr, result.stdout
+        if stderr:
+            raise RuntimeError(stderr)
+        elif stdout and 'error' in stdout or 'ERROR' in stdout:
+            raise RuntimeError(stdout)
 
     # Read results and return
     try:

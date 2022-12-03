@@ -60,27 +60,26 @@ def slurp(
     next_mondo_id = min_id
     terms_to_slurp: List[Dict[str, str]] = []
     for t in slurp_candidates:
-        # If all T.parents mapped, and at least one of them is an exact or narrow match, designate T for slurping
+        # If all T.parents mapped, and 1+ is an exact or narrow match and non obsolete, designate T for slurping
         # (i.e. only slurp if parents are already slurped)
-        qualified_parents = True
-        parent_mondo_ids = []
+        qualified_parent_mondo_ids = []
         for parent_curie in t.direct_owned_parent_curies:
             # Conversely, if any of T.parents is unmapped, T is not to be slurped
             if parent_curie in sssom_object_ids:
-                parent_df: pd.DataFrame = sssom_df[sssom_df['object_id'] == parent_curie]
-                parent_mondo_id = parent_df.to_dict('records')[0]['subject_id']
-                parent_mondo_ids.append(parent_mondo_id)
+                parent: Dict = sssom_df[sssom_df['object_id'] == parent_curie].to_dict('records')[0]
+                parent_mondo_id, parent_mondo_label = parent['subject_id'], parent['subject_label']
+                if not parent_mondo_label.startswith('obsolete'):
+                    qualified_parent_mondo_ids.append(parent_mondo_id)
             if parent_curie not in sssom_object_ids and parent_curie in owned_term_curies:
-                qualified_parents = False
                 break
-        if qualified_parents:
+        if qualified_parent_mondo_ids:
             next_mondo_id, mondo_term_ids = _get_next_available_mondo_id(next_mondo_id, max_id, mondo_term_ids)
             mondo_id = 'MONDO:' + str(next_mondo_id).zfill(7)  # leading 0-padding
             mondo_label = t.label.lower() if t.label else ''
             terms_to_slurp.append({
                 'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
                 'original_label': t.label if t.label else '', 'definition': t.definition if t.definition else '',
-                'parents': '|'.join(parent_mondo_ids)})
+                'parents': '|'.join(qualified_parent_mondo_ids)})
 
     # Sort, add robot row, save and return
     result = pd.DataFrame(terms_to_slurp)
