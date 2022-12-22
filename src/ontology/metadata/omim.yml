@@ -3,6 +3,24 @@ label: Online Mendelian Inheritance in Man
 prefix_map:
    OMIM: https://omim.org/entry/
    OMIMPS: https://omim.org/phenotypicSeries/PS
+   CHR: http://purl.obolibrary.org/obo/CHR_
+   CL: http://purl.obolibrary.org/obo/CL_
+   HGNC: "https://identifiers.org/hgnc:"
+   HGNC_symbol: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/
+   IAO: http://purl.obolibrary.org/obo/IAO_
+   NCBIGene: https://www.ncbi.nlm.nih.gov/gene/
+   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+   ORPHA: http://www.orpha.net/ORDO/Orphanet_
+   PMID: http://www.ncbi.nlm.nih.gov/pubmed/
+   RO: http://purl.obolibrary.org/obo/RO_
+   SO: http://purl.obolibrary.org/obo/SO_
+   UMLS: http://linkedlifedata.com/resource/umls/id/
+   biolink: https://w3id.org/biolink/vocab/
+   oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+   owl: http://www.w3.org/2002/07/owl#
+   rdfs: http://www.w3.org/2000/01/rdf-schema#
+   skos: http://www.w3.org/2004/02/skos/core#
+   xsd: http://www.w3.org/2001/XMLSchema#
 description: >
   OMIM is a comprehensive, authoritative compendium of human genes 
   and genetic phenotypes (https://www.omim.org/about). 
