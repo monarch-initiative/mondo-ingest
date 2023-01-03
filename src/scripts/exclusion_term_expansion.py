@@ -284,7 +284,7 @@ def run(
     # Prefixes
     with open(config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
-    prefix_uri_map = onto_config['base_prefix_map']
+    prefix_uri_map = onto_config['prefix_map']
 
     # Get excluded terms
     expanded_intensional_exclusions_df = expand_intensional_exclusions(
@@ -297,13 +297,19 @@ def run(
         df_results = pd.DataFrame()
         df_results['term_id'] = ''
 
+    # Filter out non-owned
+    owned_prefixes = list(onto_config['base_prefix_map'].keys())
+    df_results['prefix'] = df_results['term_id'].apply(lambda x: x.split(':')[0])
+    df_results = df_results[df_results['prefix'].isin(owned_prefixes)]
+    df_results.drop('prefix', inplace=True, axis=1)
+
     # Sort
     if len(df_results) > 0:
         df_results = df_results.sort_values(['term_id', 'exclusion_reason'])
 
     # Add simplified version
     # - df_results_simple: Simpler dataframe which is easier to use downstream for other purposes
-    df_results_simple = df_results[['term_id']]
+    df_results_simple = pd.DataFrame(set(df_results['term_id']))
     # - df_results: Add special meta rows
     df_added_row = pd.DataFrame([{'term_id': 'ID', 'exclusion_reason': 'AI MONDOREL:has_exclusion_reason'}])
     df_results = pd.concat([df_added_row, df_results])
@@ -350,23 +356,23 @@ def cli_get_parser() -> ArgumentParser:
     parser = ArgumentParser(description=package_description)
 
     parser.add_argument(
-        '-o', '--onto-path', required=True,
-        help='Optional. Path to the ontology file to query.')
+        '-o', '--onto-path', required=True, help='Path to the ontology file to query.')
     parser.add_argument(
         '-c', '--config-path', required=True,
-        help='Optional. Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
-             'list of prefixes owned by the ontology. Used to filter out terms.')
+        help='Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
+             'list of prefixes owned by the ontology. Used to filter out terms, as well as `prefix_map`, which contains'
+             ' all prefixes and is used for querying.')
     parser.add_argument(
         '-e', '--exclusions-path', required=True,
-        help='Optional. Path to a TSV which should have the following fields: `term_id` (str), `term_label` (str), '
+        help='Path to a TSV which should have the following fields: `term_id` (str), `term_label` (str), '
              '`exclusion_reason` (str), and `exclude_children` (bool).')
     parser.add_argument(
         '-m', '--mirror-signature-path', required=True,
-        help='Optional. Path to a "mirror signature" file, which contains a list of class URIs from the unaltered '
+        help='Path to a "mirror signature" file, which contains a list of class URIs from the unaltered '
              'source ontology.')
     parser.add_argument(
         '-cs', '--component-signature-path', required=True,
-        help='Optional. Path to a "component signature" file, which contains a list of class URIs from Mondo\'s '
+        help='Path to a "component signature" file, which contains a list of class URIs from Mondo\'s '
              '"alignment module" for the ontology, an alignment module being defined as the list of classes we care '
              'about (e.g. all diseases).')
     parser.add_argument(
