@@ -385,3 +385,13 @@ slurp-%:
 	$(MAKE) slurp/$*.tsv -B
 
 slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit
+
+##################################
+##### Utilities ###################
+##################################
+
+.PHONY: help
+help:
+	@echo "$$data"
+	echo "* slurp-all:				Determine all slurpable terms."
+	echo "* extract-unmapped-matches:		Determine all new matches across external ontologies"
