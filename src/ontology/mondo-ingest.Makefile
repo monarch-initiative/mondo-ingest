@@ -333,7 +333,7 @@ tmp/merged.db: tmp/merged.owl
 ../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py 
 	python $^ run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
 
-lexical_matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
+lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
 
 ###################################
 #### Lexmatch-SSSOM-compare #######
@@ -395,3 +395,4 @@ help:
 	@echo "$$data"
 	echo "* slurp-all:				Determine all slurpable terms."
 	echo "* extract-unmapped-matches:		Determine all new matches across external ontologies"
+	echo "* lexical-matches:			Determine lexical matches across external ontologies"
