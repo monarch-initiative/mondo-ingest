@@ -74,6 +74,7 @@ $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
 		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		query --update ../sparql/rm_xref_by_prefix.ru \
 		remove -T $(TMPDIR)/ncit_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		remove --term "http://purl.obolibrary.org/obo/NCIT_C179199" --axioms "equivalent" \
@@ -90,6 +91,7 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt
 			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_complex_reification.ru \
+			--update ../sparql/rm_xref_by_prefix.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/doid.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/doid.owl -o $@; fi
 
