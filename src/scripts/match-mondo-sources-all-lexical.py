@@ -107,6 +107,7 @@ def run(input: str, config: str, rules: str, output: str):
     msdf.df = filter_prefixes(
         df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID]
     )
+    import pdb; pdb.set_trace()
     msdf.remove_mappings(mapping_msdf)
 
     with open(str(Path(output)), "w", encoding="utf8") as f:
