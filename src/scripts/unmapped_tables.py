@@ -21,7 +21,7 @@ from utils import get_labels
 
 
 # Vars
-USE_CACHE = False  # todo: add as cli param. this is for robot/semsql queries
+USE_CACHE = False
 
 
 # Functions

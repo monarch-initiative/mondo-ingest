@@ -180,10 +180,10 @@ unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_ter
 .PHONY: unmapped-terms-tables
 unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
 
-$(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-%.tsv $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.owl
+$(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-incl-deprecated-%.tsv $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.owl
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
 	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
-	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
+	--mirror-signature-path $(REPORTDIR)/mirror_signature-incl-deprecated-$*.tsv \
 	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
 	--onto-path components/$*.owl \
@@ -303,6 +303,8 @@ tmp/mondo-ingest.owl:
 tmp/mondo.owl:
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
+# Official Mondo SSSOM Mappings
+# - Doeesn't include: broad mappings
 tmp/mondo.sssom.tsv:
 	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
 
@@ -325,6 +327,9 @@ reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 
 reports/mirror_signature-%.tsv: component-download-%.owl
 	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
+
+reports/mirror_signature-incl-deprecated-%.tsv: component-download-%.owl
+	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes-incl-deprecated.sparql $@
 
 reports/component_signature-%.tsv: components/%.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
