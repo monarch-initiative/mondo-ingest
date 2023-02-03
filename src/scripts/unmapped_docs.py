@@ -6,7 +6,7 @@ Resources
 """
 import os
 from glob import glob
-from typing import List
+from typing import Dict, List
 
 import pandas as pd
 from jinja2 import Template
@@ -14,49 +14,76 @@ from jinja2 import Template
 from utils import DOCS_DIR, REPORTS_DIR
 
 
-# Vars
-TABLES_GLOB_PATTERN = os.path.join(REPORTS_DIR, '*_unmapped_terms.tsv')
-JINJA_PATH = os.path.join(DOCS_DIR, 'reports', 'unmapped.md.jinja2')
-OUT_PATH = os.path.join(DOCS_DIR, 'reports', 'unmapped.md')
+GLOB_PATTERN_FULL_TABLES = os.path.join(REPORTS_DIR, '*_mapping_status.tsv')
+GLOB_PATTERN_SIMPLE_TABLES = os.path.join(REPORTS_DIR, '*_unmapped_terms.tsv')
+UNMAPPED_DOCS_DIR = os.path.join(DOCS_DIR, 'reports')
+JINJA_MAIN_PAGE = """# Mapping progress report
+{{ stats_markdown_table }}
+
+`Ontology`: Name of ontology  
+`Tot terms`: Total terms in ontology  
+`Tot excluded`: Total terms Mondo has excluded from mapping / integrating  
+`Tot deprecated`: Total terms that the ontology source itself has deprecated  
+`Tot mappable (!excluded, !deprecated)`: Total mappable candidates for Mondo; all terms that are not excluded or 
+deprecated.  
+`Tot mapped (mappable)`: Total mapped terms (that are mappable in Mondo). Includes exact, broad, and narrow mappings.  
+`Tot unmapped (mappable)`: Total unmapped terms (that are mappable in Mondo)  
+`% unmapped (mappable)`: % unmapped terms (that are mappable in Mondo)  """
+OUT_PATH = os.path.join(UNMAPPED_DOCS_DIR, 'unmapped.md')
+JINJA_ONTO_PAGES = """## {{ ontology_name }}
+### Unmapped mappable terms _(!excluded, !deprecated)_
+{{ table }}"""
 
 
-# Functions
-# todo: Try getting stats in the mappings_unmapped_docs.py step. If that isn't as effective, do it here.
 def update_mapping_progress_in_docs():
     """Update mapping progress report in the documentation."""
     # Read sources
     # todo: what's best way to gather ontology names? There's a way in the makefile. Is this not right to do here?
-    table_paths: List[str] = glob(TABLES_GLOB_PATTERN)
-    ontologies = {}
-    for path in table_paths:
-        o = os.path.basename(path).replace('_unmapped_terms.tsv', '').upper()
+    status_table_paths: List[str] = glob(GLOB_PATTERN_FULL_TABLES)
+    simple_table_paths: List[str] = glob(GLOB_PATTERN_SIMPLE_TABLES)
+
+    # Create main page
+    stats_rows: List[Dict] = []
+    ontology_names: List[str] = []
+    for path in status_table_paths:
+        ontology_name = os.path.basename(path).replace('_mapping_status.tsv', '')
         df = pd.read_csv(path, sep='\t').fillna('')
-        markdown_table: str = df.to_markdown(index=False)
-        n_unmapped = len(df[df['comment'] == 'Unmapped'])
-        ontologies[o] = {
-            'df': df,
-            'markdown_table': markdown_table,
-            'Total mappable terms': f"{len(df):,}",
-            'Unmapped terms': f"{n_unmapped:,}",
-            '% terms mapped': str(round((1 - (n_unmapped / len(df))) * 100, 1)) + '%',
-        }
-
-    # Generate stats
-    stats_rows = [{**{'Ontology': o}, **{k: v for k, v in d.items() if k not in ['df', 'markdown_table']}}
-                  for o, d in ontologies.items()]
-    stats_markdown_table: str = pd.DataFrame(stats_rows).to_markdown(index=False)
-
-    # Write output
-    with open(JINJA_PATH, 'r') as file:
-        template_str = file.read()
-    template_obj = Template(template_str)
-    instantiated_str = template_obj.render(
-        ontologies={k: v['markdown_table'] for k, v in ontologies.items()},
-        stats_markdown_table=stats_markdown_table)
+        # todo: when fixed (https://github.com/monarch-initiative/mondo-ingest/issues/171):
+        #  `df['is_deprecated'] == False`
+        mappable_df = df[(df['is_excluded'] == False) & (df['is_deprecated'].isin([False, None, '']))]
+        unmapped_mappable_df = mappable_df[mappable_df['is_mapped'] == False]
+        unmapped_mappable_df = unmapped_mappable_df.drop(columns=['is_mapped', 'is_excluded', 'is_deprecated'])
+        n_mappable = len(mappable_df)
+        n_unmapped_mappable = len(unmapped_mappable_df)
+        ontology_names.append(ontology_name)
+        # TODO: Remove hackery when NCIT memory err fixed: https://github.com/monarch-initiative/mondo-ingest/issues/171
+        n_deprecated = '0' if ontology_name == 'ncit' else f"{len(df[df['is_deprecated']] == True):,}"
+        stats_rows.append({
+            'Ontology': f'[{ontology_name.upper()}](./unmapped_{ontology_name.lower()}.md)',
+            'Tot terms': f"{len(df):,}",
+            'Tot excluded': f"{len(df[df['is_excluded'] == True]):,}",
+            'Tot deprecated': n_deprecated,
+            'Tot mappable _(!excluded, !deprecated)_': f"{n_mappable:,}",
+            'Tot mapped _(mappable)_': f"{n_mappable - n_unmapped_mappable:,}",
+            'Tot unmapped _(mappable)_': f"{n_unmapped_mappable:,}",
+            '% unmapped _(mappable)_': str(round((n_unmapped_mappable / n_mappable) * 100, 1)) + '%',
+        })
+    stats_df = pd.DataFrame(stats_rows).sort_values(['% unmapped _(mappable)_'], ascending=False)
+    instantiated_str: str = Template(JINJA_MAIN_PAGE).render(
+        ontology_names=ontology_names, stats_markdown_table=stats_df.to_markdown(index=False))
     with open(OUT_PATH, 'w') as f:
         f.write(instantiated_str)
 
+    # Create individual pages
+    for path in simple_table_paths:
+        ontology_name = os.path.basename(path).replace('_unmapped_terms.tsv', '')
+        outpath = os.path.join(UNMAPPED_DOCS_DIR, f'unmapped_{ontology_name.lower()}.md')
+        df = pd.read_csv(path, sep='\t').fillna('')
+        instantiated_str: str = Template(JINJA_ONTO_PAGES).render(
+            ontology_name=ontology_name.upper(), table=df.to_markdown(index=False))
+        with open(outpath, 'w') as f:
+            f.write(instantiated_str)
 
-# Execution
+
 if __name__ == '__main__':
     update_mapping_progress_in_docs()
