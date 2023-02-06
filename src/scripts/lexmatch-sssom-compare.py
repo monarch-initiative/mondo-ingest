@@ -346,6 +346,10 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     # Split out exact match i.e. subj_label.lowercase()==obj_label.lowercase() into a separate file.
     unmapped_exact_exact = unmapped_exact.loc[unmapped_exact["subject_label"].str.lower() == unmapped_exact["object_label"].str.lower()]
     new_fn = fn.replace(".tsv", "_exact.tsv")
+    unmapped_exact_exact = pd.concat(
+        [pd.DataFrame.from_dict(robot_row_dict, orient="columns"), unmapped_exact_exact],
+        axis=0,
+    )
     unmapped_exact_exact.to_csv(join(new_fn), sep="\t", index=False)
     unmapped_exact_logical = unmapped_exact.loc[unmapped_exact["subject_label"].str.lower() != unmapped_exact["object_label"].str.lower()]
     unmapped_exact_logical.to_csv(join(fn), sep="\t", index=False)
