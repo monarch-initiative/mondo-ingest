@@ -180,8 +180,7 @@ unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_ter
 .PHONY: unmapped-terms-tables
 unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_status.tsv)
 
-# todo: $(REPORTDIR)/mirror_signature-%.tsv is only needed for NCIT until memory error (https://github.com/monarch-initiative/mondo-ingest/issues/171) fixed on it for $(REPORTDIR)/mirror_signature-incl-deprecated-%.tsv
-$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-incl-deprecated-%.tsv $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.owl $(REPORTDIR)/mirror_signature-%.tsv
+$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-incl-deprecated-%.tsv $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.owl
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
 	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
 	--mirror-signature-path $(REPORTDIR)/mirror_signature-incl-deprecated-$*.tsv \

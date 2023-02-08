@@ -15,6 +15,7 @@ from typing import Dict, List, Set, Union
 import curies
 import pandas as pd
 import yaml
+from oaklib import get_implementation_from_shorthand
 from oaklib.types import CURIE
 
 from utils import get_labels
@@ -23,58 +24,72 @@ from utils import get_labels
 NULLABLE_BOOL = Union[bool, None]
 
 
-def create_mapping_status_tables(
+# TODO: eventual full refactor to this?
+def create_mapping_status_tables_via_semsql(
     onto_path: str, exclusions_path: str, mirror_signature_path: str, sssom_map_path: str, onto_config_path: str,
     outpath_full: str, outpath_simple: str, use_cache_labels: bool = False,
-) -> Dict[str, pd.DataFrame]:
-    """Run
-
-    todo's
-     - change get_labels() to semsql when fixed: https://github.com/monarch-initiative/mondo-ingest/issues/136
-    """
-    # TODO: Remove this hackery when NCIT error fixed: https://github.com/monarch-initiative/mondo-ingest/issues/171
-    if 'ncit' in onto_path.lower():
-        # return {'full': pd.DataFrame(), 'simple': pd.DataFrame()}
-        # This uses cached version of plain mirror signature for NCIT
-        mirror_signature_path = mirror_signature_path.replace('-incl-deprecated', '')
-
+) -> (List[CURIE], Set[CURIE], List[CURIE]):
+    """Create mapping status tables."""
     # Read sources
     with open(onto_config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
         prefix_map: Dict[str, str] = onto_config['base_prefix_map']
-    converter = curies.Converter.from_prefix_map(prefix_map)
-    mirror_df = pd.read_csv(mirror_signature_path, sep='\t').fillna('')
-    mirror_df['?term'] = mirror_df['?term'].apply(lambda x: converter.compress(x.replace('>', '').replace('<', '')))
-    all_terms: Set[CURIE] = set(mirror_df['?term'])
+    oi = get_implementation_from_shorthand(onto_path.replace('.owl', '.db'))
+    entities = [x for x in oi.entities(filter_obsoletes=False)]
+    entities_owned: Set[CURIE] = set([x for x in entities if any([x.startswith(y) for y in prefix_map.keys()])])
+    entities_sans_deprecated: List[CURIE] = [x for x in oi.entities(filter_obsoletes=True)]
+    entities_owned_sans_deprecated: List[CURIE] = [
+        x for x in entities_sans_deprecated if any([x.startswith(y) for y in prefix_map.keys()])]
+    entities_owned_sans_deprecated: Set[CURIE] = set(entities_owned_sans_deprecated)
 
-    # TODO: Remove this hackery when NCIT error fixed: https://github.com/monarch-initiative/mondo-ingest/issues/171
-    if 'ncit' in onto_path.lower():
-        deprecated_terms = set()
-    else:
-        deprecated_terms: Set[CURIE] = set(mirror_df[mirror_df['?deprecated'] == True]['?term'])
+    all_terms: List[CURIE] = [x for x in entities_owned if x]
+    all_terms: List[CURIE] = sorted(all_terms)
+    deprecated_terms = [x for x in all_terms if x not in entities_owned_sans_deprecated]
+    deprecated_terms = set(deprecated_terms)
+    term_labels: List[tuple] = [x for x in oi.labels(all_terms)]
+    all_terms: List[CURIE] = [x[0] for x in term_labels]
+    all_labels: List[CURIE] = [x[1] for x in term_labels]
+
+    return all_terms, deprecated_terms, all_labels
+
+
+def create_mapping_status_tables(
+    onto_path: str, exclusions_path: str, mirror_signature_path: str, sssom_map_path: str, onto_config_path: str,
+    outpath_full: str, outpath_simple: str, use_cache_labels: bool = False,
+) -> Dict[str, pd.DataFrame]:
+    """Create mapping status tables
+
+    todo's
+     - change get_labels() to semsql when fixed: https://github.com/monarch-initiative/mondo-ingest/issues/136
+    """
+    # with open(onto_config_path, 'r') as stream:
+    #     onto_config = yaml.safe_load(stream)
+    #     prefix_map: Dict[str, str] = onto_config['base_prefix_map']
+
+    # if 'ncit' in onto_path.lower():
+    all_terms, deprecated_terms, all_labels = create_mapping_status_tables_via_semsql(
+        onto_path, exclusions_path, mirror_signature_path, sssom_map_path, onto_config_path,
+        outpath_full, outpath_simple, use_cache_labels)
+    # else:
+    #     converter = curies.Converter.from_prefix_map(prefix_map)
+    #     mirror_df = pd.read_csv(mirror_signature_path, sep='\t').fillna('')
+    #     mirror_df['?term'] = mirror_df['?term'].apply(lambda x: converter.compress(x.replace('>', '').replace('<', '')))
+    #     all_terms: Set[CURIE] = set(mirror_df['?term'])
+    #     all_terms: List[CURIE] = sorted([x for x in all_terms if x])
+    #     deprecated_terms: Set[CURIE] = set(mirror_df[mirror_df['?deprecated'] == True]['?term'])
+    #     # todo: maybe refactor to get terms and labels from this func. more stable?
+    #     all_labels: List[str] = get_labels(
+    #         onto_path=onto_path, curie_list=all_terms, prefix_map=prefix_map, use_cache=use_cache_labels)
 
     excluded_terms: Set[CURIE] = set(pd.read_csv(exclusions_path, header=None, names=['id']).fillna('')['id'])
     mapped_terms: Set[CURIE] = set(pd.read_csv(sssom_map_path, sep='\t', comment='#').fillna('')['object_id'])
 
     # Determine unmapped terms
     # - `if not x`: means not in `prefix_map`, so not a relevant term for this ontology
-    all_terms: List[CURIE] = sorted([x for x in all_terms if x])
     is_mapped: List[NULLABLE_BOOL] = [x in mapped_terms for x in all_terms]
     is_excluded: List[NULLABLE_BOOL] = [x in excluded_terms for x in all_terms]
-    # TODO: Remove this hackery when NCIT err fixed: https://github.com/monarch-initiative/mondo-ingest/issues/171
-    if 'ncit' in onto_path.lower():
-        is_deprecated: List[NULLABLE_BOOL] = [None] * len(all_terms)
-    else:
-        is_deprecated: List[NULLABLE_BOOL] = [x in deprecated_terms for x in all_terms]
+    is_deprecated: List[NULLABLE_BOOL] = [x in deprecated_terms for x in all_terms]
 
-    # Get labels & create table
-    # todo: maybe refactor to get terms and labels from this func. more stable?
-    # TODO: Remove this hackery when NCIT err fixed: https://github.com/monarch-initiative/mondo-ingest/issues/171
-    if 'ncit' in onto_path.lower():
-        all_labels: List[str] = [''] * len(all_terms)
-    else:
-        all_labels: List[str] = get_labels(
-            onto_path=onto_path, curie_list=all_terms, prefix_map=prefix_map, use_cache=use_cache_labels)
     df = pd.DataFrame({
         'subject_id': all_terms, 'subject_label': all_labels, 'is_mapped': is_mapped, 'is_excluded': is_excluded,
         'is_deprecated': is_deprecated})
