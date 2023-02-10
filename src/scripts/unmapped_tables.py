@@ -16,7 +16,8 @@ import curies
 import pandas as pd
 import yaml
 from oaklib import get_implementation_from_shorthand
-from oaklib.types import CURIE
+from oaklib.types import CURIE, URI
+from sssom.util import is_curie
 
 from utils import get_labels
 
@@ -24,33 +25,39 @@ from utils import get_labels
 NULLABLE_BOOL = Union[bool, None]
 
 
-# TODO: eventual full refactor to this?
+# TODO: eventual full refactor to this
 def create_mapping_status_tables_via_semsql(
     onto_path: str, exclusions_path: str, mirror_signature_path: str, sssom_map_path: str, onto_config_path: str,
     outpath_full: str, outpath_simple: str, use_cache_labels: bool = False,
-) -> (List[CURIE], Set[CURIE], List[CURIE]):
+) -> (List[CURIE], List[CURIE], Set[CURIE]):
     """Create mapping status tables."""
     # Read sources
     with open(onto_config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
         prefix_map: Dict[str, str] = onto_config['base_prefix_map']
+        owned_prefixes: List[str] = list(prefix_map.keys())
+    converter = curies.Converter.from_prefix_map(prefix_map)
     oi = get_implementation_from_shorthand(onto_path.replace('.owl', '.db'))
-    entities = [x for x in oi.entities(filter_obsoletes=False)]
-    entities_owned: Set[CURIE] = set([x for x in entities if any([x.startswith(y) for y in prefix_map.keys()])])
-    entities_sans_deprecated: List[CURIE] = [x for x in oi.entities(filter_obsoletes=True)]
-    entities_owned_sans_deprecated: List[CURIE] = [
-        x for x in entities_sans_deprecated if any([x.startswith(y) for y in prefix_map.keys()])]
-    entities_owned_sans_deprecated: Set[CURIE] = set(entities_owned_sans_deprecated)
 
-    all_terms: List[CURIE] = [x for x in entities_owned if x]
-    all_terms: List[CURIE] = sorted(all_terms)
-    deprecated_terms = [x for x in all_terms if x not in entities_owned_sans_deprecated]
-    deprecated_terms = set(deprecated_terms)
-    term_labels: List[tuple] = [x for x in oi.labels(all_terms)]
-    all_terms: List[CURIE] = [x[0] for x in term_labels]
-    all_labels: List[CURIE] = [x[1] for x in term_labels]
+    ids_all: List[Union[CURIE, URI]] = [x for x in oi.entities(filter_obsoletes=False)]
+    ids_sans_deprecated: List[Union[CURIE, URI]] = [x for x in oi.entities(filter_obsoletes=True)]
+    ids_sans_deprecated: Set[Union[CURIE, URI]] = set(ids_sans_deprecated)
+    id_labels_all: List[tuple] = [x for x in oi.labels(ids_all)]
+    id_labels_all_map: Dict[Union[CURIE, URI], str] = {x[0]: x[1] for x in id_labels_all}
 
-    return all_terms, deprecated_terms, all_labels
+    # todo; does this cause issue when its just curies and not uris?
+    curies_owned: List[CURIE] = []
+    labels_owned: List[str] = []
+    curies_deprecated: Set[CURIE] = set()
+    for _id, label in id_labels_all_map.items():
+        curie: CURIE = _id if is_curie(_id) else converter.compress(_id.replace('>', '').replace('<', ''))
+        if curie and curie.split(':')[0] in owned_prefixes:
+            curies_owned.append(curie)
+            labels_owned.append(label)
+            if _id not in ids_sans_deprecated:
+                curies_deprecated.add(curie)
+
+    return curies_owned, labels_owned, curies_deprecated
 
 
 def create_mapping_status_tables(
@@ -60,14 +67,14 @@ def create_mapping_status_tables(
     """Create mapping status tables
 
     todo's
-     - change get_labels() to semsql when fixed: https://github.com/monarch-initiative/mondo-ingest/issues/136
+     - todo: better operation for angle bracket fix somewhere
     """
     # with open(onto_config_path, 'r') as stream:
     #     onto_config = yaml.safe_load(stream)
     #     prefix_map: Dict[str, str] = onto_config['base_prefix_map']
 
     # if 'ncit' in onto_path.lower():
-    all_terms, deprecated_terms, all_labels = create_mapping_status_tables_via_semsql(
+    curies_owned, labels_owned, curies_deprecated = create_mapping_status_tables_via_semsql(
         onto_path, exclusions_path, mirror_signature_path, sssom_map_path, onto_config_path,
         outpath_full, outpath_simple, use_cache_labels)
     # else:
@@ -85,13 +92,12 @@ def create_mapping_status_tables(
     mapped_terms: Set[CURIE] = set(pd.read_csv(sssom_map_path, sep='\t', comment='#').fillna('')['object_id'])
 
     # Determine unmapped terms
-    # - `if not x`: means not in `prefix_map`, so not a relevant term for this ontology
-    is_mapped: List[NULLABLE_BOOL] = [x in mapped_terms for x in all_terms]
-    is_excluded: List[NULLABLE_BOOL] = [x in excluded_terms for x in all_terms]
-    is_deprecated: List[NULLABLE_BOOL] = [x in deprecated_terms for x in all_terms]
+    is_mapped: List[NULLABLE_BOOL] = [x in mapped_terms for x in curies_owned]
+    is_excluded: List[NULLABLE_BOOL] = [x in excluded_terms for x in curies_owned]
+    is_deprecated: List[NULLABLE_BOOL] = [x in curies_deprecated for x in curies_owned]
 
     df = pd.DataFrame({
-        'subject_id': all_terms, 'subject_label': all_labels, 'is_mapped': is_mapped, 'is_excluded': is_excluded,
+        'subject_id': curies_owned, 'subject_label': labels_owned, 'is_mapped': is_mapped, 'is_excluded': is_excluded,
         'is_deprecated': is_deprecated})
 
     if len(df) == 0:
