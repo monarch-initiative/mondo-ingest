@@ -73,7 +73,6 @@ def create_mapping_status_tables(
     #     onto_config = yaml.safe_load(stream)
     #     prefix_map: Dict[str, str] = onto_config['base_prefix_map']
 
-    # if 'ncit' in onto_path.lower():
     curies_owned, labels_owned, curies_deprecated = create_mapping_status_tables_via_semsql(
         onto_path, exclusions_path, mirror_signature_path, sssom_map_path, onto_config_path,
         outpath_full, outpath_simple, use_cache_labels)
