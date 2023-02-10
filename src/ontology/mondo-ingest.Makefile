@@ -173,6 +173,9 @@ metadata/mondo.sssom.config.yml:
 
 mappings: sssom $(ALL_MAPPINGS)
 
+.PHONY: mapping-progress-report
+mapping-progress-report: unmapped-terms-tables unmapped-terms-docs
+
 .PHONY: unmapped-terms-docs
 unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
 	python3 $(SCRIPTSDIR)/unmapped_docs.py
@@ -180,13 +183,12 @@ unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_ter
 .PHONY: unmapped-terms-tables
 unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_status.tsv)
 
-$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-incl-deprecated-%.tsv $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.owl
+$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.owl
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
 	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
-	--mirror-signature-path $(REPORTDIR)/mirror_signature-incl-deprecated-$*.tsv \
 	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
-	--onto-path components/$*.owl \
+	--db-path components/$*.db \
 	--outpath-simple $(REPORTDIR)/$*_unmapped_terms.tsv \
 	--outpath-full $(REPORTDIR)/$*_mapping_status.tsv
 
@@ -329,9 +331,6 @@ reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 reports/mirror_signature-%.tsv: component-download-%.owl
 	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
 
-reports/mirror_signature-incl-deprecated-%.tsv: component-download-%.owl
-	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes-incl-deprecated.sparql $@
-
 reports/component_signature-%.tsv: components/%.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
 
@@ -423,5 +422,4 @@ help:
 	echo "* lexical-matches:			Determine lexical matches across external ontologies"
 	echo "* reports/%_mapping_status.tsv: Creates a table of all terms for ontology `%`, along with labels, and other columns `is_excluded`, `is_mapped`, `is_deprecated`."
 	echo "* reports/%_unmapped_terms.tsv: Creates a table of unmapped terms for ontology `%` and their labels."
-	echo "* unmapped-terms-tables: Generates reports/%_mapping_status.tsv and reports/%_unmapped_terms.tsv for all ontologies."
-	echo "* unmapped-terms-docs: Based on the set of reports/%_mapping_status.tsv and reports/%_unmapped_terms.tsv for all ontologies, uses these to create the mapping progress report (docs/reports/unmapped.md) and other related pages."
+	echo "* mapping-progress-report: Creates mapping progress report (docs/reports/unmapped.md) and pages for each ontology which list their umapped terms. Also generates reports/%_mapping_status.tsv and reports/%_unmapped_terms.tsv for all ontologies."

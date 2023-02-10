@@ -18,3 +18,4 @@ These workflows will create a [mapping progress report](../reports/unmapped.md) 
 2. `reports/%_unmapped_terms.tsv`: Running this also runs (1). Creates a table of unmapped terms for ontology `%` and their labels.
 3. `unmapped-terms-tables`: Generates (1) and (2) for all ontologies.
 4. `unmapped-terms-docs`: Based on the set of (1) and (2) for all ontologies, uses these to create the [mapping progress report](../reports/unmapped.md) and other related pages. 
+5. `mapping-progress-report`: Runs (3) and (4). Creates mapping progress report [mapping progress report](../reports/unmapped.md) and pages for each ontology which list their umapped terms. Also generates reports/%_mapping_status.tsv and reports/%_unmapped_terms.tsv for all ontologies.

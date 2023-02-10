@@ -2,7 +2,6 @@
 ### Unmapped mappable terms _(!excluded, !deprecated)_
 | subject_id      | subject_label                                                                                                                               |
 |:----------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
-| Orphanet:C001   |                                                                                                                                             |
 | Orphanet:623801 | Acute flaccid myelitis                                                                                                                      |
 | Orphanet:617304 | Amniotic fluid embolism                                                                                                                     |
 | Orphanet:519276 | Anterior segment developmental abnormality with extraocular manifestations                                                                  |
@@ -224,3 +223,4 @@
 | Orphanet:324953 | Unclassified autoinflammatory syndrome of childhood                                                                                         |
 | Orphanet:324960 | Unexplained periodic fever syndrome of childhood                                                                                            |
 | Orphanet:622925 | X-linked severe syndromic thoracic aortic aneurysm and dissection                                                                           |
+| Orphanet:C001   |                                                                                                                                             |
