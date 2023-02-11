@@ -24,11 +24,7 @@ def create_mapping_status_tables(
     db_path: str, exclusions_path: str, sssom_map_path: str, onto_config_path: str, outpath_full: str,
     outpath_simple: str
 ) -> Dict[str, pd.DataFrame]:
-    """Create mapping status tables
-
-    todo's
-     - todo: better operation for angle bracket fix somewhere
-    """
+    """Create mapping status tables"""
     # Load sources
     # - prefix_preplacement_map: Cases where mondo-ingest prefixes differ from bioregistry/OAK, e.g. Orphanet vs ORDO
     with open(onto_config_path, 'r') as stream:
@@ -55,7 +51,7 @@ def create_mapping_status_tables(
     labels_owned: List[str] = []
     curies_deprecated: Set[CURIE] = set()
     for _id, label in id_labels_all_map.items():
-        curie: CURIE = _id if is_curie(_id) else converter.compress(_id.replace('>', '').replace('<', ''))
+        curie: CURIE = _id if is_curie(_id) else converter.compress(_id)
         for alias, preferred in prefix_preplacement_map.items():
             curie = curie.replace(alias, preferred) if curie else curie
         if curie and curie.split(':')[0] in owned_prefixes:
