@@ -1,7 +1,6 @@
 ## Customize Makefile settings for mondo-ingest
 ## 
-## If you need to customize your Makefile, make
-## changes here rather than in the main Makefile
+## If you need to customize your Makefile, make changes here rather than in the main Makefile
 .PHONY: build-mondo-ingest deploy-mondo-ingest documentation excluded-xrefs-in-mondo mappings \
 report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries exclusions-%
 
@@ -12,13 +11,8 @@ MAPPINGSDIR=../mappings
 ####################################
 ### Relevant signature #############
 ####################################
-
-# This section is concerned with identifiying 
-# the entities of interest that 
-# should be imported from the source
-
-# Obtains the entities of interest from an ontology, as specified in a bespoke sparql query (bespoke
-# for that ontology).
+# This section is concerned with identifiying the entities of interest that should be imported from the source.
+# Obtains the entities of interest from an ontology, as specified in a bespoke sparql query (bespoke for that ontology).
 $(TMPDIR)/%_relevant_signature.txt: component-download-%.owl | $(TMPDIR)
 	if [ $(COMP) = true ]; then $(ROBOT) query -i "$(TMPDIR)/$<.owl" -q "../sparql/$*-relevant-signature.sparql" $@; fi
 .PRECIOUS: $(TMPDIR)/%_relevant_signature.txt
@@ -179,6 +173,25 @@ metadata/mondo.sssom.config.yml:
 
 mappings: sssom $(ALL_MAPPINGS)
 
+.PHONY: mapping-progress-report
+mapping-progress-report: unmapped-terms-tables unmapped-terms-docs
+
+.PHONY: unmapped-terms-docs
+unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
+	python3 $(SCRIPTSDIR)/unmapped_docs.py
+
+.PHONY: unmapped-terms-tables
+unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_status.tsv)
+
+$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.owl
+	python3 $(SCRIPTSDIR)/unmapped_tables.py \
+	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
+	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
+	--onto-config-path metadata/$*.yml \
+	--db-path components/$*.db \
+	--outpath-simple $(REPORTDIR)/$*_unmapped_terms.tsv \
+	--outpath-full $(REPORTDIR)/$*_mapping_status.tsv
+
 #################
 ##### Utils #####
 #################
@@ -293,6 +306,8 @@ tmp/mondo-ingest.owl:
 tmp/mondo.owl:
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
+# Official Mondo SSSOM Mappings
+# - Doeesn't include: broad mappings
 tmp/mondo.sssom.tsv:
 	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
 
@@ -332,7 +347,7 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 tmp/merged.db: tmp/merged.owl
 	semsql make $@
 
-../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py 
+../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py
 	python $^ run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
 
 lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
@@ -353,12 +368,17 @@ component-download-mondo.owl: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/mondo.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
-# TODO: development: While developing, can temporarily remove mirror/%.owl prereq for speed
-# mirror/%.db:
-mirror/%.db: mirror/%.owl
-	@rm .template.db.tmp
-	semsql make $@
-	@rm .template.db.tmp
+# todo: What if the mirror was out of date, but there's already a .db file there, but it's not up to date?
+# Related issues:
+#  - icd10cm/icd10who ttl -> owl: https://github.com/monarch-initiative/mondo-ingest/issues/138
+#  - No rule to make target 'mirror/ONTOLOGY.owl': https://github.com/monarch-initiative/mondo-ingest/issues/137
+# Maybe solved now by using components/
+components/%.db: $(COMPONENTSDIR)/%.owl
+	@rm -f .template.db
+	@rm -f .template.db.tmp
+	RUST_BACKTRACE=full semsql make $@
+	@rm -f .template.db
+	@rm -f .template.db.tmp
 
 slurp/:
 	mkdir -p $@
@@ -381,11 +401,13 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_ter
 slurp-no-updates-%:
 	$(MAKE) slurp/$*.tsv
 
+# todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 slurp-all-no-updates: slurp-no-updates-omim slurp-no-updates-doid slurp-no-updates-ordo slurp-no-updates-icd10cm slurp-no-updates-icd10who slurp-no-updates-ncit
 
 slurp-%:
 	$(MAKE) slurp/$*.tsv -B
 
+# todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit
 
 ##################################
@@ -398,3 +420,6 @@ help:
 	echo "* slurp-all:				Determine all slurpable terms."
 	echo "* extract-unmapped-matches:		Determine all new matches across external ontologies"
 	echo "* lexical-matches:			Determine lexical matches across external ontologies"
+	echo "* reports/%_mapping_status.tsv: Creates a table of all terms for ontology `%`, along with labels, and other columns `is_excluded`, `is_mapped`, `is_deprecated`."
+	echo "* reports/%_unmapped_terms.tsv: Creates a table of unmapped terms for ontology `%` and their labels."
+	echo "* mapping-progress-report: Creates mapping progress report (docs/reports/unmapped.md) and pages for each ontology which list their umapped terms. Also generates reports/%_mapping_status.tsv and reports/%_unmapped_terms.tsv for all ontologies."

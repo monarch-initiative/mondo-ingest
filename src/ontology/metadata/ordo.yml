@@ -2,6 +2,8 @@ id: ORDO
 label: Orphanet Rare Disease Ontology
 prefix_map:
   Orphanet: http://www.orpha.net/ORDO/Orphanet_
+prefix_aliases:  # Keys are mondo-ingest preferred prefixes, and values are alternatives
+  Orphanet: ORDO
 issue_tracker: https://github.com/Orphanet/ORDO/issues
 homepage: http://www.orphadata.org/
 description: >
