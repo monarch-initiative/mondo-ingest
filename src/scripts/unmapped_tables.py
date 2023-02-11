@@ -37,7 +37,8 @@ def create_mapping_status_tables(
         owned_prefixes: List[str] = list(prefix_map.keys())
         converter = curies.Converter.from_prefix_map(prefix_map)
         prefix_preplacement_map = {
-            f'{alias}:': f'{preferred}:' for preferred, alias in onto_config['prefix_aliases'].items()}
+            f'{alias}:': f'{preferred}:' for preferred, alias in onto_config['prefix_aliases'].items()} \
+            if 'prefix_aliases' in onto_config else {}
     excluded_terms: Set[CURIE] = set(pd.read_csv(exclusions_path, header=None, names=['id']).fillna('')['id'])
     mapped_terms: Set[CURIE] = set(pd.read_csv(sssom_map_path, sep='\t', comment='#').fillna('')['object_id'])
     oi = get_implementation_from_shorthand(db_path)

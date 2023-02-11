@@ -138,7 +138,7 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 		reduce -r ELK \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 
-ALL_COMPONENT_IDS=$(strip $(patsubst components/%.owl,%, $(OTHER_SRC)))
+ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 
 #################
 # Mappings ######
@@ -150,7 +150,7 @@ sssom:
 
 ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), ../mappings/$(n).sssom.tsv)
 
-$(TMPDIR)/component-%.json: components/%.owl
+$(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) convert -i $< -f json -o $@
 .PRECIOUS: $(TMPDIR)/component-%.json
 
@@ -183,12 +183,12 @@ unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_ter
 .PHONY: unmapped-terms-tables
 unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_status.tsv)
 
-$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.owl
+$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.db
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
 	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
 	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
-	--db-path components/$*.db \
+	--db-path $(COMPONENTSDIR)/$*.db \
 	--outpath-simple $(REPORTDIR)/$*_unmapped_terms.tsv \
 	--outpath-full $(REPORTDIR)/$*_mapping_status.tsv
 
@@ -275,8 +275,8 @@ PREFIXES_METRICS=--prefix 'OMIM: http://omim.org/entry/' \
 	--prefix 'HGNC: https://www.genenames.org/data/gene-symbol-report/\#!/hgnc_id/' \
 	--prefix 'biolink: https://w3id.org/biolink/vocab/'
 
-metadata/%-metrics.json: components/%.owl
-	$(ROBOT) measure $(PREFIXES_METRICS) -i components/$*.owl --format json --metrics extended --output $@
+metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
+	$(ROBOT) measure $(PREFIXES_METRICS) -i $(COMPONENTSDIR)/$*.owl --format json --metrics extended --output $@
 .PRECIOUS: metadata/%-metrics.json
 
 ../../docs/metrics/%.md: metadata/%-metrics.json | ../../docs/metrics/
@@ -331,7 +331,7 @@ reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 reports/mirror_signature-%.tsv: component-download-%.owl
 	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
 
-reports/component_signature-%.tsv: components/%.owl
+reports/component_signature-%.tsv: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
 
 ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
@@ -372,8 +372,8 @@ component-download-mondo.owl: | $(TMPDIR)
 # Related issues:
 #  - icd10cm/icd10who ttl -> owl: https://github.com/monarch-initiative/mondo-ingest/issues/138
 #  - No rule to make target 'mirror/ONTOLOGY.owl': https://github.com/monarch-initiative/mondo-ingest/issues/137
-# Maybe solved now by using components/
-components/%.db: $(COMPONENTSDIR)/%.owl
+# Maybe solved now by using $(COMPONENTSDIR)/
+$(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	RUST_BACKTRACE=full semsql make $@
@@ -414,12 +414,24 @@ slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-n
 ##### Utilities ###################
 ##################################
 
+# $$data: This prints the help message from imported makefiles.
 .PHONY: help
 help:
 	@echo "$$data"
-	echo "* slurp-all:				Determine all slurpable terms."
-	echo "* extract-unmapped-matches:		Determine all new matches across external ontologies"
-	echo "* lexical-matches:			Determine lexical matches across external ontologies"
-	echo "* reports/%_mapping_status.tsv: Creates a table of all terms for ontology `%`, along with labels, and other columns `is_excluded`, `is_mapped`, `is_deprecated`."
-	echo "* reports/%_unmapped_terms.tsv: Creates a table of unmapped terms for ontology `%` and their labels."
-	echo "* mapping-progress-report: Creates mapping progress report (docs/reports/unmapped.md) and pages for each ontology which list their umapped terms. Also generates reports/%_mapping_status.tsv and reports/%_unmapped_terms.tsv for all ontologies."
+	@echo "----------------------------------------"
+	@echo "	Command reference: mondo-ingest"
+	@echo "----------------------------------------"
+	@echo "slurp-all"
+	@echo "Determine all slurpable terms. That is, terms that are candidates for integration into Mondo.\n"
+	@echo "extract-unmapped-matches"
+	@echo "Determine all new matches across external ontologies.\n"
+	@echo "lexical-matches"
+	@echo "Determine lexical matches across external ontologies.\n"
+	@echo "reports/%_mapping_status.tsv"
+	@echo "A table of all terms for ontology %, along with labels, and other columns is_excluded, is_mapped, is_deprecated.\n"
+	@echo "reports/%_unmapped_terms.tsv"
+	@echo "A table of unmapped terms for ontology % and their labels.\n"
+	@echo "mapping-progress-report"
+	@echo "Creates mapping progress report (docs/reports/unmapped.md) and pages for each ontology which list their umapped terms. Also generates reports/%_mapping_status.tsv and reports/%_unmapped_terms.tsv for all ontologies.\n"
+	@echo "reports/mirror_signature-%.tsv"
+	@echo "A table with a single column '?term' which includes all of the class IRIs in an ontology.\n"
