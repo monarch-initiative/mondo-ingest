@@ -30,7 +30,7 @@ ROBOT_TEMPLATE_HEADER = {
 
 
 def slurp(
-    ontology_path: str, onto_config_path: str, onto_exclusions_path: str, sssom_map_path: str, min_id: int, max_id: int,
+    ontology_path: str, onto_config_path: str, onto_exclusions_path: str, mondo_mappings_path: str, min_id: int, max_id: int,
     mondo_terms_path: str, slurp_dir_path: str, outpath: str, use_cache=False
 ) -> pd.DataFrame:
     """Run slurp pipeline for given ontology
@@ -41,7 +41,7 @@ def slurp(
     with open(onto_config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
         owned_prefix_map: Dict[PREFIX, URI] = onto_config['base_prefix_map']
-    sssom_df: pd.DataFrame = pd.read_csv(sssom_map_path, comment='#', sep='\t')
+    sssom_df: pd.DataFrame = pd.read_csv(mondo_mappings_path, comment='#', sep='\t')
     excluded_terms: Set[CURIE] = get_excluded_terms(onto_exclusions_path)
     mondo_term_ids: Set[int] = get_mondo_term_ids(mondo_terms_path, slurp_dir_path)
 
@@ -109,7 +109,7 @@ def cli():
              ' terms that are exclueded from inclusion into Mondo. Should be a plain file of line break delimited terms'
              '; only 1 column with no column header.')
     parser.add_argument(
-        '-s', '--sssom-map-path', required=True,
+        '-s', '--mondo-mappings-path', required=True,
         help='Path to file containing all known Mondo mappings, in SSSOM format.')
     parser.add_argument(
         '-m', '--min-id', required=True,
