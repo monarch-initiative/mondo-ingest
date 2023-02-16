@@ -40,7 +40,6 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/fix_illegal_punning_omim.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
@@ -82,7 +81,6 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/rm_xref_by_prefix.ru \
@@ -111,7 +109,6 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | compone
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
@@ -126,7 +123,6 @@ $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
