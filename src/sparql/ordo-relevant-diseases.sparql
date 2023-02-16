@@ -14,7 +14,7 @@ SELECT DISTINCT ?term ?label ?deprecated
 WHERE {
   { 
     { 
-      VALUES ?ordo_roots {<http://www.orpha.net/ORDO/Orphanet_557493> <http://www.orpha.net/ORDO/Orphanet_557492> <http://www.orpha.net/ORDO/Orphanet_557494>}
+      VALUES ?ordo_roots {<http://www.orpha.net/ORDO/Orphanet_557493> <http://www.orpha.net/ORDO/Orphanet_557492> <http://www.orpha.net/ORDO/Orphanet_557494> <http://www.orpha.net/ORDO/Orphanet_C041>}
        ?s1 ?p1 ?term .
        ?term rdfs:subClassOf* ?ordo_roots .
      OPTIONAL {
@@ -26,7 +26,7 @@ WHERE {
     }
     UNION
     { 
-      VALUES ?ordo_roots {<http://www.orpha.net/ORDO/Orphanet_557493> <http://www.orpha.net/ORDO/Orphanet_557492> <http://www.orpha.net/ORDO/Orphanet_557494>}
+      VALUES ?ordo_roots {<http://www.orpha.net/ORDO/Orphanet_557493> <http://www.orpha.net/ORDO/Orphanet_557492> <http://www.orpha.net/ORDO/Orphanet_557494> <http://www.orpha.net/ORDO/Orphanet_C041>}
       ?term ?p2 ?o2 .
       ?term rdfs:subClassOf* ?ordo_roots .
       OPTIONAL {
