@@ -224,13 +224,23 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
 	--outpath $@
 
+# Exclusions: specific ontologies
+.PHONY: omim-intensional-exclusions-add-non-diseases
+omim-intensional-exclusions-add-non-diseases:
+	wget https://github.com/monarch-initiative/omim/releases/latest/download/mondo_non_disease_exclusions.tsv -O config/omim_non_disease_exclusions.tsv
+	python3 $(SCRIPTSDIR)/omim_intensional_exclusions_add_non_diseases.py \
+	  --intensional-exclusions-path config/omim_exclusions.tsv \
+	  --non-disease-exclusions-path config/omim_non_disease_exclusions.tsv
+	rm config/omim_non_disease_exclusions.tsv
+
+
 # Exclusions: all artefacts for single ontology
 exclusions-%:
 	$(MAKE) $(REPORTDIR)/$*_term_exclusions.txt
 	$(MAKE) $(REPORTDIR)/$*_exclusion_reasons.ttl
 	$(MAKE) $(REPORTDIR)/$*_excluded_terms_in_mondo_xrefs.tsv
 
-exclusions-all:
+exclusions-all: omim-intensional-exclusions-add-non-diseases
 	$(MAKE) $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
 
 # Exclusions: running for all ontologies
@@ -465,3 +475,23 @@ help:
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.\n"
 	@echo "mapped-deprecated-terms"
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"
+	@echo "reports/%_term_exclusions.txt"
+	@echo "A simple list of terms to exclude from integration into Mondo from the given ontology.\n"
+	@echo "reports/%_exclusion_reasons.robot.template.tsv"
+	@echo "A robot template of terms to exclude from integration into Mondo from the given ontology.\n"
+	@echo "reports/%_exclusion_reasons.ttl"
+	@echo "A list of terms to exclude from integration into Mondo from the given ontology, in TTL format.\n"
+	@echo "reports/%_excluded_terms_in_mondo_xrefs.tsv"
+	@echo "A list of terms excluded from integration in Mondo that still have xrefs in Mondo.\n"
+	@echo "exclusions-%"
+	@echo "Runs reports/%_term_exclusions.txt, reports/%_exclusion_reasons.ttl, and reports/%_excluded_terms_in_mondo_xrefs.tsv for a given ontology.\n"
+	@echo "reports/excluded_terms.ttl"
+	@echo "Runs reports/%_exclusion_reasons.ttl for all ontologies. and combines into a single file.\n"
+	@echo "reports/excluded_terms.txt"
+	@echo "Runs reports/%_term_exclusions.txt for all ontologies and combines into a single file.\n"
+	@echo "reports/exclusion_reasons.robot.template.tsv"
+	@echo "Runs reports/%_exclusion_reasons.robot.template.tsv for all ontologies and combines into a single file.\n"
+	@echo "omim-intensional-exclusions-add-non-diseases"
+	@echo "Adds non-disease terms to the intensional exclusion list for OMIM.\n"
+	@echo "exclusions-all"
+	@echo "Runs all exclusion artefacts for all ontologies.\n"
