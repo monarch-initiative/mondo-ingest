@@ -104,8 +104,12 @@ def run(input: str, config: str, rules: str, output: str):
 
     # msdf.prefix_map = sssom_yaml['curie_map']
     # msdf.metadata = sssom_yaml['global_metadata']
-    msdf.df[SUBJECT_ID] = msdf.df[SUBJECT_ID].apply(lambda x: iri_to_curie(x) if x.startswith('<http') else x)
-    msdf.df[OBJECT_ID] = msdf.df[OBJECT_ID].apply(lambda x: iri_to_curie(x) if x.startswith('<http') else x)
+    msdf.df[SUBJECT_ID] = msdf.df[SUBJECT_ID].apply(
+        lambda x: iri_to_curie(x) if x.startswith("<http") else x
+    )
+    msdf.df[OBJECT_ID] = msdf.df[OBJECT_ID].apply(
+        lambda x: iri_to_curie(x) if x.startswith("<http") else x
+    )
     msdf.df = filter_prefixes(
         df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID]
     )
@@ -129,7 +133,7 @@ def iri_to_curie(item):
     :return: CURIE
     """
     if item.startswith("<"):
-        item = item.strip('<').strip('>')
+        item = item.strip("<").strip(">")
 
     if is_iri(item):
         item = curie_from_iri(item) if curie_from_iri(item) else item
