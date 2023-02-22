@@ -1,5 +1,5 @@
 subject_id	predicate_id	object_id	object_label	subject_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
-ID	A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label								
+ID	>A oboInOwl:source	A oboInOwl:hasDbXref	>A sssom:object_label								
 MONDO:0000087	MONDO:equivalentTo	DOID:0080918	polymicrogyria	polymicrogyria	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	polymicrogyria	LEXMATCH
 MONDO:0000136	MONDO:equivalentTo	DOID:0080753	keratosis follicularis spinulosa decalvans	keratosis follicularis spinulosa decalvans	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	keratosis follicularis spinulosa decalvans	LEXMATCH
 MONDO:0000141	MONDO:equivalentTo	DOID:0080688	mosaic variegated aneuploidy syndrome	mosaic variegated aneuploidy syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	oio:hasDbXref	oio:hasDbXref	omimps:257300	LEXMATCH

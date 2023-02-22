@@ -1,5 +1,5 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
-ID		A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label							
+ID		>A oboInOwl:source	A oboInOwl:hasDbXref	>A sssom:object_label							
 MONDO:0000023	infantile liver failure	MONDO:equivalentTo	DOID:0080716	infantile liver failure syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	oio:hasDbXref	oio:hasDbXref	omimps:615438	LEXMATCH
 MONDO:0000088	precocious puberty	MONDO:equivalentTo	DOID:0112308	central precocious puberty	semapv:LexicalMatching	oaklib	0.9411764705882352	oio:hasDbXref	oio:hasDbXref	mesh:d011629	LEXMATCH
 MONDO:0000172	muscular dystrophy-dystroglycanopathy, type B	MONDO:equivalentTo	DOID:0112375	muscular dystrophy-dystroglycanopathy type B	semapv:LexicalMatching	oaklib	0.9411764705882352	oio:hasDbXref	oio:hasDbXref	omimps:613155	LEXMATCH

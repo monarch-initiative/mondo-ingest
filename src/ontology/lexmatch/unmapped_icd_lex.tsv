@@ -1,5 +1,5 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
-ID		A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label							
+ID		>A oboInOwl:source	A oboInOwl:hasDbXref	>A sssom:object_label							
 MONDO:0000078	acrocephalopolysyndactyly	MONDO:equivalentTo	ICD10CM:Q87.0	Congenital malformation syndromes predominantly affecting facial appearance	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	acrocephalopolysyndactyly	LEXMATCH
 MONDO:0000129	glutaric aciduria	MONDO:equivalentTo	ICD10CM:E72.3	Disorders of lysine and hydroxylysine metabolism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	glutaric aciduria	LEXMATCH
 MONDO:0000129	glutaric aciduria	MONDO:equivalentTo	ICD10CM:E72.3	Disorders of lysine and hydroxylysine metabolism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	glutaric aciduria	LEXMATCH
