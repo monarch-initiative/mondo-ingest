@@ -1,5 +1,5 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
-ID		A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label							
+ID		>A oboInOwl:source	A oboInOwl:hasDbXref	>A sssom:object_label							
 MONDO:0000376	respiratory system cancer	MONDO:equivalentTo	NCIT:C4571	Malignant Respiratory System Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant respiratory system neoplasm	LEXMATCH
 MONDO:0000426	autosomal dominant disease	MONDO:equivalentTo	NCIT:C98829	Autosomal Dominant Disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	autosomal dominant disorder	LEXMATCH
 MONDO:0000437	cerebellar ataxia	MONDO:equivalentTo	NCIT:C26702	Ataxia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	ataxia	LEXMATCH

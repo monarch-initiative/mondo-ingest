@@ -1,5 +1,5 @@
 subject_id	predicate_id	object_id	object_label	subject_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
-ID	A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label								
+ID	>A oboInOwl:source	A oboInOwl:hasDbXref	>A sssom:object_label								
 MONDO:0000022	MONDO:equivalentTo	ICD10CM:N39.44	Nocturnal enuresis	nocturnal enuresis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nocturnal enuresis	LEXMATCH
 MONDO:0000190	MONDO:equivalentTo	ICD10CM:I49.01	Ventricular fibrillation	ventricular fibrillation	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ventricular fibrillation	LEXMATCH
 MONDO:0000397	MONDO:equivalentTo	ICD10CM:G80.4	Ataxic cerebral palsy	ataxic cerebral palsy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ataxic cerebral palsy	LEXMATCH

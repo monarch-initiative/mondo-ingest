@@ -1,5 +1,5 @@
 subject_id	predicate_id	object_id	object_label	subject_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
-ID	A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label								
+ID	>A oboInOwl:source	A oboInOwl:hasDbXref	>A sssom:object_label								
 MONDO:0000159	MONDO:equivalentTo	NCIT:C165614	Bone Marrow Failure Syndrome	bone marrow failure syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	bone marrow failure syndrome	LEXMATCH
 MONDO:0000541	MONDO:equivalentTo	NCIT:C181158	Jejunal Adenocarcinoma	jejunal adenocarcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	jejunal adenocarcinoma	LEXMATCH
 MONDO:0000543	MONDO:equivalentTo	NCIT:C178441	Ovarian Melanoma	ovarian melanoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ovarian melanoma	LEXMATCH
