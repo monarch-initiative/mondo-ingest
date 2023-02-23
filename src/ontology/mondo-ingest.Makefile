@@ -29,7 +29,8 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 
 # This section is concerned with transforming the incoming sources into the
 # Monarch Ingest schema.
-# https://github.com/monarch-initiative/omim/issues/60
+# Illegal punning on some properties #60: https://github.com/monarch-initiative/omim/issues/60
+# todo: what does this have to do with #60 exactly? Does it address it? can that issue be closed?
 $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
@@ -181,7 +182,7 @@ unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_st
 
 $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.db
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
-	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
+	--select-intensional-exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
 	--db-path $(COMPONENTSDIR)/$*.db \
@@ -203,8 +204,8 @@ update-jinja-sparql-queries:
 #################
 # Exclusions: by ontology
 $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml
-	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py \
-	--exclusions-path config/$*_exclusions.tsv \
+	python3 $(SCRIPTSDIR)/exclusion_table_creation.py \
+	--select-intensional-exclusions-path config/$*_exclusions.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
 	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
 	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
@@ -223,16 +224,6 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
 	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
 	--outpath $@
-
-# Exclusions: specific ontologies
-.PHONY: omim-intensional-exclusions-add-non-diseases
-omim-intensional-exclusions-add-non-diseases:
-	wget https://github.com/monarch-initiative/omim/releases/latest/download/mondo_non_disease_exclusions.tsv -O config/omim_non_disease_exclusions.tsv
-	python3 $(SCRIPTSDIR)/omim_intensional_exclusions_add_non_diseases.py \
-	  --intensional-exclusions-path config/omim_exclusions.tsv \
-	  --non-disease-exclusions-path config/omim_non_disease_exclusions.tsv
-	rm config/omim_non_disease_exclusions.tsv
-
 
 # Exclusions: all artefacts for single ontology
 exclusions-%:
@@ -491,7 +482,5 @@ help:
 	@echo "Runs reports/%_term_exclusions.txt for all ontologies and combines into a single file.\n"
 	@echo "reports/exclusion_reasons.robot.template.tsv"
 	@echo "Runs reports/%_exclusion_reasons.robot.template.tsv for all ontologies and combines into a single file.\n"
-	@echo "omim-intensional-exclusions-add-non-diseases"
-	@echo "Adds non-disease terms to the intensional exclusion list for OMIM.\n"
 	@echo "exclusions-all"
 	@echo "Runs all exclusion artefacts for all ontologies.\n"

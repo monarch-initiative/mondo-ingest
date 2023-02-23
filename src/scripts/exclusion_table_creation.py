@@ -1,4 +1,5 @@
-"""Takes in the full ontology and the exclusions tsv and extracts a simple list of terms from it.
+"""Creates full, extensional exclusion tables
+
 Outputs two files:
 1. a simple list of terms (config/ONTO_NAME_term_exclusions.txt)
 2. a simple two column file with the term_id and the exclusion reason
@@ -16,6 +17,7 @@ TODO's
   - todo: later: see below: #x4: SPARQL to OAK. (SqliteImpl() is faster than SparqlWrapper (which uses rdflib)
   - todo: later: QA: possible conflicts in icd10cm_exclusions.tsv: Add a check to raise an error in event of a parent
      class having `True` for `exclude_children`, but the child class has `False`.
+  - todo: refactor to use curies package instead of uri_to_curie() func
 """
 import os
 import subprocess
@@ -48,6 +50,7 @@ CONFIG_DIR = os.path.join(ONTOLOGY_DIR, 'config')
 SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 SPARQL_CHILD_INCLUSION_PATH = os.path.join(SPARQL_DIR, 'get-terms-children.sparql.jinja2')
 SPARQL_TERM_REGEX_PATH = os.path.join(SPARQL_DIR, 'get-terms-by-regex.sparql.jinja2')
+SPARQL_MONDO_EXCLUDES_PATH = os.path.join(SPARQL_DIR, 'mondo-exclusionReason.sparql')
 
 
 # Functions
@@ -138,10 +141,54 @@ def sparql_jinja2_robot_query(
 
     return df
 
+# todo: have jinja func call this one cuz shared logic? (probably not worth because eventually OAK)
+def sparql_robot_query(
+    sparql_path: str, onto_path: str, use_cache=CONFIG['use_cache']
+) -> pd.DataFrame:
+    """Query ontology using SPARQL query file
+    cache_suffix: Caches are named using the input ontology and SPARQL files. However, it can be the case that
+      there are two different queries which use these same files, but have other differences. This param is used
+      to distinguish between such cases.
+    """
+    # Basic vars
+    sparql_filename = os.path.basename(sparql_path)
+    onto_filename = os.path.basename(onto_path)
+    results_dirname = onto_filename.replace('/', '-').replace('.', '-') + \
+        '__' + sparql_filename.replace('.', '-')
+    results_dirpath = os.path.join(CACHE_DIR, 'robot', results_dirname)
+    results_filename = 'results.csv'
+    command_save_filename = 'command.sh'
+    results_path = os.path.join(results_dirpath, results_filename)
+    command_save_path = os.path.join(results_dirpath, command_save_filename)
+    command_str = f'robot query --input {onto_path} --query {sparql_path} {results_path}'
+
+    # Cache and run
+    os.makedirs(results_dirpath, exist_ok=True)
+    if not (os.path.exists(results_path) and use_cache):
+        with open(command_save_path, 'w') as f:
+            f.write(command_str)
+        result = subprocess.run(command_str.split(), capture_output=True, text=True)
+        stderr, stdout = result.stderr, result.stdout
+        if stderr:
+            raise RuntimeError(stderr)
+        elif stdout and 'error' in stdout or 'ERROR' in stdout:
+            raise RuntimeError(stdout)
+
+    # Read results and return
+    try:
+        df = pd.read_csv(results_path).fillna('')
+    except pd.errors.EmptyDataError:
+        # remove: so that it doesn't read this from cache, though it could be that there were really no results.
+        os.remove(results_path)
+        # could also do `except pd.errors.EmptyDataError as err`, `raise err` or give option for this as a param to func
+        df = pd.DataFrame()  # could also return None
+
+    return df
+
 
 def expand_ontological_exclusions(
     onto_path: str, exclusions_df: pd.DataFrame, prefix_map: Dict[str, str], cache_suffix: str = None,
-    export_fields=['term_id', 'exclusion_reason'], uri_fields=['term_id', 'child_id']
+    export_fields=['term_id', 'exclusion_reason'], uri_fields=['term_id', 'child_id'], use_cache: bool = CONFIG['use_cache']
 ) -> pd.DataFrame:
     """Using an ontology file and an exclusions file, query and get return an extensional list of exclusions.
     cache_suffix: Used by and explained in sparql_jinja2_robot_query()."""
@@ -154,11 +201,8 @@ def expand_ontological_exclusions(
     if len(df_kids1) > 0:
         terms_kids1: List[str] = list(set(df_kids1['term_id']))  # QA: set() removes any duplicates
         df_kids1_results_1st: pd.DataFrame = sparql_jinja2_robot_query(
-            prefixes=prefix_sparql_strings,
-            terms=terms_kids1,
-            query_template_path=SPARQL_CHILD_INCLUSION_PATH,
-            onto_path=onto_path,
-            cache_suffix=cache_suffix)
+            prefixes=prefix_sparql_strings, terms=terms_kids1, query_template_path=SPARQL_CHILD_INCLUSION_PATH,
+            onto_path=onto_path, use_cache=use_cache, cache_suffix=cache_suffix)
 
         # Massage results
         # # Convert URI back to prefix
@@ -204,7 +248,7 @@ def read_and_format_signature_file(path: str, prefix_map: Dict[str, str], return
 
 
 def get_non_inclusions(
-    mirror_signature_path: str, component_signature_path: str, prefix_map: Dict[str, str]
+    mirror_signature_path: str, component_signature_path: str, prefix_map: Dict[str, str],
 ) -> pd.DataFrame:
     """Get non-inclusions. """
     mirror_set = read_and_format_signature_file(mirror_signature_path, prefix_map, return_type='set')
@@ -216,7 +260,7 @@ def get_non_inclusions(
 
 
 def expand_intensional_exclusions(
-    onto_path: str, exclusions_path: str, prefix_map: Dict[str, str],
+    onto_path: str, exclusions_path: str, prefix_map: Dict[str, str], use_cache: bool = CONFIG['use_cache']
 ) -> pd.DataFrame:
     """Expand intensional exclusions"""
     # Vars
@@ -235,7 +279,7 @@ def expand_intensional_exclusions(
     # Query 1: on explicit term_id
     if len(df_explicit) > 0:
         df_explicit_results = expand_ontological_exclusions(
-            onto_path=onto_path, exclusions_df=df_explicit, prefix_map=prefix_map,
+            onto_path=onto_path, exclusions_df=df_explicit, prefix_map=prefix_map, use_cache=use_cache,
             cache_suffix='1')
 
     # Query 2: on regex pattern
@@ -247,10 +291,8 @@ def expand_intensional_exclusions(
     for index, row in df_regex.iterrows():
         regex_pattern = row['term_label'].replace(CONFIG['regex_prefix'], '')
         search_result_df: pd.DataFrame = sparql_jinja2_robot_query(
-            onto_path=onto_path,
-            query_template_path=SPARQL_TERM_REGEX_PATH,
-            regexp=regex_pattern,
-            cache_suffix=f'r{str(index)}')
+            onto_path=onto_path, query_template_path=SPARQL_TERM_REGEX_PATH, regexp=regex_pattern,
+            use_cache=use_cache, cache_suffix=f'r{str(index)}')
         if len(search_result_df) > 0:
             search_result_df['term_id'] = search_result_df['term_id'].apply(uri_to_curie, prefix_map=prefix_map)
             for fld in exclusion_fields:
@@ -276,23 +318,34 @@ def expand_intensional_exclusions(
     return df_results
 
 
-def run(
-    onto_path: str, exclusions_path: str, mirror_signature_path: str, component_signature_path: str,
-    config_path: str, outpath_txt: str, outpath_robot_template_tsv: str, save=CONFIG['save']
+def exclusion_table_creation(
+    onto_path: str, select_intensional_exclusions_path: str, mirror_signature_path: str, component_signature_path: str,
+    config_path: str, outpath_txt: str, outpath_robot_template_tsv: str, use_cache: bool = CONFIG['use_cache'],
+    save: bool = CONFIG['save']
 ) -> Union[Dict[str, pd.DataFrame], None]:
     """Run"""
     # Prefixes
     with open(config_path, 'r') as stream:
-        onto_config = yaml.safe_load(stream)
-    prefix_uri_map = onto_config['prefix_map']
+        onto_config: Dict = yaml.safe_load(stream)
+        prefix_uri_map: Dict = onto_config['prefix_map']
+    prefix_uri_map |= {'MONDO': 'http://purl.obolibrary.org/obo/MONDO_'}  # 'MONDO' for exclusion reasons
 
-    # Get excluded terms
+    # Get exclusions
+    # - Get intensional exclusions and expand them
     expanded_intensional_exclusions_df = expand_intensional_exclusions(
-        onto_path=onto_path, exclusions_path=exclusions_path, prefix_map=prefix_uri_map)
+        onto_path=onto_path, exclusions_path=select_intensional_exclusions_path, prefix_map=prefix_uri_map,
+        use_cache=use_cache)
+    # - Get non-inclusions
     non_inclusions_df = get_non_inclusions(
         mirror_signature_path=mirror_signature_path, component_signature_path=component_signature_path,
         prefix_map=prefix_uri_map)
-    df_results = pd.concat([expanded_intensional_exclusions_df, non_inclusions_df])
+    # - Get by triples with MONDO:exclusionReason predicate
+    exclusions_from_onto_df = sparql_robot_query(SPARQL_MONDO_EXCLUDES_PATH, onto_path, use_cache=use_cache)
+    for col in list(exclusions_from_onto_df.columns):
+        exclusions_from_onto_df[col] = exclusions_from_onto_df[col].apply(uri_to_curie, prefix_map=prefix_uri_map)
+
+    # Combine various exclusion methods
+    df_results = pd.concat([expanded_intensional_exclusions_df, non_inclusions_df, exclusions_from_onto_df])
     if len(df_results) == 0:
         df_results = pd.DataFrame()
         df_results['term_id'] = ''
@@ -303,9 +356,12 @@ def run(
     df_results = df_results[df_results['prefix'].isin(owned_prefixes)]
     df_results.drop('prefix', inplace=True, axis=1)
 
+    # Dedupe
+    df_results = df_results.drop_duplicates()
+
     # Sort
     if len(df_results) > 0:
-        df_results = df_results.sort_values(['term_id', 'exclusion_reason'])
+        df_results = df_results.sort_values(['exclusion_reason', 'term_id'])
 
     # Add simplified version
     # - df_results_simple: Simpler dataframe which is easier to use downstream for other purposes
@@ -345,26 +401,32 @@ def cli_validate(d: Dict) -> Dict:
     return d
 
 
-def cli_get_parser() -> ArgumentParser:
-    """Add required fields to parser."""
+def cli() -> Dict[str, pd.DataFrame]:
+    """Command line interface."""
     package_description = \
         'Takes in a full ontology and an exclusions TSV and extracts a simple list of terms.\n'\
         'Outputs two files:\n'\
         '1. a simple list of terms (e.g. ONTO_NAME_term_exclusions.txt)\n'\
         '2. a simple two column file with the term_id and the exclusion reason (e.g. ' \
         'ONTO_NAME_exclusion_reasons.robot.template.tsv)\n'
-    parser = ArgumentParser(description=package_description)
+    parser = ArgumentParser(prog='Create full exclusion table', description=package_description)
 
     parser.add_argument(
-        '-o', '--onto-path', required=True, help='Path to the ontology file to query.')
+        '-o', '--onto-path', required=True,
+        help='Path to the ontology file to query. Used for looking up labels, but can also be used to look up terms '
+             'with the predicate MONDO:exclusionReason, and will add those directly to be excluded.')
     parser.add_argument(
         '-c', '--config-path', required=True,
         help='Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
              'list of prefixes owned by the ontology. Used to filter out terms, as well as `prefix_map`, which contains'
              ' all prefixes and is used for querying.')
     parser.add_argument(
-        '-e', '--exclusions-path', required=True,
-        help='Path to a TSV which should have the following fields: `term_id` (str), `term_label` (str), '
+        '-e', '--select-intensional-exclusions-path', required=True,
+        help='Path to a TSV which contains selected intensional exclusion patterns, such as references to specific '
+             'terms or regular expressions. This has intensional exclusions to be expanded, but may not be fully '
+             'sufficient to create the full list of exlcusions. For example, some terms containing the predicate '
+             'MONDO:exclusionReason may be added directly when parsing the ontology, even if they don\'t appear in '
+             'this intensional table. Should have the following fields: `term_id` (str), `term_label` (str), '
              '`exclusion_reason` (str), and `exclude_children` (bool).')
     parser.add_argument(
         '-m', '--mirror-signature-path', required=True,
@@ -381,17 +443,11 @@ def cli_get_parser() -> ArgumentParser:
     parser.add_argument(
         '-or', '--outpath-robot-template-tsv', required=True,
         help='Path to create ONTO_NAME_exclusion_reasons.robot.template.tsv.')
-
-    return parser
-
-
-def cli() -> Dict[str, pd.DataFrame]:
-    """Command line interface."""
-    parser = cli_get_parser()
-    kwargs = parser.parse_args()
-    kwargs_dict: Dict = vars(kwargs)
-    kwargs_dict = cli_validate(kwargs_dict)
-    return run(**kwargs_dict)
+    parser.add_argument(
+        '-C', '--use-cache', required=False, action='store_true', help='Cache intermediates, and use cache if exists?')
+    d: Dict = vars(parser.parse_args())
+    d = cli_validate(d)
+    return exclusion_table_creation(**d)
 
 
 # Execution

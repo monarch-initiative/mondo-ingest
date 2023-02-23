@@ -39,5 +39,4 @@ These workflows will help with excluding certain terms from integration into Mon
 5. `reports/excluded_terms.ttl`: Runs reports/%_exclusion_reasons.ttl for all ontologies. and combines into a single file.
 6. `reports/excluded_terms.txt`: Runs reports/%_term_exclusions.txt for all ontologies and combines into a single file.
 7. `reports/exclusion_reasons.robot.template.tsv`: Runs reports/%_exclusion_reasons.robot.template.tsv for all ontologies and combines into a single file.
-8. 	`omim-intensional-exclusions-add-non-diseases`: Adds non-disease terms to the intensional exclusion list for OMIM.
-9. `exclusions-all`: Runs all exclusion artefacts for all ontologies.
+8. `exclusions-all`: Runs all exclusion artefacts for all ontologies.
