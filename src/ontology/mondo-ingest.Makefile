@@ -29,7 +29,8 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 
 # This section is concerned with transforming the incoming sources into the
 # Monarch Ingest schema.
-# https://github.com/monarch-initiative/omim/issues/60
+# Illegal punning on some properties #60: https://github.com/monarch-initiative/omim/issues/60
+# todo: what does this have to do with #60 exactly? Does it address it? can that issue be closed?
 $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
@@ -181,7 +182,7 @@ unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_st
 
 $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.db
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
-	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
+	--select-intensional-exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
 	--db-path $(COMPONENTSDIR)/$*.db \
@@ -203,8 +204,8 @@ update-jinja-sparql-queries:
 #################
 # Exclusions: by ontology
 $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml
-	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py \
-	--exclusions-path config/$*_exclusions.tsv \
+	python3 $(SCRIPTSDIR)/exclusion_table_creation.py \
+	--select-intensional-exclusions-path config/$*_exclusions.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
 	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
 	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
@@ -230,7 +231,7 @@ exclusions-%:
 	$(MAKE) $(REPORTDIR)/$*_exclusion_reasons.ttl
 	$(MAKE) $(REPORTDIR)/$*_excluded_terms_in_mondo_xrefs.tsv
 
-exclusions-all:
+exclusions-all: omim-intensional-exclusions-add-non-diseases
 	$(MAKE) $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
 
 # Exclusions: running for all ontologies
@@ -465,3 +466,21 @@ help:
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.\n"
 	@echo "mapped-deprecated-terms"
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"
+	@echo "reports/%_term_exclusions.txt"
+	@echo "A simple list of terms to exclude from integration into Mondo from the given ontology.\n"
+	@echo "reports/%_exclusion_reasons.robot.template.tsv"
+	@echo "A robot template of terms to exclude from integration into Mondo from the given ontology.\n"
+	@echo "reports/%_exclusion_reasons.ttl"
+	@echo "A list of terms to exclude from integration into Mondo from the given ontology, in TTL format.\n"
+	@echo "reports/%_excluded_terms_in_mondo_xrefs.tsv"
+	@echo "A list of terms excluded from integration in Mondo that still have xrefs in Mondo.\n"
+	@echo "exclusions-%"
+	@echo "Runs reports/%_term_exclusions.txt, reports/%_exclusion_reasons.ttl, and reports/%_excluded_terms_in_mondo_xrefs.tsv for a given ontology.\n"
+	@echo "reports/excluded_terms.ttl"
+	@echo "Runs reports/%_exclusion_reasons.ttl for all ontologies. and combines into a single file.\n"
+	@echo "reports/excluded_terms.txt"
+	@echo "Runs reports/%_term_exclusions.txt for all ontologies and combines into a single file.\n"
+	@echo "reports/exclusion_reasons.robot.template.tsv"
+	@echo "Runs reports/%_exclusion_reasons.robot.template.tsv for all ontologies and combines into a single file.\n"
+	@echo "exclusions-all"
+	@echo "Runs all exclusion artefacts for all ontologies.\n"
