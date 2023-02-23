@@ -55,9 +55,10 @@ def slurp(
 
     # Get map of native IDs to existing slurp mondo IDs
     slurp_id_map: Dict[str, str] = {}
-    this_slurp_df = pd.read_csv(outpath, sep='\t')
-    for i, row in this_slurp_df[1:].iterrows():  # skip first row because it's a `robot` template sub-header
-        slurp_id_map[row['xref']] = row['mondo_id']
+    if os.path.exists(outpath):
+        this_slurp_df = pd.read_csv(outpath, sep='\t')
+        for i, row in this_slurp_df[1:].iterrows():  # skip first row because it's a `robot` template sub-header
+            slurp_id_map[row['xref']] = row['mondo_id']
 
     # mondo_term_ids: If I remember correctly, rationale is to avoid edge case where mondo IDs exist above min_id
     # todo: I think `mondo_term_ids` is now redundant with `slurp_id_map` usage and can probably now be deleted
