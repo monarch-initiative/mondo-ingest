@@ -143,8 +143,8 @@ def iri_to_curie(item):
 
     if item.startswith("obo:orphanet.ordo_"):
         item = item.replace("obo:orphanet.ordo_", "ORDO:")
-    elif item.startswith("omim"):
-        item = item.replace("omim", "OMIM")
+    elif item.startswith("obo:OMIM"):
+        item = item.replace("obo:OMIM_", "OMIM:")
 
     return item
 
