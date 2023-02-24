@@ -104,12 +104,13 @@ def run(input: str, config: str, rules: str, output: str):
 
     # msdf.prefix_map = sssom_yaml['curie_map']
     # msdf.metadata = sssom_yaml['global_metadata']
-    msdf.df[SUBJECT_ID] = msdf.df[SUBJECT_ID].apply(
-        lambda x: iri_to_curie(x) if x.startswith("<http") else x
-    )
-    msdf.df[OBJECT_ID] = msdf.df[OBJECT_ID].apply(
-        lambda x: iri_to_curie(x) if x.startswith("<http") else x
-    )
+    #! The block below converts IRI into CURIE using bioregistry.
+    # msdf.df[SUBJECT_ID] = msdf.df[SUBJECT_ID].apply(
+    #     lambda x: iri_to_curie(x) if x.startswith("<http") else x
+    # )
+    # msdf.df[OBJECT_ID] = msdf.df[OBJECT_ID].apply(
+    #     lambda x: iri_to_curie(x) if x.startswith("<http") else x
+    # )
     msdf.df = filter_prefixes(
         df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID]
     )
@@ -141,10 +142,10 @@ def iri_to_curie(item):
         if not is_curie(item):
             logging.warning(f"{item} is neither s CURIE nor an IRI.")
 
-    if item.startswith("obo:orphanet.ordo_"):
-        item = item.replace("obo:orphanet.ordo_", "ORDO:")
-    elif item.startswith("obo:OMIM"):
-        item = item.replace("obo:OMIM_", "OMIM:")
+    # if item.startswith("obo:orphanet.ordo_"):
+    #     item = item.replace("obo:orphanet.ordo_", "Orphanet:")
+    # elif item.startswith("obo:OMIM"):
+    #     item = item.replace("obo:OMIM_", "OMIM:")
 
     return item
 
