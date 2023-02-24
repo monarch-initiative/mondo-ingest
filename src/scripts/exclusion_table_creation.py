@@ -366,6 +366,7 @@ def exclusion_table_creation(
     # Add simplified version
     # - df_results_simple: Simpler dataframe which is easier to use downstream for other purposes
     df_results_simple = pd.DataFrame(set(df_results['term_id']))
+    df_results_simple = df_results_simple.sort_values([0])
     # - df_results: Add special meta rows
     df_added_row = pd.DataFrame([{'term_id': 'ID', 'exclusion_reason': 'AI MONDOREL:has_exclusion_reason'}])
     df_results = pd.concat([df_added_row, df_results])
