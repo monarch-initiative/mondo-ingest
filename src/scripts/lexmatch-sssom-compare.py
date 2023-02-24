@@ -330,7 +330,6 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
         "subject_id": ["ID"],
         "predicate_id": [">A oboInOwl:source"],
         "object_id": ["A oboInOwl:hasDbXref"],
-        "object_label": [">A sssom:object_label"],
     }
     column_seq = unmapped_exact.columns
     unmapped_exact = pd.concat(
