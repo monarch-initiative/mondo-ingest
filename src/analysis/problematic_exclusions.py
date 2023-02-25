@@ -165,7 +165,7 @@ def populate_labels(
     return df_joined
 
 
-def run(
+def problematic_exclusions(
     onto_path: str, onto_config_path: str, component_signature_path: str, mirror_signature_path: str,
     mondo_mappings_path: str, outpath: str, save=CONFIG['save']
 ) -> Dict[str, pd.DataFrame]:
@@ -280,7 +280,7 @@ def cli() -> Dict[str, pd.DataFrame]:
         '-o', '--outpath', required=True,
         help='Path for output file for list of excluded terms that have cross-references in Mondo.')
     d: Dict = vars(parser.parse_args())
-    return run(**d)
+    return problematic_exclusions(**d)
 
 
 # Execution
