@@ -331,10 +331,14 @@ reports/mirror_signature-%.tsv: component-download-%.owl $(COMPONENTSDIR)/%.db m
         python3 $(SCRIPTSDIR)/mirror_signature_via_oak.py --db-path $(COMPONENTSDIR)/$*.db --onto-config-path metadata/$*.yml --outpath $@;\
 	 else\
         $(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@;\
+        (head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp;\
+        mv $@-temp $@;\
     fi
 
 reports/component_signature-%.tsv: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
+	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
+	mv $@-temp $@
 
 ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror_signature-$(n).tsv)
