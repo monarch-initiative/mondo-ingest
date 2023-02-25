@@ -43,7 +43,7 @@ def mirror_signature_via_oak(db_path: str, onto_config_path: str, outpath: str) 
     uris_owned: List[URI] = [converter.expand(curie) for curie in curies_owned]
 
     # Save
-    df = pd.DataFrame({'?term': uris_owned})
+    df = pd.DataFrame({'?term': uris_owned}).sort_values('?term')
     df.to_csv(outpath, sep='\t', index=False)
 
     return df
