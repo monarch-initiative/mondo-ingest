@@ -112,9 +112,10 @@ def cli():
         '-s', '--mondo-mappings-path', required=True,
         help='Path to file containing all known Mondo mappings, in SSSOM format.')
     parser.add_argument(
-        '-m', '--min-id', required=True,
+        '-m', '--min-id', required=False,
         help='The Mondo ID from which we want to begin to possibly allow for assignment of new Mondo IDs for any'
-             ' unslurped terms.')
+             ' unslurped terms. Only necessary if no slurp/%.tsv\'s exist. Otherwise, will be ignored, and the min-id '
+             'will be determined based on the highest ID assigned in the slurp/%.tsv\'s.')
     parser.add_argument(
         '-M', '--max-id', required=True,
         help='The max Mondo ID we should ever assign for any unslurped terms.')
