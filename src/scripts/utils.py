@@ -183,7 +183,7 @@ def _get_next_available_mondo_id(min_id: int, max_id: int, mondo_ids: Set[int]) 
     return next_id, mondo_ids
 
 
-def get_mondo_term_ids(mondo_terms_path: str, slurp_dir_path: str) -> Set[int]:
+def get_mondo_term_ids(mondo_terms_path: str, slurp_id_map: Dict[str, str]) -> Set[int]:
     """From path to file of mondo terms, get set of Mondo IDs as integers.
     # todo: Consider using `curie_list` package, though needing another prefix_map only for this seems even less optimal
     """
@@ -191,23 +191,18 @@ def get_mondo_term_ids(mondo_terms_path: str, slurp_dir_path: str) -> Set[int]:
     mondo_base_uri = 'http://purl.obolibrary.org/obo/MONDO_'
     mondo_termlist_df = pd.read_csv(mondo_terms_path, comment='#', sep='\t')
     mondo_term_uris: List[str] = list(mondo_termlist_df['?term'])
-    mondo_ids: List[int] = []
+    existing_mondo_ids: Set[int] = set()
     for x in mondo_term_uris:
         x = x[1:] if x.startswith('<') else x
         x = x[:-1] if x.endswith('>') else x
         if not x.startswith(mondo_base_uri):
             continue
-        mondo_ids.append(int(x.replace('http://purl.obolibrary.org/obo/MONDO_', '')))
+        existing_mondo_ids.add(int(x.replace('http://purl.obolibrary.org/obo/MONDO_', '')))
 
     # Get interim slurp-assigned Mondo IDs
-    paths = glob(os.path.join(slurp_dir_path, '*.tsv'))
-    for path in paths:
-        df = pd.read_csv(path, sep='\t', comment='#')
-        ids = list(df['mondo_id'][1:])
-        mondo_ids += ids
-        print()
+    slurp_ids: Set[int] = set([int(x.split(':')[1]) for x in slurp_id_map.values()])
 
-    return set(mondo_ids)
+    return existing_mondo_ids.update(slurp_ids)
 
 
 # todo: Improvement. Currently, we're returning 'owned terms', which are defined as all the terms that are listed and have the proper prefix.

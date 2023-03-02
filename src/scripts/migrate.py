@@ -12,6 +12,7 @@ Resources
 TODO's (major):
   -
 """
+import os
 from argparse import ArgumentParser
 from typing import Dict, List, Set, Union
 
@@ -30,8 +31,8 @@ ROBOT_TEMPLATE_HEADER = {
 
 
 def slurp(
-    ontology_path: str, onto_config_path: str, onto_exclusions_path: str, mondo_mappings_path: str, min_id: int, max_id: int,
-    mondo_terms_path: str, slurp_dir_path: str, outpath: str, use_cache=False
+    ontology_path: str, onto_config_path: str, onto_exclusions_path: str, mondo_mappings_path: str, max_id: int,
+    mondo_terms_path: str, slurp_dir_path: str, outpath: str, min_id: int = 0, use_cache=False
 ) -> pd.DataFrame:
     """Run slurp pipeline for given ontology
     todo: Speed: tried on an older computer and it was indeed too slow. Has to do w/ term class / utils, probably.
@@ -43,7 +44,24 @@ def slurp(
         owned_prefix_map: Dict[PREFIX, URI] = onto_config['base_prefix_map']
     sssom_df: pd.DataFrame = pd.read_csv(mondo_mappings_path, comment='#', sep='\t')
     excluded_terms: Set[CURIE] = get_excluded_terms(onto_exclusions_path)
-    mondo_term_ids: Set[int] = get_mondo_term_ids(mondo_terms_path, slurp_dir_path)
+
+    # Get next_mondo_id
+    next_mondo_id = min_id
+    slurp_files = [x for x in os.listdir(slurp_dir_path) if x.endswith('.tsv')]
+    for f in slurp_files:
+        slurp_df = pd.read_csv(os.path.join(slurp_dir_path, f), sep='\t')
+        slurp_ids = [int(x.split(':')[1]) for x in list(slurp_df['mondo_id'])[1:]]
+        next_mondo_id = max(next_mondo_id, max(slurp_ids) + 1)
+
+    # Get map of native IDs to existing slurp mondo IDs
+    slurp_id_map: Dict[str, str] = {}
+    this_slurp_df = pd.read_csv(outpath, sep='\t')
+    for i, row in this_slurp_df[1:].iterrows():  # skip first row because it's a `robot` template sub-header
+        slurp_id_map[row['xref']] = row['mondo_id']
+
+    # mondo_term_ids: If I remember correctly, rationale is to avoid edge case where mondo IDs exist above min_id
+    # todo: I think `mondo_term_ids` is now redundant with `slurp_id_map` usage and can probably now be deleted
+    mondo_term_ids: Set[int] = get_mondo_term_ids(mondo_terms_path, slurp_id_map)
 
     # Intermediates
     owned_terms: List[Term] = _get_all_owned_terms(
@@ -57,7 +75,6 @@ def slurp(
     # Determine slurpable terms
     # - Slurpable term: A term for which all parents are already slurped. In other words, no parent is owned by the
     # ontology but unmapped in Mondo.
-    next_mondo_id = min_id
     terms_to_slurp: List[Dict[str, str]] = []
     for t in slurp_candidates:
         # If all T.parents mapped, and 1+ is an exact or narrow match and non obsolete, designate T for slurping
@@ -73,8 +90,11 @@ def slurp(
             if parent_curie not in sssom_object_ids and parent_curie in owned_term_curies:
                 break
         if qualified_parent_mondo_ids:
-            next_mondo_id, mondo_term_ids = _get_next_available_mondo_id(next_mondo_id, max_id, mondo_term_ids)
-            mondo_id = 'MONDO:' + str(next_mondo_id).zfill(7)  # leading 0-padding
+            if t.curie in slurp_id_map:
+                mondo_id = slurp_id_map[t.curie]
+            else:
+                next_mondo_id, mondo_term_ids = _get_next_available_mondo_id(next_mondo_id, max_id, mondo_term_ids)
+                mondo_id = 'MONDO:' + str(next_mondo_id).zfill(7)  # leading 0-padding
             mondo_label = t.label.lower() if t.label else ''
             terms_to_slurp.append({
                 'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
