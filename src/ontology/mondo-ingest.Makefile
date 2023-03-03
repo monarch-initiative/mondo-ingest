@@ -417,7 +417,7 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_ter
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
 	--onto-exclusions-path reports/$*_term_exclusions.txt \
-	--min-id 850000 \
+	--min-id 850056 \
 	--max-id 999999 \
 	--mondo-terms-path $(REPORTDIR)/mirror_signature-mondo.tsv \
 	--slurp-dir-path slurp/ \
