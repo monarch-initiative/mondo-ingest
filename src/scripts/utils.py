@@ -191,18 +191,19 @@ def get_mondo_term_ids(mondo_terms_path: str, slurp_id_map: Dict[str, str]) -> S
     mondo_base_uri = 'http://purl.obolibrary.org/obo/MONDO_'
     mondo_termlist_df = pd.read_csv(mondo_terms_path, comment='#', sep='\t')
     mondo_term_uris: List[str] = list(mondo_termlist_df['?term'])
-    existing_mondo_ids: Set[int] = set()
+    existing_ids: Set[int] = set()
     for x in mondo_term_uris:
         x = x[1:] if x.startswith('<') else x
         x = x[:-1] if x.endswith('>') else x
         if not x.startswith(mondo_base_uri):
             continue
-        existing_mondo_ids.add(int(x.replace('http://purl.obolibrary.org/obo/MONDO_', '')))
+        existing_ids.add(int(x.replace('http://purl.obolibrary.org/obo/MONDO_', '')))
 
     # Get interim slurp-assigned Mondo IDs
     slurp_ids: Set[int] = set([int(x.split(':')[1]) for x in slurp_id_map.values()])
+    existing_ids.update(slurp_ids)
 
-    return existing_mondo_ids.update(slurp_ids)
+    return existing_ids
 
 
 # todo: Improvement. Currently, we're returning 'owned terms', which are defined as all the terms that are listed and have the proper prefix.
