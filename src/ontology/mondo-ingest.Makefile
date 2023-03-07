@@ -7,7 +7,10 @@ report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries exclusi
 ####################################
 ### Standard constants #############
 ####################################
+
 MAPPINGSDIR=../mappings
+SKIP_HUGE=false
+
 ####################################
 ### Relevant signature #############
 ####################################
