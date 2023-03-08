@@ -2,7 +2,7 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/icd10who.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2023-01-21/icd10who.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2023-03-07/icd10who.owl
 
 ### Entities and axioms
 
@@ -21,7 +21,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Expressivity | AL |
+| Expressivity |  |
 | OWL2 | True |
 | OWL2 DL | True |
 | OWL2 EL | True |

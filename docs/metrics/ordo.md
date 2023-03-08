@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ordo.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2023-01-21/ordo.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2023-03-07/ordo.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
-| Annotation properties | 7 |
-| Axioms | 133498 |
-| Logical axioms | 40547 |
-| Classes | 13365 |
+| Annotation properties | 8 |
+| Axioms | 140852 |
+| Logical axioms | 41964 |
+| Classes | 14783 |
 | Object properties | 3 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -21,7 +21,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Expressivity | ALE |
+| Expressivity | E |
 | OWL2 | True |
 | OWL2 DL | True |
 | OWL2 EL | True |
@@ -32,19 +32,21 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 79577 |
-| Declaration | 13374 |
-| SubClassOf | 40547 |
+| AnnotationAssertion | 84096 |
+| Declaration | 14792 |
+| SubClassOf | 41964 |
 
 
 #### Entity namespaces: axiom counts by namespace
 
 | Metric | Value |
 | ------ | ----- |
-| prefix_unknown | 13365 |
+| prefix_unknown | 14783 |
 | oboInOwl | 5 |
+| owl | 1 |
 | rdf | 1 |
 | IAO | 1 |
+| xsd | 1 |
 | rdfs | 1 |
 | RO | 3 |
 
@@ -53,7 +55,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 94459 |
+| Class | 98711 |
 | ObjectSomeValuesFrom | 6572 |
 
 
