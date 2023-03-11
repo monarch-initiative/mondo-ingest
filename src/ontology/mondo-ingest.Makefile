@@ -234,7 +234,7 @@ exclusions-%:
 	$(MAKE) $(REPORTDIR)/$*_exclusion_reasons.ttl
 	$(MAKE) $(REPORTDIR)/$*_excluded_terms_in_mondo_xrefs.tsv
 
-exclusions-all: omim-intensional-exclusions-add-non-diseases
+exclusions-all:
 	$(MAKE) $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
 
 # Exclusions: running for all ontologies
