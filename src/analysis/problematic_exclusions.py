@@ -72,9 +72,11 @@ def load_and_format_tsv(path: str, prefix_map: Dict[str, str]) -> pd.DataFrame:
     return df2
 
 
+# TODO: refactor to use utils.py get_labels()
 # todo: In the future, refactor to use OAK.
+#
 # noinspection DuplicatedCode
-def get_labels(
+def populate_labels(
     df: pd.DataFrame, onto_path: str, prefix_map: Dict[str, str], template_str=SPARQL_STR_GET_LABELS,
     use_cache=CONFIG['use_cache']
 ) -> pd.DataFrame:
@@ -163,7 +165,7 @@ def get_labels(
     return df_joined
 
 
-def run(
+def problematic_exclusions(
     onto_path: str, onto_config_path: str, component_signature_path: str, mirror_signature_path: str,
     mondo_mappings_path: str, outpath: str, save=CONFIG['save']
 ) -> Dict[str, pd.DataFrame]:
@@ -228,7 +230,7 @@ def run(
 
     # Add labels
     if len(df) > 0:
-        df = get_labels(df=df, onto_path=onto_path, prefix_map=prefix_uri_map)
+        df = populate_labels(df=df, onto_path=onto_path, prefix_map=prefix_uri_map)
     else:
         df[term_label_field] = ''
 
@@ -256,21 +258,11 @@ def run(
 
 def cli() -> Dict[str, pd.DataFrame]:
     """Command line interface."""
-    parser = cli_get_parser()
-    kwargs = parser.parse_args()
-    d: Dict = vars(kwargs)
-    return run(**d)
-
-
-def cli_get_parser() -> ArgumentParser:
-    """Add required fields to parser."""
     package_description = \
         'Determine which terms outside the term scope of the Mondo source alignment are xrefed in Mondo.'
     parser = ArgumentParser(description=package_description)
-
-    parser.add_argument(
-        '-O', '--onto-path', required=True,
-        help='Optional. Path to the ontology file to query.')
+    parser.add_argument('-O', '--onto-path', required=True, help='Optional. Path to the ontology file to query.')
+    parser.add_argument('-m', '--mondo-mappings-path', required=True, help='Path to `mondo.sssom.tsv`.')
     parser.add_argument(
         '-c', '--onto-config-path', required=True,
         help='Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
@@ -285,13 +277,10 @@ def cli_get_parser() -> ArgumentParser:
         help='Path to a "mirror signature" file, which contains a list of class URIs from the unaltered '
              'source ontology.')
     parser.add_argument(
-        '-m', '--mondo-mappings-path', required=True,
-        help='Path to `mondo.sssom.tsv`.')
-    parser.add_argument(
         '-o', '--outpath', required=True,
         help='Path for output file for list of excluded terms that have cross-references in Mondo.')
-
-    return parser
+    d: Dict = vars(parser.parse_args())
+    return problematic_exclusions(**d)
 
 
 # Execution

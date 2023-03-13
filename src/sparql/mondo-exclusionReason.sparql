@@ -1,0 +1,10 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix MONDO: <http://purl.obolibrary.org/obo/MONDO_>
+
+SELECT DISTINCT ?term_id ?exclusion_reason
+WHERE {
+  ?term_id rdf:type owl:Class .
+  ?term_id MONDO:exclusionReason ?exclusion_reason
+  FILTER(isIRI(?term_id))
+}

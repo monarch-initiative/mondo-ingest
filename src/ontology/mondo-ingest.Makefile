@@ -1,24 +1,21 @@
 ## Customize Makefile settings for mondo-ingest
 ## 
-## If you need to customize your Makefile, make
-## changes here rather than in the main Makefile
+## If you need to customize your Makefile, make changes here rather than in the main Makefile
 .PHONY: build-mondo-ingest deploy-mondo-ingest documentation excluded-xrefs-in-mondo mappings \
 report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries exclusions-%
 
 ####################################
 ### Standard constants #############
 ####################################
+
 MAPPINGSDIR=../mappings
+SKIP_HUGE=false
+
 ####################################
 ### Relevant signature #############
 ####################################
-
-# This section is concerned with identifiying 
-# the entities of interest that 
-# should be imported from the source
-
-# Obtains the entities of interest from an ontology, as specified in a bespoke sparql query (bespoke
-# for that ontology).
+# This section is concerned with identifiying the entities of interest that should be imported from the source.
+# Obtains the entities of interest from an ontology, as specified in a bespoke sparql query (bespoke for that ontology).
 $(TMPDIR)/%_relevant_signature.txt: component-download-%.owl | $(TMPDIR)
 	if [ $(COMP) = true ]; then $(ROBOT) query -i "$(TMPDIR)/$<.owl" -q "../sparql/$*-relevant-signature.sparql" $@; fi
 .PRECIOUS: $(TMPDIR)/%_relevant_signature.txt
@@ -35,8 +32,9 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 
 # This section is concerned with transforming the incoming sources into the
 # Monarch Ingest schema.
-# https://github.com/monarch-initiative/omim/issues/60
-$(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
+# Illegal punning on some properties #60: https://github.com/monarch-initiative/omim/issues/60
+# todo: what does this have to do with #60 exactly? Does it address it? can that issue be closed?
+$(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-download-omim.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
 		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
@@ -46,12 +44,11 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/fix_illegal_punning_omim.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
 
-$(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt
+$(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt | component-download-ordo.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ordo.owl.owl --select imports \
 		merge \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
@@ -70,8 +67,8 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ordo.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ordo.owl -o $@; fi
 
-$(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt
-	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
+$(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-download-ncit.owl
+	if [ $(SKIP_HUGE) = false ] && [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
 		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
 		query --update ../sparql/rm_xref_by_prefix.ru \
@@ -80,7 +77,7 @@ $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt
 		remove --term "http://purl.obolibrary.org/obo/NCIT_C179199" --axioms "equivalent" \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ncit.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ncit.owl -o $@; fi
 
-$(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt
+$(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-download-doid.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-doid.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
 		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
@@ -88,7 +85,6 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/rm_xref_by_prefix.ru \
@@ -117,12 +113,11 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | compone
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
 
-$(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt
+$(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | component-download-icd10who.owl
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd10who.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
 		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
@@ -132,7 +127,6 @@ $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_deprecated.ru \
 			--update ../sparql/fix_complex_reification.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
@@ -144,7 +138,7 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 		reduce -r ELK \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 
-ALL_COMPONENT_IDS=$(strip $(patsubst components/%.owl,%, $(OTHER_SRC)))
+ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 
 #################
 # Mappings ######
@@ -156,7 +150,7 @@ sssom:
 
 ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), ../mappings/$(n).sssom.tsv)
 
-$(TMPDIR)/component-%.json: components/%.owl
+$(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) convert -i $< -f json -o $@
 .PRECIOUS: $(TMPDIR)/component-%.json
 
@@ -179,6 +173,25 @@ metadata/mondo.sssom.config.yml:
 
 mappings: sssom $(ALL_MAPPINGS)
 
+.PHONY: mapping-progress-report
+mapping-progress-report: unmapped-terms-tables unmapped-terms-docs
+
+.PHONY: unmapped-terms-docs
+unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
+	python3 $(SCRIPTSDIR)/unmapped_docs.py
+
+.PHONY: unmapped-terms-tables
+unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_status.tsv)
+
+$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.db
+	python3 $(SCRIPTSDIR)/unmapped_tables.py \
+	--select-intensional-exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--onto-config-path metadata/$*.yml \
+	--db-path $(COMPONENTSDIR)/$*.db \
+	--outpath-simple $(REPORTDIR)/$*_unmapped_terms.tsv \
+	--outpath-full $(REPORTDIR)/$*_mapping_status.tsv
+
 #################
 ##### Utils #####
 #################
@@ -194,8 +207,8 @@ update-jinja-sparql-queries:
 #################
 # Exclusions: by ontology
 $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml
-	python3 $(SCRIPTSDIR)/exclusion_term_expansion.py \
-	--exclusions-path config/$*_exclusions.tsv \
+	python3 $(SCRIPTSDIR)/exclusion_table_creation.py \
+	--select-intensional-exclusions-path config/$*_exclusions.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
 	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
 	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
@@ -262,8 +275,8 @@ PREFIXES_METRICS=--prefix 'OMIM: http://omim.org/entry/' \
 	--prefix 'HGNC: https://www.genenames.org/data/gene-symbol-report/\#!/hgnc_id/' \
 	--prefix 'biolink: https://w3id.org/biolink/vocab/'
 
-metadata/%-metrics.json: components/%.owl
-	$(ROBOT) measure $(PREFIXES_METRICS) -i components/$*.owl --format json --metrics extended --output $@
+metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
+	$(ROBOT) measure $(PREFIXES_METRICS) -i $(COMPONENTSDIR)/$*.owl --format json --metrics extended --output $@
 .PRECIOUS: metadata/%-metrics.json
 
 ../../docs/metrics/%.md: metadata/%-metrics.json | ../../docs/metrics/
@@ -293,6 +306,8 @@ tmp/mondo-ingest.owl:
 tmp/mondo.owl:
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
+# Official Mondo SSSOM Mappings
+# - Doeesn't include: broad mappings
 tmp/mondo.sssom.tsv:
 	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
 
@@ -312,12 +327,21 @@ mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
 
 reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
+	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
+	mv $@-temp $@
+
+reports/mirror_signature-ncit.tsv: $(COMPONENTSDIR)/ncit.db metadata/ncit.yml
+	python3 $(SCRIPTSDIR)/mirror_signature_via_oak.py --db-path $(COMPONENTSDIR)/ncit.db --onto-config-path metadata/ncit.yml --outpath $@;\
 
 reports/mirror_signature-%.tsv: component-download-%.owl
 	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
+	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
+	mv $@-temp $@
 
-reports/component_signature-%.tsv: components/%.owl
+reports/component_signature-%.tsv: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
+	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
+	mv $@-temp $@
 
 ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror_signature-$(n).tsv)
@@ -330,9 +354,13 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 #### Lexical matching #######
 #############################
 tmp/merged.db: tmp/merged.owl
-	semsql make $@
+	@rm -f .template.db
+	@rm -f .template.db.tmp
+	RUST_BACKTRACE=full semsql make $@
+	@rm -f .template.db
+	@rm -f .template.db.tmp
 
-../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py 
+../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py
 	python $^ run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
 
 lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
@@ -346,6 +374,25 @@ lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py ../mappings/mondo-so
 extract-unmapped-matches: lexmatch/README.md
 
 #############################
+######### Analysis ##########
+#############################
+.PHONY: mapped-deprecated-terms
+mapped-deprecated-terms: mapped-deprecated-terms-artefacts mapped-deprecated-terms-docs
+
+.PHONY: mapped-deprecated-terms-docs
+mapped-deprecated-terms-docs:
+	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py --docs
+
+.PHONY: mapped-deprecated-terms-artefacts
+mapped-deprecated-terms-artefacts: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
+
+$(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mapping_status.tsv tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py \
+	--mondo-mappings-path tmp/mondo.sssom.tsv \
+	--mapping-status-path $(REPORTDIR)/$*_mapping_status.tsv \
+	--outpath $@
+
+#############################
 ###### Slurp pipeline #######
 #############################
 .PHONY: component-download-mondo.owl
@@ -353,12 +400,17 @@ component-download-mondo.owl: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/mondo.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
-# TODO: development: While developing, can temporarily remove mirror/%.owl prereq for speed
-# mirror/%.db:
-mirror/%.db: mirror/%.owl
-	@rm .template.db.tmp
-	semsql make $@
-	@rm .template.db.tmp
+# todo: What if the mirror was out of date, but there's already a .db file there, but it's not up to date?
+# Related issues:
+#  - icd10cm/icd10who ttl -> owl: https://github.com/monarch-initiative/mondo-ingest/issues/138
+#  - No rule to make target 'mirror/ONTOLOGY.owl': https://github.com/monarch-initiative/mondo-ingest/issues/137
+# Maybe solved now by using $(COMPONENTSDIR)/
+$(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
+	@rm -f .template.db
+	@rm -f .template.db.tmp
+	RUST_BACKTRACE=full semsql make $@
+	@rm -f .template.db
+	@rm -f .template.db.tmp
 
 slurp/:
 	mkdir -p $@
@@ -366,13 +418,13 @@ slurp/:
 # min-id: the next available Mondo ID
 # todo: `pip install` stuff is temporarily here until we come up with a fix. otherwise docker won't work
 slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
-	pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
+#	pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
 	python3 $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
-	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
 	--onto-exclusions-path reports/$*_term_exclusions.txt \
-	--min-id 850000 \
+	--min-id 850056 \
 	--max-id 999999 \
 	--mondo-terms-path $(REPORTDIR)/mirror_signature-mondo.tsv \
 	--slurp-dir-path slurp/ \
@@ -381,20 +433,65 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_ter
 slurp-no-updates-%:
 	$(MAKE) slurp/$*.tsv
 
+# todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 slurp-all-no-updates: slurp-no-updates-omim slurp-no-updates-doid slurp-no-updates-ordo slurp-no-updates-icd10cm slurp-no-updates-icd10who slurp-no-updates-ncit
 
 slurp-%:
 	$(MAKE) slurp/$*.tsv -B
 
+# todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit
 
 ##################################
 ##### Utilities ###################
 ##################################
 
+# $$data: This prints the help message from imported makefiles.
 .PHONY: help
 help:
 	@echo "$$data"
-	echo "* slurp-all:				Determine all slurpable terms."
-	echo "* extract-unmapped-matches:		Determine all new matches across external ontologies"
-	echo "* lexical-matches:			Determine lexical matches across external ontologies"
+	@echo "----------------------------------------"
+	@echo "	Command reference: mondo-ingest"
+	@echo "----------------------------------------"
+	@echo "slurp-all"
+	@echo "Determine all slurpable terms. That is, terms that are candidates for integration into Mondo.\n"
+	@echo "extract-unmapped-matches"
+	@echo "Determine all new matches across external ontologies.\n"
+	@echo "lexical-matches"
+	@echo "Determine lexical matches across external ontologies.\n"
+	@echo "reports/%_mapping_status.tsv"
+	@echo "A table of all terms for ontology %, along with labels, and other columns is_excluded, is_mapped, is_deprecated.\n"
+	@echo "reports/%_unmapped_terms.tsv"
+	@echo "A table of unmapped terms for ontology % and their labels.\n"
+	@echo "unmapped-terms-docs"
+	@echo "Creates mapping progress report (docs/reports/unmapped.md) and pages for each ontology which list their umapped terms."
+	@echo "mapping-progress-report"
+	@echo "Creates mapping progress report (docs/reports/unmapped.md) and pages for each ontology which list their umapped terms. Also generates reports/%_mapping_status.tsv and reports/%_unmapped_terms.tsv for all ontologies.\n"
+	@echo "reports/mirror_signature-%.tsv"
+	@echo "A table with a single column '?term' which includes all of the class IRIs in an ontology.\n"
+	@echo "reports/%_mapped_deprecated_terms.robot.template.tsv"
+	@echo "A table of all of the deprecated terms from a given ontology that have existing mappings in Mondo.\n"
+	@echo "mapped-deprecated-terms-artefacts"
+	@echo "Creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"
+	@echo "mapped-deprecated-terms-docs"
+	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.\n"
+	@echo "mapped-deprecated-terms"
+	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"
+	@echo "reports/%_term_exclusions.txt"
+	@echo "A simple list of terms to exclude from integration into Mondo from the given ontology.\n"
+	@echo "reports/%_exclusion_reasons.robot.template.tsv"
+	@echo "A robot template of terms to exclude from integration into Mondo from the given ontology.\n"
+	@echo "reports/%_exclusion_reasons.ttl"
+	@echo "A list of terms to exclude from integration into Mondo from the given ontology, in TTL format.\n"
+	@echo "reports/%_excluded_terms_in_mondo_xrefs.tsv"
+	@echo "A list of terms excluded from integration in Mondo that still have xrefs in Mondo.\n"
+	@echo "exclusions-%"
+	@echo "Runs reports/%_term_exclusions.txt, reports/%_exclusion_reasons.ttl, and reports/%_excluded_terms_in_mondo_xrefs.tsv for a given ontology.\n"
+	@echo "reports/excluded_terms.ttl"
+	@echo "Runs reports/%_exclusion_reasons.ttl for all ontologies. and combines into a single file.\n"
+	@echo "reports/excluded_terms.txt"
+	@echo "Runs reports/%_term_exclusions.txt for all ontologies and combines into a single file.\n"
+	@echo "reports/exclusion_reasons.robot.template.tsv"
+	@echo "Runs reports/%_exclusion_reasons.robot.template.tsv for all ontologies and combines into a single file.\n"
+	@echo "exclusions-all"
+	@echo "Runs all exclusion artefacts for all ontologies.\n"
