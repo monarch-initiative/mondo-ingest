@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2023-01-21/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2023-03-07/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 25 |
-| Axioms | 106279 |
-| Logical axioms | 15451 |
-| Classes | 12704 |
+| Axioms | 106470 |
+| Logical axioms | 15508 |
+| Classes | 12738 |
 | Object properties | 2 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -21,21 +21,21 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Expressivity | ALC |
+| Expressivity | C |
 | OWL2 | True |
-| OWL2 DL | False |
-| OWL2 EL | False |
-| OWL2 QL | False |
-| OWL2 RL | False |
+| OWL2 DL | True |
+| OWL2 EL | True |
+| OWL2 QL | True |
+| OWL2 RL | True |
 
 #### Axiom types
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 78107 |
+| AnnotationAssertion | 78199 |
 | DisjointClasses | 26 |
-| Declaration | 12721 |
-| SubClassOf | 15425 |
+| Declaration | 12763 |
+| SubClassOf | 15482 |
 
 
 #### Entity namespaces: axiom counts by namespace
@@ -44,10 +44,10 @@
 | ------ | ----- |
 | oboInOwl | 11 |
 | owl | 2 |
-| DOID | 11182 |
+| DOID | 11217 |
 | HP | 106 |
-| xsd | 2 |
-| CL | 63 |
+| xsd | 1 |
+| CL | 60 |
 | skos | 5 |
 | BFO | 2 |
 | rdfs | 2 |
@@ -60,9 +60,9 @@
 | CHEBI | 90 |
 | IAO | 2 |
 | UBERON | 391 |
-| SO | 16 |
+| SO | 17 |
 | obo | 191 |
-| GENO | 9 |
+| GENO | 10 |
 | dc | 1 |
 
 
@@ -70,7 +70,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 43766 |
+| Class | 43914 |
 
 
 More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).

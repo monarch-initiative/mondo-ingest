@@ -328,9 +328,8 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = replace_by_mondo_preds(unmapped_exact)
     robot_row_dict = {
         "subject_id": ["ID"],
-        "predicate_id": ["A oboInOwl:hasDbXref"],
-        "object_id": [">A oboInOwl:source"],
-        "object_label": [">A sssom:object_label"],
+        "predicate_id": [">A oboInOwl:source"],
+        "object_id": ["A oboInOwl:hasDbXref"],
     }
     column_seq = unmapped_exact.columns
     unmapped_exact = pd.concat(
