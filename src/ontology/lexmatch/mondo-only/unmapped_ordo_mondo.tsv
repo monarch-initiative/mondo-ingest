@@ -1,2 +1,725 @@
-subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	comment
-ID		>A oboInOwl:source	A oboInOwl:hasDbXref	>A sssom:object_label		
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+ID		>A oboInOwl:source	A oboInOwl:hasDbXref								
+MONDO:0000193	cortisone reductase deficiency	MONDO:equivalentTo	Orphanet:168588	Hyperandrogenism due to cortisone reductase deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000645	fallopian tube benign neoplasm	MONDO:equivalentTo	Orphanet:180237	Benign tumor of fallopian tubes	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000827	salmonellosis	MONDO:equivalentTo	Orphanet:795	Rare form of salmonellosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0001309	oculomotor nerve paralysis	MONDO:equivalentTo	Orphanet:98685	Rare oculomotor nerve disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002561	lysosomal storage disease	MONDO:equivalentTo	Orphanet:68366	Lysosomal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003198	small intestine adenocarcinoma	MONDO:equivalentTo	Orphanet:104075	Adenocarcinoma of the small intestine	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003414	skin pilomatrix carcinoma	MONDO:equivalentTo	Orphanet:499182	Pilomatrix carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003832	complement deficiency	MONDO:equivalentTo	Orphanet:459345	Immunodeficiency due to a complement cascade component deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0004745	priapism	MONDO:equivalentTo	Orphanet:140949	Low-flow priapism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0004952	Hodgkins lymphoma	MONDO:equivalentTo	Orphanet:98293	Hodgkin lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0004959	plasma cell neoplasm	MONDO:equivalentTo	Orphanet:98282	Plasma cell tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0004975	Alzheimer disease	MONDO:equivalentTo	Orphanet:238616		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005486	tooth agenesis	MONDO:equivalentTo	Orphanet:2227		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005570	hematologic disorder	MONDO:equivalentTo	Orphanet:97992	Rare hematologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005629	Acanthamoeba keratitis	MONDO:equivalentTo	Orphanet:67043	Amoebic keratitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005797	HIV wasting syndrome	MONDO:equivalentTo	Orphanet:90081	AIDS wasting syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005803	hyperinsulinemic hypoglycemia	MONDO:equivalentTo	Orphanet:443095	Hyperinsulinemic hypoglycaemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006009	viral encephalitis	MONDO:equivalentTo	Orphanet:98252	Infectious encephalitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006042	meningeal tuberculosis	MONDO:equivalentTo	Orphanet:499004	Tuberculous meningitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006702	chronic inflammatory demyelinating polyradiculoneuropathy	MONDO:equivalentTo	Orphanet:2932	Chronic inflammatory demyelinating polyneuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006956	Rickettsiosis	MONDO:equivalentTo	Orphanet:102021	Rickettsial disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007245	cafe au lait spots, multiple	MONDO:equivalentTo	Orphanet:2678	Neurofibromatosis type 6	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007809	ichthyosis hystrix gravior	MONDO:equivalentTo	Orphanet:79504		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007917	lymphedema-cerebral arteriovenous anomaly syndrome	MONDO:equivalentTo	Orphanet:86914	Lymphedema-cerebral arteriovenous anomaly-primary pulmonary hypertension syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008225	normokalemic periodic paralysis	MONDO:equivalentTo	Orphanet:680		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008672	Watson syndrome	MONDO:equivalentTo	Orphanet:3444		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009120	diverticulosis of bowel, hernia, and retinal detachment	MONDO:equivalentTo	Orphanet:2464	Marfanoid syndrome, De Silva type	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009468	pseudotumor cerebri	MONDO:equivalentTo	Orphanet:238624	Idiopathic intracranial hypertension	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009722	Bailey-Bloch congenital myopathy	MONDO:equivalentTo	Orphanet:168572	Native American myopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009766	oculocerebral hypopigmentation syndrome of Preus	MONDO:equivalentTo	Orphanet:2720	Oculocerebral hypopigmentation syndrome, Preus type	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009924	vitamin D-dependent rickets, type 1	MONDO:equivalentTo	Orphanet:289157	Hypocalcemic vitamin D-dependent rickets	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010407	intellectual disability, X-linked syndromic, Turner type	MONDO:equivalentTo	Orphanet:85328		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010477	blepharophimosis - intellectual disability syndrome, MKB type	MONDO:equivalentTo	Orphanet:293707	Blepharophimosis-intellectual disability syndrome, MKB type	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010478	SLC35A2-congenital disorder of glycosylation	MONDO:equivalentTo	Orphanet:356961	SLC35A2-CDG	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010574	syndromic X-linked intellectual disability 5	MONDO:equivalentTo	Orphanet:85329	X-linked intellectual disability-hypotonia-facial dysmorphism-aggressive behavior syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010674	mucopolysaccharidosis type 2	MONDO:equivalentTo	Orphanet:79388	Mucopolysaccharidosis with skin involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011119	iridogoniodysgenesis	MONDO:equivalentTo	Orphanet:98634	Anterior segment developmental anomaly without extraocular manifestations	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012131	metaphyseal undermodeling, spondylar dysplasia, and overgrowth	MONDO:equivalentTo	Orphanet:498485	Overgrowth-metaphyseal undermodeling-spondylar dysplasia syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012190	nephrotic syndrome - deafness - pretibial epidermolysis bullosa syndrome	MONDO:equivalentTo	Orphanet:300333	Nephrotic syndrome-epidermolysis bullosa-sensorineural deafness syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012282	Al-Gazali syndrome	MONDO:equivalentTo	Orphanet:2725	Eye defects-arachnodactyly-cardiopathy syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012726	autosomal dominant familial hematuria-retinal arteriolar tortuosity-contractures syndrome	MONDO:equivalentTo	Orphanet:73229	HANAC syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012783	RFT1-congenital disorder of glycosylation	MONDO:equivalentTo	Orphanet:244310	RFT1-CDG	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012812	developmental and epileptic encephalopathy, 4	MONDO:equivalentTo	Orphanet:599373	STXBP1-related encephalopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012907	blindness - scoliosis - arachnodactyly syndrome	MONDO:equivalentTo	Orphanet:171844	Blindness-scoliosis-arachnodactyly syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013353	intellectual disability, anterior maxillary protrusion, and strabismus	MONDO:equivalentTo	Orphanet:562559	Anterior maxillary protrusion-strabismus-intellectual disability syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013355	congenital dyserythropoietic anemia type 4	MONDO:equivalentTo	Orphanet:293825	Congenital dyserythropoietic anemia type IV	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013363	chromosome 2q31.1 duplication syndrome	MONDO:equivalentTo	Orphanet:294026	Syndactyly-nystagmus syndrome due to 2q31.1 microduplication	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013759	melanoma, cutaneous malignant, susceptibility to, 8	MONDO:equivalentTo	Orphanet:293822	MITF-related melanoma and renal cell carcinoma predisposition syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013860	idiopathic membranous glomerulonephritis	MONDO:equivalentTo	Orphanet:97560	Primary membranous glomerulonephritis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013881	congenital nephrotic syndrome - interstitial lung disease - epidermolysis bullosa syndrome	MONDO:equivalentTo	Orphanet:306504	Interstitial lung disease-nephrotic syndrome-epidermolysis bullosa syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013999	optic nerve edema-splenomegaly syndrome	MONDO:equivalentTo	Orphanet:313800	Retinal dystrophy-optic nerve edema-splenomegaly-anhidrosis-migraine headache syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014805	Hao-Fountain syndrome	MONDO:equivalentTo	Orphanet:500055	16p13.2 microdeletion syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014823	hypotonia, infantile, with psychomotor retardation and characteristic facies 3	MONDO:equivalentTo	Orphanet:488632	TBCK-related intellectual disability syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015003	dystonia, childhood-onset, with optic atrophy and basal ganglia abnormalities	MONDO:equivalentTo	Orphanet:508093	MEPAN syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015014	coloboma, osteopetrosis, microphthalmia, macrocephaly, albinism, and deafness	MONDO:equivalentTo	Orphanet:603494	Coloboma-osteopetrosis-microphthalmia-macrocephaly-albinism-deafness syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015075	thyroid gland carcinoma	MONDO:equivalentTo	Orphanet:100088	Thyroid carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015076	obsolete rare parathyroid tumor	MONDO:equivalentTo	Orphanet:100090	Rare parathyroid tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015081	obsolete neuroendocrine tumor with other location	MONDO:equivalentTo	Orphanet:100101	Neuroendocrine tumor with other location	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015106	obsolete rare urogenital disease	MONDO:equivalentTo	Orphanet:101433	Rare urogenital disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015107	obsolete rare genetic eye disease	MONDO:equivalentTo	Orphanet:101435	Rare genetic eye disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015111	gastroesophageal disease	MONDO:equivalentTo	Orphanet:101936	Rare gastroesophageal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015112	obsolete rare pancreatic disease	MONDO:equivalentTo	Orphanet:101937	Rare pancreatic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015114	obsolete rare parenchymal liver disease	MONDO:equivalentTo	Orphanet:101939	Rare parenchymal liver disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015115	obsolete rare genetic metabolic liver disease	MONDO:equivalentTo	Orphanet:101940	Rare metabolic liver disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015117	obsolete rare hepatic and biliary tract tumor	MONDO:equivalentTo	Orphanet:101943	Rare hepatic and biliary tract tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015118	obsolete rare pulmonary disease	MONDO:equivalentTo	Orphanet:101944	Rare pulmonary disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015119	obsolete bronchopulmonary tumor	MONDO:equivalentTo	Orphanet:101945	Rare bronchopulmonary tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015121	obsolete rare eye tumor	MONDO:equivalentTo	Orphanet:101950	Rare eye tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015123	obsolete rare inherited dyslipidemia	MONDO:equivalentTo	Orphanet:101953	Rare dyslipidemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015124	obsolete rare adrenal disease	MONDO:equivalentTo	Orphanet:101954	Rare adrenal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015143	obsolete rare movement disorder	MONDO:equivalentTo	Orphanet:102003	Rare movement disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015157	human herpesvirus 8-related tumor	MONDO:equivalentTo	Orphanet:102024	Human herpesvirus 8-related disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015162	obsolete rare syndromic intellectual disability	MONDO:equivalentTo	Orphanet:102369	Rare syndromic intellectual disability	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015181	obsolete congenital intestinal disease due to an enzymatic defect	MONDO:equivalentTo	Orphanet:104006	Congenital intestinal disease due to an enzymatic defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015188	obsolete metabolic disorder with intestinal involvement	MONDO:equivalentTo	Orphanet:104013	Metabolic disease with intestinal involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015196	vein of Galen aneurysm	MONDO:equivalentTo	Orphanet:1053	Vein of Galen aneurysmal malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015223	obsolete rare anemia	MONDO:equivalentTo	Orphanet:108997	Rare anemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015224	obsolete rare intoxication	MONDO:equivalentTo	Orphanet:108999	Rare disorder due to toxic effects	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015245	obsolete rare intestinal disease	MONDO:equivalentTo	Orphanet:117569	Rare intestinal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015292	endotheliitis	MONDO:equivalentTo	Orphanet:137602	Corneal endotheliitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015305	obsolete rare endometriosis	MONDO:equivalentTo	Orphanet:137820	Extrapelvic endometriosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015328	obsolete rare bone development disorder	MONDO:equivalentTo	Orphanet:139012	Rare bone development disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015329	obsolete malformation syndrome with short stature	MONDO:equivalentTo	Orphanet:139021	Malformation syndrome with short stature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015331	obsolete malformation syndrome with skin/mucosae involvement	MONDO:equivalentTo	Orphanet:139027	Rare developmental defect with skin/mucosae involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015332	obsolete rare developmental defect with connective tissue involvement	MONDO:equivalentTo	Orphanet:139030	Rare developmental defect with connective tissue involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015336	obsolete malformation syndrome with odontal and/or periodontal component	MONDO:equivalentTo	Orphanet:139042	Malformation syndrome with odontal and/or periodontal component	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015356	hereditary neoplastic syndrome	MONDO:equivalentTo	Orphanet:140162	Inherited cancer-predisposing syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015475	obsolete rare head and neck malformation	MONDO:equivalentTo	Orphanet:155832	Rare head and neck malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015485	primary hereditary glaucoma	MONDO:equivalentTo	Orphanet:156005	Primary early-onset glaucoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015495	obsolete otomandibular dysplasia associated with monogenic syndromes	MONDO:equivalentTo	Orphanet:156202	Otomandibular dysplasia associated with monogenic syndromes	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015501	obsolete syndrome or malformation associated with head and neck malformations	MONDO:equivalentTo	Orphanet:156237	Syndrome or malformation associated with head and neck malformations	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015502	obsolete pinnae and external auditory canal anomaly	MONDO:equivalentTo	Orphanet:156243	Pinnae and external auditory canal anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015506	obsolete rare syndrome with cardiac malformations	MONDO:equivalentTo	Orphanet:156532	Rare syndrome with cardiac malformations	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015507	obsolete rare genetic hepatic disease	MONDO:equivalentTo	Orphanet:156601	Rare genetic hepatic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015510	obsolete rare genetic respiratory disease	MONDO:equivalentTo	Orphanet:156610	Rare genetic respiratory disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015511	obsolete rare genetic urogenital disease	MONDO:equivalentTo	Orphanet:156619	Rare genetic urogenital disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015512	genetic hypertension	MONDO:equivalentTo	Orphanet:156629	Rare genetic cause of hypertension	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015513	obsolete rare genetic endocrine disease	MONDO:equivalentTo	Orphanet:156638	Rare genetic endocrine disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015549	obsolete rare genetic hematologic disease	MONDO:equivalentTo	Orphanet:158300	Rare genetic hematologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015576	obsolete rare viral disease	MONDO:equivalentTo	Orphanet:163585	Rare viral disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015577	obsolete rare parasitic disease	MONDO:equivalentTo	Orphanet:163588	Rare parasitic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015578	obsolete rare mycosis	MONDO:equivalentTo	Orphanet:163591	Rare mycosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015582	obsolete rare disorder related with pregnancy, childbirth and puerperium	MONDO:equivalentTo	Orphanet:163637	Rare disorder related with pregnancy, childbirth and puerperium	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015603	obsolete rare odontal or periodontal disorder	MONDO:equivalentTo	Orphanet:164001	Rare odontal or periodontal disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015615	obsolete rare genetic gastroenterological disease	MONDO:equivalentTo	Orphanet:165652	Rare genetic gastroenterological disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015616	obsolete rare genetic intestinal disease	MONDO:equivalentTo	Orphanet:165655	Genetic intestinal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015618	obsolete genetic pancreatic disease	MONDO:equivalentTo	Orphanet:165661	Genetic pancreatic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015621	obsolete rare abdominal surgical disease	MONDO:equivalentTo	Orphanet:165711	Rare abdominal surgical disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015651	obsolete neurocutaneous syndrome with epilepsy	MONDO:equivalentTo	Orphanet:166466	Neurocutaneous syndrome with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015652	obsolete chromosomal anomaly with epilepsy as a major feature	MONDO:equivalentTo	Orphanet:166469	Chromosomal anomaly with epilepsy as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015653	monogenic epilepsy	MONDO:equivalentTo	Orphanet:166472	Monogenic disease with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015654	obsolete idiopathic or cryptogenic familial epilepsy syndrome with identified loci/genes	MONDO:equivalentTo	Orphanet:166475	Idiopathic or cryptogenic familial epilepsy syndrome with identified loci/genes	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015655	obsolete cerebral malformation with epilepsy	MONDO:equivalentTo	Orphanet:166478	Cerebral malformation with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015656	obsolete metabolic disease with epilepsy	MONDO:equivalentTo	Orphanet:166481	Metabolic diseases with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015657	obsolete inflammatory and autoimmune disease with epilepsy	MONDO:equivalentTo	Orphanet:166484	Inflammatory and autoimmune disease with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015658	obsolete cerebral diseases of vascular origin with epilepsy	MONDO:equivalentTo	Orphanet:166487	Cerebral diseases of vascular origin with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015659	obsolete infectious disease with epilepsy	MONDO:equivalentTo	Orphanet:166490	Infectious disease with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015662	obsolete hemorrhagic disorder due to an acquired coagulation factor defect	MONDO:equivalentTo	Orphanet:166775	Rare hemorrhagic disorder due to an acquired coagulation factor defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015673	obsolete rare cardiac tumor	MONDO:equivalentTo	Orphanet:168194	Rare cardiac tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015710	obsolete immune dysregulation disease with immunodeficiency	MONDO:equivalentTo	Orphanet:169361	Immune dysregulation disease with immunodeficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015777	adult hypothyroidism	MONDO:equivalentTo	Orphanet:177101	Rare adult hypothyroidism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015787	symptomatic form of hemophilia A in female carriers	MONDO:equivalentTo	Orphanet:177926	Bleeding disorder in hemophilia A carriers	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015788	symptomatic form of hemophilia B in female carriers	MONDO:equivalentTo	Orphanet:177929	Bleeding disorder in hemophilia B carriers	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015844	agenesis and aplasia of uterine body	MONDO:equivalentTo	Orphanet:180142	Absence of uterine body	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015851	obsolete rare breast malformation	MONDO:equivalentTo	Orphanet:180163	Rare breast malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015857	obsolete rare non-malformative gynecologic or obstetric disease	MONDO:equivalentTo	Orphanet:180199	Rare non-malformative gynecologic or obstetric disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015858	obsolete rare non-malformative breast disease	MONDO:equivalentTo	Orphanet:180202	Rare non-malformative breast disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015859	obsolete rare non-malformative uterovaginal or vulvovaginal disease	MONDO:equivalentTo	Orphanet:180205	Rare non-malformative uterovaginal or vulvovaginal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015861	obsolete rare uterine adnexal tumor	MONDO:equivalentTo	Orphanet:180220	Rare uterine adnexal tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015868	obsolete rare breast tumor	MONDO:equivalentTo	Orphanet:180250	Rare breast tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015875	obsolete rare non-malformative uterine adnexal disease	MONDO:equivalentTo	Orphanet:180303	Rare non-malformative uterine adnexal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015876	obsolete rare vulvovaginal tumor	MONDO:equivalentTo	Orphanet:180312	Rare vulvovaginal tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015877	obsolete malformative syndrome with dentinogenesis imperfecta	MONDO:equivalentTo	Orphanet:180766	Malformative syndrome with dentinogenesis imperfecta	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015878	obsolete rare disease with autism	MONDO:equivalentTo	Orphanet:180772	Rare disease with autism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015879	obsolete non-syndromic diaphragmatic or thoracic malformation	MONDO:equivalentTo	Orphanet:180776	Non-syndromic diaphragmatic or thoracic malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015880	obsolete syndromic diaphragmatic or thoracic malformation	MONDO:equivalentTo	Orphanet:180779	Syndromic diaphragmatic or thoracic malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015881	obsolete gastroesophageal tumor	MONDO:equivalentTo	Orphanet:180821	Rare gastroesophageal tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015882	obsolete rare tumor of pancreas	MONDO:equivalentTo	Orphanet:180824	Rare tumor of pancreas	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015886	obsolete rare diabetes mellitus type 1	MONDO:equivalentTo	Orphanet:181371	Rare diabetes mellitus type 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015889	obsolete rare hypothalamic or pituitary disease	MONDO:equivalentTo	Orphanet:181384	Rare hypothalamic or pituitary disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015890	obsolete rare disorder with congenital hypogonadotropic hypogonadism	MONDO:equivalentTo	Orphanet:181387	Rare disorder with multisystemic involvement and congenital hypogonadotropic hypogonadism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015891	obsolete hypogonadotropic hypogonadism associated with other endocrinopathies	MONDO:equivalentTo	Orphanet:181390	Endocrinopathy with congenital hypogonadotropic hypogonadism as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015893	obsolete rare hypothyroidism	MONDO:equivalentTo	Orphanet:181396	Rare hypothyroidism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015894	obsolete rare hyperthyroidism	MONDO:equivalentTo	Orphanet:181399	Rare hyperthyroidism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015895	obsolete syndrome with hypoparathyroidism	MONDO:equivalentTo	Orphanet:181402	Syndrome with hypoparathyroidism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015896	obsolete rare hypoparathyroidism	MONDO:equivalentTo	Orphanet:181405	Rare hypoparathyroidism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015899	obsolete rare primary hyperaldosteronism	MONDO:equivalentTo	Orphanet:181415	Rare primary hyperaldosteronism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015900	hypoaldosteronism disease	MONDO:equivalentTo	Orphanet:181419	Rare hypoaldosteronism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015906	obsolete rare disorder with hypergonadotropic hypogonadism	MONDO:equivalentTo	Orphanet:181441	Rare disorder with hypergonadotropic hypogonadism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015910	obsolete rare constitutional hemolytic anemia	MONDO:equivalentTo	Orphanet:182043	Rare constitutional hemolytic anemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015911	obsolete rare acquired hemolytic anemia	MONDO:equivalentTo	Orphanet:182047	Rare acquired hemolytic anemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015913	obsolete rare thrombotic disease of hematologic origin	MONDO:equivalentTo	Orphanet:182054	Rare thrombotic disease of hematologic origin	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015916	obsolete rare neuroinflammatory or neuroimmunological disease	MONDO:equivalentTo	Orphanet:182064	Rare neuroinflammatory or neuroimmunological disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015918	obsolete rare neurodegenerative disease	MONDO:equivalentTo	Orphanet:182070	Rare neurodegenerative disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015922	obsolete channelopathy with epilepsy	MONDO:equivalentTo	Orphanet:182083	Channelopathy with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015931	obsolete rare urogenital tumor	MONDO:equivalentTo	Orphanet:182114	Rare urogenital tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015940	obsolete rare rheumatologic disease	MONDO:equivalentTo	Orphanet:182231	Rare rheumatologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015945	obsolete polymalformative genetic syndrome with increased risk of developing cancer	MONDO:equivalentTo	Orphanet:183422	Polymalformative genetic syndrome with increased risk of developing cancer	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015948	obsolete rare genetic skin vascular disorder	MONDO:equivalentTo	Orphanet:183478	Genetic skin vascular disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015949	obsolete rare genetic subcutaneous tissue disorder	MONDO:equivalentTo	Orphanet:183484	Genetic subcutaneous tissue disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015950	inherited skin tumor	MONDO:equivalentTo	Orphanet:183487	Genetic skin tumor or hamartoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015953	obsolete genetic central nervous system and retinal vascular disease	MONDO:equivalentTo	Orphanet:183503	Genetic central nervous system and retinal vascular disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015954	obsolete rare genetic headache disorder	MONDO:equivalentTo	Orphanet:183509	Rare genetic headache	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015955	obsolete rare genetic epilepsy	MONDO:equivalentTo	Orphanet:183512	Rare genetic epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015957	obsolete rare genetic movement disorder	MONDO:equivalentTo	Orphanet:183521	Rare genetic movement disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015958	obsolete rare genetic bone disease	MONDO:equivalentTo	Orphanet:183524	Rare genetic bone disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015959	obsolete inherited syndrome with bone tumors as a major feature	MONDO:equivalentTo	Orphanet:183527	Genetic bone tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015960	obsolete rare genetic developmental defect during embryogenesis	MONDO:equivalentTo	Orphanet:183530	Rare genetic developmental defect during embryogenesis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015963	obsolete inherited renal tumor	MONDO:equivalentTo	Orphanet:183595	Genetic renal tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015966	obsolete hereditary eye tumor	MONDO:equivalentTo	Orphanet:183619	Genetic eye tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015967	monogenic diabetes	MONDO:equivalentTo	Orphanet:183625	Rare genetic diabetes mellitus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015968	obsolete rare genetic hypothalamic or pituitary disease	MONDO:equivalentTo	Orphanet:183628	Rare genetic hypothalamic or pituitary disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015969	obsolete rare genetic thyroid disease	MONDO:equivalentTo	Orphanet:183631	Rare genetic thyroid disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015970	obsolete rare genetic parathyroid disease and phosphocalcic metabolism disorder	MONDO:equivalentTo	Orphanet:183634	Rare genetic parathyroid disease and phosphocalcic metabolism disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015971	obsolete rare genetic adrenal disease	MONDO:equivalentTo	Orphanet:183637	Rare genetic adrenal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015972	obsolete rare constitutional anemia	MONDO:equivalentTo	Orphanet:183651	Rare constitutional anemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015980	obsolete rare genetic gynecological and obstetrical diseases	MONDO:equivalentTo	Orphanet:183731	Rare genetic gynecological and obstetrical diseases	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015981	obsolete inherited gynecological tumor	MONDO:equivalentTo	Orphanet:183734	Genetic gynecological tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015982	obsolete rare genetic intellectual disability	MONDO:equivalentTo	Orphanet:183757	Rare genetic intellectual disability	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015983	obsolete rare genetic syndromic intellectual disability	MONDO:equivalentTo	Orphanet:183763	Rare genetic syndromic intellectual disability	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015984	obsolete rare genetic immune disease	MONDO:equivalentTo	Orphanet:183770	Rare genetic immune disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016054	cerebral malformation	MONDO:equivalentTo	Orphanet:199633	Non-syndromic cerebral malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016055	obsolete syndrome with corpus callosum agenesis /dysgenesis as a major feature	MONDO:equivalentTo	Orphanet:199639	Syndrome with corpus callosum agenesis/dysgenesis as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016073	syndromic microphthalmia	MONDO:equivalentTo	Orphanet:202948	Syndromic microphthalmia-anophthalmia-coloboma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016080	congenital bronchobiliary fistula	MONDO:equivalentTo	Orphanet:2040	Congenital respiratory-biliary fistula	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016104	obsolete infectious disease with peripheral neuropathy	MONDO:equivalentTo	Orphanet:206613	Infectious disease with peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016110	obsolete non-dystrophic myopathy	MONDO:equivalentTo	Orphanet:206656	Non-dystrophic myopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016131	obsolete spinal muscular atrophy associated with central nervous system anomaly	MONDO:equivalentTo	Orphanet:207012	Spinal muscular atrophy associated with central nervous system anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016132	obsolete rare hereditary disease with peripheral neuropathy	MONDO:equivalentTo	Orphanet:207015	Rare hereditary disease with peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016133	obsolete rare hereditary metabolic disease with peripheral neuropathy	MONDO:equivalentTo	Orphanet:207018	Rare hereditary metabolic disease with peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016134	obsolete rare hereditary systemic disease with peripheral neuropathy	MONDO:equivalentTo	Orphanet:207021	Rare hereditary systemic disease with peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016135	obsolete rare hereditary neurologic disease with peripheral neuropathy	MONDO:equivalentTo	Orphanet:207025	Rare hereditary neurologic disease with peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016137	obsolete acute and subacute inflammatory demyelinating polyneuropathy	MONDO:equivalentTo	Orphanet:207038	Acute and subacute inflammatory demyelinating polyneuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016138	obsolete malignant lymphoma with peripheral neuropathy	MONDO:equivalentTo	Orphanet:207046	Malignant lymphoma with peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016140	sarcoglycanopathy	MONDO:equivalentTo	Orphanet:207052	Qualitative or quantitative defects of sarcoglycan	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016146	caveolinopathy	MONDO:equivalentTo	Orphanet:207078	Qualitative or quantitative defects of caveolin-3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016177	obsolete systemic inflammatory disease associated with an acquired peripheral neuropathy	MONDO:equivalentTo	Orphanet:209007	Systemic inflammatory disease associated with an acquired peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016178	obsolete peripheral neuropathy associated with monoclonal gammopathy	MONDO:equivalentTo	Orphanet:209010	Peripheral neuropathy associated with monoclonal gammopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016180	obsolete hematological disease associated with an acquired peripheral neuropathy	MONDO:equivalentTo	Orphanet:209016	Hematological disease associated with an acquired peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016181	obsolete solid tumor associated with an acquired peripheral neuropathy	MONDO:equivalentTo	Orphanet:209019	Solid tumor associated with an acquired peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016182	qualitative or quantitative defects of protein O-mannose beta1, 2N-acetylglucosaminyltransferase	MONDO:equivalentTo	Orphanet:209024	Qualitative or quantitative defects of protein O-mannose beta1,2N-acetylglucosaminyltransferase	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016200	qualitative or quantitative defects of glucosamine (UDP-N-acetyl)-2-epimerase/N-acetylmannosamine kinase	MONDO:equivalentTo	Orphanet:209203	Qualitative or quantitative defects of glucosamine (UDP-N-acetyl)-2-epimerase/N-acetylmannosamine kinase -	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016228	obsolete rare vascular tumor	MONDO:equivalentTo	Orphanet:211237	Rare vascular tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016233	obsolete rare lymphatic system malformation	MONDO:equivalentTo	Orphanet:211255	Rare lymphatic system anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016235	obsolete complex vascular malformation with associated anomalies	MONDO:equivalentTo	Orphanet:211277	Complex vascular malformation with associated anomalies	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016252	obsolete rare uterine cancer	MONDO:equivalentTo	Orphanet:213564	Rare uterine cancer	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016253	obsolete rare cancer of corpus uteri	MONDO:equivalentTo	Orphanet:213569	Rare cancer of corpus uteri	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016343	obsolete unclassified cardiomyopathy	MONDO:equivalentTo	Orphanet:217678	Unclassified cardiomyopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016347	obsolete rare cardiac rhythm disease	MONDO:equivalentTo	Orphanet:218436	Rare cardiac rhythm disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016397	obsolete lysosomal disease with epilepsy	MONDO:equivalentTo	Orphanet:225681	Lysosomal disease with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016398	obsolete peroxisomal disease with epilepsy	MONDO:equivalentTo	Orphanet:225686	Peroxisomal disease with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016399	obsolete amino acid or protein metabolism disease with epilepsy	MONDO:equivalentTo	Orphanet:225689	Amino acid or protein metabolism disease with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016400	obsolete metal transport or utilization disorder with epilepsy	MONDO:equivalentTo	Orphanet:225692	Metal transport or utilization disorder with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016401	obsolete energy metabolism disorder with epilepsy	MONDO:equivalentTo	Orphanet:225696	Energy metabolism disorder with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016402	obsolete mitochondrial disease with epilepsy	MONDO:equivalentTo	Orphanet:225700	Mitochondrial disease with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016403	obsolete mitochondrial disease with peripheral neuropathy	MONDO:equivalentTo	Orphanet:225703	Mitochondrial disease with peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016404	obsolete metabolic neurotransmission anomaly with epilepsy	MONDO:equivalentTo	Orphanet:225707	Metabolic neurotransmission anomaly with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016405	obsolete sterol metabolism disorder with epilepsy	MONDO:equivalentTo	Orphanet:225710	Sterol metabolism disorder with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016406	obsolete other metabolic disease with epilepsy	MONDO:equivalentTo	Orphanet:225713	Other metabolic disease with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016435	obsolete acquired dermis elastic tissue disorder with decreased elastic tissue	MONDO:equivalentTo	Orphanet:228221	Acquired dermis elastic tissue disorder with decreased elastic tissue	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016436	obsolete acquired dermis elastic tissue disorder with increased elastic tissue	MONDO:equivalentTo	Orphanet:228224	Acquired dermis elastic tissue disorder with increased elastic tissue	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016507	obsolete rare surgically correctable form of primary aldosteronism	MONDO:equivalentTo	Orphanet:231637	Rare surgically correctable form of primary aldosteronism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016508	obsolete rare non surgically correctable form of primary aldosteronism	MONDO:equivalentTo	Orphanet:231641	Rare non surgically correctable form of primary aldosteronism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016517	obsolete rare genetic vascular disease	MONDO:equivalentTo	Orphanet:233655	Rare genetic vascular disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016526	trisomy 9p	MONDO:equivalentTo	Orphanet:262767	Partial trisomy/tetrasomy of the short arm of chromosome 9	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016565	syndromic genetic obesity	MONDO:equivalentTo	Orphanet:240371	Syndromic obesity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016578	obsolete mitochondrial oxidative phosphorylation disorder due to nuclear DNA anomalies	MONDO:equivalentTo	Orphanet:2443	Mitochondrial oxidative phosphorylation disorder due to nuclear DNA anomalies	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016624	inherited deficiency anemia	MONDO:equivalentTo	Orphanet:248296	Constitutional deficiency anemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016625	acquired deficiency anemia	MONDO:equivalentTo	Orphanet:248302	Rare acquired deficiency anemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016628	obsolete hemorrhagic disorder due to a coagulation factors defect	MONDO:equivalentTo	Orphanet:248315	Rare hemorrhagic disorder due to a coagulation factors defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016629	obsolete hemorrhagic disorder due to a platelet anomaly	MONDO:equivalentTo	Orphanet:248326	Rare hemorrhagic disorder due to a platelet anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016631	obsolete hemorrhagic disorder due to an acquired platelet anomaly	MONDO:equivalentTo	Orphanet:248347	Rare hemorrhagic disorder due to an acquired platelet anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016632	obsolete thrombotic disorder due to a coagulation factors defect	MONDO:equivalentTo	Orphanet:248358	Rare thrombotic disorder due to a coagulation factors defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016633	obsolete thrombotic disorder due to a constitutional coagulation factors defect	MONDO:equivalentTo	Orphanet:248361	Rare thrombotic disorder due to a constitutional coagulation factors defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016634	obsolete thrombotic disorder due to an acquired coagulation factors defect	MONDO:equivalentTo	Orphanet:248365	Rare thrombotic disorder due to an acquired coagulation factors defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016635	obsolete thrombotic disorder due to a platelet anomaly	MONDO:equivalentTo	Orphanet:248368	Rare thrombotic disorder due to a platelet anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016636	obsolete thrombotic disorder due to a constitutional platelet anomaly	MONDO:equivalentTo	Orphanet:248401	Rare thrombotic disorder due to a constitutional platelet anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016637	obsolete thrombotic disorder due to an acquired platelet anomaly	MONDO:equivalentTo	Orphanet:248404	Rare thrombotic disorder due to an acquired platelet anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016645	obsolete rare neoplastic disease	MONDO:equivalentTo	Orphanet:250908	Rare neoplastic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016679	obsolete rare tumor of neuroepithelial tissue	MONDO:equivalentTo	Orphanet:251558	Rare tumor of neuroepithelial tissue	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016704	obsolete glial tumor of neuroepithelial tissue with unknown origin	MONDO:equivalentTo	Orphanet:251668	Glial tumor of neuroepithelial tissue with unknown origin	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016717	choroid plexus neoplasm	MONDO:equivalentTo	Orphanet:251896	Choroid plexus tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016788	obsolete genetic hyperferritinemia without iron overload	MONDO:equivalentTo	Orphanet:254704	Genetic hyperferritinemia without iron overload	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016791	obsolete mitochondrial oxidative phosphorylation disorder due to mitochondrial DNA anomalies	MONDO:equivalentTo	Orphanet:254758	Mitochondrial oxidative phosphorylation disorder due to mitochondrial DNA anomalies	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016792	obsolete mitochondrial oxidative phosphorylation disorder due to a large-scale single deletion of mitochondrial DNA	MONDO:equivalentTo	Orphanet:254767	Mitochondrial oxidative phosphorylation disorder due to a large-scale single deletion of mitochondrial DNA	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016793	obsolete mitochondrial oxidative phosphorylation disorder due to a point mutation of mitochondrial DNA	MONDO:equivalentTo	Orphanet:254776	Mitochondrial oxidative phosphorylation disorder due to a point mutation of mitochondrial DNA	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016799	obsolete mitochondrial oxidative phosphorylation disorder with no known mechanism	MONDO:equivalentTo	Orphanet:254822	Mitochondrial oxidative phosphorylation disorder with no known mechanism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016803	unspecified inborn mitochondrial disorder	MONDO:equivalentTo	Orphanet:254837	Unspecified mitochondrial disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016804	obsolete exercise intolerance with lactic acidosis	MONDO:equivalentTo	Orphanet:254843	Exercise intolerance with lactic acidosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016998	obsolete complex chromosomal rearrangement	MONDO:equivalentTo	Orphanet:263708	Complex chromosomal rearrangement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016999	obsolete X chromosome number anomaly	MONDO:equivalentTo	Orphanet:263714	X chromosome number anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017000	obsolete X chromosome number anomaly with female phenotype	MONDO:equivalentTo	Orphanet:263717	X chromosome number anomaly with female phenotype	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017001	obsolete X chromosome number anomaly with male phenotype	MONDO:equivalentTo	Orphanet:263720	X chromosome number anomaly with male phenotype	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017002	obsolete polysomy of X chromosome	MONDO:equivalentTo	Orphanet:263723	Polysomy of X chromosome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017005	obsolete Y chromosome number anomaly	MONDO:equivalentTo	Orphanet:263746	Y chromosome number anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017083	obsolete lipoma associated with neurospinal dysraphism	MONDO:equivalentTo	Orphanet:268832	Lipoma associated with neurospinal dysraphism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017085	obsolete malformation of the neurenteric canal, spinal cord and column	MONDO:equivalentTo	Orphanet:268843	Malformation of the neurenteric canal, spinal cord and column	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017118	obsolete syndrome with a cerebellar malformation as major feature	MONDO:equivalentTo	Orphanet:269523	Syndrome with a cerebellar malformation as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017119	obsolete syndrome with microcephaly as major feature	MONDO:equivalentTo	Orphanet:269528	Syndrome with microcephaly as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017121	obsolete syndrome with a Dandy-Walker malformation as major feature	MONDO:equivalentTo	Orphanet:269546	Syndrome with a Dandy-Walker malformation as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017122	obsolete genetic syndrome with corpus callosum agenesis/dysgenesis as a major feature	MONDO:equivalentTo	Orphanet:269573	Genetic syndrome with corpus callosum agenesis/dysgenesis as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017130	obsolete genetic urogenital tumor	MONDO:equivalentTo	Orphanet:271844	Genetic urogenital tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017141	obsolete hemorrhagic disorder due to a constitutional thrombocytopenia	MONDO:equivalentTo	Orphanet:275729	Rare hemorrhagic disorder due to a constitutional thrombocytopenia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017143	obsolete genetic infertility	MONDO:equivalentTo	Orphanet:275742	Genetic infertility	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017158	obsolete pulmonary hypertension with unclear multifactorial mechanism	MONDO:equivalentTo	Orphanet:275844	Pulmonary hypertension with unclear multifactorial mechanism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017159	obsolete syndrome with pulmonary hypertension as a major feature	MONDO:equivalentTo	Orphanet:275853	Syndrome with pulmonary hypertension as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017166	obsolete rare tumor of salivary glands	MONDO:equivalentTo	Orphanet:276142	Rare tumor of salivary glands	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017259	obsolete systemic diseases with anterior uveitis	MONDO:equivalentTo	Orphanet:280926	Systemic diseases with anterior uveitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017260	obsolete systemic diseases with posterior uveitis	MONDO:equivalentTo	Orphanet:280930	Systemic diseases with posterior uveitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017261	obsolete systemic diseases with panuveitis	MONDO:equivalentTo	Orphanet:280933	Systemic diseases with panuveitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017271	obsolete autosomal ichthyosis syndrome with prominent hair abnormalities	MONDO:equivalentTo	Orphanet:281222	Autosomal ichthyosis syndrome with prominent hair abnormalities	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017272	obsolete autosomal ichthyosis syndrome with prominent neurologics signs	MONDO:equivalentTo	Orphanet:281238	Autosomal ichthyosis syndrome with prominent neurologic signs	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017273	obsolete autosomal ichthyosis syndrome with fatal disease course	MONDO:equivalentTo	Orphanet:281241	Autosomal ichthyosis syndrome with fatal disease course	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017310	Marfan and Marfan-related disorder	MONDO:equivalentTo	Orphanet:284993	Marfan syndrome and Marfan-related disorders	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017341	virus associated tumor	MONDO:equivalentTo	Orphanet:289635	Rare virus associated tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017368	obsolete systemic disease with skin involvement	MONDO:equivalentTo	Orphanet:290836	Systemic disease with skin involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017369	obsolete autoinflammatory syndrome with immune deficiency	MONDO:equivalentTo	Orphanet:290839	Autoinflammatory syndrome with immune deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017370	obsolete autoinflammatory syndrome with skin involvement	MONDO:equivalentTo	Orphanet:290842	Autoinflammatory syndrome with skin involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017388	celiac trunk compression syndrome	MONDO:equivalentTo	Orphanet:293208	Celiac artery compression syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017390	obsolete methylmalonic acidemia without homocystinuria	MONDO:equivalentTo	Orphanet:293355	Methylmalonic acidemia without homocystinuria	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017393	blepharophimosis - intellectual disability syndrome	MONDO:equivalentTo	Orphanet:293642	Blepharophimosis-intellectual disability syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017395	fixed pigmented erythema	MONDO:equivalentTo	Orphanet:293812	Fixed drug eruption	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017399	frontotemporal dementia, right temporal atrophy variant	MONDO:equivalentTo	Orphanet:293848		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017407	deficiency in anterior pituitary function - variable immunodeficiency syndrome	MONDO:equivalentTo	Orphanet:293978	Deficiency in anterior pituitary function-variable immunodeficiency syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017413	Reunion island Larsen syndrome	MONDO:equivalentTo	Orphanet:294049		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017414	obsolete rare nevus	MONDO:equivalentTo	Orphanet:294057	Rare nevus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017421	non-syndromic terminal limb defects	MONDO:equivalentTo	Orphanet:294929		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017422	adactyly of hand	MONDO:equivalentTo	Orphanet:294931		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017423	split hand or/and split foot malformation	MONDO:equivalentTo	Orphanet:294935		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017424	non-syndromic brachydactyly	MONDO:equivalentTo	Orphanet:294937		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017425	preaxial polydactyly of fingers	MONDO:equivalentTo	Orphanet:294939		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017426	postaxial polydactyly of fingers	MONDO:equivalentTo	Orphanet:294942		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017431	non-syndromic limb overgrowth	MONDO:equivalentTo	Orphanet:294953	Non syndromic limb overgrowth	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017432	obsolete syndrome with limb reduction defects	MONDO:equivalentTo	Orphanet:294955	Syndrome with limb reduction defects	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017433	obsolete dysostosis with combined reduction defects of upper and lower limbs	MONDO:equivalentTo	Orphanet:294957	Dysostosis with combined reduction defects of upper and lower limbs	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017434	obsolete syndrome with limb duplication, polydactyly, syndactyly, and/or hyperphalangy	MONDO:equivalentTo	Orphanet:294959	Syndrome with limb duplication, polydactyly, syndactyly, and/or hyperphalangy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017447	congenital absence/hypoplasia of thumb	MONDO:equivalentTo	Orphanet:294988	Congenital hypoplasia of thumb	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017448	congenital absence/hypoplasia of fingers excluding thumb	MONDO:equivalentTo	Orphanet:294990		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017449	split hand	MONDO:equivalentTo	Orphanet:294992		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017450	split foot	MONDO:equivalentTo	Orphanet:294994		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017451	non-syndromic brachydactyly of fingers	MONDO:equivalentTo	Orphanet:294996		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017452	non-syndromic brachydactyly of toes	MONDO:equivalentTo	Orphanet:294998		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017633	obsolete rare intoxication due to medical products	MONDO:equivalentTo	Orphanet:306640	Rare intoxication due to medical products	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017635	obsolete parkinsonian syndrome due to neurodegenerative disease	MONDO:equivalentTo	Orphanet:306666	Rare parkinsonian syndrome due to neurodegenerative disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017637	obsolete rare parkinsonian syndrome due to intoxication	MONDO:equivalentTo	Orphanet:306679	Rare parkinsonian syndrome due to intoxication	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017641	obsolete miscellaneous movement disorder due to neurodegenerative disease	MONDO:equivalentTo	Orphanet:306695	Miscellaneous movement disorder due to neurodegenerative disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017643	obsolete frontotemporal neurodegeneration with movement disorder	MONDO:equivalentTo	Orphanet:306708	Frontotemporal neurodegeneration with movement disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017644	obsolete rare tremor disorder	MONDO:equivalentTo	Orphanet:306712	Rare tremor disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017645	obsolete rare choreic movement disorder	MONDO:equivalentTo	Orphanet:306715	Rare choreic movement disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017646	obsolete neurodegenerative disease with chorea	MONDO:equivalentTo	Orphanet:306719	Neurodegenerative disease with chorea	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017647	obsolete postinfectious autoimmune disease with chorea	MONDO:equivalentTo	Orphanet:306727	Postinfectious autoimmune disease with chorea	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017650	obsolete rare myoclonus	MONDO:equivalentTo	Orphanet:306747	Rare myoclonus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017652	obsolete rare disease with myoclonus as a major feature	MONDO:equivalentTo	Orphanet:306753	Rare disease with myoclonus as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017653	obsolete epilepsy and/or ataxia with myoclonus as major feature	MONDO:equivalentTo	Orphanet:306756	Epilepsy and/or ataxia with myoclonus as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017654	obsolete non progressive epilepsy and/or ataxia with myoclonus as a major feature	MONDO:equivalentTo	Orphanet:306759	Non progressive epilepsy and/or ataxia with myoclonus as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017657	obsolete rare paroxysmal movement disorder	MONDO:equivalentTo	Orphanet:306768	Rare paroxysmal movement disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017660	obsolete rare genetic parkinsonian disorder	MONDO:equivalentTo	Orphanet:307052	Rare genetic parkinsonian disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017661	obsolete rare parkinsonian syndrome due to genetic neurodegenerative disease	MONDO:equivalentTo	Orphanet:307055	Rare parkinsonian syndrome due to genetic neurodegenerative disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017662	obsolete miscellaneous movement disorder due to genetic neurodegenerative disease	MONDO:equivalentTo	Orphanet:307058	Miscellaneous movement disorder due to genetic neurodegenerative disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017663	obsolete inherited tremor disorder	MONDO:equivalentTo	Orphanet:307061	Rare genetic tremor disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017663	obsolete inherited tremor disorder	MONDO:equivalentTo	Orphanet:307064	Rare genetic myoclonus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017665	obsolete rare genetic disease with myoclonus as a major feature	MONDO:equivalentTo	Orphanet:307067	Rare genetic disease with myoclonus as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017678	obsolete obsolete disease with punctate palmoplantar keratoderma as a major feature	MONDO:equivalentTo	Orphanet:308023	Disease with punctate palmoplantar keratoderma as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017679	obsolete obsolete autosomal dominant disease associated with punctate palmoplantar keratoderma as a major feature	MONDO:equivalentTo	Orphanet:308031	Autosomal dominant disease associated with punctate palmoplantar keratoderma as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017680	obsolete autosomal recessive disease associated with punctate palmoplantar keratoderma as a major feature	MONDO:equivalentTo	Orphanet:308041	Autosomal recessive disease associated with punctate palmoplantar keratoderma as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017706	disorder of carbohydrate transmembrane transport and absorption	MONDO:equivalentTo	Orphanet:309001	Disorder of carbohydrate absorption and transport	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017717	obsolete metabolic disease due to other fatty acid oxidation disorder	MONDO:equivalentTo	Orphanet:309133	Metabolic disease due to other fatty acid oxidation disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017718	obsolete mitochondrial disorder due to a defect in assembly or maturation of the respiratory chain complexes	MONDO:equivalentTo	Orphanet:309136	Mitochondrial disorder due to a defect in assembly or maturation of the respiratory chain complexes	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017755	inborn disorder of bilirubin metabolism	MONDO:equivalentTo	Orphanet:309816	Disorder of bilirubin metabolism and excretion	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017788	contractures - webbed neck - micrognathia - hypoplastic nipples syndrome	MONDO:equivalentTo	Orphanet:314002	Contractures-webbed neck-micrognathia-hypoplastic nipples syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017797	obsolete rare odontologic tumor	MONDO:equivalentTo	Orphanet:314425	Rare odontogenic tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017820	obsolete obsolete disease with Cushing syndrome as a major feature	MONDO:equivalentTo	Orphanet:314749	Rare disease with Cushing syndrome as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017841	obsolete autoimmune disease with skin involvement	MONDO:equivalentTo	Orphanet:315350	Autoimmune disease with skin involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017956	obsolete mixed autoinflammatory and autoimmune syndrome	MONDO:equivalentTo	Orphanet:324933	Mixed autoinflammatory and autoimmune syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017957	obsolete unclassified autoinflammatory syndrome	MONDO:equivalentTo	Orphanet:324936	Unclassified autoinflammatory syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017965	obsolete syndrome with 46,XX disorder of sex development	MONDO:equivalentTo	Orphanet:325109	Syndrome with 46,XX disorder of sex development	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017976	obsolete disorder of sex development of gynecological interest	MONDO:equivalentTo	Orphanet:325620	Disorder of sex development of gynecological interest	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017977	obsolete 46,XY disorder of sex development of gynecological interest	MONDO:equivalentTo	Orphanet:325632	46,XY disorder of sex development of gynecological interest	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017978	obsolete syndrome with disorder of sex development of gynecological interest	MONDO:equivalentTo	Orphanet:325638	Syndrome with disorder of sex development of gynecological interest	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017980	syngnathia multiple anomalies	MONDO:equivalentTo	Orphanet:3262	Dobrow syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018003	limbic encephalitis with DPP6 antibodies	MONDO:equivalentTo	Orphanet:329341		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018033	obsolete other immunodeficiency syndromes due to defects in innate immunity	MONDO:equivalentTo	Orphanet:331193	Other immunodeficiency syndromes due to defects in innate immunity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018035	obsolete syndrome with combined immunodeficiency	MONDO:equivalentTo	Orphanet:331217	Syndrome with combined immunodeficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018038	obsolete immunodeficiency with isotype or light chain deficiencies with normal number of B-cells	MONDO:equivalentTo	Orphanet:331232	Immunodeficiency with isotype or light chain deficiencies with normal number of B-cells	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018103	Quinquaud's folliculitis decalvans	MONDO:equivalentTo	Orphanet:346	Quinquaud folliculitis decalvans	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018104	obsolete Torg-Winchester syndrome	MONDO:equivalentTo	Orphanet:3460		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018118	obsolete disorder of phospholipids, sphingolipids and fatty acids biosynthesis with central nervous system predominant involvement	MONDO:equivalentTo	Orphanet:352306	Disorder of phospholipids, sphingolipids and fatty acids biosynthesis with central nervous system predominant involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018119	obsolete disorder of phospholipids, sphingolipids and fatty acids biosynthesis with peripheral nerves predominant involvement	MONDO:equivalentTo	Orphanet:352309	Disorder of phospholipids, sphingolipids and fatty acids biosynthesis with peripheral nerves predominant involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018120	obsolete disorder of phospholipids, sphingolipids and fatty acids biosynthesis with skeletal muscle predominant involvement	MONDO:equivalentTo	Orphanet:352312	Disorder of phospholipids, sphingolipids and fatty acids biosynthesis with skeletal muscle predominant involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018157	obsolete mitochondrial disorder due to a defect in mitochondrial protein synthesis	MONDO:equivalentTo	Orphanet:35696	Mitochondrial disorder due to a defect in mitochondrial protein synthesis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018174	hereditary glaucoma	MONDO:equivalentTo	Orphanet:359	Pediatric-onset glaucoma of genetic origin	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018186	obsolete ring chromosome	MONDO:equivalentTo	Orphanet:363203	Ring chromosome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018200	obsolete acute encephalopathy with inflammation-mediated status epilepticus	MONDO:equivalentTo	Orphanet:363567	Acute encephalopathy with inflammation-mediated status epilepticus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018230	skeletal dysplasia	MONDO:equivalentTo	Orphanet:364526	Primary bone dysplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018231	obsolete primary bone dysplasia with progressive ossification of skin, skeletal muscle, fascia, tendons and ligaments	MONDO:equivalentTo	Orphanet:364531	Primary bone dysplasia with progressive ossification of skin, skeletal muscle, fascia, tendons and ligaments	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018232	obsolete primary bone dysplasia with micromelia	MONDO:equivalentTo	Orphanet:364536	Primary bone dysplasia with micromelia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018235	obsolete dysostosis with limb anomaly as a major feature	MONDO:equivalentTo	Orphanet:364568	Dysostosis with limb anomaly as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018236	obsolete dysostosis with limb and face anomalies as a major feature	MONDO:equivalentTo	Orphanet:364571	Dysostosis with limb and face anomalies as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018265	obsolete rare disorder with dystonia and other neurologic or systemic manifestation	MONDO:equivalentTo	Orphanet:370106	Rare disorder with dystonia and other neurologic or systemic manifestation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018299	obsolete sphingolipidosis with epilepsy	MONDO:equivalentTo	Orphanet:371442	Sphingolipidosis with epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018377	obsolete rare hereditary disease with avascular necrosis	MONDO:equivalentTo	Orphanet:399185	Rare hereditary disease with avascular necrosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018396	obsolete rare male fertility disorder with obstructive azoospermia	MONDO:equivalentTo	Orphanet:399824	Rare disorder with obstructive azoospermia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018400	obsolete rare female infertility due to an adrenal disorder	MONDO:equivalentTo	Orphanet:399849	Rare female infertility due to an adrenal disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018404	obsolete rare genetic male infertility	MONDO:equivalentTo	Orphanet:399980	Rare genetic male infertility	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018409	obsolete rare genetic disorder with obstructive azoospermia	MONDO:equivalentTo	Orphanet:400003	Rare genetic disorder with obstructive azoospermia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018410	obsolete rare genetic female infertility	MONDO:equivalentTo	Orphanet:400008	Rare genetic female infertility	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018412	obsolete rare female infertility due to adrenal disorder of genetic origin	MONDO:equivalentTo	Orphanet:400018	Rare female infertility due to adrenal disorder of genetic origin	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018438	eosinophilic gastrointestinal disease	MONDO:equivalentTo	Orphanet:402029	Primary eosinophilic gastrointestinal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018455	obsolete dysostosis of genetic origin with limb anomaly as a major feature	MONDO:equivalentTo	Orphanet:404571	Dysostosis of genetic origin with limb anomaly as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018457	obsolete rare genetic bone development disorder	MONDO:equivalentTo	Orphanet:404584	Rare genetic bone development disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018488	obsolete rare genetic odontal or periodontal disorder	MONDO:equivalentTo	Orphanet:420755	Rare genetic odontal or periodontal disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018497	obsolete rare autonomic nervous system disorder	MONDO:equivalentTo	Orphanet:423662	Rare autonomic nervous system disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018520	obsolete rare epithelial tumor of pancreas	MONDO:equivalentTo	Orphanet:424033	Rare epithelial tumor of pancreas	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018545	obsolete primary immunodeficiency with predisposition to severe viral infection	MONDO:equivalentTo	Orphanet:431156	Primary immunodeficiency with predisposition to severe viral infection	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018549	obsolete late-onset scapuloperoneal muscular dystrophy with hyaline bodies	MONDO:equivalentTo	Orphanet:431263	Late-onset scapuloperoneal muscular dystrophy with hyaline bodies	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018557	obsolete rare genetic autonomic nervous system disorder	MONDO:equivalentTo	Orphanet:434786	Rare genetic autonomic nervous system disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018609	obsolete syndromic hereditary optic neuropathy	MONDO:equivalentTo	Orphanet:441434	Syndromic hereditary optic neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018627	obsolete ACTH-independent Cushing syndrome due to rare cortisol-producing adrenal tumor	MONDO:equivalentTo	Orphanet:443287	ACTH-independent Cushing syndrome due to rare cortisol-producing adrenal tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018652	obsolete biological anomaly without phenotypic characterization	MONDO:equivalentTo	Orphanet:447874	Biological anomaly without phenotypic characterization	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018675	IgG4-related ophthalmic disorder	MONDO:equivalentTo	Orphanet:449563	IgG4-related ophthalmic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018699	obsolete pseudohypoparathyroidism with Albright hereditary osteodystrophy	MONDO:equivalentTo	Orphanet:457059	Pseudohypoparathyroidism with Albright hereditary osteodystrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018700	obsolete pseudohypoparathyroidism without Albright hereditary osteodystrophy	MONDO:equivalentTo	Orphanet:457062	Pseudohypoparathyroidism without Albright hereditary osteodystrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018718	obsolete vascular tumor with associated anomalies	MONDO:equivalentTo	Orphanet:458827	Vascular tumor with associated anomalies	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018719	obsolete obsolete rare capillary malformation with associated anomalies	MONDO:equivalentTo	Orphanet:458830	Rare capillary malformation with associated anomalies	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018721	obsolete rare combined vascular malformation	MONDO:equivalentTo	Orphanet:458837	Rare combined vascular malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018723	obsolete rare vascular malformation of major vessels	MONDO:equivalentTo	Orphanet:458844	Rare vascular malformation of major vessels	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018727	obsolete immunodeficiency due to a complement regulatory deficiency	MONDO:equivalentTo	Orphanet:459348	Immunodeficiency due to a complement regulatory deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018728	obsolete rare genetic capillary malformation	MONDO:equivalentTo	Orphanet:459526	Rare genetic capillary malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018729	obsolete genetic vascular tumor	MONDO:equivalentTo	Orphanet:459543	Rare genetic vascular tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018730	obsolete rare genetic venous malformation	MONDO:equivalentTo	Orphanet:459548	Rare genetic venous malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018738	benign metanephric tumour	MONDO:equivalentTo	Orphanet:464359	Benign metanephric tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018753	obsolete rare disease with malignant hyperthermia	MONDO:equivalentTo	Orphanet:466658	Rare disease with malignant hyperthermia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018787	obsolete genetic cerebral small vessel disease	MONDO:equivalentTo	Orphanet:477754	Genetic cerebral small vessel disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018789	obsolete COL4A1 or COL4A2-related cerebral small vessel disease with ischemic tendancy	MONDO:equivalentTo	Orphanet:477762	COL4A1 or COL4A2-related cerebral small vessel disease with ischemic tendancy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018790	obsolete COL4A1 or COL4A2-related cerebral small vessel disease with hemorrhagic tendancy	MONDO:equivalentTo	Orphanet:477765	COL4A1 or COL4A2-related cerebral small vessel disease with hemorrhagic tendancy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018791	Moyomoya angiopathy	MONDO:equivalentTo	Orphanet:477768	Moyamoya angiopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018792	obsolete Moyamoya syndrome	MONDO:equivalentTo	Orphanet:477771	Rare disorder with a moyamoya angiopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018797	obsolete genetic cardiac malformation	MONDO:equivalentTo	Orphanet:477805	Genetic cardiac malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018799	obsolete rare hypercholesterolemia	MONDO:equivalentTo	Orphanet:477811	Rare hypercholesterolemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018833	obsolete rare idiopathic macular telangiectasia	MONDO:equivalentTo	Orphanet:482092	Rare idiopathic macular telangiectasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018880	obsolete rare teratologic disease	MONDO:equivalentTo	Orphanet:52662	Rare teratologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018928	obsolete rare hepatic disease	MONDO:equivalentTo	Orphanet:57146	Rare hepatic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018972	obsolete rare epithelial tumor of stomach	MONDO:equivalentTo	Orphanet:63443	Rare epithelial tumor of stomach	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019038	obsolete rare maxillo-facial surgical disease	MONDO:equivalentTo	Orphanet:68329	Rare maxillo-facial surgical disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019039	obsolete rare hemorrhagic disorder due to a constitutional coagulation factors defect	MONDO:equivalentTo	Orphanet:68334	Rare hemorrhagic disorder due to a constitutional coagulation factors defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019040	chromosomal disorder	MONDO:equivalentTo	Orphanet:68335	Rare chromosomal anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019041	obsolete rare genetic inherited tumor	MONDO:equivalentTo	Orphanet:68336	Rare genetic tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019043	obsolete rare genetic skin disease	MONDO:equivalentTo	Orphanet:68346	Rare genetic skin disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019045	obsolete rare sleep disorder	MONDO:equivalentTo	Orphanet:68354	Rare sleep disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019047	obsolete rare deafness	MONDO:equivalentTo	Orphanet:68361	Rare deafness	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019048	obsolete rare vascular disease	MONDO:equivalentTo	Orphanet:68362	Rare vascular disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019049	obsolete rare dystonia	MONDO:equivalentTo	Orphanet:68363	Rare dystonia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019058	obsolete neurometabolic disease	MONDO:equivalentTo	Orphanet:68385	Neurometabolic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019059	obsolete rare parkinsonian disorder	MONDO:equivalentTo	Orphanet:68402	Rare parkinsonian disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019061	obsolete rare parathyroid disease and phosphocalcic metabolism anomaly	MONDO:equivalentTo	Orphanet:68415	Rare parathyroid disease and phosphocalcic metabolism anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019062	obsolete rare infectious disease	MONDO:equivalentTo	Orphanet:68416	Rare infectious disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019068	congenital membranous nephropathy due to maternal anti-neutral endopeptidase alloimmunization	MONDO:equivalentTo	Orphanet:69063	Congenital membranous nephropathy due to fetomaternal anti-neutral endopeptidase alloimmunization	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019096	obsolete rare pulmonary hypertension	MONDO:equivalentTo	Orphanet:71198	Rare pulmonary hypertension	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019099	obsolete rare soft tissue tumor	MONDO:equivalentTo	Orphanet:71209	Rare soft tissue tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019110	obsolete rare central nervous system or retinal vascular disease	MONDO:equivalentTo	Orphanet:71281	Rare central nervous system and retinal vascular disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019117	obsolete genetic nervous system disorder	MONDO:equivalentTo	Orphanet:71859	Rare genetic neurological disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019183	obsolete inherited odontologic disease	MONDO:equivalentTo	Orphanet:77830	Rare genetic odontologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019242	inborn disorder of branched-chain amino acid metabolism	MONDO:equivalentTo	Orphanet:79197	Disorder of branched-chain amino acid metabolism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019282	obsolete syndromic hair shaft abnormality	MONDO:equivalentTo	Orphanet:79367	Syndromic hair shaft abnormality	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019285	obsolete syndromic nail anomaly	MONDO:equivalentTo	Orphanet:79370	Syndromic nail anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019288	skin pigmentation disorder	MONDO:equivalentTo	Orphanet:79374	Pigmentation anomaly of the skin	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019296	subcutaneous tissue disorder	MONDO:equivalentTo	Orphanet:79382	Subcutaneous tissue disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019299	obsolete unclassified genetic skin disorder	MONDO:equivalentTo	Orphanet:79385	Unclassified genetic skin disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019300	obsolete rare skin tumor or hamartoma	MONDO:equivalentTo	Orphanet:79386	Rare skin tumor or hamartoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019304	obsolete rare photodermatosis	MONDO:equivalentTo	Orphanet:79390	Rare photodermatosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019305	obsolete immune deficiency with skin involvement	MONDO:equivalentTo	Orphanet:79391	Immune deficiency with skin involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019417	X-linked intellectual disability-precocious puberty-obesity syndrome	MONDO:equivalentTo	Orphanet:85318		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019426	X-linked intellectual disability-corpus callosum agenesis-spastic quadriparesis syndrome	MONDO:equivalentTo	Orphanet:85330		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019491	obsolete rare intellectual disability	MONDO:equivalentTo	Orphanet:87277	Rare intellectual disability	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019515	obsolete rare dementia	MONDO:equivalentTo	Orphanet:89043	Rare dementia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019519	obsolete rare skin disease	MONDO:equivalentTo	Orphanet:89826	Rare skin disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019546	obsolete other acquired skin disease	MONDO:equivalentTo	Orphanet:90077	Other acquired skin disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019590	obsolete rare endocrine growth disease	MONDO:equivalentTo	Orphanet:90692	Rare endocrine growth disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019684	obsolete rare bone disease	MONDO:equivalentTo	Orphanet:93419	Rare bone disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019704	obsolete primary bone dysplasia with decreased bone density	MONDO:equivalentTo	Orphanet:93446	Primary bone dysplasia with decreased bone density	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019705	obsolete primary bone dysplasia with defective bone mineralization	MONDO:equivalentTo	Orphanet:93447	Primary bone dysplasia with defective bone mineralization	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019709	obsolete cleidocranial dysplasia and isolated cranial ossification defect	MONDO:equivalentTo	Orphanet:93451	Cleidocranial dysplasia and isolated cranial ossification defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019711	obsolete dysostosis with predominant vertebral and costal involvement	MONDO:equivalentTo	Orphanet:93454	Dysostosis with predominant vertebral and costal involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019717	obsolete chromosomal disease with overgrowth	MONDO:equivalentTo	Orphanet:93461	Chromosomal disease with overgrowth	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019741	familial cystic renal disease	MONDO:equivalentTo	Orphanet:93587	Genetic cystic renal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019747	obsolete hematological disorder with renal involvement	MONDO:equivalentTo	Orphanet:93614	Hematological disorder with renal involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019748	obsolete rare cause of hypertension	MONDO:equivalentTo	Orphanet:93618	Rare cause of hypertension	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019749	obsolete rare renal tumor	MONDO:equivalentTo	Orphanet:93619	Rare renal tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019750	obsolete rare renal disease	MONDO:equivalentTo	Orphanet:93626	Rare renal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019759	epispadias	MONDO:equivalentTo	Orphanet:93928	Isolated epispadias	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019827	obsolete disease associated with non-acquired combined pituitary hormone deficiency	MONDO:equivalentTo	Orphanet:95495	Disease associated with non-acquired combined pituitary hormone deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019833	obsolete pituitary hormone deficiency from tumoral origin	MONDO:equivalentTo	Orphanet:95503	Pituitary hormone deficiency of tumoral origin	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019834	obsolete pituitary hormone deficiency from meningeal origin	MONDO:equivalentTo	Orphanet:95505	Pituitary hormone deficiency of meningeal origin	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019843	obsolete pituitary hormone deficiency secondary to a granulomatous disease	MONDO:equivalentTo	Orphanet:95617	Pituitary hormone deficiency secondary to a granulomatous disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019845	iatrogenic or traumatic pituitary deficiency	MONDO:equivalentTo	Orphanet:95619	Post-traumatic pituitary deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019936	obsolete rare otorhinolaryngological malformation	MONDO:equivalentTo	Orphanet:96333	Rare otorhinolaryngological malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019937	obsolete rare gynecologic or obstetric disease	MONDO:equivalentTo	Orphanet:96344	Rare gynecologic or obstetric disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019965	obsolete rare benign ovarian tumor	MONDO:equivalentTo	Orphanet:97293	Rare benign ovarian tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019977	parkinsonism with dementia of Guadeloupe	MONDO:equivalentTo	Orphanet:97355	Caribbean parkinsonism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019996	obsolete rare cardiac disease	MONDO:equivalentTo	Orphanet:97929	Rare cardiac disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019997	obsolete rare gastroenterologic disease	MONDO:equivalentTo	Orphanet:97935	Rare gastroenterologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020000	obsolete rare respiratory disease	MONDO:equivalentTo	Orphanet:97955	Rare respiratory disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020002	obsolete rare surgical thoracic disease	MONDO:equivalentTo	Orphanet:97962	Rare surgical thoracic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020003	obsolete rare surgical cardiac disease	MONDO:equivalentTo	Orphanet:97965	Rare surgical cardiac disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020004	obsolete rare eye disease	MONDO:equivalentTo	Orphanet:97966	Rare ophthalmic disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020005	obsolete rare endocrine disease	MONDO:equivalentTo	Orphanet:97978	Rare endocrine disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020008	obsolete rare immune disease	MONDO:equivalentTo	Orphanet:98004	Rare immune disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020009	obsolete rare neurologic disease	MONDO:equivalentTo	Orphanet:98006	Rare neurologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020010	infectious disorder of the nervous system	MONDO:equivalentTo	Orphanet:98010	Infectious disease of the nervous system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020011	obsolete rare headache disorder	MONDO:equivalentTo	Orphanet:98022	Rare headache	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020013	obsolete rare odontologic disease	MONDO:equivalentTo	Orphanet:98026	Rare odontologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020014	obsolete rare disease with odontological manifestation	MONDO:equivalentTo	Orphanet:98027	Rare disease with odontological manifestation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020015	obsolete rare circulatory system disease	MONDO:equivalentTo	Orphanet:98028	Rare circulatory system disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020016	obsolete rare neurologic disease with psychiatric involvement	MONDO:equivalentTo	Orphanet:98033	Rare neurologic disease with psychiatric involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020017	obsolete rare otorhinolaryngologic disease	MONDO:equivalentTo	Orphanet:98036	Rare otorhinolaryngologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020024	obsolete rare infertility	MONDO:equivalentTo	Orphanet:98047	Rare infertility	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020026	obsolete rare female infertility	MONDO:equivalentTo	Orphanet:98049	Rare female infertility	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020027	obsolete rare allergic disease	MONDO:equivalentTo	Orphanet:98050	Rare allergic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020028	obsolete rare allergic respiratory disease	MONDO:equivalentTo	Orphanet:98052	Rare allergic respiratory disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020029	obsolete rare genetic cardiac disease	MONDO:equivalentTo	Orphanet:98054	Rare genetic cardiac disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020030	obsolete rare genetic renal disease	MONDO:equivalentTo	Orphanet:98056	Rare genetic renal disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020031	obsolete rare tumor	MONDO:equivalentTo	Orphanet:98057	Rare tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020032	obsolete rare urinary tract tumor	MONDO:equivalentTo	Orphanet:98058	Rare urinary tract tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020033	obsolete rare digestive tumor	MONDO:equivalentTo	Orphanet:98059	Rare digestive tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020034	obsolete rare respiratory tract neoplasm	MONDO:equivalentTo	Orphanet:98060	Rare respiratory tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020035	obsolete rare otorhinolaryngologic tumor	MONDO:equivalentTo	Orphanet:98061	Rare otorhinolaryngologic tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020036	obsolete rare nervous system tumor	MONDO:equivalentTo	Orphanet:98062	Rare nervous system tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020038	obsolete gonadal dysgenesis of gynecological interest	MONDO:equivalentTo	Orphanet:98074	Gonadal dysgenesis of gynecological interest	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020042	obsolete syndrome with 46,XY disorder of sex development	MONDO:equivalentTo	Orphanet:98087	Syndrome with 46,XY disorder of sex development	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020048	internal carotid agenesis	MONDO:equivalentTo	Orphanet:981	Internal carotid absence	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020050	obsolete autosomal trisomy	MONDO:equivalentTo	Orphanet:98130	Autosomal trisomy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020051	obsolete total autosomal trisomy	MONDO:equivalentTo	Orphanet:98131	Total autosomal trisomy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020052	obsolete partial autosomal trisomy/tetrasomy	MONDO:equivalentTo	Orphanet:98132	Partial autosomal trisomy/tetrasomy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020053	obsolete total autosomal monosomy	MONDO:equivalentTo	Orphanet:98141	Total autosomal monosomy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020054	obsolete partial autosomal monosomy	MONDO:equivalentTo	Orphanet:98142	Partial autosomal monosomy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020055	obsolete autosomal uniparental disomy	MONDO:equivalentTo	Orphanet:98152	Autosomal uniparental disomy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020056	obsolete uniparental disomy of maternal origin	MONDO:equivalentTo	Orphanet:98153	Maternal uniparental disomy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020057	obsolete uniparental disomy of paternal origin	MONDO:equivalentTo	Orphanet:98154	Paternal uniparental disomy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020058	gonosome anomaly	MONDO:equivalentTo	Orphanet:98155	Sex-chromosome anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020059	obsolete gonosome number anomaly	MONDO:equivalentTo	Orphanet:98156	Sex-chromosome number anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020060	obsolete gonosome structural anomaly	MONDO:equivalentTo	Orphanet:98157	Sex-chromosome structural anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020061	obsolete chromosome Y structural anomaly	MONDO:equivalentTo	Orphanet:98158	Chromosome Y structural anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020062	obsolete chromosome X structural anomaly	MONDO:equivalentTo	Orphanet:98159	Chromosome X structural anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020063	obsolete malformation syndrome with hamartosis	MONDO:equivalentTo	Orphanet:98196	Malformation syndrome with hamartosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020068	postinfectious encephalitis	MONDO:equivalentTo	Orphanet:98253		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020074	progressive myoclonus epilepsy	MONDO:equivalentTo	Orphanet:98261	Progressive myoclonic epilepsy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020078	obsolete acute myeloid leukemia with recurrent genetic anomaly	MONDO:equivalentTo	Orphanet:98277	Acute myeloid leukemia with recurrent genetic anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020090	obsolete male infertility due to gonadal dysgenesis	MONDO:equivalentTo	Orphanet:98313	Male infertility due to gonadal dysgenesis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020100	obsolete rare hemolytic anemia	MONDO:equivalentTo	Orphanet:98363	Rare hemolytic anemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020101	obsolete constitutional hemolytic anemia due to membrane defect	MONDO:equivalentTo	Orphanet:98364	Rare constitutional hemolytic anemia due to a red cell membrane anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020104	obsolete rare constitutional hemolytic anemia due to an enzyme disorder	MONDO:equivalentTo	Orphanet:98369	Rare constitutional hemolytic anemia due to an enzyme disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020109	obsolete constitutional megaloblastic anemia due to vitamin B12 metabolism disorder	MONDO:equivalentTo	Orphanet:98396	Constitutional megaloblastic anemia due to vitamin B12 metabolism disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020126	obsolete rare peripheral neuropathy	MONDO:equivalentTo	Orphanet:98496	Rare peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020136	obsolete neurodegenerative disease with dementia	MONDO:equivalentTo	Orphanet:98534	Neurodegenerative disease with dementia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020138	obsolete ataxia with dementia	MONDO:equivalentTo	Orphanet:98538	Ataxia with dementia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020139	obsolete early-onset ataxia with dementia	MONDO:equivalentTo	Orphanet:98539	Early-onset ataxia with dementia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020140	obsolete late-onset ataxia with dementia	MONDO:equivalentTo	Orphanet:98540	Late-onset ataxia with dementia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020141	obsolete infectious disease with dementia	MONDO:equivalentTo	Orphanet:98542	Infectious disease with dementia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020142	obsolete metabolic disease with dementia	MONDO:equivalentTo	Orphanet:98543	Metabolic disease with dementia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020151	obsolete rare palpebral disease	MONDO:equivalentTo	Orphanet:98560	Rare palpebral disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020152	obsolete rare eyelid malformation	MONDO:equivalentTo	Orphanet:98561	Congenital malformation of the eyelid	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020156	syndromic ankyloblepharon	MONDO:equivalentTo	Orphanet:98565	Syndromic ankyloblepharon filiforme adnatum	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020157	syndromic palpebral coloboma	MONDO:equivalentTo	Orphanet:98566	Syndromic eyelid coloboma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020158	eyelids malposition disorder	MONDO:equivalentTo	Orphanet:98567	Rare eyelid malposition disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020184	obsolete rare eyebrow/eyelashes anomaly	MONDO:equivalentTo	Orphanet:98594	Rare eyebrow/eyelash disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020192	obsolete rare lacrimal system disease	MONDO:equivalentTo	Orphanet:98602	Rare disorder of the lacrimal apparatus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020195	excretory apparatus of the lacrimal system anomaly	MONDO:equivalentTo	Orphanet:98605	Lacrimal drainage system anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020197	EEC syndrome and related syndrome	MONDO:equivalentTo	Orphanet:98609	EEC syndrome and related disorders	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020198	obsolete rare conjunctival disease	MONDO:equivalentTo	Orphanet:98610	Rare disorder with conjunctival involvement as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020206	obsolete rare refraction anomaly	MONDO:equivalentTo	Orphanet:98618	Rare refraction anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020209	obsolete rare hyperopia and astigmatism	MONDO:equivalentTo	Orphanet:98621	Rare hyperopia and astigmatism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020216	secondary dysgenetic glaucoma	MONDO:equivalentTo	Orphanet:98631	Congenital malformation of the eye with glaucoma as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020219	corneogoniodysgenesis	MONDO:equivalentTo	Orphanet:98635	Corneodysgenesis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020222	obsolete rare disease with glaucoma as a major feature	MONDO:equivalentTo	Orphanet:98638	Rare disease with glaucoma as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020223	obsolete lens and zonula anomaly	MONDO:equivalentTo	Orphanet:98639	Rare lens disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020224	obsolete rare cataract	MONDO:equivalentTo	Orphanet:98640	Rare disorder with lens opacification	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020225	obsolete syndromic cataract	MONDO:equivalentTo	Orphanet:98641	Syndromic cataract	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020226	obsolete chromosomal anomaly with cataract	MONDO:equivalentTo	Orphanet:98642	Chromosomal anomaly with cataract	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020228	obsolete cataract associated with a metabolic disease	MONDO:equivalentTo	Orphanet:98644	Metabolic disease with cataract	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020230	obsolete renal disease with cataract	MONDO:equivalentTo	Orphanet:98646	Renal disease with cataract	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020232	obsolete musculoskeletal disease with cataract	MONDO:equivalentTo	Orphanet:98648	Musculoskeletal disease with cataract	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020233	obsolete dentocutaneous disease with cataract	MONDO:equivalentTo	Orphanet:98649	Dentocutaneous disease with cataract	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020234	obsolete craniofacial anomaly with cataract	MONDO:equivalentTo	Orphanet:98650	Craniofacial anomaly with cataract	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020240	syndromic retinitis pigmentosa	MONDO:equivalentTo	Orphanet:98661	Syndromic rod-cone dystrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020246	inherited vitreoretinopathy	MONDO:equivalentTo	Orphanet:98668	Vitreoretinopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020251	obsolete rare strabismus and restriction syndrome	MONDO:equivalentTo	Orphanet:98681	Rare disorder with strabismus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020253	obsolete syndrome with a symptomatic strabismus	MONDO:equivalentTo	Orphanet:98683	Syndromic disorder with strabismus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020254	obsolete craniostenosis associated with a strabismus	MONDO:equivalentTo	Orphanet:98684	Craniostenosis with strabismus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020257	supranuclear oculomotor palsy	MONDO:equivalentTo	Orphanet:98687	Supranuclear eye movement disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020258	obsolete oculomotor apraxia or related oculomotor disease	MONDO:equivalentTo	Orphanet:98688	Oculomotor apraxia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020313	obsolete unclassified myelodysplastic/myeloproliferative disease	MONDO:equivalentTo	Orphanet:98825	Unclassified myelodysplastic/myeloproliferative disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020667	Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis	MONDO:equivalentTo	Orphanet:596008	Antley-Bixler syndrome without genital anomaly or disorder of steroidogenesis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020999	obsolete genetic chronic primary adrenal insufficiency	MONDO:equivalentTo	Orphanet:101960	Genetic chronic primary adrenal insufficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021027	obsolete genetic hair anomaly	MONDO:equivalentTo	Orphanet:183450	Genetic hair anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021028	obsolete genetic nail anomaly	MONDO:equivalentTo	Orphanet:183454	Genetic nail anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021037	obsolete genetic neurodegenerative disease with dementia	MONDO:equivalentTo	Orphanet:276058	Genetic neurodegenerative disease with dementia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021141	acquired	MONDO:equivalentTo	Orphanet:409941		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021181	inherited blood coagulation disorder	MONDO:equivalentTo	Orphanet:183654	Rare genetic coagulation disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021198	obsolete rare genetic disease	MONDO:equivalentTo	Orphanet:98053	Rare genetic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021660	deep seated dermatophytosis	MONDO:equivalentTo	Orphanet:397587	Deep dermatophytosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021690	obsolete congenital left ventricular aneurysm	MONDO:equivalentTo	Orphanet:1055	Congenital left ventricular aneurysm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0022173	chromosome 11q trisomy	MONDO:equivalentTo	Orphanet:262923	Partial duplication of the long arm of chromosome 11	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0022177	chromosome 13q trisomy	MONDO:equivalentTo	Orphanet:262932	Partial duplication of the long arm of chromosome 13	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0022409	nephropathy-associated ciliopathy	MONDO:equivalentTo	Orphanet:156162	Renal ciliopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0022800	type 2 collagenopathy	MONDO:equivalentTo	Orphanet:93421	Type 2 collagen-related bone disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0023188	Freiberg disease	MONDO:equivalentTo	Orphanet:564003	Osteochondrosis of the metatarsal bone	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0023201	Fryns Smeets Thiry syndrome	MONDO:equivalentTo	Orphanet:2058	Fryns-Smeets-Thiry syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0023865	corneal infection	MONDO:equivalentTo	Orphanet:519278	Infective keratitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024145	obsolete Pierre Robin syndrome associated with collagen disease	MONDO:equivalentTo	Orphanet:138041	Pierre Robin syndrome associated with collagen disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024147	obsolete Pierre Robin syndrome associated with a chromosomal anomaly	MONDO:equivalentTo	Orphanet:138047	Pierre Robin syndrome associated with a chromosomal anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024148	obsolete Pierre Robin syndrome associated with branchial archs anomalies	MONDO:equivalentTo	Orphanet:138050	Pierre Robin syndrome associated with branchial archs anomalies	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024149	obsolete Pierre Robin syndrome associated with bone disease	MONDO:equivalentTo	Orphanet:138055	Pierre Robin syndrome associated with bone disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024237	inherited neurodegenerative disorder	MONDO:equivalentTo	Orphanet:183500	Genetic neurodegenerative disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024257	hereditary motor neuron disease	MONDO:equivalentTo	Orphanet:98505	Genetic motor neuron disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024987	obsolete genetic urogenital tract malformation	MONDO:equivalentTo	Orphanet:156622	Genetic urogenital tract malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026141	obsolete genetic urticaria	MONDO:equivalentTo	Orphanet:182734	Genetic urticaria	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026150	obsolete genetic erythrokeratoderma	MONDO:equivalentTo	Orphanet:183438	Genetic erythrokeratoderma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026151	obsolete genetic acrokeratoderma	MONDO:equivalentTo	Orphanet:183441	Genetic acrokeratoderma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026152	obsolete genetic porokeratosis	MONDO:equivalentTo	Orphanet:183444	Genetic porokeratosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026157	obsolete genetic pigmentation anomaly of the skin	MONDO:equivalentTo	Orphanet:183463	Genetic pigmentation anomaly of the skin	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026166	obsolete genetic immune deficiency with skin involvement	MONDO:equivalentTo	Orphanet:183494	Genetic immune deficiency with skin involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026167	obsolete genetic neuromuscular disease	MONDO:equivalentTo	Orphanet:183497	Genetic neuromuscular disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026170	obsolete genetic central nervous system malformation	MONDO:equivalentTo	Orphanet:183506	Genetic central nervous system malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026173	obsolete rare genetic medullar disease	MONDO:equivalentTo	Orphanet:183515	Rare genetic medullar disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026180	obsolete genetic congenital limb malformation	MONDO:equivalentTo	Orphanet:183536	Genetic congenital limb malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026181	obsolete genetic renal or urinary tract malformation	MONDO:equivalentTo	Orphanet:183539	Genetic renal or urinary tract malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026182	obsolete genetic cranial malformation	MONDO:equivalentTo	Orphanet:183542	Genetic cranial malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026183	obsolete genetic digestive tract malformation	MONDO:equivalentTo	Orphanet:183545	Genetic digestive tract malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026184	obsolete genetic visceral malformation of the liver, biliary tract, pancreas or spleen	MONDO:equivalentTo	Orphanet:183548	Genetic visceral malformation of the liver, biliary tract, pancreas or spleen	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026185	obsolete genetic respiratory or mediastinal malformation	MONDO:equivalentTo	Orphanet:183554	Genetic respiratory or mediastinal malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026186	obsolete genetic developmental defect of the eye	MONDO:equivalentTo	Orphanet:183557	Genetic developmental defect of the eye	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026187	obsolete genetic malformation syndrome with short stature	MONDO:equivalentTo	Orphanet:183570	Genetic malformation syndrome with short stature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026188	obsolete genetic overgrowth/obesity syndrome	MONDO:equivalentTo	Orphanet:183573	Genetic overgrowth/obesity syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026189	obsolete genetic branchial arch or oral-acral syndrome	MONDO:equivalentTo	Orphanet:183576	Genetic branchial arch or oral-acral syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026190	obsolete genetic malformation syndrome with odontal and/or periodontal component	MONDO:equivalentTo	Orphanet:183580	Genetic malformation syndrome with odontal and/or periodontal component	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026192	obsolete genetic glomerular disease	MONDO:equivalentTo	Orphanet:183586	Genetic glomerular disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026193	obsolete genetic thrombotic microangiopathy	MONDO:equivalentTo	Orphanet:183589	Genetic thrombotic microangiopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026203	obsolete genetic respiratory malformation	MONDO:equivalentTo	Orphanet:183622	Genetic respiratory malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026209	obsolete genetic polyendocrinopathy	MONDO:equivalentTo	Orphanet:183643	Genetic polyendocrinopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027652	5-fluorouracil toxicity	MONDO:equivalentTo	Orphanet:240839	Prediction of 5-fluorouracil toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027653	abacavir toxicity	MONDO:equivalentTo	Orphanet:240841	Prediction of abacavir toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027655	allopurinol toxicity	MONDO:equivalentTo	Orphanet:240845	Prediction of allopurinol toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027664	cisplatin toxicity	MONDO:equivalentTo	Orphanet:240863	Prediction of cisplatin toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027666	codeine toxicity	MONDO:equivalentTo	Orphanet:240867	Prediction of codeine toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027667	efavirenz toxicity	MONDO:equivalentTo	Orphanet:240869	Prediction of efavirenz toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027668	flucloxacilline toxicity	MONDO:equivalentTo	Orphanet:240871	Prediction of flucloxacilline toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027675	irinotecan toxicity	MONDO:equivalentTo	Orphanet:240885	Prediction of irinotecan toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027677	isoniazid toxicity	MONDO:equivalentTo	Orphanet:240887	Prediction of isoniazid toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027687	raltegravir toxicity	MONDO:equivalentTo	Orphanet:240905	Prediction of raltegravir toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027696	voriconazole toxicity	MONDO:equivalentTo	Orphanet:240921	Prediction of voriconazole toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027750	obsolete serpinopathy with toxic serpin polymerization	MONDO:equivalentTo	Orphanet:250808	Serpinopathy with toxic serpin polymerization	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027751	obsolete serpinopathy with loss of serpin function	MONDO:equivalentTo	Orphanet:250811	Serpinopathy with loss of serpin function	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027929	obsolete genetic polycythemia	MONDO:equivalentTo	Orphanet:250165	Genetic polycythemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0028569	obsolete genetic interstitial lung disease	MONDO:equivalentTo	Orphanet:264992	Genetic interstitial lung disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0028737	obsolete biliary atresia disorder	MONDO:equivalentTo	Orphanet:498345	Biliary atresia and associated disorders	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0028795	obsolete rare genetic systemic or rheumatologic disease	MONDO:equivalentTo	Orphanet:271870	Rare genetic systemic or rheumatologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0028868	obsolete genetic frontotemporal degeneration with dementia	MONDO:equivalentTo	Orphanet:276061	Genetic frontotemporal degeneration with dementia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0029014	obsolete rare systemic or rheumatological disease of childhood	MONDO:equivalentTo	Orphanet:280342	Rare systemic or rheumatological disease of childhood	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0029102	obsolete autosomal ichthyosis syndrome with other associated signs	MONDO:equivalentTo	Orphanet:281244	Autosomal ichthyosis syndrome with other associated signs	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0029810	obsolete laminopathy with striated muscle involvement	MONDO:equivalentTo	Orphanet:300755	Laminopathy with striated muscle involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0029811	obsolete laminopathy with peripheral neuropathy	MONDO:equivalentTo	Orphanet:300758	Laminopathy with peripheral neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0029812	obsolete laminopathy with lipodystrophy	MONDO:equivalentTo	Orphanet:300763	Laminopathy with lipodystrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0029813	obsolete laminopathy with premature aging	MONDO:equivalentTo	Orphanet:300766	Laminopathy with premature aging	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030767	obsolete genetic tumor of hematopoietic and lymphoid tissues	MONDO:equivalentTo	Orphanet:322126	Genetic tumor of hematopoietic and lymphoid tissues	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030947	neurodegeneration, childhood-onset, with hypotonia, respiratory insufficiency, and brain imaging abnormalities	MONDO:equivalentTo	Orphanet:610573	CLCN6-related childhood-onset progressive neurodegeneration-peripheral neuropathy syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031004	obsolete genetic disorder of sex development of gynecological interest	MONDO:equivalentTo	Orphanet:325665	Genetic disorder of sex development of gynecological interest	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031016	obsolete genetic disorder of sex development	MONDO:equivalentTo	Orphanet:325690	Genetic disorder of sex development	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031697	obsolete genetic intractable diarrhea of infancy	MONDO:equivalentTo	Orphanet:363300	Genetic intractable diarrhea of infancy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031698	obsolete genetic intestinal disease due to fat malabsorption	MONDO:equivalentTo	Orphanet:363306	Genetic intestinal disease due to fat malabsorption	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031949	obsolete genetic neurovascular malformation	MONDO:equivalentTo	Orphanet:371436	Genetic neurovascular malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031952	obsolete genetic syndromic esophageal malformation	MONDO:equivalentTo	Orphanet:371445	Genetic syndromic esophageal malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032011	obsolete biological anomaly	MONDO:equivalentTo	Orphanet:377790	Biological anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032013	obsolete clinical syndrome	MONDO:equivalentTo	Orphanet:377792	Clinical syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032014	obsolete particular clinical situation in a disease or syndrome	MONDO:equivalentTo	Orphanet:377793	Particular clinical situation in a disease or syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032221	obsolete rare disorder with female infertility due to a congenital hypogonadotropic hypogonadism	MONDO:equivalentTo	Orphanet:399846	Rare disorder with female infertility due to a congenital hypogonadotropic hypogonadism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032601	inflammatory bowel disease, immunodeficiency, and encephalopathy	MONDO:equivalentTo	Orphanet:565788	Infantile inflammatory bowel disease with neurological involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032705	neurodevelopmental disorder with microcephaly, epilepsy, and hypomyelination	MONDO:equivalentTo	Orphanet:597874	MTHFS-related developmental delay-microcephaly-short stature-epilepsy syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032714	facial dysmorphism, hypertrichosis, epilepsy, intellectual/developmental delay, and gingival overgrowth syndrome	MONDO:equivalentTo	Orphanet:598603	Facial dysmorphism-hypertrichosis-epilepsy-intellectual disability/developmental delay-gingival overgrowth syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032716	leukoencephalopathy, acute reversible, with increased urinary alpha-ketoglutarate	MONDO:equivalentTo	Orphanet:615964	Acute reversible leukoencephalopathy with increased urinary alpha-ketoglutarate	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033056	obsolete genetic facial cleft	MONDO:equivalentTo	Orphanet:414726	Genetic facial cleft	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033169	curariform drugs toxicity	MONDO:equivalentTo	Orphanet:413693	Prediction of curariform drugs toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033170	statin toxicity	MONDO:equivalentTo	Orphanet:413696	Prediction of statin toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033181	phenytoin or carbamazepine toxicity	MONDO:equivalentTo	Orphanet:414750	Prediction of phenytoin or carbamazepine toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033329	obsolete genetic precocious puberty	MONDO:equivalentTo	Orphanet:435554	Genetic precocious puberty	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033331	obsolete genetic precocious puberty in female	MONDO:equivalentTo	Orphanet:435564	Genetic precocious puberty in female	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033334	obsolete genetic nose and cavum anomaly	MONDO:equivalentTo	Orphanet:435606	Genetic nose and cavum anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033335	obsolete genetic larynx anomaly	MONDO:equivalentTo	Orphanet:435609	Genetic larynx anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033336	obsolete genetic tracheal anomaly	MONDO:equivalentTo	Orphanet:435612	Genetic tracheal anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033927	obsolete genetic complex vascular malformation with associated anomalies	MONDO:equivalentTo	Orphanet:459537	Genetic complex vascular malformation with associated anomalies	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034039	obsolete genetic hemoglobinopathy	MONDO:equivalentTo	Orphanet:466066	Genetic hemoglobinopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034443	obsolete genetic non-acquired premature ovarian failure	MONDO:equivalentTo	Orphanet:485382	Genetic non-acquired premature ovarian failure	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034641	obsolete rare genetic hyperkinetic movement disorder	MONDO:equivalentTo	Orphanet:496916	Rare genetic hyperkinetic movement disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034667	obsolete longitudinal limb defect	MONDO:equivalentTo	Orphanet:498457	Longitudinal limb defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034668	obsolete terminal transverse limb defect	MONDO:equivalentTo	Orphanet:498461	Terminal transverse limb defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034733	obsolete cochlear nerve deficiency	MONDO:equivalentTo	Orphanet:502318	Cochlear nerve deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034923	obsolete inflammatory/autoimmune disorder involving the lacrimal system	MONDO:equivalentTo	Orphanet:519264	Inflammatory/autoimmune disorder involving the lacrimal system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034926	obsolete rare disorder with entropion	MONDO:equivalentTo	Orphanet:519270	Rare disorder with entropion	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034931	obsolete rare conjunctivitis	MONDO:equivalentTo	Orphanet:519280	Rare conjunctivitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034937	obsolete syndromic ectopia lentis	MONDO:equivalentTo	Orphanet:519292	Syndromic ectopia lentis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034943	obsolete isolated vitreoretinopathy	MONDO:equivalentTo	Orphanet:519304	Isolated vitreoretinopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034953	obsolete syndromic inherited retinal disorder	MONDO:equivalentTo	Orphanet:519325	Syndromic inherited retinal disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034961	obsolete rare brainstem or cerebellar disorder with ophthalmic involvement as a major feature	MONDO:equivalentTo	Orphanet:519341	Rare brainstem or cerebellar disorder with ophthalmic involvement as a major feature	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034962	obsolete rare ophthalmic disorder with cortical involvement	MONDO:equivalentTo	Orphanet:519343	Rare ophthalmic disorder with cortical involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034965	obsolete rare ophthalmic disorder with cranial nerve involvement	MONDO:equivalentTo	Orphanet:519349	Rare ophthalmic disorder with cranial nerve involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034968	obsolete rare ocular motility/alignment disorder	MONDO:equivalentTo	Orphanet:519355	Rare ocular motility/alignment disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034977	obsolete isolated microspherophakia	MONDO:equivalentTo	Orphanet:519396	Isolated microspherophakia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035001	obsolete rare disorder of the visual organs	MONDO:equivalentTo	Orphanet:520814	Rare disorder of the visual organs	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035013	obsolete genetic primary orthostatic disorder	MONDO:equivalentTo	Orphanet:521232	Genetic primary orthostatic disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035037	obsolete rare genetic disorder of the visual organs	MONDO:equivalentTo	Orphanet:522504	Rare genetic disorder of the visual organs	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035267	obsolete quadricuspid aortic valve	MONDO:equivalentTo	Orphanet:542568	Quadricuspid aortic valve	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035274	obsolete anomaly of the coronary ostia	MONDO:equivalentTo	Orphanet:542822	Anomaly of the coronary ostia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035328	obsolete rare disorder due to poisoning	MONDO:equivalentTo	Orphanet:556508	Rare disorder due to poisoning	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035398	obsolete hypomyelination of early myelinating structures	MONDO:equivalentTo	Orphanet:599376	Hypomyelination of early myelinating structures	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035426	obsolete rare disorder potentially indicated for transplant or complication after transplantation	MONDO:equivalentTo	Orphanet:565779	Rare disorder potentially indicated for transplant or complication after transplantation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035448	obsolete aprosencephaly/atelencephaly spectrum	MONDO:equivalentTo	Orphanet:566847	Aprosencephaly/atelencephaly spectrum	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035451	obsolete left sided atrial isomerism	MONDO:equivalentTo	Orphanet:566862	Left sided atrial isomerism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035469	obsolete primary lymphedema without systemic or visceral involvement	MONDO:equivalentTo	Orphanet:568041	Primary lymphedema without systemic or visceral involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035470	obsolete primary lymphedema with systemic or visceral involvement	MONDO:equivalentTo	Orphanet:568044	Primary lymphedema with systemic or visceral involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035471	obsolete disorder with multisystemic involvement and primary lymphedema	MONDO:equivalentTo	Orphanet:568047	Disorder with multisystemic involvement and primary lymphedema	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035541	obsolete split cord malformation type II	MONDO:equivalentTo	Orphanet:573253	Split cord malformation type II	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035554	obsolete complete atrioventricular septal defect without ventricular hypoplasia	MONDO:equivalentTo	Orphanet:576227	Complete atrioventricular septal defect without ventricular hypoplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035555	obsolete partial atrioventricular septal defect with ventricular hypoplasia	MONDO:equivalentTo	Orphanet:576232	Partial atrioventricular septal defect with ventricular hypoplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035556	obsolete partial atrioventricular septal defect without ventricular hypoplasia	MONDO:equivalentTo	Orphanet:576235	Partial atrioventricular septal defect without ventricular hypoplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035557	obsolete intermediate atrioventricular septal defect	MONDO:equivalentTo	Orphanet:576242	Intermediate atrioventricular septal defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035581	obsolete lethal brain and heart developmental defects	MONDO:equivalentTo	Orphanet:580933	Lethal brain and heart developmental defects	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035780	obsolete non-syndromic anorectal malformation with perineal fistula	MONDO:equivalentTo	Orphanet:600952	Non-syndromic anorectal malformation with perineal fistula	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035781	obsolete non-syndromic anorectal malformation with rectourethral fistula	MONDO:equivalentTo	Orphanet:600961	Non-syndromic anorectal malformation with rectourethral fistula	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035784	obsolete non-syndromic anorectal malformation with rectovesical fistula	MONDO:equivalentTo	Orphanet:600984	Non-syndromic anorectal malformation with rectovesical fistula	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035785	obsolete non-syndromic anorectal malformation with vestibular fistula	MONDO:equivalentTo	Orphanet:600993	Non-syndromic anorectal malformation with vestibular fistula	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035786	obsolete non-syndromic cloacal malformation	MONDO:equivalentTo	Orphanet:600998	Non-syndromic cloacal malformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035787	obsolete non-syndromic anorectal malformation without fistula	MONDO:equivalentTo	Orphanet:601002	Non-syndromic anorectal malformation without fistula	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035788	obsolete non-syndromic anorectal malformation with anal stenosis	MONDO:equivalentTo	Orphanet:601008	Non-syndromic anorectal malformation with anal stenosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035789	obsolete non-syndromic anorectal malformation with pouch colon	MONDO:equivalentTo	Orphanet:601013	Non-syndromic anorectal malformation with pouch colon	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035790	obsolete non-syndromic anorectal malformation with rectal atresia	MONDO:equivalentTo	Orphanet:601018	Non-syndromic anorectal malformation with rectal atresia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035791	obsolete non-syndromic anorectal malformation with rectal stenosis	MONDO:equivalentTo	Orphanet:601023	Non-syndromic anorectal malformation with rectal stenosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035792	obsolete non-syndromic anorectal malformation with rectovaginal fistula	MONDO:equivalentTo	Orphanet:601028	Non-syndromic anorectal malformation with rectovaginal fistula	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035793	obsolete non-syndromic anorectal malformation with h-type fistula	MONDO:equivalentTo	Orphanet:601033	Non-syndromic anorectal malformation with H-type fistula	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035862	obsolete rare syndromic intellectual disability without multiple congenital anomalies/dysmorphic syndrome	MONDO:equivalentTo	Orphanet:611314	Rare syndromic intellectual disability without multiple congenital anomalies/dysmorphic syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035863	obsolete genetic multiple congenital anomalies/dysmorphic syndrome-intellectual disability	MONDO:equivalentTo	Orphanet:611327	Genetic multiple congenital anomalies/dysmorphic syndrome-intellectual disability	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035875	ivermectin toxicity	MONDO:equivalentTo	Orphanet:574637	Prediction of ivermectin toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0035876	belinostat toxicity or dose selection	MONDO:equivalentTo	Orphanet:574671	Prediction of toxicity or dose selection of belinostat	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0036025	toxicity to dolutegravir	MONDO:equivalentTo	Orphanet:596744	Prediction of dolutegravir toxicity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0037716	obsolete rare genetic deafness	MONDO:equivalentTo	Orphanet:96210	Rare genetic deafness	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0037860	obsolete rare systemic or rheumatologic disease	MONDO:equivalentTo	Orphanet:98023	Rare systemic or rheumatologic disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0038261	obsolete genetic neurological channelopathy of the central nervous system	MONDO:equivalentTo	Orphanet:98743	Genetic neurological channelopathy of the central nervous system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0043005	obsolete genetic multiple congenital anomalies/dysmorphic syndrome	MONDO:equivalentTo	Orphanet:183533	Genetic multiple congenital anomalies/dysmorphic syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0043008	obsolete genetic multiple congenital anomalies/dysmorphic syndrome without intellectual disability	MONDO:equivalentTo	Orphanet:330206	Genetic multiple congenital anomalies/dysmorphic syndrome without intellectual disability	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0043164	palmer pagon syndrome	MONDO:equivalentTo	Orphanet:2184	Hydrocephaly-low insertion umbilicus syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044319	intellectual developmental disorder with dysmorphic facies, seizures, and distal limb anomalies	MONDO:equivalentTo	Orphanet:505237	Early-onset seizures-distal limb anomalies-facial dysmorphism-global developmental delay syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044636	obsolete rare hyperkinetic movement disorder	MONDO:equivalentTo	Orphanet:494457	Rare hyperkinetic movement disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044690	optic perineuritis	MONDO:equivalentTo	Orphanet:499107	Idiopathic optic perineuritis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044807	inherited dystonia	MONDO:equivalentTo	Orphanet:391799	Rare genetic dystonia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0060502	neurodevelopmental disorder with progressive microcephaly, spasticity, and brain anomalies	MONDO:equivalentTo	Orphanet:521426	PLAA-associated neurodevelopmental disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0060556	joint laxity, short stature, and myopia	MONDO:equivalentTo	Orphanet:527450	Severe myopia-generalized joint laxity-short stature syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0060627	glycosylphosphatidylinositol biosynthesis defect 15	MONDO:equivalentTo	Orphanet:529665	Neurodevelopmental delay-seizures-ophthalmic anomalies-osteopenia-cerebellar atrophy syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0060707	Ververi-Brady syndrome	MONDO:equivalentTo	Orphanet:580940	QRICH1-related intellectual disability-chondrodysplasia syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0060759	neurodevelopmental disorder with regression, abnormal movements, loss of speech, and seizures	MONDO:equivalentTo	Orphanet:597623	IRF2BPL-related regressive neurodevelopmental disorder-dystonia-seizures syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100255	adenosine kinase deficiency	MONDO:equivalentTo	Orphanet:289290	Hypermethioninemia encephalopathy due to adenosine kinase deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100309	hereditary ataxia	MONDO:equivalentTo	Orphanet:183518	Rare hereditary ataxia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0800028	dyskinesia with orofacial involvement, autosomal dominant	MONDO:equivalentTo	Orphanet:324588	Familial dyskinesia and facial myokymia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:8000030	obsolete morphological anomaly	MONDO:equivalentTo	Orphanet:377791	Morphological anomaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:8000031	obsolete subtype of a disorder	MONDO:equivalentTo	Orphanet:557494	subtype of a disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:8000033	obsolete group of disorders	MONDO:equivalentTo	Orphanet:557492	group of disorders	semapv:UnspecifiedMatching						MONDO_MAPPINGS
