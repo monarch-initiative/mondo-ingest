@@ -1,2 +1,966 @@
-subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	comment
-ID		>A oboInOwl:source	A oboInOwl:hasDbXref	>A sssom:object_label		
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+ID		>A oboInOwl:source	A oboInOwl:hasDbXref								
+MONDO:0000005	alopecia, isolated	MONDO:equivalentTo	OMIMPS:203655		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000009	inherited bleeding disorder, platelet-type	MONDO:equivalentTo	OMIMPS:231200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000023	infantile liver failure	MONDO:equivalentTo	OMIMPS:615438		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000030	sleep-related hypermotor epilepsy	MONDO:equivalentTo	OMIMPS:600513		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000032	febrile seizures, familial	MONDO:equivalentTo	OMIMPS:121210		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000044	hereditary hypophosphatemic rickets	MONDO:equivalentTo	OMIMPS:193100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000045	hypothyroidism, congenital, nongoitrous	MONDO:equivalentTo	OMIMPS:275200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000049	obsolete invasive pneumococcal disease, recurrent isolated	MONDO:equivalentTo	OMIMPS:610799		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000050	isolated congenital growth hormone deficiency	MONDO:equivalentTo	OMIMPS:262400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000062	isolated microphthalmia	MONDO:equivalentTo	OMIMPS:251600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000065	microvascular complications of diabetes, susceptibility	MONDO:equivalentTo	OMIMPS:603933		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000079	nephrolithiasis/osteoporosis, hypophosphatemic	MONDO:equivalentTo	OMIMPS:612286		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000090	progressive external ophthalmoplegia with mitochondrial DNA deletions	MONDO:equivalentTo	OMIMPS:157640		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000104	anemia, hypochromic microcytic with iron overload	MONDO:equivalentTo	OMIMPS:206100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000107	auriculocondylar syndrome	MONDO:equivalentTo	OMIMPS:602483		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000118	reticulate pigment disorder	MONDO:equivalentTo	OMIMPS:179850		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000127	geleophysic dysplasia	MONDO:equivalentTo	OMIMPS:231050		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000128	giant axonal neuropathy	MONDO:equivalentTo	OMIMPS:256850		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000133	immunodeficiency-centromeric instability-facial anomalies syndrome	MONDO:equivalentTo	OMIMPS:242860		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000137	leukoencephalopathy, megalencephalic	MONDO:equivalentTo	OMIMPS:604004		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000141	mosaic variegated aneuploidy syndrome	MONDO:equivalentTo	OMIMPS:257300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000148	pulmonary fibrosis and/or bone marrow failure, telomere-related	MONDO:equivalentTo	OMIMPS:614742		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000152	thiamine-responsive dysfunction syndrome	MONDO:equivalentTo	OMIMPS:249270		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000158	developmental dysplasia of the hip	MONDO:equivalentTo	OMIMPS:142700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000159	bone marrow failure syndrome	MONDO:equivalentTo	OMIMPS:614675		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000160	epilepsy, familial adult myoclonic	MONDO:equivalentTo	OMIMPS:601068		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000166	encephalopathy, acute, infection-induced	MONDO:equivalentTo	OMIMPS:610551		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000169	microphthalmia, isolated, with cataract	MONDO:equivalentTo	OMIMPS:156850		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000170	microphthalmia, isolated, with coloboma	MONDO:equivalentTo	OMIMPS:300345		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000171	muscular dystrophy-dystroglycanopathy, type A	MONDO:equivalentTo	OMIMPS:236670		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000172	muscular dystrophy-dystroglycanopathy, type B	MONDO:equivalentTo	OMIMPS:613155		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000173	muscular dystrophy-dystroglycanopathy, type C	MONDO:equivalentTo	OMIMPS:609308		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000179	Neu-Laxova syndrome	MONDO:equivalentTo	OMIMPS:256520		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000181	microcephaly and chorioretinopathy	MONDO:equivalentTo	OMIMPS:251270		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000182	congenital myasthenic syndrome with tubular aggregates	MONDO:equivalentTo	OMIMPS:610542		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000188	GLUT1 deficiency syndrome	MONDO:equivalentTo	OMIMPS:606777		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000192	polyglucosan body myopathy	MONDO:equivalentTo	OMIMPS:615895		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000193	cortisone reductase deficiency	MONDO:equivalentTo	OMIMPS:604931		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000200	Zimmermann-Laband syndrome	MONDO:equivalentTo	OMIMPS:135500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000204	obsolete skin creases, congenital symmetric circumferential	MONDO:equivalentTo	OMIMPS:156610		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000209	prenatal-onset spinal muscular atrophy with congenital bone fractures	MONDO:equivalentTo	OMIMPS:616866		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000210	thiopurine metabolic disease	MONDO:equivalentTo	OMIMPS:610460		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000211	striatal degeneration, autosomal dominant	MONDO:equivalentTo	OMIMPS:609161		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000212	hypercalcemia, infantile	MONDO:equivalentTo	OMIMPS:143880		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000213	autoimmune disease, multisystem, infantile-onset	MONDO:equivalentTo	OMIMPS:615952		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000214	hypermanganesemia with dystonia	MONDO:equivalentTo	OMIMPS:613280		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000218	obsolete preimplantation embryonic lethality	MONDO:equivalentTo	OMIMPS:616814		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000334	multinodular goiter	MONDO:equivalentTo	OMIMPS:138800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000355	Ullrich congenital muscular dystrophy	MONDO:equivalentTo	OMIMPS:254090		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000358	orofacial cleft	MONDO:equivalentTo	OMIMPS:119530		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000359	spondylocostal dysostosis	MONDO:equivalentTo	OMIMPS:277300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000389	atelosteogenesis	MONDO:equivalentTo	OMIMPS:108720		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000390	vitelliform macular dystrophy	MONDO:equivalentTo	OMIMPS:153840		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000447	autosomal dominant polycystic liver disease	MONDO:equivalentTo	OMIMPS:174050		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000448	paraganglioma	MONDO:equivalentTo	OMIMPS:168000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000453	short QT syndrome	MONDO:equivalentTo	OMIMPS:609620		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000456	cerebral creatine deficiency syndrome	MONDO:equivalentTo	OMIMPS:300352		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000463	Ochoa syndrome	MONDO:equivalentTo	OMIMPS:236730		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000507	inclusion body myopathy with Paget disease of bone and frontotemporal dementia	MONDO:equivalentTo	OMIMPS:167320		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000608	familial juvenile hyperuricemic nephropathy	MONDO:equivalentTo	OMIMPS:162000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000700	familial hemiplegic migraine	MONDO:equivalentTo	OMIMPS:141500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000723	stutter disorder	MONDO:equivalentTo	OMIMPS:184450		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000724	specific language impairment	MONDO:equivalentTo	OMIMPS:606711		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000732	combined oxidative phosphorylation deficiency	MONDO:equivalentTo	OMIMPS:609060		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000733	cornea plana	MONDO:equivalentTo	OMIMPS:121400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000736	dyschromatosis universalis hereditaria	MONDO:equivalentTo	OMIMPS:127500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000816	abdominal obesity-metabolic syndrome	MONDO:equivalentTo	OMIMPS:605552		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000819	anencephaly	MONDO:equivalentTo	OMIMPS:206500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000824	congenital diarrhea	MONDO:equivalentTo	OMIMPS:214700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000863	myopathy, lactic acidosis, and sideroblastic anemia	MONDO:equivalentTo	OMIMPS:600462		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000904	complex cortical dysplasia with other brain malformations	MONDO:equivalentTo	OMIMPS:614039		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000911	obsolete dilated cardiomyopathy 1T	MONDO:equivalentTo	OMIM:613740		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0001029	Klippel-Feil syndrome	MONDO:equivalentTo	OMIMPS:118100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0001115	familial polycythemia	MONDO:equivalentTo	OMIMPS:133100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0001347	facioscapulohumeral muscular dystrophy	MONDO:equivalentTo	OMIMPS:158900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0001384	myopia	MONDO:equivalentTo	OMIMPS:160700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0001549	hemolytic-uremic syndrome	MONDO:equivalentTo	OMIMPS:235400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0001676	erythropoietic protoporphyria	MONDO:equivalentTo	OMIMPS:177000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0001734	tuberous sclerosis	MONDO:equivalentTo	OMIMPS:191100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002010	FG syndrome	MONDO:equivalentTo	OMIMPS:305400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002070	ventricular septal defect	MONDO:equivalentTo	OMIMPS:614429		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002350	familial nephrotic syndrome	MONDO:equivalentTo	OMIMPS:256300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002408	hereditary hyperbilirubinemia	MONDO:equivalentTo	OMIMPS:237450		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002441	Jervell and Lange-Nielsen syndrome	MONDO:equivalentTo	OMIMPS:220400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002457	Treacher-Collins syndrome	MONDO:equivalentTo	OMIMPS:154500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002474	primary hyperoxaluria	MONDO:equivalentTo	OMIMPS:259900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003037	hypotrichosis	MONDO:equivalentTo	OMIMPS:605389		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003122	striatonigral degeneration	MONDO:equivalentTo	OMIMPS:271930		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003233	essential tremor	MONDO:equivalentTo	OMIMPS:190300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003321	hereditary Wilms tumor	MONDO:equivalentTo	OMIMPS:194070		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003582	hereditary breast ovarian cancer syndrome	MONDO:equivalentTo	OMIMPS:604370		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003947	hyper-IgM syndrome	MONDO:equivalentTo	OMIMPS:308230		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0004741	tyrosinemia	MONDO:equivalentTo	OMIMPS:276700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0004822	bronchiectasis	MONDO:equivalentTo	OMIMPS:211400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0004933	hypoplastic left heart syndrome	MONDO:equivalentTo	OMIMPS:241550		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0004980	atopic eczema	MONDO:equivalentTo	OMIMPS:603165		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0004983	spermatogenic failure	MONDO:equivalentTo	OMIMPS:258150		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005081	preeclampsia	MONDO:equivalentTo	OMIMPS:189800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005083	psoriasis	MONDO:equivalentTo	OMIMPS:177900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005115	temporal lobe epilepsy	MONDO:equivalentTo	OMIMPS:600512		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005129	cataract	MONDO:equivalentTo	OMIMPS:116200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005130	celiac disease	MONDO:equivalentTo	OMIMPS:212750		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005144	familial amyotrophic lateral sclerosis	MONDO:equivalentTo	OMIMPS:105400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005150	age-related macular degeneration	MONDO:equivalentTo	OMIMPS:603075		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005180	Parkinson disease	MONDO:equivalentTo	OMIMPS:168600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005265	inflammatory bowel disease	MONDO:equivalentTo	OMIMPS:266600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005281	gallbladder disorder	MONDO:equivalentTo	OMIMPS:600803		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005321	Fuchs' endothelial dystrophy	MONDO:equivalentTo	OMIMPS:136800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005342	IgA glomerulonephritis	MONDO:equivalentTo	OMIMPS:161950		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005345	hypospadias	MONDO:equivalentTo	OMIMPS:300633		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005349	otosclerosis	MONDO:equivalentTo	OMIMPS:166800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005363	focal segmental glomerulosclerosis	MONDO:equivalentTo	OMIMPS:603278		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005382	bone Paget disease	MONDO:equivalentTo	OMIMPS:167250		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005388	primary biliary cholangitis	MONDO:equivalentTo	OMIMPS:109720		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005439	familial hypercholesterolemia	MONDO:equivalentTo	OMIMPS:143890		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005445	visceral leishmaniasis	MONDO:equivalentTo	OMIMPS:608207		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005486	tooth agenesis	MONDO:equivalentTo	OMIMPS:106600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005500	congenital disorder of glycosylation type I	MONDO:equivalentTo	OMIMPS:212065		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005501	congenital disorder of glycosylation type II	MONDO:equivalentTo	OMIMPS:212066		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005514	nanophthalmia	MONDO:equivalentTo	OMIMPS:600165		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005579	epilepsy, idiopathic generalized	MONDO:equivalentTo	OMIMPS:600669		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005711	congenital diaphragmatic hernia	MONDO:equivalentTo	OMIMPS:142340		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005712	congenital nystagmus	MONDO:equivalentTo	OMIMPS:310700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005803	hyperinsulinemic hypoglycemia	MONDO:equivalentTo	OMIMPS:256450		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006037	hydrolethalus syndrome	MONDO:equivalentTo	OMIMPS:236680		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006248	hydatidiform mole	MONDO:equivalentTo	OMIMPS:231090		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006486	uveal melanoma	MONDO:equivalentTo	OMIM:155720	melanoma, uveal	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006507	hereditary hemochromatosis	MONDO:equivalentTo	OMIMPS:235200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006536	congenital generalized lipodystrophy	MONDO:equivalentTo	OMIMPS:608594		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006602	porokeratosis	MONDO:equivalentTo	OMIMPS:175800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0006664	atrial septal defect	MONDO:equivalentTo	OMIMPS:108800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007031	familial abdominal aortic aneurysm	MONDO:equivalentTo	OMIMPS:100070		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007034	Adams-Oliver syndrome	MONDO:equivalentTo	OMIMPS:100300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007061	obsolete acylase, cobalt-activated	MONDO:equivalentTo	OMIM:102590		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007086	autosomal dominant Alport syndrome	MONDO:equivalentTo	OMIM:104200	alport syndrome 3, autosomal dominant	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007101	familial primary localized cutaneous amyloidosis	MONDO:equivalentTo	OMIMPS:105250		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007119	isolated aniridia	MONDO:equivalentTo	OMIMPS:106210		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007139	obsolete Antipyrine metabolism	MONDO:equivalentTo	OMIM:107290	antipyrine metabolism	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007142	Townes-Brocks syndrome	MONDO:equivalentTo	OMIMPS:107480		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007194	familial bicuspid aortic valve	MONDO:equivalentTo	OMIMPS:109730		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007275	carpal tunnel syndrome	MONDO:equivalentTo	OMIMPS:115430		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007318	Alagille syndrome	MONDO:equivalentTo	OMIMPS:118450		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007322	chondrodysplasia punctata, tibial-metacarpal type	MONDO:equivalentTo	OMIM:118651	chondrodysplasia punctata, tibia-metacarpal  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007331	obsolete cleft chin	MONDO:equivalentTo	OMIM:119000	cleft chin	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007339	blepharocheilodontic syndrome	MONDO:equivalentTo	OMIMPS:119580		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007347	obsolete Coxsackievirus B3 susceptibility	MONDO:equivalentTo	OMIM:120050	coxsackievirus b3 susceptibility	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007348	obsolete colchicine resistance	MONDO:equivalentTo	OMIM:120080	colchicine resistance	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007379	Meesmann corneal dystrophy	MONDO:equivalentTo	OMIMPS:122100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007386	obsolete human coronavirus sensitivity	MONDO:equivalentTo	OMIM:122460	human coronavirus sensitivity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007418	Darwinian tubercle of pinna	MONDO:equivalentTo	OMIM:124400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007432	cerebral arteriopathy with subcortical infarcts and leukoencephalopathy	MONDO:equivalentTo	OMIMPS:125310		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007451	diabetes insipidus, nephrogenic, autosomal	MONDO:equivalentTo	OMIM:125800	diabetes insipidus, nephrogenic, 2, autosomal	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007462	multiple sclerosis, susceptibility to	MONDO:equivalentTo	OMIMPS:126200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007464	obsolete isolated distichiasis	MONDO:equivalentTo	OMIM:126300	distichiasis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007473	Duane retraction syndrome	MONDO:equivalentTo	OMIMPS:126800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007477	3-M syndrome	MONDO:equivalentTo	OMIMPS:273750		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007506	obsoleted echo virus 11 sensitivity	MONDO:equivalentTo	OMIM:129150	echo virus 11 sensitivity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007555	pidermolysis bullosa simplex 5A, Ogna type	MONDO:equivalentTo	OMIM:131950	epidermolysis bullosa simplex 5a, ogna  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007602	obsolete favism, susceptibility to	MONDO:equivalentTo	OMIM:134700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007614	congenital fibrosis of extraocular muscles	MONDO:equivalentTo	OMIMPS:135700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007617	Coffin-Siris syndrome 1	MONDO:equivalentTo	OMIM:614562		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007617	Coffin-Siris syndrome 1	MONDO:equivalentTo	OMIM:609943		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007632	obsolete fragile site, Distamycin a type, rare, fra(16)(q22.1)	MONDO:equivalentTo	OMIM:136580	fragile site, distamycin a type, rare, fra(16)(q22.1)	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007634	intellectual disability, FRA12A type	MONDO:equivalentTo	OMIM:136630	intellectual developmental disorder, fra12a  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007659	obsolete giant platelet syndrome with thrombocytopenia	MONDO:equivalentTo	OMIM:137560		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007671	fibronectin glomerulopathy	MONDO:equivalentTo	OMIMPS:137950		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007777	hypertaurinuric cardiomyopathy	MONDO:equivalentTo	OMIM:145350	hypotaurinemic retinal degeneration and cardiomyopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007779	autosomal dominant Opitz G/BBB syndrome	MONDO:equivalentTo	OMIM:145410		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007788	hypertriglyceridemia, familial	MONDO:equivalentTo	OMIM:145750	hypertriglyceridemia 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007796	hypoparathyroidism, familial isolated 1	MONDO:equivalentTo	OMIM:146200	hypoparathyroidism, familial isolated, 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007801	obsolete hypoplasia of teeth roots	MONDO:equivalentTo	OMIM:146400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007818	hyper-IgE recurrent infection syndrome 1	MONDO:equivalentTo	OMIM:146840		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007893	Noonan syndrome with multiple lentigines	MONDO:equivalentTo	OMIMPS:151100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007903	Li-Fraumeni syndrome 1	MONDO:equivalentTo	OMIM:609266		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007934	benign concentric annular macular dystrophy	MONDO:equivalentTo	OMIM:153870	retinitis pigmentosa 91	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007976	mesomelic dwarfism of hypoplastic tibia and radius type	MONDO:equivalentTo	OMIM:156230	mesomelic dwarfism of hypoplastic tibia and radius  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007982	metaphyseal chondrodysplasia, Jansen type	MONDO:equivalentTo	OMIM:156400	metaphyseal chondrodysplasia, jansen  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0007985	metatarsus varus, type 1	MONDO:equivalentTo	OMIM:156520	metatarsus varus,  iia 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008004	familial mitral valve prolapse	MONDO:equivalentTo	OMIMPS:157700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008017	hereditary mucoepithelial dysplasia	MONDO:equivalentTo	OMIM:158310	mucoepithelial dysplasia, hereditary	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008029	Bethlem myopathy	MONDO:equivalentTo	OMIMPS:158810		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008041	myoclonic epilepsy, Hartung type	MONDO:equivalentTo	OMIM:159600	myoclonic epilepsy, hartung  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008046	autosomal dominant myoglobinuria	MONDO:equivalentTo	OMIM:160010	myoglobinuria, autosomal dominant	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008051	tubular aggregate myopathy	MONDO:equivalentTo	OMIMPS:160565		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008074	obsolete nerve growth factor, alpha subunit	MONDO:equivalentTo	OMIM:162020		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008075	schwannomatosis	MONDO:equivalentTo	OMIMPS:162091		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008091	obsolete abnormal neutrophil chemotactic response	MONDO:equivalentTo	OMIM:162820		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008126	obsolete oncogene Yuasa	MONDO:equivalentTo	OMIM:164891		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008163	otofaciocervical syndrome	MONDO:equivalentTo	OMIMPS:166780		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008204	obsolete patella aplasia, coxa vara, and tarsal synostosis	MONDO:equivalentTo	OMIM:168850		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008265	polycystic liver disease 1	MONDO:equivalentTo	OMIM:174050	polycystic liver disease 1 with or without kidney cysts	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008285	polyps, multiple and recurrent inflammatory fibroid, gastrointestinal	MONDO:equivalentTo	OMIM:175510	gist-plus syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008289	brain small vessel disease 1 with or without ocular anomalies	MONDO:equivalentTo	OMIM:607595		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008323	Liddle syndrome	MONDO:equivalentTo	OMIMPS:177200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008394	Silver-Russell syndrome	MONDO:equivalentTo	OMIMPS:180860		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008398	salivary substance, Clostridium botulinum type	MONDO:equivalentTo	OMIM:180950	salivary substance, clostridium botulinum  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008415	obsolete Scholte syndrome	MONDO:equivalentTo	OMIM:181515		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008429	Singleton-Merten dysplasia	MONDO:equivalentTo	OMIMPS:182250		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008473	spondyloepimetaphyseal dysplasia, Maroteaux type	MONDO:equivalentTo	OMIM:184095	spondyloepiphyseal dysplasia, maroteaux  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008490	otospondylomegaepiphyseal dysplasia, autosomal dominant	MONDO:equivalentTo	OMIM:277610		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008511	proximal symphalangism	MONDO:equivalentTo	OMIMPS:185800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008523	Blau syndrome	MONDO:equivalentTo	OMIM:609464		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008548	obsolete theophylline Biotransformation	MONDO:equivalentTo	OMIM:187650	theophylline biotransformation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008625	obsolete urate-binding globulin, decrease 1N	MONDO:equivalentTo	OMIM:191530	urate-binding globulin, decrease 1n	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008630	urinary bladder, atony of	MONDO:equivalentTo	OMIM:191800	bladder dysfunction, autonomic, with impaired pupillary reflex and secondary cakut	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008717	acromesomelic dysplasia 2C, Hunter-Thompson type	MONDO:equivalentTo	OMIM:201250	acromesomelic dysplasia 2c	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008733	familial glucocorticoid deficiency	MONDO:equivalentTo	OMIMPS:202200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008756	alopecia - intellectual disability syndrome	MONDO:equivalentTo	OMIMPS:203650		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008762	autosomal recessive Alport syndrome	MONDO:equivalentTo	OMIM:203780	alport syndrome 2, autosomal recessive	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008774	2-aminoadipic 2-oxoadipic aciduria	MONDO:equivalentTo	OMIM:245130		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008824	fetal akinesia deformation sequence	MONDO:equivalentTo	OMIMPS:208150		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008863	sitosterolemia	MONDO:equivalentTo	OMIMPS:210250		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008885	Elsahy-Waters syndrome	MONDO:equivalentTo	OMIM:603463		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008891	riboflavin transporter deficiency	MONDO:equivalentTo	OMIMPS:211530		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008913	cardiac valvular defect, developmental	MONDO:equivalentTo	OMIM:212093	cardiac valvular dysplasia 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008926	COFS syndrome	MONDO:equivalentTo	OMIMPS:214150		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008939	isolated cerebellar hypoplasia/agenesis	MONDO:equivalentTo	OMIM:213000	cerebellar hypoplasia/atrophy, epilepsy, and global developmental delay	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008947	bilateral striopallidodentate calcinosis	MONDO:equivalentTo	OMIMPS:213600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008975	otospondylomegaepiphyseal dysplasia	MONDO:equivalentTo	OMIMPS:184840		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0008982	central areolar choroidal dystrophy	MONDO:equivalentTo	OMIMPS:215500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009032	cranioectodermal dysplasia	MONDO:equivalentTo	OMIMPS:218330		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009046	Fraser syndrome	MONDO:equivalentTo	OMIMPS:219000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009050	Cushing disease due to pituitary adenoma	MONDO:equivalentTo	OMIM:219090	pituitary adenoma 4, acth-secreting	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009069	congenital lactic acidosis, Saguenay-Lac-Saint-Jean type	MONDO:equivalentTo	OMIM:220111	mitochondrial complex 4 deficiency, nuclear  iia 5	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009092	polycystic lipomembranous osteodysplasia with sclerosing leukoencephaly	MONDO:equivalentTo	OMIMPS:221770		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009105	trichohepatoenteric syndrome	MONDO:equivalentTo	OMIMPS:222470		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009133	cerebellar ataxia, intellectual disability, and dysequilibrium	MONDO:equivalentTo	OMIMPS:224050		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009194	immunodeficiency 32B	MONDO:equivalentTo	OMIM:614894		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009242	brittle cornea syndrome	MONDO:equivalentTo	OMIMPS:229200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009259	gamma-glutamylcysteine synthetase deficiency	MONDO:equivalentTo	OMIM:230450	gamma-glutamylcysteine synthetase deficiency, hemolytic anemia due to	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009261	GM1 gangliosidosis type 2	MONDO:equivalentTo	OMIM:230600	gm1-gangliosidosis,  iia 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009262	GM1 gangliosidosis type 3	MONDO:equivalentTo	OMIM:230650	gm1-gangliosidosis,  iia 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009299	46 XX gonadal dysgenesis	MONDO:equivalentTo	OMIMPS:233300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009302	XY type gonadal dysgenesis-associated anomalies syndrome	MONDO:equivalentTo	OMIM:233430		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009307	granulomatous disease with defect in neutrophil chemotaxis	MONDO:equivalentTo	OMIM:233670		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009366	normal pressure hydrocephalus	MONDO:equivalentTo	OMIM:236690	hydrocephalus, normal-pressure, 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009428	obsolete childhood hypophosphatasia	MONDO:equivalentTo	OMIM:241510	hypophosphatasia, childhood	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009436	congenital hypothalamic hamartoma syndrome	MONDO:equivalentTo	OMIM:241800	pallister-hall-like syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009505	lactic aciduria due to D-lactic acid	MONDO:equivalentTo	OMIM:245450	d-lactic aciduria with gout	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009506	specific granule deficiency	MONDO:equivalentTo	OMIMPS:245480		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009535	obsolete lymphedema, congenital recessive	MONDO:equivalentTo	OMIM:247440		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009553	obsolete Plasmodium falciparum blood infection level	MONDO:equivalentTo	OMIM:248310	plasmodium falciparum blood infection level	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009563	maple syrup urine disease	MONDO:equivalentTo	OMIMPS:248600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009613	methylmalonic aciduria, cblA type	MONDO:equivalentTo	OMIM:251100	methylmalonic aciduria, cbla  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009614	methylmalonic aciduria, cblB type	MONDO:equivalentTo	OMIM:251110	methylmalonic aciduria, cblb  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009626	pseudo-TORCH syndrome	MONDO:equivalentTo	OMIMPS:251290		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009627	Galloway-Mowat syndrome	MONDO:equivalentTo	OMIMPS:251300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009654	obsolete mucopolysaccharidoses, unclassified types	MONDO:equivalentTo	OMIM:252700	mucopolysaccharidoses, unclassified types	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009676	autosomal recessive limb-girdle muscular dystrophy type 2B	MONDO:equivalentTo	OMIM:253601	muscular dystrophy, limb-girdle, autosomal recessive 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009679	arthrogryposis due to muscular dystrophy	MONDO:equivalentTo	OMIM:253900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009685	Miyoshi myopathy	MONDO:equivalentTo	OMIMPS:254130		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009696	juvenile myoclonic epilepsy	MONDO:equivalentTo	OMIMPS:254770		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009726	proteosome-associated autoinflammatory syndrome	MONDO:equivalentTo	OMIMPS:256040		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009801	familial osteodysplasia, Anderson type	MONDO:equivalentTo	OMIM:259250	osteodysplasia, familial, anderson  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009832	pancreatic agenesis	MONDO:equivalentTo	OMIMPS:260370		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009833	Shwachman-Diamond syndrome	MONDO:equivalentTo	OMIMPS:260400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009842	Pelger-Huet-like anomaly and episodic fever with abdominal pain	MONDO:equivalentTo	OMIM:260570	immunodeficiency 108 with autoinflammation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009853	Imerslund-Grasbeck syndrome	MONDO:equivalentTo	OMIMPS:261100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009901	Bartsocas-Papas syndrome	MONDO:equivalentTo	OMIM:263650	bartsocas-papas syndrome 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009935	pulmonary hypertension, primary, autosomal recessive	MONDO:equivalentTo	OMIM:265400	pulmonary hypertension, primary, 5	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0009937	pulmonary venoocclusive disease	MONDO:equivalentTo	OMIMPS:265450		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010002	Rothmund-Thomson syndrome	MONDO:equivalentTo	OMIMPS:268400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010042	spastic diplegia and intellectual disability	MONDO:equivalentTo	OMIM:270600	spastic diplegia and impaired intellectual development	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010045	obsolete paraplegia-brachydactyly-cone-shaped epiphysis syndrome	MONDO:equivalentTo	OMIM:270710		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010205	Wolman disease with hypolipoproteinemia and acanthocytosis	MONDO:equivalentTo	OMIM:278100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010217	de Sanctis-Cacchione syndrome	MONDO:equivalentTo	OMIM:278800	lange sanctis-cacchione syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010244	CGF1	MONDO:equivalentTo	OMIM:300082	cognitive function 1, social	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010258	MEHMO syndrome	MONDO:equivalentTo	OMIM:300987		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010291	obsolete androgen insensitivity syndrome due to coactivator deficiency	MONDO:equivalentTo	OMIM:300274		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010293	ectodermal dysplasia and immune deficiency	MONDO:equivalentTo	OMIMPS:300291		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010295	anhidrotic ectodermal dysplasia-immunodeficiency-osteopetrosis-lymphedema syndrome	MONDO:equivalentTo	OMIM:300301		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010309	intellectual disability, X-linked 42	MONDO:equivalentTo	OMIM:300372	intellectual developmental disorder, X-linked 42	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010327	HSD10 mitochondrial disease	MONDO:equivalentTo	OMIM:300220		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010330	obsolete primary ciliary dyskinesia-retinitis pigmentosa syndrome	MONDO:equivalentTo	OMIM:300455	retinitis pigmentosa and sinorespiratory infections with or without deafness	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010332	X-linked intellectual disability-cubitus valgus-dysmorphism syndrome	MONDO:equivalentTo	OMIM:300471	cubitus valgus with impaired intellectual development and unusual facies	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010339	X-linked epilepsy-learning disabilities-behavior disorders syndrome	MONDO:equivalentTo	OMIM:300491	epilepsy, X-linked 1, with variable learning disabilities and behavior disorders	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010344	intellectual disability, X-linked 45	MONDO:equivalentTo	OMIM:300498	intellectual developmental disorder, X-linked 45	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010346	obsolete MRX52	MONDO:equivalentTo	OMIM:300504		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010357	obsolete MRX78	MONDO:equivalentTo	OMIM:300551		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010368	immunodeficiency without anhidrotic ectodermal dysplasia	MONDO:equivalentTo	OMIM:300584		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010387	obsolete invasive pneumococcal disease, recurrent isolated, 2	MONDO:equivalentTo	OMIM:300640		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010394	obsolete leukoencephalopathy-metaphyseal chondrodysplasia syndrome	MONDO:equivalentTo	OMIM:300660		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010443	macular degeneration, X-linked atrophic	MONDO:equivalentTo	OMIM:300834	macular degeneration, atrophic, X-linked	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010454	intellectual disability, X-linked 88	MONDO:equivalentTo	OMIM:300852	intellectual developmental disorder, X-linked 88	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010470	obsolete Baratela-Scott syndrome	MONDO:equivalentTo	OMIM:300881		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010497	intellectual disability, X-linked 102	MONDO:equivalentTo	OMIM:300958	intellectual developmental disorder, x-linked, syndromic, snijders blok  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010500	intellectual disability, X-linked, syndromic 33	MONDO:equivalentTo	OMIM:300966	intellectual developmental disorder, x-linked, syndromic 33	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010507	Xq25 microduplication syndrome	MONDO:equivalentTo	OMIM:300979	chromosome xq25 duplication syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010508	intellectual disability, X-linked 103	MONDO:equivalentTo	OMIM:300982	intellectual developmental disorder, X-linked 103	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010509	intellectual disability, X-linked 104	MONDO:equivalentTo	OMIM:300983	intellectual developmental disorder, X-linked 104	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010510	intellectual disability, X-linked 105	MONDO:equivalentTo	OMIM:300984	intellectual developmental disorder, X-linked 105	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010512	intellectual disability, X-linked, syndromic, Bain type	MONDO:equivalentTo	OMIM:300986	intellectual developmental disorder, x-linked, syndromic, bain  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010527	obsolete microphthalmia-ankyloblepharon-intellectual disability syndrome	MONDO:equivalentTo	OMIM:301590		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010540	bullous dystrophy, macular type	MONDO:equivalentTo	OMIM:302000	bullous dystrophy, hereditary macular  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010600	granulomatous disease, chronic, X-linked	MONDO:equivalentTo	OMIM:138990		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010601	obsolete gynecomastia, familial	MONDO:equivalentTo	OMIM:306500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010666	obsolete Miles-Carpenter syndrome	MONDO:equivalentTo	OMIM:309605		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010672	linear skin defects with multiple congenital anomalies	MONDO:equivalentTo	OMIMPS:309801		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010720	partial androgen insensitivity syndrome	MONDO:equivalentTo	OMIM:307300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010720	partial androgen insensitivity syndrome	MONDO:equivalentTo	OMIM:312100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010761	retinitis pigmentosa Y-linked	MONDO:equivalentTo	OMIM:400004	retinitis pigmentosa, Y-linked	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010765	46,XY complete gonadal dysgenesis	MONDO:equivalentTo	OMIMPS:400044		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010804	obsolete BRCATA	MONDO:equivalentTo	OMIM:600048		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010826	childhood absence epilepsy	MONDO:equivalentTo	OMIMPS:600131		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010846	exostoses, multiple, type III	MONDO:equivalentTo	OMIM:600209	exostoses, multiple,  iia 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010911	prolactin-producing pituitary gland adenoma	MONDO:equivalentTo	OMIM:600634		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010920	microtia	MONDO:equivalentTo	OMIM:600674	microtia-anotia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010924	D-2-hydroxyglutaric aciduria	MONDO:equivalentTo	OMIMPS:600721		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010936	frontotemporal dementia and/or amyotrophic lateral sclerosis 7	MONDO:equivalentTo	OMIM:614696		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0010957	agonadism, 46,XY, with intellectual disability, short stature, retarded bone age, and multiple extragenital malformations	MONDO:equivalentTo	OMIM:600908		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011023	hereditary mixed polyposis syndrome	MONDO:equivalentTo	OMIMPS:601228		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011028	autosomal recessive limb-girdle muscular dystrophy type 2F	MONDO:equivalentTo	OMIM:601287	muscular dystrophy, limb-girdle, autosomal recessive 6	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011051	lethal short-limb skeletal dysplasia, Al Gazali type	MONDO:equivalentTo	OMIM:601356	lethal short-limb skeletal dysplasia, al gazali  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011090	isolated hereditary congenital facial paralysis	MONDO:equivalentTo	OMIMPS:601471		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011111	obsolete horns in sheep	MONDO:equivalentTo	OMIM:601563		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011170	autosomal recessive limb-girdle muscular dystrophy type 2G	MONDO:equivalentTo	OMIM:601954	muscular dystrophy, limb-girdle, autosomal recessive 7	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011305	cerebral cavernous malformation 3	MONDO:equivalentTo	OMIM:603285	cerebral cavernous malformations 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011346	xanthinuria type II	MONDO:equivalentTo	OMIM:603592	xanthinuria,  iia 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011362	myopathy, myofibrillar, 9, with early respiratory failure	MONDO:equivalentTo	OMIM:607569		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011381	dominant beta-thalassemia	MONDO:equivalentTo	OMIM:603902	beta-thalassemia, dominant inclusion body  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011401	Alzheimer disease without neurofibrillary tangles	MONDO:equivalentTo	OMIM:611155		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011423	autosomal recessive limb-girdle muscular dystrophy type 2E	MONDO:equivalentTo	OMIM:604286	muscular dystrophy, limb-girdle, autosomal recessive 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011457	ataxia-telangiectasia-like disorder	MONDO:equivalentTo	OMIMPS:604391		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011517	pseudohyperaldosteronism type 2	MONDO:equivalentTo	OMIM:605115	hypertension, early-onset, autosomal dominant, with severe exacerbation 1n pregnancy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011525	Carney complex type 2	MONDO:equivalentTo	OMIM:605244	carney complex,  iia 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011543	obsolete BRCA3	MONDO:equivalentTo	OMIM:605365		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011554	obsolete deafness, nonsyndromic, modifier 1	MONDO:equivalentTo	OMIM:605429	deafness, autosomal recessive 26, modifier of	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011555	radio-ulnar synostosis-amegakaryocytic thrombocytopenia syndrome	MONDO:equivalentTo	OMIMPS:605432		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011611	short stature, intellectual disability, callosal agenesis, Heminasal hypoplasia, microphthalmia, and atypical clefting	MONDO:equivalentTo	OMIM:605856	short stature, impaired intellectual development, callosal agenesis, heminasal hypoplasia, microphthalmia, and atypical clefting	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011620	metaphyseal dysplasia, Braun-Tinschert type	MONDO:equivalentTo	OMIM:605946	metaphyseal dysplasia, braun-tinschert  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011675	Charcot-Marie-Tooth Disease, axonal, type 2GG	MONDO:equivalentTo	OMIM:606483	charcot-marie-tooth disease, axonal,  iia 2gg	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011714	partial lipodystrophy, congenital cataracts, and neurodegeneration syndrome	MONDO:equivalentTo	OMIM:606721	lipodystrophy, familial partial,  iia 7	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011725	Crigler-Najjar syndrome type 2	MONDO:equivalentTo	OMIM:606785	crigler-najjar syndrome,  iia 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011766	46,XY gonadal dysgenesis-motor and sensory neuropathy syndrome	MONDO:equivalentTo	OMIM:607080	46,xy gonadal dysgenesis with minifascicular neuropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011773	anauxetic dysplasia	MONDO:equivalentTo	OMIMPS:607095		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011806	osteofibrous dysplasia	MONDO:equivalentTo	OMIM:609143		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011809	obsolete mammographic density	MONDO:equivalentTo	OMIM:607308	mammographic density	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011810	horizontal gaze palsy with progressive scoliosis	MONDO:equivalentTo	OMIMPS:607313		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011827	patent ductus arteriosus	MONDO:equivalentTo	OMIMPS:607411		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011835	sensory ataxic neuropathy, dysarthria, and ophthalmoparesis	MONDO:equivalentTo	OMIM:613832		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011876	juvenile absence epilepsy	MONDO:equivalentTo	OMIMPS:607631		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011899	Noonan syndrome-like disorder with loose anagen hair	MONDO:equivalentTo	OMIMPS:607721		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011910	obsolete autosomal dominant limb-girdle muscular dystrophy type 1C	MONDO:equivalentTo	OMIM:607801		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011922	nonimmune chronic idiopathic neutropenia of adults	MONDO:equivalentTo	OMIM:607847	neutropenia, nonimmune chronic idiopathic, of adults	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011939	Spondyloenchondrodysplasia with immune dysregulation	MONDO:equivalentTo	OMIM:271550		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011945	Gaucher disease perinatal lethal	MONDO:equivalentTo	OMIM:608013	gaucher disease, perinatal lethal	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0011961	hereditary sensory and autonomic neuropathy type 1B	MONDO:equivalentTo	OMIM:608088	neuropathy, hereditary sensory and autonomic,  iia i, with cough and gastroesophageal reflux	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012016	capillary malformation-arteriovenous malformation syndrome	MONDO:equivalentTo	OMIMPS:608354		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012017	Parkes Weber syndrome	MONDO:equivalentTo	OMIM:608355		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012034	autosomal dominant limb-girdle muscular dystrophy type 1F	MONDO:equivalentTo	OMIM:608423	muscular dystrophy, limb-girdle, autosomal dominant 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012037	intellectual disability, autosomal recessive 3	MONDO:equivalentTo	OMIM:608443	intellectual developmental disorder, autosomal recessive 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012061	familial sick sinus syndrome	MONDO:equivalentTo	OMIMPS:608567		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012075	oligodontia-cancer predisposition syndrome	MONDO:equivalentTo	OMIM:608615	oligodontia-colorectal cancer syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012126	familial avascular necrosis of femoral head	MONDO:equivalentTo	OMIMPS:608805		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012127	autosomal recessive limb-girdle muscular dystrophy type 2J	MONDO:equivalentTo	OMIM:608807	muscular dystrophy, limb-girdle, autosomal recessive 10	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012140	obsolete pulmonary function	MONDO:equivalentTo	OMIM:608852	pulmonary function	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012148	obsolete drug metabolism, poor, CYP2D6-related	MONDO:equivalentTo	OMIM:608902	drug metabolism, poor, cyp2d6-related	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012185	spondylometaphyseal dysplasia, A4 type	MONDO:equivalentTo	OMIM:609052	spondylometaphyseal dysplasia,  iia a4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012193	autosomal dominant limb-girdle muscular dystrophy type 1G	MONDO:equivalentTo	OMIM:609115	muscular dystrophy, limb-girdle, autosomal dominant 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012205	autosomal dominant striatal neurodegeneration type 1	MONDO:equivalentTo	OMIM:609161	striatal degeneration, autosomal dominant 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012215	myofibrillar myopathy 3	MONDO:equivalentTo	OMIM:159000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012219	spondyloepiphyseal dysplasia tarda, autosomal recessive, Leroy-Spranger type	MONDO:equivalentTo	OMIM:609223	spondyloepiphyseal dysplasia tarda, autosomal recessive, leroy-spranger  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012221	alpha-N-acetylgalactosaminidase deficiency type 1	MONDO:equivalentTo	OMIM:609241	schindler disease,  iia 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012247	spinocerebellar ataxia type 27	MONDO:equivalentTo	OMIM:609307		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012294	obsolete drug metabolism, poor, Cyp2C19-related	MONDO:equivalentTo	OMIM:609535	drug metabolism, poor, cyp2c19-related	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012337	glaucoma 1, open angle, I	MONDO:equivalentTo	OMIM:609745	glaucoma 1, open angle, 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012417	heart-hand syndrome, Slovenian type	MONDO:equivalentTo	OMIM:610140	heart-hand syndrome, slovenian  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012455	Kleefstra syndrome	MONDO:equivalentTo	OMIMPS:610253		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012461	obsolete bulimia nervosa, susceptibility to, 2	MONDO:equivalentTo	OMIM:610269		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012501	obsolete mutagen sensitivity	MONDO:equivalentTo	OMIM:610452	mutagen sensitivity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012559	primary immunodeficiency syndrome due to p14 deficiency	MONDO:equivalentTo	OMIM:610798	immunodeficiency due to defect 1n mapbp-interacting protein	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012560	obsolete invasive pneumococcal disease, recurrent isolated, 1	MONDO:equivalentTo	OMIM:610799		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012580	hereditary pulmonary alveolar proteinosis	MONDO:equivalentTo	OMIMPS:265120		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012604	isolated microphthalmia 3	MONDO:equivalentTo	OMIM:611038	microphthalmia, syndromic 16	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012652	autosomal recessive limb-girdle muscular dystrophy type 2L	MONDO:equivalentTo	OMIM:611307	muscular dystrophy, limb-girdle, autosomal recessive 12	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012750	lethal arthrogryposis-anterior horn cell disease syndrome	MONDO:equivalentTo	OMIM:611890	congenital arthrogryposis with anterior horn cell disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012759	camptodactyly syndrome, Guadalajara type 3	MONDO:equivalentTo	OMIM:611929	camptodactyly syndrome, guadalajara,  iia 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012815	Coats plus syndrome	MONDO:equivalentTo	OMIMPS:612199		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012839	pyogenic bacterial infections due to MyD88 deficiency	MONDO:equivalentTo	OMIM:612260	immunodeficiency 68	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012853	Fontaine progeroid syndrome	MONDO:equivalentTo	OMIM:233500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012878	Cowden syndrome 2	MONDO:equivalentTo	OMIM:612359		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0012923	congenital generalized lipodystrophy type 3	MONDO:equivalentTo	OMIM:612526	lipodystrophy, congenital generalized,  iia 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013001	obsolete synesthesia	MONDO:equivalentTo	OMIM:612759	synesthesia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013099	combined pituitary hormone deficiencies, genetic form	MONDO:equivalentTo	OMIMPS:613038		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013111	acute infantile liver failure due to synthesis defect of mtDNA-encoded proteins	MONDO:equivalentTo	OMIM:613070	liver failure, infantile, transient	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013144	hereditary antithrombin deficiency	MONDO:equivalentTo	OMIM:613118	antithrombin 3 deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013150	parkinsonism-dystonia, infantile	MONDO:equivalentTo	OMIMPS:613135		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013176	Weill-Marchesani 4 syndrome, recessive	MONDO:equivalentTo	OMIM:613195	weill-marchesani syndrome 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013196	colorectal cancer, hereditary nonpolyposis, type 8	MONDO:equivalentTo	OMIM:613244	lynch syndrome 8	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013225	congenital generalized lipodystrophy type 4	MONDO:equivalentTo	OMIM:613327	lipodystrophy, congenital generalized,  iia 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013229	hot water reflex epilepsy	MONDO:equivalentTo	OMIMPS:613339		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013246	fatty liver disease, nonalcoholic, susceptibility to, 2	MONDO:equivalentTo	OMIM:613387	fatty liver disease, susceptibility to, 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013311	ectodermal dysplasia-syndactyly syndrome	MONDO:equivalentTo	OMIMPS:613573		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013374	supernumerary der(22)t(8;22) syndrome	MONDO:equivalentTo	OMIM:613700	supernumerary der(22)t(8	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013390	autosomal recessive limb-girdle muscular dystrophy type 2Q	MONDO:equivalentTo	OMIM:613723	muscular dystrophy, limb-girdle, autosomal recessive 17	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013476	hypertrophic cardiomyopathy 19	MONDO:equivalentTo	OMIM:613875		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013586	obsolete Chitotriosidase deficiency	MONDO:equivalentTo	OMIM:614122	chitotriosidase deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013596	obsolete nonsyndromic congenital nail disorder 10	MONDO:equivalentTo	OMIM:614157		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013617	obsolete overgrowth-macrocephaly-facial dysmorphism syndrome	MONDO:equivalentTo	OMIM:614192		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013692	BAP1-related tumor predisposition syndrome	MONDO:equivalentTo	OMIM:614327	tumor predisposition syndrome 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013699	colorectal cancer, hereditary nonpolyposis, type 4	MONDO:equivalentTo	OMIM:614337	lynch syndrome 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013701	obsolete MRT32	MONDO:equivalentTo	OMIM:614339		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013710	colorectal cancer, hereditary nonpolyposis, type 5	MONDO:equivalentTo	OMIM:614350	lynch syndrome 5	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013733	obsolete accelerated tumor formation, susceptibility to	MONDO:equivalentTo	OMIM:614401	accelerated tumor formation, susceptibility to	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013736	myopathy, centronuclear, 3	MONDO:equivalentTo	OMIM:614408		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013743	autosomal systemic lupus erythematosus type 16	MONDO:equivalentTo	OMIM:614420	systemic lupus erythematosus 16	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013753	Charcot-Marie-Tooth disease axonal type 2P	MONDO:equivalentTo	OMIM:608591		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013787	psychomotor retardation, epilepsy, and craniofacial dysmorphism	MONDO:equivalentTo	OMIM:614501	neurodevelopmental disorder with hypotonia, craniofacial abnormalities, and seizures	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013856	hypertelorism and other facial dysmorphism, brachydactyly, genital abnormalities, intellectual disability, and recurrent inflammatory episodes	MONDO:equivalentTo	OMIM:614684	hypertelorism and other facial dysmorphism, brachydactyly, genital abnormalities, mental retardation, and recurrent inflammatory episodes	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013892	C3 glomerulonephritis	MONDO:equivalentTo	OMIM:614809	c3 glomerulopathy 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013980	palmoplantar keratoderma, punctate type ib	MONDO:equivalentTo	OMIM:614936	palmoplantar keratoderma, punctate  iia 1b	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0013981	myoclonus, familial	MONDO:equivalentTo	OMIMPS:614937		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014016	hereditary spastic paraplegia 49	MONDO:equivalentTo	OMIM:615031	neuropathy, hereditary sensory and autonomic,  iia ix, with developmental delay	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014017	autism, susceptibility to, 18	MONDO:equivalentTo	OMIM:615032	intellectual developmental disorder with autism and macrocephaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014045	Cowden syndrome 3	MONDO:equivalentTo	OMIM:615106		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014051	cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 2	MONDO:equivalentTo	OMIM:615119	mitochondrial complex 4 deficiency, nuclear  iia 6	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014053	obsolete stomatin-like protein-2, hyperphosphorylation of	MONDO:equivalentTo	OMIM:615121	stomatin-like protein-2, hyperphosphorylation of	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014089	corneal intraepithelial dyskeratosis-palmoplantar hyperkeratosis-laryngeal dyskeratosis syndrome	MONDO:equivalentTo	OMIM:616964		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014121	autosomal dominant childhood-onset proximal spinal muscular atrophy with contractures	MONDO:equivalentTo	OMIM:615290	spinal muscular atrophy, lower extremity-predominant, 2a, childhood onset, autosomal dominant	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014144	autosomal recessive limb-girdle muscular dystrophy type R18	MONDO:equivalentTo	OMIM:615356	muscular dystrophy, limb-girdle, autosomal recessive 18	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014176	hypotonia, infantile, with psychomotor retardation and characteristic facies	MONDO:equivalentTo	OMIMPS:615419		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014186	retinitis pigmentosa with or without situs inversus	MONDO:equivalentTo	OMIM:615434	retinitis pigmentosa 82 with or without situs inversus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014243	Schaaf-Yang syndrome	MONDO:equivalentTo	OMIM:208080		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014270	STT3A-congenital disorder of glycosylation	MONDO:equivalentTo	OMIM:615596	congenital disorder of glycosylation,  iia iw, autosomal recessive	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014330	obsolete eculizumab, poor response to	MONDO:equivalentTo	OMIM:615749	eculizumab, poor response to	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014353	immunodeficiency 23	MONDO:equivalentTo	OMIM:216920		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014412	hyperlipoproteinemia, type 1D	MONDO:equivalentTo	OMIM:615947	hyperlipoproteinemia,  iia 1d	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014424	obsolete congenital deficiency in alpha-fetoprotein	MONDO:equivalentTo	OMIM:615969	alpha-fetoprotein deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014425	obsolete hereditary persistence of alpha-fetoprotein	MONDO:equivalentTo	OMIM:615970	alpha-fetoprotein, hereditary persistence of	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014468	congenital myasthenic syndrome 7	MONDO:equivalentTo	OMIM:616040	myasthenic syndrome, congenital, 7a, presynaptic, and distal motor neuropathy, autosomal dominant	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014471	mitochondrial proton-transporting ATP synthase complex deficiency	MONDO:equivalentTo	OMIMPS:604273		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014488	diabetes mellitus, noninsulin-dependent, 5	MONDO:equivalentTo	OMIM:616087	iia 2 diabetes 5	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014512	PURA-related severe neonatal hypotonia-seizures-encephalopathy syndrome due to a point mutation	MONDO:equivalentTo	OMIM:616158	neurodevelopmental disorder with neonatal respiratory insufficiency, hypotonia, and feeding difficulties	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014567	glutamate pyruvate transaminase 2 deficiency	MONDO:equivalentTo	OMIM:616281	neurodevelopmental disorder with spastic paraplegia and microcephaly	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014631	hypomagnesemia, seizures, and intellectual disability	MONDO:equivalentTo	OMIMPS:616418		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014661	epidermolysis bullosa simplex with nail dystrophy	MONDO:equivalentTo	OMIM:616487	epidermolysis bullosa simplex 5d, generalized intermediate, autosomal recessive	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014667	cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3	MONDO:equivalentTo	OMIM:616500	mitochondrial complex 4 deficiency, nuclear  iia 9	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014668	cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 4	MONDO:equivalentTo	OMIM:616501	mitochondrial complex 4 deficiency, nuclear  iia 13	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014671	neuropathy, hereditary motor and sensory, type 6B	MONDO:equivalentTo	OMIM:616505	neuropathy, hereditary motor and sensory,  iia vib, with optic atrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014679	polymicrogyria, perisylvian, with cerebellar hypoplasia and arthrogryposis	MONDO:equivalentTo	OMIM:616531	neurodevelopmental disorder with spasticity, hypomyelinating leukodystrophy, and brain abnormalities	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014699	intellectual disability, autosomal dominant 40	MONDO:equivalentTo	OMIM:616579	neurodevelopmental disorder with hypotonia, impaired language, and dysmorphic features	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014731	seizures-scoliosis-macrocephaly syndrome	MONDO:equivalentTo	OMIM:616682	seizures, scoliosis, and macrocephaly/microcephaly syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014752	nephrotic syndrome, type 11	MONDO:equivalentTo	OMIM:616730	nephrotic syndrome,  iia 11	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014759	intellectual disability, autosomal recessive 51	MONDO:equivalentTo	OMIM:616739	intellectual developmental disorder, autosomal recessive 51	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014763	obsolete Bombay phenotype	MONDO:equivalentTo	OMIM:616754	bombay phenotype	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014768	cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 2	MONDO:equivalentTo	OMIM:616779	cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy,  iia 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014769	inherited oocyte maturation defect	MONDO:equivalentTo	OMIMPS:615774		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014782	autosomal recessive limb-girdle muscular dystrophy type 2X	MONDO:equivalentTo	OMIM:616812	muscular dystrophy, limb-girdle, autosomal recessive 25	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014783	obsolete preimplantation embryonic lethality 1	MONDO:equivalentTo	OMIM:616814	preimplantation embryonic lethality 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014784	severe hypotonia-psychomotor developmental delay-strabismus-cardiac septal defect syndrome	MONDO:equivalentTo	OMIM:616816	hypotonia, infantile, with psychomotor retardation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014788	autosomal recessive limb-girdle muscular dystrophy type 2W	MONDO:equivalentTo	OMIM:616827	muscular dystrophy, autosomal recessive, with cardiomyopathy and triangular tongue	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014796	autosomal recessive early-onset Parkinson disease 23	MONDO:equivalentTo	OMIM:616840	parkinson disease 23, autosomal recessive early-onset	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014803	spasticity-ataxia-gait anomalies syndrome	MONDO:equivalentTo	OMIM:616859	spasticity, childhood-onset, with hyperglycinemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014804	sideroblastic anemia 3	MONDO:equivalentTo	OMIM:616860	anemia, sideroblastic, 3, pyridoxine-refractory	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014806	spinal muscular atrophy with congenital bone fractures 1	MONDO:equivalentTo	OMIM:271225		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014809	DDX41-related hematologic malignancy predisposition syndrome	MONDO:equivalentTo	OMIM:616871	myeloproliferative/lymphoproliferative neoplasms, familial (multiple types), susceptibility to	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014810	pancytopenia due to IKZF1 mutations	MONDO:equivalentTo	OMIM:616873	immunodeficiency, common variable, 13	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014815	intellectual disability, autosomal recessive 52	MONDO:equivalentTo	OMIM:616887	intellectual developmental disorder, autosomal recessive 52	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014817	nephrotic syndrome, type 12	MONDO:equivalentTo	OMIM:616892	nephrotic syndrome,  iia 12	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014818	nephrotic syndrome, type 13	MONDO:equivalentTo	OMIM:616893	nephrotic syndrome,  iia 13	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014826	obsolete nucleoside diphosphate-linked moiety X Motif 15 deficiency	MONDO:equivalentTo	OMIM:616903	thiopurines, poor metabolism of, 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014832	intellectual disability, autosomal recessive 53	MONDO:equivalentTo	OMIM:616917	neurodevelopmental disorder with or without hypotonia, seizures, and cerebellar atrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014849	obsolete autosomal recessive nonsyndromic deafness 105	MONDO:equivalentTo	OMIM:616958		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014869	hydrops-lactic acidosis-sideroblastic anemia-multisystemic failure syndrome	MONDO:equivalentTo	OMIM:617021	hydrops, lactic acidosis, and sideroblastic anemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014870	NEK9-related lethal skeletal dysplasia	MONDO:equivalentTo	OMIM:617022	lethal congenital contracture syndrome 10	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014876	intellectual disability, autosomal recessive 54	MONDO:equivalentTo	OMIM:617028	intellectual developmental disorder, autosomal recessive 54	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014886	severe growth deficiency-strabismus-extensive dermal melanocytosis-intellectual disability syndrome	MONDO:equivalentTo	OMIM:617051	neurodevelopmental disorder with microcephaly and gray sclerae	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014896	congenital muscular dystrophy-respiratory failure-skin abnormalities-joint hyperlaxity syndrome	MONDO:equivalentTo	OMIM:617066	muscular dystrophy, congenital, davignon-chauveau  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014900	autosomal recessive limb-girdle muscular dystrophy type 2Y	MONDO:equivalentTo	OMIM:617072	myopathy, autosomal recessive, with rigid spine and distal joint contractures	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014904	congenital disorder of glycosylation, type IAA	MONDO:equivalentTo	OMIM:617082	congenital disorder of glycosylation,  iia iaa	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014911	growth retardation, intellectual developmental disorder, hypotonia, and hepatopathy	MONDO:equivalentTo	OMIM:617093	growth retardation, impaired intellectual development, hypotonia, and hepatopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014930	intellectual disability, autosomal recessive 56	MONDO:equivalentTo	OMIM:617125	intellectual developmental disorder, autosomal recessive 56	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014948	short stature, rhizomelic, with microcephaly, micrognathia, and developmental delay	MONDO:equivalentTo	OMIM:617164	short stature-micrognathia syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014951	Sotos syndrome 3	MONDO:equivalentTo	OMIM:617169	intellectual developmental disorder, autosomal recessive 74	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014960	encephalopathy, progressive, early-onset, with brain edema and/or leukoencephalopathy	MONDO:equivalentTo	OMIMPS:617186		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014962	intellectual disability, autosomal recessive 57	MONDO:equivalentTo	OMIM:617188	intellectual developmental disorder, autosomal recessive 57	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014969	isolated sedoheptulokinase deficiency	MONDO:equivalentTo	OMIM:617213	sedoheptulokinase deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014977	autosomal recessive limb-girdle muscular dystrophy type 2R1	MONDO:equivalentTo	OMIM:617232	muscular dystrophy, limb-girdle, autosomal recessive 21	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014978	obsolete preimplantation embryonic lethality 2	MONDO:equivalentTo	OMIM:617234	preimplantation embryonic lethality 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014980	cone-rod dystrophy and hearing loss	MONDO:equivalentTo	OMIMPS:617236		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0014996	intellectual disability, autosomal recessive 58	MONDO:equivalentTo	OMIM:617270	intellectual developmental disorder, autosomal recessive 58	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015012	mucopolysaccharidosis-like syndrome with congenital heart defects and hematopoietic disorders	MONDO:equivalentTo	OMIM:617303	mucopolysaccharidosis-plus syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015020	intellectual disability, autosomal recessive 59	MONDO:equivalentTo	OMIM:617323	intellectual developmental disorder, autosomal recessive 59	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015151	muscular dystrophy, limb-girdle, autosomal dominant	MONDO:equivalentTo	OMIMPS:603511		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015152	autosomal recessive limb-girdle muscular dystrophy	MONDO:equivalentTo	OMIMPS:253600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015168	arthrogryposis multiplex congenita	MONDO:equivalentTo	OMIMPS:617468		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015229	Bardet-Biedl syndrome	MONDO:equivalentTo	OMIMPS:209900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015231	Bartter syndrome	MONDO:equivalentTo	OMIMPS:601678		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015244	autosomal recessive cerebellar ataxia	MONDO:equivalentTo	OMIMPS:213200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015253	Diamond-Blackfan anemia	MONDO:equivalentTo	OMIMPS:105650		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015263	Brugada syndrome	MONDO:equivalentTo	OMIMPS:601144		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015267	Feingold syndrome	MONDO:equivalentTo	OMIMPS:164280		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015279	chronic mucocutaneous candidiasis	MONDO:equivalentTo	OMIMPS:114580		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015280	cardiofaciocutaneous syndrome	MONDO:equivalentTo	OMIMPS:115150		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015353	neuronopathy, distal hereditary motor, type 5A	MONDO:equivalentTo	OMIM:600794	neuronopathy, distal hereditary motor,  iia 5a	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015364	hereditary sensory and autonomic neuropathy	MONDO:equivalentTo	OMIMPS:162400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015375	orofaciodigital syndrome	MONDO:equivalentTo	OMIMPS:311200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015426	Desbuquois dysplasia	MONDO:equivalentTo	OMIMPS:251450		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015452	Coffin-Siris syndrome	MONDO:equivalentTo	OMIMPS:135900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015465	craniometaphyseal dysplasia	MONDO:equivalentTo	OMIMPS:123000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015469	craniosynostosis	MONDO:equivalentTo	OMIMPS:123100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015486	keratoconus	MONDO:equivalentTo	OMIMPS:148300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015517	common variable immunodeficiency	MONDO:equivalentTo	OMIMPS:607594		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015526	cold-induced sweating syndrome	MONDO:equivalentTo	OMIMPS:272430		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015541	genetic hemophagocytic lymphohistiocytosis	MONDO:equivalentTo	OMIMPS:267700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015609	advanced sleep phase syndrome	MONDO:equivalentTo	OMIMPS:604348		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015612	Dent disease	MONDO:equivalentTo	OMIMPS:300009		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015626	Charcot-Marie-Tooth disease	MONDO:equivalentTo	OMIMPS:118220		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015643	photosensitive epilepsy	MONDO:equivalentTo	OMIMPS:132100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015722	congenital vitamin K-dependent coagulation factors deficiency	MONDO:equivalentTo	OMIMPS:277450		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015748	hereditary mucosal leukokeratosis	MONDO:equivalentTo	OMIMPS:193900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015762	progressive familial intrahepatic cholestasis	MONDO:equivalentTo	OMIMPS:211600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015776	rhizomelic chondrodysplasia punctata	MONDO:equivalentTo	OMIMPS:215100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015780	dyskeratosis congenita	MONDO:equivalentTo	OMIMPS:127550		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015797	UV-sensitive syndrome	MONDO:equivalentTo	OMIMPS:600630		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015799	Smith-McCort dysplasia	MONDO:equivalentTo	OMIMPS:607326		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015827	distal renal tubular acidosis	MONDO:equivalentTo	OMIMPS:179800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015855	isolated congenital breast hypoplasia/aplasia	MONDO:equivalentTo	OMIMPS:113700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015912	macrothrombocytopenia and granulocyte inclusions with or without nephritis or sensorineural hearing loss	MONDO:equivalentTo	OMIM:605249		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015912	macrothrombocytopenia and granulocyte inclusions with or without nephritis or sensorineural hearing loss	MONDO:equivalentTo	OMIM:153640		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015912	macrothrombocytopenia and granulocyte inclusions with or without nephritis or sensorineural hearing loss	MONDO:equivalentTo	OMIM:600208		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015942	frontometaphyseal dysplasia	MONDO:equivalentTo	OMIMPS:305620		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015977	agammaglobulinemia	MONDO:equivalentTo	OMIMPS:601495		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015993	cone-rod dystrophy	MONDO:equivalentTo	OMIMPS:120970		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0015999	primary pigmented nodular adrenocortical disease	MONDO:equivalentTo	OMIMPS:610489		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016027	benign neonatal seizures	MONDO:equivalentTo	OMIMPS:121200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016033	Cornelia de Lange syndrome	MONDO:equivalentTo	OMIMPS:122470		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016063	Cowden disease	MONDO:equivalentTo	OMIMPS:158350		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016068	fibrochondrogenesis	MONDO:equivalentTo	OMIMPS:228520		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016070	hereditary gingival fibromatosis	MONDO:equivalentTo	OMIMPS:135300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016073	syndromic microphthalmia	MONDO:equivalentTo	OMIMPS:309800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016085	Cole-Carpenter syndrome	MONDO:equivalentTo	OMIMPS:112240		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016107	myotonic dystrophy	MONDO:equivalentTo	OMIMPS:160900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016166	genetic hyperparathyroidism	MONDO:equivalentTo	OMIMPS:145000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016215	spastic quadriplegic cerebral palsy	MONDO:equivalentTo	OMIMPS:612900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016227	hereditary episodic ataxia	MONDO:equivalentTo	OMIMPS:160120		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016241	alternating hemiplegia of childhood	MONDO:equivalentTo	OMIMPS:104290		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016256	Hennekam syndrome	MONDO:equivalentTo	OMIMPS:235510		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016293	congenital stationary night blindness	MONDO:equivalentTo	OMIMPS:310500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016295	neuronal ceroid lipofuscinosis	MONDO:equivalentTo	OMIMPS:256730		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016296	holoprosencephaly	MONDO:equivalentTo	OMIMPS:236100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016333	familial dilated cardiomyopathy	MONDO:equivalentTo	OMIMPS:115200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016340	familial restrictive cardiomyopathy	MONDO:equivalentTo	OMIMPS:115210		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016342	familial isolated arrhythmogenic right ventricular dysplasia	MONDO:equivalentTo	OMIMPS:107970		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016349	congenital hydrocephalus	MONDO:equivalentTo	OMIMPS:236600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016390	familial hypoparathyroidism	MONDO:equivalentTo	OMIMPS:146200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016470	Ehlers-Danlos/osteogenesis imperfecta syndrome	MONDO:equivalentTo	OMIMPS:619115		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016471	pachyonychia congenita	MONDO:equivalentTo	OMIMPS:167200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016473	familial rhabdoid tumor	MONDO:equivalentTo	OMIMPS:609322		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016483	intracranial berry aneurysm	MONDO:equivalentTo	OMIMPS:105800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016512	Kabuki syndrome	MONDO:equivalentTo	OMIMPS:147920		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016516	Kenny-Caffey syndrome	MONDO:equivalentTo	OMIMPS:127000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016525	familial hyperaldosteronism	MONDO:equivalentTo	OMIMPS:103900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016537	lymphoproliferative syndrome	MONDO:equivalentTo	OMIMPS:308240		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016558	familial congenital mirror movements	MONDO:equivalentTo	OMIMPS:157600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016575	primary ciliary dyskinesia	MONDO:equivalentTo	OMIMPS:244400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016576	split hand-foot malformation	MONDO:equivalentTo	OMIMPS:183600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016584	mandibuloacral dysplasia	MONDO:equivalentTo	OMIMPS:248370		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016596	hyperphosphatasia-intellectual disability syndrome	MONDO:equivalentTo	OMIMPS:239300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016620	primary hypertrophic osteoarthropathy	MONDO:equivalentTo	OMIMPS:259100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016643	frontonasal dysplasia	MONDO:equivalentTo	OMIMPS:136760		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016648	multiple epiphyseal dysplasia	MONDO:equivalentTo	OMIMPS:132400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016649	Warburg micro syndrome	MONDO:equivalentTo	OMIMPS:600118		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016660	autosomal recessive primary microcephaly	MONDO:equivalentTo	OMIMPS:251200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016763	spondylometaphyseal dysplasia	MONDO:equivalentTo	OMIMPS:184255		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016817	Meier-Gorlin syndrome	MONDO:equivalentTo	OMIMPS:224690		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016820	Moyamoya disease	MONDO:equivalentTo	OMIMPS:252350		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016824	infantile myofibromatosis	MONDO:equivalentTo	OMIMPS:228550		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016826	methylmalonic aciduria and homocystinuria	MONDO:equivalentTo	OMIMPS:277400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0016830	Emery-Dreifuss muscular dystrophy	MONDO:equivalentTo	OMIMPS:310300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017123	arthrogryposis-renal dysfunction-cholestasis syndrome	MONDO:equivalentTo	OMIMPS:208085		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017136	omodysplasia	MONDO:equivalentTo	OMIMPS:258315		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017138	Opitz G/BBB syndrome	MONDO:equivalentTo	OMIMPS:300000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017148	heritable pulmonary arterial hypertension	MONDO:equivalentTo	OMIMPS:178600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017161	frontotemporal dementia with motor neuron disease	MONDO:equivalentTo	OMIMPS:105550		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017169	multiple endocrine neoplasia	MONDO:equivalentTo	OMIMPS:131100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017265	autosomal recessive congenital ichthyosis	MONDO:equivalentTo	OMIMPS:242300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017312	Perrault syndrome	MONDO:equivalentTo	OMIMPS:233400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017329	familial vesicoureteral reflux	MONDO:equivalentTo	OMIMPS:193000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017338	fatal multiple mitochondrial dysfunctions syndrome	MONDO:equivalentTo	OMIMPS:605711		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017359	3-methylglutaconic aciduria	MONDO:equivalentTo	OMIMPS:250950		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017398	3MC syndrome	MONDO:equivalentTo	OMIMPS:257920		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017411	neonatal inflammatory skin and bowel disease	MONDO:equivalentTo	OMIMPS:614328		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017417	renal-hepatic-pancreatic dysplasia	MONDO:equivalentTo	OMIMPS:208540		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017425	preaxial polydactyly of fingers	MONDO:equivalentTo	OMIMPS:174400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017436	lethal congenital contracture syndrome	MONDO:equivalentTo	OMIMPS:253310		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017579	Baraitser-Winter cerebrofrontofacial syndrome	MONDO:equivalentTo	OMIMPS:243310		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017610	epidermolysis bullosa simplex	MONDO:equivalentTo	OMIMPS:131760		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017612	junctional epidermolysis bullosa	MONDO:equivalentTo	OMIMPS:226650		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017615	benign familial infantile epilepsy	MONDO:equivalentTo	OMIMPS:601764		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017813	van Maldergem syndrome	MONDO:equivalentTo	OMIMPS:601390		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017824	familial isolated pituitary adenoma	MONDO:equivalentTo	OMIMPS:102200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017838	sclerosteosis	MONDO:equivalentTo	OMIMPS:269500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017842	Senior-Loken syndrome	MONDO:equivalentTo	OMIMPS:266900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017845	spastic ataxia	MONDO:equivalentTo	OMIMPS:108600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017851	erythrokeratodermia variabilis	MONDO:equivalentTo	OMIMPS:133200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017896	familial nonmedullary thyroid carcinoma	MONDO:equivalentTo	OMIMPS:188550		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017923	multiple synostoses syndrome	MONDO:equivalentTo	OMIMPS:186500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017951	trichorhinophalangeal syndrome	MONDO:equivalentTo	OMIMPS:190350		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017990	catecholaminergic polymorphic ventricular tachycardia	MONDO:equivalentTo	OMIMPS:604772		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0017996	obsolete blepharophimosis - intellectual disability syndrome due to UBE3B deficiency	MONDO:equivalentTo	OMIM:615057		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018023	hemoglobin M disease	MONDO:equivalentTo	OMIM:617971	methemoglobinemia, beta  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018037	hyper-IgE syndrome	MONDO:equivalentTo	OMIMPS:147060		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018053	trichothiodystrophy	MONDO:equivalentTo	OMIMPS:601675		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018054	familial atrial fibrillation	MONDO:equivalentTo	OMIMPS:608583		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018065	isolated trigonocephaly	MONDO:equivalentTo	OMIMPS:190440		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018094	Waardenburg syndrome	MONDO:equivalentTo	OMIMPS:193500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018096	Weill-Marchesani syndrome	MONDO:equivalentTo	OMIMPS:277600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018100	familial primary hypomagnesemia	MONDO:equivalentTo	OMIMPS:602014		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018106	hereditary xanthinuria	MONDO:equivalentTo	OMIMPS:278300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018116	galactosemia	MONDO:equivalentTo	OMIMPS:230400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018138	obsolete ocular albinism with congenital sensorineural hearing loss	MONDO:equivalentTo	OMIM:103470		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018151	coenzyme Q10 deficiency	MONDO:equivalentTo	OMIMPS:607426		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018158	mitochondrial DNA depletion syndrome	MONDO:equivalentTo	OMIMPS:603041		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018190	autosomal dominant childhood-onset proximal spinal muscular atrophy	MONDO:equivalentTo	OMIMPS:158600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018214	generalized epilepsy with febrile seizures plus	MONDO:equivalentTo	OMIMPS:604233		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018305	chronic granulomatous disease	MONDO:equivalentTo	OMIMPS:306400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018306	Griscelli syndrome	MONDO:equivalentTo	OMIMPS:214450		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018307	neurodegeneration with brain iron accumulation	MONDO:equivalentTo	OMIMPS:234200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018309	Hirschsprung disease	MONDO:equivalentTo	OMIMPS:142623		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018319	familial episodic pain syndrome	MONDO:equivalentTo	OMIMPS:615040		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018363	focal facial dermal dysplasia	MONDO:equivalentTo	OMIMPS:136500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018458	familial hypocalciuric hypercalcemia	MONDO:equivalentTo	OMIMPS:145980		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018470	renal agenesis	MONDO:equivalentTo	OMIMPS:191830		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018542	severe congenital neutropenia	MONDO:equivalentTo	OMIMPS:202700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018543	autosomal dominant hypocalcemia	MONDO:equivalentTo	OMIMPS:601198		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018555	hypogonadotropic hypogonadism	MONDO:equivalentTo	OMIMPS:147950		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018630	hereditary nonpolyposis colon cancer	MONDO:equivalentTo	OMIMPS:120435		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018677	visceral heterotaxy	MONDO:equivalentTo	OMIMPS:306955		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018768	familial cold autoinflammatory syndrome	MONDO:equivalentTo	OMIMPS:120100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018770	Jeune syndrome	MONDO:equivalentTo	OMIMPS:208500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018772	Joubert syndrome	MONDO:equivalentTo	OMIMPS:213300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018781	KID syndrome	MONDO:equivalentTo	OMIMPS:148210		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018801	congenital bilateral absence of vas deferens	MONDO:equivalentTo	OMIMPS:277180		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018805	bile duct cyst	MONDO:equivalentTo	OMIM:603003	bile duct cysts	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018820	recurrent metabolic encephalomyopathic crises-rhabdomyolysis-cardiac arrhythmia-intellectual disability syndrome	MONDO:equivalentTo	OMIM:616878	metabolic crises, recurrent, with rhabdomyolysis, cardiac arrhythmias, and neurodegeneration	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018827	familial chilblain lupus	MONDO:equivalentTo	OMIMPS:610448		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018838	lissencephaly spectrum disorders	MONDO:equivalentTo	OMIMPS:607432		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018841	congenital bile acid synthesis defect	MONDO:equivalentTo	OMIMPS:607765		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018866	Aicardi-Goutieres syndrome	MONDO:equivalentTo	OMIMPS:225750		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018870	arterial calcification of infancy	MONDO:equivalentTo	OMIMPS:208000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018875	Li-Fraumeni syndrome	MONDO:equivalentTo	OMIMPS:151623		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018901	left ventricular noncompaction	MONDO:equivalentTo	OMIMPS:604169		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018910	oculocutaneous albinism	MONDO:equivalentTo	OMIMPS:203100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018921	Meckel syndrome	MONDO:equivalentTo	OMIMPS:249000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018940	congenital myasthenic syndrome	MONDO:equivalentTo	OMIMPS:601462		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018943	myofibrillar myopathy	MONDO:equivalentTo	OMIMPS:601419		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018947	centronuclear myopathy	MONDO:equivalentTo	OMIMPS:160150		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018949	distal myopathy	MONDO:equivalentTo	OMIMPS:160500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018950	3-methylcrotonyl-CoA carboxylase deficiency	MONDO:equivalentTo	OMIMPS:210200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018953	parietal foramina	MONDO:equivalentTo	OMIMPS:168500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018954	Loeys-Dietz syndrome	MONDO:equivalentTo	OMIMPS:609192		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018958	nemaline myopathy	MONDO:equivalentTo	OMIMPS:161800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018965	Alport syndrome	MONDO:equivalentTo	OMIMPS:301050		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018997	Noonan syndrome	MONDO:equivalentTo	OMIMPS:163950		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018998	Leber congenital amaurosis	MONDO:equivalentTo	OMIMPS:204000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019005	nephronophthisis	MONDO:equivalentTo	OMIMPS:256100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019008	benign recurrent intrahepatic cholestasis	MONDO:equivalentTo	OMIMPS:243300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019012	Carpenter syndrome	MONDO:equivalentTo	OMIMPS:201000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019019	osteogenesis imperfecta	MONDO:equivalentTo	OMIMPS:166200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019026	autosomal recessive osteopetrosis	MONDO:equivalentTo	OMIMPS:259700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019046	leukodystrophy	MONDO:equivalentTo	OMIMPS:312080		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019064	hereditary spastic paraplegia	MONDO:equivalentTo	OMIMPS:303350		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019078	Ritscher-Schinzel syndrome	MONDO:equivalentTo	OMIMPS:220210		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019111	familial thrombocytosis	MONDO:equivalentTo	OMIMPS:187950		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019162	pseudohypoaldosteronism type 2	MONDO:equivalentTo	OMIMPS:145260		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019165	central precocious puberty	MONDO:equivalentTo	OMIMPS:176400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019169	pyruvate dehydrogenase deficiency	MONDO:equivalentTo	OMIMPS:312170		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019171	familial long QT syndrome	MONDO:equivalentTo	OMIMPS:192500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019180	hereditary hemorrhagic telangiectasia	MONDO:equivalentTo	OMIMPS:187300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019181	non-syndromic X-linked intellectual disability	MONDO:equivalentTo	OMIMPS:309530		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019187	Axenfeld-Rieger syndrome	MONDO:equivalentTo	OMIMPS:180500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019188	Rubinstein-Taybi syndrome	MONDO:equivalentTo	OMIMPS:180849		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019200	retinitis pigmentosa	MONDO:equivalentTo	OMIMPS:268000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019201	thyrotoxic periodic paralysis	MONDO:equivalentTo	OMIMPS:188580		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019234	peroxisome biogenesis disorder	MONDO:equivalentTo	OMIMPS:214100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019249	mucopolysaccharidosis	MONDO:equivalentTo	OMIMPS:607014		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019284	inherited isolated nail anomaly	MONDO:equivalentTo	OMIMPS:161050		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019287	ectodermal dysplasia syndrome	MONDO:equivalentTo	OMIMPS:305100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019312	Hermansky-Pudlak syndrome	MONDO:equivalentTo	OMIMPS:203300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019313	lymphatic malformation	MONDO:equivalentTo	OMIMPS:153100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019342	Seckel syndrome	MONDO:equivalentTo	OMIMPS:210600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019347	peeling skin syndrome	MONDO:equivalentTo	OMIMPS:270300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019348	obsolete Ehlers-Danlos syndrome with periventricular heterotopia	MONDO:equivalentTo	OMIM:300537		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019349	Sotos syndrome	MONDO:equivalentTo	OMIMPS:117550		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019354	Stickler syndrome	MONDO:equivalentTo	OMIMPS:108300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019375	megalencephaly-polymicrogyria-postaxial polydactyly-hydrocephalus syndrome	MONDO:equivalentTo	OMIMPS:603387		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019391	Fanconi anemia	MONDO:equivalentTo	OMIMPS:227650		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019403	congenital dyserythropoietic anemia	MONDO:equivalentTo	OMIMPS:224120		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019490	progressive familial heart block	MONDO:equivalentTo	OMIMPS:113900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019501	Usher syndrome	MONDO:equivalentTo	OMIMPS:276900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019502	autosomal recessive non-syndromic intellectual disability	MONDO:equivalentTo	OMIMPS:249500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019503	anterior segment dysgenesis	MONDO:equivalentTo	OMIMPS:107250		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019507	amelogenesis imperfecta	MONDO:equivalentTo	OMIMPS:104500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019516	exudative vitreoretinopathy	MONDO:equivalentTo	OMIMPS:133780		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019587	autosomal dominant nonsyndromic hearing loss	MONDO:equivalentTo	OMIMPS:124900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019588	hearing loss, autosomal recessive	MONDO:equivalentTo	OMIMPS:220290		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019623	hereditary angioedema	MONDO:equivalentTo	OMIMPS:106100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019625	familial thoracic aortic aneurysm and aortic dissection	MONDO:equivalentTo	OMIMPS:607086		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019631	persistent hyperplastic primary vitreous	MONDO:equivalentTo	OMIMPS:221900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019648	achondrogenesis	MONDO:equivalentTo	OMIMPS:200600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019675	spondyloepimetaphyseal dysplasia with joint laxity	MONDO:equivalentTo	OMIMPS:271640		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019696	acromesomelic dysplasia	MONDO:equivalentTo	OMIMPS:602875		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019719	congenital anomaly of kidney and urinary tract	MONDO:equivalentTo	OMIMPS:610805		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019797	acrodysostosis	MONDO:equivalentTo	OMIMPS:101800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019852	inherited primary ovarian failure	MONDO:equivalentTo	OMIMPS:311360		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019942	distal arthrogryposis	MONDO:equivalentTo	OMIMPS:108120		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0019978	Robinow syndrome	MONDO:equivalentTo	OMIMPS:268310		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020066	Ehlers-Danlos syndrome	MONDO:equivalentTo	OMIMPS:130000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020074	progressive myoclonus epilepsy	MONDO:equivalentTo	OMIMPS:254800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020088	familial partial lipodystrophy	MONDO:equivalentTo	OMIMPS:151660		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020099	inherited sideroblastic anemia	MONDO:equivalentTo	OMIMPS:300751		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020119	X-linked syndromic intellectual disability	MONDO:equivalentTo	OMIMPS:309510		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020135	pontocerebellar hypoplasia	MONDO:equivalentTo	OMIMPS:607596		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020290	atrioventricular septal defect	MONDO:equivalentTo	OMIMPS:606215		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020310	familial focal epilepsy with variable foci	MONDO:equivalentTo	OMIMPS:604364		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020341	periventricular nodular heterotopia	MONDO:equivalentTo	OMIMPS:300049		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020364	posterior polymorphous corneal dystrophy	MONDO:equivalentTo	OMIMPS:122000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020380	autosomal dominant cerebellar ataxia	MONDO:equivalentTo	OMIMPS:164400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020381	patterned macular dystrophy	MONDO:equivalentTo	OMIMPS:169150		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020458	hemolytic anemia due to erythrocyte adenosine deaminase overproduction	MONDO:equivalentTo	OMIM:301083	adenosine deaminase, elevated, hemolytic anemia due to	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020480	sulfite oxidase deficiency due to molybdenum cofactor deficiency	MONDO:equivalentTo	OMIMPS:252150		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020496	familial porencephaly	MONDO:equivalentTo	OMIMPS:175780		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020609	obsolete blood group, colton system	MONDO:equivalentTo	OMIM:110450	blood group, colton system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020612	obsolete blood group, kidd system	MONDO:equivalentTo	OMIM:111000	blood group, kidd system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020613	obsolete blood group--lke	MONDO:equivalentTo	OMIM:111130	blood group--lke	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020614	obsolete blood group--lutheran system	MONDO:equivalentTo	OMIM:111200	blood group--lutheran system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020615	obsolete blood group system, landsteiner-wiener	MONDO:equivalentTo	OMIM:111250	blood group system, landsteiner-wiener	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020616	obsolete blood group, mn	MONDO:equivalentTo	OMIM:111300	blood group, mn	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020617	obsolete blood group--ok	MONDO:equivalentTo	OMIM:111380	blood group--ok	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020618	obsolete blood group--private systems	MONDO:equivalentTo	OMIM:111500	blood group--private systems	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020619	obsolete blood group, langereis system	MONDO:equivalentTo	OMIM:111600	blood group, langereis system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020621	obsolete blood group--scianna system	MONDO:equivalentTo	OMIM:111750	blood group--scianna system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020622	obsolete blood group--stoltzfus system	MONDO:equivalentTo	OMIM:111800	blood group--stoltzfus system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020625	obsolete blood group--wright antigen	MONDO:equivalentTo	OMIM:112050	blood group--wright antigen	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020626	obsolete yt blood group antigen	MONDO:equivalentTo	OMIM:112100	yt blood group antigen	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020627	epileptic encephalopathy, infantile or early childhood	MONDO:equivalentTo	OMIMPS:617711		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020629	microcephaly, growth restriction and increased sister chromatid exchange	MONDO:equivalentTo	OMIMPS:210900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020642	polycystic kidney disease	MONDO:equivalentTo	OMIMPS:173900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020645	autosomal dominant osteopetrosis	MONDO:equivalentTo	OMIMPS:607634		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020668	obsolete spastic paraplegia 5B	MONDO:equivalentTo	OMIM:600146		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020714	mitochondrial myopathy, episodic, with optic atrophy and reversible leukoencephalopathy	MONDO:equivalentTo	OMIM:251900	mitochondrial myopathy, episodic, with or without optic atrophy and reversible leukoencephalopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020732	progeria	MONDO:equivalentTo	OMIMPS:176670		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020734	obsolete erythrocyte AMP deaminase deficiency	MONDO:equivalentTo	OMIM:612874	erythrocyte amp deaminase deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020746	contractures, pterygia, and variable skeletal fusions syndrome 1B	MONDO:equivalentTo	OMIM:618469	contractures, pterygia, and spondylocarpotarsal fusion syndrome 1b	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020768	X-linked deafness	MONDO:equivalentTo	OMIMPS:304500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020771	spinocerebellar ataxia, autosomal recessive, with axonal neuropathy	MONDO:equivalentTo	OMIMPS:607250		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020774	Menke-Hennekam syndrome	MONDO:equivalentTo	OMIMPS:618332		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020786	obsolete short sleep, familial natural, 2	MONDO:equivalentTo	OMIM:618591	short sleep, familial natural, 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020811	mitochondrial complex III deficiency, nuclear type	MONDO:equivalentTo	OMIMPS:124000		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020831	congenital vertebral-cardiac-renal anomalies syndrome	MONDO:equivalentTo	OMIMPS:617660		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020835	methemoglobinemia, alpha type	MONDO:equivalentTo	OMIM:617973	methemoglobinemia, alpha  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020836	autism, susceptiblity to	MONDO:equivalentTo	OMIMPS:209850		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020840	pulmonary alveolar proteinosis with hypogammaglobulinemia	MONDO:equivalentTo	OMIM:618042	immunodeficiency 100 with pulmonary alveolar proteinosis and hypogammaglobulinemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020846	intellectual disability, autosomal recessive 64	MONDO:equivalentTo	OMIM:618103	intellectual developmental disorder, autosomal recessive 64	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020847	intellectual disability, autosomal dominant 58	MONDO:equivalentTo	OMIM:618106	intellectual developmental disorder, autosomal dominant 58	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020850	intellectual disability, autosomal recessive 65	MONDO:equivalentTo	OMIM:618109	intellectual developmental disorder, autosomal recessive 65	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020858	mitochondrial complex 5 (ATP synthase) deficiency nuclear type 5	MONDO:equivalentTo	OMIM:618120	mitochondrial complex 5 (atp synthase) deficiency, nuclear  iia 5	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020927	postaxial polydactyly	MONDO:equivalentTo	OMIMPS:174200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0020937	contractures, pterygia, and variable skeletal fusions syndrome	MONDO:equivalentTo	OMIMPS:178110		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021012	susceptibility to visceral leishmaniasis, 1	MONDO:equivalentTo	OMIM:608207	kala-azar, susceptibility to, 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021018	autosomal dominant limb-girdle muscular dystrophy type 1D (DNAJB6)	MONDO:equivalentTo	OMIM:603511	muscular dystrophy, limb-girdle, autosomal dominant 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021022	hereditary hyperekplexia	MONDO:equivalentTo	OMIMPS:149400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021055	classic familial adenomatous polyposis	MONDO:equivalentTo	OMIMPS:175100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021094	immunodeficiency disease	MONDO:equivalentTo	OMIMPS:300755		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021107	narcolepsy	MONDO:equivalentTo	OMIMPS:161400		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021272	inherited orthostatic hypotension	MONDO:equivalentTo	OMIMPS:223360		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021547	amelogenesis imperfecta type 3B	MONDO:equivalentTo	OMIM:617607	amelogenesis imperfecta,  iia 3b	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021569	Emery-Dreifuss muscular dystrophy 2, autosomal dominant	MONDO:equivalentTo	OMIM:159001		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0021944	auditory neuropathy	MONDO:equivalentTo	OMIMPS:609129		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0023873	obsolete Noonan-like/multiple giant cell lesion syndrome	MONDO:equivalentTo	OMIM:163955		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0023880	WHIM syndrome	MONDO:equivalentTo	OMIMPS:193670		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0023910	Martsolf syndrome	MONDO:equivalentTo	OMIMPS:212720		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0023961	visceral neuropathy, familial	MONDO:equivalentTo	OMIMPS:243180		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024189	neurologic, endocrine, and pancreatic disease, multisystem, infantile-onset	MONDO:equivalentTo	OMIMPS:616263		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024193	portal hypertension, noncirrhotic	MONDO:equivalentTo	OMIMPS:617068		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024293	obsolete polyposis, gastric, Dos Santos and de Magalhaes 1980	MONDO:equivalentTo	OMIM:175020		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024462	familial cutaneous melanoma	MONDO:equivalentTo	OMIMPS:155600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024464	pituitary hormone deficiency, combined, 1	MONDO:equivalentTo	OMIM:613038	pituitary hormone deficiency, combined or isolated, 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024512	spondyloarthropathy, susceptibility to	MONDO:equivalentTo	OMIMPS:106300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024516	familial acne inversa	MONDO:equivalentTo	OMIMPS:142690		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024573	familial hypertrophic cardiomyopathy	MONDO:equivalentTo	OMIMPS:192600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024772	intellectual developmental disorder, X-linked, syndromic, Pilorge type	MONDO:equivalentTo	OMIM:301076	intellectual developmental disorder, x-linked, syndromic, pilorge  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024996	obsolete Usher syndrome, type 2b	MONDO:equivalentTo	OMIM:276905		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0025193	oculopharyngodistal myopathy	MONDO:equivalentTo	OMIMPS:164310		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0025353	developmental and epileptic encephalopathy, 90	MONDO:equivalentTo	OMIM:301058	developmental and epileptic encephalopathy 90	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0025445	Wieacker-Wolff syndrome (spectrum)	MONDO:equivalentTo	OMIMPS:314580		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0025986	megacystis-microcolon-intestinal hypoperistalsis syndrome	MONDO:equivalentTo	OMIMPS:249210		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026768	obsolete warfarin sensitivity, X-linked	MONDO:equivalentTo	OMIM:301052	warfarin sensitivity, X-linked	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0026771	developmental and epileptic encephalopathy, 85, with or without midline brain defects	MONDO:equivalentTo	OMIM:301044	developmental and epileptic encephalopathy 85 with or without midline brain defects	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0027416	obsolete retinal cone dystrophy 2	MONDO:equivalentTo	OMIM:601251		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0029140	glycosylphosphatidylinositol biosynthesis defect 18	MONDO:equivalentTo	OMIM:618143	developmental and epileptic encephalopathy 95	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030043	congenital disorder of glycosylation, type iit	MONDO:equivalentTo	OMIM:618885	congenital disorder of glycosylation,  iia iit	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030064	episodic ataxia, type 9	MONDO:equivalentTo	OMIM:618924	episodic ataxia,  iia 9	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030089	diabetes mellitus, permanent neonatal 4	MONDO:equivalentTo	OMIM:618858	diabetes mellitus, permanent neonatal, 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030337	cutis laxa, autosomal recessive, type 2E	MONDO:equivalentTo	OMIM:619451	cutis laxa, autosomal recessive,  iia 2e	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030423	congenital disorder of glycosylation, type 2v	MONDO:equivalentTo	OMIM:619493	congenital disorder of glycosylation,  iia 2v	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030433	Charcot-Marie-Tooth disease, axonal, type 2FF	MONDO:equivalentTo	OMIM:619519	charcot-marie-tooth disease, axonal,  iia 2ff	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030437	congenital disorder of glycosylation, type IIw	MONDO:equivalentTo	OMIM:619525	congenital disorder of glycosylation,  iia iiw	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030458	Charcot-Marie-Tooth disease, axonal, Type 2HH	MONDO:equivalentTo	OMIM:619574	charcot-marie-tooth disease, axonal,  iia 2hh	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030487	spondylometaphyseal dysplasia, pagnamenta type	MONDO:equivalentTo	OMIM:619638	spondylometaphyseal dysplasia, pagnamenta  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030524	mucopolysaccharidosis, type 10	MONDO:equivalentTo	OMIM:619698	mucopolysaccharidosis,  iia 10	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030639	Teebi hypertelorism syndrome	MONDO:equivalentTo	OMIMPS:145420		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030677	Charcot-Marie-Tooth disease, demyelinating, IIA 1I	MONDO:equivalentTo	OMIM:619742	charcot-marie-tooth disease, demyelinating,  iia 1i	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030711	anemia, congenital dyserythropoietic, IIA IIIB, autosomal recessive	MONDO:equivalentTo	OMIM:619789	anemia, congenital dyserythropoietic,  iia iiib, autosomal recessive	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030714	osteogenesis imperfecta, IIA 22	MONDO:equivalentTo	OMIM:619795	osteogenesis imperfecta,  iia 22	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030796	leukoencephalopathy, hereditary diffuse, with spheroids	MONDO:equivalentTo	OMIMPS:221820		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030831	gastrointestinal defect and immunodeficiency syndrome	MONDO:equivalentTo	OMIMPS:243150		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030860	neuronopathy, distal hereditary motor, type 5C	MONDO:equivalentTo	OMIM:619112	neuronopathy, distal hereditary motor,  iia 5c	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030890	pontocerebellar hypoplasia, IIA 17	MONDO:equivalentTo	OMIM:619909	pontocerebellar hypoplasia,  iia 17	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030902	mitochondrial complex 1 deficiency, nuclear type 36	MONDO:equivalentTo	OMIM:619170	mitochondrial complex 1 deficiency, nuclear  iia 36	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030914	Clark-Baraitser syndrome	MONDO:equivalentTo	OMIM:300602		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030923	frontotemporal dementia and/or amyotrophic lateral sclerosis	MONDO:equivalentTo	OMIMPS:105500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030935	mitochondrial complex 2 deficiency, nuclear type 2	MONDO:equivalentTo	OMIM:619166	mitochondrial complex 2 deficiency, nuclear  iia 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030937	mitochondrial complex 2 deficiency, nuclear type 3	MONDO:equivalentTo	OMIM:619167	mitochondrial complex 2 deficiency, nuclear  iia 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030974	mitochondrial complex 2 deficiency, nuclear type 4	MONDO:equivalentTo	OMIM:619224	mitochondrial complex 2 deficiency, nuclear  iia 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030978	endove syndrome, limb-only type	MONDO:equivalentTo	OMIM:619217	endove syndrome, limb-only  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030979	endove syndrome, limb-brain type	MONDO:equivalentTo	OMIM:619218	endove syndrome, limb-brain  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030982	sulfide quinone oxidoreductase deficiency	MONDO:equivalentTo	OMIM:619221	sulfide:quinone oxidoreductase deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030983	Waardenburg syndrome, IIa 2F	MONDO:equivalentTo	OMIM:619947	waardenburg syndrome,  iia 2f	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0030997	mitochondrial complex 1 deficiency, nuclear type 37	MONDO:equivalentTo	OMIM:619272	mitochondrial complex 1 deficiency, nuclear  iia 37	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031008	nephrotic syndrome, type 24	MONDO:equivalentTo	OMIM:619263	nephrotic syndrome,  iia 24	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031037	famililal cerebral cavernous malformations	MONDO:equivalentTo	OMIMPS:116860		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031045	arthrogryposis, distal, IIa 11	MONDO:equivalentTo	OMIM:620019	arthrogryposis, distal,  iia 11	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031047	stickler syndrome, IIa 6	MONDO:equivalentTo	OMIM:620022	stickler syndrome,  iia 6	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031061	nephrotic syndrome, IIa 26	MONDO:equivalentTo	OMIM:620049	nephrotic syndrome,  iia 26	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031068	charcot-marie-tooth disease, axonal,IIa 2II	MONDO:equivalentTo	OMIM:620068	charcot-marie-tooth disease, axonal,  iia 2ii	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031084	amelogenesis imperfecta, IIa 1K	MONDO:equivalentTo	OMIM:620104	amelogenesis imperfecta,  iia 1k	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031115	dyskinesia with orofacial involvement	MONDO:equivalentTo	OMIMPS:606703		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031166	macular dystrophy, retinal	MONDO:equivalentTo	OMIMPS:136550		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031169	odontochondrodysplasia	MONDO:equivalentTo	OMIMPS:184260		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031178	monosomy 7 myelodysplasia and leukemia syndrome	MONDO:equivalentTo	OMIMPS:252270		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031199	inherited interstitial lung disease	MONDO:equivalentTo	OMIMPS:619611		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031200	Bryant-Li-Bhoj neurodevelopmental syndrome	MONDO:equivalentTo	OMIMPS:619720		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031213	restrictive dermopathy	MONDO:equivalentTo	OMIMPS:275210		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031219	mismatch repair cancer syndrome	MONDO:equivalentTo	OMIMPS:276300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031230	mitochondrial complex II deficiency, nuclear type	MONDO:equivalentTo	OMIMPS:252011		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031240	familial panic disorder	MONDO:equivalentTo	OMIMPS:167870		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031280	Stuve-Wiedemann syndrome	MONDO:equivalentTo	OMIMPS:601559		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031323	cardiac valvular defect	MONDO:equivalentTo	OMIMPS:212093		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031376	congenital disorder of deglycosylation	MONDO:equivalentTo	OMIMPS:615273		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031384	autoinflammatory syndrome, familial, Behcet-like	MONDO:equivalentTo	OMIMPS:616744		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031386	cardioacrofacial dysplasia	MONDO:equivalentTo	OMIMPS:619142		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031400	Tessadori-Van-Haaften neurodevelopmental syndrome	MONDO:equivalentTo	OMIMPS:619758		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031421	Olmsted syndrome	MONDO:equivalentTo	OMIMPS:614594		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031422	familial mucolipidosis	MONDO:equivalentTo	OMIMPS:256550		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031432	thyroid hormone metabolism, abnormal	MONDO:equivalentTo	OMIMPS:609698		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031439	short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies	MONDO:equivalentTo	OMIMPS:617877		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031447	macrothrombocytopenia, isolated	MONDO:equivalentTo	OMIMPS:613112		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031520	familial severe combined immunodeficiency	MONDO:equivalentTo	OMIMPS:601457		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031615	familial bent bone dysplasia syndrome	MONDO:equivalentTo	OMIMPS:614592		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0031646	Braddock-Carey syndrome	MONDO:equivalentTo	OMIMPS:619980		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032569	isolated growth hormone deficiency, type 5	MONDO:equivalentTo	OMIM:618160	pituitary hormone deficiency, combined or isolated, 7	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032778	arthrogryposis multiplex congenita 3, myogenic type	MONDO:equivalentTo	OMIM:618484	arthrogryposis multiplex congenita 3, myogenic  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032792	neuropathy, hereditary motor and sensory, type VIc, with optic atrophy	MONDO:equivalentTo	OMIM:618511	neuropathy, hereditary motor and sensory,  iia vic, with optic atrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0032796	hyper-IgE recurrent infection syndrome 4, autosomal recessive	MONDO:equivalentTo	OMIM:618523	hyper-ige recurrent infection syndrome 4b, autosomal recessive	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033196	obsolete skin/hair/eye pigmentation, variation in	MONDO:equivalentTo	OMIMPS:227220		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033211	diencephalic-mesencephalic junction dysplasia syndrome	MONDO:equivalentTo	OMIMPS:251280		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033304	nonsyndromic deafness, Y-linked	MONDO:equivalentTo	OMIMPS:400043		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033352	neuropathy, congenital hypomelinating	MONDO:equivalentTo	OMIMPS:605253		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033373	developmental and epileptic encephalopathy, 64	MONDO:equivalentTo	OMIM:618004	developmental and epileptic encephalopathy 64	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033550	obsolete high density lipoprotein cholesterol level quantitative trait locus 7	MONDO:equivalentTo	OMIM:618979	high density lipoprotein cholesterol level quantitative trait locus 7	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033552	obsolete blood group, lewis system	MONDO:equivalentTo	OMIM:618983	blood group, lewis system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033557	hemophagocytic lymphohistiocytosis, familial, 6	MONDO:equivalentTo	OMIM:618998	immune dysregulation and systemic hyperinflammation syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033571	obsolete skeletal muscle glycogen content and metabolism quantitative trait locus	MONDO:equivalentTo	OMIM:619030	skeletal muscle glycogen content and metabolism quantitative trait locus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033613	neurodevelopmental disorder with progressive spasticity and brain white matter abnormalities	MONDO:equivalentTo	OMIM:603513		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033621	spinal muscular atrophy, infantile, James type	MONDO:equivalentTo	OMIM:619042	spinal muscular atrophy, infantile, james  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033635	mitochondrial complex 4 deficiency, nuclear type 3	MONDO:equivalentTo	OMIM:619046	mitochondrial complex 4 deficiency, nuclear  iia 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033636	mitochondrial complex 4 deficiency, nuclear type 4	MONDO:equivalentTo	OMIM:619048	mitochondrial complex 4 deficiency, nuclear  iia 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033637	mitochondrial complex 4 deficiency, nuclear type 7	MONDO:equivalentTo	OMIM:619051	mitochondrial complex 4 deficiency, nuclear  iia 7	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033638	mitochondrial complex 4 deficiency, nuclear type 8	MONDO:equivalentTo	OMIM:619052	mitochondrial complex 4 deficiency, nuclear  iia 8	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033639	mitochondrial complex 4 deficiency, nuclear type 10	MONDO:equivalentTo	OMIM:619053	mitochondrial complex 4 deficiency, nuclear  iia 10	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033640	vitamin D-dependent rickets, type 3	MONDO:equivalentTo	OMIM:619073	vitamin d-dependent rickets,  iia 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033645	mitochondrial complex 4 deficiency, nuclear type 11	MONDO:equivalentTo	OMIM:619054	mitochondrial complex 4 deficiency, nuclear  iia 11	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033646	mitochondrial complex 4 deficiency, nuclear type 12	MONDO:equivalentTo	OMIM:619055	mitochondrial complex 4 deficiency, nuclear  iia 12	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033649	mitochondrial complex 4 deficiency, nuclear type 14	MONDO:equivalentTo	OMIM:619058	mitochondrial complex 4 deficiency, nuclear  iia 14	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033650	mitochondrial complex 4 deficiency, nuclear type 15	MONDO:equivalentTo	OMIM:619059	mitochondrial complex 4 deficiency, nuclear  iia 15	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033651	mitochondrial complex 4 deficiency, nuclear type 16	MONDO:equivalentTo	OMIM:619060	mitochondrial complex 4 deficiency, nuclear  iia 16	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033652	mitochondrial complex 4 deficiency, nuclear type 17	MONDO:equivalentTo	OMIM:619061	mitochondrial complex 4 deficiency, nuclear  iia 17	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033653	mitochondrial complex 4 deficiency, nuclear type 18	MONDO:equivalentTo	OMIM:619062	mitochondrial complex 4 deficiency, nuclear  iia 18	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033654	mitochondrial complex 4 deficiency, nuclear type 19	MONDO:equivalentTo	OMIM:619063	mitochondrial complex 4 deficiency, nuclear  iia 19	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033655	mitochondrial complex 4 deficiency, nuclear type 20	MONDO:equivalentTo	OMIM:619064	mitochondrial complex 4 deficiency, nuclear  iia 20	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033656	mitochondrial complex 4 deficiency, nuclear type 21	MONDO:equivalentTo	OMIM:619065	mitochondrial complex 4 deficiency, nuclear  iia 21	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033864	infantile hypotonia-oculomotor anomalies-hyperkinetic movements-developmental delay syndrome	MONDO:equivalentTo	OMIM:618218	baker-gordon syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0033885	mitochondrial complex IV deficiency, nuclear-type	MONDO:equivalentTo	OMIMPS:220110		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0034109	congenital myopathy with reduced type 2 muscle fibers	MONDO:equivalentTo	OMIM:618414	myopathy, congenital, with fast-twitch (type ii) fiber atrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0043878	hereditary optic atrophy	MONDO:equivalentTo	OMIMPS:165500		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044202	episodic kinesigenic dyskinesia	MONDO:equivalentTo	OMIMPS:128200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044203	foveal hypoplasia	MONDO:equivalentTo	OMIMPS:136520		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044209	disorder of lectin complement activation pathway	MONDO:equivalentTo	OMIMPS:614372		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044217	obsolete asparagus, specific smell hypersensitivity	MONDO:equivalentTo	OMIM:108390	asparagus, specific smell hypersensitivity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044219	obsolete blood group, duffy system	MONDO:equivalentTo	OMIM:110700	blood group, duffy system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044220	obsolete blood group, 1 system	MONDO:equivalentTo	OMIM:110800	blood group, 1 system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044221	obsolete blood group--lutheran inhibitor	MONDO:equivalentTo	OMIM:111150	blood group--lutheran inhibitor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044222	obsolete blood group, p1pk system	MONDO:equivalentTo	OMIM:111400	blood group, p1pk system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044224	obsolete apocrine gland secretion, variation 1n	MONDO:equivalentTo	OMIM:117800	apocrine gland secretion, variation 1n	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044228	obsolete eegbqtl	MONDO:equivalentTo	OMIM:130190	electroencephalographic pattern, beta frequency, quantitative trait locus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044234	obsolete hrm2	MONDO:equivalentTo	OMIM:139450	hair morphology 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044235	obsolete hsr	MONDO:equivalentTo	OMIM:139900	hand skill, relative	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044236	obsolete hepatitis b vaccine, response to	MONDO:equivalentTo	OMIM:142395	hepatitis B vaccine, response to	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044240	obsolete musical perfect pitch	MONDO:equivalentTo	OMIM:159300	musical perfect pitch	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044246	obsolete nystagmus, voluntary	MONDO:equivalentTo	OMIM:164170	nystagmus, voluntary	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044248	obsolete thiourea tasting	MONDO:equivalentTo	OMIM:171200	thiourea tasting	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044249	obsolete alkaline phosphatase, plasma level of, quantitative trait locus 1	MONDO:equivalentTo	OMIM:171720	alkaline phosphatase, plasma level of, quantitative trait locus 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044252	obsolete skin/hair/eye pigmentation, variation in, 6	MONDO:equivalentTo	OMIM:210750	skin/hair/eye pigmentation, variation in, 6	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044255	obsolete skin/hair/eye pigmentation, variation in, 1	MONDO:equivalentTo	OMIM:227220	skin/hair/eye pigmentation, variation in, 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044256	obsolete skin/hair/eye pigmentation, variation in, 5	MONDO:equivalentTo	OMIM:227240	skin/hair/eye pigmentation, variation in, 5	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044257	obsolete lutheran null	MONDO:equivalentTo	OMIM:247420	lutheran null	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044261	obsolete menoq1	MONDO:equivalentTo	OMIM:300488	menopause, natural, age at, quantitative trait locus 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044270	obsolete bilirubin, serum level of, quantitative trait locus 1	MONDO:equivalentTo	OMIM:601816	bilirubin, serum level of, quantitative trait locus 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044273	obsolete hypertension, diastolic, resistance to	MONDO:equivalentTo	OMIM:608622	hypertension, diastolic, resistance to	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044274	obsolete hemoglobin, high altitude adaptation	MONDO:equivalentTo	OMIM:609070	hemoglobin, high altitude adaptation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044275	obsolete carotid intimal medial thickness 1	MONDO:equivalentTo	OMIM:609338	carotid intimal medial thickness 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044276	obsolete skin/hair/eye pigmentation, variation in, 11	MONDO:equivalentTo	OMIM:612271	skin/hair/eye pigmentation, variation in, 11	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044277	obsolete uric acid concentration, serum, quantitative trait locus 4	MONDO:equivalentTo	OMIM:612671	uric acid concentration, serum, quantitative trait locus 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044278	obsolete short sleeper	MONDO:equivalentTo	OMIMPS:612975		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044280	obsolete glycerol quantitative trait locus	MONDO:equivalentTo	OMIM:614411	glycerol quantitative trait locus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044281	obsolete c3hex, ability to smell	MONDO:equivalentTo	OMIM:615082	c3hex, ability to smell	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044282	obsolete blood group, vel system	MONDO:equivalentTo	OMIM:615264	blood group, vel system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044284	obsolete blood group, gerbich system	MONDO:equivalentTo	OMIM:616089	blood group, gerbich system	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044318	intellectual developmental disorder with gastrointestinal difficulties and high pain threshold	MONDO:equivalentTo	OMIM:617450	jansen-de vries syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044646	early-onset progressive diffuse brain atrophy-microcephaly-muscle weakness-optic atrophy syndrome	MONDO:equivalentTo	OMIM:617193	encephalopathy, progressive, early-onset, with brain atrophy and thin corpus callosum	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044660	menstrual cycle-dependent periodic fever	MONDO:equivalentTo	OMIM:614674	periodic fever, menstrual cycle-dependent	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044723	3-methylglutaconic aciduria type 8	MONDO:equivalentTo	OMIM:617248	3-methylglutaconic aciduria,  iia 8	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044807	inherited dystonia	MONDO:equivalentTo	OMIMPS:128100		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0054865	encephalopathy due to mitochondrial and peroxisomal fission defect	MONDO:equivalentTo	OMIMPS:614388		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0060593	obsolete actn3 deficiency	MONDO:equivalentTo	OMIM:617749	actn3 deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0060720	congenital disorder of glycosylation with defective fucosylation	MONDO:equivalentTo	OMIMPS:618005		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100062	developmental and epileptic encephalopathy	MONDO:equivalentTo	OMIMPS:308350		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100157	Imerslund-Grasbeck syndrome type 2	MONDO:equivalentTo	OMIM:618882	imerslund-grasbeck syndrome 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100164	permanent neonatal diabetes mellitus	MONDO:equivalentTo	OMIMPS:606176		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100170	restless legs syndrome, susceptibility to	MONDO:equivalentTo	OMIMPS:102300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100172	intellectual disability, autosomal dominant	MONDO:equivalentTo	OMIMPS:156200		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100210	growth hormone insensitivity syndrome with immune dysregulation	MONDO:equivalentTo	OMIMPS:245590		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100211	growth hormone insensitivity with immune dysregulation 1, autosomal recessive	MONDO:equivalentTo	OMIM:245590	growth hormone insensitivity syndrome with immune dysregulation 1, autosomal recessive	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100212	IFAP syndrome	MONDO:equivalentTo	OMIMPS:308205		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100213	IFAP syndrome with or without BRESHECK syndrome	MONDO:equivalentTo	OMIM:308205	ifap syndrome 1, with or without bresheck syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100214	Rajab interstitial lung disease with brain calcifications	MONDO:equivalentTo	OMIMPS:613658		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100223	mitochondrial complex I deficiency, nuclear type	MONDO:equivalentTo	OMIMPS:252010		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100226	parasomnia, sleepwalking type	MONDO:equivalentTo	OMIM:613938	parasomnia, sleepwalking  iia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100237	inherited cutis laxa	MONDO:equivalentTo	OMIMPS:123700		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100238	inherited Fanconi renotubular syndrome	MONDO:equivalentTo	OMIMPS:134600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100239	inherited hypertrophic pyloric stenosis	MONDO:equivalentTo	OMIMPS:179010		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100240	inherited thrombophilia	MONDO:equivalentTo	OMIMPS:188050		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100241	inherited thrombocytopenia	MONDO:equivalentTo	OMIMPS:313900		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100242	glioma susceptibility	MONDO:equivalentTo	OMIMPS:137800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100244	paroxysmal nocturnal hemoglobinuria	MONDO:equivalentTo	OMIMPS:300818		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100246	migraine with or without aura, susceptibility to	MONDO:equivalentTo	OMIMPS:157300		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100247	multiple congenital anomalies-hypotonia-seizures syndrome	MONDO:equivalentTo	OMIMPS:614080		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100255	adenosine kinase deficiency	MONDO:equivalentTo	OMIM:611094		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100280	Waldenstrom macroglobulinemia	MONDO:equivalentTo	OMIMPS:153600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100281	macroglobulinemia, Waldenstrom, 1	MONDO:equivalentTo	OMIM:153600	macroglobulinemia, waldenstrom, susceptibility to, 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100285	extrahepatic biliary atresia	MONDO:equivalentTo	OMIM:210500	biliary atresia, extrahepatic	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100326	Glanzmann thrombasthenia	MONDO:equivalentTo	OMIMPS:273800		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100327	hypercholanemia, familial	MONDO:equivalentTo	OMIMPS:607748		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100328	microcephaly, epilepsy, and diabetes syndrome	MONDO:equivalentTo	OMIMPS:614231		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0100440	Asperger syndrome, susceptibility to	MONDO:equivalentTo	OMIMPS:608638		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0200001	obsolete chromate resistance	MONDO:equivalentTo	OMIM:118840	chromate resistance	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0800031	central hypoventilation syndrome, congenital	MONDO:equivalentTo	OMIMPS:209880		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0800046	thyroid hormone metabolism, abnormal 1	MONDO:equivalentTo	OMIM:609698	thyroid hormone metabolism, abnormal, 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0800129	autoinflammatory disease, X-linked	MONDO:equivalentTo	OMIM:301081	autoinflammatory disease, systemic, X-linked	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0800130	autoinflammatory syndrome with immunodeficiency	MONDO:equivalentTo	OMIM:619375	autoinflammatory syndrome, familial, with or without immunodeficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0800132	autoinflammatory-pancytopenia syndrome due to DNASE2 deficiency	MONDO:equivalentTo	OMIM:619858	autoinflammatory-pancytopenia syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0800188	malignant hyperthermia, susceptibility to	MONDO:equivalentTo	OMIMPS:145600		semapv:UnspecifiedMatching						MONDO_MAPPINGS
