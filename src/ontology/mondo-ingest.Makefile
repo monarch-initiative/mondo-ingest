@@ -365,7 +365,7 @@ tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 
-../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py
+../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db
 	python $^ run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
 
 lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
