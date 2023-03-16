@@ -4,12 +4,13 @@
 .PHONY: build-mondo-ingest deploy-mondo-ingest documentation excluded-xrefs-in-mondo mappings \
 report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries exclusions-%
 
+
 ####################################
 ### Standard constants #############
 ####################################
-
 MAPPINGSDIR=../mappings
 SKIP_HUGE=false
+
 
 ####################################
 ### Relevant signature #############
@@ -26,10 +27,10 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 		query -q "../sparql/ordo-relevant-signature.sparql" $@; fi
 .PRECIOUS: $(TMPDIR)/ordo_relevant_signature.txt
 
+
 #######################################
 ### Ingest Components #################
 #######################################
-
 # This section is concerned with transforming the incoming sources into the
 # Monarch Ingest schema.
 # Illegal punning on some properties #60: https://github.com/monarch-initiative/omim/issues/60
@@ -140,10 +141,10 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 
 ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 
-#################
-# Mappings ######
-#################
 
+#################
+### Mappings ####
+#################
 .PHONY: sssom
 sssom:
 	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@master
@@ -192,15 +193,6 @@ $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR
 	--outpath-simple $(REPORTDIR)/$*_unmapped_terms.tsv \
 	--outpath-full $(REPORTDIR)/$*_mapping_status.tsv
 
-#################
-##### Utils #####
-#################
-report-mapping-annotations:
-	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
-
-update-jinja-sparql-queries:
-	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
-	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
 #################
 ### Exclusions ##
@@ -254,9 +246,10 @@ $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/excluded_terms_in_mo
 
 excluded-xrefs-in-mondo: $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv
 
-#################
-# Documentation #
-#################
+
+###################
+## Documentation ##
+###################
 SOURCE_DOC_TEMPLATE=config/source_documentation.md.j2
 SOURCE_METRICS_TEMPLATE=config/source_metrics.md.j2
 ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/sources/$(n).md)
@@ -350,6 +343,7 @@ ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror
 signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
 	echo "Finished running signature reports.."
 
+
 #############################
 #### Lexical matching #######
 #############################
@@ -365,6 +359,7 @@ tmp/merged.db: tmp/merged.owl
 
 lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
 
+
 ###################################
 #### Lexmatch-SSSOM-compare #######
 ###################################
@@ -372,6 +367,7 @@ lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py ../mappings/mondo-so
 	python $< extract_unmapped_matches --matches ../mappings/mondo-sources-all-lexical.sssom.tsv --output-dir lexmatch --summary $@
 
 extract-unmapped-matches: lexmatch/README.md
+
 
 #############################
 ######### Analysis ##########
@@ -391,6 +387,7 @@ $(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mappin
 	--mondo-mappings-path tmp/mondo.sssom.tsv \
 	--mapping-status-path $(REPORTDIR)/$*_mapping_status.tsv \
 	--outpath $@
+
 
 #############################
 ###### Slurp pipeline #######
@@ -442,10 +439,55 @@ slurp-%:
 # todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit
 
-##################################
-##### Utilities ###################
-##################################
 
+#############################
+###### Synchronization ######
+#############################
+sync/:
+	mkdir -p $@
+
+# TODO: @Nico
+tmp/mondo-ingest.db:
+	touch tmp/mondo-ingest.db
+tmp/mondo-ingest-without-excluded.db: tmp/mondo-ingest.db
+	cp $< $@
+
+# todo: `pip install` stuff is temporarily here until we come up with a fix. otherwise docker won't work
+sync/mondo-sync-%.owl: tmp/mondo.owl tmp/mondo-ingest-without-excluded.db $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.owl | sync/
+	pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
+	python3 $(SCRIPTSDIR)/sync.py \
+	--mondo-path tmp/mondo.owl \
+	--mondo-sans-exclusions-path tmp/mondo-ingest-without-excluded.db \
+	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
+	--ontology-path $(COMPONENTSDIR)/$*.owl \
+	--onto-config-path metadata/$*.yml \
+	--outpath-synonyms sync/synonyms-$*.robot.template.tsv \
+	--outpath $@
+
+# TODO: merge all `synonyms-%.robot.template.tsv`. Look at $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv
+synonyms.robot.template.tsv:
+	echo
+
+sync-%:
+	$(MAKE) sync/$*.tsv
+
+sync-all: sync-omim sync-doid sync-ordo sync-icd10cm sync-icd10who sync-ncit
+
+
+#################
+##### Utils #####
+#################
+report-mapping-annotations:
+	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
+
+update-jinja-sparql-queries:
+	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
+	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
+
+
+##################################
+##### Help #######################
+##################################
 # $$data: This prints the help message from imported makefiles.
 .PHONY: help
 help:
