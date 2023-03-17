@@ -372,7 +372,7 @@ tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
 tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
-	RUST_BACKTRACE=full semsql make $@
+	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 
@@ -419,7 +419,7 @@ $(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mappin
 $(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
-	RUST_BACKTRACE=full semsql make $@
+	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 
