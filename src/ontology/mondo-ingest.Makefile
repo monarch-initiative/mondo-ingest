@@ -147,6 +147,9 @@ ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 #sssom:
 #	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@master
 
+dependencies:
+	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall semsql oaklib
+
 ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), ../mappings/$(n).sssom.tsv)
 
 $(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
@@ -309,8 +312,16 @@ deploy-mondo-ingest:
 	ls -alt $(DEPLOY_ASSETS_MONDO_INGEST)
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
 
+USE_MONDO_RELEASE=false
+
 tmp/mondo.owl:
-	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
+	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
+		rm -rf ./mondo/ &&\
+		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
+		cd mondo/src/ontology &&\
+		make mondo.owl IMP=false MIR=false &&\
+		cd ../../../../ &&\
+		cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@; fi
 
 $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
 	$(ROBOT) query -i tmp/merged.owl --query $< $@
