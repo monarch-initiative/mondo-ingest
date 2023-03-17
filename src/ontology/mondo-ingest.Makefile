@@ -408,7 +408,7 @@ component-download-mondo.owl: | $(TMPDIR)
 $(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
-	RUST_BACKTRACE=full semsql make $@
+	RUST_BACKTRACE=full semsql make $@ -P config/prefix.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 
