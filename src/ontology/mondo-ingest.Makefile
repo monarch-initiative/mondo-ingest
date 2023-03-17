@@ -147,8 +147,9 @@ ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 #sssom:
 #	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@master
 
+.PHONY: dependencies
 dependencies:
-	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall semsql oaklib
+	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade semsql>=0.3.1 oaklib --no-deps
 
 ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), ../mappings/$(n).sssom.tsv)
 
