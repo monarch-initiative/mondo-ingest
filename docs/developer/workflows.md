@@ -1,14 +1,24 @@
 # Mondo Ingest Workflows
 
-## Excluded xrefs in Mondo analysis
+## How to run the workflows
+Workflows should all be run from the `src/ontology/` directory.  
 
-See [pull request](https://github.com/monarch-initiative/mondo-ingest/pull/35) for details.
+**Syntax**: `sh run.sh make COMMAND`  
+**Example**: `sh run.sh make slurp-all`
 
-To run the analysis.
+#### Prerequisites
+1. Updated code: Make sure your clone of `mondo-ingest` is up to date and that you are on the correct branch, e.g.: `git checkout main && git pull`
+2. Docker: You need Docker running. [Docker Desktop](https://www.docker.com/products/docker-desktop/) is is really nice, and comes with a GUI too. 
+3. Up-to-date container: The container these commands run on is `obolibrary/odkfull`. If you don't have the container downloaded, it should be downloaded automatically when you run a command. However, it is good to keep it up-to-date, which can be done via: (i) Look at the latest version number 'VERSION' in https://github.com/INCATools/ontology-development-kit/releases, and (ii) run `docker pull obolibrary/odkfull:VERSION`. 
 
-```
-sh run.sh make excluded-xrefs-in-mondo
-```
+---
+
+## Slurp / migration
+These workflows will determine slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.
+
+#### Makefile goals
+1. `slurp/%.tsv` and `slurp-%`: For a given ontology, determine all slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.
+2. `slurp-all`: Runs slurp / migrate for all ontologies.
 
 ## Mapping progress
 These workflows will create a [mapping progress report](../reports/unmapped.md) with statistics, with linked pages for each ontology that show unmapped terms.
@@ -32,11 +42,14 @@ These workflows will create a [report of deprecated terms with Mondo xrefs](../r
 
 ## Exclusions
 These workflows will help with excluding certain terms from integration into Mondo.
+
+#### Makefile goals
 1. `reports/%_term_exclusions.txt`: A list of terms to exclude from integration into Mondo from the given ontology.
 2. `reports/%_exclusion_reasons.ttl`: A list of terms to exclude from integration into Mondo from the given ontology, in TTL format.
 3. `reports/%_excluded_terms_in_mondo_xrefs.tsv`: A list of terms excluded from integration in Mondo that still have xrefs in Mondo.
-4. `exclusions-%`: Runs `reports/%_term_exclusions.txt`, `reports/%_exclusion_reasons.ttl`, and `reports/%_excluded_terms_in_mondo_xrefs.tsv` for a given ontology.
-5. `reports/excluded_terms.ttl`: Runs reports/%_exclusion_reasons.ttl for all ontologies. and combines into a single file.
-6. `reports/excluded_terms.txt`: Runs reports/%_term_exclusions.txt for all ontologies and combines into a single file.
-7. `reports/exclusion_reasons.robot.template.tsv`: Runs reports/%_exclusion_reasons.robot.template.tsv for all ontologies and combines into a single file.
-8. `exclusions-all`: Runs all exclusion artefacts for all ontologies.
+4. `excluded-xrefs-in-mondo` and `reports/excluded_terms_in_mondo_xrefs.tsv`: Runs `reports/%_excluded_terms_in_mondo_xrefs.tsv` for all ontologies.
+5. `exclusions-%`: Runs `reports/%_term_exclusions.txt`, `reports/%_exclusion_reasons.ttl`, and `reports/%_excluded_terms_in_mondo_xrefs.tsv` for a given ontology.
+6. `reports/excluded_terms.ttl`: Runs reports/%_exclusion_reasons.ttl for all ontologies. and combines into a single file.
+7. `reports/excluded_terms.txt`: Runs reports/%_term_exclusions.txt for all ontologies and combines into a single file.
+8. `reports/exclusion_reasons.robot.template.tsv`: Runs reports/%_exclusion_reasons.robot.template.tsv for all ontologies and combines into a single file. 
+9. `exclusions-all`: Runs all exclusion artefacts for all ontologies.

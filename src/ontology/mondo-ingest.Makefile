@@ -430,14 +430,14 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_ter
 	--slurp-dir-path slurp/ \
 	--outpath $@
 
+slurp-%:
+	$(MAKE) slurp/$*.tsv -B
+
 slurp-no-updates-%:
 	$(MAKE) slurp/$*.tsv
 
 # todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 slurp-all-no-updates: slurp-no-updates-omim slurp-no-updates-doid slurp-no-updates-ordo slurp-no-updates-icd10cm slurp-no-updates-icd10who slurp-no-updates-ncit
-
-slurp-%:
-	$(MAKE) slurp/$*.tsv -B
 
 # todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit
@@ -453,8 +453,10 @@ help:
 	@echo "----------------------------------------"
 	@echo "	Command reference: mondo-ingest"
 	@echo "----------------------------------------"
+	@echo "slurp/%.tsv and slurp-%"
+	@echo "For a given ontology, determine all slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.\n"
 	@echo "slurp-all"
-	@echo "Determine all slurpable terms. That is, terms that are candidates for integration into Mondo.\n"
+	@echo "Runs slurp / migrate for all ontologies.\n"
 	@echo "extract-unmapped-matches"
 	@echo "Determine all new matches across external ontologies.\n"
 	@echo "lexical-matches"
@@ -485,6 +487,8 @@ help:
 	@echo "A list of terms to exclude from integration into Mondo from the given ontology, in TTL format.\n"
 	@echo "reports/%_excluded_terms_in_mondo_xrefs.tsv"
 	@echo "A list of terms excluded from integration in Mondo that still have xrefs in Mondo.\n"
+	@echo "excluded-xrefs-in-mondo and reports/excluded_terms_in_mondo_xrefs.tsv"
+	@echo "Runs reports/%_excluded_terms_in_mondo_xrefs.tsv for all ontologies.\n"
 	@echo "exclusions-%"
 	@echo "Runs reports/%_term_exclusions.txt, reports/%_exclusion_reasons.ttl, and reports/%_excluded_terms_in_mondo_xrefs.tsv for a given ontology.\n"
 	@echo "reports/excluded_terms.ttl"
