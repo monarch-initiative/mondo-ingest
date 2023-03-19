@@ -149,7 +149,7 @@ ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 
 .PHONY: dependencies
 dependencies:
-	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade semsql==0.3.2 oaklib --no-deps
+	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade semsql==0.3.2 oaklib
 
 ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), ../mappings/$(n).sssom.tsv)
 
