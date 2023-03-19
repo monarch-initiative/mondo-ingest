@@ -322,7 +322,8 @@ tmp/mondo.owl:
 		cd mondo/src/ontology &&\
 		make mondo.owl IMP=false MIR=false &&\
 		cd ../../../../ &&\
-		cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@; fi
+		cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@ &&\
+		rm -rf $(TMPDIR)/mondo/; fi
 
 $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
 	$(ROBOT) query -i tmp/merged.owl --query $< $@
