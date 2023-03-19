@@ -6,7 +6,7 @@ see the [documentation](https://monarch-initiative.github.io/mondo-ingest/).
 Work on the Mondo Source Ingest is funded by the NHGRI Phenomics First Grant 1RM1HG010860-01.
 
 ## Workflows
-A variety of workflows are available to run the ingest. See the [developer documentation](./docs/developer/workflows.md) for more details.
+A variety of workflows are available to run the ingest. See the [workflows documentation](./docs/developer/workflows.md) for more details.
 
 ## Reports
 ### Mapping progress report
