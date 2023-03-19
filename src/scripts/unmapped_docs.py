@@ -58,6 +58,7 @@ def update_mapping_progress_in_docs():
             'Tot terms': f"{len(df):,}",
             'Tot excluded': f"{len(df[df['is_excluded'] == True]):,}",
             'Tot deprecated': n_deprecated,
+            'Tot deprecated unmapped': f"{len(df[(df['is_deprecated'] == True) & (df['is_mapped'] == False)]):,}",
             'Tot mappable _(!excluded, !deprecated)_': f"{n_mappable:,}",
             'Tot mapped _(mappable)_': f"{n_mappable - n_unmapped_mappable:,}",
             'Tot unmapped _(mappable)_': f"{n_unmapped_mappable:,}",
