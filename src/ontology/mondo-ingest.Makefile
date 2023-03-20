@@ -373,6 +373,9 @@ lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py ../mappings/mondo-so
 
 extract-unmapped-matches: lexmatch/README.md
 
+.PHONY: matches
+matches: lexical-matches extract-unmapped-matches
+
 #############################
 ######### Analysis ##########
 #############################
