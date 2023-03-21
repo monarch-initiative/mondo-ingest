@@ -299,7 +299,7 @@ build-mondo-ingest:
 	$(MAKE) refresh-imports
 	$(MAKE) exclusions-all
 	$(MAKE) slurp-all
-	#$(MAKE) mappings
+	$(MAKE) mappings
 	$(MAKE) matches
 	$(MAKE) mapped-deprecated-terms
 	$(MAKE) mapping-progress-report
