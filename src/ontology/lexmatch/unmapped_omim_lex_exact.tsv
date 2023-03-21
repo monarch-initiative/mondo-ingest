@@ -1,2 +1,3 @@
-subject_id	predicate_id	object_id	object_label	subject_label	mapping_justification	comment
-ID	A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label			
+subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
+MONDO:0100232	psoriatic arthritis, susceptibility to	OMIM:607507	MONDO:equivalentTo	psoriatic arthritis, susceptibility to	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	psoriatic arthritis, susceptibility to

@@ -356,7 +356,7 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
-	RUST_BACKTRACE=full semsql make $@
+	RUST_BACKTRACE=full semsql make $@ -P config/prefix.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 
@@ -372,6 +372,9 @@ lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py ../mappings/mondo-so
 	python $< extract_unmapped_matches --matches ../mappings/mondo-sources-all-lexical.sssom.tsv --output-dir lexmatch --summary $@
 
 extract-unmapped-matches: lexmatch/README.md
+
+.PHONY: matches
+matches: lexical-matches extract-unmapped-matches
 
 #############################
 ######### Analysis ##########
@@ -408,7 +411,7 @@ component-download-mondo.owl: | $(TMPDIR)
 $(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
-	RUST_BACKTRACE=full semsql make $@
+	RUST_BACKTRACE=full semsql make $@ -P config/prefix.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 

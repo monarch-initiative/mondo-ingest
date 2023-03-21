@@ -1,2 +1,9 @@
-subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	comment
-ID		A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label		
+subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
+MONDO:0007818	hyper-IgE recurrent infection syndrome 1	OMIM:147060	MONDO:equivalentTo	hyper-ige recurrent infection syndrome 1, autosomal dominant	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	job syndrome
+MONDO:0007818	hyper-IgE recurrent infection syndrome 1	OMIM:147060	MONDO:equivalentTo	hyper-ige recurrent infection syndrome 1, autosomal dominant	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hyper-ige syndrome, autosomal dominant
+MONDO:0007818	hyper-IgE recurrent infection syndrome 1	OMIM:147060	MONDO:equivalentTo	hyper-ige recurrent infection syndrome 1, autosomal dominant	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hies, autosomal dominant
+MONDO:0018582	GCGR-related hyperglucagonemia	OMIM:619290	MONDO:equivalentTo	mahvash disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	mahvash disorder
+MONDO:0018582	GCGR-related hyperglucagonemia	OMIM:619290	MONDO:equivalentTo	mahvash disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	mahvash disorder
+MONDO:0100231	psoriatic arthritis, susceptibility to, 1	OMIM:607507	MONDO:equivalentTo	psoriatic arthritis, susceptibility to	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	psoriatic arthritis, susceptibility to, type 1
+MONDO:0100231	psoriatic arthritis, susceptibility to, 1	OMIM:607507	MONDO:equivalentTo	psoriatic arthritis, susceptibility to	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	psoriatic arthritis, susceptibility to, type 1
