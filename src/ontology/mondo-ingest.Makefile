@@ -300,7 +300,7 @@ build-mondo-ingest:
 	$(MAKE) exclusions-all
 	$(MAKE) slurp-all
 	#$(MAKE) mappings
-	$(MAKE) extract-unmapped-matches
+	$(MAKE) matches
 	$(MAKE) mapped-deprecated-terms
 	$(MAKE) mapping-progress-report
 	$(MAKE) documentation
