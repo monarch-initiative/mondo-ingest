@@ -28,6 +28,20 @@ EXCLUSION_FILES = [
     join(REPORTS_DIR, "icd10cm_term_exclusions.txt"),
 ]
 
+DESIRED_COLUMN_ORDER = [
+        "subject_id",
+        "subject_label",
+        "object_id",
+        "predicate_id",
+        "object_label",
+        "mapping_justification",
+        "mapping_tool",
+        "confidence",
+        "subject_match_field",
+        "object_match_field",
+        "match_string",
+    ]
+
 input_argument = click.argument("input", required=True, type=click.Path())
 
 
@@ -119,21 +133,6 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     mondo_subjects_df = pd.DataFrame(msdf_lex.df[(condition_7 & ~condition_mondo_obj)])
     print(len(mondo_subjects_df))
     non_mondo_subjects_df.head()
-
-    desired_sequence = [
-        "subject_id",
-        "subject_label",
-        "object_id",
-        "predicate_id",
-        "object_label",
-        "mapping_justification",
-        "mapping_tool",
-        "confidence",
-        "subject_match_field",
-        "object_match_field",
-        "match_string",
-    ]
-
     new_subjects_df = non_mondo_subjects_df.rename(
         columns={
             "subject_id": "object_id",
@@ -145,7 +144,7 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         }
     )
 
-    new_subjects_df = new_subjects_df[desired_sequence]
+    new_subjects_df = new_subjects_df[DESIRED_COLUMN_ORDER]
     new_subjects_df["predicate_id"] = new_subjects_df["predicate_id"].apply(
         lambda x: flip_predicate(x)
     )
@@ -349,8 +348,10 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
         [pd.DataFrame.from_dict(robot_row_dict, orient="columns"), unmapped_exact_exact],
         axis=0,
     )
+    unmapped_exact_exact = unmapped_exact_exact[DESIRED_COLUMN_ORDER]
     unmapped_exact_exact.to_csv(join(new_fn), sep="\t", index=False)
     unmapped_exact_logical = unmapped_exact.loc[unmapped_exact["subject_label"].str.lower() != unmapped_exact["object_label"].str.lower()]
+    unmapped_exact_logical = unmapped_exact_logical[DESIRED_COLUMN_ORDER]
     unmapped_exact_logical.to_csv(join(fn), sep="\t", index=False)
 
 

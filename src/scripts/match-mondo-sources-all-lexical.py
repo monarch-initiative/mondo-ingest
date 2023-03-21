@@ -25,10 +25,11 @@ import click
 import yaml
 
 from sssom.constants import SUBJECT_ID, OBJECT_ID
-from sssom.util import filter_prefixes
+from sssom.util import filter_prefixes, is_curie, is_iri
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
 from sssom.io import get_metadata_and_prefix_map, filter_file
+from bioregistry import curie_from_iri
 
 SRC = Path(__file__).resolve().parents[1]
 ONTOLOGY_DIR = SRC / "ontology"
@@ -103,7 +104,13 @@ def run(input: str, config: str, rules: str, output: str):
 
     # msdf.prefix_map = sssom_yaml['curie_map']
     # msdf.metadata = sssom_yaml['global_metadata']
-
+    #! The block below converts IRI into CURIE using bioregistry.
+    # msdf.df[SUBJECT_ID] = msdf.df[SUBJECT_ID].apply(
+    #     lambda x: iri_to_curie(x) if x.startswith("<http") else x
+    # )
+    # msdf.df[OBJECT_ID] = msdf.df[OBJECT_ID].apply(
+    #     lambda x: iri_to_curie(x) if x.startswith("<http") else x
+    # )
     msdf.df = filter_prefixes(
         df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID]
     )
@@ -118,6 +125,29 @@ def run(input: str, config: str, rules: str, output: str):
     kwargs = {"subject_id": ("MONDO:%",), "object_id": prefix_args}
     with open(str(Path(output.replace("lexical", "lexical-2"))), "w") as f:
         filter_file(input=str(Path(output)), output=f, **kwargs)
+
+
+def iri_to_curie(item):
+    """If item is an IRI, return CURIE form.
+
+    :param item: IRI or CURIE
+    :return: CURIE
+    """
+    if item.startswith("<"):
+        item = item.strip("<").strip(">")
+
+    if is_iri(item):
+        item = curie_from_iri(item) if curie_from_iri(item) else item
+    else:
+        if not is_curie(item):
+            logging.warning(f"{item} is neither s CURIE nor an IRI.")
+
+    # if item.startswith("obo:orphanet.ordo_"):
+    #     item = item.replace("obo:orphanet.ordo_", "Orphanet:")
+    # elif item.startswith("obo:OMIM"):
+    #     item = item.replace("obo:OMIM_", "OMIM:")
+
+    return item
 
 
 if __name__ == "__main__":

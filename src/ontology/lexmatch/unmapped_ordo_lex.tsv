@@ -1,2 +1,20 @@
-subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	comment
-ID		A oboInOwl:hasDbXref	>A oboInOwl:source	>A sssom:object_label		
+subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
+MONDO:0002096	malignant conjunctival melanoma	Orphanet:617910	MONDO:equivalentTo	Conjunctival malignant melanoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	conjunctival malignant melanoma
+MONDO:0002096	malignant conjunctival melanoma	Orphanet:617910	MONDO:equivalentTo	Conjunctival malignant melanoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	conjunctival melanoma
+MONDO:0008932	premature centromere division	Orphanet:623626	MONDO:equivalentTo	Paraneoplastic cerebellar degeneration	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	pcd
+MONDO:0009221	femur-fibula-ulna complex	Orphanet:633228	MONDO:equivalentTo	Proximal femoral focal deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	pffd
+MONDO:0009424	Bartter disease type 2	Orphanet:620220	MONDO:equivalentTo	Bartter syndrome type 2	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	bartter syndrome type 2
+MONDO:0010515	Meester-Loeys syndrome	Orphanet:622925	MONDO:equivalentTo	X-linked severe syndromic thoracic aortic aneurysm and dissection	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	meester-loeys syndrome
+MONDO:0010515	Meester-Loeys syndrome	Orphanet:622925	MONDO:equivalentTo	X-linked severe syndromic thoracic aortic aneurysm and dissection	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	meester-loeys syndrome
+MONDO:0014914	Dias-Logan syndrome	Orphanet:619233	MONDO:equivalentTo	Hereditary persistence of fetal hemoglobin-intellectual disability syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	dias-logan syndrome
+MONDO:0014914	Dias-Logan syndrome	Orphanet:619233	MONDO:equivalentTo	Hereditary persistence of fetal hemoglobin-intellectual disability syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	dias-logan syndrome
+MONDO:0016575	primary ciliary dyskinesia	Orphanet:623626	MONDO:equivalentTo	Paraneoplastic cerebellar degeneration	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	pcd
+MONDO:0018215	paraneoplastic neurologic syndrome	Orphanet:623626	MONDO:equivalentTo	Paraneoplastic cerebellar degeneration	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	pcd
+MONDO:0030012	Diets-Jongmans syndrome	Orphanet:633004	MONDO:equivalentTo	KDM3B-related intellectual disability-facial dysmorphism-short stature syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	diets-jongmans syndrome
+MONDO:0030012	Diets-Jongmans syndrome	Orphanet:633004	MONDO:equivalentTo	KDM3B-related intellectual disability-facial dysmorphism-short stature syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	diets-jongmans syndrome
+MONDO:0030805	spinocerebellar ataxia 49	Orphanet:631106	MONDO:equivalentTo	Spinocerebellar ataxia type 49	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spinocerebellar ataxia type 49
+MONDO:0031002	Baralle-Macken syndrome	Orphanet:633035	MONDO:equivalentTo	Intellectual disability-early-onset cataract-microcephaly syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	baralle-macken syndrome
+MONDO:0032526	spinocerebellar ataxia 48	Orphanet:631103	MONDO:equivalentTo	Spinocerebellar ataxia type 48	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spinocerebellar ataxia type 48
+MONDO:0033479	spinocerebellar ataxia 44	Orphanet:631095	MONDO:equivalentTo	Spinocerebellar ataxia type 44	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spinocerebellar ataxia type 44
+MONDO:0100344	Bartter disease type 1	Orphanet:620217	MONDO:equivalentTo	Bartter syndrome type 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	bartter syndrome type 1
