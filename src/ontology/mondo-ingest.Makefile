@@ -192,7 +192,7 @@ unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_st
 
 $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.db
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
-	--select-intensional-exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
+	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
 	--db-path $(COMPONENTSDIR)/$*.db \
