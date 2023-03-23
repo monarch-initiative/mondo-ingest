@@ -73,6 +73,12 @@ rules:
       match: r'\[[^)]*\]'
       match_scope: "*"
       replacement: ""
+
+  - synonymizer:
+      the_rule: Remove abbreviations.
+      match: r'\b[A-Z][a-zA-Z\.]*[A-Z]\b\.?''
+      match_scope: "*"
+      replacement: ""
   
   - synonymizer:
       the_rule: Broad match terms with the term 'other' in them.
@@ -98,3 +104,4 @@ rules:
       match: r'\'s'
       match_scope: "*"
       replacement: "s"
+
