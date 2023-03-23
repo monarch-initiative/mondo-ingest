@@ -76,7 +76,7 @@ rules:
 
   - synonymizer:
       the_rule: Remove abbreviations.
-      match: r'\b[A-Z][a-zA-Z\.]*[A-Z]\b\.?''
+      match: r'\b[A-Z][a-zA-Z\.]*[A-Z]\b\.?'
       match_scope: "*"
       replacement: ""
   
