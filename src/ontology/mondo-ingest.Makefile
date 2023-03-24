@@ -321,8 +321,10 @@ tmp/mondo.owl:
 		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
 		cd mondo/src/ontology &&\
 		make mondo.owl IMP=false MIR=false &&\
+		make mappings IMP=false MIR=false  &&\
 		cd ../../../../ &&\
 		cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@ &&\
+		cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $(TMPDIR)/mondo.sssom.tsv &&\
 		rm -rf $(TMPDIR)/mondo/; fi
 
 $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
@@ -361,8 +363,7 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 #############################
 # Official Mondo SSSOM Mappings
 # - Doeesn't include: broad mappings
-tmp/mondo.sssom.tsv:
-	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
+# - Comes from make tmp/mondo.owl
 
 tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
 	sssom convert $< -O rdf -o $@
