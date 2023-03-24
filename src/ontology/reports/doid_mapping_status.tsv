@@ -1,5 +1,4 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
-DOID:0040060	ketoprofen photoallergic dermatitis	False	False	False
 DOID:0050192	Nipah virus encephalitis	False	False	False
 DOID:0060034	dropped head syndrome	False	False	False
 DOID:0060042	atypical autism	False	False	False
@@ -228,14 +227,11 @@ DOID:0080821	exercise-induced bronchoconstriction	False	False	False
 DOID:0080822	aspirin-induced respiratory disease	False	False	False
 DOID:0080823	near-fatal asthma	False	False	False
 DOID:0080824	persistent severe asthma	False	False	False
-DOID:0080825	thunderstorm triggered asthma	False	False	False
 DOID:0080826	nocturnal asthma	False	False	False
 DOID:0080827	human cytomegalovirus infection	False	False	False
 DOID:0080828	VEXAS syndrome	False	False	False
 DOID:0080829	low grade glioma	False	False	False
 DOID:0080830	childhood low-grade glioma	False	False	False
-DOID:0080831	subjective cognitive decline	False	False	False
-DOID:0080832	mild cognitive impairment	False	False	False
 DOID:0080833	laryngomalacia	False	False	False
 DOID:0080834	acquired laryngomalacia	False	False	False
 DOID:0080835	TORCH syndrome	False	False	False
@@ -399,8 +395,6 @@ DOID:0081001	Cowden syndrome 5	False	False	False
 DOID:0081002	Cowden syndrome 6	False	False	False
 DOID:0081003	Cowden syndrome 7	False	False	False
 DOID:0081004	high-grade B-cell lymphoma double-hit/triple-hit	False	False	False
-DOID:0081005	parsley allergy	False	False	False
-DOID:0081006	dill allergy	False	False	False
 DOID:0081007	RNASET2-deficient cystic leukoencephalopathy	False	False	False
 DOID:0081008	intellectual developmental disorder with cardiac arrhythmia	False	False	False
 DOID:0081009	Bardet-Biedl syndrome 20	False	False	False
@@ -660,6 +654,47 @@ DOID:0081283	papillary glioneuronal tumor	False	False	False
 DOID:0081284	rosette-forming glioneuronal tumor	False	False	False
 DOID:0081285	myxoid glioneuronal tumor	False	False	False
 DOID:0081286	embryonal tumor with multilayered rosettes	False	False	False
+DOID:0081287	white sponge nevus 1	False	False	False
+DOID:0081288	white sponge nevus 2	False	False	False
+DOID:0081289	Antley-Bixler syndrome	False	False	False
+DOID:0081290	Antley-Bixler syndrome without disordered steroidogenesis	False	False	False
+DOID:0081291	chronic traumatic encephalopathy	False	False	False
+DOID:0081292	traumatic brain injury	False	False	False
+DOID:0081293	salivary gland mucoepidermoid carcinoma	False	False	False
+DOID:0081294	neuronal intranuclear inclusion disease	False	False	False
+DOID:0081295	essential tremor 6	False	False	False
+DOID:0081296	oculopharyngodistal myopathy	False	False	False
+DOID:0081297	oculopharyngodistal myopathy 1	False	False	False
+DOID:0081298	oculopharyngodistal myopathy 2	False	False	False
+DOID:0081299	oculopharyngodistal myopathy 3	False	False	False
+DOID:0081300	oculopharyngodistal myopathy 4	False	False	False
+DOID:0081301	intellectual developmental disorder with ocular anomalies and distinctive facial features	False	False	False
+DOID:0081302	diffuse leptomeningeal glioneuronal tumor	False	False	False
+DOID:0081303	multinodular and vacuolating neuronal tumor	False	False	False
+DOID:0081304	high-grade astrocytoma with piloid features	False	False	False
+DOID:0081305	polymorphous low grade neuroepithelial tumour of the young	False	False	False
+DOID:0081306	spindle cell oncocytoma	False	False	False
+DOID:0081307	lymphomatoid granulomatosis	False	False	False
+DOID:0081308	grade I lymphomatoid granulomatosis	False	False	False
+DOID:0081309	grade II lymphomatoid granulomatosis	False	False	False
+DOID:0081310	grade III lymphomatoid granulomatosis	False	False	False
+DOID:0081311	intravascular large B-cell lymphoma	False	False	False
+DOID:0081312	T-cell non-Hodgkin lymphoma	False	False	False
+DOID:0081313	primary diffuse large B-cell lymphoma of the central nervous system	False	False	False
+DOID:0081314	extraventricular neurocytoma	False	False	False
+DOID:0081315	central nervous system tumor with BCOR internal tandem duplication	False	False	False
+DOID:0081316	primary intracranial sarcoma, DICER1-mutant	False	False	False
+DOID:0081317	multiple synostoses syndrome 1	False	False	False
+DOID:0081318	multiple synostoses syndrome 2	False	False	False
+DOID:0081319	multiple synostoses syndrome 3	False	False	False
+DOID:0081320	multiple synostoses syndrome 4	False	False	False
+DOID:0081321	contractures, pterygia, and spondylocarpotarsal fusion syndrome 1A	False	False	False
+DOID:0081322	contractures, pterygia, and spondylocarpotarsal fusion syndrome 1B	False	False	False
+DOID:0081323	breast implant illness	False	False	False
+DOID:0081324	neurodevelopmental disorder with poor growth, spastic tetraplegia, and hearing loss	False	False	False
+DOID:0081325	developmental and epileptic encephalopathy 94	False	False	False
+DOID:0081326	oxoglutarate dehydrogenase deficiency	False	False	False
+DOID:0081327	neurodevelopmental disorder with regression, abnormal movements, loss of speech, and seizures	False	False	False
 DOID:0111180	French Canadian Leigh disease	False	False	False
 DOID:0111189	distal muscular dystrophy 3	False	False	False
 DOID:0111190	distal muscular dystrophy 4	False	False	False
@@ -732,7 +767,6 @@ DOID:0111819	syndactyly type 5	False	False	False
 DOID:0111820	zygodactyly 1	False	False	False
 DOID:0111821	ichthyosis follicularis-alopecia-photophobia syndrome 1	False	False	False
 DOID:0111822	CHILD syndrome	False	False	False
-DOID:0111823	autosomal hemophilia A	False	False	False
 DOID:0111824	Aarskog syndrome	False	False	False
 DOID:0111825	autosomal dominant Aarskog syndrome	False	False	False
 DOID:0111826	Abruzzo-Erickson syndrome	False	False	False
@@ -1288,6 +1322,7 @@ DOID:0112383	KINSSHIP syndrome	False	False	False
 DOID:070355	multisystem proteinopathy	False	False	False
 DOID:10993	postinfectious encephalitis	False	False	False
 DOID:11166	Human papillomavirus infectious disease	False	False	False
+DOID:11650	bronchopulmonary dysplasia	False	False	False
 DOID:3125	multiple endocrine neoplasia	False	False	False
 DOID:370	malignant olfactory nerve neoplasm	False	False	False
 DOID:4857	diffuse astrocytoma	False	False	False
@@ -1355,6 +1390,7 @@ DOID:0040056	chromium allergic contact dermatitis	False	True	False
 DOID:0040057	benzoic acid allergic contact dermatitis	False	True	False
 DOID:0040058	1,4-phenylenediamine allergic contact dermatitis	False	True	False
 DOID:0040059	potassium dichromate allergic contact dermatitis	False	True	False
+DOID:0040060	ketoprofen photoallergic dermatitis	False	True	False
 DOID:0040061	remazole black respiratory allergy	False	True	False
 DOID:0040062	chloramine T respiratory allergy	False	True	False
 DOID:0040063	4-vinylcyclohexene dioxide respiratory allergy	False	True	False
@@ -1384,6 +1420,12 @@ DOID:0040104	toluene 2,4-diisocyanate allergic asthma	False	True	False
 DOID:0060904	legume allergy	False	True	False
 DOID:0070334	vegetable allergy	False	True	False
 DOID:0070335	celery allergy	False	True	False
+DOID:0080825	thunderstorm triggered asthma	False	True	False
+DOID:0080831	subjective cognitive decline	False	True	False
+DOID:0080832	mild cognitive impairment	False	True	False
+DOID:0081005	parsley allergy	False	True	False
+DOID:0081006	dill allergy	False	True	False
+DOID:0111823	autosomal hemophilia A	False	True	False
 DOID:0050001	obsolete Actinomadura madurae infectious disease	False	True	True
 DOID:0050002	obsolete Actinomadura pelletieri infectious disease	False	True	True
 DOID:0050003	obsolete Streptomyces somaliensis infectious disease	False	True	True
@@ -2001,7 +2043,6 @@ DOID:11604	obsolete idiopathic hydrops fetalis	False	True	True
 DOID:11606	obsolete ileal disease	False	True	True
 DOID:11607	obsolete candidal meningitis	False	True	True
 DOID:11649	obsolete transitory tachypnea of newborn	False	True	True
-DOID:11650	obsolete bronchopulmonary dysplasia	False	True	True
 DOID:11654	obsolete nevus of ota	False	True	True
 DOID:11662	obsolete color vision defect	False	True	True
 DOID:11680	obsolete ocular onchocerciasis	False	True	True
@@ -3987,7 +4028,7 @@ DOID:0050440	familial partial lipodystrophy	True	False	False
 DOID:0050441	mucosulfatidosis	True	False	False
 DOID:0050444	infantile Refsum disease	True	False	False
 DOID:0050445	X-linked dominant hypophosphatemic rickets	True	False	False
-DOID:0050448	hereditary mucosal leukokeratosis	True	False	False
+DOID:0050448	white sponge nevus	True	False	False
 DOID:0050449	pachyonychia congenita	True	False	False
 DOID:0050450	Gitelman syndrome	True	False	False
 DOID:0050451	Brugada syndrome	True	False	False
@@ -4000,7 +4041,7 @@ DOID:0050458	juvenile myelomonocytic leukemia	True	False	False
 DOID:0050459	hyperphosphatemia	True	False	False
 DOID:0050460	Wolf-Hirschhorn syndrome	True	False	False
 DOID:0050461	aspartylglucosaminuria	True	False	False
-DOID:0050462	Antley-Bixler syndrome	True	False	False
+DOID:0050462	Antley-Bixler syndrome with disordered steroidogenesis	True	False	False
 DOID:0050463	campomelic dysplasia	True	False	False
 DOID:0050464	Farber lipogranulomatosis	True	False	False
 DOID:0050465	Muir-Torre syndrome	True	False	False
@@ -4198,7 +4239,7 @@ DOID:0050705	adolescence-adult electroclinical syndrome	True	False	False
 DOID:0050706	variable age at onset electroclinical syndrome	True	False	False
 DOID:0050708	early onset absence epilepsy	True	False	False
 DOID:0050709	early infantile epileptic encephalopathy	True	False	False
-DOID:0050710	3-Methylcrotonyl-CoA carboxylase deficiency	True	False	False
+DOID:0050710	3-methylcrotonyl-CoA carboxylase deficiency	True	False	False
 DOID:0050711	aceruloplasminemia	True	False	False
 DOID:0050712	AGAT deficiency	True	False	False
 DOID:0050713	fatal infantile cardioencephalomyopathy due to cytochrome c oxidase deficiency	True	False	False
@@ -4234,8 +4275,7 @@ DOID:0050743	mature T-cell and NK-cell lymphoma	True	False	False
 DOID:0050744	anaplastic large cell lymphoma	True	False	False
 DOID:0050745	diffuse large B-cell lymphoma	True	False	False
 DOID:0050746	mantle cell lymphoma	True	False	False
-DOID:0050747	lymphoplasmacytic lymphoma	True	False	False
-DOID:0050748	marginal zone B-cell lymphoma	True	False	False
+DOID:0050748	marginal zone lymphoma	True	False	False
 DOID:0050749	peripheral T-cell lymphoma	True	False	False
 DOID:0050750	splenic marginal zone lymphoma	True	False	False
 DOID:0050751	T-cell large granular lymphocyte leukemia	True	False	False
@@ -4386,7 +4426,7 @@ DOID:0050905	inflammatory myofibroblastic tumor	True	False	False
 DOID:0050906	conjunctival nevus	True	False	False
 DOID:0050907	mixed extragonadal germ cell cancer	True	False	False
 DOID:0050908	myelodysplastic syndrome	True	False	False
-DOID:0050909	MALT lymphoma	True	False	False
+DOID:0050909	extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue	True	False	False
 DOID:0050910	cecum adenoma	True	False	False
 DOID:0050911	appendix carcinoid tumor	True	False	False
 DOID:0050912	colon adenoma	True	False	False
@@ -4929,7 +4969,7 @@ DOID:0060471	fetal valproate syndrome	True	False	False
 DOID:0060472	Kindler syndrome	True	False	False
 DOID:0060473	Kabuki syndrome	True	False	False
 DOID:0060474	familial erythrocytosis 2	True	False	False
-DOID:0060475	childhood onset epileptic encephalopathy	True	False	False
+DOID:0060475	myoclonic-atonic epilepsy	True	False	False
 DOID:0060476	Perlman syndrome	True	False	False
 DOID:0060478	Zika fever	True	False	False
 DOID:0060479	Shwachman-Diamond syndrome	True	False	False
@@ -4944,6 +4984,7 @@ DOID:0060488	Pitt-Hopkins syndrome	True	False	False
 DOID:0060490	Schimke immuno-osseous dysplasia	True	False	False
 DOID:0060491	SPOAN syndrome	True	False	False
 DOID:0060499	autoimmune neuropathy	True	False	False
+DOID:0060500	drug allergy	True	False	False
 DOID:0060534	hepatoid adenocarcinoma	True	False	False
 DOID:0060535	Warsaw breakage syndrome	True	False	False
 DOID:0060536	mitochondrial complex I deficiency	True	False	False
@@ -5244,7 +5285,7 @@ DOID:0060896	Parkinson's disease 23	True	False	False
 DOID:0060897	Parkinson's disease 17	True	False	False
 DOID:0060898	Parkinson's disease 20	True	False	False
 DOID:0060900	Parkinson's disease 14	True	False	False
-DOID:0060901	Waldenstroem's macroglobulinemia	True	False	False
+DOID:0060901	lymphoplasmacytic lymphoma	True	False	False
 DOID:0060902	Norman-Roberts syndrome	True	False	False
 DOID:0060903	thrombosis	True	False	False
 DOID:0060911	karyomegalic interstitial nephritis	True	False	False
@@ -5666,7 +5707,7 @@ DOID:0080106	microcephaly and chorioretinopathy 2	True	False	False
 DOID:0080107	microcephaly and chorioretinopathy 3	True	False	False
 DOID:0080108	myoglobinuria	True	False	False
 DOID:0080109	infantile myofibromatosis	True	False	False
-DOID:0080110	multiple pterygium syndrome	True	False	False
+DOID:0080110	contractures, pterygia, and spondylocarpotarsal fusion syndrome	True	False	False
 DOID:0080111	mitochondrial complex III deficiency nuclear type 1	True	False	False
 DOID:0080112	mitochondrial complex III deficiency nuclear type 3	True	False	False
 DOID:0080113	mitochondrial complex III deficiency nuclear type 4	True	False	False
@@ -5768,7 +5809,7 @@ DOID:0080213	punctate palmoplantar keratoderma type II	True	False	False
 DOID:0080214	punctate palmoplantar keratoderma type I	True	False	False
 DOID:0080215	developmental and epileptic encephalopathy 8	True	False	False
 DOID:0080216	duodenal atresia	True	False	False
-DOID:0080217	lysosomal and lipase deficiency	True	False	False
+DOID:0080217	lysosomal acid lipase deficiency	True	False	False
 DOID:0080218	primary spontaneous pneumothorax	True	False	False
 DOID:0080219	dystransthyretinemic hyperthyroxinemia	True	False	False
 DOID:0080222	pseudohypoparathyroidism type IB	True	False	False
@@ -6394,14 +6435,6 @@ DOID:0110094	short-rib thoracic dysplasia 8 with or without polydactyly	True	Fal
 DOID:0110095	short-rib thoracic dysplasia 11 with or without polydactyly	True	False	False
 DOID:0110096	short-rib thoracic dysplasia 14 with polydactyly	True	False	False
 DOID:0110097	short-rib thoracic dysplasia 9 with or without polydactyly	True	False	False
-DOID:0110098	atopic dermatitis 2	True	False	False
-DOID:0110099	atopic dermatitis 3	True	False	False
-DOID:0110100	atopic dermatitis 4	True	False	False
-DOID:0110101	atopic dermatitis 5	True	False	False
-DOID:0110102	atopic dermatitis 6	True	False	False
-DOID:0110103	atopic dermatitis 7	True	False	False
-DOID:0110104	atopic dermatitis 8	True	False	False
-DOID:0110105	atopic dermatitis 9	True	False	False
 DOID:0110106	atrial heart septal defect 1	True	False	False
 DOID:0110107	atrial heart septal defect 2	True	False	False
 DOID:0110108	atrial heart septal defect 3	True	False	False
@@ -8132,7 +8165,6 @@ DOID:10316	pneumoconiosis	True	False	False
 DOID:10319	mixed mineral dust pneumoconiosis	True	False	False
 DOID:10320	asbestosis	True	False	False
 DOID:10321	baritosis	True	False	False
-DOID:10322	berylliosis	True	False	False
 DOID:10323	byssinosis	True	False	False
 DOID:10324	anthracosilicosis	True	False	False
 DOID:10325	silicosis	True	False	False
@@ -9129,7 +9161,6 @@ DOID:13147	fungal esophagitis	True	False	False
 DOID:13148	acute cystitis	True	False	False
 DOID:13159	scrotum squamous cell carcinoma	True	False	False
 DOID:13160	scrotum melanoma	True	False	False
-DOID:13166	allergic bronchopulmonary aspergillosis	True	False	False
 DOID:13168	prepuce cancer	True	False	False
 DOID:13169	spermatic cord cancer	True	False	False
 DOID:13174	dissociated nystagmus	True	False	False
@@ -10549,7 +10580,7 @@ DOID:3278	encapsulated thymoma	True	False	False
 DOID:3279	spindle cell thymoma	True	False	False
 DOID:3280	mixed type thymoma	True	False	False
 DOID:3281	combined thymoma	True	False	False
-DOID:3282	dendritic cell thymoma	True	False	False
+DOID:3282	thymoma type B	True	False	False
 DOID:3283	invasive malignant thymoma	True	False	False
 DOID:3284	thymic carcinoma	True	False	False
 DOID:3292	mpox	True	False	False
@@ -10564,7 +10595,6 @@ DOID:3307	teratoma	True	False	False
 DOID:3308	embryonal carcinoma	True	False	False
 DOID:3309	neurodermatitis	True	False	False
 DOID:331	central nervous system disease	True	False	False
-DOID:3310	atopic dermatitis	True	False	False
 DOID:3312	bipolar disorder	True	False	False
 DOID:3314	angiomyolipoma	True	False	False
 DOID:3315	lipoma	True	False	False
@@ -10825,7 +10855,6 @@ DOID:3766	leukorrhea	True	False	False
 DOID:3767	vaginal discharge	True	False	False
 DOID:3770	pulmonary fibrosis	True	False	False
 DOID:3772	intraventricular meningioma	True	False	False
-DOID:3773	third ventricle chordoid glioma	True	False	False
 DOID:3774	chordoid glioma	True	False	False
 DOID:3777	granuloma annulare	True	False	False
 DOID:3781	anovulation	True	False	False
@@ -10840,8 +10869,6 @@ DOID:3813	central nervous system chondroma	True	False	False
 DOID:3814	soft tissue chondroma	True	False	False
 DOID:3816	glossopharyngeal nerve paralysis	True	False	False
 DOID:3817	cranial nerve palsy	True	False	False
-DOID:3818	photoallergic dermatitis	True	False	False
-DOID:3819	toxicodendron dermatitis	True	False	False
 DOID:3821	posterior cerebral artery infarction	True	False	False
 DOID:3825	Shwartzman phenomenon	True	False	False
 DOID:3827	congenital diaphragmatic hernia	True	False	False
@@ -11042,7 +11069,7 @@ DOID:4207	childhood infratentorial neoplasm	True	False	False
 DOID:4209	brainstem intraparenchymal clear cell meningioma	True	False	False
 DOID:421	hair disease	True	False	False
 DOID:4210	clear cell meningioma	True	False	False
-DOID:4211	posterior cranial fossa meningioma	True	False	False
+DOID:4211	posterior fossa meningioma	True	False	False
 DOID:4217	malignant ovarian Brenner tumor	True	False	False
 DOID:422	congenital structural myopathy	True	False	False
 DOID:4223	pyoderma	True	False	False
@@ -11194,7 +11221,6 @@ DOID:4472	mucinous tubular and spindle renal cell carcinoma	True	False	False
 DOID:4473	sarcomatoid renal cell carcinoma	True	False	False
 DOID:4479	pseudohypoaldosteronism	True	False	False
 DOID:4480	achondroplasia	True	False	False
-DOID:4481	allergic rhinitis	True	False	False
 DOID:4483	rhinitis	True	False	False
 DOID:4486	malignant biphasic mesothelioma	True	False	False
 DOID:4488	sarcomatoid mesothelioma	True	False	False
@@ -11232,7 +11258,7 @@ DOID:4545	mesenchymal chondrosarcoma	True	False	False
 DOID:4546	childhood mesenchymal chondrosarcoma	True	False	False
 DOID:4547	adult mesenchymal chondrosarcoma	True	False	False
 DOID:4548	extraskeletal mesenchymal chondrosarcoma	True	False	False
-DOID:4549	extraosseous chondrosarcoma	True	False	False
+DOID:4549	extraskeletal myxoid chondrosarcoma	True	False	False
 DOID:4550	anal gland neoplasm	True	False	False
 DOID:4551	anus benign neoplasm	True	False	False
 DOID:4552	large cell carcinoma	True	False	False
@@ -11790,7 +11816,6 @@ DOID:5528	rectum squamous cell carcinoma	True	False	False
 DOID:5529	lacrimal gland squamous cell carcinoma	True	False	False
 DOID:5530	thymus squamous cell carcinoma	True	False	False
 DOID:5531	ovarian squamous cell carcinoma	True	False	False
-DOID:5532	ovarian squamous cell neoplasm	True	False	False
 DOID:5533	endometrial squamous cell carcinoma	True	False	False
 DOID:5534	renal pelvis squamous cell carcinoma	True	False	False
 DOID:5535	gallbladder squamous cell carcinoma	True	False	False
@@ -11882,7 +11907,7 @@ DOID:5667	sweat gland carcinoma	True	False	False
 DOID:5670	comedo carcinoma	True	False	False
 DOID:5672	large intestine cancer	True	False	False
 DOID:5675	cribriform carcinoma	True	False	False
-DOID:5677	extragonadal nonseminomatous germ cell tumor	True	False	False
+DOID:5677	malignant extragonadal nonseminomatous germ cell tumor	True	False	False
 DOID:5678	nerve fibre bundle defect	True	False	False
 DOID:5679	retinal disease	True	False	False
 DOID:5680	embryonal testis carcinoma	True	False	False
@@ -12095,7 +12120,7 @@ DOID:6082	childhood testicular germ cell tumor	True	False	False
 DOID:6083	childhood ovarian endodermal sinus tumor	True	False	False
 DOID:6084	childhood ovarian germ cell tumor	True	False	False
 DOID:6085	meningeal melanoma	True	False	False
-DOID:6086	malignant leptomeningeal tumor	True	False	False
+DOID:6086	malignant leptomeningeal neoplasm	True	False	False
 DOID:6088	acute stress disorder	True	False	False
 DOID:6089	childhood leptomeningeal melanoma	True	False	False
 DOID:6090	adult leptomeningeal melanoma	True	False	False
@@ -12254,8 +12279,6 @@ DOID:649	prion disease	True	False	False
 DOID:6491	breast capillary hemangioma	True	False	False
 DOID:6492	breast epithelioid hemangioma	True	False	False
 DOID:6494	childhood myxoid chondrosarcoma	True	False	False
-DOID:6495	adult myxoid chondrosarcoma	True	False	False
-DOID:6496	extraskeletal myxoid chondrosarcoma	True	False	False
 DOID:6498	seborrheic keratosis	True	False	False
 DOID:65	connective tissue disease	True	False	False
 DOID:6500	cerebellar angioblastoma	True	False	False
@@ -12272,7 +12295,7 @@ DOID:6523	ciliary body mixed cell melanoma	True	False	False
 DOID:6524	malignant ciliary body melanoma	True	False	False
 DOID:6525	choroid mixed cell melanoma	True	False	False
 DOID:653	purine-pyrimidine metabolic disorder	True	False	False
-DOID:6530	cortical thymoma	True	False	False
+DOID:6530	thymoma type B2	True	False	False
 DOID:6536	plasma cell neoplasm	True	False	False
 DOID:654	overnutrition	True	False	False
 DOID:6543	acne	True	False	False
@@ -12379,7 +12402,6 @@ DOID:6789	vulvar childhood botryoid-type embryonal rhabdomyosarcoma	True	False	F
 DOID:679	basal ganglia disease	True	False	False
 DOID:680	tauopathy	True	False	False
 DOID:6804	colon Kaposi sarcoma	True	False	False
-DOID:6809	vaginal tubular adenoma	True	False	False
 DOID:681	progressive bulbar palsy	True	False	False
 DOID:6811	juvenile pilocytic astrocytoma	True	False	False
 DOID:6812	childhood pilocytic astrocytoma	True	False	False
@@ -12611,7 +12633,7 @@ DOID:74	hematopoietic system disease	True	False	False
 DOID:7400	Nijmegen breakage syndrome	True	False	False
 DOID:7401	colonic L-cell glucagon-like peptide producing tumor	True	False	False
 DOID:7402	L-cell glucagon-like peptide producing tumor	True	False	False
-DOID:7408	vulvar keratoacanthoma-like carcinoma	True	False	False
+DOID:7408	vulvar keratoacanthoma	True	False	False
 DOID:7409	vulvar non-keratinizing squamous cell carcinoma	True	False	False
 DOID:7411	ovarian endometrioid cystadenofibroma	True	False	False
 DOID:7426	cutaneous anthrax	True	False	False
@@ -12801,7 +12823,7 @@ DOID:7880	luteoma	True	False	False
 DOID:7891	testicular spermatocytic seminoma	True	False	False
 DOID:7894	mite infestation	True	False	False
 DOID:790	ocular hypotension	True	False	False
-DOID:7902	adult extraosseous chondrosarcoma	True	False	False
+DOID:7902	adult extraskeletal myxoid chondrosarcoma	True	False	False
 DOID:7903	intracranial chondrosarcoma	True	False	False
 DOID:7907	mixed astrocytoma-ependymoma	True	False	False
 DOID:7910	maxillary sinus squamous cell carcinoma	True	False	False
@@ -13132,7 +13154,6 @@ DOID:8738	leukoplakia of penis	True	False	False
 DOID:874	bacterial pneumonia	True	False	False
 DOID:8741	seborrheic dermatitis	True	False	False
 DOID:8743	erythema infectiosum	True	False	False
-DOID:8747	subacute myeloid leukemia	True	False	False
 DOID:8757	gastric mucosal hypertrophy	True	False	False
 DOID:876	pyomyositis	True	False	False
 DOID:8761	acute megakaryocytic leukemia	True	False	False
@@ -13345,7 +13366,6 @@ DOID:9407	strictly posterior acute myocardial infarction	True	False	False
 DOID:9408	acute myocardial infarction	True	False	False
 DOID:9409	diabetes insipidus	True	False	False
 DOID:9410	panhypopituitarism	True	False	False
-DOID:9415	allergic asthma	True	False	False
 DOID:9423	blepharitis	True	False	False
 DOID:9427	hypertensive encephalopathy	True	False	False
 DOID:9428	intracranial hypertension	True	False	False
@@ -13588,7 +13608,6 @@ DOID:0060495	shellfish allergy	True	True	False
 DOID:0060496	respiratory allergy	True	True	False
 DOID:0060497	pollen allergy	True	True	False
 DOID:0060498	Timothy grass allergy	True	True	False
-DOID:0060500	drug allergy	True	True	False
 DOID:0060501	metal allergy	True	True	False
 DOID:0060502	gastrointestinal allergy	True	True	False
 DOID:0060503	fruit allergy	True	True	False
@@ -13621,15 +13640,31 @@ DOID:0060529	white shrimp allergy	True	True	False
 DOID:0060530	snail allergy	True	True	False
 DOID:0060531	horned turban snail allergy	True	True	False
 DOID:0060532	latex allergy	True	True	False
+DOID:0110098	atopic dermatitis 2	True	True	False
+DOID:0110099	atopic dermatitis 3	True	True	False
+DOID:0110100	atopic dermatitis 4	True	True	False
+DOID:0110101	atopic dermatitis 5	True	True	False
+DOID:0110102	atopic dermatitis 6	True	True	False
+DOID:0110103	atopic dermatitis 7	True	True	False
+DOID:0110104	atopic dermatitis 8	True	True	False
+DOID:0110105	atopic dermatitis 9	True	True	False
+DOID:10322	berylliosis	True	True	False
+DOID:13166	allergic bronchopulmonary aspergillosis	True	True	False
 DOID:3042	allergic contact dermatitis	True	True	False
 DOID:3044	food allergy	True	True	False
+DOID:3310	atopic dermatitis	True	True	False
 DOID:3660	wheat allergy	True	True	False
+DOID:3818	photoallergic dermatitis	True	True	False
+DOID:3819	toxicodendron dermatitis	True	True	False
 DOID:4376	milk allergy	True	True	False
 DOID:4377	egg allergy	True	True	False
 DOID:4378	peanut allergy	True	True	False
 DOID:4379	nut allergy	True	True	False
+DOID:4481	allergic rhinitis	True	True	False
+DOID:9415	allergic asthma	True	True	False
 DOID:0050013	obsolete carbohydrate metabolism disease	True	True	True
 DOID:0050068	obsolete pestis minor	True	True	True
+DOID:0050747	obsolete lymphoplasmacytic lymphoma	True	True	True
 DOID:0050780	obsolete Opitz-GBBB syndrome	True	True	True
 DOID:0050819	obsolete Matthew-Wood syndrome	True	True	True
 DOID:0050867	obsolete Jensen syndrome	True	True	True
@@ -13644,6 +13679,12 @@ DOID:1634	obsolete breast papillomatosis	True	True	True
 DOID:2088	obsolete outlet dysfunction constipation	True	True	True
 DOID:2089	obsolete constipation	True	True	True
 DOID:338	obsolete cranial nerve neoplasm	True	True	True
+DOID:3773	obsolete third ventricle chordoid glioma	True	True	True
+DOID:5532	obsolete ovarian squamous cell neoplasm	True	True	True
 DOID:5996	obsolete blunt duct adenosis of breast	True	True	True
+DOID:6495	obsolete adult myxoid chondrosarcoma	True	True	True
+DOID:6496	obsolete extraskeletal myxoid chondrosarcoma	True	True	True
+DOID:6809	obsolete vaginal tubular adenoma	True	True	True
 DOID:715	obsolete T-cell lymphoblastic leukemia/lymphoma	True	True	True
+DOID:8747	obsolete subacute myeloid leukemia	True	True	True
 DOID:9370	obsolete exophthalmos	True	True	True

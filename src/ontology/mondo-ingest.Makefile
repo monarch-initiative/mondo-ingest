@@ -141,12 +141,15 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 
 #################
-# Mappings ######
+### Mappings ####
 #################
+#.PHONY: sssom
+#sssom:
+#	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@master
 
-.PHONY: sssom
-sssom:
-	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@master
+.PHONY: dependencies
+dependencies:
+	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade semsql==0.3.2 oaklib
 
 ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), ../mappings/$(n).sssom.tsv)
 
@@ -171,7 +174,11 @@ metadata/mondo.sssom.config.yml:
 ../mappings/omim.sssom.tsv: $(TMPDIR)/component-omim.json
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/omim.metadata.sssom.yml -o $@
 
-mappings: sssom $(ALL_MAPPINGS)
+mappings: $(ALL_MAPPINGS)
+
+####################################
+##### Mapping progress monitor #####
+####################################
 
 .PHONY: mapping-progress-report
 mapping-progress-report: unmapped-terms-tables unmapped-terms-docs
@@ -195,6 +202,7 @@ $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR
 #################
 ##### Utils #####
 #################
+# Deprecated goal. Here for future reference.
 report-mapping-annotations:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
 
@@ -216,8 +224,8 @@ $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.templa
 	--outpath-txt $(REPORTDIR)/$*_term_exclusions.txt \
 	--outpath-robot-template-tsv $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv
 
-$(REPORTDIR)/%_exclusion_reasons.ttl: mirror/%.owl $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
-	$(ROBOT) template --input mirror/$*.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
+$(REPORTDIR)/%_exclusion_reasons.ttl: component-download-%.owl $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
+	$(ROBOT) template --input $(TMPDIR)/component-download-$*.owl.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
 
 $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: $(TMPDIR)/mondo.sssom.tsv tmp/mondo.owl metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv
 	python3 $(RELEASEDIR)/src/analysis/problematic_exclusions.py \
@@ -285,12 +293,17 @@ metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
 j2:
 	pip install j2cli j2cli[yaml]
 
-documentation: j2 $(ALL_DOCS)
+documentation: j2 $(ALL_DOCS) mapping-progress-report
 
 build-mondo-ingest:
 	$(MAKE) refresh-imports
-	$(MAKE) documentation
+	$(MAKE) exclusions-all
+	$(MAKE) slurp-all
 	$(MAKE) mappings
+	$(MAKE) matches
+	$(MAKE) mapped-deprecated-terms
+	$(MAKE) mapping-progress-report
+	$(MAKE) documentation
 	$(MAKE) prepare_release
 
 DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
@@ -300,24 +313,17 @@ deploy-mondo-ingest:
 	ls -alt $(DEPLOY_ASSETS_MONDO_INGEST)
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
 
-tmp/mondo-ingest.owl:
-	wget https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/mondo-ingest.owl -O $@
+USE_MONDO_RELEASE=false
 
 tmp/mondo.owl:
-	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
-
-# Official Mondo SSSOM Mappings
-# - Doeesn't include: broad mappings
-tmp/mondo.sssom.tsv:
-	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
-
-tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
-	sssom convert $< -O rdf -o $@
-
-# Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
-
-tmp/merged.owl: tmp/mondo.owl tmp/mondo-ingest.owl tmp/mondo.sssom.ttl
-	$(ROBOT) merge -i tmp/mondo.owl -i tmp/mondo-ingest.owl -i tmp/mondo.sssom.ttl  --add-prefixes config/context.json -o $@
+	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
+		rm -rf ./mondo/ &&\
+		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
+		cd mondo/src/ontology &&\
+		make mondo.owl IMP=false MIR=false &&\
+		cd ../../../../ &&\
+		cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@ &&\
+		rm -rf $(TMPDIR)/mondo/; fi
 
 $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
 	$(ROBOT) query -i tmp/merged.owl --query $< $@
@@ -353,15 +359,27 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 #############################
 #### Lexical matching #######
 #############################
+# Official Mondo SSSOM Mappings
+# - Doeesn't include: broad mappings
+tmp/mondo.sssom.tsv:
+	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
+
+tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
+	sssom convert $< -O rdf -o $@
+
+# Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
+tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
+	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl  --add-prefixes config/context.json -o $@
+
 tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
-	RUST_BACKTRACE=full semsql make $@ -P config/prefix.csv
+	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 
-../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py
-	python $^ run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
+../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db
+	python $< run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
 
 lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
 
@@ -398,11 +416,6 @@ $(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mappin
 #############################
 ###### Slurp pipeline #######
 #############################
-.PHONY: component-download-mondo.owl
-component-download-mondo.owl: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I http://purl.obolibrary.org/obo/mondo.owl \
-	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
-
 # todo: What if the mirror was out of date, but there's already a .db file there, but it's not up to date?
 # Related issues:
 #  - icd10cm/icd10who ttl -> owl: https://github.com/monarch-initiative/mondo-ingest/issues/138
@@ -411,7 +424,7 @@ component-download-mondo.owl: | $(TMPDIR)
 $(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
-	RUST_BACKTRACE=full semsql make $@ -P config/prefix.csv
+	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 
@@ -462,8 +475,10 @@ help:
 	@echo "Runs slurp / migrate for all ontologies.\n"
 	@echo "extract-unmapped-matches"
 	@echo "Determine all new matches across external ontologies.\n"
+	# Lexical matches
 	@echo "lexical-matches"
 	@echo "Determine lexical matches across external ontologies.\n"
+	# Mapping status
 	@echo "reports/%_mapping_status.tsv"
 	@echo "A table of all terms for ontology %, along with labels, and other columns is_excluded, is_mapped, is_deprecated.\n"
 	@echo "reports/%_unmapped_terms.tsv"
