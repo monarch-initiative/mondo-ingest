@@ -80,11 +80,11 @@ rules:
   #     match_scope: "*"
   #     replacement: ""
 
-  - synonymizer:
-      the_rule: Remove abbreviations that end with a number in them.
-      match: r'[a-zA-Z]*\d[a-zA-Z]*'
-      match_scope: "*"
-      replacement: ""
+  # - synonymizer:
+  #     the_rule: Remove abbreviations that end with a number in them.
+  #     match: r'[a-zA-Z]*\d[a-zA-Z]*'
+  #     match_scope: "*"
+  #     replacement: ""
   
   - synonymizer:
       the_rule: Broad match terms with the term 'other' in them.
