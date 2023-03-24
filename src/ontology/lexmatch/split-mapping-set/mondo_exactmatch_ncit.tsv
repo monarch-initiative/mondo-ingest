@@ -57,8 +57,8 @@ MONDO:0000651	obsolete thoracic disorder	skos:exactMatch	NCIT:C35742	Thoracic Di
 MONDO:0000654	benign connective and soft tissue neoplasm	skos:exactMatch	NCIT:C53684	Benign Connective and Soft Tissue Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0000665	apraxia	skos:exactMatch	NCIT:C180557	Apraxia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	apraxia	LEXMATCH
 MONDO:0000685	visual agnosia	skos:exactMatch	NCIT:C35276	Visual Agnosia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0000705	Clostridium difficile colitis	skos:exactMatch	NCIT:C180523	Clostridium difficile Infection	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	clostridium difficile infection	LEXMATCH
 MONDO:0000705	Clostridium difficile colitis	skos:exactMatch	NCIT:C35286	Clostridium difficile Colitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000705	Clostridium difficile colitis	skos:exactMatch	NCIT:C180523	Clostridium difficile Infection	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	clostridium difficile infection	LEXMATCH
 MONDO:0000709	Crohn ileitis	skos:exactMatch	NCIT:C35329	Crohn Ileitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0000723	stutter disorder	skos:exactMatch	NCIT:C35043	Stutter	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0000736	dyschromatosis universalis hereditaria	skos:exactMatch	NCIT:C173131	Dyschromatosis Universalis Hereditaria	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	dyschromatosis universalis hereditaria	LEXMATCH
@@ -229,16 +229,16 @@ MONDO:0002083	Richter syndrome	skos:exactMatch	NCIT:C35424	Richter Syndrome	sema
 MONDO:0002087	peritoneum cancer	skos:exactMatch	NCIT:C3538	Malignant Peritoneal Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002090	eccrine sweat gland neoplasm	skos:exactMatch	NCIT:C6796	Eccrine Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002092	small intestine leiomyoma	skos:exactMatch	NCIT:C7725	Small Intestinal Leiomyoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0002095	vascular cancer	skos:exactMatch	NCIT:C8538	Malignant Blood Vessel Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002095	vascular cancer	skos:exactMatch	NCIT:C7390	Malignant Vascular Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant vascular neoplasm	LEXMATCH
+MONDO:0002095	vascular cancer	skos:exactMatch	NCIT:C8538	Malignant Blood Vessel Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002100	cardiovascular cancer	skos:exactMatch	NCIT:C114940	Malignant Cardiovascular Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002108	thyroid cancer	skos:exactMatch	NCIT:C7510	Malignant Thyroid Gland Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002109	pituitary cancer	skos:exactMatch	NCIT:C4769	Malignant Pituitary Gland Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002112	benign peritoneal mesothelioma	skos:exactMatch	NCIT:C7354	Peritoneal Adenomatoid Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002114	pancreas lymphoma	skos:exactMatch	NCIT:C5714	Pancreatic Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002117	pancreas sarcoma	skos:exactMatch	NCIT:C5715	Pancreatic Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0002119	ossifying fibroma	skos:exactMatch	NCIT:C173820	Ossifying Fibroma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ossifying fibroma	LEXMATCH
 MONDO:0002119	ossifying fibroma	skos:exactMatch	NCIT:C8422	Cemento-Ossifying Fibroma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002119	ossifying fibroma	skos:exactMatch	NCIT:C173820	Ossifying Fibroma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ossifying fibroma	LEXMATCH
 MONDO:0002132	skull cancer	skos:exactMatch	NCIT:C155790	Malignant Skull Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant skull neoplasm	LEXMATCH
 MONDO:0002135	optic nerve disorder	skos:exactMatch	NCIT:C118711	Optic Neuropathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	optic neuropathy	LEXMATCH
 MONDO:0002140	vagina sarcoma	skos:exactMatch	NCIT:C7737	Vaginal Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -253,8 +253,8 @@ MONDO:0002165	rectal neoplasm	skos:exactMatch	NCIT:C3350	Rectal Neoplasm	semapv:
 MONDO:0002166	rectum lymphoma	skos:exactMatch	NCIT:C5553	Rectal Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002167	rectum malignant melanoma	skos:exactMatch	NCIT:C4640	Rectal Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002168	rectum sarcoma	skos:exactMatch	NCIT:C5548	Rectal Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0002171	giant cell tumor	skos:exactMatch	NCIT:C7069	Giant Cell Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	giant cell neoplasm	LEXMATCH
 MONDO:0002171	giant cell tumor	skos:exactMatch	NCIT:C3055	Giant Cell Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0002171	giant cell tumor	skos:exactMatch	NCIT:C7069	Giant Cell Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	giant cell neoplasm	LEXMATCH
 MONDO:0002178	placenta cancer	skos:exactMatch	NCIT:C3555	Malignant Placental Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002181	exostosis	skos:exactMatch	NCIT:C139151	Osteophyte	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	osteophyte	LEXMATCH
 MONDO:0002194	vestibular papilloma	skos:exactMatch	NCIT:C6376	Vulvar Squamous Cell Papilloma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -442,7 +442,6 @@ MONDO:0002898	skin cancer	skos:exactMatch	NCIT:C2920	Malignant Skin Neoplasm	sem
 MONDO:0002908	glucose metabolism disease	skos:exactMatch	NCIT:C53655	Glucose Metabolism Disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002913	cerebellar neoplasm	skos:exactMatch	NCIT:C2935	Cerebellar Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002916	brainstem intraparenchymal clear cell meningioma	skos:exactMatch	NCIT:C5295	Brain Stem Intraparenchymal Clear Cell Meningioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0002919	posterior cranial fossa meningioma	skos:exactMatch	NCIT:C6775	Posterior Fossa Meningioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002924	smooth muscle cancer	skos:exactMatch	NCIT:C6511	Malignant Smooth Muscle Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002926	clear cell sarcoma	skos:exactMatch	NCIT:C3745	Clear Cell Sarcoma of Soft Tissue	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0002928	carcinosarcoma	skos:exactMatch	NCIT:C8975	Malignant Mixed Mesodermal (Mullerian) Tumor	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant mixed mesodermal (mullerian) tumor	LEXMATCH
@@ -697,7 +696,6 @@ MONDO:0003751	childhood germ cell tumor	skos:exactMatch	NCIT:C7928	Childhood Ger
 MONDO:0003752	frontal sinus Schneiderian papilloma	skos:exactMatch	NCIT:C6837	Frontal Sinus Papilloma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003753	nasal vestibule squamous papilloma	skos:exactMatch	NCIT:C4369	Nasal Vestibule Squamous Cell Papilloma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003755	urinary tract non-invasive transitional cell neoplasm	skos:exactMatch	NCIT:C39854	Non-Invasive Urothelial Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0003762	malignant leptomeningeal tumor	skos:exactMatch	NCIT:C8506	Malignant Leptomeningeal Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003764	pediatric leptomeningeal melanoma	skos:exactMatch	NCIT:C5318	Childhood Meningeal Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003765	adult leptomeningeal melanoma	skos:exactMatch	NCIT:C5319	Adult Meningeal Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003766	thalamic cancer	skos:exactMatch	NCIT:C4576	Malignant Thalamic Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -741,7 +739,6 @@ MONDO:0003861	vulvar eccrine adenocarcinoma	skos:exactMatch	NCIT:C40305	Vulvar E
 MONDO:0003862	melanotic psammomatous malignant peripheral nerve sheath tumor	skos:exactMatch	NCIT:C6910	Malignant Melanotic Psammomatous Peripheral Nerve Sheath Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003863	malignant melanocytic neoplasm of the peripheral nerve sheath	skos:exactMatch	NCIT:C4748	Malignant Melanotic Peripheral Nerve Sheath Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003866	liver extraskeletal osteosarcoma	skos:exactMatch	NCIT:C5833	Liver Extraskeletal Osteosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0003867	diffuse meningeal melanocytosis	skos:exactMatch	NCIT:C6890	Meningeal Melanocytosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003870	childhood brainstem astrocytoma	skos:exactMatch	NCIT:C6216	Childhood Brain Stem Astrocytoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003874	ovarian serous surface papillary adenocarcinoma	skos:exactMatch	NCIT:C6256	Ovarian Serous Surface Papillary Adenocarcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003878	malignant choroid melanoma	skos:exactMatch	NCIT:C4561	Choroid Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -765,7 +762,6 @@ MONDO:0003907	ovarian yolk sac tumor, polyvesicular vitelline pattern	skos:exact
 MONDO:0003909	Bartholin gland adenomyoma	skos:exactMatch	NCIT:C40300	Bartholin Gland Adenomyoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003910	mixed cell uveal melanoma	skos:exactMatch	NCIT:C35781	Uveal Mixed Cell Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003912	malignant ciliary body melanoma	skos:exactMatch	NCIT:C4558	Ciliary Body Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0003915	cortical thymoma	skos:exactMatch	NCIT:C6888	Thymoma Type B2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003917	heart lymphoma	skos:exactMatch	NCIT:C5368	Cardiac Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003923	ethmoid sinus Schneiderian papilloma	skos:exactMatch	NCIT:C6836	Ethmoid Sinus Papilloma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003926	neurilemmoma of the pleura	skos:exactMatch	NCIT:C5418	Pleural Schwannoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1081,8 +1077,8 @@ MONDO:0004712	herpes simplex dermatitis	skos:exactMatch	NCIT:C35620	Herpes Simpl
 MONDO:0004716	stomach carcinoma in situ	skos:exactMatch	NCIT:C7788	Stage 0 Gastric Cancer AJCC v6 and v7	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0004719	hard palate cancer	skos:exactMatch	NCIT:C3528	Malignant Hard Palate Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0004720	variola minor infection	skos:exactMatch	NCIT:C34365	Alastrim	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0004724	submandibular gland cancer	skos:exactMatch	NCIT:C8396	Submandibular Gland Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0004724	submandibular gland cancer	skos:exactMatch	NCIT:C3526	Malignant Submandibular Gland Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant submandibular gland neoplasm	LEXMATCH
+MONDO:0004724	submandibular gland cancer	skos:exactMatch	NCIT:C8396	Submandibular Gland Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0004725	rectum carcinoma in situ	skos:exactMatch	NCIT:C4853	Stage 0 Rectal Cancer AJCC v6 and v7	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0004726	liver inflammatory myofibroblastic tumor	skos:exactMatch	NCIT:C5858	Liver Inflammatory Myofibroblastic Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0004733	pyriform sinus cancer	skos:exactMatch	NCIT:C3531	Malignant Pyriform Fossa Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1139,7 +1135,6 @@ MONDO:0005051	invasive lobular breast carcinoma	skos:exactMatch	NCIT:C7950	Invas
 MONDO:0005073	melanocytic nevus	skos:exactMatch	NCIT:C7570	Melanocytic Nevus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005078	phyllodes tumor	skos:exactMatch	NCIT:C2977	Phyllodes Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005079	polyp	skos:exactMatch	NCIT:C3340	Polyp	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0005091	severe acute respiratory syndrome	skos:exactMatch	NCIT:C85064	Severe Acute Respiratory Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005095	spondyloarthropathy	skos:exactMatch	NCIT:C116778	Spondyloarthritis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005102	undifferentiated (embryonal) sarcoma	skos:exactMatch	NCIT:C27096	Liver Embryonal Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005103	well-differentiated liposarcoma	skos:exactMatch	NCIT:C4250	Well Differentiated Liposarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1168,8 +1163,8 @@ MONDO:0005235	smoldering plasma cell myeloma	skos:exactMatch	NCIT:C7149	Smolderi
 MONDO:0005236	xanthoma	skos:exactMatch	NCIT:C4071	Xanthoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005266	diabetic retinopathy	skos:exactMatch	NCIT:C34538	Diabetic Retinopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005272	myelodysplastic syndrome with single lineage dysplasia	skos:exactMatch	NCIT:C82591	Myelodysplastic Syndrome with Single Lineage Dysplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0005283	retinal disorder	skos:exactMatch	NCIT:C26875	Retinal Disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	retinal disorder	LEXMATCH
 MONDO:0005283	retinal disorder	skos:exactMatch	NCIT:C62601	Retinopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005283	retinal disorder	skos:exactMatch	NCIT:C26875	Retinal Disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	retinal disorder	LEXMATCH
 MONDO:0005286	palatal neoplasm	skos:exactMatch	NCIT:C4402	Palate Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005289	paranasal sinus neoplasm	skos:exactMatch	NCIT:C7488	Paranasal Sinus Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005296	sleep apnea syndrome	skos:exactMatch	NCIT:C148023	Sleep-Disordered Breathing	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1256,6 +1251,7 @@ MONDO:0005710	composite lymphoma	skos:exactMatch	NCIT:C38661	Composite Lymphoma	
 MONDO:0005723	Cryptococcal meningitis	skos:exactMatch	NCIT:C174113	Cryptococcal Meningitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cryptococcal meningitis	LEXMATCH
 MONDO:0005737	Ebola hemorrhagic fever	skos:exactMatch	NCIT:C36171	Ebola Hemorrhagic Fever	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005742	emphysematous cholecystitis	skos:exactMatch	NCIT:C35592	Emphysematous Cholecystitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005755	equine infectious anemia	skos:exactMatch	NCIT:C84694	Equine Infectious Anemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005779	hand, foot and mouth disease	skos:exactMatch	NCIT:C128439	Hand Foot and Mouth Disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005780	hantavirus infectious disease	skos:exactMatch	NCIT:C3899	Hantavirus Infection	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005790	hepatitis A virus infection	skos:exactMatch	NCIT:C3096	Hepatitis A Infection	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1512,7 +1508,6 @@ MONDO:0006435	submandibular gland adenocarcinoma	skos:exactMatch	NCIT:C5940	Subm
 MONDO:0006436	submandibular gland adenoid cystic carcinoma	skos:exactMatch	NCIT:C5935	Submandibular Gland Adenoid Cystic Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006438	synovial chondromatosis	skos:exactMatch	NCIT:C34467	Synovial Chondromatosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006442	tendon sheath fibroma	skos:exactMatch	NCIT:C6485	Tendon Sheath Fibroma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0006447	testicular non-seminomatous germ cell tumor	skos:exactMatch	NCIT:C9313	Testicular Non-Seminomatous Germ Cell Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006450	therapy-related myeloid neoplasm	skos:exactMatch	NCIT:C27912	Therapy-Related Myeloid Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006451	thymic carcinoma	skos:exactMatch	NCIT:C7612	Malignant Thymoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant thymoma	LEXMATCH
 MONDO:0006452	thymic sarcomatoid carcinoma	skos:exactMatch	NCIT:C6463	Thymic Sarcomatoid Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1557,7 +1552,6 @@ MONDO:0006629	osteoarthritis, hip	skos:exactMatch	NCIT:C34876	Hip Osteoarthritis
 MONDO:0006633	acalculous cholecystitis	skos:exactMatch	NCIT:C35578	Acalculous Cholecystitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006634	pituitary gland acidophil adenoma	skos:exactMatch	NCIT:C6780	Pituitary Gland Acidophil Adenoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006643	alcoholic cardiomyopathy	skos:exactMatch	NCIT:C53653	Alcoholic Cardiomyopathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0006644	alcoholic liver cirrhosis	skos:exactMatch	NCIT:C35532	Portal Cirrhosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	portal cirrhosis	LEXMATCH
 MONDO:0006646	angioleiomyoma	skos:exactMatch	NCIT:C3747	Angioleiomyoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006660	arthus reaction	skos:exactMatch	NCIT:C34400	Arthus Reaction	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006663	perinatal asphyxia	skos:exactMatch	NCIT:C116313	Perinatal Depression	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1568,9 +1562,8 @@ MONDO:0006676	beriberi	skos:exactMatch	NCIT:C34418	Vitamin B1 Deficiency	semapv:
 MONDO:0006680	blue nevus	skos:exactMatch	NCIT:C3803	Blue Nevus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006700	choroid cancer	skos:exactMatch	NCIT:C3566	Malignant Choroid Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006701	chromophobe adenoma	skos:exactMatch	NCIT:C2857	Pituitary Gland Chromophobe Adenoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0006717	cutaneous fibrous histiocytoma	skos:exactMatch	NCIT:C170736	Pleomorphic Fibroma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	pleomorphic fibroma	LEXMATCH
-MONDO:0006717	cutaneous fibrous histiocytoma	skos:exactMatch	NCIT:C6801	Skin Fibrous Histiocytoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006717	cutaneous fibrous histiocytoma	skos:exactMatch	NCIT:C8402	Fibrohistiocytic Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	fibrohistiocytic neoplasm	LEXMATCH
+MONDO:0006717	cutaneous fibrous histiocytoma	skos:exactMatch	NCIT:C6801	Skin Fibrous Histiocytoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006726	diaphragmatic eventration	skos:exactMatch	NCIT:C98912	Diaphragmatic Eventration	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	diaphragmatic eventration	LEXMATCH
 MONDO:0006734	benign duodenal neoplasm	skos:exactMatch	NCIT:C4775	Benign Duodenal Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006742	endemic goiter	skos:exactMatch	NCIT:C35023	Endemic Goiter	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1587,7 +1580,6 @@ MONDO:0006813	intradermal nevus	skos:exactMatch	NCIT:C3804	Dermal Nevus	semapv:U
 MONDO:0006816	arthropathy	skos:exactMatch	NCIT:C35760	Arthropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006834	lip cancer	skos:exactMatch	NCIT:C7485	Malignant Lip Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006835	lipoid nephrosis	skos:exactMatch	NCIT:C34844	Minimal Change Glomerulonephritis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0006835	lipoid nephrosis	skos:exactMatch	NCIT:C35540	Nephrotic Syndrome with Lesion of Minimal Change Glomerulonephritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	nephrotic syndrome with lesion of minimal change glomerulonephritis	LEXMATCH
 MONDO:0006841	lymphangioendothelioma	skos:exactMatch	NCIT:C3203	Acquired Progressive Lymphangioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006842	lymphangiomyoma	skos:exactMatch	NCIT:C3204	Lymphangioleiomyoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006850	maxillary sinus neoplasm	skos:exactMatch	NCIT:C3219	Maxillary Sinus Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1635,20 +1627,18 @@ MONDO:0007205	diaphyseal medullary stenosis-bone malignancy syndrome	skos:exactM
 MONDO:0007233	second branchial cleft anomaly	skos:exactMatch	NCIT:C104813	Branchial Cleft Remnant	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007239	epidermolytic ichthyosis	skos:exactMatch	NCIT:C62569	Epidermolytic Ichthyosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007240	progressive familial heart block, type 1A	skos:exactMatch	NCIT:C126651	Progressive Familial Heart Block, Type Ia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0007251	campomelic dysplasia	skos:exactMatch	NCIT:C120205	Acampomelic Campomelic Dysplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	acampomelic campomelic dysplasia	LEXMATCH
 MONDO:0007254	breast cancer	skos:exactMatch	NCIT:C9335	Malignant Breast Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007263	cardiac rhythm disease	skos:exactMatch	NCIT:C2881	Arrhythmia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007266	hypertrophic cardiomyopathy 2	skos:exactMatch	NCIT:C142892	Familial Hypertrophic Cardiomyopathy Type 2	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007268	hypertrophic cardiomyopathy 4	skos:exactMatch	NCIT:C133725	Familial Hypertrophic Cardiomyopathy Type 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007276	cat-eye syndrome	skos:exactMatch	NCIT:C75477	Cat-Eye Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007296	spinocerebellar ataxia type 31	skos:exactMatch	NCIT:C176901	Spinocerebellar Ataxia Type 31	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spinocerebellar ataxia type 31	LEXMATCH
-MONDO:0007308	Charcot-Marie-Tooth disease type 2A1	skos:exactMatch	NCIT:C134952	Charcot-Marie-Tooth Disease Type 2A	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007308	Charcot-Marie-Tooth disease type 2A1	skos:exactMatch	NCIT:C150609	Charcot-Marie-Tooth Disease Type 2A1	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	charcot-marie-tooth disorder type 2a1	LEXMATCH
+MONDO:0007308	Charcot-Marie-Tooth disease type 2A1	skos:exactMatch	NCIT:C134952	Charcot-Marie-Tooth Disease Type 2A	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007340	cleidocranial dysplasia	skos:exactMatch	NCIT:C75020	Cleidocranial Dysplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007345	aorta coarctation	skos:exactMatch	NCIT:C84567	Aortic Coarctation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007356	Lynch syndrome 1	skos:exactMatch	NCIT:C6725	Lynch 1 Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007362	cone-rod dystrophy 2	skos:exactMatch	NCIT:C162399	Cone-Rod Dystrophy 2	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cone-rod dystrophy type 2	LEXMATCH
-MONDO:0007365	seizures, benign familial neonatal, 1	skos:exactMatch	NCIT:C84911	Myokymia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	myokymia	LEXMATCH
 MONDO:0007416	Balkan nephropathy	skos:exactMatch	NCIT:C123025	Aristolochic Acid Nephropathy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007452	maturity-onset diabetes of the young type 1	skos:exactMatch	NCIT:C129744	Hepatocyte Nuclear Factor 4-Alpha Associated Monogenic Diabetes	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007453	maturity-onset diabetes of the young type 2	skos:exactMatch	NCIT:C129741	Glucokinase-Associated Diabetes Mellitus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1658,7 +1648,6 @@ MONDO:0007496	dystonia 12	skos:exactMatch	NCIT:C157577	Dystonia 12	semapv:Lexica
 MONDO:0007523	Ehlers-Danlos syndrome, hypermobility type	skos:exactMatch	NCIT:C125698	Ehlers-Danlos Syndrome, Type III	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007525	Ehlers-Danlos syndrome, arthrochalasis type	skos:exactMatch	NCIT:C125701	Ehlers-Danlos Syndrome, Type VII	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007534	Beckwith-Wiedemann syndrome	skos:exactMatch	NCIT:C34415	Beckwith-Wiedemann Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0007564	pilomatrixoma	skos:exactMatch	NCIT:C27520	Benign Hair Follicle Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	benign hair follicle neoplasm	LEXMATCH
 MONDO:0007565	familial cylindromatosis	skos:exactMatch	NCIT:C43352	Turban Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007566	multiple self-healing squamous epithelioma	skos:exactMatch	NCIT:C4461	Multiple Self Healing Epithelioma of Ferguson-Smith	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007576	esophageal cancer	skos:exactMatch	NCIT:C7478	Malignant Esophageal Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1667,15 +1656,12 @@ MONDO:0007600	primary Fanconi syndrome	skos:exactMatch	NCIT:C123229	Primary Fanc
 MONDO:0007608	desmoid tumor	skos:exactMatch	NCIT:C9182	Desmoid Fibromatosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007621	Floating-Harbor syndrome	skos:exactMatch	NCIT:C175241	Floating-Harbor Syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	floating-harbor syndrome	LEXMATCH
 MONDO:0007648	hereditary diffuse gastric adenocarcinoma	skos:exactMatch	NCIT:C43295	Hereditary Gastric Diffuse Adenocarcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0007650	MALT lymphoma	skos:exactMatch	NCIT:C3898	Extranodal Marginal Zone Lymphoma of Mucosa-Associated Lymphoid Tissue	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007665	glaucoma 1, open angle, E	skos:exactMatch	NCIT:C35394	Primary Open Angle Glaucoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007672	glomuvenous malformation	skos:exactMatch	NCIT:C5350	Hereditary Glomangioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0007699	Hashimoto thyroiditis	skos:exactMatch	NCIT:C38766	Lymphocytic Thyroiditis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	lymphocytic thyroiditis	LEXMATCH
 MONDO:0007708	Kasabach-Merritt syndrome	skos:exactMatch	NCIT:C3821	Hemangiomatosis with Thrombocytopenia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007727	autosomal dominant familial periodic fever	skos:exactMatch	NCIT:C119051	Tumor Necrosis Factor Receptor 1-Associated Periodic Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007734	holoprosencephaly 4	skos:exactMatch	NCIT:C75475	Holoprosencephaly Type 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007751	hypercholesterolemia, autosomal dominant, type B	skos:exactMatch	NCIT:C176014	Hypercholesterolemia, Familial, 2	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	hypercholesterolemia, familial, type 2	LEXMATCH
-MONDO:0007761	hyperlipoproteinemia type IV	skos:exactMatch	NCIT:C34711	Fredrickson Type IV Lipidemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	fredrickson type iv lipidemia	LEXMATCH
 MONDO:0007800	chromosome 18p deletion syndrome	skos:exactMatch	NCIT:C84521	Deletion 18p Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007804	Pallister-Hall syndrome	skos:exactMatch	NCIT:C84987	Pallister-Hall Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0007817	IgE responsiveness, atopic	skos:exactMatch	NCIT:C3116	Type I Hypersensitivity	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1700,7 +1686,6 @@ MONDO:0008097	linear nevus sebaceous syndrome	skos:exactMatch	NCIT:C4678	Organoi
 MONDO:0008104	Noonan syndrome 1	skos:exactMatch	NCIT:C75459	Noonan Syndrome 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008109	ocular cicatricial pemphigoid	skos:exactMatch	NCIT:C84939	Ocular Cicatricial Pemphigoid	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008134	autosomal dominant optic atrophy, classic form	skos:exactMatch	NCIT:C169000	Optic Atrophy 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	optic atrophy type 1	LEXMATCH
-MONDO:0008136	isolated optic nerve hypoplasia	skos:exactMatch	NCIT:C98999	Optic Nerve Hypoplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	optic nerve hypoplasia	LEXMATCH
 MONDO:0008170	ovarian cancer	skos:exactMatch	NCIT:C7431	Malignant Ovarian Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008185	hereditary chronic pancreatitis	skos:exactMatch	NCIT:C95436	Hereditary Pancreatitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008189	papillomatosis, florid, of nipple	skos:exactMatch	NCIT:C4383	Erosive Nipple Adenomatosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1710,10 +1695,6 @@ MONDO:0008332	pseudo-von Willebrand disease	skos:exactMatch	NCIT:C131681	Platele
 MONDO:0008340	ptosis, hereditary congenital, 1	skos:exactMatch	NCIT:C27049	Congenital Eyelid Ptosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008343	pulmonary atresia with ventricular septal defect	skos:exactMatch	NCIT:C99033	Pulmonary Valve Atresia with Ventricular Septal Defect	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008364	Raynaud disease	skos:exactMatch	NCIT:C116359	Secondary Raynaud Phenomenon	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0008383	rheumatoid arthritis	skos:exactMatch	NCIT:C27206	Atrophic Arthritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	atrophic arthritis	LEXMATCH
-MONDO:0008394	Silver-Russell syndrome	skos:exactMatch	NCIT:C85068	Russell-Silver Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0008401	pleomorphic adenoma	skos:exactMatch	NCIT:C35691	Mixed Tumor of the Salivary Gland	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	mixed tumor of the salivary gland	LEXMATCH
-MONDO:0008428	septooptic dysplasia	skos:exactMatch	NCIT:C85063	Septo-Optic Dysplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008437	hereditary spastic paraplegia 3A	skos:exactMatch	NCIT:C142893	Spastic Paraplegia 3A	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008451	neuronopathy, distal hereditary motor, type 1	skos:exactMatch	NCIT:C132826	Distal Hereditary Motor Neuronopathy Type I	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008491	stiff-person syndrome	skos:exactMatch	NCIT:C85170	Stiff Person Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1721,7 +1702,6 @@ MONDO:0008546	thanatophoric dysplasia type 1	skos:exactMatch	NCIT:C98583	Type 1 
 MONDO:0008547	thanatophoric dysplasia type 2	skos:exactMatch	NCIT:C98584	Type 2 Thanatophoric Dysplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008553	platelet-type bleeding disorder 17	skos:exactMatch	NCIT:C142084	Bleeding Disorder, Platelet-Type 17	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008558	autoimmune thrombocytopenic purpura	skos:exactMatch	NCIT:C3446	Primary Immune Thrombocytopenia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0008575	nicotine dependence	skos:exactMatch	NCIT:C35074	Tobacco Use Disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	tobacco use disorder	LEXMATCH
 MONDO:0008583	inherited torticollis	skos:exactMatch	NCIT:C4811	Fibromatosis Colli	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008596	trichorhinophalangeal syndrome type I	skos:exactMatch	NCIT:C75109	Trichorhinophalangeal Syndrome Type I	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008627	ureter cancer	skos:exactMatch	NCIT:C7543	Malignant Ureter Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1740,7 +1720,6 @@ MONDO:0008758	mitochondrial DNA depletion syndrome 4a	skos:exactMatch	NCIT:C3525
 MONDO:0008779	arthrogryposis	skos:exactMatch	NCIT:C84572	Arthrogryposis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008817	arterial calcification, generalized, of infancy, 1	skos:exactMatch	NCIT:C128805	Generalized Arterial Calcification of Infancy 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008840	ataxia telangiectasia	skos:exactMatch	NCIT:C2887	Ataxia Telangiectasia Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0008855	MHC class II deficiency	skos:exactMatch	NCIT:C171268	Bare Lymphocyte Syndrome Type 2	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	bare lymphocyte syndrome type 2	LEXMATCH
 MONDO:0008855	MHC class II deficiency	skos:exactMatch	NCIT:C176823	MHC Class II Deficiency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	mhc class ii deficiency	LEXMATCH
 MONDO:0008856	immunodeficiency 27A	skos:exactMatch	NCIT:C176806	Immunodeficiency 27A	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	immunodeficiency type 27a	LEXMATCH
 MONDO:0008858	Behr syndrome	skos:exactMatch	NCIT:C177251	Behr Syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	behr syndrome	LEXMATCH
@@ -1748,7 +1727,6 @@ MONDO:0008865	Bietti crystalline corneoretinal dystrophy	skos:exactMatch	NCIT:C1
 MONDO:0008903	lung cancer	skos:exactMatch	NCIT:C7377	Malignant Lung Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008915	dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome	skos:exactMatch	NCIT:C174217	Dilated Cardiomyopathy-Hypergonadotropic Hypogonadism Syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome	LEXMATCH
 MONDO:0008939	isolated cerebellar hypoplasia/agenesis	skos:exactMatch	NCIT:C98890	Congenital Cerebellar Hypoplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0008947	bilateral striopallidodentate calcinosis	skos:exactMatch	NCIT:C179297	Idiopathic Basal Ganglia Calcification	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	idiopathic basal ganglia calcification	LEXMATCH
 MONDO:0008955	cerebrooculofacioskeletal syndrome 1	skos:exactMatch	NCIT:C173085	Cerebrooculofacioskeletal Syndrome 1	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cerebrooculofacioskeletal syndrome type 1	LEXMATCH
 MONDO:0008965	CHARGE syndrome	skos:exactMatch	NCIT:C75100	CHARGE Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0008970	chondrodysplasia Blomstrand type	skos:exactMatch	NCIT:C131420	Blomstrand Type Chondrodysplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1767,21 +1745,19 @@ MONDO:0009165	Aicardi-Goutieres syndrome 1	skos:exactMatch	NCIT:C165501	Aicardi-
 MONDO:0009210	congenital factor V deficiency	skos:exactMatch	NCIT:C98938	Hereditary Factor V Deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009212	congenital factor X deficiency	skos:exactMatch	NCIT:C98940	Hereditary Factor X Deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009238	hereditary folate malabsorption	skos:exactMatch	NCIT:C156424	Hereditary Folate Malabsorption	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hereditary folate malabsorption	LEXMATCH
-MONDO:0009277	glaucoma 3A	skos:exactMatch	NCIT:C148260	Primary Congenital Glaucoma 3A	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009279	triple-A syndrome	skos:exactMatch	NCIT:C131005	Triple A Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009287	glycogen storage disease due to glucose-6-phosphatase deficiency type IA	skos:exactMatch	NCIT:C162398	Glycogen Storage Disease Type Ia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	glycogen storage disorder type ia	LEXMATCH
 MONDO:0009303	anti-glomerular basement membrane disease	skos:exactMatch	NCIT:C34649	Goodpasture Syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	goodpasture syndrome	LEXMATCH
 MONDO:0009318	Hallermann-Streiff syndrome	skos:exactMatch	NCIT:C84746	Hallermann Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009319	pantothenate kinase-associated neurodegeneration	skos:exactMatch	NCIT:C84988	Pantothenate Kinase-Associated Neurodegeneration	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0009319	pantothenate kinase-associated neurodegeneration	skos:exactMatch	NCIT:C8967	Brain Iron Accumulation Type I Syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	brain iron accumulation type i syndrome	LEXMATCH
 MONDO:0009332	congenital hematological disorder	skos:exactMatch	NCIT:C104003	Congenital Hematological Disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009349	holoprosencephaly 1	skos:exactMatch	NCIT:C75476	Holoprosencephaly Type 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009364	muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A1	skos:exactMatch	NCIT:C128118	Muscular Dystrophy-Dystroglycanopathy (Congenital with Brain and Eye Anomalies) Type A, 1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009395	hyperostosis corticalis generalisata	skos:exactMatch	NCIT:C131812	Endosteal Hyperostosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009412	scurvy	skos:exactMatch	NCIT:C35010	Vitamin C Deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009436	congenital hypothalamic hamartoma syndrome	skos:exactMatch	NCIT:C4385	Hypothalamic Hamartoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0009476	atresia of small intestine	skos:exactMatch	NCIT:C98828	Small Intestine Atresia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009476	atresia of small intestine	skos:exactMatch	NCIT:C101027	Jejunal Atresia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	jejunal atresia	LEXMATCH
+MONDO:0009476	atresia of small intestine	skos:exactMatch	NCIT:C98828	Small Intestine Atresia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009484	primary ciliary dyskinesia 1	skos:exactMatch	NCIT:C128117	Primary Ciliary Dyskinesia 1	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary ciliary dyskinesia type 1	LEXMATCH
 MONDO:0009578	neurocutaneous melanocytosis	skos:exactMatch	NCIT:C175215	Neurocutaneous Melanosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	neurocutaneous melanosis	LEXMATCH
 MONDO:0009595	cartilage-hair hypoplasia	skos:exactMatch	NCIT:C61245	Cartilage Hair Hypoplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1789,7 +1765,6 @@ MONDO:0009613	methylmalonic aciduria, cblA type	skos:exactMatch	NCIT:C142171	Met
 MONDO:0009614	methylmalonic aciduria, cblB type	skos:exactMatch	NCIT:C142172	Methylmalonic Aciduria, cblB Type	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009646	Monosomy 7 myelodysplasia and leukemia syndrome 1	skos:exactMatch	NCIT:C176908	Monosomy 7 Myelodysplasia and Leukemia Syndrome 1	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	monosomy type 7 myelodysplasia and leukemia syndrome type 1	LEXMATCH
 MONDO:0009667	muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A3	skos:exactMatch	NCIT:C126740	Muscular Dystrophy-Dystroglycanopathy (Congenital with Brain and Eye Anomalies) Type A, 3	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0009672	spinal muscular atrophy, type III	skos:exactMatch	NCIT:C85076	Spinal Muscular Atrophy of Childhood	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	spinal muscular atrophy of childhood	LEXMATCH
 MONDO:0009678	muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A, 4	skos:exactMatch	NCIT:C126741	Muscular Dystrophy-Dystroglycanopathy (Congenital with Brain and Eye Anomalies) Type A, 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009689	congenital myasthenic syndrome 6	skos:exactMatch	NCIT:C132292	Presynaptic Congenital Myasthenic Syndrome 6	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0009720	Keipert syndrome	skos:exactMatch	NCIT:C186306	Keipert Syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	keipert syndrome	LEXMATCH
@@ -1816,7 +1791,6 @@ MONDO:0009958	adult Refsum disease	skos:exactMatch	NCIT:C85043	Refsum Disease	se
 MONDO:0009959	peroxisome biogenesis disorder type 3B	skos:exactMatch	NCIT:C155753	Peroxisome Biogenesis Disorder 3B	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	peroxisome biogenesis disorder type 3b	LEXMATCH
 MONDO:0010004	EEC syndrome	skos:exactMatch	NCIT:C148261	Ectrodactyly-Ectodermal Dysplasia-Cleft Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0010010	Schinzel-Giedion syndrome	skos:exactMatch	NCIT:C129308	Schinzel-Giedion Midface-Retraction Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0010017	sea-blue histiocyte syndrome	skos:exactMatch	NCIT:C85062	Sea-Blue Histiocyte Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0010030	Sjogren syndrome	skos:exactMatch	NCIT:C70647	Sicca Syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	sicca syndrome	LEXMATCH
 MONDO:0010130	dihydropyrimidine dehydrogenase deficiency	skos:exactMatch	NCIT:C3964	Dihydrouracil Dehydrogenase Deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	dihydrouracil dehydrogenase deficiency	LEXMATCH
 MONDO:0010186	vitamin D-dependent rickets, type 2A	skos:exactMatch	NCIT:C131075	Vitamin D Dependent Rickets 2a	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1847,7 +1821,6 @@ MONDO:0010590	FG syndrome 1	skos:exactMatch	NCIT:C171270	FG Syndrome Type 1	sema
 MONDO:0010595	Sertoli cell-only syndrome	skos:exactMatch	NCIT:C168988	Sertoli Cell-Only Syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	sertoli cell-only syndrome	LEXMATCH
 MONDO:0010619	X-linked dominant hypophosphatemic rickets	skos:exactMatch	NCIT:C85234	X-Linked Dominant Hypophosphatemic Rickets	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	x-linked dominant hypophosphatemic rickets	LEXMATCH
 MONDO:0010627	X-linked lymphoproliferative syndrome	skos:exactMatch	NCIT:C61246	X-Linked Lymphoproliferative Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0010627	X-linked lymphoproliferative syndrome	skos:exactMatch	NCIT:C170434	X-linked Lymphoproliferative Syndrome 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	x-linked lymphoproliferative syndrome type 1	LEXMATCH
 MONDO:0010651	Menkes disease	skos:exactMatch	NCIT:C75486	Menkes Disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0010653	Renpenning syndrome	skos:exactMatch	NCIT:C165533	Renpenning Syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	renpenning syndrome	LEXMATCH
 MONDO:0010679	Duchenne muscular dystrophy	skos:exactMatch	NCIT:C75482	Duchenne Muscular Dystrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1877,10 +1850,8 @@ MONDO:0011101	peroxisome biogenesis disorder 1B	skos:exactMatch	NCIT:C155749	Per
 MONDO:0011125	trichothiodystrophy 1, photosensitive	skos:exactMatch	NCIT:C156433	Trichothiodystrophy 1, Photosensitive	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	trichothiodystrophy type 1, photosensitive	LEXMATCH
 MONDO:0011146	tetrasomy 12p	skos:exactMatch	NCIT:C75458	Pallister-Killian Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0011147	chromosome 18q deletion syndrome	skos:exactMatch	NCIT:C84522	Deletion 18q Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0011225	severe combined immunodeficiency due to DCLRE1C deficiency	skos:exactMatch	NCIT:C162694	Severe Combined Immunodeficiency, Athabascan Type	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	severe combined immunodeficiency, athabascan type	LEXMATCH
 MONDO:0011264	torsion dystonia 6	skos:exactMatch	NCIT:C156361	Torsion Dystonia 6	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	torsion dystonia type 6	LEXMATCH
 MONDO:0011368	papillary thyroid Microcarcinoma	skos:exactMatch	NCIT:C46004	Thyroid Gland Papillary Microcarcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0011382	sickle cell anemia	skos:exactMatch	NCIT:C34383	Sickle Cell Disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0011383	autoimmune lymphoproliferative syndrome type 2A	skos:exactMatch	NCIT:C39576	Type 2 Autoimmune Lymphoproliferative Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0011385	intervertebral disc degenerative disorder	skos:exactMatch	NCIT:C26983	Intervertebral Disc Degenerative Disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0011399	alpha thalassemia	skos:exactMatch	NCIT:C34368	Alpha Thalassemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1894,7 +1865,6 @@ MONDO:0011514	tricuspid atresia	skos:exactMatch	NCIT:C85202	Tricuspid Valve Atre
 MONDO:0011531	Noonan syndrome 2	skos:exactMatch	NCIT:C176930	Noonan Syndrome 2	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	noonan syndrome type 2	LEXMATCH
 MONDO:0011583	cerebral amyloid angiopathy, APP-related	skos:exactMatch	NCIT:C157147	Cerebral Amyloid Angiopathy, APP-Related	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cerebral amyloid angiopathy, app-related	LEXMATCH
 MONDO:0011603	GNE myopathy	skos:exactMatch	NCIT:C176900	Nonaka Myopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	nonaka myopathy	LEXMATCH
-MONDO:0011613	autosomal recessive early-onset Parkinson disease 6	skos:exactMatch	NCIT:C184990	Parkinson Disease 6, Early Onset	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	parkinson disorder type 6, early onset	LEXMATCH
 MONDO:0011644	pars planitis	skos:exactMatch	NCIT:C34903	Pars Planitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0011652	Phelan-McDermid syndrome	skos:exactMatch	NCIT:C157124	Phelan-McDermid Syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	phelan-mcdermid syndrome	LEXMATCH
 MONDO:0011655	alveolar soft part sarcoma	skos:exactMatch	NCIT:C7943	Adult Alveolar Soft Part Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -1907,7 +1877,6 @@ MONDO:0011732	familial digital arthropathy-brachydactyly	skos:exactMatch	NCIT:C1
 MONDO:0011781	spinocerebellar ataxia type 17	skos:exactMatch	NCIT:C179861	Spinocerebellar Ataxia Type 17	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spinocerebellar ataxia type 17	LEXMATCH
 MONDO:0011784	Moyamoya disease 2	skos:exactMatch	NCIT:C183312	Moyamoya Disease 2	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	moyamoya disorder type 2	LEXMATCH
 MONDO:0011786	allergic rhinitis	skos:exactMatch	NCIT:C79532	Allergic Rhinitis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0011786	allergic rhinitis	skos:exactMatch	NCIT:C34987	Atopic Rhinitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	atopic rhinitis	LEXMATCH
 MONDO:0011787	autosomal recessive limb-girdle muscular dystrophy type 2I	skos:exactMatch	NCIT:C126739	Muscular Dystrophy-Dystroglycanopathy (Limb-Girdle) Type C, 5	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0011789	familial meningioma	skos:exactMatch	NCIT:C5301	Hereditary Meningioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0011803	hereditary spastic paraplegia 7	skos:exactMatch	NCIT:C181657	Spastic Paraplegia 7	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	spastic paraplegia type 7	LEXMATCH
@@ -2010,7 +1979,6 @@ MONDO:0013824	Joubert syndrome 17	skos:exactMatch	NCIT:C175702	Joubert Syndrome 
 MONDO:0013829	UV-sensitive syndrome 2	skos:exactMatch	NCIT:C173110	UV-Sensitive Syndrome 2	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	uv-sensitive syndrome type 2	LEXMATCH
 MONDO:0013834	UV-sensitive syndrome 3	skos:exactMatch	NCIT:C173107	UV-Sensitive Syndrome 3	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	uv-sensitive syndrome type 3	LEXMATCH
 MONDO:0013842	cortisone reductase deficiency 2	skos:exactMatch	NCIT:C131084	11-Beta-Hydroxysteroid Dehydrogenase Type 1 Deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0013860	idiopathic membranous glomerulonephritis	skos:exactMatch	NCIT:C128108	Idiopathic Membranous Glomerulopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	idiopathic membranous glomerulopathy	LEXMATCH
 MONDO:0013860	idiopathic membranous glomerulonephritis	skos:exactMatch	NCIT:C123060	Membranous Nephropathy - Idiopathic	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0013866	neuronal ceroid lipofuscinosis 11	skos:exactMatch	NCIT:C188214	Neuronal Ceroid Lipofuscinosis Type 11	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	neuronal ceroid lipofuscinosis type 11	LEXMATCH
 MONDO:0013867	brown-Vialetto-van Laere syndrome 2	skos:exactMatch	NCIT:C183529	Brown-Vialetto-Van Laere Syndrome 2	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	brown-vialetto-van laere syndrome type 2	LEXMATCH
@@ -2081,20 +2049,16 @@ MONDO:0015278	familial pancreatic carcinoma	skos:exactMatch	NCIT:C43298	Heredita
 MONDO:0015356	hereditary neoplastic syndrome	skos:exactMatch	NCIT:C3266	Hereditary Neoplastic Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015403	non-involuting congenital hemangioma	skos:exactMatch	NCIT:C172208	Non-Involuting Congenital Hemangioma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	non-involuting congenital hemangioma	LEXMATCH
 MONDO:0015404	rapidly involuting congenital hemangioma	skos:exactMatch	NCIT:C172207	Rapidly Involuting Congenital Hemangioma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	rapidly involuting congenital hemangioma	LEXMATCH
-MONDO:0015411	facial cleft	skos:exactMatch	NCIT:C124573	Prosoposchisis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	prosoposchisis	LEXMATCH
 MONDO:0015439	ring chromosome 4	skos:exactMatch	NCIT:C121983	ROSE Cluster 4	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015440	ring chromosome 6	skos:exactMatch	NCIT:C121985	ROSE Cluster 6	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015441	ring chromosome 7	skos:exactMatch	NCIT:C121986	ROSE Cluster 7	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015443	chromosome 8-derived supernumerary ring/marker	skos:exactMatch	NCIT:C121988	ROSE Cluster 8	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015452	Coffin-Siris syndrome	skos:exactMatch	NCIT:C35321	Coffin-Siris Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0015461	short rib-polydactyly syndrome	skos:exactMatch	NCIT:C85065	Short Rib-Polydactyly Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015474	cryptosporidiosis	skos:exactMatch	NCIT:C35591	Cryptosporidial Gastroenteritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	cryptosporidial gastroenteritis	LEXMATCH
-MONDO:0015484	cysticercosis	skos:exactMatch	NCIT:C84932	Neurocysticercosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	neurocysticercosis	LEXMATCH
 MONDO:0015524	hyperplastic polyposis syndrome	skos:exactMatch	NCIT:C165469	Colorectal Serrated Polyposis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015540	hemophagocytic syndrome	skos:exactMatch	NCIT:C35439	Hemophagocytic Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015612	Dent disease	skos:exactMatch	NCIT:C123260	Dent Disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015663	diencephalic syndrome	skos:exactMatch	NCIT:C116955	Diencephalic Syndrome of Infancy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0015665	scleromyxedema	skos:exactMatch	NCIT:C85061	Scleromyxedema	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015667	acute myeloid leukemia by FAB classification	skos:exactMatch	NCIT:C27753	Acute Myeloid Leukemia Not Otherwise Specified	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015686	primary peritoneal carcinoma	skos:exactMatch	NCIT:C4182	Serous Surface Papillary Carcinoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	serous surface papillary carcinoma	LEXMATCH
 MONDO:0015687	chronic eosinophilic leukemia	skos:exactMatch	NCIT:C4563	Chronic Eosinophilic Leukemia, Not Otherwise Specified	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -2130,7 +2094,6 @@ MONDO:0016258	uterine corpus carcinofibroma	skos:exactMatch	NCIT:C40182	Uterine 
 MONDO:0016259	carcinosarcoma of the corpus uteri	skos:exactMatch	NCIT:C9180	Uterine Corpus Carcinosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0016260	uterine corpus rhabdomyosarcoma	skos:exactMatch	NCIT:C127058	Uterine Corpus Rhabdomyosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0016262	leiomyosarcoma of the corpus uteri	skos:exactMatch	NCIT:C6340	Uterine Corpus Leiomyosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0016264	autoimmune hepatitis	skos:exactMatch	NCIT:C27778	Autoimmune Hepatitis with Centrilobular Necrosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	autoimmune hepatitis with centrilobular necrosis	LEXMATCH
 MONDO:0016281	46,XX ovotesticular disorder of sex development	skos:exactMatch	NCIT:C127167	Ovotesticular Differences of Sex Development	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0016354	xeroderma pigmentosum-Cockayne syndrome complex	skos:exactMatch	NCIT:C156031	Xeroderma Pigmentosum-Cockayne Syndrome Complex	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	xeroderma pigmentosum-cockayne syndrome complex	LEXMATCH
 MONDO:0016359	limited systemic sclerosis	skos:exactMatch	NCIT:C116789	Systemic Sclerosis without Skin Involvement	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -2155,8 +2118,6 @@ MONDO:0016709	anaplastic/large cell medulloblastoma	skos:exactMatch	NCIT:C129436
 MONDO:0016713	central nervous system Ewing sarcoma/peripheral primitive neuroectodermal tumor	skos:exactMatch	NCIT:C129537	Central Nervous System Ewing Sarcoma/Peripheral Primitive Neuroectodermal Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0016715	ependymoblastoma	skos:exactMatch	NCIT:C186534	Embryonal Tumor with Multilayered Rosettes	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	embryonal tumor with multilayered rosettes	LEXMATCH
 MONDO:0016729	mixed neuronal-glial tumor	skos:exactMatch	NCIT:C4747	Glioneuronal and Neuronal Tumors	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0016733	ganglioglioma	skos:exactMatch	NCIT:C27362	Childhood Ganglioglioma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	childhood ganglioglioma	LEXMATCH
-MONDO:0016733	ganglioglioma	skos:exactMatch	NCIT:C27363	Adult Ganglioglioma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	adult ganglioglioma	LEXMATCH
 MONDO:0016747	primary melanoma of the central nervous system	skos:exactMatch	NCIT:C5505	Central Nervous System Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0016824	infantile myofibromatosis	skos:exactMatch	NCIT:C3742	Myofibromatosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0016824	infantile myofibromatosis	skos:exactMatch	NCIT:C27498	Infantile Hemangiopericytoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	infantile hemangiopericytoma	LEXMATCH
@@ -2186,7 +2147,6 @@ MONDO:0017575	mitochondrial neurogastrointestinal encephalomyopathy	skos:exactMa
 MONDO:0017576	46,XX disorder of sex development	skos:exactMatch	NCIT:C127169	46,XX Differences of Sex Development	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0017582	pituitary adenocarcinoma	skos:exactMatch	NCIT:C4536	Metastatic Pituitary Neuroendocrine Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0017595	aggressive B-cell non-Hodgkin lymphoma	skos:exactMatch	NCIT:C178541	Aggressive B-Cell Non-Hodgkin Lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	aggressive b-cell non-hodgkin lymphoma	LEXMATCH
-MONDO:0017596	diffuse large B-cell lymphoma of the central nervous system	skos:exactMatch	NCIT:C71720	Primary Diffuse Large B-Cell Lymphoma of the Central Nervous System	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0017597	T-cell/histiocyte rich large B cell lymphoma	skos:exactMatch	NCIT:C9496	T-Cell/Histiocyte-Rich Large B-Cell Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0017615	benign familial infantile epilepsy	skos:exactMatch	NCIT:C183308	Benign Familial Infantile Seizures	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	benign familial infantile seizures	LEXMATCH
 MONDO:0017623	PTEN hamartoma tumor syndrome	skos:exactMatch	NCIT:C179915	PTEN Hamartoma Tumor Syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pten hamartoma tumor syndrome	LEXMATCH
@@ -2215,19 +2175,16 @@ MONDO:0018308	liver mesenchymal hamartoma	skos:exactMatch	NCIT:C5751	Liver Mesen
 MONDO:0018330	mucinous adenocarcinoma of the appendix	skos:exactMatch	NCIT:C43558	Appendix Mucinous Adenocarcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018364	malignant epithelial tumor of ovary	skos:exactMatch	NCIT:C40026	Malignant Ovarian Epithelial Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018368	primary peritoneal serous/papillary carcinoma	skos:exactMatch	NCIT:C7695	Primary Peritoneal Serous Papillary Adenocarcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0018369	immature ovarian teratoma	skos:exactMatch	NCIT:C39995	Malignant Ovarian Teratoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant ovarian teratoma	LEXMATCH
 MONDO:0018369	immature ovarian teratoma	skos:exactMatch	NCIT:C8111	Immature Ovarian Teratoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0018369	immature ovarian teratoma	skos:exactMatch	NCIT:C39995	Malignant Ovarian Teratoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant ovarian teratoma	LEXMATCH
 MONDO:0018373	avascular necrosis	skos:exactMatch	NCIT:C34841	Avascular Necrosis of Bone	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018378	osteonecrosis of the jaw	skos:exactMatch	NCIT:C63924	Osteonecrosis of Jaw	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0018381	osteochondrosis	skos:exactMatch	NCIT:C34877	Osteochondritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	osteochondritis	LEXMATCH
 MONDO:0018449	acquired cystic disease-associated renal cell carcinoma	skos:exactMatch	NCIT:C157718	Acquired Cystic Disease-Associated Renal Cell Carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	acquired cystic disorder-associated renal cell carcinoma	LEXMATCH
 MONDO:0018453	familial atypical multiple mole melanoma syndrome	skos:exactMatch	NCIT:C27264	Familial Atypical Mole Melanoma Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018458	familial hypocalciuric hypercalcemia	skos:exactMatch	NCIT:C123262	Familial Hypocalciuric Hypercalcemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018459	isolated glycerol kinase deficiency	skos:exactMatch	NCIT:C124845	Hyperglycerolemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	hyperglycerolemia	LEXMATCH
 MONDO:0018473	hyperlipoproteinemia type 3	skos:exactMatch	NCIT:C34710	Remnant Hyperlipidemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	remnant hyperlipidemia	LEXMATCH
 MONDO:0018479	congenital adrenal hyperplasia	skos:exactMatch	NCIT:C34360	Congenital Adrenal Hyperplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0018479	congenital adrenal hyperplasia	skos:exactMatch	NCIT:C131426	Congenital Lipoid Adrenal Hyperplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	congenital lipoid adrenal hyperplasia	LEXMATCH
-MONDO:0018479	congenital adrenal hyperplasia	skos:exactMatch	NCIT:C35408	Adrenal Hyperplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	adrenal hyperplasia	LEXMATCH
 MONDO:0018481	undifferentiated carcinoma of esophagus	skos:exactMatch	NCIT:C27422	Esophageal Undifferentiated Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018493	malignant hyperthermia of anesthesia	skos:exactMatch	NCIT:C84869	Malignant Hyperthermia Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018504	undifferentiated carcinoma of stomach	skos:exactMatch	NCIT:C5476	Gastric Undifferentiated Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -2250,7 +2207,6 @@ MONDO:0018690	Holmes-Adie syndrome	skos:exactMatch	NCIT:C34357	Holmes-Adie Syndr
 MONDO:0018714	primary intralymphatic angioendothelioma	skos:exactMatch	NCIT:C7526	Papillary Intralymphatic Angioendothelioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018715	congenital hemangioma	skos:exactMatch	NCIT:C3841	Congenital Non-Progressive Hemangioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018716	partially involuting congenital hemangioma	skos:exactMatch	NCIT:C172209	Partially Involuting Congenital Hemangioma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	partially involuting congenital hemangioma	LEXMATCH
-MONDO:0018740	drug-induced methemoglobinemia	skos:exactMatch	NCIT:C98805	Acquired Methemoglobinemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	acquired methemoglobinemia	LEXMATCH
 MONDO:0018740	drug-induced methemoglobinemia	skos:exactMatch	NCIT:C101045	Drug Induced Methemoglobinemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018800	Kallmann syndrome	skos:exactMatch	NCIT:C75479	Hypogonadotropic Hypogonadism with Anosmia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0018840	isolated congenital hepatic fibrosis	skos:exactMatch	NCIT:C97071	Congenital Hepatic Fibrosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -2284,8 +2240,8 @@ MONDO:0019175	primary lymphedema	skos:exactMatch	NCIT:C48829	Primary Lymphedema	
 MONDO:0019186	Q fever	skos:exactMatch	NCIT:C34970	Q Fever	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0019194	localized lipodystrophy	skos:exactMatch	NCIT:C131814	Focal Lipodystrophy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0019207	DEND syndrome	skos:exactMatch	NCIT:C131845	K ATP Associated Developmental Delay, Epilepsy and Neonatal Diabetes	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0019234	peroxisome biogenesis disorder	skos:exactMatch	NCIT:C146639	Peroxisome Biogenesis Disorders in the Zellweger Spectrum	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0019234	peroxisome biogenesis disorder	skos:exactMatch	NCIT:C155747	Peroxisome Biogenesis Disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	peroxisome biogenesis disorder	LEXMATCH
+MONDO:0019234	peroxisome biogenesis disorder	skos:exactMatch	NCIT:C146639	Peroxisome Biogenesis Disorders in the Zellweger Spectrum	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0019266	SAPHO syndrome	skos:exactMatch	NCIT:C119049	Synovitis, Acne, Pustulosis, Hyperostosis, and Osteitis Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0019288	skin pigmentation disorder	skos:exactMatch	NCIT:C34557	Skin Pigmentation Disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	skin pigmentation disorder	LEXMATCH
 MONDO:0019293	skin vascular disease	skos:exactMatch	NCIT:C35254	Skin Vascular Disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -2308,7 +2264,6 @@ MONDO:0019478	adult nodular lymphocyte predominant Hodgkin lymphoma	skos:exactMa
 MONDO:0019483	methotrexate-associated lymphoproliferative disorders	skos:exactMatch	NCIT:C7184	Methotrexate-Related Lymphoproliferative Disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0019496	neuroendocrine neoplasm	skos:exactMatch	NCIT:C188218	Neuroendocrine Tumor	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	neuroendocrine tumor	LEXMATCH
 MONDO:0019499	Turner syndrome	skos:exactMatch	NCIT:C85210	XO Syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	xo syndrome	LEXMATCH
-MONDO:0019514	hepatic veno-occlusive disease	skos:exactMatch	NCIT:C8301	Veno-Occlusive Disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	veno-occlusive disorder	LEXMATCH
 MONDO:0019527	undifferentiated connective tissue syndrome	skos:exactMatch	NCIT:C116776	Undifferentiated Connective Tissue Disease	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0019563	CREST syndrome	skos:exactMatch	NCIT:C70646	CREST Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0019570	Cockayne syndrome type 2	skos:exactMatch	NCIT:C135726	Cockayne Syndrome Type B	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -2712,8 +2667,8 @@ MONDO:0021607	eyelid seborrheic keratosis	skos:exactMatch	NCIT:C4356	Eyelid Sebo
 MONDO:0021627	eyelid capillary hemangioma	skos:exactMatch	NCIT:C4357	Eyelid Capillary Hemangioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0021629	uterine ligament neoplasm	skos:exactMatch	NCIT:C40133	Uterine Ligament Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0021631	brain astrocytoma	skos:exactMatch	NCIT:C60780	Brain Astrocytoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0021632	primary brain neoplasm	skos:exactMatch	NCIT:C4952	Localized Brain Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0021632	primary brain neoplasm	skos:exactMatch	NCIT:C170814	Primary Brain Neoplasm	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary brain neoplasm	LEXMATCH
+MONDO:0021632	primary brain neoplasm	skos:exactMatch	NCIT:C4952	Localized Brain Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0021634	epithelial skin neoplasm	skos:exactMatch	NCIT:C7342	Epithelial Skin Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0021638	low grade astrocytic tumor	skos:exactMatch	NCIT:C116342	Low Grade Astrocytoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0021639	grade II glioma	skos:exactMatch	NCIT:C132505	WHO Grade 2 Glioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -2798,8 +2753,8 @@ MONDO:0024469	chondrogenic neoplasm	skos:exactMatch	NCIT:C4755	Chondrogenic Neop
 MONDO:0024470	benign chondrogenic neoplasm	skos:exactMatch	NCIT:C8592	Benign Chondrogenic Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024474	intraepithelial neoplasia	skos:exactMatch	NCIT:C8366	Intraepithelial Neoplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024475	squamous cell intraepithelial neoplasia	skos:exactMatch	NCIT:C8334	Squamous Cell Intraepithelial Neoplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0024477	liver and intrahepatic bile duct neoplasm	skos:exactMatch	NCIT:C7106	Liver and Intrahepatic Bile Duct Epithelial Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024477	liver and intrahepatic bile duct neoplasm	skos:exactMatch	NCIT:C7103	Liver and Intrahepatic Bile Duct Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0024477	liver and intrahepatic bile duct neoplasm	skos:exactMatch	NCIT:C7106	Liver and Intrahepatic Bile Duct Epithelial Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024478	mesenchymal hamartoma	skos:exactMatch	NCIT:C40427	Mesenchymal Hamartoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024482	eccrine sweat gland hamartoma	skos:exactMatch	NCIT:C5564	Eccrine Sweat Gland Hamartoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024483	urothelial hyperplasia	skos:exactMatch	NCIT:C27877	Urothelial Hyperplasia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -2844,7 +2799,6 @@ MONDO:0024674	Pancoast syndrome	skos:exactMatch	NCIT:C55815	Pancoast Syndrome	se
 MONDO:0024675	adult kidney Wilms tumor	skos:exactMatch	NCIT:C6180	Adult Kidney Wilms Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024676	childhood kidney Wilms tumor	skos:exactMatch	NCIT:C27730	Childhood Kidney Wilms Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024677	pancreatic insulinoma	skos:exactMatch	NCIT:C95598	Pancreatic Insulinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0024677	pancreatic insulinoma	skos:exactMatch	NCIT:C65184	Islet Cell Adenoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	islet cell adenoma	LEXMATCH
 MONDO:0024685	Philadelphia-positive myelogenous leukemia	skos:exactMatch	NCIT:C3177	Philadelphia-Positive Myelogenous Leukemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024686	tenosynovial giant cell tumor, diffuse type	skos:exactMatch	NCIT:C3401	Tenosynovial Giant Cell Tumor, Diffuse Type	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0024711	malignant mixed epithelial stromal tumor of the kidney	skos:exactMatch	NCIT:C37265	Malignant Mixed Epithelial and Stromal Tumor of the Kidney	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -3020,8 +2974,8 @@ MONDO:0044768	vagus nerve paraganglioma	skos:exactMatch	NCIT:C8427	Vagal Paragan
 MONDO:0044781	nephrotic syndrome of childhood - steroid sensitive	skos:exactMatch	NCIT:C122797	Nephrotic Syndrome of Childhood - Steroid Sensitive	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0044784	myxoma	skos:exactMatch	NCIT:C6577	Myxoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0044788	perihilar intrahepatic cholangiocarcinoma	skos:exactMatch	NCIT:C96804	Large Duct Intrahepatic Cholangiocarcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0044792	large congenital melanocytic nevus	skos:exactMatch	NCIT:C3944	Congenital Melanocytic Nevus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0044792	large congenital melanocytic nevus	skos:exactMatch	NCIT:C4234	Giant Congenital Nevus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0044792	large congenital melanocytic nevus	skos:exactMatch	NCIT:C3944	Congenital Melanocytic Nevus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0044794	benign melanocytic skin nevus	skos:exactMatch	NCIT:C7571	Benign Skin Melanocytic Nevus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0044795	epithelioid cell nevus	skos:exactMatch	NCIT:C66757	Epithelioid Cell Nevus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0044796	spindle cell nevus	skos:exactMatch	NCIT:C66758	Spindle Cell Nevus	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -3138,13 +3092,75 @@ MONDO:0700051	liver abscess (disease)	skos:exactMatch	NCIT:C99089	Liver Abscess	
 MONDO:0700058	Morton neuroma	skos:exactMatch	NCIT:C4075	Morton Neuroma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	morton neuroma	LEXMATCH
 MONDO:0700082	Robertsonian translocation Down syndrome	skos:exactMatch	NCIT:C188150	Robertsonian Translocation Down Syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	robertsonian translocation down syndrome	LEXMATCH
 MONDO:0700086	uniparental disomy	skos:exactMatch	NCIT:C85215	Uniparental Disomy	semapv:UnspecifiedMatching						MONDO_MAPPINGS
-MONDO:0700092	neurodevelopmental disorder	skos:exactMatch	NCIT:C89338	Neurodevelopmental Disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	neurodevelopmental disorder	LEXMATCH
 MONDO:0700092	neurodevelopmental disorder	skos:exactMatch	NCIT:C1535926		semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700092	neurodevelopmental disorder	skos:exactMatch	NCIT:C89338	Neurodevelopmental Disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	neurodevelopmental disorder	LEXMATCH
 MONDO:0700119	distal chromosome 18q deletion syndrome	skos:exactMatch	NCIT:C130986	Distal 18q Deletion Syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	distal type 18q deletion syndrome	LEXMATCH
+MONDO:0700134	bovine neoplasm	skos:exactMatch	NCIT:C134527	Bovine Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700136	bovine protoporphyria	skos:exactMatch	NCIT:C131472	Bovine Protoporphyria	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700138	bovine rectal myxoma	skos:exactMatch	NCIT:C134768	Bovine Rectal Myxoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700139	canine neoplasm	skos:exactMatch	NCIT:C134526	Canine Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700140	canine osteosarcoma	skos:exactMatch	NCIT:C120045	Canine Osteosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700141	canine melanoma	skos:exactMatch	NCIT:C120298	Canine Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700142	canine hemangiosarcoma	skos:exactMatch	NCIT:C122783	Canine Hemangiosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700143	canine mammary carcinoma	skos:exactMatch	NCIT:C124249	Canine Mammary Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700144	canine leukemia	skos:exactMatch	NCIT:C128120	Canine Leukemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700145	canine lymphoma	skos:exactMatch	NCIT:C128121	Canine Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700146	canine prostate carcinoma	skos:exactMatch	NCIT:C128122	Canine Prostate Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700147	canine histiocytic sarcoma	skos:exactMatch	NCIT:C128125	Canine Histiocytic Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700148	canine transitional cell carcinoma	skos:exactMatch	NCIT:C128126	Canine Transitional Cell Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700149	canine sarcoma	skos:exactMatch	NCIT:C128195	Canine Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700150	canine mastocytoma	skos:exactMatch	NCIT:C129077	Canine Mastocytoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700151	canine glioma	skos:exactMatch	NCIT:C129297	Canine Glioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700152	canine hepatocellular carcinoma	skos:exactMatch	NCIT:C129298	Canine Hepatocellular Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700153	canine lung adenocarcinoma	skos:exactMatch	NCIT:C129299	Canine Lung Adenocarcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700154	canine rhabdomyosarcoma	skos:exactMatch	NCIT:C129300	Canine Rhabdomyosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700155	canine thyroid adenocarcinoma	skos:exactMatch	NCIT:C132275	Canine Thyroid Adenocarcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700156	canine soft tissue sarcoma	skos:exactMatch	NCIT:C132276	Canine Soft Tissue Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700157	canine oral squamous cell carcinoma	skos:exactMatch	NCIT:C132823	Canine Oral Squamous Cell Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700158	canine pancreatic carcinoma	skos:exactMatch	NCIT:C134944	Canine Pancreatic Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700159	canine acanthomatous epulis	skos:exactMatch	NCIT:C134956	Canine Acanthomatous Epulis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700160	canine mammary adenoma	skos:exactMatch	NCIT:C147073	Canine Mammary Adenoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700161	canine gastrointestinal stromal tumor	skos:exactMatch	NCIT:C158783	Canine Gastrointestinal Stromal Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700162	canine granular cell tumor	skos:exactMatch	NCIT:C158784	Canine Granular Cell Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700163	canine Langerhans cell histiocytosis	skos:exactMatch	NCIT:C158785	Canine Langerhans Cell Histiocytosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700164	canine nephroblastoma	skos:exactMatch	NCIT:C158786	Canine Nephroblastoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700165	canine thyroid gland medullary carcinoma	skos:exactMatch	NCIT:C161006	Canine Thyroid Gland Medullary Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700166	canine transmissible venereal tumor	skos:exactMatch	NCIT:C162473	Canine Transmissible Venereal Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700167	canine sebaceous gland epithelioma	skos:exactMatch	NCIT:C176701	Canine Sebaceous Gland Epithelioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700168	canine oral melanoma	skos:exactMatch	NCIT:C185639	Canine Oral Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700169	canine cutaneous t-cell lymphoma	skos:exactMatch	NCIT:C186279	Canine Cutaneous T-Cell Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700171	horse melanoma	skos:exactMatch	NCIT:C134569	Horse Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700172	horse lymphoma	skos:exactMatch	NCIT:C134778	Horse Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700173	horse sarcoid	skos:exactMatch	NCIT:C134995	Horse Sarcoid	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700174	horse transitional cell carcinoma	skos:exactMatch	NCIT:C173624	Horse Transitional Cell Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700176	feline lymphoma	skos:exactMatch	NCIT:C132193	Feline Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700177	feline mammary carcinoma	skos:exactMatch	NCIT:C132274	Feline Mammary Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700178	feline oral squamous cell carcinoma	skos:exactMatch	NCIT:C132824	Feline Oral Squamous Cell Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700179	feline osteosarcoma	skos:exactMatch	NCIT:C132825	Feline Osteosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700180	feline bronchioloalveolar lung carcinoma	skos:exactMatch	NCIT:C134559	Feline Bronchioloalveolar Lung Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700181	feline fibrosarcoma	skos:exactMatch	NCIT:C134560	Feline Fibrosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700182	feline erythroleukemia	skos:exactMatch	NCIT:C134770	Feline Erythroleukemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700183	feline reticulum cell sarcoma	skos:exactMatch	NCIT:C135008	Feline Reticulum Cell Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700184	feline large granular lymphocyte lymphoma	skos:exactMatch	NCIT:C135724	Feline Large Granular Lymphocyte Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700185	feline melanoma	skos:exactMatch	NCIT:C156362	Feline Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700186	feline histiocytic sarcoma	skos:exactMatch	NCIT:C157503	Feline Histiocytic Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700187	feline progressive histiocytosis	skos:exactMatch	NCIT:C176702	Feline Progressive Histiocytosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700188	feline synovial cell sarcoma	skos:exactMatch	NCIT:C181658	Feline Synovial Cell Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700189	chicken neoplasm	skos:exactMatch	NCIT:C135005	Chicken Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700190	chicken bursal lymphoma	skos:exactMatch	NCIT:C134556	Chicken Bursal Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700191	chicken fibrosarcoma	skos:exactMatch	NCIT:C134557	Chicken Fibrosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700192	chicken hepatoma	skos:exactMatch	NCIT:C134558	Chicken Hepatoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700193	chicken monocytic leukemia	skos:exactMatch	NCIT:C134945	Chicken Monocytic Leukemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700194	chicken lymphoma	skos:exactMatch	NCIT:C135004	Chicken Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700196	fish melanoma	skos:exactMatch	NCIT:C135006	Fish Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700197	porcine leukemia	skos:exactMatch	NCIT:C141365	Porcine Leukemia	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700198	porcine lymphoma	skos:exactMatch	NCIT:C134786	Porcine Lymphoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0700199	sheep lung adenocarcinoma	skos:exactMatch	NCIT:C147532	Sheep Lung Adenocarcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0700217	neonatal sepsis	skos:exactMatch	NCIT:C116802	Neonatal Sepsis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	neonatal sepsis	LEXMATCH
 MONDO:0700218	group B streptococcal infection	skos:exactMatch	NCIT:C87168	Group B Streptococcal Infection	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	group b streptococcal infection	LEXMATCH
 MONDO:0700219	neoplastic meningitis	skos:exactMatch	NCIT:C27383	Meningeal Carcinomatosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	meningeal carcinomatosis	LEXMATCH
 MONDO:0700219	neoplastic meningitis	skos:exactMatch	NCIT:C3814	Metastatic Malignant Neoplasm in the Leptomeninges	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	metastatic malignant neoplasm in the leptomeninges	LEXMATCH
+MONDO:0700226	food allergy	skos:exactMatch	NCIT:C172304	Food Allergy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	food allergy	LEXMATCH
 MONDO:0800026	central hypoventilation syndrome, congenital, 1, with or without Hirschsprung disease	skos:exactMatch	NCIT:C98889	Congenital Central Hypoventilation	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0800029	interstitial lung disease 2	skos:exactMatch	NCIT:C35715	Usual Interstitial Pneumonia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	usual interstitial pneumonia	LEXMATCH
 MONDO:0800029	interstitial lung disease 2	skos:exactMatch	NCIT:C35716	Idiopathic Pulmonary Fibrosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -3152,5 +3168,13 @@ MONDO:0800106	disruptive behavior disorder	skos:exactMatch	NCIT:C99753	Disruptiv
 MONDO:0800113	necrotizing vasculitis	skos:exactMatch	NCIT:C70635	Necrotizing Vasculitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	necrotizing vasculitis	LEXMATCH
 MONDO:0800133	pulmonary hypoplasia	skos:exactMatch	NCIT:C99035	Pulmonary Hypoplasia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pulmonary hypoplasia	LEXMATCH
 MONDO:0850046	amniotic fluid embolism	skos:exactMatch	NCIT:C111911	Amniotic Fluid Embolism	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	amniotic fluid embolism	LEXMATCH
+MONDO:0850110	melanoma in congenital melanocytic nevus	skos:exactMatch	NCIT:C48613	Melanoma in Congenital Melanocytic Nevus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	melanoma in congenital melanocytic nevus	LEXMATCH
+MONDO:0850112	breast implant-associated anaplastic large cell lymphoma	skos:exactMatch	NCIT:C139012	Breast Implant-Associated Anaplastic Large Cell Lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	breast implant-associated anaplastic large cell lymphoma	LEXMATCH
+MONDO:0850154	tongue carcinoma	skos:exactMatch	NCIT:C4824	Tongue Carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tongue carcinoma	LEXMATCH
+MONDO:0850273	salivary gland mucinous adenocarcinoma	skos:exactMatch	NCIT:C62193	Salivary Gland Mucinous Adenocarcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	salivary gland mucinous adenocarcinoma	LEXMATCH
+MONDO:0850345	lung pleomorphic carcinoma	skos:exactMatch	NCIT:C45542	Lung Pleomorphic Carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	lung pleomorphic carcinoma	LEXMATCH
+MONDO:0850388	childhood supratentorial embryonal tumor with multilayered rosettes, C19MC-altered	skos:exactMatch	NCIT:C6772	Childhood Supratentorial Embryonal Tumor with Multilayered Rosettes, C19MC-Altered	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	childhood supratentorial embryonal tumor with multilayered rosettes, c19mc-altered	LEXMATCH
+MONDO:0850459	primary cutaneous gamma-delta t-cell lymphoma	skos:exactMatch	NCIT:C45340	Primary Cutaneous Gamma-Delta T-Cell Lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary cutaneous gamma-delta t-cell lymphoma	LEXMATCH
+MONDO:0851100	malignant olfactory nerve neoplasm	skos:exactMatch	NCIT:C4768	Malignant Olfactory Nerve Neoplasm	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	malignant olfactory nerve neoplasm	LEXMATCH
 MONDO:8000006	WHIM syndrome 1	skos:exactMatch	NCIT:C176819	Warts, Hypogammaglobulinemia, Infections, and Myelokathexis Syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	warts, hypogammaglobulinemia, infections, and myelokathexis syndrome	LEXMATCH
 MONDO:8000023	type 3 autoimmune lymphoproliferative syndrome	skos:exactMatch	NCIT:C39577	Type 3 Autoimmune Lymphoproliferative Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
