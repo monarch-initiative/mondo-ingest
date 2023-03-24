@@ -13,7 +13,7 @@ import pandas as pd
 from jinja2 import Template
 from oaklib.types import CURIE
 
-from src.scripts.utils import DOCS_DIR, REPORTS_DIR
+from utils import DOCS_DIR, REPORTS_DIR
 
 
 FILENAME_GLOB_PATTERN = '*_mapped_deprecated_terms.robot.template.tsv'
