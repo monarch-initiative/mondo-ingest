@@ -370,7 +370,9 @@ tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
 
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
 tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
-	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl  --add-prefixes config/context.json -o $@
+	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl --add-prefixes config/context.json \
+			 remove --term "http://purl.obolibrary.org/obo/mondo#ABBREVIATION" -o $@
+	
 
 tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db
