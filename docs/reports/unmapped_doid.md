@@ -14,6 +14,8 @@
 | DOID:0111860 | AMME complex                                                                                                                  |
 | DOID:0111824 | Aarskog syndrome                                                                                                              |
 | DOID:0111826 | Abruzzo-Erickson syndrome                                                                                                     |
+| DOID:0081289 | Antley-Bixler syndrome                                                                                                        |
+| DOID:0081290 | Antley-Bixler syndrome without disordered steroidogenesis                                                                     |
 | DOID:0111964 | B cell and dendritic cell deficiency                                                                                          |
 | DOID:0080638 | B-cell acute lymphoblastic leukemia                                                                                           |
 | DOID:0081041 | B-cell prolymphocytic leukemia                                                                                                |
@@ -191,6 +193,7 @@
 | DOID:0080746 | Sweet syndrome                                                                                                                |
 | DOID:0080710 | T cell and NK cell immunodeficiency                                                                                           |
 | DOID:0111965 | T cell, B cell, and NK cell deficiency                                                                                        |
+| DOID:0081312 | T-cell non-Hodgkin lymphoma                                                                                                   |
 | DOID:0081042 | T-cell prolymphocytic leukemia                                                                                                |
 | DOID:0080817 | T2-high asthma                                                                                                                |
 | DOID:0080818 | T2-low asthma                                                                                                                 |
@@ -300,6 +303,7 @@
 | DOID:0111721 | amelogenesis imperfecta type 3                                                                                                |
 | DOID:0060204 | amyotrophic lateral sclerosis type 13                                                                                         |
 | DOID:0111246 | amyotrophic lateral sclerosis-parkinsonism/dementia complex 1                                                                 |
+| DOID:873     | anaerobic pneumonia                                                                                                           |
 | DOID:5889    | anaplastic ependymoma                                                                                                         |
 | DOID:7154    | anaplastic oligodendroglioma                                                                                                  |
 | DOID:0080854 | anaplastic pleomorphic xanthoastrocytoma                                                                                      |
@@ -343,7 +347,6 @@
 | DOID:0080720 | autosomal dominant congenital deafness with onychodystrophy                                                                   |
 | DOID:0080807 | autosomal dominant craniodiaphyseal dysplasia                                                                                 |
 | DOID:0080801 | autosomal dominant craniometaphyseal dysplasia                                                                                |
-| DOID:0070136 | autosomal dominant cutis laxa 2                                                                                               |
 | DOID:0070020 | autosomal dominant dyskeratosis congenita 4                                                                                   |
 | DOID:0080682 | autosomal dominant familial visceral neuropathy                                                                               |
 | DOID:0111269 | autosomal dominant hyaline body myopathy                                                                                      |
@@ -359,10 +362,10 @@
 | DOID:0112285 | autosomal dominant spondyloepiphyseal dysplasia tarda                                                                         |
 | DOID:0111909 | autosomal dominant thrombophilia due to protein C deficiency                                                                  |
 | DOID:0111900 | autosomal dominant thrombophilia due to protein S deficiency                                                                  |
-| DOID:0111823 | autosomal hemophilia A                                                                                                        |
 | DOID:0111864 | autosomal recessive congenital bilateral absence of vas deferens                                                              |
 | DOID:0111797 | autosomal recessive congenital nystagmus                                                                                      |
 | DOID:0080802 | autosomal recessive craniometaphyseal dysplasia                                                                               |
+| DOID:0070141 | autosomal recessive cutis laxa type II classic type                                                                           |
 | DOID:0081177 | autosomal recessive intellectual developmental disorder 1                                                                     |
 | DOID:0081185 | autosomal recessive intellectual developmental disorder 10/20                                                                 |
 | DOID:0081186 | autosomal recessive intellectual developmental disorder 11                                                                    |
@@ -439,6 +442,7 @@
 | DOID:0081118 | benign familial infantile seizures 5                                                                                          |
 | DOID:0081119 | benign familial infantile seizures 6                                                                                          |
 | DOID:0081026 | benign peritoneal solitary fibrous tumor                                                                                      |
+| DOID:5157    | benign pleural mesothelioma                                                                                                   |
 | DOID:0080602 | benign teratoma                                                                                                               |
 | DOID:60006   | benign vascular tumor                                                                                                         |
 | DOID:0080772 | beta-thalassemia intermedia                                                                                                   |
@@ -454,8 +458,10 @@
 | DOID:0112313 | brain small vessel disease                                                                                                    |
 | DOID:0112314 | brain small vessel disease 2                                                                                                  |
 | DOID:0112315 | brain small vessel disease 3                                                                                                  |
+| DOID:0081323 | breast implant illness                                                                                                        |
 | DOID:0070333 | breast implant-associated anaplastic large cell lymphoma                                                                      |
 | DOID:0080729 | brittle cornea syndrome 2                                                                                                     |
+| DOID:11650   | bronchopulmonary dysplasia                                                                                                    |
 | DOID:0080652 | calcium oxalate nephrolithiasis                                                                                               |
 | DOID:0080721 | calvarial doughnut lesions with bone fragility                                                                                |
 | DOID:0080909 | castration-resistant prostate carcinoma                                                                                       |
@@ -464,6 +470,7 @@
 | DOID:0081030 | central conducting lymphatic anomaly                                                                                          |
 | DOID:0081055 | central diabetes insipidus                                                                                                    |
 | DOID:0080905 | central nervous system neuroblastoma                                                                                          |
+| DOID:0081315 | central nervous system tumor with BCOR internal tandem duplication                                                            |
 | DOID:0112308 | central precocious puberty                                                                                                    |
 | DOID:0112310 | central precocious puberty 1                                                                                                  |
 | DOID:0112309 | central precocious puberty 2                                                                                                  |
@@ -488,6 +495,7 @@
 | DOID:0080748 | chronic inducible urticaria                                                                                                   |
 | DOID:0081088 | chronic myelogenous leukemia, BCR-ABL1 positive                                                                               |
 | DOID:0080749 | chronic spontaneous urticaria                                                                                                 |
+| DOID:0081291 | chronic traumatic encephalopathy                                                                                              |
 | DOID:0080747 | chronic urticaria                                                                                                             |
 | DOID:0112253 | combined cellular and humoral immune defects with granulomas                                                                  |
 | DOID:0112173 | combined deficiency of vitamin K-dependent clotting factors 1                                                                 |
@@ -541,6 +549,8 @@
 | DOID:0111791 | congenital nystagmus 7                                                                                                        |
 | DOID:0112242 | congenital symmetric circumferential skin creases 1                                                                           |
 | DOID:0112243 | congenital symmetric circumferential skin creases 2                                                                           |
+| DOID:0081321 | contractures, pterygia, and spondylocarpotarsal fusion syndrome 1A                                                            |
+| DOID:0081322 | contractures, pterygia, and spondylocarpotarsal fusion syndrome 1B                                                            |
 | DOID:0080796 | core binding factor acute myeloid leukemia                                                                                    |
 | DOID:0112151 | corpus callosum agenesis-abnormal genitalia syndrome                                                                          |
 | DOID:0080803 | cranioectodermal dysplasia 1                                                                                                  |
@@ -584,6 +594,7 @@
 | DOID:0112222 | developmental and epileptic encephalopathy 88                                                                                 |
 | DOID:0112223 | developmental and epileptic encephalopathy 89                                                                                 |
 | DOID:0112275 | developmental and epileptic encephalopathy 93                                                                                 |
+| DOID:0081325 | developmental and epileptic encephalopathy 94                                                                                 |
 | DOID:0081264 | developmental delay, hypotrophy, and dysmorphic features without Moebius syndrome                                             |
 | DOID:0080928 | dialysis-related amyloidosis                                                                                                  |
 | DOID:0080664 | diaphyseal medullary stenosis with malignant fibrous histiocytoma                                                             |
@@ -592,6 +603,7 @@
 | DOID:0080880 | diffuse glioma, H3 G34 mutant                                                                                                 |
 | DOID:0080996 | diffuse large B-cell lymphoma activated B-cell type                                                                           |
 | DOID:0080997 | diffuse large B-cell lymphoma germinal center B-cell type                                                                     |
+| DOID:0081302 | diffuse leptomeningeal glioneuronal tumor                                                                                     |
 | DOID:0081260 | diffuse low-grade glioma, MAPK pathway–altered                                                                                |
 | DOID:0080684 | diffuse midline glioma, H3 K27M-mutant                                                                                        |
 | DOID:0081277 | diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype                                                        |
@@ -604,7 +616,6 @@
 | DOID:0081162 | dilated cardiomyopathy 2F                                                                                                     |
 | DOID:0081163 | dilated cardiomyopathy 2G                                                                                                     |
 | DOID:0081164 | dilated cardiomyopathy 3B                                                                                                     |
-| DOID:0081006 | dill allergy                                                                                                                  |
 | DOID:0081058 | dipsogenic diabetes insipidus                                                                                                 |
 | DOID:0111596 | distal arthrogryposis type 1                                                                                                  |
 | DOID:0112190 | distal arthrogryposis type 1C                                                                                                 |
@@ -633,7 +644,9 @@
 | DOID:0080750 | erythema nodosum                                                                                                              |
 | DOID:0080766 | erythrokeratodermia variabilis et progressiva 6                                                                               |
 | DOID:0080916 | erythroleukemia                                                                                                               |
+| DOID:0081295 | essential tremor 6                                                                                                            |
 | DOID:0080821 | exercise-induced bronchoconstriction                                                                                          |
+| DOID:0081314 | extraventricular neurocytoma                                                                                                  |
 | DOID:0080811 | extrinsic asthma                                                                                                              |
 | DOID:0080944 | familial Behcet-like autoinflammatory syndrome                                                                                |
 | DOID:0080410 | familial adenomatous polyposis 2                                                                                              |
@@ -667,6 +680,9 @@
 | DOID:0081034 | glutatione synthetase deficiency with 5-oxoprolinuria                                                                         |
 | DOID:0081028 | glycogen-rich carcinoma                                                                                                       |
 | DOID:0081223 | glycosylphosphatidylinositol biosynthesis defect 16                                                                           |
+| DOID:0081308 | grade I lymphomatoid granulomatosis                                                                                           |
+| DOID:0081309 | grade II lymphomatoid granulomatosis                                                                                          |
+| DOID:0081310 | grade III lymphomatoid granulomatosis                                                                                         |
 | DOID:0081267 | graft-versus-host disease                                                                                                     |
 | DOID:0080836 | growth hormone insensitivity syndrome with immune dysregulation 1                                                             |
 | DOID:0080837 | growth hormone insensitivity syndrome with immune dysregulation 2                                                             |
@@ -692,6 +708,7 @@
 | DOID:0112345 | hereditary spastic paraplegia 85                                                                                              |
 | DOID:0112342 | hereditary spastic paraplegia 86                                                                                              |
 | DOID:0081004 | high-grade B-cell lymphoma double-hit/triple-hit                                                                              |
+| DOID:0081304 | high-grade astrocytoma with piloid features                                                                                   |
 | DOID:0080915 | histiocytic sarcoma                                                                                                           |
 | DOID:0111278 | histiocytosis-lymphadenopathy plus syndrome                                                                                   |
 | DOID:0080879 | histone mutated tumor                                                                                                         |
@@ -794,6 +811,7 @@
 | DOID:0081265 | intellectual developmental disorder with abnormal behavior, microcephaly, and short stature                                   |
 | DOID:0081008 | intellectual developmental disorder with cardiac arrhythmia                                                                   |
 | DOID:0081262 | intellectual developmental disorder with hypotonia, impaired speech, and dysmorphic facies                                    |
+| DOID:0081301 | intellectual developmental disorder with ocular anomalies and distinctive facial features                                     |
 | DOID:0080812 | intermittent asthma                                                                                                           |
 | DOID:0080964 | intracranial berry aneurysm 1                                                                                                 |
 | DOID:0080973 | intracranial berry aneurysm 10                                                                                                |
@@ -808,6 +826,7 @@
 | DOID:0080971 | intracranial berry aneurysm 8                                                                                                 |
 | DOID:0080972 | intracranial berry aneurysm 9                                                                                                 |
 | DOID:0080842 | intracranial meningioma                                                                                                       |
+| DOID:0081311 | intravascular large B-cell lymphoma                                                                                           |
 | DOID:0080753 | keratosis follicularis spinulosa decalvans                                                                                    |
 | DOID:0081105 | keratosis palmoplantaris striata                                                                                              |
 | DOID:0081108 | keratosis palmoplantaris striata 1                                                                                            |
@@ -815,7 +834,6 @@
 | DOID:0081110 | keratosis palmoplantaris striata 3                                                                                            |
 | DOID:0080751 | keratosis pilaris atrophicans                                                                                                 |
 | DOID:0080752 | keratosis pilaris atrophicans faciei                                                                                          |
-| DOID:0040060 | ketoprofen photoallergic dermatitis                                                                                           |
 | DOID:0080616 | kidney cortex disease                                                                                                         |
 | DOID:0080833 | laryngomalacia                                                                                                                |
 | DOID:0080846 | latent autoimmune diabetes in adults                                                                                          |
@@ -842,6 +860,7 @@
 | DOID:0080899 | lung pleomorphic carcinoma                                                                                                    |
 | DOID:0080777 | lung sarcomatoid carcinoma                                                                                                    |
 | DOID:0080618 | lymph node carcinoma                                                                                                          |
+| DOID:0081307 | lymphomatoid granulomatosis                                                                                                   |
 | DOID:0112311 | male infertility due to acephalic spermatozoa                                                                                 |
 | DOID:0112312 | male infertility due to globozoospermia                                                                                       |
 | DOID:0080364 | malignant adenoma                                                                                                             |
@@ -864,7 +883,6 @@
 | DOID:0081051 | microcephaly, growth deficiency, seizures, and brain malformations                                                            |
 | DOID:0112234 | microlissencephaly                                                                                                            |
 | DOID:0111859 | midface hypoplasia, hearing impairment, elliptocytosis, and nephrocalcinosis                                                  |
-| DOID:0080832 | mild cognitive impairment                                                                                                     |
 | DOID:0112182 | mismatch repair cancer syndrome                                                                                               |
 | DOID:0070331 | mitochondrial DNA depletion syndrome 8b                                                                                       |
 | DOID:0112100 | mitochondrial type mitochondrial complex I deficiency                                                                         |
@@ -879,9 +897,14 @@
 | DOID:0080782 | mucinous pancreas adenocarcinoma                                                                                              |
 | DOID:0080678 | mucolipidosis III gamma                                                                                                       |
 | DOID:0080991 | multiminicore disease                                                                                                         |
+| DOID:0081303 | multinodular and vacuolating neuronal tumor                                                                                   |
 | DOID:0112241 | multiple benign circumferential skin creases on limbs                                                                         |
 | DOID:0080503 | multiple congenital anomalies-hypotonia-seizures syndrome                                                                     |
 | DOID:3125    | multiple endocrine neoplasia                                                                                                  |
+| DOID:0081317 | multiple synostoses syndrome 1                                                                                                |
+| DOID:0081318 | multiple synostoses syndrome 2                                                                                                |
+| DOID:0081319 | multiple synostoses syndrome 3                                                                                                |
+| DOID:0081320 | multiple synostoses syndrome 4                                                                                                |
 | DOID:070355  | multisystem proteinopathy                                                                                                     |
 | DOID:0112374 | muscular dystrophy-dystroglycanopathy                                                                                         |
 | DOID:0112375 | muscular dystrophy-dystroglycanopathy type B                                                                                  |
@@ -912,8 +935,11 @@
 | DOID:0081275 | neurodevelopmental disorder with eye movement abnormalities and ataxia                                                        |
 | DOID:0112276 | neurodevelopmental disorder with involuntary movements                                                                        |
 | DOID:0081263 | neurodevelopmental disorder with microcephaly, cataracts, and renal abnormalities                                             |
+| DOID:0081324 | neurodevelopmental disorder with poor growth, spastic tetraplegia, and hearing loss                                           |
+| DOID:0081327 | neurodevelopmental disorder with regression, abnormal movements, loss of speech, and seizures                                 |
 | DOID:0080679 | neuronal intestinal dysplasia type A                                                                                          |
 | DOID:0080680 | neuronal intestinal dysplasia type B                                                                                          |
+| DOID:0081294 | neuronal intranuclear inclusion disease                                                                                       |
 | DOID:0080826 | nocturnal asthma                                                                                                              |
 | DOID:0080546 | non-alcoholic fatty liver                                                                                                     |
 | DOID:0081014 | non-severe COVID-19                                                                                                           |
@@ -1004,6 +1030,11 @@
 | DOID:0111706 | oblique facial clefting 1                                                                                                     |
 | DOID:0080820 | occupational asthma                                                                                                           |
 | DOID:0080849 | ocular motor apraxia, Cogan type                                                                                              |
+| DOID:0081296 | oculopharyngodistal myopathy                                                                                                  |
+| DOID:0081297 | oculopharyngodistal myopathy 1                                                                                                |
+| DOID:0081298 | oculopharyngodistal myopathy 2                                                                                                |
+| DOID:0081299 | oculopharyngodistal myopathy 3                                                                                                |
+| DOID:0081300 | oculopharyngodistal myopathy 4                                                                                                |
 | DOID:0070311 | oligoasthenoteratozoospermia                                                                                                  |
 | DOID:0081281 | oligodendroglioma, IDH-mutant and 1p/19q-codeleted grade 2                                                                    |
 | DOID:0081282 | oligodendroglioma, IDH-mutant and 1p/19q-codeleted, grade 3                                                                   |
@@ -1019,12 +1050,12 @@
 | DOID:0081111 | osteosclerotic metaphyseal dysplasia                                                                                          |
 | DOID:0080677 | otospondylomegaepiphyseal dysplasia, autosomal dominant                                                                       |
 | DOID:0070355 | overactive bladder syndrome                                                                                                   |
+| DOID:0081326 | oxoglutarate dehydrogenase deficiency                                                                                         |
 | DOID:0081266 | pachygyria, microcephaly, developmental delay, and dysmorphic facies, with or without seizures                                |
 | DOID:0111244 | palmoplantar keratoderma and congenital alopecia 1                                                                            |
 | DOID:0081283 | papillary glioneuronal tumor                                                                                                  |
 | DOID:0081251 | papillary tumor of the pineal region                                                                                          |
 | DOID:0080852 | paraneoplastic pemphigus                                                                                                      |
-| DOID:0081005 | parsley allergy                                                                                                               |
 | DOID:0080776 | partial androgen insensitivity syndrome                                                                                       |
 | DOID:0080841 | pemphigoid                                                                                                                    |
 | DOID:0080850 | pemphigus foliaceus                                                                                                           |
@@ -1050,6 +1081,7 @@
 | DOID:0080881 | pleomorphic xanthoastrocytoma BRAF mutant                                                                                     |
 | DOID:0080577 | polygenic disease                                                                                                             |
 | DOID:0080918 | polymicrogyria                                                                                                                |
+| DOID:0081305 | polymorphous low grade neuroepithelial tumour of the young                                                                    |
 | DOID:0080745 | polymyositis                                                                                                                  |
 | DOID:0112322 | pontocerebellar hypoplasia type 1                                                                                             |
 | DOID:0112324 | pontocerebellar hypoplasia type 11                                                                                            |
@@ -1087,8 +1119,10 @@
 | DOID:0111857 | primary ciliary dyskinesia 45                                                                                                 |
 | DOID:0112138 | primary coenzyme Q10 deficiency 9                                                                                             |
 | DOID:0081050 | primary cutaneous gamma-delta T-cell lymphoma                                                                                 |
+| DOID:0081313 | primary diffuse large B-cell lymphoma of the central nervous system                                                           |
 | DOID:0080957 | primary hypoalphalipoproteinemia 1                                                                                            |
 | DOID:0080958 | primary hypoalphalipoproteinemia 2                                                                                            |
+| DOID:0081316 | primary intracranial sarcoma, DICER1-mutant                                                                                   |
 | DOID:0080930 | primary localized cutaneous amyloidosis 1                                                                                     |
 | DOID:0080931 | primary localized cutaneous amyloidosis 2                                                                                     |
 | DOID:0080932 | primary localized cutaneous amyloidosis 3                                                                                     |
@@ -1141,6 +1175,7 @@
 | DOID:0081243 | rhizomelic chondrodysplasia punctate type 4                                                                                   |
 | DOID:0081284 | rosette-forming glioneuronal tumor                                                                                            |
 | DOID:0080800 | salivary gland mucinous adenocarcinoma                                                                                        |
+| DOID:0081293 | salivary gland mucoepidermoid carcinoma                                                                                       |
 | DOID:0112307 | sarcosinemia                                                                                                                  |
 | DOID:0080936 | serum amyloid A amyloidosis                                                                                                   |
 | DOID:0081013 | severe COVID-19                                                                                                               |
@@ -1206,6 +1241,7 @@
 | DOID:0070348 | spinal muscular atrophy with lower extremity predominant                                                                      |
 | DOID:0070351 | spinal muscular atrophy with lower extremity predominant 1                                                                    |
 | DOID:0070349 | spinal muscular atrophy with lower extremity predominant 2A                                                                   |
+| DOID:0081306 | spindle cell oncocytoma                                                                                                       |
 | DOID:0070326 | spitzoid melanoma                                                                                                             |
 | DOID:0112365 | spondylocostal dysostosis 1                                                                                                   |
 | DOID:0112362 | spondylocostal dysostosis 2                                                                                                   |
@@ -1237,7 +1273,6 @@
 | DOID:0112303 | spondylometaphyseal dysplasia with corneal dystrophy                                                                          |
 | DOID:0112195 | spondyloperipheral dysplasia                                                                                                  |
 | DOID:0080917 | sporatic amyotrophic lateral sclerosis                                                                                        |
-| DOID:0080831 | subjective cognitive decline                                                                                                  |
 | DOID:0080890 | supratentorial ependymoma                                                                                                     |
 | DOID:0081253 | supratentorial ependymoma, YAP1 fusion–positive                                                                               |
 | DOID:0081252 | supratentorial ependymoma, ZFTA fusion–positive                                                                               |
@@ -1273,7 +1308,6 @@
 | DOID:0111906 | thrombophilia due to decreased release of PLAT                                                                                |
 | DOID:0111907 | thrombophilia due to thrombin defect                                                                                          |
 | DOID:0111908 | thrombophilia due to thrombomodulin defect                                                                                    |
-| DOID:0080825 | thunderstorm triggered asthma                                                                                                 |
 | DOID:0112185 | thyroid dyshormonogenesis 1                                                                                                   |
 | DOID:0112186 | thyroid dyshormonogenesis 2A                                                                                                  |
 | DOID:0112187 | thyroid dyshormonogenesis 3                                                                                                   |
@@ -1283,6 +1317,7 @@
 | DOID:0080641 | tongue carcinoma                                                                                                              |
 | DOID:0080778 | transient infantile liver failure                                                                                             |
 | DOID:0080743 | transverse myelitis                                                                                                           |
+| DOID:0081292 | traumatic brain injury                                                                                                        |
 | DOID:0111866 | trichothiodystrophy                                                                                                           |
 | DOID:0080995 | tuberculous encephalopathy                                                                                                    |
 | DOID:0080686 | tubular aggregate myopathy 2                                                                                                  |
@@ -1299,6 +1334,8 @@
 | DOID:0080885 | vitamin D-dependent rickets type 2B                                                                                           |
 | DOID:0080665 | warfarin resistance                                                                                                           |
 | DOID:0080666 | warfarin sensitivity                                                                                                          |
+| DOID:0081287 | white sponge nevus 1                                                                                                          |
+| DOID:0081288 | white sponge nevus 2                                                                                                          |
 | DOID:0080937 | wild-type amyloidosis                                                                                                         |
 | DOID:0112171 | wrinkly skin syndrome                                                                                                         |
 | DOID:0111820 | zygodactyly 1                                                                                                                 |

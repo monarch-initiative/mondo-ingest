@@ -28,6 +28,20 @@ EXCLUSION_FILES = [
     join(REPORTS_DIR, "icd10cm_term_exclusions.txt"),
 ]
 
+DESIRED_COLUMN_ORDER = [
+    "subject_id",
+    "subject_label",
+    "object_id",
+    "predicate_id",
+    "object_label",
+    "mapping_justification",
+    "mapping_tool",
+    "confidence",
+    "subject_match_field",
+    "object_match_field",
+    "match_string",
+]
+
 input_argument = click.argument("input", required=True, type=click.Path())
 
 
@@ -75,7 +89,9 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     summary.write("\n")
     summary.write("## Content of directories:")
     summary.write("\n")
-    summary.write("* mondo-only: Positive mappings in MONDO not caught by the lexical mapping pipeline")
+    summary.write(
+        "* mondo-only: Positive mappings in MONDO not caught by the lexical mapping pipeline"
+    )
     summary.write("\n")
     summary.write("* split-mapping-set: Unmapped mappings broken down by predicate_id")
     summary.write("\n")
@@ -97,11 +113,15 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
 
     ontology_resource = OntologyResource(slug=DB_FILE, local=True)
     oi = SqlImplementation(ontology_resource)
-    msdf_mondo.df["object_label"] = msdf_mondo.df["object_id"].apply(lambda x: oi.label(x))
+    msdf_mondo.df["object_label"] = msdf_mondo.df["object_id"].apply(
+        lambda x: oi.label(x)
+    )
 
     condition_1 = msdf_mondo.df["subject_id"].str.contains("MONDO")
     condition_2 = msdf_mondo.df["object_id"].str.contains("ICD10CM")
-    condition_3 = msdf_mondo.df["object_id"].str.contains("|".join((["OMIM", "OMIMPS"])))
+    condition_3 = msdf_mondo.df["object_id"].str.contains(
+        "|".join((["OMIM", "OMIMPS"]))
+    )
     condition_4 = msdf_mondo.df["object_id"].str.contains("Orphanet")
     condition_5 = msdf_mondo.df["object_id"].str.contains("DOID")
     condition_6 = msdf_mondo.df["object_id"].str.contains("NCIT")
@@ -115,25 +135,12 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
 
     condition_mondo_obj = msdf_lex.df["object_id"].str.contains("MONDO")
 
-    non_mondo_subjects_df = pd.DataFrame(msdf_lex.df[(~condition_7 & condition_mondo_obj)])
+    non_mondo_subjects_df = pd.DataFrame(
+        msdf_lex.df[(~condition_7 & condition_mondo_obj)]
+    )
     mondo_subjects_df = pd.DataFrame(msdf_lex.df[(condition_7 & ~condition_mondo_obj)])
     print(len(mondo_subjects_df))
     non_mondo_subjects_df.head()
-
-    desired_sequence = [
-        "subject_id",
-        "subject_label",
-        "object_id",
-        "predicate_id",
-        "object_label",
-        "mapping_justification",
-        "mapping_tool",
-        "confidence",
-        "subject_match_field",
-        "object_match_field",
-        "match_string",
-    ]
-
     new_subjects_df = non_mondo_subjects_df.rename(
         columns={
             "subject_id": "object_id",
@@ -145,7 +152,7 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         }
     )
 
-    new_subjects_df = new_subjects_df[desired_sequence]
+    new_subjects_df = new_subjects_df[DESIRED_COLUMN_ORDER]
     new_subjects_df["predicate_id"] = new_subjects_df["predicate_id"].apply(
         lambda x: flip_predicate(x)
     )
@@ -190,44 +197,59 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         unmapped_icd_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_icd_lex.tsv"), summary
     )
     export_unmatched_exact(
-        unmapped_omim_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_omim_lex.tsv"), summary
+        unmapped_omim_df,
+        "LEXMATCH",
+        join(LEXMATCH_DIR, "unmapped_omim_lex.tsv"),
+        summary,
     )
     export_unmatched_exact(
-        unmapped_ordo_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_ordo_lex.tsv"), summary
+        unmapped_ordo_df,
+        "LEXMATCH",
+        join(LEXMATCH_DIR, "unmapped_ordo_lex.tsv"),
+        summary,
     )
     export_unmatched_exact(
-        unmapped_doid_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_doid_lex.tsv"), summary
+        unmapped_doid_df,
+        "LEXMATCH",
+        join(LEXMATCH_DIR, "unmapped_doid_lex.tsv"),
+        summary,
     )
     export_unmatched_exact(
-        unmapped_ncit_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_ncit_lex.tsv"), summary
+        unmapped_ncit_df,
+        "LEXMATCH",
+        join(LEXMATCH_DIR, "unmapped_ncit_lex.tsv"),
+        summary,
     )
 
     export_unmatched_exact(
-        unmapped_icd_df, "MONDO_MAPPINGS", join(mondo_match_dir, "unmapped_icd_mondo.tsv"), summary
+        unmapped_icd_df,
+        "MONDO_MAPPINGS",
+        join(mondo_match_dir, "unmapped_icd_mondo.tsv"),
+        summary,
     )
     export_unmatched_exact(
         unmapped_omim_df,
         "MONDO_MAPPINGS",
         join(mondo_match_dir, "unmapped_omim_mondo.tsv"),
-        summary
+        summary,
     )
     export_unmatched_exact(
         unmapped_ordo_df,
         "MONDO_MAPPINGS",
         join(mondo_match_dir, "unmapped_ordo_mondo.tsv"),
-        summary
+        summary,
     )
     export_unmatched_exact(
         unmapped_doid_df,
         "MONDO_MAPPINGS",
         join(mondo_match_dir, "unmapped_doid_mondo.tsv"),
-        summary
+        summary,
     )
     export_unmatched_exact(
         unmapped_ncit_df,
         "MONDO_MAPPINGS",
         join(mondo_match_dir, "unmapped_ncit_mondo.tsv"),
-        summary
+        summary,
     )
 
     combined_df = pd.concat(
@@ -240,13 +262,17 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         ]
     )
 
-    combined_msdf = MappingSetDataFrame(df = combined_df, prefix_map= msdf_lex.prefix_map, metadata= msdf_lex.metadata)
+    combined_msdf = MappingSetDataFrame(
+        df=combined_df, prefix_map=msdf_lex.prefix_map, metadata=msdf_lex.metadata
+    )
     df_dict = split_dataframe(combined_msdf)
 
     for match in df_dict.keys():
         fn = match + ".tsv"
-        
-        summary.write(" * Number of mappings in `" + match + "`: " + str(len(df_dict[match].df)))
+
+        summary.write(
+            " * Number of mappings in `" + match + "`: " + str(len(df_dict[match].df))
+        )
         summary.write("\n")
         df_dict[match].df.to_csv(join(SPLIT_DIR, fn), sep="\t", index=False)
 
@@ -268,8 +294,12 @@ def add_distance(df, col_name, txt_dist_pkg):
 
 
 def print_prefixes(df):
-    object_prefixes = df["object_id"].str.split(":").apply(lambda x: x[0]).drop_duplicates()
-    subject_prefixes = df["subject_id"].str.split(":").apply(lambda x: x[0]).drop_duplicates()
+    object_prefixes = (
+        df["object_id"].str.split(":").apply(lambda x: x[0]).drop_duplicates()
+    )
+    subject_prefixes = (
+        df["subject_id"].str.split(":").apply(lambda x: x[0]).drop_duplicates()
+    )
     predicate_ids = df["predicate_id"].drop_duplicates()
     print(
         f"subject_prefixes:\n {subject_prefixes} \n \
@@ -297,7 +327,9 @@ def compare_and_comment_df(mondo_df, lex_df):
     return df
 
 
-def get_unmapped_df(comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list):
+def get_unmapped_df(
+    comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
+):
     #     mappings = ["LEXMATCH", "MONDO_MAPPINGS"]
     #     unmapped_df = comparison_df[
     #         (comparison_df['comment'].str.contains("|".join(mappings)))
@@ -320,10 +352,15 @@ def get_unmapped_df(comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_l
 def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     columns_to_remove = ["subject_preprocessing", "object_preprocessing"]
     if any(item in columns_to_remove for item in unmapped_df.columns):
-        cols = [col_name for col_name in unmapped_df.columns if col_name in columns_to_remove]
+        cols = [
+            col_name
+            for col_name in unmapped_df.columns
+            if col_name in columns_to_remove
+        ]
         unmapped_df.drop(cols, axis=1, inplace=True)
     unmapped_exact = unmapped_df[
-        (unmapped_df["comment"] == match_type) & (unmapped_df["predicate_id"] == "skos:exactMatch")
+        (unmapped_df["comment"] == match_type)
+        & (unmapped_df["predicate_id"] == "skos:exactMatch")
     ]
     unmapped_exact = replace_by_mondo_preds(unmapped_exact)
     robot_row_dict = {
@@ -339,25 +376,38 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = unmapped_exact[column_seq]
     unmapped_exact = sort_df_rows_columns(unmapped_exact)
     unmapped_exact = unmapped_exact.drop_duplicates()
-    actual_fn = fn.split("/")[-1].strip('.tsv')
-    summary.write(" * Number of mappings in `" + actual_fn + "`: " + str(len(unmapped_exact)))
+    actual_fn = fn.split("/")[-1].strip(".tsv")
+    summary.write(
+        " * Number of mappings in `" + actual_fn + "`: " + str(len(unmapped_exact))
+    )
     summary.write("\n")
     # Split out exact match i.e. subj_label.lowercase()==obj_label.lowercase() into a separate file.
-    unmapped_exact_exact = unmapped_exact.loc[unmapped_exact["subject_label"].str.lower() == unmapped_exact["object_label"].str.lower()]
+    unmapped_exact_exact = unmapped_exact.loc[
+        unmapped_exact["subject_label"].str.lower()
+        == unmapped_exact["object_label"].str.lower()
+    ]
     new_fn = fn.replace(".tsv", "_exact.tsv")
     unmapped_exact_exact = pd.concat(
-        [pd.DataFrame.from_dict(robot_row_dict, orient="columns"), unmapped_exact_exact],
+        [
+            pd.DataFrame.from_dict(robot_row_dict, orient="columns"),
+            unmapped_exact_exact,
+        ],
         axis=0,
     )
+    unmapped_exact_exact = unmapped_exact_exact[DESIRED_COLUMN_ORDER]
     unmapped_exact_exact.to_csv(join(new_fn), sep="\t", index=False)
-    unmapped_exact_logical = unmapped_exact.loc[unmapped_exact["subject_label"].str.lower() != unmapped_exact["object_label"].str.lower()]
+    unmapped_exact_logical = unmapped_exact.loc[
+        unmapped_exact["subject_label"].str.lower()
+        != unmapped_exact["object_label"].str.lower()
+    ]
+    unmapped_exact_logical = unmapped_exact_logical[DESIRED_COLUMN_ORDER]
     unmapped_exact_logical.to_csv(join(fn), sep="\t", index=False)
 
 
 def mapped_curie_list(df):
-    all_id_df = pd.DataFrame(pd.concat([df["subject_id"], df["object_id"]])).drop_duplicates(
-        ignore_index=True
-    )
+    all_id_df = pd.DataFrame(
+        pd.concat([df["subject_id"], df["object_id"]])
+    ).drop_duplicates(ignore_index=True)
     all_id_df = all_id_df[~all_id_df[0].str.startswith("MONDO")]
     return all_id_df[0].to_list()
 

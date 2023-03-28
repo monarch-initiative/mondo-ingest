@@ -33,10 +33,10 @@ rules:
   - description: xref match
     preconditions:
       subject_match_field_one_of:
-        - oio:hasDbXref
+        # - oio:hasDbXref
         - skos:exactMatch
       object_match_field_one_of:
-        - oio:hasDbXref
+        # - oio:hasDbXref
         - skos:exactMatch
     postconditions:
       predicate_id: skos:exactMatch
@@ -62,17 +62,29 @@ rules:
       predicate_id: skos:narrowMatch
       weight: 2.0
 
-  - synonymizer:
-      the_rule: Remove parentheses bound info from the label.
-      match: r'\([^)]*\)'
-      match_scope: "*"
-      replacement: ""
+  # - synonymizer:
+  #     the_rule: Remove parentheses bound info from the label.
+  #     match: r'\([^)]*\)'
+  #     match_scope: "*"
+  #     replacement: ""
 
   - synonymizer:
       the_rule: Remove box brackets bound info from the label.
       match: r'\[[^)]*\]'
       match_scope: "*"
       replacement: ""
+
+  # - synonymizer:
+  #     the_rule: Remove abbreviations.
+  #     match: r'\b[A-Z][a-zA-Z\.]*[A-Z]\b\.?' [a-zA-Z]*\d
+  #     match_scope: "*"
+  #     replacement: ""
+
+  # - synonymizer:
+  #     the_rule: Remove abbreviations that end with a number in them.
+  #     match: r'[a-zA-Z]*\d[a-zA-Z]*'
+  #     match_scope: "*"
+  #     replacement: ""
   
   - synonymizer:
       the_rule: Broad match terms with the term 'other' in them.
@@ -98,3 +110,4 @@ rules:
       match: r'\'s'
       match_scope: "*"
       replacement: "s"
+

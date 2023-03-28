@@ -19,6 +19,8 @@ from oaklib import get_implementation_from_shorthand
 from oaklib.types import CURIE, URI
 from sssom.util import is_curie
 
+from utils import remove_angle_brackets
+
 
 def create_mapping_status_tables(
     db_path: str, exclusions_path: str, mondo_mappings_path: str, onto_config_path: str, outpath_full: str,
@@ -32,7 +34,7 @@ def create_mapping_status_tables(
         prefix_map: Dict[str, str] = onto_config['base_prefix_map']
         owned_prefixes: List[str] = list(prefix_map.keys())
         converter = curies.Converter.from_prefix_map(prefix_map)
-        prefix_preplacement_map = {
+        prefix_replacement_map = {
             f'{alias}:': f'{preferred}:' for preferred, alias in onto_config['prefix_aliases'].items()} \
             if 'prefix_aliases' in onto_config else {}
     excluded_terms: Set[CURIE] = set(pd.read_csv(exclusions_path, header=None, names=['id']).fillna('')['id'])
@@ -41,7 +43,9 @@ def create_mapping_status_tables(
 
     # Get all terms and labels
     ids_all: List[Union[CURIE, URI]] = [x for x in oi.entities(filter_obsoletes=False)]
+    ids_all = remove_angle_brackets(ids_all)
     ids_sans_deprecated: List[Union[CURIE, URI]] = [x for x in oi.entities(filter_obsoletes=True)]
+    ids_sans_deprecated = remove_angle_brackets(ids_sans_deprecated)
     ids_sans_deprecated: Set[Union[CURIE, URI]] = set(ids_sans_deprecated)
     id_labels_all: List[tuple] = [x for x in oi.labels(ids_all)]
     id_labels_all_map: Dict[Union[CURIE, URI], str] = {x[0]: x[1] for x in id_labels_all}
@@ -52,7 +56,7 @@ def create_mapping_status_tables(
     curies_deprecated: Set[CURIE] = set()
     for _id, label in id_labels_all_map.items():
         curie: CURIE = _id if is_curie(_id) else converter.compress(_id)
-        for alias, preferred in prefix_preplacement_map.items():
+        for alias, preferred in prefix_replacement_map.items():
             curie = curie.replace(alias, preferred) if curie else curie
         if curie and curie.split(':')[0] in owned_prefixes:
             curies_owned.append(curie)
@@ -68,7 +72,7 @@ def create_mapping_status_tables(
         'subject_id': curies_owned, 'subject_label': labels_owned, 'is_mapped': is_mapped, 'is_excluded': is_excluded,
         'is_deprecated': is_deprecated})
     if len(df) == 0:
-        return {'full': df, 'simple': df}
+        raise RuntimeError('Mapping status: No "owned terms" found in the ontology. Not expected.')
 
     # Sort
     df['label_missing'] = df['subject_label'].apply(lambda x: x == '')

@@ -9,8 +9,7 @@ Resources
 - https://incatools.github.io/ontology-access-kit/
 - https://incatools.github.io/ontology-access-kit/intro/tutorial02.html
 
-TODO's (major):
-  -
+todo: refactor to take in 'unmapped mapppable' terms i.e. reports/%_unmapped_terms.tsv instead of other params?
 """
 import os
 from argparse import ArgumentParser
@@ -81,6 +80,7 @@ def slurp(
         # If all T.parents mapped, and 1+ is an exact or narrow match and non obsolete, designate T for slurping
         # (i.e. only slurp if parents are already slurped)
         qualified_parent_mondo_ids = []
+        no_parents: bool = not t.direct_owned_parent_curies
         for parent_curie in t.direct_owned_parent_curies:
             # Conversely, if any of T.parents is unmapped, T is not to be slurped
             if parent_curie in sssom_object_ids:
@@ -90,7 +90,7 @@ def slurp(
                     qualified_parent_mondo_ids.append(parent_mondo_id)
             if parent_curie not in sssom_object_ids and parent_curie in owned_term_curies:
                 break
-        if qualified_parent_mondo_ids:
+        if qualified_parent_mondo_ids or no_parents:
             if t.curie in slurp_id_map:
                 mondo_id = slurp_id_map[t.curie]
             else:

@@ -183,6 +183,18 @@ def _get_next_available_mondo_id(min_id: int, max_id: int, mondo_ids: Set[int]) 
     return next_id, mondo_ids
 
 
+def remove_angle_brackets(uris: Union[URI, List[URI]]):
+    """Remove angle brackets from URIs, e.g.:
+    <https://omim.org/entry/100050> --> https://omim.org/entry/100050"""
+    uris = [uris] if isinstance(uris, str) else uris
+    uris2 = []
+    for x in uris:
+        x = x[1:] if x.startswith('<') else x
+        x = x[:-1] if x.endswith('>') else x
+        uris2.append(x)
+    return uris2
+
+
 def get_mondo_term_ids(mondo_terms_path: str, slurp_id_map: Dict[str, str]) -> Set[int]:
     """From path to file of mondo terms, get set of Mondo IDs as integers.
     # todo: Consider using `curie_list` package, though needing another prefix_map only for this seems even less optimal
@@ -191,10 +203,9 @@ def get_mondo_term_ids(mondo_terms_path: str, slurp_id_map: Dict[str, str]) -> S
     mondo_base_uri = 'http://purl.obolibrary.org/obo/MONDO_'
     mondo_termlist_df = pd.read_csv(mondo_terms_path, comment='#', sep='\t')
     mondo_term_uris: List[str] = list(mondo_termlist_df['?term'])
+    mondo_term_uris = remove_angle_brackets(mondo_term_uris)
     existing_ids: Set[int] = set()
     for x in mondo_term_uris:
-        x = x[1:] if x.startswith('<') else x
-        x = x[:-1] if x.endswith('>') else x
         if not x.startswith(mondo_base_uri):
             continue
         existing_ids.add(int(x.replace('http://purl.obolibrary.org/obo/MONDO_', '')))
