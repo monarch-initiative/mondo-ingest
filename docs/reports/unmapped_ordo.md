@@ -29,7 +29,6 @@
 | Orphanet:498491 | Complete hemimelia                                                                                                                          |
 | Orphanet:306644 | Complication after organ transplantation                                                                                                    |
 | Orphanet:617449 | Congenital aphakia-iris hypoplasia-microphthalmia-microcornea syndrome                                                                      |
-| Orphanet:168486 | Congenital neuronal ceroid lipofuscinosis                                                                                                   |
 | Orphanet:519333 | Congenital optic disc excavation                                                                                                            |
 | Orphanet:522514 | Congenital optic disc excavation of genetic origin                                                                                          |
 | Orphanet:617910 | Conjunctival malignant melanoma                                                                                                             |

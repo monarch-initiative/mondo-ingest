@@ -1,378 +1,338 @@
 ## OMIM
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id   | subject_label                                                                                                          |
-|:-------------|:-----------------------------------------------------------------------------------------------------------------------|
-| OMIM:619835  | 3-methylglutaconic aciduria,  iia 7a                                                                                   |
-| OMIM:619959  | acces syndrome                                                                                                         |
-| OMIM:619824  | agammaglobulinemia 8b, autosomal recessive                                                                             |
-| OMIM:619268  | alzahrani-kuwahara syndrome                                                                                            |
-| OMIM:619352  | ataxia, intention tremor, and hypotonia syndrome, childhood-onset                                                      |
-| OMIM:620184  | atelis syndrome 1                                                                                                      |
-| OMIM:620185  | atelis syndrome 2                                                                                                      |
-| OMIM:619957  | attention deficit-hyperactivity disorder 8                                                                             |
-| OMIM:619832  | auditory neuropathy, autosomal dominant 3                                                                              |
-| OMIM:619339  | bartsocas-papas syndrome 2                                                                                             |
-| OMIM:619326  | bdv syndrome                                                                                                           |
-| OMIM:620076  | bent bone dysplasia syndrome 2                                                                                         |
-| OMIM:619481  | bile acid malabsorption, primary, 2                                                                                    |
-| OMIM:619534  | biliary, renal, neurologic, and skeletal syndrome                                                                      |
-| OMIM:619293  | blepharophimosis-impaired intellectual development syndrome                                                            |
-| OMIM:620207  | blood group, er                                                                                                        |
-| OMIM:620044  | bone marrow failure and diabetes mellitus syndrome                                                                     |
-| OMIM:619543  | boudin-mortier syndrome                                                                                                |
-| OMIM:619980  | braddock-carey syndrome 1                                                                                              |
-| OMIM:619981  | braddock-carey syndrome 2                                                                                              |
-| OMIM:620186  | branchial arch abnormalities, choanal atresia, athelia, hearing loss, and hypothyroidism syndrome                      |
-| OMIM:619690  | brunet-wagner neurodevelopmental syndrome                                                                              |
-| OMIM:619314  | buratti-harel syndrome                                                                                                 |
-| OMIM:620067  | cardiac valvular dysplasia 2                                                                                           |
-| OMIM:620247  | cardiomyopathy, dilated, 1oo                                                                                           |
-| OMIM:620203  | cardiomyopathy, dilated, 2h                                                                                            |
-| OMIM:620236  | cardiomyopathy, familial hypertrophic, 29, with polyglucosan bodies                                                    |
-| OMIM:619941  | carey-fineman-ziter syndrome 2                                                                                         |
-| OMIM:620253  | cataract 50 with or without glaucoma                                                                                   |
-| OMIM:619338  | cataracts, spastic paraparesis, and speech delay                                                                       |
-| OMIM:619576  | cerebellar ataxia, brain abnormalities, and cardiac conduction defects                                                 |
-| OMIM:619761  | cerebellar dysfunction, impaired intellectual development, and hypogonadotropic hypogonadism                           |
-| OMIM:619538  | cerebral cavernous malformations 4                                                                                     |
-| OMIM:620111  | charcot-marie-tooth disease, demyelinating,  iia 1j                                                                    |
-| OMIM:619841  | chilton-okur-chung neurodevelopmental syndrome                                                                         |
-| OMIM:619504  | chopra-amiel-gordon syndrome                                                                                           |
-| OMIM:619649  | chromosome 16q12 duplication syndrome                                                                                  |
-| OMIM:619343  | chromosome 1p36 deletion syndrome, proximal                                                                            |
-| OMIM:301069  | chromosome xq13 duplication syndrome                                                                                   |
-| OMIM:620197  | ciliary dyskinesia, primary, 49, without situs inversus                                                                |
-| OMIM:620099  | cleidocranial dysplasia 2                                                                                              |
-| OMIM:619743  | combined oxidative phosphorylation deficiency 55                                                                       |
-| OMIM:620139  | combined oxidative phosphorylation deficiency 56                                                                       |
-| OMIM:620167  | combined oxidative phosphorylation deficiency 57                                                                       |
-| OMIM:620200  | congenital disorder of glycosylation,  iia iiy                                                                         |
-| OMIM:620201  | congenital disorder of glycosylation,  iia iiz                                                                         |
-| OMIM:619714  | congenital disorder of glycosylation,  iia iw, autosomal dominant                                                      |
-| OMIM:619657  | congenital heart defects, multiple types, 8, with or without heterotaxy                                                |
-| OMIM:619871  | corneal dystrophy, punctiform and polychromatic pre-descemet                                                           |
-| OMIM:620156  | cortical dysplasia, complex, with other brain malformations 11                                                         |
-| OMIM:616994  | craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome 2                         |
-| OMIM:619727  | craniotubular dysplasia, ikegawa  iia                                                                                  |
-| OMIM:620227  | deafness, autosomal dominant 85                                                                                        |
-| OMIM:620238  | deafness, autosomal recessive 120                                                                                      |
-| OMIM:619354  | deafness, cataract, impaired intellectual development, and polyneuropathy                                              |
-| OMIM:619488  | degcags syndrome                                                                                                       |
-| OMIM:619613  | delayed puberty, self-limited                                                                                          |
-| OMIM:619877  | dentici-novelli neurodevelopmental syndrome                                                                            |
-| OMIM:620115  | developmental and epileptic encephalopathy 108                                                                         |
-| OMIM:620145  | developmental and epileptic encephalopathy 109                                                                         |
-| OMIM:620149  | developmental and epileptic encephalopathy 110                                                                         |
-| OMIM:620240  | developmental delay with hypotonia, myopathy, and brain abnormalities                                                  |
-| OMIM:619575  | developmental delay with or without intellectual impairment or behavioral abnormalities                                |
-| OMIM:620062  | developmental delay with short stature, dysmorphic facial features, and sparse hair 2                                  |
-| OMIM:620098  | developmental delay with variable intellectual disability and dysmorphic facies                                        |
-| OMIM:619694  | developmental delay with variable neurologic and brain abnormalities                                                   |
-| OMIM:620065  | developmental delay, behavioral abnormalities, and neuropsychiatric disorders                                          |
-| OMIM:620012  | developmental delay, hypotonia, and impaired language                                                                  |
-| OMIM:619595  | developmental delay, hypotonia, musculoskeletal defects, and behavioral abnormalities                                  |
-| OMIM:619475  | developmental delay, impaired speech, and behavioral abnormalities                                                     |
-| OMIM:619964  | developmental delay, impaired speech, and behavioral abnormalities, with or without seizures                           |
-| OMIM:620141  | developmental delay, language impairment, and ocular abnormalities                                                     |
-| OMIM:620025  | diaphragmatic hernia 4, with cardiovascular defects                                                                    |
-| OMIM:619955  | dworschak-punetha neurodevelopmental syndrome                                                                          |
-| OMIM:620133  | dyskeratosis congenita, autosomal recessive 8                                                                          |
-| OMIM:619345  | dysostosis multiplex, ain-naz  iia                                                                                     |
-| OMIM:619681  | dystonia, early-onset, and/or spastic paraplegia                                                                       |
-| OMIM:619817  | epidermolysis bullosa, junctional 6, with pyloric atresia                                                              |
-| OMIM:301091  | epilepsy, X-linked 2, with or without impaired intellectual development and dysmorphic features                        |
-| OMIM:620245  | episodic kinesigenic dyskinesia 3                                                                                      |
-| OMIM:620058  | familial apolipoprotein gene cluster deletion syndrome                                                                 |
-| OMIM:620116  | fatty liver disease, protection from                                                                                   |
-| OMIM:619376  | faundes-banka syndrome                                                                                                 |
-| OMIM:619699  | ferguson-bonni neurodevelopmental syndrome                                                                             |
-| OMIM:619602  | fetal akinesia, respiratory insufficiency, microcephaly, polymicrogyria, and dysmorphic facies                         |
-| OMIM:619329  | fibromuscular dysplasia, multifocal                                                                                    |
-| OMIM:619985  | glycosylphosphatidylinositol biosynthesis defect 25                                                                    |
-| OMIM:619321  | growth restriction, hypoplastic kidneys, alopecia, and distinctive facies                                              |
-| OMIM:619462  | hemolytic disease of fetus and newborn, rh-induced                                                                     |
-| OMIM:619641  | hengel-maroofian-schols syndrome                                                                                       |
-| OMIM:619902  | hepatorenocardiac degenerative fibrosis                                                                                |
-| OMIM:619702  | heterotaxy, visceral, 12, autosomal                                                                                    |
-| OMIM:619311  | hiatt-neu-cooper neurodevelopmental syndrome                                                                           |
-| OMIM:620241  | hydrocephalus, congenital, 5, susceptibility to                                                                        |
-| OMIM:147060  | hyper-ige recurrent infection syndrome 1, autosomal dominant                                                           |
-| OMIM:620211  | hyperinsulinemic hypoglycemia, familial, 8                                                                             |
-| OMIM:620085  | hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2                                             |
-| OMIM:619324  | hypertriglyceridemia 2                                                                                                 |
-| OMIM:619836  | hypoalphalipoproteinemia, primary, 2, intermediate                                                                     |
-| OMIM:619406  | hypokalemic tubulopathy and deafness                                                                                   |
-| OMIM:620152  | hypomagnesemia 7, renal, with or without dilated cardiomyopathy                                                        |
-| OMIM:619545  | hypoplastic femurs and pelvis                                                                                          |
-| OMIM:620177  | hypotrichosis 15                                                                                                       |
-| OMIM:620148  | ichthyosis, annular epidermolytic, 2                                                                                   |
-| OMIM:619733  | inclusion body myopathy and brain white matter abnormalities                                                           |
-| OMIM:620199  | inflammatory poikiloderma with hair abnormalities and acral keratoses                                                  |
-| OMIM:620021  | intellectual developmental disorder with autism and dysmorphic facies                                                  |
-| OMIM:619556  | intellectual developmental disorder with hypotonia, impaired speech, and dysmorphic facies                             |
-| OMIM:619911  | intellectual developmental disorder with language impairment and early-onset dopa-responsive dystonia-parkinsonism     |
-| OMIM:620007  | intellectual developmental disorder with muscle tone abnormalities and distal skeletal defects                         |
-| OMIM:620086  | intellectual developmental disorder with ocular anomalies and distinctive facial features                              |
-| OMIM:619844  | intellectual developmental disorder with or without peripheral neuropathy                                              |
-| OMIM:301095  | intellectual developmental disorder, X-linked 110                                                                      |
-| OMIM:620157  | intellectual developmental disorder, autosomal dominant 70                                                             |
-| OMIM:620237  | intellectual developmental disorder, autosomal recessive 78                                                            |
-| OMIM:301066  | intellectual developmental disorder, x-linked, syndromic, with pigmentary mosaicism and coarse facies                  |
-| OMIM:619719  | intellectual disability and myopathy syndrome                                                                          |
-| OMIM:620045  | intestinal dysmotility syndrome                                                                                        |
-| OMIM:620121  | iron overload, susceptibility to                                                                                       |
-| OMIM:620232  | joint contractures, osteochondromas, and b-cell lymphoma                                                               |
-| OMIM:620009  | keratoderma-ichthyosis-deafness syndrome, autosomal recessive                                                          |
-| OMIM:619297  | kinsship syndrome                                                                                                      |
-| OMIM:619762  | kury-isidor syndrome                                                                                                   |
-| OMIM:620192  | lacrimoauriculodentodigital syndrome 2                                                                                 |
-| OMIM:620193  | lacrimoauriculodentodigital syndrome 3                                                                                 |
-| OMIM:619864  | leukodystrophy, childhood-onset, remitting                                                                             |
-| OMIM:619851  | leukodystrophy, hypomyelinating, 24                                                                                    |
-| OMIM:620243  | leukodystrophy, hypomyelinating, 25                                                                                    |
-| OMIM:619991  | liver disease, severe congenital                                                                                       |
-| OMIM:619460  | luo-schoch-yamamoto syndrome                                                                                           |
-| OMIM:620244  | lymphatic malformation 13                                                                                              |
-| OMIM:619769  | macrocephaly, neurodevelopmental delay, lymphoid hyperplasia, and persistent fetal hemoglobin                          |
-| OMIM:619977  | macular dystrophy, retinal, 4                                                                                          |
-| OMIM:619290  | mahvash disease                                                                                                        |
-| OMIM:619322  | marbach-rustad progeroid syndrome                                                                                      |
-| OMIM:619680  | marbach-schaaf neurodevelopmental syndrome                                                                             |
-| OMIM:620183  | microcephaly 30, primary, autosomal recessive                                                                          |
-| OMIM:620135  | mitochondrial complex 1 deficiency, nuclear  iia 39                                                                    |
-| OMIM:620137  | mitochondrial complex 3 deficiency, nuclear  iia 11                                                                    |
-| OMIM:619355  | mitochondrial complex 4 deficiency, nuclear  iia 22                                                                    |
-| OMIM:620153  | mosaic variegated aneuploidy syndrome 4                                                                                |
-| OMIM:620189  | mosaic variegated aneuploidy syndrome 7 with inflammation and tumor predisposition                                     |
-| OMIM:619518  | muscular dystrophy, congenital hearing loss, and ovarian insufficiency syndrome                                        |
-| OMIM:620166  | muscular dystrophy, congenital, with or without seizures                                                               |
-| OMIM:620138  | myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis                    |
-| OMIM:619967  | myopathy, congenital, nonprogressive                                                                                   |
-| OMIM:620161  | myopathy, congenital, with neonatal respiratory insufficiency                                                          |
-| OMIM:619424  | myopathy, myofibrillar, 12, infantile-onset, with cardiomyopathy                                                       |
-| OMIM:619468  | nephronophthisis-like nephropathy 2                                                                                    |
-| OMIM:619869  | neurocardiofaciodigital syndrome                                                                                       |
-| OMIM:620089  | neurodegeneration, childhood-onset, with multisystem involvement due to mitochondrial dysfunction                      |
-| OMIM:619847  | neurodegeneration, childhood-onset, with progressive microcephaly                                                      |
-| OMIM:619797  | neurodevelopmental disorder with central hypotonia and dysmorphic facies                                               |
-| OMIM:619333  | neurodevelopmental disorder with cerebellar atrophy and motor dysfunction                                              |
-| OMIM:620083  | neurodevelopmental disorder with craniofacial dysmorphism and skeletal defects                                         |
-| OMIM:619306  | neurodevelopmental disorder with dysmorphic facies and cerebellar hypoplasia                                           |
-| OMIM:620210  | neurodevelopmental disorder with dysmorphic facies and ischiopubic hypoplasia                                          |
-| OMIM:620073  | neurodevelopmental disorder with dysmorphic facies and skeletal and brain abnormalities                                |
-| OMIM:619480  | neurodevelopmental disorder with dysmorphic facies and thin corpus callosum                                            |
-| OMIM:619922  | neurodevelopmental disorder with dystonia and seizures                                                                 |
-| OMIM:619971  | neurodevelopmental disorder with epilepsy and brain atrophy                                                            |
-| OMIM:620094  | neurodevelopmental disorder with eye movement abnormalities and ataxia                                                 |
-| OMIM:620075  | neurodevelopmental disorder with facial dysmorphism, absent language, and pseudo-pelger-huet anomaly                   |
-| OMIM:301094  | neurodevelopmental disorder with gait disturbance, dysmorphic facies, and behavioral abnormalities, X-linked           |
-| OMIM:620113  | neurodevelopmental disorder with growth retardation, dysmorphic facies, and corpus callosum abnormalities              |
-| OMIM:619616  | neurodevelopmental disorder with hearing loss and spasticity                                                           |
-| OMIM:619651  | neurodevelopmental disorder with hyperkinetic movements and dyskinesia                                                 |
-| OMIM:619512  | neurodevelopmental disorder with hypotonia and brain abnormalities                                                     |
-| OMIM:619503  | neurodevelopmental disorder with hypotonia and dysmorphic facies                                                       |
-| OMIM:619639  | neurodevelopmental disorder with hypotonia and gross motor and speech delay                                            |
-| OMIM:620224  | neurodevelopmental disorder with hypotonia, dysmorphic facies, and skeletal anomalies, with or without seizures        |
-| OMIM:620191  | neurodevelopmental disorder with hypotonia, dysmorphic facies, and skin abnormalities                                  |
-| OMIM:619383  | neurodevelopmental disorder with hypotonia, facial dysmorphism, and brain abnormalities                                |
-| OMIM:619854  | neurodevelopmental disorder with hypotonia, impaired speech, and behavioral abnormalities                              |
-| OMIM:620029  | neurodevelopmental disorder with hypotonia, language delay, and skeletal defects with or without seizures              |
-| OMIM:619580  | neurodevelopmental disorder with impaired language and ataxia and with or without seizures                             |
-| OMIM:619373  | neurodevelopmental disorder with infantile epileptic spasms                                                            |
-| OMIM:619995  | neurodevelopmental disorder with intention tremor, pyramidal signs, dyspraxia, and ocular anomalies                    |
-| OMIM:619908  | neurodevelopmental disorder with language delay and seizures                                                           |
-| OMIM:620066  | neurodevelopmental disorder with microcephaly, cerebral atrophy, and visual impairment                                 |
-| OMIM:620038  | neurodevelopmental disorder with microcephaly, hypotonia, and absent language                                          |
-| OMIM:619876  | neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures                                      |
-| OMIM:620023  | neurodevelopmental disorder with microcephaly, movement abnormalities, and seizures                                    |
-| OMIM:619685  | neurodevelopmental disorder with microcephaly, seizures, and neonatal cholestasis                                      |
-| OMIM:620027  | neurodevelopmental disorder with microcephaly, short stature, and speech delay                                         |
-| OMIM:619470  | neurodevelopmental disorder with motor and speech delay and behavioral abnormalities                                   |
-| OMIM:619833  | neurodevelopmental disorder with neuromuscular and skeletal abnormalities                                              |
-| OMIM:619725  | neurodevelopmental disorder with or without variable movement or behavioral abnormalities                              |
-| OMIM:620242  | neurodevelopmental disorder with poor growth and behavioral abnormalities                                              |
-| OMIM:619880  | neurodevelopmental disorder with poor growth and skeletal anomalies                                                    |
-| OMIM:620194  | neurodevelopmental disorder with poor growth, large ears, and dysmorphic facies                                        |
-| OMIM:620071  | neurodevelopmental disorder with poor growth, spastic tetraplegia, and hearing loss                                    |
-| OMIM:619517  | neurodevelopmental disorder with seizures and brain abnormalities                                                      |
-| OMIM:619323  | neurodevelopmental disorder with seizures and gingival overgrowth                                                      |
-| OMIM:620024  | neurodevelopmental disorder with seizures, microcephaly, and brain abnormalities                                       |
-| OMIM:619972  | neurodevelopmental disorder with severe motor impairment, absent language, cerebral hypomyelination, and brain atrophy |
-| OMIM:620070  | neurodevelopmental disorder with short stature, prominent forehead, and feeding difficulties                           |
-| OMIM:619286  | neurodevelopmental disorder with spasticity, cataracts, and cerebellar hypoplasia                                      |
-| OMIM:620001  | neurodevelopmental disorder with spasticity, seizures, and brain abnormalities                                         |
-| OMIM:619989  | neurodevelopmental disorder with speech delay and variable ocular anomalies                                            |
-| OMIM:620114  | neurodevelopmental disorder with speech impairment and with or without seizures                                        |
-| OMIM:619653  | neurodevelopmental disorder, nonprogressive, with spasticity and transient opisthotonus                                |
-| OMIM:619522  | neurodevelopmental-craniofacial syndrome with variable renal and cardiac abnormalities                                 |
-| OMIM:620080  | neuronopathy, distal hereditary motor,  iia 10                                                                         |
-| OMIM:619539  | neuroocular syndrome                                                                                                   |
-| OMIM:620195  | obesity and hypopigmentation                                                                                           |
-| OMIM:619318  | oculogastrointestinal neurodevelopmental syndrome                                                                      |
-| OMIM:619356  | onychodystrophy, osteodystrophy, impaired intellectual development, and seizures syndrome                              |
-| OMIM:620154  | oocyte maturation defect 13                                                                                            |
-| OMIM:620107  | orofaciodigital syndrome 19                                                                                            |
-| OMIM:619377  | osteootohepatoenteric syndrome                                                                                         |
-| OMIM:619884  | osteoporosis, childhood- or juvenile-onset, with developmental delay                                                   |
-| OMIM:619873  | parenti-mignot neurodevelopmental syndrome                                                                             |
-| OMIM:619491  | parkinson disease 24, autosomal dominant, susceptibility to                                                            |
-| OMIM:619903  | peripheral motor neuropathy, childhood-onset, biotin-responsive                                                        |
-| OMIM:619859  | phosphoribosylaminoimidazole carboxylase deficiency                                                                    |
-| OMIM:620005  | primordial dwarfism-immunodeficiency-lipodystrophy syndrome                                                            |
-| OMIM:620125  | pseudohypoaldosteronism,  iia ib2, autosomal recessive                                                                 |
-| OMIM:620126  | pseudohypoaldosteronism,  iia ib3, autosomal recessive                                                                 |
-| OMIM:607507  | psoriatic arthritis, susceptibility to                                                                                 |
-| OMIM:620155  | rabin-pappas syndrome                                                                                                  |
-| OMIM:619312  | radio-tartaglia syndrome                                                                                               |
-| OMIM:619695  | rauch-steindl syndrome                                                                                                 |
-| OMIM:102570  | removed from database                                                                                                  |
-| OMIM:102920  | removed from database                                                                                                  |
-| OMIM:102930  | removed from database                                                                                                  |
-| OMIM:102940  | removed from database                                                                                                  |
-| OMIM:102970  | removed from database                                                                                                  |
-| OMIM:107253  | removed from database                                                                                                  |
-| OMIM:108400  | removed from database                                                                                                  |
-| OMIM:117200  | removed from database                                                                                                  |
-| OMIM:121000  | removed from database                                                                                                  |
-| OMIM:124580  | removed from database                                                                                                  |
-| OMIM:125510  | removed from database                                                                                                  |
-| OMIM:126440  | removed from database                                                                                                  |
-| OMIM:132860  | removed from database                                                                                                  |
-| OMIM:133710  | removed from database                                                                                                  |
-| OMIM:133730  | removed from database                                                                                                  |
-| OMIM:133740  | removed from database                                                                                                  |
-| OMIM:136670  | removed from database                                                                                                  |
-| OMIM:138391  | removed from database                                                                                                  |
-| OMIM:139220  | removed from database                                                                                                  |
-| OMIM:139230  | removed from database                                                                                                  |
-| OMIM:142420  | removed from database                                                                                                  |
-| OMIM:142870  | removed from database                                                                                                  |
-| OMIM:143070  | removed from database                                                                                                  |
-| OMIM:143080  | removed from database                                                                                                  |
-| OMIM:147410  | removed from database                                                                                                  |
-| OMIM:147490  | removed from database                                                                                                  |
-| OMIM:147684  | removed from database                                                                                                  |
-| OMIM:151550  | removed from database                                                                                                  |
-| OMIM:155960  | removed from database                                                                                                  |
-| OMIM:163900  | removed from database                                                                                                  |
-| OMIM:164710  | removed from database                                                                                                  |
-| OMIM:164830  | removed from database                                                                                                  |
-| OMIM:170950  | removed from database                                                                                                  |
-| OMIM:171700  | removed from database                                                                                                  |
-| OMIM:177860  | removed from database                                                                                                  |
-| OMIM:179715  | removed from database                                                                                                  |
-| OMIM:180330  | removed from database                                                                                                  |
-| OMIM:180930  | removed from database                                                                                                  |
-| OMIM:180940  | removed from database                                                                                                  |
-| OMIM:183250  | removed from database                                                                                                  |
-| OMIM:185450  | removed from database                                                                                                  |
-| OMIM:185595  | removed from database                                                                                                  |
-| OMIM:186690  | removed from database                                                                                                  |
-| OMIM:186920  | removed from database                                                                                                  |
-| OMIM:192070  | removed from database                                                                                                  |
-| OMIM:193675  | removed from database                                                                                                  |
-| OMIM:194520  | removed from database                                                                                                  |
-| OMIM:194530  | removed from database                                                                                                  |
-| OMIM:200930  | removed from database                                                                                                  |
-| OMIM:204400  | removed from database                                                                                                  |
-| OMIM:211420  | removed from database                                                                                                  |
-| OMIM:212600  | removed from database                                                                                                  |
-| OMIM:212700  | removed from database                                                                                                  |
-| OMIM:221000  | removed from database                                                                                                  |
-| OMIM:225360  | removed from database                                                                                                  |
-| OMIM:231400  | removed from database                                                                                                  |
-| OMIM:231610  | removed from database                                                                                                  |
-| OMIM:239400  | removed from database                                                                                                  |
-| OMIM:240100  | removed from database                                                                                                  |
-| OMIM:242800  | removed from database                                                                                                  |
-| OMIM:245500  | removed from database                                                                                                  |
-| OMIM:249800  | removed from database                                                                                                  |
-| OMIM:252030  | removed from database                                                                                                  |
-| OMIM:253500  | removed from database                                                                                                  |
-| OMIM:261660  | removed from database                                                                                                  |
-| OMIM:264810  | removed from database                                                                                                  |
-| OMIM:275600  | removed from database                                                                                                  |
-| OMIM:300900  | removed from database                                                                                                  |
-| OMIM:301880  | removed from database                                                                                                  |
-| OMIM:304990  | removed from database                                                                                                  |
-| OMIM:305650  | removed from database                                                                                                  |
-| OMIM:306600  | removed from database                                                                                                  |
-| OMIM:308210  | removed from database                                                                                                  |
-| OMIM:308400  | removed from database                                                                                                  |
-| OMIM:311700  | removed from database                                                                                                  |
-| OMIM:312030  | removed from database                                                                                                  |
-| OMIM:312530  | removed from database                                                                                                  |
-| OMIM:313450  | removed from database                                                                                                  |
-| OMIM:313460  | removed from database                                                                                                  |
-| OMIM:313550  | removed from database                                                                                                  |
-| OMIM:314350  | removed from database                                                                                                  |
-| OMIM:314920  | removed from database                                                                                                  |
-| OMIM:314940  | removed from database                                                                                                  |
-| OMIM:314960  | removed from database                                                                                                  |
-| OMIM:400000  | removed from database                                                                                                  |
-| OMIM:424000  | removed from database                                                                                                  |
-| OMIM:510000  | removed from database                                                                                                  |
-| OMIM:600261  | removed from database                                                                                                  |
-| OMIM:600499  | removed from database                                                                                                  |
-| OMIM:600606  | removed from database                                                                                                  |
-| OMIM:601050  | removed from database                                                                                                  |
-| OMIM:601106  | removed from database                                                                                                  |
-| OMIM:601169  | removed from database                                                                                                  |
-| OMIM:601294  | removed from database                                                                                                  |
-| OMIM:602029  | removed from database                                                                                                  |
-| OMIM:602147  | removed from database                                                                                                  |
-| OMIM:602456  | removed from database                                                                                                  |
-| OMIM:603653  | removed from database                                                                                                  |
-| OMIM:603793  | removed from database                                                                                                  |
-| OMIM:603986  | removed from database                                                                                                  |
-| OMIM:603990  | removed from database                                                                                                  |
-| OMIM:604006  | removed from database                                                                                                  |
-| OMIM:604007  | removed from database                                                                                                  |
-| OMIM:604338  | removed from database                                                                                                  |
-| OMIM:604339  | removed from database                                                                                                  |
-| OMIM:604340  | removed from database                                                                                                  |
-| OMIM:604341  | removed from database                                                                                                  |
-| OMIM:604342  | removed from database                                                                                                  |
-| OMIM:604343  | removed from database                                                                                                  |
-| OMIM:605177  | removed from database                                                                                                  |
-| OMIM:608297  | removed from database                                                                                                  |
-| OMIM:609830  | removed from database                                                                                                  |
-| OMIM:615971  | removed from database                                                                                                  |
-| OMIM:616018  | removed from database                                                                                                  |
-| OMIM:618428  | removed from database                                                                                                  |
-| OMIM:620233  | respiratory infections, recurrent, and failure to thrive with or without diarrhea                                      |
-| OMIM:619446  | retinal dystrophy and microvillus inclusion disease                                                                    |
-| OMIM:620102  | retinitis pigmentosa 95                                                                                                |
-| OMIM:620228  | retinitis pigmentosa 96                                                                                                |
-| OMIM:620235  | rhabdomyolysis, susceptibility to, 1                                                                                   |
-| OMIM:180295  | rhabdomyosarcoma, embryonal, 2                                                                                         |
-| OMIM:619598  | rhizomelic dysplasia, ain-naz  iia                                                                                     |
-| OMIM:181460  | schistosoma mansoni infection, susceptibility/resistance to                                                            |
-| OMIM:620231  | short qt syndrome 7                                                                                                    |
-| OMIM:619489  | short stature, dauber-argente  iia                                                                                     |
-| OMIM:619557  | short stature, impaired intellectual development, microcephaly, hypotonia, and ocular anomalies                        |
-| OMIM:619464  | sick sinus syndrome 4                                                                                                  |
-| OMIM:620221  | spastic paraplegia 79a, autosomal dominant, with ataxia                                                                |
-| OMIM:620106  | spastic paraplegia 88, autosomal dominant                                                                              |
-| OMIM:620170  | spermatogenic failure 78                                                                                               |
-| OMIM:620196  | spermatogenic failure 79                                                                                               |
-| OMIM:620222  | spermatogenic failure 80                                                                                               |
-| OMIM:620011  | spinal muscular atrophy, distal, autosomal recessive, 6                                                                |
-| OMIM:620174  | spinocerebellar ataxia 27b, late-onset                                                                                 |
-| OMIM:620158  | spinocerebellar ataxia 50                                                                                              |
-| OMIM:619862  | spinocerebellar ataxia, autosomal recessive 32                                                                         |
-| OMIM:620208  | spinocerebellar ataxia, autosomal recessive 33                                                                         |
-| OMIM:301080  | systemic lupus erythematosus 17                                                                                        |
-| OMIM:301071  | thrombophilia, x-linked, due to factor 8 defect                                                                        |
-| OMIM:620198  | thyroid hormone metabolism, abnormal, 3                                                                                |
-| OMIM:620173  | tooth agenesis, selective, 10                                                                                          |
-| OMIM:619975  | tumor predisposition syndrome 2                                                                                        |
-| OMIM:619467  | usmani-riazuddin syndrome, autosomal dominant                                                                          |
-| OMIM:619548  | usmani-riazuddin syndrome, autosomal recessive                                                                         |
-| OMIM:619501  | ventriculomegaly and arthrogryposis                                                                                    |
-| OMIM:619400  | visceral leiomyopathy, african degenerative                                                                            |
-| OMIM:619350  | visceral myopathy 2                                                                                                    |
-| OMIM:619472  | viss syndrome                                                                                                          |
-| OMIM:619426  | white-kernohan syndrome                                                                                                |
-| OMIM:619701  | yoon-bellen neurodevelopmental syndrome                                                                                |
-| OMIM:619648  | zaki syndrome                                                                                                          |
+| subject_id    | subject_label                                                                                                          |
+|:--------------|:-----------------------------------------------------------------------------------------------------------------------|
+| OMIM:619835   | 3-methylglutaconic aciduria,  iia 7a                                                                                   |
+| OMIM:619959   | acces syndrome                                                                                                         |
+| OMIM:620015   | advance sleep phase syndrome, familial, 4                                                                              |
+| OMIM:619824   | agammaglobulinemia 8b, autosomal recessive                                                                             |
+| OMIM:619268   | alzahrani-kuwahara syndrome                                                                                            |
+| OMIM:620104   | amelogenesis imperfecta,  iia 1k                                                                                       |
+| OMIM:620285   | amyotrophic lateral sclerosis 27, juvenile                                                                             |
+| OMIM:620019   | arthrogryposis, distal,  iia 11                                                                                        |
+| OMIM:619352   | ataxia, intention tremor, and hypotonia syndrome, childhood-onset                                                      |
+| OMIM:620184   | atelis syndrome 1                                                                                                      |
+| OMIM:620185   | atelis syndrome 2                                                                                                      |
+| OMIM:619957   | attention deficit-hyperactivity disorder 8                                                                             |
+| OMIM:619832   | auditory neuropathy, autosomal dominant 3                                                                              |
+| OMIM:619339   | bartsocas-papas syndrome 2                                                                                             |
+| OMIM:619326   | bdv syndrome                                                                                                           |
+| OMIM:620076   | bent bone dysplasia syndrome 2                                                                                         |
+| OMIM:619481   | bile acid malabsorption, primary, 2                                                                                    |
+| OMIM:619534   | biliary, renal, neurologic, and skeletal syndrome                                                                      |
+| OMIM:619293   | blepharophimosis-impaired intellectual development syndrome                                                            |
+| OMIM:620207   | blood group, er                                                                                                        |
+| OMIM:620044   | bone marrow failure and diabetes mellitus syndrome                                                                     |
+| OMIM:619543   | boudin-mortier syndrome                                                                                                |
+| OMIM:619980   | braddock-carey syndrome 1                                                                                              |
+| OMIM:619981   | braddock-carey syndrome 2                                                                                              |
+| OMIM:620186   | branchial arch abnormalities, choanal atresia, athelia, hearing loss, and hypothyroidism syndrome                      |
+| OMIM:619690   | brunet-wagner neurodevelopmental syndrome                                                                              |
+| OMIM:619314   | buratti-harel syndrome                                                                                                 |
+| OMIM:620067   | cardiac valvular dysplasia 2                                                                                           |
+| OMIM:620247   | cardiomyopathy, dilated, 1oo                                                                                           |
+| OMIM:620203   | cardiomyopathy, dilated, 2h                                                                                            |
+| OMIM:620236   | cardiomyopathy, familial hypertrophic, 29, with polyglucosan bodies                                                    |
+| OMIM:619941   | carey-fineman-ziter syndrome 2                                                                                         |
+| OMIM:620253   | cataract 50 with or without glaucoma                                                                                   |
+| OMIM:619338   | cataracts, spastic paraparesis, and speech delay                                                                       |
+| OMIM:619576   | cerebellar ataxia, brain abnormalities, and cardiac conduction defects                                                 |
+| OMIM:619761   | cerebellar dysfunction, impaired intellectual development, and hypogonadotropic hypogonadism                           |
+| OMIM:619538   | cerebral cavernous malformations 4                                                                                     |
+| OMIM:620068   | charcot-marie-tooth disease, axonal,  iia 2ii                                                                          |
+| OMIM:620111   | charcot-marie-tooth disease, demyelinating,  iia 1j                                                                    |
+| OMIM:619841   | chilton-okur-chung neurodevelopmental syndrome                                                                         |
+| OMIM:620010   | cholestasis, progressive familial intrahepatic, 12                                                                     |
+| OMIM:619504   | chopra-amiel-gordon syndrome                                                                                           |
+| OMIM:619649   | chromosome 16q12 duplication syndrome                                                                                  |
+| OMIM:619343   | chromosome 1p36 deletion syndrome, proximal                                                                            |
+| OMIM:301069   | chromosome xq13 duplication syndrome                                                                                   |
+| OMIM:620032   | ciliary dyskinesia, primary, 48, without situs inversus                                                                |
+| OMIM:620197   | ciliary dyskinesia, primary, 49, without situs inversus                                                                |
+| OMIM:620099   | cleidocranial dysplasia 2                                                                                              |
+| OMIM:619743   | combined oxidative phosphorylation deficiency 55                                                                       |
+| OMIM:620139   | combined oxidative phosphorylation deficiency 56                                                                       |
+| OMIM:620167   | combined oxidative phosphorylation deficiency 57                                                                       |
+| OMIM:620200   | congenital disorder of glycosylation,  iia iiy                                                                         |
+| OMIM:620201   | congenital disorder of glycosylation,  iia iiz                                                                         |
+| OMIM:619714   | congenital disorder of glycosylation,  iia iw, autosomal dominant                                                      |
+| OMIM:619657   | congenital heart defects, multiple types, 8, with or without heterotaxy                                                |
+| OMIM:620294   | congenital heart defects, multiple types, 9                                                                            |
+| OMIM:620249   | congenital myopathy 10b, mild variant                                                                                  |
+| OMIM:619967   | congenital myopathy 11                                                                                                 |
+| OMIM:620161   | congenital myopathy 15                                                                                                 |
+| OMIM:620246   | congenital myopathy 18                                                                                                 |
+| OMIM:620265   | congenital myopathy 2b, severe infantile, autosomal recessive                                                          |
+| OMIM:620278   | congenital myopathy 2c, severe infantile, autosomal dominant                                                           |
+| OMIM:619871   | corneal dystrophy, punctiform and polychromatic pre-descemet                                                           |
+| OMIM:620156   | cortical dysplasia, complex, with other brain malformations 11                                                         |
+| OMIM:616994   | craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome 2                         |
+| OMIM:619727   | craniotubular dysplasia, ikegawa  iia                                                                                  |
+| OMIM:620227   | deafness, autosomal dominant 85                                                                                        |
+| OMIM:620280   | deafness, autosomal dominant 86                                                                                        |
+| OMIM:620281   | deafness, autosomal dominant 87                                                                                        |
+| OMIM:620283   | deafness, autosomal dominant 88                                                                                        |
+| OMIM:620284   | deafness, autosomal dominant 89                                                                                        |
+| OMIM:620238   | deafness, autosomal recessive 120                                                                                      |
+| OMIM:619354   | deafness, cataract, impaired intellectual development, and polyneuropathy                                              |
+| OMIM:619488   | degcags syndrome                                                                                                       |
+| OMIM:619613   | delayed puberty, self-limited                                                                                          |
+| OMIM:619877   | dentici-novelli neurodevelopmental syndrome                                                                            |
+| OMIM:619913   | developmental and epileptic encephalopathy 103                                                                         |
+| OMIM:619970   | developmental and epileptic encephalopathy 104                                                                         |
+| OMIM:619983   | developmental and epileptic encephalopathy 105 with hypopituitarism                                                    |
+| OMIM:620028   | developmental and epileptic encephalopathy 106                                                                         |
+| OMIM:620033   | developmental and epileptic encephalopathy 107                                                                         |
+| OMIM:620115   | developmental and epileptic encephalopathy 108                                                                         |
+| OMIM:620145   | developmental and epileptic encephalopathy 109                                                                         |
+| OMIM:620149   | developmental and epileptic encephalopathy 110                                                                         |
+| OMIM:620240   | developmental delay with hypotonia, myopathy, and brain abnormalities                                                  |
+| OMIM:619575   | developmental delay with or without intellectual impairment or behavioral abnormalities                                |
+| OMIM:620062   | developmental delay with short stature, dysmorphic facial features, and sparse hair 2                                  |
+| OMIM:620098   | developmental delay with variable intellectual disability and dysmorphic facies                                        |
+| OMIM:619694   | developmental delay with variable neurologic and brain abnormalities                                                   |
+| OMIM:620065   | developmental delay, behavioral abnormalities, and neuropsychiatric disorders                                          |
+| OMIM:620012   | developmental delay, hypotonia, and impaired language                                                                  |
+| OMIM:619595   | developmental delay, hypotonia, musculoskeletal defects, and behavioral abnormalities                                  |
+| OMIM:619475   | developmental delay, impaired speech, and behavioral abnormalities                                                     |
+| OMIM:619964   | developmental delay, impaired speech, and behavioral abnormalities, with or without seizures                           |
+| OMIM:620141   | developmental delay, language impairment, and ocular abnormalities                                                     |
+| OMIM:620072   | diamond-blackfan anemia 21                                                                                             |
+| OMIM:620025   | diaphragmatic hernia 4, with cardiovascular defects                                                                    |
+| OMIM:619955   | dworschak-punetha neurodevelopmental syndrome                                                                          |
+| OMIM:620133   | dyskeratosis congenita, autosomal recessive 8                                                                          |
+| OMIM:620040   | dyskeratosis congenita, digenic                                                                                        |
+| OMIM:619345   | dysostosis multiplex, ain-naz  iia                                                                                     |
+| OMIM:619921   | dystonia 35, childhood-onset                                                                                           |
+| OMIM:619681   | dystonia, early-onset, and/or spastic paraplegia                                                                       |
+| OMIM:619817   | epidermolysis bullosa, junctional 6, with pyloric atresia                                                              |
+| OMIM:301091   | epilepsy, X-linked 2, with or without impaired intellectual development and dysmorphic features                        |
+| OMIM:620245   | episodic kinesigenic dyskinesia 3                                                                                      |
+| OMIM:620058   | familial apolipoprotein gene cluster deletion syndrome                                                                 |
+| OMIM:620116   | fatty liver disease, protection from                                                                                   |
+| OMIM:619376   | faundes-banka syndrome                                                                                                 |
+| OMIM:619699   | ferguson-bonni neurodevelopmental syndrome                                                                             |
+| OMIM:619602   | fetal akinesia, respiratory insufficiency, microcephaly, polymicrogyria, and dysmorphic facies                         |
+| OMIM:619329   | fibromuscular dysplasia, multifocal                                                                                    |
+| OMIM:619985   | glycosylphosphatidylinositol biosynthesis defect 25                                                                    |
+| OMIM:619321   | growth restriction, hypoplastic kidneys, alopecia, and distinctive facies                                              |
+| OMIM:619462   | hemolytic disease of fetus and newborn, rh-induced                                                                     |
+| OMIM:619641   | hengel-maroofian-schols syndrome                                                                                       |
+| OMIM:619902   | hepatorenocardiac degenerative fibrosis                                                                                |
+| OMIM:619702   | heterotaxy, visceral, 12, autosomal                                                                                    |
+| OMIM:619311   | hiatt-neu-cooper neurodevelopmental syndrome                                                                           |
+| OMIM:620241   | hydrocephalus, congenital, 5, susceptibility to                                                                        |
+| OMIM:620211   | hyperinsulinemic hypoglycemia, familial, 8                                                                             |
+| OMIM:620085   | hypermetabolism due to uncoupled mitochondrial oxidative phosphorylation 2                                             |
+| OMIM:619324   | hypertriglyceridemia 2                                                                                                 |
+| OMIM:619836   | hypoalphalipoproteinemia, primary, 2, intermediate                                                                     |
+| OMIM:619406   | hypokalemic tubulopathy and deafness                                                                                   |
+| OMIM:620152   | hypomagnesemia 7, renal, with or without dilated cardiomyopathy                                                        |
+| OMIM:619545   | hypoplastic femurs and pelvis                                                                                          |
+| OMIM:620177   | hypotrichosis 15                                                                                                       |
+| OMIM:620148   | ichthyosis, annular epidermolytic, 2                                                                                   |
+| OMIM:619935   | immunodeficiency 106, susceptibility to viral infections                                                               |
+| OMIM:619986   | immunodeficiency 107, susceptibility to invasive staphylococcus aureus infection                                       |
+| OMIM:620282   | immunodeficiency 109 with lymphoproliferation                                                                          |
+| OMIM:619733   | inclusion body myopathy and brain white matter abnormalities                                                           |
+| OMIM:620199   | inflammatory poikiloderma with hair abnormalities and acral keratoses                                                  |
+| OMIM:620021   | intellectual developmental disorder with autism and dysmorphic facies                                                  |
+| OMIM:619556   | intellectual developmental disorder with hypotonia, impaired speech, and dysmorphic facies                             |
+| OMIM:619911   | intellectual developmental disorder with language impairment and early-onset dopa-responsive dystonia-parkinsonism     |
+| OMIM:620007   | intellectual developmental disorder with muscle tone abnormalities and distal skeletal defects                         |
+| OMIM:620086   | intellectual developmental disorder with ocular anomalies and distinctive facial features                              |
+| OMIM:619844   | intellectual developmental disorder with or without peripheral neuropathy                                              |
+| OMIM:301095   | intellectual developmental disorder, X-linked 110                                                                      |
+| OMIM:619927   | intellectual developmental disorder, autosomal dominant 67                                                             |
+| OMIM:619934   | intellectual developmental disorder, autosomal dominant 68                                                             |
+| OMIM:620157   | intellectual developmental disorder, autosomal dominant 70                                                             |
+| OMIM:619931   | intellectual developmental disorder, autosomal recessive 76                                                            |
+| OMIM:619988   | intellectual developmental disorder, autosomal recessive 77                                                            |
+| OMIM:620237   | intellectual developmental disorder, autosomal recessive 78                                                            |
+| OMIM:301066   | intellectual developmental disorder, x-linked, syndromic, with pigmentary mosaicism and coarse facies                  |
+| OMIM:619719   | intellectual disability and myopathy syndrome                                                                          |
+| OMIM:620045   | intestinal dysmotility syndrome                                                                                        |
+| OMIM:620121   | iron overload, susceptibility to                                                                                       |
+| OMIM:620232   | joint contractures, osteochondromas, and b-cell lymphoma                                                               |
+| OMIM:620009   | keratoderma-ichthyosis-deafness syndrome, autosomal recessive                                                          |
+| OMIM:619297   | kinsship syndrome                                                                                                      |
+| OMIM:619762   | kury-isidor syndrome                                                                                                   |
+| OMIM:620192   | lacrimoauriculodentodigital syndrome 2                                                                                 |
+| OMIM:620193   | lacrimoauriculodentodigital syndrome 3                                                                                 |
+| OMIM:619864   | leukodystrophy, childhood-onset, remitting                                                                             |
+| OMIM:619851   | leukodystrophy, hypomyelinating, 24                                                                                    |
+| OMIM:620243   | leukodystrophy, hypomyelinating, 25                                                                                    |
+| OMIM:620269   | leukodystrophy, hypomyelinating, 26, with chondrodysplasia                                                             |
+| OMIM:619991   | liver disease, severe congenital                                                                                       |
+| OMIM:619460   | luo-schoch-yamamoto syndrome                                                                                           |
+| OMIM:620014   | lymphatic malformation 12                                                                                              |
+| OMIM:620244   | lymphatic malformation 13                                                                                              |
+| OMIM:619769   | macrocephaly, neurodevelopmental delay, lymphoid hyperplasia, and persistent fetal hemoglobin                          |
+| OMIM:619977   | macular dystrophy, retinal, 4                                                                                          |
+| OMIM:619290   | mahvash disease                                                                                                        |
+| OMIM:619322   | marbach-rustad progeroid syndrome                                                                                      |
+| OMIM:619680   | marbach-schaaf neurodevelopmental syndrome                                                                             |
+| OMIM:620047   | microcephaly 29, primary, autosomal recessive                                                                          |
+| OMIM:620183   | microcephaly 30, primary, autosomal recessive                                                                          |
+| OMIM:620135   | mitochondrial complex 1 deficiency, nuclear  iia 39                                                                    |
+| OMIM:620137   | mitochondrial complex 3 deficiency, nuclear  iia 11                                                                    |
+| OMIM:619355   | mitochondrial complex 4 deficiency, nuclear  iia 22                                                                    |
+| OMIM:620275   | mitochondrial complex 4 deficiency, nuclear  iia 23                                                                    |
+| OMIM:620153   | mosaic variegated aneuploidy syndrome 4                                                                                |
+| OMIM:620189   | mosaic variegated aneuploidy syndrome 7 with inflammation and tumor predisposition                                     |
+| OMIM:619518   | muscular dystrophy, congenital hearing loss, and ovarian insufficiency syndrome                                        |
+| OMIM:620166   | muscular dystrophy, congenital, with or without seizures                                                               |
+| OMIM:620138   | myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis                    |
+| OMIM:619424   | myopathy, myofibrillar, 12, infantile-onset, with cardiomyopathy                                                       |
+| OMIM:620286   | myopathy, sarcoplasmic body                                                                                            |
+| OMIM:619468   | nephronophthisis-like nephropathy 2                                                                                    |
+| OMIM:620049   | nephrotic syndrome,  iia 26                                                                                            |
+| OMIM:619869   | neurocardiofaciodigital syndrome                                                                                       |
+| OMIM:620089   | neurodegeneration, childhood-onset, with multisystem involvement due to mitochondrial dysfunction                      |
+| OMIM:619847   | neurodegeneration, childhood-onset, with progressive microcephaly                                                      |
+| OMIM:620270   | neurodevelopmental disorder with absent speech and movement and behavioral abnormalities                               |
+| OMIM:619797   | neurodevelopmental disorder with central hypotonia and dysmorphic facies                                               |
+| OMIM:619333   | neurodevelopmental disorder with cerebellar atrophy and motor dysfunction                                              |
+| OMIM:620083   | neurodevelopmental disorder with craniofacial dysmorphism and skeletal defects                                         |
+| OMIM:619306   | neurodevelopmental disorder with dysmorphic facies and cerebellar hypoplasia                                           |
+| OMIM:620210   | neurodevelopmental disorder with dysmorphic facies and ischiopubic hypoplasia                                          |
+| OMIM:620073   | neurodevelopmental disorder with dysmorphic facies and skeletal and brain abnormalities                                |
+| OMIM:619480   | neurodevelopmental disorder with dysmorphic facies and thin corpus callosum                                            |
+| OMIM:619922   | neurodevelopmental disorder with dystonia and seizures                                                                 |
+| OMIM:619971   | neurodevelopmental disorder with epilepsy and brain atrophy                                                            |
+| OMIM:620094   | neurodevelopmental disorder with eye movement abnormalities and ataxia                                                 |
+| OMIM:620075   | neurodevelopmental disorder with facial dysmorphism, absent language, and pseudo-pelger-huet anomaly                   |
+| OMIM:301094   | neurodevelopmental disorder with gait disturbance, dysmorphic facies, and behavioral abnormalities, X-linked           |
+| OMIM:620113   | neurodevelopmental disorder with growth retardation, dysmorphic facies, and corpus callosum abnormalities              |
+| OMIM:619616   | neurodevelopmental disorder with hearing loss and spasticity                                                           |
+| OMIM:619651   | neurodevelopmental disorder with hyperkinetic movements and dyskinesia                                                 |
+| OMIM:619512   | neurodevelopmental disorder with hypotonia and brain abnormalities                                                     |
+| OMIM:619503   | neurodevelopmental disorder with hypotonia and dysmorphic facies                                                       |
+| OMIM:619639   | neurodevelopmental disorder with hypotonia and gross motor and speech delay                                            |
+| OMIM:620224   | neurodevelopmental disorder with hypotonia, dysmorphic facies, and skeletal anomalies, with or without seizures        |
+| OMIM:620191   | neurodevelopmental disorder with hypotonia, dysmorphic facies, and skin abnormalities                                  |
+| OMIM:619383   | neurodevelopmental disorder with hypotonia, facial dysmorphism, and brain abnormalities                                |
+| OMIM:619854   | neurodevelopmental disorder with hypotonia, impaired speech, and behavioral abnormalities                              |
+| OMIM:620029   | neurodevelopmental disorder with hypotonia, language delay, and skeletal defects with or without seizures              |
+| OMIM:619580   | neurodevelopmental disorder with impaired language and ataxia and with or without seizures                             |
+| OMIM:619373   | neurodevelopmental disorder with infantile epileptic spasms                                                            |
+| OMIM:619995   | neurodevelopmental disorder with intention tremor, pyramidal signs, dyspraxia, and ocular anomalies                    |
+| OMIM:620292   | neurodevelopmental disorder with language delay and behavioral abnormalities, with or without seizures                 |
+| OMIM:619908   | neurodevelopmental disorder with language delay and seizures                                                           |
+| OMIM:620066   | neurodevelopmental disorder with microcephaly, cerebral atrophy, and visual impairment                                 |
+| OMIM:620038   | neurodevelopmental disorder with microcephaly, hypotonia, and absent language                                          |
+| OMIM:619876   | neurodevelopmental disorder with microcephaly, hypotonia, nystagmus, and seizures                                      |
+| OMIM:620023   | neurodevelopmental disorder with microcephaly, movement abnormalities, and seizures                                    |
+| OMIM:619685   | neurodevelopmental disorder with microcephaly, seizures, and neonatal cholestasis                                      |
+| OMIM:620027   | neurodevelopmental disorder with microcephaly, short stature, and speech delay                                         |
+| OMIM:619470   | neurodevelopmental disorder with motor and speech delay and behavioral abnormalities                                   |
+| OMIM:619833   | neurodevelopmental disorder with neuromuscular and skeletal abnormalities                                              |
+| OMIM:619725   | neurodevelopmental disorder with or without variable movement or behavioral abnormalities                              |
+| OMIM:620242   | neurodevelopmental disorder with poor growth and behavioral abnormalities                                              |
+| OMIM:619880   | neurodevelopmental disorder with poor growth and skeletal anomalies                                                    |
+| OMIM:620194   | neurodevelopmental disorder with poor growth, large ears, and dysmorphic facies                                        |
+| OMIM:620071   | neurodevelopmental disorder with poor growth, spastic tetraplegia, and hearing loss                                    |
+| OMIM:619517   | neurodevelopmental disorder with seizures and brain abnormalities                                                      |
+| OMIM:619323   | neurodevelopmental disorder with seizures and gingival overgrowth                                                      |
+| OMIM:620024   | neurodevelopmental disorder with seizures, microcephaly, and brain abnormalities                                       |
+| OMIM:620250   | neurodevelopmental disorder with seizures, spasticity, and complete or partial agenesis of the corpus callosum         |
+| OMIM:619972   | neurodevelopmental disorder with severe motor impairment, absent language, cerebral hypomyelination, and brain atrophy |
+| OMIM:620070   | neurodevelopmental disorder with short stature, prominent forehead, and feeding difficulties                           |
+| OMIM:619286   | neurodevelopmental disorder with spasticity, cataracts, and cerebellar hypoplasia                                      |
+| OMIM:620001   | neurodevelopmental disorder with spasticity, seizures, and brain abnormalities                                         |
+| OMIM:619989   | neurodevelopmental disorder with speech delay and variable ocular anomalies                                            |
+| OMIM:620114   | neurodevelopmental disorder with speech impairment and with or without seizures                                        |
+| OMIM:619653   | neurodevelopmental disorder, nonprogressive, with spasticity and transient opisthotonus                                |
+| OMIM:619522   | neurodevelopmental-craniofacial syndrome with variable renal and cardiac abnormalities                                 |
+| OMIM:620080   | neuronopathy, distal hereditary motor,  iia 10                                                                         |
+| OMIM:619539   | neuroocular syndrome                                                                                                   |
+| OMIM:620195   | obesity and hypopigmentation                                                                                           |
+| OMIM:619318   | oculogastrointestinal neurodevelopmental syndrome                                                                      |
+| OMIM:619356   | onychodystrophy, osteodystrophy, impaired intellectual development, and seizures syndrome                              |
+| OMIM:620154   | oocyte maturation defect 13                                                                                            |
+| OMIM:620276   | oocyte maturation defect 14                                                                                            |
+| OMIM:620107   | orofaciodigital syndrome 19                                                                                            |
+| OMIM:619377   | osteootohepatoenteric syndrome                                                                                         |
+| OMIM:619884   | osteoporosis, childhood- or juvenile-onset, with developmental delay                                                   |
+| OMIM:619873   | parenti-mignot neurodevelopmental syndrome                                                                             |
+| OMIM:619491   | parkinson disease 24, autosomal dominant, susceptibility to                                                            |
+| OMIM:619903   | peripheral motor neuropathy, childhood-onset, biotin-responsive                                                        |
+| OMIM:619859   | phosphoribosylaminoimidazole carboxylase deficiency                                                                    |
+| OMIM:620056   | polycystic kidney disease 7                                                                                            |
+| OMIM:619938   | premature ovarian failure 20                                                                                           |
+| OMIM:620005   | primordial dwarfism-immunodeficiency-lipodystrophy syndrome                                                            |
+| OMIM:620125   | pseudohypoaldosteronism,  iia ib2, autosomal recessive                                                                 |
+| OMIM:620126   | pseudohypoaldosteronism,  iia ib3, autosomal recessive                                                                 |
+| OMIM:620155   | rabin-pappas syndrome                                                                                                  |
+| OMIM:619312   | radio-tartaglia syndrome                                                                                               |
+| OMIM:179300   | radioulnar synostosis, nonsyndromic, susceptibility to                                                                 |
+| OMIM:619695   | rauch-steindl syndrome                                                                                                 |
+| OMIM:620233   | respiratory infections, recurrent, and failure to thrive with or without diarrhea                                      |
+| OMIM:619446   | retinal dystrophy and microvillus inclusion disease                                                                    |
+| OMIM:620102   | retinitis pigmentosa 95                                                                                                |
+| OMIM:620228   | retinitis pigmentosa 96                                                                                                |
+| OMIM:620235   | rhabdomyolysis, susceptibility to, 1                                                                                   |
+| OMIM:180295   | rhabdomyosarcoma, embryonal, 2                                                                                         |
+| OMIM:619598   | rhizomelic dysplasia, ain-naz  iia                                                                                     |
+| OMIM:181460   | schistosoma mansoni infection, susceptibility/resistance to                                                            |
+| OMIM:620231   | short qt syndrome 7                                                                                                    |
+| OMIM:619489   | short stature, dauber-argente  iia                                                                                     |
+| OMIM:619557   | short stature, impaired intellectual development, microcephaly, hypotonia, and ocular anomalies                        |
+| OMIM:619464   | sick sinus syndrome 4                                                                                                  |
+| OMIM:620221   | spastic paraplegia 79a, autosomal dominant, with ataxia                                                                |
+| OMIM:619966   | spastic paraplegia 87, autosomal recessive                                                                             |
+| OMIM:620106   | spastic paraplegia 88, autosomal dominant                                                                              |
+| OMIM:619937   | spermatogenic failure 74                                                                                               |
+| OMIM:619949   | spermatogenic failure 75                                                                                               |
+| OMIM:620084   | spermatogenic failure 76                                                                                               |
+| OMIM:620103   | spermatogenic failure 77                                                                                               |
+| OMIM:620170   | spermatogenic failure 78                                                                                               |
+| OMIM:620196   | spermatogenic failure 79                                                                                               |
+| OMIM:620222   | spermatogenic failure 80                                                                                               |
+| OMIM:620277   | spermatogenic failure 81                                                                                               |
+| OMIM:301099   | spermatogenic failure, x-linked, 5                                                                                     |
+| OMIM:301101   | spermatogenic failure, x-linked, 6                                                                                     |
+| OMIM:620011   | spinal muscular atrophy, distal, autosomal recessive, 6                                                                |
+| OMIM:620174   | spinocerebellar ataxia 27b, late-onset                                                                                 |
+| OMIM:619806   | spinocerebellar ataxia 49                                                                                              |
+| OMIM:620158   | spinocerebellar ataxia 50                                                                                              |
+| OMIM:619862   | spinocerebellar ataxia, autosomal recessive 32                                                                         |
+| OMIM:620208   | spinocerebellar ataxia, autosomal recessive 33                                                                         |
+| OMIM:620022   | stickler syndrome,  iia 6                                                                                              |
+| OMIM:301080   | systemic lupus erythematosus 17                                                                                        |
+| OMIM:619950   | tessadori-bicknell-van haaften neurodevelopmental syndrome 3                                                           |
+| OMIM:619951   | tessadori-bicknell-van haaften neurodevelopmental syndrome 4                                                           |
+| OMIM:301071   | thrombophilia, x-linked, due to factor 8 defect                                                                        |
+| OMIM:620198   | thyroid hormone metabolism, abnormal, 3                                                                                |
+| OMIM:620173   | tooth agenesis, selective, 10                                                                                          |
+| OMIM:619975   | tumor predisposition syndrome 2                                                                                        |
+| OMIM:619467   | usmani-riazuddin syndrome, autosomal dominant                                                                          |
+| OMIM:619548   | usmani-riazuddin syndrome, autosomal recessive                                                                         |
+| OMIM:619501   | ventriculomegaly and arthrogryposis                                                                                    |
+| OMIM:619400   | visceral leiomyopathy, african degenerative                                                                            |
+| OMIM:619350   | visceral myopathy 2                                                                                                    |
+| OMIM:619472   | viss syndrome                                                                                                          |
+| OMIM:619947   | waardenburg syndrome,  iia 2f                                                                                          |
+| OMIM:619426   | white-kernohan syndrome                                                                                                |
+| OMIM:619701   | yoon-bellen neurodevelopmental syndrome                                                                                |
+| OMIM:619648   | zaki syndrome                                                                                                          |
+| OMIMPS:117000 |                                                                                                                        |
+| OMIMPS:136550 |                                                                                                                        |
+| OMIMPS:142340 |                                                                                                                        |
+| OMIMPS:146590 |                                                                                                                        |
+| OMIMPS:149730 |                                                                                                                        |
+| OMIMPS:167870 |                                                                                                                        |
+| OMIMPS:212093 |                                                                                                                        |
+| OMIMPS:213980 |                                                                                                                        |
+| OMIMPS:226400 |                                                                                                                        |
+| OMIMPS:232200 |                                                                                                                        |
+| OMIMPS:254940 |                                                                                                                        |
+| OMIMPS:256550 |                                                                                                                        |
+| OMIMPS:267750 |                                                                                                                        |
+| OMIMPS:300491 |                                                                                                                        |
+| OMIMPS:601457 |                                                                                                                        |
+| OMIMPS:607602 |                                                                                                                        |
+| OMIMPS:614592 |                                                                                                                        |
+| OMIMPS:616901 |                                                                                                                        |
+| OMIMPS:619980 |                                                                                                                        |
+| OMIMPS:620184 |                                                                                                                        |

@@ -423,6 +423,7 @@
 | MONDO:0017995 | Orphanet:329252 | MONDO:equivalentObsolete |
 | MONDO:0017996 | Orphanet:329255 | MONDO:equivalentObsolete |
 | MONDO:0018003 | Orphanet:329341 | MONDO:equivalentObsolete |
+| MONDO:0018046 | Orphanet:3323   | MONDO:equivalentObsolete |
 | MONDO:0018070 | Orphanet:338    | MONDO:equivalentObsolete |
 | MONDO:0018100 | Orphanet:34526  | MONDO:equivalentObsolete |
 | MONDO:0018101 | Orphanet:34527  | MONDO:equivalentObsolete |

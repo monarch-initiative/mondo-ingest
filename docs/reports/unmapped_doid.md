@@ -303,6 +303,7 @@
 | DOID:0111721 | amelogenesis imperfecta type 3                                                                                                |
 | DOID:0060204 | amyotrophic lateral sclerosis type 13                                                                                         |
 | DOID:0111246 | amyotrophic lateral sclerosis-parkinsonism/dementia complex 1                                                                 |
+| DOID:873     | anaerobic pneumonia                                                                                                           |
 | DOID:5889    | anaplastic ependymoma                                                                                                         |
 | DOID:7154    | anaplastic oligodendroglioma                                                                                                  |
 | DOID:0080854 | anaplastic pleomorphic xanthoastrocytoma                                                                                      |
@@ -346,7 +347,6 @@
 | DOID:0080720 | autosomal dominant congenital deafness with onychodystrophy                                                                   |
 | DOID:0080807 | autosomal dominant craniodiaphyseal dysplasia                                                                                 |
 | DOID:0080801 | autosomal dominant craniometaphyseal dysplasia                                                                                |
-| DOID:0070136 | autosomal dominant cutis laxa 2                                                                                               |
 | DOID:0070020 | autosomal dominant dyskeratosis congenita 4                                                                                   |
 | DOID:0080682 | autosomal dominant familial visceral neuropathy                                                                               |
 | DOID:0111269 | autosomal dominant hyaline body myopathy                                                                                      |
@@ -365,6 +365,7 @@
 | DOID:0111864 | autosomal recessive congenital bilateral absence of vas deferens                                                              |
 | DOID:0111797 | autosomal recessive congenital nystagmus                                                                                      |
 | DOID:0080802 | autosomal recessive craniometaphyseal dysplasia                                                                               |
+| DOID:0070141 | autosomal recessive cutis laxa type II classic type                                                                           |
 | DOID:0081177 | autosomal recessive intellectual developmental disorder 1                                                                     |
 | DOID:0081185 | autosomal recessive intellectual developmental disorder 10/20                                                                 |
 | DOID:0081186 | autosomal recessive intellectual developmental disorder 11                                                                    |
@@ -441,6 +442,7 @@
 | DOID:0081118 | benign familial infantile seizures 5                                                                                          |
 | DOID:0081119 | benign familial infantile seizures 6                                                                                          |
 | DOID:0081026 | benign peritoneal solitary fibrous tumor                                                                                      |
+| DOID:5157    | benign pleural mesothelioma                                                                                                   |
 | DOID:0080602 | benign teratoma                                                                                                               |
 | DOID:60006   | benign vascular tumor                                                                                                         |
 | DOID:0080772 | beta-thalassemia intermedia                                                                                                   |

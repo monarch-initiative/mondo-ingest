@@ -5594,6 +5594,8 @@
 | NCIT:C23084  | Lymphoproliferative Neoplasms of the Mouse Pharynx                                                                                                                          |
 | NCIT:C23148  | Lymphoproliferative Neoplasms of the Mouse Salivary Glands                                                                                                                  |
 | NCIT:C26960  | Lymphosarcoma Involving Spleen                                                                                                                                              |
+| NCIT:C6725   | Lynch 1 Syndrome                                                                                                                                                            |
+| NCIT:C6726   | Lynch 2 Syndrome                                                                                                                                                            |
 | NCIT:C188259 | MAFA Related Familial Insulinomatosis                                                                                                                                       |
 | NCIT:C21881  | MAIDS                                                                                                                                                                       |
 | NCIT:C148394 | MCD Diffuse Large B-Cell Lymphoma                                                                                                                                           |
@@ -9842,6 +9844,7 @@
 | NCIT:C8658   | Refractory Anaplastic Large Cell Lymphoma                                                                                                                                   |
 | NCIT:C169074 | Refractory Anaplastic Oligodendroglioma                                                                                                                                     |
 | NCIT:C160905 | Refractory Anaplastic Pleomorphic Xanthoastrocytoma                                                                                                                         |
+| NCIT:C2872   | Refractory Anemia                                                                                                                                                           |
 | NCIT:C8671   | Refractory Angioimmunoblastic T-Cell Lymphoma                                                                                                                               |
 | NCIT:C179178 | Refractory Appendix Adenocarcinoma                                                                                                                                          |
 | NCIT:C179177 | Refractory Appendix Carcinoma                                                                                                                                               |
