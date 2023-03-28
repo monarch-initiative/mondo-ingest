@@ -437,7 +437,6 @@ slurp/:
 # min-id: the next available Mondo ID
 # todo: `pip install` stuff is temporarily here until we come up with a fix. otherwise docker won't work
 slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
-#	pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
 	python3 $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
