@@ -297,6 +297,7 @@ documentation: j2 $(ALL_DOCS) mapping-progress-report
 
 build-mondo-ingest:
 	$(MAKE) refresh-imports
+	$(MAKE) recreate-components
 	$(MAKE) exclusions-all
 	$(MAKE) slurp-all
 	$(MAKE) mappings
@@ -305,6 +306,16 @@ build-mondo-ingest:
 	$(MAKE) mapping-progress-report
 	$(MAKE) documentation
 	$(MAKE) prepare_release
+
+build-mondo-ingest-no-imports:
+	$(MAKE_FAST) exclusions-all
+	$(MAKE_FAST) slurp-all
+	$(MAKE_FAST) mappings
+	$(MAKE_FAST) matches
+	$(MAKE_FAST) mapped-deprecated-terms
+	$(MAKE_FAST) mapping-progress-report
+	$(MAKE_FAST) documentation
+	$(MAKE_FAST) prepare_release
 
 DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
 
