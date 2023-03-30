@@ -1,5 +1,6 @@
 subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
+MONDO:0000001	disease	NCIT:C2991	MONDO:equivalentTo	Disease or Disorder	semapv:UnspecifiedMatching					
 MONDO:0000371	oral cavity carcinoma in situ	NCIT:C4587	MONDO:equivalentTo	Stage 0 Oral Cavity Cancer AJCC v6 and v7	semapv:UnspecifiedMatching					
 MONDO:0000372	pharynx carcinoma in situ	NCIT:C4942	MONDO:equivalentTo	Stage 0 Pharyngeal Cancer	semapv:UnspecifiedMatching					
 MONDO:0000384	bladder benign neoplasm	NCIT:C3618	MONDO:equivalentTo	Benign Bladder Neoplasm	semapv:UnspecifiedMatching					
@@ -913,6 +914,7 @@ MONDO:0007266	hypertrophic cardiomyopathy 2	NCIT:C142892	MONDO:equivalentTo	Fami
 MONDO:0007268	hypertrophic cardiomyopathy 4	NCIT:C133725	MONDO:equivalentTo	Familial Hypertrophic Cardiomyopathy Type 4	semapv:UnspecifiedMatching					
 MONDO:0007308	Charcot-Marie-Tooth disease type 2A1	NCIT:C134952	MONDO:equivalentTo	Charcot-Marie-Tooth Disease Type 2A	semapv:UnspecifiedMatching					
 MONDO:0007345	aorta coarctation	NCIT:C84567	MONDO:equivalentTo	Aortic Coarctation	semapv:UnspecifiedMatching					
+MONDO:0007356	Lynch syndrome 1	NCIT:C6725	MONDO:equivalentTo	Lynch 1 Syndrome	semapv:UnspecifiedMatching					
 MONDO:0007416	Balkan nephropathy	NCIT:C123025	MONDO:equivalentTo	Aristolochic Acid Nephropathy	semapv:UnspecifiedMatching					
 MONDO:0007452	maturity-onset diabetes of the young type 1	NCIT:C129744	MONDO:equivalentTo	Hepatocyte Nuclear Factor 4-Alpha Associated Monogenic Diabetes	semapv:UnspecifiedMatching					
 MONDO:0007453	maturity-onset diabetes of the young type 2	NCIT:C129741	MONDO:equivalentTo	Glucokinase-Associated Diabetes Mellitus	semapv:UnspecifiedMatching					
@@ -924,7 +926,7 @@ MONDO:0007566	multiple self-healing squamous epithelioma	NCIT:C4461	MONDO:equiva
 MONDO:0007576	esophageal cancer	NCIT:C7478	MONDO:equivalentTo	Malignant Esophageal Neoplasm	semapv:UnspecifiedMatching					
 MONDO:0007608	desmoid tumor	NCIT:C9182	MONDO:equivalentTo	Desmoid Fibromatosis	semapv:UnspecifiedMatching					
 MONDO:0007648	hereditary diffuse gastric adenocarcinoma	NCIT:C43295	MONDO:equivalentTo	Hereditary Gastric Diffuse Adenocarcinoma	semapv:UnspecifiedMatching					
-MONDO:0007665	glaucoma 1, open angle, E	NCIT:C35394	MONDO:equivalentTo	Primary Open Angle Glaucoma	semapv:UnspecifiedMatching					
+MONDO:0007665	obsolete glaucoma 1, open angle, E	NCIT:C35394	MONDO:equivalentTo	Primary Open Angle Glaucoma	semapv:UnspecifiedMatching					
 MONDO:0007672	glomuvenous malformation	NCIT:C5350	MONDO:equivalentTo	Hereditary Glomangioma	semapv:UnspecifiedMatching					
 MONDO:0007708	Kasabach-Merritt syndrome	NCIT:C3821	MONDO:equivalentTo	Hemangiomatosis with Thrombocytopenia	semapv:UnspecifiedMatching					
 MONDO:0007727	autosomal dominant familial periodic fever	NCIT:C119051	MONDO:equivalentTo	Tumor Necrosis Factor Receptor 1-Associated Periodic Syndrome	semapv:UnspecifiedMatching					
@@ -944,7 +946,6 @@ MONDO:0008185	hereditary chronic pancreatitis	NCIT:C95436	MONDO:equivalentTo	Her
 MONDO:0008189	papillomatosis, florid, of nipple	NCIT:C4383	MONDO:equivalentTo	Erosive Nipple Adenomatosis	semapv:UnspecifiedMatching					
 MONDO:0008277	stomach polyp	NCIT:C3954	MONDO:equivalentTo	Gastric Polyp	semapv:UnspecifiedMatching					
 MONDO:0008315	prostate cancer	NCIT:C7378	MONDO:equivalentTo	Malignant Prostate Neoplasm	semapv:UnspecifiedMatching					
-MONDO:0008332	pseudo-von Willebrand disease	NCIT:C131681	MONDO:equivalentTo	Platelet-Type von Willebrand Disease	semapv:UnspecifiedMatching					
 MONDO:0008340	ptosis, hereditary congenital, 1	NCIT:C27049	MONDO:equivalentTo	Congenital Eyelid Ptosis	semapv:UnspecifiedMatching					
 MONDO:0008343	pulmonary atresia with ventricular septal defect	NCIT:C99033	MONDO:equivalentTo	Pulmonary Valve Atresia with Ventricular Septal Defect	semapv:UnspecifiedMatching					
 MONDO:0008364	Raynaud disease	NCIT:C116359	MONDO:equivalentTo	Secondary Raynaud Phenomenon	semapv:UnspecifiedMatching					
@@ -1051,6 +1052,7 @@ MONDO:0012089	ichthyosis prematurity syndrome	NCIT:C62590	MONDO:equivalentTo	Idi
 MONDO:0012105	granulomatosis with polyangiitis	NCIT:C123111	MONDO:equivalentTo	Pauci-Immune Glomerulonephritis associated with Granulomatosis with Polyangiitis	semapv:UnspecifiedMatching					
 MONDO:0012126	familial avascular necrosis of femoral head	NCIT:C35480	MONDO:equivalentTo	Aseptic Necrosis of Femoral Head	semapv:UnspecifiedMatching					
 MONDO:0012248	autosomal recessive limb-girdle muscular dystrophy type 2K	NCIT:C133730	MONDO:equivalentTo	Muscular Dystrophy-Dystroglycanopathy (Limb-Girdle) Type C, 1	semapv:UnspecifiedMatching					
+MONDO:0012249	Lynch syndrome 2	NCIT:C6726	MONDO:equivalentTo	Lynch 2 Syndrome	semapv:UnspecifiedMatching					
 MONDO:0012392	2-methylbutyryl-CoA dehydrogenase deficiency	NCIT:C98863	MONDO:equivalentTo	Butyryl-CoA Dehydrogenase Deficiency	semapv:UnspecifiedMatching					
 MONDO:0012396	exercise-induced hyperinsulinism	NCIT:C131839	MONDO:equivalentTo	Monocarboxylate Transporter 1 Hyperinsulinism	semapv:UnspecifiedMatching					
 MONDO:0012456	congenital primary aphakia	NCIT:C35172	MONDO:equivalentTo	Congenital Aphakia	semapv:UnspecifiedMatching					
@@ -1572,7 +1574,9 @@ MONDO:0100505	food dermatitis	NCIT:C34534	MONDO:equivalentTo	Dermatitis due to F
 MONDO:0100514	familial ovarian carcinoma	NCIT:C36102	MONDO:equivalentTo	Hereditary Ovarian Carcinoma	semapv:UnspecifiedMatching					
 MONDO:0200000	uterine ligament adenosarcoma	NCIT:C102570	MONDO:equivalentTo	Broad Ligament Adenosarcoma	semapv:UnspecifiedMatching					
 MONDO:0600029	restrictive pulmonary disease	NCIT:C91762	MONDO:equivalentTo	Restrictive Lung Disease	semapv:UnspecifiedMatching					
+MONDO:0700048	hand-foot syndrome	NCIT:C27177	MONDO:equivalentTo	Palmar-Plantar Erythrodysthesia	semapv:UnspecifiedMatching					
 MONDO:0700051	liver abscess (disease)	NCIT:C99089	MONDO:equivalentTo	Liver Abscess	semapv:UnspecifiedMatching					
 MONDO:0700092	neurodevelopmental disorder	NCIT:C1535926	MONDO:equivalentTo		semapv:UnspecifiedMatching					
+MONDO:0700219	neoplastic meningitis	NCIT:C3814	MONDO:equivalentTo	Metastatic Malignant Neoplasm in the Leptomeninges	semapv:UnspecifiedMatching					
 MONDO:0800026	central hypoventilation syndrome, congenital, 1, with or without Hirschsprung disease	NCIT:C98889	MONDO:equivalentTo	Congenital Central Hypoventilation	semapv:UnspecifiedMatching					
 MONDO:0800029	interstitial lung disease 2	NCIT:C35716	MONDO:equivalentTo	Idiopathic Pulmonary Fibrosis	semapv:UnspecifiedMatching					

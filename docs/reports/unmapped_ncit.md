@@ -5,20 +5,15 @@
 | NCIT:C131086 | 17-Alpha-Hydroxylase/17,20 Lyase Deficiency                                                                                                                                 |
 | NCIT:C75470  | 17q21 Microdeletion Syndrome                                                                                                                                                |
 | NCIT:C75478  | 22q Telomere Deletion Syndrome                                                                                                                                              |
-| NCIT:C173146 | 3-Methylglutaconic Aciduria Type 5                                                                                                                                          |
 | NCIT:C127172 | 46,XX Ovotesticular Difference of Sex Development                                                                                                                           |
-| NCIT:C179867 | 46,XX Sex Reversal 1                                                                                                                                                        |
 | NCIT:C127174 | 46,XX/46,XY Ovotesticular Differences of Sex Development                                                                                                                    |
 | NCIT:C120194 | 46,XY Disorder of Androgen Action                                                                                                                                           |
 | NCIT:C127173 | 46,XY Ovotesticular Differences of Sex Development                                                                                                                          |
-| NCIT:C128188 | 46,XY Sex Reversal 1                                                                                                                                                        |
-| NCIT:C185635 | 49,XXXXY Syndrome                                                                                                                                                           |
 | NCIT:C84524  | 5' 10' Methylenetetrahydrofolate Reductase Deficiency                                                                                                                       |
 | NCIT:C123164 | A1 Hydronephrosis                                                                                                                                                           |
 | NCIT:C123165 | A2/3 Hydronephrosis                                                                                                                                                         |
 | NCIT:C187447 | A53 Diffuse Large B-Cell Lymphoma                                                                                                                                           |
 | NCIT:C106273 | ABO Hemolytic Disease of the Newborn                                                                                                                                        |
-| NCIT:C158962 | AH Amyloidosis                                                                                                                                                              |
 | NCIT:C158964 | AHL Amyloidosis                                                                                                                                                             |
 | NCIT:C4988   | AIDS Associated Opportunistic Infection                                                                                                                                     |
 | NCIT:C3715   | AIDS Encephalopathy                                                                                                                                                         |
@@ -66,7 +61,6 @@
 | NCIT:C9420   | AJCC Grade 2 Sarcoma                                                                                                                                                        |
 | NCIT:C9421   | AJCC Grade 3 Sarcoma                                                                                                                                                        |
 | NCIT:C9422   | AJCC Grade 4 Sarcoma                                                                                                                                                        |
-| NCIT:C158963 | AL Amyloidosis                                                                                                                                                              |
 | NCIT:C185246 | AMeD Syndrome                                                                                                                                                               |
 | NCIT:C78597  | APL Differentiation Syndrome                                                                                                                                                |
 | NCIT:C162770 | ASPH-Positive Head and Neck Squamous Cell Carcinoma                                                                                                                         |
@@ -94,7 +88,6 @@
 | NCIT:C7371   | Accessory Urethral Gland Carcinoma                                                                                                                                          |
 | NCIT:C4378   | Accessory Urethral Gland Neoplasm                                                                                                                                           |
 | NCIT:C124493 | Acephalostomia                                                                                                                                                              |
-| NCIT:C168757 | Achromatopsia 2                                                                                                                                                             |
 | NCIT:C45929  | Acidophil Stem Cell Pituitary Neuroendocrine Tumor                                                                                                                          |
 | NCIT:C21773  | Acinar Adenocarcinoma of the Mouse Pulmonary System                                                                                                                         |
 | NCIT:C63909  | Acinar Cell Adenocarcinoma of the Rat Pancreas                                                                                                                              |
@@ -111,16 +104,12 @@
 | NCIT:C101191 | Acquired Bilateral Cataracts                                                                                                                                                |
 | NCIT:C98802  | Acquired Cataract                                                                                                                                                           |
 | NCIT:C120442 | Acquired Central Hypothyroidism                                                                                                                                             |
-| NCIT:C157718 | Acquired Cystic Disease-Associated Renal Cell Carcinoma                                                                                                                     |
 | NCIT:C122426 | Acquired Cytomegaloviral Infection                                                                                                                                          |
 | NCIT:C34856  | Acquired Deformity of Nose                                                                                                                                                  |
 | NCIT:C116902 | Acquired Facial Nerve Palsy                                                                                                                                                 |
 | NCIT:C131621 | Acquired Factor I Deficiency                                                                                                                                                |
 | NCIT:C131623 | Acquired Factor III Deficiency                                                                                                                                              |
 | NCIT:C35440  | Acquired Factor IX Deficiency                                                                                                                                               |
-| NCIT:C131624 | Acquired Factor V Deficiency                                                                                                                                                |
-| NCIT:C131625 | Acquired Factor VII Deficiency                                                                                                                                              |
-| NCIT:C131627 | Acquired Factor XI Deficiency                                                                                                                                               |
 | NCIT:C131628 | Acquired Factor XII Deficiency                                                                                                                                              |
 | NCIT:C78299  | Acquired Feminization                                                                                                                                                       |
 | NCIT:C35227  | Acquired Hallux Valgus                                                                                                                                                      |
@@ -145,7 +134,6 @@
 | NCIT:C54659  | Acral Nevus                                                                                                                                                                 |
 | NCIT:C179298 | Acromesomelic Dysplasia, PRKG2 Type                                                                                                                                         |
 | NCIT:C35810  | Acroparesthesia Syndrome                                                                                                                                                    |
-| NCIT:C183562 | Actinic Cheilitis                                                                                                                                                           |
 | NCIT:C34349  | Actinomycetoma                                                                                                                                                              |
 | NCIT:C27100  | Actinomycotic Cerebral Abscess                                                                                                                                              |
 | NCIT:C7923   | Active Peptic Ulcer                                                                                                                                                         |
@@ -725,7 +713,6 @@
 | NCIT:C3851   | Aggravated Malignant Neoplasm                                                                                                                                               |
 | NCIT:C3846   | Aggravated Neurofibromatosis                                                                                                                                                |
 | NCIT:C8492   | Aggressive Adult Non-Hodgkin Lymphoma                                                                                                                                       |
-| NCIT:C178541 | Aggressive B-Cell Non-Hodgkin Lymphoma                                                                                                                                      |
 | NCIT:C9244   | Aggressive Non-Hodgkin Lymphoma                                                                                                                                             |
 | NCIT:C66796  | Aggressive Osteoblastoma                                                                                                                                                    |
 | NCIT:C22963  | Aggressive Osteoblastoma of the Mouse Skeletal System                                                                                                                       |
@@ -735,9 +722,6 @@
 | NCIT:C178547 | Aggressive T-Cell Non-Hodgkin Lymphoma                                                                                                                                      |
 | NCIT:C171576 | Aggressive Variant Prostate Carcinoma                                                                                                                                       |
 | NCIT:C34363  | Agoraphobia without a History of Panic Disorder                                                                                                                             |
-| NCIT:C165501 | Aicardi-Goutieres Syndrome 1                                                                                                                                                |
-| NCIT:C165673 | Aicardi-Goutieres Syndrome 2                                                                                                                                                |
-| NCIT:C168585 | Aicardi-Goutieres Syndrome 7                                                                                                                                                |
 | NCIT:C50455  | Air Embolism                                                                                                                                                                |
 | NCIT:C28622  | Airway Epithelial Hyperplasia of the Mouse Pulmonary System                                                                                                                 |
 | NCIT:C99086  | Airway Infantile Hemangioma                                                                                                                                                 |
@@ -901,7 +885,6 @@
 | NCIT:C22943  | Angiofibroma of the Mouse Blood Vessel, NOS                                                                                                                                 |
 | NCIT:C23082  | Angiofibroma of the Mouse Pharynx                                                                                                                                           |
 | NCIT:C141294 | Angioimmunoblastic T-Cell Lymphoma by Ann Arbor Stage                                                                                                                       |
-| NCIT:C2874   | Angiokeratoma                                                                                                                                                               |
 | NCIT:C22938  | Angiokeratoma of the Mouse Blood Vessel                                                                                                                                     |
 | NCIT:C22031  | Angiolipoma of the Mouse Nervous System                                                                                                                                     |
 | NCIT:C49016  | Angiomyofibroblastoma                                                                                                                                                       |
@@ -1157,7 +1140,6 @@
 | NCIT:C112209 | Anticonvulsant Hypersensitivity Syndrome                                                                                                                                    |
 | NCIT:C123125 | Antimicrobial - Induced Nephropathy                                                                                                                                         |
 | NCIT:C98815  | Antithrombin III Deficiency                                                                                                                                                 |
-| NCIT:C178415 | Antley-Bixler Syndrome with Genital Anomalies and Disordered Steroidogenesis                                                                                                |
 | NCIT:C34867  | Anxiety Disorder Due to a General Medical Condition                                                                                                                         |
 | NCIT:C50461  | Aortic Dissection                                                                                                                                                           |
 | NCIT:C50861  | Aortic Valve Regurgitation                                                                                                                                                  |
@@ -1199,8 +1181,6 @@
 | NCIT:C43565  | Appendix Tubular Carcinoid                                                                                                                                                  |
 | NCIT:C43547  | Appendix Tubulovillous Adenoma                                                                                                                                              |
 | NCIT:C43556  | Appendix Undifferentiated Carcinoma                                                                                                                                         |
-| NCIT:C180557 | Apraxia                                                                                                                                                                     |
-| NCIT:C98824  | Aprosencephaly                                                                                                                                                              |
 | NCIT:C27775  | Aromatic Dyes-Related Malignant Neoplasm                                                                                                                                    |
 | NCIT:C178417 | Arrhythmia-Induced Cardiomyopathy                                                                                                                                           |
 | NCIT:C165475 | Arsenical Keratosis                                                                                                                                                         |
@@ -1257,7 +1237,6 @@
 | NCIT:C155996 | Ataxia with Isolated Vitamin E Deficiency                                                                                                                                   |
 | NCIT:C173401 | Ataxia-Oculomotor Apraxia Type 1                                                                                                                                            |
 | NCIT:C173403 | Ataxia-Oculomotor Apraxia Type 3                                                                                                                                            |
-| NCIT:C176909 | Ataxia-Pancytopenia Syndrome                                                                                                                                                |
 | NCIT:C2888   | Atelectasis                                                                                                                                                                 |
 | NCIT:C3485   | Atonic Epilepsy                                                                                                                                                             |
 | NCIT:C34987  | Atopic Rhinitis                                                                                                                                                             |
@@ -1303,18 +1282,13 @@
 | NCIT:C98829  | Autosomal Dominant Disorder                                                                                                                                                 |
 | NCIT:C129730 | Autosomal Dominant Hypoparathyroidism                                                                                                                                       |
 | NCIT:C129736 | Autosomal Dominant Neurohypophyseal Diabetes Insipidus                                                                                                                      |
-| NCIT:C129732 | Autosomal Dominant Osteopetrosis                                                                                                                                            |
 | NCIT:C123167 | Autosomal Dominant Polycystic Kidney Disease Type I                                                                                                                         |
-| NCIT:C166155 | Autosomal Dominant Severe Congenital Neutropenia                                                                                                                            |
 | NCIT:C118780 | Autosomal Dominant Torsion Dystonia 1                                                                                                                                       |
 | NCIT:C176822 | Autosomal Recessive Agammaglobulinemia                                                                                                                                      |
 | NCIT:C154314 | Autosomal Recessive Cytochrome B-Positive Chronic Granulomatous Disease Type I                                                                                              |
 | NCIT:C85866  | Autosomal Recessive Disorder                                                                                                                                                |
 | NCIT:C129731 | Autosomal Recessive Hypoparathyroidism                                                                                                                                      |
-| NCIT:C181000 | Autosomal Recessive Limb-Girdle Muscular Dystrophy Type 2Y                                                                                                                  |
 | NCIT:C180849 | Autosomal Recessive Limb-Girdle Muscular Dystrophy-4                                                                                                                        |
-| NCIT:C167215 | Autosomal Recessive Osteopetrosis 1                                                                                                                                         |
-| NCIT:C176624 | Autosomal Recessive Severe Congenital Neutropenia                                                                                                                           |
 | NCIT:C154614 | Autosomal Recessive Spastic Ataxia of Charlevoix-Saguenay                                                                                                                   |
 | NCIT:C177252 | Autosomal Recessive Spastic Ataxia-2                                                                                                                                        |
 | NCIT:C35447  | Avascular Necrosis of Femoral Head                                                                                                                                          |
@@ -1385,7 +1359,6 @@
 | NCIT:C171267 | Bare Lymphocyte Syndrome Type 1                                                                                                                                             |
 | NCIT:C171268 | Bare Lymphocyte Syndrome Type 2                                                                                                                                             |
 | NCIT:C128241 | Bartholin Gland Hyperplasia                                                                                                                                                 |
-| NCIT:C168990 | Bartsocas-Papas Syndrome                                                                                                                                                    |
 | NCIT:C178412 | Bartter Syndrome, Type 1                                                                                                                                                    |
 | NCIT:C23133  | Basal Cell Adenoma of the Mouse Salivary Glands                                                                                                                             |
 | NCIT:C39757  | Basal Cell Ameloblastoma                                                                                                                                                    |
@@ -1405,7 +1378,6 @@
 | NCIT:C172308 | Bee Venom Allergy                                                                                                                                                           |
 | NCIT:C35470  | Behavioral Disorder                                                                                                                                                         |
 | NCIT:C116361 | Behavioral Insomnia of Childhood                                                                                                                                            |
-| NCIT:C177251 | Behr Syndrome                                                                                                                                                               |
 | NCIT:C4532   | Benign Accessory Urethral Gland Neoplasm                                                                                                                                    |
 | NCIT:C9004   | Benign Adrenal Cortical Neoplasm                                                                                                                                            |
 | NCIT:C5116   | Benign Adult Brain Neoplasm                                                                                                                                                 |
@@ -1589,7 +1561,6 @@
 | NCIT:C172707 | Beta-Catenin-Activated Inflammatory Hepatocellular Adenoma                                                                                                                  |
 | NCIT:C84597  | Beta-Methylcrotonylglycinuria                                                                                                                                               |
 | NCIT:C128803 | Bicuspid Aortic Valve                                                                                                                                                       |
-| NCIT:C179299 | Bietti Crystalline Corneoretinal Dystrophy                                                                                                                                  |
 | NCIT:C101187 | Bilateral Anophthalmos                                                                                                                                                      |
 | NCIT:C8500   | Bilateral Carcinoma                                                                                                                                                         |
 | NCIT:C101193 | Bilateral Cataracts                                                                                                                                                         |
@@ -1665,7 +1636,6 @@
 | NCIT:C188318 | Blast Phase Primary Myelofibrosis                                                                                                                                           |
 | NCIT:C35817  | Blastic Granulocytic Sarcoma                                                                                                                                                |
 | NCIT:C7229   | Blastoid Variant Mantle Cell Lymphoma                                                                                                                                       |
-| NCIT:C34428  | Blastomycosis                                                                                                                                                               |
 | NCIT:C27320  | Blennorrhagic Arthritis                                                                                                                                                     |
 | NCIT:C150407 | Body Cavity Primary Effusion Lymphoma                                                                                                                                       |
 | NCIT:C136610 | Bone Cancer by AJCC v7 Stage                                                                                                                                                |
@@ -1684,7 +1654,6 @@
 | NCIT:C188064 | Bone Malignant Peripheral Nerve Sheath Tumor                                                                                                                                |
 | NCIT:C110960 | Bone Marrow Aplasia                                                                                                                                                         |
 | NCIT:C80693  | Bone Marrow Failure                                                                                                                                                         |
-| NCIT:C165614 | Bone Marrow Failure Syndrome                                                                                                                                                |
 | NCIT:C2905   | Bone Marrow Hyperplasia                                                                                                                                                     |
 | NCIT:C74440  | Bone Marrow Suppression                                                                                                                                                     |
 | NCIT:C5110   | Bone Marrow Transplantation Nephropathy                                                                                                                                     |
@@ -1859,11 +1828,11 @@
 | NCIT:C45602  | Bronchial Mixed Squamous Cell and Glandular Papilloma                                                                                                                       |
 | NCIT:C45573  | Bronchial Squamous Cell Papilloma                                                                                                                                           |
 | NCIT:C183045 | Bronchiolar Adenoma/Ciliated Muconodular Papillary Tumor                                                                                                                    |
+| NCIT:C62580  | Bronchiolitis Obliterans                                                                                                                                                    |
 | NCIT:C184957 | Bronchiolitis Obliterans Syndrome                                                                                                                                           |
 | NCIT:C35327  | Broncho-Esophageal Fistula                                                                                                                                                  |
 | NCIT:C98847  | Bronchomalacia                                                                                                                                                              |
 | NCIT:C80694  | Bronchopleural Fistula                                                                                                                                                      |
-| NCIT:C183529 | Brown-Vialetto-Van Laere Syndrome 2                                                                                                                                         |
 | NCIT:C135565 | Brunner's Gland Hyperplasia                                                                                                                                                 |
 | NCIT:C8175   | Buccal Mucosa Verrucous Carcinoma                                                                                                                                           |
 | NCIT:C134943 | Budgerigar Fibrosarcoma                                                                                                                                                     |
@@ -1917,7 +1886,6 @@
 | NCIT:C35386  | Cannabis Dependence, Continuous Use                                                                                                                                         |
 | NCIT:C35387  | Cannabis Dependence, Episodic Use                                                                                                                                           |
 | NCIT:C22932  | Capillary Hemangioma of the Mouse Blood Vessel                                                                                                                              |
-| NCIT:C179668 | Capillary Malformation-Arteriovenous Malformation Syndrome                                                                                                                  |
 | NCIT:C132290 | Carbonic Anhydrase I Deficiency                                                                                                                                             |
 | NCIT:C65196  | Carcinoid Tumor of Uncertain Malignant Potential                                                                                                                            |
 | NCIT:C23124  | Carcinoid Tumor of the Mouse Larynx                                                                                                                                         |
@@ -1952,6 +1920,7 @@
 | NCIT:C45757  | Cardiac Biphasic Synovial Sarcoma                                                                                                                                           |
 | NCIT:C45751  | Cardiac Capillary Hemangioma                                                                                                                                                |
 | NCIT:C45750  | Cardiac Cavernous Hemangioma                                                                                                                                                |
+| NCIT:C78245  | Cardiac Conduction Disorder                                                                                                                                                 |
 | NCIT:C183146 | Cardiac Diffuse Large B-Cell Lymphoma                                                                                                                                       |
 | NCIT:C5362   | Cardiac Epithelioid Hemangioendothelioma                                                                                                                                    |
 | NCIT:C147003 | Cardiac Extraskeletal Osteosarcoma                                                                                                                                          |
@@ -1973,10 +1942,8 @@
 | NCIT:C147007 | Cardiac Teratoma                                                                                                                                                            |
 | NCIT:C45755  | Cardiac Undifferentiated Pleomorphic Sarcoma                                                                                                                                |
 | NCIT:C147006 | Cardiac Yolk Sac Tumor                                                                                                                                                      |
-| NCIT:C179868 | Cardiac, Facial, and Digital Anomalies with Developmental Delay                                                                                                             |
 | NCIT:C61453  | Cardiomegaly                                                                                                                                                                |
 | NCIT:C34462  | Cardiomyopathy in Chagas' Disease                                                                                                                                           |
-| NCIT:C188216 | Cardiospondylocarpofacial Syndrome                                                                                                                                          |
 | NCIT:C168128 | Carditis                                                                                                                                                                    |
 | NCIT:C23118  | Cartilage/Bone Neoplasms of the Mouse Larynx                                                                                                                                |
 | NCIT:C40424  | Cartilaginous Hamartoma                                                                                                                                                     |
@@ -2073,7 +2040,6 @@
 | NCIT:C66803  | Cerebellar Sarcoma                                                                                                                                                          |
 | NCIT:C27030  | Cerebral Abscess                                                                                                                                                            |
 | NCIT:C142852 | Cerebral Adrenoleukodystrophy                                                                                                                                               |
-| NCIT:C157147 | Cerebral Amyloid Angiopathy, APP-Related                                                                                                                                    |
 | NCIT:C173468 | Cerebral Creatine Deficiency Syndrome 2                                                                                                                                     |
 | NCIT:C5151   | Cerebral Glioblastoma                                                                                                                                                       |
 | NCIT:C155947 | Cerebral Hemangioblastoma                                                                                                                                                   |
@@ -2083,7 +2049,6 @@
 | NCIT:C7609   | Cerebral Non-Hodgkin Lymphoma                                                                                                                                               |
 | NCIT:C180840 | Cerebral Vascular Insufficiency                                                                                                                                             |
 | NCIT:C132727 | Cerebral Vein Thrombosis                                                                                                                                                    |
-| NCIT:C173085 | Cerebrooculofacioskeletal Syndrome 1                                                                                                                                        |
 | NCIT:C5558   | Ceruminous Neoplasm                                                                                                                                                         |
 | NCIT:C127915 | Cervical Adenocarcinoma Admixed with Neuroendocrine Carcinoma                                                                                                               |
 | NCIT:C4520   | Cervical Adenocarcinoma In Situ                                                                                                                                             |
@@ -2104,7 +2069,6 @@
 | NCIT:C180879 | Cervical Germ Cell Tumor                                                                                                                                                    |
 | NCIT:C7673   | Cervical Glandular Intraepithelial Neoplasia                                                                                                                                |
 | NCIT:C40210  | Cervical Glandular Neoplasm                                                                                                                                                 |
-| NCIT:C3782   | Cervical Intraepithelial Neoplasia                                                                                                                                          |
 | NCIT:C180861 | Cervical Invasive Stratified Mucinous Adenocarcinoma                                                                                                                        |
 | NCIT:C128046 | Cervical Leiomyoma                                                                                                                                                          |
 | NCIT:C40222  | Cervical Low Grade Endometrioid Stromal Sarcoma                                                                                                                             |
@@ -2140,8 +2104,6 @@
 | NCIT:C40191  | Cervical Warty Carcinoma                                                                                                                                                    |
 | NCIT:C128055 | Cervical Yolk Sac Tumor                                                                                                                                                     |
 | NCIT:C128715 | Cesarean Scar Pregnancy                                                                                                                                                     |
-| NCIT:C150609 | Charcot-Marie-Tooth Disease Type 2A1                                                                                                                                        |
-| NCIT:C168974 | Charcot-Marie-Tooth Disease Type 2Y                                                                                                                                         |
 | NCIT:C124508 | Cheilognathopalatoschisis                                                                                                                                                   |
 | NCIT:C124509 | Cheilognathoschisis                                                                                                                                                         |
 | NCIT:C118458 | Cheiromegaly                                                                                                                                                                |
@@ -2150,7 +2112,6 @@
 | NCIT:C114752 | Chemical Peritonitis                                                                                                                                                        |
 | NCIT:C35316  | Chemical Pneumonitis                                                                                                                                                        |
 | NCIT:C123128 | Chemotherapeutic Drug - Induced Nephropathy                                                                                                                                 |
-| NCIT:C164162 | Chemotherapy-Induced Alopecia                                                                                                                                               |
 | NCIT:C156348 | Chemotherapy-Induced Peripheral Neuropathy                                                                                                                                  |
 | NCIT:C80691  | Chemotherapy-Related Leukemia                                                                                                                                               |
 | NCIT:C4372   | Cherry Hemangioma of Lip                                                                                                                                                    |
@@ -2348,7 +2309,6 @@
 | NCIT:C44960  | Chlamydia Psittaci-Associated Ocular Adnexal Mucosa-Associated Lymphoid Tissue Lymphoma                                                                                     |
 | NCIT:C44959  | Chlamydophila psittaci Infection                                                                                                                                            |
 | NCIT:C35332  | Cholecystitis with Cholelithiasis                                                                                                                                           |
-| NCIT:C157812 | Cholera                                                                                                                                                                     |
 | NCIT:C22950  | Chondroblastic Osteosarcoma of the Mouse Skeletal System                                                                                                                    |
 | NCIT:C22972  | Chondroblastoma of the Mouse Skeletal System, Malignant                                                                                                                     |
 | NCIT:C22971  | Chondroblastoma of the Mouse Skeletal System, NOS                                                                                                                           |
@@ -2657,13 +2617,11 @@
 | NCIT:C21727  | Combined Epithelial / Stromal Atypical Hyperplasia of the Mouse Prostate Gland                                                                                              |
 | NCIT:C21714  | Combined Epithelial / Stromal Diffuse Hyperplasia of the Mouse Prostate Gland                                                                                               |
 | NCIT:C21720  | Combined Epithelial / Stromal Focal Hyperplasia of the Mouse Prostate Gland                                                                                                 |
-| NCIT:C174548 | Combined Hamartoma of the Retina and Retinal Pigment Epithelium                                                                                                             |
 | NCIT:C176596 | Combined Immunodeficiencies Associated with Syndromic Features                                                                                                              |
 | NCIT:C9379   | Combined Lung Small Cell Carcinoma and Lung Adenocarcinoma                                                                                                                  |
 | NCIT:C165529 | Combined Nevus                                                                                                                                                              |
 | NCIT:C187986 | Combined Oxidative Phosphorylation Deficiency 23                                                                                                                            |
 | NCIT:C185238 | Combined Oxidative Phosphorylation Deficiency 27                                                                                                                            |
-| NCIT:C174440 | Combined Oxidative Phosphorylation Deficiency 33                                                                                                                            |
 | NCIT:C180851 | Combined Oxidative Phosphorylation Deficiency 8                                                                                                                             |
 | NCIT:C45722  | Combined Thymic Epithelial Neoplasm                                                                                                                                         |
 | NCIT:C27797  | Common Acute Lymphoblastic Leukemia                                                                                                                                         |
@@ -2692,11 +2650,9 @@
 | NCIT:C35804  | Conditioned Insomnia                                                                                                                                                        |
 | NCIT:C2960   | Condyloma Acuminatum                                                                                                                                                        |
 | NCIT:C97057  | Condyloma Acuminatum with Dysplasia                                                                                                                                         |
-| NCIT:C162399 | Cone-Rod Dystrophy 2                                                                                                                                                        |
 | NCIT:C61234  | Congenital Abnormalities of Erythrocyte Differentiation or Function                                                                                                         |
 | NCIT:C98881  | Congenital Abnormality of the Large Intestine                                                                                                                               |
 | NCIT:C35599  | Congenital Adrenal Gland Disorder                                                                                                                                           |
-| NCIT:C174439 | Congenital Adrenal Hyperplasia due to Cytochrome P450 Oxidoreductase Deficiency                                                                                             |
 | NCIT:C89161  | Congenital Amegakaryocytosis                                                                                                                                                |
 | NCIT:C87077  | Congenital Ankyloblepharon                                                                                                                                                  |
 | NCIT:C103266 | Congenital Aortic Arch Hypoplasia                                                                                                                                           |
@@ -2744,7 +2700,6 @@
 | NCIT:C128732 | Congenital Microcephaly                                                                                                                                                     |
 | NCIT:C180842 | Congenital Microtia                                                                                                                                                         |
 | NCIT:C89337  | Congenital Musculoskeletal Defect                                                                                                                                           |
-| NCIT:C168997 | Congenital Myasthenic Syndrome 12                                                                                                                                           |
 | NCIT:C174216 | Congenital Myasthenic Syndrome-4C                                                                                                                                           |
 | NCIT:C123045 | Congenital Nephrotic Syndrome - Cytomegalovirus Associated                                                                                                                  |
 | NCIT:C121200 | Congenital Nephrotic Syndrome - Focal Segmental Glomerulosclerosis                                                                                                          |
@@ -2838,7 +2793,6 @@
 | NCIT:C100070 | Coronary Venous Dissection                                                                                                                                                  |
 | NCIT:C181757 | Coronavirus Infection                                                                                                                                                       |
 | NCIT:C179884 | Corpus Callosum Neoplasm                                                                                                                                                    |
-| NCIT:C135177 | Cortical Cataract                                                                                                                                                           |
 | NCIT:C135197 | Cortical Cataract Grade 1                                                                                                                                                   |
 | NCIT:C135198 | Cortical Cataract Grade 2                                                                                                                                                   |
 | NCIT:C135199 | Cortical Cataract Grade 3                                                                                                                                                   |
@@ -2869,7 +2823,6 @@
 | NCIT:C123179 | Cryoglobulinemic Glomerulonephritis Secondary to Systemic Disease                                                                                                           |
 | NCIT:C82902  | Crypt Abscess                                                                                                                                                               |
 | NCIT:C35590  | Cryptococcal Gastroenteritis                                                                                                                                                |
-| NCIT:C174113 | Cryptococcal Meningitis                                                                                                                                                     |
 | NCIT:C35361  | Cryptococcal Pneumonia                                                                                                                                                      |
 | NCIT:C98908  | Cryptophthalmos Syndrome                                                                                                                                                    |
 | NCIT:C35591  | Cryptosporidial Gastroenteritis                                                                                                                                             |
@@ -2896,7 +2849,6 @@
 | NCIT:C168980 | Cutaneous Histiocytic and Dendritic Cell Neoplasm                                                                                                                           |
 | NCIT:C168984 | Cutaneous Indeterminate Dendritic Cell Tumor                                                                                                                                |
 | NCIT:C168983 | Cutaneous Langerhans Cell Histiocytosis                                                                                                                                     |
-| NCIT:C34768  | Cutaneous Leishmaniasis                                                                                                                                                     |
 | NCIT:C171101 | Cutaneous Lymphoma                                                                                                                                                          |
 | NCIT:C45267  | Cutaneous Lymphomatoid Granulomatosis                                                                                                                                       |
 | NCIT:C7614   | Cutaneous Lymphoproliferative Disorder                                                                                                                                      |
@@ -2988,7 +2940,6 @@
 | NCIT:C5305   | Deletion of Chromosome 22 Associated Meningioma                                                                                                                             |
 | NCIT:C5306   | Deletion of Chromosome 3p Associated Meningioma                                                                                                                             |
 | NCIT:C5294   | Deletion of the Short Arm of Chromosome 1 (1p) Associated Meningioma                                                                                                        |
-| NCIT:C2981   | Delirium                                                                                                                                                                    |
 | NCIT:C92639  | Delirium Due to a General Medical Condition                                                                                                                                 |
 | NCIT:C35797  | Demyelinating Encephalopathy                                                                                                                                                |
 | NCIT:C154339 | Densely Granulated Corticotroph Pituitary Neuroendocrine Tumor                                                                                                              |
@@ -3058,21 +3009,9 @@
 | NCIT:C114726 | Dialysis Catheter Tunnel Infection                                                                                                                                          |
 | NCIT:C50531  | Dialysis Encephalopathy                                                                                                                                                     |
 | NCIT:C50532  | Dialyzer First Use Syndrome                                                                                                                                                 |
-| NCIT:C176911 | Diamond-Blackfan Anemia 1                                                                                                                                                   |
-| NCIT:C176919 | Diamond-Blackfan Anemia 10                                                                                                                                                  |
-| NCIT:C176920 | Diamond-Blackfan Anemia 11                                                                                                                                                  |
-| NCIT:C176912 | Diamond-Blackfan Anemia 3                                                                                                                                                   |
-| NCIT:C176913 | Diamond-Blackfan Anemia 4                                                                                                                                                   |
-| NCIT:C176914 | Diamond-Blackfan Anemia 5                                                                                                                                                   |
-| NCIT:C176915 | Diamond-Blackfan Anemia 6                                                                                                                                                   |
-| NCIT:C176916 | Diamond-Blackfan Anemia 7                                                                                                                                                   |
-| NCIT:C176917 | Diamond-Blackfan Anemia 8                                                                                                                                                   |
-| NCIT:C176918 | Diamond-Blackfan Anemia 9                                                                                                                                                   |
 | NCIT:C111886 | Diaper Dermatitis                                                                                                                                                           |
-| NCIT:C98912  | Diaphragmatic Eventration                                                                                                                                                   |
 | NCIT:C34687  | Diaphragmatic Hernia                                                                                                                                                        |
 | NCIT:C123226 | Diarrhea-associated Hemolytic Uremic Syndrome                                                                                                                               |
-| NCIT:C156311 | Diastrophic Dysplasia                                                                                                                                                       |
 | NCIT:C5129   | Diencephalic Glioblastoma                                                                                                                                                   |
 | NCIT:C5125   | Diencephalic Neoplasm                                                                                                                                                       |
 | NCIT:C162539 | Differentiated (Simplex) Penile Intraepithelial Neoplasia                                                                                                                   |
@@ -3179,7 +3118,6 @@
 | NCIT:C173625 | Dilated Cardiomyopathy-1P                                                                                                                                                   |
 | NCIT:C187983 | Dilated Cardiomyopathy-1W                                                                                                                                                   |
 | NCIT:C186785 | Dilated Cardiomyopathy-2C                                                                                                                                                   |
-| NCIT:C174217 | Dilated Cardiomyopathy-Hypergonadotropic Hypogonadism Syndrome                                                                                                              |
 | NCIT:C116599 | Diplegia                                                                                                                                                                    |
 | NCIT:C50534  | Direct Contact Transmission Infection                                                                                                                                       |
 | NCIT:C34691  | Direct Inguinal Hernia                                                                                                                                                      |
@@ -3195,7 +3133,6 @@
 | NCIT:C21865  | Disorders of the Mouse Hair Follicle                                                                                                                                        |
 | NCIT:C21863  | Disorders of the Squamous Epithelium of the Mouse Skin                                                                                                                      |
 | NCIT:C35005  | Disorganized Type Schizophrenia                                                                                                                                             |
-| NCIT:C99753  | Disruptive Behavior Disorder                                                                                                                                                |
 | NCIT:C27185  | Disseminated Adenocarcinoma                                                                                                                                                 |
 | NCIT:C113669 | Disseminated Bacillus Calmette-Guerin Infection                                                                                                                             |
 | NCIT:C27469  | Disseminated Carcinoma                                                                                                                                                      |
@@ -3253,24 +3190,11 @@
 | NCIT:C98917  | Duplicated Ureter                                                                                                                                                           |
 | NCIT:C95991  | Dural Extranodal Marginal Zone Lymphoma of Mucosa-Associated Lymphoid Tissue                                                                                                |
 | NCIT:C79549  | Dysarthria                                                                                                                                                                  |
-| NCIT:C173131 | Dyschromatosis Universalis Hereditaria                                                                                                                                      |
 | NCIT:C180532 | Dysembryoplastic Neuroepithelial-Like Tumor of the Septum Pellucidum                                                                                                        |
 | NCIT:C123227 | Dysfunctional Elimination Syndrome                                                                                                                                          |
-| NCIT:C182452 | Dysgraphia                                                                                                                                                                  |
-| NCIT:C176921 | Dyskeratosis Congenita, Autosomal Dominant 1                                                                                                                                |
-| NCIT:C176922 | Dyskeratosis Congenita, Autosomal Dominant 2                                                                                                                                |
-| NCIT:C176923 | Dyskeratosis Congenita, Autosomal Dominant 3                                                                                                                                |
-| NCIT:C176924 | Dyskeratosis Congenita, Autosomal Dominant 6                                                                                                                                |
-| NCIT:C176925 | Dyskeratosis Congenita, Autosomal Recessive 1                                                                                                                               |
-| NCIT:C176926 | Dyskeratosis Congenita, Autosomal Recessive 2                                                                                                                               |
-| NCIT:C176927 | Dyskeratosis Congenita, Autosomal Recessive 3                                                                                                                               |
-| NCIT:C176928 | Dyskeratosis Congenita, Autosomal Recessive 5                                                                                                                               |
-| NCIT:C176929 | Dyskeratosis Congenita, Autosomal Recessive 6                                                                                                                               |
 | NCIT:C34559  | Dysmenorrhea                                                                                                                                                                |
 | NCIT:C86950  | Dysphonia                                                                                                                                                                   |
 | NCIT:C21968  | Dysplastic Lhermitte-Duclos Gangliocytoma of Mouse Cerebellum                                                                                                               |
-| NCIT:C157577 | Dystonia 12                                                                                                                                                                 |
-| NCIT:C168729 | Dystonia 16                                                                                                                                                                 |
 | NCIT:C178217 | EBV-Associated Smooth Muscle Tumor                                                                                                                                          |
 | NCIT:C172847 | EBV-Positive Inflammatory Follicular Dendritic Cell Sarcoma                                                                                                                 |
 | NCIT:C150704 | EBV-Positive Inflammatory Follicular Dendritic Cell Sarcoma of the Digestive System                                                                                         |
@@ -3318,8 +3242,6 @@
 | NCIT:C97111  | Ecchordosis Physaliphora                                                                                                                                                    |
 | NCIT:C4703   | Eccrine Angiomatous Hamartoma                                                                                                                                               |
 | NCIT:C7565   | Eccrine Hidrocystoma                                                                                                                                                        |
-| NCIT:C176592 | Ectodermal Dysplasia and Immunodeficiency 1                                                                                                                                 |
-| NCIT:C176826 | Ectodermal Dysplasia and Immunodeficiency 2                                                                                                                                 |
 | NCIT:C121785 | Ectomesenchymal Chondromyxoid Tumor                                                                                                                                         |
 | NCIT:C8442   | Ectopic Aldosterone Secretion Syndrome                                                                                                                                      |
 | NCIT:C99113  | Ectopic Atrial Tachycardia                                                                                                                                                  |
@@ -3418,7 +3340,6 @@
 | NCIT:C171452 | Epidemic Disorder                                                                                                                                                           |
 | NCIT:C180730 | Epidermal Growth Factor Receptor Inhibitor-Induced Acneiform Lesion                                                                                                         |
 | NCIT:C53296  | Epidermal Hyperplasia                                                                                                                                                       |
-| NCIT:C176608 | Epidermodysplasia Verruciformis, Susceptibility to, 4                                                                                                                       |
 | NCIT:C156446 | Epidermolysis Bullosa Dystrophica, Autosomal Recessive                                                                                                                      |
 | NCIT:C162474 | Epidermolysis Bullosa, Junctional, with Pyloric Atresia                                                                                                                     |
 | NCIT:C162483 | Epididymal Cystadenoma                                                                                                                                                      |
@@ -3547,7 +3468,6 @@
 | NCIT:C16835  | Experimental Malignant Melanoma                                                                                                                                             |
 | NCIT:C119041 | Extended Oligoarticular Juvenile Idiopathic Arthritis                                                                                                                       |
 | NCIT:C9049   | Extensive Stage Lung Small Cell Carcinoma                                                                                                                                   |
-| NCIT:C128417 | Extensively Drug-Resistant Tuberculosis                                                                                                                                     |
 | NCIT:C124532 | External Auditory Canal Fistula                                                                                                                                             |
 | NCIT:C6080   | External Ear Actinic Keratosis                                                                                                                                              |
 | NCIT:C35320  | External Hemorrhoid                                                                                                                                                         |
@@ -3585,7 +3505,6 @@
 | NCIT:C5850   | Extrahepatic Bile Duct Tubular Adenoma                                                                                                                                      |
 | NCIT:C96811  | Extrahepatic Bile Duct Tubulopapillary Adenoma                                                                                                                              |
 | NCIT:C5780   | Extrahepatic Bile Duct Undifferentiated Carcinoma                                                                                                                           |
-| NCIT:C97069  | Extrahepatic Biliary Atresia                                                                                                                                                |
 | NCIT:C185149 | Extramedullary Disease in Plasma Cell Myeloma                                                                                                                               |
 | NCIT:C185037 | Extramedullary Disease in Plasma Cell Myeloma Involving the Central Nervous System                                                                                          |
 | NCIT:C185153 | Extramedullary Disease in Plasma Cell Myeloma Involving the Kidney                                                                                                          |
@@ -3609,7 +3528,6 @@
 | NCIT:C161608 | Extrarenal Rhabdoid Tumor of the Prostate                                                                                                                                   |
 | NCIT:C6570   | Extraskeletal Cartilaginous and Osseous Neoplasm                                                                                                                            |
 | NCIT:C6575   | Extraskeletal Osteoma                                                                                                                                                       |
-| NCIT:C175048 | Exudative Vitreoretinopathy 1                                                                                                                                               |
 | NCIT:C175223 | Eye Melanocytoma                                                                                                                                                            |
 | NCIT:C181159 | Eyelid Basal Cell Carcinoma                                                                                                                                                 |
 | NCIT:C140511 | Eyelid Carcinoma by AJCC v7 Stage                                                                                                                                           |
@@ -3661,7 +3579,6 @@
 | NCIT:C121152 | FSH-Producing Pituitary Neuroendocrine Tumor                                                                                                                                |
 | NCIT:C116901 | Facial Nerve Palsy Related to Birth                                                                                                                                         |
 | NCIT:C101316 | Facial Nerve Palsy Related to Trauma                                                                                                                                        |
-| NCIT:C172704 | Facioscapulohumeral Muscular Dystrophy 1                                                                                                                                    |
 | NCIT:C26692  | Factor I Deficiency                                                                                                                                                         |
 | NCIT:C131660 | Factor I Inactivation                                                                                                                                                       |
 | NCIT:C131661 | Factor II Inactivation                                                                                                                                                      |
@@ -3696,7 +3613,6 @@
 | NCIT:C173471 | Familial Arrhythmogenic Right Ventricular Dysplasia 9                                                                                                                       |
 | NCIT:C123228 | Familial Atypical Hemolytic Uremic Syndrome                                                                                                                                 |
 | NCIT:C185245 | Familial Catecholamine-Induced QT Prolongation                                                                                                                              |
-| NCIT:C175208 | Familial Digital Arthropathy-Brachydactyly                                                                                                                                  |
 | NCIT:C176906 | Familial Gastrointestinal Stromal Tumor                                                                                                                                     |
 | NCIT:C123261 | Familial Hypercalciuric Hypocalcemia                                                                                                                                        |
 | NCIT:C172092 | Familial Hypertrophic Cardiomyopathy Type 1                                                                                                                                 |
@@ -3782,7 +3698,6 @@
 | NCIT:C22136  | Flat Tubulovillous Adenoma of the Mouse Intestinal Tract                                                                                                                    |
 | NCIT:C22133  | Flat Villous Adenoma of the Mouse Intestinal Tract                                                                                                                          |
 | NCIT:C54660  | Flexural Skin Nevus                                                                                                                                                         |
-| NCIT:C175241 | Floating-Harbor Syndrome                                                                                                                                                    |
 | NCIT:C8180   | Floor of Mouth Adenoid Cystic Carcinoma                                                                                                                                     |
 | NCIT:C129873 | Floor of Mouth Basaloid Squamous Cell Carcinoma                                                                                                                             |
 | NCIT:C116708 | Floppy Infant                                                                                                                                                               |
@@ -3829,9 +3744,7 @@
 | NCIT:C134771 | Frog Pronephric Kidney Tumor                                                                                                                                                |
 | NCIT:C156035 | Frontal Lobe Anaplastic Astrocytoma                                                                                                                                         |
 | NCIT:C156120 | Frontal Lobe Anaplastic Oligodendroglioma                                                                                                                                   |
-| NCIT:C168756 | Frontotemporal Dementia and/or Amyotrophic Lateral Sclerosis 1                                                                                                              |
 | NCIT:C94354  | Frotteurism                                                                                                                                                                 |
-| NCIT:C172316 | Fruit Allergy                                                                                                                                                               |
 | NCIT:C164156 | Fumarate Hydratase-Deficient Renal Cell Carcinoma                                                                                                                           |
 | NCIT:C171089 | Functional Disorder of Polymorphonuclear Neutrophils                                                                                                                        |
 | NCIT:C116365 | Functional Hearing Loss                                                                                                                                                     |
@@ -3841,7 +3754,6 @@
 | NCIT:C121679 | Functioning Pituitary Neuroendocrine Tumor/Microadenoma                                                                                                                     |
 | NCIT:C8961   | Fundic Gland Polyp                                                                                                                                                          |
 | NCIT:C53658  | Fungal Endophthalmitis                                                                                                                                                      |
-| NCIT:C128370 | Fungal Keratitis                                                                                                                                                            |
 | NCIT:C128406 | Fungal Pericarditis                                                                                                                                                         |
 | NCIT:C99087  | Furuncle                                                                                                                                                                    |
 | NCIT:C123732 | Fusion-Negative Alveolar Rhabdomyosarcoma                                                                                                                                   |
@@ -3899,7 +3811,6 @@
 | NCIT:C115967 | Gangrenous Umbilical Hernia                                                                                                                                                 |
 | NCIT:C49017  | Gardner Fibroma                                                                                                                                                             |
 | NCIT:C118508 | Gasping Syndrome                                                                                                                                                            |
-| NCIT:C172989 | Gastric Adenocarcinoma and Proximal Polyposis of the Stomach                                                                                                                |
 | NCIT:C95775  | Gastric Adenoma, Gastric-Type                                                                                                                                               |
 | NCIT:C95773  | Gastric Adenoma, Intestinal-Type                                                                                                                                            |
 | NCIT:C8400   | Gastric Antrum Carcinoma In Situ AJCC v6 and v7                                                                                                                             |
@@ -4025,7 +3936,6 @@
 | NCIT:C134774 | Gibbon Lymphosarcoma                                                                                                                                                        |
 | NCIT:C27478  | Gingival Angiofibroma                                                                                                                                                       |
 | NCIT:C7721   | Gingival Carcinoma                                                                                                                                                          |
-| NCIT:C173795 | Gingival Disorder                                                                                                                                                           |
 | NCIT:C129289 | Gingival Spindle Cell Carcinoma                                                                                                                                             |
 | NCIT:C129857 | Gingival Squamous Cell Carcinoma                                                                                                                                            |
 | NCIT:C27269  | Glandular Cell Intraepithelial Neoplasia                                                                                                                                    |
@@ -4123,14 +4033,12 @@
 | NCIT:C7995   | Granular Renal Cell Carcinoma                                                                                                                                               |
 | NCIT:C22061  | Granulocytic Sarcoma of the Mouse Nervous System                                                                                                                            |
 | NCIT:C21641  | Granuloma of the Mouse Mammary Gland                                                                                                                                        |
-| NCIT:C3444   | Granulomatosis with Polyangiitis                                                                                                                                            |
 | NCIT:C37262  | Granulomatous Colitis                                                                                                                                                       |
 | NCIT:C66751  | Granulosa Cell-Theca Cell Tumor                                                                                                                                             |
 | NCIT:C113421 | Gray Baby Syndrome                                                                                                                                                          |
 | NCIT:C5348   | Great Vessel Neoplasm                                                                                                                                                       |
 | NCIT:C99137  | Great Vessels Abnormality                                                                                                                                                   |
 | NCIT:C116601 | Gross Motor Delay                                                                                                                                                           |
-| NCIT:C87168  | Group B Streptococcal Infection                                                                                                                                             |
 | NCIT:C116793 | Group B Streptococcal Infection, Early-Onset                                                                                                                                |
 | NCIT:C116795 | Group B Streptococcal Infection, Late-Onset                                                                                                                                 |
 | NCIT:C134563 | Guinea Pig Colon Adenocarcinoma                                                                                                                                             |
@@ -4250,7 +4158,6 @@
 | NCIT:C23147  | Hematopoietic Neoplasms of the Mouse Salivary Glands                                                                                                                        |
 | NCIT:C7340   | Hematopoietic and Lymphoid Neoplasm (Antiquated)                                                                                                                            |
 | NCIT:C35814  | Hematopoietic and Lymphoid System Disorder                                                                                                                                  |
-| NCIT:C177779 | Hemimegalencephaly                                                                                                                                                          |
 | NCIT:C5123   | Hemispheric Anaplastic Astrocytoma                                                                                                                                          |
 | NCIT:C124541 | Hemivertebra                                                                                                                                                                |
 | NCIT:C114724 | Hemodialysis Catheter Infection                                                                                                                                             |
@@ -4302,7 +4209,6 @@
 | NCIT:C26770  | Hereditary Factor XII Deficiency                                                                                                                                            |
 | NCIT:C98941  | Hereditary Factor XIII Deficiency                                                                                                                                           |
 | NCIT:C36107  | Hereditary Female Breast Carcinoma                                                                                                                                          |
-| NCIT:C156424 | Hereditary Folate Malabsorption                                                                                                                                             |
 | NCIT:C36106  | Hereditary Male Breast Carcinoma                                                                                                                                            |
 | NCIT:C9479   | Hereditary Malignant Neoplasm                                                                                                                                               |
 | NCIT:C155950 | Hereditary Malignant Urinary System Neoplasm                                                                                                                                |
@@ -4539,10 +4445,8 @@
 | NCIT:C7249   | Immunoblastic Lymphoma Post-Transplant Lymphoproliferative Disorder                                                                                                         |
 | NCIT:C176597 | Immunodeficiencies Affecting Cellular and Humoral Immunity - Combined Immune Deficiency                                                                                     |
 | NCIT:C176598 | Immunodeficiencies Affecting Cellular and Humoral Immunity - Severe Combined Immune Deficiency                                                                              |
-| NCIT:C176630 | Immunodeficiency 11B with Atopic Dermatitis                                                                                                                                 |
 | NCIT:C187988 | Immunodeficiency 14A, Autosomal Dominant                                                                                                                                    |
 | NCIT:C176795 | Immunodeficiency 26 with or without Neurologic Abnormalities                                                                                                                |
-| NCIT:C176806 | Immunodeficiency 27A                                                                                                                                                        |
 | NCIT:C176821 | Immunodeficiency 48                                                                                                                                                         |
 | NCIT:C126296 | Immunodeficiency of Unknown Origin                                                                                                                                          |
 | NCIT:C176416 | Immunodeficiency with Hyper-IgM, Type 3                                                                                                                                     |
@@ -4556,7 +4460,6 @@
 | NCIT:C27936  | Immunodeficiency-Related Neoplasm                                                                                                                                           |
 | NCIT:C27141  | Immunoglobulin Heavy Chain Deletion                                                                                                                                         |
 | NCIT:C178942 | Immunosuppressive Disorder                                                                                                                                                  |
-| NCIT:C158968 | Immunotactoid Glomerulopathy                                                                                                                                                |
 | NCIT:C123639 | Imperforate Vagina                                                                                                                                                          |
 | NCIT:C78358  | Implant Infection                                                                                                                                                           |
 | NCIT:C138181 | In Situ Follicular Neoplasia                                                                                                                                                |
@@ -4589,7 +4492,6 @@
 | NCIT:C185473 | Infant-Type Hemispheric Glioma, ROS1-Altered                                                                                                                                |
 | NCIT:C6645   | Infantile Hemangioma                                                                                                                                                        |
 | NCIT:C27498  | Infantile Hemangiopericytoma                                                                                                                                                |
-| NCIT:C158135 | Infantile Liver Failure Syndrome 2                                                                                                                                          |
 | NCIT:C180887 | Infantile Myofibroma                                                                                                                                                        |
 | NCIT:C176943 | Infantile Myofibromatosis 1                                                                                                                                                 |
 | NCIT:C176944 | Infantile Myofibromatosis 2                                                                                                                                                 |
@@ -4634,7 +4536,6 @@
 | NCIT:C6156   | Infiltrating Ureter Urothelial Carcinoma with Squamous Differentiation                                                                                                      |
 | NCIT:C164252 | Infiltrating Urothelial Carcinoma, Sarcomatoid Variant                                                                                                                      |
 | NCIT:C174448 | Inflamed Juvenile Conjunctival Nevus                                                                                                                                        |
-| NCIT:C164676 | Inflammatory Bowel Disease 28                                                                                                                                               |
 | NCIT:C172700 | Inflammatory Bowel Disease-Associated Colorectal Adenocarcinoma                                                                                                             |
 | NCIT:C21638  | Inflammatory Conditions of the Mouse Mammary Gland                                                                                                                          |
 | NCIT:C21697  | Inflammatory Conditions of the Mouse Prostate Gland                                                                                                                         |
@@ -4697,7 +4598,6 @@
 | NCIT:C7334   | Intermediate Vascular Neoplasm                                                                                                                                              |
 | NCIT:C98958  | Interrupted Aortic Arch                                                                                                                                                     |
 | NCIT:C62410  | Interstitial Disease                                                                                                                                                        |
-| NCIT:C164315 | Interstitial Lung Disease                                                                                                                                                   |
 | NCIT:C27006  | Interstitial Pneumonia                                                                                                                                                      |
 | NCIT:C5325   | Intestinal Composite Gangliocytoma/Neuroma and Neuroendocrine Tumor                                                                                                         |
 | NCIT:C98960  | Intestinal Duplication                                                                                                                                                      |
@@ -4821,7 +4721,6 @@
 | NCIT:C121923 | Ivory Exostosis                                                                                                                                                             |
 | NCIT:C128830 | JC Virus Infection                                                                                                                                                          |
 | NCIT:C94385  | Jealous Type Delusional Disorder                                                                                                                                            |
-| NCIT:C181158 | Jejunal Adenocarcinoma                                                                                                                                                      |
 | NCIT:C101027 | Jejunal Atresia                                                                                                                                                             |
 | NCIT:C181157 | Jejunal Carcinoma                                                                                                                                                           |
 | NCIT:C78396  | Jejunal Fistula                                                                                                                                                             |
@@ -4834,9 +4733,6 @@
 | NCIT:C95074  | Jet Lag Type Circadian Rhythm Sleep Disorder                                                                                                                                |
 | NCIT:C78402  | Joint Infection                                                                                                                                                             |
 | NCIT:C26804  | Joint Tuberculosis                                                                                                                                                          |
-| NCIT:C175702 | Joubert Syndrome 17                                                                                                                                                         |
-| NCIT:C159653 | Joubert Syndrome 7                                                                                                                                                          |
-| NCIT:C181002 | Joubert Syndrome 9                                                                                                                                                          |
 | NCIT:C5589   | Jugular Foramen Neoplasm                                                                                                                                                    |
 | NCIT:C21783  | Junctional Melanocytic Hyperplasia of Mouse                                                                                                                                 |
 | NCIT:C4231   | Junctional Nevus                                                                                                                                                            |
@@ -4867,8 +4763,6 @@
 | NCIT:C9113   | Kaposi Sarcoma Related to Immunosuppressive Treatment                                                                                                                       |
 | NCIT:C22937  | Kaposi Sarcoma of the Mouse Blood Vessel                                                                                                                                    |
 | NCIT:C22050  | Kaposi Sarcoma of the Mouse Nervous System                                                                                                                                  |
-| NCIT:C173626 | Karyomegalic Interstitial Nephritis                                                                                                                                         |
-| NCIT:C186306 | Keipert Syndrome                                                                                                                                                            |
 | NCIT:C64114  | Keratinizing Cystic Epithelioma of the Rat Lung                                                                                                                             |
 | NCIT:C7498   | Keratinizing Primary Intraosseous Squamous Cell Carcinoma-Solid Type                                                                                                        |
 | NCIT:C64041  | Keratoacanthoma of the Rat External Ear                                                                                                                                     |
@@ -4971,7 +4865,6 @@
 | NCIT:C188223 | Laryngeal Neuroendocrine Tumor G1                                                                                                                                           |
 | NCIT:C173392 | Laryngeal Neuroendocrine Tumor G2                                                                                                                                           |
 | NCIT:C54335  | Laryngeal Papillary Squamous Cell Carcinoma                                                                                                                                 |
-| NCIT:C157733 | Laryngeal Papillomatosis                                                                                                                                                    |
 | NCIT:C6409   | Laryngeal Paraganglioma                                                                                                                                                     |
 | NCIT:C173412 | Laryngeal Pleomorphic Adenoma                                                                                                                                               |
 | NCIT:C7411   | Laryngeal Precancerous Condition                                                                                                                                            |
@@ -4996,8 +4889,6 @@
 | NCIT:C179188 | Leaky Severe Combined Immunodeficiency                                                                                                                                      |
 | NCIT:C4791   | Left Atrial Myxoma                                                                                                                                                          |
 | NCIT:C50630  | Left Ventricular Failure                                                                                                                                                    |
-| NCIT:C157266 | Left Ventricular Noncompaction 7                                                                                                                                            |
-| NCIT:C176941 | Legius Syndrome                                                                                                                                                             |
 | NCIT:C22147  | Leiomyoma of the Mouse Intestinal Tract                                                                                                                                     |
 | NCIT:C22037  | Leiomyoma of the Mouse Nervous System                                                                                                                                       |
 | NCIT:C23054  | Leiomyoma of the Mouse Oral Cavity                                                                                                                                          |
@@ -5031,7 +4922,6 @@
 | NCIT:C118866 | Lid Retraction                                                                                                                                                              |
 | NCIT:C159456 | Light Chain Fanconi Syndrome                                                                                                                                                |
 | NCIT:C158966 | Light Chain Proximal Tubulopathy without Crystals                                                                                                                           |
-| NCIT:C158965 | Light and Heavy Chain Deposition Disease                                                                                                                                    |
 | NCIT:C7853   | Limited Stage Lung Small Cell Carcinoma                                                                                                                                     |
 | NCIT:C132052 | Lingual Thyroid Gland                                                                                                                                                       |
 | NCIT:C8014   | Lip Basal Cell Carcinoma                                                                                                                                                    |
@@ -5359,8 +5249,6 @@
 | NCIT:C179182 | Locally Recurrent Uterine Corpus Leiomyosarcoma                                                                                                                             |
 | NCIT:C186786 | Loeys-Dietz Syndrome Type 3                                                                                                                                                 |
 | NCIT:C188143 | Loeys-Dietz Syndrome Type 5                                                                                                                                                 |
-| NCIT:C177534 | Long QT Syndrome 14                                                                                                                                                         |
-| NCIT:C172094 | Long QT Syndrome 5                                                                                                                                                          |
 | NCIT:C34787  | Lordosis                                                                                                                                                                    |
 | NCIT:C160144 | Low Anterior Resection Syndrome                                                                                                                                             |
 | NCIT:C35583  | Low Frequency Hearing Loss                                                                                                                                                  |
@@ -5477,7 +5365,6 @@
 | NCIT:C98976  | Lumbar Myelocele                                                                                                                                                            |
 | NCIT:C101203 | Lumbar Myelomeningocele                                                                                                                                                     |
 | NCIT:C158330 | Lumbar Rib                                                                                                                                                                  |
-| NCIT:C177445 | Lumbar Spinal Stenosis                                                                                                                                                      |
 | NCIT:C35518  | Lumbar Spine Kyphosis                                                                                                                                                       |
 | NCIT:C168673 | Lumbar Spine Neoplasm                                                                                                                                                       |
 | NCIT:C168694 | Lumbosacral Spine Neoplasm                                                                                                                                                  |
@@ -5594,20 +5481,16 @@
 | NCIT:C23084  | Lymphoproliferative Neoplasms of the Mouse Pharynx                                                                                                                          |
 | NCIT:C23148  | Lymphoproliferative Neoplasms of the Mouse Salivary Glands                                                                                                                  |
 | NCIT:C26960  | Lymphosarcoma Involving Spleen                                                                                                                                              |
-| NCIT:C6725   | Lynch 1 Syndrome                                                                                                                                                            |
-| NCIT:C6726   | Lynch 2 Syndrome                                                                                                                                                            |
 | NCIT:C188259 | MAFA Related Familial Insulinomatosis                                                                                                                                       |
 | NCIT:C21881  | MAIDS                                                                                                                                                                       |
 | NCIT:C148394 | MCD Diffuse Large B-Cell Lymphoma                                                                                                                                           |
 | NCIT:C154335 | MGMT-Methylated Glioblastoma                                                                                                                                                |
 | NCIT:C132902 | MGMT-Unmethylated Glioblastoma                                                                                                                                              |
-| NCIT:C176823 | MHC Class II Deficiency                                                                                                                                                     |
 | NCIT:C178235 | MYOD1-Mutant Spindle Cell/Sclerosing Rhabdomyosarcoma                                                                                                                       |
 | NCIT:C182077 | Macaca mulatta Hepatocellular Carcinoma                                                                                                                                     |
 | NCIT:C35268  | Macrocephaly                                                                                                                                                                |
 | NCIT:C46092  | Macrofollicular Variant Thyroid Gland Papillary Carcinoma                                                                                                                   |
 | NCIT:C127166 | Macronodular Adrenal Hyperplasia                                                                                                                                            |
-| NCIT:C158788 | Macrothrombocytopenia and Granulocyte Inclusions with or without Nephritis or Sensorineural Hearing Loss                                                                    |
 | NCIT:C172710 | Macrotrabecular Massive Hepatocellular Carcinoma                                                                                                                            |
 | NCIT:C168999 | Macular Dystrophy, Retinal, 1                                                                                                                                               |
 | NCIT:C123030 | Magnesium Ammonium Phosphate Urolithiasis                                                                                                                                   |
@@ -5943,7 +5826,6 @@
 | NCIT:C129443 | Medulloblastoma, SHH-Activated, TP53-Wildtype                                                                                                                               |
 | NCIT:C129440 | Medulloblastoma, WNT-Activated                                                                                                                                              |
 | NCIT:C66808  | Medulloepithelioma Not Otherwise Specified                                                                                                                                  |
-| NCIT:C187989 | Meester-Loeys Syndrome                                                                                                                                                      |
 | NCIT:C123188 | Megacystis - Megaureter                                                                                                                                                     |
 | NCIT:C7066   | Megakaryocytic Neoplasm                                                                                                                                                     |
 | NCIT:C123161 | Megaureter                                                                                                                                                                  |
@@ -5963,7 +5845,6 @@
 | NCIT:C23098  | Melanoma of the Mouse Nose and Paranasal Sinuses                                                                                                                            |
 | NCIT:C23062  | Melanoma of the Mouse Oral Cavity                                                                                                                                           |
 | NCIT:C176905 | Melanoma-Astrocytoma Syndrome                                                                                                                                               |
-| NCIT:C176904 | Melanoma-Pancreatic Cancer Syndrome                                                                                                                                         |
 | NCIT:C64124  | Melanotic Malignant Melanoma of the Rat Skin                                                                                                                                |
 | NCIT:C66841  | Melanotic Neurofibroma                                                                                                                                                      |
 | NCIT:C123056 | Membranoproliferative Glomerulonephritis Type 3 (AQ)                                                                                                                        |
@@ -5980,7 +5861,6 @@
 | NCIT:C46084  | Memory Dysfunction                                                                                                                                                          |
 | NCIT:C78444  | Memory Impairment                                                                                                                                                           |
 | NCIT:C176601 | Mendelian Susceptibility to Mycobacterial Diseases                                                                                                                          |
-| NCIT:C185243 | Meniere Disease                                                                                                                                                             |
 | NCIT:C27383  | Meningeal Carcinomatosis                                                                                                                                                    |
 | NCIT:C92652  | Meningeal Central Nervous System Solitary Fibrous Tumor, Grade 3                                                                                                            |
 | NCIT:C9111   | Meningeal Chronic Myelogenous Leukemia, BCR-ABL1 Positive                                                                                                                   |
@@ -6255,7 +6135,6 @@
 | NCIT:C175327 | Metastatic Malignant Neoplasm in the Lacrimal System                                                                                                                        |
 | NCIT:C4581   | Metastatic Malignant Neoplasm in the Large Intestine                                                                                                                        |
 | NCIT:C6031   | Metastatic Malignant Neoplasm in the Larynx                                                                                                                                 |
-| NCIT:C3814   | Metastatic Malignant Neoplasm in the Leptomeninges                                                                                                                          |
 | NCIT:C8542   | Metastatic Malignant Neoplasm in the Lip                                                                                                                                    |
 | NCIT:C4758   | Metastatic Malignant Neoplasm in the Liver                                                                                                                                  |
 | NCIT:C3577   | Metastatic Malignant Neoplasm in the Lung                                                                                                                                   |
@@ -6456,7 +6335,6 @@
 | NCIT:C181031 | Metastatic Vaginal Squamous Cell Carcinoma                                                                                                                                  |
 | NCIT:C156066 | Metastatic Vulvar Carcinoma                                                                                                                                                 |
 | NCIT:C174201 | Metastatic Vulvar Squamous Cell Carcinoma                                                                                                                                   |
-| NCIT:C175209 | Metatropic Dysplasia                                                                                                                                                        |
 | NCIT:C115248 | Methicillin-Resistant Staphylococcus aureus Infection                                                                                                                       |
 | NCIT:C122523 | Methicillin-Resistant Staphylococcus aureus Pneumonia                                                                                                                       |
 | NCIT:C182126 | Methicillin-Sensitive Staphylococcus aureus Infection                                                                                                                       |
@@ -6529,7 +6407,6 @@
 | NCIT:C35410  | Mite-Borne Hemorrhagic Fever                                                                                                                                                |
 | NCIT:C176895 | Mitochondrial Complex IV Deficiency, Nuclear Type 1                                                                                                                         |
 | NCIT:C186788 | Mitochondrial Complex V (ATP synthase) Deficiency, Mitochondrial Type 1                                                                                                     |
-| NCIT:C172095 | Mitochondrial DNA Depletion Syndrome 13                                                                                                                                     |
 | NCIT:C185236 | Mitochondrial DNA Depletion Syndrome 2 (Myopathic Type)                                                                                                                     |
 | NCIT:C183531 | Mitochondrial DNA Depletion Syndrome-9                                                                                                                                      |
 | NCIT:C185235 | Mitochondrial DNA Depletion Syndromes                                                                                                                                       |
@@ -6591,10 +6468,8 @@
 | NCIT:C80310  | Monoclonal B-Cell Lymphocytosis                                                                                                                                             |
 | NCIT:C157343 | Monoclonal Gammopathy of Renal Significance                                                                                                                                 |
 | NCIT:C7151   | Monoclonal Immunoglobulin Deposition Disease                                                                                                                                |
-| NCIT:C181652 | Monoclonal Mast Cell Activation Syndrome                                                                                                                                    |
 | NCIT:C36277  | Monoclonal Polymorphic Post-Transplant Lymphoproliferative Disorder                                                                                                         |
 | NCIT:C39936  | Monodermal Testicular Teratoma                                                                                                                                              |
-| NCIT:C129739 | Monogenic Diabetes                                                                                                                                                          |
 | NCIT:C131840 | Monogenic Hyperinsulinism                                                                                                                                                   |
 | NCIT:C23130  | Monomorphic Adenoma of the Mouse Salivary Glands                                                                                                                            |
 | NCIT:C7237   | Monomorphic B-Cell Post-Transplant Lymphoproliferative Disorder                                                                                                             |
@@ -6605,12 +6480,9 @@
 | NCIT:C154504 | Monomorphous Plurihormonal Pituitary Neuroendocrine Tumor                                                                                                                   |
 | NCIT:C181038 | Monoplegia                                                                                                                                                                  |
 | NCIT:C98993  | Monosomy 13q Syndrome                                                                                                                                                       |
-| NCIT:C176908 | Monosomy 7 Myelodysplasia and Leukemia Syndrome 1                                                                                                                           |
 | NCIT:C62592  | Mood Alteration                                                                                                                                                             |
 | NCIT:C128714 | Morbidly Adherent Placenta                                                                                                                                                  |
 | NCIT:C23001  | Morphologic Variants of Diffuse Large B Cell Lymphoma of the Mouse Hematologic System                                                                                       |
-| NCIT:C4075   | Morton Neuroma                                                                                                                                                              |
-| NCIT:C168989 | Mosaic Variegated Aneuploidy Syndrome 2                                                                                                                                     |
 | NCIT:C35174  | Mosquito-Borne Hemorrhagic Fever                                                                                                                                            |
 | NCIT:C116943 | Motor Developmental Delay                                                                                                                                                   |
 | NCIT:C34042  | Mouse Acinar Cell Adenocarcinoma                                                                                                                                            |
@@ -7079,7 +6951,6 @@
 | NCIT:C30050  | Mouse Yolk Sac Carcinoma                                                                                                                                                    |
 | NCIT:C7743   | Mouth Mucous Membrane Leukoplakia                                                                                                                                           |
 | NCIT:C27157  | Mouth Sore                                                                                                                                                                  |
-| NCIT:C183312 | Moyamoya Disease 2                                                                                                                                                          |
 | NCIT:C107671 | Mucin-Depleted Foci of the Mouse Intestinal Tract                                                                                                                           |
 | NCIT:C27379  | Mucin-Producing Adenocarcinoma                                                                                                                                              |
 | NCIT:C22154  | Mucinous Adenocarcinoma of the Mouse Intestinal Tract                                                                                                                       |
@@ -7119,10 +6990,8 @@
 | NCIT:C186307 | Multiorgan Venous and Lymphatic Defect Syndrome                                                                                                                             |
 | NCIT:C4135   | Multiple Adenomatous Polyps                                                                                                                                                 |
 | NCIT:C168497 | Multiple Congenital Anomalies                                                                                                                                               |
-| NCIT:C176896 | Multiple Congenital Anomalies-Hypotonia-Seizures Syndrome 1                                                                                                                 |
 | NCIT:C188257 | Multiple Endocrine Neoplasia Type 5                                                                                                                                         |
 | NCIT:C27552  | Multiple Lobular Capillary Hemangiomas                                                                                                                                      |
-| NCIT:C179648 | Multiple Organ Dysfunction Syndrome                                                                                                                                         |
 | NCIT:C53457  | Multiple Osteochondromas                                                                                                                                                    |
 | NCIT:C5663   | Multiple Pulmonary Hamartomas                                                                                                                                               |
 | NCIT:C185035 | Multiple Solitary Plasmacytoma of Bone                                                                                                                                      |
@@ -7181,7 +7050,6 @@
 | NCIT:C9502   | Myolipoma                                                                                                                                                                   |
 | NCIT:C168339 | Myopathy Secondary to Fatty Acid Oxidation Disorder                                                                                                                         |
 | NCIT:C168340 | Myopathy Secondary to Glycogen Storage Disorder                                                                                                                             |
-| NCIT:C157504 | Myopathy due to Myoadenylate Deaminase Deficiency                                                                                                                           |
 | NCIT:C84913  | Myotonic Disorder                                                                                                                                                           |
 | NCIT:C9398   | Myxoid Chondrosarcoma NCI Grade 1                                                                                                                                           |
 | NCIT:C9399   | Myxoid Chondrosarcoma NCI Grade 2                                                                                                                                           |
@@ -7230,7 +7098,6 @@
 | NCIT:C173352 | Nasopharyngeal Pituitary Neuroendocrine Tumor                                                                                                                               |
 | NCIT:C6034   | Nasopharyngeal Polyp                                                                                                                                                        |
 | NCIT:C173341 | Nasopharyngeal Salivary Gland Anlage Tumor                                                                                                                                  |
-| NCIT:C167265 | Nasopharyngeal Squamous Cell Carcinoma                                                                                                                                      |
 | NCIT:C6037   | Nasopharyngeal Squamous Cell Papilloma                                                                                                                                      |
 | NCIT:C128355 | Native Valve Endocarditis                                                                                                                                                   |
 | NCIT:C82217  | Natural Killer Cell Lymphoblastic Leukemia/Lymphoma                                                                                                                         |
@@ -7244,8 +7111,6 @@
 | NCIT:C22095  | Necrotizing Enteritis of the Mouse Intestinal Tract                                                                                                                         |
 | NCIT:C114909 | Necrotizing Enterocolitis Totalis                                                                                                                                           |
 | NCIT:C117323 | Necrotizing Funisitis                                                                                                                                                       |
-| NCIT:C70635  | Necrotizing Vasculitis                                                                                                                                                      |
-| NCIT:C164225 | Nemaline Myopathy 4                                                                                                                                                         |
 | NCIT:C165542 | Neoantigen-Positive Malignant Solid Neoplasm                                                                                                                                |
 | NCIT:C101028 | Neonatal Aspiration of Amniotic Fluid                                                                                                                                       |
 | NCIT:C116818 | Neonatal Chemical Conjunctivitis                                                                                                                                            |
@@ -7358,9 +7223,6 @@
 | NCIT:C21979  | Neuroblastomas of the Mouse Adrenal Gland and Sympathetic Nervous System                                                                                                    |
 | NCIT:C175215 | Neurocutaneous Melanosis                                                                                                                                                    |
 | NCIT:C84932  | Neurocysticercosis                                                                                                                                                          |
-| NCIT:C175707 | Neurodegeneration with Brain Iron Accumulation 4                                                                                                                            |
-| NCIT:C175210 | Neurodegeneration with Brain Iron Accumulation 5                                                                                                                            |
-| NCIT:C89338  | Neurodevelopmental Disorder                                                                                                                                                 |
 | NCIT:C186789 | Neurodevelopmental Disorder with Brain Abnormalities, Poor Growth, and Dysmorphic Facies                                                                                    |
 | NCIT:C176897 | Neurodevelopmental Disorder with Spastic Diplegia and Visual Defects                                                                                                        |
 | NCIT:C22150  | Neuroendocrine Adenoma of the Mouse Intestinal Tract                                                                                                                        |
@@ -7404,7 +7266,6 @@
 | NCIT:C99991  | No Cardiac Valve Regurgitation                                                                                                                                              |
 | NCIT:C60316  | No Proliferative Lesion Detected                                                                                                                                            |
 | NCIT:C180516 | No Specific Molecular Profile Endometrial Endometrioid Adenocarcinoma                                                                                                       |
-| NCIT:C171147 | Nocardiosis                                                                                                                                                                 |
 | NCIT:C141261 | Nodal Marginal Zone Lymphoma by Ann Arbor Stage                                                                                                                             |
 | NCIT:C139005 | Nodal Peripheral T-Cell Lymphoma of T Follicular Helper Cell Origin                                                                                                         |
 | NCIT:C139011 | Nodal Peripheral T-Cell Lymphoma with TFH Phenotype                                                                                                                         |
@@ -7450,7 +7311,6 @@
 | NCIT:C95488  | Non-Invasive Pancreatic Mucinous-Cystic Neoplasm                                                                                                                            |
 | NCIT:C65164  | Non-Invasive Papillary Squamous Cell Carcinoma                                                                                                                              |
 | NCIT:C65181  | Non-Invasive Papillary Transitional Cell Carcinoma                                                                                                                          |
-| NCIT:C172208 | Non-Involuting Congenital Hemangioma                                                                                                                                        |
 | NCIT:C23071  | Non-Keratinizing Carcinoma of the Mouse Pharynx                                                                                                                             |
 | NCIT:C23073  | Non-Keratinizing Carcinoma of the Mouse Pharynx With Lymphoid Stroma                                                                                                        |
 | NCIT:C23072  | Non-Keratinizing Carcinoma of the Mouse Pharynx Without Lymphoid Stroma                                                                                                     |
@@ -7593,26 +7453,10 @@
 | NCIT:C35421  | Nonorganic Insomnia                                                                                                                                                         |
 | NCIT:C27095  | Nonpigmented Nevus                                                                                                                                                          |
 | NCIT:C35100  | Nonpsychotic Mental Disorder Following Organic Brain Damage                                                                                                                 |
-| NCIT:C176938 | Noonan Syndrome 10                                                                                                                                                          |
-| NCIT:C177119 | Noonan Syndrome 11                                                                                                                                                          |
-| NCIT:C177120 | Noonan Syndrome 12                                                                                                                                                          |
-| NCIT:C177121 | Noonan Syndrome 13                                                                                                                                                          |
-| NCIT:C176930 | Noonan Syndrome 2                                                                                                                                                           |
-| NCIT:C176931 | Noonan Syndrome 3                                                                                                                                                           |
-| NCIT:C176932 | Noonan Syndrome 4                                                                                                                                                           |
-| NCIT:C176933 | Noonan Syndrome 5                                                                                                                                                           |
-| NCIT:C176934 | Noonan Syndrome 6                                                                                                                                                           |
-| NCIT:C176935 | Noonan Syndrome 7                                                                                                                                                           |
-| NCIT:C176936 | Noonan Syndrome 8                                                                                                                                                           |
-| NCIT:C176937 | Noonan Syndrome 9                                                                                                                                                           |
-| NCIT:C178129 | Noonan Syndrome-Like Disorder with Loose Anagen Hair                                                                                                                        |
-| NCIT:C176939 | Noonan Syndrome-Like Disorder with Loose Anagen Hair 1                                                                                                                      |
-| NCIT:C176940 | Noonan Syndrome-Like Disorder with Loose Anagen Hair 2                                                                                                                      |
 | NCIT:C176942 | Noonan Syndrome-Like Disorder with or without Juvenile Myelomonocytic Leukemia                                                                                              |
 | NCIT:C35296  | Nose Deformity                                                                                                                                                              |
 | NCIT:C115297 | Nosocomial Pneumonia                                                                                                                                                        |
 | NCIT:C6486   | Nuchal-Type Fibroma                                                                                                                                                         |
-| NCIT:C135176 | Nuclear Cataract                                                                                                                                                            |
 | NCIT:C135193 | Nuclear Cataract Grade 1                                                                                                                                                    |
 | NCIT:C135194 | Nuclear Cataract Grade 2                                                                                                                                                    |
 | NCIT:C135195 | Nuclear Cataract Grade 3                                                                                                                                                    |
@@ -7642,7 +7486,6 @@
 | NCIT:C174414 | Ocular Melanocytosis                                                                                                                                                        |
 | NCIT:C176043 | Ocular Surface Squamous Neoplasia                                                                                                                                           |
 | NCIT:C116333 | Oculo-Respiratory Syndrome                                                                                                                                                  |
-| NCIT:C168731 | Oculocutaneous Albinism Type 1A                                                                                                                                             |
 | NCIT:C54317  | Odontoameloblastoma                                                                                                                                                         |
 | NCIT:C173720 | Odontogenic Carcinoma                                                                                                                                                       |
 | NCIT:C173735 | Odontogenic Carcinosarcoma                                                                                                                                                  |
@@ -7650,7 +7493,6 @@
 | NCIT:C7452   | Odontogenic Myxofibroma                                                                                                                                                     |
 | NCIT:C7501   | Odontogenic Myxoma                                                                                                                                                          |
 | NCIT:C173738 | Odontogenic Sarcoma                                                                                                                                                         |
-| NCIT:C188215 | Ogden Syndrome                                                                                                                                                              |
 | NCIT:C27919  | Old Burn Scar-Related Cutaneous Melanoma                                                                                                                                    |
 | NCIT:C27771  | Old Burn Scar-Related Neoplasm                                                                                                                                              |
 | NCIT:C27918  | Old Burn Scar-Related Skin Squamous Cell Carcinoma                                                                                                                          |
@@ -7751,7 +7593,6 @@
 | NCIT:C68610  | Oropharyngeal Undifferentiated Carcinoma                                                                                                                                    |
 | NCIT:C147906 | Oropharyngeal p16INK4a-Negative Squamous Cell Carcinoma                                                                                                                     |
 | NCIT:C21693  | Osseous Metaplastic Carcinoma of the Mouse Mammary Gland                                                                                                                    |
-| NCIT:C173820 | Ossifying Fibroma                                                                                                                                                           |
 | NCIT:C66774  | Ossifying Renal Tumor of Infancy                                                                                                                                            |
 | NCIT:C22962  | Osteoblastoma of the Mouse Skeletal System, NOS                                                                                                                             |
 | NCIT:C34877  | Osteochondritis                                                                                                                                                             |
@@ -7790,8 +7631,6 @@
 | NCIT:C21660  | Other Non-neoplastic Proliferations of the Mouse Mammary Gland                                                                                                              |
 | NCIT:C21822  | Other Variants of Basaloid Follicular Neoplasm of the Mouse Skin                                                                                                            |
 | NCIT:C157616 | Other and Unspecified Infectious and Parasitic Diseases and their Sequelae                                                                                                  |
-| NCIT:C79601  | Otitis Externa                                                                                                                                                              |
-| NCIT:C185242 | Otosclerosis                                                                                                                                                                |
 | NCIT:C43324  | Outer Hair Sheath and Infundibulum Neoplasm                                                                                                                                 |
 | NCIT:C126331 | Ovarian Adenomatoid Tumor                                                                                                                                                   |
 | NCIT:C128106 | Ovarian Cancer by AJCC v6 and v7 Stage                                                                                                                                      |
@@ -7834,7 +7673,6 @@
 | NCIT:C105556 | Ovarian Low Grade Serous Adenocarcinoma                                                                                                                                     |
 | NCIT:C4203   | Ovarian Luteinized Thecoma                                                                                                                                                  |
 | NCIT:C126321 | Ovarian Luteinized Thecoma Associated with Sclerosing Peritonitis                                                                                                           |
-| NCIT:C178441 | Ovarian Melanoma                                                                                                                                                            |
 | NCIT:C179321 | Ovarian Mesonephric-Like Adenocarcinoma                                                                                                                                     |
 | NCIT:C179339 | Ovarian Mixed Cell Adenocarcinoma                                                                                                                                           |
 | NCIT:C7321   | Ovarian Mixed Germ Cell-Sex Cord-Stromal Tumor                                                                                                                              |
@@ -7903,13 +7741,11 @@
 | NCIT:C7141   | PRETEXT Stage 3 Hepatoblastoma                                                                                                                                              |
 | NCIT:C7142   | PRETEXT Stage 4 Hepatoblastoma                                                                                                                                              |
 | NCIT:C153467 | PTEN Deficiency                                                                                                                                                             |
-| NCIT:C179915 | PTEN Hamartoma Tumor Syndrome                                                                                                                                               |
 | NCIT:C165477 | PUVA Keratosis                                                                                                                                                              |
 | NCIT:C119048 | Pain Amplification Syndrome                                                                                                                                                 |
 | NCIT:C8463   | Palate Carcinoma                                                                                                                                                            |
 | NCIT:C6749   | Palate Kaposi Sarcoma                                                                                                                                                       |
 | NCIT:C4649   | Palate Squamous Cell Carcinoma                                                                                                                                              |
-| NCIT:C27177  | Palmar-Plantar Erythrodysthesia                                                                                                                                             |
 | NCIT:C4702   | Palmoplantar Keratoderma with Leukoplakia                                                                                                                                   |
 | NCIT:C95542  | Pancreatic Acinar Cell Neoplasm                                                                                                                                             |
 | NCIT:C67455  | Pancreatic Alpha Cell Adenoma                                                                                                                                               |
@@ -8037,7 +7873,6 @@
 | NCIT:C6032   | Parathyroid Chief Cell Hyperplasia                                                                                                                                          |
 | NCIT:C6033   | Parathyroid Clear Cell Hyperplasia                                                                                                                                          |
 | NCIT:C27346  | Parathyroid Gland Abscess                                                                                                                                                   |
-| NCIT:C156757 | Parathyroid Gland Adenoma                                                                                                                                                   |
 | NCIT:C48283  | Parathyroid Gland Lipoadenoma                                                                                                                                               |
 | NCIT:C34894  | Paratyphoid Fever A                                                                                                                                                         |
 | NCIT:C34895  | Paratyphoid Fever B                                                                                                                                                         |
@@ -8069,7 +7904,6 @@
 | NCIT:C34900  | Paroxysmal Atrial Tachycardia                                                                                                                                               |
 | NCIT:C27643  | Partial Hearing Loss                                                                                                                                                        |
 | NCIT:C172016 | Partial Neonatal Hearing Loss                                                                                                                                               |
-| NCIT:C172209 | Partially Involuting Congenital Hemangioma                                                                                                                                  |
 | NCIT:C35791  | Passive-Aggressive Behavior                                                                                                                                                 |
 | NCIT:C34904  | Passive-Aggressive Personality Disorder                                                                                                                                     |
 | NCIT:C137662 | Pathologic Stage 0 Cutaneous Melanoma AJCC v8                                                                                                                               |
@@ -8243,7 +8077,6 @@
 | NCIT:C66761  | Periosteal Fibroma                                                                                                                                                          |
 | NCIT:C66763  | Periosteal Fibrosarcoma                                                                                                                                                     |
 | NCIT:C22959  | Periosteal Osteosarcoma of the Mouse Skeletal System                                                                                                                        |
-| NCIT:C171602 | Peripartum Cardiomyopathy                                                                                                                                                   |
 | NCIT:C78533  | Peripheral Arterial Occlusive Disease                                                                                                                                       |
 | NCIT:C157450 | Peripheral Hemangioblastoma                                                                                                                                                 |
 | NCIT:C5320   | Peripheral Intraneural Angiosarcoma                                                                                                                                         |
@@ -8273,22 +8106,15 @@
 | NCIT:C27664  | Peritoneal and Retroperitoneal Disorder                                                                                                                                     |
 | NCIT:C7337   | Peritoneal and Retroperitoneal Neoplasm                                                                                                                                     |
 | NCIT:C27316  | Permanent Spinal Nerve Paralysis                                                                                                                                            |
-| NCIT:C170437 | Peroxisomal Acyl-CoA Oxidase Deficiency                                                                                                                                     |
-| NCIT:C155747 | Peroxisome Biogenesis Disorder                                                                                                                                              |
 | NCIT:C155748 | Peroxisome Biogenesis Disorder 1A                                                                                                                                           |
-| NCIT:C155749 | Peroxisome Biogenesis Disorder 1B                                                                                                                                           |
 | NCIT:C155750 | Peroxisome Biogenesis Disorder 2A                                                                                                                                           |
-| NCIT:C155751 | Peroxisome Biogenesis Disorder 2B                                                                                                                                           |
 | NCIT:C155753 | Peroxisome Biogenesis Disorder 3B                                                                                                                                           |
 | NCIT:C155760 | Peroxisome Biogenesis Disorder 7A                                                                                                                                           |
-| NCIT:C155761 | Peroxisome Biogenesis Disorder 7B                                                                                                                                           |
 | NCIT:C155762 | Peroxisome Biogenesis Disorder 8A                                                                                                                                           |
-| NCIT:C155763 | Peroxisome Biogenesis Disorder 8B                                                                                                                                           |
 | NCIT:C94386  | Persecutory Type Delusional Disorder                                                                                                                                        |
 | NCIT:C186234 | Persistent Atrioventricular Canal                                                                                                                                           |
 | NCIT:C99014  | Persistent Cloaca                                                                                                                                                           |
 | NCIT:C161553 | Persistent Hyaloid Vessels                                                                                                                                                  |
-| NCIT:C161554 | Persistent Hyperplastic Primary Vitreous                                                                                                                                    |
 | NCIT:C120189 | Persistent Mullerian Duct Syndrome Type I                                                                                                                                   |
 | NCIT:C120190 | Persistent Mullerian Duct Syndrome Type II                                                                                                                                  |
 | NCIT:C119040 | Persistent Oligoarticular Juvenile Idiopathic Arthritis                                                                                                                     |
@@ -8308,7 +8134,6 @@
 | NCIT:C78553  | Pharyngeal Mucositis                                                                                                                                                        |
 | NCIT:C173355 | Pharyngeal Non-Hodgkin Lymphoma                                                                                                                                             |
 | NCIT:C127823 | Pharyngocutaneous Fistula                                                                                                                                                   |
-| NCIT:C157124 | Phelan-McDermid Syndrome                                                                                                                                                    |
 | NCIT:C27361  | Philadelphia Chromosome Negative BCR-ABL1 Negative Chronic Myelogenous Leukemia                                                                                             |
 | NCIT:C9129   | Philadelphia Chromosome Negative, BCR-ABL1 Positive Chronic Myelogenous Leukemia                                                                                            |
 | NCIT:C9128   | Philadelphia Chromosome Positive, BCR-ABL1 Positive Chronic Myelogenous Leukemia                                                                                            |
@@ -8324,7 +8149,6 @@
 | NCIT:C21654  | Physiological Diffuse Hyperplasia of the Mouse Mammary Gland                                                                                                                |
 | NCIT:C21710  | Physiological Diffuse Hyperplasia of the Mouse Prostate Gland                                                                                                               |
 | NCIT:C21716  | Physiological Focal Hyperplasia of the Mouse Prostate Gland                                                                                                                 |
-| NCIT:C187288 | Pigment Dispersion Syndrome                                                                                                                                                 |
 | NCIT:C4164   | Pigmented Adrenal Cortical Adenoma                                                                                                                                          |
 | NCIT:C165498 | Pigmented Epithelioid Melanocytoma                                                                                                                                          |
 | NCIT:C27816  | Pigmented Nevus                                                                                                                                                             |
@@ -8428,11 +8252,9 @@
 | NCIT:C6493   | Plexiform Fibrohistiocytic Tumor                                                                                                                                            |
 | NCIT:C45916  | Plurihormonal Pituitary Neuroendocrine Tumor                                                                                                                                |
 | NCIT:C154505 | Plurimorphous Plurihormonal Pituitary Neuroendocrine Tumor                                                                                                                  |
-| NCIT:C157958 | Pneumococcal Meningitis                                                                                                                                                     |
 | NCIT:C157959 | Pneumococcal Pneumonia                                                                                                                                                      |
 | NCIT:C134962 | Poeciliopsis Lucida Hepatocellular Carcinoma                                                                                                                                |
 | NCIT:C53975  | Poikiloderma                                                                                                                                                                |
-| NCIT:C177535 | Poikiloderma with Neutropenia                                                                                                                                               |
 | NCIT:C66801  | Polar Spongioblastoma                                                                                                                                                       |
 | NCIT:C119033 | Polyarticular Juvenile Idiopathic Arthritis, Rheumatoid Factor Negative                                                                                                     |
 | NCIT:C61280  | Polyarticular Still Disease                                                                                                                                                 |
@@ -8542,7 +8364,6 @@
 | NCIT:C7144   | Postsurgical Stage III Hepatoblastoma                                                                                                                                       |
 | NCIT:C7143   | Postsurgical Stage IV Hepatoblastoma                                                                                                                                        |
 | NCIT:C50705  | Posttraumatic Wound Infection                                                                                                                                               |
-| NCIT:C85020  | Postural Orthostatic Tachycardia Syndrome                                                                                                                                   |
 | NCIT:C98899  | Postural Scoliosis                                                                                                                                                          |
 | NCIT:C27261  | Pre T-ALL                                                                                                                                                                   |
 | NCIT:C27798  | Pre-B Acute Lymphoblastic Leukemia                                                                                                                                          |
@@ -8577,7 +8398,6 @@
 | NCIT:C181207 | Primary Bone Hodgkin Lymphoma                                                                                                                                               |
 | NCIT:C121930 | Primary Bone Non-Hodgkin Lymphoma                                                                                                                                           |
 | NCIT:C4834   | Primary Bone Osteosarcoma                                                                                                                                                   |
-| NCIT:C170814 | Primary Brain Neoplasm                                                                                                                                                      |
 | NCIT:C4975   | Primary Brain Stem Neoplasm                                                                                                                                                 |
 | NCIT:C176251 | Primary Breast Angiosarcoma                                                                                                                                                 |
 | NCIT:C178476 | Primary Central Atypical Cartilaginous Tumor/Chondrosarcoma, Grade 1                                                                                                        |
@@ -8585,11 +8405,6 @@
 | NCIT:C102871 | Primary Central Nervous System Neoplasm                                                                                                                                     |
 | NCIT:C175464 | Primary Choroidal Non-Hodgkin Lymphoma                                                                                                                                      |
 | NCIT:C175466 | Primary Ciliary Body Non-Hodgkin Lymphoma                                                                                                                                   |
-| NCIT:C128117 | Primary Ciliary Dyskinesia 1                                                                                                                                                |
-| NCIT:C148370 | Primary Ciliary Dyskinesia 14                                                                                                                                               |
-| NCIT:C155999 | Primary Ciliary Dyskinesia 15                                                                                                                                               |
-| NCIT:C172393 | Primary Ciliary Dyskinesia 29                                                                                                                                               |
-| NCIT:C172392 | Primary Ciliary Dyskinesia 3                                                                                                                                                |
 | NCIT:C123113 | Primary Collapsing Glomerulopathy                                                                                                                                           |
 | NCIT:C139023 | Primary Cutaneous Acral CD8-Positive T-Cell Lymphoma                                                                                                                        |
 | NCIT:C6858   | Primary Cutaneous B-Cell Non-Hodgkin Lymphoma                                                                                                                               |
@@ -8750,8 +8565,6 @@
 | NCIT:C21728  | Prostatic Intraepithelial Neoplasia of the Mouse Prostate Gland                                                                                                             |
 | NCIT:C128356 | Prosthetic Valve Endocarditis                                                                                                                                               |
 | NCIT:C50709  | Prosthetic Valve Thrombosis                                                                                                                                                 |
-| NCIT:C176619 | Proteasome-Associated Autoinflammatory Syndrome 1                                                                                                                           |
-| NCIT:C179930 | Proteus-Like Syndrome                                                                                                                                                       |
 | NCIT:C165628 | Proximal Gastric Adenocarcinoma                                                                                                                                             |
 | NCIT:C114477 | Proximal Tubulopathy                                                                                                                                                        |
 | NCIT:C115334 | Proximal Urethral Carcinoma                                                                                                                                                 |
@@ -8776,7 +8589,6 @@
 | NCIT:C142825 | Pulmonary Artery Intimal Sarcoma                                                                                                                                            |
 | NCIT:C99030  | Pulmonary Artery Stenosis                                                                                                                                                   |
 | NCIT:C78577  | Pulmonary Fistula                                                                                                                                                           |
-| NCIT:C99035  | Pulmonary Hypoplasia                                                                                                                                                        |
 | NCIT:C51447  | Pulmonary Insufficiency                                                                                                                                                     |
 | NCIT:C45607  | Pulmonary Lymphomatoid Granulomatosis                                                                                                                                       |
 | NCIT:C7435   | Pulmonary Precancerous Condition                                                                                                                                            |
@@ -8789,7 +8601,6 @@
 | NCIT:C35531  | Pulmonary Vascular Disorder                                                                                                                                                 |
 | NCIT:C43277  | Pure Cutaneous Mastocytosis                                                                                                                                                 |
 | NCIT:C7467   | Pure Erythroid Leukemia                                                                                                                                                     |
-| NCIT:C176817 | Purine Nucleoside Phosphorylase Deficiency                                                                                                                                  |
 | NCIT:C50719  | Pyogenic Infection                                                                                                                                                          |
 | NCIT:C45692  | Pyothorax                                                                                                                                                                   |
 | NCIT:C45691  | Pyothorax-Associated Lymphoma                                                                                                                                               |
@@ -8843,7 +8654,6 @@
 | NCIT:C174377 | Radiculoneuropathy                                                                                                                                                          |
 | NCIT:C134573 | Rainbow Trout Hepatoma                                                                                                                                                      |
 | NCIT:C136977 | Rainbow Trout Mesothelioma                                                                                                                                                  |
-| NCIT:C172207 | Rapidly Involuting Congenital Hemangioma                                                                                                                                    |
 | NCIT:C35561  | Rare Neoplastic Syndrome                                                                                                                                                    |
 | NCIT:C53543  | Rare Non-Neoplastic Disorder                                                                                                                                                |
 | NCIT:C63820  | Rat Acanthomatous Ameloblastoma                                                                                                                                             |
@@ -9158,7 +8968,6 @@
 | NCIT:C156718 | Recurrent Acute Myeloid Leukemia with Recurrent Genetic Abnormalities                                                                                                       |
 | NCIT:C156719 | Recurrent Acute Myeloid Leukemia with t (9;11) (p21.3; q23.3); MLLT3-MLL                                                                                                    |
 | NCIT:C156717 | Recurrent Acute Myelomonocytic Leukemia                                                                                                                                     |
-| NCIT:C184324 | Recurrent Acute Pancreatitis                                                                                                                                                |
 | NCIT:C169107 | Recurrent Acute Promyelocytic Leukemia with PML-RARA                                                                                                                        |
 | NCIT:C141446 | Recurrent Acute Undifferentiated Leukemia                                                                                                                                   |
 | NCIT:C162612 | Recurrent Adamantinomatous Craniopharyngioma                                                                                                                                |
@@ -9844,7 +9653,6 @@
 | NCIT:C8658   | Refractory Anaplastic Large Cell Lymphoma                                                                                                                                   |
 | NCIT:C169074 | Refractory Anaplastic Oligodendroglioma                                                                                                                                     |
 | NCIT:C160905 | Refractory Anaplastic Pleomorphic Xanthoastrocytoma                                                                                                                         |
-| NCIT:C2872   | Refractory Anemia                                                                                                                                                           |
 | NCIT:C8671   | Refractory Angioimmunoblastic T-Cell Lymphoma                                                                                                                               |
 | NCIT:C179178 | Refractory Appendix Adenocarcinoma                                                                                                                                          |
 | NCIT:C179177 | Refractory Appendix Carcinoma                                                                                                                                               |
@@ -10249,7 +10057,6 @@
 | NCIT:C7603   | Regressing Nevus                                                                                                                                                            |
 | NCIT:C7090   | Regressing Non-Cutaneous Melanoma                                                                                                                                           |
 | NCIT:C34975  | Reiter Syndrome                                                                                                                                                             |
-| NCIT:C165675 | Relapsing-Remitting Multiple Sclerosis                                                                                                                                      |
 | NCIT:C117322 | Remote Placental Infarction                                                                                                                                                 |
 | NCIT:C123017 | Renal Abscess                                                                                                                                                               |
 | NCIT:C114844 | Renal Allograft Thrombosis                                                                                                                                                  |
@@ -10279,7 +10086,6 @@
 | NCIT:C99042  | Renal Vein Thrombosis                                                                                                                                                       |
 | NCIT:C174186 | Renal and Perinephric Abscess                                                                                                                                               |
 | NCIT:C5100   | Renomedullary Interstitial Cell Tumor                                                                                                                                       |
-| NCIT:C165533 | Renpenning Syndrome                                                                                                                                                         |
 | NCIT:C176696 | Repeat Expansion Disease                                                                                                                                                    |
 | NCIT:C7335   | Reproductive Endocrine Neoplasm                                                                                                                                             |
 | NCIT:C170962 | Resectable Adenocarcinoma of Unknown Primary                                                                                                                                |
@@ -10347,7 +10153,6 @@
 | NCIT:C174539 | Retinal Astrocytoma                                                                                                                                                         |
 | NCIT:C26968  | Retinal Defect                                                                                                                                                              |
 | NCIT:C26967  | Retinal Detachment and Defect                                                                                                                                               |
-| NCIT:C26875  | Retinal Disorder                                                                                                                                                            |
 | NCIT:C168587 | Retinal Dystrophy with Inner Retinal Dysfunction and Ganglion Cell Abnormalities                                                                                            |
 | NCIT:C164155 | Retinal Dystrophy with or without Extraocular Anomalies                                                                                                                     |
 | NCIT:C124578 | Retinal Fold                                                                                                                                                                |
@@ -10371,9 +10176,6 @@
 | NCIT:C173808 | Retroperitoneal Undifferentiated Pleomorphic Sarcoma                                                                                                                        |
 | NCIT:C128324 | Retropharyngeal Abscess                                                                                                                                                     |
 | NCIT:C162825 | Retropharyngeal Neoplasm                                                                                                                                                    |
-| NCIT:C176903 | Rett Syndrome, Congenital Variant                                                                                                                                           |
-| NCIT:C178393 | Rhabdoid Tumor Predisposition Syndrome 1                                                                                                                                    |
-| NCIT:C178394 | Rhabdoid Tumor Predisposition Syndrome 2                                                                                                                                    |
 | NCIT:C22039  | Rhabdomyoma of the Mouse Nervous System                                                                                                                                     |
 | NCIT:C24161  | Rhabdomyosarcoma of the Mouse Gallbladder                                                                                                                                   |
 | NCIT:C22040  | Rhabdomyosarcoma of the Mouse Nervous System                                                                                                                                |
@@ -10393,12 +10195,9 @@
 | NCIT:C186278 | Ring Chromosome 21 Syndrome                                                                                                                                                 |
 | NCIT:C179702 | Ring Chromosome 22 Syndrome                                                                                                                                                 |
 | NCIT:C175705 | Ring Chromosome 8 Syndrome                                                                                                                                                  |
-| NCIT:C188150 | Robertsonian Translocation Down Syndrome                                                                                                                                    |
 | NCIT:C35412  | Rodent-Borne Hemorrhagic Fever                                                                                                                                              |
 | NCIT:C67559  | Rosette-Forming Glioneuronal Tumor of the Fourth Ventricle                                                                                                                  |
 | NCIT:C157973 | Rotaviral Enteritis                                                                                                                                                         |
-| NCIT:C178826 | Rothmund-Thomson Syndrome Type 1                                                                                                                                            |
-| NCIT:C178827 | Rothmund-Thomson Syndrome Type 2                                                                                                                                            |
 | NCIT:C9401   | Round Cell Liposarcoma NCI Grade 2                                                                                                                                          |
 | NCIT:C9402   | Round Cell Liposarcoma NCI Grade 3                                                                                                                                          |
 | NCIT:C178460 | Round Cell Sarcoma with EWSR1-NFATC2 Gene Fusion                                                                                                                            |
@@ -10472,8 +10271,6 @@
 | NCIT:C35837  | Salivary Gland Sialoblastoma                                                                                                                                                |
 | NCIT:C8024   | Salivary Gland Undifferentiated Carcinoma                                                                                                                                   |
 | NCIT:C171146 | Salmonella Septicemia                                                                                                                                                       |
-| NCIT:C157974 | Salmonellosis                                                                                                                                                               |
-| NCIT:C171201 | Salpingo-Oophoritis                                                                                                                                                         |
 | NCIT:C131134 | Salt-Wasting 21-Hydroxylase Deficiency                                                                                                                                      |
 | NCIT:C9388   | Sarcoma NCI Grade 1                                                                                                                                                         |
 | NCIT:C9400   | Sarcoma NCI Grade 2                                                                                                                                                         |
@@ -10591,7 +10388,6 @@
 | NCIT:C34524  | Senile Dementia                                                                                                                                                             |
 | NCIT:C4393   | Senile Nevus                                                                                                                                                                |
 | NCIT:C27952  | Senile Sebaceous Hyperplasia                                                                                                                                                |
-| NCIT:C168588 | Senior-Loken Syndrome                                                                                                                                                       |
 | NCIT:C63711  | Sensory Disorder                                                                                                                                                            |
 | NCIT:C26973  | Sensory Hearing Loss                                                                                                                                                        |
 | NCIT:C3364   | Septicemia                                                                                                                                                                  |
@@ -10604,7 +10400,6 @@
 | NCIT:C179738 | Serous Tubal Intraepithelial Lesion                                                                                                                                         |
 | NCIT:C107673 | Serrated Lesion of the Mouse Intestinal Tract                                                                                                                               |
 | NCIT:C96414  | Serrated Lesions and Polyps                                                                                                                                                 |
-| NCIT:C168988 | Sertoli Cell-Only Syndrome                                                                                                                                                  |
 | NCIT:C22119  | Sessile Adenoma of the Mouse Intestinal Tract                                                                                                                               |
 | NCIT:C22120  | Sessile Tubular Adenoma of the Mouse Intestinal Tract                                                                                                                       |
 | NCIT:C22126  | Sessile Tubulovillous Adenoma of the Mouse Intestinal Tract                                                                                                                 |
@@ -10624,7 +10419,6 @@
 | NCIT:C162694 | Severe Combined Immunodeficiency, Athabascan Type                                                                                                                           |
 | NCIT:C176804 | Severe Combined Immunodeficiency, Autosomal Recessive, T-Cell Negative, B Cell-Positive, NK Cell-Positive                                                                   |
 | NCIT:C176807 | Severe Combined Immunodeficiency, Autosomal Recessive, T-Cell Negative, B-Cell Positive, NK-Cell Negative                                                                   |
-| NCIT:C166152 | Severe Congenital Neutropenia                                                                                                                                               |
 | NCIT:C176827 | Severe Congenital Neutropenia Type 1, Autosomal Dominant                                                                                                                    |
 | NCIT:C176610 | Severe Congenital Neutropenia Type 2, Autosomal Dominant                                                                                                                    |
 | NCIT:C166153 | Severe Congenital Neutropenia Type 3, Autosomal Recessive                                                                                                                   |
@@ -10642,14 +10436,11 @@
 | NCIT:C157977 | Sexually Transmitted Chlamydial Disease                                                                                                                                     |
 | NCIT:C165546 | Shared Neoantigen-Positive Malignant Solid Neoplasm                                                                                                                         |
 | NCIT:C94391  | Shared Psychotic Disorder                                                                                                                                                   |
-| NCIT:C172320 | Shellfish Allergy                                                                                                                                                           |
 | NCIT:C95075  | Shift Work Type Circadian Rhythm Sleep Disorder                                                                                                                             |
-| NCIT:C157978 | Shigellosis                                                                                                                                                                 |
 | NCIT:C92206  | Short Limb Dwarfism-Saddle Nose-Spinal Alterations-Metaphyseal Striation Syndrome                                                                                           |
 | NCIT:C101041 | Short Segment Hirschsprung Disease                                                                                                                                          |
 | NCIT:C120113 | Short Stature Homeobox Deficiency                                                                                                                                           |
 | NCIT:C176389 | Short Supernumerary Rib                                                                                                                                                     |
-| NCIT:C26882  | Sialadenitis                                                                                                                                                                |
 | NCIT:C127828 | Sialocele                                                                                                                                                                   |
 | NCIT:C173682 | Sialolipoma                                                                                                                                                                 |
 | NCIT:C70647  | Sicca Syndrome                                                                                                                                                              |
@@ -10774,7 +10565,6 @@
 | NCIT:C6578   | Skin Myxoma                                                                                                                                                                 |
 | NCIT:C62282  | Skin Nodular Basal Cell Carcinoma                                                                                                                                           |
 | NCIT:C5616   | Skin Nodular Solid Basal Cell Carcinoma                                                                                                                                     |
-| NCIT:C34557  | Skin Pigmentation Disorder                                                                                                                                                  |
 | NCIT:C170476 | Skin Pleomorphic Lipoma                                                                                                                                                     |
 | NCIT:C170473 | Skin Pleomorphic Liposarcoma                                                                                                                                                |
 | NCIT:C27719  | Skin Radiation-Related Angiosarcoma                                                                                                                                         |
@@ -10925,7 +10715,6 @@
 | NCIT:C156310 | Spinal Muscular Atrophy Type 2                                                                                                                                              |
 | NCIT:C85076  | Spinal Muscular Atrophy of Childhood                                                                                                                                        |
 | NCIT:C168693 | Spinal Neoplasm                                                                                                                                                             |
-| NCIT:C177444 | Spinal Stenosis                                                                                                                                                             |
 | NCIT:C35626  | Spinal Vascular Disorder                                                                                                                                                    |
 | NCIT:C21745  | Spindle Cell / Sarcomatoid Carcinoma of the Mouse Prostate Gland                                                                                                            |
 | NCIT:C22936  | Spindle Cell Hemangioendothelioma of the Mouse Blood Vessel                                                                                                                 |
@@ -10938,10 +10727,6 @@
 | NCIT:C121654 | Spindle Cell/Sclerosing Rhabdomyosarcoma                                                                                                                                    |
 | NCIT:C43333  | Spindle-Cell Predominant Trichodiscoma                                                                                                                                      |
 | NCIT:C21810  | Spindle-cell Squamous Cell Carcinoma of the Mouse Skin                                                                                                                      |
-| NCIT:C179861 | Spinocerebellar Ataxia Type 17                                                                                                                                              |
-| NCIT:C163756 | Spinocerebellar Ataxia Type 19/22                                                                                                                                           |
-| NCIT:C176901 | Spinocerebellar Ataxia Type 31                                                                                                                                              |
-| NCIT:C165500 | Spinocerebellar Ataxia, Autosomal Recessive, with Axonal Neuropathy 2                                                                                                       |
 | NCIT:C167344 | Spiradenocylindrocarcinoma                                                                                                                                                  |
 | NCIT:C167342 | Spiradenocylindroma                                                                                                                                                         |
 | NCIT:C21820  | Spiradenoma Type of Basaloid Follicular Neoplasm of the Mouse Skin                                                                                                          |
@@ -12922,7 +12707,6 @@
 | NCIT:C168582 | Steroid Resistant Acute Graft Versus Host Disease                                                                                                                           |
 | NCIT:C168540 | Steroid Resistant Gastrointestinal Tract Acute Graft Versus Host Disease                                                                                                    |
 | NCIT:C156671 | Steroid-Refractory Pneumonitis                                                                                                                                              |
-| NCIT:C168733 | Stickler Syndrome Type 1                                                                                                                                                    |
 | NCIT:C61278  | Still Disease                                                                                                                                                               |
 | NCIT:C78629  | Stoma Site Infection                                                                                                                                                        |
 | NCIT:C9405   | Storiform-Pleomorphic Malignant Fibrous Histiocytoma NCI Grade 2                                                                                                            |
@@ -12937,7 +12721,6 @@
 | NCIT:C4292   | Strumal Carcinoid                                                                                                                                                           |
 | NCIT:C34923  | Stump Hallucination                                                                                                                                                         |
 | NCIT:C117321 | Subacute Placental Infarction                                                                                                                                               |
-| NCIT:C35071  | Subacute Thyroiditis                                                                                                                                                        |
 | NCIT:C35185  | Subchronic Schizophrenia                                                                                                                                                    |
 | NCIT:C50758  | Subclinical Infection                                                                                                                                                       |
 | NCIT:C157995 | Subcutaneous Disorder                                                                                                                                                       |
@@ -13004,7 +12787,6 @@
 | NCIT:C101273 | Suspected Necrotizing Enterocolitis                                                                                                                                         |
 | NCIT:C3682   | Sweat Gland Tubular Carcinoma                                                                                                                                               |
 | NCIT:C85178  | Swyer James Syndrome                                                                                                                                                        |
-| NCIT:C168445 | Sydenham Chorea                                                                                                                                                             |
 | NCIT:C171549 | Symptomatic COVID-19 Infection Laboratory-Confirmed                                                                                                                         |
 | NCIT:C176467 | Synovial Chondrosarcoma                                                                                                                                                     |
 | NCIT:C23059  | Synovial Neoplasms of the Mouse Oral Cavity                                                                                                                                 |
@@ -13052,9 +12834,7 @@
 | NCIT:C180407 | Tectal Glioma                                                                                                                                                               |
 | NCIT:C35063  | Teething Syndrome                                                                                                                                                           |
 | NCIT:C22952  | Telangiectatic Osteosarcoma of the Mouse Skeletal System                                                                                                                    |
-| NCIT:C152065 | Telomere Syndrome                                                                                                                                                           |
 | NCIT:C156036 | Temporal Lobe Anaplastic Astrocytoma                                                                                                                                        |
-| NCIT:C177244 | Temporal Lobe Epilepsy                                                                                                                                                      |
 | NCIT:C156042 | Temporal Lobe Pleomorphic Xanthoastrocytoma                                                                                                                                 |
 | NCIT:C22067  | Teratoma of the Mouse Nervous System                                                                                                                                        |
 | NCIT:C22070  | Teratoma of the Mouse Nervous System with Malignant Transformation                                                                                                          |
@@ -13126,7 +12906,6 @@
 | NCIT:C168454 | Thoracotomy Scar                                                                                                                                                            |
 | NCIT:C100020 | Three Vessel Coronary Disease                                                                                                                                               |
 | NCIT:C35506  | Throat Carcinoma                                                                                                                                                            |
-| NCIT:C176617 | Thrombocytopenia 1                                                                                                                                                          |
 | NCIT:C28195  | Thromboembolism                                                                                                                                                             |
 | NCIT:C180553 | Thrombotic Disorder                                                                                                                                                         |
 | NCIT:C98897  | Thumb Hypoplasia                                                                                                                                                            |
@@ -13140,7 +12919,6 @@
 | NCIT:C146717 | Thymic Hepatoid Adenocarcinoma                                                                                                                                              |
 | NCIT:C95057  | Thymic Hodgkin Lymphoma                                                                                                                                                     |
 | NCIT:C45380  | Thymic Mucosa-Associated Lymphoid Tissue Lymphoma                                                                                                                           |
-| NCIT:C171031 | Thymic Neuroendocrine Carcinoma                                                                                                                                             |
 | NCIT:C162460 | Thymic Neuroendocrine Neoplasm                                                                                                                                              |
 | NCIT:C45720  | Thymic Typical Carcinoid Tumor                                                                                                                                              |
 | NCIT:C95038  | Thymoliposarcoma                                                                                                                                                            |
@@ -13227,7 +13005,6 @@
 | NCIT:C173807 | Tongue Adenosquamous Carcinoma                                                                                                                                              |
 | NCIT:C156273 | Tongue Alveolar Soft Part Sarcoma'                                                                                                                                          |
 | NCIT:C4824   | Tongue Carcinoma                                                                                                                                                            |
-| NCIT:C173793 | Tongue Disorder                                                                                                                                                             |
 | NCIT:C7734   | Tongue Lipoma                                                                                                                                                               |
 | NCIT:C173404 | Tongue Liposarcoma                                                                                                                                                          |
 | NCIT:C181160 | Tongue Mucoepidermoid Carcinoma                                                                                                                                             |
@@ -13241,13 +13018,11 @@
 | NCIT:C78639  | Tooth Infection                                                                                                                                                             |
 | NCIT:C118306 | Tooth Malformation                                                                                                                                                          |
 | NCIT:C27755  | Topoisomerase II Inhibitor-Related Acute Myeloid Leukemia                                                                                                                   |
-| NCIT:C156361 | Torsion Dystonia 6                                                                                                                                                          |
 | NCIT:C101040 | Total Colonic Aganglionosis                                                                                                                                                 |
 | NCIT:C116766 | Tourettism                                                                                                                                                                  |
 | NCIT:C172040 | Toxic Anterior Segment Syndrome                                                                                                                                             |
 | NCIT:C110936 | Toxic Methemoglobinemia with Cyanosis                                                                                                                                       |
 | NCIT:C27063  | Toxic Polyneuropathy                                                                                                                                                        |
-| NCIT:C85194  | Toxocariasis                                                                                                                                                                |
 | NCIT:C35396  | Toxoplasma Pneumonia                                                                                                                                                        |
 | NCIT:C3688   | Trabecular Adenoma                                                                                                                                                          |
 | NCIT:C35754  | Tracheal Atresia                                                                                                                                                            |
@@ -13326,10 +13101,6 @@
 | NCIT:C21817  | Trichoepithelioma Type of Basaloid Follicular Neoplasm of the Mouse Skin                                                                                                    |
 | NCIT:C43329  | Trichofollicular Carcinoma                                                                                                                                                  |
 | NCIT:C21818  | Trichofolliculoma Type of Basaloid Follicular Neoplasm of the Mouse Skin                                                                                                    |
-| NCIT:C156433 | Trichothiodystrophy 1, Photosensitive                                                                                                                                       |
-| NCIT:C173103 | Trichothiodystrophy 2, Photosensitive                                                                                                                                       |
-| NCIT:C173099 | Trichothiodystrophy 3, Photosensitive                                                                                                                                       |
-| NCIT:C173102 | Trichothiodystrophy 7, Nonphotosensitive                                                                                                                                    |
 | NCIT:C50843  | Tricuspid Valve Regurgitation                                                                                                                                               |
 | NCIT:C85203  | Trigger Finger Disorder                                                                                                                                                     |
 | NCIT:C35710  | Triple A Syndrome                                                                                                                                                           |
@@ -13396,9 +13167,6 @@
 | NCIT:C39964  | Typical Ovarian Thecoma                                                                                                                                                     |
 | NCIT:C126293 | UNC13D Deficiency                                                                                                                                                           |
 | NCIT:C99104  | UTP-Hexose-1-Phosphate Uridylyltransferase Deficiency                                                                                                                       |
-| NCIT:C173106 | UV-Sensitive Syndrome 1                                                                                                                                                     |
-| NCIT:C173110 | UV-Sensitive Syndrome 2                                                                                                                                                     |
-| NCIT:C173107 | UV-Sensitive Syndrome 3                                                                                                                                                     |
 | NCIT:C4694   | Ulcerated Oral Leukoplakia                                                                                                                                                  |
 | NCIT:C22111  | Ulceration of the Mouse Intestinal Tract                                                                                                                                    |
 | NCIT:C122413 | Ulcerative Colitis Flare                                                                                                                                                    |
@@ -13740,7 +13508,6 @@
 | NCIT:C7987   | Uveal Spindle Cell Type A Melanoma                                                                                                                                          |
 | NCIT:C7988   | Uveal Spindle Cell Type B Melanoma                                                                                                                                          |
 | NCIT:C50794  | Uveitis Glaucoma and Hyphema Syndrome                                                                                                                                       |
-| NCIT:C181924 | VEXAS Syndrome                                                                                                                                                              |
 | NCIT:C113671 | Vaccine-Associated Paralytic Poliomyelitis                                                                                                                                  |
 | NCIT:C35523  | Vaginal Abscess                                                                                                                                                             |
 | NCIT:C180947 | Vaginal Adenocarcinoma of Skene Gland Origin                                                                                                                                |
@@ -13779,7 +13546,6 @@
 | NCIT:C181940 | Vaginal Smooth Muscle Tumor of Uncertain Malignant Potential                                                                                                                |
 | NCIT:C40265  | Vaginal Soft Tissue Neoplasm                                                                                                                                                |
 | NCIT:C181936 | Vaginal Solitary Fibrous Tumor                                                                                                                                              |
-| NCIT:C180915 | Vaginal Squamous Cell Carcinoma                                                                                                                                             |
 | NCIT:C128079 | Vaginal Superficial Myofibroblastoma                                                                                                                                        |
 | NCIT:C128061 | Vaginal Tubulosquamous Polyp                                                                                                                                                |
 | NCIT:C40264  | Vaginal Undifferentiated Carcinoma                                                                                                                                          |
@@ -13800,7 +13566,6 @@
 | NCIT:C122412 | Vaso-Occlusive Crisis                                                                                                                                                       |
 | NCIT:C181762 | Vaso-Occlusive Crisis in Sickle Cell-Hemoglobin C Disease                                                                                                                   |
 | NCIT:C181761 | Vaso-Occlusive Crisis in Sickle Cell-SS Disease                                                                                                                             |
-| NCIT:C35279  | Vein Disorder                                                                                                                                                               |
 | NCIT:C98642  | Vein of Galen Malformation                                                                                                                                                  |
 | NCIT:C36196  | Vena Cava Occlusion                                                                                                                                                         |
 | NCIT:C159323 | Vena Cava Thrombosis                                                                                                                                                        |
@@ -13907,7 +13672,6 @@
 | NCIT:C177797 | WHO Grade 1 Glioma                                                                                                                                                          |
 | NCIT:C184991 | Waisman Syndrome                                                                                                                                                            |
 | NCIT:C135002 | Walleye Dermal Sarcoma                                                                                                                                                      |
-| NCIT:C164675 | Warsaw Breakage Syndrome                                                                                                                                                    |
 | NCIT:C23132  | Warthin's Tumor of the Mouse Salivary Glands                                                                                                                                |
 | NCIT:C126409 | Warthin-Like Variant Thyroid Gland Papillary Carcinoma                                                                                                                      |
 | NCIT:C176819 | Warts, Hypogammaglobulinemia, Infections, and Myelokathexis Syndrome                                                                                                        |
@@ -13932,8 +13696,6 @@
 | NCIT:C45700  | Widely Invasive Thymoma                                                                                                                                                     |
 | NCIT:C165597 | Williams-Beuren Region Duplication Syndrome                                                                                                                                 |
 | NCIT:C131006 | Wilms Tumor 1 Gene Syndromes                                                                                                                                                |
-| NCIT:C170731 | Winchester Syndrome                                                                                                                                                         |
-| NCIT:C176820 | Wiskott-Aldrich Syndrome 2                                                                                                                                                  |
 | NCIT:C41341  | Withdrawal                                                                                                                                                                  |
 | NCIT:C131078 | Wolff-Chaikoff Phenomenon                                                                                                                                                   |
 | NCIT:C124251 | Woodchuck Hepatocellular Carcinoma                                                                                                                                          |
@@ -13941,19 +13703,14 @@
 | NCIT:C173469 | X-Linked Cardiac Valvular Dysplasia                                                                                                                                         |
 | NCIT:C180844 | X-Linked Deafness-4                                                                                                                                                         |
 | NCIT:C180843 | X-Linked Deafness-5, with Peripheral Neuropathy                                                                                                                             |
-| NCIT:C85234  | X-Linked Dominant Hypophosphatemic Rickets                                                                                                                                  |
-| NCIT:C126336 | X-Linked Immunodeficiency with Magnesium Defect, Epstein-Barr Virus Infection and Neoplasia                                                                                 |
 | NCIT:C172807 | X-Linked Protoporphyria                                                                                                                                                     |
 | NCIT:C154315 | X-linked Chronic Granulomatous Disease                                                                                                                                      |
 | NCIT:C170434 | X-linked Lymphoproliferative Syndrome 1                                                                                                                                     |
-| NCIT:C173111 | XFE Progeroid Syndrome                                                                                                                                                      |
 | NCIT:C85210  | XO Syndrome                                                                                                                                                                 |
 | NCIT:C85236  | XXXY and XXXXY Syndrome                                                                                                                                                     |
 | NCIT:C134574 | Xenopus Neoplasm                                                                                                                                                            |
 | NCIT:C35134  | Xeroderma                                                                                                                                                                   |
-| NCIT:C156031 | Xeroderma Pigmentosum-Cockayne Syndrome Complex                                                                                                                             |
 | NCIT:C134575 | Xiphophorus Melanoma                                                                                                                                                        |
-| NCIT:C177544 | Xq25 Microduplication Syndrome                                                                                                                                              |
 | NCIT:C185244 | Y-Linked Spermatogenic Failure-2                                                                                                                                            |
 | NCIT:C176704 | YARSopathy                                                                                                                                                                  |
 | NCIT:C64001  | Yolk Sac Carcinoma of the Rat Ovary                                                                                                                                         |
