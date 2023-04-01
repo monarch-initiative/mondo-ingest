@@ -29,9 +29,54 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 #######################################
 ### Ingest Components #################
 #######################################
-
 # This section is concerned with transforming the incoming sources into the
 # Monarch Ingest schema.
+
+# TODO: temporarily moved over from ODK Makefile as proof of concept for https://github.com/monarch-initiative/mondo-ingest/issues/256
+# todo: temporarily making static url because md5 not automated yet
+#OMIM_URI=https://github.com/monarch-initiative/omim/releases/latest/download/omim.ttl
+OMIM_URI=https://github.com/monarch-initiative/omim/releases/download/2023-03-27/omim.ttl
+.PHONY: component-download-omim.owl
+# This one works!
+component-download-omim.owl: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(COMP) = true ]; then wget $(OMIM_URI).md5 -O $(TMPDIR)/tmp.md5; \
+	if diff $(TMPDIR)/tmp.md5 $(TMPDIR)/omim.ttl.md5 >/dev/null 2>&1; \
+		then echo same; else echo different; fi; fi
+
+# failed attempts
+# https://stackoverflow.com/questions/2019989/how-to-assign-the-output-of-a-command-to-a-makefile-variable
+# - i see DIFF=hi in terminal, but echo is blank
+#	DIFF=$(shell echo hi); echo $(DIFF)
+
+# chat gpt recommended this variation but didn't work
+#	if [ $(MIR) = true ] && [ $(COMP) = true ]; then wget $(OMIM_URI).md5 -O $(TMPDIR)/tmp.md5; \
+#	if [ diff $(TMPDIR)/tmp.md5 $(TMPDIR)/omim.ttl.md5 >/dev/null 2>&1 ]; \
+#		then echo hello; fi; fi
+
+# https://www.gnu.org/software/make/manual/html_node/Conditional-Example.html
+#component-download-omim.owl: | $(TMPDIR)
+#	wget $(OMIM_URI).md5 -O $(TMPDIR)/tmp.md5
+#ifeq ($(diff $(TMPDIR)/tmp.md5 $(TMPDIR)/omim.ttl.md5), "")
+#	echo hi
+#endif
+
+# https://stackoverflow.com/questions/3611846/bash-using-the-result-of-a-diff-in-a-if-statement
+# - tried various ways. evaluated to "IFF", or results of variable not stored. tried with $(eval ...) too.
+#	if [ $(MIR) = true ] && [ $(COMP) = true ]; then wget $(OMIM_URI).md5 -O $(TMPDIR)/tmp.md5; \
+#	DIFF=$(diff $(TMPDIR)/tmp.md5 $(TMPDIR)omim/-bad.ttl.md5); \
+#	if [ "${DIFF}" == "" ]; \
+#		then echo "${DIFF}"; fi; fi
+
+# https://stackoverflow.com/questions/3611846/bash-using-the-result-of-a-diff-in-a-if-statement
+# - also tried with: $(shell diff $(TMPDIR)/tmp.md5 $(TMPDIR)/omim-bad.ttl.md5) &>/dev/null    and got /bin/sh: 38141b8c7b3a1f769c997d22dc84e30b: No such file or directory  . also tried "&>/dev/null" inside of $()
+#	if [ $(MIR) = true ] && [ $(COMP) = true ]; then wget $(OMIM_URI).md5 -O $(TMPDIR)/tmp.md5; \
+#	if [ ! diff $(TMPDIR)/tmp.md5 $(TMPDIR)/omim.ttl.md5 &>/dev/null ]; \
+#		then echo DOWNLOADING; fi; fi
+
+# todo: also: instead of passing URI to robot, would need to DL and store md5 as <DOWNLOAD_NAME>.md5
+#	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/omim/releases/latest/download/omim.ttl \
+#	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+
 # Illegal punning on some properties #60: https://github.com/monarch-initiative/omim/issues/60
 # todo: what does this have to do with #60 exactly? Does it address it? can that issue be closed?
 $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-download-omim.owl
