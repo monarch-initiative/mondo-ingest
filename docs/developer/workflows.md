@@ -19,6 +19,7 @@ These workflows will determine slurpable / migratable terms. That is, terms that
 #### Makefile goals
 1. `slurp/%.tsv` and `slurp-%`: For a given ontology, determine all slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.
 2. `slurp-all`: Runs slurp / migrate for all ontologies.
+3. `slurp-docs`: Creates a [page](../reports/migrate.md) listing 'n' migratable terms by ontology as well as and pages for each ontology with more detailed information.
 
 ## Mapping progress
 These workflows will create a [mapping progress report](../reports/unmapped.md) with statistics, with linked pages for each ontology that show unmapped terms.
@@ -36,7 +37,7 @@ These workflows will create a [report of deprecated terms with Mondo xrefs](../r
 #### Makefile goals
 1. `reports/%_mapped_deprecated_terms.robot.template.tsv`: A table of all of the deprecated terms from a given ontology that have existing mappings in Mondo.
 2. `mapped-deprecated-terms-artefacts`: Creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.
-3. `mapped-deprecated-terms-docs`: Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.
+3. `mapped-deprecated-terms-docs`: Creates a report of statistics for [mapped deprecated terms](../reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.
 4. `mapped-deprecated-terms`: Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.
 
 

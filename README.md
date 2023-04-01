@@ -14,4 +14,7 @@ The [mapping progress report](./docs/reports/unmapped.md) consists lists of all 
 as a table of statistics showing total number of terms, excluded terms, deprecated terms, and unmapped terms.
 
 ### Mapped deprecated terms
-The [mapped deprecated terms](./docs/reports/mapped_deprecated.md) contains a table of statistics showing total number of deprecated terms that have existing xrefs in Mondo, for each ontology. There is also a link to a page for each ontology which shows the term IDs and their corresponding mapped Mondo ID(s). 
+The [_mapped deprecated terms_ page](./docs/reports/mapped_deprecated.md) contains a table of statistics showing total number of deprecated terms that have existing xrefs in Mondo, for each ontology. There is also a link to a page for each ontology which shows the term IDs and their corresponding mapped Mondo ID(s). 
+
+### Migratable terms
+The [_migrate_ page](./docs/reports/migrate.md) contains a table of statistics showing of terms ready for migration / integration into Mondo.
