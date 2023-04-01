@@ -1,13 +1,10 @@
 ## Customize Makefile settings for mondo-ingest
 ## 
 ## If you need to customize your Makefile, make changes here rather than in the main Makefile
-.PHONY: build-mondo-ingest deploy-mondo-ingest documentation excluded-xrefs-in-mondo mappings \
-report-mapping-annotations slurp-% slurp-all update-jinja-sparql-queries exclusions-%
 
 ####################################
 ### Standard constants #############
 ####################################
-
 MAPPINGSDIR=../mappings
 SKIP_HUGE=false
 
@@ -29,7 +26,6 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 #######################################
 ### Ingest Components #################
 #######################################
-
 # This section is concerned with transforming the incoming sources into the
 # Monarch Ingest schema.
 # Illegal punning on some properties #60: https://github.com/monarch-initiative/omim/issues/60
@@ -179,7 +175,6 @@ mappings: $(ALL_MAPPINGS)
 ####################################
 ##### Mapping progress monitor #####
 ####################################
-
 .PHONY: mapping-progress-report
 mapping-progress-report: unmapped-terms-tables unmapped-terms-docs
 
@@ -198,17 +193,6 @@ $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR
 	--db-path $(COMPONENTSDIR)/$*.db \
 	--outpath-simple $(REPORTDIR)/$*_unmapped_terms.tsv \
 	--outpath-full $(REPORTDIR)/$*_mapping_status.tsv
-
-#################
-##### Utils #####
-#################
-# Deprecated goal. Here for future reference.
-report-mapping-annotations:
-	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
-
-update-jinja-sparql-queries:
-	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
-	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
 #################
 ### Exclusions ##
@@ -262,9 +246,9 @@ $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/excluded_terms_in_mo
 
 excluded-xrefs-in-mondo: $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv
 
-#################
-# Documentation #
-#################
+###################
+## Documentation ##
+###################
 SOURCE_DOC_TEMPLATE=config/source_documentation.md.j2
 SOURCE_METRICS_TEMPLATE=config/source_metrics.md.j2
 ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/sources/$(n).md)
@@ -290,11 +274,14 @@ metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
 ../../docs/metrics/%.md: metadata/%-metrics.json | ../../docs/metrics/
 	j2 "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
 
+.PHONY: j2
 j2:
 	pip install j2cli j2cli[yaml]
 
+.PHONY: documentation
 documentation: j2 $(ALL_DOCS) mapping-progress-report
 
+.PHONY: build-mondo-ingest
 build-mondo-ingest:
 	$(MAKE) refresh-imports
 	$(MAKE) recreate-components
@@ -307,6 +294,7 @@ build-mondo-ingest:
 	$(MAKE) documentation
 	$(MAKE) prepare_release
 
+.PHONY: build-mondo-ingest-no-imports
 build-mondo-ingest-no-imports:
 	$(MAKE_FAST) exclusions-all
 	$(MAKE_FAST) slurp-all
@@ -319,6 +307,7 @@ build-mondo-ingest-no-imports:
 
 DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
 
+.PHONY: deploy-mondo-ingest
 deploy-mondo-ingest:
 	@test $(GHVERSION)
 	ls -alt $(DEPLOY_ASSETS_MONDO_INGEST)
@@ -326,7 +315,7 @@ deploy-mondo-ingest:
 
 USE_MONDO_RELEASE=false
 
-tmp/mondo.owl:
+tmp/mondo.owl tmp/mondo.sssom.tsv:
 	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
 		rm -rf ./mondo/ &&\
 		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
@@ -409,25 +398,6 @@ extract-unmapped-matches: lexmatch/README.md
 matches: lexical-matches extract-unmapped-matches
 
 #############################
-######### Analysis ##########
-#############################
-.PHONY: mapped-deprecated-terms
-mapped-deprecated-terms: mapped-deprecated-terms-artefacts mapped-deprecated-terms-docs
-
-.PHONY: mapped-deprecated-terms-docs
-mapped-deprecated-terms-docs:
-	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py --docs
-
-.PHONY: mapped-deprecated-terms-artefacts
-mapped-deprecated-terms-artefacts: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
-
-$(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mapping_status.tsv tmp/mondo.sssom.tsv
-	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py \
-	--mondo-mappings-path tmp/mondo.sssom.tsv \
-	--mapping-status-path $(REPORTDIR)/$*_mapping_status.tsv \
-	--outpath $@
-
-#############################
 ###### Slurp pipeline #######
 #############################
 # todo: What if the mirror was out of date, but there's already a .db file there, but it's not up to date?
@@ -459,22 +429,57 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_ter
 	--slurp-dir-path slurp/ \
 	--outpath $@
 
+.PHONY: slurp-%
 slurp-%:
 	$(MAKE) slurp/$*.tsv -B
 
+.PHONY: slurp-no-updates-%
 slurp-no-updates-%:
 	$(MAKE) slurp/$*.tsv
 
 # todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
+.PHONY: slurp-all-no-updates
 slurp-all-no-updates: slurp-no-updates-omim slurp-no-updates-doid slurp-no-updates-ordo slurp-no-updates-icd10cm slurp-no-updates-icd10who slurp-no-updates-ncit
 
 # todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
+.PHONY: slurp-all
 slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit
 
-##################################
-##### Utilities ###################
-##################################
+#############################
+######### Analysis ##########
+#############################
+.PHONY: mapped-deprecated-terms
+mapped-deprecated-terms: mapped-deprecated-terms-artefacts mapped-deprecated-terms-docs
 
+.PHONY: mapped-deprecated-terms-docs
+mapped-deprecated-terms-docs:
+	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py --docs
+
+.PHONY: mapped-deprecated-terms-artefacts
+mapped-deprecated-terms-artefacts: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
+
+$(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mapping_status.tsv tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py \
+	--mondo-mappings-path tmp/mondo.sssom.tsv \
+	--mapping-status-path $(REPORTDIR)/$*_mapping_status.tsv \
+	--outpath $@
+
+#################
+##### Utils #####
+#################
+# Deprecated goal. Here for future reference.
+.PHONY: report-mapping-annotations
+report-mapping-annotations:
+	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/report_mapping_annotations.py
+
+.PHONY: update-jinja-sparql-queries
+update-jinja-sparql-queries:
+	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
+	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
+
+#############################
+########### Help ############
+#############################
 # $$data: This prints the help message from imported makefiles.
 .PHONY: help
 help:
@@ -482,10 +487,12 @@ help:
 	@echo "----------------------------------------"
 	@echo "	Command reference: mondo-ingest"
 	@echo "----------------------------------------"
+	# Slurp / migrate
 	@echo "slurp/%.tsv and slurp-%"
 	@echo "For a given ontology, determine all slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.\n"
 	@echo "slurp-all"
 	@echo "Runs slurp / migrate for all ontologies.\n"
+	# Unmapped matches
 	@echo "extract-unmapped-matches"
 	@echo "Determine all new matches across external ontologies.\n"
 	# Lexical matches
@@ -509,6 +516,7 @@ help:
 	@echo "mapped-deprecated-terms-docs"
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.\n"
 	@echo "mapped-deprecated-terms"
+	# Exclusions
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"
 	@echo "reports/%_term_exclusions.txt"
 	@echo "A simple list of terms to exclude from integration into Mondo from the given ontology.\n"
