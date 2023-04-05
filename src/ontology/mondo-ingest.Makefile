@@ -331,8 +331,7 @@ tmp/mondo.owl:
 		rm -rf ./mondo/ &&\
 		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
 		cd mondo/src/ontology &&\
-		make mondo.owl IMP=false MIR=false &&\
-		make mappings IMP=false MIR=false  &&\
+		make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
 		cd ../../../../ &&\
 		cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@ &&\
 		cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $(TMPDIR)/mondo.sssom.tsv &&\
