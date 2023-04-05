@@ -10,6 +10,7 @@
 | MONDO:0002063 | DOID:1634    | MONDO:equivalentObsolete |
 | MONDO:0002202 | DOID:2088    | MONDO:equivalentObsolete |
 | MONDO:0002203 | DOID:2089    | MONDO:equivalentObsolete |
+| MONDO:0002444 | DOID:2848    | MONDO:equivalentObsolete |
 | MONDO:0002633 | DOID:338     | MONDO:equivalentObsolete |
 | MONDO:0003495 | DOID:5532    | MONDO:equivalentObsolete |
 | MONDO:0003723 | DOID:5996    | MONDO:equivalentObsolete |
@@ -21,6 +22,7 @@
 | MONDO:0008060 | DOID:0080088 | MONDO:equivalentObsolete |
 | MONDO:0009679 | DOID:0110631 | MONDO:equivalentObsolete |
 | MONDO:0010936 | DOID:0060208 | MONDO:equivalentObsolete |
+| MONDO:0010975 | DOID:0110071 | MONDO:equivalentObsolete |
 | MONDO:0011010 | DOID:0050819 | MONDO:equivalentObsolete |
 | MONDO:0011910 | DOID:0110302 | MONDO:equivalentObsolete |
 | MONDO:0012215 | DOID:0110300 | MONDO:equivalentObsolete |
