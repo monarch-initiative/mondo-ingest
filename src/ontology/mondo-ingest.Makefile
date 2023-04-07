@@ -199,6 +199,14 @@ $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR
 	--outpath-simple $(REPORTDIR)/$*_unmapped_terms.tsv \
 	--outpath-full $(REPORTDIR)/$*_mapping_status.tsv
 
+components/%-unmapped.owl: components/%.owl reports/%_unmapped_terms.tsv
+	cut -f 1 reports/$*_unmapped_terms.tsv | tail -n +2 > reports/$*_unmapped_terms.txt
+	$(ROBOT) filter -i components/$*.owl -T reports/$*_unmapped_terms.tsv -o $@
+	rm reports/$*_unmapped_terms.txt
+
+.PHONY: recreate-unmapped-components
+recreate-unmapped-components: $(patsubst %, components/%-unmapped.owl, $(ALL_COMPONENT_IDS))
+
 #################
 ##### Utils #####
 #################
@@ -509,6 +517,10 @@ help:
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.\n"
 	@echo "mapped-deprecated-terms"
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"
+	@echo "components/%-unmapped.owl"
+	@echo "Creates an OWL component of the ontology which consists only of the subset of terms which are current mapping candidates.\n"
+	@echo "recreate-unmapped-components"
+	@echo "Runs components/%-unmapped.owl for all ontologies.\n"
 	@echo "reports/%_term_exclusions.txt"
 	@echo "A simple list of terms to exclude from integration into Mondo from the given ontology.\n"
 	@echo "reports/%_exclusion_reasons.robot.template.tsv"
