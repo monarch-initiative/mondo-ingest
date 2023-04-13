@@ -41,7 +41,6 @@
 | DOID:0080990 | King Denborough syndrome                                                                       |
 | DOID:0081066 | MCD diffuse large B-cell lymphoma                                                              |
 | DOID:0081067 | N1 diffuse large B-cell lymphoma                                                               |
-| DOID:0081334 | Nestor-Guillermo progeria syndrome                                                             |
 | DOID:0050192 | Nipah virus encephalitis                                                                       |
 | DOID:0080855 | Parkinsonism                                                                                   |
 | DOID:0112060 | Raynaud-Claes syndrome                                                                         |
@@ -50,7 +49,6 @@
 | DOID:0111965 | T cell, B cell, and NK cell deficiency                                                         |
 | DOID:0080817 | T2-high asthma                                                                                 |
 | DOID:0080818 | T2-low asthma                                                                                  |
-| DOID:0081333 | Wiedemann-Rautenstrauch syndrome                                                               |
 | DOID:0081059 | X-linked central diabetes insipidus                                                            |
 | DOID:0111863 | X-linked congenital bilateral absence of vas deferens                                          |
 | DOID:0111844 | X-linked intellectual developmental disorder 108                                               |
@@ -281,8 +279,6 @@
 | DOID:0080712 | gene duplication disease                                                                       |
 | DOID:0080601 | germ cell benign neoplasm                                                                      |
 | DOID:0081034 | glutatione synthetase deficiency with 5-oxoprolinuria                                          |
-| DOID:0081329 | glycogen storage disease I                                                                     |
-| DOID:0081330 | glycogen storage disease Ib                                                                    |
 | DOID:0081331 | glycogen storage disease Ic                                                                    |
 | DOID:0081308 | grade I lymphomatoid granulomatosis                                                            |
 | DOID:0081309 | grade II lymphomatoid granulomatosis                                                           |
@@ -310,8 +306,6 @@
 | DOID:0080935 | immunoglobulin heavy-and-light chain                                                           |
 | DOID:0081278 | infant-type hemispheric glioma                                                                 |
 | DOID:0081239 | injection anthrax                                                                              |
-| DOID:0081262 | intellectual developmental disorder with hypotonia, impaired speech, and dysmorphic facies     |
-| DOID:0081301 | intellectual developmental disorder with ocular anomalies and distinctive facial features      |
 | DOID:0080812 | intermittent asthma                                                                            |
 | DOID:0080964 | intracranial berry aneurysm 1                                                                  |
 | DOID:0080973 | intracranial berry aneurysm 10                                                                 |
@@ -366,8 +360,6 @@
 | DOID:0080823 | near-fatal asthma                                                                              |
 | DOID:0070341 | neonatal-onset type II citrullinemia                                                           |
 | DOID:0081061 | nephrogenic diabetes insipidus type 2                                                          |
-| DOID:0081275 | neurodevelopmental disorder with eye movement abnormalities and ataxia                         |
-| DOID:0081324 | neurodevelopmental disorder with poor growth, spastic tetraplegia, and hearing loss            |
 | DOID:0080826 | nocturnal asthma                                                                               |
 | DOID:0081014 | non-severe COVID-19                                                                            |
 | DOID:0112040 | non-syndromic X-linked intellectual disability 100                                             |
@@ -459,7 +451,6 @@
 | DOID:0111847 | osteogenesis imperfecta type 19                                                                |
 | DOID:0111849 | osteogenesis imperfecta type 20                                                                |
 | DOID:0080841 | pemphigoid                                                                                     |
-| DOID:0081241 | peroxisome biogenesis disorder 3B                                                              |
 | DOID:0080813 | persistent mild asthma                                                                         |
 | DOID:0080814 | persistent moderate asthma                                                                     |
 | DOID:0080824 | persistent severe asthma                                                                       |
@@ -512,14 +503,11 @@
 | DOID:0080864 | primary ovarian insufficiency 7                                                                |
 | DOID:0080865 | primary ovarian insufficiency 8                                                                |
 | DOID:0080866 | primary ovarian insufficiency 9                                                                |
-| DOID:0081332 | progeroid syndrome                                                                             |
 | DOID:0111452 | progressive myoclonus epilepsy 1A                                                              |
 | DOID:0080787 | proximal symphalangism 1                                                                       |
 | DOID:0080788 | proximal symphalangism 2                                                                       |
 | DOID:60001   | pulmonary artery disease                                                                       |
 | DOID:0080687 | reducing body myopathy 1B                                                                      |
-| DOID:0070369 | restrictive dermopathy 1                                                                       |
-| DOID:0070370 | restrictive dermopathy 2                                                                       |
 | DOID:0080992 | rhabdomyolysis-myalgia syndrome                                                                |
 | DOID:0081243 | rhizomelic chondrodysplasia punctate type 4                                                    |
 | DOID:0081013 | severe COVID-19                                                                                |
