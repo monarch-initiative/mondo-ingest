@@ -305,13 +305,13 @@ documentation: j2 $(ALL_DOCS) mapping-progress-report
 
 build-mondo-ingest:
 	$(MAKE) refresh-imports
-	$(MAKE) recreate-components
 	$(MAKE) exclusions-all
 	$(MAKE) slurp-all
 	$(MAKE) mappings
 	$(MAKE) matches
 	$(MAKE) mapped-deprecated-terms
 	$(MAKE) mapping-progress-report
+	$(MAKE) recreate-unmapped-components
 	$(MAKE) documentation
 	$(MAKE) prepare_release
 
@@ -322,6 +322,7 @@ build-mondo-ingest-no-imports:
 	$(MAKE_FAST) matches
 	$(MAKE_FAST) mapped-deprecated-terms
 	$(MAKE_FAST) mapping-progress-report
+	$(MAKE_FAST) recreate-unmapped-components
 	$(MAKE_FAST) documentation
 	$(MAKE_FAST) prepare_release
 
