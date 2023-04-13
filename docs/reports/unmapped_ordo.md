@@ -50,7 +50,6 @@
 | Orphanet:522552 | Lens position anomaly of genetic origin                                                                                                     |
 | Orphanet:522550 | Lens size anomaly of genetic origin                                                                                                         |
 | Orphanet:565785 | Methotrexate dose selection                                                                                                                 |
-| Orphanet:631248 | Mitchell Syndrome                                                                                                                           |
 | Orphanet:90056  | Moderate and severe traumatic brain injury                                                                                                  |
 | Orphanet:634511 | Mosaic Legius syndrome                                                                                                                      |
 | Orphanet:634475 | Mosaic NF2-related schwannomatosis                                                                                                          |
@@ -135,9 +134,6 @@
 | Orphanet:544260 | Selection of therapeutic option in melanoma                                                                                                 |
 | Orphanet:357191 | Selection of therapeutic option in non-small cell lung carcinoma                                                                            |
 | Orphanet:618572 | Selection of therapeutic option in ovarian cancer                                                                                           |
-| Orphanet:631095 | Spinocerebellar ataxia type 44                                                                                                              |
-| Orphanet:631103 | Spinocerebellar ataxia type 48                                                                                                              |
-| Orphanet:631106 | Spinocerebellar ataxia type 49                                                                                                              |
 | Orphanet:633076 | Split cord malformation, composite type                                                                                                     |
 | Orphanet:253    | Spondyloepiphyseal dysplasia and spondyloepimetaphyseal dysplasia                                                                           |
 | Orphanet:519321 | Syndromic chorioretinal dystrophy                                                                                                           |
