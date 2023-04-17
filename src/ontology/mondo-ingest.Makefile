@@ -88,6 +88,7 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-dow
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/rm_xref_by_prefix.ru \
+			--update ../sparql/fix_make_omim_exact.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/doid.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/doid.owl -o $@; fi
 
