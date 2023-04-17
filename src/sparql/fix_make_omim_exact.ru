@@ -8,7 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 
 INSERT {
-  ?entity skos:exactMatch ?value .
+  ?cls skos:exactMatch ?value .
 }
 
 WHERE 
