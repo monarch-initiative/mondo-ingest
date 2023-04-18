@@ -11,8 +11,7 @@ from typing import Dict, List
 import pandas as pd
 from jinja2 import Template
 
-from utils import DOCS_DIR, REPORTS_DIR
-
+from utils import DOCS_DIR, PROJECT_DIR, REPORTS_DIR
 
 GLOB_PATTERN_FULL_TABLES = os.path.join(REPORTS_DIR, '*_mapping_status.tsv')
 GLOB_PATTERN_SIMPLE_TABLES = os.path.join(REPORTS_DIR, '*_unmapped_terms.tsv')
@@ -28,9 +27,13 @@ JINJA_MAIN_PAGE = """# Mapping progress report
 deprecated.  
 `Tot mapped (mappable)`: Total mapped terms (that are mappable in Mondo). Includes exact, broad, and narrow mappings.  
 `Tot unmapped (mappable)`: Total unmapped terms (that are mappable in Mondo)  
-`% unmapped (mappable)`: % unmapped terms (that are mappable in Mondo)  """
+`% unmapped (mappable)`: % unmapped terms (that are mappable in Mondo)
+
+To run the workflow that creates this data, refer to the [workflows documentation](../developer/workflows.md)."""
 OUT_PATH = os.path.join(UNMAPPED_DOCS_DIR, 'unmapped.md')
 JINJA_ONTO_PAGES = """## {{ ontology_name }}
+[Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename={{ source_data_path }})
+
 ### Unmapped mappable terms _(!excluded, !deprecated)_
 {{ table }}"""
 
@@ -74,8 +77,10 @@ def update_mapping_progress_in_docs():
         ontology_name = os.path.basename(path).replace('_unmapped_terms.tsv', '')
         outpath = os.path.join(UNMAPPED_DOCS_DIR, f'unmapped_{ontology_name.lower()}.md')
         df = pd.read_csv(path, sep='\t').fillna('')
+        path = path.replace('_unmapped_terms', '_mapping_status')  # display 'mapping status' file instead
+        relpath = os.path.realpath(path).replace(PROJECT_DIR + '/', '')
         instantiated_str: str = Template(JINJA_ONTO_PAGES).render(
-            ontology_name=ontology_name.upper(), table=df.to_markdown(index=False))
+            ontology_name=ontology_name.upper(), table=df.to_markdown(index=False), source_data_path=relpath)
         with open(outpath, 'w') as f:
             f.write(instantiated_str)
 

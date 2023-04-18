@@ -1,5 +1,3 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
 MONDO:0004979	asthma	skos:broadMatch	DOID:0080821	exercise-induced bronchoconstriction	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	exercise-induced asthma	LEXMATCH
-MONDO:0015134	constitutional neutropenia	skos:broadMatch	DOID:0112133	severe congenital neutropenia 3	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	kostmann syndrome	LEXMATCH
-MONDO:0015134	constitutional neutropenia	skos:broadMatch	DOID:0112133	severe congenital neutropenia 3	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	kostmann disorder	LEXMATCH
-MONDO:0016643	frontonasal dysplasia	skos:broadMatch	DOID:0081045	frontonasal dysplasia 1	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	frontonasal dysplasia type 1	LEXMATCH
+MONDO:0008048	autosomal dominant centronuclear myopathy	skos:broadMatch	DOID:0111223	centronuclear myopathy 1	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	centronuclear myopathy 1	LEXMATCH

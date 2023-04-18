@@ -20,9 +20,10 @@ from pandas.errors import EmptyDataError
 PREFIX = str
 TRIPLE = RELATIONSHIP
 SCRIPTS_DIR = os.path.dirname(os.path.realpath(__file__))
-PROJECT_DIR = os.path.join(SCRIPTS_DIR, '..', '..')
+PROJECT_DIR = os.path.realpath(os.path.join(SCRIPTS_DIR, '..', '..'))
 ONTOLOGY_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology')
 REPORTS_DIR = os.path.join(ONTOLOGY_DIR, 'reports')
+SLURP_DIR = os.path.join(ONTOLOGY_DIR, 'slurp')
 SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 TEMP_DIR = os.path.join(ONTOLOGY_DIR, 'tmp')
 DOCS_DIR = os.path.join(PROJECT_DIR, 'docs')

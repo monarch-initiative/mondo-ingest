@@ -13,7 +13,7 @@ import pandas as pd
 from jinja2 import Template
 from oaklib.types import CURIE
 
-from utils import DOCS_DIR, REPORTS_DIR
+from utils import DOCS_DIR, PROJECT_DIR, REPORTS_DIR
 
 
 FILENAME_GLOB_PATTERN = '*_mapped_deprecated_terms.robot.template.tsv'
@@ -24,9 +24,12 @@ JINJA_MAIN_PAGE = """# Mapped deprecated terms
 
 `Ontology`: Name of ontology    
 `Tot deprecated in Mondo`: Total terms that the ontology source itself has deprecated which have existing xrefs in Mondo
-"""
-OUT_PATH = os.path.join(THIS_DOCS_DIR, 'mapped_deprecated.md')
+
+To run the workflow that creates this data, refer to the [workflows documentation](../developer/workflows.md)."""
+DOCS_OUT_PATH = os.path.join(THIS_DOCS_DIR, 'mapped_deprecated.md')
 JINJA_ONTO_PAGES = """## {{ ontology_name }}
+[Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename={{ source_data_path }})
+
 ### Mapped deprecated terms
 {{ table }}"""
 
@@ -44,8 +47,9 @@ def deprecated_in_mondo_docs():
         ontology_page_relpath = f'./mapped_deprecated_{ontology_name.lower()}.md'
         df = pd.read_csv(path, sep='\t').fillna('')
         # Individual pages
+        relpath = os.path.realpath(path).replace(PROJECT_DIR + '/', '')
         instantiated_str: str = Template(JINJA_ONTO_PAGES).render(
-            ontology_name=ontology_name.upper(), table=df.to_markdown(index=False))
+            ontology_name=ontology_name.upper(), table=df.to_markdown(index=False), source_data_path=relpath)
         with open(os.path.join(THIS_DOCS_DIR, ontology_page_relpath.replace('./', '')), 'w') as f:
             f.write(instantiated_str)
         # Stats
@@ -57,7 +61,7 @@ def deprecated_in_mondo_docs():
     # Stats: save
     stats_df = pd.DataFrame(stats_rows).sort_values(['Tot deprecated in Mondo'], ascending=False)
     instantiated_str: str = Template(JINJA_MAIN_PAGE).render(stats_markdown_table=stats_df.to_markdown(index=False))
-    with open(OUT_PATH, 'w') as f:
+    with open(DOCS_OUT_PATH, 'w') as f:
         f.write(instantiated_str)
 
 
