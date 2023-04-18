@@ -16,4 +16,6 @@
 deprecated.  
 `Tot mapped (mappable)`: Total mapped terms (that are mappable in Mondo). Includes exact, broad, and narrow mappings.  
 `Tot unmapped (mappable)`: Total unmapped terms (that are mappable in Mondo)  
-`% unmapped (mappable)`: % unmapped terms (that are mappable in Mondo)  
+`% unmapped (mappable)`: % unmapped terms (that are mappable in Mondo)
+
+To run the workflow that creates this data, refer to the [workflows documentation](../developer/workflows.md).

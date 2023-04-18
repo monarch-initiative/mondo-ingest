@@ -13,17 +13,41 @@ todo: refactor to take in 'unmapped mapppable' terms i.e. reports/%_unmapped_ter
 """
 import os
 from argparse import ArgumentParser
+from glob import glob
 from typing import Dict, List, Set, Union
 
 import pandas as pd
 import yaml
+from jinja2 import Template
 from oaklib.implementations import ProntoImplementation
 from oaklib.types import CURIE, URI
 
-from utils import CACHE_DIR, PREFIX, Term, _get_all_owned_terms, _get_next_available_mondo_id, \
-    get_excluded_terms, get_mondo_term_ids, _load_ontology
+from utils import CACHE_DIR, DOCS_DIR, PREFIX, PROJECT_DIR, Term, _get_all_owned_terms, _get_next_available_mondo_id, \
+    get_excluded_terms, get_mondo_term_ids, _load_ontology, SLURP_DIR
 
 
+FILENAME_GLOB_PATTERN = '*.tsv'
+PATH_GLOB_PATTERN = os.path.join(SLURP_DIR, FILENAME_GLOB_PATTERN)
+THIS_DOCS_DIR = os.path.join(DOCS_DIR, 'reports')
+OUT_PATH = os.path.join(THIS_DOCS_DIR, 'migrate.md')
+JINJA_MAIN_PAGE = """# Migratable terms
+{{ stats_markdown_table }}
+
+### Codebook
+`Ontology`: Name of ontology    
+`Tot`: Total terms migratable
+
+### Definitions
+**Migratable term**: A term owned by the given ontology but unmapped in Mondo, which has either no parents, or if it has 
+parents, all of its parents have already been mapped in Mondo.
+
+### Workflows
+To run the workflow that creates this data, refer to the [workflows documentation](../developer/workflows.md)."""
+JINJA_ONTO_PAGES = """## {{ ontology_name }}
+[Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename={{ source_data_path }})
+
+### Migratable terms
+{{ table }}"""
 ROBOT_TEMPLATE_HEADER = {
     'mondo_id': 'ID', 'mondo_label': 'LABEL', 'xref': 'A oboInOwl:hasDbXref',
     'xref_source': '>A oboInOwl:source SPLIT=|', 'original_label': '', 'definition': 'A IAO:0000115', 'parents': 'SC %'}
@@ -73,8 +97,8 @@ def slurp(
     slurp_candidates = [x for x in unmapped_terms if x.curie not in excluded_terms]  # remove exclusions
 
     # Determine slurpable terms
-    # - Slurpable term: A term for which all parents are already slurped. In other words, no parent is owned by the
-    # ontology but unmapped in Mondo.
+    # Migratable term: A term owned by the given ontology but unmapped in Mondo, which has either no parents, or if it
+    # has parents, all of its parents have already been mapped in Mondo.
     terms_to_slurp: List[Dict[str, str]] = []
     for t in slurp_candidates:
         # If all T.parents mapped, and 1+ is an exact or narrow match and non obsolete, designate T for slurping
@@ -111,56 +135,91 @@ def slurp(
     return result
 
 
+def slurp_docs():
+    """Update documentation with info about slurp / migrate"""
+    # Read sources
+    # todo: what's best way to gather ontology names? There's a way in the makefile. Is this not right to do here?
+    paths: List[str] = glob(PATH_GLOB_PATTERN)
+
+    # Create pages & build stats
+    stats_rows: List[Dict] = []
+    for path in paths:
+        ontology_name = os.path.basename(path).replace(FILENAME_GLOB_PATTERN[1:], '')
+        ontology_page_relpath = f'./migrate_{ontology_name.lower()}.md'
+        df = pd.read_csv(path, sep='\t').fillna('')
+        # Individual pages
+        relpath = os.path.realpath(path).replace(PROJECT_DIR + '/', '')
+        instantiated_str: str = Template(JINJA_ONTO_PAGES).render(
+            ontology_name=ontology_name.upper(), table=df.to_markdown(index=False), source_data_path=relpath)
+        with open(os.path.join(THIS_DOCS_DIR, ontology_page_relpath.replace('./', '')), 'w') as f:
+            f.write(instantiated_str)
+        # Stats
+        stats_rows.append({
+            'Ontology': f'[{ontology_name.upper()}]({ontology_page_relpath})',
+            'Tot': f"{len(df) - 1:,}",  # -1 because robot template subheader
+        })
+
+    # Stats: save
+    stats_df = pd.DataFrame(stats_rows).sort_values(['Tot'], ascending=False)
+    instantiated_str: str = Template(JINJA_MAIN_PAGE).render(stats_markdown_table=stats_df.to_markdown(index=False))
+    with open(OUT_PATH, 'w') as f:
+        f.write(instantiated_str)
+
+
 # todo: add way to not read from cache, but write to cache
 def cli():
     """Command line interface."""
-    package_description = \
-        'Slurp pipeline: Integrate new terms from other ontologies into Mondo.'
-    parser = ArgumentParser(description=package_description)
+    parser = ArgumentParser(prog='Migrate', description='Integrate new terms from other ontologies into Mondo.')
+    # slurp_() args
     parser.add_argument(
-        '-o', '--ontology-path', required=True,
-        help='Path to ontology file, e.g. an `.owl` file.')
+        '-o', '--ontology-path',
+        help='Required. Path to ontology file, e.g. an `.owl` file.')
     parser.add_argument(
-        '-c', '--onto-config-path', required=True,
-        help='Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
+        '-c', '--onto-config-path',
+        help='Required. Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
              'list of prefixes owned by the ontology. Used to filter out terms.')
     parser.add_argument(
-        '-e', '--onto-exclusions-path', required=True,
-        help='Path to a text file, e.g with naming pattern `<ontology>_term_exclusions.txt` which contains a list of '
-             ' terms that are exclueded from inclusion into Mondo. Should be a plain file of line break delimited terms'
-             '; only 1 column with no column header.')
+        '-e', '--onto-exclusions-path',
+        help='Required. Path to a text file, e.g with naming pattern `<ontology>_term_exclusions.txt` which contains a '
+             'list of  terms that are exclueded from inclusion into Mondo. Should be a plain file of line break '
+             'delimited terms; only 1 column with no column header.')
     parser.add_argument(
-        '-s', '--mondo-mappings-path', required=True,
-        help='Path to file containing all known Mondo mappings, in SSSOM format.')
+        '-s', '--mondo-mappings-path',
+        help='Required. Path to file containing all known Mondo mappings, in SSSOM format.')
     parser.add_argument(
-        '-m', '--min-id', required=False,
+        '-m', '--min-id',
         help='The Mondo ID from which we want to begin to possibly allow for assignment of new Mondo IDs for any'
              ' unslurped terms. Only necessary if no slurp/%.tsv\'s exist. Otherwise, will be ignored, and the min-id '
              'will be determined based on the highest ID assigned in the slurp/%.tsv\'s.')
     parser.add_argument(
-        '-M', '--max-id', required=True,
-        help='The max Mondo ID we should ever assign for any unslurped terms.')
+        '-M', '--max-id',
+        help='Required. The max Mondo ID we should ever assign for any unslurped terms.')
     parser.add_argument(
-        '-t', '--mondo-terms-path', required=True,
-        help='Path to a file that contains a list of all Mondo terms.')
+        '-t', '--mondo-terms-path',
+        help='Required. Path to a file that contains a list of all Mondo terms.')
     parser.add_argument(
-        '-l', '--slurp-dir-path', required=True,
-        help='Path to `slurp/` dir where other slurp files are checked so that any assigned Mondo IDs are not re-used')
+        '-l', '--slurp-dir-path',
+        help='Required. Path to `slurp/` dir where other slurp files are checked so that any assigned Mondo IDs are not'
+             ' re-used')
     parser.add_argument(
-        '-O', '--outpath', required=True,
-        help='Path to save the output slurp `.tsv` file, containing list of new terms to integrate into Mondo.')
+        '-O', '--outpath',
+        help='Required. Path to save the output slurp `.tsv` file, containing list of new terms to integrate to Mondo.')
     parser.add_argument(
-        '-C', '--use-cache', required=False, action='store_true', default=False,
+        '-C', '--use-cache', action='store_true', default=False,
         help='Use cached ontology and owned_terms objects?')
+    # slurp_docs() args
+    parser.add_argument(
+        '-d', '--docs', action='store_true',
+        help='Generates documentation based on any existing "slurp" / "migrate" tables.')
     d: Dict = vars(parser.parse_args())
-
     # Reformatting
-    d['min_id'] = int(d['min_id'])
-    d['max_id'] = int(d['max_id'])
     # todo: Paths: Convert to absolute paths, as I've done before? Or expect always be run from src/ontology and ok?
-
-    # Run
-    slurp(**d)
+    d['min_id'] = int(d['min_id']) if d['min_id'] else None
+    d['max_id'] = int(d['max_id']) if d['max_id'] else None
+    docs = d.pop('docs')
+    if docs and any([d[x] for x in d]):
+        raise RuntimeError('If --docs, don\'t provide any other arguments.')
+    return slurp_docs() if docs else slurp(**d)
 
 
 if __name__ == '__main__':

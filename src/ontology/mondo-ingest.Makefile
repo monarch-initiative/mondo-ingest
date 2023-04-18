@@ -302,7 +302,7 @@ metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
 j2:
 	pip install j2cli j2cli[yaml]
 
-documentation: j2 $(ALL_DOCS) mapping-progress-report
+documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs slurp-docs
 
 build-mondo-ingest:
 	$(MAKE) refresh-imports
@@ -474,6 +474,10 @@ slurp-%:
 slurp-no-updates-%:
 	$(MAKE) slurp/$*.tsv
 
+.PHONY: slurp-docs
+slurp-docs:
+	python3 $(SCRIPTSDIR)/migrate.py --docs
+
 # todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 slurp-all-no-updates: slurp-no-updates-omim slurp-no-updates-doid slurp-no-updates-ordo slurp-no-updates-icd10cm slurp-no-updates-icd10who slurp-no-updates-ncit
 
@@ -495,6 +499,8 @@ help:
 	@echo "For a given ontology, determine all slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.\n"
 	@echo "slurp-all"
 	@echo "Runs slurp / migrate for all ontologies.\n"
+	@echo "slurp-docs"
+	@echo "Creates a page (docs/reports/migrate.md) listing 'n' migratable terms by ontology as well as and pages for each ontology with more detailed information."
 	@echo "extract-unmapped-matches"
 	@echo "Determine all new matches across external ontologies.\n"
 	# Lexical matches
