@@ -88,6 +88,7 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-dow
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/rm_xref_by_prefix.ru \
+			--update ../sparql/fix_make_omim_exact.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/doid.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/doid.owl -o $@; fi
 
@@ -199,6 +200,14 @@ $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR
 	--outpath-simple $(REPORTDIR)/$*_unmapped_terms.tsv \
 	--outpath-full $(REPORTDIR)/$*_mapping_status.tsv
 
+components/%-unmapped.owl: components/%.owl reports/%_unmapped_terms.tsv
+	cut -f 1 reports/$*_unmapped_terms.tsv | tail -n +2 > reports/$*_unmapped_terms.txt
+	$(ROBOT) filter -i components/$*.owl -T reports/$*_unmapped_terms.txt -o $@
+	rm reports/$*_unmapped_terms.txt
+
+.PHONY: recreate-unmapped-components
+recreate-unmapped-components: $(patsubst %, components/%-unmapped.owl, $(ALL_COMPONENT_IDS))
+
 #################
 ##### Utils #####
 #################
@@ -297,13 +306,13 @@ documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs s
 
 build-mondo-ingest:
 	$(MAKE) refresh-imports
-	$(MAKE) recreate-components
 	$(MAKE) exclusions-all
 	$(MAKE) slurp-all
 	$(MAKE) mappings
 	$(MAKE) matches
 	$(MAKE) mapped-deprecated-terms
 	$(MAKE) mapping-progress-report
+	$(MAKE) recreate-unmapped-components
 	$(MAKE) documentation
 	$(MAKE) prepare_release
 
@@ -314,6 +323,7 @@ build-mondo-ingest-no-imports:
 	$(MAKE_FAST) matches
 	$(MAKE_FAST) mapped-deprecated-terms
 	$(MAKE_FAST) mapping-progress-report
+	$(MAKE_FAST) recreate-unmapped-components
 	$(MAKE_FAST) documentation
 	$(MAKE_FAST) prepare_release
 
@@ -331,8 +341,7 @@ tmp/mondo.owl:
 		rm -rf ./mondo/ &&\
 		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
 		cd mondo/src/ontology &&\
-		make mondo.owl IMP=false MIR=false &&\
-		make mappings IMP=false MIR=false  &&\
+		make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
 		cd ../../../../ &&\
 		cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@ &&\
 		cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $(TMPDIR)/mondo.sssom.tsv &&\
@@ -516,6 +525,10 @@ help:
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.\n"
 	@echo "mapped-deprecated-terms"
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"
+	@echo "components/%-unmapped.owl"
+	@echo "Creates an OWL component of the ontology which consists only of the subset of terms which are current mapping candidates.\n"
+	@echo "recreate-unmapped-components"
+	@echo "Runs components/%-unmapped.owl for all ontologies.\n"
 	@echo "reports/%_term_exclusions.txt"
 	@echo "A simple list of terms to exclude from integration into Mondo from the given ontology.\n"
 	@echo "reports/%_exclusion_reasons.robot.template.tsv"
