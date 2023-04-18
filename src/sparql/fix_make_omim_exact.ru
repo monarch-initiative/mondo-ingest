@@ -8,7 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 
 INSERT {
-  ?cls skos:exactMatch ?value .
+  ?cls skos:exactMatch ?iri .
 }
 
 WHERE 
@@ -29,5 +29,6 @@ WHERE
   
   FILTER( STRSTARTS(str(?value), "OMIM"))
   FILTER( !isBlank(?cls) && STRSTARTS(str(?cls), "http://purl.obolibrary.org/obo/DOID_"))
-  
+  BIND(IRI(REPLACE(REPLACE(STR(?value), "OMIMPS:", "https://omim.org/phenotypicSeries/PS"), "OMIM:", "https://omim.org/entry/")) as ?iri)
+
 }
