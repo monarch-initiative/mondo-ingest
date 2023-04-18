@@ -1,34 +1,10 @@
 ## OMIM
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id    | subject_label                                                                                   |
-|:--------------|:------------------------------------------------------------------------------------------------|
-| OMIM:620184   | atelis syndrome 1                                                                               |
-| OMIM:620185   | atelis syndrome 2                                                                               |
-| OMIM:606215   | atrioventricular septal defect                                                                  |
-| OMIM:620076   | bent bone dysplasia syndrome 2                                                                  |
-| OMIM:620207   | blood group, er                                                                                 |
-| OMIM:619980   | braddock-carey syndrome 1                                                                       |
-| OMIM:619981   | braddock-carey syndrome 2                                                                       |
-| OMIM:620067   | cardiac valvular dysplasia 2                                                                    |
-| OMIM:620294   | congenital heart defects, multiple types, 9                                                     |
-| OMIM:620249   | congenital myopathy 10b, mild variant                                                           |
-| OMIM:619967   | congenital myopathy 11                                                                          |
-| OMIM:620161   | congenital myopathy 15                                                                          |
-| OMIM:620246   | congenital myopathy 18                                                                          |
-| OMIM:620265   | congenital myopathy 2b, severe infantile, autosomal recessive                                   |
-| OMIM:620278   | congenital myopathy 2c, severe infantile, autosomal dominant                                    |
-| OMIM:616994   | craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome 2  |
-| OMIM:620025   | diaphragmatic hernia 4, with cardiovascular defects                                             |
-| OMIM:301091   | epilepsy, X-linked 2, with or without impaired intellectual development and dysmorphic features |
-| OMIM:620116   | fatty liver disease, protection from                                                            |
-| OMIM:147060   | hyper-ige recurrent infection syndrome 1, autosomal dominant                                    |
-| OMIM:619545   | hypoplastic femurs and pelvis                                                                   |
-| OMIM:620148   | ichthyosis, annular epidermolytic, 2                                                            |
-| OMIM:620192   | lacrimoauriculodentodigital syndrome 2                                                          |
-| OMIM:620193   | lacrimoauriculodentodigital syndrome 3                                                          |
-| OMIM:619977   | macular dystrophy, retinal, 4                                                                   |
-| OMIM:160150   | myopathy, centronuclear, 1                                                                      |
-| OMIM:606963   | pulmonary disease, chronic obstructive                                                          |
-| OMIM:181460   | schistosoma mansoni infection, susceptibility/resistance to                                     |
-| OMIMPS:117000 |                                                                                                 |
-| OMIMPS:267750 |                                                                                                 |
+| subject_id    | subject_label                                                |
+|:--------------|:-------------------------------------------------------------|
+| OMIM:620207   | blood group, er                                              |
+| OMIM:620116   | fatty liver disease, protection from                         |
+| OMIM:147060   | hyper-ige recurrent infection syndrome 1, autosomal dominant |
+| OMIM:619545   | hypoplastic femurs and pelvis                                |
+| OMIM:606963   | pulmonary disease, chronic obstructive                       |
+| OMIMPS:267750 |                                                              |
