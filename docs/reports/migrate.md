@@ -1,14 +1,20 @@
 # Migratable terms
 | Ontology                          | Tot   |
 |:----------------------------------|:------|
-| [DOID](./migrate_doid.md)         | 678   |
-| [NCIT](./migrate_ncit.md)         | 5,516 |
-| [ORDO](./migrate_ordo.md)         | 27    |
-| [OMIM](./migrate_omim.md)         | 225   |
+| [ORDO](./migrate_ordo.md)         | 7     |
+| [OMIM](./migrate_omim.md)         | 6     |
+| [NCIT](./migrate_ncit.md)         | 5,514 |
+| [DOID](./migrate_doid.md)         | 473   |
 | [ICD10WHO](./migrate_icd10who.md) | 117   |
-| [ICD10CM](./migrate_icd10cm.md)   | 1,851 |
+| [ICD10CM](./migrate_icd10cm.md)   | 1,847 |
 
+### Codebook
 `Ontology`: Name of ontology    
 `Tot`: Total terms migratable
 
+### Definitions
+**Migratable term**: A term owned by the given ontology but unmapped in Mondo, which has either no parents, or if it has 
+parents, all of its parents have already been mapped in Mondo.
+
+### Workflows
 To run the workflow that creates this data, refer to the [workflows documentation](../developer/workflows.md).
