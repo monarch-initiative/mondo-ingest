@@ -161,15 +161,19 @@ metadata/mondo.sssom.config.yml:
 
 ../mappings/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
+	sssom sort $@ -o $@
 
 ../mappings/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/ordo.metadata.sssom.yml -o $@
+	sssom sort $@ -o $@
 
 ../mappings/doid.sssom.tsv: $(TMPDIR)/component-doid.json
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/doid.metadata.sssom.yml -o $@
+	sssom sort $@ -o $@
 
 ../mappings/omim.sssom.tsv: $(TMPDIR)/component-omim.json
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/omim.metadata.sssom.yml -o $@
+	sssom sort $@ -o $@
 
 mappings: $(ALL_MAPPINGS)
 
