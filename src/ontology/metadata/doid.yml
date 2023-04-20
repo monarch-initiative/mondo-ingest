@@ -12,3 +12,11 @@ description: >
 homepage: https://disease-ontology.org/
 base_prefix_map:
   DOID: http://purl.obolibrary.org/obo/DOID_
+preprocessing:
+  - type: Update
+    comment: Updating the source with various SPARQL preprocessing steps
+    queries:
+        - id: MONDO_INGEST_QUERY:fix_make_omim_exact.ru
+          description: This query turns DO - OMIM xrefs to skos:exactMatch if and only if they are 1:1. This way, OMIM cross references can be used for matching.
+          see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_make_omim_exact.ru
+     
