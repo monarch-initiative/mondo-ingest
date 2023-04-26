@@ -4,7 +4,6 @@ import pickle
 import subprocess
 import sys
 from datetime import datetime
-from glob import glob
 from typing import Dict, List, Set, Union
 
 import curies
@@ -280,7 +279,7 @@ def _get_all_owned_terms(
         direct_parents_df: pd.DataFrame = jinja_sparql(
             onto_path=ontology_path,
             jinja_path=os.path.join(PROJECT_DIR, 'src', 'sparql', 'get-terms-direct-parents.sparql.jinja2'),
-            prefix_map=owned_prefix_map, use_cache=True, values=' '.join(query_terms))
+            prefix_map=owned_prefix_map, use_cache=use_cache, values=' '.join(query_terms))
         direct_parents_df = direct_parents_df.applymap(uri_converter.compress)
         direct_owned_parents_map = {}
         for _index, row in direct_parents_df.iterrows():
@@ -394,13 +393,25 @@ def jinja_sparql(
     command_str = f'robot query --input {onto_path} --query {instantiated_query_path} {results_path}'
 
     # Cache and run
+    # - If return from cache, empties existing cache before running
     os.makedirs(results_dirpath, exist_ok=True)
     if not (os.path.exists(results_path) and use_cache):
+        os.remove(instantiated_query_path)
+        os.remove(command_str)
+        os.remove(results_path)
         with open(instantiated_query_path, 'w') as f:
             f.write(instantiated_str)
         with open(command_save_path, 'w') as f:
             f.write(command_str)
-        result = subprocess.run(command_str.split())
+        try:
+            result = subprocess.run(command_str.split())
+        except FileNotFoundError as e:
+            if 'robot' in str(e):
+                # joeflack4 2023/04/25: Suddenly my PATH is wrong. Could be virtualenvwrapper+PyCharm issue.
+                command_str = command_str.replace('robot query', '/usr/local/bin/robot query')
+                result = subprocess.run(command_str.split())
+            else:
+                raise e
         stderr, stdout = result.stderr, result.stdout
         if verbose:
             print(stdout)
