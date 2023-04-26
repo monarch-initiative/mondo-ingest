@@ -9,10 +9,10 @@ PREFIX dbpedia: <http://dbpedia.org/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-# For SNOMED, we are only interested in the Disease or Disorder branch
+# For For NCIT, we are only interested in the Neoplasm branch
 SELECT DISTINCT ?term ?label ?deprecated
 WHERE {
-VALUES ?roots {<http://purl.obolibrary.org/obo/NCIT_C2991> <http://purl.obolibrary.org/obo/NCIT_C134533>}
+VALUES ?roots {<http://purl.obolibrary.org/obo/NCIT_C3262> <http://purl.obolibrary.org/obo/NCIT_C134533>}
 {
   {
     { 

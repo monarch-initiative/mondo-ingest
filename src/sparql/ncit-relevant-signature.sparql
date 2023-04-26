@@ -1,9 +1,9 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-# For SNOMED, we are only interested in the Disease or Disorder branch
+# For NCIT, we are only interested in the Neoplasm branch
 SELECT DISTINCT ?term
 WHERE {
-VALUES ?roots {<http://purl.obolibrary.org/obo/NCIT_C2991> <http://purl.obolibrary.org/obo/NCIT_C134533>}
+VALUES ?roots {<http://purl.obolibrary.org/obo/NCIT_C3262> <http://purl.obolibrary.org/obo/NCIT_C134533>}
   {
     {
      ?s1 ?p1 ?term .
