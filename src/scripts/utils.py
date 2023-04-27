@@ -396,9 +396,8 @@ def jinja_sparql(
     # - If return from cache, empties existing cache before running
     os.makedirs(results_dirpath, exist_ok=True)
     if not (os.path.exists(results_path) and use_cache):
-        os.remove(instantiated_query_path)
-        os.remove(command_str)
-        os.remove(results_path)
+        if os.path.exists(results_path):
+            os.remove(results_path)
         with open(instantiated_query_path, 'w') as f:
             f.write(instantiated_str)
         with open(command_save_path, 'w') as f:
