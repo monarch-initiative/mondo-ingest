@@ -391,9 +391,11 @@ tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
 tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
+	@rm -f tmp/merged-relation-graph.tsv.gz
 	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
+	@rm -f tmp/merged-relation-graph.tsv.gz
 
 ../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db
 	python $< run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
@@ -422,9 +424,11 @@ matches: lexical-matches extract-unmapped-matches
 $(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
+	@rm -f $(COMPONENTSDIR)/%-relation-graph.tsv.gz
 	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
+	@rm -f $(COMPONENTSDIR)/%-relation-graph.tsv.gz
 
 slurp/:
 	mkdir -p $@
