@@ -140,9 +140,9 @@ ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 #################
 ### Mappings ####
 #################
-#.PHONY: sssom
-#sssom:
-#	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall git+https://github.com/mapping-commons/sssom-py.git@master
+.PHONY: sssom
+sssom:
+	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall sssom
 
 .PHONY: dependencies
 dependencies:
