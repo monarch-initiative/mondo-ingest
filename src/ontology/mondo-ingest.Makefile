@@ -142,7 +142,7 @@ ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 #################
 .PHONY: sssom
 sssom:
-	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade --force-reinstall sssom
+	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade sssom
 
 .PHONY: dependencies
 dependencies:
