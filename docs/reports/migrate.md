@@ -2,9 +2,9 @@
 | Ontology                          | Tot   |
 |:----------------------------------|:------|
 | [ORDO](./migrate_ordo.md)         | 7     |
-| [OMIM](./migrate_omim.md)         | 6     |
-| [NCIT](./migrate_ncit.md)         | 5,514 |
 | [DOID](./migrate_doid.md)         | 473   |
+| [NCIT](./migrate_ncit.md)         | 4,034 |
+| [OMIM](./migrate_omim.md)         | 3     |
 | [ICD10WHO](./migrate_icd10who.md) | 117   |
 | [ICD10CM](./migrate_icd10cm.md)   | 1,847 |
 

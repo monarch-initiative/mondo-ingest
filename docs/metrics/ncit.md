@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ncit.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2023-04-19/ncit.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2023-05-04/ncit.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 12 |
-| Axioms | 566981 |
-| Logical axioms | 38246 |
-| Classes | 20867 |
+| Axioms | 553075 |
+| Logical axioms | 30475 |
+| Classes | 14732 |
 | Object properties | 0 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -35,8 +35,8 @@
 | AnnotationAssertion | 507838 |
 | EquivalentClasses | 5479 |
 | DatatypeDefinition | 19 |
-| Declaration | 20897 |
-| SubClassOf | 32748 |
+| Declaration | 14762 |
+| SubClassOf | 24977 |
 
 
 #### Entity namespaces: axiom counts by namespace
@@ -44,7 +44,7 @@
 | Metric | Value |
 | ------ | ----- |
 | prefix_unknown | 1 |
-| NCIT | 20889 |
+| NCIT | 14754 |
 | oboInOwl | 3 |
 | owl | 2 |
 | rdf | 1 |
@@ -58,7 +58,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 104261 |
+| Class | 82584 |
 | ObjectIntersectionOf | 5479 |
 
 
