@@ -353,7 +353,7 @@ reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 	mv $@-temp $@
 
 reports/mirror_signature-ncit.tsv: $(COMPONENTSDIR)/ncit.db metadata/ncit.yml
-	python3 $(SCRIPTSDIR)/mirror_signature_via_oak.py --db-path $(COMPONENTSDIR)/ncit.db --onto-config-path metadata/ncit.yml --outpath $@;\
+	python3 $(SCRIPTSDIR)/mirror_signature_via_oak.py --db-path $(COMPONENTSDIR)/ncit.db --onto-config-path metadata/ncit.yml --outpath $@
 
 reports/mirror_signature-%.tsv: component-download-%.owl
 	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
