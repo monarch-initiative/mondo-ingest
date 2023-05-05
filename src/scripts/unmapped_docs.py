@@ -65,7 +65,8 @@ def update_mapping_progress_in_docs():
             'Tot mappable _(!excluded, !deprecated)_': f"{n_mappable:,}",
             'Tot mapped _(mappable)_': f"{n_mappable - n_unmapped_mappable:,}",
             'Tot unmapped _(mappable)_': f"{n_unmapped_mappable:,}",
-            '% unmapped _(mappable)_': str(round((n_unmapped_mappable / n_mappable) * 100, 1)) + '%',
+            '% unmapped _(mappable)_':
+                str(round((n_unmapped_mappable / n_mappable) * 100, 1)) + '%' if n_mappable else '100%',
         })
     stats_df = pd.DataFrame(stats_rows).sort_values(['% unmapped _(mappable)_'], ascending=False)
     instantiated_str: str = Template(JINJA_MAIN_PAGE).render(stats_markdown_table=stats_df.to_markdown(index=False))

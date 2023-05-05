@@ -25,18 +25,18 @@ documentation:
   documentation_system: mkdocs
 components:
   products:
+    - filename: doid.owl
+      source: http://purl.obolibrary.org/obo/doid.owl
+    - filename: icd10cm.owl
+      source: https://data.bioontology.org/ontologies/ICD10CM/submissions/23/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
+    - filename: icd10who.owl
+      source: https://github.com/monarch-initiative/icd10who/releases/latest/download/icd10who.ttl
+    - filename: ncit.owl
+      source: http://purl.obolibrary.org/obo/ncit.owl
     - filename: omim.owl
       source: https://github.com/monarch-initiative/omim/releases/latest/download/omim.ttl
     - filename: ordo.owl
       source: http://www.orphadata.org/data/ORDO/ordo_orphanet.owl
-    - filename: ncit.owl
-      source: http://purl.obolibrary.org/obo/ncit.owl
-    - filename: doid.owl
-      source: http://purl.obolibrary.org/obo/doid.owl
-    - filename: icd10cm.owl
-      source: https://data.bioontology.org/ontologies/ICD10CM/submissions/21/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
-    - filename: icd10who.owl
-      source: https://github.com/monarch-initiative/icd10who/releases/download/latest/icd10who.ttl
 robot_report:
   release_reports: False
   fail_on : None

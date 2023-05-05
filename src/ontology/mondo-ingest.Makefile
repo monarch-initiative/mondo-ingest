@@ -353,7 +353,7 @@ reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 	mv $@-temp $@
 
 reports/mirror_signature-ncit.tsv: $(COMPONENTSDIR)/ncit.db metadata/ncit.yml
-	python3 $(SCRIPTSDIR)/mirror_signature_via_oak.py --db-path $(COMPONENTSDIR)/ncit.db --onto-config-path metadata/ncit.yml --outpath $@;\
+	python3 $(SCRIPTSDIR)/mirror_signature_via_oak.py --db-path $(COMPONENTSDIR)/ncit.db --onto-config-path metadata/ncit.yml --outpath $@
 
 reports/mirror_signature-%.tsv: component-download-%.owl
 	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
@@ -424,11 +424,11 @@ matches: lexical-matches extract-unmapped-matches
 $(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
-	@rm -f $(COMPONENTSDIR)/%-relation-graph.tsv.gz
+	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
 	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
-	@rm -f $(COMPONENTSDIR)/%-relation-graph.tsv.gz
+	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
 
 slurp/:
 	mkdir -p $@
@@ -459,13 +459,11 @@ slurp-no-updates-%:
 slurp-docs:
 	python3 $(SCRIPTSDIR)/migrate.py --docs
 
-# todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 .PHONY: slurp-all-no-updates
-slurp-all-no-updates: slurp-no-updates-omim slurp-no-updates-doid slurp-no-updates-ordo slurp-no-updates-icd10cm slurp-no-updates-icd10who slurp-no-updates-ncit
+slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
 
-# todo: re-use for loop for ids?: ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 .PHONY: slurp-all
-slurp-all: slurp-omim slurp-doid slurp-ordo slurp-icd10cm slurp-icd10who slurp-ncit
+slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
 
 #############################
 ######### Analysis ##########
