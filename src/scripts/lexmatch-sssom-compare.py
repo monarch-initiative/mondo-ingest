@@ -1,5 +1,5 @@
 import logging
-from os.path import abspath, dirname, join
+from os.path import abspath, dirname, join, relpath
 from typing import TextIO
 
 import click
@@ -192,6 +192,8 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     unmapped_ncit_df = get_unmapped_df(
         ncit_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
     )
+    summary.write("## unmapped_xxxx_exact")
+    summary.write("\n")
 
     export_unmatched_exact(
         unmapped_icd_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_icd_lex.tsv"), summary
@@ -266,12 +268,12 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         df=combined_df, prefix_map=msdf_lex.prefix_map, metadata=msdf_lex.metadata
     )
     df_dict = split_dataframe(combined_msdf)
-
+    summary.write("## mondo_xxxxmatch_ontology")
+    summary.write("\n")
     for match in df_dict.keys():
         fn = match + ".tsv"
-
         summary.write(
-            " * Number of mappings in `" + match + "`: " + str(len(df_dict[match].df))
+            " * Number of mappings in [`" + match + "`]("+join(str(relpath(SPLIT_DIR)), fn)+"): " + str(len(df_dict[match].df))
         )
         summary.write("\n")
         df_dict[match].df.to_csv(join(SPLIT_DIR, fn), sep="\t", index=False)
@@ -378,7 +380,7 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = unmapped_exact.drop_duplicates()
     actual_fn = fn.split("/")[-1].strip(".tsv")
     summary.write(
-        " * Number of mappings in `" + actual_fn + "`: " + str(len(unmapped_exact))
+        " * Number of mappings in [`" + actual_fn + "`]("+join(str(relpath(SPLIT_DIR)), fn)+"): " + str(len(unmapped_exact))
     )
     summary.write("\n")
     # Split out exact match i.e. subj_label.lowercase()==obj_label.lowercase() into a separate file.
