@@ -1,5 +1,6 @@
 import logging
 from os.path import abspath, dirname, join, relpath
+from pathlib import Path
 from typing import TextIO
 
 import click
@@ -272,8 +273,10 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     summary.write("\n")
     for match in df_dict.keys():
         fn = match + ".tsv"
+        relative_path = relpath(SPLIT_DIR)
+        file_path = Path(relative_path).joinpath(fn)
         summary.write(
-            " * Number of mappings in [`" + match + "`]("+join(str(relpath(SPLIT_DIR)), fn)+"): " + str(len(df_dict[match].df))
+            " * Number of mappings in [`" + match + "`](" + str(file_path) + "): " + str(len(df_dict[match].df))
         )
         summary.write("\n")
         df_dict[match].df.to_csv(join(SPLIT_DIR, fn), sep="\t", index=False)
@@ -379,8 +382,10 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = sort_df_rows_columns(unmapped_exact)
     unmapped_exact = unmapped_exact.drop_duplicates()
     actual_fn = fn.split("/")[-1].strip(".tsv")
+    relative_path = relpath(SPLIT_DIR)
+    file_path = Path(relative_path).joinpath(actual_fn+".tsv")
     summary.write(
-        " * Number of mappings in [`" + actual_fn + "`]("+join(str(relpath(SPLIT_DIR)), fn)+"): " + str(len(unmapped_exact))
+        " * Number of mappings in [`" + actual_fn + "`](" + str(file_path) + "): " + str(len(unmapped_exact))
     )
     summary.write("\n")
     # Split out exact match i.e. subj_label.lowercase()==obj_label.lowercase() into a separate file.
