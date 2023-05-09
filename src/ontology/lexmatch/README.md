@@ -4,7 +4,7 @@
 * split-mapping-set: Unmapped mappings broken down by predicate_id
 ## Summary of mappings:
 ## unmapped_xxxx_exact
- * Number of mappings in [`unmapped_icd_lex`](../lexmatch/split-mapping-set/unmapped_icd_lex.tsv): 1923
+ * Number of mappings in [`unmapped_icd_lex`](../lexmatch/unmapped_icd_lex.tsv): 1923
  * Number of mappings in [`unmapped_omim_lex`](lexmatch/split-mapping-set/unmapped_omim_lex.tsv): 4
  * Number of mappings in [`unmapped_ordo_lex`](lexmatch/split-mapping-set/unmapped_ordo_lex.tsv): 5
  * Number of mappings in [`unmapped_doid_lex`](lexmatch/split-mapping-set/unmapped_doid_lex.tsv): 447
