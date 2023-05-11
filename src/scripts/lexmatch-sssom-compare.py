@@ -388,12 +388,17 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = sort_df_rows_columns(unmapped_exact)
     unmapped_exact = unmapped_exact.drop_duplicates()
     actual_fn = fn.split("/")[-1].replace(".tsv", "")
+    fn_path = (
+        fn.split("/")[-1]
+        if str(actual_fn).endswith("_lex")
+        else "mondo-only/" + fn.split("/")[-1]
+    )
 
     summary.write(
         " * Number of mappings in [`"
         + actual_fn
-        + "`](mondo-only/"
-        + fn.split("/")[-1]
+        + "`]("
+        + fn_path
         + "): "
         + str(len(unmapped_exact))
     )
@@ -405,7 +410,7 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     ]
     new_fn = fn.replace(".tsv", "_exact.tsv")
     actual_fn_exact = new_fn.split("/")[-1].replace(".tsv", "")
-    
+
     unmapped_exact_exact = pd.concat(
         [
             pd.DataFrame.from_dict(robot_row_dict, orient="columns"),
