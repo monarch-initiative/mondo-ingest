@@ -410,6 +410,11 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     ]
     new_fn = fn.replace(".tsv", "_exact.tsv")
     actual_fn_exact = new_fn.split("/")[-1].replace(".tsv", "")
+    fn_path_exact = (
+        "mondo-only/" + fn.split("/")[-1]
+        if str(actual_fn_exact).endswith("_mondo_exact")
+        else fn.split("/")[-1]
+    )
 
     unmapped_exact_exact = pd.concat(
         [
@@ -426,11 +431,12 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     ]
     unmapped_exact_logical = unmapped_exact_logical[DESIRED_COLUMN_ORDER]
     unmapped_exact_logical.to_csv(join(fn), sep="\t", index=False)
+    
     summary.write(
         " * Number of mappings in [`"
         + actual_fn_exact
         + "`]("
-        + new_fn.split("/")[-1]
+        + fn_path_exact
         + "): "
         + str(len(unmapped_exact_logical))
     )
