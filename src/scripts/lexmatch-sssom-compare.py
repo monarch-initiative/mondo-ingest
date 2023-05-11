@@ -193,7 +193,7 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     unmapped_ncit_df = get_unmapped_df(
         ncit_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
     )
-    summary.write("## unmapped_xxxx_exact")
+    summary.write("## unmapped_xxxx_lex")
     summary.write("\n")
 
     export_unmatched_exact(
@@ -223,6 +223,9 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         join(LEXMATCH_DIR, "unmapped_ncit_lex.tsv"),
         summary,
     )
+
+    summary.write("## unmapped_xxxx_mondo")
+    summary.write("\n")
 
     export_unmatched_exact(
         unmapped_icd_df,
@@ -269,11 +272,11 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         df=combined_df, prefix_map=msdf_lex.prefix_map, metadata=msdf_lex.metadata
     )
     df_dict = split_dataframe(combined_msdf)
-    summary.write("## mondo_xxxxmatch_ontology")
+    summary.write("## mondo_XXXXmatch_ontology")
     summary.write("\n")
     for match in df_dict.keys():
         fn = match + ".tsv"
-        relative_path = relpath(SPLIT_DIR)
+        relative_path = dirname(relpath(SPLIT_DIR))
         file_path = Path(relative_path).joinpath(fn)
         summary.write(
             " * Number of mappings in [`" + match + "`](" + str(file_path) + "): " + str(len(df_dict[match].df))
@@ -382,8 +385,8 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = sort_df_rows_columns(unmapped_exact)
     unmapped_exact = unmapped_exact.drop_duplicates()
     actual_fn = fn.split("/")[-1].strip(".tsv")
-    relative_path = relpath(SPLIT_DIR)
-    file_path = Path(relative_path).joinpath(actual_fn+".tsv")
+    relative_path = relpath(LEXMATCH_DIR)
+    file_path = Path(relative_path).joinpath(fn.split("/")[-1])
     summary.write(
         " * Number of mappings in [`" + actual_fn + "`](" + str(file_path) + "): " + str(len(unmapped_exact))
     )
