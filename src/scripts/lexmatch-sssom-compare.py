@@ -1,6 +1,5 @@
 import logging
-from os.path import abspath, dirname, join, relpath
-from pathlib import Path
+from os.path import abspath, dirname, join
 from typing import TextIO
 
 import click
@@ -193,7 +192,7 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     unmapped_ncit_df = get_unmapped_df(
         ncit_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
     )
-    summary.write("## unmapped_xxxx_lex")
+    summary.write("## unmapped_xxxx_lex & unmapped_xxxx_lex_exact")
     summary.write("\n")
 
     export_unmatched_exact(
@@ -276,10 +275,13 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     summary.write("\n")
     for match in df_dict.keys():
         fn = match + ".tsv"
-        relative_path = dirname(relpath(SPLIT_DIR))
-        file_path = Path(relative_path).joinpath(fn)
         summary.write(
-            " * Number of mappings in [`" + match + "`](" + str(file_path) + "): " + str(len(df_dict[match].df))
+            " * Number of mappings in [`"
+            + match
+            + "`](split-mapping-set/"
+            + str(fn)
+            + "): "
+            + str(len(df_dict[match].df))
         )
         summary.write("\n")
         df_dict[match].df.to_csv(join(SPLIT_DIR, fn), sep="\t", index=False)
@@ -385,10 +387,14 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = sort_df_rows_columns(unmapped_exact)
     unmapped_exact = unmapped_exact.drop_duplicates()
     actual_fn = fn.split("/")[-1].strip(".tsv")
-    relative_path = relpath(LEXMATCH_DIR)
-    file_path = Path(relative_path).joinpath(fn.split("/")[-1])
+
     summary.write(
-        " * Number of mappings in [`" + actual_fn + "`](" + str(file_path) + "): " + str(len(unmapped_exact))
+        " * Number of mappings in [`"
+        + actual_fn
+        + "`]("
+        + str(fn)
+        + "): "
+        + str(len(unmapped_exact))
     )
     summary.write("\n")
     # Split out exact match i.e. subj_label.lowercase()==obj_label.lowercase() into a separate file.
@@ -397,6 +403,8 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
         == unmapped_exact["object_label"].str.lower()
     ]
     new_fn = fn.replace(".tsv", "_exact.tsv")
+    actual_fn_exact = new_fn.split("/")[-1].strip(".tsv")
+    
     unmapped_exact_exact = pd.concat(
         [
             pd.DataFrame.from_dict(robot_row_dict, orient="columns"),
@@ -412,6 +420,14 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     ]
     unmapped_exact_logical = unmapped_exact_logical[DESIRED_COLUMN_ORDER]
     unmapped_exact_logical.to_csv(join(fn), sep="\t", index=False)
+    summary.write(
+        " * Number of mappings in [`"
+        + actual_fn_exact
+        + "`]("
+        + str(new_fn)
+        + "): "
+        + str(len(unmapped_exact_logical))
+    )
 
 
 def mapped_curie_list(df):

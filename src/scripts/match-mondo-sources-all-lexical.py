@@ -96,15 +96,13 @@ def run(input: str, config: str, rules: str, output: str):
     save_lexical_index(lexical_index, OUT_INDEX_DB)
 
     if rules:
-        msdf = lexical_index_to_sssom(
-            oi, lexical_index, ruleset=ruleset, meta=meta
-        )
+        msdf = lexical_index_to_sssom(oi, lexical_index, ruleset=ruleset, meta=meta)
     else:
         msdf = lexical_index_to_sssom(oi, lexical_index, meta=meta)
 
     # msdf.prefix_map = sssom_yaml['curie_map']
     # msdf.metadata = sssom_yaml['global_metadata']
-    #! The block below converts IRI into CURIE using bioregistry.
+    # ! The block below converts IRI into CURIE using bioregistry.
     # msdf.df[SUBJECT_ID] = msdf.df[SUBJECT_ID].apply(
     #     lambda x: iri_to_curie(x) if x.startswith("<http") else x
     # )
