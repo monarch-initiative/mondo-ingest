@@ -392,7 +392,7 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     summary.write(
         " * Number of mappings in [`"
         + actual_fn
-        + "`]("
+        + "`](mondo-only/"
         + fn.split("/")[-1]
         + "): "
         + str(len(unmapped_exact))
