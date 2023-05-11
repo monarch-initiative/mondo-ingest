@@ -192,6 +192,8 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     unmapped_ncit_df = get_unmapped_df(
         ncit_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
     )
+    summary.write("## unmapped_xxxx_lex & unmapped_xxxx_lex_exact")
+    summary.write("\n")
 
     export_unmatched_exact(
         unmapped_icd_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_icd_lex.tsv"), summary
@@ -220,6 +222,9 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         join(LEXMATCH_DIR, "unmapped_ncit_lex.tsv"),
         summary,
     )
+
+    summary.write("## unmapped_xxxx_mondo")
+    summary.write("\n")
 
     export_unmatched_exact(
         unmapped_icd_df,
@@ -266,14 +271,20 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         df=combined_df, prefix_map=msdf_lex.prefix_map, metadata=msdf_lex.metadata
     )
     df_dict = split_dataframe(combined_msdf)
-
+    summary.write("## mondo_XXXXmatch_ontology")
+    summary.write("\n")
     for match in df_dict.keys():
         fn = match + ".tsv"
-
         summary.write(
-            " * Number of mappings in `" + match + "`: " + str(len(df_dict[match].df))
+            " * Number of mappings in [`"
+            + match
+            + "`](split-mapping-set/"
+            + str(fn)
+            + "): "
+            + str(len(df_dict[match].df))
         )
         summary.write("\n")
+
         df_dict[match].df.to_csv(join(SPLIT_DIR, fn), sep="\t", index=False)
 
     summary.close()
@@ -376,9 +387,20 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = unmapped_exact[column_seq]
     unmapped_exact = sort_df_rows_columns(unmapped_exact)
     unmapped_exact = unmapped_exact.drop_duplicates()
-    actual_fn = fn.split("/")[-1].strip(".tsv")
+    actual_fn = fn.split("/")[-1].replace(".tsv", "")
+    fn_path = (
+        fn.split("/")[-1]
+        if str(actual_fn).endswith("_lex")
+        else "mondo-only/" + fn.split("/")[-1]
+    )
+
     summary.write(
-        " * Number of mappings in `" + actual_fn + "`: " + str(len(unmapped_exact))
+        " * Number of mappings in [`"
+        + actual_fn
+        + "`]("
+        + fn_path
+        + "): "
+        + str(len(unmapped_exact))
     )
     summary.write("\n")
     # Split out exact match i.e. subj_label.lowercase()==obj_label.lowercase() into a separate file.
@@ -387,6 +409,13 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
         == unmapped_exact["object_label"].str.lower()
     ]
     new_fn = fn.replace(".tsv", "_exact.tsv")
+    actual_fn_exact = new_fn.split("/")[-1].replace(".tsv", "")
+    fn_path_exact = (
+        "mondo-only/" + fn.split("/")[-1]
+        if str(actual_fn_exact).endswith("_mondo_exact")
+        else fn.split("/")[-1]
+    )
+
     unmapped_exact_exact = pd.concat(
         [
             pd.DataFrame.from_dict(robot_row_dict, orient="columns"),
@@ -402,6 +431,16 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     ]
     unmapped_exact_logical = unmapped_exact_logical[DESIRED_COLUMN_ORDER]
     unmapped_exact_logical.to_csv(join(fn), sep="\t", index=False)
+    
+    summary.write(
+        " * Number of mappings in [`"
+        + actual_fn_exact
+        + "`]("
+        + fn_path_exact
+        + "): "
+        + str(len(unmapped_exact_logical))
+    )
+    summary.write("\n")
 
 
 def mapped_curie_list(df):
