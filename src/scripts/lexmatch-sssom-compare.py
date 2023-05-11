@@ -284,6 +284,7 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
             + str(len(df_dict[match].df))
         )
         summary.write("\n")
+
         df_dict[match].df.to_csv(join(SPLIT_DIR, fn), sep="\t", index=False)
 
     summary.close()
@@ -386,13 +387,13 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     unmapped_exact = unmapped_exact[column_seq]
     unmapped_exact = sort_df_rows_columns(unmapped_exact)
     unmapped_exact = unmapped_exact.drop_duplicates()
-    actual_fn = fn.split("/")[-1].strip(".tsv")
+    actual_fn = fn.split("/")[-1].replace(".tsv", "")
 
     summary.write(
         " * Number of mappings in [`"
         + actual_fn
         + "`]("
-        + str(fn)
+        + fn.split("/")[-1]
         + "): "
         + str(len(unmapped_exact))
     )
@@ -403,7 +404,7 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
         == unmapped_exact["object_label"].str.lower()
     ]
     new_fn = fn.replace(".tsv", "_exact.tsv")
-    actual_fn_exact = new_fn.split("/")[-1].strip(".tsv")
+    actual_fn_exact = new_fn.split("/")[-1].replace(".tsv", "")
     
     unmapped_exact_exact = pd.concat(
         [
@@ -424,10 +425,11 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
         " * Number of mappings in [`"
         + actual_fn_exact
         + "`]("
-        + str(new_fn)
+        + new_fn.split("/")[-1]
         + "): "
         + str(len(unmapped_exact_logical))
     )
+    summary.write("\n")
 
 
 def mapped_curie_list(df):
