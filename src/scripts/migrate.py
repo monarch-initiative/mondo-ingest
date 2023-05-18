@@ -96,25 +96,61 @@ def slurp(
     unmapped_terms: List[Term] = [x for x in owned_terms if x.curie not in sssom_object_ids]
     slurp_candidates = [x for x in unmapped_terms if x.curie not in excluded_terms]  # remove exclusions
 
+    # Temp: ORDO troubleshooting
+    ontology_name = os.path.basename(ontology_path).replace('.owl', '')
+    mapping_status_path = os.path.join('reports', f'{ontology_name}_mapping_status.tsv')
+    mapping_status_df = pd.read_csv(mapping_status_path, sep='\t')
+    mapping_status_df['possible_slurp_candidate'] = False
+    mapping_status_dict: Dict[str, Dict] = {x['subject_id']: x for x in mapping_status_df.to_dict('records')}
+
     # Determine slurpable terms
     # Migratable term: A term owned by the given ontology but unmapped in Mondo, which has either no parents, or if it
     # has parents, all of its parents have already been mapped in Mondo.
     terms_to_slurp: List[Dict[str, str]] = []
     for t in slurp_candidates:
+        # TODO: is this wrong? it looks like in my logic if any parent term is qualified, the term is slurpable. below says 1+ OK, but above comments ays all need to be mapped
+        #  - i should only have one comment. the one above or below, and make sure it makes sense
+        #  - and add a note about the fact that obsolete parents don't count
+        # TODO: also wrong? did I already filter by exact or narrow match?
+        #  - it looks like in reality, all of the SSSOM predicates in the file are exactMatch. But I should program this logic in anyway
         # If all T.parents mapped, and 1+ is an exact or narrow match and non obsolete, designate T for slurping
         # (i.e. only slurp if parents are already slurped)
         qualified_parent_mondo_ids = []
+        parent_obsolete_statuses = []
+        parent_mapping_predicates = []
+        parent_labels = []
         no_parents: bool = not t.direct_owned_parent_curies
+        all_parents_mapped = True
         for parent_curie in t.direct_owned_parent_curies:
             # Conversely, if any of T.parents is unmapped, T is not to be slurped
             if parent_curie in sssom_object_ids:
                 parent: Dict = sssom_df[sssom_df['object_id'] == parent_curie].to_dict('records')[0]
                 parent_mondo_id, parent_mondo_label = parent['subject_id'], parent['subject_label']
+                # Temp
+                parent_mapping_predicates.append(parent['predicate_id'])
+                parent_labels.append(parent_mondo_label)
                 if not parent_mondo_label.startswith('obsolete'):
+                    # Temp
+                    parent_obsolete_statuses.append(False)
                     qualified_parent_mondo_ids.append(parent_mondo_id)
+                # Temp
+                else:
+                    parent_obsolete_statuses.append(True)
+            # Temp
+            else:
+                parent_mapping_predicates.append('unmapped')
+                parent_labels.append('unknown')
+
+            # todo: is this supposed to break the outer loop or the inner loop? i think maybe replacing the `break` with `all_parents_mapped` is better
             if parent_curie not in sssom_object_ids and parent_curie in owned_term_curies:
-                break
-        if qualified_parent_mondo_ids or no_parents:
+                # TODO Impt!: If this break clause is indeed correct, and indeed we need all parents need to be mapped, then this line below needs to be added to the general slurp
+                #  because it will prevent the slurp of a term that has a parent that is not mapped
+                all_parents_mapped = False
+                # todo: break should probabl be kept for general slurp; but commenting it out here so that i can collect info about all parents
+                #  - or maybe i just want to use the `all_parents_mapped` var instead of breaking
+                # break
+
+        if all_parents_mapped and (qualified_parent_mondo_ids or no_parents):
             if t.curie in slurp_id_map:
                 mondo_id = slurp_id_map[t.curie]
             else:
@@ -125,7 +161,28 @@ def slurp(
                 'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
                 'original_label': t.label if t.label else '', 'definition': t.definition if t.definition else '',
                 'parents': '|'.join(qualified_parent_mondo_ids)})
+        # Temp: ORDO troubleshooting
+        mapping_status_dict[t.curie]['possible_slurp_candidate'] = True  # unmapped, not excluded, not deprecated
+        mapping_status_dict[t.curie]['parents'] = '|'.join(t.direct_owned_parent_curies)
+        mapping_status_dict[t.curie]['parent_labels'] = '|'.join(parent_labels)
+        mapping_status_dict[t.curie]['qualified_parent_mondo_ids'] = '|'.join(qualified_parent_mondo_ids)
+        mapping_status_dict[t.curie]['parent_mapping_predicates'] = '|'.join(parent_mapping_predicates)
+        mapping_status_dict[t.curie]['parent_obsolete'] = '|'.join([str(x) for x in parent_obsolete_statuses])
+        mapping_status_dict[t.curie]['all_parents_mapped'] = all_parents_mapped
+        if qualified_parent_mondo_ids or no_parents:
+            mapping_status_dict[t.curie]['actual_slurp_candidate'] = True  # 1+ qualified parents or no parents
+        else:
+            mapping_status_dict[t.curie]['actual_slurp_candidate'] = False
 
+    # Temp: ORDO troubleshooting
+    mapping_status_path2 = mapping_status_path.replace('.tsv', '-with_slurp_info.tsv')
+    mapping_status_df2 = pd.DataFrame(mapping_status_dict.values())
+    mapping_status_df2 = mapping_status_df2.sort_values(
+        ['actual_slurp_candidate', 'possible_slurp_candidate', 'is_mapped', 'is_excluded', 'is_deprecated', 'subject_id'],
+        ascending=[False, False, True, True, True, True])
+    mapping_status_df2.to_csv(mapping_status_path2, sep='\t', index=False)
+
+    # todo: if running this, will have mondo_id KeyError. i know what to do and will fix that in separate PR
     # Sort, add robot row, save and return
     result = pd.DataFrame(terms_to_slurp)
     if len(result) > 0:
