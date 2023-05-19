@@ -14,12 +14,22 @@ Workflows should all be run from the `src/ontology/` directory.
 ---
 
 ## Slurp / migration
-These workflows will determine slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.
+These workflows will determine slurpable / migratable terms. That is, terms that are candidates for integration into 
+Mondo.
+
+#### What determines what is a slurpable / migratable term?
+To be migratable, the term (i) must not already be mapped, (ii) must not be excluded (e.g. not in 
+`reports/%_term_exclusions.txt`), and (iii) must not be deprecated / obsolete. Then, (iv) there are conditions 
+concerning its parents. It must either (a) have no parents, or (b) have no valid parents in Mondo (i.e. all of its 
+parent terms are marked obsolete in Mondo), or (c) all its parents must be mapped, and at least 1 of those parent's 
+mappings must be one of `skos:exactMatch` or `skos:NarrowMatch`.  
 
 #### Makefile goals
-1. `slurp/%.tsv` and `slurp-%`: For a given ontology, determine all slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.
+1. `slurp/%.tsv` and `slurp-%`: For a given ontology, determine all slurpable / migratable terms. That is, terms that 
+are candidates for integration into Mondo.
 2. `slurp-all`: Runs slurp / migrate for all ontologies.
-3. `slurp-docs`: Creates a [page](../reports/migrate.md) listing 'n' migratable terms by ontology as well as and pages for each ontology with more detailed information.
+3. `slurp-docs`: Creates a [page](../reports/migrate.md) listing 'n' migratable terms by ontology as well as and pages 
+for each ontology with more detailed information.
 
 ## Mapping progress
 These workflows will create a [mapping progress report](../reports/unmapped.md) with statistics, with linked pages for each ontology that show unmapped terms.

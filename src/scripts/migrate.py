@@ -52,10 +52,35 @@ ROBOT_TEMPLATE_HEADER = {
     'mondo_id': 'ID', 'mondo_label': 'LABEL', 'xref': 'A oboInOwl:hasDbXref',
     'xref_source': '>A oboInOwl:source SPLIT=|', 'original_label': '', 'definition': 'A IAO:0000115', 'parents': 'SC %'}
 
+def _check_parent_conditions(t: Term, sssom_object_ids: Set[Union[URI, CURIE]], sssom_df: pd.DataFrame) -> bool:
+    """This is an optional, stricter check on slurp candidacy / order.
+
+    For a term to be immediately migratable, it must either (a) have no parents, or (b) have no valid parents in Mondo
+    (i.e. all of its parent terms are marked obsolete in Mondo), or (c) all its parents must be mapped, and at least 1
+    of those parent's mappings must be one of `skos:exactMatch` or `skos:NarrowMatch`."""
+    obsolete_mondo_parent_ids = []
+    qualified_parent_mondo_ids = []
+    all_parents_mapped = True
+    no_parents: bool = not t.direct_owned_parent_curies
+    for parent_curie in t.direct_owned_parent_curies:
+        if parent_curie not in sssom_object_ids:
+            all_parents_mapped = False
+        if parent_curie in sssom_object_ids:
+            parent: Dict = sssom_df[sssom_df['object_id'] == parent_curie].to_dict('records')[0]
+            parent_mondo_id, parent_mondo_label = parent['subject_id'], parent['subject_label']
+            if parent_mondo_label.startswith('obsolete'):
+                obsolete_mondo_parent_ids.append(parent_mondo_id)
+            elif parent['predicate_id'] in ['skos:exactMatch', 'skos:narrowMatch']:
+                qualified_parent_mondo_ids.append(parent_mondo_id)
+
+    no_valid_mondo_parents: bool = len(t.direct_owned_parent_curies) == len(obsolete_mondo_parent_ids)
+    return (all_parents_mapped and qualified_parent_mondo_ids) or no_parents or no_valid_mondo_parents
+
 
 def slurp(
     ontology_path: str, onto_config_path: str, onto_exclusions_path: str, mondo_mappings_path: str, max_id: int,
-    mondo_terms_path: str, slurp_dir_path: str, outpath: str, min_id: int = 0, use_cache=False
+    mondo_terms_path: str, slurp_dir_path: str, outpath: str, min_id: int = 0, use_cache=False,
+    parent_conditions_on=False
 ) -> pd.DataFrame:
     """Run slurp pipeline for given ontology
     todo: Speed: tried on an older computer and it was indeed too slow. Has to do w/ term class / utils, probably.
@@ -91,40 +116,28 @@ def slurp(
     owned_terms: List[Term] = _get_all_owned_terms(
         ontology=ontology, owned_prefix_map=owned_prefix_map, ontology_path=ontology_path, cache_dir_path=CACHE_DIR,
         onto_config_path=onto_config_path, use_cache=use_cache)
-    owned_term_curies: List[CURIE] = [x.curie for x in owned_terms]
     sssom_object_ids: Set[Union[URI, CURIE]] = set(sssom_df['object_id'])  # Usually CURIE, but spec allows URI
     unmapped_terms: List[Term] = [x for x in owned_terms if x.curie not in sssom_object_ids]
     slurp_candidates = [x for x in unmapped_terms if x.curie not in excluded_terms]  # remove exclusions
 
-    # Determine slurpable terms
-    # Migratable term: A term owned by the given ontology but unmapped in Mondo, which has either no parents, or if it
-    # has parents, all of its parents have already been mapped in Mondo.
+    # Determine slurpable / migratable terms
+    # To be migratable, the term (i) must not already be mapped, (ii) must not be excluded (e.g. not in
+    # `reports/%_term_exclusions.txt`), and (iii) must not be deprecated / obsolete. Then, if `parent_conditions_on`,
+    # we will also (iv, optional) `_check_parent_conditions()`.
     terms_to_slurp: List[Dict[str, str]] = []
     for t in slurp_candidates:
-        # If all T.parents mapped, and 1+ is an exact or narrow match and non obsolete, designate T for slurping
-        # (i.e. only slurp if parents are already slurped)
-        qualified_parent_mondo_ids = []
-        no_parents: bool = not t.direct_owned_parent_curies
-        for parent_curie in t.direct_owned_parent_curies:
-            # Conversely, if any of T.parents is unmapped, T is not to be slurped
-            if parent_curie in sssom_object_ids:
-                parent: Dict = sssom_df[sssom_df['object_id'] == parent_curie].to_dict('records')[0]
-                parent_mondo_id, parent_mondo_label = parent['subject_id'], parent['subject_label']
-                if not parent_mondo_label.startswith('obsolete'):
-                    qualified_parent_mondo_ids.append(parent_mondo_id)
-            if parent_curie not in sssom_object_ids and parent_curie in owned_term_curies:
-                break
-        if qualified_parent_mondo_ids or no_parents:
-            if t.curie in slurp_id_map:
-                mondo_id = slurp_id_map[t.curie]
-            else:
-                next_mondo_id, mondo_term_ids = _get_next_available_mondo_id(next_mondo_id, max_id, mondo_term_ids)
-                mondo_id = 'MONDO:' + str(next_mondo_id).zfill(7)  # leading 0-padding
-            mondo_label = t.label.lower() if t.label else ''
-            terms_to_slurp.append({
-                'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
-                'original_label': t.label if t.label else '', 'definition': t.definition if t.definition else '',
-                'parents': '|'.join(qualified_parent_mondo_ids)})
+        if parent_conditions_on and not _check_parent_conditions(t, sssom_object_ids, sssom_df):
+            continue
+        if t.curie in slurp_id_map:
+            mondo_id = slurp_id_map[t.curie]
+        else:
+            next_mondo_id, mondo_term_ids = _get_next_available_mondo_id(next_mondo_id, max_id, mondo_term_ids)
+            mondo_id = 'MONDO:' + str(next_mondo_id).zfill(7)  # leading 0-padding
+        mondo_label = t.label.lower() if t.label else ''
+        terms_to_slurp.append({
+            'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
+            'original_label': t.label if t.label else '', 'definition': t.definition if t.definition else '',
+            'parents': '|'.join([p for p in t.direct_owned_parent_curies])})
 
     # Sort, add robot row, save and return
     result = pd.DataFrame(terms_to_slurp)
@@ -208,6 +221,15 @@ def cli():
     parser.add_argument(
         '-C', '--use-cache', action='store_true', default=False,
         help='Use cached ontology and owned_terms objects?')
+    parser.add_argument(
+        '-p', '--parent-conditions-on', action='store_true', default=False,
+        help='If this flag is not present, the end result is that the terms in `slurp/%.tsv` will be exactly the same '
+             'as `reports/%_unmapped_terms.tsv`, which is the same as the list of terms in '
+             '`reports/%_mapping_status.tsv` where `is_mapped`, `is_deprecated`, and `is_obsolete` are `False`. If this'
+             ' flag is present, then for a term to be migratable it must either (a) have no parents, or (b) have no '
+             'valid parents in Mondo (i.e. all of its parent terms are marked obsolete in Mondo), or (c) all its '
+             'parents must be mapped, and at least 1 of those parent\'s mappings must be one of `skos:exactMatch` or '
+             '`skos:NarrowMatch`.')
     # slurp_docs() args
     parser.add_argument(
         '-d', '--docs', action='store_true',
