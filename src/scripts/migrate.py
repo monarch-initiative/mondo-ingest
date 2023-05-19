@@ -74,7 +74,7 @@ def slurp(
     for f in slurp_files:
         slurp_df = pd.read_csv(os.path.join(slurp_dir_path, f), sep='\t')
         slurp_ids = [int(x.split(':')[1]) for x in list(slurp_df['mondo_id'])[1:]]
-        next_mondo_id = max(next_mondo_id, max(slurp_ids) + 1)
+        next_mondo_id = max(next_mondo_id, max(slurp_ids) + 1) if slurp_ids else next_mondo_id
 
     # Get map of native IDs to existing slurp mondo IDs
     slurp_id_map: Dict[str, str] = {}
