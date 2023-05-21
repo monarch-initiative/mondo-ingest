@@ -8,13 +8,11 @@ Basically, we:
 Resources
 - https://incatools.github.io/ontology-access-kit/
 - https://incatools.github.io/ontology-access-kit/intro/tutorial02.html
-
-todo: refactor to take in 'unmapped mapppable' terms i.e. reports/%_unmapped_terms.tsv instead of other params?
 """
 import os
 from argparse import ArgumentParser
 from glob import glob
-from typing import Dict, List, Set, Union
+from typing import Dict, List, Set
 
 import pandas as pd
 import yaml
@@ -23,7 +21,7 @@ from oaklib.implementations import ProntoImplementation
 from oaklib.types import CURIE, URI
 
 from utils import CACHE_DIR, DOCS_DIR, PREFIX, PROJECT_DIR, Term, _get_all_owned_terms, _get_next_available_mondo_id, \
-    get_excluded_terms, get_mondo_term_ids, _load_ontology, SLURP_DIR
+    get_mondo_term_ids, _load_ontology, SLURP_DIR
 
 
 FILENAME_GLOB_PATTERN = '*.tsv'
@@ -52,35 +50,20 @@ ROBOT_TEMPLATE_HEADER = {
     'mondo_id': 'ID', 'mondo_label': 'LABEL', 'xref': 'A oboInOwl:hasDbXref',
     'xref_source': '>A oboInOwl:source SPLIT=|', 'original_label': '', 'definition': 'A IAO:0000115', 'parents': 'SC %'}
 
-def _check_parent_conditions(t: Term, sssom_object_ids: Set[Union[URI, CURIE]], sssom_df: pd.DataFrame) -> bool:
+def _valid_parent_conditions(
+    parents: List[CURIE], mapped: Set[CURIE], excluded: Set[CURIE], obsolete: Set[CURIE]
+) -> bool:
     """This is an optional, stricter check on slurp candidacy / order.
 
-    For a term to be immediately migratable, it must either (a) have no parents, or (b) have no valid parents in Mondo
-    (i.e. all of its parent terms are marked obsolete in Mondo), or (c) all its parents must be mapped, and at least 1
-    of those parent's mappings must be one of `skos:exactMatch` or `skos:NarrowMatch`."""
-    obsolete_mondo_parent_ids = []
-    qualified_parent_mondo_ids = []
-    all_parents_mapped = True
-    no_parents: bool = not t.direct_owned_parent_curies
-    for parent_curie in t.direct_owned_parent_curies:
-        if parent_curie not in sssom_object_ids:
-            all_parents_mapped = False
-        if parent_curie in sssom_object_ids:
-            parent: Dict = sssom_df[sssom_df['object_id'] == parent_curie].to_dict('records')[0]
-            parent_mondo_id, parent_mondo_label = parent['subject_id'], parent['subject_label']
-            if parent_mondo_label.startswith('obsolete'):
-                obsolete_mondo_parent_ids.append(parent_mondo_id)
-            elif parent['predicate_id'] in ['skos:exactMatch', 'skos:narrowMatch']:
-                qualified_parent_mondo_ids.append(parent_mondo_id)
-
-    no_valid_mondo_parents: bool = len(t.direct_owned_parent_curies) == len(obsolete_mondo_parent_ids)
-    return (all_parents_mapped and qualified_parent_mondo_ids) or no_parents or no_valid_mondo_parents
+    For a term to be immediately migratable, it must either (a) have no parents, or (b) all of its parents must be
+    mapped, obsolete, or excluded"""
+    return not parents or [any([x in y for y in [mapped, excluded, obsolete]]) for x in parents]
 
 
 def slurp(
-    ontology_path: str, onto_config_path: str, onto_exclusions_path: str, mondo_mappings_path: str, max_id: int,
-    mondo_terms_path: str, slurp_dir_path: str, outpath: str, min_id: int = 0, use_cache=False,
-    parent_conditions_on=False
+    ontology_path: str, onto_config_path: str, mondo_mappings_path: str, mapping_status_path: str,
+    mondo_terms_path: str, slurp_dir_path: str, outpath: str, max_id: int, min_id: int = 0,
+    parent_conditions_off=False, use_cache=False
 ) -> pd.DataFrame:
     """Run slurp pipeline for given ontology
     todo: Speed: tried on an older computer and it was indeed too slow. Has to do w/ term class / utils, probably.
@@ -91,43 +74,47 @@ def slurp(
         onto_config = yaml.safe_load(stream)
         owned_prefix_map: Dict[PREFIX, URI] = onto_config['base_prefix_map']
     sssom_df: pd.DataFrame = pd.read_csv(mondo_mappings_path, comment='#', sep='\t')
-    excluded_terms: Set[CURIE] = get_excluded_terms(onto_exclusions_path)
+    mapping_status_df: pd.DataFrame = pd.read_csv(mapping_status_path, sep='\t')
 
-    # Get next_mondo_id
+    # Related to assignment of new identifiers
+    # - Get next_mondo_id
     next_mondo_id = min_id
     slurp_files = [x for x in os.listdir(slurp_dir_path) if x.endswith('.tsv')]
     for f in slurp_files:
         slurp_df = pd.read_csv(os.path.join(slurp_dir_path, f), sep='\t')
         slurp_ids = [int(x.split(':')[1]) for x in list(slurp_df['mondo_id'])[1:]]
         next_mondo_id = max(next_mondo_id, max(slurp_ids) + 1) if slurp_ids else next_mondo_id
-
-    # Get map of native IDs to existing slurp mondo IDs
+    # - Get map of native IDs to existing slurp mondo IDs
     slurp_id_map: Dict[str, str] = {}
     if os.path.exists(outpath):
         this_slurp_df = pd.read_csv(outpath, sep='\t')
         for i, row in this_slurp_df[1:].iterrows():  # skip first row because it's a `robot` template sub-header
             slurp_id_map[row['xref']] = row['mondo_id']
-
-    # mondo_term_ids: If I remember correctly, rationale is to avoid edge case where mondo IDs exist above min_id
-    # todo: I think `mondo_term_ids` is now redundant with `slurp_id_map` usage and can probably now be deleted
+    # - mondo_term_ids: If I remember correctly, rationale is to avoid edge case where mondo IDs exist above min_id
+    # todo: `mondo_term_ids` might now redundant with `slurp_id_map` usage. if so, can delete
     mondo_term_ids: Set[int] = get_mondo_term_ids(mondo_terms_path, slurp_id_map)
 
     # Intermediates
-    owned_terms: List[Term] = _get_all_owned_terms(
+    excluded: Set[CURIE] = set(mapping_status_df[mapping_status_df['is_excluded'] == True]['subject_id'])
+    mapped: Set[CURIE] = set(mapping_status_df[mapping_status_df['is_mapped'] == True]['subject_id'])
+    obsolete: Set[CURIE] = set(mapping_status_df[mapping_status_df['is_deprecated'] == True]['subject_id'])
+    owned_terms: List[Term] = _get_all_owned_terms(  # todo can simplify. see comment on function
         ontology=ontology, owned_prefix_map=owned_prefix_map, ontology_path=ontology_path, cache_dir_path=CACHE_DIR,
         onto_config_path=onto_config_path, use_cache=use_cache)
-    sssom_object_ids: Set[Union[URI, CURIE]] = set(sssom_df['object_id'])  # Usually CURIE, but spec allows URI
-    unmapped_terms: List[Term] = [x for x in owned_terms if x.curie not in sssom_object_ids]
-    slurp_candidates = [x for x in unmapped_terms if x.curie not in excluded_terms]  # remove exclusions
+    slurp_candidates: List[Term] = [x for x in owned_terms if all([x.curie not in y for y in [excluded, mapped]])]
+    match_types: Dict = {}
+    for row in sssom_df.itertuples():
+        # noinspection PyUnresolvedReferences
+        match_types[row.object_id] = row.predicate_id
 
     # Determine slurpable / migratable terms
     # To be migratable, the term (i) must not already be mapped, (ii) must not be excluded (e.g. not in
-    # `reports/%_term_exclusions.txt`), and (iii) must not be deprecated / obsolete. Then, if `parent_conditions_on`,
-    # we will also (iv, optional) `_check_parent_conditions()`.
+    # `reports/%_term_exclusions.txt`), and (iii) must not be deprecated / obsolete. Then, unless
+    # `parent_conditions_off`, will also (iv) `_check_parent_conditions()`.
     terms_to_slurp: List[Dict[str, str]] = []
+    slurp_candidates = [t for t in slurp_candidates if _valid_parent_conditions(
+        t.direct_owned_parent_curies, mapped, excluded, obsolete)] if not parent_conditions_off else slurp_candidates
     for t in slurp_candidates:
-        if parent_conditions_on and not _check_parent_conditions(t, sssom_object_ids, sssom_df):
-            continue
         if t.curie in slurp_id_map:
             mondo_id = slurp_id_map[t.curie]
         else:
@@ -137,7 +124,9 @@ def slurp(
         terms_to_slurp.append({
             'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
             'original_label': t.label if t.label else '', 'definition': t.definition if t.definition else '',
-            'parents': '|'.join([p for p in t.direct_owned_parent_curies])})
+            # if not in match_types, this should mean term is excluded or obsolete
+            'parents': '|'.join([p for p in t.direct_owned_parent_curies if p in match_types
+                                 and match_types[p] in ['skos:exactMatch', 'skos:narrowMatch']])})
 
     # Sort, add robot row, save and return
     result = pd.DataFrame(terms_to_slurp)
@@ -180,6 +169,7 @@ def slurp_docs():
         f.write(instantiated_str)
 
 
+# TODO: remove cache? probably not needed after mapping status
 # todo: add way to not read from cache, but write to cache
 def cli():
     """Command line interface."""
@@ -193,10 +183,9 @@ def cli():
         help='Required. Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
              'list of prefixes owned by the ontology. Used to filter out terms.')
     parser.add_argument(
-        '-e', '--onto-exclusions-path',
-        help='Required. Path to a text file, e.g with naming pattern `<ontology>_term_exclusions.txt` which contains a '
-             'list of  terms that are exclueded from inclusion into Mondo. Should be a plain file of line break '
-             'delimited terms; only 1 column with no column header.')
+        '-S', '--mapping-status-path',
+        help='Required. A TSV with a list of all terms and columns: subject_id, subject_label, is_mapped, is_excluded, '
+             'is_deprecated.')
     parser.add_argument(
         '-s', '--mondo-mappings-path',
         help='Required. Path to file containing all known Mondo mappings, in SSSOM format.')
@@ -222,11 +211,11 @@ def cli():
         '-C', '--use-cache', action='store_true', default=False,
         help='Use cached ontology and owned_terms objects?')
     parser.add_argument(
-        '-p', '--parent-conditions-on', action='store_true', default=False,
-        help='If this flag is not present, the end result is that the terms in `slurp/%.tsv` will be exactly the same '
+        '-p', '--parent-conditions-off', action='store_true', default=False,
+        help='If this flag is present, the end result is that the terms in `slurp/%.tsv` will be exactly the same '
              'as `reports/%_unmapped_terms.tsv`, which is the same as the list of terms in '
              '`reports/%_mapping_status.tsv` where `is_mapped`, `is_deprecated`, and `is_obsolete` are `False`. If this'
-             ' flag is present, then for a term to be migratable it must either (a) have no parents, or (b) have no '
+             ' flag is not present, then for a term to be migratable it must either (a) have no parents, or (b) have no '
              'valid parents in Mondo (i.e. all of its parent terms are marked obsolete in Mondo), or (c) all its '
              'parents must be mapped, and at least 1 of those parent\'s mappings must be one of `skos:exactMatch` or '
              '`skos:NarrowMatch`.')
