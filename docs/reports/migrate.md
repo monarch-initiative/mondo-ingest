@@ -1,12 +1,12 @@
 # Migratable terms
 | Ontology                          | Tot   |
 |:----------------------------------|:------|
-| [ORDO](./migrate_ordo.md)         | 7     |
-| [DOID](./migrate_doid.md)         | 473   |
 | [NCIT](./migrate_ncit.md)         | 4,034 |
-| [OMIM](./migrate_omim.md)         | 3     |
+| [DOID](./migrate_doid.md)         | 122   |
 | [ICD10WHO](./migrate_icd10who.md) | 117   |
 | [ICD10CM](./migrate_icd10cm.md)   | 1,847 |
+| [OMIM](./migrate_omim.md)         | 1     |
+| [ORDO](./migrate_ordo.md)         | 0     |
 
 ### Codebook
 `Ontology`: Name of ontology    
