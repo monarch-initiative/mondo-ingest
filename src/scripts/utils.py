@@ -217,8 +217,9 @@ def get_mondo_term_ids(mondo_terms_path: str, slurp_id_map: Dict[str, str]) -> S
     return existing_ids
 
 
-# todo: Improvement. Currently, we're returning 'owned terms', which are defined as all the terms that are listed and have the proper prefix.
-#  ..but, we need to improve this and import the ones 'of interest'. so this should come from the signature file?
+# todo: Improvement. Currently, we're returning 'owned terms', which are defined as all the terms that are listed and
+#  have the proper prefix. but, we need to improve this and import the ones 'of interest'. so this should come from the
+#  the terms list from mapping_status or component signature
 def _get_all_owned_terms(
     ontology: Union[SqlImplementation, ProntoImplementation], owned_prefix_map: Dict[PREFIX, URI], ontology_path: str,
     mode=['term', 'uri', 'curie'][0], silent=True, cache_dir_path: str = None, onto_config_path: str = None,

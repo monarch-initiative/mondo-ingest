@@ -434,13 +434,12 @@ slurp/:
 	mkdir -p $@
 
 # min-id: the next available Mondo ID
-# todo: `pip install` stuff is temporarily here until we come up with a fix. otherwise docker won't work
 slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
 	python3 $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
-	--onto-exclusions-path reports/$*_term_exclusions.txt \
+	--mapping-status-path reports/$*_mapping_status.tsv \
 	--min-id 850056 \
 	--max-id 999999 \
 	--mondo-terms-path $(REPORTDIR)/mirror_signature-mondo.tsv \
