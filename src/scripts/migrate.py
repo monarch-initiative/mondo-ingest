@@ -101,7 +101,8 @@ def slurp(
     owned_terms: List[Term] = _get_all_owned_terms(  # todo can simplify. see comment on function
         ontology=ontology, owned_prefix_map=owned_prefix_map, ontology_path=ontology_path, cache_dir_path=CACHE_DIR,
         onto_config_path=onto_config_path, use_cache=use_cache)
-    slurp_candidates: List[Term] = [x for x in owned_terms if all([x.curie not in y for y in [excluded, mapped]])]
+    slurp_candidates: List[Term] = \
+        [t for t in owned_terms if all([t.curie not in y for y in [excluded, mapped, obsolete]])]
     match_types: Dict = {}
     mondo_id_map: Dict = {}
     for row in sssom_df.itertuples():
