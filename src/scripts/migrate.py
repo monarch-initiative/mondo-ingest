@@ -57,7 +57,7 @@ def _valid_parent_conditions(
 
     For a term to be immediately migratable, it must either (a) have no parents, or (b) all of its parents must be
     mapped, obsolete, or excluded"""
-    return not parents or [any([x in y for y in [mapped, excluded, obsolete]]) for x in parents]
+    return not parents or all([(x in mapped) or (x in excluded) or (x in obsolete) for x in parents])
 
 
 def slurp(
@@ -103,9 +103,12 @@ def slurp(
         onto_config_path=onto_config_path, use_cache=use_cache)
     slurp_candidates: List[Term] = [x for x in owned_terms if all([x.curie not in y for y in [excluded, mapped]])]
     match_types: Dict = {}
+    mondo_id_map: Dict = {}
     for row in sssom_df.itertuples():
         # noinspection PyUnresolvedReferences
         match_types[row.object_id] = row.predicate_id
+        # noinspection PyUnresolvedReferences
+        mondo_id_map[row.object_id] = row.subject_id
 
     # Determine slurpable / migratable terms
     # To be migratable, the term (i) must not already be mapped, (ii) must not be excluded (e.g. not in
@@ -121,12 +124,14 @@ def slurp(
             next_mondo_id, mondo_term_ids = _get_next_available_mondo_id(next_mondo_id, max_id, mondo_term_ids)
             mondo_id = 'MONDO:' + str(next_mondo_id).zfill(7)  # leading 0-padding
         mondo_label = t.label.lower() if t.label else ''
+        qualified_parents = [p for p in t.direct_owned_parent_curies
+                             if p in match_types and match_types[p] in ['skos:exactMatch', 'skos:narrowMatch']]
+        qualified_mondo_parents = [mondo_id_map[p] for p in qualified_parents if p in mondo_id_map]
         terms_to_slurp.append({
             'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
             'original_label': t.label if t.label else '', 'definition': t.definition if t.definition else '',
             # if not in match_types, this should mean term is excluded or obsolete
-            'parents': '|'.join([p for p in t.direct_owned_parent_curies if p in match_types
-                                 and match_types[p] in ['skos:exactMatch', 'skos:narrowMatch']])})
+            'parents': '|'.join(qualified_mondo_parents)})
 
     # Sort, add robot row, save and return
     result = pd.DataFrame(terms_to_slurp)
