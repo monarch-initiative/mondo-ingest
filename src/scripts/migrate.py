@@ -65,50 +65,6 @@ def _valid_parent_conditions(
     return not parents or all([(x in mapped) or (x in excluded) or (x in obsolete) for x in parents])
 
 
-# TODO: temp
-def _parent_comment(t: Term,
-    parents: List[CURIE], mapped: Set[CURIE], excluded: Set[CURIE], obsolete: Set[CURIE]
-) -> (bool, str):
-    """This is an optional, stricter check on slurp candidacy / order.
-
-    For a term to be immediately migratable, it must either (a) have no parents, or (b) all of its parents must be
-    mapped, obsolete, or excluded"""
-    comment = ''
-    # - save which cases did not occur at the end
-    # if all([x in mapped for x in parents]):
-    #     print(t.curie)
-    # elif all([x in excluded for x in parents]):
-    #     print(t.curie)
-    # elif all([x in obsolete for x in parents]):
-    #     print(t.curie)
-    # elif all([x not in mapped for x in parents]):
-    #     print(t.curie)
-    # elif all([x not in excluded for x in parents]):
-    #     print(t.curie)
-    # elif all([x not in obsolete for x in parents]):
-    #     print(t.curie)
-    # # 1 but not all parent is mapped
-    # elif any([x in mapped for x in parents]) and not all([x in mapped for x in parents]):
-    #     print(t.curie)
-    # # 1 but not all parent is excluded
-    # elif any([x in excluded for x in parents]) and not all([x in excluded for x in parents]):
-    #     print(t.curie)
-    # # 1 but not all parent is obsolete
-    # elif any([x in obsolete for x in parents]) and not all([x in obsolete for x in parents]):
-    #     print(t.curie)
-    # elif all([x in y for y in [mapped, excluded, obsolete] for x in parents]):  # does this make sense
-    # all parents are all of mapped, excluded, and obsolete
-    if all([(x in mapped) and (x in excluded) and (x in obsolete) for x in parents]) and bool(parents):
-        comment = 'all parents are all of mapped, excluded, and obsolete'
-    # at least 1 parent that is all of mapped, excluded, and obsolete
-    elif any([(x in mapped) and (x in excluded) and (x in obsolete) for x in parents]) and bool(parents):
-        comment = 'at least 1 parent that is all of mapped, excluded, and obsolete'
-    # no parents mapped, exlcuded, or obsolete
-    elif all([(x not in mapped) and (x not in excluded) and (x not in obsolete) for x in parents]) and bool(parents):
-        comment = 'no parents mapped, exlcuded, or obsolete'
-    return not parents or all([(x in mapped) or (x in excluded) or (x in obsolete) for x in parents]), comment
-
-
 def slurp(
     ontology_path: str, onto_config_path: str, mondo_mappings_path: str, mapping_status_path: str,
     mondo_terms_path: str, slurp_dir_path: str, outpath: str, max_id: int, min_id: int = 0,
@@ -160,20 +116,6 @@ def slurp(
         # noinspection PyUnresolvedReferences
         mondo_id_map[row.object_id] = row.subject_id
 
-    # TODO: temp map for output DF
-    mapping_status_map = {x['subject_id']: x for x in mapping_status_df.to_dict(orient='records')}
-    slurp_candidate_curies = [x.curie for x in slurp_candidates]
-    for t in owned_terms:
-        d = mapping_status_map[t.curie]
-        ok_term_conditions = t.curie in slurp_candidate_curies
-        ok_parent_conditions, parent_comment = _parent_comment(
-            t, t.direct_owned_parent_curies, mapped, excluded, obsolete)
-        d['ok_term_conditions'] = ok_term_conditions
-        d['ok_parent_conditions'] = ok_parent_conditions
-        d['expected_in_output'] = bool(bool(ok_parent_conditions) * ok_term_conditions)
-        d['comment_condition_parents'] = parent_comment
-        mapping_status_map[t.curie] = d
-
     # Determine slurpable / migratable terms
     # To be migratable, the term (i) must not already be mapped, (ii) must not be excluded (e.g. not in
     # `reports/%_term_exclusions.txt`), and (iii) must not be deprecated / obsolete. Then, unless
@@ -182,9 +124,6 @@ def slurp(
     slurp_candidates = [t for t in slurp_candidates if _valid_parent_conditions(
         t.direct_owned_parent_curies, mapped, excluded, obsolete)] if not parent_conditions_off else slurp_candidates
     for t in slurp_candidates:
-        # TODO: temp
-        d = mapping_status_map[t.curie]
-
         if t.curie in slurp_id_map:
             mondo_id = slurp_id_map[t.curie]
         else:
@@ -194,73 +133,11 @@ def slurp(
         qualified_parents = [p for p in t.direct_owned_parent_curies
                              if p in match_types and match_types[p] in ['skos:exactMatch', 'skos:narrowMatch']]
         qualified_mondo_parents = [mondo_id_map[p] for p in qualified_parents if p in mondo_id_map]
-
-        # TODO: temp: obsolete mondo parents
-        mondo_parents = {}
-        for parent_curie in t.direct_owned_parent_curies:
-            try:
-                parent: Dict = sssom_df[sssom_df['object_id'] == parent_curie].to_dict('records')[0]
-                mondo_parents[parent['subject_id']] = parent['subject_label']
-            except IndexError:  # no mondo parent; parent is not mapped
-                continue
-        osbsolete_status_mondo_parents = [x.startswith('obsolete') for x in list(mondo_parents.values())]
-        # some parents obsolete
-        if any(osbsolete_status_mondo_parents) and not all(osbsolete_status_mondo_parents):
-            d['comment_noncondition_obsolete_mondo_parents'] = 'some parents obsolete'
-        # all parents obsolete
-        elif all(osbsolete_status_mondo_parents):
-            d['comment_noncondition_obsolete_mondo_parents'] = 'all parents obsolete'
-        # no parents obsolete
-        elif not any(osbsolete_status_mondo_parents):
-            d['comment_noncondition_obsolete_mondo_parents'] = 'no parents obsolete'
-
-        # TODO: temp: qualified parents
-        # all parents qualified
-        if len(qualified_parents) > 0 and len(qualified_mondo_parents) == len(t.direct_owned_parent_curies):
-            d['comment_noncondition_qualified_parents'] = 'all parents qualified'
-        # has parents but not all are qualified
-        elif len(qualified_parents) > 0 and len(qualified_mondo_parents) != len(t.direct_owned_parent_curies):
-            d['comment_noncondition_qualified_parents'] = 'has parents but not all are qualified'
-        # has parents but none of them are qualified
-        elif len(qualified_parents) == 0 and len(t.direct_owned_parent_curies) > 0:
-            d['comment_noncondition_qualified_parents'] = 'has parents but none of them are qualified'
-        # no parents
-        elif not t.direct_owned_parent_curies:
-            d['comment_noncondition_qualified_parents'] = 'no parents'
-
         terms_to_slurp.append({
             'mondo_id': mondo_id, 'mondo_label': mondo_label, 'xref': t.curie, 'xref_source': 'MONDO:equivalentTo',
             'original_label': t.label if t.label else '', 'definition': t.definition if t.definition else '',
             # if not in match_types, this should mean term is excluded or obsolete
             'parents': '|'.join(qualified_mondo_parents)})
-
-        # TODO: temp
-        mapping_status_map[t.curie] = d
-
-    # TODO: temp: for forcing a case in which no parents, but qualified otherwise
-    #  - found C001 to be best candidate. really it's only excluded, but being thorough below
-    # no_parents = [t for t in owned_terms if not t.direct_owned_parent_curies]
-    d = mapping_status_map['Orphanet:C001']
-    d['is_excluded'], d['is_deprecated'], d['is_mapped'], d['ok_term_conditions'], d['expected_in_output'] = \
-        False, False, False, True, True
-    mapping_status_map['Orphanet:C001'] = d
-    mapping_df_new_ungrouped = pd.DataFrame(mapping_status_map.values()).fillna('')
-
-    # TODO: ideally make sure at least 1 thing in each group, then make a new TSV with 1 in each group
-    #  - there woudl be around 27~ cases by combining all (qualified parents conditions) * (obsolete parents conditions)
-    #  * (parent conditions).
-    non_grouping_cols = ['subject_id', 'subject_label',	'is_mapped', 'is_excluded', 'is_deprecated']
-    grouping_cols = [c for c in mapping_df_new_ungrouped.columns if c not in non_grouping_cols]
-    grouped = mapping_df_new_ungrouped.groupby(grouping_cols)
-    i = 0
-    dfs = []
-    for name, df in grouped:
-        i += 1
-        df['unique_combo_group'] = i
-        dfs.append(df)
-    mapping_df_new_grouped = pd.concat(dfs)
-    mapping_df_new_grouped.to_csv('~/Desktop/ordo_mapping_status_custom.tsv', sep='\t', index=False)
-    mapping_df_new_grouped.to_csv('~/Desktop/ordo_mapping_status_custom.csv', index=False)
 
     # Sort, add robot row, save and return
     result = pd.DataFrame(terms_to_slurp)
@@ -303,7 +180,6 @@ def slurp_docs():
         f.write(instantiated_str)
 
 
-# TODO: remove cache? probably not needed after mapping status
 # todo: add way to not read from cache, but write to cache
 def cli():
     """Command line interface."""
