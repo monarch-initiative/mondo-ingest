@@ -54,15 +54,15 @@ class TestMigrate(unittest.TestCase):
 
     def test_all_expected_in_output(self):
         """Tests against known passing cases in input file. All of these terms meet all conditions for inclusion in the
-        the output file, e.g. they're not mapped, excluded, or obsolete, and they either have no parents, or all of
-        their parents are either mapped, excluded, or obsolete."""
+        output file, e.g. they're not mapped, excluded, or obsolete, and they either have no parents, or all of their
+        parents are either mapped, excluded, or obsolete."""
         expected: List[CURIE] = \
             self.mapping_status_df[self.mapping_status_df['expected_in_output'] == True]['subject_id'].to_list()
         self.assertTrue(all([x in self.migratable for x in expected]))
 
     def test_all_unexpected_not_in_output(self):
         """Tests against known failing cases in input file. None of these terms meet all conditions for inclusion in the
-        the output file, e.g. they're either mapped, excluded, or obsolete, or not all of their parents are mapped,
+        output file, e.g. they're either mapped, excluded, or obsolete, or not all of their parents are mapped,
         excluded, or obsolete."""
         unexpected: List[CURIE] = \
             self.mapping_status_df[self.mapping_status_df['expected_in_output'] == False]['subject_id'].to_list()
