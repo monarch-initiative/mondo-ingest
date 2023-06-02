@@ -509,6 +509,7 @@
 | MONDO:0020242 | Orphanet:98664  | MONDO:equivalentObsolete |
 | MONDO:0020243 | Orphanet:98665  | MONDO:equivalentObsolete |
 | MONDO:0020244 | Orphanet:98666  | MONDO:equivalentObsolete |
+| MONDO:0020245 | Orphanet:98667  | MONDO:equivalentObsolete |
 | MONDO:0020247 | Orphanet:98669  | MONDO:equivalentObsolete |
 | MONDO:0020252 | Orphanet:98682  | MONDO:equivalentObsolete |
 | MONDO:0020259 | Orphanet:98689  | MONDO:equivalentObsolete |
