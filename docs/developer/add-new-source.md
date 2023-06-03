@@ -32,3 +32,13 @@ Run `sh run.sh make ../../docs/metrics/*.md` from `src/ontology`.
 
 ### 3.5. `docs/metrics.md`
 Add a link to your new `.md` file created in the last step.
+
+## 4. Everything else
+Steps 1-3 take care of the basic setup. Ideally, if everything is automated correctly and the nature of the ontology 
+being ingested is not significantly different than what has been ingested before, running `make build-mondo-ingest` 
+should include all of the output artefacts and remaining documentation for the new ontology.
+
+However, in practice, because `build-mondo-ingest` takes a long time to run, it might be a good idea to look at each of 
+its steps and try running pieces of them to make sure they are working as expected. It might even be a good idea to run 
+all of the steps, but with modifications so that you're only running it for the new ontology rather than all of them. 
+For example, instead of `make slurp-all` you'd run `make slurp-*`.
