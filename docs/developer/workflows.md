@@ -40,8 +40,8 @@ These workflows will create a [mapping progress report](../reports/unmapped.md) 
 3. `unmapped-terms-tables`: Generates `reports/%_mapping_status.tsv` and  `reports/%_unmapped_terms.tsv` for all ontologies.
 4. `unmapped-terms-docs`: Based on the set of `reports/%_mapping_status.tsv` and  `reports/%_unmapped_terms.tsv` for all ontologies, uses these to create the [mapping progress report](../reports/unmapped.md) and other related pages. 
 5. `mapping-progress-report`: Runs `unmapped-terms-tables` and `unmapped-terms-docs`. Creates mapping progress report [mapping progress report](../reports/unmapped.md) and pages for each ontology which list their umapped terms. Also generates `reports/%_mapping_status.tsv` and `reports/%_unmapped_terms.tsv` for all ontologies.
-6. `components/%-unmapped.owl`: Creates an OWL component of the ontology which consists only of the subset of terms which are current mapping candidates.
-7. `recreate-unmapped-components`: Runs components/%-unmapped.owl for all ontologies.
+6. `unmapped/%-unmapped.owl`: Creates an OWL component of the ontology which consists only of the subset of terms which are current mapping candidates.
+7. `recreate-unmapped-components`: Runs unmapped/%-unmapped.owl for all ontologies.
 
 ## Mapped deprecated terms
 These workflows will create a [report of deprecated terms with Mondo xrefs](../reports/mapped_deprecated.md) with statistics, with linked pages for each ontology that show deprecated terms with existing xrefs in Mondo.
