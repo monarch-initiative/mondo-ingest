@@ -447,17 +447,6 @@ $(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
 	@rm -f .template.db.tmp
 	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
 
-# todo: Temporarily need this goal until issue where where `Makefile` `$(COMPONENTSDIR)/%` goal overriding `$(COMPONENTSDIR)/%.db` is fixed. Discussion: https://github.com/monarch-initiative/mondo-ingest/pull/299/files#r1198555270
-.PHONY: %-db
-%-db: $(COMPONENTSDIR)/%.owl
-	@rm -f .template.db
-	@rm -f .template.db.tmp
-	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
-	RUST_BACKTRACE=full semsql make $(COMPONENTSDIR)/$*.db -P config/prefixes.csv
-	@rm -f .template.db
-	@rm -f .template.db.tmp
-	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
-
 slurp/:
 	mkdir -p $@
 

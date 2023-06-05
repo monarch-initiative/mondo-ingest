@@ -9,6 +9,9 @@
 # ----------------------------------------
 # More information: https://github.com/INCATools/ontology-development-kit/
 
+# Fingerprint of the configuration file when this Makefile was last generated
+CONFIG_HASH=                cb9c226c830886e98787ddf41795ed278d091ca821b301895ae80ac5429e9379
+
 
 # ----------------------------------------
 # Standard Constants
@@ -69,7 +72,7 @@ RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full )
 all: all_odk
 
 .PHONY: all_odk
-all_odk: odkversion test all_assets
+all_odk: odkversion config_check test all_assets
 
 .PHONY: test
 test: odkversion reason_test sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
@@ -92,6 +95,12 @@ odkversion:
 	echo "ODK Makefile version: $(ODK_VERSION_MAKEFILE) (this is the version of the ODK with which this Makefile was generated, \
         not the version of the ODK you are running)" &&\
 	echo "ROBOT version (ODK): " && $(ROBOT) --version
+.PHONY: config_check
+config_check:
+	@if [ "$$(sha256sum $(ONT)-odk.yaml | cut -c1-64)" = "$(CONFIG_HASH)" ]; then \
+		echo "Repository is up-to-date." ; else \
+		echo "Your ODK configuration has changed since this Makefile was generated. You may need to run 'make update_repo'." ; fi
+
 
 $(TMPDIR) $(REPORTDIR) $(MIRRORDIR) $(IMPORTDIR) $(COMPONENTSDIR) $(SUBSETDIR):
 	mkdir -p $@
@@ -368,9 +377,9 @@ recreate-%:
 no-mirror-recreate-%:
 	$(MAKE) COMP=true IMP=false IMP_LARGE=false MIR=false PAT=true $(COMPONENTSDIR)/$*.owl -B
 
-$(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
-	touch $@
-.PRECIOUS: $(COMPONENTSDIR)/%
+$(COMPONENTSDIR)/%.owl: | $(COMPONENTSDIR)
+	test -f $@ || touch $@
+.PRECIOUS: $(COMPONENTSDIR)/%.owl
 
 
 
