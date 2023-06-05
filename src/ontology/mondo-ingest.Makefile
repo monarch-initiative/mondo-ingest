@@ -526,6 +526,13 @@ update-jinja-sparql-queries:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
+#################
+##### Tests #####
+#################
+.PHONY: tests
+tests:
+	cd ../../; python -m unittest discover
+
 #############################
 ########### Help ############
 #############################
@@ -536,6 +543,9 @@ help:
 	@echo "----------------------------------------"
 	@echo "	Command reference: mondo-ingest"
 	@echo "----------------------------------------"
+	# Tests
+	@echo "tests"
+	@echo "Run all project related (as oppposed to ODK) automated tests. To run ODK tests, use the 'test' goal.\n"
 	# Slurp / migrate
 	@echo "slurp/%.tsv and slurp-%"
 	@echo "For a given ontology, determine all slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.\n"

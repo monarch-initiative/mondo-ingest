@@ -10,8 +10,10 @@ Resources
 - https://incatools.github.io/ontology-access-kit/intro/tutorial02.html
 """
 import os
+import sys
 from argparse import ArgumentParser
 from glob import glob
+from pathlib import Path
 from typing import Dict, List, Set
 
 import pandas as pd
@@ -20,8 +22,11 @@ from jinja2 import Template
 from oaklib.implementations import ProntoImplementation
 from oaklib.types import CURIE, URI
 
-from utils import CACHE_DIR, DOCS_DIR, PREFIX, PROJECT_DIR, Term, _get_all_owned_terms, _get_next_available_mondo_id, \
-    get_mondo_term_ids, _load_ontology, SLURP_DIR
+SCRIPTS_DIR = Path(os.path.abspath(os.path.dirname(__file__)))
+PROJECT_ROOT = SCRIPTS_DIR.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+from src.scripts.utils import CACHE_DIR, DOCS_DIR, PREFIX, PROJECT_DIR, Term, _get_all_owned_terms, \
+    _get_next_available_mondo_id, get_mondo_term_ids, _load_ontology, SLURP_DIR
 
 
 FILENAME_GLOB_PATTERN = '*.tsv'
@@ -175,7 +180,6 @@ def slurp_docs():
         f.write(instantiated_str)
 
 
-# TODO: remove cache? probably not needed after mapping status
 # todo: add way to not read from cache, but write to cache
 def cli():
     """Command line interface."""
