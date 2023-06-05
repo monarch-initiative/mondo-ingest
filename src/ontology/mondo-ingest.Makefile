@@ -437,11 +437,8 @@ matches: lexical-matches extract-unmapped-matches
 #############################
 ###### Slurp pipeline #######
 #############################
-# todo: What if the mirror was out of date, but there's already a .db file there, but it's not up to date?
-# Related issues:
-#  - icd10cm/icd10who ttl -> owl: https://github.com/monarch-initiative/mondo-ingest/issues/138
-#  - No rule to make target 'mirror/ONTOLOGY.owl': https://github.com/monarch-initiative/mondo-ingest/issues/137
-$(COMPONENTSDIR)/%.db:
+# todo: What if the mirror was out of date, but there's already a .db file there, but it's not up to date? will it force update?
+$(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz

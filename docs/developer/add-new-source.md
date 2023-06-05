@@ -42,3 +42,6 @@ However, in practice, because `build-mondo-ingest` takes a long time to run, it 
 its steps and try running pieces of them to make sure they are working as expected. It might even be a good idea to run 
 all of the steps, but with modifications so that you're only running it for the new ontology rather than all of them. 
 For example, instead of `make slurp-all` you'd run `make slurp-*`.
+
+There are a few other files that will probably need to be added as well, such as `src/ontology/config/*_exclusions.tsv`.
+A full list of such things should be found in [this issue](https://github.com/monarch-initiative/mondo-ingest/issues/2).
