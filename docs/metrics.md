@@ -3,6 +3,7 @@
 You can find information about the source modules ingested below. Remember that [sources are preprocessed](sources.md). The metrics only pertain to the portion of the sources we actually consider for alignment.
 
 - [DO](metrics/doid.md)
+- [GARD](metrics/gard.md)
 - [ICD10CM](metrics/icd10cm.md)
 - [ICD10WHO](metrics/icd10who.md)
 - [NCIT](metrics/ncit.md)

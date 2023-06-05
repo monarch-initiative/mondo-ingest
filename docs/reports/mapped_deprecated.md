@@ -5,8 +5,9 @@
 | [OMIM](./mapped_deprecated_omim.md)         |                        44 |
 | [NCIT](./mapped_deprecated_ncit.md)         |                        33 |
 | [DOID](./mapped_deprecated_doid.md)         |                        30 |
-| [ICD10WHO](./mapped_deprecated_icd10who.md) |                         0 |
+| [GARD](./mapped_deprecated_gard.md)         |                         0 |
 | [ICD10CM](./mapped_deprecated_icd10cm.md)   |                         0 |
+| [ICD10WHO](./mapped_deprecated_icd10who.md) |                         0 |
 
 `Ontology`: Name of ontology    
 `Tot deprecated in Mondo`: Total terms that the ontology source itself has deprecated which have existing xrefs in Mondo

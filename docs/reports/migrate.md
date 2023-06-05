@@ -1,6 +1,7 @@
 # Migratable terms
 | Ontology                          | Tot   |
 |:----------------------------------|:------|
+| [GARD](./migrate_gard.md)         | 9,370 |
 | [ORDO](./migrate_ordo.md)         | 70    |
 | [NCIT](./migrate_ncit.md)         | 2,113 |
 | [DOID](./migrate_doid.md)         | 122   |

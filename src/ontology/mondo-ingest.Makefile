@@ -1,6 +1,11 @@
 ## Customize Makefile settings for mondo-ingest
 ## 
 ## If you need to customize your Makefile, make changes here rather than in the main Makefile
+#
+# TODO's
+#  TODO #1. Several $(COMPONENTSDIR/*.owl goals have unnecessary operations: https://github.com/monarch-initiative/mondo-ingest/pull/299#discussion_r1187182707
+#   - The line that references config/remove.txt looks like it only needs to be for OMIM
+#   - omimps and hgnc_id SPARQL updates are probably just for OMIM as well
 
 ####################################
 ### Standard constants #############
@@ -44,6 +49,7 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-dow
 			--update ../sparql/fix_illegal_punning_omim.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
 
+# todo: See #1 at top of file
 $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt | component-download-ordo.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ordo.owl.owl --select imports \
 		merge \
@@ -73,6 +79,7 @@ $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-dow
 		remove --term "http://purl.obolibrary.org/obo/NCIT_C179199" --axioms "equivalent" \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ncit.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ncit.owl -o $@; fi
 
+# todo: See #1 at top of file
 $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-download-doid.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-doid.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
@@ -100,6 +107,7 @@ component-download-icd10cm.owl: | $(TMPDIR)
 		remove -T config/remove_properties.txt \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
+# todo: See #1 at top of file
 $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | component-download-icd10cm.owl
 	if [ $(COMP) = true ]; then $(ROBOT) merge -i $(TMPDIR)/component-download-icd10cm.owl.owl \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
@@ -114,6 +122,7 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | compone
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
 
+# todo: See #1 at top of file
 $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | component-download-icd10who.owl
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd10who.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
@@ -127,6 +136,16 @@ $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | compo
 			--update ../sparql/fix_complex_reification.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
+
+.PHONY: component-download-gard.owl
+component-download-gard.owl: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/gard/releases/latest/download/gard.owl \
+	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+
+$(COMPONENTSDIR)/gard.owl: $(TMPDIR)/gard_relevant_signature.txt | component-download-gard.owl
+	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-gard.owl.owl --select imports \
+		remove -T $(TMPDIR)/gard_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		annotate --ontology-iri $(URIBASE)/mondo/sources/gard.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/gard.owl -o $@; fi
 
 $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
@@ -204,7 +223,7 @@ unmapped/:
 
 unmapped/%-unmapped.owl: $(COMPONENTSDIR)/%.owl reports/%_unmapped_terms.tsv | unmapped/
 	cut -f 1 reports/$*_unmapped_terms.tsv | tail -n +2 > reports/$*_unmapped_terms.txt
-	$(ROBOT) filter -i components/$*.owl -T reports/$*_unmapped_terms.txt -o $@
+	$(ROBOT) filter -i components/$*.owl -T reports/$*_unmapped_terms.txt -o components/$@
 	rm reports/$*_unmapped_terms.txt
 
 .PHONY: recreate-unmapped-components
@@ -389,7 +408,6 @@ tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
 tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
 	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl --add-prefixes config/context.json \
 			 remove --term "http://purl.obolibrary.org/obo/mondo#ABBREVIATION" --preserve-structure false -o $@
-	
 
 tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db
@@ -423,12 +441,22 @@ matches: lexical-matches extract-unmapped-matches
 # Related issues:
 #  - icd10cm/icd10who ttl -> owl: https://github.com/monarch-initiative/mondo-ingest/issues/138
 #  - No rule to make target 'mirror/ONTOLOGY.owl': https://github.com/monarch-initiative/mondo-ingest/issues/137
-# Maybe solved now by using $(COMPONENTSDIR)/
-$(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
+$(COMPONENTSDIR)/%.db:
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
 	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
+	@rm -f .template.db
+	@rm -f .template.db.tmp
+	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
+
+# todo: Temporarily need this goal until issue where where `Makefile` `$(COMPONENTSDIR)/%` goal overriding `$(COMPONENTSDIR)/%.db` is fixed. Discussion: https://github.com/monarch-initiative/mondo-ingest/pull/299/files#r1198555270
+.PHONY: %-db
+%-db: $(COMPONENTSDIR)/%.owl
+	@rm -f .template.db
+	@rm -f .template.db.tmp
+	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
+	RUST_BACKTRACE=full semsql make $(COMPONENTSDIR)/$*.db -P config/prefixes.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
@@ -471,10 +499,12 @@ slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
 ######### Analysis ##########
 #############################
 .PHONY: mapped-deprecated-terms
-mapped-deprecated-terms: mapped-deprecated-terms-artefacts mapped-deprecated-terms-docs
+mapped-deprecated-terms: mapped-deprecated-terms-docs
 
 .PHONY: mapped-deprecated-terms-docs
-mapped-deprecated-terms-docs:
+mapped-deprecated-terms-docs: ../../docs/reports/mapped_deprecated.md
+
+../../docs/reports/mapped_deprecated.md: mapped-deprecated-terms-artefacts
 	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py --docs
 
 .PHONY: mapped-deprecated-terms-artefacts
