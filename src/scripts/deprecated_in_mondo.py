@@ -86,7 +86,7 @@ def deprecated_in_mondo(mapping_status_path: str, mondo_mappings_path: str, outp
             })
 
     # Save and return
-    rows = [{'mondo_id': 'ID', 'source_id': 'ID', 'source': 'A oboInOwl:source'}] + rows
+    rows = [{'mondo_id': 'ID', 'source_id': 'A oboInOwl:hasDbXref', 'source': '>A oboInOwl:source'}] + rows
     df = pd.DataFrame(rows).sort_values(by=['mondo_id', 'source_id'], ascending=[True, True])
     df.to_csv(outpath, index=False, sep='\t')
 
