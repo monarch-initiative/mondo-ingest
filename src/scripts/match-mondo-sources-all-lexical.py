@@ -23,6 +23,7 @@ from oaklib.utilities.lexical.lexical_indexer import (
 import sys
 import click
 import yaml
+import pandas as pd
 
 from sssom.constants import SUBJECT_ID, OBJECT_ID
 from sssom.util import filter_prefixes, is_curie, is_iri
@@ -37,6 +38,7 @@ OUT_INDEX_DB = ONTOLOGY_DIR / "tmp/merged.db.lexical.yaml"
 TEMP_DIR = ONTOLOGY_DIR / "tmp"
 SSSOM_MAP_FILE = TEMP_DIR / "mondo.sssom.tsv"
 # KEY_FEATURES = [SUBJECT_ID, OBJECT_ID]
+REJECT_MAP = ONTOLOGY_DIR / "rejected-mappings.sssom.tsv"
 
 input_argument = click.argument("input", required=True, type=click.Path())
 output_option = click.option(
@@ -85,6 +87,21 @@ def run(input: str, config: str, rules: str, output: str):
 
     # Get mondo.sssom.tsv
     mapping_msdf = parse_sssom_table(SSSOM_MAP_FILE)
+    reject_df = pd.read_csv(
+        REJECT_MAP, sep="\t", index_col=None
+    )
+    mapping_msdf.df = (
+        pd.merge(
+            mapping_msdf.df,
+            reject_df,
+            on=list(mapping_msdf.df.columns),
+            how="outer",
+            indicator=True,
+        )
+        .query("_merge != 'both'")
+        .drop("_merge", axis=1)
+        .reset_index(drop=True)
+    )
 
     prefix_of_interest = yml["subject_prefixes"]
 
