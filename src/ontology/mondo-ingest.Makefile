@@ -404,9 +404,9 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
 	sssom convert $< -O rdf -o $@
 
-MONDO_REJECT_SHEET = "https://docs.google.com/spreadsheets/d/1_Y7zQSOgmrWCPbcz2LkesH1OwtIgyqXDpshMEc_pMmQ/export?format=tsv&gid=0"
-tmp/mondo_reject.sssom.tsv:
-	wget --no-check-certificate $(MONDO_REJECT_SHEET) -O $@
+MONDO_REJECT_SHEET = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR_pk7yVg6caeLOiHk0EME2mylCtwNrORCgE0OV80YgoIRYztBYmRTooV8veJiPyYW1ExWBKriU17Kt/pub?gid=0&single=true&output=tsv"
+rejected-mappings.sssom.tsv:
+	wget $(MONDO_REJECT_SHEET) -O $@
 
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
 tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
