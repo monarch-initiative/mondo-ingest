@@ -125,6 +125,7 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     condition_4 = msdf_mondo.df["object_id"].str.contains("Orphanet")
     condition_5 = msdf_mondo.df["object_id"].str.contains("DOID")
     condition_6 = msdf_mondo.df["object_id"].str.contains("NCIT")
+    condition_6A = msdf_mondo.df["object_id"].str.contains("GARD")
     condition_7 = msdf_lex.df["subject_id"].str.contains("MONDO")
 
     mondo_icd_df = msdf_mondo.df[condition_1 & condition_2]
@@ -132,6 +133,7 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     mondo_ordo_df = msdf_mondo.df[condition_1 & condition_4]
     mondo_doid_df = msdf_mondo.df[condition_1 & condition_5]
     mondo_ncit_df = msdf_mondo.df[condition_1 & condition_6]
+    mondo_gard_df = msdf_mondo.df[condition_1 & condition_6A]
 
     condition_mondo_obj = msdf_lex.df["object_id"].str.contains("MONDO")
 
@@ -164,18 +166,21 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     condition_11 = lex_df["object_id"].str.contains("Orphanet")
     condition_12 = lex_df["object_id"].str.contains("DOID")
     condition_13 = lex_df["object_id"].str.contains("NCIT")
+    condition_14 = lex_df["object_id"].str.contains("GARD")
 
     mondo_icd_lex_df = lex_df[(condition_8 & condition_9)]
     mondo_omim_lex_df = lex_df[(condition_8 & condition_10)]
     mondo_ordo_lex_df = lex_df[(condition_8 & condition_11)]
     mondo_doid_lex_df = lex_df[(condition_8 & condition_12)]
     mondo_ncit_lex_df = lex_df[(condition_8 & condition_13)]
+    mondo_gard_lex_df = lex_df[(condition_8 & condition_14)]
 
     icd_comparison_df = compare_and_comment_df(mondo_icd_df, mondo_icd_lex_df)
     omim_comparison_df = compare_and_comment_df(mondo_omim_df, mondo_omim_lex_df)
     ordo_comparison_df = compare_and_comment_df(mondo_ordo_df, mondo_ordo_lex_df)
     doid_comparison_df = compare_and_comment_df(mondo_doid_df, mondo_doid_lex_df)
     ncit_comparison_df = compare_and_comment_df(mondo_ncit_df, mondo_ncit_lex_df)
+    gard_comparison_df = compare_and_comment_df(mondo_gard_df, mondo_gard_lex_df)
 
     unmapped_icd_df = get_unmapped_df(
         icd_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
@@ -191,6 +196,9 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     )
     unmapped_ncit_df = get_unmapped_df(
         ncit_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
+    )
+    unmapped_gard_df = get_unmapped_df(
+        gard_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
     )
     summary.write("## unmapped_xxxx_lex & unmapped_xxxx_lex_exact")
     summary.write("\n")
@@ -220,6 +228,12 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         unmapped_ncit_df,
         "LEXMATCH",
         join(LEXMATCH_DIR, "unmapped_ncit_lex.tsv"),
+        summary,
+    )
+    export_unmatched_exact(
+        unmapped_gard_df,
+        "LEXMATCH",
+        join(LEXMATCH_DIR, "unmapped_gard_lex.tsv"),
         summary,
     )
 
@@ -256,6 +270,12 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
         join(mondo_match_dir, "unmapped_ncit_mondo.tsv"),
         summary,
     )
+    export_unmatched_exact(
+        unmapped_gard_df,
+        "MONDO_MAPPINGS",
+        join(mondo_match_dir, "unmapped_gard_mondo.tsv"),
+        summary,
+    )
 
     combined_df = pd.concat(
         [
@@ -264,6 +284,7 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
             unmapped_ordo_df,
             unmapped_doid_df,
             unmapped_ncit_df,
+            unmapped_gard_df,
         ]
     )
 

@@ -404,6 +404,10 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
 	sssom convert $< -O rdf -o $@
 
+MONDO_REJECT_SHEET = "https://docs.google.com/spreadsheets/d/1_Y7zQSOgmrWCPbcz2LkesH1OwtIgyqXDpshMEc_pMmQ/export?format=tsv&gid=0"
+tmp/mondo_reject.sssom.tsv:
+	wget --no-check-certificate $(MONDO_REJECT_SHEET) -O $@
+
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
 tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
 	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl --add-prefixes config/context.json \
@@ -419,6 +423,8 @@ tmp/merged.db: tmp/merged.owl
 	@rm -f tmp/merged-relation-graph.tsv.gz
 
 ../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db
+	rm -f ../mappings/mondo-sources-all-lexical.sssom.tsv
+	rm -f ../mappings/mondo-sources-all-lexical-2.sssom.tsv
 	python $< run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
 
 lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
@@ -427,6 +433,7 @@ lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
 #### Lexmatch-SSSOM-compare #######
 ###################################
 lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py ../mappings/mondo-sources-all-lexical.sssom.tsv
+	find lexmatch/ -name "*.tsv" -type f -delete
 	python $< extract_unmapped_matches --matches ../mappings/mondo-sources-all-lexical.sssom.tsv --output-dir lexmatch --summary $@
 
 extract-unmapped-matches: lexmatch/README.md
