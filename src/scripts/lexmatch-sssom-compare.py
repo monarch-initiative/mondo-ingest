@@ -19,8 +19,8 @@ TMP = join(ONTS_DIR, "tmp")
 REPORTS_DIR = join(ONTS_DIR, "reports")
 MONDO_SSSOM = join(TMP, "mondo.sssom.tsv")
 DB_FILE = join(TMP, "merged.db")
-REJECT_MAP = join(ONTS_DIR, "rejected-mappings.sssom.tsv")
 
+# ! Use ALL_COMPONENT_IDS to automate mappings.
 EXCLUSION_FILES = [
     join(REPORTS_DIR, "doid_term_exclusions.txt"),
     join(REPORTS_DIR, "omim_term_exclusions.txt"),
@@ -69,6 +69,10 @@ def main(verbose: int, quiet: bool):
     help="Lexmatch SSSOM file.",
 )
 @click.option(
+    "--component-ids",
+    help="Ontologies that need to be mapped.",
+)
+@click.option(
     "-o",
     "--output-dir",
     type=click.Path(),
@@ -80,34 +84,11 @@ def main(verbose: int, quiet: bool):
     type=click.File(mode="w+"),
     help="Add summary to markdown file.",
 )
-def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
+def extract_unmapped_matches(matches: TextIO, component_ids:str, output_dir: str, summary: TextIO):
     mondo_match_dir = join(output_dir, "mondo-only")
     msdf_lex = parse_sssom_table(matches.name)
     msdf_mondo = parse_sssom_table(MONDO_SSSOM)
-    reject_df = pd.read_csv(
-        REJECT_MAP, sep="\t", names=DESIRED_COLUMN_ORDER, index_col=None
-    )
 
-    msdf_lex.df = (
-        pd.merge(
-            msdf_lex.df, reject_df, on=msdf_lex.df.columns, how="outer", indicator=True
-        )
-        .query("_merge != 'both'")
-        .drop("_merge", axis=1)
-        .reset_index(drop=True)
-    )
-    msdf_mondo.df = (
-        pd.merge(
-            msdf_mondo.df,
-            reject_df,
-            on=msdf_mondo.df.columns,
-            how="outer",
-            indicator=True,
-        )
-        .query("_merge != 'both'")
-        .drop("_merge", axis=1)
-        .reset_index(drop=True)
-    )
     # Get the exclusion list
     exclusion_list = []
     summary.write("# MONDO ingest lexical mapping pipeline.")
