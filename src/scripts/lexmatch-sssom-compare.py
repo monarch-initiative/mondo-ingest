@@ -19,6 +19,7 @@ TMP = join(ONTS_DIR, "tmp")
 REPORTS_DIR = join(ONTS_DIR, "reports")
 MONDO_SSSOM = join(TMP, "mondo.sssom.tsv")
 DB_FILE = join(TMP, "merged.db")
+REJECT_MAP = join(ONTS_DIR, "rejected-mappings.sssom.tsv")
 
 EXCLUSION_FILES = [
     join(REPORTS_DIR, "doid_term_exclusions.txt"),
@@ -83,6 +84,30 @@ def extract_unmapped_matches(matches: TextIO, output_dir: str, summary: TextIO):
     mondo_match_dir = join(output_dir, "mondo-only")
     msdf_lex = parse_sssom_table(matches.name)
     msdf_mondo = parse_sssom_table(MONDO_SSSOM)
+    reject_df = pd.read_csv(
+        REJECT_MAP, sep="\t", names=DESIRED_COLUMN_ORDER, index_col=None
+    )
+
+    msdf_lex.df = (
+        pd.merge(
+            msdf_lex.df, reject_df, on=msdf_lex.df.columns, how="outer", indicator=True
+        )
+        .query("_merge != 'both'")
+        .drop("_merge", axis=1)
+        .reset_index(drop=True)
+    )
+    msdf_mondo.df = (
+        pd.merge(
+            msdf_mondo.df,
+            reject_df,
+            on=msdf_mondo.df.columns,
+            how="outer",
+            indicator=True,
+        )
+        .query("_merge != 'both'")
+        .drop("_merge", axis=1)
+        .reset_index(drop=True)
+    )
     # Get the exclusion list
     exclusion_list = []
     summary.write("# MONDO ingest lexical mapping pipeline.")
@@ -452,7 +477,7 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
     ]
     unmapped_exact_logical = unmapped_exact_logical[DESIRED_COLUMN_ORDER]
     unmapped_exact_logical.to_csv(join(fn), sep="\t", index=False)
-    
+
     summary.write(
         " * Number of mappings in [`"
         + actual_fn_exact
