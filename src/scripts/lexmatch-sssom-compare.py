@@ -43,7 +43,7 @@ DESIRED_COLUMN_ORDER = [
     "match_string",
 ]
 
-input_argument = click.argument("input", required=True, type=click.Path())
+input_argument = click.argument("input", required=True, type=click.Path(), nargs=-1)
 
 
 @click.group()
@@ -63,14 +63,11 @@ def main(verbose: int, quiet: bool):
 
 
 @main.command("extract_unmapped_matches")
+@input_argument
 @click.option(
     "--matches",
     type=click.File(mode="r"),
     help="Lexmatch SSSOM file.",
-)
-@click.option(
-    "--component-ids",
-    help="Ontologies that need to be mapped.",
 )
 @click.option(
     "-o",
@@ -84,7 +81,7 @@ def main(verbose: int, quiet: bool):
     type=click.File(mode="w+"),
     help="Add summary to markdown file.",
 )
-def extract_unmapped_matches(matches: TextIO, component_ids:str, output_dir: str, summary: TextIO):
+def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summary: TextIO):
     mondo_match_dir = join(output_dir, "mondo-only")
     msdf_lex = parse_sssom_table(matches.name)
     msdf_mondo = parse_sssom_table(MONDO_SSSOM)
@@ -123,32 +120,14 @@ def extract_unmapped_matches(matches: TextIO, component_ids:str, output_dir: str
         lambda x: oi.label(x)
     )
 
-    condition_1 = msdf_mondo.df["subject_id"].str.contains("MONDO")
-    condition_2 = msdf_mondo.df["object_id"].str.contains("ICD10CM")
-    condition_3 = msdf_mondo.df["object_id"].str.contains(
-        "|".join((["OMIM", "OMIMPS"]))
-    )
-    condition_4 = msdf_mondo.df["object_id"].str.contains("Orphanet")
-    condition_5 = msdf_mondo.df["object_id"].str.contains("DOID")
-    condition_6 = msdf_mondo.df["object_id"].str.contains("NCIT")
-    condition_6A = msdf_mondo.df["object_id"].str.contains("GARD")
-    condition_7 = msdf_lex.df["subject_id"].str.contains("MONDO")
-
-    mondo_icd_df = msdf_mondo.df[condition_1 & condition_2]
-    mondo_omim_df = msdf_mondo.df[condition_1 & condition_3]
-    mondo_ordo_df = msdf_mondo.df[condition_1 & condition_4]
-    mondo_doid_df = msdf_mondo.df[condition_1 & condition_5]
-    mondo_ncit_df = msdf_mondo.df[condition_1 & condition_6]
-    mondo_gard_df = msdf_mondo.df[condition_1 & condition_6A]
-
-    condition_mondo_obj = msdf_lex.df["object_id"].str.contains("MONDO")
-
+    condition_mondo_sssom_subj = msdf_mondo.df["subject_id"].str.contains("MONDO")
+    condition_mondo_lex_obj = msdf_lex.df["object_id"].str.contains("MONDO")
+    condition_mondo_lex_subj = msdf_lex.df["subject_id"].str.contains("MONDO")
     non_mondo_subjects_df = pd.DataFrame(
-        msdf_lex.df[(~condition_7 & condition_mondo_obj)]
+        msdf_lex.df[(~condition_mondo_lex_subj & condition_mondo_lex_obj)]
     )
-    mondo_subjects_df = pd.DataFrame(msdf_lex.df[(condition_7 & ~condition_mondo_obj)])
-    print(len(mondo_subjects_df))
-    non_mondo_subjects_df.head()
+    mondo_subjects_df = pd.DataFrame(msdf_lex.df[(condition_mondo_lex_subj & ~condition_mondo_lex_obj)])
+
     new_subjects_df = non_mondo_subjects_df.rename(
         columns={
             "subject_id": "object_id",
@@ -165,134 +144,49 @@ def extract_unmapped_matches(matches: TextIO, component_ids:str, output_dir: str
         lambda x: flip_predicate(x)
     )
     lex_df = pd.concat([mondo_subjects_df, new_subjects_df], ignore_index=True)
+    condition_lex_df_mondo_subj = lex_df["subject_id"].str.contains("MONDO")
+    ont_df_list = []
 
-    condition_8 = lex_df["subject_id"].str.contains("MONDO")
-    condition_9 = lex_df["object_id"].str.contains("ICD10CM")
-    condition_10 = lex_df["object_id"].str.contains("|".join((["OMIM", "OMIMPS"])))
-    condition_11 = lex_df["object_id"].str.contains("Orphanet")
-    condition_12 = lex_df["object_id"].str.contains("DOID")
-    condition_13 = lex_df["object_id"].str.contains("NCIT")
-    condition_14 = lex_df["object_id"].str.contains("GARD")
+    for idx, ont in enumerate(input):
+        ont2 = ont.upper()
+        if ont == "omim":
+            ont2 = "|".join((["OMIM", "OMIMPS"]))
 
-    mondo_icd_lex_df = lex_df[(condition_8 & condition_9)]
-    mondo_omim_lex_df = lex_df[(condition_8 & condition_10)]
-    mondo_ordo_lex_df = lex_df[(condition_8 & condition_11)]
-    mondo_doid_lex_df = lex_df[(condition_8 & condition_12)]
-    mondo_ncit_lex_df = lex_df[(condition_8 & condition_13)]
-    mondo_gard_lex_df = lex_df[(condition_8 & condition_14)]
+        mondo_ont_df = msdf_mondo.df[condition_mondo_sssom_subj & msdf_mondo.df['object_id'].str.contains(ont2)]
+        mondo_ont_lex_df = lex_df[(condition_lex_df_mondo_subj & lex_df['object_id'].str.contains(ont2))]
+        ont_comparison_df = compare_and_comment_df(mondo_ont_df, mondo_ont_lex_df)
+        
+        # TODO: Place below appropriately.
+        # summary.write("## unmapped_xxxx_lex & unmapped_xxxx_lex_exact")
+        # summary.write("\n")
+        
+        if not ont_comparison_df.empty:
+        
+            unmapped_ont_df = get_unmapped_df(
+                ont_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
+            )
 
-    icd_comparison_df = compare_and_comment_df(mondo_icd_df, mondo_icd_lex_df)
-    omim_comparison_df = compare_and_comment_df(mondo_omim_df, mondo_omim_lex_df)
-    ordo_comparison_df = compare_and_comment_df(mondo_ordo_df, mondo_ordo_lex_df)
-    doid_comparison_df = compare_and_comment_df(mondo_doid_df, mondo_doid_lex_df)
-    ncit_comparison_df = compare_and_comment_df(mondo_ncit_df, mondo_ncit_lex_df)
-    gard_comparison_df = compare_and_comment_df(mondo_gard_df, mondo_gard_lex_df)
+            # TODO: Place below appropriately.
+            # summary.write("## unmapped_xxxx_lex & unmapped_xxxx_lex_exact")
+            # summary.write("\n")
+            export_unmatched_exact(
+                unmapped_ont_df, "LEXMATCH", join(LEXMATCH_DIR, f"unmapped_{ont}_lex.tsv"), summary
+            )
 
-    unmapped_icd_df = get_unmapped_df(
-        icd_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
-    )
-    unmapped_omim_df = get_unmapped_df(
-        omim_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
-    )
-    unmapped_ordo_df = get_unmapped_df(
-        ordo_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
-    )
-    unmapped_doid_df = get_unmapped_df(
-        doid_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
-    )
-    unmapped_ncit_df = get_unmapped_df(
-        ncit_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
-    )
-    unmapped_gard_df = get_unmapped_df(
-        gard_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
-    )
-    summary.write("## unmapped_xxxx_lex & unmapped_xxxx_lex_exact")
-    summary.write("\n")
+            # TODO: Place below appropriately.
+            # summary.write("## unmapped_xxxx_mondo")
+            # summary.write("\n")
 
-    export_unmatched_exact(
-        unmapped_icd_df, "LEXMATCH", join(LEXMATCH_DIR, "unmapped_icd_lex.tsv"), summary
-    )
-    export_unmatched_exact(
-        unmapped_omim_df,
-        "LEXMATCH",
-        join(LEXMATCH_DIR, "unmapped_omim_lex.tsv"),
-        summary,
-    )
-    export_unmatched_exact(
-        unmapped_ordo_df,
-        "LEXMATCH",
-        join(LEXMATCH_DIR, "unmapped_ordo_lex.tsv"),
-        summary,
-    )
-    export_unmatched_exact(
-        unmapped_doid_df,
-        "LEXMATCH",
-        join(LEXMATCH_DIR, "unmapped_doid_lex.tsv"),
-        summary,
-    )
-    export_unmatched_exact(
-        unmapped_ncit_df,
-        "LEXMATCH",
-        join(LEXMATCH_DIR, "unmapped_ncit_lex.tsv"),
-        summary,
-    )
-    export_unmatched_exact(
-        unmapped_gard_df,
-        "LEXMATCH",
-        join(LEXMATCH_DIR, "unmapped_gard_lex.tsv"),
-        summary,
-    )
+            export_unmatched_exact(
+                unmapped_ont_df,
+                "MONDO_MAPPINGS",
+                join(mondo_match_dir, f"unmapped_{ont}_mondo.tsv"),
+                summary,
+            )
 
-    summary.write("## unmapped_xxxx_mondo")
-    summary.write("\n")
+            ont_df_list.append(unmapped_ont_df)
 
-    export_unmatched_exact(
-        unmapped_icd_df,
-        "MONDO_MAPPINGS",
-        join(mondo_match_dir, "unmapped_icd_mondo.tsv"),
-        summary,
-    )
-    export_unmatched_exact(
-        unmapped_omim_df,
-        "MONDO_MAPPINGS",
-        join(mondo_match_dir, "unmapped_omim_mondo.tsv"),
-        summary,
-    )
-    export_unmatched_exact(
-        unmapped_ordo_df,
-        "MONDO_MAPPINGS",
-        join(mondo_match_dir, "unmapped_ordo_mondo.tsv"),
-        summary,
-    )
-    export_unmatched_exact(
-        unmapped_doid_df,
-        "MONDO_MAPPINGS",
-        join(mondo_match_dir, "unmapped_doid_mondo.tsv"),
-        summary,
-    )
-    export_unmatched_exact(
-        unmapped_ncit_df,
-        "MONDO_MAPPINGS",
-        join(mondo_match_dir, "unmapped_ncit_mondo.tsv"),
-        summary,
-    )
-    export_unmatched_exact(
-        unmapped_gard_df,
-        "MONDO_MAPPINGS",
-        join(mondo_match_dir, "unmapped_gard_mondo.tsv"),
-        summary,
-    )
-
-    combined_df = pd.concat(
-        [
-            unmapped_icd_df,
-            unmapped_omim_df,
-            unmapped_ordo_df,
-            unmapped_doid_df,
-            unmapped_ncit_df,
-            unmapped_gard_df,
-        ]
-    )
+    combined_df = pd.concat(ont_df_list)
 
     combined_msdf = MappingSetDataFrame(
         df=combined_df, prefix_map=msdf_lex.prefix_map, metadata=msdf_lex.metadata
@@ -360,8 +254,9 @@ def flip_predicate(predicate_id):
 
 def compare_and_comment_df(mondo_df, lex_df):
     df = compare_dataframes(mondo_df, lex_df).combined_dataframe
-    df["comment"] = df["comment"].str.replace("UNIQUE_1", "MONDO_MAPPINGS")
-    df["comment"] = df["comment"].str.replace("UNIQUE_2", "LEXMATCH")
+    if not df.empty:
+        df["comment"] = df["comment"].str.replace("UNIQUE_1", "MONDO_MAPPINGS")
+        df["comment"] = df["comment"].str.replace("UNIQUE_2", "LEXMATCH")
     return df
 
 
