@@ -432,7 +432,7 @@ lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
 ###################################
 #### Lexmatch-SSSOM-compare #######
 ###################################
-lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py
+lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py  ../mappings/mondo-sources-all-lexical.sssom.tsv
 	find lexmatch/ -name "*.tsv" -type f -delete
 	python $< extract_unmapped_matches $(ALL_COMPONENT_IDS) --matches ../mappings/mondo-sources-all-lexical.sssom.tsv --output-dir lexmatch --summary $@
 

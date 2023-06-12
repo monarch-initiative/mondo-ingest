@@ -38,7 +38,8 @@ OUT_INDEX_DB = ONTOLOGY_DIR / "tmp/merged.db.lexical.yaml"
 TEMP_DIR = ONTOLOGY_DIR / "tmp"
 SSSOM_MAP_FILE = TEMP_DIR / "mondo.sssom.tsv"
 # KEY_FEATURES = [SUBJECT_ID, OBJECT_ID]
-REJECT_MAP = ONTOLOGY_DIR / "rejected-mappings.sssom.tsv"
+MAPPINGS_DIR = SRC / "mappings"
+REJECT_MAP = MAPPINGS_DIR / "rejected-mappings.sssom.tsv"
 
 input_argument = click.argument("input", required=True, type=click.Path())
 output_option = click.option(
