@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/mondo-ingest/imports/omo_import.owl>
-<http://purl.obolibrary.org/obo/mondo-ingest/releases/2023-06-06/imports/omo_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omo/releases/2023-05-15/omo.owl>)
-Annotation(owl:versionInfo "2023-06-06")
+<http://purl.obolibrary.org/obo/mondo-ingest/releases/2023-06-09/imports/omo_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omo/releases/2023-06-09/omo.owl>)
+Annotation(owl:versionInfo "2023-06-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
@@ -100,6 +100,8 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003002>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003003>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003004>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003005>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003006>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003007>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/coverage>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
@@ -556,6 +558,24 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OMO_0003005> "2023-03-03"^^xsd:date)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0003005> "UK spelling synonym")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/OMO_0003005> <http://www.geneontology.org/formats/oboInOwl#SynonymType>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/OMO_0003006> (misspelling)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMO_0003006> "A synonym type for common misspellings")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0003006> <https://github.com/information-artifact-ontology/ontology-metadata/issues/132>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OMO_0003006> <https://orcid.org/0000-0003-4423-4370>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OMO_0003006> "2023-03-03"^^xsd:date)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0003006> "misspelling")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/OMO_0003006> <http://www.geneontology.org/formats/oboInOwl#SynonymType>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/OMO_0003007> (misnomer)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMO_0003007> "A synonym type for misnomers, i.e., a synonym that is not technically correct but is commonly used anyway")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0003007> <https://github.com/information-artifact-ontology/ontology-metadata/issues/133>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OMO_0003007> <https://orcid.org/0000-0003-4423-4370>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OMO_0003007> "2023-03-03"^^xsd:date)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0003007> "misnomer")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/OMO_0003007> <http://www.geneontology.org/formats/oboInOwl#SynonymType>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> (has broad synonym)
 

@@ -422,7 +422,7 @@ tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db.tmp
 	@rm -f tmp/merged-relation-graph.tsv.gz
 
-../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db
+../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db rejected-mappings.sssom.tsv
 	rm -f ../mappings/mondo-sources-all-lexical.sssom.tsv
 	rm -f ../mappings/mondo-sources-all-lexical-2.sssom.tsv
 	python $< run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
@@ -432,9 +432,9 @@ lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
 ###################################
 #### Lexmatch-SSSOM-compare #######
 ###################################
-lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py ../mappings/mondo-sources-all-lexical.sssom.tsv
+lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py
 	find lexmatch/ -name "*.tsv" -type f -delete
-	python $< extract_unmapped_matches --matches ../mappings/mondo-sources-all-lexical.sssom.tsv --output-dir lexmatch --summary $@
+	python $< extract_unmapped_matches $(ALL_COMPONENT_IDS) --matches ../mappings/mondo-sources-all-lexical.sssom.tsv --output-dir lexmatch --summary $@
 
 extract-unmapped-matches: lexmatch/README.md
 
