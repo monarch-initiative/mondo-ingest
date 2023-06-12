@@ -404,7 +404,9 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
 	sssom convert $< -O rdf -o $@
 
-ALL_EXCLUSION_FILES= $(patsubst %, --exclusion $(REPORTDIR)/%_term_exclusions.txt, $(ALL_COMPONENT_IDS))
+ALL_EXCLUSION_FILES= $(patsubst %, $(REPORTDIR)/%_term_exclusions.txt, $(ALL_COMPONENT_IDS))
+ALL_EXCLUSION_FILES_AS_PARAM= $(patsubst %, --exclusion $(REPORTDIR)/%_term_exclusions.txt, $(ALL_COMPONENT_IDS))
+
 
 MONDO_REJECT_SHEET = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR_pk7yVg6caeLOiHk0EME2mylCtwNrORCgE0OV80YgoIRYztBYmRTooV8veJiPyYW1ExWBKriU17Kt/pub?gid=0&single=true&output=tsv"
 $(MAPPINGSDIR)/"rejected-mappings.sssom.tsv":
@@ -438,13 +440,13 @@ lexical-matches: $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 ###################################
 #### Lexmatch-SSSOM-compare #######
 ###################################
-lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py  $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv $(ALL_EXCLUSION_FILES)
+lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv $(ALL_EXCLUSION_FILES)
 	find lexmatch/ -name "*.tsv" -type f -delete
 	python $< extract_unmapped_matches $(ALL_COMPONENT_IDS) \
 		--matches $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv \
 		--output-dir lexmatch \
 		--summary $@ \
-		$(ALL_EXCLUSION_FILES)
+		$(ALL_EXCLUSION_FILES_AS_PARAM)
 
 extract-unmapped-matches: lexmatch/README.md
 
