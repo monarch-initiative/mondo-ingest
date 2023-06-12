@@ -39,7 +39,6 @@ TEMP_DIR = ONTOLOGY_DIR / "tmp"
 SSSOM_MAP_FILE = TEMP_DIR / "mondo.sssom.tsv"
 # KEY_FEATURES = [SUBJECT_ID, OBJECT_ID]
 MAPPINGS_DIR = SRC / "mappings"
-REJECT_MAP = MAPPINGS_DIR / "rejected-mappings.sssom.tsv"
 
 input_argument = click.argument("input", required=True, type=click.Path())
 output_option = click.option(
@@ -78,8 +77,12 @@ def main(verbose: int, quiet: bool):
     "--rules",
     help="Ruleset for mapping.",
 )
+@click.option(
+    "--rejects",
+    help="SSSOM TSV file containing rejected mappings that need to be filtered out.",
+)
 @output_option
-def run(input: str, config: str, rules: str, output: str):
+def run(input: str, config: str, rules: str, rejects: str, output: str):
     # Implemented `meta` param in `lexical_index_to_sssom`
 
     meta = get_metadata_and_prefix_map(config)
@@ -89,7 +92,7 @@ def run(input: str, config: str, rules: str, output: str):
     # Get mondo.sssom.tsv
     mapping_msdf = parse_sssom_table(SSSOM_MAP_FILE)
     reject_df = pd.read_csv(
-        REJECT_MAP, sep="\t", index_col=None
+        rejects, sep="\t", index_col=None
     )
     mapping_msdf.df = pd.concat([mapping_msdf.df, reject_df])[mapping_msdf.df.columns].drop_duplicates()
     # mapping_msdf.df = (

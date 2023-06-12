@@ -20,14 +20,6 @@ REPORTS_DIR = join(ONTS_DIR, "reports")
 MONDO_SSSOM = join(TMP, "mondo.sssom.tsv")
 DB_FILE = join(TMP, "merged.db")
 
-# ! Use ALL_COMPONENT_IDS to automate mappings.
-EXCLUSION_FILES = [
-    join(REPORTS_DIR, "doid_term_exclusions.txt"),
-    join(REPORTS_DIR, "omim_term_exclusions.txt"),
-    join(REPORTS_DIR, "ordo_term_exclusions.txt"),
-    join(REPORTS_DIR, "ncit_term_exclusions.txt"),
-    join(REPORTS_DIR, "icd10cm_term_exclusions.txt"),
-]
 
 DESIRED_COLUMN_ORDER = [
     "subject_id",
@@ -81,7 +73,12 @@ def main(verbose: int, quiet: bool):
     type=click.File(mode="w+"),
     help="Add summary to markdown file.",
 )
-def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summary: TextIO):
+@click.option(
+    "--exclusion",
+    multiple=True,
+    help="exclusion files which are basically a list of CURIES to be excluded.",
+)
+def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summary: TextIO, exclusion: str):
     mondo_match_dir = join(output_dir, "mondo-only")
     msdf_lex = parse_sssom_table(matches.name)
     msdf_mondo = parse_sssom_table(MONDO_SSSOM)
@@ -100,7 +97,7 @@ def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summa
     summary.write("\n")
     summary.write("## Summary of mappings:")
     summary.write("\n")
-    for file_path in EXCLUSION_FILES:
+    for file_path in exclusion:
         with open(file_path) as f_input:
             exclusion_list.extend(f_input.read().split("\n"))
 
@@ -147,7 +144,7 @@ def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summa
     condition_lex_df_mondo_subj = lex_df["subject_id"].str.contains("MONDO")
     ont_df_list = []
 
-    for idx, ont in enumerate(input):
+    for _, ont in enumerate(input):
         ont2 = ont.upper()
         if ont == "omim":
             ont2 = "|".join((["OMIM", "OMIMPS"]))
@@ -155,27 +152,15 @@ def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summa
         mondo_ont_df = msdf_mondo.df[condition_mondo_sssom_subj & msdf_mondo.df['object_id'].str.contains(ont2)]
         mondo_ont_lex_df = lex_df[(condition_lex_df_mondo_subj & lex_df['object_id'].str.contains(ont2))]
         ont_comparison_df = compare_and_comment_df(mondo_ont_df, mondo_ont_lex_df)
-        
-        # TODO: Place below appropriately.
-        # summary.write("## unmapped_xxxx_lex & unmapped_xxxx_lex_exact")
-        # summary.write("\n")
-        
+
         if not ont_comparison_df.empty:
-        
             unmapped_ont_df = get_unmapped_df(
                 ont_comparison_df, in_lex_but_not_mondo_list, in_mondo_but_not_lex_list
             )
 
-            # TODO: Place below appropriately.
-            # summary.write("## unmapped_xxxx_lex & unmapped_xxxx_lex_exact")
-            # summary.write("\n")
             export_unmatched_exact(
                 unmapped_ont_df, "LEXMATCH", join(LEXMATCH_DIR, f"unmapped_{ont}_lex.tsv"), summary
             )
-
-            # TODO: Place below appropriately.
-            # summary.write("## unmapped_xxxx_mondo")
-            # summary.write("\n")
 
             export_unmatched_exact(
                 unmapped_ont_df,

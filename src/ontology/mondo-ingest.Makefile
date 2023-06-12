@@ -167,7 +167,7 @@ sssom:
 dependencies:
 	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade semsql==0.3.2 oaklib
 
-ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), ../mappings/$(n).sssom.tsv)
+ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), $(MAPPINGSDIR)/$(n).sssom.tsv)
 
 $(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) convert -i $< -f json -o $@
@@ -178,19 +178,19 @@ MONDO_SSSOM_CONFIG_URL=https://raw.githubusercontent.com/monarch-initiative/mond
 metadata/mondo.sssom.config.yml:
 	wget $(MONDO_SSSOM_CONFIG_URL) -O $@
 
-../mappings/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
+$(MAPPINGSDIR)/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
 	sssom sort $@ -o $@
 
-../mappings/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
+$(MAPPINGSDIR)/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/ordo.metadata.sssom.yml -o $@
 	sssom sort $@ -o $@
 
-../mappings/doid.sssom.tsv: $(TMPDIR)/component-doid.json
+$(MAPPINGSDIR)/doid.sssom.tsv: $(TMPDIR)/component-doid.json
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/doid.metadata.sssom.yml -o $@
 	sssom sort $@ -o $@
 
-../mappings/omim.sssom.tsv: $(TMPDIR)/component-omim.json
+$(MAPPINGSDIR)/omim.sssom.tsv: $(TMPDIR)/component-omim.json
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/omim.metadata.sssom.yml -o $@
 	sssom sort $@ -o $@
 
@@ -290,7 +290,7 @@ ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/sources/$(n).md)
 ALL_METRICS_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/metrics/$(n).md)
 ALL_DOCS=$(ALL_SOURCE_DOCS) $(ALL_METRICS_DOCS)
 
-../../docs/sources/ ../../docs/metrics/ ../mappings/:
+../../docs/sources/ ../../docs/metrics/ $(MAPPINGSDIR)/:
 	mkdir -p $@
 
 ../../docs/sources/%.md: metadata/%.yml | ../../docs/sources/
@@ -404,8 +404,10 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
 	sssom convert $< -O rdf -o $@
 
+ALL_EXCLUSION_FILES= $(patsubst %, --exclusion $(REPORTDIR)/%_term_exclusions.txt, $(ALL_COMPONENT_IDS))
+
 MONDO_REJECT_SHEET = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR_pk7yVg6caeLOiHk0EME2mylCtwNrORCgE0OV80YgoIRYztBYmRTooV8veJiPyYW1ExWBKriU17Kt/pub?gid=0&single=true&output=tsv"
-rejected-mappings.sssom.tsv:
+$(MAPPINGSDIR)/"rejected-mappings.sssom.tsv":
 	wget $(MONDO_REJECT_SHEET) -O $@
 
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
@@ -422,19 +424,27 @@ tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db.tmp
 	@rm -f tmp/merged-relation-graph.tsv.gz
 
-../mappings/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db rejected-mappings.sssom.tsv
-	rm -f ../mappings/mondo-sources-all-lexical.sssom.tsv
-	rm -f ../mappings/mondo-sources-all-lexical-2.sssom.tsv
-	python $< run tmp/merged.db -c metadata/mondo.sssom.config.yml -r config/mondo-match-rules.yaml -o $@
+$(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/"rejected-mappings.sssom.tsv"
+	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
+	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical-2.sssom.tsv
+	python $< run tmp/merged.db \
+		-c metadata/mondo.sssom.config.yml \
+		-r config/mondo-match-rules.yaml \
+		--rejects $(MAPPINGSDIR)/"rejected-mappings.sssom.tsv" \
+		-o $@
 
-lexical-matches: ../mappings/mondo-sources-all-lexical.sssom.tsv
+lexical-matches: $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 
 ###################################
 #### Lexmatch-SSSOM-compare #######
 ###################################
-lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py  ../mappings/mondo-sources-all-lexical.sssom.tsv
+lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py  $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv $(ALL_EXCLUSION_FILES)
 	find lexmatch/ -name "*.tsv" -type f -delete
-	python $< extract_unmapped_matches $(ALL_COMPONENT_IDS) --matches ../mappings/mondo-sources-all-lexical.sssom.tsv --output-dir lexmatch --summary $@
+	python $< extract_unmapped_matches $(ALL_COMPONENT_IDS) \
+		--matches $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv \
+		--output-dir lexmatch \
+		--summary $@ \
+		$(ALL_EXCLUSION_FILES)
 
 extract-unmapped-matches: lexmatch/README.md
 
