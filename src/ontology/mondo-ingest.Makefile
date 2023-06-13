@@ -426,7 +426,7 @@ tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db.tmp
 	@rm -f tmp/merged-relation-graph.tsv.gz
 
-$(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/"rejected-mappings.sssom.tsv"
+$(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/rejected-mappings.sssom.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical-2.sssom.tsv
 	python $< run tmp/merged.db \
