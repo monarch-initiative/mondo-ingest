@@ -7,7 +7,6 @@
 | ID            | A oboInOwl:hasDbXref | >A oboInOwl:source       |
 | MONDO:0001807 | Orphanet:79211       | MONDO:equivalentObsolete |
 | MONDO:0009317 | Orphanet:1245        | MONDO:equivalentObsolete |
-| MONDO:0009968 | Orphanet:93611       | MONDO:equivalentObsolete |
 | MONDO:0010045 | Orphanet:2823        | MONDO:equivalentObsolete |
 | MONDO:0010994 | Orphanet:2641        | MONDO:equivalentObsolete |
 | MONDO:0011910 | Orphanet:265         | MONDO:equivalentObsolete |
@@ -114,7 +113,6 @@
 | MONDO:0020282 | Orphanet:98714       | MONDO:equivalentObsolete |
 | MONDO:0020742 | Orphanet:1317        | MONDO:equivalentObsolete |
 | MONDO:0020871 | Orphanet:623         | MONDO:equivalentObsolete |
-| MONDO:0021013 | Orphanet:75790       | MONDO:equivalentObsolete |
 | MONDO:0021062 | Orphanet:306539      | MONDO:equivalentObsolete |
 | MONDO:0022921 | Orphanet:2861        | MONDO:equivalentObsolete |
 | MONDO:0023072 | Orphanet:1939        | MONDO:equivalentObsolete |
