@@ -1,4 +1,4 @@
-"""Deprecated terms that have xrefs in Mondo.
+"""Deprecated / obsolete terms w/ have xrefs in Mondo which have not yet been marked as deprecated in Mondo.
 
 Resources
 - GitHub issue: https://github.com/monarch-initiative/omim/issues/87
@@ -78,6 +78,9 @@ def deprecated_in_mondo(mapping_status_path: str, mondo_mappings_path: str, outp
     mapped_dep_df = mapping_status_df[(mapping_status_df['is_mapped']) & (mapping_status_df['is_deprecated'])]
     mapped_dep: List[CURIE] = list(mapped_dep_df['subject_id']) if len(mapped_dep_df) > 0 else []
     for source_id in [x for x in mapped_dep if x in source_to_mondo_map]:
+        mondo_label = mondo_mappings_df[mondo_mappings_df['object_id'] == source_id]['object_label'].iloc[0]
+        if mondo_label.startswith('obsolete'):
+            continue
         for mondo_id in source_to_mondo_map[source_id]:
             rows.append({
                 'mondo_id': mondo_id,
