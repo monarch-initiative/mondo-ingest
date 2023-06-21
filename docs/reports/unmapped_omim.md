@@ -2,6 +2,84 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/omim_mapping_status.tsv)
 
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id   | subject_label                                  |
-|:-------------|:-----------------------------------------------|
-| OMIM:613035  | hearing loss, noise-induced, susceptibility to |
+| subject_id    | subject_label                                                                                                      |
+|:--------------|:-------------------------------------------------------------------------------------------------------------------|
+| OMIM:620384   | auditory neuropathy, autosomal dominant 2                                                                          |
+| OMIM:620296   | autoinflammation with pulmonary and cutaneous vasculitis                                                           |
+| OMIM:620376   | autoinflammatory disease, systemic, with vasculitis                                                                |
+| OMIM:620343   | basal cell nevus syndrome 2                                                                                        |
+| OMIM:620321   | c1q deficiency 2                                                                                                   |
+| OMIM:620322   | c1q deficiency 3                                                                                                   |
+| OMIM:620368   | cerebroretinal microangiopathy with calcifications and cysts 3                                                     |
+| OMIM:620378   | charcot-marie-tooth disease, dominant intermediate a                                                               |
+| OMIM:620356   | ciliary dyskinesia, primary, 50                                                                                    |
+| OMIM:620364   | combined low ldl and fibrinogen                                                                                    |
+| OMIM:620342   | cone-rod dystrophy 24                                                                                              |
+| OMIM:620310   | congenital myopathy 20                                                                                             |
+| OMIM:620326   | congenital myopathy 21 with early respiratory failure                                                              |
+| OMIM:620351   | congenital myopathy 22a, classic                                                                                   |
+| OMIM:620369   | congenital myopathy 22b, severe fetal                                                                              |
+| OMIM:620316   | cortical dysplasia, complex, with other brain malformations 12                                                     |
+| OMIM:620352   | developmental and epileptic encephalopathy 31b                                                                     |
+| OMIM:620357   | diarrhea 13                                                                                                        |
+| OMIM:620150   | epidermolytic hyperkeratosis 2                                                                                     |
+| OMIM:620398   | glycine encephalopathy 2                                                                                           |
+| OMIM:620331   | hatipoglu immunodeficiency syndrome                                                                                |
+| OMIM:613035   | hearing loss, noise-induced, susceptibility to                                                                     |
+| OMIM:620320   | hematuria, benign familial, 2                                                                                      |
+| OMIM:620372   | hypersulfaturia                                                                                                    |
+| OMIM:301107   | intellectual developmental disorder, X-linked 111                                                                  |
+| OMIM:620330   | intellectual developmental disorder, autosomal dominant 71, with behavioral abnormalities                          |
+| OMIM:620393   | intellectual developmental disorder, autosomal recessive 79                                                        |
+| OMIM:620312   | leukoencephalopathy with vanishing white matter 2                                                                  |
+| OMIM:620313   | leukoencephalopathy with vanishing white matter 3                                                                  |
+| OMIM:620314   | leukoencephalopathy with vanishing white matter 4                                                                  |
+| OMIM:620315   | leukoencephalopathy with vanishing white matter 5                                                                  |
+| OMIM:620410   | low density lipoprotein cholesterol level quantitative trait locus 3                                               |
+| OMIM:620358   | mitochondrial complex 5 (atp synthase) deficiency, nuclear  iia 4a                                                 |
+| OMIM:620359   | mitochondrial complex 5 (atp synthase) deficiency, nuclear  iia 7                                                  |
+| OMIM:620300   | mitochondrial trifunctional protein deficiency 2                                                                   |
+| OMIM:620375   | myopathy, limb-girdle, adult-onset                                                                                 |
+| OMIM:620386   | nemaline myopathy 5b, autosomal recessive, childhood-onset                                                         |
+| OMIM:620389   | nemaline myopathy 5c, autosomal dominant                                                                           |
+| OMIM:620374   | nephrolithiasis, calcium oxalate, 2, with or without nephrocalcinosis                                              |
+| OMIM:620306   | neurodegeneration and seizures due to copper transport defect                                                      |
+| OMIM:620327   | neurodegeneration with developmental delay, early respiratory failure, myoclonic seizures, and brain abnormalities |
+| OMIM:620371   | neurodevelopmental disorder with intracranial hemorrhage, seizures, and spasticity                                 |
+| OMIM:620317   | neurodevelopmental disorder with microcephaly and speech delay, with or without brain abnormalities                |
+| OMIM:620305   | neurooculorenal syndrome                                                                                           |
+| OMIM:620319   | oocyte/zygote/embryo maturation arrest 17                                                                          |
+| OMIM:620332   | oocyte/zygote/embryo maturation arrest 18                                                                          |
+| OMIM:620333   | oocyte/zygote/embryo maturation arrest 19                                                                          |
+| OMIM:620383   | oocyte/zygote/embryo maturation arrest 20                                                                          |
+| OMIM:620366   | osteopetrosis, autosomal recessive 9                                                                               |
+| OMIM:620411   | palmoplantar keratoderma, epidermolytic, 2                                                                         |
+| OMIM:620303   | pituitary hormone deficiency, combined or isolated, 8                                                              |
+| OMIM:620311   | premature ovarian failure 21                                                                                       |
+| OMIM:620344   | prolonged electroretinal response suppression 2                                                                    |
+| OMIM:620365   | pulmonary fibrosis and/or bone marrow failure syndrome, telomere-related, 7                                        |
+| OMIM:620367   | pulmonary fibrosis and/or bone marrow failure syndrome, telomere-related, 8                                        |
+| OMIM:620400   | pulmonary fibrosis and/or bone marrow failure syndrome, telomere-related, 9                                        |
+| OMIM:620370   | recon progeroid syndrome                                                                                           |
+| OMIM:620422   | retinitis pigmentosa 97                                                                                            |
+| OMIM:620323   | spastic paraplegia 70, autosomal recessive                                                                         |
+| OMIM:620379   | spastic paraplegia 89, autosomal recessive                                                                         |
+| OMIM:620416   | spastic paraplegia 90a, autosomal dominant                                                                         |
+| OMIM:620417   | spastic paraplegia 90b, autosomal recessive                                                                        |
+| OMIM:620353   | spermatogenic failure 82                                                                                           |
+| OMIM:620354   | spermatogenic failure 83                                                                                           |
+| OMIM:620409   | spermatogenic failure 84                                                                                           |
+| OMIM:301106   | spermatogenic failure, x-linked, 7                                                                                 |
+| OMIM:620151   | wolman disease                                                                                                     |
+| OMIM:620415   | woolly hair-skin fragility syndrome                                                                                |
+| OMIMPS:109400 |                                                                                                                    |
+| OMIMPS:113800 |                                                                                                                    |
+| OMIMPS:141200 |                                                                                                                    |
+| OMIMPS:167030 |                                                                                                                    |
+| OMIMPS:177735 |                                                                                                                    |
+| OMIMPS:278000 |                                                                                                                    |
+| OMIMPS:603896 |                                                                                                                    |
+| OMIMPS:605899 |                                                                                                                    |
+| OMIMPS:608415 |                                                                                                                    |
+| OMIMPS:609015 |                                                                                                                    |
+| OMIMPS:613652 |                                                                                                                    |
