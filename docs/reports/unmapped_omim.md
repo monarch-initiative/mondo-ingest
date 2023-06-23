@@ -70,7 +70,6 @@
 | OMIM:620354   | spermatogenic failure 83                                                                                           |
 | OMIM:620409   | spermatogenic failure 84                                                                                           |
 | OMIM:301106   | spermatogenic failure, x-linked, 7                                                                                 |
-| OMIM:620151   | wolman disease                                                                                                     |
 | OMIM:620415   | woolly hair-skin fragility syndrome                                                                                |
 | OMIMPS:109400 |                                                                                                                    |
 | OMIMPS:113800 |                                                                                                                    |

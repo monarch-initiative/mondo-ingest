@@ -4,35 +4,18 @@
 ### Unmapped mappable terms _(!excluded, !deprecated)_
 | subject_id      | subject_label                                                                                |
 |:----------------|:---------------------------------------------------------------------------------------------|
-| Orphanet:319719 | Autoinflammatory syndrome of childhood                                                       |
-| Orphanet:306644 | Complication after organ transplantation                                                     |
 | Orphanet:522514 | Congenital optic disc excavation of genetic origin                                           |
 | Orphanet:519337 | Disorder with optic nerve compression                                                        |
-| Orphanet:325697 | Genetic 46,XX disorder of sex development                                                    |
-| Orphanet:325706 | Genetic 46,XY disorder of sex development                                                    |
 | Orphanet:325713 | Genetic 46,XY disorder of sex development of endocrine origin                                |
 | Orphanet:269560 | Genetic cerebellar malformation                                                              |
-| Orphanet:269553 | Genetic cerebral malformation                                                                |
 | Orphanet:522560 | Genetic corneal dystrophy                                                                    |
-| Orphanet:576742 | Genetic hemolytic uremic syndrome                                                            |
-| Orphanet:183481 | Genetic mixed dermis disorder                                                                |
-| Orphanet:183616 | Genetic neuro-ophthalmological disease                                                       |
-| Orphanet:269557 | Genetic posterior fossa malformation                                                         |
-| Orphanet:448426 | Genetic primary orthostatic hypotension                                                      |
 | Orphanet:522562 | Genetic superficial corneal dystrophy                                                        |
 | Orphanet:269570 | Genetic syndrome with a Dandy-Walker malformation as a major feature                         |
-| Orphanet:254685 | Gestational trophoblastic disease                                                            |
 | Orphanet:324950 | Granulomatous autoinflammatory syndrome of childhood                                         |
 | Orphanet:519300 | Isolated chorioretinal dystrophy                                                             |
-| Orphanet:519302 | Isolated macular dystrophy                                                                   |
 | Orphanet:522534 | Lacrimal drainage system anomaly of genetic origin                                           |
 | Orphanet:522552 | Lens position anomaly of genetic origin                                                      |
 | Orphanet:522550 | Lens size anomaly of genetic origin                                                          |
-| Orphanet:98740  | Neurological muscular channelopathy due to a genetic calcium channel defect                  |
-| Orphanet:98739  | Neurological muscular channelopathy due to a genetic chloride channel defect                 |
-| Orphanet:98741  | Neurological muscular channelopathy due to a genetic potassium channel defect                |
-| Orphanet:98742  | Neurological muscular channelopathy due to a genetic ryanodine receptor defect               |
-| Orphanet:98738  | Neurological muscular channelopathy due to a genetic sodium channel defect                   |
 | Orphanet:324939 | Periodic fever syndrome of childhood                                                         |
 | Orphanet:324942 | Pyogenic autoinflammatory syndrome of childhood                                              |
 | Orphanet:617313 | Rare disorder due to inadequate sharing of the placenta                                      |
