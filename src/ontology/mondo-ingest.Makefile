@@ -574,7 +574,7 @@ help:
 	@echo "mapped-deprecated-terms-artefacts"
 	@echo "Creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"
 	@echo "mapped-deprecated-terms-docs"
-	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.\n"
+	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo, where these terms have not yet been marked as deprecated in Mondo..\n"
 	@echo "mapped-deprecated-terms"
 	# Exclusions
 	@echo "Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.\n"

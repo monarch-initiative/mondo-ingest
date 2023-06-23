@@ -49,7 +49,7 @@ These workflows will create a [report of deprecated terms with Mondo xrefs](../r
 #### Makefile goals
 1. `reports/%_mapped_deprecated_terms.robot.template.tsv`: A table of all of the deprecated terms from a given ontology that have existing mappings in Mondo.
 2. `mapped-deprecated-terms-artefacts`: Creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.
-3. `mapped-deprecated-terms-docs`: Creates a report of statistics for [mapped deprecated terms](../reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo.
+3. `mapped-deprecated-terms-docs`: Creates a report of statistics for [mapped deprecated terms](../reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo, where these terms have not yet been marked as deprecated in Mondo.
 4. `mapped-deprecated-terms`: Creates a report of statistics for mapped deprecated terms (docs/reports/mapped_deprecated.md) and pages for each ontology which list their deprecated terms with existing xrefs in Mondo. Also creates a reports/%_mapped_deprecated_terms.robot.template.tsv for all ontologies.
 
 
