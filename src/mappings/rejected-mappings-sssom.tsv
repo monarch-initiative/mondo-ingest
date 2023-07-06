@@ -1,0 +1,42 @@
+# curie_map:
+#   DOID: http://purl.obolibrary.org/obo/DOID_
+#   MONDO: http://purl.obolibrary.org/obo/MONDO_
+#   NCIT: http://purl.obolibrary.org/obo/NCIT_
+#   OMIM: https://omim.org/entry/
+#   https: http://w3id.org/sssom/unknown_prefix/https/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/ce37dc75-8867-4c44-983d-84f5a4d24c17
+subject_id	subject_label	predicate_id	predicate_modifier	object_id	object_label	mapping_justification	reviewer_id	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0002514	hepatobiliary neoplasm	skos:exactmatch	Not	DOID:3117	hepatobiliary benign neoplasm	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hepatobiliary tumors	LEXMATCH
+MONDO:0003917	heart lymphoma	skos:exactmatch	Not	DOID:0070212	hereditary lymphedema I	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	pcl	LEXMATCH
+MONDO:0005571	polycythemia	skos:exactmatch	Not	NCIT:C27794	Polycythemia (Excluding Polycythemia Vera)	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8497788952	rdfs:label	rdfs:label	polycythemia	LEXMATCH
+MONDO:0006033	diffuse intrinsic pontine glioma	skos:exactmatch	Not	DOID:0080684	diffuse midline glioma, H3 K27M-mutant	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	rdfs:label	oio:hasExactSynonym	diffuse intrinsic pontine glioma	LEXMATCH
+MONDO:0006515	acute pancreatitis	skos:exactmatch	Not	DOID:0080998	acute necrotizing pancreatitis	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	rdfs:label	acute necrotizing pancreatitis	LEXMATCH
+MONDO:0007538	amelogenesis imperfecta, type 3A	skos:exactmatch	Not	DOID:0111721	amelogenesis imperfecta type 3	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	rdfs:label	amelogenesis imperfecta type 3	LEXMATCH
+MONDO:0007648	hereditary diffuse gastric adenocarcinoma	skos:exactmatch	Not	DOID:0080764	hereditary diffuse gastric cancer	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	rdfs:label	hereditary diffuse gastric cancer	LEXMATCH
+MONDO:0007762	hyperlipoproteinemia type V	skos:exactmatch	Not	DOID:0111421	familial apolipoprotein A5 deficiency	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	familial apoa5 deficiency	LEXMATCH
+MONDO:0007919	lymphatic malformation 1	skos:exactmatch	Not	DOID:0070212	hereditary lymphedema I	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	congenital primary lymphedema	LEXMATCH
+MONDO:0008675	Freeman-Sheldon syndrome	skos:exactmatch	Not	DOID:0111605	distal arthrogryposis type 2A	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	distal arthrogryposis type 2a	LEXMATCH
+MONDO:0009288	glycogen storage disease Ib	skos:exactmatch	Not	DOID:0081331	glycogen storage disease Ic	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	rdfs:label	glycogen storage disorder ic	LEXMATCH
+MONDO:0013162	autosomal recessive limb-girdle muscular dystrophy type 2N	skos:exactmatch	Not	DOID:0112382	muscular dystrophy-dystroglycanopathy type C8	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	mddgc2	LEXMATCH
+MONDO:0016642	meningioma	skos:exactmatch	Not	DOID:0080842	intracranial meningioma	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	rdfs:label	intracranial meningioma	LEXMATCH
+MONDO:0016715	ependymoblastoma	skos:exactmatch	Not	DOID:0081286	embryonal tumor with multilayered rosettes	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	rdfs:label	embryonal tumor with multilayered rosettes	LEXMATCH
+MONDO:0017858	acute erythroid leukemia	skos:exactmatch	Not	DOID:0080916	erythroleukemia	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	rdfs:label	erythroleukemia	LEXMATCH
+MONDO:0018433	acute myeloid leukemia with t(6;9)(p23;q34)	skos:exactmatch	Not	DOID:0081080	acute myeloid leukemia with t(6;9) (p23;q34.1)	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	rdfs:label	oio:hasExactSynonym	acute myeloid leukemia with t(6;9)(p23;q34)	LEXMATCH
+MONDO:0018689	plasma cell leukemia	skos:exactmatch	Not	DOID:0070212	hereditary lymphedema I	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	pcl	LEXMATCH
+MONDO:0018821	X-linked female restricted facial dysmorphism-short stature-choanal atresia-intellectual disability	skos:exactmatch	Not	DOID:0112025	female-restricted syndromic X-linked intellectual disability 99	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	rdfs:label	oio:hasExactSynonym	x-linked female restricted facial dysmorphism-short stature-choanal atresia-intellectual disability	LEXMATCH
+MONDO:0018922	cold agglutinin disease	skos:exactmatch	Not	DOID:0111275	speech-language disorder-1	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	cas	LEXMATCH
+MONDO:0019976	dementia pugilistica	skos:exactmatch	Not	DOID:0081291	chronic traumatic encephalopathy	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	rdfs:label	chronic traumatic encephalopathy	LEXMATCH
+MONDO:0020300	autosomal dominant nocturnal frontal lobe epilepsy	skos:exactmatch	Not	DOID:0081119	benign familial infantile seizures 6	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	rdfs:label	oio:hasExactSynonym	autosomal dominant nocturnal frontal lobe epilepsy	LEXMATCH
+MONDO:0044212	chronic idiopathic urticaria	skos:exactmatch	Not	DOID:0080749	chronic spontaneous urticaria	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	chronic idiopathic urticaria	LEXMATCH
+MONDO:0044212	chronic idiopathic urticaria	skos:exactmatch	Not	DOID:0080749	chronic spontaneous urticaria	semapv:LexicalMatching	https://orcid.org/0000-0002-4142-7153	oaklib	0.8	rdfs:label	oio:hasExactSynonym	chronic idiopathic urticaria	LEXMATCH
+MONDO:0859195	hypoplastic femurs and pelvis	skos:exactmatch		OMIM:619545	hypoplastic femurs and pelvis	semapv:UnspecifiedMatching	https://orcid.org/0000-0001-5208-3432						
+MONDO:0859359	blood group, er	skos:exactmatch		OMIM:620207	blood group, er	semapv:UnspecifiedMatching	https://orcid.org/0000-0001-5208-3432						
+
