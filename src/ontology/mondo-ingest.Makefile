@@ -409,8 +409,11 @@ ALL_EXCLUSION_FILES_AS_PARAM= $(patsubst %, --exclusion $(REPORTDIR)/%_term_excl
 
 
 MONDO_REJECT_SHEET = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR_pk7yVg6caeLOiHk0EME2mylCtwNrORCgE0OV80YgoIRYztBYmRTooV8veJiPyYW1ExWBKriU17Kt/pub?gid=0&single=true&output=tsv"
-$(MAPPINGSDIR)/"rejected-mappings.sssom.tsv":
+$(MAPPINGSDIR)/rejected-mappings.tsv:
 	wget $(MONDO_REJECT_SHEET) -O $@
+
+$(MAPPINGSDIR)/rejected-mappings-sssom.tsv: $(MAPPINGSDIR)/rejected-mappings.tsv
+	sssom parse $< -m metadata/mondo.sssom.config.yml --no-strict-clean-prefixes -o $@
 
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
 tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
@@ -426,13 +429,13 @@ tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db.tmp
 	@rm -f tmp/merged-relation-graph.tsv.gz
 
-$(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/rejected-mappings.sssom.tsv
+$(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/rejected-mappings.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical-2.sssom.tsv
 	python $< run tmp/merged.db \
 		-c metadata/mondo.sssom.config.yml \
 		-r config/mondo-match-rules.yaml \
-		--rejects $(MAPPINGSDIR)/"rejected-mappings.sssom.tsv" \
+		--rejects $(MAPPINGSDIR)/rejected-mappings.tsv \
 		-o $@
 
 lexical-matches: $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
