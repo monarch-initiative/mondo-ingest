@@ -435,7 +435,7 @@ $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-so
 	python $< run tmp/merged.db \
 		-c metadata/mondo.sssom.config.yml \
 		-r config/mondo-match-rules.yaml \
-		--rejects $(MAPPINGSDIR)/"rejected-mappings.tsv" \
+		--rejects $(MAPPINGSDIR)/rejected-mappings.tsv \
 		-o $@
 
 lexical-matches: $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
