@@ -25,7 +25,7 @@ import click
 import yaml
 import pandas as pd
 
-from sssom.constants import SUBJECT_ID, OBJECT_ID
+from sssom.constants import SUBJECT_ID, OBJECT_ID, PREDICATE_MODIFIER
 from sssom.util import filter_prefixes, is_curie, is_iri
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
@@ -134,6 +134,8 @@ def run(input: str, config: str, rules: str, rejects: str, output: str):
     msdf.df = filter_prefixes(
         df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID]
     )
+    msdf.df[PREDICATE_MODIFIER] = "" if PREDICATE_MODIFIER not in msdf.df.columns else msdf.df[PREDICATE_MODIFIER]
+
     msdf.remove_mappings(mapping_msdf)
 
     with open(str(Path(output)), "w", encoding="utf8") as f:
