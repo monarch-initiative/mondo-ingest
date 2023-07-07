@@ -135,6 +135,7 @@ def run(input: str, config: str, rules: str, rejects: str, output: str):
         df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID]
     )
     msdf.df[PREDICATE_MODIFIER] = "" if PREDICATE_MODIFIER not in msdf.df.columns else msdf.df[PREDICATE_MODIFIER]
+    mapping_msdf.df[PREDICATE_MODIFIER] = "" if PREDICATE_MODIFIER not in mapping_msdf.df.columns else mapping_msdf.df[PREDICATE_MODIFIER]
 
     msdf.remove_mappings(mapping_msdf)
 
