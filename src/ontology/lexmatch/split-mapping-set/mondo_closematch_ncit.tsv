@@ -1,5 +1,9 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
 MONDO:0000380	paranasal sinus carcinoma	skos:closeMatch	NCIT:C6017	Paranasal Sinus Adenocarcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	paranasal sinus adenocarcinoma	LEXMATCH
+MONDO:0000402	small cell carcinoma	skos:closeMatch	NCIT:C4099	Small Cell Intermediate Cell Carcinoma	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0000402	LEXMATCH
+MONDO:0000402	small cell carcinoma	skos:closeMatch	NCIT:C4099	Small Cell Intermediate Cell Carcinoma	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	mondo:0000402	LEXMATCH
+MONDO:0000503	lung adenocarcinoma in situ	skos:closeMatch	NCIT:C8748	Stage 0 Lung Adenosquamous Carcinoma AJCC v6 and v7	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0000503	LEXMATCH
+MONDO:0000503	lung adenocarcinoma in situ	skos:closeMatch	NCIT:C8748	Stage 0 Lung Adenosquamous Carcinoma AJCC v6 and v7	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	mondo:0000503	LEXMATCH
 MONDO:0001657	brain cancer	skos:closeMatch	NCIT:C5115	Adult Malignant Brain Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	adult malignant brain neoplasm	LEXMATCH
 MONDO:0002095	vascular cancer	skos:closeMatch	NCIT:C5388	Renal Vein Leiomyosarcoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	renal vein leiomyosarcoma	LEXMATCH
 MONDO:0002370	ovarian Brenner tumor	skos:closeMatch	NCIT:C4746	Benign Ovarian Brenner Tumor	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	benign ovarian brenner tumor	LEXMATCH
@@ -63,6 +67,7 @@ MONDO:0017858	acute erythroid leukemia	skos:closeMatch	NCIT:C7152	Erythroleukemi
 MONDO:0018842	primary effusion lymphoma	skos:closeMatch	NCIT:C3471	AIDS-Related Lymphoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	aids-related lymphoma	LEXMATCH
 MONDO:0018919	McCune-Albright syndrome	skos:closeMatch	NCIT:C34610	Polyostotic Fibrous Dysplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	polyostotic fibrous dysplasia	LEXMATCH
 MONDO:0019404	perineurioma	skos:closeMatch	NCIT:C6912	Soft Tissue Perineurioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	soft tissue perineurioma	LEXMATCH
+MONDO:0019468	T-cell prolymphocytic leukemia	skos:closeMatch	NCIT:C70649	T-Cell Chronic Lymphocytic Leukemia	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0019468	LEXMATCH
 MONDO:0019960	VIPoma	skos:closeMatch	NCIT:C95599	Pancreatic Vipoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	pancreatic vipoma	LEXMATCH
 MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	accelerated phase chronic myelogenous leukemia, bcr-abl1 positive	LEXMATCH
 MONDO:0021657	ovarian sex cord-stromal tumor	skos:closeMatch	NCIT:C4208	Ovarian Sex Cord Tumor with Annular Tubules	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	ovarian sex cord tumor with annular tubules	LEXMATCH
