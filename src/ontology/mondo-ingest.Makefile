@@ -319,30 +319,16 @@ documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs s
 
 .PHONY: build-mondo-ingest
 build-mondo-ingest:
-	$(MAKE) refresh-imports
-	$(MAKE) exclusions-all
-	$(MAKE) slurp-all
-	$(MAKE) mappings
-	$(MAKE) matches
-	$(MAKE) mapped-deprecated-terms
-	$(MAKE) mapping-progress-report
-	$(MAKE) recreate-unmapped-components
-	$(MAKE) documentation
+	$(MAKE) refresh-imports exclusions-all mondo-ingest.db slurp-all mappings matches \
+		mapped-deprecated-terms mapping-progress-report \
+		recreate-unmapped-components documentation
 	$(MAKE) prepare_release
 
 .PHONY: build-mondo-ingest-no-imports
 build-mondo-ingest-no-imports:
-	$(MAKE_FAST) exclusions-all
-	$(MAKE_FAST) slurp-all
-	$(MAKE_FAST) mappings
-	$(MAKE_FAST) matches
-	$(MAKE_FAST) mapped-deprecated-terms
-	$(MAKE_FAST) mapping-progress-report
-	$(MAKE_FAST) recreate-unmapped-components
-	$(MAKE_FAST) documentation
-	$(MAKE_FAST) prepare_release
+	$(MAKE_FAST) build-mondo-ingest
 
-DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
+DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo mondo-ingest.db
 
 .PHONY: deploy-mondo-ingest
 deploy-mondo-ingest:
@@ -428,6 +414,10 @@ tmp/merged.db: tmp/merged.owl
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f tmp/merged-relation-graph.tsv.gz
+
+mondo-ingest.db: tmp/merged.db
+	cp $< $@
+.PRECIOUS: mondo-ingest.db
 
 $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/rejected-mappings.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
