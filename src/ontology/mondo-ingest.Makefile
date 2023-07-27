@@ -328,7 +328,7 @@ build-mondo-ingest:
 build-mondo-ingest-no-imports:
 	$(MAKE_FAST) build-mondo-ingest
 
-DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo mondo-ingest.db
+DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
 
 .PHONY: deploy-mondo-ingest
 deploy-mondo-ingest:
