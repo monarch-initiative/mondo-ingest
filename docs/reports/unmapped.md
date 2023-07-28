@@ -2,12 +2,12 @@
 | Ontology                           | Tot terms   | Tot excluded   | Tot deprecated   | Tot deprecated unmapped   | Tot mappable _(!excluded, !deprecated)_   | Tot mapped _(mappable)_   | Tot unmapped _(mappable)_   | % unmapped _(mappable)_   |
 |:-----------------------------------|:------------|:---------------|:-----------------|:--------------------------|:------------------------------------------|:--------------------------|:----------------------------|:--------------------------|
 | [ICD10WHO](./unmapped_icd10who.md) | 12,542      | 0              | 0                | 0                         | 12,542                                    | 18                        | 12,524                      | 99.9%                     |
-| [ICD10CM](./unmapped_icd10cm.md)   | 95,847      | 15,452         | 0                | 0                         | 80,395                                    | 1,161                     | 79,234                      | 98.6%                     |
+| [ICD10CM](./unmapped_icd10cm.md)   | 95,847      | 15,452         | 0                | 0                         | 80,395                                    | 1,160                     | 79,235                      | 98.6%                     |
 | [NCIT](./unmapped_ncit.md)         | 174,300     | 154,519        | 5,055            | 5,052                     | 14,726                                    | 3,681                     | 11,045                      | 75.0%                     |
+| [ORDO](./unmapped_ordo.md)         | 11,001      | 1,827          | 1,470            | 1,305                     | 9,174                                     | 8,994                     | 180                         | 2.0%                      |
 | [GARD](./unmapped_gard.md)         | 12,004      | 0              | 0                | 0                         | 12,004                                    | 0                         | 12,004                      | 100.0%                    |
-| [OMIM](./unmapped_omim.md)         | 28,890      | 19,021         | 1,358            | 1,314                     | 8,512                                     | 8,434                     | 78                          | 0.9%                      |
-| [ORDO](./unmapped_ordo.md)         | 10,866      | 1,773          | 1,418            | 1,305                     | 9,093                                     | 9,046                     | 47                          | 0.5%                      |
-| [DOID](./unmapped_doid.md)         | 13,791      | 2,643          | 2,477            | 2,473                     | 11,147                                    | 11,098                    | 49                          | 0.4%                      |
+| [OMIM](./unmapped_omim.md)         | 28,917      | 19,033         | 1,358            | 1,314                     | 8,527                                     | 8,434                     | 93                          | 1.1%                      |
+| [DOID](./unmapped_doid.md)         | 13,843      | 2,641          | 2,476            | 2,470                     | 11,200                                    | 11,092                    | 108                         | 1.0%                      |
 
 `Ontology`: Name of ontology  
 `Tot terms`: Total terms in ontology  

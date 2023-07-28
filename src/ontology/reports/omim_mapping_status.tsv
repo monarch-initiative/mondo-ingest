@@ -1,6 +1,10 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
 OMIM:301106	spermatogenic failure, x-linked, 7	False	False	False
 OMIM:301107	intellectual developmental disorder, X-linked 111	False	False	False
+OMIM:301108	cataracts, hearing impairment, nephrotic syndrome, and enterocolitis 1	False	False	False
+OMIM:301109	autoinflammatory disease, multisystem, with immune dysregulation, X-linked	False	False	False
+OMIM:301110	hemolytic uremic syndrome, atypical, 8, with rhizomelic short stature	False	False	False
+OMIM:301111	intellectual developmental disorder, X-linked 112	False	False	False
 OMIM:613035	hearing loss, noise-induced, susceptibility to	False	False	False
 OMIM:620150	epidermolytic hyperkeratosis 2	False	False	False
 OMIM:620296	autoinflammation with pulmonary and cutaneous vasculitis	False	False	False
@@ -48,7 +52,7 @@ OMIM:620370	recon progeroid syndrome	False	False	False
 OMIM:620371	neurodevelopmental disorder with intracranial hemorrhage, seizures, and spasticity	False	False	False
 OMIM:620372	hypersulfaturia	False	False	False
 OMIM:620374	nephrolithiasis, calcium oxalate, 2, with or without nephrocalcinosis	False	False	False
-OMIM:620375	myopathy, limb-girdle, adult-onset	False	False	False
+OMIM:620375	muscular dystrophy, limb-girdle, autosomal recessive 28	False	False	False
 OMIM:620376	autoinflammatory disease, systemic, with vasculitis	False	False	False
 OMIM:620378	charcot-marie-tooth disease, dominant intermediate a	False	False	False
 OMIM:620379	spastic paraplegia 89, autosomal recessive	False	False	False
@@ -66,12 +70,23 @@ OMIM:620415	woolly hair-skin fragility syndrome	False	False	False
 OMIM:620416	spastic paraplegia 90a, autosomal dominant	False	False	False
 OMIM:620417	spastic paraplegia 90b, autosomal recessive	False	False	False
 OMIM:620422	retinitis pigmentosa 97	False	False	False
+OMIM:620423	multiple mitochondrial dysfunctions syndrome 7	False	False	False
+OMIM:620425	cataracts, hearing impairment, nephrotic syndrome, and enterocolitis 2	False	False	False
+OMIM:620427	dystonia 37, early-onset, with striatal lesions	False	False	False
+OMIM:620428	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	False	False	False
+OMIM:620430	autoimmune disease, multisystem, infantile-onset, 3	False	False	False
+OMIM:620438	ciliary dyskinesia, primary, 51	False	False	False
+OMIM:620439	intellectual developmental disorder, autosomal dominant 72	False	False	False
+OMIM:620443	disabling pansclerotic morphea of childhood	False	False	False
+OMIM:620444	craniofacial microsomia 2	False	False	False
 OMIMPS:109400		False	False	False
 OMIMPS:113800		False	False	False
 OMIMPS:141200		False	False	False
+OMIMPS:164210		False	False	False
 OMIMPS:167030		False	False	False
 OMIMPS:177735		False	False	False
 OMIMPS:278000		False	False	False
+OMIMPS:301108		False	False	False
 OMIMPS:603896		False	False	False
 OMIMPS:605899		False	False	False
 OMIMPS:608415		False	False	False
@@ -838,7 +853,6 @@ OMIM:600261	removed from database	False	False	True
 OMIM:600265		False	False	True
 OMIM:600290		False	False	True
 OMIM:600304		False	False	True
-OMIM:600309		False	False	True
 OMIM:600313		False	False	True
 OMIM:600330		False	False	True
 OMIM:600344		False	False	True
@@ -1086,6 +1100,7 @@ OMIM:603480		False	False	True
 OMIM:603510		False	False	True
 OMIM:603513		False	False	True
 OMIM:603528		False	False	True
+OMIM:603530		False	False	True
 OMIM:603532		False	False	True
 OMIM:603545		False	False	True
 OMIM:603556		False	False	True
@@ -9444,7 +9459,7 @@ OMIM:605929	SNX2	False	True	False
 OMIM:605930	SNX3	False	True	False
 OMIM:605931	SNX4	False	True	False
 OMIM:605932	BHMT2	False	True	False
-OMIM:605933	TM7SF4	False	True	False
+OMIM:605933	DCSTAMP	False	True	False
 OMIM:605936	BIN2	False	True	False
 OMIM:605937	SNX5	False	True	False
 OMIM:605938	PIGP	False	True	False
@@ -18786,6 +18801,18 @@ OMIM:620418	NRIR	False	True	False
 OMIM:620419	CCNI2	False	True	False
 OMIM:620420	HIGD1B	False	True	False
 OMIM:620421	DCAF4L2	False	True	False
+OMIM:620424	ZAR1L	False	True	False
+OMIM:620426	INKA1	False	True	False
+OMIM:620429	TMEM64	False	True	False
+OMIM:620431	FLYWCH1	False	True	False
+OMIM:620432	OCSTAMP	False	True	False
+OMIM:620433	TMEM186	False	True	False
+OMIM:620434	TMEM223	False	True	False
+OMIM:620435	UQCC5	False	True	False
+OMIM:620436	TMED9	False	True	False
+OMIM:620437	TMED3	False	True	False
+OMIM:620440	GAPT	False	True	False
+OMIM:620441	ZNF470	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
 OMIM:100100	prune belly syndrome	True	False	False
@@ -18793,7 +18820,7 @@ OMIM:100300	adams-oliver syndrome 1	True	False	False
 OMIM:100600	acanthosis nigricans	True	False	False
 OMIM:100800	achondroplasia	True	False	False
 OMIM:100820	achoo syndrome	True	False	False
-OMIM:101000	neurofibromatosis,  iia 2	True	False	False
+OMIM:101000	schwannomatosis, vestibular	True	False	False
 OMIM:101200	apert syndrome	True	False	False
 OMIM:101400	saethre-chotzen syndrome	True	False	False
 OMIM:101600	pfeiffer syndrome	True	False	False
@@ -18969,7 +18996,7 @@ OMIM:115200	cardiomyopathy, dilated, 1a	True	False	False
 OMIM:115210	cardiomyopathy, familial restrictive, 1	True	False	False
 OMIM:115300	hypercarotenemia and vitamin a deficiency, autosomal dominant	True	False	False
 OMIM:115310	paragangliomas 4	True	False	False
-OMIM:115430	carpal tunnel syndrome	True	False	False
+OMIM:115430	carpal tunnel syndrome 1	True	False	False
 OMIM:115470	cat eye syndrome	True	False	False
 OMIM:115650	cataract 32, multiple types	True	False	False
 OMIM:115660	cataract 7	True	False	False
@@ -19510,7 +19537,7 @@ OMIM:164100	nystagmus 2, congenital, autosomal dominant	True	False	False
 OMIM:164150	nystagmus, hereditary vertical	True	False	False
 OMIM:164170	nystagmus, voluntary	True	False	False
 OMIM:164200	oculodentodigital dysplasia	True	False	False
-OMIM:164210	craniofacial microsomia	True	False	False
+OMIM:164210	craniofacial microsomia 1	True	False	False
 OMIM:164220	schilbach-rott syndrome	True	False	False
 OMIM:164230	obsessive-compulsive disorder	True	False	False
 OMIM:164280	feingold syndrome 1	True	False	False
@@ -26143,7 +26170,7 @@ OMIM:619224	mitochondrial complex 2 deficiency, nuclear  iia 4	True	False	False
 OMIM:619226	blistering, acantholytic, of oral and laryngeal mucosa	True	False	False
 OMIM:619227	vertebral, cardiac, tracheoesophageal, renal, and limb defects	True	False	False
 OMIM:619228	developmental delay with dysmorphic facies and dental anomalies	True	False	False
-OMIM:619229	kohlschutter-tonz syndrome-like	True	False	False
+OMIM:619229	den hoed-de boer-voisin syndrome	True	False	False
 OMIM:619232	bile acid conjugation defect 1	True	False	False
 OMIM:619234	short stature, oligodontia, dysmorphic facies, and motor delay	True	False	False
 OMIM:619238	immunodeficiency 79	True	False	False
@@ -27249,9 +27276,9 @@ OMIM:306500		True	False	True
 OMIM:309605		True	False	True
 OMIM:600048		True	False	True
 OMIM:600146		True	False	True
+OMIM:600309		True	False	True
 OMIM:601251		True	False	True
 OMIM:601563		True	False	True
-OMIM:603530		True	False	True
 OMIM:604916		True	False	True
 OMIM:605365		True	False	True
 OMIM:607655		True	False	True
@@ -27838,7 +27865,7 @@ OMIM:187750	thoracic dysostosis, isolated	True	True	False
 OMIM:187760	thoracolaryngopelvic dysplasia	True	True	False
 OMIM:187770	thoracopelvic dysostosis	True	True	False
 OMIM:188020	thrombocytopenia, cyclic	True	True	False
-OMIM:188030	thrombocytopenic purpura, autoimmune	True	True	False
+OMIM:188030	immune thrombocytopenia	True	True	False
 OMIM:188100	thumb deformity	True	True	False
 OMIM:188150	thumb deformity and alopecia	True	True	False
 OMIM:188201	thumbs, stiff, with brachydactyly  iia a1 and developmental delay	True	True	False
