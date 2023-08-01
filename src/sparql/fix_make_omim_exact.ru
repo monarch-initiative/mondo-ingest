@@ -29,6 +29,6 @@ WHERE
   
   FILTER( STRSTARTS(str(?value), "OMIM"))
   FILTER( !isBlank(?cls) && STRSTARTS(str(?cls), "http://purl.obolibrary.org/obo/DOID_"))
-  BIND(IRI(REPLACE(REPLACE(STR(?value), "OMIMPS:", "https://omim.org/phenotypicSeries/PS"), "OMIM:", "https://omim.org/entry/")) as ?iri)
+  BIND(IRI(REPLACE(REPLACE(STR(?value), "OMIMPS:", "https://www.omim.org/phenotypicSeries/PS"), "OMIM:", "https://omim.org/entry/")) as ?iri)
 
 }
