@@ -33,8 +33,8 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 #######################################
 # This section is concerned with transforming the incoming sources into the
 # Monarch Ingest schema.
-# Illegal punning on some properties #60: https://github.com/monarch-initiative/omim/issues/60
-# todo: what does this have to do with #60 exactly? Does it address it? can that issue be closed?
+# todo: Illegal punning on some properties #60: https://github.com/monarch-initiative/omim/issues/60
+#  - #60 needs to be fixed at source, but a workaround can probably be implemented in this goal
 $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-download-omim.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
 		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \

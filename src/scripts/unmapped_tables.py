@@ -51,25 +51,23 @@ def create_mapping_status_tables(
     id_labels_all_map: Dict[Union[CURIE, URI], str] = {x[0]: x[1] for x in id_labels_all}
 
     # Filter to owned terms; convert to CURIEs
-    curies_owned: List[CURIE] = []
-    labels_owned: List[str] = []
+    curie_labels: Dict[CURIE, str] = {}
     curies_deprecated: Set[CURIE] = set()
     for _id, label in id_labels_all_map.items():
         curie: CURIE = _id if is_curie(_id) else converter.compress(_id)
         for alias, preferred in prefix_replacement_map.items():
             curie = curie.replace(alias, preferred) if curie else curie
         if curie and curie.split(':')[0] in owned_prefixes:
-            curies_owned.append(curie)
-            labels_owned.append(label)
+            curie_labels[curie] = label
             if _id not in ids_sans_deprecated:
                 curies_deprecated.add(curie)
 
     # Build dataframe
-    is_mapped: List[bool] = [x in mapped_terms for x in curies_owned]
-    is_excluded: List[bool] = [x in excluded_terms for x in curies_owned]
-    is_deprecated: List[bool] = [x in curies_deprecated for x in curies_owned]
+    is_mapped: List[bool] = [x in mapped_terms for x in curie_labels.keys()]
+    is_excluded: List[bool] = [x in excluded_terms for x in curie_labels.keys()]
+    is_deprecated: List[bool] = [x in curies_deprecated for x in curie_labels.keys()]
     df = pd.DataFrame({
-        'subject_id': curies_owned, 'subject_label': labels_owned, 'is_mapped': is_mapped, 'is_excluded': is_excluded,
+        'subject_id': curie_labels.keys(), 'subject_label': curie_labels.values(), 'is_mapped': is_mapped, 'is_excluded': is_excluded,
         'is_deprecated': is_deprecated})
     if len(df) == 0:
         raise RuntimeError('Mapping status: No "owned terms" found in the ontology. Not expected.')

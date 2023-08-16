@@ -1,12 +1,13 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
+OMIM:147060	hyper-ige recurrent infection syndrome 1, autosomal dominant	False	False	False
 OMIM:301106	spermatogenic failure, x-linked, 7	False	False	False
 OMIM:301107	intellectual developmental disorder, X-linked 111	False	False	False
 OMIM:301108	cataracts, hearing impairment, nephrotic syndrome, and enterocolitis 1	False	False	False
 OMIM:301109	autoinflammatory disease, multisystem, with immune dysregulation, X-linked	False	False	False
 OMIM:301110	hemolytic uremic syndrome, atypical, 8, with rhizomelic short stature	False	False	False
 OMIM:301111	intellectual developmental disorder, X-linked 112	False	False	False
-OMIM:613035	hearing loss, noise-induced, susceptibility to	False	False	False
 OMIM:620150	epidermolytic hyperkeratosis 2	False	False	False
+OMIM:620151	wolman disease	False	False	False
 OMIM:620296	autoinflammation with pulmonary and cutaneous vasculitis	False	False	False
 OMIM:620300	mitochondrial trifunctional protein deficiency 2	False	False	False
 OMIM:620303	pituitary hormone deficiency, combined or isolated, 8	False	False	False
@@ -79,19 +80,19 @@ OMIM:620438	ciliary dyskinesia, primary, 51	False	False	False
 OMIM:620439	intellectual developmental disorder, autosomal dominant 72	False	False	False
 OMIM:620443	disabling pansclerotic morphea of childhood	False	False	False
 OMIM:620444	craniofacial microsomia 2	False	False	False
-OMIMPS:109400		False	False	False
-OMIMPS:113800		False	False	False
-OMIMPS:141200		False	False	False
-OMIMPS:164210		False	False	False
-OMIMPS:167030		False	False	False
-OMIMPS:177735		False	False	False
-OMIMPS:278000		False	False	False
-OMIMPS:301108		False	False	False
-OMIMPS:603896		False	False	False
-OMIMPS:605899		False	False	False
-OMIMPS:608415		False	False	False
-OMIMPS:609015		False	False	False
-OMIMPS:613652		False	False	False
+OMIMPS:109400	Basal cell nevus syndrome	False	False	False
+OMIMPS:113800	Epidermolytic hyperkeratosis	False	False	False
+OMIMPS:141200	Hematuria, benign familial	False	False	False
+OMIMPS:164210	Craniofacial Microsomia	False	False	False
+OMIMPS:167030	Nephrolithiasis, calcium oxalate	False	False	False
+OMIMPS:177735	Pseudohypoaldosteronism, type I	False	False	False
+OMIMPS:278000	Lysosomal acid lipase deficiency	False	False	False
+OMIMPS:301108	Cataracts, hearing impairment, nephrotic syndrome, and enterocolitis 1	False	False	False
+OMIMPS:603896	Leukoencephalopathy with vanishing white matter	False	False	False
+OMIMPS:605899	Glycine encephalopathy	False	False	False
+OMIMPS:608415	Prolonged electroretinal response suppression	False	False	False
+OMIMPS:609015	Mitochondrial trifunctional protein deficiency	False	False	False
+OMIMPS:613652	C1q deficiency	False	False	False
 OMIM:100500		False	False	True
 OMIM:100680		False	False	True
 OMIM:100735		False	False	True
@@ -408,7 +409,6 @@ OMIM:180840		False	False	True
 OMIM:180850		False	False	True
 OMIM:180930	removed from database	False	False	True
 OMIM:180940	removed from database	False	False	True
-OMIM:181430		False	False	True
 OMIM:181520		False	False	True
 OMIM:182143		False	False	True
 OMIM:182203		False	False	True
@@ -936,7 +936,6 @@ OMIM:600964		False	False	True
 OMIM:600973		False	False	True
 OMIM:600990		False	False	True
 OMIM:600992		False	False	True
-OMIM:600996		False	False	True
 OMIM:601000		False	False	True
 OMIM:601006		False	False	True
 OMIM:601008		False	False	True
@@ -1100,7 +1099,6 @@ OMIM:603480		False	False	True
 OMIM:603510		False	False	True
 OMIM:603513		False	False	True
 OMIM:603528		False	False	True
-OMIM:603530		False	False	True
 OMIM:603532		False	False	True
 OMIM:603545		False	False	True
 OMIM:603556		False	False	True
@@ -1311,7 +1309,6 @@ OMIM:609266		False	False	True
 OMIM:609307		False	False	True
 OMIM:609339		False	False	True
 OMIM:609421		False	False	True
-OMIM:609456		False	False	True
 OMIM:609464		False	False	True
 OMIM:609480		False	False	True
 OMIM:609496		False	False	True
@@ -19345,7 +19342,6 @@ OMIM:146700	ichthyosis vulgaris	True	False	False
 OMIM:146750	ichthyosis, lamellar, autosomal dominant	True	False	False
 OMIM:146800	ichthyosis bullosa of siemens	True	False	False
 OMIM:147050	ige responsiveness, atopic	True	False	False
-OMIM:147060	hyper-ige recurrent infection syndrome 1, autosomal dominant	True	False	False
 OMIM:147250	solitary median maxillary central incisor	True	False	False
 OMIM:147400	incisors, shovel-shaped	True	False	False
 OMIM:147421	inclusion body myositis	True	False	False
@@ -23315,6 +23311,7 @@ OMIM:613030	glioma susceptibility 5	True	False	False
 OMIM:613031	glioma susceptibility 6	True	False	False
 OMIM:613032	glioma susceptibility 7	True	False	False
 OMIM:613033	glioma susceptibility 8	True	False	False
+OMIM:613035	hearing loss, noise-induced, susceptibility to	True	False	False
 OMIM:613038	pituitary hormone deficiency, combined or isolated, 1	True	False	False
 OMIM:613055	atrial fibrillation, familial, 8	True	False	False
 OMIM:613058	basal cell carcinoma, susceptibility to, 2	True	False	False
@@ -26629,7 +26626,6 @@ OMIM:620141	developmental delay, language impairment, and ocular abnormalities	T
 OMIM:620145	developmental and epileptic encephalopathy 109	True	False	False
 OMIM:620148	ichthyosis, annular epidermolytic, 2	True	False	False
 OMIM:620149	developmental and epileptic encephalopathy 110	True	False	False
-OMIM:620151	wolman disease	True	False	False
 OMIM:620152	hypomagnesemia 7, renal, with or without dilated cardiomyopathy	True	False	False
 OMIM:620153	mosaic variegated aneuploidy syndrome 4	True	False	False
 OMIM:620154	oocyte/zygote/embryo maturation arrest 13	True	False	False
@@ -26703,551 +26699,551 @@ OMIM:620285	amyotrophic lateral sclerosis 27, juvenile	True	False	False
 OMIM:620286	myopathy, sarcoplasmic body	True	False	False
 OMIM:620292	neurodevelopmental disorder with language delay and behavioral abnormalities, with or without seizures	True	False	False
 OMIM:620294	congenital heart defects, multiple types, 9	True	False	False
-OMIMPS:100070		True	False	False
-OMIMPS:100300		True	False	False
-OMIMPS:101800		True	False	False
-OMIMPS:102200		True	False	False
-OMIMPS:102300		True	False	False
-OMIMPS:103900		True	False	False
-OMIMPS:104290		True	False	False
-OMIMPS:104500		True	False	False
-OMIMPS:105250		True	False	False
-OMIMPS:105400		True	False	False
-OMIMPS:105550		True	False	False
-OMIMPS:105650		True	False	False
-OMIMPS:105800		True	False	False
-OMIMPS:106100		True	False	False
-OMIMPS:106210		True	False	False
-OMIMPS:106300		True	False	False
-OMIMPS:106600		True	False	False
-OMIMPS:107250		True	False	False
-OMIMPS:107480		True	False	False
-OMIMPS:107970		True	False	False
-OMIMPS:108120		True	False	False
-OMIMPS:108300		True	False	False
-OMIMPS:108600		True	False	False
-OMIMPS:108720		True	False	False
-OMIMPS:108800		True	False	False
-OMIMPS:109720		True	False	False
-OMIMPS:109730		True	False	False
-OMIMPS:112240		True	False	False
-OMIMPS:113700		True	False	False
-OMIMPS:113900		True	False	False
-OMIMPS:114580		True	False	False
-OMIMPS:115150		True	False	False
-OMIMPS:115200		True	False	False
-OMIMPS:115210		True	False	False
-OMIMPS:115430		True	False	False
-OMIMPS:116200		True	False	False
-OMIMPS:116860		True	False	False
-OMIMPS:117000		True	False	False
-OMIMPS:118100		True	False	False
-OMIMPS:118220		True	False	False
-OMIMPS:118450		True	False	False
-OMIMPS:119530		True	False	False
-OMIMPS:119580		True	False	False
-OMIMPS:120100		True	False	False
-OMIMPS:120435		True	False	False
-OMIMPS:120970		True	False	False
-OMIMPS:121200		True	False	False
-OMIMPS:121210		True	False	False
-OMIMPS:121400		True	False	False
-OMIMPS:122000		True	False	False
-OMIMPS:122100		True	False	False
-OMIMPS:122470		True	False	False
-OMIMPS:123000		True	False	False
-OMIMPS:123100		True	False	False
-OMIMPS:123700		True	False	False
-OMIMPS:124000		True	False	False
-OMIMPS:124900		True	False	False
-OMIMPS:125310		True	False	False
-OMIMPS:126200		True	False	False
-OMIMPS:126800		True	False	False
-OMIMPS:127000		True	False	False
-OMIMPS:127500		True	False	False
-OMIMPS:127550		True	False	False
-OMIMPS:128100		True	False	False
-OMIMPS:128200		True	False	False
-OMIMPS:130000		True	False	False
-OMIMPS:131100		True	False	False
-OMIMPS:131760		True	False	False
-OMIMPS:132100		True	False	False
-OMIMPS:132400		True	False	False
-OMIMPS:133100		True	False	False
-OMIMPS:133200		True	False	False
-OMIMPS:133780		True	False	False
-OMIMPS:134600		True	False	False
-OMIMPS:135300		True	False	False
-OMIMPS:135500		True	False	False
-OMIMPS:135700		True	False	False
-OMIMPS:135900		True	False	False
-OMIMPS:136500		True	False	False
-OMIMPS:136520		True	False	False
-OMIMPS:136550		True	False	False
-OMIMPS:136760		True	False	False
-OMIMPS:136800		True	False	False
-OMIMPS:137800		True	False	False
-OMIMPS:137950		True	False	False
-OMIMPS:138800		True	False	False
-OMIMPS:141500		True	False	False
-OMIMPS:142340		True	False	False
-OMIMPS:142623		True	False	False
-OMIMPS:142690		True	False	False
-OMIMPS:142700		True	False	False
-OMIMPS:143880		True	False	False
-OMIMPS:143890		True	False	False
-OMIMPS:145000		True	False	False
-OMIMPS:145260		True	False	False
-OMIMPS:145420		True	False	False
-OMIMPS:145600		True	False	False
-OMIMPS:145980		True	False	False
-OMIMPS:146200		True	False	False
-OMIMPS:146590		True	False	False
-OMIMPS:147060		True	False	False
-OMIMPS:147920		True	False	False
-OMIMPS:147950		True	False	False
-OMIMPS:148210		True	False	False
-OMIMPS:148300		True	False	False
-OMIMPS:149400		True	False	False
-OMIMPS:149730		True	False	False
-OMIMPS:151100		True	False	False
-OMIMPS:151623		True	False	False
-OMIMPS:151660		True	False	False
-OMIMPS:153100		True	False	False
-OMIMPS:153600		True	False	False
-OMIMPS:153840		True	False	False
-OMIMPS:154500		True	False	False
-OMIMPS:155600		True	False	False
-OMIMPS:156200		True	False	False
-OMIMPS:156610		True	False	False
-OMIMPS:157300		True	False	False
-OMIMPS:157600		True	False	False
-OMIMPS:157640		True	False	False
-OMIMPS:157700		True	False	False
-OMIMPS:158350		True	False	False
-OMIMPS:158600		True	False	False
-OMIMPS:158810		True	False	False
-OMIMPS:158900		True	False	False
-OMIMPS:160120		True	False	False
-OMIMPS:160150		True	False	False
-OMIMPS:160500		True	False	False
-OMIMPS:160565		True	False	False
-OMIMPS:160700		True	False	False
-OMIMPS:160900		True	False	False
-OMIMPS:161050		True	False	False
-OMIMPS:161400		True	False	False
-OMIMPS:161800		True	False	False
-OMIMPS:161950		True	False	False
-OMIMPS:162000		True	False	False
-OMIMPS:162091		True	False	False
-OMIMPS:162400		True	False	False
-OMIMPS:163950		True	False	False
-OMIMPS:164280		True	False	False
-OMIMPS:164310		True	False	False
-OMIMPS:164400		True	False	False
-OMIMPS:165500		True	False	False
-OMIMPS:166200		True	False	False
-OMIMPS:166780		True	False	False
-OMIMPS:166800		True	False	False
-OMIMPS:167200		True	False	False
-OMIMPS:167250		True	False	False
-OMIMPS:167320		True	False	False
-OMIMPS:167870		True	False	False
-OMIMPS:168000		True	False	False
-OMIMPS:168500		True	False	False
-OMIMPS:168600		True	False	False
-OMIMPS:169150		True	False	False
-OMIMPS:173900		True	False	False
-OMIMPS:174050		True	False	False
-OMIMPS:174200		True	False	False
-OMIMPS:174400		True	False	False
-OMIMPS:175100		True	False	False
-OMIMPS:175780		True	False	False
-OMIMPS:175800		True	False	False
-OMIMPS:176400		True	False	False
-OMIMPS:176670		True	False	False
-OMIMPS:177000		True	False	False
-OMIMPS:177200		True	False	False
-OMIMPS:177900		True	False	False
-OMIMPS:178110		True	False	False
-OMIMPS:178600		True	False	False
-OMIMPS:179010		True	False	False
-OMIMPS:179800		True	False	False
-OMIMPS:179850		True	False	False
-OMIMPS:180500		True	False	False
-OMIMPS:180849		True	False	False
-OMIMPS:180860		True	False	False
-OMIMPS:182250		True	False	False
-OMIMPS:183600		True	False	False
-OMIMPS:184255		True	False	False
-OMIMPS:184260		True	False	False
-OMIMPS:184450		True	False	False
-OMIMPS:184840		True	False	False
-OMIMPS:185800		True	False	False
-OMIMPS:186500		True	False	False
-OMIMPS:187300		True	False	False
-OMIMPS:187950		True	False	False
-OMIMPS:188050		True	False	False
-OMIMPS:188550		True	False	False
-OMIMPS:188580		True	False	False
-OMIMPS:189800		True	False	False
-OMIMPS:190300		True	False	False
-OMIMPS:190350		True	False	False
-OMIMPS:190440		True	False	False
-OMIMPS:191100		True	False	False
-OMIMPS:191830		True	False	False
-OMIMPS:192500		True	False	False
-OMIMPS:192600		True	False	False
-OMIMPS:193000		True	False	False
-OMIMPS:193100		True	False	False
-OMIMPS:193500		True	False	False
-OMIMPS:193670		True	False	False
-OMIMPS:193900		True	False	False
-OMIMPS:194070		True	False	False
-OMIMPS:200600		True	False	False
-OMIMPS:201000		True	False	False
-OMIMPS:202200		True	False	False
-OMIMPS:202700		True	False	False
-OMIMPS:203100		True	False	False
-OMIMPS:203300		True	False	False
-OMIMPS:203650		True	False	False
-OMIMPS:203655		True	False	False
-OMIMPS:204000		True	False	False
-OMIMPS:206100		True	False	False
-OMIMPS:206500		True	False	False
-OMIMPS:208000		True	False	False
-OMIMPS:208085		True	False	False
-OMIMPS:208150		True	False	False
-OMIMPS:208500		True	False	False
-OMIMPS:208540		True	False	False
-OMIMPS:209850		True	False	False
-OMIMPS:209880		True	False	False
-OMIMPS:209900		True	False	False
-OMIMPS:210200		True	False	False
-OMIMPS:210250		True	False	False
-OMIMPS:210600		True	False	False
-OMIMPS:210900		True	False	False
-OMIMPS:211400		True	False	False
-OMIMPS:211530		True	False	False
-OMIMPS:211600		True	False	False
-OMIMPS:212065		True	False	False
-OMIMPS:212066		True	False	False
-OMIMPS:212093		True	False	False
-OMIMPS:212720		True	False	False
-OMIMPS:212750		True	False	False
-OMIMPS:213200		True	False	False
-OMIMPS:213300		True	False	False
-OMIMPS:213600		True	False	False
-OMIMPS:213980		True	False	False
-OMIMPS:214100		True	False	False
-OMIMPS:214150		True	False	False
-OMIMPS:214450		True	False	False
-OMIMPS:214700		True	False	False
-OMIMPS:215100		True	False	False
-OMIMPS:215500		True	False	False
-OMIMPS:218330		True	False	False
-OMIMPS:219000		True	False	False
-OMIMPS:220110		True	False	False
-OMIMPS:220210		True	False	False
-OMIMPS:220290		True	False	False
-OMIMPS:220400		True	False	False
-OMIMPS:221770		True	False	False
-OMIMPS:221820		True	False	False
-OMIMPS:221900		True	False	False
-OMIMPS:222470		True	False	False
-OMIMPS:223360		True	False	False
-OMIMPS:224050		True	False	False
-OMIMPS:224120		True	False	False
-OMIMPS:224690		True	False	False
-OMIMPS:225750		True	False	False
-OMIMPS:226400		True	False	False
-OMIMPS:226650		True	False	False
-OMIMPS:227220		True	False	False
-OMIMPS:227650		True	False	False
-OMIMPS:228520		True	False	False
-OMIMPS:228550		True	False	False
-OMIMPS:229200		True	False	False
-OMIMPS:230400		True	False	False
-OMIMPS:231050		True	False	False
-OMIMPS:231090		True	False	False
-OMIMPS:231200		True	False	False
-OMIMPS:232200		True	False	False
-OMIMPS:233300		True	False	False
-OMIMPS:233400		True	False	False
-OMIMPS:234200		True	False	False
-OMIMPS:235200		True	False	False
-OMIMPS:235400		True	False	False
-OMIMPS:235510		True	False	False
-OMIMPS:236100		True	False	False
-OMIMPS:236600		True	False	False
-OMIMPS:236670		True	False	False
-OMIMPS:236680		True	False	False
-OMIMPS:236730		True	False	False
-OMIMPS:237450		True	False	False
-OMIMPS:239300		True	False	False
-OMIMPS:241550		True	False	False
-OMIMPS:242300		True	False	False
-OMIMPS:242860		True	False	False
-OMIMPS:243150		True	False	False
-OMIMPS:243180		True	False	False
-OMIMPS:243300		True	False	False
-OMIMPS:243310		True	False	False
-OMIMPS:244400		True	False	False
-OMIMPS:245480		True	False	False
-OMIMPS:245590		True	False	False
-OMIMPS:248370		True	False	False
-OMIMPS:248600		True	False	False
-OMIMPS:249000		True	False	False
-OMIMPS:249210		True	False	False
-OMIMPS:249270		True	False	False
-OMIMPS:249500		True	False	False
-OMIMPS:250950		True	False	False
-OMIMPS:251200		True	False	False
-OMIMPS:251270		True	False	False
-OMIMPS:251280		True	False	False
-OMIMPS:251290		True	False	False
-OMIMPS:251300		True	False	False
-OMIMPS:251450		True	False	False
-OMIMPS:251600		True	False	False
-OMIMPS:252010		True	False	False
-OMIMPS:252011		True	False	False
-OMIMPS:252150		True	False	False
-OMIMPS:252270		True	False	False
-OMIMPS:252350		True	False	False
-OMIMPS:253310		True	False	False
-OMIMPS:253600		True	False	False
-OMIMPS:254090		True	False	False
-OMIMPS:254130		True	False	False
-OMIMPS:254770		True	False	False
-OMIMPS:254800		True	False	False
-OMIMPS:254940		True	False	False
-OMIMPS:256040		True	False	False
-OMIMPS:256100		True	False	False
-OMIMPS:256300		True	False	False
-OMIMPS:256450		True	False	False
-OMIMPS:256520		True	False	False
-OMIMPS:256550		True	False	False
-OMIMPS:256730		True	False	False
-OMIMPS:256850		True	False	False
-OMIMPS:257300		True	False	False
-OMIMPS:257920		True	False	False
-OMIMPS:258150		True	False	False
-OMIMPS:258315		True	False	False
-OMIMPS:259100		True	False	False
-OMIMPS:259700		True	False	False
-OMIMPS:259900		True	False	False
-OMIMPS:260370		True	False	False
-OMIMPS:260400		True	False	False
-OMIMPS:261100		True	False	False
-OMIMPS:262400		True	False	False
-OMIMPS:265120		True	False	False
-OMIMPS:265450		True	False	False
-OMIMPS:266600		True	False	False
-OMIMPS:266900		True	False	False
-OMIMPS:267700		True	False	False
-OMIMPS:267750		True	False	False
-OMIMPS:268000		True	False	False
-OMIMPS:268310		True	False	False
-OMIMPS:268400		True	False	False
-OMIMPS:269500		True	False	False
-OMIMPS:270300		True	False	False
-OMIMPS:271640		True	False	False
-OMIMPS:271930		True	False	False
-OMIMPS:272430		True	False	False
-OMIMPS:273750		True	False	False
-OMIMPS:273800		True	False	False
-OMIMPS:275200		True	False	False
-OMIMPS:275210		True	False	False
-OMIMPS:276300		True	False	False
-OMIMPS:276700		True	False	False
-OMIMPS:276900		True	False	False
-OMIMPS:277180		True	False	False
-OMIMPS:277300		True	False	False
-OMIMPS:277400		True	False	False
-OMIMPS:277450		True	False	False
-OMIMPS:277600		True	False	False
-OMIMPS:278300		True	False	False
-OMIMPS:300009		True	False	False
-OMIMPS:300049		True	False	False
-OMIMPS:300291		True	False	False
-OMIMPS:300345		True	False	False
-OMIMPS:300352		True	False	False
-OMIMPS:300491		True	False	False
-OMIMPS:300633		True	False	False
-OMIMPS:300751		True	False	False
-OMIMPS:300755		True	False	False
-OMIMPS:300818		True	False	False
-OMIMPS:301050		True	False	False
-OMIMPS:303350		True	False	False
-OMIMPS:304500		True	False	False
-OMIMPS:305100		True	False	False
-OMIMPS:305400		True	False	False
-OMIMPS:305620		True	False	False
-OMIMPS:306400		True	False	False
-OMIMPS:306955		True	False	False
-OMIMPS:308205		True	False	False
-OMIMPS:308230		True	False	False
-OMIMPS:308240		True	False	False
-OMIMPS:308350		True	False	False
-OMIMPS:309510		True	False	False
-OMIMPS:309530		True	False	False
-OMIMPS:309800		True	False	False
-OMIMPS:309801		True	False	False
-OMIMPS:310300		True	False	False
-OMIMPS:310500		True	False	False
-OMIMPS:310700		True	False	False
-OMIMPS:311200		True	False	False
-OMIMPS:311360		True	False	False
-OMIMPS:312080		True	False	False
-OMIMPS:312170		True	False	False
-OMIMPS:313900		True	False	False
-OMIMPS:314580		True	False	False
-OMIMPS:400043		True	False	False
-OMIMPS:400044		True	False	False
-OMIMPS:600118		True	False	False
-OMIMPS:600131		True	False	False
-OMIMPS:600165		True	False	False
-OMIMPS:600462		True	False	False
-OMIMPS:600512		True	False	False
-OMIMPS:600513		True	False	False
-OMIMPS:600630		True	False	False
-OMIMPS:600669		True	False	False
-OMIMPS:600721		True	False	False
-OMIMPS:600803		True	False	False
-OMIMPS:601068		True	False	False
-OMIMPS:601144		True	False	False
-OMIMPS:601198		True	False	False
-OMIMPS:601228		True	False	False
-OMIMPS:601390		True	False	False
-OMIMPS:601419		True	False	False
-OMIMPS:601457		True	False	False
-OMIMPS:601462		True	False	False
-OMIMPS:601471		True	False	False
-OMIMPS:601495		True	False	False
-OMIMPS:601559		True	False	False
-OMIMPS:601675		True	False	False
-OMIMPS:601678		True	False	False
-OMIMPS:601764		True	False	False
-OMIMPS:602014		True	False	False
-OMIMPS:602483		True	False	False
-OMIMPS:602875		True	False	False
-OMIMPS:603041		True	False	False
-OMIMPS:603075		True	False	False
-OMIMPS:603165		True	False	False
-OMIMPS:603278		True	False	False
-OMIMPS:603387		True	False	False
-OMIMPS:603511		True	False	False
-OMIMPS:603933		True	False	False
-OMIMPS:604004		True	False	False
-OMIMPS:604169		True	False	False
-OMIMPS:604233		True	False	False
-OMIMPS:604273		True	False	False
-OMIMPS:604348		True	False	False
-OMIMPS:604364		True	False	False
-OMIMPS:604370		True	False	False
-OMIMPS:604391		True	False	False
-OMIMPS:604772		True	False	False
-OMIMPS:604931		True	False	False
-OMIMPS:605253		True	False	False
-OMIMPS:605389		True	False	False
-OMIMPS:605432		True	False	False
-OMIMPS:605552		True	False	False
-OMIMPS:605711		True	False	False
-OMIMPS:606176		True	False	False
-OMIMPS:606215		True	False	False
-OMIMPS:606703		True	False	False
-OMIMPS:606711		True	False	False
-OMIMPS:606777		True	False	False
-OMIMPS:607014		True	False	False
-OMIMPS:607086		True	False	False
-OMIMPS:607095		True	False	False
-OMIMPS:607250		True	False	False
-OMIMPS:607313		True	False	False
-OMIMPS:607326		True	False	False
-OMIMPS:607411		True	False	False
-OMIMPS:607426		True	False	False
-OMIMPS:607432		True	False	False
-OMIMPS:607594		True	False	False
-OMIMPS:607596		True	False	False
-OMIMPS:607602		True	False	False
-OMIMPS:607631		True	False	False
-OMIMPS:607634		True	False	False
-OMIMPS:607721		True	False	False
-OMIMPS:607748		True	False	False
-OMIMPS:607765		True	False	False
-OMIMPS:608207		True	False	False
-OMIMPS:608354		True	False	False
-OMIMPS:608567		True	False	False
-OMIMPS:608583		True	False	False
-OMIMPS:608594		True	False	False
-OMIMPS:608638		True	False	False
-OMIMPS:608805		True	False	False
-OMIMPS:609060		True	False	False
-OMIMPS:609129		True	False	False
-OMIMPS:609161		True	False	False
-OMIMPS:609192		True	False	False
-OMIMPS:609308		True	False	False
-OMIMPS:609322		True	False	False
-OMIMPS:609620		True	False	False
-OMIMPS:609698		True	False	False
-OMIMPS:610253		True	False	False
-OMIMPS:610448		True	False	False
-OMIMPS:610460		True	False	False
-OMIMPS:610489		True	False	False
-OMIMPS:610542		True	False	False
-OMIMPS:610551		True	False	False
-OMIMPS:610805		True	False	False
-OMIMPS:612199		True	False	False
-OMIMPS:612286		True	False	False
-OMIMPS:612900		True	False	False
-OMIMPS:612975		True	False	False
-OMIMPS:613038		True	False	False
-OMIMPS:613112		True	False	False
-OMIMPS:613135		True	False	False
-OMIMPS:613155		True	False	False
-OMIMPS:613280		True	False	False
-OMIMPS:613339		True	False	False
-OMIMPS:613573		True	False	False
-OMIMPS:613658		True	False	False
-OMIMPS:614039		True	False	False
-OMIMPS:614080		True	False	False
-OMIMPS:614231		True	False	False
-OMIMPS:614328		True	False	False
-OMIMPS:614372		True	False	False
-OMIMPS:614388		True	False	False
-OMIMPS:614429		True	False	False
-OMIMPS:614592		True	False	False
-OMIMPS:614594		True	False	False
-OMIMPS:614675		True	False	False
-OMIMPS:614742		True	False	False
-OMIMPS:614937		True	False	False
-OMIMPS:615040		True	False	False
-OMIMPS:615273		True	False	False
-OMIMPS:615419		True	False	False
-OMIMPS:615438		True	False	False
-OMIMPS:615774		True	False	False
-OMIMPS:615895		True	False	False
-OMIMPS:615952		True	False	False
-OMIMPS:616263		True	False	False
-OMIMPS:616418		True	False	False
-OMIMPS:616744		True	False	False
-OMIMPS:616866		True	False	False
-OMIMPS:616901		True	False	False
-OMIMPS:617068		True	False	False
-OMIMPS:617186		True	False	False
-OMIMPS:617236		True	False	False
-OMIMPS:617468		True	False	False
-OMIMPS:617660		True	False	False
-OMIMPS:617877		True	False	False
-OMIMPS:618005		True	False	False
-OMIMPS:618332		True	False	False
-OMIMPS:619115		True	False	False
-OMIMPS:619142		True	False	False
-OMIMPS:619611		True	False	False
-OMIMPS:619720		True	False	False
-OMIMPS:619758		True	False	False
-OMIMPS:619980		True	False	False
-OMIMPS:620184		True	False	False
+OMIMPS:100070	Aortic aneurysm, familial abdominal	True	False	False
+OMIMPS:100300	Adams-Oliver syndrome	True	False	False
+OMIMPS:101800	Acrodysostosis	True	False	False
+OMIMPS:102200	Pituitary adenoma	True	False	False
+OMIMPS:102300	Restless legs syndrome	True	False	False
+OMIMPS:103900	Hyperaldosteronism	True	False	False
+OMIMPS:104290	Alternating hemiplegia of childhood	True	False	False
+OMIMPS:104500	Amelogenesis imperfecta	True	False	False
+OMIMPS:105250	Amyloidosis, primary localized cutaneous	True	False	False
+OMIMPS:105400	Amyotrophic lateral sclerosis	True	False	False
+OMIMPS:105550	Frontotemporal dementia and/or amyotrophic lateral sclerosis	True	False	False
+OMIMPS:105650	Diamond-Blackfan anemia	True	False	False
+OMIMPS:105800	Aneurysm, intracranial berry	True	False	False
+OMIMPS:106100	Angioedema, Hereditary	True	False	False
+OMIMPS:106210	Aniridia	True	False	False
+OMIMPS:106300	Spondyloarthropathy, susceptibility to	True	False	False
+OMIMPS:106600	Tooth agenesis, selective	True	False	False
+OMIMPS:107250	Anterior segment dysgenesis	True	False	False
+OMIMPS:107480	Townes-Brocks syndrome	True	False	False
+OMIMPS:107970	Arrhythmogenic right ventricular dysplasia	True	False	False
+OMIMPS:108120	Arthrogryposis, distal	True	False	False
+OMIMPS:108300	Stickler syndrome	True	False	False
+OMIMPS:108600	Spastic ataxia	True	False	False
+OMIMPS:108720	Atelosteogenesis	True	False	False
+OMIMPS:108800	Atrial septal defect	True	False	False
+OMIMPS:109720	Biliary cirrhosis, primary	True	False	False
+OMIMPS:109730	Aortic valve disease	True	False	False
+OMIMPS:112240	Cole-Carpenter syndrome	True	False	False
+OMIMPS:113700	Breasts and/or nipples, aplasia or hypoplasia of	True	False	False
+OMIMPS:113900	Progressive familial heart block	True	False	False
+OMIMPS:114580	Familial candidiasis	True	False	False
+OMIMPS:115150	Cardiofaciocutaneous syndrome	True	False	False
+OMIMPS:115200	Dilated cardiomyopathy	True	False	False
+OMIMPS:115210	Familial restrictive cardiomyopathy	True	False	False
+OMIMPS:115430	Carpal tunnel syndrome	True	False	False
+OMIMPS:116200	Cataract	True	False	False
+OMIMPS:116860	Cerebral cavernous malformations	True	False	False
+OMIMPS:117000	Myopathy, congenital (see also nemaline myopathy ({PS161800}), myofibrillar myopathy ({PS601419}), and centronuclear myopathy ({PS160150})	True	False	False
+OMIMPS:118100	Klippel-Feil syndrome	True	False	False
+OMIMPS:118220	Charcot-Marie-Tooth disease	True	False	False
+OMIMPS:118450	Alagille syndrome	True	False	False
+OMIMPS:119530	Orofacial cleft	True	False	False
+OMIMPS:119580	Blepharocheilodontic syndrome	True	False	False
+OMIMPS:120100	Familial cold autoinflammatory syndrome	True	False	False
+OMIMPS:120435	Colorectal cancer, hereditary nonpolyposis	True	False	False
+OMIMPS:120970	Cone-rod dystrophy/Cone dystrophy	True	False	False
+OMIMPS:121200	Seizures, benign familial neonatal	True	False	False
+OMIMPS:121210	Seizures, familial febrile	True	False	False
+OMIMPS:121400	Cornea plana	True	False	False
+OMIMPS:122000	Corneal dystrophy, posterior polymorphous	True	False	False
+OMIMPS:122100	Corneal dystrophy, Meesmann	True	False	False
+OMIMPS:122470	Cornelia de Lange syndrome	True	False	False
+OMIMPS:123000	Craniometaphyseal dysplasia	True	False	False
+OMIMPS:123100	Craniosynostosis	True	False	False
+OMIMPS:123700	Cutis laxa	True	False	False
+OMIMPS:124000	Mitochondrial complex III deficiency, nuclear type	True	False	False
+OMIMPS:124900	Deafness, autosomal dominant	True	False	False
+OMIMPS:125310	Cerebral arteriopathy with subcortical infarcts and leukoencephalopathy	True	False	False
+OMIMPS:126200	Multiple sclerosis, susceptibility to	True	False	False
+OMIMPS:126800	Duane retraction syndrome	True	False	False
+OMIMPS:127000	Kenny-Caffey syndrome	True	False	False
+OMIMPS:127500	Dyschromatosis universalis hereditaria	True	False	False
+OMIMPS:127550	Dyskeratosis congenita	True	False	False
+OMIMPS:128100	Dystonia	True	False	False
+OMIMPS:128200	Episodic kinesigenic dyskinesia	True	False	False
+OMIMPS:130000	Ehlers-Danlos syndrome	True	False	False
+OMIMPS:131100	Multiple endocrine neoplasia	True	False	False
+OMIMPS:131760	Epidermolysis Bullosa Simplex	True	False	False
+OMIMPS:132100	Photoparoxysmal response	True	False	False
+OMIMPS:132400	Epiphyseal dysplasia, multiple	True	False	False
+OMIMPS:133100	Erythrocytosis, familial	True	False	False
+OMIMPS:133200	Erythrokeratodermia variabilis et progressiva	True	False	False
+OMIMPS:133780	Exudative vitreoretinopathy	True	False	False
+OMIMPS:134600	Fanconi renotubular syndrome	True	False	False
+OMIMPS:135300	Gingival fibromatosis	True	False	False
+OMIMPS:135500	Zimmermann-Laband syndrome	True	False	False
+OMIMPS:135700	Fibrosis of extraocular muscles, congenital	True	False	False
+OMIMPS:135900	Coffin-Siris syndrome	True	False	False
+OMIMPS:136500	Focal facial dermal dysplasia	True	False	False
+OMIMPS:136520	Foveal hypoplasia	True	False	False
+OMIMPS:136550	Macular dystrophy, retinal	True	False	False
+OMIMPS:136760	Frontonasal dysplasia	True	False	False
+OMIMPS:136800	Corneal dystrophy, Fuchs endothelial	True	False	False
+OMIMPS:137800	Glioma	True	False	False
+OMIMPS:137950	Glomerulopathy with fibronectin deposits	True	False	False
+OMIMPS:138800	Goiter, multinodular	True	False	False
+OMIMPS:141500	Migraine, familial hemiplegic	True	False	False
+OMIMPS:142340	Diaphragmatic hernia	True	False	False
+OMIMPS:142623	Hirschsprung disease	True	False	False
+OMIMPS:142690	Acne inversa	True	False	False
+OMIMPS:142700	Developmental dysplasia of the hip	True	False	False
+OMIMPS:143880	Hypercalcemia, infantile	True	False	False
+OMIMPS:143890	Hypercholesterolemia, familial	True	False	False
+OMIMPS:145000	Hyperparathyroidism	True	False	False
+OMIMPS:145260	Pseudohypoaldosteronism, type II	True	False	False
+OMIMPS:145420	Teebi hypertelorism syndrome	True	False	False
+OMIMPS:145600	Malignant hyperthermia	True	False	False
+OMIMPS:145980	Hypocalciuric hypercalcemia	True	False	False
+OMIMPS:146200	Hypoparathyroidism, familial	True	False	False
+OMIMPS:146590	Ichthyosis hystrix	True	False	False
+OMIMPS:147060	Hyper-IgE recurrent infection syndrome	True	False	False
+OMIMPS:147920	Kabuki syndrome	True	False	False
+OMIMPS:147950	Hypogonadotropic hypogonadism with or without anosmia	True	False	False
+OMIMPS:148210	Keratitis-ichthyosis-deafness syndrome	True	False	False
+OMIMPS:148300	Keratoconus	True	False	False
+OMIMPS:149400	Hyperekplexia	True	False	False
+OMIMPS:149730	Lacrimoauriculodentodigital syndrome	True	False	False
+OMIMPS:151100	LEOPARD syndrome	True	False	False
+OMIMPS:151623	Li-Fraumeni syndrome	True	False	False
+OMIMPS:151660	Lipodystrophy, familial partial	True	False	False
+OMIMPS:153100	Lymphatic malformation	True	False	False
+OMIMPS:153600	Macroglobulinemia, Waldenstrom	True	False	False
+OMIMPS:153840	Macular dystrophy, vitelliform	True	False	False
+OMIMPS:154500	Treacher Collins syndrome	True	False	False
+OMIMPS:155600	Melanoma, cutaneous malignant	True	False	False
+OMIMPS:156200	Intellectual developmental disorder, autosomal dominant	True	False	False
+OMIMPS:156610	Skin creases, congenital symmetric circumferential	True	False	False
+OMIMPS:157300	Migraine with or without aura, susceptibility to	True	False	False
+OMIMPS:157600	Mirror movements	True	False	False
+OMIMPS:157640	Progressive external ophthalmoplegia with mtDNA deletions	True	False	False
+OMIMPS:157700	Mitral valve prolapse, myxomatous	True	False	False
+OMIMPS:158350	Cowden disease	True	False	False
+OMIMPS:158600	Spinal muscular atrophy, lower extremity-predominant	True	False	False
+OMIMPS:158810	Bethlem myopathy	True	False	False
+OMIMPS:158900	Facioscapulohumeral muscular dystrophy	True	False	False
+OMIMPS:160120	Episodic ataxia	True	False	False
+OMIMPS:160150	Myopathy, centronuclear	True	False	False
+OMIMPS:160500	Myopathy, distal	True	False	False
+OMIMPS:160565	Myopathy, tubular aggregate	True	False	False
+OMIMPS:160700	Myopia	True	False	False
+OMIMPS:160900	Myotonic dystrophy	True	False	False
+OMIMPS:161050	Nail disorder, nonsyndromic congenital	True	False	False
+OMIMPS:161400	Narcolepsy	True	False	False
+OMIMPS:161800	Nemaline myopathy	True	False	False
+OMIMPS:161950	IgA nephropathy	True	False	False
+OMIMPS:162000	Tubulointerstitial kidney disease	True	False	False
+OMIMPS:162091	Schwannomatosis	True	False	False
+OMIMPS:162400	Hereditary sensory and autonomic neuropathy	True	False	False
+OMIMPS:163950	Noonan syndrome	True	False	False
+OMIMPS:164280	Feingold syndrome	True	False	False
+OMIMPS:164310	Oculopharyngodistal myopathy	True	False	False
+OMIMPS:164400	Spinocerebellar ataxia	True	False	False
+OMIMPS:165500	Optic atrophy	True	False	False
+OMIMPS:166200	Osteogenesis imperfecta	True	False	False
+OMIMPS:166780	Otofaciocervical syndrome	True	False	False
+OMIMPS:166800	Otosclerosis	True	False	False
+OMIMPS:167200	Pachyonychia congenita	True	False	False
+OMIMPS:167250	Paget disease of bone	True	False	False
+OMIMPS:167320	Inclusion body myopathy/Paget disease/frontotemporal dementia	True	False	False
+OMIMPS:167870	Panic disorder	True	False	False
+OMIMPS:168000	Paragangliomas	True	False	False
+OMIMPS:168500	Parietal foramina	True	False	False
+OMIMPS:168600	Parkinson disease	True	False	False
+OMIMPS:169150	Macular dystrophy, patterned	True	False	False
+OMIMPS:173900	Polycystic kidney disease	True	False	False
+OMIMPS:174050	Polycystic liver disease	True	False	False
+OMIMPS:174200	Polydactyly, postaxial	True	False	False
+OMIMPS:174400	Polydactyly, preaxial	True	False	False
+OMIMPS:175100	Familial adenomatous polyposis	True	False	False
+OMIMPS:175780	Brain small vessel disease	True	False	False
+OMIMPS:175800	Porokeratosis	True	False	False
+OMIMPS:176400	Precocious puberty, central	True	False	False
+OMIMPS:176670	Progeria	True	False	False
+OMIMPS:177000	Protoporphyria, erythropoietic	True	False	False
+OMIMPS:177200	Liddle syndrome	True	False	False
+OMIMPS:177900	Psoriasis	True	False	False
+OMIMPS:178110	Contractures, pterygia, and variable skeletal fusions syndrome	True	False	False
+OMIMPS:178600	Pulmonary hypertension, primary	True	False	False
+OMIMPS:179010	Pyloric stenosis, infantile hypertrophic	True	False	False
+OMIMPS:179800	Distal renal tubular acidosis	True	False	False
+OMIMPS:179850	Reticulate pigment disorders	True	False	False
+OMIMPS:180500	Axenfeld-Rieger syndrome	True	False	False
+OMIMPS:180849	Rubinstein-Taybi syndrome	True	False	False
+OMIMPS:180860	Silver-Russell syndrome	True	False	False
+OMIMPS:182250	Singleton-Merten syndrome	True	False	False
+OMIMPS:183600	Split-hand/foot malformation	True	False	False
+OMIMPS:184255	Spondylometaphyseal dysplasia	True	False	False
+OMIMPS:184260	Odontochondrodysplasia	True	False	False
+OMIMPS:184450	Stuttering, familial persistent	True	False	False
+OMIMPS:184840	Otospondylomegaepiphyseal dysplasia	True	False	False
+OMIMPS:185800	Proximal symphalangism	True	False	False
+OMIMPS:186500	Multiple synostoses syndrome	True	False	False
+OMIMPS:187300	Telangiectasia, hereditary hemorrhagic	True	False	False
+OMIMPS:187950	Thrombocythemia	True	False	False
+OMIMPS:188050	Thrombophilia	True	False	False
+OMIMPS:188550	Thyroid cancer, nonmedullary	True	False	False
+OMIMPS:188580	Thyrotoxic periodic paralysis	True	False	False
+OMIMPS:189800	Preeclampsia/eclampsia	True	False	False
+OMIMPS:190300	Tremor, hereditary essential	True	False	False
+OMIMPS:190350	Trichorhinophalangeal syndrome	True	False	False
+OMIMPS:190440	Trigonocephaly, isolated	True	False	False
+OMIMPS:191100	Tuberous sclerosis	True	False	False
+OMIMPS:191830	Renal hypodysplasia/aplasia	True	False	False
+OMIMPS:192500	Long QT syndrome	True	False	False
+OMIMPS:192600	Cardiomyopathy, familial hypertrophic	True	False	False
+OMIMPS:193000	Vesicoureteral reflux	True	False	False
+OMIMPS:193100	Hypophosphatemic rickets	True	False	False
+OMIMPS:193500	Waardenburg syndrome	True	False	False
+OMIMPS:193670	WHIM syndrome	True	False	False
+OMIMPS:193900	White sponge nevus	True	False	False
+OMIMPS:194070	Wilms tumor	True	False	False
+OMIMPS:200600	Achondrogenesis	True	False	False
+OMIMPS:201000	Carpenter syndrome	True	False	False
+OMIMPS:202200	Glucocorticoid deficiency	True	False	False
+OMIMPS:202700	Neutropenia, severe congenital	True	False	False
+OMIMPS:203100	Oculocutaneous albinism	True	False	False
+OMIMPS:203300	Hermansky-Pudlak syndrome	True	False	False
+OMIMPS:203650	Alopecia-intellectual disability syndrome	True	False	False
+OMIMPS:203655	Alopecia, isolated	True	False	False
+OMIMPS:204000	Leber congenital amaurosis	True	False	False
+OMIMPS:206100	Anemia, hypochromic microcytic, with iron overload	True	False	False
+OMIMPS:206500	Anencephaly	True	False	False
+OMIMPS:208000	Generalized arterial calcification of infancy	True	False	False
+OMIMPS:208085	Arthrogryposis, renal dysfunction, and cholestasis	True	False	False
+OMIMPS:208150	Fetal akinesia deformation sequence	True	False	False
+OMIMPS:208500	Short-rib thoracic dysplasia	True	False	False
+OMIMPS:208540	Renal-hepatic-pancreatic dysplasia	True	False	False
+OMIMPS:209850	Autism, susceptiblity to	True	False	False
+OMIMPS:209880	Central hypoventilation syndrome, congenital	True	False	False
+OMIMPS:209900	Bardet-Biedl syndrome	True	False	False
+OMIMPS:210200	Methylcrotonylglycinuria	True	False	False
+OMIMPS:210250	Sitosterolemia	True	False	False
+OMIMPS:210600	Seckel syndrome	True	False	False
+OMIMPS:210900	Microcephaly, growth restriction and increased sister chromatid exchange	True	False	False
+OMIMPS:211400	Bronchiectasis	True	False	False
+OMIMPS:211530	Brown-Vialetto-Van Laere syndrome	True	False	False
+OMIMPS:211600	Cholestasis, progressive familial intrahepatic	True	False	False
+OMIMPS:212065	Congenital disorders of glycosylation, type I	True	False	False
+OMIMPS:212066	Congenital disorders of glycosylation, type II	True	False	False
+OMIMPS:212093	Cardiac Valvular Defect	True	False	False
+OMIMPS:212720	Martsolf syndrome	True	False	False
+OMIMPS:212750	Celiac disease	True	False	False
+OMIMPS:213200	Spinocerebellar ataxia, autosomal recessive	True	False	False
+OMIMPS:213300	Joubert syndrome	True	False	False
+OMIMPS:213600	Basal ganglia calcification, idiopathic	True	False	False
+OMIMPS:213980	Craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome	True	False	False
+OMIMPS:214100	Peroxisome biogenesis disorder	True	False	False
+OMIMPS:214150	Cerebrooculofacioskeletal syndrome	True	False	False
+OMIMPS:214450	Griscelli syndrome	True	False	False
+OMIMPS:214700	Diarrhea, congenital	True	False	False
+OMIMPS:215100	Rhizomelic chondrodysplasia punctata	True	False	False
+OMIMPS:215500	Choroidal dystrophy, central areolar	True	False	False
+OMIMPS:218330	Cranioectodermal dysplasia	True	False	False
+OMIMPS:219000	Fraser syndrome	True	False	False
+OMIMPS:220110	Mitochondrial complex IV deficiency, nuclear-type	True	False	False
+OMIMPS:220210	Ritscher-Schinzel syndrome	True	False	False
+OMIMPS:220290	Deafness, autosomal recessive	True	False	False
+OMIMPS:220400	Jervell and Lange-Nielsen syndrome	True	False	False
+OMIMPS:221770	Polycystic lipomembranous osteodysplasia with sclerosing leukoencephaly	True	False	False
+OMIMPS:221820	Leukoencephalopathy, hereditary diffuse, with spheroids	True	False	False
+OMIMPS:221900	Persistent hyperplastic primary vitreous	True	False	False
+OMIMPS:222470	Trichohepatoenteric syndrome	True	False	False
+OMIMPS:223360	Orthostatic hypotension	True	False	False
+OMIMPS:224050	Cerebellar ataxia, mental retardation, and dysequilibrium	True	False	False
+OMIMPS:224120	Anemia, congenital dyserythropoietic	True	False	False
+OMIMPS:224690	Meier-Gorlin syndrome	True	False	False
+OMIMPS:225750	Aicardi-Goutieres syndrome	True	False	False
+OMIMPS:226400	Epidermodysplasia verruciformis, susceptibility to	True	False	False
+OMIMPS:226650	Epidermolysis bullosa, junctional	True	False	False
+OMIMPS:227220	Skin/hair/eye pigmentation, variation in	True	False	False
+OMIMPS:227650	Fanconi anemia	True	False	False
+OMIMPS:228520	Fibrochondrogenesis	True	False	False
+OMIMPS:228550	Infantile myofibromatosis	True	False	False
+OMIMPS:229200	Brittle cornea syndrome	True	False	False
+OMIMPS:230400	Galactosemia	True	False	False
+OMIMPS:231050	Geleophysic dysplasia	True	False	False
+OMIMPS:231090	Hydatidiform mole, recurrent	True	False	False
+OMIMPS:231200	Bleeding disorder, platelet-type	True	False	False
+OMIMPS:232200	Glycogen storage disease	True	False	False
+OMIMPS:233300	Ovarian dysgenesis	True	False	False
+OMIMPS:233400	Perrault syndrome	True	False	False
+OMIMPS:234200	Neurodegeneration with brain iron accumulation	True	False	False
+OMIMPS:235200	Hemochromatosis	True	False	False
+OMIMPS:235400	Hemolytic uremic syndrome	True	False	False
+OMIMPS:235510	Hennekam lymphangiectasia-lymphedema syndrome	True	False	False
+OMIMPS:236100	Holoprosencephaly	True	False	False
+OMIMPS:236600	Hydrocephalus, congenital	True	False	False
+OMIMPS:236670	Muscular dystrophy-dystroglycanopathy, type A	True	False	False
+OMIMPS:236680	Hydrolethalus syndrome	True	False	False
+OMIMPS:236730	Urofacial syndrome	True	False	False
+OMIMPS:237450	Hyperbilirubinemia	True	False	False
+OMIMPS:239300	Hyperphosphatasia with mental retardation syndrome	True	False	False
+OMIMPS:241550	Hypoplastic left heart syndrome	True	False	False
+OMIMPS:242300	Ichthyosis, congenital, autosomal recessive	True	False	False
+OMIMPS:242860	Immunodeficiency-centromeric instability-facial anomalies	True	False	False
+OMIMPS:243150	Gastrointestinal defect and immunodeficiency syndrome	True	False	False
+OMIMPS:243180	Visceral neuropathy, familial	True	False	False
+OMIMPS:243300	Cholestasis, benign recurrent intrahepatic	True	False	False
+OMIMPS:243310	Baraitser-Winter syndrome	True	False	False
+OMIMPS:244400	Primary ciliary dyskinesia	True	False	False
+OMIMPS:245480	Specific granule deficiency	True	False	False
+OMIMPS:245590	Growth hormone insensitivity syndrome with immune dysregulation	True	False	False
+OMIMPS:248370	Mandibuloacral dysplasia with lipodystrophy	True	False	False
+OMIMPS:248600	Maple syrup urine disease	True	False	False
+OMIMPS:249000	Meckel syndrome	True	False	False
+OMIMPS:249210	Megacystis-microcolon-intestinal hypoperistalsis syndrome	True	False	False
+OMIMPS:249270	Thiamine-responsive dysfunction syndrome	True	False	False
+OMIMPS:249500	Intellectual developmental disorder, autosomal recessive	True	False	False
+OMIMPS:250950	3-Methylglutaconic aciduria	True	False	False
+OMIMPS:251200	Microcephaly, primary	True	False	False
+OMIMPS:251270	Microcephaly and chorioretinopathy	True	False	False
+OMIMPS:251280	Diencephalic-mesencephalic junction dysplasia syndrome	True	False	False
+OMIMPS:251290	Pseudo-TORCH syndrome	True	False	False
+OMIMPS:251300	Galloway-Mowat syndrome	True	False	False
+OMIMPS:251450	Desbuquois dysplasia	True	False	False
+OMIMPS:251600	Microphthalmia, isolated	True	False	False
+OMIMPS:252010	Mitochondrial complex I deficiency, nuclear type	True	False	False
+OMIMPS:252011	Mitochondrial complex II deficiency, nuclear type	True	False	False
+OMIMPS:252150	Molybdenum cofactor deficiency	True	False	False
+OMIMPS:252270	Monosomy 7 myelodysplasia and leukemia syndrome	True	False	False
+OMIMPS:252350	Moyamoya disease	True	False	False
+OMIMPS:253310	Lethal congenital contracture syndrome	True	False	False
+OMIMPS:253600	Muscular dystrophy, limb-girdle, autosomal recessive	True	False	False
+OMIMPS:254090	Ullrich congenital muscular dystrophy	True	False	False
+OMIMPS:254130	Miyoshi muscular dystrophy	True	False	False
+OMIMPS:254770	Epilepsy, myoclonic juvenile	True	False	False
+OMIMPS:254800	Epilepsy, progressive myoclonic	True	False	False
+OMIMPS:254940	Carey-Fineman-Ziter syndrome	True	False	False
+OMIMPS:256040	Proteosome-associated autoinflammatory syndrome	True	False	False
+OMIMPS:256100	Nephronophthisis	True	False	False
+OMIMPS:256300	Nephrotic syndrome	True	False	False
+OMIMPS:256450	Hyperinsulinemia hypoglycemia	True	False	False
+OMIMPS:256520	Neu-Laxova syndrome	True	False	False
+OMIMPS:256550	Mucolipidosis	True	False	False
+OMIMPS:256730	Ceroid lipofuscinoses	True	False	False
+OMIMPS:256850	Giant axonal neuropathy	True	False	False
+OMIMPS:257300	Mosaic variegated aneuploidy syndrome	True	False	False
+OMIMPS:257920	3MC syndrome	True	False	False
+OMIMPS:258150	Spermatogenic failure	True	False	False
+OMIMPS:258315	Omodysplasia	True	False	False
+OMIMPS:259100	Hypertropic osteoarthropathy, primary	True	False	False
+OMIMPS:259700	Osteopetrosis, autosomal recessive	True	False	False
+OMIMPS:259900	Hyperoxaluria, primary	True	False	False
+OMIMPS:260370	Pancreatic agenesis	True	False	False
+OMIMPS:260400	Schwachman-Diamond syndrome	True	False	False
+OMIMPS:261100	Imerslund-Grasbeck syndrome	True	False	False
+OMIMPS:262400	Isolated growth hormone deficiency	True	False	False
+OMIMPS:265120	Surfactant metabolism dysfunction, pulmonary	True	False	False
+OMIMPS:265450	Pulmonary venoocclusive disease	True	False	False
+OMIMPS:266600	Inflammatory bowel disease	True	False	False
+OMIMPS:266900	Senior-Loken syndrome	True	False	False
+OMIMPS:267700	Hemophagocytic lymphohistiocytosis, familial	True	False	False
+OMIMPS:267750	Knobloch syndrome	True	False	False
+OMIMPS:268000	Retinitis pigmentosa	True	False	False
+OMIMPS:268310	Robinow syndrome	True	False	False
+OMIMPS:268400	Rothmund-Thomson syndrome	True	False	False
+OMIMPS:269500	Sclerosteosis	True	False	False
+OMIMPS:270300	Peeling skin syndrome	True	False	False
+OMIMPS:271640	Spondyloepimetaphyseal dysplasia with joint laxity	True	False	False
+OMIMPS:271930	Striatonigral degeneration	True	False	False
+OMIMPS:272430	Cold-induced sweating syndrome	True	False	False
+OMIMPS:273750	Three M syndrome	True	False	False
+OMIMPS:273800	Glanzmann thrombasthenia	True	False	False
+OMIMPS:275200	Hypothyroidism, congenital, nongoitrous	True	False	False
+OMIMPS:275210	Restrictive dermopathy	True	False	False
+OMIMPS:276300	Mismatch repair cancer syndrome	True	False	False
+OMIMPS:276700	Tyrosinemia	True	False	False
+OMIMPS:276900	Usher syndrome	True	False	False
+OMIMPS:277180	Vas deferens, congenital bilateral aplasia of	True	False	False
+OMIMPS:277300	Spondylocostal dysostosis	True	False	False
+OMIMPS:277400	Methylmalonic aciduria and homocystinuria	True	False	False
+OMIMPS:277450	Vitamin K-dependent clotting factors, combined deficiency of	True	False	False
+OMIMPS:277600	Weill-Marchesani syndrome	True	False	False
+OMIMPS:278300	Xanthinuria	True	False	False
+OMIMPS:300009	Dent disease	True	False	False
+OMIMPS:300049	Periventricular nodular heterotopia	True	False	False
+OMIMPS:300291	Ectodermal dysplasia and immune deficiency	True	False	False
+OMIMPS:300345	Microphthalmia, isolated, with coloboma	True	False	False
+OMIMPS:300352	Cerebral creatine deficiency syndrome	True	False	False
+OMIMPS:300491	Epilepsy, X-linked, with or without impaired intellectual development and dysmorphic features	True	False	False
+OMIMPS:300633	Hypospadias	True	False	False
+OMIMPS:300751	Anemia, Sideroblastic	True	False	False
+OMIMPS:300755	Immunodeficiency (select examples)	True	False	False
+OMIMPS:300818	Paroxysmal nocturnal hemoglobinuria	True	False	False
+OMIMPS:301050	Alport syndrome	True	False	False
+OMIMPS:303350	Spastic paraplegia	True	False	False
+OMIMPS:304500	Deafness, X-linked	True	False	False
+OMIMPS:305100	Ectodermal dysplasia (select examples)	True	False	False
+OMIMPS:305400	FG syndrome	True	False	False
+OMIMPS:305620	Frontometaphyseal dysplasia	True	False	False
+OMIMPS:306400	Granulomatous disease, chronic	True	False	False
+OMIMPS:306955	Heterotaxy, visceral	True	False	False
+OMIMPS:308205	IFAP syndrome	True	False	False
+OMIMPS:308230	Immunodeficiency with hyper-IgM	True	False	False
+OMIMPS:308240	Lymphoproliferative syndrome	True	False	False
+OMIMPS:308350	Developmental and epileptic encephalopathy	True	False	False
+OMIMPS:309510	Intellectual developmental disorder, X-linked syndromic	True	False	False
+OMIMPS:309530	Intellectual developmental disorder, nonsyndromic, X-linked	True	False	False
+OMIMPS:309800	Microphthalmia, syndromic	True	False	False
+OMIMPS:309801	Linear skin defects with multiple congenital anomalies	True	False	False
+OMIMPS:310300	Emery-Dreifuss muscular dystrophy	True	False	False
+OMIMPS:310500	Night blindness, congenital stationary	True	False	False
+OMIMPS:310700	Nystagmus, congenital	True	False	False
+OMIMPS:311200	Orofaciodigital syndrome	True	False	False
+OMIMPS:311360	Premature ovarian failure	True	False	False
+OMIMPS:312080	Leukodystrophy, hypomyelinating	True	False	False
+OMIMPS:312170	Pyruvate dehydrogenase complex deficiency	True	False	False
+OMIMPS:313900	Thrombocytopenia	True	False	False
+OMIMPS:314580	Wieacker-Wolff syndrome	True	False	False
+OMIMPS:400043	Deafness, Y-linked	True	False	False
+OMIMPS:400044	46,XY sex reversal	True	False	False
+OMIMPS:600118	Warburg micro syndrome	True	False	False
+OMIMPS:600131	Epilepsy, childhood absence	True	False	False
+OMIMPS:600165	Nanophthalmos	True	False	False
+OMIMPS:600462	Myopathy, lactic acidosis, and sideroblastic anemia	True	False	False
+OMIMPS:600512	Epilepsy, familial temporal lobe	True	False	False
+OMIMPS:600513	Epilepsy, nocturnal frontal lobe	True	False	False
+OMIMPS:600630	UV-sensitive syndrome	True	False	False
+OMIMPS:600669	Epilepsy, idiopathic generalized	True	False	False
+OMIMPS:600721	D-2-hydroxyglutaric aciduria	True	False	False
+OMIMPS:600803	Gallbladder disease	True	False	False
+OMIMPS:601068	Epilepsy, familial adult myoclonic	True	False	False
+OMIMPS:601144	Brugada syndrome	True	False	False
+OMIMPS:601198	Hypocalcemia	True	False	False
+OMIMPS:601228	Polyposis syndrome, hereditary mixed	True	False	False
+OMIMPS:601390	Van Maldergem syndrome	True	False	False
+OMIMPS:601419	Myopathy, myofibrillar	True	False	False
+OMIMPS:601457	Severe combined immunodeficiency (select examples)	True	False	False
+OMIMPS:601462	Myasthenic syndrome, congenital	True	False	False
+OMIMPS:601471	Facial paresis, hereditary congenital	True	False	False
+OMIMPS:601495	Agammaglobulinemia	True	False	False
+OMIMPS:601559	Stuve-Wiedemann syndrome	True	False	False
+OMIMPS:601675	Trichothiodystrophy	True	False	False
+OMIMPS:601678	Bartter syndrome	True	False	False
+OMIMPS:601764	Seizures, benign familial infantile	True	False	False
+OMIMPS:602014	Hypomagnesemia	True	False	False
+OMIMPS:602483	Auriculocondylar syndrome	True	False	False
+OMIMPS:602875	Acromesomelic dysplasia	True	False	False
+OMIMPS:603041	Mitochondrial DNA depletion syndrome	True	False	False
+OMIMPS:603075	Macular degeneration, age-related	True	False	False
+OMIMPS:603165	Dermatitis, atopic	True	False	False
+OMIMPS:603278	Focal segmental glomerulosclerosis	True	False	False
+OMIMPS:603387	Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome	True	False	False
+OMIMPS:603511	Muscular dystrophy, limb-girdle, autosomal dominant	True	False	False
+OMIMPS:603933	Microvascular complications of diabetes	True	False	False
+OMIMPS:604004	Leukoencephalopathy, megalencephalic	True	False	False
+OMIMPS:604169	Left ventricular noncompaction	True	False	False
+OMIMPS:604233	Epilepsy, generalized, with febrile seizures plus	True	False	False
+OMIMPS:604273	Mitochondrial complex V (ATP synthase) deficiency, nuclear type	True	False	False
+OMIMPS:604348	Advanced sleep phase syndrome	True	False	False
+OMIMPS:604364	Epilepsy, familial focal, with variable foci	True	False	False
+OMIMPS:604370	Breast-ovarian cancer, familial, susceptibility to	True	False	False
+OMIMPS:604391	Ataxia-telangiectasia-like disorder	True	False	False
+OMIMPS:604772	Ventricular tachycardia, catecholaminergic polymorphic	True	False	False
+OMIMPS:604931	Cortisone reductase deficiency	True	False	False
+OMIMPS:605253	Neuropathy, congenital hypomelinating	True	False	False
+OMIMPS:605389	Hypotrichosis	True	False	False
+OMIMPS:605432	Radioulnar synostosis with amegakaryocytic thrombocytopenia	True	False	False
+OMIMPS:605552	Abdominal obesity-metabolic syndrome	True	False	False
+OMIMPS:605711	Multiple mitochondrial dysfunctions syndrome	True	False	False
+OMIMPS:606176	Diabetes mellitus, permanent neonatal	True	False	False
+OMIMPS:606215	Atrioventricular septal defect	True	False	False
+OMIMPS:606703	Dyskinesia with orofacial involvement	True	False	False
+OMIMPS:606711	Specific language impairment	True	False	False
+OMIMPS:606777	Glut1 deficiency syndrome	True	False	False
+OMIMPS:607014	Mucopolysaccharidoses	True	False	False
+OMIMPS:607086	Aortic aneurysm, familial thoracic	True	False	False
+OMIMPS:607095	Anauxetic dysplasia	True	False	False
+OMIMPS:607250	Spinocerebellar ataxia, autosomal recessive, with axonal neuropathy	True	False	False
+OMIMPS:607313	Gaze palsy, familial horizontal, with progressive scoliosis	True	False	False
+OMIMPS:607326	Smith-McCort dysplasia	True	False	False
+OMIMPS:607411	Patent ductus arteriosus	True	False	False
+OMIMPS:607426	Coenzyme Q10 deficiency, primary	True	False	False
+OMIMPS:607432	Lissencephaly	True	False	False
+OMIMPS:607594	Immunodeficiency, common variable	True	False	False
+OMIMPS:607596	Pontocerebellar hypoplasia	True	False	False
+OMIMPS:607602	Ichthyosis, annular epidermolytic	True	False	False
+OMIMPS:607631	Epilepsy, juvenile absence	True	False	False
+OMIMPS:607634	Osteopetrosis, autosomal dominant	True	False	False
+OMIMPS:607721	Noonan syndrome-like disorder with loose anagen hair	True	False	False
+OMIMPS:607748	Hypercholanemia, familial	True	False	False
+OMIMPS:607765	Bile acid synthesis defect, congenital	True	False	False
+OMIMPS:608207	Kala-azar, susceptibility to	True	False	False
+OMIMPS:608354	Capillary malformation-arteriovenous malformation	True	False	False
+OMIMPS:608567	Sick sinus syndrome	True	False	False
+OMIMPS:608583	Atrial fibrillation, familial	True	False	False
+OMIMPS:608594	Lipodystrophy, congenital generalized	True	False	False
+OMIMPS:608638	Asperger syndrome, susceptibility to	True	False	False
+OMIMPS:608805	Avascular necrosis of femoral head, primary	True	False	False
+OMIMPS:609060	Combined oxidative phosphorylation deficiency	True	False	False
+OMIMPS:609129	Auditory neuropathy	True	False	False
+OMIMPS:609161	Striatal degeneration, autosomal dominant	True	False	False
+OMIMPS:609192	Loeys-Dietz syndrome	True	False	False
+OMIMPS:609308	Muscular dystrophy-dystroglycanopathy, type C	True	False	False
+OMIMPS:609322	Rhabdoid tumor predisposition syndrome	True	False	False
+OMIMPS:609620	Short QT syndrome	True	False	False
+OMIMPS:609698	Thyroid hormone metabolism, abnormal	True	False	False
+OMIMPS:610253	Kleefstra syndrome	True	False	False
+OMIMPS:610448	Chilblain lupus	True	False	False
+OMIMPS:610460	Thiopurines, poor metabolism of	True	False	False
+OMIMPS:610489	Pigmented nodular adrenocortical disease, primary	True	False	False
+OMIMPS:610542	Myasthenic syndrome, congenital, with tubular aggregates	True	False	False
+OMIMPS:610551	Encephalopathy/encephalitis, acute, infection-induced	True	False	False
+OMIMPS:610805	Congenital anomalies of kidney and urinary tract	True	False	False
+OMIMPS:612199	Cerebroretinal microangiopathy with calcfications and cysts	True	False	False
+OMIMPS:612286	Nephrolithiasis/osteoporosis, hypophosphatemic	True	False	False
+OMIMPS:612900	Spastic quadriplegic cerebral palsy	True	False	False
+OMIMPS:612975	Short sleep, familial natural	True	False	False
+OMIMPS:613038	Pituitary hormone deficiency, combined	True	False	False
+OMIMPS:613112	Macrothrombocytopenia, isolated	True	False	False
+OMIMPS:613135	Parkinsonism-dystonia, infantile	True	False	False
+OMIMPS:613155	Muscular dystrophy-dystroglycanopathy, type B	True	False	False
+OMIMPS:613280	Hypermanganesemia with dystonia	True	False	False
+OMIMPS:613339	Hot water epilepsy	True	False	False
+OMIMPS:613573	Ectodermal dysplasia-syndactyly syndrome	True	False	False
+OMIMPS:613658	Rajab interstitial lung disease with brain calcifications	True	False	False
+OMIMPS:614039	Cortical dysplasia, complex, with other brain malformations	True	False	False
+OMIMPS:614080	Multiple congenital anomalies-hypotonia-seizures syndrome	True	False	False
+OMIMPS:614231	Microcephaly, epilepsy, and diabetes syndrome	True	False	False
+OMIMPS:614328	Neonatal inflammatory skin and bowel disease	True	False	False
+OMIMPS:614372	Lectin complement activation pathway defects	True	False	False
+OMIMPS:614388	Encephalopathy due to defective mitochondrial and peroxisomal fission	True	False	False
+OMIMPS:614429	Ventricular septal defect	True	False	False
+OMIMPS:614592	Bent bone dysplasia syndrome	True	False	False
+OMIMPS:614594	Olmsted syndrome	True	False	False
+OMIMPS:614675	Bone marrow failure syndrome	True	False	False
+OMIMPS:614742	Pulmonary fibrosis and/or bone marrow failure syndrome, telomere-related	True	False	False
+OMIMPS:614937	Myoclonus, familial	True	False	False
+OMIMPS:615040	Familial episodic pain syndrome	True	False	False
+OMIMPS:615273	Congenital disorder of deglycosylation	True	False	False
+OMIMPS:615419	Hypotonia, infantile, with psychomotor retardation and characteristic facies	True	False	False
+OMIMPS:615438	Infantile liver failure syndrome	True	False	False
+OMIMPS:615774	Oocyte/zygote/embryo maturation arrest	True	False	False
+OMIMPS:615895	Polyglucosan body myopathy	True	False	False
+OMIMPS:615952	Autoimmune disease, multisystem, infantile-onset	True	False	False
+OMIMPS:616263	Neurologic, endocrine, and pancreatic disease, multisystem, infantile-onset	True	False	False
+OMIMPS:616418	Hypomagnesemia, seizures, and mental retardation	True	False	False
+OMIMPS:616744	Autoinflammatory syndrome, familial, Behcet-like	True	False	False
+OMIMPS:616866	Spinal muscular atrophy with congenital bone fractures	True	False	False
+OMIMPS:616901	Developmental delay with short stature, dysmorphic facial features, and sparse hair	True	False	False
+OMIMPS:617068	Portal hypertension, noncirrhotic	True	False	False
+OMIMPS:617186	Encephalopathy, progressive, early-onset, with brain edema and/or leukoencephalopathy	True	False	False
+OMIMPS:617236	Cone-rod dystrophy and hearing loss	True	False	False
+OMIMPS:617468	Arthrogryposis multiplex congenita	True	False	False
+OMIMPS:617660	Vertebral, cardiac, renal, and limb defects syndrome	True	False	False
+OMIMPS:617877	Short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies	True	False	False
+OMIMPS:618005	Congenital disorder of glycosylation with defective fucosylation	True	False	False
+OMIMPS:618332	Menke-Hennekam syndrome	True	False	False
+OMIMPS:619115	Combined osteogenesis imperfecta and Ehlers-Danlos syndrome	True	False	False
+OMIMPS:619142	Cardioacrofacial dysplasia	True	False	False
+OMIMPS:619611	Interstitial lung disease	True	False	False
+OMIMPS:619720	Bryant-Li-Bhoj neurodevelopmental syndrome	True	False	False
+OMIMPS:619758	Tessadori-Van-Haaften neurodevelopmental syndrome	True	False	False
+OMIMPS:619980	Braddock-Carey Syndrome	True	False	False
+OMIMPS:620184	Atelis syndrome	True	False	False
 OMIM:102590		True	False	True
 OMIM:103470		True	False	True
 OMIM:134700		True	False	True
@@ -27259,6 +27255,7 @@ OMIM:163955		True	False	True
 OMIM:164891		True	False	True
 OMIM:168850		True	False	True
 OMIM:175020		True	False	True
+OMIM:181430		True	False	True
 OMIM:181515		True	False	True
 OMIM:247440		True	False	True
 OMIM:252700		True	False	True
@@ -27277,13 +27274,16 @@ OMIM:309605		True	False	True
 OMIM:600048		True	False	True
 OMIM:600146		True	False	True
 OMIM:600309		True	False	True
+OMIM:600996		True	False	True
 OMIM:601251		True	False	True
 OMIM:601563		True	False	True
+OMIM:603530		True	False	True
 OMIM:604916		True	False	True
 OMIM:605365		True	False	True
 OMIM:607655		True	False	True
 OMIM:607801		True	False	True
 OMIM:608890		True	False	True
+OMIM:609456		True	False	True
 OMIM:610269		True	False	True
 OMIM:610799		True	False	True
 OMIM:613740		True	False	True
