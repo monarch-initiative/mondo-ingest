@@ -263,6 +263,7 @@ MONDO:0001682	diphtheritic peritonitis	skos:exactMatch	ICD10CM:A36.89	Other diph
 MONDO:0001685	chronic follicular conjunctivitis	skos:exactMatch	ICD10CM:H10.43	Chronic follicular conjunctivitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	chronic follicular conjunctivitis	LEXMATCH
 MONDO:0001691	laryngeal cartilage cancer	skos:exactMatch	ICD10CM:C32.3	Malignant neoplasm of laryngeal cartilage	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant neoplasm of laryngeal cartilage	LEXMATCH
 MONDO:0001694	diffuse interstitial keratitis	skos:exactMatch	ICD10CM:H16.32	Diffuse interstitial keratitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	diffuse interstitial keratitis	LEXMATCH
+MONDO:0001703	color vision disorder	skos:exactMatch	ICD10CM:H53.5	Color vision deficiencies	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	color blindness	LEXMATCH
 MONDO:0001708	pulmonary sarcoidosis	skos:exactMatch	ICD10CM:D86.0	Sarcoidosis of lung	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	sarcoidosis of lung	LEXMATCH
 MONDO:0001714	bejel	skos:exactMatch	ICD10CM:A65	Nonvenereal syphilis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	njovera	LEXMATCH
 MONDO:0001714	bejel	skos:exactMatch	ICD10CM:A65	Nonvenereal syphilis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	bejel	LEXMATCH
@@ -938,7 +939,6 @@ MONDO:0007639	fundus albipunctatus	skos:exactMatch	ICD10CM:H35.52	Pigmentary ret
 MONDO:0007650	MALT lymphoma	skos:exactMatch	ICD10CM:C88.4	Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue [MALT-lymphoma]	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	extranodal marginal zone b-cell lymphoma of mucosa-associated lymphoid tissue	LEXMATCH
 MONDO:0007652	gastric mucosal hypertrophy	skos:exactMatch	ICD10CM:K29.6	Other gastritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	giant hypertrophic gastritis	LEXMATCH
 MONDO:0007661	Tourette syndrome	skos:exactMatch	ICD10CM:F95.2	Tourette's disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	tourette's syndrome	LEXMATCH
-MONDO:0007686	gray platelet syndrome	skos:exactMatch	ICD10CM:D69.1	Qualitative platelet defects	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	grey platelet syndrome	LEXMATCH
 MONDO:0007732	Holt-Oram syndrome	skos:exactMatch	ICD10CM:Q87.2	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	holt-oram syndrome	LEXMATCH
 MONDO:0007732	Holt-Oram syndrome	skos:exactMatch	ICD10CM:Q87.2	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	holt-oram syndrome	LEXMATCH
 MONDO:0007739	Huntington disease	skos:exactMatch	ICD10CM:G10	Huntington's disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	huntington's chorea	LEXMATCH
@@ -1000,6 +1000,7 @@ MONDO:0008223	hypokalemic periodic paralysis	skos:exactMatch	ICD10CM:G72.3	Perio
 MONDO:0008223	hypokalemic periodic paralysis	skos:exactMatch	ICD10CM:G72.3	Periodic paralysis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	hypokalemic periodic paralysis	LEXMATCH
 MONDO:0008224	hyperkalemic periodic paralysis	skos:exactMatch	ICD10CM:G72.3	Periodic paralysis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hyperkalemic periodic paralysis	LEXMATCH
 MONDO:0008224	hyperkalemic periodic paralysis	skos:exactMatch	ICD10CM:G72.3	Periodic paralysis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	hyperkalemic periodic paralysis	LEXMATCH
+MONDO:0008228	pernicious anemia	skos:exactMatch	ICD10CM:D51.0	Vitamin B12 deficiency anemia due to intrinsic factor deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	addison anemia	LEXMATCH
 MONDO:0008228	pernicious anemia	skos:exactMatch	ICD10CM:D51.0	Vitamin B12 deficiency anemia due to intrinsic factor deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	biermer anemia	LEXMATCH
 MONDO:0008231	Peyronie disease	skos:exactMatch	ICD10CM:N48.6	Induration penis plastica	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	peyronie's disease	LEXMATCH
 MONDO:0008244	piebaldism	skos:exactMatch	ICD10CM:E70.39	Other specified albinism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	piebaldism	LEXMATCH
@@ -1022,6 +1023,7 @@ MONDO:0008388	ringed hair disease	skos:exactMatch	ICD10CM:Q84.1	Congenital morph
 MONDO:0008392	Roussy-Levy syndrome	skos:exactMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	roussy-levy syndrome	LEXMATCH
 MONDO:0008392	Roussy-Levy syndrome	skos:exactMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	roussy-levy syndrome	LEXMATCH
 MONDO:0008394	Silver-Russell syndrome	skos:exactMatch	ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	russell-silver syndrome	LEXMATCH
+MONDO:0008409	congenital myopathy 7A, myosin storage, autosomal dominant	skos:exactMatch	ICD10CM:G71.09	Other specified muscular dystrophies	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	scapuloperoneal muscular dystrophy	LEXMATCH
 MONDO:0008410	Scheuermann disease	skos:exactMatch	ICD10CM:M42.0	Juvenile osteochondrosis of spine	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	scheuermann's disease	LEXMATCH
 MONDO:0008410	Scheuermann disease	skos:exactMatch	ICD10CM:M42.0	Juvenile osteochondrosis of spine	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	juvenile osteochondrosis of spine	LEXMATCH
 MONDO:0008434	Smith-Magenis syndrome	skos:exactMatch	ICD10CM:Q93.88	Other microdeletions	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	smith-magenis syndrome	LEXMATCH

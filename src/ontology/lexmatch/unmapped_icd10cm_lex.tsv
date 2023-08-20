@@ -199,6 +199,7 @@ MONDO:0001676	erythropoietic protoporphyria	ICD10CM:E80.0	MONDO:equivalentTo	Her
 MONDO:0001678	intestinal tuberculosis	ICD10CM:A18.32	MONDO:equivalentTo	Tuberculous enteritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	tuberculosis of intestine
 MONDO:0001682	diphtheritic peritonitis	ICD10CM:A36.89	MONDO:equivalentTo	Other diphtheritic complications	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	diphtheritic peritonitis
 MONDO:0001691	laryngeal cartilage cancer	ICD10CM:C32.3	MONDO:equivalentTo	Malignant neoplasm of laryngeal cartilage	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant neoplasm of laryngeal cartilage
+MONDO:0001703	color vision disorder	ICD10CM:H53.5	MONDO:equivalentTo	Color vision deficiencies	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	color blindness
 MONDO:0001708	pulmonary sarcoidosis	ICD10CM:D86.0	MONDO:equivalentTo	Sarcoidosis of lung	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	sarcoidosis of lung
 MONDO:0001714	bejel	ICD10CM:A65	MONDO:equivalentTo	Nonvenereal syphilis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	njovera
 MONDO:0001714	bejel	ICD10CM:A65	MONDO:equivalentTo	Nonvenereal syphilis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	bejel
@@ -729,7 +730,6 @@ MONDO:0007639	fundus albipunctatus	ICD10CM:H35.52	MONDO:equivalentTo	Pigmentary 
 MONDO:0007650	MALT lymphoma	ICD10CM:C88.4	MONDO:equivalentTo	Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue [MALT-lymphoma]	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	extranodal marginal zone b-cell lymphoma of mucosa-associated lymphoid tissue
 MONDO:0007652	gastric mucosal hypertrophy	ICD10CM:K29.6	MONDO:equivalentTo	Other gastritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	giant hypertrophic gastritis
 MONDO:0007661	Tourette syndrome	ICD10CM:F95.2	MONDO:equivalentTo	Tourette's disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	tourette's syndrome
-MONDO:0007686	gray platelet syndrome	ICD10CM:D69.1	MONDO:equivalentTo	Qualitative platelet defects	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	grey platelet syndrome
 MONDO:0007732	Holt-Oram syndrome	ICD10CM:Q87.2	MONDO:equivalentTo	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	holt-oram syndrome
 MONDO:0007732	Holt-Oram syndrome	ICD10CM:Q87.2	MONDO:equivalentTo	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	holt-oram syndrome
 MONDO:0007739	Huntington disease	ICD10CM:G10	MONDO:equivalentTo	Huntington's disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	huntington's chorea
@@ -788,6 +788,7 @@ MONDO:0008223	hypokalemic periodic paralysis	ICD10CM:G72.3	MONDO:equivalentTo	Pe
 MONDO:0008223	hypokalemic periodic paralysis	ICD10CM:G72.3	MONDO:equivalentTo	Periodic paralysis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	hypokalemic periodic paralysis
 MONDO:0008224	hyperkalemic periodic paralysis	ICD10CM:G72.3	MONDO:equivalentTo	Periodic paralysis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hyperkalemic periodic paralysis
 MONDO:0008224	hyperkalemic periodic paralysis	ICD10CM:G72.3	MONDO:equivalentTo	Periodic paralysis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	hyperkalemic periodic paralysis
+MONDO:0008228	pernicious anemia	ICD10CM:D51.0	MONDO:equivalentTo	Vitamin B12 deficiency anemia due to intrinsic factor deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	addison anemia
 MONDO:0008228	pernicious anemia	ICD10CM:D51.0	MONDO:equivalentTo	Vitamin B12 deficiency anemia due to intrinsic factor deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	biermer anemia
 MONDO:0008231	Peyronie disease	ICD10CM:N48.6	MONDO:equivalentTo	Induration penis plastica	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	peyronie's disease
 MONDO:0008244	piebaldism	ICD10CM:E70.39	MONDO:equivalentTo	Other specified albinism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	piebaldism
@@ -808,6 +809,7 @@ MONDO:0008388	ringed hair disease	ICD10CM:Q84.1	MONDO:equivalentTo	Congenital mo
 MONDO:0008392	Roussy-Levy syndrome	ICD10CM:G60.0	MONDO:equivalentTo	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	roussy-levy syndrome
 MONDO:0008392	Roussy-Levy syndrome	ICD10CM:G60.0	MONDO:equivalentTo	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	roussy-levy syndrome
 MONDO:0008394	Silver-Russell syndrome	ICD10CM:Q87.19	MONDO:equivalentTo	Other congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	russell-silver syndrome
+MONDO:0008409	congenital myopathy 7A, myosin storage, autosomal dominant	ICD10CM:G71.09	MONDO:equivalentTo	Other specified muscular dystrophies	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	scapuloperoneal muscular dystrophy
 MONDO:0008410	Scheuermann disease	ICD10CM:M42.0	MONDO:equivalentTo	Juvenile osteochondrosis of spine	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	scheuermann's disease
 MONDO:0008410	Scheuermann disease	ICD10CM:M42.0	MONDO:equivalentTo	Juvenile osteochondrosis of spine	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	juvenile osteochondrosis of spine
 MONDO:0008434	Smith-Magenis syndrome	ICD10CM:Q93.88	MONDO:equivalentTo	Other microdeletions	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	smith-magenis syndrome
