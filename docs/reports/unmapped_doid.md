@@ -5,10 +5,11 @@
 | subject_id   | subject_label                                                             |
 |:-------------|:--------------------------------------------------------------------------|
 | DOID:0081250 | CIC-rearranged sarcoma                                                    |
-| DOID:0080035 | COX deficiency, benign infantile mitochondrial myopathy                   |
+| DOID:0081377 | COX deficiency, benign infantile mitochondrial myopathy                   |
 | DOID:0081070 | EZB-MYC+ diffuse large B-cell lymphoma                                    |
 | DOID:0081071 | EZB-MYC- diffuse large B-cell lymphoma                                    |
 | DOID:0081370 | LADD syndrome                                                             |
+| DOID:0111503 | Li-Fraumeni syndrome 1                                                    |
 | DOID:0070439 | North Carolina macular dystrophy                                          |
 | DOID:0080817 | T2-high asthma                                                            |
 | DOID:0080818 | T2-low asthma                                                             |
@@ -42,7 +43,7 @@
 | DOID:0080880 | diffuse glioma, H3 G34 mutant                                             |
 | DOID:0080684 | diffuse midline glioma, H3 K27M-mutant                                    |
 | DOID:0080578 | digenic disease                                                           |
-| DOID:0080002 | disabling pansclerotic morphea                                            |
+| DOID:0081373 | disabling pansclerotic morphea                                            |
 | DOID:0070445 | early-onset dystonia and/or spastic paraplegia                            |
 | DOID:0081359 | epidermolytic hyperkeratosis 2                                            |
 | DOID:0080712 | gene duplication disease                                                  |
@@ -84,8 +85,8 @@
 | DOID:0070463 | mitochondrial complex V (ATP synthase) deficiency nuclear type 5          |
 | DOID:0070464 | mitochondrial complex V (ATP synthase) deficiency nuclear type 7          |
 | DOID:0080823 | near-fatal asthma                                                         |
-| DOID:0080004 | nemaline myopathy 5 C                                                     |
-| DOID:0080003 | nemaline myopathy 5B                                                      |
+| DOID:0081374 | nemaline myopathy 5B                                                      |
+| DOID:0081375 | nemaline myopathy 5C                                                      |
 | DOID:0070443 | neurodevelopmental disorder with cerebellar atrophy and motor dysfunction |
 | DOID:0070444 | neurodevelopmental disorder with language delay and seizures              |
 | DOID:0070366 | nevoid basal cell carcinoma syndrome 2                                    |
@@ -106,7 +107,7 @@
 | DOID:0070440 | retinal macular dystrophy 3                                               |
 | DOID:0070441 | retinal macular dystrophy 4                                               |
 | DOID:0080897 | solitary fibrous tumor/hemangiopericytoma                                 |
-| DOID:0080025 | sorbitol dehydrogenase deficiency with peripheral neuropathy              |
+| DOID:0081376 | sorbitol dehydrogenase deficiency with peripheral neuropathy              |
 | DOID:0081253 | supratentorial ependymoma, YAP1 fusion–positive                           |
 | DOID:0081252 | supratentorial ependymoma, ZFTA fusion–positive                           |
 | DOID:0080856 | vascular Parkinsonism                                                     |

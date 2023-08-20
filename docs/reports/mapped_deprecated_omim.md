@@ -9,6 +9,7 @@
 | MONDO:0007061 | OMIM:102590          | MONDO:equivalentObsolete |
 | MONDO:0007602 | OMIM:134700          | MONDO:equivalentObsolete |
 | MONDO:0007659 | OMIM:137560          | MONDO:equivalentObsolete |
+| MONDO:0007779 | OMIM:145410          | MONDO:equivalentObsolete |
 | MONDO:0007801 | OMIM:146400          | MONDO:equivalentObsolete |
 | MONDO:0008074 | OMIM:162020          | MONDO:equivalentObsolete |
 | MONDO:0008091 | OMIM:162820          | MONDO:equivalentObsolete |
