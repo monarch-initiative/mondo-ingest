@@ -1,5 +1,6 @@
 import logging
 from os.path import abspath, dirname, join
+from os import listdir
 from typing import TextIO
 
 import click
@@ -19,6 +20,11 @@ TMP = join(ONTS_DIR, "tmp")
 REPORTS_DIR = join(ONTS_DIR, "reports")
 MONDO_SSSOM = join(TMP, "mondo.sssom.tsv")
 DB_FILE = join(TMP, "merged.db")
+ROBOT_ROW_DICT = {
+        "subject_id": ["ID"],
+        "predicate_id": [">A oboInOwl:source"],
+        "object_id": ["A oboInOwl:hasDbXref"],
+    }
 
 
 DESIRED_COLUMN_ORDER = [
@@ -52,6 +58,28 @@ def main(verbose: int, quiet: bool):
         logger.setLevel(level=logging.WARNING)
     if quiet:
         logger.setLevel(level=logging.ERROR)
+
+
+@main.command("combine_unmapped_lex_exacts")
+def combine_unmapped_lex_exacts() -> None:
+    file_list = [file for file in listdir(LEXMATCH_DIR) if file.endswith("_lex_exact.tsv")]
+    # Initialize an empty DataFrame to store the merged data
+    merged_lex_exact_df = pd.DataFrame()
+
+    # Concatenate all the files into a single DataFrame
+    for file in file_list:
+        file_path = join(LEXMATCH_DIR, file)
+        df = pd.read_csv(file_path, delimiter="\t")
+        merged_lex_exact_df = pd.concat([merged_lex_exact_df, df])
+
+    merged_lex_exact_df = pd.concat(
+        [pd.DataFrame.from_dict(ROBOT_ROW_DICT, orient="columns"), merged_lex_exact_df],
+        axis=0,
+    )
+
+    merged_lex_exact_df.drop_duplicates(inplace=True)
+
+    merged_lex_exact_df.to_csv(join(LEXMATCH_DIR, "all_exact.robot.tsv"), sep="\t", index=False)
 
 
 @main.command("extract_unmapped_matches")
@@ -281,14 +309,9 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
         & (unmapped_df["predicate_id"] == "skos:exactMatch")
     ]
     unmapped_exact = replace_by_mondo_preds(unmapped_exact)
-    robot_row_dict = {
-        "subject_id": ["ID"],
-        "predicate_id": [">A oboInOwl:source"],
-        "object_id": ["A oboInOwl:hasDbXref"],
-    }
     column_seq = unmapped_exact.columns
     unmapped_exact = pd.concat(
-        [pd.DataFrame.from_dict(robot_row_dict, orient="columns"), unmapped_exact],
+        [pd.DataFrame.from_dict(ROBOT_ROW_DICT, orient="columns"), unmapped_exact],
         axis=0,
     )
     unmapped_exact = unmapped_exact[column_seq]
