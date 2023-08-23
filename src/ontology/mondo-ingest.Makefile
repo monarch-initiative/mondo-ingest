@@ -444,8 +444,16 @@ lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py $(MAPPINGSDIR)/mondo
 
 extract-unmapped-matches: lexmatch/README.md
 
+###################################
+#### Lexmatch-combine #######
+###################################
+lexmatch/all_exact.robot.tsv: $(SCRIPTSDIR)/lexmatch-sssom-compare.py
+	python $< combine_unmapped_lex_exacts
+
+combine-unmapped-exact-lexmatches: lexmatch/all_exact.robot.tsv
+
 .PHONY: matches
-matches: lexical-matches extract-unmapped-matches
+matches: lexical-matches extract-unmapped-matches combine-unmapped-exact-lexmatches
 
 #############################
 ###### Slurp pipeline #######
