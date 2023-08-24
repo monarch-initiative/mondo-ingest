@@ -348,7 +348,7 @@ def export_unmatched_exact(unmapped_df, match_type, fn, summary):
 
     unmapped_exact_exact = pd.concat(
         [
-            pd.DataFrame.from_dict(robot_row_dict, orient="columns"),
+            pd.DataFrame.from_dict(ROBOT_ROW_DICT, orient="columns"),
             unmapped_exact_exact,
         ],
         axis=0,
