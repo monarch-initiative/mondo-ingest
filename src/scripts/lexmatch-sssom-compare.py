@@ -176,6 +176,8 @@ def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summa
         ont2 = ont.upper()
         if ont == "omim":
             ont2 = "|".join((["OMIM", "OMIMPS"]))
+        elif ont == "ordo":
+            ont2 = "|".join((["ORDO", "Orphanet"]))
 
         mondo_ont_df = msdf_mondo.df[condition_mondo_sssom_subj & msdf_mondo.df['object_id'].str.contains(ont2)]
         mondo_ont_lex_df = lex_df[(condition_lex_df_mondo_subj & lex_df['object_id'].str.contains(ont2))]
