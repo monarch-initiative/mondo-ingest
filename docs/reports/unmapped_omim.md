@@ -11,10 +11,10 @@
 | OMIMPS:609628 | Chronic recurrent multifocal osteomyelitis                                                                         |
 | OMIMPS:164210 | Craniofacial Microsomia                                                                                            |
 | OMIMPS:113800 | Epidermolytic hyperkeratosis                                                                                       |
+| OMIMPS:617290 | Epilepsy, early-onset                                                                                              |
 | OMIMPS:605899 | Glycine encephalopathy                                                                                             |
 | OMIMPS:141200 | Hematuria, benign familial                                                                                         |
 | OMIMPS:616355 | Houte-Janssens syndrome                                                                                            |
-| OMIMPS:603896 | Leukoencephalopathy with vanishing white matter                                                                    |
 | OMIMPS:151623 | Li-Fraumeni syndrome                                                                                               |
 | OMIMPS:278000 | Lysosomal acid lipase deficiency                                                                                   |
 | OMIMPS:609015 | Mitochondrial trifunctional protein deficiency                                                                     |
@@ -50,7 +50,9 @@
 | OMIM:620326   | congenital myopathy 21 with early respiratory failure                                                              |
 | OMIM:620351   | congenital myopathy 22a, classic                                                                                   |
 | OMIM:620369   | congenital myopathy 22b, severe fetal                                                                              |
+| OMIM:620470   | congenital smooth muscle hamartoma, with or without hemihypertrophy                                                |
 | OMIM:620316   | cortical dysplasia, complex, with other brain malformations 12                                                     |
+| OMIM:620469   | cranial dysinnervation disorder, congenital, with absent corneal reflex and developmental delay                    |
 | OMIM:620444   | craniofacial microsomia 2                                                                                          |
 | OMIM:620352   | developmental and epileptic encephalopathy 31b                                                                     |
 | OMIM:620357   | diarrhea 13                                                                                                        |
@@ -58,7 +60,9 @@
 | OMIM:620456   | dystonia 22, adult-onset                                                                                           |
 | OMIM:620453   | dystonia 22, juvenile-onset                                                                                        |
 | OMIM:620427   | dystonia 37, early-onset, with striatal lesions                                                                    |
+| OMIM:620461   | encephalitis, acute, infection-induced, susceptibility to, 12                                                      |
 | OMIM:620150   | epidermolytic hyperkeratosis 2                                                                                     |
+| OMIM:620465   | epilepsy, early-onset, 3, with or without developmental delay                                                      |
 | OMIM:620398   | glycine encephalopathy 2                                                                                           |
 | OMIM:620331   | hatipoglu immunodeficiency syndrome                                                                                |
 | OMIM:613035   | hearing loss, noise-induced, susceptibility to                                                                     |
