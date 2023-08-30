@@ -106,6 +106,7 @@
 | OMIM:620383   | oocyte/zygote/embryo maturation arrest 20                                                                          |
 | OMIM:620366   | osteopetrosis, autosomal recessive 9                                                                               |
 | OMIM:620411   | palmoplantar keratoderma, epidermolytic, 2                                                                         |
+| OMIM:620482   | parkinson disease 25, autosomal recessive early-onset, with impaired intellectual development                      |
 | OMIM:620303   | pituitary hormone deficiency, combined or isolated, 8                                                              |
 | OMIM:620311   | premature ovarian failure 21                                                                                       |
 | OMIM:620344   | prolonged electroretinal response suppression 2                                                                    |
@@ -121,5 +122,9 @@
 | OMIM:620353   | spermatogenic failure 82                                                                                           |
 | OMIM:620354   | spermatogenic failure 83                                                                                           |
 | OMIM:620409   | spermatogenic failure 84                                                                                           |
+| OMIM:620490   | spermatogenic failure 85                                                                                           |
 | OMIM:301106   | spermatogenic failure, x-linked, 7                                                                                 |
+| OMIM:620475   | thrombocytopenia 8, with dysmorphic features and developmental delay                                               |
+| OMIM:620478   | thrombocytopenia 9                                                                                                 |
+| OMIM:620483   | variegate porphyria, childhood-onset                                                                               |
 | OMIM:620415   | woolly hair-skin fragility syndrome                                                                                |
