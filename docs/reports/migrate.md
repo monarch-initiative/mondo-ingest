@@ -6,7 +6,7 @@
 | [ORDO](./migrate_ordo.md)         | 3     |
 | [NCIT](./migrate_ncit.md)         | 2,113 |
 | [ICD10WHO](./migrate_icd10who.md) | 119   |
-| [OMIM](./migrate_omim.md)         | 112   |
+| [OMIM](./migrate_omim.md)         | 109   |
 | [ICD10CM](./migrate_icd10cm.md)   | 1,889 |
 
 ### Codebook
