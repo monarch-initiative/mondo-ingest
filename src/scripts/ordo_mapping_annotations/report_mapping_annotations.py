@@ -63,7 +63,7 @@ def sparql_file_query__via_robot(onto_path: str, query_path: str, use_cache=Fals
         if not os.path.exists(results_path):
             with open(command_save_path, 'w') as f:
                 f.write(command_str)
-        subprocess.run(command_str.split())
+        subprocess.run(command_str.split(), capture_output=True, text=True)
 
     # Read results and return
     try:
