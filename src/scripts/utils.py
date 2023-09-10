@@ -4,19 +4,22 @@ import pickle
 import subprocess
 import sys
 from datetime import datetime
+from pathlib import Path
 from typing import Dict, List, Set, Union
 
 import curies
 import pandas as pd
+import yaml
 from jinja2 import Template
 from oaklib import OntologyResource
 from oaklib.implementations import ProntoImplementation, SqlImplementation
-from oaklib.interfaces.basic_ontology_interface import RELATIONSHIP
+from oaklib.interfaces.basic_ontology_interface import BasicOntologyInterface, RELATIONSHIP
 from oaklib.types import CURIE, URI
 from pandas.errors import EmptyDataError
 
 
 PREFIX = str
+PREFIX_MAP = Dict[PREFIX, URI]
 TRIPLE = RELATIONSHIP
 SCRIPTS_DIR = os.path.dirname(os.path.realpath(__file__))
 PROJECT_DIR = os.path.realpath(os.path.join(SCRIPTS_DIR, '..', '..'))
@@ -27,6 +30,10 @@ SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 TEMP_DIR = os.path.join(ONTOLOGY_DIR, 'tmp')
 DOCS_DIR = os.path.join(PROJECT_DIR, 'docs')
 CACHE_DIR = TEMP_DIR
+DEFAULT_PREFIXES_CSV = os.path.join(ONTOLOGY_DIR, 'config', 'prefixes.csv')
+MONDO_PREFIX_MAP: PREFIX_MAP = {
+    'MONDO': 'http://purl.obolibrary.org/obo/MONDO_'
+}
 
 
 # todo: there are remaining todo's in this class
@@ -167,6 +174,18 @@ def _load_ontology(ontology_path: str, use_cache=False) -> ProntoImplementation:
     return ontology
 
 
+def get_monarch_curies_converter(from_prefixes_csv: Union[str, Path] = DEFAULT_PREFIXES_CSV) -> curies.Converter:
+    """:param from_prefixes_csv: Path to a CSV with prefix in first column and URI stem in second."""
+    if not from_prefixes_csv:
+        # https://curies.readthedocs.io/en/latest/tutorial.html#loading-a-pre-defined-context
+        return curies.get_monarch_converter()
+    df = pd.read_csv(from_prefixes_csv)
+    df['yaml'] = df.apply(lambda x: f'{x["prefix"]}: {x["base"]}', axis=1)
+    prefix_map = yaml.safe_load('\n'.join(df['yaml']))
+    conv = curies.Converter.from_prefix_map(prefix_map)
+    return conv
+
+
 def _get_next_available_mondo_id(min_id: int, max_id: int, mondo_ids: Set[int]) -> (int, Set[int]):
     """Starting from `min_id`, count up and check until finding the next ID.
 
@@ -183,16 +202,17 @@ def _get_next_available_mondo_id(min_id: int, max_id: int, mondo_ids: Set[int]) 
     return next_id, mondo_ids
 
 
-def remove_angle_brackets(uris: Union[URI, List[URI]]):
+def remove_angle_brackets(uris: Union[URI, List[URI]]) -> Union[URI, List[URI]]:
     """Remove angle brackets from URIs, e.g.:
     <https://omim.org/entry/100050> --> https://omim.org/entry/100050"""
-    uris = [uris] if isinstance(uris, str) else uris
+    str_input = isinstance(uris, str)
+    uris = [uris] if str_input else uris
     uris2 = []
     for x in uris:
         x = x[1:] if x.startswith('<') else x
         x = x[:-1] if x.endswith('>') else x
         uris2.append(x)
-    return uris2
+    return uris2[0] if str_input else uris2
 
 
 def get_mondo_term_ids(mondo_terms_path: str, slurp_id_map: Dict[str, str]) -> Set[int]:
@@ -217,13 +237,21 @@ def get_mondo_term_ids(mondo_terms_path: str, slurp_id_map: Dict[str, str]) -> S
     return existing_ids
 
 
+def get_owned_prefix_map(onto_config_path: str) -> PREFIX_MAP:
+    """Get owned prefix_map"""
+    with open(onto_config_path, 'r') as stream:
+        onto_config = yaml.safe_load(stream)
+    owned_prefix_map: PREFIX_MAP = onto_config['base_prefix_map']
+    return owned_prefix_map
+
+
 # todo: Improvement. Currently, we're returning 'owned terms', which are defined as all the terms that are listed and
 #  have the proper prefix. but, we need to improve this and import the ones 'of interest'. so this should come from the
 #  the terms list from mapping_status or component signature
-def _get_all_owned_terms(
-    ontology: Union[SqlImplementation, ProntoImplementation], owned_prefix_map: Dict[PREFIX, URI], ontology_path: str,
-    mode=['term', 'uri', 'curie'][0], silent=True, cache_dir_path: str = None, onto_config_path: str = None,
-    use_cache=False
+def get_all_owned_terms(
+    ontology: Union[BasicOntologyInterface, SqlImplementation, ProntoImplementation],
+    owned_prefix_map: Dict[PREFIX, URI], ontology_path: str = None, mode=['term', 'uri', 'curie'][0], silent=True,
+    cache_dir_path: str = '', ontology_name: str = '', filter_obsoletes=True, use_cache=False,
 ) -> List[Union[Term, URI, CURIE]]:
     """Get all relevant owned terms
 
@@ -233,6 +261,8 @@ def _get_all_owned_terms(
     cache_path: If present, read and return cache if exists, else will write to cache.
     todo: owned_terms: if slow, can speed this up by grouping prefixes by splitting on : and filter out
     """
+    if use_cache and not (cache_dir_path and ontology_name):
+        raise ValueError('If using "use_cache", also need both "cache_dir_path" and "ontology_name.')
     t0 = datetime.now()
     if mode not in ['term', 'uri', 'curie']:
         raise ValueError('`_get_curies_all_owned_terms()`: `mode` must be one of "uri", "curie", or "term".')
@@ -240,12 +270,12 @@ def _get_all_owned_terms(
     # Cache: read
     cache_path = os.path.join(
         cache_dir_path,
-        f'migrate_owned_terms_{os.path.basename(onto_config_path).replace(".yml", "").replace(".yaml", "")}.pickle')
+        f'migrate_owned_terms_{ontology_name}.pickle')
     if cache_path and os.path.exists(cache_path) and use_cache:
         return pickle.load(open(cache_path, 'rb'))
 
     # Get all terms: CURIES or URIs
-    term_refs: List[Union[URI, CURIE]] = [x for x in ontology.entities()]
+    term_refs: List[Union[URI, CURIE]] = [x for x in ontology.entities(filter_obsoletes=filter_obsoletes)]
 
     # Get CURIES
     uri_terms_owned: List[URI] = []

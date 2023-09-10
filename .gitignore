@@ -35,9 +35,11 @@ mondo-ingest-base.json
 
 imports/*
 
+# src/mappings/
 src/mappings/mondo-sources-all-lexical.sssom.tsv
 src/mappings/mondo-sources-all-lexical-2.sssom.tsv
 
+# src/ontology/
 src/ontology/.template.db
 src/ontology/mirror
 src/ontology/mirror/*
@@ -47,6 +49,7 @@ src/ontology/reports/*.ttl
 !src/ontology/reports/*exclusion_reasons.robot.template.tsv
 !src/ontology/reports/*excluded_terms.txt
 src/ontology/reports/mondo-ingest-edit.owl-obo-report.tsv
+
 src/ontology/mondo-ingest.owl
 src/ontology/mondo-ingest.obo
 src/ontology/mondo-ingest.json
@@ -55,7 +58,6 @@ src/ontology/mondo-ingest-basic.*
 src/ontology/mondo-ingest-full.*
 src/ontology/mondo-ingest-simple.*
 src/ontology/mondo-ingest-simple-non-classified.*
-
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log
 src/ontology/ed_definitions_merged.owl
@@ -64,11 +66,10 @@ src/ontology/simple_seed.txt
 src/ontology/patterns
 src/ontology/merged-mondo-ingest-edit.owl
 
-src/ontology/target/
+# src/ontology/components/
+src/ontology/components/*
 
-src/ontology/tmp/*
-!src/ontology/tmp/README.md
-
+# src/ontology/imports/
 src/ontology/imports/*.owl
 !src/ontology/imports/do_import.owl
 !src/ontology/imports/omo_import.owl
@@ -76,8 +77,28 @@ src/ontology/imports/*.owl
 src/ontology/imports/*.json
 src/ontology/imports/*_terms_combined.txt
 
-src/ontology/components/*
+# src/ontology/mirror/
+src/ontology/mirror
+src/ontology/mirror/*
 
+# src/ontology/reports/
+src/ontology/reports/*.ttl
+src/ontology/reports/*.subclass.direct-in-mondo-only.tsv
+src/ontology/reports/mondo-ingest-edit.owl-obo-report.tsv
+# todo: These ! patterns don't seem to be an exception to anything that would currently be ignoring them, so I don't think they're needed. Commented out. - Joe 2023/11/16
+#!src/ontology/reports/README.md
+#!src/ontology/reports/*excluded_terms_in_mondo_xrefs.tsv
+#!src/ontology/reports/*exclusion_reasons.robot.template.tsv
+#!src/ontology/reports/*excluded_terms.txt
+
+# src/ontology/target/
+src/ontology/target/
+
+# src/ontology/tmp/
+src/ontology/tmp/*
+!src/ontology/tmp/README.md
+
+# src/patterns/
 src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
@@ -87,5 +108,5 @@ src/scripts/.ipynb_checkpoints/*
 src/scripts/mondo_unmapped.tsv
 
 # Test
-test/output/
+tests/output/
 src/scripts/dataframes/*

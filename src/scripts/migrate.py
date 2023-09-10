@@ -20,9 +20,8 @@ from jinja2 import Template
 from oaklib.implementations import ProntoImplementation
 from oaklib.types import CURIE, URI
 
-from utils import CACHE_DIR, DOCS_DIR, PREFIX, PROJECT_DIR, Term, _get_all_owned_terms, _get_next_available_mondo_id, \
-    get_mondo_term_ids, _load_ontology, SLURP_DIR
-
+from utils import CACHE_DIR, DOCS_DIR, PREFIX, PROJECT_DIR, Term, get_all_owned_terms, _get_next_available_mondo_id, \
+    get_mondo_term_ids, _load_ontology, SLURP_DIR, get_owned_prefix_map
 
 FILENAME_GLOB_PATTERN = '*.tsv'
 PATH_GLOB_PATTERN = os.path.join(SLURP_DIR, FILENAME_GLOB_PATTERN)
@@ -70,9 +69,7 @@ def slurp(
     """
     # Read inputs
     ontology: ProntoImplementation = _load_ontology(ontology_path, use_cache)
-    with open(onto_config_path, 'r') as stream:
-        onto_config = yaml.safe_load(stream)
-        owned_prefix_map: Dict[PREFIX, URI] = onto_config['base_prefix_map']
+    owned_prefix_map: Dict[PREFIX, URI] = get_owned_prefix_map(onto_config_path)
     sssom_df: pd.DataFrame = pd.read_csv(mondo_mappings_path, comment='#', sep='\t')
     mapping_status_df: pd.DataFrame = pd.read_csv(mapping_status_path, sep='\t')
 
@@ -98,9 +95,9 @@ def slurp(
     excluded: Set[CURIE] = set(mapping_status_df[mapping_status_df['is_excluded'] == True]['subject_id'])
     mapped: Set[CURIE] = set(mapping_status_df[mapping_status_df['is_mapped'] == True]['subject_id'])
     obsolete: Set[CURIE] = set(mapping_status_df[mapping_status_df['is_deprecated'] == True]['subject_id'])
-    owned_terms: List[Term] = _get_all_owned_terms(  # todo can simplify. see comment on function
-        ontology=ontology, owned_prefix_map=owned_prefix_map, ontology_path=ontology_path, cache_dir_path=CACHE_DIR,
-        onto_config_path=onto_config_path, use_cache=use_cache)
+    owned_terms: List[Term] = get_all_owned_terms(  # todo can simplify. see comment on function
+        ontology, owned_prefix_map, ontology_path, cache_dir_path=CACHE_DIR,
+        ontology_name=os.path.basename(onto_config_path).replace(".yml", "").replace(".yaml", ""), use_cache=use_cache)
     slurp_candidates: List[Term] = \
         [t for t in owned_terms if all([t.curie not in y for y in [excluded, mapped, obsolete]])]
     match_types: Dict = {}

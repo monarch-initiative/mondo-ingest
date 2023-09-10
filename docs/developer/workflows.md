@@ -35,8 +35,8 @@ for each ontology with more detailed information.
 These workflows will create a [mapping progress report](../reports/unmapped.md) with statistics, with linked pages for each ontology that show unmapped terms.
 
 #### Makefile goals
-1. `reports/%_mapping_status.tsv`: Running this also runs  `reports/%_unmapped_terms.tsv`. Creates a table of all terms for ontology `%`, along with labels, and other columns `is_excluded`, `is_mapped`, `is_deprecated`.
-2. `reports/%_unmapped_terms.tsv`: Running this also runs `reports/%_mapping_status.tsv`. Creates a table of unmapped terms for ontology `%` and their labels.
+1. `reports/%_mapping_status.tsv`: Running this also runs / generates  `reports/%_unmapped_terms.tsv`. Creates a table of all terms for ontology `%`, along with labels, and other columns `is_excluded`, `is_mapped`, `is_deprecated`.
+2. `reports/%_unmapped_terms.tsv`: Running this also runs / generates `reports/%_mapping_status.tsv`. Creates a table of unmapped terms for ontology `%` and their labels.
 3. `unmapped-terms-tables`: Generates `reports/%_mapping_status.tsv` and  `reports/%_unmapped_terms.tsv` for all ontologies.
 4. `unmapped-terms-docs`: Based on the set of `reports/%_mapping_status.tsv` and  `reports/%_unmapped_terms.tsv` for all ontologies, uses these to create the [mapping progress report](../reports/unmapped.md) and other related pages. 
 5. `mapping-progress-report`: Runs `unmapped-terms-tables` and `unmapped-terms-docs`. Creates mapping progress report [mapping progress report](../reports/unmapped.md) and pages for each ontology which list their umapped terms. Also generates `reports/%_mapping_status.tsv` and `reports/%_unmapped_terms.tsv` for all ontologies.
@@ -66,3 +66,17 @@ These workflows will help with excluding certain terms from integration into Mon
 7. `reports/excluded_terms.txt`: Runs reports/%_term_exclusions.txt for all ontologies and combines into a single file.
 8. `reports/exclusion_reasons.robot.template.tsv`: Runs reports/%_exclusion_reasons.robot.template.tsv for all ontologies and combines into a single file. 
 9. `exclusions-all`: Runs all exclusion artefacts for all ontologies.
+
+## Synchronization
+These workflows help synchronize Mondo with source ontologies.
+
+#### Makefile goals
+1. `generate-synchronization-files`: Runs synchronization pipeline.
+2. `sync-subclassof`: Runs 'sync-subclassof' part of synchronization pipeline, generating set of outputs for all ontologies.
+3. `sync-subclassof-%`: Generates subClassOf synchronization outputs for given ontology. Alias for `reports/%.subclass.added.robot.tsv`, `reports/%.subclass.confirmed.robot.tsv`, and `reports/%.subclass.direct-in-mondo-only.tsv`.
+4. `reports/%.subclass.added.robot.tsv`: Creates robot template containing new subclass relationships from given ontology to be imported into Mondo. Running this also runs / generates `reports/%.subclass.added-obsolete.robot.tsv`, `reports/%.subclass.confirmed.robot.tsv`, and `reports/%.subclass.direct-in-mondo-only.tsv`.
+5. `reports/%.subclass.added-obsolete.robot.tsv`: Creates robot template containing new subclass relationships from given ontology that would be imported into Mondo, except for that these terms are obsolete in Mondo. Running this also runs / generates `reports/%.subclass.added.robot.tsv`, `reports/%.subclass.confirmed.robot.tsv`, and `reports/%.subclass.direct-in-mondo-only.tsv`.
+6. `reports/%.subclass.confirmed.robot.tsv`: Creates robot template containing subclass relations for given ontology that exist in Mondo and are confirmed to also exist in the source. Running this also runs / generates `reports/%.subclass.added.robot.tsv`, `reports/%.subclass.added-obsolete.robot.tsv`, and `reports/%.subclass.direct-in-mondo-only.tsv`.
+7. `reports/%.subclass.direct-in-mondo-only.tsv`: Path to create file for relations for given ontology where direct subclass relation exists only in Mondo and not in the source. Running this also runs / generates `reports/%.subclass.added.robot.tsv`, `reports/%.subclass.added-obsolete.robot.tsv`, and `reports/%.subclass.confirmed.robot.tsv`.
+8. `reports/sync-subClassOf.direct-in-mondo-only.tsv`: For all subclass relationships in Mondo, shows which sources do not have it and whether no source has it. Combination of all `--outpath-direct-in-mondo-only` outputs for all sources, using those as inputs, and then deletes them after.
+9. `reports/sync-subClassOf.confirmed.tsv`: For all subclass relationships in Mondo, by source, a robot template containing showing what is in Mondo and are confirmed to also exist in the source. Combination of all `--outpath-confirmed` outputs for all sources.

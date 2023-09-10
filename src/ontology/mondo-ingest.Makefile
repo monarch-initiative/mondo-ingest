@@ -284,6 +284,7 @@ exclusions-all:
 	$(MAKE) $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
 
 # Exclusions: running for all ontologies
+# todo: change '> $(REPORTDIR)/excluded_terms.txt' to '> $@' like in goal '$(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv'?
 $(REPORTDIR)/excluded_terms.txt $(REPORTDIR)/exclusion_reasons.robot.template.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_term_exclusions.txt)
 	cat $(REPORTDIR)/*_term_exclusions.txt > $(REPORTDIR)/excluded_terms.txt; \
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*_exclusion_reasons.robot.template.tsv > $(REPORTDIR)/exclusion_reasons.robot.template.tsv
@@ -340,7 +341,7 @@ documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs s
 build-mondo-ingest:
 	$(MAKE) refresh-imports exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
-		recreate-unmapped-components documentation
+		recreate-unmapped-components sync documentation
 	$(MAKE) prepare_release
 
 .PHONY: build-mondo-ingest-no-imports
@@ -498,6 +499,41 @@ slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
 .PHONY: slurp-all
 slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
 
+
+#############################
+###### Synchronization ######
+#############################
+.PHONY: sync
+sync: sync-subclassof
+
+.PHONY: sync-subclassof
+sync-subclassof: $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv
+
+# todo: drop this? This is really just an alias here for quality of life, but not used by anything.
+.PHONY: sync-subclassof-%
+sync-subclassof-%:
+	$(MAKE) $(REPORTDIR)/$*.subclass.direct-in-mondo-only.tsv
+
+# Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
+$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), sync-subclassof-$(n))
+	python3 $(SCRIPTSDIR)/sync_subclassof_collate_direct_in_mondo_only.py --outpath $@
+
+$(REPORTDIR)/sync-subClassOf.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.subclass.confirmed.robot.tsv > $@
+
+# todo: Until ODK has oaklib >= 0.5.20, need '$(MAKE) pip-oaklib' below https://github.com/INCATools/ontology-development-kit/issues/936
+$(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv: tmp/mondo-ingest.db tmp/mondo.db tmp/mondo.sssom.tsv
+	$(MAKE) pip-oaklib
+	python3 $(SCRIPTSDIR)/sync_subclassof.py \
+	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
+	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
+	--outpath-confirmed $(REPORTDIR)/$*.subclass.confirmed.robot.tsv \
+	--outpath-direct-in-mondo-only $(REPORTDIR)/$*.subclass.direct-in-mondo-only.tsv \
+	--mondo-db-path $(TMPDIR)/mondo.db \
+	--mondo-ingest-db-path $(TMPDIR)/mondo-ingest.db \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--onto-config-path metadata/$*.yml
+
 #############################
 ######### Analysis ##########
 #############################
@@ -600,3 +636,23 @@ help:
 	@echo "Runs reports/%_exclusion_reasons.robot.template.tsv for all ontologies and combines into a single file.\n"
 	@echo "exclusions-all"
 	@echo "Runs all exclusion artefacts for all ontologies.\n"
+	# Synchronization
+	@echo "sync"
+	@echo "Runs synchronization pipeline.\n"
+	# - Synchronization: subClassOf
+	@echo "sync-subclassof"
+	@echo "Runs 'sync-subclassof' part of synchronization pipeline, generating set of outputs for all ontologies.\n"
+	@echo "sync-subclassof-%"
+	@echo "Generates subClassOf synchronization outputs for given ontology. Alias for 'reports/%.subclass.added.robot.tsv', 'reports/%.subclass.confirmed.robot.tsv', and 'reports/%.subclass.direct-in-mondo-only.tsv'.\n"
+	@echo "reports/%.subclass.added.robot.tsv"
+	@echo "Creates robot template containing new subclass relationships from given ontology to be imported into Mondo. Running this also runs / generates 'reports/%.subclass.confirmed.robot.tsv' and 'reports/%.subclass.direct-in-mondo-only.tsv'.\n"
+	@echo "reports/%.subclass.added-obsolete.robot.tsv": 
+	@echo "Creates robot template containing new subclass relationships from given ontology that would be imported into Mondo, except for that these terms are obsolete in Mondo. Running this also runs / generates 'reports/%.subclass.added.robot.tsv', 'reports/%.subclass.confirmed.robot.tsv', and 'reports/%.subclass.direct-in-mondo-only.tsv'.\n"
+	@echo "reports/%.subclass.confirmed.robot.tsv"
+	@echo "Creates robot template containing subclass relations for given ontology that exist in Mondo and are confirmed to also exist in the source. Running this also runs / generates 'reports/%.subclass.added.robot.tsv' and 'reports/%.subclass.direct-in-mondo-only.tsv'.\n"
+	@echo "reports/%.subclass.direct-in-mondo-only.tsv"
+	@echo "Path to create file for relations for given ontology where direct subclass relation exists only in Mondo and not in the source. Running this also runs / generates 'reports/%.subclass.added.robot.tsv' and 'reports/%.subclass.confirmed.robot.tsv'.\n"
+	@echo "reports/sync-subClassOf.direct-in-mondo-only.tsv"
+	@echo "For all subclass relationships in Mondo, shows which sources do not have it and whether no source has it. Combination of all --outpath-direct-in-mondo-only outputs for all sources, using those as inputs, and then deletes them after.\n"
+	@echo "reports/sync-subClassOf.confirmed.tsv"
+	@echo "For all subclass relationships in Mondo, by source, a robot template containing showing what is in Mondo and are confirmed to also exist in the source. Combination of all --outpath-confirmed outputs for all sources.\n"
