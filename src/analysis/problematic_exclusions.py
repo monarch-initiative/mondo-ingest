@@ -133,7 +133,7 @@ def populate_labels(
             f.write(instantiated_str)
         with open(command_save_path, 'w') as f:
             f.write(command_str)
-        subprocess.run(command_str.split())
+        subprocess.run(command_str.split(), capture_output=True, text=True)
 
     # Read results and return
     try:

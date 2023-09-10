@@ -404,12 +404,12 @@ def jinja_sparql(
         with open(command_save_path, 'w') as f:
             f.write(command_str)
         try:
-            result = subprocess.run(command_str.split())
+            result = subprocess.run(command_str.split(), capture_output=True, text=True)
         except FileNotFoundError as e:
             if 'robot' in str(e):
                 # joeflack4 2023/04/25: Suddenly my PATH is wrong. Could be virtualenvwrapper+PyCharm issue.
                 command_str = command_str.replace('robot query', '/usr/local/bin/robot query')
-                result = subprocess.run(command_str.split())
+                result = subprocess.run(command_str.split(), capture_output=True, text=True)
             else:
                 raise e
         stderr, stdout = result.stderr, result.stdout
