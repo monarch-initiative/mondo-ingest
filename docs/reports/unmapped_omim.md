@@ -4,6 +4,7 @@
 ### Unmapped mappable terms _(!excluded, !deprecated)_
 | subject_id    | subject_label                                                                                                      |
 |:--------------|:-------------------------------------------------------------------------------------------------------------------|
+| OMIMPS:604498 | Amegakaryocytic thrombocytopenia, congenital                                                                       |
 | OMIMPS:109400 | Basal cell nevus syndrome                                                                                          |
 | OMIMPS:135150 | Birt-Hogg-Dube syndrome                                                                                            |
 | OMIMPS:613652 | C1q deficiency                                                                                                     |
@@ -22,6 +23,7 @@
 | OMIMPS:164300 | Oculopharyngeal muscular dystrophy                                                                                 |
 | OMIMPS:608415 | Prolonged electroretinal response suppression                                                                      |
 | OMIMPS:177735 | Pseudohypoaldosteronism, type I                                                                                    |
+| OMIM:620481   | amegakaryocytic thrombocytopenia, congenital, 2                                                                    |
 | OMIM:620452   | amyotrophic lateral sclerosis 28                                                                                   |
 | OMIM:620384   | auditory neuropathy, autosomal dominant 2                                                                          |
 | OMIM:620458   | auriculocondylar syndrome 2b                                                                                       |
@@ -32,6 +34,7 @@
 | OMIM:620376   | autoinflammatory disease, systemic, with vasculitis                                                                |
 | OMIM:620343   | basal cell nevus syndrome 2                                                                                        |
 | OMIM:620459   | birt-hogg-dube syndrome 2                                                                                          |
+| OMIM:620486   | bleeding disorder, platelet-type, 25                                                                               |
 | OMIM:620442   | breast-ovarian cancer, familial, susceptibility to, 5                                                              |
 | OMIM:620321   | c1q deficiency 2                                                                                                   |
 | OMIM:620322   | c1q deficiency 3                                                                                                   |
@@ -93,7 +96,9 @@
 | OMIM:620374   | nephrolithiasis, calcium oxalate, 2, with or without nephrocalcinosis                                              |
 | OMIM:620306   | neurodegeneration and seizures due to copper transport defect                                                      |
 | OMIM:620327   | neurodegeneration with developmental delay, early respiratory failure, myoclonic seizures, and brain abnormalities |
+| OMIM:620489   | neurodevelopmental disorder with dysmorphic facies and behavioral abnormalities                                    |
 | OMIM:620455   | neurodevelopmental disorder with hypotonia and speech delay, with or without seizures                              |
+| OMIM:620494   | neurodevelopmental disorder with impaired language, behavioral abnormalities, and dysmorphic facies                |
 | OMIM:620371   | neurodevelopmental disorder with intracranial hemorrhage, seizures, and spasticity                                 |
 | OMIM:620445   | neurodevelopmental disorder with microcephaly and movement abnormalities                                           |
 | OMIM:620317   | neurodevelopmental disorder with microcephaly and speech delay, with or without brain abnormalities                |
@@ -123,8 +128,12 @@
 | OMIM:620354   | spermatogenic failure 83                                                                                           |
 | OMIM:620409   | spermatogenic failure 84                                                                                           |
 | OMIM:620490   | spermatogenic failure 85                                                                                           |
+| OMIM:620499   | spermatogenic failure 86                                                                                           |
+| OMIM:620500   | spermatogenic failure 87                                                                                           |
 | OMIM:301106   | spermatogenic failure, x-linked, 7                                                                                 |
+| OMIM:620484   | thrombocytopenia 10                                                                                                |
 | OMIM:620475   | thrombocytopenia 8, with dysmorphic features and developmental delay                                               |
 | OMIM:620478   | thrombocytopenia 9                                                                                                 |
 | OMIM:620483   | variegate porphyria, childhood-onset                                                                               |
 | OMIM:620415   | woolly hair-skin fragility syndrome                                                                                |
+| OMIM:620501   | ziegler-huang syndrome                                                                                             |
