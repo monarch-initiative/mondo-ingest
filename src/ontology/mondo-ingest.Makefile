@@ -14,6 +14,21 @@ MAPPINGSDIR=../mappings
 SKIP_HUGE=false
 
 ####################################
+### Package management #############
+####################################
+.PHONY: pip-%
+pip-%:
+	 python3 -m pip install --upgrade $*
+
+.PHONY: dependencies
+dependencies:
+	$(MAKE) pip-pip
+	$(MAKE) pip-setuptools
+	$(MAKE) pip-oaklib
+	$(MAKE) pip-sssom
+	$(MAKE) pip-semsql
+
+####################################
 ### Relevant signature #############
 ####################################
 # This section is concerned with identifiying the entities of interest that should be imported from the source.
@@ -159,14 +174,6 @@ ALL_COMPONENT_IDS=$(strip $(patsubst $(COMPONENTSDIR)/%.owl,%, $(OTHER_SRC)))
 #################
 ### Mappings ####
 #################
-.PHONY: sssom
-sssom:
-	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade sssom
-
-.PHONY: dependencies
-dependencies:
-	python3 -m pip install --upgrade pip setuptools && python3 -m pip install --upgrade semsql==0.3.2 oaklib
-
 ALL_MAPPINGS=$(foreach n,$(ALL_COMPONENT_IDS), $(MAPPINGSDIR)/$(n).sssom.tsv)
 
 $(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
