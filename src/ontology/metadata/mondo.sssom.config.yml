@@ -26,7 +26,7 @@ curie_map:
   ICD10CM__2: https://icd.codes/icd10cm/
   ICD10WHO: https://icd.who.int/browse10/2019/en#/
   ICD10WHO__2: http://apps.who.int/classifications/icd10/browse/2010/en#/
-  OMIMPS: https://www.omim.org/phenotypicSeries/PS
+  OMIMPS: https://omim.org/phenotypicSeries/PS
   MEDGEN: http://identifiers.org/medgen/
   MedDRA: http://identifiers.org/meddra/
   rdfs: http://www.w3.org/2000/01/rdf-schema#
@@ -69,7 +69,7 @@ curie_map:
   ICD10: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ICD10/"
   ICD10EXP: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ICD10EXP/"
   DERMO: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/DERMO/"
-  GARD: "http://purl.obolibrary.org/obo/GARD_"
+  GARD: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/GARD/"
   SNOMEDCT_US: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/SNOMEDCT_US/"
   MSH: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/MSH/"
   GC_ID: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/GC_ID/"
@@ -86,7 +86,6 @@ subject_prefixes:
   - OMIMPS
   - NCIT
   - DOID
-  - GARD
 relations:
   - oboInOwl:hasDbXref
   - skos:exactMatch
@@ -139,10 +138,3 @@ source_metadata:
       object_source: http://purl.obolibrary.org/obo/doid.owl
       object_source_version: http://purl.obolibrary.org/obo/doid/releases/2018-07-05/doid.owl
       mapping_date: "2018-07-05"
-  - from: MONDO
-    to: GARD
-    metadata:
-      object_source: https://ncats.nih.gov/gard
-      object_source_version: http://www.test.org/data/
-      mapping_date: "2023-06-08"
-      comment: "Genetic and Rare Diseases (GARD) Information Center."
