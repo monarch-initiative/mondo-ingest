@@ -9,41 +9,142 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/29cb3f67-0c69-4ae8-8c49-6f499be96faa
+# mapping_set_id: https://w3id.org/sssom/mappings/00f4aae1-d0dd-4902-a5ca-758705da51fe
 subject_id	subject_label	predicate_id	object_id	mapping_justification
+NCIT:C103222	Popliteal Fossa	oboInOwl:hasDbXref	UBERON:0013069	semapv:UnspecifiedMatching
+NCIT:C103384	Common Iliac Lymph Node	oboInOwl:hasDbXref	UBERON:0015878	semapv:UnspecifiedMatching
+NCIT:C12220	Lip	oboInOwl:hasDbXref	UBERON:0001833	semapv:UnspecifiedMatching
+NCIT:C12230	Hard Palate	oboInOwl:hasDbXref	UBERON:0003216	semapv:UnspecifiedMatching
+NCIT:C12232	Uvula	oboInOwl:hasDbXref	UBERON:0001734	semapv:UnspecifiedMatching
+NCIT:C12233	Submandibular Salivary Gland	oboInOwl:hasDbXref	UBERON:0001736	semapv:UnspecifiedMatching
+NCIT:C12234	Sublingual Salivary Gland	oboInOwl:hasDbXref	UBERON:0001832	semapv:UnspecifiedMatching
+NCIT:C12246	Hypopharynx	oboInOwl:hasDbXref	UBERON:0001051	semapv:UnspecifiedMatching
+NCIT:C12253	Upper Third of the Esophagus	oboInOwl:hasDbXref	UBERON:0013472	semapv:UnspecifiedMatching
+NCIT:C12254	Middle Third of the Esophagus	oboInOwl:hasDbXref	UBERON:0013474	semapv:UnspecifiedMatching
+NCIT:C12255	Lower Third of the Esophagus	oboInOwl:hasDbXref	UBERON:0013473	semapv:UnspecifiedMatching
+NCIT:C12256	Gastric Cardia	oboInOwl:hasDbXref	UBERON:0001162	semapv:UnspecifiedMatching
+NCIT:C12257	Fundus of the Stomach	oboInOwl:hasDbXref	UBERON:0001160	semapv:UnspecifiedMatching
+NCIT:C12260	Pylorus	oboInOwl:hasDbXref	UBERON:0001166	semapv:UnspecifiedMatching
+NCIT:C12263	Duodenum	oboInOwl:hasDbXref	UBERON:0002114	semapv:UnspecifiedMatching
+NCIT:C12265	Ascending Colon	oboInOwl:hasDbXref	UBERON:0001156	semapv:UnspecifiedMatching
+NCIT:C12266	Hepatic Flexure	oboInOwl:hasDbXref	UBERON:0022277	semapv:UnspecifiedMatching
+NCIT:C12267	Splenic Flexure	oboInOwl:hasDbXref	UBERON:0022276	semapv:UnspecifiedMatching
+NCIT:C12268	Descending Colon	oboInOwl:hasDbXref	UBERON:0001158	semapv:UnspecifiedMatching
+NCIT:C12275	Maxillary Sinus	oboInOwl:hasDbXref	UBERON:0001764	semapv:UnspecifiedMatching
+NCIT:C12279	Supraglottis	oboInOwl:hasDbXref	UBERON:0036263	semapv:UnspecifiedMatching
+NCIT:C12280	Subglottis	oboInOwl:hasDbXref	UBERON:0036068	semapv:UnspecifiedMatching
 NCIT:C12290	Mandible	oboInOwl:hasDbXref	UBERON:0001684	semapv:UnspecifiedMatching
+NCIT:C12292	External Ear	oboInOwl:hasDbXref	UBERON:0001757	semapv:UnspecifiedMatching
 NCIT:C12298	Retroperitoneum	oboInOwl:hasDbXref	UBERON:0003693	semapv:UnspecifiedMatching
+NCIT:C12308	Clitoris	oboInOwl:hasDbXref	UBERON:0002411	semapv:UnspecifiedMatching
 NCIT:C12311	Cervix Uteri	oboInOwl:hasDbXref	UBERON:0000002	semapv:UnspecifiedMatching
+NCIT:C12318	Broad Ligament	oboInOwl:hasDbXref	UBERON:0012332	semapv:UnspecifiedMatching
+NCIT:C12328	Epididymis	oboInOwl:hasDbXref	UBERON:0001301	semapv:UnspecifiedMatching
+NCIT:C12341	Conjunctiva	oboInOwl:hasDbXref	UBERON:0001811	semapv:UnspecifiedMatching
+NCIT:C12343	Retina	oboInOwl:hasDbXref	UBERON:0000966	semapv:UnspecifiedMatching
+NCIT:C12346	Lacrimal Gland	oboInOwl:hasDbXref	UBERON:0001817	semapv:UnspecifiedMatching
 NCIT:C12347	Orbit	oboInOwl:hasDbXref	UBERON:0001697	semapv:UnspecifiedMatching
+NCIT:C12351	Cerebral Hemisphere	oboInOwl:hasDbXref	UBERON:0001869	semapv:UnspecifiedMatching
+NCIT:C12352	Frontal Lobe	oboInOwl:hasDbXref	UBERON:0016525	semapv:UnspecifiedMatching
+NCIT:C12363	Pelvic Lymph Node	oboInOwl:hasDbXref	UBERON:0015876	semapv:UnspecifiedMatching
 NCIT:C12366	Bone	oboInOwl:hasDbXref	UBERON:0001474	semapv:UnspecifiedMatching
 NCIT:C12366	Bone	oboInOwl:hasDbXref	UBERON:0002481	semapv:UnspecifiedMatching
+NCIT:C12372	Artery	oboInOwl:hasDbXref	UBERON:0001637	semapv:UnspecifiedMatching
+NCIT:C12374	Connective Tissue	oboInOwl:hasDbXref	UBERON:0002384	semapv:UnspecifiedMatching
+NCIT:C12376	Bile Duct	oboInOwl:hasDbXref	UBERON:0002394	semapv:UnspecifiedMatching
+NCIT:C12377	Gallbladder	oboInOwl:hasDbXref	UBERON:0002110	semapv:UnspecifiedMatching
+NCIT:C12379	Large Intestine	oboInOwl:hasDbXref	UBERON:0000059	semapv:UnspecifiedMatching
+NCIT:C12380	Appendix	oboInOwl:hasDbXref	UBERON:0001154	semapv:UnspecifiedMatching
+NCIT:C12381	Cecum	oboInOwl:hasDbXref	UBERON:0001153	semapv:UnspecifiedMatching
+NCIT:C12382	Colon	oboInOwl:hasDbXref	UBERON:0001155	semapv:UnspecifiedMatching
+NCIT:C12384	Sigmoid Colon	oboInOwl:hasDbXref	UBERON:0001159	semapv:UnspecifiedMatching
+NCIT:C12385	Transverse Colon	oboInOwl:hasDbXref	UBERON:0001157	semapv:UnspecifiedMatching
+NCIT:C12386	Small Intestine	oboInOwl:hasDbXref	UBERON:0002108	semapv:UnspecifiedMatching
+NCIT:C12387	Ileum	oboInOwl:hasDbXref	UBERON:0002116	semapv:UnspecifiedMatching
+NCIT:C12388	Jejunum	oboInOwl:hasDbXref	UBERON:0002115	semapv:UnspecifiedMatching
+NCIT:C12389	Esophagus	oboInOwl:hasDbXref	UBERON:0001043	semapv:UnspecifiedMatching
+NCIT:C12390	Rectum	oboInOwl:hasDbXref	UBERON:0001052	semapv:UnspecifiedMatching
+NCIT:C12391	Stomach	oboInOwl:hasDbXref	UBERON:0000945	semapv:UnspecifiedMatching
 NCIT:C12392	Liver	oboInOwl:hasDbXref	UBERON:0002107	semapv:UnspecifiedMatching
+NCIT:C12393	Pancreas	oboInOwl:hasDbXref	UBERON:0001264	semapv:UnspecifiedMatching
+NCIT:C12394	Ear	oboInOwl:hasDbXref	UBERON:0001690	semapv:UnspecifiedMatching
 NCIT:C12398	Pineal Gland	oboInOwl:hasDbXref	UBERON:0001905	semapv:UnspecifiedMatching
+NCIT:C12399	Pituitary Gland	oboInOwl:hasDbXref	UBERON:0000007	semapv:UnspecifiedMatching
+NCIT:C12400	Thyroid Gland	oboInOwl:hasDbXref	UBERON:0002046	semapv:UnspecifiedMatching
+NCIT:C12401	Eye	oboInOwl:hasDbXref	UBERON:0000970	semapv:UnspecifiedMatching
+NCIT:C12403	Fallopian Tube	oboInOwl:hasDbXref	UBERON:0003889	semapv:UnspecifiedMatching
 NCIT:C12404	Ovary	oboInOwl:hasDbXref	UBERON:0000992	semapv:UnspecifiedMatching
+NCIT:C12405	Uterus	oboInOwl:hasDbXref	UBERON:0000995	semapv:UnspecifiedMatching
 NCIT:C12407	Vagina	oboInOwl:hasDbXref	UBERON:0000996	semapv:UnspecifiedMatching
+NCIT:C12408	Vulva	oboInOwl:hasDbXref	UBERON:0000997	semapv:UnspecifiedMatching
+NCIT:C12409	Penis	oboInOwl:hasDbXref	UBERON:0000989	semapv:UnspecifiedMatching
+NCIT:C12410	Prostate Gland	oboInOwl:hasDbXref	UBERON:0002367	semapv:UnspecifiedMatching
 NCIT:C12412	Testis	oboInOwl:hasDbXref	UBERON:0000473	semapv:UnspecifiedMatching
+NCIT:C12414	Bladder	oboInOwl:hasDbXref	UBERON:0001255	semapv:UnspecifiedMatching
 NCIT:C12415	Kidney	oboInOwl:hasDbXref	UBERON:0002113	semapv:UnspecifiedMatching
+NCIT:C12416	Ureter	oboInOwl:hasDbXref	UBERON:0000056	semapv:UnspecifiedMatching
+NCIT:C12417	Urethra	oboInOwl:hasDbXref	UBERON:0000057	semapv:UnspecifiedMatching
 NCIT:C12418	Head and Neck	oboInOwl:hasDbXref	UBERON:0000033	semapv:UnspecifiedMatching
 NCIT:C12418	Head and Neck	oboInOwl:hasDbXref	UBERON:0000974	semapv:UnspecifiedMatching
+NCIT:C12420	Larynx	oboInOwl:hasDbXref	UBERON:0001737	semapv:UnspecifiedMatching
+NCIT:C12421	Oral Cavity	oboInOwl:hasDbXref	UBERON:0000165	semapv:UnspecifiedMatching
+NCIT:C12421	Oral Cavity	oboInOwl:hasDbXref	UBERON:0000167	semapv:UnspecifiedMatching
+NCIT:C12422	Tongue	oboInOwl:hasDbXref	UBERON:0001723	semapv:UnspecifiedMatching
+NCIT:C12423	Nasopharynx	oboInOwl:hasDbXref	UBERON:0001728	semapv:UnspecifiedMatching
+NCIT:C12424	Nasal Cavity	oboInOwl:hasDbXref	UBERON:0001707	semapv:UnspecifiedMatching
+NCIT:C12425	Pharynx	oboInOwl:hasDbXref	UBERON:0006562	semapv:UnspecifiedMatching
+NCIT:C12427	Parotid Gland	oboInOwl:hasDbXref	UBERON:0001831	semapv:UnspecifiedMatching
+NCIT:C12428	Trachea	oboInOwl:hasDbXref	UBERON:0003126	semapv:UnspecifiedMatching
+NCIT:C12429	Limb	oboInOwl:hasDbXref	UBERON:0002101	semapv:UnspecifiedMatching
 NCIT:C12431	Bone Marrow	oboInOwl:hasDbXref	UBERON:0002371	semapv:UnspecifiedMatching
+NCIT:C12432	Spleen	oboInOwl:hasDbXref	UBERON:0002106	semapv:UnspecifiedMatching
+NCIT:C12433	Thymus Gland	oboInOwl:hasDbXref	UBERON:0002370	semapv:UnspecifiedMatching
+NCIT:C12434	Blood	oboInOwl:hasDbXref	UBERON:0000178	semapv:UnspecifiedMatching
 NCIT:C12438	Central Nervous System	oboInOwl:hasDbXref	UBERON:0001017	semapv:UnspecifiedMatching
 NCIT:C12439	Brain	oboInOwl:hasDbXref	UBERON:0000955	semapv:UnspecifiedMatching
+NCIT:C12441	Brain Stem	oboInOwl:hasDbXref	UBERON:0002298	semapv:UnspecifiedMatching
+NCIT:C12443	Cerebral Cortex	oboInOwl:hasDbXref	UBERON:0000956	semapv:UnspecifiedMatching
+NCIT:C12445	Cerebellum	oboInOwl:hasDbXref	UBERON:0002037	semapv:UnspecifiedMatching
+NCIT:C12454	Subthalamic Nucleus	oboInOwl:hasDbXref	UBERON:0001906	semapv:UnspecifiedMatching
 NCIT:C12459	Thalamus	oboInOwl:hasDbXref	UBERON:0010225	semapv:UnspecifiedMatching
 NCIT:C12464	Spinal Cord	oboInOwl:hasDbXref	UBERON:0002240	semapv:UnspecifiedMatching
 NCIT:C12468	Lung	oboInOwl:hasDbXref	UBERON:0002048	semapv:UnspecifiedMatching
+NCIT:C12469	Pleura	oboInOwl:hasDbXref	UBERON:0000977	semapv:UnspecifiedMatching
 NCIT:C12470	Skin	oboInOwl:hasDbXref	UBERON:0000014	semapv:UnspecifiedMatching
 NCIT:C12470	Skin	oboInOwl:hasDbXref	UBERON:0002097	semapv:UnspecifiedMatching
 NCIT:C12471	Soft Tissue	oboInOwl:hasDbXref	UBERON:0034929	semapv:UnspecifiedMatching
+NCIT:C12472	Adipose Tissue	oboInOwl:hasDbXref	UBERON:0001013	semapv:UnspecifiedMatching
+NCIT:C12473	Synovial Membrane	oboInOwl:hasDbXref	UBERON:0002018	semapv:UnspecifiedMatching
+NCIT:C12498	External Acoustic Meatus	oboInOwl:hasDbXref	UBERON:0001352	semapv:UnspecifiedMatching
+NCIT:C12505	Buccal Mucosa	oboInOwl:hasDbXref	UBERON:0006956	semapv:UnspecifiedMatching
 NCIT:C12664	Abdomen	oboInOwl:hasDbXref	UBERON:0003684	semapv:UnspecifiedMatching
+NCIT:C12666	Adrenal Gland	oboInOwl:hasDbXref	UBERON:0002369	semapv:UnspecifiedMatching
+NCIT:C12669	Aorta	oboInOwl:hasDbXref	UBERON:0000947	semapv:UnspecifiedMatching
+NCIT:C12671	Upper Extremity	oboInOwl:hasDbXref	UBERON:0001460	semapv:UnspecifiedMatching
+NCIT:C12673	Autonomic Nervous System	oboInOwl:hasDbXref	UBERON:0002410	semapv:UnspecifiedMatching
 NCIT:C12674	Axilla	oboInOwl:hasDbXref	UBERON:0009472	semapv:UnspecifiedMatching
+NCIT:C12679	Blood Vessel	oboInOwl:hasDbXref	UBERON:0001981	semapv:UnspecifiedMatching
+NCIT:C12683	Bronchus	oboInOwl:hasDbXref	UBERON:0002185	semapv:UnspecifiedMatching
+NCIT:C12684	Bronchiole	oboInOwl:hasDbXref	UBERON:0002186	semapv:UnspecifiedMatching
 NCIT:C12688	Carpal Bone	oboInOwl:hasDbXref	UBERON:0001435	semapv:UnspecifiedMatching
 NCIT:C12692	Cerebrospinal Fluid	oboInOwl:hasDbXref	UBERON:0001359	semapv:UnspecifiedMatching
 NCIT:C12693	Cervical Vertebra	oboInOwl:hasDbXref	UBERON:0002413	semapv:UnspecifiedMatching
 NCIT:C12695	Clavicle	oboInOwl:hasDbXref	UBERON:0001105	semapv:UnspecifiedMatching
 NCIT:C12696	Coccyx	oboInOwl:hasDbXref	UBERON:0001350	semapv:UnspecifiedMatching
+NCIT:C12698	Common Bile Duct	oboInOwl:hasDbXref	UBERON:0001174	semapv:UnspecifiedMatching
+NCIT:C12700	Cranial Nerve	oboInOwl:hasDbXref	UBERON:0001785	semapv:UnspecifiedMatching
+NCIT:C12701	Dermis	oboInOwl:hasDbXref	UBERON:0002067	semapv:UnspecifiedMatching
+NCIT:C12702	Diaphragm	oboInOwl:hasDbXref	UBERON:0001103	semapv:UnspecifiedMatching
+NCIT:C12704	Endocrine Gland	oboInOwl:hasDbXref	UBERON:0002368	semapv:UnspecifiedMatching
 NCIT:C12711	Ethmoid Bone	oboInOwl:hasDbXref	UBERON:0001679	semapv:UnspecifiedMatching
+NCIT:C12715	Femoral Artery	oboInOwl:hasDbXref	UBERON:0002060	semapv:UnspecifiedMatching
+NCIT:C12716	Femoral Vein	oboInOwl:hasDbXref	UBERON:0001361	semapv:UnspecifiedMatching
 NCIT:C12717	Femur	oboInOwl:hasDbXref	UBERON:0000981	semapv:UnspecifiedMatching
 NCIT:C12718	Fibula	oboInOwl:hasDbXref	UBERON:0001446	semapv:UnspecifiedMatching
+NCIT:C12719	Ganglion	oboInOwl:hasDbXref	UBERON:0000045	semapv:UnspecifiedMatching
+NCIT:C12724	Glottis	oboInOwl:hasDbXref	UBERON:0002486	semapv:UnspecifiedMatching
+NCIT:C12726	Inguinal Region	oboInOwl:hasDbXref	UBERON:0008337	semapv:UnspecifiedMatching
+NCIT:C12727	Heart	oboInOwl:hasDbXref	UBERON:0000948	semapv:UnspecifiedMatching
 NCIT:C12731	Humerus	oboInOwl:hasDbXref	UBERON:0000976	semapv:UnspecifiedMatching
 NCIT:C12744	Lumbar Vertebra	oboInOwl:hasDbXref	UBERON:0002414	semapv:UnspecifiedMatching
 NCIT:C12745	Lymph Node	oboInOwl:hasDbXref	UBERON:0000029	semapv:UnspecifiedMatching
@@ -51,27 +152,53 @@ NCIT:C12748	Mediastinum	oboInOwl:hasDbXref	UBERON:0003728	semapv:UnspecifiedMatc
 NCIT:C12751	Metacarpal Bone	oboInOwl:hasDbXref	UBERON:0010544	semapv:UnspecifiedMatching
 NCIT:C12752	Metatarsal Bone	oboInOwl:hasDbXref	UBERON:6004648	semapv:UnspecifiedMatching
 NCIT:C12757	Occipital Bone	oboInOwl:hasDbXref	UBERON:0001676	semapv:UnspecifiedMatching
+NCIT:C12762	Oropharynx	oboInOwl:hasDbXref	UBERON:0001729	semapv:UnspecifiedMatching
+NCIT:C12763	Paranasal Sinus	oboInOwl:hasDbXref	UBERON:0001825	semapv:UnspecifiedMatching
+NCIT:C12765	Parathyroid Gland	oboInOwl:hasDbXref	UBERON:0001132	semapv:UnspecifiedMatching
 NCIT:C12766	Parietal Bone	oboInOwl:hasDbXref	UBERON:0004865	semapv:UnspecifiedMatching
 NCIT:C12767	Pelvis	oboInOwl:hasDbXref	UBERON:0001270	semapv:UnspecifiedMatching
 NCIT:C12767	Pelvis	oboInOwl:hasDbXref	UBERON:0002355	semapv:UnspecifiedMatching
+NCIT:C12768	Peripheral Nerve	oboInOwl:hasDbXref	UBERON:0001021	semapv:UnspecifiedMatching
+NCIT:C12769	Peritoneal Cavity	oboInOwl:hasDbXref	UBERON:0001179	semapv:UnspecifiedMatching
 NCIT:C12770	Peritoneum	oboInOwl:hasDbXref	UBERON:0002358	semapv:UnspecifiedMatching
 NCIT:C12777	Radius Bone	oboInOwl:hasDbXref	UBERON:0001423	semapv:UnspecifiedMatching
 NCIT:C12782	Rib	oboInOwl:hasDbXref	UBERON:0002228	semapv:UnspecifiedMatching
 NCIT:C12783	Scapula	oboInOwl:hasDbXref	UBERON:0006849	semapv:UnspecifiedMatching
+NCIT:C12785	Scrotum	oboInOwl:hasDbXref	UBERON:0001300	semapv:UnspecifiedMatching
+NCIT:C12787	Seminal Vesicle	oboInOwl:hasDbXref	UBERON:0000998	semapv:UnspecifiedMatching
 NCIT:C12789	Skull	oboInOwl:hasDbXref	UBERON:0003128	semapv:UnspecifiedMatching
 NCIT:C12790	Sphenoid Bone	oboInOwl:hasDbXref	UBERON:0001677	semapv:UnspecifiedMatching
 NCIT:C12793	Sternum	oboInOwl:hasDbXref	UBERON:0000975	semapv:UnspecifiedMatching
 NCIT:C12796	Tarsal Bone	oboInOwl:hasDbXref	UBERON:0001447	semapv:UnspecifiedMatching
 NCIT:C12797	Temporal Bone	oboInOwl:hasDbXref	UBERON:0001678	semapv:UnspecifiedMatching
 NCIT:C12798	Thoracic Vertebra	oboInOwl:hasDbXref	UBERON:0002347	semapv:UnspecifiedMatching
+NCIT:C12799	Thorax	oboInOwl:hasDbXref	UBERON:0001443	semapv:UnspecifiedMatching
 NCIT:C12800	Tibia	oboInOwl:hasDbXref	UBERON:0000979	semapv:UnspecifiedMatching
+NCIT:C12802	Tonsil	oboInOwl:hasDbXref	UBERON:0002372	semapv:UnspecifiedMatching
 NCIT:C12809	Ulna	oboInOwl:hasDbXref	UBERON:0001424	semapv:UnspecifiedMatching
-NCIT:C12998	Vertebral Column	oboInOwl:hasDbXref	UBERON:0013706	semapv:UnspecifiedMatching
+NCIT:C12813	Vas Deferens	oboInOwl:hasDbXref	UBERON:0001000	semapv:UnspecifiedMatching
+NCIT:C12814	Vein	oboInOwl:hasDbXref	UBERON:0001638	semapv:UnspecifiedMatching
+NCIT:C12863	Middle Phalanx of Hand	oboInOwl:hasDbXref	UBERON:0003864	semapv:UnspecifiedMatching
+NCIT:C12903	Supraclavicular Lymph Node	oboInOwl:hasDbXref	UBERON:0035279	semapv:UnspecifiedMatching
+NCIT:C12998	Vertebral Column	oboInOwl:hasDbXref	UBERON:0001130	semapv:UnspecifiedMatching
+NCIT:C13005	Pericardium	oboInOwl:hasDbXref	UBERON:0002407	semapv:UnspecifiedMatching
+NCIT:C13011	Ampulla of Vater	oboInOwl:hasDbXref	UBERON:0004913	semapv:UnspecifiedMatching
+NCIT:C13044	Joint	oboInOwl:hasDbXref	UBERON:0000982	semapv:UnspecifiedMatching
+NCIT:C13045	Tendon	oboInOwl:hasDbXref	UBERON:0000043	semapv:UnspecifiedMatching
+NCIT:C13046	Ligament	oboInOwl:hasDbXref	UBERON:0000211	semapv:UnspecifiedMatching
+NCIT:C13050	Skeletal Muscle Tissue	oboInOwl:hasDbXref	UBERON:0001134	semapv:UnspecifiedMatching
+NCIT:C13062	Back	oboInOwl:hasDbXref	UBERON:0001137	semapv:UnspecifiedMatching
 NCIT:C13063	Neck	oboInOwl:hasDbXref	UBERON:0000974	semapv:UnspecifiedMatching
 NCIT:C13071	Face	oboInOwl:hasDbXref	UBERON:0001456	semapv:UnspecifiedMatching
+NCIT:C13188	Amniotic Fluid	oboInOwl:hasDbXref	UBERON:0000173	semapv:UnspecifiedMatching
+NCIT:C13190	Aqueous Humor	oboInOwl:hasDbXref	UBERON:0001796	semapv:UnspecifiedMatching
+NCIT:C13272	Placenta	oboInOwl:hasDbXref	UBERON:0001987	semapv:UnspecifiedMatching
 NCIT:C13300	Umbilical Cord Blood	oboInOwl:hasDbXref	UBERON:0012168	semapv:UnspecifiedMatching
+NCIT:C142320	Splenic Lymph Node	oboInOwl:hasDbXref	UBERON:0015469	semapv:UnspecifiedMatching
 NCIT:C159203	Ascites Fluid Sample	oboInOwl:hasDbXref	UBERON:0007795	semapv:UnspecifiedMatching
+NCIT:C164003	Colonic Mucosa	oboInOwl:hasDbXref	UBERON:0000317	semapv:UnspecifiedMatching
 NCIT:C164009	Bone Marrow Sample	oboInOwl:hasDbXref	UBERON:0002371	semapv:UnspecifiedMatching
+NCIT:C165177	Anal Sphincter	oboInOwl:hasDbXref	UBERON:0004916	semapv:UnspecifiedMatching
 NCIT:C173496	Peripheral Blood	oboInOwl:hasDbXref	UBERON:0013756	semapv:UnspecifiedMatching
 NCIT:C177357	Suprasellar/Neurohypophyseal	oboInOwl:hasDbXref	UBERON:0001905	semapv:UnspecifiedMatching
 NCIT:C177357	Suprasellar/Neurohypophyseal	oboInOwl:hasDbXref	UBERON:0003689	semapv:UnspecifiedMatching
@@ -80,34 +207,86 @@ NCIT:C177766	Frontal Lobe Cortex	oboInOwl:hasDbXref	UBERON:0001870	semapv:Unspec
 NCIT:C177767	Occipital Lobe Cortex	oboInOwl:hasDbXref	UBERON:0016540	semapv:UnspecifiedMatching
 NCIT:C177768	Temporal Lobe Cortex	oboInOwl:hasDbXref	UBERON:0016538	semapv:UnspecifiedMatching
 NCIT:C185194	Cerebrospinal Fluid Sample	oboInOwl:hasDbXref	UBERON:0001359	semapv:UnspecifiedMatching
+NCIT:C186102	Anorectum	oboInOwl:hasDbXref	UBERON:8410050	semapv:UnspecifiedMatching
+NCIT:C199220	Carotid Artery Segment	oboInOwl:hasDbXref	UBERON:0005396	semapv:UnspecifiedMatching
 NCIT:C25203	Shoulder	oboInOwl:hasDbXref	UBERON:0001467	semapv:UnspecifiedMatching
+NCIT:C25264	Carina	oboInOwl:hasDbXref	UBERON:0006679	semapv:UnspecifiedMatching
 NCIT:C25389	Chest	oboInOwl:hasDbXref	UBERON:0001443	semapv:UnspecifiedMatching
 NCIT:C26470	Maxilla	oboInOwl:hasDbXref	UBERON:0002397	semapv:UnspecifiedMatching
 NCIT:C32042	Acetabulum	oboInOwl:hasDbXref	UBERON:0001269	semapv:UnspecifiedMatching
+NCIT:C32078	Ankle Joint	oboInOwl:hasDbXref	UBERON:0001488	semapv:UnspecifiedMatching
 NCIT:C32141	Arm	oboInOwl:hasDbXref	UBERON:0004250	semapv:UnspecifiedMatching
+NCIT:C32212	Blood Capillary	oboInOwl:hasDbXref	UBERON:0001982	semapv:UnspecifiedMatching
 NCIT:C32250	Calcaneum	oboInOwl:hasDbXref	UBERON:0001450	semapv:UnspecifiedMatching
 NCIT:C32497	Elbow Joint	oboInOwl:hasDbXref	UBERON:0001461	semapv:UnspecifiedMatching
+NCIT:C32538	Esophageal Mucosa	oboInOwl:hasDbXref	UBERON:0002469	semapv:UnspecifiedMatching
 NCIT:C32608	Finger	oboInOwl:hasDbXref	UBERON:0002389	semapv:UnspecifiedMatching
 NCIT:C32622	Foot	oboInOwl:hasDbXref	UBERON:0002387	semapv:UnspecifiedMatching
 NCIT:C32635	Frontal Bone	oboInOwl:hasDbXref	UBERON:0004866	semapv:UnspecifiedMatching
+NCIT:C32656	Gastric Mucosa	oboInOwl:hasDbXref	UBERON:0001199	semapv:UnspecifiedMatching
+NCIT:C32668	Gastroesophageal Junction	oboInOwl:hasDbXref	UBERON:0007650	semapv:UnspecifiedMatching
+NCIT:C32677	Gingiva	oboInOwl:hasDbXref	UBERON:0001828	semapv:UnspecifiedMatching
 NCIT:C32712	Hand	oboInOwl:hasDbXref	UBERON:0002398	semapv:UnspecifiedMatching
 NCIT:C32719	Head of the Fibula	oboInOwl:hasDbXref	UBERON:0008775	semapv:UnspecifiedMatching
+NCIT:C32730	Hepatic Duct	oboInOwl:hasDbXref	UBERON:0005171	semapv:UnspecifiedMatching
+NCIT:C32736	Hepatic Vein	oboInOwl:hasDbXref	UBERON:0001143	semapv:UnspecifiedMatching
 NCIT:C32765	Ilium	oboInOwl:hasDbXref	UBERON:0001273	semapv:UnspecifiedMatching
+NCIT:C32853	Internal Mammary Lymph Node	oboInOwl:hasDbXref	UBERON:0035219	semapv:UnspecifiedMatching
 NCIT:C32884	Ischium	oboInOwl:hasDbXref	UBERON:0001274	semapv:UnspecifiedMatching
 NCIT:C32898	Knee Joint	oboInOwl:hasDbXref	UBERON:0001465	semapv:UnspecifiedMatching
 NCIT:C32906	Lacrimal Bone	oboInOwl:hasDbXref	UBERON:0001680	semapv:UnspecifiedMatching
 NCIT:C32974	Leg	oboInOwl:hasDbXref	UBERON:0000978	semapv:UnspecifiedMatching
+NCIT:C32979	Leptomeninges	oboInOwl:hasDbXref	UBERON:0000391	semapv:UnspecifiedMatching
+NCIT:C33049	Male Prepuce	oboInOwl:hasDbXref	UBERON:0001332	semapv:UnspecifiedMatching
+NCIT:C33073	Mediastinal Lymph Node	oboInOwl:hasDbXref	UBERON:0002524	semapv:UnspecifiedMatching
+NCIT:C33103	Mesentery	oboInOwl:hasDbXref	UBERON:0002095	semapv:UnspecifiedMatching
+NCIT:C33105	Mesothelium	oboInOwl:hasDbXref	UBERON:0001136	semapv:UnspecifiedMatching
+NCIT:C33156	Nail	oboInOwl:hasDbXref	UBERON:0001705	semapv:UnspecifiedMatching
 NCIT:C33157	Nasal Bone	oboInOwl:hasDbXref	UBERON:0001681	semapv:UnspecifiedMatching
 NCIT:C33209	Omentum	oboInOwl:hasDbXref	UBERON:0003688	semapv:UnspecifiedMatching
+NCIT:C33278	Parotid Gland Lymph Node	oboInOwl:hasDbXref	UBERON:0015857	semapv:UnspecifiedMatching
 NCIT:C33282	Patella	oboInOwl:hasDbXref	UBERON:0002446	semapv:UnspecifiedMatching
+NCIT:C33318	Pharyngeal Tonsil	oboInOwl:hasDbXref	UBERON:0001732	semapv:UnspecifiedMatching
 NCIT:C33506	Sacrococcygeal Joint	oboInOwl:hasDbXref	UBERON:0005473	semapv:UnspecifiedMatching
 NCIT:C33508	Sacrum	oboInOwl:hasDbXref	UBERON:0005473	semapv:UnspecifiedMatching
+NCIT:C33568	Small Intestinal Mucosa	oboInOwl:hasDbXref	UBERON:0001204	semapv:UnspecifiedMatching
+NCIT:C33763	Thigh	oboInOwl:hasDbXref	UBERON:0000376	semapv:UnspecifiedMatching
 NCIT:C33788	Toe	oboInOwl:hasDbXref	UBERON:0001466	semapv:UnspecifiedMatching
+NCIT:C33816	Trunk	oboInOwl:hasDbXref	UBERON:0002100	semapv:UnspecifiedMatching
+NCIT:C33868	Vertebral Bone	oboInOwl:hasDbXref	UBERON:0002412	semapv:UnspecifiedMatching
+NCIT:C33894	Wrist Joint	oboInOwl:hasDbXref	UBERON:0001491	semapv:UnspecifiedMatching
 NCIT:C34082	Gastrointestinal Tract	oboInOwl:hasDbXref	UBERON:0001555	semapv:UnspecifiedMatching
+NCIT:C34320	Umbilical Cord	oboInOwl:hasDbXref	UBERON:0002331	semapv:UnspecifiedMatching
+NCIT:C41449	Epidural Spinal Canal Space	oboInOwl:hasDbXref	UBERON:0003691	semapv:UnspecifiedMatching
+NCIT:C43362	Anus	oboInOwl:hasDbXref	UBERON:0001245	semapv:UnspecifiedMatching
+NCIT:C48821	Jaw Bone	oboInOwl:hasDbXref	UBERON:0001708	semapv:UnspecifiedMatching
 NCIT:C52799	Talus	oboInOwl:hasDbXref	UBERON:0002395	semapv:UnspecifiedMatching
+NCIT:C52810	Sciatic Nerve	oboInOwl:hasDbXref	UBERON:0001322	semapv:UnspecifiedMatching
+NCIT:C52834	Hand Digit 1	oboInOwl:hasDbXref	UBERON:0001463	semapv:UnspecifiedMatching
+NCIT:C52835	Hand Digit 2	oboInOwl:hasDbXref	UBERON:0003622	semapv:UnspecifiedMatching
+NCIT:C52837	Hand Digit 4	oboInOwl:hasDbXref	UBERON:0003624	semapv:UnspecifiedMatching
+NCIT:C52838	Hand Digit 5	oboInOwl:hasDbXref	UBERON:0003625	semapv:UnspecifiedMatching
+NCIT:C53146	Popliteal Lymph Node	oboInOwl:hasDbXref	UBERON:0001543	semapv:UnspecifiedMatching
+NCIT:C54187	Floor of Mouth	oboInOwl:hasDbXref	UBERON:0003679	semapv:UnspecifiedMatching
+NCIT:C54188	Rectosigmoid Region	oboInOwl:hasDbXref	UBERON:0036214	semapv:UnspecifiedMatching
+NCIT:C54272	Throat	oboInOwl:hasDbXref	UBERON:0000341	semapv:UnspecifiedMatching
 NCIT:C62484	Chest Wall	oboInOwl:hasDbXref	UBERON:0016435	semapv:UnspecifiedMatching
+NCIT:C63705	Infraclavicular Lymph Node	oboInOwl:hasDbXref	UBERON:0035162	semapv:UnspecifiedMatching
 NCIT:C64193	Hip	oboInOwl:hasDbXref	UBERON:0001464	semapv:UnspecifiedMatching
+NCIT:C66852	Carotid Body	oboInOwl:hasDbXref	UBERON:0001629	semapv:UnspecifiedMatching
+NCIT:C69315	Thoracic Spine	oboInOwl:hasDbXref	UBERON:0006073	semapv:UnspecifiedMatching
 NCIT:C77608	Abdominal Wall	oboInOwl:hasDbXref	UBERON:0003697	semapv:UnspecifiedMatching
+NCIT:C77637	Oral Mucosa	oboInOwl:hasDbXref	UBERON:0003729	semapv:UnspecifiedMatching
+NCIT:C77641	Mesenteric Lymph Node	oboInOwl:hasDbXref	UBERON:0002509	semapv:UnspecifiedMatching
+NCIT:C77643	Paraaortic Lymph Node	oboInOwl:hasDbXref	UBERON:0016386	semapv:UnspecifiedMatching
+NCIT:C77650	Submandibular Lymph Node	oboInOwl:hasDbXref	UBERON:0002520	semapv:UnspecifiedMatching
+NCIT:C81169	Mentum	oboInOwl:hasDbXref	UBERON:0008199	semapv:UnspecifiedMatching
+NCIT:C88143	External Iliac Lymph Node	oboInOwl:hasDbXref	UBERON:0015880	semapv:UnspecifiedMatching
+NCIT:C89749	Alveolar Ridge	oboInOwl:hasDbXref	UBERON:0004103	semapv:UnspecifiedMatching
+NCIT:C89803	Forehead	oboInOwl:hasDbXref	UBERON:0008200	semapv:UnspecifiedMatching
 NCIT:C89806	Buttock	oboInOwl:hasDbXref	UBERON:0013691	semapv:UnspecifiedMatching
 NCIT:C89807	Scalp	oboInOwl:hasDbXref	UBERON:0000403	semapv:UnspecifiedMatching
+NCIT:C97112	Aortic Body	oboInOwl:hasDbXref	UBERON:0034971	semapv:UnspecifiedMatching
+NCIT:C98188	Occipital Lymph Node	oboInOwl:hasDbXref	UBERON:0035204	semapv:UnspecifiedMatching
+NCIT:C98189	Retroperitoneal Lymph Node	oboInOwl:hasDbXref	UBERON:0035371	semapv:UnspecifiedMatching
 

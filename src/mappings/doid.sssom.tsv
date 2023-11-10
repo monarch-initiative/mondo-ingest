@@ -1232,8 +1232,10 @@ DOID:0050753	cerebellar ataxia	oboInOwl:hasDbXref	MESH:D002524	semapv:Unspecifie
 DOID:0050754	ataxia with oculomotor apraxia type 1	oboInOwl:hasDbXref	GARD:9283	semapv:UnspecifiedMatching
 DOID:0050754	ataxia with oculomotor apraxia type 1	oboInOwl:hasDbXref	OMIM:208920	semapv:UnspecifiedMatching
 DOID:0050754	ataxia with oculomotor apraxia type 1	skos:exactMatch	OMIM:208920	semapv:UnspecifiedMatching
-DOID:0050755	ataxia with oculomotor apraxia type 2	oboInOwl:hasDbXref	OMIM:606002	semapv:UnspecifiedMatching
-DOID:0050755	ataxia with oculomotor apraxia type 2	skos:exactMatch	OMIM:606002	semapv:UnspecifiedMatching
+DOID:0050755	spinocerebellar ataxia with axonal neuropathy 2	oboInOwl:hasDbXref	GARD:12860	semapv:UnspecifiedMatching
+DOID:0050755	spinocerebellar ataxia with axonal neuropathy 2	oboInOwl:hasDbXref	OMIM:606002	semapv:UnspecifiedMatching
+DOID:0050755	spinocerebellar ataxia with axonal neuropathy 2	oboInOwl:hasDbXref	ORDO:64753	semapv:UnspecifiedMatching
+DOID:0050755	spinocerebellar ataxia with axonal neuropathy 2	skos:exactMatch	OMIM:606002	semapv:UnspecifiedMatching
 DOID:0050757	deafness-dystonia-optic neuronopathy syndrome	oboInOwl:hasDbXref	MESH:C535808	semapv:UnspecifiedMatching
 DOID:0050757	deafness-dystonia-optic neuronopathy syndrome	oboInOwl:hasDbXref	OMIM:304700	semapv:UnspecifiedMatching
 DOID:0050757	deafness-dystonia-optic neuronopathy syndrome	oboInOwl:hasDbXref	ORDO:3213	semapv:UnspecifiedMatching
@@ -1535,8 +1537,6 @@ DOID:0050858	Marshall-Smith syndrome	oboInOwl:hasDbXref	MESH:C536026	semapv:Unsp
 DOID:0050858	Marshall-Smith syndrome	oboInOwl:hasDbXref	OMIM:602535	semapv:UnspecifiedMatching
 DOID:0050858	Marshall-Smith syndrome	oboInOwl:hasDbXref	ORDO:561	semapv:UnspecifiedMatching
 DOID:0050858	Marshall-Smith syndrome	skos:exactMatch	OMIM:602535	semapv:UnspecifiedMatching
-DOID:0050861	colorectal adenocarcinoma	oboInOwl:hasDbXref	ICD10CM:C18	semapv:UnspecifiedMatching
-DOID:0050861	colorectal adenocarcinoma	oboInOwl:hasDbXref	ICD10CM:C20	semapv:UnspecifiedMatching
 DOID:0050861	colorectal adenocarcinoma	oboInOwl:hasDbXref	NCI:C5105	semapv:UnspecifiedMatching
 DOID:0050861	colorectal adenocarcinoma	oboInOwl:hasDbXref	UMLS_CUI:C1319315	semapv:UnspecifiedMatching
 DOID:0050865	tongue squamous cell carcinoma	oboInOwl:hasDbXref	NCI:C4648	semapv:UnspecifiedMatching
@@ -2151,6 +2151,7 @@ DOID:0060235	carnitine palmitoyltransferase II deficiency	oboInOwl:hasDbXref	OMI
 DOID:0060235	carnitine palmitoyltransferase II deficiency	oboInOwl:hasDbXref	OMIM:608836	semapv:UnspecifiedMatching
 DOID:0060235	carnitine palmitoyltransferase II deficiency	oboInOwl:hasDbXref	ORDO:157	semapv:UnspecifiedMatching
 DOID:0060235	carnitine palmitoyltransferase II deficiency	oboInOwl:hasDbXref	UMLS_CUI:C0342790	semapv:UnspecifiedMatching
+DOID:0060236	xanthinuria	oboInOwl:hasDbXref	ICD10CM:E79.8	semapv:UnspecifiedMatching
 DOID:0060236	xanthinuria	oboInOwl:hasDbXref	OMIMPS:278300	semapv:UnspecifiedMatching
 DOID:0060236	xanthinuria	oboInOwl:hasDbXref	ORDO:3467	semapv:UnspecifiedMatching
 DOID:0060236	xanthinuria	oboInOwl:hasDbXref	UMLS_CUI:C0220988	semapv:UnspecifiedMatching
@@ -2652,7 +2653,6 @@ DOID:0060330	Rapp-Hodgkin syndrome	oboInOwl:hasDbXref	OMIM:129400	semapv:Unspeci
 DOID:0060330	Rapp-Hodgkin syndrome	oboInOwl:hasDbXref	ORDO:3022	semapv:UnspecifiedMatching
 DOID:0060330	Rapp-Hodgkin syndrome	skos:exactMatch	OMIM:129400	semapv:UnspecifiedMatching
 DOID:0060331	mitochondrial complex V (ATP synthase) deficiency nuclear type 2	oboInOwl:hasDbXref	GARD:12965	semapv:UnspecifiedMatching
-DOID:0060331	mitochondrial complex V (ATP synthase) deficiency nuclear type 2	oboInOwl:hasDbXref	ICD10CM:G71.3	semapv:UnspecifiedMatching
 DOID:0060331	mitochondrial complex V (ATP synthase) deficiency nuclear type 2	oboInOwl:hasDbXref	OMIM:614052	semapv:UnspecifiedMatching
 DOID:0060331	mitochondrial complex V (ATP synthase) deficiency nuclear type 2	oboInOwl:hasDbXref	ORDO:1194	semapv:UnspecifiedMatching
 DOID:0060331	mitochondrial complex V (ATP synthase) deficiency nuclear type 2	oboInOwl:hasDbXref	UMLS_CUI:C4273660	semapv:UnspecifiedMatching
@@ -4488,7 +4488,6 @@ DOID:0060875	isolated growth hormone deficiency type III	oboInOwl:hasDbXref	OMIM
 DOID:0060875	isolated growth hormone deficiency type III	oboInOwl:hasDbXref	ORDO:231692	semapv:UnspecifiedMatching
 DOID:0060875	isolated growth hormone deficiency type III	skos:exactMatch	OMIM:307200	semapv:UnspecifiedMatching
 DOID:0060877	bullous congenital ichthyosiform erythroderma	oboInOwl:hasDbXref	GARD:2966	semapv:UnspecifiedMatching
-DOID:0060877	bullous congenital ichthyosiform erythroderma	oboInOwl:hasDbXref	ICD10CM:Q80.3	semapv:UnspecifiedMatching
 DOID:0060877	bullous congenital ichthyosiform erythroderma	oboInOwl:hasDbXref	MESH:D053560	semapv:UnspecifiedMatching
 DOID:0060877	bullous congenital ichthyosiform erythroderma	oboInOwl:hasDbXref	NCI:C84777	semapv:UnspecifiedMatching
 DOID:0060877	bullous congenital ichthyosiform erythroderma	oboInOwl:hasDbXref	OMIM:146800	semapv:UnspecifiedMatching
@@ -4580,7 +4579,6 @@ DOID:0060901	lymphoplasmacytic lymphoma	oboInOwl:hasDbXref	ICD9CM:273.3	semapv:U
 DOID:0060901	lymphoplasmacytic lymphoma	oboInOwl:hasDbXref	ICDO:9671/3	semapv:UnspecifiedMatching
 DOID:0060901	lymphoplasmacytic lymphoma	oboInOwl:hasDbXref	MESH:D008258	semapv:UnspecifiedMatching
 DOID:0060901	lymphoplasmacytic lymphoma	oboInOwl:hasDbXref	NCI:C115212	semapv:UnspecifiedMatching
-DOID:0060901	lymphoplasmacytic lymphoma	oboInOwl:hasDbXref	NCI:C3212	semapv:UnspecifiedMatching
 DOID:0060901	lymphoplasmacytic lymphoma	oboInOwl:hasDbXref	NCI:C80307	semapv:UnspecifiedMatching
 DOID:0060901	lymphoplasmacytic lymphoma	oboInOwl:hasDbXref	OMIM:153600	semapv:UnspecifiedMatching
 DOID:0060901	lymphoplasmacytic lymphoma	oboInOwl:hasDbXref	OMIM:610430	semapv:UnspecifiedMatching
@@ -5688,6 +5686,7 @@ DOID:0070429	combined oxidative phosphorylation deficiency 56	skos:exactMatch	OM
 DOID:0070430	combined oxidative phosphorylation deficiency 57	oboInOwl:hasDbXref	OMIM:620167	semapv:UnspecifiedMatching
 DOID:0070430	combined oxidative phosphorylation deficiency 57	skos:exactMatch	OMIM:620167	semapv:UnspecifiedMatching
 DOID:0070430	combined oxidative phosphorylation deficiency 57	skos:exactMatch	OMIM:620167	semapv:UnspecifiedMatching
+DOID:0070431	hyperphosphatasia with impaired intellectual development syndrome	oboInOwl:hasDbXref	MESH:C565495	semapv:UnspecifiedMatching
 DOID:0070431	hyperphosphatasia with impaired intellectual development syndrome	oboInOwl:hasDbXref	OMIMPS:239300	semapv:UnspecifiedMatching
 DOID:0070431	hyperphosphatasia with impaired intellectual development syndrome	oboInOwl:hasDbXref	ORDO:247262	semapv:UnspecifiedMatching
 DOID:0070431	hyperphosphatasia with impaired intellectual development syndrome	oboInOwl:hasDbXref	UMLS_CUI:C1855923	semapv:UnspecifiedMatching
@@ -5720,6 +5719,7 @@ DOID:0070438	retinal macular dystrophy	skos:exactMatch	OMIM:PS136550	semapv:Unsp
 DOID:0070438	retinal macular dystrophy	skos:exactMatch	OMIMPS:136550	semapv:UnspecifiedMatching
 DOID:0070439	North Carolina macular dystrophy	oboInOwl:hasDbXref	GARD:9179	semapv:UnspecifiedMatching
 DOID:0070439	North Carolina macular dystrophy	oboInOwl:hasDbXref	MESH:C537835	semapv:UnspecifiedMatching
+DOID:0070439	North Carolina macular dystrophy	oboInOwl:hasDbXref	NCI:C168999	semapv:UnspecifiedMatching
 DOID:0070439	North Carolina macular dystrophy	oboInOwl:hasDbXref	OMIM:136550	semapv:UnspecifiedMatching
 DOID:0070439	North Carolina macular dystrophy	oboInOwl:hasDbXref	ORDO:75327	semapv:UnspecifiedMatching
 DOID:0070439	North Carolina macular dystrophy	oboInOwl:hasDbXref	UMLS_CUI:C0730294	semapv:UnspecifiedMatching
@@ -5812,10 +5812,79 @@ DOID:0070463	mitochondrial complex V (ATP synthase) deficiency nuclear type 5	sk
 DOID:0070464	mitochondrial complex V (ATP synthase) deficiency nuclear type 7	oboInOwl:hasDbXref	OMIM:620359	semapv:UnspecifiedMatching
 DOID:0070464	mitochondrial complex V (ATP synthase) deficiency nuclear type 7	skos:exactMatch	OMIM:620359	semapv:UnspecifiedMatching
 DOID:0070464	mitochondrial complex V (ATP synthase) deficiency nuclear type 7	skos:exactMatch	OMIM:620359	semapv:UnspecifiedMatching
+DOID:0070465	spinocerebellar ataxia with axonal neuropathy type 3	oboInOwl:hasDbXref	OMIM:618387	semapv:UnspecifiedMatching
+DOID:0070465	spinocerebellar ataxia with axonal neuropathy type 3	skos:exactMatch	OMIM:618387	semapv:UnspecifiedMatching
 DOID:0070466	carpal tunnel syndrome 1	oboInOwl:hasDbXref	OMIM:115430	semapv:UnspecifiedMatching
 DOID:0070466	carpal tunnel syndrome 1	skos:exactMatch	OMIM:115430	semapv:UnspecifiedMatching
 DOID:0070467	carpal tunnel syndrome 2	oboInOwl:hasDbXref	OMIM:619161	semapv:UnspecifiedMatching
 DOID:0070467	carpal tunnel syndrome 2	skos:exactMatch	OMIM:619161	semapv:UnspecifiedMatching
+DOID:0070468	Yoon-Bellen neurodevelopmental syndrome	oboInOwl:hasDbXref	OMIM:619701	semapv:UnspecifiedMatching
+DOID:0070468	Yoon-Bellen neurodevelopmental syndrome	skos:exactMatch	OMIM:619701	semapv:UnspecifiedMatching
+DOID:0070468	Yoon-Bellen neurodevelopmental syndrome	skos:exactMatch	OMIM:619701	semapv:UnspecifiedMatching
+DOID:0070469	neurodevelopmental disorder with dysmorphic facies and thin corpus callosum	oboInOwl:hasDbXref	OMIM:619480	semapv:UnspecifiedMatching
+DOID:0070469	neurodevelopmental disorder with dysmorphic facies and thin corpus callosum	skos:exactMatch	OMIM:619480	semapv:UnspecifiedMatching
+DOID:0070469	neurodevelopmental disorder with dysmorphic facies and thin corpus callosum	skos:exactMatch	OMIM:619480	semapv:UnspecifiedMatching
+DOID:0070471	early-onset epilepsy 2	oboInOwl:hasDbXref	OMIM:618832	semapv:UnspecifiedMatching
+DOID:0070471	early-onset epilepsy 2	skos:exactMatch	OMIM:618832	semapv:UnspecifiedMatching
+DOID:0070471	early-onset epilepsy 2	skos:exactMatch	OMIM:618832	semapv:UnspecifiedMatching
+DOID:0070472	early-onset epilepsy 3	oboInOwl:hasDbXref	OMIM:620465	semapv:UnspecifiedMatching
+DOID:0070472	early-onset epilepsy 3	skos:exactMatch	OMIM:620465	semapv:UnspecifiedMatching
+DOID:0070472	early-onset epilepsy 3	skos:exactMatch	OMIM:620465	semapv:UnspecifiedMatching
+DOID:0070475	renal medullary carcinoma	oboInOwl:hasDbXref	GARD:13175	semapv:UnspecifiedMatching
+DOID:0070475	renal medullary carcinoma	oboInOwl:hasDbXref	NCI:C7572	semapv:UnspecifiedMatching
+DOID:0070475	renal medullary carcinoma	oboInOwl:hasDbXref	ORDO:319319	semapv:UnspecifiedMatching
+DOID:0070475	renal medullary carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C4049328	semapv:UnspecifiedMatching
+DOID:0070475	renal medullary carcinoma	skos:exactMatch	GARD:13175	semapv:UnspecifiedMatching
+DOID:0070475	renal medullary carcinoma	skos:exactMatch	NCI:C7572	semapv:UnspecifiedMatching
+DOID:0070475	renal medullary carcinoma	skos:exactMatch	ORDO:319319	semapv:UnspecifiedMatching
+DOID:0070475	renal medullary carcinoma	skos:exactMatch	UMLS_CUI:C4049328	semapv:UnspecifiedMatching
+DOID:0070476	diphthamide deficiency syndrome	oboInOwl:hasDbXref	OMIMPS:616901	semapv:UnspecifiedMatching
+DOID:0070476	diphthamide deficiency syndrome	oboInOwl:hasDbXref	ORDO:459061	semapv:UnspecifiedMatching
+DOID:0070476	diphthamide deficiency syndrome	skos:exactMatch	OMIM:PS616901	semapv:UnspecifiedMatching
+DOID:0070476	diphthamide deficiency syndrome	skos:exactMatch	OMIMPS:616901	semapv:UnspecifiedMatching
+DOID:0070476	diphthamide deficiency syndrome	skos:exactMatch	ORDO:459061	semapv:UnspecifiedMatching
+DOID:0070477	diphthamide deficiency syndrome 1	oboInOwl:hasDbXref	OMIM:616901	semapv:UnspecifiedMatching
+DOID:0070477	diphthamide deficiency syndrome 1	skos:exactMatch	OMIM:616901	semapv:UnspecifiedMatching
+DOID:0070477	diphthamide deficiency syndrome 1	skos:exactMatch	OMIM:616901	semapv:UnspecifiedMatching
+DOID:0070478	diphthamide deficiency syndrome 2	oboInOwl:hasDbXref	OMIM:620062	semapv:UnspecifiedMatching
+DOID:0070478	diphthamide deficiency syndrome 2	skos:exactMatch	OMIM:620062	semapv:UnspecifiedMatching
+DOID:0070478	diphthamide deficiency syndrome 2	skos:exactMatch	OMIM:620062	semapv:UnspecifiedMatching
+DOID:0070479	neurodevelopmental disorder with short stature, prominent forehead, and feeding difficulties	oboInOwl:hasDbXref	OMIM:620070	semapv:UnspecifiedMatching
+DOID:0070479	neurodevelopmental disorder with short stature, prominent forehead, and feeding difficulties	skos:exactMatch	OMIM:620070	semapv:UnspecifiedMatching
+DOID:0070479	neurodevelopmental disorder with short stature, prominent forehead, and feeding difficulties	skos:exactMatch	OMIM:620070	semapv:UnspecifiedMatching
+DOID:0070480	schwannomatosis 1	oboInOwl:hasDbXref	NCI:C186703	semapv:UnspecifiedMatching
+DOID:0070480	schwannomatosis 1	oboInOwl:hasDbXref	OMIM:162091	semapv:UnspecifiedMatching
+DOID:0070480	schwannomatosis 1	oboInOwl:hasDbXref	UMLS_CUI:C5670707	semapv:UnspecifiedMatching
+DOID:0070480	schwannomatosis 1	skos:exactMatch	NCI:C186703	semapv:UnspecifiedMatching
+DOID:0070480	schwannomatosis 1	skos:exactMatch	OMIM:162091	semapv:UnspecifiedMatching
+DOID:0070480	schwannomatosis 1	skos:exactMatch	OMIM:162091	semapv:UnspecifiedMatching
+DOID:0070480	schwannomatosis 1	skos:exactMatch	UMLS_CUI:C5670707	semapv:UnspecifiedMatching
+DOID:0070481	schwannomatosis 2	oboInOwl:hasDbXref	NCI:C186704	semapv:UnspecifiedMatching
+DOID:0070481	schwannomatosis 2	oboInOwl:hasDbXref	OMIM:615670	semapv:UnspecifiedMatching
+DOID:0070481	schwannomatosis 2	oboInOwl:hasDbXref	UMLS_CUI:C5670708	semapv:UnspecifiedMatching
+DOID:0070481	schwannomatosis 2	skos:exactMatch	NCI:C186704	semapv:UnspecifiedMatching
+DOID:0070481	schwannomatosis 2	skos:exactMatch	OMIM:615670	semapv:UnspecifiedMatching
+DOID:0070481	schwannomatosis 2	skos:exactMatch	OMIM:615670	semapv:UnspecifiedMatching
+DOID:0070481	schwannomatosis 2	skos:exactMatch	UMLS_CUI:C5670708	semapv:UnspecifiedMatching
+DOID:0070482	spinal neurofibromatosis	oboInOwl:hasDbXref	OMIM:162210	semapv:UnspecifiedMatching
+DOID:0070482	spinal neurofibromatosis	skos:exactMatch	OMIM:162210	semapv:UnspecifiedMatching
+DOID:0070482	spinal neurofibromatosis	skos:exactMatch	OMIM:162210	semapv:UnspecifiedMatching
+DOID:0070483	Watson syndrome	oboInOwl:hasDbXref	OMIM:193520	semapv:UnspecifiedMatching
+DOID:0070483	Watson syndrome	skos:exactMatch	OMIM:193520	semapv:UnspecifiedMatching
+DOID:0070483	Watson syndrome	skos:exactMatch	OMIM:193520	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	oboInOwl:hasDbXref	GARD:10714	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	oboInOwl:hasDbXref	MESH:C548032	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	oboInOwl:hasDbXref	NCI:C176941	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	oboInOwl:hasDbXref	OMIM:611431	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	oboInOwl:hasDbXref	ORDO:137605	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	oboInOwl:hasDbXref	UMLS_CUI:C1969623	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	skos:exactMatch	GARD:10714	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	skos:exactMatch	MESH:C548032	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	skos:exactMatch	NCI:C176941	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	skos:exactMatch	OMIM:611431	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	skos:exactMatch	OMIM:611431	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	skos:exactMatch	ORDO:137605	semapv:UnspecifiedMatching
+DOID:0070484	Legius syndrome	skos:exactMatch	UMLS_CUI:C1969623	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	ICD10CM:M89.9	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	MESH:D001847	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	UMLS_CUI:C0005940	semapv:UnspecifiedMatching
@@ -8522,7 +8591,9 @@ DOID:0081305	polymorphous low grade neuroepithelial tumour of the young	oboInOwl
 DOID:0081305	polymorphous low grade neuroepithelial tumour of the young	oboInOwl:hasDbXref	NCI:C180378	semapv:UnspecifiedMatching
 DOID:0081306	spindle cell oncocytoma	oboInOwl:hasDbXref	ICDO:8290/0	semapv:UnspecifiedMatching
 DOID:0081306	spindle cell oncocytoma	oboInOwl:hasDbXref	NCI:C94537	semapv:UnspecifiedMatching
+DOID:0081307	lymphomatoid granulomatosis	oboInOwl:hasDbXref	ICD10CM:C83.8	semapv:UnspecifiedMatching
 DOID:0081307	lymphomatoid granulomatosis	oboInOwl:hasDbXref	ICDO:9766/1	semapv:UnspecifiedMatching
+DOID:0081307	lymphomatoid granulomatosis	oboInOwl:hasDbXref	MESH:D008230	semapv:UnspecifiedMatching
 DOID:0081307	lymphomatoid granulomatosis	oboInOwl:hasDbXref	NCI:C7930	semapv:UnspecifiedMatching
 DOID:0081307	lymphomatoid granulomatosis	oboInOwl:hasDbXref	UMLS_CUI:C0024307	semapv:UnspecifiedMatching
 DOID:0081308	grade I lymphomatoid granulomatosis	oboInOwl:hasDbXref	ICDO:9766/1	semapv:UnspecifiedMatching
@@ -8533,6 +8604,7 @@ DOID:0081310	grade III lymphomatoid granulomatosis	oboInOwl:hasDbXref	ICDO:9766/
 DOID:0081311	intravascular large B-cell lymphoma	oboInOwl:hasDbXref	ICDO:9712/3	semapv:UnspecifiedMatching
 DOID:0081311	intravascular large B-cell lymphoma	oboInOwl:hasDbXref	NCI:C4342	semapv:UnspecifiedMatching
 DOID:0081312	T-cell non-Hodgkin lymphoma	oboInOwl:hasDbXref	ICDO:9702/3	semapv:UnspecifiedMatching
+DOID:0081312	T-cell non-Hodgkin lymphoma	oboInOwl:hasDbXref	MESH:D016399	semapv:UnspecifiedMatching
 DOID:0081312	T-cell non-Hodgkin lymphoma	oboInOwl:hasDbXref	NCI:C3466	semapv:UnspecifiedMatching
 DOID:0081312	T-cell non-Hodgkin lymphoma	oboInOwl:hasDbXref	UMLS_CUI:C0079772	semapv:UnspecifiedMatching
 DOID:0081313	primary diffuse large B-cell lymphoma of the central nervous system	oboInOwl:hasDbXref	ICDO:9680/3	semapv:UnspecifiedMatching
@@ -8681,6 +8753,16 @@ DOID:0081375	nemaline myopathy 5C	skos:exactMatch	OMIM:620389	semapv:Unspecified
 DOID:0081376	sorbitol dehydrogenase deficiency with peripheral neuropathy	oboInOwl:hasDbXref	OMIM:618912	semapv:UnspecifiedMatching
 DOID:0081376	sorbitol dehydrogenase deficiency with peripheral neuropathy	skos:exactMatch	OMIM:618912	semapv:UnspecifiedMatching
 DOID:0081377	COX deficiency, benign infantile mitochondrial myopathy	oboInOwl:hasDbXref	ORDO:254905	semapv:UnspecifiedMatching
+DOID:0081378	amyotrophic lateral sclerosis type 24	oboInOwl:hasDbXref	OMIM:617892	semapv:UnspecifiedMatching
+DOID:0081378	amyotrophic lateral sclerosis type 24	skos:exactMatch	OMIM:617892	semapv:UnspecifiedMatching
+DOID:0081379	amyotrophic lateral sclerosis type 25	oboInOwl:hasDbXref	OMIM:617921	semapv:UnspecifiedMatching
+DOID:0081379	amyotrophic lateral sclerosis type 25	skos:exactMatch	OMIM:617921	semapv:UnspecifiedMatching
+DOID:0081380	amyotrophic lateral sclerosis type 26	oboInOwl:hasDbXref	OMIM:619133	semapv:UnspecifiedMatching
+DOID:0081380	amyotrophic lateral sclerosis type 26	skos:exactMatch	OMIM:619133	semapv:UnspecifiedMatching
+DOID:0081381	juvenile amyotrophic lateral sclerosis type 27	oboInOwl:hasDbXref	OMIM:620285	semapv:UnspecifiedMatching
+DOID:0081381	juvenile amyotrophic lateral sclerosis type 27	skos:exactMatch	OMIM:620285	semapv:UnspecifiedMatching
+DOID:0081382	amyotrophic lateral sclerosis type 28	oboInOwl:hasDbXref	OMIM:620452	semapv:UnspecifiedMatching
+DOID:0081382	amyotrophic lateral sclerosis type 28	skos:exactMatch	OMIM:620452	semapv:UnspecifiedMatching
 DOID:0090001	Fraser syndrome	oboInOwl:hasDbXref	GARD:6465	semapv:UnspecifiedMatching
 DOID:0090001	Fraser syndrome	oboInOwl:hasDbXref	ICD10CM:Q87.0	semapv:UnspecifiedMatching
 DOID:0090001	Fraser syndrome	oboInOwl:hasDbXref	MESH:D058497	semapv:UnspecifiedMatching
@@ -9125,11 +9207,11 @@ DOID:0090113	RIDDLE syndrome	oboInOwl:hasDbXref	ORDO:420741	semapv:UnspecifiedMa
 DOID:0090113	RIDDLE syndrome	skos:exactMatch	OMIM:611943	semapv:UnspecifiedMatching
 DOID:0090114	Sorsby's fundus dystrophy	oboInOwl:hasDbXref	OMIM:136900	semapv:UnspecifiedMatching
 DOID:0090114	Sorsby's fundus dystrophy	skos:exactMatch	OMIM:136900	semapv:UnspecifiedMatching
-DOID:0090115	spinocerebellar ataxia type 1 with axonal neuropathy	oboInOwl:hasDbXref	GARD:10000	semapv:UnspecifiedMatching
-DOID:0090115	spinocerebellar ataxia type 1 with axonal neuropathy	oboInOwl:hasDbXref	ICD10CM:G60.2	semapv:UnspecifiedMatching
-DOID:0090115	spinocerebellar ataxia type 1 with axonal neuropathy	oboInOwl:hasDbXref	OMIM:607250	semapv:UnspecifiedMatching
-DOID:0090115	spinocerebellar ataxia type 1 with axonal neuropathy	oboInOwl:hasDbXref	ORDO:94124	semapv:UnspecifiedMatching
-DOID:0090115	spinocerebellar ataxia type 1 with axonal neuropathy	skos:exactMatch	OMIM:607250	semapv:UnspecifiedMatching
+DOID:0090115	spinocerebellar ataxia with axonal neuropathy 1	oboInOwl:hasDbXref	GARD:10000	semapv:UnspecifiedMatching
+DOID:0090115	spinocerebellar ataxia with axonal neuropathy 1	oboInOwl:hasDbXref	ICD10CM:G60.2	semapv:UnspecifiedMatching
+DOID:0090115	spinocerebellar ataxia with axonal neuropathy 1	oboInOwl:hasDbXref	OMIM:607250	semapv:UnspecifiedMatching
+DOID:0090115	spinocerebellar ataxia with axonal neuropathy 1	oboInOwl:hasDbXref	ORDO:94124	semapv:UnspecifiedMatching
+DOID:0090115	spinocerebellar ataxia with axonal neuropathy 1	skos:exactMatch	OMIM:607250	semapv:UnspecifiedMatching
 DOID:0090116	spondylocarpotarsal synostosis syndrome	oboInOwl:hasDbXref	GARD:4974	semapv:UnspecifiedMatching
 DOID:0090116	spondylocarpotarsal synostosis syndrome	oboInOwl:hasDbXref	ICD10CM:Q76.4	semapv:UnspecifiedMatching
 DOID:0090116	spondylocarpotarsal synostosis syndrome	oboInOwl:hasDbXref	OMIM:272460	semapv:UnspecifiedMatching
@@ -12876,7 +12958,6 @@ DOID:0111142	oligomeganephronia	oboInOwl:hasDbXref	GARD:4066	semapv:UnspecifiedM
 DOID:0111142	oligomeganephronia	oboInOwl:hasDbXref	ICD10CM:Q60.4	semapv:UnspecifiedMatching
 DOID:0111142	oligomeganephronia	oboInOwl:hasDbXref	ORDO:2260	semapv:UnspecifiedMatching
 DOID:0111143	mitochondrial complex V (ATP synthase) deficiency	oboInOwl:hasDbXref	GARD:1459	semapv:UnspecifiedMatching
-DOID:0111143	mitochondrial complex V (ATP synthase) deficiency	oboInOwl:hasDbXref	ICD10CM:E88.8	semapv:UnspecifiedMatching
 DOID:0111143	mitochondrial complex V (ATP synthase) deficiency	oboInOwl:hasDbXref	ORDO:254913	semapv:UnspecifiedMatching
 DOID:0111143	mitochondrial complex V (ATP synthase) deficiency	oboInOwl:hasDbXref	UMLS_CUI:C4757950	semapv:UnspecifiedMatching
 DOID:0111144	preterm premature rupture of the membranes	oboInOwl:hasDbXref	MESH:C563032	semapv:UnspecifiedMatching
@@ -13207,23 +13288,39 @@ DOID:0111250	Parkinson's disease 3	oboInOwl:hasDbXref	OMIM:602404	semapv:Unspeci
 DOID:0111250	Parkinson's disease 3	skos:exactMatch	OMIM:602404	semapv:UnspecifiedMatching
 DOID:0111251	Parkinson's disease 21	oboInOwl:hasDbXref	OMIM:616361	semapv:UnspecifiedMatching
 DOID:0111251	Parkinson's disease 21	skos:exactMatch	OMIM:616361	semapv:UnspecifiedMatching
-DOID:0111252	neurofibromatosis 2	oboInOwl:hasDbXref	GARD:7193	semapv:UnspecifiedMatching
-DOID:0111252	neurofibromatosis 2	oboInOwl:hasDbXref	ICD10CM:Q85.02	semapv:UnspecifiedMatching
-DOID:0111252	neurofibromatosis 2	oboInOwl:hasDbXref	ICD9CM:237.72	semapv:UnspecifiedMatching
-DOID:0111252	neurofibromatosis 2	oboInOwl:hasDbXref	MESH:D016518	semapv:UnspecifiedMatching
-DOID:0111252	neurofibromatosis 2	oboInOwl:hasDbXref	NCI:C3274	semapv:UnspecifiedMatching
-DOID:0111252	neurofibromatosis 2	oboInOwl:hasDbXref	OMIM:101000	semapv:UnspecifiedMatching
-DOID:0111252	neurofibromatosis 2	oboInOwl:hasDbXref	ORDO:637	semapv:UnspecifiedMatching
-DOID:0111252	neurofibromatosis 2	oboInOwl:hasDbXref	UMLS_CUI:C0027832	semapv:UnspecifiedMatching
-DOID:0111252	neurofibromatosis 2	skos:exactMatch	OMIM:101000	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	oboInOwl:hasDbXref	GARD:7193	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	oboInOwl:hasDbXref	ICD10CM:Q85.02	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	oboInOwl:hasDbXref	ICD9CM:237.72	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	oboInOwl:hasDbXref	MESH:D016518	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	oboInOwl:hasDbXref	NCI:C3274	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	oboInOwl:hasDbXref	OMIM:101000	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	oboInOwl:hasDbXref	ORDO:637	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	oboInOwl:hasDbXref	UMLS_CUI:C0027832	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:exactMatch	GARD:7193	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:exactMatch	ICD10CM:Q85.02	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:exactMatch	ICD9CM:237.72	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:exactMatch	MESH:D016518	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:exactMatch	NCI:C3274	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:exactMatch	OMIM:101000	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:exactMatch	OMIM:101000	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:exactMatch	ORDO:637	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:exactMatch	UMLS_CUI:C0027832	semapv:UnspecifiedMatching
+DOID:0111252	vestibular schwannomatosis	skos:narrowMatch	ORDO:634475	semapv:UnspecifiedMatching
 DOID:0111253	neurofibromatosis 1	oboInOwl:hasDbXref	ICD10CM:Q85.01	semapv:UnspecifiedMatching
 DOID:0111253	neurofibromatosis 1	oboInOwl:hasDbXref	ICD9CM:237.71	semapv:UnspecifiedMatching
 DOID:0111253	neurofibromatosis 1	oboInOwl:hasDbXref	MESH:D009456	semapv:UnspecifiedMatching
 DOID:0111253	neurofibromatosis 1	oboInOwl:hasDbXref	NCI:C3273	semapv:UnspecifiedMatching
 DOID:0111253	neurofibromatosis 1	oboInOwl:hasDbXref	OMIM:162200	semapv:UnspecifiedMatching
-DOID:0111253	neurofibromatosis 1	oboInOwl:hasDbXref	OMIM:162210	semapv:UnspecifiedMatching
 DOID:0111253	neurofibromatosis 1	oboInOwl:hasDbXref	ORDO:636	semapv:UnspecifiedMatching
 DOID:0111253	neurofibromatosis 1	oboInOwl:hasDbXref	UMLS_CUI:C0027831	semapv:UnspecifiedMatching
+DOID:0111253	neurofibromatosis 1	skos:exactMatch	ICD10CM:Q85.01	semapv:UnspecifiedMatching
+DOID:0111253	neurofibromatosis 1	skos:exactMatch	ICD9CM:237.71	semapv:UnspecifiedMatching
+DOID:0111253	neurofibromatosis 1	skos:exactMatch	MESH:D009456	semapv:UnspecifiedMatching
+DOID:0111253	neurofibromatosis 1	skos:exactMatch	NCI:C3273	semapv:UnspecifiedMatching
+DOID:0111253	neurofibromatosis 1	skos:exactMatch	OMIM:162200	semapv:UnspecifiedMatching
+DOID:0111253	neurofibromatosis 1	skos:exactMatch	OMIM:162200	semapv:UnspecifiedMatching
+DOID:0111253	neurofibromatosis 1	skos:exactMatch	ORDO:636	semapv:UnspecifiedMatching
+DOID:0111253	neurofibromatosis 1	skos:exactMatch	UMLS_CUI:C0027831	semapv:UnspecifiedMatching
 DOID:0111254	glutaric acidemia I	oboInOwl:hasDbXref	GARD:6522	semapv:UnspecifiedMatching
 DOID:0111254	glutaric acidemia I	oboInOwl:hasDbXref	MESH:C536833	semapv:UnspecifiedMatching
 DOID:0111254	glutaric acidemia I	oboInOwl:hasDbXref	OMIM:231670	semapv:UnspecifiedMatching
@@ -14139,10 +14236,10 @@ DOID:0111512	metachondromatosis	oboInOwl:hasDbXref	OMIM:156250	semapv:Unspecifie
 DOID:0111512	metachondromatosis	oboInOwl:hasDbXref	ORDO:2499	semapv:UnspecifiedMatching
 DOID:0111512	metachondromatosis	oboInOwl:hasDbXref	UMLS_CUI:C0410530	semapv:UnspecifiedMatching
 DOID:0111512	metachondromatosis	skos:exactMatch	OMIM:156250	semapv:UnspecifiedMatching
-DOID:0111513	metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome	oboInOwl:hasDbXref	GARD:3568	semapv:UnspecifiedMatching
-DOID:0111513	metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome	oboInOwl:hasDbXref	OMIM:156510	semapv:UnspecifiedMatching
-DOID:0111513	metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome	oboInOwl:hasDbXref	ORDO:2504	semapv:UnspecifiedMatching
-DOID:0111513	metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome	skos:exactMatch	OMIM:156510	semapv:UnspecifiedMatching
+DOID:0111513	metaphyseal dysplasia-maxillary hypoplasia-brachydactyly syndrome	oboInOwl:hasDbXref	GARD:3568	semapv:UnspecifiedMatching
+DOID:0111513	metaphyseal dysplasia-maxillary hypoplasia-brachydactyly syndrome	oboInOwl:hasDbXref	OMIM:156510	semapv:UnspecifiedMatching
+DOID:0111513	metaphyseal dysplasia-maxillary hypoplasia-brachydactyly syndrome	oboInOwl:hasDbXref	ORDO:2504	semapv:UnspecifiedMatching
+DOID:0111513	metaphyseal dysplasia-maxillary hypoplasia-brachydactyly syndrome	skos:exactMatch	OMIM:156510	semapv:UnspecifiedMatching
 DOID:0111514	metatropic dysplasia	oboInOwl:hasDbXref	GARD:3571	semapv:UnspecifiedMatching
 DOID:0111514	metatropic dysplasia	oboInOwl:hasDbXref	MESH:C537356	semapv:UnspecifiedMatching
 DOID:0111514	metatropic dysplasia	oboInOwl:hasDbXref	NCI:C175209	semapv:UnspecifiedMatching
@@ -14887,7 +14984,12 @@ DOID:0111683	neurofibromatosis-Noonan syndrome	oboInOwl:hasDbXref	MESH:C537393	s
 DOID:0111683	neurofibromatosis-Noonan syndrome	oboInOwl:hasDbXref	OMIM:601321	semapv:UnspecifiedMatching
 DOID:0111683	neurofibromatosis-Noonan syndrome	oboInOwl:hasDbXref	ORDO:638	semapv:UnspecifiedMatching
 DOID:0111683	neurofibromatosis-Noonan syndrome	oboInOwl:hasDbXref	UMLS_CUI:C2931482	semapv:UnspecifiedMatching
+DOID:0111683	neurofibromatosis-Noonan syndrome	skos:exactMatch	GARD:372	semapv:UnspecifiedMatching
+DOID:0111683	neurofibromatosis-Noonan syndrome	skos:exactMatch	MESH:C537393	semapv:UnspecifiedMatching
 DOID:0111683	neurofibromatosis-Noonan syndrome	skos:exactMatch	OMIM:601321	semapv:UnspecifiedMatching
+DOID:0111683	neurofibromatosis-Noonan syndrome	skos:exactMatch	OMIM:601321	semapv:UnspecifiedMatching
+DOID:0111683	neurofibromatosis-Noonan syndrome	skos:exactMatch	ORDO:638	semapv:UnspecifiedMatching
+DOID:0111683	neurofibromatosis-Noonan syndrome	skos:exactMatch	UMLS_CUI:C2931482	semapv:UnspecifiedMatching
 DOID:0111684	hereditary mixed polyposis syndrome	oboInOwl:hasDbXref	ORDO:157794	semapv:UnspecifiedMatching
 DOID:0111685	hereditary mixed polyposis syndrome 1	oboInOwl:hasDbXref	OMIM:601228	semapv:UnspecifiedMatching
 DOID:0111685	hereditary mixed polyposis syndrome 1	skos:exactMatch	OMIM:601228	semapv:UnspecifiedMatching
@@ -15662,7 +15764,7 @@ DOID:0111935	immunodeficiency 16	oboInOwl:hasDbXref	UMLS_CUI:C3810053	semapv:Uns
 DOID:0111935	immunodeficiency 16	skos:exactMatch	OMIM:615593	semapv:UnspecifiedMatching
 DOID:0111936	immunodeficiency 14	oboInOwl:hasDbXref	GARD:11983	semapv:UnspecifiedMatching
 DOID:0111936	immunodeficiency 14	oboInOwl:hasDbXref	MESH:C585640	semapv:UnspecifiedMatching
-DOID:0111936	immunodeficiency 14	oboInOwl:hasDbXref	NCI:C176015	semapv:UnspecifiedMatching
+DOID:0111936	immunodeficiency 14	oboInOwl:hasDbXref	NCI:C187988	semapv:UnspecifiedMatching
 DOID:0111936	immunodeficiency 14	oboInOwl:hasDbXref	OMIM:615513	semapv:UnspecifiedMatching
 DOID:0111936	immunodeficiency 14	oboInOwl:hasDbXref	ORDO:397596	semapv:UnspecifiedMatching
 DOID:0111936	immunodeficiency 14	oboInOwl:hasDbXref	UMLS_CUI:C3714976	semapv:UnspecifiedMatching
@@ -15712,7 +15814,7 @@ DOID:0111947	immunodeficiency 21	oboInOwl:hasDbXref	ORDO:228423	semapv:Unspecifi
 DOID:0111947	immunodeficiency 21	skos:exactMatch	OMIM:614172	semapv:UnspecifiedMatching
 DOID:0111948	immunodeficiency 46	oboInOwl:hasDbXref	OMIM:616740	semapv:UnspecifiedMatching
 DOID:0111948	immunodeficiency 46	oboInOwl:hasDbXref	ORDO:476113	semapv:UnspecifiedMatching
-DOID:0111948	immunodeficiency 46	oboInOwl:hasDbXref	UMLS_CUI:C4225219	semapv:UnspecifiedMatching
+DOID:0111948	immunodeficiency 46	oboInOwl:hasDbXref	UMLS_CUI:C5568133	semapv:UnspecifiedMatching
 DOID:0111948	immunodeficiency 46	skos:exactMatch	OMIM:616740	semapv:UnspecifiedMatching
 DOID:0111949	immunodeficiency 36	oboInOwl:hasDbXref	NCI:C176703	semapv:UnspecifiedMatching
 DOID:0111949	immunodeficiency 36	oboInOwl:hasDbXref	OMIM:616005	semapv:UnspecifiedMatching
@@ -16232,6 +16334,7 @@ DOID:0112149	terminal osseous dysplasia	oboInOwl:hasDbXref	UMLS_CUI:C1846129	sem
 DOID:0112149	terminal osseous dysplasia	skos:exactMatch	OMIM:300244	semapv:UnspecifiedMatching
 DOID:0112150	X-linked spondyloepimetaphyseal dysplasia	oboInOwl:hasDbXref	GARD:4979	semapv:UnspecifiedMatching
 DOID:0112150	X-linked spondyloepimetaphyseal dysplasia	oboInOwl:hasDbXref	MESH:C564714	semapv:UnspecifiedMatching
+DOID:0112150	X-linked spondyloepimetaphyseal dysplasia	oboInOwl:hasDbXref	NCI:C188996	semapv:UnspecifiedMatching
 DOID:0112150	X-linked spondyloepimetaphyseal dysplasia	oboInOwl:hasDbXref	OMIM:300106	semapv:UnspecifiedMatching
 DOID:0112150	X-linked spondyloepimetaphyseal dysplasia	oboInOwl:hasDbXref	ORDO:93349	semapv:UnspecifiedMatching
 DOID:0112150	X-linked spondyloepimetaphyseal dysplasia	oboInOwl:hasDbXref	UMLS_CUI:C1848097	semapv:UnspecifiedMatching
@@ -17245,7 +17348,6 @@ DOID:10242	ehrlichiosis	oboInOwl:hasDbXref	ICD9CM:082.4	semapv:UnspecifiedMatchi
 DOID:10242	ehrlichiosis	oboInOwl:hasDbXref	MESH:D016873	semapv:UnspecifiedMatching
 DOID:10242	ehrlichiosis	oboInOwl:hasDbXref	UMLS_CUI:C0085399	semapv:UnspecifiedMatching
 DOID:10242	ehrlichiosis	skos:exactMatch	MESH:D016873	semapv:UnspecifiedMatching
-DOID:10247	pleurisy	oboInOwl:hasDbXref	ICD10CM:R09.1	semapv:UnspecifiedMatching
 DOID:10247	pleurisy	oboInOwl:hasDbXref	ICD9CM:511.8	semapv:UnspecifiedMatching
 DOID:10247	pleurisy	oboInOwl:hasDbXref	UMLS_CUI:C0029799	semapv:UnspecifiedMatching
 DOID:1025	tuberculoid leprosy	oboInOwl:hasDbXref	ICD10CM:A30.1	semapv:UnspecifiedMatching
@@ -17685,6 +17787,7 @@ DOID:10541	microinvasive gastric cancer	oboInOwl:hasDbXref	NCI:C27131	semapv:Uns
 DOID:10541	microinvasive gastric cancer	oboInOwl:hasDbXref	UMLS_CUI:C0349530	semapv:UnspecifiedMatching
 DOID:10544	pylorus cancer	oboInOwl:hasDbXref	ICD10CM:C16.4	semapv:UnspecifiedMatching
 DOID:10544	pylorus cancer	oboInOwl:hasDbXref	ICD9CM:151.1	semapv:UnspecifiedMatching
+DOID:10544	pylorus cancer	oboInOwl:hasDbXref	NCI:C188051	semapv:UnspecifiedMatching
 DOID:10544	pylorus cancer	oboInOwl:hasDbXref	UMLS_CUI:C0153418	semapv:UnspecifiedMatching
 DOID:10547	pyloric antrum cancer	oboInOwl:hasDbXref	ICD10CM:C16.3	semapv:UnspecifiedMatching
 DOID:10547	pyloric antrum cancer	oboInOwl:hasDbXref	ICD9CM:151.2	semapv:UnspecifiedMatching
@@ -18462,6 +18565,8 @@ DOID:10969	hemiplegia	oboInOwl:hasDbXref	ICD9CM:343.4	semapv:UnspecifiedMatching
 DOID:10969	hemiplegia	oboInOwl:hasDbXref	MESH:D006429	semapv:UnspecifiedMatching
 DOID:10969	hemiplegia	oboInOwl:hasDbXref	UMLS_CUI:C0392550	semapv:UnspecifiedMatching
 DOID:10970	spastic quadriplegic cerebral palsy	oboInOwl:hasDbXref	GARD:10447	semapv:UnspecifiedMatching
+DOID:10970	spastic quadriplegic cerebral palsy	oboInOwl:hasDbXref	ICD9CM:343.2	semapv:UnspecifiedMatching
+DOID:10970	spastic quadriplegic cerebral palsy	oboInOwl:hasDbXref	MESH:D002547	semapv:UnspecifiedMatching
 DOID:10970	spastic quadriplegic cerebral palsy	oboInOwl:hasDbXref	OMIMPS:612900	semapv:UnspecifiedMatching
 DOID:10970	spastic quadriplegic cerebral palsy	oboInOwl:hasDbXref	ORDO:210141	semapv:UnspecifiedMatching
 DOID:10970	spastic quadriplegic cerebral palsy	oboInOwl:hasDbXref	UMLS_CUI:C0154697	semapv:UnspecifiedMatching
@@ -21037,7 +21142,6 @@ DOID:12668	abnormal retinal correspondence	oboInOwl:hasDbXref	UMLS_CUI:C0155010	
 DOID:12678	hypercalcemia	oboInOwl:hasDbXref	ICD10CM:E83.52	semapv:UnspecifiedMatching
 DOID:12678	hypercalcemia	oboInOwl:hasDbXref	ICD9CM:275.42	semapv:UnspecifiedMatching
 DOID:12678	hypercalcemia	oboInOwl:hasDbXref	MESH:D006934	semapv:UnspecifiedMatching
-DOID:12678	hypercalcemia	oboInOwl:hasDbXref	NCI:C3112	semapv:UnspecifiedMatching
 DOID:12678	hypercalcemia	oboInOwl:hasDbXref	UMLS_CUI:C0020437	semapv:UnspecifiedMatching
 DOID:12679	nephrocalcinosis	oboInOwl:hasDbXref	GARD:7177	semapv:UnspecifiedMatching
 DOID:12679	nephrocalcinosis	oboInOwl:hasDbXref	MESH:D009397	semapv:UnspecifiedMatching
@@ -23011,9 +23115,9 @@ DOID:14080	glucocorticoid-remediable aldosteronism	oboInOwl:hasDbXref	GARD:2790	
 DOID:14080	glucocorticoid-remediable aldosteronism	oboInOwl:hasDbXref	ICD10CM:E26.02	semapv:UnspecifiedMatching
 DOID:14080	glucocorticoid-remediable aldosteronism	oboInOwl:hasDbXref	ICD9CM:255.11	semapv:UnspecifiedMatching
 DOID:14080	glucocorticoid-remediable aldosteronism	oboInOwl:hasDbXref	MESH:C563177	semapv:UnspecifiedMatching
-DOID:14080	glucocorticoid-remediable aldosteronism	oboInOwl:hasDbXref	NCI:C123248	semapv:UnspecifiedMatching
+DOID:14080	glucocorticoid-remediable aldosteronism	oboInOwl:hasDbXref	NCI:C127161	semapv:UnspecifiedMatching
 DOID:14080	glucocorticoid-remediable aldosteronism	oboInOwl:hasDbXref	OMIM:103900	semapv:UnspecifiedMatching
-DOID:14080	glucocorticoid-remediable aldosteronism	oboInOwl:hasDbXref	UMLS_CUI:C1260386	semapv:UnspecifiedMatching
+DOID:14080	glucocorticoid-remediable aldosteronism	oboInOwl:hasDbXref	UMLS_CUI:C3838731	semapv:UnspecifiedMatching
 DOID:14080	glucocorticoid-remediable aldosteronism	skos:exactMatch	OMIM:103900	semapv:UnspecifiedMatching
 DOID:14081	toxic labyrinthitis	oboInOwl:hasDbXref	ICD9CM:386.34	semapv:UnspecifiedMatching
 DOID:14081	toxic labyrinthitis	oboInOwl:hasDbXref	UMLS_CUI:C0155507	semapv:UnspecifiedMatching
@@ -23285,7 +23389,8 @@ DOID:14256	adult-onset Still's disease	oboInOwl:hasDbXref	ICD10CM:M06.1	semapv:U
 DOID:14256	adult-onset Still's disease	oboInOwl:hasDbXref	MESH:D016706	semapv:UnspecifiedMatching
 DOID:14256	adult-onset Still's disease	oboInOwl:hasDbXref	UMLS_CUI:C0085253	semapv:UnspecifiedMatching
 DOID:1426	ureteral disease	oboInOwl:hasDbXref	MESH:D014515	semapv:UnspecifiedMatching
-DOID:1426	ureteral disease	oboInOwl:hasDbXref	UMLS_CUI:C0041954	semapv:UnspecifiedMatching
+DOID:1426	ureteral disease	oboInOwl:hasDbXref	NCI:C27148	semapv:UnspecifiedMatching
+DOID:1426	ureteral disease	oboInOwl:hasDbXref	UMLS_CUI:C0403608	semapv:UnspecifiedMatching
 DOID:14261	fragile X syndrome	oboInOwl:hasDbXref	GARD:6464	semapv:UnspecifiedMatching
 DOID:14261	fragile X syndrome	oboInOwl:hasDbXref	ICD10CM:Q99.2	semapv:UnspecifiedMatching
 DOID:14261	fragile X syndrome	oboInOwl:hasDbXref	ICD9CM:759.83	semapv:UnspecifiedMatching
@@ -23603,6 +23708,7 @@ DOID:14495	dumping syndrome	oboInOwl:hasDbXref	NCI:C2994	semapv:UnspecifiedMatch
 DOID:14495	dumping syndrome	oboInOwl:hasDbXref	UMLS_CUI:C0013288	semapv:UnspecifiedMatching
 DOID:14497	Wolman disease	oboInOwl:hasDbXref	GARD:7899	semapv:UnspecifiedMatching
 DOID:14497	Wolman disease	oboInOwl:hasDbXref	ICD10CM:E75.5	semapv:UnspecifiedMatching
+DOID:14497	Wolman disease	oboInOwl:hasDbXref	MESH:C564736	semapv:UnspecifiedMatching
 DOID:14497	Wolman disease	oboInOwl:hasDbXref	MESH:D015223	semapv:UnspecifiedMatching
 DOID:14497	Wolman disease	oboInOwl:hasDbXref	NCI:C61271	semapv:UnspecifiedMatching
 DOID:14497	Wolman disease	oboInOwl:hasDbXref	UMLS_CUI:C0043208	semapv:UnspecifiedMatching
@@ -24165,7 +24271,6 @@ DOID:1540	parathyroid carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C0030521	semapv:Unsp
 DOID:1540	parathyroid carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C0153653	semapv:UnspecifiedMatching
 DOID:1540	parathyroid carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C0687150	semapv:UnspecifiedMatching
 DOID:1540	parathyroid carcinoma	skos:exactMatch	OMIM:608266	semapv:UnspecifiedMatching
-DOID:1542	head and neck carcinoma	oboInOwl:hasDbXref	ICD10CM:C76.0	semapv:UnspecifiedMatching
 DOID:1542	head and neck carcinoma	oboInOwl:hasDbXref	NCI:C6077	semapv:UnspecifiedMatching
 DOID:1542	head and neck carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C1334927	semapv:UnspecifiedMatching
 DOID:1554	vibratory urticaria	oboInOwl:hasDbXref	GARD:9806	semapv:UnspecifiedMatching
@@ -24277,13 +24382,13 @@ DOID:1591	renovascular hypertension	oboInOwl:hasDbXref	NCI:C85044	semapv:Unspeci
 DOID:1591	renovascular hypertension	oboInOwl:hasDbXref	UMLS_CUI:C0020545	semapv:UnspecifiedMatching
 DOID:1595	melancholic depression	oboInOwl:hasDbXref	MESH:D003866	semapv:UnspecifiedMatching
 DOID:1595	melancholic depression	oboInOwl:hasDbXref	NCI:C34532	semapv:UnspecifiedMatching
-DOID:1595	melancholic depression	oboInOwl:hasDbXref	NCI:C34812	semapv:UnspecifiedMatching
+DOID:1595	melancholic depression	oboInOwl:hasDbXref	NCI:C35094	semapv:UnspecifiedMatching
 DOID:1595	melancholic depression	oboInOwl:hasDbXref	OMIM:608516	semapv:UnspecifiedMatching
 DOID:1595	melancholic depression	oboInOwl:hasDbXref	UMLS_CUI:C0011573	semapv:UnspecifiedMatching
 DOID:1595	melancholic depression	oboInOwl:hasDbXref	UMLS_CUI:C0041696	semapv:UnspecifiedMatching
 DOID:1595	melancholic depression	skos:exactMatch	OMIM:608516	semapv:UnspecifiedMatching
 DOID:1596	depressive disorder	oboInOwl:hasDbXref	ICD10CM:F33.9	semapv:UnspecifiedMatching
-DOID:1596	depressive disorder	oboInOwl:hasDbXref	MESH:D003866	semapv:UnspecifiedMatching
+DOID:1596	depressive disorder	oboInOwl:hasDbXref	MESH:D003863	semapv:UnspecifiedMatching
 DOID:1596	depressive disorder	oboInOwl:hasDbXref	NCI:C2982	semapv:UnspecifiedMatching
 DOID:1596	depressive disorder	oboInOwl:hasDbXref	UMLS_CUI:C0011570	semapv:UnspecifiedMatching
 DOID:1596	depressive disorder	skos:closeMatch	UMLS_CUI:C0011570	semapv:UnspecifiedMatching
@@ -24492,7 +24597,6 @@ DOID:171	neuroectodermal tumor	oboInOwl:hasDbXref	UMLS_CUI:C0206093	semapv:Unspe
 DOID:1712	aortic valve stenosis	oboInOwl:hasDbXref	GARD:5830	semapv:UnspecifiedMatching
 DOID:1712	aortic valve stenosis	oboInOwl:hasDbXref	ICD10CM:I06.0	semapv:UnspecifiedMatching
 DOID:1712	aortic valve stenosis	oboInOwl:hasDbXref	ICD10CM:Q23.0	semapv:UnspecifiedMatching
-DOID:1712	aortic valve stenosis	oboInOwl:hasDbXref	ICD10CM:Q25.1	semapv:UnspecifiedMatching
 DOID:1712	aortic valve stenosis	oboInOwl:hasDbXref	ICD9CM:395.0	semapv:UnspecifiedMatching
 DOID:1712	aortic valve stenosis	oboInOwl:hasDbXref	ICD9CM:746.3	semapv:UnspecifiedMatching
 DOID:1712	aortic valve stenosis	oboInOwl:hasDbXref	MESH:D001024	semapv:UnspecifiedMatching
@@ -24642,14 +24746,14 @@ DOID:178	vascular disease	oboInOwl:hasDbXref	UMLS_CUI:C0002940	semapv:Unspecifie
 DOID:178	vascular disease	oboInOwl:hasDbXref	UMLS_CUI:C0042373	semapv:UnspecifiedMatching
 DOID:178	vascular disease	oboInOwl:hasDbXref	UMLS_CUI:C0752127	semapv:UnspecifiedMatching
 DOID:178	vascular disease	oboInOwl:hasDbXref	UMLS_CUI:C0752130	semapv:UnspecifiedMatching
-DOID:1781	thyroid gland cancer	oboInOwl:hasDbXref	ICD10CM:C73	semapv:UnspecifiedMatching
-DOID:1781	thyroid gland cancer	oboInOwl:hasDbXref	ICD9CM:193	semapv:UnspecifiedMatching
-DOID:1781	thyroid gland cancer	oboInOwl:hasDbXref	KEGG:05216	semapv:UnspecifiedMatching
-DOID:1781	thyroid gland cancer	oboInOwl:hasDbXref	MESH:D013964	semapv:UnspecifiedMatching
-DOID:1781	thyroid gland cancer	oboInOwl:hasDbXref	NCI:C3414	semapv:UnspecifiedMatching
-DOID:1781	thyroid gland cancer	oboInOwl:hasDbXref	NCI:C7510	semapv:UnspecifiedMatching
-DOID:1781	thyroid gland cancer	oboInOwl:hasDbXref	UMLS_CUI:C0007115	semapv:UnspecifiedMatching
-DOID:1781	thyroid gland cancer	oboInOwl:hasDbXref	UMLS_CUI:C0040136	semapv:UnspecifiedMatching
+DOID:1781	thyroid cancer	oboInOwl:hasDbXref	ICD10CM:C73	semapv:UnspecifiedMatching
+DOID:1781	thyroid cancer	oboInOwl:hasDbXref	ICD9CM:193	semapv:UnspecifiedMatching
+DOID:1781	thyroid cancer	oboInOwl:hasDbXref	KEGG:05216	semapv:UnspecifiedMatching
+DOID:1781	thyroid cancer	oboInOwl:hasDbXref	MESH:D013964	semapv:UnspecifiedMatching
+DOID:1781	thyroid cancer	oboInOwl:hasDbXref	NCI:C3414	semapv:UnspecifiedMatching
+DOID:1781	thyroid cancer	oboInOwl:hasDbXref	NCI:C7510	semapv:UnspecifiedMatching
+DOID:1781	thyroid cancer	oboInOwl:hasDbXref	UMLS_CUI:C0007115	semapv:UnspecifiedMatching
+DOID:1781	thyroid cancer	oboInOwl:hasDbXref	UMLS_CUI:C0040136	semapv:UnspecifiedMatching
 DOID:1785	pituitary cancer	oboInOwl:hasDbXref	GARD:9371	semapv:UnspecifiedMatching
 DOID:1785	pituitary cancer	oboInOwl:hasDbXref	ICD10CM:C75.1	semapv:UnspecifiedMatching
 DOID:1785	pituitary cancer	oboInOwl:hasDbXref	MESH:D010911	semapv:UnspecifiedMatching
@@ -25397,7 +25501,6 @@ DOID:2187	amelogenesis imperfecta	oboInOwl:hasDbXref	ORDO:88661	semapv:Unspecifi
 DOID:2187	amelogenesis imperfecta	oboInOwl:hasDbXref	UMLS_CUI:C0002452	semapv:UnspecifiedMatching
 DOID:2187	amelogenesis imperfecta	skos:exactMatch	OMIMPS:104500	semapv:UnspecifiedMatching
 DOID:219	colon cancer	oboInOwl:hasDbXref	ICD10CM:C18	semapv:UnspecifiedMatching
-DOID:219	colon cancer	oboInOwl:hasDbXref	ICD10CM:C18.9	semapv:UnspecifiedMatching
 DOID:219	colon cancer	oboInOwl:hasDbXref	ICD9CM:153	semapv:UnspecifiedMatching
 DOID:219	colon cancer	oboInOwl:hasDbXref	MESH:D003110	semapv:UnspecifiedMatching
 DOID:219	colon cancer	oboInOwl:hasDbXref	NCI:C9242	semapv:UnspecifiedMatching
@@ -25502,6 +25605,7 @@ DOID:2231	factor XII deficiency	skos:exactMatch	OMIM:234000	semapv:UnspecifiedMa
 DOID:2234	focal epilepsy	oboInOwl:hasDbXref	MESH:D004828	semapv:UnspecifiedMatching
 DOID:2234	focal epilepsy	oboInOwl:hasDbXref	NCI:C122812	semapv:UnspecifiedMatching
 DOID:2234	focal epilepsy	oboInOwl:hasDbXref	UMLS_CUI:C0014547	semapv:UnspecifiedMatching
+DOID:2235	prothrombin deficiency	oboInOwl:hasDbXref	MESH:C562724	semapv:UnspecifiedMatching
 DOID:2235	prothrombin deficiency	oboInOwl:hasDbXref	NCI:C26799	semapv:UnspecifiedMatching
 DOID:2235	prothrombin deficiency	oboInOwl:hasDbXref	OMIM:613679	semapv:UnspecifiedMatching
 DOID:2235	prothrombin deficiency	oboInOwl:hasDbXref	ORDO:325	semapv:UnspecifiedMatching
@@ -25918,7 +26022,7 @@ DOID:2476	hereditary spastic paraplegia	oboInOwl:hasDbXref	UMLS_CUI:C0037773	sem
 DOID:2476	hereditary spastic paraplegia	skos:exactMatch	OMIMPS:303350	semapv:UnspecifiedMatching
 DOID:2477	motor peripheral neuropathy	oboInOwl:hasDbXref	ICD10CM:G60.0	semapv:UnspecifiedMatching
 DOID:2477	motor peripheral neuropathy	oboInOwl:hasDbXref	MESH:D015417	semapv:UnspecifiedMatching
-DOID:2477	motor peripheral neuropathy	oboInOwl:hasDbXref	NCI:C3500	semapv:UnspecifiedMatching
+DOID:2477	motor peripheral neuropathy	oboInOwl:hasDbXref	NCI:C75467	semapv:UnspecifiedMatching
 DOID:2477	motor peripheral neuropathy	oboInOwl:hasDbXref	UMLS_CUI:C0027888	semapv:UnspecifiedMatching
 DOID:2479	central nervous system origin vertigo	oboInOwl:hasDbXref	ICD10CM:H81.4	semapv:UnspecifiedMatching
 DOID:2479	central nervous system origin vertigo	oboInOwl:hasDbXref	ICD9CM:386.2	semapv:UnspecifiedMatching
@@ -26856,6 +26960,12 @@ DOID:2935	Chediak-Higashi syndrome	oboInOwl:hasDbXref	OMIM:214500	semapv:Unspeci
 DOID:2935	Chediak-Higashi syndrome	oboInOwl:hasDbXref	ORDO:167	semapv:UnspecifiedMatching
 DOID:2935	Chediak-Higashi syndrome	oboInOwl:hasDbXref	UMLS_CUI:C0007965	semapv:UnspecifiedMatching
 DOID:2935	Chediak-Higashi syndrome	skos:exactMatch	OMIM:214500	semapv:UnspecifiedMatching
+DOID:2938	Epstein-Barr virus infectious disease	oboInOwl:hasDbXref	MESH:D020031	semapv:UnspecifiedMatching
+DOID:2938	Epstein-Barr virus infectious disease	oboInOwl:hasDbXref	NCI:C38759	semapv:UnspecifiedMatching
+DOID:2938	Epstein-Barr virus infectious disease	oboInOwl:hasDbXref	UMLS_CUI:C0149678	semapv:UnspecifiedMatching
+DOID:2938	Epstein-Barr virus infectious disease	skos:exactMatch	MESH:D020031	semapv:UnspecifiedMatching
+DOID:2938	Epstein-Barr virus infectious disease	skos:exactMatch	NCI:C38759	semapv:UnspecifiedMatching
+DOID:2938	Epstein-Barr virus infectious disease	skos:exactMatch	UMLS_CUI:C0149678	semapv:UnspecifiedMatching
 DOID:294	lacrimal gland cancer	oboInOwl:hasDbXref	ICD9CM:190.2	semapv:UnspecifiedMatching
 DOID:294	lacrimal gland cancer	oboInOwl:hasDbXref	NCI:C3563	semapv:UnspecifiedMatching
 DOID:294	lacrimal gland cancer	oboInOwl:hasDbXref	NCI:C4360	semapv:UnspecifiedMatching
@@ -27438,13 +27548,25 @@ DOID:3202	neurilemmoma of the fifth cranial nerve	oboInOwl:hasDbXref	NCI:C4655	s
 DOID:3202	neurilemmoma of the fifth cranial nerve	oboInOwl:hasDbXref	UMLS_CUI:C0349582	semapv:UnspecifiedMatching
 DOID:3203	macrocystic neurilemmoma	oboInOwl:hasDbXref	NCI:C5321	semapv:UnspecifiedMatching
 DOID:3203	macrocystic neurilemmoma	oboInOwl:hasDbXref	UMLS_CUI:C4054526	semapv:UnspecifiedMatching
-DOID:3204	neurilemmomatosis	oboInOwl:hasDbXref	ICD10CM:Q85.03	semapv:UnspecifiedMatching
-DOID:3204	neurilemmomatosis	oboInOwl:hasDbXref	ICD9CM:237.73	semapv:UnspecifiedMatching
-DOID:3204	neurilemmomatosis	oboInOwl:hasDbXref	MESH:C536641	semapv:UnspecifiedMatching
-DOID:3204	neurilemmomatosis	oboInOwl:hasDbXref	NCI:C6557	semapv:UnspecifiedMatching
-DOID:3204	neurilemmomatosis	oboInOwl:hasDbXref	OMIM:162091	semapv:UnspecifiedMatching
-DOID:3204	neurilemmomatosis	oboInOwl:hasDbXref	OMIM:615670	semapv:UnspecifiedMatching
-DOID:3204	neurilemmomatosis	oboInOwl:hasDbXref	UMLS_CUI:C1335929	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	oboInOwl:hasDbXref	ICD10CM:Q85.03	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	oboInOwl:hasDbXref	ICD9CM:237.73	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	oboInOwl:hasDbXref	ICDO:9560/1	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	oboInOwl:hasDbXref	MESH:C536641	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	oboInOwl:hasDbXref	NCI:C6557	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	oboInOwl:hasDbXref	OMIMPS:162091	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	oboInOwl:hasDbXref	ORDO:93921	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	oboInOwl:hasDbXref	UMLS_CUI:C1335929	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:broadMatch	ORDO:634518	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:exactMatch	ICD10CM:Q85.03	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:exactMatch	ICD9CM:237.73	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:exactMatch	ICDO:9560/1	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:exactMatch	MESH:C536641	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:exactMatch	NCI:C6557	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:exactMatch	OMIM:PS162091	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:exactMatch	OMIMPS:162091	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:exactMatch	ORDO:93921	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:exactMatch	UMLS_CUI:C1335929	semapv:UnspecifiedMatching
+DOID:3204	schwannomatosis	skos:narrowMatch	ORDO:634492	semapv:UnspecifiedMatching
 DOID:3205	melanotic neurilemmoma	oboInOwl:hasDbXref	NCI:C6970	semapv:UnspecifiedMatching
 DOID:3205	melanotic neurilemmoma	oboInOwl:hasDbXref	UMLS_CUI:C1306247	semapv:UnspecifiedMatching
 DOID:3206	plexiform schwannoma	oboInOwl:hasDbXref	NCI:C6969	semapv:UnspecifiedMatching
@@ -28027,7 +28149,6 @@ DOID:345	uterine disease	oboInOwl:hasDbXref	NCI:C26907	semapv:UnspecifiedMatchin
 DOID:345	uterine disease	oboInOwl:hasDbXref	UMLS_CUI:C0042131	semapv:UnspecifiedMatching
 DOID:3450	cutaneous Paget's disease	oboInOwl:hasDbXref	MESH:D010145	semapv:UnspecifiedMatching
 DOID:3450	cutaneous Paget's disease	oboInOwl:hasDbXref	NCI:C3302	semapv:UnspecifiedMatching
-DOID:3451	skin carcinoma	oboInOwl:hasDbXref	ICD10CM:C44.90	semapv:UnspecifiedMatching
 DOID:3451	skin carcinoma	oboInOwl:hasDbXref	NCI:C4914	semapv:UnspecifiedMatching
 DOID:3451	skin carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C0699893	semapv:UnspecifiedMatching
 DOID:3454	brain infarction	oboInOwl:hasDbXref	MESH:D020520	semapv:UnspecifiedMatching
@@ -29060,7 +29181,6 @@ DOID:4	disease	oboInOwl:hasDbXref	UMLS_CUI:C0012634	semapv:UnspecifiedMatching
 DOID:4000	ovary transitional cell carcinoma	oboInOwl:hasDbXref	NCI:C5240	semapv:UnspecifiedMatching
 DOID:4000	ovary transitional cell carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C1335184	semapv:UnspecifiedMatching
 DOID:4001	ovarian carcinoma	oboInOwl:hasDbXref	EFO:0001075	semapv:UnspecifiedMatching
-DOID:4001	ovarian carcinoma	oboInOwl:hasDbXref	ICD10CM:C56	semapv:UnspecifiedMatching
 DOID:4001	ovarian carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C0677886	semapv:UnspecifiedMatching
 DOID:4003	Schneiderian carcinoma	oboInOwl:hasDbXref	ICDO:8121/3	semapv:UnspecifiedMatching
 DOID:4003	Schneiderian carcinoma	oboInOwl:hasDbXref	NCI:C54287	semapv:UnspecifiedMatching
@@ -29220,7 +29340,7 @@ DOID:4085	trophoblastic neoplasm	oboInOwl:hasDbXref	NCI:C3422	semapv:Unspecified
 DOID:4085	trophoblastic neoplasm	oboInOwl:hasDbXref	UMLS_CUI:C0041182	semapv:UnspecifiedMatching
 DOID:4086	testicular germ cell tumor non-seminomatous	oboInOwl:hasDbXref	ICDO:9065/3	semapv:UnspecifiedMatching
 DOID:4086	testicular germ cell tumor non-seminomatous	oboInOwl:hasDbXref	NCI:C9313	semapv:UnspecifiedMatching
-DOID:4086	testicular germ cell tumor non-seminomatous	oboInOwl:hasDbXref	UMLS_CUI:C1336724	semapv:UnspecifiedMatching
+DOID:4086	testicular germ cell tumor non-seminomatous	oboInOwl:hasDbXref	UMLS_CUI:C2057625	semapv:UnspecifiedMatching
 DOID:4087	testicular pure germ cell tumor	oboInOwl:hasDbXref	NCI:C39915	semapv:UnspecifiedMatching
 DOID:4087	testicular pure germ cell tumor	oboInOwl:hasDbXref	UMLS_CUI:C1514608	semapv:UnspecifiedMatching
 DOID:409	liver disease	oboInOwl:hasDbXref	ICD10CM:K76.9	semapv:UnspecifiedMatching
@@ -29788,6 +29908,7 @@ DOID:4399	acneiform dermatitis	oboInOwl:hasDbXref	UMLS_CUI:C0234894	semapv:Unspe
 DOID:440	neuromuscular disease	oboInOwl:hasDbXref	ICD10CM:G70.9	semapv:UnspecifiedMatching
 DOID:440	neuromuscular disease	oboInOwl:hasDbXref	ICD9CM:358	semapv:UnspecifiedMatching
 DOID:440	neuromuscular disease	oboInOwl:hasDbXref	MESH:D009468	semapv:UnspecifiedMatching
+DOID:440	neuromuscular disease	oboInOwl:hasDbXref	NCI:C189005	semapv:UnspecifiedMatching
 DOID:440	neuromuscular disease	oboInOwl:hasDbXref	UMLS_CUI:C0027868	semapv:UnspecifiedMatching
 DOID:4400	dermatosis papulosa nigra	oboInOwl:hasDbXref	ICD10CM:L82	semapv:UnspecifiedMatching
 DOID:4400	dermatosis papulosa nigra	oboInOwl:hasDbXref	MESH:C562379	semapv:UnspecifiedMatching
@@ -29903,7 +30024,6 @@ DOID:4450	renal cell carcinoma	oboInOwl:hasDbXref	OMIM:300854	semapv:Unspecified
 DOID:4450	renal cell carcinoma	oboInOwl:hasDbXref	ORDO:217071	semapv:UnspecifiedMatching
 DOID:4450	renal cell carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C0007134	semapv:UnspecifiedMatching
 DOID:4450	renal cell carcinoma	skos:exactMatch	OMIM:300854	semapv:UnspecifiedMatching
-DOID:4451	renal carcinoma	oboInOwl:hasDbXref	ICD10CM:C64.9	semapv:UnspecifiedMatching
 DOID:4451	renal carcinoma	oboInOwl:hasDbXref	NCI:C9384	semapv:UnspecifiedMatching
 DOID:4451	renal carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C1378703	semapv:UnspecifiedMatching
 DOID:4454	childhood kidney cell carcinoma	oboInOwl:hasDbXref	NCI:C6568	semapv:UnspecifiedMatching
@@ -30139,6 +30259,7 @@ DOID:4593	childhood meningioma	oboInOwl:hasDbXref	UMLS_CUI:C0280656	semapv:Unspe
 DOID:4594	microcystic meningioma	oboInOwl:hasDbXref	MESH:D008579	semapv:UnspecifiedMatching
 DOID:4594	microcystic meningioma	oboInOwl:hasDbXref	NCI:C4721	semapv:UnspecifiedMatching
 DOID:4594	microcystic meningioma	oboInOwl:hasDbXref	UMLS_CUI:C1384408	semapv:UnspecifiedMatching
+DOID:4603	epidermolytic hyperkeratosis	oboInOwl:hasDbXref	ICD10CM:Q80.3	semapv:UnspecifiedMatching
 DOID:4603	epidermolytic hyperkeratosis	oboInOwl:hasDbXref	MESH:D017488	semapv:UnspecifiedMatching
 DOID:4603	epidermolytic hyperkeratosis	oboInOwl:hasDbXref	NCI:C62569	semapv:UnspecifiedMatching
 DOID:4603	epidermolytic hyperkeratosis	oboInOwl:hasDbXref	OMIMPS:113800	semapv:UnspecifiedMatching
@@ -30602,7 +30723,6 @@ DOID:4869	laryngeal adenoid cystic carcinoma	oboInOwl:hasDbXref	NCI:C9462	semapv
 DOID:4869	laryngeal adenoid cystic carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C1334368	semapv:UnspecifiedMatching
 DOID:4870	lacrimal gland adenoid cystic carcinoma	oboInOwl:hasDbXref	NCI:C4540	semapv:UnspecifiedMatching
 DOID:4870	lacrimal gland adenoid cystic carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C0346340	semapv:UnspecifiedMatching
-DOID:4871	cutaneous adenocystic carcinoma	oboInOwl:hasDbXref	NCI:C4471	semapv:UnspecifiedMatching
 DOID:4871	cutaneous adenocystic carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C0346017	semapv:UnspecifiedMatching
 DOID:4872	lung adenoid cystic carcinoma	oboInOwl:hasDbXref	NCI:C5666	semapv:UnspecifiedMatching
 DOID:4872	lung adenoid cystic carcinoma	oboInOwl:hasDbXref	UMLS_CUI:C1334439	semapv:UnspecifiedMatching
@@ -31194,8 +31314,6 @@ DOID:5207	monodermal teratoma	oboInOwl:hasDbXref	NCI:C7286	semapv:UnspecifiedMat
 DOID:5207	monodermal teratoma	oboInOwl:hasDbXref	UMLS_CUI:C1302569	semapv:UnspecifiedMatching
 DOID:5208	malignant struma ovarii	oboInOwl:hasDbXref	NCI:C4291	semapv:UnspecifiedMatching
 DOID:5208	malignant struma ovarii	oboInOwl:hasDbXref	UMLS_CUI:C0334525	semapv:UnspecifiedMatching
-DOID:5209	benign struma ovarii	oboInOwl:hasDbXref	NCI:C40012	semapv:UnspecifiedMatching
-DOID:5209	benign struma ovarii	oboInOwl:hasDbXref	UMLS_CUI:C1511104	semapv:UnspecifiedMatching
 DOID:5212	congenital disorder of glycosylation	oboInOwl:hasDbXref	GARD:10307	semapv:UnspecifiedMatching
 DOID:5212	congenital disorder of glycosylation	oboInOwl:hasDbXref	MESH:D018981	semapv:UnspecifiedMatching
 DOID:5212	congenital disorder of glycosylation	oboInOwl:hasDbXref	NCI:C84615	semapv:UnspecifiedMatching
@@ -31515,8 +31633,6 @@ DOID:5394	prolactinoma	oboInOwl:hasDbXref	UMLS_CUI:C0033375	semapv:UnspecifiedMa
 DOID:5395	functioning pituitary adenoma	oboInOwl:hasDbXref	NCI:C8388	semapv:UnspecifiedMatching
 DOID:5395	functioning pituitary adenoma	oboInOwl:hasDbXref	UMLS_CUI:C0854486	semapv:UnspecifiedMatching
 DOID:5396	prolactin producing pituitary tumor	oboInOwl:hasDbXref	NCI:C5962	semapv:UnspecifiedMatching
-DOID:5396	prolactin producing pituitary tumor	oboInOwl:hasDbXref	NCI:C7910	semapv:UnspecifiedMatching
-DOID:5396	prolactin producing pituitary tumor	oboInOwl:hasDbXref	UMLS_CUI:C0278863	semapv:UnspecifiedMatching
 DOID:5396	prolactin producing pituitary tumor	oboInOwl:hasDbXref	UMLS_CUI:C1334614	semapv:UnspecifiedMatching
 DOID:5398	lipoadenoma	oboInOwl:hasDbXref	ICDO:8324/0	semapv:UnspecifiedMatching
 DOID:5398	lipoadenoma	oboInOwl:hasDbXref	NCI:C4159	semapv:UnspecifiedMatching
@@ -32102,12 +32218,9 @@ DOID:5713	mediastinum liposarcoma	oboInOwl:hasDbXref	NCI:C6614	semapv:Unspecifie
 DOID:5713	mediastinum liposarcoma	oboInOwl:hasDbXref	UMLS_CUI:C1334663	semapv:UnspecifiedMatching
 DOID:5714	intracranial liposarcoma	oboInOwl:hasDbXref	NCI:C6973	semapv:UnspecifiedMatching
 DOID:5714	intracranial liposarcoma	oboInOwl:hasDbXref	UMLS_CUI:C1334242	semapv:UnspecifiedMatching
-DOID:5715	functionless pituitary adenoma	oboInOwl:hasDbXref	NCI:C4009	semapv:UnspecifiedMatching
+DOID:5715	functionless pituitary adenoma	oboInOwl:hasDbXref	NCI:C4348	semapv:UnspecifiedMatching
 DOID:5715	functionless pituitary adenoma	oboInOwl:hasDbXref	UMLS_CUI:C0338078	semapv:UnspecifiedMatching
-DOID:5716	hormone producing pituitary cancer	oboInOwl:hasDbXref	NCI:C7047	semapv:UnspecifiedMatching
-DOID:5716	hormone producing pituitary cancer	oboInOwl:hasDbXref	NCI:C7911	semapv:UnspecifiedMatching
 DOID:5716	hormone producing pituitary cancer	oboInOwl:hasDbXref	UMLS_CUI:C0278864	semapv:UnspecifiedMatching
-DOID:5716	hormone producing pituitary cancer	oboInOwl:hasDbXref	UMLS_CUI:C0851693	semapv:UnspecifiedMatching
 DOID:5718	adrenal neuroblastoma	oboInOwl:hasDbXref	NCI:C4827	semapv:UnspecifiedMatching
 DOID:5718	adrenal neuroblastoma	oboInOwl:hasDbXref	UMLS_CUI:C0559460	semapv:UnspecifiedMatching
 DOID:5719	adrenal medulla cancer	oboInOwl:hasDbXref	GARD:5755	semapv:UnspecifiedMatching
@@ -32851,7 +32964,7 @@ DOID:6271	gastric cardia adenocarcinoma	oboInOwl:hasDbXref	NCI:C5247	semapv:Unsp
 DOID:6271	gastric cardia adenocarcinoma	oboInOwl:hasDbXref	UMLS_CUI:C1333762	semapv:UnspecifiedMatching
 DOID:6274	malignant thyroid stimulating hormone producing neoplasm of pituitary gland	oboInOwl:hasDbXref	NCI:C5965	semapv:UnspecifiedMatching
 DOID:6274	malignant thyroid stimulating hormone producing neoplasm of pituitary gland	oboInOwl:hasDbXref	UMLS_CUI:C1334627	semapv:UnspecifiedMatching
-DOID:6275	TSH producing pituitary tumor	oboInOwl:hasDbXref	NCI:C8011	semapv:UnspecifiedMatching
+DOID:6275	TSH producing pituitary tumor	oboInOwl:hasDbXref	NCI:C7915	semapv:UnspecifiedMatching
 DOID:6275	TSH producing pituitary tumor	oboInOwl:hasDbXref	UMLS_CUI:C0346303	semapv:UnspecifiedMatching
 DOID:6276	malignant ACTH producing neoplasm of pituitary gland	oboInOwl:hasDbXref	NCI:C5964	semapv:UnspecifiedMatching
 DOID:6276	malignant ACTH producing neoplasm of pituitary gland	oboInOwl:hasDbXref	UMLS_CUI:C1334556	semapv:UnspecifiedMatching
@@ -34291,7 +34404,7 @@ DOID:7607	chief cell adenoma	oboInOwl:hasDbXref	ICDO:8321/0	semapv:UnspecifiedMa
 DOID:7607	chief cell adenoma	oboInOwl:hasDbXref	NCI:C4154	semapv:UnspecifiedMatching
 DOID:7607	chief cell adenoma	oboInOwl:hasDbXref	UMLS_CUI:C0334320	semapv:UnspecifiedMatching
 DOID:7608	parathyroid adenoma	oboInOwl:hasDbXref	MESH:D010282	semapv:UnspecifiedMatching
-DOID:7608	parathyroid adenoma	oboInOwl:hasDbXref	NCI:C3916	semapv:UnspecifiedMatching
+DOID:7608	parathyroid adenoma	oboInOwl:hasDbXref	NCI:C156757	semapv:UnspecifiedMatching
 DOID:7608	parathyroid adenoma	oboInOwl:hasDbXref	UMLS_CUI:C0262587	semapv:UnspecifiedMatching
 DOID:7609	parathyroid transitional clear cell adenoma	oboInOwl:hasDbXref	NCI:C7993	semapv:UnspecifiedMatching
 DOID:7609	parathyroid transitional clear cell adenoma	oboInOwl:hasDbXref	UMLS_CUI:C0279700	semapv:UnspecifiedMatching
@@ -34537,7 +34650,7 @@ DOID:790	ocular hypotension	oboInOwl:hasDbXref	ICD9CM:360.3	semapv:UnspecifiedMa
 DOID:790	ocular hypotension	oboInOwl:hasDbXref	MESH:D015814	semapv:UnspecifiedMatching
 DOID:790	ocular hypotension	oboInOwl:hasDbXref	NCI:C172147	semapv:UnspecifiedMatching
 DOID:790	ocular hypotension	oboInOwl:hasDbXref	UMLS_CUI:C0028841	semapv:UnspecifiedMatching
-DOID:7902	adult extraskeletal myxoid chondrosarcoma	oboInOwl:hasDbXref	NCI:C27378	semapv:UnspecifiedMatching
+DOID:7902	adult extraskeletal myxoid chondrosarcoma	oboInOwl:hasDbXref	NCI:C7924	semapv:UnspecifiedMatching
 DOID:7902	adult extraskeletal myxoid chondrosarcoma	oboInOwl:hasDbXref	UMLS_CUI:C1706731	semapv:UnspecifiedMatching
 DOID:7903	intracranial chondrosarcoma	oboInOwl:hasDbXref	NCI:C5462	semapv:UnspecifiedMatching
 DOID:7903	intracranial chondrosarcoma	oboInOwl:hasDbXref	UMLS_CUI:C1334238	semapv:UnspecifiedMatching
@@ -34550,9 +34663,9 @@ DOID:7912	mixed oligodendroglioma-astrocytoma	oboInOwl:hasDbXref	NCI:C4050	semap
 DOID:7912	mixed oligodendroglioma-astrocytoma	oboInOwl:hasDbXref	UMLS_CUI:C0280793	semapv:UnspecifiedMatching
 DOID:7915	cervical spinal canal and spinal cord meningioma	oboInOwl:hasDbXref	NCI:C5296	semapv:UnspecifiedMatching
 DOID:7915	cervical spinal canal and spinal cord meningioma	oboInOwl:hasDbXref	UMLS_CUI:C1332916	semapv:UnspecifiedMatching
-DOID:7921	benign mediastinal psammomatous neurilemmoma	oboInOwl:hasDbXref	NCI:C6636	semapv:UnspecifiedMatching
-DOID:7921	benign mediastinal psammomatous neurilemmoma	oboInOwl:hasDbXref	UMLS_CUI:C1332513	semapv:UnspecifiedMatching
-DOID:7922	benign mediastinal neurilemmoma	oboInOwl:hasDbXref	NCI:C6625	semapv:UnspecifiedMatching
+DOID:7921	mediastinal psammomatous neurilemmoma	oboInOwl:hasDbXref	NCI:C6636	semapv:UnspecifiedMatching
+DOID:7921	mediastinal psammomatous neurilemmoma	oboInOwl:hasDbXref	UMLS_CUI:C1332513	semapv:UnspecifiedMatching
+DOID:7922	obsolete benign mediastinal neurilemmoma	oboInOwl:hasDbXref	NCI:C6625	semapv:UnspecifiedMatching
 DOID:7926	epithelial malignant thymoma	oboInOwl:hasDbXref	NCI:C7997	semapv:UnspecifiedMatching
 DOID:7926	epithelial malignant thymoma	oboInOwl:hasDbXref	UMLS_CUI:C0279705	semapv:UnspecifiedMatching
 DOID:7927	malignant type A thymoma	oboInOwl:hasDbXref	NCI:C7999	semapv:UnspecifiedMatching
@@ -34689,7 +34802,7 @@ DOID:8078	childhood central nervous system germinoma	oboInOwl:hasDbXref	UMLS_CUI
 DOID:8081	myxomatous pattern testicular yolk sac tumor	oboInOwl:hasDbXref	NCI:C39929	semapv:UnspecifiedMatching
 DOID:8081	myxomatous pattern testicular yolk sac tumor	oboInOwl:hasDbXref	UMLS_CUI:C1515309	semapv:UnspecifiedMatching
 DOID:8082	cellular congenital mesoblastic nephroma	oboInOwl:hasDbXref	NCI:C39815	semapv:UnspecifiedMatching
-DOID:8082	cellular congenital mesoblastic nephroma	oboInOwl:hasDbXref	UMLS_CUI:C1516474	semapv:UnspecifiedMatching
+DOID:8082	cellular congenital mesoblastic nephroma	oboInOwl:hasDbXref	UMLS_CUI:C1320471	semapv:UnspecifiedMatching
 DOID:8083	classic congenital mesoblastic nephroma	oboInOwl:hasDbXref	NCI:C39814	semapv:UnspecifiedMatching
 DOID:8083	classic congenital mesoblastic nephroma	oboInOwl:hasDbXref	UMLS_CUI:C1516475	semapv:UnspecifiedMatching
 DOID:809	cocaine abuse	oboInOwl:hasDbXref	ICD10CM:F14.1	semapv:UnspecifiedMatching
@@ -34941,7 +35054,6 @@ DOID:8338	villoglandular variant cervical mucinous adenocarcinoma	oboInOwl:hasDb
 DOID:8339	intestinal variant cervical mucinous adenocarcinoma	oboInOwl:hasDbXref	NCI:C40203	semapv:UnspecifiedMatching
 DOID:8339	intestinal variant cervical mucinous adenocarcinoma	oboInOwl:hasDbXref	UMLS_CUI:C1516422	semapv:UnspecifiedMatching
 DOID:8340	endocervical type cervical mucinous adenocarcinoma	oboInOwl:hasDbXref	ICDO:8482/3	semapv:UnspecifiedMatching
-DOID:8340	endocervical type cervical mucinous adenocarcinoma	oboInOwl:hasDbXref	NCI:C40202	semapv:UnspecifiedMatching
 DOID:8340	endocervical type cervical mucinous adenocarcinoma	oboInOwl:hasDbXref	UMLS_CUI:C1266079	semapv:UnspecifiedMatching
 DOID:8352	aortic malignant tumor	oboInOwl:hasDbXref	NCI:C5375	semapv:UnspecifiedMatching
 DOID:8352	aortic malignant tumor	oboInOwl:hasDbXref	UMLS_CUI:C1334560	semapv:UnspecifiedMatching
@@ -35216,6 +35328,7 @@ DOID:851	Bartholin's duct cyst	oboInOwl:hasDbXref	UMLS_CUI:C0004767	semapv:Unspe
 DOID:8512	puerperal pulmonary embolism	oboInOwl:hasDbXref	ICD10CM:O88.21	semapv:UnspecifiedMatching
 DOID:8512	puerperal pulmonary embolism	oboInOwl:hasDbXref	ICD9CM:673	semapv:UnspecifiedMatching
 DOID:8512	puerperal pulmonary embolism	oboInOwl:hasDbXref	UMLS_CUI:C0157540	semapv:UnspecifiedMatching
+DOID:8514	acute pulmonary heart disease	oboInOwl:hasDbXref	ICD10CM:I26.09	semapv:UnspecifiedMatching
 DOID:8514	acute pulmonary heart disease	oboInOwl:hasDbXref	ICD9CM:415	semapv:UnspecifiedMatching
 DOID:8514	acute pulmonary heart disease	oboInOwl:hasDbXref	UMLS_CUI:C0155671	semapv:UnspecifiedMatching
 DOID:8515	Cor pulmonale	oboInOwl:hasDbXref	ICD10CM:I27.81	semapv:UnspecifiedMatching
@@ -35224,8 +35337,8 @@ DOID:8515	Cor pulmonale	oboInOwl:hasDbXref	UMLS_CUI:C0034072	semapv:UnspecifiedM
 DOID:8516	pulmonary embolism and infarction	oboInOwl:hasDbXref	ICD9CM:415.1	semapv:UnspecifiedMatching
 DOID:8516	pulmonary embolism and infarction	oboInOwl:hasDbXref	UMLS_CUI:C0034066	semapv:UnspecifiedMatching
 DOID:8517	acute cor pulmonale	oboInOwl:hasDbXref	ICD10CM:I26.09	semapv:UnspecifiedMatching
-DOID:8517	acute cor pulmonale	oboInOwl:hasDbXref	ICD9CM:415.0	semapv:UnspecifiedMatching
-DOID:8517	acute cor pulmonale	oboInOwl:hasDbXref	UMLS_CUI:C0155672	semapv:UnspecifiedMatching
+DOID:8517	acute cor pulmonale	oboInOwl:hasDbXref	ICD9CM:415	semapv:UnspecifiedMatching
+DOID:8517	acute cor pulmonale	oboInOwl:hasDbXref	UMLS_CUI:C0155671	semapv:UnspecifiedMatching
 DOID:8519	barbiturate abuse	oboInOwl:hasDbXref	ICD10CM:F13.11	semapv:UnspecifiedMatching
 DOID:8519	barbiturate abuse	oboInOwl:hasDbXref	ICD9CM:305.43	semapv:UnspecifiedMatching
 DOID:8519	barbiturate abuse	oboInOwl:hasDbXref	UMLS_CUI:C0154529	semapv:UnspecifiedMatching
@@ -35700,17 +35813,27 @@ DOID:8704	genital herpes	oboInOwl:hasDbXref	MESH:D006558	semapv:UnspecifiedMatch
 DOID:8704	genital herpes	oboInOwl:hasDbXref	NCI:C14364	semapv:UnspecifiedMatching
 DOID:8704	genital herpes	oboInOwl:hasDbXref	UMLS_CUI:C0019342	semapv:UnspecifiedMatching
 DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	GARD:10420	semapv:UnspecifiedMatching
-DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	ICD10CM:Q85.00	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	ICD10CM:Q85.0	semapv:UnspecifiedMatching
 DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	ICD9CM:237.7	semapv:UnspecifiedMatching
 DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	MESH:D017253	semapv:UnspecifiedMatching
 DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	NCI:C6727	semapv:UnspecifiedMatching
-DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	ORDO:93921	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	ORDO:634518	semapv:UnspecifiedMatching
 DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	UMLS_CUI:C0162678	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	oboInOwl:hasDbXref	UMLS_CUI:C0495632	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	skos:broadMatch	ORDO:634518	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	skos:exactMatch	GARD:10420	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	skos:exactMatch	ICD10CM:Q85.0	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	skos:exactMatch	ICD9CM:237.7	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	skos:exactMatch	MESH:D017253	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	skos:exactMatch	NCI:C6727	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	skos:exactMatch	UMLS_CUI:C0162678	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	skos:exactMatch	UMLS_CUI:C0495632	semapv:UnspecifiedMatching
+DOID:8712	neurofibromatosis	skos:narrowMatch	ICD10CM:Q85.00	semapv:UnspecifiedMatching
 DOID:8717	decubitus ulcer	oboInOwl:hasDbXref	ICD10CM:L89	semapv:UnspecifiedMatching
 DOID:8717	decubitus ulcer	oboInOwl:hasDbXref	ICD9CM:707.0	semapv:UnspecifiedMatching
 DOID:8717	decubitus ulcer	oboInOwl:hasDbXref	MESH:D003668	semapv:UnspecifiedMatching
 DOID:8717	decubitus ulcer	oboInOwl:hasDbXref	NCI:C50706	semapv:UnspecifiedMatching
-DOID:8717	decubitus ulcer	oboInOwl:hasDbXref	UMLS_CUI:C0011127	semapv:UnspecifiedMatching
+DOID:8717	decubitus ulcer	oboInOwl:hasDbXref	UMLS_CUI:C4554531	semapv:UnspecifiedMatching
 DOID:8719	in situ carcinoma	oboInOwl:hasDbXref	ICD10CM:D09.9	semapv:UnspecifiedMatching
 DOID:8719	in situ carcinoma	oboInOwl:hasDbXref	ICD9CM:230-234.99	semapv:UnspecifiedMatching
 DOID:8719	in situ carcinoma	oboInOwl:hasDbXref	MESH:D002278	semapv:UnspecifiedMatching
@@ -37050,7 +37173,7 @@ DOID:9541	osteosclerotic myeloma	oboInOwl:hasDbXref	UMLS_CUI:C1510415	semapv:Uns
 DOID:9544	refractory plasma cell neoplasm	oboInOwl:hasDbXref	NCI:C7813	semapv:UnspecifiedMatching
 DOID:9544	refractory plasma cell neoplasm	oboInOwl:hasDbXref	UMLS_CUI:C0278620	semapv:UnspecifiedMatching
 DOID:9547	non-secretory myeloma	oboInOwl:hasDbXref	UMLS_CUI:C0456845	semapv:UnspecifiedMatching
-DOID:955	benign neurilemmoma	oboInOwl:hasDbXref	UMLS_CUI:C0854906	semapv:UnspecifiedMatching
+DOID:955	obsolete benign neurilemmoma	oboInOwl:hasDbXref	UMLS_CUI:C0854906	semapv:UnspecifiedMatching
 DOID:9550	indolent plasma cell myeloma	oboInOwl:hasDbXref	NCI:C7150	semapv:UnspecifiedMatching
 DOID:9550	indolent plasma cell myeloma	oboInOwl:hasDbXref	UMLS_CUI:C2049069	semapv:UnspecifiedMatching
 DOID:9553	adrenal gland disease	oboInOwl:hasDbXref	ICD10CM:E27.9	semapv:UnspecifiedMatching
@@ -37503,6 +37626,7 @@ DOID:9837	hypertropia	oboInOwl:hasDbXref	NCI:C34716	semapv:UnspecifiedMatching
 DOID:9837	hypertropia	oboInOwl:hasDbXref	UMLS_CUI:C0020575	semapv:UnspecifiedMatching
 DOID:9838	cyclotropia	oboInOwl:hasDbXref	ICD10CM:H50.41	semapv:UnspecifiedMatching
 DOID:9838	cyclotropia	oboInOwl:hasDbXref	ICD9CM:378.33	semapv:UnspecifiedMatching
+DOID:9838	cyclotropia	oboInOwl:hasDbXref	MESH:C000721272	semapv:UnspecifiedMatching
 DOID:9838	cyclotropia	oboInOwl:hasDbXref	UMLS_CUI:C0152209	semapv:UnspecifiedMatching
 DOID:9839	accommodative esotropia	oboInOwl:hasDbXref	ICD10CM:H50.43	semapv:UnspecifiedMatching
 DOID:9839	accommodative esotropia	oboInOwl:hasDbXref	ICD9CM:378.35	semapv:UnspecifiedMatching
@@ -37654,7 +37778,6 @@ DOID:9908	internal hordeolum	oboInOwl:hasDbXref	ICD10CM:H00.02	semapv:Unspecifie
 DOID:9908	internal hordeolum	oboInOwl:hasDbXref	ICD9CM:373.12	semapv:UnspecifiedMatching
 DOID:9908	internal hordeolum	oboInOwl:hasDbXref	UMLS_CUI:C0085690	semapv:UnspecifiedMatching
 DOID:9909	hordeolum	oboInOwl:hasDbXref	ICD10CM:H00.01	semapv:UnspecifiedMatching
-DOID:9909	hordeolum	oboInOwl:hasDbXref	ICD10CM:H00.019	semapv:UnspecifiedMatching
 DOID:9909	hordeolum	oboInOwl:hasDbXref	MESH:D006726	semapv:UnspecifiedMatching
 DOID:9909	hordeolum	oboInOwl:hasDbXref	NCI:C118722	semapv:UnspecifiedMatching
 DOID:9909	hordeolum	oboInOwl:hasDbXref	UMLS_CUI:C0019917	semapv:UnspecifiedMatching
