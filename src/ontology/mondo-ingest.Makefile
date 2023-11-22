@@ -29,6 +29,18 @@ dependencies:
 	$(MAKE) pip-semsql
 
 ####################################
+### General ########################
+####################################
+%.db: %.owl
+	@rm -f .template.db
+	@rm -f .template.db.tmp
+	@rm -f tmp/merged-relation-graph.tsv.gz
+	RUST_BACKTRACE=full semsql make tmp/$*.db -P config/prefixes.csv
+	@rm -f .template.db
+	@rm -f .template.db.tmp
+	@rm -f tmp/merged-relation-graph.tsv.gz
+
+####################################
 ### Relevant signature #############
 ####################################
 # This section is concerned with identifiying the entities of interest that should be imported from the source.
@@ -326,7 +338,7 @@ documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs s
 
 .PHONY: build-mondo-ingest
 build-mondo-ingest:
-	$(MAKE) refresh-imports exclusions-all mondo-ingest.db slurp-all mappings matches \
+	$(MAKE) refresh-imports exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components documentation
 	$(MAKE) prepare_release
@@ -412,19 +424,6 @@ $(MAPPINGSDIR)/rejected-mappings-sssom.tsv: $(MAPPINGSDIR)/rejected-mappings.tsv
 tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
 	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl --add-prefixes config/context.json \
 			 remove --term "http://purl.obolibrary.org/obo/mondo#ABBREVIATION" --preserve-structure false -o $@
-
-tmp/merged.db: tmp/merged.owl
-	@rm -f .template.db
-	@rm -f .template.db.tmp
-	@rm -f tmp/merged-relation-graph.tsv.gz
-	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
-	@rm -f .template.db
-	@rm -f .template.db.tmp
-	@rm -f tmp/merged-relation-graph.tsv.gz
-
-mondo-ingest.db: tmp/merged.db
-	cp $< $@
-.PRECIOUS: mondo-ingest.db
 
 $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/rejected-mappings.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
