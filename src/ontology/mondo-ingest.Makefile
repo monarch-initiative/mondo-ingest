@@ -464,16 +464,6 @@ matches: lexical-matches extract-unmapped-matches combine-unmapped-exact-lexmatc
 #############################
 ###### Slurp pipeline #######
 #############################
-# todo: What if the mirror was out of date, but there's already a .db file there, but it's not up to date? will it force update?
-$(COMPONENTSDIR)/%.db: $(COMPONENTSDIR)/%.owl
-	@rm -f .template.db
-	@rm -f .template.db.tmp
-	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
-	RUST_BACKTRACE=full semsql make $@ -P config/prefixes.csv
-	@rm -f .template.db
-	@rm -f .template.db.tmp
-	@rm -f $(COMPONENTSDIR)/$*-relation-graph.tsv.gz
-
 slurp/:
 	mkdir -p $@
 
