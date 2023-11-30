@@ -35,7 +35,7 @@ dependencies:
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f tmp/merged-relation-graph.tsv.gz
-	RUST_BACKTRACE=full semsql make tmp/$*.db -P config/prefixes.csv
+	RUST_BACKTRACE=full semsql make $*.db -P config/prefixes.csv
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f tmp/merged-relation-graph.tsv.gz
