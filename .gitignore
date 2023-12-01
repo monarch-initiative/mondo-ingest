@@ -1,18 +1,25 @@
+# General
+# - directories
+__pycache__/
 /.idea/
 /.run/
 bin/
 cache/
 semantic.cache/
-
+# - patterns
 *.code-workspace
 *.tmp
 *.tmp.obo
 *.tmp.owl
 *.tmp.json
 *.db
+.vscode/*
 
+# - static
 .DS_Store
 
+# Specific files, patterns, and directories
+*relation-graph*
 mondo-ingest.owl
 mondo-ingest.obo
 mondo-ingest.json
@@ -26,6 +33,12 @@ mondo-ingest-base.json
 .github/workflows/diff.yml
 .github/workflows/qc.yml
 
+imports/*
+
+src/mappings/mondo-sources-all-lexical.sssom.tsv
+src/mappings/mondo-sources-all-lexical-2.sssom.tsv
+
+src/ontology/.template.db
 src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*.ttl
@@ -33,6 +46,7 @@ src/ontology/reports/*.ttl
 !src/ontology/reports/*excluded_terms_in_mondo_xrefs.tsv
 !src/ontology/reports/*exclusion_reasons.robot.template.tsv
 !src/ontology/reports/*excluded_terms.txt
+src/ontology/reports/mondo-ingest-edit.owl-obo-report.tsv
 src/ontology/mondo-ingest.owl
 src/ontology/mondo-ingest.obo
 src/ontology/mondo-ingest.json
@@ -69,16 +83,8 @@ src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
 
-# Python
-__pycache__/
-imports/*
-.vscode/*
 src/scripts/.ipynb_checkpoints/*
-src/ontology/.template.db
-src/mappings/mondo-sources-all-lexical.sssom.tsv
-src/mappings/mondo-sources-all-lexical-2.sssom.tsv
 src/scripts/mondo_unmapped.tsv
-src/ontology/reports/mondo-ingest-edit.owl-obo-report.tsv
 
 # Test
 test/output/
