@@ -519,6 +519,24 @@ $(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mappin
 	--mapping-status-path $(REPORTDIR)/$*_mapping_status.tsv \
 	--outpath $@
 
+####################################
+### QC / test ######################
+####################################
+QC_DIR = ../../tests
+.PHONY: qc
+qc: qc-check-sssom-in-sync qc-check-dupe-exactmappings
+
+.PHONY: qc-check-sssom-in-sync
+qc-check-sssom-in-sync:
+	python3 $(QC_DIR)/check_sssom_in_sync.py \
+	--mondo-mappings-path tmp/mondo.sssom.tsv \
+	--mondo-db-path tmp/mondo.db
+
+.PHONY: qc-check-dupe-exactmappings
+qc-check-dupe-exactmappings:
+	python3 $(QC_DIR)/check_dupe_exact_mappings.py \
+	--mondo-mappings-path tmp/mondo.sssom.tsv \
+
 #################
 ##### Utils #####
 #################
