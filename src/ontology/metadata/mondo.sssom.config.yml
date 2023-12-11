@@ -45,7 +45,7 @@ curie_map:
   IMDRF: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/IMDRF/"
   LOINC: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/LOINC/"
   MEDDRA: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/MEDDRA/"
-  ncithesaurus: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ncithesaurus/"
+  # ncithesaurus: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ncithesaurus/"
   COHD: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/COHD/"
   ONCOTREE: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ONCOTREE/"
   ICD9: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ICD9/"
@@ -63,18 +63,18 @@ curie_map:
   Wikipedia: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/Wikipedia/"
   Fyler: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/Fyler/"
   EPCC: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/EPCC/"
-  UMLS_CUI: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/UMLS_CUI/"
+  # UMLS_CUI: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/UMLS_CUI/"
   KUPO: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/KUPO/"
   OMOP: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/OMOP/"
-  ICD10: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ICD10/"
+  # ICD10: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ICD10/"
   ICD10EXP: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ICD10EXP/"
   DERMO: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/DERMO/"
   GARD: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/GARD/"
-  SNOMEDCT_US: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/SNOMEDCT_US/"
-  MSH: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/MSH/"
+  # SNOMEDCT_US: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/SNOMEDCT_US/"
+  # MSH: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/MSH/"
   GC_ID: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/GC_ID/"
-  SNOMEDCT_2010_1_31: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/SNOMEDCT_2010_1_31/"
-
+  # SNOMEDCT_2010_1_31: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/SNOMEDCT_2010_1_31/"
+  OMIA: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/OMIA/"
 
 subject_prefixes:
   - MONDO
