@@ -12,10 +12,10 @@ curie_map:
   SCTID: http://identifiers.org/snomedct/
   SCTID__2: http://snomed.info/id/
   OMIM: https://omim.org/entry/
-  OMIM__2: http://identifiers.org/omim/
-  OMIM__3: http://purl.obolibrary.org/obo/OMIM_
-  OMIM__4: http://omim.org/entry/
-  MESH: http://identifiers.org/mesh/
+  # OMIM__2: http://identifiers.org/omim/
+  # OMIM__3: http://purl.obolibrary.org/obo/OMIM_
+  # OMIM__4: http://omim.org/entry/
+  mesh: http://identifiers.org/mesh/
   Orphanet: http://www.orpha.net/ORDO/Orphanet_
   Orphanet__2: https://www.orpha.net/ORDO/Orphanet_
   Orphanet__3: http://purl.obolibrary.org/obo/Orphanet_
@@ -23,9 +23,9 @@ curie_map:
   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
   skos: http://www.w3.org/2004/02/skos/core#
   ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
-  ICD10CM__2: https://icd.codes/icd10cm/
-  ICD10WHO: https://icd.who.int/browse10/2019/en#/
-  ICD10WHO__2: http://apps.who.int/classifications/icd10/browse/2010/en#/
+  # ICD10CM__2: https://icd.codes/icd10cm/
+  # ICD10WHO: https://icd.who.int/browse10/2019/en#/
+  # ICD10WHO__2: http://apps.who.int/classifications/icd10/browse/2010/en#/
   OMIMPS: https://omim.org/phenotypicSeries/PS
   MEDGEN: http://identifiers.org/medgen/
   MedDRA: http://identifiers.org/meddra/
@@ -73,7 +73,8 @@ curie_map:
   SNOMEDCT_US: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/SNOMEDCT_US/"
   MSH: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/MSH/"
   GC_ID: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/GC_ID/"
-  SNOMEDCT_2010_1_31: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/SNOMEDCT_2010_1_31/"
+  # SNOMEDCT_2010_1_31: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/SNOMEDCT_2010_1_31/"
+  OMIA: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/OMIA/"
 
 
 subject_prefixes:
