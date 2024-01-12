@@ -1,17 +1,19 @@
-# Basic matching pipeline that takes in
+"""Match mondo sources, all lexical
+Basic matching pipeline that takes in
 
-# Input:
-# 1. MERGED_ONTOLOGY = tmp/merged.owl
-# 2. SSSOM_CONFIG = metadata/mondo.sssom.config.yml
-# 3. OUTPUT_SSSOM = mapping/mondo-sources-all-lexical.sssom.tsv
+Input:
+1. MERGED_ONTOLOGY = tmp/merged.owl
+2. SSSOM_CONFIG = metadata/mondo.sssom.config.yml
+3. OUTPUT_SSSOM = mapping/mondo-sources-all-lexical.sssom.tsv
 
-# I would try some basic things first:
+I would try some basic things first:
 
-# Use synonymiser
-# Use oak.mapping() pipeline
-
+Use synonymiser
+Use oak.mapping() pipeline
+"""
 import logging
 from pathlib import Path
+from curies import Converter
 from oaklib.resource import OntologyResource
 from oaklib.implementations.sqldb.sql_implementation import SqlImplementation
 from oaklib.utilities.lexical.lexical_indexer import (
@@ -25,11 +27,11 @@ import click
 import yaml
 import pandas as pd
 
-from sssom.constants import SUBJECT_ID, OBJECT_ID, PREDICATE_MODIFIER
+from sssom.constants import SUBJECT_ID, OBJECT_ID
 from sssom.util import filter_prefixes, is_curie, is_iri
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
-from sssom.io import get_metadata_and_prefix_map, filter_file
+from sssom.io import filter_file
 from bioregistry import curie_from_iri
 
 SRC = Path(__file__).resolve().parents[1]
@@ -49,6 +51,7 @@ output_option = click.option(
 )
 
 
+# todo: duplicated code fragment w/ lexmatch-sssom-compare: solution, move to a lexmatch_utils.py and import to both
 @click.group()
 @click.option("-v", "--verbose", count=True)
 @click.option("-q", "--quiet")
@@ -83,11 +86,11 @@ def main(verbose: int, quiet: bool):
 )
 @output_option
 def run(input: str, config: str, rules: str, rejects: str, output: str):
-    # Implemented `meta` param in `lexical_index_to_sssom`
-
-    meta = get_metadata_and_prefix_map(config)
+    """Run the script"""
+    # Get metadata config
     with open(config, "r") as f:
         yml = yaml.safe_load(f)
+    converter = Converter.from_extended_prefix_map(yml.pop('extended_prefix_map', {}))
 
     # Get mondo.sssom.tsv
     mapping_msdf = parse_sssom_table(SSSOM_MAP_FILE)
@@ -108,8 +111,6 @@ def run(input: str, config: str, rules: str, rejects: str, output: str):
     #     .reset_index(drop=True)
     # )
 
-    prefix_of_interest = yml["subject_prefixes"]
-
     resource = OntologyResource(slug=f"sqlite:///{Path(input).absolute()}")
     oi = SqlImplementation(resource=resource)
     ruleset = load_mapping_rules(rules)
@@ -118,9 +119,9 @@ def run(input: str, config: str, rules: str, rejects: str, output: str):
     save_lexical_index(lexical_index, OUT_INDEX_DB)
 
     if rules:
-        msdf = lexical_index_to_sssom(oi, lexical_index, ruleset=ruleset, meta=meta)
+        msdf = lexical_index_to_sssom(oi, lexical_index, ruleset=ruleset, prefix_map=converter)
     else:
-        msdf = lexical_index_to_sssom(oi, lexical_index, meta=meta)
+        msdf = lexical_index_to_sssom(oi, lexical_index, prefix_map=converter)
 
     # msdf.prefix_map = sssom_yaml['curie_map']
     # msdf.metadata = sssom_yaml['global_metadata']
@@ -131,8 +132,9 @@ def run(input: str, config: str, rules: str, rejects: str, output: str):
     # msdf.df[OBJECT_ID] = msdf.df[OBJECT_ID].apply(
     #     lambda x: iri_to_curie(x) if x.startswith("<http") else x
     # )
+    prefixes_of_interest = yml["subject_prefixes"]
     msdf.df = filter_prefixes(
-        df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID]
+        df=msdf.df, filter_prefixes=prefixes_of_interest, features=[SUBJECT_ID, OBJECT_ID]
     )
     msdf.remove_mappings(mapping_msdf)
 
