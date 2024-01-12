@@ -83,18 +83,21 @@ def main(verbose: int, quiet: bool):
 )
 @output_option
 def run(input: str, config: str, rules: str, rejects: str, output: str):
-    # Implemented `meta` param in `lexical_index_to_sssom`
-
-    meta = get_metadata_and_prefix_map(config)
+    sssom_meta = get_metadata_and_prefix_map(config)
+    oak_meta = {'curie_map': sssom_meta[0].prefix_map}
     with open(config, "r") as f:
         yml = yaml.safe_load(f)
 
+    # TODO: PR comment: This seems slow
+    #  - if can't speed up, maybe move it down to where it is needed?
     # Get mondo.sssom.tsv
+    # TODO: <uncomment
     mapping_msdf = parse_sssom_table(SSSOM_MAP_FILE)
     reject_df = pd.read_csv(
         rejects, sep="\t", index_col=None
     )
     mapping_msdf.df = pd.concat([mapping_msdf.df, reject_df])[mapping_msdf.df.columns].drop_duplicates()
+    # TODO: /uncomment>
     # mapping_msdf.df = (
     #     pd.merge(
     #         mapping_msdf.df,
@@ -109,18 +112,25 @@ def run(input: str, config: str, rules: str, rejects: str, output: str):
     # )
 
     prefix_of_interest = yml["subject_prefixes"]
-
     resource = OntologyResource(slug=f"sqlite:///{Path(input).absolute()}")
     oi = SqlImplementation(resource=resource)
     ruleset = load_mapping_rules(rules)
     # syn_rules = [x.synonymizer for x in ruleset.rules if x.synonymizer]
-    lexical_index = create_lexical_index(oi=oi, mapping_rule_collection=ruleset)
-    save_lexical_index(lexical_index, OUT_INDEX_DB)
+    # TODO: uncomment
+    # lexical_index = create_lexical_index(oi=oi, mapping_rule_collection=ruleset)
+    # save_lexical_index(lexical_index, OUT_INDEX_DB)
+    # TODO: /uncomment
+
+    # TODO temp delete after
+    import pickle
+    pp = '/Users/joeflack4/Desktop/lexical_index.pickle'
+    # pickle.dump(lexical_index, open(pp, "wb"))
+    lexical_index = pickle.load(open(pp, "rb"))
 
     if rules:
-        msdf = lexical_index_to_sssom(oi, lexical_index, ruleset=ruleset, meta=meta)
+        msdf = lexical_index_to_sssom(oi, lexical_index, ruleset=ruleset, meta=oak_meta)
     else:
-        msdf = lexical_index_to_sssom(oi, lexical_index, meta=meta)
+        msdf = lexical_index_to_sssom(oi, lexical_index, meta=oak_meta)
 
     # msdf.prefix_map = sssom_yaml['curie_map']
     # msdf.metadata = sssom_yaml['global_metadata']
