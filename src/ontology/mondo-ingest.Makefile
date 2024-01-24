@@ -39,6 +39,7 @@ dependencies:
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f $*-relation-graph.tsv.gz
+.PRECIOUS: %.db
 
 ####################################
 ### Relevant signature #############
@@ -341,7 +342,7 @@ documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs s
 build-mondo-ingest:
 	$(MAKE) refresh-imports exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
-		recreate-unmapped-components sync documentation
+		recreate-unmapped-components documentation
 	$(MAKE) prepare_release
 
 .PHONY: build-mondo-ingest-no-imports
@@ -429,8 +430,8 @@ tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
 $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/rejected-mappings.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical-2.sssom.tsv
-	pip install bioregistry
-	python $< run tmp/merged.db \
+	pip install -U bioregistry curies
+	python $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py run tmp/merged.db \
 		-c metadata/mondo.sssom.config.yml \
 		-r config/mondo-match-rules.yaml \
 		--rejects $(MAPPINGSDIR)/rejected-mappings.tsv \
@@ -443,7 +444,7 @@ lexical-matches: $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 ###################################
 lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv $(ALL_EXCLUSION_FILES)
 	find lexmatch/ -name "*.tsv" -type f -delete
-	python $< extract_unmapped_matches $(ALL_COMPONENT_IDS) \
+	python $(SCRIPTSDIR)/lexmatch-sssom-compare.py extract_unmapped_matches $(ALL_COMPONENT_IDS) \
 		--matches $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv \
 		--output-dir lexmatch \
 		--summary $@ \
