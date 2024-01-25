@@ -6,4 +6,5 @@
 |:--------------|:---------------------|:-------------------------|
 | ID            | A oboInOwl:hasDbXref | >A oboInOwl:source       |
 | MONDO:0002546 | DOID:955             | MONDO:equivalentObsolete |
+| MONDO:0003333 | DOID:5209            | MONDO:equivalentObsolete |
 | MONDO:0004398 | DOID:7922            | MONDO:equivalentObsolete |
