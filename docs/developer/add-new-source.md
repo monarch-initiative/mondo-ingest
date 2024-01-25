@@ -13,9 +13,17 @@ What this does: This will update several files, including the addition of compon
 It is possible you may need to run this command twice. The first time will update the update process itself, and the 
 second time will run the update.
 
-
-## 2. `metadata/*.yaml`
+## 2. More config updates
+### 2.1. `metadata/*.yaml`
 Add a new metadata file to [src/ontology/metadata](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/ontology/metadata). It is important we try and document as much about the source as we can.
+
+### 2.2. `metadata/mondo.sssom.config.yml`
+Prefixes need to be entered in the following places in the yml:
+- `curie_map`
+- `extended_prefix_map`
+
+### 2.3. `config/prefixes.csv`
+Add prefixes.
 
 ## 3. Docs 
 ### 3.1. `mkdocs.yaml`
