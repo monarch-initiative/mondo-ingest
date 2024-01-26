@@ -281,6 +281,10 @@ def sync_subclassof(
     logging.info('- Collecting direct subclass relations')
     rels_direct_source_source: Set[RELATIONSHIP] = _get_direct_scr_rels(  # from source
         source_ids, ingest_db, owned_prefix_map)
+    
+    if not rels_direct_source_source or len(rels_direct_source_source) < 1:
+        raise ValueError("Source has no relationships. Something went wrong")
+    
     rels_direct_mondo_mondo: Set[RELATIONSHIP] = _get_direct_scr_rels(  # from Mondo
         mondo_ids, mondo_db, MONDO_PREFIX_MAP)
     rels_direct_mondo_source, rels_direct_mondo_mondo_and_1or2_ids_not_in_source = _convert_edge_namespace(
@@ -304,11 +308,13 @@ def sync_subclassof(
     #  after. It could be that I invalidated the cache somehow without realizing it. Rerunning cache fixed it though.
     missing_ancestor_rels = rels_indirect_mondo_mondo.union(rels_direct_mondo_mondo).difference(ancestors_mondo_mondo)
     if missing_ancestor_rels:
+        rels_for_printing =  [rel for rel in missing_ancestor_rels[:5]]
         logging.error(
             'Detected error in consistency of sets of terms gathered from Mondo.\n'
             f'\n 1. Mondo SCR ancestors: {len(ancestors_mondo_mondo)}'
             f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
             f'\n 3. Mondo indirect SCR relationships: {len(rels_indirect_mondo_mondo)}'
+            f'\n Intersection (Top 5): {rels_for_printing}'
             f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}')
 
     # Determine hierarchy diferences -----------------------------------------------------------------------------------
