@@ -378,7 +378,7 @@ def sync_subclassof(
 
     # Case 3: SCR is direct in the source, but not at all in Mondo
     subheader = deepcopy(ROBOT_SUBHEADER)
-    subheader[0]['object_mondo_id'] = 'AI obo:mondo#:excluded_subClassOf'
+    subheader[0]['object_mondo_id'] = 'AI obo:mondo#excluded_subClassOf'
     df3 = pd.DataFrame(in_source_direct_not_in_mondo)
     if len(df3) == 0:
         df3 = pd.DataFrame(columns=list(subheader[0].keys()))

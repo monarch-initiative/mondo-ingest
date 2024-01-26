@@ -32,6 +32,7 @@ dependencies:
 ### General ########################
 ####################################
 %.db: %.owl
+	@rm $*.db
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f $*-relation-graph.tsv.gz
@@ -39,6 +40,8 @@ dependencies:
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f $*-relation-graph.tsv.gz
+	@test -f $*.db || (echo "Error: File not found!" && exit 1)
+
 .PRECIOUS: %.db
 
 ####################################
@@ -342,8 +345,9 @@ documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs s
 build-mondo-ingest:
 	$(MAKE) refresh-imports exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
-		recreate-unmapped-components documentation
+		recreate-unmapped-components sync documentation
 	$(MAKE) prepare_release
+	echo "Mondo Ingest has been fully completed"
 
 .PHONY: build-mondo-ingest-no-imports
 build-mondo-ingest-no-imports:
@@ -515,7 +519,7 @@ sync-subclassof-%:
 	$(MAKE) $(REPORTDIR)/$*.subclass.direct-in-mondo-only.tsv
 
 # Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
-$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), sync-subclassof-$(n))
+$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), sync-subclassof-$(n)) tmp/mondo.db
 	python3 $(SCRIPTSDIR)/sync_subclassof_collate_direct_in_mondo_only.py --outpath $@
 
 $(REPORTDIR)/sync-subClassOf.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed.robot.tsv)
