@@ -426,6 +426,9 @@ $(MAPPINGSDIR)/rejected-mappings.tsv:
 $(MAPPINGSDIR)/rejected-mappings-sssom.tsv: $(MAPPINGSDIR)/rejected-mappings.tsv
 	sssom parse $< -m metadata/mondo.sssom.config.yml --no-strict-clean-prefixes -o $@
 
+tmp/mondo-ingest.owl: mondo-ingest.owl
+	cp $< $@
+
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
 tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
 	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl --add-prefixes config/context.json \
