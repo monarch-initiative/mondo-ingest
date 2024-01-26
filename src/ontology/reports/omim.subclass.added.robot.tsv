@@ -2,6 +2,7 @@ subject_mondo_id	subject_mondo_label	object_mondo_id	subject_source_id	object_so
 ID		AI obo:mondo#excluded_subClassOf	>A oboInOwl:source		
 MONDO:0005260	autism	MONDO:0020836	OMIM:209850	OMIMPS:209850	autism, susceptiblity to
 MONDO:0005579	epilepsy, idiopathic generalized	MONDO:0005579	OMIM:600669	OMIMPS:600669	epilepsy, idiopathic generalized
+MONDO:0007039	neurofibromatosis type 2	MONDO:0008075	OMIM:101000	OMIMPS:162091	schwannomatosis
 MONDO:0007617	Coffin-Siris syndrome 1	MONDO:0100172	OMIM:135900	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0007634	intellectual disability, FRA12A type	MONDO:0100172	OMIM:136630	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0007669	renal cysts and diabetes syndrome	MONDO:0000608	OMIM:137920	OMIMPS:162000	familial juvenile hyperuricemic nephropathy
@@ -13,18 +14,22 @@ MONDO:0008570	thyrotoxic periodic paralysis, susceptibility to, 1	MONDO:0019201	
 MONDO:0008708	acrocallosal syndrome	MONDO:0018772	OMIM:200990	OMIMPS:213300	Joubert syndrome
 MONDO:0008856	immunodeficiency 27A	MONDO:0021094	OMIM:209950	OMIMPS:300755	immunodeficiency disease
 MONDO:0008905	predisposition to invasive fungal disease due to CARD9 deficiency	MONDO:0015279	OMIM:212050	OMIMPS:114580	chronic mucocutaneous candidiasis
+MONDO:0008905	predisposition to invasive fungal disease due to CARD9 deficiency	MONDO:0021094	OMIM:212050	OMIMPS:300755	immunodeficiency disease
 MONDO:0008930	celiac disease, susceptibility to, 1	MONDO:0005130	OMIM:212750	OMIMPS:212750	celiac disease
 MONDO:0009068	cytochrome-c oxidase deficiency disease	MONDO:0033885	OMIM:220110	OMIMPS:220110	mitochondrial complex IV deficiency, nuclear-type
 MONDO:0009069	congenital lactic acidosis, Saguenay-Lac-Saint-Jean type	MONDO:0033885	OMIM:220111	OMIMPS:220110	mitochondrial complex IV deficiency, nuclear-type
 MONDO:0009080	split hand-foot malformation 1 with sensorineural hearing loss	MONDO:0016576	OMIM:220600	OMIMPS:183600	split hand-foot malformation
+MONDO:0009113	hemolytic anemia due to diphosphoglycerate mutase deficiency	MONDO:0001115	OMIM:222800	OMIMPS:133100	familial polycythemia
 MONDO:0009131	Riley-Day syndrome	MONDO:0015364	OMIM:223900	OMIMPS:162400	hereditary sensory and autonomic neuropathy
 MONDO:0009194	immunodeficiency 32B	MONDO:0021094	OMIM:226990	OMIMPS:300755	immunodeficiency disease
 MONDO:0009305	granulocytopenia with immunoglobulin abnormality	MONDO:0021094	OMIM:233600	OMIMPS:300755	immunodeficiency disease
 MONDO:0009335	hemolytic uremic syndrome, atypical, susceptibility to, 1	MONDO:0957097	OMIM:235400	OMIMPS:235400	hereditary hemolytic uremic syndrome
 MONDO:0009563	maple syrup urine disease	MONDO:0009563	OMIM:248600	OMIMPS:248600	maple syrup urine disease
+MONDO:0009650	mucolipidosis type II	MONDO:0031422	OMIM:252500	OMIMPS:256550	familial mucolipidosis
 MONDO:0009681	Ullrich congenital muscular dystrophy 1	MONDO:0015152	OMIM:254090	OMIMPS:253600	autosomal recessive limb-girdle muscular dystrophy
 MONDO:0009696	juvenile myoclonic epilepsy	MONDO:0009696	OMIM:254770	OMIMPS:254770	juvenile myoclonic epilepsy
 MONDO:0009724	nail-patella-like renal disease	MONDO:0005363	OMIM:256020	OMIMPS:603278	inherited focal segmental glomerulosclerosis
+MONDO:0009842	Pelger-Huet-like anomaly and episodic fever with abdominal pain	MONDO:0021094	OMIM:260570	OMIMPS:300755	immunodeficiency disease
 MONDO:0009935	pulmonary hypertension, primary, autosomal recessive	MONDO:0017148	OMIM:265400	OMIMPS:178600	heritable pulmonary arterial hypertension
 MONDO:0010278	Christianson syndrome	MONDO:0020119	OMIM:300243	OMIMPS:309510	X-linked syndromic intellectual disability
 MONDO:0010284	Armfield syndrome	MONDO:0020119	OMIM:300261	OMIMPS:309510	X-linked syndromic intellectual disability
@@ -56,6 +61,7 @@ MONDO:0011362	myopathy, myofibrillar, 9, with early respiratory failure	MONDO:00
 MONDO:0011374	hypercholesterolemia, familial, 4	MONDO:0005439	OMIM:603813	OMIMPS:143890	familial hypercholesterolemia
 MONDO:0011387	psoriasis 4, susceptibility to	MONDO:0005083	OMIM:603935	OMIMPS:177900	psoriasis
 MONDO:0011407	facial paresis, hereditary congenital, 2	MONDO:0011090	OMIM:604185	OMIMPS:601471	isolated hereditary congenital facial paralysis
+MONDO:0011415	Leber congenital amaurosis 3	MONDO:0019200	OMIM:604232	OMIMPS:268000	retinitis pigmentosa
 MONDO:0011434	psoriasis 5, susceptibility to	MONDO:0005083	OMIM:604316	OMIMPS:177900	psoriasis
 MONDO:0011451	cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 1	MONDO:0033885	OMIM:604377	OMIMPS:220110	mitochondrial complex IV deficiency, nuclear-type
 MONDO:0011491	epilepsy, idiopathic generalized, susceptibility to, 7	MONDO:0005579	OMIM:604827	OMIMPS:600669	epilepsy, idiopathic generalized
@@ -71,6 +77,7 @@ MONDO:0011608	dermatitis, atopic, 5	MONDO:0004980	OMIM:605844	OMIMPS:603165	atop
 MONDO:0011609	dermatitis, atopic, 6	MONDO:0004980	OMIM:605845	OMIMPS:603165	atopic eczema
 MONDO:0011650	atrioventricular septal defect, susceptibility to, 2	MONDO:0020290	OMIM:606217	OMIMPS:606215	familial atrioventricular septal defect
 MONDO:0011714	partial lipodystrophy, congenital cataracts, and neurodegeneration syndrome	MONDO:0020088	OMIM:606721	OMIMPS:151660	familial partial lipodystrophy
+MONDO:0011738	bilateral frontoparietal polymicrogyria	MONDO:0000904	OMIM:606854	OMIMPS:614039	complex cortical dysplasia with other brain malformations
 MONDO:0011741	Hirschsprung disease, susceptibility to, 6	MONDO:0018309	OMIM:606874	OMIMPS:142623	Hirschsprung disease
 MONDO:0011742	Hirschsprung disease, susceptibility to, 7	MONDO:0018309	OMIM:606875	OMIMPS:142623	Hirschsprung disease
 MONDO:0011753	epilepsy, idiopathic generalized, susceptibility to, 2	MONDO:0005579	OMIM:606972	OMIMPS:600669	epilepsy, idiopathic generalized
@@ -92,6 +99,7 @@ MONDO:0012113	epilepsy, idiopathic generalized, susceptibility to, 3	MONDO:00055
 MONDO:0012130	myofibrillar myopathy 2	MONDO:0018943	OMIM:608810	OMIMPS:601419	myofibrillar myopathy
 MONDO:0012134	myoclonic epilepsy, juvenile, susceptibility to, 3	MONDO:0009696	OMIM:608816	OMIMPS:254770	juvenile myoclonic epilepsy
 MONDO:0012141	orofacial cleft 6, susceptibility to	MONDO:0000358	OMIM:608864	OMIMPS:119530	orofacial cleft
+MONDO:0012161	susceptibility to respiratory infections associated with CD8alpha chain mutation	MONDO:0021094	OMIM:608957	OMIMPS:300755	immunodeficiency disease
 MONDO:0012212	Loeys-Dietz syndrome 1	MONDO:0019625	OMIM:609192	OMIMPS:607086	familial thoracic aortic aneurysm and aortic dissection
 MONDO:0012317	visceral neuropathy, familial, 3, autosomal dominant	MONDO:0023961	OMIM:609629	OMIMPS:243180	visceral neuropathy, familial
 MONDO:0012338	epilepsy, idiopathic generalized, susceptibility to, 4	MONDO:0005579	OMIM:609750	OMIMPS:600669	epilepsy, idiopathic generalized
@@ -115,6 +123,7 @@ MONDO:0012702	celiac disease, susceptibility to, 6	MONDO:0005130	OMIM:611598	OMI
 MONDO:0012710	Hirschsprung disease, susceptibility to, 9	MONDO:0018309	OMIM:611644	OMIMPS:142623	Hirschsprung disease
 MONDO:0012737	long QT syndrome 10	MONDO:0018054	OMIM:611819	OMIMPS:608583	familial atrial fibrillation
 MONDO:0012744	dilated cardiomyopathy 1Y	MONDO:0016333	OMIM:611878	OMIMPS:115200	familial dilated cardiomyopathy
+MONDO:0012747	glycogen storage disease due to aldolase A deficiency	MONDO:0002412	OMIM:611881	OMIMPS:232200	disorder of glycogen metabolism
 MONDO:0012756	proximal 16p11.2 microdeletion syndrome	MONDO:0020836	OMIM:611913	OMIMPS:209850	autism, susceptiblity to
 MONDO:0012760	epilepsy, idiopathic generalized, susceptibility to, 5	MONDO:0005579	OMIM:611934	OMIMPS:600669	epilepsy, idiopathic generalized
 MONDO:0012763	epilepsy, childhood absence, susceptibility to, 6	MONDO:0005579	OMIM:611942	OMIMPS:600669	epilepsy, idiopathic generalized
@@ -147,6 +156,7 @@ MONDO:0013146	Brugada syndrome 7	MONDO:0018054	OMIM:613120	OMIMPS:608583	familia
 MONDO:0013193	thyrotoxic periodic paralysis, susceptibility to, 2	MONDO:0019201	OMIM:613239	OMIMPS:188580	thyrotoxic periodic paralysis
 MONDO:0013261	dilated cardiomyopathy 1R	MONDO:0016333	OMIM:613424	OMIMPS:115200	familial dilated cardiomyopathy
 MONDO:0013262	dilated cardiomyopathy 1S	MONDO:0016333	OMIM:613426	OMIMPS:115200	familial dilated cardiomyopathy
+MONDO:0013263	retinitis pigmentosa 54	MONDO:0015993	OMIM:613428	OMIMPS:120970	cone-rod dystrophy
 MONDO:0013294	dermatitis, atopic, 8	MONDO:0004980	OMIM:613518	OMIMPS:603165	atopic eczema
 MONDO:0013295	dermatitis, atopic, 9	MONDO:0004980	OMIM:613519	OMIMPS:603165	atopic eczema
 MONDO:0013340	Parkinson disease 5, autosomal dominant, susceptibility to	MONDO:0005180	OMIM:613643	OMIMPS:168600	Parkinson disease
@@ -167,6 +177,7 @@ MONDO:0013633	encephalopathy, acute, infection-induced, susceptibility to, 4	MON
 MONDO:0013639	narcolepsy 6, susceptibility to	MONDO:0021107	OMIM:614223	OMIMPS:161400	narcolepsy
 MONDO:0013653	Parkinson disease 18, autosomal dominant, susceptibility to	MONDO:0005180	OMIM:614251	OMIMPS:168600	Parkinson disease
 MONDO:0013665	epilepsy, juvenile myoclonic, susceptibility to, 9	MONDO:0009696	OMIM:614280	OMIMPS:254770	juvenile myoclonic epilepsy
+MONDO:0013805	intellectual disability, autosomal dominant 13	MONDO:0000904	OMIM:614563	OMIMPS:614039	complex cortical dysplasia with other brain malformations
 MONDO:0013819	intellectual disability, autosomal dominant 14	MONDO:0100172	OMIM:614607	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0013820	intellectual disability, autosomal dominant 15	MONDO:0100172	OMIM:614608	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0013821	intellectual disability, autosomal dominant 16	MONDO:0100172	OMIM:614609	OMIMPS:156200	intellectual disability, autosomal dominant
@@ -181,6 +192,7 @@ MONDO:0013954	Mendelian susceptibility to mycobacterial diseases due to complete
 MONDO:0013955	Mendelian susceptibility to mycobacterial diseases due to complete IL12RB1 deficiency	MONDO:0021094	OMIM:614891	OMIMPS:300755	immunodeficiency disease
 MONDO:0013956	Mendelian susceptibility to mycobacterial diseases due to partial STAT1 deficiency	MONDO:0021094	OMIM:614892	OMIMPS:300755	immunodeficiency disease
 MONDO:0013957	Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency	MONDO:0021094	OMIM:614893	OMIMPS:300755	immunodeficiency disease
+MONDO:0013968	PGM1-congenital disorder of glycosylation	MONDO:0002412	OMIM:614921	OMIMPS:232200	disorder of glycogen metabolism
 MONDO:0014005	immunoglobulin-mediated membranoproliferative glomerulonephritis	MONDO:0957097	OMIM:615008	OMIMPS:235400	hereditary hemolytic uremic syndrome
 MONDO:0014016	hereditary spastic paraplegia 49	MONDO:0015364	OMIM:615031	OMIMPS:162400	hereditary sensory and autonomic neuropathy
 MONDO:0014051	cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 2	MONDO:0033885	OMIM:615119	OMIMPS:220110	mitochondrial complex IV deficiency, nuclear-type
@@ -198,6 +210,7 @@ MONDO:0014266	age related macular degeneration 15	MONDO:0005150	OMIM:615591	OMIM
 MONDO:0014273	microcephaly-thin corpus callosum-intellectual disability syndrome	MONDO:0019502	OMIM:615599	OMIMPS:249500	autosomal recessive non-syndromic intellectual disability
 MONDO:0014289	macrocephaly-developmental delay syndrome	MONDO:0019502	OMIM:615637	OMIMPS:249500	autosomal recessive non-syndromic intellectual disability
 MONDO:0014313	autosomal recessive primary immunodeficiency with defective spontaneous natural killer cell cytotoxicity	MONDO:0021094	OMIM:615707	OMIMPS:300755	immunodeficiency disease
+MONDO:0014333	polymicrogyria, bilateral perisylvian, autosomal recessive	MONDO:0000904	OMIM:615752	OMIMPS:614039	complex cortical dysplasia with other brain malformations
 MONDO:0014336	intellectual disability-facial dysmorphism syndrome due to SETD5 haploinsufficiency	MONDO:0100172	OMIM:615761	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0014429	autosomal dominant mendelian susceptibility to mycobacterial diseases due to partial IFNgammaR1 deficiency	MONDO:0021094	OMIM:615978	OMIMPS:300755	immunodeficiency disease
 MONDO:0014482	intellectual disability, autosomal dominant 29	MONDO:0100172	OMIM:616078	OMIMPS:156200	intellectual disability, autosomal dominant
@@ -208,7 +221,6 @@ MONDO:0014502	Mendelian susceptibility to mycobacterial diseases due to complete
 MONDO:0014520	46,XX ovarian dysgenesis-short stature syndrome	MONDO:0009299	OMIM:616185	OMIMPS:233300	46 XX gonadal dysgenesis
 MONDO:0014559	progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome	MONDO:0019502	OMIM:616269	OMIMPS:249500	autosomal recessive non-syndromic intellectual disability
 MONDO:0014597	immunodeficiency 39	MONDO:0021094	OMIM:616345	OMIMPS:300755	immunodeficiency disease
-MONDO:0014605	microcephaly-corpus callosum hypoplasia-intellectual disability-facial dysmorphism syndrome	MONDO:0100172	OMIM:616362	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0014667	cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3	MONDO:0033885	OMIM:616500	OMIMPS:220110	mitochondrial complex IV deficiency, nuclear-type
 MONDO:0014668	cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 4	MONDO:0033885	OMIM:616501	OMIMPS:220110	mitochondrial complex IV deficiency, nuclear-type
 MONDO:0014680	herpes simplex encephalitis, susceptibility to, 7	MONDO:0000166	OMIM:616532	OMIMPS:610551	encephalopathy, acute, infection-induced
@@ -242,11 +254,15 @@ MONDO:0030872	frontotemporal dementia and/or amyotrophic lateral sclerosis 8	MON
 MONDO:0030875	frontotemporal dementia and/or amyotrophic lateral sclerosis 5	MONDO:0017161	OMIM:619141	OMIMPS:105550	frontotemporal dementia with motor neuron disease
 MONDO:0030928	microcephaly 26, primary, autosomal dominant	MONDO:0016660	OMIM:619179	OMIMPS:251200	autosomal recessive primary microcephaly
 MONDO:0030929	microcephaly 27, primary, autosomal dominant	MONDO:0016660	OMIM:619180	OMIMPS:251200	autosomal recessive primary microcephaly
+MONDO:0031008	nephrotic syndrome, type 24	MONDO:0002350	OMIM:619263	OMIMPS:256300	familial nephrotic syndrome
+MONDO:0032659	mucocutaneous ulceration, chronic	MONDO:0031384	OMIM:618287	OMIMPS:616744	autoinflammatory syndrome, familial, Behcet-like
 MONDO:0032699	epilepsy, idiopathic generalized, susceptibility to, 15	MONDO:0005579	OMIM:618357	OMIMPS:600669	epilepsy, idiopathic generalized
 MONDO:0032702	Coffin-Siris syndrome 8	MONDO:0100172	OMIM:618362	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0032742	encephalopathy, acute, infection-induced, susceptibility to, 9	MONDO:0000166	OMIM:618426	OMIMPS:610551	encephalopathy, acute, infection-induced
 MONDO:0032827	epilepsy, idiopathic generalized, susceptibility to, 16	MONDO:0005579	OMIM:618596	OMIMPS:600669	epilepsy, idiopathic generalized
 MONDO:0032853	myopathy, distal, 6, adult-onset, autosomal dominant	MONDO:0018949	OMIM:618655	OMIMPS:160500	distal myopathy
+MONDO:0032862	hydrocephalus, congenital communicating, 1	MONDO:0016349	OMIM:618667	OMIMPS:236600	congenital hydrocephalus
+MONDO:0032893	pachygyria, microcephaly, developmental delay, and dysmorphic facies, with or without seizures	MONDO:0000904	OMIM:618737	OMIMPS:614039	complex cortical dysplasia with other brain malformations
 MONDO:0033044	Meckel syndrome 13	MONDO:0018772	OMIM:617562	OMIMPS:213300	Joubert syndrome
 MONDO:0033492	Coffin-Siris syndrome 6	MONDO:0015452	OMIM:617808	OMIMPS:135900	Coffin-Siris syndrome
 MONDO:0033560	mitochondrial complex 1 deficiency, nuclear type 35	MONDO:0100223	OMIM:619003	OMIMPS:252010	mitochondrial complex I deficiency, nuclear type
@@ -269,3 +285,5 @@ MONDO:0100519	epilepsy, idiopathic generalized, susceptibility to, 17	MONDO:0018
 MONDO:0800187	immunodeficiency 83, susceptibility to viral infections	MONDO:0000166	OMIM:613002	OMIMPS:610551	encephalopathy, acute, infection-induced
 MONDO:0800187	immunodeficiency 83, susceptibility to viral infections	MONDO:0021094	OMIM:613002	OMIMPS:300755	immunodeficiency disease
 MONDO:0800447	bleeding disorder, platelet-type, 13, susceptibility to	MONDO:0000009	OMIM:614009	OMIMPS:231200	inherited bleeding disorder, platelet-type
+MONDO:0859183	Parkinson disease 24, autosomal dominant, susceptibility to	MONDO:0005180	OMIM:619491	OMIMPS:168600	Parkinson disease
+MONDO:0859376	hydrocephalus, congenital, 5, susceptibility to	MONDO:0016349	OMIM:620241	OMIMPS:236600	congenital hydrocephalus
