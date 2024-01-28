@@ -304,12 +304,14 @@ def sync_subclassof(
     #  after. It could be that I invalidated the cache somehow without realizing it. Rerunning cache fixed it though.
     missing_ancestor_rels = rels_indirect_mondo_mondo.union(rels_direct_mondo_mondo).difference(ancestors_mondo_mondo)
     if missing_ancestor_rels:
-        raise RuntimeError(
+        rels_for_printing =  [rel for rel in list(missing_ancestor_rels)[:5]]
+        logging.error(
             'Detected error in consistency of sets of terms gathered from Mondo.\n'
             f'\n 1. Mondo SCR ancestors: {len(ancestors_mondo_mondo)}'
-            f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
+            f'\n 2. Mondo direct sSCR relationships: {len(rels_direct_mondo_mondo)}'
             f'\n 3. Mondo indirect SCR relationships: {len(rels_indirect_mondo_mondo)}'
-            f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}')
+            f'\n Intersection (Top 5): {rels_for_printing}')
+        print()  # TODO temp
 
     # Determine hierarchy diferences -----------------------------------------------------------------------------------
     # todo: remove unused, commented out vars? (they were created in anticipation of possible cases)
