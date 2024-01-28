@@ -32,7 +32,7 @@ dependencies:
 ### General ########################
 ####################################
 %.db: %.owl
-	@rm $*.db
+	@rm -f $*.db
 	@rm -f .template.db
 	@rm -f .template.db.tmp
 	@rm -f $*-relation-graph.tsv.gz

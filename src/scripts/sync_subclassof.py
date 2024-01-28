@@ -309,7 +309,8 @@ def sync_subclassof(
     missing_ancestor_rels = rels_indirect_mondo_mondo.union(rels_direct_mondo_mondo).difference(ancestors_mondo_mondo)
     if missing_ancestor_rels:
         rels_for_printing =  [rel for rel in list(missing_ancestor_rels)[:5]]
-        logging.error(
+        # TODO: temp:
+        raise ValueError(
             'Detected error in consistency of sets of terms gathered from Mondo.\n'
             f'\n 1. Mondo SCR ancestors: {len(ancestors_mondo_mondo)}'
             f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
@@ -498,4 +499,5 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
 
 
 if __name__ == '__main__':
-    cli()
+    # cli()
+    run_defaults()  # TODO temp
