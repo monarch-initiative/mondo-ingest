@@ -3896,7 +3896,6 @@
 | NCIT:C191394 | Kidney Hemangioblastoma                                                                                                                                                     |
 | NCIT:C159211 | Kidney Hemangioma                                                                                                                                                           |
 | NCIT:C159225 | Kidney Large Cell Neuroendocrine Carcinoma                                                                                                                                  |
-| NCIT:C159209 | Kidney Leiomyoma                                                                                                                                                            |
 | NCIT:C159214 | Kidney Lymphangioma                                                                                                                                                         |
 | NCIT:C63532  | Kidney Lymphoma                                                                                                                                                             |
 | NCIT:C158046 | Kidney Mixed Epithelial and Stromal Tumor Family                                                                                                                            |
@@ -8751,7 +8750,6 @@
 | NCIT:C168747 | SAMD9L-Associated Hereditary Myelodysplastic Syndrome                                                                                                                       |
 | NCIT:C21880  | SJL Disease of the Mouse Hematologic System                                                                                                                                 |
 | NCIT:C186703 | SMARCB1 Schwannomatosis 1                                                                                                                                                   |
-| NCIT:C189247 | SMARCB1-Deficient Kidney Medullary Carcinoma                                                                                                                                |
 | NCIT:C187445 | ST2 Diffuse Large B-Cell Lymphoma                                                                                                                                           |
 | NCIT:C129927 | Sacral Chordoma                                                                                                                                                             |
 | NCIT:C168674 | Sacral Spine Neoplasm                                                                                                                                                       |

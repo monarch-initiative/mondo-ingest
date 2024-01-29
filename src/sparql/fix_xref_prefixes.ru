@@ -30,5 +30,5 @@ WHERE
            ?p ?v .
   }
   FILTER (isIRI(?entity))
-  BIND(REPLACE(REPLACE(REPLACE(?value, "ICD-10:", "ICD10:", "i"), "MeSH:", "MESH:", "i"), "OMIM:PS", "OMIMPS:", "i") AS ?value_fixed)
+  BIND(REPLACE(REPLACE(REPLACE(REPLACE(?value, "ICD-11:", "ICD11:", "i"), "ICD-10:", "ICD10:", "i"), "MeSH:", "MESH:", "i"), "OMIM:PS", "OMIMPS:", "i") AS ?value_fixed)
 }

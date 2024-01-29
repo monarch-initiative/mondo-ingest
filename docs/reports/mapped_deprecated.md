@@ -1,10 +1,10 @@
 # Mapped deprecated terms
 | Ontology                                    |   Tot deprecated in Mondo |
 |:--------------------------------------------|--------------------------:|
-| [OMIM](./mapped_deprecated_omim.md)         |                        45 |
-| [DOID](./mapped_deprecated_doid.md)         |                         2 |
-| [NCIT](./mapped_deprecated_ncit.md)         |                        11 |
-| [ORDO](./mapped_deprecated_ordo.md)         |                         0 |
+| [OMIM](./mapped_deprecated_omim.md)         |                        43 |
+| [DOID](./mapped_deprecated_doid.md)         |                         3 |
+| [ORDO](./mapped_deprecated_ordo.md)         |                       225 |
+| [NCIT](./mapped_deprecated_ncit.md)         |                        12 |
 | [ICD10CM](./mapped_deprecated_icd10cm.md)   |                         0 |
 | [ICD10WHO](./mapped_deprecated_icd10who.md) |                         0 |
 | [GARD](./mapped_deprecated_gard.md)         |                         0 |

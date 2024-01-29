@@ -204,7 +204,7 @@ def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summa
     combined_df = pd.concat(ont_df_list)
 
     combined_msdf = MappingSetDataFrame(
-        df=combined_df, prefix_map=msdf_lex.prefix_map, metadata=msdf_lex.metadata
+        df=combined_df, converter=msdf_lex.converter, metadata=msdf_lex.metadata
     )
     df_dict = split_dataframe(combined_msdf)
     summary.write("## mondo_XXXXmatch_ontology")

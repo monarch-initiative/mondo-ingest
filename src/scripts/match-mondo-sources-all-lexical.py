@@ -85,7 +85,8 @@ def main(verbose: int, quiet: bool):
 def run(input: str, config: str, rules: str, rejects: str, output: str):
     # Implemented `meta` param in `lexical_index_to_sssom`
 
-    meta = get_metadata_and_prefix_map(config)
+    #meta = get_metadata_and_prefix_map(config)
+    meta = None
     with open(config, "r") as f:
         yml = yaml.safe_load(f)
 

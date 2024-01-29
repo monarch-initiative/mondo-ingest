@@ -2204,6 +2204,7 @@ MONDO:0006044	nephrosclerosis	skos:closeMatch	ICD10CM:I12	Hypertensive chronic k
 MONDO:0006044	nephrosclerosis	skos:closeMatch	ICD10CM:I12	Hypertensive chronic kidney disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11664	LEXMATCH
 MONDO:0006052	pulmonary tuberculosis	skos:closeMatch	ICD10CM:A15	Respiratory tuberculosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:2957	LEXMATCH
 MONDO:0006052	pulmonary tuberculosis	skos:closeMatch	ICD10CM:A15	Respiratory tuberculosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:2957	LEXMATCH
+MONDO:0006132	cervical adenoid basal carcinoma	skos:closeMatch	ICD10CM:C53.0	Malignant neoplasm of endocervix	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0006132	LEXMATCH
 MONDO:0006133	cervical adenoid cystic carcinoma	skos:closeMatch	ICD10CM:C53.0	Malignant neoplasm of endocervix	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0006133	LEXMATCH
 MONDO:0006143	cervical squamous cell carcinoma	skos:closeMatch	ICD10CM:C53.0	Malignant neoplasm of endocervix	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0006143	LEXMATCH
 MONDO:0006170	conjunctival disorder	skos:closeMatch	ICD10CM:H11.9	Unspecified disorder of conjunctiva	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:4251	LEXMATCH
@@ -3369,8 +3370,6 @@ MONDO:0010171	Usher syndrome type 1C	skos:closeMatch	ICD10CM:H35.5	Hereditary re
 MONDO:0010174	Valinemia	skos:closeMatch	ICD10CM:E71.19	Other disorders of branched-chain amino-acid metabolism	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	hypervalinemia	LEXMATCH
 MONDO:0010181	oculogastrointestinal muscular dystrophy	skos:closeMatch	ICD10CM:G71.0	Muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0010181	LEXMATCH
 MONDO:0010193	Weaver syndrome	skos:closeMatch	ICD10CM:Q87.3	Congenital malformation syndromes involving early overgrowth	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	weaver syndrome	LEXMATCH
-MONDO:0010200	Wilson disease	skos:closeMatch	ICD10CM:E83.01	Wilson's disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:893	LEXMATCH
-MONDO:0010200	Wilson disease	skos:closeMatch	ICD10CM:E83.01	Wilson's disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:893	LEXMATCH
 MONDO:0010210	xeroderma pigmentosum group A	skos:closeMatch	ICD10CM:Q82.1	Xeroderma pigmentosum	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110843	LEXMATCH
 MONDO:0010210	xeroderma pigmentosum group A	skos:closeMatch	ICD10CM:Q82.1	Xeroderma pigmentosum	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110843	LEXMATCH
 MONDO:0010211	xeroderma pigmentosum group C	skos:closeMatch	ICD10CM:Q82.1	Xeroderma pigmentosum	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110844	LEXMATCH
@@ -3500,8 +3499,8 @@ MONDO:0010658	syndromic X-linked intellectual disability 12	skos:closeMatch	ICD1
 MONDO:0010658	syndromic X-linked intellectual disability 12	skos:closeMatch	ICD10CM:Q87.8	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060804	LEXMATCH
 MONDO:0010664	syndromic X-linked intellectual disability Snyder type	skos:closeMatch	ICD10CM:Q87.8	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060802	LEXMATCH
 MONDO:0010664	syndromic X-linked intellectual disability Snyder type	skos:closeMatch	ICD10CM:Q87.8	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060802	LEXMATCH
-MONDO:0010683	X-linked centronuclear myopathy	skos:closeMatch	ICD10CM:G71.220	X-linked myotubular myopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0111225	LEXMATCH
-MONDO:0010683	X-linked centronuclear myopathy	skos:closeMatch	ICD10CM:G71.220	X-linked myotubular myopathy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0111225	LEXMATCH
+MONDO:0010683	X-linked myotubular myopathy	skos:closeMatch	ICD10CM:G71.220	X-linked myotubular myopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0111225	LEXMATCH
+MONDO:0010683	X-linked myotubular myopathy	skos:closeMatch	ICD10CM:G71.220	X-linked myotubular myopathy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0111225	LEXMATCH
 MONDO:0010689	Charcot-Marie-Tooth disease X-linked recessive 4	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110212	LEXMATCH
 MONDO:0010689	Charcot-Marie-Tooth disease X-linked recessive 4	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110212	LEXMATCH
 MONDO:0010691	Norrie disease	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0010691	LEXMATCH
@@ -4454,7 +4453,6 @@ MONDO:0013186	Noonan syndrome 6	skos:closeMatch	ICD10CM:Q87.1	Congenital malform
 MONDO:0013186	Noonan syndrome 6	skos:closeMatch	ICD10CM:Q87.1	Congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060584	LEXMATCH
 MONDO:0013191	focal segmental glomerulosclerosis 5	skos:closeMatch	ICD10CM:N04.1	Nephrotic syndrome with focal and segmental glomerular lesions	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0111130	LEXMATCH
 MONDO:0013191	focal segmental glomerulosclerosis 5	skos:closeMatch	ICD10CM:N04.1	Nephrotic syndrome with focal and segmental glomerular lesions	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0111130	LEXMATCH
-MONDO:0013209	non-alcoholic fatty liver disease	skos:closeMatch	ICD10CM:K76.0	Fatty (change of) liver, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	nonalcoholic fatty liver disease	LEXMATCH
 MONDO:0013210	autosomal recessive nonsyndromic hearing loss 25	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110483	LEXMATCH
 MONDO:0013210	autosomal recessive nonsyndromic hearing loss 25	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110483	LEXMATCH
 MONDO:0013212	Charcot-Marie-Tooth disease axonal type 2N	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110177	LEXMATCH
@@ -4477,8 +4475,8 @@ MONDO:0013256	chromosome 15q24 deletion syndrome	skos:closeMatch	ICD10CM:Q93.5	O
 MONDO:0013263	retinitis pigmentosa 54	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110364	LEXMATCH
 MONDO:0013263	retinitis pigmentosa 54	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0013263	LEXMATCH
 MONDO:0013263	retinitis pigmentosa 54	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110364	LEXMATCH
-MONDO:0013267	distal 16p11.2 microdeletion syndrome	skos:closeMatch	ICD10CM:Q93.5	Other deletions of part of a chromosome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060398	LEXMATCH
-MONDO:0013267	distal 16p11.2 microdeletion syndrome	skos:closeMatch	ICD10CM:Q93.5	Other deletions of part of a chromosome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060398	LEXMATCH
+MONDO:0013267	distal 16p11.2 microdeletion syndrome	skos:closeMatch	ICD10CM:Q93.5	Other deletions of part of a chromosome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:0060398	LEXMATCH
+MONDO:0013267	distal 16p11.2 microdeletion syndrome	skos:closeMatch	ICD10CM:Q93.5	Other deletions of part of a chromosome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:0060398	LEXMATCH
 MONDO:0013269	autosomal recessive nonsyndromic hearing loss 91	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110536	LEXMATCH
 MONDO:0013269	autosomal recessive nonsyndromic hearing loss 91	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110536	LEXMATCH
 MONDO:0013274	retinitis pigmentosa 51	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110398	LEXMATCH
@@ -5209,7 +5207,6 @@ MONDO:0016282	rhabdomyosarcoma of the cervix uteri	skos:closeMatch	ICD10CM:C53.0
 MONDO:0016283	leiomyosarcoma of the cervix uteri	skos:closeMatch	ICD10CM:C53.0	Malignant neoplasm of endocervix	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0016283	LEXMATCH
 MONDO:0016284	primitive neuroectodermal tumor of the cervix uteri	skos:closeMatch	ICD10CM:C53.0	Malignant neoplasm of endocervix	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0016284	LEXMATCH
 MONDO:0016285	papillary carcinoma of the cervix uteri	skos:closeMatch	ICD10CM:C53.0	Malignant neoplasm of endocervix	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0016285	LEXMATCH
-MONDO:0016287	adenoid basal carcinoma of the cervix uteri	skos:closeMatch	ICD10CM:C53.0	Malignant neoplasm of endocervix	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0016287	LEXMATCH
 MONDO:0016289	malignant germ cell tumor of cervix uteri	skos:closeMatch	ICD10CM:C53.0	Malignant neoplasm of endocervix	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0016289	LEXMATCH
 MONDO:0016293	congenital stationary night blindness	skos:closeMatch	ICD10CM:H53.63	Congenital night blindness	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050534	LEXMATCH
 MONDO:0016293	congenital stationary night blindness	skos:closeMatch	ICD10CM:H53.63	Congenital night blindness	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050534	LEXMATCH
