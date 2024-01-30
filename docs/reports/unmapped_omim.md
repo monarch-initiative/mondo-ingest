@@ -19,10 +19,12 @@
 | OMIMPS:619382 | Leber hereditary optic neuropathy, autosomal recessive                                                      |
 | OMIMPS:151623 | Li-Fraumeni syndrome                                                                                        |
 | OMIMPS:609015 | Mitochondrial trifunctional protein deficiency                                                              |
+| OMIMPS:254780 | Myoclonic epilepsy of Lafora                                                                                |
 | OMIMPS:167030 | Nephrolithiasis, calcium oxalate                                                                            |
 | OMIMPS:164300 | Oculopharyngeal muscular dystrophy                                                                          |
 | OMIMPS:608415 | Prolonged electroretinal response suppression                                                               |
 | OMIMPS:177735 | Pseudohypoaldosteronism, type I                                                                             |
+| OMIMPS:601104 | Supranuclear palsy, progressive                                                                             |
 | OMIM:620655   | alfadhel syndrome                                                                                           |
 | OMIM:620536   | alport syndrome 3b, autosomal recessive                                                                     |
 | OMIM:620481   | amegakaryocytic thrombocytopenia, congenital, 2                                                             |
@@ -49,6 +51,7 @@
 | OMIM:620537   | developmental and epileptic encephalopathy 112                                                              |
 | OMIM:620540   | developmental delay with or without epilepsy                                                                |
 | OMIM:620535   | developmental delay, dysmorphic facies, and brain anomalies                                                 |
+| OMIM:620690   | developmental dysplasia of the hip 3                                                                        |
 | OMIM:620651   | diabetes, deafness, developmental delay, and short stature syndrome                                         |
 | OMIM:620461   | encephalitis, acute, infection-induced, susceptibility to, 12                                               |
 | OMIM:620150   | epidermolytic hyperkeratosis 2                                                                              |
@@ -66,6 +69,7 @@
 | OMIM:620603   | immunodeficiency 114, folate-responsive                                                                     |
 | OMIM:620632   | immunodeficiency 115 with autoinflammation                                                                  |
 | OMIM:620668   | immunodeficiency 117                                                                                        |
+| OMIM:301115   | immunodeficiency 118                                                                                        |
 | OMIM:620670   | immunodeficiency, common variable, 15                                                                       |
 | OMIM:620653   | intellectual developmental disorder, autosomal recessive 80, with variant lissencephaly                     |
 | OMIM:620569   | leber-like hereditary optic neuropathy, autosomal recessive 2                                               |
@@ -76,11 +80,13 @@
 | OMIM:620315   | leukoencephalopathy with vanishing white matter 5                                                           |
 | OMIM:620680   | lipodystrophy, congenital generalized,  iia 5                                                               |
 | OMIM:620679   | lipodystrophy, familial partial,  iia 8                                                                     |
+| OMIM:620683   | lipodystrophy, familial partial,  iia 9                                                                     |
 | OMIM:620609   | long-olsen-distelmaier syndrome                                                                             |
 | OMIM:620410   | low density lipoprotein cholesterol level quantitative trait locus 3                                        |
 | OMIM:301114   | lui-jee-baron syndrome                                                                                      |
 | OMIM:620602   | lymphatic malformation 14                                                                                   |
 | OMIM:620300   | mitochondrial trifunctional protein deficiency 2                                                            |
+| OMIM:620681   | myoclonic epilepsy of lafora 2                                                                              |
 | OMIM:620374   | nephrolithiasis, calcium oxalate, 2, with or without nephrocalcinosis                                       |
 | OMIM:620669   | neurodegeneration with brain iron accumulation 9                                                            |
 | OMIM:620636   | neurodegeneration, childhood-onset, with cerebellar ataxia and cognitive decline                            |
@@ -102,6 +108,7 @@
 | OMIM:620576   | otosclerosis 11                                                                                             |
 | OMIM:620482   | parkinson disease 25, autosomal recessive early-onset, with impaired intellectual development               |
 | OMIM:620548   | premature ovarian failure 22                                                                                |
+| OMIM:620686   | premature ovarian failure 23                                                                                |
 | OMIM:620647   | progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 6                |
 | OMIM:620344   | prolonged electroretinal response suppression 2                                                             |
 | OMIM:620666   | spastic ataxia 10, autosomal recessive                                                                      |
