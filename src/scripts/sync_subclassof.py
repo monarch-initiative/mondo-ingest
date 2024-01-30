@@ -499,5 +499,5 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
 
 
 if __name__ == '__main__':
-    # cli()
-    run_defaults()  # TODO temp
+    cli()
+    #run_defaults()  # TODO temp
