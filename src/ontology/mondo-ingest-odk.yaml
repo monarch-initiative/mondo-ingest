@@ -41,13 +41,13 @@ components:
       source: http://www.orphadata.org/data/ORDO/ordo_orphanet.owl
 robot_report:
   release_reports: False
-  fail_on : None
-  use_labels : False
-  custom_profile : True
-  report_on :
+  fail_on: None
+  use_labels: False
+  custom_profile: True
+  report_on:
     - edit
-  custom_sparql_checks :
+  custom_sparql_checks:
     - properties-as-annotation-and-object
     - ordo-mapping-annotations
-  custom_sparql_exports :
+  custom_sparql_exports:
     - basic-report
