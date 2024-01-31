@@ -196,11 +196,6 @@ $(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) convert -i $< -f json -o $@
 .PRECIOUS: $(TMPDIR)/component-%.json
 
-MONDO_SSSOM_CONFIG_URL=https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/metadata/mondo.sssom.config.yml
-
-metadata/mondo.sssom.config.yml:
-	wget $(MONDO_SSSOM_CONFIG_URL) -O $@
-
 $(MAPPINGSDIR)/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
 	sssom sort $@ -o $@
