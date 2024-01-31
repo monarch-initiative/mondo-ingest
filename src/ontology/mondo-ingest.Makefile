@@ -345,13 +345,17 @@ documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs s
 build-mondo-ingest:
 	$(MAKE) refresh-imports exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
-		recreate-unmapped-components sync documentation
-	$(MAKE) prepare_release
+		recreate-unmapped-components sync documentation \
+		prepare_release
 	echo "Mondo Ingest has been fully completed"
 
 .PHONY: build-mondo-ingest-no-imports
 build-mondo-ingest-no-imports:
-	$(MAKE_FAST) build-mondo-ingest
+	$(MAKE_FAST) exclusions-all slurp-all mappings matches \
+		mapped-deprecated-terms mapping-progress-report \
+		recreate-unmapped-components sync documentation \
+		prepare_release
+	echo "Mondo Ingest has been fully completed"
 
 DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
 
