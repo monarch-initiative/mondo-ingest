@@ -54,7 +54,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/doid.owl $(COMPONENTSDIR)/gard.owl $(COMPONENTSDIR)/icd10cm.owl $(COMPONENTSDIR)/icd10who.owl $(COMPONENTSDIR)/icd11foundation.owl $(COMPONENTSDIR)/ncit.owl $(COMPONENTSDIR)/omim.owl $(COMPONENTSDIR)/ordo.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/doid.owl $(COMPONENTSDIR)/gard.owl $(COMPONENTSDIR)/icd10cm.owl $(COMPONENTSDIR)/icd10who.owl $(COMPONENTSDIR)/icd11foundation.owl $(COMPONENTSDIR)/ncit.owl $(COMPONENTSDIR)/omim.owl $(COMPONENTSDIR)/ordo.owl
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
