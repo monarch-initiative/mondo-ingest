@@ -21,6 +21,9 @@ WHERE {
        OPTIONAL {
          ?term owl:deprecated ?deprecated
        }
+       FILTER NOT EXISTS { 
+         ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/SO_0000704>  .
+      }
     }
     UNION
     { 
@@ -31,7 +34,11 @@ WHERE {
       OPTIONAL {
         ?term owl:deprecated ?deprecated
       }
+      FILTER NOT EXISTS { 
+        ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/SO_0000704>  .
+      }
     }
+    
   }
   FILTER(isIRI(?term) && (regex(str(?term), "https://omim.org/entry/") || regex(str(?term), "https://www.omim.org/phenotypicSeries/")))
 }

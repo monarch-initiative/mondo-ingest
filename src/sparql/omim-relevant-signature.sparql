@@ -1,10 +1,24 @@
-### For Disease Ontology, we are interested in all terms
+### For OMIM, we are interested in all terms that are not genes.
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 SELECT DISTINCT ?term
 WHERE {
   { 
-    { ?s1 ?p1 ?term . }
+    { 
+      ?s1 ?p1 ?term . 
+      FILTER NOT EXISTS { 
+        ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/SO_0000704>  .
+      }
+    }
     UNION
-    { ?term ?p2 ?o2 . }
+    { 
+      ?term ?p2 ?o2 . 
+      FILTER NOT EXISTS { 
+        ?term rdfs:subClassOf* <http://purl.obolibrary.org/obo/SO_0000704>  .
+      }
+    }
+    
   }
   FILTER(isIRI(?term) && (regex(str(?term), "https://omim.org/entry/") || regex(str(?term), "https://www.omim.org/phenotypicSeries/")))
 }
