@@ -1664,8 +1664,10 @@ MONDO:0005020	intestinal disorder	skos:closeMatch	ICD10CM:K63.9	Disease of intes
 MONDO:0005020	intestinal disorder	skos:closeMatch	ICD10CM:K63.9	Disease of intestine, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:5295	LEXMATCH
 MONDO:0005025	endocarditis	skos:closeMatch	ICD10CM:I33.9	Acute and subacute endocarditis, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:10314	LEXMATCH
 MONDO:0005025	endocarditis	skos:closeMatch	ICD10CM:I33.9	Acute and subacute endocarditis, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:10314	LEXMATCH
-MONDO:0005027	epilepsy	skos:closeMatch	ICD10CM:G40.909	Epilepsy, unspecified, not intractable, without status epilepticus	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:1826	LEXMATCH
-MONDO:0005027	epilepsy	skos:closeMatch	ICD10CM:G40.909	Epilepsy, unspecified, not intractable, without status epilepticus	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:1826	LEXMATCH
+MONDO:0005027	epilepsy	skos:closeMatch	ICD10CM:G40.9	Epilepsy, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:narrowMatch-INVERSE	doid:1826	LEXMATCH
+MONDO:0005027	epilepsy	skos:closeMatch	ICD10CM:G40.9	Epilepsy, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch-INVERSE	doid:1826	LEXMATCH
+MONDO:0005027	epilepsy	skos:closeMatch	ICD10CM:G40.909	Epilepsy, unspecified, not intractable, without status epilepticus	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:narrowMatch-INVERSE	doid:1826	LEXMATCH
+MONDO:0005027	epilepsy	skos:closeMatch	ICD10CM:G40.909	Epilepsy, unspecified, not intractable, without status epilepticus	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch-INVERSE	doid:1826	LEXMATCH
 MONDO:0005029	essential thrombocythemia	skos:closeMatch	ICD10CM:D47.3	Essential (hemorrhagic) thrombocythemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:2224	LEXMATCH
 MONDO:0005029	essential thrombocythemia	skos:closeMatch	ICD10CM:D47.3	Essential (hemorrhagic) thrombocythemia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:2224	LEXMATCH
 MONDO:0005041	glaucoma	skos:closeMatch	ICD10CM:H40	Glaucoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:1686	LEXMATCH
@@ -5575,7 +5577,9 @@ MONDO:0019168	pyomyositis	skos:closeMatch	ICD10CM:M60.0	Infective myositis	semap
 MONDO:0019169	pyruvate dehydrogenase deficiency	skos:closeMatch	ICD10CM:E74.4	Disorders of pyruvate metabolism and gluconeogenesis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3649	LEXMATCH
 MONDO:0019169	pyruvate dehydrogenase deficiency	skos:closeMatch	ICD10CM:E74.4	Disorders of pyruvate metabolism and gluconeogenesis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3649	LEXMATCH
 MONDO:0019172	aniridia	skos:closeMatch	ICD10CM:Q13.1	Absence of iris	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:12271	LEXMATCH
+MONDO:0019172	aniridia	skos:closeMatch	ICD10CM:Q13.1	Absence of iris	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:12271	LEXMATCH
 MONDO:0019172	aniridia	skos:closeMatch	ICD10CM:Q13.1	Absence of iris	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:12271	LEXMATCH
+MONDO:0019172	aniridia	skos:closeMatch	ICD10CM:Q13.1	Absence of iris	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:12271	LEXMATCH
 MONDO:0019187	Axenfeld-Rieger syndrome	skos:closeMatch	ICD10CM:Q13.81	Rieger's anomaly	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:14686	LEXMATCH
 MONDO:0019187	Axenfeld-Rieger syndrome	skos:closeMatch	ICD10CM:Q13.81	Rieger's anomaly	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:14686	LEXMATCH
 MONDO:0019188	Rubinstein-Taybi syndrome	skos:closeMatch	ICD10CM:Q87.2	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:1933	LEXMATCH
@@ -5624,8 +5628,8 @@ MONDO:0019345	shigellosis	skos:closeMatch	ICD10CM:A03.1	Shigellosis due to Shige
 MONDO:0019345	shigellosis	skos:closeMatch	ICD10CM:A03.1	Shigellosis due to Shigella flexneri	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:12385	LEXMATCH
 MONDO:0019345	shigellosis	skos:closeMatch	ICD10CM:A03.2	Shigellosis due to Shigella boydii	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:12385	LEXMATCH
 MONDO:0019345	shigellosis	skos:closeMatch	ICD10CM:A03.2	Shigellosis due to Shigella boydii	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:12385	LEXMATCH
-MONDO:0019347	peeling skin syndrome	skos:closeMatch	ICD10CM:Q80.8	Other congenital ichthyosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060283	LEXMATCH
-MONDO:0019347	peeling skin syndrome	skos:closeMatch	ICD10CM:Q80.8	Other congenital ichthyosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060283	LEXMATCH
+MONDO:0019347	peeling skin syndrome	skos:closeMatch	ICD10CM:Q80.8	Other congenital ichthyosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:0060283	LEXMATCH
+MONDO:0019347	peeling skin syndrome	skos:closeMatch	ICD10CM:Q80.8	Other congenital ichthyosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:0060283	LEXMATCH
 MONDO:0019349	Sotos syndrome	skos:closeMatch	ICD10CM:Q87.3	Congenital malformation syndromes involving early overgrowth	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:14748	LEXMATCH
 MONDO:0019349	Sotos syndrome	skos:closeMatch	ICD10CM:Q87.3	Congenital malformation syndromes involving early overgrowth	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:14748	LEXMATCH
 MONDO:0019353	Stargardt disease	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0019353	LEXMATCH
