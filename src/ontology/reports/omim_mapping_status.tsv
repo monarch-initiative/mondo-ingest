@@ -1,6 +1,7 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
 OMIM:301108	cataracts, hearing impairment, nephrotic syndrome, and enterocolitis 1	False	False	False
 OMIM:301114	lui-jee-baron syndrome	False	False	False
+OMIM:301115	immunodeficiency 118	False	False	False
 OMIM:613035	hearing loss, noise-induced, susceptibility to	False	False	False
 OMIM:620150	epidermolytic hyperkeratosis 2	False	False	False
 OMIM:620300	mitochondrial trifunctional protein deficiency 2	False	False	False
@@ -96,6 +97,10 @@ OMIM:620674	neutropenia, severe congenital, 11, autosomal dominant	False	False	F
 OMIM:620675	leukodystrophy, hypomyelinating, 27	False	False	False
 OMIM:620679	lipodystrophy, familial partial,  iia 8	False	False	False
 OMIM:620680	lipodystrophy, congenital generalized,  iia 5	False	False	False
+OMIM:620681	myoclonic epilepsy of lafora 2	False	False	False
+OMIM:620683	lipodystrophy, familial partial,  iia 9	False	False	False
+OMIM:620686	premature ovarian failure 23	False	False	False
+OMIM:620690	developmental dysplasia of the hip 3	False	False	False
 OMIMPS:109400	Basal cell nevus syndrome	False	False	False
 OMIMPS:113800	Epidermolytic hyperkeratosis	False	False	False
 OMIMPS:141200	Hematuria, benign familial	False	False	False
@@ -104,8 +109,10 @@ OMIMPS:164210	Craniofacial Microsomia	False	False	False
 OMIMPS:164300	Oculopharyngeal muscular dystrophy	False	False	False
 OMIMPS:167030	Nephrolithiasis, calcium oxalate	False	False	False
 OMIMPS:177735	Pseudohypoaldosteronism, type I	False	False	False
+OMIMPS:254780	Myoclonic epilepsy of Lafora	False	False	False
 OMIMPS:301108	Cataracts, hearing impairment, nephrotic syndrome, and enterocolitis 1	False	False	False
 OMIMPS:305450	FG syndrome	False	False	False
+OMIMPS:601104	Supranuclear palsy, progressive	False	False	False
 OMIMPS:604498	Amegakaryocytic thrombocytopenia, congenital	False	False	False
 OMIMPS:605899	Glycine encephalopathy	False	False	False
 OMIMPS:608415	Prolonged electroretinal response suppression	False	False	False
@@ -10341,8 +10348,8 @@ OMIM:606953	GALE	False	True	False
 OMIM:606954	ZNF253	False	True	False
 OMIM:606956	ZNF256	False	True	False
 OMIM:606957	ZNF257	False	True	False
-OMIM:606958	MPP5	False	True	False
-OMIM:606959	MPP6	False	True	False
+OMIM:606958	PALS1	False	True	False
+OMIM:606959	PALS2	False	True	False
 OMIM:606961	WBP1	False	True	False
 OMIM:606962	WBP2	False	True	False
 OMIM:606964	STK38	False	True	False
@@ -18951,6 +18958,8 @@ OMIM:620623	MIR522	False	True	False
 OMIM:620624	MIR519A1	False	True	False
 OMIM:620625	MIR527	False	True	False
 OMIM:620626	MIR516A1	False	True	False
+OMIM:620627	MIR516A2	False	True	False
+OMIM:620628	MIR519A2	False	True	False
 OMIM:620630	TMEM170A	False	True	False
 OMIM:620631	EMC7	False	True	False
 OMIM:620633	GOLT1A	False	True	False
@@ -18958,6 +18967,7 @@ OMIM:620634	IRGC	False	True	False
 OMIM:620637	CPED1	False	True	False
 OMIM:620638	KCTD4	False	True	False
 OMIM:620640	RNF145	False	True	False
+OMIM:620643	MIR1323	False	True	False
 OMIM:620648	BTNL9	False	True	False
 OMIM:620649	PLA2G4E	False	True	False
 OMIM:620650	GLOD4	False	True	False
@@ -18977,6 +18987,8 @@ OMIM:620678	RINL	False	True	False
 OMIM:620682	SZRD1	False	True	False
 OMIM:620684	HGH1	False	True	False
 OMIM:620685	C19ORF53	False	True	False
+OMIM:620689	LSM14B	False	True	False
+OMIM:620691	BUD13	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
 OMIM:100100	prune belly syndrome	True	False	False
@@ -20669,7 +20681,7 @@ OMIM:254450	myelofibrosis	True	False	False
 OMIM:254500	myeloma, multiple	True	False	False
 OMIM:254600	myeloperoxidase deficiency	True	False	False
 OMIM:254770	epilepsy, myoclonic juvenile	True	False	False
-OMIM:254780	myoclonic epilepsy of lafora	True	False	False
+OMIM:254780	myoclonic epilepsy of lafora 1	True	False	False
 OMIM:254800	myoclonic epilepsy of unverricht and lundborg	True	False	False
 OMIM:254900	epilepsy, progressive myoclonic, 4, with or without renal failure	True	False	False
 OMIM:254940	carey-fineman-ziter syndrome 1	True	False	False
@@ -21733,7 +21745,7 @@ OMIM:601543	deafness, autosomal dominant 12	True	False	False
 OMIM:601544	deafness, autosomal dominant 3a	True	False	False
 OMIM:601547	cataract 3, multiple types	True	False	False
 OMIM:601549	alacrima, congenital, autosomal recessive	True	False	False
-OMIM:601552	facial dysmorphism, lens dislocation, anterior segment abnormalities, and spontaneous filtering blebs	True	False	False
+OMIM:601552	traboulsi syndrome	True	False	False
 OMIM:601553	hypotrichosis, congenital, with juvenile macular dystrophy	True	False	False
 OMIM:601559	stuve-wiedemann syndrome 1	True	False	False
 OMIM:601583	wilms tumor 5	True	False	False
