@@ -4,6 +4,11 @@
 ### Unmapped mappable terms _(!excluded, !deprecated)_
 | subject_id   | subject_label                                                                                      |
 |:-------------|:---------------------------------------------------------------------------------------------------|
+| DOID:0081412 | B acute lymphoblastic leukemia with DUX4 rearrangement                                             |
+| DOID:0081411 | B acute lymphoblastic leukemia with PAX5 P80R mutation                                             |
+| DOID:0081403 | BCOR ITD sarcoma                                                                                   |
+| DOID:0081404 | BCOR-CCNB3 sarcoma                                                                                 |
+| DOID:0070527 | Borrelia miyamotoi disease                                                                         |
 | DOID:0081250 | CIC-rearranged sarcoma                                                                             |
 | DOID:0081377 | COX deficiency, benign infantile mitochondrial myopathy                                            |
 | DOID:0081394 | Caroli syndrome                                                                                    |
@@ -16,12 +21,17 @@
 | DOID:0111503 | Li-Fraumeni syndrome 1                                                                             |
 | DOID:0070516 | Mitchell syndrome                                                                                  |
 | DOID:0070439 | North Carolina macular dystrophy                                                                   |
+| DOID:0070526 | PLACK syndrome                                                                                     |
 | DOID:0070486 | Parkinson's disease 25                                                                             |
+| DOID:0070475 | SMARCB1-deficient renal medullary carcinoma                                                        |
 | DOID:0070509 | Schinzel Giedion syndrome                                                                          |
+| DOID:0070529 | Sifrim-Hitz-Weiss syndrome                                                                         |
 | DOID:0112103 | Sotos syndrome 1                                                                                   |
 | DOID:0080817 | T2-high asthma                                                                                     |
 | DOID:0080818 | T2-low asthma                                                                                      |
 | DOID:0081386 | TANGO2-related metabolic encephalopathy and arrythmias                                             |
+| DOID:0081415 | TFE3-rearranged renal cell carcinoma                                                               |
+| DOID:0081414 | TFEB-rearranged renal cell carcinoma                                                               |
 | DOID:0081397 | Vissers-Bodmer syndrome                                                                            |
 | DOID:0070483 | Watson syndrome                                                                                    |
 | DOID:0080891 | YAP1-MAMLD1 fusion-positive supratentorial ependymoma                                              |
@@ -32,7 +42,9 @@
 | DOID:0081379 | amyotrophic lateral sclerosis type 25                                                              |
 | DOID:0081380 | amyotrophic lateral sclerosis type 26                                                              |
 | DOID:0081382 | amyotrophic lateral sclerosis type 28                                                              |
+| DOID:0081418 | anaplastic sarcoma of the kidney                                                                   |
 | DOID:0050640 | anauxetic dysplasia 1                                                                              |
+| DOID:0070532 | aniridia 1                                                                                         |
 | DOID:0081256 | astrocytoma, IDH-mutant, grade 2                                                                   |
 | DOID:0081257 | astrocytoma, IDH-mutant, grade 3                                                                   |
 | DOID:0080877 | astrocytoma, IDH-mutant, grade 4                                                                   |
@@ -40,10 +52,23 @@
 | DOID:0081384 | ataxia-telangiectasia-like disorder-1                                                              |
 | DOID:0081385 | ataxia-telangiectasia-like disorder-2                                                              |
 | DOID:0070488 | atypical dopamine transporter deficiency syndrome                                                  |
+| DOID:0081399 | autosomal dominant distal hereditary motor neuronopathy 10                                         |
+| DOID:0081400 | autosomal dominant distal hereditary motor neuronopathy 11                                         |
+| DOID:0081401 | autosomal dominant distal hereditary motor neuronopathy 13                                         |
+| DOID:0081429 | autosomal recessive distal hereditary motor neuronopathy 10                                        |
+| DOID:0081425 | autosomal recessive distal hereditary motor neuronopathy 6                                         |
+| DOID:0081426 | autosomal recessive distal hereditary motor neuronopathy 7                                         |
+| DOID:0081427 | autosomal recessive distal hereditary motor neuronopathy 8                                         |
+| DOID:0081428 | autosomal recessive distal hereditary motor neuronopathy 9                                         |
 | DOID:0080602 | benign teratoma                                                                                    |
 | DOID:0070364 | bradyopsia 2                                                                                       |
 | DOID:0070466 | carpal tunnel syndrome 1                                                                           |
 | DOID:0070467 | carpal tunnel syndrome 2                                                                           |
+| DOID:0070528 | cepacia syndrome                                                                                   |
+| DOID:0081416 | childhood renal cell carcinoma with MiT translocations                                             |
+| DOID:0081407 | childhood round cell sarcoma with EWSR1-non-ETS fusion                                             |
+| DOID:0081405 | childhood sarcoma with BCOR genetic alterations                                                    |
+| DOID:0081419 | childhood-onset dystonia with optic atrophy and basal ganglia abnormalities                        |
 | DOID:0070474 | childhood-onset neurodegeneration with brain atrophy                                               |
 | DOID:0070515 | chromosome 16p11.2 deletion syndrome, 593-kb                                                       |
 | DOID:0070470 | chromosome 1p36.33 duplication syndrome                                                            |
@@ -66,6 +91,9 @@
 | DOID:0081392 | corticobasal degeneration syndrome                                                                 |
 | DOID:0060912 | craniosynostosis 7                                                                                 |
 | DOID:0070376 | developmental and epileptic encephalopathy 31B                                                     |
+| DOID:0060930 | developmental dysplasia of the hip                                                                 |
+| DOID:0060931 | developmental dysplasia of the hip 1                                                               |
+| DOID:0060932 | developmental dysplasia of the hip 2                                                               |
 | DOID:0080763 | diffuse gastric cancer                                                                             |
 | DOID:0080880 | diffuse glioma, H3 G34 mutant                                                                      |
 | DOID:0080684 | diffuse midline glioma, H3 K27M-mutant                                                             |
@@ -78,9 +106,18 @@
 | DOID:0070445 | early-onset dystonia and/or spastic paraplegia                                                     |
 | DOID:0070471 | early-onset epilepsy 2                                                                             |
 | DOID:0070472 | early-onset epilepsy 3                                                                             |
+| DOID:0070519 | early-onset vitamin B6-dependent epilepsy 4                                                        |
 | DOID:0081359 | epidermolytic hyperkeratosis 2                                                                     |
 | DOID:0060917 | facioscapulohumeral muscular dystrophy 3                                                           |
 | DOID:0060918 | facioscapulohumeral muscular dystrophy 4                                                           |
+| DOID:0081420 | familial focal epilepsy with variable foci                                                         |
+| DOID:0081421 | familial focal epilepsy with variable foci 1                                                       |
+| DOID:0081422 | familial focal epilepsy with variable foci 2                                                       |
+| DOID:0081423 | familial focal epilepsy with variable foci 3                                                       |
+| DOID:0081424 | familial focal epilepsy with variable foci 4                                                       |
+| DOID:0070518 | familial multiple lipomatosis                                                                      |
+| DOID:0070530 | foveal hypoplasia 1                                                                                |
+| DOID:0070531 | foveal hypoplasia 2                                                                                |
 | DOID:0080712 | gene duplication disease                                                                           |
 | DOID:0070454 | hereditary spastic paraplegia 70                                                                   |
 | DOID:0070455 | hereditary spastic paraplegia 79A                                                                  |
@@ -172,11 +209,18 @@
 | DOID:0060925 | otosclerosis 7                                                                                     |
 | DOID:0060926 | otosclerosis 8                                                                                     |
 | DOID:0070442 | paroxysmal nonkinesigenic dyskinesia 3                                                             |
+| DOID:0070520 | peeling skin syndrome 1                                                                            |
+| DOID:0070521 | peeling skin syndrome 2                                                                            |
+| DOID:0070522 | peeling skin syndrome 3                                                                            |
+| DOID:0070523 | peeling skin syndrome 4                                                                            |
+| DOID:0070524 | peeling skin syndrome 5                                                                            |
+| DOID:0070525 | peeling skin syndrome 6                                                                            |
 | DOID:0080813 | persistent mild asthma                                                                             |
 | DOID:0080814 | persistent moderate asthma                                                                         |
 | DOID:0080824 | persistent severe asthma                                                                           |
 | DOID:0080881 | pleomorphic xanthoastrocytoma BRAF mutant                                                          |
 | DOID:0070511 | polyhydramnios, megalencephaly, and symptomatic epilepsy                                           |
+| DOID:0081417 | poorly differentiated chordoma                                                                     |
 | DOID:0081254 | posterior fossa group A ependymoma                                                                 |
 | DOID:0081255 | posterior fossa group B ependymoma                                                                 |
 | DOID:9373    | postural kyphosis                                                                                  |
@@ -188,10 +232,16 @@
 | DOID:0060914 | proteosome-associated autoinflammatory syndrome 2                                                  |
 | DOID:0060915 | proteosome-associated autoinflammatory syndrome 4                                                  |
 | DOID:0060919 | proteosome-associated autoinflammatory syndrome 5                                                  |
-| DOID:0070475 | renal medullary carcinoma                                                                          |
+| DOID:0081413 | renal cell carcinoma with MiT translocations                                                       |
 | DOID:0070438 | retinal macular dystrophy                                                                          |
+| DOID:0070517 | retinal macular dystrophy 2                                                                        |
 | DOID:0070440 | retinal macular dystrophy 3                                                                        |
 | DOID:0070441 | retinal macular dystrophy 4                                                                        |
+| DOID:0081408 | round cell sarcoma with EWSR1-NFATC2 gene fusion                                                   |
+| DOID:0081409 | round cell sarcoma with EWSR1-PATZ1 gene fusion                                                    |
+| DOID:0081406 | round cell sarcoma with EWSR1-non-ETS fusion                                                       |
+| DOID:0081410 | round cell sarcoma with FUS-NFATC2 gene fusion                                                     |
+| DOID:0081402 | sarcoma with BCOR genetic alterations                                                              |
 | DOID:0070480 | schwannomatosis 1                                                                                  |
 | DOID:0070481 | schwannomatosis 2                                                                                  |
 | DOID:0081391 | semantic dementia                                                                                  |

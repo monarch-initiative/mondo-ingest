@@ -1,14 +1,7 @@
 subject_id	predicate_id	object_id	subject_label	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID	>A oboInOwl:source	A oboInOwl:hasDbXref								
 MONDO:0002010	MONDO:equivalentTo	OMIMPS:305450	FG syndrome	FG syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	fg syndrome
-MONDO:0007709	MONDO:equivalentTo	OMIMPS:141200	hematuria, benign familial	Hematuria, benign familial	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hematuria, benign familial
-MONDO:0008116	MONDO:equivalentTo	OMIMPS:164300	oculopharyngeal muscular dystrophy	Oculopharyngeal muscular dystrophy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	oculopharyngeal muscular dystrophy
-MONDO:0009813	MONDO:equivalentTo	OMIMPS:609628	chronic recurrent multifocal osteomyelitis	Chronic recurrent multifocal osteomyelitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	chronic recurrent multifocal osteomyelitis
-MONDO:0011612	MONDO:equivalentTo	OMIMPS:605899	glycine encephalopathy	Glycine encephalopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	glycine encephalopathy
-MONDO:0012172	MONDO:equivalentTo	OMIMPS:609015	mitochondrial trifunctional protein deficiency	Mitochondrial trifunctional protein deficiency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	mitochondrial trifunctional protein deficiency
-MONDO:0013343	MONDO:equivalentTo	OMIMPS:613652	C1Q deficiency	C1q deficiency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	c1q deficiency
 MONDO:0018875	MONDO:equivalentTo	OMIMPS:151623	Li-Fraumeni syndrome	Li-Fraumeni syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	li-fraumeni syndrome
-MONDO:0030309	MONDO:equivalentTo	OMIMPS:619382	Leber hereditary optic neuropathy, autosomal recessive	Leber hereditary optic neuropathy, autosomal recessive	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	leber hereditary optic neuropathy, autosomal recessive
 MONDO:0000022	MONDO:equivalentTo	ICD10CM:N39.44	nocturnal enuresis	Nocturnal enuresis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nocturnal enuresis
 MONDO:0000190	MONDO:equivalentTo	ICD10CM:I49.01	ventricular fibrillation	Ventricular fibrillation	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ventricular fibrillation
 MONDO:0000397	MONDO:equivalentTo	ICD10CM:G80.4	ataxic cerebral palsy	Ataxic cerebral palsy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ataxic cerebral palsy
@@ -458,9 +451,14 @@ MONDO:0859598	MONDO:equivalentTo	NCIT:C7152	erythroleukemia	Erythroleukemia	sema
 MONDO:0859747	MONDO:equivalentTo	NCIT:C7931	grade I lymphomatoid granulomatosis	Grade I Lymphomatoid Granulomatosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	grade i lymphomatoid granulomatosis
 MONDO:0859748	MONDO:equivalentTo	NCIT:C7932	grade II lymphomatoid granulomatosis	Grade II Lymphomatoid Granulomatosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	grade ii lymphomatoid granulomatosis
 MONDO:0859749	MONDO:equivalentTo	NCIT:C7933	grade III lymphomatoid granulomatosis	Grade III Lymphomatoid Granulomatosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	grade iii lymphomatoid granulomatosis
+MONDO:0000158	MONDO:equivalentTo	DOID:0060930	developmental dysplasia of the hip	developmental dysplasia of the hip	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omimps:142700
+MONDO:0007628	MONDO:equivalentTo	DOID:0070530	foveal hypoplasia 1	foveal hypoplasia 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:136520
 MONDO:0007630	MONDO:equivalentTo	DOID:0070439	North Carolina macular dystrophy	North Carolina macular dystrophy	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	mesh:c537835
 MONDO:0007630	MONDO:equivalentTo	DOID:0070439	North Carolina macular dystrophy	North Carolina macular dystrophy	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:136550
+MONDO:0007729	MONDO:equivalentTo	DOID:0060931	developmental dysplasia of the hip 1	developmental dysplasia of the hip 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:142700
 MONDO:0007872	MONDO:equivalentTo	DOID:0081370	LADD syndrome	LADD syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omimps:149730
+MONDO:0007909	MONDO:equivalentTo	DOID:0070518	familial multiple lipomatosis	familial multiple lipomatosis	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	mesh:d000071070
+MONDO:0007909	MONDO:equivalentTo	DOID:0070518	familial multiple lipomatosis	familial multiple lipomatosis	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:151900
 MONDO:0008164	MONDO:equivalentTo	DOID:0060920	otosclerosis 1	otosclerosis 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:166800
 MONDO:0008672	MONDO:equivalentTo	DOID:0070483	Watson syndrome	Watson syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:193520
 MONDO:0009726	MONDO:equivalentTo	DOID:0060913	proteosome-associated autoinflammatory syndrome	proteosome-associated autoinflammatory syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omimps:256040
@@ -468,6 +466,8 @@ MONDO:0010209	MONDO:equivalentTo	DOID:0070452	xanthinuria type I	xanthinuria typ
 MONDO:0010857	MONDO:equivalentTo	DOID:0081391	semantic dementia	semantic dementia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	semantic dementia
 MONDO:0011346	MONDO:equivalentTo	DOID:0070453	xanthinuria type II	xanthinuria type II	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:603592
 MONDO:0011586	MONDO:equivalentTo	DOID:0060921	otosclerosis 2	otosclerosis 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:605727
+MONDO:0011937	MONDO:equivalentTo	DOID:0070523	peeling skin syndrome 4	peeling skin syndrome 4	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	mesh:c564309
+MONDO:0011937	MONDO:equivalentTo	DOID:0070523	peeling skin syndrome 4	peeling skin syndrome 4	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:607936
 MONDO:0011999	MONDO:equivalentTo	DOID:0060922	otosclerosis 3	otosclerosis 3	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:608244
 MONDO:0012121	MONDO:equivalentTo	DOID:0060924	otosclerosis 5	otosclerosis 5	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:608787
 MONDO:0012611	MONDO:equivalentTo	DOID:0070511	polyhydramnios, megalencephaly, and symptomatic epilepsy	polyhydramnios, megalencephaly, and symptomatic epilepsy	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	mesh:c567020
@@ -478,14 +478,20 @@ MONDO:0012696	MONDO:equivalentTo	DOID:0060923	otosclerosis 4	otosclerosis 4	sema
 MONDO:0012697	MONDO:equivalentTo	DOID:0060925	otosclerosis 7	otosclerosis 7	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:611572
 MONDO:0012797	MONDO:equivalentTo	DOID:0060926	otosclerosis 8	otosclerosis 8	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:612096
 MONDO:0014264	MONDO:equivalentTo	DOID:0060927	otosclerosis 10	otosclerosis 10	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:615589
+MONDO:0014277	MONDO:equivalentTo	DOID:0060932	developmental dysplasia of the hip 2	developmental dysplasia of the hip 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:615612
 MONDO:0014299	MONDO:equivalentTo	DOID:0070481	schwannomatosis 2	schwannomatosis 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:615670
+MONDO:0014923	MONDO:equivalentTo	DOID:0070524	peeling skin syndrome 5	peeling skin syndrome 5	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617115
+MONDO:0014946	MONDO:equivalentTo	DOID:0070529	Sifrim-Hitz-Weiss syndrome	Sifrim-Hitz-Weiss syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617159
 MONDO:0014958	MONDO:equivalentTo	DOID:0081395	Harel-Yoon syndrome	Harel-Yoon syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617183
 MONDO:0015059	MONDO:equivalentTo	DOID:0081390	progressive non-fluent aphasia	progressive non-fluent aphasia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	progressive non-fluent aphasia
 MONDO:0016644	MONDO:equivalentTo	DOID:0081389	logopenic progressive aphasia	logopenic progressive aphasia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	logopenic progressive aphasia
 MONDO:0018808	MONDO:equivalentTo	DOID:0081394	Caroli syndrome	Caroli syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	caroli syndrome
 MONDO:0019806	MONDO:equivalentTo	DOID:0081388	primary progressive aphasia	primary progressive aphasia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary progressive aphasia
+MONDO:0020310	MONDO:equivalentTo	DOID:0081420	familial focal epilepsy with variable foci	familial focal epilepsy with variable foci	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omimps:604364
 MONDO:0020730	MONDO:equivalentTo	DOID:0070466	carpal tunnel syndrome 1	carpal tunnel syndrome 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:115430
+MONDO:0024507	MONDO:equivalentTo	DOID:0070532	aniridia 1	aniridia 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:106210
 MONDO:0024517	MONDO:equivalentTo	DOID:0070480	schwannomatosis 1	schwannomatosis 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:162091
+MONDO:0024548	MONDO:equivalentTo	DOID:0070520	peeling skin syndrome 1	peeling skin syndrome 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:270300
 MONDO:0030020	MONDO:equivalentTo	DOID:0070424	combined oxidative phosphorylation deficiency 44	combined oxidative phosphorylation deficiency 44	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:618855
 MONDO:0030073	MONDO:equivalentTo	DOID:0070516	Mitchell syndrome	Mitchell syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:618960
 MONDO:0030311	MONDO:equivalentTo	DOID:0070425	combined oxidative phosphorylation deficiency 52	combined oxidative phosphorylation deficiency 52	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619386
@@ -500,6 +506,7 @@ MONDO:0044315	MONDO:equivalentTo	DOID:0060912	craniosynostosis 7	craniosynostosi
 MONDO:0054560	MONDO:equivalentTo	DOID:0050640	anauxetic dysplasia 1	anauxetic dysplasia 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:607095
 MONDO:0054699	MONDO:equivalentTo	DOID:0060916	proteasome-associated autoinflammatory syndrome 3	proteasome-associated autoinflammatory syndrome 3	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617591
 MONDO:0054835	MONDO:equivalentTo	DOID:0070489	classic dopamine transporter deficiency syndrome	classic dopamine transporter deficiency syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:613135
+MONDO:0054852	MONDO:equivalentTo	DOID:0070525	peeling skin syndrome 6	peeling skin syndrome 6	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:618084
 MONDO:0060596	MONDO:equivalentTo	DOID:0070514	neurodevelopmental disorder with dysmorphic facies and distal limb anomalies	neurodevelopmental disorder with dysmorphic facies and distal limb anomalies	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617755
 MONDO:0700200	MONDO:equivalentTo	DOID:0070488	atypical dopamine transporter deficiency syndrome	atypical dopamine transporter deficiency syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	atypical dopamine transporter deficiency syndrome
 MONDO:0859152	MONDO:equivalentTo	DOID:0070443	neurodevelopmental disorder with cerebellar atrophy and motor dysfunction	neurodevelopmental disorder with cerebellar atrophy and motor dysfunction	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619333
@@ -517,6 +524,12 @@ MONDO:0859578	MONDO:equivalentTo	DOID:0081372	lacrimoauriculodentodigital syndro
 MONDO:0957215	MONDO:equivalentTo	DOID:0081352	congenital myopathy 20	congenital myopathy 20	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620310
 MONDO:0957248	MONDO:equivalentTo	DOID:0070376	developmental and epileptic encephalopathy 31B	developmental and epileptic encephalopathy 31B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620352
 MONDO:0957386	MONDO:equivalentTo	DOID:0081387	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620428
+MONDO:0957583	MONDO:equivalentTo	DOID:0070513	neurodevelopmental disorder with dysmorphic facies and behavioral abnormalities	neurodevelopmental disorder with dysmorphic facies and behavioral abnormalities	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620489
+MONDO:0957870	MONDO:equivalentTo	DOID:0070373	leukoencephalopathy with vanishing white matter 2	leukoencephalopathy with vanishing white matter 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620312
+MONDO:0957871	MONDO:equivalentTo	DOID:0070372	leukoencephalopathy with vanishing white matter 3	leukoencephalopathy with vanishing white matter 3	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620313
+MONDO:0957872	MONDO:equivalentTo	DOID:0070371	leukoencephalopathy with vanishing white matter 4	leukoencephalopathy with vanishing white matter 4	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620314
+MONDO:0957873	MONDO:equivalentTo	DOID:0070367	leukoencephalopathy with vanishing white matter 5	leukoencephalopathy with vanishing white matter 5	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620315
+MONDO:0957928	MONDO:equivalentTo	DOID:0060928	otosclerosis 11	otosclerosis 11	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620576
 MONDO:0000088	MONDO:equivalentTo	ICD10WHO:E30.1	precocious puberty	Precocious puberty	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	precocious puberty
 MONDO:0000245	MONDO:equivalentTo	ICD10WHO:B35.5	tinea imbricata	Tinea imbricata	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tinea imbricata
 MONDO:0000367	MONDO:equivalentTo	ICD10WHO:B68	taeniasis	Taeniasis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	taeniasis
