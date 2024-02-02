@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/omim.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-01-31/omim.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-02-02/omim.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 13 |
-| Axioms | 349945 |
-| Logical axioms | 36367 |
-| Classes | 31683 |
+| Axioms | 320435 |
+| Logical axioms | 19151 |
+| Classes | 19389 |
 | Object properties | 6 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -33,25 +33,24 @@
 | Metric | Value |
 | ------ | ----- |
 | AnnotationAssertion | 281880 |
-| Declaration | 31698 |
-| SubClassOf | 36367 |
+| Declaration | 19404 |
+| SubClassOf | 19151 |
 
 
 #### Entity namespaces: axiom counts by namespace
 
 | Metric | Value |
 | ------ | ----- |
-| prefix_unknown | 30236 |
+| prefix_unknown | 17943 |
+| MONDO | 1 |
 | oboInOwl | 3 |
 | owl | 2 |
+| rdf | 1 |
+| IAO | 2 |
 | xsd | 1 |
 | skos | 1 |
 | rdfs | 2 |
 | CHR | 1446 |
-| MONDO | 1 |
-| rdf | 1 |
-| IAO | 2 |
-| SO | 1 |
 | biolink | 2 |
 | RO | 6 |
 
@@ -60,7 +59,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 104411 |
+| Class | 57685 |
 | ObjectSomeValuesFrom | 14302 |
 
 

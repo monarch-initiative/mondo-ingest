@@ -5,6 +5,6 @@
 | mondo_id      | source_id            | source                   |
 |:--------------|:---------------------|:-------------------------|
 | ID            | A oboInOwl:hasDbXref | >A oboInOwl:source       |
-| MONDO:0002546 | DOID:955             | MONDO:equivalentObsolete |
-| MONDO:0003333 | DOID:5209            | MONDO:equivalentObsolete |
-| MONDO:0004398 | DOID:7922            | MONDO:equivalentObsolete |
+| MONDO:0008024 | DOID:0111201         | MONDO:equivalentObsolete |
+| MONDO:0008025 | DOID:0111208         | MONDO:equivalentObsolete |
+| MONDO:0015353 | DOID:0111204         | MONDO:equivalentObsolete |
