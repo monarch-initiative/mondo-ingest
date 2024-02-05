@@ -21,12 +21,7 @@ pip-%:
 	 python3 -m pip install --upgrade $*
 
 .PHONY: dependencies
-dependencies:
-	$(MAKE) pip-pip
-	$(MAKE) pip-setuptools
-	$(MAKE) pip-oaklib
-	$(MAKE) pip-sssom
-	$(MAKE) pip-semsql
+dependencies: pip-pip pip-setuptools pip-oaklib pip-sssom pip-semsql
 
 ####################################
 ### General ########################
@@ -274,13 +269,12 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 	--outpath $@
 
 # Exclusions: all artefacts for single ontology
-exclusions-%:
-	$(MAKE) $(REPORTDIR)/$*_term_exclusions.txt
-	$(MAKE) $(REPORTDIR)/$*_exclusion_reasons.ttl
-	$(MAKE) $(REPORTDIR)/$*_excluded_terms_in_mondo_xrefs.tsv
+.PHONY: exclusions-%
+exclusions-%: reports/%_exclusion_reasons.ttl reports/%_excluded_terms_in_mondo_xrefs.tsv  $(REPORTDIR)/%_term_exclusions.txt 
+	echo "$@ completed"
 
-exclusions-all:
-	$(MAKE) $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
+exclusions-all: $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
+	echo "$@ completed"
 
 # Exclusions: running for all ontologies
 # todo: change '> $(REPORTDIR)/excluded_terms.txt' to '> $@' like in goal '$(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv'?
@@ -350,7 +344,7 @@ build-mondo-ingest-no-imports:
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
 		prepare_release
-	echo "Mondo Ingest has been fully completed"
+	echo "Mondo Ingest (fast) has been fully completed"
 
 DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
 
@@ -362,16 +356,20 @@ deploy-mondo-ingest:
 
 USE_MONDO_RELEASE=false
 
-tmp/mondo.owl tmp/mondo.sssom.tsv:
+tmp/mondo_repo_built:
 	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
 		rm -rf ./mondo/ &&\
 		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
 		cd mondo/src/ontology &&\
 		make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
 		cd ../../../../ &&\
-		cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@ &&\
-		cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $(TMPDIR)/mondo.sssom.tsv &&\
-		rm -rf $(TMPDIR)/mondo/; fi
+		touch $@; fi
+
+$(TMPDIR)/mondo.sssom.tsv: $(TMPDIR)/mondo_repo_built
+	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
+
+$(TMPDIR)/mondo.owl: $(TMPDIR)/mondo_repo_built
+	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
 
 $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
 	$(ROBOT) query -i tmp/merged.owl --query $< $@
@@ -476,7 +474,7 @@ slurp/:
 	mkdir -p $@
 
 # min-id: the next available Mondo ID
-slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
+slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
 	python3 $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
@@ -489,12 +487,12 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_ter
 	--outpath $@
 
 .PHONY: slurp-%
-slurp-%:
-	$(MAKE) slurp/$*.tsv -B
+slurp-%: slurp/%.tsv
+	echo "$@ completed".
 
 .PHONY: slurp-no-updates-%
-slurp-no-updates-%:
-	$(MAKE) slurp/$*.tsv
+slurp-no-updates-%: slurp/%.tsv
+	echo "$@ completed".
 
 .PHONY: slurp-docs
 slurp-docs:
@@ -502,9 +500,11 @@ slurp-docs:
 
 .PHONY: slurp-all-no-updates
 slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
+	echo "$@ ($^) completed".
 
 .PHONY: slurp-all
 slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
+	echo "$@ ($^) completed".
 
 
 #############################
@@ -518,8 +518,8 @@ sync-subclassof: $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv
 
 # todo: drop this? This is really just an alias here for quality of life, but not used by anything.
 .PHONY: sync-subclassof-%
-sync-subclassof-%:
-	$(MAKE) $(REPORTDIR)/$*.subclass.direct-in-mondo-only.tsv
+sync-subclassof-%: $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv
+	echo "$@ completed"
 
 # Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
 $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), sync-subclassof-$(n)) tmp/mondo.db
