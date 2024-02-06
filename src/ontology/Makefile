@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                75f9fac53818e7a8265abd51f2671d660b4e535d51c9226f29b815e013af0edf
+CONFIG_HASH=                7e46e2aae3d97f90d3901bf0f67d6b8673defa3e391aab5f4d26c3412861e875
 
 
 # ----------------------------------------
@@ -494,7 +494,7 @@ $(COMPONENTSDIR)/ncit.owl: component-download-ncit.owl
 
 .PHONY: component-download-omim.owl
 component-download-omim.owl: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/omim/releases/latest/download/omim.ttl \
+	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/omim/releases/latest/download/omim.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
 $(COMPONENTSDIR)/omim.owl: component-download-omim.owl
