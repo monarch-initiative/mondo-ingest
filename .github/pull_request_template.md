@@ -2,7 +2,7 @@ Resolves #ISSUE.
 
 **No (!) PRs should be merged without at least one review from a different team member of the Mondo Technical team.**
 
-## Documentation
+## Pre-merge checklist
 <!--- A common case for documentation is the addition of new `make` goals. Descriptions should be documented for new goals both in the (i) `help` command at the bottom of the `mondo-ingest.Makefile` and (ii) `docs/developer/workflows.md`. -->
 
 - [ ] `docs/` have been added/updated **OR**
