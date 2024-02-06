@@ -3,7 +3,7 @@
 |:----------------------------------|:------|
 | [ORDO](./migrate_ordo.md)         | 97    |
 | [GARD](./migrate_gard.md)         | 9,370 |
-| [OMIM](./migrate_omim.md)         | 32    |
+| [OMIM](./migrate_omim.md)         | 35    |
 | [NCIT](./migrate_ncit.md)         | 2,179 |
 | [DOID](./migrate_doid.md)         | 188   |
 | [ICD10WHO](./migrate_icd10who.md) | 119   |
