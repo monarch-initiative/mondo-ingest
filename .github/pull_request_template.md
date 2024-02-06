@@ -1,4 +1,4 @@
-Resolves #ISSUE.
+Fixes #ISSUE.
 
 **No (!) PRs should be merged without at least one review from a different team member of the Mondo Technical team.**
 
