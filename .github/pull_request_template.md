@@ -19,7 +19,7 @@ Fixes #ISSUE.
 - [ ] Reviewed
    - Has been sufficiently reviewed by at least one review from a different team member of the Mondo Technical team.
 
-## High-level description
+## Overview
 
 This PR:
 
