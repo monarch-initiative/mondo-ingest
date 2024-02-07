@@ -3,7 +3,7 @@ Fixes #ISSUE.
 
 ## Pre-merge checklist
 
-<!--- A common case for documentation is the addition of new `make` goals. Descriptions should be documented for new goals both in the (i) `help` command at the bottom of the `mondo-ingest.Makefile` and (ii) `docs/developer/workflows.md`. -->
+<!--- Docs: A common case for documentation is the addition of new `make` goals. Descriptions should be documented for new goals both in the (i) `help` command at the bottom of the `mondo-ingest.Makefile` and (ii) `docs/developer/workflows.md`. -->
 
 - [ ] Docs
    - `docs/` have been added/updated **OR**
