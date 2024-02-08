@@ -1,4 +1,12 @@
-Fixes #ISSUE.
+Resolves #ISSUE(s).
+<!--- "Resolves #ISSUE" will automatically close #ISSUE when the PR is merged. However, if this PR won't 100% address the issue, you can use one of these patterns instead to simply link to the issue and not auto-close it:
+
+Partially addresses:
+- ISSUE(s)
+
+Addresses sub-task (n) in:
+- ISSUE(s)
+-->
 
 
 ## Pre-merge checklist
