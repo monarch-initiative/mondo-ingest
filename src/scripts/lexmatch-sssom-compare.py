@@ -173,11 +173,14 @@ def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summa
     ont_df_list = []
 
     for _, ont in enumerate(input):
+        # Map ontology filenames to prefixes
         ont2 = ont.upper()
         if ont == "omim":
             ont2 = "|".join((["OMIM", "OMIMPS"]))
         elif ont == "ordo":
             ont2 = "|".join((["ORDO", "Orphanet"]))
+        elif ont == "icd11foundation":
+            ont2 = 'icd11.foundation'
 
         mondo_ont_df = msdf_mondo.df[condition_mondo_sssom_subj & msdf_mondo.df['object_id'].str.contains(ont2)]
         mondo_ont_lex_df = lex_df[(condition_lex_df_mondo_subj & lex_df['object_id'].str.contains(ont2))]
@@ -201,7 +204,7 @@ def extract_unmapped_matches(input: str, matches: TextIO, output_dir: str, summa
 
             ont_df_list.append(unmapped_ont_df)
 
-    combined_df = pd.concat(ont_df_list)
+    combined_df = pd.concat(ont_df_list) if ont_df_list else pd.DataFrame()
 
     combined_msdf = MappingSetDataFrame(
         df=combined_df, converter=msdf_lex.converter, metadata=msdf_lex.metadata
