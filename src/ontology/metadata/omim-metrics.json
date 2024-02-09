@@ -2,12 +2,12 @@
   "metrics": {
     "abox_axiom_count": 0,
     "abox_axiom_count_incl": 0,
-    "annotation_property_count": 13,
-    "annotation_property_count_incl": 13,
-    "axiom_count": 320535,
-    "axiom_count_incl": 320535,
-    "class_count": 19392,
-    "class_count_incl": 19392,
+    "annotation_property_count": 16,
+    "annotation_property_count_incl": 16,
+    "axiom_count": 344611,
+    "axiom_count_incl": 344611,
+    "class_count": 19399,
+    "class_count_incl": 19399,
     "dataproperty_count": 0,
     "dataproperty_count_incl": 0,
     "datatypes_count": 2,
@@ -20,13 +20,13 @@
     "expressivity_incl": "E",
     "individual_count": 0,
     "individual_count_incl": 0,
-    "logical_axiom_count": 19160,
-    "logical_axiom_count_incl": 19160,
-    "obj_property_count": 6,
-    "obj_property_count_incl": 6,
+    "logical_axiom_count": 22561,
+    "logical_axiom_count_incl": 22561,
+    "obj_property_count": 7,
+    "obj_property_count_incl": 7,
     "ontology_anno_count": 1,
     "ontology_iri": "http://purl.obolibrary.org/obo/mondo/sources/omim.owl",
-    "ontology_version_iri": "http://purl.obolibrary.org/obo/mondo/sources/2024-02-04/omim.owl",
+    "ontology_version_iri": "http://purl.obolibrary.org/obo/mondo/sources/2024-02-09/omim.owl",
     "owl2": true,
     "owl2_dl": true,
     "owl2_el": true,
@@ -37,13 +37,13 @@
     "rdfs": false,
     "rule_count": 0,
     "rule_count_incl": 0,
-    "signature_entity_count": 19413,
-    "signature_entity_count_incl": 19413,
+    "signature_entity_count": 19424,
+    "signature_entity_count_incl": 19424,
     "syntax": "RDF/XML Syntax",
-    "tbox_axiom_count": 19160,
-    "tbox_axiom_count_incl": 19160,
-    "tboxrbox_axiom_count": 19160,
-    "tboxrbox_axiom_count_incl": 19160,
+    "tbox_axiom_count": 22561,
+    "tbox_axiom_count_incl": 22561,
+    "tboxrbox_axiom_count": 22561,
+    "tboxrbox_axiom_count_incl": 22561,
     "axiom_types": [
       "AnnotationAssertion",
       "Declaration",
@@ -63,22 +63,22 @@
     "valid_imports": [],
     "valid_imports_incl": [],
     "axiom_type_count": {
-      "AnnotationAssertion": 281968,
-      "Declaration": 19407,
-      "SubClassOf": 19160
+      "AnnotationAssertion": 302632,
+      "Declaration": 19418,
+      "SubClassOf": 22561
     },
     "axiom_type_count_incl": {
-      "AnnotationAssertion": 281968,
-      "Declaration": 19407,
-      "SubClassOf": 19160
+      "AnnotationAssertion": 302632,
+      "Declaration": 19418,
+      "SubClassOf": 22561
     },
     "class_expression_count": {
-      "Class": 57706,
-      "ObjectSomeValuesFrom": 14306
+      "Class": 64513,
+      "ObjectSomeValuesFrom": 17706
     },
     "class_expression_count_incl": {
-      "Class": 57706,
-      "ObjectSomeValuesFrom": 14306
+      "Class": 64513,
+      "ObjectSomeValuesFrom": 17706
     },
     "curie_map": {
       "oboInOwl": "http://www.geneontology.org/formats/oboInOwl#",
@@ -94,33 +94,33 @@
       "RO": "http://purl.obolibrary.org/obo/RO_"
     },
     "namespace_axiom_count": {
-      "prefix_unknown": 50159,
-      "oboInOwl": 91167,
-      "MONDO": 18970,
-      "rdf": 7146,
+      "prefix_unknown": 87276,
+      "oboInOwl": 91178,
+      "MONDO": 18971,
+      "rdf": 20852,
       "owl": 1359,
       "IAO": 55201,
-      "skos": 60014,
-      "rdfs": 36423,
-      "biolink": 33235,
-      "CHR": 7547,
-      "RO": 14312
+      "skos": 80655,
+      "rdfs": 39824,
+      "biolink": 36637,
+      "CHR": 7550,
+      "RO": 17713
     },
     "namespace_axiom_count_incl": {
-      "prefix_unknown": 50159,
-      "oboInOwl": 91167,
-      "MONDO": 18970,
-      "rdf": 7146,
+      "prefix_unknown": 87276,
+      "oboInOwl": 91178,
+      "MONDO": 18971,
+      "rdf": 20852,
       "owl": 1359,
       "IAO": 55201,
-      "skos": 60014,
-      "rdfs": 36423,
-      "biolink": 33235,
-      "CHR": 7547,
-      "RO": 14312
+      "skos": 80655,
+      "rdfs": 39824,
+      "biolink": 36637,
+      "CHR": 7550,
+      "RO": 17713
     },
     "namespace_entity_count": {
-      "prefix_unknown": 17946,
+      "prefix_unknown": 17956,
       "MONDO": 1,
       "oboInOwl": 3,
       "owl": 2,
@@ -131,10 +131,10 @@
       "rdfs": 2,
       "CHR": 1446,
       "biolink": 2,
-      "RO": 6
+      "RO": 7
     },
     "namespace_entity_count_incl": {
-      "prefix_unknown": 17946,
+      "prefix_unknown": 17956,
       "MONDO": 1,
       "oboInOwl": 3,
       "owl": 2,
@@ -145,7 +145,7 @@
       "rdfs": 2,
       "CHR": 1446,
       "biolink": 2,
-      "RO": 6
+      "RO": 7
     },
     "owl2dl_profile_violation": {}
   }

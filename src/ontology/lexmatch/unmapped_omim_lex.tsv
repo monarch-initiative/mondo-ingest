@@ -1,19 +1,5 @@
 subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
-MONDO:0007187	nevoid basal cell carcinoma syndrome	OMIM:109400	MONDO:equivalentTo	basal cell nevus syndrome 1	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	orphanet:377
-MONDO:0007187	nevoid basal cell carcinoma syndrome	OMIM:109400	MONDO:equivalentTo	basal cell nevus syndrome 1	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	umls:c0004779
-MONDO:0008116	oculopharyngeal muscular dystrophy	OMIM:164300	MONDO:equivalentTo	oculopharyngeal muscular dystrophy 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	muscular dystrophy, oculopharyngeal
-MONDO:0009697	Lafora disease	OMIMPS:254780	MONDO:equivalentTo	Myoclonic epilepsy of Lafora	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	myoclonic epilepsy of lafora
-MONDO:0009813	chronic recurrent multifocal osteomyelitis	OMIM:259680	MONDO:equivalentTo	chronic recurrent multifocal osteomyelitis 3	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	orphanet:324964
-MONDO:0009813	chronic recurrent multifocal osteomyelitis	OMIM:259680	MONDO:equivalentTo	chronic recurrent multifocal osteomyelitis 3	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	umls:c0410422
-MONDO:0010997	supranuclear palsy, progressive, 1	OMIMPS:601104	MONDO:equivalentTo	Supranuclear palsy, progressive	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	supranuclear palsy, progressive
-MONDO:0012172	mitochondrial trifunctional protein deficiency	OMIM:609015	MONDO:equivalentTo	mitochondrial trifunctional protein deficiency 1	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	orphanet:746
-MONDO:0013343	C1Q deficiency	OMIM:613652	MONDO:equivalentTo	c1q deficiency 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	c1q deficiency
-MONDO:0013343	C1Q deficiency	OMIM:613652	MONDO:equivalentTo	c1q deficiency 1	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	c1q deficiency
-MONDO:0015397	craniofacial microsomia	OMIM:164210	MONDO:equivalentTo	craniofacial microsomia 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	goldenhar syndrome
-MONDO:0015397	craniofacial microsomia	OMIM:164210	MONDO:equivalentTo	craniofacial microsomia 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hemifacial microsomia
-MONDO:0015397	craniofacial microsomia	OMIM:164210	MONDO:equivalentTo	craniofacial microsomia 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	oav dysplasia
-MONDO:0015397	craniofacial microsomia	OMIM:164210	MONDO:equivalentTo	craniofacial microsomia 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	oculoauriculovertebral dysplasia
-MONDO:0015397	craniofacial microsomia	OMIM:164210	MONDO:equivalentTo	craniofacial microsomia 1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	oculoauriculovertebral spectrum
+MONDO:0009697	Lafora disease	OMIM:254780	MONDO:equivalentTo	myoclonic epilepsy of lafora 1	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	orphanet:501
+MONDO:0009697	Lafora disease	OMIM:254780	MONDO:equivalentTo	myoclonic epilepsy of lafora 1	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	umls:c0751783
 MONDO:0800306	epilepsy, progressive myoclonic, 2b	OMIM:620681	MONDO:equivalentTo	myoclonic epilepsy of lafora 2	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	epilepsy, progressive myoclonic, 2b
-MONDO:0800331	hyperglycinemia, transient neonatal	OMIM:605899	MONDO:equivalentTo	glycine encephalopathy 1	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	hyperglycinemia, transient neonatal
