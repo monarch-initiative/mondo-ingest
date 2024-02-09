@@ -14,6 +14,8 @@
 #
 # See README-editors.md for more details.
 
+set -e
+
 if [ -f run.sh.conf ]; then
     . ./run.sh.conf
 fi
@@ -75,6 +77,7 @@ if [ x$ODK_DEBUG = xyes ]; then
     echo "Running ${IMAGE} with ${ODK_JAVA_OPTS} of memory for ROBOT and Java-based pipeline steps."
     TIMECMD="/usr/bin/time -f ### DEBUG STATS ###\nElapsed time: %E\nPeak memory: %M kb"
 fi
+rm -f tmp/debug.log
 
 VOLUME_BIND=$PWD/../../:/work$ODK_SSH_BIND
 WORK_DIR=/work/src/ontology
@@ -86,14 +89,14 @@ fi
 if [ -n "$USE_SINGULARITY" ]; then
     
     singularity exec --cleanenv $ODK_SINGULARITY_OPTIONS \
-        --env "ROBOT_JAVA_ARGS=$ODK_JAVA_OPTS,JAVA_OPTS=$ODK_JAVA_OPTS,SSH_AUTH_SOCK=/run/host-services/ssh-auth.sock,ODK_USER_ID=$ODK_USER_ID,ODK_GROUP_ID=$ODK_GROUP_ID" \
+        --env "ROBOT_JAVA_ARGS=$ODK_JAVA_OPTS,JAVA_OPTS=$ODK_JAVA_OPTS,SSH_AUTH_SOCK=/run/host-services/ssh-auth.sock,ODK_USER_ID=$ODK_USER_ID,ODK_GROUP_ID=$ODK_GROUP_ID,ODK_DEBUG=$ODK_DEBUG" \
         --bind $VOLUME_BIND \
         -W $WORK_DIR \
         docker://obolibrary/$ODK_IMAGE:$ODK_TAG $TIMECMD "$@"
 else
     BIND_OPTIONS="-v $(echo $VOLUME_BIND | sed 's/,/ -v /')"
     docker run $ODK_DOCKER_OPTIONS $BIND_OPTIONS -w $WORK_DIR \
-        -e ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS" -e JAVA_OPTS="$ODK_JAVA_OPTS" -e SSH_AUTH_SOCK=/run/host-services/ssh-auth.sock -e ODK_USER_ID=$ODK_USER_ID -e ODK_GROUP_ID=$ODK_GROUP_ID \
+        -e ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS" -e JAVA_OPTS="$ODK_JAVA_OPTS" -e SSH_AUTH_SOCK=/run/host-services/ssh-auth.sock -e ODK_USER_ID=$ODK_USER_ID -e ODK_GROUP_ID=$ODK_GROUP_ID -e ODK_DEBUG=$ODK_DEBUG \
         --rm -ti obolibrary/$ODK_IMAGE:$ODK_TAG $TIMECMD "$@"
 fi
 
