@@ -541,6 +541,28 @@ $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.confirmed.robot.
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml
 
+##################################
+## Externally managed content ####
+##################################
+
+EXTERNAL_CONTENT_DIR=external
+
+$(TMPDIR)/nord.tsv:
+	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
+
+$(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
+	$(ROBOT) template --template $< -o $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/%.robot.owl
+
+$(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
+	python ../scripts/add-robot-template-header.py $^ > $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+
+external-content-%: $(EXTERNAL_CONTENT_DIR)/%.robot.owl
+
+refresh-externally-managed-content: external-content-nord
+
 #############################
 ######### Analysis ##########
 #############################
@@ -663,3 +685,6 @@ help:
 	@echo "For all subclass relationships in Mondo, shows which sources do not have it and whether no source has it. Combination of all --outpath-direct-in-mondo-only outputs for all sources, using those as inputs, and then deletes them after.\n"
 	@echo "reports/sync-subClassOf.confirmed.tsv"
 	@echo "For all subclass relationships in Mondo, by source, a robot template containing showing what is in Mondo and are confirmed to also exist in the source. Combination of all --outpath-confirmed outputs for all sources.\n"
+	# - Refresh externally managed content
+	@echo "refresh-externally-managed-content"
+	@echo "Downloads and processes all externally managed content like cross references, subsets and labels, including NORD and GARD.\n"
