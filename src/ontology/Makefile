@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                af087eeec39b0ba73668a942a0dc34ad1e989b35f240d6466b4098dcbc8945eb
+CONFIG_HASH=                1f779a242dc046d5c98b39bde1a60c2488195d1ad6e0a21ee94bac1ae0f05b98
 
 
 # ----------------------------------------
@@ -54,7 +54,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/doid.owl $(COMPONENTSDIR)/gard.owl $(COMPONENTSDIR)/icd10cm.owl $(COMPONENTSDIR)/icd10who.owl $(COMPONENTSDIR)/icd11.owl $(COMPONENTSDIR)/ncit.owl $(COMPONENTSDIR)/omim.owl $(COMPONENTSDIR)/ordo.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/doid.owl $(COMPONENTSDIR)/gard.owl $(COMPONENTSDIR)/icd10cm.owl $(COMPONENTSDIR)/icd10who.owl $(COMPONENTSDIR)/icd11foundation.owl $(COMPONENTSDIR)/ncit.owl $(COMPONENTSDIR)/omim.owl $(COMPONENTSDIR)/ordo.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -478,18 +478,18 @@ $(COMPONENTSDIR)/icd10who.owl: component-download-icd10who.owl
 .PRECIOUS: $(COMPONENTSDIR)/icd10who.owl
 
 
-.PHONY: component-download-icd11.owl
-component-download-icd11.owl: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I https://icd11files.blob.core.windows.net/tmp/whofic-2023-04-08.owl.gz \
+.PHONY: component-download-icd11foundation.owl
+component-download-icd11foundation.owl: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/icd11/releases/latest/download/icd11foundation.owl \
 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
 
-$(COMPONENTSDIR)/icd11.owl: component-download-icd11.owl
-	if [ $(COMP) = true ]; then if cmp -s $(TMPDIR)/component-download-icd11.owl.owl $(TMPDIR)/component-download-icd11.owl.tmp.owl ; then echo "Component identical."; \
+$(COMPONENTSDIR)/icd11foundation.owl: component-download-icd11foundation.owl
+	if [ $(COMP) = true ]; then if cmp -s $(TMPDIR)/component-download-icd11foundation.owl.owl $(TMPDIR)/component-download-icd11foundation.owl.tmp.owl ; then echo "Component identical."; \
       else echo "Component is different, updating." &&\
-		cp $(TMPDIR)/component-download-icd11.owl.owl $(TMPDIR)/component-download-icd11.owl.tmp.owl &&\
-		$(ROBOT) annotate -i $(TMPDIR)/component-download-icd11.owl.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $@; fi; fi
+		cp $(TMPDIR)/component-download-icd11foundation.owl.owl $(TMPDIR)/component-download-icd11foundation.owl.tmp.owl &&\
+		$(ROBOT) annotate -i $(TMPDIR)/component-download-icd11foundation.owl.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $@; fi; fi
 
-.PRECIOUS: $(COMPONENTSDIR)/icd11.owl
+.PRECIOUS: $(COMPONENTSDIR)/icd11foundation.owl
 
 
 .PHONY: component-download-ncit.owl

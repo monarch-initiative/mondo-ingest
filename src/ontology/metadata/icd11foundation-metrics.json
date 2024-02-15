@@ -1,0 +1,132 @@
+{
+  "metrics": {
+    "abox_axiom_count": 0,
+    "abox_axiom_count_incl": 0,
+    "annotation_property_count": 21,
+    "annotation_property_count_incl": 21,
+    "axiom_count": 570662,
+    "axiom_count_incl": 570662,
+    "class_count": 100002,
+    "class_count_incl": 100002,
+    "dataproperty_count": 0,
+    "dataproperty_count_incl": 0,
+    "datatypes_count": 2,
+    "datatypes_count_incl": 2,
+    "dt_builtin_count": 2,
+    "dt_builtin_count_incl": 2,
+    "dt_notbuiltin_count": 0,
+    "dt_notbuiltin_count_incl": 0,
+    "expressivity": "CINTEH",
+    "expressivity_incl": "CINTEH",
+    "individual_count": 0,
+    "individual_count_incl": 0,
+    "logical_axiom_count": 130473,
+    "logical_axiom_count_incl": 130473,
+    "obj_property_count": 70,
+    "obj_property_count_incl": 70,
+    "ontology_anno_count": 5,
+    "ontology_iri": "http://purl.obolibrary.org/obo/mondo-ingest/components/icd11foundation.owl",
+    "ontology_version_iri": "http://purl.obolibrary.org/obo/mondo-ingest/releases/2024-02-17/components/icd11foundation.owl",
+    "owl2": true,
+    "owl2_dl": true,
+    "owl2_el": true,
+    "owl2_ql": false,
+    "owl2_rl": false,
+    "rbox_axiom_count": 51,
+    "rbox_axiom_count_incl": 51,
+    "rdfs": false,
+    "rule_count": 0,
+    "rule_count_incl": 0,
+    "signature_entity_count": 100095,
+    "signature_entity_count_incl": 100095,
+    "syntax": "RDF/XML Syntax",
+    "tbox_axiom_count": 130422,
+    "tbox_axiom_count_incl": 130422,
+    "tboxrbox_axiom_count": 130473,
+    "tboxrbox_axiom_count_incl": 130473,
+    "axiom_types": [
+      "AnnotationAssertion",
+      "EquivalentClasses",
+      "SubObjectPropertyOf",
+      "Declaration",
+      "SubClassOf"
+    ],
+    "axiom_types_incl": [
+      "AnnotationAssertion",
+      "EquivalentClasses",
+      "SubObjectPropertyOf",
+      "Declaration",
+      "SubClassOf"
+    ],
+    "constructs": [
+      "ROLE_HIERARCHY",
+      "CONCEPT_INTERSECTION",
+      "FULL_EXISTENTIAL"
+    ],
+    "constructs_incl": [
+      "ROLE_HIERARCHY",
+      "CONCEPT_INTERSECTION",
+      "FULL_EXISTENTIAL"
+    ],
+    "valid_imports": [],
+    "valid_imports_incl": [],
+    "axiom_type_count": {
+      "AnnotationAssertion": 340100,
+      "EquivalentClasses": 5075,
+      "SubObjectPropertyOf": 51,
+      "Declaration": 100089,
+      "SubClassOf": 125347
+    },
+    "axiom_type_count_incl": {
+      "AnnotationAssertion": 340100,
+      "EquivalentClasses": 5075,
+      "SubObjectPropertyOf": 51,
+      "Declaration": 100089,
+      "SubClassOf": 125347
+    },
+    "class_expression_count": {
+      "Class": 392111,
+      "ObjectSomeValuesFrom": 40919,
+      "ObjectIntersectionOf": 19706
+    },
+    "class_expression_count_incl": {
+      "Class": 392111,
+      "ObjectSomeValuesFrom": 40919,
+      "ObjectIntersectionOf": 19706
+    },
+    "curie_map": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "namespace_axiom_count": {
+      "prefix_unknown": 609878,
+      "owl": 6312,
+      "skos": 178135
+    },
+    "namespace_axiom_count_incl": {
+      "prefix_unknown": 609878,
+      "owl": 6312,
+      "skos": 178135
+    },
+    "namespace_entity_count": {
+      "prefix_unknown": 100084,
+      "owl": 3,
+      "rdf": 1,
+      "xsd": 1,
+      "skos": 5,
+      "rdfs": 1
+    },
+    "namespace_entity_count_incl": {
+      "prefix_unknown": 100084,
+      "owl": 3,
+      "rdf": 1,
+      "xsd": 1,
+      "skos": 5,
+      "rdfs": 1
+    },
+    "owl2dl_profile_violation": {}
+  }
+}

@@ -6,7 +6,7 @@ You can find information about the source modules ingested below. Remember that 
 - [GARD](metrics/gard.md)
 - [ICD10CM](metrics/icd10cm.md)
 - [ICD10WHO](metrics/icd10who.md)
-- [ICD11](metrics/icd11.md)
+- [ICD11Foundation](metrics/icd11foundation.md)
 - [NCIT](metrics/ncit.md)
 - [OMIM](metrics/omim.md)
 - [ORDO](metrics/ordo.md)

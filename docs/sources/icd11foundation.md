@@ -1,4 +1,4 @@
-# MONDO - ICD11 Alignment
+# MONDO - ICD11FOUNDATION Alignment
 
 **Source name:** International Classification of Diseases 11th Revision
 
@@ -8,7 +8,10 @@ This data source in particular is the ICD11 foundation, not one of its lineariza
 
 **Homepage:** https://icd.who.int/
 
-**Comments about this source:** None
+**Comments about this source:** 
+Because the existing logical equivalence class axioms led to equivalence cliques (groups of distinct disease identifiers
+that inferred to he semantically identical) we decided to strip out all equivalence class axiom from the foundation 
+prior to processing it in the ingest.
 
 
 

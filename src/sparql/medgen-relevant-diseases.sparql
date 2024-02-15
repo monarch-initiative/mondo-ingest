@@ -9,7 +9,7 @@ PREFIX dbpedia: <http://dbpedia.org/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-# For SNOMED, we are only interested in the Disease or Disorder branch
+# For MedGen, we are only interested in the Disease or Disorder branch
 SELECT DISTINCT ?term ?label ?deprecated
 WHERE {
   { 

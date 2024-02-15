@@ -1,0 +1,18 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+### All diseases
+SELECT DISTINCT ?term
+WHERE {
+  { 
+    { 
+     ?s1 ?p1 ?term . 
+     ?term rdfs:subClassOf* <http://id.who.int/icd/entity/455013390> .
+    }
+    UNION
+    { 
+      ?term ?p2 ?o2 . 
+      ?term rdfs:subClassOf* <http://id.who.int/icd/entity/455013390> .
+    }
+  }
+  FILTER(isIRI(?term))
+}
