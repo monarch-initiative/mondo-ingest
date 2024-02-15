@@ -30,7 +30,7 @@ Add prefixes.
 Update the Website Table of Contents in [mkdocs.yaml](https://github.com/monarch-initiative/mondo-ingest/blob/main/mkdocs.yaml)
 
 ### 3.2. `docs/sources/*.md`
-Run `sh run.sh make ../../docs/sources/*.md` from `src/ontology`. Then edit it manually to add any more informatoin.
+Run `sh run.sh make ../../docs/sources/*.md` from `src/ontology`. Then edit it manually to add any more information.
 
 ### 3.3. `docs/sources.md`
 Add a link to your new `.md` file created in the last step.
