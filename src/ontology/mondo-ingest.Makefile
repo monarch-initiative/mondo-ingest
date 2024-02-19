@@ -575,6 +575,20 @@ update-jinja-sparql-queries:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
+# update-repo-wrapper
+UPDATE_REPO_ODK_TAG := latest
+ifdef ODK_TAG
+	UPDATE_REPO_ODK_TAG := $(ODK_TAG)
+endif
+
+.PHONY: update-repo-wrapper
+update-repo-wrapper:
+	@sed -i.bak '/^ODK_TAG=/s/.*/ODK_TAG=${UPDATE_REPO_ODK_TAG}/' run.sh.conf
+	-$(MAKE) update_repo
+	-$(MAKE) update_repo
+	@mv run.sh.conf.bak run.sh.conf
+
+
 #############################
 ########### Help ############
 #############################
