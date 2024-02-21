@@ -271,10 +271,10 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 # Exclusions: all artefacts for single ontology
 .PHONY: exclusions-%
 exclusions-%: reports/%_exclusion_reasons.ttl reports/%_excluded_terms_in_mondo_xrefs.tsv  $(REPORTDIR)/%_term_exclusions.txt 
-	echo "$@ completed"
+	@echo "$@ completed"
 
 exclusions-all: $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
-	echo "$@ completed"
+	@echo "$@ completed"
 
 # Exclusions: running for all ontologies
 # todo: change '> $(REPORTDIR)/excluded_terms.txt' to '> $@' like in goal '$(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv'?
@@ -336,7 +336,7 @@ build-mondo-ingest:
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
 		prepare_release
-	echo "Mondo Ingest has been fully completed"
+	@echo "Mondo Ingest has been fully completed"
 
 .PHONY: build-mondo-ingest-no-imports
 build-mondo-ingest-no-imports:
@@ -344,7 +344,7 @@ build-mondo-ingest-no-imports:
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
 		prepare_release
-	echo "Mondo Ingest (fast) has been fully completed"
+	@echo "Mondo Ingest (fast) has been fully completed"
 
 DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
 
@@ -400,7 +400,7 @@ ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror
 
 .PHONY: signature_reports
 signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
-	echo "Finished running signature reports.."
+	@echo "Finished running signature reports."
 
 #############################
 #### Lexical matching #######
@@ -488,11 +488,11 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_map
 
 .PHONY: slurp-%
 slurp-%: slurp/%.tsv
-	echo "$@ completed".
+	@echo "$@ completed".
 
 .PHONY: slurp-no-updates-%
 slurp-no-updates-%: slurp/%.tsv
-	echo "$@ completed".
+	@echo "$@ completed".
 
 .PHONY: slurp-docs
 slurp-docs:
@@ -500,11 +500,11 @@ slurp-docs:
 
 .PHONY: slurp-all-no-updates
 slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
-	echo "$@ ($^) completed".
+	@echo "$@ ($^) completed".
 
 .PHONY: slurp-all
 slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
-	echo "$@ ($^) completed".
+	@echo "$@ ($^) completed".
 
 
 #############################
@@ -519,7 +519,7 @@ sync-subclassof: $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv
 # todo: drop this? This is really just an alias here for quality of life, but not used by anything.
 .PHONY: sync-subclassof-%
 sync-subclassof-%: $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv
-	echo "$@ completed"
+	@echo "$@ completed"
 
 # Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
 $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), sync-subclassof-$(n)) tmp/mondo.db
