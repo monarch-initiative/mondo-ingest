@@ -551,7 +551,11 @@ $(TMPDIR)/nord.tsv:
 	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
 
 $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
-	$(ROBOT) template --template $< -o $@
+	$(ROBOT) template --template $< \
+	 	annotate \
+				--ontology-iri $(URIBASE)/mondo/external/nord.robot.owl \
+				--version-iri $(URIBASE)/mondo/external/$(TODAY)/nord.robot.owl \
+				-o $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/%.robot.owl
 
 $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
