@@ -565,7 +565,8 @@ $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-conte
 	python ../scripts/add-robot-template-header.py $^ > $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
 
-external-content-%: $(EXTERNAL_CONTENT_DIR)/%.robot.owl
+.PHONY: external-content-nord
+external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
 
 refresh-externally-managed-content: external-content-nord
 
