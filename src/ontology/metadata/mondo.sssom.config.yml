@@ -58,6 +58,9 @@ curie_map:
   PMID: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/PMID/"
   KEGG: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/KEGG/"
   ICD11: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ICD11/"
+  icd11.foundation: http://id.who.int/icd/entity/
+  icd11.schema: http://id.who.int/icd/schema/
+  icd11.z: http://who.int/icd#Z_
   DECIPHER: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/DECIPHER/"
   CSP: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/CSP/"
   Wikipedia: "http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/Wikipedia/"
@@ -279,6 +282,18 @@ extended_prefix_map:
   - prefix: ICD11
     prefix_synonyms: []
     uri_prefix: http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/ICD11/
+    uri_prefix_synonyms: []
+  - prefix: icd11.foundation
+    prefix_synonyms: []
+    uri_prefix: http://id.who.int/icd/entity/
+    uri_prefix_synonyms: []
+  - prefix: icd11.schema
+    prefix_synonyms: []
+    uri_prefix: http://id.who.int/icd/schema/
+    uri_prefix_synonyms: []
+  - prefix: icd11.z
+    prefix_synonyms: []
+    uri_prefix: http://who.int/icd#Z_
     uri_prefix_synonyms: []
   - prefix: DECIPHER
     prefix_synonyms: []

@@ -9,7 +9,7 @@ PREFIX dbpedia: <http://dbpedia.org/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-### For Disease Ontology, we are interested in all terms
+### All terms
 SELECT DISTINCT ?term ?label ?deprecated
 WHERE {
   { 
