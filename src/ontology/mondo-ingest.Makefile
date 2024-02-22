@@ -335,6 +335,7 @@ build-mondo-ingest:
 	$(MAKE) refresh-imports exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
+		refresh-externally-managed-content \
 		prepare_release
 	echo "Mondo Ingest has been fully completed"
 
@@ -343,6 +344,7 @@ build-mondo-ingest-no-imports:
 	$(MAKE_FAST) exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
+		refresh-externally-managed-content \
 		prepare_release
 	echo "Mondo Ingest (fast) has been fully completed"
 
