@@ -236,7 +236,7 @@ unmapped/:
 
 unmapped/%-unmapped.owl: $(COMPONENTSDIR)/%.owl reports/%_unmapped_terms.tsv | unmapped/
 	cut -f 1 reports/$*_unmapped_terms.tsv | tail -n +2 > reports/$*_unmapped_terms.txt
-	$(ROBOT) filter -i components/$*.owl -T reports/$*_unmapped_terms.txt -o components/$@
+	$(ROBOT) filter -i components/$*.owl -T reports/$*_unmapped_terms.txt -o $@
 	rm reports/$*_unmapped_terms.txt
 
 .PHONY: recreate-unmapped-components
