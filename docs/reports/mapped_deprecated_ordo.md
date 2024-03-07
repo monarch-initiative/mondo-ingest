@@ -13,7 +13,6 @@
 | MONDO:0007779 | Orphanet:306588      | MONDO:equivalentObsolete |
 | MONDO:0008018 | Orphanet:587         | MONDO:equivalentObsolete |
 | MONDO:0008083 | Orphanet:228343      | MONDO:equivalentObsolete |
-| MONDO:0008136 | Orphanet:137902      | MONDO:equivalentObsolete |
 | MONDO:0008157 | Orphanet:1306        | MONDO:equivalentObsolete |
 | MONDO:0008227 | Orphanet:1795        | MONDO:equivalentObsolete |
 | MONDO:0008767 | Orphanet:228346      | MONDO:equivalentObsolete |

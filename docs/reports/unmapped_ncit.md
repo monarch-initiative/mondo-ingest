@@ -4788,7 +4788,6 @@
 | NCIT:C43327  | Malignant Proliferating Pilar Tumor                                                                                                                                         |
 | NCIT:C5380   | Malignant Pulmonary Artery Neoplasm                                                                                                                                         |
 | NCIT:C5383   | Malignant Pulmonary Vein Neoplasm                                                                                                                                           |
-| NCIT:C188051 | Malignant Pylorus Neoplasm                                                                                                                                                  |
 | NCIT:C4571   | Malignant Respiratory System Neoplasm                                                                                                                                       |
 | NCIT:C64056  | Malignant Reticulosis of the Rat Brain                                                                                                                                      |
 | NCIT:C64057  | Malignant Reticulosis of the Rat Spinal Cord                                                                                                                                |
@@ -4803,7 +4802,6 @@
 | NCIT:C4493   | Malignant Skin Hemangiopericytoma                                                                                                                                           |
 | NCIT:C27529  | Malignant Skin Vascular Neoplasm                                                                                                                                            |
 | NCIT:C155791 | Malignant Skull Base Neoplasm                                                                                                                                               |
-| NCIT:C155790 | Malignant Skull Neoplasm                                                                                                                                                    |
 | NCIT:C6588   | Malignant Soft Tissue Tumor of Uncertain Differentiation                                                                                                                    |
 | NCIT:C132146 | Malignant Solid Neoplasm                                                                                                                                                    |
 | NCIT:C6894   | Malignant Solitary Fibrous Tumor                                                                                                                                            |
@@ -6544,7 +6542,6 @@
 | NCIT:C95470  | Pancreatic Serous Adenoma                                                                                                                                                   |
 | NCIT:C95475  | Pancreatic Solid Serous Adenoma                                                                                                                                             |
 | NCIT:C8006   | Pancreatic Somatostatin-Producing Neuroendocrine Tumor                                                                                                                      |
-| NCIT:C173813 | Pancreatic Squamous Cell Carcinoma                                                                                                                                          |
 | NCIT:C95558  | Pancreatic Teratoma                                                                                                                                                         |
 | NCIT:C172812 | Pancreatic Undifferentiated Carcinoma with Rhabdoid Cells                                                                                                                   |
 | NCIT:C95599  | Pancreatic Vipoma                                                                                                                                                           |
@@ -9072,7 +9069,6 @@
 | NCIT:C121671 | Soft Tissue Angiosarcoma                                                                                                                                                    |
 | NCIT:C27042  | Soft Tissue Disorder                                                                                                                                                        |
 | NCIT:C6605   | Soft Tissue Fibrosarcoma                                                                                                                                                    |
-| NCIT:C6912   | Soft Tissue Perineurioma                                                                                                                                                    |
 | NCIT:C136707 | Soft Tissue Sarcoma by AJCC v7 Stage                                                                                                                                        |
 | NCIT:C136693 | Soft Tissue Sarcoma by AJCC v8 Stage                                                                                                                                        |
 | NCIT:C165190 | Soft Tissue Sarcoma of the Trunk and Extremities                                                                                                                            |

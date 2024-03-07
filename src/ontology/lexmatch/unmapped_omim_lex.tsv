@@ -1,5 +1,3 @@
 subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
-MONDO:0009697	Lafora disease	OMIM:254780	MONDO:equivalentTo	myoclonic epilepsy of lafora 1	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	orphanet:501
-MONDO:0009697	Lafora disease	OMIM:254780	MONDO:equivalentTo	myoclonic epilepsy of lafora 1	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	umls:c0751783
-MONDO:0800306	epilepsy, progressive myoclonic, 2b	OMIM:620681	MONDO:equivalentTo	myoclonic epilepsy of lafora 2	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	epilepsy, progressive myoclonic, 2b
+MONDO:0007029	branchio-oto-renal syndrome	OMIMPS:113650	MONDO:equivalentTo	Branchiootorenal syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	branchiootorenal syndrome
