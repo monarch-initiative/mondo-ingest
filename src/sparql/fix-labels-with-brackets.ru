@@ -6,8 +6,12 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 
 
 INSERT {
-	?phenotype oboInOwl:hasExactSynonym ?synonym .
-	<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> rdf:type owl:AnnotationProperty .
+  <http://purl.obolibrary.org/obo/mondo#GENERATED> rdf:type owl:AnnotationProperty .
+  <http://www.geneontology.org/formats/oboInOwl#hasSynonymType> rdf:type owl:AnnotationProperty .
+  <http://purl.obolibrary.org/obo/mondo#GENERATED> rdfs:subPropertyOf <http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty>  .
+	
+  ?phenotype oboInOwl:hasExactSynonym ?synonym .
+	
   	[ 	rdf:type owl:Axiom ;
 				owl:annotatedSource ?phenotype ;
            owl:annotatedProperty oboInOwl:hasExactSynonym ;
