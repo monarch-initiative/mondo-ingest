@@ -70,7 +70,6 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-dow
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
-			--update ../sparql/fix_hgnc_mappings.ru \
 			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/fix_illegal_punning_omim.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
