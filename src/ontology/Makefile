@@ -63,7 +63,7 @@ FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
 RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full )
 
 ifeq ($(ODK_DEBUG),yes)
-ODK_DEBUG_FILE = $(TMPDIR)/debug.log
+ODK_DEBUG_FILE = debug.log
 SHELL = $(SCRIPTSDIR)/run-command.sh
 endif
 
@@ -77,7 +77,7 @@ endif
 all: all_odk
 
 .PHONY: all_odk
-all_odk: odkversion config_check test all_assets
+all_odk: odkversion config_check test custom_reports all_assets
 
 .PHONY: test
 test: odkversion reason_test sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
@@ -97,9 +97,8 @@ reason_test: $(EDIT_PREPROCESSED)
 
 .PHONY: odkversion
 odkversion:
-	echo "ODK Makefile version: $(ODK_VERSION_MAKEFILE) (this is the version of the ODK with which this Makefile was generated, \
-        not the version of the ODK you are running)" &&\
-	echo "ROBOT version (ODK): " && $(ROBOT) --version
+	@echo "ODK Makefile $(ODK_VERSION_MAKEFILE)"
+	@odk-info --tools
 .PHONY: config_check
 config_check:
 	@if [ "$$(sha256sum $(ONT)-odk.yaml | cut -c1-64)" = "$(CONFIG_HASH)" ]; then \
@@ -248,6 +247,14 @@ $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
 
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
 	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
+
+check_for_robot_updates:	
+	@cut -f2 "/tools/robot_report_profile.txt" | sort > $(TMPDIR)/sorted_tsv2.txt
+	@cut -f2 "$(ROBOT_PROFILE)" | sort > $(TMPDIR)/sorted_tsv1.txt
+	@comm -23 $(TMPDIR)/sorted_tsv2.txt $(TMPDIR)/sorted_tsv1.txt > $(TMPDIR)/missing.txt
+	@echo "Missing tests:"
+	@cat $(TMPDIR)/missing.txt
+	@rm $(TMPDIR)/sorted_tsv1.txt $(TMPDIR)/sorted_tsv2.txt $(TMPDIR)/missing.txt $(TMPDIR)/report_profile_robot.txt
 
 # ----------------------------------------
 # Release assets
@@ -652,7 +659,7 @@ ROBOT_RELEASE_IMPORT_MODE_BASE=$(ROBOT) remove --input $< --select imports --tri
 # base: A version of the ontology that does not include any externally imported axioms.
 $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-	reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+	reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural --annotate-inferred-axioms False \
 	relax \
 	reduce -r ELK \
 	remove --base-iri $(URIBASE)/MONDO-INGEST --axioms external --preserve-structure false --trim false \
@@ -722,13 +729,16 @@ update_repo:
 update_docs:
 	mkdocs gh-deploy --config-file ../../mkdocs.yaml
 
-# Note to future generations: prepending ./ is a safety measure to ensure that 
-# the environment does not malicously set `CLEANFILES` to `\`.
+# Note to future generations: computing the real path relative to the
+# current directory is a way to ensure we only clean up directories that
+# are located below the current directory, regardless of the contents of
+# the *DIR variables.
 .PHONY: clean
 clean:
-	[ -n "$(MIRRORDIR)" ] && [ $(MIRRORDIR) != "." ] && [ $(MIRRORDIR) != "/" ] && [ $(MIRRORDIR) != ".." ] && [ -d ./$(MIRRORDIR) ] && rm -rf ./$(MIRRORDIR)/*
-	[ -n "$(TMPDIR)" ] && [ $(TMPDIR) != "." ] && [ $(TMPDIR) != "/" ] && [ $(TMPDIR) != ".." ] && [ -d ./$(TMPDIR) ] && rm -rf ./$(TMPDIR)/*
-	[ -n "$(UPDATEREPODIR)" ] && [ $(UPDATEREPODIR) != "." ] && [ $(UPDATEREPODIR) != "/" ] && [ $(UPDATEREPODIR) != ".." ] && [ -d ./$(UPDATEREPODIR) ] && rm -rf ./$(UPDATEREPODIR)/*
+	for dir in $(MIRRORDIR) $(TMPDIR) $(UPDATEREPODIR) ; do      \
+		reldir=$$(realpath --relative-to=$$(pwd) $$dir) ;    \
+		case $$reldir in .*|"") ;; *) rm -rf $$reldir/* ;; esac \
+	done
 	rm -f $(CLEANFILES)
 
 .PHONY: help
