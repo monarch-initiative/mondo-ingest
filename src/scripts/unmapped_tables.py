@@ -17,7 +17,6 @@ import pandas as pd
 import yaml
 from oaklib import get_implementation_from_shorthand
 from oaklib.types import CURIE, URI
-from sssom.util import is_curie
 
 from utils import remove_angle_brackets
 
@@ -54,7 +53,7 @@ def create_mapping_status_tables(
     curie_labels: Dict[CURIE, str] = {}
     curies_deprecated: Set[CURIE] = set()
     for _id, label in id_labels_all_map.items():
-        curie: CURIE = _id if is_curie(_id) else converter.compress(_id)
+        curie: CURIE = _id if converter.is_curie(_id) else converter.compress(_id)
         for alias, preferred in prefix_replacement_map.items():
             curie = curie.replace(alias, preferred) if curie else curie
         if curie and curie.split(':')[0] in owned_prefixes:
