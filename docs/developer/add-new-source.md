@@ -25,6 +25,9 @@ Prefixes need to be entered in the following places in the yml:
 ### 2.3. `config/prefixes.csv`
 Add prefixes.
 
+### 2.4. `config/context.json`
+Add prefixes.
+
 ## 3. Docs 
 ### 3.1. `mkdocs.yaml`
 Update the Website Table of Contents in [mkdocs.yaml](https://github.com/monarch-initiative/mondo-ingest/blob/main/mkdocs.yaml)
