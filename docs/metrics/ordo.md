@@ -2,17 +2,17 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ordo.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-02-09/ordo.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-03-07/ordo.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
-| Annotation properties | 8 |
-| Axioms | 162312 |
+| Annotation properties | 15 |
+| Axioms | 205027 |
 | Logical axioms | 42481 |
 | Classes | 14917 |
-| Object properties | 3 |
+| Object properties | 4 |
 | Data properties | 0 |
 | Individuals | 0 |
 
@@ -32,8 +32,9 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 104905 |
-| Declaration | 14926 |
+| AnnotationAssertion | 147612 |
+| SubAnnotationPropertyOf | 1 |
+| Declaration | 14933 |
 | SubClassOf | 42481 |
 
 
@@ -41,14 +42,18 @@
 
 | Metric | Value |
 | ------ | ----- |
+| dc11 | 1 |
 | prefix_unknown | 14917 |
-| oboInOwl | 5 |
-| owl | 1 |
+| oboInOwl | 6 |
+| owl | 2 |
 | rdf | 1 |
 | IAO | 1 |
-| xsd | 1 |
+| xsd | 2 |
+| BFO | 1 |
 | rdfs | 1 |
 | RO | 3 |
+| obo | 1 |
+| dc | 3 |
 
 
 #### Class expressions used

@@ -1243,6 +1243,10 @@ MONDO:0003832	complement deficiency	skos:closeMatch	ICD10CM:D84.1	Defects in the
 MONDO:0003832	complement deficiency	skos:closeMatch	ICD10CM:D84.1	Defects in the complement system	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:626	LEXMATCH
 MONDO:0003937	spondylitis	skos:closeMatch	ICD10CM:M46	Other inflammatory spondylopathies	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:6590	LEXMATCH
 MONDO:0003937	spondylitis	skos:closeMatch	ICD10CM:M46	Other inflammatory spondylopathies	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:6590	LEXMATCH
+MONDO:0003947	hyper-IgM syndrome	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0080544	LEXMATCH
+MONDO:0003947	hyper-IgM syndrome	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:0080544	LEXMATCH
+MONDO:0003947	hyper-IgM syndrome	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0080544	LEXMATCH
+MONDO:0003947	hyper-IgM syndrome	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:0080544	LEXMATCH
 MONDO:0003956	Baastrup syndrome	skos:closeMatch	ICD10CM:M48.2	Kissing spine	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:6643	LEXMATCH
 MONDO:0003956	Baastrup syndrome	skos:closeMatch	ICD10CM:M48.2	Kissing spine	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:6643	LEXMATCH
 MONDO:0003962	Froelich syndrome	skos:closeMatch	ICD10CM:E23.6	Other disorders of pituitary gland	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:6676	LEXMATCH
@@ -1496,8 +1500,9 @@ MONDO:0004758	scotoma	skos:closeMatch	ICD10CM:H53.45	Other localized visual fiel
 MONDO:0004758	scotoma	skos:closeMatch	ICD10CM:H53.45	Other localized visual field defect	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9335	LEXMATCH
 MONDO:0004767	vesiculitis	skos:closeMatch	ICD10CM:N49.0	Inflammatory disorders of seminal vesicle	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9365	LEXMATCH
 MONDO:0004767	vesiculitis	skos:closeMatch	ICD10CM:N49.0	Inflammatory disorders of seminal vesicle	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9365	LEXMATCH
-MONDO:0004769	orbital plasma cell granuloma	skos:closeMatch	ICD10CM:H05.11	Granuloma of orbit	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9369	LEXMATCH
-MONDO:0004769	orbital plasma cell granuloma	skos:closeMatch	ICD10CM:H05.11	Granuloma of orbit	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9369	LEXMATCH
+MONDO:0004769	orbital pseudotumor	skos:closeMatch	ICD10CM:H05.11	Granuloma of orbit	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9369	LEXMATCH
+MONDO:0004769	orbital pseudotumor	skos:closeMatch	ICD10CM:H05.11	Granuloma of orbit	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9369	LEXMATCH
+MONDO:0004769	orbital pseudotumor	skos:closeMatch	ICD10CM:H05.12	Orbital myositis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	orbital myositis	LEXMATCH
 MONDO:0004773	iridocyclitis	skos:closeMatch	ICD10CM:H20.01	Primary iridocyclitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9383	LEXMATCH
 MONDO:0004773	iridocyclitis	skos:closeMatch	ICD10CM:H20.01	Primary iridocyclitis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9383	LEXMATCH
 MONDO:0004775	lens-induced iridocyclitis	skos:closeMatch	ICD10CM:H20.2	Lens-induced iridocyclitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9388	LEXMATCH
@@ -3834,8 +3839,6 @@ MONDO:0011523	Bardet-Biedl syndrome 6	skos:closeMatch	ICD10CM:Q87.89	Other speci
 MONDO:0011523	Bardet-Biedl syndrome 6	skos:closeMatch	ICD10CM:Q87.89	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110128	LEXMATCH
 MONDO:0011527	Charcot-Marie-Tooth disease type 4E	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110195	LEXMATCH
 MONDO:0011527	Charcot-Marie-Tooth disease type 4E	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110195	LEXMATCH
-MONDO:0011528	hyper-IgM syndrome type 2	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060758	LEXMATCH
-MONDO:0011528	hyper-IgM syndrome type 2	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060758	LEXMATCH
 MONDO:0011531	Noonan syndrome 2	skos:closeMatch	ICD10CM:Q87.1	Congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060580	LEXMATCH
 MONDO:0011531	Noonan syndrome 2	skos:closeMatch	ICD10CM:Q87.1	Congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060580	LEXMATCH
 MONDO:0011534	Charcot-Marie-Tooth disease type 4G	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110196	LEXMATCH
@@ -4002,14 +4005,10 @@ MONDO:0011962	endometrial cancer	skos:closeMatch	ICD10CM:C54.1	Malignant neoplas
 MONDO:0011962	endometrial cancer	skos:closeMatch	ICD10CM:C54.1	Malignant neoplasm of endometrium	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:1380	LEXMATCH
 MONDO:0011968	autosomal recessive limb-girdle muscular dystrophy type 2D	skos:closeMatch	ICD10CM:G71.0	Muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110278	LEXMATCH
 MONDO:0011968	autosomal recessive limb-girdle muscular dystrophy type 2D	skos:closeMatch	ICD10CM:G71.0	Muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110278	LEXMATCH
-MONDO:0011971	hyper-IgM syndrome type 5	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060759	LEXMATCH
-MONDO:0011971	hyper-IgM syndrome type 5	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060759	LEXMATCH
 MONDO:0011974	retinitis pigmentosa 7	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110383	LEXMATCH
 MONDO:0011974	retinitis pigmentosa 7	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0011974	LEXMATCH
 MONDO:0011974	retinitis pigmentosa 7	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110383	LEXMATCH
 MONDO:0011979	adult-onset foveomacular vitelliform dystrophy	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0011979	LEXMATCH
-MONDO:0011985	hyper-IgM syndrome type 4	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060760	LEXMATCH
-MONDO:0011985	hyper-IgM syndrome type 4	skos:closeMatch	ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060760	LEXMATCH
 MONDO:0011991	autosomal recessive nonsyndromic hearing loss 38	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110496	LEXMATCH
 MONDO:0011991	autosomal recessive nonsyndromic hearing loss 38	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110496	LEXMATCH
 MONDO:0011994	autosomal dominant nonsyndromic hearing loss 41	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110567	LEXMATCH
@@ -5560,7 +5559,9 @@ MONDO:0019145	hereditary thrombophilia due to congenital protein C deficiency	sk
 MONDO:0019147	myiasis	skos:closeMatch	ICD10CM:B87	Myiasis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11080	LEXMATCH
 MONDO:0019147	myiasis	skos:closeMatch	ICD10CM:B87	Myiasis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11080	LEXMATCH
 MONDO:0019148	Wolman disease	skos:closeMatch	ICD10CM:E75.5	Other lipid storage disorders	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:14497	LEXMATCH
+MONDO:0019148	Wolman disease	skos:closeMatch	ICD10CM:E75.5	Other lipid storage disorders	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:14497	LEXMATCH
 MONDO:0019148	Wolman disease	skos:closeMatch	ICD10CM:E75.5	Other lipid storage disorders	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:14497	LEXMATCH
+MONDO:0019148	Wolman disease	skos:closeMatch	ICD10CM:E75.5	Other lipid storage disorders	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:14497	LEXMATCH
 MONDO:0019154	androgen insensitivity syndrome	skos:closeMatch	ICD10CM:E34.5	Androgen insensitivity syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:4674	LEXMATCH
 MONDO:0019154	androgen insensitivity syndrome	skos:closeMatch	ICD10CM:E34.5	Androgen insensitivity syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:4674	LEXMATCH
 MONDO:0019159	Loeffler endocarditis	skos:closeMatch	ICD10CM:I42.3	Endomyocardial (eosinophilic) disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:396	LEXMATCH
@@ -6003,6 +6004,10 @@ MONDO:0800268	atrioventricular septal defect, susceptibility to, 1	skos:closeMat
 MONDO:0800268	atrioventricular septal defect, susceptibility to, 1	skos:closeMatch	ICD10CM:Q21.2	Atrioventricular septal defect	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	atrioventricular septal defect	LEXMATCH
 MONDO:0800448	leukoencephalopathy with vanishing white matter	skos:closeMatch	ICD10CM:E75.2	Other sphingolipidosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060868	LEXMATCH
 MONDO:0800448	leukoencephalopathy with vanishing white matter	skos:closeMatch	ICD10CM:E75.2	Other sphingolipidosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060868	LEXMATCH
+MONDO:0800449	lysosomal acid lipase deficiency	skos:closeMatch	ICD10CM:E75.5	Other lipid storage disorders	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0080217	LEXMATCH
+MONDO:0800449	lysosomal acid lipase deficiency	skos:closeMatch	ICD10CM:E75.5	Other lipid storage disorders	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:0080217	LEXMATCH
+MONDO:0800449	lysosomal acid lipase deficiency	skos:closeMatch	ICD10CM:E75.5	Other lipid storage disorders	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0080217	LEXMATCH
+MONDO:0800449	lysosomal acid lipase deficiency	skos:closeMatch	ICD10CM:E75.5	Other lipid storage disorders	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:0080217	LEXMATCH
 MONDO:0850223	Libman-Sacks endocarditis	skos:closeMatch	ICD10CM:M32.11	Endocarditis in systemic lupus erythematosus	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0080740	LEXMATCH
 MONDO:0850223	Libman-Sacks endocarditis	skos:closeMatch	ICD10CM:M32.11	Endocarditis in systemic lupus erythematosus	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0080740	LEXMATCH
 MONDO:0851100	malignant olfactory nerve neoplasm	skos:closeMatch	ICD10CM:C72.2	Malignant neoplasm of olfactory nerve	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:370	LEXMATCH
