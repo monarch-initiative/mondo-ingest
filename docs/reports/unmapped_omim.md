@@ -14,6 +14,7 @@
 | OMIM:620734   | cardiomyopathy, familial hypertrophic, 30, atrial                                                     |
 | OMIM:620722   | deafness, autosomal dominant 90                                                                       |
 | OMIM:620714   | deafness, autosomal recessive 122                                                                     |
+| OMIM:620745   | deafness, autosomal recessive 123                                                                     |
 | OMIM:620704   | encephalopathy, porphyria-related                                                                     |
 | OMIM:620707   | epidermolytic hyperkeratosis 2b, autosomal recessive                                                  |
 | OMIM:620730   | hyperemesis gravidarum, susceptibility to                                                             |
@@ -21,8 +22,10 @@
 | OMIM:620711   | leukoencephalopathy, porphyria-related                                                                |
 | OMIM:620698   | maple syrup urine disease,  iia 1b                                                                    |
 | OMIM:620699   | maple syrup urine disease,  iia 2                                                                     |
+| OMIM:620748   | megalencephaly-polydactyly syndrome                                                                   |
 | OMIM:620731   | microphthalmia/coloboma 11                                                                            |
 | OMIM:620732   | neurodevelopmental disorder with hyperkinetic movements, seizures, and structural brain abnormalities |
+| OMIM:620746   | neurodevelopmental disorder with hypotonia and characteristic brain abnormalities                     |
 | OMIM:620719   | neurodevelopmental disorder with motor abnormalities, seizures, and facial dysmorphism                |
 | OMIM:620718   | orofaciodigital syndrome 20                                                                           |
 | OMIM:620712   | polydactyly-macrocephaly syndrome                                                                     |
