@@ -1,11 +1,11 @@
 # Migratable terms
 | Ontology                          | Tot   |
 |:----------------------------------|:------|
-| [ORDO](./migrate_ordo.md)         | 97    |
 | [GARD](./migrate_gard.md)         | 9,370 |
-| [OMIM](./migrate_omim.md)         | 8     |
-| [NCIT](./migrate_ncit.md)         | 2,179 |
-| [DOID](./migrate_doid.md)         | 188   |
+| [ORDO](./migrate_ordo.md)         | 65    |
+| [OMIM](./migrate_omim.md)         | 24    |
+| [NCIT](./migrate_ncit.md)         | 2,176 |
+| [DOID](./migrate_doid.md)         | 198   |
 | [ICD10WHO](./migrate_icd10who.md) | 119   |
 | [ICD10CM](./migrate_icd10cm.md)   | 1,889 |
 
