@@ -1,0 +1,2764 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Migrate doid - Mondo Disease Ontology Ingest</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#doid" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-header__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mondo Disease Ontology Ingest
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Migrate doid
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-nav__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Mondo Disease Ontology Ingest
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        Cite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        History
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          How-to guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How-to guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          How-to guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1" tabindex="0" aria-expanded="false">
+          Standard ODK workflows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Standard ODK workflows" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Standard ODK workflows
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        Editors Workflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        Release Workflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepoManagement/" class="md-nav__link">
+        Manage your ODK Repository
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        Setting up Docker for ODK
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/UpdateImports/" class="md-nav__link">
+        Imports management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        Managing the documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        Continuous Integration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        Your ODK Repository Overview
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        Mapping progress report
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" tabindex="0" aria-expanded="false">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_1" tabindex="0" aria-expanded="false">
+          Developers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/workflows/" class="md-nav__link">
+        Workflows
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        Mondo sources: Mapping progress report
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapped_deprecated/" class="md-nav__link">
+        Mondo sources: Deprecated terms w/ Mondo xrefs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4" tabindex="0" aria-expanded="false">
+          Mondo sources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mondo sources" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Mondo sources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/doid/" class="md-nav__link">
+        DO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/gard/" class="md-nav__link">
+        GARD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10cm/" class="md-nav__link">
+        ICD10CM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10who/" class="md-nav__link">
+        ICD10WHO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ncit/" class="md-nav__link">
+        NCIT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/omim/" class="md-nav__link">
+        OMIM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ordo/" class="md-nav__link">
+        ORDO
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_5" tabindex="0" aria-expanded="false">
+          Mondo source metrics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mondo source metrics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          Mondo source metrics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/doid/" class="md-nav__link">
+        DO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/gard/" class="md-nav__link">
+        GARD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10cm/" class="md-nav__link">
+        ICD10CM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10who/" class="md-nav__link">
+        ICD10WHO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ncit/" class="md-nav__link">
+        NCIT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/omim/" class="md-nav__link">
+        OMIM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ordo/" class="md-nav__link">
+        ORDO
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#doid" class="md-nav__link">
+    DOID
+  </a>
+  
+    <nav class="md-nav" aria-label="DOID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migratable-terms" class="md-nav__link">
+    Migratable terms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Migrate doid</h1>
+
+<h2 id="doid">DOID</h2>
+<p><a href="https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/slurp/doid.tsv">Interactive FlatGithub table</a></p>
+<h3 id="migratable-terms">Migratable terms</h3>
+<table>
+<thead>
+<tr>
+<th align="left">mondo_id</th>
+<th align="left">mondo_label</th>
+<th align="left">xref</th>
+<th align="left">xref_source</th>
+<th align="left">original_label</th>
+<th align="left">definition</th>
+<th align="left">parents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ID</td>
+<td align="left">LABEL</td>
+<td align="left">A oboInOwl:hasDbXref</td>
+<td align="left">&gt;A oboInOwl:source SPLIT=</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">A IAO:0000115</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956962</td>
+<td align="left">benign teratoma</td>
+<td align="left">DOID:0080602</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">benign teratoma</td>
+<td align="left">A germ cell benign neoplasm that derives_from mature tissue elements or a limited amount of immature tissue elements.</td>
+<td align="left">MONDO:0850144</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956964</td>
+<td align="left">medulloblastoma shh activated and tp53 mutant</td>
+<td align="left">DOID:0080704</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">medulloblastoma SHH activated and TP53 mutant</td>
+<td align="left">A medulloblastoma SHH activated that is characterized as a molecular subtype by activation of the sonic hedgehog (SHH) pathway and the presence of TP53 mutations.</td>
+<td align="left">MONDO:0850197</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956965</td>
+<td align="left">medulloblastoma shh activated and tp53 wild-type</td>
+<td align="left">DOID:0080705</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">medulloblastoma SHH activated and TP53 wild-type</td>
+<td align="left">A medulloblastoma SHH activated that is characterized as a molecular subtype by activation of the sonic hedgehog (SHH) pathway and the absence of TP53 mutations.</td>
+<td align="left">MONDO:0850197</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956966</td>
+<td align="left">medulloblastoma non-wnt/non-shh group 3</td>
+<td align="left">DOID:0080707</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">medulloblastoma non-WNT/non-SHH group 3</td>
+<td align="left">A medulloblastoma non-WNT/non-SHH that is characterized as a molecular subtype by absent TP53 mutations and MYC amplifications that may be present.</td>
+<td align="left">MONDO:0850198</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956967</td>
+<td align="left">medulloblastoma non-wnt/non-shh group 4</td>
+<td align="left">DOID:0080708</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">medulloblastoma non-WNT/non-SHH group 4</td>
+<td align="left">A medulloblastoma non-WNT/non-SHH that is characterized as a molecular subtype by the absence of MYC amplifications and TP53 mutations, while chromosome 17 abnormalities may be present.</td>
+<td align="left">MONDO:0850198</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956968</td>
+<td align="left">gene duplication disease</td>
+<td align="left">DOID:0080712</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">gene duplication disease</td>
+<td align="left">A monogenic disease that is the result of a mutation that involves the production of one or more copies of a gene.</td>
+<td align="left">MONDO:0000275</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956969</td>
+<td align="left">chronic inducible urticaria</td>
+<td align="left">DOID:0080748</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">chronic inducible urticaria</td>
+<td align="left">A chronic urticaria that is characterized by a history of a consistent stimulus that initiates lesions, which are typically short-lived and fleeting, lasting a few minutes up to 2 hours.</td>
+<td align="left">MONDO:0850230</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956970</td>
+<td align="left">chronic spontaneous urticaria</td>
+<td align="left">DOID:0080749</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">chronic spontaneous urticaria</td>
+<td align="left">A chronic urticaria that is characterized by urticaria independent of any exogenous stimulus.</td>
+<td align="left">MONDO:0850230</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956971</td>
+<td align="left">intermittent asthma</td>
+<td align="left">DOID:0080812</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">intermittent asthma</td>
+<td align="left">A chronic asthma that is characterized by severity with symptoms two or fewer days per week, nighttime awakenings two or fewer times per month, use of short-acting beta agonist for symptom control two or fewer days per week and no interference with normal activity.</td>
+<td align="left">MONDO:0850282</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956972</td>
+<td align="left">persistent mild asthma</td>
+<td align="left">DOID:0080813</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">persistent mild asthma</td>
+<td align="left">A chronic asthma that is characterized by severity with symptoms two or more days per week, nighttime awakenings three to four times per month, use of short-acting beta agonist for symptom control two or more days per week and minor limitation of normal activity.</td>
+<td align="left">MONDO:0850282</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956973</td>
+<td align="left">persistent moderate asthma</td>
+<td align="left">DOID:0080814</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">persistent moderate asthma</td>
+<td align="left">A chronic asthma that is characterized by severity with daily symptoms, nighttime awakenings more than once per week, daily use of short-acting beta agonist for symptom control and some limitation of normal activity.</td>
+<td align="left">MONDO:0850282</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956974</td>
+<td align="left">adult-onset severe asthma</td>
+<td align="left">DOID:0080816</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">adult-onset severe asthma</td>
+<td align="left">A chronic asthma that is characterized by first presentation in adulthood.</td>
+<td align="left">MONDO:0850282</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956975</td>
+<td align="left">t2-high asthma</td>
+<td align="left">DOID:0080817</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">T2-high asthma</td>
+<td align="left">A chronic asthma that is characterized by the pathophysiology phenotype combination (endotype) of early-onset allergic asthma, late-onset eosinophilic asthma, and aspirin-exacerbated respiratory disease.</td>
+<td align="left">MONDO:0850282</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956976</td>
+<td align="left">t2-low asthma</td>
+<td align="left">DOID:0080818</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">T2-low asthma</td>
+<td align="left">A chronic asthma that is characterized by the pathophysiology phenotype combination (endotype) of non-atopic, smoking, obesity related, and elderly and that is characterized by neutrophilic (sputum neutrophils &gt; 40–60%) or paucigranulocytic (i.e., normal sputum levels of both eosinophils and neutrophils) inflammation and a lack of response to corticosteroid therapy.</td>
+<td align="left">MONDO:0850282</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956977</td>
+<td align="left">near-fatal asthma</td>
+<td align="left">DOID:0080823</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">near-fatal asthma</td>
+<td align="left">An acute asthma that is characterized by a respiratory arrest or arterial carbon dioxide tension greater than 50 mmHg, with or without altered consciousness, requiring mechanical ventilation.</td>
+<td align="left">MONDO:0850283</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956978</td>
+<td align="left">persistent severe asthma</td>
+<td align="left">DOID:0080824</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">persistent severe asthma</td>
+<td align="left">A chronic asthma that is characterized by severity with symptoms two or fewer days per week, nighttime awakenings two or fewer times per month, use of short-acting beta agonist for symptom control several times per day and extremely limited normal activity.</td>
+<td align="left">MONDO:0850282</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956979</td>
+<td align="left">nocturnal asthma</td>
+<td align="left">DOID:0080826</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">nocturnal asthma</td>
+<td align="left">A chronic asthma that is characterized by significant decline in pulmonary function and increase of airway inflammation at night. During sleep, recumbent posture causes a reduction in the lung volumes, respiratory muscle tone, and lung compliance. The overnight physiological abnormalities include: increased airway inflammation and decreased steroid responsiveness, increased pulmonary capillary blood volume, functional differences in blood/air volume ratios and mechanical coupling of the parenchyma to the airways.</td>
+<td align="left">MONDO:0850282</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956980</td>
+<td align="left">vascular parkinsonism</td>
+<td align="left">DOID:0080856</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">vascular Parkinsonism</td>
+<td align="left">A Parkinsonism that is characterized by postural instability, a broad-based gait with the absence of tremors of vascular origin.</td>
+<td align="left">MONDO:0021095</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956981</td>
+<td align="left">astrocytoma, idh-mutant, grade 4</td>
+<td align="left">DOID:0080877</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">astrocytoma, IDH-mutant, grade 4</td>
+<td align="left">An IDH-mutant anaplastic astrocytoma that is characterized by the presence of necrosis and/or microvascular proliferation or homozygous deletion of CDKN2A and/or CDKN2B genes. The term glioblastoma no longer applies to central nervous system WHO grade 4 IDH-mutant astrocytomas.</td>
+<td align="left">MONDO:0850332</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956983</td>
+<td align="left">pleomorphic xanthoastrocytoma braf mutant</td>
+<td align="left">DOID:0080881</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">pleomorphic xanthoastrocytoma BRAF mutant</td>
+<td align="left">An anaplastic pleomorphic xanthoastrocytoma that has_material_basis_in BRAF mutations.</td>
+<td align="left">MONDO:0850312</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956984</td>
+<td align="left">yap1-mamld1 fusion-positive supratentorial ependymoma</td>
+<td align="left">DOID:0080891</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">YAP1-MAMLD1 fusion-positive supratentorial ependymoma</td>
+<td align="left">A supratentorial ependymoma that has_material_basis_in YAP1-MAMLD1 fusion.</td>
+<td align="left">MONDO:0850340</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956985</td>
+<td align="left">lipofibromatosis-like neural tumor</td>
+<td align="left">DOID:0080894</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">lipofibromatosis-like neural tumor</td>
+<td align="left">A connective tissue cancer that has_material_basis_in LMNA-NTRK1 gene fusion.</td>
+<td align="left">MONDO:0002176</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956986</td>
+<td align="left">solitary fibrous tumor/hemangiopericytoma</td>
+<td align="left">DOID:0080897</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">solitary fibrous tumor/hemangiopericytoma</td>
+<td align="left">A connective tissue cancer that is characterized as the combination of solitary fibrous tumors and hemangiopericytomas.</td>
+<td align="left">MONDO:0002176</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956987</td>
+<td align="left">ezb-myc+ diffuse large b-cell lymphoma</td>
+<td align="left">DOID:0081070</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">EZB-MYC+ diffuse large B-cell lymphoma</td>
+<td align="left">An EZB diffuse large B-cell lymphoma that expresses the double hit gene expression signature (DHITsig+) according to gene expression profiling. In addition to the features characteristic of EZB, these cases commonly, but do not always, harbour MYC translocations and DDX3X mutations.</td>
+<td align="left">MONDO:0850469</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956988</td>
+<td align="left">ezb-myc- diffuse large b-cell lymphoma</td>
+<td align="left">DOID:0081071</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">EZB-MYC- diffuse large B-cell lymphoma</td>
+<td align="left">An EZB diffuse large B-cell lymphoma that does not express the double hit gene expression signature (DHITsig-) according to gene expression profiling. These cases tend to have few MYC translocations or DDX3X mutations.</td>
+<td align="left">MONDO:0850469</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956989</td>
+<td align="left">cic-rearranged sarcoma</td>
+<td align="left">DOID:0081250</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">CIC-rearranged sarcoma</td>
+<td align="left">An EWSERI-negative small round cell tumor that is characterized by a recurrent translocation involving the CIC gene on chromosome 19 and either DUX4 gene on chromosome 4 or DUX4L gene on chromosome 10. The translocation results in either CIC-DUX4, t(4;19)(q35;q13) or CIC-DUX4L, t(10;19)(q26;q13) fusions.</td>
+<td align="left">MONDO:0858921</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956990</td>
+<td align="left">supratentorial ependymoma, zfta fusion–positive</td>
+<td align="left">DOID:0081252</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">supratentorial ependymoma, ZFTA fusion–positive</td>
+<td align="left">A suptratentorial ependymoma that is characterized by the presence of a fusion gene involving ZFTA gene.</td>
+<td align="left">MONDO:0850340</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956991</td>
+<td align="left">supratentorial ependymoma, yap1 fusion–positive</td>
+<td align="left">DOID:0081253</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">supratentorial ependymoma, YAP1 fusion–positive</td>
+<td align="left">A supratentorial ependymoma that is characterized by the presence of a fusion gene involving YAP1 gene.</td>
+<td align="left">MONDO:0850340</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956992</td>
+<td align="left">posterior fossa group a ependymoma</td>
+<td align="left">DOID:0081254</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">posterior fossa group A ependymoma</td>
+<td align="left">A posterior fossa ependymoma that arises in the posterior fossa with characteristic DNA methylation patterns, including CpG island hypermethylation, global DNA hypomethylation, reduction of nuclear H3 p.K28me3 (K27me3) expression, and EZHIP overexpression.</td>
+<td align="left">MONDO:0850339</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956993</td>
+<td align="left">posterior fossa group b ependymoma</td>
+<td align="left">DOID:0081255</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">posterior fossa group B ependymoma</td>
+<td align="left">A posterior fossa ependymoma that arises in the posterior fossa with characteristic DNA methylation patterns including retention of nuclear H3 p.K28me3 (K27me3) expression, absence of CpG island hypermethylation, absence of global DNA hypomethylation, and absence of EZHIP overexpression.</td>
+<td align="left">MONDO:0850339</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956994</td>
+<td align="left">astrocytoma, idh-mutant, grade 2</td>
+<td align="left">DOID:0081256</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">astrocytoma, IDH-mutant, grade 2</td>
+<td align="left">An IDH-mutant anaplastic astrocytoma that is characterized by the presence of well-differentiated fibrillary glial cells diffusely infiltrating the central nervous system.</td>
+<td align="left">MONDO:0850332</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956995</td>
+<td align="left">astrocytoma, idh-mutant, grade 3</td>
+<td align="left">DOID:0081257</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">astrocytoma, IDH-mutant, grade 3</td>
+<td align="left">An IDH-mutant anaplastic astrocytoma that is characterized by the presence of increased mitotic activity and anaplastic features.</td>
+<td align="left">MONDO:0850332</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956996</td>
+<td align="left">oligodendroglioma, idh-mutant and 1p/19q-codeleted grade 2</td>
+<td align="left">DOID:0081281</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">oligodendroglioma, IDH-mutant and 1p/19q-codeleted grade 2</td>
+<td align="left">An IDH-mutant, and 1p/19q-codeleted oligodendroglioma that is characterized as a well differentiated tumor lacking anaplastic features (brisk mitotic activity, microvascular proliferation, necrosis).</td>
+<td align="left">MONDO:0859592</td>
+</tr>
+<tr>
+<td align="left">MONDO:0956997</td>
+<td align="left">oligodendroglioma, idh-mutant and 1p/19q-codeleted, grade 3</td>
+<td align="left">DOID:0081282</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">oligodendroglioma, IDH-mutant and 1p/19q-codeleted, grade 3</td>
+<td align="left">An IDH-mutant, and 1p/19q-codeleted oligodendroglioma that is characterized as grade 3 tumors associated with a more rapid growth. Grade 3 tumors appear to have abnormalities on chromosomes 9 or 10, along with unusual amounts of growth factors and proteins, which are thought to contribute to the more rapid growth of these gliomas.</td>
+<td align="left">MONDO:0859592</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957118</td>
+<td align="left">bradyopsia 2</td>
+<td align="left">DOID:0070364</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">bradyopsia 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0012033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957120</td>
+<td align="left">nevoid basal cell carcinoma syndrome 2</td>
+<td align="left">DOID:0070366</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">nevoid basal cell carcinoma syndrome 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0007187</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957121</td>
+<td align="left">leukoencephalopathy with vanishing white matter 5</td>
+<td align="left">DOID:0070367</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">leukoencephalopathy with vanishing white matter 5</td>
+<td align="left"></td>
+<td align="left">MONDO:0800448</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957122</td>
+<td align="left">leukoencephalopathy with vanishing white matter 4</td>
+<td align="left">DOID:0070371</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">leukoencephalopathy with vanishing white matter 4</td>
+<td align="left"></td>
+<td align="left">MONDO:0800448</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957123</td>
+<td align="left">leukoencephalopathy with vanishing white matter 3</td>
+<td align="left">DOID:0070372</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">leukoencephalopathy with vanishing white matter 3</td>
+<td align="left"></td>
+<td align="left">MONDO:0800448</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957124</td>
+<td align="left">leukoencephalopathy with vanishing white matter 2</td>
+<td align="left">DOID:0070373</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">leukoencephalopathy with vanishing white matter 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0800448</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957127</td>
+<td align="left">developmental and epileptic encephalopathy 31b</td>
+<td align="left">DOID:0070376</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">developmental and epileptic encephalopathy 31B</td>
+<td align="left"></td>
+<td align="left">MONDO:0100062</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957181</td>
+<td align="left">epidermolytic hyperkeratosis 2</td>
+<td align="left">DOID:0081359</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">epidermolytic hyperkeratosis 2</td>
+<td align="left">An epidermolytic hyperkeratosis that is characterized by generalized erythema, erosions, scaling, and easily breaking blisters that become less frequent later in life, while hyperkeratosis increases and that has_material_basis_in heterozygous or homozygous mutation in the keratin-10 gene (KRT10) on chromosome 17q21.</td>
+<td align="left">MONDO:0007239</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957195</td>
+<td align="left">digenic disease</td>
+<td align="left">DOID:0080578</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">digenic disease</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">MONDO:0957196</td>
+<td align="left">diffuse midline glioma, h3 k27m-mutant</td>
+<td align="left">DOID:0080684</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">diffuse midline glioma, H3 K27M-mutant</td>
+<td align="left">A histone mutated tumor that is characterized by the presence of histone H3 K27M mutation located throughout the midline structures of the central nervous system.</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">MONDO:0957197</td>
+<td align="left">diffuse glioma, h3 g34 mutant</td>
+<td align="left">DOID:0080880</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">diffuse glioma, H3 G34 mutant</td>
+<td align="left">A histone mutated tumor that has_material_basis_in mutations in codon 34 of the H3 histone family 3A protein.</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">MONDO:0957327</td>
+<td align="left">congenital myopathy 20</td>
+<td align="left">DOID:0081352</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">congenital myopathy 20</td>
+<td align="left">A congenital myopathy that has_material_basis_in homozygous or compound heterozygous mutation in the RYR3 gene on chromosome 15q13 and that shows wide phenotypic variability. Some patients present in early childhood with proximal muscle weakness affecting the lower and upper limbs resulting in difficulties running and climbing, whereas others present soon after birth with congenital limb or distal contractures.</td>
+<td align="left">MONDO:0019952</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957328</td>
+<td align="left">congenital myopathy 21</td>
+<td align="left">DOID:0081353</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">congenital myopathy 21</td>
+<td align="left">A congenital myopathy that is characterized by diaphragmatic weakness and spinal rigidity and that has_material_basis_in homozygous mutation in the DNAJB4 gene on chromosome 1p31.</td>
+<td align="left">MONDO:0019952</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957329</td>
+<td align="left">congenital myopathy 22a</td>
+<td align="left">DOID:0081354</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">congenital myopathy 22A</td>
+<td align="left">A congenital myopathy that is characterized by onset of muscle weakness in utero or soon after birth and that has_material_basis_in homozygous or compound heterozygous mutation in the SCN4A gene on chromosome 17q23. Biallelic mutation in the SCN4A gene also causes severe fetal congenital myopathy 22B.</td>
+<td align="left">MONDO:0019952</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957330</td>
+<td align="left">congenital myopathy 22b</td>
+<td align="left">DOID:0081355</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">congenital myopathy 22B</td>
+<td align="left">A congenital myopathy that is characterized by in utero onset of severe muscle weakness manifest as fetal akinesia and that has_material_basis_in homozygous or compound heterozygous mutation in the SCN4A gene on chromosome 17q23.</td>
+<td align="left">MONDO:0019952</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957353</td>
+<td align="left">progressive leukoencephalopathy with ovarian failure</td>
+<td align="left">DOID:0070396</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">progressive leukoencephalopathy with ovarian failure</td>
+<td align="left"></td>
+<td align="left">MONDO:0019046</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957354</td>
+<td align="left">combined oxidative phosphorylation deficiency 44</td>
+<td align="left">DOID:0070424</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">combined oxidative phosphorylation deficiency 44</td>
+<td align="left"></td>
+<td align="left">MONDO:0006025</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957355</td>
+<td align="left">combined oxidative phosphorylation deficiency 52</td>
+<td align="left">DOID:0070425</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">combined oxidative phosphorylation deficiency 52</td>
+<td align="left"></td>
+<td align="left">MONDO:0000732</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957356</td>
+<td align="left">combined oxidative phosphorylation deficiency 53</td>
+<td align="left">DOID:0070426</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">combined oxidative phosphorylation deficiency 53</td>
+<td align="left"></td>
+<td align="left">MONDO:0000732</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957357</td>
+<td align="left">combined oxidative phosphorylation deficiency 54</td>
+<td align="left">DOID:0070427</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">combined oxidative phosphorylation deficiency 54</td>
+<td align="left"></td>
+<td align="left">MONDO:0000732</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957358</td>
+<td align="left">combined oxidative phosphorylation deficiency 55</td>
+<td align="left">DOID:0070428</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">combined oxidative phosphorylation deficiency 55</td>
+<td align="left"></td>
+<td align="left">MONDO:0000732</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957359</td>
+<td align="left">combined oxidative phosphorylation deficiency 56</td>
+<td align="left">DOID:0070429</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">combined oxidative phosphorylation deficiency 56</td>
+<td align="left"></td>
+<td align="left">MONDO:0000732</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957360</td>
+<td align="left">combined oxidative phosphorylation deficiency 57</td>
+<td align="left">DOID:0070430</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">combined oxidative phosphorylation deficiency 57</td>
+<td align="left"></td>
+<td align="left">MONDO:0000732</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957361</td>
+<td align="left">hyperphosphatasia with impaired intellectual development syndrome</td>
+<td align="left">DOID:0070431</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">hyperphosphatasia with impaired intellectual development syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0019502</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957362</td>
+<td align="left">retinal macular dystrophy</td>
+<td align="left">DOID:0070438</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">retinal macular dystrophy</td>
+<td align="left"></td>
+<td align="left">MONDO:0003004</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957363</td>
+<td align="left">paroxysmal nonkinesigenic dyskinesia 3</td>
+<td align="left">DOID:0070442</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">paroxysmal nonkinesigenic dyskinesia 3</td>
+<td align="left"></td>
+<td align="left">MONDO:0003441</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957364</td>
+<td align="left">neurodevelopmental disorder with cerebellar atrophy and motor dysfunction</td>
+<td align="left">DOID:0070443</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neurodevelopmental disorder with cerebellar atrophy and motor dysfunction</td>
+<td align="left"></td>
+<td align="left">MONDO:0019502</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957365</td>
+<td align="left">neurodevelopmental disorder with language delay and seizures</td>
+<td align="left">DOID:0070444</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neurodevelopmental disorder with language delay and seizures</td>
+<td align="left"></td>
+<td align="left">MONDO:0019502</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957366</td>
+<td align="left">early-onset dystonia and/or spastic paraplegia</td>
+<td align="left">DOID:0070445</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">early-onset dystonia and/or spastic paraplegia</td>
+<td align="left"></td>
+<td align="left">MONDO:0003441</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957367</td>
+<td align="left">mitochondrial dna depletion syndrome 16</td>
+<td align="left">DOID:0070446</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial DNA depletion syndrome 16</td>
+<td align="left"></td>
+<td align="left">MONDO:0018158</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957368</td>
+<td align="left">mitochondrial dna depletion syndrome 16b</td>
+<td align="left">DOID:0070447</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial DNA depletion syndrome 16B</td>
+<td align="left"></td>
+<td align="left">MONDO:0018158</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957369</td>
+<td align="left">mitochondrial dna depletion syndrome 17</td>
+<td align="left">DOID:0070448</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial DNA depletion syndrome 17</td>
+<td align="left"></td>
+<td align="left">MONDO:0018158</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957370</td>
+<td align="left">mitochondrial dna depletion syndrome 18</td>
+<td align="left">DOID:0070449</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial DNA depletion syndrome 18</td>
+<td align="left"></td>
+<td align="left">MONDO:0018158</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957371</td>
+<td align="left">mitochondrial dna depletion syndrome 19</td>
+<td align="left">DOID:0070450</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial DNA depletion syndrome 19</td>
+<td align="left"></td>
+<td align="left">MONDO:0018158</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957372</td>
+<td align="left">mitochondrial dna depletion syndrome 20</td>
+<td align="left">DOID:0070451</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial DNA depletion syndrome 20</td>
+<td align="left"></td>
+<td align="left">MONDO:0018158</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957378</td>
+<td align="left">ladd syndrome</td>
+<td align="left">DOID:0081370</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">LADD syndrome</td>
+<td align="left">A syndrome that is characterized by defects in the tear-producing lacrimal system, ear problems, dental abnormalities, and deformities of the fingers.</td>
+<td align="left">MONDO:0002254</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957500</td>
+<td align="left">xanthinuria type i</td>
+<td align="left">DOID:0070452</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">xanthinuria type I</td>
+<td align="left"></td>
+<td align="left">MONDO:0018106</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957501</td>
+<td align="left">xanthinuria type ii</td>
+<td align="left">DOID:0070453</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">xanthinuria type II</td>
+<td align="left"></td>
+<td align="left">MONDO:0018106</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957502</td>
+<td align="left">hereditary spastic paraplegia 70</td>
+<td align="left">DOID:0070454</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">hereditary spastic paraplegia 70</td>
+<td align="left"></td>
+<td align="left">MONDO:0019064</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957503</td>
+<td align="left">hereditary spastic paraplegia 79a</td>
+<td align="left">DOID:0070455</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">hereditary spastic paraplegia 79A</td>
+<td align="left"></td>
+<td align="left">MONDO:0019064</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957504</td>
+<td align="left">hereditary spastic paraplegia 87</td>
+<td align="left">DOID:0070456</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">hereditary spastic paraplegia 87</td>
+<td align="left"></td>
+<td align="left">MONDO:0019064</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957505</td>
+<td align="left">hereditary spastic paraplegia 88</td>
+<td align="left">DOID:0070457</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">hereditary spastic paraplegia 88</td>
+<td align="left"></td>
+<td align="left">MONDO:0019064</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957506</td>
+<td align="left">hereditary spastic paraplegia 89</td>
+<td align="left">DOID:0070458</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">hereditary spastic paraplegia 89</td>
+<td align="left"></td>
+<td align="left">MONDO:0019064</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957507</td>
+<td align="left">hereditary spastic paraplegia 90a</td>
+<td align="left">DOID:0070459</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">hereditary spastic paraplegia 90A</td>
+<td align="left"></td>
+<td align="left">MONDO:0019064</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957508</td>
+<td align="left">hereditary spastic paraplegia 90b</td>
+<td align="left">DOID:0070460</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">hereditary spastic paraplegia 90B</td>
+<td align="left"></td>
+<td align="left">MONDO:0019064</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957509</td>
+<td align="left">mitochondrial complex v (atp synthase) deficiency nuclear type 4a</td>
+<td align="left">DOID:0070461</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial complex V (ATP synthase) deficiency nuclear type 4A</td>
+<td align="left"></td>
+<td align="left">MONDO:0014091</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957510</td>
+<td align="left">mitochondrial complex v (atp synthase) deficiency nuclear type 4b</td>
+<td align="left">DOID:0070462</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial complex V (ATP synthase) deficiency nuclear type 4B</td>
+<td align="left"></td>
+<td align="left">MONDO:0014091</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957511</td>
+<td align="left">mitochondrial complex v (atp synthase) deficiency nuclear type 5</td>
+<td align="left">DOID:0070463</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial complex V (ATP synthase) deficiency nuclear type 5</td>
+<td align="left"></td>
+<td align="left">MONDO:0014471</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957512</td>
+<td align="left">mitochondrial complex v (atp synthase) deficiency nuclear type 7</td>
+<td align="left">DOID:0070464</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial complex V (ATP synthase) deficiency nuclear type 7</td>
+<td align="left"></td>
+<td align="left">MONDO:0014471</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957513</td>
+<td align="left">carpal tunnel syndrome 1</td>
+<td align="left">DOID:0070466</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">carpal tunnel syndrome 1</td>
+<td align="left"></td>
+<td align="left">MONDO:0007275</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957514</td>
+<td align="left">carpal tunnel syndrome 2</td>
+<td align="left">DOID:0070467</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">carpal tunnel syndrome 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0007275</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957516</td>
+<td align="left">anauxetic dysplasia 1</td>
+<td align="left">DOID:0050640</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">anauxetic dysplasia 1</td>
+<td align="left"></td>
+<td align="left">MONDO:0011773</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957517</td>
+<td align="left">congenital disorder of glycosylation type iie</td>
+<td align="left">DOID:0070257</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">congenital disorder of glycosylation type IIe</td>
+<td align="left"></td>
+<td align="left">MONDO:0005501</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957518</td>
+<td align="left">orofacial cleft 7</td>
+<td align="left">DOID:0080400</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">orofacial cleft 7</td>
+<td align="left"></td>
+<td align="left">MONDO:0006025</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957519</td>
+<td align="left">diffuse gastric cancer</td>
+<td align="left">DOID:0080763</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">diffuse gastric cancer</td>
+<td align="left">A stomach cancer that is characterized by development of diffuse (signet ring cell) gastric cancer underneath the stomach lining.</td>
+<td align="left">MONDO:0001056</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957520</td>
+<td align="left">disabling pansclerotic morphea</td>
+<td align="left">DOID:0081373</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">disabling pansclerotic morphea</td>
+<td align="left">A localized scleroderma that is characterized by the rapid progression of deep cutaneous fibrosis or pansclerosis that involves the subcutaneous adipose tissue and, occasionally, the fascia, muscles, and bone.</td>
+<td align="left">MONDO:0019562</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957521</td>
+<td align="left">nemaline myopathy 5b</td>
+<td align="left">DOID:0081374</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">nemaline myopathy 5B</td>
+<td align="left">A nemaline myopathy that has_material_basis_in autosomal recessive inheritance of a homozygous or compound heterozygous mutation in the TNNT1 gene on chromosome 19q13, with childhood onset.</td>
+<td align="left">MONDO:0018958</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957522</td>
+<td align="left">nemaline myopathy 5c</td>
+<td align="left">DOID:0081375</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">nemaline myopathy 5C</td>
+<td align="left">A nemaline myopathy that has_material_basis_in autosomal dominant inheritance of a homozygous or compound heterozygous mutation in the TNNT1 gene on chromosome 19q13.</td>
+<td align="left">MONDO:0018958</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957524</td>
+<td align="left">cox deficiency, benign infantile mitochondrial myopathy</td>
+<td align="left">DOID:0081377</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">COX deficiency, benign infantile mitochondrial myopathy</td>
+<td align="left">A cytochrome-c oxidase deficiency disease characterized by localization to tissues of the skeletal muscles.</td>
+<td align="left">MONDO:0009068</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957525</td>
+<td align="left">kyphosis</td>
+<td align="left">DOID:4667</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">kyphosis</td>
+<td align="left"></td>
+<td align="left">MONDO:0000836</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957558</td>
+<td align="left">li-fraumeni syndrome 1</td>
+<td align="left">DOID:0111503</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Li-Fraumeni syndrome 1</td>
+<td align="left"></td>
+<td align="left">MONDO:0018875</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957605</td>
+<td align="left">spinocerebellar ataxia with axonal neuropathy type 3</td>
+<td align="left">DOID:0070465</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">spinocerebellar ataxia with axonal neuropathy type 3</td>
+<td align="left"></td>
+<td align="left">MONDO:0015244</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957606</td>
+<td align="left">yoon-bellen neurodevelopmental syndrome</td>
+<td align="left">DOID:0070468</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Yoon-Bellen neurodevelopmental syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0002254</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957607</td>
+<td align="left">neurodevelopmental disorder with dysmorphic facies and thin corpus callosum</td>
+<td align="left">DOID:0070469</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neurodevelopmental disorder with dysmorphic facies and thin corpus callosum</td>
+<td align="left"></td>
+<td align="left">MONDO:0015802</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957608</td>
+<td align="left">early-onset epilepsy 2</td>
+<td align="left">DOID:0070471</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">early-onset epilepsy 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0005027</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957609</td>
+<td align="left">early-onset epilepsy 3</td>
+<td align="left">DOID:0070472</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">early-onset epilepsy 3</td>
+<td align="left"></td>
+<td align="left">MONDO:0005027</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957610</td>
+<td align="left">smarcb1-deficient renal medullary carcinoma</td>
+<td align="left">DOID:0070475</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">SMARCB1-deficient renal medullary carcinoma</td>
+<td align="left"></td>
+<td align="left">MONDO:0005086</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957611</td>
+<td align="left">diphthamide deficiency syndrome</td>
+<td align="left">DOID:0070476</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">diphthamide deficiency syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0006025</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957612</td>
+<td align="left">schwannomatosis 1</td>
+<td align="left">DOID:0070480</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">schwannomatosis 1</td>
+<td align="left"></td>
+<td align="left">MONDO:0008075</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957613</td>
+<td align="left">schwannomatosis 2</td>
+<td align="left">DOID:0070481</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">schwannomatosis 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0008075</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957614</td>
+<td align="left">spinal neurofibromatosis</td>
+<td align="left">DOID:0070482</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">spinal neurofibromatosis</td>
+<td align="left"></td>
+<td align="left">MONDO:0018975</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957615</td>
+<td align="left">watson syndrome</td>
+<td align="left">DOID:0070483</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Watson syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0021060</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957616</td>
+<td align="left">legius syndrome</td>
+<td align="left">DOID:0070484</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Legius syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0021060</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957617</td>
+<td align="left">amyotrophic lateral sclerosis type 24</td>
+<td align="left">DOID:0081378</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">amyotrophic lateral sclerosis type 24</td>
+<td align="left">An amyotrophic lateral sclerosis that is characterized by adult-onset loss of motor neurons and that has_material_basis_in heterozygous mutation in the NEK1 gene on chromosome 4q33.</td>
+<td align="left">MONDO:0004976</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957618</td>
+<td align="left">amyotrophic lateral sclerosis type 25</td>
+<td align="left">DOID:0081379</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">amyotrophic lateral sclerosis type 25</td>
+<td align="left">An amyotrophic lateral sclerosis that is characterized by rapidly progressive muscle weakness and death due to respiratory failure and that has_material_basis_in heterozygous mutation in the KIF5A gene on chromosome 12q13. ALS25 may have a lower median age at onset (46.5 years) and longer median survival (10 years) than that found in epidemiologic studies (62.5 years and 20 to 30 months, respectively).</td>
+<td align="left">MONDO:0004976</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957619</td>
+<td align="left">amyotrophic lateral sclerosis type 26</td>
+<td align="left">DOID:0081380</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">amyotrophic lateral sclerosis type 26</td>
+<td align="left">An amyotrophic lateral sclerosis that is characterized by adult onset of upper and low motor neuron disease causing bulbar dysfunction and limb weakness and that has_material_basis_in heterozygous mutation in the TIA1 gene on chromosome 2p13.</td>
+<td align="left">MONDO:0004976</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957620</td>
+<td align="left">juvenile amyotrophic lateral sclerosis type 27</td>
+<td align="left">DOID:0081381</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">juvenile amyotrophic lateral sclerosis type 27</td>
+<td align="left">An amyotrophic lateral sclerosis that is characterized by early childhood-onset lower extremity spasticity manifesting as toe walking and gait abnormalities, followed by progressive lower motor neuron-mediated weakness without sensory signs or symptoms and that has_material_basis_in heterozygous mutation in the SPTLC1 gene on chromosome 9q22.</td>
+<td align="left">MONDO:0004976</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957621</td>
+<td align="left">amyotrophic lateral sclerosis type 28</td>
+<td align="left">DOID:0081382</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">amyotrophic lateral sclerosis type 28</td>
+<td align="left">An amyotrophic lateral sclerosis that is characterized by adult onset of slowly progressive limb muscle weakness and atrophy resulting in gait difficulties, loss of ambulation, and distal upper limb weakness and that has_material_basis_in a heterozygous trinucleotide repeat expansion (CGG) in the 5-prime untranslated region of the LRP12 gene on chromosome 8q22.</td>
+<td align="left">MONDO:0004976</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957847</td>
+<td align="left">sotos syndrome 1</td>
+<td align="left">DOID:0112103</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Sotos syndrome 1</td>
+<td align="left"></td>
+<td align="left">MONDO:0019349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957848</td>
+<td align="left">epstein-barr virus infectious disease</td>
+<td align="left">DOID:2938</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Epstein-Barr virus infectious disease</td>
+<td align="left"></td>
+<td align="left">MONDO:0005108</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957878</td>
+<td align="left">proteosome-associated autoinflammatory syndrome</td>
+<td align="left">DOID:0060913</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">proteosome-associated autoinflammatory syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0002254</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957879</td>
+<td align="left">otosclerosis 1</td>
+<td align="left">DOID:0060920</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">otosclerosis 1</td>
+<td align="left"></td>
+<td align="left">MONDO:0005349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957880</td>
+<td align="left">otosclerosis 2</td>
+<td align="left">DOID:0060921</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">otosclerosis 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0005349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957881</td>
+<td align="left">otosclerosis 3</td>
+<td align="left">DOID:0060922</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">otosclerosis 3</td>
+<td align="left"></td>
+<td align="left">MONDO:0005349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957882</td>
+<td align="left">otosclerosis 4</td>
+<td align="left">DOID:0060923</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">otosclerosis 4</td>
+<td align="left"></td>
+<td align="left">MONDO:0005349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957883</td>
+<td align="left">otosclerosis 5</td>
+<td align="left">DOID:0060924</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">otosclerosis 5</td>
+<td align="left"></td>
+<td align="left">MONDO:0005349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957884</td>
+<td align="left">otosclerosis 7</td>
+<td align="left">DOID:0060925</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">otosclerosis 7</td>
+<td align="left"></td>
+<td align="left">MONDO:0005349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957885</td>
+<td align="left">otosclerosis 8</td>
+<td align="left">DOID:0060926</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">otosclerosis 8</td>
+<td align="left"></td>
+<td align="left">MONDO:0005349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957886</td>
+<td align="left">otosclerosis 10</td>
+<td align="left">DOID:0060927</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">otosclerosis 10</td>
+<td align="left"></td>
+<td align="left">MONDO:0005349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957887</td>
+<td align="left">otosclerosis 11</td>
+<td align="left">DOID:0060928</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">otosclerosis 11</td>
+<td align="left"></td>
+<td align="left">MONDO:0005349</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957888</td>
+<td align="left">non-syndromic x-linked intellectual developmental disorder 111</td>
+<td align="left">DOID:0060929</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">non-syndromic X-linked intellectual developmental disorder 111</td>
+<td align="left"></td>
+<td align="left">MONDO:0019181</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957889</td>
+<td align="left">chromosome 1p36.33 duplication syndrome</td>
+<td align="left">DOID:0070470</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">chromosome 1p36.33 duplication syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0000426</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957890</td>
+<td align="left">zaki syndrome</td>
+<td align="left">DOID:0070473</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Zaki syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0002254</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957891</td>
+<td align="left">childhood-onset neurodegeneration with brain atrophy</td>
+<td align="left">DOID:0070474</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">childhood-onset neurodegeneration with brain atrophy</td>
+<td align="left"></td>
+<td align="left">MONDO:0000426</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957892</td>
+<td align="left">mitochondrial complex iv deficiency nuclear type 23</td>
+<td align="left">DOID:0070485</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">mitochondrial complex IV deficiency nuclear type 23</td>
+<td align="left"></td>
+<td align="left">MONDO:0009068</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957893</td>
+<td align="left">parkinson's disease 25</td>
+<td align="left">DOID:0070486</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Parkinson's disease 25</td>
+<td align="left"></td>
+<td align="left">MONDO:0017279</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957894</td>
+<td align="left">dopamine transporter deficiency syndrome</td>
+<td align="left">DOID:0070487</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">dopamine transporter deficiency syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0005395</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957895</td>
+<td align="left">infantile parkinsonism-dystonia 2</td>
+<td align="left">DOID:0070490</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">infantile parkinsonism-dystonia 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0005395</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957896</td>
+<td align="left">metabolic dysfunction and alcohol associated liver disease</td>
+<td align="left">DOID:0070508</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">metabolic dysfunction and alcohol associated liver disease</td>
+<td align="left"></td>
+<td align="left">MONDO:0004790</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957897</td>
+<td align="left">schinzel giedion syndrome</td>
+<td align="left">DOID:0070509</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Schinzel Giedion syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0000426</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957898</td>
+<td align="left">inflammatory poikiloderma with hair abnormalities and acral keratoses</td>
+<td align="left">DOID:0070510</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">inflammatory poikiloderma with hair abnormalities and acral keratoses</td>
+<td align="left"></td>
+<td align="left">MONDO:0006025</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957899</td>
+<td align="left">polyhydramnios, megalencephaly, and symptomatic epilepsy</td>
+<td align="left">DOID:0070511</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">polyhydramnios, megalencephaly, and symptomatic epilepsy</td>
+<td align="left"></td>
+<td align="left">MONDO:0006025</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957900</td>
+<td align="left">neurodevelopmental disorder with hypotonia and speech delay</td>
+<td align="left">DOID:0070512</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neurodevelopmental disorder with hypotonia and speech delay</td>
+<td align="left"></td>
+<td align="left">MONDO:0002254</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957901</td>
+<td align="left">neurodevelopmental disorder with dysmorphic facies and behavioral abnormalities</td>
+<td align="left">DOID:0070513</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neurodevelopmental disorder with dysmorphic facies and behavioral abnormalities</td>
+<td align="left"></td>
+<td align="left">MONDO:0015802</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957902</td>
+<td align="left">neurodevelopmental disorder with dysmorphic facies and distal limb anomalies</td>
+<td align="left">DOID:0070514</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neurodevelopmental disorder with dysmorphic facies and distal limb anomalies</td>
+<td align="left"></td>
+<td align="left">MONDO:0015802</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957903</td>
+<td align="left">chromosome 16p11.2 deletion syndrome, 593-kb</td>
+<td align="left">DOID:0070515</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">chromosome 16p11.2 deletion syndrome, 593-kb</td>
+<td align="left"></td>
+<td align="left">MONDO:0000761</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957904</td>
+<td align="left">mitchell syndrome</td>
+<td align="left">DOID:0070516</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Mitchell syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0019053</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957905</td>
+<td align="left">ataxia-oculomotor apraxia type 4</td>
+<td align="left">DOID:0081383</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">ataxia-oculomotor apraxia type 4</td>
+<td align="left">An autosomal recessive cerebellar ataxia that is characterized by onset of dystonia and ataxia in the first decade and that has_material_basis_in homozygous or compound heterozygous mutation in the PNKP gene on chromosome 19q13.</td>
+<td align="left">MONDO:0015244</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957906</td>
+<td align="left">ataxia-telangiectasia-like disorder-1</td>
+<td align="left">DOID:0081384</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">ataxia-telangiectasia-like disorder-1</td>
+<td align="left">An autosomal recessive cerebellar ataxia that is characterized clinically by progressive cerebellar degeneration resulting in ataxia and oculomotor apraxia and that has_material_basis_in homozygous or compound heterozygous mutation in the MRE11A gene (MRE11) on chromosome 11q21.</td>
+<td align="left">MONDO:0015244</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957907</td>
+<td align="left">ataxia-telangiectasia-like disorder-2</td>
+<td align="left">DOID:0081385</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">ataxia-telangiectasia-like disorder-2</td>
+<td align="left">An autosomal recessive cerebellar ataxia that is characterized by developmental delay, ataxia, and sensorineural hearing loss and that has_material_basis_in homozygous mutation in the PCNA gene on chromosome 20p12.</td>
+<td align="left">MONDO:0015244</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957908</td>
+<td align="left">tango2-related metabolic encephalopathy and arrythmias</td>
+<td align="left">DOID:0081386</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">TANGO2-related metabolic encephalopathy and arrythmias</td>
+<td align="left">A syndrome that is characterized by episodic metabolic degeneration affecting skeletal muscle, cardiac muscle, and the nervous system and that has_material_basis_in homozygous or compound heterozygous mutation in the TANGO2 gene on chromosome 22q11.</td>
+<td align="left">MONDO:0002254</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957909</td>
+<td align="left">neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities</td>
+<td align="left">DOID:0081387</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities</td>
+<td align="left">An autosomal recessive intellectual developmental disorder that is characterized by the onset of features in infancy or early childhood and that has_material_basis_in homozygous or compound heterozygous mutation in the INTS11 gene on chromosome 1p36.</td>
+<td align="left">MONDO:0019502</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957910</td>
+<td align="left">primary progressive aphasia</td>
+<td align="left">DOID:0081388</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">primary progressive aphasia</td>
+<td align="left">A frontotemporal dementia that characterized by the progressive onset of language impairments, and gradual deterioration of these abilities over time, associated with atrophy of the language network of the brain, including frontal, temporal, and parietal regions of the left hemisphere. It is caused by a loss of tissue (atrophy) in the area of the brain that is responsible for producing language.</td>
+<td align="left">MONDO:0017276</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957911</td>
+<td align="left">corticobasal degeneration syndrome</td>
+<td align="left">DOID:0081392</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">corticobasal degeneration syndrome</td>
+<td align="left">A frontotemporal dementia that characterized by the loss of cognitive functions such as the ability to think, remember, or reason to the point that it interferes with a person's daily life and activities.</td>
+<td align="left">MONDO:0017276</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957912</td>
+<td align="left">organophosphate-induced delayed polyneuropathy</td>
+<td align="left">DOID:0081393</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">organophosphate-induced delayed polyneuropathy</td>
+<td align="left">An inflammatory and toxic neuropathy that is characaterized by a collection of neuropsychological symptoms associated with repeated organophosphate pesticide exposure as well as nerve agent exposure. Symptoms can appear weeks after exposure and include muscle weakness, anxiety, depression, psychosis as well as cognitive and memory deficits.</td>
+<td align="left">MONDO:0002336</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957913</td>
+<td align="left">caroli syndrome</td>
+<td align="left">DOID:0081394</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Caroli syndrome</td>
+<td align="left">A syndrome that is characterized by the presence of associated congenital hepatic fibrosis and that is associated with autosomal recessive polycystic kidney disease.</td>
+<td align="left">MONDO:0004634</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957914</td>
+<td align="left">harel-yoon syndrome</td>
+<td align="left">DOID:0081395</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Harel-Yoon syndrome</td>
+<td align="left">A syndrome that is characterized by delayed psychomotor development, intellectual disability, truncal hypotonia, spasticity, and peripheral neuropathy and that has_material_basis_in heterozygous mutation in the ATAD3A gene on chromosome 1p36.</td>
+<td align="left">MONDO:0006025</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957915</td>
+<td align="left">neonatal lethal pontocerebellar hypoplasia, hypotonia, and respiratory insufficiency syndrome</td>
+<td align="left">DOID:0081396</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neonatal lethal pontocerebellar hypoplasia, hypotonia, and respiratory insufficiency syndrome</td>
+<td align="left">A syndrome that is characterized in infants showing respiratory insufficiency and almost no spontaneous movement at birth, usually requiring mechanical ventilation and admission to the neonatal intensive care unit and that has_material_basis_in compound heterozygous mutation in the ATAD3A gene on chromosome 1p36.33.</td>
+<td align="left">MONDO:0002254</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957916</td>
+<td align="left">vissers-bodmer syndrome</td>
+<td align="left">DOID:0081397</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Vissers-Bodmer syndrome</td>
+<td align="left">A syndrome that is characterized by global developmental delay with variably impaired intellectual development, speech delay, motor delay, and behavioral abnormalities apparent from infancy and that has_material_basis_in heterozygous mutation in the CNOT1 gene on chromosome 16q21.</td>
+<td align="left">MONDO:0002254</td>
+</tr>
+<tr>
+<td align="left">MONDO:0957917</td>
+<td align="left">holoprosencephaly 12</td>
+<td align="left">DOID:0081398</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">holoprosencephaly 12</td>
+<td align="left">A holoprosencephaly that is characterized by abnormal separation of the embryonic forebrain resulting in dysmorphic facial features and often, but not always, impaired neurologic development and that has_material_basis_in heterozygous mutation in the CNOT1 gene on chromosome 16q21.</td>
+<td align="left">MONDO:0016296</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958140</td>
+<td align="left">developmental dysplasia of the hip</td>
+<td align="left">DOID:0060930</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">developmental dysplasia of the hip</td>
+<td align="left"></td>
+<td align="left">MONDO:0005497</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958141</td>
+<td align="left">familial multiple lipomatosis</td>
+<td align="left">DOID:0070518</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">familial multiple lipomatosis</td>
+<td align="left"></td>
+<td align="left">MONDO:0000426</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958142</td>
+<td align="left">early-onset vitamin b6-dependent epilepsy 4</td>
+<td align="left">DOID:0070519</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">early-onset vitamin B6-dependent epilepsy 4</td>
+<td align="left"></td>
+<td align="left">MONDO:0009945</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958143</td>
+<td align="left">peeling skin syndrome 1</td>
+<td align="left">DOID:0070520</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">peeling skin syndrome 1</td>
+<td align="left"></td>
+<td align="left">MONDO:0019347</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958144</td>
+<td align="left">peeling skin syndrome 2</td>
+<td align="left">DOID:0070521</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">peeling skin syndrome 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0019347</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958145</td>
+<td align="left">peeling skin syndrome 3</td>
+<td align="left">DOID:0070522</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">peeling skin syndrome 3</td>
+<td align="left"></td>
+<td align="left">MONDO:0019347</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958146</td>
+<td align="left">peeling skin syndrome 4</td>
+<td align="left">DOID:0070523</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">peeling skin syndrome 4</td>
+<td align="left"></td>
+<td align="left">MONDO:0019347</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958147</td>
+<td align="left">peeling skin syndrome 5</td>
+<td align="left">DOID:0070524</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">peeling skin syndrome 5</td>
+<td align="left"></td>
+<td align="left">MONDO:0019347</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958148</td>
+<td align="left">peeling skin syndrome 6</td>
+<td align="left">DOID:0070525</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">peeling skin syndrome 6</td>
+<td align="left"></td>
+<td align="left">MONDO:0019347</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958149</td>
+<td align="left">plack syndrome</td>
+<td align="left">DOID:0070526</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">PLACK syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0005093</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958150</td>
+<td align="left">borrelia miyamotoi disease</td>
+<td align="left">DOID:0070527</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Borrelia miyamotoi disease</td>
+<td align="left"></td>
+<td align="left">MONDO:0000314</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958151</td>
+<td align="left">cepacia syndrome</td>
+<td align="left">DOID:0070528</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">cepacia syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0000316</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958152</td>
+<td align="left">sifrim-hitz-weiss syndrome</td>
+<td align="left">DOID:0070529</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Sifrim-Hitz-Weiss syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0015802</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958153</td>
+<td align="left">foveal hypoplasia 1</td>
+<td align="left">DOID:0070530</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">foveal hypoplasia 1</td>
+<td align="left"></td>
+<td align="left">MONDO:0005283</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958154</td>
+<td align="left">foveal hypoplasia 2</td>
+<td align="left">DOID:0070531</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">foveal hypoplasia 2</td>
+<td align="left"></td>
+<td align="left">MONDO:0006025</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958155</td>
+<td align="left">aniridia 1</td>
+<td align="left">DOID:0070532</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">aniridia 1</td>
+<td align="left"></td>
+<td align="left">MONDO:0019172</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958156</td>
+<td align="left">autosomal dominant distal hereditary motor neuronopathy 10</td>
+<td align="left">DOID:0081399</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">autosomal dominant distal hereditary motor neuronopathy 10</td>
+<td align="left">An autosomal dominant distal hereditary motor neuronopathy that is characterized clinically by length-dependent motor neuropathy primarily affecting the lower limbs and that has_material_basis_in heterozygous mutation in the EMILIN1 gene on chromosome 2p23.</td>
+<td align="left">MONDO:0015362</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958157</td>
+<td align="left">autosomal dominant distal hereditary motor neuronopathy 11</td>
+<td align="left">DOID:0081400</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">autosomal dominant distal hereditary motor neuronopathy 11</td>
+<td align="left">An autosomal dominant distal hereditary motor neuronopathy that is characterized by juvenile or young-adult onset of distal limb muscle weakness and atrophy mainly affecting the lower limbs, resulting in gait instability and walking difficulties and that has_material_basis_in heterozygous mutation in the SPTAN1 gene on chromosome 9q34.</td>
+<td align="left">MONDO:0015362</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958158</td>
+<td align="left">autosomal dominant distal hereditary motor neuronopathy 13</td>
+<td align="left">DOID:0081401</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">autosomal dominant distal hereditary motor neuronopathy 13</td>
+<td align="left">An autosomal dominant distal hereditary motor neuronopathy that is characterized by distal muscle weakness and atrophy affecting both the upper and lower limbs, resulting in difficulty walking and poor fine hand motor skills and that has_material_basis_in heterozygous mutation in the BSCL2 gene on chromosome 11q12.</td>
+<td align="left">MONDO:0015362</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958159</td>
+<td align="left">sarcoma with bcor genetic alterations</td>
+<td align="left">DOID:0081402</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">sarcoma with BCOR genetic alterations</td>
+<td align="left">A small cell sarcoma that is characterized by the presence of small round or elongated malignant cells with a small amount of cytoplasm and the presence of BCOR genetic alterations.</td>
+<td align="left">MONDO:0006974</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958160</td>
+<td align="left">round cell sarcoma with ewsr1-non-ets fusion</td>
+<td align="left">DOID:0081406</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">round cell sarcoma with EWSR1-non-ETS fusion</td>
+<td align="left">A small cell sarcoma that is characterized by the presence of EWSR1 or FUS fusions involving partners unrelated to the ETS gene family.</td>
+<td align="left">MONDO:0006974</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958161</td>
+<td align="left">b acute lymphoblastic leukemia with pax5 p80r mutation</td>
+<td align="left">DOID:0081411</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">B acute lymphoblastic leukemia with PAX5 P80R mutation</td>
+<td align="left">A B-lymphoblastic leukemia/lymphoma that is associated with PAX5 P80R mutation.</td>
+<td align="left">MONDO:0004947</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958162</td>
+<td align="left">b acute lymphoblastic leukemia with dux4 rearrangement</td>
+<td align="left">DOID:0081412</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">B acute lymphoblastic leukemia with DUX4 rearrangement</td>
+<td align="left">A B lymphoblastic leukemia/lymphoma that is associated with DUX4 gene rearrangement.</td>
+<td align="left">MONDO:0004947</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958163</td>
+<td align="left">renal cell carcinoma with mit translocations</td>
+<td align="left">DOID:0081413</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">renal cell carcinoma with MiT translocations</td>
+<td align="left">A renal cell carcinoma that is characterized by papillary, alveolar and nested growth patterns with clear and eosinophilic cells and that is associated with translocations/gene fusions involving members of the MiT family of transcription factors.</td>
+<td align="left">MONDO:0005086</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958164</td>
+<td align="left">poorly differentiated chordoma</td>
+<td align="left">DOID:0081417</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">poorly differentiated chordoma</td>
+<td align="left">A chordoma that is characterized by loss of SMARCB1 expression and that is composed of sheets or nests of malignant epithelioid cells with abundant eosinophilic cytoplasm.</td>
+<td align="left">MONDO:0008978</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958165</td>
+<td align="left">anaplastic sarcoma of the kidney</td>
+<td align="left">DOID:0081418</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">anaplastic sarcoma of the kidney</td>
+<td align="left">A kidney sarcoma that is characterized by a proliferation of anaplastic spindle cells with bizarre, pleomorphic nuclei and atypical mitotic figures.</td>
+<td align="left">MONDO:0002930</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958166</td>
+<td align="left">childhood-onset dystonia with optic atrophy and basal ganglia abnormalities</td>
+<td align="left">DOID:0081419</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">childhood-onset dystonia with optic atrophy and basal ganglia abnormalities</td>
+<td align="left">A dystonia that is characterized by characterized by onset of involuntary movements in the first decade of life and that has_material_basis_in homozygous or compound heterozygous mutation in the MECR gene on chromosome 1p35.  Optic atrophy develops around the same time or slightly later.</td>
+<td align="left">MONDO:0003441</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958167</td>
+<td align="left">familial focal epilepsy with variable foci</td>
+<td align="left">DOID:0081420</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">familial focal epilepsy with variable foci</td>
+<td align="left">A focal epilepsy that is characterized by focal seizures, with seizure onset in a discrete area of the brain including the temporal, frontal, parietal, and occipital lobes, with focal seizures arising from different cortical regions in different family members.</td>
+<td align="left">MONDO:0000426</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958168</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 6</td>
+<td align="left">DOID:0081425</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 6</td>
+<td align="left">An autosomal recessive distal hereditary motor neuronopathy characterized by onset of distal muscle weakness in early infancy and that has_material_basis_in homozygous mutation in the REEP1 gene on chromosome 2p11.</td>
+<td align="left">MONDO:0015363</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958169</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 7</td>
+<td align="left">DOID:0081426</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 7</td>
+<td align="left">An autosomal recessive distal hereditary motor neuronopathy characterized by onset of lower leg weakness in the first decade and that has_material_basis_in homozygous or compound heterozygous mutation in the VWA1 gene on chromosome 1p36.</td>
+<td align="left">MONDO:0015363</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958170</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 8</td>
+<td align="left">DOID:0081427</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 8</td>
+<td align="left">An autosomal recessive distal hereditary motor neuronopathy characterized by onset of distal muscle weakness mainly affecting the lower limbs and resulting in difficulty walking and that has_material_basis_in homozygous or compound heterozygous mutation in the SORD gene on chromosome 15q21.</td>
+<td align="left">MONDO:0015363</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958171</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 9</td>
+<td align="left">DOID:0081428</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 9</td>
+<td align="left">An autosomal recessive distal hereditary motor neuronopathy characterized by  juvenile onset of distal muscle weakness and atrophy, resulting in gait difficulties and that has_material_basis_in homozygous or compound heterozygous mutation in the COQ7 gene on chromosome 16p12.</td>
+<td align="left">MONDO:0015363</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958172</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 10</td>
+<td align="left">DOID:0081429</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">autosomal recessive distal hereditary motor neuronopathy 10</td>
+<td align="left">An autosomal recessive distal hereditary motor neuronopathy characterized by distal muscle weakness and atrophy predominantly affecting the lower limbs and resulting in gait abnormalities and that has_material_basis_in homozygous or compound heterozygous mutation in the VRK1 gene on chromosome 14q32.</td>
+<td align="left">MONDO:0015363</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958208</td>
+<td align="left">developmental delay, dysmorphic facies, and brain anomalies</td>
+<td align="left">DOID:0060933</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">developmental delay, dysmorphic facies, and brain anomalies</td>
+<td align="left"></td>
+<td align="left">MONDO:0015802</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958209</td>
+<td align="left">neurodevelopmental disorder with microcephaly, epilepsy, and brain atrophy</td>
+<td align="left">DOID:0060934</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neurodevelopmental disorder with microcephaly, epilepsy, and brain atrophy</td>
+<td align="left"></td>
+<td align="left">MONDO:0019502</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958210</td>
+<td align="left">infantile hypotonia with psychomotor retardation and characteristic facies-3</td>
+<td align="left">DOID:0060935</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">infantile hypotonia with psychomotor retardation and characteristic facies-3</td>
+<td align="left"></td>
+<td align="left">MONDO:0019502</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958211</td>
+<td align="left">long qt syndrome 16</td>
+<td align="left">DOID:0070533</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">long QT syndrome 16</td>
+<td align="left"></td>
+<td align="left">MONDO:0002442</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958212</td>
+<td align="left">arrhythmogenic left ventricular cardiomyopathy</td>
+<td align="left">DOID:0070534</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">arrhythmogenic left ventricular cardiomyopathy</td>
+<td align="left"></td>
+<td align="left">MONDO:0000591</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958213</td>
+<td align="left">arrhythmogenic biventricular cardiomyopathy</td>
+<td align="left">DOID:0070535</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">arrhythmogenic biventricular cardiomyopathy</td>
+<td align="left"></td>
+<td align="left">MONDO:0000591</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958214</td>
+<td align="left">neurodevelopmental disorder with hypotonia, language delay, and skeletal defects with or without seizures</td>
+<td align="left">DOID:0070536</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">neurodevelopmental disorder with hypotonia, language delay, and skeletal defects with or without seizures</td>
+<td align="left"></td>
+<td align="left">MONDO:0015802</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958215</td>
+<td align="left">spastic tetraplegia, thin corpus callosum, and progressive microcephaly</td>
+<td align="left">DOID:0070537</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">spastic tetraplegia, thin corpus callosum, and progressive microcephaly</td>
+<td align="left"></td>
+<td align="left">MONDO:0019502</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958216</td>
+<td align="left">syndromic x-linked intellectual developmental disorder bain type</td>
+<td align="left">DOID:0070538</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">syndromic X-linked intellectual developmental disorder bain type</td>
+<td align="left"></td>
+<td align="left">MONDO:0020119</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958217</td>
+<td align="left">intellectual developmental disorder with autistic features and language delay, with or without seizures</td>
+<td align="left">DOID:0081430</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">intellectual developmental disorder with autistic features and language delay, with or without seizures</td>
+<td align="left">An autosomal dominant intellectual developmental disorder that is characterized by global developmental delay, variable intellectual disability, impaired speech development, and behavioral abnormalities, most commonly on the autism spectrum and that has_material_basis_in heterozygous mutation in the TANC2 gene on chromosome 17q23.</td>
+<td align="left">MONDO:0015802</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958218</td>
+<td align="left">long qt syndrome 8</td>
+<td align="left">DOID:0110649</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">long QT syndrome 8</td>
+<td align="left"></td>
+<td align="left">MONDO:0002442</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>

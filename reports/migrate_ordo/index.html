@@ -1,0 +1,1567 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Migrate ordo - Mondo Disease Ontology Ingest</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ordo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-header__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mondo Disease Ontology Ingest
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Migrate ordo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-nav__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Mondo Disease Ontology Ingest
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        Cite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        History
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          How-to guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How-to guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          How-to guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1" tabindex="0" aria-expanded="false">
+          Standard ODK workflows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Standard ODK workflows" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Standard ODK workflows
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        Editors Workflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        Release Workflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepoManagement/" class="md-nav__link">
+        Manage your ODK Repository
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        Setting up Docker for ODK
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/UpdateImports/" class="md-nav__link">
+        Imports management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        Managing the documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        Continuous Integration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        Your ODK Repository Overview
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        Mapping progress report
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" tabindex="0" aria-expanded="false">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_1" tabindex="0" aria-expanded="false">
+          Developers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/workflows/" class="md-nav__link">
+        Workflows
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        Mondo sources: Mapping progress report
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapped_deprecated/" class="md-nav__link">
+        Mondo sources: Deprecated terms w/ Mondo xrefs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4" tabindex="0" aria-expanded="false">
+          Mondo sources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mondo sources" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Mondo sources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/doid/" class="md-nav__link">
+        DO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/gard/" class="md-nav__link">
+        GARD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10cm/" class="md-nav__link">
+        ICD10CM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10who/" class="md-nav__link">
+        ICD10WHO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ncit/" class="md-nav__link">
+        NCIT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/omim/" class="md-nav__link">
+        OMIM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ordo/" class="md-nav__link">
+        ORDO
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_5" tabindex="0" aria-expanded="false">
+          Mondo source metrics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mondo source metrics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          Mondo source metrics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/doid/" class="md-nav__link">
+        DO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/gard/" class="md-nav__link">
+        GARD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10cm/" class="md-nav__link">
+        ICD10CM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10who/" class="md-nav__link">
+        ICD10WHO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ncit/" class="md-nav__link">
+        NCIT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/omim/" class="md-nav__link">
+        OMIM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ordo/" class="md-nav__link">
+        ORDO
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ordo" class="md-nav__link">
+    ORDO
+  </a>
+  
+    <nav class="md-nav" aria-label="ORDO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migratable-terms" class="md-nav__link">
+    Migratable terms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Migrate ordo</h1>
+
+<h2 id="ordo">ORDO</h2>
+<p><a href="https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/slurp/ordo.tsv">Interactive FlatGithub table</a></p>
+<h3 id="migratable-terms">Migratable terms</h3>
+<table>
+<thead>
+<tr>
+<th align="left">mondo_id</th>
+<th align="left">mondo_label</th>
+<th align="left">xref</th>
+<th align="left">xref_source</th>
+<th align="left">original_label</th>
+<th align="left">definition</th>
+<th align="left">parents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ID</td>
+<td align="left">LABEL</td>
+<td align="left">A oboInOwl:hasDbXref</td>
+<td align="left">&gt;A oboInOwl:source SPLIT=</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">A IAO:0000115</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958045</td>
+<td align="left">unclassified autoinflammatory syndrome of childhood</td>
+<td align="left">Orphanet:324953</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Unclassified autoinflammatory syndrome of childhood</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958046</td>
+<td align="left">unexplained periodic fever syndrome of childhood</td>
+<td align="left">Orphanet:324960</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Unexplained periodic fever syndrome of childhood</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958053</td>
+<td align="left">syndromic chorioretinal dystrophy</td>
+<td align="left">Orphanet:519321</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Syndromic chorioretinal dystrophy</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958071</td>
+<td align="left">hao-fountain syndrome due to usp7 mutation</td>
+<td align="left">Orphanet:643538</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Hao-Fountain syndrome due to USP7 mutation</td>
+<td align="left"></td>
+<td align="left">MONDO:0014805</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958073</td>
+<td align="left">open spinal dysraphism with a posterior meningocele</td>
+<td align="left">Orphanet:645270</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Open spinal dysraphism with a posterior meningocele</td>
+<td align="left">A rare dysraphism characterized by absence of skin covering, the neural elements are exposed to the external environment and there is herniation of a cerebrospinal fluid filled sac through a posterior spina bifida. It is typically located in the lumbosacral region. Evidence of complete or partial Chiari II malformation is present.</td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958075</td>
+<td align="left">intramedullary non-dysraphic spinal cord lipoma</td>
+<td align="left">Orphanet:645359</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Intramedullary non-dysraphic spinal cord lipoma</td>
+<td align="left">A very rare non-dysraphic spinal cord lipoma characterized by being located within the spinal cord. There is no defect in the overlying dura.</td>
+<td align="left">MONDO:0001790</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958076</td>
+<td align="left">myeloschisis</td>
+<td align="left">Orphanet:645398</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Myeloschisis</td>
+<td align="left">A rare form of spina bifida/open neural tube defect (NTD) chacterized by absence of a cystic component, dysplastic meninges and neural placode exposed through a defect in the posterior vertebral arches (spina bifida) that are contiguous with surrounding skin. The placode is at or below the skin plane and is typically associated with a Chiari II malformation. It is usually isolated or rarely associated with split cord malformation.</td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958077</td>
+<td align="left">collagen vi-related congenital muscular dystrophy</td>
+<td align="left">Orphanet:646098</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Collagen VI-related congenital muscular dystrophy</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958082</td>
+<td align="left">slc40a1-related hemochromatosis</td>
+<td align="left">Orphanet:647834</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">SLC40A1-related hemochromatosis</td>
+<td align="left">A form of rare hemochromatosis (HC) characterized by increased transferrin saturation and hepatocellular iron deposition with distribution patterns and clinical features indistinguishable from patients with other types of HC.</td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958085</td>
+<td align="left">digenic hemochromatosis</td>
+<td align="left">Orphanet:648581</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Digenic hemochromatosis</td>
+<td align="left">A rare subtype of hemochromatosis characterized by the combination of pathogenic variants in two genes involved in iron metabolism (usually a combination of HFE and non-HFE mutations), where the classical HFE-related hemochromatosis is not enough to fully explain the clinical picture of the patient.</td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958092</td>
+<td align="left">periodic fever-immunodeficiency-thrombocytopenia syndrome</td>
+<td align="left">Orphanet:652522</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Periodic fever-immunodeficiency-thrombocytopenia syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0018795</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958093</td>
+<td align="left">non-syndromic supernumerary kidneys</td>
+<td align="left">Orphanet:652528</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Non-syndromic supernumerary kidneys</td>
+<td align="left"></td>
+<td align="left">MONDO:0019720</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958095</td>
+<td align="left">nodal t-follicular helper cell lymphoma, follicular type</td>
+<td align="left">Orphanet:652650</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Nodal T-follicular helper cell lymphoma, follicular type</td>
+<td align="left"></td>
+<td align="left">MONDO:0015760</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958096</td>
+<td align="left">monomorphic epitheliotropic intestinal t-cell lymphoma</td>
+<td align="left">Orphanet:652658</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Monomorphic epitheliotropic intestinal T-cell lymphoma</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958097</td>
+<td align="left">primary superior vena cava aneurysm</td>
+<td align="left">Orphanet:652668</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Primary superior vena cava aneurysm</td>
+<td align="left"></td>
+<td align="left">MONDO:0019829</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958098</td>
+<td align="left">primary inferior vena cava aneurysm</td>
+<td align="left">Orphanet:652678</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Primary inferior vena cava aneurysm</td>
+<td align="left"></td>
+<td align="left">MONDO:0019830</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958099</td>
+<td align="left">idiopathic subglottic stenosis</td>
+<td align="left">Orphanet:652681</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Idiopathic subglottic stenosis</td>
+<td align="left"></td>
+<td align="left">MONDO:0020017</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958101</td>
+<td align="left">lymphocytic mastitis</td>
+<td align="left">Orphanet:653698</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Lymphocytic mastitis</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958104</td>
+<td align="left">digenic alport syndrome</td>
+<td align="left">Orphanet:653722</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Digenic Alport syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:8000031</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958107</td>
+<td align="left">x-linked combined immunodeficiency due to sash3 deficiency</td>
+<td align="left">Orphanet:653751</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">X-linked combined immunodeficiency due to SASH3 deficiency</td>
+<td align="left"></td>
+<td align="left">MONDO:0018814</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958108</td>
+<td align="left">jansen-de vries syndrome</td>
+<td align="left">Orphanet:653767</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Jansen-de Vries syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0000001</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958111</td>
+<td align="left">pbx1-related congenital anomalies of kidney and urinary tract syndrome</td>
+<td align="left">Orphanet:656130</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">PBX1-related congenital anomalies of kidney and urinary tract syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0000001</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958113</td>
+<td align="left">hypotonia-hypoventilation-intellectual disability-dysautonomia-epilepsy-eye abnormalities syndrome</td>
+<td align="left">Orphanet:656273</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Hypotonia-hypoventilation-intellectual disability-dysautonomia-epilepsy-eye abnormalities syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958122</td>
+<td align="left">idiopathic small fibers neuropathy</td>
+<td align="left">Orphanet:658549</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Idiopathic small fibers neuropathy</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958123</td>
+<td align="left">isolated pulmonary artery sling</td>
+<td align="left">Orphanet:658574</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Isolated pulmonary artery sling</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958125</td>
+<td align="left">eyelid sebaceous carcinoma</td>
+<td align="left">Orphanet:658590</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Eyelid sebaceous carcinoma</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958128</td>
+<td align="left">non-transplant-related bronchiolitis obliterans</td>
+<td align="left">Orphanet:658612</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Non-transplant-related bronchiolitis obliterans</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958129</td>
+<td align="left">coq7-related distal hereditary motor neuropathy</td>
+<td align="left">Orphanet:658778</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">COQ7-related distal hereditary motor neuropathy</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958130</td>
+<td align="left">greig cephalopolysyndactyly-contiguous gene syndrome</td>
+<td align="left">Orphanet:658805</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Greig cephalopolysyndactyly-contiguous gene syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0015161</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958132</td>
+<td align="left">methylenetetrahydrofolate dehydrogenase 1 deficiency</td>
+<td align="left">Orphanet:658813</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Methylenetetrahydrofolate dehydrogenase 1 deficiency</td>
+<td align="left"></td>
+<td align="left">MONDO:0020111</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958133</td>
+<td align="left">developmental delay-ataxia-hypotonia-facial dysmorphism syndrome</td>
+<td align="left">Orphanet:658843</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Developmental delay-ataxia-hypotonia-facial dysmorphism syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0035863</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958137</td>
+<td align="left">early-onset autoimmune disorder due to dock11 partial deficiency</td>
+<td align="left">Orphanet:658946</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Early-onset autoimmune disorder due to DOCK11 partial deficiency</td>
+<td align="left"></td>
+<td align="left">MONDO:0026166</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958138</td>
+<td align="left">early-onset immune dysregulation due to dock11 complete deficiency</td>
+<td align="left">Orphanet:658951</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Early-onset immune dysregulation due to DOCK11 complete deficiency</td>
+<td align="left"></td>
+<td align="left">MONDO:0015710</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958244</td>
+<td align="left">rare inflammatory/autoimmune corneal disorder</td>
+<td align="left">Orphanet:519290</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Rare inflammatory/autoimmune corneal disorder</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958245</td>
+<td align="left">rare trochlear nerve disorder</td>
+<td align="left">Orphanet:519353</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Rare trochlear nerve disorder</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958246</td>
+<td align="left">rare genetic optic nerve disorder</td>
+<td align="left">Orphanet:522512</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Rare genetic optic nerve disorder</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958247</td>
+<td align="left">rare genetic disorder with strabismus</td>
+<td align="left">Orphanet:522518</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Rare genetic disorder with strabismus</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958248</td>
+<td align="left">rare genetic neuromuscular disorder with ocular motility/alignment anomaly</td>
+<td align="left">Orphanet:522522</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Rare genetic neuromuscular disorder with ocular motility/alignment anomaly</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958249</td>
+<td align="left">rare genetic eyelid malposition disorder</td>
+<td align="left">Orphanet:522528</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Rare genetic eyelid malposition disorder</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958250</td>
+<td align="left">lacrimal drainage system anomaly of genetic origin</td>
+<td align="left">Orphanet:522534</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Lacrimal drainage system anomaly of genetic origin</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958251</td>
+<td align="left">syndromic genetic cataract</td>
+<td align="left">Orphanet:522548</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Syndromic genetic cataract</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958252</td>
+<td align="left">syndromic genetic ectopia lentis</td>
+<td align="left">Orphanet:522554</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Syndromic genetic ectopia lentis</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958253</td>
+<td align="left">genetic corneal dystrophy</td>
+<td align="left">Orphanet:522560</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Genetic corneal dystrophy</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958254</td>
+<td align="left">syndromic genetic keratoconus</td>
+<td align="left">Orphanet:522564</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Syndromic genetic keratoconus</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958255</td>
+<td align="left">rare genetic inflammatory/autoimmune corneal disorder</td>
+<td align="left">Orphanet:522566</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Rare genetic inflammatory/autoimmune corneal disorder</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958256</td>
+<td align="left">pass syndrome</td>
+<td align="left">Orphanet:641385</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">PASS syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958257</td>
+<td align="left">psapash syndrome</td>
+<td align="left">Orphanet:641390</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">PsAPASH syndrome</td>
+<td align="left"></td>
+<td align="left">MONDO:0000001</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958258</td>
+<td align="left">cushing syndrome due to cortisol-producing adrenocortical adenoma</td>
+<td align="left">Orphanet:642788</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Cushing syndrome due to cortisol-producing adrenocortical adenoma</td>
+<td align="left"></td>
+<td align="left">MONDO:0020529</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958259</td>
+<td align="left">dysraphism with stalk</td>
+<td align="left">Orphanet:645193</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Dysraphism with stalk</td>
+<td align="left">A rare group of closed spinal dysraphisms characterized by the presence of a stalk connecting the skin to the underlying spinal cord. The stalk contains variable combinations of non-functional neural tissue, fibrous mesenchymal tissue, and dermal/epidermal elements.</td>
+<td align="left">MONDO:0000859</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958260</td>
+<td align="left">dysraphic spinal cord lipoma</td>
+<td align="left">Orphanet:645273</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Dysraphic spinal cord lipoma</td>
+<td align="left">A rare group of spinal cord lipoma characterized by the presence of extramedullary lipomatous mass located at any point along the spinal cord with or without a dural defect.</td>
+<td align="left">MONDO:0001790</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958261</td>
+<td align="left">fibrolipomatous filum anomaly</td>
+<td align="left">Orphanet:645279</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Fibrolipomatous filum anomaly</td>
+<td align="left">A rare group of malformation characterized by the infiltration of fibrous-fatty tissue in the filum terminale with resultant thickening. The tip of the conus can be normal (pointed) or abnormal (blunted).</td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958262</td>
+<td align="left">isolated primary pigmented nodular adrenocortical disease</td>
+<td align="left">Orphanet:647772</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Isolated primary pigmented nodular adrenocortical disease</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958263</td>
+<td align="left">isolated micronodular adrenocortical disease</td>
+<td align="left">Orphanet:647782</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Isolated micronodular adrenocortical disease</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958264</td>
+<td align="left">infectious scleritis</td>
+<td align="left">Orphanet:648665</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Infectious scleritis</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958265</td>
+<td align="left">idiopathic scleritis</td>
+<td align="left">Orphanet:648675</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Idiopathic scleritis</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958266</td>
+<td align="left">immune-mediated scleritis</td>
+<td align="left">Orphanet:648681</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Immune-mediated scleritis</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958267</td>
+<td align="left">non-syndromic bridging bronchus</td>
+<td align="left">Orphanet:648992</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Non-syndromic bridging bronchus</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958268</td>
+<td align="left">non-syndromic congenital bronchial atresia</td>
+<td align="left">Orphanet:649010</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Non-syndromic congenital bronchial atresia</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958269</td>
+<td align="left">isolated left bronchial isomerism</td>
+<td align="left">Orphanet:649029</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Isolated left bronchial isomerism</td>
+<td align="left"></td>
+<td align="left">MONDO:8000034</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958270</td>
+<td align="left">central precocious puberty in male</td>
+<td align="left">Orphanet:649929</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Central precocious puberty in male</td>
+<td align="left"></td>
+<td align="left">MONDO:0019165</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958271</td>
+<td align="left">rare central precocious puberty in female</td>
+<td align="left">Orphanet:650070</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Rare central precocious puberty in female</td>
+<td align="left"></td>
+<td align="left">MONDO:0019165</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958272</td>
+<td align="left">genetic autoinflammatory syndrome with acne and/or hidradenitis suppurativa</td>
+<td align="left">Orphanet:652510</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Genetic autoinflammatory syndrome with acne and/or hidradenitis suppurativa</td>
+<td align="left"></td>
+<td align="left">MONDO:8000033</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958273</td>
+<td align="left">cleft palate-congenital heart defect-intellectual disability syndrome due to meis2 mutation</td>
+<td align="left">Orphanet:652514</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Cleft palate-congenital heart defect-intellectual disability syndrome due to MEIS2 mutation</td>
+<td align="left"></td>
+<td align="left">MONDO:0958091</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958274</td>
+<td align="left">benign atrophic papulosis</td>
+<td align="left">Orphanet:656085</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Benign atrophic papulosis</td>
+<td align="left"></td>
+<td align="left">MONDO:0958110</td>
+</tr>
+<tr>
+<td align="left">MONDO:0958275</td>
+<td align="left">segmental spinal dysgenesis</td>
+<td align="left">Orphanet:656126</td>
+<td align="left">MONDO:equivalentTo</td>
+<td align="left">Segmental spinal dysgenesis</td>
+<td align="left"></td>
+<td align="left">MONDO:0000859</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>
