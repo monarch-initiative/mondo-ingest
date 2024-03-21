@@ -111,7 +111,8 @@ def slurp(
     # Determine slurpable / migratable terms
     # To be migratable, the term (i) must not already be mapped, (ii) must not be excluded (e.g. not in
     # `reports/%_term_exclusions.txt`), and (iii) must not be deprecated / obsolete. Then, unless
-    # `parent_conditions_off`, will also (iv) `_check_parent_conditions()`.
+    # `parent_conditions_off`, will also (iv) check parent conditions. For information about parent conditions, see the
+    # help text for `--parent-conditions-off`.
     terms_to_slurp: List[Dict[str, str]] = []
     slurp_candidates = [t for t in slurp_candidates if _valid_parent_conditions(
         t.direct_owned_parent_curies, mapped, excluded, obsolete)] if not parent_conditions_off else slurp_candidates
