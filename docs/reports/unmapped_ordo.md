@@ -2,158 +2,112 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/ordo_mapping_status.tsv)
 
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id      | subject_label                                                                                      |
-|:----------------|:---------------------------------------------------------------------------------------------------|
-| Orphanet:409975 | 1-5 / 10 000                                                                                       |
-| Orphanet:409976 | 1-9 / 1 000 000                                                                                    |
-| Orphanet:409977 | 1-9 / 100 000                                                                                      |
-| Orphanet:409978 | 6-9 / 10 000                                                                                       |
-| Orphanet:409979 | <1 / 1 000 000                                                                                     |
-| Orphanet:409980 | >1 / 1000                                                                                          |
-| Orphanet:656085 | Benign atrophic papulosis                                                                          |
-| Orphanet:658778 | COQ7-related distal hereditary motor neuropathy                                                    |
-| Orphanet:649929 | Central precocious puberty in male                                                                 |
-| Orphanet:645285 | Chaotic conus spinal cord lipoma                                                                   |
-| Orphanet:652514 | Cleft palate-congenital heart defect-intellectual disability syndrome due to MEIS2 mutation        |
-| Orphanet:646098 | Collagen VI-related congenital muscular dystrophy                                                  |
-| Orphanet:522514 | Congenital optic disc excavation of genetic origin                                                 |
-| Orphanet:645367 | Conus spinal cord lipoma                                                                           |
-| Orphanet:642788 | Cushing syndrome due to cortisol-producing adrenocortical adenoma                                  |
-| Orphanet:658843 | Developmental delay-ataxia-hypotonia-facial dysmorphism syndrome                                   |
-| Orphanet:653722 | Digenic Alport syndrome                                                                            |
-| Orphanet:648581 | Digenic hemochromatosis                                                                            |
-| Orphanet:519337 | Disorder with optic nerve compression                                                              |
-| Orphanet:645362 | Dorsal spinal cord lipoma                                                                          |
-| Orphanet:645273 | Dysraphic spinal cord lipoma                                                                       |
-| Orphanet:645193 | Dysraphism with stalk                                                                              |
-| Orphanet:658946 | Early-onset autoimmune disorder due to DOCK11 partial deficiency                                   |
-| Orphanet:658951 | Early-onset immune dysregulation due to DOCK11 complete deficiency                                 |
-| Orphanet:645297 | Extramedullary conus spinal cord lipoma                                                            |
-| Orphanet:658590 | Eyelid sebaceous carcinoma                                                                         |
-| Orphanet:645279 | Fibrolipomatous filum anomaly                                                                      |
-| Orphanet:645310 | Fibroneural non-saccular limited dorsal myeloschisis                                               |
-| Orphanet:652510 | Genetic autoinflammatory syndrome with acne and/or hidradenitis suppurativa                        |
-| Orphanet:650077 | Genetic central precocious puberty in female                                                       |
-| Orphanet:650097 | Genetic central precocious puberty in male                                                         |
-| Orphanet:522560 | Genetic corneal dystrophy                                                                          |
-| Orphanet:522562 | Genetic superficial corneal dystrophy                                                              |
-| Orphanet:658805 | Greig cephalopolysyndactyly-contiguous gene syndrome                                               |
-| Orphanet:643538 | Hao-Fountain syndrome due to USP7 mutation                                                         |
-| Orphanet:645393 | Hemi-myeloschisis                                                                                  |
-| Orphanet:656273 | Hypotonia-hypoventilation-intellectual disability-dysautonomia-epilepsy-eye abnormalities syndrome |
-| Orphanet:648675 | Idiopathic scleritis                                                                               |
-| Orphanet:658549 | Idiopathic small fibers neuropathy                                                                 |
-| Orphanet:652681 | Idiopathic subglottic stenosis                                                                     |
-| Orphanet:648681 | Immune-mediated scleritis                                                                          |
-| Orphanet:648665 | Infectious scleritis                                                                               |
-| Orphanet:646113 | Intermediate collagen VI-related muscular dystrophy                                                |
-| Orphanet:645359 | Intramedullary non-dysraphic spinal cord lipoma                                                    |
-| Orphanet:645325 | Isolated filum lipoma                                                                              |
-| Orphanet:649029 | Isolated left bronchial isomerism                                                                  |
-| Orphanet:647782 | Isolated micronodular adrenocortical disease                                                       |
-| Orphanet:637064 | Isolated optic nerve aplasia                                                                       |
-| Orphanet:647772 | Isolated primary pigmented nodular adrenocortical disease                                          |
-| Orphanet:658574 | Isolated pulmonary artery sling                                                                    |
-| Orphanet:645322 | Isolated transitional filum lipoma                                                                 |
-| Orphanet:653767 | Jansen-de Vries syndrome                                                                           |
-| Orphanet:522534 | Lacrimal drainage system anomaly of genetic origin                                                 |
-| Orphanet:645196 | Limited dorsal myeloschisis                                                                        |
-| Orphanet:645300 | Lipomatous non-saccular limited dorsal myeloschisis                                                |
-| Orphanet:653698 | Lymphocytic mastitis                                                                               |
-| Orphanet:658813 | Methylenetetrahydrofolate dehydrogenase 1 deficiency                                               |
-| Orphanet:652658 | Monomorphic epitheliotropic intestinal T-cell lymphoma                                             |
-| Orphanet:645378 | Myelic limited dorsal malformation                                                                 |
-| Orphanet:645398 | Myeloschisis                                                                                       |
-| Orphanet:652650 | Nodal T-follicular helper cell lymphoma, follicular type                                           |
-| Orphanet:650102 | Non-genetic central precocious puberty in male                                                     |
-| Orphanet:645343 | Non-saccular limited dorsal myeloschisis                                                           |
-| Orphanet:648992 | Non-syndromic bridging bronchus                                                                    |
-| Orphanet:649010 | Non-syndromic congenital bronchial atresia                                                         |
-| Orphanet:652528 | Non-syndromic supernumerary kidneys                                                                |
-| Orphanet:658612 | Non-transplant-related bronchiolitis obliterans                                                    |
-| Orphanet:645270 | Open spinal dysraphism with a posterior meningocele                                                |
-| Orphanet:641380 | PAPASH syndrome                                                                                    |
-| Orphanet:641385 | PASS syndrome                                                                                      |
-| Orphanet:656130 | PBX1-related congenital anomalies of kidney and urinary tract syndrome                             |
-| Orphanet:652522 | Periodic fever-immunodeficiency-thrombocytopenia syndrome                                          |
-| Orphanet:645294 | Posterior extramedullary conus spinal cord lipoma                                                  |
-| Orphanet:650087 | Primary central precocious puberty in male                                                         |
-| Orphanet:652678 | Primary inferior vena cava aneurysm                                                                |
-| Orphanet:652668 | Primary superior vena cava aneurysm                                                                |
-| Orphanet:641390 | PsAPASH syndrome                                                                                   |
-| Orphanet:650070 | Rare central precocious puberty in female                                                          |
-| Orphanet:522530 | Rare genetic disorder with entropion                                                               |
-| Orphanet:522518 | Rare genetic disorder with strabismus                                                              |
-| Orphanet:522528 | Rare genetic eyelid malposition disorder                                                           |
-| Orphanet:522566 | Rare genetic inflammatory/autoimmune corneal disorder                                              |
-| Orphanet:522522 | Rare genetic neuromuscular disorder with ocular motility/alignment anomaly                         |
-| Orphanet:522512 | Rare genetic optic nerve disorder                                                                  |
-| Orphanet:519290 | Rare inflammatory/autoimmune corneal disorder                                                      |
-| Orphanet:519353 | Rare trochlear nerve disorder                                                                      |
-| Orphanet:645334 | Retained medullary cord                                                                            |
-| Orphanet:647834 | SLC40A1-related hemochromatosis                                                                    |
-| Orphanet:645354 | Saccular limited dorsal myeloschisis                                                               |
-| Orphanet:645319 | Saccular spinal dysraphism with a stalk to the dome                                                |
-| Orphanet:650082 | Secondary central precocious puberty in female                                                     |
-| Orphanet:650092 | Secondary central precocious puberty in male                                                       |
-| Orphanet:656126 | Segmental spinal dysgenesis                                                                        |
-| Orphanet:645188 | Spinal dermal sinus                                                                                |
-| Orphanet:519321 | Syndromic chorioretinal dystrophy                                                                  |
-| Orphanet:522548 | Syndromic genetic cataract                                                                         |
-| Orphanet:522520 | Syndromic genetic disorder with strabismus                                                         |
-| Orphanet:522554 | Syndromic genetic ectopia lentis                                                                   |
-| Orphanet:522564 | Syndromic genetic keratoconus                                                                      |
-| Orphanet:645288 | Terminal extramedullary conus spinal cord lipoma                                                   |
-| Orphanet:645337 | Terminal myelocystocele                                                                            |
-| Orphanet:645291 | Transitional extramedullary conus spinal cord lipoma                                               |
-| Orphanet:645401 | True myeloschisis                                                                                  |
-| Orphanet:324953 | Unclassified autoinflammatory syndrome of childhood                                                |
-| Orphanet:324960 | Unexplained periodic fever syndrome of childhood                                                   |
-| Orphanet:409981 | Unknown_epidemiological_range                                                                      |
-| Orphanet:653751 | X-linked combined immunodeficiency due to SASH3 deficiency                                         |
-| Orphanet:409934 | X-linked dominant                                                                                  |
-| Orphanet:409932 | X-linked recessive                                                                                 |
-| Orphanet:409938 | Y-linked                                                                                           |
-| Orphanet:409947 | adolescent                                                                                         |
-| Orphanet:409948 | adult                                                                                              |
-| Orphanet:C023   | age of onset                                                                                       |
-| Orphanet:409950 | all ages                                                                                           |
-| Orphanet:409967 | annual incidence                                                                                   |
-| Orphanet:409943 | antenatal                                                                                          |
-| Orphanet:409929 | autosomal dominant                                                                                 |
-| Orphanet:409930 | autosomal recessive                                                                                |
-| Orphanet:409968 | birth prevalence                                                                                   |
-| Orphanet:409973 | case                                                                                               |
-| Orphanet:409970 | cases/families                                                                                     |
-| Orphanet:557495 | category                                                                                           |
-| Orphanet:409946 | childhood                                                                                          |
-| Orphanet:377794 | clinical group                                                                                     |
-| Orphanet:377796 | clinical subtype                                                                                   |
-| Orphanet:409949 | elderly                                                                                            |
-| Orphanet:C003   | epidemiology                                                                                       |
-| Orphanet:377795 | etiological subtype                                                                                |
-| Orphanet:409974 | family                                                                                             |
-| Orphanet:C009   | geography                                                                                          |
-| Orphanet:C032   | has_annual_incidence_average_value                                                                 |
-| Orphanet:C020   | has_annual_incidence_range                                                                         |
-| Orphanet:C029   | has_birth_prevalence_average_value                                                                 |
-| Orphanet:C026   | has_birth_prevalence_range                                                                         |
-| Orphanet:C024   | has_cases/families_value                                                                           |
-| Orphanet:C030   | has_lifetime_prevalence_average_value                                                              |
-| Orphanet:C027   | has_lifetime_prevalence_range                                                                      |
-| Orphanet:C028   | has_point_prevalence_average_value                                                                 |
-| Orphanet:C025   | has_point_prevalence_range                                                                         |
-| Orphanet:377797 | histopathological subtype                                                                          |
-| Orphanet:409945 | infancy                                                                                            |
-| Orphanet:C005   | inheritance                                                                                        |
-| Orphanet:409969 | lifetime prevalence                                                                                |
-| Orphanet:409933 | mitochondrial                                                                                      |
-| Orphanet:409931 | multigenic/multifactorial                                                                          |
-| Orphanet:409944 | neonatal                                                                                           |
-| Orphanet:409951 | no age of onset data available                                                                     |
-| Orphanet:409940 | no inheritance data available                                                                      |
-| Orphanet:409936 | oligogenic                                                                                         |
-| Orphanet:409966 | point prevalence                                                                                   |
-| Orphanet:C004   | prevalence                                                                                         |
-| Orphanet:409937 | semi-dominant                                                                                      |
-| Orphanet:409939 | unknown inheritance                                                                                |
+| subject_id      | subject_label                                                               |
+|:----------------|:----------------------------------------------------------------------------|
+| Orphanet:409975 | 1-5 / 10 000                                                                |
+| Orphanet:409976 | 1-9 / 1 000 000                                                             |
+| Orphanet:409977 | 1-9 / 100 000                                                               |
+| Orphanet:409978 | 6-9 / 10 000                                                                |
+| Orphanet:409979 | <1 / 1 000 000                                                              |
+| Orphanet:409980 | >1 / 1000                                                                   |
+| Orphanet:645285 | Chaotic conus spinal cord lipoma                                            |
+| Orphanet:522514 | Congenital optic disc excavation of genetic origin                          |
+| Orphanet:645367 | Conus spinal cord lipoma                                                    |
+| Orphanet:519337 | Disorder with optic nerve compression                                       |
+| Orphanet:645362 | Dorsal spinal cord lipoma                                                   |
+| Orphanet:645297 | Extramedullary conus spinal cord lipoma                                     |
+| Orphanet:645279 | Fibrolipomatous filum anomaly                                               |
+| Orphanet:645310 | Fibroneural non-saccular limited dorsal myeloschisis                        |
+| Orphanet:652510 | Genetic autoinflammatory syndrome with acne and/or hidradenitis suppurativa |
+| Orphanet:650077 | Genetic central precocious puberty in female                                |
+| Orphanet:650097 | Genetic central precocious puberty in male                                  |
+| Orphanet:522560 | Genetic corneal dystrophy                                                   |
+| Orphanet:522562 | Genetic superficial corneal dystrophy                                       |
+| Orphanet:645393 | Hemi-myeloschisis                                                           |
+| Orphanet:646113 | Intermediate collagen VI-related muscular dystrophy                         |
+| Orphanet:645325 | Isolated filum lipoma                                                       |
+| Orphanet:637064 | Isolated optic nerve aplasia                                                |
+| Orphanet:645322 | Isolated transitional filum lipoma                                          |
+| Orphanet:522534 | Lacrimal drainage system anomaly of genetic origin                          |
+| Orphanet:645196 | Limited dorsal myeloschisis                                                 |
+| Orphanet:645300 | Lipomatous non-saccular limited dorsal myeloschisis                         |
+| Orphanet:645378 | Myelic limited dorsal malformation                                          |
+| Orphanet:650102 | Non-genetic central precocious puberty in male                              |
+| Orphanet:645343 | Non-saccular limited dorsal myeloschisis                                    |
+| Orphanet:645270 | Open spinal dysraphism with a posterior meningocele                         |
+| Orphanet:641380 | PAPASH syndrome                                                             |
+| Orphanet:645294 | Posterior extramedullary conus spinal cord lipoma                           |
+| Orphanet:650087 | Primary central precocious puberty in male                                  |
+| Orphanet:650070 | Rare central precocious puberty in female                                   |
+| Orphanet:522530 | Rare genetic disorder with entropion                                        |
+| Orphanet:522518 | Rare genetic disorder with strabismus                                       |
+| Orphanet:522528 | Rare genetic eyelid malposition disorder                                    |
+| Orphanet:522566 | Rare genetic inflammatory/autoimmune corneal disorder                       |
+| Orphanet:522522 | Rare genetic neuromuscular disorder with ocular motility/alignment anomaly  |
+| Orphanet:522512 | Rare genetic optic nerve disorder                                           |
+| Orphanet:519290 | Rare inflammatory/autoimmune corneal disorder                               |
+| Orphanet:519353 | Rare trochlear nerve disorder                                               |
+| Orphanet:645334 | Retained medullary cord                                                     |
+| Orphanet:645354 | Saccular limited dorsal myeloschisis                                        |
+| Orphanet:645319 | Saccular spinal dysraphism with a stalk to the dome                         |
+| Orphanet:650082 | Secondary central precocious puberty in female                              |
+| Orphanet:650092 | Secondary central precocious puberty in male                                |
+| Orphanet:645188 | Spinal dermal sinus                                                         |
+| Orphanet:519321 | Syndromic chorioretinal dystrophy                                           |
+| Orphanet:522548 | Syndromic genetic cataract                                                  |
+| Orphanet:522520 | Syndromic genetic disorder with strabismus                                  |
+| Orphanet:522554 | Syndromic genetic ectopia lentis                                            |
+| Orphanet:522564 | Syndromic genetic keratoconus                                               |
+| Orphanet:645288 | Terminal extramedullary conus spinal cord lipoma                            |
+| Orphanet:645337 | Terminal myelocystocele                                                     |
+| Orphanet:645291 | Transitional extramedullary conus spinal cord lipoma                        |
+| Orphanet:645401 | True myeloschisis                                                           |
+| Orphanet:324953 | Unclassified autoinflammatory syndrome of childhood                         |
+| Orphanet:324960 | Unexplained periodic fever syndrome of childhood                            |
+| Orphanet:409981 | Unknown_epidemiological_range                                               |
+| Orphanet:409934 | X-linked dominant                                                           |
+| Orphanet:409932 | X-linked recessive                                                          |
+| Orphanet:409938 | Y-linked                                                                    |
+| Orphanet:409947 | adolescent                                                                  |
+| Orphanet:409948 | adult                                                                       |
+| Orphanet:C023   | age of onset                                                                |
+| Orphanet:409950 | all ages                                                                    |
+| Orphanet:409967 | annual incidence                                                            |
+| Orphanet:409943 | antenatal                                                                   |
+| Orphanet:409929 | autosomal dominant                                                          |
+| Orphanet:409930 | autosomal recessive                                                         |
+| Orphanet:409968 | birth prevalence                                                            |
+| Orphanet:409973 | case                                                                        |
+| Orphanet:409970 | cases/families                                                              |
+| Orphanet:557495 | category                                                                    |
+| Orphanet:409946 | childhood                                                                   |
+| Orphanet:377794 | clinical group                                                              |
+| Orphanet:377796 | clinical subtype                                                            |
+| Orphanet:409949 | elderly                                                                     |
+| Orphanet:C003   | epidemiology                                                                |
+| Orphanet:377795 | etiological subtype                                                         |
+| Orphanet:409974 | family                                                                      |
+| Orphanet:C009   | geography                                                                   |
+| Orphanet:C032   | has_annual_incidence_average_value                                          |
+| Orphanet:C020   | has_annual_incidence_range                                                  |
+| Orphanet:C029   | has_birth_prevalence_average_value                                          |
+| Orphanet:C026   | has_birth_prevalence_range                                                  |
+| Orphanet:C024   | has_cases/families_value                                                    |
+| Orphanet:C030   | has_lifetime_prevalence_average_value                                       |
+| Orphanet:C027   | has_lifetime_prevalence_range                                               |
+| Orphanet:C028   | has_point_prevalence_average_value                                          |
+| Orphanet:C025   | has_point_prevalence_range                                                  |
+| Orphanet:377797 | histopathological subtype                                                   |
+| Orphanet:409945 | infancy                                                                     |
+| Orphanet:C005   | inheritance                                                                 |
+| Orphanet:409969 | lifetime prevalence                                                         |
+| Orphanet:409933 | mitochondrial                                                               |
+| Orphanet:409931 | multigenic/multifactorial                                                   |
+| Orphanet:409944 | neonatal                                                                    |
+| Orphanet:409951 | no age of onset data available                                              |
+| Orphanet:409940 | no inheritance data available                                               |
+| Orphanet:409936 | oligogenic                                                                  |
+| Orphanet:409966 | point prevalence                                                            |
+| Orphanet:C004   | prevalence                                                                  |
+| Orphanet:409937 | semi-dominant                                                               |
+| Orphanet:409939 | unknown inheritance                                                         |

@@ -6,8 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mondo/sources/gard.owl"/>
     
 
@@ -20,18 +19,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
     
 
 
@@ -8290,7 +8277,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_12759 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_12759">
-        <oboInOwl:hasExactSynonym>acute myeloid leukemia with inv(3)(q21q26.2) or t(3;3)(q21;q26.2)</oboInOwl:hasExactSynonym>
         <rdfs:label>Acute myeloid leukemia with inv(3)(q21q26.2) or t(3;3)(q21;q26.2)</rdfs:label>
     </owl:Class>
     
@@ -10995,7 +10981,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_30000"/>
-        <oboInOwl:hasExactSynonym>okur-chung neurodevelopmental syndrome</oboInOwl:hasExactSynonym>
         <rdfs:label>Okur-Chung neurodevelopmental syndrome (OCNDS)</rdfs:label>
     </owl:Class>
     
@@ -12221,7 +12206,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15149">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 2a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 2a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18744,7 +18728,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15858">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 3a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 3a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18754,7 +18737,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15859">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 4a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 4a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18774,7 +18756,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15861">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 5a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 5a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18803,7 +18784,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15864">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 6a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 6a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18823,7 +18803,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15866">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 7a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 7a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18852,7 +18831,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15869">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 8a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 8a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18891,7 +18869,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15873">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 10a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 10a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18901,7 +18878,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15874">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 11a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 11a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18921,7 +18897,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15876">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 12a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 12a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -18931,7 +18906,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_15877">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_7917"/>
-        <oboInOwl:hasExactSynonym>peroxisome biogenesis disorder 13a</oboInOwl:hasExactSynonym>
         <rdfs:label>Peroxisome biogenesis disorder 13a (zellweger)</rdfs:label>
     </owl:Class>
     
@@ -40385,7 +40359,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_18369">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GARD_17228"/>
-        <oboInOwl:hasExactSynonym>mitochondrial dna depletion syndrome 2</oboInOwl:hasExactSynonym>
         <rdfs:label>Mitochondrial dna depletion syndrome 2 (myopathic type)</rdfs:label>
     </owl:Class>
     
@@ -57682,7 +57655,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_20434 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_20434">
-        <oboInOwl:hasExactSynonym>qualitative or quantitative defects of beta-myosin heavy chain</oboInOwl:hasExactSynonym>
         <rdfs:label>Qualitative or quantitative defects of beta-myosin heavy chain (MYH7)</rdfs:label>
     </owl:Class>
     
@@ -68308,7 +68280,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_21710 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_21710">
-        <oboInOwl:hasExactSynonym>acute myeloid leukemia with t(6;9)(p23;q34)</oboInOwl:hasExactSynonym>
         <rdfs:label>Acute myeloid leukemia with t(6;9)(p23;q34)</rdfs:label>
     </owl:Class>
     
@@ -68317,7 +68288,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_21711 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_21711">
-        <oboInOwl:hasExactSynonym>acute myeloid leukemia with t(9;11)(p22;q23)</oboInOwl:hasExactSynonym>
         <rdfs:label>Acute myeloid leukemia with t(9;11)(p22;q23)</rdfs:label>
     </owl:Class>
     
@@ -68326,7 +68296,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_21712 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_21712">
-        <oboInOwl:hasExactSynonym>megakaryoblastic acute myeloid leukemia with t(1;22)(p13;q13)</oboInOwl:hasExactSynonym>
         <rdfs:label>Megakaryoblastic acute myeloid leukemia with t(1;22)(p13;q13)</rdfs:label>
     </owl:Class>
     
@@ -73555,7 +73524,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_22340 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_22340">
-        <oboInOwl:hasExactSynonym>acute myeloid leukemia with t(9;22)(q34.1;q11.2)</oboInOwl:hasExactSynonym>
         <rdfs:label>Acute myeloid leukemia with t(9;22)(q34.1;q11.2)</rdfs:label>
     </owl:Class>
     
@@ -73572,7 +73540,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_22342 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_22342">
-        <oboInOwl:hasExactSynonym>b-lymphoblastic leukemia/lymphoma with t(9;22)(q34.1;q11.2)</oboInOwl:hasExactSynonym>
         <rdfs:label>B-lymphoblastic leukemia/lymphoma with t(9;22)(q34.1;q11.2)</rdfs:label>
     </owl:Class>
     
@@ -73581,7 +73548,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_22343 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_22343">
-        <oboInOwl:hasExactSynonym>b-lymphoblastic leukemia/lymphoma with t(v;11q23.3)</oboInOwl:hasExactSynonym>
         <rdfs:label>B-lymphoblastic leukemia/lymphoma with t(v;11q23.3)</rdfs:label>
     </owl:Class>
     
@@ -73590,7 +73556,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_22344 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_22344">
-        <oboInOwl:hasExactSynonym>b-lymphoblastic leukemia/lymphoma with t(12;21)(p13.2;q22.1)</oboInOwl:hasExactSynonym>
         <rdfs:label>B-lymphoblastic leukemia/lymphoma with t(12;21)(p13.2;q22.1)</rdfs:label>
     </owl:Class>
     
@@ -73615,7 +73580,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_22347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_22347">
-        <oboInOwl:hasExactSynonym>b-lymphoblastic leukemia/lymphoma with t(5;14)(q31.1;q32.3)</oboInOwl:hasExactSynonym>
         <rdfs:label>B-lymphoblastic leukemia/lymphoma with t(5;14)(q31.1;q32.3)</rdfs:label>
     </owl:Class>
     
@@ -73624,7 +73588,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_22348 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_22348">
-        <oboInOwl:hasExactSynonym>b-lymphoblastic leukemia/lymphoma with t(1;19)(q23;p13.3)</oboInOwl:hasExactSynonym>
         <rdfs:label>B-lymphoblastic leukemia/lymphoma with t(1;19)(q23;p13.3)</rdfs:label>
     </owl:Class>
     
@@ -73673,7 +73636,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_22354 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_22354">
-        <oboInOwl:hasExactSynonym>mixed phenotype acute leukemia with t(9;22)(q34.1;q11.2)</oboInOwl:hasExactSynonym>
         <rdfs:label>Mixed phenotype acute leukemia with t(9;22)(q34.1;q11.2)</rdfs:label>
     </owl:Class>
     
@@ -73698,7 +73660,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_22357 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_22357">
-        <oboInOwl:hasExactSynonym>mixed phenotype acute leukemia with t(v;11q23.3)</oboInOwl:hasExactSynonym>
         <rdfs:label>Mixed phenotype acute leukemia with t(v;11q23.3)</rdfs:label>
     </owl:Class>
     
@@ -86185,7 +86146,6 @@
     <!-- http://purl.obolibrary.org/obo/GARD_536 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GARD_536">
-        <oboInOwl:hasExactSynonym>acute myeloid leukemia with abnormal bone marrow eosinophils inv(16)(p13q22) or t(16;16)(p13;q22)</oboInOwl:hasExactSynonym>
         <rdfs:label>Acute myeloid leukemia with abnormal bone marrow eosinophils inv(16)(p13q22) or t(16;16)(p13;q22)</rdfs:label>
     </owl:Class>
     
@@ -98910,5 +98870,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 
