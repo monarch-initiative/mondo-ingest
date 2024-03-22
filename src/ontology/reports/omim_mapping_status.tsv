@@ -1,28 +1,6 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
-OMIM:620698	maple syrup urine disease,  iia 1b	False	False	False
-OMIM:620699	maple syrup urine disease,  iia 2	False	False	False
-OMIM:620704	encephalopathy, porphyria-related	False	False	False
-OMIM:620707	epidermolytic hyperkeratosis 2b, autosomal recessive	False	False	False
-OMIM:620711	leukoencephalopathy, porphyria-related	False	False	False
-OMIM:620712	polydactyly-macrocephaly syndrome	False	False	False
-OMIM:620714	deafness, autosomal recessive 122	False	False	False
-OMIM:620715	bleeding disorder, vascular-type	False	False	False
-OMIM:620718	orofaciodigital syndrome 20	False	False	False
-OMIM:620719	neurodevelopmental disorder with motor abnormalities, seizures, and facial dysmorphism	False	False	False
-OMIM:620722	deafness, autosomal dominant 90	False	False	False
-OMIM:620725	bethlem myopathy 1b	False	False	False
-OMIM:620726	bethlem myopathy 1c	False	False	False
-OMIM:620727	ullrich congenital muscular dystrophy 1b	False	False	False
-OMIM:620728	ullrich congenital muscular dystrophy 1c	False	False	False
-OMIM:620729	hyperferritinemia	False	False	False
-OMIM:620730	hyperemesis gravidarum, susceptibility to	False	False	False
-OMIM:620731	microphthalmia/coloboma 11	False	False	False
-OMIM:620732	neurodevelopmental disorder with hyperkinetic movements, seizures, and structural brain abnormalities	False	False	False
-OMIM:620734	cardiomyopathy, familial hypertrophic, 30, atrial	False	False	False
-OMIM:620744	spermatogenic failure 90	False	False	False
-OMIM:620745	deafness, autosomal recessive 123	False	False	False
-OMIM:620746	neurodevelopmental disorder with hypotonia and characteristic brain abnormalities	False	False	False
-OMIM:620748	megalencephaly-polydactyly syndrome	False	False	False
+OMIM:620747	neurodevelopmental disorder with early-onset parkinsonism and behavioral abnormalities	False	False	False
+OMIM:620755	generalized epilepsy with febrile seizures plus,  iia 12	False	False	False
 OMIMPS:113650	Branchiootorenal syndrome	False	False	False
 OMIMPS:144200	Palmoplantar keratoderma, epidermolytic	False	False	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	False	False
@@ -4522,6 +4500,7 @@ OMIM:301104	PPP1R3F	False	True	False
 OMIM:301105	CT55	False	True	False
 OMIM:301112	GLOD5	False	True	False
 OMIM:301113	SPIN4	False	True	False
+OMIM:301117	CXORF38	False	True	False
 OMIM:301300	ALAS2	False	True	False
 OMIM:301770	ARR3	False	True	False
 OMIM:301780	ARSC2	False	True	False
@@ -11375,7 +11354,7 @@ OMIM:608382	DNAJA3	False	True	False
 OMIM:608383	DPYSL5	False	True	False
 OMIM:608384	GSDMC	False	True	False
 OMIM:608385	TNS4	False	True	False
-OMIM:608386	tuberoinfundibular peptide of 39 amino acids	False	True	False
+OMIM:608386	PTH2	False	True	False
 OMIM:608387	ZNF213	False	True	False
 OMIM:608388	ECSIT	False	True	False
 OMIM:608396	SLC9A9	False	True	False
@@ -18932,6 +18911,11 @@ OMIM:620751	RTL10	False	True	False
 OMIM:620752	TMEM177	False	True	False
 OMIM:620753	CCDC90B	False	True	False
 OMIM:620754	PRELID3B	False	True	False
+OMIM:620756	ECHDC3	False	True	False
+OMIM:620758	TIMM23B	False	True	False
+OMIM:620759	POLGARF	False	True	False
+OMIM:620760	MLDHR	False	True	False
+OMIM:620761	C9ORF85	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
 OMIM:100100	prune belly syndrome	True	False	False
@@ -20219,6 +20203,7 @@ OMIM:219100	cutis laxa, autosomal recessive,  iia 1a	True	False	False
 OMIM:219150	cutis laxa, autosomal recessive,  iia 3a	True	False	False
 OMIM:219200	cutis laxa, autosomal recessive,  iia 2a	True	False	False
 OMIM:219500	cystathioninuria	True	False	False
+OMIM:219600	polycystic lung disease	True	False	False
 OMIM:219700	cystic fibrosis	True	False	False
 OMIM:219730	ventriculomegaly with cystic kidney disease	True	False	False
 OMIM:219750	cystinosis, adult nonnephropathic	True	False	False
@@ -22243,7 +22228,6 @@ OMIM:607202	celiac disease, susceptibility to, 5	True	False	False
 OMIM:607208	dravet syndrome	True	False	False
 OMIM:607221	epilepsy, partial, with pericentral spikes	True	False	False
 OMIM:607225	spastic paralysis, infantile-onset ascending	True	False	False
-OMIM:607236	hypoprebetalipoproteinemia, acanthocytosis, retinitis pigmentosa, and pallidal degeneration	True	False	False
 OMIM:607239	deafness, autosomal recessive 33	True	False	False
 OMIM:607248	glioma susceptibility 4	True	False	False
 OMIM:607250	spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 1	True	False	False
@@ -27010,9 +26994,33 @@ OMIM:620686	premature ovarian failure 23	True	False	False
 OMIM:620687	moyamoya disease 7	True	False	False
 OMIM:620688	intellectual developmental disorder, autosomal dominant 74	True	False	False
 OMIM:620690	developmental dysplasia of the hip 3	True	False	False
+OMIM:620698	maple syrup urine disease,  iia 1b	True	False	False
+OMIM:620699	maple syrup urine disease,  iia 2	True	False	False
 OMIM:620700	intellectual developmental disorder, autosomal recessive 81	True	False	False
 OMIM:620703	yuksel-vogel-bauer syndrome	True	False	False
+OMIM:620704	encephalopathy, porphyria-related	True	False	False
 OMIM:620705	spermatogenic failure 89	True	False	False
+OMIM:620707	epidermolytic hyperkeratosis 2b, autosomal recessive	True	False	False
+OMIM:620711	leukoencephalopathy, porphyria-related	True	False	False
+OMIM:620712	polydactyly-macrocephaly syndrome	True	False	False
+OMIM:620714	deafness, autosomal recessive 122	True	False	False
+OMIM:620715	bleeding disorder, vascular-type	True	False	False
+OMIM:620718	orofaciodigital syndrome 20	True	False	False
+OMIM:620719	neurodevelopmental disorder with motor abnormalities, seizures, and facial dysmorphism	True	False	False
+OMIM:620722	deafness, autosomal dominant 90	True	False	False
+OMIM:620725	bethlem myopathy 1b	True	False	False
+OMIM:620726	bethlem myopathy 1c	True	False	False
+OMIM:620727	ullrich congenital muscular dystrophy 1b	True	False	False
+OMIM:620728	ullrich congenital muscular dystrophy 1c	True	False	False
+OMIM:620729	hyperferritinemia	True	False	False
+OMIM:620730	hyperemesis gravidarum, susceptibility to	True	False	False
+OMIM:620731	microphthalmia/coloboma 11	True	False	False
+OMIM:620732	neurodevelopmental disorder with hyperkinetic movements, seizures, and structural brain abnormalities	True	False	False
+OMIM:620734	cardiomyopathy, familial hypertrophic, 30, atrial	True	False	False
+OMIM:620744	spermatogenic failure 90	True	False	False
+OMIM:620745	deafness, autosomal recessive 123	True	False	False
+OMIM:620746	neurodevelopmental disorder with hypotonia and characteristic brain abnormalities	True	False	False
+OMIM:620748	megalencephaly-polydactyly syndrome	True	False	False
 OMIMPS:100070	Aortic aneurysm, familial abdominal	True	False	False
 OMIMPS:100300	Adams-Oliver syndrome	True	False	False
 OMIMPS:101800	Acrodysostosis	True	False	False
@@ -27624,6 +27632,7 @@ OMIM:600309		True	False	True
 OMIM:601251		True	False	True
 OMIM:601563		True	False	True
 OMIM:605365		True	False	True
+OMIM:607236		True	False	True
 OMIM:607801		True	False	True
 OMIM:608890		True	False	True
 OMIM:610269		True	False	True
@@ -28406,7 +28415,6 @@ OMIM:219250	cutis marmorata telangiectatica congenita	True	True	False
 OMIM:219300	cutis verticis gyrata and mental retardation	True	True	False
 OMIM:219400	cyanosis and hepatic disease	True	True	False
 OMIM:219550	cysteine peptiduria	True	True	False
-OMIM:219600	cystic disease of lung	True	True	False
 OMIM:219721	cystic fibrosis with helicobacter pylori gastritis, megaloblastic anemia, and mental retardation	True	True	False
 OMIM:220219	dandy-walker malformation with mental retardation, macrocephaly, myopia, and brachytelephalangy	True	True	False
 OMIM:220220	dandy-walker malformation with postaxial polydactyly	True	True	False
