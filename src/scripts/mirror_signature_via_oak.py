@@ -12,8 +12,6 @@ import pandas as pd
 import yaml
 from oaklib import get_implementation_from_shorthand
 from oaklib.types import CURIE, URI
-from sssom.util import is_curie
-
 
 # TODO: there's already some duplicative code between this and `unmapped_tables.py`: reading config, list curies
 def mirror_signature_via_oak(db_path: str, onto_config_path: str, outpath: str) -> pd.DataFrame:
@@ -35,7 +33,7 @@ def mirror_signature_via_oak(db_path: str, onto_config_path: str, outpath: str) 
     # Get owned terms
     curies_owned: List[CURIE] = []
     for _id in ids_sans_deprecated:
-        curie: CURIE = _id if is_curie(_id) else converter.compress(_id)
+        curie: CURIE = _id if converter.is_curie(_id) else converter.compress(_id)
         for alias, preferred in prefix_preplacement_map.items():
             curie = curie.replace(alias, preferred) if curie else curie
         if curie and curie.split(':')[0] in owned_prefixes:
