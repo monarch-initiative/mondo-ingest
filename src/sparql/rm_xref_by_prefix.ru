@@ -16,5 +16,5 @@ WHERE {
     oboInOwl:hasDbXref ?xref ;
     ?p1 ?o2 .
   }
-  FILTER( STRSTARTS(str(?xref), "UMLS_ICD9CM_2005_AUI:") || STRSTARTS(str(?xref), "ICD11:") || STRSTARTS(str(?xref), "SNOMEDCT_US_") || STRSTARTS(str(?xref), "IMDRF:") || STRSTARTS(str(?xref), "url:") )
+  FILTER( STRSTARTS(str(?xref), "UMLS_ICD9CM_2005_AUI:") || STRSTARTS(str(?xref), "SNOMEDCT_US_") || STRSTARTS(str(?xref), "IMDRF:") || STRSTARTS(str(?xref), "url:") )
 }
