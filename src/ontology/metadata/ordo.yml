@@ -50,8 +50,8 @@ preprocessing:
     queries:
         - id: MONDO_INGEST_QUERY:fix_deprecated.ru
           see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_deprecated.ru
-        - id: MONDO_INGEST_QUERY:fix_complex_reification.ru
-          see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_complex_reification.ru
+        - id: MONDO_INGEST_QUERY:fix_complex_reification_ordo.ru
+          see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_complex_reification_ordo.ru
         - id: MONDO_INGEST_QUERY:fix_xref_prefixes.ru
           see_also: https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_xref_prefixes.ru
         - id: MONDO_INGEST_QUERY:ordo-construct-subclass-from-part-of.ru
