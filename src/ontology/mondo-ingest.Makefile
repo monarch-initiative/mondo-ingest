@@ -322,7 +322,7 @@ build-mondo-ingest:
 	$(MAKE) refresh-imports exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
-		refresh-externally-managed-content \
+		update-externally-managed-content \
 		prepare_release
 	@echo "Mondo Ingest has been fully completed"
 
@@ -331,7 +331,7 @@ build-mondo-ingest-no-imports:
 	$(MAKE_FAST) exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
-		refresh-externally-managed-content \
+		update-externally-managed-content \
 		prepare_release
 	@echo "Mondo Ingest (fast) has been fully completed"
 
@@ -555,7 +555,7 @@ $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-conte
 .PHONY: external-content-nord
 external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
 
-refresh-externally-managed-content: external-content-nord
+update-externally-managed-content: external-content-nord
 
 #############################
 ######### Analysis ##########
@@ -680,5 +680,5 @@ help:
 	@echo "reports/sync-subClassOf.confirmed.tsv"
 	@echo "For all subclass relationships in Mondo, by source, a robot template containing showing what is in Mondo and are confirmed to also exist in the source. Combination of all --outpath-confirmed outputs for all sources.\n"
 	# - Refresh externally managed content
-	@echo "refresh-externally-managed-content"
+	@echo "update-externally-managed-content"
 	@echo "Downloads and processes all externally managed content like cross references, subsets and labels, including NORD and GARD.\n"

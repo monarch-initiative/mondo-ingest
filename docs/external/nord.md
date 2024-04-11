@@ -8,7 +8,7 @@
 
 NORD provides three datatypes to us:
 
-* Cross-references to  NORD content
+* Cross-references to NORD content
 * Subset-declarations, which basically correspond to "what NORD considers a Rare Disease"
 * Preferred Names for certain diseases
 
