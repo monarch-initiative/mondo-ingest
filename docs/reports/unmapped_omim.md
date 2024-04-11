@@ -2,33 +2,24 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/omim_mapping_status.tsv)
 
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id    | subject_label                                                                                         |
-|:--------------|:------------------------------------------------------------------------------------------------------|
-| OMIMPS:602588 | Branchiootic syndrome                                                                                 |
-| OMIMPS:113650 | Branchiootorenal syndrome                                                                             |
-| OMIMPS:151623 | Li-Fraumeni syndrome                                                                                  |
-| OMIMPS:144200 | Palmoplantar keratoderma, epidermolytic                                                               |
-| OMIM:620725   | bethlem myopathy 1b                                                                                   |
-| OMIM:620726   | bethlem myopathy 1c                                                                                   |
-| OMIM:620715   | bleeding disorder, vascular-type                                                                      |
-| OMIM:620734   | cardiomyopathy, familial hypertrophic, 30, atrial                                                     |
-| OMIM:620722   | deafness, autosomal dominant 90                                                                       |
-| OMIM:620714   | deafness, autosomal recessive 122                                                                     |
-| OMIM:620745   | deafness, autosomal recessive 123                                                                     |
-| OMIM:620704   | encephalopathy, porphyria-related                                                                     |
-| OMIM:620707   | epidermolytic hyperkeratosis 2b, autosomal recessive                                                  |
-| OMIM:620730   | hyperemesis gravidarum, susceptibility to                                                             |
-| OMIM:620729   | hyperferritinemia                                                                                     |
-| OMIM:620711   | leukoencephalopathy, porphyria-related                                                                |
-| OMIM:620698   | maple syrup urine disease,  iia 1b                                                                    |
-| OMIM:620699   | maple syrup urine disease,  iia 2                                                                     |
-| OMIM:620748   | megalencephaly-polydactyly syndrome                                                                   |
-| OMIM:620731   | microphthalmia/coloboma 11                                                                            |
-| OMIM:620732   | neurodevelopmental disorder with hyperkinetic movements, seizures, and structural brain abnormalities |
-| OMIM:620746   | neurodevelopmental disorder with hypotonia and characteristic brain abnormalities                     |
-| OMIM:620719   | neurodevelopmental disorder with motor abnormalities, seizures, and facial dysmorphism                |
-| OMIM:620718   | orofaciodigital syndrome 20                                                                           |
-| OMIM:620712   | polydactyly-macrocephaly syndrome                                                                     |
-| OMIM:620744   | spermatogenic failure 90                                                                              |
-| OMIM:620727   | ullrich congenital muscular dystrophy 1b                                                              |
-| OMIM:620728   | ullrich congenital muscular dystrophy 1c                                                              |
+| subject_id    | subject_label                                                                          |
+|:--------------|:---------------------------------------------------------------------------------------|
+| OMIMPS:602588 | Branchiootic syndrome                                                                  |
+| OMIMPS:113650 | Branchiootorenal syndrome                                                              |
+| OMIMPS:220150 | Hypouricemia, renal                                                                    |
+| OMIMPS:151623 | Li-Fraumeni syndrome                                                                   |
+| OMIMPS:144200 | Palmoplantar keratoderma, epidermolytic                                                |
+| OMIM:620763   | corneal dystrophy, lisch epithelial                                                    |
+| OMIM:620780   | cutis laxa, autosomal recessive, type 1d                                               |
+| OMIM:620772   | developmental and epileptic encephalopathy 113                                         |
+| OMIM:620774   | developmental and epileptic encephalopathy 114                                         |
+| OMIM:620755   | generalized epilepsy with febrile seizures plus, type 12                               |
+| OMIM:301118   | intellectual developmental disorder, x-linked, syndromic 37                            |
+| OMIM:620771   | jeffries-lakhani neurodevelopmental syndrome                                           |
+| OMIM:620762   | macular dystrophy with or without cone dysfunction                                     |
+| OMIM:620747   | neurodevelopmental disorder with early-onset parkinsonism and behavioral abnormalities |
+| OMIM:620775   | neuromuscular disorder, congenital, with dysmorphic facies                             |
+| OMIM:620777   | pulmonary hypertension, primary, 6                                                     |
+| OMIM:620767   | seckel syndrome 11                                                                     |
+| OMIM:620757   | thrombocytopenia 12 with or without myopathy                                           |
+| OMIM:620776   | thrombocytopenia 13, syndromic                                                         |

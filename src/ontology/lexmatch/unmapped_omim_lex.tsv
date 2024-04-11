@@ -1,3 +1,6 @@
 subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
 MONDO:0007029	branchio-oto-renal syndrome	OMIMPS:113650	MONDO:equivalentTo	Branchiootorenal syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	branchiootorenal syndrome
+MONDO:0010425	Lisch epithelial corneal dystrophy	OMIM:620763	MONDO:equivalentTo	corneal dystrophy, lisch epithelial	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	lisch epithelial corneal dystrophy
+MONDO:0010425	Lisch epithelial corneal dystrophy	OMIM:620763	MONDO:equivalentTo	corneal dystrophy, lisch epithelial	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	lisch epithelial corneal dystrophy
+MONDO:0020728	hypouricemia, renal 1	OMIMPS:220150	MONDO:equivalentTo	Hypouricemia, renal	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	hypouricemia, renal
