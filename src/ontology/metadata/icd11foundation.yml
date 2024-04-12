@@ -10,6 +10,20 @@ description: >
   120 000 codable terms and is now entirely digital.Feb 11, 2022
   
   This data source in particular is the ICD11 foundation, not one of its linearizations.
+comments_about_this_source: > 
+  _Data source_  
+  _Original source URL_: https://icd11files.blob.core.windows.net/tmp/whofic-2023-04-08.owl.gz
+  
+  _Preprocessing_  
+  In the [monarch-initiative/icd11](https://github.com/monarch-initiative/icd11) repo, We remove unicode characters and 
+  then remove equivalent class statements as discussed below. 
+  
+  _Equivalent classes_  
+  We remove all equivalent class statements as they are not unique and result in unintended node merges. For example 
+  `icd11.foundation:2000662282` (_Occupant of pick-up truck or van injured in collision with car, pick-up truck or van: 
+  person on outside of vehicle injured in traffic accident_) has the same exact equivalent concept expression as 
+  `icd11.foundation:1279712844` (_Occupant of pick-up truck or van injured in collision with two- or three- wheeled motor 
+  vehicle: person on outside of vehicle injured in traffic accident_).
 homepage: https://icd.who.int/
 base_prefix_map:
   icd11.foundation: http://id.who.int/icd/entity/
