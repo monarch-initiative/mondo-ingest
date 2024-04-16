@@ -1,7 +1,6 @@
-### For OMIM, we are interested in all terms that are not genes.
-
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+### For OMIM, we are interested in all terms that are not genes.
 SELECT DISTINCT ?term
 WHERE {
   { 

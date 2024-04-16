@@ -21,16 +21,25 @@ Add a new metadata file to [src/ontology/metadata](https://github.com/monarch-in
 Prefixes need to be entered in the following places in the yml:
 - `curie_map`
 - `extended_prefix_map`
+- `subject_prefixes`
 
 ### 2.3. `config/prefixes.csv`
 Add prefixes.
+
+### 2.4. `config/context.json`
+Add prefixes.
+
+### 2.5. `lexmatch-sssom-compare.py`
+There is a section of branching logic with a comment "Map ontology filenames to prefixes". Add an entry there if either
+(a) there is 1 prefix you care about, and it is spelled differently than the component filename (e.g. the prefix is 
+`myontology`, but the filename is `components/my-ontology.owl`), or (b) there is more than 1 prefix.
 
 ## 3. Docs 
 ### 3.1. `mkdocs.yaml`
 Update the Website Table of Contents in [mkdocs.yaml](https://github.com/monarch-initiative/mondo-ingest/blob/main/mkdocs.yaml)
 
 ### 3.2. `docs/sources/*.md`
-Run `sh run.sh make ../../docs/sources/*.md` from `src/ontology`. Then edit it manually to add any more informatoin.
+Run `sh run.sh make ../../docs/sources/*.md` from `src/ontology`. Then edit it manually to add any more information.
 
 ### 3.3. `docs/sources.md`
 Add a link to your new `.md` file created in the last step.

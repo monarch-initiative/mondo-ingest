@@ -70,8 +70,6 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-dow
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
-			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/fix_illegal_punning_omim.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
 
@@ -84,7 +82,7 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 		query \
 			--update ../sparql/fix_partof.ru \
 			--update ../sparql/fix_deprecated.ru \
-			--update ../sparql/fix_complex_reification.ru \
+			--update ../sparql/fix_complex_reification_ordo.ru \
 			--update ../sparql/fix_xref_prefixes.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/ordo-construct-subclass-from-part-of.ru \
@@ -113,9 +111,7 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-dow
 		remove -T $(TMPDIR)/doid_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		query \
 			--update ../sparql/fix_omimps.ru \
-			--update ../sparql/fix_hgnc_mappings.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
-			--update ../sparql/fix_complex_reification.ru \
 			--update ../sparql/rm_xref_by_prefix.ru \
 			--update ../sparql/fix_make_omim_exact.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
@@ -143,8 +139,6 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | compone
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
-			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_complex_reification.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
 
@@ -158,15 +152,19 @@ $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | compo
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
-			--update ../sparql/fix_hgnc_mappings.ru \
-			--update ../sparql/fix_complex_reification.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
 
-.PHONY: component-download-gard.owl
-component-download-gard.owl: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/gard/releases/latest/download/gard.owl \
-	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+$(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signature.txt | component-download-icd11foundation.owl
+	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd11foundation.owl.owl --select imports \
+		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/icd11foundation-property-map.sssom.tsv \
+		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select individuals \
+		query \
+			--update ../sparql/fix-labels-with-brackets.ru \
+		remove -T config/properties.txt --select complement --select properties --trim true \
+		annotate --ontology-iri $(URIBASE)/mondo/sources/icd11foundation.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd11foundation.owl -o $@; fi
 
 $(COMPONENTSDIR)/gard.owl: $(TMPDIR)/gard_relevant_signature.txt | component-download-gard.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-gard.owl.owl --select imports \
@@ -236,7 +234,7 @@ unmapped/:
 
 unmapped/%-unmapped.owl: $(COMPONENTSDIR)/%.owl reports/%_unmapped_terms.tsv | unmapped/
 	cut -f 1 reports/$*_unmapped_terms.tsv | tail -n +2 > reports/$*_unmapped_terms.txt
-	$(ROBOT) filter -i components/$*.owl -T reports/$*_unmapped_terms.txt -o components/$@
+	$(ROBOT) filter -i components/$*.owl -T reports/$*_unmapped_terms.txt -o $@
 	rm reports/$*_unmapped_terms.txt
 
 .PHONY: recreate-unmapped-components
@@ -255,6 +253,7 @@ $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.templa
 	--config-path metadata/$*.yml \
 	--outpath-txt $(REPORTDIR)/$*_term_exclusions.txt \
 	--outpath-robot-template-tsv $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv
+.PRECIOUS: $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
 
 $(REPORTDIR)/%_exclusion_reasons.ttl: component-download-%.owl $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
 	$(ROBOT) template --input $(TMPDIR)/component-download-$*.owl.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
@@ -271,10 +270,10 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 # Exclusions: all artefacts for single ontology
 .PHONY: exclusions-%
 exclusions-%: reports/%_exclusion_reasons.ttl reports/%_excluded_terms_in_mondo_xrefs.tsv  $(REPORTDIR)/%_term_exclusions.txt 
-	echo "$@ completed"
+	@echo "$@ completed"
 
 exclusions-all: $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
-	echo "$@ completed"
+	@echo "$@ completed"
 
 # Exclusions: running for all ontologies
 # todo: change '> $(REPORTDIR)/excluded_terms.txt' to '> $@' like in goal '$(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv'?
@@ -337,7 +336,7 @@ build-mondo-ingest:
 		recreate-unmapped-components sync documentation \
 		update-externally-managed-content \
 		prepare_release
-	echo "Mondo Ingest has been fully completed"
+	@echo "Mondo Ingest has been fully completed"
 
 .PHONY: build-mondo-ingest-no-imports
 build-mondo-ingest-no-imports:
@@ -346,7 +345,7 @@ build-mondo-ingest-no-imports:
 		recreate-unmapped-components sync documentation \
 		update-externally-managed-content \
 		prepare_release
-	echo "Mondo Ingest (fast) has been fully completed"
+	@echo "Mondo Ingest (fast) has been fully completed"
 
 DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
 
@@ -402,7 +401,7 @@ ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror
 
 .PHONY: signature_reports
 signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
-	echo "Finished running signature reports.."
+	@echo "Finished running signature reports."
 
 #############################
 #### Lexical matching #######
@@ -487,14 +486,15 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_map
 	--mondo-terms-path $(REPORTDIR)/mirror_signature-mondo.tsv \
 	--slurp-dir-path slurp/ \
 	--outpath $@
+.PRECIOUS: slurp/%.tsv
 
 .PHONY: slurp-%
 slurp-%: slurp/%.tsv
-	echo "$@ completed".
+	@echo "$@ completed".
 
 .PHONY: slurp-no-updates-%
 slurp-no-updates-%: slurp/%.tsv
-	echo "$@ completed".
+	@echo "$@ completed".
 
 .PHONY: slurp-docs
 slurp-docs:
@@ -502,11 +502,11 @@ slurp-docs:
 
 .PHONY: slurp-all-no-updates
 slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
-	echo "$@ ($^) completed".
+	@echo "$@ ($^) completed".
 
 .PHONY: slurp-all
 slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
-	echo "$@ ($^) completed".
+	@echo "$@ ($^) completed".
 
 
 #############################
@@ -521,7 +521,7 @@ sync-subclassof: $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv
 # todo: drop this? This is really just an alias here for quality of life, but not used by anything.
 .PHONY: sync-subclassof-%
 sync-subclassof-%: $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv
-	echo "$@ completed"
+	@echo "$@ completed"
 
 # Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
 $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), sync-subclassof-$(n)) tmp/mondo.db

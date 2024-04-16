@@ -32,7 +32,7 @@
 * **EntityRemoval**: Removing information that are on obsolete Mondo terms (MONDO:ObsoleteEquivalent).
 * **Update**: Updating the source with various SPARQL preprocessing steps
     * [MONDO_INGEST_QUERY:fix_deprecated.ru](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_deprecated.ru)
-    * [MONDO_INGEST_QUERY:fix_complex_reification.ru](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_complex_reification.ru)
+    * [MONDO_INGEST_QUERY:fix_complex_reification_ordo.ru](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_complex_reification_ordo.ru)
     * [MONDO_INGEST_QUERY:fix_xref_prefixes.ru](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/fix_xref_prefixes.ru)
     * [MONDO_INGEST_QUERY:ordo-construct-subclass-from-part-of.ru](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/ordo-construct-subclass-from-part-of.ru)
     * [MONDO_INGEST_QUERY:ordo-construct-subsets.ru](https://github.com/monarch-initiative/mondo-ingest/blob/main/src/sparql/ordo-construct-subsets.ru)
