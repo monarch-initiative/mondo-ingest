@@ -21,6 +21,7 @@
 | Orphanet:650097 | Genetic central precocious puberty in male           |
 | Orphanet:522562 | Genetic superficial corneal dystrophy                |
 | Orphanet:645393 | Hemi-myeloschisis                                    |
+| Orphanet:100032 | Hypocalcified amelogenesis imperfecta                |
 | Orphanet:646113 | Intermediate collagen VI-related muscular dystrophy  |
 | Orphanet:645325 | Isolated filum lipoma                                |
 | Orphanet:637064 | Isolated optic nerve aplasia                         |

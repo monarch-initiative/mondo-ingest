@@ -1,10 +1,23 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0007538	amelogenesis imperfecta, type 3A	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:c562880	LEXMATCH
+MONDO:0007538	amelogenesis imperfecta, type 3A	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:130900	LEXMATCH
+MONDO:0007538	amelogenesis imperfecta, type 3A	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:c562880	LEXMATCH
+MONDO:0007538	amelogenesis imperfecta, type 3A	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:130900	LEXMATCH
+MONDO:0007538	amelogenesis imperfecta, type 3A	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:130900	LEXMATCH
 MONDO:0008302	centra precocious puberty 1	skos:closeMatch	Orphanet:650097	Genetic central precocious puberty in male	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:176400	LEXMATCH
 MONDO:0008302	centra precocious puberty 1	skos:closeMatch	Orphanet:650097	Genetic central precocious puberty in male	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:176400	LEXMATCH
 MONDO:0008302	centra precocious puberty 1	skos:closeMatch	Orphanet:650097	Genetic central precocious puberty in male	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:176400	LEXMATCH
 MONDO:0009681	Ullrich congenital muscular dystrophy 1A	skos:closeMatch	Orphanet:646113	Intermediate collagen VI-related muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:254090	LEXMATCH
 MONDO:0009681	Ullrich congenital muscular dystrophy 1A	skos:closeMatch	Orphanet:646113	Intermediate collagen VI-related muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:254090	LEXMATCH
 MONDO:0009681	Ullrich congenital muscular dystrophy 1A	skos:closeMatch	Orphanet:646113	Intermediate collagen VI-related muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:254090	LEXMATCH
+MONDO:0014540	amelogenesis imperfecta type 1H	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:616221	LEXMATCH
+MONDO:0014540	amelogenesis imperfecta type 1H	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	gard:16071	LEXMATCH
+MONDO:0014540	amelogenesis imperfecta type 1H	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:616221	LEXMATCH
+MONDO:0014540	amelogenesis imperfecta type 1H	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:616221	LEXMATCH
+MONDO:0021547	amelogenesis imperfecta type 3B	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:617607	LEXMATCH
+MONDO:0021547	amelogenesis imperfecta type 3B	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	gard:18258	LEXMATCH
+MONDO:0021547	amelogenesis imperfecta type 3B	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:617607	LEXMATCH
+MONDO:0021547	amelogenesis imperfecta type 3B	skos:closeMatch	Orphanet:100032	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:617607	LEXMATCH
 MONDO:0024530	Bethlem myopathy 1A	skos:closeMatch	Orphanet:646113	Intermediate collagen VI-related muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:158810	LEXMATCH
 MONDO:0024530	Bethlem myopathy 1A	skos:closeMatch	Orphanet:646113	Intermediate collagen VI-related muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:158810	LEXMATCH
 MONDO:0024530	Bethlem myopathy 1A	skos:closeMatch	Orphanet:646113	Intermediate collagen VI-related muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:158810	LEXMATCH

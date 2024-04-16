@@ -1,6 +1,7 @@
 subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
 MONDO:0007495	dystonia 5	DOID:0060963	MONDO:equivalentTo	dystonia, DOPA-responsive	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	omim:128230
+MONDO:0009669	spinal muscular atrophy, type 1	DOID:0060160	MONDO:equivalentTo	childhood spinal muscular atrophy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	survival motor neuron spinal muscular atrophy
 MONDO:0011053	intellectual disability-sparse hair-brachydactyly syndrome	DOID:0081441	MONDO:equivalentTo	Nicolaides-Baraitser syndrome	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	omim:601358
 MONDO:0015004	dystonia 28, childhood-onset	DOID:0060936	MONDO:equivalentTo	dystonia 28 childhood-onset	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	omim:617284
 MONDO:0030538	dystonia 34, myoclonic	DOID:0060957	MONDO:equivalentTo	myoclonic dystonia 34	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	omim:619724
