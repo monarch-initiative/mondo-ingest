@@ -1,2 +1,5 @@
 subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
+MONDO:0002013	lymphangioma	Orphanet:2415	MONDO:equivalentTo	Rare lymphatic malformation	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	lymphangioma
+MONDO:0002013	lymphangioma	Orphanet:2415	MONDO:equivalentTo	Rare lymphatic malformation	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	lymphangioma
+MONDO:0013626	psoriasis 14, pustular	Orphanet:163931	MONDO:equivalentTo	Acrodermatitis continua of Hallopeau	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	acrodermatitis continua of hallopeau
