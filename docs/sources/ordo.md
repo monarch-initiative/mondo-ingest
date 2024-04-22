@@ -12,7 +12,7 @@ ORDO is not really OWL in the strict sense. For example, disease 2 gene relation
 
 About certain prefixes
 - **ICD10EXP**: is when ORDO uses expressions over ICD10 codes, for example to express a range of codes. It is specific to Orphanet use cases and will never be aligned in Mondo, but could give some “useful” information for curators about the intentions of a group of disorders term.
-- **ICD9 and ICD9CM**: are just prefixes in ORDO and DOID we dont really care about other other than for documentative purposes.
+- **ICD9 and ICD9CM**: As we do not seek to align with ICD9, these are just prefixes in ORDO and DOID we dont really care about other other than for documentative purposes.
 
 ## Preprocessing:
 * **EntityRemoval**: 
