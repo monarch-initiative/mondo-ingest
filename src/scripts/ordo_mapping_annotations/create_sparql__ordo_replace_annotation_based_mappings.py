@@ -69,7 +69,6 @@ def sparql_jinja2_file_query__via_robot(
         os.makedirs(results_dirpath, exist_ok=True)
 
     # Instantiate template
-    # TODO
     with open(query_template_path, 'r') as f:
         template_str = f.read()
     template_obj = Template(template_str)
