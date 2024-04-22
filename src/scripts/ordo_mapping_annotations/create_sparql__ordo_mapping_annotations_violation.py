@@ -1,3 +1,4 @@
+# TODO: this file might be obsolete now too
 """Update ORDO mapping annotations to formalize them semantically.
 Work described furthere here: https://github.com/monarch-initiative/mondo-ingest/issues/23
 
