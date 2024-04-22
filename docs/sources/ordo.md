@@ -11,7 +11,7 @@
 ORDO is not really OWL in the strict sense. For example, disease 2 gene relationships follow the  'some, some' logic (a disease may have basis in the mutation of one of these),  while the OWL interpretation of these axioms is that the disease has basis in the mutation of  all of them. Example: ramona wartz disease can have a mutation in _any_ (not all) of the genes recorded in ORDO. This is why great care needs to be taking interpreting diesease 2 gene relationships during ingest!
 
 About certain prefixes
-- **ICD10EXP**: is when ORDO uses expressions over ICD10 codes, for example to express a range of codes. Its specific two Orphanet use cases and will never be aligned in Mondo, but could give some “useful” information for curators about the intentions of a group of disorders term.
+- **ICD10EXP**: is when ORDO uses expressions over ICD10 codes, for example to express a range of codes. It is specific to Orphanet use cases and will never be aligned in Mondo, but could give some “useful” information for curators about the intentions of a group of disorders term.
 - **ICD9 and ICD9CM**: are just prefixes in ORDO and DOID we dont really care about other other than for documentative purposes.
 
 ## Preprocessing:
