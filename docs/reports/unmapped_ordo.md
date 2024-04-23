@@ -10,6 +10,7 @@
 | Orphanet:409978 | 6-9 / 10 000                                         |
 | Orphanet:409979 | <1 / 1 000 000                                       |
 | Orphanet:409980 | >1 / 1000                                            |
+| Orphanet:163931 | Acrodermatitis continua of Hallopeau                 |
 | Orphanet:645285 | Chaotic conus spinal cord lipoma                     |
 | Orphanet:522514 | Congenital optic disc excavation of genetic origin   |
 | Orphanet:645367 | Conus spinal cord lipoma                             |
@@ -17,11 +18,14 @@
 | Orphanet:645362 | Dorsal spinal cord lipoma                            |
 | Orphanet:645297 | Extramedullary conus spinal cord lipoma              |
 | Orphanet:645310 | Fibroneural non-saccular limited dorsal myeloschisis |
+| Orphanet:247353 | Generalized pustular psoriasis                       |
 | Orphanet:650077 | Genetic central precocious puberty in female         |
 | Orphanet:650097 | Genetic central precocious puberty in male           |
 | Orphanet:522562 | Genetic superficial corneal dystrophy                |
 | Orphanet:645393 | Hemi-myeloschisis                                    |
+| Orphanet:100032 | Hypocalcified amelogenesis imperfecta                |
 | Orphanet:646113 | Intermediate collagen VI-related muscular dystrophy  |
+| Orphanet:268936 | Isolated arhinencephaly                              |
 | Orphanet:645325 | Isolated filum lipoma                                |
 | Orphanet:637064 | Isolated optic nerve aplasia                         |
 | Orphanet:645322 | Isolated transitional filum lipoma                   |
@@ -34,6 +38,7 @@
 | Orphanet:645294 | Posterior extramedullary conus spinal cord lipoma    |
 | Orphanet:650087 | Primary central precocious puberty in male           |
 | Orphanet:522530 | Rare genetic disorder with entropion                 |
+| Orphanet:2415   | Rare lymphatic malformation                          |
 | Orphanet:645334 | Retained medullary cord                              |
 | Orphanet:645354 | Saccular limited dorsal myeloschisis                 |
 | Orphanet:645319 | Saccular spinal dysraphism with a stalk to the dome  |

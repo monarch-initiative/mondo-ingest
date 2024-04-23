@@ -56,8 +56,6 @@ MONDO:0000723	stutter disorder	skos:closeMatch	ICD10CM:F80.81	Childhood onset fl
 MONDO:0000723	stutter disorder	skos:closeMatch	ICD10CM:F80.81	Childhood onset fluency disorder	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060243	LEXMATCH
 MONDO:0000728	ptosis	skos:closeMatch	ICD10CM:H02.4	Ptosis of eyelid	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060260	LEXMATCH
 MONDO:0000728	ptosis	skos:closeMatch	ICD10CM:H02.4	Ptosis of eyelid	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060260	LEXMATCH
-MONDO:0000733	cornea plana	skos:closeMatch	ICD10CM:Q13.4	Other congenital corneal malformations	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060287	LEXMATCH
-MONDO:0000733	cornea plana	skos:closeMatch	ICD10CM:Q13.4	Other congenital corneal malformations	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060287	LEXMATCH
 MONDO:0000739	uvulitis	skos:closeMatch	ICD10CM:K12.2	Cellulitis and abscess of mouth	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060310	LEXMATCH
 MONDO:0000739	uvulitis	skos:closeMatch	ICD10CM:K12.2	Cellulitis and abscess of mouth	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060310	LEXMATCH
 MONDO:0000740	adenoid hypertrophy	skos:closeMatch	ICD10CM:J35.2	Hypertrophy of adenoids	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060311	LEXMATCH
@@ -1637,7 +1635,6 @@ MONDO:0004950	gastric carcinoma	skos:closeMatch	ICD10CM:C16.1	Malignant neoplasm
 MONDO:0004950	gastric carcinoma	skos:closeMatch	ICD10CM:C16.1	Malignant neoplasm of fundus of stomach	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:10538	LEXMATCH
 MONDO:0004952	Hodgkins lymphoma	skos:closeMatch	ICD10CM:C81	Hodgkin lymphoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:8567	LEXMATCH
 MONDO:0004952	Hodgkins lymphoma	skos:closeMatch	ICD10CM:C81	Hodgkin lymphoma	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:8567	LEXMATCH
-MONDO:0004963	T-cell acute lymphoblastic leukemia	skos:closeMatch	ICD10CM:C91.5	Adult T-cell lymphoma/leukemia (HTLV-1-associated)	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050523	LEXMATCH
 MONDO:0004966	gastritis	skos:closeMatch	ICD10CM:K29.7	Gastritis, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:4029	LEXMATCH
 MONDO:0004966	gastritis	skos:closeMatch	ICD10CM:K29.7	Gastritis, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:4029	LEXMATCH
 MONDO:0004967	acute lymphoblastic leukemia	skos:closeMatch	ICD10CM:C91.00	Acute lymphoblastic leukemia not having achieved remission	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9952	LEXMATCH
@@ -1716,7 +1713,6 @@ MONDO:0005076	periodontitis	skos:closeMatch	ICD10CM:K05.3	Chronic periodontitis	
 MONDO:0005077	pertussis	skos:closeMatch	ICD10CM:A37.1	Whooping cough due to Bordetella parapertussis	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0005077	LEXMATCH
 MONDO:0005081	preeclampsia	skos:closeMatch	ICD10CM:O14	Pre-eclampsia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:10591	LEXMATCH
 MONDO:0005081	preeclampsia	skos:closeMatch	ICD10CM:O14	Pre-eclampsia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:10591	LEXMATCH
-MONDO:0005084	mental disorder	skos:closeMatch	ICD10CM:F99	Mental disorder, not otherwise specified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:150	LEXMATCH
 MONDO:0005087	respiratory system disorder	skos:closeMatch	ICD10CM:J98	Other respiratory disorders	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:1579	LEXMATCH
 MONDO:0005087	respiratory system disorder	skos:closeMatch	ICD10CM:J98	Other respiratory disorders	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:1579	LEXMATCH
 MONDO:0005089	sarcoma	skos:closeMatch	ICD10CM:C49	Malignant neoplasm of other connective and soft tissue	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:1115	LEXMATCH
@@ -1783,7 +1779,6 @@ MONDO:0005180	Parkinson disease	skos:closeMatch	ICD10CM:G20	Parkinson's disease	
 MONDO:0005180	Parkinson disease	skos:closeMatch	ICD10CM:G20	Parkinson's disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:14330	LEXMATCH
 MONDO:0005184	pancreatic ductal adenocarcinoma	skos:closeMatch	ICD10CM:C25.3	Malignant neoplasm of pancreatic duct	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3587	LEXMATCH
 MONDO:0005184	pancreatic ductal adenocarcinoma	skos:closeMatch	ICD10CM:C25.3	Malignant neoplasm of pancreatic duct	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3587	LEXMATCH
-MONDO:0005185	chronic childhood arthritis	skos:closeMatch	ICD10CM:M08.4	Pauciarticular juvenile rheumatoid arthritis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:676	LEXMATCH
 MONDO:0005186	cocaine dependence	skos:closeMatch	ICD10CM:F14.2	Cocaine dependence	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9975	LEXMATCH
 MONDO:0005186	cocaine dependence	skos:closeMatch	ICD10CM:F14.2	Cocaine dependence	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9975	LEXMATCH
 MONDO:0005201	restrictive cardiomyopathy	skos:closeMatch	ICD10CM:I42.5	Other restrictive cardiomyopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:397	LEXMATCH
@@ -3043,7 +3038,6 @@ MONDO:0009052	cutis laxa, autosomal recessive, type 1A	skos:closeMatch	ICD10CM:Q
 MONDO:0009052	cutis laxa, autosomal recessive, type 1A	skos:closeMatch	ICD10CM:Q82.8	Other specified congenital malformations of skin	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0070135	LEXMATCH
 MONDO:0009053	ALDH18A1-related de Barsy syndrome	skos:closeMatch	ICD10CM:Q82.8	Other specified congenital malformations of skin	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0070132	LEXMATCH
 MONDO:0009053	ALDH18A1-related de Barsy syndrome	skos:closeMatch	ICD10CM:Q82.8	Other specified congenital malformations of skin	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0070132	LEXMATCH
-MONDO:0009054	autosomal recessive cutis laxa type 2, classic type	skos:closeMatch	ICD10CM:Q82.8	Other specified congenital malformations of skin	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0070136	LEXMATCH
 MONDO:0009054	autosomal recessive cutis laxa type 2, classic type	skos:closeMatch	ICD10CM:Q82.8	Other specified congenital malformations of skin	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0070141	LEXMATCH
 MONDO:0009054	autosomal recessive cutis laxa type 2, classic type	skos:closeMatch	ICD10CM:Q82.8	Other specified congenital malformations of skin	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0070141	LEXMATCH
 MONDO:0009058	cystathioninuria	skos:closeMatch	ICD10CM:E72.19	Other disorders of sulfur-bearing amino-acid metabolism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0090142	LEXMATCH
@@ -3462,7 +3456,6 @@ MONDO:0010551	Charcot-Marie-Tooth disease X-linked recessive 3	skos:closeMatch	I
 MONDO:0010551	Charcot-Marie-Tooth disease X-linked recessive 3	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110211	LEXMATCH
 MONDO:0010556	X-linked chondrodysplasia punctata	skos:closeMatch	ICD10CM:Q77.3	Chondrodysplasia punctata	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060292	LEXMATCH
 MONDO:0010556	X-linked chondrodysplasia punctata	skos:closeMatch	ICD10CM:Q77.3	Chondrodysplasia punctata	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060292	LEXMATCH
-MONDO:0010576	X-linked mixed hearing loss with perilymphatic gusher	skos:closeMatch	ICD10CM:H90.5	Unspecified sensorineural hearing loss	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:10003	LEXMATCH
 MONDO:0010580	immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome	skos:closeMatch	ICD10CM:E31.0	Autoimmune polyglandular failure	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0090110	LEXMATCH
 MONDO:0010580	immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome	skos:closeMatch	ICD10CM:E31.0	Autoimmune polyglandular failure	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0010580	LEXMATCH
 MONDO:0010580	immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome	skos:closeMatch	ICD10CM:E31.0	Autoimmune polyglandular failure	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0090110	LEXMATCH
@@ -3944,7 +3937,6 @@ MONDO:0011832	autosomal dominant nonsyndromic hearing loss 44	skos:closeMatch	IC
 MONDO:0011838	Bothnia retinal dystrophy	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0011838	LEXMATCH
 MONDO:0011842	GRN-related frontotemporal lobar degeneration with Tdp43 inclusions	skos:closeMatch	ICD10CM:G31.0	Frontotemporal dementia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060672	LEXMATCH
 MONDO:0011842	GRN-related frontotemporal lobar degeneration with Tdp43 inclusions	skos:closeMatch	ICD10CM:G31.0	Frontotemporal dementia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060672	LEXMATCH
-MONDO:0011847	migraine without aura, susceptibility to, 4	skos:closeMatch	ICD10CM:G43.0	Migraine without aura	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:12783	LEXMATCH
 MONDO:0011847	migraine without aura, susceptibility to, 4	skos:closeMatch	ICD10CM:G43.0	Migraine without aura	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	common migraine	LEXMATCH
 MONDO:0011849	psoriatic arthritis	skos:closeMatch	ICD10CM:L40.5	Arthropathic psoriasis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9008	LEXMATCH
 MONDO:0011849	psoriatic arthritis	skos:closeMatch	ICD10CM:L40.5	Arthropathic psoriasis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9008	LEXMATCH
@@ -5346,7 +5338,6 @@ MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:closeMatch	ICD10CM:H20.82	Vogt-K
 MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:closeMatch	ICD10CM:H20.82	Vogt-Koyanagi syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:12297	LEXMATCH
 MONDO:0018094	Waardenburg syndrome	skos:closeMatch	ICD10CM:E70.3	Albinism	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0018094	LEXMATCH
 MONDO:0018097	West syndrome	skos:closeMatch	ICD10CM:G40.82	Epileptic spasms	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	west's syndrome	LEXMATCH
-MONDO:0018098	autosomal dominant limb-girdle muscular dystrophy type 1E (DES)	skos:closeMatch	ICD10CM:G71.0	Muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110305	LEXMATCH
 MONDO:0018100	familial primary hypomagnesemia	skos:closeMatch	ICD10CM:E83.4	Disorders of magnesium metabolism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060879	LEXMATCH
 MONDO:0018100	familial primary hypomagnesemia	skos:closeMatch	ICD10CM:E83.4	Disorders of magnesium metabolism	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060879	LEXMATCH
 MONDO:0018102	corneal dystrophy	skos:closeMatch	ICD10CM:H18.5	Hereditary corneal dystrophies	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:2566	LEXMATCH
@@ -5984,7 +5975,6 @@ MONDO:0100436	cataract 2, multiple types	skos:closeMatch	ICD10CM:Q12.0	Congenita
 MONDO:0100459	azoospermia	skos:closeMatch	ICD10CM:N46.0	Azoospermia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:14227	LEXMATCH
 MONDO:0100459	azoospermia	skos:closeMatch	ICD10CM:N46.0	Azoospermia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:14227	LEXMATCH
 MONDO:0100480	autoimmune primary adrenal insufficiency	skos:closeMatch	ICD10CM:E27.1	Primary adrenocortical insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	autoimmune adrenalitis	LEXMATCH
-MONDO:0100492	Bonnevie-Ullrich syndrome	skos:closeMatch	ICD10CM:Q96	Turner's syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3491	LEXMATCH
 MONDO:0700081	newborn respiratory distress syndrome	skos:closeMatch	ICD10CM:P22.0	Respiratory distress syndrome of newborn	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:12716	LEXMATCH
 MONDO:0700081	newborn respiratory distress syndrome	skos:closeMatch	ICD10CM:P22.0	Respiratory distress syndrome of newborn	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:12716	LEXMATCH
 MONDO:0700089	paroxysmal nonkinesigenic dyskinesia 1	skos:closeMatch	ICD10CM:G24.8	Other dystonia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0090049	LEXMATCH
