@@ -510,7 +510,14 @@ slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
 sync: sync-subclassof
 
 .PHONY: sync-subclassof
-sync-subclassof: $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv
+sync-subclassof: $(REPORTDIR)/sync-subClassOf.added.self_parentage_issues.tsv
+
+$(REPORTDIR)/sync-subClassOf.added.self_parentage_issues.tsv: tmp/mondo.sssom.tsv
+	rm -f $@
+	$(MAKE) $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv
+	python3 $(SCRIPTSDIR)/sync_subclassof_collate_self_parentage.py \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--in-outpath $@
 
 # todo: drop this? This is really just an alias here for quality of life, but not used by anything.
 .PHONY: sync-subclassof-%
