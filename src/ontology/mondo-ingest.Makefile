@@ -63,8 +63,7 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 #  - #60 needs to be fixed at source, but a workaround can probably be implemented in this goal
 $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-download-omim.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/omim_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/remove.txt --axioms equivalent \
 		query \
@@ -77,8 +76,7 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-dow
 $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt | component-download-ordo.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ordo.owl.owl --select imports \
 		merge \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		query \
 			--update ../sparql/fix_partof.ru \
 			--update ../sparql/fix_deprecated.ru \
@@ -95,8 +93,7 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 
 $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-download-ncit.owl
 	if [ $(SKIP_HUGE) = false ] && [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		query --update ../sparql/rm_xref_by_prefix.ru \
 		remove -T $(TMPDIR)/ncit_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/properties.txt --select complement --select properties --trim true \
@@ -106,8 +103,7 @@ $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-dow
 # todo: See #1 at top of file
 $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-download-doid.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-doid.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/doid_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		query \
 			--update ../sparql/fix_omimps.ru \
@@ -132,8 +128,7 @@ component-download-icd10cm.owl: | $(TMPDIR)
 # todo: See #1 at top of file
 $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | component-download-icd10cm.owl
 	if [ $(COMP) = true ]; then $(ROBOT) merge -i $(TMPDIR)/component-download-icd10cm.owl.owl \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select individuals \
 		query \
@@ -145,8 +140,7 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | compone
 # todo: See #1 at top of file
 $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | component-download-icd10who.owl
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd10who.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select individuals \
 		query \
@@ -157,7 +151,7 @@ $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | compo
 
 $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signature.txt | component-download-icd11foundation.owl
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd11foundation.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		rename --mappings config/icd11foundation-property-map.sssom.tsv \
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select individuals \

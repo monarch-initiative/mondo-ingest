@@ -55,12 +55,11 @@ When `mondo-ingest-odk.yaml` is edited and `update_repo` is run, a new `componen
 `src/ontology/Makefile`. This essentially downloads a copy of the source. But, for it to be used in `mondo-ingest`, it 
 needs to be modified. This is done by creating a `$(COMPONENTSDIR)/omim.owl` goal in `mondo-ingest.Makefile` which runs 
 a composite `robot` command. Here are some sections you'll likely want to add that command:  
-- `rename --mappings config/SOURCE-property-map.sssom.tsv`: You'll notice that there are two other lines on most goals 
-for `property-map.sssom.tsv` and `property-map-2.sssom.tsv`. These handle some common renamings. However, 
-if your source has any properties that need to be renamed which are specific to that source, then you should create a 
-new file for that. While doing this, it might be useful to check any other `SOURCE-property-map.sssom.tsv` files to see 
-if they share any of the same property renamings. If so, it might be a good idea to move them to 
-`property-map.sssom.tsv` instead.
+- `rename --mappings config/SOURCE-property-map.sssom.tsv`: You'll notice that all components goals have a such a line 
+using `property-map.sssom.tsv`. This is for some common property renamings. However, if your source has any properties 
+that need to be renamed which are specific to that source, then you should create a new file for that. While doing this,
+ it might be useful to check any other `SOURCE-property-map.sssom.tsv` files to see if they share any of the same  
+property renamings. If so, it might be a good idea to move them to `property-map.sssom.tsv` instead.
 - `query --update ../sparql/SPARQL.ru`: There may be more complex modifications that need to be made to the ontology. If
  so, this can be done by 1 or more SPARQL queries.
 - `remove -T config/properties.txt --select complement --select properties --trim true`: `properties.txt` contains a 
