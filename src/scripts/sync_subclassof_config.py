@@ -14,6 +14,7 @@ TMP_DIR = ONTOLOGY_DIR / 'tmp'
 METADATA_DIR = ONTOLOGY_DIR / 'metadata'
 IN_MONDO_ONLY_FILE_STEM = '.subclass.direct-in-mondo-only.tsv'
 COLLATE_IN_MONDO_ONLY_DEFAULT_PATH = REPORTS_DIR / 'sync-subClassOf.direct-in-mondo-only.tsv'
+OUTPATH_SELF_PARENTAGE = REPORTS_DIR / 'sync-subClassOf.added.self_parentage_issues.tsv'
 ROBOT_SUBHEADER = [{
     'subject_mondo_id': 'ID',
     'subject_mondo_label': '',

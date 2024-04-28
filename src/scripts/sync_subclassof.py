@@ -5,7 +5,7 @@ Resources
 - GitHub PR: https://github.com/monarch-initiative/mondo-ingest/pull/363
 - Google doc about cases https://docs.google.com/document/d/1H8fJKiKD-L1tfS-2LJu8t0_2YXJ1PQJ_7Zkoj7Vf7xA/edit#heading=h.9hixairfgxa1
 
-todo's
+todo's (minor)
  1. Simplify: Set[RELATIONSHIP] _source_edges vars: (sub, rdfs:subClassOf, pred) --> (sub, pred) . This whole pipeline
  is only about subclass rels, so including it is redundant.
  2. reports/sync-subClassOf.confirmed.tsv updates
@@ -51,13 +51,15 @@ from oaklib.interfaces.basic_ontology_interface import RELATIONSHIP
 from oaklib.interfaces.obograph_interface import GraphTraversalMethod
 from oaklib.types import CURIE
 
+from src.scripts.sync_subclassof_collate_self_parentage import collate_self_parentage
+
 HERE = Path(os.path.abspath(os.path.dirname(__file__)))
 SRC_DIR = HERE.parent
 PROJECT_ROOT = SRC_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 from src.scripts.sync_subclassof_collate_direct_in_mondo_only import collate_direct_in_mondo_only
 from src.scripts.sync_subclassof_config import EX_DEFAULTS, IN_MONDO_ONLY_FILE_STEM, METADATA_DIR, REPORTS_DIR, \
-    ROBOT_SUBHEADER, TMP_DIR
+    ROBOT_SUBHEADER, TMP_DIR, OUTPATH_SELF_PARENTAGE
 from src.scripts.utils import CACHE_DIR, MONDO_PREFIX_MAP, PREFIX_MAP, get_owned_prefix_map
 
 
@@ -411,6 +413,11 @@ def sync_subclassof(
     df3_obs.to_csv(outpath_added_obsolete, sep='\t', index=False)
     df3 = pd.concat([pd.DataFrame(subheader), df3])
     df3.to_csv(outpath_added, sep='\t', index=False)
+    # - issue: Mondo IDs subClassed to themselves. See: https://github.com/monarch-initiative/mondo-ingest/issues/400
+    df3_self_parentage = df3[df3['subject_mondo_id'] == df3['object_mondo_id']]
+    if len(df3_self_parentage) > 0:
+        include_header = not os.path.exists(OUTPATH_SELF_PARENTAGE)
+        df3_self_parentage.to_csv(OUTPATH_SELF_PARENTAGE, sep='\t', index=False, mode='a', header=include_header)
 
     # Case 5: SCR is direct in Mondo, and not in the source at all
     rels_mondo_raw_all: List[RELATIONSHIP] = [x for x in mondo_db.relationships(
@@ -484,7 +491,9 @@ def cli():  # todo: #remove-temp-defaults
 
 def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
     """Run with default settings"""
-    ontologies = ['ordo', 'doid', 'icd10cm', 'icd10who', 'omim', 'ncit']
+    if os.path.exists(OUTPATH_SELF_PARENTAGE):
+        os.remove(OUTPATH_SELF_PARENTAGE)
+    ontologies = ['ordo', 'doid', 'icd10cm', 'icd10who', 'icd11foundation', 'omim', 'ncit']
     for name in ontologies:
         sync_subclassof(**{
             'outpath_added': str(REPORTS_DIR / f'{name}.subclass.added.robot.tsv'),
@@ -497,6 +506,7 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
             'use_cache': use_cache
         })
     collate_direct_in_mondo_only()
+    collate_self_parentage()
 
 
 if __name__ == '__main__':
