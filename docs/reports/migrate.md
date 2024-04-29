@@ -4,10 +4,10 @@
 | [GARD](./migrate_gard.md)                       | 9,370  |
 | [DOID](./migrate_doid.md)                       | 42     |
 | [ORDO](./migrate_ordo.md)                       | 26     |
-| [OMIM](./migrate_omim.md)                       | 24     |
 | [NCIT](./migrate_ncit.md)                       | 2,176  |
 | [ICD10WHO](./migrate_icd10who.md)               | 119    |
 | [ICD11FOUNDATION](./migrate_icd11foundation.md) | 10,581 |
+| [OMIM](./migrate_omim.md)                       | 10     |
 | [ICD10CM](./migrate_icd10cm.md)                 | 1,889  |
 
 ### Codebook
