@@ -1,8 +1,8 @@
 # Mapped deprecated terms
 | Ontology                                                  |   Tot deprecated in Mondo |
 |:----------------------------------------------------------|--------------------------:|
-| [OMIM](./mapped_deprecated_omim.md)                       |                        46 |
-| [DOID](./mapped_deprecated_doid.md)                       |                         4 |
+| [DOID](./mapped_deprecated_doid.md)                       |                         5 |
+| [OMIM](./mapped_deprecated_omim.md)                       |                        45 |
 | [ORDO](./mapped_deprecated_ordo.md)                       |                       225 |
 | [NCIT](./mapped_deprecated_ncit.md)                       |                        12 |
 | [GARD](./mapped_deprecated_gard.md)                       |                         0 |
