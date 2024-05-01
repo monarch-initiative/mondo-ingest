@@ -160,15 +160,15 @@ DOID:0050148	laryngotracheitis	oboInOwl:hasDbXref	UMLS:C0155837	semapv:Unspecifi
 DOID:0050152	aspiration pneumonia	oboInOwl:hasDbXref	ICD10CM:J69.0	semapv:UnspecifiedMatching
 DOID:0050152	aspiration pneumonia	oboInOwl:hasDbXref	MESH:D011015	semapv:UnspecifiedMatching
 DOID:0050152	aspiration pneumonia	oboInOwl:hasDbXref	UMLS:C0032290	semapv:UnspecifiedMatching
-DOID:0050156	idiopathic pulmonary fibrosis	oboInOwl:hasDbXref	EFO:0000768	semapv:UnspecifiedMatching
-DOID:0050156	idiopathic pulmonary fibrosis	oboInOwl:hasDbXref	GARD:8609	semapv:UnspecifiedMatching
-DOID:0050156	idiopathic pulmonary fibrosis	oboInOwl:hasDbXref	ICD10CM:J84.112	semapv:UnspecifiedMatching
-DOID:0050156	idiopathic pulmonary fibrosis	oboInOwl:hasDbXref	ICD9CM:516.31	semapv:UnspecifiedMatching
-DOID:0050156	idiopathic pulmonary fibrosis	oboInOwl:hasDbXref	MESH:D054990	semapv:UnspecifiedMatching
-DOID:0050156	idiopathic pulmonary fibrosis	oboInOwl:hasDbXref	NCI:C35716	semapv:UnspecifiedMatching
-DOID:0050156	idiopathic pulmonary fibrosis	oboInOwl:hasDbXref	OMIM:178500	semapv:UnspecifiedMatching
-DOID:0050156	idiopathic pulmonary fibrosis	oboInOwl:hasDbXref	UMLS:C1800706	semapv:UnspecifiedMatching
-DOID:0050156	idiopathic pulmonary fibrosis	skos:exactMatch	OMIM:178500	semapv:UnspecifiedMatching
+DOID:0050156	interstitial lung disease 2	oboInOwl:hasDbXref	EFO:0000768	semapv:UnspecifiedMatching
+DOID:0050156	interstitial lung disease 2	oboInOwl:hasDbXref	GARD:8609	semapv:UnspecifiedMatching
+DOID:0050156	interstitial lung disease 2	oboInOwl:hasDbXref	ICD10CM:J84.112	semapv:UnspecifiedMatching
+DOID:0050156	interstitial lung disease 2	oboInOwl:hasDbXref	ICD9CM:516.31	semapv:UnspecifiedMatching
+DOID:0050156	interstitial lung disease 2	oboInOwl:hasDbXref	MESH:D054990	semapv:UnspecifiedMatching
+DOID:0050156	interstitial lung disease 2	oboInOwl:hasDbXref	NCI:C35716	semapv:UnspecifiedMatching
+DOID:0050156	interstitial lung disease 2	oboInOwl:hasDbXref	OMIM:178500	semapv:UnspecifiedMatching
+DOID:0050156	interstitial lung disease 2	oboInOwl:hasDbXref	UMLS:C1800706	semapv:UnspecifiedMatching
+DOID:0050156	interstitial lung disease 2	skos:exactMatch	OMIM:178500	semapv:UnspecifiedMatching
 DOID:0050157	cryptogenic organizing pneumonia	oboInOwl:hasDbXref	GARD:1620	semapv:UnspecifiedMatching
 DOID:0050157	cryptogenic organizing pneumonia	oboInOwl:hasDbXref	ICD10CM:J84.116	semapv:UnspecifiedMatching
 DOID:0050157	cryptogenic organizing pneumonia	oboInOwl:hasDbXref	ICD9CM:516.36	semapv:UnspecifiedMatching
@@ -699,8 +699,7 @@ DOID:0050557	congenital muscular dystrophy	oboInOwl:hasDbXref	ORDO:97242	semapv:
 DOID:0050557	congenital muscular dystrophy	oboInOwl:hasDbXref	UMLS:C2937300	semapv:UnspecifiedMatching
 DOID:0050557	congenital muscular dystrophy	skos:exactMatch	OMIM:254100	semapv:UnspecifiedMatching
 DOID:0050558	Ullrich congenital muscular dystrophy	oboInOwl:hasDbXref	GARD:4769	semapv:UnspecifiedMatching
-DOID:0050558	Ullrich congenital muscular dystrophy	oboInOwl:hasDbXref	OMIM:254090	semapv:UnspecifiedMatching
-DOID:0050558	Ullrich congenital muscular dystrophy	skos:exactMatch	OMIM:254090	semapv:UnspecifiedMatching
+DOID:0050558	Ullrich congenital muscular dystrophy	oboInOwl:hasDbXref	ORDO:75840	semapv:UnspecifiedMatching
 DOID:0050559	Fukuyama congenital muscular dystrophy	oboInOwl:hasDbXref	GARD:6475	semapv:UnspecifiedMatching
 DOID:0050559	Fukuyama congenital muscular dystrophy	oboInOwl:hasDbXref	OMIM:253800	semapv:UnspecifiedMatching
 DOID:0050559	Fukuyama congenital muscular dystrophy	oboInOwl:hasDbXref	ORDO:272	semapv:UnspecifiedMatching
@@ -2481,6 +2480,7 @@ DOID:0060288	omodysplasia	oboInOwl:hasDbXref	OMIMPS:258315	semapv:UnspecifiedMat
 DOID:0060288	omodysplasia	oboInOwl:hasDbXref	ORDO:2733	semapv:UnspecifiedMatching
 DOID:0060288	omodysplasia	oboInOwl:hasDbXref	UMLS:C4510897	semapv:UnspecifiedMatching
 DOID:0060288	omodysplasia	skos:exactMatch	OMIMPS:258315	semapv:UnspecifiedMatching
+DOID:0060289	Ohdo syndrome	oboInOwl:hasDbXref	GARD:3348	semapv:UnspecifiedMatching
 DOID:0060289	Ohdo syndrome	oboInOwl:hasDbXref	MESH:C536232	semapv:UnspecifiedMatching
 DOID:0060289	Ohdo syndrome	oboInOwl:hasDbXref	OMIM:249620	semapv:UnspecifiedMatching
 DOID:0060289	Ohdo syndrome	oboInOwl:hasDbXref	OMIM:300895	semapv:UnspecifiedMatching
@@ -4624,7 +4624,7 @@ DOID:0060891	Parkinson's disease 19A	skos:exactMatch	OMIM:615528	semapv:Unspecif
 DOID:0060892	late onset Parkinson's disease	oboInOwl:hasDbXref	OMIM:168600	semapv:UnspecifiedMatching
 DOID:0060892	late onset Parkinson's disease	oboInOwl:hasDbXref	ORDO:411602	semapv:UnspecifiedMatching
 DOID:0060892	late onset Parkinson's disease	skos:exactMatch	OMIM:168600	semapv:UnspecifiedMatching
-DOID:0060894	early-onset Parkinson's disease	oboInOwl:hasDbXref	ORDO:391411	semapv:UnspecifiedMatching
+DOID:0060894	early-onset Parkinson's disease	oboInOwl:hasDbXref	ORDO:2828	semapv:UnspecifiedMatching
 DOID:0060895	Parkinson's disease 4	oboInOwl:hasDbXref	ICD10CM:G20	semapv:UnspecifiedMatching
 DOID:0060895	Parkinson's disease 4	oboInOwl:hasDbXref	OMIM:605543	semapv:UnspecifiedMatching
 DOID:0060895	Parkinson's disease 4	skos:exactMatch	OMIM:605543	semapv:UnspecifiedMatching
@@ -4714,11 +4714,11 @@ DOID:0060935	infantile hypotonia with psychomotor retardation and characteristic
 DOID:0060935	infantile hypotonia with psychomotor retardation and characteristic facies-3	oboInOwl:hasDbXref	ORDO:488632	semapv:UnspecifiedMatching
 DOID:0060935	infantile hypotonia with psychomotor retardation and characteristic facies-3	oboInOwl:hasDbXref	UMLS:C5567480	semapv:UnspecifiedMatching
 DOID:0060935	infantile hypotonia with psychomotor retardation and characteristic facies-3	skos:exactMatch	OMIM:616900	semapv:UnspecifiedMatching
-DOID:0060936	dystonia 28 childhood-onset	oboInOwl:hasDbXref	ICD10:G24.8	semapv:UnspecifiedMatching
-DOID:0060936	dystonia 28 childhood-onset	oboInOwl:hasDbXref	OMIM:617284	semapv:UnspecifiedMatching
-DOID:0060936	dystonia 28 childhood-onset	oboInOwl:hasDbXref	ORDO:589618	semapv:UnspecifiedMatching
-DOID:0060936	dystonia 28 childhood-onset	oboInOwl:hasDbXref	UMLS:C4310633	semapv:UnspecifiedMatching
-DOID:0060936	dystonia 28 childhood-onset	skos:exactMatch	OMIM:617284	semapv:UnspecifiedMatching
+DOID:0060936	dystonia 28, childhood-onset	oboInOwl:hasDbXref	ICD10:G24.8	semapv:UnspecifiedMatching
+DOID:0060936	dystonia 28, childhood-onset	oboInOwl:hasDbXref	OMIM:617284	semapv:UnspecifiedMatching
+DOID:0060936	dystonia 28, childhood-onset	oboInOwl:hasDbXref	ORDO:589618	semapv:UnspecifiedMatching
+DOID:0060936	dystonia 28, childhood-onset	oboInOwl:hasDbXref	UMLS:C4310633	semapv:UnspecifiedMatching
+DOID:0060936	dystonia 28, childhood-onset	skos:exactMatch	OMIM:617284	semapv:UnspecifiedMatching
 DOID:0060937	dystonia 30	oboInOwl:hasDbXref	OMIM:619291	semapv:UnspecifiedMatching
 DOID:0060937	dystonia 30	skos:exactMatch	OMIM:619291	semapv:UnspecifiedMatching
 DOID:0060938	dystonia 31	oboInOwl:hasDbXref	OMIM:619565	semapv:UnspecifiedMatching
@@ -4727,15 +4727,33 @@ DOID:0060939	dystonia 32	oboInOwl:hasDbXref	OMIM:619637	semapv:UnspecifiedMatchi
 DOID:0060939	dystonia 32	skos:exactMatch	OMIM:619637	semapv:UnspecifiedMatching
 DOID:0060940	dystonia 33	oboInOwl:hasDbXref	OMIM:619687	semapv:UnspecifiedMatching
 DOID:0060940	dystonia 33	skos:exactMatch	OMIM:619687	semapv:UnspecifiedMatching
-DOID:0060944	episodic kinesigenic dyskinesia 3	oboInOwl:hasDbXref	OMIM:620245	semapv:UnspecifiedMatching
-DOID:0060944	episodic kinesigenic dyskinesia 3	skos:exactMatch	OMIM:620245	semapv:UnspecifiedMatching
+DOID:0060941	interstitial lung disease 1	oboInOwl:hasDbXref	GARD:8609	semapv:UnspecifiedMatching
+DOID:0060941	interstitial lung disease 1	oboInOwl:hasDbXref	OMIM:619611	semapv:UnspecifiedMatching
+DOID:0060941	interstitial lung disease 1	oboInOwl:hasDbXref	ORDO:2032	semapv:UnspecifiedMatching
+DOID:0060941	interstitial lung disease 1	skos:exactMatch	OMIM:619611	semapv:UnspecifiedMatching
+DOID:0060942	Ullrich congenital muscular dystrophy 1B	oboInOwl:hasDbXref	OMIM:620727	semapv:UnspecifiedMatching
+DOID:0060942	Ullrich congenital muscular dystrophy 1B	skos:exactMatch	OMIM:620727	semapv:UnspecifiedMatching
+DOID:0060943	Ullrich congenital muscular dystrophy 1C	oboInOwl:hasDbXref	OMIM:620728	semapv:UnspecifiedMatching
+DOID:0060943	Ullrich congenital muscular dystrophy 1C	skos:exactMatch	OMIM:620728	semapv:UnspecifiedMatching
+DOID:0060944	Ullrich congenital muscular dystrophy 2	oboInOwl:hasDbXref	OMIM:616470	semapv:UnspecifiedMatching
+DOID:0060944	Ullrich congenital muscular dystrophy 2	skos:exactMatch	OMIM:616470	semapv:UnspecifiedMatching
+DOID:0060945	amelogenesis imperfecta type 1K	oboInOwl:hasDbXref	GARD:5791	semapv:UnspecifiedMatching
+DOID:0060945	amelogenesis imperfecta type 1K	oboInOwl:hasDbXref	OMIM:620104	semapv:UnspecifiedMatching
+DOID:0060945	amelogenesis imperfecta type 1K	oboInOwl:hasDbXref	ORDO:88661	semapv:UnspecifiedMatching
+DOID:0060945	amelogenesis imperfecta type 1K	skos:exactMatch	OMIM:620104	semapv:UnspecifiedMatching
+DOID:0060946	Ullrich congenital muscular dystrophy 1A	oboInOwl:hasDbXref	OMIM:254090	semapv:UnspecifiedMatching
+DOID:0060946	Ullrich congenital muscular dystrophy 1A	skos:exactMatch	OMIM:254090	semapv:UnspecifiedMatching
+DOID:0060947	autosomal recessive intellectual developmental disorder 82	oboInOwl:hasDbXref	OMIM:620779	semapv:UnspecifiedMatching
+DOID:0060947	autosomal recessive intellectual developmental disorder 82	skos:exactMatch	OMIM:620779	semapv:UnspecifiedMatching
 DOID:0060955	dystonia 35, childhood-onset	oboInOwl:hasDbXref	OMIM:619921	semapv:UnspecifiedMatching
 DOID:0060955	dystonia 35, childhood-onset	skos:exactMatch	OMIM:619921	semapv:UnspecifiedMatching
 DOID:0060956	dystonia 37, early-onset with striatal lesions	oboInOwl:hasDbXref	OMIM:620427	semapv:UnspecifiedMatching
 DOID:0060956	dystonia 37, early-onset with striatal lesions	skos:exactMatch	OMIM:620427	semapv:UnspecifiedMatching
 DOID:0060957	myoclonic dystonia 34	oboInOwl:hasDbXref	OMIM:619724	semapv:UnspecifiedMatching
 DOID:0060957	myoclonic dystonia 34	skos:exactMatch	OMIM:619724	semapv:UnspecifiedMatching
+DOID:0060963	dystonia, DOPA-responsive	oboInOwl:hasDbXref	ICD10:G24.1	semapv:UnspecifiedMatching
 DOID:0060963	dystonia, DOPA-responsive	oboInOwl:hasDbXref	OMIM:128230	semapv:UnspecifiedMatching
+DOID:0060963	dystonia, DOPA-responsive	oboInOwl:hasDbXref	ORDO:98808	semapv:UnspecifiedMatching
 DOID:0060963	dystonia, DOPA-responsive	skos:exactMatch	OMIM:128230	semapv:UnspecifiedMatching
 DOID:0060966	dystonia 22, juvenile-onset	oboInOwl:hasDbXref	OMIM:620453	semapv:UnspecifiedMatching
 DOID:0060966	dystonia 22, juvenile-onset	skos:exactMatch	OMIM:620453	semapv:UnspecifiedMatching
@@ -8087,8 +8105,8 @@ DOID:0080768	pyridoxine-dependent epilepsy	skos:exactMatch	SNOMEDCT_US_2020_03_0
 DOID:0080769	early-onset vitamin B6-dependent epilepsy 1	oboInOwl:hasDbXref	OMIM:617290	semapv:UnspecifiedMatching
 DOID:0080769	early-onset vitamin B6-dependent epilepsy 1	skos:exactMatch	OMIM:617290	semapv:UnspecifiedMatching
 DOID:0080769	early-onset vitamin B6-dependent epilepsy 1	skos:exactMatch	OMIM:617290	semapv:UnspecifiedMatching
-DOID:0080770	autosomal dominant  beta thalassemia	oboInOwl:hasDbXref	OMIM:603902	semapv:UnspecifiedMatching
-DOID:0080770	autosomal dominant  beta thalassemia	skos:exactMatch	OMIM:603902	semapv:UnspecifiedMatching
+DOID:0080770	autosomal dominant beta thalassemia	oboInOwl:hasDbXref	OMIM:603902	semapv:UnspecifiedMatching
+DOID:0080770	autosomal dominant beta thalassemia	skos:exactMatch	OMIM:603902	semapv:UnspecifiedMatching
 DOID:0080771	beta-thalassemia major	oboInOwl:hasDbXref	NCI:C129699	semapv:UnspecifiedMatching
 DOID:0080771	beta-thalassemia major	oboInOwl:hasDbXref	OMIM:187550	semapv:UnspecifiedMatching
 DOID:0080771	beta-thalassemia major	oboInOwl:hasDbXref	ORDO:231214	semapv:UnspecifiedMatching
@@ -9406,6 +9424,23 @@ DOID:0081443	Stolerman neurodevelopmental syndrome	oboInOwl:hasDbXref	OMIM:61850
 DOID:0081443	Stolerman neurodevelopmental syndrome	skos:exactMatch	OMIM:618505	semapv:UnspecifiedMatching
 DOID:0081444	neurodevelopmental disorder with poor growth and behavioral abnormalities	oboInOwl:hasDbXref	OMIM:620242	semapv:UnspecifiedMatching
 DOID:0081444	neurodevelopmental disorder with poor growth and behavioral abnormalities	skos:exactMatch	OMIM:620242	semapv:UnspecifiedMatching
+DOID:0081445	sickle cell disease	oboInOwl:hasDbXref	OMIM:603903	semapv:UnspecifiedMatching
+DOID:0081445	sickle cell disease	skos:exactMatch	OMIM:603903	semapv:UnspecifiedMatching
+DOID:0081446	dimethylglycine dehydrogenase deficiency	oboInOwl:hasDbXref	OMIM:605850	semapv:UnspecifiedMatching
+DOID:0081446	dimethylglycine dehydrogenase deficiency	oboInOwl:hasDbXref	ORDO:243343	semapv:UnspecifiedMatching
+DOID:0081446	dimethylglycine dehydrogenase deficiency	skos:exactMatch	OMIM:605850	semapv:UnspecifiedMatching
+DOID:0081447	cone-rod dystrophy 21	oboInOwl:hasDbXref	OMIM:616502	semapv:UnspecifiedMatching
+DOID:0081447	cone-rod dystrophy 21	skos:exactMatch	OMIM:616502	semapv:UnspecifiedMatching
+DOID:0081448	cone-rod dystrophy 22	oboInOwl:hasDbXref	OMIM:619531	semapv:UnspecifiedMatching
+DOID:0081448	cone-rod dystrophy 22	skos:exactMatch	OMIM:619531	semapv:UnspecifiedMatching
+DOID:0081449	cone-rod dystrophy 24	oboInOwl:hasDbXref	OMIM:620342	semapv:UnspecifiedMatching
+DOID:0081449	cone-rod dystrophy 24	skos:exactMatch	OMIM:620342	semapv:UnspecifiedMatching
+DOID:0081450	hyperimmunoglobulinemia D periodic fever syndrome	oboInOwl:hasDbXref	GARD:2788	semapv:UnspecifiedMatching
+DOID:0081450	hyperimmunoglobulinemia D periodic fever syndrome	oboInOwl:hasDbXref	OMIM:260920	semapv:UnspecifiedMatching
+DOID:0081450	hyperimmunoglobulinemia D periodic fever syndrome	oboInOwl:hasDbXref	ORDO:343	semapv:UnspecifiedMatching
+DOID:0081450	hyperimmunoglobulinemia D periodic fever syndrome	skos:exactMatch	OMIM:260920	semapv:UnspecifiedMatching
+DOID:0081451	PFAPA syndrome	oboInOwl:hasDbXref	GARD:5657	semapv:UnspecifiedMatching
+DOID:0081451	PFAPA syndrome	oboInOwl:hasDbXref	ORDO:42642	semapv:UnspecifiedMatching
 DOID:0090001	Fraser syndrome	oboInOwl:hasDbXref	GARD:6465	semapv:UnspecifiedMatching
 DOID:0090001	Fraser syndrome	oboInOwl:hasDbXref	ICD10CM:Q87.0	semapv:UnspecifiedMatching
 DOID:0090001	Fraser syndrome	oboInOwl:hasDbXref	MESH:D058497	semapv:UnspecifiedMatching
@@ -9603,10 +9638,10 @@ DOID:0090044	dystonia 9	oboInOwl:hasDbXref	ICD10CM:G24.8	semapv:UnspecifiedMatch
 DOID:0090044	dystonia 9	oboInOwl:hasDbXref	OMIM:601042	semapv:UnspecifiedMatching
 DOID:0090044	dystonia 9	oboInOwl:hasDbXref	ORDO:53583	semapv:UnspecifiedMatching
 DOID:0090044	dystonia 9	skos:exactMatch	OMIM:601042	semapv:UnspecifiedMatching
-DOID:0090045	childhood onset GLUT1 deficiency syndrome 2	oboInOwl:hasDbXref	ICD10CM:G24.8	semapv:UnspecifiedMatching
-DOID:0090045	childhood onset GLUT1 deficiency syndrome 2	oboInOwl:hasDbXref	OMIM:612126	semapv:UnspecifiedMatching
-DOID:0090045	childhood onset GLUT1 deficiency syndrome 2	oboInOwl:hasDbXref	ORDO:98811	semapv:UnspecifiedMatching
-DOID:0090045	childhood onset GLUT1 deficiency syndrome 2	skos:exactMatch	OMIM:612126	semapv:UnspecifiedMatching
+DOID:0090045	childhood-onset GLUT1 deficiency syndrome 2	oboInOwl:hasDbXref	ICD10CM:G24.8	semapv:UnspecifiedMatching
+DOID:0090045	childhood-onset GLUT1 deficiency syndrome 2	oboInOwl:hasDbXref	OMIM:612126	semapv:UnspecifiedMatching
+DOID:0090045	childhood-onset GLUT1 deficiency syndrome 2	oboInOwl:hasDbXref	ORDO:98811	semapv:UnspecifiedMatching
+DOID:0090045	childhood-onset GLUT1 deficiency syndrome 2	skos:exactMatch	OMIM:612126	semapv:UnspecifiedMatching
 DOID:0090046	dystonia 21	oboInOwl:hasDbXref	ICD10CM:G24.1	semapv:UnspecifiedMatching
 DOID:0090046	dystonia 21	oboInOwl:hasDbXref	OMIM:614588	semapv:UnspecifiedMatching
 DOID:0090046	dystonia 21	oboInOwl:hasDbXref	ORDO:306734	semapv:UnspecifiedMatching
@@ -19108,11 +19143,9 @@ DOID:10923	sickle cell anemia	oboInOwl:hasDbXref	MESH:D000755	semapv:Unspecified
 DOID:10923	sickle cell anemia	oboInOwl:hasDbXref	MESH:D006450	semapv:UnspecifiedMatching
 DOID:10923	sickle cell anemia	oboInOwl:hasDbXref	NCI:C34383	semapv:UnspecifiedMatching
 DOID:10923	sickle cell anemia	oboInOwl:hasDbXref	NCI:C34676	semapv:UnspecifiedMatching
-DOID:10923	sickle cell anemia	oboInOwl:hasDbXref	OMIM:603903	semapv:UnspecifiedMatching
 DOID:10923	sickle cell anemia	oboInOwl:hasDbXref	ORDO:232	semapv:UnspecifiedMatching
 DOID:10923	sickle cell anemia	oboInOwl:hasDbXref	UMLS:C0002895	semapv:UnspecifiedMatching
 DOID:10923	sickle cell anemia	oboInOwl:hasDbXref	UMLS:C0019034	semapv:UnspecifiedMatching
-DOID:10923	sickle cell anemia	skos:exactMatch	OMIM:603903	semapv:UnspecifiedMatching
 DOID:10927	gastrojejunal ulcer	oboInOwl:hasDbXref	ICD10CM:K28.0	semapv:UnspecifiedMatching
 DOID:10927	gastrojejunal ulcer	oboInOwl:hasDbXref	ICD9CM:534.0	semapv:UnspecifiedMatching
 DOID:10927	gastrojejunal ulcer	oboInOwl:hasDbXref	UMLS:C0156042	semapv:UnspecifiedMatching
@@ -19254,11 +19287,11 @@ DOID:10976	membranous glomerulonephritis	oboInOwl:hasDbXref	ICD10CM:N03.2	semapv
 DOID:10976	membranous glomerulonephritis	oboInOwl:hasDbXref	MESH:D015433	semapv:UnspecifiedMatching
 DOID:10976	membranous glomerulonephritis	oboInOwl:hasDbXref	NCI:C34645	semapv:UnspecifiedMatching
 DOID:10976	membranous glomerulonephritis	oboInOwl:hasDbXref	UMLS:C0017665	semapv:UnspecifiedMatching
-DOID:1098	fetal erythroblastosis	oboInOwl:hasDbXref	ICD10CM:P55	semapv:UnspecifiedMatching
-DOID:1098	fetal erythroblastosis	oboInOwl:hasDbXref	ICD9CM:773	semapv:UnspecifiedMatching
-DOID:1098	fetal erythroblastosis	oboInOwl:hasDbXref	MESH:D004899	semapv:UnspecifiedMatching
-DOID:1098	fetal erythroblastosis	oboInOwl:hasDbXref	NCI:C101304	semapv:UnspecifiedMatching
-DOID:1098	fetal erythroblastosis	oboInOwl:hasDbXref	UMLS:C0014761	semapv:UnspecifiedMatching
+DOID:1098	hemolytic disease of the fetus	oboInOwl:hasDbXref	ICD10CM:P55	semapv:UnspecifiedMatching
+DOID:1098	hemolytic disease of the fetus	oboInOwl:hasDbXref	ICD9CM:773	semapv:UnspecifiedMatching
+DOID:1098	hemolytic disease of the fetus	oboInOwl:hasDbXref	MESH:D004899	semapv:UnspecifiedMatching
+DOID:1098	hemolytic disease of the fetus	oboInOwl:hasDbXref	NCI:C101304	semapv:UnspecifiedMatching
+DOID:1098	hemolytic disease of the fetus	oboInOwl:hasDbXref	UMLS:C0014761	semapv:UnspecifiedMatching
 DOID:10983	Alport syndrome	oboInOwl:hasDbXref	GARD:5785	semapv:UnspecifiedMatching
 DOID:10983	Alport syndrome	oboInOwl:hasDbXref	MESH:D009394	semapv:UnspecifiedMatching
 DOID:10983	Alport syndrome	oboInOwl:hasDbXref	ORDO:63	semapv:UnspecifiedMatching
@@ -22426,8 +22459,8 @@ DOID:1312	focal segmental glomerulosclerosis	skos:exactMatch	OMIMPS:603278	semap
 DOID:13120	protein-deficiency anemia	oboInOwl:hasDbXref	ICD10CM:D53.0	semapv:UnspecifiedMatching
 DOID:13120	protein-deficiency anemia	oboInOwl:hasDbXref	ICD9CM:281.4	semapv:UnspecifiedMatching
 DOID:13120	protein-deficiency anemia	oboInOwl:hasDbXref	UMLS:C0154290	semapv:UnspecifiedMatching
-DOID:13121	deficiency anemia	oboInOwl:hasDbXref	ICD9CM:281.9	semapv:UnspecifiedMatching
-DOID:13121	deficiency anemia	oboInOwl:hasDbXref	UMLS:C0041782	semapv:UnspecifiedMatching
+DOID:13121	obsolete deficiency anemia	oboInOwl:hasDbXref	ICD9CM:281.9	semapv:UnspecifiedMatching
+DOID:13121	obsolete deficiency anemia	oboInOwl:hasDbXref	UMLS:C0041782	semapv:UnspecifiedMatching
 DOID:13127	gonococcal spondylitis	oboInOwl:hasDbXref	ICD9CM:098.53	semapv:UnspecifiedMatching
 DOID:13127	gonococcal spondylitis	oboInOwl:hasDbXref	UMLS:C0153219	semapv:UnspecifiedMatching
 DOID:13129	severe pre-eclampsia	oboInOwl:hasDbXref	ICD9CM:642.50	semapv:UnspecifiedMatching
@@ -27759,15 +27792,15 @@ DOID:2986	IgA glomerulonephritis	oboInOwl:hasDbXref	NCI:C34643	semapv:Unspecifie
 DOID:2986	IgA glomerulonephritis	oboInOwl:hasDbXref	OMIM:161950	semapv:UnspecifiedMatching
 DOID:2986	IgA glomerulonephritis	oboInOwl:hasDbXref	UMLS:C0017661	semapv:UnspecifiedMatching
 DOID:2986	IgA glomerulonephritis	skos:exactMatch	OMIM:161950	semapv:UnspecifiedMatching
-DOID:2987	familial mediterranean fever	oboInOwl:hasDbXref	GARD:6421	semapv:UnspecifiedMatching
-DOID:2987	familial mediterranean fever	oboInOwl:hasDbXref	ICD10CM:M04.1	semapv:UnspecifiedMatching
-DOID:2987	familial mediterranean fever	oboInOwl:hasDbXref	ICD9CM:277.31	semapv:UnspecifiedMatching
-DOID:2987	familial mediterranean fever	oboInOwl:hasDbXref	MESH:D010505	semapv:UnspecifiedMatching
-DOID:2987	familial mediterranean fever	oboInOwl:hasDbXref	NCI:C84707	semapv:UnspecifiedMatching
-DOID:2987	familial mediterranean fever	oboInOwl:hasDbXref	OMIM:134610	semapv:UnspecifiedMatching
-DOID:2987	familial mediterranean fever	oboInOwl:hasDbXref	OMIM:249100	semapv:UnspecifiedMatching
-DOID:2987	familial mediterranean fever	oboInOwl:hasDbXref	ORDO:342	semapv:UnspecifiedMatching
-DOID:2987	familial mediterranean fever	oboInOwl:hasDbXref	UMLS:C0031069	semapv:UnspecifiedMatching
+DOID:2987	familial Mediterranean fever	oboInOwl:hasDbXref	GARD:6421	semapv:UnspecifiedMatching
+DOID:2987	familial Mediterranean fever	oboInOwl:hasDbXref	ICD10CM:M04.1	semapv:UnspecifiedMatching
+DOID:2987	familial Mediterranean fever	oboInOwl:hasDbXref	ICD9CM:277.31	semapv:UnspecifiedMatching
+DOID:2987	familial Mediterranean fever	oboInOwl:hasDbXref	MESH:D010505	semapv:UnspecifiedMatching
+DOID:2987	familial Mediterranean fever	oboInOwl:hasDbXref	NCI:C84707	semapv:UnspecifiedMatching
+DOID:2987	familial Mediterranean fever	oboInOwl:hasDbXref	OMIM:134610	semapv:UnspecifiedMatching
+DOID:2987	familial Mediterranean fever	oboInOwl:hasDbXref	OMIM:249100	semapv:UnspecifiedMatching
+DOID:2987	familial Mediterranean fever	oboInOwl:hasDbXref	ORDO:342	semapv:UnspecifiedMatching
+DOID:2987	familial Mediterranean fever	oboInOwl:hasDbXref	UMLS:C0031069	semapv:UnspecifiedMatching
 DOID:2988	antiphospholipid syndrome	oboInOwl:hasDbXref	GARD:5824	semapv:UnspecifiedMatching
 DOID:2988	antiphospholipid syndrome	oboInOwl:hasDbXref	ICD10CM:D68.61	semapv:UnspecifiedMatching
 DOID:2988	antiphospholipid syndrome	oboInOwl:hasDbXref	MESH:D016736	semapv:UnspecifiedMatching
@@ -27972,7 +28005,9 @@ DOID:3082	interstitial lung disease	oboInOwl:hasDbXref	GARD:13336	semapv:Unspeci
 DOID:3082	interstitial lung disease	oboInOwl:hasDbXref	ICD10CM:J84.9	semapv:UnspecifiedMatching
 DOID:3082	interstitial lung disease	oboInOwl:hasDbXref	MESH:D017563	semapv:UnspecifiedMatching
 DOID:3082	interstitial lung disease	oboInOwl:hasDbXref	NCI:C164315	semapv:UnspecifiedMatching
+DOID:3082	interstitial lung disease	oboInOwl:hasDbXref	OMIMPS:619611	semapv:UnspecifiedMatching
 DOID:3082	interstitial lung disease	oboInOwl:hasDbXref	UMLS:C0206062	semapv:UnspecifiedMatching
+DOID:3082	interstitial lung disease	skos:exactMatch	OMIMPS:619611	semapv:UnspecifiedMatching
 DOID:3083	chronic obstructive pulmonary disease	oboInOwl:hasDbXref	EFO:0000341	semapv:UnspecifiedMatching
 DOID:3083	chronic obstructive pulmonary disease	oboInOwl:hasDbXref	ICD10CM:J44.9	semapv:UnspecifiedMatching
 DOID:3083	chronic obstructive pulmonary disease	oboInOwl:hasDbXref	MESH:D029424	semapv:UnspecifiedMatching

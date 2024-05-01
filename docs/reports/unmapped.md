@@ -6,9 +6,9 @@
 | [NCIT](./unmapped_ncit.md)                       | 187,170     | 166,382        | 5,166            | 5,154                     | 15,622                                    | 3,686                     | 11,936                      | 76.4%                     |
 | [ICD11FOUNDATION](./unmapped_icd11foundation.md) | 100,003     | 12,464         | 6,311            | 6,311                     | 81,232                                    | 0                         | 81,232                      | 100.0%                    |
 | [GARD](./unmapped_gard.md)                       | 12,004      | 0              | 0                | 0                         | 12,004                                    | 0                         | 12,004                      | 100.0%                    |
-| [ORDO](./unmapped_ordo.md)                       | 15,402      | 6,207          | 1,391            | 1,166                     | 9,195                                     | 9,102                     | 93                          | 1.0%                      |
-| [DOID](./unmapped_doid.md)                       | 14,019      | 2,654          | 2,482            | 2,468                     | 11,363                                    | 11,321                    | 42                          | 0.4%                      |
-| [OMIM](./unmapped_omim.md)                       | 29,287      | 19,221         | 1,362            | 1,316                     | 8,705                                     | 8,681                     | 24                          | 0.3%                      |
+| [ORDO](./unmapped_ordo.md)                       | 15,402      | 6,207          | 1,391            | 1,166                     | 9,195                                     | 9,123                     | 72                          | 0.8%                      |
+| [DOID](./unmapped_doid.md)                       | 14,033      | 2,655          | 2,483            | 2,468                     | 11,376                                    | 11,320                    | 56                          | 0.5%                      |
+| [OMIM](./unmapped_omim.md)                       | 29,307      | 19,232         | 1,362            | 1,317                     | 8,714                                     | 8,704                     | 10                          | 0.1%                      |
 
 `Ontology`: Name of ontology  
 `Tot terms`: Total terms in ontology  
