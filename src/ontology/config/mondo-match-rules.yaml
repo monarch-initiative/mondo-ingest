@@ -63,50 +63,50 @@ rules:
       weight: 2.0
 
   # - synonymizer:
-  #     the_rule: Remove parentheses bound info from the label.
+  #     description: Remove parentheses bound info from the label.
   #     match: r'\([^)]*\)'
   #     match_scope: "*"
   #     replacement: ""
 
   - synonymizer:
-      the_rule: Remove box brackets bound info from the label.
+      description: Remove box brackets bound info from the label.
       match: r'\[[^)]*\]'
       match_scope: "*"
       replacement: ""
 
   # - synonymizer:
-  #     the_rule: Remove abbreviations.
+  #     description: Remove abbreviations.
   #     match: r'\b[A-Z][a-zA-Z\.]*[A-Z]\b\.?' [a-zA-Z]*\d
   #     match_scope: "*"
   #     replacement: ""
 
   # - synonymizer:
-  #     the_rule: Remove abbreviations that end with a number in them.
+  #     description: Remove abbreviations that end with a number in them.
   #     match: r'[a-zA-Z]*\d[a-zA-Z]*'
   #     match_scope: "*"
   #     replacement: ""
   
   - synonymizer:
-      the_rule: Broad match terms with the term 'other' in them.
+      description: Broad match terms with the term 'other' in them.
       match: r'(?i)^Other '
       match_scope: "*"
       replacement: ""
       qualifier: "broad"
 
   - synonymizer:
-      the_rule: Replace disease with disorder in the label.
+      description: Replace disease with disorder in the label.
       match: r'disease'
       match_scope: "*"
       replacement: "disorder"
 
   - synonymizer:
-      the_rule: Replace numbers by "type number" in the label.
+      description: Replace numbers by "type number" in the label.
       match: r'(?<!type)\s(\d)'
       match_scope: "*"
       replacement: " type \\1"
 
   - synonymizer:
-      the_rule: Replace "'s" by "s" in the label.
+      description: Replace "'s" by "s" in the label.
       match: r'\'s'
       match_scope: "*"
       replacement: "s"
