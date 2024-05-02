@@ -596,6 +596,22 @@ update-jinja-sparql-queries:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
+
+#################
+##### Ad hoc ####
+#################
+tmp/ORDO_en_4.4.owl:
+	wget https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.4.owl -O $@
+
+tmp/ordo-subsets.tsv: tmp/ORDO_en_4.4.owl
+	$(ROBOT) query -i $< --query ../sparql/select-ordo-subsets.sparql $@
+
+reports/ordo-subsets.robot.template.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/ordo_subsets.py \
+	--mondo-mappings-path tmp/mondo.sssom.tsv \
+	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
+	--outpath $@
+
 #############################
 ########### Help ############
 #############################
