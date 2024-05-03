@@ -13,8 +13,8 @@ SUBSET_MAP = {
 }
 ROBOT_TEMPLATE_HEADER = {
     'mondo_id': 'ID',
-    'ordo_id': 'A oboInOwl:hasDbXref',
     'subset': 'A oboInOwl:inSubset',
+    'ordo_id': '>A oboInOwl:source',
 }
 
 
@@ -49,6 +49,7 @@ def create_ordo_subsets_robot_template(
         # - Strip annoying angle brackets from URIs
         df[fld] = df[fld].map(remove_angle_brackets)
         # - Compress class IDs
+        # TODO: Use the curies package here
         df[fld] = df[fld].map(lambda x: x.replace('http://www.orpha.net/ORDO/Orphanet_', 'Orphanet:'))
 
     # Map to mondo subset IDs
