@@ -8,6 +8,7 @@
 | DOID:0081404 | BCOR-CCNB3 sarcoma                                                        |
 | DOID:0070539 | Halperin-Birk syndrome                                                    |
 | DOID:0081441 | Nicolaides-Baraitser syndrome                                             |
+| DOID:0081451 | PFAPA syndrome                                                            |
 | DOID:0081440 | Peroxisome biogenesis disorder 10B                                        |
 | DOID:0081439 | Peroxisome biogenesis disorder 11B                                        |
 | DOID:0081433 | Peroxisome biogenesis disorder 4B                                         |
@@ -18,6 +19,12 @@
 | DOID:0081438 | Peroxisome biogenesis disorder 9B                                         |
 | DOID:0081443 | Stolerman neurodevelopmental syndrome                                     |
 | DOID:0081414 | TFEB-rearranged renal cell carcinoma                                      |
+| DOID:0060946 | Ullrich congenital muscular dystrophy 1A                                  |
+| DOID:0060942 | Ullrich congenital muscular dystrophy 1B                                  |
+| DOID:0060943 | Ullrich congenital muscular dystrophy 1C                                  |
+| DOID:0060944 | Ullrich congenital muscular dystrophy 2                                   |
+| DOID:0060945 | amelogenesis imperfecta type 1K                                           |
+| DOID:0060947 | autosomal recessive intellectual developmental disorder 82                |
 | DOID:0081442 | blepharophimosis-impaired intellectual development syndrome               |
 | DOID:0081416 | childhood renal cell carcinoma with MiT translocations                    |
 | DOID:0081407 | childhood round cell sarcoma with EWSR1-non-ETS fusion                    |
@@ -25,10 +32,14 @@
 | DOID:0060160 | childhood spinal muscular atrophy                                         |
 | DOID:0111368 | cholesterol-ester transfer protein deficiency                             |
 | DOID:2536    | chronic inflammatory demyelinating polyneuritis                           |
+| DOID:0081447 | cone-rod dystrophy 21                                                     |
+| DOID:0081448 | cone-rod dystrophy 22                                                     |
+| DOID:0081449 | cone-rod dystrophy 24                                                     |
 | DOID:4668    | congenital kyphosis                                                       |
+| DOID:0081446 | dimethylglycine dehydrogenase deficiency                                  |
 | DOID:0060967 | dystonia 22, adult-onset                                                  |
 | DOID:0060966 | dystonia 22, juvenile-onset                                               |
-| DOID:0060936 | dystonia 28 childhood-onset                                               |
+| DOID:0060936 | dystonia 28, childhood-onset                                              |
 | DOID:0060937 | dystonia 30                                                               |
 | DOID:0060938 | dystonia 31                                                               |
 | DOID:0060939 | dystonia 32                                                               |
@@ -36,7 +47,9 @@
 | DOID:0060955 | dystonia 35, childhood-onset                                              |
 | DOID:0060956 | dystonia 37, early-onset with striatal lesions                            |
 | DOID:0060963 | dystonia, DOPA-responsive                                                 |
-| DOID:0060944 | episodic kinesigenic dyskinesia 3                                         |
+| DOID:0081450 | hyperimmunoglobulinemia D periodic fever syndrome                         |
+| DOID:0060941 | interstitial lung disease 1                                               |
+| DOID:0081452 | large B-cell lymphoma                                                     |
 | DOID:0081431 | microcephaly, short stature, and limb abnormalities                       |
 | DOID:0081432 | microcephaly-micromelia syndrome                                          |
 | DOID:0060333 | mitochondrial complex V (ATP synthase) deficiency nuclear type 4          |
@@ -46,3 +59,4 @@
 | DOID:0081408 | round cell sarcoma with EWSR1-NFATC2 gene fusion                          |
 | DOID:0081409 | round cell sarcoma with EWSR1-PATZ1 gene fusion                           |
 | DOID:0081410 | round cell sarcoma with FUS-NFATC2 gene fusion                            |
+| DOID:0081445 | sickle cell disease                                                       |
