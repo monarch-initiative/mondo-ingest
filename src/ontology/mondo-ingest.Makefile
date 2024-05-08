@@ -600,10 +600,7 @@ update-jinja-sparql-queries:
 #################
 ##### Ad hoc ####
 #################
-tmp/ORDO_en_4.4.owl:
-	wget https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.4.owl -O $@
-
-tmp/ordo-subsets.tsv: tmp/ORDO_en_4.4.owl
+tmp/ordo-subsets.tsv: $(COMPONENTSDIR)/ordo.owl
 	$(ROBOT) query -i $< --query ../sparql/select-ordo-subsets.sparql $@
 
 reports/ordo-subsets.robot.template.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
