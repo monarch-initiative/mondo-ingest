@@ -585,9 +585,9 @@ $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.s
 .PHONY: external-content-ordo
 external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
 
-$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
+$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sssom.tsv
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
-	# python $< $@ .... TODO @joeflack4 to fill in
+	python ../scripts/sssom_to_robot_template.py --inpath $^ --outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
 
 .PHONY: external-content-nord external-content-nando
