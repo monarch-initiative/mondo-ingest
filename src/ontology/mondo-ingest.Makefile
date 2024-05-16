@@ -565,9 +565,9 @@ $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-conte
 	python ../scripts/add-robot-template-header.py $^ > $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv
 
-$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
+$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sssom.tsv
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
-	# python $< $@ .... TODO @joeflack4 to fill in
+	python ../scripts/sssom_to_robot_template.py --inpath $^ --outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
 
 .PHONY: external-content-nord external-content-nando
