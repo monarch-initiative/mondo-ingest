@@ -563,12 +563,18 @@ $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/add-robot-template-header.py $^ > $@
-.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv
 
-.PHONY: external-content-nord
+$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
+	# python $< $@ .... TODO @joeflack4 to fill in
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
+
+.PHONY: external-content-nord external-content-nando
 external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+external-content-nando: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.owl
 
-update-externally-managed-content: external-content-nord
+update-externally-managed-content: external-content-nord external-content-nando
 
 #############################
 ######### Analysis ##########
