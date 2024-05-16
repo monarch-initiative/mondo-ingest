@@ -585,7 +585,16 @@ $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.s
 .PHONY: external-content-ordo
 external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
 
-update-externally-managed-content: external-content-nord external-content-ordo
+$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
+	# python $< $@ .... TODO @joeflack4 to fill in
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
+
+.PHONY: external-content-nord external-content-nando
+external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+external-content-nando: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.owl
+
+update-externally-managed-content: external-content-nord external-content-nando external-content-ordo
 
 #############################
 ######### Analysis ##########
