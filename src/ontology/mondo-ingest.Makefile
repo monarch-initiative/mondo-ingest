@@ -592,7 +592,7 @@ $(MAPPINGSDIR)/mondo-nando.sssom.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
 
 $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sssom.tsv
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
-	python ../scripts/sssom_to_robot_template.py --inpath $^ --outpath $@
+	python ../scripts/sssom_to_robot_template.py --inpath $< --outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
 
 .PHONY: external-content-nord external-content-nando
