@@ -11,9 +11,15 @@ ROBOT_ROW = {
     'subject_id': 'ID',
     'subject_label': '',
     'object_id': 'A oboInOwl:hasDbXref',
-    'object_label': '',
     'equivalence': '>A oboInOwl:source',
     'author_id': '>A oboInOwl:source SPLIT=|',
+    'mapping_provider': '>A oboInOwl:source',
+    'object_label': '',
+}
+PRED_MAP = {
+    'skos:relatedMatch': 'MONDO:relatedTo',
+    'skos:exactMatch': 'MONDO:equivalentTo',
+    'skos:broadMatch': 'MONDO:mondoIsNarrowerThanSource',
 }
 
 
@@ -22,13 +28,12 @@ def sssom_to_robot_template(inpath: Union[str, Path], outpath: Union[str, Path])
     msdf: MappingSetDataFrame = parse_sssom_table(inpath)
     df: pd.DataFrame = msdf.df
 
-    # Filter
-    df = df[df['predicate_id'] == 'skos:exactMatch']
-
     # Conversion
-    df = df[['subject_id', 'subject_label', 'object_id', 'object_label']].sort_values(['subject_id', 'object_id'])
-    df['equivalence'] = 'MONDO:equivalentTo'
+    df['equivalence'] = df['predicate_id'].map(lambda pred: PRED_MAP.get(pred, ''))
+    df = df[['subject_id', 'subject_label', 'object_id', 'equivalence', 'object_label']]\
+        .sort_values(['subject_id', 'object_id'])
     df['author_id'] = '|'.join(msdf.metadata['creator_id'])
+    df['mapping_provider'] = msdf.metadata['mapping_provider']
     df = pd.concat([pd.DataFrame([ROBOT_ROW]), df])
 
     # Write
