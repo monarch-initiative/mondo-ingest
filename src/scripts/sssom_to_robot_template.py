@@ -28,7 +28,7 @@ def sssom_to_robot_template(inpath: Union[str, Path], outpath: Union[str, Path])
     # Conversion
     df = df[['subject_id', 'subject_label', 'object_id', 'object_label']].sort_values(['subject_id', 'object_id'])
     df['equivalence'] = 'MONDO:equivalentTo'
-    df['ORCID'] = '|'.join(msdf.metadata['creator_id'])
+    df['author_id'] = '|'.join(msdf.metadata['creator_id'])
     df = pd.concat([pd.DataFrame([ROBOT_ROW]), df])
 
     # Write
