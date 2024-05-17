@@ -183,8 +183,9 @@ $(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) convert -i $< -f json -o $@
 .PRECIOUS: $(TMPDIR)/component-%.json
 
-$(MAPPINGSDIR)/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
-	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
+$(MAPPINGSDIR)/%.sssom.tsv:
+	make $(TMPDIR)/component-$*.json metadata/mondo.sssom.config.yml
+	sssom parse $(TMPDIR)/component-$*.json -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
 	sssom sort $@ -o $@
 
 $(MAPPINGSDIR)/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
@@ -556,7 +557,8 @@ $(TMPDIR)/nord.tsv:
 	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
 
 $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
-	$(ROBOT) template --template $< \
+	$(ROBOT) template \
+		--template $< \
 	 	annotate \
 				--ontology-iri $(URIBASE)/mondo/external/nord.robot.owl \
 				--version-iri $(URIBASE)/mondo/external/$(TODAY)/nord.robot.owl \
@@ -584,6 +586,9 @@ $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.s
 
 .PHONY: external-content-ordo
 external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
+
+$(MAPPINGSDIR)/mondo-nando.sssom.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
+	sssom invert $(MAPPINGSDIR)/nando-mondo.sssom.tsv --no-merge-inverted -o $@
 
 $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sssom.tsv
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
