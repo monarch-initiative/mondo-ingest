@@ -190,7 +190,7 @@ $(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
 .PRECIOUS: $(TMPDIR)/component-%.json
 
 $(MAPPINGSDIR)/%.sssom.tsv:
-	make $(TMPDIR)/component-$*.json metadata/mondo.sssom.config.yml
+	$(MAKE) $(TMPDIR)/component-$*.json metadata/mondo.sssom.config.yml
 	sssom parse $(TMPDIR)/component-$*.json -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
 	sssom sort $@ -o $@
 
