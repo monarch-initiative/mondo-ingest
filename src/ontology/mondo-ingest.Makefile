@@ -511,33 +511,30 @@ slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
 sync: sync-subclassof
 
 .PHONY: sync-subclassof
-sync-subclassof: $(REPORTDIR)/sync-subClassOf.added.self_parentage_issues.tsv
-
-$(REPORTDIR)/sync-subClassOf.added.self_parentage_issues.tsv: tmp/mondo.sssom.tsv
-	rm -f $@
-	$(MAKE) $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv
-	python3 $(SCRIPTSDIR)/sync_subclassof_collate_self_parentage.py \
-	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
-	--in-outpath $@
+sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
 
 # todo: drop this? This is really just an alias here for quality of life, but not used by anything.
 .PHONY: sync-subclassof-%
-sync-subclassof-%: $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv
-	@echo "$@ completed"
+sync-subclassof-%: $(REPORTDIR)/%.subclass.confirmed.robot.tsv
+
+$(TMPDIR)/sync-subClassOf.added.self-parentage.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n).subclass.self-parentage.tsv) tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/sync_subclassof_collate_self_parentage.py \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 
 # Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
-$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), sync-subclassof-$(n)) tmp/mondo.db
+$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.direct-in-mondo-only.tsv) tmp/mondo.db
 	python3 $(SCRIPTSDIR)/sync_subclassof_collate_direct_in_mondo_only.py --outpath $@
 
 $(REPORTDIR)/sync-subClassOf.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.subclass.confirmed.robot.tsv > $@
 
-$(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv: tmp/mondo-ingest.db tmp/mondo.db tmp/mondo.sssom.tsv
+$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: tmp/mondo-ingest.db tmp/mondo.db tmp/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof.py \
 	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
 	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
 	--outpath-confirmed $(REPORTDIR)/$*.subclass.confirmed.robot.tsv \
 	--outpath-direct-in-mondo-only $(REPORTDIR)/$*.subclass.direct-in-mondo-only.tsv \
+	--outpath-self-parentage $(TMPDIR)/$*.subclass.self-parentage.tsv \
 	--mondo-db-path $(TMPDIR)/mondo.db \
 	--mondo-ingest-db-path $(TMPDIR)/mondo-ingest.db \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
