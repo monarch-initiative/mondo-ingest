@@ -70,7 +70,6 @@ def cli():
     parser.add_argument(
         '-o', '--outpath', required=False,
         default=REPORTS_DIR / 'sync-subClassOf.direct-in-mondo-only.tsv', help='Path to save output.')
-
     d: Dict = vars(parser.parse_args())
     collate_direct_in_mondo_only(**d)
 
