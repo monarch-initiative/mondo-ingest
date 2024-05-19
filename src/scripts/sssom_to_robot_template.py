@@ -12,7 +12,7 @@ ROBOT_ROW = {
     'subject_label': '',
     'object_id': 'A oboInOwl:hasDbXref',
     'equivalence': '>A oboInOwl:source',
-    'author_id': '>A oboInOwl:source SPLIT=|',
+    'author_id': '>AI oboInOwl:source SPLIT=|',
     'mapping_provider': '>A oboInOwl:source',
     'object_label': '',
 }
