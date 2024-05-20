@@ -524,9 +524,7 @@ $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONE
 $(REPORTDIR)/sync-subClassOf.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.subclass.confirmed.robot.tsv > $@
 
-# todo: Until ODK has oaklib >= 0.5.20, need '$(MAKE) pip-oaklib' below https://github.com/INCATools/ontology-development-kit/issues/936
 $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv: tmp/mondo-ingest.db tmp/mondo.db tmp/mondo.sssom.tsv
-	$(MAKE) pip-oaklib
 	python3 $(SCRIPTSDIR)/sync_subclassof.py \
 	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
 	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
