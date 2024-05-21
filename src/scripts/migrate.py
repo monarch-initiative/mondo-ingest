@@ -15,7 +15,6 @@ from glob import glob
 from typing import Dict, List, Set
 
 import pandas as pd
-import yaml
 from jinja2 import Template
 from oaklib.implementations import ProntoImplementation
 from oaklib.types import CURIE, URI
@@ -151,6 +150,7 @@ def slurp_docs():
     # Create pages & build stats
     stats_rows: List[Dict] = []
     for path in paths:
+        # todo: duplicated code fragment w/ deprecated_in_mondo_docs()
         ontology_name = os.path.basename(path).replace(FILENAME_GLOB_PATTERN[1:], '')
         ontology_page_relpath = f'./migrate_{ontology_name.lower()}.md'
         df = pd.read_csv(path, sep='\t').fillna('')
