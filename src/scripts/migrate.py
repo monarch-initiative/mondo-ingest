@@ -154,6 +154,8 @@ def slurp_docs():
         ontology_name = os.path.basename(path).replace(FILENAME_GLOB_PATTERN[1:], '')
         ontology_page_relpath = f'./migrate_{ontology_name.lower()}.md'
         df = pd.read_csv(path, sep='\t').fillna('')
+        # Fix issue where the | in the `parents` column is causing table rendering issues
+        df['parents'] = df['parents'].apply(lambda x: x.replace('|', ','))
         # Individual pages
         relpath = os.path.realpath(path).replace(PROJECT_DIR + '/', '')
         instantiated_str: str = Template(JINJA_ONTO_PAGES).render(
