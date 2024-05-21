@@ -43,6 +43,7 @@ def deprecated_in_mondo_docs():
     # Create pages & build stats
     stats_rows: List[Dict] = []
     for path in paths:
+        # todo: duplicated code fragment w/ slurp_docs()
         ontology_name = os.path.basename(path).replace(FILENAME_GLOB_PATTERN[1:], '')
         ontology_page_relpath = f'./mapped_deprecated_{ontology_name.lower()}.md'
         df = pd.read_csv(path, sep='\t').fillna('')
