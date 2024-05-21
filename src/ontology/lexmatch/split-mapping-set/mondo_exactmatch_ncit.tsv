@@ -1,6 +1,7 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
 MONDO:0000376	respiratory system cancer	skos:exactMatch	NCIT:C4571	Malignant Respiratory System Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant respiratory system neoplasm	LEXMATCH
 MONDO:0000651	obsolete thoracic disorder	skos:exactMatch	NCIT:C35742	Thoracic Disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0000930	nodular malignant melanoma	skos:exactMatch	NCIT:C205125	Nodular Melanoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	nodular melanoma	LEXMATCH
 MONDO:0001580	lacrimal duct cancer	skos:exactMatch	NCIT:C175319	Malignant Lacrimal Drainage System Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant lacrimal drainage system neoplasm	LEXMATCH
 MONDO:0002038	head and neck carcinoma	skos:exactMatch	NCIT:C6077	Neck Carcinoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	neck carcinoma	LEXMATCH
 MONDO:0002063	obsolete breast papillomatosis	skos:exactMatch	NCIT:C6977	Breast Papillomatosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -12,12 +13,17 @@ MONDO:0002691	liver cancer	skos:exactMatch	NCIT:C190593	Malignant Liver Neoplasm
 MONDO:0002877	cervical carcinosarcoma	skos:exactMatch	NCIT:C40226	Cervical Mixed Epithelial and Mesenchymal Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	cervical mixed epithelial and mesenchymal neoplasm	LEXMATCH
 MONDO:0002928	carcinosarcoma	skos:exactMatch	NCIT:C3730	Mixed Mesodermal (Mullerian) Tumor	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	mixed mesodermal (mullerian) tumor	LEXMATCH
 MONDO:0002928	carcinosarcoma	skos:exactMatch	NCIT:C8975	Malignant Mixed Mesodermal (Mullerian) Tumor	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant mixed mesodermal (mullerian) tumor	LEXMATCH
+MONDO:0002938	metatypical basal cell carcinoma	skos:exactMatch	NCIT:C66903	Skin Metatypical Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003043	obsolete extraskeletal mesenchymal chondrosarcoma	skos:exactMatch	NCIT:C27481	Mesenchymal Extraskeletal Chondrosarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003222	central nervous system melanocytic neoplasm	skos:exactMatch	NCIT:C4661	Central Nervous System Melanocytic Neoplasm	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	central nervous system melanocytic neoplasm	LEXMATCH
+MONDO:0003222	central nervous system melanocytic neoplasm	skos:exactMatch	NCIT:C5504	Central Nervous System Melanocytic Neoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0003450	eccrine papillary adenoma	skos:exactMatch	NCIT:C4173	Papillary Eccrine Adenoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0003531	papillary eccrine carcinoma	skos:exactMatch	NCIT:C27527	Tubular Apocrine Adenoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	tubular apocrine adenoma	LEXMATCH
 MONDO:0003649	esophageal neuroendocrine tumor	skos:exactMatch	NCIT:C5821	Esophageal Neuroendocrine Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	esophageal neuroendocrine neoplasm	LEXMATCH
 MONDO:0003822	non-invasive bladder papillary urothelial neoplasm	skos:exactMatch	NCIT:C191672	Papillary Urothelial Neoplasm of Low Malignant Potential	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	papillary urothelial neoplasm of low malignant potential	LEXMATCH
 MONDO:0003998	obsolete vaginal tubular adenoma	skos:exactMatch	NCIT:C40257	Vaginal Tubular Adenoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0004075	infiltrating lipoma	skos:exactMatch	NCIT:C7450	Intramuscular Lipoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	intramuscular lipoma	LEXMATCH
+MONDO:0004141	melanomatosis	skos:exactMatch	NCIT:C9499	Melanomatosis	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0004180	benign urinary system neoplasm	skos:exactMatch	NCIT:C192667	Benign Urinary Tract Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	benign urinary tract neoplasm	LEXMATCH
 MONDO:0004204	squamous cell skin papilloma	skos:exactMatch	NCIT:C4462	Skin Squamous Papilloma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0004419	lymphoma-like variant infiltrating bladder urothelial carcinoma	skos:exactMatch	NCIT:C39822	Infiltrating Bladder Urothelial Carcinoma, Lymphoma-Like Variant	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -28,7 +34,10 @@ MONDO:0004819	indolent plasma cell myeloma	skos:exactMatch	NCIT:C7150	Indolent M
 MONDO:0004957	mucinous adenocarcinoma	skos:exactMatch	NCIT:C27379	Mucin-Producing Adenocarcinoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	mucin-producing adenocarcinoma	LEXMATCH
 MONDO:0005004	clear cell adenocarcinoma	skos:exactMatch	NCIT:C4156	Water-Clear Cell Adenocarcinoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	water-clear cell adenocarcinoma	LEXMATCH
 MONDO:0005065	mesothelioma	skos:exactMatch	NCIT:C3234	Mesothelioma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005104	aJCC grade 1 sarcoma	skos:exactMatch	NCIT:C9419	AJCC Grade 1 Sarcoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0005362	erectile dysfunction	skos:exactMatch	NCIT:C34801	Male Erectile Disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
+MONDO:0005369	carcinoid tumor	skos:exactMatch	NCIT:C203250	Neuroendocrine Tumor G1	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	neuroendocrine tumor g1	LEXMATCH
+MONDO:0005369	carcinoid tumor	skos:exactMatch	NCIT:C2915	Carcinoid Tumor	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006295	malignant urinary system neoplasm	skos:exactMatch	NCIT:C192668	Malignant Urinary Tract Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant urinary tract neoplasm	LEXMATCH
 MONDO:0006315	obsolete neoplastic medium-sized B-lymphocyte with basophilic cytoplasm	skos:exactMatch	NCIT:C37005	Neoplastic Medium-Sized B-Lymphocyte with Basophilic Cytoplasm	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006329	olfactory neuroblastoma	skos:exactMatch	NCIT:C6016	Paranasal Sinus Olfactory Neuroblastoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	paranasal sinus olfactory neuroblastoma	LEXMATCH
@@ -36,11 +45,16 @@ MONDO:0006363	peritoneal multicystic mesothelioma	skos:exactMatch	NCIT:C3765	Mul
 MONDO:0006451	thymic carcinoma	skos:exactMatch	NCIT:C7612	Malignant Thymoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant thymoma	LEXMATCH
 MONDO:0006475	obsolete unclassified renal cell carcinoma	skos:exactMatch	NCIT:C27892	Unclassified Renal Cell Carcinoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0006717	cutaneous fibrous histiocytoma	skos:exactMatch	NCIT:C8402	Fibrohistiocytic Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	fibrohistiocytic neoplasm	LEXMATCH
+MONDO:0006738	eccrine acrospiroma	skos:exactMatch	NCIT:C205462	Eccrine Poroma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	eccrine poroma	LEXMATCH
 MONDO:0009933	congenital pulmonary lymphangiectasia	skos:exactMatch	NCIT:C45630	Diffuse Pulmonary Lymphangiomatosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	diffuse pulmonary lymphangiomatosis	LEXMATCH
+MONDO:0013171	purine nucleoside phosphorylase deficiency	skos:exactMatch	NCIT:C3963	Purine-Nucleoside Phosphorylase Deficiency	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015040	myelodysplastic syndrome with excess blasts-1	skos:exactMatch	NCIT:C7167	Myelodysplastic Syndrome with Excess Blasts-1	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015301	primary cutaneous amyloidosis	skos:exactMatch	NCIT:C199391	Primary Cutaneous Amyloidosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary cutaneous amyloidosis	LEXMATCH
+MONDO:0015391	nasopharyngeal teratoma	skos:exactMatch	NCIT:C202982	Nasopharyngeal Teratoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nasopharyngeal teratoma	LEXMATCH
+MONDO:0015540	hemophagocytic syndrome	skos:exactMatch	NCIT:C35439	Hemophagocytic Syndrome	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0015686	primary peritoneal carcinoma	skos:exactMatch	NCIT:C4182	Serous Surface Papillary Carcinoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	serous surface papillary carcinoma	LEXMATCH
 MONDO:0016715	ependymoblastoma	skos:exactMatch	NCIT:C186534	Embryonal Tumor with Multilayered Rosettes	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	embryonal tumor with multilayered rosettes	LEXMATCH
+MONDO:0016747	primary melanoma of the central nervous system	skos:exactMatch	NCIT:C5505	Central Nervous System Melanoma	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0016824	infantile myofibromatosis	skos:exactMatch	NCIT:C27498	Infantile Hemangiopericytoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	infantile hemangiopericytoma	LEXMATCH
 MONDO:0017289	fetal lung interstitial tumor	skos:exactMatch	NCIT:C190105	Fetal Lung Interstitial Tumor	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	fetal lung interstitial tumor	LEXMATCH
 MONDO:0017308	obsolete Marfan syndrome type 2	skos:exactMatch	NCIT:C75007	Marfan Syndrome Type II	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -54,6 +68,7 @@ MONDO:0019468	T-cell prolymphocytic leukemia	skos:exactMatch	NCIT:C70649	T-Cell 
 MONDO:0019473	enteropathy-associated T-cell lymphoma	skos:exactMatch	NCIT:C150495	Intestinal T-Cell Lymphoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	intestinal t-cell lymphoma	LEXMATCH
 MONDO:0019496	neuroendocrine neoplasm	skos:exactMatch	NCIT:C188218	Neuroendocrine Tumor	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	neuroendocrine tumor	LEXMATCH
 MONDO:0019500	extragonadal teratoma	skos:exactMatch	NCIT:C189045	Extragonadal Teratoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	extragonadal teratoma	LEXMATCH
+MONDO:0019964	thymic neuroendocrine tumor	skos:exactMatch	NCIT:C6430	Thymic Neuroendocrine Tumor	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	thymic neuroendocrine tumor	LEXMATCH
 MONDO:0020078	obsolete acute myeloid leukemia with recurrent genetic anomaly	skos:exactMatch	NCIT:C7175	Acute Myeloid Leukemia with Recurrent Genetic Abnormalities	semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0020541	maligant granulosa cell tumor of ovary	skos:exactMatch	NCIT:C7288	Adult Ovarian Granulosa Cell Tumor	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	adult ovarian granulosa cell tumor	LEXMATCH
 MONDO:0020591	obsolete disorder of peritoneum	skos:exactMatch	NCIT:C26848	Peritoneal Disorder	semapv:UnspecifiedMatching						MONDO_MAPPINGS
@@ -69,7 +84,6 @@ MONDO:0043881	obsolete acute eosinophilic leukemia	skos:exactMatch	NCIT:C26813	A
 MONDO:0044037	livedo reticularis	skos:exactMatch	NCIT:C74524	Livedo Reticularis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	livedo reticularis	LEXMATCH
 MONDO:0700092	neurodevelopmental disorder	skos:exactMatch	NCIT:C1535926		semapv:UnspecifiedMatching						MONDO_MAPPINGS
 MONDO:0700219	neoplastic meningitis	skos:exactMatch	NCIT:C27383	Meningeal Carcinomatosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	meningeal carcinomatosis	LEXMATCH
-MONDO:0850110	melanoma in congenital melanocytic nevus	skos:exactMatch	NCIT:C48613	Melanoma in Congenital Melanocytic Nevus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	melanoma in congenital melanocytic nevus	LEXMATCH
 MONDO:0850112	breast implant-associated anaplastic large cell lymphoma	skos:exactMatch	NCIT:C139012	Breast Implant-Associated Anaplastic Large Cell Lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	breast implant-associated anaplastic large cell lymphoma	LEXMATCH
 MONDO:0850154	tongue carcinoma	skos:exactMatch	NCIT:C4824	Tongue Carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tongue carcinoma	LEXMATCH
 MONDO:0850267	childhood acute megakaryoblastic leukemia	skos:exactMatch	NCIT:C7972	Childhood Acute Megakaryoblastic Leukemia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	childhood acute megakaryoblastic leukemia	LEXMATCH
