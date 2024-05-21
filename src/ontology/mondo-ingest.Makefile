@@ -486,17 +486,9 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_map
 slurp-%: slurp/%.tsv
 	@echo "$@ completed".
 
-.PHONY: slurp-no-updates-%
-slurp-no-updates-%: slurp/%.tsv
-	@echo "$@ completed".
-
 .PHONY: slurp-docs
 slurp-docs:
 	python3 $(SCRIPTSDIR)/migrate.py --docs
-
-.PHONY: slurp-all-no-updates
-slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
-	@echo "$@ ($^) completed".
 
 .PHONY: slurp-all
 slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
