@@ -429,18 +429,19 @@ tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
 $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/rejected-mappings.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical-2.sssom.tsv
-	$(MAKE) pip-bioregistry
 	python $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py run tmp/merged.db \
 		-c metadata/mondo.sssom.config.yml \
 		-r config/mondo-match-rules.yaml \
 		--rejects $(MAPPINGSDIR)/rejected-mappings.tsv \
 		-o $@
 
+.PHONY: lexical-matches
 lexical-matches: $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 
 ###################################
 #### Lexmatch-SSSOM-compare #######
 ###################################
+# This goal also creates, for all sources: lexmatch/unmapped_%_lex.tsv, lexmatch/unmapped_%_lex_exact.tsv
 lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv $(ALL_EXCLUSION_FILES)
 	find lexmatch/ -name "*.tsv" -type f -delete
 	python $(SCRIPTSDIR)/lexmatch-sssom-compare.py extract_unmapped_matches $(ALL_COMPONENT_IDS) \
@@ -454,7 +455,7 @@ extract-unmapped-matches: lexmatch/README.md
 ###################################
 #### Lexmatch-combine #######
 ###################################
-lexmatch/all_exact.robot.tsv: $(SCRIPTSDIR)/lexmatch-sssom-compare.py
+lexmatch/all_exact.robot.tsv: $(SCRIPTSDIR)/lexmatch-sssom-compare.py lexmatch/README.md
 	python $< combine_unmapped_lex_exacts
 
 combine-unmapped-exact-lexmatches: lexmatch/all_exact.robot.tsv
