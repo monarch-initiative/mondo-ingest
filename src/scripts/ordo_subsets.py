@@ -9,7 +9,7 @@ from utils import remove_angle_brackets
 SUBSET_MAP = {
     'Orphanet:557493': 'http://purl.obolibrary.org/obo/mondo#ordo_disease',  # disorder
     'Orphanet:557492': 'http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders',  # group of disorders
-    'Orphanet:557494': 'http://purl.obolibrary.org/obo/mondo#ordo_clinical_subtype',  # subtype of a disorder
+    'Orphanet:557494': 'http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder',  # subtype of a disorder
 }
 ROBOT_TEMPLATE_HEADER = {
     'mondo_id': 'ID',
