@@ -366,12 +366,6 @@ $(TMPDIR)/mondo.sssom.tsv: $(TMPDIR)/mondo_repo_built
 $(TMPDIR)/mondo.owl: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
 
-$(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
-	$(ROBOT) query -i tmp/merged.owl --query $< $@
-
-.PHONY: mondo-ordo-subclass
-mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
-
 reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
@@ -560,7 +554,20 @@ $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-conte
 .PHONY: external-content-nord
 external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
 
-update-externally-managed-content: external-content-nord
+tmp/ordo-subsets.tsv: $(COMPONENTSDIR)/ordo.owl
+	$(ROBOT) query -i $< --query ../sparql/select-ordo-subsets.sparql $@
+
+$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.template.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/ordo_subsets.py \
+	--mondo-mappings-path tmp/mondo.sssom.tsv \
+	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
+	--onto-config-path metadata/ordo.yml \
+	--outpath $@
+
+.PHONY: external-content-ordo
+external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.template.tsv
+
+update-externally-managed-content: external-content-nord external-content-ordo
 
 #############################
 ######### Analysis ##########
@@ -596,18 +603,14 @@ update-jinja-sparql-queries:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
 
+#############################
+########### Ad hoc ##########
+#############################
+$(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
+	$(ROBOT) query -i tmp/merged.owl --query $< $@
 
-#################
-##### Ad hoc ####
-#################
-tmp/ordo-subsets.tsv: $(COMPONENTSDIR)/ordo.owl
-	$(ROBOT) query -i $< --query ../sparql/select-ordo-subsets.sparql $@
-
-reports/ordo-subsets.robot.template.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
-	python3 $(SCRIPTSDIR)/ordo_subsets.py \
-	--mondo-mappings-path tmp/mondo.sssom.tsv \
-	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
-	--outpath $@
+.PHONY: mondo-ordo-subclass
+mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
 
 #############################
 ########### Help ############

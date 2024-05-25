@@ -1,10 +1,12 @@
 """Creates a ROBOT template to update mondo terms with the correct ORDO subset annotation."""
 from argparse import ArgumentParser
+from pathlib import Path
+from typing import Union
 
+import curies
 import pandas as pd
 
-from utils import remove_angle_brackets
-
+from utils import remove_angle_brackets, get_converter
 
 SUBSET_MAP = {
     'Orphanet:557493': 'http://purl.obolibrary.org/obo/mondo#ordo_disorder',  # disorder
@@ -19,9 +21,12 @@ ROBOT_TEMPLATE_HEADER = {
 
 
 def create_ordo_subsets_robot_template(
-    class_subsets_tsv_path: str, mondo_mappings_path: str, outpath: str,
-):
+    class_subsets_tsv_path: Union[str, Path], mondo_mappings_path: Union[str, Path], onto_config_path: Union[str, Path],
+    outpath: Union[str, Path],
+) -> pd.DataFrame:
     """Creates a ROBOT template to update mondo terms with the correct ORDO subset annotation."""
+    conv = curies.Converter = get_converter(onto_config_path)
+    
     # Read: mondo.sssom.tsv
     mondo_df = pd.read_csv(mondo_mappings_path, sep='\t', comment='#').rename(columns={
         'subject_id': 'mondo_id',
@@ -49,8 +54,7 @@ def create_ordo_subsets_robot_template(
         # - Strip annoying angle brackets from URIs
         df[fld] = df[fld].map(remove_angle_brackets)
         # - Compress class IDs
-        # TODO: Use the curies package here
-        df[fld] = df[fld].map(lambda x: x.replace('http://www.orpha.net/ORDO/Orphanet_', 'Orphanet:'))
+        df[fld] = df[fld].map(lambda x: conv.compress(x))
 
     # Map to mondo subset IDs
     df['subset'] = df['subset_ordo_class_id'].map(SUBSET_MAP)
@@ -65,17 +69,22 @@ def create_ordo_subsets_robot_template(
     # Save & return
     df_out = pd.concat([pd.DataFrame([ROBOT_TEMPLATE_HEADER]), df])
     df_out.to_csv(outpath, sep='\t', index=False)
+    return df
 
 
 def cli():
     """Command line interface."""
     parser = ArgumentParser('Creates a ROBOT template to update mondo terms with the correct ORDO subset annotation.')
     parser.add_argument(
-        '-c', '--class-subsets-tsv-path', required=True,
+        '-C', '--class-subsets-tsv-path', required=True,
         help='Path to TSV containing results of a SPARQL query to get all ORDO subsets, by class.')
     parser.add_argument(
         '-m', '--mondo-mappings-path', required=True,
         help='Path to TSV containing all known Mondo mappings, in SSSOM format.')
+    parser.add_argument(
+        '-c', '--onto-config-path', required=True,
+        help='Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
+             'list of prefixes owned by the ontology. Used to filter out terms.')
     parser.add_argument('-o', '--outpath', required=True, help='Path to save ROBOT template TSV.')
     create_ordo_subsets_robot_template(**vars(parser.parse_args()))
 
