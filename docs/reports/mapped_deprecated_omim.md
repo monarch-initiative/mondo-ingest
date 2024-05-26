@@ -16,6 +16,7 @@
 | MONDO:0008126 | OMIM:164891          | MONDO:equivalentObsolete |
 | MONDO:0008204 | OMIM:168850          | MONDO:equivalentObsolete |
 | MONDO:0008415 | OMIM:181515          | MONDO:equivalentObsolete |
+| MONDO:0008873 | OMIM:210730          | MONDO:equivalentObsolete |
 | MONDO:0009535 | OMIM:247440          | MONDO:equivalentObsolete |
 | MONDO:0009586 | OMIM:249660          | MONDO:equivalentObsolete |
 | MONDO:0009654 | OMIM:252700          | MONDO:equivalentObsolete |

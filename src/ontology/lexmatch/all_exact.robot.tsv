@@ -1,7 +1,6 @@
 subject_id	predicate_id	object_id	subject_label	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID	>A oboInOwl:source	A oboInOwl:hasDbXref								
-MONDO:0015991	MONDO:equivalentTo	OMIMPS:215700	citrullinemia	Citrullinemia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	citrullinemia
-MONDO:0018875	MONDO:equivalentTo	OMIMPS:151623	Li-Fraumeni syndrome	Li-Fraumeni syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	li-fraumeni syndrome
+MONDO:0859193	MONDO:equivalentTo	OMIMPS:619539	neuroocular syndrome	Neuroocular syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	neuroocular syndrome
 MONDO:0000022	MONDO:equivalentTo	ICD10CM:N39.44	nocturnal enuresis	Nocturnal enuresis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nocturnal enuresis
 MONDO:0000190	MONDO:equivalentTo	ICD10CM:I49.01	ventricular fibrillation	Ventricular fibrillation	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ventricular fibrillation
 MONDO:0000397	MONDO:equivalentTo	ICD10CM:G80.4	ataxic cerebral palsy	Ataxic cerebral palsy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ataxic cerebral palsy
@@ -741,6 +740,7 @@ MONDO:0002017	MONDO:equivalentTo	icd11.foundation:1467584080	olivopontocerebella
 MONDO:0002027	MONDO:equivalentTo	icd11.foundation:429615620	avoidant personality disorder	Avoidant personality disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	avoidant personality disorder
 MONDO:0002028	MONDO:equivalentTo	icd11.foundation:941859884	personality disorder	Personality disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	personality disorder
 MONDO:0002030	MONDO:equivalentTo	icd11.foundation:1495469029	chronic cervicitis	Chronic cervicitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	chronic cervicitis
+MONDO:0002032	MONDO:equivalentTo	icd11.foundation:865099988	colon carcinoma	Colon carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	colon carcinoma
 MONDO:0002045	MONDO:equivalentTo	icd11.foundation:186577228	communicating hydrocephalus	Communicating hydrocephalus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	communicating hydrocephalus
 MONDO:0002049	MONDO:equivalentTo	icd11.foundation:683583694	thrombocytopenia	Thrombocytopenia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	thrombocytopenia
 MONDO:0002052	MONDO:equivalentTo	icd11.foundation:1483611415	lymphadenitis	Lymphadenitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	lymphadenitis
@@ -798,6 +798,7 @@ MONDO:0002411	MONDO:equivalentTo	icd11.foundation:641223668	narcissistic persona
 MONDO:0002422	MONDO:equivalentTo	icd11.foundation:2013322169	adamantinoma	Adamantinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	adamantinoma
 MONDO:0002442	MONDO:equivalentTo	icd11.foundation:1208831985	long QT syndrome	Long QT syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	long qt syndrome
 MONDO:0002443	MONDO:equivalentTo	icd11.foundation:1046319083	bruxism	Bruxism	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	bruxism
+MONDO:0002447	MONDO:equivalentTo	icd11.foundation:1123821211	endometrial carcinoma	Endometrial carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	endometrial carcinoma
 MONDO:0002457	MONDO:equivalentTo	icd11.foundation:969026676	Treacher-Collins syndrome	Treacher-Collins syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	treacher-collins syndrome
 MONDO:0002471	MONDO:equivalentTo	icd11.foundation:1984620329	bursitis	Bursitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	bursitis
 MONDO:0002472	MONDO:equivalentTo	icd11.foundation:979757212	carcinoma ex pleomorphic adenoma	Carcinoma ex pleomorphic adenoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	carcinoma ex pleomorphic adenoma
@@ -812,7 +813,6 @@ MONDO:0002559	MONDO:equivalentTo	icd11.foundation:215477652	plexiform schwannoma
 MONDO:0002565	MONDO:equivalentTo	icd11.foundation:1993728609	myelitis	Myelitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	myelitis
 MONDO:0002571	MONDO:equivalentTo	icd11.foundation:1133193893	primary central nervous system lymphoma	Primary central nervous system lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary central nervous system lymphoma
 MONDO:0002581	MONDO:equivalentTo	icd11.foundation:1373994611	spindle cell rhabdomyosarcoma	Spindle cell rhabdomyosarcoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spindle cell rhabdomyosarcoma
-MONDO:0002594	MONDO:equivalentTo	icd11.foundation:160886685	monkeypox	Monkeypox	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	monkeypox
 MONDO:0002595	MONDO:equivalentTo	icd11.foundation:1275065853	vaccinia	Vaccinia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	vaccinia
 MONDO:0002598	MONDO:equivalentTo	icd11.foundation:1898283933	germinoma	Germinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	germinoma
 MONDO:0002599	MONDO:equivalentTo	icd11.foundation:372407741	teratocarcinoma	Teratocarcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	teratocarcinoma
@@ -1093,8 +1093,10 @@ MONDO:0005125	MONDO:equivalentTo	icd11.foundation:56771163	borderline leprosy	Bo
 MONDO:0005126	MONDO:equivalentTo	icd11.foundation:310697776	tuberculoid leprosy	Tuberculoid leprosy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tuberculoid leprosy
 MONDO:0005127	MONDO:equivalentTo	icd11.foundation:365370459	lepromatous leprosy	Lepromatous leprosy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	lepromatous leprosy
 MONDO:0005129	MONDO:equivalentTo	icd11.foundation:109841337	cataract	Cataract	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cataract
+MONDO:0005131	MONDO:equivalentTo	icd11.foundation:1743710977	cervical carcinoma	Cervical carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cervical carcinoma
 MONDO:0005133	MONDO:equivalentTo	icd11.foundation:1838213761	endometriosis	Endometriosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	endometriosis
 MONDO:0005136	MONDO:equivalentTo	icd11.foundation:1439886552	malaria	Malaria	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	malaria
+MONDO:0005138	MONDO:equivalentTo	icd11.foundation:947165291	lung carcinoma	Lung carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	lung carcinoma
 MONDO:0005147	MONDO:equivalentTo	icd11.foundation:1651053999	type 1 diabetes mellitus	Type 1 diabetes mellitus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	type 1 diabetes mellitus
 MONDO:0005148	MONDO:equivalentTo	icd11.foundation:119724091	type 2 diabetes mellitus	Type 2 diabetes mellitus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	type 2 diabetes mellitus
 MONDO:0005149	MONDO:equivalentTo	icd11.foundation:1496633964	pulmonary hypertension	Pulmonary hypertension	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pulmonary hypertension
@@ -1109,6 +1111,7 @@ MONDO:0005186	MONDO:equivalentTo	icd11.foundation:1691013484	cocaine dependence	
 MONDO:0005195	MONDO:equivalentTo	icd11.foundation:1560416608	septic peritonitis	Septic peritonitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	septic peritonitis
 MONDO:0005201	MONDO:equivalentTo	icd11.foundation:316495940	restrictive cardiomyopathy	Restrictive cardiomyopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	restrictive cardiomyopathy
 MONDO:0005204	MONDO:equivalentTo	icd11.foundation:85700944	primary antiphospholipid syndrome	Primary antiphospholipid syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary antiphospholipid syndrome
+MONDO:0005206	MONDO:equivalentTo	icd11.foundation:1075394530	renal carcinoma	Renal carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	renal carcinoma
 MONDO:0005217	MONDO:equivalentTo	icd11.foundation:1018022925	familial cardiomyopathy	Familial cardiomyopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	familial cardiomyopathy
 MONDO:0005220	MONDO:equivalentTo	icd11.foundation:1437194524	collecting duct carcinoma	Collecting duct carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	collecting duct carcinoma
 MONDO:0005249	MONDO:equivalentTo	icd11.foundation:142052508	pneumonia	Pneumonia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pneumonia
@@ -1158,6 +1161,7 @@ MONDO:0005489	MONDO:equivalentTo	icd11.foundation:1843588689	dyslexia	Dyslexia	s
 MONDO:0005498	MONDO:equivalentTo	icd11.foundation:78422942	botulism	Botulism	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	botulism
 MONDO:0005504	MONDO:equivalentTo	icd11.foundation:508032285	diphtheria	Diphtheria	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	diphtheria
 MONDO:0005509	MONDO:equivalentTo	icd11.foundation:1211753554	histiocytoma	Histiocytoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	histiocytoma
+MONDO:0005522	MONDO:equivalentTo	icd11.foundation:1484520499	small intestine carcinoma	Small intestine carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	small intestine carcinoma
 MONDO:0005526	MONDO:equivalentTo	icd11.foundation:1793762788	tetanus	Tetanus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tetanus
 MONDO:0005531	MONDO:equivalentTo	icd11.foundation:337142707	morphine dependence	Morphine dependence	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	morphine dependence
 MONDO:0005541	MONDO:equivalentTo	icd11.foundation:790009325	spondylolysis	Spondylolysis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spondylolysis
@@ -1354,7 +1358,6 @@ MONDO:0006670	MONDO:equivalentTo	icd11.foundation:684930313	bacterial meningitis
 MONDO:0006676	MONDO:equivalentTo	icd11.foundation:632832064	beriberi	Beriberi	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	beriberi
 MONDO:0006679	MONDO:equivalentTo	icd11.foundation:441939472	bladder neck obstruction	Bladder neck obstruction	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	bladder neck obstruction
 MONDO:0006687	MONDO:equivalentTo	icd11.foundation:618998878	burning mouth syndrome	Burning mouth syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	burning mouth syndrome
-MONDO:0006688	MONDO:equivalentTo	icd11.foundation:994284974	byssinosis	Byssinosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	byssinosis
 MONDO:0006692	MONDO:equivalentTo	icd11.foundation:558060012	central pontine myelinolysis	Central pontine myelinolysis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	central pontine myelinolysis
 MONDO:0006694	MONDO:equivalentTo	icd11.foundation:1710003414	cerebral atherosclerosis	Cerebral atherosclerosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cerebral atherosclerosis
 MONDO:0006701	MONDO:equivalentTo	icd11.foundation:74644355	chromophobe adenoma	Chromophobe adenoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	chromophobe adenoma
@@ -2553,6 +2556,7 @@ MONDO:0015452	MONDO:equivalentTo	icd11.foundation:734451870	Coffin-Siris syndrom
 MONDO:0015453	MONDO:equivalentTo	icd11.foundation:2098089327	Cogan syndrome	Cogan syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cogan syndrome
 MONDO:0015454	MONDO:equivalentTo	icd11.foundation:1133091451	multiple carboxylase deficiency	Multiple carboxylase deficiency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	multiple carboxylase deficiency
 MONDO:0015455	MONDO:equivalentTo	icd11.foundation:884042621	gonococcal conjunctivitis	Gonococcal conjunctivitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	gonococcal conjunctivitis
+MONDO:0015459	MONDO:equivalentTo	icd11.foundation:1883313543	nasopharyngeal carcinoma	Nasopharyngeal carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nasopharyngeal carcinoma
 MONDO:0015461	MONDO:equivalentTo	icd11.foundation:960900212	short rib-polydactyly syndrome	Short rib-polydactyly syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	short rib-polydactyly syndrome
 MONDO:0015465	MONDO:equivalentTo	icd11.foundation:305860050	craniometaphyseal dysplasia	Craniometaphyseal dysplasia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	craniometaphyseal dysplasia
 MONDO:0015466	MONDO:equivalentTo	icd11.foundation:225223076	cranio-osteoarthropathy	Cranio-osteoarthropathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cranio-osteoarthropathy
@@ -2775,13 +2779,13 @@ MONDO:0016394	MONDO:equivalentTo	icd11.foundation:1174703901	sporadic infantile 
 MONDO:0016396	MONDO:equivalentTo	icd11.foundation:1227773923	pontocerebellar hypoplasia type 1	Pontocerebellar hypoplasia type 1	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pontocerebellar hypoplasia type 1
 MONDO:0016407	MONDO:equivalentTo	icd11.foundation:1283447040	oligomeganephronia	Oligomeganephronia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	oligomeganephronia
 MONDO:0016408	MONDO:equivalentTo	icd11.foundation:801729371	permanent congenital hypothyroidism	Permanent congenital hypothyroidism	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	permanent congenital hypothyroidism
-MONDO:0016411	MONDO:equivalentTo	icd11.foundation:510589461	hypothyroidism due to deficient transcription factors involved in pituitary development or function	Hypothyroidism due to deficient transcription factors involved in pituitary development or function	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hypothyroidism due to deficient transcription factors involved in pituitary development or function
 MONDO:0016416	MONDO:equivalentTo	icd11.foundation:1465839134	diphallia	Diphallia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	diphallia
 MONDO:0016418	MONDO:equivalentTo	icd11.foundation:1585600114	multiple system atrophy, cerebellar type	Multiple system atrophy, Cerebellar type	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	multiple system atrophy, cerebellar type
 MONDO:0016420	MONDO:equivalentTo	icd11.foundation:979898273	familial flecked retinopathy	Familial flecked retinopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	familial flecked retinopathy
 MONDO:0016422	MONDO:equivalentTo	icd11.foundation:1361747293	autoimmune polyendocrinopathy type 3	Autoimmune polyendocrinopathy type 3	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	autoimmune polyendocrinopathy type 3
 MONDO:0016423	MONDO:equivalentTo	icd11.foundation:1561026337	autoimmune polyendocrinopathy type 4	Autoimmune polyendocrinopathy type 4	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	autoimmune polyendocrinopathy type 4
 MONDO:0016425	MONDO:equivalentTo	icd11.foundation:1047123748	Hughes-Stovin syndrome	Hughes-Stovin syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hughes-stovin syndrome
+MONDO:0016426	MONDO:equivalentTo	icd11.foundation:565900954	fusariosis	Fusariosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	fusariosis
 MONDO:0016429	MONDO:equivalentTo	icd11.foundation:113448281	Marburg acute multiple sclerosis	Marburg acute multiple sclerosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	marburg acute multiple sclerosis
 MONDO:0016431	MONDO:equivalentTo	icd11.foundation:1601555981	autosomal dominant Charcot-Marie-Tooth disease type 2M	Autosomal dominant Charcot-Marie-Tooth disease type 2M	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	autosomal dominant charcot-marie-tooth disease type 2m
 MONDO:0016439	MONDO:equivalentTo	icd11.foundation:1880397739	elastoderma	Elastoderma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	elastoderma
@@ -2995,6 +2999,7 @@ MONDO:0017318	MONDO:equivalentTo	icd11.foundation:1768130414	phakomatosis pigmen
 MONDO:0017319	MONDO:equivalentTo	icd11.foundation:679955609	hereditary elliptocytosis	Hereditary elliptocytosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hereditary elliptocytosis
 MONDO:0017320	MONDO:equivalentTo	icd11.foundation:1350463176	phosphoenolpyruvate carboxykinase deficiency	Phosphoenolpyruvate carboxykinase deficiency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	phosphoenolpyruvate carboxykinase deficiency
 MONDO:0017325	MONDO:equivalentTo	icd11.foundation:1655554340	early-onset epileptic encephalopathy and intellectual disability due to GRIN2A mutation	Early-onset epileptic encephalopathy and intellectual disability due to GRIN2A mutation	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	early-onset epileptic encephalopathy and intellectual disability due to grin2a mutation
+MONDO:0017346	MONDO:equivalentTo	icd11.foundation:407807101	Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly	Epstein-Barr Virus-positive diffuse large B-cell lymphoma of the elderly	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	epstein-barr virus-positive diffuse large b-cell lymphoma of the elderly
 MONDO:0017347	MONDO:equivalentTo	icd11.foundation:1164634895	plasmablastic lymphoma	Plasmablastic lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	plasmablastic lymphoma
 MONDO:0017347	MONDO:equivalentTo	icd11.foundation:803046659	plasmablastic lymphoma	Plasmablastic lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	plasmablastic lymphoma
 MONDO:0017349	MONDO:equivalentTo	icd11.foundation:1389541049	myopericytoma	Myopericytoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	myopericytoma
@@ -3106,6 +3111,7 @@ MONDO:0017565	MONDO:equivalentTo	icd11.foundation:514958635	macrodactyly of fing
 MONDO:0017566	MONDO:equivalentTo	icd11.foundation:1009940304	macrodactyly of toes, unilateral	Macrodactyly of toes, unilateral	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	macrodactyly of toes, unilateral
 MONDO:0017567	MONDO:equivalentTo	icd11.foundation:84822459	macrodactyly of toes, bilateral	Macrodactyly of toes, bilateral	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	macrodactyly of toes, bilateral
 MONDO:0017570	MONDO:equivalentTo	icd11.foundation:317341989	leukocyte adhesion deficiency	Leukocyte adhesion deficiency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	leukocyte adhesion deficiency
+MONDO:0017572	MONDO:equivalentTo	icd11.foundation:835129952	tick-borne encephalitis	Tick-borne encephalitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tick-borne encephalitis
 MONDO:0017598	MONDO:equivalentTo	icd11.foundation:668003563	primary cutaneous anaplastic large cell lymphoma	Primary cutaneous anaplastic large cell lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary cutaneous anaplastic large cell lymphoma
 MONDO:0017599	MONDO:equivalentTo	icd11.foundation:1691104199	splenic diffuse red pulp small B-cell lymphoma	Splenic diffuse red pulp small B-cell lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	splenic diffuse red pulp small b-cell lymphoma
 MONDO:0017599	MONDO:equivalentTo	icd11.foundation:1970934986	splenic diffuse red pulp small B-cell lymphoma	Splenic diffuse red pulp small B-cell lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	splenic diffuse red pulp small b-cell lymphoma
@@ -3261,6 +3267,7 @@ MONDO:0018768	MONDO:equivalentTo	icd11.foundation:1932140025	familial cold autoi
 MONDO:0018772	MONDO:equivalentTo	icd11.foundation:1414756318	Joubert syndrome	Joubert syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	joubert syndrome
 MONDO:0018778	MONDO:equivalentTo	icd11.foundation:1389094589	intermediate Charcot-Marie-Tooth disease	Intermediate Charcot-Marie-Tooth disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	intermediate charcot-marie-tooth disease
 MONDO:0018783	MONDO:equivalentTo	icd11.foundation:112300601	fibroblastic rheumatism	Fibroblastic rheumatism	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	fibroblastic rheumatism
+MONDO:0018811	MONDO:equivalentTo	icd11.foundation:682625970	congenital portosystemic shunt	Congenital portosystemic shunt	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	congenital portosystemic shunt
 MONDO:0018815	MONDO:equivalentTo	icd11.foundation:1603788294	aneurysmal bone cyst	Aneurysmal bone cyst	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	aneurysmal bone cyst
 MONDO:0018815	MONDO:equivalentTo	icd11.foundation:191920280	aneurysmal bone cyst	Aneurysmal bone cyst	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	aneurysmal bone cyst
 MONDO:0018824	MONDO:equivalentTo	icd11.foundation:2120746218	pyoderma gangrenosum	Pyoderma gangrenosum	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pyoderma gangrenosum
@@ -3774,6 +3781,7 @@ MONDO:0021297	MONDO:equivalentTo	icd11.foundation:1626158287	carcinoma in situ o
 MONDO:0021298	MONDO:equivalentTo	icd11.foundation:364791852	carcinoma in situ of oropharynx	Carcinoma in situ of oropharynx	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	carcinoma in situ of oropharynx
 MONDO:0021300	MONDO:equivalentTo	icd11.foundation:2053023791	adenoid cystic carcinoma of oropharynx	Adenoid cystic carcinoma of oropharynx	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	adenoid cystic carcinoma of oropharynx
 MONDO:0021301	MONDO:equivalentTo	icd11.foundation:1430405383	adenoma of nipple	Adenoma of nipple	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	adenoma of nipple
+MONDO:0021335	MONDO:equivalentTo	icd11.foundation:220022932	carcinoma of duodenum	Carcinoma of duodenum	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	carcinoma of duodenum
 MONDO:0021377	MONDO:equivalentTo	icd11.foundation:1096967508	hypertrophic lichen planus	Hypertrophic lichen planus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hypertrophic lichen planus
 MONDO:0021390	MONDO:equivalentTo	icd11.foundation:134277787	polyp of ureter	Polyp of ureter	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	polyp of ureter
 MONDO:0021392	MONDO:equivalentTo	icd11.foundation:537826614	polyp of large intestine	Polyp of large intestine	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	polyp of large intestine
@@ -3952,7 +3960,6 @@ MONDO:0043206	MONDO:equivalentTo	icd11.foundation:509265047	trichostasis spinulo
 MONDO:0043219	MONDO:equivalentTo	icd11.foundation:2022157084	migraine with brainstem aura	Migraine with brainstem aura	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	migraine with brainstem aura
 MONDO:0043224	MONDO:equivalentTo	icd11.foundation:645643099	multi-infarct dementia	Multi-infarct dementia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	multi-infarct dementia
 MONDO:0043237	MONDO:equivalentTo	icd11.foundation:1755751917	glossodynia	Glossodynia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	glossodynia
-MONDO:0043243	MONDO:equivalentTo	icd11.foundation:417308277	leukoplakia	Leukoplakia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	leukoplakia
 MONDO:0043254	MONDO:equivalentTo	icd11.foundation:1014677494	papular urticaria	Papular urticaria	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	papular urticaria
 MONDO:0043267	MONDO:equivalentTo	icd11.foundation:1398254566	rheumatoid vasculitis	Rheumatoid vasculitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	rheumatoid vasculitis
 MONDO:0043283	MONDO:equivalentTo	icd11.foundation:273225437	silicosiderosis	Silicosiderosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	silicosiderosis
@@ -4071,7 +4078,6 @@ MONDO:0850301	MONDO:equivalentTo	icd11.foundation:445309625	pemphigoid	Pemphigoi
 MONDO:0850306	MONDO:equivalentTo	icd11.foundation:1918279014	latent autoimmune diabetes in adults	Latent autoimmune diabetes in adults	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	latent autoimmune diabetes in adults
 MONDO:0850312	MONDO:equivalentTo	icd11.foundation:371288018	anaplastic pleomorphic xanthoastrocytoma	Anaplastic pleomorphic xanthoastrocytoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	anaplastic pleomorphic xanthoastrocytoma
 MONDO:0850420	MONDO:equivalentTo	icd11.foundation:2063881303	acute necrotizing pancreatitis	Acute necrotizing pancreatitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	acute necrotizing pancreatitis
-MONDO:0850459	MONDO:equivalentTo	icd11.foundation:1300247145	primary cutaneous gamma-delta t-cell lymphoma	Primary cutaneous gamma-delta T-cell lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary cutaneous gamma-delta t-cell lymphoma
 MONDO:0858916	MONDO:equivalentTo	icd11.foundation:1363568258	pituitary blastoma	Pituitary blastoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pituitary blastoma
 MONDO:0858940	MONDO:equivalentTo	icd11.foundation:41211277	infant-type hemispheric glioma	Infant-type hemispheric glioma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	infant-type hemispheric glioma
 MONDO:0858960	MONDO:equivalentTo	icd11.foundation:1913552197	spindle cell oncocytoma	Spindle cell oncocytoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spindle cell oncocytoma
@@ -4084,12 +4090,14 @@ MONDO:0958096	MONDO:equivalentTo	icd11.foundation:824243127	monomorphic epitheli
 MONDO:0968955	MONDO:equivalentTo	icd11.foundation:1793262466	hypocalcified amelogenesis imperfecta	Hypocalcified amelogenesis imperfecta	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hypocalcified amelogenesis imperfecta
 MONDO:1010000	MONDO:equivalentTo	icd11.foundation:1571230529	pythiosis	Pythiosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pythiosis
 MONDO:8000010	MONDO:equivalentTo	icd11.foundation:1173370808	antiphospholipid syndrome	Antiphospholipid syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	antiphospholipid syndrome
+MONDO:0003222	MONDO:equivalentTo	NCIT:C4661	central nervous system melanocytic neoplasm	Central Nervous System Melanocytic Neoplasm	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	central nervous system melanocytic neoplasm
 MONDO:0004520	MONDO:equivalentTo	NCIT:C192096	intratubular embryonal carcinoma	Intratubular Embryonal Carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	intratubular embryonal carcinoma
 MONDO:0015301	MONDO:equivalentTo	NCIT:C199391	primary cutaneous amyloidosis	Primary Cutaneous Amyloidosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary cutaneous amyloidosis
+MONDO:0015391	MONDO:equivalentTo	NCIT:C202982	nasopharyngeal teratoma	Nasopharyngeal Teratoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nasopharyngeal teratoma
 MONDO:0017289	MONDO:equivalentTo	NCIT:C190105	fetal lung interstitial tumor	Fetal Lung Interstitial Tumor	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	fetal lung interstitial tumor
 MONDO:0019500	MONDO:equivalentTo	NCIT:C189045	extragonadal teratoma	Extragonadal Teratoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	extragonadal teratoma
+MONDO:0019964	MONDO:equivalentTo	NCIT:C6430	thymic neuroendocrine tumor	Thymic Neuroendocrine Tumor	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	thymic neuroendocrine tumor
 MONDO:0044037	MONDO:equivalentTo	NCIT:C74524	livedo reticularis	Livedo Reticularis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	livedo reticularis
-MONDO:0850110	MONDO:equivalentTo	NCIT:C48613	melanoma in congenital melanocytic nevus	Melanoma in Congenital Melanocytic Nevus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	melanoma in congenital melanocytic nevus
 MONDO:0850112	MONDO:equivalentTo	NCIT:C139012	breast implant-associated anaplastic large cell lymphoma	Breast Implant-Associated Anaplastic Large Cell Lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	breast implant-associated anaplastic large cell lymphoma
 MONDO:0850154	MONDO:equivalentTo	NCIT:C4824	tongue carcinoma	Tongue Carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tongue carcinoma
 MONDO:0850267	MONDO:equivalentTo	NCIT:C7972	childhood acute megakaryoblastic leukemia	Childhood Acute Megakaryoblastic Leukemia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	childhood acute megakaryoblastic leukemia
@@ -4141,37 +4149,18 @@ MONDO:0958161	MONDO:equivalentTo	NCIT:C199260	B acute lymphoblastic leukemia wit
 MONDO:0958162	MONDO:equivalentTo	NCIT:C199232	B acute lymphoblastic leukemia with DUX4 rearrangement	B Acute Lymphoblastic Leukemia with DUX4 Rearrangement	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	b acute lymphoblastic leukemia with dux4 rearrangement
 MONDO:0958164	MONDO:equivalentTo	NCIT:C177898	poorly differentiated chordoma	Poorly Differentiated Chordoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	poorly differentiated chordoma
 MONDO:0958165	MONDO:equivalentTo	NCIT:C154496	anaplastic sarcoma of the kidney	Anaplastic Sarcoma of the Kidney	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	anaplastic sarcoma of the kidney
+MONDO:0958295	MONDO:equivalentTo	NCIT:C178468	BCOR ITD sarcoma	BCOR ITD Sarcoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	bcor itd sarcoma
+MONDO:0958296	MONDO:equivalentTo	NCIT:C178466	BCOR-CCNB3 sarcoma	BCOR-CCNB3 Sarcoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	bcor-ccnb3 sarcoma
+MONDO:0958297	MONDO:equivalentTo	NCIT:C189007	childhood sarcoma with BCOR genetic alterations	Childhood Sarcoma with BCOR Genetic Alterations	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	childhood sarcoma with bcor genetic alterations
+MONDO:0958298	MONDO:equivalentTo	NCIT:C189003	childhood round cell sarcoma with EWSR1-non-ETS fusion	Childhood Round Cell Sarcoma with EWSR1-non-ETS Fusion	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	childhood round cell sarcoma with ewsr1-non-ets fusion
+MONDO:0958299	MONDO:equivalentTo	NCIT:C178460	round cell sarcoma with EWSR1-NFATC2 gene fusion	Round Cell Sarcoma with EWSR1-NFATC2 Gene Fusion	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	round cell sarcoma with ewsr1-nfatc2 gene fusion
+MONDO:0958300	MONDO:equivalentTo	NCIT:C178461	round cell sarcoma with EWSR1-PATZ1 gene fusion	Round Cell Sarcoma with EWSR1-PATZ1 Gene Fusion	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	round cell sarcoma with ewsr1-patz1 gene fusion
+MONDO:0958301	MONDO:equivalentTo	NCIT:C178462	round cell sarcoma with FUS-NFATC2 gene fusion	Round Cell Sarcoma with FUS-NFATC2 Gene Fusion	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	round cell sarcoma with fus-nfatc2 gene fusion
+MONDO:0958302	MONDO:equivalentTo	NCIT:C37210	TFEB-rearranged renal cell carcinoma	TFEB-Rearranged Renal Cell Carcinoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tfeb-rearranged renal cell carcinoma
+MONDO:0958303	MONDO:equivalentTo	NCIT:C189242	childhood renal cell carcinoma with MiT translocations	Childhood Renal Cell Carcinoma with MiT Translocations	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	childhood renal cell carcinoma with mit translocations
+MONDO:0005641	MONDO:equivalentTo	DOID:2934	aleutian mink disease	aleutian mink disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	aleutian mink disease
+MONDO:0005676	MONDO:equivalentTo	DOID:5154	borna disease	borna disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	borna disease
 MONDO:0007744	MONDO:equivalentTo	DOID:0111368	cholesterol-ester transfer protein deficiency	cholesterol-ester transfer protein deficiency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cholesterol-ester transfer protein deficiency
-MONDO:0009619	MONDO:equivalentTo	DOID:0081432	microcephaly-micromelia syndrome	microcephaly-micromelia syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:251230
-MONDO:0009681	MONDO:equivalentTo	DOID:0060946	Ullrich congenital muscular dystrophy 1A	Ullrich congenital muscular dystrophy 1A	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:254090
-MONDO:0011610	MONDO:equivalentTo	DOID:0081446	dimethylglycine dehydrogenase deficiency	dimethylglycine dehydrogenase deficiency	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:605850
-MONDO:0013931	MONDO:equivalentTo	DOID:0081433	peroxisome biogenesis disorder 4B	Peroxisome biogenesis disorder 4B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614863
-MONDO:0013933	MONDO:equivalentTo	DOID:0081434	peroxisome biogenesis disorder 5B	Peroxisome biogenesis disorder 5B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614867
-MONDO:0013937	MONDO:equivalentTo	DOID:0081435	peroxisome biogenesis disorder 6B	Peroxisome biogenesis disorder 6B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614871
-MONDO:0013939	MONDO:equivalentTo	DOID:0081436	peroxisome biogenesis disorder 7B	Peroxisome biogenesis disorder 7B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614873
-MONDO:0013943	MONDO:equivalentTo	DOID:0081437	peroxisome biogenesis disorder 8B	Peroxisome biogenesis disorder 8B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614877
-MONDO:0013945	MONDO:equivalentTo	DOID:0081438	peroxisome biogenesis disorder 9B	Peroxisome biogenesis disorder 9B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614879
-MONDO:0013950	MONDO:equivalentTo	DOID:0081439	peroxisome biogenesis disorder 11B	Peroxisome biogenesis disorder 11B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614885
-MONDO:0014654	MONDO:equivalentTo	DOID:0060944	Ullrich congenital muscular dystrophy 2	Ullrich congenital muscular dystrophy 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:616470
-MONDO:0014669	MONDO:equivalentTo	DOID:0081447	cone-rod dystrophy 21	cone-rod dystrophy 21	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:616502
-MONDO:0015004	MONDO:equivalentTo	DOID:0060936	dystonia 28, childhood-onset	dystonia 28, childhood-onset	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617284
-MONDO:0018540	MONDO:equivalentTo	DOID:0081451	PFAPA syndrome	PFAPA syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pfapa syndrome
-MONDO:0025691	MONDO:equivalentTo	DOID:0060937	dystonia 30	dystonia 30	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619291
-MONDO:0030440	MONDO:equivalentTo	DOID:0081448	cone-rod dystrophy 22	cone-rod dystrophy 22	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619531
-MONDO:0030455	MONDO:equivalentTo	DOID:0060938	dystonia 31	dystonia 31	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619565
-MONDO:0030486	MONDO:equivalentTo	DOID:0060939	dystonia 32	dystonia 32	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619637
-MONDO:0030513	MONDO:equivalentTo	DOID:0060940	dystonia 33	dystonia 33	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619687
-MONDO:0030608	MONDO:equivalentTo	DOID:0060941	interstitial lung disease 1	interstitial lung disease 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619611
-MONDO:0030958	MONDO:equivalentTo	DOID:0060955	dystonia 35, childhood-onset	dystonia 35, childhood-onset	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619921
-MONDO:0054549	MONDO:equivalentTo	DOID:0081440	peroxisome biogenesis disorder 10B	Peroxisome biogenesis disorder 10B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617370
-MONDO:0060533	MONDO:equivalentTo	DOID:0081431	microcephaly, short stature, and limb abnormalities	microcephaly, short stature, and limb abnormalities	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617604
-MONDO:0859139	MONDO:equivalentTo	DOID:0081442	blepharophimosis-impaired intellectual development syndrome	blepharophimosis-impaired intellectual development syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619293
-MONDO:0859377	MONDO:equivalentTo	DOID:0081444	neurodevelopmental disorder with poor growth and behavioral abnormalities	neurodevelopmental disorder with poor growth and behavioral abnormalities	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620242
-MONDO:0957240	MONDO:equivalentTo	DOID:0081449	cone-rod dystrophy 24	cone-rod dystrophy 24	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620342
-MONDO:0957539	MONDO:equivalentTo	DOID:0060966	dystonia 22, juvenile-onset	dystonia 22, juvenile-onset	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620453
-MONDO:0957542	MONDO:equivalentTo	DOID:0060967	dystonia 22, adult-onset	dystonia 22, adult-onset	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620456
-MONDO:0958235	MONDO:equivalentTo	DOID:0060942	Ullrich congenital muscular dystrophy 1B	Ullrich congenital muscular dystrophy 1B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620727
-MONDO:0958236	MONDO:equivalentTo	DOID:0060943	Ullrich congenital muscular dystrophy 1C	Ullrich congenital muscular dystrophy 1C	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620728
 MONDO:0000088	MONDO:equivalentTo	ICD10WHO:E30.1	precocious puberty	Precocious puberty	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	precocious puberty
 MONDO:0000245	MONDO:equivalentTo	ICD10WHO:B35.5	tinea imbricata	Tinea imbricata	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tinea imbricata
 MONDO:0000367	MONDO:equivalentTo	ICD10WHO:B68	taeniasis	Taeniasis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	taeniasis
@@ -4833,7 +4822,6 @@ MONDO:0020356	MONDO:equivalentTo	ICD10WHO:Q13.0	coloboma of iris	Coloboma of iri
 MONDO:0020366	MONDO:equivalentTo	ICD10WHO:Q15.0	congenital glaucoma	Congenital glaucoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	congenital glaucoma
 MONDO:0020398	MONDO:equivalentTo	ICD10WHO:Q23.2	congenital mitral stenosis	Congenital mitral stenosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	congenital mitral stenosis
 MONDO:0020502	MONDO:equivalentTo	ICD10WHO:A95	yellow fever	Yellow fever	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	yellow fever
-MONDO:0020548	MONDO:equivalentTo	ICD10WHO:H13.3	ocular pemphigoid	Ocular pemphigoid	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ocular pemphigoid
 MONDO:0020568	MONDO:equivalentTo	ICD10WHO:B87.0	cutaneous myiasis	Cutaneous myiasis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cutaneous myiasis
 MONDO:0020599	MONDO:equivalentTo	ICD10WHO:D68.4	acquired coagulation factor deficiency	Acquired coagulation factor deficiency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	acquired coagulation factor deficiency
 MONDO:0020600	MONDO:equivalentTo	ICD10WHO:J02	acute pharyngitis	Acute pharyngitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	acute pharyngitis

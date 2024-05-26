@@ -4,10 +4,10 @@
     "abox_axiom_count_incl": 0,
     "annotation_property_count": 12,
     "annotation_property_count_incl": 12,
-    "axiom_count": 367211,
-    "axiom_count_incl": 367211,
-    "class_count": 87537,
-    "class_count_incl": 87537,
+    "axiom_count": 371326,
+    "axiom_count_incl": 371326,
+    "class_count": 88332,
+    "class_count_incl": 88332,
     "dataproperty_count": 0,
     "dataproperty_count_incl": 0,
     "datatypes_count": 2,
@@ -20,13 +20,13 @@
     "expressivity_incl": "",
     "individual_count": 0,
     "individual_count_incl": 0,
-    "logical_axiom_count": 87706,
-    "logical_axiom_count_incl": 87706,
+    "logical_axiom_count": 88523,
+    "logical_axiom_count_incl": 88523,
     "obj_property_count": 0,
     "obj_property_count_incl": 0,
     "ontology_anno_count": 5,
     "ontology_iri": "http://purl.obolibrary.org/obo/mondo/sources/icd11foundation.owl",
-    "ontology_version_iri": "http://purl.obolibrary.org/obo/mondo/sources/2024-05-01/icd11foundation.owl",
+    "ontology_version_iri": "http://purl.obolibrary.org/obo/mondo/sources/2024-05-25/icd11foundation.owl",
     "owl2": true,
     "owl2_dl": true,
     "owl2_el": true,
@@ -37,13 +37,13 @@
     "rdfs": true,
     "rule_count": 0,
     "rule_count_incl": 0,
-    "signature_entity_count": 87551,
-    "signature_entity_count_incl": 87551,
+    "signature_entity_count": 88346,
+    "signature_entity_count_incl": 88346,
     "syntax": "RDF/XML Syntax",
-    "tbox_axiom_count": 87706,
-    "tbox_axiom_count_incl": 87706,
-    "tboxrbox_axiom_count": 87706,
-    "tboxrbox_axiom_count_incl": 87706,
+    "tbox_axiom_count": 88523,
+    "tbox_axiom_count_incl": 88523,
+    "tboxrbox_axiom_count": 88523,
+    "tboxrbox_axiom_count_incl": 88523,
     "axiom_types": [
       "AnnotationAssertion",
       "SubAnnotationPropertyOf",
@@ -61,22 +61,22 @@
     "valid_imports": [],
     "valid_imports_incl": [],
     "axiom_type_count": {
-      "AnnotationAssertion": 191956,
+      "AnnotationAssertion": 194459,
       "SubAnnotationPropertyOf": 1,
-      "Declaration": 87548,
-      "SubClassOf": 87706
+      "Declaration": 88343,
+      "SubClassOf": 88523
     },
     "axiom_type_count_incl": {
-      "AnnotationAssertion": 191956,
+      "AnnotationAssertion": 194459,
       "SubAnnotationPropertyOf": 1,
-      "Declaration": 87548,
-      "SubClassOf": 87706
+      "Declaration": 88343,
+      "SubClassOf": 88523
     },
     "class_expression_count": {
-      "Class": 262949
+      "Class": 265378
     },
     "class_expression_count_incl": {
-      "Class": 262949
+      "Class": 265378
     },
     "curie_map": {
       "oboInOwl": "http://www.geneontology.org/formats/oboInOwl#",
@@ -89,25 +89,25 @@
       "dc": "http://purl.org/dc/terms/"
     },
     "namespace_axiom_count": {
-      "prefix_unknown": 262951,
-      "oboInOwl": 63653,
-      "owl": 7234,
-      "IAO": 24524,
-      "rdfs": 100141,
+      "prefix_unknown": 265380,
+      "oboInOwl": 65501,
+      "owl": 7511,
+      "IAO": 24830,
+      "rdfs": 100520,
       "obo": 2,
-      "dc": 1433
+      "dc": 1439
     },
     "namespace_axiom_count_incl": {
-      "prefix_unknown": 262951,
-      "oboInOwl": 63653,
-      "owl": 7234,
-      "IAO": 24524,
-      "rdfs": 100141,
+      "prefix_unknown": 265380,
+      "oboInOwl": 65501,
+      "owl": 7511,
+      "IAO": 24830,
+      "rdfs": 100520,
       "obo": 2,
-      "dc": 1433
+      "dc": 1439
     },
     "namespace_entity_count": {
-      "prefix_unknown": 87539,
+      "prefix_unknown": 88334,
       "oboInOwl": 3,
       "owl": 2,
       "rdf": 1,
@@ -118,7 +118,7 @@
       "dc": 1
     },
     "namespace_entity_count_incl": {
-      "prefix_unknown": 87539,
+      "prefix_unknown": 88334,
       "oboInOwl": 3,
       "owl": 2,
       "rdf": 1,

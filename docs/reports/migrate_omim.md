@@ -2,16 +2,11 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/slurp/omim.tsv)
 
 ### Migratable terms
-| mondo_id      | mondo_label                                                         | xref                 | xref_source                | original_label                                                      | definition    | parents       |
-|:--------------|:--------------------------------------------------------------------|:---------------------|:---------------------------|:--------------------------------------------------------------------|:--------------|:--------------|
-| ID            | LABEL                                                               | A oboInOwl:hasDbXref | >A oboInOwl:source SPLIT=| |                                                                     | A IAO:0000115 | SC %          |
-| MONDO:0968950 | li-fraumeni syndrome                                                | OMIMPS:151623        | MONDO:equivalentTo         | Li-Fraumeni syndrome                                                |               |               |
-| MONDO:0968976 | neurodevelopmental disorder with progressive movement abnormalities | OMIM:620785          | MONDO:equivalentTo         | neurodevelopmental disorder with progressive movement abnormalities |               |               |
-| MONDO:0968977 | basal ganglia calcification, idiopathic, 9, autosomal recessive     | OMIM:620786          | MONDO:equivalentTo         | basal ganglia calcification, idiopathic, 9, autosomal recessive     |               |               |
-| MONDO:0968978 | aplasia cutis-enamel dysplasia syndrome                             | OMIM:620789          | MONDO:equivalentTo         | aplasia cutis-enamel dysplasia syndrome                             |               |               |
-| MONDO:0968979 | neurodevelopmental disorder with hypotonia and seizures             | OMIM:620790          | MONDO:equivalentTo         | neurodevelopmental disorder with hypotonia and seizures             |               |               |
-| MONDO:0968980 | otosclerosis 12                                                     | OMIM:620792          | MONDO:equivalentTo         | otosclerosis 12                                                     |               | MONDO:0005349 |
-| MONDO:0968981 | deafness, autosomal recessive 124                                   | OMIM:620794          | MONDO:equivalentTo         | deafness, autosomal recessive 124                                   |               | MONDO:0019588 |
-| MONDO:0968982 | autoinflammation with episodic fever and immune dysregulation       | OMIM:620795          | MONDO:equivalentTo         | autoinflammation with episodic fever and immune dysregulation       |               |               |
-| MONDO:0968983 | proteasome-associated autoinflammatory syndrome 6                   | OMIM:620796          | MONDO:equivalentTo         | proteasome-associated autoinflammatory syndrome 6                   |               | MONDO:0009726 |
-| MONDO:0968984 | citrullinemia                                                       | OMIMPS:215700        | MONDO:equivalentTo         | Citrullinemia                                                       |               |               |
+| mondo_id      | mondo_label                                    | xref                 | xref_source                | original_label                                 | definition    | parents       |
+|:--------------|:-----------------------------------------------|:---------------------|:---------------------------|:-----------------------------------------------|:--------------|:--------------|
+| ID            | LABEL                                          | A oboInOwl:hasDbXref | >A oboInOwl:source SPLIT=| |                                                | A IAO:0000115 | SC %          |
+| MONDO:0969182 | leigh syndrome, mitochondrial                  | OMIM:500017          | MONDO:equivalentTo         | leigh syndrome, mitochondrial                  |               |               |
+| MONDO:0969183 | developmental and epileptic encephalopathy 116 | OMIM:620806          | MONDO:equivalentTo         | developmental and epileptic encephalopathy 116 |               | MONDO:0100062 |
+| MONDO:0969184 | rothmund-thomson syndrome, type 4              | OMIM:620819          | MONDO:equivalentTo         | rothmund-thomson syndrome, type 4              |               | MONDO:0010002 |
+| MONDO:0969185 | el hayek-chahrour neurodevelopmental syndrome  | OMIM:620820          | MONDO:equivalentTo         | el hayek-chahrour neurodevelopmental syndrome  |               |               |
+| MONDO:0969186 | neuroocular syndrome                           | OMIMPS:619539        | MONDO:equivalentTo         | Neuroocular syndrome                           |               |               |
