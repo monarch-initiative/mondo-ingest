@@ -549,23 +549,24 @@ $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/add-robot-template-header.py $^ > $@
-.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv
 
 .PHONY: external-content-nord
-external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
 
 tmp/ordo-subsets.tsv: $(COMPONENTSDIR)/ordo.owl
 	$(ROBOT) query -i $< --query ../sparql/select-ordo-subsets.sparql $@
 
-$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.template.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
+$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/ordo_subsets.py \
 	--mondo-mappings-path tmp/mondo.sssom.tsv \
 	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
 	--onto-config-path metadata/ordo.yml \
 	--outpath $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
 
 .PHONY: external-content-ordo
-external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.template.tsv
+external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
 
 update-externally-managed-content: external-content-nord external-content-ordo
 
