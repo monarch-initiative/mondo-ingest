@@ -1,6 +1,5 @@
 mondo_id	mondo_label	xref	xref_source	original_label	definition	parents
 ID	LABEL	A oboInOwl:hasDbXref	>A oboInOwl:source SPLIT=|		A IAO:0000115	SC %
-MONDO:0853205	conjunctival melanocytic intraepithelial neoplasia	NCIT:C100054	MONDO:equivalentTo	Conjunctival Melanocytic Intraepithelial Neoplasia		MONDO:0020204
 MONDO:0853241	primary central nervous system neoplasm	NCIT:C102871	MONDO:equivalentTo	Primary Central Nervous System Neoplasm		MONDO:0006130
 MONDO:0853254	adrenal cortical carcinoma by ensat stage	NCIT:C104030	MONDO:equivalentTo	Adrenal Cortical Carcinoma by ENSAT Stage		MONDO:0006639
 MONDO:0853255	ovarian high grade serous adenocarcinoma	NCIT:C105555	MONDO:equivalentTo	Ovarian High Grade Serous Adenocarcinoma		MONDO:0005211
@@ -49,8 +48,6 @@ MONDO:0853501	intermediate chondrogenic neoplasm	NCIT:C121846	MONDO:equivalentTo
 MONDO:0853502	chondrosarcoma, grade 2	NCIT:C121870	MONDO:equivalentTo	Chondrosarcoma, Grade 2		MONDO:0008977
 MONDO:0853503	chondrosarcoma, grade 3	NCIT:C121871	MONDO:equivalentTo	Chondrosarcoma, Grade 3		MONDO:0008977
 MONDO:0853504	benign notochordal cell tumor	NCIT:C121901	MONDO:equivalentTo	Benign Notochordal Cell Tumor		MONDO:0002597|MONDO:0000631
-MONDO:0853505	ivory exostosis	NCIT:C121923	MONDO:equivalentTo	Ivory Exostosis		MONDO:0005166
-MONDO:0853506	enostosis	NCIT:C121924	MONDO:equivalentTo	Enostosis		MONDO:0005166
 MONDO:0853507	intermediate osteogenic neoplasm	NCIT:C121925	MONDO:equivalentTo	Intermediate Osteogenic Neoplasm		MONDO:0045053
 MONDO:0853508	intermediate bone neoplasm	NCIT:C121926	MONDO:equivalentTo	Intermediate Bone Neoplasm		MONDO:0019060
 MONDO:0853510	primary bone non-hodgkin lymphoma	NCIT:C121930	MONDO:equivalentTo	Primary Bone Non-Hodgkin Lymphoma		MONDO:0017814|MONDO:0018908
@@ -89,7 +86,6 @@ MONDO:0853738	fallopian tube lymphoma	NCIT:C126464	MONDO:equivalentTo	Fallopian 
 MONDO:0853742	broad ligament serous adenocarcinoma	NCIT:C126479	MONDO:equivalentTo	Broad Ligament Serous Adenocarcinoma		MONDO:0002741|MONDO:0005278
 MONDO:0853743	oropharyngeal poorly differentiated carcinoma	NCIT:C126750	MONDO:equivalentTo	Oropharyngeal Poorly Differentiated Carcinoma		MONDO:0044704
 MONDO:0853745	endometrial dedifferentiated carcinoma	NCIT:C126769	MONDO:equivalentTo	Endometrial Dedifferentiated Carcinoma		MONDO:0002447
-MONDO:0853747	uterine corpus neuroendocrine tumor g1	NCIT:C126773	MONDO:equivalentTo	Uterine Corpus Neuroendocrine Tumor G1		MONDO:0005369|MONDO:0021650
 MONDO:0853748	uterine corpus hydropic leiomyoma	NCIT:C126975	MONDO:equivalentTo	Uterine Corpus Hydropic Leiomyoma		MONDO:0007886
 MONDO:0853749	uterine corpus high grade endometrial stromal sarcoma	NCIT:C126998	MONDO:equivalentTo	Uterine Corpus High Grade Endometrial Stromal Sarcoma		MONDO:0002923
 MONDO:0853751	benign uterine corpus pecoma	NCIT:C127071	MONDO:equivalentTo	Benign Uterine Corpus PEComa		MONDO:0004221|MONDO:0021525|MONDO:0020581
@@ -101,9 +97,8 @@ MONDO:0853776	ovarian cancer by ajcc v6 and v7 stage	NCIT:C128106	MONDO:equivale
 MONDO:0853779	vaginal germ cell tumor	NCIT:C128112	MONDO:equivalentTo	Vaginal Germ Cell Tumor		MONDO:0005040|MONDO:0021050
 MONDO:0853781	vulvar squamous intraepithelial lesion, hpv-associated	NCIT:C128142	MONDO:equivalentTo	Vulvar Squamous Intraepithelial Lesion, HPV-Associated		MONDO:0005198
 MONDO:0853784	vulvar adenocarcinoma of mammary gland type	NCIT:C128162	MONDO:equivalentTo	Vulvar Adenocarcinoma of Mammary Gland Type		MONDO:0024336
-MONDO:0853787	vulvar adenocarcinoma, intestinal-type	NCIT:C128166	MONDO:equivalentTo	Vulvar Adenocarcinoma, Intestinal-Type		MONDO:0024336|MONDO:0006254|MONDO:0004957
+MONDO:0853787	vulvar mucinous adenocarcinoma, intestinal-type	NCIT:C128166	MONDO:equivalentTo	Vulvar Mucinous Adenocarcinoma, Intestinal-Type		MONDO:0024336|MONDO:0006254|MONDO:0004957
 MONDO:0853788	vulvar keratoacanthoma	NCIT:C128167	MONDO:equivalentTo	Vulvar Keratoacanthoma		MONDO:0024609|MONDO:0002527
-MONDO:0853793	vulvar merkel cell carcinoma	NCIT:C128247	MONDO:equivalentTo	Vulvar Merkel Cell Carcinoma		MONDO:0019210|MONDO:0056816
 MONDO:0853797	vulvar germ cell tumor	NCIT:C128294	MONDO:equivalentTo	Vulvar Germ Cell Tumor		MONDO:0005040|MONDO:0021049
 MONDO:0853835	b acute lymphoblastic leukemia, philadelphia chromosome negative	NCIT:C128629	MONDO:equivalentTo	B Acute Lymphoblastic Leukemia, Philadelphia Chromosome Negative		MONDO:0020511
 MONDO:0853837	nk-cell lymphoma, unclassifiable	NCIT:C128697	MONDO:equivalentTo	NK-Cell Lymphoma, Unclassifiable		MONDO:0000430
@@ -198,9 +193,6 @@ MONDO:0854066	lung non-keratinizing squamous cell carcinoma	NCIT:C136714	MONDO:e
 MONDO:0854067	lung non-mucinous adenocarcinoma in situ	NCIT:C136716	MONDO:equivalentTo	Lung Non-Mucinous Adenocarcinoma In Situ		MONDO:0000503
 MONDO:0854068	lung mucinous adenocarcinoma in situ	NCIT:C136717	MONDO:equivalentTo	Lung Mucinous Adenocarcinoma In Situ		MONDO:0000503
 MONDO:0854069	lung squamous cell carcinoma in situ	NCIT:C136719	MONDO:equivalentTo	Lung Squamous Cell Carcinoma In Situ		MONDO:0005097|MONDO:0004693
-MONDO:0854071	atypical spitz nevus	NCIT:C136825	MONDO:equivalentTo	Atypical Spitz Nevus		MONDO:0005073|MONDO:0021583
-MONDO:0854072	merkel cell carcinoma by ajcc v7 stage	NCIT:C136869	MONDO:equivalentTo	Merkel Cell Carcinoma by AJCC v7 Stage		MONDO:0019210
-MONDO:0854073	merkel cell carcinoma by ajcc v8 stage	NCIT:C136870	MONDO:equivalentTo	Merkel Cell Carcinoma by AJCC v8 Stage		MONDO:0019210
 MONDO:0854075	cutaneous melanoma by ajcc v8 stage	NCIT:C137645	MONDO:equivalentTo	Cutaneous Melanoma by AJCC v8 Stage		MONDO:0005012
 MONDO:0854076	occult breast carcinoma	NCIT:C137674	MONDO:equivalentTo	Occult Breast Carcinoma		MONDO:0004989
 MONDO:0854077	breast pleomorphic lobular carcinoma in situ	NCIT:C137839	MONDO:equivalentTo	Breast Pleomorphic Lobular Carcinoma In Situ		MONDO:0006270
@@ -273,7 +265,6 @@ MONDO:0854249	recurrent lymphoproliferative disorder	NCIT:C147861	MONDO:equivale
 MONDO:0854250	oropharyngeal p16ink4a-negative squamous cell carcinoma	NCIT:C147906	MONDO:equivalentTo	Oropharyngeal p16INK4a-Negative Squamous Cell Carcinoma		MONDO:0044704
 MONDO:0854251	central nervous system b-cell non-hodgkin lymphoma	NCIT:C147948	MONDO:equivalentTo	Central Nervous System B-Cell Non-Hodgkin Lymphoma		MONDO:0015759|MONDO:0044887
 MONDO:0854253	refractory melanoma	NCIT:C147983	MONDO:equivalentTo	Refractory Melanoma		MONDO:0036501|MONDO:0005105
-MONDO:0854257	unresectable craniopharyngioma	NCIT:C148076	MONDO:equivalentTo	Unresectable Craniopharyngioma		MONDO:0018907
 MONDO:0854268	refractory round cell liposarcoma	NCIT:C148299	MONDO:equivalentTo	Refractory Round Cell Liposarcoma		MONDO:0005238
 MONDO:0854269	metastatic round cell liposarcoma	NCIT:C148300	MONDO:equivalentTo	Metastatic Round Cell Liposarcoma		MONDO:0005238
 MONDO:0854270	refractory sarcoma	NCIT:C148301	MONDO:equivalentTo	Refractory Sarcoma		MONDO:0005089|MONDO:0036501
@@ -334,8 +325,6 @@ MONDO:0854492	mixed gangliocytoma-pituitary neuroendocrine tumor	NCIT:C155767	MO
 MONDO:0854495	ependymal pituicytoma	NCIT:C155774	MONDO:equivalentTo	Ependymal Pituicytoma		MONDO:0003257
 MONDO:0854496	sellar meningioma	NCIT:C155776	MONDO:equivalentTo	Sellar Meningioma		MONDO:0002998|MONDO:0002720
 MONDO:0854500	sellar solitary fibrous tumor	NCIT:C155784	MONDO:equivalentTo	Sellar Solitary Fibrous Tumor		MONDO:0002720|MONDO:0003223
-MONDO:0854504	pituitary gland non-hodgkin lymphoma	NCIT:C155796	MONDO:equivalentTo	Pituitary Gland Non-Hodgkin Lymphoma		MONDO:0002109|MONDO:0044887
-MONDO:0854506	sellar germ cell tumor	NCIT:C155801	MONDO:equivalentTo	Sellar Germ Cell Tumor		MONDO:0003000|MONDO:0002720
 MONDO:0854518	metastatic malignant pancreatic neoplasm	NCIT:C155852	MONDO:equivalentTo	Metastatic Malignant Pancreatic Neoplasm		MONDO:0009831|MONDO:0024880
 MONDO:0854521	chest wall sarcoma	NCIT:C155873	MONDO:equivalentTo	Chest Wall Sarcoma		MONDO:0005089|MONDO:0021323
 MONDO:0854523	unresectable desmoid fibromatosis	NCIT:C155877	MONDO:equivalentTo	Unresectable Desmoid Fibromatosis		MONDO:0007608
@@ -346,7 +335,6 @@ MONDO:0854530	chromophobe renal cell carcinoma associated with birt-hogg-dube sy
 MONDO:0854531	uterine ligament papillary cystadenoma	NCIT:C155952	MONDO:equivalentTo	Uterine Ligament Papillary Cystadenoma		MONDO:0021091|MONDO:0020582
 MONDO:0854533	thyroid gland spindle cell follicular adenoma	NCIT:C155957	MONDO:equivalentTo	Thyroid Gland Spindle Cell Follicular Adenoma		MONDO:0005032
 MONDO:0854534	thyroid gland black follicular adenoma	NCIT:C155958	MONDO:equivalentTo	Thyroid Gland Black Follicular Adenoma		MONDO:0005032
-MONDO:0854544	third ventricle pilocytic astrocytoma	NCIT:C156037	MONDO:equivalentTo	Third Ventricle Pilocytic Astrocytoma		MONDO:0021631|MONDO:0016691
 MONDO:0854545	hypothalamic-chiasmatic pilomyxoid astrocytoma	NCIT:C156038	MONDO:equivalentTo	Hypothalamic-Chiasmatic Pilomyxoid Astrocytoma		MONDO:0016692
 MONDO:0854546	fourth ventricle medulloblastoma	NCIT:C156039	MONDO:equivalentTo	Fourth Ventricle Medulloblastoma		MONDO:0007959
 MONDO:0854547	third ventricle germinoma	NCIT:C156040	MONDO:equivalentTo	Third Ventricle Germinoma		MONDO:0002214
@@ -363,11 +351,7 @@ MONDO:0854599	bladder alveolar soft part sarcoma	NCIT:C156277	MONDO:equivalentTo
 MONDO:0854600	cellular nerve sheath myxoma	NCIT:C156278	MONDO:equivalentTo	Cellular Nerve Sheath Myxoma		MONDO:0006317
 MONDO:0854601	colon liposarcoma	NCIT:C156279	MONDO:equivalentTo	Colon Liposarcoma		MONDO:0003352|MONDO:0005060
 MONDO:0854608	thyroid gland schwannoma	NCIT:C156340	MONDO:equivalentTo	Thyroid Gland Schwannoma		MONDO:0004820|MONDO:0006107
-MONDO:0854609	thyroid gland malignant peripheral nerve sheath tumor	NCIT:C156341	MONDO:equivalentTo	Thyroid Gland Malignant Peripheral Nerve Sheath Tumor		MONDO:0003028|MONDO:0017827
-MONDO:0854613	thyroid gland leiomyoma	NCIT:C156346	MONDO:equivalentTo	Thyroid Gland Leiomyoma		MONDO:0006107|MONDO:0001572
-MONDO:0854614	thyroid gland leiomyosarcoma	NCIT:C156347	MONDO:equivalentTo	Thyroid Gland Leiomyosarcoma		MONDO:0003028|MONDO:0005058
 MONDO:0854616	thyroid gland solitary fibrous tumor	NCIT:C156349	MONDO:equivalentTo	Thyroid Gland Solitary Fibrous Tumor		MONDO:0016238|MONDO:0015074
-MONDO:0854625	brain ependymoma	NCIT:C156462	MONDO:equivalentTo	Brain Ependymoma		MONDO:0016698|MONDO:0021632
 MONDO:0854631	metastatic neuroendocrine neoplasm	NCIT:C156485	MONDO:equivalentTo	Metastatic Neuroendocrine Neoplasm		MONDO:0019496|MONDO:0024880
 MONDO:0854639	malignant abdominal neoplasm	NCIT:C156714	MONDO:equivalentTo	Malignant Abdominal Neoplasm		MONDO:0004992
 MONDO:0854640	malignant pelvic neoplasm	NCIT:C156715	MONDO:equivalentTo	Malignant Pelvic Neoplasm		MONDO:0004992
@@ -450,7 +434,7 @@ MONDO:0854911	metastatic malignant digestive system neoplasm	NCIT:C162255	MONDO:
 MONDO:0854912	hypermutated colorectal carcinoma	NCIT:C162256	MONDO:equivalentTo	Hypermutated Colorectal Carcinoma		MONDO:0024331
 MONDO:0854925	thymic neuroendocrine neoplasm	NCIT:C162460	MONDO:equivalentTo	Thymic Neuroendocrine Neoplasm		MONDO:0018079|MONDO:0019496
 MONDO:0854927	intratubular large cell hyalinizing sertoli cell neoplasia	NCIT:C162466	MONDO:equivalentTo	Intratubular Large Cell Hyalinizing Sertoli Cell Neoplasia		MONDO:0003125
-MONDO:0854928	primary diffuse large b-cell lymphoma of the testis	NCIT:C162467	MONDO:equivalentTo	Primary Diffuse Large B-Cell Lymphoma of the Testis		MONDO:0018905|MONDO:0001472
+MONDO:0854928	testicular diffuse large b-cell lymphoma	NCIT:C162467	MONDO:equivalentTo	Testicular Diffuse Large B-Cell Lymphoma		MONDO:0018905|MONDO:0001472
 MONDO:0854929	testicular nasal type extranodal nk/t-cell lymphoma	NCIT:C162468	MONDO:equivalentTo	Testicular Nasal Type Extranodal NK/T-Cell Lymphoma		MONDO:0001472|MONDO:0019472
 MONDO:0854930	testicular myeloid sarcoma	NCIT:C162469	MONDO:equivalentTo	Testicular Myeloid Sarcoma		MONDO:0005447|MONDO:0006861
 MONDO:0854931	testicular plasmacytoma	NCIT:C162470	MONDO:equivalentTo	Testicular Plasmacytoma		MONDO:0005447|MONDO:0002754
@@ -471,16 +455,14 @@ MONDO:0854984	refractory childhood malignant neoplasm	NCIT:C162703	MONDO:equival
 MONDO:0854998	asph-positive head and neck squamous cell carcinoma	NCIT:C162770	MONDO:equivalentTo	ASPH-Positive Head and Neck Squamous Cell Carcinoma		MONDO:0010150
 MONDO:0855003	parapharyngeal neoplasm	NCIT:C162820	MONDO:equivalentTo	Parapharyngeal Neoplasm		MONDO:0021351
 MONDO:0855006	retropharyngeal neoplasm	NCIT:C162825	MONDO:equivalentTo	Retropharyngeal Neoplasm		MONDO:0021351
-MONDO:0855011	digital papillary adenoma	NCIT:C162848	MONDO:equivalentTo	Digital Papillary Adenoma		MONDO:0024247
 MONDO:0855015	non-invasive cribriform carcinoma	NCIT:C162973	MONDO:equivalentTo	Non-Invasive Cribriform Carcinoma		MONDO:0006176
 MONDO:0855016	malignant brain glioma	NCIT:C162993	MONDO:equivalentTo	Malignant Brain Glioma		MONDO:0100342|MONDO:0001657|MONDO:0021632
-MONDO:0855017	unresectable meningioma	NCIT:C163006	MONDO:equivalentTo	Unresectable Meningioma		MONDO:0016642
 MONDO:0855028	micropapillary carcinoma	NCIT:C164144	MONDO:equivalentTo	Micropapillary Carcinoma		MONDO:0006509
 MONDO:0855034	aggressive prostate adenocarcinoma	NCIT:C164185	MONDO:equivalentTo	Aggressive Prostate Adenocarcinoma		MONDO:0005082
 MONDO:0855035	head and neck sarcoma	NCIT:C164198	MONDO:equivalentTo	Head and Neck Sarcoma		MONDO:0005089|MONDO:0005627
 MONDO:0855040	warty carcinoma	NCIT:C164248	MONDO:equivalentTo	Warty Carcinoma		MONDO:0002979
 MONDO:0855041	differentiated intraepithelial neoplasia	NCIT:C164249	MONDO:equivalentTo	Differentiated Intraepithelial Neoplasia		MONDO:0024474
-MONDO:0855042	human papillomavirus-negative squamous cell carcinoma	NCIT:C164250	MONDO:equivalentTo	Human Papillomavirus-Negative Squamous Cell Carcinoma		MONDO:0005096
+MONDO:0855042	human papillomavirus-independent squamous cell carcinoma	NCIT:C164250	MONDO:equivalentTo	Human Papillomavirus-Independent Squamous Cell Carcinoma		MONDO:0005096
 MONDO:0855043	invasive sarcomatoid urothelial carcinoma	NCIT:C164252	MONDO:equivalentTo	Invasive Sarcomatoid Urothelial Carcinoma		MONDO:0002837|MONDO:0040678
 MONDO:0855044	mixed neuroendocrine non-neuroendocrine neoplasm	NCIT:C164255	MONDO:equivalentTo	Mixed Neuroendocrine Non-Neuroendocrine Neoplasm		MONDO:0021043|MONDO:0005626
 MONDO:0855047	nf1-associated malignant peripheral nerve sheath tumor	NCIT:C164313	MONDO:equivalentTo	NF1-Associated Malignant Peripheral Nerve Sheath Tumor		MONDO:0017827
@@ -490,19 +472,14 @@ MONDO:0855058	soft tissue sarcoma of the trunk and extremities	NCIT:C165190	MOND
 MONDO:0855059	metastatic malignant mesothelioma	NCIT:C165252	MONDO:equivalentTo	Metastatic Malignant Mesothelioma		MONDO:0006292|MONDO:0024880
 MONDO:0855079	skin verrucous carcinoma	NCIT:C165465	MONDO:equivalentTo	Skin Verrucous Carcinoma		MONDO:0002529|MONDO:0006006
 MONDO:0855080	skin squamous cell carcinoma with osteoclast-like giant cells	NCIT:C165466	MONDO:equivalentTo	Skin Squamous Cell Carcinoma with Osteoclast-Like Giant Cells		MONDO:0002529
-MONDO:0855081	skin lymphoepithelioma-like carcinoma	NCIT:C165467	MONDO:equivalentTo	Skin Lymphoepithelioma-Like Carcinoma		MONDO:0002529|MONDO:0003572
+MONDO:0855081	skin lymphoepithelial carcinoma	NCIT:C165467	MONDO:equivalentTo	Skin Lymphoepithelial Carcinoma		MONDO:0002529|MONDO:0003572
 MONDO:0855082	skin squamous cell carcinoma with sarcomatoid differentiation	NCIT:C165468	MONDO:equivalentTo	Skin Squamous Cell Carcinoma with Sarcomatoid Differentiation		MONDO:0002529|MONDO:0002928
 MONDO:0855085	lichen planus-like keratosis	NCIT:C165485	MONDO:equivalentTo	Lichen Planus-Like Keratosis		MONDO:0002093
-MONDO:0855087	spitz melanoma	NCIT:C165497	MONDO:equivalentTo	Spitz Melanoma		MONDO:0005012
-MONDO:0855088	pigmented epithelioid melanocytoma	NCIT:C165498	MONDO:equivalentTo	Pigmented Epithelioid Melanocytoma		MONDO:0021583
-MONDO:0855092	bap1-inactivated skin melanocytic neoplasm	NCIT:C165522	MONDO:equivalentTo	BAP1-Inactivated Skin Melanocytic Neoplasm		MONDO:0021583
 MONDO:0855094	combined nevus	NCIT:C165529	MONDO:equivalentTo	Combined Nevus		MONDO:0044794
 MONDO:0855104	proximal gastric adenocarcinoma	NCIT:C165628	MONDO:equivalentTo	Proximal Gastric Adenocarcinoma		MONDO:0005036
-MONDO:0855106	high-csd melanoma	NCIT:C165659	MONDO:equivalentTo	High-CSD Melanoma		MONDO:0005012
 MONDO:0855113	mixed carcinoma	NCIT:C165723	MONDO:equivalentTo	Mixed Carcinoma		MONDO:0005853|MONDO:0004993
 MONDO:0855116	hormone receptor-negative breast carcinoma	NCIT:C165743	MONDO:equivalentTo	Hormone Receptor-Negative Breast Carcinoma		MONDO:0004988
 MONDO:0855127	musculoskeletal neoplasm	NCIT:C166354	MONDO:equivalentTo	Musculoskeletal Neoplasm		MONDO:0044334|MONDO:0002081
-MONDO:0855130	mucosal nodular melanoma	NCIT:C166405	MONDO:equivalentTo	Mucosal Nodular Melanoma		MONDO:0000544
 MONDO:0855132	pancreatobiliary carcinoma	NCIT:C166418	MONDO:equivalentTo	Pancreatobiliary Carcinoma		MONDO:0006181
 MONDO:0855139	acute myeloid leukemia with ram immunophenotype	NCIT:C167089	MONDO:equivalentTo	Acute Myeloid Leukemia with RAM Immunophenotype		MONDO:0004996
 MONDO:0855140	obesity-related malignant neoplasm	NCIT:C167168	MONDO:equivalentTo	Obesity-Related Malignant Neoplasm		MONDO:0004992
@@ -549,7 +526,6 @@ MONDO:0855346	refractory myeloid neoplasm	NCIT:C172281	MONDO:equivalentTo	Refrac
 MONDO:0855368	skin ewing sarcoma	NCIT:C172634	MONDO:equivalentTo	Skin Ewing Sarcoma		MONDO:0018270|MONDO:0006414
 MONDO:0855377	oxyntic gland adenoma	NCIT:C172655	MONDO:equivalentTo	Oxyntic Gland Adenoma		MONDO:0006221
 MONDO:0855378	gastroblastoma	NCIT:C172659	MONDO:equivalentTo	Gastroblastoma		MONDO:0001056
-MONDO:0855379	digestive system neuroendocrine tumor g3	NCIT:C172660	MONDO:equivalentTo	Digestive System Neuroendocrine Tumor G3		MONDO:0000386
 MONDO:0855386	colorectal conventional adenoma	NCIT:C172680	MONDO:equivalentTo	Colorectal Conventional Adenoma		MONDO:0005484
 MONDO:0855389	colorectal poorly cohesive adenocarcinoma	NCIT:C172694	MONDO:equivalentTo	Colorectal Poorly Cohesive Adenocarcinoma		MONDO:0005008
 MONDO:0855390	colorectal adenoma-like adenocarcinoma	NCIT:C172699	MONDO:equivalentTo	Colorectal Adenoma-Like Adenocarcinoma		MONDO:0005008|MONDO:0003204
@@ -565,35 +541,24 @@ MONDO:0855408	pancreatic poorly cohesive adenocarcinoma	NCIT:C172811	MONDO:equiv
 MONDO:0855409	pancreatic undifferentiated carcinoma with rhabdoid cells	NCIT:C172812	MONDO:equivalentTo	Pancreatic Undifferentiated Carcinoma with Rhabdoid Cells		MONDO:0006478
 MONDO:0855413	conventional follicular dendritic cell sarcoma	NCIT:C172846	MONDO:equivalentTo	Conventional Follicular Dendritic Cell Sarcoma		MONDO:0005764
 MONDO:0855418	digestive system soft tissue neoplasm	NCIT:C172852	MONDO:equivalentTo	Digestive System Soft Tissue Neoplasm		MONDO:0006424|MONDO:0021223
-MONDO:0855432	sinonasal spindle cell squamous cell carcinoma	NCIT:C173079	MONDO:equivalentTo	Sinonasal Spindle Cell Squamous Cell Carcinoma		MONDO:0044787|MONDO:0021663
+MONDO:0855432	sinonasal spindle cell squamous carcinoma	NCIT:C173079	MONDO:equivalentTo	Sinonasal Spindle Cell Squamous Carcinoma		MONDO:0044787|MONDO:0021663
 MONDO:0855433	sinonasal lymphoepithelial carcinoma	NCIT:C173080	MONDO:equivalentTo	Sinonasal Lymphoepithelial Carcinoma		MONDO:0002831|MONDO:0003572
 MONDO:0855435	head and neck nut carcinoma	NCIT:C173087	MONDO:equivalentTo	Head and Neck NUT Carcinoma		MONDO:0005563|MONDO:0002038
 MONDO:0855439	malignant sinonasal neoplasm	NCIT:C173097	MONDO:equivalentTo	Malignant Sinonasal Neoplasm		MONDO:0056820|MONDO:0005627
-MONDO:0855449	sinonasal soft tissue neoplasm	NCIT:C173117	MONDO:equivalentTo	Sinonasal Soft Tissue Neoplasm		MONDO:0056820|MONDO:0006424
 MONDO:0855471	peritoneal implant	NCIT:C173164	MONDO:equivalentTo	Peritoneal Implant		MONDO:0006901
 MONDO:0855472	sinonasal ameloblastoma	NCIT:C173166	MONDO:equivalentTo	Sinonasal Ameloblastoma		MONDO:0056820
 MONDO:0855481	microsatellite stable colorectal carcinoma	NCIT:C173324	MONDO:equivalentTo	Microsatellite Stable Colorectal Carcinoma		MONDO:0024331
 MONDO:0855487	nasopharyngeal adenoid cystic carcinoma	NCIT:C173340	MONDO:equivalentTo	Nasopharyngeal Adenoid Cystic Carcinoma		MONDO:0006367|MONDO:0015459
 MONDO:0855489	ectopic pituitary neuroendocrine tumor	NCIT:C173345	MONDO:equivalentTo	Ectopic Pituitary Neuroendocrine Tumor		MONDO:0006373
-MONDO:0855491	pharyngeal lymphoma	NCIT:C173354	MONDO:equivalentTo	Pharyngeal Lymphoma		MONDO:0005517|MONDO:0017207
-MONDO:0855495	neuroendocrine carcinoma, excluding head and neck	NCIT:C173385	MONDO:equivalentTo	Neuroendocrine Carcinoma, Excluding Head and Neck		MONDO:0002120
-MONDO:0855498	laryngeal soft tissue neoplasm	NCIT:C173397	MONDO:equivalentTo	Laryngeal Soft Tissue Neoplasm		MONDO:0006424|MONDO:0021071
+MONDO:0855495	cutaneous merkel cell carcinoma	NCIT:C173385	MONDO:equivalentTo	Cutaneous Merkel Cell Carcinoma		MONDO:0019210|MONDO:0002656
 MONDO:0855506	laryngeal chondroma	NCIT:C173406	MONDO:equivalentTo	Laryngeal Chondroma		MONDO:0002360|MONDO:0002354
 MONDO:0855507	laryngeal chondrosarcoma	NCIT:C173407	MONDO:equivalentTo	Laryngeal Chondrosarcoma		MONDO:0002448|MONDO:0008977
-MONDO:0855516	oral verruca vulgaris	NCIT:C173475	MONDO:equivalentTo	Oral Verruca Vulgaris		MONDO:0001209
-MONDO:0855518	oral cavity soft tissue neoplasm	NCIT:C173479	MONDO:equivalentTo	Oral Cavity Soft Tissue Neoplasm		MONDO:0021245|MONDO:0006424
-MONDO:0855523	head and neck histiocytic and dendritic cell neoplasm	NCIT:C173485	MONDO:equivalentTo	Head and Neck Histiocytic and Dendritic Cell Neoplasm		MONDO:0006247|MONDO:0005586
 MONDO:0855526	head and neck melanocytic neoplasm	NCIT:C173488	MONDO:equivalentTo	Head and Neck Melanocytic Neoplasm		MONDO:0021143|MONDO:0005586
-MONDO:0855527	oral cavity myeloid sarcoma	NCIT:C173489	MONDO:equivalentTo	Oral Cavity Myeloid Sarcoma		MONDO:0005515|MONDO:0006861
 MONDO:0855532	refractory primitive neuroectodermal tumor	NCIT:C173565	MONDO:equivalentTo	Refractory Primitive Neuroectodermal Tumor		MONDO:0005462|MONDO:0036501
 MONDO:0855540	head and neck heterotopia-associated carcinoma	NCIT:C173588	MONDO:equivalentTo	Head and Neck Heterotopia-Associated Carcinoma		MONDO:0002038
 MONDO:0855551	salivary gland poorly differentiated carcinoma	NCIT:C173649	MONDO:equivalentTo	Salivary Gland Poorly Differentiated Carcinoma		MONDO:0000521
 MONDO:0855553	salivary gland lymphadenoma	NCIT:C173659	MONDO:equivalentTo	Salivary Gland Lymphadenoma		MONDO:0021460
-MONDO:0855556	salivary gland hemangioma	NCIT:C173680	MONDO:equivalentTo	Salivary Gland Hemangioma		MONDO:0021460|MONDO:0006500
-MONDO:0855557	salivary gland lipoma	NCIT:C173681	MONDO:equivalentTo	Salivary Gland Lipoma		MONDO:0021460|MONDO:0005106
 MONDO:0855558	sialolipoma	NCIT:C173682	MONDO:equivalentTo	Sialolipoma		MONDO:0021460
-MONDO:0855561	salivary gland nodular fasciitis	NCIT:C173687	MONDO:equivalentTo	Salivary Gland Nodular Fasciitis		MONDO:0021460|MONDO:0004187
-MONDO:0855563	salivary gland lymphoma	NCIT:C173690	MONDO:equivalentTo	Salivary Gland Lymphoma		MONDO:0017207|MONDO:0004669
 MONDO:0855575	appendix disorder	NCIT:C173799	MONDO:equivalentTo	Appendix Disorder		
 MONDO:0855576	retroperitoneal undifferentiated pleomorphic sarcoma	NCIT:C173808	MONDO:equivalentTo	Retroperitoneal Undifferentiated Pleomorphic Sarcoma		MONDO:0001501|MONDO:0002142
 MONDO:0855577	lung alveolar soft part sarcoma	NCIT:C173809	MONDO:equivalentTo	Lung Alveolar Soft Part Sarcoma		MONDO:0002426|MONDO:0011655
@@ -607,13 +572,13 @@ MONDO:0855616	conjunctival oncocytoma	NCIT:C174388	MONDO:equivalentTo	Conjunctiv
 MONDO:0855617	conjunctival keratoacanthoma	NCIT:C174390	MONDO:equivalentTo	Conjunctival Keratoacanthoma		MONDO:0006173|MONDO:0002527
 MONDO:0855618	conjunctival spindle cell carcinoma	NCIT:C174398	MONDO:equivalentTo	Conjunctival Spindle Cell Carcinoma		MONDO:0006173|MONDO:0021663
 MONDO:0855620	conjunctival carcinoma	NCIT:C174403	MONDO:equivalentTo	Conjunctival Carcinoma		MONDO:0002466|MONDO:0003454
-MONDO:0855625	conjunctival subepithelial nevus	NCIT:C174426	MONDO:equivalentTo	Conjunctival Subepithelial Nevus		MONDO:0006172
+MONDO:0855625	conjunctival subepithelial (stromal) nevus	NCIT:C174426	MONDO:equivalentTo	Conjunctival Subepithelial (Stromal) Nevus		MONDO:0006172
 MONDO:0855630	conjunctival blue nevus	NCIT:C174452	MONDO:equivalentTo	Conjunctival Blue Nevus		MONDO:0006172
 MONDO:0855631	atypical ewing sarcoma	NCIT:C174456	MONDO:equivalentTo	Atypical Ewing Sarcoma		MONDO:0012817
 MONDO:0855633	conjunctival spitz nevus	NCIT:C174493	MONDO:equivalentTo	Conjunctival Spitz Nevus		MONDO:0006172
 MONDO:0855634	metastatic malignant neoplasm in the conjunctiva	NCIT:C174496	MONDO:equivalentTo	Metastatic Malignant Neoplasm in the Conjunctiva		MONDO:0044913|MONDO:0003454
 MONDO:0855635	iris epithelioid cell melanoma	NCIT:C174498	MONDO:equivalentTo	Iris Epithelioid Cell Melanoma		MONDO:0004064|MONDO:0006200
-MONDO:0855640	iris mixed cell melanoma	NCIT:C174506	MONDO:equivalentTo	Iris Mixed Cell Melanoma		MONDO:0004064|MONDO:0003910
+MONDO:0855640	iris mixed epithelioid and spindle cell melanoma	NCIT:C174506	MONDO:equivalentTo	Iris Mixed Epithelioid and Spindle Cell Melanoma		MONDO:0004064|MONDO:0003910
 MONDO:0855641	metastatic malignant neoplasm in the uvea	NCIT:C174507	MONDO:equivalentTo	Metastatic Malignant Neoplasm in the Uvea		MONDO:0002659|MONDO:0044913
 MONDO:0855646	retinal astrocytoma	NCIT:C174539	MONDO:equivalentTo	Retinal Astrocytoma		MONDO:0024649|MONDO:0021231
 MONDO:0855649	adenoma of the retinal pigment epithelium	NCIT:C174550	MONDO:equivalentTo	Adenoma of the Retinal Pigment Epithelium		MONDO:0021453|MONDO:0004972
@@ -632,7 +597,7 @@ MONDO:0855677	benign lacrimal system neoplasm	NCIT:C175307	MONDO:equivalentTo	Be
 MONDO:0855678	malignant lacrimal system neoplasm	NCIT:C175308	MONDO:equivalentTo	Malignant Lacrimal System Neoplasm		MONDO:0002460|MONDO:0002236
 MONDO:0855679	lacrimal drainage system neoplasm	NCIT:C175316	MONDO:equivalentTo	Lacrimal Drainage System Neoplasm		MONDO:0002460
 MONDO:0855684	lacrimal drainage system non-keratinizing squamous cell carcinoma	NCIT:C175335	MONDO:equivalentTo	Lacrimal Drainage System Non-Keratinizing Squamous Cell Carcinoma		MONDO:0003492
-MONDO:0855694	conjunctival non-hodgkin lymphoma	NCIT:C175432	MONDO:equivalentTo	Conjunctival Non-Hodgkin Lymphoma		MONDO:0020646|MONDO:0003454
+MONDO:0855694	conjunctival non-hodgkin lymphoma	NCIT:C175432	MONDO:equivalentTo	Conjunctival Non-Hodgkin Lymphoma		MONDO:0004034|MONDO:0003454
 MONDO:0855700	primary uveal non-hodgkin lymphoma	NCIT:C175451	MONDO:equivalentTo	Primary Uveal Non-Hodgkin Lymphoma		MONDO:0004351|MONDO:0002659|MONDO:0017594
 MONDO:0855708	conjunctival myxoma	NCIT:C175495	MONDO:equivalentTo	Conjunctival Myxoma		MONDO:0044784|MONDO:0006105
 MONDO:0855710	conjunctival hemangioma	NCIT:C175497	MONDO:equivalentTo	Conjunctival Hemangioma		MONDO:0006105|MONDO:0006500
@@ -658,11 +623,10 @@ MONDO:0855757	male breast carcinoma in situ	NCIT:C176503	MONDO:equivalentTo	Male
 MONDO:0855758	invasive male breast carcinoma	NCIT:C176504	MONDO:equivalentTo	Invasive Male Breast Carcinoma		MONDO:0006256|MONDO:0005628
 MONDO:0855763	invasive female breast carcinoma	NCIT:C176579	MONDO:equivalentTo	Invasive Female Breast Carcinoma		MONDO:0006256|MONDO:0004379
 MONDO:0855764	female breast carcinoma in situ	NCIT:C176580	MONDO:equivalentTo	Female Breast Carcinoma In Situ		MONDO:0004658|MONDO:0004379
-MONDO:0855783	functioning lung carcinoid tumor	NCIT:C176705	MONDO:equivalentTo	Functioning Lung Carcinoid Tumor		MONDO:0021120|MONDO:0006041
-MONDO:0855784	non-functioning lung carcinoid tumor	NCIT:C176706	MONDO:equivalentTo	Non-Functioning Lung Carcinoid Tumor		MONDO:0021119|MONDO:0006041
+MONDO:0855783	functioning lung neuroendocrine tumor	NCIT:C176705	MONDO:equivalentTo	Functioning Lung Neuroendocrine Tumor		MONDO:0021120|MONDO:0006041
+MONDO:0855784	non-functioning lung neuroendocrine tumor	NCIT:C176706	MONDO:equivalentTo	Non-Functioning Lung Neuroendocrine Tumor		MONDO:0021119|MONDO:0006041
 MONDO:0855809	metastatic malignant thoracic neoplasm	NCIT:C176862	MONDO:equivalentTo	Metastatic Malignant Thoracic Neoplasm		MONDO:0024880|MONDO:0003274
 MONDO:0855811	psammocarcinoma	NCIT:C176887	MONDO:equivalentTo	Psammocarcinoma		MONDO:0004970
-MONDO:0855812	unresectable glioma	NCIT:C176889	MONDO:equivalentTo	Unresectable Glioma		MONDO:0021042
 MONDO:0855859	infantile myofibromatosis 1	NCIT:C176943	MONDO:equivalentTo	Infantile Myofibromatosis 1		MONDO:0016824
 MONDO:0855860	infantile myofibromatosis 2	NCIT:C176944	MONDO:equivalentTo	Infantile Myofibromatosis 2		MONDO:0016824
 MONDO:0855861	lipoma-like atypical lipomatous tumor/well differentiated liposarcoma	NCIT:C176979	MONDO:equivalentTo	Lipoma-Like Atypical Lipomatous Tumor/Well Differentiated Liposarcoma		MONDO:0006097
@@ -675,7 +639,6 @@ MONDO:0855885	epithelioid myxofibrosarcoma	NCIT:C177414	MONDO:equivalentTo	Epith
 MONDO:0855891	bladder flat urothelial carcinoma	NCIT:C177531	MONDO:equivalentTo	Bladder Flat Urothelial Carcinoma		MONDO:0005611
 MONDO:0855897	epithelioid hemangioendothelioma with wwtr1-camta1 gene fusion	NCIT:C177552	MONDO:equivalentTo	Epithelioid Hemangioendothelioma with WWTR1-CAMTA1 Gene Fusion		MONDO:0015523
 MONDO:0855898	epithelioid hemangioendothelioma with yap1-tfe3 gene fusion	NCIT:C177553	MONDO:equivalentTo	Epithelioid Hemangioendothelioma with YAP1-TFE3 Gene Fusion		MONDO:0015523
-MONDO:0855901	sigmoid colon carcinoma	NCIT:C177680	MONDO:equivalentTo	Sigmoid Colon Carcinoma		MONDO:0002032
 MONDO:0855909	who grade 1 glioma	NCIT:C177797	MONDO:equivalentTo	WHO Grade 1 Glioma		MONDO:0021637
 MONDO:0855911	poorly differentiated chordoma	NCIT:C177898	MONDO:equivalentTo	Poorly Differentiated Chordoma		MONDO:0008978
 MONDO:0855914	ebv-associated smooth muscle tumor	NCIT:C178217	MONDO:equivalentTo	EBV-Associated Smooth Muscle Tumor		MONDO:0006975
@@ -743,7 +706,6 @@ MONDO:0856106	major salivary gland squamous cell carcinoma	NCIT:C181161	MONDO:eq
 MONDO:0856110	lung rhabdomyosarcoma	NCIT:C181201	MONDO:equivalentTo	Lung Rhabdomyosarcoma		MONDO:0002426|MONDO:0005212
 MONDO:0856111	lung hodgkin lymphoma	NCIT:C181205	MONDO:equivalentTo	Lung Hodgkin Lymphoma		MONDO:0004952|MONDO:0003987
 MONDO:0856112	primary bone hodgkin lymphoma	NCIT:C181207	MONDO:equivalentTo	Primary Bone Hodgkin Lymphoma		MONDO:0004952|MONDO:0017814
-MONDO:0856113	thyroid gland hodgkin lymphoma	NCIT:C181209	MONDO:equivalentTo	Thyroid Gland Hodgkin Lymphoma		MONDO:0004952|MONDO:0019962
 MONDO:0856114	cervical cancer by ajcc v9 stage	NCIT:C181562	MONDO:equivalentTo	Cervical Cancer by AJCC v9 Stage		MONDO:0005131
 MONDO:0856117	epiglottic squamous cell carcinoma	NCIT:C181714	MONDO:equivalentTo	Epiglottic Squamous Cell Carcinoma		MONDO:0004293|MONDO:0004473
 MONDO:0856124	vulvar squamous cell carcinoma, not otherwise specified	NCIT:C181902	MONDO:equivalentTo	Vulvar Squamous Cell Carcinoma, Not Otherwise Specified		MONDO:0024609
@@ -755,7 +717,6 @@ MONDO:0856139	vulvar ewing sarcoma	NCIT:C181977	MONDO:equivalentTo	Vulvar Ewing 
 MONDO:0856154	bronchiolar adenoma/ciliated muconodular papillary tumor	NCIT:C183045	MONDO:equivalentTo	Bronchiolar Adenoma/Ciliated Muconodular Papillary Tumor		MONDO:0003422
 MONDO:0856155	invasive lung non-mucinous adenocarcinoma	NCIT:C183109	MONDO:equivalentTo	Invasive Lung Non-Mucinous Adenocarcinoma		MONDO:0040677|MONDO:0005061
 MONDO:0856156	thoracic smarca4-deficient undifferentiated tumor	NCIT:C183115	MONDO:equivalentTo	Thoracic SMARCA4-Deficient Undifferentiated Tumor		MONDO:0003274
-MONDO:0856157	lung hyalinizing clear cell carcinoma	NCIT:C183116	MONDO:equivalentTo	Lung Hyalinizing Clear Cell Carcinoma		MONDO:0005138
 MONDO:0856158	lung intravascular large b-cell lymphoma	NCIT:C183121	MONDO:equivalentTo	Lung Intravascular Large B-Cell Lymphoma		MONDO:0006387|MONDO:0020324
 MONDO:0856161	pleural mesothelioma in situ	NCIT:C183134	MONDO:equivalentTo	Pleural Mesothelioma In Situ		MONDO:0003308
 MONDO:0856165	cardiac diffuse large b-cell lymphoma	NCIT:C183146	MONDO:equivalentTo	Cardiac Diffuse Large B-Cell Lymphoma		MONDO:0018905|MONDO:0003917
@@ -793,11 +754,10 @@ MONDO:0856257	pituitary neuroendocrine tumor without distinct lineage differenti
 MONDO:0856258	pituitary neuroendocrine tumor, not otherwise specified	NCIT:C187135	MONDO:equivalentTo	Pituitary Neuroendocrine Tumor, Not Otherwise Specified		MONDO:0006373
 MONDO:0856267	thyroid gland follicular adenoma with papillary architecture	NCIT:C187261	MONDO:equivalentTo	Thyroid Gland Follicular Adenoma with Papillary Architecture		MONDO:0005032
 MONDO:0856268	low risk thyroid gland neoplasm	NCIT:C187273	MONDO:equivalentTo	Low Risk Thyroid Gland Neoplasm		MONDO:0015074
-MONDO:0856271	platinum-sensitive endometrial serous adenocarcinoma	NCIT:C187374	MONDO:equivalentTo	Platinum-Sensitive Endometrial Serous Adenocarcinoma		MONDO:0006196
 MONDO:0856272	invasive breast lobular carcinoma with extracellular mucin	NCIT:C187405	MONDO:equivalentTo	Invasive Breast Lobular Carcinoma with Extracellular Mucin		MONDO:0005051
 MONDO:0856275	thyroid gland follicular carcinoma, signet ring cell variant	NCIT:C187643	MONDO:equivalentTo	Thyroid Gland Follicular Carcinoma, Signet Ring Cell Variant		MONDO:0005034
 MONDO:0856276	classic thyroid gland papillary carcinoma	NCIT:C187644	MONDO:equivalentTo	Classic Thyroid Gland Papillary Carcinoma		MONDO:0005075
-MONDO:0856277	follicular-derived thyroid gland carcinoma, high grade	NCIT:C187645	MONDO:equivalentTo	Follicular-Derived Thyroid Gland Carcinoma, High Grade		MONDO:0024622
+MONDO:0856277	high grade follicular cell-derived non-anaplastic thyroid gland carcinoma	NCIT:C187645	MONDO:equivalentTo	High Grade Follicular Cell-Derived Non-Anaplastic Thyroid Gland Carcinoma		MONDO:0024622
 MONDO:0856285	thyroid gland secretory carcinoma	NCIT:C187994	MONDO:equivalentTo	Thyroid Gland Secretory Carcinoma		MONDO:0024622
 MONDO:0856286	thyroblastoma	NCIT:C187995	MONDO:equivalentTo	Thyroblastoma		MONDO:0002108|MONDO:0005564
 MONDO:0856287	teratoma with endocrine differentiation	NCIT:C188013	MONDO:equivalentTo	Teratoma with Endocrine Differentiation		MONDO:0002601
@@ -814,7 +774,6 @@ MONDO:0856310	retroperitoneal rhabdomyosarcoma	NCIT:C188071	MONDO:equivalentTo	R
 MONDO:0856312	retroperitoneal malignant peripheral nerve sheath tumor	NCIT:C188073	MONDO:equivalentTo	Retroperitoneal Malignant Peripheral Nerve Sheath Tumor		MONDO:0001501|MONDO:0017827
 MONDO:0856313	rectal epithelioid cell melanoma	NCIT:C188079	MONDO:equivalentTo	Rectal Epithelioid Cell Melanoma		MONDO:0002167|MONDO:0002973
 MONDO:0856316	lung anaplastic large cell lymphoma	NCIT:C188082	MONDO:equivalentTo	Lung Anaplastic Large Cell Lymphoma		MONDO:0020644|MONDO:0020325
-MONDO:0856318	middle ear embryonal rhabdomyosarcoma	NCIT:C188115	MONDO:equivalentTo	Middle Ear Embryonal Rhabdomyosarcoma		MONDO:0009993|MONDO:0003275
 MONDO:0856325	adrenal cortical myxoid carcinoma	NCIT:C188182	MONDO:equivalentTo	Adrenal Cortical Myxoid Carcinoma		MONDO:0006639
 MONDO:0856326	adrenal cortical high grade carcinoma	NCIT:C188183	MONDO:equivalentTo	Adrenal Cortical High Grade Carcinoma		MONDO:0006639
 MONDO:0856327	adrenal cortical melanoma	NCIT:C188185	MONDO:equivalentTo	Adrenal Cortical Melanoma		MONDO:0021312|MONDO:0006320
@@ -859,7 +818,7 @@ MONDO:0856472	conventional extraskeletal myxoid chondrosarcoma	NCIT:C27501	MONDO
 MONDO:0856473	intra-abdominal lymphangioma	NCIT:C27508	MONDO:equivalentTo	Intra-Abdominal Lymphangioma		MONDO:0002013
 MONDO:0856474	angiosarcoma associated with lymphedema	NCIT:C27512	MONDO:equivalentTo	Angiosarcoma Associated with Lymphedema		MONDO:0016982
 MONDO:0856475	desmoplastic fibroblastoma	NCIT:C27515	MONDO:equivalentTo	Desmoplastic Fibroblastoma		MONDO:0005167
-MONDO:0856477	desmoplastic trichoepithelioma	NCIT:C27524	MONDO:equivalentTo	Desmoplastic Trichoepithelioma		MONDO:0020593
+MONDO:0856477	columnar trichoblastoma	NCIT:C27524	MONDO:equivalentTo	Columnar Trichoblastoma		MONDO:0020593
 MONDO:0856478	tubular apocrine adenoma	NCIT:C27527	MONDO:equivalentTo	Tubular Apocrine Adenoma		MONDO:0002804
 MONDO:0856479	primary cutaneous mucinous carcinoma	NCIT:C27533	MONDO:equivalentTo	Primary Cutaneous Mucinous Carcinoma		MONDO:0005524|MONDO:0004957
 MONDO:0856501	oral cavity disorder	NCIT:C27641	MONDO:equivalentTo	Oral Cavity Disorder		
@@ -898,7 +857,7 @@ MONDO:0856599	biliary system disorder	NCIT:C2899	MONDO:equivalentTo	Biliary Syst
 MONDO:0856602	enchondroma	NCIT:C3007	MONDO:equivalentTo	Enchondroma		MONDO:0002360|MONDO:0000631
 MONDO:0856604	pancreatic glucagon-producing neuroendocrine tumor	NCIT:C3062	MONDO:equivalentTo	Pancreatic Glucagon-Producing Neuroendocrine Tumor		MONDO:0019954
 MONDO:0856606	chronic phase chronic myeloid leukemia, bcr-abl1 positive	NCIT:C3175	MONDO:equivalentTo	Chronic Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive		MONDO:0001014|MONDO:0011996
-MONDO:0856607	myeloid leukemia, philadelphia- negative	NCIT:C3176	MONDO:equivalentTo	Myeloid Leukemia, Philadelphia- Negative		MONDO:0004643
+MONDO:0856607	myeloid leukemia, philadelphia-negative	NCIT:C3176	MONDO:equivalentTo	Myeloid Leukemia, Philadelphia-Negative		MONDO:0004643
 MONDO:0856608	neoplasm by site	NCIT:C3263	MONDO:equivalentTo	Neoplasm by Site		MONDO:0005070
 MONDO:0856610	osteochondroma	NCIT:C3295	MONDO:equivalentTo	Osteochondroma		MONDO:0000631|MONDO:0024470
 MONDO:0856611	extra-adrenal paraganglioma	NCIT:C3309	MONDO:equivalentTo	Extra-Adrenal Paraganglioma		MONDO:0000448
@@ -919,7 +878,6 @@ MONDO:0856772	lung kaposi sarcoma	NCIT:C3551	MONDO:equivalentTo	Lung Kaposi Sarc
 MONDO:0856784	malignant exocervical neoplasm	NCIT:C3554	MONDO:equivalentTo	Malignant Exocervical Neoplasm		MONDO:0002974
 MONDO:0856786	malignant uterine corpus neoplasm	NCIT:C3556	MONDO:equivalentTo	Malignant Uterine Corpus Neoplasm		MONDO:0021254|MONDO:0002715
 MONDO:0856787	complex endometrial hyperplasia with atypia	NCIT:C35560	MONDO:equivalentTo	Complex Endometrial Hyperplasia with Atypia		MONDO:0006169
-MONDO:0856809	ocular adnexal mucosa-associated lymphoid tissue lymphoma	NCIT:C35689	MONDO:equivalentTo	Ocular Adnexal Mucosa-Associated Lymphoid Tissue Lymphoma		MONDO:0020646|MONDO:0007650
 MONDO:0856810	mixed tumor of the salivary gland	NCIT:C35691	MONDO:equivalentTo	Mixed Tumor of the Salivary Gland		MONDO:0021043|MONDO:0021357
 MONDO:0856811	posterior pharyngeal wall carcinoma	NCIT:C35692	MONDO:equivalentTo	Posterior Pharyngeal Wall Carcinoma		MONDO:0021345
 MONDO:0856812	benign uvula neoplasm	NCIT:C35698	MONDO:equivalentTo	Benign Uvula Neoplasm		MONDO:0021480
@@ -970,7 +928,7 @@ MONDO:0856906	chronic lymphocytic leukemia with unmutated immunoglobulin heavy c
 MONDO:0856907	high grade b-cell lymphoma with blastoid morphologic features	NCIT:C37209	MONDO:equivalentTo	High Grade B-Cell Lymphoma with Blastoid Morphologic Features		MONDO:0044889
 MONDO:0856911	benign kidney mixed epithelial and stromal tumor	NCIT:C37264	MONDO:equivalentTo	Benign Kidney Mixed Epithelial and Stromal Tumor		MONDO:0002513|MONDO:0002386
 MONDO:0856912	atypical small acinar proliferation of the prostate gland	NCIT:C37268	MONDO:equivalentTo	Atypical Small Acinar Proliferation of the Prostate Gland		MONDO:0021259
-MONDO:0856914	head and neck basaloid carcinoma	NCIT:C37290	MONDO:equivalentTo	Head and Neck Basaloid Carcinoma		MONDO:0003486|MONDO:0010150
+MONDO:0856914	head and neck basaloid squamous cell carcinoma	NCIT:C37290	MONDO:equivalentTo	Head and Neck Basaloid Squamous Cell Carcinoma		MONDO:0003486|MONDO:0010150
 MONDO:0856915	mixed mesodermal (mullerian) tumor	NCIT:C3730	MONDO:equivalentTo	Mixed Mesodermal (Mullerian) Tumor		MONDO:0021148|MONDO:0021043
 MONDO:0856917	abdominal (mesenteric) fibromatosis	NCIT:C3741	MONDO:equivalentTo	Abdominal (Mesenteric) Fibromatosis		MONDO:0007608
 MONDO:0856918	adenomatous polyp	NCIT:C3764	MONDO:equivalentTo	Adenomatous Polyp		MONDO:0006180|MONDO:0021075
@@ -1005,7 +963,7 @@ MONDO:0856969	pleomorphic variant mantle cell lymphoma	NCIT:C39747	MONDO:equival
 MONDO:0856970	type ii endometrial adenocarcinoma	NCIT:C39749	MONDO:equivalentTo	Type II Endometrial Adenocarcinoma		MONDO:0005461
 MONDO:0856971	glioblastoma, idh-wildtype	NCIT:C39750	MONDO:equivalentTo	Glioblastoma, IDH-Wildtype		MONDO:0018177
 MONDO:0856972	secondary glioblastoma	NCIT:C39751	MONDO:equivalentTo	Secondary Glioblastoma		MONDO:0018177
-MONDO:0856973	solid/multicystic ameloblastoma	NCIT:C39755	MONDO:equivalentTo	Solid/Multicystic Ameloblastoma		MONDO:0017795
+MONDO:0856973	conventional ameloblastoma	NCIT:C39755	MONDO:equivalentTo	Conventional Ameloblastoma		MONDO:0017795
 MONDO:0856974	unicystic ameloblastoma	NCIT:C39756	MONDO:equivalentTo	Unicystic Ameloblastoma		MONDO:0021077|MONDO:0017795
 MONDO:0856975	renal cell carcinoma with constitutional chromosome 3 translocations	NCIT:C39790	MONDO:equivalentTo	Renal Cell Carcinoma with Constitutional Chromosome 3 Translocations		MONDO:0003008
 MONDO:0856976	renal cell carcinoma associated with inv(x)(p11;q12)	NCIT:C39802	MONDO:equivalentTo	Renal Cell Carcinoma Associated with inv(X)(p11;q12)		MONDO:0006397
@@ -1053,7 +1011,7 @@ MONDO:0857040	cervical glandular neoplasm	NCIT:C40210	MONDO:equivalentTo	Cervica
 MONDO:0857041	cervical soft tissue neoplasm	NCIT:C40216	MONDO:equivalentTo	Cervical Soft Tissue Neoplasm		MONDO:0006424|MONDO:0021230
 MONDO:0857043	cervical mixed epithelial and mesenchymal neoplasm	NCIT:C40226	MONDO:equivalentTo	Cervical Mixed Epithelial and Mesenchymal Neoplasm		MONDO:0021043|MONDO:0021230
 MONDO:0857045	vaginal keratinizing squamous cell carcinoma	NCIT:C40243	MONDO:equivalentTo	Vaginal Keratinizing Squamous Cell Carcinoma		MONDO:0005056|MONDO:0006490
-MONDO:0857046	vaginal basaloid carcinoma	NCIT:C40245	MONDO:equivalentTo	Vaginal Basaloid Carcinoma		MONDO:0003486|MONDO:0006490
+MONDO:0857046	vaginal basaloid squamous cell carcinoma	NCIT:C40245	MONDO:equivalentTo	Vaginal Basaloid Squamous Cell Carcinoma		MONDO:0003486|MONDO:0006490
 MONDO:0857047	vaginal endometrioid adenocarcinoma	NCIT:C40251	MONDO:equivalentTo	Vaginal Endometrioid Adenocarcinoma		MONDO:0020653|MONDO:0005026
 MONDO:0857048	vaginal mucinous adenocarcinoma	NCIT:C40252	MONDO:equivalentTo	Vaginal Mucinous Adenocarcinoma		MONDO:0020653|MONDO:0004957
 MONDO:0857049	vaginal mesonephric adenocarcinoma	NCIT:C40253	MONDO:equivalentTo	Vaginal Mesonephric Adenocarcinoma		MONDO:0020653|MONDO:0005613
@@ -1115,20 +1073,19 @@ MONDO:0857132	junctional nevus	NCIT:C4231	MONDO:equivalentTo	Junctional Nevus		M
 MONDO:0857133	melanoma in junctional nevus	NCIT:C4232	MONDO:equivalentTo	Melanoma in Junctional Nevus		MONDO:0005012
 MONDO:0857134	type a spindle cell melanoma	NCIT:C4238	MONDO:equivalentTo	Type A Spindle Cell Melanoma		MONDO:0006427
 MONDO:0857135	type b spindle cell melanoma	NCIT:C4239	MONDO:equivalentTo	Type B Spindle Cell Melanoma		MONDO:0006427
-MONDO:0857136	melanoma arising from blue nevus	NCIT:C4240	MONDO:equivalentTo	Melanoma Arising from Blue Nevus		MONDO:0005012
+MONDO:0857136	melanoma arising in blue nevus	NCIT:C4240	MONDO:equivalentTo	Melanoma Arising in Blue Nevus		MONDO:0005012
 MONDO:0857137	cellular blue nevus	NCIT:C4241	MONDO:equivalentTo	Cellular Blue Nevus		MONDO:0006680
 MONDO:0857138	fibrolipoma	NCIT:C4249	MONDO:equivalentTo	Fibrolipoma		MONDO:0005106
 MONDO:0857139	fibromyxolipoma	NCIT:C4251	MONDO:equivalentTo	Fibromyxolipoma		MONDO:0005106
 MONDO:0857140	lipoblastomatosis	NCIT:C4255	MONDO:equivalentTo	Lipoblastomatosis		MONDO:0044983
 MONDO:0857141	sporadic retinoblastoma	NCIT:C42596	MONDO:equivalentTo	Sporadic Retinoblastoma		MONDO:0008380
-MONDO:0857142	low grade endometrioid stromal sarcoma	NCIT:C4263	MONDO:equivalentTo	Low Grade Endometrioid Stromal Sarcoma		MONDO:0006745
 MONDO:0857144	acute myelomonocytic leukemia without abnormal eosinophils	NCIT:C42779	MONDO:equivalentTo	Acute Myelomonocytic Leukemia without Abnormal Eosinophils		MONDO:0018871
 MONDO:0857145	pericardial solitary fibrous tumor	NCIT:C4281	MONDO:equivalentTo	Pericardial Solitary Fibrous Tumor		MONDO:0016238|MONDO:0021381
 MONDO:0857146	benign hemangiopericytoma	NCIT:C4300	MONDO:equivalentTo	Benign Hemangiopericytoma		MONDO:0005094
 MONDO:0857147	benign odontogenic neoplasm	NCIT:C4306	MONDO:equivalentTo	Benign Odontogenic Neoplasm		MONDO:0021445|MONDO:0021192
 MONDO:0857152	pure cutaneous mastocytosis	NCIT:C43277	MONDO:equivalentTo	Pure Cutaneous Mastocytosis		MONDO:0019023
 MONDO:0857155	germinative follicular epithelium neoplasm	NCIT:C43311	MONDO:equivalentTo	Germinative Follicular Epithelium Neoplasm		MONDO:0003413|MONDO:0021634
-MONDO:0857156	mixed epithelial and mesenchymal hair follicle neoplasm	NCIT:C43312	MONDO:equivalentTo	Mixed Epithelial and Mesenchymal Hair Follicle Neoplasm		MONDO:0003413|MONDO:0021043
+MONDO:0857156	adamantinoid trichoblastoma	NCIT:C43312	MONDO:equivalentTo	Adamantinoid Trichoblastoma		MONDO:0020593
 MONDO:0857160	outer hair sheath and infundibulum neoplasm	NCIT:C43324	MONDO:equivalentTo	Outer Hair Sheath and Infundibulum Neoplasm		MONDO:0003413
 MONDO:0857163	superficial epithelioma with sebaceous differentiation	NCIT:C43334	MONDO:equivalentTo	Superficial Epithelioma with Sebaceous Differentiation		MONDO:0021490
 MONDO:0857164	sebaceoma	NCIT:C43336	MONDO:equivalentTo	Sebaceoma		MONDO:0021490
@@ -1139,7 +1096,7 @@ MONDO:0857168	ductal eccrine carcinoma with spindle cell elements	NCIT:C43346	MO
 MONDO:0857169	squamoid eccrine ductal carcinoma	NCIT:C43347	MONDO:equivalentTo	Squamoid Eccrine Ductal Carcinoma		MONDO:0024245
 MONDO:0857170	ductal eccrine carcinoma with abundant fibromyxoid stroma	NCIT:C43349	MONDO:equivalentTo	Ductal Eccrine Carcinoma with Abundant Fibromyxoid Stroma		MONDO:0024245
 MONDO:0857171	sporadic cylindroma	NCIT:C43351	MONDO:equivalentTo	Sporadic Cylindroma		MONDO:0021812
-MONDO:0857172	classical poroma	NCIT:C43353	MONDO:equivalentTo	Classical Poroma		MONDO:0006738
+MONDO:0857172	classic poroma	NCIT:C43353	MONDO:equivalentTo	Classic Poroma		MONDO:0006738
 MONDO:0857173	porocarcinoma in situ	NCIT:C43354	MONDO:equivalentTo	Porocarcinoma In Situ		MONDO:0006189
 MONDO:0857174	aleukemic lymphoid leukemia	NCIT:C4343	MONDO:equivalentTo	Aleukemic Lymphoid Leukemia		MONDO:0005402|MONDO:0003730
 MONDO:0857175	sporadic gastric adenocarcinoma	NCIT:C43527	MONDO:equivalentTo	Sporadic Gastric Adenocarcinoma		MONDO:0005036
@@ -1167,7 +1124,6 @@ MONDO:0857200	gallbladder flat biliary intraepithelial neoplasia	NCIT:C43607	MON
 MONDO:0857201	gallbladder papillary biliary intraepithelial neoplasia	NCIT:C43609	MONDO:equivalentTo	Gallbladder Papillary Biliary Intraepithelial Neoplasia		MONDO:0006218
 MONDO:0857202	pleomorphic hepatocellular carcinoma	NCIT:C43625	MONDO:equivalentTo	Pleomorphic Hepatocellular Carcinoma		MONDO:0007256
 MONDO:0857203	sarcomatoid hepatocellular carcinoma	NCIT:C43627	MONDO:equivalentTo	Sarcomatoid Hepatocellular Carcinoma		MONDO:0007256
-MONDO:0857205	cherry hemangioma of lip	NCIT:C4372	MONDO:equivalentTo	Cherry Hemangioma of Lip		MONDO:0002323|MONDO:0021496
 MONDO:0857206	accessory urethral gland neoplasm	NCIT:C4378	MONDO:equivalentTo	Accessory Urethral Gland Neoplasm		MONDO:0021239
 MONDO:0857208	clear cell intrahepatic cholangiocarcinoma	NCIT:C43848	MONDO:equivalentTo	Clear Cell Intrahepatic Cholangiocarcinoma		MONDO:0005004|MONDO:0003210
 MONDO:0857210	anogenital papillomaviral intraepithelial neoplasia	NCIT:C4394	MONDO:equivalentTo	Anogenital Papillomaviral Intraepithelial Neoplasia		MONDO:0024475
@@ -1180,7 +1136,7 @@ MONDO:0857217	cutaneous neural neoplasm	NCIT:C4479	MONDO:equivalentTo	Cutaneous 
 MONDO:0857219	malignant skin hemangiopericytoma	NCIT:C4493	MONDO:equivalentTo	Malignant Skin Hemangiopericytoma		MONDO:0021424|MONDO:0009330
 MONDO:0857220	cockade nevus	NCIT:C4495	MONDO:equivalentTo	Cockade Nevus		MONDO:0044794
 MONDO:0857222	common blue nevus	NCIT:C4496	MONDO:equivalentTo	Common Blue Nevus		MONDO:0006680
-MONDO:0857223	nevus spilus	NCIT:C4498	MONDO:equivalentTo	Nevus Spilus		MONDO:0044794
+MONDO:0857223	nevus spilus	NCIT:C4498	MONDO:equivalentTo	Nevus Spilus		MONDO:0044792
 MONDO:0857224	benign ovarian epithelial tumor	NCIT:C4510	MONDO:equivalentTo	Benign Ovarian Epithelial Tumor		MONDO:0002229|MONDO:0036976|MONDO:0000646
 MONDO:0857229	classical low grade fibromyxoid sarcoma	NCIT:C45210	MONDO:equivalentTo	Classical Low Grade Fibromyxoid Sarcoma		MONDO:0006272
 MONDO:0857233	cutaneous hematopoietic and lymphoid cell neoplasm	NCIT:C45240	MONDO:equivalentTo	Cutaneous Hematopoietic and Lymphoid Cell Neoplasm		MONDO:0002531|MONDO:0044881
@@ -1195,8 +1151,7 @@ MONDO:0857251	lung basaloid squamous cell carcinoma	NCIT:C45507	MONDO:equivalent
 MONDO:0857252	lung spindle cell carcinoma	NCIT:C45541	MONDO:equivalentTo	Lung Spindle Cell Carcinoma		MONDO:0006279
 MONDO:0857253	lung pleomorphic carcinoma	NCIT:C45542	MONDO:equivalentTo	Lung Pleomorphic Carcinoma		MONDO:0006279|MONDO:0003573
 MONDO:0857254	lung carcinosarcoma	NCIT:C45543	MONDO:equivalentTo	Lung Carcinosarcoma		MONDO:0006279|MONDO:0002928
-MONDO:0857255	lung typical carcinoid tumor	NCIT:C45550	MONDO:equivalentTo	Lung Typical Carcinoid Tumor		MONDO:0006041
-MONDO:0857256	lung atypical carcinoid tumor	NCIT:C45551	MONDO:equivalentTo	Lung Atypical Carcinoid Tumor		MONDO:0006041|MONDO:0006095
+MONDO:0857256	lung neuroendocrine tumor g2	NCIT:C45551	MONDO:equivalentTo	Lung Neuroendocrine Tumor G2		MONDO:0006041|MONDO:0006095
 MONDO:0857259	ciliary body malignant medulloepithelioma	NCIT:C4557	MONDO:equivalentTo	Ciliary Body Malignant Medulloepithelioma		MONDO:0017050|MONDO:0002969
 MONDO:0857260	lung squamous papilloma	NCIT:C45573	MONDO:equivalentTo	Lung Squamous Papilloma		MONDO:0006278|MONDO:0001825
 MONDO:0857262	bronchial glandular papilloma	NCIT:C45601	MONDO:equivalentTo	Bronchial Glandular Papilloma		MONDO:0006278|MONDO:0021078
@@ -1286,7 +1241,7 @@ MONDO:0857379	androgen-producing adrenal cortical adenoma	NCIT:C48454	MONDO:equi
 MONDO:0857380	estrogen-producing adrenal cortical adenoma	NCIT:C48456	MONDO:equivalentTo	Estrogen-Producing Adrenal Cortical Adenoma		MONDO:0006408
 MONDO:0857382	invasive prostate carcinoma	NCIT:C48596	MONDO:equivalentTo	Invasive Prostate Carcinoma		MONDO:0040677|MONDO:0005159
 MONDO:0857383	minimal deviation melanoma	NCIT:C48612	MONDO:equivalentTo	Minimal Deviation Melanoma		MONDO:0005012
-MONDO:0857384	melanoma in congenital melanocytic nevus	NCIT:C48613	MONDO:equivalentTo	Melanoma in Congenital Melanocytic Nevus		MONDO:0005012
+MONDO:0857384	melanoma arising in congenital melanocytic nevus	NCIT:C48613	MONDO:equivalentTo	Melanoma Arising in Congenital Melanocytic Nevus		MONDO:0005012
 MONDO:0857385	desmoplastic neurotropic melanoma	NCIT:C48614	MONDO:equivalentTo	Desmoplastic Neurotropic Melanoma		MONDO:0044785
 MONDO:0857386	mucosal lentiginous melanoma	NCIT:C48622	MONDO:equivalentTo	Mucosal Lentiginous Melanoma		MONDO:0000544
 MONDO:0857388	metastatic malignant neoplasm in the trachea	NCIT:C4887	MONDO:equivalentTo	Metastatic Malignant Neoplasm in the Trachea		MONDO:0001407|MONDO:0024880
@@ -1321,8 +1276,8 @@ MONDO:0857477	invasive breast cribriform carcinoma	NCIT:C5142	MONDO:equivalentTo
 MONDO:0857478	malignant breast adenomyoepithelioma	NCIT:C5143	MONDO:equivalentTo	Malignant Breast Adenomyoepithelioma		MONDO:0007254|MONDO:0002066
 MONDO:0857479	infratentorial glioblastoma	NCIT:C5148	MONDO:equivalentTo	Infratentorial Glioblastoma		MONDO:0003107|MONDO:0002501
 MONDO:0857480	supratentorial glioblastoma	NCIT:C5149	MONDO:equivalentTo	Supratentorial Glioblastoma		MONDO:0002071|MONDO:0002501
-MONDO:0857482	high grade breast mucoepidermoid carcinoma	NCIT:C5167	MONDO:equivalentTo	High Grade Breast Mucoepidermoid Carcinoma		MONDO:0003087
-MONDO:0857483	low grade breast mucoepidermoid carcinoma	NCIT:C5168	MONDO:equivalentTo	Low Grade Breast Mucoepidermoid Carcinoma		MONDO:0003087
+MONDO:0857482	breast high grade mucoepidermoid carcinoma	NCIT:C5167	MONDO:equivalentTo	Breast High Grade Mucoepidermoid Carcinoma		MONDO:0003087
+MONDO:0857483	breast low grade mucoepidermoid carcinoma	NCIT:C5168	MONDO:equivalentTo	Breast Low Grade Mucoepidermoid Carcinoma		MONDO:0003087
 MONDO:0857486	breast non-hodgkin lymphoma	NCIT:C5181	MONDO:equivalentTo	Breast Non-Hodgkin Lymphoma		MONDO:0003661|MONDO:0018908
 MONDO:0857487	breast complex fibroadenoma	NCIT:C5194	MONDO:equivalentTo	Breast Complex Fibroadenoma		MONDO:0002056
 MONDO:0857488	benign nipple neoplasm	NCIT:C5197	MONDO:equivalentTo	Benign Nipple Neoplasm		MONDO:0002482|MONDO:0000620
@@ -1350,11 +1305,9 @@ MONDO:0857528	malignant pulmonary artery neoplasm	NCIT:C5380	MONDO:equivalentTo	
 MONDO:0857529	malignant pulmonary vein neoplasm	NCIT:C5383	MONDO:equivalentTo	Malignant Pulmonary Vein Neoplasm		MONDO:0040676
 MONDO:0857532	leiomyosarcoma of vessels	NCIT:C5387	MONDO:equivalentTo	Leiomyosarcoma of Vessels		MONDO:0005058
 MONDO:0857533	benign atrial neoplasm	NCIT:C5389	MONDO:equivalentTo	Benign Atrial Neoplasm		MONDO:0021450
-MONDO:0857534	parotid gland lymphangioma	NCIT:C5393	MONDO:equivalentTo	Parotid Gland Lymphangioma		MONDO:0002013|MONDO:0021494
 MONDO:0857535	solitary adult fibroma	NCIT:C5394	MONDO:equivalentTo	Solitary Adult Fibroma		MONDO:0005167
 MONDO:0857536	fibrous histiocytoma of bone	NCIT:C53963	MONDO:equivalentTo	Fibrous Histiocytoma of Bone		MONDO:0000631|MONDO:0002989
 MONDO:0857537	bone leiomyoma	NCIT:C53964	MONDO:equivalentTo	Bone Leiomyoma		MONDO:0001572
-MONDO:0857541	undifferentiated stromal sarcoma	NCIT:C53994	MONDO:equivalentTo	Undifferentiated Stromal Sarcoma		MONDO:0037742|MONDO:0044337|MONDO:0001416
 MONDO:0857542	benign gastrointestinal stromal tumor	NCIT:C53998	MONDO:equivalentTo	Benign Gastrointestinal Stromal Tumor		MONDO:0044335|MONDO:0011719
 MONDO:0857543	malignant gastrointestinal stromal tumor	NCIT:C53999	MONDO:equivalentTo	Malignant Gastrointestinal Stromal Tumor		MONDO:0011719|MONDO:0044337
 MONDO:0857546	region 17p13 allelic loss associated medulloblastoma	NCIT:C5402	MONDO:equivalentTo	Region 17p13 Allelic Loss Associated Medulloblastoma		MONDO:0007959
@@ -1365,16 +1318,15 @@ MONDO:0857550	malignant central nervous system germ cell tumor	NCIT:C54099	MONDO
 MONDO:0857552	breast columnar cell lesion	NCIT:C54180	MONDO:equivalentTo	Breast Columnar Cell Lesion		MONDO:0021100
 MONDO:0857556	head and neck keratinizing squamous cell carcinoma	NCIT:C54283	MONDO:equivalentTo	Head and Neck Keratinizing Squamous Cell Carcinoma		MONDO:0005056|MONDO:0010150
 MONDO:0857559	metastasizing ameloblastoma	NCIT:C54297	MONDO:equivalentTo	Metastasizing Ameloblastoma		MONDO:0024883|MONDO:0017795
-MONDO:0857561	primary intraosseous squamous cell carcinoma derived from keratocystic odontogenic tumor	NCIT:C54303	MONDO:equivalentTo	Primary Intraosseous Squamous Cell Carcinoma Derived From Keratocystic Odontogenic Tumor		MONDO:0006385|MONDO:0024878
 MONDO:0857562	lipomatosis of nerve	NCIT:C5431	MONDO:equivalentTo	Lipomatosis of Nerve		MONDO:0000648|MONDO:0001406|MONDO:0006574
 MONDO:0857564	laryngeal papillary squamous cell carcinoma	NCIT:C54335	MONDO:equivalentTo	Laryngeal Papillary Squamous Cell Carcinoma		MONDO:0002979|MONDO:0005595
-MONDO:0857565	laryngeal squamous cell carcinoma, spindle cell variant	NCIT:C54336	MONDO:equivalentTo	Laryngeal Squamous Cell Carcinoma, Spindle Cell Variant		MONDO:0005595|MONDO:0021663
+MONDO:0857565	laryngeal spindle cell squamous carcinoma	NCIT:C54336	MONDO:equivalentTo	Laryngeal Spindle Cell Squamous Carcinoma		MONDO:0005595|MONDO:0021663
 MONDO:0857566	laryngeal acantholytic squamous cell carcinoma	NCIT:C54337	MONDO:equivalentTo	Laryngeal Acantholytic Squamous Cell Carcinoma		MONDO:0003487|MONDO:0005595
 MONDO:0857567	laryngeal adenosquamous carcinoma	NCIT:C54338	MONDO:equivalentTo	Laryngeal Adenosquamous Carcinoma		MONDO:0002358|MONDO:0006074
 MONDO:0857568	laryngeal undifferentiated carcinoma	NCIT:C54339	MONDO:equivalentTo	Laryngeal Undifferentiated Carcinoma		MONDO:0002358|MONDO:0005617
 MONDO:0857570	kadish stage c olfactory neuroblastoma	NCIT:C5435	MONDO:equivalentTo	Kadish Stage C Olfactory Neuroblastoma		MONDO:0006329
 MONDO:0857571	drop metastasis in the spinal cord	NCIT:C5439	MONDO:equivalentTo	Drop Metastasis in the Spinal Cord		MONDO:0044912
-MONDO:0857572	nasopharyngeal papillary adenocarcinoma	NCIT:C54400	MONDO:equivalentTo	Nasopharyngeal Papillary Adenocarcinoma		MONDO:0015459|MONDO:0002512
+MONDO:0857572	nasopharyngeal low grade papillary adenocarcinoma	NCIT:C54400	MONDO:equivalentTo	Nasopharyngeal Low Grade Papillary Adenocarcinoma		MONDO:0015459|MONDO:0002512
 MONDO:0857574	meningeal gliomatosis	NCIT:C5446	MONDO:equivalentTo	Meningeal Gliomatosis		MONDO:0100342|MONDO:0021322
 MONDO:0857575	invasive breast apocrine carcinoma	NCIT:C5457	MONDO:equivalentTo	Invasive Breast Apocrine Carcinoma		MONDO:0006256|MONDO:0003934
 MONDO:0857576	breast nevus	NCIT:C54658	MONDO:equivalentTo	Breast Nevus		MONDO:0044794|MONDO:0000620
@@ -1382,7 +1334,6 @@ MONDO:0857577	acral nevus	NCIT:C54659	MONDO:equivalentTo	Acral Nevus		MONDO:0044
 MONDO:0857578	flexural skin nevus	NCIT:C54660	MONDO:equivalentTo	Flexural Skin Nevus		MONDO:0044794
 MONDO:0857580	nevoid melanoma	NCIT:C54662	MONDO:equivalentTo	Nevoid Melanoma		MONDO:0005012
 MONDO:0857581	signet ring melanoma	NCIT:C54663	MONDO:equivalentTo	Signet Ring Melanoma		MONDO:0005012
-MONDO:0857582	skin keratotic basal cell carcinoma	NCIT:C54665	MONDO:equivalentTo	Skin Keratotic Basal Cell Carcinoma		MONDO:0005341
 MONDO:0857583	invasive breast lobular carcinoma, signet ring variant	NCIT:C54691	MONDO:equivalentTo	Invasive Breast Lobular Carcinoma, Signet Ring Variant		MONDO:0005051|MONDO:0002671
 MONDO:0857587	central nervous system dermoid cyst	NCIT:C5508	MONDO:equivalentTo	Central Nervous System Dermoid Cyst		MONDO:0002378|MONDO:0003733
 MONDO:0857589	appendix mucinous cystadenoma	NCIT:C5510	MONDO:equivalentTo	Appendix Mucinous Cystadenoma		MONDO:0006088|MONDO:0006859
@@ -1411,7 +1362,6 @@ MONDO:0857648	oral cavity adenocarcinoma	NCIT:C5914	MONDO:equivalentTo	Oral Cavi
 MONDO:0857660	minor salivary gland mucoepidermoid carcinoma	NCIT:C5953	MONDO:equivalentTo	Minor Salivary Gland Mucoepidermoid Carcinoma		MONDO:0045069|MONDO:0021009
 MONDO:0857661	minor salivary gland small cell neuroendocrine carcinoma	NCIT:C5956	MONDO:equivalentTo	Minor Salivary Gland Small Cell Neuroendocrine Carcinoma		MONDO:0045069|MONDO:0006405
 MONDO:0857663	minor salivary gland squamous cell carcinoma	NCIT:C5959	MONDO:equivalentTo	Minor Salivary Gland Squamous Cell Carcinoma		MONDO:0044740|MONDO:0045069
-MONDO:0857665	ear polyp	NCIT:C5971	MONDO:equivalentTo	Ear Polyp		MONDO:0021474|MONDO:0021075
 MONDO:0857671	oropharyngeal polyp	NCIT:C5988	MONDO:equivalentTo	Oropharyngeal Polyp		MONDO:0021479|MONDO:0005079
 MONDO:0857679	lung mature b-cell neoplasm	NCIT:C60310	MONDO:equivalentTo	Lung Mature B-Cell Neoplasm		MONDO:0021117|MONDO:0004949
 MONDO:0857682	nasopharyngeal polyp	NCIT:C6034	MONDO:equivalentTo	Nasopharyngeal Polyp		MONDO:0021478|MONDO:0005079
@@ -1419,7 +1369,6 @@ MONDO:0857683	stage 0 nasopharyngeal undifferentiated carcinoma ajcc v6, v7, and
 MONDO:0857685	nasopharyngeal squamous papilloma	NCIT:C6037	MONDO:equivalentTo	Nasopharyngeal Squamous Papilloma		MONDO:0001825|MONDO:0021478
 MONDO:0857686	oropharyngeal squamous papilloma	NCIT:C6038	MONDO:equivalentTo	Oropharyngeal Squamous Papilloma		MONDO:0021479|MONDO:0001825
 MONDO:0857687	stage 0 oropharyngeal squamous cell carcinoma ajcc v6 and v7	NCIT:C6039	MONDO:equivalentTo	Stage 0 Oropharyngeal Squamous Cell Carcinoma AJCC v6 and v7		MONDO:0044704|MONDO:0021298
-MONDO:0857688	thyroid gland non-hodgkin lymphoma	NCIT:C6044	MONDO:equivalentTo	Thyroid Gland Non-Hodgkin Lymphoma		MONDO:0019962|MONDO:0018908
 MONDO:0857689	stage 0 hypopharyngeal squamous cell carcinoma ajcc v6, v7, and v8	NCIT:C6048	MONDO:equivalentTo	Stage 0 Hypopharyngeal Squamous Cell Carcinoma AJCC v6, v7, and v8		MONDO:0021288|MONDO:0044638
 MONDO:0857690	stage 0 oral cavity squamous cell carcinoma ajcc v6 and v7	NCIT:C6052	MONDO:equivalentTo	Stage 0 Oral Cavity Squamous Cell Carcinoma AJCC v6 and v7		MONDO:0004958|MONDO:0000371|MONDO:0004693
 MONDO:0857692	anterior tongue neoplasm	NCIT:C6062	MONDO:equivalentTo	Anterior Tongue Neoplasm		MONDO:0021240
@@ -1454,8 +1403,8 @@ MONDO:0857753	penile kaposi sarcoma	NCIT:C6377	MONDO:equivalentTo	Penile Kaposi 
 MONDO:0857758	orbit paraganglioma	NCIT:C6408	MONDO:equivalentTo	Orbit Paraganglioma		MONDO:0006239|MONDO:0024611
 MONDO:0857759	laryngeal paraganglioma	NCIT:C6409	MONDO:equivalentTo	Laryngeal Paraganglioma		MONDO:0015070|MONDO:0006239|MONDO:0021052
 MONDO:0857760	intrathoracic paravertebral paraganglioma	NCIT:C6411	MONDO:equivalentTo	Intrathoracic Paravertebral Paraganglioma		MONDO:0000550|MONDO:0021350
-MONDO:0857763	foregut neuroendocrine tumor g1	NCIT:C6421	MONDO:equivalentTo	Foregut Neuroendocrine Tumor G1		MONDO:0005369
-MONDO:0857765	hindgut neuroendocrine tumor g1	NCIT:C6423	MONDO:equivalentTo	Hindgut Neuroendocrine Tumor G1		MONDO:0005369
+MONDO:0857763	foregut neuroendocrine tumor	NCIT:C6421	MONDO:equivalentTo	Foregut Neuroendocrine Tumor		MONDO:0000386
+MONDO:0857765	hindgut neuroendocrine tumor	NCIT:C6423	MONDO:equivalentTo	Hindgut Neuroendocrine Tumor		MONDO:0000386
 MONDO:0857767	malignant mediastinal nongerminomatous germ cell tumor	NCIT:C6439	MONDO:equivalentTo	Malignant Mediastinal Nongerminomatous Germ Cell Tumor		MONDO:0003578|MONDO:0006298
 MONDO:0857768	gastric germ cell tumor	NCIT:C6448	MONDO:equivalentTo	Gastric Germ Cell Tumor		MONDO:0018201|MONDO:0021085
 MONDO:0857769	benign germ cell tumor	NCIT:C6449	MONDO:equivalentTo	Benign Germ Cell Tumor		MONDO:0005040|MONDO:0005165
@@ -1506,7 +1455,7 @@ MONDO:0857822	adenocarcinoma with neuroendocrine differentiation	NCIT:C66745	MON
 MONDO:0857823	testicular sex cord-stromal tumor, not otherwise specified	NCIT:C66748	MONDO:equivalentTo	Testicular Sex Cord-Stromal Tumor, Not Otherwise Specified		MONDO:0003125
 MONDO:0857824	ovarian stromal tumor with minor sex cord elements	NCIT:C66749	MONDO:equivalentTo	Ovarian Stromal Tumor with Minor Sex Cord Elements		MONDO:0021657
 MONDO:0857825	adult granulosa cell tumor	NCIT:C66750	MONDO:equivalentTo	Adult Granulosa Cell Tumor		MONDO:0006036
-MONDO:0857826	malignant melanoma in precancerous melanosis	NCIT:C66753	MONDO:equivalentTo	Malignant Melanoma in Precancerous Melanosis		MONDO:0005012
+MONDO:0857826	melanoma in precancerous melanosis	NCIT:C66753	MONDO:equivalentTo	Melanoma in Precancerous Melanosis		MONDO:0005012
 MONDO:0857827	small congenital melanocytic nevus	NCIT:C66754	MONDO:equivalentTo	Small Congenital Melanocytic Nevus		MONDO:0044792
 MONDO:0857828	proliferative nodules in congenital melanocytic nevus	NCIT:C66755	MONDO:equivalentTo	Proliferative Nodules in Congenital Melanocytic Nevus		MONDO:0044792
 MONDO:0857829	periosteal fibroma	NCIT:C66761	MONDO:equivalentTo	Periosteal Fibroma		MONDO:0000631|MONDO:0005167
@@ -1538,8 +1487,6 @@ MONDO:0857862	stromal neoplasm	NCIT:C6781	MONDO:equivalentTo	Stromal Neoplasm		M
 MONDO:0857864	benign apocrine neoplasm	NCIT:C6799	MONDO:equivalentTo	Benign Apocrine Neoplasm		MONDO:0003686|MONDO:0021489
 MONDO:0857866	benign external ear neoplasm	NCIT:C6807	MONDO:equivalentTo	Benign External Ear Neoplasm		MONDO:0021474|MONDO:0021235
 MONDO:0857867	prostate ductal adenocarcinoma	NCIT:C6813	MONDO:equivalentTo	Prostate Ductal Adenocarcinoma		MONDO:0005082
-MONDO:0857870	high grade paranasal sinus sarcoma	NCIT:C6850	MONDO:equivalentTo	High Grade Paranasal Sinus Sarcoma		MONDO:0001758
-MONDO:0857871	low grade paranasal sinus sarcoma	NCIT:C6851	MONDO:equivalentTo	Low Grade Paranasal Sinus Sarcoma		MONDO:0001758
 MONDO:0857872	kadish stage a olfactory neuroblastoma	NCIT:C6853	MONDO:equivalentTo	Kadish Stage A Olfactory Neuroblastoma		MONDO:0006329
 MONDO:0857873	kadish stage b olfactory neuroblastoma	NCIT:C6854	MONDO:equivalentTo	Kadish Stage B Olfactory Neuroblastoma		MONDO:0006329
 MONDO:0857874	oropharyngeal undifferentiated carcinoma	NCIT:C68610	MONDO:equivalentTo	Oropharyngeal Undifferentiated Carcinoma		MONDO:0044704|MONDO:0003572
@@ -1550,7 +1497,7 @@ MONDO:0857882	adrenal cortical sarcomatoid carcinoma	NCIT:C68644	MONDO:equivalen
 MONDO:0857884	hodgkin lymphoma by clinical course	NCIT:C68666	MONDO:equivalentTo	Hodgkin Lymphoma by Clinical Course		MONDO:0004952
 MONDO:0857892	adult gliosarcoma	NCIT:C68701	MONDO:equivalentTo	Adult Gliosarcoma		MONDO:0020690|MONDO:0016681
 MONDO:0857893	adult giant cell glioblastoma	NCIT:C68702	MONDO:equivalentTo	Adult Giant Cell Glioblastoma		MONDO:0020690|MONDO:0016682
-MONDO:0857895	pancreatic mixed acinar-neuroendocrine carcinoma	NCIT:C6878	MONDO:equivalentTo	Pancreatic Mixed Acinar-Neuroendocrine Carcinoma		MONDO:0044727
+MONDO:0857895	pancreatic mixed acinar carcinoma-neuroendocrine carcinoma	NCIT:C6878	MONDO:equivalentTo	Pancreatic Mixed Acinar Carcinoma-Neuroendocrine Carcinoma		MONDO:0044727
 MONDO:0857896	cellular fibroma	NCIT:C6892	MONDO:equivalentTo	Cellular Fibroma		MONDO:0005167
 MONDO:0857897	malignant solitary fibrous tumor	NCIT:C6894	MONDO:equivalentTo	Malignant Solitary Fibrous Tumor		MONDO:0016238|MONDO:0004992
 MONDO:0857899	atypical burkitt/burkitt-like lymphoma	NCIT:C6917	MONDO:equivalentTo	Atypical Burkitt/Burkitt-Like Lymphoma		MONDO:0007243
@@ -1563,7 +1510,6 @@ MONDO:0857906	anaplastic kidney wilms tumor	NCIT:C6952	MONDO:equivalentTo	Anapla
 MONDO:0857907	simple endometrial hyperplasia with atypia	NCIT:C6991	MONDO:equivalentTo	Simple Endometrial Hyperplasia with Atypia		MONDO:0006410
 MONDO:0857910	central nervous system kaposi sarcoma	NCIT:C7006	MONDO:equivalentTo	Central Nervous System Kaposi Sarcoma		MONDO:0005055|MONDO:0002217
 MONDO:0857913	central nervous system inflammatory myofibroblastic tumor	NCIT:C7020	MONDO:equivalentTo	Central Nervous System Inflammatory Myofibroblastic Tumor		MONDO:0015798|MONDO:0003244
-MONDO:0857914	refractory multiple myeloma	NCIT:C7024	MONDO:equivalentTo	Refractory Multiple Myeloma		MONDO:0004816|MONDO:0009693
 MONDO:0857918	meningioma by site	NCIT:C7051	MONDO:equivalentTo	Meningioma by Site		MONDO:0016642
 MONDO:0857919	mature b-cell non-hodgkin lymphoma	NCIT:C7056	MONDO:equivalentTo	Mature B-Cell Non-Hodgkin Lymphoma		MONDO:0015759|MONDO:0004949
 MONDO:0857921	neoplasm by special category	NCIT:C7062	MONDO:equivalentTo	Neoplasm by Special Category		MONDO:0005070
@@ -1572,7 +1518,6 @@ MONDO:0857926	prostate cancer by whitmore-jewett stage	NCIT:C7079	MONDO:equivale
 MONDO:0857931	metastatic non-cutaneous melanoma	NCIT:C7092	MONDO:equivalentTo	Metastatic Non-Cutaneous Melanoma		MONDO:0005191|MONDO:0006320
 MONDO:0857935	teratoid hepatoblastoma	NCIT:C7098	MONDO:equivalentTo	Teratoid Hepatoblastoma		MONDO:0003650
 MONDO:0857937	adult pilocytic astrocytoma	NCIT:C71016	MONDO:equivalentTo	Adult Pilocytic Astrocytoma		MONDO:0002503|MONDO:0016691
-MONDO:0857938	adult subependymal giant cell astrocytoma	NCIT:C71017	MONDO:equivalentTo	Adult Subependymal Giant Cell Astrocytoma		MONDO:0002503|MONDO:0016693
 MONDO:0857940	liver non-epithelial neoplasm	NCIT:C7107	MONDO:equivalentTo	Liver Non-Epithelial Neoplasm		MONDO:0024477
 MONDO:0857943	stage i liver cancer	NCIT:C7116	MONDO:equivalentTo	Stage I Liver Cancer		MONDO:0018531
 MONDO:0857944	stage ii liver cancer	NCIT:C7117	MONDO:equivalentTo	Stage II Liver Cancer		MONDO:0018531
@@ -1629,25 +1574,21 @@ MONDO:0858029	invasive papillary adenocarcinoma	NCIT:C7438	MONDO:equivalentTo	In
 MONDO:0858030	benign myoepithelioma	NCIT:C7442	MONDO:equivalentTo	Benign Myoepithelioma		MONDO:0044335|MONDO:0002380
 MONDO:0858036	pure erythroid leukemia	NCIT:C7467	MONDO:equivalentTo	Pure Erythroid Leukemia		MONDO:0017858
 MONDO:0858037	anal extramucosal (perianal) adenocarcinoma	NCIT:C7474	MONDO:equivalentTo	Anal Extramucosal (Perianal) Adenocarcinoma		MONDO:0002652
-MONDO:0858041	primary intraosseous squamous cell carcinoma-solid type	NCIT:C7491	MONDO:equivalentTo	Primary Intraosseous Squamous Cell Carcinoma-Solid Type		MONDO:0006385
 MONDO:0858042	ameloblastic carcinoma-primary type	NCIT:C7493	MONDO:equivalentTo	Ameloblastic Carcinoma-Primary Type		MONDO:0006079
 MONDO:0858043	ameloblastic carcinoma-secondary type (dedifferentiated)	NCIT:C7496	MONDO:equivalentTo	Ameloblastic Carcinoma-Secondary Type (Dedifferentiated)		MONDO:0006079|MONDO:0024878
 MONDO:0858044	ameloblastic carcinoma derived from odontogenic cyst	NCIT:C7497	MONDO:equivalentTo	Ameloblastic Carcinoma Derived From Odontogenic Cyst		MONDO:0006079|MONDO:0024878
-MONDO:0858045	primary intraosseous squamous cell carcinoma derived from odontogenic cyst	NCIT:C7500	MONDO:equivalentTo	Primary Intraosseous Squamous Cell Carcinoma Derived From Odontogenic Cyst		MONDO:0006385|MONDO:0024878
+MONDO:0858045	primary intraosseous carcinoma, not otherwise specified, derived from odontogenic cyst	NCIT:C7500	MONDO:equivalentTo	Primary Intraosseous Carcinoma, Not Otherwise Specified, Derived from Odontogenic Cyst		MONDO:0006385
 MONDO:0858049	metastatic malignant neoplasm in the breast	NCIT:C7511	MONDO:equivalentTo	Metastatic Malignant Neoplasm in the Breast		MONDO:0007254|MONDO:0024880
 MONDO:0858050	malignant esophageal neoplasm by anatomic region	NCIT:C7512	MONDO:equivalentTo	Malignant Esophageal Neoplasm by Anatomic Region		MONDO:0007576
 MONDO:0858051	malignant esophageal neoplasm by topographic region	NCIT:C7513	MONDO:equivalentTo	Malignant Esophageal Neoplasm by Topographic Region		MONDO:0007576
 MONDO:0858052	kidney and ureter neoplasm	NCIT:C7514	MONDO:equivalentTo	Kidney and Ureter Neoplasm		MONDO:0021066
 MONDO:0858059	atypical adenoma	NCIT:C7559	MONDO:equivalentTo	Atypical Adenoma		MONDO:0004972
 MONDO:0858060	eccrine hidrocystoma	NCIT:C7565	MONDO:equivalentTo	Eccrine Hidrocystoma		MONDO:0024247|MONDO:0006787
-MONDO:0858062	deep penetrating nevus	NCIT:C7576	MONDO:equivalentTo	Deep Penetrating Nevus		MONDO:0044794
-MONDO:0858064	nevus of female genitalia	NCIT:C7578	MONDO:equivalentTo	Nevus of Female Genitalia		MONDO:0005073|MONDO:0021148
 MONDO:0858066	regressing nevus	NCIT:C7603	MONDO:equivalentTo	Regressing Nevus		MONDO:0044794
 MONDO:0858068	cerebral non-hodgkin lymphoma	NCIT:C7609	MONDO:equivalentTo	Cerebral Non-Hodgkin Lymphoma		MONDO:0003655|MONDO:0044887
 MONDO:0858069	malignant thymoma	NCIT:C7612	MONDO:equivalentTo	Malignant Thymoma		MONDO:0002586|MONDO:0006456
 MONDO:0858070	cutaneous lymphoproliferative disorder	NCIT:C7614	MONDO:equivalentTo	Cutaneous Lymphoproliferative Disorder		
 MONDO:0858074	bilateral malignant neoplasm	NCIT:C7627	MONDO:equivalentTo	Bilateral Malignant Neoplasm		MONDO:0004992
-MONDO:0858078	regional malignant urethral neoplasm	NCIT:C7639	MONDO:equivalentTo	Regional Malignant Urethral Neoplasm		MONDO:0004192
 MONDO:0858080	intermediate soft tissue neoplasm	NCIT:C7653	MONDO:equivalentTo	Intermediate Soft Tissue Neoplasm		MONDO:0006424
 MONDO:0858081	carcinoma in a polyp	NCIT:C7682	MONDO:equivalentTo	Carcinoma in a Polyp		MONDO:0004993
 MONDO:0858082	invasive breast ductal carcinoma and lobular carcinoma in situ	NCIT:C7689	MONDO:equivalentTo	Invasive Breast Ductal Carcinoma and Lobular Carcinoma In Situ		MONDO:0005050
@@ -1656,7 +1597,6 @@ MONDO:0858086	adult hodgkin lymphoma	NCIT:C7702	MONDO:equivalentTo	Adult Hodgkin
 MONDO:0858087	adult non-hodgkin lymphoma	NCIT:C7704	MONDO:equivalentTo	Adult Non-Hodgkin Lymphoma		MONDO:0003660|MONDO:0018908
 MONDO:0858088	childhood non-hodgkin lymphoma	NCIT:C7706	MONDO:equivalentTo	Childhood Non-Hodgkin Lymphoma		MONDO:0003659|MONDO:0018908
 MONDO:0858089	adult soft tissue sarcoma	NCIT:C7707	MONDO:equivalentTo	Adult Soft Tissue Sarcoma		MONDO:0018078
-MONDO:0858090	digestive system neuroendocrine tumor g1	NCIT:C7709	MONDO:equivalentTo	Digestive System Neuroendocrine Tumor G1		MONDO:0000386|MONDO:0005369
 MONDO:0858091	adult liver carcinoma	NCIT:C7711	MONDO:equivalentTo	Adult Liver Carcinoma		MONDO:0018531
 MONDO:0858092	childhood hodgkin lymphoma	NCIT:C7714	MONDO:equivalentTo	Childhood Hodgkin Lymphoma		MONDO:0004952|MONDO:0003659
 MONDO:0858094	gingival carcinoma	NCIT:C7721	MONDO:equivalentTo	Gingival Carcinoma		MONDO:0005507|MONDO:0044925
@@ -1684,10 +1624,10 @@ MONDO:0858170	testicular mixed embryonal carcinoma and yolk sac tumor	NCIT:C8001
 MONDO:0858171	testicular mixed yolk sac tumor and teratoma	NCIT:C8002	MONDO:equivalentTo	Testicular Mixed Yolk Sac Tumor and Teratoma		MONDO:0003120|MONDO:0003403
 MONDO:0858172	testicular mixed yolk sac tumor and teratoma with seminoma	NCIT:C8003	MONDO:equivalentTo	Testicular Mixed Yolk Sac Tumor and Teratoma with Seminoma		MONDO:0003120
 MONDO:0858173	pancreatic somatostatin-producing neuroendocrine tumor	NCIT:C8006	MONDO:equivalentTo	Pancreatic Somatostatin-Producing Neuroendocrine Tumor		MONDO:0006976|MONDO:0002994
-MONDO:0858174	low grade salivary gland carcinoma	NCIT:C8012	MONDO:equivalentTo	Low Grade Salivary Gland Carcinoma		MONDO:0000521
+MONDO:0858174	salivary gland low grade carcinoma	NCIT:C8012	MONDO:equivalentTo	Salivary Gland Low Grade Carcinoma		MONDO:0000521
 MONDO:0858175	lip basal cell carcinoma	NCIT:C8014	MONDO:equivalentTo	Lip Basal Cell Carcinoma		MONDO:0005341|MONDO:0021333
-MONDO:0858176	intermediate grade salivary gland mucoepidermoid carcinoma	NCIT:C8017	MONDO:equivalentTo	Intermediate Grade Salivary Gland Mucoepidermoid Carcinoma		MONDO:0021009
-MONDO:0858177	high grade salivary gland carcinoma	NCIT:C8018	MONDO:equivalentTo	High Grade Salivary Gland Carcinoma		MONDO:0000521
+MONDO:0858176	salivary gland intermediate grade mucoepidermoid carcinoma	NCIT:C8017	MONDO:equivalentTo	Salivary Gland Intermediate Grade Mucoepidermoid Carcinoma		MONDO:0021009
+MONDO:0858177	salivary gland high grade carcinoma	NCIT:C8018	MONDO:equivalentTo	Salivary Gland High Grade Carcinoma		MONDO:0000521
 MONDO:0858178	salivary gland adenocarcinoma	NCIT:C8021	MONDO:equivalentTo	Salivary Gland Adenocarcinoma		MONDO:0000521|MONDO:0004970
 MONDO:0858179	salivary gland poorly differentiated squamous cell carcinoma	NCIT:C8022	MONDO:equivalentTo	Salivary Gland Poorly Differentiated Squamous Cell Carcinoma		MONDO:0044740
 MONDO:0858180	salivary gland undifferentiated carcinoma	NCIT:C8024	MONDO:equivalentTo	Salivary Gland Undifferentiated Carcinoma		MONDO:0000521|MONDO:0005617
@@ -1757,7 +1697,6 @@ MONDO:0858365	stage iii t lymphoblastic leukemia/lymphoma	NCIT:C8699	MONDO:equiv
 MONDO:0858366	stage iv t lymphoblastic leukemia/lymphoma	NCIT:C8700	MONDO:equivalentTo	Stage IV T Lymphoblastic Leukemia/Lymphoma		MONDO:0003537
 MONDO:0858370	metastatic malignant hemangiopericytoma	NCIT:C8709	MONDO:equivalentTo	Metastatic Malignant Hemangiopericytoma		MONDO:0009330
 MONDO:0858371	primary malignant hemangiopericytoma	NCIT:C8710	MONDO:equivalentTo	Primary Malignant Hemangiopericytoma		MONDO:0009330
-MONDO:0858372	regional malignant ureter neoplasm	NCIT:C8716	MONDO:equivalentTo	Regional Malignant Ureter Neoplasm		MONDO:0008627
 MONDO:0858381	stage i ovarian choriocarcinoma	NCIT:C8730	MONDO:equivalentTo	Stage I Ovarian Choriocarcinoma		MONDO:0003507
 MONDO:0858382	stage ii ovarian choriocarcinoma	NCIT:C8731	MONDO:equivalentTo	Stage II Ovarian Choriocarcinoma		MONDO:0003507
 MONDO:0858383	stage iii ovarian choriocarcinoma	NCIT:C8732	MONDO:equivalentTo	Stage III Ovarian Choriocarcinoma		MONDO:0003507
@@ -1775,9 +1714,7 @@ MONDO:0858472	malignant mastocytosis	NCIT:C8991	MONDO:equivalentTo	Malignant Mas
 MONDO:0858473	benign adrenal cortical neoplasm	NCIT:C9004	MONDO:equivalentTo	Benign Adrenal Cortical Neoplasm		MONDO:0021511|MONDO:0036591
 MONDO:0858474	acute myelomonocytic leukemia with abnormal eosinophils	NCIT:C9020	MONDO:equivalentTo	Acute Myelomonocytic Leukemia with Abnormal Eosinophils		MONDO:0018871
 MONDO:0858475	sarcoma by fnclcc grade	NCIT:C9023	MONDO:equivalentTo	Sarcoma by FNCLCC Grade		MONDO:0005089
-MONDO:0858476	low grade malignant peripheral nerve sheath tumor	NCIT:C9026	MONDO:equivalentTo	Low Grade Malignant Peripheral Nerve Sheath Tumor		MONDO:0017827
 MONDO:0858477	atypical cartilaginous tumor/chondrosarcoma, grade 1	NCIT:C9027	MONDO:equivalentTo	Atypical Cartilaginous Tumor/Chondrosarcoma, Grade 1		MONDO:0008977
-MONDO:0858478	high grade malignant peripheral nerve sheath tumor	NCIT:C9030	MONDO:equivalentTo	High Grade Malignant Peripheral Nerve Sheath Tumor		MONDO:0017827
 MONDO:0858479	renal cell cancer by ajcc v6 stage	NCIT:C90343	MONDO:equivalentTo	Renal Cell Cancer by AJCC v6 Stage		MONDO:0005549
 MONDO:0858480	bladder cancer by ajcc v6 stage	NCIT:C90344	MONDO:equivalentTo	Bladder Cancer by AJCC v6 Stage		MONDO:0004986
 MONDO:0858481	vulvar cancer by ajcc v6 stage	NCIT:C90345	MONDO:equivalentTo	Vulvar Cancer by AJCC v6 Stage		MONDO:0005215
@@ -1827,7 +1764,6 @@ MONDO:0858536	invasive breast carcinoma of no special type with predominant intr
 MONDO:0858537	invasive breast lobular carcinoma with predominant in situ component	NCIT:C9136	MONDO:equivalentTo	Invasive Breast Lobular Carcinoma with Predominant In Situ Component		MONDO:0005051
 MONDO:0858538	adult acute myeloid leukemia	NCIT:C9154	MONDO:equivalentTo	Adult Acute Myeloid Leukemia		MONDO:0018874
 MONDO:0858543	testicular mixed embryonal carcinoma and yolk sac tumor with seminoma	NCIT:C9172	MONDO:equivalentTo	Testicular Mixed Embryonal Carcinoma and Yolk Sac Tumor with Seminoma		MONDO:0003120
-MONDO:0858544	middle ear carcinoma in situ	NCIT:C91741	MONDO:equivalentTo	Middle Ear Carcinoma In Situ		MONDO:0003190|MONDO:0004647
 MONDO:0858546	good prognosis metastatic gestational trophoblastic tumor	NCIT:C9177	MONDO:equivalentTo	Good Prognosis Metastatic Gestational Trophoblastic Tumor		MONDO:0018944
 MONDO:0858547	poor prognosis metastatic gestational trophoblastic tumor	NCIT:C9178	MONDO:equivalentTo	Poor Prognosis Metastatic Gestational Trophoblastic Tumor		MONDO:0018944
 MONDO:0858549	intraocular schwannoma	NCIT:C92182	MONDO:equivalentTo	Intraocular Schwannoma		MONDO:0021454|MONDO:0004820
@@ -1845,13 +1781,11 @@ MONDO:0858584	lymphocyte-depleted classic hodgkin lymphoma	NCIT:C9283	MONDO:equi
 MONDO:0858585	central nervous system histiocytic and dendritic cell neoplasm	NCIT:C92944	MONDO:equivalentTo	Central Nervous System Histiocytic and Dendritic Cell Neoplasm		MONDO:0006247|MONDO:0003641
 MONDO:0858588	peritoneal malignant mesothelioma	NCIT:C9350	MONDO:equivalentTo	Peritoneal Malignant Mesothelioma		MONDO:0006292|MONDO:0002087|MONDO:0006362
 MONDO:0858595	combined lung small cell carcinoma and lung adenocarcinoma	NCIT:C9379	MONDO:equivalentTo	Combined Lung Small Cell Carcinoma and Lung Adenocarcinoma		MONDO:0003438
-MONDO:0858596	sarcoma by nci grade	NCIT:C9387	MONDO:equivalentTo	Sarcoma by NCI Grade		MONDO:0005089
 MONDO:0858597	well differentiated malignant hemangiopericytoma	NCIT:C9392	MONDO:equivalentTo	Well Differentiated Malignant Hemangiopericytoma		MONDO:0009330
 MONDO:0858598	malignant hemangiopericytoma nci grade 2	NCIT:C9393	MONDO:equivalentTo	Malignant Hemangiopericytoma NCI Grade 2		MONDO:0002789
 MONDO:0858599	malignant hemangiopericytoma nci grade 3	NCIT:C9394	MONDO:equivalentTo	Malignant Hemangiopericytoma NCI Grade 3		MONDO:0002789
 MONDO:0858600	round cell liposarcoma nci grade 2	NCIT:C9401	MONDO:equivalentTo	Round Cell Liposarcoma NCI Grade 2		MONDO:0005238
 MONDO:0858601	round cell liposarcoma nci grade 3	NCIT:C9402	MONDO:equivalentTo	Round Cell Liposarcoma NCI Grade 3		MONDO:0005238
-MONDO:0858602	sarcoma by ajcc grade	NCIT:C9416	MONDO:equivalentTo	Sarcoma by AJCC Grade		MONDO:0005089
 MONDO:0858603	childhood hematopoietic and lymphoid cell neoplasm	NCIT:C9431	MONDO:equivalentTo	Childhood Hematopoietic and Lymphoid Cell Neoplasm		MONDO:0021079|MONDO:0044881
 MONDO:0858619	grade 1 colorectal adenocarcinoma	NCIT:C9446	MONDO:equivalentTo	Grade 1 Colorectal Adenocarcinoma		MONDO:0005008
 MONDO:0858620	grade 2 colorectal adenocarcinoma	NCIT:C9447	MONDO:equivalentTo	Grade 2 Colorectal Adenocarcinoma		MONDO:0005008
@@ -1880,7 +1814,7 @@ MONDO:0858658	pancreatic well differentiated ductal adenocarcinoma	NCIT:C95426	M
 MONDO:0858659	pancreatic moderately differentiated ductal adenocarcinoma	NCIT:C95427	MONDO:equivalentTo	Pancreatic Moderately Differentiated Ductal Adenocarcinoma		MONDO:0005184
 MONDO:0858660	pancreatic poorly differentiated ductal adenocarcinoma	NCIT:C95428	MONDO:equivalentTo	Pancreatic Poorly Differentiated Ductal Adenocarcinoma		MONDO:0005184
 MONDO:0858661	pancreatic mixed acinar-ductal carcinoma	NCIT:C95458	MONDO:equivalentTo	Pancreatic Mixed Acinar-Ductal Carcinoma		MONDO:0006047
-MONDO:0858662	pancreatic mixed acinar-ductal neuroendocrine carcinoma	NCIT:C95460	MONDO:equivalentTo	Pancreatic Mixed Acinar-Ductal Neuroendocrine Carcinoma		MONDO:0044727
+MONDO:0858662	pancreatic mixed ductal adenocarcinoma-acinar carcinoma-neuroendocrine carcinoma	NCIT:C95460	MONDO:equivalentTo	Pancreatic Mixed Ductal Adenocarcinoma-Acinar Carcinoma-Neuroendocrine Carcinoma		MONDO:0044727
 MONDO:0858663	pancreatic hepatoid adenocarcinoma	NCIT:C95465	MONDO:equivalentTo	Pancreatic Hepatoid Adenocarcinoma		MONDO:0005184|MONDO:0006243
 MONDO:0858664	pancreatic medullary carcinoma	NCIT:C95466	MONDO:equivalentTo	Pancreatic Medullary Carcinoma		MONDO:0005184
 MONDO:0858665	pancreatic serous adenoma	NCIT:C95470	MONDO:equivalentTo	Pancreatic Serous Adenoma		MONDO:0021441|MONDO:0002810|MONDO:0036976
@@ -1907,7 +1841,7 @@ MONDO:0858702	intestinal neuroendocrine tumor	NCIT:C96062	MONDO:equivalentTo	Int
 MONDO:0858703	small intestinal mixed adenoneuroendocrine carcinoma	NCIT:C96066	MONDO:equivalentTo	Small Intestinal Mixed Adenoneuroendocrine Carcinoma		MONDO:0006182|MONDO:0005522
 MONDO:0858705	colorectal neuroendocrine neoplasm	NCIT:C96152	MONDO:equivalentTo	Colorectal Neuroendocrine Neoplasm		MONDO:0002883|MONDO:0005335
 MONDO:0858706	colorectal mixed adenoneuroendocrine carcinoma	NCIT:C96158	MONDO:equivalentTo	Colorectal Mixed Adenoneuroendocrine Carcinoma		MONDO:0006182|MONDO:0024331
-MONDO:0858707	digestive system neuroendocrine tumor g2	NCIT:C96166	MONDO:equivalentTo	Digestive System Neuroendocrine Tumor G2		MONDO:0000386
+MONDO:0858707	digestive system neuroendocrine tumor g2	NCIT:C96166	MONDO:equivalentTo	Digestive System Neuroendocrine Tumor G2		MONDO:0000386|MONDO:0006095
 MONDO:0858715	serrated lesions and polyps	NCIT:C96414	MONDO:equivalentTo	Serrated Lesions and Polyps		MONDO:0006180
 MONDO:0858717	appendix enterochromaffin cell serotonin-producing neuroendocrine tumor	NCIT:C96424	MONDO:equivalentTo	Appendix Enterochromaffin Cell Serotonin-Producing Neuroendocrine Tumor		MONDO:0015066
 MONDO:0858721	rectal serrated lesions and polyps	NCIT:C96465	MONDO:equivalentTo	Rectal Serrated Lesions and Polyps		MONDO:0006164|MONDO:0000530|MONDO:0021398
@@ -1958,7 +1892,6 @@ MONDO:0858789	invasive breast lobular carcinoma, pleomorphic variant	NCIT:C97051
 MONDO:0858790	invasive breast lobular carcinoma, solid variant	NCIT:C97052	MONDO:equivalentTo	Invasive Breast Lobular Carcinoma, Solid Variant		MONDO:0005051
 MONDO:0858791	invasive breast lobular carcinoma, tubulolobular variant	NCIT:C97053	MONDO:equivalentTo	Invasive Breast Lobular Carcinoma, Tubulolobular Variant		MONDO:0005051
 MONDO:0858792	mixed congenital mesoblastic nephroma	NCIT:C97058	MONDO:equivalentTo	Mixed Congenital Mesoblastic Nephroma		MONDO:0017043|MONDO:0005853
-MONDO:0858804	sclerosing polycystic adenosis	NCIT:C97135	MONDO:equivalentTo	Sclerosing Polycystic Adenosis		MONDO:0021460
 MONDO:0858851	contralateral breast carcinoma	NCIT:C99390	MONDO:equivalentTo	Contralateral Breast Carcinoma		MONDO:0003982
 MONDO:0859471	neoplastic medium-sized lymphocyte	NCIT:C37004	MONDO:equivalentTo	Neoplastic Medium-Sized Lymphocyte		
 MONDO:0859472	neoplastic b-lymphocyte	NCIT:C38640	MONDO:equivalentTo	Neoplastic B-Lymphocyte		
@@ -1986,7 +1919,7 @@ MONDO:0860056	tobacco use disorder	NCIT:C35074	MONDO:equivalentTo	Tobacco Use Di
 MONDO:0860057	sternal disorder	NCIT:C35744	MONDO:equivalentTo	Sternal Disorder		
 MONDO:0860058	chest wall disorder	NCIT:C35745	MONDO:equivalentTo	Chest Wall Disorder		
 MONDO:0860059	axillary disorder	NCIT:C35746	MONDO:equivalentTo	Axillary Disorder		
-MONDO:0860060	hematopoietic and lymphoid system disorder	NCIT:C35814	MONDO:equivalentTo	Hematopoietic and Lymphoid System Disorder		
+MONDO:0860060	hematopoietic and lymphatic system disorder	NCIT:C35814	MONDO:equivalentTo	Hematopoietic and Lymphatic System Disorder		
 MONDO:0860062	anal precancerous condition	NCIT:C7407	MONDO:equivalentTo	Anal Precancerous Condition		
 MONDO:0860063	esophageal precancerous condition	NCIT:C7423	MONDO:equivalentTo	Esophageal Precancerous Condition		
 MONDO:0860064	gastric precancerous condition	NCIT:C7424	MONDO:equivalentTo	Gastric Precancerous Condition		
@@ -2023,7 +1956,6 @@ MONDO:0957639	childhood low grade fibromyxoid sarcoma	NCIT:C188970	MONDO:equival
 MONDO:0957640	extragonadal teratoma	NCIT:C189045	MONDO:equivalentTo	Extragonadal Teratoma		MONDO:0018201|MONDO:0002601
 MONDO:0957641	testicular teratoma, postpubertal-type	NCIT:C189057	MONDO:equivalentTo	Testicular Teratoma, Postpubertal-Type		MONDO:0003510|MONDO:0018193
 MONDO:0957642	kidney carcinoma molecular subtypes	NCIT:C189241	MONDO:equivalentTo	Kidney Carcinoma Molecular Subtypes		MONDO:0005206
-MONDO:0957643	eosinophilic solid and cystic renal cell carcinoma	NCIT:C189254	MONDO:equivalentTo	Eosinophilic Solid and Cystic Renal Cell Carcinoma		MONDO:0005549
 MONDO:0957644	ovarian sertoli-leydig cell tumor molecular subtypes	NCIT:C189319	MONDO:equivalentTo	Ovarian Sertoli-Leydig Cell Tumor Molecular Subtypes		MONDO:0036595
 MONDO:0957645	mullerian papilloma	NCIT:C189336	MONDO:equivalentTo	Mullerian Papilloma		MONDO:0021078
 MONDO:0957646	childhood breast neoplasm	NCIT:C189338	MONDO:equivalentTo	Childhood Breast Neoplasm		MONDO:0021079|MONDO:0021100
@@ -2103,7 +2035,6 @@ MONDO:0957719	acute myeloid leukemia with myelodysplasia-related cytogenetic abn
 MONDO:0957720	low grade endometrioid adenocarcinoma	NCIT:C199146	MONDO:equivalentTo	Low Grade Endometrioid Adenocarcinoma		MONDO:0005026
 MONDO:0957721	high grade endometrioid adenocarcinoma	NCIT:C199149	MONDO:equivalentTo	High Grade Endometrioid Adenocarcinoma		MONDO:0005026
 MONDO:0957722	early t precursor lymphoblastic leukemia/lymphoma	NCIT:C199170	MONDO:equivalentTo	Early T Precursor Lymphoblastic Leukemia/Lymphoma		MONDO:0003537
-MONDO:0957723	early t precursor acute lymphoblastic leukemia with bcl11b rearrangement	NCIT:C199171	MONDO:equivalentTo	Early T Precursor Acute Lymphoblastic Leukemia with BCL11B Rearrangement		MONDO:0100291
 MONDO:0957724	early t precursor acute lymphoblastic leukemia, not otherwise specified	NCIT:C199172	MONDO:equivalentTo	Early T Precursor Acute Lymphoblastic Leukemia, Not Otherwise Specified		MONDO:0100291
 MONDO:0957725	t lymphoblastic leukemia/lymphoma, not otherwise specified	NCIT:C199173	MONDO:equivalentTo	T Lymphoblastic Leukemia/Lymphoma, Not Otherwise Specified		MONDO:0003537
 MONDO:0957726	b acute lymphoblastic leukemia with recurrent genetic abnormalities	NCIT:C199202	MONDO:equivalentTo	B Acute Lymphoblastic Leukemia with Recurrent Genetic Abnormalities		MONDO:0020511|MONDO:0035605
@@ -2145,7 +2076,7 @@ MONDO:0957761	ebv-negative burkitt lymphoma	NCIT:C200688	MONDO:equivalentTo	EBV-
 MONDO:0957762	plasma cell neoplasm with associated paraneoplastic syndrome	NCIT:C200738	MONDO:equivalentTo	Plasma Cell Neoplasm with Associated Paraneoplastic Syndrome		MONDO:0004959
 MONDO:0957763	who grade 4 glioma	NCIT:C200758	MONDO:equivalentTo	WHO Grade 4 Glioma		MONDO:0100342
 MONDO:0957764	primary cutaneous peripheral t-cell lymphoma, not otherwise specified	NCIT:C201080	MONDO:equivalentTo	Primary Cutaneous Peripheral T-Cell Lymphoma, Not Otherwise Specified		MONDO:0000607
-MONDO:0957765	cribriform comedo-type adenocarcinoma	NCIT:C201124	MONDO:equivalentTo	Cribriform Comedo-Type Adenocarcinoma		MONDO:0003575
+MONDO:0957765	cribriform comedo-type adenocarcinoma	NCIT:C201124	MONDO:equivalentTo	Cribriform Comedo-Type Adenocarcinoma		MONDO:0003575|MONDO:0006176
 MONDO:0957766	aleukemic myeloid leukemia	NCIT:C201127	MONDO:equivalentTo	Aleukemic Myeloid leukemia		MONDO:0003730|MONDO:0004643
 MONDO:0957767	solid pseudopapillary neoplasm	NCIT:C201136	MONDO:equivalentTo	Solid Pseudopapillary Neoplasm		MONDO:0004992
 MONDO:0957768	endemic burkitt lymphoma	NCIT:C27122	MONDO:equivalentTo	Endemic Burkitt Lymphoma		MONDO:0007243
@@ -2176,3 +2107,105 @@ MONDO:0957866	stage m2 pineoblastoma	NCIT:C186570	MONDO:equivalentTo	Stage M2 Pi
 MONDO:0957867	stage m3 pineoblastoma	NCIT:C186571	MONDO:equivalentTo	Stage M3 Pineoblastoma		MONDO:0016722
 MONDO:0957868	stage m4 pineoblastoma	NCIT:C186572	MONDO:equivalentTo	Stage M4 Pineoblastoma		MONDO:0016722
 MONDO:0958220	colorectal perineurioma	NCIT:C96513	MONDO:equivalentTo	Colorectal Perineurioma		MONDO:0015031|MONDO:0021444
+MONDO:0970840	platinum-resistant primary peritoneal carcinoma	NCIT:C157622	MONDO:equivalentTo	Platinum-Resistant Primary Peritoneal Carcinoma		MONDO:0015686
+MONDO:0970841	platinum-resistant malignant female reproductive system neoplasm	NCIT:C169021	MONDO:equivalentTo	Platinum-Resistant Malignant Female Reproductive System Neoplasm		MONDO:0001416
+MONDO:0970842	extracutaneous merkel cell carcinoma	NCIT:C173586	MONDO:equivalentTo	Extracutaneous Merkel Cell Carcinoma		MONDO:0019210
+MONDO:0970843	non-neoplastic tonsillar disorder	NCIT:C173798	MONDO:equivalentTo	Non-Neoplastic Tonsillar Disorder		
+MONDO:0970844	swi/snf complex-deficient sinonasal carcinoma	NCIT:C201634	MONDO:equivalentTo	SWI/SNF Complex-Deficient Sinonasal Carcinoma		MONDO:0056819
+MONDO:0970845	tracheal verrucous carcinoma	NCIT:C201742	MONDO:equivalentTo	Tracheal Verrucous Carcinoma		MONDO:0001419|MONDO:0006006
+MONDO:0970846	hypopharyngeal verrucous carcinoma	NCIT:C201743	MONDO:equivalentTo	Hypopharyngeal Verrucous Carcinoma		MONDO:0044638|MONDO:0006006
+MONDO:0970847	hypopharyngeal papillary squamous cell carcinoma	NCIT:C201748	MONDO:equivalentTo	Hypopharyngeal Papillary Squamous Cell Carcinoma		MONDO:0002979|MONDO:0044638
+MONDO:0970848	hypopharyngeal spindle cell squamous carcinoma	NCIT:C201749	MONDO:equivalentTo	Hypopharyngeal Spindle Cell Squamous Carcinoma		MONDO:0044638|MONDO:0021663
+MONDO:0970849	parotid gland keratocystoma	NCIT:C201770	MONDO:equivalentTo	Parotid Gland Keratocystoma		MONDO:0021460
+MONDO:0970850	hyalinizing clear cell carcinoma	NCIT:C201821	MONDO:equivalentTo	Hyalinizing Clear Cell Carcinoma		MONDO:0004993
+MONDO:0970851	tongue verrucous carcinoma	NCIT:C201878	MONDO:equivalentTo	Tongue Verrucous Carcinoma		MONDO:0021538|MONDO:0000500
+MONDO:0970852	palatine tonsil hamartomatous polyp	NCIT:C201900	MONDO:equivalentTo	Palatine Tonsil Hamartomatous Polyp		
+MONDO:0970853	transformed chronic lymphocytic leukemia to hodgkin lymphoma	NCIT:C201960	MONDO:equivalentTo	Transformed Chronic Lymphocytic Leukemia to Hodgkin Lymphoma		MONDO:0004948
+MONDO:0970854	pineoblastoma molecular subtypes	NCIT:C201966	MONDO:equivalentTo	Pineoblastoma Molecular Subtypes		MONDO:0016722
+MONDO:0970855	spinal cord pilocytic astrocytoma	NCIT:C201976	MONDO:equivalentTo	Spinal Cord Pilocytic Astrocytoma		MONDO:0003174|MONDO:0016691
+MONDO:0970856	brain low grade glioma	NCIT:C201977	MONDO:equivalentTo	Brain Low Grade Glioma		MONDO:0021632|MONDO:0021637
+MONDO:0970857	clear cell calcifying epithelial odontogenic tumor	NCIT:C202057	MONDO:equivalentTo	Clear Cell Calcifying Epithelial Odontogenic Tumor		MONDO:0022057
+MONDO:0970858	cystic/microcystic calcifying epithelial odontogenic tumor	NCIT:C202058	MONDO:equivalentTo	Cystic/Microcystic Calcifying Epithelial Odontogenic Tumor		MONDO:0022057
+MONDO:0970859	non-calcifying/langerhans cell-rich calcifying epithelial odontogenic tumor	NCIT:C202059	MONDO:equivalentTo	Non-Calcifying/Langerhans Cell-Rich Calcifying Epithelial Odontogenic Tumor		MONDO:0022057
+MONDO:0970860	adenoid ameloblastoma	NCIT:C202061	MONDO:equivalentTo	Adenoid Ameloblastoma		MONDO:0017795
+MONDO:0970861	egfr-positive lung non-small cell carcinoma	NCIT:C202131	MONDO:equivalentTo	EGFR-Positive Lung Non-Small Cell Carcinoma		MONDO:0005233
+MONDO:0970862	juvenile trabecular ossifying fibroma	NCIT:C202205	MONDO:equivalentTo	Juvenile Trabecular Ossifying Fibroma		MONDO:0002119
+MONDO:0970863	psammomatoid ossifying fibroma	NCIT:C202209	MONDO:equivalentTo	Psammomatoid Ossifying Fibroma		MONDO:0002119
+MONDO:0970864	surface osteoma	NCIT:C202252	MONDO:equivalentTo	Surface Osteoma		MONDO:0005166
+MONDO:0970865	central osteoma	NCIT:C202253	MONDO:equivalentTo	Central Osteoma		MONDO:0005166
+MONDO:0970866	rhabdomyosarcoma with tfcp2 rearrangement	NCIT:C202263	MONDO:equivalentTo	Rhabdomyosarcoma with TFCP2 Rearrangement		MONDO:0005212
+MONDO:0970867	non-clear cell renal cell carcinoma	NCIT:C202497	MONDO:equivalentTo	Non-Clear Cell Renal Cell Carcinoma		MONDO:0005549
+MONDO:0970868	middle ear papilloma	NCIT:C202582	MONDO:equivalentTo	Middle Ear Papilloma		MONDO:0021078|MONDO:0021482
+MONDO:0970869	external auditory canal squamous cell carcinoma	NCIT:C202594	MONDO:equivalentTo	External Auditory Canal Squamous Cell Carcinoma		MONDO:0003501
+MONDO:0970870	orbit solitary fibrous tumor	NCIT:C202620	MONDO:equivalentTo	Orbit Solitary Fibrous Tumor		MONDO:0016238|MONDO:0024611
+MONDO:0970871	head and neck soft tissue neoplasm	NCIT:C202623	MONDO:equivalentTo	Head and Neck Soft Tissue Neoplasm		MONDO:0006424|MONDO:0005586
+MONDO:0970872	proximal colon carcinoma	NCIT:C202633	MONDO:equivalentTo	Proximal Colon Carcinoma		MONDO:0002032
+MONDO:0970873	distal colon carcinoma	NCIT:C202634	MONDO:equivalentTo	Distal Colon Carcinoma		MONDO:0002032
+MONDO:0970874	oral cavity neurofibroma	NCIT:C202860	MONDO:equivalentTo	Oral Cavity Neurofibroma		MONDO:0021445|MONDO:0016755
+MONDO:0970875	oral cavity schwannoma	NCIT:C202876	MONDO:equivalentTo	Oral Cavity Schwannoma		MONDO:0021445|MONDO:0004820
+MONDO:0970876	head and neck phosphaturic mesenchymal tumor	NCIT:C202879	MONDO:equivalentTo	Head and Neck Phosphaturic Mesenchymal Tumor		MONDO:0006368|MONDO:0005586
+MONDO:0970877	appendicular skeleton phosphaturic mesenchymal tumor	NCIT:C202880	MONDO:equivalentTo	Appendicular Skeleton Phosphaturic Mesenchymal Tumor		MONDO:0019060|MONDO:0006368
+MONDO:0970878	poorly differentiated synovial sarcoma	NCIT:C202883	MONDO:equivalentTo	Poorly Differentiated Synovial Sarcoma		MONDO:0010434
+MONDO:0970879	primary cd30-positive t-cell lymphoproliferative disorder	NCIT:C202952	MONDO:equivalentTo	Primary CD30-Positive T-Cell Lymphoproliferative Disorder		MONDO:0005169
+MONDO:0970880	head and neck hematopoietic and lymphoid cell neoplasm	NCIT:C202954	MONDO:equivalentTo	Head and Neck Hematopoietic and Lymphoid Cell Neoplasm		MONDO:0005586|MONDO:0044881
+MONDO:0970881	head and neck germ cell tumor	NCIT:C202977	MONDO:equivalentTo	Head and Neck Germ Cell Tumor		MONDO:0018201|MONDO:0005586
+MONDO:0970882	cecum neuroendocrine tumor	NCIT:C203386	MONDO:equivalentTo	Cecum Neuroendocrine Tumor		MONDO:0005694|MONDO:0015067
+MONDO:0970883	ascending colon neuroendocrine tumor	NCIT:C203387	MONDO:equivalentTo	Ascending Colon Neuroendocrine Tumor		MONDO:0015067
+MONDO:0970884	descending colon neuroendocrine tumor	NCIT:C203388	MONDO:equivalentTo	Descending Colon Neuroendocrine Tumor		MONDO:0015067
+MONDO:0970885	sigmoid colon neuroendocrine tumor	NCIT:C203389	MONDO:equivalentTo	Sigmoid Colon Neuroendocrine Tumor		MONDO:0015067
+MONDO:0970886	transverse colon neuroendocrine tumor	NCIT:C203390	MONDO:equivalentTo	Transverse Colon Neuroendocrine Tumor		MONDO:0015067
+MONDO:0970887	histiocytic disorder	NCIT:C203422	MONDO:equivalentTo	Histiocytic Disorder		
+MONDO:0970888	myelodysplastic chronic myelomonocytic leukemia	NCIT:C203443	MONDO:equivalentTo	Myelodysplastic Chronic Myelomonocytic Leukemia		MONDO:0020311
+MONDO:0970889	myeloproliferative chronic myelomonocytic leukemia	NCIT:C203444	MONDO:equivalentTo	Myeloproliferative Chronic Myelomonocytic Leukemia		MONDO:0020311
+MONDO:0970890	t acute lymphoblastic leukemia with recurrent genetic abnormalities	NCIT:C203469	MONDO:equivalentTo	T Acute Lymphoblastic Leukemia with Recurrent Genetic Abnormalities		MONDO:0004963
+MONDO:0970891	esophageal and gastroesophageal junction carcinoma	NCIT:C203673	MONDO:equivalentTo	Esophageal and Gastroesophageal Junction Carcinoma		MONDO:0006181
+MONDO:0970892	low grade mucinous carcinoma peritonei	NCIT:C203946	MONDO:equivalentTo	Low Grade Mucinous Carcinoma Peritonei		MONDO:0017048
+MONDO:0970893	high grade mucinous carcinoma peritonei	NCIT:C203948	MONDO:equivalentTo	High Grade Mucinous Carcinoma Peritonei		MONDO:0017048
+MONDO:0970894	merkel cell polyoma virus-positive merkel cell carcinoma	NCIT:C204383	MONDO:equivalentTo	Merkel Cell Polyoma Virus-Positive Merkel Cell Carcinoma		MONDO:0019210
+MONDO:0970895	merkel cell polyoma virus-negative merkel cell carcinoma	NCIT:C204385	MONDO:equivalentTo	Merkel Cell Polyoma Virus-Negative Merkel Cell Carcinoma		MONDO:0019210
+MONDO:0970896	lentiginous melanocytic nevus	NCIT:C204482	MONDO:equivalentTo	Lentiginous Melanocytic Nevus		MONDO:0044794
+MONDO:0970897	mitf pathway-activated melanocytic tumor	NCIT:C204739	MONDO:equivalentTo	MITF Pathway-Activated Melanocytic Tumor		MONDO:0021583
+MONDO:0970898	dermal spitz nevus	NCIT:C204789	MONDO:equivalentTo	Dermal Spitz Nevus		MONDO:0006813|MONDO:0044793
+MONDO:0970899	spitz tumor	NCIT:C204790	MONDO:equivalentTo	Spitz Tumor		MONDO:0021583
+MONDO:0970900	melanoma in intermittently sun-exposed skin	NCIT:C204840	MONDO:equivalentTo	Melanoma in Intermittently Sun-Exposed Skin		MONDO:0005012
+MONDO:0970901	low-csd melanoma, superficial spreading melanoma subtype	NCIT:C204843	MONDO:equivalentTo	Low-CSD Melanoma, Superficial Spreading Melanoma Subtype		MONDO:0020638
+MONDO:0970902	melanoma in chronically sun-exposed skin	NCIT:C204864	MONDO:equivalentTo	Melanoma in Chronically Sun-Exposed Skin		MONDO:0005012
+MONDO:0970903	mucosal nevus	NCIT:C204907	MONDO:equivalentTo	Mucosal Nevus		MONDO:0005073
+MONDO:0970904	dendritic blue nevus	NCIT:C204910	MONDO:equivalentTo	Dendritic Blue Nevus		MONDO:0006680
+MONDO:0970905	intermediate congenital melanocytic nevus	NCIT:C204976	MONDO:equivalentTo	Intermediate Congenital Melanocytic Nevus		MONDO:0044792
+MONDO:0970906	conjunctival melanocytic neoplasm	NCIT:C204977	MONDO:equivalentTo	Conjunctival Melanocytic Neoplasm		MONDO:0021143|MONDO:0020204
+MONDO:0970907	uveal melanocytic neoplasm	NCIT:C205057	MONDO:equivalentTo	Uveal Melanocytic Neoplasm		MONDO:0021143|MONDO:0021225
+MONDO:0970908	nodular melanoma	NCIT:C205125	MONDO:equivalentTo	Nodular Melanoma		MONDO:0005105
+MONDO:0970909	dermal melanoma	NCIT:C205129	MONDO:equivalentTo	Dermal Melanoma		MONDO:0005012
+MONDO:0970910	metastatic melanoma in the lymph nodes	NCIT:C205131	MONDO:equivalentTo	Metastatic Melanoma in the Lymph Nodes		MONDO:0005191|MONDO:0005438
+MONDO:0970911	platinum-sensitive endometrial carcinoma	NCIT:C205187	MONDO:equivalentTo	Platinum-Sensitive Endometrial Carcinoma		MONDO:0002447
+MONDO:0970912	early stage cervical carcinoma	NCIT:C205287	MONDO:equivalentTo	Early Stage Cervical Carcinoma		MONDO:0005131
+MONDO:0970913	early stage clear cell renal cell carcinoma	NCIT:C205289	MONDO:equivalentTo	Early Stage Clear Cell Renal Cell Carcinoma		MONDO:0005005
+MONDO:0970914	early stage colorectal carcinoma	NCIT:C205290	MONDO:equivalentTo	Early Stage Colorectal Carcinoma		MONDO:0024331
+MONDO:0970915	early stage endometrial carcinoma	NCIT:C205295	MONDO:equivalentTo	Early Stage Endometrial Carcinoma		MONDO:0002447
+MONDO:0970916	early stage esophageal carcinoma	NCIT:C205298	MONDO:equivalentTo	Early Stage Esophageal Carcinoma		MONDO:0019086
+MONDO:0970917	early stage hepatocellular carcinoma	NCIT:C205301	MONDO:equivalentTo	Early Stage Hepatocellular Carcinoma		MONDO:0007256
+MONDO:0970918	early stage lung non-small cell carcinoma	NCIT:C205303	MONDO:equivalentTo	Early Stage Lung Non-Small Cell Carcinoma		MONDO:0005233
+MONDO:0970919	early stage malignant skin neoplasm	NCIT:C205307	MONDO:equivalentTo	Early Stage Malignant Skin Neoplasm		MONDO:0002898
+MONDO:0970920	primary cutaneous nut adnexal carcinoma	NCIT:C205357	MONDO:equivalentTo	Primary Cutaneous NUT Adnexal Carcinoma		MONDO:0005563|MONDO:0006973
+MONDO:0970921	trichogerminoma	NCIT:C205371	MONDO:equivalentTo	Trichogerminoma		MONDO:0020593
+MONDO:0970922	apocrine cystadenoma	NCIT:C205459	MONDO:equivalentTo	Apocrine Cystadenoma		MONDO:0002804|MONDO:0002369
+MONDO:0970923	eccrine poroma	NCIT:C205462	MONDO:equivalentTo	Eccrine Poroma		MONDO:0006738|MONDO:0024247
+MONDO:0970924	hidroacanthoma simplex	NCIT:C205475	MONDO:equivalentTo	Hidroacanthoma Simplex		MONDO:0006738
+MONDO:0970925	solid cystic hidradenoma	NCIT:C205539	MONDO:equivalentTo	Solid Cystic Hidradenoma		MONDO:0002805
+MONDO:0970926	sialoblastoma	NCIT:C35837	MONDO:equivalentTo	Sialoblastoma		MONDO:0004669
+MONDO:0970927	cribriform trichoblastoma	NCIT:C43322	MONDO:equivalentTo	Cribriform Trichoblastoma		MONDO:0020593
+MONDO:0970928	lung neuroendocrine carcinoma	NCIT:C45569	MONDO:equivalentTo	Lung Neuroendocrine Carcinoma		MONDO:0005454|MONDO:0005138|MONDO:0002120
+MONDO:0970929	branchioma	NCIT:C53595	MONDO:equivalentTo	Branchioma		MONDO:0021455
+MONDO:0970930	ear carcinoma	NCIT:C54262	MONDO:equivalentTo	Ear Carcinoma		MONDO:0003277|MONDO:0002038
+MONDO:0970931	intracranial melanoma	NCIT:C5442	MONDO:equivalentTo	Intracranial Melanoma		MONDO:0003761|MONDO:0001657|MONDO:0021632
+MONDO:0970932	meckel diverticulum neuroendocrine tumor g1	NCIT:C6424	MONDO:equivalentTo	Meckel Diverticulum Neuroendocrine Tumor G1		MONDO:0021533
+MONDO:0970933	duodenal neuroendocrine tumor g1	NCIT:C6425	MONDO:equivalentTo	Duodenal Neuroendocrine Tumor G1		MONDO:0000540|MONDO:0015063
+MONDO:0970934	intracranial myeloid sarcoma	NCIT:C7008	MONDO:equivalentTo	Intracranial Myeloid Sarcoma		MONDO:0003641|MONDO:0001657|MONDO:0006861|MONDO:0021632
+MONDO:0970935	hamartomatous polyp	NCIT:C8372	MONDO:equivalentTo	Hamartomatous Polyp		
+MONDO:0970936	well differentiated fibrosarcoma	NCIT:C9025	MONDO:equivalentTo	Well Differentiated Fibrosarcoma		MONDO:0005164
+MONDO:0970937	poorly differentiated angiosarcoma	NCIT:C9031	MONDO:equivalentTo	Poorly Differentiated Angiosarcoma		MONDO:0016982
+MONDO:0970938	well differentiated leiomyosarcoma	NCIT:C9389	MONDO:equivalentTo	Well Differentiated Leiomyosarcoma		MONDO:0005058
+MONDO:0970939	poorly differentiated fibrosarcoma	NCIT:C9404	MONDO:equivalentTo	Poorly Differentiated Fibrosarcoma		MONDO:0005164
+MONDO:0970940	low grade sarcoma	NCIT:C9417	MONDO:equivalentTo	Low Grade Sarcoma		MONDO:0005089
+MONDO:0970941	high grade sarcoma	NCIT:C9418	MONDO:equivalentTo	High Grade Sarcoma		MONDO:0005089
