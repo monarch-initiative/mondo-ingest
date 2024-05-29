@@ -1,12 +1,12 @@
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-### All diseases
+# All subclasses of "ICD Category" except classes that are also subclasses of "Extension Codes"
 SELECT DISTINCT ?term
 WHERE {
   { 
     { 
-     ?s1 ?p1 ?term . 
-     ?term rdfs:subClassOf* <http://id.who.int/icd/entity/455013390> .
+      ?s1 ?p1 ?term . 
+      ?term rdfs:subClassOf* <http://id.who.int/icd/entity/455013390> .
     }
     UNION
     { 
@@ -15,4 +15,7 @@ WHERE {
     }
   }
   FILTER(isIRI(?term))
+  FILTER NOT EXISTS {
+    ?term rdfs:subClassOf* <http://id.who.int/icd/entity/979408586> .
+  }
 }
