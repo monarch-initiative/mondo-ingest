@@ -19,8 +19,9 @@ from jinja2 import Template
 from oaklib.implementations import ProntoImplementation
 from oaklib.types import CURIE, URI
 
+from ordo_subsets import get_formatted_subsets_df
 from utils import CACHE_DIR, DOCS_DIR, PREFIX, PROJECT_DIR, Term, get_all_owned_terms, _get_next_available_mondo_id, \
-    get_mondo_term_ids, _load_ontology, SLURP_DIR, get_owned_prefix_map
+    get_mondo_term_ids, _load_ontology, SLURP_DIR, get_owned_prefix_map, TEMP_DIR
 
 FILENAME_GLOB_PATTERN = '*.tsv'
 PATH_GLOB_PATTERN = os.path.join(SLURP_DIR, FILENAME_GLOB_PATTERN)
@@ -173,6 +174,25 @@ def slurp_docs():
         f.write(instantiated_str)
 
 
+def slurp_ordo_mods(
+    slurp_path: str = os.path.join(SLURP_DIR, 'ordo.tsv'), subsets_path: str = os.path.join(TEMP_DIR, 'ordo-subsets.tsv')
+):
+    """Adds rare_disease_subset column to the ORDO migration TSV."""
+    # Read inputs
+    df: pd.DataFrame = pd.read_csv(slurp_path, sep='\t')
+    df_subsets: pd.DataFrame = get_formatted_subsets_df(subsets_path)
+    df_subsets = df_subsets[['ordo_id', 'subset_ordo_class_label']]\
+        .rename(columns={'ordo_id': 'xref', 'subset_ordo_class_label': 'subset'})
+
+    # Edge case: re-running
+    if 'subset' in df.columns:
+        del df['subset']
+
+    # JOIN
+    df = pd.merge(df, df_subsets, how='left', on='xref')
+    df.to_csv(slurp_path, sep='\t', index=False)
+
+
 # TODO: remove cache? probably not needed after mapping status
 # todo: add way to not read from cache, but write to cache
 def cli():
@@ -227,15 +247,25 @@ def cli():
     parser.add_argument(
         '-d', '--docs', action='store_true',
         help='Generates documentation based on any existing "slurp" / "migrate" tables.')
+    # slurp_ordo_mods() args
+    parser.add_argument(
+        '-r', '--ordo-mods', action='store_true', help='Adds rare_disease_subset column to the ORDO migration TSV.')
     d: Dict = vars(parser.parse_args())
     # Reformatting
     # todo: Paths: Convert to absolute paths, as I've done before? Or expect always be run from src/ontology and ok?
     d['min_id'] = int(d['min_id']) if d['min_id'] else None
     d['max_id'] = int(d['max_id']) if d['max_id'] else None
-    docs = d.pop('docs')
-    if docs and any([d[x] for x in d]):
-        raise RuntimeError('If --docs, don\'t provide any other arguments.')
-    return slurp_docs() if docs else slurp(**d)
+    # Route & run
+    run_docs, run_ordo = d.pop('docs'), d.pop('ordo_mods')
+    if run_docs:
+        if any([d[x] for x in d]) or run_ordo:
+            raise RuntimeError('If running --docs, don\'t provide any other arguments.')
+        return slurp_docs()
+    elif run_ordo:
+        if any([d[x] for x in d]) or run_docs:
+            raise RuntimeError('If running --ordo-mods, don\'t provide any other arguments.')
+        return slurp_ordo_mods()
+    slurp(**d)
 
 
 if __name__ == '__main__':

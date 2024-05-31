@@ -1,0 +1,13 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?cls ?lbl ?grp ?grp_lbl
+WHERE {
+    VALUES ?grp {
+        <http://www.orpha.net/ORDO/Orphanet_557493>  # disorder
+        <http://www.orpha.net/ORDO/Orphanet_557492>  # group of disorders
+        <http://www.orpha.net/ORDO/Orphanet_557494>  # subtype of a disorder
+    }
+    ?cls rdfs:subClassOf+ ?grp .
+    ?cls rdfs:label ?lbl .
+    ?grp rdfs:label ?grp_lbl .
+}

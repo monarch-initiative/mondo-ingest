@@ -17,6 +17,7 @@ from oaklib.types import CURIE, URI
 def mirror_signature_via_oak(db_path: str, onto_config_path: str, outpath: str) -> pd.DataFrame:
     """Creates a `reports/mirror_signature-ONTOLOGY.tsv` which uses OAK instead of `robot`."""
     # Read source info
+    # todo: refactor duplicate/similar blocks to a single function
     with open(onto_config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
         prefix_map: Dict[str, str] = onto_config['base_prefix_map']

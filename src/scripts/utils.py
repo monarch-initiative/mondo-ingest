@@ -481,3 +481,12 @@ def get_labels(
         use_cache=use_cache, values=' '.join(values))
     df = df.drop_duplicates(subset=['term_id'])
     return list(df['label'])
+
+
+def get_converter(onto_config_path: Union[str, Path]) -> curies.Converter:
+    """Get a prefix/URI prefix Converter."""
+    with open(onto_config_path, 'r') as stream:
+        onto_config = yaml.safe_load(stream)
+        prefix_map: Dict[str, str] = onto_config['base_prefix_map']
+        converter = curies.Converter.from_prefix_map(prefix_map)
+    return converter

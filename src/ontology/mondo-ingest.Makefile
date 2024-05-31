@@ -366,12 +366,6 @@ $(TMPDIR)/mondo.sssom.tsv: $(TMPDIR)/mondo_repo_built
 $(TMPDIR)/mondo.owl: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
 
-$(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
-	$(ROBOT) query -i tmp/merged.owl --query $< $@
-
-.PHONY: mondo-ordo-subclass
-mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
-
 reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
@@ -487,6 +481,10 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_map
 slurp-%: slurp/%.tsv
 	@echo "$@ completed".
 
+.PHONY: slurp-ordo
+slurp-ordo: slurp/ordo.tsv
+	$(MAKE) slurp-modifications-ordo
+
 .PHONY: slurp-no-updates-%
 slurp-no-updates-%: slurp/%.tsv
 	@echo "$@ completed".
@@ -497,12 +495,20 @@ slurp-docs:
 
 .PHONY: slurp-all-no-updates
 slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
+	$(MAKE) slurp-modifications
 	@echo "$@ ($^) completed".
 
 .PHONY: slurp-all
 slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
+	$(MAKE) slurp-modifications
 	@echo "$@ ($^) completed".
 
+.PHONY: slurp-modifications
+slurp-modifications: slurp-modifications-ordo
+
+.PHONY: slurp-modifications-ordo
+slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
+	python3 $(SCRIPTSDIR)/migrate.py --ordo-mods
 
 #############################
 ###### Synchronization ######
@@ -560,12 +566,26 @@ $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/add-robot-template-header.py $^ > $@
-.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv
 
 .PHONY: external-content-nord
-external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
 
-update-externally-managed-content: external-content-nord
+tmp/ordo-subsets.tsv: $(COMPONENTSDIR)/ordo.owl
+	$(ROBOT) query -i $< --query ../sparql/select-ordo-subsets.sparql $@
+
+$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/ordo_subsets.py \
+	--mondo-mappings-path tmp/mondo.sssom.tsv \
+	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
+	--onto-config-path metadata/ordo.yml \
+	--outpath $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
+
+.PHONY: external-content-ordo
+external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
+
+update-externally-managed-content: external-content-nord external-content-ordo
 
 #############################
 ######### Analysis ##########
@@ -600,6 +620,15 @@ report-mapping-annotations:
 update-jinja-sparql-queries:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
+
+#############################
+########### Ad hoc ##########
+#############################
+$(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
+	$(ROBOT) query -i tmp/merged.owl --query $< $@
+
+.PHONY: mondo-ordo-subclass
+mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
 
 #############################
 ########### Help ############
