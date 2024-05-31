@@ -20,22 +20,10 @@ ROBOT_TEMPLATE_HEADER = {
 }
 
 
-def create_ordo_subsets_robot_template(
-    class_subsets_tsv_path: Union[str, Path], mondo_mappings_path: Union[str, Path], onto_config_path: Union[str, Path],
-    outpath: Union[str, Path],
-) -> pd.DataFrame:
-    """Creates a ROBOT template to update mondo terms with the correct ORDO subset annotation."""
+def get_formatted_subsets_df(class_subsets_tsv_path: Union[str, Path], onto_config_path: Union[str, Path]):
+    """Read & reformat ORDO class subsets query results"""
     conv = curies.Converter = get_converter(onto_config_path)
-    
-    # Read: mondo.sssom.tsv
-    mondo_df = pd.read_csv(mondo_mappings_path, sep='\t', comment='#').rename(columns={
-        'subject_id': 'mondo_id',
-        'subject_label': 'mondo_label',
-    })
-    # - keep only exact matches
-    mondo_df = mondo_df[mondo_df['predicate_id'] == 'skos:exactMatch']
-
-    # Read: ORDO class subsets query results
+    # Read
     df = pd.read_csv(class_subsets_tsv_path, sep='\t').rename(columns={
         '?cls': 'ordo_id',
         '?lbl': 'ordo_label',
@@ -58,6 +46,24 @@ def create_ordo_subsets_robot_template(
 
     # Map to mondo subset IDs
     df['subset'] = df['subset_ordo_class_id'].map(SUBSET_MAP)
+    return df
+
+
+def create_ordo_subsets_robot_template(
+    class_subsets_tsv_path: Union[str, Path], mondo_mappings_path: Union[str, Path], onto_config_path: Union[str, Path],
+    outpath: Union[str, Path],
+) -> pd.DataFrame:
+    """Creates a ROBOT template to update mondo terms with the correct ORDO subset annotation."""
+    # Get mondo.sssom.tsv
+    mondo_df = pd.read_csv(mondo_mappings_path, sep='\t', comment='#').rename(columns={
+        'subject_id': 'mondo_id',
+        'subject_label': 'mondo_label',
+    })
+    # - keep only exact matches
+    mondo_df = mondo_df[mondo_df['predicate_id'] == 'skos:exactMatch']
+
+    # Get class subsets TSV
+    df: pd.DataFrame = get_formatted_subsets_df(class_subsets_tsv_path, onto_config_path)
 
     # JOIN to get Mondo IDs
     df = df.merge(mondo_df, how='inner', left_on='ordo_id', right_on='object_id')
