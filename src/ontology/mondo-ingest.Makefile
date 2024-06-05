@@ -571,8 +571,9 @@ $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-conte
 .PHONY: external-content-nord
 external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
 
-tmp/ordo-subsets.tsv: $(COMPONENTSDIR)/ordo.owl
-	$(ROBOT) query -i $< --query ../sparql/select-ordo-subsets.sparql $@
+tmp/ordo-subsets.tsv:
+	$(MAKE) component-download-ordo.owl
+	$(ROBOT) query -i $(TMPDIR)/component-download-ordo.owl.owl --query ../sparql/select-ordo-subsets.sparql $@
 
 $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/ordo_subsets.py \
