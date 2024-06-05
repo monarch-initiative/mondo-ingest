@@ -1,4 +1,7 @@
-"""Slurp migration pipeline: utils"""
+"""Slurp migration pipeline: utils
+
+todo: refactor various scripts/ files to import paths from here
+"""
 import os
 import pickle
 import subprocess
@@ -24,6 +27,7 @@ TRIPLE = RELATIONSHIP
 SCRIPTS_DIR = os.path.dirname(os.path.realpath(__file__))
 PROJECT_DIR = os.path.realpath(os.path.join(SCRIPTS_DIR, '..', '..'))
 ONTOLOGY_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology')
+METADATA_DIR = os.path.join(ONTOLOGY_DIR, 'metadata')
 REPORTS_DIR = os.path.join(ONTOLOGY_DIR, 'reports')
 SLURP_DIR = os.path.join(ONTOLOGY_DIR, 'slurp')
 SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
