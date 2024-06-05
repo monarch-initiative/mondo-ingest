@@ -183,8 +183,9 @@ $(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) convert -i $< -f json -o $@
 .PRECIOUS: $(TMPDIR)/component-%.json
 
-$(MAPPINGSDIR)/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
-	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
+$(MAPPINGSDIR)/%.sssom.tsv:
+	$(MAKE) $(TMPDIR)/component-$*.json metadata/mondo.sssom.config.yml
+	sssom parse $(TMPDIR)/component-$*.json -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
 	sssom sort $@ -o $@
 
 $(MAPPINGSDIR)/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
@@ -198,6 +199,9 @@ $(MAPPINGSDIR)/doid.sssom.tsv: $(TMPDIR)/component-doid.json
 $(MAPPINGSDIR)/omim.sssom.tsv: $(TMPDIR)/component-omim.json
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/omim.metadata.sssom.yml -o $@
 	sssom sort $@ -o $@
+
+$(MAPPINGSDIR)/nando-mondo.sssom.tsv:
+	@echo "$@ is manually curated"
 
 mappings: $(ALL_MAPPINGS)
 
@@ -556,7 +560,9 @@ $(TMPDIR)/nord.tsv:
 	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
 
 $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
-	$(ROBOT) template --template $< \
+	$(ROBOT) template \
+		--template $< \
+		--prefix "orcid: https://orcid.org/" \
 	 	annotate \
 				--ontology-iri $(URIBASE)/mondo/external/nord.robot.owl \
 				--version-iri $(URIBASE)/mondo/external/$(TODAY)/nord.robot.owl \
@@ -586,7 +592,20 @@ $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.s
 .PHONY: external-content-ordo
 external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
 
-update-externally-managed-content: external-content-nord external-content-ordo
+$(MAPPINGSDIR)/mondo-nando.sssom.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
+	sssom invert $(MAPPINGSDIR)/nando-mondo.sssom.tsv --no-merge-inverted -o $@
+	sssom annotate $@ --mapping_provider "MONDO:NANDO" -o $@
+
+$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sssom.tsv
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
+	python ../scripts/sssom_to_robot_template.py --inpath $< --outpath $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
+
+.PHONY: external-content-nord external-content-nando
+external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+external-content-nando: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.owl
+
+update-externally-managed-content: external-content-nord external-content-nando external-content-ordo
 
 #############################
 ######### Analysis ##########
