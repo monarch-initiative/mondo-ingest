@@ -63,8 +63,7 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 #  - #60 needs to be fixed at source, but a workaround can probably be implemented in this goal
 $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-download-omim.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/omim_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/remove.txt --axioms equivalent \
 		query \
@@ -77,8 +76,7 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-dow
 $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt | component-download-ordo.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ordo.owl.owl --select imports \
 		merge \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		query \
 			--update ../sparql/fix_partof.ru \
 			--update ../sparql/fix_deprecated.ru \
@@ -95,8 +93,7 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 
 $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-download-ncit.owl
 	if [ $(SKIP_HUGE) = false ] && [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		query --update ../sparql/rm_xref_by_prefix.ru \
 		remove -T $(TMPDIR)/ncit_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/properties.txt --select complement --select properties --trim true \
@@ -106,8 +103,7 @@ $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-dow
 # todo: See #1 at top of file
 $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-download-doid.owl
 	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-doid.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/doid_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		query \
 			--update ../sparql/fix_omimps.ru \
@@ -132,8 +128,7 @@ component-download-icd10cm.owl: | $(TMPDIR)
 # todo: See #1 at top of file
 $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | component-download-icd10cm.owl
 	if [ $(COMP) = true ]; then $(ROBOT) merge -i $(TMPDIR)/component-download-icd10cm.owl.owl \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select individuals \
 		query \
@@ -145,8 +140,7 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | compone
 # todo: See #1 at top of file
 $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | component-download-icd10who.owl
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd10who.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
-		rename --mappings config/property-map-2.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select individuals \
 		query \
@@ -157,7 +151,7 @@ $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | compo
 
 $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signature.txt | component-download-icd11foundation.owl
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd11foundation.owl.owl --select imports \
-		rename --mappings config/property-map-1.sssom.tsv --allow-missing-entities true \
+		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		rename --mappings config/icd11foundation-property-map.sssom.tsv \
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select individuals \
@@ -189,8 +183,9 @@ $(TMPDIR)/component-%.json: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) convert -i $< -f json -o $@
 .PRECIOUS: $(TMPDIR)/component-%.json
 
-$(MAPPINGSDIR)/%.sssom.tsv: $(TMPDIR)/component-%.json metadata/mondo.sssom.config.yml
-	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
+$(MAPPINGSDIR)/%.sssom.tsv:
+	$(MAKE) $(TMPDIR)/component-$*.json metadata/mondo.sssom.config.yml
+	sssom parse $(TMPDIR)/component-$*.json -I obographs-json --prefix-map-mode merged -m metadata/mondo.sssom.config.yml -o $@
 	sssom sort $@ -o $@
 
 $(MAPPINGSDIR)/ordo.sssom.tsv: $(TMPDIR)/component-ordo.json
@@ -204,6 +199,9 @@ $(MAPPINGSDIR)/doid.sssom.tsv: $(TMPDIR)/component-doid.json
 $(MAPPINGSDIR)/omim.sssom.tsv: $(TMPDIR)/component-omim.json
 	sssom parse $< -I obographs-json --prefix-map-mode merged -m metadata/omim.metadata.sssom.yml -o $@
 	sssom sort $@ -o $@
+
+$(MAPPINGSDIR)/nando-mondo.sssom.tsv:
+	@echo "$@ is manually curated"
 
 mappings: $(ALL_MAPPINGS)
 
@@ -372,12 +370,6 @@ $(TMPDIR)/mondo.sssom.tsv: $(TMPDIR)/mondo_repo_built
 $(TMPDIR)/mondo.owl: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
 
-$(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
-	$(ROBOT) query -i tmp/merged.owl --query $< $@
-
-.PHONY: mondo-ordo-subclass
-mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
-
 reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
@@ -442,11 +434,13 @@ $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-so
 		--rejects $(MAPPINGSDIR)/rejected-mappings.tsv \
 		-o $@
 
+.PHONY: lexical-matches
 lexical-matches: $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 
 ###################################
 #### Lexmatch-SSSOM-compare #######
 ###################################
+# This goal also creates, for all sources: lexmatch/unmapped_%_lex.tsv, lexmatch/unmapped_%_lex_exact.tsv
 lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv $(ALL_EXCLUSION_FILES)
 	find lexmatch/ -name "*.tsv" -type f -delete
 	python $(SCRIPTSDIR)/lexmatch-sssom-compare.py extract_unmapped_matches $(ALL_COMPONENT_IDS) \
@@ -460,7 +454,7 @@ extract-unmapped-matches: lexmatch/README.md
 ###################################
 #### Lexmatch-combine #######
 ###################################
-lexmatch/all_exact.robot.tsv: $(SCRIPTSDIR)/lexmatch-sssom-compare.py
+lexmatch/all_exact.robot.tsv: $(SCRIPTSDIR)/lexmatch-sssom-compare.py lexmatch/README.md
 	python $< combine_unmapped_lex_exacts
 
 combine-unmapped-exact-lexmatches: lexmatch/all_exact.robot.tsv
@@ -492,6 +486,10 @@ slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_map
 slurp-%: slurp/%.tsv
 	@echo "$@ completed".
 
+.PHONY: slurp-ordo
+slurp-ordo: slurp/ordo.tsv
+	$(MAKE) slurp-modifications-ordo
+
 .PHONY: slurp-no-updates-%
 slurp-no-updates-%: slurp/%.tsv
 	@echo "$@ completed".
@@ -502,12 +500,20 @@ slurp-docs:
 
 .PHONY: slurp-all-no-updates
 slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
+	$(MAKE) slurp-modifications
 	@echo "$@ ($^) completed".
 
 .PHONY: slurp-all
 slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
+	$(MAKE) slurp-modifications
 	@echo "$@ ($^) completed".
 
+.PHONY: slurp-modifications
+slurp-modifications: slurp-modifications-ordo
+
+.PHONY: slurp-modifications-ordo
+slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
+	python3 $(SCRIPTSDIR)/migrate.py --ordo-mods
 
 #############################
 ###### Synchronization ######
@@ -516,28 +522,30 @@ slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
 sync: sync-subclassof
 
 .PHONY: sync-subclassof
-sync-subclassof: $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv
+sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
 
 # todo: drop this? This is really just an alias here for quality of life, but not used by anything.
 .PHONY: sync-subclassof-%
-sync-subclassof-%: $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv
-	@echo "$@ completed"
+sync-subclassof-%: $(REPORTDIR)/%.subclass.confirmed.robot.tsv
+
+$(TMPDIR)/sync-subClassOf.added.self-parentage.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n).subclass.self-parentage.tsv) tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/sync_subclassof_collate_self_parentage.py \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 
 # Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
-$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), sync-subclassof-$(n)) tmp/mondo.db
+$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.direct-in-mondo-only.tsv) tmp/mondo.db
 	python3 $(SCRIPTSDIR)/sync_subclassof_collate_direct_in_mondo_only.py --outpath $@
 
 $(REPORTDIR)/sync-subClassOf.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.subclass.confirmed.robot.tsv > $@
 
-# todo: Until ODK has oaklib >= 0.5.20, need '$(MAKE) pip-oaklib' below https://github.com/INCATools/ontology-development-kit/issues/936
-$(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv: tmp/mondo-ingest.db tmp/mondo.db tmp/mondo.sssom.tsv
-	$(MAKE) pip-oaklib
+$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: tmp/mondo-ingest.db tmp/mondo.db tmp/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof.py \
 	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
 	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
 	--outpath-confirmed $(REPORTDIR)/$*.subclass.confirmed.robot.tsv \
 	--outpath-direct-in-mondo-only $(REPORTDIR)/$*.subclass.direct-in-mondo-only.tsv \
+	--outpath-self-parentage $(TMPDIR)/$*.subclass.self-parentage.tsv \
 	--mondo-db-path $(TMPDIR)/mondo.db \
 	--mondo-ingest-db-path $(TMPDIR)/mondo-ingest.db \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
@@ -553,7 +561,9 @@ $(TMPDIR)/nord.tsv:
 	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
 
 $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
-	$(ROBOT) template --template $< \
+	$(ROBOT) template \
+		--template $< \
+		--prefix "orcid: https://orcid.org/" \
 	 	annotate \
 				--ontology-iri $(URIBASE)/mondo/external/nord.robot.owl \
 				--version-iri $(URIBASE)/mondo/external/$(TODAY)/nord.robot.owl \
@@ -563,12 +573,40 @@ $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/add-robot-template-header.py $^ > $@
-.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv
 
 .PHONY: external-content-nord
-external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
 
-update-externally-managed-content: external-content-nord
+tmp/ordo-subsets.tsv:
+	$(MAKE) component-download-ordo.owl
+	$(ROBOT) query -i $(TMPDIR)/component-download-ordo.owl.owl --query ../sparql/select-ordo-subsets.sparql $@
+
+$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/ordo_subsets.py \
+	--mondo-mappings-path tmp/mondo.sssom.tsv \
+	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
+	--onto-config-path metadata/ordo.yml \
+	--outpath $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
+
+.PHONY: external-content-ordo
+external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
+
+$(MAPPINGSDIR)/mondo-nando.sssom.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
+	sssom invert $(MAPPINGSDIR)/nando-mondo.sssom.tsv --no-merge-inverted -o $@
+	sssom annotate $@ --mapping_provider "MONDO:NANDO" -o $@
+
+$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sssom.tsv
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
+	python ../scripts/sssom_to_robot_template.py --inpath $< --outpath $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
+
+.PHONY: external-content-nord external-content-nando
+external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+external-content-nando: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.owl
+
+update-externally-managed-content: external-content-nord external-content-nando external-content-ordo
 
 #############################
 ######### Analysis ##########
@@ -603,6 +641,15 @@ report-mapping-annotations:
 update-jinja-sparql-queries:
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_replace_annotation_based_mappings.py
 	python3 $(SCRIPTSDIR)/ordo_mapping_annotations/create_sparql__ordo_mapping_annotations_violation.py
+
+#############################
+########### Ad hoc ##########
+#############################
+$(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
+	$(ROBOT) query -i tmp/merged.owl --query $< $@
+
+.PHONY: mondo-ordo-subclass
+mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
 
 #############################
 ########### Help ############

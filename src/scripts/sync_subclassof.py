@@ -3,9 +3,10 @@
 Resources
 - GitHub issue: https://github.com/monarch-initiative/mondo-ingest/issues/92
 - GitHub PR: https://github.com/monarch-initiative/mondo-ingest/pull/363
-- Google doc about cases https://docs.google.com/document/d/1H8fJKiKD-L1tfS-2LJu8t0_2YXJ1PQJ_7Zkoj7Vf7xA/edit#heading=h.9hixairfgxa1
+- Google doc about cases
+https://docs.google.com/document/d/1H8fJKiKD-L1tfS-2LJu8t0_2YXJ1PQJ_7Zkoj7Vf7xA/edit#heading=h.9hixairfgxa1
 
-todo's
+todo's (minor)
  1. Simplify: Set[RELATIONSHIP] _source_edges vars: (sub, rdfs:subClassOf, pred) --> (sub, pred) . This whole pipeline
  is only about subclass rels, so including it is redundant.
  2. reports/sync-subClassOf.confirmed.tsv updates
@@ -56,8 +57,9 @@ SRC_DIR = HERE.parent
 PROJECT_ROOT = SRC_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 from src.scripts.sync_subclassof_collate_direct_in_mondo_only import collate_direct_in_mondo_only
+from src.scripts.sync_subclassof_collate_self_parentage import collate_self_parentage
 from src.scripts.sync_subclassof_config import EX_DEFAULTS, IN_MONDO_ONLY_FILE_STEM, METADATA_DIR, REPORTS_DIR, \
-    ROBOT_SUBHEADER, TMP_DIR
+    ROBOT_SUBHEADER, TMP_DIR, SELF_PARENTAGE_DEFAULT_FILE_STEM
 from src.scripts.utils import CACHE_DIR, MONDO_PREFIX_MAP, PREFIX_MAP, get_owned_prefix_map
 
 
@@ -148,7 +150,7 @@ def _ancestors(
         # If Mondo, use cache if mondo_24hr_cache=True and cache is indeed <24hrs
         # - either getmtime() for modified or getctime() for created should be sufficient
         if (ontology_name.lower() == 'mondo' and mondo_24hr_cache and
-            os.path.exists(cache_path) and ((time() - os.path.getmtime(cache_path)) / (60 * 60) < 24)):
+                os.path.exists(cache_path) and ((time() - os.path.getmtime(cache_path)) / (60 * 60) < 24)):
             return pickle.load(open(cache_path, 'rb'))
 
         # Execute
@@ -210,7 +212,8 @@ def sync_subclassof(
     mondo_db_path: str = EX_DEFAULTS['mondo_db_path'], mondo_ingest_db_path: str = EX_DEFAULTS['mondo_ingest_db_path'],
     mondo_mappings_path: str = EX_DEFAULTS['mondo_mappings_path'],
     onto_config_path: str = EX_DEFAULTS['onto_config_path'],
-    outpath_direct_in_mondo_only: str = EX_DEFAULTS['outpath_in_mondo_only'], use_cache=False, verbose=True
+    outpath_direct_in_mondo_only: str = EX_DEFAULTS['outpath_direct_in_mondo_only'],
+    outpath_self_parentage: str = EX_DEFAULTS['outpath_self_parentage'], use_cache=False, verbose=True
 ):
     """Run"""
     source_name = os.path.basename(outpath_added).split('.')[0]
@@ -308,15 +311,16 @@ def sync_subclassof(
     #  after. It could be that I invalidated the cache somehow without realizing it. Rerunning cache fixed it though.
     missing_ancestor_rels = rels_indirect_mondo_mondo.union(rels_direct_mondo_mondo).difference(ancestors_mondo_mondo)
     if missing_ancestor_rels:
-        rels_for_printing =  [rel for rel in list(missing_ancestor_rels)[:5]]
-        # TODO: temp:
         raise ValueError(
+            'FATAL BUILD ERROR: Ancestors discrepancy\n'
             'Detected error in consistency of sets of terms gathered from Mondo.\n'
             f'\n 1. Mondo SCR ancestors: {len(ancestors_mondo_mondo)}'
             f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
             f'\n 3. Mondo indirect SCR relationships: {len(rels_indirect_mondo_mondo)}'
-            f'\n Intersection (Top 5): {rels_for_printing}'
-            f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}')
+            f'\n Intersection (Top 5): {[rel for rel in list(missing_ancestor_rels)[:5]]}'
+            f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}'
+            '\nSee also: https://github.com/monarch-initiative/mondo-ingest/issues/525'
+            '\n\nExiting.')
 
     # Determine hierarchy diferences -----------------------------------------------------------------------------------
     # todo: remove unused, commented out vars? (they were created in anticipation of possible cases)
@@ -402,9 +406,20 @@ def sync_subclassof(
     # - obsolete cases
     obsoletes = (df3['subject_mondo_label'].str.startswith('obsolete') |
                  df3['object_mondo_label'].str.startswith('obsolete'))
+    # todo: sort_values: from here and below for this section, should remove; should not be necessary
     df3_obs = df3[obsoletes].sort_values(common_sort_cols)
-    # - non-obsolete cases
+    # - filter: non-obsolete cases
     df3 = df3[~obsoletes].sort_values(common_sort_cols)
+    # - self-parentage / proxy merges
+    self_parentage_cases = df3['subject_mondo_id'] == df3['object_mondo_id']
+    df3_self_parentage = df3[self_parentage_cases]
+    sp_err = f'Cases of self-parentage found for source {source_name}. This is a low urgency warning, as these are ' \
+             f'with almost 100% certainty caused by legal Mondo proxy merges.'
+    if len(df3_self_parentage) > 0:
+        logging.warning(sp_err)
+        df3_self_parentage.to_csv(outpath_self_parentage, sep='\t', index=False)
+    # - filter: non-self parentage cases
+    df3 = df3[~self_parentage_cases].sort_values(common_sort_cols)
     # - save
     df3_obs = pd.concat([pd.DataFrame(subheader), df3_obs])
     df3_obs.to_csv(outpath_added_obsolete, sep='\t', index=False)
@@ -456,9 +471,13 @@ def cli():  # todo: #remove-temp-defaults
              'are confirmed to also exist in the source.')
     parser.add_argument(
         '-M', '--outpath-direct-in-mondo-only', required=False,
-        default=EX_DEFAULTS['outpath_in_mondo_only'],
+        default=EX_DEFAULTS['outpath_direct_in_mondo_only'],
         help='Path to create file for relations for given ontology where direct subclass relation exists only in Mondo'
              ' and not in the source.')
+    parser.add_argument(
+        '-P', '--outpath-self-parentage', required=False,
+        default=EX_DEFAULTS['outpath_self_parentage'],
+        help='Path to for cases where mapped Mondo IDs are subclasses of themselves. Likely cases of proxy merges.')
     parser.add_argument(
         '-o', '--onto-config-path', required=False, default=EX_DEFAULTS['onto_config_path'],
         help='Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
@@ -483,7 +502,7 @@ def cli():  # todo: #remove-temp-defaults
 
 def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
     """Run with default settings"""
-    ontologies = ['ordo', 'doid', 'icd10cm', 'icd10who', 'omim', 'ncit']
+    ontologies = ['ordo', 'doid', 'icd10cm', 'icd10who', 'icd11foundation', 'omim', 'ncit']
     for name in ontologies:
         sync_subclassof(**{
             'outpath_added': str(REPORTS_DIR / f'{name}.subclass.added.robot.tsv'),
@@ -493,11 +512,13 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
             'mondo_ingest_db_path': str(TMP_DIR / 'mondo-ingest.db'),
             'mondo_mappings_path': str(TMP_DIR / 'mondo.sssom.tsv'),
             'outpath_direct_in_mondo_only': str(REPORTS_DIR / f'{name}{IN_MONDO_ONLY_FILE_STEM}'),
+            'outpath_self_parentage': str(TMP_DIR / f'{name}{SELF_PARENTAGE_DEFAULT_FILE_STEM}'),
             'use_cache': use_cache
         })
     collate_direct_in_mondo_only()
+    collate_self_parentage()
 
 
 if __name__ == '__main__':
     cli()
-    #run_defaults()  # TODO temp
+    # run_defaults()  # todo: #remove-temp-defaults

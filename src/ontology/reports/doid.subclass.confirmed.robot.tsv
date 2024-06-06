@@ -93,7 +93,6 @@ MONDO:0000408	fetal alcohol spectrum disorder	MONDO:0000592	DOID:0050696	DOID:00
 MONDO:0000411	electroclinical syndrome	MONDO:0005027	DOID:0050701	DOID:1826	epilepsy
 MONDO:0000412	neonatal period electroclinical syndrome	MONDO:0000411	DOID:0050702	DOID:0050701	electroclinical syndrome
 MONDO:0000413	infancy electroclinical syndrome	MONDO:0000411	DOID:0050703	DOID:0050701	electroclinical syndrome
-MONDO:0000417	early onset absence epilepsy	MONDO:0000414	DOID:0050708	DOID:0050704	childhood electroclinical syndrome
 MONDO:0000424	inborn vitamin B12 deficiency	MONDO:0005528	DOID:0050731	DOID:0050718	inborn vitamin metabolic disorder
 MONDO:0000426	autosomal dominant disease	MONDO:0000429	DOID:0050736	DOID:0050739	autosomal genetic disease
 MONDO:0000430	mature T-cell and NK-cell non-Hodgkin lymphoma	MONDO:0015760	DOID:0050743	DOID:0081312	T-cell non-Hodgkin lymphoma
@@ -875,6 +874,7 @@ MONDO:0001601	Plasmodium ovale malaria	MONDO:0005136	DOID:12919	DOID:12365	malar
 MONDO:0001602	labia minora carcinoma	MONDO:0005215	DOID:1293	DOID:1294	vulvar carcinoma
 MONDO:0001603	paralytic lagophthalmos	MONDO:0001604	DOID:12958	DOID:12959	lagophthalmos
 MONDO:0001604	lagophthalmos	MONDO:0003382	DOID:12959	DOID:530	eyelid disorder
+MONDO:0001606	central nervous system leukemia	MONDO:0003641	DOID:12969	DOID:5772	central nervous system hematopoietic neoplasm
 MONDO:0001607	intrapelvic lymph node leukemic reticuloendotheliosis	MONDO:0001082	DOID:12972	DOID:10619	lymph node cancer
 MONDO:0001609	agranulocytosis	MONDO:0003785	DOID:12987	DOID:615	leukopenia
 MONDO:0001610	acute dacryocystitis	MONDO:0004926	DOID:12996	DOID:9938	dacryocystitis
@@ -1180,11 +1180,9 @@ MONDO:0001994	sphenoidal sinus cancer	MONDO:0000380	DOID:14546	DOID:0050619	para
 MONDO:0001995	sphenoid sinus squamous cell carcinoma	MONDO:0001994	DOID:14547	DOID:14546	sphenoidal sinus cancer
 MONDO:0001996	steroid-induced glaucoma - borderline	MONDO:0004744	DOID:14548	DOID:9283	borderline glaucoma
 MONDO:0001997	root resorption	MONDO:0001670	DOID:14550	DOID:13240	tooth resorption
-MONDO:0001998	Foster-Kennedy syndrome	MONDO:0002003	DOID:14555	DOID:146	papilledema
 MONDO:0001999	primary pulmonary hypertension	MONDO:0001493	DOID:14557	DOID:12326	chronic pulmonary heart disease
 MONDO:0002000	anaerobic meningitis	MONDO:0006670	DOID:14559	DOID:9470	bacterial meningitis
 MONDO:0002002	postsurgical hypothyroidism	MONDO:0005420	DOID:1458	DOID:1459	hypothyroidism
-MONDO:0002003	papilledema	MONDO:0002135	DOID:146	DOID:1891	optic nerve disorder
 MONDO:0002004	atheroembolism of kidney	MONDO:0005240	DOID:1460	DOID:557	kidney disorder
 MONDO:0002004	atheroembolism of kidney	MONDO:0005568	DOID:1460	DOID:1461	cholesterol embolism
 MONDO:0002006	serous labyrinthitis	MONDO:0002008	DOID:1467	DOID:1468	labyrinthitis
@@ -1416,6 +1414,7 @@ MONDO:0002329	testicular disorder	MONDO:0003150	DOID:2519	DOID:48	male reproduct
 MONDO:0002330	alcoholic psychosis	MONDO:0002326	DOID:252	DOID:251	alcohol-induced mental disorder
 MONDO:0002332	splenic disorder	MONDO:0005833	DOID:2529	DOID:75	lymphatic system disorder
 MONDO:0002333	splenic abscess	MONDO:0002332	DOID:2530	DOID:2529	splenic disorder
+MONDO:0002334	hematopoietic and lymphoid system neoplasm	MONDO:0005570	DOID:2531	DOID:74	hematologic disorder
 MONDO:0002337	intra-abdominal hemangioma	MONDO:0006500	DOID:254	DOID:255	hemangioma
 MONDO:0002338	extratemporal epilepsy	MONDO:0005027	DOID:2544	DOID:1826	epilepsy
 MONDO:0002340	tactile epilepsy	MONDO:0017768	DOID:2550	DOID:2548	reflex epilepsy
@@ -5215,6 +5214,7 @@ MONDO:0010818	retinitis pigmentosa 12	MONDO:0019200	DOID:0110358	DOID:10584	reti
 MONDO:0010820	autosomal recessive juvenile Parkinson disease 2	MONDO:0017279	DOID:0060368	DOID:0060894	young-onset Parkinson disease
 MONDO:0010822	Warburg micro syndrome 1	MONDO:0016649	DOID:0110716	DOID:0060237	Warburg micro syndrome
 MONDO:0010823	rhizomelic chondrodysplasia punctata type 3	MONDO:0015776	DOID:0110853	DOID:2580	rhizomelic chondrodysplasia punctata
+MONDO:0010826	childhood absence epilepsy	MONDO:0000414	DOID:0050708	DOID:0050704	childhood electroclinical syndrome
 MONDO:0010826	childhood absence epilepsy	MONDO:0000414	DOID:1825	DOID:0050704	childhood electroclinical syndrome
 MONDO:0010827	retinitis pigmentosa 14	MONDO:0019200	DOID:0110381	DOID:10584	retinitis pigmentosa
 MONDO:0010828	retinitis pigmentosa 11	MONDO:0019200	DOID:0110408	DOID:10584	retinitis pigmentosa
@@ -5888,6 +5888,7 @@ MONDO:0012918	primary ciliary dyskinesia 10	MONDO:0016575	DOID:0110612	DOID:9562
 MONDO:0012923	congenital generalized lipodystrophy type 3	MONDO:0006536	DOID:0111137	DOID:0050585	congenital generalized lipodystrophy
 MONDO:0012924	Diamond-Blackfan anemia 4	MONDO:0015253	DOID:0111890	DOID:1339	Diamond-Blackfan anemia
 MONDO:0012925	Diamond-Blackfan anemia 5	MONDO:0015253	DOID:0111883	DOID:1339	Diamond-Blackfan anemia
+MONDO:0012927	chromosome 1q41-q42 deletion syndrome	MONDO:0016296	DOID:0060412	DOID:4621	holoprosencephaly
 MONDO:0012929	Compton-North congenital myopathy	MONDO:0019952	DOID:0080101	DOID:0081337	congenital myopathy
 MONDO:0012937	Diamond-Blackfan anemia 6	MONDO:0015253	DOID:0111879	DOID:1339	Diamond-Blackfan anemia
 MONDO:0012938	Diamond-Blackfan anemia 7	MONDO:0015253	DOID:0111878	DOID:1339	Diamond-Blackfan anemia
@@ -6564,7 +6565,6 @@ MONDO:0014650	familial temporal lobe epilepsy 8	MONDO:0005115	DOID:0060754	DOID:
 MONDO:0014651	acrofacial dysostosis Cincinnati type	MONDO:0018237	DOID:0060353	DOID:0060379	acrofacial dysostosis
 MONDO:0014652	exudative vitreoretinopathy 6	MONDO:0019516	DOID:0111410	DOID:0050535	exudative vitreoretinopathy
 MONDO:0014653	retinitis pigmentosa 72	MONDO:0019200	DOID:0110395	DOID:10584	retinitis pigmentosa
-MONDO:0014654	Ullrich congenital muscular dystrophy 2	MONDO:0000355	DOID:0060944	DOID:0050558	Ullrich congenital muscular dystrophy
 MONDO:0014657	primary ciliary dyskinesia 32	MONDO:0016575	DOID:0110603	DOID:9562	primary ciliary dyskinesia
 MONDO:0014658	severe achondroplasia-developmental delay-acanthosis nigricans syndrome	MONDO:0000426	DOID:0111158	DOID:0050736	autosomal dominant disease
 MONDO:0014660	microcephaly 15, primary, autosomal recessive	MONDO:0016660	DOID:0070277	DOID:0070296	autosomal recessive primary microcephaly
