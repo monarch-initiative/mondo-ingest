@@ -555,35 +555,44 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 ##################################
 ## Externally managed content ####
 ##################################
+# General
+update-externally-managed-content: external-content-nord external-content-nando external-content-ordo external-content-omim
 
 EXTERNAL_CONTENT_DIR=external
-
-$(TMPDIR)/nord.tsv:
-	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
 
 $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 	$(ROBOT) template \
 		--template $< \
 		--prefix "orcid: https://orcid.org/" \
+		--input $(IMPORTDIR)/ro_import.owl \
 	 	annotate \
 				--ontology-iri $(URIBASE)/mondo/external/nord.robot.owl \
 				--version-iri $(URIBASE)/mondo/external/$(TODAY)/nord.robot.owl \
 				-o $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/%.robot.owl
 
+# NORD
+.PHONY: external-content-nord
+external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+
+$(TMPDIR)/nord.tsv:
+	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
+
 $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/add-robot-template-header.py $^ > $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv
 
-.PHONY: external-content-nord
-external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+# ORDO
+.PHONY: external-content-ordo
+external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
 
 tmp/ordo-subsets.tsv:
 	$(MAKE) component-download-ordo.owl
 	$(ROBOT) query -i $(TMPDIR)/component-download-ordo.owl.owl --query ../sparql/select-ordo-subsets.sparql $@
 
 $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python3 $(SCRIPTSDIR)/ordo_subsets.py \
 	--mondo-mappings-path tmp/mondo.sssom.tsv \
 	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
@@ -591,8 +600,18 @@ $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.s
 	--outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
 
-.PHONY: external-content-ordo
-external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
+# OMIM
+$(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv:
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
+	wget "https://github.com/monarch-initiative/omim/releases/latest/download/mondo-omim-genes.robot.tsv" -O $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv
+
+.PHONY: external-content-omim
+external-content-omim: $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.owl $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv
+
+# NanDO
+.PHONY: external-content-nando
+external-content-nando: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.owl
 
 $(MAPPINGSDIR)/mondo-nando.sssom.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
 	sssom invert $(MAPPINGSDIR)/nando-mondo.sssom.tsv --no-merge-inverted -o $@
@@ -602,12 +621,6 @@ $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sss
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/sssom_to_robot_template.py --inpath $< --outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
-
-.PHONY: external-content-nord external-content-nando
-external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
-external-content-nando: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.owl
-
-update-externally-managed-content: external-content-nord external-content-nando external-content-ordo
 
 #############################
 ######### Analysis ##########
