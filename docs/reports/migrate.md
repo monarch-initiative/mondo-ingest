@@ -4,7 +4,7 @@
 | [GARD](./migrate_gard.md)                       | 9,370  |
 | [DOID](./migrate_doid.md)                       | 34     |
 | [NCIT](./migrate_ncit.md)                       | 2,209  |
-| [OMIM](./migrate_omim.md)                       | 13     |
+| [OMIM](./migrate_omim.md)                       | 16     |
 | [ICD11FOUNDATION](./migrate_icd11foundation.md) | 12,409 |
 | [ICD10WHO](./migrate_icd10who.md)               | 119    |
 | [ORDO](./migrate_ordo.md)                       | 10     |
