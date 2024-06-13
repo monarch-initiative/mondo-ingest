@@ -34,6 +34,7 @@
 | MONDO:0012414 | Orphanet:228337      | MONDO:equivalentObsolete |
 | MONDO:0012588 | Orphanet:228366      | MONDO:equivalentObsolete |
 | MONDO:0013297 | Orphanet:238755      | MONDO:equivalentObsolete |
+| MONDO:0013621 | Orphanet:306507      | MONDO:equivalentObsolete |
 | MONDO:0013866 | Orphanet:314629      | MONDO:equivalentObsolete |
 | MONDO:0014147 | Orphanet:352709      | MONDO:equivalentObsolete |
 | MONDO:0014788 | Orphanet:466801      | MONDO:equivalentObsolete |
