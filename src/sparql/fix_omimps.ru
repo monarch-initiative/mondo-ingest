@@ -24,7 +24,7 @@ WHERE
            owl:annotatedTarget ?value ;
            ?p ?v .
   }
-  FILTER(STRSTARTS(str(?value), "OMIM:PS"))
+  FILTER(STRSTARTS(str(?value), "MIM:PS"))
   FILTER (isIRI(?entity))
-  BIND(REPLACE(?value, "OMIM:PS", "OMIMPS:", "i") AS ?value_fixed)
+  BIND(REPLACE(?value, "MIM:PS", "MIMPS:", "i") AS ?value_fixed)
 }
