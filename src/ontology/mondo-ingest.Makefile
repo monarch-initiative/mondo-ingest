@@ -107,6 +107,7 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-dow
 		remove -T $(TMPDIR)/doid_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		query \
 			--update ../sparql/fix_omimps.ru \
+			--update ../sparql/fix_mim.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/rm_xref_by_prefix.ru \
 			--update ../sparql/fix_make_omim_exact.ru \
