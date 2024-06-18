@@ -2,30 +2,20 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/omim_mapping_status.tsv)
 
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id    | subject_label                                  |
-|:--------------|:-----------------------------------------------|
-| OMIMPS:105210 | Amyloidosis, hereditary systemic               |
-| OMIMPS:604571 | MHC class I deficiency                         |
-| OMIMPS:209920 | MHC class II deficiency                        |
-| OMIMPS:619539 | Neuroocular syndrome                           |
-| OMIM:620657   | amyloidosis, hereditary systemic 3             |
-| OMIM:620658   | amyloidosis, hereditary systemic 5             |
-| OMIM:620659   | amyloidosis, hereditary systemic 6             |
-| OMIM:620830   | auroneurodental syndrome                       |
-| OMIM:620806   | developmental and epileptic encephalopathy 116 |
-| OMIM:620820   | el hayek-chahrour neurodevelopmental syndrome  |
-| OMIM:620825   | immunodeficiency 119                           |
-| OMIM:620836   | immunodeficiency 120                           |
-| OMIM:500017   | leigh syndrome, mitochondrial                  |
-| OMIM:620813   | mhc class 1 deficiency 2                       |
-| OMIM:620814   | mhc class 1 deficiency 3                       |
-| OMIM:620815   | mhc class 2 deficiency 2                       |
-| OMIM:620816   | mhc class 2 deficiency 3                       |
-| OMIM:620817   | mhc class 2 deficiency 4                       |
-| OMIM:620818   | mhc class 2 deficiency 5                       |
-| OMIM:620840   | premature ovarian failure 24                   |
-| OMIM:620819   | rothmund-thomson syndrome, type 4              |
-| OMIM:620838   | spermatogenic failure 91                       |
-| OMIM:620848   | spermatogenic failure 92                       |
-| OMIM:620849   | spermatogenic failure 93                       |
-| OMIM:301119   | spermatogenic failure, x-linked, 8             |
+| subject_id   | subject_label                              |
+|:-------------|:-------------------------------------------|
+| OMIM:105210  | amyloidosis, hereditary systemic 1         |
+| OMIM:620657  | amyloidosis, hereditary systemic 3         |
+| OMIM:620658  | amyloidosis, hereditary systemic 5         |
+| OMIM:620659  | amyloidosis, hereditary systemic 6         |
+| OMIM:620807  | immunodeficiency 121 with autoinflammation |
+| OMIM:604571  | mhc class 1 deficiency 1                   |
+| OMIM:620813  | mhc class 1 deficiency 2                   |
+| OMIM:620814  | mhc class 1 deficiency 3                   |
+| OMIM:209920  | mhc class 2 deficiency 1                   |
+| OMIM:620815  | mhc class 2 deficiency 2                   |
+| OMIM:620816  | mhc class 2 deficiency 3                   |
+| OMIM:620817  | mhc class 2 deficiency 4                   |
+| OMIM:620818  | mhc class 2 deficiency 5                   |
+| OMIM:619539  | neuroocular syndrome 1                     |
+| OMIM:620850  | spermatogenic failure 94                   |
