@@ -558,12 +558,8 @@ slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
 #############################
 ###### Synchronization ######
 #############################
-# TODO: Will this cause a conflict w/ the 'sync' phony goal?
-sync/:
-	mkdir -p $@
-
 .PHONY: sync
-sync: sync-subclassof
+sync: sync-subclassof sync-synonyms
 
 .PHONY: sync-subclassof
 sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
@@ -597,34 +593,17 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml
 
-# TODO: @joeflack4: I originally tagged nico on this, but I wonder if this part is necessary still. we now have %.db
-tmp/mondo-ingest.db:
-	touch tmp/mondo-ingest.db
-tmp/mondo-ingest-without-excluded.db: tmp/mondo-ingest.db
-	cp $< $@
+.PHONY: sync-synonyms
+sync-synonyms: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms-robot.template.tsv)
 
-# TODO: rename the output since this is just for synonyms
-# todo: `pip install` stuff is temporarily here until we come up with a fix. otherwise docker won't work
-# TODO: is this pip stuff still necessary?
-sync/mondo-sync-%.owl: tmp/mondo.owl tmp/mondo-ingest-without-excluded.db $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.owl | sync/
-	pip install --upgrade -r $(RELEASEDIR)/requirements-unlocked.txt
+$(REPORTDIR)/%-synonyms-added-robot.template.tsv $(REPORTDIR)/%-synonyms-updated-robot.template.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo.db tmp/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
-	--mondo-path tmp/mondo.owl \
-	--mondo-sans-exclusions-path tmp/mondo-ingest-without-excluded.db \
-	--sssom-map-path $(TMPDIR)/mondo.sssom.tsv \
-	--ontology-path $(COMPONENTSDIR)/$*.owl \
+	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
+	--ontology-db-path $(COMPONENTSDIR)/$*.db \
+	--mondo-db-path $(TMPDIR)/mondo.db \
 	--onto-config-path metadata/$*.yml \
-	--outpath-synonyms sync/synonyms-$*.robot.template.tsv \
-	--outpath $@
-
-# TODO: merge all `synonyms-%.robot.template.tsv`. Look at $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv
-synonyms.robot.template.tsv:
-	echo
-
-sync-%:
-	$(MAKE) sync/$*.tsv
-
-sync-all: sync-omim sync-doid sync-ordo sync-icd10cm sync-icd10who sync-ncit
+	--outpath-added $(REPORTDIR)/$*.synonyms.added.robot.tsv \
+	--outpath-updated $(REPORTDIR)/$*.synonyms.updated.robot.tsv
 
 ##################################
 ## Externally managed content ####
