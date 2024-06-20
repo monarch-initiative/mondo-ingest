@@ -1,132 +1,88 @@
-"""Ontology synchronization
-# Resources
-- GitHub issue: https://github.com/monarch-initiative/mondo-ingest/issues/87
+"""Whenever new synonym or label in upstream source, want to add it to Mondo. If the label is not the Mondo label or
+existing synonym, it will become a synonym.
 """
-import os
 from argparse import ArgumentParser
+from pathlib import Path
+from typing import Union, List, Tuple, Dict
 
 import pandas as pd
-from oaklib.implementations import ProntoImplementation
-
-# Vars
-SCRIPTS_DIR = os.path.dirname(os.path.realpath(__file__))
-PROJECT_DIR = os.path.join(SCRIPTS_DIR, '..', '..')
-ONTOLOGY_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology')
-# REPORTS_DIR = os.path.join(ONTOLOGY_DIR, 'reports')
-# METADATA_DIR = os.path.join(ONTOLOGY_DIR, 'metadata')
-# CONFIG_DIR = os.path.join(ONTOLOGY_DIR, 'config')
-SYNC_DIR = os.path.join(ONTOLOGY_DIR, 'sync')
-TEMP_DIR = os.path.join(ONTOLOGY_DIR, 'tmp')
-CACHE_DIR = TEMP_DIR
+from oaklib import get_adapter
+from oaklib.implementations import SqlImplementation
+from oaklib.types import CURIE, PRED_CURIE
 
 
-# TODO: these funcs obsolete
-# Functions
-# TODO: 1 func for each step. do they have sep outputs?
-def sync_subclassof_axioms():
-    """Synchronizes subClassOf axioms."""
-    pass
+# todo: reactivate if needed
+# HERE = Path(os.path.abspath(os.path.dirname(__file__)))
+# SRC_DIR = HERE.parent
+# PROJECT_ROOT = SRC_DIR.parent
+# sys.path.insert(0, str(PROJECT_ROOT))
+# from src.scripts.utils import ONTOLOGY_DIR
 
-
-def sync_xrefs():
-    """Synchronizes cross-references."""
-    pass
-
-
-def sync_definitions():
-    """Synchronizes term definitions."""
-    pass
-
-
-def sync_obsoletion():
-    """Synchronizes term obsoletions."""
-    pass
-
-
-# TODO: If synonym is not already in Mondo, add it into a sync/%-synonyms.robot.template.tsv
-def sync_synonyms(ontology: ProntoImplementation, mondo: ProntoImplementation, outpath_synonyms: str, cache=False):
-    """Whenever new synonym or label in upstream source, want to add it to Mondo. If the label is not the Mondo label or
-     existing synonym, it will become a synonym."""
-    # todo: params: ontology,mondo: Can OAK support synonyms / other needs? Or should I use sparql?
-    print()
 
 
 # TODO
-def run(
-    ontology_path: str, mondo_path: str, mondo_sans_exclusions_path: str, sssom_map_path: str, onto_config_path: str,
-    outpath_synonyms: str, outpath: str, cache=False
+def sync_synonyms(
+    ontology_db_path: Union[Path, str], mondo_db_path: Union[Path, str], mondo_mappings_path: Union[Path, str],
+    onto_config_path: Union[Path, str], outpath_added: Union[Path, str], outpath_updated: Union[Path, str]
 ):
-    """Run"""
-    # Prefixes
-    # TODO: read ontology_path (repurpose from slurp) (cache it? dk if it really saves time. can time it)
-    ontology = None
-    # TODO: read mondo_path
-    mondo = None
-    # TODO: read mondo_sans_exclusions_path (do I even need mondo.owl if using this?)
-    mondo_sans_axiom_exclusions = None
-    # TODO: read sssom_map_path
-    sssom_df = pd.DataFrame()
-    # TODO: onto_config_path: Needed?
-    # with open(config_path, 'r') as stream:
-    #     onto_config = yaml.safe_load(stream)
-    # prefix_uri_map = onto_config['base_prefix_map']
+    """Whenever new synonym or label in upstream source, want to add it to Mondo. If the label is not the Mondo label or
+     existing synonym, it will become a synonym."""
+    #     For every term in source:
+    #         For every synonym or label on term:
+    #             Add row to robot template with correct evidence (with Mondo ID of course)
+    source_db: SqlImplementation = get_adapter(ontology_db_path)
+    source_ids_all: List[CURIE] = [
+        x for x in [y for y in source_db.entities(filter_obsoletes=False)]]
+    # if any([x.startswith(y) for y in owned_prefix_map.keys()]  # todo: filter by owned_prefix_map in metadata
+    id_syns_map: Dict[CURIE, List[Tuple[PRED_CURIE, str]]] = {_id: [] for _id in source_ids_all}
+    for source_id in source_ids_all:
+        for pred, alias in sorted(source_db.alias_relationships(source_id)):
+            # todo: filter out just synonyms
+            # todo: why do some rdfs:label have None as alias? this isn't what I see in docs
+            #  https://incatools.github.io/ontology-access-kit/guide/aliases.html although i guess doesn't matter
+            id_syns_map[source_id].append((pred, alias))
+    # todo: temp
+    id_syns_map2 = {x: y for x, y in id_syns_map.items() if x.startswith('OMIM')}  # todo: filter out just synonyms
+    print()
 
-    # TODO:
-    # todo: @nico: Clarify; says 'axioms', but does this apply to xrefs, defs, obsoletions, synonyms?
-    # Algo
-    # https://github.com/monarch-initiative/mondo-ingest/issues/27
-    # 1. Remove all support from O_t in all axioms in O_s
-    # 2. Import all axioms from O_t that is not in O_s or O_reject.
-    # 3. Add support for all axioms in O_s that are in O_t.
-    # 4. Human reviewer looks at all new axioms O_s (O_t-(O_s+O_reject)).
-    #    - If the axiom is bad, add the axiom to (O_reject)
-    # 5. Repeat process (start from 1) until all axioms are good (if all bad axioms are removed in the first run, just
-    #    one second run is needed).
-    # 6. Optionally, human reviewer looks at all axioms in O_t that now lost all support.
-    #    - If the axiom is bad, add the axiom to (O_reject)
-    # 7. (reduce is not run) (kgcl/sssom cross-product)
-    sync_synonyms(ontology=ontology, mondo=mondo, outpath_synonyms=outpath_synonyms, cache=cache)  # TODO
-    sync_subclassof_axioms()  # todo
-    sync_xrefs()  # todo
-    sync_definitions()  # todo
-    sync_obsoletion()  # todo
-    print(outpath)  # todo: write update?
+    # TODO: see what Mondo has for the given
+    #  - what to do if the term isn't in Mondo? Just skip? I think so
+    # Check Mondo
+    # 1. Get exact matched Mondo IDs using mondo.sssom.tsv
+    # 2. Query Mondo .db for current synonym info on that term
+    print()
 
 
+
+# todo: #1 make sure that the help text, short flags, etc is consistent etween files
 def cli():
     """Command line interface."""
     package_description = \
         'Ontology synchronization pipeline. Automates integration of updates from other ontologies into Mondo.'
     parser = ArgumentParser(description=package_description)
+    # TODO: Which way is better? (a) mondo-ingest.db, as subclass sync was doing? or (b) the individual source's.db?
+    #  I think 'b' is better but IDR why I set up subclass sync w/ 'a'.
     parser.add_argument(
-        '-O', '--ontology-path', required=True,
-        help='Path to the ontology file to sync from into Mondo.')
+        '-d', '--ontology-db-path', required=False,
+        help='Path to SemanticSQL sqlite `.db` file for the given source ontology.')
     parser.add_argument(
-        '-m', '--mondo-path', required=True,
-        help='Path to `mondo.owl`.')
-    parser.add_argument(  # todo: change name to mondo-sans-axiom-exclusions-path? If so: update makefile, debug configs
-        '-e', '--mondo-sans-exclusions-path', required=True,
-        help='Path to a copy of Mondo that excludes certain axioms.')
+        '-D', '--mondo-db-path', required=False,
+        help='Path to SemanticSQL sqlite `mondo.db`.')
     parser.add_argument(
-        '-s', '--sssom-map-path', required=True,
+        '-s', '--mondo-mappings-path', required=True,  # TODO: Is this arg needed?
         help='Path to file containing all known Mondo mappings, in SSSOM format.')
-    # TODO: Is this needed?
     parser.add_argument(
-        '-c', '--onto-config-path', required=True,
+        '-c', '--onto-config-path', required=True,  # TODO: Is this arg needed?
         help='Path to a config `.yml` for the ontology which contains a `base_prefix_map` which contains a '
              'list of prefixes owned by the ontology. Used to filter out terms.')
     parser.add_argument(
-        '-os', '--outpath-synonyms', required=True,
-        help='Path to robot template TSV to create whicih will contain synonyms that aren\'t yet integrated into Mondo '
+        '-a', '--outpath-added', required=True,
+        help='Path to robot template TSV to create which will contain synonyms that aren\'t yet integrated into Mondo '
              'for given ontoogy.')
-    # TODO: will this be the same as --mondo-path?
     parser.add_argument(
-        '-o', '--outpath', required=True,
-        help='Path to variation of `mondo.owl` to create/update.')
-    parser.add_argument(
-        '-C', '--cache', required=False,
-        help='Cache intermediaries? E.g. results of queries for a given ontology.')
-    run(**vars(parser.parse_args()))
+        '-u', '--outpath-updated', required=True,
+        help='Path to robot template TSV to create which will contain synonyms changes.')
+    sync_synonyms(**vars(parser.parse_args()))
 
 
 # Execution
