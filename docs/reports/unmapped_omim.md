@@ -2,20 +2,5 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/omim_mapping_status.tsv)
 
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id   | subject_label                              |
-|:-------------|:-------------------------------------------|
-| OMIM:105210  | amyloidosis, hereditary systemic 1         |
-| OMIM:620657  | amyloidosis, hereditary systemic 3         |
-| OMIM:620658  | amyloidosis, hereditary systemic 5         |
-| OMIM:620659  | amyloidosis, hereditary systemic 6         |
-| OMIM:620807  | immunodeficiency 121 with autoinflammation |
-| OMIM:604571  | mhc class 1 deficiency 1                   |
-| OMIM:620813  | mhc class 1 deficiency 2                   |
-| OMIM:620814  | mhc class 1 deficiency 3                   |
-| OMIM:209920  | mhc class 2 deficiency 1                   |
-| OMIM:620815  | mhc class 2 deficiency 2                   |
-| OMIM:620816  | mhc class 2 deficiency 3                   |
-| OMIM:620817  | mhc class 2 deficiency 4                   |
-| OMIM:620818  | mhc class 2 deficiency 5                   |
-| OMIM:619539  | neuroocular syndrome 1                     |
-| OMIM:620850  | spermatogenic failure 94                   |
+| subject_id   | subject_label   |
+|--------------|-----------------|
