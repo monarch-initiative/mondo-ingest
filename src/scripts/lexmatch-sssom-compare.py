@@ -296,6 +296,14 @@ def get_unmapped_df(
     ]
 
     new_df = pd.concat([unmapped_lex_df, unmapped_mondo_df], axis=0)
+    if 'confidence' not in new_df.columns:
+        new_df['confidence'] = 0.5
+    else:
+        new_df['confidence'] = pd.to_numeric(new_df['confidence'], errors='coerce')  # Convert to numeric, invalid parsing will be NaN
+        new_df['confidence'] = new_df['confidence'].apply(lambda x: x if 0 <= x <= 1 else 0.5)  # Replace out of range values with default
+        new_df['confidence'].fillna(0.5, inplace=True)  # Replace NaN with default value
+
+    new_df.to_csv("check_me_out.sssom.tsv", sep="\t")
     filtered_new_df = filter_redundant_rows(new_df)
     return filtered_new_df
 
