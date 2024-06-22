@@ -442,7 +442,7 @@ lexical-matches: $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 #### Lexmatch-SSSOM-compare #######
 ###################################
 # This goal also creates, for all sources: lexmatch/unmapped_%_lex.tsv, lexmatch/unmapped_%_lex_exact.tsv
-lexmatch/README.md: #$(SCRIPTSDIR)/lexmatch-sssom-compare.py $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv $(ALL_EXCLUSION_FILES)
+lexmatch/README.md: $(SCRIPTSDIR)/lexmatch-sssom-compare.py $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv $(ALL_EXCLUSION_FILES)
 	find lexmatch/ -name "*.tsv" -type f -delete
 	python $(SCRIPTSDIR)/lexmatch-sssom-compare.py extract_unmapped_matches $(ALL_COMPONENT_IDS) \
 		--matches $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv \
