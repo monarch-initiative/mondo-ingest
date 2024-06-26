@@ -4,7 +4,7 @@ MONDO:0001516	spinal muscular atrophy	skos:closeMatch	DOID:0060160	childhood spi
 MONDO:0004037	retinal edema	skos:closeMatch	DOID:146	papilledema	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010211	LEXMATCH
 MONDO:0005641	aleutian mink disease	skos:closeMatch	DOID:2934	aleutian mink disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000453	LEXMATCH
 MONDO:0005641	aleutian mink disease	skos:closeMatch	DOID:2934	aleutian mink disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	mesh:d000453	LEXMATCH
-MONDO:0005641	aleutian mink disease	skos:closeMatch	DOID:2934	aleutian mink disease	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	aleutian disease	LEXMATCH
+MONDO:0005641	aleutian mink disease	skos:closeMatch	DOID:2934	aleutian mink disease	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	aleutian disorder	LEXMATCH
 MONDO:0005641	aleutian mink disease	skos:closeMatch	DOID:2934	aleutian mink disease	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	oio:hasDbXref	mesh:d000453	LEXMATCH
 MONDO:0005641	aleutian mink disease	skos:closeMatch	DOID:2934	aleutian mink disease	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:exactMatch	mesh:d000453	LEXMATCH
 MONDO:0005676	borna disease	skos:closeMatch	DOID:5154	borna disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001890	LEXMATCH
@@ -56,14 +56,14 @@ MONDO:0010172	VACTERL with hydrocephalus	skos:closeMatch	DOID:14679	VACTERL asso
 MONDO:0010172	VACTERL with hydrocephalus	skos:closeMatch	DOID:14679	VACTERL association	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:276950	LEXMATCH
 MONDO:0010225	Dent disease type 1	skos:closeMatch	DOID:0081453	Dent disease 1	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:300009	LEXMATCH
 MONDO:0010225	Dent disease type 1	skos:closeMatch	DOID:0081453	Dent disease 1	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	omim:300009	LEXMATCH
-MONDO:0010225	Dent disease type 1	skos:closeMatch	DOID:0081453	Dent disease 1	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	dent disease 1	LEXMATCH
+MONDO:0010225	Dent disease type 1	skos:closeMatch	DOID:0081453	Dent disease 1	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	dent disorder type 1	LEXMATCH
 MONDO:0010225	Dent disease type 1	skos:closeMatch	DOID:0081453	Dent disease 1	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:300009	LEXMATCH
 MONDO:0010225	Dent disease type 1	skos:closeMatch	DOID:0081453	Dent disease 1	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:300009	LEXMATCH
 MONDO:0010225	Dent disease type 1	skos:closeMatch	DOID:0081453	Dent disease 1	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:300009	LEXMATCH
 MONDO:0010359	Dent disease type 2	skos:closeMatch	DOID:0081454	Dent disease 2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:c564487	LEXMATCH
 MONDO:0010359	Dent disease type 2	skos:closeMatch	DOID:0081454	Dent disease 2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:300555	LEXMATCH
 MONDO:0010359	Dent disease type 2	skos:closeMatch	DOID:0081454	Dent disease 2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	omim:300555	LEXMATCH
-MONDO:0010359	Dent disease type 2	skos:closeMatch	DOID:0081454	Dent disease 2	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	dent disease 2	LEXMATCH
+MONDO:0010359	Dent disease type 2	skos:closeMatch	DOID:0081454	Dent disease 2	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	dent disorder type 2	LEXMATCH
 MONDO:0010359	Dent disease type 2	skos:closeMatch	DOID:0081454	Dent disease 2	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:c564487	LEXMATCH
 MONDO:0010359	Dent disease type 2	skos:closeMatch	DOID:0081454	Dent disease 2	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:300555	LEXMATCH
 MONDO:0010359	Dent disease type 2	skos:closeMatch	DOID:0081454	Dent disease 2	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:300555	LEXMATCH
@@ -91,7 +91,7 @@ MONDO:0014563	mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency	skos:cl
 MONDO:0014563	mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency	skos:closeMatch	DOID:0070540	mitochondrial short-chain enoyl-CoA hydratase 1 deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:616277	LEXMATCH
 MONDO:0014563	mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency	skos:closeMatch	DOID:0070540	mitochondrial short-chain enoyl-CoA hydratase 1 deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	gard:13019	LEXMATCH
 MONDO:0014563	mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency	skos:closeMatch	DOID:0070540	mitochondrial short-chain enoyl-CoA hydratase 1 deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	omim:616277	LEXMATCH
-MONDO:0014563	mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency	skos:closeMatch	DOID:0070540	mitochondrial short-chain enoyl-CoA hydratase 1 deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	mitochondrial short-chain enoyl-coa hydratase 1 deficiency	LEXMATCH
+MONDO:0014563	mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency	skos:closeMatch	DOID:0070540	mitochondrial short-chain enoyl-CoA hydratase 1 deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	mitochondrial short-chain enoyl-coa hydratase type 1 deficiency	LEXMATCH
 MONDO:0014563	mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency	skos:closeMatch	DOID:0070540	mitochondrial short-chain enoyl-CoA hydratase 1 deficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:616277	LEXMATCH
 MONDO:0014563	mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency	skos:closeMatch	DOID:0070540	mitochondrial short-chain enoyl-CoA hydratase 1 deficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:616277	LEXMATCH
 MONDO:0014563	mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency	skos:closeMatch	DOID:0070540	mitochondrial short-chain enoyl-CoA hydratase 1 deficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:616277	LEXMATCH
@@ -124,7 +124,7 @@ MONDO:0020796	Silver-Russell syndrome 1	skos:closeMatch	DOID:14681	Silver-Russel
 MONDO:0020796	Silver-Russell syndrome 1	skos:closeMatch	DOID:14681	Silver-Russell syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:180860	LEXMATCH
 MONDO:0026763	holoprosencephaly 13, X-linked	skos:closeMatch	DOID:0060954	Holoprosencephaly 13, X-linked	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:301043	LEXMATCH
 MONDO:0026763	holoprosencephaly 13, X-linked	skos:closeMatch	DOID:0060954	Holoprosencephaly 13, X-linked	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	omim:301043	LEXMATCH
-MONDO:0026763	holoprosencephaly 13, X-linked	skos:closeMatch	DOID:0060954	Holoprosencephaly 13, X-linked	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	holoprosencephaly 13, x-linked	LEXMATCH
+MONDO:0026763	holoprosencephaly 13, X-linked	skos:closeMatch	DOID:0060954	Holoprosencephaly 13, X-linked	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	holoprosencephaly type 13, x-linked	LEXMATCH
 MONDO:0026763	holoprosencephaly 13, X-linked	skos:closeMatch	DOID:0060954	Holoprosencephaly 13, X-linked	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:301043	LEXMATCH
 MONDO:0026763	holoprosencephaly 13, X-linked	skos:closeMatch	DOID:0060954	Holoprosencephaly 13, X-linked	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:301043	LEXMATCH
 MONDO:0026763	holoprosencephaly 13, X-linked	skos:closeMatch	DOID:0060954	Holoprosencephaly 13, X-linked	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:301043	LEXMATCH
