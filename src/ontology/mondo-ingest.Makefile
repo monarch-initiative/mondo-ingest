@@ -547,7 +547,7 @@ slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
 ###### Synchronization ######
 #############################
 .PHONY: sync
-sync: sync-subclassof
+sync: sync-subclassof sync-synonyms
 
 .PHONY: sync-subclassof
 sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
@@ -580,6 +580,18 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--mondo-ingest-db-path $(TMPDIR)/mondo-ingest.db \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml
+
+.PHONY: sync-synonyms
+sync-synonyms: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms-robot.template.tsv)
+
+$(REPORTDIR)/%-synonyms-added-robot.template.tsv $(REPORTDIR)/%-synonyms-updated-robot.template.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo.db tmp/mondo.sssom.tsv
+	python3 $(SCRIPTSDIR)/sync_synonym.py \
+	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
+	--ontology-db-path $(COMPONENTSDIR)/$*.db \
+	--mondo-db-path $(TMPDIR)/mondo.db \
+	--onto-config-path metadata/$*.yml \
+	--outpath-added $(REPORTDIR)/$*.synonyms.added.robot.tsv \
+	--outpath-updated $(REPORTDIR)/$*.synonyms.updated.robot.tsv
 
 ##################################
 ## Externally managed content ####
