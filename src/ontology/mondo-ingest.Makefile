@@ -386,7 +386,7 @@ tmp/mondo_repo_built: .FORCE
 
 
 $(TMPDIR)/mondo.owl: tmp/mondo_repo_built
-	cp $(TMPDIR)/mondo/src/ontology/mondo.οwl $@
+	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
 
  $(TMPDIR)/mondo.sssom.tsv: tmp/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
