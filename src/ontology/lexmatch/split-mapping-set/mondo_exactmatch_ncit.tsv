@@ -1,6 +1,5 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
 MONDO:0000376	respiratory system cancer	skos:exactMatch	NCIT:C4571	Malignant Respiratory System Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant respiratory system neoplasm	LEXMATCH
-MONDO:0000651	obsolete thoracic disorder	skos:exactMatch	NCIT:C35742	Thoracic Disorder	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0000930	nodular malignant melanoma	skos:exactMatch	NCIT:C205125	Nodular Melanoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	nodular melanoma	LEXMATCH
 MONDO:0001580	lacrimal duct cancer	skos:exactMatch	NCIT:C175319	Malignant Lacrimal Drainage System Neoplasm	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant lacrimal drainage system neoplasm	LEXMATCH
 MONDO:0002038	head and neck carcinoma	skos:exactMatch	NCIT:C6077	Neck Carcinoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	neck carcinoma	LEXMATCH
@@ -71,7 +70,6 @@ MONDO:0019500	extragonadal teratoma	skos:exactMatch	NCIT:C189045	Extragonadal Te
 MONDO:0019964	thymic neuroendocrine tumor	skos:exactMatch	NCIT:C6430	Thymic Neuroendocrine Tumor	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	thymic neuroendocrine tumor	LEXMATCH
 MONDO:0020078	obsolete acute myeloid leukemia with recurrent genetic anomaly	skos:exactMatch	NCIT:C7175	Acute Myeloid Leukemia with Recurrent Genetic Abnormalities	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0020541	maligant granulosa cell tumor of ovary	skos:exactMatch	NCIT:C7288	Adult Ovarian Granulosa Cell Tumor	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	adult ovarian granulosa cell tumor	LEXMATCH
-MONDO:0020591	obsolete disorder of peritoneum	skos:exactMatch	NCIT:C26848	Peritoneal Disorder	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0020595	obsolete disorder of retroperitoneum	skos:exactMatch	NCIT:C27667	Retroperitoneal Disorder	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0020804	basal cell carcinoma	skos:exactMatch	NCIT:C7586	Malignant Basal Cell Neoplasm	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0020805	benign basal cell neoplasm	skos:exactMatch	NCIT:C4743	Benign Basal Cell Neoplasm	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
@@ -82,6 +80,7 @@ MONDO:0021200	obsolete rare disease	skos:exactMatch	NCIT:C4873	Rare Disorder	sem
 MONDO:0036491	obsolete rare childhood malignant neoplasm	skos:exactMatch	NCIT:C114451	Rare Childhood Malignant Neoplasm	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0043881	obsolete acute eosinophilic leukemia	skos:exactMatch	NCIT:C26813	Acute Eosinophilic Leukemia	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0044037	livedo reticularis	skos:exactMatch	NCIT:C74524	Livedo Reticularis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	livedo reticularis	LEXMATCH
+MONDO:0056798	disorder of appendix	skos:exactMatch	NCIT:C173799	Appendix Disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	appendix disorder	LEXMATCH
 MONDO:0700092	neurodevelopmental disorder	skos:exactMatch	NCIT:C1535926		semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0700219	neoplastic meningitis	skos:exactMatch	NCIT:C27383	Meningeal Carcinomatosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	meningeal carcinomatosis	LEXMATCH
 MONDO:0850112	breast implant-associated anaplastic large cell lymphoma	skos:exactMatch	NCIT:C139012	Breast Implant-Associated Anaplastic Large Cell Lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	breast implant-associated anaplastic large cell lymphoma	LEXMATCH
@@ -122,10 +121,10 @@ MONDO:0859747	grade I lymphomatoid granulomatosis	skos:exactMatch	NCIT:C7931	Gra
 MONDO:0859748	grade II lymphomatoid granulomatosis	skos:exactMatch	NCIT:C7932	Grade II Lymphomatoid Granulomatosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	grade ii lymphomatoid granulomatosis	LEXMATCH
 MONDO:0859749	grade III lymphomatoid granulomatosis	skos:exactMatch	NCIT:C7933	Grade III Lymphomatoid Granulomatosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	grade iii lymphomatoid granulomatosis	LEXMATCH
 MONDO:0956962	benign teratoma	skos:exactMatch	NCIT:C67107	Benign Teratoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	benign teratoma	LEXMATCH
-MONDO:0956981	astrocytoma, IDH-mutant, grade 4	skos:exactMatch	NCIT:C167335	Astrocytoma, IDH-Mutant, Grade 4	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	astrocytoma, idh-mutant, grade 4	LEXMATCH
+MONDO:0956981	astrocytoma, IDH-mutant, grade 4	skos:exactMatch	NCIT:C167335	Astrocytoma, IDH-Mutant, Grade 4	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	astrocytoma, idh-mutant, grade type 4	LEXMATCH
 MONDO:0956989	CIC-rearranged sarcoma	skos:exactMatch	NCIT:C120224	CIC-Rearranged Sarcoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cic-rearranged sarcoma	LEXMATCH
-MONDO:0956994	astrocytoma, IDH-mutant, grade 2	skos:exactMatch	NCIT:C129271	Astrocytoma, IDH-Mutant, Grade 2	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	astrocytoma, idh-mutant, grade 2	LEXMATCH
-MONDO:0956995	astrocytoma, IDH-mutant, grade 3	skos:exactMatch	NCIT:C129290	Astrocytoma, IDH-Mutant, Grade 3	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	astrocytoma, idh-mutant, grade 3	LEXMATCH
+MONDO:0956994	astrocytoma, IDH-mutant, grade 2	skos:exactMatch	NCIT:C129271	Astrocytoma, IDH-Mutant, Grade 2	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	astrocytoma, idh-mutant, grade type 2	LEXMATCH
+MONDO:0956995	astrocytoma, IDH-mutant, grade 3	skos:exactMatch	NCIT:C129290	Astrocytoma, IDH-Mutant, Grade 3	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	astrocytoma, idh-mutant, grade type 3	LEXMATCH
 MONDO:0957196	diffuse midline glioma, H3 K27M-mutant	skos:exactMatch	NCIT:C129309	Diffuse Midline Glioma, H3 K27M-Mutant	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	diffuse midline glioma, h3 k27m-mutant	LEXMATCH
 MONDO:0958096	monomorphic epitheliotropic intestinal T-cell lymphoma	skos:exactMatch	NCIT:C96058	Monomorphic Epitheliotropic Intestinal T-Cell Lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	monomorphic epitheliotropic intestinal t-cell lymphoma	LEXMATCH
 MONDO:0958119	embryonal tumor with multilayered rosettes	skos:exactMatch	NCIT:C186534	Embryonal Tumor with Multilayered Rosettes	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	embryonal tumor with multilayered rosettes	LEXMATCH
