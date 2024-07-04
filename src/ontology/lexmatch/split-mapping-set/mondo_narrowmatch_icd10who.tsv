@@ -1,26 +1,222 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0000726	idiopathic scoliosis	skos:narrowMatch	ICD10WHO:M41.2	Other idiopathic scoliosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	idiopathic scoliosis	LEXMATCH
+MONDO:0000755	ectopic pregnancy	skos:narrowMatch	ICD10WHO:O00.8	Other ectopic pregnancy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	ectopic pregnancy	LEXMATCH
+MONDO:0001143	paralytic strabismus	skos:narrowMatch	ICD10WHO:H49.8	Other paralytic strabismus	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	paralytic strabismus	LEXMATCH
+MONDO:0001150	hydrocephalus	skos:narrowMatch	ICD10WHO:G91.8	Other hydrocephalus	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hydrocephalus	LEXMATCH
+MONDO:0001152	amnestic disorder	skos:narrowMatch	ICD10WHO:R41.3	Other amnesia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	amnesia	LEXMATCH
+MONDO:0001200	secondary hypertension	skos:narrowMatch	ICD10WHO:I15.8	Other secondary hypertension	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	secondary hypertension	LEXMATCH
+MONDO:0001214	acute conjunctivitis	skos:narrowMatch	ICD10WHO:H10.2	Other acute conjunctivitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	acute conjunctivitis	LEXMATCH
+MONDO:0001220	hypoparathyroidism	skos:narrowMatch	ICD10WHO:E20.8	Other hypoparathyroidism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hypoparathyroidism	LEXMATCH
+MONDO:0001314	chondrocalcinosis	skos:narrowMatch	ICD10WHO:M11.2	Other chondrocalcinosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	chondrocalcinosis	LEXMATCH
+MONDO:0001557	olecranon bursitis	skos:narrowMatch	ICD10WHO:M70.3	Other bursitis of elbow	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	bursitis of elbow	LEXMATCH
+MONDO:0001741	hyperparathyroidism	skos:narrowMatch	ICD10WHO:E21.2	Other hyperparathyroidism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hyperparathyroidism	LEXMATCH
+MONDO:0001741	hyperparathyroidism	skos:narrowMatch	ICD10WHO:E21.2	Other hyperparathyroidism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hyperparathyroidism	LEXMATCH
+MONDO:0001889	ovarian dysfunction	skos:narrowMatch	ICD10WHO:E28.8	Other ovarian dysfunction	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	ovarian dysfunction	LEXMATCH
+MONDO:0001920	chronic purulent otitis media	skos:narrowMatch	ICD10WHO:H66.3	Other chronic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic suppurative otitis media	LEXMATCH
+MONDO:0002076	pneumothorax	skos:narrowMatch	ICD10WHO:J93.8	Other pneumothorax	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	pneumothorax	LEXMATCH
+MONDO:0002076	pneumothorax	skos:narrowMatch	ICD10WHO:J93.8	Other pneumothorax	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	pneumothorax	LEXMATCH
+MONDO:0002112	benign peritoneal mesothelioma	skos:narrowMatch	ICD10WHO:C45.1	Mesothelioma of peritoneum	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	mesothelioma of peritoneum	LEXMATCH
 MONDO:0002112	benign peritoneal mesothelioma	skos:narrowMatch	ICD10WHO:C45.1	Mesothelioma of peritoneum	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	mesothelioma of peritoneum	LEXMATCH
+MONDO:0002125	status epilepticus	skos:narrowMatch	ICD10WHO:G41.8	Other status epilepticus	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	status epilepticus	LEXMATCH
+MONDO:0002127	urethral stricture	skos:narrowMatch	ICD10WHO:N35.8	Other urethral stricture	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	urethral stricture	LEXMATCH
+MONDO:0002127	urethral stricture	skos:narrowMatch	ICD10WHO:N35.8	Other urethral stricture	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	urethral stricture	LEXMATCH
+MONDO:0002155	cholecystitis	skos:narrowMatch	ICD10WHO:K81.8	Other cholecystitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	cholecystitis	LEXMATCH
+MONDO:0002253	spondylosis	skos:narrowMatch	ICD10WHO:M47.1	Other spondylosis with myelopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	spondylosis with myelopathy	LEXMATCH
+MONDO:0002253	spondylosis	skos:narrowMatch	ICD10WHO:M47.8	Other spondylosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	spondylosis	LEXMATCH
+MONDO:0002305	thrombophilia	skos:narrowMatch	ICD10WHO:D68.6	Other thrombophilia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	thrombophilia	LEXMATCH
+MONDO:0002406	dermatitis	skos:narrowMatch	ICD10WHO:L30	Other dermatitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	dermatitis	LEXMATCH
+MONDO:0002492	acute kidney failure	skos:narrowMatch	ICD10WHO:N17.8	Other acute renal failure	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	acute renal failure	LEXMATCH
+MONDO:0002679	cerebral infarction	skos:narrowMatch	ICD10WHO:I63.8	Other cerebral infarction	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	cerebral infarction	LEXMATCH
+MONDO:0002679	cerebral infarction	skos:narrowMatch	ICD10WHO:I63.8	Other cerebral infarction	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	cerebral infarction	LEXMATCH
+MONDO:0002738	acute transudative otitis media	skos:narrowMatch	ICD10WHO:H65.1	Other acute nonsuppurative otitis media	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	acute nonsuppurative otitis media	LEXMATCH
+MONDO:0002815	acute myocarditis	skos:narrowMatch	ICD10WHO:I40.8	Other acute myocarditis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	acute myocarditis	LEXMATCH
+MONDO:0002897	secondary syphilis	skos:narrowMatch	ICD10WHO:A51.4	Other secondary syphilis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	secondary syphilis	LEXMATCH
+MONDO:0003009	hyperaldosteronism	skos:narrowMatch	ICD10WHO:E26.8	Other hyperaldosteronism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hyperaldosteronism	LEXMATCH
+MONDO:0003085	keratitis	skos:narrowMatch	ICD10WHO:H16.8	Other keratitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	keratitis	LEXMATCH
+MONDO:0003432	strabismus	skos:narrowMatch	ICD10WHO:H50	Other strabismus	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	strabismus	LEXMATCH
+MONDO:0003432	strabismus	skos:narrowMatch	ICD10WHO:H50	Other strabismus	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	strabismus	LEXMATCH
+MONDO:0003441	dystonic disorder	skos:narrowMatch	ICD10WHO:G24.8	Other dystonia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	dystonia	LEXMATCH
+MONDO:0003799	conjunctivitis	skos:narrowMatch	ICD10WHO:H10.8	Other conjunctivitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	conjunctivitis	LEXMATCH
+MONDO:0003799	conjunctivitis	skos:narrowMatch	ICD10WHO:H10.8	Other conjunctivitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	conjunctivitis	LEXMATCH
+MONDO:0004522	peritonitis	skos:narrowMatch	ICD10WHO:K65.8	Other peritonitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	peritonitis	LEXMATCH
+MONDO:0004648	vascular dementia	skos:narrowMatch	ICD10WHO:F01.8	Other vascular dementia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	vascular dementia	LEXMATCH
+MONDO:0004648	vascular dementia	skos:narrowMatch	ICD10WHO:F01.8	Other vascular dementia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	vascular dementia	LEXMATCH
+MONDO:0004652	bacterial pneumonia	skos:narrowMatch	ICD10WHO:J15.8	Other bacterial pneumonia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	bacterial pneumonia	LEXMATCH
+MONDO:0004658	breast carcinoma in situ	skos:narrowMatch	ICD10WHO:D05.7	Other carcinoma in situ of breast	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	carcinoma in situ of breast	LEXMATCH
+MONDO:0004680	primary thrombocytopenia	skos:narrowMatch	ICD10WHO:D69.4	Other primary thrombocytopenia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	primary thrombocytopenia	LEXMATCH
+MONDO:0004773	iridocyclitis	skos:narrowMatch	ICD10WHO:H20.8	Other iridocyclitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	iridocyclitis	LEXMATCH
+MONDO:0004773	iridocyclitis	skos:narrowMatch	ICD10WHO:H20.8	Other iridocyclitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	iridocyclitis	LEXMATCH
+MONDO:0004785	blepharitis	skos:narrowMatch	ICD10WHO:H01	Other inflammation of eyelid	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	inflammation of eyelid	LEXMATCH
+MONDO:0004795	otitis externa	skos:narrowMatch	ICD10WHO:H60.8	Other otitis externa	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	otitis externa	LEXMATCH
+MONDO:0004795	otitis externa	skos:narrowMatch	ICD10WHO:H60.8	Other otitis externa	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	otitis externa	LEXMATCH
+MONDO:0004828	lower urinary tract calculus	skos:narrowMatch	ICD10WHO:N21.8	Other lower urinary tract calculus	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	lower urinary tract calculus	LEXMATCH
+MONDO:0004846	placental abruption	skos:narrowMatch	ICD10WHO:O45.8	Other premature separation of placenta	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	premature separation of placenta	LEXMATCH
+MONDO:0004847	senile cataract	skos:narrowMatch	ICD10WHO:H25.8	Other senile cataract	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	senile cataract	LEXMATCH
+MONDO:0004849	pulmonary emphysema	skos:narrowMatch	ICD10WHO:J43.8	Other emphysema	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	emphysema	LEXMATCH
+MONDO:0004900	peripheral vertigo	skos:narrowMatch	ICD10WHO:H81.3	Other peripheral vertigo	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	peripheral vertigo	LEXMATCH
+MONDO:0004920	hydrocele	skos:narrowMatch	ICD10WHO:N43.2	Other hydrocele	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hydrocele	LEXMATCH
+MONDO:0004946	hypoglycemia	skos:narrowMatch	ICD10WHO:E16.1	Other hypoglycaemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hypoglycaemia	LEXMATCH
+MONDO:0004966	gastritis	skos:narrowMatch	ICD10WHO:K29.6	Other gastritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	gastritis	LEXMATCH
+MONDO:0004966	gastritis	skos:narrowMatch	ICD10WHO:K29.6	Other gastritis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	gastritis	LEXMATCH
+MONDO:0004980	atopic eczema	skos:narrowMatch	ICD10WHO:L20.8	Other atopic dermatitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	atopic dermatitis	LEXMATCH
+MONDO:0004994	cardiomyopathy	skos:narrowMatch	ICD10WHO:I42.8	Other cardiomyopathies	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	cardiomyopathies	LEXMATCH
+MONDO:0005003	chronic pancreatitis	skos:narrowMatch	ICD10WHO:K86.1	Other chronic pancreatitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	chronic pancreatitis	LEXMATCH
+MONDO:0005027	epilepsy	skos:narrowMatch	ICD10WHO:G40.8	Other epilepsy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	epilepsy	LEXMATCH
+MONDO:0005027	epilepsy	skos:narrowMatch	ICD10WHO:G40.8	Other epilepsy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	epilepsy	LEXMATCH
+MONDO:0005041	glaucoma	skos:narrowMatch	ICD10WHO:H40.8	Other glaucoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	glaucoma	LEXMATCH
+MONDO:0005041	glaucoma	skos:narrowMatch	ICD10WHO:H40.8	Other glaucoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	glaucoma	LEXMATCH
+MONDO:0005045	hypertrophic cardiomyopathy	skos:narrowMatch	ICD10WHO:I42.2	Other hypertrophic cardiomyopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hypertrophic cardiomyopathy	LEXMATCH
+MONDO:0005045	hypertrophic cardiomyopathy	skos:narrowMatch	ICD10WHO:I42.2	Other hypertrophic cardiomyopathy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hypertrophic cardiomyopathy	LEXMATCH
+MONDO:0005083	psoriasis	skos:narrowMatch	ICD10WHO:L40.8	Other psoriasis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	psoriasis	LEXMATCH
+MONDO:0005090	schizophrenia	skos:narrowMatch	ICD10WHO:F20.8	Other schizophrenia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	schizophrenia	LEXMATCH
+MONDO:0005090	schizophrenia	skos:narrowMatch	ICD10WHO:F20.8	Other schizophrenia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	schizophrenia	LEXMATCH
+MONDO:0005101	ulcerative colitis	skos:narrowMatch	ICD10WHO:K51.8	Other ulcerative colitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	ulcerative colitis	LEXMATCH
+MONDO:0005101	ulcerative colitis	skos:narrowMatch	ICD10WHO:K51.8	Other ulcerative colitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	ulcerative colitis	LEXMATCH
+MONDO:0005129	cataract	skos:narrowMatch	ICD10WHO:H26	Other cataract	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	cataract	LEXMATCH
+MONDO:0005129	cataract	skos:narrowMatch	ICD10WHO:H26	Other cataract	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	cataract	LEXMATCH
+MONDO:0005133	endometriosis	skos:narrowMatch	ICD10WHO:N80.8	Other endometriosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	endometriosis	LEXMATCH
+MONDO:0005133	endometriosis	skos:narrowMatch	ICD10WHO:N80.8	Other endometriosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	endometriosis	LEXMATCH
+MONDO:0005201	restrictive cardiomyopathy	skos:narrowMatch	ICD10WHO:I42.5	Other restrictive cardiomyopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	restrictive cardiomyopathy	LEXMATCH
+MONDO:0005201	restrictive cardiomyopathy	skos:narrowMatch	ICD10WHO:I42.5	Other restrictive cardiomyopathy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	restrictive cardiomyopathy	LEXMATCH
+MONDO:0005246	osteomyelitis	skos:narrowMatch	ICD10WHO:M86.8	Other osteomyelitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	osteomyelitis	LEXMATCH
+MONDO:0005246	osteomyelitis	skos:narrowMatch	ICD10WHO:M86.8	Other osteomyelitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	osteomyelitis	LEXMATCH
+MONDO:0005258	autism spectrum disorder	skos:narrowMatch	ICD10WHO:F84.8	Other pervasive developmental disorders	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	pervasive developmental disorders	LEXMATCH
+MONDO:0005276	dental caries	skos:narrowMatch	ICD10WHO:K02.8	Other dental caries	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	dental caries	LEXMATCH
+MONDO:0005277	migraine disorder	skos:narrowMatch	ICD10WHO:G43.8	Other migraine	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	migraine	LEXMATCH
+MONDO:0005297	urethritis	skos:narrowMatch	ICD10WHO:N34.2	Other urethritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	urethritis	LEXMATCH
+MONDO:0005297	urethritis	skos:narrowMatch	ICD10WHO:N34.2	Other urethritis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	urethritis	LEXMATCH
+MONDO:0005298	osteoporosis	skos:narrowMatch	ICD10WHO:M81.8	Other osteoporosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	osteoporosis	LEXMATCH
+MONDO:0005324	seasonal allergic rhinitis	skos:narrowMatch	ICD10WHO:J30.2	Other seasonal allergic rhinitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	seasonal allergic rhinitis	LEXMATCH
+MONDO:0005324	seasonal allergic rhinitis	skos:narrowMatch	ICD10WHO:J30.2	Other seasonal allergic rhinitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	seasonal allergic rhinitis	LEXMATCH
+MONDO:0005326	sunburn	skos:narrowMatch	ICD10WHO:L55.8	Other sunburn	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	sunburn	LEXMATCH
+MONDO:0005340	alopecia areata	skos:narrowMatch	ICD10WHO:L63.8	Other alopecia areata	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	alopecia areata	LEXMATCH
+MONDO:0005340	alopecia areata	skos:narrowMatch	ICD10WHO:L63.8	Other alopecia areata	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	alopecia areata	LEXMATCH
+MONDO:0005345	hypospadias	skos:narrowMatch	ICD10WHO:Q54.8	Other hypospadias	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hypospadias	LEXMATCH
+MONDO:0005345	hypospadias	skos:narrowMatch	ICD10WHO:Q54.8	Other hypospadias	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hypospadias	LEXMATCH
+MONDO:0005349	otosclerosis	skos:narrowMatch	ICD10WHO:H80.8	Other otosclerosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	otosclerosis	LEXMATCH
+MONDO:0005349	otosclerosis	skos:narrowMatch	ICD10WHO:H80.8	Other otosclerosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	otosclerosis	LEXMATCH
+MONDO:0005365	hearing loss disorder	skos:narrowMatch	ICD10WHO:H91	Other hearing loss	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hearing loss	LEXMATCH
+MONDO:0005380	osteonecrosis	skos:narrowMatch	ICD10WHO:M87.8	Other osteonecrosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	osteonecrosis	LEXMATCH
+MONDO:0005380	osteonecrosis	skos:narrowMatch	ICD10WHO:M87.8	Other osteonecrosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	osteonecrosis	LEXMATCH
+MONDO:0005420	hypothyroidism	skos:narrowMatch	ICD10WHO:E03	Other hypothyroidism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hypothyroidism	LEXMATCH
+MONDO:0005420	hypothyroidism	skos:narrowMatch	ICD10WHO:E03	Other hypothyroidism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hypothyroidism	LEXMATCH
+MONDO:0005468	hypotensive disorder	skos:narrowMatch	ICD10WHO:I95.8	Other hypotension	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hypotension	LEXMATCH
+MONDO:0005492	urticaria	skos:narrowMatch	ICD10WHO:L50.8	Other urticaria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	urticaria	LEXMATCH
+MONDO:0005492	urticaria	skos:narrowMatch	ICD10WHO:L50.8	Other urticaria	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	urticaria	LEXMATCH
+MONDO:0005504	diphtheria	skos:narrowMatch	ICD10WHO:A36.8	Other diphtheria	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	diphtheria	LEXMATCH
+MONDO:0005519	renal pelvis carcinoma	skos:narrowMatch	ICD10WHO:C65	Malignant neoplasm of renal pelvis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	malignant neoplasm of renal pelvis	LEXMATCH
 MONDO:0005519	renal pelvis carcinoma	skos:narrowMatch	ICD10WHO:C65	Malignant neoplasm of renal pelvis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	malignant neoplasm of renal pelvis	LEXMATCH
+MONDO:0005526	tetanus	skos:narrowMatch	ICD10WHO:A35	Other tetanus	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	tetanus	LEXMATCH
+MONDO:0005578	arthritic joint disease	skos:narrowMatch	ICD10WHO:M13	Other arthritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	arthritis	LEXMATCH
+MONDO:0005649	appendicitis	skos:narrowMatch	ICD10WHO:K36	Other appendicitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	appendicitis	LEXMATCH
+MONDO:0005683	brucellosis	skos:narrowMatch	ICD10WHO:A23.8	Other brucellosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	brucellosis	LEXMATCH
+MONDO:0005711	congenital diaphragmatic hernia	skos:narrowMatch	ICD10WHO:K44	Diaphragmatic hernia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	diaphragmatic hernia	LEXMATCH
 MONDO:0005711	congenital diaphragmatic hernia	skos:narrowMatch	ICD10WHO:K44	Diaphragmatic hernia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	diaphragmatic hernia	LEXMATCH
+MONDO:0005810	infectious mononucleosis	skos:narrowMatch	ICD10WHO:B27.8	Other infectious mononucleosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	infectious mononucleosis	LEXMATCH
+MONDO:0005848	miliary tuberculosis	skos:narrowMatch	ICD10WHO:A19.8	Other miliary tuberculosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	miliary tuberculosis	LEXMATCH
+MONDO:0006012	viral pneumonia	skos:narrowMatch	ICD10WHO:J12.8	Other viral pneumonia	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	viral pneumonia	LEXMATCH
+MONDO:0006030	chronic cystitis	skos:narrowMatch	ICD10WHO:N30.2	Other chronic cystitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	chronic cystitis	LEXMATCH
+MONDO:0006031	chronic rhinosinusitis	skos:narrowMatch	ICD10WHO:J32.8	Other chronic sinusitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	chronic sinusitis	LEXMATCH
+MONDO:0006032	cystitis	skos:narrowMatch	ICD10WHO:N30.8	Other cystitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	cystitis	LEXMATCH
+MONDO:0006497	cerebral palsy	skos:narrowMatch	ICD10WHO:G80.8	Other cerebral palsy	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	cerebral palsy	LEXMATCH
+MONDO:0006515	acute pancreatitis	skos:narrowMatch	ICD10WHO:K85.8	Other acute pancreatitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	acute pancreatitis	LEXMATCH
+MONDO:0006541	epidermolysis bullosa	skos:narrowMatch	ICD10WHO:Q81.8	Other epidermolysis bullosa	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	epidermolysis bullosa	LEXMATCH
+MONDO:0006541	epidermolysis bullosa	skos:narrowMatch	ICD10WHO:Q81.8	Other epidermolysis bullosa	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	epidermolysis bullosa	LEXMATCH
+MONDO:0006545	erythema multiforme	skos:narrowMatch	ICD10WHO:L51.8	Other erythema multiforme	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	erythema multiforme	LEXMATCH
+MONDO:0006572	lichen planus	skos:narrowMatch	ICD10WHO:L43.8	Other lichen planus	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	lichen planus	LEXMATCH
+MONDO:0006592	parapsoriasis	skos:narrowMatch	ICD10WHO:L41.8	Other parapsoriasis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	parapsoriasis	LEXMATCH
+MONDO:0006594	pemphigus	skos:narrowMatch	ICD10WHO:L10.8	Other pemphigus	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	pemphigus	LEXMATCH
+MONDO:0006604	rosacea	skos:narrowMatch	ICD10WHO:L71.8	Other rosacea	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	rosacea	LEXMATCH
+MONDO:0006608	seborrheic dermatitis	skos:narrowMatch	ICD10WHO:L21.8	Other seborrhoeic dermatitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	seborrhoeic dermatitis	LEXMATCH
+MONDO:0006670	bacterial meningitis	skos:narrowMatch	ICD10WHO:G00.8	Other bacterial meningitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	bacterial meningitis	LEXMATCH
+MONDO:0006966	secondary Parkinson disease	skos:narrowMatch	ICD10WHO:G21.8	Other secondary parkinsonism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	secondary parkinsonism	LEXMATCH
+MONDO:0007015	viral meningitis	skos:narrowMatch	ICD10WHO:A87.8	Other viral meningitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	viral meningitis	LEXMATCH
+MONDO:0007098	ACys amyloidosis	skos:narrowMatch	ICD10WHO:I68.0	Cerebral amyloid angiopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	cerebral amyloid angiopathy	LEXMATCH
 MONDO:0007098	ACys amyloidosis	skos:narrowMatch	ICD10WHO:I68.0	Cerebral amyloid angiopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	cerebral amyloid angiopathy	LEXMATCH
+MONDO:0007157	arthrogryposis, distal, type 1A	skos:narrowMatch	ICD10WHO:Q74.3	Arthrogryposis multiplex congenita	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	arthrogryposis multiplex congenita	LEXMATCH
 MONDO:0007157	arthrogryposis, distal, type 1A	skos:narrowMatch	ICD10WHO:Q74.3	Arthrogryposis multiplex congenita	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	arthrogryposis multiplex congenita	LEXMATCH
+MONDO:0007306	Klippel-Feil syndrome 1, autosomal dominant	skos:narrowMatch	ICD10WHO:Q76.1	Klippel-Feil syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	klippel-feil syndrome	LEXMATCH
 MONDO:0007306	Klippel-Feil syndrome 1, autosomal dominant	skos:narrowMatch	ICD10WHO:Q76.1	Klippel-Feil syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	klippel-feil syndrome	LEXMATCH
-MONDO:0007723	Hirschsprung disease, susceptibility to, 1	skos:narrowMatch	ICD10WHO:Q43.1	Hirschsprung disease	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	hirschsprung disease	LEXMATCH
+MONDO:0007723	Hirschsprung disease, susceptibility to, 1	skos:narrowMatch	ICD10WHO:Q43.1	Hirschsprung disease	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	hirschsprung disorder	LEXMATCH
+MONDO:0007723	Hirschsprung disease, susceptibility to, 1	skos:narrowMatch	ICD10WHO:Q43.1	Hirschsprung disease	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	hirschsprung disorder	LEXMATCH
+MONDO:0007738	spondyloepiphyseal dysplasia with congenital joint dislocations	skos:narrowMatch	ICD10WHO:Q77.7	Spondyloepiphyseal dysplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	spondyloepiphyseal dysplasia	LEXMATCH
 MONDO:0007738	spondyloepiphyseal dysplasia with congenital joint dislocations	skos:narrowMatch	ICD10WHO:Q77.7	Spondyloepiphyseal dysplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	spondyloepiphyseal dysplasia	LEXMATCH
+MONDO:0007885	Legg-Calve-Perthes disease	skos:narrowMatch	ICD10WHO:M91.8	Other juvenile osteochondrosis of hip and pelvis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	juvenile osteochondrosis of hip and pelvis	LEXMATCH
+MONDO:0007896	acute monocytic leukemia	skos:narrowMatch	ICD10WHO:C93	Monocytic leukaemia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	monocytic leukaemia	LEXMATCH
 MONDO:0007896	acute monocytic leukemia	skos:narrowMatch	ICD10WHO:C93	Monocytic leukaemia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	monocytic leukaemia	LEXMATCH
+MONDO:0008251	familial pityriasis rubra pilaris	skos:narrowMatch	ICD10WHO:L44.0	Pityriasis rubra pilaris	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	pityriasis rubra pilaris	LEXMATCH
 MONDO:0008251	familial pityriasis rubra pilaris	skos:narrowMatch	ICD10WHO:L44.0	Pityriasis rubra pilaris	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	pityriasis rubra pilaris	LEXMATCH
+MONDO:0008383	rheumatoid arthritis	skos:narrowMatch	ICD10WHO:M06	Other rheumatoid arthritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	rheumatoid arthritis	LEXMATCH
+MONDO:0008383	rheumatoid arthritis	skos:narrowMatch	ICD10WHO:M06	Other rheumatoid arthritis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	rheumatoid arthritis	LEXMATCH
+MONDO:0008399	sarcoidosis, susceptibility to, 1	skos:narrowMatch	ICD10WHO:D86	Sarcoidosis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	sarcoidosis	LEXMATCH
 MONDO:0008399	sarcoidosis, susceptibility to, 1	skos:narrowMatch	ICD10WHO:D86	Sarcoidosis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	sarcoidosis	LEXMATCH
+MONDO:0008538	temporal arteritis	skos:narrowMatch	ICD10WHO:M31.6	Other giant cell arteritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	giant cell arteritis	LEXMATCH
+MONDO:0008791	anencephaly 1	skos:narrowMatch	ICD10WHO:Q00.0	Anencephaly	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	anencephaly	LEXMATCH
 MONDO:0008791	anencephaly 1	skos:narrowMatch	ICD10WHO:Q00.0	Anencephaly	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	anencephaly	LEXMATCH
+MONDO:0009100	type 1 diabetes mellitus 1	skos:narrowMatch	ICD10WHO:E10	Type 1 diabetes mellitus	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	type 1 diabetes mellitus	LEXMATCH
 MONDO:0009100	type 1 diabetes mellitus 1	skos:narrowMatch	ICD10WHO:E10	Type 1 diabetes mellitus	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	type 1 diabetes mellitus	LEXMATCH
+MONDO:0009348	classic Hodgkin lymphoma	skos:narrowMatch	ICD10WHO:C81.7	Other classical Hodgkin lymphoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	classical hodgkin lymphoma	LEXMATCH
 MONDO:0009773	odonto-onycho-dermal dysplasia	skos:narrowMatch	ICD10WHO:Q82.4	Ectodermal dysplasia (anhidrotic)	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	ectodermal dysplasia	LEXMATCH
+MONDO:0009943	Pyle disease	skos:narrowMatch	ICD10WHO:Q78.5	Metaphyseal dysplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	metaphyseal dysplasia	LEXMATCH
 MONDO:0009943	Pyle disease	skos:narrowMatch	ICD10WHO:Q78.5	Metaphyseal dysplasia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	metaphyseal dysplasia	LEXMATCH
+MONDO:0010138	thyrotoxicosis	skos:narrowMatch	ICD10WHO:E05.8	Other thyrotoxicosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	thyrotoxicosis	LEXMATCH
+MONDO:0011122	obesity disorder	skos:narrowMatch	ICD10WHO:E66.8	Other obesity	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	obesity	LEXMATCH
+MONDO:0011438	acne	skos:narrowMatch	ICD10WHO:L70.8	Other acne	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	acne	LEXMATCH
+MONDO:0011438	acne	skos:narrowMatch	ICD10WHO:L70.8	Other acne	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	acne	LEXMATCH
+MONDO:0011786	allergic rhinitis	skos:narrowMatch	ICD10WHO:J30.3	Other allergic rhinitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	allergic rhinitis	LEXMATCH
+MONDO:0011786	allergic rhinitis	skos:narrowMatch	ICD10WHO:J30.3	Other allergic rhinitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	allergic rhinitis	LEXMATCH
+MONDO:0011908	juvenile myelomonocytic leukemia	skos:narrowMatch	ICD10WHO:C93.1	Chronic myelomonocytic leukaemia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	chronic myelomonocytic leukaemia	LEXMATCH
 MONDO:0011908	juvenile myelomonocytic leukemia	skos:narrowMatch	ICD10WHO:C93.1	Chronic myelomonocytic leukaemia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	chronic myelomonocytic leukaemia	LEXMATCH
+MONDO:0012672	cholelithiasis	skos:narrowMatch	ICD10WHO:K80.8	Other cholelithiasis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	cholelithiasis	LEXMATCH
+MONDO:0014013	maternal riboflavin deficiency	skos:narrowMatch	ICD10WHO:E53.0	Riboflavin deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	riboflavin deficiency	LEXMATCH
 MONDO:0014013	maternal riboflavin deficiency	skos:narrowMatch	ICD10WHO:E53.0	Riboflavin deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	riboflavin deficiency	LEXMATCH
+MONDO:0015459	nasopharyngeal carcinoma	skos:narrowMatch	ICD10WHO:C11	Malignant neoplasm of nasopharynx	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	malignant neoplasm of nasopharynx	LEXMATCH
 MONDO:0015459	nasopharyngeal carcinoma	skos:narrowMatch	ICD10WHO:C11	Malignant neoplasm of nasopharynx	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	malignant neoplasm of nasopharynx	LEXMATCH
+MONDO:0015626	Charcot-Marie-Tooth disease	skos:narrowMatch	ICD10WHO:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	hereditary motor and sensory neuropathy	LEXMATCH
 MONDO:0015626	Charcot-Marie-Tooth disease	skos:narrowMatch	ICD10WHO:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	hereditary motor and sensory neuropathy	LEXMATCH
+MONDO:0015681	childhood disintegrative disorder	skos:narrowMatch	ICD10WHO:F84.3	Other childhood disintegrative disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	childhood disintegrative disorder	LEXMATCH
+MONDO:0015681	childhood disintegrative disorder	skos:narrowMatch	ICD10WHO:F84.3	Other childhood disintegrative disorder	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	childhood disintegrative disorder	LEXMATCH
+MONDO:0016047	endophthalmitis	skos:narrowMatch	ICD10WHO:H44.1	Other endophthalmitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	endophthalmitis	LEXMATCH
+MONDO:0016349	congenital hydrocephalus	skos:narrowMatch	ICD10WHO:Q03.8	Other congenital hydrocephalus	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	congenital hydrocephalus	LEXMATCH
+MONDO:0016349	congenital hydrocephalus	skos:narrowMatch	ICD10WHO:Q03.8	Other congenital hydrocephalus	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	congenital hydrocephalus	LEXMATCH
+MONDO:0016367	dermatomyositis	skos:narrowMatch	ICD10WHO:M33.1	Other dermatomyositis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	dermatomyositis	LEXMATCH
+MONDO:0016367	dermatomyositis	skos:narrowMatch	ICD10WHO:M33.1	Other dermatomyositis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	dermatomyositis	LEXMATCH
+MONDO:0017282	alveolar echinococcosis	skos:narrowMatch	ICD10WHO:B67	Echinococcosis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	echinococcosis	LEXMATCH
 MONDO:0017282	alveolar echinococcosis	skos:narrowMatch	ICD10WHO:B67	Echinococcosis	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	echinococcosis	LEXMATCH
+MONDO:0017572	tick-borne encephalitis	skos:narrowMatch	ICD10WHO:A84.8	Other tick-borne viral encephalitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	tick-borne viral encephalitis	LEXMATCH
+MONDO:0017719	gangliosidosis	skos:narrowMatch	ICD10WHO:E75.1	Other gangliosidosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	gangliosidosis	LEXMATCH
+MONDO:0017775	melioidosis	skos:narrowMatch	ICD10WHO:A24.3	Other melioidosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	melioidosis	LEXMATCH
+MONDO:0018881	myelodysplastic syndrome	skos:narrowMatch	ICD10WHO:D46.7	Other myelodysplastic syndromes	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	myelodysplastic syndromes	LEXMATCH
+MONDO:0018912	Cushing syndrome	skos:narrowMatch	ICD10WHO:E24.8	Other Cushing syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	cushing syndrome	LEXMATCH
+MONDO:0018912	Cushing syndrome	skos:narrowMatch	ICD10WHO:E24.8	Other Cushing syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	cushing syndrome	LEXMATCH
 MONDO:0018975	neurofibromatosis type 1	skos:narrowMatch	ICD10WHO:Q85.0	Neurofibromatosis (nonmalignant)	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	neurofibromatosis	LEXMATCH
+MONDO:0019064	hereditary spastic paraplegia	skos:narrowMatch	ICD10WHO:G82.1	Spastic paraplegia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	spastic paraplegia	LEXMATCH
 MONDO:0019064	hereditary spastic paraplegia	skos:narrowMatch	ICD10WHO:G82.1	Spastic paraplegia	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	spastic paraplegia	LEXMATCH
+MONDO:0019065	amyloidosis	skos:narrowMatch	ICD10WHO:E85.8	Other amyloidosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	amyloidosis	LEXMATCH
+MONDO:0019065	amyloidosis	skos:narrowMatch	ICD10WHO:E85.8	Other amyloidosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	amyloidosis	LEXMATCH
+MONDO:0019249	mucopolysaccharidosis	skos:narrowMatch	ICD10WHO:E76.2	Other mucopolysaccharidoses	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	mucopolysaccharidoses	LEXMATCH
+MONDO:0019255	sphingolipidosis	skos:narrowMatch	ICD10WHO:E75.2	Other sphingolipidosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	sphingolipidosis	LEXMATCH
+MONDO:0019280	hypertrichosis	skos:narrowMatch	ICD10WHO:L68.8	Other hypertrichosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	hypertrichosis	LEXMATCH
+MONDO:0019280	hypertrichosis	skos:narrowMatch	ICD10WHO:L68.8	Other hypertrichosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	hypertrichosis	LEXMATCH
+MONDO:0019345	shigellosis	skos:narrowMatch	ICD10WHO:A03.8	Other shigellosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	shigellosis	LEXMATCH
+MONDO:0019345	shigellosis	skos:narrowMatch	ICD10WHO:A03.8	Other shigellosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	shigellosis	LEXMATCH
+MONDO:0019372	solitary bone cyst	skos:narrowMatch	ICD10WHO:M85.6	Other cyst of bone	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	cyst of bone	LEXMATCH
+MONDO:0019478	adult nodular lymphocyte predominant Hodgkin lymphoma	skos:narrowMatch	ICD10WHO:C81.0	Nodular lymphocyte predominant Hodgkin lymphoma	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	nodular lymphocyte predominant hodgkin lymphoma	LEXMATCH
 MONDO:0019478	adult nodular lymphocyte predominant Hodgkin lymphoma	skos:narrowMatch	ICD10WHO:C81.0	Nodular lymphocyte predominant Hodgkin lymphoma	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	nodular lymphocyte predominant hodgkin lymphoma	LEXMATCH
-MONDO:0019565	hereditary von Willebrand disease	skos:narrowMatch	ICD10WHO:D68.0	Von Willebrand disease	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	von willebrand disease	LEXMATCH
+MONDO:0019565	hereditary von Willebrand disease	skos:narrowMatch	ICD10WHO:D68.0	Von Willebrand disease	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	von willebrand disorder	LEXMATCH
+MONDO:0019565	hereditary von Willebrand disease	skos:narrowMatch	ICD10WHO:D68.0	Von Willebrand disease	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	von willebrand disorder	LEXMATCH
+MONDO:0020601	mosquito-borne viral encephalitis	skos:narrowMatch	ICD10WHO:A83.8	Other mosquito-borne viral encephalitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	mosquito-borne viral encephalitis	LEXMATCH
+MONDO:0020601	mosquito-borne viral encephalitis	skos:narrowMatch	ICD10WHO:A83.8	Other mosquito-borne viral encephalitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	mosquito-borne viral encephalitis	LEXMATCH
+MONDO:0020730	carpal tunnel syndrome 1	skos:narrowMatch	ICD10WHO:G56.0	Carpal tunnel syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	oio:hasExactSynonym	carpal tunnel syndrome	LEXMATCH
 MONDO:0020730	carpal tunnel syndrome 1	skos:narrowMatch	ICD10WHO:G56.0	Carpal tunnel syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasBroadSynonym	rdfs:label	carpal tunnel syndrome	LEXMATCH
+MONDO:0021739	prurigo	skos:narrowMatch	ICD10WHO:L28.2	Other prurigo	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	prurigo	LEXMATCH
+MONDO:0021739	prurigo	skos:narrowMatch	ICD10WHO:L28.2	Other prurigo	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	prurigo	LEXMATCH
+MONDO:0037939	porphyria	skos:narrowMatch	ICD10WHO:E80.2	Other porphyria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	porphyria	LEXMATCH
+MONDO:0037939	porphyria	skos:narrowMatch	ICD10WHO:E80.2	Other porphyria	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	porphyria	LEXMATCH
+MONDO:0043541	viral conjunctivitis	skos:narrowMatch	ICD10WHO:B30.8	Other viral conjunctivitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	viral conjunctivitis	LEXMATCH
+MONDO:0043541	viral conjunctivitis	skos:narrowMatch	ICD10WHO:B30.8	Other viral conjunctivitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	viral conjunctivitis	LEXMATCH
+MONDO:0044343	cervical disk degenerative disorder	skos:narrowMatch	ICD10WHO:M50.3	Other cervical disc degeneration	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	cervical disc degeneration	LEXMATCH
+MONDO:0045057	delirium	skos:narrowMatch	ICD10WHO:F05.8	Other delirium	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	delirium	LEXMATCH
+MONDO:0100345	lactose intolerance	skos:narrowMatch	ICD10WHO:E73.8	Other lactose intolerance	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasBroadSynonym	lactose intolerance	LEXMATCH
+MONDO:0100345	lactose intolerance	skos:narrowMatch	ICD10WHO:E73.8	Other lactose intolerance	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	lactose intolerance	LEXMATCH
+MONDO:0850301	pemphigoid	skos:narrowMatch	ICD10WHO:L12.8	Other pemphigoid	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasBroadSynonym	pemphigoid	LEXMATCH
