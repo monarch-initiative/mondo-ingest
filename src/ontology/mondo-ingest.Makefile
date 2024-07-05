@@ -2,10 +2,11 @@
 ## 
 ## If you need to customize your Makefile, make changes here rather than in the main Makefile
 #
-# TODO's
-#  TODO #1. Several $(COMPONENTSDIR/*.owl goals have unnecessary operations: https://github.com/monarch-initiative/mondo-ingest/pull/299#discussion_r1187182707
+# todo's
+#  todo #1. Several $(COMPONENTSDIR/*.owl goals have unnecessary operations: https://github.com/monarch-initiative/mondo-ingest/pull/299#discussion_r1187182707
 #   - The line that references config/remove.txt looks like it only needs to be for OMIM
 #   - omimps and hgnc_id SPARQL updates are probably just for OMIM as well
+#  todo #2: $(COMPONENTSDIR)/%.db's vs mondo-ingest.db. We're using both, but it may be possible we only need to use one. I feel inclined towards the former, but the latter should result in faster builds.
 
 ####################################
 ### Standard constants #############
