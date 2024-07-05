@@ -594,15 +594,29 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--onto-config-path metadata/$*.yml
 
 .PHONY: sync-synonyms
-sync-synonyms: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms-robot.template.tsv)
+sync-synonyms: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.added.robot.tsv)  # 'added' chosen arbitrarily as the 1 of 4 cases to run script for all sources
 
-$(REPORTDIR)/%-synonyms-added-robot.template.tsv $(REPORTDIR)/%-synonyms-updated-robot.template.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo.db tmp/mondo.sssom.tsv
+tmp/mondo-synonyms-scope-type-xref.tsv: tmp/mondo.owl
+	$(ROBOT) query -i $< --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
+
+# todo: temp output for analysis during development
+INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
+tmp/synonym_sync_combined_cases.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.added.robot.tsv)
+	@head -n 1 $(firstword $(INPUT_FILES)) > $@
+	@for file in $(INPUT_FILES); do \
+		tail -n +2 $$file >> $@; \
+	done
+
+$(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.tsv $(REPORTDIR)/%-synonyms.deleted.robot.tsv $(REPORTDIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv
+	$(MAKE) up-to-date-mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
 	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
-	--mondo-db-path $(TMPDIR)/mondo.db \
+	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(REPORTDIR)/$*.synonyms.added.robot.tsv \
+	--outpath-confirmed $(REPORTDIR)/$*.synonyms.confirmed.robot.tsv \
+	--outpath-deleted $(REPORTDIR)/$*.synonyms.deleted.robot.tsv \
 	--outpath-updated $(REPORTDIR)/$*.synonyms.updated.robot.tsv
 
 ##################################
