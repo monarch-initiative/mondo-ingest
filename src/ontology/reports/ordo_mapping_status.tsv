@@ -1,4 +1,5 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
+Orphanet:1239	Behr syndrome	False	False	False
 Orphanet:377794	clinical group	False	False	False
 Orphanet:377795	etiological subtype	False	False	False
 Orphanet:377796	clinical subtype	False	False	False
@@ -142,8 +143,8 @@ Orphanet:118000	proteoglycan 4	False	True	False
 Orphanet:118006	protein kinase AMP-activated non-catalytic subunit gamma 2	False	True	False
 Orphanet:118010	protein kinase cAMP-dependent type I regulatory subunit alpha	False	True	False
 Orphanet:118014	protein kinase C gamma	False	True	False
-Orphanet:118020	protein kinase C substrate 80K-H	False	True	False
-Orphanet:118023	prion protein	False	True	False
+Orphanet:118020	PRKCSH beta subunit of glucosidase II	False	True	False
+Orphanet:118023	prion protein (Kanno blood group)	False	True	False
 Orphanet:118030	protein C, inactivator of coagulation factors Va and VIIIa	False	True	False
 Orphanet:118032	proline dehydrogenase 1	False	True	False
 Orphanet:118039	prokineticin 2	False	True	False
@@ -413,7 +414,7 @@ Orphanet:119336	centromere protein J	False	True	False
 Orphanet:119343	centrosomal protein 290	False	True	False
 Orphanet:119354	ceramide kinase like	False	True	False
 Orphanet:119357	cholesteryl ester transfer protein	False	True	False
-Orphanet:119359	cripto, FRL-1, cryptic family 1	False	True	False
+Orphanet:119359	cryptic, EGF-CFC family member 1	False	True	False
 Orphanet:119363	complement factor H	False	True	False
 Orphanet:119371	complement factor I	False	True	False
 Orphanet:119377	cofilin 2	False	True	False
@@ -805,7 +806,6 @@ Orphanet:121062	24-dehydrocholesterol reductase	False	True	False
 Orphanet:121066	7-dehydrocholesterol reductase	False	True	False
 Orphanet:121069	desert hedgehog signaling molecule	False	True	False
 Orphanet:121073	diaphanous related formin 1	False	True	False
-Orphanet:121089	DISC1 scaffold protein	False	True	False
 Orphanet:121091	dyskerin pseudouridine synthase 1	False	True	False
 Orphanet:121098	dihydrolipoamide S-acetyltransferase	False	True	False
 Orphanet:121102	dihydrolipoamide dehydrogenase	False	True	False
@@ -1298,7 +1298,6 @@ Orphanet:123245	MKKS centrosomal shuttling protein	False	True	False
 Orphanet:123253	MKS transition zone complex subunit 1	False	True	False
 Orphanet:123257	modulator of VRAC current 1	False	True	False
 Orphanet:123263	mutL homolog 1	False	True	False
-Orphanet:123269	mutL homolog 3	False	True	False
 Orphanet:123271	lysine methyltransferase 2A	False	True	False
 Orphanet:123279	melanophilin	False	True	False
 Orphanet:123290	malonyl-CoA decarboxylase	False	True	False
@@ -1550,6 +1549,7 @@ Orphanet:138530	renin	False	True	False
 Orphanet:138533	angiotensin II receptor type 1	False	True	False
 Orphanet:138543	spermine synthase	False	True	False
 Orphanet:138557	VANGL planar cell polarity protein 1	False	True	False
+Orphanet:138561	methylenetetrahydrofolate dehydrogenase, cyclohydrolase and formyltetrahydrofolate synthetase 1	False	True	False
 Orphanet:138568	amnion associated transmembrane protein	False	True	False
 Orphanet:138570	FYVE, RhoGEF and PH domain containing 4	False	True	False
 Orphanet:138575	C1q and TNF related 5	False	True	False
@@ -1651,7 +1651,6 @@ Orphanet:159075	tyrosine kinase 2	False	True	False
 Orphanet:159080	ubiquitin conjugating enzyme E2 A	False	True	False
 Orphanet:159084	ubiquitin recognition factor in ER associated degradation 1	False	True	False
 Orphanet:159087	vinculin	False	True	False
-Orphanet:159118	zinc finger protein 41	False	True	False
 Orphanet:159122	small nucleolar RNA, C/D box 116 cluster	False	True	False
 Orphanet:159134	activator of transcription and developmental regulator AUTS2	False	True	False
 Orphanet:159137	NOP10 ribonucleoprotein	False	True	False
@@ -1780,8 +1779,8 @@ Orphanet:160020	ALK receptor tyrosine kinase	False	True	False
 Orphanet:160048	aurora kinase C	False	True	False
 Orphanet:160055	beaded filament structural protein 1	False	True	False
 Orphanet:160064	complement C3	False	True	False
-Orphanet:160067	complement C4A (Rodgers blood group)	False	True	False
-Orphanet:160082	complement C4B (Chido blood group)	False	True	False
+Orphanet:160067	complement C4A (Chido/Rodgers blood group)	False	True	False
+Orphanet:160082	complement C4B (Chido/Rodgers blood group)	False	True	False
 Orphanet:160093	complement C5	False	True	False
 Orphanet:160107	complement C6	False	True	False
 Orphanet:160112	complement C7	False	True	False
@@ -1903,7 +1902,6 @@ Orphanet:169953	golgin, RAB6 interacting	False	True	False
 Orphanet:169957	prickle planar cell polarity protein 1	False	True	False
 Orphanet:169960	succinyl-CoA:glutarate-CoA transferase	False	True	False
 Orphanet:171034	glucose-6-phosphatase catalytic subunit 3	False	True	False
-Orphanet:171038	DDB1 and CUL4 associated factor 17	False	True	False
 Orphanet:171045	solute carrier family 2 member 9	False	True	False
 Orphanet:171050	ribosomal protein S7	False	True	False
 Orphanet:171052	ribosomal protein L5	False	True	False
@@ -2168,7 +2166,7 @@ Orphanet:226051	euchromatic histone lysine methyltransferase 1	False	True	False
 Orphanet:226058	carbohydrate sulfotransferase 14	False	True	False
 Orphanet:226144	CD247 molecule	False	True	False
 Orphanet:227053	solute carrier family 52 member 3	False	True	False
-Orphanet:227058	FLVCR heme transporter 2	False	True	False
+Orphanet:227058	FLVCR choline and putative heme transporter 2	False	True	False
 Orphanet:227063	parathyroid hormone like hormone	False	True	False
 Orphanet:227071	taperin	False	True	False
 Orphanet:227077	myosin binding protein C1	False	True	False
@@ -2295,9 +2293,9 @@ Orphanet:244720	protein phosphatase, Mg2+/Mn2+ dependent 1B	False	True	False
 Orphanet:244737	interleukin 10 receptor subunit alpha	False	True	False
 Orphanet:244742	interleukin 10 receptor subunit beta	False	True	False
 Orphanet:244810	DCC netrin 1 receptor	False	True	False
-Orphanet:246552	coiled-coil domain containing 39	False	True	False
-Orphanet:246554	coiled-coil domain containing 40	False	True	False
-Orphanet:246647	FLVCR heme transporter 1	False	True	False
+Orphanet:246552	coiled-coil domain 39 molecular ruler complex subunit	False	True	False
+Orphanet:246554	coiled-coil domain 40 molecular ruler complex subunit	False	True	False
+Orphanet:246647	FLVCR choline and heme transporter 1	False	True	False
 Orphanet:246653	myosin light chain kinase	False	True	False
 Orphanet:246681	neurotrophic receptor tyrosine kinase 3	False	True	False
 Orphanet:246689	cAMP responsive element binding protein 1	False	True	False
@@ -2355,7 +2353,7 @@ Orphanet:264482	hepatic and glial cell adhesion molecule	False	True	False
 Orphanet:264501	lipase family member N	False	True	False
 Orphanet:264663	cholinergic receptor nicotinic alpha 7 subunit	False	True	False
 Orphanet:265147	serine protease 56	False	True	False
-Orphanet:265258	RNA, U4atac small nuclear (U12-dependent splicing)	False	True	False
+Orphanet:265258	RNA, U4atac small nuclear	False	True	False
 Orphanet:265487	dpy-19 like 2	False	True	False
 Orphanet:265490	serpin family F member 1	False	True	False
 Orphanet:265497	trans-2,3-enoyl-CoA reductase	False	True	False
@@ -2540,14 +2538,14 @@ Orphanet:290568	lysine demethylase 6A	False	True	False
 Orphanet:291509	sigma non-opioid intracellular receptor 1	False	True	False
 Orphanet:291703	proline rich transmembrane protein 2	False	True	False
 Orphanet:291751	distal-less homeobox 5	False	True	False
-Orphanet:291794	ATP binding cassette subfamily B member 6 (Langereis blood group)	False	True	False
+Orphanet:291794	ATP binding cassette subfamily B member 6 (LAN blood group)	False	True	False
 Orphanet:291802	receptor interacting serine/threonine kinase 4	False	True	False
 Orphanet:291813	collagen type IV alpha 2 chain	False	True	False
 Orphanet:291819	enhancer of zeste 2 polycomb repressive complex 2 subunit	False	True	False
 Orphanet:291830	solute carrier organic anion transporter family member 2A1	False	True	False
 Orphanet:291843	cytochrome c oxidase assembly factor COX14	False	True	False
 Orphanet:291853	GATA binding protein 6	False	True	False
-Orphanet:291856	deoxyribonuclease 1 like 3	False	True	False
+Orphanet:291856	deoxyribonuclease 1L3	False	True	False
 Orphanet:291915	butyrophilin like 2	False	True	False
 Orphanet:292027	NADH:ubiquinone oxidoreductase subunit B9	False	True	False
 Orphanet:292035	basic helix-loop-helix family member a9	False	True	False
@@ -2636,7 +2634,7 @@ Orphanet:303011	leucine rich repeat and sterile alpha motif containing 1	False	T
 Orphanet:303024	SPARC related modular calcium binding 2	False	True	False
 Orphanet:303028	glutamate receptor interacting protein 1	False	True	False
 Orphanet:303168	LPS responsive beige-like anchor protein	False	True	False
-Orphanet:303176	piezo type mechanosensitive ion channel component 1	False	True	False
+Orphanet:303176	piezo type mechanosensitive ion channel component 1 (Er blood group)	False	True	False
 Orphanet:303711	leucine zipper transcription factor like 1	False	True	False
 Orphanet:303726	coiled-coil domain containing 103	False	True	False
 Orphanet:303739	KAT8 regulatory NSL complex subunit 1	False	True	False
@@ -2649,7 +2647,7 @@ Orphanet:303819	phospholipase C gamma 2	False	True	False
 Orphanet:303823	CASP2 and RIPK1 domain containing adaptor with death domain	False	True	False
 Orphanet:303828	glycerol-3-phosphate dehydrogenase 1	False	True	False
 Orphanet:303832	dolichyl-diphosphooligosaccharide--protein glycosyltransferase non-catalytic subunit	False	True	False
-Orphanet:304005	tubulin gamma complex associated protein 6	False	True	False
+Orphanet:304005	tubulin gamma complex component 6	False	True	False
 Orphanet:304075	nicotinamide nucleotide transhydrogenase	False	True	False
 Orphanet:304165	FKBP prolyl isomerase 14	False	True	False
 Orphanet:304172	procollagen-lysine,2-oxoglutarate 5-dioxygenase 3	False	True	False
@@ -2774,7 +2772,7 @@ Orphanet:319038	keratin 71	False	True	False
 Orphanet:320176	structural maintenance of chromosomes flexible hinge domain containing 1	False	True	False
 Orphanet:320192	cytochrome P450 family 26 subfamily C member 1	False	True	False
 Orphanet:320199	La ribonucleoprotein 7, transcriptional regulator	False	True	False
-Orphanet:320535	EPS8 like 3	False	True	False
+Orphanet:320535	EPS8 signaling adaptor L3	False	True	False
 Orphanet:320542	adaptor related protein complex 2 subunit sigma 1	False	True	False
 Orphanet:320561	Rho guanine nucleotide exchange factor 10	False	True	False
 Orphanet:320663	coiled-coil domain containing 88C	False	True	False
@@ -2927,7 +2925,6 @@ Orphanet:353369	STAM binding protein	False	True	False
 Orphanet:353372	DEP domain containing 5, GATOR1 subcomplex subunit	False	True	False
 Orphanet:353460	tetratricopeptide repeat domain 7A	False	True	False
 Orphanet:353497	G protein subunit alpha q	False	True	False
-Orphanet:353516	DNA topoisomerase II alpha	False	True	False
 Orphanet:353524	KIAA1549	False	True	False
 Orphanet:353548	solute carrier family 1 member 1	False	True	False
 Orphanet:353576	ATP synthase F1 subunit alpha	False	True	False
@@ -3124,7 +3121,6 @@ Orphanet:377662	STT3 oligosaccharyltransferase complex catalytic subunit A	False
 Orphanet:377672	STT3 oligosaccharyltransferase complex catalytic subunit B	False	True	False
 Orphanet:377682	GDP-mannose pyrophosphorylase A	False	True	False
 Orphanet:377743	NADH:ubiquinone oxidoreductase subunit A13	False	True	False
-Orphanet:377752	ATP synthase mitochondrial F1 complex assembly factor 1	False	True	False
 Orphanet:390741	centrosome and spindle pole associated protein 1	False	True	False
 Orphanet:390746	BBSome interacting protein 1	False	True	False
 Orphanet:390756	eukaryotic translation initiation factor 4A3	False	True	False
@@ -3202,7 +3198,7 @@ Orphanet:401879	TATA-box binding protein associated factor 2	False	True	False
 Orphanet:401908	T-cell receptor alpha constant	False	True	False
 Orphanet:401930	tripartite motif containing 2	False	True	False
 Orphanet:402368	glutaredoxin and cysteine rich domain containing 2	False	True	False
-Orphanet:402371	epidermal growth factor receptor pathway substrate 8	False	True	False
+Orphanet:402371	EGFR pathway substrate 8, signaling adaptor	False	True	False
 Orphanet:402379	interleukin 21	False	True	False
 Orphanet:402549	RNA binding region (RNP1, RRM) containing 3	False	True	False
 Orphanet:402562	nuclear receptor subfamily 2 group F member 2	False	True	False
@@ -3211,7 +3207,7 @@ Orphanet:402648	adaptor related protein complex 1 subunit sigma 3	False	True	Fal
 Orphanet:402736	spalt like transcription factor 2	False	True	False
 Orphanet:402744	protein tyrosine phosphatase non-receptor type 3	False	True	False
 Orphanet:403061	epithelial membrane protein 2	False	True	False
-Orphanet:403096	pre-mRNA processing factor 4	False	True	False
+Orphanet:403096	pre-mRNA splicing tri-snRNP complex factor PRPF4	False	True	False
 Orphanet:403187	spinocerebellar ataxia 32	False	True	False
 Orphanet:403281	ERCC excision repair 6 like 2	False	True	False
 Orphanet:403288	mitochondrial calcium uptake 1	False	True	False
@@ -3367,7 +3363,7 @@ Orphanet:426034	dishevelled segment polarity protein 1	False	True	False
 Orphanet:426049	synaptosome associated protein 25	False	True	False
 Orphanet:426073	salt inducible kinase 1	False	True	False
 Orphanet:426083	hippocalcin	False	True	False
-Orphanet:426086	tubulin gamma complex associated protein 4	False	True	False
+Orphanet:426086	tubulin gamma complex component 4	False	True	False
 Orphanet:426145	G protein-coupled receptor 161	False	True	False
 Orphanet:426564	enoyl-CoA hydratase, short chain 1	False	True	False
 Orphanet:426568	nitric oxide synthase 1	False	True	False
@@ -3556,7 +3552,6 @@ Orphanet:456808	dishevelled segment polarity protein 3	False	True	False
 Orphanet:456826	nucleoporin 93	False	True	False
 Orphanet:456828	nucleoporin 205	False	True	False
 Orphanet:456982	bone morphogenetic protein 6	False	True	False
-Orphanet:456990	lipoyl(octanoyl) transferase 2	False	True	False
 Orphanet:456998	mitochondrial pyruvate carrier 1	False	True	False
 Orphanet:457009	carbamoyl-phosphate synthetase 2, aspartate transcarbamylase, and dihydroorotase	False	True	False
 Orphanet:457065	solute carrier family 9 member A1	False	True	False
@@ -3574,7 +3569,6 @@ Orphanet:457562	distal-less homeobox 4	False	True	False
 Orphanet:457568	inositol polyphosphate multikinase	False	True	False
 Orphanet:457570	clathrin heavy chain like 1	False	True	False
 Orphanet:457585	heterogeneous nuclear ribonucleoprotein K	False	True	False
-Orphanet:457688	EPH receptor A4	False	True	False
 Orphanet:457735	LIM domain only 1	False	True	False
 Orphanet:458247	PLAG1 zinc finger	False	True	False
 Orphanet:458253	nth like DNA glycosylase 1	False	True	False
@@ -3654,12 +3648,13 @@ Orphanet:469050	ubiquitin like modifier activating enzyme 5	False	True	False
 Orphanet:469057	glutamate ionotropic receptor NMDA type subunit 2D	False	True	False
 Orphanet:469582	component of inhibitor of nuclear factor kappa B kinase complex	False	True	False
 Orphanet:469734	NME/NM23 family member 7	False	True	False
-Orphanet:469890	ATP binding cassette subfamily C member 1	False	True	False
+Orphanet:469890	ATP binding cassette subfamily C member 1 (ABCC1 blood group)	False	True	False
 Orphanet:469928	adenylosuccinate synthase 1	False	True	False
 Orphanet:469930	argonaute RISC component 1	False	True	False
 Orphanet:469932	argonaute 2, RISC catalytic component	False	True	False
 Orphanet:469946	ankyrin repeat and sterile alpha motif domain containing 3	False	True	False
 Orphanet:469950	adaptor related protein complex 3 subunit delta 1	False	True	False
+Orphanet:469958	archain 1	False	True	False
 Orphanet:469962	AT-rich interaction domain 2	False	True	False
 Orphanet:469968	ATPase family AAA domain containing 3A	False	True	False
 Orphanet:469974	axin 1	False	True	False
@@ -3675,27 +3670,28 @@ Orphanet:470040	coiled-coil domain containing 115	False	True	False
 Orphanet:470042	coiled-coil domain containing 174	False	True	False
 Orphanet:470052	CD70 molecule	False	True	False
 Orphanet:470056	cell division cycle 42	False	True	False
+Orphanet:470064	cadherin EGF LAG seven-pass G-type receptor 1	False	True	False
 Orphanet:470084	chromodomain helicase DNA binding protein 4	False	True	False
 Orphanet:470086	chromodomain helicase DNA binding protein 5	False	True	False
 Orphanet:470098	calcium and integrin binding 1	False	True	False
 Orphanet:470102	CDKN1A interacting zinc finger protein 1	False	True	False
+Orphanet:470116	collagen beta(1-O)galactosyltransferase 1	False	True	False
 Orphanet:470128	coenzyme Q7, hydroxylase	False	True	False
 Orphanet:470140	casein kinase 2 alpha 1	False	True	False
 Orphanet:470146	catenin delta 1	False	True	False
 Orphanet:470150	cut like homeobox 1	False	True	False
 Orphanet:470152	cut like homeobox 2	False	True	False
-Orphanet:470170	death domain associated protein	False	True	False
 Orphanet:470180	DEAD-box helicase 41	False	True	False
 Orphanet:470184	DEAH-box helicase 38	False	True	False
 Orphanet:470200	DLEC1 cilia and flagella associated protein	False	True	False
 Orphanet:470204	discs large MAGUK scaffold protein 1	False	True	False
 Orphanet:470220	distal-less homeobox 6	False	True	False
-Orphanet:470228	doublesex and mab-3 related transcription factor 3	False	True	False
 Orphanet:470234	dynein axonemal heavy chain 10	False	True	False
 Orphanet:470266	eukaryotic translation initiation factor 2 subunit gamma	False	True	False
 Orphanet:470272	ER membrane protein complex subunit 1	False	True	False
 Orphanet:470274	elastin microfibril interfacer 1	False	True	False
 Orphanet:470286	erythropoietin	False	True	False
+Orphanet:470292	erbb2 interacting protein	False	True	False
 Orphanet:470322	F-box protein 28	False	True	False
 Orphanet:470342	flavin adenine dinucleotide synthetase 1	False	True	False
 Orphanet:470348	forkhead box A2	False	True	False
@@ -3737,6 +3733,7 @@ Orphanet:470698	methenyltetrahydrofolate synthetase	False	True	False
 Orphanet:470718	myelin regulatory factor	False	True	False
 Orphanet:470720	Myb like, SWIRM and MPN domains 1	False	True	False
 Orphanet:470722	myelin transcription factor 1 like	False	True	False
+Orphanet:470724	N-alpha-acetyltransferase 15, NatA auxiliary subunit	False	True	False
 Orphanet:470736	NADH:ubiquinone oxidoreductase subunit A6	False	True	False
 Orphanet:470748	NADH:ubiquinone oxidoreductase subunit B10	False	True	False
 Orphanet:470768	NEDD4 like E3 ubiquitin protein ligase	False	True	False
@@ -3744,6 +3741,7 @@ Orphanet:470770	nuclear factor of activated T cells 5	False	True	False
 Orphanet:470780	NIPA magnesium transporter 2	False	True	False
 Orphanet:470800	netrin 1	False	True	False
 Orphanet:470810	obscurin, cytoskeletal calmodulin and titin-interacting RhoGEF	False	True	False
+Orphanet:470826	prolyl 4-hydroxylase, transmembrane	False	True	False
 Orphanet:470828	phosphofurin acidic cluster sorting protein 2	False	True	False
 Orphanet:470872	progesterone receptor membrane component 1	False	True	False
 Orphanet:470874	pleckstrin homology domain interacting protein	False	True	False
@@ -3755,6 +3753,7 @@ Orphanet:470934	poly(U) binding splicing factor 60	False	True	False
 Orphanet:470948	Rac family small GTPase 1	False	True	False
 Orphanet:470980	capping protein regulator and myosin 1 linker 2	False	True	False
 Orphanet:470984	ring finger protein 170	False	True	False
+Orphanet:470992	RAR related orphan receptor A	False	True	False
 Orphanet:470996	RAR related orphan receptor C	False	True	False
 Orphanet:470998	ribosomal protein L27	False	True	False
 Orphanet:471000	ribosomal protein L31	False	True	False
@@ -3769,7 +3768,7 @@ Orphanet:471062	SIN3 transcription regulator family member A	False	True	False
 Orphanet:471070	solute carrier family 18 member A3	False	True	False
 Orphanet:471072	solute carrier family 1 member 2	False	True	False
 Orphanet:471076	solute carrier family 25 member 32	False	True	False
-Orphanet:471078	solute carrier family 27 member 5	False	True	False
+Orphanet:471090	solute carrier family 4 member 10	False	True	False
 Orphanet:471096	solute carrier family 6 member 14	False	True	False
 Orphanet:471110	schlafen family member 14	False	True	False
 Orphanet:471112	SMAD family member 2	False	True	False
@@ -3789,6 +3788,7 @@ Orphanet:471214	transferrin receptor	False	True	False
 Orphanet:471224	translocase of inner mitochondrial membrane domain containing 1	False	True	False
 Orphanet:471232	transmembrane protein 107	False	True	False
 Orphanet:471234	transmembrane protein 199	False	True	False
+Orphanet:471244	TNF receptor superfamily member 9	False	True	False
 Orphanet:471250	tryptophan 2,3-dioxygenase	False	True	False
 Orphanet:471260	trio Rho guanine nucleotide exchange factor	False	True	False
 Orphanet:471262	thyroid hormone receptor interactor 12	False	True	False
@@ -3809,7 +3809,6 @@ Orphanet:474406	dynein cytoplasmic 2 light intermediate chain 1	False	True	False
 Orphanet:474419	estrogen receptor 2	False	True	False
 Orphanet:474429	podocalyxin like	False	True	False
 Orphanet:474467	G protein-coupled receptor 68	False	True	False
-Orphanet:474489	complement factor H related 4	False	True	False
 Orphanet:475300	polycystin 1 like 1, transient receptor potential channel interacting	False	True	False
 Orphanet:476149	KIAA0753	False	True	False
 Orphanet:476167	membrane bound O-acyltransferase domain containing 7	False	True	False
@@ -3876,7 +3875,7 @@ Orphanet:485554	ATPase H+ transporting V1 subunit A	False	True	False
 Orphanet:485563	ssu-2 homolog	False	True	False
 Orphanet:485569	Rho/Rac guanine nucleotide exchange factor 18	False	True	False
 Orphanet:486844	collectin subfamily member 10	False	True	False
-Orphanet:486881	chromosome 12 open reading frame 4	False	True	False
+Orphanet:486881	FERRY endosomal RAB5 effector complex subunit 3	False	True	False
 Orphanet:486883	alpha 2-HS glycoprotein	False	True	False
 Orphanet:486889	keratinocyte differentiation factor 1	False	True	False
 Orphanet:486955	Rare pediatric rheumatologic disease	False	True	False
@@ -3927,7 +3926,7 @@ Orphanet:492445	receptor tyrosine kinase like orphan receptor 1	False	True	False
 Orphanet:492456	WW domain binding protein 2	False	True	False
 Orphanet:492464	solute carrier family 44 member 4	False	True	False
 Orphanet:492474	DAZ interacting zinc finger protein 1 like	False	True	False
-Orphanet:492482	EPS8 like 2	False	True	False
+Orphanet:492482	EPS8 signaling adaptor L2	False	True	False
 Orphanet:492557	intraflagellar transport 88	False	True	False
 Orphanet:492567	progesterone immunomodulatory binding factor 1	False	True	False
 Orphanet:492579	calpain 1	False	True	False
@@ -3960,6 +3959,7 @@ Orphanet:494241	zona pellucida glycoprotein 3	False	True	False
 Orphanet:494252	fms related receptor tyrosine kinase 1	False	True	False
 Orphanet:494881	cyclin dependent kinase 13	False	True	False
 Orphanet:494894	G protein subunit beta 1	False	True	False
+Orphanet:494899	EBF transcription factor 3	False	True	False
 Orphanet:494915	glutamine rich 1	False	True	False
 Orphanet:494919	SET nuclear proto-oncogene	False	True	False
 Orphanet:494927	SET domain containing 1A, histone lysine methyltransferase	False	True	False
@@ -3974,7 +3974,7 @@ Orphanet:495724	WD repeat domain 1	False	True	False
 Orphanet:495760	tryptophanyl-tRNA synthetase 1	False	True	False
 Orphanet:495783	roundabout guidance receptor 1	False	True	False
 Orphanet:496171	ferric chelate reductase 1 like	False	True	False
-Orphanet:496177	phosphatidylinositol glycan anchor biosynthesis class G	False	True	False
+Orphanet:496177	phosphatidylinositol glycan anchor biosynthesis class G (EMM blood group)	False	True	False
 Orphanet:496461	SIX homeobox 2	False	True	False
 Orphanet:496652	O-sialoglycoprotein endopeptidase	False	True	False
 Orphanet:496659	TP53 regulating kinase	False	True	False
@@ -4029,7 +4029,6 @@ Orphanet:506216	Rare disorder potentially indicated for bowel transplant	False	T
 Orphanet:506219	Rare disorder potentially indicated for hematopoietic stem cell transplant	False	True	False
 Orphanet:506222	Rare disorder potentially indicated for lung transplant	False	True	False
 Orphanet:506225	Rare disorder potentially indicated for heart transplant	False	True	False
-Orphanet:506368	ARV1 homolog, fatty acid homeostasis modulator	False	True	False
 Orphanet:506401	gamma-glutamyltransferase 1	False	True	False
 Orphanet:506519	cyclin dependent kinase 19	False	True	False
 Orphanet:507587	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 1	False	True	False
@@ -4048,6 +4047,7 @@ Orphanet:508071	FGF1 intracellular binding protein	False	True	False
 Orphanet:508638	alkaline ceramidase 3	False	True	False
 Orphanet:508692	misato mitochondrial distribution and morphology regulator 1	False	True	False
 Orphanet:508711	zinc finger protein 462	False	True	False
+Orphanet:508946	BCL11 transcription factor B	False	True	False
 Orphanet:508970	cadherin 2	False	True	False
 Orphanet:508976	chromodomain helicase DNA binding protein 1	False	True	False
 Orphanet:509002	EPH receptor B4	False	True	False
@@ -4064,6 +4064,7 @@ Orphanet:509234	receptor interacting serine/threonine kinase 1	False	True	False
 Orphanet:509236	ring finger protein 2	False	True	False
 Orphanet:509258	suppressor of cytokine signaling 1	False	True	False
 Orphanet:509260	spen family transcriptional repressor	False	True	False
+Orphanet:509262	speckle type BTB/POZ protein	False	True	False
 Orphanet:509296	TNF receptor associated factor 7	False	True	False
 Orphanet:509298	transformation/transcription domain associated protein	False	True	False
 Orphanet:509320	zinc and ring finger 3	False	True	False
@@ -4080,6 +4081,7 @@ Orphanet:510896	CD55 molecule (Cromer blood group)	False	True	False
 Orphanet:512271	canopy FGF signaling regulator 3	False	True	False
 Orphanet:512453	dihydrolipoamide S-succinyltransferase	False	True	False
 Orphanet:512465	ATP synthase F1 subunit delta	False	True	False
+Orphanet:512501	cytochrome c oxidase assembly factor COX16	False	True	False
 Orphanet:512553	YME1 like 1 ATPase	False	True	False
 Orphanet:513401	glycoprotein nmb	False	True	False
 Orphanet:513418	STING1 ER exit protein 1	False	True	False
@@ -4088,7 +4090,6 @@ Orphanet:513968	castor zinc finger 1	False	True	False
 Orphanet:513988	forkhead box J1	False	True	False
 Orphanet:514000	jumonji and AT-rich interaction domain containing 2	False	True	False
 Orphanet:514006	latent transforming growth factor beta binding protein 1	False	True	False
-Orphanet:514010	MLX interacting protein like	False	True	False
 Orphanet:514012	muscle RAS oncogene homolog	False	True	False
 Orphanet:514016	non-SMC condensin II complex subunit D3	False	True	False
 Orphanet:514052	tripartite motif containing 71	False	True	False
@@ -4208,6 +4209,7 @@ Orphanet:529292	H2.0 like homeobox	False	True	False
 Orphanet:529328	GDNF inducible zinc finger protein 1	False	True	False
 Orphanet:529590	ALG5 dolichyl-phosphate beta-glucosyltransferase	False	True	False
 Orphanet:529620	ferredoxin reductase	False	True	False
+Orphanet:529660	ATPase family AAA domain containing 3B	False	True	False
 Orphanet:529710	ATP synthase membrane subunit k	False	True	False
 Orphanet:529730	cytochrome c oxidase subunit 6A2	False	True	False
 Orphanet:529744	NADH:ubiquinone oxidoreductase complex assembly factor 8	False	True	False
@@ -4335,6 +4337,7 @@ Orphanet:572348	basonuclin zinc finger protein 1	False	True	False
 Orphanet:572371	membrane associated ring-CH-type finger 6	False	True	False
 Orphanet:572405	DExH-box helicase 30	False	True	False
 Orphanet:572412	glutamate ionotropic receptor AMPA type subunit 4	False	True	False
+Orphanet:572421	heterogeneous nuclear ribonucleoprotein H2	False	True	False
 Orphanet:572477	bridge-like lipid transfer protein family member 1	False	True	False
 Orphanet:572486	peptidase, mitochondrial processing subunit beta	False	True	False
 Orphanet:573010	upstream transcription factor family member 3	False	True	False
@@ -4349,6 +4352,7 @@ Orphanet:580928	plastin 1	False	True	False
 Orphanet:580943	tetratricopeptide repeat domain 29	False	True	False
 Orphanet:581332	NIMA related kinase 10	False	True	False
 Orphanet:583333	angiopoietin 2	False	True	False
+Orphanet:584317	ceramide transporter 1	False	True	False
 Orphanet:585329	F-box and WD repeat domain containing 4	False	True	False
 Orphanet:585336	mannosidase alpha class 2C member 1	False	True	False
 Orphanet:585349	interferon regulatory factor 2 binding protein like	False	True	False
@@ -4376,6 +4380,7 @@ Orphanet:587138	azoospermia factor 1	False	True	False
 Orphanet:587142	FAT atypical cadherin 2	False	True	False
 Orphanet:587177	protein tyrosine phosphatase non-receptor type 23	False	True	False
 Orphanet:594386	discs large MAGUK scaffold protein 4	False	True	False
+Orphanet:594394	dedicator of cytokinesis 11	False	True	False
 Orphanet:594424	FCH and mu domain containing endocytic adaptor 1	False	True	False
 Orphanet:594489	interleukin 6 receptor	False	True	False
 Orphanet:594573	NCK associated protein 1 like	False	True	False
@@ -4389,6 +4394,7 @@ Orphanet:596998	C-terminal binding protein 1	False	True	False
 Orphanet:597004	RNA polymerase I subunit B	False	True	False
 Orphanet:597032	cell cycle associated protein 1	False	True	False
 Orphanet:597034	NME/NM23 family member 5	False	True	False
+Orphanet:597042	ribosomal protein L13	False	True	False
 Orphanet:599070	RAB, member of RAS oncogene family like 3	False	True	False
 Orphanet:599155	thioredoxin domain containing 15	False	True	False
 Orphanet:599174	mesoderm development LRP chaperone	False	True	False
@@ -4396,7 +4402,6 @@ Orphanet:599181	prolyl 4-hydroxylase subunit alpha 2	False	True	False
 Orphanet:599195	FKBP prolyl isomerase family member 6 (inactive)	False	True	False
 Orphanet:599197	VPS37D subunit of ESCRT-I	False	True	False
 Orphanet:599199	DnaJ heat shock protein family (Hsp40) member C30	False	True	False
-Orphanet:599201	BAF chromatin remodeling complex subunit BCL7B	False	True	False
 Orphanet:599209	eukaryotic translation initiation factor 4H	False	True	False
 Orphanet:599213	BUD23 rRNA methyltransferase and ribosome maturation factor	False	True	False
 Orphanet:599215	methyltransferase like 27	False	True	False
@@ -4413,6 +4418,7 @@ Orphanet:599932	TSPO associated protein 1	False	True	False
 Orphanet:600014	phosphate cytidylyltransferase 2, ethanolamine	False	True	False
 Orphanet:600016	ubiquitin associated protein 1	False	True	False
 Orphanet:600062	mitogen-activated protein kinase 8 interacting protein 3	False	True	False
+Orphanet:600070	ATPase family AAA domain containing 3C	False	True	False
 Orphanet:600094	phosphatidylserine decarboxylase	False	True	False
 Orphanet:600112	trafficking protein particle complex subunit 10	False	True	False
 Orphanet:600142	A-kinase anchoring protein 4	False	True	False
@@ -4422,19 +4428,25 @@ Orphanet:600209	cilia and flagella associated protein 47	False	True	False
 Orphanet:600231	eukaryotic translation elongation factor 1 beta 2	False	True	False
 Orphanet:600279	GS homeobox 2	False	True	False
 Orphanet:600291	H4 clustered histone 3	False	True	False
+Orphanet:600297	heterogeneous nuclear ribonucleoprotein R	False	True	False
 Orphanet:600313	lysine acetyltransferase 8	False	True	False
 Orphanet:600321	RIC1 homolog, RAB6A GEF complex partner 1	False	True	False
 Orphanet:600395	netrin G2	False	True	False
+Orphanet:600435	POU class 3 homeobox 3	False	True	False
 Orphanet:600439	protein phosphatase 2 catalytic subunit alpha	False	True	False
+Orphanet:600449	proline rich 12	False	True	False
 Orphanet:600475	SR-related CTD associated factor 4	False	True	False
 Orphanet:600529	tetratricopeptide repeat domain 5	False	True	False
 Orphanet:600533	ubiquitin protein ligase E3 component n-recognin 7	False	True	False
 Orphanet:600541	WASP family member 1	False	True	False
+Orphanet:600559	zinc finger protein 142	False	True	False
 Orphanet:600577	G protein subunit beta 2	False	True	False
 Orphanet:600633	H4 clustered histone 5	False	True	False
 Orphanet:600635	H4 clustered histone 9	False	True	False
 Orphanet:600645	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein zeta	False	True	False
 Orphanet:600655	LSM11, U7 small nuclear RNA associated	False	True	False
+Orphanet:600904	Sp6 transcription factor	False	True	False
+Orphanet:600936	ubiquitin like with PHD and ring finger domains 1	False	True	False
 Orphanet:600946	fibroblast growth factor 13	False	True	False
 Orphanet:601404	protein kinase C zeta	False	True	False
 Orphanet:601410	ubiquitination factor E4B	False	True	False
@@ -4448,7 +4460,7 @@ Orphanet:601796	CUGBP Elav-like family member 2	False	True	False
 Orphanet:601798	von Willebrand factor A domain containing 1	False	True	False
 Orphanet:601801	GIPC PDZ domain containing family member 1	False	True	False
 Orphanet:602220	serpin family A member 12	False	True	False
-Orphanet:602223	chibby family member 1, beta catenin antagonist	False	True	False
+Orphanet:602223	chibby 1, beta catenin antagonist	False	True	False
 Orphanet:602226	metaxin 2	False	True	False
 Orphanet:602231	Yip1 domain family member 5	False	True	False
 Orphanet:602235	protein associated with LIN7 1, MAGUK p55 family member	False	True	False
@@ -4490,7 +4502,7 @@ Orphanet:613329	LMBR1 domain containing 2	False	True	False
 Orphanet:613332	calcium voltage-gated channel subunit alpha1 I	False	True	False
 Orphanet:613338	HEAT repeat containing 3	False	True	False
 Orphanet:613714	biogenesis of lysosomal organelles complex 1 subunit 5	False	True	False
-Orphanet:614200	'RNA, U7 small nuclear 1'	False	True	False
+Orphanet:614200	RNA, U7 small nuclear 1	False	True	False
 Orphanet:614208	ubiquitin like modifier activating enzyme 2	False	True	False
 Orphanet:614986	pyruvate dehydrogenase E1 subunit alpha 2	False	True	False
 Orphanet:615220	yrdC N6-threonylcarbamoyltransferase domain containing	False	True	False
@@ -4612,7 +4624,7 @@ Orphanet:650040	ciliogenesis associated TTC17 interacting protein	False	True	Fal
 Orphanet:650043	ring finger protein 212	False	True	False
 Orphanet:650045	telomere repeat binding bouquet formation protein 1	False	True	False
 Orphanet:650047	telomere repeat binding bouquet formation protein 2	False	True	False
-Orphanet:650049	Mov10 like RISC complex RNA helicase 1	False	True	False
+Orphanet:650049	Mov10 like RNA helicase 1	False	True	False
 Orphanet:650051	F-box protein 43	False	True	False
 Orphanet:650053	zona pellucida binding protein	False	True	False
 Orphanet:650055	C2 calcium dependent domain containing 6	False	True	False
@@ -4626,6 +4638,153 @@ Orphanet:652510	Genetic autoinflammatory syndrome with acne and/or hidradenitis 
 Orphanet:652816	serine/arginine repetitive matrix 2	False	True	False
 Orphanet:653434	Autoinflammatory syndrome with acne and/or hidradenitis suppurativa	False	True	False
 Orphanet:653915	zinc finger homeobox 2	False	True	False
+Orphanet:659387	PRC-2 complex-related overgrowth spectrum	False	True	False
+Orphanet:659396	Cohen-Gibson syndrome	False	True	False
+Orphanet:659463	Imagawa-Matsumoto syndrome	False	True	False
+Orphanet:659609	Facial dysmorphism-global developmental delay-hypotonia-polymicrogyria syndrome	False	True	False
+Orphanet:659626	Single isolated optic neuritis	False	True	False
+Orphanet:659634	Relapsing isolated optic neuritis	False	True	False
+Orphanet:659642	Rauch-Steindl syndrome	False	True	False
+Orphanet:659672	Harderoporphyria	False	True	False
+Orphanet:659681	Erythropoietic porphyria	False	True	False
+Orphanet:659694	Hepatic porphyria	False	True	False
+Orphanet:659698	Hepatic cutaneous porphyria	False	True	False
+Orphanet:659702	Intrauterine growth retardation-micrognathia-short stature-facial dysmorphism-rhizomelic shortening syndrome	False	True	False
+Orphanet:659707	Yersinia pseudotuberculosis infection	False	True	False
+Orphanet:659712	Rare yersiniosis	False	True	False
+Orphanet:659744	Ocular surface squamous neoplasia	False	True	False
+Orphanet:659756	Oroya fever	False	True	False
+Orphanet:659759	Verruga peruana	False	True	False
+Orphanet:659873	Wormian bones-micrognathia-abnormal dentition-progeroid syndrome	False	True	False
+Orphanet:659904	Multiple congenital anomalies-neurodevelopmental delay-ocular abnormalities syndrome	False	True	False
+Orphanet:659908	Glanders	False	True	False
+Orphanet:659975	Sensorineural hearing loss-spastic quadriplegia-intellectual disability syndrome	False	True	False
+Orphanet:660012	Developmental delay-language impairment-dopa responsive dystonia-parkinsonism syndrome due to a NR4A2 point mutation	False	True	False
+Orphanet:660017	Developmental delay-language impairment-dopa responsive dystonia-parkinsonism syndrome	False	True	False
+Orphanet:660021	Orofacial clefting-cardiac anomalies-facial dysmorphism syndrome	False	True	False
+Orphanet:660030	PR/SET domain 10	False	True	False
+Orphanet:660053	Psittacosis	False	True	False
+Orphanet:660763	angiomotin like 1	False	True	False
+Orphanet:661412	Megaloblastic anemia-immunodeficiency due to folate transporter 1 deficiency	False	True	False
+Orphanet:661526	MBD4-related tumor predisposition syndrome	False	True	False
+Orphanet:662169	Phelan-McDermid syndrome due to 22q13.3 deletion	False	True	False
+Orphanet:662172	Phelan-McDermid syndrome due to SHANK3 mutation	False	True	False
+Orphanet:662175	Macrocephaly-congenital heart disease-facial dysmorphism-intellectual disability syndrome	False	True	False
+Orphanet:662179	Microcephaly-hearing loss-facial dysmorphism-intellectual disability syndrome	False	True	False
+Orphanet:662184	Congenital muscular dystrophy-cataract-intellectual disability syndrome	False	True	False
+Orphanet:662189	Neurodevelopmental disorder-brain malformation-facial dysmorphism-brachydactyly syndrome	False	True	False
+Orphanet:662194	heterogeneous nuclear ribonucleoprotein C	False	True	False
+Orphanet:662198	Neurodevelopmental delay-intellectual disability-skeletal defects syndrome	False	True	False
+Orphanet:662207	Neurodevelopmental delay-brain malformations-skeletal defects-intellectual disability syndrome	False	True	False
+Orphanet:662216	Mucopolysaccharidosis type 10	False	True	False
+Orphanet:662222	arylsulfatase family member K	False	True	False
+Orphanet:662229	Episodic memory defect leukoencephalopathy	False	True	False
+Orphanet:662234	Neurodevelopmental delay-congenital heart defects-intellectual disability syndrome	False	True	False
+Orphanet:662240	Frey syndrome	False	True	False
+Orphanet:662255	Grisel syndrome	False	True	False
+Orphanet:662367	NESCAV syndrome	False	True	False
+Orphanet:662376	Gastric duplication	False	True	False
+Orphanet:662388	Gallbladder duplication	False	True	False
+Orphanet:662392	Colonic duplication	False	True	False
+Orphanet:662405	Pyloric duplication	False	True	False
+Orphanet:662456	Small intestine duplication	False	True	False
+Orphanet:662473	Duodenal duplication	False	True	False
+Orphanet:662480	Jujeno-ileal duplication	False	True	False
+Orphanet:662721	Placenta accreta spectrum disorder	False	True	False
+Orphanet:662762	Motor delay-microcephaly-speech impairment-ocular abnormalities syndrome	False	True	False
+Orphanet:662786	Vasa previa	False	True	False
+Orphanet:662829	Intellectual disability-speech delay-dysmorphic features-T cell abnormalities syndrome	False	True	False
+Orphanet:662934	Acute megakaryoblastic leukemia in adult	False	True	False
+Orphanet:663289	actin related protein 2/3 complex subunit 4	False	True	False
+Orphanet:663458	chromodomain helicase DNA binding protein 6	False	True	False
+Orphanet:663850	N-ribosyldihydronicotinamide:quinone dehydrogenase 2	False	True	False
+Orphanet:663868	potassium voltage-gated channel subfamily C member 2	False	True	False
+Orphanet:663910	ciliated left-right organizer metallopeptidase	False	True	False
+Orphanet:663918	ATPase H+ transporting V0 subunit a1	False	True	False
+Orphanet:664372	Soft and hard cleft palate	False	True	False
+Orphanet:664377	MGP-related spondyloepiphyseal dysplasia	False	True	False
+Orphanet:664401	Cardiac anomalies-short stature-joint hypermobility-facial dysmorphism syndrome due to TAB2 mutation	False	True	False
+Orphanet:664404	6q25.1 microdeletion syndrome	False	True	False
+Orphanet:664410	Brain abnormalities-severe developmental delay-facial dysmorphism-intellectual disability syndrome	False	True	False
+Orphanet:664416	Brain abnormalities-severe developmental delay-facial dysmorphism-intellectual disability syndrome due to MEF2C mutation	False	True	False
+Orphanet:664430	Neurodevelopmental disorder-slit-like lateral ventricles-intellectual disability syndrome	False	True	False
+Orphanet:664438	Gingival fibromatosis-aortic root dilatation-facial dysmorphism-intellectual disability syndrome	False	True	False
+Orphanet:664450	Inherited cancer-predisposing lymphoproliferative syndrome	False	True	False
+Orphanet:664456	Immune dysregulation disease with immunodeficiency associated with EBV susceptibility	False	True	False
+Orphanet:664482	Primary hemophagocytic lymphohistiocytosis without hypopigmentation	False	True	False
+Orphanet:664500	Hermansky-Pudlak syndrome due to AP3B1 deficiency	False	True	False
+Orphanet:664511	Early-onset severe Hermansky-Pudlak syndrome with hearing loss, due to AP3D1 deficiency	False	True	False
+Orphanet:664699	EBV-induced lymphoproliferative disease due to RASGRP1 deficiency	False	True	False
+Orphanet:664711	EBV-induced lymphoproliferative disease due to PRKCD deficiency	False	True	False
+Orphanet:664726	EBV-induced lymphoproliferative disease due to CD137 deficiency	False	True	False
+Orphanet:664729	EBV-induced lymphoproliferative disease due to TET2 deficiency	False	True	False
+Orphanet:664734	EBV susceptibility with hemophagocytic lymphohistiocytosis as a major feature	False	True	False
+Orphanet:664787	Nicolau syndrome	False	True	False
+Orphanet:664901	Trigeminal trophic syndrome	False	True	False
+Orphanet:664912	Neonatal renal venous thrombosis	False	True	False
+Orphanet:664923	Congenital arthrogryposis-microcephaly-facial dysmorphism-severe neurodevelopmental delay syndrome	False	True	False
+Orphanet:665044	Common arterial trunk with aortic dominance	False	True	False
+Orphanet:665058	Common arterial trunk with pulmonary dominance and interrupted aortic arch	False	True	False
+Orphanet:667589	Isolated congenital femoral bifurcation	False	True	False
+Orphanet:667662	Breast implant-associated anaplastic large cell lymphoma	False	True	False
+Orphanet:667678	Intraoral basal cell carcinoma	False	True	False
+Orphanet:672842	guided entry of tail-anchored proteins factor 3, ATPase	False	True	False
+Orphanet:672979	Craniosynostosis-facial dysmorphism-brachydactyly syndrome	False	True	False
+Orphanet:672985	Craniosynostosis-skeletal and cerebellar anomalies-learning disabilities syndrome	False	True	False
+Orphanet:673466	Malignant vascular tumor	False	True	False
+Orphanet:673470	Benign vascular tumor	False	True	False
+Orphanet:673473	Borderline vascular tumor	False	True	False
+Orphanet:673525	Intravascular papillary endothelial hyperplasia	False	True	False
+Orphanet:673538	Littoral cell hemangioma of the spleen	False	True	False
+Orphanet:673543	Papillary hemangioma	False	True	False
+Orphanet:673556	Pseudomyogenic hemangioendothelioma	False	True	False
+Orphanet:673568	Eccrine angiomatous hamartoma	False	True	False
+Orphanet:673574	Reactive angioendotheliomatosis	False	True	False
+Orphanet:673580	Classic pilocytic astrocytoma	False	True	False
+Orphanet:673585	Pilocytic astrocytoma with histological features of anaplasia	False	True	False
+Orphanet:674499	Proteoglycan-related bone disorder	False	True	False
+Orphanet:674648	Syndrome with congenital phagocyte functional defect as a major feature	False	True	False
+Orphanet:674653	Actinomyopathy-associated syndromic thrombocytopenia	False	True	False
+Orphanet:674734	lysine methyltransferase 5B	False	True	False
+Orphanet:674762	Early-onset autoinflammatory syndrome due to A20 haploinsufficiency	False	True	False
+Orphanet:674896	Non-syndromic congenital phagocyte functional defect	False	True	False
+Orphanet:674924	Isolated retinal racemose hemangioma	False	True	False
+Orphanet:674930	Perifoveal exudative vascular anomalous complex	False	True	False
+Orphanet:674935	Torpedo Maculopathy	False	True	False
+Orphanet:674943	Isolated angioid streaks	False	True	False
+Orphanet:674947	Diffuse unilateral subacute neuroretinitis	False	True	False
+Orphanet:674953	Multiple evanescent white dot syndrome	False	True	False
+Orphanet:674958	Stellate multiform amelanotic choroidopathy	False	True	False
+Orphanet:674965	Choroidal osteoma	False	True	False
+Orphanet:674968	Bilateral diffuse uveal melanocytic proliferation disease	False	True	False
+Orphanet:675216	Spinocerebellar ataxia type 27B	False	True	False
+Orphanet:675359	Anastomosing haemangioma	False	True	False
+Orphanet:675362	Hobnail hemangioma	False	True	False
+Orphanet:675369	Microvenular haemangioma	False	True	False
+Orphanet:675380	Isolated segmental infantile hemangioma	False	True	False
+Orphanet:675396	Epithelioid hemangioma	False	True	False
+Orphanet:675404	May-Thurner syndrome	False	True	False
+Orphanet:675597	Acquired elastotic haemangioma	False	True	False
+Orphanet:675628	TLR8-related inflammation-severe neutropenia-bone marrow failure-lymphoproliferation syndrome	False	True	False
+Orphanet:675767	Severe congenital neutropenia-developmental delay-pancreatic insufficiency syndrome due to SRP54 deficiency	False	True	False
+Orphanet:675775	Severe congenital myelofibrosis-pancytopenia-intellectual disability-neurologic and ophthalmic abnormalities syndrome	False	True	False
+Orphanet:675782	Progressive hypotonia-intellectual disability-facial dysmorphism syndrome due to FYVE-defective RBSN	False	True	False
+Orphanet:675814	Adenomatoid tumour of the pleura	False	True	False
+Orphanet:675822	Well-differentiated papillary mesothelial tumour of the pleura	False	True	False
+Orphanet:675833	Localized pleural mesothelioma	False	True	False
+Orphanet:675837	Diffused pleural mesothelioma	False	True	False
+Orphanet:675841	Pleural mesothelioma in situ	False	True	False
+Orphanet:675976	Adenomatoid tumour of the peritoneum	False	True	False
+Orphanet:676030	Primary benign peritoneal tumor	False	True	False
+Orphanet:676033	Well-differentiated papillary mesothelial tumour of the peritoneum	False	True	False
+Orphanet:676036	Peritoneal mesothelioma in situ	False	True	False
+Orphanet:676039	Combined immunodeficiency due to FOXN1 haploinsufficiency	False	True	False
+Orphanet:676125	X-linked immune dysregulation with inflammatory bowel disease due to ELF4 deficiency	False	True	False
+Orphanet:676458	FosB proto-oncogene, AP-1 transcription factor subunit	False	True	False
+Orphanet:676489	RNA binding motif protein X-linked	False	True	False
+Orphanet:677320	cyclin dependent kinase 8	False	True	False
+Orphanet:682951	toll like receptor 8	False	True	False
+Orphanet:683067	mab-21 like 1	False	True	False
 Orphanet:90051	Sepsis in premature infants	False	True	False
 Orphanet:90052	Recurrent hepatitis C virus induced liver disease in liver transplant recipients	False	True	False
 Orphanet:90053	Complications after hematopoietic stem cell transplantation	False	True	False
@@ -4700,7 +4859,6 @@ Orphanet:1211	OBSOLETE: Atrichia-mental and growth delay syndrome	False	True	Tru
 Orphanet:1219	Aurocephalosyndactyly	False	True	True
 Orphanet:1232	NON RARE IN EUROPE: Barrett esophagus	False	True	True
 Orphanet:1235	OBSOLETE: Ectodermal dysplasia-absent dermatoglyphs syndrome	False	True	True
-Orphanet:1239	OBSOLETE: Behr syndrome	False	True	True
 Orphanet:1244	NON RARE IN EUROPE: Bicuspid aortic valve	False	True	True
 Orphanet:1249	OBSOLETE: Binswanger disease	False	True	True
 Orphanet:1250	OBSOLETE: Blaichman syndrome	False	True	True
@@ -5827,8 +5985,8 @@ Orphanet:100013	Lissencephaly with cerebellar hypoplasia type C	True	False	False
 Orphanet:100014	Lissencephaly with cerebellar hypoplasia type D	True	False	False
 Orphanet:100015	Lissencephaly with cerebellar hypoplasia type E	True	False	False
 Orphanet:100016	Lissencephaly with cerebellar hypoplasia type F	True	False	False
-Orphanet:100019	Refractory anemia with excess blasts type 1	True	False	False
-Orphanet:100020	Refractory anemia with excess blasts type 2	True	False	False
+Orphanet:100019	Myelodysplastic neoplasm with increased blasts type 1	True	False	False
+Orphanet:100020	Myelodysplastic neoplasm with increased blasts type 2	True	False	False
 Orphanet:100021	Primary plasmacytoma of the bone	True	False	False
 Orphanet:100022	Extramedullary soft tissue plasmacytoma	True	False	False
 Orphanet:100024	Mu-heavy chain disease	True	False	False
@@ -5944,7 +6102,6 @@ Orphanet:101089	Hyper-IgM syndrome type 2	True	False	False
 Orphanet:101090	Hyper-IgM syndrome type 3	True	False	False
 Orphanet:101091	Hyper-IgM syndrome type 4	True	False	False
 Orphanet:101092	Hyper-IgM syndrome type 5	True	False	False
-Orphanet:101096	Aregenerative anemia	True	False	False
 Orphanet:101097	Autosomal recessive Charcot-Marie-Tooth disease with hoarseness	True	False	False
 Orphanet:101101	Charcot-Marie-Tooth disease type 2B2	True	False	False
 Orphanet:101102	Charcot-Marie-Tooth disease type 2H	True	False	False
@@ -5974,7 +6131,7 @@ Orphanet:101940	Rare metabolic liver disease	True	False	False
 Orphanet:101941	Rare biliary tract disease	True	False	False
 Orphanet:101943	Rare hepatic and biliary tract tumor	True	False	False
 Orphanet:101944	Rare pulmonary disease	True	False	False
-Orphanet:101945	Rare bronchopulmonary tumor	True	False	False
+Orphanet:101945	Rare bronchopulmonary and pleural cavity tumors	True	False	False
 Orphanet:101950	Rare eye tumor	True	False	False
 Orphanet:101952	Rare diabetes mellitus	True	False	False
 Orphanet:101953	Rare dyslipidemia	True	False	False
@@ -6191,7 +6348,6 @@ Orphanet:1234	Bartsocas-Papas syndrome	True	False	False
 Orphanet:1236	Severe microbrachycephaly-intellectual disability-athetoid cerebral palsy syndrome	True	False	False
 Orphanet:1237	Beemer-Ertbruggen syndrome	True	False	False
 Orphanet:124	Diamond-Blackfan anemia	True	False	False
-Orphanet:1240	Metaphyseal acroscyphodysplasia	True	False	False
 Orphanet:1241	Bencze syndrome	True	False	False
 Orphanet:1243	Best vitelliform macular dystrophy	True	False	False
 Orphanet:1246	Brachydactyly-nystagmus-cerebellar ataxia syndrome	True	False	False
@@ -6298,7 +6454,7 @@ Orphanet:137678	Spondyloepiphyseal dysplasia with metatarsal shortening	True	Fal
 Orphanet:137681	Hepatoencephalopathy due to combined oxidative phosphorylation defect type 1	True	False	False
 Orphanet:137686	Asherman syndrome	True	False	False
 Orphanet:1377	Cataract-microcornea syndrome	True	False	False
-Orphanet:137754	Neurological conditions associated with aminoacylase 1 deficiency	True	False	False
+Orphanet:137754	Aminoacylase 1 deficiency	True	False	False
 Orphanet:137776	Lethal congenital contracture syndrome type 2	True	False	False
 Orphanet:137783	Lethal congenital contracture syndrome type 3	True	False	False
 Orphanet:137807	Primary cutaneous amyloidosis	True	False	False
@@ -6321,7 +6477,7 @@ Orphanet:137920	Choanal atresia, bilateral	True	False	False
 Orphanet:137926	Primary laryngeal lymphangioma	True	False	False
 Orphanet:137929	Neonatal brainstem dysfunction	True	False	False
 Orphanet:137932	Congenital laryngeal palsy	True	False	False
-Orphanet:137935	Laryngotracheal angioma	True	False	False
+Orphanet:137935	Airway infantile hemangioma	True	False	False
 Orphanet:138	CHARGE syndrome	True	False	False
 Orphanet:1380	Cataract-nephropathy-encephalopathy syndrome	True	False	False
 Orphanet:138041	Pierre Robin syndrome associated with collagen disease	True	False	False
@@ -6483,11 +6639,9 @@ Orphanet:141269	Lateral facial cleft	True	False	False
 Orphanet:141276	Tessier number 7 facial cleft	True	False	False
 Orphanet:141288	Midline cervical cleft	True	False	False
 Orphanet:141291	Cleft lip and alveolus	True	False	False
-Orphanet:141327	Orofaciodigital syndrome type 12	True	False	False
-Orphanet:141330	Orofaciodigital syndrome type 13	True	False	False
 Orphanet:141333	Biemond syndrome type 2	True	False	False
 Orphanet:1414	Cholestasis-lymphedema syndrome	True	False	False
-Orphanet:1415	Cholestasis-pigmentary retinopathy-cleft palate syndrome	True	False	False
+Orphanet:1415	Hardikar syndrome	True	False	False
 Orphanet:1416	Familial calcium pyrophosphate deposition	True	False	False
 Orphanet:142	Anaplastic thyroid carcinoma	True	False	False
 Orphanet:1422	Chondrodysplasia-difference of sex development syndrome	True	False	False
@@ -6521,8 +6675,7 @@ Orphanet:1451	CINCA syndrome	True	False	False
 Orphanet:1452	Cleidocranial dysplasia	True	False	False
 Orphanet:1453	Cleidorhizomelic syndrome	True	False	False
 Orphanet:1454	Joubert syndrome with hepatic defect	True	False	False
-Orphanet:1455	Autosomal dominant coarctation of aorta	True	False	False
-Orphanet:1456	Atypical coarctation of aorta	True	False	False
+Orphanet:1456	Middle aortic syndrome	True	False	False
 Orphanet:1457	Aorta coarctation	True	False	False
 Orphanet:1458	CODAS syndrome	True	False	False
 Orphanet:1459	Celiac disease-epilepsy-cerebral calcification syndrome	True	False	False
@@ -6618,7 +6771,6 @@ Orphanet:156174	Retinal ciliopathy due to mutation in the RPGRIP gene	True	False
 Orphanet:156177	Retinal ciliopathy due to mutation in Usher gene	True	False	False
 Orphanet:156180	Retinal ciliopathy due to mutation in nephronophthisis gene	True	False	False
 Orphanet:156183	Retinal ciliopathy due to mutation in Bardet-Biedl gene	True	False	False
-Orphanet:1562	Dacryocystitis-osteopoikilosis syndrome	True	False	False
 Orphanet:156202	Otomandibular dysplasia associated with monogenic syndromes	True	False	False
 Orphanet:156207	Macroglossia	True	False	False
 Orphanet:156212	Hypoglossia/aglossia	True	False	False
@@ -6662,7 +6814,7 @@ Orphanet:157794	Hereditary mixed polyposis syndrome	True	False	False
 Orphanet:157798	Serrated polyposis syndrome	True	False	False
 Orphanet:1578	Pterin-4 alpha-carbinolamine dehydratase deficiency	True	False	False
 Orphanet:157801	Mesoaxial synostotic syndactyly with phalangeal reduction	True	False	False
-Orphanet:157808	Congenital pseudoarthrosis of the limbs	True	False	False
+Orphanet:157808	Isolated pseudoarthrosis of the limbs	True	False	False
 Orphanet:157820	Cold-induced sweating syndrome	True	False	False
 Orphanet:157823	Klüver-Bucy syndrome	True	False	False
 Orphanet:157826	Congenital epulis	True	False	False
@@ -6722,8 +6874,8 @@ Orphanet:160	Castleman disease	True	False	False
 Orphanet:1600	Monosomy 18q	True	False	False
 Orphanet:160148	Cap polyposis	True	False	False
 Orphanet:1606	1p36 deletion syndrome	True	False	False
-Orphanet:1617	2q24 microdeletion syndrome	True	False	False
-Orphanet:162	Cataract-glaucoma syndrome	True	False	False
+Orphanet:1617	Developmental delay-language impairment-dopa responsive dystonia-parkinsonism syndrome due to 2q24 microdeletion	True	False	False
+Orphanet:162	Congenital cataract-anterior segment dysgenesis syndrome	True	False	False
 Orphanet:1620	Distal deletion 3p	True	False	False
 Orphanet:1621	3q13 microdeletion syndrome	True	False	False
 Orphanet:162516	Isolated congenital nasal pyriform aperture stenosis	True	False	False
@@ -6774,7 +6926,7 @@ Orphanet:164001	Rare odontal or periodontal disorder	True	False	False
 Orphanet:164004	Middle and/or inner ear anomaly	True	False	False
 Orphanet:1642	Distal deletion 9p	True	False	False
 Orphanet:1643	Xp22.3 microdeletion syndrome	True	False	False
-Orphanet:1646	Partial chromosome Y deletion	True	False	False
+Orphanet:1646	Chromosome Y microdeletion	True	False	False
 Orphanet:1647	Oculocerebrocutaneous syndrome	True	False	False
 Orphanet:164726	Acute myeloid leukemia and myelodysplastic syndromes related to radiation	True	False	False
 Orphanet:164736	Familial advanced sleep-phase syndrome	True	False	False
@@ -6801,11 +6953,10 @@ Orphanet:165991	Exercise-induced hyperinsulinism	True	False	False
 Orphanet:166	Charcot-Marie-Tooth disease/Hereditary motor and sensory neuropathy	True	False	False
 Orphanet:1660	Dermoodontodysplasia	True	False	False
 Orphanet:166002	Multiple epiphyseal dysplasia due to collagen 9 anomaly	True	False	False
-Orphanet:166011	Multiple epiphyseal dysplasia, Beighton type	True	False	False
 Orphanet:166016	Multiple epiphyseal dysplasia, Lowry type	True	False	False
-Orphanet:166024	Multiple epiphyseal dysplasia, Al-Gazali type	True	False	False
-Orphanet:166029	Multiple epiphyseal dysplasia, with severe proximal femoral dysplasia	True	False	False
-Orphanet:166032	Multiple epiphyseal dysplasia, with miniepiphyses	True	False	False
+Orphanet:166024	Multiple epiphyseal dysplasia-macrocephaly-facial dysmorphism syndrome	True	False	False
+Orphanet:166029	Multiple epiphyseal dysplasia-severe proximal femoral dysplasia syndrome	True	False	False
+Orphanet:166032	Multiple epiphyseal dysplasia-miniepiphyses syndrome	True	False	False
 Orphanet:166035	Brachydactyly-short stature-retinitis pigmentosa syndrome	True	False	False
 Orphanet:166038	Metaphyseal chondrodysplasia, Kaitila type	True	False	False
 Orphanet:166063	Pontocerebellar hypoplasia type 4	True	False	False
@@ -6879,8 +7030,6 @@ Orphanet:1682	Arterial dissection-lentiginosis syndrome	True	False	False
 Orphanet:168443	Spondyloepimetaphyseal dysplasia-hypotrichosis syndrome	True	False	False
 Orphanet:168451	Spondyloepimetaphyseal dysplasia-abnormal dentition syndrome	True	False	False
 Orphanet:168454	Spondyloepimetaphyseal dysplasia, Geneviève type	True	False	False
-Orphanet:168486	Congenital neuronal ceroid lipofuscinosis	True	False	False
-Orphanet:168491	Late infantile neuronal ceroid lipofuscinosis	True	False	False
 Orphanet:1685	Distomatosis	True	False	False
 Orphanet:168544	Spondylometaphyseal dysplasia, Golden type	True	False	False
 Orphanet:168549	Axial spondylometaphyseal dysplasia	True	False	False
@@ -6910,7 +7059,7 @@ Orphanet:168782	Childhood disintegrative disorder	True	False	False
 Orphanet:168796	Heart-hand syndrome, Slovenian type	True	False	False
 Orphanet:168803	Primary peritoneal tumor	True	False	False
 Orphanet:168811	Malignant peritoneal mesothelioma	True	False	False
-Orphanet:168816	Peritoneal cystic mesothelioma	True	False	False
+Orphanet:168816	Peritoneal inclusion cyst	True	False	False
 Orphanet:168829	Primary peritoneal carcinoma	True	False	False
 Orphanet:168940	Chronic eosinophilic leukemia	True	False	False
 Orphanet:168947	Myeloid/lymphoid neoplasm associated with PDGFRA rearrangement	True	False	False
@@ -6930,7 +7079,7 @@ Orphanet:169100	Immunodeficiency due to CD25 deficiency	True	False	False
 Orphanet:169105	Good syndrome	True	False	False
 Orphanet:169110	Immunoglobulin heavy chain deficiency	True	False	False
 Orphanet:169139	Transient hypogammaglobulinemia of infancy	True	False	False
-Orphanet:169142	Recurrent infection due to specific granule deficiency	True	False	False
+Orphanet:169142	Recurrent infections due to specific granule deficiency	True	False	False
 Orphanet:169147	Immunodeficiency due to a classical component pathway complement deficiency	True	False	False
 Orphanet:169150	Immunodeficiency due to a late component of complement deficiency	True	False	False
 Orphanet:169154	T-B+ severe combined immunodeficiency due to IL-7Ralpha deficiency	True	False	False
@@ -7025,7 +7174,6 @@ Orphanet:1759	Thoraco-abdominal enteric duplication	True	False	False
 Orphanet:176	Non-rhizomelic chondrodysplasia punctata	True	False	False
 Orphanet:1762	Proximal Xq28 duplication syndrome	True	False	False
 Orphanet:1764	Familial dysautonomia	True	False	False
-Orphanet:1765	Dyschondrosteosis-nephritis syndrome	True	False	False
 Orphanet:1766	Dysequilibrium syndrome	True	False	False
 Orphanet:1768	Familial caudal dysgenesis	True	False	False
 Orphanet:177	Rhizomelic chondrodysplasia punctata	True	False	False
@@ -7046,7 +7194,7 @@ Orphanet:177929	Bleeding disorder in hemophilia B carriers	True	False	False
 Orphanet:178	Chordoma	True	False	False
 Orphanet:1780	Thakker-Donnai syndrome	True	False	False
 Orphanet:178025	Non-acquired combined pituitary hormone deficiencies without extrapituitary malformations	True	False	False
-Orphanet:178029	Central diabetes insipidus	True	False	False
+Orphanet:178029	Arginine vasopressin deficiency	True	False	False
 Orphanet:178040	Rare peripheral precocious puberty	True	False	False
 Orphanet:178045	Transient congenital hypothyroidism	True	False	False
 Orphanet:178145	Moderate multiminicore disease with hand involvement	True	False	False
@@ -7076,7 +7224,6 @@ Orphanet:178475	Wound botulism	True	False	False
 Orphanet:178478	Infant botulism	True	False	False
 Orphanet:178481	Intestinal botulism	True	False	False
 Orphanet:178487	Adult intestinal botulism	True	False	False
-Orphanet:178493	Myopic macular degeneration	True	False	False
 Orphanet:178506	Brain calcification, Rajab type	True	False	False
 Orphanet:178509	Perry syndrome	True	False	False
 Orphanet:178512	Folliculotropic mycosis fungoides	True	False	False
@@ -7099,7 +7246,7 @@ Orphanet:1794	Oculomaxillofacial dysostosis	True	False	False
 Orphanet:179490	Obesity due to congenital leptin resistance	True	False	False
 Orphanet:179494	Obesity due to leptin receptor gene deficiency	True	False	False
 Orphanet:1797	Autosomal dominant spondylocostal dysostosis	True	False	False
-Orphanet:1798	Dysostosis, Stanescu type	True	False	False
+Orphanet:1798	Craniofacial dysostosis-diaphyseal hyperplasia syndrome	True	False	False
 Orphanet:1799	Familial developmental dysphasia	True	False	False
 Orphanet:18	Distal renal tubular acidosis	True	False	False
 Orphanet:180	Choroideremia	True	False	False
@@ -7213,7 +7360,7 @@ Orphanet:1827	Acromelic frontonasal dysplasia	True	False	False
 Orphanet:182734	Genetic urticaria	True	False	False
 Orphanet:183	Eosinophilic granulomatosis with polyangiitis	True	False	False
 Orphanet:1830	Schimke immuno-osseous dysplasia	True	False	False
-Orphanet:1832	Lethal osteosclerotic bone dysplasia	True	False	False
+Orphanet:1832	Osteosclerotic bone dysplasia	True	False	False
 Orphanet:1834	Axial mesodermal dysplasia spectrum	True	False	False
 Orphanet:183422	Polymalformative genetic syndrome with increased risk of developing cancer	True	False	False
 Orphanet:183426	Genetic epidermal disorder	True	False	False
@@ -7279,9 +7426,9 @@ Orphanet:183666	Hyper-IgM syndrome without susceptibility to opportunistic infec
 Orphanet:183669	Agammaglobulinemia	True	False	False
 Orphanet:183675	Recurrent infections associated with rare immunoglobulin isotypes deficiency	True	False	False
 Orphanet:183678	Hermansky-Pudlak syndrome due to AP-3 deficiency	True	False	False
-Orphanet:183681	Functional neutrophil defect	True	False	False
-Orphanet:1837	Ulna metaphyseal dysplasia syndrome	True	False	False
-Orphanet:183707	Neutrophil immunodeficiency syndrome	True	False	False
+Orphanet:183681	Congenital functional phagocyte defect	True	False	False
+Orphanet:1837	Metaphyseal chondrodysplasia, Rosenberg type	True	False	False
+Orphanet:183707	Infantile LAD-like disease due to RAC2 deficiency	True	False	False
 Orphanet:183710	Genetic susceptibility to infections due to particular pathogens	True	False	False
 Orphanet:183713	Bacterial susceptibility due to TLR signaling pathway deficiency	True	False	False
 Orphanet:183731	Rare genetic gynecological and obstetrical diseases	True	False	False
@@ -7388,7 +7535,7 @@ Orphanet:1979	Lipodystrophy due to peptidic growth factors deficiency	True	False
 Orphanet:198	Occipital horn syndrome	True	False	False
 Orphanet:1980	Bilateral striopallidodentate calcinosis	True	False	False
 Orphanet:1986	Gollop-Wolfgang complex	True	False	False
-Orphanet:1987	Femoral agenesis/hypoplasia	True	False	False
+Orphanet:1987	Isolated femoral agenesis/hypoplasia	True	False	False
 Orphanet:1988	Femoral-facial syndrome	True	False	False
 Orphanet:199	Cornelia de Lange syndrome	True	False	False
 Orphanet:1991	Cleft lip with or without cleft palate	True	False	False
@@ -7666,7 +7813,7 @@ Orphanet:210571	Dystonia 16	True	False	False
 Orphanet:210576	Congenital temporomandibular joint ankylosis	True	False	False
 Orphanet:210581	Temporomandibular joint anomaly	True	False	False
 Orphanet:210584	Spindle cell hemangioma	True	False	False
-Orphanet:210589	Infantile hemangioma of rare localization	True	False	False
+Orphanet:210589	Rare infantile hemangioma	True	False	False
 Orphanet:2107	Hall-Riggs syndrome	True	False	False
 Orphanet:2108	Hallermann-Streiff syndrome	True	False	False
 Orphanet:2109	Hallermann-Streiff-like syndrome	True	False	False
@@ -7695,11 +7842,11 @@ Orphanet:2118	Hawkinsinuria	True	False	False
 Orphanet:2119	HEC syndrome	True	False	False
 Orphanet:212	Cystathioninuria	True	False	False
 Orphanet:2122	Kaposiform hemangioendothelioma	True	False	False
-Orphanet:2123	Diffuse neonatal hemangiomatosis	True	False	False
+Orphanet:2123	Multifocal infantile hemangioma with extracutenous involvement	True	False	False
 Orphanet:2126	Solitary fibrous tumor	True	False	False
 Orphanet:2128	Isolated hemihyperplasia	True	False	False
 Orphanet:213	Cystinosis	True	False	False
-Orphanet:2130	Hemimelia	True	False	False
+Orphanet:2130	Non-syndromic hemimelia	True	False	False
 Orphanet:2131	Alternating hemiplegia of childhood	True	False	False
 Orphanet:2132	Hemoglobin C disease	True	False	False
 Orphanet:2133	Hemoglobin E disease	True	False	False
@@ -7793,7 +7940,7 @@ Orphanet:217012	Spinocerebellar ataxia type 31	True	False	False
 Orphanet:217017	Zechi-Ceide syndrome	True	False	False
 Orphanet:217026	Microcephaly-facio-cardio-skeletal syndrome, Hadziselimovic type	True	False	False
 Orphanet:217055	Autosomal recessive intermediate Charcot-Marie-Tooth disease type A	True	False	False
-Orphanet:217059	Isolated congenital digital clubbing	True	False	False
+Orphanet:217059	Isolated nail clubbing	True	False	False
 Orphanet:217064	5-fluorouracil poisoning	True	False	False
 Orphanet:217067	Pouchitis	True	False	False
 Orphanet:217074	Rare carcinoma of pancreas	True	False	False
@@ -7906,7 +8053,7 @@ Orphanet:2224	Hypertryptophanemia	True	False	False
 Orphanet:222628	Hereditary poikiloderma	True	False	False
 Orphanet:2228	Hypodontia-dysplasia of nails syndrome	True	False	False
 Orphanet:2229	Dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome	True	False	False
-Orphanet:223	Nephrogenic diabetes insipidus	True	False	False
+Orphanet:223	Arginine vasopressin resistance	True	False	False
 Orphanet:2230	Hypogonadotropic hypogonadism-frontoparietal alopecia syndrome	True	False	False
 Orphanet:2232	Primary hypergonadotropic hypogonadism-partial alopecia syndrome	True	False	False
 Orphanet:2233	Hypogonadism-mitral valve prolapse-intellectual disability syndrome	True	False	False
@@ -7922,7 +8069,6 @@ Orphanet:2241	Megacystis-microcolon-intestinal hypoperistalsis syndrome	True	Fal
 Orphanet:2246	Cerebellar hypoplasia-tapetoretinal degeneration syndrome	True	False	False
 Orphanet:2248	Hypoplastic left heart syndrome	True	False	False
 Orphanet:2249	Ulna hypoplasia-intellectual disability syndrome	True	False	False
-Orphanet:225	Maternally-inherited diabetes and deafness	True	False	False
 Orphanet:2250	Hyposmia-nasal and ocular hypoplasia-hypogonadotropic hypogonadism syndrome	True	False	False
 Orphanet:2251	Thumb deformity-alopecia-pigmentation anomaly syndrome	True	False	False
 Orphanet:225123	TFR2-related hemochromatosis	True	False	False
@@ -8006,6 +8152,15 @@ Orphanet:228302	Carnitine palmitoyl transferase II deficiency, myopathic form	Tr
 Orphanet:228305	Carnitine palmitoyl transferase II deficiency, severe infantile form	True	False	False
 Orphanet:228308	Carnitine palmitoyl transferase II deficiency, neonatal form	True	False	False
 Orphanet:228312	Autoimmune hemolytic anemia, cold type	True	False	False
+Orphanet:228329	CLN1 disease	True	False	False
+Orphanet:228337	CLN10 disease	True	False	False
+Orphanet:228343	CLN4 disease	True	False	False
+Orphanet:228346	CLN3 disease	True	False	False
+Orphanet:228349	CLN2 disease	True	False	False
+Orphanet:228354	CLN8 disease	True	False	False
+Orphanet:228360	CLN5 disease	True	False	False
+Orphanet:228363	CLN6 disease	True	False	False
+Orphanet:228366	CLN7 disease	True	False	False
 Orphanet:228371	Foodborne botulism	True	False	False
 Orphanet:228374	Charcot-Marie-Tooth disease type 2B5	True	False	False
 Orphanet:228379	Virus-associated trichodysplasia spinulosa	True	False	False
@@ -8015,9 +8170,9 @@ Orphanet:228390	Frontonasal dysplasia-alopecia-genital anomalies syndrome	True	F
 Orphanet:228396	Ptosis-upper ocular movement limitation-absence of lacrimal punctum syndrome	True	False	False
 Orphanet:228399	8q12 microduplication syndrome	True	False	False
 Orphanet:228402	2q23.1 microdeletion syndrome	True	False	False
-Orphanet:228410	Polyvalvular heart disease syndrome	True	False	False
+Orphanet:228410	Cardiac anomalies-short stature-joint hypermobility-facial dysmorphism syndrome	True	False	False
 Orphanet:228415	5q35 microduplication syndrome	True	False	False
-Orphanet:228423	Monocytopenia with susceptibility to infections	True	False	False
+Orphanet:228423	GATA2 deficiency spectrum	True	False	False
 Orphanet:228426	Syndromic multisystem autoimmune disease due to Itch deficiency	True	False	False
 Orphanet:2285	Primary basilar invagination	True	False	False
 Orphanet:2287	Fused mandibular incisors	True	False	False
@@ -8150,12 +8305,11 @@ Orphanet:2370	Larsen-like osseous dysplasia-short stature syndrome	True	False	Fa
 Orphanet:2371	Lethal Larsen-like syndrome	True	False	False
 Orphanet:2372	Laryngocele	True	False	False
 Orphanet:2373	Congenital laryngomalacia	True	False	False
-Orphanet:2374	Congenital laryngeal web	True	False	False
+Orphanet:2374	Isolated congenital laryngeal web	True	False	False
 Orphanet:2375	Laryngeal abductor paralysis-intellectual disability syndrome	True	False	False
 Orphanet:2377	Laurence-Moon syndrome	True	False	False
 Orphanet:2378	Laurin-Sandrow syndrome	True	False	False
 Orphanet:2379	Early-onset parkinsonism-intellectual disability syndrome	True	False	False
-Orphanet:238	Digestive duplication	True	False	False
 Orphanet:2380	Legg-Calvé-Perthes disease	True	False	False
 Orphanet:2382	Lennox-Gastaut syndrome	True	False	False
 Orphanet:238269	AApoAII amyloidosis	True	False	False
@@ -8207,7 +8361,7 @@ Orphanet:24	Fumaric aciduria	True	False	False
 Orphanet:240	Léri-Weill dyschondrosteosis	True	False	False
 Orphanet:2400	Peripheral motor neuropathy-dysautonomia syndrome	True	False	False
 Orphanet:240071	Classic progressive supranuclear palsy syndrome	True	False	False
-Orphanet:240085	Progressive supranuclear palsy-parkinsonism syndrome	True	False	False
+Orphanet:240085	Progressive supranuclear palsy-predominant parkinsonism syndrome	True	False	False
 Orphanet:240094	Progressive supranuclear palsy-pure akinesia with gait freezing syndrome	True	False	False
 Orphanet:240103	Progressive supranuclear palsy-corticobasal syndrome	True	False	False
 Orphanet:240112	Progressive supranuclear palsy-progressive non-fluent aphasia syndrome	True	False	False
@@ -8239,6 +8393,7 @@ Orphanet:2438	Hand-foot-genital syndrome	True	False	False
 Orphanet:2439	Patterson-Stevenson-Fontaine syndrome	True	False	False
 Orphanet:244	Primary ciliary dyskinesia	True	False	False
 Orphanet:2440	Isolated split hand-split foot malformation	True	False	False
+Orphanet:2442	X-linked lymphoproliferative disease	True	False	False
 Orphanet:244242	HELLP syndrome	True	False	False
 Orphanet:244283	Biliary atresia with splenic malformation syndrome	True	False	False
 Orphanet:2443	Mitochondrial oxidative phosphorylation disorder due to nuclear DNA anomalies	True	False	False
@@ -8343,7 +8498,7 @@ Orphanet:2492	FATCO syndrome	True	False	False
 Orphanet:2494	Ménétrier disease	True	False	False
 Orphanet:2495	Meningioma	True	False	False
 Orphanet:2496	Mesomelia-synostoses syndrome	True	False	False
-Orphanet:2497	Upper limb mesomelic dysplasia	True	False	False
+Orphanet:2497	Upper limb mesomelic dysplasia, type Fryns	True	False	False
 Orphanet:2498	Syndactyly type 8	True	False	False
 Orphanet:2499	Metachondromatosis	True	False	False
 Orphanet:25	Glutaryl-CoA dehydrogenase deficiency	True	False	False
@@ -8378,7 +8533,7 @@ Orphanet:251028	SATB2-associated syndrome due to a chromosomal rearrangement	Tru
 Orphanet:251038	3q29 microduplication syndrome	True	False	False
 Orphanet:251043	Ring chromosome 5 syndrome	True	False	False
 Orphanet:251046	6p22 microdeletion syndrome	True	False	False
-Orphanet:251056	6q25 microdeletion syndrome	True	False	False
+Orphanet:251056	6q25.2q25.3 microdeletion syndrome	True	False	False
 Orphanet:251061	7q31 microdeletion syndrome	True	False	False
 Orphanet:251066	8p11.2 deletion syndrome	True	False	False
 Orphanet:251071	8p23.1 microdeletion syndrome	True	False	False
@@ -8801,7 +8956,7 @@ Orphanet:263458	Hyperinsulinism due to INSR deficiency	True	False	False
 Orphanet:263463	CHST3-related skeletal dysplasia	True	False	False
 Orphanet:263479	Fuchs heterochromic iridocyclitis	True	False	False
 Orphanet:26348	Acquired prothrombin deficiency	True	False	False
-Orphanet:263482	Spondyloepiphyseal dysplasia, Maroteaux type	True	False	False
+Orphanet:263482	Spondyloepimetaphyseal dysplasia, Maroteaux type	True	False	False
 Orphanet:263487	COG5-CDG	True	False	False
 Orphanet:26349	Protein S acquired deficiency	True	False	False
 Orphanet:263494	DPM3-CDG	True	False	False
@@ -8839,13 +8994,11 @@ Orphanet:264431	Partial duplication of the short arm of chromosome 1	True	False	
 Orphanet:264450	Trisomy 8p	True	False	False
 Orphanet:2645	Osteoglosphonic dysplasia	True	False	False
 Orphanet:264580	Glycogen storage disease due to liver phosphorylase kinase deficiency	True	False	False
-Orphanet:2646	Parastremmatic dwarfism	True	False	False
 Orphanet:264675	Hereditary pulmonary alveolar proteinosis	True	False	False
 Orphanet:264688	Congenital chylothorax	True	False	False
 Orphanet:264691	Isolated pulmonary capillaritis	True	False	False
 Orphanet:264978	Drug or radiation exposure-related interstitial lung disease	True	False	False
 Orphanet:264992	Genetic interstitial lung disease	True	False	False
-Orphanet:2653	Osteochondrodysplatic nanism-deafness-retinitis pigmentosa syndrome	True	False	False
 Orphanet:2655	Thanatophoric dysplasia	True	False	False
 Orphanet:2658	Lenz-Majewski hyperostotic dwarfism	True	False	False
 Orphanet:266	Autosomal dominant limb-girdle muscular dystrophy type 1A	True	False	False
@@ -8944,7 +9097,7 @@ Orphanet:270	Oculopharyngeal muscular dystrophy	True	False	False
 Orphanet:2700	Noma	True	False	False
 Orphanet:2701	Noonan syndrome-like disorder with loose anagen hair	True	False	False
 Orphanet:2703	Port-wine nevi-mega cisterna magna-hydrocephalus syndrome	True	False	False
-Orphanet:2704	Ochoa syndrome	True	False	False
+Orphanet:2704	Urofacial syndrome	True	False	False
 Orphanet:2707	Oculocerebrofacial syndrome, Kaufman type	True	False	False
 Orphanet:2709	Oculodental syndrome, Rutherfurd type	True	False	False
 Orphanet:2710	Oculodentodigital dysplasia	True	False	False
@@ -8960,6 +9113,7 @@ Orphanet:271841	Genetic cardiac tumor	True	False	False
 Orphanet:271844	Genetic urogenital tumor	True	False	False
 Orphanet:271847	Genetic neuroendocrine tumor	True	False	False
 Orphanet:271853	Genetic cardiac anomaly	True	False	False
+Orphanet:271861	Hereditary ATTR amyloidosis	True	False	False
 Orphanet:271870	Rare genetic systemic or rheumatologic disease	True	False	False
 Orphanet:2719	Oculocerebral hypopigmentation syndrome, Cross type	True	False	False
 Orphanet:272	Congenital muscular dystrophy, Fukuyama type	True	False	False
@@ -8969,7 +9123,6 @@ Orphanet:2722	Odonto-onycho dysplasia-alopecia syndrome	True	False	False
 Orphanet:2723	Odontotrichomelic syndrome	True	False	False
 Orphanet:2724	Odontomatosis-aortae esophagus stenosis syndrome	True	False	False
 Orphanet:2728	Blepharophimosis-intellectual disability syndrome, Ohdo type	True	False	False
-Orphanet:2729	Okamoto syndrome	True	False	False
 Orphanet:273	Steinert myotonic dystrophy	True	False	False
 Orphanet:2730	Postaxial tetramelic oligodactyly	True	False	False
 Orphanet:2732	Olivopontocerebellar atrophy-deafness syndrome	True	False	False
@@ -8986,15 +9139,13 @@ Orphanet:2749	Oromandibular-limb hypogenesis syndrome	True	False	False
 Orphanet:275	Severe combined immunodeficiency due to DCLRE1C deficiency	True	False	False
 Orphanet:2750	Orofaciodigital syndrome type 1	True	False	False
 Orphanet:2751	Orofaciodigital syndrome type 2	True	False	False
-Orphanet:2752	Orofaciodigital syndrome type 3	True	False	False
 Orphanet:2753	Orofaciodigital syndrome type 4	True	False	False
 Orphanet:2754	Orofaciodigital syndrome type 6	True	False	False
 Orphanet:2755	Orofaciodigital syndrome type 8	True	False	False
-Orphanet:275517	Autoimmune lymphoproliferative syndrome with recurrent viral infections	True	False	False
+Orphanet:275517	Autoimmune lymphoproliferative syndrome-recurrent viral infections due to CASP8 deficiency	True	False	False
 Orphanet:275523	Dianzani autoimmune lymphoproliferative disease	True	False	False
 Orphanet:275543	L1 syndrome	True	False	False
 Orphanet:275555	Preeclampsia	True	False	False
-Orphanet:2756	Orofaciodigital syndrome type 10	True	False	False
 Orphanet:275729	Rare hemorrhagic disorder due to a constitutional thrombocytopenia	True	False	False
 Orphanet:275736	Rare hemorrhagic disorder due to a qualitative platelet defect	True	False	False
 Orphanet:275742	Genetic infertility	True	False	False
@@ -9211,7 +9362,7 @@ Orphanet:2838	Renal caliceal diverticuli-deafness syndrome	True	False	False
 Orphanet:2839	Pelvis-shoulder dysplasia	True	False	False
 Orphanet:284	Alveolar echinococcosis	True	False	False
 Orphanet:2840	Pelvic dysplasia-arthrogryposis of lower limbs syndrome	True	False	False
-Orphanet:2841	Familial benign chronic pemphigus	True	False	False
+Orphanet:2841	Hailey-Hailey disease	True	False	False
 Orphanet:284139	Larsen-like syndrome, B3GAT3 type	True	False	False
 Orphanet:284149	Craniosynostosis-dental anomalies	True	False	False
 Orphanet:284160	8q21.11 microdeletion syndrome	True	False	False
@@ -9277,7 +9428,6 @@ Orphanet:2872	Cardiocranial syndrome, Pfeiffer type	True	False	False
 Orphanet:2874	Phakomatosis pigmentokeratotica	True	False	False
 Orphanet:2875	Phakomatosis pigmentovascularis	True	False	False
 Orphanet:2876	PHAVER syndrome	True	False	False
-Orphanet:2878	Phocomelia-ectrodactyly-deafness-sinus arrhythmia syndrome	True	False	False
 Orphanet:2879	Phocomelia, Schinzel type	True	False	False
 Orphanet:288	Hereditary elliptocytosis	True	False	False
 Orphanet:2880	Phosphoenolpyruvate carboxykinase deficiency	True	False	False
@@ -9330,7 +9480,7 @@ Orphanet:289638	Epstein-Barr Virus-related tumor	True	False	False
 Orphanet:289644	Epstein-Barr virus-associated malignant lymphoproliferative disorder	True	False	False
 Orphanet:289651	Epstein-Barr Virus-associated carcinoma	True	False	False
 Orphanet:289656	Epstein-Barr Virus-associated mesenchymal tumor	True	False	False
-Orphanet:289661	Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly	True	False	False
+Orphanet:289661	Epstein-Barr virus-positive diffuse large B-cell lymphoma	True	False	False
 Orphanet:289666	Plasmablastic lymphoma	True	False	False
 Orphanet:289682	Lymphoepithelial-like carcinoma	True	False	False
 Orphanet:289685	Myopericytoma	True	False	False
@@ -9442,32 +9592,32 @@ Orphanet:294415	Renal-hepatic-pancreatic dysplasia	True	False	False
 Orphanet:294422	Chronic intestinal failure	True	False	False
 Orphanet:2946	Brachydactyly-long thumb syndrome	True	False	False
 Orphanet:2947	Triphalangeal thumbs-brachyectrodactyly syndrome	True	False	False
-Orphanet:294925	Amelia	True	False	False
-Orphanet:294927	Intercalary limb defects	True	False	False
+Orphanet:294925	Non-syndromic amelia	True	False	False
+Orphanet:294927	Non-syndromic intercalary limb defects	True	False	False
 Orphanet:294944	Congenital deformities of limbs	True	False	False
 Orphanet:294947	Congenital deformities of fingers	True	False	False
-Orphanet:294949	Joint formation defects	True	False	False
+Orphanet:294949	Non-syndromic joint formation defects	True	False	False
 Orphanet:294951	Congenital joint dislocations	True	False	False
-Orphanet:294953	Non syndromic limb overgrowth	True	False	False
+Orphanet:294953	Non-syndromic limb overgrowth	True	False	False
 Orphanet:294955	Syndrome with limb reduction defects	True	False	False
 Orphanet:294957	Dysostosis with combined reduction defects of upper and lower limbs	True	False	False
 Orphanet:294959	Syndrome with limb duplication, polydactyly, syndactyly, and/or hyperphalangy	True	False	False
 Orphanet:294963	Popliteal pterygium syndrome	True	False	False
 Orphanet:294965	Lethal congenital contracture syndrome	True	False	False
-Orphanet:294967	Amelia of upper limb	True	False	False
-Orphanet:294969	Amelia of lower limb	True	False	False
-Orphanet:294971	Tetra-amelia	True	False	False
-Orphanet:294973	Humeral agenesis/hypoplasia	True	False	False
-Orphanet:294975	Congenital absence of upper arm and forearm with hand present	True	False	False
-Orphanet:294977	Congenital absence of thigh and lower leg with foot present	True	False	False
-Orphanet:294979	Congenital absence of both forearm and hand	True	False	False
-Orphanet:294981	Congenital absence of both lower leg and foot	True	False	False
-Orphanet:294983	Acheiria	True	False	False
-Orphanet:294986	Apodia	True	False	False
-Orphanet:294988	Congenital hypoplasia of thumb	True	False	False
+Orphanet:294967	Isolated amelia of upper limb	True	False	False
+Orphanet:294969	Isolated amelia of lower limb	True	False	False
+Orphanet:294971	Isolated tetra-amelia	True	False	False
+Orphanet:294973	Isolated humeral agenesis/hypoplasia	True	False	False
+Orphanet:294975	Isolated absence of upper arm and forearm with hand present	True	False	False
+Orphanet:294977	Isolated absence of thigh and lower leg with foot present	True	False	False
+Orphanet:294979	Isolated absence of both forearm and hand	True	False	False
+Orphanet:294981	Isolated absence of both lower leg and foot	True	False	False
+Orphanet:294983	Isolated acheiria	True	False	False
+Orphanet:294986	Isolated apodia	True	False	False
+Orphanet:294988	Isolated hypoplasia of thumb	True	False	False
 Orphanet:295	Fetal parvovirus syndrome	True	False	False
-Orphanet:295000	Constriction rings syndrome	True	False	False
-Orphanet:295002	Hyperphalangy	True	False	False
+Orphanet:295000	Amniotic band syndrome	True	False	False
+Orphanet:295002	Isolated hyperphalangy	True	False	False
 Orphanet:295004	Central polydactyly	True	False	False
 Orphanet:295012	Syndactyly type 6	True	False	False
 Orphanet:295014	Familial isolated clinodactyly of fingers	True	False	False
@@ -9477,7 +9627,7 @@ Orphanet:295020	Congenital pseudoarthrosis of the femur	True	False	False
 Orphanet:295022	Congenital pseudoarthrosis of the fibula	True	False	False
 Orphanet:295024	Congenital pseudoarthrosis of the radius	True	False	False
 Orphanet:295026	Congenital pseudoarthrosis of the ulna	True	False	False
-Orphanet:295028	Tibio-fibular synostosis	True	False	False
+Orphanet:295028	Isolated tibio-fibular synostosis	True	False	False
 Orphanet:295030	True congenital shoulder dislocation	True	False	False
 Orphanet:295032	Isolated congenital radial head dislocation	True	False	False
 Orphanet:295034	Congenital knee dislocation	True	False	False
@@ -9497,10 +9647,6 @@ Orphanet:295199	Synpolydactyly type 3	True	False	False
 Orphanet:2952	Adducted thumbs-arthrogryposis syndrome, Christian type	True	False	False
 Orphanet:295201	Congenital vertical talus, unilateral	True	False	False
 Orphanet:295203	Congenital vertical talus, bilateral	True	False	False
-Orphanet:295213	Humero-ulnar synostosis, unilateral	True	False	False
-Orphanet:295215	Humero-ulnar synostosis, bilateral	True	False	False
-Orphanet:295217	Radio-ulnar synostosis, unilateral	True	False	False
-Orphanet:295219	Radio-ulnar synostosis, bilateral	True	False	False
 Orphanet:295225	Congenital elbow dislocation, unilateral	True	False	False
 Orphanet:295227	Congenital elbow dislocation, bilateral	True	False	False
 Orphanet:295229	Congenital genu recurvatum	True	False	False
@@ -9607,7 +9753,7 @@ Orphanet:3015	Radio-renal syndrome	True	False	False
 Orphanet:3016	Absent radius-anogenital anomalies syndrome	True	False	False
 Orphanet:3018	Retinal ischemic syndrome-digestive tract small vessel hyalinosis-diffuse cerebral calcifications syndrome	True	False	False
 Orphanet:3019	Ramon syndrome	True	False	False
-Orphanet:302	Epidermodysplasia verruciformis	True	False	False
+Orphanet:302	Inherited epidermodysplasia verruciformis	True	False	False
 Orphanet:3020	Ramsay Hunt syndrome	True	False	False
 Orphanet:3021	RAPADILINO syndrome	True	False	False
 Orphanet:3023	External auditory canal atresia-vertical talus-hypertelorism syndrome	True	False	False
@@ -9767,7 +9913,7 @@ Orphanet:309192	Tay-Sachs disease, adult form	True	False	False
 Orphanet:3092	Fixed subaortic stenosis	True	False	False
 Orphanet:30924	Primary hypomagnesemia with secondary hypocalcemia	True	False	False
 Orphanet:309246	GM2 gangliosidosis, AB variant	True	False	False
-Orphanet:30925	Hereditary central diabetes insipidus	True	False	False
+Orphanet:30925	Hereditary arginine vasopressin deficiency	True	False	False
 Orphanet:309252	Atypical Gaucher disease due to saposin C deficiency	True	False	False
 Orphanet:309256	Metachromatic leukodystrophy, late infantile form	True	False	False
 Orphanet:309263	Metachromatic leukodystrophy, juvenile form	True	False	False
@@ -9852,7 +9998,7 @@ Orphanet:313781	20p13 microdeletion syndrome	True	False	False
 Orphanet:313795	Jawad syndrome	True	False	False
 Orphanet:3138	Ulnar-mammary syndrome	True	False	False
 Orphanet:313800	Retinal dystrophy-optic nerve edema-splenomegaly-anhidrosis-migraine headache syndrome	True	False	False
-Orphanet:313808	Hereditary diffuse leukoencephalopathy with axonal spheroids and pigmented glia	True	False	False
+Orphanet:313808	Adult-onset leukoencephalopathy with axonal spheroids and pigmented glia	True	False	False
 Orphanet:313838	Coats plus syndrome	True	False	False
 Orphanet:313846	Familial cutaneous telangiectasia and oropharyngeal cancer predisposition syndrome	True	False	False
 Orphanet:313850	Infantile cerebellar-retinal degeneration	True	False	False
@@ -9890,7 +10036,7 @@ Orphanet:314466	Atypical Meigs syndrome	True	False	False
 Orphanet:314473	Ovarian fibroma	True	False	False
 Orphanet:314478	Ovarian fibrothecoma	True	False	False
 Orphanet:314485	Young adult-onset distal hereditary motor neuropathy	True	False	False
-Orphanet:3145	Nephrogenic diabetes insipidus-intracranial calcification-short stature-facial dysmorphism syndrome	True	False	False
+Orphanet:3145	Arginine vasopressin resistance-intracranial calcification-short stature-facial dysmorphism syndrome	True	False	False
 Orphanet:314555	Facial dysmorphism-ocular anomalies-osteopenia-intellectual disability-dental anomalies syndrome	True	False	False
 Orphanet:314566	Primary progressive apraxia of speech	True	False	False
 Orphanet:314572	Autosomal recessive leukoencephalopathy-ischemic stroke-retinitis pigmentosa syndrome	True	False	False
@@ -9901,7 +10047,8 @@ Orphanet:314597	Chudley-McCullough syndrome	True	False	False
 Orphanet:314603	Autosomal recessive spastic ataxia with leukoencephalopathy	True	False	False
 Orphanet:314613	Growing teratoma syndrome	True	False	False
 Orphanet:314621	Duplication of the pituitary gland	True	False	False
-Orphanet:314632	ATP13A2-related juvenile neuronal ceroid lipofuscinosis	True	False	False
+Orphanet:314629	CLN11 disease	True	False	False
+Orphanet:314632	CLN12 disease	True	False	False
 Orphanet:314637	Mitochondrial hypertrophic cardiomyopathy with lactic acidosis due to MTO1 deficiency	True	False	False
 Orphanet:314647	Non-progressive cerebellar ataxia with intellectual disability	True	False	False
 Orphanet:314652	Variant ABeta2M amyloidosis	True	False	False
@@ -9966,7 +10113,7 @@ Orphanet:317425	Severe combined immunodeficiency due to DNA-PKcs deficiency	True
 Orphanet:317428	Combined immunodeficiency due to ORAI1 deficiency	True	False	False
 Orphanet:317430	Combined immunodeficiency due to STIM1 deficiency	True	False	False
 Orphanet:317473	Pancytopenia due to IKZF1 mutations	True	False	False
-Orphanet:317476	X-linked immunodeficiency with magnesium defect, Epstein-Barr virus infection and neoplasia	True	False	False
+Orphanet:317476	XMEN	True	False	False
 Orphanet:3175	X-linked spasticity-intellectual disability-epilepsy syndrome	True	False	False
 Orphanet:3176	Spina bifida-hypospadias syndrome	True	False	False
 Orphanet:3177	Spinocerebellar degeneration-corneal dystrophy syndrome	True	False	False
@@ -10086,7 +10233,6 @@ Orphanet:3206	Stüve-Wiedemann syndrome	True	False	False
 Orphanet:3207	White matter hypoplasia-corpus callosum agenesis-intellectual disability syndrome	True	False	False
 Orphanet:3208	Isolated succinate-CoQ reductase deficiency	True	False	False
 Orphanet:321	Multiple osteochondromas	True	False	False
-Orphanet:3210	Summitt syndrome	True	False	False
 Orphanet:3214	Deaf blind hypopigmentation syndrome, Yemenite type	True	False	False
 Orphanet:3216	Conductive deafness-malformed external ear syndrome	True	False	False
 Orphanet:3217	Deafness-small bowel diverticulosis-neuropathy syndrome	True	False	False
@@ -10098,7 +10244,6 @@ Orphanet:322126	Genetic tumor of hematopoietic and lymphoid tissues	True	False	F
 Orphanet:3222	Phosphoribosylpyrophosphate synthetase superactivity	True	False	False
 Orphanet:3224	Deafness-genital anomalies-metacarpal and metatarsal synostosis syndrome	True	False	False
 Orphanet:3225	Hearing loss-familial salivary gland insensitivity to aldosterone syndrome	True	False	False
-Orphanet:3226	Deafness-lymphedema-leukemia syndrome	True	False	False
 Orphanet:3230	Deafness-oligodontia syndrome	True	False	False
 Orphanet:3231	Deafness-onychodystrophy syndrome	True	False	False
 Orphanet:3232	Deafness-ear malformation-facial palsy syndrome	True	False	False
@@ -10153,7 +10298,7 @@ Orphanet:324723	ABeta amyloidosis, Arctic type	True	False	False
 Orphanet:324737	SRD5A3-CDG	True	False	False
 Orphanet:324761	Microcephalic primordial dwarfism	True	False	False
 Orphanet:324764	Trichorhinophalangeal syndrome	True	False	False
-Orphanet:3248	Distal symphalangism	True	False	False
+Orphanet:3248	Isolated distal symphalangism	True	False	False
 Orphanet:324924	Hereditary periodic fever syndrome	True	False	False
 Orphanet:324927	Pyogenic autoinflammatory syndrome	True	False	False
 Orphanet:324930	Granulomatous autoinflammatory syndrome	True	False	False
@@ -10196,10 +10341,10 @@ Orphanet:3260	Idiopathic hypereosinophilic syndrome	True	False	False
 Orphanet:3261	Autoimmune lymphoproliferative syndrome	True	False	False
 Orphanet:3262	Dobrow syndrome	True	False	False
 Orphanet:3263	Syngnathia-cleft palate syndrome	True	False	False
-Orphanet:3265	Humero-radial synostosis	True	False	False
-Orphanet:3266	Humero-radio-ulnar synostosis	True	False	False
+Orphanet:3265	Isolated humero-radial synostosis	True	False	False
+Orphanet:3266	Isolated humero-radio-ulnar synostosis	True	False	False
 Orphanet:3268	Radioulnar synostosis-microcephaly-scoliosis syndrome	True	False	False
-Orphanet:3269	Congenital radioulnar synostosis	True	False	False
+Orphanet:3269	Isolated radio-ulnar synostosis	True	False	False
 Orphanet:327	Congenital factor VII deficiency	True	False	False
 Orphanet:3270	Radioulnar synostosis-developmental delay-hypotonia syndrome	True	False	False
 Orphanet:3273	Synovial sarcoma	True	False	False
@@ -10220,7 +10365,7 @@ Orphanet:329195	Developmental delay with autism spectrum disorder and gait insta
 Orphanet:3292	Tel Hashomer camptodactyly syndrome	True	False	False
 Orphanet:329211	Autosomal dominant neovascular inflammatory vitreoretinopathy	True	False	False
 Orphanet:329217	Cerebral sinovenous thrombosis	True	False	False
-Orphanet:329224	Intellectual disability-craniofacial dysmorphism-cryptorchidism syndrome	True	False	False
+Orphanet:329224	Schuurs-Hoeijmakers syndrome	True	False	False
 Orphanet:329228	Microcephalic primordial dwarfism due to ZNF335 deficiency	True	False	False
 Orphanet:329235	X-linked central congenital hypothyroidism with late-onset testicular enlargement	True	False	False
 Orphanet:329242	Congenital chronic diarrhea with protein-losing enteropathy	True	False	False
@@ -10239,7 +10384,7 @@ Orphanet:329336	Adult-onset chronic progressive external ophthalmoplegia with mi
 Orphanet:3294	Extensor tendons of finger anomalies	True	False	False
 Orphanet:329457	Distal arthrogryposis type 5D	True	False	False
 Orphanet:329466	Autosomal dominant focal dystonia, DYT25 type	True	False	False
-Orphanet:329469	Acute megakaryoblastic leukemia without Down syndrome	True	False	False
+Orphanet:329469	Acute megakaryoblastic leukemia in children without Down syndrome	True	False	False
 Orphanet:329475	Spastic paraplegia-Paget disease of bone syndrome	True	False	False
 Orphanet:329478	Adult-onset distal myopathy due to VCP mutation	True	False	False
 Orphanet:329481	Lipoprotein glomerulopathy	True	False	False
@@ -10289,14 +10434,14 @@ Orphanet:3310	Tetrasomy 9p	True	False	False
 Orphanet:33108	Lethal multiple pterygium syndrome	True	False	False
 Orphanet:33110	Autosomal agammaglobulinemia	True	False	False
 Orphanet:33111	Granulomatous slack skin	True	False	False
-Orphanet:331176	Autosomal recessive severe congenital neutropenia due to G6PC3 deficiency	True	False	False
+Orphanet:331176	Severe congenital neutropenia due to G6PC3 deficiency	True	False	False
 Orphanet:331187	Immunodeficiency due to MASP-2 deficiency	True	False	False
 Orphanet:331190	Immunodeficiency due to ficolin3 deficiency	True	False	False
 Orphanet:331193	Other immunodeficiency syndromes due to defects in innate immunity	True	False	False
 Orphanet:3312	Thalidomide embryopathy	True	False	False
 Orphanet:331206	Severe combined immunodeficiency due to complete RAG1/2 deficiency	True	False	False
 Orphanet:331217	Syndrome with combined immunodeficiency	True	False	False
-Orphanet:331220	Immunodeficiency due to absence of thymus	True	False	False
+Orphanet:331220	Syndome with combined immunodeficiency due to thymic defect	True	False	False
 Orphanet:331223	Hyper-IgE syndrome	True	False	False
 Orphanet:331226	Susceptibility to infection due to TYK2 deficiency	True	False	False
 Orphanet:331232	Immunodeficiency with isotype or light chain deficiencies with normal number of B-cells	True	False	False
@@ -10325,7 +10470,7 @@ Orphanet:33355	Reticular dysgenesis	True	False	False
 Orphanet:33364	Trichothiodystrophy	True	False	False
 Orphanet:3337	Primary Fanconi renotubular syndrome	True	False	False
 Orphanet:3338	Toriello-Carey syndrome	True	False	False
-Orphanet:3339	Toriello-Lacassie-Droste syndrome	True	False	False
+Orphanet:3339	Oculoectodermal syndrome	True	False	False
 Orphanet:334	Familial atrial fibrillation	True	False	False
 Orphanet:33402	Pediatric hepatocellular carcinoma	True	False	False
 Orphanet:33408	Bullous lichen planus	True	False	False
@@ -10364,7 +10509,7 @@ Orphanet:3378	Trisomy 13	True	False	False
 Orphanet:3379	Distal duplication 17q	True	False	False
 Orphanet:3380	Trisomy 18	True	False	False
 Orphanet:3383	Humerus trochlea aplasia	True	False	False
-Orphanet:3384	Truncus arteriosus	True	False	False
+Orphanet:3384	Common arterial trunk	True	False	False
 Orphanet:3385	African trypanosomiasis	True	False	False
 Orphanet:3386	American trypanosomiasis	True	False	False
 Orphanet:3387	Isolated anterior cervical hypertrichosis	True	False	False
@@ -10400,7 +10545,6 @@ Orphanet:3433	Microcephaly-brachydactyly-kyphoscoliosis syndrome	True	False	Fals
 Orphanet:3434	MMEP syndrome	True	False	False
 Orphanet:3437	Vogt-Koyanagi-Harada disease	True	False	False
 Orphanet:3439	Von Voss-Cherstvoy syndrome	True	False	False
-Orphanet:344	Arbovirus fever	True	False	False
 Orphanet:3440	Waardenburg syndrome	True	False	False
 Orphanet:3447	Weaver syndrome	True	False	False
 Orphanet:3448	Weaver-Williams syndrome	True	False	False
@@ -10418,7 +10562,7 @@ Orphanet:34533	Corneal dystrophy	True	False	False
 Orphanet:3454	Intellectual disability-developmental delay-contractures syndrome	True	False	False
 Orphanet:3455	Wiedemann-Rautenstrauch syndrome	True	False	False
 Orphanet:3456	Wildervanck syndrome	True	False	False
-Orphanet:34587	Glycogen storage disease due to LAMP-2 deficiency	True	False	False
+Orphanet:34587	Danon disease	True	False	False
 Orphanet:3459	Wilson-Turner syndrome	True	False	False
 Orphanet:34592	Immunodeficiency by defective expression of MHC class I	True	False	False
 Orphanet:346	Quinquaud folliculitis decalvans	True	False	False
@@ -10481,6 +10625,7 @@ Orphanet:352670	Autosomal dominant intermediate Charcot-Marie-Tooth disease type
 Orphanet:352675	X-linked Charcot-Marie-Tooth disease type 6	True	False	False
 Orphanet:352682	Cobblestone lissencephaly without muscular or ocular involvement	True	False	False
 Orphanet:352687	Congenital muscular alpha-dystroglycanopathy with brain and eye anomalies	True	False	False
+Orphanet:352709	CLN13 disease	True	False	False
 Orphanet:352712	Facial dysmorphism-immunodeficiency-livedo-short stature syndrome	True	False	False
 Orphanet:352718	Progressive retinal dystrophy due to retinol transport defect	True	False	False
 Orphanet:352723	Attenuated Chédiak-Higashi syndrome	True	False	False
@@ -10618,7 +10763,7 @@ Orphanet:363727	X-linked dyserythropoietic anemia with abnormal platelets and ne
 Orphanet:363741	Colobomatous microphthalmia-obesity-hypogenitalism-intellectual disability syndrome	True	False	False
 Orphanet:363746	Balint syndrome	True	False	False
 Orphanet:36382	Familial cervical artery dissection	True	False	False
-Orphanet:36383	COL4A1-related familial vascular leukoencephalopathy	True	False	False
+Orphanet:36383	COL4A1/2-related familial vascular leukoencephalopathy	True	False	False
 Orphanet:36386	Hereditary sensory and autonomic neuropathy type 1	True	False	False
 Orphanet:36387	Generalized epilepsy with febrile seizures-plus	True	False	False
 Orphanet:36388	Paraneoplastic neurologic syndrome	True	False	False
@@ -10653,7 +10798,6 @@ Orphanet:364571	Dysostosis with limb and face anomalies as a major feature	True	
 Orphanet:364574	Acrofacial dysostosis	True	False	False
 Orphanet:364577	Intellectual disability-brachydactyly-Pierre Robin syndrome	True	False	False
 Orphanet:364803	Rare bone disease related to a common gene or pathway defect	True	False	False
-Orphanet:364817	Aggrecan-related bone disorder	True	False	False
 Orphanet:364820	TRPV4-related bone disorder	True	False	False
 Orphanet:365	Glycogen storage disease due to acid maltase deficiency	True	False	False
 Orphanet:366	Glycogen storage disease due to glycogen debranching enzyme deficiency	True	False	False
@@ -10799,7 +10943,7 @@ Orphanet:391417	HSD10 disease	True	False	False
 Orphanet:391428	HSD10 disease, infantile type	True	False	False
 Orphanet:391457	HSD10 disease, neonatal type	True	False	False
 Orphanet:391474	Frontorhiny	True	False	False
-Orphanet:391487	Autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome	True	False	False
+Orphanet:391487	STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome	True	False	False
 Orphanet:391490	Adult-onset myasthenia gravis	True	False	False
 Orphanet:391497	Juvenile myasthenia gravis	True	False	False
 Orphanet:391504	Transient neonatal myasthenia gravis	True	False	False
@@ -11002,7 +11146,7 @@ Orphanet:404514	Acquired cystic disease-associated renal cell carcinoma	True	Fal
 Orphanet:404521	Spinal muscular atrophy with respiratory distress type 2	True	False	False
 Orphanet:404538	X-linked distal hereditary motor neuropathy	True	False	False
 Orphanet:404546	DITRA	True	False	False
-Orphanet:404553	Vasculitis due to ADA2 deficiency	True	False	False
+Orphanet:404553	Adenosine deaminase 2 deficiency	True	False	False
 Orphanet:404560	Familial atypical multiple mole melanoma syndrome	True	False	False
 Orphanet:404568	Dysostosis of genetic origin	True	False	False
 Orphanet:404571	Dysostosis of genetic origin with limb anomaly as a major feature	True	False	False
@@ -11085,11 +11229,11 @@ Orphanet:423	Malignant hyperthermia of anesthesia	True	False	False
 Orphanet:423275	Spinocerebellar ataxia type 40	True	False	False
 Orphanet:423296	Spinocerebellar ataxia type 38	True	False	False
 Orphanet:423306	Microcephaly-short stature-intellectual disability-facial dysmorphism syndrome	True	False	False
-Orphanet:423384	Autosomal recessive severe congenital neutropenia due to JAGN1 deficiency	True	False	False
+Orphanet:423384	Severe congenital neutropenia due to JAGN1 deficiency	True	False	False
 Orphanet:423454	Nail and teeth abnormalities-marginal palmoplantar keratoderma-oral hyperpigmentation syndrome	True	False	False
 Orphanet:423461	Mucolipidosis type III alpha/beta	True	False	False
 Orphanet:423470	Mucolipidosis type III gamma	True	False	False
-Orphanet:423479	X-linked intellectual disability-limb spasticity-retinal dystrophy-diabetes insipidus syndrome	True	False	False
+Orphanet:423479	X-linked intellectual disability-limb spasticity-retinal dystrophy-arginine vasopressin deficiency	True	False	False
 Orphanet:423655	ARX-related encephalopathy-brain malformation spectrum	True	False	False
 Orphanet:423662	Rare autonomic nervous system disorder	True	False	False
 Orphanet:423693	Double outlet right ventricle with subaortic or doubly committed ventricular septal defect	True	False	False
@@ -11183,7 +11327,7 @@ Orphanet:435988	Chronic atrial and intestinal dysrhythmia syndrome	True	False	Fa
 Orphanet:435998	Autosomal recessive intermediate Charcot-Marie-Tooth disease type D	True	False	False
 Orphanet:436	Hypophosphatasia	True	False	False
 Orphanet:436003	Contractures-developmental delay-Pierre Robin syndrome	True	False	False
-Orphanet:436141	Severe intellectual disability-hypotonia-strabismus-coarse face-planovalgus syndrome	True	False	False
+Orphanet:436141	HIDEA syndrome	True	False	False
 Orphanet:436144	Intrauterine growth restriction-short stature-early adult-onset diabetes syndrome	True	False	False
 Orphanet:436151	Intellectual disability-expressive aphasia-facial dysmorphism syndrome	True	False	False
 Orphanet:436159	Autoimmune lymphoproliferative syndrome due to CTLA4 haploinsuffiency	True	False	False
@@ -11220,6 +11364,7 @@ Orphanet:439212	Early-onset myopathy-areflexia-respiratory distress-dysphagia sy
 Orphanet:439218	KCNQ2-related epileptic encephalopathy	True	False	False
 Orphanet:439224	ALECT2 amyloidosis	True	False	False
 Orphanet:439232	AApoAIV amyloidosis	True	False	False
+Orphanet:439246	ABeta2M amyloidosis	True	False	False
 Orphanet:439254	ITM2B amyloidosis	True	False	False
 Orphanet:439729	Cutaneous polyarteritis nodosa	True	False	False
 Orphanet:439737	Primary polyarteritis nodosa	True	False	False
@@ -11293,11 +11438,11 @@ Orphanet:444116	Hereditary amyloidosis	True	False	False
 Orphanet:444138	Peeling skin-leukonychia-acral punctate keratoses-cheilitis-knuckle pads syndrome	True	False	False
 Orphanet:444316	Idiopathic phalangeal acro-osteolysis	True	False	False
 Orphanet:444458	Combined oxidative phosphorylation defect type 24	True	False	False
-Orphanet:444463	Autoimmune hemolytic anemia-autoimmune thrombocytopenia-primary immunodeficiency syndrome	True	False	False
+Orphanet:444463	Autoimmune hemolytic anemia-autoimmune thrombocytopenia-primary immunodeficiency syndrome due to TPP2 deficiency	True	False	False
 Orphanet:444490	Familial chylomicronemia syndrome	True	False	False
 Orphanet:444916	Pseudohypoaldosteronism	True	False	False
 Orphanet:445018	Combined immunodeficiency due to LRBA deficiency	True	False	False
-Orphanet:445038	3-methylglutaconic aciduria type 7	True	False	False
+Orphanet:445038	3-methylglutaconic aciduria-neonatal cataract-neurologic involvement-congenital neutropenia syndrome	True	False	False
 Orphanet:445062	Juvenile-onset diabetes mellitus-central and peripheral neurodegeneration syndrome	True	False	False
 Orphanet:445110	Limb-girdle muscular dystrophy due to POMK deficiency	True	False	False
 Orphanet:445197	Secondary vasculitis	True	False	False
@@ -11418,13 +11563,12 @@ Orphanet:457485	Macrocephaly-intellectual disability-neurodevelopmental disorder
 Orphanet:458718	Idiopathic spontaneous coronary artery dissection	True	False	False
 Orphanet:458758	Composite hemangioendothelioma	True	False	False
 Orphanet:458763	Retiform hemangioendothelioma	True	False	False
-Orphanet:458768	Primary intralymphatic angioendothelioma	True	False	False
+Orphanet:458768	Papillary intralymphatic angioendothelioma	True	False	False
 Orphanet:458775	Congenital hemangioma	True	False	False
 Orphanet:458785	Partially involuting congenital hemangioma	True	False	False
 Orphanet:458792	Mixed cystic lymphatic malformation	True	False	False
 Orphanet:458798	Spinocerebellar ataxia type 41	True	False	False
 Orphanet:458803	Spinocerebellar ataxia type 42	True	False	False
-Orphanet:458827	Vascular tumor with associated anomalies	True	False	False
 Orphanet:458830	Rare capillary malformation with associated anomalies	True	False	False
 Orphanet:458833	Common cystic lymphatic malformation	True	False	False
 Orphanet:458837	Rare combined vascular malformation	True	False	False
@@ -11536,7 +11680,6 @@ Orphanet:475	Joubert syndrome	True	False	False
 Orphanet:476084	BVES-related limb-girdle muscular dystrophy	True	False	False
 Orphanet:476093	Autosomal dominant distal axonal motor neuropathy-myofibrillar myopathy syndrome	True	False	False
 Orphanet:476096	Erythrokeratodermia-cardiomyopathy syndrome	True	False	False
-Orphanet:476102	Hereditary pediatric Behçet-like disease	True	False	False
 Orphanet:476109	Axonal hereditary motor and sensory neuropathy	True	False	False
 Orphanet:476113	Combined immunodeficiency due to TFRC deficiency	True	False	False
 Orphanet:476116	Demyelinating hereditary motor and sensory neuropathy	True	False	False
@@ -11558,8 +11701,8 @@ Orphanet:477742	Nodular fasciitis	True	False	False
 Orphanet:477749	Pontine autosomal dominant microangiopathy with leukoencephalopathy	True	False	False
 Orphanet:477754	Genetic cerebral small vessel disease	True	False	False
 Orphanet:477759	COL4A1 or COL4A2-related cerebral small vessel disease	True	False	False
-Orphanet:477762	COL4A1 or COL4A2-related cerebral small vessel disease with ischemic tendancy	True	False	False
-Orphanet:477765	COL4A1 or COL4A2-related cerebral small vessel disease with hemorrhagic tendancy	True	False	False
+Orphanet:477762	COL4A1 or COL4A2-related cerebral small vessel disease with ischemic tendency	True	False	False
+Orphanet:477765	COL4A1 or COL4A2-related cerebral small vessel disease with hemorrhagic tendency	True	False	False
 Orphanet:477768	Moyamoya angiopathy	True	False	False
 Orphanet:477771	Rare disorder with a moyamoya angiopathy	True	False	False
 Orphanet:477774	Combined oxidative phosphorylation defect type 27	True	False	False
@@ -11629,19 +11772,19 @@ Orphanet:485	Kniest dysplasia	True	False	False
 Orphanet:485275	Acquired schizencephaly	True	False	False
 Orphanet:485350	CLCN4-related X-linked intellectual disability syndrome	True	False	False
 Orphanet:485358	Propylthiouracil embryofetopathy	True	False	False
-Orphanet:485382	Genetic premature ovarian failure	True	False	False
+Orphanet:485382	Rare genetic premature ovarian failure	True	False	False
 Orphanet:485405	16p12.1p12.3 triplication syndrome	True	False	False
 Orphanet:485418	EMILIN-1-related connective tissue disease	True	False	False
 Orphanet:485421	MFF-related encephalopathy due to mitochondrial and peroxisomal fission defect	True	False	False
 Orphanet:485426	Isolated congenital hepatic fibrosis	True	False	False
 Orphanet:486	Autosomal dominant severe congenital neutropenia	True	False	False
-Orphanet:48652	Monosomy 22q13.3	True	False	False
+Orphanet:48652	Phelan-McDermid syndrome	True	False	False
 Orphanet:486811	Prenatal-onset spinal muscular atrophy with congenital bone fractures	True	False	False
 Orphanet:486815	Congenital muscular dystrophy-respiratory failure-skin abnormalities-joint hyperlaxity syndrome	True	False	False
 Orphanet:48686	Primary effusion lymphoma	True	False	False
 Orphanet:487	Krabbe disease	True	False	False
 Orphanet:48736	Embryonal carcinoma of the central nervous system	True	False	False
-Orphanet:487796	Macrothrombocytopenia-lymphedema-developmental delay-facial dysmorphism-camptodactyly syndrome	True	False	False
+Orphanet:487796	Takenouchi-Kosaki syndrome	True	False	False
 Orphanet:487809	Pediatric collagenous gastritis	True	False	False
 Orphanet:487814	Autosomal dominant Charcot-Marie-Tooth disease type 2 due to DGAT2 mutation	True	False	False
 Orphanet:487825	Pierpont syndrome	True	False	False
@@ -11728,8 +11871,8 @@ Orphanet:498445	Genetic inflammatory or rheumatoid-like osteoarthropathy	True	Fa
 Orphanet:498448	Overgrowth or tall stature syndrome with skeletal involvement	True	False	False
 Orphanet:498451	Dysostosis with brachydactyly without extraskeletal manifestations	True	False	False
 Orphanet:498454	Dysostosis with brachydactyly with extraskeletal manifestations	True	False	False
-Orphanet:498457	Longitudinal limb defect	True	False	False
-Orphanet:498461	Terminal transverse limb defect	True	False	False
+Orphanet:498457	Non-syndromic longitudinal limb defect	True	False	False
+Orphanet:498461	Non-syndromic terminal transverse limb defect	True	False	False
 Orphanet:498464	Non-syndromic preaxial polydactyly	True	False	False
 Orphanet:498467	Non-syndromic postaxial polydactyly	True	False	False
 Orphanet:498470	Non-syndromic complex polydactyly	True	False	False
@@ -11738,7 +11881,7 @@ Orphanet:498477	Ectrodactyly with and without other manifestations	True	False	Fa
 Orphanet:498481	LRP5-related primary osteoporosis	True	False	False
 Orphanet:498485	Overgrowth-metaphyseal undermodeling-spondylar dysplasia syndrome	True	False	False
 Orphanet:498488	Overgrowth syndrome with 2q37 translocation	True	False	False
-Orphanet:498491	Complete hemimelia	True	False	False
+Orphanet:498491	Non-syndromic complete hemimelia	True	False	False
 Orphanet:498494	Mirror-image polydactyly	True	False	False
 Orphanet:498497	Short rib-polydactyly syndrome type 5	True	False	False
 Orphanet:498602	Sugarman brachydactyly	True	False	False
@@ -11746,7 +11889,7 @@ Orphanet:498693	MYBPC1-related autosomal recessive non-lethal arthrogryposis mul
 Orphanet:499	Kerion celsi	True	False	False
 Orphanet:499009	Congenital syphilis	True	False	False
 Orphanet:499047	Autoimmune/inflammatory optic neuropathy	True	False	False
-Orphanet:499085	Chronic relapsing inflammatory optic neuropathy	True	False	False
+Orphanet:499085	Chronic relapsing inflammatory optic neuritis	True	False	False
 Orphanet:499096	Isolated optic neuritis	True	False	False
 Orphanet:499103	Recurrent idiopathic neuroretinitis	True	False	False
 Orphanet:499107	Idiopathic optic perineuritis	True	False	False
@@ -11762,7 +11905,7 @@ Orphanet:500144	Early-onset progressive encephalopathy-hearing loss-pons hypopla
 Orphanet:500150	Brain malformations-musculoskeletal abnormalities-facial dysmorphism-intellectual disability syndrome	True	False	False
 Orphanet:500159	Microcephaly-corpus callosum and cerebellar vermis hypoplasia-facial dysmorphism-intellectual disability syndrom	True	False	False
 Orphanet:500163	Witteveen-Kolk syndrome	True	False	False
-Orphanet:500166	SIN3A-related intellectual disability syndrome due to a point mutation	True	False	False
+Orphanet:500166	SIN3-related intellectual disability syndrome due to a point mutation	True	False	False
 Orphanet:500180	Childhood-onset motor and cognitive regression syndrome with extrapyramidal movement disorder	True	False	False
 Orphanet:500188	X-linked external auditory canal atresia-dilated internal auditory canal-facial dysmorphism syndrome	True	False	False
 Orphanet:500464	Squamous cell carcinoma of the nasal cavity and paranasal sinuses	True	False	False
@@ -12025,7 +12168,7 @@ Orphanet:538863	Classic pyoderma gangrenosum	True	False	False
 Orphanet:538866	Pustular pyoderma gangrenosum	True	False	False
 Orphanet:538869	Bullous pyoderma gangrenosum	True	False	False
 Orphanet:538872	Vegetative pyoderma gangrenosum	True	False	False
-Orphanet:538931	X-linked lymphoproliferative disease due to SH2D1A deficiency	True	False	False
+Orphanet:538931	X-linked lymphoproliferative disease due to SAP deficiency	True	False	False
 Orphanet:538934	X-linked lymphoproliferative disease due to XIAP deficiency	True	False	False
 Orphanet:538958	Combined immunodeficiency due to CD70 deficiency	True	False	False
 Orphanet:538963	Combined immunodeficiency due to ITK deficiency	True	False	False
@@ -12042,7 +12185,7 @@ Orphanet:542301	Combined immunodeficiency due to CARMIL2 deficiency	True	False	F
 Orphanet:542306	GNB5-related intellectual disability-cardiac arrhythmia syndrome	True	False	False
 Orphanet:542310	Leukoencephalopathy with calcifications and cysts	True	False	False
 Orphanet:54247	Posterior cortical atrophy	True	False	False
-Orphanet:54251	Corticosteroid-sensitive aseptic abscess syndrome	True	False	False
+Orphanet:54251	Aseptic abscess syndrome	True	False	False
 Orphanet:542568	Quadricuspid aortic valve	True	False	False
 Orphanet:542585	Auditory neuropathy-optic atrophy syndrome	True	False	False
 Orphanet:542592	Necrobiosis lipoidica	True	False	False
@@ -12302,8 +12445,6 @@ Orphanet:592850	Neuromyelitis optica spectrum disorder with anti-AQP4 antibodies
 Orphanet:592856	Neuromyelitis optica spectrum disorder with anti-MOG antibodies	True	False	False
 Orphanet:592869	Neuromyelitis optica spectrum disorder without anti-MOG and without anti-AQP4 antibodies	True	False	False
 Orphanet:592873	Acute transverse myelitis with anti-MOG antibodies	True	False	False
-Orphanet:592885	Isolated optic neuritis without anti-MOG antibodies	True	False	False
-Orphanet:592888	Isolated optic neuritis with anti-MOG antibodies	True	False	False
 Orphanet:592894	Acute disseminated encephalomyelitis with anti-MOG antibodies	True	False	False
 Orphanet:592900	Acute disseminated encephalomyelitis without anti-MOG antibodies	True	False	False
 Orphanet:59298	Schilder disease	True	False	False
@@ -12371,7 +12512,7 @@ Orphanet:60026	Pulmonary nodular lymphoid hyperplasia	True	False	False
 Orphanet:60030	Loeys-Dietz syndrome	True	False	False
 Orphanet:60032	Recurrent respiratory papillomatosis	True	False	False
 Orphanet:60033	Idiopathic bronchiectasis	True	False	False
-Orphanet:60039	Pudendal neuralgia	True	False	False
+Orphanet:60039	Pudendal nerve entrapment syndrome	True	False	False
 Orphanet:60040	Megalencephaly-capillary malformation-polymicrogyria syndrome	True	False	False
 Orphanet:60041	Congenital heart block	True	False	False
 Orphanet:600663	NRXN1-related severe neurodevelopmental disorder-motor stereotypies-chronic constipation-sleep-wake cycle disturbance	True	False	False
@@ -12449,10 +12590,10 @@ Orphanet:618891	Chronic neurovisceral acid sphingomyelinase deficiency	True	Fals
 Orphanet:619233	Hereditary persistence of fetal hemoglobin-intellectual disability syndrome	True	False	False
 Orphanet:619284	Narcolepsy	True	False	False
 Orphanet:619340	Inherited hematologic cancer-predisposing syndrome	True	False	False
-Orphanet:619363	Neonatal-onset severe multisystemic autoinflammatory disease with increased IL18	True	False	False
+Orphanet:619363	NOCARH syndrome	True	False	False
 Orphanet:619367	SAMD9L-associated autoinflammatory syndrome	True	False	False
-Orphanet:619941	Immune deficiency due to impaired neutrophil phagocytosis and migration	True	False	False
-Orphanet:619948	Early-onset autoimmunity-autoinflammation-immunodeficiency syndrome	True	False	False
+Orphanet:619941	Congenital neutropenia-combined immunodeficiency due to MKL1 deficiency	True	False	False
+Orphanet:619948	Early-onset autoimmunity-autoinflammation-immunodeficiency syndrome due to SOCS1 haploinsufficiency	True	False	False
 Orphanet:619953	Familial hyperinflammatory lymphoproliferative immunodeficiency	True	False	False
 Orphanet:619972	CADINS disease	True	False	False
 Orphanet:619979	Developmental delay-immunodeficiency-leukoencephalopathy-hypohomocysteinemia syndrome	True	False	False
@@ -12532,7 +12673,7 @@ Orphanet:633035	Intellectual disability-early-onset cataract-microcephaly syndro
 Orphanet:633099	PAICS deficiency	True	False	False
 Orphanet:633124	Invasive scopulariopsis infection	True	False	False
 Orphanet:633211	Preaxial digit brachydactyly-webbed fingers	True	False	False
-Orphanet:633228	Proximal femoral focal deficiency	True	False	False
+Orphanet:633228	Isolated proximal femoral focal deficiency	True	False	False
 Orphanet:634	Netherton syndrome	True	False	False
 Orphanet:63442	Angel-shaped phalango-epiphyseal dysplasia	True	False	False
 Orphanet:63443	Rare epithelial tumor of stomach	True	False	False
@@ -12547,7 +12688,7 @@ Orphanet:63455	Paraneoplastic pemphigus	True	False	False
 Orphanet:635	Neuroblastoma	True	False	False
 Orphanet:636	Neurofibromatosis type 1	True	False	False
 Orphanet:636941	Vascular Ehlers-Danlos-polymicrogyria syndrome	True	False	False
-Orphanet:636945	Invasive Candidiasis	True	False	False
+Orphanet:636945	Invasive candidiasis	True	False	False
 Orphanet:636950	Glaucomatocyclitic crisis disease	True	False	False
 Orphanet:636955	Endemic pemphigus foliaceus	True	False	False
 Orphanet:636965	Autosomal dominant myosin storage myopathy	True	False	False
@@ -12579,7 +12720,7 @@ Orphanet:641613	Endogenous Cushing syndrome	True	False	False
 Orphanet:641829	Neonatal compartment syndrome	True	False	False
 Orphanet:642	Hereditary sensory and autonomic neuropathy type 4	True	False	False
 Orphanet:642071	Primary pulmonary vein stenosis	True	False	False
-Orphanet:642085	Spondyloepimetaphyseal dysplasia with joint laxity, EXOC6B type	True	False	False
+Orphanet:642085	EXOC6B-related spondyloepimetaphyseal dysplasia with joint laxity	True	False	False
 Orphanet:642099	Spondyloepimetaphyseal dysplasia with joint laxity, Beighton type	True	False	False
 Orphanet:642671	Familial hyperaldosteronism type IV	True	False	False
 Orphanet:642675	CHD8 overgrowth syndrome	True	False	False
@@ -12647,9 +12788,9 @@ Orphanet:646098	Collagen VI-related congenital muscular dystrophy	True	False	Fal
 Orphanet:646113	Intermediate collagen VI-related muscular dystrophy	True	False	False
 Orphanet:646136	Dysplastic cortical hyperostosis, Al-Gazali type	True	False	False
 Orphanet:646139	Dysplastic cortical hyperostosis	True	False	False
-Orphanet:646278	CDK13-related congenital heart defects-intellectual disability-facial dysmorphism syndrome	True	False	False
+Orphanet:646278	CDK13-related developmental delay-intellectual disability-facial dysmorphism-congenital heart defects syndrome	True	False	False
 Orphanet:64686	Tolosa-Hunt syndrome	True	False	False
-Orphanet:64692	Oroya fever	True	False	False
+Orphanet:64692	Bartonella bacilliformis infection	True	False	False
 Orphanet:64694	Trench fever	True	False	False
 Orphanet:647	Nijmegen breakage syndrome	True	False	False
 Orphanet:64720	Leiomyosarcoma	True	False	False
@@ -12681,7 +12822,7 @@ Orphanet:647794	Isolated persistent urogenital sinus	True	False	False
 Orphanet:647799	MYT1L-related developmental delay-intellectual disability-obesity syndrome	True	False	False
 Orphanet:647804	Combined immunodeficiency due to FCHO1 deficiency	True	False	False
 Orphanet:647811	Cardiac-urogenital syndrome	True	False	False
-Orphanet:647815	Keratoendotheliitis fugax hereditaria	True	False	False
+Orphanet:647815	Keratitis fugax hereditaria	True	False	False
 Orphanet:647823	Idiopathic pregnancy-associated osteoporosis	True	False	False
 Orphanet:647834	SLC40A1-related hemochromatosis	True	False	False
 Orphanet:647916	Conjoined twins	True	False	False
@@ -12709,7 +12850,6 @@ Orphanet:650097	Genetic central precocious puberty in male	True	False	False
 Orphanet:650102	Non-genetic central precocious puberty in male	True	False	False
 Orphanet:652	Multiple endocrine neoplasia type 1	True	False	False
 Orphanet:652487	Developmental delay-overweight-facial dysmorphism-behavioral abnormalities syndrome	True	False	False
-Orphanet:65250	Perineural cyst	True	False	False
 Orphanet:652514	Cleft palate-congenital heart defect-intellectual disability syndrome due to MEIS2 mutation	True	False	False
 Orphanet:652519	Cleft palate-congenital heart defect-intellectual disability syndrome	True	False	False
 Orphanet:652522	Periodic fever-immunodeficiency-thrombocytopenia syndrome	True	False	False
@@ -12745,7 +12885,6 @@ Orphanet:656085	Benign atrophic papulosis	True	False	False
 Orphanet:656126	Segmental spinal dysgenesis	True	False	False
 Orphanet:656130	PBX1-related congenital anomalies of kidney and urinary tract syndrome	True	False	False
 Orphanet:656135	Intellectual disability-cupped ears syndrome	True	False	False
-Orphanet:656273	Hypotonia-hypoventilation-intellectual disability-dysautonomia-epilepsy-eye abnormalities syndrome	True	False	False
 Orphanet:656279	1p36.33 duplication syndrome	True	False	False
 Orphanet:656283	Autosomal recessive combined immunodeficiency due to complete IL6ST deficiency	True	False	False
 Orphanet:656300	Autosomal recessive combined immunodeficiency due to partial IL6ST deficiency	True	False	False
@@ -12763,7 +12902,6 @@ Orphanet:65743	Autosomal dominant multiple pterygium syndrome	True	False	False
 Orphanet:65748	Multiple self-healing squamous epithelioma	True	False	False
 Orphanet:65753	Charcot-Marie-Tooth disease type 1	True	False	False
 Orphanet:65759	Carpenter syndrome	True	False	False
-Orphanet:65798	Goodman syndrome	True	False	False
 Orphanet:658	Non-histaminic angioedema	True	False	False
 Orphanet:658540	16q22 deletion syndrome	True	False	False
 Orphanet:658549	Idiopathic small fibers neuropathy	True	False	False
@@ -12776,12 +12914,12 @@ Orphanet:658612	Non-transplant-related bronchiolitis obliterans	True	False	False
 Orphanet:658778	COQ7-related distal hereditary motor neuropathy	True	False	False
 Orphanet:658805	Greig cephalopolysyndactyly-contiguous gene syndrome	True	False	False
 Orphanet:658810	Atrophoderma of Pasini and Pierini	True	False	False
-Orphanet:658813	Methylenetetrahydrofolate dehydrogenase 1 deficiency	True	False	False
+Orphanet:658813	Combined immunodeficiency-megaloblastic anemia due to methylenetetrahydrofolate dehydrogenase 1 deficiency	True	False	False
 Orphanet:658843	Developmental delay-ataxia-hypotonia-facial dysmorphism syndrome	True	False	False
 Orphanet:658909	Fasciolopsiasis	True	False	False
 Orphanet:658913	Paragonimiasis	True	False	False
 Orphanet:658917	Clonorchiasis	True	False	False
-Orphanet:658946	Early-onset autoimmune disorder due to DOCK11 partial deficiency	True	False	False
+Orphanet:658946	Early-onset immune dysregulation with autoimmunity due to DOCK11 partial deficiency	True	False	False
 Orphanet:658951	Early-onset immune dysregulation due to DOCK11 complete deficiency	True	False	False
 Orphanet:659	Mutilating palmoplantar keratoderma with periorificial keratotic plaques	True	False	False
 Orphanet:660	Omphalocele	True	False	False
@@ -12856,8 +12994,9 @@ Orphanet:68402	Rare parkinsonian disorder	True	False	False
 Orphanet:68411	Rare bone tumor	True	False	False
 Orphanet:68415	Rare parathyroid disease and phosphocalcic metabolism anomaly	True	False	False
 Orphanet:68416	Rare infectious disease	True	False	False
-Orphanet:68419	Vascular anomaly or angioma	True	False	False
+Orphanet:68419	Rare vascular anomaly	True	False	False
 Orphanet:685	Hereditary spastic paraplegia	True	False	False
+Orphanet:69	Amyloidosis	True	False	False
 Orphanet:69028	Dysostosis with brachydactyly	True	False	False
 Orphanet:69061	Idiopathic steroid-sensitive nephrotic syndrome	True	False	False
 Orphanet:69063	Congenital membranous nephropathy due to fetomaternal anti-neutral endopeptidase alloimmunization	True	False	False
@@ -13004,7 +13143,7 @@ Orphanet:75234	Cholesteryl ester storage disease	True	False	False
 Orphanet:75249	Familial isolated restrictive cardiomyopathy	True	False	False
 Orphanet:753	46,XY difference of sex development due to 5-alpha-reductase 2 deficiency	True	False	False
 Orphanet:75325	Osteosclerosis-ichthyosis-premature ovarian failure syndrome	True	False	False
-Orphanet:75326	Retinal arterial tortuosity	True	False	False
+Orphanet:75326	Familial isolated retinal arteriolar tortuosity	True	False	False
 Orphanet:75327	North Carolina macular dystrophy	True	False	False
 Orphanet:75373	Progressive bifocal chorioretinal atrophy	True	False	False
 Orphanet:75374	Bradyopsia	True	False	False
@@ -13191,9 +13330,6 @@ Orphanet:79256	GM1 gangliosidosis type 2	True	False	False
 Orphanet:79257	GM1 gangliosidosis type 3	True	False	False
 Orphanet:79258	Glycogen storage disease due to glucose-6-phosphatase deficiency type Ia	True	False	False
 Orphanet:79259	Glycogen storage disease due to glucose-6-phosphatase deficiency type Ib	True	False	False
-Orphanet:79262	Adult neuronal ceroid lipofuscinosis	True	False	False
-Orphanet:79263	Infantile neuronal ceroid lipofuscinosis	True	False	False
-Orphanet:79264	Juvenile neuronal ceroid lipofuscinosis	True	False	False
 Orphanet:79269	Sanfilippo syndrome type A	True	False	False
 Orphanet:79270	Sanfilippo syndrome type B	True	False	False
 Orphanet:79271	Sanfilippo syndrome type C	True	False	False
@@ -13316,7 +13452,7 @@ Orphanet:79457	Maculopapular cutaneous mastocytosis	True	False	False
 Orphanet:79466	Inflammatory linear verrucous epidermal nevus	True	False	False
 Orphanet:79467	Verrucous nevus	True	False	False
 Orphanet:79468	Acanthokeratolytic verrucous nevus	True	False	False
-Orphanet:79473	Porphyria variegata	True	False	False
+Orphanet:79473	Variegate porphyria	True	False	False
 Orphanet:79474	Atypical Werner syndrome	True	False	False
 Orphanet:79476	Griscelli syndrome type 1	True	False	False
 Orphanet:79477	Griscelli syndrome type 2	True	False	False
@@ -13444,7 +13580,7 @@ Orphanet:842	Testicular seminomatous germ cell tumor	True	False	False
 Orphanet:844	Lown-Ganong-Levine syndrome	True	False	False
 Orphanet:845	Tay-Sachs disease	True	False	False
 Orphanet:846	Alpha-thalassemia	True	False	False
-Orphanet:847	Alpha-thalassemia-X-linked intellectual disability syndrome	True	False	False
+Orphanet:847	X-linked alpha-thalassemia-intellectual disability syndrome	True	False	False
 Orphanet:848	Beta-thalassemia	True	False	False
 Orphanet:849	Glanzmann thrombasthenia	True	False	False
 Orphanet:85	Congenital dyserythropoietic anemia	True	False	False
@@ -13483,7 +13619,6 @@ Orphanet:85197	Genochondromatosis type 1	True	False	False
 Orphanet:85198	Dysspondyloenchondromatosis	True	False	False
 Orphanet:85199	Craniosynostosis-anal anomalies-porokeratosis syndrome	True	False	False
 Orphanet:852	X-linked thrombocytopenia with normal platelets	True	False	False
-Orphanet:85200	Ischiovertebral syndrome	True	False	False
 Orphanet:85201	Genitopatellar syndrome	True	False	False
 Orphanet:85202	Keutel syndrome	True	False	False
 Orphanet:85203	Acropectoral syndrome	True	False	False
@@ -13542,7 +13677,7 @@ Orphanet:85448	AGel amyloidosis	True	False	False
 Orphanet:85450	Hereditary amyloidosis with primary renal involvement	True	False	False
 Orphanet:85451	ATTRV122I amyloidosis	True	False	False
 Orphanet:85453	X-linked reticulate pigmentary disorder	True	False	False
-Orphanet:85458	Hereditary cerebral hemorrhage with amyloidosis	True	False	False
+Orphanet:85458	Cerebral Amyloid Angiopathy	True	False	False
 Orphanet:857	Townes-Brocks syndrome	True	False	False
 Orphanet:858	Congenital toxoplasmosis	True	False	False
 Orphanet:859	Transcobalamin deficiency	True	False	False
@@ -13554,7 +13689,7 @@ Orphanet:86309	DPAGT1-CDG	True	False	False
 Orphanet:864	Trichofolliculoma	True	False	False
 Orphanet:867	Familial multiple trichoepithelioma	True	False	False
 Orphanet:86788	X-linked severe congenital neutropenia	True	False	False
-Orphanet:86789	Patella aplasia/hypoplasia	True	False	False
+Orphanet:86789	Isolated patella aplasia/hypoplasia	True	False	False
 Orphanet:86795	Localized lichen myxedematosus	True	False	False
 Orphanet:86797	Atypical lichen myxedematosus	True	False	False
 Orphanet:868	Triose phosphate-isomerase deficiency	True	False	False
@@ -13573,7 +13708,7 @@ Orphanet:86823	Lissencephaly with cerebellar hypoplasia	True	False	False
 Orphanet:86829	Chronic neutrophilic leukemia	True	False	False
 Orphanet:86830	Chronic myeloproliferative disease, unclassifiable	True	False	False
 Orphanet:86834	Juvenile myelomonocytic leukemia	True	False	False
-Orphanet:86839	Refractory anemia with excess blasts	True	False	False
+Orphanet:86839	Myelodysplastic neoplasm with increased blasts	True	False	False
 Orphanet:86841	Myelodysplastic syndrome associated with isolated del(5q) chromosome abnormality	True	False	False
 Orphanet:86843	Acute panmyelosis with myelofibrosis	True	False	False
 Orphanet:86845	Acute myeloid leukaemia with myelodysplasia-related features	True	False	False
@@ -13696,7 +13831,7 @@ Orphanet:90002	Undifferentiated connective tissue syndrome	True	False	False
 Orphanet:90003	Inflammatory pseudotumor of the liver	True	False	False
 Orphanet:90020	Parkinson-dementia complex of Guam	True	False	False
 Orphanet:90021	Radiation myelitis	True	False	False
-Orphanet:90023	Primary immunodeficiency syndrome due to LAMTOR2 deficiency	True	False	False
+Orphanet:90023	Primary immunodeficiency syndrome due to P14/LAMTOR2 deficiency	True	False	False
 Orphanet:90024	Deafness with labyrinthine aplasia, microtia, and microdontia	True	False	False
 Orphanet:90025	Non-syndromic syndactyly	True	False	False
 Orphanet:90026	Primary erythromelalgia	True	False	False
@@ -13847,7 +13982,7 @@ Orphanet:91483	Rieger anomaly	True	False	False
 Orphanet:91489	Isolated congenital megalocornea	True	False	False
 Orphanet:91490	Isolated congenital sclerocornea	True	False	False
 Orphanet:91491	Congenital ectropion uveae	True	False	False
-Orphanet:91492	Early-onset non-syndromic cataract	True	False	False
+Orphanet:91492	Early onset non-syndromic cataract	True	False	False
 Orphanet:91494	Macular coloboma-cleft palate-hallux valgus syndrome	True	False	False
 Orphanet:91495	Persistent hyperplastic primary vitreous	True	False	False
 Orphanet:91496	Snowflake vitreoretinal degeneration	True	False	False
@@ -13866,7 +14001,7 @@ Orphanet:927	Hyperammonemia due to N-acetylglutamate synthase deficiency	True	Fa
 Orphanet:929	Achalasia-microcephaly syndrome	True	False	False
 Orphanet:93	Aspartylglucosaminuria	True	False	False
 Orphanet:930	Idiopathic achalasia	True	False	False
-Orphanet:931	Acheiropodia	True	False	False
+Orphanet:931	Isolated acheiropodia	True	False	False
 Orphanet:93100	Renal agenesis, unilateral	True	False	False
 Orphanet:93101	Renal hypoplasia	True	False	False
 Orphanet:93108	Renal dysplasia	True	False	False
@@ -13914,10 +14049,10 @@ Orphanet:93314	Spondylometaphyseal dysplasia, Kozlowski type	True	False	False
 Orphanet:93315	Spondylometaphyseal dysplasia, 'corner fracture' type	True	False	False
 Orphanet:93316	Spondylometaphyseal dysplasia, Schmidt type	True	False	False
 Orphanet:93317	Spondylometaphyseal dysplasia, Sedaghatian type	True	False	False
-Orphanet:93320	Ulnar hemimelia	True	False	False
-Orphanet:93321	Radial hemimelia	True	False	False
-Orphanet:93322	Tibial hemimelia	True	False	False
-Orphanet:93323	Fibular hemimelia	True	False	False
+Orphanet:93320	Isolated ulnar hemimelia	True	False	False
+Orphanet:93321	Isolated radial hemimelia	True	False	False
+Orphanet:93322	Isolated tibial hemimelia	True	False	False
+Orphanet:93323	Isolated fibular hemimelia	True	False	False
 Orphanet:93324	Autosomal recessive Kenny-Caffey syndrome	True	False	False
 Orphanet:93325	Autosomal dominant Kenny-Caffey syndrome	True	False	False
 Orphanet:93328	Autosomal dominant omodysplasia	True	False	False
@@ -13961,7 +14096,6 @@ Orphanet:93420	FGFR3-related chondrodysplasia	True	False	False
 Orphanet:93421	Type 2 collagen-related bone disorder	True	False	False
 Orphanet:93422	Type 11 collagen-related bone disorder	True	False	False
 Orphanet:93423	Sulfation-related bone disorder	True	False	False
-Orphanet:93424	Perlecan-related bone disorder	True	False	False
 Orphanet:93425	Filamin-related bone disorder	True	False	False
 Orphanet:93426	Ciliopathies with major skeletal involvement	True	False	False
 Orphanet:93429	Multiple epiphyseal dysplasia and pseudoachondroplasia	True	False	False
@@ -14006,7 +14140,6 @@ Orphanet:93560	AApoAI amyloidosis	True	False	False
 Orphanet:93561	ALys amyloidosis	True	False	False
 Orphanet:93562	AFib amyloidosis	True	False	False
 Orphanet:93568	Juvenile polymyositis	True	False	False
-Orphanet:93569	Polymyalgia rheumatica	True	False	False
 Orphanet:93571	Dense deposit disease	True	False	False
 Orphanet:93573	Thrombotic microangiopathy	True	False	False
 Orphanet:93581	Atypical hemolytic uremic syndrome with anti-factor H antibodies	True	False	False
@@ -14065,7 +14198,7 @@ Orphanet:93964	Blepharospasm-oromandibular dystonia syndrome	True	False	False
 Orphanet:93969	Open spinal dysraphism with a myelomeningocele	True	False	False
 Orphanet:93976	Anotia	True	False	False
 Orphanet:94	Astrocytoma	True	False	False
-Orphanet:94056	Humero-ulnar synostosis	True	False	False
+Orphanet:94056	Isolated humero-ulnar synostosis	True	False	False
 Orphanet:94058	Neovascular glaucoma	True	False	False
 Orphanet:94063	12q14 microdeletion syndrome	True	False	False
 Orphanet:94064	Deafness-infertility syndrome	True	False	False
@@ -14096,9 +14229,7 @@ Orphanet:945	Acalvaria	True	False	False
 Orphanet:949	Acrocraniofacial dysostosis	True	False	False
 Orphanet:95	Friedreich ataxia	True	False	False
 Orphanet:950	Acrodysostosis	True	False	False
-Orphanet:95157	Acute hepatic porphyria	True	False	False
 Orphanet:95159	Hepatoerythropoietic porphyria	True	False	False
-Orphanet:95161	Chronic hepatic porphyria	True	False	False
 Orphanet:952	Acrofacial dysostosis, Weyers type	True	False	False
 Orphanet:95232	Lissencephaly due to LIS1 mutation	True	False	False
 Orphanet:95409	Acute adrenal insufficiency	True	False	False
@@ -14146,7 +14277,7 @@ Orphanet:95613	Pituitary apoplexy	True	False	False
 Orphanet:95617	Pituitary hormone deficiency secondary to a granulomatous disease	True	False	False
 Orphanet:95618	Pituitary hormone deficiency secondary to storage disease	True	False	False
 Orphanet:95619	Post-traumatic pituitary deficiency	True	False	False
-Orphanet:95626	Acquired central diabetes insipidus	True	False	False
+Orphanet:95626	Acquired arginine vasopressin deficiency	True	False	False
 Orphanet:95699	Congenital adrenal hyperplasia due to cytochrome P450 oxidoreductase deficiency	True	False	False
 Orphanet:957	Acropectorovertebral dysplasia	True	False	False
 Orphanet:95700	Familial adrenal hypoplasia with absent pituitary luteinizing hormone	True	False	False
@@ -14154,8 +14285,8 @@ Orphanet:95702	X-linked adrenal hypoplasia congenita	True	False	False
 Orphanet:95706	Non-syndromic posterior hypospadias	True	False	False
 Orphanet:95707	Idiopathic isolated micropenis	True	False	False
 Orphanet:95708	Rare precocious puberty	True	False	False
-Orphanet:95709	Acquired premature ovarian failure	True	False	False
-Orphanet:95710	Non-acquired premature ovarian failure	True	False	False
+Orphanet:95709	Rare acquired premature ovarian failure	True	False	False
+Orphanet:95710	Rare non-acquired premature ovarian failure	True	False	False
 Orphanet:95711	Congenital hypothyroidism due to developmental anomaly	True	False	False
 Orphanet:95712	Thyroid ectopia	True	False	False
 Orphanet:95713	Athyreosis	True	False	False
@@ -14286,7 +14417,7 @@ Orphanet:97289	Thymic neuroendocrine tumor	True	False	False
 Orphanet:97290	Familial papillary thyroid carcinoma with renal papillary neoplasia	True	False	False
 Orphanet:97293	Rare benign ovarian tumor	True	False	False
 Orphanet:97297	Bohring-Opitz syndrome	True	False	False
-Orphanet:973	Congenital absence/hypoplasia of fingers excluding thumb, unilateral	True	False	False
+Orphanet:973	Isolated absence/hypoplasia of fingers excluding thumb, unilateral	True	False	False
 Orphanet:97330	Thoracic outlet syndrome	True	False	False
 Orphanet:97332	Kienbock disease	True	False	False
 Orphanet:97335	Osgood-Schlatter disease	True	False	False
@@ -14591,7 +14722,7 @@ Orphanet:98820	Familial focal epilepsy with variable foci	True	False	False
 Orphanet:98823	Chronic myelomonocytic leukemia	True	False	False
 Orphanet:98824	Atypical chronic myeloid leukemia	True	False	False
 Orphanet:98825	Unclassified myelodysplastic/myeloproliferative disease	True	False	False
-Orphanet:98826	Refractory anemia	True	False	False
+Orphanet:98826	Myelodysplastic neoplasm with low blasts	True	False	False
 Orphanet:98827	Unclassified myelodysplastic syndrome	True	False	False
 Orphanet:98829	Acute myeloid leukemia with abnormal bone marrow eosinophils inv(16)(p13q22) or t(16;16)(p13;q22)	True	False	False
 Orphanet:98831	Acute myeloid leukemia with 11q23 abnormalities	True	False	False
@@ -14641,7 +14772,7 @@ Orphanet:98902	Amish nemaline myopathy	True	False	False
 Orphanet:98904	Congenital myopathy with excess of thin filaments	True	False	False
 Orphanet:98905	Congenital multicore myopathy with external ophthalmoplegia	True	False	False
 Orphanet:98907	Neutral lipid storage disease with ichthyosis	True	False	False
-Orphanet:98908	Neutral lipid storage myopathy	True	False	False
+Orphanet:98908	Neutral lipid storage disease with myopathy	True	False	False
 Orphanet:98909	Desminopathy	True	False	False
 Orphanet:98910	Alpha-crystallinopathy	True	False	False
 Orphanet:98911	Distal myotilinopathy	True	False	False
@@ -14686,7 +14817,6 @@ Orphanet:98971	Posterior amorphous corneal dystrophy	True	False	False
 Orphanet:98972	Central cloudy dystrophy of François	True	False	False
 Orphanet:98973	Posterior polymorphous corneal dystrophy	True	False	False
 Orphanet:98974	Fuchs endothelial corneal dystrophy	True	False	False
-Orphanet:98975	Congenital hereditary endothelial dystrophy type I	True	False	False
 Orphanet:98976	Congenital glaucoma	True	False	False
 Orphanet:98977	Juvenile glaucoma	True	False	False
 Orphanet:98978	Axenfeld anomaly	True	False	False
@@ -14809,7 +14939,6 @@ Orphanet:99413	Turner syndrome due to structural X chromosome anomalies	True	Fal
 Orphanet:99429	Complete androgen insensitivity syndrome	True	False	False
 Orphanet:99642	Spondyloepimetaphyseal dysplasia, Handigodu type	True	False	False
 Orphanet:99646	Metaphyseal chondromatosis with D-2-hydroxyglutaric aciduria	True	False	False
-Orphanet:99647	Cheirospondyloenchondromatosis	True	False	False
 Orphanet:99657	Primary dystonia, DYT2 type	True	False	False
 Orphanet:99672	Fried's tooth and nail syndrome	True	False	False
 Orphanet:99688	Dermotrichic syndrome	True	False	False
@@ -14879,7 +15008,7 @@ Orphanet:99879	Familial isolated hyperparathyroidism	True	False	False
 Orphanet:99880	Hyperparathyroidism-jaw tumor syndrome	True	False	False
 Orphanet:99885	Isolated permanent neonatal diabetes mellitus	True	False	False
 Orphanet:99886	Transient neonatal diabetes mellitus	True	False	False
-Orphanet:99887	Acute megakaryoblastic leukemia in Down syndrome	True	False	False
+Orphanet:99887	Acute megakaryoblastic leukemia in children with Down syndrome	True	False	False
 Orphanet:99889	Cushing syndrome due to ectopic ACTH secretion	True	False	False
 Orphanet:99892	ACTH-dependent Cushing syndrome	True	False	False
 Orphanet:99898	Mendelian susceptibility to mycobacterial diseases due to complete IFNgammaR1 deficiency	True	False	False
@@ -14952,7 +15081,7 @@ Orphanet:99995	Complex regional pain syndrome type 1	True	False	False
 Orphanet:100049	Primary interstitial lung disease specific to childhood due to pulmonary surfactant protein anomalies	True	True	False
 Orphanet:100076	Duodenal neuroendocrine tumor	True	True	False
 Orphanet:100077	Jejunal neuroendocrine tumor	True	True	False
-Orphanet:101987	Constitutional neutropenia	True	True	False
+Orphanet:101987	Congenital neutropenia	True	True	False
 Orphanet:104003	Congenital intestinal transport defect	True	True	False
 Orphanet:104007	Congenital enteropathy involving intestinal mucosa development	True	True	False
 Orphanet:104008	Short bowel syndrome	True	True	False
@@ -15023,9 +15152,7 @@ Orphanet:231230	Beta-thalassemia associated with another hemoglobin anomaly	True
 Orphanet:231386	Beta-thalassemia with other manifestations	True	True	False
 Orphanet:232288	Syndrome with alpha-thalassemia as a major feature	True	True	False
 Orphanet:235936	Familial hyperaldosteronism	True	True	False
-Orphanet:238510	Lymphoproliferative syndrome	True	True	False
 Orphanet:238517	Hypotonia-cystinuria type 1 syndrome	True	True	False
-Orphanet:2442	X-linked lymphoproliferative disease	True	True	False
 Orphanet:247	Inherited arrhythmogenic cardiomyopathy	True	True	False
 Orphanet:251355	Sickle cell disease associated with another hemoglobin anomaly	True	True	False
 Orphanet:251995	Primary germ cell tumor of central nervous system	True	True	False
@@ -15053,7 +15180,6 @@ Orphanet:264949	Secondary interstitial lung disease in childhood and adulthood a
 Orphanet:264968	Secondary interstitial lung disease in childhood and adulthood associated with a metabolic disease	True	True	False
 Orphanet:264973	Secondary interstitial lung disease in childhood and adulthood associated with a systemic vasculitis	True	True	False
 Orphanet:264984	Exposure-related interstitial lung disease	True	True	False
-Orphanet:271861	Hereditary ATTR amyloidosis	True	True	False
 Orphanet:275745	Alpha-thalassemia and related disorders	True	True	False
 Orphanet:275749	Beta-thalassemia and related diseases	True	True	False
 Orphanet:275752	Sickle cell disease and related diseases	True	True	False
@@ -15084,9 +15210,9 @@ Orphanet:324767	Non-familial rare disease with dilated cardiomyopathy	True	True	
 Orphanet:325357	46,XY difference of sex development due to impaired androgen production	True	True	False
 Orphanet:325511	46,XY difference of sex development due to a cholesterol synthesis defect	True	True	False
 Orphanet:325537	46,XY difference of sex development induced by maternal exposure to endocrine disruptors	True	True	False
-Orphanet:331184	Constitutional neutropenia with extra-hematopoietic manifestations	True	True	False
+Orphanet:331184	Syndrome with congenital neutropenia as a major feature	True	True	False
 Orphanet:331240	Immunodeficiency with severe reduction in serum IgG and IgA with normal/elevated IgM and normal number of B-cells	True	True	False
-Orphanet:331249	Immunodeficiency syndrome with hypopigmentation	True	True	False
+Orphanet:331249	Primary hemophagocytic lymphohistiocytosis with hypopigmentation	True	True	False
 Orphanet:3399	Germ cell tumor	True	True	False
 Orphanet:357502	Idiopathic nephrotic syndrome	True	True	False
 Orphanet:35807	Malignant germ cell tumor of ovary	True	True	False
@@ -15112,7 +15238,6 @@ Orphanet:425368	Rare epithelial tumor of small intestine	True	True	False
 Orphanet:42738	Severe congenital neutropenia	True	True	False
 Orphanet:435365	Fetal lower urinary tract obstruction	True	True	False
 Orphanet:435743	Congenital urachal anomaly	True	True	False
-Orphanet:439246	ABeta2M amyloidosis	True	True	False
 Orphanet:439849	Autosomal recessive severe congenital neutropenia	True	True	False
 Orphanet:443090	46,XY difference of sexual development due to dihydrotestosterone backdoor pathway biosynthesis defect	True	True	False
 Orphanet:444941	Caudal regression-sirenomelia spectrum	True	True	False
@@ -15136,7 +15261,6 @@ Orphanet:567554	Systemic disease with glomerulopathy as a major feature	True	Tru
 Orphanet:567564	Nephrotic syndrome without extrarenal manifestations	True	True	False
 Orphanet:68364	Hemoglobinopathy	True	True	False
 Orphanet:68383	Rare constitutional aplastic anemia	True	True	False
-Orphanet:69	Amyloidosis	True	True	False
 Orphanet:73014	Intractable diarrhea of infancy	True	True	False
 Orphanet:73217	Müllerian aplasia	True	True	False
 Orphanet:79188	Peroxisomal beta-oxidation disorder	True	True	False
@@ -15155,6 +15279,7 @@ Orphanet:92	Juvenile idiopathic arthritis	True	True	False
 Orphanet:93546	Non-syndromic renal or urinary tract malformation	True	True	False
 Orphanet:93547	Syndromic renal or urinary tract malformation	True	True	False
 Orphanet:93548	Glomerular disease	True	True	False
+Orphanet:95157	Acute hepatic porphyria	True	True	False
 Orphanet:96346	Anorectal malformation	True	True	False
 Orphanet:97292	Cardiogenic shock	True	True	False
 Orphanet:97945	Intestinal malformation	True	True	False
@@ -15175,6 +15300,7 @@ Orphanet:98555	Microphthalmia-anophthalmia-coloboma	True	True	False
 Orphanet:99739	Rare familial disorder with hypertrophic cardiomyopathy	True	True	False
 Orphanet:99909	Occupational allergic alveolitis	True	True	False
 Orphanet:99913	Extragonadal non-dysgerminomatous germ cell tumor	True	True	False
+Orphanet:101096	OBSOLETE: Aregenerative anemia	True	True	True
 Orphanet:101949	OBSOLETE: Rare acquired eye disease	True	True	True
 Orphanet:102373	OBSOLETE: Primary glomerular disease	True	True	True
 Orphanet:103912	OBSOLETE: Epithelio-exfoliative colitis-deafness syndrome	True	True	True
@@ -15182,6 +15308,7 @@ Orphanet:103916	OBSOLETE: Autoimmune enteropathy type 2	True	True	True
 Orphanet:108985	OBSOLETE: Non-syndromic developmental defect of the eye	True	True	True
 Orphanet:108987	OBSOLETE: Syndromic developmental defect of the eye	True	True	True
 Orphanet:1136	OBSOLETE: Arnold-Chiari malformation type II	True	True	True
+Orphanet:1240	Metaphyseal acroscyphodysplasia	True	True	True
 Orphanet:1245	BIDS syndrome	True	True	True
 Orphanet:1256	OBSOLETE: Blepharophimosis-radioulnar synostosis syndrome	True	True	True
 Orphanet:1306	NON RARE IN EUROPE: Buschke-Ollendorff syndrome	True	True	True
@@ -15189,15 +15316,24 @@ Orphanet:1317	CAMFAK syndrome	True	True	True
 Orphanet:137653	Microcephaly-digital anomalies-intellectual disability syndrome	True	True	True
 Orphanet:137911	Autism-facial port-wine stain syndrome	True	True	True
 Orphanet:139420	OBSOLETE: Secondary acute transverse myelitis	True	True	True
+Orphanet:141327	OBSOLETE: Orofaciodigital syndrome type 12	True	True	True
+Orphanet:141330	OBSOLETE: Orofaciodigital syndrome type 13	True	True	True
+Orphanet:1455	OBSOLETE: Autosomal dominant coarctation of aorta	True	True	True
 Orphanet:1526	OBSOLETE: Craniosynostosis-synostoses-hypertensive nephropathy syndrome	True	True	True
+Orphanet:1562	OBSOLETE: Dacryocystitis-osteopoikilosis syndrome	True	True	True
 Orphanet:158665	OBSOLETE: Basal epidermolysis bullosa simplex	True	True	True
 Orphanet:158796	OBSOLETE: Classic mast cell leukemia	True	True	True
 Orphanet:163903	OBSOLETE: Limbic encephalitis associated with antibodies to cell membrane antigens	True	True	True
 Orphanet:163914	OBSOLETE: Limbic encephalitis with nCMAgs antibodies	True	True	True
 Orphanet:163918	OBSOLETE: Non-paraneoplastic limbic encephalitis	True	True	True
 Orphanet:163988	OBSOLETE: Developmental delay-deafness syndrome, Hildebrand type	True	True	True
+Orphanet:166011	Multiple epiphyseal dysplasia, Beighton type	True	True	True
+Orphanet:168486	OBSOLETE: Congenital neuronal ceroid lipofuscinosis	True	True	True
+Orphanet:168491	OBSOLETE: Late infantile neuronal ceroid lipofuscinosis	True	True	True
 Orphanet:169615	NON RARE IN EUROPE: Idiopathic central precocious puberty	True	True	True
 Orphanet:169618	NON RARE IN EUROPE: Secondary central precocious puberty	True	True	True
+Orphanet:1765	OBSOLETE: Dyschondrosteosis-nephritis syndrome	True	True	True
+Orphanet:178493	NON RARE IN EUROPE: Myopic macular degeneration	True	True	True
 Orphanet:1795	OBSOLETE: Peripheral dysostosis	True	True	True
 Orphanet:181425	OBSOLETE: Rare major hypertriglyceridemia	True	True	True
 Orphanet:182073	OBSOLETE: Syndromic neurometabolic disease with non-X-linked intellectual disability	True	True	True
@@ -15217,18 +15353,12 @@ Orphanet:213524	Hereditary site-specific ovarian cancer syndrome	True	True	True
 Orphanet:213574	OBSOLETE: Rare variants of adenocarcinoma of the corpus uteri	True	True	True
 Orphanet:213817	OBSOLETE: Papillary carcinoma of the cervix uteri	True	True	True
 Orphanet:2194	OBSOLETE: Anti-HLA hyperimmunization	True	True	True
-Orphanet:228329	OBSOLETE: CLN1 disease	True	True	True
-Orphanet:228337	OBSOLETE: CLN10 disease	True	True	True
+Orphanet:225	NON RARE IN EUROPE: Maternally-inherited diabetes and deafness	True	True	True
 Orphanet:228340	OBSOLETE: CLN4A disease	True	True	True
-Orphanet:228343	OBSOLETE: CLN4B disease	True	True	True
-Orphanet:228346	OBSOLETE: CLN3 disease	True	True	True
-Orphanet:228349	OBSOLETE: CLN2 disease	True	True	True
-Orphanet:228354	OBSOLETE : CLN8 disease	True	True	True
 Orphanet:228357	OBSOLETE: CLN9 disease	True	True	True
-Orphanet:228360	OBSOLETE: CLN5 disease	True	True	True
-Orphanet:228363	OBSOLETE: CLN6 disease	True	True	True
-Orphanet:228366	OBSOLETE: CLN7 disease	True	True	True
 Orphanet:2292	OBSOLETE: Congenital bowing of long bones-short stature-dolichomacrocephaly-ocular hypertelorism syndrome	True	True	True
+Orphanet:238	OBSOLETE: Digestive duplication	True	True	True
+Orphanet:238510	OBSOLETE: Lymphoproliferative syndrome	True	True	True
 Orphanet:238755	OBSOLETE: Autosomal dominant limb-girdle muscular dystrophy type 1H	True	True	True
 Orphanet:248305	OBSOLETE: Hemolytic anemia due to glyceraldehyde-3-phosphate dehydrogenase deficiency	True	True	True
 Orphanet:251880	Ependymoblastoma	True	True	True
@@ -15239,8 +15369,10 @@ Orphanet:255249	Leigh syndrome with nephrotic syndrome	True	True	True
 Orphanet:263558	OBSOLETE: Peeling skin syndrome type C	True	True	True
 Orphanet:263676	OBSOLETE: Hereditary epidermolysis bullosa associated with ocular features	True	True	True
 Orphanet:2641	OBSOLETE: Micromelic dwarfism, Fryns type	True	True	True
+Orphanet:2646	Parastremmatic dysplasia	True	True	True
 Orphanet:264955	OBSOLETE: Langerhans cell histiocytosis in childhood and adulthood	True	True	True
 Orphanet:265	Autosomal dominant limb-girdle muscular dystrophy type 1C	True	True	True
+Orphanet:2653	OBSOLETE: Osteochondrodysplatic nanism-deafness-retinitis pigmentosa syndrome	True	True	True
 Orphanet:268377	OBSOLETE: Total spina bifida aperta	True	True	True
 Orphanet:268384	OBSOLETE: Thoracolumbosacral spina bifida aperta	True	True	True
 Orphanet:268388	OBSOLETE: Lumbosacral spina bifida aperta	True	True	True
@@ -15257,10 +15389,14 @@ Orphanet:268832	OBSOLETE: Lipoma associated with neurospinal dysraphism	True	Tru
 Orphanet:268835	Lipomyelomeningocele	True	True	True
 Orphanet:268838	OBSOLETE: Leptomyelolipoma	True	True	True
 Orphanet:2725	Eye defects-arachnodactyly-cardiopathy syndrome	True	True	True
+Orphanet:2729	Okamoto syndrome	True	True	True
+Orphanet:2752	Orofaciodigital syndrome type 3	True	True	True
+Orphanet:2756	OBSOLETE: Orofaciodigital syndrome type 10	True	True	True
 Orphanet:280651	OBSOLETE: Acrodysostosis with multiple hormone resistance	True	True	True
 Orphanet:280914	NON RARE IN EUROPE: Idiopathic anterior uveitis	True	True	True
 Orphanet:2823	OBSOLETE: Paraplegia-brachydactyly-cone-shaped epiphysis syndrome	True	True	True
 Orphanet:2861	OBSOLETE: Short stature-microcephaly-heart defect syndrome	True	True	True
+Orphanet:2878	OBSOLETE: Phocomelia-ectrodactyly-deafness-sinus arrhythmia syndrome	True	True	True
 Orphanet:289527	OBSOLETE: Fatal infantile hypertrophic cardiomyopathy due to mitochondrial complex I deficiency	True	True	True
 Orphanet:2925	OBSOLETE: Polymicrogyria-turricephaly-hypogenitalism syndrome	True	True	True
 Orphanet:294929	OBSOLETE: Terminal limb defects	True	True	True
@@ -15278,55 +15414,76 @@ Orphanet:295179	OBSOLETE: Postaxial polydactyly of toes, unilateral	True	True	Tr
 Orphanet:295181	OBSOLETE: Postaxial polydactyly of toes, bilateral	True	True	True
 Orphanet:295183	OBSOLETE: Central polydactyly of toes, unilateral	True	True	True
 Orphanet:295185	OBSOLETE: Central polydactyly of toes, bilateral	True	True	True
+Orphanet:295213	OBSOLETE: Humero-ulnar synostosis, unilateral	True	True	True
+Orphanet:295215	OBSOLETE: Humero-ulnar synostosis, bilateral	True	True	True
+Orphanet:295217	OBSOLETE: Radio-ulnar synostosis, unilateral	True	True	True
+Orphanet:295219	OBSOLETE: Radio-ulnar synostosis, bilateral	True	True	True
 Orphanet:306507	LAMB2-related infantile-onset nephrotic syndrome	True	True	True
 Orphanet:306539	OBSOLETE: Hereditary acrokeratotic poikiloderma of Kindler-Weary	True	True	True
 Orphanet:306588	OBSOLETE: Autosomal dominant Opitz G/BBB syndrome	True	True	True
 Orphanet:306762	OBSOLETE: Progressive epilepsy and/or ataxia with myoclonus as a major feature	True	True	True
-Orphanet:309239	OBSELETE:Tay-Sachs disease, B1 variant	True	True	True
+Orphanet:309239	OBSOLETE: Tay-Sachs disease, B1 variant	True	True	True
 Orphanet:31142	NON RARE IN EUROPE: Oral erosive lichen	True	True	True
-Orphanet:314629	OBSOLETE: CLN11 disease	True	True	True
+Orphanet:3210	Summitt syndrome	True	True	True
+Orphanet:3226	Deafness-lymphedema-leukemia syndrome	True	True	True
 Orphanet:3267	OBSOLETE: Familial lambdoid synostosis	True	True	True
 Orphanet:329255	Blepharophimosis-intellectual disability syndrome due to UBE3B deficiency	True	True	True
 Orphanet:330197	OBSOLETE: Genetic multiple congenital anomalies/dysmorphic syndrome-variable intellectual disability syndrome	True	True	True
+Orphanet:344	OBSOLETE: Arbovirus fever	True	True	True
 Orphanet:3460	Torg-Winchester syndrome	True	True	True
 Orphanet:35061	OBSOLETE: Idiopathic recurrent and disabling cutaneous herpes	True	True	True
 Orphanet:35064	OBSOLETE: Lethal idiopathic viral infection	True	True	True
 Orphanet:35098	OBSOLETE: Isolated plagiocephaly	True	True	True
-Orphanet:352709	OBSOLETE: CLN13 disease	True	True	True
 Orphanet:352740	Ocular albinism with congenital sensorineural deafness	True	True	True
+Orphanet:364817	OBSOLETE: Aggrecan-related bone disorder	True	True	True
 Orphanet:370019	Spondylometaphyseal dysplasia, Czarny-Ratajczak type	True	True	True
 Orphanet:371054	OBSOLETE: X-linked congenital disorder of glycosylation with intellectual disability as a major feature	True	True	True
 Orphanet:371064	OBSOLETE: Non-X-linked congenital disorder of glycosylation with intellectual disability as a major feature	True	True	True
+Orphanet:398980	OBSOLETE: Primary peritoneal serous/papillary carcinoma	True	True	True
 Orphanet:413	NON RARE IN EUROPE: Hyperlipoproteinemia type 4	True	True	True
 Orphanet:443287	OBSOLETE: ACTH-independent Cushing syndrome due to rare cortisol-producing adrenal tumor	True	True	True
 Orphanet:448348	OBSOLETE: X-linked acrogigantism due to a point mutation	True	True	True
+Orphanet:458827	OBSOLETE: Vascular tumor with associated anomalies	True	True	True
 Orphanet:458841	OBSOLETE: Primary lymphedema with associated anomalies	True	True	True
 Orphanet:459690	NON RARE IN EUROPE: Gender dysphoria	True	True	True
 Orphanet:466801	OBSOLETE: LIMS2-related myopathy	True	True	True
+Orphanet:476102	OBSOLETE: Hereditary pediatric Behçet-like disease	True	True	True
 Orphanet:493348	OBSOLETE: Vibratory angioedema	True	True	True
 Orphanet:498700	OBSOLETE: Limbic encephalitis with neurexin-3 antibodies	True	True	True
 Orphanet:499004	OBSOLETE: Tuberculous meningitis	True	True	True
 Orphanet:553	OBSOLETE: Cushing syndrome	True	True	True
 Orphanet:587	Muir-Torre syndrome	True	True	True
+Orphanet:592885	OBSOLETE: Isolated optic neuritis without anti-MOG antibodies	True	True	True
+Orphanet:592888	OBSOLETE: Isolated optic neuritis with anti-MOG antibodies	True	True	True
 Orphanet:623	NAME syndrome	True	True	True
+Orphanet:65250	NON RARE IN EUROPE: Perineural cyst	True	True	True
+Orphanet:656273	OBSOLETE: Hypotonia-hypoventilation-intellectual disability-dysautonomia-epilepsy-eye abnormalities syndrome	True	True	True
+Orphanet:65798	Goodman syndrome	True	True	True
 Orphanet:70474	Leigh syndrome with cardiomyopathy	True	True	True
 Orphanet:717	OBSOLETE: Catecholamine-producing tumor	True	True	True
 Orphanet:759	NON RARE IN EUROPE: Central precocious puberty	True	True	True
 Orphanet:79211	OBSOLETE: Combined hyperlipidemia	True	True	True
+Orphanet:79262	OBSOLETE: Adult neuronal ceroid lipofuscinosis	True	True	True
+Orphanet:79263	OBSOLETE: Infantile neuronal ceroid lipofuscinosis	True	True	True
+Orphanet:79264	OBSOLETE: Juvenile neuronal ceroid lipofuscinosis	True	True	True
 Orphanet:82004	Ehlers-Danlos syndrome with periventricular heterotopia	True	True	True
 Orphanet:83648	OBSOLETE: X-linked recessive intellectual disability-macrocephaly-ciliary dysfunction syndrome	True	True	True
 Orphanet:85196	Nodulosis-arthropathy-osteolysis syndrome	True	True	True
+Orphanet:85200	Ischio-vertebral syndrome	True	True	True
 Orphanet:89832	OBSOLETE: Syndromic lymphedema	True	True	True
 Orphanet:93221	OBSOLETE: Sporadic idiopathic steroid-resistant nephrotic syndrome with minimal changes	True	True	True
 Orphanet:93222	OBSOLETE: Sporadic idiopathic steroid-resistant nephrotic syndrome with diffuse mesangial proliferation	True	True	True
 Orphanet:93359	OBSOLETE: Spondyloepimetaphyseal dysplasia with joint laxity	True	True	True
+Orphanet:93424	OBSOLETE: Perlecan-related bone disorder	True	True	True
 Orphanet:93550	OBSOLETE: Basement membrane disease	True	True	True
 Orphanet:93551	OBSOLETE: Secondary glomerular disease	True	True	True
+Orphanet:93569	NON RARE IN EUROPE: Polymyalgia rheumatica	True	True	True
 Orphanet:93604	OBSOLETE: Antenatal Bartter syndrome	True	True	True
 Orphanet:93942	OBSOLETE: Superior celosomia	True	True	True
 Orphanet:93970	Holmes-Gang syndrome	True	True	True
 Orphanet:93972	Juberg-Marsidi syndrome	True	True	True
 Orphanet:93975	OBSOLETE: Renier-Gabreels-Jasper syndrome	True	True	True
+Orphanet:95161	OBSOLETE: Chronic hepatic porphyria	True	True	True
 Orphanet:95493	OBSOLETE: Abnormal origin or aberrant course of coronary artery	True	True	True
 Orphanet:95701	OBSOLETE: Congenital adrenal hypoplasia of maternal cause	True	True	True
 Orphanet:96136	OBSOLETE: Non-distal monosomy 7p	True	True	True
@@ -15398,6 +15555,8 @@ Orphanet:98711	OBSOLETE: Metabolic disease with corneal opacity	True	True	True
 Orphanet:98712	OBSOLETE: Metabolic disease with cataract	True	True	True
 Orphanet:98713	OBSOLETE: Metabolic disease with pigmentary retinitis	True	True	True
 Orphanet:98714	OBSOLETE: Metabolic disease with macular cherry-red spot	True	True	True
+Orphanet:98975	Congenital hereditary endothelial dystrophy type I	True	True	True
+Orphanet:99647	Cheirospondyloenchondromatosis	True	True	True
 Orphanet:99763	OBSOLETE: Familial hyperreninemic hypoaldosteronism type 1	True	True	True
 Orphanet:99878	OBSOLETE: Primary parathyroid hyperplasia	True	True	True
 Orphanet:99893	OBSOLETE: ACTH-independent Cushing syndrome	True	True	True

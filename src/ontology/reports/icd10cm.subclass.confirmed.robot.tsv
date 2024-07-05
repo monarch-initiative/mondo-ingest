@@ -1,6 +1,8 @@
 subject_mondo_id	subject_mondo_label	object_mondo_id	subject_source_id	object_source_id	object_mondo_label
 ID		SC %	>A oboInOwl:source		
 MONDO:0000226	mineral metabolism disease	MONDO:0005066	ICD10CM:E83	ICD10CM:E70-E88	metabolic disease
+MONDO:0000367	taeniasis	MONDO:0004664	ICD10CM:B68	ICD10CM:B65-B83	helminthiasis
+MONDO:0000916	intestinal infectious disease	MONDO:0005550	ICD10CM:A00-A09	ICD10CM:A00-B99	infectious disease
 MONDO:0000940	trypanosomiasis	MONDO:0002428	ICD10CM:B56	ICD10CM:B50-B64	protozoa infectious disease
 MONDO:0000952	cancer of long bone of lower limb	MONDO:0024311	ICD10CM:C40.2	ICD10CM:C40	cancer affecting bone of limb skeleton
 MONDO:0000953	cancer of short bone of lower limb	MONDO:0024311	ICD10CM:C40.3	ICD10CM:C40	cancer affecting bone of limb skeleton
@@ -13,6 +15,7 @@ MONDO:0001100	hypertrophy of breast	MONDO:0002657	ICD10CM:N62	ICD10CM:N60-N65	br
 MONDO:0001112	bubonic plague	MONDO:0019095	ICD10CM:A20.0	ICD10CM:A20	plague
 MONDO:0001113	Fiedler's myocarditis	MONDO:0004496	ICD10CM:I40.1	ICD10CM:I40	myocarditis
 MONDO:0001114	bacterial myocarditis	MONDO:0004496	ICD10CM:I40.0	ICD10CM:I40	myocarditis
+MONDO:0001195	spotted fever	MONDO:0006956	ICD10CM:A77	ICD10CM:A75-A79	Rickettsiosis
 MONDO:0001281	alternating exotropia	MONDO:0001286	ICD10CM:H50.15	ICD10CM:H50.1	exotropia
 MONDO:0001284	endometriosis of intestine	MONDO:0005133	ICD10CM:N80.5	ICD10CM:N80	endometriosis
 MONDO:0001285	endometriosis of pelvic peritoneum	MONDO:0005133	ICD10CM:N80.3	ICD10CM:N80	endometriosis
@@ -20,6 +23,7 @@ MONDO:0001287	endometriosis in cutaneous scar	MONDO:0005133	ICD10CM:N80.6	ICD10C
 MONDO:0001288	endometriosis of rectovaginal septum and vagina	MONDO:0005133	ICD10CM:N80.4	ICD10CM:N80	endometriosis
 MONDO:0001296	acquired night blindness	MONDO:0004588	ICD10CM:H53.62	ICD10CM:H53.6	night blindness
 MONDO:0001337	inflamed seborrheic keratosis	MONDO:0008420	ICD10CM:L82.0	ICD10CM:L82	seborrheic keratosis
+MONDO:0001367	chronic congestive splenomegaly	MONDO:0002332	ICD10CM:D73.2	ICD10CM:D73	splenic disorder
 MONDO:0001391	indeterminate leprosy	MONDO:0005124	ICD10CM:A30.0	ICD10CM:A30	leprosy
 MONDO:0001396	abnormal threshold of rods	MONDO:0004588	ICD10CM:H53.61	ICD10CM:H53.6	night blindness
 MONDO:0001413	ulceroglandular tularemia	MONDO:0018077	ICD10CM:A21.0	ICD10CM:A21	tularemia
@@ -40,10 +44,12 @@ MONDO:0001688	toxic optic neuropathy	MONDO:0005885	ICD10CM:H46.3	ICD10CM:H46	opt
 MONDO:0001699	tinea manuum	MONDO:0004678	ICD10CM:B35.2	ICD10CM:B35	dermatophytosis
 MONDO:0001753	female infertility of uterine origin	MONDO:0021124	ICD10CM:N97.2	ICD10CM:N97	female infertility
 MONDO:0001873	geniculate ganglionitis	MONDO:0002098	ICD10CM:G51.1	ICD10CM:G51	facial nerve disorder
+MONDO:0001876	renal artery atheroma	MONDO:0005311	ICD10CM:I70.1	ICD10CM:I70	atherosclerosis
 MONDO:0001896	obstructive hydrocephalus	MONDO:0001150	ICD10CM:G91.1	ICD10CM:G91	hydrocephalus
 MONDO:0001916	gastrointestinal tularemia	MONDO:0018077	ICD10CM:A21.3	ICD10CM:A21	tularemia
 MONDO:0001923	vitreoretinal dystrophy	MONDO:0019118	ICD10CM:H35.51	ICD10CM:H35.5	inherited retinal dystrophy
 MONDO:0001924	dystrophies primarily involving the retinal pigment epithelium	MONDO:0019118	ICD10CM:H35.54	ICD10CM:H35.5	inherited retinal dystrophy
+MONDO:0002026	candidiasis	MONDO:0002041	ICD10CM:B37	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0002041	fungal infectious disease	MONDO:0005550	ICD10CM:B35-B49	ICD10CM:A00-B99	infectious disease
 MONDO:0002045	communicating hydrocephalus	MONDO:0001150	ICD10CM:G91.0	ICD10CM:G91	hydrocephalus
 MONDO:0002050	depressive disorder	MONDO:0005371	ICD10CM:F32	ICD10CM:F30-F39	mood disorder
@@ -60,6 +66,7 @@ MONDO:0003276	middle ear disorder	MONDO:0002409	ICD10CM:H65-H75	ICD10CM:H60-H95	
 MONDO:0003441	dystonic disorder	MONDO:0001815	ICD10CM:G24	ICD10CM:G20-G26	extrapyramidal and movement disease
 MONDO:0003522	male orgasm disorder	MONDO:0040674	ICD10CM:F52.32	ICD10CM:F52.3	orgasm disorder
 MONDO:0004258	female orgasmic disorder	MONDO:0040674	ICD10CM:F52.31	ICD10CM:F52.3	orgasm disorder
+MONDO:0004473	epiglottis cancer	MONDO:0004608	ICD10CM:C10.1	ICD10CM:C10	oropharynx cancer
 MONDO:0004577	corneal ulcer	MONDO:0003085	ICD10CM:H16.0	ICD10CM:H16	keratitis
 MONDO:0004607	vallecula cancer	MONDO:0004608	ICD10CM:C10.0	ICD10CM:C10	oropharynx cancer
 MONDO:0004637	aryepiglottic fold cancer	MONDO:0005806	ICD10CM:C13.1	ICD10CM:C13	hypopharynx cancer
@@ -76,6 +83,8 @@ MONDO:0004859	hydrops of gallbladder	MONDO:0005281	ICD10CM:K82.1	ICD10CM:K82	gal
 MONDO:0004866	eustachian tube disorder	MONDO:0003276	ICD10CM:H68	ICD10CM:H65-H75	middle ear disorder
 MONDO:0004976	amyotrophic lateral sclerosis	MONDO:0020128	ICD10CM:G12.21	ICD10CM:G12.2	motor neuron disorder
 MONDO:0004985	bipolar disorder	MONDO:0005371	ICD10CM:F31	ICD10CM:F30-F39	mood disorder
+MONDO:0005021	dilated cardiomyopathy	MONDO:0004994	ICD10CM:I42.0	ICD10CM:I42	cardiomyopathy
+MONDO:0005044	hypertensive disorder	MONDO:0005385	ICD10CM:I10-I16	ICD10CM:I00-I99	vascular disorder
 MONDO:0005125	borderline leprosy	MONDO:0005124	ICD10CM:A30.3	ICD10CM:A30	leprosy
 MONDO:0005126	tuberculoid leprosy	MONDO:0005124	ICD10CM:A30.1	ICD10CM:A30	leprosy
 MONDO:0005127	lepromatous leprosy	MONDO:0005124	ICD10CM:A30.5	ICD10CM:A30	leprosy
@@ -88,42 +97,64 @@ MONDO:0005387	primary ovarian failure	MONDO:0001889	ICD10CM:E28.3	ICD10CM:E28	ov
 MONDO:0005445	visceral leishmaniasis	MONDO:0011989	ICD10CM:B55.0	ICD10CM:B55	leishmaniasis
 MONDO:0005446	cutaneous leishmaniasis	MONDO:0011989	ICD10CM:B55.1	ICD10CM:B55	leishmaniasis
 MONDO:0005518	pseudohermaphroditism	MONDO:0024665	ICD10CM:Q56.3	ICD10CM:Q56	indeterminate sex and/or pseudohermaphroditism
+MONDO:0005654	ascariasis	MONDO:0004664	ICD10CM:B77	ICD10CM:B65-B83	helminthiasis
+MONDO:0005657	aspergillosis	MONDO:0002041	ICD10CM:B44	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0005665	Bell's palsy	MONDO:0002098	ICD10CM:G51.0	ICD10CM:G51	facial nerve disorder
+MONDO:0005706	coccidioidomycosis	MONDO:0002041	ICD10CM:B38	ICD10CM:B35-B49	fungal infectious disease
+MONDO:0005724	cryptococcosis	MONDO:0002041	ICD10CM:B45	ICD10CM:B35-B49	fungal infectious disease
+MONDO:0005738	echinococcosis	MONDO:0004664	ICD10CM:B67	ICD10CM:B65-B83	helminthiasis
+MONDO:0005746	enterobiasis	MONDO:0004664	ICD10CM:B80	ICD10CM:B65-B83	helminthiasis
 MONDO:0005838	mansonelliasis	MONDO:0016075	ICD10CM:B74.4	ICD10CM:B74	filariasis
+MONDO:0005848	miliary tuberculosis	MONDO:0018076	ICD10CM:A19	ICD10CM:A15-A19	tuberculosis
 MONDO:0005859	mucocutaneous leishmaniasis	MONDO:0011989	ICD10CM:B55.2	ICD10CM:B55	leishmaniasis
+MONDO:0005894	paracoccidioidomycosis	MONDO:0002041	ICD10CM:B41	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0005956	septicemic plague	MONDO:0019095	ICD10CM:A20.7	ICD10CM:A20	plague
 MONDO:0005968	sporotrichosis	MONDO:0002041	ICD10CM:B42	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0005984	tinea pedis	MONDO:0004678	ICD10CM:B35.3	ICD10CM:B35	dermatophytosis
 MONDO:0005993	Trichomonas vaginitis urogenital infection	MONDO:0002154	ICD10CM:A59.0	ICD10CM:A59	trichomoniasis
+MONDO:0005996	trichuriasis	MONDO:0004664	ICD10CM:B79	ICD10CM:B65-B83	helminthiasis
+MONDO:0006004	vasomotor rhinitis	MONDO:0003014	ICD10CM:J30.0	ICD10CM:J30	rhinitis
+MONDO:0006014	vulvovaginal candidiasis	MONDO:0002026	ICD10CM:B37.3	ICD10CM:B37	candidiasis
 MONDO:0006337	ovarian endometriosis	MONDO:0005133	ICD10CM:N80.1	ICD10CM:N80	endometriosis
 MONDO:0006497	cerebral palsy	MONDO:0006496	ICD10CM:G80	ICD10CM:G80-G83	palsy
 MONDO:0006526	allergic urticaria	MONDO:0005492	ICD10CM:L50.0	ICD10CM:L50	urticaria
 MONDO:0006533	cholesteatoma of middle ear	MONDO:0003276	ICD10CM:H71	ICD10CM:H65-H75	middle ear disorder
+MONDO:0006643	alcoholic cardiomyopathy	MONDO:0004994	ICD10CM:I42.6	ICD10CM:I42	cardiomyopathy
 MONDO:0006790	hypercementosis	MONDO:0002220	ICD10CM:K03.4	ICD10CM:K03	tooth hard tissue disease
 MONDO:0006795	hypersplenism	MONDO:0002332	ICD10CM:D73.1	ICD10CM:D73	splenic disorder
+MONDO:0006946	renal osteodystrophy	MONDO:0001343	ICD10CM:N25.0	ICD10CM:N25	impaired renal function disease
 MONDO:0006978	splenic infarction	MONDO:0002332	ICD10CM:D73.5	ICD10CM:D73	splenic disorder
 MONDO:0007147	obstructive sleep apnea syndrome	MONDO:0005296	ICD10CM:G47.33	ICD10CM:G47.3	sleep apnea syndrome
+MONDO:0007448	familial dermatographia	MONDO:0005492	ICD10CM:L50.3	ICD10CM:L50	urticaria
 MONDO:0007713	clonic hemifacial spasm	MONDO:0002098	ICD10CM:G51.3	ICD10CM:G51	facial nerve disorder
+MONDO:0007810	autosomal dominant ichthyosis vulgaris	MONDO:0015947	ICD10CM:Q80.0	ICD10CM:Q80	inherited ichthyosis
 MONDO:0008219	pemphigus vulgaris	MONDO:0006594	ICD10CM:L10.0	ICD10CM:L10	pemphigus
 MONDO:0008627	ureter cancer	MONDO:0006295	ICD10CM:C66	ICD10CM:C64-C68	malignant urinary system neoplasm
 MONDO:0010006	Sandhoff disease	MONDO:0017720	ICD10CM:E75.01	ICD10CM:E75.0	GM2 gangliosidosis
 MONDO:0010100	Tay-Sachs disease	MONDO:0017720	ICD10CM:E75.02	ICD10CM:E75.0	GM2 gangliosidosis
+MONDO:0011057	cerebrovascular disorder	MONDO:0005385	ICD10CM:I60-I69	ICD10CM:I00-I99	vascular disorder
 MONDO:0011399	alpha thalassemia spectrum	MONDO:0000984	ICD10CM:D56.0	ICD10CM:D56	thalassemia
 MONDO:0011989	leishmaniasis	MONDO:0002428	ICD10CM:B55	ICD10CM:B50-B64	protozoa infectious disease
 MONDO:0015597	pustulosis palmaris et plantaris	MONDO:0005083	ICD10CM:L40.3	ICD10CM:L40	psoriasis
 MONDO:0015766	cholera	MONDO:0000916	ICD10CM:A00	ICD10CM:A00-A09	intestinal infectious disease
+MONDO:0015925	interstitial lung disease	MONDO:0005087	ICD10CM:J80-J84	ICD10CM:J00-J99	respiratory system disorder
 MONDO:0016044	cleft lip/palate	MONDO:0021147	ICD10CM:Q35-Q37	ICD10CM:Q00-Q99	disorder of development or morphogenesis
 MONDO:0016075	filariasis	MONDO:0004664	ICD10CM:B74	ICD10CM:B65-B83	helminthiasis
+MONDO:0016158	narcolepsy-cataplexy syndrome	MONDO:0003406	ICD10CM:G47.4	ICD10CM:G47	sleep-wake disorder
 MONDO:0016373	isolated facial myokymia	MONDO:0002098	ICD10CM:G51.4	ICD10CM:G51	facial nerve disorder
 MONDO:0016383	nephrogenic diabetes insipidus	MONDO:0001343	ICD10CM:N25.1	ICD10CM:N25	impaired renal function disease
 MONDO:0016566	loiasis	MONDO:0016075	ICD10CM:B74.3	ICD10CM:B74	filariasis
 MONDO:0017497	congenital absence of thigh and lower leg with foot present, bilateral	MONDO:0017442	ICD10CM:Q72.13	ICD10CM:Q72.1	congenital absence of thigh and lower leg with foot present
 MONDO:0017499	congenital absence of both forearm and hand, bilateral	MONDO:0017443	ICD10CM:Q71.23	ICD10CM:Q71.2	congenital absence of both forearm and hand
 MONDO:0017501	congenital absence of both lower leg and foot, bilateral	MONDO:0017444	ICD10CM:Q72.23	ICD10CM:Q72.2	congenital absence of both lower leg and foot
+MONDO:0017610	epidermolysis bullosa simplex	MONDO:0006541	ICD10CM:Q81.0	ICD10CM:Q81	epidermolysis bullosa
 MONDO:0018056	bullous lichen planus	MONDO:0006572	ICD10CM:L43.1	ICD10CM:L43	lichen planus
 MONDO:0018059	meningococcal meningitis	MONDO:0005373	ICD10CM:A39.0	ICD10CM:A39	meningococcal infection
+MONDO:0018312	histoplasmosis	MONDO:0002041	ICD10CM:B39	ICD10CM:B35-B49	fungal infectious disease
+MONDO:0019136	Zygomycosis	MONDO:0002041	ICD10CM:B46	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0019137	non-24-hour sleep-wake syndrome	MONDO:0024361	ICD10CM:G47.24	ICD10CM:G47.2	circadian rhythm sleep disorder
 MONDO:0019323	pemphigus erythematosus	MONDO:0006594	ICD10CM:L10.4	ICD10CM:L10	pemphigus
+MONDO:0019444	trichinellosis	MONDO:0004664	ICD10CM:B75	ICD10CM:B65-B83	helminthiasis
 MONDO:0020398	congenital mitral stenosis	MONDO:0019817	ICD10CM:Q23.2	ICD10CM:Q23	congenital mitral valve insufficiency and/or stenosis
 MONDO:0020528	ACTH-dependent Cushing syndrome	MONDO:0018912	ICD10CM:E24.0	ICD10CM:E24	Cushing syndrome
 MONDO:0021394	polyp of vagina	MONDO:0005079	ICD10CM:N84.2	ICD10CM:N84	polyp
@@ -133,10 +164,14 @@ MONDO:0022171	chromhidrosis	MONDO:0024467	ICD10CM:L75.1	ICD10CM:L75	apocrine swe
 MONDO:0022697	athetoid cerebral palsy	MONDO:0006497	ICD10CM:G80.3	ICD10CM:G80	cerebral palsy
 MONDO:0023297	guttate psoriasis	MONDO:0005083	ICD10CM:L40.4	ICD10CM:L40	psoriasis
 MONDO:0024312	cancer of short bone of upper limb	MONDO:0024311	ICD10CM:C40.1	ICD10CM:C40	cancer affecting bone of limb skeleton
+MONDO:0024356	primary central sleep apnea syndrome	MONDO:0005296	ICD10CM:G47.31	ICD10CM:G47.3	sleep apnea syndrome
 MONDO:0024361	circadian rhythm sleep disorder	MONDO:0003406	ICD10CM:G47.2	ICD10CM:G47	sleep-wake disorder
 MONDO:0024377	circadian rhythm sleep disorder, delayed sleep phase type	MONDO:0024361	ICD10CM:G47.21	ICD10CM:G47.2	circadian rhythm sleep disorder
 MONDO:0024378	circadian rhythm sleep disorder, advanced sleep phase type	MONDO:0024361	ICD10CM:G47.22	ICD10CM:G47.2	circadian rhythm sleep disorder
 MONDO:0024379	circadian rhythm sleep disorder, irregular sleep wake type	MONDO:0024361	ICD10CM:G47.23	ICD10CM:G47.2	circadian rhythm sleep disorder
 MONDO:0024381	circadian rhythm sleep disorder, jet lag type	MONDO:0024361	ICD10CM:G47.25	ICD10CM:G47.2	circadian rhythm sleep disorder
 MONDO:0024382	circadian rhythm sleep disorder, shift work type	MONDO:0024361	ICD10CM:G47.26	ICD10CM:G47.2	circadian rhythm sleep disorder
+MONDO:0024644	myocardial ischemia	MONDO:0005385	ICD10CM:I20-I25	ICD10CM:I00-I99	vascular disorder
+MONDO:0044210	thalassemia minor	MONDO:0000984	ICD10CM:D56.3	ICD10CM:D56	thalassemia
 MONDO:0044211	idiopathic urticaria	MONDO:0005492	ICD10CM:L50.1	ICD10CM:L50	urticaria
+MONDO:0056798	disorder of appendix	MONDO:0004335	ICD10CM:K35-K38	ICD10CM:K00-K95	digestive system disorder

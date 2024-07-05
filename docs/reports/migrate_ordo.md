@@ -2,6 +2,7 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/slurp/ordo.tsv)
 
 ### Migratable terms
-| mondo_id   | mondo_label   | xref                 | xref_source                | original_label   | definition    | parents   | subset   |
-|:-----------|:--------------|:---------------------|:---------------------------|:-----------------|:--------------|:----------|:---------|
-| ID         | LABEL         | A oboInOwl:hasDbXref | >A oboInOwl:source SPLIT=| |                  | A IAO:0000115 | SC %      |          |
+| mondo_id      | mondo_label   | xref                 | xref_source                | original_label   | definition    | parents                                                               | subset   |
+|:--------------|:--------------|:---------------------|:---------------------------|:-----------------|:--------------|:----------------------------------------------------------------------|:---------|
+| ID            | LABEL         | A oboInOwl:hasDbXref | >A oboInOwl:source SPLIT=| |                  | A IAO:0000115 | SC %                                                                  |          |
+| MONDO:0971017 | behr syndrome | Orphanet:1239        | MONDO:equivalentTo         | Behr syndrome    |               | MONDO:8000034|MONDO:0020225|MONDO:0016135|MONDO:0035862|MONDO:8000032 |          |

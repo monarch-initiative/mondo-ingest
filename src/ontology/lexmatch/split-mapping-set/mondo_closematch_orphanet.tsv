@@ -1,0 +1,12 @@
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0005283	retinal disorder	skos:closeMatch	Orphanet:123930	neural retina leucine zipper	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	hgnc:8002	LEXMATCH
+MONDO:0008858	Behr syndrome	skos:closeMatch	Orphanet:1239	Behr syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:210000	LEXMATCH
+MONDO:0008858	Behr syndrome	skos:closeMatch	Orphanet:1239	Behr syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls:c0221061	LEXMATCH
+MONDO:0008858	Behr syndrome	skos:closeMatch	Orphanet:1239	Behr syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	rdf:ID	orphanet:1239	LEXMATCH
+MONDO:0008858	Behr syndrome	skos:closeMatch	Orphanet:1239	Behr syndrome	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0008858	LEXMATCH
+MONDO:0008858	Behr syndrome	skos:closeMatch	Orphanet:1239	Behr syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:210000	LEXMATCH
+MONDO:0008858	Behr syndrome	skos:closeMatch	Orphanet:1239	Behr syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	umls:c0221061	LEXMATCH
+MONDO:0008858	Behr syndrome	skos:closeMatch	Orphanet:1239	Behr syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:210000	LEXMATCH
+MONDO:0010359	Dent disease type 2	skos:closeMatch	Orphanet:123978	OCRL inositol polyphosphate-5-phosphatase	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	dent disease 2	LEXMATCH
+MONDO:0010645	oculocerebrorenal syndrome	skos:closeMatch	Orphanet:123978	OCRL inositol polyphosphate-5-phosphatase	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	ocrl1	LEXMATCH
+MONDO:0015612	Dent disease	skos:closeMatch	Orphanet:123978	OCRL inositol polyphosphate-5-phosphatase	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	dent disease 2	LEXMATCH
