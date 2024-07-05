@@ -1637,8 +1637,6 @@ MONDO:0004966	gastritis	skos:closeMatch	ICD10CM:K29.7	Gastritis, unspecified	sem
 MONDO:0004966	gastritis	skos:closeMatch	ICD10CM:K29.7	Gastritis, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:4029	LEXMATCH
 MONDO:0004967	acute lymphoblastic leukemia	skos:closeMatch	ICD10CM:C91.00	Acute lymphoblastic leukemia not having achieved remission	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9952	LEXMATCH
 MONDO:0004967	acute lymphoblastic leukemia	skos:closeMatch	ICD10CM:C91.00	Acute lymphoblastic leukemia not having achieved remission	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9952	LEXMATCH
-MONDO:0004980	atopic eczema	skos:closeMatch	ICD10CM:L20	Atopic dermatitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3310	LEXMATCH
-MONDO:0004980	atopic eczema	skos:closeMatch	ICD10CM:L20	Atopic dermatitis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3310	LEXMATCH
 MONDO:0004982	pancreatitis	skos:closeMatch	ICD10CM:K85.9	Acute pancreatitis, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:4989	LEXMATCH
 MONDO:0004982	pancreatitis	skos:closeMatch	ICD10CM:K85.9	Acute pancreatitis, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:4989	LEXMATCH
 MONDO:0004992	cancer	skos:closeMatch	ICD10CM:C80.1	Malignant (primary) neoplasm, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:162	LEXMATCH
@@ -5507,7 +5505,9 @@ MONDO:0018998	Leber congenital amaurosis	skos:closeMatch	ICD10CM:H35.5	Hereditar
 MONDO:0019005	nephronophthisis	skos:closeMatch	ICD10CM:Q61.5	Medullary cystic kidney	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:12712	LEXMATCH
 MONDO:0019005	nephronophthisis	skos:closeMatch	ICD10CM:Q61.5	Medullary cystic kidney	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:12712	LEXMATCH
 MONDO:0019015	omphalocele	skos:closeMatch	ICD10CM:Q79.2	Exomphalos	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060327	LEXMATCH
+MONDO:0019015	omphalocele	skos:closeMatch	ICD10CM:Q79.2	Exomphalos	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:0060327	LEXMATCH
 MONDO:0019015	omphalocele	skos:closeMatch	ICD10CM:Q79.2	Exomphalos	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060327	LEXMATCH
+MONDO:0019015	omphalocele	skos:closeMatch	ICD10CM:Q79.2	Exomphalos	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:0060327	LEXMATCH
 MONDO:0019016	maternally-inherited progressive external ophthalmoplegia	skos:closeMatch	ICD10CM:H49.4	Progressive external ophthalmoplegia	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0019016	LEXMATCH
 MONDO:0019023	cutaneous mastocytosis	skos:closeMatch	ICD10CM:D47.01	Cutaneous mastocytosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3663	LEXMATCH
 MONDO:0019023	cutaneous mastocytosis	skos:closeMatch	ICD10CM:D47.01	Cutaneous mastocytosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3663	LEXMATCH
