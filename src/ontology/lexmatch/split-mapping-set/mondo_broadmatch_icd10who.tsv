@@ -1,31 +1,61 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0000253	piedra	skos:broadMatch	ICD10WHO:B36.2	White piedra	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	white piedra	LEXMATCH
 MONDO:0000253	piedra	skos:broadMatch	ICD10WHO:B36.2	White piedra	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	white piedra	LEXMATCH
+MONDO:0000253	piedra	skos:broadMatch	ICD10WHO:B36.3	Black piedra	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	black piedra	LEXMATCH
 MONDO:0000253	piedra	skos:broadMatch	ICD10WHO:B36.3	Black piedra	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	black piedra	LEXMATCH
+MONDO:0001105	renal hypertension	skos:broadMatch	ICD10WHO:I15.0	Renovascular hypertension	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	renovascular hypertension	LEXMATCH
 MONDO:0001105	renal hypertension	skos:broadMatch	ICD10WHO:I15.0	Renovascular hypertension	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	renovascular hypertension	LEXMATCH
+MONDO:0001672	bronchus cancer	skos:broadMatch	ICD10WHO:C34	Malignant neoplasm of bronchus and lung	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	malignant neoplasm of bronchus and lung	LEXMATCH
 MONDO:0001672	bronchus cancer	skos:broadMatch	ICD10WHO:C34	Malignant neoplasm of bronchus and lung	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	malignant neoplasm of bronchus and lung	LEXMATCH
+MONDO:0002052	lymphadenitis	skos:broadMatch	ICD10WHO:L04	Acute lymphadenitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	acute lymphadenitis	LEXMATCH
 MONDO:0002052	lymphadenitis	skos:broadMatch	ICD10WHO:L04	Acute lymphadenitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	acute lymphadenitis	LEXMATCH
+MONDO:0002155	cholecystitis	skos:broadMatch	ICD10WHO:K81.0	Acute cholecystitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	acute cholecystitis	LEXMATCH
 MONDO:0002155	cholecystitis	skos:broadMatch	ICD10WHO:K81.0	Acute cholecystitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	acute cholecystitis	LEXMATCH
+MONDO:0002155	cholecystitis	skos:broadMatch	ICD10WHO:K81.1	Chronic cholecystitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	chronic cholecystitis	LEXMATCH
 MONDO:0002155	cholecystitis	skos:broadMatch	ICD10WHO:K81.1	Chronic cholecystitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	chronic cholecystitis	LEXMATCH
+MONDO:0002258	pharyngitis	skos:broadMatch	ICD10WHO:J02	Acute pharyngitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	acute pharyngitis	LEXMATCH
 MONDO:0002258	pharyngitis	skos:broadMatch	ICD10WHO:J02	Acute pharyngitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	acute pharyngitis	LEXMATCH
+MONDO:0002258	pharyngitis	skos:broadMatch	ICD10WHO:J31.2	Chronic pharyngitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	chronic pharyngitis	LEXMATCH
 MONDO:0002258	pharyngitis	skos:broadMatch	ICD10WHO:J31.2	Chronic pharyngitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	chronic pharyngitis	LEXMATCH
+MONDO:0002316	motor peripheral neuropathy	skos:broadMatch	ICD10WHO:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	hereditary motor and sensory neuropathy	LEXMATCH
 MONDO:0002316	motor peripheral neuropathy	skos:broadMatch	ICD10WHO:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	hereditary motor and sensory neuropathy	LEXMATCH
+MONDO:0002508	gingivitis	skos:broadMatch	ICD10WHO:K05.0	Acute gingivitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	acute gingivitis	LEXMATCH
 MONDO:0002508	gingivitis	skos:broadMatch	ICD10WHO:K05.0	Acute gingivitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	acute gingivitis	LEXMATCH
+MONDO:0002508	gingivitis	skos:broadMatch	ICD10WHO:K05.1	Chronic gingivitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	chronic gingivitis	LEXMATCH
 MONDO:0002508	gingivitis	skos:broadMatch	ICD10WHO:K05.1	Chronic gingivitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	chronic gingivitis	LEXMATCH
+MONDO:0003767	mitral valve disorder	skos:broadMatch	ICD10WHO:I05.1	Rheumatic mitral insufficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	rheumatic mitral insufficiency	LEXMATCH
 MONDO:0003767	mitral valve disorder	skos:broadMatch	ICD10WHO:I05.1	Rheumatic mitral insufficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	rheumatic mitral insufficiency	LEXMATCH
+MONDO:0003781	bronchitis	skos:broadMatch	ICD10WHO:J20	Acute bronchitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	acute bronchitis	LEXMATCH
 MONDO:0003781	bronchitis	skos:broadMatch	ICD10WHO:J20	Acute bronchitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	acute bronchitis	LEXMATCH
+MONDO:0004631	tongue cancer	skos:broadMatch	ICD10WHO:C01	Malignant neoplasm of base of tongue	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	malignant neoplasm of base of tongue	LEXMATCH
 MONDO:0004631	tongue cancer	skos:broadMatch	ICD10WHO:C01	Malignant neoplasm of base of tongue	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	malignant neoplasm of base of tongue	LEXMATCH
+MONDO:0004907	alopecia	skos:broadMatch	ICD10WHO:L63	Alopecia areata	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	alopecia areata	LEXMATCH
 MONDO:0004907	alopecia	skos:broadMatch	ICD10WHO:L63	Alopecia areata	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	alopecia areata	LEXMATCH
+MONDO:0005515	oral cavity cancer	skos:broadMatch	ICD10WHO:C04	Malignant neoplasm of floor of mouth	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	malignant neoplasm of floor of mouth	LEXMATCH
 MONDO:0005515	oral cavity cancer	skos:broadMatch	ICD10WHO:C04	Malignant neoplasm of floor of mouth	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	malignant neoplasm of floor of mouth	LEXMATCH
+MONDO:0005615	plasmacytoma	skos:broadMatch	ICD10WHO:C90.3	Solitary plasmacytoma	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	solitary plasmacytoma	LEXMATCH
 MONDO:0005615	plasmacytoma	skos:broadMatch	ICD10WHO:C90.3	Solitary plasmacytoma	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	solitary plasmacytoma	LEXMATCH
+MONDO:0005649	appendicitis	skos:broadMatch	ICD10WHO:K35	Acute appendicitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	acute appendicitis	LEXMATCH
 MONDO:0005649	appendicitis	skos:broadMatch	ICD10WHO:K35	Acute appendicitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	acute appendicitis	LEXMATCH
+MONDO:0005649	appendicitis	skos:broadMatch	ICD10WHO:K35.2	Acute appendicitis with generalized peritonitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	acute appendicitis with generalized peritonitis	LEXMATCH
 MONDO:0005649	appendicitis	skos:broadMatch	ICD10WHO:K35.2	Acute appendicitis with generalized peritonitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	acute appendicitis with generalized peritonitis	LEXMATCH
+MONDO:0005738	echinococcosis	skos:broadMatch	ICD10WHO:B67.8	Echinococcosis, unspecified, of liver	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	echinococcosis, unspecified, of liver	LEXMATCH
 MONDO:0005738	echinococcosis	skos:broadMatch	ICD10WHO:B67.8	Echinococcosis, unspecified, of liver	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	echinococcosis, unspecified, of liver	LEXMATCH
+MONDO:0006011	viral hepatitis	skos:broadMatch	ICD10WHO:B19.0	Unspecified viral hepatitis with hepatic coma	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	unspecified viral hepatitis with hepatic coma	LEXMATCH
 MONDO:0006011	viral hepatitis	skos:broadMatch	ICD10WHO:B19.0	Unspecified viral hepatitis with hepatic coma	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	unspecified viral hepatitis with hepatic coma	LEXMATCH
+MONDO:0006651	anterior uveitis	skos:broadMatch	ICD10WHO:H20	Iridocyclitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	iridocyclitis	LEXMATCH
 MONDO:0006651	anterior uveitis	skos:broadMatch	ICD10WHO:H20	Iridocyclitis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	iridocyclitis	LEXMATCH
+MONDO:0010481	angioedema	skos:broadMatch	ICD10WHO:T78.3	Angioneurotic oedema	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	angioneurotic oedema	LEXMATCH
 MONDO:0010481	angioedema	skos:broadMatch	ICD10WHO:T78.3	Angioneurotic oedema	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	angioneurotic oedema	LEXMATCH
+MONDO:0011057	cerebrovascular disorder	skos:broadMatch	ICD10WHO:I63	Cerebral infarction	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	cerebral infarction	LEXMATCH
 MONDO:0011057	cerebrovascular disorder	skos:broadMatch	ICD10WHO:I63	Cerebral infarction	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	cerebral infarction	LEXMATCH
+MONDO:0011429	juvenile idiopathic arthritis	skos:broadMatch	ICD10WHO:M08.4	Pauciarticular juvenile arthritis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	pauciarticular juvenile arthritis	LEXMATCH
 MONDO:0011429	juvenile idiopathic arthritis	skos:broadMatch	ICD10WHO:M08.4	Pauciarticular juvenile arthritis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	pauciarticular juvenile arthritis	LEXMATCH
+MONDO:0021113	respiratory failure	skos:broadMatch	ICD10WHO:J96.0	Acute respiratory failure	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	acute respiratory failure	LEXMATCH
 MONDO:0021113	respiratory failure	skos:broadMatch	ICD10WHO:J96.0	Acute respiratory failure	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	acute respiratory failure	LEXMATCH
+MONDO:0021113	respiratory failure	skos:broadMatch	ICD10WHO:J96.1	Chronic respiratory failure	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	chronic respiratory failure	LEXMATCH
 MONDO:0021113	respiratory failure	skos:broadMatch	ICD10WHO:J96.1	Chronic respiratory failure	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	chronic respiratory failure	LEXMATCH
+MONDO:0021129	microphthalmia	skos:broadMatch	ICD10WHO:Q11.2	Microphthalmos	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	microphthalmos	LEXMATCH
 MONDO:0021129	microphthalmia	skos:broadMatch	ICD10WHO:Q11.2	Microphthalmos	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	microphthalmos	LEXMATCH
+MONDO:0042981	aortic valve stenosis	skos:broadMatch	ICD10WHO:I06.0	Rheumatic aortic stenosis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	rheumatic aortic stenosis	LEXMATCH
 MONDO:0042981	aortic valve stenosis	skos:broadMatch	ICD10WHO:I06.0	Rheumatic aortic stenosis	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	rheumatic aortic stenosis	LEXMATCH
