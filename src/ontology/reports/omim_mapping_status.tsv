@@ -1,6 +1,8 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
-OMIM:620852	neurodevelopmental disorder with hypotonia, feeding difficulties, facial dysmorphism, and brain abnormalities	False	False	False
-OMIM:620865	ehlers-danlos syndrome, classic-like, 3	False	False	False
+OMIM:620607	spastic paraplegia 30b, autosomal recessive	False	False	False
+OMIM:620854	neuronopathy, distal hereditary motor, autosomal recessive 11, with spasticity	False	False	False
+OMIM:620869	immunodeficiency 122	False	False	False
+OMIM:620877	deafness, autosomal recessive 125	False	False	False
 OMIM:100500		False	False	True
 OMIM:100680		False	False	True
 OMIM:100735		False	False	True
@@ -18975,12 +18977,15 @@ OMIM:620862	ANKRD52	False	True	False
 OMIM:620863	AMDHD1	False	True	False
 OMIM:620864	AMDHD2	False	True	False
 OMIM:620866	ERICH3	False	True	False
+OMIM:620867	ARMH3	False	True	False
 OMIM:620868	ARID3C	False	True	False
 OMIM:620870	DDI1	False	True	False
 OMIM:620871	DDI2	False	True	False
 OMIM:620872	ADGRF2	False	True	False
 OMIM:620873	ADGRF3	False	True	False
 OMIM:620874	ADGRF5	False	True	False
+OMIM:620875	FICD	False	True	False
+OMIM:620876	HECTD2	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
@@ -20419,7 +20424,7 @@ OMIM:231950	glutathionuria	True	False	False
 OMIM:232200	glycogen storage disease ia	True	False	False
 OMIM:232220	glycogen storage disease ib	True	False	False
 OMIM:232240	glycogen storage disease ic	True	False	False
-OMIM:232300	glycogen storage disease 2	True	False	False
+OMIM:232300	pompe disease	True	False	False
 OMIM:232400	glycogen storage disease 3	True	False	False
 OMIM:232500	glycogen storage disease 4	True	False	False
 OMIM:232600	glycogen storage disease 5	True	False	False
@@ -21351,7 +21356,7 @@ OMIM:301119	spermatogenic failure, x-linked, 8	True	False	False
 OMIM:301200	amelogenesis imperfecta, type 1e	True	False	False
 OMIM:301201	amelogenesis imperfecta, hypoplastic/hypomaturation, X-linked 2	True	False	False
 OMIM:301220	pigmentary disorder, reticulate, with systemic manifestations, X-linked	True	False	False
-OMIM:301310	anemia, sideroblastic, and spinocerebellar ataxia	True	False	False
+OMIM:301310	spinocerebellar ataxia, X-linked 6, with or without sideroblastic anemia	True	False	False
 OMIM:301500	fabry disease	True	False	False
 OMIM:301830	spinal muscular atrophy, X-linked 2	True	False	False
 OMIM:301835	arts syndrome	True	False	False
@@ -22903,7 +22908,7 @@ OMIM:610329	aicardi-goutieres syndrome 3	True	False	False
 OMIM:610333	aicardi-goutieres syndrome 4	True	False	False
 OMIM:610353	epilepsy, nocturnal frontal lobe, 4	True	False	False
 OMIM:610356	retinal cone dystrophy 3b	True	False	False
-OMIM:610357	spastic paraplegia 30, autosomal dominant	True	False	False
+OMIM:610357	spastic paraplegia 30a, autosomal dominant	True	False	False
 OMIM:610359	retinitis pigmentosa 33	True	False	False
 OMIM:610361	orofacial cleft 9	True	False	False
 OMIM:610370	diarrhea 4, malabsorptive, congenital	True	False	False
@@ -27135,6 +27140,8 @@ OMIM:620840	premature ovarian failure 24	True	False	False
 OMIM:620848	spermatogenic failure 92	True	False	False
 OMIM:620849	spermatogenic failure 93	True	False	False
 OMIM:620850	spermatogenic failure 94	True	False	False
+OMIM:620852	neurodevelopmental disorder with hypotonia, feeding difficulties, facial dysmorphism, and brain abnormalities	True	False	False
+OMIM:620865	ehlers-danlos syndrome, classic-like, 3	True	False	False
 OMIMPS:100070	Aortic aneurysm, familial abdominal	True	False	False
 OMIMPS:100300	Adams-Oliver syndrome	True	False	False
 OMIMPS:101800	Acrodysostosis	True	False	False
@@ -27315,7 +27322,7 @@ OMIMPS:177200	Liddle syndrome	True	False	False
 OMIMPS:177735	Pseudohypoaldosteronism, type I	True	False	False
 OMIMPS:177900	Psoriasis	True	False	False
 OMIMPS:178110	Contractures, pterygia, and variable skeletal fusions syndrome	True	False	False
-OMIMPS:178600	Pulmonary hypertension, primary	True	False	False
+OMIMPS:178600	Pulmonary hypertension, primary (see also hereditary hemorrhagic telangiectasia ({PS187300})	True	False	False
 OMIMPS:179010	Pyloric stenosis, infantile hypertrophic	True	False	False
 OMIMPS:179800	Distal renal tubular acidosis	True	False	False
 OMIMPS:179850	Reticulate pigment disorders	True	False	False
@@ -27331,7 +27338,7 @@ OMIMPS:184450	Stuttering, familial persistent	True	False	False
 OMIMPS:184840	Otospondylomegaepiphyseal dysplasia	True	False	False
 OMIMPS:185800	Proximal symphalangism	True	False	False
 OMIMPS:186500	Multiple synostoses syndrome	True	False	False
-OMIMPS:187300	Telangiectasia, hereditary hemorrhagic	True	False	False
+OMIMPS:187300	Telangiectasia, hereditary hemorrhagic (see also primary pulmonary hypertension ({PS178600})	True	False	False
 OMIMPS:187950	Thrombocythemia	True	False	False
 OMIMPS:188050	Thrombophilia	True	False	False
 OMIMPS:188550	Thyroid cancer, nonmedullary	True	False	False

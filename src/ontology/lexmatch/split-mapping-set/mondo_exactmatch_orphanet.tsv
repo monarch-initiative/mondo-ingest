@@ -1,21 +1,5 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
-MONDO:0002095	vascular cancer	skos:exactMatch	Orphanet:673466	Malignant vascular tumor	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant vascular tumor	LEXMATCH
-MONDO:0002520	hepatic porphyria	skos:exactMatch	Orphanet:659694	Hepatic porphyria	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hepatic porphyria	LEXMATCH
-MONDO:0003258	hobnail hemangioma	skos:exactMatch	Orphanet:675362	Hobnail hemangioma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hobnail hemangioma	LEXMATCH
-MONDO:0003999	juvenile pilocytic astrocytoma	skos:exactMatch	Orphanet:673580	Classic pilocytic astrocytoma	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	juvenile pilocytic astrocytoma	LEXMATCH
-MONDO:0003999	juvenile pilocytic astrocytoma	skos:exactMatch	Orphanet:673580	Classic pilocytic astrocytoma	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	juvenile pilocytic astrocytoma	LEXMATCH
-MONDO:0005774	glanders	skos:exactMatch	Orphanet:659908	Glanders	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	glanders	LEXMATCH
-MONDO:0005888	ornithosis	skos:exactMatch	Orphanet:660053	Psittacosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	psittacosis	LEXMATCH
-MONDO:0005888	ornithosis	skos:exactMatch	Orphanet:660053	Psittacosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	ornithosis	LEXMATCH
-MONDO:0007753	Frey syndrome	skos:exactMatch	Orphanet:662240	Frey syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	frey syndrome	LEXMATCH
-MONDO:0008858	Behr syndrome	skos:exactMatch	Orphanet:1239	Behr syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	behr syndrome	LEXMATCH
-MONDO:0009796	ornithine aminotransferase deficiency	skos:exactMatch	Orphanet:123971	ornithine aminotransferase	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	gyrate atrophy	LEXMATCH
-MONDO:0009796	ornithine aminotransferase deficiency	skos:exactMatch	Orphanet:123971	ornithine aminotransferase	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hoga	LEXMATCH
 MONDO:0009902	cutaneous porphyria	skos:exactMatch	Orphanet:659681	Erythropoietic porphyria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	erythropoietic porphyria	LEXMATCH
-MONDO:0010431	Joubert syndrome 10	skos:exactMatch	Orphanet:123982	OFD1 centriole and centriolar satellite protein	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	joubert syndrome type 10	LEXMATCH
-MONDO:0011997	Hermansky-Pudlak syndrome 2	skos:exactMatch	Orphanet:664500	Hermansky-Pudlak syndrome due to AP3B1 deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hermansky-pudlak syndrome type 2	LEXMATCH
-MONDO:0013656	intellectual disability, autosomal dominant 9	skos:exactMatch	Orphanet:662367	NESCAV syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	nescav syndrome	LEXMATCH
-MONDO:0014885	Hermansky-Pudlak syndrome 10	skos:exactMatch	Orphanet:664511	Early-onset severe Hermansky-Pudlak syndrome with hearing loss, due to AP3D1 deficiency	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hermansky-pudlak syndrome type 10	LEXMATCH
 MONDO:0015076	obsolete rare parathyroid tumor	skos:exactMatch	Orphanet:100090	Rare parathyroid tumor	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0015081	obsolete neuroendocrine tumor with other location	skos:exactMatch	Orphanet:100101	Neuroendocrine tumor with other location	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0015088	obsolete autosomal dominant pure spastic paraplegia	skos:exactMatch	Orphanet:100980	Autosomal dominant pure spastic paraplegia	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
@@ -532,7 +516,6 @@ MONDO:0018833	obsolete rare idiopathic macular telangiectasia	skos:exactMatch	Or
 MONDO:0018880	obsolete rare teratologic disease	skos:exactMatch	Orphanet:52662	Rare teratologic disease	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0018928	obsolete rare hepatic disease	skos:exactMatch	Orphanet:57146	Rare hepatic disease	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0018972	obsolete rare epithelial tumor of stomach	skos:exactMatch	Orphanet:63443	Rare epithelial tumor of stomach	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0018984	Oroya fever	skos:exactMatch	Orphanet:659756	Oroya fever	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	oroya fever	LEXMATCH
 MONDO:0019038	obsolete rare maxillo-facial surgical disease	skos:exactMatch	Orphanet:68329	Rare maxillo-facial surgical disease	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0019039	obsolete rare hemorrhagic disorder due to a constitutional coagulation factors defect	skos:exactMatch	Orphanet:68334	Rare hemorrhagic disorder due to a constitutional coagulation factors defect	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0019041	obsolete rare genetic inherited tumor	skos:exactMatch	Orphanet:68336	Rare genetic tumor	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
@@ -737,7 +720,6 @@ MONDO:0021027	obsolete genetic hair anomaly	skos:exactMatch	Orphanet:183450	Gene
 MONDO:0021028	obsolete genetic nail anomaly	skos:exactMatch	Orphanet:183454	Genetic nail anomaly	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0021034	obsolete hereditary alopecia	skos:exactMatch	Orphanet:481771	Genetic alopecia	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0021037	obsolete genetic neurodegenerative disease with dementia	skos:exactMatch	Orphanet:276058	Genetic neurodegenerative disease with dementia	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0021169	epithelioid hemangioma	skos:exactMatch	Orphanet:675396	Epithelioid hemangioma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	epithelioid hemangioma	LEXMATCH
 MONDO:0021198	obsolete rare genetic disease	skos:exactMatch	Orphanet:98053	Rare genetic disease	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0022397	obsolete retinal ciliopathy due to mutation in the retinitis pigmentosa-1 gene	skos:exactMatch	Orphanet:156168	Retinal ciliopathy due to mutation in the retinitis pigmentosa-1 gene	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0022400	obsolete retinal ciliopathy due to mutation in the RPGRIP gene	skos:exactMatch	Orphanet:156174	Retinal ciliopathy due to mutation in the RPGRIP gene	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
@@ -802,7 +784,6 @@ MONDO:0029810	obsolete laminopathy with striated muscle involvement	skos:exactMa
 MONDO:0029811	obsolete laminopathy with peripheral neuropathy	skos:exactMatch	Orphanet:300758	Laminopathy with peripheral neuropathy	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0029812	obsolete laminopathy with lipodystrophy	skos:exactMatch	Orphanet:300763	Laminopathy with lipodystrophy	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0029813	obsolete laminopathy with premature aging	skos:exactMatch	Orphanet:300766	Laminopathy with premature aging	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0030048	harderoporphyria	skos:exactMatch	Orphanet:659672	Harderoporphyria	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	harderoporphyria	LEXMATCH
 MONDO:0030767	obsolete genetic tumor of hematopoietic and lymphoid tissues	skos:exactMatch	Orphanet:322126	Genetic tumor of hematopoietic and lymphoid tissues	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0031004	obsolete genetic disorder of sex development of gynecological interest	skos:exactMatch	Orphanet:325665	Genetic difference of sex development of gynecological interest	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0031016	obsolete genetic disorder of sex development	skos:exactMatch	Orphanet:325690	Genetic difference of sex development	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
@@ -815,8 +796,6 @@ MONDO:0032011	obsolete biological anomaly	skos:exactMatch	Orphanet:377790	Biolog
 MONDO:0032013	obsolete clinical syndrome	skos:exactMatch	Orphanet:377792	Clinical syndrome	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0032014	obsolete particular clinical situation in a disease or syndrome	skos:exactMatch	Orphanet:377793	Particular clinical situation in a disease or syndrome	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0032221	obsolete rare disorder with female infertility due to a congenital hypogonadotropic hypogonadism	skos:exactMatch	Orphanet:399846	Rare disorder with female infertility due to a congenital hypogonadotropic hypogonadism	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0032886	Liang-Wang syndrome	skos:exactMatch	Orphanet:664438	Gingival fibromatosis-aortic root dilatation-facial dysmorphism-intellectual disability syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	liang-wang syndrome	LEXMATCH
-MONDO:0032916	Imagawa-Matsumoto syndrome	skos:exactMatch	Orphanet:659463	Imagawa-Matsumoto syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	imagawa-matsumoto syndrome	LEXMATCH
 MONDO:0033056	obsolete genetic facial cleft	skos:exactMatch	Orphanet:414726	Genetic facial cleft	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0033169	curariform drugs toxicity	skos:exactMatch	Orphanet:413693		semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0033170	statin toxicity	skos:exactMatch	Orphanet:413696		semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
@@ -881,11 +860,8 @@ MONDO:0038261	obsolete genetic neurological channelopathy of the central nervous
 MONDO:0038268	obsolete autoimmune neurological channelopathy	skos:exactMatch	Orphanet:98750	Autoimmune neurological channelopathy	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0043005	obsolete genetic multiple congenital anomalies/dysmorphic syndrome	skos:exactMatch	Orphanet:183533	Genetic multiple congenital anomalies/dysmorphic syndrome	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0043008	obsolete genetic multiple congenital anomalies/dysmorphic syndrome without intellectual disability	skos:exactMatch	Orphanet:330206	Genetic multiple congenital anomalies/dysmorphic syndrome without intellectual disability	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0043349	intravascular papillary endothelial hyperplasia	skos:exactMatch	Orphanet:673525	Intravascular papillary endothelial hyperplasia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	intravascular papillary endothelial hyperplasia	LEXMATCH
-MONDO:0043361	May-Thurner syndrome	skos:exactMatch	Orphanet:675404	May-Thurner syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	may-thurner syndrome	LEXMATCH
 MONDO:0044636	obsolete rare hyperkinetic movement disorder	skos:exactMatch	Orphanet:494457	Rare hyperkinetic movement disorder	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0044655	obsolete c12orf65-related combined oxidative phosphorylation defect	skos:exactMatch	Orphanet:497623	C12ORF65-related combined oxidative phosphorylation defect	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0060510	Cohen-Gibson syndrome	skos:exactMatch	Orphanet:659396	Cohen-Gibson syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cohen-gibson syndrome	LEXMATCH
 MONDO:0800084	obsolete primary bone dysplasia with increased bone density	skos:exactMatch	Orphanet:93444	Primary bone dysplasia with increased bone density	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0800087	obsolete type 11 collagen-related bone disorder	skos:exactMatch	Orphanet:93422	Type 11 collagen-related bone disorder	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0800089	obsolete primary bone dysplasia with disorganized development of skeletal components	skos:exactMatch	Orphanet:93450	Primary bone dysplasia with disorganized development of skeletal components	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
@@ -895,13 +871,6 @@ MONDO:0800092	obsolete hereditary inflammatory or rheumatoid-like osteoarthropat
 MONDO:0800093	obsolete dysostosis with brachydactyly without extraskeletal manifestations	skos:exactMatch	Orphanet:498451	Dysostosis with brachydactyly without extraskeletal manifestations	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0800094	obsolete dysostosis with brachydactyly with extraskeletal manifestations	skos:exactMatch	Orphanet:498454	Dysostosis with brachydactyly with extraskeletal manifestations	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0800095	obsolete syndrome with synostosis or other joint formation defect	skos:exactMatch	Orphanet:93459	Syndrome with synostosis or other joint formation defect	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0800478	trigeminal trophic syndrome	skos:exactMatch	Orphanet:664901	Trigeminal trophic syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	trigeminal trophic syndrome	LEXMATCH
-MONDO:0850112	breast implant-associated anaplastic large cell lymphoma	skos:exactMatch	Orphanet:667662	Breast implant-associated anaplastic large cell lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	breast implant-associated anaplastic large cell lymphoma	LEXMATCH
-MONDO:0859143	Radio-Tartaglia syndrome	skos:exactMatch	Orphanet:662234	Neurodevelopmental delay-congenital heart defects-intellectual disability syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	spen-related neurodevelopmental disorder	LEXMATCH
-MONDO:0859143	Radio-Tartaglia syndrome	skos:exactMatch	Orphanet:662234	Neurodevelopmental delay-congenital heart defects-intellectual disability syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	radio-tartaglia syndrome	LEXMATCH
-MONDO:0859147	Marbach-Rustad progeroid syndrome	skos:exactMatch	Orphanet:659873	Wormian bones-micrognathia-abnormal dentition-progeroid syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	marbach-rustad progeroid syndrome	LEXMATCH
-MONDO:0859219	Rauch-Steindl syndrome	skos:exactMatch	Orphanet:659642	Rauch-Steindl syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	rauch-steindl syndrome	LEXMATCH
-MONDO:0859301	neurodevelopmental disorder with craniofacial dysmorphism and skeletal defects	skos:exactMatch	Orphanet:662207	Neurodevelopmental delay-brain malformations-skeletal defects-intellectual disability syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	neurodevelopmental disorder with craniofacial dysmorphism and skeletal defects	LEXMATCH
 MONDO:0957001	obsolete hereditary mixed dermis disorder	skos:exactMatch	Orphanet:183481	Genetic mixed dermis disorder	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0957009	obsolete hereditary posterior fossa malformation	skos:exactMatch	Orphanet:269557	Genetic posterior fossa malformation	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0957024	obsolete hereditary 46,XX disorder of sex development	skos:exactMatch	Orphanet:325697	Genetic 46,XX difference of sex development	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
