@@ -2,6 +2,10 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/slurp/omim.tsv)
 
 ### Migratable terms
-| mondo_id   | mondo_label   | xref                 | xref_source                | original_label   | definition    | parents   |
-|:-----------|:--------------|:---------------------|:---------------------------|:-----------------|:--------------|:----------|
-| ID         | LABEL         | A oboInOwl:hasDbXref | >A oboInOwl:source SPLIT=| |                  | A IAO:0000115 | SC %      |
+| mondo_id      | mondo_label                                                                    | xref                 | xref_source                | original_label                                                                 | definition    | parents       |
+|:--------------|:-------------------------------------------------------------------------------|:---------------------|:---------------------------|:-------------------------------------------------------------------------------|:--------------|:--------------|
+| ID            | LABEL                                                                          | A oboInOwl:hasDbXref | >A oboInOwl:source SPLIT=| |                                                                                | A IAO:0000115 | SC %          |
+| MONDO:0971149 | spastic paraplegia 30b, autosomal recessive                                    | OMIM:620607          | MONDO:equivalentTo         | spastic paraplegia 30b, autosomal recessive                                    |               | MONDO:0019064 |
+| MONDO:0971150 | neuronopathy, distal hereditary motor, autosomal recessive 11, with spasticity | OMIM:620854          | MONDO:equivalentTo         | neuronopathy, distal hereditary motor, autosomal recessive 11, with spasticity |               | MONDO:0015363 |
+| MONDO:0971151 | immunodeficiency 122                                                           | OMIM:620869          | MONDO:equivalentTo         | immunodeficiency 122                                                           |               | MONDO:0021094 |
+| MONDO:0971152 | deafness, autosomal recessive 125                                              | OMIM:620877          | MONDO:equivalentTo         | deafness, autosomal recessive 125                                              |               |               |
