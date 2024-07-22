@@ -593,10 +593,15 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml
 
+# todo: -deleted case to be added (prereq here & goal below)
 .PHONY: sync-synonyms
-sync-synonyms: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.added.robot.tsv)  # 'added' chosen arbitrarily as the 1 of 4 cases to run script for all sources
+sync-synonyms: $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
+#sync-synonyms: $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.deleted.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
 
 tmp/mondo-synonyms-scope-type-xref.tsv: tmp/mondo.owl
+	$(ROBOT) query -i $< --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
+
+../../tests/input/sync_synonym/mondo-synonyms-scope-type-xref.tsv: ../../tests/input/sync_synonym/test_mondo.owl
 	$(ROBOT) query -i $< --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
 
 # todo: temp output for analysis during development
@@ -606,6 +611,18 @@ tmp/synonym_sync_combined_cases.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTD
 	@for file in $(INPUT_FILES); do \
 		tail -n +2 $$file >> $@; \
 	done
+
+$(REPORTDIR)/sync-synonyms.added.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.added.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.added.robot.tsv > $@
+
+$(REPORTDIR)/sync-synonyms.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.confirmed.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.confirmed.robot.tsv > $@
+
+#$(REPORTDIR)/sync-synonyms.deleted.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.deleted.robot.tsv)
+#	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.deleted.robot.tsv > $@
+
+$(REPORTDIR)/sync-synonyms.updated.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.updated.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.updated.robot.tsv > $@
 
 $(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.tsv $(REPORTDIR)/%-synonyms.deleted.robot.tsv $(REPORTDIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv
 	$(MAKE) up-to-date-mondo.sssom.tsv
@@ -829,6 +846,25 @@ help:
 	@echo "For all subclass relationships in Mondo, shows which sources do not have it and whether no source has it. Combination of all --outpath-direct-in-mondo-only outputs for all sources, using those as inputs, and then deletes them after.\n"
 	@echo "reports/sync-subClassOf.confirmed.tsv"
 	@echo "For all subclass relationships in Mondo, by source, a robot template containing showing what is in Mondo and are confirmed to also exist in the source. Combination of all --outpath-confirmed outputs for all sources.\n"
+	# - Synchronization: synonyms
+	@echo "sync-synonyms"
+	@echo "Runs 'sync-synonyms' part of synchronization pipeline, creating outputs for all sources for each of the 4 cases - 'added', 'confirmed', 'updated', and 'deleted'.\n"
+	@echo "reports/%.subclass.added.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain synonyms that aren't yet integrated into Mondo for all mapped source terms.\n"
+	@echo "reports/%.subclass.confirmed.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain synonym confirmations; combination of synonym scope predicate and synonym string exists in both source and Mondo for a given mapping.\n"
+	@echo "reports/%.subclass.deleted.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain synonym deletions; exists in Mondo but not in source(s) for a given mapping.\n"
+	@echo "reports/%.subclass.updated.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain updates to synonym scope predicate; cases where the synonym exists in Mondo and on the mapped source term, but the scope predicate is different.\n"
+	@echo "reports/sync-synonyms.added.tsv"
+	@echo "Combination of all 'added' synonym outputs for all sources.\n"
+	@echo "reports/sync-synonyms.confirmed.tsv"
+	@echo "Combination of all 'confirmed' synonym outputs for all sources.\n"
+	@echo "reports/sync-synonyms.deleted.tsv"
+	@echo "Combination of all 'deleted' synonym outputs for all sources.\n"
+	@echo "reports/sync-synonyms.updated.tsv"
+	@echo "Combination of all 'updated' synonym outputs for all sources.\n"
 	# - Refresh externally managed content
 	@echo "update-externally-managed-content"
 	@echo "Downloads and processes all externally managed content like cross references, subsets and labels, including NORD and GARD.\n"
