@@ -6,14 +6,17 @@ PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 SELECT
   ?mondo_id ?dbXref ?synonym_scope ?synonym ?synonym_type
 WHERE {
-  ?class a owl:Class .
+  ?class a owl:Class ;
+    ?synonymPropertyUri ?synonym .
 
-  ?axiom owl:annotatedSource ?class ;
-     owl:annotatedProperty ?synonymPropertyUri ;
-     owl:annotatedTarget ?synonym ;
-     oboInOwl:hasDbXref ?dbXref .
+  OPTIONAL {
+    ?axiom owl:annotatedSource ?class ;
+       owl:annotatedProperty ?synonymPropertyUri ;
+       owl:annotatedTarget ?synonym .
 
-  OPTIONAL { ?axiom oboInOwl:hasSynonymType ?synonymTypeUri }
+    OPTIONAL { ?axiom oboInOwl:hasDbXref ?dbXref }
+    OPTIONAL { ?axiom oboInOwl:hasSynonymType ?synonymTypeUri }
+  }
 
   FILTER(?synonymPropertyUri IN (
     oboInOwl:hasExactSynonym,
