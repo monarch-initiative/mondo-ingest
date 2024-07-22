@@ -70,6 +70,7 @@ These workflows will help with excluding certain terms from integration into Mon
 ## Synchronization
 These workflows help synchronize Mondo with source ontologies.
 
+### Sub-class of
 #### Makefile goals
 1. `generate-synchronization-files`: Runs synchronization pipeline.
 2. `sync-subclassof`: Runs 'sync-subclassof' part of synchronization pipeline, generating set of outputs for all ontologies.
@@ -80,3 +81,15 @@ These workflows help synchronize Mondo with source ontologies.
 7. `reports/%.subclass.direct-in-mondo-only.tsv`: Path to create file for relations for given ontology where direct subclass relation exists only in Mondo and not in the source. Running this also runs / generates `reports/%.subclass.added.robot.tsv`, `reports/%.subclass.added-obsolete.robot.tsv`, and `reports/%.subclass.confirmed.robot.tsv`.
 8. `reports/sync-subClassOf.direct-in-mondo-only.tsv`: For all subclass relationships in Mondo, shows which sources do not have it and whether no source has it. Combination of all `--outpath-direct-in-mondo-only` outputs for all sources, using those as inputs, and then deletes them after.
 9. `reports/sync-subClassOf.confirmed.tsv`: For all subclass relationships in Mondo, by source, a robot template containing showing what is in Mondo and are confirmed to also exist in the source. Combination of all `--outpath-confirmed` outputs for all sources.
+
+### Synonyms
+#### Makefile goals
+1. `sync-synonyms`: Runs 'sync-synonyms' part of synchronization pipeline, creating outputs for all sources for each of the 4 cases - 'added', 'confirmed', 'updated', and 'deleted'.
+2. `reports/%.subclass.added.robot.tsv`: ROBOT template TSV to create which will contain synonyms that aren't yet integrated into Mondo for all mapped source terms.
+3. `reports/%.subclass.confirmed.robot.tsv`: ROBOT template TSV to create which will contain synonym confirmations; combination of synonym scope predicate and synonym string exists in both source and Mondo for a given mapping.
+4. `reports/%.subclass.deleted.robot.tsv`: ROBOT template TSV to create which will contain synonym deletions; exists in Mondo but not in source(s) for a given mapping.
+5. `reports/%.subclass.updated.robot.tsv`: ROBOT template TSV to create which will contain updates to synonym scope predicate; cases where the synonym exists in Mondo and on the mapped source term, but the scope predicate is different.
+6. `reports/sync-synonyms.added.tsv`: Combination of all 'added' synonym outputs for all sources.
+7. `reports/sync-synonyms.confirmed.tsv`: Combination of all 'confirmed' synonym outputs for all sources.
+8. `reports/sync-synonyms.deleted.tsv`: Combination of all 'deleted' synonym outputs for all sources.
+9. `reports/sync-synonyms.updated.tsv`: Combination of all 'updated' synonym outputs for all sources.

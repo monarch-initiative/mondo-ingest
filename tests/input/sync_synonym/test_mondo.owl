@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/mondo.owl#"
+     xml:base="http://purl.obolibrary.org/obo/mondo.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:mondo="http://purl.obolibrary.org/obo/mondo#"
+     xmlns:sssom="https://w3id.org/sssom/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/semapv/vocab/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mondo.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/releases/2024-07-24/mondo.owl"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000001"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021125"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021178"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/MONDO_0042489"/>
+        <dc:description>A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.</dc:description>
+        <dc:title>Mondo Disease Ontology</dc:title>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:source rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <terms:source rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <terms:source rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+        <terms:source rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <terms:source rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <terms:source rdf:resource="http://purl.obolibrary.org/obo/mf.owl"/>
+        <terms:source rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <terms:source rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <terms:source rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <terms:source rdf:resource="http://www.orpha.net/ontology/orphanet.owl"/>
+        <terms:source rdf:resource="https://id.nlm.nih.gov/mesh/"/>
+        <terms:source rdf:resource="https://rarediseases.info.nih.gov/"/>
+        <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
+        <rdfs:comment>Includes Ontology(OntologyID(Anonymous-11)) [Axioms: 100517 Logical Axioms: 0]</rdfs:comment>
+        <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://obofoundry.org/ontology/mondo.html</foaf:homepage>
+    </owl:Ontology>
+    
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/mondo#DEPRECATED">
+        <rdfs:label>A synonym that is historic and discouraged</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!--     TODO: make a phony -deleted case? (need to add something here that isn't in OMIM)    -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_8000008">
+        <oboInOwl:hasRelatedSynonym>Fake synonym</oboInOwl:hasRelatedSynonym>    <!--  -updated 1.2  -->
+        <oboInOwl:hasBroadSynonym>MARTSOLF syndrome</oboInOwl:hasBroadSynonym>  <!--  -updated 2.1  -->
+        <oboInOwl:hasBroadSynonym>Martsolf syndrome</oboInOwl:hasBroadSynonym>  <!--  -updated 2.2  -->
+        <oboInOwl:hasExactSynonym>cataract-mental retardation-hypogonadism</oboInOwl:hasExactSynonym>  <!--  -confirmed 1.1  -->
+        <oboInOwl:hasExactSynonym>cataract-intellectual disability-hypogonadism syndrome</oboInOwl:hasExactSynonym>  <!--  -confirmed 1.2   -->
+        <oboInOwl:hasExactSynonym>fake confirmed: lower in Mondo, upper in source</oboInOwl:hasExactSynonym>  <!--  -confirmed 1.1  -->
+        <oboInOwl:hasExactSynonym>fake confirmed: lower in Mondo, upper in source - no xref</oboInOwl:hasExactSynonym>  <!--  -confirmed 1.2   -->
+        <oboInOwl:hasRelatedSynonym>cataract-intellectual disability-hypogonadism</oboInOwl:hasRelatedSynonym>  <!--  -n/a for testing  -->
+        <rdfs:label>Martsolf syndrome 1</rdfs:label>
+    </owl:Class>
+
+    <!-- -updated cases: Synonym exists in Mondo w/ different scope and same case -->
+    <!-- 1. Same casing -->
+    <!-- 1.1. With source attribution    -->
+    <!--   todo?   -->
+    <!-- 1.2. With no source attribution    -->
+
+    <!-- 2. Different casing (e.g. lowercase vs UPPERCASE vs Sentence case) -->
+    <!--  2.1. With source attribution  -->
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_8000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>MARTSOLF syndrome</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>OMIM:212720</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <!--  2.2. With no source attribution  -->
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_8000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>Martsolf syndrome</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Orphanet:1387</oboInOwl:hasDbXref>
+    </owl:Axiom>
+
+
+    <!--  -confirmed cases: Check that case is marked confirmed: When scope + synonym string are same. -->
+    <!--   1. Same casing   -->
+    <!--   1.1 With source attribution   -->
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_8000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>cataract-mental retardation-hypogonadism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>OMIM:212720</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#DEPRECATED"/>
+    </owl:Axiom>
+    <!-- 1.2. With no source attribution (to OMIM:212720)    -->
+    <!--  This exists in Mondo, but have commented it out for purpose of testing "confirmed case 2": confirming where
+    scope and synonym string match, but the source xref does not appear in the evidence. Also want it to be consistent w/ slides:
+    https://docs.google.com/presentation/d/1yqyENGB_lMhWZFGhEEKJ54MAcpEkof_0mDJl8ygMuew/edit#slide=id.g2ecf8e24544_1_0 -->
+    <!--     <owl:Axiom> -->
+    <!--         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_8000008"/> -->
+    <!--         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/> -->
+    <!--         <owl:annotatedTarget>cataract-intellectual disability-hypogonadism</owl:annotatedTarget> -->
+    <!--         <oboInOwl:hasDbXref>OMIM:212720</oboInOwl:hasDbXref> -->
+    <!--     </owl:Axiom> -->
+
+    <!-- 2. Different casing (e.g. lowercase vs UPPERCASE vs Sentence case) -->
+    <!-- 2.1 With source attribution   -->
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_8000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>fake confirmed: lower in Mondo, upper in source</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>OMIM:212720</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#DEPRECATED"/>
+    </owl:Axiom>
+    <!-- 2.2. With no source attribution (to OMIM:212720)    -->
+    <!-- Fakes synonym. no axiom exists in Mondo that needs to be commented out.    -->
+
+
+    <!--  -n/a for testing; this axiom exists on this source term. Just leaving it here.  -->
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_8000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>cataract-intellectual disability-hypogonadism syndrome</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Orphanet:1387</oboInOwl:hasDbXref>
+    </owl:Axiom>
+
+
+    <!-- Test unmapped cases (may have xrefs in mondo.owl, but not in mondo.sssom.tsv)
+     Should not appear in results. -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_999999">
+        <oboInOwl:hasExactSynonym>Unmapped: Synonym exists in 1 source and 1 Mondo term, but no mapping</oboInOwl:hasExactSynonym>  <!--   would be: confirmed   -->
+    </owl:Class>
+
+
+</rdf:RDF>
