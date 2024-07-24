@@ -1,7 +1,6 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
 MONDO:0000275	obsolete monogenic disease	skos:exactMatch	DOID:0050177	monogenic disease	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0000601	obsolete autoimmune disorder of urogenital tract	skos:exactMatch	DOID:0060049	autoimmune disease of urogenital tract	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0000651	obsolete thoracic disorder	skos:exactMatch	DOID:0060118	thoracic disease	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0000742	obsolete persistent generalized lymphadenopathy	skos:exactMatch	DOID:0060314	persistent generalized lymphadenopathy	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0000834	obsolete bone deterioration disease	skos:exactMatch	DOID:0080007	bone deterioration disease	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0000839	obsolete congenital abnormality	skos:exactMatch	DOID:0080015	physical disorder	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
@@ -22,8 +21,8 @@ MONDO:0004268	obsolete subareolar duct papillomatosis	skos:exactMatch	DOID:7533	
 MONDO:0004391	obsolete adult extraosseous chondrosarcoma	skos:exactMatch	DOID:7902	adult extraskeletal myxoid chondrosarcoma	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0004398	mediastinal schwannoma	skos:exactMatch	DOID:7922	obsolete benign mediastinal neurilemmoma	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0005128	obsolete sensory system disease	skos:exactMatch	DOID:0050155	sensory system disease	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0005641	aleutian mink disease	skos:exactMatch	DOID:2934	aleutian mink disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	aleutian mink disease	LEXMATCH
-MONDO:0005676	borna disease	skos:exactMatch	DOID:5154	borna disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	borna disease	LEXMATCH
+MONDO:0005641	aleutian mink disease	skos:exactMatch	DOID:2934	aleutian mink disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	aleutian mink disorder	LEXMATCH
+MONDO:0005676	borna disease	skos:exactMatch	DOID:5154	borna disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	borna disorder	LEXMATCH
 MONDO:0005862	obsolete multiple chemical sensitivity	skos:exactMatch	DOID:4661	multiple chemical sensitivity	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0006466	thyroid gland spindle cell tumor with thymus-like differentiation	skos:exactMatch	DOID:0081461	thyroid gland spindle epithelial tumor with thymus-like elements	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	settle	LEXMATCH
 MONDO:0006466	thyroid gland spindle cell tumor with thymus-like differentiation	skos:exactMatch	DOID:0081461	thyroid gland spindle epithelial tumor with thymus-like elements	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	thyroid gland spindle cell tumor with thymus-like differentiation	LEXMATCH
@@ -45,7 +44,6 @@ MONDO:0014359	pigmented nodular adrenocortical disease, primary, 4	skos:exactMat
 MONDO:0014492	wooly hair-palmoplantar keratoderma syndrome	skos:exactMatch	DOID:0070554	palmoplantar keratoderma and woolly hair	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	omim:616099	LEXMATCH
 MONDO:0014860	polycystic liver disease 2	skos:exactMatch	DOID:0060975	polycystic liver disease 2	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	omim:617004	LEXMATCH
 MONDO:0017841	obsolete autoimmune disease with skin involvement	skos:exactMatch	DOID:0060039	autoimmune disease of skin and connective tissue	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0018251	obsolete glycogen storage disease due to phosphorylase kinase deficiency	skos:exactMatch	DOID:0050594	glycogen storage disease IX	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0020796	Silver-Russell syndrome 1	skos:exactMatch	DOID:14681	Silver-Russell syndrome	semapv:LexicalMatching	oaklib	0.9411764705882353	skos:exactMatch	skos:exactMatch	omim:180860	LEXMATCH
 MONDO:0021199	obsolete disease by anatomical system	skos:exactMatch	DOID:7	disease of anatomical entity	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0021668	obsolete disorder involving pain	skos:exactMatch	DOID:0060164	pain disorder	semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
