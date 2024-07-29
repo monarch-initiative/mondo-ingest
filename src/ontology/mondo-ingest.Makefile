@@ -357,6 +357,7 @@ deploy-mondo-ingest:
 
 
 .PHONY: refresh-mondo-clone
+# Builds tmp/mondo/ and rebuilds mondo.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
 refresh-mondo-clone:
 	cd $(TMPDIR) &&\
 	rm -rf ./mondo/ &&\
@@ -366,7 +367,7 @@ refresh-mondo-clone:
 	latest_hash=$$(git rev-parse origin/master) &&\
 	echo "$$latest_hash" > tmp/mondo_repo_built
 
-# Builds tmp/mondo/ and rebuilds mondo.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
+# Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl and mondo.sssom.tsv, only if mondo repo main branch has new commits
 tmp/mondo_repo_built: .FORCE
 	@if [ ! -f $@ ]; then \
 		$(MAKE) refresh-mondo-clone -B; \
@@ -382,7 +383,6 @@ tmp/mondo_repo_built: .FORCE
 		fi; \
 	fi
 
-# Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl and mondo.sssom.tsv, only if mondo repo main branch has new commits
 
 
 $(TMPDIR)/mondo.owl: tmp/mondo_repo_built
