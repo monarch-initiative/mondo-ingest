@@ -1,8 +1,19 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
+OMIM:301120	prostate cancer, hereditary, X-linked 3	False	False	False
 OMIM:620607	spastic paraplegia 30b, autosomal recessive	False	False	False
+OMIM:620793	muscular dystrophy, limb-girdle, autosomal recessive 29	False	False	False
+OMIM:620851	neurodevelopmental disorder with hypotonia, brain anomalies, distinctive facies, and absent language	False	False	False
 OMIM:620854	neuronopathy, distal hereditary motor, autosomal recessive 11, with spasticity	False	False	False
 OMIM:620869	immunodeficiency 122	False	False	False
 OMIM:620877	deafness, autosomal recessive 125	False	False	False
+OMIM:620880	autoinflammation with arthritis and vasculitis	False	False	False
+OMIM:620887	multiple mitochondrial dysfunctions syndrome 9b	False	False	False
+OMIM:620894	cardiomyopathy, dilated, 2k	False	False	False
+OMIM:620897	ovarian dysgenesis 11	False	False	False
+OMIMPS:105500		False	False	False
+OMIMPS:156850		False	False	False
+OMIMPS:177735	Pseudohypoaldosteronism, type I	False	False	False
+OMIMPS:300000		False	False	False
 OMIM:100500		False	False	True
 OMIM:100680		False	False	True
 OMIM:100735		False	False	True
@@ -403,6 +414,7 @@ OMIM:209750		False	False	True
 OMIM:209930		False	False	True
 OMIM:210300		False	False	True
 OMIM:210450		False	False	True
+OMIM:210730		False	False	True
 OMIM:211170		False	False	True
 OMIM:211410		False	False	True
 OMIM:211420	removed from database	False	False	True
@@ -476,6 +488,7 @@ OMIM:241900		False	False	True
 OMIM:242170		False	False	True
 OMIM:242650		False	False	True
 OMIM:242800	removed from database	False	False	True
+OMIM:242870		False	False	True
 OMIM:243095		False	False	True
 OMIM:243340		False	False	True
 OMIM:244500		False	False	True
@@ -1173,6 +1186,7 @@ OMIM:607133		False	False	True
 OMIM:607142		False	False	True
 OMIM:607148		False	False	True
 OMIM:607195		False	False	True
+OMIM:607236		False	False	True
 OMIM:607266		False	False	True
 OMIM:607302		False	False	True
 OMIM:607316		False	False	True
@@ -1213,6 +1227,7 @@ OMIM:608623		False	False	True
 OMIM:608637		False	False	True
 OMIM:608664		False	False	True
 OMIM:608883		False	False	True
+OMIM:608890		False	False	True
 OMIM:608967		False	False	True
 OMIM:608983		False	False	True
 OMIM:608997		False	False	True
@@ -1994,6 +2009,7 @@ OMIM:131330	PENK	False	True	False
 OMIM:131340	PDYN	False	True	False
 OMIM:131360	ENO2	False	True	False
 OMIM:131370	ENO3	False	True	False
+OMIM:131375	ENO4	False	True	False
 OMIM:131390	NID1	False	True	False
 OMIM:131398	RNASE3	False	True	False
 OMIM:131399	EPX	False	True	False
@@ -8829,7 +8845,7 @@ OMIM:605271	SERPINA10	False	True	False
 OMIM:605272	NDRG2	False	True	False
 OMIM:605273	NDRG3	False	True	False
 OMIM:605276	AATK	False	True	False
-OMIM:605277	GRLF1	False	True	False
+OMIM:605277	ARHGAP35	False	True	False
 OMIM:605278	CES2	False	True	False
 OMIM:605279	CES3	False	True	False
 OMIM:605281	DDX4	False	True	False
@@ -10817,7 +10833,7 @@ OMIM:607709	TJP2	False	True	False
 OMIM:607710	ENTREP1	False	True	False
 OMIM:607711	DIP2A	False	True	False
 OMIM:607712	HIC2	False	True	False
-OMIM:607713	killer-specific secretory protein, 37-kd	False	True	False
+OMIM:607713	FGFBP2	False	True	False
 OMIM:607714	TNIP1	False	True	False
 OMIM:607715	TSC22D1	False	True	False
 OMIM:607716	SYT13	False	True	False
@@ -15941,7 +15957,7 @@ OMIM:615070	MIR590	False	True	False
 OMIM:615076	MGME1	False	True	False
 OMIM:615077	TBC1D30	False	True	False
 OMIM:615078	GOLT1B	False	True	False
-OMIM:615079	ASUN	False	True	False
+OMIM:615079	INTS13	False	True	False
 OMIM:615086	HARBI1	False	True	False
 OMIM:615088	ATG13	False	True	False
 OMIM:615089	ATG101	False	True	False
@@ -18986,6 +19002,22 @@ OMIM:620873	ADGRF3	False	True	False
 OMIM:620874	ADGRF5	False	True	False
 OMIM:620875	FICD	False	True	False
 OMIM:620876	HECTD2	False	True	False
+OMIM:620878	INTS14	False	True	False
+OMIM:620879	FGFBP3	False	True	False
+OMIM:620881	CCER1	False	True	False
+OMIM:620882	SNORC	False	True	False
+OMIM:620883	FER1L5	False	True	False
+OMIM:620884	FER1L6	False	True	False
+OMIM:620885	TRMT61A	False	True	False
+OMIM:620886	TRMT6	False	True	False
+OMIM:620889	FHAD1	False	True	False
+OMIM:620890	GRTP1	False	True	False
+OMIM:620891	CCDC181	False	True	False
+OMIM:620892	CBY3	False	True	False
+OMIM:620893	IPO9	False	True	False
+OMIM:620895	ERICH5	False	True	False
+OMIM:620896	LRRC42	False	True	False
+OMIM:620902	TNRC18	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
@@ -27153,7 +27185,6 @@ OMIMPS:104500	Amelogenesis imperfecta	True	False	False
 OMIMPS:105210	Amyloidosis, hereditary systemic	True	False	False
 OMIMPS:105250	Amyloidosis, primary localized cutaneous	True	False	False
 OMIMPS:105400	Amyotrophic lateral sclerosis	True	False	False
-OMIMPS:105500		True	False	False
 OMIMPS:105550	Frontotemporal dementia and/or amyotrophic lateral sclerosis	True	False	False
 OMIMPS:105650	Diamond-Blackfan anemia	True	False	False
 OMIMPS:105800	Aneurysm, intracranial berry	True	False	False
@@ -27267,7 +27298,6 @@ OMIMPS:154500	Treacher Collins syndrome	True	False	False
 OMIMPS:155600	Melanoma, cutaneous malignant	True	False	False
 OMIMPS:156200	Intellectual developmental disorder, autosomal dominant	True	False	False
 OMIMPS:156610	Skin creases, congenital symmetric circumferential	True	False	False
-OMIMPS:156850		True	False	False
 OMIMPS:157300	Migraine with or without aura, susceptibility to	True	False	False
 OMIMPS:157600	Mirror movements	True	False	False
 OMIMPS:157640	Progressive external ophthalmoplegia with mtDNA deletions	True	False	False
@@ -27319,7 +27349,6 @@ OMIMPS:176400	Precocious puberty, central	True	False	False
 OMIMPS:176670	Progeria	True	False	False
 OMIMPS:177000	Protoporphyria, erythropoietic	True	False	False
 OMIMPS:177200	Liddle syndrome	True	False	False
-OMIMPS:177735	Pseudohypoaldosteronism, type I	True	False	False
 OMIMPS:177900	Psoriasis	True	False	False
 OMIMPS:178110	Contractures, pterygia, and variable skeletal fusions syndrome	True	False	False
 OMIMPS:178600	Pulmonary hypertension, primary (see also hereditary hemorrhagic telangiectasia ({PS187300})	True	False	False
@@ -27527,7 +27556,6 @@ OMIMPS:277450	Vitamin K-dependent clotting factors, combined deficiency of	True	
 OMIMPS:277600	Weill-Marchesani syndrome	True	False	False
 OMIMPS:278000	Lysosomal acid lipase deficiency	True	False	False
 OMIMPS:278300	Xanthinuria	True	False	False
-OMIMPS:300000		True	False	False
 OMIMPS:300009	Dent disease	True	False	False
 OMIMPS:300049	Periventricular nodular heterotopia	True	False	False
 OMIMPS:300291	Ectodermal dysplasia and immune deficiency	True	False	False
@@ -27742,8 +27770,7 @@ OMIM:164891		True	False	True
 OMIM:168850		True	False	True
 OMIM:175020		True	False	True
 OMIM:181515		True	False	True
-OMIM:210730		True	False	True
-OMIM:242870		True	False	True
+OMIM:244850		True	False	True
 OMIM:247440		True	False	True
 OMIM:252700		True	False	True
 OMIM:270710		True	False	True
@@ -27764,9 +27791,7 @@ OMIM:600309		True	False	True
 OMIM:601251		True	False	True
 OMIM:601563		True	False	True
 OMIM:605365		True	False	True
-OMIM:607236		True	False	True
 OMIM:607801		True	False	True
-OMIM:608890		True	False	True
 OMIM:610269		True	False	True
 OMIM:610799		True	False	True
 OMIM:613740		True	False	True
@@ -27960,7 +27985,6 @@ OMIM:130400	electroencephalographic peculiarity: occipital slow beta waves	True	
 OMIM:130700	emphysema, hereditary pulmonary	True	True	False
 OMIM:130710	emphysema, congenital lobar	True	True	False
 OMIM:130950	encephalopathy, recurrent, of childhood	True	True	False
-OMIM:131375	ENO4	True	True	False
 OMIM:131430	eosinophilopenia	True	True	False
 OMIM:131450	epiblepharon of lower 51d	True	True	False
 OMIM:131460	epiblepharon of upper 51d	True	True	False
@@ -28706,7 +28730,6 @@ OMIM:243450	isovaleric acid, inability to smell	True	True	False
 OMIM:244100	jumping frenchmen of maine	True	True	False
 OMIM:244510	keratoconus and congenital hip dysplasia	True	True	False
 OMIM:244600	keratoconus posticus circumscriptus	True	True	False
-OMIM:244850	palmoplantar keratoderma, norrbotten recessive type	True	True	False
 OMIM:245160	kniest-like dysplasia with pursed lips and ectopia lentis	True	True	False
 OMIM:245180	kifafa seizure disorder	True	True	False
 OMIM:245190	kniest-like dysplasia, lethal	True	True	False
