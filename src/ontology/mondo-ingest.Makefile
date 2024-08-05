@@ -594,7 +594,8 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 ## Externally managed content ####
 ##################################
 # General
-update-externally-managed-content: external-content-nord external-content-nando external-content-ordo external-content-omim
+update-externally-managed-content: external-content-nord external-content-nando external-content-ordo external-content-omim \
+	external-content-efo external-content-clingen external-content-medgen
 
 EXTERNAL_CONTENT_DIR=external
 
@@ -660,6 +661,36 @@ $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sss
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/sssom_to_robot_template.py --inpath $< --outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
+
+# OTAR / EFO
+.PHONY: external-content-efo
+external-content-efo: $(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.owl $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.owl
+
+$(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.tsv:
+	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-efo.robot.tsv" -O $@
+
+$(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv:
+	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-otar-subset.robot.tsv" -O $@
+
+# MedGen
+
+.PHONY: external-content-medgen
+external-content-medgen: $(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.owl
+
+$(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv:
+	wget "https://github.com/monarch-initiative/medgen/releases/latest/download/medgen-xrefs.robot.template.tsv" -O $@
+
+# ClinGen
+
+.PHONY: external-content-clingen
+external-content-clingen: $(EXTERNAL_CONTENT_DIR)/mondo-clingen.robot.owl
+
+# Managed in Google Sheets:
+# https://docs.google.com/spreadsheets/d/1JAgySABpRkmXl-8lu5Yrxd9yjTGNbH8aoDcMlHqpssQ/edit?gid=637121472#gid=637121472
+
+$(EXTERNAL_CONTENT_DIR)/mondo-clingen.robot.tsv:
+	wget "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiYDV1n1nDuJOgnlFx6DsYGyIGlbgI1HeDzI740OgmOKYy2RCCyBqLHiBh-IMadYXjVglsxDPypArh/pub?gid=637121472&single=true&output=tsv" -O $@
+
 
 #############################
 ######### Analysis ##########
