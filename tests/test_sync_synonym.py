@@ -47,6 +47,7 @@ OUT_DIR = TEST_DIR / 'output'
 INPUT_MONDO_DB = IN_DIR / 'test_mondo.db'  # create via: sh run.sh make ../../tests/input/sync_synonym/test_mondo.db
 INPUT_SOURCE_DB = IN_DIR / 'test_omim.db'  # create via: sh run.sh make ../../tests/input/sync_synonym/test_omim.db
 INPUT_MONDO_SYNONYMS = IN_DIR / 'mondo-synonyms-scope-type-xref.tsv'  # create via: sh run.sh make ../../tests/input/sync_synonym/mondo-synonyms-scope-type-xref.tsv
+INPUT_EXCLUDED_SYNONYMS = IN_DIR / 'mondo-excluded-synonyms.tsv'
 INPUT_MAPPINGS = IN_DIR / 'test_mondo.sssom.tsv'
 INPUT_SOURCE_METADATA = META_DIR / 'omim.yml'
 OUTPUT_ADDED = OUT_DIR / 'omim.synonyms.added.robot.tsv'
@@ -70,6 +71,7 @@ class TestSyncSynonyms(unittest.TestCase):
         sync_synonyms(
             ontology_db_path=INPUT_SOURCE_DB,
             mondo_synonyms_path=INPUT_MONDO_SYNONYMS,
+            excluded_synonyms_path=INPUT_EXCLUDED_SYNONYMS,
             mondo_mappings_path=INPUT_MAPPINGS,
             onto_config_path=INPUT_SOURCE_METADATA,
             outpath_added=OUTPUT_ADDED,
@@ -147,7 +149,8 @@ class TestSyncSynonyms(unittest.TestCase):
         for case in cases:
             self._assert_only_in_correct_template(case, template)
         results: pd.DataFrame = self.df_lookup[template]
-        self.assertEqual(len(cases), len(results), f'Got a different number of rows in template: {template}.')
+        # -1 accounts for the ROBOT subheader
+        self.assertEqual(len(cases), len(results) - 1, f'Got a different number of rows in template: {template}.')
 
     def test_deleted(self):
         """Check that case is marked deleted: Scope + synonym exists in Mondo w/, but it's not in the source ."""
