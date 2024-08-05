@@ -1,1 +1,4 @@
-mondo_id	mondo_label	source_id	source_label	synonym_scope	synonym	synonym_type
+mondo_id	mondo_label	synonym_scope	synonym_scope_mondo	synonym	synonym_exact	synonym_broad	synonym_narrow	synonym_related	source_id	source_label	synonym_type	mondo_evidence	case
+ID					A oboInOwl:hasExactSynonym	A oboInOwl:hasBroadSynonym	A oboInOwl:hasNarrowSynonym	A oboInOwl:hasRelatedSynonym	>A oboInOwl:hasDbXref		>AI oboInOwl:hasSynonymType		
+MONDO:0005027	epilepsy	oio:hasExactSynonym		epilepsy	epilepsy				ICD10WHO:G40	Epilepsy	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL		
+MONDO:0007950	mastocytosis	oio:hasExactSynonym		mastocytosis	mastocytosis				ICD10WHO:Q82.2	Mastocytosis			
