@@ -374,21 +374,25 @@ tmp/mondo_repo_built:
 		rm -rf ./mondo/ &&\
 		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
 		cd mondo/src/ontology &&\
-		make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
+		make mondo.owl mappings mondo-edit.owl -B MIR=false IMP=false MIR=false &&\
 		latest_hash=$$(git rev-parse origin/master) &&\
 		echo "$$latest_hash" > $@ &&\
-		cp $@ mappings/mondo.sssom.tsv mondo.owl ../../../; fi
+		cp $@ mappings/mondo.sssom.tsv mondo.owl mondo-edit.owl ../../../; fi
 
 # Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl and mondo.sssom.tsv, only if mondo repo main branch has new commits
+# TODO temp remove echos after
 .PHONY: refresh-mondo-clone
 refresh-mondo-clone:
 	@if [ ! -d tmp/mondo ]; then \
 		$(MAKE) tmp/mondo_repo_built -B; \
 	else \
+		echo 1; \
 		current_hash=$$(cat tmp/mondo_repo_built); \
 		cd tmp/mondo; \
 		git fetch origin; \
 		latest_hash=$$(git rev-parse origin/master); \
+		echo $$current_hash; \
+		echo $$latest_hash; \
 		if [ ! "$$current_hash" = "$$latest_hash" ]; then \
 			cd .. && mv mondo mondo-bak && mv mondo_repo_built mondo_repo_built-bak; \
 			cd .. && $(MAKE) tmp/mondo_repo_built -B; \
@@ -401,6 +405,9 @@ up-to-date-mondo.sssom.tsv: refresh-mondo-clone
 
 .PHONY: up-to-date-mondo.owl
 up-to-date-mondo.owl: refresh-mondo-clone
+
+.PHONY: up-to-date-mondo-edit.owl
+up-to-date-mondo-edit.owl: refresh-mondo-clone
 
 reports/mirror_signature-mondo.tsv:
 	$(MAKE) up-to-date-mondo.owl
@@ -555,8 +562,10 @@ slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
 #############################
 ###### Synchronization ######
 #############################
+# TODO: add the latter part back
 .PHONY: sync
-sync: sync-subclassof sync-synonyms
+#sync: sync-subclassof sync-synonyms
+sync: sync-subclassof
 
 .PHONY: sync-subclassof
 sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
@@ -595,8 +604,14 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 sync-synonyms: $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
 #sync-synonyms: $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.deleted.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
 
-tmp/mondo-synonyms-scope-type-xref.tsv: tmp/mondo.owl
-	$(ROBOT) query -i $< --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
+# TODO: add back commented out
+# todo?: consider changing back to mondo.owl
+tmp/mondo-synonyms-scope-type-xref.tsv:
+#	$(MAKE) up-to-date-mondo-edit.owl
+	$(ROBOT) query -i tmp/mondo-edit.owl --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
+
+tmp/mondo-excluded-synonyms.tsv:
+	$(ROBOT) query -i tmp/mondo-edit.owl --query ../sparql/mondo-excluded-synonyms.sparql $@
 
 ../../tests/input/sync_synonym/mondo-synonyms-scope-type-xref.tsv: ../../tests/input/sync_synonym/test_mondo.owl
 	$(ROBOT) query -i $< --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
@@ -621,12 +636,13 @@ $(REPORTDIR)/sync-synonyms.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(RE
 $(REPORTDIR)/sync-synonyms.updated.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.updated.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.updated.robot.tsv > $@
 
-$(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.tsv $(REPORTDIR)/%-synonyms.deleted.robot.tsv $(REPORTDIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv
+$(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.tsv $(REPORTDIR)/%-synonyms.deleted.robot.tsv $(REPORTDIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/mondo-excluded-synonyms.tsv
 	$(MAKE) up-to-date-mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
 	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
 	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
+	--excluded-synonyms-path tmp/mondo-excluded-synonyms.tsv \
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(REPORTDIR)/$*.synonyms.added.robot.tsv \
 	--outpath-confirmed $(REPORTDIR)/$*.synonyms.confirmed.robot.tsv \

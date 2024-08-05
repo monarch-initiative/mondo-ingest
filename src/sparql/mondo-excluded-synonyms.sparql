@@ -1,0 +1,23 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX MONDO: <http://purl.obolibrary.org/obo/MONDO_>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX oio: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT
+  ?mondo_id ?synonym ?hasDbXref_xref ?source_xref
+WHERE {
+  ?class a owl:Class ;
+    MONDO:excluded_synonym ?synonym .
+
+  OPTIONAL {
+    ?axiom owl:annotatedSource ?class ;
+       owl:annotatedProperty MONDO:excluded_synonym ;
+       owl:annotatedTarget ?synonym .
+
+    OPTIONAL { ?axiom oboInOwl:hasDbXref ?hasDbXref_xref }
+    OPTIONAL { ?axiom oboInOwl:source ?source_xref }
+  }
+
+  BIND(REPLACE(STR(?class), "http://purl.obolibrary.org/obo/MONDO_", "MONDO:") AS ?mondo_id)
+}

@@ -18,18 +18,23 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from src.scripts.utils import PREFIX_MAP, get_owned_prefix_map
 
 
-# todo: when dirty_df no longer necessary, remove 'case' from these
+# todo: when combined_cases_df no longer necessary, remove 'case'
 HEADERS_TO_ROBOT_SUBHEADERS = {
     'mondo_id': 'ID',
     'mondo_label': '',
-    'synonym_scope': 'AI',  # todo next impt: pred  - 'A' correct? AI?
-    'synonym': '',  # todo: obj of 'scope' ow?
-    'source_id': '>A oboInOwl:source',  # todo axiom  # todo question: This is how we annotate source CURIEs. but isn't a CURIE similar to an IRI, so why isn't it 'AI' insead of just 'A'?
+    'synonym_scope': '',
+    'synonym_scope_mondo': '',
+    'synonym': '',
+    'synonym_exact': 'A oboInOwl:hasExactSynonym',
+    'synonym_broad': 'A oboInOwl:hasBroadSynonym',
+    'synonym_narrow': 'A oboInOwl:hasNarrowSynonym',
+    'synonym_related': 'A oboInOwl:hasRelatedSynonym',
+    'source_id': '>A oboInOwl:hasDbXref',
     'source_label': '',
-    'synonym_type': '',
+    'synonym_type': '>AI oboInOwl:hasSynonymType',
     'mondo_evidence': '',
     'case': '',
-    'synonym_scope_mondo': '',
+
 }
 SORT_COLS = ['case', 'mondo_id', 'source_id', 'synonym_scope', 'synonym_type', 'synonym']
 
@@ -51,15 +56,24 @@ def _query_synonyms(ids: List[CURIE], db: SqlImplementation) -> pd.DataFrame:
 
 def _format_and_save(
     df: pd.DataFrame, outpath: Union[Path, str], order_cols: List[str] = list(HEADERS_TO_ROBOT_SUBHEADERS.keys()),
-        sort_cols: List[str] = SORT_COLS,
-    save=True
+    sort_cols: List[str] = SORT_COLS, save=True
 ) -> pd.DataFrame:
-    """Format column order and sorting, drop any superfluous columns, and optionally save to file."""
+    """Add columns, format column order and sorting, drop any superfluous columns, and optionally save to file."""
+    # Add ROBOT columns for each synonym scope
+    synonym_scopes = ['Exact', 'Broad', 'Narrow', 'Related']
+    for scope in synonym_scopes:
+        preds = [f'oboInOwl:has{scope}Synonym', f'oio:has{scope}Synonym']
+        df['synonym_' + scope.lower()] = df.apply(
+            lambda row: row['synonym'] if row['synonym_scope'] in preds else '', axis=1)
+
+    # Order & sorting
     order_cols = [x for x in order_cols if x in df.columns]
     sort_cols = [x for x in sort_cols if x in df.columns]
     df = df[order_cols].sort_values(by=sort_cols)
+    # Save & return
     if save:
-        df.to_csv(outpath, sep='\t', index=False)
+        df2 = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), df])
+        df2.to_csv(outpath, sep='\t', index=False)
     return df
 
 
@@ -85,10 +99,10 @@ def _filter_a_by_not_in_b(
 
 
 def sync_synonyms(
-    ontology_db_path: Union[Path, str], mondo_synonyms_path: Union[Path, str], mondo_mappings_path: Union[Path, str],
-    onto_config_path: Union[Path, str], outpath_added: Union[Path, str], outpath_confirmed: Union[Path, str],
-    outpath_deleted: Union[Path, str], outpath_updated: Union[Path, str], deactivate_deleted=True,
-    combined_outpath_template_str = 'tmp/synonym_sync_combined_cases_{}.tsv'
+    ontology_db_path: Union[Path, str], mondo_synonyms_path: Union[Path, str], excluded_synonyms_path: Union[Path, str],
+    mondo_mappings_path: Union[Path, str], onto_config_path: Union[Path, str], outpath_added: Union[Path, str],
+    outpath_confirmed: Union[Path, str], outpath_deleted: Union[Path, str], outpath_updated: Union[Path, str],
+    deactivate_deleted=True, combined_outpath_template_str = 'tmp/synonym_sync_combined_cases_{}.tsv'
 ):
     """Create outputs for syncing synonyms between Mondo and its sources.
 
@@ -131,8 +145,8 @@ def sync_synonyms(
     # - filter obsoletes (from mappings_df --> source_df & mondo_df)
     #  - filter obsoleted in Mondo
     mappings_df = mappings_df[~mappings_df['mondo_label'].str.startswith('obsolete')]
-    # Todo: obsoletes/deleted filtering correct?
-    #  I feel like this way might be wrong. this is probably too early / not the correct place to be filtering
+    # todo: obsoletes/deleted filtering correct? test?
+    #  I feel like this way might be wrong. is this too early / not the right place to filter obsoletes?
     #  - filter obsoleted in source
     source_obsoletes: Set[CURIE] = set([x for x in source_db.obsoletes()])
     mappings_df = mappings_df[~mappings_df['source_id'].isin(source_obsoletes)]
@@ -158,12 +172,15 @@ def sync_synonyms(
     source_df['source_label'] = source_df['source_id'].map(source_labels)
 
     # Query synonyms: Mondo
-    mondo_df = pd.read_csv(mondo_synonyms_path, sep='\t').rename(columns={'?dbXref': 'source_id'}).fillna('')
-    mondo_df['source_id'] = mondo_df['source_id'].apply(lambda x: x.replace('https://orcid.org/', 'ORCID:'))
+    mondo_df = pd.read_csv(mondo_synonyms_path, sep='\t').rename(columns={'?dbXref': 'source_id'}).fillna('')\
+        .rename(columns=lambda x: x.lstrip('?'))
     mondo_df['synonym_lower'] = mondo_df['synonym'].str.lower()
-    # - URI -> CURIEs
     # todo: utilize curies package; handle more cases
-    mondo_df['source_id'] = mondo_df['source_id'].apply(lambda x: x.split('/')[-1] if x else '')
+    # - URI -> CURIE
+    mondo_df['source_id'] = mondo_df['source_id'].apply(lambda x: x.replace('https://orcid.org/', 'ORCID:'))
+    # - CURIE -> URI
+    mondo_df['synonym_type'] = mondo_df['synonym_type'].apply(
+        lambda x: x.replace('MONDO:', 'http://purl.obolibrary.org/obo/mondo#'))
     # - add evidence column
     mondo_evidence_lookup: Dict[Tuple, List[str]] = mondo_df.groupby(
         ['mondo_id', 'synonym_scope', 'synonym'])['source_id'].agg(list).to_dict()
@@ -214,8 +231,8 @@ def sync_synonyms(
     #  Cases where synonym exists in Mondo term, but not in mapped source term
     deleted_df = pd.DataFrame()
     # todo: reactivate when ready.
-    #  - depends on more than just 1 source not having synonym. it must (i) exist on no mapped source terms, and (ii) have
-    #  no other qualifying evidence (I think just: ORCID & MONDO;notVerified),
+    #  - depends on more than just 1 source not having synonym. it must (i) exist on no mapped source terms, and (ii)
+    #  have no other qualifying evidence (I think just: ORCID & MONDO;notVerified),
     #  - considerations: what role source_id plays in this logic. this may be outdated
     #  - ensure has labels
     # todo: do 100% of mondo and source terms in here have labels? I think they should.
@@ -223,19 +240,20 @@ def sync_synonyms(
         # todo: i think this implementation is outdated post source_id refactor
         deleted_df = mondo_df.merge(
             source_df, on=['synonym_scope', 'synonym_lower'], how='left', indicator=True)
-        deleted_df = deleted_df[deleted_df['_merge'] == 'left_only'].drop('_merge', axis=1)  # also can do via mondo_id=nan
+        deleted_df = deleted_df[deleted_df['_merge'] == 'left_only'].drop('_merge', axis=1)  # also can do: mondo_id=nan
         deleted_df = _filter_a_by_not_in_b(deleted_df, updated_df, ['mondo_id', 'source_id', 'synonym_lower'])
         deleted_df = _format_and_save(deleted_df, outpath_deleted)
         deleted_df['case'] = 'deleted'
 
     # Write outputs
-    # todo: temp: dirty_df: combine all cases for analysis during development
+    # todo: temp: combined_cases_df: combine all cases for analysis during development
     if combined_outpath_template_str:
-        dirty_df = pd.concat([confirmed_df, added_df, updated_df, deleted_df], ignore_index=True)
-        dirty_outpath = str(combined_outpath_template_str).format(source_name)
-        dirty_df = _format_and_save(dirty_df, dirty_outpath)
-        dirty_df['source_ontology'] = source_name
-        dirty_df.to_csv(dirty_outpath, sep='\t', index=False)
+        combined_cases_df = pd.concat([confirmed_df, added_df, updated_df, deleted_df], ignore_index=True)
+        combined_cases_outpath = str(combined_outpath_template_str).format(source_name)
+        combined_cases_df = _format_and_save(combined_cases_df, combined_cases_outpath)
+        combined_cases_df = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), combined_cases_df])
+        combined_cases_df['source_ontology'] = source_name
+        combined_cases_df.to_csv(combined_cases_outpath, sep='\t', index=False)
 
 
 def cli():
@@ -244,11 +262,15 @@ def cli():
         prog='sync-synonyms',
         description='Create outputs for syncing synonyms between Mondo and its sources.')
     parser.add_argument(
-        '-o', '--ontology-db-path', required=False,
+        '-o', '--ontology-db-path', required=True,
         help='Path to SemanticSQL sqlite `.db` file for the given source ontology.')
     parser.add_argument(
-        '-m', '--mondo-synonyms-path', required=False,
+        '-m', '--mondo-synonyms-path', required=True,
         help='Path to a TSV with the columns: ?mondo_id, ?dbXref, ?synonym_scope, ?synonym, synonym_type.')
+    parser.add_argument(
+        '-e', '--excluded-synonyms-path', required=True,
+        help='Path to a TSV with all synonyms marked as excluded in Mondo. Has columns: ?mondo_id ?synonym '
+             '?hasDbXref_xref ?source_xref.')
     parser.add_argument(
         '-s', '--mondo-mappings-path', required=True,
         help='Path to file containing all known Mondo mappings, in SSSOM format.')

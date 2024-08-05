@@ -147,7 +147,8 @@ class TestSyncSynonyms(unittest.TestCase):
         for case in cases:
             self._assert_only_in_correct_template(case, template)
         results: pd.DataFrame = self.df_lookup[template]
-        self.assertEqual(len(cases), len(results), f'Got a different number of rows in template: {template}.')
+        # -1 accounts for the ROBOT subheader
+        self.assertEqual(len(cases), len(results) - 1, f'Got a different number of rows in template: {template}.')
 
     def test_deleted(self):
         """Check that case is marked deleted: Scope + synonym exists in Mondo w/, but it's not in the source ."""
