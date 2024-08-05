@@ -373,19 +373,21 @@ USE_MONDO_RELEASE=false
 
 # Builds tmp/mondo/ and rebuilds mondo.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
 tmp/mondo_repo_built:
+	git config --global --add safe.directory /work/src/ontology/tmp/mondo
 	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
 		rm -rf ./mondo/ &&\
 		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
 		cd mondo/src/ontology &&\
-		make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
+		make mondo.owl mappings mondo-edit.owl -B MIR=false IMP=false MIR=false &&\
 		latest_hash=$$(git rev-parse origin/master) &&\
 		echo "$$latest_hash" > $@ &&\
-		cp $@ mappings/mondo.sssom.tsv mondo.owl ../../../; fi
+		cp $@ mappings/mondo.sssom.tsv mondo.owl mondo-edit.owl ../../../; fi
 
 # Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl and mondo.sssom.tsv, only if mondo repo main branch has new commits
 .PHONY: refresh-mondo-clone
 refresh-mondo-clone:
-	@if [ ! -d tmp/mondo ]; then \
+	git config --global --add safe.directory /work/src/ontology/tmp/mondo
+	if [ ! -d tmp/mondo ]; then \
 		$(MAKE) tmp/mondo_repo_built -B; \
 	else \
 		current_hash=$$(cat tmp/mondo_repo_built); \
@@ -404,6 +406,9 @@ up-to-date-mondo.sssom.tsv: refresh-mondo-clone
 
 .PHONY: up-to-date-mondo.owl
 up-to-date-mondo.owl: refresh-mondo-clone
+
+.PHONY: up-to-date-mondo-edit.owl
+up-to-date-mondo-edit.owl: refresh-mondo-clone
 
 reports/mirror_signature-mondo.tsv:
 	$(MAKE) up-to-date-mondo.owl
@@ -593,23 +598,29 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml
 
-# todo: -deleted case to be added (prereq here & goal below)
+# todo: -deleted case to be added eventually
+# todo: when done with development, remove 'tmp/synonym_sync_combined_cases.tsv' and replace goal below
 .PHONY: sync-synonyms
-sync-synonyms: $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
-#sync-synonyms: $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.deleted.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
+sync-synonyms: tmp/synonym_sync_combined_cases.tsv
+#sync-synonyms: $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
 
-tmp/mondo-synonyms-scope-type-xref.tsv: tmp/mondo.owl
-	$(ROBOT) query -i $< --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
+tmp/mondo-synonyms-scope-type-xref.tsv:
+	$(MAKE) up-to-date-mondo.owl
+	$(ROBOT) query -i tmp/mondo-edit.owl --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
 
 ../../tests/input/sync_synonym/mondo-synonyms-scope-type-xref.tsv: ../../tests/input/sync_synonym/test_mondo.owl
 	$(ROBOT) query -i $< --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
 
+tmp/mondo-excluded-synonyms.tsv:
+	$(MAKE) up-to-date-mondo-edit.owl
+	$(ROBOT) query -i tmp/mondo-edit.owl --query ../sparql/mondo-excluded-synonyms.sparql $@
+
 # todo: temp output for analysis during development
 INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
 tmp/synonym_sync_combined_cases.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.added.robot.tsv)
-	@head -n 1 $(firstword $(INPUT_FILES)) > $@
+	@head -n 2 $(firstword $(INPUT_FILES)) > $@
 	@for file in $(INPUT_FILES); do \
-		tail -n +2 $$file >> $@; \
+		tail -n +3 $$file >> $@; \
 	done
 
 $(REPORTDIR)/sync-synonyms.added.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.added.robot.tsv)
@@ -618,18 +629,16 @@ $(REPORTDIR)/sync-synonyms.added.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORT
 $(REPORTDIR)/sync-synonyms.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.confirmed.robot.tsv > $@
 
-#$(REPORTDIR)/sync-synonyms.deleted.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.deleted.robot.tsv)
-#	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.deleted.robot.tsv > $@
-
 $(REPORTDIR)/sync-synonyms.updated.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.updated.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.updated.robot.tsv > $@
 
-$(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.tsv $(REPORTDIR)/%-synonyms.deleted.robot.tsv $(REPORTDIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv
+$(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.tsv $(REPORTDIR)/%-synonyms.deleted.robot.tsv $(REPORTDIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/mondo-excluded-synonyms.tsv
 	$(MAKE) up-to-date-mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
 	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
 	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
+	--excluded-synonyms-path tmp/mondo-excluded-synonyms.tsv \
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(REPORTDIR)/$*.synonyms.added.robot.tsv \
 	--outpath-confirmed $(REPORTDIR)/$*.synonyms.confirmed.robot.tsv \

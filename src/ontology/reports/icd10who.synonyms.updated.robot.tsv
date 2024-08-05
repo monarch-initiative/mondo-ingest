@@ -1,1 +1,3 @@
-mondo_id	mondo_label	source_id	source_label	synonym_scope	synonym	synonym_type	mondo_evidence	synonym_scope_mondo
+mondo_id	mondo_label	synonym_scope	synonym_scope_mondo	synonym	synonym_exact	synonym_broad	synonym_narrow	synonym_related	source_id	source_label	synonym_type	mondo_evidence	case
+ID					A oboInOwl:hasExactSynonym	A oboInOwl:hasBroadSynonym	A oboInOwl:hasNarrowSynonym	A oboInOwl:hasRelatedSynonym	>A oboInOwl:hasDbXref		>AI oboInOwl:hasSynonymType		
+MONDO:0004985	bipolar disorder	oio:hasExactSynonym	oio:hasRelatedSynonym	bipolar affective disorder	bipolar affective disorder				ICD10WHO:F31	Bipolar affective disorder			

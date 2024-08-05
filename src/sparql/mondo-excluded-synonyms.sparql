@@ -1,0 +1,24 @@
+# todo: before Jan 2025 if not sooner, this will only need to query for oboInOwl:source
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX mondo_prop: <http://purl.obolibrary.org/obo/mondo#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX oio: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT
+  ?mondo_id ?synonym ?hasDbXref_xref ?source_xref
+WHERE {
+  ?class a owl:Class ;
+    mondo_prop:excluded_synonym ?synonym .
+
+  OPTIONAL {
+    ?axiom owl:annotatedSource ?class ;
+       owl:annotatedProperty mondo_prop:excluded_synonym ;
+       owl:annotatedTarget ?synonym .
+
+    OPTIONAL { ?axiom oboInOwl:hasDbXref ?hasDbXref_xref }
+    OPTIONAL { ?axiom oboInOwl:source ?source_xref }
+  }
+
+  BIND(REPLACE(STR(?class), "http://purl.obolibrary.org/obo/MONDO_", "MONDO:") AS ?mondo_id)
+}
