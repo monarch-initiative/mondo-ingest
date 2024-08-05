@@ -664,13 +664,18 @@ $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sss
 
 # OTAR / EFO
 .PHONY: external-content-efo
-external-content-efo: $(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.owl $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.owl
+external-content-efo: $(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.owl $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.owl $(EXTERNAL_CONTENT_DIR)/efo-proxy-merges.robot.owl
 
 $(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.tsv:
 	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-efo.robot.tsv" -O $@
 
 $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv:
 	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-otar-subset.robot.tsv" -O $@
+
+# Unfortunately, @matentzn cant find the orginal TSV file, but it is highly unlikely this file will ever change.
+
+$(EXTERNAL_CONTENT_DIR)/efo-proxy-merges.robot.owl:
+	echo "WARNING: $@" is currently manually curated!"
 
 # MedGen
 
