@@ -13,6 +13,7 @@ semantic.cache/
 *.tmp.owl
 *.tmp.json
 *.db
+!/tests/input/*.db
 .vscode/*
 
 # - static
@@ -109,7 +110,8 @@ src/scripts/.ipynb_checkpoints/*
 src/scripts/mondo_unmapped.tsv
 
 # Test
-tests/output/
+tests/output/*
+!tests/output/.gitkeep
 src/scripts/dataframes/*
 src/ontology/reports/gard.subclass.added-obsolete.robot.tsv
 src/ontology/reports/gard.subclass.added.robot.tsv
