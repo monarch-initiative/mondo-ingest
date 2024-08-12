@@ -1,0 +1,32 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX oio: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT
+  ?cls_id ?dbXref ?synonym_scope ?synonym ?synonym_type
+WHERE {
+  ?cls a owl:Class ;
+    ?synonymPropertyUri ?synonym .
+
+  OPTIONAL {
+    ?axiom owl:annotatedSource ?cls ;
+       owl:annotatedProperty ?synonymPropertyUri ;
+       owl:annotatedTarget ?synonym .
+
+    OPTIONAL { ?axiom oboInOwl:hasDbXref ?dbXref }
+    OPTIONAL { ?axiom oboInOwl:hasSynonymType ?synonymTypeUri }
+  }
+
+  FILTER(?synonymPropertyUri IN (
+    oboInOwl:hasExactSynonym,
+    oboInOwl:hasBroadSynonym,
+    oboInOwl:hasNarrowSynonym,
+    oboInOwl:hasRelatedSynonym
+  ))
+
+  BIND(REPLACE(STR(?cls), "http://purl.obolibrary.org/obo/MONDO_", "MONDO:") AS ?cls_id)
+  BIND(REPLACE(STR(?synonymTypeUri), "http://purl.obolibrary.org/obo/mondo#", "MONDO:") AS ?synonym_type)
+  # OAK uses oio, so we're doing that here for consistency because we'll be comparing this with OAK output.
+  BIND(REPLACE(STR(?synonymPropertyUri), "http://www.geneontology.org/formats/oboInOwl#", "oio:") AS ?synonym_scope)
+}

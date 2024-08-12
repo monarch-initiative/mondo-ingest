@@ -566,6 +566,7 @@ slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
 .PHONY: sync
 sync: sync-subclassof sync-synonyms
 
+# Synchronization: SubclassOf
 .PHONY: sync-subclassof
 sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
 
@@ -598,24 +599,26 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml
 
+# Synchronization: Synonyms
 # todo: -deleted case to be added eventually
-# todo: when done with development, remove 'tmp/synonym_sync_combined_cases.tsv' and replace goal below
 .PHONY: sync-synonyms
-sync-synonyms: tmp/synonym_sync_combined_cases.tsv
-#sync-synonyms: $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
+sync-synonyms: tmp/synonym_sync_combined_cases.tsv $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
 
 tmp/mondo-synonyms-scope-type-xref.tsv:
 	$(MAKE) up-to-date-mondo.owl
-	$(ROBOT) query -i tmp/mondo-edit.owl --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
+	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
-../../tests/input/sync_synonym/mondo-synonyms-scope-type-xref.tsv: ../../tests/input/sync_synonym/test_mondo.owl
-	$(ROBOT) query -i $< --query ../sparql/mondo-synonyms-scope-type-xref.sparql $@
+tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
+	$(ROBOT) query -i $(COMPONENTSDIR)/$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
+
+../../tests/input/sync_synonym/%-synonyms-scope-type-xref.tsv:
+	$(ROBOT) query -i ../../tests/input/sync_synonym/test_$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
 tmp/mondo-excluded-synonyms.tsv:
 	$(MAKE) up-to-date-mondo-edit.owl
 	$(ROBOT) query -i tmp/mondo-edit.owl --query ../sparql/mondo-excluded-synonyms.sparql $@
 
-# todo: temp output for analysis during development
+# todo: temp output for analysis during development; at the end, remove it and its usages
 INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
 tmp/synonym_sync_combined_cases.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.added.robot.tsv)
 	@head -n 2 $(firstword $(INPUT_FILES)) > $@
@@ -632,13 +635,14 @@ $(REPORTDIR)/sync-synonyms.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(RE
 $(REPORTDIR)/sync-synonyms.updated.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.updated.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.updated.robot.tsv > $@
 
-$(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.tsv $(REPORTDIR)/%-synonyms.deleted.robot.tsv $(REPORTDIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/mondo-excluded-synonyms.tsv
+$(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.tsv $(REPORTDIR)/%-synonyms.deleted.robot.tsv $(REPORTDIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/mondo-excluded-synonyms.tsv tmp/%-synonyms-scope-type-xref.tsv
 	$(MAKE) up-to-date-mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
 	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
 	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
-	--excluded-synonyms-path tmp/mondo-excluded-synonyms.tsv \
+	--mondo-excluded-synonyms-path tmp/mondo-excluded-synonyms.tsv \
+	--onto-synonyms-path tmp/$*-synonyms-scope-type-xref.tsv \
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(REPORTDIR)/$*.synonyms.added.robot.tsv \
 	--outpath-confirmed $(REPORTDIR)/$*.synonyms.confirmed.robot.tsv \

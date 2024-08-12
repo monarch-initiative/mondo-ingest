@@ -47,6 +47,7 @@ OUT_DIR = TEST_DIR / 'output'
 INPUT_MONDO_DB = IN_DIR / 'test_mondo.db'  # create via: sh run.sh make ../../tests/input/sync_synonym/test_mondo.db
 INPUT_SOURCE_DB = IN_DIR / 'test_omim.db'  # create via: sh run.sh make ../../tests/input/sync_synonym/test_omim.db
 INPUT_MONDO_SYNONYMS = IN_DIR / 'mondo-synonyms-scope-type-xref.tsv'  # create via: sh run.sh make ../../tests/input/sync_synonym/mondo-synonyms-scope-type-xref.tsv
+INPUT_ONTO_SYNONYMS = IN_DIR / 'omim-synonyms-scope-type-xref.tsv'  # create via: sh run.sh make ../../tests/input/sync_synonym/omim-synonyms-scope-type-xref.tsv
 INPUT_EXCLUDED_SYNONYMS = IN_DIR / 'mondo-excluded-synonyms.tsv'
 INPUT_MAPPINGS = IN_DIR / 'test_mondo.sssom.tsv'
 INPUT_SOURCE_METADATA = META_DIR / 'omim.yml'
@@ -71,8 +72,9 @@ class TestSyncSynonyms(unittest.TestCase):
         sync_synonyms(
             ontology_db_path=INPUT_SOURCE_DB,
             mondo_synonyms_path=INPUT_MONDO_SYNONYMS,
-            excluded_synonyms_path=INPUT_EXCLUDED_SYNONYMS,
+            mondo_excluded_synonyms_path=INPUT_EXCLUDED_SYNONYMS,
             mondo_mappings_path=INPUT_MAPPINGS,
+            onto_synonyms_path=INPUT_ONTO_SYNONYMS,
             onto_config_path=INPUT_SOURCE_METADATA,
             outpath_added=OUTPUT_ADDED,
             outpath_confirmed=OUTPUT_CONFIRMED,
