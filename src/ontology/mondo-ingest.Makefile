@@ -376,7 +376,6 @@ tmp/mondo_repo_built:
 	git config --global --add safe.directory /work/src/ontology/tmp/mondo
 	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
 		rm -rf ./mondo/ &&\
-		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
 		cd mondo/src/ontology &&\
 		make mondo.owl mappings mondo-edit.owl -B MIR=false IMP=false MIR=false &&\
 		latest_hash=$$(git rev-parse origin/master) &&\
@@ -392,7 +391,6 @@ refresh-mondo-clone:
 	else \
 		current_hash=$$(cat tmp/mondo_repo_built); \
 		cd tmp/mondo; \
-		git config --global --add safe.directory /work/src/ontology/tmp/mondo; \
 		git fetch origin; \
 		latest_hash=$$(git rev-parse origin/master); \
 		if [ ! "$$current_hash" = "$$latest_hash" ]; then \
