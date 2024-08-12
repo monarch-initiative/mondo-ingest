@@ -373,6 +373,7 @@ USE_MONDO_RELEASE=false
 
 # Builds tmp/mondo/ and rebuilds mondo.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
 tmp/mondo_repo_built:
+	git config --global --add safe.directory /work/src/ontology/tmp/mondo
 	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
 		rm -rf ./mondo/ &&\
 		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
@@ -385,7 +386,8 @@ tmp/mondo_repo_built:
 # Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl and mondo.sssom.tsv, only if mondo repo main branch has new commits
 .PHONY: refresh-mondo-clone
 refresh-mondo-clone:
-	@if [ ! -d tmp/mondo ]; then \
+	git config --global --add safe.directory /work/src/ontology/tmp/mondo
+	if [ ! -d tmp/mondo ]; then \
 		$(MAKE) tmp/mondo_repo_built -B; \
 	else \
 		current_hash=$$(cat tmp/mondo_repo_built); \
