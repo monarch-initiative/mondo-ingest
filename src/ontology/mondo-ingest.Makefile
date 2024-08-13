@@ -162,7 +162,7 @@ $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signatu
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd11foundation.owl.owl --select imports \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		rename --mappings config/icd11foundation-property-map.sssom.tsv \
-		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" \
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select individuals \
 		query \
 			--update ../sparql/fix-labels-with-brackets.ru \
@@ -270,6 +270,7 @@ $(REPORTDIR)/%_exclusion_reasons.ttl: component-download-%.owl $(REPORTDIR)/%_ex
 # todo: Should this also be a prereq $(TMPDIR)/component-download-$*.owl.owl? Perhaps worried about refreshing when not need to? But then we'd just use COMP=false if so?
 $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv
 	$(MAKE) up-to-date-mondo.sssom.tsv
+	@echo "** Called - problematic_exclusions.py **"
 	python3 $(RELEASEDIR)/src/analysis/problematic_exclusions.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
