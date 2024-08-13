@@ -1,2 +1,4 @@
 subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
+MONDO:0009902	cutaneous porphyria	Orphanet:659681	MONDO:equivalentTo	Erythropoietic porphyria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	erythropoietic porphyria
+MONDO:0009902	cutaneous porphyria	Orphanet:659681	MONDO:equivalentTo	Erythropoietic porphyria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	erythropoietic porphyria
