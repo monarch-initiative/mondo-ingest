@@ -275,7 +275,7 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 	$(MAKE) up-to-date-mondo.sssom.tsv
 	python3 $(RELEASEDIR)/src/analysis/problematic_exclusions.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
-	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
+	--onto-path $(COMPONENTSDIR)/$*.owl \
 	--onto-config-path metadata/$*.yml \
 	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
 	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
@@ -283,7 +283,7 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 
 # Exclusions: all artefacts for single ontology
 .PHONY: exclusions-%
-exclusions-%: reports/%_exclusion_reasons.ttl reports/%_excluded_terms_in_mondo_xrefs.tsv  $(REPORTDIR)/%_term_exclusions.txt 
+exclusions-%: reports/%_exclusion_reasons.ttl reports/%_excluded_terms_in_mondo_xrefs.tsv  $(REPORTDIR)/%_term_exclusions.txt
 	@echo "$@ completed"
 
 exclusions-all: $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
