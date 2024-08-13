@@ -31,13 +31,12 @@ SIGNATURE_FILES_DIR = REPORTS_DIR
 OUTDIR = REPORTS_DIR
 SPARQL_STR_GET_LABELS = """
 {% for sparql_prefix_line in prefixes %}{{ sparql_prefix_line }}{% endfor %}
-prefix owl:  <http://www.w3.org/2002/07/owl#>
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-select ?term_id ?term_label where {
+SELECT ?term_id ?term_label WHERE {
     VALUES ?term_id { {{values}} }
-    ?term_id a owl:Class;
-      rdfs:label ?term_label .
+    ?term_id rdfs:label ?term_label .
 }"""
 # # Config
 CONFIG = {
@@ -72,9 +71,8 @@ def load_and_format_tsv(path: str, prefix_map: Dict[str, str]) -> pd.DataFrame:
     return df2
 
 
-# TODO: refactor to use utils.py get_labels()
+# todo: refactor to use utils.py get_labels()
 # todo: In the future, refactor to use OAK.
-#
 # noinspection DuplicatedCode
 def populate_labels(
     df: pd.DataFrame, onto_path: str, prefix_map: Dict[str, str], template_str=SPARQL_STR_GET_LABELS,
@@ -82,7 +80,7 @@ def populate_labels(
 ) -> pd.DataFrame:
     """Get labels for terms
 
-    # TODO: use this when OAK ready
+    # todo: use this when OAK ready
     # from oaklib.resource import OntologyResource
     # from oaklib.implementations.sqldb.sql_implementation import SqlImplementation
     # # https://incatools.github.io/ontology-access-kit/introduction.html#basic-python-example
@@ -105,7 +103,7 @@ def populate_labels(
     terms = [x for x in terms if any([x.startswith(y) for y in prefix_map.keys()])]
 
     # Instantiate template
-    prefix_sparql_strings = [f'prefix {k}: <{v}>' for k, v in prefix_map.items()]
+    prefix_sparql_strings = [f'prefix {k}: <{v}>\n' for k, v in prefix_map.items()]
     template_obj = Template(template_str)
     instantiated_str = template_obj.render(
         prefixes=prefix_sparql_strings,
