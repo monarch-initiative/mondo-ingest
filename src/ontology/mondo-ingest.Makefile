@@ -376,6 +376,7 @@ tmp/mondo_repo_built:
 	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
 		rm -rf ./mondo/ &&\
 		cd mondo/src/ontology &&\
+		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
 		make mondo.owl mappings mondo-edit.owl -B MIR=false IMP=false MIR=false &&\
 		latest_hash=$$(git rev-parse origin/master) &&\
 		echo "$$latest_hash" > $@ &&\
