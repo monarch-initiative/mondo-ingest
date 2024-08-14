@@ -38,8 +38,10 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 select ?term_id ?term_label where {
     VALUES ?term_id { {{values}} }
     ?term_id a owl:Class;
-    OPTIONAL { ?term_id rdfs:label ?term_label . }
-    OPTIONAL { ?term_id skos:prefLabel ?term_label . }
+    OPTIONAL {
+        VALUES ?label_property { rdfs:label skos:prefLabel } .
+        ?term_id ?label_property ?term_label .
+        }
     FILTER(BOUND(?term_label))
 }"""
 # # Config
