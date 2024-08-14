@@ -2,7 +2,7 @@
 | Ontology                                                  |   Tot deprecated in Mondo |
 |:----------------------------------------------------------|--------------------------:|
 | [NCIT](./mapped_deprecated_ncit.md)                       |                         5 |
-| [OMIM](./mapped_deprecated_omim.md)                       |                        43 |
+| [OMIM](./mapped_deprecated_omim.md)                       |                        44 |
 | [ORDO](./mapped_deprecated_ordo.md)                       |                       167 |
 | [GARD](./mapped_deprecated_gard.md)                       |                         0 |
 | [ICD11FOUNDATION](./mapped_deprecated_icd11foundation.md) |                         0 |
