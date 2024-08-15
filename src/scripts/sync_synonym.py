@@ -65,20 +65,10 @@ def _add_synonym_type_inferences(row: pd.Series) -> str:
     types: Set[URI] = set(syn_type_str.split('|') if syn_type_str else [])
 
     # Acronym: uppercase, no numbers, no whitespace, <10 chars
-    if syn.isupper() and syn.isalpha() and not any(char.isspace() for char in syn) and len(syn) < 10:
+    if syn.isupper() and not any(char.isspace() for char in syn) and len(syn) < 10:
         types.add('http://purl.obolibrary.org/obo/mondo#ABBREVIATION')
 
     return '|'.join(types)
-
-
-def _merge_synonym_types(row: pd.Series) -> str:
-    """Merge Mondo synonym_types into those obtained from the source so that Mondo types are not overwritten."""
-    syn_types: Set[URI] = set()
-    for col in ['synonym_type_mondo', 'synonym_type']:
-        for _type in row[col].split('|'):
-            if _type:
-                syn_types.add(_type)
-    return '|'.join(syn_types)
 
 
 def _common_operations(
@@ -97,10 +87,6 @@ def _common_operations(
     if len(mondo_exclusions_df) > 0:
         df = df[~((df['mondo_id'].isin(mondo_exclusions_df['mondo_id'])) & (
             df['synonym_lower'].isin(mondo_exclusions_df['synonym_lower'])))]
-
-    # Merge Mondo synonym types into total list of synonym types
-    if 'synonym_type_mondo' in df.columns:
-        df['synonym_type'] = df.apply(_merge_synonym_types, axis=1)
 
     # Format
     # - Add ROBOT columns for each synonym scope
@@ -268,14 +254,12 @@ def sync_synonyms(
     # -- filter out rows with no types; can cause duplicate rows (other rows were probably from xref axioms)
     source_types_df = source_types_df[source_types_df['synonym_type'] != '']
     # -- multiple synonym_types: QC
-    # TODO: probably need to support multiple types
-    source_dupe_types_df = source_types_df[source_types_df.duplicated(
-        subset=['source_id', 'synonym', 'synonym_scope'], keep=False)]
-    if len(source_dupe_types_df) > 0:
-        raise RuntimeError('Error: Unhandled multiple synonym_types detected in Mondo')
-    # -- convert known types
-    source_types_df['synonym_type'] = source_types_df['synonym_type'].apply(lambda x:
-        x.replace('http://purl.obolibrary.org/obo/OMO_0003012', 'http://purl.obolibrary.org/obo/mondo#ABBREVIATION'))
+    # TODO: probably need to support multiple types. may need to reactivate error. could have unexpected results
+    #  if dupes come through
+    # source_dupe_types_df = source_types_df[source_types_df.duplicated(
+    #     subset=['source_id', 'synonym', 'synonym_scope'], keep=False)]
+    # if len(source_dupe_types_df) > 0:
+    #     raise RuntimeError('Error: Unhandled multiple synonym_types detected in Mondo')
     # -- merge in synonym types
     source_df = source_df.merge(source_types_df, on=['source_id', 'synonym_scope', 'synonym'], how='left').fillna('')
     # - get synonym_types: inferred
@@ -305,10 +289,11 @@ def sync_synonyms(
     del mondo_df['source_id']
     mondo_df.drop_duplicates(inplace=True)
     # - multiple synonym_types: QC
-    # TODO: probably need to support multiple types
-    mondo_dupe_types_df = mondo_df[mondo_df.duplicated(subset=['mondo_id', 'synonym', 'synonym_scope'], keep=False)]
-    if len(mondo_dupe_types_df) > 0:
-        raise RuntimeError('Error: Unhandled multiple synonym_types etected in Mondo')
+    # TODO: probably need to support multiple types. may need to reactivate error. could have unexpected results
+    #  if dupes come through
+    # mondo_dupe_types_df = mondo_df[mondo_df.duplicated(subset=['mondo_id', 'synonym', 'synonym_scope'], keep=False)]
+    # if len(mondo_dupe_types_df) > 0:
+    #     raise RuntimeError('Error: Unhandled multiple synonym_types etected in Mondo')
     # - filter terms not in mondo.sssom.tsv
     #   - also effectively filters by source previously filtered mappings_df (obsoletes & deletions)
     mondo_df = mondo_df[mondo_df['mondo_id'].isin(set(mappings_df['mondo_id']))]

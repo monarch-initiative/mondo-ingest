@@ -91,5 +91,4 @@ These workflows help synchronize Mondo with source ontologies.
 5. `reports/%.subclass.updated.robot.tsv`: ROBOT template TSV to create which will contain updates to synonym scope predicate; cases where the synonym exists in Mondo and on the mapped source term, but the scope predicate is different.
 6. `reports/sync-synonyms.added.tsv`: Combination of all 'added' synonym outputs for all sources.
 7. `reports/sync-synonyms.confirmed.tsv`: Combination of all 'confirmed' synonym outputs for all sources.
-8. `reports/sync-synonyms.deleted.tsv`: Combination of all 'deleted' synonym outputs for all sources.
-9. `reports/sync-synonyms.updated.tsv`: Combination of all 'updated' synonym outputs for all sources.
+8. `reports/sync-synonyms.updated.tsv`: Combination of all 'updated' synonym outputs for all sources.
