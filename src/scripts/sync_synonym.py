@@ -146,15 +146,19 @@ def _filter_a_by_not_in_b(
 
 
 def sync_synonyms(
-    ontology_db_path: Union[Path, str], mondo_synonyms_path: Union[Path, str], mondo_excluded_synonyms_path: Union[Path, str],
-    onto_synonyms_path: Union[Path, str], mondo_mappings_path: Union[Path, str], onto_config_path: Union[Path, str],
-    outpath_added: Union[Path, str], outpath_confirmed: Union[Path, str], outpath_deleted: Union[Path, str],
-    outpath_updated: Union[Path, str], deactivate_deleted=True,
+    ontology_db_path: Union[Path, str], mondo_synonyms_path: Union[Path, str],
+    mondo_excluded_synonyms_path: Union[Path, str], onto_synonym_types_path: Union[Path, str],
+    mondo_mappings_path: Union[Path, str], onto_config_path: Union[Path, str], outpath_added: Union[Path, str],
+    outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str], outpath_deleted: Union[Path, str] = None,
     combined_outpath_template_str='tmp/synonym_sync_combined_cases_{}.tsv'
 ):
     """Create outputs for syncing synonyms between Mondo and its sources.
 
-    :param deactivate_deleted: If True, will not create the '-deleted' template.
+    todo: update when -deleted is reactivated
+    :param outpath_deleted: Optional. This case isn't fully fleshed out yet.
+    todo: since the overall combined case output for all cases for all sources is no in reports/ instead of tmp/ as of
+     2024-08-15, we should probably pass this as a required CLI/functional param w/ no default value.
+    :param combined_outpath_template_str: Creates an additional file concatenating all case files.
 
     todo: possible refactor: labels: Maybe could be done more cleanly and consistently. At first, wanted to add to both
      source_df and mondo_df, but this caused _x and _y cols during joins, or I would have to join on those cols as well.
@@ -233,7 +237,7 @@ def sync_synonyms(
     #  http://purl.obolibrary.org/obo/OMO_0003012. Need to find a way to standardize. Probably best to do URI because
     #  harder to account for all possible namespaces.
     # - get synonym_types: declared by the source
-    source_types_df: pd.DataFrame = _read_sparql_output_tsv(onto_synonyms_path).rename(columns={'cls_id': 'source_id'})
+    source_types_df: pd.DataFrame = _read_sparql_output_tsv(onto_synonym_types_path).rename(columns={'cls_id': 'source_id'})
     # -- remove synonym xref provenance
     # todo: it may be useful in the future to keep/use this data
     del source_types_df['dbXref']  # leaves: source_id, synonym_scope, synonym, synonym_type
@@ -339,7 +343,7 @@ def sync_synonyms(
     # todo: do 100% of mondo and source terms in here have labels? I think they should.
     # todo: unsure what role mondo excluded synonyms will have here
     # todo: i think this implementation is outdated post source_id refactor
-    if not deactivate_deleted:
+    if outpath_deleted:
         deleted_df = mondo_df.merge(
             source_df, on=['synonym_scope', 'synonym_lower'], how='left', indicator=True)
         deleted_df = deleted_df[deleted_df['_merge'] == 'left_only'].drop('_merge', axis=1)  # also can do: mondo_id=nan
@@ -376,7 +380,7 @@ def cli():
         help='Path to a TSV with all synonyms marked as excluded in Mondo. Has columns: ?mondo_id ?synonym '
              '?hasDbXref_xref ?source_xref.')
     parser.add_argument(
-        '-O', '--onto-synonyms-path', required=True,
+        '-O', '--onto-synonym-types-path', required=True,
         help='Path to a TSV containing information about synonyms for the source. Columns: ?mondo_id, ?dbXref, '
              '?synonym_scope, ?synonym, synonym_type.')
     parser.add_argument(
@@ -395,7 +399,7 @@ def cli():
         help='Path to ROBOT template TSV to create which will contain synonym confirmations; combination of synonym '
              'scope predicate and synonym string exists in both source and Mondo for a given mapping.')
     parser.add_argument(
-        '-d', '--outpath-deleted', required=True,
+        '-d', '--outpath-deleted', required=False,  # todo: change to True when adding back this feature
         help='Path to ROBOT template TSV to create which will contain synonym deletions; exists in Mondo but not '
              'in source(s) for a given mapping.')
     parser.add_argument(

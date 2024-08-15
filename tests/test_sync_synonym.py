@@ -74,7 +74,7 @@ class TestSyncSynonyms(unittest.TestCase):
             mondo_synonyms_path=INPUT_MONDO_SYNONYMS,
             mondo_excluded_synonyms_path=INPUT_EXCLUDED_SYNONYMS,
             mondo_mappings_path=INPUT_MAPPINGS,
-            onto_synonyms_path=INPUT_ONTO_SYNONYMS,
+            onto_synonym_types_path=INPUT_ONTO_SYNONYMS,
             onto_config_path=INPUT_SOURCE_METADATA,
             outpath_added=OUTPUT_ADDED,
             outpath_confirmed=OUTPUT_CONFIRMED,

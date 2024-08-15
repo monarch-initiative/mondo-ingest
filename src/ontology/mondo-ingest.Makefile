@@ -641,7 +641,7 @@ $(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
 	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
 	--mondo-excluded-synonyms-path tmp/mondo-excluded-synonyms.tsv \
-	--onto-synonyms-path tmp/$*-synonyms-scope-type-xref.tsv \
+	--onto-synonym-types-path tmp/$*-synonyms-scope-type-xref.tsv \
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(REPORTDIR)/$*.synonyms.added.robot.tsv \
 	--outpath-confirmed $(REPORTDIR)/$*.synonyms.confirmed.robot.tsv \

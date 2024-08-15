@@ -19,7 +19,7 @@ MONDO:0000377	malignant Leydig cell tumor	oio:hasExactSynonym		Malignant Leydig 
 MONDO:0000378	malignant Sertoli cell tumor	oio:hasExactSynonym		Malignant Sertoli Cell Tumor	Malignant Sertoli Cell Tumor				NCIT:C67006	Malignant Sertoli Cell Tumor				
 MONDO:0000378	malignant Sertoli cell tumor	oio:hasExactSynonym		Sertoli cell carcinoma	Sertoli cell carcinoma				NCIT:C67006	Malignant Sertoli Cell Tumor				
 MONDO:0000385	benign digestive system neoplasm	oio:hasExactSynonym		Benign Digestive System Neoplasm	Benign Digestive System Neoplasm				NCIT:C4787	Benign Digestive System Neoplasm				
-MONDO:0000386	digestive system neuroendocrine tumor, grade 1/2	oio:hasExactSynonym		GEP-NET	GEP-NET				NCIT:C95404	Digestive System Neuroendocrine Tumor				
+MONDO:0000386	digestive system neuroendocrine tumor, grade 1/2	oio:hasExactSynonym		GEP-NET	GEP-NET				NCIT:C95404	Digestive System Neuroendocrine Tumor	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0000396	spastic cerebral palsy	oio:hasExactSynonym		Spastic Cerebral Palsy	Spastic Cerebral Palsy				NCIT:C116903	Spastic Cerebral Palsy				
 MONDO:0000397	ataxic cerebral palsy	oio:hasExactSynonym		Ataxic Cerebral Palsy	Ataxic Cerebral Palsy				NCIT:C97168	Ataxic Cerebral Palsy				
 MONDO:0000400	mixed cerebral palsy	oio:hasExactSynonym		Mixed Cerebral Palsy	Mixed Cerebral Palsy				NCIT:C97177	Mixed Cerebral Palsy				
@@ -163,8 +163,8 @@ MONDO:0001226	acute contagious conjunctivitis	oio:hasExactSynonym		Acute Contagi
 MONDO:0001239	anemia of prematurity	oio:hasExactSynonym		Anemia of Prematurity	Anemia of Prematurity				NCIT:C97167	Anemia of Prematurity				
 MONDO:0001245	microcytic anemia	oio:hasExactSynonym		Microcytic Anemia	Microcytic Anemia				NCIT:C35141	Microcytic Anemia				
 MONDO:0001247	social phobia	oio:hasExactSynonym		Social Phobia	Social Phobia				NCIT:C34927	Social Anxiety Disorder				
-MONDO:0001256	arteriovenous hemangioma/malformation	oio:hasExactSynonym		AVM/H	AVM/H				NCIT:C2882	Arteriovenous Malformation/Hemangioma				
 MONDO:0001256	arteriovenous hemangioma/malformation	oio:hasExactSynonym		Arteriovenous Malformation/Hemangioma	Arteriovenous Malformation/Hemangioma				NCIT:C2882	Arteriovenous Malformation/Hemangioma				
+MONDO:0001256	arteriovenous hemangioma/malformation	oio:hasExactSynonym		AVM/H	AVM/H				NCIT:C2882	Arteriovenous Malformation/Hemangioma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0001260	cercarial dermatitis	oio:hasExactSynonym		Cercarial Dermatitis	Cercarial Dermatitis				NCIT:C128349	Cercarial Dermatitis				
 MONDO:0001265	schizophreniform disorder	oio:hasExactSynonym		Schizophreniform Disorder	Schizophreniform Disorder				NCIT:C94376	Schizophreniform Disorder				
 MONDO:0001273	megacolon	oio:hasExactSynonym		Megacolon	Megacolon				NCIT:C34810	Megacolon				
@@ -1320,7 +1320,7 @@ MONDO:0004522	peritonitis	oio:hasExactSynonym		Peritonitis	Peritonitis				NCIT:C
 MONDO:0004523	clear cell squamous cell skin carcinoma	oio:hasExactSynonym		Skin Clear Cell Squamous Cell Carcinoma	Skin Clear Cell Squamous Cell Carcinoma				NCIT:C4459	Skin Clear Cell Squamous Cell Carcinoma				
 MONDO:0004524	thyroid gland atypical follicular adenoma	oio:hasExactSynonym		Thyroid Gland Well-Differentiated Neoplasm of Uncertain Malignant Potential	Thyroid Gland Well-Differentiated Neoplasm of Uncertain Malignant Potential				NCIT:C27729	Thyroid Gland Well-Differentiated Tumor of Uncertain Malignant Potential				
 MONDO:0004524	thyroid gland atypical follicular adenoma	oio:hasExactSynonym		Thyroid Gland Well-Differentiated Tumor of Uncertain Malignant Potential	Thyroid Gland Well-Differentiated Tumor of Uncertain Malignant Potential				NCIT:C27729	Thyroid Gland Well-Differentiated Tumor of Uncertain Malignant Potential				
-MONDO:0004524	thyroid gland atypical follicular adenoma	oio:hasExactSynonym		WDT-UMP	WDT-UMP				NCIT:C27729	Thyroid Gland Well-Differentiated Tumor of Uncertain Malignant Potential				
+MONDO:0004524	thyroid gland atypical follicular adenoma	oio:hasExactSynonym		WDT-UMP	WDT-UMP				NCIT:C27729	Thyroid Gland Well-Differentiated Tumor of Uncertain Malignant Potential	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0004525	scabies	oio:hasExactSynonym		Scabies	Scabies				NCIT:C34998	Scabies				
 MONDO:0004526	mixed endometrial stromal and smooth muscle tumor	oio:hasExactSynonym		Mixed Endometrial Stromal and Smooth Muscle Tumor	Mixed Endometrial Stromal and Smooth Muscle Tumor				NCIT:C40178	Mixed Endometrial Stromal and Smooth Muscle Neoplasm				
 MONDO:0004528	lymph node palisaded myofibroblastoma	oio:hasExactSynonym		Intranodal Palisaded Myofibroblastoma	Intranodal Palisaded Myofibroblastoma				NCIT:C6584	Intranodal Palisaded Myofibroblastoma				
@@ -1368,8 +1368,8 @@ MONDO:0004650	malignant carotid body paraganglioma	oio:hasExactSynonym		Metastat
 MONDO:0004651	smallpox	oio:hasExactSynonym		Smallpox	Smallpox				NCIT:C35027	Smallpox				
 MONDO:0004652	bacterial pneumonia	oio:hasExactSynonym		Bacterial Pneumonia	Bacterial Pneumonia				NCIT:C26704	Bacterial Pneumonia				
 MONDO:0004653	atypical chronic myeloid leukemia, BCR-ABL1 negative	oio:hasExactSynonym		Atypical Chronic Myeloid Leukemia, BCR::ABL1 Negative	Atypical Chronic Myeloid Leukemia, BCR::ABL1 Negative				NCIT:C3519	Atypical Chronic Myeloid Leukemia				
-MONDO:0004653	atypical chronic myeloid leukemia, BCR-ABL1 negative	oio:hasExactSynonym		MDS/MPN-N	MDS/MPN-N				NCIT:C3519	Atypical Chronic Myeloid Leukemia				
 MONDO:0004653	atypical chronic myeloid leukemia, BCR-ABL1 negative	oio:hasExactSynonym		Myelodysplastic/Myeloproliferative Neoplasm with Neutrophilia	Myelodysplastic/Myeloproliferative Neoplasm with Neutrophilia				NCIT:C3519	Atypical Chronic Myeloid Leukemia				
+MONDO:0004653	atypical chronic myeloid leukemia, BCR-ABL1 negative	oio:hasExactSynonym		MDS/MPN-N	MDS/MPN-N				NCIT:C3519	Atypical Chronic Myeloid Leukemia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0004656	rubella	oio:hasExactSynonym		Rubella	Rubella				NCIT:C85051	Rubella Infection				
 MONDO:0004662	heterophyiasis	oio:hasExactSynonym		Heterophyiasis	Heterophyiasis				NCIT:C128389	Heterophyiasis				
 MONDO:0004665	nodular sclerosis classical Hodgkin lymphoma	oio:hasExactSynonym		Classical Hodgkin lymphoma, nodular sclerosis, NOS	Classical Hodgkin lymphoma, nodular sclerosis, NOS				NCIT:C3518	Nodular Sclerosis Classic Hodgkin Lymphoma				
@@ -1449,10 +1449,10 @@ MONDO:0004963	T-cell acute lymphoblastic leukemia	oio:hasExactSynonym		T cell ac
 MONDO:0004963	T-cell acute lymphoblastic leukemia	oio:hasExactSynonym		T-Acute Lymphoblastic Leukemia	T-Acute Lymphoblastic Leukemia				NCIT:C3183	T Acute Lymphoblastic Leukemia				
 MONDO:0004964	peripheral T-cell lymphoma, not otherwise specified	oio:hasExactSynonym		Mature T-Cell Lymphoma, NOS	Mature T-Cell Lymphoma, NOS				NCIT:C4340	Peripheral T-Cell Lymphoma, Not Otherwise Specified				
 MONDO:0004964	peripheral T-cell lymphoma, not otherwise specified	oio:hasExactSynonym		PTCL, NOS	PTCL, NOS				NCIT:C4340	Peripheral T-Cell Lymphoma, Not Otherwise Specified				
-MONDO:0004964	peripheral T-cell lymphoma, not otherwise specified	oio:hasExactSynonym		PTCL-NOS	PTCL-NOS				NCIT:C4340	Peripheral T-Cell Lymphoma, Not Otherwise Specified				
 MONDO:0004964	peripheral T-cell lymphoma, not otherwise specified	oio:hasExactSynonym		Peripheral T-Cell Lymphoma, NOS	Peripheral T-Cell Lymphoma, NOS				NCIT:C4340	Peripheral T-Cell Lymphoma, Not Otherwise Specified				
 MONDO:0004964	peripheral T-cell lymphoma, not otherwise specified	oio:hasExactSynonym		Peripheral T-Cell Lymphoma, Unclassifiable	Peripheral T-Cell Lymphoma, Unclassifiable				NCIT:C4340	Peripheral T-Cell Lymphoma, Not Otherwise Specified				
 MONDO:0004964	peripheral T-cell lymphoma, not otherwise specified	oio:hasExactSynonym		Peripheral T-cell lymphoma, NOS	Peripheral T-cell lymphoma, NOS				NCIT:C4340	Peripheral T-Cell Lymphoma, Not Otherwise Specified				
+MONDO:0004964	peripheral T-cell lymphoma, not otherwise specified	oio:hasExactSynonym		PTCL-NOS	PTCL-NOS				NCIT:C4340	Peripheral T-Cell Lymphoma, Not Otherwise Specified	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0004967	acute lymphoblastic leukemia	oio:hasExactSynonym		Acute lymphatic leukemia	Acute lymphatic leukemia				NCIT:C3167	Acute Lymphoblastic Leukemia				
 MONDO:0004967	acute lymphoblastic leukemia	oio:hasExactSynonym		Acute lymphoblastic leukemia, NOS	Acute lymphoblastic leukemia, NOS				NCIT:C3167	Acute Lymphoblastic Leukemia				
 MONDO:0004967	acute lymphoblastic leukemia	oio:hasExactSynonym		Acute lymphoblastic leukemia, precursor cell type	Acute lymphoblastic leukemia, precursor cell type				NCIT:C3167	Acute Lymphoblastic Leukemia				
@@ -1598,9 +1598,9 @@ MONDO:0005211	ovarian serous adenocarcinoma	oio:hasExactSynonym		Serous carcinom
 MONDO:0005212	rhabdomyosarcoma	oio:hasExactSynonym		Rhabdomyosarcoma, NOS	Rhabdomyosarcoma, NOS				NCIT:C3359	Rhabdomyosarcoma				
 MONDO:0005219	breast fibrocystic disease	oio:hasExactSynonym		Breast Fibrocystic Disease	Breast Fibrocystic Disease				NCIT:C3039	Breast Fibrocystic Change				
 MONDO:0005223	acute myeloid leukemia with minimal differentiation	oio:hasExactSynonym		Acute myeloid leukemia, minimal differentiation	Acute myeloid leukemia, minimal differentiation				NCIT:C8460	Acute Myeloid Leukemia with Minimal Differentiation				
-MONDO:0005223	acute myeloid leukemia with minimal differentiation	oio:hasExactSynonym		M0	M0				NCIT:C8460	Acute Myeloid Leukemia with Minimal Differentiation				
+MONDO:0005223	acute myeloid leukemia with minimal differentiation	oio:hasExactSynonym		M0	M0				NCIT:C8460	Acute Myeloid Leukemia with Minimal Differentiation	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0005224	acute myeloblastic leukemia without maturation	oio:hasExactSynonym		Acute Myeloblastic Leukemia without Maturation	Acute Myeloblastic Leukemia without Maturation				NCIT:C3249	Acute Myeloid Leukemia without Maturation				
-MONDO:0005224	acute myeloblastic leukemia without maturation	oio:hasExactSynonym		M1	M1				NCIT:C3249	Acute Myeloid Leukemia without Maturation				
+MONDO:0005224	acute myeloblastic leukemia without maturation	oio:hasExactSynonym		M1	M1				NCIT:C3249	Acute Myeloid Leukemia without Maturation	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0005227	abscess	oio:hasExactSynonym		Abscess	Abscess				NCIT:C26686	Abscess				
 MONDO:0005227	abscess	oio:hasExactSynonym		ABSCESS	ABSCESS				NCIT:C26686	Abscess	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0005231	hepatitis C virus infection	oio:hasExactSynonym		HCV Infection	HCV Infection				NCIT:C3098	Hepatitis C Infection				
@@ -1886,13 +1886,13 @@ MONDO:0006091	appendix neuroendocrine tumor G1	oio:hasExactSynonym		Appendix Neu
 MONDO:0006095	atypical carcinoid tumor	oio:hasExactSynonym		NET G2	NET G2				NCIT:C72074	Neuroendocrine Tumor G2				
 MONDO:0006095	atypical carcinoid tumor	oio:hasExactSynonym		Neuroendocrine Tumor G2	Neuroendocrine Tumor G2				NCIT:C72074	Neuroendocrine Tumor G2				
 MONDO:0006095	atypical carcinoid tumor	oio:hasExactSynonym		Neuroendocrine Tumor Grade 2	Neuroendocrine Tumor Grade 2				NCIT:C72074	Neuroendocrine Tumor G2				
-MONDO:0006097	atypical lipomatous tumor	oio:hasExactSynonym		ALT/WDLPS	ALT/WDLPS				NCIT:C6505	Atypical Lipomatous Tumor/Well Differentiated Liposarcoma				
 MONDO:0006097	atypical lipomatous tumor	oio:hasExactSynonym		Atypical Lipomatous Tumor	Atypical Lipomatous Tumor				NCIT:C6505	Atypical Lipomatous Tumor/Well Differentiated Liposarcoma				
 MONDO:0006097	atypical lipomatous tumor	oio:hasExactSynonym		Atypical Lipomatous Tumor/Well Differentiated Liposarcoma	Atypical Lipomatous Tumor/Well Differentiated Liposarcoma				NCIT:C6505	Atypical Lipomatous Tumor/Well Differentiated Liposarcoma				
 MONDO:0006097	atypical lipomatous tumor	oio:hasExactSynonym		Atypical Lipomatous Tumor/Well-Differentiated Liposarcoma	Atypical Lipomatous Tumor/Well-Differentiated Liposarcoma				NCIT:C6505	Atypical Lipomatous Tumor/Well Differentiated Liposarcoma				
 MONDO:0006097	atypical lipomatous tumor	oio:hasExactSynonym		Liposarcoma, differentiated	Liposarcoma, differentiated				NCIT:C6505	Atypical Lipomatous Tumor/Well Differentiated Liposarcoma				
 MONDO:0006097	atypical lipomatous tumor	oio:hasExactSynonym		Liposarcoma, well differentiated	Liposarcoma, well differentiated				NCIT:C6505	Atypical Lipomatous Tumor/Well Differentiated Liposarcoma				
 MONDO:0006097	atypical lipomatous tumor	oio:hasExactSynonym		Well-Differentiated Liposarcoma	Well-Differentiated Liposarcoma				NCIT:C6505	Atypical Lipomatous Tumor/Well Differentiated Liposarcoma				
+MONDO:0006097	atypical lipomatous tumor	oio:hasExactSynonym		ALT/WDLPS	ALT/WDLPS				NCIT:C6505	Atypical Lipomatous Tumor/Well Differentiated Liposarcoma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0006098	atypical lobular breast hyperplasia	oio:hasExactSynonym		Breast Atypical Lobular Hyperplasia	Breast Atypical Lobular Hyperplasia				NCIT:C4730	Breast Atypical Lobular Hyperplasia				
 MONDO:0006103	benign adrenal gland pheochromocytoma	oio:hasExactSynonym		Localized Pheochromocytoma	Localized Pheochromocytoma				NCIT:C48305	Non-Metastatic Adrenal Gland Pheochromocytoma				
 MONDO:0006103	benign adrenal gland pheochromocytoma	oio:hasExactSynonym		Non-Metastatic Adrenal Gland Pheochromocytoma	Non-Metastatic Adrenal Gland Pheochromocytoma				NCIT:C48305	Non-Metastatic Adrenal Gland Pheochromocytoma				
@@ -2019,8 +2019,8 @@ MONDO:0006301	metanephric adenoma	oio:hasExactSynonym		Kidney Embryonal Adenoma	
 MONDO:0006302	micropapillary serous carcinoma	oio:hasExactSynonym		Micropapillary Serous Carcinoma	Micropapillary Serous Carcinoma				NCIT:C6882	Micropapillary Serous Carcinoma				
 MONDO:0006302	micropapillary serous carcinoma	oio:hasExactSynonym		Micropapillary Variant of Serous Borderline Tumor	Micropapillary Variant of Serous Borderline Tumor				NCIT:C6882	Micropapillary Serous Carcinoma				
 MONDO:0006302	micropapillary serous carcinoma	oio:hasExactSynonym		Micropapillary serous carcinoma	Micropapillary serous carcinoma				NCIT:C6882	Micropapillary Serous Carcinoma				
-MONDO:0006302	micropapillary serous carcinoma	oio:hasExactSynonym		SBT-MP	SBT-MP				NCIT:C6882	Micropapillary Serous Carcinoma				
 MONDO:0006302	micropapillary serous carcinoma	oio:hasExactSynonym		MPSC	MPSC				NCIT:C6882	Micropapillary Serous Carcinoma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0006302	micropapillary serous carcinoma	oio:hasExactSynonym		SBT-MP	SBT-MP				NCIT:C6882	Micropapillary Serous Carcinoma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0006304	minor salivary gland adenocarcinoma	oio:hasExactSynonym		Minor Salivary Gland Adenocarcinoma	Minor Salivary Gland Adenocarcinoma				NCIT:C5948	Minor Salivary Gland Adenocarcinoma				
 MONDO:0006306	mixed lobular and ductal breast carcinoma	oio:hasExactSynonym		Mixed Ductal and Lobular Carcinoma	Mixed Ductal and Lobular Carcinoma				NCIT:C5160	Breast Mixed Ductal and Lobular Carcinoma				
 MONDO:0006307	mixed somatotroph-lactotroph pituitary gland adenoma	oio:hasExactSynonym		Mixed Somatotroph and Lactotroph PitNET/Adenoma	Mixed Somatotroph and Lactotroph PitNET/Adenoma				NCIT:C45927	Mixed Somatotroph and Lactotroph Pituitary Neuroendocrine Tumor				
@@ -2276,8 +2276,8 @@ MONDO:0007243	Burkitt lymphoma	oio:hasExactSynonym		NHL, Burkitt lymphoma (BL)	N
 MONDO:0007256	hepatocellular carcinoma	oio:hasExactSynonym		LIHC	LIHC				NCIT:C3099	Hepatocellular Carcinoma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0007263	cardiac rhythm disease	oio:hasExactSynonym		Cardiac Arrhythmia	Cardiac Arrhythmia				NCIT:C2881	Arrhythmia				
 MONDO:0007276	cat-eye syndrome	oio:hasExactSynonym		Cat-Eye Syndrome	Cat-Eye Syndrome				NCIT:C75477	Cat-Eye Syndrome				
-MONDO:0007293	leukocyte adhesion deficiency 1	oio:hasExactSynonym		LAD-1	LAD-1				NCIT:C4689	Leukocyte Adhesion Deficiency Type 1				
 MONDO:0007293	leukocyte adhesion deficiency 1	oio:hasExactSynonym		LAD-1 Deficiency	LAD-1 Deficiency				NCIT:C4689	Leukocyte Adhesion Deficiency Type 1				
+MONDO:0007293	leukocyte adhesion deficiency 1	oio:hasExactSynonym		LAD-1	LAD-1				NCIT:C4689	Leukocyte Adhesion Deficiency Type 1	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0007294	central core myopathy	oio:hasExactSynonym		Central Core Myopathy	Central Core Myopathy				NCIT:C83010	Central Core Disease				
 MONDO:0007307	Charcot-Marie-Tooth disease type 1B	oio:hasExactSynonym		Charcot-Marie-Tooth Disease Type 1B	Charcot-Marie-Tooth Disease Type 1B				NCIT:C118782	Charcot-Marie-Tooth Disease Type 1B				
 MONDO:0007342	clubfoot	oio:hasExactSynonym		Clubfoot	Clubfoot				NCIT:C84641	Clubfoot				
@@ -2336,8 +2336,8 @@ MONDO:0008280	Peutz-Jeghers syndrome	oio:hasExactSynonym		Peutz-Jeghers Disease	
 MONDO:0008327	exfoliation syndrome	oio:hasExactSynonym		Exfoliation Glaucoma	Exfoliation Glaucoma				NCIT:C129025	Exfoliation Syndrome				
 MONDO:0008327	exfoliation syndrome	oio:hasExactSynonym		Exfoliation Syndrome	Exfoliation Syndrome				NCIT:C129025	Exfoliation Syndrome				
 MONDO:0008329	autosomal dominant pseudohypoaldosteronism type 1	oio:hasExactSynonym		Hyponatremic Mineralocorticoid Resistance due to Mineralocorticoid Receptor Defect	Hyponatremic Mineralocorticoid Resistance due to Mineralocorticoid Receptor Defect				NCIT:C126810	Hyponatremic Mineralocorticoid Resistance due to Mineralocorticoid Receptor Defect				
-MONDO:0008329	autosomal dominant pseudohypoaldosteronism type 1	oio:hasExactSynonym		PHA1AD	PHA1AD				NCIT:C126810	Hyponatremic Mineralocorticoid Resistance due to Mineralocorticoid Receptor Defect				
 MONDO:0008329	autosomal dominant pseudohypoaldosteronism type 1	oio:hasExactSynonym		Pseudohypoaldosteronism Type I Autosomal Dominant	Pseudohypoaldosteronism Type I Autosomal Dominant				NCIT:C126810	Hyponatremic Mineralocorticoid Resistance due to Mineralocorticoid Receptor Defect				
+MONDO:0008329	autosomal dominant pseudohypoaldosteronism type 1	oio:hasExactSynonym		PHA1AD	PHA1AD				NCIT:C126810	Hyponatremic Mineralocorticoid Resistance due to Mineralocorticoid Receptor Defect	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0008375	retinal detachment	oio:hasExactSynonym		DETACHMENT, RETINA	DETACHMENT, RETINA				NCIT:C26874	Retinal Detachment				
 MONDO:0008380	retinoblastoma	oio:hasExactSynonym		Retinoblastoma, NOS	Retinoblastoma, NOS				NCIT:C7541	Retinoblastoma				
 MONDO:0008420	seborrheic keratosis	oio:hasExactSynonym		Seborrheic Keratosis	Seborrheic Keratosis				NCIT:C9006	Seborrheic Keratosis				
@@ -2378,8 +2378,8 @@ MONDO:0008856	immunodeficiency 27A	oio:hasExactSynonym		Mendelian Susceptibility
 MONDO:0008867	biliary atresia	oio:hasExactSynonym		Biliary Atresia	Biliary Atresia				NCIT:C34421	Biliary Atresia				
 MONDO:0008890	progressive bulbar palsy	oio:hasExactSynonym		Progressive Bulbar Palsy	Progressive Bulbar Palsy				NCIT:C85026	Progressive Bulbar Palsy				
 MONDO:0008907	PMM2-congenital disorder of glycosylation	oio:hasExactSynonym		CDGIa	CDGIa				NCIT:C126868	Congenital Disorder of Glycosylation Type Ia				
-MONDO:0008915	dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome	oio:hasExactSynonym		DCM-HH	DCM-HH				NCIT:C174217	Dilated Cardiomyopathy-Hypergonadotropic Hypogonadism Syndrome				
 MONDO:0008915	dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome	oio:hasExactSynonym		Dilated Cardiomyopathy-Hypergonadotropic Hypogonadism Syndrome	Dilated Cardiomyopathy-Hypergonadotropic Hypogonadism Syndrome				NCIT:C174217	Dilated Cardiomyopathy-Hypergonadotropic Hypogonadism Syndrome				
+MONDO:0008915	dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome	oio:hasExactSynonym		DCM-HH	DCM-HH				NCIT:C174217	Dilated Cardiomyopathy-Hypergonadotropic Hypogonadism Syndrome	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0008966	Aagenaes syndrome	oio:hasExactSynonym		Lymphedema-Cholestasis Syndrome 1	Lymphedema-Cholestasis Syndrome 1				NCIT:C35709	Aagenaes Syndrome				
 MONDO:0008977	chondrosarcoma	oio:hasExactSynonym		Chondrosarcoma, NOS	Chondrosarcoma, NOS				NCIT:C2946	Chondrosarcoma				
 MONDO:0008978	chordoma	oio:hasExactSynonym		Chordoma, NOS	Chordoma, NOS				NCIT:C2947	Chordoma				
@@ -2404,9 +2404,9 @@ MONDO:0009646	monosomy 7 myelodysplasia and leukemia syndrome 1	oio:hasExactSyno
 MONDO:0009650	mucolipidosis type II	oio:hasExactSynonym		Inclusion-cell Disease	Inclusion-cell Disease				NCIT:C61270	I-Cell Disease				
 MONDO:0009669	spinal muscular atrophy, type 1	oio:hasExactSynonym		Spinal Muscular Atrophy Type 1	Spinal Muscular Atrophy Type 1				NCIT:C98670	Werdnig-Hoffmann Disease				
 MONDO:0009675	autosomal recessive limb-girdle muscular dystrophy type 2A	oio:hasExactSynonym		Autosomal Recessive Muscular Dystrophy Limb-Girdle 1	Autosomal Recessive Muscular Dystrophy Limb-Girdle 1				NCIT:C142079	Limb-Girdle Muscular Dystrophy Type 2A				
-MONDO:0009675	autosomal recessive limb-girdle muscular dystrophy type 2A	oio:hasExactSynonym		LGMDR1	LGMDR1				NCIT:C142079	Limb-Girdle Muscular Dystrophy Type 2A				
+MONDO:0009675	autosomal recessive limb-girdle muscular dystrophy type 2A	oio:hasExactSynonym		LGMDR1	LGMDR1				NCIT:C142079	Limb-Girdle Muscular Dystrophy Type 2A	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0009676	autosomal recessive limb-girdle muscular dystrophy type 2B	oio:hasExactSynonym		Autosomal Recessive Muscular Dystrophy Limb-Girdle 2	Autosomal Recessive Muscular Dystrophy Limb-Girdle 2				NCIT:C142080	Limb-Girdle Muscular Dystrophy Type 2B				
-MONDO:0009676	autosomal recessive limb-girdle muscular dystrophy type 2B	oio:hasExactSynonym		LGMDR2	LGMDR2				NCIT:C142080	Limb-Girdle Muscular Dystrophy Type 2B				
+MONDO:0009676	autosomal recessive limb-girdle muscular dystrophy type 2B	oio:hasExactSynonym		LGMDR2	LGMDR2				NCIT:C142080	Limb-Girdle Muscular Dystrophy Type 2B	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0009692	primary myelofibrosis	oio:hasExactSynonym		PMF	PMF				NCIT:C2862	Primary Myelofibrosis	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0009693	plasma cell myeloma	oio:hasExactSynonym		Myeloma, NOS	Myeloma, NOS				NCIT:C3242	Multiple Myeloma				
 MONDO:0009693	plasma cell myeloma	oio:hasExactSynonym		Plasma Cell Myeloma/Multiple Myeloma	Plasma Cell Myeloma/Multiple Myeloma				NCIT:C3242	Multiple Myeloma				
@@ -2417,8 +2417,8 @@ MONDO:0009761	cystic hygroma	oio:hasExactSynonym		Hygroma, NOS	Hygroma, NOS				N
 MONDO:0009807	osteosarcoma	oio:hasExactSynonym		Osteosarcoma, NOS	Osteosarcoma, NOS				NCIT:C9145	Osteosarcoma				
 MONDO:0009808	osteoid osteoma	oio:hasExactSynonym		Osteoid osteoma, NOS	Osteoid osteoma, NOS				NCIT:C3297	Osteoid Osteoma				
 MONDO:0009809	multicentric osteolysis, nodulosis, and arthropathy	oio:hasExactSynonym		Hereditary Multicentric Osteolysis	Hereditary Multicentric Osteolysis				NCIT:C123437	Multicentric Osteolysis, Nodulosis, and Arthropathy				
-MONDO:0009815	autosomal recessive osteopetrosis 1	oio:hasExactSynonym		ARO1	ARO1				NCIT:C167215	Autosomal Recessive Osteopetrosis 1				
 MONDO:0009815	autosomal recessive osteopetrosis 1	oio:hasExactSynonym		Autosomal Recessive Marble Bones	Autosomal Recessive Marble Bones				NCIT:C167215	Autosomal Recessive Osteopetrosis 1				
+MONDO:0009815	autosomal recessive osteopetrosis 1	oio:hasExactSynonym		ARO1	ARO1				NCIT:C167215	Autosomal Recessive Osteopetrosis 1	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0009818	autosomal recessive osteopetrosis 3	oio:hasExactSynonym		Autosomal Recessive Osteopetrosis 3	Autosomal Recessive Osteopetrosis 3				NCIT:C118438	Osteopetrosis with Renal Tubular Acidosis				
 MONDO:0009833	Shwachman-Diamond syndrome	oio:hasExactSynonym		Shwachman-Diamond-Oski Syndrome	Shwachman-Diamond-Oski Syndrome				NCIT:C61235	Shwachman-Diamond Syndrome				
 MONDO:0009837	choroid plexus papilloma	oio:hasExactSynonym		Choroid plexus papilloma, NOS	Choroid plexus papilloma, NOS				NCIT:C3698	Choroid Plexus Papilloma				
@@ -2451,18 +2451,18 @@ MONDO:0010201	Winchester syndrome	oio:hasExactSynonym		Torg-Winchester Syndrome	
 MONDO:0010293	ectodermal dysplasia and immune deficiency	oio:hasExactSynonym		Ectodermal Dysplasia and Immunodeficiency	Ectodermal Dysplasia and Immunodeficiency				NCIT:C118844	Ectodermal Dysplasia and Immunodeficiency				
 MONDO:0010315	T-B+ severe combined immunodeficiency due to gamma chain deficiency	oio:hasExactSynonym		XL IL2RG	XL IL2RG				NCIT:C4682	X-Linked Severe Combined Immunodeficiency				
 MONDO:0010385	X-linked lymphoproliferative disease due to XIAP deficiency	oio:hasExactSynonym		X-linked Lymphoproliferative Syndrome 2	X-linked Lymphoproliferative Syndrome 2				NCIT:C126295	X-linked Lymphoproliferative Syndrome 2				
-MONDO:0010385	X-linked lymphoproliferative disease due to XIAP deficiency	oio:hasExactSynonym		XLP2/XIAP	XLP2/XIAP				NCIT:C126295	X-linked Lymphoproliferative Syndrome 2				
+MONDO:0010385	X-linked lymphoproliferative disease due to XIAP deficiency	oio:hasExactSynonym		XLP2/XIAP	XLP2/XIAP				NCIT:C126295	X-linked Lymphoproliferative Syndrome 2	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0010434	synovial sarcoma	oio:hasExactSynonym		Synovial sarcoma, NOS	Synovial sarcoma, NOS				NCIT:C3400	Synovial Sarcoma				
 MONDO:0010434	synovial sarcoma	oio:hasExactSynonym		Synovioma, NOS	Synovioma, NOS				NCIT:C3400	Synovial Sarcoma				
 MONDO:0010455	X-linked immunodeficiency with magnesium defect, Epstein-Barr virus infection and neoplasia	oio:hasExactSynonym		MAGT1 Deficiency	MAGT1 Deficiency				NCIT:C126336	X-Linked Immunodeficiency with Magnesium Defect, Epstein-Barr Virus Infection and Neoplasia				
 MONDO:0010455	X-linked immunodeficiency with magnesium defect, Epstein-Barr virus infection and neoplasia	oio:hasExactSynonym		X-Linked Immunodeficiency with Magnesium Defect Epstein-Barr Virus Infection and Neoplasia	X-Linked Immunodeficiency with Magnesium Defect Epstein-Barr Virus Infection and Neoplasia				NCIT:C126336	X-Linked Immunodeficiency with Magnesium Defect, Epstein-Barr Virus Infection and Neoplasia				
 MONDO:0010507	Xq25 microduplication syndrome	oio:hasExactSynonym		Xq25 Microduplication Syndrome	Xq25 Microduplication Syndrome				NCIT:C177544	Xq25 Microduplication Syndrome				
-MONDO:0010559	MASA syndrome	oio:hasExactSynonym		SPG1	SPG1				NCIT:C129930	MASA Syndrome				
+MONDO:0010559	MASA syndrome	oio:hasExactSynonym		SPG1	SPG1				NCIT:C129930	MASA Syndrome	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0010595	Sertoli cell-only syndrome	oio:hasExactSynonym		SCOS	SCOS				NCIT:C168988	Sertoli Cell-Only Syndrome	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0010619	X-linked dominant hypophosphatemic rickets	oio:hasExactSynonym		Hereditary 1,25(OH)2D-resistant Rickets	Hereditary 1,25(OH)2D-resistant Rickets				NCIT:C85234	X-Linked Dominant Hypophosphatemic Rickets				
 MONDO:0010619	X-linked dominant hypophosphatemic rickets	oio:hasExactSynonym		Vitamin D-resistant Rickets	Vitamin D-resistant Rickets				NCIT:C85234	X-Linked Dominant Hypophosphatemic Rickets				
 MONDO:0010656	intellectual disability, X-linked 1	oio:hasExactSynonym		Nonsyndromic X-Linked Cognitive Disability	Nonsyndromic X-Linked Cognitive Disability				NCIT:C133729	Mental Retardation, X-linked 1				
-MONDO:0010683	X-linked myotubular myopathy	oio:hasExactSynonym		MTM1	MTM1				NCIT:C118781	X-Linked Centronuclear Myopathy				
+MONDO:0010683	X-linked myotubular myopathy	oio:hasExactSynonym		MTM1	MTM1				NCIT:C118781	X-Linked Centronuclear Myopathy	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0010704	otopalatodigital syndrome type 1	oio:hasExactSynonym		Otopalatodigital Syndrome Type 1	Otopalatodigital Syndrome Type 1				NCIT:C118845	Otopalatodigital Syndrome Type 1				
 MONDO:0010720	partial androgen insensitivity syndrome	oio:hasExactSynonym		Partial Androgen Insensitivity Syndrome	Partial Androgen Insensitivity Syndrome				NCIT:C120192	Partial Androgen Insensitivity Syndrome				
 MONDO:0010731	Simpson-Golabi-Behmel syndrome	oio:hasExactSynonym		Simpson Dysmorphia Syndrome	Simpson Dysmorphia Syndrome				NCIT:C131002	Simpson-Golabi-Behmel Syndrome				
@@ -2486,8 +2486,8 @@ MONDO:0011094	dilated cardiomyopathy 1C	oio:hasExactSynonym		Dilated Cardiomyopa
 MONDO:0011264	torsion dystonia 6	oio:hasExactSynonym		Torsion Dystonia 6	Torsion Dystonia 6				NCIT:C156361	Torsion Dystonia 6				
 MONDO:0011368	papillary thyroid Microcarcinoma	oio:hasExactSynonym		Papillary microcarcinoma	Papillary microcarcinoma				NCIT:C46004	Thyroid Gland Papillary Microcarcinoma				
 MONDO:0011374	hypercholesterolemia, familial, 4	oio:hasExactSynonym		Autosomal Recessive Hypercholesterolemia	Autosomal Recessive Hypercholesterolemia				NCIT:C128114	Hypercholesterolemia, Familial, 4				
-MONDO:0011374	hypercholesterolemia, familial, 4	oio:hasExactSynonym		FCHL4	FCHL4				NCIT:C128114	Hypercholesterolemia, Familial, 4				
 MONDO:0011374	hypercholesterolemia, familial, 4	oio:hasExactSynonym		Hypercholesterolemia, Familial, 4	Hypercholesterolemia, Familial, 4				NCIT:C128114	Hypercholesterolemia, Familial, 4				
+MONDO:0011374	hypercholesterolemia, familial, 4	oio:hasExactSynonym		FCHL4	FCHL4				NCIT:C128114	Hypercholesterolemia, Familial, 4	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0011382	sickle cell anemia	oio:hasExactSynonym		Sickle-cell Disorders	Sickle-cell Disorders				NCIT:C34383	Sickle Cell Disease				
 MONDO:0011383	autoimmune lymphoproliferative syndrome type 2A	oio:hasExactSynonym		ALPS with Germline CASP10 Mutation	ALPS with Germline CASP10 Mutation				NCIT:C39576	Autoimmune Lymphoproliferative Syndrome with Germline CASP10 Mutation				
 MONDO:0011383	autoimmune lymphoproliferative syndrome type 2A	oio:hasExactSynonym		Autoimmune Lymphoproliferative Syndrome with Germline CASP10 Mutation	Autoimmune Lymphoproliferative Syndrome with Germline CASP10 Mutation				NCIT:C39576	Autoimmune Lymphoproliferative Syndrome with Germline CASP10 Mutation				
@@ -2513,7 +2513,7 @@ MONDO:0011927	tufted angioma	oio:hasExactSynonym		Acquired tufted hemangioma	Acq
 MONDO:0011927	tufted angioma	oio:hasExactSynonym		TA	TA				NCIT:C4487	Tufted Angioma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0011934	dermatofibrosarcoma protuberans	oio:hasExactSynonym		Dermatofibrosarcoma protuberans, NOS	Dermatofibrosarcoma protuberans, NOS				NCIT:C4683	Dermatofibrosarcoma Protuberans				
 MONDO:0011968	autosomal recessive limb-girdle muscular dystrophy type 2D	oio:hasExactSynonym		Autosomal Recessive Muscular Dystrophy Limb-Girdle 3	Autosomal Recessive Muscular Dystrophy Limb-Girdle 3				NCIT:C142081	Limb-Girdle Muscular Dystrophy Type 2D				
-MONDO:0011968	autosomal recessive limb-girdle muscular dystrophy type 2D	oio:hasExactSynonym		LGMDR3	LGMDR3				NCIT:C142081	Limb-Girdle Muscular Dystrophy Type 2D				
+MONDO:0011968	autosomal recessive limb-girdle muscular dystrophy type 2D	oio:hasExactSynonym		LGMDR3	LGMDR3				NCIT:C142081	Limb-Girdle Muscular Dystrophy Type 2D	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0011989	leishmaniasis	oio:hasExactSynonym		Leishmaniasis	Leishmaniasis				NCIT:C34767	Leishmaniasis				
 MONDO:0011996	chronic myelogenous leukemia, BCR-ABL1 positive	oio:hasExactSynonym		Chronic Myelogenous Leukemia, BCR::ABL1 Positive	Chronic Myelogenous Leukemia, BCR::ABL1 Positive				NCIT:C3174	Chronic Myeloid Leukemia, BCR-ABL1 Positive				
 MONDO:0011996	chronic myelogenous leukemia, BCR-ABL1 positive	oio:hasExactSynonym		Chronic Myeloid Leukemia, BCR-ABL1 Positive	Chronic Myeloid Leukemia, BCR-ABL1 Positive				NCIT:C3174	Chronic Myeloid Leukemia, BCR-ABL1 Positive				
@@ -2528,7 +2528,7 @@ MONDO:0012231	Charcot-Marie-Tooth disease type 2A2	oio:hasExactSynonym		Charcot-
 MONDO:0012249	Lynch syndrome 2	oio:hasExactSynonym		Lynch Syndrome 2	Lynch Syndrome 2				NCIT:C6726	Lynch 2 Syndrome				
 MONDO:0012249	Lynch syndrome 2	oio:hasExactSynonym		Lynch Syndrome II	Lynch Syndrome II				NCIT:C6726	Lynch 2 Syndrome				
 MONDO:0012268	AIDS	oio:hasExactSynonym		HIV / AIDS	HIV / AIDS				NCIT:C2851	Acquired Immunodeficiency Syndrome				
-MONDO:0012268	AIDS	oio:hasExactSynonym		HIV/AIDS	HIV/AIDS				NCIT:C2851	Acquired Immunodeficiency Syndrome				
+MONDO:0012268	AIDS	oio:hasExactSynonym		HIV/AIDS	HIV/AIDS				NCIT:C2851	Acquired Immunodeficiency Syndrome	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0012396	exercise-induced hyperinsulinism	oio:hasExactSynonym		Exercise-induced Hyperinsulinism	Exercise-induced Hyperinsulinism				NCIT:C131839	Monocarboxylate Transporter 1 Hyperinsulinism				
 MONDO:0012427	Loeys-Dietz syndrome 2	oio:hasExactSynonym		Marfan Syndrome Type 2	Marfan Syndrome Type 2				NCIT:C114768	Loeys-Dietz Syndrome Type 2				
 MONDO:0012427	Loeys-Dietz syndrome 2	oio:hasExactSynonym		Marfan Syndrome Type II	Marfan Syndrome Type II				NCIT:C114768	Loeys-Dietz Syndrome Type 2				
@@ -2543,10 +2543,10 @@ MONDO:0012640	Charcot-Marie-Tooth disease type 4J	oio:hasExactSynonym		Charcot-M
 MONDO:0012669	Legius syndrome	oio:hasExactSynonym		LGSS	LGSS				NCIT:C176941	Legius Syndrome	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0012672	cholelithiasis	oio:hasExactSynonym		Cholelithiasis	Cholelithiasis				NCIT:C122822	Cholelithiasis				
 MONDO:0012806	ectodermal dysplasia and immunodeficiency 2	oio:hasExactSynonym		Autosomal Dominant Anhidrotic Ectodermal Dysplasia	Autosomal Dominant Anhidrotic Ectodermal Dysplasia				NCIT:C176826	Ectodermal Dysplasia and Immunodeficiency 2				
-MONDO:0012806	ectodermal dysplasia and immunodeficiency 2	oio:hasExactSynonym		EDAID2	EDAID2				NCIT:C176826	Ectodermal Dysplasia and Immunodeficiency 2				
 MONDO:0012806	ectodermal dysplasia and immunodeficiency 2	oio:hasExactSynonym		Ectodermal Dysplasia and Immunodeficiency 2	Ectodermal Dysplasia and Immunodeficiency 2				NCIT:C176826	Ectodermal Dysplasia and Immunodeficiency 2				
 MONDO:0012806	ectodermal dysplasia and immunodeficiency 2	oio:hasExactSynonym		Ectodermal Dysplasia, Anhidrotic, with Immunodeficiency 2	Ectodermal Dysplasia, Anhidrotic, with Immunodeficiency 2				NCIT:C176826	Ectodermal Dysplasia and Immunodeficiency 2				
 MONDO:0012806	ectodermal dysplasia and immunodeficiency 2	oio:hasExactSynonym		Ectodermal Dysplasia, Hypohidrotic, with Immunodeficiency 2	Ectodermal Dysplasia, Hypohidrotic, with Immunodeficiency 2				NCIT:C176826	Ectodermal Dysplasia and Immunodeficiency 2				
+MONDO:0012806	ectodermal dysplasia and immunodeficiency 2	oio:hasExactSynonym		EDAID2	EDAID2				NCIT:C176826	Ectodermal Dysplasia and Immunodeficiency 2	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0012825	extraskeletal myxoid chondrosarcoma	oio:hasExactSynonym		Extraskeletal Myxoid Chondrosarcoma	Extraskeletal Myxoid Chondrosarcoma				NCIT:C27502	Extraskeletal Myxoid Chondrosarcoma				
 MONDO:0012825	extraskeletal myxoid chondrosarcoma	oio:hasExactSynonym		Myxoid Chondrosarcoma	Myxoid Chondrosarcoma				NCIT:C27502	Extraskeletal Myxoid Chondrosarcoma				
 MONDO:0012825	extraskeletal myxoid chondrosarcoma	oio:hasExactSynonym		Myxoid chondrosarcoma	Myxoid chondrosarcoma				NCIT:C27502	Extraskeletal Myxoid Chondrosarcoma				
@@ -2559,12 +2559,12 @@ MONDO:0012883	acute promyelocytic leukemia	oio:hasExactSynonym		Acute Promyelocy
 MONDO:0012883	acute promyelocytic leukemia	oio:hasExactSynonym		Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML::RARA Fusion	Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML::RARA Fusion				NCIT:C3182	Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA				
 MONDO:0012883	acute promyelocytic leukemia	oio:hasExactSynonym		Acute promyelocytic leukaemia, PML-RAR-alpha	Acute promyelocytic leukaemia, PML-RAR-alpha				NCIT:C3182	Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA				
 MONDO:0012883	acute promyelocytic leukemia	oio:hasExactSynonym		Acute promyelocytic leukaemia, t(15;17)(q22;q11-12)	Acute promyelocytic leukaemia, t(15;17)(q22;q11-12)				NCIT:C3182	Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA				
-MONDO:0012883	acute promyelocytic leukemia	oio:hasExactSynonym		M3	M3				NCIT:C3182	Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA				
 MONDO:0012883	acute promyelocytic leukemia	oio:hasExactSynonym		M3 OR Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA	M3 OR Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA				NCIT:C3182	Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA				
+MONDO:0012883	acute promyelocytic leukemia	oio:hasExactSynonym		M3	M3				NCIT:C3182	Acute Promyelocytic Leukemia with t(15;17)(q24.1;q21.2); PML-RARA	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0013081	lymphoproliferative syndrome 1	oio:hasExactSynonym		IL-2 Inducible T-cell Kinase Deficiency	IL-2 Inducible T-cell Kinase Deficiency				NCIT:C126344	Lymphoproliferative Syndrome 1				
 MONDO:0013081	lymphoproliferative syndrome 1	oio:hasExactSynonym		Lymphoproliferative Syndrome 1/ITK Deficiency	Lymphoproliferative Syndrome 1/ITK Deficiency				NCIT:C126344	Lymphoproliferative Syndrome 1				
 MONDO:0013098	noise induced hearing loss	oio:hasExactSynonym		Noise Induced Hearing Loss	Noise Induced Hearing Loss				NCIT:C34664	Noise Induced Hearing Loss				
-MONDO:0013129	cone dystrophy 4	oio:hasExactSynonym		ACHM5	ACHM5				NCIT:C164226	Achromatopsia 5				
+MONDO:0013129	cone dystrophy 4	oio:hasExactSynonym		ACHM5	ACHM5				NCIT:C164226	Achromatopsia 5	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0013171	purine nucleoside phosphorylase deficiency	oio:hasExactSynonym		PNPD	PNPD				NCIT:C176817	Purine Nucleoside Phosphorylase Deficiency	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0013280	myxoid liposarcoma	oio:hasExactSynonym		MLPS	MLPS				NCIT:C27781	Myxoid Liposarcoma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0013282	alpha 1-antitrypsin deficiency	oio:hasExactSynonym		Alpha 1-Antitrypsin Disease	Alpha 1-Antitrypsin Disease				NCIT:C84397	Alpha-1 Antitrypsin Deficiency				
@@ -2574,8 +2574,8 @@ MONDO:0013296	myeloid neoplasm associated with FGFR1 rearrangement	oio:hasExactS
 MONDO:0013296	myeloid neoplasm associated with FGFR1 rearrangement	oio:hasExactSynonym		Myeloid/Lymphoid Neoplasm with FGFR1 Rearrangement	Myeloid/Lymphoid Neoplasm with FGFR1 Rearrangement				NCIT:C84277	Myeloid/Lymphoid Neoplasms with FGFR1 Rearrangement				
 MONDO:0013301	aromatase deficiency	oio:hasExactSynonym		P450-Aromatase Deficiency	P450-Aromatase Deficiency				NCIT:C120144	P450-Aromatase Deficiency				
 MONDO:0013310	congenital adrenal hyperplasia due to cytochrome P450 oxidoreductase deficiency	oio:hasExactSynonym		Congenital Adrenal Hyperplasia due to Cytochrome P450 Oxidoreductase Deficiency	Congenital Adrenal Hyperplasia due to Cytochrome P450 Oxidoreductase Deficiency				NCIT:C174439	Congenital Adrenal Hyperplasia due to Cytochrome P450 Oxidoreductase Deficiency				
-MONDO:0013521	dyskeratosis congenita, autosomal dominant 2	oio:hasExactSynonym		DKCB4	DKCB4				NCIT:C176922	Dyskeratosis Congenita, Autosomal Dominant 2				
-MONDO:0013563	multiple congenital anomalies-hypotonia-seizures syndrome 1	oio:hasExactSynonym		GPIBD3	GPIBD3				NCIT:C176896	Multiple Congenital Anomalies-Hypotonia-Seizures Syndrome 1				
+MONDO:0013521	dyskeratosis congenita, autosomal dominant 2	oio:hasExactSynonym		DKCB4	DKCB4				NCIT:C176922	Dyskeratosis Congenita, Autosomal Dominant 2	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0013563	multiple congenital anomalies-hypotonia-seizures syndrome 1	oio:hasExactSynonym		GPIBD3	GPIBD3				NCIT:C176896	Multiple Congenital Anomalies-Hypotonia-Seizures Syndrome 1	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0013779	Wiskott-Aldrich syndrome 2	oio:hasExactSynonym		WIP Deficiency	WIP Deficiency				NCIT:C176820	Wiskott-Aldrich Syndrome 2				
 MONDO:0013779	Wiskott-Aldrich syndrome 2	oio:hasExactSynonym		Wiskott-Aldrich Syndrome Interacting Protein Deficiency	Wiskott-Aldrich Syndrome Interacting Protein Deficiency				NCIT:C176820	Wiskott-Aldrich Syndrome 2				
 MONDO:0013874	glucocorticoid deficiency 4	oio:hasExactSynonym		Familial Glucocorticoid Deficiency Type 4	Familial Glucocorticoid Deficiency Type 4				NCIT:C131452	Familial Glucocorticoid Deficiency Type 4				
@@ -2585,31 +2585,31 @@ MONDO:0013930	peroxisome biogenesis disorder 4A (Zellweger)	oio:hasExactSynonym	
 MONDO:0013932	peroxisome biogenesis disorder 5A (Zellweger)	oio:hasExactSynonym		Peroxisome Biogenesis Disorder 5A	Peroxisome Biogenesis Disorder 5A				NCIT:C155756	Peroxisome Biogenesis Disorder 5A				
 MONDO:0013936	peroxisome biogenesis disorder 6A (Zellweger)	oio:hasExactSynonym		Peroxisome Biogenesis Disorder 6A	Peroxisome Biogenesis Disorder 6A				NCIT:C155758	Peroxisome Biogenesis Disorder 6A				
 MONDO:0014040	autosomal recessive osteopetrosis 8	oio:hasExactSynonym		Autosomal Recessive Osteopetrosis 8	Autosomal Recessive Osteopetrosis 8				NCIT:C150556	Autosomal Recessive Osteopetrosis 8				
-MONDO:0014076	dyskeratosis congenita, autosomal recessive 5	oio:hasExactSynonym		DKCA4	DKCA4				NCIT:C176928	Dyskeratosis Congenita, Autosomal Recessive 5				
+MONDO:0014076	dyskeratosis congenita, autosomal recessive 5	oio:hasExactSynonym		DKCA4	DKCA4				NCIT:C176928	Dyskeratosis Congenita, Autosomal Recessive 5	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0014198	mitochondrial DNA depletion syndrome 13	oio:hasExactSynonym		Mitochondrial DNA Depletion Syndrome 13	Mitochondrial DNA Depletion Syndrome 13				NCIT:C172095	Mitochondrial DNA Depletion Syndrome 13				
 MONDO:0014221	triosephosphate isomerase deficiency	oio:hasExactSynonym		TP1 Deficiency	TP1 Deficiency				NCIT:C131652	Triosephosphate Isomerase Deficiency				
 MONDO:0014221	triosephosphate isomerase deficiency	oio:hasExactSynonym		Triosephosphate-Isomerase Deficiency	Triosephosphate-Isomerase Deficiency				NCIT:C131652	Triosephosphate Isomerase Deficiency				
-MONDO:0014292	leukoencephalopathy with mild cerebellar ataxia and white matter edema	oio:hasExactSynonym		CC2L	CC2L				NCIT:C171603	Leukoencephalopathy with Ataxia				
 MONDO:0014292	leukoencephalopathy with mild cerebellar ataxia and white matter edema	oio:hasExactSynonym		CLCN2-Related Leukoencephalopathy	CLCN2-Related Leukoencephalopathy				NCIT:C171603	Leukoencephalopathy with Ataxia				
+MONDO:0014292	leukoencephalopathy with mild cerebellar ataxia and white matter edema	oio:hasExactSynonym		CC2L	CC2L				NCIT:C171603	Leukoencephalopathy with Ataxia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0014378	primary ciliary dyskinesia 29	oio:hasExactSynonym		Primary Ciliary Dyskinesia 29	Primary Ciliary Dyskinesia 29				NCIT:C172393	Primary Ciliary Dyskinesia 29				
 MONDO:0014493	autoimmune lymphoproliferative syndrome due to CTLA4 haploinsufficiency	oio:hasExactSynonym		CTLA4 Deficiency	CTLA4 Deficiency				NCIT:C126341	CTLA4 Deficiency				
-MONDO:0014690	dyskeratosis congenita, autosomal dominant 6	oio:hasExactSynonym		DKCB7	DKCB7				NCIT:C176924	Dyskeratosis Congenita, Autosomal Dominant 6				
+MONDO:0014690	dyskeratosis congenita, autosomal dominant 6	oio:hasExactSynonym		DKCB7	DKCB7				NCIT:C176924	Dyskeratosis Congenita, Autosomal Dominant 6	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0014735	Charcot-Marie-Tooth disease type 2Y	oio:hasExactSynonym		Charcot-Marie-Tooth Disease Type 2Y	Charcot-Marie-Tooth Disease Type 2Y				NCIT:C168974	Charcot-Marie-Tooth Disease Type 2Y				
 MONDO:0014900	autosomal recessive limb-girdle muscular dystrophy type 2Y	oio:hasExactSynonym		Autosomal Recessive Limb-Girdle Muscular Dystrophy Type 2Y	Autosomal Recessive Limb-Girdle Muscular Dystrophy Type 2Y				NCIT:C181000	Autosomal Recessive Limb-Girdle Muscular Dystrophy Type 2Y				
 MONDO:0014900	autosomal recessive limb-girdle muscular dystrophy type 2Y	oio:hasExactSynonym		TOR1AIP1-Related LGMD	TOR1AIP1-Related LGMD				NCIT:C181000	Autosomal Recessive Limb-Girdle Muscular Dystrophy Type 2Y				
 MONDO:0014900	autosomal recessive limb-girdle muscular dystrophy type 2Y	oio:hasExactSynonym		TOR1AIP1-Related Limb-Girdle Muscular Dystrophy	TOR1AIP1-Related Limb-Girdle Muscular Dystrophy				NCIT:C181000	Autosomal Recessive Limb-Girdle Muscular Dystrophy Type 2Y				
 MONDO:0014900	autosomal recessive limb-girdle muscular dystrophy type 2Y	oio:hasExactSynonym		MRRSDC	MRRSDC				NCIT:C181000	Autosomal Recessive Limb-Girdle Muscular Dystrophy Type 2Y	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0014977	autosomal recessive limb-girdle muscular dystrophy type 2R1	oio:hasExactSynonym		Autosomal Recessive Muscular Dystrophy Limb-Girdle 21	Autosomal Recessive Muscular Dystrophy Limb-Girdle 21				NCIT:C142082	Limb-Girdle Muscular Dystrophy Type 2Z				
-MONDO:0014977	autosomal recessive limb-girdle muscular dystrophy type 2R1	oio:hasExactSynonym		LGMDR21	LGMDR21				NCIT:C142082	Limb-Girdle Muscular Dystrophy Type 2Z				
+MONDO:0014977	autosomal recessive limb-girdle muscular dystrophy type 2R1	oio:hasExactSynonym		LGMDR21	LGMDR21				NCIT:C142082	Limb-Girdle Muscular Dystrophy Type 2Z	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0015027	familial isolated hyperparathyroidism	oio:hasExactSynonym		Hereditary Isolated Hyperparathyroidism	Hereditary Isolated Hyperparathyroidism				NCIT:C94830	Hereditary Isolated Hyperparathyroidism				
 MONDO:0015031	extraneural perineurioma	oio:hasExactSynonym		Soft Tissue Perineurioma (WHO Grades I, II, or III)	Soft Tissue Perineurioma (WHO Grades I, II, or III)				NCIT:C6912	Soft Tissue Perineurioma				
 MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		MDS with Increased Blasts-2	MDS with Increased Blasts-2				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia				
-MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		MDS-EB2	MDS-EB2				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia				
-MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		MDS-IB-2	MDS-IB-2				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia				
-MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		MDS-IB2	MDS-IB2				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia				
-MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		MDS/AML	MDS/AML				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia				
 MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		Myelodysplastic Syndrome/Acute Myeloid Leukemia	Myelodysplastic Syndrome/Acute Myeloid Leukemia				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia				
 MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		RAEB II	RAEB II				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia				
+MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		MDS-EB2	MDS-EB2				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		MDS-IB-2	MDS-IB-2				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		MDS-IB2	MDS-IB2				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0015041	myelodysplastic syndrome with excess blasts-2	oio:hasExactSynonym		MDS/AML	MDS/AML				NCIT:C7168	Myelodysplastic Syndrome/Acute Myeloid Leukemia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0015045	alpha-heavy chain disease	oio:hasExactSynonym		Immunoproliferative disease, NOS	Immunoproliferative disease, NOS				NCIT:C3132	Alpha Heavy Chain Disease				
 MONDO:0015062	gastric neuroendocrine tumor, well differentiated, low or intermediate grade	oio:hasExactSynonym		Gastric Well Differentiated Neuroendocrine Neoplasm	Gastric Well Differentiated Neuroendocrine Neoplasm				NCIT:C95871	Gastric Neuroendocrine Tumor				
 MONDO:0015062	gastric neuroendocrine tumor, well differentiated, low or intermediate grade	oio:hasExactSynonym		Gastric Well-Differentiated Neuroendocrine Neoplasm	Gastric Well-Differentiated Neuroendocrine Neoplasm				NCIT:C95871	Gastric Neuroendocrine Tumor				
@@ -2760,10 +2760,10 @@ MONDO:0016242	hemoglobin C disease	oio:hasExactSynonym		Hemoglobin C Disease	Hem
 MONDO:0016296	holoprosencephaly	oio:hasExactSynonym		Holoprosencephaly	Holoprosencephaly				NCIT:C74988	Holoprosencephaly				
 MONDO:0016318	progressive multifocal leukoencephalopathy	oio:hasExactSynonym		Progressive Multifocal Leukoencephalopathy	Progressive Multifocal Leukoencephalopathy				NCIT:C26815	Progressive Multifocal Leukoencephalopathy				
 MONDO:0016322	neuroendocrine cell hyperplasia of infancy	oio:hasExactSynonym		Neuroendocrine Cell Hyperplasia of Infancy	Neuroendocrine Cell Hyperplasia of Infancy				NCIT:C120169	Neuroendocrine Cell Hyperplasia of Infancy				
-MONDO:0016354	xeroderma pigmentosum-Cockayne syndrome complex	oio:hasExactSynonym		XP-CS	XP-CS				NCIT:C156031	Xeroderma Pigmentosum-Cockayne Syndrome Complex				
-MONDO:0016354	xeroderma pigmentosum-Cockayne syndrome complex	oio:hasExactSynonym		XP/CS	XP/CS				NCIT:C156031	Xeroderma Pigmentosum-Cockayne Syndrome Complex				
 MONDO:0016354	xeroderma pigmentosum-Cockayne syndrome complex	oio:hasExactSynonym		Xeroderma Pigmentosum-Cockayne Syndrome Complex	Xeroderma Pigmentosum-Cockayne Syndrome Complex				NCIT:C156031	Xeroderma Pigmentosum-Cockayne Syndrome Complex				
 MONDO:0016354	xeroderma pigmentosum-Cockayne syndrome complex	oio:hasExactSynonym		Xeroderma Pigmentosum/Cockayne Syndrome	Xeroderma Pigmentosum/Cockayne Syndrome				NCIT:C156031	Xeroderma Pigmentosum-Cockayne Syndrome Complex				
+MONDO:0016354	xeroderma pigmentosum-Cockayne syndrome complex	oio:hasExactSynonym		XP-CS	XP-CS				NCIT:C156031	Xeroderma Pigmentosum-Cockayne Syndrome Complex	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0016354	xeroderma pigmentosum-Cockayne syndrome complex	oio:hasExactSynonym		XP/CS	XP/CS				NCIT:C156031	Xeroderma Pigmentosum-Cockayne Syndrome Complex	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0016356	diffuse cutaneous systemic sclerosis	oio:hasExactSynonym		Diffuse Cutaneous Systemic Sclerosis	Diffuse Cutaneous Systemic Sclerosis				NCIT:C116791	Diffuse Cutaneous Systemic Sclerosis				
 MONDO:0016368	Rothmund-Thomson syndrome type 1	oio:hasExactSynonym		Rothmund-Thomson Syndrome Type 1	Rothmund-Thomson Syndrome Type 1				NCIT:C178826	Rothmund-Thomson Syndrome Type 1				
 MONDO:0016369	Rothmund-Thomson syndrome type 2	oio:hasExactSynonym		Rothmund-Thomson Syndrome Type 2	Rothmund-Thomson Syndrome Type 2				NCIT:C178827	Rothmund-Thomson Syndrome Type 2				
@@ -2924,11 +2924,11 @@ MONDO:0017594	indolent B-cell non-Hodgkin lymphoma	oio:hasExactSynonym		Indolent
 MONDO:0017595	aggressive B-cell non-Hodgkin lymphoma	oio:hasExactSynonym		Aggressive B-Cell Non-Hodgkin Lymphoma	Aggressive B-Cell Non-Hodgkin Lymphoma				NCIT:C178541	Aggressive B-Cell Non-Hodgkin Lymphoma				
 MONDO:0017596	diffuse large B-cell lymphoma of the central nervous system	oio:hasExactSynonym		CNS Primary Large B-Cell Lymphoma	CNS Primary Large B-Cell Lymphoma				NCIT:C71720	Primary Diffuse Large B-Cell Lymphoma of the Central Nervous System				
 MONDO:0017596	diffuse large B-cell lymphoma of the central nervous system	oio:hasExactSynonym		Central Nervous System Primary Large B-Cell Lymphoma	Central Nervous System Primary Large B-Cell Lymphoma				NCIT:C71720	Primary Diffuse Large B-Cell Lymphoma of the Central Nervous System				
-MONDO:0017596	diffuse large B-cell lymphoma of the central nervous system	oio:hasExactSynonym		PCNS-LBCL	PCNS-LBCL				NCIT:C71720	Primary Diffuse Large B-Cell Lymphoma of the Central Nervous System				
 MONDO:0017596	diffuse large B-cell lymphoma of the central nervous system	oio:hasExactSynonym		Primary Diffuse Large B-Cell Lymphoma of the CNS	Primary Diffuse Large B-Cell Lymphoma of the CNS				NCIT:C71720	Primary Diffuse Large B-Cell Lymphoma of the Central Nervous System				
 MONDO:0017596	diffuse large B-cell lymphoma of the central nervous system	oio:hasExactSynonym		Primary Large B-Cell Lymphoma of the CNS	Primary Large B-Cell Lymphoma of the CNS				NCIT:C71720	Primary Diffuse Large B-Cell Lymphoma of the Central Nervous System				
 MONDO:0017596	diffuse large B-cell lymphoma of the central nervous system	oio:hasExactSynonym		Primary Large B-Cell Lymphoma of the Central Nervous System	Primary Large B-Cell Lymphoma of the Central Nervous System				NCIT:C71720	Primary Diffuse Large B-Cell Lymphoma of the Central Nervous System				
 MONDO:0017596	diffuse large B-cell lymphoma of the central nervous system	oio:hasExactSynonym		Primary diffuse large B-cell lymphoma of the CNS	Primary diffuse large B-cell lymphoma of the CNS				NCIT:C71720	Primary Diffuse Large B-Cell Lymphoma of the Central Nervous System				
+MONDO:0017596	diffuse large B-cell lymphoma of the central nervous system	oio:hasExactSynonym		PCNS-LBCL	PCNS-LBCL				NCIT:C71720	Primary Diffuse Large B-Cell Lymphoma of the Central Nervous System	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0017598	primary cutaneous anaplastic large cell lymphoma	oio:hasExactSynonym		Primary Cutaneous Anaplastic Large Cell Lymphoma	Primary Cutaneous Anaplastic Large Cell Lymphoma				NCIT:C6860	Primary Cutaneous Anaplastic Large Cell Lymphoma				
 MONDO:0017598	primary cutaneous anaplastic large cell lymphoma	oio:hasExactSynonym		Primary cutaneous anaplastic large cell lymphoma	Primary cutaneous anaplastic large cell lymphoma				NCIT:C6860	Primary Cutaneous Anaplastic Large Cell Lymphoma				
 MONDO:0017599	splenic diffuse red pulp small B-cell lymphoma	oio:hasExactSynonym		Splenic Diffuse Red Pulp Small B-Cell Lymphoma	Splenic Diffuse Red Pulp Small B-Cell Lymphoma				NCIT:C80309	Splenic Diffuse Red Pulp Small B-Cell Lymphoma				
@@ -2964,8 +2964,8 @@ MONDO:0017842	Senior-Loken syndrome	oio:hasExactSynonym		Senior-Loken Syndrome	S
 MONDO:0017850	sirenomelia	oio:hasExactSynonym		SIRENOMELIA	SIRENOMELIA				NCIT:C118455	Sirenomelia				
 MONDO:0017850	sirenomelia	oio:hasExactSynonym		Sirenomelia	Sirenomelia				NCIT:C118455	Sirenomelia				
 MONDO:0017858	acute erythroid leukemia	oio:hasExactSynonym		Acute erythroid leukaemia	Acute erythroid leukaemia				NCIT:C8923	Acute Erythroid Leukemia				
-MONDO:0017858	acute erythroid leukemia	oio:hasExactSynonym		M6	M6				NCIT:C8923	Acute Erythroid Leukemia				
 MONDO:0017858	acute erythroid leukemia	oio:hasExactSynonym		M6 OR Acute Erythroid Leukemia	M6 OR Acute Erythroid Leukemia				NCIT:C8923	Acute Erythroid Leukemia				
+MONDO:0017858	acute erythroid leukemia	oio:hasExactSynonym		M6	M6				NCIT:C8923	Acute Erythroid Leukemia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0017879	hantavirus pulmonary syndrome	oio:hasExactSynonym		Hantavirus Pulmonary Syndrome	Hantavirus Pulmonary Syndrome				NCIT:C84747	Hantavirus Pulmonary Syndrome				
 MONDO:0017880	Rift valley fever	oio:hasExactSynonym		Rift Valley Fever	Rift Valley Fever				NCIT:C128419	Rift Valley Fever				
 MONDO:0017884	papillary renal cell carcinoma	oio:hasExactSynonym		Papillary RCC	Papillary RCC				NCIT:C6975	Papillary Renal Cell Carcinoma				
@@ -3016,9 +3016,9 @@ MONDO:0018177	glioblastoma	oio:hasExactSynonym		CNS, glioblastoma (GBM)	CNS, gli
 MONDO:0018221	immune hydrops fetalis	oio:hasExactSynonym		Immune Hydrops Fetalis	Immune Hydrops Fetalis				NCIT:C111904	Immune Hydrops Fetalis				
 MONDO:0018223	systemic Epstein-Barr virus-positive T-cell lymphoproliferative disease of childhood	oio:hasExactSynonym		Systemic Epstein-Barr Virus-Positive T-Cell Lymphoma of Childhood	Systemic Epstein-Barr Virus-Positive T-Cell Lymphoma of Childhood				NCIT:C80374	Systemic EBV-Positive T-Cell Lymphoma of Childhood				
 MONDO:0018224	hydroa vacciniforme-like lymphoma	oio:hasExactSynonym		HV LPD	HV LPD				NCIT:C45327	Hydroa Vacciniforme Lymphoproliferative Disorder				
-MONDO:0018224	hydroa vacciniforme-like lymphoma	oio:hasExactSynonym		HV-LPD	HV-LPD				NCIT:C45327	Hydroa Vacciniforme Lymphoproliferative Disorder				
 MONDO:0018224	hydroa vacciniforme-like lymphoma	oio:hasExactSynonym		HV-Like LPD	HV-Like LPD				NCIT:C45327	Hydroa Vacciniforme Lymphoproliferative Disorder				
 MONDO:0018224	hydroa vacciniforme-like lymphoma	oio:hasExactSynonym		Hydroa Vacciniforme Lymphoproliferative Disorder	Hydroa Vacciniforme Lymphoproliferative Disorder				NCIT:C45327	Hydroa Vacciniforme Lymphoproliferative Disorder				
+MONDO:0018224	hydroa vacciniforme-like lymphoma	oio:hasExactSynonym		HV-LPD	HV-LPD				NCIT:C45327	Hydroa Vacciniforme Lymphoproliferative Disorder	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0018225	ALK-positive large B-cell lymphoma	oio:hasExactSynonym		ALK positive large B-cell lymphoma	ALK positive large B-cell lymphoma				NCIT:C7225	ALK-Positive Large B-Cell Lymphoma				
 MONDO:0018229	Stevens-Johnson syndrome	oio:hasExactSynonym		Stevens-Johnson Syndrome	Stevens-Johnson Syndrome				NCIT:C79484	Stevens-Johnson Syndrome				
 MONDO:0018237	acrofacial dysostosis	oio:hasExactSynonym		Acrofacial Dysostosis	Acrofacial Dysostosis				NCIT:C35795	Acrofacial Dysostosis				
@@ -3032,10 +3032,10 @@ MONDO:0018360	neonatal lupus erythematosus	oio:hasExactSynonym		Neonatal Lupus E
 MONDO:0018369	immature ovarian teratoma	oio:hasExactSynonym		Grade 2 Ovarian Teratoma	Grade 2 Ovarian Teratoma				NCIT:C8111	Immature Ovarian Teratoma				
 MONDO:0018381	osteochondrosis	oio:hasExactSynonym		Osteochondrosis	Osteochondrosis				NCIT:C34879	Osteochondrosis				
 MONDO:0018439	eosinophilic colitis	oio:hasExactSynonym		Eosinophilic Colitis	Eosinophilic Colitis				NCIT:C27053	Eosinophilic Colitis				
-MONDO:0018449	acquired cystic disease-associated renal cell carcinoma	oio:hasExactSynonym		ACD-RCC	ACD-RCC				NCIT:C157718	Acquired Cystic Disease-Associated Renal Cell Carcinoma				
 MONDO:0018449	acquired cystic disease-associated renal cell carcinoma	oio:hasExactSynonym		Acquired Cystic Disease-Associated Renal Cell Carcinoma	Acquired Cystic Disease-Associated Renal Cell Carcinoma				NCIT:C157718	Acquired Cystic Disease-Associated Renal Cell Carcinoma				
 MONDO:0018449	acquired cystic disease-associated renal cell carcinoma	oio:hasExactSynonym		Acquired cystic disease-associated renal cell carcinoma (RCC)	Acquired cystic disease-associated renal cell carcinoma (RCC)				NCIT:C157718	Acquired Cystic Disease-Associated Renal Cell Carcinoma				
 MONDO:0018449	acquired cystic disease-associated renal cell carcinoma	oio:hasExactSynonym		Cyst-associated renal cell carcinoma	Cyst-associated renal cell carcinoma				NCIT:C157718	Acquired Cystic Disease-Associated Renal Cell Carcinoma				
+MONDO:0018449	acquired cystic disease-associated renal cell carcinoma	oio:hasExactSynonym		ACD-RCC	ACD-RCC				NCIT:C157718	Acquired Cystic Disease-Associated Renal Cell Carcinoma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0018453	familial atypical multiple mole melanoma syndrome	oio:hasExactSynonym		Familial atypical multiple mole melanoma (FAMMM)	Familial atypical multiple mole melanoma (FAMMM)				NCIT:C27264	Hereditary Atypical Mole Melanoma Syndrome				
 MONDO:0018453	familial atypical multiple mole melanoma syndrome	oio:hasExactSynonym		Hereditary Atypical Mole Melanoma Syndrome	Hereditary Atypical Mole Melanoma Syndrome				NCIT:C27264	Hereditary Atypical Mole Melanoma Syndrome				
 MONDO:0018458	familial hypocalciuric hypercalcemia	oio:hasExactSynonym		Familial Hypocalciuric Hypercalcemia	Familial Hypocalciuric Hypercalcemia				NCIT:C123262	Familial Hypocalciuric Hypercalcemia				
@@ -3073,11 +3073,11 @@ MONDO:0018716	partially involuting congenital hemangioma	oio:hasExactSynonym		Pa
 MONDO:0018734	verrucous hemangioma	oio:hasExactSynonym		Verrucous Hemangioma	Verrucous Hemangioma				NCIT:C4299	Verrucous Hemangioma				
 MONDO:0018734	verrucous hemangioma	oio:hasExactSynonym		Verrucous Venous Malformation	Verrucous Venous Malformation				NCIT:C4299	Verrucous Hemangioma				
 MONDO:0018735	multifocal lymphangioendotheliomatosis-thrombocytopenia syndrome	oio:hasExactSynonym		Caspase-Like Protein Gene	Caspase-Like Protein Gene				NCIT:C60672	MALT1 wt Allele				
-MONDO:0018735	multifocal lymphangioendotheliomatosis-thrombocytopenia syndrome	oio:hasExactSynonym		IMD12	IMD12				NCIT:C60672	MALT1 wt Allele				
 MONDO:0018735	multifocal lymphangioendotheliomatosis-thrombocytopenia syndrome	oio:hasExactSynonym		MALT1 Paracaspase wt Allele	MALT1 Paracaspase wt Allele				NCIT:C60672	MALT1 wt Allele				
 MONDO:0018735	multifocal lymphangioendotheliomatosis-thrombocytopenia syndrome	oio:hasExactSynonym		MALT1 Protease Gene	MALT1 Protease Gene				NCIT:C60672	MALT1 wt Allele				
 MONDO:0018735	multifocal lymphangioendotheliomatosis-thrombocytopenia syndrome	oio:hasExactSynonym		Mucosa Associated Lymphoid Tissue Lymphoma Translocation Gene 1	Mucosa Associated Lymphoid Tissue Lymphoma Translocation Gene 1				NCIT:C60672	MALT1 wt Allele				
-MONDO:0018735	multifocal lymphangioendotheliomatosis-thrombocytopenia syndrome	oio:hasExactSynonym		PCASP1	PCASP1				NCIT:C60672	MALT1 wt Allele				
+MONDO:0018735	multifocal lymphangioendotheliomatosis-thrombocytopenia syndrome	oio:hasExactSynonym		IMD12	IMD12				NCIT:C60672	MALT1 wt Allele	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0018735	multifocal lymphangioendotheliomatosis-thrombocytopenia syndrome	oio:hasExactSynonym		PCASP1	PCASP1				NCIT:C60672	MALT1 wt Allele	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0018740	drug-induced methemoglobinemia	oio:hasExactSynonym		Drug-Induced Methemoglobinemia	Drug-Induced Methemoglobinemia				NCIT:C101045	Drug Induced Methemoglobinemia				
 MONDO:0018769	isosporiasis	oio:hasExactSynonym		Isosporiasis	Isosporiasis				NCIT:C4076	Isosporiasis				
 MONDO:0018800	Kallmann syndrome	oio:hasExactSynonym		Kallmann Syndrome	Kallmann Syndrome				NCIT:C75479	Hypogonadotropic Hypogonadism with Anosmia				
@@ -3088,11 +3088,11 @@ MONDO:0018850	proliferating trichilemmal cyst	oio:hasExactSynonym		Proliferating
 MONDO:0018864	Kikuchi-Fujimoto disease	oio:hasExactSynonym		Kikuchi Lymphadenitis	Kikuchi Lymphadenitis				NCIT:C71719	Kikuchi-Fujimoto Disease				
 MONDO:0018864	Kikuchi-Fujimoto disease	oio:hasExactSynonym		Kikuchi-Fujimoto Disease	Kikuchi-Fujimoto Disease				NCIT:C71719	Kikuchi-Fujimoto Disease				
 MONDO:0018868	metachromatic leukodystrophy	oio:hasExactSynonym		Metachromatic Leukodystrophy	Metachromatic Leukodystrophy				NCIT:C61251	Metachromatic Leukodystrophy				
-MONDO:0018871	acute myelomonocytic leukemia M4	oio:hasExactSynonym		M4	M4				NCIT:C7463	Acute Myelomonocytic Leukemia				
 MONDO:0018871	acute myelomonocytic leukemia M4	oio:hasExactSynonym		M4 OR Acute Myelomonocytic Leukemia	M4 OR Acute Myelomonocytic Leukemia				NCIT:C7463	Acute Myelomonocytic Leukemia				
+MONDO:0018871	acute myelomonocytic leukemia M4	oio:hasExactSynonym		M4	M4				NCIT:C7463	Acute Myelomonocytic Leukemia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0018872	acute megakaryoblastic leukemia	oio:hasExactSynonym		Acute megakaryoblastic leukaemia	Acute megakaryoblastic leukaemia				NCIT:C3170	Acute Megakaryoblastic Leukemia				
-MONDO:0018872	acute megakaryoblastic leukemia	oio:hasExactSynonym		M7	M7				NCIT:C3170	Acute Megakaryoblastic Leukemia				
 MONDO:0018872	acute megakaryoblastic leukemia	oio:hasExactSynonym		M7 OR Acute Megakaryoblastic Leukemia	M7 OR Acute Megakaryoblastic Leukemia				NCIT:C3170	Acute Megakaryoblastic Leukemia				
+MONDO:0018872	acute megakaryoblastic leukemia	oio:hasExactSynonym		M7	M7				NCIT:C3170	Acute Megakaryoblastic Leukemia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0018875	Li-Fraumeni syndrome	oio:hasExactSynonym		Li-Fraumeni Syndrome, TP53-Associated	Li-Fraumeni Syndrome, TP53-Associated				NCIT:C3476	Li-Fraumeni Syndrome				
 MONDO:0018875	Li-Fraumeni syndrome	oio:hasExactSynonym		TP53-Associated Li-Fraumeni Syndrome	TP53-Associated Li-Fraumeni Syndrome				NCIT:C3476	Li-Fraumeni Syndrome				
 MONDO:0018881	myelodysplastic syndrome	oio:hasExactSynonym		MDN	MDN				NCIT:C3247	Myelodysplastic Syndrome	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
@@ -3134,7 +3134,7 @@ MONDO:0019002	Lhermitte-Duclos disease	oio:hasExactSynonym		Dysplastic gangliocy
 MONDO:0019002	Lhermitte-Duclos disease	oio:hasExactSynonym		Lhermitte-Duclos Disease	Lhermitte-Duclos Disease				NCIT:C8419	Dysplastic Cerebellar Gangliocytoma				
 MONDO:0019004	kidney Wilms tumor	oio:hasExactSynonym		Kidney Nephroblastoma	Kidney Nephroblastoma				NCIT:C40407	Kidney Wilms Tumor				
 MONDO:0019010	congenital isolated hyperinsulinism	oio:hasExactSynonym		Familial Hyperinsulinemic Hypoglycemia-1	Familial Hyperinsulinemic Hypoglycemia-1				NCIT:C122923	Persistent Hyperinsulinemic Hypoglycemia of Infancy				
-MONDO:0019010	congenital isolated hyperinsulinism	oio:hasExactSynonym		HHF1	HHF1				NCIT:C122923	Persistent Hyperinsulinemic Hypoglycemia of Infancy				
+MONDO:0019010	congenital isolated hyperinsulinism	oio:hasExactSynonym		HHF1	HHF1				NCIT:C122923	Persistent Hyperinsulinemic Hypoglycemia of Infancy	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0019018	Tako-tsubo cardiomyopathy	oio:hasExactSynonym		Tako-Tsubo Cardiomyopathy	Tako-Tsubo Cardiomyopathy				NCIT:C85181	Takotsubo Cardiomyopathy				
 MONDO:0019018	Tako-tsubo cardiomyopathy	oio:hasExactSynonym		TTS	TTS				NCIT:C85181	Takotsubo Cardiomyopathy	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0019019	osteogenesis imperfecta	oio:hasExactSynonym		Osteogenesis Imperfecta	Osteogenesis Imperfecta				NCIT:C26837	Osteogenesis Imperfecta				
@@ -3202,32 +3202,32 @@ MONDO:0019438	AL amyloidosis	oio:hasExactSynonym		Immunoglobulin-Related Amyloid
 MONDO:0019444	trichinellosis	oio:hasExactSynonym		Trichinellosis	Trichinellosis				NCIT:C85199	Trichinosis				
 MONDO:0019445	trichofolliculoma	oio:hasExactSynonym		Trichofolliculoma	Trichofolliculoma				NCIT:C4112	Trichofolliculoma				
 MONDO:0019452	myeloproliferative neoplasm, unclassifiable	oio:hasExactSynonym		Chronic myeloproliferative disease, NOS	Chronic myeloproliferative disease, NOS				NCIT:C27350	Myeloproliferative Neoplasm, Not Otherwise Specified				
-MONDO:0019452	myeloproliferative neoplasm, unclassifiable	oio:hasExactSynonym		MPN-NOS	MPN-NOS				NCIT:C27350	Myeloproliferative Neoplasm, Not Otherwise Specified				
 MONDO:0019452	myeloproliferative neoplasm, unclassifiable	oio:hasExactSynonym		Myeloproliferative Neoplasm, NOS	Myeloproliferative Neoplasm, NOS				NCIT:C27350	Myeloproliferative Neoplasm, Not Otherwise Specified				
 MONDO:0019452	myeloproliferative neoplasm, unclassifiable	oio:hasExactSynonym		Myeloproliferative Neoplasm, Not Otherwise Specified	Myeloproliferative Neoplasm, Not Otherwise Specified				NCIT:C27350	Myeloproliferative Neoplasm, Not Otherwise Specified				
 MONDO:0019452	myeloproliferative neoplasm, unclassifiable	oio:hasExactSynonym		Myeloproliferative disease, NOS	Myeloproliferative disease, NOS				NCIT:C27350	Myeloproliferative Neoplasm, Not Otherwise Specified				
 MONDO:0019452	myeloproliferative neoplasm, unclassifiable	oio:hasExactSynonym		Myeloproliferative neoplasm, NOS	Myeloproliferative neoplasm, NOS				NCIT:C27350	Myeloproliferative Neoplasm, Not Otherwise Specified				
+MONDO:0019452	myeloproliferative neoplasm, unclassifiable	oio:hasExactSynonym		MPN-NOS	MPN-NOS				NCIT:C27350	Myeloproliferative Neoplasm, Not Otherwise Specified	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0019453	myelodysplastic syndrome with multilineage dysplasia	oio:hasExactSynonym		MDS, NOS with Multilineage Dysplasia	MDS, NOS with Multilineage Dysplasia				NCIT:C8574	Myelodysplastic Syndrome, Not Otherwise Specified with Multilineage Dysplasia				
 MONDO:0019453	myelodysplastic syndrome with multilineage dysplasia	oio:hasExactSynonym		MDS-LB-MLD	MDS-LB-MLD				NCIT:C8574	Myelodysplastic Syndrome, Not Otherwise Specified with Multilineage Dysplasia				
 MONDO:0019453	myelodysplastic syndrome with multilineage dysplasia	oio:hasExactSynonym		Myelodysplastic Neoplasm with Low Blasts and Multilineage Dysplasia	Myelodysplastic Neoplasm with Low Blasts and Multilineage Dysplasia				NCIT:C8574	Myelodysplastic Syndrome, Not Otherwise Specified with Multilineage Dysplasia				
 MONDO:0019453	myelodysplastic syndrome with multilineage dysplasia	oio:hasExactSynonym		Myelodysplastic Syndrome with Low Blasts and Multilineage Dysplasia	Myelodysplastic Syndrome with Low Blasts and Multilineage Dysplasia				NCIT:C8574	Myelodysplastic Syndrome, Not Otherwise Specified with Multilineage Dysplasia				
 MONDO:0019453	myelodysplastic syndrome with multilineage dysplasia	oio:hasExactSynonym		Myelodysplastic Syndrome with Multilineage Dysplasia	Myelodysplastic Syndrome with Multilineage Dysplasia				NCIT:C8574	Myelodysplastic Syndrome, Not Otherwise Specified with Multilineage Dysplasia				
 MONDO:0019453	myelodysplastic syndrome with multilineage dysplasia	oio:hasExactSynonym		Myelodysplastic Syndrome, Not Otherwise Specified with Multilineage Dysplasia	Myelodysplastic Syndrome, Not Otherwise Specified with Multilineage Dysplasia				NCIT:C8574	Myelodysplastic Syndrome, Not Otherwise Specified with Multilineage Dysplasia				
-MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		MDS-EB-1	MDS-EB-1				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
-MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		MDS-IB	MDS-IB				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
-MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		MDS-IB-1	MDS-IB-1				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
-MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		MDS-IB1	MDS-IB1				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
 MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		Myelodysplastic Neoplasm with Increased Blasts	Myelodysplastic Neoplasm with Increased Blasts				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
 MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		Myelodysplastic Syndrome with Excess Blasts-1	Myelodysplastic Syndrome with Excess Blasts-1				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
 MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		Myelodysplastic Syndrome with Increased Blasts	Myelodysplastic Syndrome with Increased Blasts				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
 MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		RAEB I	RAEB I				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
-MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		RAEB-1	RAEB-1				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
-MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		RAEB-I	RAEB-I				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts				
+MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		MDS-EB-1	MDS-EB-1				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		MDS-IB	MDS-IB				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		MDS-IB-1	MDS-IB-1				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		MDS-IB1	MDS-IB1				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		RAEB-1	RAEB-1				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
+MONDO:0019454	myelodysplastic syndrome with excess blasts	oio:hasExactSynonym		RAEB-I	RAEB-I				NCIT:C7506	Myelodysplastic Syndrome with Excess Blasts	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0019455	acute panmyelosis with myelofibrosis	oio:hasExactSynonym		Acute Panmyelosis with Myelofibrosis	Acute Panmyelosis with Myelofibrosis				NCIT:C4344	Acute Panmyelosis with Myelofibrosis				
 MONDO:0019455	acute panmyelosis with myelofibrosis	oio:hasExactSynonym		Acute panmyelosis with myelofibrosis	Acute panmyelosis with myelofibrosis				NCIT:C4344	Acute Panmyelosis with Myelofibrosis				
-MONDO:0019456	acute myeloid leukemia with multilineage dysplasia	oio:hasExactSynonym		AML-MLD	AML-MLD				NCIT:C9289	Acute Myeloid Leukemia with Multilineage Dysplasia				
 MONDO:0019456	acute myeloid leukemia with multilineage dysplasia	oio:hasExactSynonym		Acute Myeloid Leukemia with Multilineage Dysplasia	Acute Myeloid Leukemia with Multilineage Dysplasia				NCIT:C9289	Acute Myeloid Leukemia with Multilineage Dysplasia				
 MONDO:0019456	acute myeloid leukemia with multilineage dysplasia	oio:hasExactSynonym		Acute myeloid leukemia with multilineage dysplasia	Acute myeloid leukemia with multilineage dysplasia				NCIT:C9289	Acute Myeloid Leukemia with Multilineage Dysplasia				
+MONDO:0019456	acute myeloid leukemia with multilineage dysplasia	oio:hasExactSynonym		AML-MLD	AML-MLD				NCIT:C9289	Acute Myeloid Leukemia with Multilineage Dysplasia	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0019458	acute basophilic leukemia	oio:hasExactSynonym		Acute Basophilic Leukemia	Acute Basophilic Leukemia				NCIT:C3164	Acute Basophilic Leukemia				
 MONDO:0019458	acute basophilic leukemia	oio:hasExactSynonym		Acute basophilic leukaemia	Acute basophilic leukaemia				NCIT:C3164	Acute Basophilic Leukemia				
 MONDO:0019458	acute basophilic leukemia	oio:hasExactSynonym		Acute basophilic leukemia	Acute basophilic leukemia				NCIT:C3164	Acute Basophilic Leukemia				
@@ -3346,7 +3346,7 @@ MONDO:0020317	acute myeloid leukemia with 11q23 abnormalities	oio:hasExactSynony
 MONDO:0020317	acute myeloid leukemia with 11q23 abnormalities	oio:hasExactSynonym		Acute Myeloid Leukemia with t(9;11)(p21.3;q23.3); MLLT3::KMT2A Fusion	Acute Myeloid Leukemia with t(9;11)(p21.3;q23.3); MLLT3::KMT2A Fusion				NCIT:C82403	Acute Myeloid Leukemia with t(9;11)(p21.3;q23.3); MLLT3-KMT2A				
 MONDO:0020317	acute myeloid leukemia with 11q23 abnormalities	oio:hasExactSynonym		Acute Myeloid Leukemia with t(9;11)(p21.3;q23.3); MLLT3::MLL	Acute Myeloid Leukemia with t(9;11)(p21.3;q23.3); MLLT3::MLL				NCIT:C82403	Acute Myeloid Leukemia with t(9;11)(p21.3;q23.3); MLLT3-KMT2A				
 MONDO:0020320	acute myeloblastic leukemia with maturation	oio:hasExactSynonym		Acute Myeloblastic Leukemia with Maturation	Acute Myeloblastic Leukemia with Maturation				NCIT:C3250	Acute Myeloid Leukemia with Maturation				
-MONDO:0020320	acute myeloblastic leukemia with maturation	oio:hasExactSynonym		M2	M2				NCIT:C3250	Acute Myeloid Leukemia with Maturation				
+MONDO:0020320	acute myeloblastic leukemia with maturation	oio:hasExactSynonym		M2	M2				NCIT:C3250	Acute Myeloid Leukemia with Maturation	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0020321	acute undifferentiated leukemia	oio:hasExactSynonym		Acute leukemia, NOS	Acute leukemia, NOS				NCIT:C9298	Acute Undifferentiated Leukemia				
 MONDO:0020322	acute biphenotypic leukemia	oio:hasExactSynonym		Acute Biphenotypic Leukemia	Acute Biphenotypic Leukemia				NCIT:C4673	Acute Biphenotypic Leukemia				
 MONDO:0020322	acute biphenotypic leukemia	oio:hasExactSynonym		Acute biphenotypic leukemia	Acute biphenotypic leukemia				NCIT:C4673	Acute Biphenotypic Leukemia				
@@ -3360,11 +3360,11 @@ MONDO:0020326	lymphomatoid papulosis	oio:hasExactSynonym		Lymphomatoid Papulosis
 MONDO:0020326	lymphomatoid papulosis	oio:hasExactSynonym		Lymphomatoid papulosis	Lymphomatoid papulosis				NCIT:C3721	Lymphomatoid Papulosis				
 MONDO:0020331	indolent systemic mastocytosis	oio:hasExactSynonym		Indolent Systemic Mastocytosis	Indolent Systemic Mastocytosis				NCIT:C9286	Indolent Systemic Mastocytosis				
 MONDO:0020331	indolent systemic mastocytosis	oio:hasExactSynonym		Indolent systemic mastocytosis	Indolent systemic mastocytosis				NCIT:C9286	Indolent Systemic Mastocytosis				
-MONDO:0020332	systemic mastocytosis with an associated clonal hematologic non-mast cell lineage disease	oio:hasExactSynonym		SM-AMN	SM-AMN				NCIT:C9284	Systemic Mastocytosis with an Associated Myeloid Neoplasm				
 MONDO:0020332	systemic mastocytosis with an associated clonal hematologic non-mast cell lineage disease	oio:hasExactSynonym		Systemic Mastocytosis with an Associated Hematologic Neoplasm	Systemic Mastocytosis with an Associated Hematologic Neoplasm				NCIT:C9284	Systemic Mastocytosis with an Associated Myeloid Neoplasm				
 MONDO:0020332	systemic mastocytosis with an associated clonal hematologic non-mast cell lineage disease	oio:hasExactSynonym		Systemic Mastocytosis with an Associated Myeloid Neoplasm	Systemic Mastocytosis with an Associated Myeloid Neoplasm				NCIT:C9284	Systemic Mastocytosis with an Associated Myeloid Neoplasm				
 MONDO:0020332	systemic mastocytosis with an associated clonal hematologic non-mast cell lineage disease	oio:hasExactSynonym		Systemic mastocytosis with AHNMD	Systemic mastocytosis with AHNMD				NCIT:C9284	Systemic Mastocytosis with an Associated Myeloid Neoplasm				
 MONDO:0020332	systemic mastocytosis with an associated clonal hematologic non-mast cell lineage disease	oio:hasExactSynonym		Systemic mastocytosis with associated hematological clonal non-mast cell disorder	Systemic mastocytosis with associated hematological clonal non-mast cell disorder				NCIT:C9284	Systemic Mastocytosis with an Associated Myeloid Neoplasm				
+MONDO:0020332	systemic mastocytosis with an associated clonal hematologic non-mast cell lineage disease	oio:hasExactSynonym		SM-AMN	SM-AMN				NCIT:C9284	Systemic Mastocytosis with an Associated Myeloid Neoplasm	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0020333	aggressive systemic mastocytosis	oio:hasExactSynonym		Advanced Systemic Mastocytosis	Advanced Systemic Mastocytosis				NCIT:C9285	Aggressive Systemic Mastocytosis				
 MONDO:0020333	aggressive systemic mastocytosis	oio:hasExactSynonym		Aggressive Systemic Mastocytosis	Aggressive Systemic Mastocytosis				NCIT:C9285	Aggressive Systemic Mastocytosis				
 MONDO:0020333	aggressive systemic mastocytosis	oio:hasExactSynonym		Aggressive systemic mastocytosis	Aggressive systemic mastocytosis				NCIT:C9285	Aggressive Systemic Mastocytosis				
@@ -3887,9 +3887,9 @@ MONDO:0044767	childhood adrenal gland pheochromocytoma	oio:hasExactSynonym		Pedi
 MONDO:0044767	childhood adrenal gland pheochromocytoma	oio:hasExactSynonym		Pediatric Pheochromocytoma	Pediatric Pheochromocytoma				NCIT:C118822	Childhood Adrenal Gland Pheochromocytoma				
 MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	oio:hasExactSynonym		Hodgkin lymphoma, lymphocyte predominance, nodular	Hodgkin lymphoma, lymphocyte predominance, nodular				NCIT:C7258	Nodular Lymphocyte Predominant B-Cell Lymphoma				
 MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	oio:hasExactSynonym		Hodgkin lymphoma, nodular lymphocyte predominance	Hodgkin lymphoma, nodular lymphocyte predominance				NCIT:C7258	Nodular Lymphocyte Predominant B-Cell Lymphoma				
-MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	oio:hasExactSynonym		NLP-BCL	NLP-BCL				NCIT:C7258	Nodular Lymphocyte Predominant B-Cell Lymphoma				
 MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	oio:hasExactSynonym		Nodular Lymphocyte Predominant B-Cell Lymphoma	Nodular Lymphocyte Predominant B-Cell Lymphoma				NCIT:C7258	Nodular Lymphocyte Predominant B-Cell Lymphoma				
 MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	oio:hasExactSynonym		Nodular Lymphocyte Predominant B-Cell Lymphoma/Nodular Lymphocyte Predominant Hodgkin Lymphoma	Nodular Lymphocyte Predominant B-Cell Lymphoma/Nodular Lymphocyte Predominant Hodgkin Lymphoma				NCIT:C7258	Nodular Lymphocyte Predominant B-Cell Lymphoma				
+MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	oio:hasExactSynonym		NLP-BCL	NLP-BCL				NCIT:C7258	Nodular Lymphocyte Predominant B-Cell Lymphoma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	oio:hasExactSynonym		NLPBL	NLPBL				NCIT:C7258	Nodular Lymphocyte Predominant B-Cell Lymphoma	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0044783	solid papillary breast carcinoma	oio:hasExactSynonym		Breast Solid Papillary Carcinoma	Breast Solid Papillary Carcinoma				NCIT:C6870	Breast Solid Papillary Carcinoma				
 MONDO:0044784	myxoma	oio:hasExactSynonym		Myxoma, NOS	Myxoma, NOS				NCIT:C6577	Myxoma				
@@ -4068,10 +4068,10 @@ MONDO:0100407	acute myeloid leukemia, t(11;15)(p15;q35)	oio:hasExactSynonym		Chi
 MONDO:0100407	acute myeloid leukemia, t(11;15)(p15;q35)	oio:hasExactSynonym		Childhood Acute Myeloid Leukemia with t(11;15)(p15;q35); NUP98::JARID1A Fusion	Childhood Acute Myeloid Leukemia with t(11;15)(p15;q35); NUP98::JARID1A Fusion				NCIT:C131504	Childhood Acute Myeloid Leukemia with t(11;15)(p15;q35); NUP98-JARID1A				
 MONDO:0100409	acute myeloid leukemia, t(3;5)(q25;q34)	oio:hasExactSynonym		AML with Myelodysplasia-Related Changes	AML with Myelodysplasia-Related Changes				NCIT:C7600	Acute Myeloid Leukemia, Myelodysplasia-Related				
 MONDO:0100409	acute myeloid leukemia, t(3;5)(q25;q34)	oio:hasExactSynonym		AML with myelodysplasia-related changes	AML with myelodysplasia-related changes				NCIT:C7600	Acute Myeloid Leukemia, Myelodysplasia-Related				
-MONDO:0100409	acute myeloid leukemia, t(3;5)(q25;q34)	oio:hasExactSynonym		AML-MRC	AML-MRC				NCIT:C7600	Acute Myeloid Leukemia, Myelodysplasia-Related				
 MONDO:0100409	acute myeloid leukemia, t(3;5)(q25;q34)	oio:hasExactSynonym		Acute Myeloid Leukemia with Myelodysplasia-Related Changes	Acute Myeloid Leukemia with Myelodysplasia-Related Changes				NCIT:C7600	Acute Myeloid Leukemia, Myelodysplasia-Related				
 MONDO:0100409	acute myeloid leukemia, t(3;5)(q25;q34)	oio:hasExactSynonym		Acute Myeloid Leukemia, Myelodysplasia-Related	Acute Myeloid Leukemia, Myelodysplasia-Related				NCIT:C7600	Acute Myeloid Leukemia, Myelodysplasia-Related				
 MONDO:0100409	acute myeloid leukemia, t(3;5)(q25;q34)	oio:hasExactSynonym		Acute myeloid leukemia with myelodysplasia-related changes	Acute myeloid leukemia with myelodysplasia-related changes				NCIT:C7600	Acute Myeloid Leukemia, Myelodysplasia-Related				
+MONDO:0100409	acute myeloid leukemia, t(3;5)(q25;q34)	oio:hasExactSynonym		AML-MRC	AML-MRC				NCIT:C7600	Acute Myeloid Leukemia, Myelodysplasia-Related	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
 MONDO:0100414	acute myeloid leukemia, CEBPA gene mutation	oio:hasExactSynonym		Acute Myeloid Leukemia with Germline Biallelic CEBPA Mutations	Acute Myeloid Leukemia with Germline Biallelic CEBPA Mutations				NCIT:C151898	Acute Myeloid Leukemia with Germline CEBPA Mutation				
 MONDO:0100414	acute myeloid leukemia, CEBPA gene mutation	oio:hasExactSynonym		Acute Myeloid Leukemia with Germline CEBPA Mutation	Acute Myeloid Leukemia with Germline CEBPA Mutation				NCIT:C151898	Acute Myeloid Leukemia with Germline CEBPA Mutation				
 MONDO:0100414	acute myeloid leukemia, CEBPA gene mutation	oio:hasExactSynonym		Familial Acute Myeloid Leukemia with Mutated CEBPA	Familial Acute Myeloid Leukemia with Mutated CEBPA				NCIT:C151898	Acute Myeloid Leukemia with Germline CEBPA Mutation				
@@ -4221,10 +4221,10 @@ MONDO:0858921	EWSR1-negative small round cell tumor	oio:hasExactSynonym		EWSR1-N
 MONDO:0858921	EWSR1-negative small round cell tumor	oio:hasExactSynonym		EWSR1-Negative Small Round Cell Tumor	EWSR1-Negative Small Round Cell Tumor				NCIT:C165671	EWSR1-Negative Small Round Cell Tumor				
 MONDO:0958176	oculopharyngeal muscular dystrophy 1	oio:hasExactSynonym		Oculopharyngeal Muscular Dystrophy	Oculopharyngeal Muscular Dystrophy				NCIT:C84942	Oculopharyngeal Muscular Dystrophy				
 MONDO:0958176	oculopharyngeal muscular dystrophy 1	oio:hasExactSynonym		OPMD	OPMD				NCIT:C84942	Oculopharyngeal Muscular Dystrophy	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
-MONDO:8000023	type 3 autoimmune lymphoproliferative syndrome	oio:hasExactSynonym		ALPS-U	ALPS-U				NCIT:C39577	Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation				
 MONDO:8000023	type 3 autoimmune lymphoproliferative syndrome	oio:hasExactSynonym		ALPS-Unknown Underlying Mutation	ALPS-Unknown Underlying Mutation				NCIT:C39577	Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation				
 MONDO:8000023	type 3 autoimmune lymphoproliferative syndrome	oio:hasExactSynonym		Autoimmune Lymphoproliferative Syndrome with Unknown Underlying Mutation	Autoimmune Lymphoproliferative Syndrome with Unknown Underlying Mutation				NCIT:C39577	Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation				
 MONDO:8000023	type 3 autoimmune lymphoproliferative syndrome	oio:hasExactSynonym		Autoimmune Lymphoproliferative Syndrome-Undetermined variant	Autoimmune Lymphoproliferative Syndrome-Undetermined variant				NCIT:C39577	Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation				
 MONDO:8000023	type 3 autoimmune lymphoproliferative syndrome	oio:hasExactSynonym		Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation	Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation				NCIT:C39577	Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation				
 MONDO:8000023	type 3 autoimmune lymphoproliferative syndrome	oio:hasExactSynonym		Type 3 ALPS	Type 3 ALPS				NCIT:C39577	Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation				
 MONDO:8000023	type 3 autoimmune lymphoproliferative syndrome	oio:hasExactSynonym		Type 3 Autoimmune Lymphoproliferative Syndrome	Type 3 Autoimmune Lymphoproliferative Syndrome				NCIT:C39577	Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation				
+MONDO:8000023	type 3 autoimmune lymphoproliferative syndrome	oio:hasExactSynonym		ALPS-U	ALPS-U				NCIT:C39577	Autoimmune Lymphoproliferative Syndrome-Unknown Underlying Mutation	http://purl.obolibrary.org/obo/mondo#ABBREVIATION			
