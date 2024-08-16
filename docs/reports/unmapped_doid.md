@@ -13,6 +13,7 @@
 | DOID:2934    | aleutian mink disease                                                               |
 | DOID:0081455 | auto-brewery syndrome                                                               |
 | DOID:0060974 | autosomal recessive Robinow syndrome 2                                              |
+| DOID:0060854 | autosomal recessive pseudohypoaldosteronism type 1                                  |
 | DOID:0081456 | bladder fermentation syndrome                                                       |
 | DOID:5154    | borna disease                                                                       |
 | DOID:0070556 | cerebellar ataxia, impaired intellectual development, and dysequilibrium syndrome 1 |
