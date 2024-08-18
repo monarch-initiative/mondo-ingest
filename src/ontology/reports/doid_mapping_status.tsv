@@ -1,6 +1,7 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
 DOID:0060160	childhood spinal muscular atrophy	False	False	False
 DOID:0060333	mitochondrial complex V (ATP synthase) deficiency nuclear type 4	False	False	False
+DOID:0060854	autosomal recessive pseudohypoaldosteronism type 1	False	False	False
 DOID:0060971	interstitial lung disease 2	False	False	False
 DOID:0060972	renal hypomagnesemia 7, with or without dilated cardiomyopathy	False	False	False
 DOID:0060973	WHIM syndrome 2	False	False	False
@@ -8,6 +9,12 @@ DOID:0060974	autosomal recessive Robinow syndrome 2	False	False	False
 DOID:0060975	polycystic liver disease 2	False	False	False
 DOID:0060976	polycystic liver disease 3 with or without kidney cysts	False	False	False
 DOID:0060977	polycystic liver disease 4 with or without kidney cysts	False	False	False
+DOID:0060978	Fanconi anemia complementation group W	False	False	False
+DOID:0060979	Fanconi anemia complementation group S	False	False	False
+DOID:0060980	polycystic liver disease 1	False	False	False
+DOID:0060981	mosaic variegated aneuploidy syndrome 4	False	False	False
+DOID:0060982	mosaic variegated aneuploidy syndrome 7 with inflammation and tumor predisposition	False	False	False
+DOID:0060983	sitosterolemia 2	False	False	False
 DOID:0070546	primary pigmented nodular adrenocortical disease 1	False	False	False
 DOID:0070547	primary pigmented nodular adrenocortical disease 2	False	False	False
 DOID:0070548	primary pigmented nodular adrenocortical disease 3	False	False	False
@@ -18,6 +25,14 @@ DOID:0070552	epidermolytic palmoplantar keratoderma 1	False	False	False
 DOID:0070553	focal palmoplantar and gingival keratosis	False	False	False
 DOID:0070554	palmoplantar keratoderma and woolly hair	False	False	False
 DOID:0070555	Nagashima-type palmoplantar keratosis	False	False	False
+DOID:0070556	cerebellar ataxia, impaired intellectual development, and dysequilibrium syndrome 1	False	False	False
+DOID:0070557	cerebellar ataxia, impaired intellectual development, and dysequilibrium syndrome 2	False	False	False
+DOID:0070558	cerebellar ataxia, impaired intellectual development, and dysequilibrium syndrome 3	False	False	False
+DOID:0070559	cerebellar ataxia, impaired intellectual development, and dysequilibrium syndrome 4	False	False	False
+DOID:0070560	glucose transporter type 1 deficiency syndrome	False	False	False
+DOID:0070561	glucose transporter type 1 deficiency syndrome 1	False	False	False
+DOID:0070562	Fanconi-Bickel syndrome	False	False	False
+DOID:0070563	glucose-galactose malabsorption	False	False	False
 DOID:0081455	auto-brewery syndrome	False	False	False
 DOID:0081456	bladder fermentation syndrome	False	False	False
 DOID:0081457	intrathyroid thymic carcinoma	False	False	False
@@ -425,6 +440,7 @@ DOID:0050531	obsolete lentiginosis profusa	False	True	True
 DOID:0050532	obsolete epidermal nevus	False	True	True
 DOID:0050533	obsolete soldiers heart	False	True	True
 DOID:0050536	obsolete SC phocomelia syndrome	False	True	True
+DOID:0050549	obsolete Saldino-Noonan syndrome	False	True	True
 DOID:0050550	obsolete Majewski syndrome	False	True	True
 DOID:0050551	obsolete Verma-Naumoff syndrome	False	True	True
 DOID:0050556	obsolete infantile onset spinocerebellar ataxia	False	True	True
@@ -511,6 +527,9 @@ DOID:0110631	obsolete arthrogryposis due to muscular dystrophy	False	True	True
 DOID:0110638	obsolete congenital muscular dystrophy merosin-positive	False	True	True
 DOID:0110748	obsolete type 1 diabetes mellitus 9	False	True	True
 DOID:0110762	obsolete hereditary spastic paraplegia 1	False	True	True
+DOID:0111201	obsolete distal hereditary motor neuronopathy type 7A	False	True	True
+DOID:0111204	obsolete distal hereditary motor neuronopathy type 5A	False	True	True
+DOID:0111208	obsolete distal hereditary motor neuronopathy type 2A	False	True	True
 DOID:0111372	obsolete autosomal dominant endosteal hyperostosis	False	True	True
 DOID:0111794	obsolete congenital nystagmus 4	False	True	True
 DOID:0111810	obsolete syndromic microphthalmia 4	False	True	True
@@ -989,6 +1008,7 @@ DOID:13076	obsolete abdominal actinomycosis	False	True	True
 DOID:13077	obsolete cutaneous actinomycosis	False	True	True
 DOID:1308	obsolete AIDS related complex	False	True	True
 DOID:1311	obsolete HIV-associated nephropathy	False	True	True
+DOID:13121	obsolete deficiency anemia	False	True	True
 DOID:1313	obsolete HIV wasting syndrome	False	True	True
 DOID:1314	obsolete wasting syndrome	False	True	True
 DOID:13149	obsolete tuberculous lung fibrosis	False	True	True
@@ -1573,6 +1593,7 @@ DOID:3909	obsolete bronchogenic lung adenocarcinoma	False	True	True
 DOID:3914	obsolete serous cystadenoma of ovary	False	True	True
 DOID:3916	obsolete borderline malignancy serous cystadenoma	False	True	True
 DOID:3939	obsolete lipomatous cancer	False	True	True
+DOID:3968	obsolete papillary follicular thyroid adenocarcinoma	False	True	True
 DOID:3974	obsolete medullary carcinoma	False	True	True
 DOID:398	obsolete cutaneous tuberculosis	False	True	True
 DOID:3984	obsolete Strongylus equinus infectious disease	False	True	True
@@ -3251,7 +3272,7 @@ DOID:0050993	episodic ataxia type 5	True	False	False
 DOID:0050994	episodic ataxia type 6	True	False	False
 DOID:0050995	episodic ataxia type 7	True	False	False
 DOID:0050996	episodic ataxia type 8	True	False	False
-DOID:0050997	cerebellar ataxia, mental retardation and dysequlibrium syndrome	True	False	False
+DOID:0050997	cerebellar ataxia, impaired intellectual development, and dysequilibrium syndrome	True	False	False
 DOID:0050998	nonprogressive cerebellar ataxia with mental retardation	True	False	False
 DOID:0050999	autosomal recessive spinocerebellar ataxia 10	True	False	False
 DOID:0060000	infective endocarditis	True	False	False
@@ -3980,7 +4001,6 @@ DOID:0060850	annular pancreas	True	False	False
 DOID:0060851	pemphigus vulgaris	True	False	False
 DOID:0060852	Pierson syndrome	True	False	False
 DOID:0060853	Potocki-Lupski syndrome	True	False	False
-DOID:0060854	autosomal recessive pseudohypoaldosteronism type 1	True	False	False
 DOID:0060855	autosomal dominant pseudohypoaldosteronism type 1	True	False	False
 DOID:0060856	right atrial isomerism	True	False	False
 DOID:0060857	septooptic dysplasia	True	False	False
@@ -6000,7 +6020,7 @@ DOID:0090015	Cenani-Lenz syndactyly syndrome	True	False	False
 DOID:0090016	chromosome 5q deletion syndrome	True	False	False
 DOID:0090017	epidermolysis bullosa simplex with muscular dystrophy	True	False	False
 DOID:0090018	autosomal dominant familial periodic fever	True	False	False
-DOID:0090019	sitosterolemia	True	False	False
+DOID:0090019	sitosterolemia 1	True	False	False
 DOID:0090020	split hand-foot malformation	True	False	False
 DOID:0090021	split hand-foot malformation 1	True	False	False
 DOID:0090022	split hand-foot malformation 5	True	False	False
@@ -6026,7 +6046,7 @@ DOID:0090041	torsion dystonia 4	True	False	False
 DOID:0090042	torsion dystonia 17	True	False	False
 DOID:0090043	dystonia 5	True	False	False
 DOID:0090044	dystonia 9	True	False	False
-DOID:0090045	childhood-onset GLUT1 deficiency syndrome 2	True	False	False
+DOID:0090045	glucose transporter type 1 deficiency syndrome 2	True	False	False
 DOID:0090046	dystonia 21	True	False	False
 DOID:0090047	paroxysmal nonkinesigenic dyskinesia 2	True	False	False
 DOID:0090048	dystonia 16	True	False	False
@@ -14067,16 +14087,10 @@ DOID:4379	nut allergy	True	True	False
 DOID:4481	allergic rhinitis	True	True	False
 DOID:9415	allergic asthma	True	True	False
 DOID:0050068	obsolete pestis minor	True	True	True
-DOID:0050549	obsolete Saldino-Noonan syndrome	True	True	True
 DOID:0050867	obsolete Jensen syndrome	True	True	True
 DOID:0110302	obsolete autosomal dominant limb-girdle muscular dystrophy type 1C	True	True	True
-DOID:0111201	obsolete distal hereditary motor neuronopathy type 7A	True	True	True
-DOID:0111204	obsolete distal hereditary motor neuronopathy type 5A	True	True	True
-DOID:0111208	obsolete distal hereditary motor neuronopathy type 2A	True	True	True
 DOID:10919	obsolete transsexualism	True	True	True
-DOID:13121	obsolete deficiency anemia	True	True	True
 DOID:1634	obsolete breast papillomatosis	True	True	True
-DOID:3968	obsolete papillary follicular thyroid adenocarcinoma	True	True	True
 DOID:5209	obsolete benign struma ovarii	True	True	True
 DOID:6809	obsolete vaginal tubular adenoma	True	True	True
 DOID:7922	obsolete benign mediastinal neurilemmoma	True	True	True
