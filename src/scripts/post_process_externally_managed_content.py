@@ -11,21 +11,21 @@ def is_qc_failure_related_to_external_source(qc_failure, erroneous_row, external
     
     columns = [] 
     
-    if external == "nord.robot.tsv":
+    if external == "nord":
         columns = ["report_ref", "preferred_name", "subset"]
-    elif external == "mondo-otar-subset.robot.tsv":
+    elif external == "mondo-otar-subset":
         columns = ["subset"]
-    elif external == "mondo-omim-genes.robot.tsv":
+    elif external == "mondo-omim-genes":
         columns = ["hgnc_id"]
-    elif external == "mondo-clingen.robot.tsv":
+    elif external == "mondo-clingen":
         columns = ["synonym", "subset"]
-    elif external == "mondo-medgen.robot.tsv":
+    elif external == "mondo-medgen":
         columns = ["xref_id"]
-    elif external == "mondo-efo.robot.tsv":
+    elif external == "mondo-efo":
         columns = ["xref"]
-    elif external == "nando-mappings.robot.tsv":
+    elif external == "nando-mappings":
         columns = ["object_id"]
-    elif external == "ordo-subsets.robot.tsv":
+    elif external == "ordo-subsets":
         columns = ["subset"]
     else:
         raise ValueError(f"Unknown external source {external}")
@@ -65,6 +65,7 @@ def process_externally_managed_source(source, external_content_dir, robot_report
     report = []
     drop_rows_indexes = []
     external_content_file = f"{external_content_dir}/{source}.robot.tsv"
+    external_content_file_out = f"{external_content_dir}/processed-{source}.robot.tsv"
     if not os.path.exists(external_content_file):
         logger.warning(f"External content file {external_content_file} does not exist.")
         return
@@ -90,7 +91,7 @@ def process_externally_managed_source(source, external_content_dir, robot_report
                     df_external_content.at[index, erroneous_column] = ""
 
     df_external_content.drop(drop_rows_indexes, inplace=True)
-    df_external_content.to_csv(external_content_file, sep="\t", index=False)
+    df_external_content.to_csv(external_content_file_out, sep="\t", index=False)
     write_nice_report(report, source)
 
 

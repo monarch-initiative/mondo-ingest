@@ -606,16 +606,19 @@ EXTERNAL_FILES = efo-proxy-merges \
 		nord \
 		ordo-subsets
 
-tmp/mondo-incl-external.owl: mondo.owl $(foreach n,$(EXTERNAL_FILES), external/$(n).robot.owl)
-	$(ROBOT) merge -i mondo.owl $(foreach n,$(EXTERNAL_FILES), -i external/$(n).robot.owl) \
+tmp/mondo-incl-external.owl: $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl) mondo.owl
+	$(ROBOT) merge $(foreach n,$^, -i $(n)) \
 		filter --term MONDO:0000001 --term MONDO:0021125 --term MONDO:0042489 --term MONDO:0021178 --select "annotations self descendants" --signature true -o $@
 
 tmp/mondo-incl-robot-report.tsv: tmp/mondo-incl-external.owl config/robot_report_external_content.txt
-	$(ROBOT) report -i $< --profile config/robot_report_external_content.txt -o $@
+	$(ROBOT) report -i $< --profile config/robot_report_external_content.txt --fail-on None -o $@
+
+$(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv: tmp/mondo-incl-robot-report.tsv
+	python $(SCRIPTSDIR)/post_process_externally_managed_content.py --emc-id $* --emc-dir $(EXTERNAL_CONTENT_DIR) --robot-report $<
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv
 
 .PHONY: update-externally-managed-content
-update-externally-managed-content: tmp/mondo-incl-robot-report.tsv $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl)
-	python $(SCRIPTSDIR)/post_process_externally_managed_content.py $(foreach n,$(EXTERNAL_FILES), --emc-id $(n)) --emc-dir $(EXTERNAL_CONTENT_DIR) --robot-report $<
+update-externally-managed-content: $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/processed-$(n).robot.owl)
 	@echo "Externally managed content updated."
 
 $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
@@ -684,7 +687,15 @@ $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv:
 # Unfortunately, @matentzn cant find the orginal TSV file, but it is highly unlikely this file will ever change.
 
 $(EXTERNAL_CONTENT_DIR)/efo-proxy-merges.robot.owl:
-	echo "WARNING: $@" is currently manually curated!"
+	echo "WARNING: $@ is currently manually curated!"
+
+$(EXTERNAL_CONTENT_DIR)/processed-efo-proxy-merges.robot.tsv:
+	touch $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/processed-efo-proxy-merges.robot.tsv
+
+$(EXTERNAL_CONTENT_DIR)/processed-efo-proxy-merges.robot.owl: $(EXTERNAL_CONTENT_DIR)/efo-proxy-merges.robot.owl
+	cp $< $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/processed-efo-proxy-merges.robot.tsv
 
 ###### MedGen #########
 
