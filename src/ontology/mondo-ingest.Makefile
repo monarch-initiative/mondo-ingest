@@ -453,6 +453,23 @@ $(MAPPINGSDIR)/rejected-mappings-sssom.tsv: $(MAPPINGSDIR)/rejected-mappings.tsv
 tmp/mondo-ingest.owl: mondo-ingest.owl
 	cp $< $@
 
+EXTERNAL_FILES = efo-proxy-merges \
+		mondo-clingen \
+		mondo-efo \
+		mondo-medgen \
+		mondo-omim-genes \
+		mondo-otar-subset \
+		nando-mappings \
+		nord \
+		ordo-subsets
+
+tmp/mondo-incl-external.owl: mondo.owl $(foreach n,$(EXTERNAL_FILES), external/$(n).robot.owl)
+	$(ROBOT) merge -i mondo.owl $(foreach n,$(EXTERNAL_FILES), -i external/$(n).robot.owl) \
+		filter --term MONDO:0000001 --term MONDO:0021125 --term MONDO:0042489 --term MONDO:0021178 --select "annotations self descendants" --signature true -o $@
+
+tmp/mondo-incl-robot-report.tsv: tmp/mondo-incl-external.owl config/robot_report_external_content.txt
+	$(ROBOT) report -i $< --profile config/robot_report_external_content.txt -o $@
+
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
 tmp/merged.owl: mondo-ingest.owl tmp/mondo.sssom.ttl
 	$(MAKE) up-to-date-mondo.owl
