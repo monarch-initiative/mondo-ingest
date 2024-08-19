@@ -614,8 +614,9 @@ tmp/mondo-incl-robot-report.tsv: tmp/mondo-incl-external.owl config/robot_report
 	$(ROBOT) report -i $< --profile config/robot_report_external_content.txt -o $@
 
 .PHONY: update-externally-managed-content
-update-externally-managed-content: tmp/mondo-incl-robot-report.tsv $(foreach n,$(EXTERNAL_FILES), external/$(n).robot.owl)
-	python $(SCRIPTSDIR)/post_process_externally_managed_content.py $(foreach n,$(EXTERNAL_FILES), --emc_id $(n)) --emc-dir external --robot-report $<
+update-externally-managed-content: tmp/mondo-incl-robot-report.tsv $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl)
+	python $(SCRIPTSDIR)/post_process_externally_managed_content.py $(foreach n,$(EXTERNAL_FILES), --emc-id $(n)) --emc-dir $(EXTERNAL_CONTENT_DIR) --robot-report $<
+	@echo "Externally managed content updated."
 
 $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 	$(ROBOT) template \

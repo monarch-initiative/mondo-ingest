@@ -1,8 +1,9 @@
 import click
 import os
 import pandas as pd
+import logging
 
-
+logger = logging.getLogger(__name__)
 
 def is_qc_failure_related_to_external_source(qc_failure, erroneous_row, external):
     # We already know the subject is the same as the mondo_id in the record
@@ -39,20 +40,21 @@ def is_qc_failure_related_to_external_source(qc_failure, erroneous_row, external
     return False
 
 def write_nice_report(report, external):
-    if not report:
-        return
     nice_report = f"../ontology/external/{external}-qc-failures.md"
     print(f"Writing nice report to {nice_report}")
     
     df_records = pd.DataFrame(report)
     df_records.fillna("", inplace=True)
     
+    if report:
+        report_string = df_records.to_markdown(index=False)
+    else:
+        report_string = "No QC failures found."
+    
     failure_report = f"""
-# QC Failure Report for {external}
+# QC Report for {external}
 
-## Removed from the resource
-
-{df_records.to_markdown(index=False)}
+{report_string}
 """
     
     with open(nice_report, "w") as f:
@@ -62,7 +64,10 @@ def process_externally_managed_source(source, external_content_dir, robot_report
     df_robot_report = pd.read_csv(robot_report_file, sep="\t")
     report = []
     drop_rows_indexes = []
-    external_content_file = f"{external_content_dir}/{source}"
+    external_content_file = f"{external_content_dir}/{source}.robot.tsv"
+    if not os.path.exists(external_content_file):
+        logger.warning(f"External content file {external_content_file} does not exist.")
+        return
     df_external_content = pd.read_csv(external_content_file, sep="\t")
     for _, qc_failure in df_robot_report.iterrows():
         mondo_id_failure = qc_failure["Subject"]
@@ -89,17 +94,18 @@ def process_externally_managed_source(source, external_content_dir, robot_report
     write_nice_report(report, source)
 
 
-    @click.command()
-    @click.option('--emc-id', help='ID of the externally managed content file to process.', required=True, multiple=True)
-    @click.option('--emc-dir', help='Directory where the externally managed content (emc) is located.')
-    @click.option('--robot-report', help='Location of the robot report with violations.')
-    def post_process_externally_managed_content(emc_id, emc_dir, robot_report):
-        """
-        Post-process externally managed content.
-        """
-        
-        for _emc_id in emc_id:
-            process_externally_managed_source(_emc_id, emc_dir, robot_report)
+@click.command()
+@click.option('--emc-id', help='ID of the externally managed content file to process.', required=True, multiple=True)
+@click.option('--emc-dir', help='Directory where the externally managed content (emc) is located.')
+@click.option('--robot-report', help='Location of the robot report with violations.')
+def post_process_externally_managed_content(emc_id, emc_dir, robot_report):
+    """
+    Post-process externally managed content.
+    """
+    logger.error("Post-processing externally managed content.")
+    for _emc_id in emc_id:
+        logger.error(f"Processing externally managed content with ID {_emc_id}")
+        process_externally_managed_source(_emc_id, emc_dir, robot_report)
 
-    if __name__ == '__main__':
-        post_process_externally_managed_content()
+if __name__ == '__main__':
+    post_process_externally_managed_content()
