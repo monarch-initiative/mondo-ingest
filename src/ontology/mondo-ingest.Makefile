@@ -453,23 +453,6 @@ $(MAPPINGSDIR)/rejected-mappings-sssom.tsv: $(MAPPINGSDIR)/rejected-mappings.tsv
 tmp/mondo-ingest.owl: mondo-ingest.owl
 	cp $< $@
 
-EXTERNAL_FILES = efo-proxy-merges \
-		mondo-clingen \
-		mondo-efo \
-		mondo-medgen \
-		mondo-omim-genes \
-		mondo-otar-subset \
-		nando-mappings \
-		nord \
-		ordo-subsets
-
-tmp/mondo-incl-external.owl: mondo.owl $(foreach n,$(EXTERNAL_FILES), external/$(n).robot.owl)
-	$(ROBOT) merge -i mondo.owl $(foreach n,$(EXTERNAL_FILES), -i external/$(n).robot.owl) \
-		filter --term MONDO:0000001 --term MONDO:0021125 --term MONDO:0042489 --term MONDO:0021178 --select "annotations self descendants" --signature true -o $@
-
-tmp/mondo-incl-robot-report.tsv: tmp/mondo-incl-external.owl config/robot_report_external_content.txt
-	$(ROBOT) report -i $< --profile config/robot_report_external_content.txt -o $@
-
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
 tmp/merged.owl: mondo-ingest.owl tmp/mondo.sssom.ttl
 	$(MAKE) up-to-date-mondo.owl
@@ -610,11 +593,29 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 ##################################
 ## Externally managed content ####
 ##################################
-# General
-update-externally-managed-content: external-content-nord external-content-nando external-content-ordo external-content-omim \
-	external-content-efo external-content-clingen external-content-medgen
 
 EXTERNAL_CONTENT_DIR=external
+
+EXTERNAL_FILES = efo-proxy-merges \
+		mondo-clingen \
+		mondo-efo \
+		mondo-medgen \
+		mondo-omim-genes \
+		mondo-otar-subset \
+		nando-mappings \
+		nord \
+		ordo-subsets
+
+tmp/mondo-incl-external.owl: mondo.owl $(foreach n,$(EXTERNAL_FILES), external/$(n).robot.owl)
+	$(ROBOT) merge -i mondo.owl $(foreach n,$(EXTERNAL_FILES), -i external/$(n).robot.owl) \
+		filter --term MONDO:0000001 --term MONDO:0021125 --term MONDO:0042489 --term MONDO:0021178 --select "annotations self descendants" --signature true -o $@
+
+tmp/mondo-incl-robot-report.tsv: tmp/mondo-incl-external.owl config/robot_report_external_content.txt
+	$(ROBOT) report -i $< --profile config/robot_report_external_content.txt -o $@
+
+.PHONY: update-externally-managed-content
+update-externally-managed-content: tmp/mondo-incl-robot-report.tsv $(foreach n,$(EXTERNAL_FILES), external/$(n).robot.owl)
+	python $(SCRIPTSDIR)/post_process_externally_managed_content.py $(foreach n,$(EXTERNAL_FILES), --emc_id $(n)) --emc-dir external --robot-report $<
 
 $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 	$(ROBOT) template \
@@ -627,9 +628,7 @@ $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 				-o $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/%.robot.owl
 
-# NORD
-.PHONY: external-content-nord
-external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+###### NORD #########
 
 $(TMPDIR)/nord.tsv:
 	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
@@ -639,9 +638,7 @@ $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-conte
 	python ../scripts/add-robot-template-header.py $^ > $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv
 
-# ORDO
-.PHONY: external-content-ordo
-external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
+###### ORDO #########
 
 tmp/ordo-subsets.tsv:
 	$(MAKE) component-download-ordo.owl
@@ -657,18 +654,14 @@ $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv
 	--outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
 
-# OMIM
+###### OMIM #########
+
 $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv:
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	wget "https://github.com/monarch-initiative/omim/releases/latest/download/mondo-omim-genes.robot.tsv" -O $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv
 
-.PHONY: external-content-omim
-external-content-omim: $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.owl $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv
-
-# NanDO
-.PHONY: external-content-nando
-external-content-nando: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.owl
+###### NanDO #########
 
 $(MAPPINGSDIR)/mondo-nando.sssom.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
 	sssom invert $(MAPPINGSDIR)/nando-mondo.sssom.tsv --no-merge-inverted -o $@
@@ -679,9 +672,7 @@ $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sss
 	python ../scripts/sssom_to_robot_template.py --inpath $< --outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
 
-# OTAR / EFO
-.PHONY: external-content-efo
-external-content-efo: $(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.owl $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.owl $(EXTERNAL_CONTENT_DIR)/efo-proxy-merges.robot.owl
+###### OTAR / EFO #########
 
 $(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.tsv:
 	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-efo.robot.tsv" -O $@
@@ -694,18 +685,12 @@ $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv:
 $(EXTERNAL_CONTENT_DIR)/efo-proxy-merges.robot.owl:
 	echo "WARNING: $@" is currently manually curated!"
 
-# MedGen
-
-.PHONY: external-content-medgen
-external-content-medgen: $(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.owl
+###### MedGen #########
 
 $(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv:
 	wget "https://github.com/monarch-initiative/medgen/releases/latest/download/medgen-xrefs.robot.template.tsv" -O $@
 
-# ClinGen
-
-.PHONY: external-content-clingen
-external-content-clingen: $(EXTERNAL_CONTENT_DIR)/mondo-clingen.robot.owl
+###### ClinGen #########
 
 # Managed in Google Sheets:
 # https://docs.google.com/spreadsheets/d/1JAgySABpRkmXl-8lu5Yrxd9yjTGNbH8aoDcMlHqpssQ/edit?gid=637121472#gid=637121472
