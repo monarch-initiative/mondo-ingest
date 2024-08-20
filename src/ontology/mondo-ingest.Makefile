@@ -101,6 +101,9 @@ $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-dow
 			--update ../sparql/rm_xref_by_prefix.ru \
 			--update ../sparql/exact_syn_from_label.ru \
 		remove -T $(TMPDIR)/ncit_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+			--drop-axiom-annotations NCIT:P378 \
+			--drop-axiom-annotations NCIT:P383 \
+			--drop-axiom-annotations NCIT:P384 \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		remove --term "http://purl.obolibrary.org/obo/NCIT_C179199" --axioms "equivalent" \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ncit.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ncit.owl -o $@; fi

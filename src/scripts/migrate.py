@@ -48,8 +48,14 @@ JINJA_ONTO_PAGES = """## {{ ontology_name }}
 ### Migratable terms
 {{ table }}"""
 ROBOT_TEMPLATE_HEADER = {
-    'mondo_id': 'ID', 'mondo_label': 'LABEL', 'xref': 'A oboInOwl:hasDbXref',
-    'xref_source': '>A oboInOwl:source SPLIT=|', 'original_label': '', 'definition': 'A IAO:0000115', 'parents': 'SC %'}
+    'mondo_id': 'ID',
+    'mondo_label': 'LABEL',
+    'xref': 'A oboInOwl:hasDbXref',
+    'xref_source': '>A oboInOwl:source SPLIT=|',
+    'original_label': '',
+    'definition': 'A IAO:0000115',
+    'parents': 'SC %'
+}
 
 def _valid_parent_conditions(
     parents: List[CURIE], mapped: Set[CURIE], excluded: Set[CURIE], obsolete: Set[CURIE]
