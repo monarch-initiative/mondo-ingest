@@ -33,11 +33,16 @@ SPARQL_STR_GET_LABELS = """
 {% for sparql_prefix_line in prefixes %}{{ sparql_prefix_line }}{% endfor %}
 prefix owl:  <http://www.w3.org/2002/07/owl#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
 
 select ?term_id ?term_label where {
     VALUES ?term_id { {{values}} }
     ?term_id a owl:Class;
-      rdfs:label ?term_label .
+    OPTIONAL {
+        VALUES ?label_property { rdfs:label skos:prefLabel } .
+        ?term_id ?label_property ?term_label .
+        }
+    FILTER(BOUND(?term_label))
 }"""
 # # Config
 CONFIG = {

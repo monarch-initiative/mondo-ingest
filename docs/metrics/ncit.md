@@ -2,7 +2,7 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ncit.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-08-05/ncit.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-08-13/ncit.owl
 
 ### Entities and axioms
 

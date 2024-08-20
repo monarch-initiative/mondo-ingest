@@ -1,23 +1,5 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
-OMIM:301120	prostate cancer, hereditary, X-linked 3	False	False	False
-OMIM:620607	spastic paraplegia 30b, autosomal recessive	False	False	False
-OMIM:620793	muscular dystrophy, limb-girdle, autosomal recessive 29	False	False	False
-OMIM:620851	neurodevelopmental disorder with hypotonia, brain anomalies, distinctive facies, and absent language	False	False	False
-OMIM:620854	neuronopathy, distal hereditary motor, autosomal recessive 11, with spasticity	False	False	False
-OMIM:620869	immunodeficiency 122	False	False	False
-OMIM:620877	deafness, autosomal recessive 125	False	False	False
-OMIM:620880	autoinflammation with arthritis and vasculitis	False	False	False
-OMIM:620887	multiple mitochondrial dysfunctions syndrome 9b	False	False	False
-OMIM:620894	cardiomyopathy, dilated, 2k	False	False	False
-OMIM:620897	ovarian dysgenesis 11	False	False	False
-OMIM:620901	immunodeficiency 123 with hpv-related verrucosis	False	False	False
-OMIM:620903	polycystic kidney disease 8	False	False	False
-OMIM:620908	arterial tortuosity-bone fragility syndrome	False	False	False
-OMIMPS:105500		False	False	False
-OMIMPS:156850		False	False	False
-OMIMPS:177735	Pseudohypoaldosteronism, type I	False	False	False
-OMIMPS:274400	Thyroid dyshormonogenesis	False	False	False
-OMIMPS:300000		False	False	False
+OMIM:620910	otofacial neurodevelopmental syndrome	False	False	False
 OMIM:100500		False	False	True
 OMIM:100680		False	False	True
 OMIM:100735		False	False	True
@@ -19023,11 +19005,16 @@ OMIM:620892	CBY3	False	True	False
 OMIM:620893	IPO9	False	True	False
 OMIM:620895	ERICH5	False	True	False
 OMIM:620896	LRRC42	False	True	False
+OMIM:620898	MIR7-2	False	True	False
+OMIM:620899	MIR1179	False	True	False
+OMIM:620900	STRTS	False	True	False
 OMIM:620902	TNRC18	False	True	False
 OMIM:620904	FAM98A	False	True	False
 OMIM:620905	DZANK1	False	True	False
 OMIM:620906	MBLAC1	False	True	False
 OMIM:620907	MBLAC2	False	True	False
+OMIM:620909	KLC4	False	True	False
+OMIM:620912	MICALL2	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
@@ -21395,6 +21382,7 @@ OMIM:301115	immunodeficiency 118	True	False	False
 OMIM:301116	intellectual developmental disorder, X-linked 113	True	False	False
 OMIM:301118	intellectual developmental disorder, x-linked, syndromic 37	True	False	False
 OMIM:301119	spermatogenic failure, x-linked, 8	True	False	False
+OMIM:301120	prostate cancer, hereditary, X-linked 3	True	False	False
 OMIM:301200	amelogenesis imperfecta, type 1e	True	False	False
 OMIM:301201	amelogenesis imperfecta, hypoplastic/hypomaturation, X-linked 2	True	False	False
 OMIM:301220	pigmentary disorder, reticulate, with systemic manifestations, X-linked	True	False	False
@@ -22425,7 +22413,6 @@ OMIM:607677	charcot-marie-tooth disease, axonal, type 2i	True	False	False
 OMIM:607678	charcot-marie-tooth disease, demyelinating, type 1d	True	False	False
 OMIM:607681	febrile seizures, familial, 8	True	False	False
 OMIM:607682	epilepsy, idiopathic generalized, susceptibility to, 9	True	False	False
-OMIM:607683	deafness, autosomal dominant 52	True	False	False
 OMIM:607684	charcot-marie-tooth disease, axonal, type 2e	True	False	False
 OMIM:607685	hypereosinophilic syndrome, idiopathic	True	False	False
 OMIM:607688	parkinson disease 11, autosomal dominant, susceptibility to	True	False	False
@@ -23116,7 +23103,7 @@ OMIM:611274	glaucoma 1, open angle, n	True	False	False
 OMIM:611276	glaucoma 1, open angle, h	True	False	False
 OMIM:611283	isobutyryl-coa dehydrogenase deficiency	True	False	False
 OMIM:611284	dystonia, focal, task-specific	True	False	False
-OMIM:611291	severe combined immunodeficiency with microcephaly, growth retardation, and sensitivity to ionizing radiation	True	False	False
+OMIM:611291	immunodeficiency 124	True	False	False
 OMIM:611302	spastic ataxia 2, autosomal recessive	True	False	False
 OMIM:611307	muscular dystrophy, limb-girdle, autosomal recessive 12	True	False	False
 OMIM:611308	persistent hyperplastic primary vitreous, autosomal dominant	True	False	False
@@ -23636,7 +23623,7 @@ OMIM:613217	diarrhea 5, with tufting enteropathy, congenital	True	False	False
 OMIM:613223	leprosy, susceptibility to, 5	True	False	False
 OMIM:613224	noonan syndrome 6	True	False	False
 OMIM:613225	factor xiii, a subunit, deficiency of	True	False	False
-OMIM:613227	cerebellar ataxia, impaired intellectual development, and dysequilibrium syndrome 3	True	False	False
+OMIM:613227	spinocerebellar ataxia, autosomal recessive 34	True	False	False
 OMIM:613229	trichotillomania	True	False	False
 OMIM:613235	factor xiii, B subunit, deficiency of	True	False	False
 OMIM:613237	focal segmental glomerulosclerosis 5	True	False	False
@@ -27078,6 +27065,7 @@ OMIM:620601	garg-mishra progeroid syndrome	True	False	False
 OMIM:620602	lymphatic malformation 14	True	False	False
 OMIM:620603	immunodeficiency 114, folate-responsive	True	False	False
 OMIM:620606	spastic paraplegia 72b, autosomal recessive	True	False	False
+OMIM:620607	spastic paraplegia 30b, autosomal recessive	True	False	False
 OMIM:620609	long-olsen-distelmaier syndrome	True	False	False
 OMIM:620610	oocyte/zygote/embryo maturation arrest 21	True	False	False
 OMIM:620629	optic atrophy 16	True	False	False
@@ -27161,6 +27149,7 @@ OMIM:620786	basal ganglia calcification, idiopathic, 9, autosomal recessive	True
 OMIM:620789	aplasia cutis-enamel dysplasia syndrome	True	False	False
 OMIM:620790	neurodevelopmental disorder with hypotonia and seizures	True	False	False
 OMIM:620792	otosclerosis 12	True	False	False
+OMIM:620793	muscular dystrophy, limb-girdle, autosomal recessive 29	True	False	False
 OMIM:620794	deafness, autosomal recessive 124	True	False	False
 OMIM:620795	autoinflammation with episodic fever and immune dysregulation	True	False	False
 OMIM:620796	proteasome-associated autoinflammatory syndrome 6	True	False	False
@@ -27182,8 +27171,19 @@ OMIM:620840	premature ovarian failure 24	True	False	False
 OMIM:620848	spermatogenic failure 92	True	False	False
 OMIM:620849	spermatogenic failure 93	True	False	False
 OMIM:620850	spermatogenic failure 94	True	False	False
+OMIM:620851	neurodevelopmental disorder with hypotonia, brain anomalies, distinctive facies, and absent language	True	False	False
 OMIM:620852	neurodevelopmental disorder with hypotonia, feeding difficulties, facial dysmorphism, and brain abnormalities	True	False	False
+OMIM:620854	neuronopathy, distal hereditary motor, autosomal recessive 11, with spasticity	True	False	False
 OMIM:620865	ehlers-danlos syndrome, classic-like, 3	True	False	False
+OMIM:620869	immunodeficiency 122	True	False	False
+OMIM:620877	deafness, autosomal recessive 125	True	False	False
+OMIM:620880	autoinflammation with arthritis and vasculitis	True	False	False
+OMIM:620887	multiple mitochondrial dysfunctions syndrome 9b	True	False	False
+OMIM:620894	cardiomyopathy, dilated, 2k	True	False	False
+OMIM:620897	ovarian dysgenesis 11	True	False	False
+OMIM:620901	immunodeficiency 123 with hpv-related verrucosis	True	False	False
+OMIM:620903	polycystic kidney disease 8	True	False	False
+OMIM:620908	arterial tortuosity-bone fragility syndrome	True	False	False
 OMIMPS:100070	Aortic aneurysm, familial abdominal	True	False	False
 OMIMPS:100300	Adams-Oliver syndrome	True	False	False
 OMIMPS:101800	Acrodysostosis	True	False	False
@@ -27359,6 +27359,7 @@ OMIMPS:176400	Precocious puberty, central	True	False	False
 OMIMPS:176670	Progeria	True	False	False
 OMIMPS:177000	Protoporphyria, erythropoietic	True	False	False
 OMIMPS:177200	Liddle syndrome	True	False	False
+OMIMPS:177735	Pseudohypoaldosteronism, type I	True	False	False
 OMIMPS:177900	Psoriasis	True	False	False
 OMIMPS:178110	Contractures, pterygia, and variable skeletal fusions syndrome	True	False	False
 OMIMPS:178600	Pulmonary hypertension, primary (see also hereditary hemorrhagic telangiectasia ({PS187300})	True	False	False
@@ -27554,6 +27555,7 @@ OMIMPS:272430	Cold-induced sweating syndrome	True	False	False
 OMIMPS:273395	Tetraamelia syndrome	True	False	False
 OMIMPS:273750	Three M syndrome	True	False	False
 OMIMPS:273800	Glanzmann thrombasthenia	True	False	False
+OMIMPS:274400	Thyroid dyshormonogenesis	True	False	False
 OMIMPS:275200	Hypothyroidism, congenital, nongoitrous	True	False	False
 OMIMPS:275210	Restrictive dermopathy	True	False	False
 OMIMPS:276300	Mismatch repair cancer syndrome	True	False	False
@@ -27801,6 +27803,7 @@ OMIM:600309		True	False	True
 OMIM:601251		True	False	True
 OMIM:601563		True	False	True
 OMIM:605365		True	False	True
+OMIM:607683		True	False	True
 OMIM:607801		True	False	True
 OMIM:610269		True	False	True
 OMIM:610799		True	False	True

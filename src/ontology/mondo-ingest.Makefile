@@ -165,7 +165,7 @@ $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signatu
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd11foundation.owl.owl --select imports \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		rename --mappings config/icd11foundation-property-map.sssom.tsv \
-		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" \
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select individuals \
 		query \
 			--update ../sparql/fix-labels-with-brackets.ru \
