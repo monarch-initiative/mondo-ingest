@@ -589,6 +589,21 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 .PHONY: sync-synonyms
 sync-synonyms: $(REPORTDIR)/synonym_sync_combined_cases.tsv $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
 
+# TODO temp: remove at end of feature development
+tmp/mondo-edit-with-synonym_sync_combined_cases.robot.owl:
+	robot template --merge-after \
+	  --input tmp/mondo/src/ontology/mondo-edit.owl \
+	  --template $(REPORTDIR)/synonym_sync_combined_cases.tsv \
+	  --output tmp/synonym_sync_combined_cases.robot.owl \
+	  annotate \
+		--ontology-iri $(URIBASE)/mondo/synonym-sync.robot.owl \
+		--version-iri $(URIBASE)/mondo/$(TODAY)/synonym-sync.robot.owl \
+	  	--output $@
+
+# TODO: make this goal and add mondo-edit as param
+#tmp/mondo-edit-with-synonym_sync_combined_cases.robot.owl:
+#	$(ROBOT) template --template $(REPORTDIR)/synonym_sync_combined_cases.tsv --input $(IMPORTDIR)/ro_import.owl -o $@
+
 tmp/mondo-synonyms-scope-type-xref.tsv:
 	$(MAKE) up-to-date-mondo.owl
 	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
