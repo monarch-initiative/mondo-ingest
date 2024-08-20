@@ -599,25 +599,27 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 
 EXTERNAL_CONTENT_DIR=external
 
-EXTERNAL_FILES = efo-proxy-merges \
-		mondo-clingen \
-		mondo-efo \
-		mondo-medgen \
-		mondo-omim-genes \
-		mondo-otar-subset \
-		nando-mappings \
-		nord \
-		ordo-subsets
+EXTERNAL_FILES = \
+	efo-proxy-merges \
+	mondo-clingen \
+	mondo-efo \
+	mondo-medgen \
+	mondo-omim-genes \
+	mondo-otar-subset \
+	nando-mappings \
+	nord \
+	ordo-subsets
 
-tmp/mondo-incl-external.owl: $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl) mondo.owl
-	$(ROBOT) merge $(foreach n,$^, -i $(n)) \
+tmp/mondo-incl-external.owl: $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl)
+	#$(MAKE) up-to-date-mondo.owl
+	$(ROBOT) merge -i tmp/mondo.owl $(foreach n,$^, -i $(n)) \
 		filter --term MONDO:0000001 --term MONDO:0021125 --term MONDO:0042489 --term MONDO:0021178 --select "annotations self descendants" --signature true -o $@
 
 tmp/mondo-incl-robot-report.tsv: tmp/mondo-incl-external.owl config/robot_report_external_content.txt
 	$(ROBOT) report -i $< --profile config/robot_report_external_content.txt --fail-on None -o $@
 
-$(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv: tmp/mondo-incl-robot-report.tsv
-	python $(SCRIPTSDIR)/post_process_externally_managed_content.py --emc-id $* --emc-dir $(EXTERNAL_CONTENT_DIR) --robot-report $<
+$(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv: tmp/mondo-incl-robot-report.tsv $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
+	python $(SCRIPTSDIR)/post_process_externally_managed_content.py --emc-template-tsv $(EXTERNAL_CONTENT_DIR)/$*.robot.tsv --robot-report $< --output $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv
 
 .PHONY: update-externally-managed-content
