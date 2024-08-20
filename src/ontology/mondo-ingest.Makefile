@@ -600,10 +600,6 @@ tmp/mondo-edit-with-synonym_sync_combined_cases.robot.owl:
 		--version-iri $(URIBASE)/mondo/$(TODAY)/synonym-sync.robot.owl \
 	  	--output $@
 
-# TODO: make this goal and add mondo-edit as param
-#tmp/mondo-edit-with-synonym_sync_combined_cases.robot.owl:
-#	$(ROBOT) template --template $(REPORTDIR)/synonym_sync_combined_cases.tsv --input $(IMPORTDIR)/ro_import.owl -o $@
-
 tmp/mondo-synonyms-scope-type-xref.tsv:
 	$(MAKE) up-to-date-mondo.owl
 	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
