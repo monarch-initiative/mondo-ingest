@@ -368,21 +368,23 @@ deploy-mondo-ingest:
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
 
 
-.PHONY: refresh-mondo-clone
+# make function, not target! 
 # Builds tmp/mondo/ and rebuilds mondo.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
-refresh-mondo-clone:
-	cd $(TMPDIR) &&\
-	rm -rf ./mondo/ &&\
-	git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
-	cd mondo/src/ontology &&\
-	make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
-	latest_hash=$$(git rev-parse origin/master) &&\
-	echo "$$latest_hash" > tmp/mondo_repo_built
 
-# Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl and mondo.sssom.tsv, only if mondo repo main branch has new commits
+define build_mondo
+	cd $(TMPDIR) && \
+	rm -rf ./mondo/ && \
+	git clone --depth 1 https://github.com/monarch-initiative/mondo && \
+	cd mondo/src/ontology && \
+	make mondo.owl mappings -B MIR=false IMP=false MIR=false \
+	latest_hash=$$(git rev-parse origin/master) && \
+	cd ../../../.. && \
+	echo "$$latest_hash" > $(1)
+endef
+
 tmp/mondo_repo_built: .FORCE
 	@if [ ! -f $@ ]; then \
-		$(MAKE) refresh-mondo-clone -B; \
+		$(call build_mondo, $@); \
 	else \
 		current_hash=$$(cat $@); \
 		cd tmp/mondo; \
@@ -390,12 +392,10 @@ tmp/mondo_repo_built: .FORCE
 		latest_hash=$$(git rev-parse origin/master); \
 		if [ ! "$$current_hash" = "$$latest_hash" ]; then \
 			cd .. && mv mondo mondo-bak && mv mondo_repo_built mondo_repo_built-bak; \
-			cd .. && $(MAKE) refresh-mondo-clone -B; \
+			cd .. && $(call build_mondo, $@); \
 			rm -rf tmp/mondo-bak tmp/mondo_repo_built-bak; \
 		fi; \
 	fi
-
-
 
 $(TMPDIR)/mondo.owl: tmp/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
