@@ -367,21 +367,23 @@ deploy-mondo-ingest:
 	ls -alt $(DEPLOY_ASSETS_MONDO_INGEST)
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
 
+
 # make function, not target!
 # Builds tmp/mondo/ and rebuilds mondo.owl, mondo-edit.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
 define build_mondo
+	git config --global --add safe.directory /work/src/ontology/tmp/mondo && \
 	cd $(TMPDIR) && \
 	rm -rf ./mondo/ && \
 	git clone --depth 1 https://github.com/monarch-initiative/mondo && \
 	cd mondo/src/ontology && \
 	make mondo.owl mappings mondo-edit.owl -B MIR=false IMP=false MIR=false &&\
 	latest_hash=$$(git rev-parse origin/master) && \
-	echo "$$latest_hash" > $(1) && \
-	cp $@ mappings/mondo.sssom.tsv mondo.owl mondo-edit.owl ../../../;
+	echo "$$latest_hash" > $(1)
 endef
 
 # Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl, mondo-edit.owl, and mondo.sssom.tsv, only if mondo repo main branch has new commits, or if has never been run before
 tmp/mondo_repo_built: .FORCE
+	git config --global --add safe.directory /work/src/ontology/tmp/mondo
 	if [ ! -f $@ ]; then \
 		$(call build_mondo, $@); \
 	else \
@@ -398,6 +400,9 @@ tmp/mondo_repo_built: .FORCE
 
 $(TMPDIR)/mondo.owl: tmp/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
+
+$(TMPDIR)/mondo-edit.owl: tmp/mondo_repo_built
+	cp $(TMPDIR)/mondo/src/ontology/mondo-edit.owl $@
 
  $(TMPDIR)/mondo.sssom.tsv: tmp/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
@@ -596,7 +601,7 @@ sync-synonyms: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.tsv $(SYN_SYNC_DIR)/s
 # TODO temp: remove at end of feature development
 tmp/mondo-edit-with-synonym_sync_combined_cases.robot.owl:
 	robot template --merge-after \
-	  --input tmp/mondo/src/ontology/mondo-edit.owl \
+	  --input $(TMPDIR)/mondo-edit.owl \
 	  --template $(REPORTDIR)/synonym_sync_combined_cases.tsv \
 	  --output tmp/synonym_sync_combined_cases.robot.owl \
 	  annotate \
@@ -604,8 +609,7 @@ tmp/mondo-edit-with-synonym_sync_combined_cases.robot.owl:
 		--version-iri $(URIBASE)/mondo/$(TODAY)/synonym-sync.robot.owl \
 	  	--output $@
 
-tmp/mondo-synonyms-scope-type-xref.tsv:
-	$(MAKE) up-to-date-mondo.owl
+tmp/mondo-synonyms-scope-type-xref.tsv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
 tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
@@ -614,9 +618,8 @@ tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
 ../../tests/input/sync_synonym/%-synonyms-scope-type-xref.tsv:
 	$(ROBOT) query -i ../../tests/input/sync_synonym/test_$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
-tmp/mondo-excluded-synonyms.tsv:
-	$(MAKE) up-to-date-mondo-edit.owl
-	$(ROBOT) query -i tmp/mondo-edit.owl --query ../sparql/mondo-excluded-synonyms.sparql $@
+tmp/mondo-excluded-synonyms.tsv: $(TMPDIR)/mondo-edit.owl
+	$(ROBOT) query -i $< --query ../sparql/mondo-excluded-synonyms.sparql $@
 
 # todo: we may remove this output later output for analysis during development; at the end, remove it and its usages
 INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
