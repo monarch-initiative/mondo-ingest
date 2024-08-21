@@ -364,7 +364,7 @@ def sync_synonyms(
             .fillna('')
         combined_cases_outpath = str(combined_outpath_template_str).format(source_name)
         combined_cases_df = _common_operations(combined_cases_df, combined_cases_outpath, df_is_combined=True)
-        combined_cases_df['source_ontology'] = source_name
+        combined_cases_df['source'] = source_name
         combined_cases_df = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), combined_cases_df])
         combined_cases_df.to_csv(combined_cases_outpath, sep='\t', index=False)
 
