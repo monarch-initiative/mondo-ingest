@@ -367,10 +367,7 @@ deploy-mondo-ingest:
 	ls -alt $(DEPLOY_ASSETS_MONDO_INGEST)
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
 
-
-# make function, not target! 
 # Builds tmp/mondo/ and rebuilds mondo.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
-
 define build_mondo
 	cd $(TMPDIR) && \
 	rm -rf ./mondo/ && \
@@ -378,8 +375,8 @@ define build_mondo
 	cd mondo/src/ontology && \
 	make mondo.owl mappings -B MIR=false IMP=false MIR=false \
 	latest_hash=$$(git rev-parse origin/master) && \
-	cd ../../../.. && \
-	echo "$$latest_hash" > $(1)
+	echo "$$latest_hash" > $(1) && \
+	cp $@ mappings/mondo.sssom.tsv mondo.owl mondo-edit.owl ../../../;
 endef
 
 tmp/mondo_repo_built: .FORCE
