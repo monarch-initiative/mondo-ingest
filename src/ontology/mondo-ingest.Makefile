@@ -382,29 +382,29 @@ define build_mondo
 	echo "$$latest_hash" > $(1)
 endef
 
-tmp/mondo_repo_built: .FORCE
+$(TMPDIR)/mondo_repo_built: .FORCE
 	@if [ ! -f $@ ]; then \
 		$(call build_mondo, $@); \
 	else \
 		current_hash=$$(cat $@); \
-		cd tmp/mondo; \
+		cd $(TMPDIR)/mondo; \
 		git fetch origin; \
 		latest_hash=$$(git rev-parse origin/master); \
 		if [ ! "$$current_hash" = "$$latest_hash" ]; then \
 			cd .. && mv mondo mondo-bak && mv mondo_repo_built mondo_repo_built-bak; \
 			cd .. && $(call build_mondo, $@); \
-			rm -rf tmp/mondo-bak tmp/mondo_repo_built-bak; \
+			rm -rf $(TMPDIR)/mondo-bak $(TMPDIR)/mondo_repo_built-bak; \
 		fi; \
 	fi
 
-$(TMPDIR)/mondo.owl: tmp/mondo_repo_built
+$(TMPDIR)/mondo.owl: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
 
- $(TMPDIR)/mondo.sssom.tsv: tmp/mondo_repo_built
+ $(TMPDIR)/mondo.sssom.tsv: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
 
-reports/mirror_signature-mondo.tsv: tmp/mondo.owl
-	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/classes.sparql $@
+reports/mirror_signature-mondo.tsv: $(TMPDIR)/mondo.owl
+	$(ROBOT) query -i $(TMPDIR)/mondo.owl --query ../sparql/classes.sparql $@
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
 	mv $@-temp $@
 
@@ -435,7 +435,7 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 # - Doeesn't include: broad mappings
 # - Comes from make tmp/mondo.owl
 
-tmp/mondo.sssom.ttl: $(TMPDIR)/mondo.sssom.tsv
+$(TMPDIR)/mondo.sssom.ttl: $(TMPDIR)/mondo.sssom.tsv
 	sssom convert $(TMPDIR)/mondo.sssom.tsv -O rdf -o $@
 
 ALL_EXCLUSION_FILES= $(patsubst %, $(REPORTDIR)/%_term_exclusions.txt, $(ALL_COMPONENT_IDS))
@@ -449,20 +449,20 @@ $(MAPPINGSDIR)/rejected-mappings.tsv:
 $(MAPPINGSDIR)/rejected-mappings-sssom.tsv: $(MAPPINGSDIR)/rejected-mappings.tsv
 	sssom parse $< -m metadata/mondo.sssom.config.yml --no-strict-clean-prefixes -o $@
 
-tmp/mondo-ingest.owl: mondo-ingest.owl
+$(TMPDIR)/mondo-ingest.owl: mondo-ingest.owl
 	cp $< $@
 
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
-tmp/merged.owl: mondo-ingest.owl tmp/mondo.sssom.ttl tmp/mondo.owl
-	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl --add-prefixes config/context.json \
+$(TMPDIR)/merged.owl: mondo-ingest.owl $(TMPDIR)/mondo.sssom.ttl $(TMPDIR)/mondo.owl
+	$(ROBOT) merge -i $(TMPDIR)/mondo.owl -i mondo-ingest.owl -i $(TMPDIR)/mondo.sssom.ttl --add-prefixes config/context.json \
 			 remove --term "http://purl.obolibrary.org/obo/mondo#ABBREVIATION" --preserve-structure false -o $@
 
 # todo: should probably be a multi-target goal, including: $(MAPPINGSDIR)/mondo-sources-all-lexical-2.sssom.tsv
-$(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/rejected-mappings.tsv
+$(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py $(TMPDIR)/merged.db $(MAPPINGSDIR)/rejected-mappings.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical-2.sssom.tsv
 	$(MAKE) pip-bioregistry
-	python $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py run tmp/merged.db \
+	python $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py run $(TMPDIR)/merged.db \
 		-c metadata/mondo.sssom.config.yml \
 		-r config/mondo-match-rules.yaml \
 		--rejects $(MAPPINGSDIR)/rejected-mappings.tsv \
@@ -546,7 +546,7 @@ slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
 slurp-modifications: slurp-modifications-ordo
 
 .PHONY: slurp-modifications-ordo
-slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
+slurp-modifications-ordo: slurp/ordo.tsv $(TMPDIR)/ordo-subsets.tsv
 	python3 $(SCRIPTSDIR)/migrate.py --ordo-mods
 
 #############################
@@ -567,13 +567,13 @@ $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv: $(foreach n,$(ALL_COMPONENT_
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 
 # Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
-$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.direct-in-mondo-only.tsv) tmp/mondo.db
+$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.direct-in-mondo-only.tsv) $(TMPDIR)/mondo.db
 	python3 $(SCRIPTSDIR)/sync_subclassof_collate_direct_in_mondo_only.py --outpath $@
 
 $(REPORTDIR)/sync-subClassOf.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.subclass.confirmed.robot.tsv > $@
 
-$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: tmp/mondo-ingest.db tmp/mondo.db $(TMPDIR)/mondo.sssom.tsv
+$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: $(TMPDIR)/mondo-ingest.db $(TMPDIR)/mondo.db $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof.py \
 	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
 	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
@@ -606,10 +606,10 @@ $(TMPDIR)/mondo-incl-external.owl: $(TMPDIR)/mondo.owl $(foreach n,$(EXTERNAL_FI
 	$(ROBOT) merge -i $(foreach n,$^, -i $(n)) \
 		filter --term MONDO:0000001 --term MONDO:0021125 --term MONDO:0042489 --term MONDO:0021178 --select "annotations self descendants" --signature true -o $@
 
-tmp/mondo-incl-robot-report.tsv: tmp/mondo-incl-external.owl config/robot_report_external_content.txt
+$(TMPDIR)/mondo-incl-robot-report.tsv: $(TMPDIR)/mondo-incl-external.owl config/robot_report_external_content.txt
 	$(ROBOT) report -i $< --profile config/robot_report_external_content.txt --fail-on None -o $@
 
-$(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv: tmp/mondo-incl-robot-report.tsv $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
+$(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv: $(TMPDIR)/mondo-incl-robot-report.tsv $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 	python $(SCRIPTSDIR)/post_process_externally_managed_content.py --emc-template-tsv $(EXTERNAL_CONTENT_DIR)/$*.robot.tsv --robot-report $< --output $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv
 
@@ -640,15 +640,15 @@ $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-conte
 
 ###### ORDO #########
 
-tmp/ordo-subsets.tsv:
+$(TMPDIR)/ordo-subsets.tsv:
 	$(MAKE) component-download-ordo.owl
 	$(ROBOT) query -i $(TMPDIR)/component-download-ordo.owl.owl --query ../sparql/select-ordo-subsets.sparql $@
 
-$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv $(TMPDIR)/mondo.sssom.tsv
+$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: $(TMPDIR)/ordo-subsets.tsv $(TMPDIR)/mondo.sssom.tsv
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python3 $(SCRIPTSDIR)/ordo_subsets.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
-	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
+	--class-subsets-tsv-path $(TMPDIR)/ordo-subsets.tsv \
 	--onto-config-path metadata/ordo.yml \
 	--outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
@@ -744,7 +744,7 @@ update-jinja-sparql-queries:
 ########### Ad hoc ##########
 #############################
 $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
-	$(ROBOT) query -i tmp/merged.owl --query $< $@
+	$(ROBOT) query -i $(TMPDIR)/merged.owl --query $< $@
 
 .PHONY: mondo-ordo-subclass
 mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
