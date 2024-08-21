@@ -24,7 +24,7 @@ from src.scripts.utils import PREFIX_MAP, get_owned_prefix_map
 HEADERS_TO_ROBOT_SUBHEADERS = {
     'mondo_id': 'ID',
     'mondo_label': '',
-    'synonym_scope': '',
+    'synonym_scope_source': '',
     'synonym_scope_mondo': '',
     'synonym': '',
     'synonym_exact': 'A oboInOwl:hasExactSynonym',
@@ -39,7 +39,7 @@ HEADERS_TO_ROBOT_SUBHEADERS = {
     'case': '',
 
 }
-SORT_COLS = ['case', 'mondo_id', 'source_id', 'synonym_scope', 'synonym_type', 'synonym_type_mondo', 'synonym']
+SORT_COLS = ['case', 'mondo_id', 'source_id', 'synonym_scope_source', 'synonym_type', 'synonym_type_mondo', 'synonym']
 
 
 def _query_synonyms(ids: List[CURIE], db: SqlImplementation) -> pd.DataFrame:
@@ -73,11 +73,14 @@ def _add_synonym_type_inferences(row: pd.Series) -> str:
 
 def _common_operations(
     df: pd.DataFrame, outpath: Union[Path, str], order_cols: List[str] = list(HEADERS_TO_ROBOT_SUBHEADERS.keys()),
-    sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True
+    sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, df_is_combined=False
 ) -> pd.DataFrame:
     """Merges synonym types, filters exclusions, does some formatting, and optionally saves.
 
     Formatting: Add columns, format column order and sorting, drop any superfluous columns.
+
+    :param: df_is_combined: At the end, we combine all cases into a single file. But for this combined case, we want to
+     skip certain operations.
 
     todo: consider: things that might be able to be done after building mondo_df and source_df but before cases
      1. pretty sure: merging of synonym_type & synonym_type_mondo
@@ -89,12 +92,15 @@ def _common_operations(
             df['synonym_lower'].isin(mondo_exclusions_df['synonym_lower'])))]
 
     # Format
-    # - Add ROBOT columns for each synonym scope
-    synonym_scopes = ['Exact', 'Broad', 'Narrow', 'Related']
-    for scope in synonym_scopes:
-        preds = [f'oboInOwl:has{scope}Synonym', f'oio:has{scope}Synonym']
-        df['synonym_' + scope.lower()] = df.apply(
-            lambda row: row['synonym'] if row['synonym_scope'] in preds else '', axis=1)
+    if not df_is_combined:
+        # - Add ROBOT columns for each synonym scope
+        synonym_scopes = ['Exact', 'Broad', 'Narrow', 'Related']
+        for scope in synonym_scopes:
+            preds = [f'oboInOwl:has{scope}Synonym', f'oio:has{scope}Synonym']
+            df['synonym_' + scope.lower()] = df.apply(
+                lambda row: row['synonym'] if row['synonym_scope'] in preds else '', axis=1)
+        # - Renames
+        df = df.rename(columns={'synonym_scope': 'synonym_scope_source'})
     # - Order & sorting
     order_cols = [x for x in order_cols if x in df.columns]
     sort_cols = [x for x in sort_cols if x in df.columns]
@@ -357,7 +363,7 @@ def sync_synonyms(
         combined_cases_df = pd.concat([confirmed_df, added_df, updated_df, deleted_df], ignore_index=True)\
             .fillna('')
         combined_cases_outpath = str(combined_outpath_template_str).format(source_name)
-        combined_cases_df = _common_operations(combined_cases_df, combined_cases_outpath)
+        combined_cases_df = _common_operations(combined_cases_df, combined_cases_outpath, df_is_combined=True)
         combined_cases_df['source_ontology'] = source_name
         combined_cases_df = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), combined_cases_df])
         combined_cases_df.to_csv(combined_cases_outpath, sep='\t', index=False)
