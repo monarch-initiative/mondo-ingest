@@ -32,8 +32,6 @@
 | Orphanet:662184 | Congenital muscular dystrophy-cataract-intellectual disability syndrome                                                  |
 | Orphanet:672979 | Craniosynostosis-facial dysmorphism-brachydactyly syndrome                                                               |
 | Orphanet:672985 | Craniosynostosis-skeletal and cerebellar anomalies-learning disabilities syndrome                                        |
-| Orphanet:660017 | Developmental delay-language impairment-dopa responsive dystonia-parkinsonism syndrome                                   |
-| Orphanet:660012 | Developmental delay-language impairment-dopa responsive dystonia-parkinsonism syndrome due to a NR4A2 point mutation     |
 | Orphanet:674947 | Diffuse unilateral subacute neuroretinitis                                                                               |
 | Orphanet:675837 | Diffused pleural mesothelioma                                                                                            |
 | Orphanet:662473 | Duodenal duplication                                                                                                     |
@@ -46,7 +44,6 @@
 | Orphanet:673568 | Eccrine angiomatous hamartoma                                                                                            |
 | Orphanet:662229 | Episodic memory defect leukoencephalopathy                                                                               |
 | Orphanet:659681 | Erythropoietic porphyria                                                                                                 |
-| Orphanet:659609 | Facial dysmorphism-global developmental delay-hypotonia-polymicrogyria syndrome                                          |
 | Orphanet:662388 | Gallbladder duplication                                                                                                  |
 | Orphanet:662376 | Gastric duplication                                                                                                      |
 | Orphanet:662255 | Grisel syndrome                                                                                                          |
@@ -55,7 +52,6 @@
 | Orphanet:664450 | Inherited cancer-predisposing lymphoproliferative syndrome                                                               |
 | Orphanet:662829 | Intellectual disability-speech delay-dysmorphic features-T cell abnormalities syndrome                                   |
 | Orphanet:667678 | Intraoral basal cell carcinoma                                                                                           |
-| Orphanet:659702 | Intrauterine growth retardation-micrognathia-short stature-facial dysmorphism-rhizomelic shortening syndrome             |
 | Orphanet:674943 | Isolated angioid streaks                                                                                                 |
 | Orphanet:667589 | Isolated congenital femoral bifurcation                                                                                  |
 | Orphanet:674924 | Isolated retinal racemose hemangioma                                                                                     |
@@ -71,7 +67,6 @@
 | Orphanet:675369 | Microvenular haemangioma                                                                                                 |
 | Orphanet:662762 | Motor delay-microcephaly-speech impairment-ocular abnormalities syndrome                                                 |
 | Orphanet:662216 | Mucopolysaccharidosis type 10                                                                                            |
-| Orphanet:659904 | Multiple congenital anomalies-neurodevelopmental delay-ocular abnormalities syndrome                                     |
 | Orphanet:674953 | Multiple evanescent white dot syndrome                                                                                   |
 | Orphanet:664912 | Neonatal renal venous thrombosis                                                                                         |
 | Orphanet:662198 | Neurodevelopmental delay-intellectual disability-skeletal defects syndrome                                               |
@@ -98,7 +93,6 @@
 | Orphanet:659712 | Rare yersiniosis                                                                                                         |
 | Orphanet:673574 | Reactive angioendotheliomatosis                                                                                          |
 | Orphanet:659634 | Relapsing isolated optic neuritis                                                                                        |
-| Orphanet:659975 | Sensorineural hearing loss-spastic quadriplegia-intellectual disability syndrome                                         |
 | Orphanet:675775 | Severe congenital myelofibrosis-pancytopenia-intellectual disability-neurologic and ophthalmic abnormalities syndrome    |
 | Orphanet:675767 | Severe congenital neutropenia-developmental delay-pancreatic insufficiency syndrome due to SRP54 deficiency              |
 | Orphanet:659626 | Single isolated optic neuritis                                                                                           |
