@@ -48,18 +48,6 @@
  ] .
 
 
-###  http://purl.obolibrary.org/obo/MONDO_0005258
-<http://purl.obolibrary.org/obo/MONDO_0005258> rdf:type owl:Class ;
-                                               <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "EFO:0003759" .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://purl.obolibrary.org/obo/MONDO_0005258> ;
-   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasDbXref> ;
-   owl:annotatedTarget "EFO:0003759" ;
-   <http://www.geneontology.org/formats/oboInOwl#source> "MONDO:preferredExternal"
- ] .
-
-
 ###  http://purl.obolibrary.org/obo/MONDO_0005812
 <http://purl.obolibrary.org/obo/MONDO_0005812> rdf:type owl:Class ;
                                                <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "EFO:0007328" .
