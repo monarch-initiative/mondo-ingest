@@ -586,8 +586,12 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--onto-config-path metadata/$*.yml
 
 # Synchronization: Synonyms
+SYN_SYNC_DIR=$(REPORTDIR)/sync-synonym
+$(SYN_SYNC_DIR):
+	mkdir -p $@
+
 .PHONY: sync-synonyms
-sync-synonyms: $(REPORTDIR)/synonym_sync_combined_cases.tsv $(REPORTDIR)/sync-synonyms.added.tsv $(REPORTDIR)/sync-synonyms.confirmed.tsv $(REPORTDIR)/sync-synonyms.updated.tsv
+sync-synonyms: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.tsv
 
 # TODO temp: remove at end of feature development
 tmp/mondo-edit-with-synonym_sync_combined_cases.robot.owl:
@@ -616,23 +620,25 @@ tmp/mondo-excluded-synonyms.tsv:
 
 # todo: we may remove this output later output for analysis during development; at the end, remove it and its usages
 INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
-$(REPORTDIR)/synonym_sync_combined_cases.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.added.robot.tsv)
+$(SYN_SYNC_DIR)/synonym_sync_combined_cases.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
 	@head -n 2 $(firstword $(INPUT_FILES)) > $@
 	@for file in $(INPUT_FILES); do \
 		tail -n +3 $$file >> $@; \
 	done
 
-$(REPORTDIR)/sync-synonyms.added.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.added.robot.tsv)
+$(SYN_SYNC_DIR)/sync-synonyms.added.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.added.robot.tsv > $@
 
-$(REPORTDIR)/sync-synonyms.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.confirmed.robot.tsv)
+$(SYN_SYNC_DIR)/sync-synonyms.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.confirmed.robot.tsv > $@
 
-$(REPORTDIR)/sync-synonyms.updated.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)-synonyms.updated.robot.tsv)
+$(SYN_SYNC_DIR)/sync-synonyms.updated.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.updated.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.synonyms.updated.robot.tsv > $@
 
-$(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.tsv $(REPORTDIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/mondo-excluded-synonyms.tsv tmp/%-synonyms-scope-type-xref.tsv
-	$(MAKE) up-to-date-mondo.sssom.tsv
+# TODO temp
+$(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv: | $(SYN_SYNC_DIR)
+#$(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/mondo-excluded-synonyms.tsv tmp/%-synonyms-scope-type-xref.tsv | $(SYN_SYNC_DIR)
+#	$(MAKE) up-to-date-mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
 	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
@@ -640,9 +646,9 @@ $(REPORTDIR)/%-synonyms.added.robot.tsv $(REPORTDIR)/%-synonyms.confirmed.robot.
 	--mondo-excluded-synonyms-path tmp/mondo-excluded-synonyms.tsv \
 	--onto-synonym-types-path tmp/$*-synonyms-scope-type-xref.tsv \
 	--onto-config-path metadata/$*.yml \
-	--outpath-added $(REPORTDIR)/$*.synonyms.added.robot.tsv \
-	--outpath-confirmed $(REPORTDIR)/$*.synonyms.confirmed.robot.tsv \
-	--outpath-updated $(REPORTDIR)/$*.synonyms.updated.robot.tsv
+	--outpath-added $(SYN_SYNC_DIR)/$*.synonyms.added.robot.tsv \
+	--outpath-confirmed $(SYN_SYNC_DIR)/$*.synonyms.confirmed.robot.tsv \
+	--outpath-updated $(SYN_SYNC_DIR)/$*.synonyms.updated.robot.tsv
 
 ##################################
 ## Externally managed content ####
