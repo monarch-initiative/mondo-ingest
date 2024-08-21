@@ -231,8 +231,7 @@ unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_ter
 .PHONY: unmapped-terms-tables
 unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_status.tsv)
 
-$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt metadata/%.yml $(COMPONENTSDIR)/%.db
-	$(MAKE) up-to-date-mondo.sssom.tsv
+$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt metadata/%.yml $(COMPONENTSDIR)/%.db $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
 	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
@@ -271,8 +270,7 @@ $(REPORTDIR)/%_exclusion_reasons.ttl: component-download-%.owl $(REPORTDIR)/%_ex
 	$(ROBOT) template --input $(TMPDIR)/component-download-$*.owl.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
 
 # todo: Should this also be a prereq $(TMPDIR)/component-download-$*.owl.owl? Perhaps worried about refreshing when not need to? But then we'd just use COMP=false if so?
-$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv
-	$(MAKE) up-to-date-mondo.sssom.tsv
+$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv $(TMPDIR)/mondo.sssom.tsv
 	python3 $(RELEASEDIR)/src/analysis/problematic_exclusions.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
@@ -283,7 +281,7 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 
 # Exclusions: all artefacts for single ontology
 .PHONY: exclusions-%
-exclusions-%: reports/%_exclusion_reasons.ttl reports/%_excluded_terms_in_mondo_xrefs.tsv  $(REPORTDIR)/%_term_exclusions.txt 
+exclusions-%: reports/%_exclusion_reasons.ttl reports/%_excluded_terms_in_mondo_xrefs.tsv  $(REPORTDIR)/%_term_exclusions.txt
 	@echo "$@ completed"
 
 exclusions-all: $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
@@ -369,44 +367,43 @@ deploy-mondo-ingest:
 	ls -alt $(DEPLOY_ASSETS_MONDO_INGEST)
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
 
-USE_MONDO_RELEASE=false
 
+# make function, not target! 
 # Builds tmp/mondo/ and rebuilds mondo.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
-tmp/mondo_repo_built:
-	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
-		rm -rf ./mondo/ &&\
-		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
-		cd mondo/src/ontology &&\
-		make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
-		latest_hash=$$(git rev-parse origin/master) &&\
-		echo "$$latest_hash" > $@ &&\
-		cp $@ mappings/mondo.sssom.tsv mondo.owl ../../../; fi
 
-# Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl and mondo.sssom.tsv, only if mondo repo main branch has new commits
-.PHONY: refresh-mondo-clone
-refresh-mondo-clone:
-	@if [ ! -d tmp/mondo ]; then \
-		$(MAKE) tmp/mondo_repo_built -B; \
+define build_mondo
+	cd $(TMPDIR) && \
+	rm -rf ./mondo/ && \
+	git clone --depth 1 https://github.com/monarch-initiative/mondo && \
+	cd mondo/src/ontology && \
+	make mondo.owl mappings -B MIR=false IMP=false MIR=false \
+	latest_hash=$$(git rev-parse origin/master) && \
+	cd ../../../.. && \
+	echo "$$latest_hash" > $(1)
+endef
+
+tmp/mondo_repo_built: .FORCE
+	@if [ ! -f $@ ]; then \
+		$(call build_mondo, $@); \
 	else \
-		current_hash=$$(cat tmp/mondo_repo_built); \
+		current_hash=$$(cat $@); \
 		cd tmp/mondo; \
 		git fetch origin; \
 		latest_hash=$$(git rev-parse origin/master); \
 		if [ ! "$$current_hash" = "$$latest_hash" ]; then \
 			cd .. && mv mondo mondo-bak && mv mondo_repo_built mondo_repo_built-bak; \
-			cd .. && $(MAKE) tmp/mondo_repo_built -B; \
+			cd .. && $(call build_mondo, $@); \
 			rm -rf tmp/mondo-bak tmp/mondo_repo_built-bak; \
 		fi; \
 	fi
 
-.PHONY: up-to-date-mondo.sssom.tsv
-up-to-date-mondo.sssom.tsv: refresh-mondo-clone
+$(TMPDIR)/mondo.owl: tmp/mondo_repo_built
+	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
 
-.PHONY: up-to-date-mondo.owl
-up-to-date-mondo.owl: refresh-mondo-clone
+ $(TMPDIR)/mondo.sssom.tsv: tmp/mondo_repo_built
+	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
 
-reports/mirror_signature-mondo.tsv:
-	$(MAKE) up-to-date-mondo.owl
+reports/mirror_signature-mondo.tsv: tmp/mondo.owl
 	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/classes.sparql $@
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
 	mv $@-temp $@
@@ -438,8 +435,7 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 # - Doeesn't include: broad mappings
 # - Comes from make tmp/mondo.owl
 
-tmp/mondo.sssom.ttl:
-	$(MAKE) up-to-date-mondo.sssom.tsv
+tmp/mondo.sssom.ttl: $(TMPDIR)/mondo.sssom.tsv
 	sssom convert $(TMPDIR)/mondo.sssom.tsv -O rdf -o $@
 
 ALL_EXCLUSION_FILES= $(patsubst %, $(REPORTDIR)/%_term_exclusions.txt, $(ALL_COMPONENT_IDS))
@@ -457,8 +453,7 @@ tmp/mondo-ingest.owl: mondo-ingest.owl
 	cp $< $@
 
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
-tmp/merged.owl: mondo-ingest.owl tmp/mondo.sssom.ttl
-	$(MAKE) up-to-date-mondo.owl
+tmp/merged.owl: mondo-ingest.owl tmp/mondo.sssom.ttl tmp/mondo.owl
 	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl --add-prefixes config/context.json \
 			 remove --term "http://purl.obolibrary.org/obo/mondo#ABBREVIATION" --preserve-structure false -o $@
 
@@ -508,8 +503,7 @@ slurp/:
 	mkdir -p $@
 
 # min-id: the next available Mondo ID
-slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
-	$(MAKE) up-to-date-mondo.sssom.tsv
+slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv $(TMPDIR)/mondo.sssom.tsv | slurp/
 	python3 $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
@@ -568,8 +562,7 @@ sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-su
 .PHONY: sync-subclassof-%
 sync-subclassof-%: $(REPORTDIR)/%.subclass.confirmed.robot.tsv
 
-$(TMPDIR)/sync-subClassOf.added.self-parentage.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n).subclass.self-parentage.tsv)
-	$(MAKE) up-to-date-mondo.sssom.tsv
+$(TMPDIR)/sync-subClassOf.added.self-parentage.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n).subclass.self-parentage.tsv) $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof_collate_self_parentage.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 
@@ -580,8 +573,7 @@ $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONE
 $(REPORTDIR)/sync-subClassOf.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.subclass.confirmed.robot.tsv > $@
 
-$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: tmp/mondo-ingest.db tmp/mondo.db
-	$(MAKE) up-to-date-mondo.sssom.tsv
+$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: tmp/mondo-ingest.db tmp/mondo.db $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof.py \
 	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
 	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
@@ -653,9 +645,8 @@ tmp/ordo-subsets.tsv:
 	$(MAKE) component-download-ordo.owl
 	$(ROBOT) query -i $(TMPDIR)/component-download-ordo.owl.owl --query ../sparql/select-ordo-subsets.sparql $@
 
-$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv
+$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv $(TMPDIR)/mondo.sssom.tsv
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
-	$(MAKE) up-to-date-mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/ordo_subsets.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
@@ -731,8 +722,7 @@ mapped-deprecated-terms-docs: ../../docs/reports/mapped_deprecated.md
 .PHONY: mapped-deprecated-terms-artefacts
 mapped-deprecated-terms-artefacts: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
 
-$(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mapping_status.tsv
-	$(MAKE) up-to-date-mondo.sssom.tsv
+$(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mapping_status.tsv $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--mapping-status-path $(REPORTDIR)/$*_mapping_status.tsv \
@@ -773,10 +763,6 @@ help:
 	# Common dependencies
 	@echo "refresh-mondo-clone"
 	@echo "Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl and mondo.sssom.tsv, only if mondo repo main branch has new commits\n"
-	@echo "up-to-date-mondo.sssom.tsv"
-	@echo "Triggers a refresh mondo.sssom.tsv (via refresh-mondo-clone), only if mondo repo main branch has new commits\n"
-	@echo "up-to-date-mondo.owl"
-	@echo "Triggers a refresh mondo.owl (via refresh-mondo-clone), only if mondo repo main branch has new commits\n"
 	# Slurp / migrate
 	@echo "slurp/%.tsv and slurp-%"
 	@echo "For a given ontology, determine all slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.\n"
