@@ -602,9 +602,8 @@ EXTERNAL_FILES = \
 	nord \
 	ordo-subsets
 
-tmp/mondo-incl-external.owl: $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl)
-	#$(MAKE) up-to-date-mondo.owl
-	$(ROBOT) merge -i tmp/mondo.owl $(foreach n,$^, -i $(n)) \
+$(TMPDIR)/mondo-incl-external.owl: $(TMPDIR)/mondo.owl $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl)
+	$(ROBOT) merge -i $(foreach n,$^, -i $(n)) \
 		filter --term MONDO:0000001 --term MONDO:0021125 --term MONDO:0042489 --term MONDO:0021178 --select "annotations self descendants" --signature true -o $@
 
 tmp/mondo-incl-robot-report.tsv: tmp/mondo-incl-external.owl config/robot_report_external_content.txt
