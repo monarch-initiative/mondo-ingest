@@ -2,14 +2,14 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ncit.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-08-13/ncit.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-08-20/ncit.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 12 |
-| Axioms | 623839 |
+| Axioms | 1328208 |
 | Logical axioms | 33655 |
 | Classes | 15971 |
 | Object properties | 0 |
@@ -32,7 +32,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 574182 |
+| AnnotationAssertion | 1278551 |
 | EquivalentClasses | 6260 |
 | DatatypeDefinition | 19 |
 | AnnotationPropertyRangeOf | 1 |
