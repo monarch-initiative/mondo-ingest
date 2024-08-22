@@ -598,17 +598,6 @@ $(SYN_SYNC_DIR):
 .PHONY: sync-synonyms
 sync-synonyms: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.tsv
 
-# TODO temp: remove at end of feature development
-tmp/mondo-edit-with-synonym_sync_combined_cases.robot.owl:
-	robot template --merge-after \
-	  --input $(TMPDIR)/mondo-edit.owl \
-	  --template $(REPORTDIR)/synonym_sync_combined_cases.tsv \
-	  --output tmp/synonym_sync_combined_cases.robot.owl \
-	  annotate \
-		--ontology-iri $(URIBASE)/mondo/synonym-sync.robot.owl \
-		--version-iri $(URIBASE)/mondo/$(TODAY)/synonym-sync.robot.owl \
-	  	--output $@
-
 tmp/mondo-synonyms-scope-type-xref.tsv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
