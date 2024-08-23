@@ -400,6 +400,12 @@ $(TMPDIR)/mondo_repo_built: .FORCE
 $(TMPDIR)/mondo.owl: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
 
+# The following target simulates the EMC pipeline. It runs it in exactly the same way
+# as it would be run in the context of the Mondo repo, so we can test it 
+# exactly the way it will look like when it is processed then.
+# In particular, this allows us to use QC tests that are reliant on the various pre and 
+# postprocessing steps needed, like Animal QC (which relies on the rare subset pipeline)
+
  $(TMPDIR)/mondo.sssom.tsv: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
 
@@ -603,15 +609,23 @@ EXTERNAL_FILES = \
 	nord \
 	ordo-subsets
 
-$(TMPDIR)/mondo-incl-external.owl: $(TMPDIR)/mondo.owl $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl)
-	$(ROBOT) merge $(foreach n,$^, -i $(n)) \
-		filter --term MONDO:0000001 --term MONDO:0021125 --term MONDO:0042489 --term MONDO:0021178 --select "annotations self descendants" --signature true -o $@
+$(TMPDIR)/mondo-with-simulated-emc-run.owl: $(TMPDIR)/mondo_repo_built
+	mkdir -p $(TMPDIR)/mondo/src/ontology/tmp/external/
+	$(foreach n,$(EXTERNAL_FILES), cp -f $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl $(TMPDIR)/mondo/src/ontology/tmp/external/processed-$(n).robot.owl;) \
+	cd $(TMPDIR)/mondo/src/ontology && \
+	cp mondo-edit.owl mondo-edit.owl.bak && \
+	cp mondo-edit.obo mondo-edit.obo.bak && \
+	make update-external-content-incl-rare -B MIR=false IMP=false MIR=false DOWNLOAD_EXTERNAL=false &&\
+	make mondo-edit.owl MIR=false IMP=false MIR=false
+	cp $(TMPDIR)/mondo/src/ontology/mondo-edit.owl $@
+	mv $(TMPDIR)/mondo/src/ontology/mondo-edit.owl.bak $(TMPDIR)/mondo/src/ontology/mondo-edit.owl
+	mv $(TMPDIR)/mondo/src/ontology/mondo-edit.obo.bak $(TMPDIR)/mondo/src/ontology/mondo-edit.obo
 
-$(TMPDIR)/mondo-incl-robot-report.tsv: $(TMPDIR)/mondo-incl-external.owl config/robot_report_external_content.txt
-	$(ROBOT) report -i $< --profile config/robot_report_external_content.txt --fail-on None -o $@
+$(TMPDIR)/mondo-incl-robot-report.tsv: $(TMPDIR)/mondo-with-simulated-emc-run.owl config/robot_report_external_content.txt
+	$(ROBOT) report -i $(TMPDIR)/mondo-with-simulated-emc-run.owl --profile config/robot_report_external_content.txt --base-iri "http://purl.obolibrary.org/obo/MONDO_" --fail-on None -o $@
 
-$(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv: $(TMPDIR)/mondo-incl-robot-report.tsv $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
-	python $(SCRIPTSDIR)/post_process_externally_managed_content.py --emc-template-tsv $(EXTERNAL_CONTENT_DIR)/$*.robot.tsv --robot-report $< --output $@
+$(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv $(SCRIPTSDIR)/post_process_externally_managed_content.py $(TMPDIR)/mondo-incl-robot-report.tsv 
+	python $(SCRIPTSDIR)/post_process_externally_managed_content.py --emc-template-tsv $(EXTERNAL_CONTENT_DIR)/$*.robot.tsv --robot-report $(TMPDIR)/mondo-incl-robot-report.tsv --output $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv
 
 .PHONY: update-externally-managed-content
