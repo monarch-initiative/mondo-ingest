@@ -263,6 +263,9 @@ def sync_synonyms(
     source_types_df.drop_duplicates(inplace=True)
     # -- filter out rows with no types; can cause duplicate rows (other rows were probably from xref axioms)
     source_types_df = source_types_df[source_types_df['synonym_type'] != '']
+    # -- property conversions
+    source_types_df['synonym_type'] = source_types_df['synonym_type'].apply(lambda x: x.replace(
+        'http://purl.obolibrary.org/obo/OMO_0003012', 'http://purl.obolibrary.org/obo/mondo#ABBREVIATION'))
     # -- multiple synonym_types: QC
     # TODO: probably need to support multiple types. may need to reactivate error. could have unexpected results
     #  if dupes come through
