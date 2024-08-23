@@ -613,6 +613,7 @@ $(TMPDIR)/mondo-with-simulated-emc-run.owl: $(TMPDIR)/mondo_repo_built
 	mkdir -p $(TMPDIR)/mondo/src/ontology/tmp/external/
 	$(foreach n,$(EXTERNAL_FILES), cp -f $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl $(TMPDIR)/mondo/src/ontology/tmp/external/processed-$(n).robot.owl;) \
 	cd $(TMPDIR)/mondo/src/ontology && \
+	touch mondo-edit.owl && \
 	cp mondo-edit.owl mondo-edit.owl.bak && \
 	cp mondo-edit.obo mondo-edit.obo.bak && \
 	make update-external-content-incl-rare -B MIR=false IMP=false MIR=false DOWNLOAD_EXTERNAL=false &&\
