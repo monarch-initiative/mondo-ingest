@@ -39,6 +39,11 @@ def _get_column_of_external_source_related_to_qc_failure(qc_failure, erroneous_r
             qc_value = qc_failure["Value"]
             if value == qc_value:
                 return column
+            else:
+                print(f"Value: {value}| QC Value: {qc_value}")
+                qc_value = qc_value.replace("obo:mondo#", "http://purl.obolibrary.org/obo/mondo#")
+                if value == qc_value:
+                    return column
     
     return None
 
