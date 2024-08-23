@@ -27,17 +27,24 @@ HEADERS_TO_ROBOT_SUBHEADERS = {
     'synonym_scope_source': '',
     'synonym_scope_mondo': '',
     'synonym': '',
-    'synonym_exact': 'A oboInOwl:hasExactSynonym',
-    'synonym_broad': 'A oboInOwl:hasBroadSynonym',
-    'synonym_narrow': 'A oboInOwl:hasNarrowSynonym',
-    'synonym_related': 'A oboInOwl:hasRelatedSynonym',
-    'source_id': '>A oboInOwl:hasDbXref',
+    'source_id': '',
     'source_label': '',
-    'synonym_type': '>AI oboInOwl:hasSynonymType SPLIT=|',
+    'synonym_type': '',
     'synonym_type_mondo': '',
     'mondo_evidence': '',
     'case': '',
-
+    'exact_synonym': 'A oboInOwl:hasExactSynonym',
+    'exact_source_id': '>A oboInOwl:hasDbXref',
+    'exact_synonym_type': '>AI oboInOwl:hasSynonymType SPLIT=|',
+    'broad_synonym': 'A oboInOwl:hasBroadSynonym',
+    'broad_source_id': '>A oboInOwl:hasDbXref',
+    'broad_synonym_type': '>AI oboInOwl:hasSynonymType SPLIT=|',
+    'narrow_synonym': 'A oboInOwl:hasNarrowSynonym',
+    'narrow_source_id': '>A oboInOwl:hasDbXref',
+    'narrow_synonym_type': '>AI oboInOwl:hasSynonymType SPLIT=|',
+    'related_synonym': 'A oboInOwl:hasRelatedSynonym',
+    'related_source_id': '>A oboInOwl:hasDbXref',
+    'related_synonym_type': '>AI oboInOwl:hasSynonymType SPLIT=|',
 }
 SORT_COLS = ['case', 'mondo_id', 'source_id', 'synonym_scope_source', 'synonym_type', 'synonym_type_mondo', 'synonym']
 
@@ -94,11 +101,12 @@ def _common_operations(
     # Format
     if not df_is_combined:
         # - Add ROBOT columns for each synonym scope
-        synonym_scopes = ['Exact', 'Broad', 'Narrow', 'Related']
+        synonym_scopes = ['exact', 'broad', 'narrow', 'related']
         for scope in synonym_scopes:
-            preds = [f'oboInOwl:has{scope}Synonym', f'oio:has{scope}Synonym']
-            df['synonym_' + scope.lower()] = df.apply(
-                lambda row: row['synonym'] if row['synonym_scope'] in preds else '', axis=1)
+            preds = [f'oboInOwl:has{scope.capitalize()}Synonym', f'oio:has{scope.capitalize()}Synonym']
+            for col in ['synonym', 'source_id', 'synonym_type']:
+                df[scope + '_' + col] = df.apply(
+                    lambda row: row[col] if row['synonym_scope'] in preds else '', axis=1)
         # - Renames
         df = df.rename(columns={'synonym_scope': 'synonym_scope_source'})
     # - Order & sorting
@@ -239,9 +247,6 @@ def sync_synonyms(
     source_df['synonym_lower'] = source_df['synonym'].str.lower()
     source_df['source_label'] = source_df['source_id'].map(source_labels)
     source_df.drop_duplicates(inplace=True)
-    # todo: some of these will be CURIE, e.g. MONDO:GENERATED. others URI, e.g.
-    #  http://purl.obolibrary.org/obo/OMO_0003012. Need to find a way to standardize. Probably best to do URI because
-    #  harder to account for all possible namespaces.
     # - get synonym_types: declared by the source
     source_types_df: pd.DataFrame = _read_sparql_output_tsv(onto_synonym_types_path).rename(columns={'cls_id': 'source_id'})
     # -- remove synonym xref provenance
