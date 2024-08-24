@@ -613,7 +613,7 @@ EXTERNAL_FILES = \
 # postprocessing steps needed, like Animal QC (which relies on the rare subset pipeline,
 # which is SPARQL postprocessing based).
 
-$(TMPDIR)/mondo-with-simulated-emc-run.owl: $(TMPDIR)/mondo_repo_built
+$(TMPDIR)/mondo-with-simulated-emc-run.owl: $(TMPDIR)/mondo_repo_built $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl)
 	mkdir -p $(TMPDIR)/mondo/src/ontology/tmp/external/
 	$(foreach n,$(EXTERNAL_FILES), cp -f $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl $(TMPDIR)/mondo/src/ontology/tmp/external/processed-$(n).robot.owl;) \
 	cd $(TMPDIR)/mondo/src/ontology && \
