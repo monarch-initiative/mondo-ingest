@@ -382,10 +382,12 @@ define build_mondo
 	echo "$$latest_hash" > $(1)
 endef
 
+SKIP_REFRESH=false
+
 $(TMPDIR)/mondo_repo_built: .FORCE
 	@if [ ! -f $@ ]; then \
 		$(call build_mondo, $@); \
-	else \
+	elif [ "$(SKIP_REFRESH)" != "true" ]; then \
 		current_hash=$$(cat $@); \
 		cd $(TMPDIR)/mondo; \
 		git fetch origin; \
@@ -396,6 +398,7 @@ $(TMPDIR)/mondo_repo_built: .FORCE
 			rm -rf $(TMPDIR)/mondo-bak $(TMPDIR)/mondo_repo_built-bak; \
 		fi; \
 	fi
+
 
 $(TMPDIR)/mondo.owl: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
