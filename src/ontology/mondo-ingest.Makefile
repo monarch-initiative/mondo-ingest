@@ -403,12 +403,6 @@ $(TMPDIR)/mondo_repo_built: .FORCE
 $(TMPDIR)/mondo.owl: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
 
-# The following target simulates the EMC pipeline. It runs it in exactly the same way
-# as it would be run in the context of the Mondo repo, so we can test it 
-# exactly the way it will look like when it is processed then.
-# In particular, this allows us to use QC tests that are reliant on the various pre and 
-# postprocessing steps needed, like Animal QC (which relies on the rare subset pipeline)
-
  $(TMPDIR)/mondo.sssom.tsv: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
 
@@ -611,6 +605,13 @@ EXTERNAL_FILES = \
 	gard \
 	nord \
 	ordo-subsets
+
+# The following target simulates the EMC pipeline. It runs it in exactly the same way
+# as it would be run in the context of the Mondo repo. This way, we can test Mondo 
+# in exactly the same state as it would look like when the EMC pipeline was run properly.
+# In particular, this allows us to use QC tests that are reliant on the various pre- and 
+# postprocessing steps needed, like Animal QC (which relies on the rare subset pipeline,
+# which is SPARQL postprocessing based).
 
 $(TMPDIR)/mondo-with-simulated-emc-run.owl: $(TMPDIR)/mondo_repo_built
 	mkdir -p $(TMPDIR)/mondo/src/ontology/tmp/external/
