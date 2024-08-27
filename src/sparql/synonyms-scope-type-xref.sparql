@@ -15,7 +15,10 @@ WHERE {
        owl:annotatedTarget ?synonym .
 
     OPTIONAL { ?axiom oboInOwl:hasDbXref ?dbXref }
-    OPTIONAL { ?axiom oboInOwl:hasSynonymType ?synonymTypeUri }
+    OPTIONAL {
+      ?axiom oboInOwl:hasSynonymType ?synonymTypeUri .
+      FILTER(?synonymTypeUri != <http://purl.obolibrary.org/obo/mondo#GENERATED>)
+    }
   }
 
   FILTER(?synonymPropertyUri IN (
