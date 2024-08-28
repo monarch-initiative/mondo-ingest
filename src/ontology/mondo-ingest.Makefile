@@ -595,7 +595,6 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 EXTERNAL_CONTENT_DIR=external
 
 EXTERNAL_FILES = \
-	efo-proxy-merges \
 	mondo-clingen \
 	mondo-efo \
 	mondo-medgen \
@@ -706,19 +705,6 @@ $(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.tsv:
 
 $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv:
 	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-otar-subset.robot.tsv" -O $@
-
-# Unfortunately, @matentzn cant find the orginal TSV file, but it is highly unlikely this file will ever change.
-
-$(EXTERNAL_CONTENT_DIR)/efo-proxy-merges.robot.owl:
-	echo "WARNING: $@ is currently manually curated!"
-
-$(EXTERNAL_CONTENT_DIR)/processed-efo-proxy-merges.robot.tsv:
-	touch $@
-.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/processed-efo-proxy-merges.robot.tsv
-
-$(EXTERNAL_CONTENT_DIR)/processed-efo-proxy-merges.robot.owl: $(EXTERNAL_CONTENT_DIR)/efo-proxy-merges.robot.owl
-	cp $< $@
-.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/processed-efo-proxy-merges.robot.tsv
 
 ###### MedGen #########
 
