@@ -68,7 +68,7 @@ def _query_synonyms(ids: List[CURIE], db: SqlImplementation) -> pd.DataFrame:
 # todo: DRYify? this and _merge_synonym_types() share similar logic
 def _add_synonym_type_inferences(row: pd.Series) -> str:
     """Append additional synonym_type(s) based on logical rules."""
-    syn: str = row['synonym']  # TODO temp: fix w/ mult types
+    syn: str = row['synonym']
     syn_type_str: str = row['synonym_type']
     types: Set[URI] = set(syn_type_str.split('|') if syn_type_str else [])
 
@@ -77,6 +77,25 @@ def _add_synonym_type_inferences(row: pd.Series) -> str:
         types.add('http://purl.obolibrary.org/obo/mondo#ABBREVIATION')
 
     return '|'.join(types)
+
+
+def _curies_to_uris_from_delim_str(uris_or_curies_str: str, delim='|') -> str:
+    """From a delimited string of IRIs of which some may be CURIEs, standardize anticipated cases to URIs.
+
+    todo: Ideally prefix map flexible enough to handle Mondo & source(s). But currently all from source are anticipated
+     to be URIs already, so this is a low priority.
+    """
+    if not uris_or_curies_str:
+        return uris_or_curies_str
+    epm = [{
+        "prefix": "MONDO",
+        "prefix_synonyms": ["mondo"],
+        "uri_prefix": "http://purl.obolibrary.org/obo/mondo#",
+    }]
+    conv = curies.Converter.from_extended_prefix_map(epm)
+    uris_or_curies: List[str] = uris_or_curies_str.split(delim)
+    uris: List[URI] = [conv.expand(x, passthrough=True) for x in uris_or_curies]
+    return '|'.join(uris)
 
 
 def _common_operations(
@@ -254,16 +273,12 @@ def sync_synonyms(
     # -- remove synonym xref provenance
     # todo: it may be useful in the future to keep/use this data
     del source_types_df['dbXref']  # leaves: source_id, synonym_scope, synonym, synonym_type
-    # -- URI --> CURIE: source_id
+    # -- URIs --> CURIEs
     source_types_df['source_id'] = source_types_df['source_id'].apply(lambda x: conv.compress(x))
     # -- filter non-source-owned terms (i.e. imported from other ontologies, e.g. ChEBI)
     source_types_df = source_types_df[~source_types_df['source_id'].isna()]
-    # -- CURIE --> URI: synonym_type
-    # todo: Ideally use a cuires prefix_map flexible enough to handle Mondo & source(s)
-    # TODO temp: fix this
-    #  - start by inserting a fake row that has mult types in it. then remove later
-    source_types_df['synonym_type'] = source_types_df['synonym_type'].apply(
-        lambda x: x.replace('MONDO:', 'http://purl.obolibrary.org/obo/mondo#'))
+    # -- CURIEs --> URIs
+    source_types_df['synonym_type'] = source_types_df['synonym_type'].apply(_curies_to_uris_from_delim_str)
     uri_prefixes: Set[str] = set([x.split(':')[0] for x in source_types_df['synonym_type']]).difference({'', 'http'})
     if uri_prefixes:
         raise RuntimeError('Error: CURIE(s) detected in URI-typed field "synonym_type": ' + ', '.join(uri_prefixes))
@@ -273,16 +288,8 @@ def sync_synonyms(
     # -- filter out rows with no types; can cause duplicate rows (other rows were probably from xref axioms)
     source_types_df = source_types_df[source_types_df['synonym_type'] != '']
     # -- property conversions
-    # TODO temp: fix this
     source_types_df['synonym_type'] = source_types_df['synonym_type'].apply(lambda x: x.replace(
         'http://purl.obolibrary.org/obo/OMO_0003012', 'http://purl.obolibrary.org/obo/mondo#ABBREVIATION'))
-    # -- multiple synonym_types: QC
-    # TODO temp: probably need to support multiple types. may need to reactivate error. could have unexpected results
-    #  if dupes come through
-    # source_dupe_types_df = source_types_df[source_types_df.duplicated(
-    #     subset=['source_id', 'synonym', 'synonym_scope'], keep=False)]
-    # if len(source_dupe_types_df) > 0:
-    #     raise RuntimeError('Error: Unhandled multiple synonym_types detected in Mondo')
     # -- merge in synonym types
     source_df = source_df.merge(source_types_df, on=['source_id', 'synonym_scope', 'synonym'], how='left').fillna('')
     # - get synonym_types: inferred
@@ -293,13 +300,10 @@ def sync_synonyms(
         .rename(columns={'cls_id': 'mondo_id', 'synonym_type': 'synonym_type_mondo', 'dbXref': 'source_id'})
     mondo_df['synonym_lower'] = mondo_df['synonym'].str.lower()
     # todo: utilize curies package; handle more cases
-    # - URI -> CURIE
+    # - URIs --> CURIEs
     mondo_df['source_id'] = mondo_df['source_id'].apply(lambda x: x.replace('https://orcid.org/', 'ORCID:'))
-    # - CURIE -> URI
-    # TODO temp: fix for mult types
-    #  - start by inserting a fake row that has mult types in it. then remove later
-    mondo_df['synonym_type_mondo'] = mondo_df['synonym_type_mondo'].apply(
-        lambda x: x.replace('MONDO:', 'http://purl.obolibrary.org/obo/mondo#'))
+    # - CURIEs --> URIs
+    mondo_df['synonym_type_mondo'] = mondo_df['synonym_type_mondo'].apply(_curies_to_uris_from_delim_str)
     # - add evidence column
     mondo_evidence_lookup: Dict[Tuple, List[str]] = mondo_df.groupby(
         ['mondo_id', 'synonym_scope', 'synonym'])['source_id'].agg(list).to_dict()
@@ -313,12 +317,6 @@ def sync_synonyms(
     # - only need 1 row per unique combo of ['mondo_id', 'synonym_scope', 'synonym']
     del mondo_df['source_id']
     mondo_df.drop_duplicates(inplace=True)
-    # - multiple synonym_types: QC
-    # TODO temp: probably need to support multiple types. may need to reactivate error. could have unexpected results
-    #  if dupes come through
-    # mondo_dupe_types_df = mondo_df[mondo_df.duplicated(subset=['mondo_id', 'synonym', 'synonym_scope'], keep=False)]
-    # if len(mondo_dupe_types_df) > 0:
-    #     raise RuntimeError('Error: Unhandled multiple synonym_types etected in Mondo')
     # - filter terms not in mondo.sssom.tsv
     #   - also effectively filters by source previously filtered mappings_df (obsoletes & deletions)
     mondo_df = mondo_df[mondo_df['mondo_id'].isin(set(mappings_df['mondo_id']))]
