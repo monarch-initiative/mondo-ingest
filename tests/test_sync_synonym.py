@@ -79,7 +79,7 @@ class TestSyncSynonyms(unittest.TestCase):
             onto_config_path=INPUT_SOURCE_METADATA,
             outpath_added=OUTPUT_ADDED,
             outpath_confirmed=OUTPUT_CONFIRMED,
-            outpath_deleted=OUTPUT_DELETED,
+            # outpath_deleted=OUTPUT_DELETED,
             outpath_updated=OUTPUT_UPDATED,
             combined_outpath_template_str=None
         )
@@ -166,14 +166,14 @@ class TestSyncSynonyms(unittest.TestCase):
             # Case 1: Synonym doesn't exist at all on mapped Mondo term
             {
                 'mondo_id': 'MONDO:8000008',
-                'synonym_scope': 'oio:hasExactSynonym',
+                'synonym_scope_source': 'oio:hasExactSynonym',
                 'synonym': 'MARTS1',
                 'source_id': 'OMIM:212720',
             },
             # Case 2: Synonym doesn't exist on mapped Mondo term, but it is the label
             {
                 'mondo_id': 'MONDO:8000008',
-                'synonym_scope': 'oio:hasExactSynonym',
+                'synonym_scope_source': 'oio:hasExactSynonym',
                 'synonym': 'martsolf syndrome 1',
                 'source_id': 'OMIM:212720',
             },
@@ -182,7 +182,7 @@ class TestSyncSynonyms(unittest.TestCase):
         # Case 3: Unmapped: Synonym doesn't exist at all in Mondo, but source term isn't mapped to any Mondo term
         self._assert_in_no_template({
             'mondo_id': 'MONDO:999999',
-            'synonym_scope': 'oio:hasExactSynonym',
+            'synonym_scope_source': 'oio:hasExactSynonym',
             'synonym': 'Unmapped: Synonym doesn\'t exist at all in Mondo, but source term isn\'t mapped to any Mondo term',
             'source_id': 'OMIM:999999',
         })
@@ -215,7 +215,7 @@ class TestSyncSynonyms(unittest.TestCase):
             # 1.2. Source attribution doesn't exist
             {
                 'mondo_id': 'MONDO:8000008',
-                'synonym_scope': 'oio:hasExactSynonym',
+                'synonym_scope_source': 'oio:hasExactSynonym',
                 'synonym': 'Fake synonym',
                 'source_id': 'OMIM:212720',
             },
@@ -224,14 +224,14 @@ class TestSyncSynonyms(unittest.TestCase):
             # - 2.1. Source attribution exists
             {
                 'mondo_id': 'MONDO:8000008',
-                'synonym_scope': 'oio:hasExactSynonym',
+                'synonym_scope_source': 'oio:hasExactSynonym',
                 'synonym': 'MARTSOLF syndrome',  # casing is 'martsolf syndrome' in OMIM
                 'source_id': 'OMIM:212720',
             },
             # - 2.1. Source attribution doesn't exist
             {
                 'mondo_id': 'MONDO:8000008',
-                'synonym_scope': 'oio:hasExactSynonym',
+                'synonym_scope_source': 'oio:hasExactSynonym',
                 'synonym': 'Martsolf syndrome',  # casing is 'martsolf syndrome' in OMIM
                 'source_id': 'OMIM:212720',
             },
@@ -273,14 +273,14 @@ class TestSyncSynonyms(unittest.TestCase):
             # 1.1. Has source xref
             {
                 'mondo_id': 'MONDO:8000008',
-                'synonym_scope': 'oio:hasExactSynonym',
+                'synonym_scope_source': 'oio:hasExactSynonym',
                 'synonym': 'cataract-mental retardation-hypogonadism',
                 'source_id': 'OMIM:212720',
             },
             # 1.2. Has no source xref
             {
                 'mondo_id': 'MONDO:8000008',
-                'synonym_scope': 'oio:hasRelatedSynonym',
+                'synonym_scope_source': 'oio:hasRelatedSynonym',
                 'synonym': 'cataract-intellectual disability-hypogonadism',
                 'source_id': 'OMIM:212720',
             },
@@ -288,14 +288,14 @@ class TestSyncSynonyms(unittest.TestCase):
             # 2.1. Has source xref
             {
                 'mondo_id': 'MONDO:8000008',
-                'synonym_scope': 'oio:hasExactSynonym',
+                'synonym_scope_source': 'oio:hasExactSynonym',
                 'synonym': 'fake confirmed: lower in Mondo, upper in source',
                 'source_id': 'OMIM:212720',
             },
             # 2.2. Has no source xref
             {
                 'mondo_id': 'MONDO:8000008',
-                'synonym_scope': 'oio:hasExactSynonym',
+                'synonym_scope_source': 'oio:hasExactSynonym',
                 'synonym': 'fake confirmed: lower in Mondo, upper in source - no xref',
                 'source_id': 'OMIM:212720',
             },
@@ -304,7 +304,7 @@ class TestSyncSynonyms(unittest.TestCase):
         # Case 3: Unmapped: Synonym doesn't exist at all in Mondo, but source term isn't mapped to any Mondo term
         self._assert_in_no_template({
             'mondo_id': 'MONDO:999999',
-            'synonym_scope': 'oio:hasExactSynonym',
+            'synonym_scope_source': 'oio:hasExactSynonym',
             'synonym': 'Unmapped: Synonym exists in 1 source and 1 Mondo term, but no mapping',
             'source_id': 'OMIM:999999',
         })
