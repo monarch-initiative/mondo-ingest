@@ -4,7 +4,7 @@ PREFIX oio: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 
 SELECT
-  ?cls_id ?dbXref ?synonym_scope ?synonym ?synonym_type
+  ?cls_id ?dbXref ?synonym_scope ?synonym (GROUP_CONCAT(DISTINCT STR(?synonym_type_curie); separator="|") as ?synonym_type)
 WHERE {
   ?cls a owl:Class ;
     ?synonymPropertyUri ?synonym .
@@ -29,7 +29,8 @@ WHERE {
   ))
 
   BIND(REPLACE(STR(?cls), "http://purl.obolibrary.org/obo/MONDO_", "MONDO:") AS ?cls_id)
-  BIND(REPLACE(STR(?synonymTypeUri), "http://purl.obolibrary.org/obo/mondo#", "MONDO:") AS ?synonym_type)
+  BIND(REPLACE(STR(?synonymTypeUri), "http://purl.obolibrary.org/obo/mondo#", "MONDO:") AS ?synonym_type_curie)
   # OAK uses oio, so we're doing that here for consistency because we'll be comparing this with OAK output.
   BIND(REPLACE(STR(?synonymPropertyUri), "http://www.geneontology.org/formats/oboInOwl#", "oio:") AS ?synonym_scope)
 }
+GROUP BY ?cls_id ?dbXref ?synonym_scope ?synonym

@@ -68,7 +68,7 @@ def _query_synonyms(ids: List[CURIE], db: SqlImplementation) -> pd.DataFrame:
 # todo: DRYify? this and _merge_synonym_types() share similar logic
 def _add_synonym_type_inferences(row: pd.Series) -> str:
     """Append additional synonym_type(s) based on logical rules."""
-    syn: str = row['synonym']
+    syn: str = row['synonym']  # TODO temp: fix w/ mult types
     syn_type_str: str = row['synonym_type']
     types: Set[URI] = set(syn_type_str.split('|') if syn_type_str else [])
 
@@ -260,6 +260,8 @@ def sync_synonyms(
     source_types_df = source_types_df[~source_types_df['source_id'].isna()]
     # -- CURIE --> URI: synonym_type
     # todo: Ideally use a cuires prefix_map flexible enough to handle Mondo & source(s)
+    # TODO temp: fix this
+    #  - start by inserting a fake row that has mult types in it. then remove later
     source_types_df['synonym_type'] = source_types_df['synonym_type'].apply(
         lambda x: x.replace('MONDO:', 'http://purl.obolibrary.org/obo/mondo#'))
     uri_prefixes: Set[str] = set([x.split(':')[0] for x in source_types_df['synonym_type']]).difference({'', 'http'})
@@ -271,10 +273,11 @@ def sync_synonyms(
     # -- filter out rows with no types; can cause duplicate rows (other rows were probably from xref axioms)
     source_types_df = source_types_df[source_types_df['synonym_type'] != '']
     # -- property conversions
+    # TODO temp: fix this
     source_types_df['synonym_type'] = source_types_df['synonym_type'].apply(lambda x: x.replace(
         'http://purl.obolibrary.org/obo/OMO_0003012', 'http://purl.obolibrary.org/obo/mondo#ABBREVIATION'))
     # -- multiple synonym_types: QC
-    # TODO: probably need to support multiple types. may need to reactivate error. could have unexpected results
+    # TODO temp: probably need to support multiple types. may need to reactivate error. could have unexpected results
     #  if dupes come through
     # source_dupe_types_df = source_types_df[source_types_df.duplicated(
     #     subset=['source_id', 'synonym', 'synonym_scope'], keep=False)]
@@ -293,6 +296,8 @@ def sync_synonyms(
     # - URI -> CURIE
     mondo_df['source_id'] = mondo_df['source_id'].apply(lambda x: x.replace('https://orcid.org/', 'ORCID:'))
     # - CURIE -> URI
+    # TODO temp: fix for mult types
+    #  - start by inserting a fake row that has mult types in it. then remove later
     mondo_df['synonym_type_mondo'] = mondo_df['synonym_type_mondo'].apply(
         lambda x: x.replace('MONDO:', 'http://purl.obolibrary.org/obo/mondo#'))
     # - add evidence column
@@ -309,7 +314,7 @@ def sync_synonyms(
     del mondo_df['source_id']
     mondo_df.drop_duplicates(inplace=True)
     # - multiple synonym_types: QC
-    # TODO: probably need to support multiple types. may need to reactivate error. could have unexpected results
+    # TODO temp: probably need to support multiple types. may need to reactivate error. could have unexpected results
     #  if dupes come through
     # mondo_dupe_types_df = mondo_df[mondo_df.duplicated(subset=['mondo_id', 'synonym', 'synonym_scope'], keep=False)]
     # if len(mondo_dupe_types_df) > 0:
