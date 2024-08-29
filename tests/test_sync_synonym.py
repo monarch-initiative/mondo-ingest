@@ -42,13 +42,14 @@ from src.scripts.sync_synonym import sync_synonyms
 
 ONTO_DIR = PROJECT_ROOT / 'src' / 'ontology'
 META_DIR = ONTO_DIR / 'metadata'
+CONFIG_DIR = ONTO_DIR / 'config'
 IN_DIR = TEST_DIR / 'input' / 'sync_synonym'
 OUT_DIR = TEST_DIR / 'output'
 INPUT_MONDO_DB = IN_DIR / 'test_mondo.db'  # create via: sh run.sh make ../../tests/input/sync_synonym/test_mondo.db
 INPUT_SOURCE_DB = IN_DIR / 'test_omim.db'  # create via: sh run.sh make ../../tests/input/sync_synonym/test_omim.db
 INPUT_MONDO_SYNONYMS = IN_DIR / 'mondo-synonyms-scope-type-xref.tsv'  # create via: sh run.sh make ../../tests/input/sync_synonym/mondo-synonyms-scope-type-xref.tsv
 INPUT_ONTO_SYNONYMS = IN_DIR / 'omim-synonyms-scope-type-xref.tsv'  # create via: sh run.sh make ../../tests/input/sync_synonym/omim-synonyms-scope-type-xref.tsv
-INPUT_EXCLUDED_SYNONYMS = IN_DIR / 'mondo-excluded-synonyms.tsv'
+INPUT_EXCLUDED_SYNONYMS = CONFIG_DIR / 'mondo-excluded-values.yml'
 INPUT_MAPPINGS = IN_DIR / 'test_mondo.sssom.tsv'
 INPUT_SOURCE_METADATA = META_DIR / 'omim.yml'
 OUTPUT_ADDED = OUT_DIR / 'omim.synonyms.added.robot.tsv'

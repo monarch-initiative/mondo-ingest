@@ -371,19 +371,17 @@ deploy-mondo-ingest:
 # make function, not target!
 # Builds tmp/mondo/ and rebuilds mondo.owl, mondo-edit.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
 define build_mondo
-	git config --global --add safe.directory /work/src/ontology/tmp/mondo && \
 	cd $(TMPDIR) && \
 	rm -rf ./mondo/ && \
 	git clone --depth 1 https://github.com/monarch-initiative/mondo && \
 	cd mondo/src/ontology && \
-	make mondo.owl mappings mondo-edit.owl -B MIR=false IMP=false MIR=false &&\
+	make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
 	latest_hash=$$(git rev-parse origin/master) && \
 	echo "$$latest_hash" > $(1)
 endef
 
 # Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl, mondo-edit.owl, and mondo.sssom.tsv, only if mondo repo main branch has new commits, or if has never been run before
 tmp/mondo_repo_built: .FORCE
-	git config --global --add safe.directory /work/src/ontology/tmp/mondo
 	if [ ! -f $@ ]; then \
 		$(call build_mondo, $@); \
 	else \
@@ -400,9 +398,6 @@ tmp/mondo_repo_built: .FORCE
 
 $(TMPDIR)/mondo.owl: tmp/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
-
-$(TMPDIR)/mondo-edit.owl: tmp/mondo_repo_built
-	cp $(TMPDIR)/mondo/src/ontology/mondo-edit.owl $@
 
  $(TMPDIR)/mondo.sssom.tsv: tmp/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
@@ -607,9 +602,6 @@ tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
 ../../tests/input/sync_synonym/%-synonyms-scope-type-xref.tsv:
 	$(ROBOT) query -i ../../tests/input/sync_synonym/test_$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
-tmp/mondo-excluded-synonyms.tsv: $(TMPDIR)/mondo-edit.owl
-	$(ROBOT) query -i $< --query ../sparql/mondo-excluded-synonyms.sparql $@
-
 # todo: we may remove this output later output for analysis during development; at the end, remove it and its usages
 INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
 $(SYN_SYNC_DIR)/synonym_sync_combined_cases.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
@@ -632,7 +624,7 @@ $(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.
 	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
 	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
-	--mondo-excluded-synonyms-path tmp/mondo-excluded-synonyms.tsv \
+	--mondo-excluded-synonyms-path config/mondo-excluded-values.yml \
 	--onto-synonym-types-path tmp/$*-synonyms-scope-type-xref.tsv \
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(SYN_SYNC_DIR)/$*.synonyms.added.robot.tsv \

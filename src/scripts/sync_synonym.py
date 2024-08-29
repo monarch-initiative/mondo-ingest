@@ -9,6 +9,7 @@ from typing import Union, List, Tuple, Set, Dict
 
 import curies
 import pandas as pd
+import yaml
 from oaklib import get_adapter
 from oaklib.implementations import SqlImplementation
 from oaklib.types import CURIE, PRED_CURIE, URI
@@ -89,14 +90,13 @@ def _common_operations(
     :param: df_is_combined: At the end, we combine all cases into a single file. But for this combined case, we want to
      skip certain operations.
 
-    todo: consider: things that might be able to be done after building mondo_df and source_df but before cases
+    todo: consider refactor: things that might be able to be done after building mondo_df and source_df but before cases
      1. pretty sure: merging of synonym_type & synonym_type_mondo
      2. maybe: filtering exclusions
     """
     # Filter exclusions
     if len(mondo_exclusions_df) > 0:
-        df = df[~((df['mondo_id'].isin(mondo_exclusions_df['mondo_id'])) & (
-            df['synonym_lower'].isin(mondo_exclusions_df['synonym_lower'])))]
+        df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_scope', 'synonym_lower'])
 
     # Format
     if not df_is_combined:
@@ -146,7 +146,8 @@ def _filter_a_by_not_in_b(
     Example use case: -added
     - df_a: Dataframe of synonym data from a source
     - df_b: Dataframe of synonym data from a source
-    - join_on: ['mondo_id', 'synonym'] - we want to find ones that are in source but not in Mondo
+    - join_on: columns to consider for determining row equivalence, e.g. ['mondo_id', 'synonym'] if we want to find
+      synonyms in source but not in Mondo, assuming both data frames have mondo_id.
 
     Alternative implementation yielding exact same results:
         merge_df = base_df.merge(to_intersect_df, on=join_on, how='left', indicator=True)
@@ -233,10 +234,10 @@ def sync_synonyms(
         return
 
     # Fetch excluded synonyms
-    mondo_exclusions_df: pd.DataFrame = _read_sparql_output_tsv(mondo_excluded_synonyms_path)
-    mondo_exclusions_df['source_id'] = mondo_exclusions_df.apply(
-        lambda row: row['hasDbXref_xref'] if row['hasDbXref_xref'] else row['source_xref'], axis=1)
-    mondo_exclusions_df = mondo_exclusions_df.drop(columns=['hasDbXref_xref', 'source_xref'])
+    with open(mondo_excluded_synonyms_path, 'r') as stream:
+        mondo_exclusions: Dict = yaml.safe_load(stream)
+    mondo_exclusions_df = pd.DataFrame(mondo_exclusions['exclusions']['synonyms']).rename(columns={
+        'id': 'mondo_id', 'scope': 'synonym_scope', 'value': 'synonym'})
     mondo_exclusions_df['synonym_lower'] = mondo_exclusions_df['synonym'].str.lower()
 
     # Query synonyms: source
@@ -248,7 +249,8 @@ def sync_synonyms(
     source_df['source_label'] = source_df['source_id'].map(source_labels)
     source_df.drop_duplicates(inplace=True)
     # - get synonym_types: declared by the source
-    source_types_df: pd.DataFrame = _read_sparql_output_tsv(onto_synonym_types_path).rename(columns={'cls_id': 'source_id'})
+    source_types_df: pd.DataFrame = _read_sparql_output_tsv(
+        onto_synonym_types_path).rename(columns={'cls_id': 'source_id'})
     # -- remove synonym xref provenance
     # todo: it may be useful in the future to keep/use this data
     del source_types_df['dbXref']  # leaves: source_id, synonym_scope, synonym, synonym_type
@@ -390,9 +392,7 @@ def cli():
         help='Path to a TSV containing information about Mondo synonyms. Columns: ?mondo_id, ?dbXref, ?synonym_scope, '
              '?synonym, synonym_type.')
     parser.add_argument(
-        '-e', '--mondo-excluded-synonyms-path', required=True,
-        help='Path to a TSV with all synonyms marked as excluded in Mondo. Has columns: ?mondo_id ?synonym '
-             '?hasDbXref_xref ?source_xref.')
+        '-e', '--mondo-excluded-synonyms-path', required=True, help='Path to a YAML of all excluded Mondo synonyms.')
     parser.add_argument(
         '-O', '--onto-synonym-types-path', required=True,
         help='Path to a TSV containing information about synonyms for the source. Columns: ?mondo_id, ?dbXref, '
