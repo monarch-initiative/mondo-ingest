@@ -1,5 +1,6 @@
 subject_mondo_id	subject_mondo_label	object_mondo_id	subject_source_id	object_source_id	object_mondo_label
 ID		AI obo:mondo#excluded_subClassOf	>A oboInOwl:source		
+MONDO:0004980	atopic eczema	MONDO:0100178	OMIM:603165	OMIMPS:603165	dermatitis, atopic, susceptibility to
 MONDO:0005260	autism	MONDO:0020836	OMIM:209850	OMIMPS:209850	autism, susceptiblity to
 MONDO:0007039	neurofibromatosis type 2	MONDO:0008075	OMIM:101000	OMIMPS:162091	schwannomatosis
 MONDO:0007097	Finnish type amyloidosis	MONDO:0007100	OMIM:105120	OMIMPS:105210	familial amyloid neuropathy
@@ -47,6 +48,7 @@ MONDO:0010504	immunodeficiency 47	MONDO:0005501	OMIM:300972	OMIMPS:212066	congen
 MONDO:0010504	immunodeficiency 47	MONDO:0021094	OMIM:300972	OMIMPS:300755	immunodeficiency disease
 MONDO:0010506	intellectual disability, X-linked 61	MONDO:0020119	OMIM:300978	OMIMPS:309510	X-linked syndromic intellectual disability
 MONDO:0010533	Arts syndrome	MONDO:0020119	OMIM:301835	OMIMPS:309510	X-linked syndromic intellectual disability
+MONDO:0010587	epidermodysplasia verruciformis, X-linked	MONDO:0100043	OMIM:305350	OMIMPS:226400	epidermodysplasia verruciformis, susceptibility to
 MONDO:0010589	Aarskog-Scott syndrome, X-linked	MONDO:0020119	OMIM:305400	OMIMPS:309510	X-linked syndromic intellectual disability
 MONDO:0010659	FRAXE intellectual disability	MONDO:0020119	OMIM:309548	OMIMPS:309510	X-linked syndromic intellectual disability
 MONDO:0010702	orofaciodigital syndrome I	MONDO:0015375	OMIM:311200	OMIMPS:311200	orofaciodigital syndrome
@@ -69,13 +71,8 @@ MONDO:0011491	epilepsy, idiopathic generalized, susceptibility to, 7	MONDO:00055
 MONDO:0011491	epilepsy, idiopathic generalized, susceptibility to, 7	MONDO:0009696	OMIM:604827	OMIMPS:254770	juvenile myoclonic epilepsy
 MONDO:0011542	psoriasis 6, susceptibility to	MONDO:0005083	OMIM:605364	OMIMPS:177900	psoriasis
 MONDO:0011573	psoriasis 7, susceptibility to	MONDO:0005083	OMIM:605606	OMIMPS:177900	psoriasis
-MONDO:0011596	dermatitis, atopic, 2	MONDO:0004980	OMIM:605803	OMIMPS:603165	atopic eczema
-MONDO:0011597	dermatitis, atopic, 3	MONDO:0004980	OMIM:605804	OMIMPS:603165	atopic eczema
-MONDO:0011598	dermatitis, atopic, 4	MONDO:0004980	OMIM:605805	OMIMPS:603165	atopic eczema
 MONDO:0011603	GNE myopathy	MONDO:0018949	OMIM:605820	OMIMPS:160500	distal myopathy
 MONDO:0011607	narcolepsy 2, susceptibility to	MONDO:0100554	OMIM:605841	OMIMPS:161400	hereditary narcolepsy
-MONDO:0011608	dermatitis, atopic, 5	MONDO:0004980	OMIM:605844	OMIMPS:603165	atopic eczema
-MONDO:0011609	dermatitis, atopic, 6	MONDO:0004980	OMIM:605845	OMIMPS:603165	atopic eczema
 MONDO:0011650	atrioventricular septal defect, susceptibility to, 2	MONDO:0020290	OMIM:606217	OMIMPS:606215	familial atrioventricular septal defect
 MONDO:0011714	partial lipodystrophy, congenital cataracts, and neurodegeneration syndrome	MONDO:0020088	OMIM:606721	OMIMPS:151660	familial partial lipodystrophy
 MONDO:0011738	bilateral frontoparietal polymicrogyria	MONDO:0000904	OMIM:606854	OMIMPS:614039	complex cortical dysplasia with other brain malformations
@@ -148,15 +145,12 @@ MONDO:0013057	psoriasis 12, susceptibility to	MONDO:0005083	OMIM:612950	OMIMPS:1
 MONDO:0013103	epilepsy, idiopathic generalized, susceptibility to, 10	MONDO:0005579	OMIM:613060	OMIMPS:600669	epilepsy, idiopathic generalized
 MONDO:0013103	epilepsy, idiopathic generalized, susceptibility to, 10	MONDO:0009696	OMIM:613060	OMIMPS:254770	juvenile myoclonic epilepsy
 MONDO:0013103	epilepsy, idiopathic generalized, susceptibility to, 10	MONDO:0018214	OMIM:613060	OMIMPS:604233	generalized epilepsy with febrile seizures plus
-MONDO:0013107	dermatitis, atopic, 7	MONDO:0004980	OMIM:613064	OMIMPS:603165	atopic eczema
 MONDO:0013129	cone dystrophy 4	MONDO:0015993	OMIM:613093	OMIMPS:120970	cone-rod dystrophy
 MONDO:0013146	Brugada syndrome 7	MONDO:0018054	OMIM:613120	OMIMPS:608583	familial atrial fibrillation
 MONDO:0013193	thyrotoxic periodic paralysis, susceptibility to, 2	MONDO:0019201	OMIM:613239	OMIMPS:188580	thyrotoxic periodic paralysis
 MONDO:0013261	dilated cardiomyopathy 1R	MONDO:0016333	OMIM:613424	OMIMPS:115200	familial dilated cardiomyopathy
 MONDO:0013262	dilated cardiomyopathy 1S	MONDO:0016333	OMIM:613426	OMIMPS:115200	familial dilated cardiomyopathy
 MONDO:0013263	retinitis pigmentosa 54	MONDO:0015993	OMIM:613428	OMIMPS:120970	cone-rod dystrophy
-MONDO:0013294	dermatitis, atopic, 8	MONDO:0004980	OMIM:613518	OMIMPS:603165	atopic eczema
-MONDO:0013295	dermatitis, atopic, 9	MONDO:0004980	OMIM:613519	OMIMPS:603165	atopic eczema
 MONDO:0013340	Parkinson disease 5, autosomal dominant, susceptibility to	MONDO:0005180	OMIM:613643	OMIMPS:168600	Parkinson disease
 MONDO:0013383	Hirschsprung disease, susceptibility to, 3	MONDO:0018309	OMIM:613711	OMIMPS:142623	Hirschsprung disease
 MONDO:0013384	Hirschsprung disease, susceptibility to, 4	MONDO:0018309	OMIM:613712	OMIMPS:142623	Hirschsprung disease
