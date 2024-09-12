@@ -2,11 +2,6 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/omim_mapping_status.tsv)
 
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id   | subject_label                                                                                     |
-|:-------------|:--------------------------------------------------------------------------------------------------|
-| OMIM:620926  | immunodeficiency 125                                                                              |
-| OMIM:620888  | neurodevelopmental disorder with characteristic facial and ectodermal features and tetraparesis 1 |
-| OMIM:620910  | otofacial neurodevelopmental syndrome                                                             |
-| OMIM:620923  | parkinson disease 26, autosomal dominant, susceptibility to                                       |
-| OMIM:620911  | spastic paraplegia 92, autosomal recessive                                                        |
-| OMIM:620917  | spermatogenic failure 95                                                                          |
+| subject_id   | subject_label                           |
+|:-------------|:----------------------------------------|
+| OMIM:620931  | immunodeficiency 126, susceptibility to |

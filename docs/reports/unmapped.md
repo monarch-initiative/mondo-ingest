@@ -6,9 +6,9 @@
 | [ICD11FOUNDATION](./unmapped_icd11foundation.md) | 57,713      | 0              | 5,594            | 5,594                     | 52,119                                    | 4,107                     | 48,012                      | 92.1%                     |
 | [NCIT](./unmapped_ncit.md)                       | 191,123     | 169,937        | 5,221            | 5,216                     | 15,965                                    | 3,675                     | 12,290                      | 77.0%                     |
 | [GARD](./unmapped_gard.md)                       | 12,004      | 0              | 0                | 0                         | 12,004                                    | 0                         | 12,004                      | 100.0%                    |
-| [ORDO](./unmapped_ordo.md)                       | 15,561      | 6,270          | 1,424            | 1,257                     | 9,291                                     | 9,205                     | 86                          | 0.9%                      |
+| [ORDO](./unmapped_ordo.md)                       | 15,561      | 6,270          | 1,424            | 1,257                     | 9,291                                     | 9,214                     | 77                          | 0.8%                      |
 | [DOID](./unmapped_doid.md)                       | 14,132      | 2,660          | 2,488            | 2,475                     | 11,470                                    | 11,417                    | 53                          | 0.5%                      |
-| [OMIM](./unmapped_omim.md)                       | 29,452      | 19,329         | 1,366            | 1,324                     | 8,758                                     | 8,752                     | 6                           | 0.1%                      |
+| [OMIM](./unmapped_omim.md)                       | 29,454      | 19,330         | 1,366            | 1,324                     | 8,759                                     | 8,758                     | 1                           | 0.0%                      |
 
 `Ontology`: Name of ontology  
 `Tot terms`: Total terms in ontology  
