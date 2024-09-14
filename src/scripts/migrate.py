@@ -12,7 +12,8 @@ Resources
 import os
 from argparse import ArgumentParser
 from glob import glob
-from typing import Dict, List, Set
+from pathlib import Path
+from typing import Dict, List, Set, Union
 
 import pandas as pd
 from jinja2 import Template
@@ -20,7 +21,8 @@ from oaklib.implementations import ProntoImplementation
 from oaklib.types import CURIE, URI
 
 from ordo_subsets import get_formatted_subsets_df
-from utils import CACHE_DIR, DOCS_DIR, PREFIX, PROJECT_DIR, Term, get_all_owned_terms, _get_next_available_mondo_id, \
+from utils import CACHE_DIR, DOCS_DIR, METADATA_DIR, PREFIX, PROJECT_DIR, Term, get_all_owned_terms, \
+    _get_next_available_mondo_id, \
     get_mondo_term_ids, _load_ontology, SLURP_DIR, get_owned_prefix_map, TEMP_DIR
 
 FILENAME_GLOB_PATTERN = '*.tsv'
@@ -46,8 +48,14 @@ JINJA_ONTO_PAGES = """## {{ ontology_name }}
 ### Migratable terms
 {{ table }}"""
 ROBOT_TEMPLATE_HEADER = {
-    'mondo_id': 'ID', 'mondo_label': 'LABEL', 'xref': 'A oboInOwl:hasDbXref',
-    'xref_source': '>A oboInOwl:source SPLIT=|', 'original_label': '', 'definition': 'A IAO:0000115', 'parents': 'SC %'}
+    'mondo_id': 'ID',
+    'mondo_label': 'LABEL',
+    'xref': 'A oboInOwl:hasDbXref',
+    'xref_source': '>A oboInOwl:source SPLIT=|',
+    'original_label': '',
+    'definition': 'A IAO:0000115',
+    'parents': 'SC %'
+}
 
 def _valid_parent_conditions(
     parents: List[CURIE], mapped: Set[CURIE], excluded: Set[CURIE], obsolete: Set[CURIE]
@@ -174,13 +182,17 @@ def slurp_docs():
         f.write(instantiated_str)
 
 
+# todo: ideally, these would also be passed in through the makefile, but that requires refactor of CLI to a more
+#  complex one, like Click, to allow for sub-commands.
 def slurp_ordo_mods(
-    slurp_path: str = os.path.join(SLURP_DIR, 'ordo.tsv'), subsets_path: str = os.path.join(TEMP_DIR, 'ordo-subsets.tsv')
+    slurp_path: Union[str, Path] = os.path.join(SLURP_DIR, 'ordo.tsv'),
+    subsets_path: Union[str, Path] = os.path.join(TEMP_DIR, 'ordo-subsets.tsv'),
+    onto_config_path: Union[str, Path] = os.path.join(METADATA_DIR, 'ordo.yml'),
 ):
     """Adds rare_disease_subset column to the ORDO migration TSV."""
     # Read inputs
     df: pd.DataFrame = pd.read_csv(slurp_path, sep='\t')
-    df_subsets: pd.DataFrame = get_formatted_subsets_df(subsets_path)
+    df_subsets: pd.DataFrame = get_formatted_subsets_df(subsets_path, onto_config_path)
     df_subsets = df_subsets[['ordo_id', 'subset_ordo_class_label']]\
         .rename(columns={'ordo_id': 'xref', 'subset_ordo_class_label': 'subset'})
 
@@ -239,8 +251,8 @@ def cli():
         help='If this flag is present, the end result is that the terms in `slurp/%.tsv` will be exactly the same '
              'as `reports/%_unmapped_terms.tsv`, which is the same as the list of terms in '
              '`reports/%_mapping_status.tsv` where `is_mapped`, `is_deprecated`, and `is_obsolete` are `False`. If this'
-             ' flag is not present, then for a term to be migratable it must either (a) have no parents, or (b) have no '
-             'valid parents in Mondo (i.e. all of its parent terms are marked obsolete in Mondo), or (c) all its '
+             ' flag is not present, then for a term to be migratable it must either (a) have no parents, or (b) have '
+             'no valid parents in Mondo (i.e. all of its parent terms are marked obsolete in Mondo), or (c) all its '
              'parents must be mapped, and at least 1 of those parent\'s mappings must be one of `skos:exactMatch` or '
              '`skos:NarrowMatch`.')
     # slurp_docs() args
