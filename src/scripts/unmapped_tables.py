@@ -27,7 +27,7 @@ def create_mapping_status_tables(
 ) -> Dict[str, pd.DataFrame]:
     """Create mapping status tables"""
     # Load sources
-    # - prefix_preplacement_map: Cases where mondo-ingest prefixes differ from bioregistry/OAK, e.g. Orphanet vs ORDO
+    # - prefix_replacement_map: Fixes mondo-ingest prefixes differing from those in packages used (ex: Orphanet vs ORDO)
     # todo: refactor duplicate/similar blocks to a single function
     with open(onto_config_path, 'r') as stream:
         onto_config = yaml.safe_load(stream)
