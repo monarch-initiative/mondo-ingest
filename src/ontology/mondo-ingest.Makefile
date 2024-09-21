@@ -12,6 +12,7 @@
 ### Standard constants #############
 ####################################
 MAPPINGSDIR=../mappings
+DOCS_DIR=../../docs
 SKIP_HUGE=false
 
 ####################################
@@ -225,7 +226,10 @@ mappings: $(ALL_MAPPINGS)
 mapping-progress-report: unmapped-terms-tables unmapped-terms-docs
 
 .PHONY: unmapped-terms-docs
-unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
+unmapped-terms-docs: docs/reports/unmapped.md
+
+# todo: ideally `unmapped_docs.py` would also take file path(s) as input args. Currently, running `unmapped_%.md` for any source will trigger this for all sources.
+docs/reports/unmapped.md docs/reports/unmapped_%.md: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
 	python3 $(SCRIPTSDIR)/unmapped_docs.py
 
 .PHONY: unmapped-terms-tables
@@ -310,14 +314,14 @@ excluded-xrefs-in-mondo: $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv
 ###################
 SOURCE_DOC_TEMPLATE=config/source_documentation.md.j2
 SOURCE_METRICS_TEMPLATE=config/source_metrics.md.j2
-ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/sources/$(n).md)
-ALL_METRICS_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/metrics/$(n).md)
+ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), $(DOCS_DIR)/sources/$(n).md)
+ALL_METRICS_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), $(DOCS_DIR)/metrics/$(n).md)
 ALL_DOCS=$(ALL_SOURCE_DOCS) $(ALL_METRICS_DOCS)
 
-../../docs/sources/ ../../docs/metrics/ $(MAPPINGSDIR)/:
+$(DOCS_DIR)/sources/ $(DOCS_DIR)/metrics/ $(MAPPINGSDIR)/:
 	mkdir -p $@
 
-../../docs/sources/%.md: metadata/%.yml | ../../docs/sources/
+$(DOCS_DIR)/sources/%.md: metadata/%.yml | $(DOCS_DIR)/sources/
 	j2 "$(SOURCE_DOC_TEMPLATE)" $< > $@
 
 PREFIXES_METRICS=--prefix 'OMIM: http://omim.org/entry/' \
@@ -330,7 +334,7 @@ metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) measure $(PREFIXES_METRICS) -i $(COMPONENTSDIR)/$*.owl --format json --metrics extended --output $@
 .PRECIOUS: metadata/%-metrics.json
 
-../../docs/metrics/%.md: metadata/%-metrics.json | ../../docs/metrics/
+$(DOCS_DIR)/metrics/%.md: metadata/%-metrics.json | $(DOCS_DIR)/metrics/
 	j2 "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
 
 .PHONY: j2
@@ -661,9 +665,11 @@ $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sss
 mapped-deprecated-terms: mapped-deprecated-terms-docs
 
 .PHONY: mapped-deprecated-terms-docs
-mapped-deprecated-terms-docs: ../../docs/reports/mapped_deprecated.md
+mapped-deprecated-terms-docs: $(DOCS_DIR)/reports/mapped_deprecated.md
 
-../../docs/reports/mapped_deprecated.md: mapped-deprecated-terms-artefacts
+# todo: ideally `deprecated_in_mondo.py` would also take file path(s) as input args. Currently, running `mapped_deprecated_%.md` for any source will trigger this for all sources.
+$(DOCS_DIR)/reports/mapped_deprecated.md $(DOCS_DIR)/reports/mapped_deprecated_%.md: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
+#$(DOCS_DIR)/reports/mapped_deprecated.md $(foreach n,$(ALL_COMPONENT_IDS), $(DOCS_DIR)/reports/mapped_deprecated_$(n).md): $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
 	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py --docs
 
 .PHONY: mapped-deprecated-terms-artefacts
