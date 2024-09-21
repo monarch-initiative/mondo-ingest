@@ -2400,3 +2400,12 @@ exclusions:
       scope: "oio:hasExactSynonym"
       value: "India rubber skin"
       reason: "MONDO:CuratorDecision"
+  # synonym_type_abbreviation: List of synonym strings that would otherwise be marked as abbreviations by our detection logic. This exclusion rule will cause them not to be marked as such.
+  synonym-type-abbreviation:
+    - PYOMETRA
+    - EMPHYSEMA
+    - FRACTURE
+    - INFECTION
+    - HAMARTOMA
+    - SUBCUTIS
+    - ULCER
