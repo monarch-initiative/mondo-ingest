@@ -73,6 +73,7 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-dow
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_illegal_punning_omim.ru \
 			--update ../sparql/exact_syn_from_label.ru \
+			--update ../sparql/convert-OMO_0003000-to-MONDO_ABBREVIATION.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
 
 # todo: See #1 at top of file
