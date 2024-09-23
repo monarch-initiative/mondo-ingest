@@ -5,7 +5,7 @@ import re
 import sys
 from argparse import ArgumentParser
 from pathlib import Path
-from typing import Union, List, Tuple, Set, Dict
+from typing import Union, List, Tuple, Set, Dict, Any
 
 import curies
 import pandas as pd
@@ -68,14 +68,14 @@ def _query_synonyms(ids: List[CURIE], db: SqlImplementation) -> pd.DataFrame:
 
 
 # todo: DRYify? this and _merge_synonym_types() share similar logic
-def _add_synonym_type_inferences(row: pd.Series) -> str:
+def _add_synonym_type_inferences(row: pd.Series, exclusions: Set[str]) -> str:
     """Append additional synonym_type(s) based on logical rules."""
     syn: str = row['synonym']
     syn_type_str: str = row['synonym_type']
     types: Set[URI] = set(syn_type_str.split('|') if syn_type_str else [])
 
     # Acronym: uppercase, no numbers, no whitespace, <10 chars
-    if syn.isupper() and not any(char.isspace() for char in syn) and len(syn) < 10:
+    if syn not in exclusions and syn.isupper() and not any(char.isspace() for char in syn) and len(syn) < 10:
         types.add('http://purl.obolibrary.org/obo/mondo#ABBREVIATION')
 
     return '|'.join(types)
@@ -193,7 +193,7 @@ def _filter_a_by_not_in_b(
 
 def sync_synonyms(
     ontology_db_path: Union[Path, str], mondo_synonyms_path: Union[Path, str],
-    mondo_excluded_synonyms_path: Union[Path, str], onto_synonym_types_path: Union[Path, str],
+    mondo_exclusion_configs: Union[Path, str], onto_synonym_types_path: Union[Path, str],
     mondo_mappings_path: Union[Path, str], onto_config_path: Union[Path, str], outpath_added: Union[Path, str],
     outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str], outpath_deleted: Union[Path, str] = None,
     combined_outpath_template_str='tmp/synonym_sync_combined_cases_{}.tsv'
@@ -210,6 +210,9 @@ def sync_synonyms(
      source_df and mondo_df, but this caused _x and _y cols during joins, or I would have to join on those cols as well.
      So I arbitrarily chose mondo_df. This is fine in all cases but -added, where they're added in a custom way.
     """
+    # Read configurations
+    with open(mondo_exclusion_configs, 'r') as stream:
+        mondo_exclusion_configs: Dict[str, Any] = yaml.safe_load(stream)['exclusions']
     # Get basic info for source
     owned_prefix_map: PREFIX_MAP = get_owned_prefix_map(onto_config_path)
     conv = curies.Converter.from_prefix_map(owned_prefix_map)
@@ -225,7 +228,6 @@ def sync_synonyms(
           'object_id': 'source_id', 'object_label': 'source_label'})
     # - remove unneeded cols
     mappings_df = mappings_df[['mondo_id', 'mondo_label', 'source_id']]  # source_label added later from source
-
     # - filter by source
     # todo: filtering by prefixes / source
     # Todo: i. keep or remove?
@@ -265,9 +267,7 @@ def sync_synonyms(
         return
 
     # Fetch excluded synonyms
-    with open(mondo_excluded_synonyms_path, 'r') as stream:
-        mondo_exclusions: Dict = yaml.safe_load(stream)
-    mondo_exclusions_df = pd.DataFrame(mondo_exclusions['exclusions']['synonyms']).rename(columns={
+    mondo_exclusions_df = pd.DataFrame(mondo_exclusion_configs['synonyms']).rename(columns={
         'id': 'mondo_id', 'scope': 'synonym_scope', 'value': 'synonym'})
     mondo_exclusions_df['synonym_lower'] = mondo_exclusions_df['synonym'].str.lower()
 
@@ -305,7 +305,9 @@ def sync_synonyms(
     # -- merge in synonym types
     source_df = source_df.merge(source_types_df, on=['source_id', 'synonym_scope', 'synonym'], how='left').fillna('')
     # - get synonym_types: inferred
-    source_df['synonym_type'] = source_df.apply(_add_synonym_type_inferences, axis=1)
+    abbrev_exclusions: Set[str] = set(mondo_exclusion_configs['synonym-type-abbreviation'])
+    source_df['synonym_type'] = source_df.apply(
+        lambda row: _add_synonym_type_inferences(row, abbrev_exclusions), axis=1)
 
     # Query synonyms: Mondo
     mondo_df: pd.DataFrame = _read_sparql_output_tsv(mondo_synonyms_path)\
@@ -410,7 +412,9 @@ def cli():
         help='Path to a TSV containing information about Mondo synonyms. Columns: ?mondo_id, ?dbXref, ?synonym_scope, '
              '?synonym, synonym_type.')
     parser.add_argument(
-        '-e', '--mondo-excluded-synonyms-path', required=True, help='Path to a YAML of all excluded Mondo synonyms.')
+        '-e', '--mondo-exclusion-configs', required=True,
+        help='Path to a YAML which includes information such as (i) synonyms to exclude, (ii) synonyms for which to '
+             'exclude addition of "abbreviation" synonym type.')
     parser.add_argument(
         '-O', '--onto-synonym-types-path', required=True,
         help='Path to a TSV containing information about synonyms for the source. Columns: ?mondo_id, ?dbXref, '

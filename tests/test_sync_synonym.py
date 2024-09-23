@@ -73,7 +73,7 @@ class TestSyncSynonyms(unittest.TestCase):
         sync_synonyms(
             ontology_db_path=INPUT_SOURCE_DB,
             mondo_synonyms_path=INPUT_MONDO_SYNONYMS,
-            mondo_excluded_synonyms_path=INPUT_EXCLUDED_SYNONYMS,
+            mondo_exclusion_configs=INPUT_EXCLUDED_SYNONYMS,
             mondo_mappings_path=INPUT_MAPPINGS,
             onto_synonym_types_path=INPUT_ONTO_SYNONYMS,
             onto_config_path=INPUT_SOURCE_METADATA,

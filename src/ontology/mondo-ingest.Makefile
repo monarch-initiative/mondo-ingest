@@ -628,7 +628,7 @@ $(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.
 	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
 	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
-	--mondo-excluded-synonyms-path config/mondo-excluded-values.yml \
+	--mondo-exclusion-configs config/mondo-exclusion-configs.yml \
 	--onto-synonym-types-path tmp/$*-synonyms-scope-type-xref.tsv \
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(SYN_SYNC_DIR)/$*.synonyms.added.robot.tsv \
