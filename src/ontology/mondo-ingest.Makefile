@@ -612,6 +612,7 @@ EXTERNAL_FILES = \
 # postprocessing steps needed, like Animal QC (which relies on the rare subset pipeline,
 # which is SPARQL postprocessing based).
 
+# TODO: Determine if DOWNLOAD_EXTERNAL=true here is really what is needed. Currently if set to false, will error in `mondo` simulation because it references a file that doesn't exist.
 $(TMPDIR)/mondo-with-simulated-emc-run.owl: $(TMPDIR)/mondo_repo_built $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl)
 	mkdir -p $(TMPDIR)/mondo/src/ontology/tmp/external/
 	$(foreach n,$(EXTERNAL_FILES), cp -f $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl $(TMPDIR)/mondo/src/ontology/tmp/external/processed-$(n).robot.owl;) \
@@ -619,7 +620,7 @@ $(TMPDIR)/mondo-with-simulated-emc-run.owl: $(TMPDIR)/mondo_repo_built $(foreach
 	touch mondo-edit.owl && \
 	cp mondo-edit.owl mondo-edit.owl.bak && \
 	cp mondo-edit.obo mondo-edit.obo.bak && \
-	make update-external-content-incl-rare -B MIR=false IMP=false MIR=false DOWNLOAD_EXTERNAL=false &&\
+	make update-external-content-incl-rare -B MIR=false IMP=false MIR=false DOWNLOAD_EXTERNAL=true &&\
 	make mondo-edit.owl MIR=false IMP=false MIR=false
 	cp $(TMPDIR)/mondo/src/ontology/mondo-edit.owl $@
 	mv $(TMPDIR)/mondo/src/ontology/mondo-edit.owl.bak $(TMPDIR)/mondo/src/ontology/mondo-edit.owl
