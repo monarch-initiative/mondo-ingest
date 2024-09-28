@@ -384,8 +384,6 @@ MONDO:0001282	fallopian tube endometriosis	skos:closeMatch	ICD10CM:N80.2	Endomet
 MONDO:0001282	fallopian tube endometriosis	skos:closeMatch	ICD10CM:N80.2	Endometriosis of fallopian tube	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11424	LEXMATCH
 MONDO:0001294	Horner syndrome	skos:closeMatch	ICD10CM:G90.2	Horner's syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11486	LEXMATCH
 MONDO:0001294	Horner syndrome	skos:closeMatch	ICD10CM:G90.2	Horner's syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11486	LEXMATCH
-MONDO:0001298	congenital mitral valve insufficiency	skos:closeMatch	ICD10CM:Q23.3	Congenital mitral insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11502	LEXMATCH
-MONDO:0001298	congenital mitral valve insufficiency	skos:closeMatch	ICD10CM:Q23.3	Congenital mitral insufficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11502	LEXMATCH
 MONDO:0001302	hypertensive heart disease	skos:closeMatch	ICD10CM:I11	Hypertensive heart disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11516	LEXMATCH
 MONDO:0001302	hypertensive heart disease	skos:closeMatch	ICD10CM:I11	Hypertensive heart disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11516	LEXMATCH
 MONDO:0001303	abnormal pupillary function	skos:closeMatch	ICD10CM:H57.09	Other anomalies of pupillary function	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11518	LEXMATCH
@@ -3234,6 +3232,8 @@ MONDO:0009294	glycogen storage disease VI	skos:closeMatch	ICD10CM:E74.09	Other g
 MONDO:0009295	glycogen storage disease VII	skos:closeMatch	ICD10CM:E74.09	Other glycogen storage disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11721	LEXMATCH
 MONDO:0009295	glycogen storage disease VII	skos:closeMatch	ICD10CM:E74.09	Other glycogen storage disease	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	muscle phosphofructokinase deficiency	LEXMATCH
 MONDO:0009295	glycogen storage disease VII	skos:closeMatch	ICD10CM:E74.09	Other glycogen storage disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11721	LEXMATCH
+MONDO:0009297	familial renal glucosuria	skos:closeMatch	ICD10CM:E74.818	Other disorders of glucose transport	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:9432	LEXMATCH
+MONDO:0009297	familial renal glucosuria	skos:closeMatch	ICD10CM:E74.818	Other disorders of glucose transport	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:9432	LEXMATCH
 MONDO:0009303	anti-glomerular basement membrane disease	skos:closeMatch	ICD10CM:M31.0	Hypersensitivity angiitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9808	LEXMATCH
 MONDO:0009303	anti-glomerular basement membrane disease	skos:closeMatch	ICD10CM:M31.0	Hypersensitivity angiitis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9808	LEXMATCH
 MONDO:0009319	pantothenate kinase-associated neurodegeneration	skos:closeMatch	ICD10CM:G23.0	Hallervorden-Spatz disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3981	LEXMATCH
@@ -6223,3 +6223,7 @@ MONDO:0850223	Libman-Sacks endocarditis	skos:closeMatch	ICD10CM:M32.11	Endocardi
 MONDO:0850223	Libman-Sacks endocarditis	skos:closeMatch	ICD10CM:M32.11	Endocarditis in systemic lupus erythematosus	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0080740	LEXMATCH
 MONDO:0851100	malignant olfactory nerve neoplasm	skos:closeMatch	ICD10CM:C72.2	Malignant neoplasm of olfactory nerve	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:370	LEXMATCH
 MONDO:0851100	malignant olfactory nerve neoplasm	skos:closeMatch	ICD10CM:C72.2	Malignant neoplasm of olfactory nerve	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:370	LEXMATCH
+MONDO:1030008	mitral valve insufficiency	skos:closeMatch	ICD10CM:Q23.3	Congenital mitral insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11502	LEXMATCH
+MONDO:1030008	mitral valve insufficiency	skos:closeMatch	ICD10CM:Q23.3	Congenital mitral insufficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11502	LEXMATCH
+MONDO:1030010	precerebral artery stenosis	skos:closeMatch	ICD10CM:I65	Occlusion and stenosis of precerebral arteries, not resulting in cerebral infarction	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:1030010	LEXMATCH
+MONDO:1030010	precerebral artery stenosis	skos:closeMatch	ICD10CM:I65	Occlusion and stenosis of precerebral arteries, not resulting in cerebral infarction	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	mondo:1030010	LEXMATCH
