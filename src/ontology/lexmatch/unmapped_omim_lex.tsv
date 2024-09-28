@@ -1,2 +1,4 @@
 subject_id	subject_label	object_id	predicate_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID		A oboInOwl:hasDbXref	>A oboInOwl:source							
+MONDO:0002012	methylmalonic acidemia	OMIMPS:251000	MONDO:equivalentTo	Methylmalonic aciduria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	methylmalonic aciduria
+MONDO:0002012	methylmalonic acidemia	OMIMPS:251000	MONDO:equivalentTo	Methylmalonic aciduria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	methylmalonic aciduria
