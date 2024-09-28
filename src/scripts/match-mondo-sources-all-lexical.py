@@ -30,7 +30,6 @@ from sssom.util import filter_prefixes
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
 from sssom.io import get_metadata_and_prefix_map, filter_file
-from bioregistry import curie_from_iri
 
 SRC = Path(__file__).resolve().parents[1]
 ONTOLOGY_DIR = SRC / "ontology"
@@ -125,6 +124,7 @@ def run(input: str, config: str, rules: str, rejects: str, output: str):
 
     # msdf.prefix_map = sssom_yaml['curie_map']
     # msdf.metadata = sssom_yaml['global_metadata']
+    # todo: if the need for IRI to CURIE conversion rearises, use the curies .compress() instead of bioregistry
     # ! The block below converts IRI into CURIE using bioregistry.
     # msdf.df[SUBJECT_ID] = msdf.df[SUBJECT_ID].apply(
     #     lambda x: iri_to_curie(x) if x.startswith("<http") else x
