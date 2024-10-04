@@ -2,9 +2,6 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/doid_mapped_deprecated_terms.robot.template.tsv)
 
 ### Mapped deprecated terms
-| mondo_id      | source_id            | source                   |
-|:--------------|:---------------------|:-------------------------|
-| ID            | A oboInOwl:hasDbXref | >A oboInOwl:source       |
-| MONDO:0010542 | DOID:0081164         | MONDO:equivalentObsolete |
-| MONDO:0011893 | DOID:0110578         | MONDO:equivalentObsolete |
-| MONDO:0015701 | DOID:0060015         | MONDO:equivalentObsolete |
+| mondo_id   | source_id            | source             |
+|:-----------|:---------------------|:-------------------|
+| ID         | A oboInOwl:hasDbXref | >A oboInOwl:source |
