@@ -595,7 +595,7 @@ $(SYN_SYNC_DIR):
 	mkdir -p $@
 
 .PHONY: sync-synonyms
-sync-synonyms: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.tsv
+sync-synonyms: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv
 
 tmp/mondo-synonyms-scope-type-xref.tsv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
@@ -608,19 +608,19 @@ tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
 
 # todo: we may remove this output later output for analysis during development; at the end, remove it and its usages
 INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
-$(SYN_SYNC_DIR)/synonym_sync_combined_cases.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
+$(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
 	@head -n 2 $(firstword $(INPUT_FILES)) > $@
 	@for file in $(INPUT_FILES); do \
 		tail -n +3 $$file >> $@; \
 	done
 
-$(SYN_SYNC_DIR)/sync-synonyms.added.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
+$(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.added.robot.tsv > $@
 
-$(SYN_SYNC_DIR)/sync-synonyms.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.confirmed.robot.tsv)
+$(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.confirmed.robot.tsv > $@
 
-$(SYN_SYNC_DIR)/sync-synonyms.updated.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.updated.robot.tsv)
+$(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.updated.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.updated.robot.tsv > $@
 
 $(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/mondo-excluded-synonyms.tsv tmp/%-synonyms-scope-type-xref.tsv | $(SYN_SYNC_DIR)
