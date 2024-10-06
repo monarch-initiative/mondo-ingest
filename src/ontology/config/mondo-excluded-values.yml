@@ -1,4 +1,9 @@
 exclusions:
+  synonym_exclusion_rules:
+    - rule: ".*otherwise specified"
+      reason: "We don't include otherwise specified"
+    - rule: ".*, NOS"
+      reason: "We don't include otherwise specified"
   synonyms:
     - id: "MONDO:0008471" 
       scope: "oio:hasExactSynonym"
