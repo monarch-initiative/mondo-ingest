@@ -50,7 +50,7 @@ HEADERS_TO_ROBOT_SUBHEADERS = {
     'related_synonym_type': '>AI oboInOwl:hasSynonymType SPLIT=|',
 }
 SORT_COLS = ['case', 'mondo_id', 'source_id', 'synonym_scope_source', 'synonym_type', 'synonym_type_mondo', 'synonym']
-
+MONDO_ABBREV_URI = 'http://purl.obolibrary.org/obo/mondo#ABBREVIATION'
 
 def _query_synonyms(ids: List[CURIE], db: SqlImplementation) -> pd.DataFrame:
     """Get synonym triples from sqlite DB"""
@@ -76,7 +76,7 @@ def _add_synonym_type_inferences(row: pd.Series, exclusions: Set[str]) -> str:
 
     # Acronym: uppercase, no numbers, no whitespace, <10 chars
     if syn not in exclusions and syn.isupper() and not any(char.isspace() for char in syn) and len(syn) < 10:
-        types.add('http://purl.obolibrary.org/obo/mondo#ABBREVIATION')
+        types.add(MONDO_ABBREV_URI)
 
     return '|'.join(types)
 
@@ -131,6 +131,10 @@ def _common_operations(
 
     # Format
     if not df_is_combined:
+        # - Acronyms: Use source case
+        #   This operation prevents capitalization from being lost, as sometimes Mondo has used lowercase.
+        df['synonym'] = df.apply(lambda row:
+            row['synonym_case_source'] if MONDO_ABBREV_URI in row['synonym_type'] else row['synonym'], axis=1)
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
         for scope in synonym_scopes:
@@ -301,7 +305,7 @@ def sync_synonyms(
     source_types_df = source_types_df[source_types_df['synonym_type'] != '']
     # -- property conversions
     source_types_df['synonym_type'] = source_types_df['synonym_type'].apply(lambda x: x.replace(
-        'http://purl.obolibrary.org/obo/OMO_0003012', 'http://purl.obolibrary.org/obo/mondo#ABBREVIATION'))
+        'http://purl.obolibrary.org/obo/OMO_0003012', MONDO_ABBREV_URI))
     # -- merge in synonym types
     source_df = source_df.merge(source_types_df, on=['source_id', 'synonym_scope', 'synonym'], how='left').fillna('')
     # - get synonym_types: inferred
