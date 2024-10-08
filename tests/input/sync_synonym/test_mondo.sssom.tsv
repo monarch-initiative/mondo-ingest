@@ -1,0 +1,23 @@
+# curie_map:
+#   MONDO: http://purl.obolibrary.org/obo/MONDO_
+#   OMIM: https://omim.org/entry/
+#   OMIMPS: https://omim.org/phenotypicSeries/PS
+#   DOID: http://purl.obolibrary.org/obo/DOID_
+#   GARD: http://purl.obolibrary.org/obo/mondo/mappings/unknown_prefix/GARD/
+#   ICD10CM: http://purl.bioontology.org/ontology/ICD10CM/
+#   icd11.foundation: http://id.who.int/icd/entity/
+#   ICD10WHO: https://icd.who.int/browse10/2019/en#/
+#   MEDGEN: http://identifiers.org/medgen/
+#   NCIT: http://purl.obolibrary.org/obo/NCIT_
+#   Orphanet: http://www.orpha.net/ORDO/Orphanet_
+#   oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
+MONDO:8000008	Martsolf syndrome 1	skos:exactMatch	OMIM:212720	martsolf syndrome 1	semapv:UnspecifiedMatching
