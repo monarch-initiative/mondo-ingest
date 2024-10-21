@@ -50,10 +50,14 @@ HEADERS_TO_ROBOT_SUBHEADERS = {
     'related_synonym_type': '>AI oboInOwl:hasSynonymType SPLIT=|',
 }
 SORT_COLS = ['case', 'mondo_id', 'source_id', 'synonym_scope_source', 'synonym_type', 'synonym_type_mondo', 'synonym']
+MONDO_ABBREV_URI = 'http://purl.obolibrary.org/obo/mondo#ABBREVIATION'
 
 
 def _query_synonyms(ids: List[CURIE], db: SqlImplementation) -> pd.DataFrame:
-    """Get synonym triples from sqlite DB"""
+    """Get synonym triples from sqlite DB
+
+    # todo: this could be refactored to SPARQL instead, though we are considering refactoring all SPARQL to OAK.
+    """
     tups: Set[Tuple[CURIE, PRED_CURIE, str]] = set()
     for _id in ids:
         for pred, alias in sorted(db.alias_relationships(_id)):
@@ -67,7 +71,6 @@ def _query_synonyms(ids: List[CURIE], db: SqlImplementation) -> pd.DataFrame:
     return df
 
 
-# todo: DRYify? this and _merge_synonym_types() share similar logic
 def _add_synonym_type_inferences(row: pd.Series, exclusions: Set[str]) -> str:
     """Append additional synonym_type(s) based on logical rules."""
     syn: str = row['synonym']
@@ -76,7 +79,7 @@ def _add_synonym_type_inferences(row: pd.Series, exclusions: Set[str]) -> str:
 
     # Acronym: uppercase, no numbers, no whitespace, <10 chars
     if syn not in exclusions and syn.isupper() and not any(char.isspace() for char in syn) and len(syn) < 10:
-        types.add('http://purl.obolibrary.org/obo/mondo#ABBREVIATION')
+        types.add(MONDO_ABBREV_URI)
 
     return '|'.join(types)
 
@@ -152,9 +155,11 @@ def _common_operations(
     return df
 
 
-# todo: consider refactoring all .drop_duplicates() to here
 def _read_sparql_output_tsv(path: Union[Path, str]) -> pd.DataFrame:
-    """Read and format special kind of TSV that comes from SPARQL query output."""
+    """Read and format special kind of TSV that comes from SPARQL query output.
+
+    todo: Could all .drop_duplicates() calls be done here instead?
+    """
     return pd.read_csv(path, sep='\t').fillna('').rename(columns=lambda x: x.lstrip('?'))
 
 
@@ -202,8 +207,8 @@ def sync_synonyms(
 
     todo: update when -deleted is reactivated
     :param outpath_deleted: Optional. This case isn't fully fleshed out yet.
-    todo: since the overall combined case output for all cases for all sources is no in reports/ instead of tmp/ as of
-     2024-08-15, we should probably pass this as a required CLI/functional param w/ no default value.
+
+    todo: if we decided that this param should stay, set as required CLI/functional param w/ no default value.
     :param combined_outpath_template_str: Creates an additional file concatenating all case files.
 
     todo: possible refactor: labels: Maybe could be done more cleanly and consistently. At first, wanted to add to both
@@ -229,16 +234,6 @@ def sync_synonyms(
     # - remove unneeded cols
     mappings_df = mappings_df[['mondo_id', 'mondo_label', 'source_id']]  # source_label added later from source
     # - filter by source
-    # todo: filtering by prefixes / source
-    # Todo: i. keep or remove?
-    #   the role of source_id in -confirmed and -updated is different than what I originally thought. Do I still need to
-    #   filter here? I think so. Originally our pseudocode was an iterator over only these matches, I thought
-    # todo: ii. if keep: refactor
-    #  check this pattern used elsewhere; I think it has. and abstract into func for these 3 lines; 'filter prefixes'
-    #  - OR use this?: get_all_owned_terms()
-    #    - it seems long and messy compared to these 3 lines, but is more comprehensive. I could make
-    #      get_all_owned_terms() a simple 3 line func and then make a separate func for all edge cases?
-    #  - note I may have list(owned_prefix_map.keys())[0] instead of list(owned_prefix_map)[0] ins ome places
     mappings_df['source_prefix'] = mappings_df['source_id'].apply(lambda x: x.split(':')[0])
     mappings_df = mappings_df[mappings_df['source_prefix'].isin(owned_prefix_map.keys())]
     del mappings_df['source_prefix']
@@ -246,9 +241,7 @@ def sync_synonyms(
     # - filter obsoletes (from mappings_df --> source_df & mondo_df)
     #  - filter obsoleted in Mondo
     mappings_df = mappings_df[~mappings_df['mondo_label'].str.startswith('obsolete')]
-    # todo: obsoletes/deleted filtering correct? test?
-    #  I feel like this way might be wrong. is this too early / not the right place to filter obsoletes?
-    #  - filter obsoleted in source
+
     source_obsoletes: Set[CURIE] = set([x for x in source_db.obsoletes()])
     mappings_df = mappings_df[~mappings_df['source_id'].isin(source_obsoletes)]
     # - labels / label lookups
@@ -272,8 +265,6 @@ def sync_synonyms(
     mondo_exclusions_df['synonym_lower'] = mondo_exclusions_df['synonym'].str.lower()
 
     # Query synonyms: source
-    # todo: ideally refactor to use only SPARQL instead of combining SPARQL & OAK results
-    #  - likely quick and easy but there's a chance there's more to it
     source_df: pd.DataFrame = _query_synonyms(mappings_df['source_id'].tolist(), source_db)\
         .rename(columns={'curie': 'source_id'})
     source_df['synonym_lower'] = source_df['synonym'].str.lower()
@@ -283,7 +274,7 @@ def sync_synonyms(
     source_types_df: pd.DataFrame = _read_sparql_output_tsv(
         onto_synonym_types_path).rename(columns={'cls_id': 'source_id'})
     # -- remove synonym xref provenance
-    # todo: it may be useful in the future to keep/use this data
+    # todo?: keep? it may be useful in the future to keep/use this data
     del source_types_df['dbXref']  # leaves: source_id, synonym_scope, synonym, synonym_type
     # -- URIs --> CURIEs
     source_types_df['source_id'] = source_types_df['source_id'].apply(lambda x: conv.compress(x))
@@ -301,7 +292,7 @@ def sync_synonyms(
     source_types_df = source_types_df[source_types_df['synonym_type'] != '']
     # -- property conversions
     source_types_df['synonym_type'] = source_types_df['synonym_type'].apply(lambda x: x.replace(
-        'http://purl.obolibrary.org/obo/OMO_0003012', 'http://purl.obolibrary.org/obo/mondo#ABBREVIATION'))
+        'http://purl.obolibrary.org/obo/OMO_0003012', MONDO_ABBREV_URI))
     # -- merge in synonym types
     source_df = source_df.merge(source_types_df, on=['source_id', 'synonym_scope', 'synonym'], how='left').fillna('')
     # - get synonym_types: inferred
@@ -371,7 +362,7 @@ def sync_synonyms(
     # -deleted
     #  Cases where synonym exists in Mondo term, but not in mapped source term
     deleted_df = pd.DataFrame()
-    # todo: reactivate when ready.
+    # todo: -deleted: reactivate when ready.
     #  - depends on more than just 1 source not having synonym. it must (i) exist on no mapped source terms, and (ii)
     #  have no other qualifying evidence (I think just: ORCID & MONDO;notVerified),
     #  - considerations: what role source_id plays in this logic. this may be outdated
