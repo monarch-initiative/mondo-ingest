@@ -175,11 +175,6 @@ $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signatu
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd11foundation.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd11foundation.owl -o $@; fi
 
-$(COMPONENTSDIR)/gard.owl: $(TMPDIR)/gard_relevant_signature.txt | component-download-gard.owl
-	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-gard.owl.owl --select imports \
-		remove -T $(TMPDIR)/gard_relevant_signature.txt --select complement --select "classes individuals" --trim false \
-		annotate --ontology-iri $(URIBASE)/mondo/sources/gard.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/gard.owl -o $@; fi
-
 $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \

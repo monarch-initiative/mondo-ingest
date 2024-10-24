@@ -31,7 +31,6 @@ These are the components in MONDO-INGEST
 | Filename | URL |
 | -------- | --- |
 | doid.owl | http://purl.obolibrary.org/obo/doid.owl |
-| gard.owl | https://github.com/monarch-initiative/gard/releases/latest/download/gard.owl |
 | icd10cm.owl | https://data.bioontology.org/ontologies/ICD10CM/submissions/23/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb |
 | icd10who.owl | https://github.com/monarch-initiative/icd10who/releases/latest/download/icd10who.ttl |
 | icd11foundation.owl | https://github.com/monarch-initiative/icd11/releases/latest/download/icd11foundation.owl |
