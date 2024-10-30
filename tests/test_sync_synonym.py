@@ -5,6 +5,10 @@ Todo: legal proxy merges: tests to ensure they show up correctly
   - could also test against illegal proxy merges, but might not be the best place here (e.g. OMIM:123 should not be
   exact to Mondo:123 and Mondo:456).
 Todo: obsoleted: test cases: (i) obsolete Mondo term, (ii) obsolete source term
+  - For example, was skeptical implementation was correct. Had this comment on `source_obsoletes` in `sync_synonym.py`:
+    todo: obsoletes/deleted filtering correct? test?
+     I feel like this way might be wrong. is this too early / not the right place to filter obsoletes?
+     - filter obsoleted in source
 Todo: 'deleted terms': test cases - There were some cases in OMIM where Mondo has a mapping to a term and it appears in
  mondo.sssom.tsv, but term doesn't exist in source.
 
