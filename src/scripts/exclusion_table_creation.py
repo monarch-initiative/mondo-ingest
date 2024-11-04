@@ -54,11 +54,9 @@ SPARQL_MONDO_EXCLUDES_PATH = os.path.join(SPARQL_DIR, 'mondo-exclusionReason.spa
 
 
 # Functions
-# TODO: evaluate https://github.com/cthoyt/curies , which likely has fully superseded new bioregistry option
-#  https://github.com/biopragmatics/bioregistry/issues/480#issuecomment-1199235747
 def uri_to_curie(uri: str, prefix_map: Dict[str, str]) -> str:
     """Takes an ontological URI and returns a CURIE. Works on the following patterns
-    todo: eventually OAK might also have an optimal solution for this."""
+    todo: migrate usage of this function to curies .compress()"""
     if uri.startswith('<'):
         uri = uri[1:]
     if uri.endswith('>'):

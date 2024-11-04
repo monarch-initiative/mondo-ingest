@@ -70,7 +70,7 @@ rules:
 
   - synonymizer:
       description: Remove box brackets bound info from the label.
-      match: r'\[[^)]*\]'
+      match: '\[[^)]*\]'
       match_scope: "*"
       replacement: ""
 
@@ -88,26 +88,26 @@ rules:
   
   - synonymizer:
       description: Broad match terms with the term 'other' in them.
-      match: r'(?i)^Other '
+      match: '(?i)^Other '
       match_scope: "*"
       replacement: ""
       qualifier: "broad"
 
   - synonymizer:
       description: Replace disease with disorder in the label.
-      match: r'disease'
+      match: 'disease'
       match_scope: "*"
       replacement: "disorder"
 
   - synonymizer:
       description: Replace numbers by "type number" in the label.
-      match: r'(?<!type)\s(\d)'
+      match: '(?<!type)\s(\d)'
       match_scope: "*"
       replacement: " type \\1"
 
   - synonymizer:
       description: Replace "'s" by "s" in the label.
-      match: r'\'s'
+      match: "[']s"
       match_scope: "*"
       replacement: "s"
 
