@@ -2,10 +2,10 @@
 | Ontology                                        | Tot   |
 |:------------------------------------------------|:------|
 | [GARD](./migrate_gard.md)                       | 9,370 |
-| [OMIM](./migrate_omim.md)                       | 9     |
 | [ICD11FOUNDATION](./migrate_icd11foundation.md) | 4,593 |
 | [DOID](./migrate_doid.md)                       | 37    |
 | [NCIT](./migrate_ncit.md)                       | 2,211 |
+| [OMIM](./migrate_omim.md)                       | 15    |
 | [ORDO](./migrate_ordo.md)                       | 13    |
 | [ICD10WHO](./migrate_icd10who.md)               | 119   |
 | [ICD10CM](./migrate_icd10cm.md)                 | 1,894 |
