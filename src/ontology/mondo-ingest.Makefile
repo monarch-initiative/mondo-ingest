@@ -20,7 +20,7 @@ SKIP_HUGE=false
 ####################################
 .PHONY: pip-%
 pip-%:
-	 python3 -m pip install --upgrade $*
+	 python3 -m pip install --upgrade $* --break-system-packages
 
 .PHONY: dependencies
 dependencies: pip-pip pip-setuptools pip-oaklib pip-sssom pip-semsql
@@ -323,7 +323,7 @@ $(DOCS_DIR)/sources/ $(DOCS_DIR)/metrics/ $(MAPPINGSDIR)/:
 	mkdir -p $@
 
 $(DOCS_DIR)/sources/%.md: metadata/%.yml | $(DOCS_DIR)/sources/
-	j2 "$(SOURCE_DOC_TEMPLATE)" $< > $@
+	jinjanate "$(SOURCE_DOC_TEMPLATE)" $< > $@
 
 PREFIXES_METRICS=--prefix 'OMIM: http://omim.org/entry/' \
 	--prefix 'CHR: http://purl.obolibrary.org/obo/CHR_' \
@@ -336,14 +336,10 @@ metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
 .PRECIOUS: metadata/%-metrics.json
 
 $(DOCS_DIR)/metrics/%.md: metadata/%-metrics.json | $(DOCS_DIR)/metrics/
-	j2 "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
-
-.PHONY: j2
-j2:
-	pip install j2cli j2cli[yaml]
+	jinjanate "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
 
 .PHONY: documentation
-documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs slurp-docs
+documentation: $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs slurp-docs
 
 
 .PHONY: build-mondo-ingest
