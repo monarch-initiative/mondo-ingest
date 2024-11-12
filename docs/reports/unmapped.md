@@ -8,7 +8,7 @@
 | [GARD](./unmapped_gard.md)                       | 12,004      | 0              | 0                | 0                         | 12,004                                    | 0                         | 12,004                      | 100.0%                    |
 | [ORDO](./unmapped_ordo.md)                       | 15,561      | 6,270          | 1,424            | 1,256                     | 9,291                                     | 9,214                     | 77                          | 0.8%                      |
 | [DOID](./unmapped_doid.md)                       | 14,172      | 2,660          | 2,488            | 2,478                     | 11,510                                    | 11,457                    | 53                          | 0.5%                      |
-| [OMIM](./unmapped_omim.md)                       | 29,532      | 19,371         | 1,367            | 1,324                     | 8,795                                     | 8,758                     | 37                          | 0.4%                      |
+| [OMIM](./unmapped_omim.md)                       | 29,537      | 19,376         | 1,367            | 1,324                     | 8,795                                     | 8,758                     | 37                          | 0.4%                      |
 
 `Ontology`: Name of ontology  
 `Tot terms`: Total terms in ontology  
