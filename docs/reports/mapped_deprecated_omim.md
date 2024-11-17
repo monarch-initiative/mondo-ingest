@@ -7,6 +7,7 @@
 | ID            | A oboInOwl:hasDbXref | >A oboInOwl:source       |
 | MONDO:0000911 | OMIM:613740          | MONDO:equivalentObsolete |
 | MONDO:0007061 | OMIM:102590          | MONDO:equivalentObsolete |
+| MONDO:0007066 | OMIM:102800          | MONDO:equivalentObsolete |
 | MONDO:0007602 | OMIM:134700          | MONDO:equivalentObsolete |
 | MONDO:0007659 | OMIM:137560          | MONDO:equivalentObsolete |
 | MONDO:0007779 | OMIM:145410          | MONDO:equivalentObsolete |
@@ -16,7 +17,6 @@
 | MONDO:0008126 | OMIM:164891          | MONDO:equivalentObsolete |
 | MONDO:0008204 | OMIM:168850          | MONDO:equivalentObsolete |
 | MONDO:0008415 | OMIM:181515          | MONDO:equivalentObsolete |
-| MONDO:0009489 | OMIM:244850          | MONDO:equivalentObsolete |
 | MONDO:0009535 | OMIM:247440          | MONDO:equivalentObsolete |
 | MONDO:0009654 | OMIM:252700          | MONDO:equivalentObsolete |
 | MONDO:0010045 | OMIM:270710          | MONDO:equivalentObsolete |
@@ -33,7 +33,6 @@
 | MONDO:0010859 | OMIM:600309          | MONDO:equivalentObsolete |
 | MONDO:0011111 | OMIM:601563          | MONDO:equivalentObsolete |
 | MONDO:0011543 | OMIM:605365          | MONDO:equivalentObsolete |
-| MONDO:0011893 | OMIM:607683          | MONDO:equivalentObsolete |
 | MONDO:0011910 | OMIM:607801          | MONDO:equivalentObsolete |
 | MONDO:0012461 | OMIM:610269          | MONDO:equivalentObsolete |
 | MONDO:0012560 | OMIM:610799          | MONDO:equivalentObsolete |
