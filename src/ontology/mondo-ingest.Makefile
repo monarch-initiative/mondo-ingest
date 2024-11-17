@@ -619,9 +619,9 @@ $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_I
 $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.updated.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.updated.robot.tsv > $@
 
-$(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv: $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(SYN_SYNC_DIR)
+$(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(SYN_SYNC_DIR)
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
-	--mondo-mappings-path $ $(TMPDIR)/mondo.sssom.tsv \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
 	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
 	--mondo-exclusion-configs config/mondo-exclusion-configs.yml \
