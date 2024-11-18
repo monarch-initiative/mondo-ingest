@@ -1,6 +1,5 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
 MONDO:0000049	obsolete invasive pneumococcal disease, recurrent isolated	skos:exactMatch	OMIMPS:610799		semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
-MONDO:0000169	obsolete microphthalmia, isolated, with cataract	skos:exactMatch	OMIMPS:156850		semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0000218	obsolete preimplantation embryonic lethality	skos:exactMatch	OMIMPS:616814		semapv:UnspecifiedMatching		0.5				MONDO_MAPPINGS
 MONDO:0002012	methylmalonic acidemia	skos:exactMatch	OMIMPS:251000	Methylmalonic aciduria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	methylmalonic aciduria	LEXMATCH
 MONDO:0002012	methylmalonic acidemia	skos:exactMatch	OMIMPS:251000	Methylmalonic aciduria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	methylmalonic aciduria	LEXMATCH

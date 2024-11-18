@@ -455,8 +455,7 @@ def cli():  # todo: #remove-temp-defaults
     """Command line interface."""
     parser = ArgumentParser(
         prog='sync-subclassof',
-        description='Create outputs for the purpose of analyzing and syncing subClassOf relations beween Mondo and its '
-                    'sources.')
+        description='Create outputs for purpose of analyzing and syncing subClassOf relations.')
     # Normal command line arguments
     parser.add_argument(
         '-a', '--outpath-added', required=False, default=EX_DEFAULTS['outpath_added'],
