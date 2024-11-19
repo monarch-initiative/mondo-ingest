@@ -369,22 +369,21 @@ deploy-mondo-ingest:
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
 
 
-# make function, not target! 
-# Builds tmp/mondo/ and rebuilds mondo.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
-
+# make function, not target!
+# Builds tmp/mondo/ and rebuilds mondo.owl, mondo-edit.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
 define build_mondo
 	cd $(TMPDIR) && \
 	rm -rf ./mondo/ && \
 	git clone --depth 1 https://github.com/monarch-initiative/mondo && \
 	cd mondo/src/ontology && \
-	make mondo.owl mappings -B MIR=false IMP=false MIR=false \
+	make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
 	latest_hash=$$(git rev-parse origin/master) && \
-	cd ../../../.. && \
 	echo "$$latest_hash" > $(1)
 endef
 
+# Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl, mondo-edit.owl, and mondo.sssom.tsv, only if mondo repo main branch has new commits, or if has never been run before
 tmp/mondo_repo_built: .FORCE
-	@if [ ! -f $@ ]; then \
+	if [ ! -f $@ ]; then \
 		$(call build_mondo, $@); \
 	else \
 		current_hash=$$(cat $@); \
@@ -553,8 +552,9 @@ slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
 ###### Synchronization ######
 #############################
 .PHONY: sync
-sync: sync-subclassof
+sync: sync-subclassof sync-synonyms
 
+# Synchronization: SubclassOf
 .PHONY: sync-subclassof
 sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
 
@@ -584,6 +584,52 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--mondo-ingest-db-path $(TMPDIR)/mondo-ingest.db \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml
+
+# Synchronization: Synonyms
+SYN_SYNC_DIR=$(REPORTDIR)/sync-synonym
+$(SYN_SYNC_DIR):
+	mkdir -p $@
+
+.PHONY: sync-synonyms
+sync-synonyms: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv
+
+tmp/mondo-synonyms-scope-type-xref.tsv: $(TMPDIR)/mondo.owl
+	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
+
+tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
+	$(ROBOT) query -i $(COMPONENTSDIR)/$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
+
+../../tests/input/sync_synonym/%-synonyms-scope-type-xref.tsv:
+	$(ROBOT) query -i ../../tests/input/sync_synonym/test_$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
+
+# todo: we may remove this output later output for analysis during development; at the end, remove it and its usages
+INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
+$(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
+	@head -n 2 $(firstword $(INPUT_FILES)) > $@
+	@for file in $(INPUT_FILES); do \
+		tail -n +3 $$file >> $@; \
+	done
+
+$(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.added.robot.tsv > $@
+
+$(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.confirmed.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.confirmed.robot.tsv > $@
+
+$(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.updated.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.updated.robot.tsv > $@
+
+$(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(SYN_SYNC_DIR)
+	python3 $(SCRIPTSDIR)/sync_synonym.py \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--ontology-db-path $(COMPONENTSDIR)/$*.db \
+	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
+	--mondo-exclusion-configs config/mondo-exclusion-configs.yml \
+	--onto-synonym-types-path tmp/$*-synonyms-scope-type-xref.tsv \
+	--onto-config-path metadata/$*.yml \
+	--outpath-added $(SYN_SYNC_DIR)/$*.synonyms.added.robot.tsv \
+	--outpath-confirmed $(SYN_SYNC_DIR)/$*.synonyms.confirmed.robot.tsv \
+	--outpath-updated $(SYN_SYNC_DIR)/$*.synonyms.updated.robot.tsv
 
 ##################################
 ## Externally managed content ####
@@ -791,6 +837,23 @@ help:
 	@echo "For all subclass relationships in Mondo, shows which sources do not have it and whether no source has it. Combination of all --outpath-direct-in-mondo-only outputs for all sources, using those as inputs, and then deletes them after.\n"
 	@echo "reports/sync-subClassOf.confirmed.tsv"
 	@echo "For all subclass relationships in Mondo, by source, a robot template containing showing what is in Mondo and are confirmed to also exist in the source. Combination of all --outpath-confirmed outputs for all sources.\n"
+	# - Synchronization: synonyms
+	@echo "sync-synonyms"
+	@echo "Runs 'sync-synonyms' part of synchronization pipeline, creating outputs for all sources for each of the 4 cases - 'added', 'confirmed', 'updated', and 'deleted'.\n"
+	@echo "reports/%.subclass.added.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain synonyms that aren't yet integrated into Mondo for all mapped source terms.\n"
+	@echo "reports/%.subclass.confirmed.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain synonym confirmations; combination of synonym scope predicate and synonym string exists in both source and Mondo for a given mapping.\n"
+	@echo "reports/%.subclass.deleted.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain synonym deletions; exists in Mondo but not in source(s) for a given mapping.\n"
+	@echo "reports/%.subclass.updated.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain updates to synonym scope predicate; cases where the synonym exists in Mondo and on the mapped source term, but the scope predicate is different.\n"
+	@echo "reports/sync-synonyms.added.tsv"
+	@echo "Combination of all 'added' synonym outputs for all sources.\n"
+	@echo "reports/sync-synonyms.confirmed.tsv"
+	@echo "Combination of all 'confirmed' synonym outputs for all sources.\n"
+	@echo "reports/sync-synonyms.updated.tsv"
+	@echo "Combination of all 'updated' synonym outputs for all sources.\n"
 	# - Refresh externally managed content
 	@echo "update-externally-managed-content"
 	@echo "Downloads and processes all externally managed content like cross references, subsets and labels, including NORD and GARD.\n"
