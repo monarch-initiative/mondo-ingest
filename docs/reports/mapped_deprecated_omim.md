@@ -7,6 +7,7 @@
 | ID            | A oboInOwl:hasDbXref | >A oboInOwl:source       |
 | MONDO:0000911 | OMIM:613740          | MONDO:equivalentObsolete |
 | MONDO:0007061 | OMIM:102590          | MONDO:equivalentObsolete |
+| MONDO:0007066 | OMIM:102800          | MONDO:equivalentObsolete |
 | MONDO:0007602 | OMIM:134700          | MONDO:equivalentObsolete |
 | MONDO:0007659 | OMIM:137560          | MONDO:equivalentObsolete |
 | MONDO:0007779 | OMIM:145410          | MONDO:equivalentObsolete |
