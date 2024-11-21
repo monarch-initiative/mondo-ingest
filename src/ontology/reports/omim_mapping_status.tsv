@@ -1,6 +1,7 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
 OMIM:301127	arthrogryposis multiplex congenita 7, X-linked	False	False	False
 OMIM:301132	orofaciodigital syndrome 21	False	False	False
+OMIM:301133	congenital disorder of glycosylation, type 1dd	False	False	False
 OMIM:301134	intellectual developmental disorder, X-linked 114	False	False	False
 OMIM:620937	kariminejad-reversade neurodevelopmental syndrome	False	False	False
 OMIM:620938	spastic paraplegia 93, autosomal recessive	False	False	False
@@ -32,6 +33,8 @@ OMIM:620996	retinitis pigmentosa 98	False	False	False
 OMIM:620999	fibromatosis, gingival, 6	False	False	False
 OMIM:621001	spermatogenic failure 96	False	False	False
 OMIM:621002	premature ovarian failure 25	False	False	False
+OMIM:621004	autoimmune disease with susceptibility to mycobacterium tuberculosis	False	False	False
+OMIM:621010	morimoto-ryu-malicdan neuromuscular syndrome	False	False	False
 OMIMPS:219080	ACTH-independent macronodular adrenal hyperplasia	False	False	False
 OMIMPS:236270	Homocystinuria-megaloblastic anemia	False	False	False
 OMIMPS:251000	Methylmalonic aciduria	False	False	False
@@ -510,7 +513,6 @@ OMIM:241900		False	False	True
 OMIM:242170		False	False	True
 OMIM:242650		False	False	True
 OMIM:242800	removed from database	False	False	True
-OMIM:242870		False	False	True
 OMIM:243095		False	False	True
 OMIM:243340		False	False	True
 OMIM:244500		False	False	True
@@ -1225,7 +1227,6 @@ OMIM:607595		False	False	True
 OMIM:607636		False	False	True
 OMIM:607655		False	False	True
 OMIM:607661		False	False	True
-OMIM:607683		False	False	True
 OMIM:607689		False	False	True
 OMIM:607692		False	False	True
 OMIM:607739		False	False	True
@@ -4256,7 +4257,7 @@ OMIM:300610	HNRNPH2	False	True	False
 OMIM:300611	C1GALT1C1	False	True	False
 OMIM:300616	LUZP4	False	True	False
 OMIM:300617	BRCC3	False	True	False
-OMIM:300618	PHF16	False	True	False
+OMIM:300618	JADE3	False	True	False
 OMIM:300620	VSIG1	False	True	False
 OMIM:300621	SPIN2A	False	True	False
 OMIM:300625	CT83	False	True	False
@@ -4553,6 +4554,7 @@ OMIM:301128	TRMT2B	False	True	False
 OMIM:301129	SATL1	False	True	False
 OMIM:301130	RTL3	False	True	False
 OMIM:301131	RTL4	False	True	False
+OMIM:301135	RTL5	False	True	False
 OMIM:301300	ALAS2	False	True	False
 OMIM:301770	ARR3	False	True	False
 OMIM:301780	ARSC2	False	True	False
@@ -8708,7 +8710,7 @@ OMIM:605071	RGS19	False	True	False
 OMIM:605072	GIPC1	False	True	False
 OMIM:605073	TRIM37	False	True	False
 OMIM:605076	SNAPC2	False	True	False
-OMIM:605077	DNMAP1	False	True	False
+OMIM:605077	DMAP1	False	True	False
 OMIM:605078	TARDBP	False	True	False
 OMIM:605079	SALL3	False	True	False
 OMIM:605080	CNGB3	False	True	False
@@ -13005,8 +13007,8 @@ OMIM:610510	BORA	False	True	False
 OMIM:610511	SEC23A	False	True	False
 OMIM:610512	SEC23B	False	True	False
 OMIM:610513	ATP13A2	False	True	False
-OMIM:610514	PHF17	False	True	False
-OMIM:610515	PHF15	False	True	False
+OMIM:610514	JADE1	False	True	False
+OMIM:610515	JADE2	False	True	False
 OMIM:610516	GLYCTK	False	True	False
 OMIM:610517	CNTNAP3	False	True	False
 OMIM:610518	CNTNAP4	False	True	False
@@ -19118,6 +19120,12 @@ OMIM:620995	SETD4	False	True	False
 OMIM:620997	SEMA3G	False	True	False
 OMIM:620998	ZNF230	False	True	False
 OMIM:621000	SNX18	False	True	False
+OMIM:621003	SP9	False	True	False
+OMIM:621005	SBSPON	False	True	False
+OMIM:621006	RTL6	False	True	False
+OMIM:621007	ZNF800	False	True	False
+OMIM:621009	KLF18	False	True	False
+OMIM:621011	SESTD1	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
@@ -27892,6 +27900,7 @@ OMIM:164891		True	False	True
 OMIM:168850		True	False	True
 OMIM:175020		True	False	True
 OMIM:181515		True	False	True
+OMIM:242870		True	False	True
 OMIM:247440		True	False	True
 OMIM:252700		True	False	True
 OMIM:270710		True	False	True
@@ -27906,12 +27915,14 @@ OMIM:300881		True	False	True
 OMIM:301590		True	False	True
 OMIM:306500		True	False	True
 OMIM:309605		True	False	True
+OMIM:314800		True	False	True
 OMIM:600048		True	False	True
 OMIM:600146		True	False	True
 OMIM:600309		True	False	True
 OMIM:601251		True	False	True
 OMIM:601563		True	False	True
 OMIM:605365		True	False	True
+OMIM:607683		True	False	True
 OMIM:607801		True	False	True
 OMIM:610269		True	False	True
 OMIM:610799		True	False	True
@@ -29191,7 +29202,6 @@ OMIM:314360	ulnar hypoplasia with lobster-claw deformity of feet	True	True	False
 OMIM:314550	vesicoureteral reflux, X-linked	True	True	False
 OMIM:314560	von willebrand disease, X-linked form	True	True	False
 OMIM:314570	widow's peak syndrome	True	True	False
-OMIM:314800	xh antigen	True	True	False
 OMIM:424500	gonadoblastoma	True	True	False
 OMIM:425500	hairy ears, Y-linked	True	True	False
 OMIM:489000	ubiquitin-activating enzyme, Y-linked	True	True	False
