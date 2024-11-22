@@ -1,5 +1,6 @@
 import click
 import os
+import re
 import pandas as pd
 import logging
 
@@ -95,6 +96,23 @@ def _remove_erroneous_values_from_externally_managed_content(external_content_fi
                     report.append(error_report)
                     df_external_content.at[index, erroneous_column] = ""
 
+    # Additional checks on the pandas dataframe that are not covered by SPARQL
+    
+    # BANANA ERROR: Search the entire external content for occurrences of the pattern 'MONDO:MONDO'
+    pattern = r"^MONDO:MONDO:.*$"
+    result = df_external_content.applymap(lambda x: bool(re.match(pattern, str(x))))
+    rows_to_drop = result.any(axis=1).index[result.any(axis=1)].tolist()
+    for row in rows_to_drop:
+        error_report = df_external_content.loc[row].to_dict()
+        error_report['Source'] = source
+        rule = "MONDO:MONDO_pattern"
+        property = "IRI"
+        error_report['Check'] = f"{rule} ({property})"
+        report.append(error_report)
+        df_external_content.drop(index=rows_to_drop, inplace=True)
+    
+    # X ERROR: TBD
+    
     df_external_content.to_csv(external_content_file_out, sep="\t", index=False)
     _write_nice_report(report, source)
 
