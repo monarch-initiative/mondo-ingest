@@ -259,6 +259,7 @@ def sync_synonyms(
     #   all_entity_curies(), node() (empty props), node_exists() (no: falsely says 'True', prolly cuz bad xrefs exist)
     source_deleted_ids: Set[CURIE] = set([k for k, v in source_labels.items() if not v])
     mappings_df = mappings_df[~mappings_df['source_id'].isin(source_deleted_ids)]
+    mapping_pairs_set = set(mappings_df[['mondo_id', 'source_id']].apply(tuple, axis=1))
     if len(mappings_df) == 0:
         logging.warning(f'Synonym Sync: No mappings found for source {source_name}. Exiting.')
         return
@@ -337,6 +338,7 @@ def sync_synonyms(
     #  Cases where scope + synonym string are the same
     confirmed_df = mondo_df.merge(source_df, on=['synonym_scope', 'synonym_lower'], how='inner').rename(columns={
         'synonym_x': 'synonym_case_mondo', 'synonym_y': 'synonym_case_source'})  # keep Mondo casing if different
+    confirmed_df = confirmed_df[confirmed_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
     confirmed_df = _add_syn_variation_cols(confirmed_df)
     del confirmed_df['mondo_evidence']
     confirmed_df = _common_operations(confirmed_df, outpath_confirmed, mondo_exclusions_df=mondo_exclusions_df)
@@ -347,6 +349,7 @@ def sync_synonyms(
     updated_df = mondo_df.merge(source_df, on=['synonym_lower'], how='inner').rename(columns={
         'synonym_scope_x': 'synonym_scope_mondo', 'synonym_scope_y': 'synonym_scope',
         'synonym_x': 'synonym_case_mondo', 'synonym_y': 'synonym_case_source'})  # keep Mondo casing if different
+    updated_df = updated_df[updated_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
     updated_df = _add_syn_variation_cols(updated_df)
     updated_df = updated_df[updated_df['synonym_scope_mondo'] != updated_df['synonym_scope']]
     updated_df = _common_operations(updated_df, outpath_updated, mondo_exclusions_df=mondo_exclusions_df)
@@ -360,6 +363,7 @@ def sync_synonyms(
     source_df_with_mondo_ids['synonym_case_source'] = source_df_with_mondo_ids['synonym']
     # - leave only synonyms that don't exist on given Mondo IDs
     added_df = _filter_a_by_not_in_b(source_df_with_mondo_ids, mondo_df, ['mondo_id', 'synonym_lower'])
+    added_df = added_df[added_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
     added_df = _common_operations(added_df, outpath_added, mondo_exclusions_df=mondo_exclusions_df)
     added_df['case'] = 'added'
 
