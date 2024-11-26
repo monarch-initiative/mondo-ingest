@@ -322,7 +322,7 @@ def sync_subclassof(
             '\nSee also: https://github.com/monarch-initiative/mondo-ingest/issues/525'
             '\n\nExiting.')
 
-    # Determine hierarchy diferences -----------------------------------------------------------------------------------
+    # Determine hierarchy differences -----------------------------------------------------------------------------------
     # todo: remove unused, commented out vars? (they were created in anticipation of possible cases)
     logging.info('Calculating various differences in hierarchies between source and Mondo')
     # Find which edges appear in both Mondo and source, or only in one or the other

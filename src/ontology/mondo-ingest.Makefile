@@ -376,7 +376,7 @@ define build_mondo
 	rm -rf ./mondo/ && \
 	git clone --depth 1 https://github.com/monarch-initiative/mondo && \
 	cd mondo/src/ontology && \
-	make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
+	make mondo.owl mappings -B MIR=false IMP=false &&\
 	latest_hash=$$(git rev-parse origin/master) && \
 	echo "$$latest_hash" > $(1)
 endef
