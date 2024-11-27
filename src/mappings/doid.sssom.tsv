@@ -1553,10 +1553,10 @@ DOID:0050876	Caroli disease	oboInOwl:hasDbXref	GARD:6002	semapv:UnspecifiedMatch
 DOID:0050876	Caroli disease	oboInOwl:hasDbXref	MESH:D016767	semapv:UnspecifiedMatching
 DOID:0050876	Caroli disease	oboInOwl:hasDbXref	NCI:C84619	semapv:UnspecifiedMatching
 DOID:0050876	Caroli disease	oboInOwl:hasDbXref	UMLS:C0162510	semapv:UnspecifiedMatching
-DOID:0050877	pancreatic agenesis 1	oboInOwl:hasDbXref	GARD:4203	semapv:UnspecifiedMatching
-DOID:0050877	pancreatic agenesis 1	oboInOwl:hasDbXref	OMIM:260370	semapv:UnspecifiedMatching
-DOID:0050877	pancreatic agenesis 1	oboInOwl:hasDbXref	ORDO:2805	semapv:UnspecifiedMatching
-DOID:0050877	pancreatic agenesis 1	skos:exactMatch	OMIM:260370	semapv:UnspecifiedMatching
+DOID:0050877	pancreatic agenesis	oboInOwl:hasDbXref	GARD:4203	semapv:UnspecifiedMatching
+DOID:0050877	pancreatic agenesis	oboInOwl:hasDbXref	OMIMPS:260370	semapv:UnspecifiedMatching
+DOID:0050877	pancreatic agenesis	oboInOwl:hasDbXref	ORDO:2805	semapv:UnspecifiedMatching
+DOID:0050877	pancreatic agenesis	skos:exactMatch	OMIMPS:260370	semapv:UnspecifiedMatching
 DOID:0050879	fragile X-associated tremor/ataxia syndrome	oboInOwl:hasDbXref	OMIM:300623	semapv:UnspecifiedMatching
 DOID:0050879	fragile X-associated tremor/ataxia syndrome	skos:exactMatch	OMIM:300623	semapv:UnspecifiedMatching
 DOID:0050880	Koolen de Vries syndrome	oboInOwl:hasDbXref	GARD:10727	semapv:UnspecifiedMatching
@@ -1858,6 +1858,7 @@ DOID:0060067	Pearson syndrome	oboInOwl:hasDbXref	OMIM:557000	semapv:UnspecifiedM
 DOID:0060067	Pearson syndrome	skos:exactMatch	OMIM:557000	semapv:UnspecifiedMatching
 DOID:0060068	nonbacterial thrombotic endocarditis	oboInOwl:hasDbXref	MESH:D059905	semapv:UnspecifiedMatching
 DOID:0060083	immune system cancer	oboInOwl:hasDbXref	ICDO:9392/3	semapv:UnspecifiedMatching
+DOID:0060085	organ system benign neoplasm	oboInOwl:hasDbXref	NCI:C3677	semapv:UnspecifiedMatching
 DOID:0060098	osteoblastoma	oboInOwl:hasDbXref	ICDO:9200/0	semapv:UnspecifiedMatching
 DOID:0060098	osteoblastoma	oboInOwl:hasDbXref	MESH:D018215	semapv:UnspecifiedMatching
 DOID:0060103	central nervous system embryonal tumor	oboInOwl:hasDbXref	ICDO:9473/3	semapv:UnspecifiedMatching
@@ -4842,6 +4843,24 @@ DOID:0060993	bent bone dysplasia syndrome 2	oboInOwl:hasDbXref	OMIM:620076	semap
 DOID:0060993	bent bone dysplasia syndrome 2	skos:exactMatch	OMIM:620076	semapv:UnspecifiedMatching
 DOID:0060994	encephalopathy due to defective mitochondrial and peroxisomal fission 2	oboInOwl:hasDbXref	OMIM:617086	semapv:UnspecifiedMatching
 DOID:0060994	encephalopathy due to defective mitochondrial and peroxisomal fission 2	skos:exactMatch	OMIM:617086	semapv:UnspecifiedMatching
+DOID:0060995	autosomal dominant isolated macrothrombocytopenia 2	oboInOwl:hasDbXref	OMIM:619840	semapv:UnspecifiedMatching
+DOID:0060995	autosomal dominant isolated macrothrombocytopenia 2	skos:exactMatch	OMIM:619840	semapv:UnspecifiedMatching
+DOID:0060996	poor metabolism of thiopurines 2	oboInOwl:hasDbXref	OMIM:616903	semapv:UnspecifiedMatching
+DOID:0060996	poor metabolism of thiopurines 2	skos:exactMatch	OMIM:616903	semapv:UnspecifiedMatching
+DOID:0060997	rhabdoid tumor predisposition syndrome 2	oboInOwl:hasDbXref	OMIM:613325	semapv:UnspecifiedMatching
+DOID:0060997	rhabdoid tumor predisposition syndrome 2	skos:exactMatch	OMIM:613325	semapv:UnspecifiedMatching
+DOID:0060998	striatal degeneration 2	oboInOwl:hasDbXref	OMIM:616922	semapv:UnspecifiedMatching
+DOID:0060998	striatal degeneration 2	skos:exactMatch	OMIM:616922	semapv:UnspecifiedMatching
+DOID:0060999	mitochondrial trifunctional protein deficiency 2	oboInOwl:hasDbXref	OMIM:620300	semapv:UnspecifiedMatching
+DOID:0060999	mitochondrial trifunctional protein deficiency 2	skos:exactMatch	OMIM:620300	semapv:UnspecifiedMatching
+DOID:0061001	glycine encephalopathy 2	oboInOwl:hasDbXref	OMIM:620398	semapv:UnspecifiedMatching
+DOID:0061001	glycine encephalopathy 2	skos:exactMatch	OMIM:620398	semapv:UnspecifiedMatching
+DOID:0061002	congenital amegakaryocytic thrombocytopenia 2	oboInOwl:hasDbXref	OMIM:620481	semapv:UnspecifiedMatching
+DOID:0061002	congenital amegakaryocytic thrombocytopenia 2	skos:exactMatch	OMIM:620481	semapv:UnspecifiedMatching
+DOID:0061003	pancreatic agenesis 1	oboInOwl:hasDbXref	OMIM:260370	semapv:UnspecifiedMatching
+DOID:0061003	pancreatic agenesis 1	skos:exactMatch	OMIM:260370	semapv:UnspecifiedMatching
+DOID:0061004	poor metabolism of thiopurines 1	oboInOwl:hasDbXref	OMIM:610460	semapv:UnspecifiedMatching
+DOID:0061004	poor metabolism of thiopurines 1	skos:exactMatch	OMIM:610460	semapv:UnspecifiedMatching
 DOID:0070000	3-methylglutaconic aciduria type 8	oboInOwl:hasDbXref	OMIM:617248	semapv:UnspecifiedMatching
 DOID:0070000	3-methylglutaconic aciduria type 8	skos:exactMatch	OMIM:617248	semapv:UnspecifiedMatching
 DOID:0070002	3-methylglutaconic aciduria type 9	oboInOwl:hasDbXref	OMIM:617698	semapv:UnspecifiedMatching
@@ -6605,6 +6624,28 @@ DOID:0070614	chromosome 11 partial duplication syndrome	oboInOwl:hasDbXref	UMLS:
 DOID:0070614	chromosome 11 partial duplication syndrome	skos:exactMatch	ORDO:262653	semapv:UnspecifiedMatching
 DOID:0070614	chromosome 11 partial duplication syndrome	skos:exactMatch	SNOMEDCT_US_2020_03_01:726350006	semapv:UnspecifiedMatching
 DOID:0070614	chromosome 11 partial duplication syndrome	skos:exactMatch	UMLS:C4518499	semapv:UnspecifiedMatching
+DOID:0070615	autoinflammation, antibody deficiency, and immune dysregulation syndrome	oboInOwl:hasDbXref	GARD:17486	semapv:UnspecifiedMatching
+DOID:0070615	autoinflammation, antibody deficiency, and immune dysregulation syndrome	oboInOwl:hasDbXref	OMIM:614878	semapv:UnspecifiedMatching
+DOID:0070615	autoinflammation, antibody deficiency, and immune dysregulation syndrome	oboInOwl:hasDbXref	ORDO:324530	semapv:UnspecifiedMatching
+DOID:0070615	autoinflammation, antibody deficiency, and immune dysregulation syndrome	oboInOwl:hasDbXref	UMLS:C3553961	semapv:UnspecifiedMatching
+DOID:0070615	autoinflammation, antibody deficiency, and immune dysregulation syndrome	skos:exactMatch	GARD:17486	semapv:UnspecifiedMatching
+DOID:0070615	autoinflammation, antibody deficiency, and immune dysregulation syndrome	skos:exactMatch	OMIM:614878	semapv:UnspecifiedMatching
+DOID:0070615	autoinflammation, antibody deficiency, and immune dysregulation syndrome	skos:exactMatch	ORDO:324530	semapv:UnspecifiedMatching
+DOID:0070615	autoinflammation, antibody deficiency, and immune dysregulation syndrome	skos:exactMatch	UMLS:C3553961	semapv:UnspecifiedMatching
+DOID:0070616	glycine encephalopathy 1	oboInOwl:hasDbXref	OMIM:605899	semapv:UnspecifiedMatching
+DOID:0070616	glycine encephalopathy 1	skos:exactMatch	OMIM:605899	semapv:UnspecifiedMatching
+DOID:0070617	rhabdoid tumor predisposition syndrome	oboInOwl:hasDbXref	NCI:C93268	semapv:UnspecifiedMatching
+DOID:0070617	rhabdoid tumor predisposition syndrome	oboInOwl:hasDbXref	OMIMPS:609322	semapv:UnspecifiedMatching
+DOID:0070617	rhabdoid tumor predisposition syndrome	oboInOwl:hasDbXref	ORDO:231108	semapv:UnspecifiedMatching
+DOID:0070617	rhabdoid tumor predisposition syndrome	oboInOwl:hasDbXref	UMLS:C2985524	semapv:UnspecifiedMatching
+DOID:0070617	rhabdoid tumor predisposition syndrome	skos:exactMatch	NCI:C93268	semapv:UnspecifiedMatching
+DOID:0070617	rhabdoid tumor predisposition syndrome	skos:exactMatch	OMIMPS:609322	semapv:UnspecifiedMatching
+DOID:0070617	rhabdoid tumor predisposition syndrome	skos:exactMatch	ORDO:231108	semapv:UnspecifiedMatching
+DOID:0070617	rhabdoid tumor predisposition syndrome	skos:exactMatch	UMLS:C2985524	semapv:UnspecifiedMatching
+DOID:0070618	rhabdoid tumor predisposition syndrome 1	oboInOwl:hasDbXref	OMIM:609322	semapv:UnspecifiedMatching
+DOID:0070618	rhabdoid tumor predisposition syndrome 1	skos:exactMatch	OMIM:609322	semapv:UnspecifiedMatching
+DOID:0070619	mitochondrial trifunctional protein deficiency 1	oboInOwl:hasDbXref	OMIM:609015	semapv:UnspecifiedMatching
+DOID:0070619	mitochondrial trifunctional protein deficiency 1	skos:exactMatch	OMIM:609015	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	ICD10CM:M89.9	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	MESH:D001847	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	UMLS:C0005940	semapv:UnspecifiedMatching
@@ -6632,8 +6673,10 @@ DOID:0080028	spondyloepimetaphyseal dysplasia, Strudwick type	oboInOwl:hasDbXref
 DOID:0080028	spondyloepimetaphyseal dysplasia, Strudwick type	skos:exactMatch	OMIM:184250	semapv:UnspecifiedMatching
 DOID:0080029	autosomal recessive spinocerebellar ataxia 16	oboInOwl:hasDbXref	OMIM:615768	semapv:UnspecifiedMatching
 DOID:0080029	autosomal recessive spinocerebellar ataxia 16	skos:exactMatch	OMIM:615768	semapv:UnspecifiedMatching
+DOID:0080030	spondyloepimetaphyseal dysplasia, Missouri type	oboInOwl:hasDbXref	GARD:10618	semapv:UnspecifiedMatching
 DOID:0080030	spondyloepimetaphyseal dysplasia, Missouri type	oboInOwl:hasDbXref	MESH:C566574	semapv:UnspecifiedMatching
 DOID:0080030	spondyloepimetaphyseal dysplasia, Missouri type	oboInOwl:hasDbXref	OMIM:602111	semapv:UnspecifiedMatching
+DOID:0080030	spondyloepimetaphyseal dysplasia, Missouri type	oboInOwl:hasDbXref	ORDO:93356	semapv:UnspecifiedMatching
 DOID:0080030	spondyloepimetaphyseal dysplasia, Missouri type	skos:exactMatch	OMIM:602111	semapv:UnspecifiedMatching
 DOID:0080031	fibrous dysplasia	oboInOwl:hasDbXref	GARD:6444	semapv:UnspecifiedMatching
 DOID:0080031	fibrous dysplasia	oboInOwl:hasDbXref	ICDO:8818/0	semapv:UnspecifiedMatching
@@ -6645,6 +6688,7 @@ DOID:0080032	craniodiaphyseal dysplasia	skos:exactMatch	OMIM:218300	semapv:Unspe
 DOID:0080033	craniometaphyseal dysplasia	oboInOwl:hasDbXref	OMIMPS:123000	semapv:UnspecifiedMatching
 DOID:0080033	craniometaphyseal dysplasia	oboInOwl:hasDbXref	ORDO:1522	semapv:UnspecifiedMatching
 DOID:0080033	craniometaphyseal dysplasia	skos:exactMatch	OMIMPS:123000	semapv:UnspecifiedMatching
+DOID:0080036	SOST-related sclerosing bone dysplasia	oboInOwl:hasDbXref	GARD:4771	semapv:UnspecifiedMatching
 DOID:0080036	SOST-related sclerosing bone dysplasia	oboInOwl:hasDbXref	OMIM:239100	semapv:UnspecifiedMatching
 DOID:0080036	SOST-related sclerosing bone dysplasia	oboInOwl:hasDbXref	ORDO:3152	semapv:UnspecifiedMatching
 DOID:0080036	SOST-related sclerosing bone dysplasia	skos:exactMatch	OMIM:239100	semapv:UnspecifiedMatching
@@ -7017,9 +7061,9 @@ DOID:0080170	normophosphatemic familial tumoral calcinosis	skos:exactMatch	OMIM:
 DOID:0080171	esophageal atresia/tracheoesophageal fistula	oboInOwl:hasDbXref	GARD:7792	semapv:UnspecifiedMatching
 DOID:0080171	esophageal atresia/tracheoesophageal fistula	oboInOwl:hasDbXref	OMIM:189960	semapv:UnspecifiedMatching
 DOID:0080171	esophageal atresia/tracheoesophageal fistula	skos:exactMatch	OMIM:189960	semapv:UnspecifiedMatching
-DOID:0080172	thiopurine S-methyltransferase deficiency	oboInOwl:hasDbXref	MESH:C536512	semapv:UnspecifiedMatching
-DOID:0080172	thiopurine S-methyltransferase deficiency	oboInOwl:hasDbXref	OMIM:610460	semapv:UnspecifiedMatching
-DOID:0080172	thiopurine S-methyltransferase deficiency	skos:exactMatch	OMIM:610460	semapv:UnspecifiedMatching
+DOID:0080172	poor metabolism of thiopurines	oboInOwl:hasDbXref	MESH:C536512	semapv:UnspecifiedMatching
+DOID:0080172	poor metabolism of thiopurines	oboInOwl:hasDbXref	OMIMPS:610460	semapv:UnspecifiedMatching
+DOID:0080172	poor metabolism of thiopurines	skos:exactMatch	OMIMPS:610460	semapv:UnspecifiedMatching
 DOID:0080173	bladder exstrophy-epispadias-cloacal exstrophy complex	oboInOwl:hasDbXref	OMIM:258040	semapv:UnspecifiedMatching
 DOID:0080173	bladder exstrophy-epispadias-cloacal exstrophy complex	oboInOwl:hasDbXref	ORDO:322	semapv:UnspecifiedMatching
 DOID:0080173	bladder exstrophy-epispadias-cloacal exstrophy complex	skos:exactMatch	OMIM:258040	semapv:UnspecifiedMatching
@@ -10080,10 +10124,10 @@ DOID:0090101	lethal congenital glycogen storage disease of heart	oboInOwl:hasDbX
 DOID:0090101	lethal congenital glycogen storage disease of heart	oboInOwl:hasDbXref	OMIM:261740	semapv:UnspecifiedMatching
 DOID:0090101	lethal congenital glycogen storage disease of heart	oboInOwl:hasDbXref	ORDO:439854	semapv:UnspecifiedMatching
 DOID:0090101	lethal congenital glycogen storage disease of heart	skos:exactMatch	OMIM:261740	semapv:UnspecifiedMatching
-DOID:0090102	autosomal dominant macrothrombocytopenia TUBB1-related	oboInOwl:hasDbXref	ICD10CM:D69.4	semapv:UnspecifiedMatching
-DOID:0090102	autosomal dominant macrothrombocytopenia TUBB1-related	oboInOwl:hasDbXref	OMIM:613112	semapv:UnspecifiedMatching
-DOID:0090102	autosomal dominant macrothrombocytopenia TUBB1-related	oboInOwl:hasDbXref	ORDO:140957	semapv:UnspecifiedMatching
-DOID:0090102	autosomal dominant macrothrombocytopenia TUBB1-related	skos:exactMatch	OMIM:613112	semapv:UnspecifiedMatching
+DOID:0090102	autosomal dominant isolated macrothrombocytopenia 1	oboInOwl:hasDbXref	ICD10CM:D69.4	semapv:UnspecifiedMatching
+DOID:0090102	autosomal dominant isolated macrothrombocytopenia 1	oboInOwl:hasDbXref	OMIM:613112	semapv:UnspecifiedMatching
+DOID:0090102	autosomal dominant isolated macrothrombocytopenia 1	oboInOwl:hasDbXref	ORDO:140957	semapv:UnspecifiedMatching
+DOID:0090102	autosomal dominant isolated macrothrombocytopenia 1	skos:exactMatch	OMIM:613112	semapv:UnspecifiedMatching
 DOID:0090103	Huntington's disease-like 1	oboInOwl:hasDbXref	ICD10CM:G10	semapv:UnspecifiedMatching
 DOID:0090103	Huntington's disease-like 1	oboInOwl:hasDbXref	OMIM:603218	semapv:UnspecifiedMatching
 DOID:0090103	Huntington's disease-like 1	oboInOwl:hasDbXref	ORDO:157941	semapv:UnspecifiedMatching
@@ -14377,10 +14421,10 @@ DOID:0111276	sensory ataxic neuropathy, dysarthria, and ophthalmoparesis	skos:ex
 DOID:0111277	mitochondrial trifunctional protein deficiency	oboInOwl:hasDbXref	GARD:3684	semapv:UnspecifiedMatching
 DOID:0111277	mitochondrial trifunctional protein deficiency	oboInOwl:hasDbXref	MESH:C566945	semapv:UnspecifiedMatching
 DOID:0111277	mitochondrial trifunctional protein deficiency	oboInOwl:hasDbXref	NCI:C98991	semapv:UnspecifiedMatching
-DOID:0111277	mitochondrial trifunctional protein deficiency	oboInOwl:hasDbXref	OMIM:609015	semapv:UnspecifiedMatching
+DOID:0111277	mitochondrial trifunctional protein deficiency	oboInOwl:hasDbXref	OMIMPS:609015	semapv:UnspecifiedMatching
 DOID:0111277	mitochondrial trifunctional protein deficiency	oboInOwl:hasDbXref	ORDO:746	semapv:UnspecifiedMatching
 DOID:0111277	mitochondrial trifunctional protein deficiency	oboInOwl:hasDbXref	UMLS:C1969443	semapv:UnspecifiedMatching
-DOID:0111277	mitochondrial trifunctional protein deficiency	skos:exactMatch	OMIM:609015	semapv:UnspecifiedMatching
+DOID:0111277	mitochondrial trifunctional protein deficiency	skos:exactMatch	OMIMPS:609015	semapv:UnspecifiedMatching
 DOID:0111278	histiocytosis-lymphadenopathy plus syndrome	oboInOwl:hasDbXref	GARD:7588	semapv:UnspecifiedMatching
 DOID:0111278	histiocytosis-lymphadenopathy plus syndrome	oboInOwl:hasDbXref	ICDO:9749/3	semapv:UnspecifiedMatching
 DOID:0111278	histiocytosis-lymphadenopathy plus syndrome	oboInOwl:hasDbXref	NCI:C36075	semapv:UnspecifiedMatching
@@ -24864,8 +24908,10 @@ DOID:14686	Axenfeld-Rieger syndrome	oboInOwl:hasDbXref	GARD:5701	semapv:Unspecif
 DOID:14686	Axenfeld-Rieger syndrome	oboInOwl:hasDbXref	ICD10CM:Q13.81	semapv:UnspecifiedMatching
 DOID:14686	Axenfeld-Rieger syndrome	oboInOwl:hasDbXref	MESH:C535679	semapv:UnspecifiedMatching
 DOID:14686	Axenfeld-Rieger syndrome	oboInOwl:hasDbXref	NCI:C131001	semapv:UnspecifiedMatching
+DOID:14686	Axenfeld-Rieger syndrome	oboInOwl:hasDbXref	OMIMPS:180500	semapv:UnspecifiedMatching
 DOID:14686	Axenfeld-Rieger syndrome	oboInOwl:hasDbXref	ORDO:782	semapv:UnspecifiedMatching
 DOID:14686	Axenfeld-Rieger syndrome	oboInOwl:hasDbXref	UMLS:C0265341	semapv:UnspecifiedMatching
+DOID:14686	Axenfeld-Rieger syndrome	skos:exactMatch	OMIMPS:180500	semapv:UnspecifiedMatching
 DOID:14687	diastrophic dysplasia	oboInOwl:hasDbXref	GARD:6275	semapv:UnspecifiedMatching
 DOID:14687	diastrophic dysplasia	oboInOwl:hasDbXref	ICD10CM:Q77.5	semapv:UnspecifiedMatching
 DOID:14687	diastrophic dysplasia	oboInOwl:hasDbXref	MESH:C536170	semapv:UnspecifiedMatching
@@ -26363,10 +26409,8 @@ DOID:2127	brain germinoma	oboInOwl:hasDbXref	NCI:C6284	semapv:UnspecifiedMatchin
 DOID:2127	brain germinoma	oboInOwl:hasDbXref	UMLS:C1332606	semapv:UnspecifiedMatching
 DOID:2129	atypical teratoid rhabdoid tumor	oboInOwl:hasDbXref	ICDO:9508/3	semapv:UnspecifiedMatching
 DOID:2129	atypical teratoid rhabdoid tumor	oboInOwl:hasDbXref	NCI:C6906	semapv:UnspecifiedMatching
-DOID:2129	atypical teratoid rhabdoid tumor	oboInOwl:hasDbXref	OMIM:609322	semapv:UnspecifiedMatching
 DOID:2129	atypical teratoid rhabdoid tumor	oboInOwl:hasDbXref	ORDO:99966	semapv:UnspecifiedMatching
 DOID:2129	atypical teratoid rhabdoid tumor	oboInOwl:hasDbXref	UMLS:C1266184	semapv:UnspecifiedMatching
-DOID:2129	atypical teratoid rhabdoid tumor	skos:exactMatch	OMIM:609322	semapv:UnspecifiedMatching
 DOID:2132	brain sarcoma	oboInOwl:hasDbXref	NCI:C5154	semapv:UnspecifiedMatching
 DOID:2132	brain sarcoma	oboInOwl:hasDbXref	UMLS:C1332607	semapv:UnspecifiedMatching
 DOID:2133	central nervous system sarcoma	oboInOwl:hasDbXref	NCI:C5153	semapv:UnspecifiedMatching
@@ -37660,9 +37704,10 @@ DOID:9268	glycine encephalopathy	oboInOwl:hasDbXref	GARD:7219	semapv:Unspecified
 DOID:9268	glycine encephalopathy	oboInOwl:hasDbXref	ICD10CM:E72.51	semapv:UnspecifiedMatching
 DOID:9268	glycine encephalopathy	oboInOwl:hasDbXref	MESH:D020158	semapv:UnspecifiedMatching
 DOID:9268	glycine encephalopathy	oboInOwl:hasDbXref	NCI:C84937	semapv:UnspecifiedMatching
-DOID:9268	glycine encephalopathy	oboInOwl:hasDbXref	OMIM:605899	semapv:UnspecifiedMatching
+DOID:9268	glycine encephalopathy	oboInOwl:hasDbXref	OMIMPS:605899	semapv:UnspecifiedMatching
+DOID:9268	glycine encephalopathy	oboInOwl:hasDbXref	ORDO:407	semapv:UnspecifiedMatching
 DOID:9268	glycine encephalopathy	oboInOwl:hasDbXref	UMLS:C0751748	semapv:UnspecifiedMatching
-DOID:9268	glycine encephalopathy	skos:exactMatch	OMIM:605899	semapv:UnspecifiedMatching
+DOID:9268	glycine encephalopathy	skos:exactMatch	OMIMPS:605899	semapv:UnspecifiedMatching
 DOID:9269	maple syrup urine disease	oboInOwl:hasDbXref	GARD:3228	semapv:UnspecifiedMatching
 DOID:9269	maple syrup urine disease	oboInOwl:hasDbXref	ICD10CM:E71.0	semapv:UnspecifiedMatching
 DOID:9269	maple syrup urine disease	oboInOwl:hasDbXref	MESH:D008375	semapv:UnspecifiedMatching

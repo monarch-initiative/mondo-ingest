@@ -1,5 +1,6 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
 DOID:0050156	idiopathic pulmonary fibrosis	False	False	False
+DOID:0050457	Sertoli cell-only syndrome	False	False	False
 DOID:0060160	childhood spinal muscular atrophy	False	False	False
 DOID:0060333	mitochondrial complex V (ATP synthase) deficiency nuclear type 4	False	False	False
 DOID:0060854	autosomal recessive pseudohypoaldosteronism type 1	False	False	False
@@ -14,6 +15,15 @@ DOID:0060991	congenital disorder of deglycosylation	False	False	False
 DOID:0060992	bent bone dysplasia syndrome 1	False	False	False
 DOID:0060993	bent bone dysplasia syndrome 2	False	False	False
 DOID:0060994	encephalopathy due to defective mitochondrial and peroxisomal fission 2	False	False	False
+DOID:0060995	autosomal dominant isolated macrothrombocytopenia 2	False	False	False
+DOID:0060996	poor metabolism of thiopurines 2	False	False	False
+DOID:0060997	rhabdoid tumor predisposition syndrome 2	False	False	False
+DOID:0060998	striatal degeneration 2	False	False	False
+DOID:0060999	mitochondrial trifunctional protein deficiency 2	False	False	False
+DOID:0061001	glycine encephalopathy 2	False	False	False
+DOID:0061002	congenital amegakaryocytic thrombocytopenia 2	False	False	False
+DOID:0061003	pancreatic agenesis 1	False	False	False
+DOID:0061004	poor metabolism of thiopurines 1	False	False	False
 DOID:0070564	dialysis disequilibrium syndrome	False	False	False
 DOID:0070600	intellectual disability and myopathy syndrome	False	False	False
 DOID:0070601	autosomal dominant nonsyndromic deafness 37	False	False	False
@@ -30,6 +40,11 @@ DOID:0070611	autosomal dominant nonsyndromic deafness 88	False	False	False
 DOID:0070612	autosomal dominant nonsyndromic deafness 89	False	False	False
 DOID:0070613	familial renal glucosuria	False	False	False
 DOID:0070614	chromosome 11 partial duplication syndrome	False	False	False
+DOID:0070615	autoinflammation, antibody deficiency, and immune dysregulation syndrome	False	False	False
+DOID:0070616	glycine encephalopathy 1	False	False	False
+DOID:0070617	rhabdoid tumor predisposition syndrome	False	False	False
+DOID:0070618	rhabdoid tumor predisposition syndrome 1	False	False	False
+DOID:0070619	mitochondrial trifunctional protein deficiency 1	False	False	False
 DOID:0111368	cholesterol-ester transfer protein deficiency	False	False	False
 DOID:146	papilledema	False	False	False
 DOID:2536	chronic inflammatory demyelinating polyneuritis	False	False	False
@@ -516,7 +531,6 @@ DOID:0110300	obsolete autosomal dominant limb-girdle muscular dystrophy type 1A	
 DOID:0110301	obsolete autosomal dominant limb-girdle muscular dystrophy type 1B	False	True	True
 DOID:0110325	obsolete hypertrophic cardiomyopathy 19	False	True	True
 DOID:0110466	obsolete autosomal recessive nonsyndromic deafness 105	False	True	True
-DOID:0110578	obsolete autosomal dominant nonsyndromic deafness 52	False	True	True
 DOID:0110631	obsolete arthrogryposis due to muscular dystrophy	False	True	True
 DOID:0110638	obsolete congenital muscular dystrophy merosin-positive	False	True	True
 DOID:0110748	obsolete type 1 diabetes mellitus 9	False	True	True
@@ -2789,7 +2803,6 @@ DOID:0050452	mevalonic aciduria	True	False	False
 DOID:0050453	lissencephaly	True	False	False
 DOID:0050454	periventricular nodular heterotopia	True	False	False
 DOID:0050456	Buruli ulcer disease	True	False	False
-DOID:0050457	Sertoli cell-only syndrome	True	False	False
 DOID:0050458	juvenile myelomonocytic leukemia	True	False	False
 DOID:0050459	hyperphosphatemia	True	False	False
 DOID:0050460	Wolf-Hirschhorn syndrome	True	False	False
@@ -3147,7 +3160,7 @@ DOID:0050871	fibroma	True	False	False
 DOID:0050872	large cell neuroendocrine carcinoma	True	False	False
 DOID:0050873	follicular lymphoma	True	False	False
 DOID:0050876	Caroli disease	True	False	False
-DOID:0050877	pancreatic agenesis 1	True	False	False
+DOID:0050877	pancreatic agenesis	True	False	False
 DOID:0050879	fragile X-associated tremor/ataxia syndrome	True	False	False
 DOID:0050880	Koolen de Vries syndrome	True	False	False
 DOID:0050881	inclusion body myopathy with Paget disease of bone and frontotemporal dementia	True	False	False
@@ -4844,7 +4857,7 @@ DOID:0080167	myeloid and lymphoid neoplasms associated with FGFR1 abnormalities	
 DOID:0080169	tricuspid atresia	True	False	False
 DOID:0080170	normophosphatemic familial tumoral calcinosis	True	False	False
 DOID:0080171	esophageal atresia/tracheoesophageal fistula	True	False	False
-DOID:0080172	thiopurine S-methyltransferase deficiency	True	False	False
+DOID:0080172	poor metabolism of thiopurines	True	False	False
 DOID:0080173	bladder exstrophy-epispadias-cloacal exstrophy complex	True	False	False
 DOID:0080174	bladder exstrophy	True	False	False
 DOID:0080175	cloacal exstrophy	True	False	False
@@ -6161,7 +6174,7 @@ DOID:0090093	hypogonadotropic hypogonadism 21 with or without anosmia	True	False
 DOID:0090094	hypogonadotropic hypogonadism 1 with or without anosmia	True	False	False
 DOID:0090100	ocular albinism with sensorineural deafness	True	False	False
 DOID:0090101	lethal congenital glycogen storage disease of heart	True	False	False
-DOID:0090102	autosomal dominant macrothrombocytopenia TUBB1-related	True	False	False
+DOID:0090102	autosomal dominant isolated macrothrombocytopenia 1	True	False	False
 DOID:0090103	Huntington's disease-like 1	True	False	False
 DOID:0090104	Huntington's disease-like 2	True	False	False
 DOID:0090105	autosomal recessive hypercholesterolemia	True	False	False
@@ -14151,6 +14164,7 @@ DOID:9415	allergic asthma	True	True	False
 DOID:0050068	obsolete pestis minor	True	True	True
 DOID:0050867	obsolete Jensen syndrome	True	True	True
 DOID:0110302	obsolete autosomal dominant limb-girdle muscular dystrophy type 1C	True	True	True
+DOID:0110578	obsolete autosomal dominant nonsyndromic deafness 52	True	True	True
 DOID:10919	obsolete transsexualism	True	True	True
 DOID:1634	obsolete breast papillomatosis	True	True	True
 DOID:5209	obsolete benign struma ovarii	True	True	True
