@@ -2,15 +2,17 @@
 ## 
 ## If you need to customize your Makefile, make changes here rather than in the main Makefile
 #
-# TODO's
-#  TODO #1. Several $(COMPONENTSDIR/*.owl goals have unnecessary operations: https://github.com/monarch-initiative/mondo-ingest/pull/299#discussion_r1187182707
+# todo's
+#  todo #1. Several $(COMPONENTSDIR/*.owl goals have unnecessary operations: https://github.com/monarch-initiative/mondo-ingest/pull/299#discussion_r1187182707
 #   - The line that references config/remove.txt looks like it only needs to be for OMIM
 #   - omimps and hgnc_id SPARQL updates are probably just for OMIM as well
+#  todo #2: $(COMPONENTSDIR)/%.db's vs mondo-ingest.db. We're using both, but it may be possible we only need to use one. I feel inclined towards the former, but the latter should result in faster builds.
 
 ####################################
 ### Standard constants #############
 ####################################
 MAPPINGSDIR=../mappings
+DOCS_DIR=../../docs
 SKIP_HUGE=false
 
 ####################################
@@ -18,7 +20,7 @@ SKIP_HUGE=false
 ####################################
 .PHONY: pip-%
 pip-%:
-	 python3 -m pip install --upgrade $*
+	 python3 -m pip install --upgrade $* --break-system-packages
 
 .PHONY: dependencies
 dependencies: pip-pip pip-setuptools pip-oaklib pip-sssom pip-semsql
@@ -70,6 +72,8 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-dow
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/fix_illegal_punning_omim.ru \
+			--update ../sparql/exact_syn_from_label.ru \
+			--update ../sparql/convert-OMO_0003000-to-MONDO_ABBREVIATION.ru \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
 
 # todo: See #1 at top of file
@@ -83,6 +87,7 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 			--update ../sparql/fix_complex_reification_ordo.ru \
 			--update ../sparql/fix_xref_prefixes.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
+			--update ../sparql/exact_syn_from_label.ru \
 			--update ../sparql/ordo-construct-subclass-from-part-of.ru \
 			--update ../sparql/ordo-construct-subsets.ru \
 			--update ../sparql/ordo-construct-d2g.ru \
@@ -94,8 +99,13 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-download-ncit.owl
 	if [ $(SKIP_HUGE) = false ] && [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
-		query --update ../sparql/rm_xref_by_prefix.ru \
+		query \
+			--update ../sparql/rm_xref_by_prefix.ru \
+			--update ../sparql/exact_syn_from_label.ru \
 		remove -T $(TMPDIR)/ncit_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+			--drop-axiom-annotations NCIT:P378 \
+			--drop-axiom-annotations NCIT:P383 \
+			--drop-axiom-annotations NCIT:P384 \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		remove --term "http://purl.obolibrary.org/obo/NCIT_C179199" --axioms "equivalent" \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ncit.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ncit.owl -o $@; fi
@@ -111,6 +121,7 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-dow
 			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/rm_xref_by_prefix.ru \
 			--update ../sparql/fix_make_omim_exact.ru \
+			--update ../sparql/exact_syn_from_label.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/doid.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/doid.owl -o $@; fi
 
@@ -135,6 +146,7 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | compone
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
+			--update ../sparql/exact_syn_from_label.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
 
@@ -147,6 +159,7 @@ $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | compo
 		query \
 			--update ../sparql/fix_omimps.ru \
 			--update ../sparql/fix-labels-with-brackets.ru \
+			--update ../sparql/exact_syn_from_label.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
 
@@ -154,10 +167,11 @@ $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signatu
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd11foundation.owl.owl --select imports \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		rename --mappings config/icd11foundation-property-map.sssom.tsv \
-		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" --trim false \
+		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" \
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select individuals \
 		query \
 			--update ../sparql/fix-labels-with-brackets.ru \
+			--update ../sparql/exact_syn_from_label.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd11foundation.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd11foundation.owl -o $@; fi
 
@@ -213,13 +227,16 @@ mappings: $(ALL_MAPPINGS)
 mapping-progress-report: unmapped-terms-tables unmapped-terms-docs
 
 .PHONY: unmapped-terms-docs
-unmapped-terms-docs: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
+unmapped-terms-docs: docs/reports/unmapped.md
+
+# todo: ideally `unmapped_docs.py` would also take file path(s) as input args. Currently, running `unmapped_%.md` for any source will trigger this for all sources.
+docs/reports/unmapped.md docs/reports/unmapped_%.md: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
 	python3 $(SCRIPTSDIR)/unmapped_docs.py
 
 .PHONY: unmapped-terms-tables
 unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_status.tsv)
 
-$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt $(TMPDIR)/mondo.sssom.tsv metadata/%.yml $(COMPONENTSDIR)/%.db
+$(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt metadata/%.yml $(COMPONENTSDIR)/%.db $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
 	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
@@ -257,7 +274,8 @@ $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.templa
 $(REPORTDIR)/%_exclusion_reasons.ttl: component-download-%.owl $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
 	$(ROBOT) template --input $(TMPDIR)/component-download-$*.owl.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
 
-$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: $(TMPDIR)/mondo.sssom.tsv tmp/mondo.owl metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv
+# todo: Should this also be a prereq $(TMPDIR)/component-download-$*.owl.owl? Perhaps worried about refreshing when not need to? But then we'd just use COMP=false if so?
+$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv $(TMPDIR)/mondo.sssom.tsv
 	python3 $(RELEASEDIR)/src/analysis/problematic_exclusions.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
@@ -268,7 +286,7 @@ $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_i
 
 # Exclusions: all artefacts for single ontology
 .PHONY: exclusions-%
-exclusions-%: reports/%_exclusion_reasons.ttl reports/%_excluded_terms_in_mondo_xrefs.tsv  $(REPORTDIR)/%_term_exclusions.txt 
+exclusions-%: reports/%_exclusion_reasons.ttl reports/%_excluded_terms_in_mondo_xrefs.tsv  $(REPORTDIR)/%_term_exclusions.txt
 	@echo "$@ completed"
 
 exclusions-all: $(foreach n,$(ALL_COMPONENT_IDS), exclusions-$(n))
@@ -297,15 +315,15 @@ excluded-xrefs-in-mondo: $(REPORTDIR)/excluded_terms_in_mondo_xrefs.tsv
 ###################
 SOURCE_DOC_TEMPLATE=config/source_documentation.md.j2
 SOURCE_METRICS_TEMPLATE=config/source_metrics.md.j2
-ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/sources/$(n).md)
-ALL_METRICS_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), ../../docs/metrics/$(n).md)
+ALL_SOURCE_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), $(DOCS_DIR)/sources/$(n).md)
+ALL_METRICS_DOCS=$(foreach n,$(ALL_COMPONENT_IDS), $(DOCS_DIR)/metrics/$(n).md)
 ALL_DOCS=$(ALL_SOURCE_DOCS) $(ALL_METRICS_DOCS)
 
-../../docs/sources/ ../../docs/metrics/ $(MAPPINGSDIR)/:
+$(DOCS_DIR)/sources/ $(DOCS_DIR)/metrics/ $(MAPPINGSDIR)/:
 	mkdir -p $@
 
-../../docs/sources/%.md: metadata/%.yml | ../../docs/sources/
-	j2 "$(SOURCE_DOC_TEMPLATE)" $< > $@
+$(DOCS_DIR)/sources/%.md: metadata/%.yml | $(DOCS_DIR)/sources/
+	jinjanate "$(SOURCE_DOC_TEMPLATE)" $< > $@
 
 PREFIXES_METRICS=--prefix 'OMIM: http://omim.org/entry/' \
 	--prefix 'CHR: http://purl.obolibrary.org/obo/CHR_' \
@@ -317,15 +335,11 @@ metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
 	$(ROBOT) measure $(PREFIXES_METRICS) -i $(COMPONENTSDIR)/$*.owl --format json --metrics extended --output $@
 .PRECIOUS: metadata/%-metrics.json
 
-../../docs/metrics/%.md: metadata/%-metrics.json | ../../docs/metrics/
-	j2 "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
-
-.PHONY: j2
-j2:
-	pip install j2cli j2cli[yaml]
+$(DOCS_DIR)/metrics/%.md: metadata/%-metrics.json | $(DOCS_DIR)/metrics/
+	jinjanate "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
 
 .PHONY: documentation
-documentation: j2 $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs slurp-docs
+documentation: $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs slurp-docs
 
 
 .PHONY: build-mondo-ingest
@@ -354,19 +368,36 @@ deploy-mondo-ingest:
 	ls -alt $(DEPLOY_ASSETS_MONDO_INGEST)
 	gh release create $(GHVERSION) --notes "TBD." --title "$(GHVERSION)" --draft $(DEPLOY_ASSETS_MONDO_INGEST)
 
-USE_MONDO_RELEASE=false
 
-tmp/mondo_repo_built:
-	if [ $(USE_MONDO_RELEASE) = true ]; then wget http://purl.obolibrary.org/obo/mondo.owl -O $@; else cd $(TMPDIR) &&\
-		rm -rf ./mondo/ &&\
-		git clone --depth 1 https://github.com/monarch-initiative/mondo &&\
-		cd mondo/src/ontology &&\
-		make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
-		cd ../../../../ &&\
-		touch $@; fi
+# make function, not target!
+# Builds tmp/mondo/ and rebuilds mondo.owl, mondo-edit.owl and mondo.sssom.tsv, and stores hash of latest commit of mondo repo main branch in tmp/mondo_repo_built
+define build_mondo
+	cd $(TMPDIR) && \
+	rm -rf ./mondo/ && \
+	git clone --depth 1 https://github.com/monarch-initiative/mondo && \
+	cd mondo/src/ontology && \
+	make mondo.owl mappings -B MIR=false IMP=false MIR=false &&\
+	latest_hash=$$(git rev-parse origin/master) && \
+	echo "$$latest_hash" > $(1)
+endef
 
-$(TMPDIR)/mondo.sssom.tsv: $(TMPDIR)/mondo_repo_built
-	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
+SKIP_REFRESH=false
+
+$(TMPDIR)/mondo_repo_built: .FORCE
+	@if [ ! -f $@ ]; then \
+		$(call build_mondo, $@); \
+	elif [ "$(SKIP_REFRESH)" != "true" ]; then \
+		current_hash=$$(cat $@); \
+		cd $(TMPDIR)/mondo; \
+		git fetch origin; \
+		latest_hash=$$(git rev-parse origin/master); \
+		if [ ! "$$current_hash" = "$$latest_hash" ]; then \
+			cd .. && mv mondo mondo-bak && mv mondo_repo_built mondo_repo_built-bak; \
+			cd .. && $(call build_mondo, $@); \
+			rm -rf $(TMPDIR)/mondo-bak $(TMPDIR)/mondo_repo_built-bak; \
+		fi; \
+	fi
+
 
 $(TMPDIR)/mondo.owl: $(TMPDIR)/mondo_repo_built
 	cp $(TMPDIR)/mondo/src/ontology/mondo.owl $@
@@ -377,7 +408,10 @@ $(TMPDIR)/mondo-edit.owl: $(TMPDIR)/mondo_repo_built
 $(TMPDIR)/mondo-edit-mondo-owl-merged.owl: $(TMPDIR)/mondo-edit.owl $(TMPDIR)/mondo.owl
 	$(ROBOT) merge -i $(TMPDIR)/mondo-edit.owl -i $(TMPDIR)/mondo.owl convert -o $@
 
-reports/mirror_signature-mondo.tsv: tmp/mondo.owl
+ $(TMPDIR)/mondo.sssom.tsv: $(TMPDIR)/mondo_repo_built
+	cp $(TMPDIR)/mondo/src/ontology/mappings/mondo.sssom.tsv $@
+
+reports/mirror_signature-mondo.tsv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
 	mv $@-temp $@
@@ -409,8 +443,8 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 # - Doeesn't include: broad mappings
 # - Comes from make tmp/mondo.owl
 
-tmp/mondo.sssom.ttl: tmp/mondo.sssom.tsv
-	sssom convert $< -O rdf -o $@
+$(TMPDIR)/mondo.sssom.ttl: $(TMPDIR)/mondo.sssom.tsv
+	sssom convert $(TMPDIR)/mondo.sssom.tsv -O rdf -o $@
 
 ALL_EXCLUSION_FILES= $(patsubst %, $(REPORTDIR)/%_term_exclusions.txt, $(ALL_COMPONENT_IDS))
 ALL_EXCLUSION_FILES_AS_PARAM= $(patsubst %, --exclusion $(REPORTDIR)/%_term_exclusions.txt, $(ALL_COMPONENT_IDS))
@@ -423,19 +457,19 @@ $(MAPPINGSDIR)/rejected-mappings.tsv:
 $(MAPPINGSDIR)/rejected-mappings-sssom.tsv: $(MAPPINGSDIR)/rejected-mappings.tsv
 	sssom parse $< -m metadata/mondo.sssom.config.yml --no-strict-clean-prefixes -o $@
 
-tmp/mondo-ingest.owl: mondo-ingest.owl
+$(TMPDIR)/mondo-ingest.owl: mondo-ingest.owl
 	cp $< $@
 
 # Merge Mondo, precise mappings and mondo-ingest into one coherent whole for the purpose of querying.
-tmp/merged.owl: tmp/mondo.owl mondo-ingest.owl tmp/mondo.sssom.ttl
-	$(ROBOT) merge -i tmp/mondo.owl -i mondo-ingest.owl -i tmp/mondo.sssom.ttl --add-prefixes config/context.json \
+$(TMPDIR)/merged.owl: mondo-ingest.owl $(TMPDIR)/mondo.sssom.ttl $(TMPDIR)/mondo.owl
+	$(ROBOT) merge -i $(TMPDIR)/mondo.owl -i mondo-ingest.owl -i $(TMPDIR)/mondo.sssom.ttl --add-prefixes config/context.json \
 			 remove --term "http://purl.obolibrary.org/obo/mondo#ABBREVIATION" --preserve-structure false -o $@
 
-$(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py tmp/merged.db $(MAPPINGSDIR)/rejected-mappings.tsv
+# todo: should probably be a multi-target goal, including: $(MAPPINGSDIR)/mondo-sources-all-lexical-2.sssom.tsv
+$(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv: $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py $(TMPDIR)/merged.db $(MAPPINGSDIR)/rejected-mappings.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical.sssom.tsv
 	rm -f $(MAPPINGSDIR)/mondo-sources-all-lexical-2.sssom.tsv
-	$(MAKE) pip-bioregistry
-	python $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py run tmp/merged.db \
+	python $(SCRIPTSDIR)/match-mondo-sources-all-lexical.py run $(TMPDIR)/merged.db \
 		-c metadata/mondo.sssom.config.yml \
 		-r config/mondo-match-rules.yaml \
 		--rejects $(MAPPINGSDIR)/rejected-mappings.tsv \
@@ -476,7 +510,7 @@ slurp/:
 	mkdir -p $@
 
 # min-id: the next available Mondo ID
-slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(TMPDIR)/mondo.sssom.tsv $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv | slurp/
+slurp/%.tsv: $(COMPONENTSDIR)/%.owl $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/mirror_signature-mondo.tsv $(TMPDIR)/mondo.sssom.tsv | slurp/
 	python3 $(SCRIPTSDIR)/migrate.py \
 	--ontology-path $(COMPONENTSDIR)/$*.owl \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
@@ -519,15 +553,16 @@ slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
 slurp-modifications: slurp-modifications-ordo
 
 .PHONY: slurp-modifications-ordo
-slurp-modifications-ordo: slurp/ordo.tsv tmp/ordo-subsets.tsv
+slurp-modifications-ordo: slurp/ordo.tsv $(TMPDIR)/ordo-subsets.tsv
 	python3 $(SCRIPTSDIR)/migrate.py --ordo-mods
 
 #############################
 ###### Synchronization ######
 #############################
 .PHONY: sync
-sync: sync-subclassof
+sync: sync-subclassof sync-synonyms
 
+# Synchronization: SubclassOf
 .PHONY: sync-subclassof
 sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
 
@@ -535,18 +570,18 @@ sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-su
 .PHONY: sync-subclassof-%
 sync-subclassof-%: $(REPORTDIR)/%.subclass.confirmed.robot.tsv
 
-$(TMPDIR)/sync-subClassOf.added.self-parentage.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n).subclass.self-parentage.tsv) tmp/mondo.sssom.tsv
+$(TMPDIR)/sync-subClassOf.added.self-parentage.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n).subclass.self-parentage.tsv) $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof_collate_self_parentage.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 
 # Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
-$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.direct-in-mondo-only.tsv) tmp/mondo.db
+$(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.direct-in-mondo-only.tsv) $(TMPDIR)/mondo.db
 	python3 $(SCRIPTSDIR)/sync_subclassof_collate_direct_in_mondo_only.py --outpath $@
 
 $(REPORTDIR)/sync-subClassOf.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.subclass.confirmed.robot.tsv > $@
 
-$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: tmp/mondo-ingest.db tmp/mondo-edit-mondo-owl-merged.db tmp/mondo.sssom.tsv
+$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: $(TMPDIR)/mondo-ingest.db $(TMPDIR)/mondo-edit-mondo-owl-merged.db $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof.py \
 	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
 	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
@@ -558,47 +593,152 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml
 
+# Synchronization: Synonyms
+SYN_SYNC_DIR=$(REPORTDIR)/sync-synonym
+$(SYN_SYNC_DIR):
+	mkdir -p $@
+
+.PHONY: sync-synonyms
+sync-synonyms: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv
+
+tmp/mondo-synonyms-scope-type-xref.tsv: $(TMPDIR)/mondo.owl
+	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
+
+tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
+	$(ROBOT) query -i $(COMPONENTSDIR)/$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
+
+../../tests/input/sync_synonym/%-synonyms-scope-type-xref.tsv:
+	$(ROBOT) query -i ../../tests/input/sync_synonym/test_$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
+
+# todo: we may remove this output later output for analysis during development; at the end, remove it and its usages
+INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
+$(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
+	@head -n 2 $(firstword $(INPUT_FILES)) > $@
+	@for file in $(INPUT_FILES); do \
+		tail -n +3 $$file >> $@; \
+	done
+
+$(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.added.robot.tsv > $@
+
+$(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.confirmed.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.confirmed.robot.tsv > $@
+
+$(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.updated.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.updated.robot.tsv > $@
+
+$(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(SYN_SYNC_DIR)
+	python3 $(SCRIPTSDIR)/sync_synonym.py \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--ontology-db-path $(COMPONENTSDIR)/$*.db \
+	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
+	--mondo-exclusion-configs config/mondo-exclusion-configs.yml \
+	--onto-synonym-types-path tmp/$*-synonyms-scope-type-xref.tsv \
+	--onto-config-path metadata/$*.yml \
+	--outpath-added $(SYN_SYNC_DIR)/$*.synonyms.added.robot.tsv \
+	--outpath-confirmed $(SYN_SYNC_DIR)/$*.synonyms.confirmed.robot.tsv \
+	--outpath-updated $(SYN_SYNC_DIR)/$*.synonyms.updated.robot.tsv
+
 ##################################
 ## Externally managed content ####
 ##################################
 
 EXTERNAL_CONTENT_DIR=external
 
-$(TMPDIR)/nord.tsv:
-	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
+EXTERNAL_FILES = \
+	mondo-clingen \
+	mondo-efo \
+	mondo-medgen \
+	mondo-omim-genes \
+	mondo-otar-subset \
+	nando-mappings \
+	gard \
+	nord \
+	ordo-subsets
+
+# The following target simulates the EMC pipeline. It runs it in exactly the same way
+# as it would be run in the context of the Mondo repo. This way, we can test Mondo 
+# in exactly the same state as it would look like when the EMC pipeline was run properly.
+# In particular, this allows us to use QC tests that are reliant on the various pre- and 
+# postprocessing steps needed, like Animal QC (which relies on the rare subset pipeline,
+# which is SPARQL postprocessing based).
+
+$(TMPDIR)/mondo-with-simulated-emc-run.owl: $(TMPDIR)/mondo_repo_built $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl)
+	mkdir -p $(TMPDIR)/mondo/src/ontology/tmp/external/
+	$(foreach n,$(EXTERNAL_FILES), cp -f $(EXTERNAL_CONTENT_DIR)/$(n).robot.owl $(TMPDIR)/mondo/src/ontology/tmp/external/processed-$(n).robot.owl;) \
+	cd $(TMPDIR)/mondo/src/ontology && \
+	touch mondo-edit.owl && \
+	cp mondo-edit.owl mondo-edit.owl.bak && \
+	cp mondo-edit.obo mondo-edit.obo.bak && \
+	make update-external-content-incl-rare -B MIR=false IMP=false MIR=false DOWNLOAD_EXTERNAL=false &&\
+	make mondo-edit.owl MIR=false IMP=false MIR=false
+	cp $(TMPDIR)/mondo/src/ontology/mondo-edit.owl $@
+	mv $(TMPDIR)/mondo/src/ontology/mondo-edit.owl.bak $(TMPDIR)/mondo/src/ontology/mondo-edit.owl
+	mv $(TMPDIR)/mondo/src/ontology/mondo-edit.obo.bak $(TMPDIR)/mondo/src/ontology/mondo-edit.obo
+
+$(TMPDIR)/mondo-incl-robot-report.tsv: $(TMPDIR)/mondo-with-simulated-emc-run.owl config/robot_report_external_content.txt
+	$(ROBOT) report -i $(TMPDIR)/mondo-with-simulated-emc-run.owl --profile config/robot_report_external_content.txt --base-iri "http://purl.obolibrary.org/obo/MONDO_" --fail-on None -o $@
+
+$(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv $(SCRIPTSDIR)/post_process_externally_managed_content.py $(TMPDIR)/mondo-incl-robot-report.tsv 
+	python $(SCRIPTSDIR)/post_process_externally_managed_content.py --emc-template-tsv $(EXTERNAL_CONTENT_DIR)/$*.robot.tsv --robot-report $(TMPDIR)/mondo-incl-robot-report.tsv --output $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/processed-%.robot.tsv
+
+.PHONY: update-externally-managed-content
+update-externally-managed-content: $(foreach n,$(EXTERNAL_FILES), $(EXTERNAL_CONTENT_DIR)/processed-$(n).robot.owl)
+	@echo "Externally managed content updated."
 
 $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 	$(ROBOT) template \
 		--template $< \
 		--prefix "orcid: https://orcid.org/" \
+		--input $(IMPORTDIR)/ro_import.owl \
 	 	annotate \
 				--ontology-iri $(URIBASE)/mondo/external/nord.robot.owl \
 				--version-iri $(URIBASE)/mondo/external/$(TODAY)/nord.robot.owl \
 				-o $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/%.robot.owl
 
+###### GARD #########
+
+# Managed here: https://docs.google.com/spreadsheets/d/1W2wDcnU4Nw0OApe3AvHtXSaOlA4RtmG5/edit?gid=1163320745#gid=1163320745
+
+$(EXTERNAL_CONTENT_DIR)/gard.robot.tsv:
+	wget "https://docs.google.com/spreadsheets/d/1W2wDcnU4Nw0OApe3AvHtXSaOlA4RtmG5/pub?gid=1163320745&single=true&output=tsv" -O $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/gard.robot.tsv
+
+###### NORD #########
+
+$(TMPDIR)/nord.tsv:
+	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
+
 $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/add-robot-template-header.py $^ > $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv
 
-.PHONY: external-content-nord
-external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
+###### ORDO #########
 
-tmp/ordo-subsets.tsv:
+$(TMPDIR)/ordo-subsets.tsv:
 	$(MAKE) component-download-ordo.owl
 	$(ROBOT) query -i $(TMPDIR)/component-download-ordo.owl.owl --query ../sparql/select-ordo-subsets.sparql $@
 
-$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: tmp/ordo-subsets.tsv tmp/mondo.sssom.tsv
+$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: $(TMPDIR)/ordo-subsets.tsv $(TMPDIR)/mondo.sssom.tsv
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
 	python3 $(SCRIPTSDIR)/ordo_subsets.py \
-	--mondo-mappings-path tmp/mondo.sssom.tsv \
-	--class-subsets-tsv-path tmp/ordo-subsets.tsv \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--class-subsets-tsv-path $(TMPDIR)/ordo-subsets.tsv \
 	--onto-config-path metadata/ordo.yml \
 	--outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
 
-.PHONY: external-content-ordo
-external-content-ordo: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.owl $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
+###### OMIM #########
+
+$(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv:
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
+	wget "https://github.com/monarch-initiative/omim/releases/latest/download/mondo-omim-genes.robot.tsv" -O $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv
+
+###### NanDO #########
 
 $(MAPPINGSDIR)/mondo-nando.sssom.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
 	sssom invert $(MAPPINGSDIR)/nando-mondo.sssom.tsv --no-merge-inverted -o $@
@@ -609,11 +749,27 @@ $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sss
 	python ../scripts/sssom_to_robot_template.py --inpath $< --outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
 
-.PHONY: external-content-nord external-content-nando
-external-content-nord: $(EXTERNAL_CONTENT_DIR)/nord.robot.owl
-external-content-nando: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.owl
+###### OTAR / EFO #########
 
-update-externally-managed-content: external-content-nord external-content-nando external-content-ordo
+$(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.tsv:
+	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-efo.robot.tsv" -O $@
+
+$(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv:
+	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-otar-subset.robot.tsv" -O $@
+
+###### MedGen #########
+
+$(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv:
+	wget "https://github.com/monarch-initiative/medgen/releases/latest/download/medgen-xrefs.robot.template.tsv" -O $@
+
+###### ClinGen #########
+
+# Managed in Google Sheets:
+# https://docs.google.com/spreadsheets/d/1JAgySABpRkmXl-8lu5Yrxd9yjTGNbH8aoDcMlHqpssQ/edit?gid=637121472#gid=637121472
+
+$(EXTERNAL_CONTENT_DIR)/mondo-clingen.robot.tsv:
+	wget "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiYDV1n1nDuJOgnlFx6DsYGyIGlbgI1HeDzI740OgmOKYy2RCCyBqLHiBh-IMadYXjVglsxDPypArh/pub?gid=637121472&single=true&output=tsv" -O $@
+
 
 #############################
 ######### Analysis ##########
@@ -622,17 +778,19 @@ update-externally-managed-content: external-content-nord external-content-nando 
 mapped-deprecated-terms: mapped-deprecated-terms-docs
 
 .PHONY: mapped-deprecated-terms-docs
-mapped-deprecated-terms-docs: ../../docs/reports/mapped_deprecated.md
+mapped-deprecated-terms-docs: $(DOCS_DIR)/reports/mapped_deprecated.md
 
-../../docs/reports/mapped_deprecated.md: mapped-deprecated-terms-artefacts
+# todo: ideally `deprecated_in_mondo.py` would also take file path(s) as input args. Currently, running `mapped_deprecated_%.md` for any source will trigger this for all sources.
+$(DOCS_DIR)/reports/mapped_deprecated.md $(DOCS_DIR)/reports/mapped_deprecated_%.md: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
+#$(DOCS_DIR)/reports/mapped_deprecated.md $(foreach n,$(ALL_COMPONENT_IDS), $(DOCS_DIR)/reports/mapped_deprecated_$(n).md): $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
 	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py --docs
 
 .PHONY: mapped-deprecated-terms-artefacts
 mapped-deprecated-terms-artefacts: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
 
-$(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mapping_status.tsv tmp/mondo.sssom.tsv
+$(REPORTDIR)/%_mapped_deprecated_terms.robot.template.tsv: $(REPORTDIR)/%_mapping_status.tsv $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py \
-	--mondo-mappings-path tmp/mondo.sssom.tsv \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--mapping-status-path $(REPORTDIR)/$*_mapping_status.tsv \
 	--outpath $@
 
@@ -653,7 +811,7 @@ update-jinja-sparql-queries:
 ########### Ad hoc ##########
 #############################
 $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv: ../sparql/mondo-ordo-unsupported-subclass.sparql
-	$(ROBOT) query -i tmp/merged.owl --query $< $@
+	$(ROBOT) query -i $(TMPDIR)/merged.owl --query $< $@
 
 .PHONY: mondo-ordo-subclass
 mondo-ordo-subclass: $(REPORTDIR)/mondo_ordo_unsupported_subclass.tsv
@@ -668,6 +826,9 @@ help:
 	@echo "----------------------------------------"
 	@echo "	Command reference: mondo-ingest"
 	@echo "----------------------------------------"
+	# Common dependencies
+	@echo "refresh-mondo-clone"
+	@echo "Triggers a refresh of tmp/mondo/ and a rebuild of mondo.owl and mondo.sssom.tsv, only if mondo repo main branch has new commits\n"
 	# Slurp / migrate
 	@echo "slurp/%.tsv and slurp-%"
 	@echo "For a given ontology, determine all slurpable / migratable terms. That is, terms that are candidates for integration into Mondo.\n"
@@ -746,6 +907,23 @@ help:
 	@echo "For all subclass relationships in Mondo, shows which sources do not have it and whether no source has it. Combination of all --outpath-direct-in-mondo-only outputs for all sources, using those as inputs, and then deletes them after.\n"
 	@echo "reports/sync-subClassOf.confirmed.tsv"
 	@echo "For all subclass relationships in Mondo, by source, a robot template containing showing what is in Mondo and are confirmed to also exist in the source. Combination of all --outpath-confirmed outputs for all sources.\n"
+	# - Synchronization: synonyms
+	@echo "sync-synonyms"
+	@echo "Runs 'sync-synonyms' part of synchronization pipeline, creating outputs for all sources for each of the 4 cases - 'added', 'confirmed', 'updated', and 'deleted'.\n"
+	@echo "reports/%.subclass.added.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain synonyms that aren't yet integrated into Mondo for all mapped source terms.\n"
+	@echo "reports/%.subclass.confirmed.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain synonym confirmations; combination of synonym scope predicate and synonym string exists in both source and Mondo for a given mapping.\n"
+	@echo "reports/%.subclass.deleted.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain synonym deletions; exists in Mondo but not in source(s) for a given mapping.\n"
+	@echo "reports/%.subclass.updated.robot.tsv"
+	@echo "ROBOT template TSV to create which will contain updates to synonym scope predicate; cases where the synonym exists in Mondo and on the mapped source term, but the scope predicate is different.\n"
+	@echo "reports/sync-synonyms.added.tsv"
+	@echo "Combination of all 'added' synonym outputs for all sources.\n"
+	@echo "reports/sync-synonyms.confirmed.tsv"
+	@echo "Combination of all 'confirmed' synonym outputs for all sources.\n"
+	@echo "reports/sync-synonyms.updated.tsv"
+	@echo "Combination of all 'updated' synonym outputs for all sources.\n"
 	# - Refresh externally managed content
 	@echo "update-externally-managed-content"
 	@echo "Downloads and processes all externally managed content like cross references, subsets and labels, including NORD and GARD.\n"

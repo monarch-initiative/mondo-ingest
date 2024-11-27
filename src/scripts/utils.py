@@ -21,6 +21,7 @@ from oaklib.types import CURIE, URI
 from pandas.errors import EmptyDataError
 
 
+# todo: move these to a new config.py
 PREFIX = str
 PREFIX_MAP = Dict[PREFIX, URI]
 TRIPLE = RELATIONSHIP

@@ -13,6 +13,7 @@ semantic.cache/
 *.tmp.owl
 *.tmp.json
 *.db
+!/tests/input/**/*.db
 .vscode/*
 
 # - static
@@ -41,15 +42,6 @@ src/mappings/mondo-sources-all-lexical-2.sssom.tsv
 
 # src/ontology/
 src/ontology/.template.db
-src/ontology/mirror
-src/ontology/mirror/*
-src/ontology/reports/*.ttl
-!src/ontology/reports/README.md
-!src/ontology/reports/*excluded_terms_in_mondo_xrefs.tsv
-!src/ontology/reports/*exclusion_reasons.robot.template.tsv
-!src/ontology/reports/*excluded_terms.txt
-src/ontology/reports/mondo-ingest-edit.owl-obo-report.tsv
-
 src/ontology/mondo-ingest.owl
 src/ontology/mondo-ingest.obo
 src/ontology/mondo-ingest.json
@@ -85,6 +77,10 @@ src/ontology/mirror/*
 src/ontology/reports/*.ttl
 src/ontology/reports/*.subclass.direct-in-mondo-only.tsv
 src/ontology/reports/mondo-ingest-edit.owl-obo-report.tsv
+!src/ontology/reports/README.md
+!src/ontology/reports/*excluded_terms_in_mondo_xrefs.tsv
+!src/ontology/reports/*exclusion_reasons.robot.template.tsv
+!src/ontology/reports/*excluded_terms.txt
 # todo: These ! patterns don't seem to be an exception to anything that would currently be ignoring them, so I don't think they're needed. Commented out. - Joe 2023/11/16
 #!src/ontology/reports/README.md
 #!src/ontology/reports/*excluded_terms_in_mondo_xrefs.tsv
@@ -109,7 +105,8 @@ src/scripts/.ipynb_checkpoints/*
 src/scripts/mondo_unmapped.tsv
 
 # Test
-tests/output/
+tests/output/*
+!tests/output/.gitkeep
 src/scripts/dataframes/*
 src/ontology/reports/gard.subclass.added-obsolete.robot.tsv
 src/ontology/reports/gard.subclass.added.robot.tsv
