@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-11-23/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-11-27/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 28 |
-| Axioms | 133761 |
-| Logical axioms | 16363 |
-| Classes | 13250 |
+| Axioms | 134099 |
+| Logical axioms | 16396 |
+| Classes | 13274 |
 | Object properties | 0 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,11 +32,11 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 104119 |
+| AnnotationAssertion | 104400 |
 | SubAnnotationPropertyOf | 2 |
 | DisjointClasses | 26 |
-| Declaration | 13277 |
-| SubClassOf | 16337 |
+| Declaration | 13301 |
+| SubClassOf | 16370 |
 
 
 #### Entity namespaces: axiom counts by namespace
@@ -45,10 +45,10 @@
 | ------ | ----- |
 | oboInOwl | 12 |
 | owl | 2 |
-| DOID | 11686 |
+| DOID | 11710 |
 | HP | 116 |
 | xsd | 1 |
-| CL | 62 |
+| CL | 61 |
 | skos | 5 |
 | rdfs | 2 |
 | FOODON | 24 |
@@ -61,7 +61,7 @@
 | CHEBI | 90 |
 | IAO | 2 |
 | UBERON | 414 |
-| SO | 17 |
+| SO | 18 |
 | obo | 191 |
 | GENO | 10 |
 | dc | 1 |
@@ -71,7 +71,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 46136 |
+| Class | 46226 |
 
 
 More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
