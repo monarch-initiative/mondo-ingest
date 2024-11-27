@@ -602,8 +602,8 @@ tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
 # todo: we may remove this output later output for analysis during development; at the end, remove it and its usages
 INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
 $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
-	@head -n 2 $(firstword $(INPUT_FILES)) > $@
-	@for file in $(INPUT_FILES); do \
+	head -n 2 $(firstword $(INPUT_FILES)) > $@
+	for file in $(INPUT_FILES); do \
 		tail -n +3 $$file >> $@; \
 	done
 
