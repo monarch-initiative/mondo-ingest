@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                1f779a242dc046d5c98b39bde1a60c2488195d1ad6e0a21ee94bac1ae0f05b98
+CONFIG_HASH=                96106b155c56dcf985ea2dc716aaaeb0cb34f47bbe55cb1cae81a9895138f6bf
 
 
 # ----------------------------------------
@@ -54,7 +54,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/doid.owl $(COMPONENTSDIR)/gard.owl $(COMPONENTSDIR)/icd10cm.owl $(COMPONENTSDIR)/icd10who.owl $(COMPONENTSDIR)/icd11foundation.owl $(COMPONENTSDIR)/ncit.owl $(COMPONENTSDIR)/omim.owl $(COMPONENTSDIR)/ordo.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/doid.owl $(COMPONENTSDIR)/icd10cm.owl $(COMPONENTSDIR)/icd10who.owl $(COMPONENTSDIR)/icd11foundation.owl $(COMPONENTSDIR)/ncit.owl $(COMPONENTSDIR)/omim.owl $(COMPONENTSDIR)/ordo.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -441,20 +441,6 @@ $(COMPONENTSDIR)/doid.owl: component-download-doid.owl
 		$(ROBOT) annotate -i $(TMPDIR)/component-download-doid.owl.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $@; fi; fi
 
 .PRECIOUS: $(COMPONENTSDIR)/doid.owl
-
-
-.PHONY: component-download-gard.owl
-component-download-gard.owl: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I https://github.com/monarch-initiative/gard/releases/latest/download/gard.owl \
-	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
-
-$(COMPONENTSDIR)/gard.owl: component-download-gard.owl
-	if [ $(COMP) = true ]; then if cmp -s $(TMPDIR)/component-download-gard.owl.owl $(TMPDIR)/component-download-gard.owl.tmp.owl ; then echo "Component identical."; \
-      else echo "Component is different, updating." &&\
-		cp $(TMPDIR)/component-download-gard.owl.owl $(TMPDIR)/component-download-gard.owl.tmp.owl &&\
-		$(ROBOT) annotate -i $(TMPDIR)/component-download-gard.owl.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $@; fi; fi
-
-.PRECIOUS: $(COMPONENTSDIR)/gard.owl
 
 
 .PHONY: component-download-icd10cm.owl
