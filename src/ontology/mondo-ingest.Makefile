@@ -175,11 +175,6 @@ $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signatu
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd11foundation.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd11foundation.owl -o $@; fi
 
-$(COMPONENTSDIR)/gard.owl: $(TMPDIR)/gard_relevant_signature.txt | component-download-gard.owl
-	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-gard.owl.owl --select imports \
-		remove -T $(TMPDIR)/gard_relevant_signature.txt --select complement --select "classes individuals" --trim false \
-		annotate --ontology-iri $(URIBASE)/mondo/sources/gard.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/gard.owl -o $@; fi
-
 $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
@@ -607,8 +602,8 @@ tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
 # todo: we may remove this output later output for analysis during development; at the end, remove it and its usages
 INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
 $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
-	@head -n 2 $(firstword $(INPUT_FILES)) > $@
-	@for file in $(INPUT_FILES); do \
+	head -n 2 $(firstword $(INPUT_FILES)) > $@
+	for file in $(INPUT_FILES); do \
 		tail -n +3 $$file >> $@; \
 	done
 

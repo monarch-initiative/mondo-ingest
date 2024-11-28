@@ -1,6 +1,0 @@
-prefix owl: <http://www.w3.org/2002/07/owl#>
-
-SELECT DISTINCT ?term {
-  ?term a owl:Class .
-  FILTER(isIRI(?term) && (regex(str(?term), "http://purl.obolibrary.org/obo/GARD_")))
-}
