@@ -63,6 +63,9 @@ from src.scripts.sync_subclassof_config import EX_DEFAULTS, IN_MONDO_ONLY_FILE_S
 from src.scripts.utils import CACHE_DIR, MONDO_PREFIX_MAP, PREFIX_MAP, get_owned_prefix_map
 
 
+COMMON_SORT_COLS = ['subject_mondo_id', 'object_mondo_id', 'subject_source_id', 'object_source_id']
+
+
 def _edges_with_metadata_from_plain_edges(edges: Set[RELATIONSHIP], ns_data_map: Dict[CURIE, Dict]) -> List[Dict]:
     """From simple (subject, predicate, object) edge tuples, create dictionaries with mondo mappings and labels
 
@@ -112,6 +115,20 @@ def _get_mondo_data_map(
     } for x in mondo_ids_not_in_source}
     mondo_data_map: Dict[CURIE, Dict] = mondo_data_map_within_source | mondo_data_map_not_in_source
     return mondo_data_map
+
+
+def _confirmed_df(rows: List[Dict], outpath: Union[str, Path], save=True):
+    """Create -confirmed cases (exist in both Mondo and source) dataframe"""
+    subheader = deepcopy(ROBOT_SUBHEADER)
+    subheader[0]['object_mondo_id'] = 'SC %'
+    df = pd.DataFrame(rows)
+    if len(df) == 0:
+        df = pd.DataFrame(columns=list(subheader[0].keys()))
+    df = df.sort_values(COMMON_SORT_COLS)
+    df = pd.concat([pd.DataFrame(subheader), df])
+    if save:
+        df.to_csv(outpath, sep='\t', index=False)
+    return df
 
 
 def _get_direct_scr_rels(
@@ -298,10 +315,12 @@ def sync_subclassof(
     # - rels_indirect_source_source: Indirect relationships (source IDs) from source
     # - rels_indirect_source_mondo:  Relationships from rels_indirect_source_source that appear in Mondo
     # - rels_indirect_source_mondo_and_1or2_ids_not_in_mondo: from rels_indirect_source_source not in Mondo (unused)
+    # - rels_indirect_mondo_source:  Relationships from rels_indirect_mondo_mondo that appear in source
     logging.info('- Collecting indirect subclass relations')
     rels_indirect_mondo_mondo = ancestors_mondo_mondo.difference(rels_direct_mondo_mondo)
-    # todo: remove unused, commented out vars?
-    # rels_indirect_mondo_source = ''  # not needed?
+    rels_indirect_mondo_source, rels_indirect_mondo_mondo_and_1or2_ids_not_in_source = _convert_edge_namespace(
+        rels_indirect_mondo_mondo, mondo_source_map)
+    # todo: remove unused, commented out vars? or leave for future cases?
     # rels_indirect_source_source = ancestors_source_source.difference(rels_direct_source_source)
     # rels_indirect_source_mondo, rels_indirect_source_mondo_and_1or2_ids_not_in_mondo = _convert_edge_namespace(
     #     rels_indirect_source_source, source_mondo_map)
@@ -323,7 +342,7 @@ def sync_subclassof(
             '\n\nExiting.')
 
     # Determine hierarchy differences -----------------------------------------------------------------------------------
-    # todo: remove unused, commented out vars? (they were created in anticipation of possible cases)
+    # todo: remove unused, commented out vars? or leave for future cases?
     logging.info('Calculating various differences in hierarchies between source and Mondo')
     # Find which edges appear in both Mondo and source, or only in one or the other
     # - direct <--> direct
@@ -340,6 +359,12 @@ def sync_subclassof(
     #     rels_direct_source_source.difference(rels_direct_mondo_source))
     # in_source_only_direct: List[Dict] = _edges_with_metadata_from_plain_edges(
     #     in_source_only_direct_source_edges, source_data_map)
+
+    # - direct <--> indirect
+    in_source_direct_mondo_indirect_edges: Set[RELATIONSHIP] = \
+        rels_direct_source_source.intersection(rels_indirect_mondo_source)
+    in_source_direct_mondo_indirect: List[Dict] = _edges_with_metadata_from_plain_edges(
+        in_source_direct_mondo_indirect_edges, source_data_map)
 
     # - indirect <--> indirect
     #   - Indirect SCRs that exist in both Mondo and source
@@ -372,20 +397,13 @@ def sync_subclassof(
     # Google doc about cases:
     # https://docs.google.com/document/d/1H8fJKiKD-L1tfS-2LJu8t0_2YXJ1PQJ_7Zkoj7Vf7xA/edit#heading=h.9hixairfgxa1
     logging.info('Creating outputs for synchronization cases')
-    common_sort_cols = ['subject_mondo_id', 'object_mondo_id', 'subject_source_id', 'object_source_id']
 
     # Case 1: SCR direct in source and Mondo
-    subheader = deepcopy(ROBOT_SUBHEADER)
-    subheader[0]['object_mondo_id'] = 'SC %'
-    df1 = pd.DataFrame(in_both_direct)
-    if len(df1) == 0:
-        df1 = pd.DataFrame(columns=list(subheader[0].keys()))
-    df1 = df1.sort_values(common_sort_cols)
-    df1 = pd.concat([pd.DataFrame(subheader), df1])
-    df1.to_csv(outpath_confirmed, sep='\t', index=False)
+    _confirmed_df(in_both_direct, outpath_confirmed)
 
     # Case 2: SCR is direct in source, but indirect Mondo
-    pass  # no output for this case
+    _confirmed_df(in_source_direct_mondo_indirect,
+        outpath_confirmed.replace('confirmed', 'confirmed-direct-source-indirect-mondo'))
 
     # Case 3: SCR is direct in the source, but not at all in Mondo
     subheader = deepcopy(ROBOT_SUBHEADER)
@@ -402,14 +420,14 @@ def sync_subclassof(
                         f'higher number than expected.')
     # - format
     #   only object_mondo_id should ever be missing, but checking both to be safe
-    df3 = df3[~df3['subject_mondo_id'].isna() & ~df3['object_mondo_id'].isna()].sort_values(common_sort_cols)
+    df3 = df3[~df3['subject_mondo_id'].isna() & ~df3['object_mondo_id'].isna()].sort_values(COMMON_SORT_COLS)
     # - obsolete cases
     obsoletes = (df3['subject_mondo_label'].str.startswith('obsolete') |
                  df3['object_mondo_label'].str.startswith('obsolete'))
     # todo: sort_values: from here and below for this section, should remove; should not be necessary
-    df3_obs = df3[obsoletes].sort_values(common_sort_cols)
+    df3_obs = df3[obsoletes].sort_values(COMMON_SORT_COLS)
     # - filter: non-obsolete cases
-    df3 = df3[~obsoletes].sort_values(common_sort_cols)
+    df3 = df3[~obsoletes].sort_values(COMMON_SORT_COLS)
     # - self-parentage / proxy merges
     self_parentage_cases = df3['subject_mondo_id'] == df3['object_mondo_id']
     df3_self_parentage = df3[self_parentage_cases]
@@ -419,7 +437,7 @@ def sync_subclassof(
         logging.warning(sp_err)
         df3_self_parentage.to_csv(outpath_self_parentage, sep='\t', index=False)
     # - filter: non-self parentage cases
-    df3 = df3[~self_parentage_cases].sort_values(common_sort_cols)
+    df3 = df3[~self_parentage_cases].sort_values(COMMON_SORT_COLS)
     # - save
     df3_obs = pd.concat([pd.DataFrame(subheader), df3_obs])
     df3_obs.to_csv(outpath_added_obsolete, sep='\t', index=False)
