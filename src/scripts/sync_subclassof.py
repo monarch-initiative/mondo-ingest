@@ -489,7 +489,7 @@ def cli():  # todo: #remove-temp-defaults
         help='Path to output robot template containing direct subclass relations for given ontology that exist in '
              'Mondo and are confirmed to also exist in the source.')
     parser.add_argument(
-        '-C', '--confirmed-direct-source-indirect-mondo', required=False,
+        '-C', '--outpath-confirmed-direct-source-indirect-mondo', required=False,
         default=EX_DEFAULTS['outpath_confirmed_direct_source_indirect_mondo'],
         help='Path to output robot template containing subclass relations for given ontology that exist in Mondo as '
              'indirect relations and are confirmed to also exist in the source as direct relations.')
