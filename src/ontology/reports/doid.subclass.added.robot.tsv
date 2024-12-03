@@ -479,6 +479,7 @@ MONDO:0004004	motor nerve neuritis	MONDO:0020128	DOID:683	DOID:231	motor neuron 
 MONDO:0004015	pineal region teratoma	MONDO:0002073	DOID:6856	DOID:1660	malignant pineal area germ cell neoplasm
 MONDO:0004022	parasagittal meningioma	MONDO:0003774	DOID:6869	DOID:6114	cerebral convexity meningioma
 MONDO:0004024	spinal cord neuroblastoma	MONDO:0006426	DOID:6871	DOID:6872	spinal cord primitive neuroectodermal tumor
+MONDO:0004032	ovarian seromucinous carcinoma	MONDO:0005140	DOID:6898	DOID:4001	ovarian carcinoma
 MONDO:0004041	urothelial papilloma	MONDO:0003442	DOID:6933	DOID:5432	bladder papillary urothelial neoplasm
 MONDO:0004050	telangiectatic osteogenic sarcoma	MONDO:0002631	DOID:6951	DOID:7602	conventional osteosarcoma
 MONDO:0004077	lumbosacral lipoma	MONDO:0000631	DOID:7017	DOID:0060094	bone benign neoplasm
@@ -607,6 +608,7 @@ MONDO:0005077	pertussis	MONDO:0000315	DOID:1116	DOID:0050339	commensal bacterial
 MONDO:0005097	squamous cell lung carcinoma	MONDO:0005233	DOID:3907	DOID:3908	non-small cell lung carcinoma
 MONDO:0005101	ulcerative colitis	MONDO:0000588	DOID:8577	DOID:0060031	autoimmune disorder of gastrointestinal tract
 MONDO:0005105	melanoma	MONDO:0004992	DOID:1909	DOID:0050687	cancer
+MONDO:0005112	malignant pleural mesothelioma	MONDO:0005096	DOID:7474	DOID:1749	squamous cell carcinoma
 MONDO:0005118	human granulocytic ehrlichiosis	MONDO:0016003	DOID:0050025	DOID:10242	ehrlichiosis
 MONDO:0005137	nutritional disorder	MONDO:0006504	DOID:374	DOID:0060158	acquired metabolic disease
 MONDO:0005150	age-related macular degeneration	MONDO:0000426	DOID:10871	DOID:0050736	autosomal dominant disease
@@ -647,6 +649,7 @@ MONDO:0005462	primitive neuroectodermal tumor	MONDO:0005872	DOID:171	DOID:3093	n
 MONDO:0005505	dysembryoplastic neuroepithelial tumor	MONDO:0000628	DOID:2679	DOID:0060090	central nervous system organ benign neoplasm
 MONDO:0005508	hereditary multiple osteochondromas	MONDO:0000426	DOID:206	DOID:0050736	autosomal dominant disease
 MONDO:0005509	histiocytoma	MONDO:0000654	DOID:4231	DOID:0060123	benign connective and soft tissue neoplasm
+MONDO:0005512	malignant peritoneal mesothelioma	MONDO:0005096	DOID:1788	DOID:1749	squamous cell carcinoma
 MONDO:0005557	calcium metabolic disease	MONDO:0024301	DOID:10575	DOID:0050032	acquired mineral metabolism disease
 MONDO:0005564	embryonal neoplasm	MONDO:0005040	DOID:688	DOID:2994	germ cell tumor
 MONDO:0005596	cystadenocarcinoma	MONDO:0859690	DOID:3111	DOID:60004	malignant cystadenoma
@@ -980,6 +983,7 @@ MONDO:0007718	hepatic adenomas, familial	MONDO:0006025	DOID:0111366	DOID:0050737
 MONDO:0007726	hip dysplasia, Beukes type	MONDO:0000426	DOID:0111367	DOID:0050736	autosomal dominant disease
 MONDO:0007726	hip dysplasia, Beukes type	MONDO:0005178	DOID:0111367	DOID:8398	osteoarthritis
 MONDO:0007727	autosomal dominant familial periodic fever	MONDO:0000426	DOID:0090018	DOID:0050736	autosomal dominant disease
+MONDO:0007727	autosomal dominant familial periodic fever	MONDO:0003778	DOID:0090018	DOID:612	inborn error of immunity
 MONDO:0007729	developmental dysplasia of the hip 1	MONDO:0000426	DOID:0060931	DOID:0050736	autosomal dominant disease
 MONDO:0007733	holoprosencephaly 3	MONDO:0000426	DOID:0110875	DOID:0050736	autosomal dominant disease
 MONDO:0007734	holoprosencephaly 4	MONDO:0000426	DOID:0110880	DOID:0050736	autosomal dominant disease
@@ -3436,6 +3440,7 @@ MONDO:0017923	multiple synostoses syndrome	MONDO:0000426	DOID:0050794	DOID:00507
 MONDO:0018029	congenital factor XIII deficiency	MONDO:0006025	DOID:2211	DOID:0050737	autosomal recessive disease
 MONDO:0018071	trisomy 18	MONDO:0000762	DOID:1085	DOID:0060429	syndrome caused by partial chromosomal duplication
 MONDO:0018088	familial Mediterranean fever	MONDO:0000429	DOID:2987	DOID:0050739	autosomal genetic disease
+MONDO:0018088	familial Mediterranean fever	MONDO:0007179	DOID:2987	DOID:417	autoimmune disease
 MONDO:0018106	hereditary xanthinuria	MONDO:0006025	DOID:0060236	DOID:0050737	autosomal recessive disease
 MONDO:0018130	brain dopamine-serotonin vesicular transport disease	MONDO:0006025	DOID:0070490	DOID:0050737	autosomal recessive disease
 MONDO:0018159	atypical hemolytic-uremic syndrome with DGKE deficiency	MONDO:0002350	DOID:0080388	DOID:2590	familial nephrotic syndrome
@@ -3482,6 +3487,7 @@ MONDO:0018760	DeSanto-Shinawi syndrome	MONDO:0000426	DOID:0081126	DOID:0050736	a
 MONDO:0018760	DeSanto-Shinawi syndrome	MONDO:0002254	DOID:0081126	DOID:225	syndromic disease
 MONDO:0018761	SMARCA4-deficient sarcoma of thorax	MONDO:0003274	DOID:0080532	DOID:5093	thoracic cancer
 MONDO:0018767	severe primary trimethylaminuria	MONDO:0006025	DOID:0080361	DOID:0050737	autosomal recessive disease
+MONDO:0018768	familial cold autoinflammatory syndrome	MONDO:0003778	DOID:0090061	DOID:612	inborn error of immunity
 MONDO:0018770	Jeune syndrome	MONDO:0005497	DOID:0050592	DOID:0080006	bone development disease
 MONDO:0018772	Joubert syndrome	MONDO:0005560	DOID:0050777	DOID:936	brain disorder
 MONDO:0018801	congenital bilateral absence of vas deferens	MONDO:0000425	DOID:0111862	DOID:0050735	X-linked disease
@@ -4318,6 +4324,7 @@ MONDO:0800029	interstitial lung disease 2	MONDO:0000426	DOID:0060971	DOID:005073
 MONDO:0800042	restrictive dermopathy 1	MONDO:0006025	DOID:0070369	DOID:0050737	autosomal recessive disease
 MONDO:0800044	congenital disorder of deglycosylation 1	MONDO:0006025	DOID:0060728	DOID:0050737	autosomal recessive disease
 MONDO:0800045	autoinflammatory syndrome, familial, Behcet-like 1	MONDO:0000426	DOID:0080944	DOID:0050736	autosomal dominant disease
+MONDO:0800045	autoinflammatory syndrome, familial, Behcet-like 1	MONDO:0003778	DOID:0080944	DOID:612	inborn error of immunity
 MONDO:0800047	macrothrombocytopenia, isolated, 1, autosomal dominant	MONDO:0000426	DOID:0090102	DOID:0050736	autosomal dominant disease
 MONDO:0800366	dyskeratosis congenita, autosomal dominant 4	MONDO:0000426	DOID:0070020	DOID:0050736	autosomal dominant disease
 MONDO:0800368	cardiomyopathy, dilated, 1MM	MONDO:0000426	DOID:0081158	DOID:0050736	autosomal dominant disease
