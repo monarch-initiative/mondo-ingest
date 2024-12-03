@@ -225,6 +225,7 @@ def _convert_edge_namespace(
 
 def sync_subclassof(
     outpath_added: str = EX_DEFAULTS['outpath_added'], outpath_confirmed: str = EX_DEFAULTS['outpath_confirmed'],
+    outpath_confirmed_direct_source_indirect_mondo: str = EX_DEFAULTS['outpath_confirmed_direct_source_indirect_mondo'],
     outpath_added_obsolete: str = EX_DEFAULTS['outpath_added_obsolete'],
     mondo_db_path: str = EX_DEFAULTS['mondo_db_path'], mondo_ingest_db_path: str = EX_DEFAULTS['mondo_ingest_db_path'],
     mondo_mappings_path: str = EX_DEFAULTS['mondo_mappings_path'],
@@ -402,8 +403,7 @@ def sync_subclassof(
     _confirmed_df(in_both_direct, outpath_confirmed)
 
     # Case 2: SCR is direct in source, but indirect Mondo
-    _confirmed_df(in_source_direct_mondo_indirect,
-        outpath_confirmed.replace('confirmed', 'confirmed-direct-source-indirect-mondo'))
+    _confirmed_df(in_source_direct_mondo_indirect, outpath_confirmed_direct_source_indirect_mondo)
 
     # Case 3: SCR is direct in the source, but not at all in Mondo
     subheader = deepcopy(ROBOT_SUBHEADER)
@@ -486,8 +486,13 @@ def cli():  # todo: #remove-temp-defaults
              'into Mondo, except for that these terms are obsolete in Mondo.')
     parser.add_argument(
         '-c', '--outpath-confirmed', required=False, default=EX_DEFAULTS['outpath_confirmed'],
-        help='Path to output robot template containing subclass relations for given ontology that exist in Mondo and '
-             'are confirmed to also exist in the source.')
+        help='Path to output robot template containing direct subclass relations for given ontology that exist in '
+             'Mondo and are confirmed to also exist in the source.')
+    parser.add_argument(
+        '-C', '--confirmed-direct-source-indirect-mondo', required=False,
+        default=EX_DEFAULTS['outpath_confirmed_direct_source_indirect_mondo'],
+        help='Path to output robot template containing subclass relations for given ontology that exist in Mondo as '
+             'indirect relations and are confirmed to also exist in the source as direct relations.')
     parser.add_argument(
         '-M', '--outpath-direct-in-mondo-only', required=False,
         default=EX_DEFAULTS['outpath_direct_in_mondo_only'],
@@ -526,6 +531,8 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
         sync_subclassof(**{
             'outpath_added': str(REPORTS_DIR / f'{name}.subclass.added.robot.tsv'),
             'outpath_confirmed': str(REPORTS_DIR / f'{name}.subclass.confirmed.robot.tsv'),
+            'outpath_confirmed_direct_source_indirect_mondo': \
+                str(REPORTS_DIR / f'{name}.subclass.confirmed-direct-source-indirect-mondo.robot.tsv'),
             'onto_config_path': str(METADATA_DIR / f'{name}.yml'),
             'mondo_db_path': str(TMP_DIR / 'mondo.db'),
             'mondo_ingest_db_path': str(TMP_DIR / 'mondo-ingest.db'),
