@@ -39,6 +39,7 @@
 | OMIM:620971   | myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 2     |
 | OMIM:620987   | neurodegeneration, infantile-onset, with optic atrophy and brain abnormalities                            |
 | OMIM:621012   | neurodevelopmental disorder with dysmorphic facies, absent speech and ambulation, and brain abnormalities |
+| OMIM:621016   | neurodevelopmental disorder with variable familial hypercholanemia                                        |
 | OMIM:301132   | orofaciodigital syndrome 21                                                                               |
 | OMIM:620991   | pancreatic agenesis 3                                                                                     |
 | OMIM:621002   | premature ovarian failure 25                                                                              |
