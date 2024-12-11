@@ -520,18 +520,9 @@ slurp-%: slurp/%.tsv
 slurp-ordo: slurp/ordo.tsv
 	$(MAKE) slurp-modifications-ordo
 
-.PHONY: slurp-no-updates-%
-slurp-no-updates-%: slurp/%.tsv
-	@echo "$@ completed".
-
 .PHONY: slurp-docs
 slurp-docs:
 	python3 $(SCRIPTSDIR)/migrate.py --docs
-
-.PHONY: slurp-all-no-updates
-slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
-	$(MAKE) slurp-modifications
-	@echo "$@ ($^) completed".
 
 .PHONY: slurp-all
 slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
