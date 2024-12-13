@@ -348,8 +348,8 @@ def sync_subclassof(
     # Find which edges appear in both Mondo and source, or only in one or the other
     # - direct <--> direct
     #   - Direct SCRs exist in both Mondo and source
-    in_both_direct_source_edges: Set[RELATIONSHIP] = rels_direct_source_source.intersection(rels_direct_mondo_source)
-    in_both_direct: List[Dict] = _edges_with_metadata_from_plain_edges(in_both_direct_source_edges, source_data_map)
+    in_both_direct__source_edges: Set[RELATIONSHIP] = rels_direct_source_source.intersection(rels_direct_mondo_source)
+    in_both_direct: List[Dict] = _edges_with_metadata_from_plain_edges(in_both_direct__source_edges, source_data_map)
     #   - Direct SCRs in Mondo which are not direct in source (could be indirect or non-existent)
     # in_mondo_only_direct_source_edges: Set[RELATIONSHIP] = (
     #     rels_direct_mondo_source.difference(rels_direct_source_source))
@@ -361,11 +361,11 @@ def sync_subclassof(
     # in_source_only_direct: List[Dict] = _edges_with_metadata_from_plain_edges(
     #     in_source_only_direct_source_edges, source_data_map)
 
-    # - direct <--> indirect
-    in_source_direct_mondo_indirect_edges: Set[RELATIONSHIP] = \
+    # - direct --> indirect
+    in_source_direct_mondo_indirect__source_edges: Set[RELATIONSHIP] = \
         rels_direct_source_source.intersection(rels_indirect_mondo_source)
     in_source_direct_mondo_indirect: List[Dict] = _edges_with_metadata_from_plain_edges(
-        in_source_direct_mondo_indirect_edges, source_data_map)
+        in_source_direct_mondo_indirect__source_edges, source_data_map)
 
     # - indirect <--> indirect
     #   - Indirect SCRs that exist in both Mondo and source
@@ -383,13 +383,13 @@ def sync_subclassof(
     # in_mondo_only_indirect: List[Dict] = _edges_with_metadata_from_plain_edges(
     #     in_mondo_only_indirect_mondo_edges, mondo_data_map)
 
-    # - direct <--> ancestor
+    # - direct <--> absent
     #   - Direct SCRs in source that don't exist at all in Mondo
-    in_source_direct_not_in_mondo_source_edges = rels_direct_source_source.difference(ancestors_mondo_source)
+    in_source_direct_not_in_mondo__source_edges = rels_direct_source_source.difference(ancestors_mondo_source)
     in_source_direct_not_in_mondo: List[Dict] = _edges_with_metadata_from_plain_edges(
-        in_source_direct_not_in_mondo_source_edges, source_data_map)
+        in_source_direct_not_in_mondo__source_edges, source_data_map)
     #   - Direct SCRs in Mondo that don't exist at all in source
-    in_mondo_direct_not_in_source_mondo_edges: Set[RELATIONSHIP] = (
+    in_mondo_direct_not_in_source__mondo_edges: Set[RELATIONSHIP] = (
         rels_direct_mondo_mondo.difference(ancestors_source_mondo))
     # in_mondo_direct_not_in_source: List[Dict] = _edges_with_metadata_from_plain_edges(
     #     in_mondo_direct_not_in_source_mondo_edges, mondo_data_map)
@@ -459,7 +459,7 @@ def sync_subclassof(
         'UNSUPPORTED-MISSING' if any(x not in mondo_source_map for x in [row['subject_id'], row['object_id']])
         # Supported / Unsupported: Whether edge has a direct or indirect SCR in source
         else 'UNSUPPORTED-SUBCLASS'
-        if (row['subject_id'], 'rdfs:subClassOf', row['object_id']) in in_mondo_direct_not_in_source_mondo_edges
+        if (row['subject_id'], 'rdfs:subClassOf', row['object_id']) in in_mondo_direct_not_in_source__mondo_edges
         else 'SUPPORTED',
         axis=1)
     df5 = df5.sort_values([src_field, 'subject_id', 'object_id'])
