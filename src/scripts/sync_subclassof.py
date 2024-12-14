@@ -367,6 +367,13 @@ def sync_subclassof(
     in_source_direct_mondo_indirect: List[Dict] = _edges_with_metadata_from_plain_edges(
         in_source_direct_mondo_indirect__source_edges, source_data_map)
 
+    # filter edges with: "disease" or "human disease"
+    filter_terms = ('MONDO:0000001', 'MONDO:0700096')
+    in_source_direct_mondo_indirect = [
+        x for x in in_source_direct_mondo_indirect
+        if x['subject_mondo_id'] not in filter_terms and x['object_mondo_id'] not in filter_terms
+    ]
+
     # - indirect <--> indirect
     #   - Indirect SCRs that exist in both Mondo and source
     # in_both_indirect_mondo_edges: Set[RELATIONSHIP] = (
