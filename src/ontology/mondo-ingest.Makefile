@@ -640,6 +640,7 @@ EXTERNAL_FILES = \
 	mondo-medgen \
 	mondo-omim-genes \
 	mondo-otar-subset \
+	mondo-malacards \
 	nando-mappings \
 	gard \
 	nord \
@@ -750,6 +751,16 @@ $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv:
 
 $(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv:
 	wget "https://github.com/monarch-initiative/medgen/releases/latest/download/medgen-xrefs.robot.template.tsv" -O $@
+
+###### MalaCards #########
+
+# Managed in Google Sheets:
+# https://docs.google.com/spreadsheets/d/1peJ6TnobK9qI61PnCwwyoNpYZdZLWfZ1eQD1q_f7HQM/edit?gid=0#gid=0
+
+$(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv:
+	wget "https://docs.google.com/spreadsheets/d/e/2PACX-1vTbstSNFfYBRNxUbbzmixE4Yi3k3QtiEpcEen8ScSOKVI6RZS4KqEFFSE0AqvHL1Hwtmi0OuC2IWeGb/pub?gid=0&single=true&output=tsv" -O $@
+
+
 
 ###### ClinGen #########
 
