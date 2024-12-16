@@ -92,7 +92,7 @@ def _handle_synonym_casing_variations(df: pd.DataFrame) -> pd.DataFrame:
     df['synonym_case_diff_mondo'] = df.apply(lambda row:
         row['synonym_case_mondo'] if row['synonym_case_mondo'] != row['synonym_case_source'] else '', axis=1)
     df['synonym_case_diff_source'] = df.apply(lambda row:
-        row['synonym_case_source'] if row['synonym_case_source'] != row['synonym_case_mondo'] else '', axis=1)\
+        row['synonym_case_source'] if row['synonym_case_source'] != row['synonym_case_mondo'] else '', axis=1)
     # Capitalization variations for single source term synonym: aggregate
     agg_dict: Dict[str, Union[str, Callable]] = {col: 'first' for col in df.columns}
     agg_dict['synonym_case_diff_source'] = '|'.join
