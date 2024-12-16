@@ -28,15 +28,12 @@ HEADERS_TO_ROBOT_SUBHEADERS = {
     'synonym_scope_source': '',
     'synonym_scope_mondo': '',
     'synonym': '',
-
-    # TODO temp: Don't know which of these columns I'll keep
     'synonym_case_mondo': '',
     'synonym_case_diff_mondo': '',
     'synonym_case_mondo_is_many': '',
     'synonym_case_source': '',
     'synonym_case_diff_source': '',
     'synonym_case_source_is_many': '',
-
     'source_id': '',
     'source_label': '',
     'synonym_type': '',
@@ -101,31 +98,16 @@ def _handle_synonym_casing_variations(df: pd.DataFrame) -> pd.DataFrame:
     df['synonym_case_diff_source'] = df.apply(lambda row:
         row['synonym_case_source'] if row['synonym_case_source'] != row['synonym_case_mondo'] else '', axis=1)
 
-    # todo: sorting here useful in the end? if not, drop
-    # sort_cols = [x for x in SORT_COLS if x in df.columns] + ['synonym_case_mondo', 'synonym_case_source', 'synonym_case_diff_source', 'synonym_case_diff_mondo']
-    # sort_cols = [x for x in SORT_COLS if x in df.columns]
-    # df = df.sort_values(by=sort_cols)
-    # a1 = df[df['source_id'] == 'DOID:6262']   # todo tmp
-
     # Capitalization variations for single source term synonym: drop dupe rows & aggregate
     agg_dict: Dict[str, Union[str, Callable]] = {col: 'first' for col in df.columns}
     agg_dict['synonym_case_source'] = '|'.join
     df = df.groupby(['mondo_id', 'source_id', 'synonym_scope', 'synonym'], as_index=False).agg(agg_dict)
-    # a2 = df[df['source_id'] == 'DOID:6262']  # todo tmp
-    # todo: decide what to do with this col for dupes in the end
     df['synonym_case_source_is_many'] = df['synonym_case_source'].apply(lambda x: '|' in x)
     # - Correct synonym_case_diff_source field for these cases
     df['synonym_case_diff_source'] = df.apply(lambda row: row['synonym_case_source']
         if row['synonym_case_source_is_many'] else row['synonym_case_diff_source'], axis=1)
-    # x1 = df[df['synonym_case_source_is_many'] == True]  # todo temp
 
     # Capitalization variations for single Mondo term synonym: keep 2+ rows, but aggregate variations in 'diff' cols
-    # TODO decide what needs to be done here. is this good?
-    # todo: i think 3 lines below can be dropped
-    # counts = df.groupby(['synonym_lower']).size()
-    # df_unique = df[df['synonym_lower'].isin(counts[counts == 1].index)]
-    # df_duplicates = df[df['synonym_lower'].isin(counts[counts > 1].index)]
-    # - Mark which rows have multiple capitalizations
     counts = df.groupby(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope']).size()
     df_unique = df[
         df.set_index(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts == 1].index)]
@@ -134,12 +116,6 @@ def _handle_synonym_casing_variations(df: pd.DataFrame) -> pd.DataFrame:
         df.set_index(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts > 1].index)]
     if len(df_duplicates) > 0:
         df_duplicates['synonym_case_mondo_is_many'] = True
-        # df_duplicates = df_duplicates.sort_values(by=sort_cols)  # todo: needed?
-        # print('dupes + unique = tot?', len(df_duplicates) + len(df_unique) == len(df))  # todo temp
-        # a3 = df_duplicates[df_duplicates['source_id'] == 'DOID:6262']  # todo tmp
-        # x2 = df_duplicates[df_duplicates['synonym_case_source_is_many'] == True]  # todo temp: n=2 rows (1 case) of 550 rows
-        # df_duplicates = df_duplicates.sort_values(by=['synonym_case_source_is_many'], ascending=False)
-        # df_duplicates.head(10).to_csv('~/Desktop/dupes.csv', index=False)  # todo temp
         # - Aggregate 'diff' col
         #   First, create a mapping of the variations for each unique combination
         variations = df_duplicates.groupby(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope'])[
@@ -152,7 +128,6 @@ def _handle_synonym_casing_variations(df: pd.DataFrame) -> pd.DataFrame:
             variation_dict[(row['synonym_lower'], row['mondo_id'], row['source_id'], row['synonym_scope'])], axis=1)
 
     df = pd.concat([df_unique, df_duplicates], ignore_index=True)
-
     return df
 
 
