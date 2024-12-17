@@ -172,9 +172,11 @@ def _common_operations(
     # Format
     if not df_is_combined:
         # - Acronyms: Use source case
-        #   This operation prevents capitalization from being lost, as sometimes Mondo has used lowercase.
-        df['synonym'] = df.apply(lambda row:
-            row['synonym_case_source'] if MONDO_ABBREV_URI in row['synonym_type'] else row['synonym'], axis=1)
+        #   This operation prevents capitalization from being lost, as sometimes Mondo has used lowercase. However,
+        #   ignore cases where 'synonym_case_source' is multi-value.
+        df['synonym'] = df.apply(lambda row: row['synonym_case_source']
+            if MONDO_ABBREV_URI in row['synonym_type'] and not row['synonym_case_mondo_is_many']
+            else row['synonym'], axis=1)
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
         for scope in synonym_scopes:
