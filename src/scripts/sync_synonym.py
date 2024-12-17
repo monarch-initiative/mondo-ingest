@@ -171,12 +171,6 @@ def _common_operations(
 
     # Format
     if not df_is_combined:
-        # - Acronyms: Use source case
-        #   This operation prevents capitalization from being lost, as sometimes Mondo has used lowercase. However,
-        #   ignore cases where 'synonym_case_source' is multi-value.
-        df['synonym'] = df.apply(lambda row: row['synonym_case_source']
-            if MONDO_ABBREV_URI in row['synonym_type'] and not row['synonym_case_mondo_is_many']
-            else row['synonym'], axis=1)
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
         for scope in synonym_scopes:
@@ -404,6 +398,12 @@ def sync_synonyms(
     # - leave only synonyms that don't exist on given Mondo IDs
     added_df = _filter_a_by_not_in_b(source_df_with_mondo_ids, mondo_df, ['mondo_id', 'synonym_lower'])
     added_df = added_df[added_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
+    # - acronyms: Use source case
+    #   Prevents capitalization from being lost, as sometimes Mondo has used lowercase even for acronyms. However,
+    #   ignore cases where 'synonym_case_source' is multi-value.
+    added_df['synonym'] = added_df.apply(lambda row: row['synonym_case_source']
+        if MONDO_ABBREV_URI in row['synonym_type'] and not row['synonym_case_mondo_is_many']
+        else row['synonym'], axis=1)
     added_df = _common_operations(added_df, outpath_added, mondo_exclusions_df=mondo_exclusions_df)
     added_df['case'] = 'added'
 
