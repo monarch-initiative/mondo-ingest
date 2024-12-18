@@ -594,11 +594,9 @@ tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
 ../../tests/input/sync_synonym/%-synonyms-scope-type-xref.tsv:
 	$(ROBOT) query -i ../../tests/input/sync_synonym/test_$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
-# todo: we may remove this output later output for analysis during development; at the end, remove it and its usages
-INPUT_FILES := $(wildcard tmp/synonym_sync_combined_cases_*.tsv)
-$(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
-	head -n 2 $(firstword $(INPUT_FILES)) > $@
-	for file in $(INPUT_FILES); do \
+$(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/synonym_sync_combined_cases_$(n).tsv)
+	head -n 2 $< > $@
+	for file in $^; do \
 		tail -n +3 $$file >> $@; \
 	done
 
@@ -611,7 +609,7 @@ $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_I
 $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.updated.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.updated.robot.tsv > $@
 
-$(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(SYN_SYNC_DIR)
+$(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv $(TMPDIR)/synonym_sync_combined_cases_%.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(SYN_SYNC_DIR)
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
@@ -621,7 +619,8 @@ $(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(SYN_SYNC_DIR)/$*.synonyms.added.robot.tsv \
 	--outpath-confirmed $(SYN_SYNC_DIR)/$*.synonyms.confirmed.robot.tsv \
-	--outpath-updated $(SYN_SYNC_DIR)/$*.synonyms.updated.robot.tsv
+	--outpath-updated $(SYN_SYNC_DIR)/$*.synonyms.updated.robot.tsv \
+   	--outpath-combined $(TMPDIR)/synonym_sync_combined_cases_$*.tsv
 
 ##################################
 ## Externally managed content ####
