@@ -153,8 +153,11 @@ class TestSyncSynonyms(unittest.TestCase):
 
     def _common_case_assertions(self, cases: List[Dict[str, str]], template: str):
         """Run common assertions for each individual ROBOT template case"""
+        mappings_df = pd.read_csv(INPUT_MAPPINGS, sep='\t', comment='#')
+        mapping_pairs_set = set(mappings_df[['subject_id', 'object_id']].apply(tuple, axis=1))
         for case in cases:
             self._assert_only_in_correct_template(case, template)
+            self.assertIn((case['mondo_id'], case['source_id']), mapping_pairs_set)
         results: pd.DataFrame = self.df_lookup[template]
         # -1 accounts for the ROBOT subheader
         self.assertEqual(len(cases), len(results) - 1, f'Got a different number of rows in template: {template}.')
@@ -312,3 +315,18 @@ class TestSyncSynonyms(unittest.TestCase):
             'synonym': 'Unmapped: Synonym exists in 1 source and 1 Mondo term, but no mapping',
             'source_id': 'OMIM:999999',
         })
+
+    def test_real_sssom_filter(self):
+        """Test real outputs and ensure all cases have mondo.sssom.tsv (exact) mappings.
+
+        Unlike most other tests in the suite, this tests local, real synonym sync outputs and real mondo.sssom.tsv.
+        """
+        sssom_path = ONTO_DIR / 'tmp' / 'mondo.sssom.tsv'
+        combined_cases_path = ONTO_DIR / 'reports' / 'sync-synonym' / 'synonym_sync_combined_cases.robot.tsv'
+        if all([os.path.exists(x) for x in [sssom_path, combined_cases_path]]):
+            mappings_df = pd.read_csv(sssom_path, sep='\t', comment='#')
+            combined_df = pd.read_csv(combined_cases_path, sep='\t')
+            mapping_pairs_set = set(mappings_df[['subject_id', 'object_id']].apply(tuple, axis=1))
+            combined_df2 = combined_df[
+                combined_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
+            self.assertEqual(len(combined_df), len(combined_df2), 'Not all cases have mondo.sssom.tsv mappings.')
