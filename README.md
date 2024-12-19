@@ -15,7 +15,8 @@ Python is a dev dependency. It's not needed to run the docker containers, but ne
     - a. `docker pull obolibrary/odkfull:latest`
     - b. `docker pull obolibrary/odkfull:dev`
 4. Optional: [`odkrunner`](https://github.com/gouttegd/odkrunner): Alternative to `run.sh`. If using this, you would run
-    like `odkrun make build-mondo-ingest` instead of `sh run.sh make build-mondo-ingest`.
+    like `odkrun make build-mondo-ingest` instead of `sh run.sh make build-mondo-ingest`. Suggestion: rename the binary 
+    to `odk`; this is the convention of `mondo-ingest` developers. 
 
 ## Running
 ### Full build
