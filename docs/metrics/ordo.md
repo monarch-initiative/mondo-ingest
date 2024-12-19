@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ordo.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-11-27/ordo.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-12-19/ordo.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 16 |
-| Axioms | 227556 |
-| Logical axioms | 42867 |
-| Classes | 15089 |
+| Axioms | 228273 |
+| Logical axioms | 43059 |
+| Classes | 15157 |
 | Object properties | 4 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,10 +32,10 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 169582 |
+| AnnotationAssertion | 170039 |
 | SubAnnotationPropertyOf | 1 |
-| Declaration | 15106 |
-| SubClassOf | 42867 |
+| Declaration | 15174 |
+| SubClassOf | 43059 |
 
 
 #### Entity namespaces: axiom counts by namespace
@@ -43,7 +43,7 @@
 | Metric | Value |
 | ------ | ----- |
 | dc11 | 1 |
-| prefix_unknown | 15089 |
+| prefix_unknown | 15157 |
 | oboInOwl | 6 |
 | owl | 2 |
 | rdf | 1 |
@@ -60,8 +60,8 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 100823 |
-| ObjectSomeValuesFrom | 6771 |
+| Class | 101275 |
+| ObjectSomeValuesFrom | 6799 |
 
 
 More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
