@@ -302,6 +302,7 @@ MONDO:0000849	fibrogenesis imperfecta ossium	MONDO:0002254	DOID:0080040	DOID:225
 MONDO:0000858	neuronal intestinal dysplasia	MONDO:0003409	DOID:0080072	DOID:5353	colonic disorder
 MONDO:0000859	spina bifida occulta	MONDO:0008449	DOID:0080073	DOID:0080016	spina bifida
 MONDO:0000863	myopathy, lactic acidosis, and sideroblastic anemia	MONDO:0009637	DOID:0080099	DOID:699	inborn mitochondrial myopathy
+MONDO:0000870	childhood acute lymphoblastic leukemia	MONDO:0004355	DOID:0080144	DOID:7757	childhood leukemia
 MONDO:0000870	childhood acute lymphoblastic leukemia	MONDO:0004967	DOID:0080144	DOID:9952	acute lymphoblastic leukemia
 MONDO:0000871	T-cell childhood acute lymphocytic leukemia	MONDO:0000870	DOID:0080145	DOID:0080144	childhood acute lymphoblastic leukemia
 MONDO:0000871	T-cell childhood acute lymphocytic leukemia	MONDO:0004963	DOID:0080145	DOID:5603	T-cell acute lymphoblastic leukemia
@@ -3251,6 +3252,7 @@ MONDO:0004992	cancer	MONDO:0005070	DOID:162	DOID:14566	neoplasm
 MONDO:0004993	carcinoma	MONDO:0004992	DOID:305	DOID:0050687	cancer
 MONDO:0004994	cardiomyopathy	MONDO:0005267	DOID:0050700	DOID:114	heart disorder
 MONDO:0004996	childhood acute myeloid leukemia	MONDO:0004355	DOID:0070323	DOID:7757	childhood leukemia
+MONDO:0004996	childhood acute myeloid leukemia	MONDO:0018874	DOID:0070323	DOID:9119	acute myeloid leukemia
 MONDO:0004997	chondroblastoma	MONDO:0000631	DOID:2649	DOID:0060094	bone benign neoplasm
 MONDO:0005002	chronic obstructive pulmonary disease	MONDO:0002267	DOID:3083	DOID:2320	obstructive lung disease
 MONDO:0005004	clear cell adenocarcinoma	MONDO:0004970	DOID:4468	DOID:299	adenocarcinoma
@@ -3468,7 +3470,6 @@ MONDO:0005504	diphtheria	MONDO:0000314	DOID:11405	DOID:0050338	primary bacterial
 MONDO:0005506	eccrine sweat gland cancer	MONDO:0002206	DOID:4921	DOID:2095	sweat gland cancer
 MONDO:0005507	gingival cancer	MONDO:0005515	DOID:8602	DOID:8618	oral cavity cancer
 MONDO:0005508	hereditary multiple osteochondromas	MONDO:0002181	DOID:206	DOID:203	exostosis
-MONDO:0005510	hydronephrosis	MONDO:0003330	DOID:11111	DOID:5200	urinary tract obstruction
 MONDO:0005511	janus kinase-3 deficiency	MONDO:0015974	DOID:0060008	DOID:627	severe combined immunodeficiency
 MONDO:0005512	malignant peritoneal mesothelioma	MONDO:0002087	DOID:1788	DOID:1725	peritoneum cancer
 MONDO:0005512	malignant peritoneal mesothelioma	MONDO:0006292	DOID:1788	DOID:1790	malignant mesothelioma
@@ -3525,7 +3526,7 @@ MONDO:0005640	akinetic mutism	MONDO:0005560	DOID:4267	DOID:936	brain disorder
 MONDO:0005642	atopic conjunctivitis	MONDO:0002314	DOID:11204	DOID:2475	chronic conjunctivitis
 MONDO:0005644	amebiasis	MONDO:0002428	DOID:9181	DOID:2789	protozoa infectious disease
 MONDO:0005648	aortic valve insufficiency	MONDO:0003803	DOID:57	DOID:62	aortic valve disorder
-MONDO:0005649	appendicitis	MONDO:0002031	DOID:8337	DOID:1518	cecal disorder
+MONDO:0005649	appendicitis	MONDO:0056798	DOID:8337	DOID:60000	disorder of appendix
 MONDO:0005657	aspergillosis	MONDO:0002312	DOID:13564	DOID:2473	opportunistic mycosis
 MONDO:0005659	atrophic rhinitis	MONDO:0003014	DOID:4731	DOID:4483	rhinitis
 MONDO:0005661	babesiosis	MONDO:0002428	DOID:9643	DOID:2789	protozoa infectious disease
@@ -4830,7 +4831,6 @@ MONDO:0009685	Miyoshi myopathy	MONDO:0018949	DOID:0070198	DOID:11720	distal myop
 MONDO:0009689	congenital myasthenic syndrome 6	MONDO:0018940	DOID:0110671	DOID:3635	congenital myasthenic syndrome
 MONDO:0009691	mycosis fungoides	MONDO:0000607	DOID:8691	DOID:0060061	primary cutaneous T-cell non-Hodgkin lymphoma
 MONDO:0009693	plasma cell myeloma	MONDO:0005170	DOID:9538	DOID:0070004	myeloid neoplasm
-MONDO:0009696	juvenile myoclonic epilepsy	MONDO:0000415	DOID:4890	DOID:0050705	adolescence-adult electroclinical syndrome
 MONDO:0009697	Lafora disease	MONDO:0020074	DOID:3534	DOID:891	progressive myoclonus epilepsy
 MONDO:0009698	Unverricht-Lundborg syndrome	MONDO:0020074	DOID:3535	DOID:891	progressive myoclonus epilepsy
 MONDO:0009699	action myoclonus-renal failure syndrome	MONDO:0020074	DOID:0111444	DOID:891	progressive myoclonus epilepsy
@@ -5972,7 +5972,6 @@ MONDO:0013177	congenital muscular dystrophy due to integrin alpha-7 deficiency	M
 MONDO:0013178	congenital muscular dystrophy due to LMNA mutation	MONDO:0019950	DOID:0110640	DOID:0050557	congenital muscular dystrophy
 MONDO:0013183	congenital stationary night blindness 1C	MONDO:0016293	DOID:0110867	DOID:0050534	congenital stationary night blindness
 MONDO:0013186	Noonan syndrome 6	MONDO:0018997	DOID:0060584	DOID:3490	Noonan syndrome
-MONDO:0013188	cerebellar ataxia, intellectual disability, and dysequilibrium syndrome 3	MONDO:0009133	DOID:0070558	DOID:0050997	cerebellar ataxia, intellectual disability, and dysequilibrium
 MONDO:0013189	trichotillomania	MONDO:0001162	DOID:0050587	DOID:10937	impulse control disorder
 MONDO:0013195	hypertrophic cardiomyopathy 13	MONDO:0024573	DOID:0110319	DOID:0080326	familial hypertrophic cardiomyopathy
 MONDO:0013197	hypertrophic cardiomyopathy 14	MONDO:0024573	DOID:0110320	DOID:0080326	familial hypertrophic cardiomyopathy
@@ -7979,7 +7978,6 @@ MONDO:0850368	immunoglobulin heavy-and-light chain	MONDO:0019065	DOID:0080935	DO
 MONDO:0850371	nonobstructive coronary artery disease	MONDO:0005010	DOID:0080938	DOID:3393	coronary artery disorder
 MONDO:0850388	childhood supratentorial embryonal tumor with multilayered rosettes, C19MC-altered	MONDO:0004378	DOID:0080956	DOID:7841	pediatric cerebral ependymoblastoma
 MONDO:0850416	autoimmune epilepsy	MONDO:0000568	DOID:0080994	DOID:0060004	autoimmune disorder of central nervous system
-MONDO:0850416	autoimmune epilepsy	MONDO:0005027	DOID:0080994	DOID:1826	epilepsy
 MONDO:0850417	tuberculous encephalopathy	MONDO:0018076	DOID:0080995	DOID:399	tuberculosis
 MONDO:0850418	diffuse large B-cell lymphoma activated B-cell type	MONDO:0018905	DOID:0080996	DOID:0050745	diffuse large B-cell lymphoma
 MONDO:0850419	diffuse large B-cell lymphoma germinal center B-cell type	MONDO:0018905	DOID:0080997	DOID:0050745	diffuse large B-cell lymphoma
