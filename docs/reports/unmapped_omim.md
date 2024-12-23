@@ -5,6 +5,8 @@
 | subject_id    | subject_label                                                                                             |
 |:--------------|:----------------------------------------------------------------------------------------------------------|
 | OMIMPS:219080 | ACTH-independent macronodular adrenal hyperplasia                                                         |
+| OMIMPS:300908 | Anemia, congenital, nonspherocytic hemolytic                                                              |
+| OMIMPS:617099 | Autoinflammation, panniculitis, and dermatosis syndrome                                                   |
 | OMIMPS:236270 | Homocystinuria-megaloblastic anemia                                                                       |
 | OMIMPS:251000 | Methylmalonic aciduria                                                                                    |
 | OMIMPS:616255 | Short stature with nonspecific skeletal abnormalities                                                     |
@@ -12,10 +14,12 @@
 | OMIM:620969   | anemia, congenital dyserythropoietic, type ivb                                                            |
 | OMIM:301127   | arthrogryposis multiplex congenita 7, X-linked                                                            |
 | OMIM:621004   | autoimmune disease with susceptibility to mycobacterium tuberculosis                                      |
+| OMIM:621030   | autoinflammation, panniculitis, and dermatosis syndrome, autosomal dominant                               |
 | OMIM:621018   | basal ganglia calcification, idiopathic, 10, autosomal recessive                                          |
 | OMIM:620975   | blood group, anton system                                                                                 |
 | OMIM:620943   | brain malformation renal syndrome                                                                         |
 | OMIM:620984   | bronchiectasis and nasal polyposis                                                                        |
+| OMIM:621032   | cerebral cavernous malformations 5                                                                        |
 | OMIM:620962   | cholestasis, progressive familial intrahepatic, 13                                                        |
 | OMIM:301133   | congenital disorder of glycosylation, type 1dd                                                            |
 | OMIM:620964   | congenital myopathy 25                                                                                    |
@@ -41,9 +45,11 @@
 | OMIM:621012   | neurodevelopmental disorder with dysmorphic facies, absent speech and ambulation, and brain abnormalities |
 | OMIM:621016   | neurodevelopmental disorder with variable familial hypercholanemia                                        |
 | OMIM:301132   | orofaciodigital syndrome 21                                                                               |
+| OMIM:621049   | pan-chung-bellen syndrome                                                                                 |
 | OMIM:620991   | pancreatic agenesis 3                                                                                     |
 | OMIM:621002   | premature ovarian failure 25                                                                              |
 | OMIM:620996   | retinitis pigmentosa 98                                                                                   |
 | OMIM:620938   | spastic paraplegia 93, autosomal recessive                                                                |
+| OMIM:500018   | spastic paraplegia, mitochondrial                                                                         |
 | OMIM:621001   | spermatogenic failure 96                                                                                  |
 | OMIM:620947   | spinocerebellar ataxia 51                                                                                 |
