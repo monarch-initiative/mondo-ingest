@@ -520,18 +520,9 @@ slurp-%: slurp/%.tsv
 slurp-ordo: slurp/ordo.tsv
 	$(MAKE) slurp-modifications-ordo
 
-.PHONY: slurp-no-updates-%
-slurp-no-updates-%: slurp/%.tsv
-	@echo "$@ completed".
-
 .PHONY: slurp-docs
 slurp-docs:
 	python3 $(SCRIPTSDIR)/migrate.py --docs
-
-.PHONY: slurp-all-no-updates
-slurp-all-no-updates: $(foreach n,$(ALL_COMPONENT_IDS), slurp-no-updates-$(n))
-	$(MAKE) slurp-modifications
-	@echo "$@ ($^) completed".
 
 .PHONY: slurp-all
 slurp-all: $(foreach n,$(ALL_COMPONENT_IDS), slurp-$(n))
@@ -553,7 +544,7 @@ sync: sync-subclassof sync-synonyms
 
 # Synchronization: SubclassOf
 .PHONY: sync-subclassof
-sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
+sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.confirmed-direct-source-indirect-mondo.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
 
 # todo: drop this? This is really just an alias here for quality of life, but not used by anything.
 .PHONY: sync-subclassof-%
@@ -570,11 +561,15 @@ $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONE
 $(REPORTDIR)/sync-subClassOf.confirmed.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.subclass.confirmed.robot.tsv > $@
 
-$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: $(TMPDIR)/mondo-ingest.db $(TMPDIR)/mondo.db $(TMPDIR)/mondo.sssom.tsv
+$(REPORTDIR)/sync-subClassOf.confirmed-direct-source-indirect-mondo.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.confirmed-direct-source-indirect-mondo.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(REPORTDIR)/*.subclass.confirmed-direct-source-indirect-mondo.robot.tsv > $@
+
+$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.confirmed-direct-source-indirect-mondo.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: $(TMPDIR)/mondo-ingest.db $(TMPDIR)/mondo.db $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof.py \
 	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
 	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
 	--outpath-confirmed $(REPORTDIR)/$*.subclass.confirmed.robot.tsv \
+	--outpath-confirmed-direct-source-indirect-mondo $(REPORTDIR)/$*.subclass.confirmed-direct-source-indirect-mondo.robot.tsv \
 	--outpath-direct-in-mondo-only $(REPORTDIR)/$*.subclass.direct-in-mondo-only.tsv \
 	--outpath-self-parentage $(TMPDIR)/$*.subclass.self-parentage.tsv \
 	--mondo-db-path $(TMPDIR)/mondo.db \

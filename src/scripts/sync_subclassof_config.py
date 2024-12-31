@@ -30,6 +30,8 @@ EX_DEFAULTS = {  # todo: #remove-temp-defaults
     'outpath_added': str(REPORTS_DIR / f'{EX_ONTO_NAME}.subclass.added.robot.tsv'),
     'outpath_added_obsolete': str(REPORTS_DIR / f'{EX_ONTO_NAME}.subclass.added-obsolete.robot.tsv'),
     'outpath_confirmed': str(REPORTS_DIR / f'{EX_ONTO_NAME}.subclass.confirmed.robot.tsv'),
+    'outpath_confirmed_direct_source_indirect_mondo': \
+        str(REPORTS_DIR / f'{EX_ONTO_NAME}.subclass.confirmed-direct-source-indirect-mondo.robot.tsv'),
     'onto_config_path': str(METADATA_DIR / f'{EX_ONTO_NAME}.yml'),
     'mondo_db_path': str(TMP_DIR / 'mondo.db'),
     'mondo_ingest_db_path': str(TMP_DIR / 'mondo-ingest.db'),
