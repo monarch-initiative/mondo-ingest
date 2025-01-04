@@ -15,8 +15,10 @@ http://www.geneontology.org/formats/oboInOwl#source
 http://www.geneontology.org/formats/oboInOwl#hasSynonymType
 http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty
 http://purl.obolibrary.org/obo/mondo#GENERATED
-http://purl.obolibrary.org/obo/mondo#includedEntryInOMIM
-http://purl.obolibrary.org/obo/mondo#omimFormerly
+http://purl.obolibrary.org/obo/mondo#OMIM_INCLUDED
+http://purl.obolibrary.org/obo/mondo#OMIM_FORMERLY
+http://purl.obolibrary.org/obo/OMO_0003012
+http://purl.obolibrary.org/obo/mondo#ABBREVIATION
 http://www.w3.org/2004/02/skos/core#broadMatch
 http://www.w3.org/2004/02/skos/core#narrowMatch
 http://www.w3.org/2004/02/skos/core#relatedMatch
@@ -27,5 +29,3 @@ rdfs:label
 rdfs:seeAlso
 owl:deprecated
 http://purl.org/dc/terms/description
-http://purl.obolibrary.org/obo/OMO_0003012
-http://purl.obolibrary.org/obo/mondo#ABBREVIATION
