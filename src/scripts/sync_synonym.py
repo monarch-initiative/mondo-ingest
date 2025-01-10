@@ -113,6 +113,11 @@ def _curies_to_uris_from_delim_str(uris_or_curies_str: str, delim='|') -> str:
     return '|'.join(uris)
 
 
+def lower_and_strip(x: str) -> str:
+    """Lowercase and "strip" redundant whitespace from breginning, end, and anywhere else in string."""
+    return ' '.join(x.split()).lower()
+
+
 def _common_operations(
     df: pd.DataFrame, outpath: Union[Path, str], order_cols: List[str] = list(HEADERS_TO_ROBOT_SUBHEADERS.keys()),
     sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, df_is_combined=False
@@ -130,7 +135,7 @@ def _common_operations(
     """
     # Filter exclusions
     if len(mondo_exclusions_df) > 0:
-        df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_scope', 'synonym_lower'])
+        df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_scope', 'synonym_join'])
 
     # Format
     if not df_is_combined:
@@ -267,12 +272,13 @@ def sync_synonyms(
     # Fetch excluded synonyms
     mondo_exclusions_df = pd.DataFrame(mondo_exclusion_configs['synonyms']).rename(columns={
         'id': 'mondo_id', 'scope': 'synonym_scope', 'value': 'synonym'})
-    mondo_exclusions_df['synonym_lower'] = mondo_exclusions_df['synonym'].str.lower()
+    mondo_exclusions_df['synonym_join'] = mondo_exclusions_df['synonym'].apply(lower_and_strip)
 
     # Query synonyms: source
     source_df: pd.DataFrame = _query_synonyms(mappings_df['source_id'].tolist(), source_db)\
         .rename(columns={'curie': 'source_id'})
-    source_df['synonym_lower'] = source_df['synonym'].str.lower()
+    source_df['synonym'] = source_df['synonym'].apply(lambda x: ' '.join(x.split()))  # remove redundant whitespace
+    source_df['synonym_join'] = source_df['synonym'].apply(lower_and_strip)
     source_df['source_label'] = source_df['source_id'].map(source_labels)
     source_df.drop_duplicates(inplace=True)
     # - get synonym_types: declared by the source
@@ -308,7 +314,7 @@ def sync_synonyms(
     # Query synonyms: Mondo
     mondo_df: pd.DataFrame = _read_sparql_output_tsv(mondo_synonyms_path)\
         .rename(columns={'cls_id': 'mondo_id', 'synonym_type': 'synonym_type_mondo', 'dbXref': 'source_id'})
-    mondo_df['synonym_lower'] = mondo_df['synonym'].str.lower()
+    mondo_df['synonym_join'] = mondo_df['synonym'].apply(lower_and_strip)
     # todo: utilize curies package; handle more cases
     # - URIs --> CURIEs
     mondo_df['source_id'] = mondo_df['source_id'].apply(lambda x: x.replace('https://orcid.org/', 'ORCID:'))
@@ -336,7 +342,7 @@ def sync_synonyms(
     # Determine synchronization cases
     # -confirmed
     #  Cases where scope + synonym string are the same
-    confirmed_df = mondo_df.merge(source_df, on=['synonym_scope', 'synonym_lower'], how='inner').rename(columns={
+    confirmed_df = mondo_df.merge(source_df, on=['synonym_scope', 'synonym_join'], how='inner').rename(columns={
         'synonym_x': 'synonym_case_mondo', 'synonym_y': 'synonym_case_source'})  # keep Mondo casing if different
     confirmed_df = confirmed_df[confirmed_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
     confirmed_df = _add_syn_variation_cols(confirmed_df)
@@ -346,7 +352,7 @@ def sync_synonyms(
 
     # -updated
     #  Cases where scope has is different in source
-    updated_df = mondo_df.merge(source_df, on=['synonym_lower'], how='inner').rename(columns={
+    updated_df = mondo_df.merge(source_df, on=['synonym_join'], how='inner').rename(columns={
         'synonym_scope_x': 'synonym_scope_mondo', 'synonym_scope_y': 'synonym_scope',
         'synonym_x': 'synonym_case_mondo', 'synonym_y': 'synonym_case_source'})  # keep Mondo casing if different
     updated_df = updated_df[updated_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
@@ -362,7 +368,7 @@ def sync_synonyms(
         'source_id', 'mondo_id', 'mondo_label']], on=['source_id'], how='inner')
     source_df_with_mondo_ids['synonym_case_source'] = source_df_with_mondo_ids['synonym']
     # - leave only synonyms that don't exist on given Mondo IDs
-    added_df = _filter_a_by_not_in_b(source_df_with_mondo_ids, mondo_df, ['mondo_id', 'synonym_lower'])
+    added_df = _filter_a_by_not_in_b(source_df_with_mondo_ids, mondo_df, ['mondo_id', 'synonym_join'])
     added_df = added_df[added_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
     added_df = _common_operations(added_df, outpath_added, mondo_exclusions_df=mondo_exclusions_df)
     added_df['case'] = 'added'
@@ -380,9 +386,9 @@ def sync_synonyms(
     # todo: i think this implementation is outdated post source_id refactor
     if outpath_deleted:
         deleted_df = mondo_df.merge(
-            source_df, on=['synonym_scope', 'synonym_lower'], how='left', indicator=True)
+            source_df, on=['synonym_scope', 'synonym_join'], how='left', indicator=True)
         deleted_df = deleted_df[deleted_df['_merge'] == 'left_only'].drop('_merge', axis=1)  # also can do: mondo_id=nan
-        deleted_df = _filter_a_by_not_in_b(deleted_df, updated_df, ['mondo_id', 'source_id', 'synonym_lower'])
+        deleted_df = _filter_a_by_not_in_b(deleted_df, updated_df, ['mondo_id', 'source_id', 'synonym_join'])
         deleted_df = _common_operations(deleted_df, outpath_deleted, mondo_exclusions_df=mondo_exclusions_df)
         deleted_df['case'] = 'deleted'
 
