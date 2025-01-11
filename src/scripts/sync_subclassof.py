@@ -24,7 +24,8 @@ todo's (minor)
     related to qc#1: was there a reason why _direct cases done using source IDs and _indirect Mondo IDs? I think maybe
  not. I could (a) standardize all to Mondo IDs, or (b) do the OO, then it'll always have both sets of IDs in objs.
  4. case 5: in_mondo_only -> in_direct_mondo_only. rename the param, output name, etc
- 5. #remove-temp-defaults remove EX_DEFAULTS, CLI defaults, and run_defaults() when done with development
+ 5. #remove-temp-defaults remove EX_DEFAULTS, CLI defaults, and run_defaults(). This could be done as an external script
+   that Joe uses personally but does not commit. Note: This is very useful for debugging and development updates.
  6. mondo-ingest-db -> components?: More performant at query time. But would need to make more .db files. So actually
  might be overall less performant.
  7. qc#1: Depending on which is passed into _convert_edge_namespace(), Mondo IDs or source IDs, I'm concerned
@@ -132,21 +133,12 @@ def _confirmed_df(rows: List[Dict], outpath: Union[str, Path], save=True):
 
 
 def _get_direct_scr_rels(
-    curies: List[CURIE], db: SqlImplementation, prefix_map: PREFIX_MAP = None, verbose=True
+    curies: List[CURIE], db: SqlImplementation, prefix_map: PREFIX_MAP = None
 ) -> Set[RELATIONSHIP]:
-    t0 = datetime.now()
-    ontology_name = list(prefix_map.keys())[0] if prefix_map else ''
-
-    rels_raw: List[RELATIONSHIP] = [x for x in db.relationships(
-        subjects=curies, predicates=['rdfs:subClassOf'])]
+    rels_raw: List[RELATIONSHIP] = [x for x in db.relationships(subjects=curies, predicates=['rdfs:subClassOf'])]
     # - filter out non-source parents
-    rels = set([x for x in rels_raw if any([x[2].startswith(y) for y in prefix_map])]) \
+    return set([x for x in rels_raw if any([x[2].startswith(y) for y in prefix_map])]) \
         if prefix_map else set(rels_raw)
-
-    t1 = datetime.now()
-    if verbose:
-        logging.info(f'  - from "{ontology_name}" in {(t1 - t0).seconds} seconds')
-    return rels
 
 
 def _ancestors(
@@ -195,18 +187,23 @@ def _ancestors(
 
 
 def _convert_edge_namespace(
-    rels: Iterable[RELATIONSHIP], ns_map: Dict[CURIE, Union[CURIE, List[CURIE]]], return_failed_lookups=True
+    rels: Iterable[RELATIONSHIP], ns_map: Dict[CURIE, Union[CURIE, List[CURIE]]]
 ) -> Tuple[Set[RELATIONSHIP], Set[RELATIONSHIP]]:
     """Convert edges of from 1 namespace to a mapped namespace.
 
-    failed_lookups: Each entry in this set can be 1 of 2 cases: (a) the edge exists in one ontology, represented by the
-    namespace of IDs in rels & the keys in ns_map, but it does not exist in the mapped otology, represented by the
-    namespace of IDs in rels2 & the values in ns_map; it may simply be that there are some terms in the 1st ontology
-    that do not exist in the 2nd ontology, or (b) the edges should be in both ontologies, but if the inputs
-    to this pipeline are out of sync, the mapped terms did not appear in ns_map.
+    :returns: Tuple:
+      - rels2: Set of relationships in the mapped namespace. E.g. if there is some rel in rels where subj is MONDO:123
+        and obj is MONDO:456, and these are mapped to DOID:123 and DOID:456, then the rel will be conerted to
+        (DOID:123, pred, DOID:456).
+      source is DO, then the prefixes
+      - failed_lookups: Each entry in this set can be 1 of 2 cases: (a) the edge exists in one ontology, represented by
+        the namespace of IDs in rels & the keys in ns_map, but it does not exist in the mapped otology, represented by
+        the namespace of IDs in rels2 & the values in ns_map; it may simply be that there are some terms in the 1st
+        ontology that do not exist in the 2nd ontology, or (b) the edges should be in both ontologies, but if the inputs
+        to this pipeline are out of sync, the mapped terms did not appear in ns_map.
     """
     rels2: Set[RELATIONSHIP] = set()
-    failed_lookups = set()
+    failed_lookups: Set[RELATIONSHIP] = set()
     for x in rels:
         try:
             # For Source -> Mondo, should only be 1 sub and 1 obj, subs and objs should be strings
@@ -220,7 +217,7 @@ def _convert_edge_namespace(
         except KeyError:
             failed_lookups.add(x)
 
-    return rels2, failed_lookups if return_failed_lookups else rels2
+    return rels2, failed_lookups
 
 
 def sync_subclassof(
@@ -302,10 +299,8 @@ def sync_subclassof(
     logging.info('- Collecting direct subclass relations')
     rels_direct_source_source: Set[RELATIONSHIP] = _get_direct_scr_rels(  # from source
         source_ids, ingest_db, owned_prefix_map)
-    
     if not rels_direct_source_source or len(rels_direct_source_source) < 1:
         raise ValueError("Source has no relationships. Something went wrong")
-    
     rels_direct_mondo_mondo: Set[RELATIONSHIP] = _get_direct_scr_rels(  # from Mondo
         mondo_ids, mondo_db, MONDO_PREFIX_MAP)
     rels_direct_mondo_source, rels_direct_mondo_mondo_and_1or2_ids_not_in_source = _convert_edge_namespace(
@@ -313,10 +308,8 @@ def sync_subclassof(
 
     # Get subclass edges: indirect -------------------------------------------------------------------------------------
     # - rels_indirect_mondo_mondo: Indirect relationships (Mondo IDs) from Mondo
-    # - rels_indirect_source_source: Indirect relationships (source IDs) from source
-    # - rels_indirect_source_mondo:  Relationships from rels_indirect_source_source that appear in Mondo
-    # - rels_indirect_source_mondo_and_1or2_ids_not_in_mondo: from rels_indirect_source_source not in Mondo (unused)
     # - rels_indirect_mondo_source:  Relationships from rels_indirect_mondo_mondo that appear in source
+    # - rels_indirect_source_mondo_and_1or2_ids_not_in_mondo: from rels_indirect_source_source not in Mondo (unused)
     logging.info('- Collecting indirect subclass relations')
     rels_indirect_mondo_mondo = ancestors_mondo_mondo.difference(rels_direct_mondo_mondo)
     rels_indirect_mondo_source, rels_indirect_mondo_mondo_and_1or2_ids_not_in_source = _convert_edge_namespace(
@@ -343,13 +336,13 @@ def sync_subclassof(
             '\n\nExiting.')
 
     # Determine hierarchy differences -----------------------------------------------------------------------------------
-    # todo: remove unused, commented out vars? or leave for future cases?
     logging.info('Calculating various differences in hierarchies between source and Mondo')
     # Find which edges appear in both Mondo and source, or only in one or the other
     # - direct <--> direct
     #   - Direct SCRs exist in both Mondo and source
     in_both_direct__source_edges: Set[RELATIONSHIP] = rels_direct_source_source.intersection(rels_direct_mondo_source)
     in_both_direct: List[Dict] = _edges_with_metadata_from_plain_edges(in_both_direct__source_edges, source_data_map)
+    # todo: remove unused, commented out vars? or leave for future cases?
     #   - Direct SCRs in Mondo which are not direct in source (could be indirect or non-existent)
     # in_mondo_only_direct_source_edges: Set[RELATIONSHIP] = (
     #     rels_direct_mondo_source.difference(rels_direct_source_source))
@@ -362,12 +355,12 @@ def sync_subclassof(
     #     in_source_only_direct_source_edges, source_data_map)
 
     # - direct --> indirect
+    #   - SCRs that are direct in the source but indirect in Mondo
     in_source_direct_mondo_indirect__source_edges: Set[RELATIONSHIP] = \
         rels_direct_source_source.intersection(rels_indirect_mondo_source)
     in_source_direct_mondo_indirect: List[Dict] = _edges_with_metadata_from_plain_edges(
         in_source_direct_mondo_indirect__source_edges, source_data_map)
-
-    # filter edges with: "disease" or "human disease"
+    # - filter edges with: "disease" or "human disease"
     filter_terms = ('MONDO:0000001', 'MONDO:0700096')
     in_source_direct_mondo_indirect = [
         x for x in in_source_direct_mondo_indirect
@@ -375,6 +368,7 @@ def sync_subclassof(
     ]
 
     # - indirect <--> indirect
+    # todo: currently unimplemented
     #   - Indirect SCRs that exist in both Mondo and source
     # in_both_indirect_mondo_edges: Set[RELATIONSHIP] = (
     #     rels_indirect_source_mondo.intersection(rels_indirect_mondo_mondo))
@@ -452,11 +446,7 @@ def sync_subclassof(
     df3.to_csv(outpath_added, sep='\t', index=False)
 
     # Case 5: SCR is direct in Mondo, and not in the source at all
-    rels_mondo_raw_all: List[RELATIONSHIP] = [x for x in mondo_db.relationships(
-        subjects=list(set(ss_df['subject_id'])), predicates=['rdfs:subClassOf'])]
-    rels_mondo_mondo_all = set(  # filter non-source parents
-        [x for x in rels_mondo_raw_all if any([x[2].startswith(y) for y in MONDO_PREFIX_MAP.keys()])])
-    df5 = pd.DataFrame([{'subject_id': x[0], 'object_id': x[2]} for x in rels_mondo_mondo_all])
+    df5 = pd.DataFrame([{'subject_id': x[0], 'object_id': x[2]} for x in rels_direct_mondo_mondo])
     for pos in ['subject', 'object']:
         df5[f'{pos}_label'] = df5[f'{pos}_id'].apply(lambda _id: mondo_label_lookup.get(_id, None))
     src_field = f'in_{source_name}'
