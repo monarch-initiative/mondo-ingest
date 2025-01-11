@@ -21,7 +21,6 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from src.scripts.utils import PREFIX_MAP, get_owned_prefix_map
 
 
-# todo: when combined_cases_df no longer necessary, remove 'case'
 HEADERS_TO_ROBOT_SUBHEADERS = {
     'mondo_id': 'ID',
     'mondo_label': '',
@@ -242,16 +241,13 @@ def sync_synonyms(
     ontology_db_path: Union[Path, str], mondo_synonyms_path: Union[Path, str],
     mondo_exclusion_configs: Union[Path, str], onto_synonym_types_path: Union[Path, str],
     mondo_mappings_path: Union[Path, str], onto_config_path: Union[Path, str], outpath_added: Union[Path, str],
-    outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str], outpath_deleted: Union[Path, str] = None,
-    combined_outpath_template_str='tmp/synonym_sync_combined_cases_{}.tsv'
+    outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str],
+    outpath_combined: Union[Path, str], outpath_deleted: Union[Path, str] = None,
 ):
     """Create outputs for syncing synonyms between Mondo and its sources.
 
     todo: update when -deleted is reactivated
     :param outpath_deleted: Optional. This case isn't fully fleshed out yet.
-
-    todo: if we decided that this param should stay, set as required CLI/functional param w/ no default value.
-    :param combined_outpath_template_str: Creates an additional file concatenating all case files.
 
     todo: possible refactor: labels: Maybe could be done more cleanly and consistently. At first, wanted to add to both
      source_df and mondo_df, but this caused _x and _y cols during joins, or I would have to join on those cols as well.
@@ -426,15 +422,12 @@ def sync_synonyms(
         deleted_df['case'] = 'deleted'
 
     # Write outputs
-    # todo: temp: combined_cases_df: combine all cases for analysis during development
-    if combined_outpath_template_str:
-        combined_cases_df = pd.concat([confirmed_df, added_df, updated_df, deleted_df], ignore_index=True)\
-            .fillna('')
-        combined_cases_outpath = str(combined_outpath_template_str).format(source_name)
-        combined_cases_df = _common_operations(combined_cases_df, combined_cases_outpath, df_is_combined=True)
-        combined_cases_df['source'] = source_name
-        combined_cases_df = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), combined_cases_df])
-        combined_cases_df.to_csv(combined_cases_outpath, sep='\t', index=False)
+    combined_cases_df = pd.concat([confirmed_df, added_df, updated_df, deleted_df], ignore_index=True)\
+        .fillna('')
+    combined_cases_df = _common_operations(combined_cases_df, outpath_combined, df_is_combined=True)
+    combined_cases_df['source'] = source_name
+    combined_cases_df = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), combined_cases_df])
+    combined_cases_df.to_csv(outpath_combined, sep='\t', index=False)
 
 
 def cli():
@@ -480,6 +473,9 @@ def cli():
         '-u', '--outpath-updated', required=True,
         help='Path to ROBOT template TSV to create which will contain updates to synonym scope predicate; cases where '
              'the synonym exists in Mondo and on the mapped source term, but the scope predicate is different.')
+    parser.add_argument(
+        '-b', '--outpath-combined', required=True,
+        help='Path to curation file which is a concatenation of all cases.')
     sync_synonyms(**vars(parser.parse_args()))
 
 
