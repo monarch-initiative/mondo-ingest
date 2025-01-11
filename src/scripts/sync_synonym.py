@@ -5,7 +5,7 @@ import re
 import sys
 from argparse import ArgumentParser
 from pathlib import Path
-from typing import Union, List, Tuple, Set, Dict, Any
+from typing import Union, List, Tuple, Set, Dict, Any, Callable
 
 import curies
 import pandas as pd
@@ -28,8 +28,12 @@ HEADERS_TO_ROBOT_SUBHEADERS = {
     'synonym_scope_source': '',
     'synonym_scope_mondo': '',
     'synonym': '',
+    'synonym_case_mondo': '',
     'synonym_case_diff_mondo': '',
+    'synonym_case_mondo_is_many': '',
+    'synonym_case_source': '',
     'synonym_case_diff_source': '',
+    'synonym_case_source_is_many': '',
     'source_id': '',
     'source_label': '',
     'synonym_type': '',
@@ -84,13 +88,46 @@ def _add_synonym_type_inferences(row: pd.Series, exclusions: Set[str]) -> str:
     return '|'.join(types)
 
 
-def _add_syn_variation_cols(df: pd.DataFrame) -> pd.DataFrame:
-    """Set 'synonym' col, and add cols showing capitalization differences in between Mondo and source."""
+def _handle_synonym_casing_variations(df: pd.DataFrame) -> pd.DataFrame:
+    """Add and modify fields related to synonym capitalization variations"""
+    # Set 'synonym' col
     df['synonym'] = df['synonym_case_mondo']
+    # Add cols showing capitalization differences in between Mondo and source.
     df['synonym_case_diff_mondo'] = df.apply(lambda row:
         row['synonym_case_mondo'] if row['synonym_case_mondo'] != row['synonym_case_source'] else '', axis=1)
     df['synonym_case_diff_source'] = df.apply(lambda row:
         row['synonym_case_source'] if row['synonym_case_source'] != row['synonym_case_mondo'] else '', axis=1)
+
+    # Capitalization variations for single source term synonym: drop dupe rows & aggregate
+    agg_dict: Dict[str, Union[str, Callable]] = {col: 'first' for col in df.columns}
+    agg_dict['synonym_case_source'] = '|'.join
+    df = df.groupby(['mondo_id', 'source_id', 'synonym_scope', 'synonym'], as_index=False).agg(agg_dict)
+    df['synonym_case_source_is_many'] = df['synonym_case_source'].apply(lambda x: '|' in x)
+    # - Correct synonym_case_diff_source field for these cases
+    df['synonym_case_diff_source'] = df.apply(lambda row: row['synonym_case_source']
+        if row['synonym_case_source_is_many'] else row['synonym_case_diff_source'], axis=1)
+
+    # Capitalization variations for single Mondo term synonym: keep 2+ rows, but aggregate variations in 'diff' cols
+    counts = df.groupby(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope']).size()
+    df_unique = df[
+        df.set_index(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts == 1].index)]
+    df_unique['synonym_case_mondo_is_many'] = False
+    df_duplicates = df[
+        df.set_index(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts > 1].index)]
+    if len(df_duplicates) > 0:
+        df_duplicates['synonym_case_mondo_is_many'] = True
+        # - Aggregate 'diff' col
+        #   First, create a mapping of the variations for each unique combination
+        variations = df_duplicates.groupby(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope'])[
+            'synonym_case_mondo'].agg(lambda x: '|'.join(sorted(set(x)))).reset_index()
+        #   Create a dictionary for easy lookup
+        variation_dict = variations.set_index(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope'])[
+            'synonym_case_mondo'].to_dict()
+        #   Apply this mapping to create the new column
+        df_duplicates['synonym_case_diff_mondo'] = df_duplicates.apply(lambda row:
+            variation_dict[(row['synonym_lower'], row['mondo_id'], row['source_id'], row['synonym_scope'])], axis=1)
+
+    df = pd.concat([df_unique, df_duplicates], ignore_index=True)
     return df
 
 
@@ -139,10 +176,6 @@ def _common_operations(
 
     # Format
     if not df_is_combined:
-        # - Acronyms: Use source case
-        #   This operation prevents capitalization from being lost, as sometimes Mondo has used lowercase.
-        df['synonym'] = df.apply(lambda row:
-            row['synonym_case_source'] if MONDO_ABBREV_URI in row['synonym_type'] else row['synonym'], axis=1)
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
         for scope in synonym_scopes:
@@ -345,7 +378,7 @@ def sync_synonyms(
     confirmed_df = mondo_df.merge(source_df, on=['synonym_scope', 'synonym_join'], how='inner').rename(columns={
         'synonym_x': 'synonym_case_mondo', 'synonym_y': 'synonym_case_source'})  # keep Mondo casing if different
     confirmed_df = confirmed_df[confirmed_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
-    confirmed_df = _add_syn_variation_cols(confirmed_df)
+    confirmed_df = _handle_synonym_casing_variations(confirmed_df)
     del confirmed_df['mondo_evidence']
     confirmed_df = _common_operations(confirmed_df, outpath_confirmed, mondo_exclusions_df=mondo_exclusions_df)
     confirmed_df['case'] = 'confirmed'
@@ -356,7 +389,7 @@ def sync_synonyms(
         'synonym_scope_x': 'synonym_scope_mondo', 'synonym_scope_y': 'synonym_scope',
         'synonym_x': 'synonym_case_mondo', 'synonym_y': 'synonym_case_source'})  # keep Mondo casing if different
     updated_df = updated_df[updated_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
-    updated_df = _add_syn_variation_cols(updated_df)
+    updated_df = _handle_synonym_casing_variations(updated_df)
     updated_df = updated_df[updated_df['synonym_scope_mondo'] != updated_df['synonym_scope']]
     updated_df = _common_operations(updated_df, outpath_updated, mondo_exclusions_df=mondo_exclusions_df)
     updated_df['case'] = 'updated'
