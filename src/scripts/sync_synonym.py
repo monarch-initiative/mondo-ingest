@@ -107,24 +107,24 @@ def _handle_synonym_casing_variations(df: pd.DataFrame) -> pd.DataFrame:
         if row['synonym_case_source_is_many'] else row['synonym_case_diff_source'], axis=1)
 
     # Capitalization variations for single Mondo term synonym: keep 2+ rows, but aggregate variations in 'diff' cols
-    counts = df.groupby(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope']).size()
+    counts = df.groupby(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope']).size()
     df_unique = df[
-        df.set_index(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts == 1].index)]
+        df.set_index(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts == 1].index)]
     df_unique['synonym_case_mondo_is_many'] = False
     df_duplicates = df[
-        df.set_index(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts > 1].index)]
+        df.set_index(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts > 1].index)]
     if len(df_duplicates) > 0:
         df_duplicates['synonym_case_mondo_is_many'] = True
         # - Aggregate 'diff' col
         #   First, create a mapping of the variations for each unique combination
-        variations = df_duplicates.groupby(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope'])[
+        variations = df_duplicates.groupby(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope'])[
             'synonym_case_mondo'].agg(lambda x: '|'.join(sorted(set(x)))).reset_index()
         #   Create a dictionary for easy lookup
-        variation_dict = variations.set_index(['synonym_lower', 'mondo_id', 'source_id', 'synonym_scope'])[
+        variation_dict = variations.set_index(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope'])[
             'synonym_case_mondo'].to_dict()
         #   Apply this mapping to create the new column
         df_duplicates['synonym_case_diff_mondo'] = df_duplicates.apply(lambda row:
-            variation_dict[(row['synonym_lower'], row['mondo_id'], row['source_id'], row['synonym_scope'])], axis=1)
+            variation_dict[(row['synonym_join'], row['mondo_id'], row['source_id'], row['synonym_scope'])], axis=1)
 
     df = pd.concat([df_unique, df_duplicates], ignore_index=True)
     return df
