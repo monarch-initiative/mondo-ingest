@@ -171,7 +171,7 @@ def _common_operations(
     """
     # Filter exclusions
     if len(mondo_exclusions_df) > 0:
-        df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_scope', 'synonym_join'])
+        df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_join'])
 
     # Format
     if not df_is_combined:
