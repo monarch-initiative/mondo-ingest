@@ -170,7 +170,6 @@ $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signatu
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" \
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select individuals \
 		query \
-			--update ../sparql/fix-labels-with-brackets.ru \
 			--update ../sparql/exact_syn_from_label.ru \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd11foundation.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd11foundation.owl -o $@; fi
