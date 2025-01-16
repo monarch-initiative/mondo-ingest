@@ -5,7 +5,7 @@ import sys
 from argparse import ArgumentParser
 from datetime import datetime
 from pathlib import Path
-from typing import Union, List, Dict
+from typing import Union, List
 
 import pandas as pd
 from oaklib import get_implementation_from_shorthand
