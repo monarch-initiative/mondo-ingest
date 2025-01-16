@@ -63,18 +63,6 @@ def sync_synonyms_curation_filtering(
 
     # Filter cases from -added & -updated
     df_filtered = df[~df.index.isin(df_review.index)]
-
-    # todo temp - analysis, if needed
-    ar1 = df_review[df_review['case'] == 'unconfirmed']
-    # examine
-    f_df = pd.read_csv('~/Desktop/failures.csv').rename(columns={'value': 'synonym'})
-    il = f_df.merge(df_filtered, on=['synonym'], how='left')  # 1329  todo: why some not have 'case'? makes sense if they are not from syn sync and pre-existed in Mondo but that does not appear to be case because 0 fails b4
-    ii = f_df.merge(df_filtered, on=['synonym'], how='inner')  # 358
-    # for 1 class i looked at, it's in review and not in the sync
-    ar = df_review = df_review[df_review['synonym'] == 'Zlotogora-Ogur syndrome']
-    af = df_review = df_filtered[df_filtered['synonym'] == 'Zlotogora-Ogur syndrome']
-
-    # todo temp: don't run these lines until i'm done w/ code and ready to push again
     _common_operations(df_filtered[df_filtered['case'] == 'added'], added_path, dont_make_scope_cols=True)
     _common_operations(df_filtered[df_filtered['case'] == 'updated'], updated_path, dont_make_scope_cols=True)
 
