@@ -586,7 +586,7 @@ $(SYN_SYNC_DIR):
 sync-synonyms: $(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv
 
 # side effects: Mutates .robot.tsv files, filtering out certain cases, which will instead get populated into the review-*.tsv.
-$(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv tmp/mondo-synonyms-scope-type-xref.tsv
+$(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv tmp/mondo-synonyms-scope-type-xref.tsv $(TMPDIR)/mondo.db
 	python3 $(SCRIPTSDIR)/sync_synonym_curation_filtering.py \
 	--added-path reports/sync-synonym/sync-synonyms.added.robot.tsv \
 	--confirmed-path reports/sync-synonym/sync-synonyms.confirmed.robot.tsv \
