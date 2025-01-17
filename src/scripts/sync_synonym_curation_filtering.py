@@ -61,31 +61,21 @@ def sync_synonyms_curation_filtering(
     df_all['synonym_type'] = df_all.apply(
         lambda row: row['synonym_type'] if row['synonym_type'] else row['synonym_type_mondo'], axis=1)
 
-    # TODO: why instances of only 1 thing in the sheet?
-    #  - esp if it is -confirmed or -unconfirmed
-    #  - if 2+, at least 1 of them should be -updated or -added
-    #  - problem marked w/ problem col in excel
-
     # Discover review cases: exactSynonym appears in multiple terms
     # - find all duplicative cases where scope+synonym has >1 instance
     df_all_dupes = df_all[df_all.groupby(['synonym', 'synonym_scope']).transform('size') > 1]\
         .sort_values(['synonym', 'synonym_scope', 'mondo_id', 'source_id'])
-    a1 = df_all_dupes[df_all_dupes['synonym'] == 'ACD']
     # - find all cases where, among these multiple synonym+scope instances, there is >1 associated mondo_id
     df_review_syns = df_all_dupes[
         df_all_dupes.groupby(['synonym', 'synonym_scope'])['mondo_id'].transform('nunique') > 1]
-    a2 = df_review_syns[df_review_syns['synonym'] == 'ACD']
     df_review_syns = df_review_syns.sort_values(['synonym', 'synonym_scope', 'mondo_id'])
     # - leave only exactMatch cases
     df_review_syns = df_review_syns[df_review_syns['synonym_scope'] == 'oio:hasExactSynonym']
-    a3 = df_review_syns[df_review_syns['synonym'] == 'ACD']
     # - before filtering abbreviations: handle edge cases of missing synonym_type for 1 of the duplicates
     df_review_syns['synonym_type'] = df_review_syns.groupby(
         'synonym')['synonym_type'].transform(lambda x: '|'.join(filter(None, x)))
     # - remove abbreviations; we aren't bothered by duplicates of this type
     df_review_syns = df_review_syns[~df_review_syns['synonym_type'].str.contains('MONDO:ABBREVIATION')]
-    # TODO:remove these if gone: 2+ rows b4, now just 1. any such remain?
-    a4 = df_review_syns[df_review_syns['synonym'] == 'ACD']
 
     # Discover review cases: exactSynonym appears as label in another term
     # - get mondo labels
