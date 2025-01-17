@@ -51,6 +51,7 @@ def sync_synonyms_curation_filtering(
     df_conf['synonym_scope'] = df_conf['synonym_scope_source']
     df_mondo_syns = _read_sparql_output_tsv(mondo_synonyms_path).fillna('').rename(columns={
         'cls_id': 'mondo_id', 'cls_label': 'mondo_label', 'synonym_type': 'synonym_type_mondo', 'dbXref': 'source_id'})
+    df_mondo_syns = df_mondo_syns[~df_mondo_syns['mondo_label'].str.startswith('obsolete ')]
     merge_columns = ['synonym', 'synonym_scope', 'mondo_id']
     df_mondo_conf = df_mondo_syns.merge(
         df_conf[merge_columns + ['case']], on=merge_columns, how='left', suffixes=('', '_conf'))
