@@ -2,14 +2,14 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/icd11foundation.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-12-23/icd11foundation.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-01-16/icd11foundation.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
-| Annotation properties | 12 |
-| Axioms | 309765 |
+| Annotation properties | 9 |
+| Axioms | 305291 |
 | Logical axioms | 65391 |
 | Classes | 57711 |
 | Object properties | 0 |
@@ -32,9 +32,8 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 186651 |
-| SubAnnotationPropertyOf | 1 |
-| Declaration | 57722 |
+| AnnotationAssertion | 182181 |
+| Declaration | 57719 |
 | SubClassOf | 65391 |
 
 
@@ -43,13 +42,12 @@
 | Metric | Value |
 | ------ | ----- |
 | prefix_unknown | 57713 |
-| oboInOwl | 3 |
+| oboInOwl | 1 |
 | owl | 2 |
 | rdf | 1 |
 | IAO | 1 |
 | xsd | 1 |
 | rdfs | 2 |
-| obo | 1 |
 | dc | 1 |
 
 
