@@ -7,26 +7,18 @@
 | ID            | A oboInOwl:hasDbXref | >A oboInOwl:source       |
 | MONDO:0001153 | Orphanet:459690      | MONDO:equivalentObsolete |
 | MONDO:0001807 | Orphanet:79211       | MONDO:equivalentObsolete |
-| MONDO:0001971 | Orphanet:99906       | MONDO:equivalentObsolete |
-| MONDO:0005668 | Orphanet:99908       | MONDO:equivalentObsolete |
-| MONDO:0007744 | Orphanet:79506       | MONDO:equivalentObsolete |
 | MONDO:0007761 | Orphanet:413         | MONDO:equivalentObsolete |
 | MONDO:0007779 | Orphanet:306588      | MONDO:equivalentObsolete |
-| MONDO:0008401 | Orphanet:454821      | MONDO:equivalentObsolete |
 | MONDO:0009317 | Orphanet:1245        | MONDO:equivalentObsolete |
-| MONDO:0009971 | Orphanet:70587       | MONDO:equivalentObsolete |
 | MONDO:0010045 | Orphanet:2823        | MONDO:equivalentObsolete |
 | MONDO:0010994 | Orphanet:2641        | MONDO:equivalentObsolete |
-| MONDO:0011054 | Orphanet:1027        | MONDO:equivalentObsolete |
 | MONDO:0011910 | Orphanet:265         | MONDO:equivalentObsolete |
-| MONDO:0012839 | Orphanet:183713      | MONDO:equivalentObsolete |
 | MONDO:0015120 | Orphanet:101949      | MONDO:equivalentObsolete |
 | MONDO:0015163 | Orphanet:102373      | MONDO:equivalentObsolete |
 | MONDO:0015172 | Orphanet:103912      | MONDO:equivalentObsolete |
 | MONDO:0015173 | Orphanet:103916      | MONDO:equivalentObsolete |
 | MONDO:0015217 | Orphanet:108985      | MONDO:equivalentObsolete |
 | MONDO:0015218 | Orphanet:108987      | MONDO:equivalentObsolete |
-| MONDO:0015238 | Orphanet:1135        | MONDO:equivalentObsolete |
 | MONDO:0015255 | Orphanet:1256        | MONDO:equivalentObsolete |
 | MONDO:0015297 | Orphanet:137653      | MONDO:equivalentObsolete |
 | MONDO:0015343 | Orphanet:139420      | MONDO:equivalentObsolete |
@@ -37,9 +29,6 @@
 | MONDO:0015593 | Orphanet:163914      | MONDO:equivalentObsolete |
 | MONDO:0015594 | Orphanet:163918      | MONDO:equivalentObsolete |
 | MONDO:0015602 | Orphanet:163988      | MONDO:equivalentObsolete |
-| MONDO:0015637 | Orphanet:166295      | MONDO:equivalentObsolete |
-| MONDO:0015638 | Orphanet:166299      | MONDO:equivalentObsolete |
-| MONDO:0015639 | Orphanet:166302      | MONDO:equivalentObsolete |
 | MONDO:0015902 | Orphanet:181425      | MONDO:equivalentObsolete |
 | MONDO:0015919 | Orphanet:182073      | MONDO:equivalentObsolete |
 | MONDO:0015920 | Orphanet:182076      | MONDO:equivalentObsolete |
@@ -47,7 +36,6 @@
 | MONDO:0015964 | Orphanet:183598      | MONDO:equivalentObsolete |
 | MONDO:0015965 | Orphanet:183601      | MONDO:equivalentObsolete |
 | MONDO:0015985 | Orphanet:1844        | MONDO:equivalentObsolete |
-| MONDO:0016022 | Orphanet:1935        | MONDO:equivalentObsolete |
 | MONDO:0016082 | Orphanet:2042        | MONDO:equivalentObsolete |
 | MONDO:0016111 | Orphanet:206659      | MONDO:equivalentObsolete |
 | MONDO:0016124 | Orphanet:206985      | MONDO:equivalentObsolete |
@@ -59,7 +47,6 @@
 | MONDO:0016997 | Orphanet:263676      | MONDO:equivalentObsolete |
 | MONDO:0017036 | Orphanet:264955      | MONDO:equivalentObsolete |
 | MONDO:0017083 | Orphanet:268832      | MONDO:equivalentObsolete |
-| MONDO:0017199 | Orphanet:2787        | MONDO:equivalentObsolete |
 | MONDO:0017240 | Orphanet:280651      | MONDO:equivalentObsolete |
 | MONDO:0017336 | Orphanet:289527      | MONDO:equivalentObsolete |
 | MONDO:0017378 | Orphanet:2925        | MONDO:equivalentObsolete |
@@ -86,7 +73,6 @@
 | MONDO:0018110 | Orphanet:35064       | MONDO:equivalentObsolete |
 | MONDO:0018113 | Orphanet:35098       | MONDO:equivalentObsolete |
 | MONDO:0018138 | Orphanet:352740      | MONDO:equivalentObsolete |
-| MONDO:0018212 | Orphanet:36382       | MONDO:equivalentObsolete |
 | MONDO:0018239 | Orphanet:364817      | MONDO:equivalentObsolete |
 | MONDO:0018285 | Orphanet:371054      | MONDO:equivalentObsolete |
 | MONDO:0018286 | Orphanet:371064      | MONDO:equivalentObsolete |
@@ -95,8 +81,6 @@
 | MONDO:0018665 | Orphanet:448348      | MONDO:equivalentObsolete |
 | MONDO:0018718 | Orphanet:458827      | MONDO:equivalentObsolete |
 | MONDO:0018722 | Orphanet:458841      | MONDO:equivalentObsolete |
-| MONDO:0018932 | Orphanet:57777       | MONDO:equivalentObsolete |
-| MONDO:0018981 | Orphanet:64545       | MONDO:equivalentObsolete |
 | MONDO:0019116 | Orphanet:717         | MONDO:equivalentObsolete |
 | MONDO:0019348 | Orphanet:82004       | MONDO:equivalentObsolete |
 | MONDO:0019389 | Orphanet:83648       | MONDO:equivalentObsolete |
@@ -182,7 +166,6 @@
 | MONDO:0020282 | Orphanet:98714       | MONDO:equivalentObsolete |
 | MONDO:0020489 | Orphanet:99763       | MONDO:equivalentObsolete |
 | MONDO:0020524 | Orphanet:99878       | MONDO:equivalentObsolete |
-| MONDO:0020535 | Orphanet:99907       | MONDO:equivalentObsolete |
 | MONDO:0020537 | Orphanet:99909       | MONDO:equivalentObsolete |
 | MONDO:0020742 | Orphanet:1317        | MONDO:equivalentObsolete |
 | MONDO:0020871 | Orphanet:623         | MONDO:equivalentObsolete |
@@ -190,8 +173,6 @@
 | MONDO:0022414 | Orphanet:1526        | MONDO:equivalentObsolete |
 | MONDO:0022921 | Orphanet:2861        | MONDO:equivalentObsolete |
 | MONDO:0023072 | Orphanet:1939        | MONDO:equivalentObsolete |
-| MONDO:0033672 | Orphanet:50817       | MONDO:equivalentObsolete |
 | MONDO:0043007 | Orphanet:330197      | MONDO:equivalentObsolete |
 | MONDO:0044683 | Orphanet:498700      | MONDO:equivalentObsolete |
-| MONDO:0044740 | Orphanet:500481      | MONDO:equivalentObsolete |
 | MONDO:0100343 | Orphanet:93604       | MONDO:equivalentObsolete |
