@@ -9,7 +9,7 @@ prefix sssom: <https://w3id.org/sssom/>
 
 DELETE {
   ?xref_anno a owl:Axiom ;
-    ECO:0000218 ?mapping_precision_string .
+    oboInOwl:source ?mapping_precision_string .
 } INSERT {
   ?cls a owl:Class;
       skos:broadMatch ?value .
@@ -23,7 +23,7 @@ DELETE {
     owl:annotatedSource ?cls ;
     owl:annotatedProperty ?mapping ;
     owl:annotatedTarget ?value ;
-    ECO:0000218 ?mapping_precision_string .
+    oboInOwl:source ?mapping_precision_string .
 
   FILTER(
     STRSTARTS(STR(?mapping_precision_string), "- NTBT") || 
@@ -34,7 +34,7 @@ DELETE {
 
 DELETE {
   ?xref_anno a owl:Axiom ;
-    ECO:0000218 ?mapping_precision_string .
+    oboInOwl:source ?mapping_precision_string .
 } INSERT {
   ?cls a owl:Class;
       skos:exactMatch ?value .
@@ -48,7 +48,7 @@ DELETE {
     owl:annotatedSource ?cls ;
     owl:annotatedProperty ?mapping ;
     owl:annotatedTarget ?value ;
-    ECO:0000218 ?mapping_precision_string .
+    oboInOwl:source ?mapping_precision_string .
 
   FILTER(STRSTARTS(STR(?mapping_precision_string), "E (Exact "))
 };
@@ -57,7 +57,7 @@ DELETE {
 
 DELETE {
   ?xref_anno a owl:Axiom ;
-    ECO:0000218 ?mapping_precision_string .
+    oboInOwl:source ?mapping_precision_string .
 } INSERT {
   ?cls a owl:Class;
       skos:narrowMatch ?value .
@@ -71,7 +71,7 @@ DELETE {
     owl:annotatedSource ?cls ;
     owl:annotatedProperty ?mapping ;
     owl:annotatedTarget ?value ;
-    ECO:0000218 ?mapping_precision_string .
+    oboInOwl:source ?mapping_precision_string .
 
   FILTER(
     STRSTARTS(STR(?mapping_precision_string), "BTNT") || 
@@ -83,7 +83,7 @@ DELETE {
 
 DELETE {
   ?xref_anno a owl:Axiom ;
-    ECO:0000218 ?mapping_precision_string .
+    oboInOwl:source ?mapping_precision_string .
 } WHERE {
   VALUES ?mapping { oboInOwl:hasDbXref }
 
@@ -94,7 +94,7 @@ DELETE {
     owl:annotatedSource ?cls ;
     owl:annotatedProperty ?mapping ;
     owl:annotatedTarget ?value ;
-    ECO:0000218 ?mapping_precision_string .
+    oboInOwl:source ?mapping_precision_string .
 
   FILTER(
     STRSTARTS(STR(?mapping_precision_string), "W (Wrong mapping") ||
