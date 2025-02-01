@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-01-10/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-01-31/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 28 |
-| Axioms | 134288 |
+| Axioms | 134326 |
 | Logical axioms | 16444 |
-| Classes | 13297 |
+| Classes | 13309 |
 | Object properties | 0 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,10 +32,10 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 104518 |
+| AnnotationAssertion | 104544 |
 | SubAnnotationPropertyOf | 2 |
 | DisjointClasses | 26 |
-| Declaration | 13324 |
+| Declaration | 13336 |
 | SubClassOf | 16418 |
 
 
@@ -62,7 +62,7 @@
 | IAO | 2 |
 | UBERON | 414 |
 | SO | 18 |
-| obo | 191 |
+| obo | 203 |
 | GENO | 10 |
 | dc | 1 |
 
@@ -71,7 +71,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 46345 |
+| Class | 46357 |
 
 
 More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
