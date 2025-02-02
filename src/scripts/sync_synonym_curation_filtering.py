@@ -35,7 +35,6 @@ def sync_synonyms_curation_filtering(
     mondo_synonyms_path: Union[Path, str], mondo_db_path: Union[Path, str], outpath: Union[Path, str]
 ):
     """Filter out cases where curation is needed"""
-    # todo temp: backup temporarily for development; remove when done
     tmp_dir = SRC_DIR / 'ontology' / 'tmp'
     t0 = str(datetime.now())
     for file in [added_path, confirmed_path, updated_path]:
