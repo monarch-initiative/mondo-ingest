@@ -50,7 +50,10 @@ DELETE {
     owl:annotatedTarget ?value ;
     oboInOwl:source ?mapping_precision_string .
 
-  FILTER(STRSTARTS(STR(?mapping_precision_string), "E (Exact "))
+  FILTER(
+    STRSTARTS(STR(?mapping_precision_string), "- E (Exact ") || 
+    STRSTARTS(STR(?mapping_precision_string), "E (Exact ")
+  )
 };
 
 ## Capture narrow matches
