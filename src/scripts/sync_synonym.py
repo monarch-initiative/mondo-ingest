@@ -156,7 +156,7 @@ def lower_and_strip(x: str) -> str:
 
 def _common_operations(
     df: pd.DataFrame, outpath: Union[Path, str], order_cols: List[str] = list(HEADERS_TO_ROBOT_SUBHEADERS.keys()),
-    sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, df_is_combined=False
+    sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, dont_make_scope_cols=False
 ) -> pd.DataFrame:
     """Merges synonym types, filters exclusions, does some formatting, and optionally saves.
 
@@ -174,7 +174,7 @@ def _common_operations(
         df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_join'])
 
     # Format
-    if not df_is_combined:
+    if not dont_make_scope_cols:
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
         for scope in synonym_scopes:
@@ -424,7 +424,7 @@ def sync_synonyms(
     # Write outputs
     combined_cases_df = pd.concat([confirmed_df, added_df, updated_df, deleted_df], ignore_index=True)\
         .fillna('')
-    combined_cases_df = _common_operations(combined_cases_df, outpath_combined, df_is_combined=True)
+    combined_cases_df = _common_operations(combined_cases_df, outpath_combined, dont_make_scope_cols=True)
     combined_cases_df['source'] = source_name
     combined_cases_df = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), combined_cases_df])
     combined_cases_df.to_csv(outpath_combined, sep='\t', index=False)

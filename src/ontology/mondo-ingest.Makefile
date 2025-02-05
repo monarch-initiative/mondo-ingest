@@ -583,7 +583,17 @@ $(SYN_SYNC_DIR):
 	mkdir -p $@
 
 .PHONY: sync-synonyms
-sync-synonyms: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv
+sync-synonyms: $(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv
+
+# side effects: Mutates .robot.tsv files, filtering out certain cases, which will instead get populated into the review-*.tsv.
+$(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv tmp/mondo-synonyms-scope-type-xref.tsv $(TMPDIR)/mondo.db
+	python3 $(SCRIPTSDIR)/sync_synonym_curation_filtering.py \
+	--added-path reports/sync-synonym/sync-synonyms.added.robot.tsv \
+	--confirmed-path reports/sync-synonym/sync-synonyms.confirmed.robot.tsv \
+	--updated-path reports/sync-synonym/sync-synonyms.updated.robot.tsv \
+	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
+	--mondo-db-path $(TMPDIR)/mondo.db \
+	--outpath reports/sync-synonym/review-qc-duplicate-exact-synonym-no-abbrev.tsv
 
 tmp/mondo-synonyms-scope-type-xref.tsv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
