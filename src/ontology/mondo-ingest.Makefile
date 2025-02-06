@@ -92,6 +92,7 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 			--update ../sparql/ordo-construct-subsets.ru \
 			--update ../sparql/ordo-construct-d2g.ru \
 		query --update ../sparql/ordo-replace-annotation-based-mappings.ru \
+		remove --term oboInOwl:hasDbXref --axioms "annotation" \
 		remove -T $(TMPDIR)/ordo_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ordo.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ordo.owl -o $@; fi

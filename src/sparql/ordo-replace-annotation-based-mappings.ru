@@ -10,6 +10,7 @@ prefix sssom: <https://w3id.org/sssom/>
 DELETE {
   ?xref_anno a owl:Axiom ;
     oboInOwl:source ?mapping_precision_string .
+    ?cls ?mapping ?value .
 } INSERT {
   ?cls a owl:Class;
       skos:broadMatch ?value .
@@ -35,6 +36,7 @@ DELETE {
 DELETE {
   ?xref_anno a owl:Axiom ;
     oboInOwl:source ?mapping_precision_string .
+    ?cls ?mapping ?value .
 } INSERT {
   ?cls a owl:Class;
       skos:exactMatch ?value .
@@ -61,6 +63,7 @@ DELETE {
 DELETE {
   ?xref_anno a owl:Axiom ;
     oboInOwl:source ?mapping_precision_string .
+    ?cls ?mapping ?value .
 } INSERT {
   ?cls a owl:Class;
       skos:narrowMatch ?value .
@@ -87,6 +90,7 @@ DELETE {
 DELETE {
   ?xref_anno a owl:Axiom ;
     oboInOwl:source ?mapping_precision_string .
+    ?cls ?mapping ?value .
 } WHERE {
   VALUES ?mapping { oboInOwl:hasDbXref }
 
