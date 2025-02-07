@@ -113,8 +113,9 @@ def sync_synonyms_curation_filtering(
     df_review.to_csv(outpath, sep='\t', index=False)
 
     df_filtered = df_all[~df_all.index.isin(df_review.index)]
+    # Currently only filtering out for -added
+    # _common_operations(df_filtered[df_filtered['case'] == 'updated'], updated_path, dont_make_scope_cols=True)
     _common_operations(df_filtered[df_filtered['case'] == 'added'], added_path, dont_make_scope_cols=True)
-    _common_operations(df_filtered[df_filtered['case'] == 'updated'], updated_path, dont_make_scope_cols=True)
 
 
 def cli():
