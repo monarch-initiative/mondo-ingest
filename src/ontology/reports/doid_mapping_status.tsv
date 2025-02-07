@@ -1,6 +1,7 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
 DOID:0050156	idiopathic pulmonary fibrosis	False	False	False
 DOID:0050457	Sertoli cell-only syndrome	False	False	False
+DOID:0050706	variable age at onset electroclinical syndrome	False	False	False
 DOID:0051000	autoinflammatory disease	False	False	False
 DOID:0051001	congenital dyserythropoietic anemia type IIIb	False	False	False
 DOID:0051002	congenital dyserythropoietic anemia type IVb	False	False	False
@@ -15,6 +16,34 @@ DOID:0051010	Bryant-Li-Bhoj neurodevelopmental syndrome	False	False	False
 DOID:0051011	Bryant-Li-Bhoj neurodevelopmental syndrome 1	False	False	False
 DOID:0051012	Bryant-Li-Bhoj neurodevelopmental syndrome 2	False	False	False
 DOID:0051013	pseudohypoparathyroidism type 1C	False	False	False
+DOID:0051014	atypical autosomal dominant adult-onset demyelinating leukodystrophy	False	False	False
+DOID:0051015	adult onset demyelinating leukodystrophy	False	False	False
+DOID:0051016	visceral heterotaxy 1	False	False	False
+DOID:0051017	visceral heterotaxy 2	False	False	False
+DOID:0051018	visceral heterotaxy 3	False	False	False
+DOID:0051019	visceral heterotaxy 4	False	False	False
+DOID:0051020	visceral heterotaxy 6	False	False	False
+DOID:0051021	visceral heterotaxy 7	False	False	False
+DOID:0051022	visceral heterotaxy 8	False	False	False
+DOID:0051023	visceral heterotaxy 9	False	False	False
+DOID:0051024	visceral heterotaxy 10	False	False	False
+DOID:0051025	visceral heterotaxy 11	False	False	False
+DOID:0051026	visceral heterotaxy 12	False	False	False
+DOID:0051027	visceral heterotaxy 13	False	False	False
+DOID:0051028	autosomal recessive axonal Charcot-Marie-Tooth disease with vocal cord paresis	False	False	False
+DOID:0051029	mitochondrial DNA depletion syndrome-21	False	False	False
+DOID:0051030	neurodevelopmental disorder with microcephaly, absent speech, and hypotonia	False	False	False
+DOID:0051031	autosomal dominant primary microcephaly 20	False	False	False
+DOID:0051032	autosomal dominant primary microcephaly 21	False	False	False
+DOID:0051033	autosomal dominant primary microcephaly 22	False	False	False
+DOID:0051034	autosomal dominant primary microcephaly 23	False	False	False
+DOID:0051035	autosomal dominant primary microcephaly 24	False	False	False
+DOID:0051036	autosomal dominant primary microcephaly 25	False	False	False
+DOID:0051037	autosomal dominant primary microcephaly 26	False	False	False
+DOID:0051038	autosomal dominant primary microcephaly 27	False	False	False
+DOID:0051039	autosomal dominant primary microcephaly 28	False	False	False
+DOID:0051040	autosomal dominant primary microcephaly 29	False	False	False
+DOID:0051041	autosomal dominant primary microcephaly 30	False	False	False
 DOID:0060160	childhood spinal muscular atrophy	False	False	False
 DOID:0060333	mitochondrial complex V (ATP synthase) deficiency nuclear type 4	False	False	False
 DOID:0060854	autosomal recessive pseudohypoaldosteronism type 1	False	False	False
@@ -58,6 +87,12 @@ DOID:0061021	combined pituitary hormone deficiency 3	False	False	False
 DOID:0061022	combined pituitary hormone deficiency 6	False	False	False
 DOID:0061023	nonphotosensitive trichothiodystrophy 8	False	False	False
 DOID:0061024	nonphotosensitive trichothiodystrophy 9	False	False	False
+DOID:0061025	familial restrictive cardiomyopathy 6	False	False	False
+DOID:0061026	hereditary pyropoikilocytosis	False	False	False
+DOID:0061027	Duane retraction syndrome 1	False	False	False
+DOID:0061028	Duane retraction syndrome 2	False	False	False
+DOID:0061029	Duane retraction syndrome 3	False	False	False
+DOID:0061030	hemophilia	False	False	False
 DOID:0070564	dialysis disequilibrium syndrome	False	False	False
 DOID:0070600	intellectual disability and myopathy syndrome	False	False	False
 DOID:0070601	autosomal dominant nonsyndromic deafness 37	False	False	False
@@ -3050,7 +3085,6 @@ DOID:0050702	neonatal period electroclinical syndrome	True	False	False
 DOID:0050703	infancy electroclinical syndrome	True	False	False
 DOID:0050704	childhood electroclinical syndrome	True	False	False
 DOID:0050705	adolescence-adult electroclinical syndrome	True	False	False
-DOID:0050706	variable age at onset electroclinical syndrome	True	False	False
 DOID:0050708	early onset absence epilepsy	True	False	False
 DOID:0050709	early infantile epileptic encephalopathy	True	False	False
 DOID:0050710	3-methylcrotonyl-CoA carboxylase deficiency	True	False	False
@@ -3599,7 +3633,7 @@ DOID:0060286	combined oxidative phosphorylation deficiency	True	False	False
 DOID:0060287	cornea plana	True	False	False
 DOID:0060288	omodysplasia	True	False	False
 DOID:0060289	Ohdo syndrome	True	False	False
-DOID:0060290	Ohdo syndrome,  SBBYS variant	True	False	False
+DOID:0060290	Ohdo syndrome, SBBYS variant	True	False	False
 DOID:0060291	oculodentodigital dysplasia	True	False	False
 DOID:0060292	X-linked chondrodysplasia punctata 1	True	False	False
 DOID:0060293	autosomal dominant chondrodysplasia punctata	True	False	False
@@ -3989,7 +4023,7 @@ DOID:0060781	congenital secretory sodium diarrhea 3	True	False	False
 DOID:0060782	EEC syndrome	True	False	False
 DOID:0060783	ectrodactyly, ectodermal dysplasia, and cleft lip-palate syndrome 3	True	False	False
 DOID:0060784	ectrodactyly, ectodermal dysplasia, and cleft lip-palate syndrome 1	True	False	False
-DOID:0060785	adult-onset autosomal dominant demyelinating leukodystrophy	True	False	False
+DOID:0060785	typical adult-onset autosomal dominant demyelinating leukodystrophy	True	False	False
 DOID:0060786	hypomyelinating leukodystrophy	True	False	False
 DOID:0060787	hypomyelinating leukodystrophy 2	True	False	False
 DOID:0060788	hypomyelinating leukodystrophy 10	True	False	False
@@ -7446,8 +7480,8 @@ DOID:0111229	congenital muscular dystrophy-dystroglycanopathy type A	True	False	
 DOID:0111230	congenital muscular dystrophy-dystroglycanopathy type A11	True	False	False
 DOID:0111231	congenital muscular dystrophy-dystroglycanopathy type A8	True	False	False
 DOID:0111232	congenital muscular dystrophy-dystroglycanopathy type A9	True	False	False
-DOID:0111233	congenital muscular dystrophy-dystroglycanopathy A14	True	False	False
-DOID:0111234	congenital muscular dystrophy-dystroglycanopathy A7	True	False	False
+DOID:0111233	congenital muscular dystrophy-dystroglycanopathy type A14	True	False	False
+DOID:0111234	congenital muscular dystrophy-dystroglycanopathy type A7	True	False	False
 DOID:0111235	congenital muscular dystrophy-dystroglycanopathy type A12	True	False	False
 DOID:0111236	congenital muscular dystrophy-dystroglycanopathy type A3	True	False	False
 DOID:0111237	congenital muscular dystrophy-dystroglycanopathy type A1	True	False	False
@@ -7636,9 +7670,9 @@ DOID:0111421	familial apolipoprotein A5 deficiency	True	False	False
 DOID:0111422	familial lipase maturation factor 1 deficiency	True	False	False
 DOID:0111423	branchiootorenal syndrome 1	True	False	False
 DOID:0111424	branchiootorenal syndrome 2	True	False	False
-DOID:0111425	restrictive cardiomyopathy 1	True	False	False
-DOID:0111426	restrictive cardiomyopathy 2	True	False	False
-DOID:0111427	restrictive cardiomyopathy 3	True	False	False
+DOID:0111425	familial restrictive cardiomyopathy 1	True	False	False
+DOID:0111426	familial restrictive cardiomyopathy 2	True	False	False
+DOID:0111427	familial restrictive cardiomyopathy 3	True	False	False
 DOID:0111428	essential tremor 1	True	False	False
 DOID:0111429	essential tremor 2	True	False	False
 DOID:0111430	essential tremor 3	True	False	False
@@ -7908,7 +7942,7 @@ DOID:0111693	familial adult myoclonic epilepsy 4	True	False	False
 DOID:0111694	familial adult myoclonic epilepsy 7	True	False	False
 DOID:0111695	familial adult myoclonic epilepsy 3	True	False	False
 DOID:0111696	familial adult myoclonic epilepsy 6	True	False	False
-DOID:0111697	cleft palate, cardiac defects, and intellectual disabillity	True	False	False
+DOID:0111697	cleft palate, cardiac defects, and intellectual disability	True	False	False
 DOID:0111698	proprotein convertase 1/3 deficiency	True	False	False
 DOID:0111699	Van den Ende-Gupta syndrome	True	False	False
 DOID:0111700	ankyrin-B-related cardiac arrhythmia	True	False	False
@@ -13258,7 +13292,7 @@ DOID:7574	pancreatic intraductal papillary-colloid carcinoma	True	False	False
 DOID:7575	pancreatic intraductal papillary-mucinous neoplasm	True	False	False
 DOID:7577	pancreatic foamy gland adenocarcinoma	True	False	False
 DOID:7578	breast scirrhous carcinoma	True	False	False
-DOID:758	situs inversus	True	False	False
+DOID:758	visceral heterotaxy 5	True	False	False
 DOID:7583	glottis verrucous carcinoma	True	False	False
 DOID:7584	subglottis verrucous carcinoma	True	False	False
 DOID:7585	subglottis squamous cell carcinoma	True	False	False
