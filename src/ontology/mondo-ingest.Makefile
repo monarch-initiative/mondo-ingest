@@ -613,8 +613,7 @@ $(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.confirmed.robot.tsv $(
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(TMPDIR)/$*.synonyms.added.robot.tsv \
 	--outpath-confirmed $(TMPDIR)/$*.synonyms.confirmed.robot.tsv \
-	--outpath-updated $(TMPDIR)/$*.synonyms.updated.robot.tsv \
-   	--outpath-combined $(TMPDIR)/synonym_sync_combined_cases_$*.tsv
+	--outpath-updated $(TMPDIR)/$*.synonyms.updated.robot.tsv
 
 ##################################
 ## Externally managed content ####
