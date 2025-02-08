@@ -585,15 +585,17 @@ $(SYN_SYNC_DIR):
 .PHONY: sync-synonyms
 sync-synonyms: $(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv
 
-# side effects: Mutates .robot.tsv files, filtering out certain cases, which will instead get populated into the review-*.tsv.
-$(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv: $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv tmp/mondo-synonyms-scope-type-xref.tsv $(TMPDIR)/mondo.db
+$(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv: $(TMPDIR)/sync-synonyms.added.robot.tsv $(TMPDIR)/sync-synonyms.confirmed.robot.tsv $(TMPDIR)/sync-synonyms.updated.robot.tsv tmp/mondo-synonyms-scope-type-xref.tsv $(TMPDIR)/mondo.db
 	python3 $(SCRIPTSDIR)/sync_synonym_curation_filtering.py \
-	--added-path reports/sync-synonym/sync-synonyms.added.robot.tsv \
-	--confirmed-path reports/sync-synonym/sync-synonyms.confirmed.robot.tsv \
-	--updated-path reports/sync-synonym/sync-synonyms.updated.robot.tsv \
-	--mondo-synonyms-path tmp/mondo-synonyms-scope-type-xref.tsv \
-	--mondo-db-path $(TMPDIR)/mondo.db \
-	--outpath reports/sync-synonym/review-qc-duplicate-exact-synonym-no-abbrev.tsv
+	--added-inpath $(TMPDIR)/sync-synonyms.added.robot.tsv \
+	--confirmed-inpath $(TMPDIR)/sync-synonyms.confirmed.robot.tsv \
+	--updated-inpath $(TMPDIR)/sync-synonyms.updated.robot.tsv \
+	--added-outpath $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv \
+	--confirmed-outpath $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv \
+	--updated-outpath $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv \
+	--mondo-synonyms-inpath $(TMPDIR)/mondo-synonyms-scope-type-xref.tsv \
+	--mondo-db-inpath $(TMPDIR)/mondo.db \
+	--review-outpath reports/sync-synonym/review-qc-duplicate-exact-synonym-no-abbrev.tsv
 
 tmp/mondo-synonyms-scope-type-xref.tsv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
@@ -610,16 +612,16 @@ $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONE
 		tail -n +3 $$file >> $@; \
 	done
 
-$(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.added.robot.tsv > $@
+$(TMPDIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.added.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.added.robot.tsv > $@
 
-$(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.confirmed.robot.tsv)
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.confirmed.robot.tsv > $@
+$(TMPDIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.confirmed.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.confirmed.robot.tsv > $@
 
-$(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.updated.robot.tsv)
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.updated.robot.tsv > $@
+$(TMPDIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.updated.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.updated.robot.tsv > $@
 
-$(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.updated.robot.tsv $(TMPDIR)/synonym_sync_combined_cases_%.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(SYN_SYNC_DIR)
+$(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.confirmed.robot.tsv $(TMPDIR)/%-synonyms.updated.robot.tsv $(TMPDIR)/synonym_sync_combined_cases_%.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
@@ -627,9 +629,9 @@ $(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.
 	--mondo-exclusion-configs config/mondo-exclusion-configs.yml \
 	--onto-synonym-types-path tmp/$*-synonyms-scope-type-xref.tsv \
 	--onto-config-path metadata/$*.yml \
-	--outpath-added $(SYN_SYNC_DIR)/$*.synonyms.added.robot.tsv \
-	--outpath-confirmed $(SYN_SYNC_DIR)/$*.synonyms.confirmed.robot.tsv \
-	--outpath-updated $(SYN_SYNC_DIR)/$*.synonyms.updated.robot.tsv \
+	--outpath-added $(TMPDIR)/$*.synonyms.added.robot.tsv \
+	--outpath-confirmed $(TMPDIR)/$*.synonyms.confirmed.robot.tsv \
+	--outpath-updated $(TMPDIR)/$*.synonyms.updated.robot.tsv \
    	--outpath-combined $(TMPDIR)/synonym_sync_combined_cases_$*.tsv
 
 ##################################

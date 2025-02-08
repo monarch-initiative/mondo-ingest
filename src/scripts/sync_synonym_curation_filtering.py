@@ -35,11 +35,6 @@ def sync_synonyms_curation_filtering(
     mondo_synonyms_path: Union[Path, str], mondo_db_path: Union[Path, str], outpath: Union[Path, str]
 ):
     """Filter out cases where curation is needed"""
-    tmp_dir = SRC_DIR / 'ontology' / 'tmp'
-    t0 = str(datetime.now())
-    for file in [added_path, confirmed_path, updated_path]:
-        shutil.copy(file, tmp_dir / f"{Path(file).name.replace('.robot.tsv', '')}_{t0}.robot.tsv")
-
     # Read -added & -updated
     df_add: pd.DataFrame = _read_synonym_file(added_path, 'added')
     df_upd: pd.DataFrame = _read_synonym_file(updated_path, 'updated')
@@ -124,22 +119,31 @@ def cli():
         prog='sync-synonyms-curation-filtering',
         description='Filter out cases where curation is needed')
     parser.add_argument(
-        '-a', '--added-path', required=True,
-        help='Path to ROBOT template TSV containing synonyms that aren\'t yet integrated into Mondo.')
+        '-a', '--added-inpath', required=True,
+        help='Path to input ROBOT template TSV containing synonyms that aren\'t yet integrated into Mondo.')
     parser.add_argument(
-        '-c', '--confirmed-path', required=True,
-        help='Path to ROBOT template TSV containing synonym confirmations.')
+        '-c', '--confirmed-inpath', required=True,
+        help='Path to input ROBOT template TSV containing synonym confirmations.')
     parser.add_argument(
-        '-u', '--updated-path', required=True,
-        help='Path to ROBOT template TSV containing updates to synonym scope.')
+        '-u', '--updated-inpath', required=True,
+        help='Path to input ROBOT template TSV containing updates to synonym scope.')
     parser.add_argument(
-        '-m', '--mondo-synonyms-path', required=True,
+        '-A', '--added-outpath', required=True,
+        help='Path to filtered ROBOT template TSV containing synonyms that aren\'t yet integrated into Mondo.')
+    parser.add_argument(
+        '-C', '--confirmed-outpath', required=True,
+        help='Path to filtered ROBOT template TSV containing synonym confirmations.')
+    parser.add_argument(
+        '-U', '--updated-outpath', required=True,
+        help='Path to filtered ROBOT template TSV containing updates to synonym scope.')
+    parser.add_argument(
+        '-m', '--mondo-synonyms-inpath', required=True,
         help='Path to a TSV containing information about Mondo synonyms. Columns: ?mondo_id, ?dbXref, ?synonym_scope, '
              '?synonym, synonym_type.')
     parser.add_argument(
-        '-M', '--mondo-db-path', required=True, help='Path to Mondo SemanticSQL DB.')
+        '-M', '--mondo-db-inpath', required=True, help='Path to Mondo SemanticSQL DB.')
     parser.add_argument(
-        '-o', '--outpath', required=True,
+        '-o', '--review-outpath', required=True,
         help='Path to curation file for review.')
     sync_synonyms_curation_filtering(**vars(parser.parse_args()))
 
