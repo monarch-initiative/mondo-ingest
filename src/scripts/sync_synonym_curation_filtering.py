@@ -9,13 +9,13 @@ import pandas as pd
 from oaklib import get_adapter
 from oaklib.types import CURIE, URI
 
-from src.scripts.utils import remove_angle_brackets
 
 HERE = Path(os.path.abspath(os.path.dirname(__file__)))
 SRC_DIR = HERE.parent
 PROJECT_ROOT = SRC_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 from src.scripts.sync_synonym import _common_operations, _read_sparql_output_tsv
+from src.scripts.utils import remove_angle_brackets
 
 
 def _read_synonym_file(path: Union[Path, str], case: str) -> pd.DataFrame:
