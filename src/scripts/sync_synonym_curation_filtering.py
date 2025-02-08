@@ -1,9 +1,7 @@
 """Filter out cases where curation is needed"""
 import os
-import shutil
 import sys
 from argparse import ArgumentParser
-from datetime import datetime
 from pathlib import Path
 from typing import Union, List
 
@@ -31,24 +29,27 @@ def _read_synonym_file(path: Union[Path, str], case: str) -> pd.DataFrame:
 
 
 def sync_synonyms_curation_filtering(
-    added_path: Union[Path, str], confirmed_path: Union[Path, str], updated_path: Union[Path, str],
-    mondo_synonyms_path: Union[Path, str], mondo_db_path: Union[Path, str], outpath: Union[Path, str]
+    added_inpath: Union[Path, str], confirmed_inpath: Union[Path, str], updated_inpath: Union[Path, str],
+    added_outpath: Union[Path, str], confirmed_outpath: Union[Path, str], updated_outpath: Union[Path, str],
+    mondo_synonyms_inpath: Union[Path, str], mondo_db_inpath: Union[Path, str], review_outpath: Union[Path, str],
+    filter_updated=False
 ):
     """Filter out cases where curation is needed"""
     # Read -added & -updated
-    df_add: pd.DataFrame = _read_synonym_file(added_path, 'added')
-    df_upd: pd.DataFrame = _read_synonym_file(updated_path, 'updated')
+    df_add: pd.DataFrame = _read_synonym_file(added_inpath, 'added')
+    df_upd: pd.DataFrame = _read_synonym_file(updated_inpath, 'updated')
 
     # Read -confirmed & ascertain unconfirmed
-    df_conf = pd.read_csv(confirmed_path, sep='\t').drop(0).fillna('')  # Not de-duped. Used for informational purposes.
-    df_conf['case'] = 'confirmed'
-    df_conf['synonym_scope'] = df_conf['synonym_scope_source']
-    df_mondo_syns = _read_sparql_output_tsv(mondo_synonyms_path).fillna('').rename(columns={
+    df_conf = pd.read_csv(confirmed_inpath, sep='\t').drop(0).fillna('')  # Not de-duped. Used for informational purposes.
+    df_conf2 = df_conf.copy()
+    df_conf2['case'] = 'confirmed'
+    df_conf2['synonym_scope'] = df_conf2['synonym_scope_source']
+    df_mondo_syns = _read_sparql_output_tsv(mondo_synonyms_inpath).fillna('').rename(columns={
         'cls_id': 'mondo_id', 'cls_label': 'mondo_label', 'synonym_type': 'synonym_type_mondo', 'dbXref': 'source_id'})
     df_mondo_syns = df_mondo_syns[~df_mondo_syns['mondo_label'].str.startswith('obsolete ')]
     merge_columns = ['synonym', 'synonym_scope', 'mondo_id']
     df_mondo_conf = df_mondo_syns.merge(
-        df_conf[merge_columns + ['case']], on=merge_columns, how='left', suffixes=('', '_conf'))
+        df_conf2[merge_columns + ['case']], on=merge_columns, how='left', suffixes=('', '_conf'))
     df_mondo_syns['case'] = df_mondo_conf['case'].fillna('unconfirmed')
 
     # Group all sources of synonyms & labels cases together
@@ -60,22 +61,24 @@ def sync_synonyms_curation_filtering(
     # - find all duplicative cases where scope+synonym has >1 instance
     df_all_dupes = df_all[df_all.groupby(['synonym', 'synonym_scope']).transform('size') > 1]\
         .sort_values(['synonym', 'synonym_scope', 'mondo_id', 'source_id'])
-    # - find all cases where, among these multiple synonym+scope instances, there is >1 associated mondo_id
-    df_review_syns = df_all_dupes[
-        df_all_dupes.groupby(['synonym', 'synonym_scope'])['mondo_id'].transform('nunique') > 1]
-    df_review_syns = df_review_syns.sort_values(['synonym', 'synonym_scope', 'mondo_id'])
-    # - leave only exactMatch cases
-    df_review_syns = df_review_syns[df_review_syns['synonym_scope'] == 'oio:hasExactSynonym']
-    # - before filtering abbreviations: handle edge cases of missing synonym_type for 1 of the duplicates
-    df_review_syns['synonym_type'] = df_review_syns.groupby(
-        'synonym')['synonym_type'].transform(lambda x: '|'.join(filter(None, x)))
-    # - remove abbreviations; we aren't bothered by duplicates of this type
-    df_review_syns = df_review_syns[~df_review_syns['synonym_type'].str.contains('MONDO:ABBREVIATION')]
+    df_review_syns = pd.DataFrame()
+    if len(df_all_dupes) > 0:
+        # - find all cases where, among these multiple synonym+scope instances, there is >1 associated mondo_id
+        df_review_syns = df_all_dupes[
+            df_all_dupes.groupby(['synonym', 'synonym_scope'])['mondo_id'].transform('nunique') > 1]
+        df_review_syns = df_review_syns.sort_values(['synonym', 'synonym_scope', 'mondo_id'])
+        # - leave only exactMatch cases
+        df_review_syns = df_review_syns[df_review_syns['synonym_scope'] == 'oio:hasExactSynonym']
+        # - before filtering abbreviations: handle edge cases of missing synonym_type for 1 of the duplicates
+        df_review_syns['synonym_type'] = df_review_syns.groupby(
+            'synonym')['synonym_type'].transform(lambda x: '|'.join(filter(None, x)))
+        # - remove abbreviations; we aren't bothered by duplicates of this type
+        df_review_syns = df_review_syns[~df_review_syns['synonym_type'].str.contains('MONDO:ABBREVIATION')]
 
     # Discover review cases: exactSynonym appears as label in another term
     # - get mondo labels
     # todo: this (reading Mondo & only filtering by its terms (nad possibly labels)) should be a utility func somewhere
-    oi = get_adapter(mondo_db_path)
+    oi = get_adapter(mondo_db_inpath)
     ids_all: List[Union[CURIE, URI]] = [x for x in oi.entities(filter_obsoletes=False)]
     ids_all = remove_angle_brackets(ids_all)
     id_labels_all: List[tuple] = [x for x in oi.labels(ids_all)]
@@ -90,27 +93,34 @@ def sync_synonyms_curation_filtering(
     df_review_labs = df_sync.merge(df_mondo_labs, left_on=['synonym'], right_on=['mondo_label'], how='inner')
     df_review_labs = df_review_labs[df_review_labs['mondo_id_x'] != df_review_labs['mondo_id_y']].rename(columns={
         'mondo_id_x': 'mondo_id', 'mondo_id_y': 'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label'})
-    del df_review_labs['mondo_label']  # this is left over from the merge; not useful information
-    # - remove abbreviations; we aren't bothered by duplicates of this type
-    df_review_labs = df_review_labs.merge(df_mondo_syns[['mondo_id', 'synonym', 'synonym_scope', 'synonym_type_mondo']],
-        on=['mondo_id', 'synonym', 'synonym_scope'], how='left').fillna('')
-    df_review_labs['synonym_type'] = df_review_labs.apply(
-        lambda row: row['synonym_type'] if row['synonym_type'] else row['synonym_type_mondo'], axis=1)
-    del df_review_labs['synonym_type_mondo']
-    df_review_labs['synonym_type'] = df_review_labs.groupby(
-        'synonym')['synonym_type'].transform(lambda x: '|'.join(filter(None, x)))
-    df_review_labs = df_review_labs[~df_review_labs['synonym_type'].str.contains('MONDO:ABBREVIATION')]
+    if len(df_review_labs) > 0:
+        del df_review_labs['mondo_label']  # this is left over from the merge; not useful information
+        # - remove abbreviations; we aren't bothered by duplicates of this type
+        df_review_labs = df_review_labs.merge(df_mondo_syns[['mondo_id', 'synonym', 'synonym_scope', 'synonym_type_mondo']],
+            on=['mondo_id', 'synonym', 'synonym_scope'], how='left').fillna('')
+        df_review_labs['synonym_type'] = df_review_labs.apply(
+            lambda row: row['synonym_type'] if row['synonym_type'] else row['synonym_type_mondo'], axis=1)
+        del df_review_labs['synonym_type_mondo']
+        df_review_labs['synonym_type'] = df_review_labs.groupby(
+            'synonym')['synonym_type'].transform(lambda x: '|'.join(filter(None, x)))
+        df_review_labs = df_review_labs[~df_review_labs['synonym_type'].str.contains('MONDO:ABBREVIATION')]
 
     # Generate outputs & save
-    df_review = pd.concat([df_review_syns, df_review_labs], ignore_index=True)[['synonym', 'mondo_id', 'source_id',
-        'case', 'synonym_type', 'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label']]\
+    # - review file
+    df_review = pd.concat([df_review_syns, df_review_labs], ignore_index=True)
+    if len(df_review) > 0:
+        df_review = df_review[['synonym', 'mondo_id', 'source_id', 'case', 'synonym_type',
+            'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label']]\
         .sort_values(['synonym', 'mondo_id'])
-    df_review.to_csv(outpath, sep='\t', index=False)
-
+    df_review.to_csv(review_outpath, sep='\t', index=False)
+    # - unfiltered outputs
+    df_upd.to_csv(updated_outpath, sep='\t', index=False)
+    df_conf.to_csv(confirmed_outpath, sep='\t', index=False)
+    # - filtered outputs
     df_filtered = df_all[~df_all.index.isin(df_review.index)]
-    # Currently only filtering out for -added
-    # _common_operations(df_filtered[df_filtered['case'] == 'updated'], updated_path, dont_make_scope_cols=True)
-    _common_operations(df_filtered[df_filtered['case'] == 'added'], added_path, dont_make_scope_cols=True)
+    if filter_updated:
+        _common_operations(df_filtered[df_filtered['case'] == 'updated'], updated_outpath, dont_make_scope_cols=True)
+    _common_operations(df_filtered[df_filtered['case'] == 'added'], added_outpath, dont_make_scope_cols=True)
 
 
 def cli():
