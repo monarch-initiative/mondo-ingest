@@ -156,7 +156,7 @@ def lower_and_strip(x: str) -> str:
 
 def _common_operations(
     df: pd.DataFrame, outpath: Union[Path, str], order_cols: List[str] = list(HEADERS_TO_ROBOT_SUBHEADERS.keys()),
-    sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, df_is_combined=False
+    sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, dont_make_scope_cols=False
 ) -> pd.DataFrame:
     """Merges synonym types, filters exclusions, does some formatting, and optionally saves.
 
@@ -171,10 +171,10 @@ def _common_operations(
     """
     # Filter exclusions
     if len(mondo_exclusions_df) > 0:
-        df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_scope', 'synonym_join'])
+        df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_join'])
 
     # Format
-    if not df_is_combined:
+    if not dont_make_scope_cols:
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
         for scope in synonym_scopes:
