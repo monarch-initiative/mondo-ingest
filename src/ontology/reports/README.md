@@ -68,12 +68,12 @@ Created by running `cd src/ontology; sh run.sh make reports/<ONTOLOGY_NAME>_excl
 
 ### 7. `reports/sync-synonym/review-qc-duplicate-exact-synonym-no-abbrev.tsv`
 **What this file represents**
-This file shows cases that were filtered out of the synonym sync because they caused conflicts, identified by qc-duplicate-exact-synonym-no-abbrev.sparql.
+This file shows cases `-added` that were filtered out of the synonym sync because they caused conflicts, identified by `qc-duplicate-exact-synonym-no-abbrev.sparql` in the `mondo` repo.
 
 **Columns**
 - `synonym`
-- `mondo_id`: The Mondo term that is getting affected by an -added or -updated synonym change. If the 'case' for the row 
-is -confirmed or -unconfirmed, then this synonym already exists in that Mondo term.
+- `mondo_id`: The Mondo term that is getting affected by an `-added` or synonym change. If the 'case' for the row 
+is `-confirmed` or `-unconfirmed`, then this synonym already exists in that Mondo term.
 - `source_id`: The source term ID that the synonym is coming from. In the case that a synonym appears in multiple 
 sources, there will be multiple rows.
 - `case`: 'added' or 'updated', this is a new synonym or changed synonym scope which is coming in through the synonym 
@@ -95,11 +95,11 @@ You don't want to review just 1 row in isolation. You want to review 1 at a time
 For example:
 | synonym | mondo_id | source_id | case |
 | --- | --- | --- | --- |
-| 3C syndrome | MONDO:0009073 | OMIM:220210 | updated |
+| 3C syndrome | MONDO:0009073 | OMIM:220210 | added |
 | 3C syndrome | MONDO:0019078 | GARD:0005666 | confirmed |
 | 3C syndrome | MONDO:0019078 | Orphanet:7 | confirmed |
 
-The conflict here is in the first of these rows. The synonym sync wants to update the synonym scope on MONDO:0009073, as evidenced by OMIM:220210. However, in changing it to exactSynonym, there would be a conflict, because that synonym already exists on MONDO:0019078, where it is evidenced by GARD:0005666 and Orphanet:7.
+The conflict here is in the first of these rows. The synonym sync wants to add this synonym to MONDO:0009073, as evidenced by OMIM:220210. However this introduces a conflict because that synonym already exists on MONDO:0019078, where it is evidenced by GARD:0005666 and Orphanet:7.
 
 _Example 2: exactSynonym-label conflict_
 | synonym | mondo_id | source_id | case | filtered_because_this_mondo_id_already_has_this_synonym_as_its_label |
