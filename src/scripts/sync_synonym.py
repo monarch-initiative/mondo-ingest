@@ -241,8 +241,7 @@ def sync_synonyms(
     ontology_db_path: Union[Path, str], mondo_synonyms_path: Union[Path, str],
     mondo_exclusion_configs: Union[Path, str], onto_synonym_types_path: Union[Path, str],
     mondo_mappings_path: Union[Path, str], onto_config_path: Union[Path, str], outpath_added: Union[Path, str],
-    outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str],
-    outpath_combined: Union[Path, str], outpath_deleted: Union[Path, str] = None,
+    outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str], outpath_deleted: Union[Path, str] = None,
 ):
     """Create outputs for syncing synonyms between Mondo and its sources.
 
@@ -421,14 +420,6 @@ def sync_synonyms(
         deleted_df = _common_operations(deleted_df, outpath_deleted, mondo_exclusions_df=mondo_exclusions_df)
         deleted_df['case'] = 'deleted'
 
-    # Write outputs
-    combined_cases_df = pd.concat([confirmed_df, added_df, updated_df, deleted_df], ignore_index=True)\
-        .fillna('')
-    combined_cases_df = _common_operations(combined_cases_df, outpath_combined, dont_make_scope_cols=True)
-    combined_cases_df['source'] = source_name
-    combined_cases_df = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), combined_cases_df])
-    combined_cases_df.to_csv(outpath_combined, sep='\t', index=False)
-
 
 def cli():
     """Command line interface."""
@@ -473,9 +464,6 @@ def cli():
         '-u', '--outpath-updated', required=True,
         help='Path to ROBOT template TSV to create which will contain updates to synonym scope predicate; cases where '
              'the synonym exists in Mondo and on the mapped source term, but the scope predicate is different.')
-    parser.add_argument(
-        '-b', '--outpath-combined', required=True,
-        help='Path to curation file which is a concatenation of all cases.')
     sync_synonyms(**vars(parser.parse_args()))
 
 

@@ -91,7 +91,8 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 			--update ../sparql/ordo-construct-subclass-from-part-of.ru \
 			--update ../sparql/ordo-construct-subsets.ru \
 			--update ../sparql/ordo-construct-d2g.ru \
-			--update ../sparql/ordo-replace-annotation-based-mappings.ru \
+		query --update ../sparql/ordo-replace-annotation-based-mappings.ru \
+		remove --term oboInOwl:hasDbXref --axioms "annotation" \
 		remove -T $(TMPDIR)/ordo_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ordo.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ordo.owl -o $@; fi
@@ -606,12 +607,6 @@ tmp/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
 ../../tests/input/sync_synonym/%-synonyms-scope-type-xref.tsv:
 	$(ROBOT) query -i ../../tests/input/sync_synonym/test_$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
-$(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/synonym_sync_combined_cases_$(n).tsv)
-	head -n 2 $< > $@
-	for file in $^; do \
-		tail -n +3 $$file >> $@; \
-	done
-
 $(TMPDIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.added.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.added.robot.tsv > $@
 
@@ -621,7 +616,7 @@ $(TMPDIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $
 $(TMPDIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.updated.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.updated.robot.tsv > $@
 
-$(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.confirmed.robot.tsv $(TMPDIR)/%-synonyms.updated.robot.tsv $(TMPDIR)/synonym_sync_combined_cases_%.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(TMPDIR)
+$(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.confirmed.robot.tsv $(TMPDIR)/%-synonyms.updated.robot.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml tmp/mondo-synonyms-scope-type-xref.tsv tmp/%-synonyms-scope-type-xref.tsv | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
@@ -631,8 +626,7 @@ $(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.confirmed.robot.tsv $(
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(TMPDIR)/$*.synonyms.added.robot.tsv \
 	--outpath-confirmed $(TMPDIR)/$*.synonyms.confirmed.robot.tsv \
-	--outpath-updated $(TMPDIR)/$*.synonyms.updated.robot.tsv \
-   	--outpath-combined $(TMPDIR)/synonym_sync_combined_cases_$*.tsv
+	--outpath-updated $(TMPDIR)/$*.synonyms.updated.robot.tsv
 
 ##################################
 ## Externally managed content ####
