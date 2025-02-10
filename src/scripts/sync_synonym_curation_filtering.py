@@ -20,8 +20,7 @@ from src.scripts.utils import remove_angle_brackets
 
 def _read_synonym_file(path: Union[Path, str], case: str) -> pd.DataFrame:
     """Does special operations for reading in a synonym sync robot.tsv in this context"""
-    df = pd.read_csv(path, sep='\t').rename(columns={'synonym_scope_source': 'synonym_scope'}) \
-        .drop(0)[['synonym', 'synonym_scope', 'mondo_id', 'source_id', 'synonym_type']].fillna('')
+    df = pd.read_csv(path, sep='\t').rename(columns={'synonym_scope_source': 'synonym_scope'}).drop(0).fillna('')
     df['synonym_type'] = df['synonym_type'].apply(
         lambda x: x.replace('http://purl.obolibrary.org/obo/mondo#ABBREVIATION', 'MONDO:ABBREVIATION'))
     df['case'] = case
@@ -94,13 +93,12 @@ def sync_synonyms_curation_filtering(
     df_review_labs = df_review_labs[df_review_labs['mondo_id_x'] != df_review_labs['mondo_id_y']].rename(columns={
         'mondo_id_x': 'mondo_id', 'mondo_id_y': 'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label'})
     if len(df_review_labs) > 0:
-        del df_review_labs['mondo_label']  # this is left over from the merge; not useful information
         # - remove abbreviations; we aren't bothered by duplicates of this type
-        df_review_labs = df_review_labs.merge(df_mondo_syns[['mondo_id', 'synonym', 'synonym_scope', 'synonym_type_mondo']],
+        df_review_labs = df_review_labs.drop('synonym_type_mondo', axis=1)\
+            .merge(df_mondo_syns[['mondo_id', 'synonym', 'synonym_scope', 'synonym_type_mondo']],
             on=['mondo_id', 'synonym', 'synonym_scope'], how='left').fillna('')
         df_review_labs['synonym_type'] = df_review_labs.apply(
             lambda row: row['synonym_type'] if row['synonym_type'] else row['synonym_type_mondo'], axis=1)
-        del df_review_labs['synonym_type_mondo']
         df_review_labs['synonym_type'] = df_review_labs.groupby(
             'synonym')['synonym_type'].transform(lambda x: '|'.join(filter(None, x)))
         df_review_labs = df_review_labs[~df_review_labs['synonym_type'].str.contains('MONDO:ABBREVIATION')]
