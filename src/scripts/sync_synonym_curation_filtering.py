@@ -39,8 +39,8 @@ def sync_synonyms_curation_filtering(
     df_upd: pd.DataFrame = _read_synonym_file(updated_inpath, 'updated')
 
     # Read -confirmed & ascertain unconfirmed
-    df_conf = pd.read_csv(confirmed_inpath, sep='\t').drop(0).fillna('')  # Not de-duped. Used for informational purposes.
-    df_conf2 = df_conf.copy()
+    df_conf = pd.read_csv(confirmed_inpath, sep='\t')
+    df_conf2 = df_conf.copy().drop(0).fillna('')
     df_conf2['case'] = 'confirmed'
     df_conf2['synonym_scope'] = df_conf2['synonym_scope_source']
     df_mondo_syns = _read_sparql_output_tsv(mondo_synonyms_inpath).fillna('').rename(columns={
