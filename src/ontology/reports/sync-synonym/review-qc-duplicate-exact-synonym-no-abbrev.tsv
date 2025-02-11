@@ -583,8 +583,8 @@ JMP syndrome	MONDO:0054698	OMIM:256040	updated
 Jacobs syndrome	MONDO:0008828	DOID:0090127	unconfirmed		
 Jacobs syndrome	MONDO:0008828	OMIM:208250	confirmed		
 Jacobs syndrome	MONDO:0019339	Orphanet:8	added		
-Jarcho-Levin syndrome	MONDO:0000359	DOID:0050568	updated		
-Jarcho-Levin syndrome	MONDO:0010180	Orphanet:2311	confirmed		
+Jarcho-Levin syndrome	MONDO:0000359	DOID:0050568	updated	http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+Jarcho-Levin syndrome	MONDO:0010180	Orphanet:2311	confirmed	http://purl.obolibrary.org/obo/mondo#DEPRECATED	
 Jeune syndrome	MONDO:0008831	OMIM:208500	updated		
 Jeune syndrome	MONDO:0008831	OMIM:208500	updated		MONDO:0018770
 Jeune syndrome	MONDO:0018770	DOID:0050592	confirmed		
@@ -933,8 +933,8 @@ Pseudotoxoplasmosis syndrome	MONDO:0009165	OMIM:225750	updated
 Pseudotoxoplasmosis syndrome	MONDO:0009624		confirmed		
 Purtilo syndrome	MONDO:0010627	Orphanet:2442	confirmed		
 Purtilo syndrome	MONDO:0024551	OMIM:308240	updated		
-Ramsay Hunt syndrome	MONDO:0005769	Orphanet:3020	unconfirmed		
-Ramsay Hunt syndrome	MONDO:0008945	OMIM:213400	updated		
+Ramsay Hunt syndrome	MONDO:0005769	Orphanet:3020	unconfirmed	http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+Ramsay Hunt syndrome	MONDO:0008945	OMIM:213400	updated	http://purl.obolibrary.org/obo/mondo#DEPRECATED	
 Rasmussen syndrome	MONDO:0007587	OMIM:133705	updated		
 Rasmussen syndrome	MONDO:0016019	Orphanet:1929	unconfirmed		
 Rasmussen syndrome	MONDO:0016019	https://www.epilepsydiagnosis.org/syndrome/rasmussen-overview.html	confirmed		
@@ -1411,8 +1411,8 @@ androgenetic alopecia	MONDO:0007184	OMIM:109200	added
 androgenetic alopecia	MONDO:0007184	OMIM:109200	added		MONDO:0005339
 angioneurotic edema	MONDO:0010481	DOID:1558	updated		
 angioneurotic edema	MONDO:0019013	Orphanet:658	confirmed		
-angioneurotic oedema	MONDO:0010481	DOID:1558	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-angioneurotic oedema	MONDO:0019013		unconfirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+angioneurotic oedema	MONDO:0010481	DOID:1558	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+angioneurotic oedema	MONDO:0019013		unconfirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 angiosarcoma	MONDO:0003022	NCIT:C9174	updated		
 angiosarcoma	MONDO:0003022	NCIT:C9174	updated		MONDO:0016982
 angiosarcoma	MONDO:0016982	DOID:0001816	confirmed		
@@ -1512,9 +1512,9 @@ astrocytic tumor	MONDO:0002505	NCIT:C9022	updated		MONDO:0021636
 astrocytic tumor	MONDO:0021636	DOID:3069	unconfirmed		
 astrocytic tumor	MONDO:0021636	NCIT:C6958	unconfirmed		
 astrocytic tumor	MONDO:0021636	Orphanet:94	confirmed		
-astrocytoma	MONDO:0019781	NCIT:C60781	unconfirmed	MONDO:AMBIGUOUS|MONDO:AMBIGUOUS	
-astrocytoma	MONDO:0019781	https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues/23	confirmed	MONDO:AMBIGUOUS|MONDO:AMBIGUOUS	
-astrocytoma	MONDO:0021636	Orphanet:94	updated	MONDO:AMBIGUOUS|MONDO:AMBIGUOUS	
+astrocytoma	MONDO:0019781	NCIT:C60781	unconfirmed	MONDO:AMBIGUOUS|MONDO:AMBIGUOUS|http://purl.obolibrary.org/obo/mondo#AMBIGUOUS	
+astrocytoma	MONDO:0019781	https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues/23	confirmed	MONDO:AMBIGUOUS|MONDO:AMBIGUOUS|http://purl.obolibrary.org/obo/mondo#AMBIGUOUS	
+astrocytoma	MONDO:0021636	Orphanet:94	updated	MONDO:AMBIGUOUS|MONDO:AMBIGUOUS|http://purl.obolibrary.org/obo/mondo#AMBIGUOUS	
 astrocytoma of cerebrum	MONDO:0021633	NCIT:C4951	confirmed		
 astrocytoma of cerebrum	MONDO:0021636	DOID:3069	updated		
 ataxia with lactic acidosis 1	MONDO:0010717	OMIM:312170	updated		
@@ -1711,8 +1711,8 @@ bone neoplasm	MONDO:0002129	DOID:184	updated		MONDO:0019060
 bone neoplasm	MONDO:0019060	NCIT:C9343	confirmed		
 bone tissue neoplasm	MONDO:0009807	DOID:3347	updated		
 bone tissue neoplasm	MONDO:0019060		unconfirmed		
-bone tumour	MONDO:0002129	DOID:184	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-bone tumour	MONDO:0019060		unconfirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+bone tumour	MONDO:0002129	DOID:184	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+bone tumour	MONDO:0019060		unconfirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 botryoid-type embryonal rhabdomyosarcoma	MONDO:0002578	DOID:3255	unconfirmed		
 botryoid-type embryonal rhabdomyosarcoma	MONDO:0002578	NCIT:C9150	unconfirmed		
 botryoid-type embryonal rhabdomyosarcoma	MONDO:0003992	NCIT:C35574	updated		
@@ -1807,8 +1807,8 @@ cancer of nasal cavity	MONDO:0003212	DOID:4931	updated
 cancer of nasal cavity	MONDO:0003212	NCIT:C9336	updated		
 cancer of nasopharynx	MONDO:0015459	NCIT:C3871	updated		
 cancer of nasopharynx	MONDO:0021315	MONDO:patterns/cancer	confirmed		
-cancer of oesophagus	MONDO:0007576		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
-cancer of oesophagus	MONDO:0019086	DOID:1107	updated	http://purl.obolibrary.org/obo/OMO_0003005	
+cancer of oesophagus	MONDO:0007576		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+cancer of oesophagus	MONDO:0019086	DOID:1107	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 cancer of oropharynx	MONDO:0004608	MONDO:patterns/cancer	confirmed		
 cancer of oropharynx	MONDO:0044926	NCIT:C9105	updated		
 cancer of pancreas	MONDO:0005192	NCIT:C3850	updated		
@@ -2108,8 +2108,8 @@ congenital generalized lipodystrophy	MONDO:0018883	NCIT:C84594	updated
 congenital generalized lipodystrophy	MONDO:0018883	Orphanet:528	updated		
 congenital generalized lipodystrophy	MONDO:0018883	NCIT:C84594	updated		MONDO:0006536
 congenital generalized lipodystrophy	MONDO:0018883	Orphanet:528	updated		MONDO:0006536
-congenital hypoplastic anaemia	MONDO:0001713	DOID:1342	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-congenital hypoplastic anaemia	MONDO:0015253		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+congenital hypoplastic anaemia	MONDO:0001713	DOID:1342	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+congenital hypoplastic anaemia	MONDO:0015253		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 congenital hypoplastic anemia	MONDO:0001713	DOID:1342	updated		
 congenital hypoplastic anemia	MONDO:0015253		unconfirmed		
 congenital insensitivity to pain	MONDO:0007828	DOID:0081075	added		
@@ -2470,8 +2470,8 @@ extraocular retinoblastoma	MONDO:0004350	NCIT:C9048	updated
 extraocular retinoblastoma	MONDO:0004350	NCIT:C9048	updated		MONDO:0003078
 extraosseous Ewing's tumor	MONDO:0018270	NCIT:C7135	unconfirmed		
 extraosseous Ewing's tumor	MONDO:0021039	DOID:4985	updated		
-extraosseous Ewing's tumour	MONDO:0018270		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
-extraosseous Ewing's tumour	MONDO:0021039	DOID:4985	updated	http://purl.obolibrary.org/obo/OMO_0003005	
+extraosseous Ewing's tumour	MONDO:0018270		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+extraosseous Ewing's tumour	MONDO:0021039	DOID:4985	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 extraskeletal osteosarcoma	MONDO:0002621	DOID:3357	confirmed		
 extraskeletal osteosarcoma	MONDO:0002621	NCIT:C8810	confirmed		
 extraskeletal osteosarcoma	MONDO:0004374	NCIT:C7925	updated		
@@ -2692,8 +2692,8 @@ glutathione synthetase deficiency	MONDO:0009947	OMIM:266130	updated
 glutathione synthetase deficiency	MONDO:0017909	DOID:0080699	unconfirmed		
 glutathione synthetase deficiency	MONDO:0017909	NCIT:C128193	unconfirmed		
 glutathione synthetase deficiency	MONDO:0017909	Orphanet:32	confirmed		
-glycogen storage disease 11	MONDO:0009216	OMIM:227810	updated		
-glycogen storage disease 11	MONDO:0013047	OMIM:612933	added		
+glycogen storage disease 11	MONDO:0009216	OMIM:227810	updated	http://purl.obolibrary.org/obo/mondo#AMBIGUOUS	
+glycogen storage disease 11	MONDO:0013047	OMIM:612933	added	http://purl.obolibrary.org/obo/mondo#AMBIGUOUS	
 glycogen synthase deficiency	MONDO:0002412	icd11.foundation:1187107383	added		
 glycogen synthase deficiency	MONDO:0009414		confirmed		
 glycoproteinosis	MONDO:0009738	DOID:3343	updated		MONDO:0017731
@@ -2882,9 +2882,9 @@ hyperkeratosis-contracture syndrome	MONDO:0800042	OMIM:275210	confirmed
 hypermature cataract	MONDO:0001848	DOID:13964	updated		
 hypermature cataract	MONDO:0001848	DOID:13964	updated		MONDO:0045049
 hypermature cataract	MONDO:0045049		unconfirmed		
-hypernephroma	MONDO:0005005	NCIT:C4033	updated		
-hypernephroma	MONDO:0005086	DOID:4450	unconfirmed		
-hypernephroma	MONDO:0007763	OMIM:144700	updated		
+hypernephroma	MONDO:0005005	NCIT:C4033	updated	http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+hypernephroma	MONDO:0005086	DOID:4450	unconfirmed	http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+hypernephroma	MONDO:0007763	OMIM:144700	updated	http://purl.obolibrary.org/obo/mondo#DEPRECATED	
 hyperostosis with hyperphosphatemia	MONDO:0100251	DOID:0111063	confirmed		
 hyperostosis with hyperphosphatemia	MONDO:0100252	OMIM:211900	added		
 hyperphosphatasia with mental retardation syndrome 4	MONDO:0014318	MONDO:Lexical	unconfirmed	MONDO:DEPRECATED|MONDO:DEPRECATED	
@@ -3058,8 +3058,8 @@ iritis	MONDO:0006814	MONDO:ambiguous	confirmed
 iritis	MONDO:0006814	NCIT:C50621	unconfirmed		
 islet cell tumor	MONDO:0005815	DOID:1799	updated		
 islet cell tumor	MONDO:0019954	NCIT:C27720	unconfirmed		
-islet cell tumour	MONDO:0005815	DOID:1799	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-islet cell tumour	MONDO:0019954		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+islet cell tumour	MONDO:0005815	DOID:1799	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+islet cell tumour	MONDO:0019954		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 isolated aniridia	MONDO:0019172	DOID:12271	added		MONDO:0007119
 junctional epidermolysis bullosa inversa	MONDO:0009180	OMIM:226650	updated		MONDO:0019308
 juvenile chronic polyarthritis	MONDO:0011429	DOID:676	updated		
@@ -3297,8 +3297,8 @@ malignant ovarian mucinous neoplasm	MONDO:0003756	DOID:6067	updated
 malignant ovarian mucinous neoplasm	MONDO:0024282	NCIT:C40033	confirmed		
 malignant pancreatic endocrine tumor	MONDO:0005815	DOID:1799	updated		
 malignant pancreatic endocrine tumor	MONDO:0005893	NCIT:C3770	confirmed		
-malignant pancreatic endocrine tumour	MONDO:0005815	DOID:1799	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-malignant pancreatic endocrine tumour	MONDO:0005893		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+malignant pancreatic endocrine tumour	MONDO:0005815	DOID:1799	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+malignant pancreatic endocrine tumour	MONDO:0005893		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 malignant peripheral nerve sheath tumor	MONDO:0004345	NCIT:C8094	updated		
 malignant peripheral nerve sheath tumor	MONDO:0004345	NCIT:C8094	updated		MONDO:0017827
 malignant peripheral nerve sheath tumor	MONDO:0004545	NCIT:C7814	updated		
@@ -3329,8 +3329,8 @@ malignant tumor of cerebellum	MONDO:0002913	DOID:4205	updated
 malignant tumor of cerebellum	MONDO:0021317	NCIT:C3569	confirmed		
 malignant tumor of scrotum	MONDO:0003319	DOID:518	updated		
 malignant tumor of scrotum	MONDO:0021112	NCIT:C3560	confirmed		
-malignant tumour of scrotum	MONDO:0003319	DOID:518	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-malignant tumour of scrotum	MONDO:0021112		unconfirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+malignant tumour of scrotum	MONDO:0003319	DOID:518	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+malignant tumour of scrotum	MONDO:0021112		unconfirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 malignant vaginal mixed epithelial and mesenchymal tumor	MONDO:0006488	DOID:136	updated		
 malignant vaginal mixed epithelial and mesenchymal tumor	MONDO:0037746	NCIT:C40276	unconfirmed		
 mammary Paget disease	MONDO:0002648	DOID:3443	unconfirmed		
@@ -3419,8 +3419,8 @@ meningitis	MONDO:0004796	DOID:9471	updated
 meningitis	MONDO:0004796	DOID:9471	updated		MONDO:0021108
 meningitis	MONDO:0021108	NCIT:C26828	confirmed		
 mental disorder	MONDO:0002025	NCIT:C2893	updated		MONDO:0005084
-mental or behavioural disorder	MONDO:0005084		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
-mental or behavioural disorder	MONDO:0005485	DOID:2468	updated	http://purl.obolibrary.org/obo/OMO_0003005	
+mental or behavioural disorder	MONDO:0005084		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+mental or behavioural disorder	MONDO:0005485	DOID:2468	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 mesenchymal chondrosarcoma	MONDO:0003041	NCIT:C27374	updated		
 mesenchymal chondrosarcoma	MONDO:0003041	NCIT:C27374	updated		MONDO:0006853
 mesenchymal chondrosarcoma	MONDO:0006853	DOID:4545	unconfirmed		
@@ -3722,8 +3722,8 @@ non-seasonal allergic rhinitis	MONDO:0011786	DOID:4481	updated
 non-seasonal allergic rhinitis	MONDO:0024332	NCIT:C92189	confirmed		
 nonanaplastic renal Wilm's tumor	MONDO:0003316	NCIT:C6951	unconfirmed		
 nonanaplastic renal Wilm's tumor	MONDO:0019004	DOID:5176	updated		
-nonanaplastic renal Wilm's tumour	MONDO:0003316		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
-nonanaplastic renal Wilm's tumour	MONDO:0019004	DOID:5176	updated	http://purl.obolibrary.org/obo/OMO_0003005	
+nonanaplastic renal Wilm's tumour	MONDO:0003316		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+nonanaplastic renal Wilm's tumour	MONDO:0019004	DOID:5176	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 noninfectious pneumonia	MONDO:0002429	Wikipedia:Idiopathic_interstitial_pneumonia	confirmed		
 noninfectious pneumonia	MONDO:0043905	icd11.foundation:1324545867	added		
 nonproliferative retinopathy, diabetic, susceptibility to	MONDO:0011386	OMIM:603933	updated		
@@ -4002,8 +4002,8 @@ peroxisome biogenesis disorder	MONDO:0019234	Orphanet:79189	confirmed	MONDO:CLIN
 peroxisome biogenesis disorder	MONDO:0019234	https://www.clinicalgenome.org/affiliation/40049/	confirmed	MONDO:CLINGEN_LABEL|MONDO:CLINGEN_LABEL|MONDO:CLINGEN_LABEL|MONDO:CLINGEN_LABEL	
 persistent fetal circulation	MONDO:0009934	DOID:13042	updated		
 persistent fetal circulation	MONDO:0022430	NCIT:C85006	confirmed		
-persistent foetal circulation	MONDO:0009934	DOID:13042	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-persistent foetal circulation	MONDO:0022430		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+persistent foetal circulation	MONDO:0009934	DOID:13042	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+persistent foetal circulation	MONDO:0022430		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 persistent hyperinsulinemic hypoglycemia of infancy	MONDO:0009734	OMIM:256450	updated		
 persistent hyperinsulinemic hypoglycemia of infancy	MONDO:0011153	OMIM:601820	updated		
 persistent hyperinsulinemic hypoglycemia of infancy	MONDO:0019010	NCIT:C122923	confirmed		
@@ -4021,8 +4021,8 @@ phyllodes breast neoplasm	MONDO:0002489	DOID:3016	updated
 phyllodes breast neoplasm	MONDO:0021047	NCIT:C7575	confirmed		
 phyllodes breast tumor	MONDO:0002489	DOID:3016	updated		
 phyllodes breast tumor	MONDO:0021047	NCIT:C7575	confirmed		
-phyllodes breast tumour	MONDO:0002489	DOID:3016	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-phyllodes breast tumour	MONDO:0021047		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+phyllodes breast tumour	MONDO:0002489	DOID:3016	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+phyllodes breast tumour	MONDO:0021047		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 phyllodes neoplasm	MONDO:0005078	NCIT:C2977	confirmed		
 phyllodes neoplasm	MONDO:0015871	DOID:1631	updated		
 phyllodes neoplasm of the prostate	MONDO:0002451	DOID:2885	updated		
@@ -4256,8 +4256,8 @@ pulmonary capillary hemangiomatosis	MONDO:0009329	Orphanet:199241	updated
 pulmonary capillary hemangiomatosis	MONDO:0009937	https://orcid.org/0000-0003-0113-912X	confirmed		
 pulmonary hypertension, primary	MONDO:0001999		confirmed		
 pulmonary hypertension, primary	MONDO:0017148	OMIMPS:178600	added		
-pulmonary sulcus tumour	MONDO:0006883	DOID:8007	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-pulmonary sulcus tumour	MONDO:0024813		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+pulmonary sulcus tumour	MONDO:0006883	DOID:8007	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+pulmonary sulcus tumour	MONDO:0024813		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 pulmonary tuberculosis	MONDO:0006052	DOID:2957	added		
 pulmonary tuberculosis	MONDO:0957462	icd11.foundation:882244568	added		
 pulmonary tuberculosis	MONDO:0957462	icd11.foundation:882244568	added		MONDO:0006052
@@ -4548,9 +4548,9 @@ spondylometaphyseal dysplasia	MONDO:0008476	OMIM:184250	updated		MONDO:0016763
 spondylometaphyseal dysplasia	MONDO:0016763	DOID:0112295	unconfirmed	MONDO:CLINGEN_LABEL|MONDO:CLINGEN_LABEL|MONDO:CLINGEN_LABEL	
 spondylometaphyseal dysplasia	MONDO:0016763	OMIMPS:184255	unconfirmed	MONDO:CLINGEN_LABEL|MONDO:CLINGEN_LABEL|MONDO:CLINGEN_LABEL	
 spondylometaphyseal dysplasia	MONDO:0016763	Orphanet:254	confirmed	MONDO:CLINGEN_LABEL|MONDO:CLINGEN_LABEL|MONDO:CLINGEN_LABEL	
-spondylothoracic dysostosis	MONDO:0007389	OMIM:122600	confirmed	MONDO:DEPRECATED|MONDO:DEPRECATED	
-spondylothoracic dysostosis	MONDO:0007389	https://rarediseases.org/rare-diseases/jarcho-levin-syndrome/	confirmed	MONDO:DEPRECATED|MONDO:DEPRECATED	
-spondylothoracic dysostosis	MONDO:0020692	OMIM:277300	updated	MONDO:DEPRECATED|MONDO:DEPRECATED	
+spondylothoracic dysostosis	MONDO:0007389	OMIM:122600	confirmed	MONDO:DEPRECATED|MONDO:DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+spondylothoracic dysostosis	MONDO:0007389	https://rarediseases.org/rare-diseases/jarcho-levin-syndrome/	confirmed	MONDO:DEPRECATED|MONDO:DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+spondylothoracic dysostosis	MONDO:0020692	OMIM:277300	updated	MONDO:DEPRECATED|MONDO:DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
 squamous cell bile duct carcinoma	MONDO:0003500	DOID:5537	added		
 squamous cell bile duct carcinoma	MONDO:0006203	NCIT:C5777	updated		
 squamous cell bile duct carcinoma	MONDO:0006203	NCIT:C5777	updated		MONDO:0003500
@@ -4560,8 +4560,8 @@ stammering	MONDO:0000723	DOID:0060243	unconfirmed
 stammering	MONDO:0008483	OMIM:184450	updated		
 steatosis of liver	MONDO:0004790	DOID:9452	confirmed		
 steatosis of liver	MONDO:0009220	OMIM:228100	updated		
-stem cell leukaemia	MONDO:0010643	DOID:12603	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-stem cell leukaemia	MONDO:0020321		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+stem cell leukaemia	MONDO:0010643	DOID:12603	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+stem cell leukaemia	MONDO:0020321		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 stem cell leukemia	MONDO:0010643	DOID:12603	updated		
 stem cell leukemia	MONDO:0020321	NCIT:C9298	confirmed		
 stomach cancer	MONDO:0001056	DOID:10534	confirmed		
@@ -4800,10 +4800,10 @@ tumor of thorax	MONDO:0003274	DOID:5093	updated
 tumor of thorax	MONDO:0021350	NCIT:C3406	confirmed		
 tumor of urinary tract	MONDO:0004180	DOID:731	updated		
 tumor of urinary tract	MONDO:0021066		confirmed		
-tumour of heart	MONDO:0001340	DOID:117	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-tumour of heart	MONDO:0021209		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
-tumour of mediastinum	MONDO:0005843	DOID:5559	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-tumour of mediastinum	MONDO:0021386		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+tumour of heart	MONDO:0001340	DOID:117	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+tumour of heart	MONDO:0021209		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+tumour of mediastinum	MONDO:0005843	DOID:5559	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+tumour of mediastinum	MONDO:0021386		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
 tylosis	MONDO:0007758	OMIM:144200	updated		
 tylosis	MONDO:0010962	DOID:0050428	updated		
 tylosis	MONDO:0010962	OMIM:600962	updated		
@@ -4941,5 +4941,5 @@ yolk Sac tumor	MONDO:0005744	NCIT:C3011	unconfirmed
 yolk Sac tumor	MONDO:0005744	Orphanet:876	confirmed		
 yolk Sac tumor of the CNS	MONDO:0003401	DOID:5343	updated		
 yolk Sac tumor of the CNS	MONDO:0016739	NCIT:C7011	unconfirmed		
-yolk Sac tumour of the CNS	MONDO:0003401	DOID:5343	updated	http://purl.obolibrary.org/obo/OMO_0003005	
-yolk Sac tumour of the CNS	MONDO:0016739		confirmed	http://purl.obolibrary.org/obo/OMO_0003005	
+yolk Sac tumour of the CNS	MONDO:0003401	DOID:5343	updated	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
+yolk Sac tumour of the CNS	MONDO:0016739		confirmed	http://purl.obolibrary.org/obo/OMO_0003005|http://purl.obolibrary.org/obo/OMO_0003005	
