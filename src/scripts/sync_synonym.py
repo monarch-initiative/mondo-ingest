@@ -127,6 +127,11 @@ def _handle_synonym_casing_variations(df: pd.DataFrame) -> pd.DataFrame:
             variation_dict[(row['synonym_join'], row['mondo_id'], row['source_id'], row['synonym_scope'])], axis=1)
 
     df = pd.concat([df_unique, df_duplicates], ignore_index=True)
+
+    # Sort
+    for col in ['synonym_case_mondo', 'synonym_case_source']:
+        df[col] = df[col].apply(lambda x: '|'.join(sorted(x.split('|'))))
+
     return df
 
 
