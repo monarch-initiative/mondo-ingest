@@ -36,8 +36,6 @@ MONDO:0000386	digestive system neuroendocrine tumor, grade 1/2	MONDO:0002516	DOI
 MONDO:0000389	atelosteogenesis	MONDO:0000812	DOID:0050648	DOID:0060564	vertebral column disorder
 MONDO:0000405	anal canal cancer	MONDO:0005575	DOID:0050688	DOID:5672	colorectal cancer
 MONDO:0000410	funisitis	MONDO:0003900	DOID:0050698	DOID:65	connective tissue disorder
-MONDO:0000414	childhood electroclinical syndrome	MONDO:0850093	DOID:0050704	DOID:0070309	absence epilepsy
-MONDO:0000415	adolescence-adult electroclinical syndrome	MONDO:0850093	DOID:0050705	DOID:0070309	absence epilepsy
 MONDO:0000437	cerebellar ataxia	MONDO:0100309	DOID:0050753	DOID:0050951	hereditary ataxia
 MONDO:0000440	metabolic acidosis	MONDO:0006504	DOID:0050758	DOID:0060158	acquired metabolic disease
 MONDO:0000448	paraganglioma	MONDO:0000426	DOID:0050773	DOID:0050736	autosomal dominant disease
@@ -669,6 +667,7 @@ MONDO:0005717	contagious pustular dermatitis	MONDO:0005093	DOID:8771	DOID:37	ski
 MONDO:0005731	dipetalonemiasis	MONDO:0005093	DOID:14422	DOID:37	skin disorder
 MONDO:0005731	dipetalonemiasis	MONDO:0005328	DOID:14422	DOID:5614	eye disorder
 MONDO:0005751	epidemic pleurodynia	MONDO:0003939	DOID:10882	DOID:0080000	muscle tissue disorder
+MONDO:0005754	epilepsy with generalized tonic-clonic seizures	MONDO:0000415	DOID:7725	DOID:0050705	adolescence-adult electroclinical syndrome
 MONDO:0005761	filarial elephantiasis	MONDO:0005093	DOID:12211	DOID:37	skin disorder
 MONDO:0005767	gas gangrene	MONDO:0003939	DOID:9159	DOID:0080000	muscle tissue disorder
 MONDO:0005768	gastrointestinal tuberculosis	MONDO:0000369	DOID:404	DOID:0050599	abdominal tuberculosis
@@ -947,7 +946,7 @@ MONDO:0007548	transient bullous dermolysis of the newborn	MONDO:0006025	DOID:011
 MONDO:0007550	epidermolysis bullosa simplex 1A, generalized severe	MONDO:0000426	DOID:0060735	DOID:0050736	autosomal dominant disease
 MONDO:0007551	epidermolysis bullosa simplex 1C, localized	MONDO:0000426	DOID:0080510	DOID:0050736	autosomal dominant disease
 MONDO:0007554	epidermolysis bullosa simplex 1B, generalized intermediate	MONDO:0000426	DOID:0080511	DOID:0050736	autosomal dominant disease
-MONDO:0007555	pidermolysis bullosa simplex 5A, Ogna type	MONDO:0000426	DOID:0060736	DOID:0050736	autosomal dominant disease
+MONDO:0007555	epidermolysis bullosa simplex 5A, Ogna type	MONDO:0000426	DOID:0060736	DOID:0050736	autosomal dominant disease
 MONDO:0007556	epidermolysis bullosa simplex 2F, with mottled pigmentation	MONDO:0000426	DOID:0111346	DOID:0050736	autosomal dominant disease
 MONDO:0007557	epidermolysis bullosa with congenital localized absence of skin and deformity of nails	MONDO:0000426	DOID:0111347	DOID:0050736	autosomal dominant disease
 MONDO:0007557	epidermolysis bullosa with congenital localized absence of skin and deformity of nails	MONDO:0007549	DOID:0111347	DOID:0080224	generalized dominant dystrophic epidermolysis bullosa
@@ -1587,6 +1586,7 @@ MONDO:0010016	sclerosteosis 1	MONDO:0006025	DOID:0060756	DOID:0050737	autosomal 
 MONDO:0010023	combined immunodeficiency due to ZAP70 deficiency	MONDO:0001222	DOID:0111943	DOID:11200	congenital T-cell immunodeficiency
 MONDO:0010023	combined immunodeficiency due to ZAP70 deficiency	MONDO:0006025	DOID:0111943	DOID:0050737	autosomal recessive disease
 MONDO:0010026	SHORT syndrome	MONDO:0000426	DOID:0111454	DOID:0050736	autosomal dominant disease
+MONDO:0010029	situs inversus	MONDO:0000426	DOID:758	DOID:0050736	autosomal dominant disease
 MONDO:0010036	congenital secretory sodium diarrhea 3	MONDO:0006025	DOID:0060781	DOID:0050737	autosomal recessive disease
 MONDO:0010044	hereditary spastic paraplegia 15	MONDO:0006025	DOID:0110768	DOID:0050737	autosomal recessive disease
 MONDO:0010046	hereditary spastic paraplegia 23	MONDO:0006025	DOID:0110774	DOID:0050737	autosomal recessive disease
@@ -1988,9 +1988,7 @@ MONDO:0011086	severe combined immunodeficiency, autosomal recessive, T cell-nega
 MONDO:0011088	congenital myasthenic syndrome 1A	MONDO:0000426	DOID:0110663	DOID:0050736	autosomal dominant disease
 MONDO:0011091	Charcot-Marie-Tooth disease type 2D	MONDO:0000426	DOID:0110164	DOID:0050736	autosomal dominant disease
 MONDO:0011094	dilated cardiomyopathy 1C	MONDO:0000426	DOID:0110423	DOID:0050736	autosomal dominant disease
-MONDO:0011094	dilated cardiomyopathy 1C	MONDO:0005021	DOID:0110423	DOID:12930	dilated cardiomyopathy
 MONDO:0011095	dilated cardiomyopathy 1D	MONDO:0000426	DOID:0110426	DOID:0050736	autosomal dominant disease
-MONDO:0011095	dilated cardiomyopathy 1D	MONDO:0005021	DOID:0110426	DOID:12930	dilated cardiomyopathy
 MONDO:0011097	Axenfeld-Rieger syndrome type 2	MONDO:0000761	DOID:0110121	DOID:0060388	syndrome caused by partial chromosomal deletion
 MONDO:0011099	human HOXA1 syndromes	MONDO:0005560	DOID:0050682	DOID:936	brain disorder
 MONDO:0011104	cataract 3 multiple types	MONDO:0000426	DOID:0110269	DOID:0050736	autosomal dominant disease
@@ -2432,7 +2430,6 @@ MONDO:0012736	long QT syndrome 9	MONDO:0000426	DOID:0110650	DOID:0050736	autosom
 MONDO:0012737	long QT syndrome 10	MONDO:0000426	DOID:0110651	DOID:0050736	autosomal dominant disease
 MONDO:0012738	long QT syndrome 11	MONDO:0000426	DOID:0110652	DOID:0050736	autosomal dominant disease
 MONDO:0012744	dilated cardiomyopathy 1Y	MONDO:0000426	DOID:0110457	DOID:0050736	autosomal dominant disease
-MONDO:0012744	dilated cardiomyopathy 1Y	MONDO:0005021	DOID:0110457	DOID:12930	dilated cardiomyopathy
 MONDO:0012746	dilated cardiomyopathy 2A	MONDO:0006025	DOID:0110460	DOID:0050737	autosomal recessive disease
 MONDO:0012760	epilepsy, idiopathic generalized, susceptibility to, 5	MONDO:0005579	DOID:0111320	DOID:1827	idiopathic generalized epilepsy
 MONDO:0012764	RIDDLE syndrome	MONDO:0002254	DOID:0090113	DOID:225	syndromic disease
@@ -2586,9 +2583,7 @@ MONDO:0013254	microcephaly, seizures, and developmental delay	MONDO:0006025	DOID
 MONDO:0013256	chromosome 15q24 deletion syndrome	MONDO:0000426	DOID:0060395	DOID:0050736	autosomal dominant disease
 MONDO:0013259	Oguchi disease-2	MONDO:0006025	DOID:0110713	DOID:0050737	autosomal recessive disease
 MONDO:0013261	dilated cardiomyopathy 1R	MONDO:0000426	DOID:0110456	DOID:0050736	autosomal dominant disease
-MONDO:0013261	dilated cardiomyopathy 1R	MONDO:0005021	DOID:0110456	DOID:12930	dilated cardiomyopathy
 MONDO:0013262	dilated cardiomyopathy 1S	MONDO:0000426	DOID:0110454	DOID:0050736	autosomal dominant disease
-MONDO:0013262	dilated cardiomyopathy 1S	MONDO:0005021	DOID:0110454	DOID:12930	dilated cardiomyopathy
 MONDO:0013268	frontonasal dysplasia with alopecia and genital anomaly	MONDO:0006025	DOID:0081046	DOID:0050737	autosomal recessive disease
 MONDO:0013271	frontonasal dysplasia - severe microphthalmia - severe facial clefting syndrome	MONDO:0006025	DOID:0081047	DOID:0050737	autosomal recessive disease
 MONDO:0013277	developmental and epileptic encephalopathy, 5	MONDO:0000426	DOID:0080438	DOID:0050736	autosomal dominant disease
@@ -2907,7 +2902,6 @@ MONDO:0014143	Noonan syndrome 8	MONDO:0000426	DOID:0060586	DOID:0050736	autosoma
 MONDO:0014145	Leber congenital amaurosis 17	MONDO:0006025	DOID:0110217	DOID:0050737	autosomal recessive disease
 MONDO:0014147	neuronal ceroid lipofuscinosis 13	MONDO:0006025	DOID:0110727	DOID:0050737	autosomal recessive disease
 MONDO:0014152	left ventricular noncompaction 8	MONDO:0000426	DOID:0081157	DOID:0050736	autosomal dominant disease
-MONDO:0014152	left ventricular noncompaction 8	MONDO:0005021	DOID:0081157	DOID:12930	dilated cardiomyopathy
 MONDO:0014160	TCR-alpha-beta-positive T-cell deficiency	MONDO:0001222	DOID:0111977	DOID:11200	congenital T-cell immunodeficiency
 MONDO:0014160	TCR-alpha-beta-positive T-cell deficiency	MONDO:0006025	DOID:0111977	DOID:0050737	autosomal recessive disease
 MONDO:0014162	infantile hypertrophic cardiomyopathy due to MRPL44 deficiency	MONDO:0006025	DOID:0111469	DOID:0050737	autosomal recessive disease
@@ -3150,8 +3144,8 @@ MONDO:0014629	autoimmune interstitial lung disease-arthritis syndrome	MONDO:0000
 MONDO:0014629	autoimmune interstitial lung disease-arthritis syndrome	MONDO:0007179	DOID:0081242	DOID:417	autoimmune disease
 MONDO:0014630	familial adenomatous polyposis 3	MONDO:0006025	DOID:0080411	DOID:0050737	autosomal recessive disease
 MONDO:0014632	hypomyelinating leukodystrophy 10	MONDO:0006025	DOID:0060788	DOID:0050737	autosomal recessive disease
-MONDO:0014633	myoclonic-atonic epilepsy	MONDO:0000426	DOID:0060475	DOID:0050736	autosomal dominant disease
-MONDO:0014633	myoclonic-atonic epilepsy	MONDO:0005579	DOID:0060475	DOID:1827	idiopathic generalized epilepsy
+MONDO:0014633	epilepsy with myoclonic atonic seizures	MONDO:0000426	DOID:0060475	DOID:0050736	autosomal dominant disease
+MONDO:0014633	epilepsy with myoclonic atonic seizures	MONDO:0005579	DOID:0060475	DOID:1827	idiopathic generalized epilepsy
 MONDO:0014634	46,XY sex reversal 10	MONDO:0000426	DOID:0111775	DOID:0050736	autosomal dominant disease
 MONDO:0014634	46,XY sex reversal 10	MONDO:0000761	DOID:0111775	DOID:0060388	syndrome caused by partial chromosomal deletion
 MONDO:0014636	combined oxidative phosphorylation defect type 25	MONDO:0006025	DOID:0111468	DOID:0050737	autosomal recessive disease
@@ -3553,6 +3547,7 @@ MONDO:0019345	shigellosis	MONDO:0003409	DOID:12385	DOID:5353	colonic disorder
 MONDO:0019347	peeling skin syndrome	MONDO:0006025	DOID:0060283	DOID:0050737	autosomal recessive disease
 MONDO:0019349	Sotos syndrome	MONDO:0000426	DOID:0112103	DOID:0050736	autosomal dominant disease
 MONDO:0019349	Sotos syndrome	MONDO:0000429	DOID:14748	DOID:0050739	autosomal genetic disease
+MONDO:0019353	Stargardt disease	MONDO:0005150	DOID:0050817	DOID:10871	age-related macular degeneration
 MONDO:0019355	adult-onset Still disease	MONDO:0008383	DOID:14256	DOID:7148	rheumatoid arthritis
 MONDO:0019369	complex regional pain syndrome	MONDO:0001292	DOID:3223	DOID:11465	autonomic nervous system disorder
 MONDO:0019392	syringocystadenoma papilliferum	MONDO:0003686	DOID:5445	DOID:5876	apocrine sweat gland neoplasm
@@ -4266,9 +4261,7 @@ MONDO:0060732	tetraamelia syndrome 2	MONDO:0006025	DOID:0112193	DOID:0050737	aut
 MONDO:0060752	neurodevelopmental disorder with spasticity and poor growth	MONDO:0019502	DOID:0070421	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0060759	neurodevelopmental disorder with regression, abnormal movements, loss of speech, and seizures	MONDO:0005559	DOID:0081327	DOID:1289	neurodegenerative disease
 MONDO:0060764	tetraamelia syndrome 1	MONDO:0006025	DOID:0112192	DOID:0050737	autosomal recessive disease
-MONDO:0100036	variable age onset epilepsy	MONDO:0000411	DOID:0050706	DOID:0050701	electroclinical syndrome
 MONDO:0100058	hypervalinemia and hyperleucine-isoleucinemia	MONDO:0006025	DOID:0060950	DOID:0050737	autosomal recessive disease
-MONDO:0100062	developmental and epileptic encephalopathy	MONDO:0000411	DOID:0112202	DOID:0050701	electroclinical syndrome
 MONDO:0100062	developmental and epileptic encephalopathy	MONDO:0000412	DOID:0050709	DOID:0050702	neonatal period electroclinical syndrome
 MONDO:0100101	fetal akinesia deformation sequence 1	MONDO:0006025	DOID:0111377	DOID:0050737	autosomal recessive disease
 MONDO:0100102	fetal akinesia deformation sequence 2	MONDO:0006025	DOID:0111378	DOID:0050737	autosomal recessive disease

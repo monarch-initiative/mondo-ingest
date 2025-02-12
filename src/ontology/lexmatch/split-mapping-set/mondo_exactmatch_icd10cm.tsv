@@ -1589,6 +1589,7 @@ MONDO:0014448	hyperthyroxinemia, familial dysalbuminemic	skos:exactMatch	ICD10CM
 MONDO:0014452	familial dysfibrinogenemia	skos:exactMatch	ICD10CM:D68.2	Hereditary deficiency of other clotting factors	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	dysfibrinogenemia	LEXMATCH
 MONDO:0014624	Brown syndrome	skos:exactMatch	ICD10CM:H50.61	Brown's sheath syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	browns sheath syndrome	LEXMATCH
 MONDO:0014624	Brown syndrome	skos:exactMatch	ICD10CM:H50.61	Brown's sheath syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	browns sheath syndrome	LEXMATCH
+MONDO:0014633	epilepsy with myoclonic atonic seizures	skos:exactMatch	ICD10CM:G40.4	Other generalized epilepsy and epileptic syndromes	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	epilepsy with myoclonic-astatic seizures	LEXMATCH
 MONDO:0015045	alpha-heavy chain disease	skos:exactMatch	ICD10CM:C88.3	Immunoproliferative small intestinal disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	alpha heavy chain disorder	LEXMATCH
 MONDO:0015045	alpha-heavy chain disease	skos:exactMatch	ICD10CM:C88.3	Immunoproliferative small intestinal disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	immunoproliferative small intestinal disorder	LEXMATCH
 MONDO:0015045	alpha-heavy chain disease	skos:exactMatch	ICD10CM:C88.3	Immunoproliferative small intestinal disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	mediterranean lymphoma	LEXMATCH
@@ -1653,7 +1654,6 @@ MONDO:0015988	multicystic dysplastic kidney	skos:exactMatch	ICD10CM:Q61.4	Renal 
 MONDO:0016003	ehrlichiosis	skos:exactMatch	ICD10CM:A77.4	Ehrlichiosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ehrlichiosis	LEXMATCH
 MONDO:0016006	Cockayne syndrome	skos:exactMatch	ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	cockayne syndrome	LEXMATCH
 MONDO:0016011	fetal alcohol syndrome	skos:exactMatch	ICD10CM:Q86.0	Fetal alcohol syndrome (dysmorphic)	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	fetal alcohol syndrome	LEXMATCH
-MONDO:0016025	myoclonic-astatic epilepsy	skos:exactMatch	ICD10CM:G40.4	Other generalized epilepsy and epileptic syndromes	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	epilepsy with myoclonic-astatic seizures	LEXMATCH
 MONDO:0016033	Cornelia de Lange syndrome	skos:exactMatch	ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	de lange syndrome	LEXMATCH
 MONDO:0016035	Nelson syndrome	skos:exactMatch	ICD10CM:E24.1	Nelson's syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	nelsons syndrome	LEXMATCH
 MONDO:0016035	Nelson syndrome	skos:exactMatch	ICD10CM:E24.1	Nelson's syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	nelsons syndrome	LEXMATCH
@@ -1786,7 +1786,9 @@ MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:exactMatch	ICD10CM:H20.82	Vogt-K
 MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:exactMatch	ICD10CM:H20.82	Vogt-Koyanagi syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	vogt-koyanagi syndrome	LEXMATCH
 MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:exactMatch	ICD10CM:H30.81	Harada's disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	haradas disorder	LEXMATCH
 MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:exactMatch	ICD10CM:H30.81	Harada's disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	haradas disorder	LEXMATCH
-MONDO:0018097	West syndrome	skos:exactMatch	ICD10CM:G40.82	Epileptic spasms	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	infantile spasms	LEXMATCH
+MONDO:0018097	infantile spasms	skos:exactMatch	ICD10CM:G40.82	Epileptic spasms	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	infantile spasms	LEXMATCH
+MONDO:0018097	infantile spasms	skos:exactMatch	ICD10CM:G40.82	Epileptic spasms	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	wests syndrome	LEXMATCH
+MONDO:0018097	infantile spasms	skos:exactMatch	ICD10CM:G40.82	Epileptic spasms	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	infantile spasms	LEXMATCH
 MONDO:0018106	hereditary xanthinuria	skos:exactMatch	ICD10CM:E79.8	Other disorders of purine and pyrimidine metabolism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hereditary xanthinuria	LEXMATCH
 MONDO:0018106	hereditary xanthinuria	skos:exactMatch	ICD10CM:E79.8	Other disorders of purine and pyrimidine metabolism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	hereditary xanthinuria	LEXMATCH
 MONDO:0018116	galactosemia	skos:exactMatch	ICD10CM:E74.21	Galactosemia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	galactosemia	LEXMATCH
