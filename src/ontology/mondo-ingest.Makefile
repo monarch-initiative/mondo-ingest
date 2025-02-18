@@ -611,8 +611,9 @@ $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONE
 		tail -n +3 $$file >> $@; \
 	done
 
+# DO filtration: For now we are filtering out all DOID terms from sync-synonyms.added.robot.tsv
 $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.added.robot.tsv > $@
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(filter-out $(SYN_SYNC_DIR)/doid.synonyms.added.robot.tsv,$(wildcard $(SYN_SYNC_DIR)/*.synonyms.added.robot.tsv)) > $@
 
 $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.confirmed.robot.tsv > $@
