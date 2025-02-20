@@ -611,22 +611,11 @@ $(SYN_SYNC_DIR)/synonym_sync_combined_cases.robot.tsv: $(foreach n,$(ALL_COMPONE
 		tail -n +3 $$file >> $@; \
 	done
 
+$(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.added.robot.tsv > $@
+
 $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.confirmed.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.confirmed.robot.tsv > $@
-
-$(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv: $(SYN_SYNC_DIR)/doid.synonyms.added-filtered.robot.tsv
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(filter-out $(SYN_SYNC_DIR)/doid.synonyms.added.robot.tsv, $(wildcard $(SYN_SYNC_DIR)/*.synonyms.added.robot.tsv)) > $@
-	awk 'FNR > 2' $(SYN_SYNC_DIR)/doid.synonyms.added-filtered.robot.tsv >> $@
-
-# DO filtration: For now we are filtering out all DOID terms that are not either: (a) created from rdfs:label, or (b) substantiated by another source.
-$(SYN_SYNC_DIR)/doid.synonyms.added-filtered.robot.tsv: $(TMPDIR)/sync-synonyms.added-prefiltered.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv
-	python3 $(SCRIPTSDIR)/sync_synonym_doid_filter.py \
-	--added-path $(TMPDIR)/sync-synonyms.added-prefiltered.robot.tsv \
-	--updated-path $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv \
-	--outpath $@
-
-$(TMPDIR)/sync-synonyms.added-prefiltered.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.added.robot.tsv)
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.added.robot.tsv > $@
 
 $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(SYN_SYNC_DIR)/$(n)-synonyms.updated.robot.tsv)
 	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(SYN_SYNC_DIR)/*.synonyms.updated.robot.tsv > $@
