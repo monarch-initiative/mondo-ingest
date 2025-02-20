@@ -90,9 +90,6 @@ MONDO:0000397	ataxic cerebral palsy	MONDO:0006497	DOID:0050670	DOID:1969	cerebra
 MONDO:0000400	mixed cerebral palsy	MONDO:0006497	DOID:0050673	DOID:1969	cerebral palsy
 MONDO:0000407	malignant pleural solitary fibrous tumor	MONDO:0006294	DOID:0050695	DOID:5158	pleural cancer
 MONDO:0000408	fetal alcohol spectrum disorder	MONDO:0000592	DOID:0050696	DOID:0060038	specific developmental disorder
-MONDO:0000411	electroclinical syndrome	MONDO:0005027	DOID:0050701	DOID:1826	epilepsy
-MONDO:0000412	neonatal period electroclinical syndrome	MONDO:0000411	DOID:0050702	DOID:0050701	electroclinical syndrome
-MONDO:0000413	infancy electroclinical syndrome	MONDO:0000411	DOID:0050703	DOID:0050701	electroclinical syndrome
 MONDO:0000426	autosomal dominant disease	MONDO:0000429	DOID:0050736	DOID:0050739	autosomal genetic disease
 MONDO:0000430	mature T-cell and NK-cell non-Hodgkin lymphoma	MONDO:0015760	DOID:0050743	DOID:0081312	T-cell non-Hodgkin lymphoma
 MONDO:0000437	cerebellar ataxia	MONDO:0002427	DOID:0050753	DOID:2786	cerebellar disorder
@@ -939,7 +936,7 @@ MONDO:0001676	erythropoietic protoporphyria	MONDO:0002520	DOID:13270	DOID:3133	h
 MONDO:0001678	intestinal tuberculosis	MONDO:0005768	DOID:13282	DOID:404	gastrointestinal tuberculosis
 MONDO:0001680	vaginal mullerian papilloma	MONDO:0000647	DOID:133	DOID:0060114	benign vaginal neoplasm
 MONDO:0001681	diphtheritic cystitis	MONDO:0006032	DOID:13306	DOID:1679	cystitis
-MONDO:0001682	diphtheritic peritonitis	MONDO:0004522	DOID:13310	DOID:8283	peritonitis
+MONDO:0001682	diphtheritic peritonitis	MONDO:0004522	DOID:13310	DOID:8283	infectious peritonitis
 MONDO:0001683	pancreatic mucinous ductal ectasia	MONDO:0002356	DOID:13313	DOID:26	pancreas disorder
 MONDO:0001684	exocrine pancreatic insufficiency	MONDO:0002356	DOID:13316	DOID:26	pancreas disorder
 MONDO:0001685	chronic follicular conjunctivitis	MONDO:0002314	DOID:13326	DOID:2475	chronic conjunctivitis
@@ -2926,7 +2923,6 @@ MONDO:0004517	ureter tuberculosis	MONDO:0006002	DOID:827	DOID:2149	urogenital tu
 MONDO:0004519	synovial angioma	MONDO:0006500	DOID:8274	DOID:255	hemangioma
 MONDO:0004520	intratubular embryonal carcinoma	MONDO:0006446	DOID:8275	DOID:5680	testicular embryonal carcinoma
 MONDO:0004521	adult epithelioid sarcoma	MONDO:0017387	DOID:8282	DOID:6193	epithelioid sarcoma
-MONDO:0004522	peritonitis	MONDO:0004335	DOID:8283	DOID:77	digestive system disorder
 MONDO:0004523	clear cell squamous cell skin carcinoma	MONDO:0002529	DOID:8288	DOID:3151	skin squamous cell carcinoma
 MONDO:0004524	thyroid gland atypical follicular adenoma	MONDO:0005032	DOID:8292	DOID:6204	follicular thyroid adenoma
 MONDO:0004525	scabies	MONDO:0004389	DOID:8295	DOID:7894	mite infestation
@@ -3570,7 +3566,6 @@ MONDO:0005743	encephalitozoonosis	MONDO:0005846	DOID:4270	DOID:4271	microsporidi
 MONDO:0005749	eosinophilic pneumonia	MONDO:0005249	DOID:5870	DOID:552	pneumonia
 MONDO:0005751	epidemic pleurodynia	MONDO:0005108	DOID:10882	DOID:934	viral infectious disease
 MONDO:0005753	epiglottitis	MONDO:0004867	DOID:9398	DOID:974	upper respiratory tract disorder
-MONDO:0005754	epilepsy with generalized tonic-clonic seizures	MONDO:0000415	DOID:7725	DOID:0050705	adolescence-adult electroclinical syndrome
 MONDO:0005756	ethmoid sinusitis	MONDO:0005961	DOID:9507	DOID:0050127	sinusitis
 MONDO:0005757	eumycotic mycetoma	MONDO:0002040	DOID:13078	DOID:1563	dermatomycosis
 MONDO:0005758	eunuchism	MONDO:0002146	DOID:5003	DOID:1924	hypogonadism
@@ -4216,7 +4211,7 @@ MONDO:0007281	cataract 4 multiple types	MONDO:0005129	DOID:0110234	DOID:83	catar
 MONDO:0007282	cataract 29	MONDO:0005129	DOID:0110232	DOID:83	cataract
 MONDO:0007285	cataract 1 multiple types	MONDO:0005129	DOID:0110231	DOID:83	cataract
 MONDO:0007293	leukocyte adhesion deficiency 1	MONDO:0017570	DOID:0110910	DOID:6612	leukocyte adhesion deficiency
-MONDO:0007295	childhood epilepsy with centrotemporal spikes	MONDO:0000414	DOID:3329	DOID:0050704	childhood electroclinical syndrome
+MONDO:0007295	self-limited epilepsy with centrotemporal spikes	MONDO:0000414	DOID:3329	DOID:0050704	childhood electroclinical syndrome
 MONDO:0007297	ADan amyloidosis	MONDO:0005620	DOID:0070030	DOID:9246	cerebral amyloid angiopathy
 MONDO:0007301	cerebrocostomandibular syndrome	MONDO:0002254	DOID:0111248	DOID:225	syndromic disease
 MONDO:0007306	Klippel-Feil syndrome 1, autosomal dominant	MONDO:0001029	DOID:0080589	DOID:10426	Klippel-Feil syndrome
@@ -4288,7 +4283,7 @@ MONDO:0007550	epidermolysis bullosa simplex 1A, generalized severe	MONDO:0017610
 MONDO:0007551	epidermolysis bullosa simplex 1C, localized	MONDO:0017610	DOID:0080510	DOID:4644	epidermolysis bullosa simplex
 MONDO:0007552	pretibial dystrophic epidermolysis bullosa	MONDO:0006543	DOID:0080988	DOID:4959	epidermolysis bullosa dystrophica
 MONDO:0007554	epidermolysis bullosa simplex 1B, generalized intermediate	MONDO:0017610	DOID:0080511	DOID:4644	epidermolysis bullosa simplex
-MONDO:0007555	pidermolysis bullosa simplex 5A, Ogna type	MONDO:0017610	DOID:0060736	DOID:4644	epidermolysis bullosa simplex
+MONDO:0007555	epidermolysis bullosa simplex 5A, Ogna type	MONDO:0017610	DOID:0060736	DOID:4644	epidermolysis bullosa simplex
 MONDO:0007556	epidermolysis bullosa simplex 2F, with mottled pigmentation	MONDO:0017610	DOID:0111346	DOID:4644	epidermolysis bullosa simplex
 MONDO:0007561	multiple epiphyseal dysplasia type 1	MONDO:0016648	DOID:0070303	DOID:12721	multiple epiphyseal dysplasia
 MONDO:0007564	pilomatrixoma	MONDO:0003413	DOID:5374	DOID:5375	hair follicle neoplasm
@@ -4445,7 +4440,6 @@ MONDO:0008207	chondromalacia patellae	MONDO:0002342	DOID:13357	DOID:2557	chondro
 MONDO:0008209	Char syndrome	MONDO:0011827	DOID:0060563	DOID:13832	patent ductus arteriosus
 MONDO:0008210	patterned macular dystrophy 1	MONDO:0020381	DOID:0060866	DOID:0060863	patterned macular dystrophy
 MONDO:0008214	Pelger-Huet anomaly	MONDO:0000426	DOID:9631	DOID:0050736	autosomal dominant disease
-MONDO:0008215	adult-onset autosomal dominant demyelinating leukodystrophy	MONDO:0019046	DOID:0060785	DOID:10579	leukodystrophy
 MONDO:0008218	Hailey-Hailey disease	MONDO:0006594	DOID:0050429	DOID:9182	pemphigus
 MONDO:0008219	pemphigus vulgaris	MONDO:0006594	DOID:0060851	DOID:9182	pemphigus
 MONDO:0008223	hypokalemic periodic paralysis	MONDO:0000995	DOID:14452	DOID:1029	familial periodic paralysis
@@ -6311,6 +6305,7 @@ MONDO:0013995	cholestasis, intrahepatic, of pregnancy, 3	MONDO:0100429	DOID:0070
 MONDO:0014001	Usher syndrome type 1K	MONDO:0010168	DOID:0110837	DOID:0110826	Usher syndrome type 1
 MONDO:0014002	autosomal dominant nocturnal frontal lobe epilepsy 5	MONDO:0020300	DOID:0060686	DOID:0060681	autosomal dominant nocturnal frontal lobe epilepsy
 MONDO:0014003	developmental and epileptic encephalopathy, 15	MONDO:0100062	DOID:0080414	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014005	immunoglobulin-mediated membranoproliferative glomerulonephritis	MONDO:0002350	DOID:0080388	DOID:2590	familial nephrotic syndrome
 MONDO:0014012	Charcot-Marie-Tooth disease axonal type 2Q	MONDO:0018993	DOID:0110170	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0014015	hereditary spastic paraplegia 56	MONDO:0019064	DOID:0110808	DOID:2476	hereditary spastic paraplegia
 MONDO:0014021	familial episodic pain syndrome with predominantly upper body involvement	MONDO:0018319	DOID:0111729	DOID:0111728	familial episodic pain syndrome
@@ -6455,7 +6450,7 @@ MONDO:0014371	developmental and epileptic encephalopathy, 23	MONDO:0100062	DOID:
 MONDO:0014372	cone-rod dystrophy 19	MONDO:0015993	DOID:0111025	DOID:0050572	cone-rod dystrophy
 MONDO:0014374	nephronophthisis 18	MONDO:0019005	DOID:0111125	DOID:12712	nephronophthisis
 MONDO:0014375	congenital diarrhea 7 with exudative enteropathy	MONDO:0000824	DOID:0060778	DOID:0060774	congenital diarrhea
-MONDO:0014376	intellectual disability, autosomal dominant 27	MONDO:0015452	DOID:0070057	DOID:1925	Coffin-Siris syndrome
+MONDO:0014376	intellectual developmental disorder with microcephaly and with or without ocular malformations or hypogonadotropic hypogonadism	MONDO:0015452	DOID:0070057	DOID:1925	Coffin-Siris syndrome
 MONDO:0014378	primary ciliary dyskinesia 29	MONDO:0016575	DOID:0110600	DOID:9562	primary ciliary dyskinesia
 MONDO:0014380	colobomatous microphthalmia-rhizomelic dysplasia syndrome	MONDO:0016073	DOID:0111802	DOID:0080636	syndromic microphthalmia
 MONDO:0014381	cholestasis, progressive familial intrahepatic, 4	MONDO:0015762	DOID:0070224	DOID:0070221	progressive familial intrahepatic cholestasis
@@ -6675,7 +6670,6 @@ MONDO:0014904	congenital disorder of glycosylation, type IAA	MONDO:0005500	DOID:
 MONDO:0014908	microcephaly 17, primary, autosomal recessive	MONDO:0016660	DOID:0070288	DOID:0070296	autosomal recessive primary microcephaly
 MONDO:0014909	primary ciliary dyskinesia 34	MONDO:0016575	DOID:0110610	DOID:9562	primary ciliary dyskinesia
 MONDO:0014910	primary ciliary dyskinesia 35	MONDO:0016575	DOID:0110620	DOID:9562	primary ciliary dyskinesia
-MONDO:0014912	infantile-onset periodic fever-panniculitis-dermatosis syndrome	MONDO:0005046	DOID:0080163	DOID:2914	immune system disorder
 MONDO:0014920	patterned macular dystrophy 3	MONDO:0020381	DOID:0060865	DOID:0060863	patterned macular dystrophy
 MONDO:0014922	myofibrillar myopathy 7	MONDO:0018943	DOID:0080098	DOID:0080307	myofibrillar myopathy
 MONDO:0014923	peeling skin syndrome 5	MONDO:0019347	DOID:0070524	DOID:0060283	peeling skin syndrome
@@ -6924,7 +6918,6 @@ MONDO:0017600	hairy cell leukemia variant	MONDO:0018935	DOID:713	DOID:285	hairy 
 MONDO:0017615	benign familial infantile epilepsy	MONDO:0000413	DOID:0060169	DOID:0050703	infancy electroclinical syndrome
 MONDO:0017719	gangliosidosis	MONDO:0019255	DOID:2368	DOID:1927	sphingolipidosis
 MONDO:0017720	GM2 gangliosidosis	MONDO:0017719	DOID:3321	DOID:2368	gangliosidosis
-MONDO:0017768	reflex epilepsy	MONDO:0100036	DOID:2548	DOID:0050706	variable age onset epilepsy
 MONDO:0017771	Mayer-Rokitansky-Kuster-Hauser syndrome	MONDO:0002254	DOID:0112177	DOID:225	syndromic disease
 MONDO:0017774	hypobetalipoproteinemia	MONDO:0001822	DOID:1390	DOID:1387	hypolipoproteinemia
 MONDO:0017775	melioidosis	MONDO:0000314	DOID:5052	DOID:0050338	primary bacterial infectious disease
@@ -6957,7 +6950,7 @@ MONDO:0018094	Waardenburg syndrome	MONDO:0000426	DOID:9258	DOID:0050736	autosoma
 MONDO:0018094	Waardenburg syndrome	MONDO:0002254	DOID:9258	DOID:225	syndromic disease
 MONDO:0018096	Weill-Marchesani syndrome	MONDO:0000429	DOID:0050475	DOID:0050739	autosomal genetic disease
 MONDO:0018096	Weill-Marchesani syndrome	MONDO:0002254	DOID:0050475	DOID:225	syndromic disease
-MONDO:0018097	West syndrome	MONDO:0000413	DOID:0050562	DOID:0050703	infancy electroclinical syndrome
+MONDO:0018097	infantile spasms	MONDO:0000413	DOID:0050562	DOID:0050703	infancy electroclinical syndrome
 MONDO:0018100	familial primary hypomagnesemia	MONDO:0004689	DOID:0060879	DOID:896	inborn metal metabolism disorder
 MONDO:0018102	corneal dystrophy	MONDO:0000942	DOID:2566	DOID:10124	corneal disorder
 MONDO:0018105	Wolfram syndrome	MONDO:0002254	DOID:10632	DOID:225	syndromic disease
@@ -7120,7 +7113,6 @@ MONDO:0019342	Seckel syndrome	MONDO:0006025	DOID:0050569	DOID:0050737	autosomal 
 MONDO:0019345	shigellosis	MONDO:0000314	DOID:12385	DOID:0050338	primary bacterial infectious disease
 MONDO:0019349	Sotos syndrome	MONDO:0002254	DOID:14748	DOID:225	syndromic disease
 MONDO:0019350	hereditary spherocytosis	MONDO:0003689	DOID:12971	DOID:589	familial hemolytic anemia
-MONDO:0019353	Stargardt disease	MONDO:0005150	DOID:0050817	DOID:10871	age-related macular degeneration
 MONDO:0019354	Stickler syndrome	MONDO:0002254	DOID:0080046	DOID:225	syndromic disease
 MONDO:0019359	Rocky mountain spotted fever	MONDO:0001195	DOID:0050052	DOID:11104	spotted fever
 MONDO:0019360	rickettsialpox	MONDO:0001195	DOID:11103	DOID:11104	spotted fever
@@ -7199,7 +7191,6 @@ MONDO:0019962	thyroid lymphoma	MONDO:0002108	DOID:10011	DOID:1781	thyroid cancer
 MONDO:0019975	pellagra	MONDO:0006873	DOID:8457	DOID:5113	nutritional deficiency disease
 MONDO:0019978	Robinow syndrome	MONDO:0002254	DOID:0060254	DOID:225	syndromic disease
 MONDO:0019992	pseudohypoparathyroidism	MONDO:0004689	DOID:4184	DOID:896	inborn metal metabolism disorder
-MONDO:0020074	progressive myoclonus epilepsy	MONDO:0100036	DOID:891	DOID:0050706	variable age onset epilepsy
 MONDO:0020076	myeloproliferative neoplasm	MONDO:0005170	DOID:2226	DOID:0070004	myeloid neoplasm
 MONDO:0020088	familial partial lipodystrophy	MONDO:0027767	DOID:0050440	DOID:0080299	partial lipodystrophy
 MONDO:0020108	autoimmune hemolytic anemia	MONDO:0000602	DOID:718	DOID:0060050	autoimmune disorder of blood
@@ -7902,7 +7893,6 @@ MONDO:0800438	developmental delay with short stature, dysmorphic facial features
 MONDO:0800448	leukoencephalopathy with vanishing white matter	MONDO:0019046	DOID:0060868	DOID:10579	leukodystrophy
 MONDO:0800449	lysosomal acid lipase deficiency	MONDO:0019245	DOID:0080217	DOID:9455	lysosomal lipid storage disorder
 MONDO:0850092	post-cardiac arrest syndrome	MONDO:0002254	DOID:0070306	DOID:225	syndromic disease
-MONDO:0850093	absence epilepsy	MONDO:0000411	DOID:0070309	DOID:0050701	electroclinical syndrome
 MONDO:0850098	oligoasthenoteratozoospermia	MONDO:0005372	DOID:0070311	DOID:12336	male infertility
 MONDO:0850101	spitzoid melanoma	MONDO:0005012	DOID:0070326	DOID:8923	cutaneous melanoma
 MONDO:0850110	melanoma in congenital melanocytic nevus	MONDO:0005012	DOID:0070327	DOID:8923	cutaneous melanoma
@@ -8058,6 +8048,7 @@ MONDO:0859514	congenital myopathy 18	MONDO:0019952	DOID:0081350	DOID:0081337	con
 MONDO:0859515	congenital myopathy 10b, mild variant	MONDO:0019952	DOID:0081345	DOID:0081337	congenital myopathy
 MONDO:0859517	congenital myopathy 2b, severe infantile, autosomal recessive	MONDO:0019952	DOID:0081339	DOID:0081337	congenital myopathy
 MONDO:0859518	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	MONDO:0019046	DOID:0070403	DOID:0060786	leukodystrophy
+MONDO:0859520	mitochondrial complex IV deficiency, nuclear type 23	MONDO:0033885	DOID:0070485	DOID:3762	mitochondrial complex IV deficiency, nuclear-type
 MONDO:0859522	spermatogenic failure 81	MONDO:0004983	DOID:0070580	DOID:0111910	spermatogenic failure
 MONDO:0859523	congenital myopathy 2c, severe infantile, autosomal dominant	MONDO:0019952	DOID:0081340	DOID:0081337	congenital myopathy
 MONDO:0859567	craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome 2	MONDO:0031329	DOID:0081125	DOID:0081072	craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome
@@ -8109,7 +8100,6 @@ MONDO:0957221	spastic paraplegia 70, autosomal recessive	MONDO:0019064	DOID:0070
 MONDO:0957224	congenital myopathy 21 with early respiratory failure	MONDO:0019952	DOID:0081353	DOID:0081337	congenital myopathy
 MONDO:0957240	cone-rod dystrophy 24	MONDO:0015993	DOID:0081449	DOID:0050572	cone-rod dystrophy
 MONDO:0957247	congenital myopathy 22A, classic	MONDO:0019952	DOID:0081354	DOID:0081337	congenital myopathy
-MONDO:0957248	developmental and epileptic encephalopathy, 31B	MONDO:0100062	DOID:0070376	DOID:0112202	developmental and epileptic encephalopathy
 MONDO:0957249	spermatogenic failure 82	MONDO:0004983	DOID:0070581	DOID:0111910	spermatogenic failure
 MONDO:0957250	spermatogenic failure 83	MONDO:0004983	DOID:0070582	DOID:0111910	spermatogenic failure
 MONDO:0957255	mitochondrial complex V (ATP synthase) deficiency, nuclear type 7	MONDO:0014471	DOID:0070464	DOID:0111143	mitochondrial proton-transporting ATP synthase complex deficiency
@@ -8122,7 +8112,7 @@ MONDO:0957303	palmoplantar keratoderma, epidermolytic, 2	MONDO:0968949	DOID:0070
 MONDO:0957308	spastic paraplegia 90A, autosomal dominant	MONDO:0019064	DOID:0070459	DOID:2476	hereditary spastic paraplegia
 MONDO:0957309	spastic paraplegia 90B, autosomal recessive	MONDO:0019064	DOID:0070460	DOID:2476	hereditary spastic paraplegia
 MONDO:0957519	diffuse gastric cancer	MONDO:0001056	DOID:0080763	DOID:10534	gastric cancer
-MONDO:0957524	COX deficiency, benign infantile mitochondrial myopathy	MONDO:0009068	DOID:0081377	DOID:3762	cytochrome-c oxidase deficiency disease
+MONDO:0957524	COX deficiency, benign infantile mitochondrial myopathy	MONDO:0033885	DOID:0081377	DOID:3762	mitochondrial complex IV deficiency, nuclear-type
 MONDO:0957593	spermatogenic failure 86	MONDO:0004983	DOID:0070585	DOID:0111910	spermatogenic failure
 MONDO:0957594	spermatogenic failure 87	MONDO:0004983	DOID:0070586	DOID:0111910	spermatogenic failure
 MONDO:0957821	spermatogenic failure 88	MONDO:0004983	DOID:0070587	DOID:0111910	spermatogenic failure

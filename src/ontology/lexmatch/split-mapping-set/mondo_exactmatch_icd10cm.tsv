@@ -622,8 +622,7 @@ MONDO:0004471	bacterial arthritis	skos:exactMatch	ICD10CM:M00	Pyogenic arthritis
 MONDO:0004497	tertiary syphilis	skos:exactMatch	ICD10CM:A52	Late syphilis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	late syphilis	LEXMATCH
 MONDO:0004497	tertiary syphilis	skos:exactMatch	ICD10CM:A52	Late syphilis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	late syphilis	LEXMATCH
 MONDO:0004514	chronic rhinitis	skos:exactMatch	ICD10CM:J31.0	Chronic rhinitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	chronic rhinitis	LEXMATCH
-MONDO:0004522	peritonitis	skos:exactMatch	ICD10CM:K65	Peritonitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	peritonitis	LEXMATCH
-MONDO:0004522	peritonitis	skos:exactMatch	ICD10CM:K65.4	Sclerosing mesenteritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	retractile mesenteritis	LEXMATCH
+MONDO:0004522	infectious peritonitis	skos:exactMatch	ICD10CM:K65.4	Sclerosing mesenteritis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	retractile mesenteritis	LEXMATCH
 MONDO:0004549	cork-handlers' disease	skos:exactMatch	ICD10CM:J67.3	Suberosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	suberosis	LEXMATCH
 MONDO:0004549	cork-handlers' disease	skos:exactMatch	ICD10CM:J67.3	Suberosis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	suberosis	LEXMATCH
 MONDO:0004566	postgastrectomy syndrome	skos:exactMatch	ICD10CM:K91.1	Postgastric surgery syndromes	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	postgastrectomy syndrome	LEXMATCH
@@ -1589,6 +1588,7 @@ MONDO:0014448	hyperthyroxinemia, familial dysalbuminemic	skos:exactMatch	ICD10CM
 MONDO:0014452	familial dysfibrinogenemia	skos:exactMatch	ICD10CM:D68.2	Hereditary deficiency of other clotting factors	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	dysfibrinogenemia	LEXMATCH
 MONDO:0014624	Brown syndrome	skos:exactMatch	ICD10CM:H50.61	Brown's sheath syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	browns sheath syndrome	LEXMATCH
 MONDO:0014624	Brown syndrome	skos:exactMatch	ICD10CM:H50.61	Brown's sheath syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	browns sheath syndrome	LEXMATCH
+MONDO:0014633	epilepsy with myoclonic atonic seizures	skos:exactMatch	ICD10CM:G40.4	Other generalized epilepsy and epileptic syndromes	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	epilepsy with myoclonic-astatic seizures	LEXMATCH
 MONDO:0015045	alpha-heavy chain disease	skos:exactMatch	ICD10CM:C88.3	Immunoproliferative small intestinal disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	alpha heavy chain disorder	LEXMATCH
 MONDO:0015045	alpha-heavy chain disease	skos:exactMatch	ICD10CM:C88.3	Immunoproliferative small intestinal disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	immunoproliferative small intestinal disorder	LEXMATCH
 MONDO:0015045	alpha-heavy chain disease	skos:exactMatch	ICD10CM:C88.3	Immunoproliferative small intestinal disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	mediterranean lymphoma	LEXMATCH
@@ -1653,7 +1653,6 @@ MONDO:0015988	multicystic dysplastic kidney	skos:exactMatch	ICD10CM:Q61.4	Renal 
 MONDO:0016003	ehrlichiosis	skos:exactMatch	ICD10CM:A77.4	Ehrlichiosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ehrlichiosis	LEXMATCH
 MONDO:0016006	Cockayne syndrome	skos:exactMatch	ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	cockayne syndrome	LEXMATCH
 MONDO:0016011	fetal alcohol syndrome	skos:exactMatch	ICD10CM:Q86.0	Fetal alcohol syndrome (dysmorphic)	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	fetal alcohol syndrome	LEXMATCH
-MONDO:0016025	myoclonic-astatic epilepsy	skos:exactMatch	ICD10CM:G40.4	Other generalized epilepsy and epileptic syndromes	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	epilepsy with myoclonic-astatic seizures	LEXMATCH
 MONDO:0016033	Cornelia de Lange syndrome	skos:exactMatch	ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	de lange syndrome	LEXMATCH
 MONDO:0016035	Nelson syndrome	skos:exactMatch	ICD10CM:E24.1	Nelson's syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	nelsons syndrome	LEXMATCH
 MONDO:0016035	Nelson syndrome	skos:exactMatch	ICD10CM:E24.1	Nelson's syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	nelsons syndrome	LEXMATCH
@@ -1786,7 +1785,9 @@ MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:exactMatch	ICD10CM:H20.82	Vogt-K
 MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:exactMatch	ICD10CM:H20.82	Vogt-Koyanagi syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	vogt-koyanagi syndrome	LEXMATCH
 MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:exactMatch	ICD10CM:H30.81	Harada's disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	haradas disorder	LEXMATCH
 MONDO:0018092	Vogt-Koyanagi-Harada disease	skos:exactMatch	ICD10CM:H30.81	Harada's disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	haradas disorder	LEXMATCH
-MONDO:0018097	West syndrome	skos:exactMatch	ICD10CM:G40.82	Epileptic spasms	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	infantile spasms	LEXMATCH
+MONDO:0018097	infantile spasms	skos:exactMatch	ICD10CM:G40.82	Epileptic spasms	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	infantile spasms	LEXMATCH
+MONDO:0018097	infantile spasms	skos:exactMatch	ICD10CM:G40.82	Epileptic spasms	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	wests syndrome	LEXMATCH
+MONDO:0018097	infantile spasms	skos:exactMatch	ICD10CM:G40.82	Epileptic spasms	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	infantile spasms	LEXMATCH
 MONDO:0018106	hereditary xanthinuria	skos:exactMatch	ICD10CM:E79.8	Other disorders of purine and pyrimidine metabolism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hereditary xanthinuria	LEXMATCH
 MONDO:0018106	hereditary xanthinuria	skos:exactMatch	ICD10CM:E79.8	Other disorders of purine and pyrimidine metabolism	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	hereditary xanthinuria	LEXMATCH
 MONDO:0018116	galactosemia	skos:exactMatch	ICD10CM:E74.21	Galactosemia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	galactosemia	LEXMATCH
@@ -2374,5 +2375,7 @@ MONDO:0956962	benign teratoma	skos:exactMatch	ICD10CM:D28	Benign neoplasm of oth
 MONDO:0956980	vascular parkinsonism	skos:exactMatch	ICD10CM:G21.4	Vascular parkinsonism	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	vascular parkinsonism	LEXMATCH
 MONDO:0958083	conjoined twins	skos:exactMatch	ICD10CM:Q89.4	Conjoined twins	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	conjoined twins	LEXMATCH
 MONDO:0971058	verruga peruana	skos:exactMatch	ICD10CM:A44.1	Cutaneous and mucocutaneous bartonellosis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	verruga peruana	LEXMATCH
+MONDO:1010100	myxedema coma	skos:exactMatch	ICD10CM:E03.5	Myxedema coma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	myxedema coma	LEXMATCH
+MONDO:1010128	peritonitis	skos:exactMatch	ICD10CM:K65	Peritonitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	peritonitis	LEXMATCH
 MONDO:1030007	hypertensive urgency	skos:exactMatch	ICD10CM:I16.0	Hypertensive urgency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hypertensive urgency	LEXMATCH
 MONDO:1030010	precerebral artery stenosis	skos:exactMatch	ICD10CM:I65	Occlusion and stenosis of precerebral arteries, not resulting in cerebral infarction	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	narrowing of precerebral artery	LEXMATCH
