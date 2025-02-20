@@ -409,7 +409,7 @@ def sync_synonyms(
     # - leave only synonyms that don't exist on given Mondo IDs
     added_df = _filter_a_by_not_in_b(source_df_with_mondo_ids, mondo_df, ['mondo_id', 'synonym_join'])
     added_df = added_df[added_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
-    if doid_added_filtration:
+    if doid_added_filtration and source_name.lower() == 'doid':
         added_df = added_df[added_df['synonym_type'] == 'http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL']
         added_df = added_df[added_df['synonym_scope'] == 'oio:hasExactSynonym']
     added_df = _common_operations(added_df, outpath_added, mondo_exclusions_df=mondo_exclusions_df)
