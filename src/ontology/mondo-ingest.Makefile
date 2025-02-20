@@ -631,7 +631,8 @@ $(SYN_SYNC_DIR)/%-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.
 	--outpath-added $(SYN_SYNC_DIR)/$*.synonyms.added.robot.tsv \
 	--outpath-confirmed $(SYN_SYNC_DIR)/$*.synonyms.confirmed.robot.tsv \
 	--outpath-updated $(SYN_SYNC_DIR)/$*.synonyms.updated.robot.tsv \
-   	--outpath-combined $(TMPDIR)/synonym_sync_combined_cases_$*.tsv
+   	--outpath-combined $(TMPDIR)/synonym_sync_combined_cases_$*.tsv \
+   	--doid-added-filtration
 
 ##################################
 ## Externally managed content ####

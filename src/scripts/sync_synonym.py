@@ -1,4 +1,9 @@
-"""Create outputs for syncing synonyms between Mondo and its sources."""
+"""Create outputs for syncing synonyms between Mondo and its sources.
+
+Potential improvements:
+ - DO filtration: At some point, when the -updated synonym sync pipeline is utilized, filtration may need to be done for
+  the -updated template as well.
+"""
 import logging
 import os
 import re
@@ -247,7 +252,7 @@ def sync_synonyms(
     mondo_exclusion_configs: Union[Path, str], onto_synonym_types_path: Union[Path, str],
     mondo_mappings_path: Union[Path, str], onto_config_path: Union[Path, str], outpath_added: Union[Path, str],
     outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str],
-    outpath_combined: Union[Path, str], outpath_deleted: Union[Path, str] = None,
+    outpath_combined: Union[Path, str], outpath_deleted: Union[Path, str] = None, doid_added_filtration=False
 ):
     """Create outputs for syncing synonyms between Mondo and its sources.
 
@@ -404,6 +409,9 @@ def sync_synonyms(
     # - leave only synonyms that don't exist on given Mondo IDs
     added_df = _filter_a_by_not_in_b(source_df_with_mondo_ids, mondo_df, ['mondo_id', 'synonym_join'])
     added_df = added_df[added_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
+    if doid_added_filtration:
+        added_df = added_df[added_df['synonym_type'] == 'http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL']
+        added_df = added_df[added_df['synonym_scope'] == 'oio:hasExactSynonym']
     added_df = _common_operations(added_df, outpath_added, mondo_exclusions_df=mondo_exclusions_df)
     added_df['case'] = 'added'
 
@@ -481,6 +489,10 @@ def cli():
     parser.add_argument(
         '-b', '--outpath-combined', required=True,
         help='Path to curation file which is a concatenation of all cases.')
+    parser.add_argument(
+        '-D', '--doid-added-filtration', required=False, action='store_true', help='If this flag is '
+        'present, then the only DO synonyms that will be included in the -added ROBOT template will be exact synonyms '
+        'which were created by Mondo as a derivative of the term\'s label.')
     sync_synonyms(**vars(parser.parse_args()))
 
 
