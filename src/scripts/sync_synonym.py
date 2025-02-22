@@ -492,7 +492,7 @@ def cli():
     # todo: Would be good to change setup to `--doid-added-filtration true` instead of just `--doid-added-filtration`.
     #  Advantages: (1) The option stays in the makefile even if it is switched off, giving some level of documentation
     #  to the option. If it is removed, it will disappear from consciousness (i.e. no one will ever look at the python
-    #  scripts), and (2) There may be a nee for more fine grained control than true/false in the future, like
+    #  scripts), and (2) There may be a need for more fine grained control than true/false in the future, like
     #  `--doid-added-filtration exact-from-label,related,narrow`, and in option syntax, we can more easily build that
     #  without having to change dependent code.
     parser.add_argument(
