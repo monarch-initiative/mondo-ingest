@@ -489,6 +489,12 @@ def cli():
     parser.add_argument(
         '-b', '--outpath-combined', required=True,
         help='Path to curation file which is a concatenation of all cases.')
+    # todo: Would be good to change setup to `--doid-added-filtration true` instead of just `--doid-added-filtration`.
+    #  Advantages: (1) The option stays in the makefile even if it is switched off, giving some level of documentation
+    #  to the option. If it is removed, it will disappear from consciousness (i.e. no one will ever look at the python
+    #  scripts), and (2) There may be a nee for more fine grained control than true/false in the future, like
+    #  `--doid-added-filtration exact-from-label,related,narrow`, and in option syntax, we can more easily build that
+    #  without having to change dependent code.
     parser.add_argument(
         '-D', '--doid-added-filtration', required=False, action='store_true', help='If this flag is '
         'present, then the only DO synonyms that will be included in the -added ROBOT template will be exact synonyms '
