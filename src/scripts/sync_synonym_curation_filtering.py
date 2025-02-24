@@ -100,7 +100,7 @@ def sync_synonyms_curation_filtering(
         df_review_labs['synonym_type'] = df_review_labs.apply(
             lambda row: row['synonym_type'] if row['synonym_type'] else row['synonym_type_mondo'], axis=1)
         df_review_labs['synonym_type'] = df_review_labs.groupby(
-            'synonym')['synonym_type'].transform(lambda x: '|'.join(filter(None, x)))
+            'synonym')['synonym_type'].transform(lambda x: '|'.join(set(filter(None, x))))
         df_review_labs = df_review_labs[~df_review_labs['synonym_type'].str.contains('MONDO:ABBREVIATION')]
 
     # Generate outputs & save
@@ -110,9 +110,6 @@ def sync_synonyms_curation_filtering(
         df_review = df_review[['synonym', 'mondo_id', 'source_id', 'case', 'synonym_type',
             'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label']]\
         .sort_values(['synonym', 'mondo_id'])
-    # todo: Could be nice to include synonym_type, but there is currently a bug (probably coming in through the main
-    #  synonym sync script), where the types can be duplicated. Deleting to simplify & avoid confusion.
-    del df_review['synonym_type']
     df_review.to_csv(review_outpath, sep='\t', index=False)
     # - unfiltered outputs
     df_upd.to_csv(updated_outpath, sep='\t', index=False)
