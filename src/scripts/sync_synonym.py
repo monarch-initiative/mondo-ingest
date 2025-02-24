@@ -408,7 +408,6 @@ def sync_synonyms(
 
     # -deleted
     #  Cases where synonym exists in Mondo term, but not in mapped source term
-    deleted_df = pd.DataFrame()
     # todo: -deleted: reactivate when ready.
     #  - depends on more than just 1 source not having synonym. it must (i) exist on no mapped source terms, and (ii)
     #  have no other qualifying evidence (I think just: ORCID & MONDO;notVerified),
