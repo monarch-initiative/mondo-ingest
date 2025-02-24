@@ -14,7 +14,7 @@ HERE = Path(os.path.abspath(os.path.dirname(__file__)))
 SRC_DIR = HERE.parent
 PROJECT_ROOT = SRC_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
-from src.scripts.sync_synonym import _common_operations, _read_sparql_output_tsv
+from src.scripts.sync_synonym import _common_operations, _read_sparql_output_tsv, _curies_to_uris_from_delim_str
 from src.scripts.utils import remove_angle_brackets
 
 
@@ -106,7 +106,12 @@ def sync_synonyms_curation_filtering(
     # Generate outputs & save
     # - review file
     df_review = pd.concat([df_review_syns, df_review_labs], ignore_index=True)
+
     if len(df_review) > 0:
+        # - synonym type: Dedupe after converting CURIEs to URIs
+        df_review['synonym_type'] = df_review['synonym_type'].apply(_curies_to_uris_from_delim_str)
+        df_review_labs['synonym_type'] = df_review_labs['synonym_type'].apply(
+            lambda x: '|'.join(set(x.split('|'))) if isinstance(x, str) else x)
         df_review = df_review[['synonym', 'mondo_id', 'source_id', 'case', 'synonym_type',
             'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label']]\
         .sort_values(['synonym', 'mondo_id'])
