@@ -602,6 +602,15 @@ $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/review-qc-duplicat
 $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv: $(TMPDIR)/sync-synonyms.updated.robot.tsv
 	cp $< $@
 
+$(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.confirmed.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.confirmed.robot.tsv > $@
+
+$(TMPDIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.added.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.added.robot.tsv > $@
+
+$(TMPDIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.updated.robot.tsv)
+	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.updated.robot.tsv > $@
+
 $(TMPDIR)/mondo-synonyms-scope-type-xref.tsv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i tmp/mondo.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
@@ -611,16 +620,7 @@ $(TMPDIR)/%-synonyms-scope-type-xref.tsv: $(COMPONENTSDIR)/%.owl
 ../../tests/input/sync_synonym/%-synonyms-scope-type-xref.tsv:
 	$(ROBOT) query -i ../../tests/input/sync_synonym/test_$*.owl --query ../sparql/synonyms-scope-type-xref.sparql $@
 
-$(TMPDIR)/sync-synonyms.added.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.added.robot.tsv)
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.added.robot.tsv > $@
-
-$(TMPDIR)/sync-synonyms.confirmed.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.confirmed.robot.tsv)
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.confirmed.robot.tsv > $@
-
-$(TMPDIR)/sync-synonyms.updated.robot.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n)-synonyms.updated.robot.tsv)
-	awk '(NR == 1) || (NR == 2) || (FNR > 2)' $(TMPDIR)/*.synonyms.updated.robot.tsv > $@
-
-$(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.updated.robot.tsv $(SYN_SYNC_DIR)/%-synonyms.confirmed.robot.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml $(TMPDIR)/mondo-synonyms-scope-type-xref.tsv $(TMPDIR)/%-synonyms-scope-type-xref.tsv | $(TMPDIR)
+$(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.updated.robot.tsv $(TMPDIR)/%-synonyms.confirmed.robot.tsv: $(TMPDIR)/mondo.sssom.tsv $(COMPONENTSDIR)/%.db metadata/%.yml $(TMPDIR)/mondo-synonyms-scope-type-xref.tsv $(TMPDIR)/%-synonyms-scope-type-xref.tsv | $(TMPDIR)
 	python3 $(SCRIPTSDIR)/sync_synonym.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--ontology-db-path $(COMPONENTSDIR)/$*.db \
@@ -629,7 +629,7 @@ $(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.updated.robot.tsv $(SY
 	--onto-synonym-types-path $(TMPDIR)/$*-synonyms-scope-type-xref.tsv \
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(TMPDIR)/$*.synonyms.added.robot.tsv \
-	--outpath-confirmed $(SYN_SYNC_DIR)/$*.synonyms.confirmed.robot.tsv \
+	--outpath-confirmed $(TMPDIR)/$*.synonyms.confirmed.robot.tsv \
 	--outpath-updated $(TMPDIR)/$*.synonyms.updated.robot.tsv
 
 ##################################
