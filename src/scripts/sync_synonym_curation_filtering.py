@@ -151,9 +151,6 @@ def cli():
         '-A', '--added-outpath', required=True,
         help='Path to filtered ROBOT template TSV containing synonyms that aren\'t yet integrated into Mondo.')
     parser.add_argument(
-        '-C', '--confirmed-outpath', required=True,
-        help='Path to filtered ROBOT template TSV containing synonym confirmations.')
-    parser.add_argument(
         '-U', '--updated-outpath', required=True,
         help='Path to filtered ROBOT template TSV containing updates to synonym scope.')
     parser.add_argument(
