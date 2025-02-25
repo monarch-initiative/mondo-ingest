@@ -630,7 +630,8 @@ $(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.updated.robot.tsv $(TM
 	--onto-config-path metadata/$*.yml \
 	--outpath-added $(TMPDIR)/$*.synonyms.added.robot.tsv \
 	--outpath-confirmed $(TMPDIR)/$*.synonyms.confirmed.robot.tsv \
-	--outpath-updated $(TMPDIR)/$*.synonyms.updated.robot.tsv
+	--outpath-updated $(TMPDIR)/$*.synonyms.updated.robot.tsv \
+   	--doid-added-filtration
 
 ##################################
 ## Externally managed content ####

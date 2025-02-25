@@ -46,9 +46,6 @@ MONDO:0002370	ovarian Brenner tumor	skos:closeMatch	NCIT:C4746	Benign Ovarian Br
 MONDO:0002370	ovarian Brenner tumor	skos:closeMatch	NCIT:C4746	Benign Ovarian Brenner Tumor	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	benign ovarian brenner tumor	LEXMATCH
 MONDO:0002380	myoepithelial tumor	skos:closeMatch	NCIT:C7442	Benign Myoepithelioma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	benign myoepithelioma	LEXMATCH
 MONDO:0002380	myoepithelial tumor	skos:closeMatch	NCIT:C7442	Benign Myoepithelioma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	benign myoepithelioma	LEXMATCH
-MONDO:0002407	capillary hemangioma	skos:closeMatch	NCIT:C6645	Infantile Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	infantile hemangioma	LEXMATCH
-MONDO:0002407	capillary hemangioma	skos:closeMatch	NCIT:C6645	Infantile Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	juvenile hemangioma	LEXMATCH
-MONDO:0002407	capillary hemangioma	skos:closeMatch	NCIT:C6645	Infantile Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	infantile hemangioma	LEXMATCH
 MONDO:0002477	prostate neuroendocrine neoplasm	skos:closeMatch	NCIT:C158912	Prostate Neuroendocrine Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	prostate neuroendocrine carcinoma	LEXMATCH
 MONDO:0002477	prostate neuroendocrine neoplasm	skos:closeMatch	NCIT:C158912	Prostate Neuroendocrine Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	prostate neuroendocrine carcinoma	LEXMATCH
 MONDO:0002512	papillary adenocarcinoma	skos:closeMatch	NCIT:C7438	Invasive Papillary Adenocarcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	infiltrating papillary adenocarcinoma	LEXMATCH
@@ -90,8 +87,12 @@ MONDO:0004278	infiltrating bladder urothelial carcinoma sarcomatoid variant	skos
 MONDO:0004631	tongue cancer	skos:closeMatch	NCIT:C3524	Malignant Posterior Tongue Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	malignant neoplasm of base of tongue	LEXMATCH
 MONDO:0004631	tongue cancer	skos:closeMatch	NCIT:C3524	Malignant Posterior Tongue Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	malignant tumor of base of tongue	LEXMATCH
 MONDO:0004631	tongue cancer	skos:closeMatch	NCIT:C3524	Malignant Posterior Tongue Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	malignant tumor of posterior tongue	LEXMATCH
-MONDO:0004631	tongue cancer	skos:closeMatch	NCIT:C4824	Tongue Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	tongue carcinoma	LEXMATCH
-MONDO:0004631	tongue cancer	skos:closeMatch	NCIT:C4824	Tongue Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	tongue carcinoma	LEXMATCH
+MONDO:0004724	submandibular gland cancer	skos:closeMatch	NCIT:C8396	Submandibular Gland Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	carcinoma of submandibular gland	LEXMATCH
+MONDO:0004724	submandibular gland cancer	skos:closeMatch	NCIT:C8396	Submandibular Gland Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	carcinoma of the submandibular gland	LEXMATCH
+MONDO:0004724	submandibular gland cancer	skos:closeMatch	NCIT:C8396	Submandibular Gland Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	submandibular gland carcinoma	LEXMATCH
+MONDO:0004724	submandibular gland cancer	skos:closeMatch	NCIT:C8396	Submandibular Gland Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	submandibular gland carcinoma	LEXMATCH
+MONDO:0004724	submandibular gland cancer	skos:closeMatch	NCIT:C8396	Submandibular Gland Carcinoma	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0004724	LEXMATCH
+MONDO:0004724	submandibular gland cancer	skos:closeMatch	NCIT:C8396	Submandibular Gland Carcinoma	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	mondo:0004724	LEXMATCH
 MONDO:0004948	B-cell chronic lymphocytic leukemia	skos:closeMatch	NCIT:C7540	Small Lymphocytic Lymphoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	small lymphocytic lymphoma	LEXMATCH
 MONDO:0004948	B-cell chronic lymphocytic leukemia	skos:closeMatch	NCIT:C7540	Small Lymphocytic Lymphoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	small lymphocytic lymphoma	LEXMATCH
 MONDO:0004952	Hodgkins lymphoma	skos:closeMatch	NCIT:C164145	Hodgkin's Sarcoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	hodgkins sarcoma	LEXMATCH
@@ -101,8 +102,6 @@ MONDO:0004952	Hodgkins lymphoma	skos:closeMatch	NCIT:C5012	Ann Arbor Stage I Sub
 MONDO:0004965	acinar cell carcinoma	skos:closeMatch	NCIT:C4197	Acinar Cell Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	acinic cell tumor	LEXMATCH
 MONDO:0004972	adenoma	skos:closeMatch	NCIT:C4196	Acinar Cell Adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	acinar cell adenoma	LEXMATCH
 MONDO:0004972	adenoma	skos:closeMatch	NCIT:C4196	Acinar Cell Adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	acinar cell adenoma	LEXMATCH
-MONDO:0004985	bipolar disorder	skos:closeMatch	NCIT:C34805	Manic Bipolar Affective Disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	manic bipolar affective disorder	LEXMATCH
-MONDO:0004985	bipolar disorder	skos:closeMatch	NCIT:C34805	Manic Bipolar Affective Disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	manic bipolar affective disorder	LEXMATCH
 MONDO:0005004	clear cell adenocarcinoma	skos:closeMatch	NCIT:C4156	Water-Clear Cell Adenocarcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	water-clear cell carcinoma	LEXMATCH
 MONDO:0005045	hypertrophic cardiomyopathy	skos:closeMatch	NCIT:C84773	Familial Hypertrophic Cardiomyopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	familial hypertrophic cardiomyopathy	LEXMATCH
 MONDO:0005045	hypertrophic cardiomyopathy	skos:closeMatch	NCIT:C84773	Familial Hypertrophic Cardiomyopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	familial hypertrophic cardiomyopathy	LEXMATCH
@@ -133,8 +132,6 @@ MONDO:0005182	serous cystadenofibroma	skos:closeMatch	NCIT:C40032	Ovarian Serous
 MONDO:0005374	bone marrow neoplasm	skos:closeMatch	NCIT:C35501	Malignant Bone Marrow Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	malignant bone marrow tumor	LEXMATCH
 MONDO:0005411	gallbladder cancer	skos:closeMatch	NCIT:C35676	Localized Malignant Gallbladder Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	localized malignant gallbladder neoplasm	LEXMATCH
 MONDO:0005411	gallbladder cancer	skos:closeMatch	NCIT:C35676	Localized Malignant Gallbladder Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	localized malignant gallbladder neoplasm	LEXMATCH
-MONDO:0005412	duodenal ulcer	skos:closeMatch	NCIT:C35263	Stress Ulcer	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	stress ulcer	LEXMATCH
-MONDO:0005412	duodenal ulcer	skos:closeMatch	NCIT:C35263	Stress Ulcer	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	stress ulcer	LEXMATCH
 MONDO:0005440	embryonal carcinoma	skos:closeMatch	NCIT:C8880	Extragonadal Embryonal Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	primary extragonadal embryonal carcinoma	LEXMATCH
 MONDO:0005615	plasmacytoma	skos:closeMatch	NCIT:C118421	Anaplastic Plasmacytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	anaplastic plasmacytoma	LEXMATCH
 MONDO:0005615	plasmacytoma	skos:closeMatch	NCIT:C118421	Anaplastic Plasmacytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	anaplastic plasmacytoma	LEXMATCH
@@ -174,7 +171,6 @@ MONDO:0006787	hidrocystoma	skos:closeMatch	NCIT:C205459	Apocrine Cystadenoma	sem
 MONDO:0006787	hidrocystoma	skos:closeMatch	NCIT:C7565	Eccrine Hidrocystoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	eccrine cystadenoma	LEXMATCH
 MONDO:0006835	lipoid nephrosis	skos:closeMatch	NCIT:C35540	Nephrotic Syndrome with Lesion of Minimal Change Glomerulonephritis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	nephrotic syndrome with lesion of minimal change glomerulonephritis	LEXMATCH
 MONDO:0006835	lipoid nephrosis	skos:closeMatch	NCIT:C35540	Nephrotic Syndrome with Lesion of Minimal Change Glomerulonephritis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	nephrotic syndrome with lesion of minimal change glomerulonephritis	LEXMATCH
-MONDO:0007101	familial primary localized cutaneous amyloidosis	skos:closeMatch	NCIT:C199391	Primary Cutaneous Amyloidosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	primary localized cutaneous amyloidosis	LEXMATCH
 MONDO:0007251	campomelic dysplasia	skos:closeMatch	NCIT:C75517	SOX9 wt Allele	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	cmd1	LEXMATCH
 MONDO:0007256	hepatocellular carcinoma	skos:closeMatch	NCIT:C7711	Adult Liver Carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	liver cancer	LEXMATCH
 MONDO:0007417	Darier disease	skos:closeMatch	NCIT:C79969	Darjeeling Zebrafish	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	dar	LEXMATCH
@@ -205,7 +201,6 @@ MONDO:0007958	familial medullary thyroid carcinoma	skos:closeMatch	NCIT:C52204	R
 MONDO:0007959	medulloblastoma	skos:closeMatch	NCIT:C27294	Localized Primitive Neuroectodermal Tumor	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	localized primitive neuroectodermal tumor	LEXMATCH
 MONDO:0007959	medulloblastoma	skos:closeMatch	NCIT:C27294	Localized Primitive Neuroectodermal Tumor	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	localized primitive neuroectodermal tumor	LEXMATCH
 MONDO:0008010	antigen defined by monoclonal antibody Aj9	skos:closeMatch	NCIT:C51319	RPS6KA5 wt Allele	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	msk1	LEXMATCH
-MONDO:0008040	transient myeloproliferative syndrome	skos:closeMatch	NCIT:C165497	Spitz Melanoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	mst	LEXMATCH
 MONDO:0008143	osteoarthritis susceptibility 1	skos:closeMatch	NCIT:C54317	Odontoameloblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	oa	LEXMATCH
 MONDO:0008209	Char syndrome	skos:closeMatch	NCIT:C52214	TFAP2B wt Allele	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	char	LEXMATCH
 MONDO:0008377	retinitis pigmentosa 1	skos:closeMatch	NCIT:C85045	Retinitis Pigmentosa	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	retinitis pigmentosa	LEXMATCH
@@ -228,7 +223,7 @@ MONDO:0009258	classic galactosemia	skos:closeMatch	NCIT:C84723	Galactosemia	sema
 MONDO:0009273	hydatidiform mole, recurrent, 1	skos:closeMatch	NCIT:C180633	Gestational Trophoblastic Disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	gestational trophoblastic disorder	LEXMATCH
 MONDO:0009273	hydatidiform mole, recurrent, 1	skos:closeMatch	NCIT:C180633	Gestational Trophoblastic Disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	gestational trophoblastic disorder	LEXMATCH
 MONDO:0009273	hydatidiform mole, recurrent, 1	skos:closeMatch	NCIT:C180633	Gestational Trophoblastic Disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	gestational trophoblastic disorder	LEXMATCH
-MONDO:0009275	neonatal hemochromatosis	skos:closeMatch	NCIT:C43460	New Hampshire	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	nh	LEXMATCH
+MONDO:0009484	primary ciliary dyskinesia 1	skos:closeMatch	NCIT:C84638	Ciliary Motility Defect	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	immotile cilia syndrome	LEXMATCH
 MONDO:0009484	primary ciliary dyskinesia 1	skos:closeMatch	NCIT:C84797	Kartagener Syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	kartagener syndrome	LEXMATCH
 MONDO:0009484	primary ciliary dyskinesia 1	skos:closeMatch	NCIT:C84797	Kartagener Syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	kartagener syndrome	LEXMATCH
 MONDO:0009572	autosomal recessive familial Mediterranean fever	skos:closeMatch	NCIT:C84707	Familial Mediterranean Fever	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	familial mediterranean fever	LEXMATCH
@@ -288,20 +283,14 @@ MONDO:0016281	46,XX ovotesticular disorder of sex development	skos:closeMatch	NC
 MONDO:0016281	46,XX ovotesticular disorder of sex development	skos:closeMatch	NCIT:C85207	True Hermaphroditism	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	true hermaphroditism	LEXMATCH
 MONDO:0016430	Balo concentric sclerosis	skos:closeMatch	NCIT:C84670	Diffuse Cerebral Sclerosis of Schilder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	diffuse cerebral sclerosis of schilder	LEXMATCH
 MONDO:0016430	Balo concentric sclerosis	skos:closeMatch	NCIT:C84670	Diffuse Cerebral Sclerosis of Schilder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	diffuse cerebral sclerosis of schilder	LEXMATCH
-MONDO:0016642	meningioma	skos:closeMatch	NCIT:C4656	Intracranial Meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	intracranial meningioma	LEXMATCH
-MONDO:0016642	meningioma	skos:closeMatch	NCIT:C4656	Intracranial Meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	intracranial meningioma	LEXMATCH
 MONDO:0016642	meningioma	skos:closeMatch	NCIT:C6971	Meningothelial Cell Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	meningothelial cell tumor	LEXMATCH
 MONDO:0016642	meningioma	skos:closeMatch	NCIT:C6971	Meningothelial Cell Neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	primary meningeal tumor	LEXMATCH
-MONDO:0016642	meningioma	skos:closeMatch	NCIT:C7048	Supratentorial Meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	supratentorial meningioma	LEXMATCH
-MONDO:0016642	meningioma	skos:closeMatch	NCIT:C7048	Supratentorial Meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	supratentorial meningioma	LEXMATCH
 MONDO:0016733	ganglioglioma	skos:closeMatch	NCIT:C27362	Childhood Ganglioglioma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	childhood ganglioglioma	LEXMATCH
 MONDO:0016733	ganglioglioma	skos:closeMatch	NCIT:C27362	Childhood Ganglioglioma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	childhood ganglioglioma	LEXMATCH
 MONDO:0016733	ganglioglioma	skos:closeMatch	NCIT:C27363	Adult Ganglioglioma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	adult ganglioglioma	LEXMATCH
 MONDO:0016733	ganglioglioma	skos:closeMatch	NCIT:C27363	Adult Ganglioglioma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	adult ganglioglioma	LEXMATCH
 MONDO:0017453	fetal parvovirus syndrome	skos:closeMatch	NCIT:C84695	Erythema Infectiosum	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	fifth disorder	LEXMATCH
 MONDO:0017858	acute erythroid leukemia	skos:closeMatch	NCIT:C68694	Adult Erythroleukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	erythroleukemia	LEXMATCH
-MONDO:0017858	acute erythroid leukemia	skos:closeMatch	NCIT:C7152	Erythroleukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	erythroleukemia	LEXMATCH
-MONDO:0017858	acute erythroid leukemia	skos:closeMatch	NCIT:C7152	Erythroleukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	erythroleukemia	LEXMATCH
 MONDO:0018044	idiopathic hypersomnia	skos:closeMatch	NCIT:C84781	Idiopathic Hypersomnolence	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	idiopathic hypersomnolence	LEXMATCH
 MONDO:0018044	idiopathic hypersomnia	skos:closeMatch	NCIT:C84781	Idiopathic Hypersomnolence	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	idiopathic hypersomnolence	LEXMATCH
 MONDO:0018079	thymic epithelial neoplasm	skos:closeMatch	NCIT:C38134	Tetanus Toxoid Helper Peptide	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	tet	LEXMATCH
@@ -325,16 +314,6 @@ MONDO:0020316	acute myeloid leukemia with abnormal bone marrow eosinophils inv(1
 MONDO:0020316	acute myeloid leukemia with abnormal bone marrow eosinophils inv(16)(p13q22) or t(16;16)(p13;q22)	skos:closeMatch	NCIT:C7970	Childhood Acute Myelomonocytic Leukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	acute myelomonocytic leukemia	LEXMATCH
 MONDO:0020791	corneal dystrophy, Meesmann, 1	skos:closeMatch	NCIT:C84795	Meesmann Corneal Dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	meesmann corneal dystrophy	LEXMATCH
 MONDO:0020791	corneal dystrophy, Meesmann, 1	skos:closeMatch	NCIT:C84795	Meesmann Corneal Dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	meesmann corneal dystrophy	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	accelerated phase chronic granulocytic leukemia	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	accelerated phase chronic myelocytic leukemia	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	accelerated phase chronic myelogenous leukemia	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	accelerated phase chronic myelogenous leukemia, bcr-abl1 positive	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	accelerated phase chronic myeloid leukemia	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	accelerated phase cml	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	aggressive-phase chronic myelocytic leukemia	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	aggressive-phase chronic myelogenous leukemia	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	aggressive-phase chronic myeloid leukemia	LEXMATCH
-MONDO:0021367	leukemia, myeloid, accelerated-phase	skos:closeMatch	NCIT:C3173	Accelerated Phase Chronic Myeloid Leukemia, BCR-ABL1 Positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	aggressive-phase cml	LEXMATCH
 MONDO:0021636	astrocytic tumor	skos:closeMatch	NCIT:C124275	Childhood Astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	astrocytoma	LEXMATCH
 MONDO:0021657	ovarian sex cord-stromal tumor	skos:closeMatch	NCIT:C4208	Ovarian Sex Cord Tumor with Annular Tubules	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	ovarian sex cord tumor with annular tubules	LEXMATCH
 MONDO:0021657	ovarian sex cord-stromal tumor	skos:closeMatch	NCIT:C4208	Ovarian Sex Cord Tumor with Annular Tubules	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	ovarian sex cord tumor with annular tubules	LEXMATCH
@@ -342,18 +321,7 @@ MONDO:0022037	large-cell immunoblastic lymphoma	skos:closeMatch	NCIT:C3461	Immun
 MONDO:0022037	large-cell immunoblastic lymphoma	skos:closeMatch	NCIT:C3461	Immunoblastic Lymphoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	immunoblastic lymphoma	LEXMATCH
 MONDO:0022037	large-cell immunoblastic lymphoma	skos:closeMatch	NCIT:C7873	Adult Immunoblastic Lymphoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	immunoblastic lymphoma	LEXMATCH
 MONDO:0022037	large-cell immunoblastic lymphoma	skos:closeMatch	NCIT:C9079	Childhood Immunoblastic Lymphoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	immunoblastic lymphoma	LEXMATCH
-MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	granulation tissue-type hemangioma	LEXMATCH
-MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	granuloma pyogenicum	LEXMATCH
-MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	granuloma telangiecticum	LEXMATCH
-MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	granulomata pyogenicum	LEXMATCH
-MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	hemangiomatous granulation tissue	LEXMATCH
-MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	lobular capillary hemangioma	LEXMATCH
-MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	lobular hemangioma	LEXMATCH
-MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	pyogenic granuloma	LEXMATCH
-MONDO:0022096	pyogenic granuloma	skos:closeMatch	NCIT:C3480	Lobular Capillary Hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	lobular capillary hemangioma	LEXMATCH
 MONDO:0023161	viral myocarditis	skos:closeMatch	NCIT:C91441	Viral Myocarditis Pathway	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	viral myocarditis	LEXMATCH
-MONDO:0023650	littoral cell angioma of the spleen	skos:closeMatch	NCIT:C200524	Littoral Cell Angioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	littoral cell angioma	LEXMATCH
-MONDO:0023650	littoral cell angioma of the spleen	skos:closeMatch	NCIT:C200524	Littoral Cell Angioma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	littoral cell angioma	LEXMATCH
 MONDO:0024264	hypothyroidism, congenital, nongoitrous, 2	skos:closeMatch	NCIT:C85190	Thyroid Dysgenesis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	thyroid dysgenesis	LEXMATCH
 MONDO:0024264	hypothyroidism, congenital, nongoitrous, 2	skos:closeMatch	NCIT:C85190	Thyroid Dysgenesis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	thyroid dysgenesis	LEXMATCH
 MONDO:0024265	Duane syndrome type 1	skos:closeMatch	NCIT:C84678	Duane Syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	duane syndrome	LEXMATCH
@@ -364,7 +332,6 @@ MONDO:0024498	glioma susceptibility 1	skos:closeMatch	NCIT:C115623	Adult Subepen
 MONDO:0024498	glioma susceptibility 1	skos:closeMatch	NCIT:C124275	Childhood Astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	astrocytoma	LEXMATCH
 MONDO:0024498	glioma susceptibility 1	skos:closeMatch	NCIT:C5097	Brain Stem Glioblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	glioblastoma multiforme	LEXMATCH
 MONDO:0024498	glioma susceptibility 1	skos:closeMatch	NCIT:C9092	Adult Ependymoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	ependymoma	LEXMATCH
-MONDO:0024503	digestive system neuroendocrine neoplasm	skos:closeMatch	NCIT:C188218	Neuroendocrine Tumor	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	carcinoid tumor	LEXMATCH
 MONDO:0024523	aortic valve disease 1	skos:closeMatch	NCIT:C78650	Aortic Valve Disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	aortic valve disorder	LEXMATCH
 MONDO:0024523	aortic valve disease 1	skos:closeMatch	NCIT:C78650	Aortic Valve Disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	aortic valve disorder	LEXMATCH
 MONDO:0024677	pancreatic insulinoma	skos:closeMatch	NCIT:C65184	Islet Cell Adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	islet cell adenoma	LEXMATCH
