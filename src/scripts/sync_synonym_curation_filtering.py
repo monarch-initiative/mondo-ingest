@@ -120,7 +120,11 @@ def sync_synonyms_curation_filtering(
     df_upd.to_csv(updated_outpath, sep='\t', index=False)
     df_conf.to_csv(confirmed_outpath, sep='\t', index=False)
     # - filtered outputs
-    df_filtered = df_all[~df_all.index.isin(df_review.index)]
+    key_columns = ['synonym', 'mondo_id', 'source_id']
+    df_all['key'] = df_all[key_columns].apply(lambda x: '_'.join(x), axis=1)
+    df_review['key'] = df_review[key_columns].apply(lambda x: '_'.join(x), axis=1)
+    df_filtered = df_all[~df_all['key'].isin(df_review['key'])]
+    del df_filtered['key']
     if filter_updated:
         _common_operations(df_filtered[df_filtered['case'] == 'updated'], updated_outpath, dont_make_scope_cols=True)
     _common_operations(df_filtered[df_filtered['case'] == 'added'], added_outpath, dont_make_scope_cols=True)
