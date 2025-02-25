@@ -1,0 +1,17 @@
+name: Monthly Checklist Issue
+
+on:
+  schedule:
+    - cron: "0 12 2-8 * 2" # Runs at 12:00 UTC on the first Tuesday of every month
+  workflow_dispatch: # Allows manual trigger from GitHub Actions UI
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Monthly Checklist Issue
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/ISSUE_TEMPLATE/data-release-checklist.md
