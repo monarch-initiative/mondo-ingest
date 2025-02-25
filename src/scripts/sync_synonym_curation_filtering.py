@@ -1,7 +1,7 @@
 """Filter out cases where curation is needed"""
 import os
 import sys
-from argparse import ArgumentParser
+from argparse import ArgumentParser, ArgumentTypeError
 from pathlib import Path
 from typing import Union, List
 
@@ -27,11 +27,16 @@ def _read_synonym_file(path: Union[Path, str], case: str) -> pd.DataFrame:
     return df
 
 
+def _str2bool(v):
+    v = v if isinstance(v, bool) else True if v.lower()  == 'true' else False if v.lower() == 'false' else None
+    if v is None:
+        raise ArgumentTypeError('Boolean value expected; one of: true/false, TRUE/FALSE, True/False')
+    return v
+
 def sync_synonyms_curation_filtering(
     added_inpath: Union[Path, str], confirmed_inpath: Union[Path, str], updated_inpath: Union[Path, str],
-    added_outpath: Union[Path, str], confirmed_outpath: Union[Path, str], updated_outpath: Union[Path, str],
-    mondo_synonyms_inpath: Union[Path, str], mondo_db_inpath: Union[Path, str], review_outpath: Union[Path, str],
-    filter_updated=False
+    added_outpath: Union[Path, str], updated_outpath: Union[Path, str], mondo_synonyms_inpath: Union[Path, str],
+    mondo_db_inpath: Union[Path, str], review_outpath: Union[Path, str], dont_filter_updated=True
 ):
     """Filter out cases where curation is needed"""
     # Read -added & -updated
@@ -52,7 +57,7 @@ def sync_synonyms_curation_filtering(
     df_mondo_syns['case'] = df_mondo_conf['case'].fillna('unconfirmed')
 
     # Group all sources of synonyms & labels cases together
-    collisions_to_check = [df_add, df_upd, df_mondo_syns] if filter_updated else [df_add, df_mondo_syns]
+    collisions_to_check = [df_add, df_upd, df_mondo_syns] if not dont_filter_updated else [df_add, df_mondo_syns]
     df_all = pd.concat(collisions_to_check, ignore_index=True).fillna('')
     df_all['synonym_type'] = df_all.apply(
         lambda row: row['synonym_type'] if row['synonym_type'] else row['synonym_type_mondo'], axis=1)
@@ -117,16 +122,13 @@ def sync_synonyms_curation_filtering(
             'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label']]\
         .sort_values(['synonym', 'mondo_id'])
     df_review.to_csv(review_outpath, sep='\t', index=False)
-    # - unfiltered outputs
-    df_upd.to_csv(updated_outpath, sep='\t', index=False)
-    df_conf.to_csv(confirmed_outpath, sep='\t', index=False)
     # - filtered outputs
     key_columns = ['synonym', 'mondo_id', 'source_id']
     df_all['key'] = df_all[key_columns].apply(lambda x: '_'.join(x), axis=1)
     df_review['key'] = df_review[key_columns].apply(lambda x: '_'.join(x), axis=1)
     df_filtered = df_all[~df_all['key'].isin(df_review['key'])]
     del df_filtered['key']
-    if filter_updated:
+    if not dont_filter_updated:
         _common_operations(df_filtered[df_filtered['case'] == 'updated'], updated_outpath, dont_make_scope_cols=True)
     _common_operations(df_filtered[df_filtered['case'] == 'added'], added_outpath, dont_make_scope_cols=True)
 
@@ -161,8 +163,13 @@ def cli():
     parser.add_argument(
         '-M', '--mondo-db-inpath', required=True, help='Path to Mondo SemanticSQL DB.')
     parser.add_argument(
-        '-o', '--review-outpath', required=True,
-        help='Path to curation file for review.')
+        '-o', '--review-outpath', required=True, help='Path to curation file for review.')
+    parser.add_argument(
+        '-f', '--dont-filter-updated', default=True, required=False, type=_str2bool,
+        help='If True, will not consider -updated for collisions. Will not filter out the -updated template even if '
+             'any entries would cause collisions when processed in Mondo. Will also not filter -added based on any '
+             'collisions with the same exact synonym in -updated. Will also not show any such collisions in the review '
+             'file. \nUsage: `--dont-filter-updated True`, `--dont-filter-updated False`.')
     sync_synonyms_curation_filtering(**vars(parser.parse_args()))
 
 
