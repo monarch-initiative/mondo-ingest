@@ -52,7 +52,8 @@ def sync_synonyms_curation_filtering(
     df_mondo_syns['case'] = df_mondo_conf['case'].fillna('unconfirmed')
 
     # Group all sources of synonyms & labels cases together
-    df_all = pd.concat([df_add, df_upd, df_mondo_syns], ignore_index=True).fillna('')
+    collisions_to_check = [df_add, df_upd, df_mondo_syns] if filter_updated else [df_add, df_mondo_syns]
+    df_all = pd.concat(collisions_to_check, ignore_index=True).fillna('')
     df_all['synonym_type'] = df_all.apply(
         lambda row: row['synonym_type'] if row['synonym_type'] else row['synonym_type_mondo'], axis=1)
 

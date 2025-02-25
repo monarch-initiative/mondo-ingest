@@ -93,6 +93,7 @@ _Example 1: exactSynonym-exactSynonym conflict_
 You don't want to review just 1 row in isolation. You want to review 1 at a time all of the rows for a given synonym.
 
 For example:
+
 | synonym | mondo_id | source_id | case |
 | --- | --- | --- | --- |
 | 3C syndrome | MONDO:0009073 | OMIM:220210 | added |
@@ -102,6 +103,7 @@ For example:
 The conflict here is in the first of these rows. The synonym sync wants to add this synonym to MONDO:0009073, as evidenced by OMIM:220210. However this introduces a conflict because that synonym already exists on MONDO:0019078, where it is evidenced by GARD:0005666 and Orphanet:7.
 
 _Example 2: exactSynonym-label conflict_
+
 | synonym | mondo_id | source_id | case | filtered_because_this_mondo_id_already_has_this_synonym_as_its_label |
 | --- | --- | --- | --- | --- |
 | A20 haploinsufficiency | MONDO:0800045 | DOID:0080944 | added | MONDO:0100222 |
