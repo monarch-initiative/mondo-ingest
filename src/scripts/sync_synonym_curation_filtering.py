@@ -98,6 +98,8 @@ def sync_synonyms_curation_filtering(
     df_review_labs = df_sync.merge(df_mondo_labs, left_on=['synonym'], right_on=['mondo_label'], how='inner')
     df_review_labs = df_review_labs[df_review_labs['mondo_id_x'] != df_review_labs['mondo_id_y']].rename(columns={
         'mondo_id_x': 'mondo_id', 'mondo_id_y': 'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label'})
+    if dont_filter_updated:
+        df_review_labs = df_review_labs[df_review_labs['case'] != 'updated']
     if len(df_review_labs) > 0:
         # - remove abbreviations; we aren't bothered by duplicates of this type
         df_review_labs = df_review_labs.drop('synonym_type_mondo', axis=1)\
