@@ -45,19 +45,19 @@ def sync_synonyms_curation_filtering(
 
     # Read -confirmed & ascertain unconfirmed
     df_conf = pd.read_csv(confirmed_inpath, sep='\t')
-    df_conf2 = df_conf.copy().drop(0).fillna('')
-    df_conf2['case'] = 'confirmed'
-    df_conf2['synonym_scope'] = df_conf2['synonym_scope_source']
+    df_conf = df_conf.copy().drop(0).fillna('')
+    df_conf['case'] = 'confirmed'
+    df_conf['synonym_scope'] = df_conf['synonym_scope_source']
     df_mondo_syns = _read_sparql_output_tsv(mondo_synonyms_inpath).fillna('').rename(columns={
         'cls_id': 'mondo_id', 'cls_label': 'mondo_label', 'synonym_type': 'synonym_type_mondo', 'dbXref': 'source_id'})
     df_mondo_syns = df_mondo_syns[~df_mondo_syns['mondo_label'].str.startswith('obsolete ')]
     merge_columns = ['synonym', 'synonym_scope', 'mondo_id']
     df_mondo_conf = df_mondo_syns.merge(
-        df_conf2[merge_columns + ['case']], on=merge_columns, how='left', suffixes=('', '_conf'))
-    df_mondo_syns['case'] = df_mondo_conf['case'].fillna('unconfirmed')
+        df_conf[merge_columns + ['case']], on=merge_columns, how='left', suffixes=('', '_conf'))
+    df_mondo_conf['case'] = df_mondo_conf['case'].fillna('unconfirmed')
 
     # Group all sources of synonyms & labels cases together
-    collisions_to_check = [df_add, df_upd, df_mondo_syns] if not dont_filter_updated else [df_add, df_mondo_syns]
+    collisions_to_check = [df_add, df_upd, df_mondo_conf] if not dont_filter_updated else [df_add, df_mondo_conf]
     df_all = pd.concat(collisions_to_check, ignore_index=True).fillna('')
     df_all['synonym_type'] = df_all.apply(
         lambda row: row['synonym_type'] if row['synonym_type'] else row['synonym_type_mondo'], axis=1)
