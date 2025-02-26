@@ -41,6 +41,7 @@ HEADERS_TO_ROBOT_SUBHEADERS = {
     'source_id': '',
     'source_label': '',
     'synonym_type': '',
+    'synonym_type_internal': '',
     'synonym_type_mondo': '',
     'mondo_evidence': '',
     'case': '',
@@ -164,6 +165,29 @@ def lower_and_strip(x: str) -> str:
     return ' '.join(x.split()).lower()
 
 
+def _handle_internal_synonym_types(df, internal_types=["http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"]):
+    """Internal synonym types: Things we don't want to add to Mondo, but want to retain in the sync file"""
+    if 'synonym_type_internal' not in df.columns:
+        df['synonym_type_internal'] = ''
+    for _type in internal_types:
+        for idx, row in df.iterrows():
+            if pd.isna(row['synonym_type']) or row['synonym_type'] == '':
+                continue
+            types: List[str] = row['synonym_type'].split('|')
+            if _type in types:
+                # Remove internal type from ROBOT synonym_type col
+                types = [t for t in types if t != _type]
+                df.at[idx, 'synonym_type'] = '|'.join(types) if types else ''
+                # Add internal type to synonym_type_internal
+                internal_i = row['synonym_type_internal']
+                if internal_i and not pd.isna(internal_i):
+                    if _type not in internal_i.split('|'):
+                        df.at[idx, 'synonym_type_internal'] = internal_i + '|' + _type
+                else:
+                    df.at[idx, 'synonym_type_internal'] = _type
+    return df
+
+
 def _common_operations(
     df: pd.DataFrame, outpath: Union[Path, str], order_cols: List[str] = list(HEADERS_TO_ROBOT_SUBHEADERS.keys()),
     sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, dont_make_scope_cols=False
@@ -194,6 +218,8 @@ def _common_operations(
                     lambda row: row[col] if row['synonym_scope'] in preds else '', axis=1)
         # - Renames
         df = df.rename(columns={'synonym_scope': 'synonym_scope_source'})
+    # - Internal synonym types: Things we don't want to add to Mondo, but want to retain in the sync file
+    df = _handle_internal_synonym_types(df)
     # - Order & sorting
     order_cols = [x for x in order_cols if x in df.columns]
     sort_cols = [x for x in sort_cols if x in df.columns]
