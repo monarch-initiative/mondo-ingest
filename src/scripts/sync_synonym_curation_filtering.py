@@ -51,7 +51,7 @@ def sync_synonyms_curation_filtering(
     df_mondo_syns = _read_sparql_output_tsv(mondo_synonyms_inpath).fillna('').rename(columns={
         'cls_id': 'mondo_id', 'cls_label': 'mondo_label', 'synonym_type': 'synonym_type_mondo', 'dbXref': 'source_id'})
     df_mondo_syns = df_mondo_syns[~df_mondo_syns['mondo_label'].str.startswith('obsolete ')]
-    merge_columns = ['synonym', 'synonym_scope', 'mondo_id']
+    merge_columns = ['synonym', 'synonym_scope', 'mondo_id', 'source_id']
     df_mondo_conf = df_mondo_syns.merge(
         df_conf[merge_columns + ['case']], on=merge_columns, how='left', suffixes=('', '_conf'))
     df_mondo_conf['case'] = df_mondo_conf['case'].fillna('unconfirmed')
@@ -98,6 +98,8 @@ def sync_synonyms_curation_filtering(
     df_review_labs = df_sync.merge(df_mondo_labs, left_on=['synonym'], right_on=['mondo_label'], how='inner')
     df_review_labs = df_review_labs[df_review_labs['mondo_id_x'] != df_review_labs['mondo_id_y']].rename(columns={
         'mondo_id_x': 'mondo_id', 'mondo_id_y': 'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label'})
+    if dont_filter_updated:
+        df_review_labs = df_review_labs[df_review_labs['case'] != 'updated']
     if len(df_review_labs) > 0:
         # - remove abbreviations; we aren't bothered by duplicates of this type
         df_review_labs = df_review_labs.drop('synonym_type_mondo', axis=1)\
