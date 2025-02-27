@@ -208,6 +208,8 @@ def _common_operations(
         df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_join'])
 
     # Format
+    # - Internal synonym types: Things we don't want to add to Mondo, but want to retain in the sync file
+    df = _handle_internal_synonym_types(df)
     if not dont_make_scope_cols:
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
@@ -218,8 +220,6 @@ def _common_operations(
                     lambda row: row[col] if row['synonym_scope'] in preds else '', axis=1)
         # - Renames
         df = df.rename(columns={'synonym_scope': 'synonym_scope_source'})
-    # - Internal synonym types: Things we don't want to add to Mondo, but want to retain in the sync file
-    df = _handle_internal_synonym_types(df)
     # - Order & sorting
     order_cols = [x for x in order_cols if x in df.columns]
     sort_cols = [x for x in sort_cols if x in df.columns]
