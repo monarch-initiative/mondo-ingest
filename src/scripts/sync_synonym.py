@@ -41,6 +41,7 @@ HEADERS_TO_ROBOT_SUBHEADERS = {
     'source_id': '',
     'source_label': '',
     'synonym_type': '',
+    'synonym_type_internal': '',
     'synonym_type_mondo': '',
     'mondo_evidence': '',
     'case': '',
@@ -164,6 +165,29 @@ def lower_and_strip(x: str) -> str:
     return ' '.join(x.split()).lower()
 
 
+def _handle_internal_synonym_types(df, internal_types=["http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"]):
+    """Internal synonym types: Things we don't want to add to Mondo, but want to retain in the sync file"""
+    if 'synonym_type_internal' not in df.columns:
+        df['synonym_type_internal'] = ''
+    for _type in internal_types:
+        for idx, row in df.iterrows():
+            if pd.isna(row['synonym_type']) or row['synonym_type'] == '':
+                continue
+            types: List[str] = row['synonym_type'].split('|')
+            if _type in types:
+                # Remove internal type from ROBOT synonym_type col
+                types = [t for t in types if t != _type]
+                df.at[idx, 'synonym_type'] = '|'.join(types) if types else ''
+                # Add internal type to synonym_type_internal
+                internal_i = row['synonym_type_internal']
+                if internal_i and not pd.isna(internal_i):
+                    if _type not in internal_i.split('|'):
+                        df.at[idx, 'synonym_type_internal'] = internal_i + '|' + _type
+                else:
+                    df.at[idx, 'synonym_type_internal'] = _type
+    return df
+
+
 def _common_operations(
     df: pd.DataFrame, outpath: Union[Path, str], order_cols: List[str] = list(HEADERS_TO_ROBOT_SUBHEADERS.keys()),
     sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, dont_make_scope_cols=False
@@ -184,6 +208,8 @@ def _common_operations(
         df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_join'])
 
     # Format
+    # - Internal synonym types: Things we don't want to add to Mondo, but want to retain in the sync file
+    df = _handle_internal_synonym_types(df)
     if not dont_make_scope_cols:
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
@@ -251,8 +277,8 @@ def sync_synonyms(
     ontology_db_path: Union[Path, str], mondo_synonyms_path: Union[Path, str],
     mondo_exclusion_configs: Union[Path, str], onto_synonym_types_path: Union[Path, str],
     mondo_mappings_path: Union[Path, str], onto_config_path: Union[Path, str], outpath_added: Union[Path, str],
-    outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str],
-    outpath_combined: Union[Path, str], outpath_deleted: Union[Path, str] = None, doid_added_filtration=False
+    outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str], outpath_deleted: Union[Path, str] = None,
+    doid_added_filtration=False
 ):
     """Create outputs for syncing synonyms between Mondo and its sources.
 
@@ -417,7 +443,6 @@ def sync_synonyms(
 
     # -deleted
     #  Cases where synonym exists in Mondo term, but not in mapped source term
-    deleted_df = pd.DataFrame()
     # todo: -deleted: reactivate when ready.
     #  - depends on more than just 1 source not having synonym. it must (i) exist on no mapped source terms, and (ii)
     #  have no other qualifying evidence (I think just: ORCID & MONDO;notVerified),
@@ -433,14 +458,6 @@ def sync_synonyms(
         deleted_df = _filter_a_by_not_in_b(deleted_df, updated_df, ['mondo_id', 'source_id', 'synonym_join'])
         deleted_df = _common_operations(deleted_df, outpath_deleted, mondo_exclusions_df=mondo_exclusions_df)
         deleted_df['case'] = 'deleted'
-
-    # Write outputs
-    combined_cases_df = pd.concat([confirmed_df, added_df, updated_df, deleted_df], ignore_index=True)\
-        .fillna('')
-    combined_cases_df = _common_operations(combined_cases_df, outpath_combined, dont_make_scope_cols=True)
-    combined_cases_df['source'] = source_name
-    combined_cases_df = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), combined_cases_df])
-    combined_cases_df.to_csv(outpath_combined, sep='\t', index=False)
 
 
 def cli():
@@ -486,15 +503,13 @@ def cli():
         '-u', '--outpath-updated', required=True,
         help='Path to ROBOT template TSV to create which will contain updates to synonym scope predicate; cases where '
              'the synonym exists in Mondo and on the mapped source term, but the scope predicate is different.')
-    parser.add_argument(
-        '-b', '--outpath-combined', required=True,
-        help='Path to curation file which is a concatenation of all cases.')
     # todo: Would be good to change setup to `--doid-added-filtration true` instead of just `--doid-added-filtration`.
     #  Advantages: (1) The option stays in the makefile even if it is switched off, giving some level of documentation
     #  to the option. If it is removed, it will disappear from consciousness (i.e. no one will ever look at the python
     #  scripts), and (2) There may be a need for more fine grained control than true/false in the future, like
     #  `--doid-added-filtration exact-from-label,related,narrow`, and in option syntax, we can more easily build that
     #  without having to change dependent code.
+    #  Can borrow code from synonym_sync_curation_filtering.py, which has a param set up like this.
     parser.add_argument(
         '-D', '--doid-added-filtration', required=False, action='store_true', help='If this flag is '
         'present, then the only DO synonyms that will be included in the -added ROBOT template will be exact synonyms '
