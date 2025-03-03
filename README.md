@@ -25,8 +25,9 @@ Python is a dev dependency. It's not needed to run the docker containers, but ne
 ### [Workflows](./docs/developer/workflows.md)
 
 ## Reports
-A variety of reports are committed as static files in `src/ontology/reports/`, but some additional reports get rendered 
-into markdown pages as noted below.
+A variety of reports are committed as static files in `src/ontology/reports/` and are documented in the 
+[reports codebook](src/ontology/reports/README.md), but some additional reports get rendered into markdown pages as 
+noted below.
 
 ### Mapping progress report
 The [mapping progress report](./docs/reports/unmapped.md) consists lists of all unmapped terms fo each ontology, as well 
