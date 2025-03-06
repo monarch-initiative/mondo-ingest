@@ -587,10 +587,10 @@ $(SYN_SYNC_DIR):
 sync-synonyms: $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv $(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv
 
 # Note: If wanting to consider -updated/-scope-mismatch collisions, then: (i) change --dont_filter_updated to False, (ii) add $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv to the list of outputs in the goal definition, (iii) remove the separate goal for $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv.
-$(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv: $(TMPDIR)/sync-synonyms.added.robot.tsv $(TMPDIR)/sync-synonyms.confirmed.robot.tsv $(TMPDIR)/sync-synonyms.updated.robot.tsv $(TMPDIR)/mondo-synonyms-scope-type-xref.tsv $(TMPDIR)/mondo.db
+$(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/review-qc-duplicate-exact-synonym-no-abbrev.tsv: $(TMPDIR)/sync-synonyms.added.robot.tsv $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv $(TMPDIR)/sync-synonyms.updated.robot.tsv $(TMPDIR)/mondo-synonyms-scope-type-xref.tsv $(TMPDIR)/mondo.db
 	python3 $(SCRIPTSDIR)/sync_synonym_curation_filtering.py \
 	--added-inpath $(TMPDIR)/sync-synonyms.added.robot.tsv \
-	--confirmed-inpath $(TMPDIR)/sync-synonyms.confirmed.robot.tsv \
+	--confirmed-inpath $(SYN_SYNC_DIR)/sync-synonyms.confirmed.robot.tsv \
 	--updated-inpath $(TMPDIR)/sync-synonyms.updated.robot.tsv \
 	--added-outpath $(SYN_SYNC_DIR)/sync-synonyms.added.robot.tsv \
 	--updated-outpath $(SYN_SYNC_DIR)/sync-synonyms.updated.robot.tsv \
