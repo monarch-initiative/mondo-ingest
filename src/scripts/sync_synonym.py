@@ -1,11 +1,16 @@
-"""Create outputs for syncing synonyms between Mondo and its sources."""
+"""Create outputs for syncing synonyms between Mondo and its sources.
+
+Potential improvements:
+ - DO filtration: At some point, when the -updated synonym sync pipeline is utilized, filtration may need to be done for
+  the -updated template as well.
+"""
 import logging
 import os
 import re
 import sys
 from argparse import ArgumentParser
 from pathlib import Path
-from typing import Union, List, Tuple, Set, Dict, Any
+from typing import Union, List, Tuple, Set, Dict, Any, Callable
 
 import curies
 import pandas as pd
@@ -21,18 +26,22 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from src.scripts.utils import PREFIX_MAP, get_owned_prefix_map
 
 
-# todo: when combined_cases_df no longer necessary, remove 'case'
 HEADERS_TO_ROBOT_SUBHEADERS = {
     'mondo_id': 'ID',
     'mondo_label': '',
     'synonym_scope_source': '',
     'synonym_scope_mondo': '',
     'synonym': '',
+    'synonym_case_mondo': '',
     'synonym_case_diff_mondo': '',
+    'synonym_case_mondo_is_many': '',
+    'synonym_case_source': '',
     'synonym_case_diff_source': '',
+    'synonym_case_source_is_many': '',
     'source_id': '',
     'source_label': '',
     'synonym_type': '',
+    'synonym_type_internal': '',
     'synonym_type_mondo': '',
     'mondo_evidence': '',
     'case': '',
@@ -84,13 +93,51 @@ def _add_synonym_type_inferences(row: pd.Series, exclusions: Set[str]) -> str:
     return '|'.join(types)
 
 
-def _add_syn_variation_cols(df: pd.DataFrame) -> pd.DataFrame:
-    """Set 'synonym' col, and add cols showing capitalization differences in between Mondo and source."""
+def _handle_synonym_casing_variations(df: pd.DataFrame) -> pd.DataFrame:
+    """Add and modify fields related to synonym capitalization variations"""
+    # Set 'synonym' col
     df['synonym'] = df['synonym_case_mondo']
+    # Add cols showing capitalization differences in between Mondo and source.
     df['synonym_case_diff_mondo'] = df.apply(lambda row:
         row['synonym_case_mondo'] if row['synonym_case_mondo'] != row['synonym_case_source'] else '', axis=1)
     df['synonym_case_diff_source'] = df.apply(lambda row:
         row['synonym_case_source'] if row['synonym_case_source'] != row['synonym_case_mondo'] else '', axis=1)
+
+    # Capitalization variations for single source term synonym: drop dupe rows & aggregate
+    agg_dict: Dict[str, Union[str, Callable]] = {col: 'first' for col in df.columns}
+    agg_dict['synonym_case_source'] = '|'.join
+    df = df.groupby(['mondo_id', 'source_id', 'synonym_scope', 'synonym'], as_index=False).agg(agg_dict)
+    df['synonym_case_source_is_many'] = df['synonym_case_source'].apply(lambda x: '|' in x)
+    # - Correct synonym_case_diff_source field for these cases
+    df['synonym_case_diff_source'] = df.apply(lambda row: row['synonym_case_source']
+        if row['synonym_case_source_is_many'] else row['synonym_case_diff_source'], axis=1)
+
+    # Capitalization variations for single Mondo term synonym: keep 2+ rows, but aggregate variations in 'diff' cols
+    counts = df.groupby(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope']).size()
+    df_unique = df[
+        df.set_index(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts == 1].index)]
+    df_unique['synonym_case_mondo_is_many'] = False
+    df_duplicates = df[
+        df.set_index(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope']).index.isin(counts[counts > 1].index)]
+    if len(df_duplicates) > 0:
+        df_duplicates['synonym_case_mondo_is_many'] = True
+        # - Aggregate 'diff' col
+        #   First, create a mapping of the variations for each unique combination
+        variations = df_duplicates.groupby(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope'])[
+            'synonym_case_mondo'].agg(lambda x: '|'.join(sorted(set(x)))).reset_index()
+        #   Create a dictionary for easy lookup
+        variation_dict = variations.set_index(['synonym_join', 'mondo_id', 'source_id', 'synonym_scope'])[
+            'synonym_case_mondo'].to_dict()
+        #   Apply this mapping to create the new column
+        df_duplicates['synonym_case_diff_mondo'] = df_duplicates.apply(lambda row:
+            variation_dict[(row['synonym_join'], row['mondo_id'], row['source_id'], row['synonym_scope'])], axis=1)
+
+    df = pd.concat([df_unique, df_duplicates], ignore_index=True)
+
+    # Sort
+    for col in ['synonym_case_mondo', 'synonym_case_source']:
+        df[col] = df[col].apply(lambda x: '|'.join(sorted(x.split('|'))))
+
     return df
 
 
@@ -113,9 +160,37 @@ def _curies_to_uris_from_delim_str(uris_or_curies_str: str, delim='|') -> str:
     return '|'.join(uris)
 
 
+def lower_and_strip(x: str) -> str:
+    """Lowercase and "strip" redundant whitespace from breginning, end, and anywhere else in string."""
+    return ' '.join(x.split()).lower()
+
+
+def _handle_internal_synonym_types(df, internal_types=["http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"]):
+    """Internal synonym types: Things we don't want to add to Mondo, but want to retain in the sync file"""
+    if 'synonym_type_internal' not in df.columns:
+        df['synonym_type_internal'] = ''
+    for _type in internal_types:
+        for idx, row in df.iterrows():
+            if pd.isna(row['synonym_type']) or row['synonym_type'] == '':
+                continue
+            types: List[str] = row['synonym_type'].split('|')
+            if _type in types:
+                # Remove internal type from ROBOT synonym_type col
+                types = [t for t in types if t != _type]
+                df.at[idx, 'synonym_type'] = '|'.join(types) if types else ''
+                # Add internal type to synonym_type_internal
+                internal_i = row['synonym_type_internal']
+                if internal_i and not pd.isna(internal_i):
+                    if _type not in internal_i.split('|'):
+                        df.at[idx, 'synonym_type_internal'] = internal_i + '|' + _type
+                else:
+                    df.at[idx, 'synonym_type_internal'] = _type
+    return df
+
+
 def _common_operations(
     df: pd.DataFrame, outpath: Union[Path, str], order_cols: List[str] = list(HEADERS_TO_ROBOT_SUBHEADERS.keys()),
-    sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, df_is_combined=False
+    sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, dont_make_scope_cols=False
 ) -> pd.DataFrame:
     """Merges synonym types, filters exclusions, does some formatting, and optionally saves.
 
@@ -130,14 +205,12 @@ def _common_operations(
     """
     # Filter exclusions
     if len(mondo_exclusions_df) > 0:
-        df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_scope', 'synonym_lower'])
+        df = _filter_a_by_not_in_b(df, mondo_exclusions_df, ['mondo_id', 'synonym_join'])
 
     # Format
-    if not df_is_combined:
-        # - Acronyms: Use source case
-        #   This operation prevents capitalization from being lost, as sometimes Mondo has used lowercase.
-        df['synonym'] = df.apply(lambda row:
-            row['synonym_case_source'] if MONDO_ABBREV_URI in row['synonym_type'] else row['synonym'], axis=1)
+    # - Internal synonym types: Things we don't want to add to Mondo, but want to retain in the sync file
+    df = _handle_internal_synonym_types(df)
+    if not dont_make_scope_cols:
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
         for scope in synonym_scopes:
@@ -205,15 +278,12 @@ def sync_synonyms(
     mondo_exclusion_configs: Union[Path, str], onto_synonym_types_path: Union[Path, str],
     mondo_mappings_path: Union[Path, str], onto_config_path: Union[Path, str], outpath_added: Union[Path, str],
     outpath_confirmed: Union[Path, str], outpath_updated: Union[Path, str], outpath_deleted: Union[Path, str] = None,
-    combined_outpath_template_str='tmp/synonym_sync_combined_cases_{}.tsv'
+    doid_added_filtration=False
 ):
     """Create outputs for syncing synonyms between Mondo and its sources.
 
     todo: update when -deleted is reactivated
     :param outpath_deleted: Optional. This case isn't fully fleshed out yet.
-
-    todo: if we decided that this param should stay, set as required CLI/functional param w/ no default value.
-    :param combined_outpath_template_str: Creates an additional file concatenating all case files.
 
     todo: possible refactor: labels: Maybe could be done more cleanly and consistently. At first, wanted to add to both
      source_df and mondo_df, but this caused _x and _y cols during joins, or I would have to join on those cols as well.
@@ -267,12 +337,13 @@ def sync_synonyms(
     # Fetch excluded synonyms
     mondo_exclusions_df = pd.DataFrame(mondo_exclusion_configs['synonyms']).rename(columns={
         'id': 'mondo_id', 'scope': 'synonym_scope', 'value': 'synonym'})
-    mondo_exclusions_df['synonym_lower'] = mondo_exclusions_df['synonym'].str.lower()
+    mondo_exclusions_df['synonym_join'] = mondo_exclusions_df['synonym'].apply(lower_and_strip)
 
     # Query synonyms: source
     source_df: pd.DataFrame = _query_synonyms(mappings_df['source_id'].tolist(), source_db)\
         .rename(columns={'curie': 'source_id'})
-    source_df['synonym_lower'] = source_df['synonym'].str.lower()
+    source_df['synonym'] = source_df['synonym'].apply(lambda x: ' '.join(x.split()))  # remove redundant whitespace
+    source_df['synonym_join'] = source_df['synonym'].apply(lower_and_strip)
     source_df['source_label'] = source_df['source_id'].map(source_labels)
     source_df.drop_duplicates(inplace=True)
     # - get synonym_types: declared by the source
@@ -308,7 +379,7 @@ def sync_synonyms(
     # Query synonyms: Mondo
     mondo_df: pd.DataFrame = _read_sparql_output_tsv(mondo_synonyms_path)\
         .rename(columns={'cls_id': 'mondo_id', 'synonym_type': 'synonym_type_mondo', 'dbXref': 'source_id'})
-    mondo_df['synonym_lower'] = mondo_df['synonym'].str.lower()
+    mondo_df['synonym_join'] = mondo_df['synonym'].apply(lower_and_strip)
     # todo: utilize curies package; handle more cases
     # - URIs --> CURIEs
     mondo_df['source_id'] = mondo_df['source_id'].apply(lambda x: x.replace('https://orcid.org/', 'ORCID:'))
@@ -336,21 +407,21 @@ def sync_synonyms(
     # Determine synchronization cases
     # -confirmed
     #  Cases where scope + synonym string are the same
-    confirmed_df = mondo_df.merge(source_df, on=['synonym_scope', 'synonym_lower'], how='inner').rename(columns={
+    confirmed_df = mondo_df.merge(source_df, on=['synonym_scope', 'synonym_join'], how='inner').rename(columns={
         'synonym_x': 'synonym_case_mondo', 'synonym_y': 'synonym_case_source'})  # keep Mondo casing if different
     confirmed_df = confirmed_df[confirmed_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
-    confirmed_df = _add_syn_variation_cols(confirmed_df)
+    confirmed_df = _handle_synonym_casing_variations(confirmed_df)
     del confirmed_df['mondo_evidence']
     confirmed_df = _common_operations(confirmed_df, outpath_confirmed, mondo_exclusions_df=mondo_exclusions_df)
     confirmed_df['case'] = 'confirmed'
 
     # -updated
     #  Cases where scope has is different in source
-    updated_df = mondo_df.merge(source_df, on=['synonym_lower'], how='inner').rename(columns={
+    updated_df = mondo_df.merge(source_df, on=['synonym_join'], how='inner').rename(columns={
         'synonym_scope_x': 'synonym_scope_mondo', 'synonym_scope_y': 'synonym_scope',
         'synonym_x': 'synonym_case_mondo', 'synonym_y': 'synonym_case_source'})  # keep Mondo casing if different
     updated_df = updated_df[updated_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
-    updated_df = _add_syn_variation_cols(updated_df)
+    updated_df = _handle_synonym_casing_variations(updated_df)
     updated_df = updated_df[updated_df['synonym_scope_mondo'] != updated_df['synonym_scope']]
     updated_df = _common_operations(updated_df, outpath_updated, mondo_exclusions_df=mondo_exclusions_df)
     updated_df['case'] = 'updated'
@@ -362,14 +433,16 @@ def sync_synonyms(
         'source_id', 'mondo_id', 'mondo_label']], on=['source_id'], how='inner')
     source_df_with_mondo_ids['synonym_case_source'] = source_df_with_mondo_ids['synonym']
     # - leave only synonyms that don't exist on given Mondo IDs
-    added_df = _filter_a_by_not_in_b(source_df_with_mondo_ids, mondo_df, ['mondo_id', 'synonym_lower'])
+    added_df = _filter_a_by_not_in_b(source_df_with_mondo_ids, mondo_df, ['mondo_id', 'synonym_join'])
     added_df = added_df[added_df[['mondo_id', 'source_id']].apply(tuple, axis=1).isin(mapping_pairs_set)]
+    if doid_added_filtration and source_name.lower() == 'doid':
+        added_df = added_df[added_df['synonym_type'] == 'http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL']
+        added_df = added_df[added_df['synonym_scope'] == 'oio:hasExactSynonym']
     added_df = _common_operations(added_df, outpath_added, mondo_exclusions_df=mondo_exclusions_df)
     added_df['case'] = 'added'
 
     # -deleted
     #  Cases where synonym exists in Mondo term, but not in mapped source term
-    deleted_df = pd.DataFrame()
     # todo: -deleted: reactivate when ready.
     #  - depends on more than just 1 source not having synonym. it must (i) exist on no mapped source terms, and (ii)
     #  have no other qualifying evidence (I think just: ORCID & MONDO;notVerified),
@@ -380,22 +453,11 @@ def sync_synonyms(
     # todo: i think this implementation is outdated post source_id refactor
     if outpath_deleted:
         deleted_df = mondo_df.merge(
-            source_df, on=['synonym_scope', 'synonym_lower'], how='left', indicator=True)
+            source_df, on=['synonym_scope', 'synonym_join'], how='left', indicator=True)
         deleted_df = deleted_df[deleted_df['_merge'] == 'left_only'].drop('_merge', axis=1)  # also can do: mondo_id=nan
-        deleted_df = _filter_a_by_not_in_b(deleted_df, updated_df, ['mondo_id', 'source_id', 'synonym_lower'])
+        deleted_df = _filter_a_by_not_in_b(deleted_df, updated_df, ['mondo_id', 'source_id', 'synonym_join'])
         deleted_df = _common_operations(deleted_df, outpath_deleted, mondo_exclusions_df=mondo_exclusions_df)
         deleted_df['case'] = 'deleted'
-
-    # Write outputs
-    # todo: temp: combined_cases_df: combine all cases for analysis during development
-    if combined_outpath_template_str:
-        combined_cases_df = pd.concat([confirmed_df, added_df, updated_df, deleted_df], ignore_index=True)\
-            .fillna('')
-        combined_cases_outpath = str(combined_outpath_template_str).format(source_name)
-        combined_cases_df = _common_operations(combined_cases_df, combined_cases_outpath, df_is_combined=True)
-        combined_cases_df['source'] = source_name
-        combined_cases_df = pd.concat([pd.DataFrame([HEADERS_TO_ROBOT_SUBHEADERS]), combined_cases_df])
-        combined_cases_df.to_csv(combined_cases_outpath, sep='\t', index=False)
 
 
 def cli():
@@ -441,6 +503,17 @@ def cli():
         '-u', '--outpath-updated', required=True,
         help='Path to ROBOT template TSV to create which will contain updates to synonym scope predicate; cases where '
              'the synonym exists in Mondo and on the mapped source term, but the scope predicate is different.')
+    # todo: Would be good to change setup to `--doid-added-filtration true` instead of just `--doid-added-filtration`.
+    #  Advantages: (1) The option stays in the makefile even if it is switched off, giving some level of documentation
+    #  to the option. If it is removed, it will disappear from consciousness (i.e. no one will ever look at the python
+    #  scripts), and (2) There may be a need for more fine grained control than true/false in the future, like
+    #  `--doid-added-filtration exact-from-label,related,narrow`, and in option syntax, we can more easily build that
+    #  without having to change dependent code.
+    #  Can borrow code from synonym_sync_curation_filtering.py, which has a param set up like this.
+    parser.add_argument(
+        '-D', '--doid-added-filtration', required=False, action='store_true', help='If this flag is '
+        'present, then the only DO synonyms that will be included in the -added ROBOT template will be exact synonyms '
+        'which were created by Mondo as a derivative of the term\'s label.')
     sync_synonyms(**vars(parser.parse_args()))
 
 

@@ -5718,8 +5718,10 @@ MONDO:0019159	Loeffler endocarditis	skos:closeMatch	ICD10CM:I42.3	Endomyocardial
 MONDO:0019165	central precocious puberty	skos:closeMatch	ICD10CM:E22.8	Other hyperfunction of pituitary gland	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0112308	LEXMATCH
 MONDO:0019165	central precocious puberty	skos:closeMatch	ICD10CM:E22.8	Other hyperfunction of pituitary gland	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0112308	LEXMATCH
 MONDO:0019167	immunoglobulin A vasculitis	skos:closeMatch	ICD10CM:D69.0	Allergic purpura	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11123	LEXMATCH
+MONDO:0019167	immunoglobulin A vasculitis	skos:closeMatch	ICD10CM:D69.0	Allergic purpura	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:11123	LEXMATCH
 MONDO:0019167	immunoglobulin A vasculitis	skos:closeMatch	ICD10CM:D69.0	Allergic purpura	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	vascular purpura	LEXMATCH
 MONDO:0019167	immunoglobulin A vasculitis	skos:closeMatch	ICD10CM:D69.0	Allergic purpura	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11123	LEXMATCH
+MONDO:0019167	immunoglobulin A vasculitis	skos:closeMatch	ICD10CM:D69.0	Allergic purpura	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:11123	LEXMATCH
 MONDO:0019168	pyomyositis	skos:closeMatch	ICD10CM:M60.0	Infective myositis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:876	LEXMATCH
 MONDO:0019168	pyomyositis	skos:closeMatch	ICD10CM:M60.0	Infective myositis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:876	LEXMATCH
 MONDO:0019169	pyruvate dehydrogenase deficiency	skos:closeMatch	ICD10CM:E74.4	Disorders of pyruvate metabolism and gluconeogenesis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3649	LEXMATCH
@@ -5887,8 +5889,8 @@ MONDO:0019773	myelomeningocele	skos:closeMatch	ICD10CM:Q05	Spina bifida	semapv:L
 MONDO:0019773	myelomeningocele	skos:closeMatch	ICD10CM:Q05	Spina bifida	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060326	LEXMATCH
 MONDO:0019803	angioma serpiginosum	skos:closeMatch	ICD10CM:L81.7	Pigmented purpuric dermatosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:4028	LEXMATCH
 MONDO:0019803	angioma serpiginosum	skos:closeMatch	ICD10CM:L81.7	Pigmented purpuric dermatosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:4028	LEXMATCH
-MONDO:0019804	tracheomalacia	skos:closeMatch	ICD10CM:Q32.0	Congenital tracheomalacia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060313	LEXMATCH
-MONDO:0019804	tracheomalacia	skos:closeMatch	ICD10CM:Q32.0	Congenital tracheomalacia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060313	LEXMATCH
+MONDO:0019804	congenital tracheomalacia	skos:closeMatch	ICD10CM:Q32.0	Congenital tracheomalacia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060313	LEXMATCH
+MONDO:0019804	congenital tracheomalacia	skos:closeMatch	ICD10CM:Q32.0	Congenital tracheomalacia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060313	LEXMATCH
 MONDO:0019805	twin to twin transfusion syndrome	skos:closeMatch	ICD10CM:O43.02	Fetus-to-fetus placental transfusion syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:13576	LEXMATCH
 MONDO:0019805	twin to twin transfusion syndrome	skos:closeMatch	ICD10CM:O43.02	Fetus-to-fetus placental transfusion syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:13576	LEXMATCH
 MONDO:0019811	tricuspid valve agenesis	skos:closeMatch	ICD10CM:Q22.4	Congenital tricuspid stenosis	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0019811	LEXMATCH

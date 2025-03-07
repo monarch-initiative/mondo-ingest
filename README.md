@@ -14,6 +14,9 @@ Python is a dev dependency. It's not needed to run the docker containers, but ne
   One or both of the following, depending on if you want to run the stable build `latest` or `dev`:
     - a. `docker pull obolibrary/odkfull:latest`
     - b. `docker pull obolibrary/odkfull:dev`
+4. Optional: [`odkrunner`](https://github.com/gouttegd/odkrunner): Alternative to `run.sh`. If using this, you would run
+    like `odkrun make build-mondo-ingest` instead of `sh run.sh make build-mondo-ingest`. Suggestion: rename the binary 
+    to `odk`; this is the convention of `mondo-ingest` developers. 
 
 ## Running
 ### Full build
@@ -22,8 +25,9 @@ Python is a dev dependency. It's not needed to run the docker containers, but ne
 ### [Workflows](./docs/developer/workflows.md)
 
 ## Reports
-A variety of reports are committed as static files in `src/ontology/reports/`, but some additional reports get rendered 
-into markdown pages as noted below.
+A variety of reports are committed as static files in `src/ontology/reports/` and are documented in the 
+[reports codebook](src/ontology/reports/README.md), but some additional reports get rendered into markdown pages as 
+noted below.
 
 ### Mapping progress report
 The [mapping progress report](./docs/reports/unmapped.md) consists lists of all unmapped terms fo each ontology, as well 

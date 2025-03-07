@@ -6879,7 +6879,6 @@
 | NCIT:C200074 | Peripheral T-Cell Lymphoma-TBX21                                                                                                                                            |
 | NCIT:C168805 | Peritoneal Biphasic Mesothelioma                                                                                                                                            |
 | NCIT:C179560 | Peritoneal Calcifying Fibrous Tumor                                                                                                                                         |
-| NCIT:C27382  | Peritoneal Carcinomatosis                                                                                                                                                   |
 | NCIT:C126356 | Peritoneal Desmoplastic Small Round Cell Tumor                                                                                                                              |
 | NCIT:C162940 | Peritoneal Epithelioid Mesothelioma                                                                                                                                         |
 | NCIT:C40338  | Peritoneal Gastrointestinal Stromal Tumor                                                                                                                                   |
