@@ -26,6 +26,7 @@
 | OMIM:621071   | mitochondrial DNA depletion syndrome 21                                                                |
 | OMIM:621063   | muggenthaler-chowdhury-chioza syndrome                                                                 |
 | OMIM:621078   | myopathy, myofibrillar, 13, with rimmed vacuoles                                                       |
+| OMIM:301142   | neurodegenerative disorder, x-linked, female-restricted, with parkinsonism and cognitive impairment    |
 | OMIM:621068   | neurodevelopmental disorder with hypotonia, poor growth, dysmorphic facies, and agammaglobulinemia     |
 | OMIM:621060   | neurodevelopmental disorder with microcephaly, absent speech, and hypotonia                            |
 | OMIM:621067   | neurodevelopmental disorder with poor growth, absent speech, progressive ataxia, and dysmorphic facies |
