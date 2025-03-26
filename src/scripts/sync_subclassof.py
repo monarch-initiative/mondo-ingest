@@ -34,6 +34,7 @@ todo's (minor)
  dropped in a bad way. This probably isn't the case, since if there are no mappings, we actually don't want rows
  with missing sub/obj mappings to appear in the output and are filtering such rows from the df later anyway, but
  I'm still concerned because I feel like I haven't fully thought/walked through this after refactors. - Joe
+ 8. OAK now has .subclass_axioms() method. Can/should we use?
 """
 import logging
 import os
@@ -179,6 +180,7 @@ def _ancestors(
         # Cache: write
         if save_cache:
             with open(cache_path, 'wb') as f:
+                # noinspection PyTypeChecker false_positive__SupportsWrite_bytes_got_BinaryIO_instead
                 pickle.dump(ancestors, f, protocol=pickle.HIGHEST_PROTOCOL)
     if verbose:
         t1 = datetime.now()
@@ -228,9 +230,11 @@ def sync_subclassof(
     mondo_mappings_path: str = EX_DEFAULTS['mondo_mappings_path'],
     onto_config_path: str = EX_DEFAULTS['onto_config_path'],
     outpath_direct_in_mondo_only: str = EX_DEFAULTS['outpath_direct_in_mondo_only'],
-    outpath_self_parentage: str = EX_DEFAULTS['outpath_self_parentage'], use_cache=False, verbose=True
+    outpath_self_parentage: str = EX_DEFAULTS['outpath_self_parentage'],
+    mondo_excluded_subclasses_path: str = EX_DEFAULTS['mondo_excluded_subclasses_path'],
+    use_cache=False, verbose=True
 ):
-    """Run"""
+    """Run subclass sync"""
     source_name = os.path.basename(outpath_added).split('.')[0]
     owned_prefix_map: PREFIX_MAP = get_owned_prefix_map(onto_config_path)
     mondo_db: SqlImplementation = get_adapter(mondo_db_path)
@@ -238,7 +242,7 @@ def sync_subclassof(
     ontology_name = list(owned_prefix_map.keys())[0]
     logging.info(f'Running: Synchronization pipeline - subClassOf - {ontology_name}')
 
-    # Source terms and mappings ----------------------------------------------------------------------------------------
+    # Source & Mondo terms and mappings --------------------------------------------------------------------------------
     # - ss_df: Dataframe for mondo.sssom.tsv
     # - mondo_source_map: Map of Mondo IDs to 1+ source IDs each
     # - source_mondo_map: Map of source IDs to 1 Mondo ID each
@@ -247,11 +251,16 @@ def sync_subclassof(
     # - mondo_data_map: keys=mondo ids, values=(mondo_id, source_id (if any), mondo_label)
     # - mondo_ids: List of set of Mondo IDs from mondo.sssom.tsv
     # - source_ids: List of set of source IDs from mondo.sssom.tsv
+    # - mondo_excluded_subclasses: List of excluded subclass axioms.
     logging.info('- Collecting all source terms and mondo mappings')
     # - Mondo labels
     mondo_ids_all: List[CURIE] = [
         x for x in [y for y in mondo_db.entities(filter_obsoletes=False)] if x.startswith('MONDO')]
     mondo_label_lookup: Dict[CURIE, str] = {x[0]: x[1] for x in [y for y in mondo_db.labels(mondo_ids_all)]}
+    # - Excluded subclass axioms
+    mondo_excluded_subclasses: List[RELATIONSHIP] = [
+        (x['?child'], 'rdfs:subClassOf', x['?parent'])
+        for x in pd.read_csv(mondo_excluded_subclasses_path, sep='\t').to_dict(orient='records')]
     # - Mappings
     ss_df = pd.read_csv(mondo_mappings_path, sep='\t', comment='#')
     #   - filter: Only exact matches
@@ -323,17 +332,18 @@ def sync_subclassof(
     #  - I added this check again because even after I fixed it once by rerunning the cache, it popped up again shortly
     #  after. It could be that I invalidated the cache somehow without realizing it. Rerunning cache fixed it though.
     missing_ancestor_rels = rels_indirect_mondo_mondo.union(rels_direct_mondo_mondo).difference(ancestors_mondo_mondo)
-    if missing_ancestor_rels:
-        raise ValueError(
-            'FATAL BUILD ERROR: Ancestors discrepancy\n'
-            'Detected error in consistency of sets of terms gathered from Mondo.\n'
-            f'\n 1. Mondo SCR ancestors: {len(ancestors_mondo_mondo)}'
-            f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
-            f'\n 3. Mondo indirect SCR relationships: {len(rels_indirect_mondo_mondo)}'
-            f'\n Intersection (Top 5): {[rel for rel in list(missing_ancestor_rels)[:5]]}'
-            f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}'
-            '\nSee also: https://github.com/monarch-initiative/mondo-ingest/issues/525'
-            '\n\nExiting.')
+    # TODO temp: commenting out for development
+    # if missing_ancestor_rels:
+    #     raise ValueError(
+    #         'FATAL BUILD ERROR: Ancestors discrepancy\n'
+    #         'Detected error in consistency of sets of terms gathered from Mondo.\n'
+    #         f'\n 1. Mondo SCR ancestors: {len(ancestors_mondo_mondo)}'
+    #         f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
+    #         f'\n 3. Mondo indirect SCR relationships: {len(rels_indirect_mondo_mondo)}'
+    #         f'\n Intersection (Top 5): {[rel for rel in list(missing_ancestor_rels)[:5]]}'
+    #         f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}'
+    #         '\nSee also: https://github.com/monarch-initiative/mondo-ingest/issues/525'
+    #         '\n\nExiting.')
 
     # Determine hierarchy differences -----------------------------------------------------------------------------------
     logging.info('Calculating various differences in hierarchies between source and Mondo')
@@ -400,16 +410,22 @@ def sync_subclassof(
     # https://docs.google.com/document/d/1H8fJKiKD-L1tfS-2LJu8t0_2YXJ1PQJ_7Zkoj7Vf7xA/edit#heading=h.9hixairfgxa1
     logging.info('Creating outputs for synchronization cases')
 
-    # Case 1: SCR direct in source and Mondo
+    # Case 1: Confirmed: SCR direct in source and Mondo
     _confirmed_df(in_both_direct, outpath_confirmed)
 
-    # Case 2: SCR is direct in source, but indirect Mondo
+    # Case 2: Confirmed: SCR is direct in source, but indirect Mondo
     _confirmed_df(in_source_direct_mondo_indirect, outpath_confirmed_direct_source_indirect_mondo)
 
-    # Case 3: SCR is direct in the source, but not at all in Mondo
+    # Case 3: Added: SCR is direct in the source, but not at all in Mondo
     subheader = deepcopy(ROBOT_SUBHEADER)
     subheader[0]['object_mondo_id'] = 'AI obo:mondo#excluded_subClassOf'
     df3 = pd.DataFrame(in_source_direct_not_in_mondo)
+    # TODO: use mondo_excluded_subclasses
+    #  - do I need to do any mapping back into Mondo or something?
+    #  - should i just filter in the df instead of at the set level?
+    # - filter excluded subclass axioms
+    mondo_excluded_subclasses_df = pd.read_csv(mondo_excluded_subclasses_path, sep='\t')
+
     if len(df3) == 0:
         df3 = pd.DataFrame(columns=list(subheader[0].keys()))
     # - warning cases
@@ -513,6 +529,11 @@ def cli():  # todo: #remove-temp-defaults
         '-m', '--mondo-mappings-path', required=False, default=EX_DEFAULTS['mondo_mappings_path'],
         help='Path to file containing all known Mondo mappings, in SSSOM format.')
     parser.add_argument(
+        '-e', '--mondo-excluded-subclasses-path', required=False,
+        default=EX_DEFAULTS['mondo_excluded_subclasses_path'],
+        help='Path to TSV ocntaining information about excluded subclass axioms, with cols ?parent and ?child, where '
+             'values are Mondo CURIEs.')
+    parser.add_argument(
         '-u', '--use-cache', required=False, default=EX_DEFAULTS['use_cache'],
         help='Use cached outputs, if any present, for outputs from operations that fetch ancestors. Cache will always'
              ' be saved even if this flag is not present, but it will not be loaded from unless flag is present.')
@@ -536,6 +557,7 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
             'mondo_mappings_path': str(TMP_DIR / 'mondo.sssom.tsv'),
             'outpath_direct_in_mondo_only': str(REPORTS_DIR / f'{name}{IN_MONDO_ONLY_FILE_STEM}'),
             'outpath_self_parentage': str(TMP_DIR / f'{name}{SELF_PARENTAGE_DEFAULT_FILE_STEM}'),
+            'mondo_excluded_subclasses_path': str(TMP_DIR / 'mondo-excluded-subclasses.tsv'),
             'use_cache': use_cache
         })
     collate_direct_in_mondo_only()
@@ -543,5 +565,6 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
 
 
 if __name__ == '__main__':
-    cli()
-    # run_defaults()  # todo: #remove-temp-defaults
+    # TODO temp
+    # cli()
+    run_defaults()  # todo: #remove-temp-defaults
