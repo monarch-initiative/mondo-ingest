@@ -257,10 +257,6 @@ def sync_subclassof(
     mondo_ids_all: List[CURIE] = [
         x for x in [y for y in mondo_db.entities(filter_obsoletes=False)] if x.startswith('MONDO')]
     mondo_label_lookup: Dict[CURIE, str] = {x[0]: x[1] for x in [y for y in mondo_db.labels(mondo_ids_all)]}
-    # - Excluded subclass axioms
-    mondo_excluded_subclasses: List[RELATIONSHIP] = [
-        (x['?child'], 'rdfs:subClassOf', x['?parent'])
-        for x in pd.read_csv(mondo_excluded_subclasses_path, sep='\t').to_dict(orient='records')]
     # - Mappings
     ss_df = pd.read_csv(mondo_mappings_path, sep='\t', comment='#')
     #   - filter: Only exact matches
@@ -332,18 +328,17 @@ def sync_subclassof(
     #  - I added this check again because even after I fixed it once by rerunning the cache, it popped up again shortly
     #  after. It could be that I invalidated the cache somehow without realizing it. Rerunning cache fixed it though.
     missing_ancestor_rels = rels_indirect_mondo_mondo.union(rels_direct_mondo_mondo).difference(ancestors_mondo_mondo)
-    # TODO temp: commenting out for development
-    # if missing_ancestor_rels:
-    #     raise ValueError(
-    #         'FATAL BUILD ERROR: Ancestors discrepancy\n'
-    #         'Detected error in consistency of sets of terms gathered from Mondo.\n'
-    #         f'\n 1. Mondo SCR ancestors: {len(ancestors_mondo_mondo)}'
-    #         f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
-    #         f'\n 3. Mondo indirect SCR relationships: {len(rels_indirect_mondo_mondo)}'
-    #         f'\n Intersection (Top 5): {[rel for rel in list(missing_ancestor_rels)[:5]]}'
-    #         f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}'
-    #         '\nSee also: https://github.com/monarch-initiative/mondo-ingest/issues/525'
-    #         '\n\nExiting.')
+    if missing_ancestor_rels:
+        raise ValueError(
+            'FATAL BUILD ERROR: Ancestors discrepancy\n'
+            'Detected error in consistency of sets of terms gathered from Mondo.\n'
+            f'\n 1. Mondo SCR ancestors: {len(ancestors_mondo_mondo)}'
+            f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
+            f'\n 3. Mondo indirect SCR relationships: {len(rels_indirect_mondo_mondo)}'
+            f'\n Intersection (Top 5): {[rel for rel in list(missing_ancestor_rels)[:5]]}'
+            f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}'
+            '\nSee also: https://github.com/monarch-initiative/mondo-ingest/issues/525'
+            '\n\nExiting.')
 
     # Determine hierarchy differences -----------------------------------------------------------------------------------
     logging.info('Calculating various differences in hierarchies between source and Mondo')
@@ -420,12 +415,12 @@ def sync_subclassof(
     subheader = deepcopy(ROBOT_SUBHEADER)
     subheader[0]['object_mondo_id'] = 'AI obo:mondo#excluded_subClassOf'
     df3 = pd.DataFrame(in_source_direct_not_in_mondo)
-    # TODO: use mondo_excluded_subclasses
-    #  - do I need to do any mapping back into Mondo or something?
-    #  - should i just filter in the df instead of at the set level?
     # - filter excluded subclass axioms
     mondo_excluded_subclasses_df = pd.read_csv(mondo_excluded_subclasses_path, sep='\t')
-
+    exclusions: Set[Tuple[CURIE, CURIE]] = set(
+        zip(mondo_excluded_subclasses_df['?child'], mondo_excluded_subclasses_df['?parent']))
+    df3 = df3[
+        df3.apply(lambda row: (row['subject_mondo_id'], row['object_mondo_id']) not in exclusions, axis=1)]
     if len(df3) == 0:
         df3 = pd.DataFrame(columns=list(subheader[0].keys()))
     # - warning cases
@@ -565,6 +560,5 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
 
 
 if __name__ == '__main__':
-    # TODO temp
-    # cli()
-    run_defaults()  # todo: #remove-temp-defaults
+    cli()
+    # run_defaults()  # todo: #remove-temp-defaults
