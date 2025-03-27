@@ -543,7 +543,7 @@ slurp-modifications-ordo: slurp/ordo.tsv $(TMPDIR)/ordo-subsets.tsv
 .PHONY: sync
 sync: sync-subclassof sync-synonyms
 
-# Synchronization: SubclassOf
+# Synchronization: subClassOf
 .PHONY: sync-subclassof
 sync-subclassof: $(REPORTDIR)/sync-subClassOf.confirmed.tsv $(REPORTDIR)/sync-subClassOf.confirmed-direct-source-indirect-mondo.tsv $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv
 
@@ -568,7 +568,10 @@ $(REPORTDIR)/sync-subClassOf.confirmed-direct-source-indirect-mondo.tsv: $(forea
 $(TMPDIR)/mondo-excluded-subclasses.tsv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i $< -q ../sparql/mondo-excluded-subclasses.sparql $@
 
-$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.confirmed-direct-source-indirect-mondo.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: $(TMPDIR)/mondo-excluded-subclasses.tsv $(TMPDIR)/mondo-ingest.db $(TMPDIR)/mondo.db $(TMPDIR)/mondo.sssom.tsv
+$(TMPDIR)/mondo-susceptibility-terms.tsv: $(TMPDIR)/mondo.owl
+	$(ROBOT) query -i $< -q ../sparql/mondo-susceptibility-terms.sparql $@
+
+$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.confirmed-direct-source-indirect-mondo.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: $(TMPDIR)/mondo-excluded-subclasses.tsv $(TMPDIR)/mondo-susceptibility-terms.tsv $(TMPDIR)/mondo-ingest.db $(TMPDIR)/mondo.db $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof.py \
 	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
 	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
@@ -580,7 +583,8 @@ $(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.confirmed-di
 	--mondo-ingest-db-path $(TMPDIR)/mondo-ingest.db \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--onto-config-path metadata/$*.yml \
-	--mondo-excluded-subclasses-path $(TMPDIR)/mondo-excluded-subclasses.tsv
+	--mondo-excluded-subclasses-path $(TMPDIR)/mondo-excluded-subclasses.tsv \
+	--mondo-susceptibility-terms-path $(TMPDIR)/mondo-susceptibility-terms.tsv
 
 # Synchronization: Synonyms
 SYN_SYNC_DIR=$(REPORTDIR)/sync-synonym

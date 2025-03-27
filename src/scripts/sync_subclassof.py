@@ -232,6 +232,7 @@ def sync_subclassof(
     outpath_direct_in_mondo_only: str = EX_DEFAULTS['outpath_direct_in_mondo_only'],
     outpath_self_parentage: str = EX_DEFAULTS['outpath_self_parentage'],
     mondo_excluded_subclasses_path: str = EX_DEFAULTS['mondo_excluded_subclasses_path'],
+    mondo_susceptibility_terms_path: str = EX_DEFAULTS['mondo_susceptibility_terms_path'],
     use_cache=False, verbose=True
 ):
     """Run subclass sync"""
@@ -415,6 +416,10 @@ def sync_subclassof(
     subheader = deepcopy(ROBOT_SUBHEADER)
     subheader[0]['object_mondo_id'] = 'AI obo:mondo#excluded_subClassOf'
     df3 = pd.DataFrame(in_source_direct_not_in_mondo)
+    # - filter susceptible terms
+    sus_terms = set(pd.read_csv(mondo_susceptibility_terms_path, sep='\t')['?term'])
+    df3 = df3[
+        df3.apply(lambda row: all([row[x] not in sus_terms for x in ['subject_mondo_id', 'object_mondo_id']]), axis=1)]
     # - filter excluded subclass axioms
     mondo_excluded_subclasses_df = pd.read_csv(mondo_excluded_subclasses_path, sep='\t')
     exclusions: Set[Tuple[CURIE, CURIE]] = set(
@@ -526,8 +531,13 @@ def cli():  # todo: #remove-temp-defaults
     parser.add_argument(
         '-e', '--mondo-excluded-subclasses-path', required=False,
         default=EX_DEFAULTS['mondo_excluded_subclasses_path'],
-        help='Path to TSV ocntaining information about excluded subclass axioms, with cols ?parent and ?child, where '
+        help='Path to TSV containing information about excluded subclass axioms, with cols ?parent and ?child, where '
              'values are Mondo CURIEs.')
+    parser.add_argument(
+        '-s', '--mondo-susceptibility-terms-path', required=False,
+        default=EX_DEFAULTS['mondo_susceptibility_terms_path'],
+        help='Path to TSV containing information about susceptibility terms; that is, descendants of MONDO:0042489, '
+             'including that term itself. Only has 1 column: ?term (type=CURIE).')
     parser.add_argument(
         '-u', '--use-cache', required=False, default=EX_DEFAULTS['use_cache'],
         help='Use cached outputs, if any present, for outputs from operations that fetch ancestors. Cache will always'
@@ -553,6 +563,7 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
             'outpath_direct_in_mondo_only': str(REPORTS_DIR / f'{name}{IN_MONDO_ONLY_FILE_STEM}'),
             'outpath_self_parentage': str(TMP_DIR / f'{name}{SELF_PARENTAGE_DEFAULT_FILE_STEM}'),
             'mondo_excluded_subclasses_path': str(TMP_DIR / 'mondo-excluded-subclasses.tsv'),
+            'mondo_susceptibility_terms_path': str(TMP_DIR / 'mondo-susceptibility-terms.tsv'),
             'use_cache': use_cache
         })
     collate_direct_in_mondo_only()

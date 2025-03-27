@@ -1,0 +1,21 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX MONDO: <http://purl.obolibrary.org/obo/MONDO_>
+
+SELECT DISTINCT ?term
+WHERE {
+  {
+    # Include the term itself
+    BIND(MONDO:0042489 AS ?term_uri)
+  }
+  UNION
+  {
+    # Get all descendants through transitive rdfs:subClassOf relationship
+    ?term_uri rdfs:subClassOf+ MONDO:0042489 .
+  }
+
+  # Extract the ID portion from the full URI and convert underscore to colon
+  BIND(STRAFTER(STR(?term_uri), "http://purl.obolibrary.org/obo/") AS ?term_ref)
+  # Replace underscores with colons
+  BIND(REPLACE(?term_ref, "_", ":") AS ?term)
+}
+ORDER BY ?term
