@@ -568,7 +568,7 @@ $(REPORTDIR)/sync-subClassOf.confirmed-direct-source-indirect-mondo.tsv: $(forea
 $(TMPDIR)/mondo-excluded-subclasses.tsv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i $< -q ../sparql/mondo-excluded-subclasses.sparql $@
 
-$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.confirmed-direct-source-indirect-mondo.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: $(TMPDIR)/mondo-ingest.db $(TMPDIR)/mondo.db $(TMPDIR)/mondo.sssom.tsv $(TMPDIR)/mondo_excluded_subclasses.tsv
+$(REPORTDIR)/%.subclass.confirmed.robot.tsv $(REPORTDIR)/%.subclass.confirmed-direct-source-indirect-mondo.robot.tsv $(REPORTDIR)/%.subclass.added.robot.tsv $(REPORTDIR)/%.subclass.added-obsolete.robot.tsv $(REPORTDIR)/%.subclass.direct-in-mondo-only.tsv $(TMPDIR)/%.subclass.self-parentage.tsv: $(TMPDIR)/mondo-excluded-subclasses.tsv $(TMPDIR)/mondo-ingest.db $(TMPDIR)/mondo.db $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof.py \
 	--outpath-added $(REPORTDIR)/$*.subclass.added.robot.tsv \
 	--outpath-added-obsolete $(REPORTDIR)/$*.subclass.added-obsolete.robot.tsv \
