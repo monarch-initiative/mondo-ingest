@@ -337,9 +337,13 @@ def sync_subclassof(
             f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
             f'\n 3. Mondo indirect SCR relationships: {len(rels_indirect_mondo_mondo)}'
             f'\n Intersection (Top 5): {[rel for rel in list(missing_ancestor_rels)[:5]]}'
-            f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}'
+            f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}\n'
+            'What to do: Try running a full build, rather than just this single script or a mini build. This seems to '
+            'happen when dependencies are out of sync. When running a fresh build, this error never seems to happen. '
+            'But it consistently happens when debugging. And sometimes it happens during "mini builds" (e.g. `sh '
+            'run.sh make sync-subclass -B`).\n'
             '\nSee also: https://github.com/monarch-initiative/mondo-ingest/issues/525'
-            '\n\nExiting.')
+            f'\n\nExiting subclass sync for {ontology_name}.')
 
     # Determine hierarchy differences -----------------------------------------------------------------------------------
     logging.info('Calculating various differences in hierarchies between source and Mondo')
