@@ -1,10 +1,15 @@
 # creator_id:
 # - https://orcid.org/0000-0002-2906-7319
 # curie_map:
+#   BTO: http://purl.obolibrary.org/obo/BTO_
+#   CHEBI: http://purl.obolibrary.org/obo/CHEBI_
 #   DOID: http://purl.obolibrary.org/obo/DOID_
+#   DRON: http://purl.obolibrary.org/obo/DRON_
 #   EFO: http://www.ebi.ac.uk/efo/EFO_
 #   ENVO: http://purl.obolibrary.org/obo/ENVO_
 #   ExO: http://purl.obolibrary.org/obo/ExO_
+#   FBbi: http://purl.obolibrary.org/obo/FBbi_
+#   FOODON: http://purl.obolibrary.org/obo/FOODON_
 #   GARD: 'https://bioregistry.io/gard:'
 #   ICD10CM: https://icd.codes/icd10cm/
 #   ICD9CM: https://icd.codes/icd9cm/
@@ -12,6 +17,7 @@
 #   KEGG: http://www.kegg.jp/entry/
 #   MEDDRA: https://identifiers.org/meddra/
 #   MESH: https://meshb.nlm.nih.gov/record/ui?ui=
+#   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
 #   NCI: http://purl.obolibrary.org/obo/NCIT_
 #   OMIM: https://omim.org/entry/
 #   OMIMPS: https://omim.org/phenotypicSeries/PS
@@ -33,6 +39,15 @@
 #   command `make mappings/doid.sssom.tsv` from within `src/ontology`. '
 # mapping_set_id: http://purl.obolibrary.org/obo/mondo/sources/mappings/doid.sssom.tsv
 subject_id	subject_label	predicate_id	object_id	mapping_justification
+CHEBI:16716	benzene	oboInOwl:hasDbXref	NCI:C302	semapv:UnspecifiedMatching
+CHEBI:26092	phthalate	oboInOwl:hasDbXref	NCI:C152072	semapv:UnspecifiedMatching
+CHEBI:27563	arsenic	oboInOwl:hasDbXref	NCI:C28131	semapv:UnspecifiedMatching
+CHEBI:28619	acrylamide	oboInOwl:hasDbXref	DRON:00723948	semapv:UnspecifiedMatching
+CHEBI:28619	acrylamide	oboInOwl:hasDbXref	NCI:C44329	semapv:UnspecifiedMatching
+CHEBI:28619	acrylamide	oboInOwl:hasDbXref	OMIT:0020033	semapv:UnspecifiedMatching
+CHEBI:33284	nutrient	oboInOwl:hasDbXref	NCI:C157938	semapv:UnspecifiedMatching
+CHEBI:46661	asbestos	oboInOwl:hasDbXref	NCI:C284	semapv:UnspecifiedMatching
+CHEBI:5631	heavy metal	oboInOwl:hasDbXref	OMIT:0019292	semapv:UnspecifiedMatching
 DOID:0001816	angiosarcoma	oboInOwl:hasDbXref	ICDO:9120/3	semapv:UnspecifiedMatching
 DOID:0001816	angiosarcoma	oboInOwl:hasDbXref	MESH:D006394	semapv:UnspecifiedMatching
 DOID:0001816	angiosarcoma	oboInOwl:hasDbXref	NCI:C3088	semapv:UnspecifiedMatching
@@ -39404,8 +39419,21 @@ DOID:9997	peripartum cardiomyopathy	oboInOwl:hasDbXref	ICD10CM:O90.3	semapv:Unsp
 DOID:9997	peripartum cardiomyopathy	oboInOwl:hasDbXref	ICD9CM:674.5	semapv:UnspecifiedMatching
 DOID:9997	peripartum cardiomyopathy	oboInOwl:hasDbXref	NCI:C171602	semapv:UnspecifiedMatching
 DOID:9997	peripartum cardiomyopathy	oboInOwl:hasDbXref	UMLS:C0877208	semapv:UnspecifiedMatching
+ENVO:2000004	algal bloom	oboInOwl:hasDbXref	ENVO:02500018	semapv:UnspecifiedMatching
 ExO:0000013	acid rain	oboInOwl:hasDbXref	ENVO:03000127	semapv:UnspecifiedMatching
 ExO:0000013	acid rain	oboInOwl:hasDbXref	OMIT:0016047	semapv:UnspecifiedMatching
+FOODON:03413761	vitamin B12	oboInOwl:hasDbXref	NCI:C939	semapv:UnspecifiedMatching
+NCBITaxon:6954	American house dust mite	oboInOwl:hasDbXref	OMIT:0022964	semapv:UnspecifiedMatching
+NCI:C163032	botulinum toxin	oboInOwl:hasDbXref	FBbi:00000465	semapv:UnspecifiedMatching
+NCI:C594	iodine	oboInOwl:hasDbXref	CHEBI:24859	semapv:UnspecifiedMatching
+NCI:C598	iron	oboInOwl:hasDbXref	CHEBI:18248	semapv:UnspecifiedMatching
+NCI:C79660	pollen	oboInOwl:hasDbXref	BTO:0001097	semapv:UnspecifiedMatching
+NCI:C79660	pollen	oboInOwl:hasDbXref	NCI:C79660	semapv:UnspecifiedMatching
+NCI:C809	ricin toxin	oboInOwl:hasDbXref	OMIT:0013190	semapv:UnspecifiedMatching
+NCI:C943	vitamin K	oboInOwl:hasDbXref	CHEBI:28384	semapv:UnspecifiedMatching
+OMIT:0001823	air pollution	oboInOwl:hasDbXref	ENVO:02500037	semapv:UnspecifiedMatching
+OMIT:0004368	cockroaches	oboInOwl:hasDbXref	NCBITaxon:85823	semapv:UnspecifiedMatching
+OMIT:0005411	dioxin	oboInOwl:hasDbXref	NCI:C442	semapv:UnspecifiedMatching
 SYMP:0000022	depression	oboInOwl:hasDbXref	MESH:D003863	semapv:UnspecifiedMatching
 SYMP:0000178	weight loss	oboInOwl:hasDbXref	ICD9CM:783.21	semapv:UnspecifiedMatching
 SYMP:0000178	weight loss	oboInOwl:hasDbXref	UMLS:C0043096	semapv:UnspecifiedMatching

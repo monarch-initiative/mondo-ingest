@@ -2,17 +2,17 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-03-07/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-03-28/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 30 |
-| Axioms | 135381 |
+| Axioms | 135603 |
 | Logical axioms | 16630 |
 | Classes | 13480 |
-| Object properties | 0 |
+| Object properties | 2 |
 | Data properties | 0 |
 | Individuals | 0 |
 
@@ -32,10 +32,10 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 105239 |
+| AnnotationAssertion | 105459 |
 | SubAnnotationPropertyOf | 3 |
 | DisjointClasses | 26 |
-| Declaration | 13509 |
+| Declaration | 13511 |
 | SubClassOf | 16604 |
 
 
@@ -50,6 +50,7 @@
 | xsd | 1 |
 | CL | 61 |
 | skos | 5 |
+| BFO | 2 |
 | rdfs | 2 |
 | FOODON | 24 |
 | NCBITaxon | 327 |
