@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX mondo: <http://purl.obolibrary.org/obo/mondo#>
+
+SELECT ?child ?parent
+WHERE {
+  ?childURI rdf:type owl:Class ;
+    mondo:excluded_subClassOf ?parentURI .
+
+  # Extract the ID portion from the full URI and convert underscore to colon
+  BIND(STRAFTER(STR(?childURI), "http://purl.obolibrary.org/obo/") AS ?childWithUnderscore)
+  BIND(STRAFTER(STR(?parentURI), "http://purl.obolibrary.org/obo/") AS ?parentWithUnderscore)
+  # Replace underscores with colons
+  BIND(REPLACE(?childWithUnderscore, "_", ":") AS ?child)
+  BIND(REPLACE(?parentWithUnderscore, "_", ":") AS ?parent)
+}
