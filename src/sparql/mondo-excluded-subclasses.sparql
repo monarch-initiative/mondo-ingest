@@ -1,0 +1,12 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX mondo: <http://purl.obolibrary.org/obo/mondo#>
+
+SELECT ?child ?parent
+WHERE {
+  ?childURI rdf:type owl:Class ;
+    mondo:excluded_subClassOf ?parentURI .
+
+  BIND(REPLACE(STR(?childURI), "http://purl.obolibrary.org/obo/MONDO_", "MONDO:") AS ?child)
+  BIND(REPLACE(STR(?parentURI), "http://purl.obolibrary.org/obo/MONDO_", "MONDO:") AS ?parent)
+}

@@ -38,5 +38,7 @@ EX_DEFAULTS = {  # todo: #remove-temp-defaults
     'mondo_mappings_path': str(TMP_DIR / 'mondo.sssom.tsv'),
     'outpath_direct_in_mondo_only': str(REPORTS_DIR / f'{EX_ONTO_NAME}{IN_MONDO_ONLY_FILE_STEM}'),
     'outpath_self_parentage': str(TMP_DIR / f'{EX_ONTO_NAME}{SELF_PARENTAGE_DEFAULT_FILE_STEM}'),
+    'mondo_excluded_subclasses_path': str(TMP_DIR / 'mondo-excluded-subclasses.tsv'),
+    'mondo_susceptibility_terms_path': str(TMP_DIR / 'mondo-susceptibility-terms.tsv'),
     'use_cache': False,
 }
