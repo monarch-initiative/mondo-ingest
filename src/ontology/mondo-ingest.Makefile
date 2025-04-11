@@ -553,7 +553,7 @@ sync-subclassof-%: $(REPORTDIR)/%.subclass.confirmed.robot.tsv
 
 $(TMPDIR)/sync-subClassOf.added.self-parentage.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(TMPDIR)/$(n).subclass.self-parentage.tsv) $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/sync_subclassof_collate_self_parentage.py \
-	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv
 
 # Side effects: Deletes SOURCE.subclass.direct-in-mondo-only.tsv's from which the combination is made.
 $(REPORTDIR)/sync-subClassOf.direct-in-mondo-only.tsv: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n).subclass.direct-in-mondo-only.tsv) $(TMPDIR)/mondo.db
