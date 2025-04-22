@@ -1,10 +1,15 @@
 # creator_id:
 # - https://orcid.org/0000-0002-2906-7319
 # curie_map:
+#   BTO: http://purl.obolibrary.org/obo/BTO_
+#   CHEBI: http://purl.obolibrary.org/obo/CHEBI_
 #   DOID: http://purl.obolibrary.org/obo/DOID_
+#   DRON: http://purl.obolibrary.org/obo/DRON_
 #   EFO: http://www.ebi.ac.uk/efo/EFO_
 #   ENVO: http://purl.obolibrary.org/obo/ENVO_
 #   ExO: http://purl.obolibrary.org/obo/ExO_
+#   FBbi: http://purl.obolibrary.org/obo/FBbi_
+#   FOODON: http://purl.obolibrary.org/obo/FOODON_
 #   GARD: 'https://bioregistry.io/gard:'
 #   ICD10CM: https://icd.codes/icd10cm/
 #   ICD9CM: https://icd.codes/icd9cm/
@@ -12,6 +17,7 @@
 #   KEGG: http://www.kegg.jp/entry/
 #   MEDDRA: https://identifiers.org/meddra/
 #   MESH: https://meshb.nlm.nih.gov/record/ui?ui=
+#   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
 #   NCI: http://purl.obolibrary.org/obo/NCIT_
 #   OMIM: https://omim.org/entry/
 #   OMIMPS: https://omim.org/phenotypicSeries/PS
@@ -33,6 +39,15 @@
 #   command `make mappings/doid.sssom.tsv` from within `src/ontology`. '
 # mapping_set_id: http://purl.obolibrary.org/obo/mondo/sources/mappings/doid.sssom.tsv
 subject_id	subject_label	predicate_id	object_id	mapping_justification
+CHEBI:16716	benzene	oboInOwl:hasDbXref	NCI:C302	semapv:UnspecifiedMatching
+CHEBI:26092	phthalate	oboInOwl:hasDbXref	NCI:C152072	semapv:UnspecifiedMatching
+CHEBI:27563	arsenic	oboInOwl:hasDbXref	NCI:C28131	semapv:UnspecifiedMatching
+CHEBI:28619	acrylamide	oboInOwl:hasDbXref	DRON:00723948	semapv:UnspecifiedMatching
+CHEBI:28619	acrylamide	oboInOwl:hasDbXref	NCI:C44329	semapv:UnspecifiedMatching
+CHEBI:28619	acrylamide	oboInOwl:hasDbXref	OMIT:0020033	semapv:UnspecifiedMatching
+CHEBI:33284	nutrient	oboInOwl:hasDbXref	NCI:C157938	semapv:UnspecifiedMatching
+CHEBI:46661	asbestos	oboInOwl:hasDbXref	NCI:C284	semapv:UnspecifiedMatching
+CHEBI:5631	heavy metal	oboInOwl:hasDbXref	OMIT:0019292	semapv:UnspecifiedMatching
 DOID:0001816	angiosarcoma	oboInOwl:hasDbXref	ICDO:9120/3	semapv:UnspecifiedMatching
 DOID:0001816	angiosarcoma	oboInOwl:hasDbXref	MESH:D006394	semapv:UnspecifiedMatching
 DOID:0001816	angiosarcoma	oboInOwl:hasDbXref	NCI:C3088	semapv:UnspecifiedMatching
@@ -1526,7 +1541,6 @@ DOID:0050854	Muckle-Wells syndrome	skos:exactMatch	OMIM:191900	semapv:Unspecifie
 DOID:0050857	Perrault syndrome	oboInOwl:hasDbXref	GARD:2542	semapv:UnspecifiedMatching
 DOID:0050857	Perrault syndrome	oboInOwl:hasDbXref	OMIM:233400	semapv:UnspecifiedMatching
 DOID:0050857	Perrault syndrome	oboInOwl:hasDbXref	OMIM:614129	semapv:UnspecifiedMatching
-DOID:0050857	Perrault syndrome	oboInOwl:hasDbXref	OMIM:614926	semapv:UnspecifiedMatching
 DOID:0050857	Perrault syndrome	oboInOwl:hasDbXref	OMIM:615300	semapv:UnspecifiedMatching
 DOID:0050857	Perrault syndrome	oboInOwl:hasDbXref	OMIMPS:233400	semapv:UnspecifiedMatching
 DOID:0050857	Perrault syndrome	oboInOwl:hasDbXref	ORDO:2855	semapv:UnspecifiedMatching
@@ -1955,11 +1969,9 @@ DOID:0060060	non-Hodgkin lymphoma	skos:exactMatch	OMIM:605027	semapv:Unspecified
 DOID:0060061	primary cutaneous T-cell non-Hodgkin lymphoma	oboInOwl:hasDbXref	GARD:6226	semapv:UnspecifiedMatching
 DOID:0060061	primary cutaneous T-cell non-Hodgkin lymphoma	oboInOwl:hasDbXref	MESH:D016410	semapv:UnspecifiedMatching
 DOID:0060061	primary cutaneous T-cell non-Hodgkin lymphoma	oboInOwl:hasDbXref	NCI:C3467	semapv:UnspecifiedMatching
-DOID:0060062	familial juvenile hyperuricemic nephropathy	oboInOwl:hasDbXref	OMIM:162000	semapv:UnspecifiedMatching
-DOID:0060062	familial juvenile hyperuricemic nephropathy	oboInOwl:hasDbXref	OMIM:613092	semapv:UnspecifiedMatching
-DOID:0060062	familial juvenile hyperuricemic nephropathy	oboInOwl:hasDbXref	OMIM:614227	semapv:UnspecifiedMatching
-DOID:0060062	familial juvenile hyperuricemic nephropathy	oboInOwl:hasDbXref	ORDO:209886	semapv:UnspecifiedMatching
-DOID:0060062	familial juvenile hyperuricemic nephropathy	oboInOwl:hasDbXref	ORDO:217330	semapv:UnspecifiedMatching
+DOID:0060062	autosomal dominant tubulointerstitial kidney disease	oboInOwl:hasDbXref	OMIMPS:162000	semapv:UnspecifiedMatching
+DOID:0060062	autosomal dominant tubulointerstitial kidney disease	oboInOwl:hasDbXref	ORDO:34149	semapv:UnspecifiedMatching
+DOID:0060062	autosomal dominant tubulointerstitial kidney disease	skos:exactMatch	OMIMPS:162000	semapv:UnspecifiedMatching
 DOID:0060063	sideroblastic anemia 1	oboInOwl:hasDbXref	GARD:9456	semapv:UnspecifiedMatching
 DOID:0060063	sideroblastic anemia 1	oboInOwl:hasDbXref	OMIM:300751	semapv:UnspecifiedMatching
 DOID:0060063	sideroblastic anemia 1	skos:exactMatch	OMIM:300751	semapv:UnspecifiedMatching
@@ -5172,6 +5184,47 @@ DOID:0061100	autosomal dominant primary microcephaly	oboInOwl:hasDbXref	GARD:360
 DOID:0061100	autosomal dominant primary microcephaly	oboInOwl:hasDbXref	ORDO:2514	semapv:UnspecifiedMatching
 DOID:0061101	immunodeficiency 132A	oboInOwl:hasDbXref	OMIM:614849	semapv:UnspecifiedMatching
 DOID:0061101	immunodeficiency 132A	skos:exactMatch	OMIM:614849	semapv:UnspecifiedMatching
+DOID:0061103	retinitis pigmentosa 76	oboInOwl:hasDbXref	OMIM:617123	semapv:UnspecifiedMatching
+DOID:0061103	retinitis pigmentosa 76	skos:exactMatch	OMIM:617123	semapv:UnspecifiedMatching
+DOID:0061104	autosomal dominant retinitis pigmentosa 96	oboInOwl:hasDbXref	OMIM:620228	semapv:UnspecifiedMatching
+DOID:0061104	autosomal dominant retinitis pigmentosa 96	skos:exactMatch	OMIM:620228	semapv:UnspecifiedMatching
+DOID:0061105	retinitis pigmentosa 93	oboInOwl:hasDbXref	OMIM:619845	semapv:UnspecifiedMatching
+DOID:0061105	retinitis pigmentosa 93	skos:exactMatch	OMIM:619845	semapv:UnspecifiedMatching
+DOID:0061106	retinitis pigmentosa 91	oboInOwl:hasDbXref	OMIM:153870	semapv:UnspecifiedMatching
+DOID:0061106	retinitis pigmentosa 91	skos:exactMatch	OMIM:153870	semapv:UnspecifiedMatching
+DOID:0061107	retinitis pigmentosa 92	oboInOwl:hasDbXref	OMIM:619614	semapv:UnspecifiedMatching
+DOID:0061107	retinitis pigmentosa 92	skos:exactMatch	OMIM:619614	semapv:UnspecifiedMatching
+DOID:0061108	retinitis pigmentosa 79	oboInOwl:hasDbXref	OMIM:617460	semapv:UnspecifiedMatching
+DOID:0061108	retinitis pigmentosa 79	skos:exactMatch	OMIM:617460	semapv:UnspecifiedMatching
+DOID:0061109	retinitis pigmentosa 98	oboInOwl:hasDbXref	OMIM:620996	semapv:UnspecifiedMatching
+DOID:0061109	retinitis pigmentosa 98	skos:exactMatch	OMIM:620996	semapv:UnspecifiedMatching
+DOID:0061110	retinitis pigmentosa 97	oboInOwl:hasDbXref	OMIM:620422	semapv:UnspecifiedMatching
+DOID:0061110	retinitis pigmentosa 97	skos:exactMatch	OMIM:620422	semapv:UnspecifiedMatching
+DOID:0061111	retinitis pigmentosa 80	oboInOwl:hasDbXref	OMIM:617781	semapv:UnspecifiedMatching
+DOID:0061111	retinitis pigmentosa 80	skos:exactMatch	OMIM:617781	semapv:UnspecifiedMatching
+DOID:0061112	retinitis pigmentosa 95	oboInOwl:hasDbXref	OMIM:620102	semapv:UnspecifiedMatching
+DOID:0061112	retinitis pigmentosa 95	skos:exactMatch	OMIM:620102	semapv:UnspecifiedMatching
+DOID:0061113	retinitis pigmentosa 78	oboInOwl:hasDbXref	OMIM:617433	semapv:UnspecifiedMatching
+DOID:0061113	retinitis pigmentosa 78	skos:exactMatch	OMIM:617433	semapv:UnspecifiedMatching
+DOID:0061114	autosomal recessive intellectual developmental disorder 83	oboInOwl:hasDbXref	OMIM:621100	semapv:UnspecifiedMatching
+DOID:0061114	autosomal recessive intellectual developmental disorder 83	skos:exactMatch	OMIM:621100	semapv:UnspecifiedMatching
+DOID:0061115	Carey-Fineman-Ziter syndrome 1	oboInOwl:hasDbXref	OMIM:254940	semapv:UnspecifiedMatching
+DOID:0061115	Carey-Fineman-Ziter syndrome 1	skos:exactMatch	OMIM:254940	semapv:UnspecifiedMatching
+DOID:0061116	Carey-Fineman-Ziter syndrome 2	oboInOwl:hasDbXref	OMIM:619941	semapv:UnspecifiedMatching
+DOID:0061116	Carey-Fineman-Ziter syndrome 2	skos:exactMatch	OMIM:619941	semapv:UnspecifiedMatching
+DOID:0061117	Perrault syndrome 2	oboInOwl:hasDbXref	OMIM:614926	semapv:UnspecifiedMatching
+DOID:0061117	Perrault syndrome 2	skos:exactMatch	OMIM:614926	semapv:UnspecifiedMatching
+DOID:0061118	autosomal dominant tubulointerstitial kidney disease 2	oboInOwl:hasDbXref	OMIM:174000	semapv:UnspecifiedMatching
+DOID:0061118	autosomal dominant tubulointerstitial kidney disease 2	skos:exactMatch	OMIM:174000	semapv:UnspecifiedMatching
+DOID:0061119	autosomal dominant tubulointerstitial kidney disease 4	oboInOwl:hasDbXref	OMIM:613092	semapv:UnspecifiedMatching
+DOID:0061119	autosomal dominant tubulointerstitial kidney disease 4	oboInOwl:hasDbXref	ORDO:217330	semapv:UnspecifiedMatching
+DOID:0061119	autosomal dominant tubulointerstitial kidney disease 4	skos:exactMatch	OMIM:613092	semapv:UnspecifiedMatching
+DOID:0061120	autosomal dominant tubulointerstitial kidney disease 5	oboInOwl:hasDbXref	OMIM:617056	semapv:UnspecifiedMatching
+DOID:0061120	autosomal dominant tubulointerstitial kidney disease 5	skos:exactMatch	OMIM:617056	semapv:UnspecifiedMatching
+DOID:0061121	autosomal dominant tubulointerstitial kidney disease 6	oboInOwl:hasDbXref	OMIM:621106	semapv:UnspecifiedMatching
+DOID:0061121	autosomal dominant tubulointerstitial kidney disease 6	skos:exactMatch	OMIM:621106	semapv:UnspecifiedMatching
+DOID:0061122	autosomal dominant tubulointerstitial kidney disease 1	oboInOwl:hasDbXref	OMIM:162000	semapv:UnspecifiedMatching
+DOID:0061122	autosomal dominant tubulointerstitial kidney disease 1	skos:exactMatch	OMIM:162000	semapv:UnspecifiedMatching
 DOID:0070000	3-methylglutaconic aciduria type 8	oboInOwl:hasDbXref	OMIM:617248	semapv:UnspecifiedMatching
 DOID:0070000	3-methylglutaconic aciduria type 8	skos:exactMatch	OMIM:617248	semapv:UnspecifiedMatching
 DOID:0070002	3-methylglutaconic aciduria type 9	oboInOwl:hasDbXref	OMIM:617698	semapv:UnspecifiedMatching
@@ -7057,6 +7110,8 @@ DOID:0070633	acute myeloid leukemia with NPM1-MLF1 fusion	oboInOwl:hasDbXref	UML
 DOID:0070633	acute myeloid leukemia with NPM1-MLF1 fusion	skos:broadMatch	ICDO:9861/3	semapv:UnspecifiedMatching
 DOID:0070633	acute myeloid leukemia with NPM1-MLF1 fusion	skos:exactMatch	NCI:C200420	semapv:UnspecifiedMatching
 DOID:0070633	acute myeloid leukemia with NPM1-MLF1 fusion	skos:exactMatch	UMLS:C5856228	semapv:UnspecifiedMatching
+DOID:0070634	sitosterolemia 1	oboInOwl:hasDbXref	OMIM:210250	semapv:UnspecifiedMatching
+DOID:0070634	sitosterolemia 1	skos:exactMatch	OMIM:210250	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	ICD10CM:M89.9	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	MESH:D001847	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	UMLS:C0005940	semapv:UnspecifiedMatching
@@ -7510,8 +7565,10 @@ DOID:0080188	chronic myelomonocytic leukemia	oboInOwl:hasDbXref	NCI:C3178	semapv
 DOID:0080190	malignant epithelioid hemangioendothelioma	oboInOwl:hasDbXref	NCI:C3800	semapv:UnspecifiedMatching
 DOID:0080191	PTEN hamartoma tumor syndrome	oboInOwl:hasDbXref	GARD:12800	semapv:UnspecifiedMatching
 DOID:0080193	superior semicircular canal dehiscence	oboInOwl:hasDbXref	ORDO:420402	semapv:UnspecifiedMatching
-DOID:0080194	Carey-Fineman-Ziter syndrome	oboInOwl:hasDbXref	OMIM:254940	semapv:UnspecifiedMatching
-DOID:0080194	Carey-Fineman-Ziter syndrome	skos:exactMatch	OMIM:254940	semapv:UnspecifiedMatching
+DOID:0080194	Carey-Fineman-Ziter syndrome	oboInOwl:hasDbXref	GARD:3889	semapv:UnspecifiedMatching
+DOID:0080194	Carey-Fineman-Ziter syndrome	oboInOwl:hasDbXref	OMIMPS:254940	semapv:UnspecifiedMatching
+DOID:0080194	Carey-Fineman-Ziter syndrome	oboInOwl:hasDbXref	ORDO:1358	semapv:UnspecifiedMatching
+DOID:0080194	Carey-Fineman-Ziter syndrome	skos:exactMatch	OMIMPS:254940	semapv:UnspecifiedMatching
 DOID:0080195	Marinesco-Sjogren syndrome	oboInOwl:hasDbXref	GARD:8341	semapv:UnspecifiedMatching
 DOID:0080195	Marinesco-Sjogren syndrome	oboInOwl:hasDbXref	OMIM:248800	semapv:UnspecifiedMatching
 DOID:0080195	Marinesco-Sjogren syndrome	oboInOwl:hasDbXref	ORDO:559	semapv:UnspecifiedMatching
@@ -7759,8 +7816,8 @@ DOID:0080308	myofibrillar myopathy 8	oboInOwl:hasDbXref	OMIM:617258	semapv:Unspe
 DOID:0080308	myofibrillar myopathy 8	skos:exactMatch	OMIM:617258	semapv:UnspecifiedMatching
 DOID:0080309	fatal infantile hypertonic myofibrillar myopathy	oboInOwl:hasDbXref	OMIM:613869	semapv:UnspecifiedMatching
 DOID:0080309	fatal infantile hypertonic myofibrillar myopathy	skos:exactMatch	OMIM:613869	semapv:UnspecifiedMatching
-DOID:0080311	X-linked mental retardation with cerebellar hypoplasia and distinctive facial appearance	oboInOwl:hasDbXref	OMIM:300486	semapv:UnspecifiedMatching
-DOID:0080311	X-linked mental retardation with cerebellar hypoplasia and distinctive facial appearance	skos:exactMatch	OMIM:300486	semapv:UnspecifiedMatching
+DOID:0080311	Billuart-type X-linked syndromic intellectual developmental disorder	oboInOwl:hasDbXref	OMIM:300486	semapv:UnspecifiedMatching
+DOID:0080311	Billuart-type X-linked syndromic intellectual developmental disorder	skos:exactMatch	OMIM:300486	semapv:UnspecifiedMatching
 DOID:0080312	neurodevelopmental disorder with midbrain and hindbrain malformations	oboInOwl:hasDbXref	OMIM:617523	semapv:UnspecifiedMatching
 DOID:0080312	neurodevelopmental disorder with midbrain and hindbrain malformations	skos:exactMatch	OMIM:617523	semapv:UnspecifiedMatching
 DOID:0080313	cleft palate-lateral synechia syndrome	oboInOwl:hasDbXref	MESH:C563047	semapv:UnspecifiedMatching
@@ -10260,13 +10317,18 @@ DOID:0090018	TNF receptor–associated periodic syndrome	oboInOwl:hasDbXref	ICD1
 DOID:0090018	TNF receptor–associated periodic syndrome	oboInOwl:hasDbXref	OMIM:142680	semapv:UnspecifiedMatching
 DOID:0090018	TNF receptor–associated periodic syndrome	oboInOwl:hasDbXref	ORDO:32960	semapv:UnspecifiedMatching
 DOID:0090018	TNF receptor–associated periodic syndrome	skos:exactMatch	OMIM:142680	semapv:UnspecifiedMatching
-DOID:0090019	sitosterolemia 1	oboInOwl:hasDbXref	GARD:7653	semapv:UnspecifiedMatching
-DOID:0090019	sitosterolemia 1	oboInOwl:hasDbXref	MESH:C537345	semapv:UnspecifiedMatching
-DOID:0090019	sitosterolemia 1	oboInOwl:hasDbXref	NCI:C125694	semapv:UnspecifiedMatching
-DOID:0090019	sitosterolemia 1	oboInOwl:hasDbXref	OMIM:210250	semapv:UnspecifiedMatching
-DOID:0090019	sitosterolemia 1	oboInOwl:hasDbXref	ORDO:2882	semapv:UnspecifiedMatching
-DOID:0090019	sitosterolemia 1	oboInOwl:hasDbXref	UMLS:C0342907	semapv:UnspecifiedMatching
-DOID:0090019	sitosterolemia 1	skos:exactMatch	OMIM:210250	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	oboInOwl:hasDbXref	GARD:7653	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	oboInOwl:hasDbXref	MESH:C537345	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	oboInOwl:hasDbXref	NCI:C125694	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	oboInOwl:hasDbXref	OMIMPS:210250	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	oboInOwl:hasDbXref	ORDO:2882	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	oboInOwl:hasDbXref	UMLS:C0342907	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	skos:exactMatch	GARD:7653	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	skos:exactMatch	MESH:C537345	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	skos:exactMatch	NCI:C125694	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	skos:exactMatch	OMIMPS:210250	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	skos:exactMatch	ORDO:2882	semapv:UnspecifiedMatching
+DOID:0090019	sitosterolemia	skos:exactMatch	UMLS:C0342907	semapv:UnspecifiedMatching
 DOID:0090020	split hand-foot malformation	oboInOwl:hasDbXref	GARD:6319	semapv:UnspecifiedMatching
 DOID:0090020	split hand-foot malformation	oboInOwl:hasDbXref	MESH:C574275	semapv:UnspecifiedMatching
 DOID:0090020	split hand-foot malformation	oboInOwl:hasDbXref	NCI:C75000	semapv:UnspecifiedMatching
@@ -14272,8 +14334,8 @@ DOID:0111099	maturity-onset diabetes of the young type 1	oboInOwl:hasDbXref	OMIM
 DOID:0111099	maturity-onset diabetes of the young type 1	skos:exactMatch	OMIM:125850	semapv:UnspecifiedMatching
 DOID:0111100	maturity-onset diabetes of the young type 2	oboInOwl:hasDbXref	OMIM:125851	semapv:UnspecifiedMatching
 DOID:0111100	maturity-onset diabetes of the young type 2	skos:exactMatch	OMIM:125851	semapv:UnspecifiedMatching
-DOID:0111101	maturity-onset diabetes of the young type 5	oboInOwl:hasDbXref	OMIM:137920	semapv:UnspecifiedMatching
-DOID:0111101	maturity-onset diabetes of the young type 5	skos:exactMatch	OMIM:137920	semapv:UnspecifiedMatching
+DOID:0111101	renal cysts and diabetes syndrome	oboInOwl:hasDbXref	OMIM:137920	semapv:UnspecifiedMatching
+DOID:0111101	renal cysts and diabetes syndrome	skos:exactMatch	OMIM:137920	semapv:UnspecifiedMatching
 DOID:0111102	maturity-onset diabetes of the young type 3	oboInOwl:hasDbXref	OMIM:600496	semapv:UnspecifiedMatching
 DOID:0111102	maturity-onset diabetes of the young type 3	skos:exactMatch	OMIM:600496	semapv:UnspecifiedMatching
 DOID:0111103	maturity-onset diabetes of the young type 4	oboInOwl:hasDbXref	MESH:C563451	semapv:UnspecifiedMatching
@@ -19279,11 +19341,11 @@ DOID:10584	retinitis pigmentosa	oboInOwl:hasDbXref	ICD10CM:H35.52	semapv:Unspeci
 DOID:10584	retinitis pigmentosa	oboInOwl:hasDbXref	MESH:C538365	semapv:UnspecifiedMatching
 DOID:10584	retinitis pigmentosa	oboInOwl:hasDbXref	MESH:D012174	semapv:UnspecifiedMatching
 DOID:10584	retinitis pigmentosa	oboInOwl:hasDbXref	NCI:C85045	semapv:UnspecifiedMatching
+DOID:10584	retinitis pigmentosa	oboInOwl:hasDbXref	OMIM:268000	semapv:UnspecifiedMatching
 DOID:10584	retinitis pigmentosa	oboInOwl:hasDbXref	OMIMPS:268000	semapv:UnspecifiedMatching
 DOID:10584	retinitis pigmentosa	oboInOwl:hasDbXref	ORDO:791	semapv:UnspecifiedMatching
 DOID:10584	retinitis pigmentosa	oboInOwl:hasDbXref	UMLS:C0035334	semapv:UnspecifiedMatching
 DOID:10584	retinitis pigmentosa	oboInOwl:hasDbXref	UMLS:C0220701	semapv:UnspecifiedMatching
-DOID:10584	retinitis pigmentosa	skos:exactMatch	OMIMPS:268000	semapv:UnspecifiedMatching
 DOID:10587	Krabbe disease	oboInOwl:hasDbXref	GARD:6844	semapv:UnspecifiedMatching
 DOID:10587	Krabbe disease	oboInOwl:hasDbXref	ICD10CM:E75.23	semapv:UnspecifiedMatching
 DOID:10587	Krabbe disease	oboInOwl:hasDbXref	MESH:D007965	semapv:UnspecifiedMatching
@@ -39404,8 +39466,21 @@ DOID:9997	peripartum cardiomyopathy	oboInOwl:hasDbXref	ICD10CM:O90.3	semapv:Unsp
 DOID:9997	peripartum cardiomyopathy	oboInOwl:hasDbXref	ICD9CM:674.5	semapv:UnspecifiedMatching
 DOID:9997	peripartum cardiomyopathy	oboInOwl:hasDbXref	NCI:C171602	semapv:UnspecifiedMatching
 DOID:9997	peripartum cardiomyopathy	oboInOwl:hasDbXref	UMLS:C0877208	semapv:UnspecifiedMatching
+ENVO:2000004	algal bloom	oboInOwl:hasDbXref	ENVO:02500018	semapv:UnspecifiedMatching
 ExO:0000013	acid rain	oboInOwl:hasDbXref	ENVO:03000127	semapv:UnspecifiedMatching
 ExO:0000013	acid rain	oboInOwl:hasDbXref	OMIT:0016047	semapv:UnspecifiedMatching
+FOODON:03413761	vitamin B12	oboInOwl:hasDbXref	NCI:C939	semapv:UnspecifiedMatching
+NCBITaxon:6954	American house dust mite	oboInOwl:hasDbXref	OMIT:0022964	semapv:UnspecifiedMatching
+NCI:C163032	botulinum toxin	oboInOwl:hasDbXref	FBbi:00000465	semapv:UnspecifiedMatching
+NCI:C594	iodine	oboInOwl:hasDbXref	CHEBI:24859	semapv:UnspecifiedMatching
+NCI:C598	iron	oboInOwl:hasDbXref	CHEBI:18248	semapv:UnspecifiedMatching
+NCI:C79660	pollen	oboInOwl:hasDbXref	BTO:0001097	semapv:UnspecifiedMatching
+NCI:C79660	pollen	oboInOwl:hasDbXref	NCI:C79660	semapv:UnspecifiedMatching
+NCI:C809	ricin toxin	oboInOwl:hasDbXref	OMIT:0013190	semapv:UnspecifiedMatching
+NCI:C943	vitamin K	oboInOwl:hasDbXref	CHEBI:28384	semapv:UnspecifiedMatching
+OMIT:0001823	air pollution	oboInOwl:hasDbXref	ENVO:02500037	semapv:UnspecifiedMatching
+OMIT:0004368	cockroaches	oboInOwl:hasDbXref	NCBITaxon:85823	semapv:UnspecifiedMatching
+OMIT:0005411	dioxin	oboInOwl:hasDbXref	NCI:C442	semapv:UnspecifiedMatching
 SYMP:0000022	depression	oboInOwl:hasDbXref	MESH:D003863	semapv:UnspecifiedMatching
 SYMP:0000178	weight loss	oboInOwl:hasDbXref	ICD9CM:783.21	semapv:UnspecifiedMatching
 SYMP:0000178	weight loss	oboInOwl:hasDbXref	UMLS:C0043096	semapv:UnspecifiedMatching

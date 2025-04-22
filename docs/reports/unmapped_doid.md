@@ -14,12 +14,15 @@
 | DOID:0051010 | Bryant-Li-Bhoj neurodevelopmental syndrome                                                    |
 | DOID:0051011 | Bryant-Li-Bhoj neurodevelopmental syndrome 1                                                  |
 | DOID:0051012 | Bryant-Li-Bhoj neurodevelopmental syndrome 2                                                  |
+| DOID:0061115 | Carey-Fineman-Ziter syndrome 1                                                                |
+| DOID:0061116 | Carey-Fineman-Ziter syndrome 2                                                                |
 | DOID:0061098 | Carpenter syndrome 1                                                                          |
 | DOID:0061099 | Carpenter syndrome 2                                                                          |
 | DOID:0051043 | Charcot-Marie-Tooth disease axonal type 2JJ                                                   |
 | DOID:0061027 | Duane retraction syndrome 1                                                                   |
 | DOID:0061028 | Duane retraction syndrome 2                                                                   |
 | DOID:0061029 | Duane retraction syndrome 3                                                                   |
+| DOID:0061117 | Perrault syndrome 2                                                                           |
 | DOID:0061073 | Perrault syndrome 7                                                                           |
 | DOID:0050457 | Sertoli cell-only syndrome                                                                    |
 | DOID:0070629 | acute myeloid leukemia with CBFA2T3-GLIS2 fusion                                              |
@@ -70,7 +73,14 @@
 | DOID:0061100 | autosomal dominant primary microcephaly                                                       |
 | DOID:0051037 | autosomal dominant primary microcephaly 26                                                    |
 | DOID:0051038 | autosomal dominant primary microcephaly 27                                                    |
+| DOID:0061104 | autosomal dominant retinitis pigmentosa 96                                                    |
+| DOID:0061122 | autosomal dominant tubulointerstitial kidney disease 1                                        |
+| DOID:0061118 | autosomal dominant tubulointerstitial kidney disease 2                                        |
+| DOID:0061119 | autosomal dominant tubulointerstitial kidney disease 4                                        |
+| DOID:0061120 | autosomal dominant tubulointerstitial kidney disease 5                                        |
+| DOID:0061121 | autosomal dominant tubulointerstitial kidney disease 6                                        |
 | DOID:0051028 | autosomal recessive axonal Charcot-Marie-Tooth disease with vocal cord paresis                |
+| DOID:0061114 | autosomal recessive intellectual developmental disorder 83                                    |
 | DOID:0060854 | autosomal recessive pseudohypoaldosteronism type 1                                            |
 | DOID:0060992 | bent bone dysplasia syndrome 1                                                                |
 | DOID:0060993 | bent bone dysplasia syndrome 2                                                                |
@@ -200,6 +210,16 @@
 | DOID:0051040 | primary autosomal recessive microcephaly 29                                                   |
 | DOID:0051041 | primary autosomal recessive microcephaly 30                                                   |
 | DOID:0051013 | pseudohypoparathyroidism type 1C                                                              |
+| DOID:0061103 | retinitis pigmentosa 76                                                                       |
+| DOID:0061113 | retinitis pigmentosa 78                                                                       |
+| DOID:0061108 | retinitis pigmentosa 79                                                                       |
+| DOID:0061111 | retinitis pigmentosa 80                                                                       |
+| DOID:0061106 | retinitis pigmentosa 91                                                                       |
+| DOID:0061107 | retinitis pigmentosa 92                                                                       |
+| DOID:0061105 | retinitis pigmentosa 93                                                                       |
+| DOID:0061112 | retinitis pigmentosa 95                                                                       |
+| DOID:0061110 | retinitis pigmentosa 97                                                                       |
+| DOID:0061109 | retinitis pigmentosa 98                                                                       |
 | DOID:0070617 | rhabdoid tumor predisposition syndrome                                                        |
 | DOID:0070618 | rhabdoid tumor predisposition syndrome 1                                                      |
 | DOID:0060997 | rhabdoid tumor predisposition syndrome 2                                                      |
@@ -210,6 +230,7 @@
 | DOID:0061090 | severe combined immunodeficiency 124                                                          |
 | DOID:0060989 | short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies 1 |
 | DOID:0061007 | sideroblastic anemia 5                                                                        |
+| DOID:0070634 | sitosterolemia 1                                                                              |
 | DOID:0051046 | spondyloepimetaphyseal dysplasia, Li-Shao-Li type                                             |
 | DOID:0060998 | striatal degeneration 2                                                                       |
 | DOID:0051016 | visceral heterotaxy 1                                                                         |
