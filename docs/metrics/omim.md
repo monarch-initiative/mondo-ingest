@@ -2,7 +2,7 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/omim.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-04-22/omim.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-04-23/omim.owl
 
 ### Entities and axioms
 
@@ -38,7 +38,7 @@
 | SubClassOf | 28474 |
 
 
-#### Entity namespaces: axiom counts by namespace
+#### Entity namespaces: distinct entity count by namespace
 
 | Metric | Value |
 | ------ | ----- |

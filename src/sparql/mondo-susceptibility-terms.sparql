@@ -1,0 +1,10 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX MONDO: <http://purl.obolibrary.org/obo/MONDO_>
+
+SELECT DISTINCT ?term
+WHERE {
+  ?term_uri rdfs:subClassOf* MONDO:0042489 .
+
+  BIND(REPLACE(STR(?term_uri), "http://purl.obolibrary.org/obo/MONDO_", "MONDO:") AS ?term)
+}
+ORDER BY ?term
