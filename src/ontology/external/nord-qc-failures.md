@@ -1,6 +1,13 @@
 
 # QC Report for nord
 
-| mondo_id      | report_ref   | report_ref_source   | preferred_name                            | preferred_name_source   | synonym_type   | subset   | subset_source   | subset_source2   | Source   | Check                                             |
-|:--------------|:-------------|:--------------------|:------------------------------------------|:------------------------|:---------------|:---------|:----------------|:-----------------|:---------|:--------------------------------------------------|
-| MONDO:0971062 |              |                     | NR4A2-Related Neurodevelopmental Disorder |                         |                |          |                 |                  | nord     | qc-trailing-whitespace (oboInOwl:hasExactSynonym) |
+| mondo_id      | report_ref   | report_ref_source   | preferred_name                            | preferred_name_source   | synonym_type   | subset   | subset_source   | subset_source2   | Source   | Check                                               |
+|:--------------|:-------------|:--------------------|:------------------------------------------|:------------------------|:---------------|:---------|:----------------|:-----------------|:---------|:----------------------------------------------------|
+| MONDO:0001280 |              |                     | Posterior Uveitis                         |                         |                |          |                 |                  | nord     | duplicate_scoped_synonym (oboInOwl:hasExactSynonym) |
+| MONDO:0002119 |              |                     | Juvenile Ossifying Fibroma                |                         |                |          |                 |                  | nord     | duplicate_scoped_synonym (oboInOwl:hasExactSynonym) |
+| MONDO:0005731 |              |                     | Acanthocheilonemiasis                     |                         |                |          |                 |                  | nord     | duplicate_scoped_synonym (oboInOwl:hasExactSynonym) |
+| MONDO:0005761 |              |                     | Elephantiasis                             |                         |                |          |                 |                  | nord     | duplicate_scoped_synonym (oboInOwl:hasBroadSynonym) |
+| MONDO:0007030 |              |                     | Aarskog Syndrome                          |                         |                |          |                 |                  | nord     | duplicate_scoped_synonym (oboInOwl:hasExactSynonym) |
+| MONDO:0007306 |              |                     | Klippel-Feil Syndrome                     |                         |                |          |                 |                  | nord     | duplicate_scoped_synonym (oboInOwl:hasBroadSynonym) |
+| MONDO:0007389 |              |                     | Spondylothoracic Dysplasia                |                         |                |          |                 |                  | nord     | duplicate_scoped_synonym (oboInOwl:hasExactSynonym) |
+| MONDO:0971062 |              |                     | NR4A2-Related Neurodevelopmental Disorder |                         |                |          |                 |                  | nord     | qc-trailing-whitespace (oboInOwl:hasExactSynonym)   |

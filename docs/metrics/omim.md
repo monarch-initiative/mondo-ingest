@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/omim.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-03-10/omim.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-04-22/omim.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 24 |
-| Axioms | 391557 |
-| Logical axioms | 28383 |
-| Classes | 23679 |
+| Axioms | 586009 |
+| Logical axioms | 28474 |
+| Classes | 23741 |
 | Object properties | 7 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,23 +32,23 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 339465 |
+| AnnotationAssertion | 533764 |
 | SubAnnotationPropertyOf | 3 |
-| Declaration | 23706 |
-| SubClassOf | 28383 |
+| Declaration | 23768 |
+| SubClassOf | 28474 |
 
 
 #### Entity namespaces: axiom counts by namespace
 
 | Metric | Value |
 | ------ | ----- |
-| prefix_unknown | 22239 |
+| prefix_unknown | 22302 |
 | oboInOwl | 6 |
 | owl | 2 |
 | xsd | 1 |
 | skos | 1 |
 | rdfs | 2 |
-| CHR | 1443 |
+| CHR | 1442 |
 | OMO | 1 |
 | MONDO | 1 |
 | rdf | 1 |
@@ -62,8 +62,8 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 80440 |
-| ObjectSomeValuesFrom | 23377 |
+| Class | 80684 |
+| ObjectSomeValuesFrom | 23456 |
 
 
 More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
