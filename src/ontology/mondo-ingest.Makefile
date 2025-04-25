@@ -232,6 +232,7 @@ docs/reports/unmapped.md docs/reports/unmapped_%.md: $(foreach n,$(ALL_COMPONENT
 .PHONY: unmapped-terms-tables
 unmapped-terms-tables: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_mapping_status.tsv)
 
+# TODO temp
 $(REPORTDIR)/%_mapping_status.tsv $(REPORTDIR)/%_unmapped_terms.tsv: $(REPORTDIR)/%_term_exclusions.txt metadata/%.yml $(COMPONENTSDIR)/%.db $(TMPDIR)/mondo.sssom.tsv
 	python3 $(SCRIPTSDIR)/unmapped_tables.py \
 	--exclusions-path $(REPORTDIR)/$*_term_exclusions.txt \
@@ -256,6 +257,8 @@ recreate-unmapped-components: $(patsubst %, unmapped/%-unmapped.owl, $(ALL_COMPO
 ### Exclusions ##
 #################
 # Exclusions: by ontology
+# TODO temp
+#$(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml
 $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml
 	python3 $(SCRIPTSDIR)/exclusion_table_creation.py \
 	--select-intensional-exclusions-path config/$*_exclusions.tsv \
@@ -266,6 +269,12 @@ $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.templa
 	--outpath-txt $(REPORTDIR)/$*_term_exclusions.txt \
 	--outpath-robot-template-tsv $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv
 .PRECIOUS: $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
+
+#reports/%_mappable.tsv: $(COMPONENTSDIR)/%.owl
+#	$(ROBOT) query -i $< --query ../sparql/mappable.sparql $@
+# TODO temp: put in onto manually
+reports/ordo_mappable.tsv:
+	$(ROBOT) query -i components/ordo.owl --query ../sparql/mappable.sparql $@
 
 $(REPORTDIR)/%_exclusion_reasons.ttl: component-download-%.owl $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
 	$(ROBOT) template --input $(TMPDIR)/component-download-$*.owl.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl

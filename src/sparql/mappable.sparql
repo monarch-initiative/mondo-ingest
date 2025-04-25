@@ -1,0 +1,12 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT (COUNT(DISTINCT ?class) AS ?classCount)
+WHERE {
+  ?class a owl:Class .
+
+  # Exclude obsolete classes
+  FILTER NOT EXISTS { ?class owl:deprecated true }
+
+  # Filter out excluded classes
+  FILTER NOT EXISTS { ?class <http://purl.obolibrary.org/obo/MONDO_exclusionReason> ?reason }
+}
