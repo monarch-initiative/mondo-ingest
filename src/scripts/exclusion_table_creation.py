@@ -316,8 +316,9 @@ def expand_intensional_exclusions(
     return df_results
 
 
+# TODO temp
 def exclusion_table_creation(
-    onto_path: str, select_intensional_exclusions_path: str, mirror_signature_path: str, component_signature_path: str,
+    onto_mirror_path: str, select_intensional_exclusions_path: str, mirror_signature_path: str, component_signature_path: str,
     config_path: str, outpath_txt: str, outpath_robot_template_tsv: str, use_cache: bool = CONFIG['use_cache'],
     save: bool = CONFIG['save']
 ) -> Union[Dict[str, pd.DataFrame], None]:
@@ -330,15 +331,18 @@ def exclusion_table_creation(
 
     # Get exclusions
     # - Get intensional exclusions and expand them
+    # todo just a note: mirror
     expanded_intensional_exclusions_df = expand_intensional_exclusions(
-        onto_path=onto_path, exclusions_path=select_intensional_exclusions_path, prefix_map=prefix_uri_map,
+        onto_path=onto_mirror_path, exclusions_path=select_intensional_exclusions_path, prefix_map=prefix_uri_map,
         use_cache=use_cache)
     # - Get non-inclusions
+    # todo just a note: mirror + component!?
     non_inclusions_df = get_non_inclusions(
         mirror_signature_path=mirror_signature_path, component_signature_path=component_signature_path,
         prefix_map=prefix_uri_map)
     # - Get by triples with MONDO:exclusionReason predicate
-    exclusions_from_onto_df = sparql_robot_query(SPARQL_MONDO_EXCLUDES_PATH, onto_path, use_cache=use_cache)
+    # todo just a note: mirror
+    exclusions_from_onto_df = sparql_robot_query(SPARQL_MONDO_EXCLUDES_PATH, onto_mirror_path, use_cache=use_cache)
     for col in list(exclusions_from_onto_df.columns):
         exclusions_from_onto_df[col] = exclusions_from_onto_df[col].apply(uri_to_curie, prefix_map=prefix_uri_map)
 

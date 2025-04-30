@@ -514,9 +514,9 @@ $(COMPONENTSDIR)/omim.owl: component-download-omim.owl
 
 
 .PHONY: component-download-ordo.owl
+# TODO temp
 component-download-ordo.owl: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(COMP) = true ]; then $(ROBOT) merge -I http://www.orphadata.org/data/ORDO/ordo_orphanet.owl \
-	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
+	echo 1
 
 $(COMPONENTSDIR)/ordo.owl: component-download-ordo.owl
 	if [ $(COMP) = true ]; then if cmp -s $(TMPDIR)/component-download-ordo.owl.owl $(TMPDIR)/component-download-ordo.owl.tmp.owl ; then echo "Component identical."; \

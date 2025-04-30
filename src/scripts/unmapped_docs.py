@@ -56,7 +56,18 @@ def update_mapping_progress_in_docs():
         n_mappable = len(mappable_df)
         n_unmapped_mappable = len(unmapped_mappable_df)
         n_deprecated = f"{len(df[df['is_deprecated']] == True):,}"
-        stats_rows.append({
+        # TODO:
+        mappable_mapped_df = mappable_df[mappable_df['is_mapped'] == True]
+        mappable_unmapped_df = mappable_df[mappable_df['is_mapped'] == False]
+        deprecated_df = df[df['is_deprecated'] == True]
+        excluded_df = df[df['is_excluded'] == True]
+        deprecated_alone_df = df[(df['is_deprecated'] == True) & (df['is_excluded'] == False)]
+        excluded_alone_df = df[(df['is_excluded'] == True) & (df['is_deprecated'] == False)]
+        dep_and_excluded_df = df[(df['is_excluded'] == True) & (df['is_deprecated'] == True)]
+        # print(path)
+        onto_filename = os.path.basename(path)
+
+        info = {
             'Ontology': f'[{ontology_name.upper()}](./unmapped_{ontology_name.lower()}.md)',
             'Tot terms': f"{len(df):,}",
             'Tot excluded': f"{len(df[df['is_excluded'] == True]):,}",
@@ -67,7 +78,20 @@ def update_mapping_progress_in_docs():
             'Tot unmapped _(mappable)_': f"{n_unmapped_mappable:,}",
             '% unmapped _(mappable)_':
                 str(round((n_unmapped_mappable / n_mappable) * 100, 1)) + '%' if n_mappable else '100%',
-        })
+        }
+        stats_rows.append(info)
+        # TODO temp
+        print(onto_filename)
+        print('tot', len(df))
+        print('deprecated_alone_df', len(deprecated_alone_df))
+        print('excluded_alone_df', len(excluded_alone_df))
+        print('dep_and_excluded_df', len(dep_and_excluded_df))
+        should_mappable = \
+            len(df) - len(deprecated_alone_df) - len(excluded_alone_df) - len(dep_and_excluded_df)
+        print('n terms - (dep alone + exc alone + dep+exc) = (should=mappable)', should_mappable)
+        print('len(mappable_df)', len(mappable_df))
+
+        print()  # TODO temp
     stats_df = pd.DataFrame(stats_rows).sort_values(['% unmapped _(mappable)_'], ascending=False)
     instantiated_str: str = Template(JINJA_MAIN_PAGE).render(stats_markdown_table=stats_df.to_markdown(index=False))
     with open(OUT_PATH, 'w') as f:
