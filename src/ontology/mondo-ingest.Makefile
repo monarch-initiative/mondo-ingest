@@ -419,12 +419,20 @@ reports/component_signature-%.tsv: $(COMPONENTSDIR)/%.owl
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
 	mv $@-temp $@
 
+reports/mirror_deprecated-%.tsv: #component-download-%.owl
+	$(ROBOT) query -i $(TMPDIR)/component-download-$*.owl.owl --query ../sparql/deprecated.sparql $@
+	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
+	mv $@-temp $@
+
 ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror_signature-$(n).tsv)
 
 .PHONY: signature_reports
 signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
 	@echo "Finished running signature reports."
+
+reports/mondo_obsoletes_exactmatch.csv: $(TMPDIR)/mondo.owl
+	$(ROBOT) query -i $(TMPDIR)/mondo.owl --query ../sparql/mondo_obsoletes_exactmatch.sparql $@
 
 #############################
 #### Lexical matching #######
