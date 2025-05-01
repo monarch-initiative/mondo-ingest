@@ -419,13 +419,14 @@ reports/component_signature-%.tsv: $(COMPONENTSDIR)/%.owl
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
 	mv $@-temp $@
 
-reports/mirror_deprecated-%.tsv: #component-download-%.owl
+reports/mirror_deprecated-%.tsv: component-download-%.owl
 	$(ROBOT) query -i $(TMPDIR)/component-download-$*.owl.owl --query ../sparql/deprecated.sparql $@
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
 	mv $@-temp $@
 
 ALL_MIRROR_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/component_signature-$(n).tsv)
 ALL_COMPONENT_SIGNTAURE_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror_signature-$(n).tsv)
+ALL_MIRROR_DEPRECATED_REPORTS=$(foreach n,$(ALL_COMPONENT_IDS), reports/mirror_deprecated-$(n).tsv)
 
 .PHONY: signature_reports
 signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REPORTS)
@@ -433,6 +434,10 @@ signature_reports: $(ALL_MIRROR_SIGNTAURE_REPORTS) $(ALL_COMPONENT_SIGNTAURE_REP
 
 reports/mondo_obsoletes_exactmatch.csv: $(TMPDIR)/mondo.owl
 	$(ROBOT) query -i $(TMPDIR)/mondo.owl --query ../sparql/mondo_obsoletes_exactmatch.sparql $@
+
+run_for_alignment_notebook:
+	$(MAKE) $(ALL_MIRROR_DEPRECATED_REPORTS)
+	$(MAKE) reports/mondo_obsoletes_exactmatch.csv
 
 #############################
 #### Lexical matching #######
