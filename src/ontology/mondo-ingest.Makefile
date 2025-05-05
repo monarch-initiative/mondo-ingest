@@ -770,10 +770,11 @@ $(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv:
 # Managed in Google Sheets:
 # https://docs.google.com/spreadsheets/d/1peJ6TnobK9qI61PnCwwyoNpYZdZLWfZ1eQD1q_f7HQM/edit?gid=0#gid=0
 
-$(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv:
-	wget "https://docs.google.com/spreadsheets/d/e/2PACX-1vTbstSNFfYBRNxUbbzmixE4Yi3k3QtiEpcEen8ScSOKVI6RZS4KqEFFSE0AqvHL1Hwtmi0OuC2IWeGb/pub?gid=0&single=true&output=tsv" -O $@
+$(TMPDIR)/malacards.tsv:
+	wget "https://genecardscustomers.blob.core.windows.net/mondo/Mondo_MalaCards_Current.tsv" -O $@
 
-
+$(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv: $(TMPDIR)/malacards.tsv
+	awk 'NR==1 { print; print "ID	AI obo:mondo#curated_content_resource	>A oboInOwl:source"; next } { print }' $< > $@
 
 ###### ClinGen #########
 
