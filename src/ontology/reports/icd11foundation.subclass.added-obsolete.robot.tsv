@@ -1,6 +1,7 @@
 subject_mondo_id	subject_mondo_label	object_mondo_id	subject_source_id	object_source_id	object_mondo_label
 ID		AI obo:mondo#excluded_subClassOf	>A oboInOwl:source		
 MONDO:0000110	bifid nose	MONDO:0015503	icd11.foundation:1824850646	icd11.foundation:484839707	obsolete nose and cavum anomaly
+MONDO:0006748	obsolete epilepsia partialis continua	MONDO:0002125	icd11.foundation:669338526	icd11.foundation:906174792	obsolete status epilepticus
 MONDO:0007058	Acropectorovertebral dysplasia	MONDO:0017434	icd11.foundation:1013313909	icd11.foundation:1911144861	obsolete syndrome with limb duplication, polydactyly, syndactyly, and/or hyperphalangy
 MONDO:0007167	atelosteogenesis type I	MONDO:0800086	icd11.foundation:449799342	icd11.foundation:689620137	obsolete primary bone dysplasia with multiple joint dislocations
 MONDO:0007168	atelosteogenesis type III	MONDO:0800086	icd11.foundation:1997882528	icd11.foundation:689620137	obsolete primary bone dysplasia with multiple joint dislocations
@@ -62,7 +63,6 @@ MONDO:0010134	Pendred syndrome	MONDO:0019589	icd11.foundation:1156056623	icd11.f
 MONDO:0010243	X-linked immunoneurologic disorder	MONDO:0015132	icd11.foundation:1464555617	icd11.foundation:85074116	obsolete immunodeficiency predominantly affecting antibody production
 MONDO:0010397	severe neonatal-onset encephalopathy with microcephaly	MONDO:0017119	icd11.foundation:240602582	icd11.foundation:2011102370	obsolete syndrome with microcephaly as major feature
 MONDO:0010622	recessive X-linked ichthyosis	MONDO:0017262	icd11.foundation:1466487054	icd11.foundation:213831678	obsolete inherited non-syndromic ichthyosis
-MONDO:0010686	N syndrome	MONDO:0019589	icd11.foundation:2040480507	icd11.foundation:186534168	obsolete syndromic genetic hearing loss
 MONDO:0010691	Norrie disease	MONDO:0019589	icd11.foundation:676214590	icd11.foundation:186534168	obsolete syndromic genetic hearing loss
 MONDO:0010787	Kearns-Sayre syndrome	MONDO:0019589	icd11.foundation:399100745	icd11.foundation:186534168	obsolete syndromic genetic hearing loss
 MONDO:0011079	rhizomelic dysplasia, Patterson-Lowry type	MONDO:0019697	icd11.foundation:1681747199	icd11.foundation:533702276	obsolete mesomelic and rhizo-mesomelic dysplasia
@@ -86,7 +86,6 @@ MONDO:0013245	syndromic multisystem autoimmune disease due to ITCH deficiency	MO
 MONDO:0013408	FADD-related immunodeficiency	MONDO:0015709	icd11.foundation:440676168	icd11.foundation:1902856995	obsolete immunodeficiency syndrome with autoimmunity
 MONDO:0013487	recurrent Neisseria infections due to factor D deficiency	MONDO:0015136	icd11.foundation:528757185	icd11.foundation:1222145690	obsolete immunodeficiency due to a genetic complement cascade protein anomaly
 MONDO:0013700	pancreatic triacylglycerol lipase deficiency	MONDO:0017709	icd11.foundation:349070670	icd11.foundation:1858691234	obsolete disorder of lipid absorption and transport
-MONDO:0013873	IMAGe syndrome	MONDO:0019699	icd11.foundation:1064803315	icd11.foundation:691657602	obsolete slender bone dysplasia
 MONDO:0014720	autosomal dominant optic atrophy plus syndrome	MONDO:0016797	icd11.foundation:1149710475	icd11.foundation:194083556	obsolete multiple mitochondrial DNA deletion syndrome
 MONDO:0015131	combined immunodeficiency	MONDO:0015823	icd11.foundation:1616506198	icd11.foundation:1169765917	obsolete primary immunodeficiency due to a defect in adaptive immunity
 MONDO:0015132	obsolete immunodeficiency predominantly affecting antibody production	MONDO:0015823	icd11.foundation:85074116	icd11.foundation:1169765917	obsolete primary immunodeficiency due to a defect in adaptive immunity
@@ -109,7 +108,6 @@ MONDO:0015392	nasal glial heterotopia	MONDO:0015503	icd11.foundation:1449384774	
 MONDO:0015395	congenital subglottic stenosis	MONDO:0015504	icd11.foundation:76585642	icd11.foundation:2041437327	obsolete larynx anomaly
 MONDO:0015396	congenital laryngeal cyst	MONDO:0015504	icd11.foundation:591042640	icd11.foundation:2041437327	obsolete larynx anomaly
 MONDO:0015483	mandibulofacial dysostosis	MONDO:0015482	icd11.foundation:470731247	icd11.foundation:424177015	obsolete otomandibular dysplasia
-MONDO:0015517	common variable immunodeficiency	MONDO:0015132	icd11.foundation:1908371517	icd11.foundation:85074116	obsolete immunodeficiency predominantly affecting antibody production
 MONDO:0015678	dysplasia of head of femur, Meyer type	MONDO:0019692	icd11.foundation:381445908	icd11.foundation:2078345611	obsolete multiple epiphyseal dysplasia and pseudoachondroplasia
 MONDO:0015698	transient hypogammaglobulinemia of infancy	MONDO:0015132	icd11.foundation:1686370790	icd11.foundation:85074116	obsolete immunodeficiency predominantly affecting antibody production
 MONDO:0015699	immunodeficiency due to a classical component pathway complement deficiency	MONDO:0015136	icd11.foundation:327609494	icd11.foundation:1222145690	obsolete immunodeficiency due to a genetic complement cascade protein anomaly
@@ -120,7 +118,6 @@ MONDO:0015824	oculomaxillofacial dysostosis	MONDO:0800085	icd11.foundation:92102
 MONDO:0015849	longitudinal vaginal septum	MONDO:0015848	icd11.foundation:1594393492	icd11.foundation:1699475508	obsolete septate vagina
 MONDO:0015850	transverse vaginal septum	MONDO:0015848	icd11.foundation:1265288464	icd11.foundation:1699475508	obsolete septate vagina
 MONDO:0015978	functional neutrophil defect	MONDO:0015135	icd11.foundation:808756909	icd11.foundation:551037838	obsolete primary immunodeficiency due to a genetic defect in innate immunity
-MONDO:0016006	Cockayne syndrome	MONDO:0019589	icd11.foundation:1206275070	icd11.foundation:186534168	obsolete syndromic genetic hearing loss
 MONDO:0016061	immunodeficiency with factor H anomaly	MONDO:0015136	icd11.foundation:946399055	icd11.foundation:1222145690	obsolete immunodeficiency due to a genetic complement cascade protein anomaly
 MONDO:0016530	laryngocele	MONDO:0015504	icd11.foundation:360056769	icd11.foundation:2041437327	obsolete larynx anomaly
 MONDO:0016568	Lowe-Kohn-Cohen syndrome	MONDO:0019589	icd11.foundation:2061193977	icd11.foundation:186534168	obsolete syndromic genetic hearing loss
@@ -136,7 +133,6 @@ MONDO:0016851	maternal uniparental disomy of chromosome X	MONDO:0020056	icd11.fo
 MONDO:0016852	paternal uniparental disomy of chromosome X	MONDO:0020057	icd11.foundation:444322860	icd11.foundation:2028476598	obsolete uniparental disomy of paternal origin
 MONDO:0016853	ring chromosome Y	MONDO:0020061	icd11.foundation:388539343	icd11.foundation:1096926039	obsolete chromosome Y structural anomaly
 MONDO:0017136	omodysplasia	MONDO:0019697	icd11.foundation:1081897527	icd11.foundation:533702276	obsolete mesomelic and rhizo-mesomelic dysplasia
-MONDO:0017265	autosomal recessive congenital ichthyosis	MONDO:0017262	icd11.foundation:430849255	icd11.foundation:213831678	obsolete inherited non-syndromic ichthyosis
 MONDO:0017266	keratinopathic ichthyosis	MONDO:0017262	icd11.foundation:992865924	icd11.foundation:213831678	obsolete inherited non-syndromic ichthyosis
 MONDO:0017312	Perrault syndrome	MONDO:0019589	icd11.foundation:256968598	icd11.foundation:186534168	obsolete syndromic genetic hearing loss
 MONDO:0017467	tibio-fibular synostosis	MONDO:0017429	icd11.foundation:1756900121	icd11.foundation:1429730271	obsolete joint formation defects
@@ -169,7 +165,7 @@ MONDO:0019541	obsolete non-infectious posterior uveitis	MONDO:0001280	icd11.foun
 MONDO:0019608	obsolete 46,XX disorder of sex development induced by maternal-derived androgen	MONDO:0015898	icd11.foundation:293874628	icd11.foundation:131153029	adrenogenital syndrome
 MONDO:0019620	congenital esophageal diverticulum	MONDO:0019513	icd11.foundation:42183618	icd11.foundation:1999264345	obsolete esophageal malformation
 MONDO:0019782	humero-ulnar synostosis	MONDO:0017429	icd11.foundation:2144695561	icd11.foundation:1429730271	obsolete joint formation defects
-MONDO:0019804	tracheomalacia	MONDO:0015505	icd11.foundation:1616705280	icd11.foundation:679333287	obsolete tracheal anomaly
+MONDO:0019804	congenital tracheomalacia	MONDO:0015505	icd11.foundation:1616705280	icd11.foundation:679333287	obsolete tracheal anomaly
 MONDO:0019910	maternal uniparental disomy of chromosome 2	MONDO:0020056	icd11.foundation:2067230711	icd11.foundation:824346206	obsolete uniparental disomy of maternal origin
 MONDO:0019911	maternal uniparental disomy of chromosome 4	MONDO:0020056	icd11.foundation:358848660	icd11.foundation:824346206	obsolete uniparental disomy of maternal origin
 MONDO:0019912	maternal uniparental disomy of chromosome 6	MONDO:0020056	icd11.foundation:423779048	icd11.foundation:824346206	obsolete uniparental disomy of maternal origin

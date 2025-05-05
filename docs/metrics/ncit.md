@@ -2,14 +2,14 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ncit.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2024-12-06/ncit.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-04-23/ncit.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
-| Annotation properties | 12 |
-| Axioms | 1328208 |
+| Annotation properties | 15 |
+| Axioms | 1328213 |
 | Logical axioms | 33655 |
 | Classes | 15971 |
 | Object properties | 0 |
@@ -32,26 +32,28 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 1278551 |
+| AnnotationAssertion | 1278552 |
 | EquivalentClasses | 6260 |
 | DatatypeDefinition | 19 |
+| SubAnnotationPropertyOf | 1 |
 | AnnotationPropertyRangeOf | 1 |
-| Declaration | 16001 |
+| Declaration | 16004 |
 | SubClassOf | 27376 |
 
 
-#### Entity namespaces: axiom counts by namespace
+#### Entity namespaces: distinct entity count by namespace
 
 | Metric | Value |
 | ------ | ----- |
 | prefix_unknown | 1 |
 | NCIT | 15993 |
-| oboInOwl | 3 |
+| oboInOwl | 5 |
 | owl | 2 |
 | rdf | 1 |
 | IAO | 1 |
 | xsd | 1 |
 | rdfs | 2 |
+| obo | 1 |
 | dc | 3 |
 
 

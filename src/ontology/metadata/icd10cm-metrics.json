@@ -2,10 +2,10 @@
   "metrics": {
     "abox_axiom_count": 0,
     "abox_axiom_count_incl": 0,
-    "annotation_property_count": 7,
-    "annotation_property_count_incl": 7,
-    "axiom_count": 398757,
-    "axiom_count_incl": 398757,
+    "annotation_property_count": 8,
+    "annotation_property_count_incl": 8,
+    "axiom_count": 398759,
+    "axiom_count_incl": 398759,
     "class_count": 95848,
     "class_count_incl": 95848,
     "dataproperty_count": 0,
@@ -26,7 +26,7 @@
     "obj_property_count_incl": 0,
     "ontology_anno_count": 5,
     "ontology_iri": "http://purl.obolibrary.org/obo/mondo/sources/icd10cm.owl",
-    "ontology_version_iri": "http://purl.obolibrary.org/obo/mondo/sources/2024-12-06/icd10cm.owl",
+    "ontology_version_iri": "http://purl.obolibrary.org/obo/mondo/sources/2025-04-23/icd10cm.owl",
     "owl2": true,
     "owl2_dl": true,
     "owl2_el": true,
@@ -37,8 +37,8 @@
     "rdfs": true,
     "rule_count": 0,
     "rule_count_incl": 0,
-    "signature_entity_count": 95856,
-    "signature_entity_count_incl": 95856,
+    "signature_entity_count": 95857,
+    "signature_entity_count_incl": 95857,
     "syntax": "RDF/XML Syntax",
     "tbox_axiom_count": 95846,
     "tbox_axiom_count_incl": 95846,
@@ -62,14 +62,14 @@
     "valid_imports_incl": [],
     "axiom_type_count": {
       "AnnotationAssertion": 207058,
-      "SubAnnotationPropertyOf": 1,
-      "Declaration": 95852,
+      "SubAnnotationPropertyOf": 2,
+      "Declaration": 95853,
       "SubClassOf": 95846
     },
     "axiom_type_count_incl": {
       "AnnotationAssertion": 207058,
-      "SubAnnotationPropertyOf": 1,
-      "Declaration": 95852,
+      "SubAnnotationPropertyOf": 2,
+      "Declaration": 95853,
       "SubClassOf": 95846
     },
     "class_expression_count": {
@@ -87,17 +87,17 @@
     },
     "namespace_axiom_count": {
       "prefix_unknown": 287517,
-      "oboInOwl": 113480,
+      "oboInOwl": 209455,
       "owl": 22,
       "rdfs": 95975,
-      "obo": 2
+      "obo": 4
     },
     "namespace_axiom_count_incl": {
       "prefix_unknown": 287517,
-      "oboInOwl": 113480,
+      "oboInOwl": 209455,
       "owl": 22,
       "rdfs": 95975,
-      "obo": 2
+      "obo": 4
     },
     "namespace_entity_count": {
       "prefix_unknown": 95847,
@@ -105,7 +105,7 @@
       "oboInOwl": 3,
       "rdf": 1,
       "rdfs": 2,
-      "obo": 1
+      "obo": 2
     },
     "namespace_entity_count_incl": {
       "prefix_unknown": 95847,
@@ -113,7 +113,7 @@
       "oboInOwl": 3,
       "rdf": 1,
       "rdfs": 2,
-      "obo": 1
+      "obo": 2
     },
     "owl2dl_profile_violation": {}
   }

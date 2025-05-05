@@ -24,7 +24,8 @@ todo's (minor)
     related to qc#1: was there a reason why _direct cases done using source IDs and _indirect Mondo IDs? I think maybe
  not. I could (a) standardize all to Mondo IDs, or (b) do the OO, then it'll always have both sets of IDs in objs.
  4. case 5: in_mondo_only -> in_direct_mondo_only. rename the param, output name, etc
- 5. #remove-temp-defaults remove EX_DEFAULTS, CLI defaults, and run_defaults() when done with development
+ 5. #remove-temp-defaults remove EX_DEFAULTS, CLI defaults, and run_defaults(). This could be done as an external script
+   that Joe uses personally but does not commit. Note: This is very useful for debugging and development updates.
  6. mondo-ingest-db -> components?: More performant at query time. But would need to make more .db files. So actually
  might be overall less performant.
  7. qc#1: Depending on which is passed into _convert_edge_namespace(), Mondo IDs or source IDs, I'm concerned
@@ -33,6 +34,7 @@ todo's (minor)
  dropped in a bad way. This probably isn't the case, since if there are no mappings, we actually don't want rows
  with missing sub/obj mappings to appear in the output and are filtering such rows from the df later anyway, but
  I'm still concerned because I feel like I haven't fully thought/walked through this after refactors. - Joe
+ 8. OAK now has .subclass_axioms() method. Can/should we use?
 """
 import logging
 import os
@@ -61,6 +63,9 @@ from src.scripts.sync_subclassof_collate_self_parentage import collate_self_pare
 from src.scripts.sync_subclassof_config import EX_DEFAULTS, IN_MONDO_ONLY_FILE_STEM, METADATA_DIR, REPORTS_DIR, \
     ROBOT_SUBHEADER, TMP_DIR, SELF_PARENTAGE_DEFAULT_FILE_STEM
 from src.scripts.utils import CACHE_DIR, MONDO_PREFIX_MAP, PREFIX_MAP, get_owned_prefix_map
+
+
+COMMON_SORT_COLS = ['subject_mondo_id', 'object_mondo_id', 'subject_source_id', 'object_source_id']
 
 
 def _edges_with_metadata_from_plain_edges(edges: Set[RELATIONSHIP], ns_data_map: Dict[CURIE, Dict]) -> List[Dict]:
@@ -114,22 +119,27 @@ def _get_mondo_data_map(
     return mondo_data_map
 
 
+def _confirmed_df(rows: List[Dict], outpath: Union[str, Path], save=True):
+    """Create -confirmed cases (exist in both Mondo and source) dataframe"""
+    subheader = deepcopy(ROBOT_SUBHEADER)
+    subheader[0]['object_mondo_id'] = 'SC %'
+    df = pd.DataFrame(rows)
+    if len(df) == 0:
+        df = pd.DataFrame(columns=list(subheader[0].keys()))
+    df = df.sort_values(COMMON_SORT_COLS)
+    df = pd.concat([pd.DataFrame(subheader), df])
+    if save:
+        df.to_csv(outpath, sep='\t', index=False)
+    return df
+
+
 def _get_direct_scr_rels(
-    curies: List[CURIE], db: SqlImplementation, prefix_map: PREFIX_MAP = None, verbose=True
+    curies: List[CURIE], db: SqlImplementation, prefix_map: PREFIX_MAP = None
 ) -> Set[RELATIONSHIP]:
-    t0 = datetime.now()
-    ontology_name = list(prefix_map.keys())[0] if prefix_map else ''
-
-    rels_raw: List[RELATIONSHIP] = [x for x in db.relationships(
-        subjects=curies, predicates=['rdfs:subClassOf'])]
+    rels_raw: List[RELATIONSHIP] = [x for x in db.relationships(subjects=curies, predicates=['rdfs:subClassOf'])]
     # - filter out non-source parents
-    rels = set([x for x in rels_raw if any([x[2].startswith(y) for y in prefix_map])]) \
+    return set([x for x in rels_raw if any([x[2].startswith(y) for y in prefix_map])]) \
         if prefix_map else set(rels_raw)
-
-    t1 = datetime.now()
-    if verbose:
-        logging.info(f'  - from "{ontology_name}" in {(t1 - t0).seconds} seconds')
-    return rels
 
 
 def _ancestors(
@@ -170,6 +180,7 @@ def _ancestors(
         # Cache: write
         if save_cache:
             with open(cache_path, 'wb') as f:
+                # noinspection PyTypeChecker false_positive__SupportsWrite_bytes_got_BinaryIO_instead
                 pickle.dump(ancestors, f, protocol=pickle.HIGHEST_PROTOCOL)
     if verbose:
         t1 = datetime.now()
@@ -178,18 +189,23 @@ def _ancestors(
 
 
 def _convert_edge_namespace(
-    rels: Iterable[RELATIONSHIP], ns_map: Dict[CURIE, Union[CURIE, List[CURIE]]], return_failed_lookups=True
+    rels: Iterable[RELATIONSHIP], ns_map: Dict[CURIE, Union[CURIE, List[CURIE]]]
 ) -> Tuple[Set[RELATIONSHIP], Set[RELATIONSHIP]]:
     """Convert edges of from 1 namespace to a mapped namespace.
 
-    failed_lookups: Each entry in this set can be 1 of 2 cases: (a) the edge exists in one ontology, represented by the
-    namespace of IDs in rels & the keys in ns_map, but it does not exist in the mapped otology, represented by the
-    namespace of IDs in rels2 & the values in ns_map; it may simply be that there are some terms in the 1st ontology
-    that do not exist in the 2nd ontology, or (b) the edges should be in both ontologies, but if the inputs
-    to this pipeline are out of sync, the mapped terms did not appear in ns_map.
+    :returns: Tuple:
+      - rels2: Set of relationships in the mapped namespace. E.g. if there is some rel in rels where subj is MONDO:123
+        and obj is MONDO:456, and these are mapped to DOID:123 and DOID:456, then the rel will be conerted to
+        (DOID:123, pred, DOID:456).
+      source is DO, then the prefixes
+      - failed_lookups: Each entry in this set can be 1 of 2 cases: (a) the edge exists in one ontology, represented by
+        the namespace of IDs in rels & the keys in ns_map, but it does not exist in the mapped otology, represented by
+        the namespace of IDs in rels2 & the values in ns_map; it may simply be that there are some terms in the 1st
+        ontology that do not exist in the 2nd ontology, or (b) the edges should be in both ontologies, but if the inputs
+        to this pipeline are out of sync, the mapped terms did not appear in ns_map.
     """
     rels2: Set[RELATIONSHIP] = set()
-    failed_lookups = set()
+    failed_lookups: Set[RELATIONSHIP] = set()
     for x in rels:
         try:
             # For Source -> Mondo, should only be 1 sub and 1 obj, subs and objs should be strings
@@ -203,19 +219,23 @@ def _convert_edge_namespace(
         except KeyError:
             failed_lookups.add(x)
 
-    return rels2, failed_lookups if return_failed_lookups else rels2
+    return rels2, failed_lookups
 
 
 def sync_subclassof(
     outpath_added: str = EX_DEFAULTS['outpath_added'], outpath_confirmed: str = EX_DEFAULTS['outpath_confirmed'],
+    outpath_confirmed_direct_source_indirect_mondo: str = EX_DEFAULTS['outpath_confirmed_direct_source_indirect_mondo'],
     outpath_added_obsolete: str = EX_DEFAULTS['outpath_added_obsolete'],
     mondo_db_path: str = EX_DEFAULTS['mondo_db_path'], mondo_ingest_db_path: str = EX_DEFAULTS['mondo_ingest_db_path'],
     mondo_mappings_path: str = EX_DEFAULTS['mondo_mappings_path'],
     onto_config_path: str = EX_DEFAULTS['onto_config_path'],
     outpath_direct_in_mondo_only: str = EX_DEFAULTS['outpath_direct_in_mondo_only'],
-    outpath_self_parentage: str = EX_DEFAULTS['outpath_self_parentage'], use_cache=False, verbose=True
+    outpath_self_parentage: str = EX_DEFAULTS['outpath_self_parentage'],
+    mondo_excluded_subclasses_path: str = EX_DEFAULTS['mondo_excluded_subclasses_path'],
+    mondo_susceptibility_terms_path: str = EX_DEFAULTS['mondo_susceptibility_terms_path'],
+    use_cache=False, verbose=True
 ):
-    """Run"""
+    """Run subclass sync"""
     source_name = os.path.basename(outpath_added).split('.')[0]
     owned_prefix_map: PREFIX_MAP = get_owned_prefix_map(onto_config_path)
     mondo_db: SqlImplementation = get_adapter(mondo_db_path)
@@ -223,7 +243,7 @@ def sync_subclassof(
     ontology_name = list(owned_prefix_map.keys())[0]
     logging.info(f'Running: Synchronization pipeline - subClassOf - {ontology_name}')
 
-    # Source terms and mappings ----------------------------------------------------------------------------------------
+    # Source & Mondo terms and mappings --------------------------------------------------------------------------------
     # - ss_df: Dataframe for mondo.sssom.tsv
     # - mondo_source_map: Map of Mondo IDs to 1+ source IDs each
     # - source_mondo_map: Map of source IDs to 1 Mondo ID each
@@ -232,6 +252,7 @@ def sync_subclassof(
     # - mondo_data_map: keys=mondo ids, values=(mondo_id, source_id (if any), mondo_label)
     # - mondo_ids: List of set of Mondo IDs from mondo.sssom.tsv
     # - source_ids: List of set of source IDs from mondo.sssom.tsv
+    # - mondo_excluded_subclasses: List of excluded subclass axioms.
     logging.info('- Collecting all source terms and mondo mappings')
     # - Mondo labels
     mondo_ids_all: List[CURIE] = [
@@ -284,10 +305,8 @@ def sync_subclassof(
     logging.info('- Collecting direct subclass relations')
     rels_direct_source_source: Set[RELATIONSHIP] = _get_direct_scr_rels(  # from source
         source_ids, ingest_db, owned_prefix_map)
-    
     if not rels_direct_source_source or len(rels_direct_source_source) < 1:
         raise ValueError("Source has no relationships. Something went wrong")
-    
     rels_direct_mondo_mondo: Set[RELATIONSHIP] = _get_direct_scr_rels(  # from Mondo
         mondo_ids, mondo_db, MONDO_PREFIX_MAP)
     rels_direct_mondo_source, rels_direct_mondo_mondo_and_1or2_ids_not_in_source = _convert_edge_namespace(
@@ -295,13 +314,13 @@ def sync_subclassof(
 
     # Get subclass edges: indirect -------------------------------------------------------------------------------------
     # - rels_indirect_mondo_mondo: Indirect relationships (Mondo IDs) from Mondo
-    # - rels_indirect_source_source: Indirect relationships (source IDs) from source
-    # - rels_indirect_source_mondo:  Relationships from rels_indirect_source_source that appear in Mondo
+    # - rels_indirect_mondo_source:  Relationships from rels_indirect_mondo_mondo that appear in source
     # - rels_indirect_source_mondo_and_1or2_ids_not_in_mondo: from rels_indirect_source_source not in Mondo (unused)
     logging.info('- Collecting indirect subclass relations')
     rels_indirect_mondo_mondo = ancestors_mondo_mondo.difference(rels_direct_mondo_mondo)
-    # todo: remove unused, commented out vars?
-    # rels_indirect_mondo_source = ''  # not needed?
+    rels_indirect_mondo_source, rels_indirect_mondo_mondo_and_1or2_ids_not_in_source = _convert_edge_namespace(
+        rels_indirect_mondo_mondo, mondo_source_map)
+    # todo: remove unused, commented out vars? or leave for future cases?
     # rels_indirect_source_source = ancestors_source_source.difference(rels_direct_source_source)
     # rels_indirect_source_mondo, rels_indirect_source_mondo_and_1or2_ids_not_in_mondo = _convert_edge_namespace(
     #     rels_indirect_source_source, source_mondo_map)
@@ -318,18 +337,22 @@ def sync_subclassof(
             f'\n 2. Mondo direct SCR relationships: {len(rels_direct_mondo_mondo)}'
             f'\n 3. Mondo indirect SCR relationships: {len(rels_indirect_mondo_mondo)}'
             f'\n Intersection (Top 5): {[rel for rel in list(missing_ancestor_rels)[:5]]}'
-            f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}'
+            f'\n "1" should be same as "2" + "3", but instead it has n less rels: {len(missing_ancestor_rels)}\n'
+            'What to do: Try running a full build, rather than just this single script or a mini build. This seems to '
+            'happen when dependencies are out of sync. When running a fresh build, this error never seems to happen. '
+            'But it consistently happens when debugging. And sometimes it happens during "mini builds" (e.g. `sh '
+            'run.sh make sync-subclass -B`).\n'
             '\nSee also: https://github.com/monarch-initiative/mondo-ingest/issues/525'
-            '\n\nExiting.')
+            f'\n\nExiting subclass sync for {ontology_name}.')
 
     # Determine hierarchy differences -----------------------------------------------------------------------------------
-    # todo: remove unused, commented out vars? (they were created in anticipation of possible cases)
     logging.info('Calculating various differences in hierarchies between source and Mondo')
     # Find which edges appear in both Mondo and source, or only in one or the other
     # - direct <--> direct
     #   - Direct SCRs exist in both Mondo and source
-    in_both_direct_source_edges: Set[RELATIONSHIP] = rels_direct_source_source.intersection(rels_direct_mondo_source)
-    in_both_direct: List[Dict] = _edges_with_metadata_from_plain_edges(in_both_direct_source_edges, source_data_map)
+    in_both_direct__source_edges: Set[RELATIONSHIP] = rels_direct_source_source.intersection(rels_direct_mondo_source)
+    in_both_direct: List[Dict] = _edges_with_metadata_from_plain_edges(in_both_direct__source_edges, source_data_map)
+    # todo: remove unused, commented out vars? or leave for future cases?
     #   - Direct SCRs in Mondo which are not direct in source (could be indirect or non-existent)
     # in_mondo_only_direct_source_edges: Set[RELATIONSHIP] = (
     #     rels_direct_mondo_source.difference(rels_direct_source_source))
@@ -341,7 +364,21 @@ def sync_subclassof(
     # in_source_only_direct: List[Dict] = _edges_with_metadata_from_plain_edges(
     #     in_source_only_direct_source_edges, source_data_map)
 
+    # - direct --> indirect
+    #   - SCRs that are direct in the source but indirect in Mondo
+    in_source_direct_mondo_indirect__source_edges: Set[RELATIONSHIP] = \
+        rels_direct_source_source.intersection(rels_indirect_mondo_source)
+    in_source_direct_mondo_indirect: List[Dict] = _edges_with_metadata_from_plain_edges(
+        in_source_direct_mondo_indirect__source_edges, source_data_map)
+    # - filter edges with: "disease" or "human disease"
+    filter_terms = ('MONDO:0000001', 'MONDO:0700096')
+    in_source_direct_mondo_indirect = [
+        x for x in in_source_direct_mondo_indirect
+        if x['subject_mondo_id'] not in filter_terms and x['object_mondo_id'] not in filter_terms
+    ]
+
     # - indirect <--> indirect
+    # todo: currently unimplemented
     #   - Indirect SCRs that exist in both Mondo and source
     # in_both_indirect_mondo_edges: Set[RELATIONSHIP] = (
     #     rels_indirect_source_mondo.intersection(rels_indirect_mondo_mondo))
@@ -357,13 +394,13 @@ def sync_subclassof(
     # in_mondo_only_indirect: List[Dict] = _edges_with_metadata_from_plain_edges(
     #     in_mondo_only_indirect_mondo_edges, mondo_data_map)
 
-    # - direct <--> ancestor
+    # - direct <--> absent
     #   - Direct SCRs in source that don't exist at all in Mondo
-    in_source_direct_not_in_mondo_source_edges = rels_direct_source_source.difference(ancestors_mondo_source)
+    in_source_direct_not_in_mondo__source_edges = rels_direct_source_source.difference(ancestors_mondo_source)
     in_source_direct_not_in_mondo: List[Dict] = _edges_with_metadata_from_plain_edges(
-        in_source_direct_not_in_mondo_source_edges, source_data_map)
+        in_source_direct_not_in_mondo__source_edges, source_data_map)
     #   - Direct SCRs in Mondo that don't exist at all in source
-    in_mondo_direct_not_in_source_mondo_edges: Set[RELATIONSHIP] = (
+    in_mondo_direct_not_in_source__mondo_edges: Set[RELATIONSHIP] = (
         rels_direct_mondo_mondo.difference(ancestors_source_mondo))
     # in_mondo_direct_not_in_source: List[Dict] = _edges_with_metadata_from_plain_edges(
     #     in_mondo_direct_not_in_source_mondo_edges, mondo_data_map)
@@ -372,25 +409,27 @@ def sync_subclassof(
     # Google doc about cases:
     # https://docs.google.com/document/d/1H8fJKiKD-L1tfS-2LJu8t0_2YXJ1PQJ_7Zkoj7Vf7xA/edit#heading=h.9hixairfgxa1
     logging.info('Creating outputs for synchronization cases')
-    common_sort_cols = ['subject_mondo_id', 'object_mondo_id', 'subject_source_id', 'object_source_id']
 
-    # Case 1: SCR direct in source and Mondo
-    subheader = deepcopy(ROBOT_SUBHEADER)
-    subheader[0]['object_mondo_id'] = 'SC %'
-    df1 = pd.DataFrame(in_both_direct)
-    if len(df1) == 0:
-        df1 = pd.DataFrame(columns=list(subheader[0].keys()))
-    df1 = df1.sort_values(common_sort_cols)
-    df1 = pd.concat([pd.DataFrame(subheader), df1])
-    df1.to_csv(outpath_confirmed, sep='\t', index=False)
+    # Case 1: Confirmed: SCR direct in source and Mondo
+    _confirmed_df(in_both_direct, outpath_confirmed)
 
-    # Case 2: SCR is direct in source, but indirect Mondo
-    pass  # no output for this case
+    # Case 2: Confirmed: SCR is direct in source, but indirect Mondo
+    _confirmed_df(in_source_direct_mondo_indirect, outpath_confirmed_direct_source_indirect_mondo)
 
-    # Case 3: SCR is direct in the source, but not at all in Mondo
+    # Case 3: Added: SCR is direct in the source, but not at all in Mondo
     subheader = deepcopy(ROBOT_SUBHEADER)
     subheader[0]['object_mondo_id'] = 'AI obo:mondo#excluded_subClassOf'
     df3 = pd.DataFrame(in_source_direct_not_in_mondo)
+    # - filter susceptible terms
+    sus_terms = set(pd.read_csv(mondo_susceptibility_terms_path, sep='\t')['?term'])
+    df3 = df3[
+        df3.apply(lambda row: all([row[x] not in sus_terms for x in ['subject_mondo_id', 'object_mondo_id']]), axis=1)]
+    # - filter excluded subclass axioms
+    mondo_excluded_subclasses_df = pd.read_csv(mondo_excluded_subclasses_path, sep='\t')
+    exclusions: Set[Tuple[CURIE, CURIE]] = set(
+        zip(mondo_excluded_subclasses_df['?child'], mondo_excluded_subclasses_df['?parent']))
+    df3 = df3[
+        df3.apply(lambda row: (row['subject_mondo_id'], row['object_mondo_id']) not in exclusions, axis=1)]
     if len(df3) == 0:
         df3 = pd.DataFrame(columns=list(subheader[0].keys()))
     # - warning cases
@@ -402,14 +441,14 @@ def sync_subclassof(
                         f'higher number than expected.')
     # - format
     #   only object_mondo_id should ever be missing, but checking both to be safe
-    df3 = df3[~df3['subject_mondo_id'].isna() & ~df3['object_mondo_id'].isna()].sort_values(common_sort_cols)
+    df3 = df3[~df3['subject_mondo_id'].isna() & ~df3['object_mondo_id'].isna()].sort_values(COMMON_SORT_COLS)
     # - obsolete cases
     obsoletes = (df3['subject_mondo_label'].str.startswith('obsolete') |
                  df3['object_mondo_label'].str.startswith('obsolete'))
     # todo: sort_values: from here and below for this section, should remove; should not be necessary
-    df3_obs = df3[obsoletes].sort_values(common_sort_cols)
+    df3_obs = df3[obsoletes].sort_values(COMMON_SORT_COLS)
     # - filter: non-obsolete cases
-    df3 = df3[~obsoletes].sort_values(common_sort_cols)
+    df3 = df3[~obsoletes].sort_values(COMMON_SORT_COLS)
     # - self-parentage / proxy merges
     self_parentage_cases = df3['subject_mondo_id'] == df3['object_mondo_id']
     df3_self_parentage = df3[self_parentage_cases]
@@ -419,7 +458,7 @@ def sync_subclassof(
         logging.warning(sp_err)
         df3_self_parentage.to_csv(outpath_self_parentage, sep='\t', index=False)
     # - filter: non-self parentage cases
-    df3 = df3[~self_parentage_cases].sort_values(common_sort_cols)
+    df3 = df3[~self_parentage_cases].sort_values(COMMON_SORT_COLS)
     # - save
     df3_obs = pd.concat([pd.DataFrame(subheader), df3_obs])
     df3_obs.to_csv(outpath_added_obsolete, sep='\t', index=False)
@@ -427,11 +466,7 @@ def sync_subclassof(
     df3.to_csv(outpath_added, sep='\t', index=False)
 
     # Case 5: SCR is direct in Mondo, and not in the source at all
-    rels_mondo_raw_all: List[RELATIONSHIP] = [x for x in mondo_db.relationships(
-        subjects=list(set(ss_df['subject_id'])), predicates=['rdfs:subClassOf'])]
-    rels_mondo_mondo_all = set(  # filter non-source parents
-        [x for x in rels_mondo_raw_all if any([x[2].startswith(y) for y in MONDO_PREFIX_MAP.keys()])])
-    df5 = pd.DataFrame([{'subject_id': x[0], 'object_id': x[2]} for x in rels_mondo_mondo_all])
+    df5 = pd.DataFrame([{'subject_id': x[0], 'object_id': x[2]} for x in rels_direct_mondo_mondo])
     for pos in ['subject', 'object']:
         df5[f'{pos}_label'] = df5[f'{pos}_id'].apply(lambda _id: mondo_label_lookup.get(_id, None))
     src_field = f'in_{source_name}'
@@ -441,7 +476,7 @@ def sync_subclassof(
         'UNSUPPORTED-MISSING' if any(x not in mondo_source_map for x in [row['subject_id'], row['object_id']])
         # Supported / Unsupported: Whether edge has a direct or indirect SCR in source
         else 'UNSUPPORTED-SUBCLASS'
-        if (row['subject_id'], 'rdfs:subClassOf', row['object_id']) in in_mondo_direct_not_in_source_mondo_edges
+        if (row['subject_id'], 'rdfs:subClassOf', row['object_id']) in in_mondo_direct_not_in_source__mondo_edges
         else 'SUPPORTED',
         axis=1)
     df5 = df5.sort_values([src_field, 'subject_id', 'object_id'])
@@ -468,8 +503,13 @@ def cli():  # todo: #remove-temp-defaults
              'into Mondo, except for that these terms are obsolete in Mondo.')
     parser.add_argument(
         '-c', '--outpath-confirmed', required=False, default=EX_DEFAULTS['outpath_confirmed'],
-        help='Path to output robot template containing subclass relations for given ontology that exist in Mondo and '
-             'are confirmed to also exist in the source.')
+        help='Path to output robot template containing direct subclass relations for given ontology that exist in '
+             'Mondo and are confirmed to also exist in the source.')
+    parser.add_argument(
+        '-C', '--outpath-confirmed-direct-source-indirect-mondo', required=False,
+        default=EX_DEFAULTS['outpath_confirmed_direct_source_indirect_mondo'],
+        help='Path to output robot template containing subclass relations for given ontology that exist in Mondo as '
+             'indirect relations and are confirmed to also exist in the source as direct relations.')
     parser.add_argument(
         '-M', '--outpath-direct-in-mondo-only', required=False,
         default=EX_DEFAULTS['outpath_direct_in_mondo_only'],
@@ -493,6 +533,16 @@ def cli():  # todo: #remove-temp-defaults
         '-m', '--mondo-mappings-path', required=False, default=EX_DEFAULTS['mondo_mappings_path'],
         help='Path to file containing all known Mondo mappings, in SSSOM format.')
     parser.add_argument(
+        '-e', '--mondo-excluded-subclasses-path', required=False,
+        default=EX_DEFAULTS['mondo_excluded_subclasses_path'],
+        help='Path to TSV containing information about excluded subclass axioms, with cols ?parent and ?child, where '
+             'values are Mondo CURIEs.')
+    parser.add_argument(
+        '-s', '--mondo-susceptibility-terms-path', required=False,
+        default=EX_DEFAULTS['mondo_susceptibility_terms_path'],
+        help='Path to TSV containing information about susceptibility terms; that is, descendants of MONDO:0042489, '
+             'including that term itself. Only has 1 column: ?term (type=CURIE).')
+    parser.add_argument(
         '-u', '--use-cache', required=False, default=EX_DEFAULTS['use_cache'],
         help='Use cached outputs, if any present, for outputs from operations that fetch ancestors. Cache will always'
              ' be saved even if this flag is not present, but it will not be loaded from unless flag is present.')
@@ -508,12 +558,16 @@ def run_defaults(use_cache=True):  # todo: #remove-temp-defaults
         sync_subclassof(**{
             'outpath_added': str(REPORTS_DIR / f'{name}.subclass.added.robot.tsv'),
             'outpath_confirmed': str(REPORTS_DIR / f'{name}.subclass.confirmed.robot.tsv'),
+            'outpath_confirmed_direct_source_indirect_mondo': \
+                str(REPORTS_DIR / f'{name}.subclass.confirmed-direct-source-indirect-mondo.robot.tsv'),
             'onto_config_path': str(METADATA_DIR / f'{name}.yml'),
             'mondo_db_path': str(TMP_DIR / 'mondo.db'),
             'mondo_ingest_db_path': str(TMP_DIR / 'mondo-ingest.db'),
             'mondo_mappings_path': str(TMP_DIR / 'mondo.sssom.tsv'),
             'outpath_direct_in_mondo_only': str(REPORTS_DIR / f'{name}{IN_MONDO_ONLY_FILE_STEM}'),
             'outpath_self_parentage': str(TMP_DIR / f'{name}{SELF_PARENTAGE_DEFAULT_FILE_STEM}'),
+            'mondo_excluded_subclasses_path': str(TMP_DIR / 'mondo-excluded-subclasses.tsv'),
+            'mondo_susceptibility_terms_path': str(TMP_DIR / 'mondo-susceptibility-terms.tsv'),
             'use_cache': use_cache
         })
     collate_direct_in_mondo_only()
