@@ -767,8 +767,7 @@ $(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv:
 
 ###### MalaCards #########
 
-# Managed in Google Sheets:
-# https://docs.google.com/spreadsheets/d/1peJ6TnobK9qI61PnCwwyoNpYZdZLWfZ1eQD1q_f7HQM/edit?gid=0#gid=0
+# Managed by support@genecards.org
 
 $(TMPDIR)/malacards.tsv:
 	wget "https://genecardscustomers.blob.core.windows.net/mondo/Mondo_MalaCards_Current.tsv" -O $@
