@@ -1,6 +1,7 @@
 subject_id	predicate_id	object_id	subject_label	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID	>A oboInOwl:source	A oboInOwl:hasDbXref								
 MONDO:0008009	MONDO:equivalentTo	OMIMPS:158000	monilethrix	Monilethrix	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	monilethrix
+MONDO:0018911	MONDO:equivalentTo	OMIMPS:125850	maturity-onset diabetes of the young	Maturity-onset diabetes of the young	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	maturity-onset diabetes of the young
 MONDO:0000022	MONDO:equivalentTo	ICD10CM:N39.44	nocturnal enuresis	Nocturnal enuresis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nocturnal enuresis
 MONDO:0000190	MONDO:equivalentTo	ICD10CM:I49.01	ventricular fibrillation	Ventricular fibrillation	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ventricular fibrillation
 MONDO:0000397	MONDO:equivalentTo	ICD10CM:G80.4	ataxic cerebral palsy	Ataxic cerebral palsy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ataxic cerebral palsy
@@ -508,12 +509,15 @@ MONDO:0031376	MONDO:equivalentTo	DOID:0060991	congenital disorder of deglycosyla
 MONDO:0044314	MONDO:equivalentTo	DOID:0061113	retinitis pigmentosa 78	retinitis pigmentosa 78	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617433
 MONDO:0044320	MONDO:equivalentTo	DOID:0061108	retinitis pigmentosa 79	retinitis pigmentosa 79	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617460
 MONDO:0054708	MONDO:equivalentTo	DOID:0061111	retinitis pigmentosa 80	retinitis pigmentosa 80	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617781
+MONDO:0060760	MONDO:equivalentTo	DOID:0061129	intellectual developmental disorder with dysmorphic facies and behavioral abnormalities	intellectual developmental disorder with dysmorphic facies and behavioral abnormalities	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:618089
 MONDO:0100292	MONDO:equivalentTo	DOID:0061116	Carey-Fineman-Ziter syndrome 2	Carey-Fineman-Ziter syndrome 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619941
 MONDO:0100297	MONDO:equivalentTo	DOID:0060989	short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies 1	short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617877
 MONDO:0800437	MONDO:equivalentTo	DOID:0061115	Carey-Fineman-Ziter syndrome 1	Carey-Fineman-Ziter syndrome 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:254940
 MONDO:0800452	MONDO:equivalentTo	DOID:0061005	congenital amegakaryocytic thrombocytopenia 1	congenital amegakaryocytic thrombocytopenia 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:604498
+MONDO:0859217	MONDO:equivalentTo	DOID:0061126	Brunet-Wagner neurodevelopmental syndrome	Brunet-Wagner neurodevelopmental syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619690
 MONDO:0859224	MONDO:equivalentTo	DOID:0070600	intellectual disability and myopathy syndrome	intellectual disability and myopathy syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619719
 MONDO:0859308	MONDO:equivalentTo	DOID:0061112	retinitis pigmentosa 95	retinitis pigmentosa 95	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620102
+MONDO:0859367	MONDO:equivalentTo	DOID:0061104	retinitis pigmentosa 96	retinitis pigmentosa 96	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620228
 MONDO:0859573	MONDO:equivalentTo	DOID:0060993	bent bone dysplasia syndrome 2	bent bone dysplasia syndrome 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620076
 MONDO:0957314	MONDO:equivalentTo	DOID:0061110	retinitis pigmentosa 97	retinitis pigmentosa 97	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620422
 MONDO:0957535	MONDO:equivalentTo	DOID:0061079	immunodeficiency 112	immunodeficiency 112	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620449
@@ -532,6 +536,7 @@ MONDO:0975834	MONDO:equivalentTo	DOID:0061093	immunodeficiency 128	immunodeficie
 MONDO:0975840	MONDO:equivalentTo	DOID:0061109	retinitis pigmentosa 98	retinitis pigmentosa 98	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620996
 MONDO:0976126	MONDO:equivalentTo	DOID:0051030	neurodevelopmental disorder with microcephaly, absent speech, and hypotonia	neurodevelopmental disorder with microcephaly, absent speech, and hypotonia	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621060
 MONDO:0976228	MONDO:equivalentTo	DOID:0061097	immunodeficiency 132b	immunodeficiency 132B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621096
+MONDO:0976229	MONDO:equivalentTo	DOID:0061125	immunodeficiency 131	immunodeficiency 131	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621097
 MONDO:0976230	MONDO:equivalentTo	DOID:0051046	spondyloepimetaphyseal dysplasia, Li-Shao-Li type	spondyloepimetaphyseal dysplasia, Li-Shao-Li type	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621099
 MONDO:0976232	MONDO:equivalentTo	DOID:0061073	Perrault syndrome 7	Perrault syndrome 7	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621101
 MONDO:0000088	MONDO:equivalentTo	ICD10WHO:E30.1	precocious puberty	Precocious puberty	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	precocious puberty
