@@ -3359,6 +3359,7 @@ MONDO:0005215	vulvar carcinoma	MONDO:0004993	DOID:1294	DOID:305	carcinoma
 MONDO:0005220	collecting duct carcinoma	MONDO:0005086	DOID:4464	DOID:4450	renal cell carcinoma
 MONDO:0005221	renal pelvis urothelial carcinoma	MONDO:0005519	DOID:5974	DOID:4919	renal pelvis carcinoma
 MONDO:0005229	bacterial infectious disease with sepsis	MONDO:0005113	DOID:0040085	DOID:104	bacterial infectious disease
+MONDO:0005231	hepatitis C virus infection	MONDO:0006011	DOID:1883	DOID:1884	viral hepatitis
 MONDO:0005232	large cell carcinoma	MONDO:0004993	DOID:4552	DOID:305	carcinoma
 MONDO:0005233	non-small cell lung carcinoma	MONDO:0005138	DOID:3908	DOID:3905	lung carcinoma
 MONDO:0005235	smoldering plasma cell myeloma	MONDO:0009693	DOID:9551	DOID:9538	plasma cell myeloma
@@ -3399,6 +3400,7 @@ MONDO:0005321	Fuchs' endothelial dystrophy	MONDO:0000766	DOID:11555	DOID:0060443
 MONDO:0005333	hyperthyroxinemia	MONDO:0003240	DOID:2855	DOID:50	thyroid gland disorder
 MONDO:0005338	open-angle glaucoma	MONDO:0005041	DOID:1067	DOID:1686	glaucoma
 MONDO:0005342	IgA glomerulonephritis	MONDO:0002462	DOID:2986	DOID:2921	glomerulonephritis
+MONDO:0005344	hepatitis B virus infection	MONDO:0006011	DOID:2043	DOID:1884	viral hepatitis
 MONDO:0005349	otosclerosis	MONDO:0002467	DOID:12185	DOID:2952	inner ear disorder
 MONDO:0005350	abdominal aortic aneurysm	MONDO:0005160	DOID:7693	DOID:3627	aortic aneurysm
 MONDO:0005351	anorexia nervosa	MONDO:0005451	DOID:8689	DOID:8670	eating disorder
@@ -3581,6 +3583,9 @@ MONDO:0005778	haemonchiasis	MONDO:0005994	DOID:3332	DOID:1255	trichostrongyloidi
 MONDO:0005783	hemopericardium	MONDO:0001370	DOID:11482	DOID:118	pericardial effusion
 MONDO:0005784	hantavirus hemorrhagic fever with renal syndrome	MONDO:0005240	DOID:11266	DOID:557	kidney disorder
 MONDO:0005787	hepatic tuberculosis	MONDO:0005768	DOID:407	DOID:404	gastrointestinal tuberculosis
+MONDO:0005788	hepatitis E virus infection	MONDO:0006011	DOID:4411	DOID:1884	viral hepatitis
+MONDO:0005789	hepatitis D virus infection	MONDO:0006011	DOID:2047	DOID:1884	viral hepatitis
+MONDO:0005790	hepatitis A virus infection	MONDO:0006011	DOID:12549	DOID:1884	viral hepatitis
 MONDO:0005791	herpangina	MONDO:0005108	DOID:10883	DOID:934	viral infectious disease
 MONDO:0005802	hymenolepiasis	MONDO:0004664	DOID:10074	DOID:883	helminthiasis
 MONDO:0005805	hypodermyiasis	MONDO:0019147	DOID:12926	DOID:11080	myiasis
@@ -4856,6 +4861,7 @@ MONDO:0009820	osteoporosis-pseudoglioma syndrome	MONDO:0006025	DOID:0060849	DOID
 MONDO:0009823	primary hyperoxaluria type 1	MONDO:0002474	DOID:0111670	DOID:2977	primary hyperoxaluria
 MONDO:0009824	primary hyperoxaluria type 2	MONDO:0002474	DOID:0111671	DOID:2977	primary hyperoxaluria
 MONDO:0009833	Shwachman-Diamond syndrome	MONDO:0002254	DOID:0060479	DOID:225	syndromic disease
+MONDO:0009835	subacute sclerosing panencephalitis	MONDO:0006009	DOID:8970	DOID:646	viral encephalitis
 MONDO:0009837	choroid plexus papilloma	MONDO:0002363	DOID:2626	DOID:2615	papilloma
 MONDO:0009852	hereditary intrinsic factor deficiency	MONDO:0019220	DOID:0050734	DOID:0050731	inborn disorder of cobalamin metabolism and transport
 MONDO:0009856	Peters plus syndrome	MONDO:0002254	DOID:0080201	DOID:225	syndromic disease
@@ -4980,7 +4986,7 @@ MONDO:0010235	X-linked intellectual disability-psychosis-macroorchidism syndrome
 MONDO:0010236	intellectual disability, X-linked 14	MONDO:0019181	DOID:0112027	DOID:0050776	non-syndromic X-linked intellectual disability
 MONDO:0010238	hearing loss, X-linked 4	MONDO:0019586	DOID:0111735	DOID:0050566	X-linked nonsyndromic hearing loss
 MONDO:0010242	fetal akinesia syndrome, X-linked	MONDO:0008824	DOID:0081043	DOID:0111375	fetal akinesia deformation sequence
-MONDO:0010246	developmental and epileptic encephalopathy, 9	MONDO:0100062	DOID:0060848	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0010246	developmental and epileptic encephalopathy, 9	MONDO:0100062	DOID:0060848	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0010250	intellectual disability, X-linked 49	MONDO:0020119	DOID:0112060	DOID:0060309	X-linked syndromic intellectual disability
 MONDO:0010251	intellectual disability, X-linked 50	MONDO:0019181	DOID:0112029	DOID:0050776	non-syndromic X-linked intellectual disability
 MONDO:0010256	intellectual disability, X-linked 21	MONDO:0019181	DOID:0112022	DOID:0050776	non-syndromic X-linked intellectual disability
@@ -5033,14 +5039,14 @@ MONDO:0010365	myopathy, congenital, with fiber-type disproportion, X-linked	MOND
 MONDO:0010369	nystagmus 5, congenital, X-linked	MONDO:0005712	DOID:0111796	DOID:9649	congenital nystagmus
 MONDO:0010370	Cornelia de Lange syndrome 2	MONDO:0016033	DOID:0080506	DOID:11725	Cornelia de Lange syndrome
 MONDO:0010374	retinitis pigmentosa 34	MONDO:0019200	DOID:0110417	DOID:10584	retinitis pigmentosa
-MONDO:0010375	developmental and epileptic encephalopathy, 8	MONDO:0100062	DOID:0080215	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0010375	developmental and epileptic encephalopathy, 8	MONDO:0100062	DOID:0080215	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0010379	Brunner syndrome	MONDO:0004736	DOID:0060693	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0010379	Brunner syndrome	MONDO:0020605	DOID:0060693	DOID:0080012	X-linked recessive disease
 MONDO:0010382	fragile X-associated tremor/ataxia syndrome	MONDO:0016612	DOID:0050879	DOID:0050953	X-linked cerebellar ataxia
 MONDO:0010383	fragile X syndrome	MONDO:0002254	DOID:14261	DOID:225	syndromic disease
 MONDO:0010385	X-linked lymphoproliferative disease due to XIAP deficiency	MONDO:0020605	DOID:0060706	DOID:0080012	X-linked recessive disease
 MONDO:0010393	intellectual disability, X-linked 93	MONDO:0019181	DOID:0112045	DOID:0050776	non-syndromic X-linked intellectual disability
-MONDO:0010396	developmental and epileptic encephalopathy, 2	MONDO:0100062	DOID:0080467	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0010396	developmental and epileptic encephalopathy, 2	MONDO:0100062	DOID:0080467	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0010398	syndromic X-linked intellectual disability 14	MONDO:0020119	DOID:0060821	DOID:0060309	X-linked syndromic intellectual disability
 MONDO:0010402	syndromic X-linked intellectual disability 94	MONDO:0020119	DOID:0060823	DOID:0060309	X-linked syndromic intellectual disability
 MONDO:0010404	X-linked non progressive cerebellar ataxia	MONDO:0016612	DOID:0111833	DOID:0111828	X-linked cerebellar ataxia
@@ -5072,7 +5078,7 @@ MONDO:0010462	syndromic X-linked intellectual disability Chudley-Schwartz type	M
 MONDO:0010466	multiple congenital anomalies-hypotonia-seizures syndrome 2	MONDO:0100247	DOID:0080139	DOID:0080503	multiple congenital anomalies-hypotonia-seizures syndrome
 MONDO:0010468	aneurysm, intracranial berry, 5	MONDO:0016483	DOID:0080968	DOID:0060228	intracranial berry aneurysm
 MONDO:0010471	Cornelia de Lange syndrome 5	MONDO:0016033	DOID:0080509	DOID:11725	Cornelia de Lange syndrome
-MONDO:0010472	developmental and epileptic encephalopathy, 36	MONDO:0100062	DOID:0080470	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0010472	developmental and epileptic encephalopathy, 36	MONDO:0100062	DOID:0080470	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0010473	X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome	MONDO:0020119	DOID:0060828	DOID:0060309	X-linked syndromic intellectual disability
 MONDO:0010474	linear skin defects with multiple congenital anomalies 2	MONDO:0010672	DOID:0111877	DOID:0111875	linear skin defects with multiple congenital anomalies
 MONDO:0010475	X-linked central congenital hypothyroidism with late-onset testicular enlargement	MONDO:0002254	DOID:0111140	DOID:225	syndromic disease
@@ -5140,7 +5146,7 @@ MONDO:0010619	X-linked dominant hypophosphatemic rickets	MONDO:0020604	DOID:0050
 MONDO:0010622	recessive X-linked ichthyosis	MONDO:0020605	DOID:1700	DOID:0080012	X-linked recessive disease
 MONDO:0010626	hyper-IgM syndrome type 1	MONDO:0003947	DOID:6620	DOID:0080544	hyper-IgM syndrome
 MONDO:0010627	X-linked lymphoproliferative syndrome	MONDO:0016537	DOID:0060705	DOID:0060704	lymphoproliferative syndrome
-MONDO:0010632	developmental and epileptic encephalopathy, 1	MONDO:0100062	DOID:0080468	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0010632	developmental and epileptic encephalopathy, 1	MONDO:0100062	DOID:0080468	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0010637	keratosis follicularis spinulosa decalvans, X-linked	MONDO:0000136	DOID:0080754	DOID:0080753	keratosis follicularis spinulosa decalvans
 MONDO:0010645	oculocerebrorenal syndrome	MONDO:0002254	DOID:1056	DOID:225	syndromic disease
 MONDO:0010647	spermatogenic failure, X-linked, 2	MONDO:0004983	DOID:0070185	DOID:0111910	spermatogenic failure
@@ -5349,7 +5355,7 @@ MONDO:0011360	autosomal recessive nonsyndromic hearing loss 14	MONDO:0019588	DOI
 MONDO:0011364	autosomal recessive nonsyndromic hearing loss 16	MONDO:0019588	DOID:0110471	DOID:0050565	hearing loss, autosomal recessive
 MONDO:0011365	blepharophimosis - intellectual disability syndrome, SBBYS type	MONDO:0000734	DOID:0060290	DOID:0060289	Ohdo syndrome and variants
 MONDO:0011381	dominant beta-thalassemia	MONDO:0019402	DOID:0080770	DOID:12241	beta thalassemia
-MONDO:0011382	sickle cell anemia	MONDO:0006025	DOID:10923	DOID:0050737	autosomal recessive disease
+MONDO:0011382	sickle cell disease	MONDO:0006025	DOID:10923	DOID:0050737	autosomal recessive disease
 MONDO:0011383	autoimmune lymphoproliferative syndrome type 2A	MONDO:0017979	DOID:0110115	DOID:6688	autoimmune lymphoproliferative syndrome
 MONDO:0011389	autosomal dominant nonsyndromic hearing loss 16	MONDO:0019587	DOID:0110547	DOID:0050564	autosomal dominant nonsyndromic hearing loss
 MONDO:0011391	megalencephalic leukoencephalopathy with subcortical cysts	MONDO:0019046	DOID:0080315	DOID:10579	leukodystrophy
@@ -5644,7 +5650,7 @@ MONDO:0012224	febrile seizures, familial, 6	MONDO:0000032	DOID:0111309	DOID:0111
 MONDO:0012226	febrile seizures, familial, 5	MONDO:0000032	DOID:0111306	DOID:0111297	febrile seizures, familial
 MONDO:0012231	Charcot-Marie-Tooth disease type 2A2	MONDO:0018993	DOID:0110155	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0012235	autosomal recessive spinocerebellar ataxia 7	MONDO:0015244	DOID:0080059	DOID:0050950	autosomal recessive cerebellar ataxia
-MONDO:0012245	developmental and epileptic encephalopathy, 3	MONDO:0100062	DOID:0080440	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0012245	developmental and epileptic encephalopathy, 3	MONDO:0100062	DOID:0080440	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0012248	autosomal recessive limb-girdle muscular dystrophy type 2K	MONDO:0015152	DOID:0110297	DOID:0110274	autosomal recessive limb-girdle muscular dystrophy
 MONDO:0012250	Charcot-Marie-Tooth disease type 4H	MONDO:0018995	DOID:0110192	DOID:0050541	Charcot-Marie-Tooth disease type 4
 MONDO:0012251	MEDNIK syndrome	MONDO:0002254	DOID:0060483	DOID:225	syndromic disease
@@ -5830,7 +5836,7 @@ MONDO:0012805	childhood onset GLUT1 deficiency syndrome 2	MONDO:0000188	DOID:009
 MONDO:0012806	ectodermal dysplasia and immunodeficiency 2	MONDO:0010293	DOID:0081079	DOID:0081077	ectodermal dysplasia and immune deficiency
 MONDO:0012810	aneurysm, intracranial berry, 7	MONDO:0016483	DOID:0080970	DOID:0060228	intracranial berry aneurysm
 MONDO:0012811	aneurysm, intracranial berry, 8	MONDO:0016483	DOID:0080971	DOID:0060228	intracranial berry aneurysm
-MONDO:0012812	developmental and epileptic encephalopathy, 4	MONDO:0100062	DOID:0080436	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0012812	developmental and epileptic encephalopathy, 4	MONDO:0100062	DOID:0080436	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0012813	retinitis pigmentosa 29	MONDO:0019200	DOID:0110378	DOID:10584	retinitis pigmentosa
 MONDO:0012817	Ewing sarcoma	MONDO:0005089	DOID:3369	DOID:1115	sarcoma
 MONDO:0012818	maturity-onset diabetes of the young type 9	MONDO:0018911	DOID:0111107	DOID:0050524	maturity-onset diabetes of the young
@@ -5983,7 +5989,7 @@ MONDO:0013242	maturity-onset diabetes of the young type 11	MONDO:0018911	DOID:01
 MONDO:0013248	Fanconi anemia complementation group O	MONDO:0019391	DOID:0111096	DOID:13636	Fanconi anemia
 MONDO:0013249	autosomal recessive nonsyndromic hearing loss 84A	MONDO:0019588	DOID:0110529	DOID:0050565	hearing loss, autosomal recessive
 MONDO:0013250	autosomal recessive nonsyndromic hearing loss 85	MONDO:0019588	DOID:0110531	DOID:0050565	hearing loss, autosomal recessive
-MONDO:0013254	microcephaly, seizures, and developmental delay	MONDO:0100062	DOID:0080457	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0013254	microcephaly, seizures, and developmental delay	MONDO:0100062	DOID:0080457	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0013255	arthrogryposis, renal dysfunction, and cholestasis 2	MONDO:0017123	DOID:0111354	DOID:0050763	arthrogryposis-renal dysfunction-cholestasis syndrome
 MONDO:0013263	retinitis pigmentosa 54	MONDO:0019200	DOID:0110364	DOID:10584	retinitis pigmentosa
 MONDO:0013266	intellectual disability, autosomal dominant 20	MONDO:0015802	DOID:0070050	DOID:0060307	autosomal dominant non-syndromic intellectual disability
@@ -5991,7 +5997,7 @@ MONDO:0013268	frontonasal dysplasia with alopecia and genital anomaly	MONDO:0016
 MONDO:0013269	autosomal recessive nonsyndromic hearing loss 91	MONDO:0019588	DOID:0110536	DOID:0050565	hearing loss, autosomal recessive
 MONDO:0013271	frontonasal dysplasia - severe microphthalmia - severe facial clefting syndrome	MONDO:0016643	DOID:0081047	DOID:0081044	frontonasal dysplasia
 MONDO:0013274	retinitis pigmentosa 51	MONDO:0019200	DOID:0110398	DOID:10584	retinitis pigmentosa
-MONDO:0013277	developmental and epileptic encephalopathy, 5	MONDO:0100062	DOID:0080438	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0013277	developmental and epileptic encephalopathy, 5	MONDO:0100062	DOID:0080438	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0013278	lymphatic malformation 3	MONDO:0019313	DOID:0070208	DOID:0050580	lymphatic malformation
 MONDO:0013281	COG4-congenital disorder of glycosylation	MONDO:0005501	DOID:0070262	DOID:0050571	congenital disorder of glycosylation type II
 MONDO:0013282	alpha 1-antitrypsin deficiency	MONDO:0002273	DOID:13372	DOID:2345	plasma protein metabolism disease
@@ -6035,8 +6041,8 @@ MONDO:0013380	LEOPARD syndrome 3	MONDO:0007893	DOID:0080550	DOID:14291	Noonan sy
 MONDO:0013381	neuropathy, hereditary sensory, type 1D	MONDO:0018213	DOID:0070156	DOID:0070162	hereditary sensory and autonomic neuropathy type 1
 MONDO:0013385	Treacher Collins syndrome 2	MONDO:0002457	DOID:0080790	DOID:2908	Treacher-Collins syndrome
 MONDO:0013386	autosomal recessive nonsyndromic hearing loss 74	MONDO:0019588	DOID:0110523	DOID:0050565	hearing loss, autosomal recessive
-MONDO:0013387	developmental and epileptic encephalopathy, 7	MONDO:0100062	DOID:0080462	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0013388	developmental and epileptic encephalopathy, 11	MONDO:0100062	DOID:0080421	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0013387	developmental and epileptic encephalopathy, 7	MONDO:0100062	DOID:0080462	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0013388	developmental and epileptic encephalopathy, 11	MONDO:0100062	DOID:0080421	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0013390	autosomal recessive limb-girdle muscular dystrophy type 2Q	MONDO:0015152	DOID:0110285	DOID:0110274	autosomal recessive limb-girdle muscular dystrophy
 MONDO:0013392	autosomal recessive spinocerebellar ataxia 10	MONDO:0015244	DOID:0050999	DOID:0050950	autosomal recessive cerebellar ataxia
 MONDO:0013395	retinitis pigmentosa 4	MONDO:0019200	DOID:0110372	DOID:10584	retinitis pigmentosa
@@ -6289,14 +6295,14 @@ MONDO:0013984	autosomal recessive nonsyndromic hearing loss 84B	MONDO:0019588	DO
 MONDO:0013985	autosomal recessive nonsyndromic hearing loss 18B	MONDO:0019588	DOID:0110474	DOID:0050565	hearing loss, autosomal recessive
 MONDO:0013986	combined oxidative phosphorylation defect type 14	MONDO:0000732	DOID:0111477	DOID:0060286	combined oxidative phosphorylation deficiency
 MONDO:0013987	combined oxidative phosphorylation defect type 15	MONDO:0000732	DOID:0111491	DOID:0060286	combined oxidative phosphorylation deficiency
-MONDO:0013989	developmental and epileptic encephalopathy, 14	MONDO:0100062	DOID:0080439	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0013989	developmental and epileptic encephalopathy, 14	MONDO:0100062	DOID:0080439	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0013990	pontocerebellar hypoplasia type 8	MONDO:0020135	DOID:0060277	DOID:0060264	pontocerebellar hypoplasia
 MONDO:0013993	pontocerebellar hypoplasia type 7	MONDO:0020135	DOID:0060276	DOID:0060264	pontocerebellar hypoplasia
 MONDO:0013994	Joubert syndrome 20	MONDO:0018772	DOID:0110989	DOID:0050777	Joubert syndrome
 MONDO:0013995	cholestasis, intrahepatic, of pregnancy, 3	MONDO:0100429	DOID:0070229	DOID:0070227	intrahepatic cholestasis of pregnancy
 MONDO:0014001	Usher syndrome type 1K	MONDO:0010168	DOID:0110837	DOID:0110826	Usher syndrome type 1
 MONDO:0014002	autosomal dominant nocturnal frontal lobe epilepsy 5	MONDO:0020300	DOID:0060686	DOID:0060681	autosomal dominant nocturnal frontal lobe epilepsy
-MONDO:0014003	developmental and epileptic encephalopathy, 15	MONDO:0100062	DOID:0080414	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014003	developmental and epileptic encephalopathy, 15	MONDO:0100062	DOID:0080414	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014005	immunoglobulin-mediated membranoproliferative glomerulonephritis	MONDO:0002350	DOID:0080388	DOID:2590	familial nephrotic syndrome
 MONDO:0014012	Charcot-Marie-Tooth disease axonal type 2Q	MONDO:0018993	DOID:0110170	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0014015	hereditary spastic paraplegia 56	MONDO:0019064	DOID:0110808	DOID:2476	hereditary spastic paraplegia
@@ -6367,8 +6373,8 @@ MONDO:0014191	catecholaminergic polymorphic ventricular tachycardia 5	MONDO:0017
 MONDO:0014192	primary ciliary dyskinesia 22	MONDO:0016575	DOID:0110597	DOID:9562	primary ciliary dyskinesia
 MONDO:0014193	primary ciliary dyskinesia 23	MONDO:0016575	DOID:0110609	DOID:9562	primary ciliary dyskinesia
 MONDO:0014197	combined immunodeficiency due to MALT1 deficiency	MONDO:0015131	DOID:0111988	DOID:0111962	combined immunodeficiency
-MONDO:0014199	developmental and epileptic encephalopathy, 17	MONDO:0100062	DOID:0080450	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0014201	developmental and epileptic encephalopathy, 18	MONDO:0100062	DOID:0080413	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014199	developmental and epileptic encephalopathy, 17	MONDO:0100062	DOID:0080450	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0014201	developmental and epileptic encephalopathy, 18	MONDO:0100062	DOID:0080413	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014202	primary ciliary dyskinesia 24	MONDO:0016575	DOID:0110628	DOID:9562	primary ciliary dyskinesia
 MONDO:0014203	primary ciliary dyskinesia 25	MONDO:0016575	DOID:0110615	DOID:9562	primary ciliary dyskinesia
 MONDO:0014207	age related macular degeneration 14	MONDO:0005150	DOID:0110026	DOID:10871	age-related macular degeneration
@@ -6420,7 +6426,7 @@ MONDO:0014313	autosomal recessive primary immunodeficiency with defective sponta
 MONDO:0014316	Alzheimer disease 19	MONDO:0004975	DOID:0110051	DOID:10652	Alzheimer disease
 MONDO:0014318	hyperphosphatasia with intellectual disability syndrome 4	MONDO:0016596	DOID:0070436	DOID:0070431	hyperphosphatasia-intellectual disability syndrome
 MONDO:0014323	retinitis pigmentosa 68	MONDO:0019200	DOID:0110374	DOID:10584	retinitis pigmentosa
-MONDO:0014328	developmental and epileptic encephalopathy, 19	MONDO:0100062	DOID:0080431	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014328	developmental and epileptic encephalopathy, 19	MONDO:0100062	DOID:0080431	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014337	complex cortical dysplasia with other brain malformations 5	MONDO:0000904	DOID:0090135	DOID:0090131	complex cortical dysplasia with other brain malformations
 MONDO:0014338	IL21-related infantile inflammatory bowel disease	MONDO:0015517	DOID:0081153	DOID:12177	common variable immunodeficiency
 MONDO:0014339	autosomal recessive spinocerebellar ataxia 16	MONDO:0015244	DOID:0080029	DOID:0050950	autosomal recessive cerebellar ataxia
@@ -6438,7 +6444,7 @@ MONDO:0014365	spermatogenic failure 13	MONDO:0004983	DOID:0070182	DOID:0111910	s
 MONDO:0014366	spermatogenic failure 14	MONDO:0004983	DOID:0070179	DOID:0111910	spermatogenic failure
 MONDO:0014369	postaxial polydactyly-anterior pituitary anomalies-facial dysmorphism syndrome	MONDO:0000426	DOID:0080328	DOID:0050736	autosomal dominant disease
 MONDO:0014369	postaxial polydactyly-anterior pituitary anomalies-facial dysmorphism syndrome	MONDO:0002254	DOID:0080328	DOID:225	syndromic disease
-MONDO:0014371	developmental and epileptic encephalopathy, 23	MONDO:0100062	DOID:0080415	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014371	developmental and epileptic encephalopathy, 23	MONDO:0100062	DOID:0080415	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014372	cone-rod dystrophy 19	MONDO:0015993	DOID:0111025	DOID:0050572	cone-rod dystrophy
 MONDO:0014374	nephronophthisis 18	MONDO:0019005	DOID:0111125	DOID:12712	nephronophthisis
 MONDO:0014375	congenital diarrhea 7 with exudative enteropathy	MONDO:0000824	DOID:0060778	DOID:0060774	congenital diarrhea
@@ -6494,7 +6500,7 @@ MONDO:0014484	microcephaly 12, primary, autosomal recessive	MONDO:0016660	DOID:0
 MONDO:0014485	pontocerebellar hypoplasia, type 1C	MONDO:0016396	DOID:0112334	DOID:0112322	pontocerebellar hypoplasia type 1
 MONDO:0014498	familial cold autoinflammatory syndrome 4	MONDO:0018768	DOID:0090065	DOID:0090061	familial cold autoinflammatory syndrome
 MONDO:0014499	intellectual disability, autosomal recessive 46	MONDO:0019502	DOID:0081210	DOID:0060308	autosomal recessive non-syndromic intellectual disability
-MONDO:0014505	developmental and epileptic encephalopathy, 27	MONDO:0100062	DOID:0080444	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014505	developmental and epileptic encephalopathy, 27	MONDO:0100062	DOID:0080444	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014506	hypomyelinating leukodystrophy 9	MONDO:0019046	DOID:0060791	DOID:0060786	leukodystrophy
 MONDO:0014511	Charcot-Marie-Tooth disease axonal type 2S	MONDO:0018993	DOID:0110171	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0014516	microcephaly and chorioretinopathy 2	MONDO:0006025	DOID:0080106	DOID:0050737	autosomal recessive disease
@@ -6522,7 +6528,7 @@ MONDO:0014580	intellectual disability, autosomal dominant 33	MONDO:0015802	DOID:
 MONDO:0014589	maturity-onset diabetes of the young type 13	MONDO:0018911	DOID:0111110	DOID:0050524	maturity-onset diabetes of the young
 MONDO:0014590	congenital myasthenic syndrome 18	MONDO:0018940	DOID:0110683	DOID:3635	congenital myasthenic syndrome
 MONDO:0014594	autosomal dominant nonsyndromic hearing loss 67	MONDO:0019587	DOID:0110588	DOID:0050564	autosomal dominant nonsyndromic hearing loss
-MONDO:0014595	developmental and epileptic encephalopathy, 30	MONDO:0100062	DOID:0080465	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014595	developmental and epileptic encephalopathy, 30	MONDO:0100062	DOID:0080465	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014596	lissencephaly 7 with cerebellar hypoplasia	MONDO:0018838	DOID:0112231	DOID:0050453	lissencephaly spectrum disorders
 MONDO:0014597	immunodeficiency 39	MONDO:0003778	DOID:0111969	DOID:612	inborn error of immunity
 MONDO:0014599	intellectual disability, autosomal dominant 34	MONDO:0015802	DOID:0070064	DOID:0060307	autosomal dominant non-syndromic intellectual disability
@@ -6548,7 +6554,7 @@ MONDO:0014634	46,XY sex reversal 10	MONDO:0010765	DOID:0111775	DOID:14448	46,XY 
 MONDO:0014636	combined oxidative phosphorylation defect type 25	MONDO:0000732	DOID:0111468	DOID:0060286	combined oxidative phosphorylation deficiency
 MONDO:0014638	Fanconi anemia complementation group T	MONDO:0019391	DOID:0111081	DOID:13636	Fanconi anemia
 MONDO:0014639	familial temporal lobe epilepsy 7	MONDO:0005115	DOID:0060751	DOID:3328	temporal lobe epilepsy
-MONDO:0014647	developmental and epileptic encephalopathy, 50	MONDO:0100062	DOID:0080419	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014647	developmental and epileptic encephalopathy, 50	MONDO:0100062	DOID:0080419	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014649	intellectual disability, autosomal recessive 50	MONDO:0019502	DOID:0081213	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0014650	familial temporal lobe epilepsy 8	MONDO:0005115	DOID:0060754	DOID:3328	temporal lobe epilepsy
 MONDO:0014651	acrofacial dysostosis Cincinnati type	MONDO:0018237	DOID:0060353	DOID:0060379	acrofacial dysostosis
@@ -6584,7 +6590,7 @@ MONDO:0014706	cutis laxa, autosomal dominant 3	MONDO:0019571	DOID:0070131	DOID:0
 MONDO:0014711	autosomal dominant Charcot-Marie-Tooth disease type 2W	MONDO:0018993	DOID:0110162	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0014715	primary immunodeficiency with post-measles-mumps-rubella vaccine viral infection	MONDO:0003778	DOID:0111975	DOID:612	inborn error of immunity
 MONDO:0014717	early-onset Lafora body disease	MONDO:0020074	DOID:0111445	DOID:891	progressive myoclonus epilepsy
-MONDO:0014719	developmental and epileptic encephalopathy, 35	MONDO:0100062	DOID:0080458	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014719	developmental and epileptic encephalopathy, 35	MONDO:0100062	DOID:0080458	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014724	Joubert syndrome 24	MONDO:0018772	DOID:0110993	DOID:0050777	Joubert syndrome
 MONDO:0014726	Charcot-Marie-Tooth disease axonal type 2X	MONDO:0018993	DOID:0110176	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0014728	combined oxidative phosphorylation defect type 27	MONDO:0000732	DOID:0111489	DOID:0060286	combined oxidative phosphorylation deficiency
@@ -6638,13 +6644,13 @@ MONDO:0014853	autosomal dominant nonsyndromic hearing loss 70	MONDO:0019587	DOID
 MONDO:0014854	autosomal dominant nonsyndromic hearing loss 66	MONDO:0019587	DOID:0110587	DOID:0050564	autosomal dominant nonsyndromic hearing loss
 MONDO:0014856	combined oxidative phosphorylation defect type 30	MONDO:0000732	DOID:0111471	DOID:0060286	combined oxidative phosphorylation deficiency
 MONDO:0014858	intellectual disability, autosomal dominant 43	MONDO:0015802	DOID:0070073	DOID:0060307	autosomal dominant non-syndromic intellectual disability
-MONDO:0014859	developmental and epileptic encephalopathy, 37	MONDO:0100062	DOID:0080435	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014859	developmental and epileptic encephalopathy, 37	MONDO:0100062	DOID:0080435	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014860	polycystic liver disease 2	MONDO:0000447	DOID:0060975	DOID:0050770	autosomal dominant polycystic liver disease
 MONDO:0014862	cerebral palsy, spastic quadriplegic, 3	MONDO:0016215	DOID:0081361	DOID:10970	spastic quadriplegic cerebral palsy
 MONDO:0014864	hypermanganesemia with dystonia 2	MONDO:0000214	DOID:0080537	DOID:0080535	hypermanganesemia with dystonia
 MONDO:0014866	Charcot-Marie-Tooth disease axonal type 2T	MONDO:0018993	DOID:0110160	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0014867	spinocerebellar ataxia 43	MONDO:0020380	DOID:0111745	DOID:1441	autosomal dominant cerebellar ataxia
-MONDO:0014868	developmental and epileptic encephalopathy, 38	MONDO:0100062	DOID:0080417	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014868	developmental and epileptic encephalopathy, 38	MONDO:0100062	DOID:0080417	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014871	retinitis pigmentosa 75	MONDO:0019200	DOID:0110361	DOID:10584	retinitis pigmentosa
 MONDO:0014872	congenital stationary night blindness 1H	MONDO:0016293	DOID:0110866	DOID:0050534	congenital stationary night blindness
 MONDO:0014874	pontocerebellar hypoplasia, type 2F	MONDO:0016759	DOID:0112329	DOID:0112328	pontocerebellar hypoplasia type 2
@@ -6654,7 +6660,7 @@ MONDO:0014883	hypertrophic cardiomyopathy 26	MONDO:0024573	DOID:0110327	DOID:008
 MONDO:0014884	cholestasis, progressive familial intrahepatic, 5	MONDO:0015762	DOID:0070225	DOID:0070221	progressive familial intrahepatic cholestasis
 MONDO:0014890	PERCHING syndrome	MONDO:0015526	DOID:0080331	DOID:0060294	cold-induced sweating syndrome
 MONDO:0014894	Meier-Gorlin syndrome 7	MONDO:0016817	DOID:0080518	DOID:0060306	Meier-Gorlin syndrome
-MONDO:0014895	developmental and epileptic encephalopathy, 40	MONDO:0100062	DOID:0080427	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0014895	developmental and epileptic encephalopathy, 40	MONDO:0100062	DOID:0080427	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014900	autosomal recessive limb-girdle muscular dystrophy type 2Y	MONDO:0015152	DOID:0110289	DOID:0110274	autosomal recessive limb-girdle muscular dystrophy
 MONDO:0014903	seizures, benign familial infantile, 5	MONDO:0017615	DOID:0081118	DOID:0060169	benign familial infantile epilepsy
 MONDO:0014904	congenital disorder of glycosylation, type IAA	MONDO:0005500	DOID:0080553	DOID:0050570	congenital disorder of glycosylation type I
@@ -6691,8 +6697,8 @@ MONDO:0014992	lissencephaly 8	MONDO:0018838	DOID:0112233	DOID:0050453	lissenceph
 MONDO:0014993	myofibrillar myopathy 8	MONDO:0018943	DOID:0080308	DOID:0080307	myofibrillar myopathy
 MONDO:0014996	intellectual disability, autosomal recessive 58	MONDO:0019502	DOID:0081220	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0014997	nephronophthisis 20	MONDO:0019005	DOID:0111127	DOID:12712	nephronophthisis
-MONDO:0015000	developmental and epileptic encephalopathy, 48	MONDO:0100062	DOID:0080448	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0015002	developmental and epileptic encephalopathy, 49	MONDO:0100062	DOID:0080441	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0015000	developmental and epileptic encephalopathy, 48	MONDO:0100062	DOID:0080448	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0015002	developmental and epileptic encephalopathy, 49	MONDO:0100062	DOID:0080441	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0015005	epilepsy, early-onset, vitamin B6-dependent	MONDO:0009945	DOID:0080769	DOID:0080768	pyridoxine-dependent epilepsy
 MONDO:0015013	retinitis pigmentosa 77	MONDO:0019200	DOID:0080350	DOID:10584	retinitis pigmentosa
 MONDO:0015015	congenital bile acid synthesis defect 6	MONDO:0018841	DOID:0111067	DOID:0050674	congenital bile acid synthesis defect
@@ -6700,7 +6706,7 @@ MONDO:0015016	anterior segment dysgenesis 6	MONDO:0019503	DOID:0080611	DOID:0060
 MONDO:0015017	anterior segment dysgenesis 8	MONDO:0019503	DOID:0080613	DOID:0060648	anterior segment dysgenesis
 MONDO:0015020	intellectual disability, autosomal recessive 59	MONDO:0019502	DOID:0081221	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0015023	MYPN-related myopathy	MONDO:0018958	DOID:0110933	DOID:3191	nemaline myopathy
-MONDO:0015025	developmental and epileptic encephalopathy, 51	MONDO:0100062	DOID:0080433	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0015025	developmental and epileptic encephalopathy, 51	MONDO:0100062	DOID:0080433	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0015032	intraneural perineurioma	MONDO:0019404	DOID:4696	DOID:4697	perineurioma
 MONDO:0015044	mu-heavy chain disease	MONDO:0019464	DOID:0060128	DOID:0060125	heavy chain disease
 MONDO:0015045	alpha-heavy chain disease	MONDO:0019464	DOID:0060126	DOID:0060125	heavy chain disease
@@ -6888,7 +6894,7 @@ MONDO:0017255	panuveitis	MONDO:0020283	DOID:12030	DOID:13141	uveitis
 MONDO:0017278	autoimmune polyendocrinopathy	MONDO:0000569	DOID:14040	DOID:0060005	autoimmune disorder of endocrine system
 MONDO:0017279	young-onset Parkinson disease	MONDO:0005180	DOID:0060894	DOID:14330	Parkinson disease
 MONDO:0017282	alveolar echinococcosis	MONDO:0005738	DOID:12148	DOID:1496	echinococcosis
-MONDO:0017287	IgG4-related disease	MONDO:0007179	DOID:0080356	DOID:417	autoimmune disease
+MONDO:0017287	immunoglobulin G4-related sclerosing disease	MONDO:0007179	DOID:0080356	DOID:417	autoimmune disease
 MONDO:0017312	Perrault syndrome	MONDO:0006025	DOID:0050857	DOID:0050737	autosomal recessive disease
 MONDO:0017324	autosomal recessive hypophosphatemic rickets	MONDO:0006025	DOID:0050949	DOID:0050737	autosomal recessive disease
 MONDO:0017376	reactive arthritis	MONDO:0005578	DOID:6196	DOID:848	arthritic joint disease
@@ -7216,9 +7222,9 @@ MONDO:0020563	dedifferentiated liposarcoma	MONDO:0005060	DOID:0080531	DOID:3382	
 MONDO:0020572	complex regional pain syndrome type 2	MONDO:0019369	DOID:3222	DOID:3223	complex regional pain syndrome
 MONDO:0020604	X-linked dominant disease	MONDO:0000425	DOID:0080009	DOID:0050735	X-linked disease
 MONDO:0020605	X-linked recessive disease	MONDO:0000425	DOID:0080012	DOID:0050735	X-linked disease
-MONDO:0020630	developmental and epileptic encephalopathy 91	MONDO:0100062	DOID:0080472	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0020631	developmental and epileptic encephalopathy 92	MONDO:0100062	DOID:0080471	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0020632	developmental and epileptic encephalopathy 93	MONDO:0100062	DOID:0112275	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0020630	developmental and epileptic encephalopathy 91	MONDO:0100062	DOID:0080472	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0020631	developmental and epileptic encephalopathy 92	MONDO:0100062	DOID:0080471	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0020632	developmental and epileptic encephalopathy 93	MONDO:0100062	DOID:0112275	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0020655	juvenile ankylosing spondylitis	MONDO:0005306	DOID:0040092	DOID:7147	ankylosing spondylitis
 MONDO:0020658	infiltrating ureter transitional cell carcinoma	MONDO:0004030	DOID:6845	DOID:6888	ureter transitional cell carcinoma
 MONDO:0020667	Antley-Bixler syndrome without genital anomalies or disordered steroidogenesis	MONDO:0008803	DOID:0081290	DOID:0081289	Antley-Bixler syndrome
@@ -7276,7 +7282,7 @@ MONDO:0022529	BK-virus nephropathy	MONDO:0005784	DOID:0040086	DOID:11266	hantavi
 MONDO:0022697	athetoid cerebral palsy	MONDO:0006497	DOID:0050672	DOID:1969	cerebral palsy
 MONDO:0022993	dipsogenic diabetes insipidus	MONDO:0004782	DOID:0081058	DOID:9409	diabetes insipidus
 MONDO:0023227	gestational diabetes insipidus	MONDO:0004782	DOID:0081057	DOID:9409	diabetes insipidus
-MONDO:0023659	developmental and epileptic encephalopathy 96	MONDO:0100062	DOID:0070377	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0023659	developmental and epileptic encephalopathy 96	MONDO:0100062	DOID:0070377	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0023664	spermatogenic failure 54	MONDO:0004983	DOID:0112335	DOID:0111910	spermatogenic failure
 MONDO:0023670	Bardet-Biedl syndrome 20	MONDO:0015229	DOID:0081009	DOID:1935	Bardet-Biedl syndrome
 MONDO:0023671	oculopharyngodistal myopathy 3	MONDO:0025193	DOID:0081299	DOID:0081296	oculopharyngodistal myopathy
@@ -7324,7 +7330,7 @@ MONDO:0024686	tenosynovial giant cell tumor, diffuse type	MONDO:0002400	DOID:270
 MONDO:0024772	intellectual developmental disorder, X-linked, syndromic, Pilorge type	MONDO:0020119	DOID:0070422	DOID:0060309	X-linked syndromic intellectual disability
 MONDO:0024773	spermatogenic failure, X-linked, 4	MONDO:0004983	DOID:0070595	DOID:0111910	spermatogenic failure
 MONDO:0024988	sex cord-stromal benign neoplasm	MONDO:0000383	DOID:0080368	DOID:0050622	benign reproductive system neoplasm
-MONDO:0025353	developmental and epileptic encephalopathy, 90	MONDO:0100062	DOID:0070381	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0025353	developmental and epileptic encephalopathy, 90	MONDO:0100062	DOID:0070381	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0025354	spermatogenic failure, X-linked, 3	MONDO:0004983	DOID:0112274	DOID:0111910	spermatogenic failure
 MONDO:0025514	livedoid vasculopathy	MONDO:0018882	DOID:0040099	DOID:865	vasculitis
 MONDO:0025556	isocyanate induced asthma	MONDO:0004784	DOID:0040041	DOID:9415	allergic asthma
@@ -7337,7 +7343,7 @@ MONDO:0026726	nephrotic syndrome, type 20	MONDO:0002350	DOID:0070357	DOID:2590	f
 MONDO:0026729	congenital disorder of glycosylation, type ICC	MONDO:0005500	DOID:0111839	DOID:0050570	congenital disorder of glycosylation type I
 MONDO:0026763	holoprosencephaly 13, X-linked	MONDO:0016296	DOID:0060954	DOID:4621	holoprosencephaly
 MONDO:0026763	holoprosencephaly 13, X-linked	MONDO:0020605	DOID:0060954	DOID:0080012	X-linked recessive disease
-MONDO:0026771	developmental and epileptic encephalopathy, 85, with or without midline brain defects	MONDO:0100062	DOID:0070380	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0026771	developmental and epileptic encephalopathy, 85, with or without midline brain defects	MONDO:0100062	DOID:0070380	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0027048	deafness, Y-linked 2	MONDO:0033304	DOID:0111758	DOID:0111757	nonsyndromic deafness, Y-linked
 MONDO:0027069	mitochondrial complex 5 (ATP synthase) deficiency, mitochondrial type 1	MONDO:0014471	DOID:0111748	DOID:0111143	mitochondrial proton-transporting ATP synthase complex deficiency
 MONDO:0027353	autosomal recessive dyskeratosis congenita 4	MONDO:0015780	DOID:0070021	DOID:2729	dyskeratosis congenita
@@ -7350,7 +7356,7 @@ MONDO:0027772	lung colloid adenocarcinoma	MONDO:0005061	DOID:0080303	DOID:3910	l
 MONDO:0027772	lung colloid adenocarcinoma	MONDO:0005061	DOID:0080304	DOID:3910	lung adenocarcinoma
 MONDO:0029134	severe combined immunodeficiency due to CARMIL2 deficiency	MONDO:0006025	DOID:0111984	DOID:0050737	autosomal recessive disease
 MONDO:0029137	hearing loss, autosomal dominant 74	MONDO:0019587	DOID:0112165	DOID:0050564	autosomal dominant nonsyndromic hearing loss
-MONDO:0029138	developmental and epileptic encephalopathy, 67	MONDO:0100062	DOID:0112203	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0029138	developmental and epileptic encephalopathy, 67	MONDO:0100062	DOID:0112203	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0029142	hearing loss, autosomal recessive 111	MONDO:0019588	DOID:0111640	DOID:0050565	hearing loss, autosomal recessive
 MONDO:0029145	orofacial cleft 8	MONDO:0000358	DOID:0080401	DOID:0050567	orofacial cleft
 MONDO:0029147	spermatogenic failure 33	MONDO:0004983	DOID:0111915	DOID:0111910	spermatogenic failure
@@ -7364,19 +7370,19 @@ MONDO:0030019	anauxetic dysplasia 3	MONDO:0011773	DOID:0080963	DOID:0080942	anau
 MONDO:0030020	combined oxidative phosphorylation deficiency 44	MONDO:0000732	DOID:0070424	DOID:0060286	combined oxidative phosphorylation deficiency
 MONDO:0030027	tremor, hereditary essential, 6	MONDO:0003233	DOID:0081295	DOID:4990	essential tremor
 MONDO:0030031	lissencephaly 10	MONDO:0018838	DOID:0112229	DOID:0050453	lissencephaly spectrum disorders
-MONDO:0030054	developmental and epileptic encephalopathy, 86	MONDO:0100062	DOID:0112220	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030054	developmental and epileptic encephalopathy, 86	MONDO:0100062	DOID:0112220	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030055	neuronopathy, distal hereditary motor, autosomal recessive 8	MONDO:0015363	DOID:0081427	DOID:0111197	neuronopathy, distal hereditary motor, autosomal recessive
 MONDO:0030058	hearing loss, autosomal dominant 77	MONDO:0019587	DOID:0112168	DOID:0050564	autosomal dominant nonsyndromic hearing loss
-MONDO:0030059	developmental and epileptic encephalopathy, 87	MONDO:0100062	DOID:0112221	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030059	developmental and epileptic encephalopathy, 87	MONDO:0100062	DOID:0112221	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030064	episodic ataxia, type 9	MONDO:0016227	DOID:0060965	DOID:963	hereditary episodic ataxia
 MONDO:0030066	granulomatous disease, chronic, autosomal recessive, 5	MONDO:0018305	DOID:0070368	DOID:3265	chronic granulomatous disease
 MONDO:0030067	Treacher Collins syndrome 4	MONDO:0002457	DOID:0080792	DOID:2908	Treacher-Collins syndrome
-MONDO:0030072	developmental and epileptic encephalopathy, 88	MONDO:0100062	DOID:0112222	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030072	developmental and epileptic encephalopathy, 88	MONDO:0100062	DOID:0112222	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030105	galactosemia 4	MONDO:0018116	DOID:0060969	DOID:9870	galactosemia
 MONDO:0030134	oculopharyngodistal myopathy 2	MONDO:0025193	DOID:0081298	DOID:0081296	oculopharyngodistal myopathy
 MONDO:0030258	pontocerebellar hypoplasia, type 14	MONDO:0020135	DOID:0112325	DOID:0060264	pontocerebellar hypoplasia
 MONDO:0030259	pontocerebellar hypoplasia, type 15	MONDO:0020135	DOID:0112326	DOID:0060264	pontocerebellar hypoplasia
-MONDO:0030268	developmental and epileptic encephalopathy 6B	MONDO:0100062	DOID:0070379	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030268	developmental and epileptic encephalopathy 6B	MONDO:0100062	DOID:0070379	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030281	arthrogryposis multiplex congenita 6	MONDO:0015168	DOID:0070336	DOID:0080954	arthrogryposis multiplex congenita
 MONDO:0030307	spermatogenic failure 55	MONDO:0004983	DOID:0112337	DOID:0111910	spermatogenic failure
 MONDO:0030311	combined oxidative phosphorylation deficiency 52	MONDO:0000732	DOID:0070425	DOID:0060286	combined oxidative phosphorylation deficiency
@@ -7391,10 +7397,10 @@ MONDO:0030430	spermatogenic failure 56	MONDO:0004983	DOID:0112336	DOID:0111910	s
 MONDO:0030438	pontocerebellar hypoplasia, type 16	MONDO:0020135	DOID:0112333	DOID:0060264	pontocerebellar hypoplasia
 MONDO:0030439	spermatogenic failure 57	MONDO:0004983	DOID:0112338	DOID:0111910	spermatogenic failure
 MONDO:0030440	cone-rod dystrophy 22	MONDO:0015993	DOID:0081448	DOID:0050572	cone-rod dystrophy
-MONDO:0030453	developmental and epileptic encephalopathy 97	MONDO:0100062	DOID:0070383	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030453	developmental and epileptic encephalopathy 97	MONDO:0100062	DOID:0070383	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030463	spermatogenic failure 58	MONDO:0004983	DOID:0112352	DOID:0111910	spermatogenic failure
-MONDO:0030472	developmental and epileptic encephalopathy 98	MONDO:0100062	DOID:0070384	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0030473	developmental and epileptic encephalopathy 99	MONDO:0100062	DOID:0070385	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030472	developmental and epileptic encephalopathy 98	MONDO:0100062	DOID:0070384	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0030473	developmental and epileptic encephalopathy 99	MONDO:0100062	DOID:0070385	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030492	spermatogenic failure 59	MONDO:0004983	DOID:0112357	DOID:0111910	spermatogenic failure
 MONDO:0030493	spermatogenic failure 60	MONDO:0004983	DOID:0112355	DOID:0111910	spermatogenic failure
 MONDO:0030500	Loeys-Dietz syndrome 6	MONDO:0018954	DOID:0060964	DOID:0050466	Loeys-Dietz syndrome
@@ -7411,14 +7417,14 @@ MONDO:0030543	combined oxidative phosphorylation deficiency 54	MONDO:0000732	DOI
 MONDO:0030553	acromesomelic dysplasia 4	MONDO:0019696	DOID:0081238	DOID:0080049	acromesomelic dysplasia
 MONDO:0030602	Klebsiella pneumonia	MONDO:0004652	DOID:13272	DOID:874	bacterial pneumonia
 MONDO:0030674	Teebi hypertelorism syndrome 2	MONDO:0030639	DOID:0081074	DOID:0081073	Teebi hypertelorism syndrome
-MONDO:0030695	developmental and epileptic encephalopathy 100	MONDO:0100062	DOID:0070386	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030695	developmental and epileptic encephalopathy 100	MONDO:0100062	DOID:0070386	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030696	mitochondrial DNA depletion syndrome 20 (mngie type)	MONDO:0018158	DOID:0070451	DOID:0070329	mitochondrial DNA depletion syndrome
 MONDO:0030701	autoimmune cardiomyopathy	MONDO:0000603	DOID:0040095	DOID:0060051	autoimmune disorder of cardiovascular system
 MONDO:0030702	autoimmune atherosclerosis	MONDO:0000603	DOID:0040096	DOID:0060051	autoimmune disorder of cardiovascular system
 MONDO:0030703	autoimmune vasculitis	MONDO:0000603	DOID:0040097	DOID:0060051	autoimmune disorder of cardiovascular system
 MONDO:0030712	oculopharyngodistal myopathy 4	MONDO:0025193	DOID:0081300	DOID:0081296	oculopharyngodistal myopathy
 MONDO:0030721	spermatogenic failure 68	MONDO:0004983	DOID:0070567	DOID:0111910	spermatogenic failure
-MONDO:0030727	developmental and epileptic encephalopathy 101	MONDO:0100062	DOID:0070387	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030727	developmental and epileptic encephalopathy 101	MONDO:0100062	DOID:0070387	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030732	spermatogenic failure 69	MONDO:0004983	DOID:0070568	DOID:0111910	spermatogenic failure
 MONDO:0030733	spermatogenic failure 70	MONDO:0004983	DOID:0070569	DOID:0111910	spermatogenic failure
 MONDO:0030781	restrictive dermopathy 2	MONDO:0031213	DOID:0070370	DOID:0060762	restrictive dermopathy
@@ -7428,11 +7434,11 @@ MONDO:0030809	spermatogenic failure 72	MONDO:0004983	DOID:0070571	DOID:0111910	s
 MONDO:0030818	spermatogenic failure 73	MONDO:0004983	DOID:0070572	DOID:0111910	spermatogenic failure
 MONDO:0030844	spermatogenic failure 47	MONDO:0004983	DOID:0112175	DOID:0111910	spermatogenic failure
 MONDO:0030846	spermatogenic failure 48	MONDO:0004983	DOID:0112176	DOID:0111910	spermatogenic failure
-MONDO:0030856	developmental and epileptic encephalopathy 89	MONDO:0100062	DOID:0112223	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030856	developmental and epileptic encephalopathy 89	MONDO:0100062	DOID:0112223	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030861	osteogenesis imperfecta, type 21	MONDO:0019019	DOID:0112201	DOID:12347	osteogenesis imperfecta
 MONDO:0030868	spermatogenic failure 49	MONDO:0004983	DOID:0112271	DOID:0111910	spermatogenic failure
 MONDO:0030869	spermatogenic failure 50	MONDO:0004983	DOID:0112272	DOID:0111910	spermatogenic failure
-MONDO:0030881	developmental and epileptic encephalopathy 102	MONDO:0100062	DOID:0070388	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030881	developmental and epileptic encephalopathy 102	MONDO:0100062	DOID:0070388	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030883	carpal tunnel syndrome 2	MONDO:0007275	DOID:0070467	DOID:12169	carpal tunnel syndrome
 MONDO:0030895	nephrotic syndrome, type 22	MONDO:0002350	DOID:0112268	DOID:2590	familial nephrotic syndrome
 MONDO:0030906	Trichomonas tenax infectious disease	MONDO:0002154	DOID:0050270	DOID:1947	trichomoniasis
@@ -7456,7 +7462,7 @@ MONDO:0030926	spermatogenic failure 51	MONDO:0004983	DOID:0112273	DOID:0111910	s
 MONDO:0030927	myofibrillar myopathy 11	MONDO:0018943	DOID:0081338	DOID:0080307	myofibrillar myopathy
 MONDO:0030931	proteasome-associated autoinflammatory syndrome 4	MONDO:0009726	DOID:0060915	DOID:0060913	proteosome-associated autoinflammatory syndrome
 MONDO:0030938	spermatogenic failure 52	MONDO:0004983	DOID:0112270	DOID:0111910	spermatogenic failure
-MONDO:0030957	developmental and epileptic encephalopathy 103	MONDO:0100062	DOID:0070389	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0030957	developmental and epileptic encephalopathy 103	MONDO:0100062	DOID:0070389	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0030962	nephrotic syndrome, type 23	MONDO:0002350	DOID:0112266	DOID:2590	familial nephrotic syndrome
 MONDO:0030968	intellectual developmental disorder, autosomal recessive 76	MONDO:0019502	DOID:0081235	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0030972	spermatogenic failure 74	MONDO:0004983	DOID:0070573	DOID:0111910	spermatogenic failure
@@ -7467,11 +7473,11 @@ MONDO:0031012	autoimmune uveitis	MONDO:0000587	DOID:0040088	DOID:0060030	autoimm
 MONDO:0031013	autoimmune optic neuritis	MONDO:0000590	DOID:0040089	DOID:0060033	autoimmune disorder of peripheral nervous system
 MONDO:0031014	autoimmune gastritis	MONDO:0000588	DOID:0040090	DOID:0060031	autoimmune disorder of gastrointestinal tract
 MONDO:0031019	spastic paraplegia 87, autosomal recessive	MONDO:0019064	DOID:0070456	DOID:2476	hereditary spastic paraplegia
-MONDO:0031021	developmental and epileptic encephalopathy 104	MONDO:0100062	DOID:0070390	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0031028	developmental and epileptic encephalopathy 105 with hypopituitarism	MONDO:0100062	DOID:0070391	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0031021	developmental and epileptic encephalopathy 104	MONDO:0100062	DOID:0070390	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0031028	developmental and epileptic encephalopathy 105 with hypopituitarism	MONDO:0100062	DOID:0070391	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0031031	intellectual developmental disorder, autosomal recessive 77	MONDO:0019502	DOID:0081236	DOID:0060308	autosomal recessive non-syndromic intellectual disability
-MONDO:0031052	developmental and epileptic encephalopathy 106	MONDO:0100062	DOID:0070392	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0031055	developmental and epileptic encephalopathy 107	MONDO:0100062	DOID:0070393	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0031052	developmental and epileptic encephalopathy 106	MONDO:0100062	DOID:0070392	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0031055	developmental and epileptic encephalopathy 107	MONDO:0100062	DOID:0070393	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0031062	polycystic kidney disease 7	MONDO:0004691	DOID:0060952	DOID:898	autosomal dominant polycystic kidney disease
 MONDO:0031077	spermatogenic failure 76	MONDO:0004983	DOID:0070575	DOID:0111910	spermatogenic failure
 MONDO:0031083	spermatogenic failure 77	MONDO:0004983	DOID:0070576	DOID:0111910	spermatogenic failure
@@ -7484,7 +7490,7 @@ MONDO:0032581	nephrotic syndrome, type 18	MONDO:0002350	DOID:0080393	DOID:2590	f
 MONDO:0032582	nephrotic syndrome, type 19	MONDO:0002350	DOID:0080394	DOID:2590	familial nephrotic syndrome
 MONDO:0032584	ectodermal dysplasia 14, hair/tooth type with or without hypohidrosis	MONDO:0019287	DOID:0111662	DOID:2121	ectodermal dysplasia syndrome
 MONDO:0032590	ovarian dysgenesis 8	MONDO:0009299	DOID:0080500	DOID:14450	46 XX gonadal dysgenesis
-MONDO:0032598	developmental and epileptic encephalopathy, 68	MONDO:0100062	DOID:0112204	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032598	developmental and epileptic encephalopathy, 68	MONDO:0100062	DOID:0112204	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032604	retinitis pigmentosa 84	MONDO:0019200	DOID:0112141	DOID:10584	retinitis pigmentosa
 MONDO:0032605	intellectual disability, autosomal recessive 66	MONDO:0019502	DOID:0081227	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0032606	mitochondrial complex 1 deficiency, nuclear type 2	MONDO:0100223	DOID:0112083	DOID:0112065	mitochondrial complex I deficiency, nuclear type
@@ -7521,28 +7527,28 @@ MONDO:0032639	hearing loss, autosomal recessive 112	MONDO:0019588	DOID:0111637	D
 MONDO:0032643	pontocerebellar hypoplasia, type 12	MONDO:0020135	DOID:0112327	DOID:0060264	pontocerebellar hypoplasia
 MONDO:0032649	hypotrichosis 14	MONDO:0003037	DOID:0080582	DOID:4535	hypotrichosis
 MONDO:0032654	hyper-IgE recurrent infection syndrome 3, autosomal recessive	MONDO:0018037	DOID:0080595	DOID:0080545	hyper-IgE syndrome
-MONDO:0032657	developmental and epileptic encephalopathy, 69	MONDO:0100062	DOID:0112205	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032657	developmental and epileptic encephalopathy, 69	MONDO:0100062	DOID:0112205	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032660	spinal muscular atrophy, lower extremity-predominant, 2b, prenatal onset, autosomal dominant	MONDO:0018190	DOID:0070350	DOID:0070348	autosomal dominant childhood-onset proximal spinal muscular atrophy
 MONDO:0032662	intellectual developmental disorder, autosomal recessive 67	MONDO:0019502	DOID:0081228	DOID:0060308	autosomal recessive non-syndromic intellectual disability
-MONDO:0032663	developmental and epileptic encephalopathy, 70	MONDO:0100062	DOID:0112206	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032663	developmental and epileptic encephalopathy, 70	MONDO:0100062	DOID:0112206	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032664	ciliary dyskinesia, primary, 40	MONDO:0016575	DOID:0111853	DOID:9562	primary ciliary dyskinesia
 MONDO:0032665	intellectual developmental disorder, autosomal recessive 68	MONDO:0019502	DOID:0081229	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0032668	Diamond-Blackfan anemia 18	MONDO:0015253	DOID:0111896	DOID:1339	Diamond-Blackfan anemia
 MONDO:0032669	Diamond-Blackfan anemia 19	MONDO:0015253	DOID:0111886	DOID:1339	Diamond-Blackfan anemia
 MONDO:0032670	Diamond-Blackfan anemia 20	MONDO:0015253	DOID:0111891	DOID:1339	Diamond-Blackfan anemia
-MONDO:0032678	developmental and epileptic encephalopathy, 71	MONDO:0100062	DOID:0112207	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032678	developmental and epileptic encephalopathy, 71	MONDO:0100062	DOID:0112207	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032679	combined oxidative phosphorylation deficiency 37	MONDO:0000732	DOID:0111499	DOID:0060286	combined oxidative phosphorylation deficiency
 MONDO:0032686	spermatogenic failure 35	MONDO:0004983	DOID:0111914	DOID:0111910	spermatogenic failure
 MONDO:0032689	retinitis pigmentosa 85	MONDO:0019200	DOID:0112142	DOID:10584	retinitis pigmentosa
 MONDO:0032702	Coffin-Siris syndrome 8	MONDO:0015452	DOID:0112367	DOID:1925	Coffin-Siris syndrome
 MONDO:0032706	spinocerebellar ataxia, autosomal recessive 27	MONDO:0015244	DOID:0111616	DOID:0050950	autosomal recessive cerebellar ataxia
-MONDO:0032710	developmental and epileptic encephalopathy, 72	MONDO:0100062	DOID:0112208	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032710	developmental and epileptic encephalopathy, 72	MONDO:0100062	DOID:0112208	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032712	combined oxidative phosphorylation deficiency 38	MONDO:0000732	DOID:0111466	DOID:0060286	combined oxidative phosphorylation deficiency
 MONDO:0032715	intellectual developmental disorder, autosomal recessive 69	MONDO:0019502	DOID:0081230	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0032721	spondyloepiphyseal dysplasia, kondo-fu type	MONDO:0016761	DOID:0112283	DOID:0112280	spondyloepiphyseal dysplasia
 MONDO:0032724	spondyloepimetaphyseal dysplasia with joint laxity, type 3	MONDO:0006025	DOID:0112200	DOID:0050737	autosomal recessive disease
 MONDO:0032724	spondyloepimetaphyseal dysplasia with joint laxity, type 3	MONDO:0019675	DOID:0112200	DOID:0112197	spondyloepimetaphyseal dysplasia with joint laxity
-MONDO:0032725	developmental and epileptic encephalopathy, 74	MONDO:0100062	DOID:0112210	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032725	developmental and epileptic encephalopathy, 74	MONDO:0100062	DOID:0112210	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032726	combined oxidative phosphorylation deficiency 39	MONDO:0000732	DOID:0111475	DOID:0060286	combined oxidative phosphorylation deficiency
 MONDO:0032728	Charcot-Marie-Tooth disease, axonal, type 2EE	MONDO:0018993	DOID:0111559	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0032729	intellectual developmental disorder, autosomal recessive 70	MONDO:0019502	DOID:0081231	DOID:0060308	autosomal recessive non-syndromic intellectual disability
@@ -7559,11 +7565,11 @@ MONDO:0032750	arthrogryposis, distal, type 2B2	MONDO:0000426	DOID:0111601	DOID:0
 MONDO:0032750	arthrogryposis, distal, type 2B2	MONDO:0011128	DOID:0111601	DOID:0111599	Sheldon-hall syndrome
 MONDO:0032751	arthrogryposis, distal, type 2B3	MONDO:0000426	DOID:0111602	DOID:0050736	autosomal dominant disease
 MONDO:0032751	arthrogryposis, distal, type 2B3	MONDO:0011128	DOID:0111602	DOID:0111599	Sheldon-hall syndrome
-MONDO:0032752	developmental and epileptic encephalopathy, 75	MONDO:0100062	DOID:0112211	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032752	developmental and epileptic encephalopathy, 75	MONDO:0100062	DOID:0112211	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032757	ciliary dyskinesia, primary, 41	MONDO:0016575	DOID:0111858	DOID:9562	primary ciliary dyskinesia
 MONDO:0032761	hearing loss, autosomal recessive 114	MONDO:0019588	DOID:0111642	DOID:0050565	hearing loss, autosomal recessive
 MONDO:0032762	hearing loss, autosomal recessive 115	MONDO:0019588	DOID:0111643	DOID:0050565	hearing loss, autosomal recessive
-MONDO:0032768	developmental and epileptic encephalopathy, 76	MONDO:0100062	DOID:0112212	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032768	developmental and epileptic encephalopathy, 76	MONDO:0100062	DOID:0112212	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032776	hearing loss, autosomal recessive 99	MONDO:0019588	DOID:0111634	DOID:0050565	hearing loss, autosomal recessive
 MONDO:0032777	generalized epilepsy with febrile seizures plus, type 10	MONDO:0018214	DOID:0111296	DOID:0060170	generalized epilepsy with febrile seizures plus
 MONDO:0032778	arthrogryposis multiplex congenita 3, myogenic type	MONDO:0015168	DOID:0080979	DOID:0080954	arthrogryposis multiplex congenita
@@ -7580,11 +7586,11 @@ MONDO:0032800	robinow syndrome, autosomal recessive 2	MONDO:0019978	DOID:0060974
 MONDO:0032801	erythrokeratodermia variabilis et progressiva 6	MONDO:0017851	DOID:0080766	DOID:0050467	erythrokeratodermia variabilis
 MONDO:0032804	ectodermal dysplasia 15, hypohidrotic/hair type	MONDO:0019287	DOID:0111651	DOID:2121	ectodermal dysplasia syndrome
 MONDO:0032808	developmental and epileptic encephalopathy, 77	MONDO:0100247	DOID:0112213	DOID:0080503	multiple congenital anomalies-hypotonia-seizures syndrome
-MONDO:0032812	developmental and epileptic encephalopathy, 78	MONDO:0100062	DOID:0112214	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0032813	developmental and epileptic encephalopathy, 79	MONDO:0100062	DOID:0112215	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032812	developmental and epileptic encephalopathy, 78	MONDO:0100062	DOID:0112214	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0032813	developmental and epileptic encephalopathy, 79	MONDO:0100062	DOID:0112215	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032815	mitochondrial DNA depletion syndrome 17	MONDO:0018158	DOID:0070448	DOID:0070329	mitochondrial DNA depletion syndrome
 MONDO:0032821	myopathy, congenital, progressive, with scoliosis	MONDO:0019952	DOID:0081351	DOID:0081337	congenital myopathy
-MONDO:0032822	developmental and epileptic encephalopathy, 80	MONDO:0100062	DOID:0112216	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032822	developmental and epileptic encephalopathy, 80	MONDO:0100062	DOID:0112216	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032826	nephrotic syndrome, type 21	MONDO:0002350	DOID:0112267	DOID:2590	familial nephrotic syndrome
 MONDO:0032831	pontocerebellar hypoplasia, type 13	MONDO:0020135	DOID:0112332	DOID:0060264	pontocerebellar hypoplasia
 MONDO:0032834	retinitis pigmentosa 86	MONDO:0019200	DOID:0112143	DOID:10584	retinitis pigmentosa
@@ -7594,7 +7600,7 @@ MONDO:0032839	noonan syndrome 12	MONDO:0018997	DOID:0112170	DOID:3490	Noonan syn
 MONDO:0032845	spermatogenic failure 39	MONDO:0004983	DOID:0111926	DOID:0111910	spermatogenic failure
 MONDO:0032846	osteogenesis imperfecta, type 20	MONDO:0019019	DOID:0111849	DOID:12347	osteogenesis imperfecta
 MONDO:0032852	myopathy, congenital, with structured cores and z-line abnormalities	MONDO:0019952	DOID:0081342	DOID:0081337	congenital myopathy
-MONDO:0032858	developmental and epileptic encephalopathy, 81	MONDO:0100062	DOID:0112217	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032858	developmental and epileptic encephalopathy, 81	MONDO:0100062	DOID:0112217	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032859	spermatogenic failure 40	MONDO:0004983	DOID:0111918	DOID:0111910	spermatogenic failure
 MONDO:0032860	intellectual developmental disorder, autosomal recessive 72	MONDO:0019502	DOID:0080765	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0032863	spermatogenic failure 41	MONDO:0004983	DOID:0111912	DOID:0111910	spermatogenic failure
@@ -7602,9 +7608,9 @@ MONDO:0032869	mitochondrial complex 5 (ATP synthase) deficiency, nuclear type 6	
 MONDO:0032871	leukodystrophy, hypomyelinating, 19, transient infantile	MONDO:0019046	DOID:0070400	DOID:0060786	leukodystrophy
 MONDO:0032872	ciliary dyskinesia, primary, 42	MONDO:0016575	DOID:0111855	DOID:9562	primary ciliary dyskinesia
 MONDO:0032874	ciliary dyskinesia, primary, 43	MONDO:0016575	DOID:0111856	DOID:9562	primary ciliary dyskinesia
-MONDO:0032880	developmental and epileptic encephalopathy, 82	MONDO:0100062	DOID:0080715	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032880	developmental and epileptic encephalopathy, 82	MONDO:0100062	DOID:0080715	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032891	aneurysm, intracranial berry, 12	MONDO:0016483	DOID:0080975	DOID:0060228	intracranial berry aneurysm
-MONDO:0032895	developmental and epileptic encephalopathy, 83	MONDO:0100062	DOID:0112218	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032895	developmental and epileptic encephalopathy, 83	MONDO:0100062	DOID:0112218	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032896	spermatogenic failure 42	MONDO:0004983	DOID:0111923	DOID:0111910	spermatogenic failure
 MONDO:0032898	spermatogenic failure 43	MONDO:0004983	DOID:0111917	DOID:0111910	spermatogenic failure
 MONDO:0032903	arthrogryposis multiplex congenita 4, neurogenic, with agenesis of the corpus callosum	MONDO:0015168	DOID:0080980	DOID:0080954	arthrogryposis multiplex congenita
@@ -7615,7 +7621,7 @@ MONDO:0032911	hearing loss, autosomal dominant 75	MONDO:0019587	DOID:0112166	DOI
 MONDO:0032912	Coffin-Siris syndrome 11	MONDO:0015452	DOID:0112372	DOID:1925	Coffin-Siris syndrome
 MONDO:0032914	ciliary dyskinesia, primary, 44	MONDO:0016575	DOID:0111851	DOID:9562	primary ciliary dyskinesia
 MONDO:0032917	hearing loss, autosomal dominant 76	MONDO:0019587	DOID:0112167	DOID:0050564	autosomal dominant nonsyndromic hearing loss
-MONDO:0032918	developmental and epileptic encephalopathy, 84	MONDO:0100062	DOID:0112219	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0032918	developmental and epileptic encephalopathy, 84	MONDO:0100062	DOID:0112219	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0032923	spinocerebellar ataxia, autosomal recessive 28	MONDO:0015244	DOID:0070409	DOID:0050950	autosomal recessive cerebellar ataxia
 MONDO:0032924	ciliary dyskinesia, primary, 45	MONDO:0016575	DOID:0111857	DOID:9562	primary ciliary dyskinesia
 MONDO:0032932	mitochondrial DNA depletion syndrome 18	MONDO:0018158	DOID:0070449	DOID:0070329	mitochondrial DNA depletion syndrome
@@ -7665,20 +7671,20 @@ MONDO:0033309	Joubert syndrome 32	MONDO:0018772	DOID:0080278	DOID:0050777	Jouber
 MONDO:0033310	Joubert syndrome 31	MONDO:0018772	DOID:0080277	DOID:0050777	Joubert syndrome
 MONDO:0033311	Joubert syndrome 33	MONDO:0018772	DOID:0080279	DOID:0050777	Joubert syndrome
 MONDO:0033312	schizophrenia 19	MONDO:0005090	DOID:0080281	DOID:5419	schizophrenia
-MONDO:0033361	developmental and epileptic encephalopathy, 52	MONDO:0100062	DOID:0080455	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033362	developmental and epileptic encephalopathy, 53	MONDO:0100062	DOID:0080464	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033363	developmental and epileptic encephalopathy, 54	MONDO:0100062	DOID:0080418	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033364	developmental and epileptic encephalopathy, 55	MONDO:0100062	DOID:0080283	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033365	developmental and epileptic encephalopathy, 56	MONDO:0100062	DOID:0080282	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033366	developmental and epileptic encephalopathy, 57	MONDO:0100062	DOID:0080284	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033367	developmental and epileptic encephalopathy, 58	MONDO:0100062	DOID:0080285	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033368	developmental and epileptic encephalopathy, 59	MONDO:0100062	DOID:0080291	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033369	developmental and epileptic encephalopathy, 60	MONDO:0100062	DOID:0080432	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033370	developmental and epileptic encephalopathy, 61	MONDO:0100062	DOID:0080434	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033371	developmental and epileptic encephalopathy, 62	MONDO:0100062	DOID:0080420	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033372	developmental and epileptic encephalopathy, 63	MONDO:0100062	DOID:0080426	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033373	developmental and epileptic encephalopathy, 64	MONDO:0100062	DOID:0070375	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0033374	developmental and epileptic encephalopathy, 65	MONDO:0100062	DOID:0080430	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0033361	developmental and epileptic encephalopathy, 52	MONDO:0100062	DOID:0080455	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033362	developmental and epileptic encephalopathy, 53	MONDO:0100062	DOID:0080464	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033363	developmental and epileptic encephalopathy, 54	MONDO:0100062	DOID:0080418	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033364	developmental and epileptic encephalopathy, 55	MONDO:0100062	DOID:0080283	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033365	developmental and epileptic encephalopathy, 56	MONDO:0100062	DOID:0080282	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033366	developmental and epileptic encephalopathy, 57	MONDO:0100062	DOID:0080284	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033367	developmental and epileptic encephalopathy, 58	MONDO:0100062	DOID:0080285	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033368	developmental and epileptic encephalopathy, 59	MONDO:0100062	DOID:0080291	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033369	developmental and epileptic encephalopathy, 60	MONDO:0100062	DOID:0080432	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033370	developmental and epileptic encephalopathy, 61	MONDO:0100062	DOID:0080434	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033371	developmental and epileptic encephalopathy, 62	MONDO:0100062	DOID:0080420	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033372	developmental and epileptic encephalopathy, 63	MONDO:0100062	DOID:0080426	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033373	developmental and epileptic encephalopathy, 64	MONDO:0100062	DOID:0070375	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0033374	developmental and epileptic encephalopathy, 65	MONDO:0100062	DOID:0080430	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0033375	orofaciodigital syndrome 17	MONDO:0015375	DOID:0080289	DOID:4501	orofaciodigital syndrome
 MONDO:0033479	spinocerebellar ataxia 44	MONDO:0020380	DOID:0080286	DOID:1441	autosomal dominant cerebellar ataxia
 MONDO:0033482	spinocerebellar ataxia 47	MONDO:0020380	DOID:0111743	DOID:1441	autosomal dominant cerebellar ataxia
@@ -7708,7 +7714,7 @@ MONDO:0033670	hearing loss, autosomal recessive 116	MONDO:0019588	DOID:0112162	D
 MONDO:0033671	spermatogenic failure 45	MONDO:0004983	DOID:0112163	DOID:0111910	spermatogenic failure
 MONDO:0033673	spermatogenic failure 46	MONDO:0004983	DOID:0112164	DOID:0111910	spermatogenic failure
 MONDO:0033946	hereditary angioedema with C1Inh deficiency	MONDO:0019623	DOID:0080939	DOID:14735	hereditary angioedema
-MONDO:0034106	developmental and epileptic encephalopathy, 73	MONDO:0100062	DOID:0112209	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0034106	developmental and epileptic encephalopathy, 73	MONDO:0100062	DOID:0112209	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0034109	congenital myopathy with reduced type 2 muscle fibers	MONDO:0006025	DOID:0081346	DOID:0050737	autosomal recessive disease
 MONDO:0034109	congenital myopathy with reduced type 2 muscle fibers	MONDO:0019952	DOID:0081346	DOID:0081337	congenital myopathy
 MONDO:0035112	acute myeloid leukemia with BCR-ABL1	MONDO:0018874	DOID:0080976	DOID:9119	acute myeloid leukemia
@@ -7793,7 +7799,7 @@ MONDO:0054833	Charcot-Marie-tooth disease, axonal, type 2DD	MONDO:0018993	DOID:0
 MONDO:0054835	classic dopamine transporter deficiency syndrome	MONDO:0700117	DOID:0070489	DOID:0070487	SLC6A3-related dopamine transporter deficiency syndrome
 MONDO:0054842	polycystic kidney disease 6 with or without polycystic liver disease	MONDO:0004691	DOID:0060951	DOID:898	autosomal dominant polycystic kidney disease
 MONDO:0054843	ciliary dyskinesia, primary, 38	MONDO:0016575	DOID:0111852	DOID:9562	primary ciliary dyskinesia
-MONDO:0054845	developmental and epileptic encephalopathy, 66	MONDO:0100062	DOID:0080446	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0054845	developmental and epileptic encephalopathy, 66	MONDO:0100062	DOID:0080446	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0054846	epilepsy, familial adult myoclonic, 6	MONDO:0000160	DOID:0111696	DOID:0111689	epilepsy, familial adult myoclonic
 MONDO:0054847	epilepsy, familial adult myoclonic, 7	MONDO:0000160	DOID:0111694	DOID:0111689	epilepsy, familial adult myoclonic
 MONDO:0054849	inflammatory bowel disease 29	MONDO:0005265	DOID:0112155	DOID:0050589	inflammatory bowel disease
@@ -7823,7 +7829,7 @@ MONDO:0100104	fetal akinesia deformation sequence 4	MONDO:0008824	DOID:0111379	D
 MONDO:0100105	brain small vessel disease 3	MONDO:0020496	DOID:0112315	DOID:0112313	familial porencephaly
 MONDO:0100115	acute flaccid myelitis	MONDO:0002565	DOID:0080947	DOID:322	myelitis
 MONDO:0100116	Middle East respiratory syndrome	MONDO:0020753	DOID:0080642	DOID:0080599	Orthocoronavirinae infectious disease
-MONDO:0100135	Dravet syndrome	MONDO:0100062	DOID:0080422	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0100135	Dravet syndrome	MONDO:0100062	DOID:0080422	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0100164	permanent neonatal diabetes mellitus	MONDO:0016391	DOID:0060639	DOID:11717	neonatal diabetes mellitus
 MONDO:0100211	growth hormone insensitivity with immune dysregulation 1, autosomal recessive	MONDO:0006025	DOID:0080836	DOID:0050737	autosomal recessive disease
 MONDO:0100213	IFAP syndrome 1, with or without BRESHECK syndrome	MONDO:0020605	DOID:0111821	DOID:0080012	X-linked recessive disease
@@ -8007,10 +8013,10 @@ MONDO:0859279	spinal muscular atrophy, distal, autosomal recessive, 6	MONDO:0015
 MONDO:0859300	neuronopathy, distal hereditary motor, autosomal dominant 10	MONDO:0015362	DOID:0081399	DOID:0111198	neuronopathy, distal hereditary motor, autosomal dominant
 MONDO:0859309	spastic paraplegia 88, autosomal dominant	MONDO:0019064	DOID:0070457	DOID:2476	hereditary spastic paraplegia
 MONDO:0859310	orofaciodigital syndrome 19	MONDO:0015375	DOID:0060960	DOID:4501	orofaciodigital syndrome
-MONDO:0859314	developmental and epileptic encephalopathy 108	MONDO:0100062	DOID:0070394	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0859314	developmental and epileptic encephalopathy 108	MONDO:0100062	DOID:0070394	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0859323	combined oxidative phosphorylation deficiency 56	MONDO:0000732	DOID:0070429	DOID:0060286	combined oxidative phosphorylation deficiency
-MONDO:0859325	developmental and epileptic encephalopathy 109	MONDO:0100062	DOID:0070378	DOID:0112202	developmental and epileptic encephalopathy
-MONDO:0859327	developmental and epileptic encephalopathy 110	MONDO:0100062	DOID:0070395	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0859325	developmental and epileptic encephalopathy 109	MONDO:0100062	DOID:0070378	DOID:0112202	genetic developmental and epileptic encephalopathy
+MONDO:0859327	developmental and epileptic encephalopathy 110	MONDO:0100062	DOID:0070395	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0859328	hypomagnesemia 7, renal, with or without dilated cardiomyopathy	MONDO:0018100	DOID:0060972	DOID:0060879	familial primary hypomagnesemia
 MONDO:0859329	mosaic variegated aneuploidy syndrome 4	MONDO:0000141	DOID:0060981	DOID:0080688	mosaic variegated aneuploidy syndrome
 MONDO:0859335	congenital myopathy 15	MONDO:0019952	DOID:0081347	DOID:0081337	congenital myopathy
@@ -8137,7 +8143,7 @@ MONDO:0958303	childhood renal cell carcinoma with MiT translocations	MONDO:00178
 MONDO:0968944	intellectual developmental disorder, autosomal recessive 82	MONDO:0019502	DOID:0060947	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0968974	large B-cell lymphoma	MONDO:0004095	DOID:0081452	DOID:707	B-cell neoplasm
 MONDO:0970943	spermatogenic failure, X-linked, 8	MONDO:0004983	DOID:0070599	DOID:0111910	spermatogenic failure
-MONDO:0970945	developmental and epileptic encephalopathy 116	MONDO:0100062	DOID:0070545	DOID:0112202	developmental and epileptic encephalopathy
+MONDO:0970945	developmental and epileptic encephalopathy 116	MONDO:0100062	DOID:0070545	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0970952	spermatogenic failure 91	MONDO:0004983	DOID:0070590	DOID:0111910	spermatogenic failure
 MONDO:0970999	spermatogenic failure 92	MONDO:0004983	DOID:0070591	DOID:0111910	spermatogenic failure
 MONDO:0971000	spermatogenic failure 93	MONDO:0004983	DOID:0070592	DOID:0111910	spermatogenic failure
