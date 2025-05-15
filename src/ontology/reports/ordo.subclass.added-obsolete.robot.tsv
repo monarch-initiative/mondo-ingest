@@ -838,8 +838,8 @@ MONDO:0007713	clonic hemifacial spasm	MONDO:0017651	Orphanet:221083	Orphanet:306
 MONDO:0007716	alpha thalassemia-intellectual disability syndrome type 1	MONDO:0016513	Orphanet:98791	Orphanet:232288	obsolete alpha-thalassemia-related diseases
 MONDO:0007716	alpha thalassemia-intellectual disability syndrome type 1	MONDO:0035862	Orphanet:98791	Orphanet:611314	obsolete rare syndromic intellectual disability without multiple congenital anomalies/dysmorphic syndrome
 MONDO:0007716	alpha thalassemia-intellectual disability syndrome type 1	MONDO:8000032	Orphanet:98791	Orphanet:377789	obsolete malformation syndrome
-MONDO:0007727	autosomal dominant familial periodic fever	MONDO:0017369	Orphanet:32960	Orphanet:290839	obsolete autoinflammatory syndrome with immune deficiency
-MONDO:0007727	autosomal dominant familial periodic fever	MONDO:0017370	Orphanet:32960	Orphanet:290842	obsolete autoinflammatory syndrome with skin involvement
+MONDO:0007727	TNF receptor 1-associated periodic fever syndrome	MONDO:0017369	Orphanet:32960	Orphanet:290839	obsolete autoinflammatory syndrome with immune deficiency
+MONDO:0007727	TNF receptor 1-associated periodic fever syndrome	MONDO:0017370	Orphanet:32960	Orphanet:290842	obsolete autoinflammatory syndrome with skin involvement
 MONDO:0007732	Holt-Oram syndrome	MONDO:0015110	Orphanet:392	Orphanet:101934	obsolete genetic cardiac rhythm disease
 MONDO:0007732	Holt-Oram syndrome	MONDO:0015506	Orphanet:392	Orphanet:156532	obsolete rare syndrome with cardiac malformations
 MONDO:0007732	Holt-Oram syndrome	MONDO:0017432	Orphanet:392	Orphanet:294955	obsolete syndrome with limb reduction defects
@@ -4332,10 +4332,10 @@ MONDO:0011359	acromelic frontonasal dysostosis	MONDO:8000032	Orphanet:1827	Orpha
 MONDO:0011365	blepharophimosis - intellectual disability syndrome, SBBYS type	MONDO:0015778	Orphanet:3047	Orphanet:177107	obsolete syndromic hypothyroidism
 MONDO:0011365	blepharophimosis - intellectual disability syndrome, SBBYS type	MONDO:8000032	Orphanet:3047	Orphanet:377789	obsolete malformation syndrome
 MONDO:0011381	dominant beta-thalassemia	MONDO:8000031	Orphanet:231226	Orphanet:557494	obsolete subtype of a disorder
-MONDO:0011382	sickle cell anemia	MONDO:0017146	Orphanet:232	Orphanet:275752	obsolete sickle cell disease and related diseases
-MONDO:0011382	sickle cell anemia	MONDO:0018377	Orphanet:232	Orphanet:399185	obsolete rare hereditary disease with avascular necrosis
-MONDO:0011382	sickle cell anemia	MONDO:0018792	Orphanet:232	Orphanet:477771	obsolete Moyamoya syndrome
-MONDO:0011382	sickle cell anemia	MONDO:0019747	Orphanet:232	Orphanet:93614	obsolete hematological disorder with renal involvement
+MONDO:0011382	sickle cell disease	MONDO:0017146	Orphanet:232	Orphanet:275752	obsolete sickle cell disease and related diseases
+MONDO:0011382	sickle cell disease	MONDO:0018377	Orphanet:232	Orphanet:399185	obsolete rare hereditary disease with avascular necrosis
+MONDO:0011382	sickle cell disease	MONDO:0018792	Orphanet:232	Orphanet:477771	obsolete Moyamoya syndrome
+MONDO:0011382	sickle cell disease	MONDO:0019747	Orphanet:232	Orphanet:93614	obsolete hematological disorder with renal involvement
 MONDO:0011396	loricrin keratoderma	MONDO:0017262	Orphanet:79395	Orphanet:281082	obsolete inherited non-syndromic ichthyosis
 MONDO:0011396	loricrin keratoderma	MONDO:0017670	Orphanet:79395	Orphanet:307773	obsolete autosomal dominant diffuse mutilating palmoplantar keratoderma
 MONDO:0011397	autosomal dominant cerebellar ataxia, deafness and narcolepsy	MONDO:0019045	Orphanet:314404	Orphanet:68354	obsolete rare sleep disorder
@@ -8406,7 +8406,7 @@ MONDO:0017284	Xp22.13p22.2 duplication syndrome	MONDO:8000032	Orphanet:284180	Or
 MONDO:0017285	penoscrotal transposition	MONDO:0015933	Orphanet:2842	Orphanet:182121	obsolete non-syndromic urogenital tract malformation of male
 MONDO:0017285	penoscrotal transposition	MONDO:8000030	Orphanet:2842	Orphanet:377791	obsolete morphological anomaly
 MONDO:0017286	tempi syndrome	MONDO:0032013	Orphanet:284227	Orphanet:377792	obsolete clinical syndrome
-MONDO:0017287	IgG4-related disease	MONDO:0015939	Orphanet:284264	Orphanet:182228	obsolete systemic autoimmune disease
+MONDO:0017287	immunoglobulin G4-related sclerosing disease	MONDO:0015939	Orphanet:284264	Orphanet:182228	obsolete systemic autoimmune disease
 MONDO:0017289	fetal lung interstitial tumor	MONDO:8000031	Orphanet:284362	Orphanet:557494	obsolete subtype of a disorder
 MONDO:0017290	familial intrahepatic cholestasis	MONDO:0015115	Orphanet:284385	Orphanet:101940	obsolete rare genetic metabolic liver disease
 MONDO:0017291	reversible cerebral vasoconstriction syndrome	MONDO:0020011	Orphanet:284388	Orphanet:98022	obsolete rare headache disorder
@@ -11841,6 +11841,8 @@ MONDO:0032642	arthrogryposis, cleft palate, craniosynostosis, and impaired intel
 MONDO:0032642	arthrogryposis, cleft palate, craniosynostosis, and impaired intellectual development	MONDO:8000032	Orphanet:565858	Orphanet:377789	obsolete malformation syndrome
 MONDO:0032643	pontocerebellar hypoplasia, type 12	MONDO:8000032	Orphanet:611256	Orphanet:377789	obsolete malformation syndrome
 MONDO:0032653	cardiac-urogenital syndrome	MONDO:0043008	Orphanet:647811	Orphanet:330206	obsolete genetic multiple congenital anomalies/dysmorphic syndrome without intellectual disability
+MONDO:0032654	hyper-IgE recurrent infection syndrome 3, autosomal recessive	MONDO:0019305	Orphanet:641368	Orphanet:79391	obsolete immune deficiency with skin involvement
+MONDO:0032654	hyper-IgE recurrent infection syndrome 3, autosomal recessive	MONDO:0026166	Orphanet:641368	Orphanet:183494	obsolete genetic immune deficiency with skin involvement
 MONDO:0032672	intellectual developmental disorder with cardiac defects and dysmorphic facies	MONDO:0015506	Orphanet:562569	Orphanet:156532	obsolete rare syndrome with cardiac malformations
 MONDO:0032672	intellectual developmental disorder with cardiac defects and dysmorphic facies	MONDO:0035863	Orphanet:562569	Orphanet:611327	obsolete genetic multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0032672	intellectual developmental disorder with cardiac defects and dysmorphic facies	MONDO:8000032	Orphanet:562569	Orphanet:377789	obsolete malformation syndrome
@@ -12547,9 +12549,6 @@ MONDO:0100040	FOXG1 disorder	MONDO:0015680	Orphanet:561854	Orphanet:168778	obsol
 MONDO:0100040	FOXG1 disorder	MONDO:0017656	Orphanet:561854	Orphanet:306765	obsolete motor stereotypies
 MONDO:0100040	FOXG1 disorder	MONDO:0035862	Orphanet:561854	Orphanet:611314	obsolete rare syndromic intellectual disability without multiple congenital anomalies/dysmorphic syndrome
 MONDO:0100040	FOXG1 disorder	MONDO:8000031	Orphanet:598164	Orphanet:557494	obsolete subtype of a disorder
-MONDO:0100062	developmental and epileptic encephalopathy	MONDO:0015922	Orphanet:1934	Orphanet:182083	obsolete channelopathy with epilepsy
-MONDO:0100062	developmental and epileptic encephalopathy	MONDO:0032013	Orphanet:1934	Orphanet:377792	obsolete clinical syndrome
-MONDO:0100062	developmental and epileptic encephalopathy	MONDO:0035862	Orphanet:1934	Orphanet:611314	obsolete rare syndromic intellectual disability without multiple congenital anomalies/dysmorphic syndrome
 MONDO:0100101	fetal akinesia deformation sequence 1	MONDO:0015221	Orphanet:994	Orphanet:108993	obsolete non-syndromic respiratory or mediastinal malformation
 MONDO:0100101	fetal akinesia deformation sequence 1	MONDO:0015222	Orphanet:994	Orphanet:108995	obsolete syndromic respiratory or mediastinal malformation
 MONDO:0100101	fetal akinesia deformation sequence 1	MONDO:0043008	Orphanet:994	Orphanet:330206	obsolete genetic multiple congenital anomalies/dysmorphic syndrome without intellectual disability
@@ -12698,6 +12697,10 @@ MONDO:0800445	Birt-Hogg-Dube syndrome 1	MONDO:8000032	Orphanet:122	Orphanet:3777
 MONDO:0800446	bleeding diathesis due to thromboxane synthesis deficiency	MONDO:0018796	Orphanet:220443	Orphanet:477797	obsolete isolated constitutional thrombocytopenia
 MONDO:0800452	congenital amegakaryocytic thrombocytopenia 1	MONDO:0018796	Orphanet:3319	Orphanet:477797	obsolete isolated constitutional thrombocytopenia
 MONDO:0800478	trigeminal trophic syndrome	MONDO:0019546	Orphanet:664901	Orphanet:90077	obsolete other acquired skin disease
+MONDO:0800491	early-infantile DEE	MONDO:0015921	Orphanet:1934	Orphanet:182079	obsolete ARX-related epileptic encephalopathy
+MONDO:0800491	early-infantile DEE	MONDO:0015922	Orphanet:1934	Orphanet:182083	obsolete channelopathy with epilepsy
+MONDO:0800491	early-infantile DEE	MONDO:0032013	Orphanet:1934	Orphanet:377792	obsolete clinical syndrome
+MONDO:0800491	early-infantile DEE	MONDO:0035862	Orphanet:1934	Orphanet:611314	obsolete rare syndromic intellectual disability without multiple congenital anomalies/dysmorphic syndrome
 MONDO:0850007	syndromic lacrimal system disorder	MONDO:0020195	Orphanet:519274	Orphanet:98605	obsolete excretory apparatus of the lacrimal system anomaly
 MONDO:0850009	syndromic microspherophakia	MONDO:0020235	Orphanet:519294	Orphanet:98652	obsolete lens size anomaly
 MONDO:0850010	congenital optic disk excavation	MONDO:0020145	Orphanet:519333	Orphanet:98553	obsolete developmental defect of the eye
@@ -12816,8 +12819,6 @@ MONDO:0957397	intellectual developmental disorder, autosomal dominant 72	MONDO:0
 MONDO:0957397	intellectual developmental disorder, autosomal dominant 72	MONDO:8000032	Orphanet:652487	Orphanet:377789	obsolete malformation syndrome
 MONDO:0957404	obsolete pyogenic autoinflammatory syndrome of childhood	MONDO:0957018	Orphanet:324942	Orphanet:319719	autoinflammatory syndrome of childhood
 MONDO:0957421	borna virus encephalitis	MONDO:0015659	Orphanet:637051	Orphanet:166490	obsolete infectious disease with epilepsy
-MONDO:0957426	autosomal recessive hyper-IgE syndrome	MONDO:0019305	Orphanet:641368	Orphanet:79391	obsolete immune deficiency with skin involvement
-MONDO:0957426	autosomal recessive hyper-IgE syndrome	MONDO:0026166	Orphanet:641368	Orphanet:183494	obsolete genetic immune deficiency with skin involvement
 MONDO:0957430	childhood-onset schizophrenia	MONDO:0020016	Orphanet:641496	Orphanet:98033	obsolete rare neurologic disease with psychiatric involvement
 MONDO:0957431	endogenous Cushing syndrome	MONDO:0015124	Orphanet:641613	Orphanet:101954	obsolete rare adrenal disease
 MONDO:0957432	neonatal compartment syndrome	MONDO:0024471	Orphanet:641829	Orphanet:496924	obsolete non-inflammatory vasculopathy
