@@ -773,7 +773,7 @@ $(TMPDIR)/malacards.tsv:
 	wget "https://genecardscustomers.blob.core.windows.net/mondo/Mondo_MalaCards_Current.tsv" -O $@
 
 $(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv: $(TMPDIR)/malacards.tsv
-	awk 'NR==1 { print; print "ID	AI obo:mondo#curated_content_resource	>A oboInOwl:source"; next } { print }' $< > $@
+	awk 'NR==1 { print; print "ID	AT obo:mondo#curated_content_resource^^xsd:anyURI	>A oboInOwl:source"; next } { print }' $< > $@
 
 ###### ClinGen #########
 
