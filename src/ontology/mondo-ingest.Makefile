@@ -334,8 +334,15 @@ metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
 $(DOCS_DIR)/metrics/%.md: metadata/%-metrics.json | $(DOCS_DIR)/metrics/
 	jinjanate "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
 
+ALL_DBS=$(foreach n,$(ALL_COMPONENT_IDS), $(COMPONENTSDIR)/$(n).db)
+$(REPORTDIR)/iri-sources.txt $(REPORTDIR)/iri-sources.md: $(foreach n,$(ALL_COMPONENT_IDS), $(COMPONENTSDIR)/$(n).db)
+	python3 $(SCRIPTSDIR)/iri_sources.py --rel-paths $(ALL_DBS) --outpath-txt $(REPORTDIR)/iri-sources.txt --outpath-md $(REPORTDIR)/iri-sources.md
+
+.PHONY: iri-docs
+iri-docs: $(REPORTDIR)/iri-sources.md
+
 .PHONY: documentation
-documentation: $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs slurp-docs
+documentation: $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs slurp-docs iri-docs
 
 
 .PHONY: build-mondo-ingest
