@@ -17,6 +17,10 @@ MONDO:0000327	Buruli ulcer disease	skos:closeMatch	ICD10CM:A31.1	Cutaneous mycob
 MONDO:0000327	Buruli ulcer disease	skos:closeMatch	ICD10CM:A31.1	Cutaneous mycobacterial infection	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050456	LEXMATCH
 MONDO:0000337	exanthema subitum	skos:closeMatch	ICD10CM:B08.2	Exanthema subitum [sixth disease]	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050495	LEXMATCH
 MONDO:0000337	exanthema subitum	skos:closeMatch	ICD10CM:B08.2	Exanthema subitum [sixth disease]	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050495	LEXMATCH
+MONDO:0000345	Oropouche fever	skos:closeMatch	ICD10CM:A93.0	Oropouche virus disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050521	LEXMATCH
+MONDO:0000345	Oropouche fever	skos:closeMatch	ICD10CM:A93.0	Oropouche virus disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:0050521	LEXMATCH
+MONDO:0000345	Oropouche fever	skos:closeMatch	ICD10CM:A93.0	Oropouche virus disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050521	LEXMATCH
+MONDO:0000345	Oropouche fever	skos:closeMatch	ICD10CM:A93.0	Oropouche virus disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:0050521	LEXMATCH
 MONDO:0000367	taeniasis	skos:closeMatch	ICD10CM:B68.1	Taenia saginata taeniasis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050596	LEXMATCH
 MONDO:0000367	taeniasis	skos:closeMatch	ICD10CM:B68.1	Taenia saginata taeniasis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050596	LEXMATCH
 MONDO:0000390	vitelliform macular dystrophy	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050661	LEXMATCH
@@ -2738,8 +2742,8 @@ MONDO:0007690	aromatase excess syndrome	skos:closeMatch	ICD10CM:E30.1	Precocious
 MONDO:0007690	aromatase excess syndrome	skos:closeMatch	ICD10CM:E30.1	Precocious puberty	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0090122	LEXMATCH
 MONDO:0007698	hand-foot-genital syndrome	skos:closeMatch	ICD10CM:Q51.2	Other doubling of uterus	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060739	LEXMATCH
 MONDO:0007698	hand-foot-genital syndrome	skos:closeMatch	ICD10CM:Q51.2	Other doubling of uterus	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060739	LEXMATCH
-MONDO:0007727	autosomal dominant familial periodic fever	skos:closeMatch	ICD10CM:E85.0	Non-neuropathic heredofamilial amyloidosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0090018	LEXMATCH
-MONDO:0007727	autosomal dominant familial periodic fever	skos:closeMatch	ICD10CM:E85.0	Non-neuropathic heredofamilial amyloidosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0090018	LEXMATCH
+MONDO:0007727	TNF receptor 1-associated periodic fever syndrome	skos:closeMatch	ICD10CM:E85.0	Non-neuropathic heredofamilial amyloidosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0090018	LEXMATCH
+MONDO:0007727	TNF receptor 1-associated periodic fever syndrome	skos:closeMatch	ICD10CM:E85.0	Non-neuropathic heredofamilial amyloidosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0090018	LEXMATCH
 MONDO:0007732	Holt-Oram syndrome	skos:closeMatch	ICD10CM:Q87.2	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060468	LEXMATCH
 MONDO:0007732	Holt-Oram syndrome	skos:closeMatch	ICD10CM:Q87.2	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060468	LEXMATCH
 MONDO:0007739	Huntington disease	skos:closeMatch	ICD10CM:G10	Huntington's disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:12858	LEXMATCH
@@ -3074,8 +3078,8 @@ MONDO:0008783	Tangier disease	skos:closeMatch	ICD10CM:E78.6	Lipoprotein deficien
 MONDO:0008783	Tangier disease	skos:closeMatch	ICD10CM:E78.6	Lipoprotein deficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:1388	LEXMATCH
 MONDO:0008800	microphthalmia with limb anomalies	skos:closeMatch	ICD10CM:Q87.2	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060861	LEXMATCH
 MONDO:0008800	microphthalmia with limb anomalies	skos:closeMatch	ICD10CM:Q87.2	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060861	LEXMATCH
-MONDO:0008814	hyperargininemia	skos:closeMatch	ICD10CM:E72.21	Argininemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9278	LEXMATCH
-MONDO:0008814	hyperargininemia	skos:closeMatch	ICD10CM:E72.21	Argininemia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9278	LEXMATCH
+MONDO:0008814	arginase deficiency	skos:closeMatch	ICD10CM:E72.21	Argininemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:9278	LEXMATCH
+MONDO:0008814	arginase deficiency	skos:closeMatch	ICD10CM:E72.21	Argininemia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:9278	LEXMATCH
 MONDO:0008827	progressive pseudorheumatoid arthropathy of childhood	skos:closeMatch	ICD10CM:Q77.7	Spondyloepiphyseal dysplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0090004	LEXMATCH
 MONDO:0008827	progressive pseudorheumatoid arthropathy of childhood	skos:closeMatch	ICD10CM:Q77.7	Spondyloepiphyseal dysplasia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0090004	LEXMATCH
 MONDO:0008830	aspartylglucosaminuria	skos:closeMatch	ICD10CM:E77.1	Defects in glycoprotein degradation	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050461	LEXMATCH
@@ -3881,10 +3885,8 @@ MONDO:0011374	hypercholesterolemia, familial, 4	skos:closeMatch	ICD10CM:E78.0	Pu
 MONDO:0011374	hypercholesterolemia, familial, 4	skos:closeMatch	ICD10CM:E78.0	Pure hypercholesterolemia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0090105	LEXMATCH
 MONDO:0011377	long QT syndrome 3	skos:closeMatch	ICD10CM:I45.8	Other specified conduction disorders	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110646	LEXMATCH
 MONDO:0011377	long QT syndrome 3	skos:closeMatch	ICD10CM:I45.8	Other specified conduction disorders	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110646	LEXMATCH
-MONDO:0011382	sickle cell anemia	skos:closeMatch	ICD10CM:D57.1	Sickle-cell disease without crisis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:10923	LEXMATCH
-MONDO:0011382	sickle cell anemia	skos:closeMatch	ICD10CM:D57.1	Sickle-cell disease without crisis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:10923	LEXMATCH
-MONDO:0011382	sickle cell anemia	skos:closeMatch	ICD10CM:D57.2	Sickle-cell/Hb-C disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:10923	LEXMATCH
-MONDO:0011382	sickle cell anemia	skos:closeMatch	ICD10CM:D57.2	Sickle-cell/Hb-C disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:10923	LEXMATCH
+MONDO:0011382	sickle cell disease	skos:closeMatch	ICD10CM:D57	Sickle-cell disorders	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0081445	LEXMATCH
+MONDO:0011382	sickle cell disease	skos:closeMatch	ICD10CM:D57	Sickle-cell disorders	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0081445	LEXMATCH
 MONDO:0011383	autoimmune lymphoproliferative syndrome type 2A	skos:closeMatch	ICD10CM:D47.9	Neoplasm of uncertain behavior of lymphoid, hematopoietic and related tissue, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110115	LEXMATCH
 MONDO:0011383	autoimmune lymphoproliferative syndrome type 2A	skos:closeMatch	ICD10CM:D47.9	Neoplasm of uncertain behavior of lymphoid, hematopoietic and related tissue, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110115	LEXMATCH
 MONDO:0011389	autosomal dominant nonsyndromic hearing loss 16	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110547	LEXMATCH
@@ -5423,8 +5425,8 @@ MONDO:0017265	autosomal recessive congenital ichthyosis	skos:closeMatch	ICD10CM:
 MONDO:0017282	alveolar echinococcosis	skos:closeMatch	ICD10CM:B67.7	Echinococcus multilocularis infection, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:12148	LEXMATCH
 MONDO:0017282	alveolar echinococcosis	skos:closeMatch	ICD10CM:B67.7	Echinococcus multilocularis infection, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:12148	LEXMATCH
 MONDO:0017282	alveolar echinococcosis	skos:closeMatch	ICD10CM:B67.99	Other echinococcosis	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	echinococcosis	LEXMATCH
-MONDO:0017287	IgG4-related disease	skos:closeMatch	ICD10CM:M35.5	Multifocal fibrosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	multifocal fibrosclerosis	LEXMATCH
-MONDO:0017287	IgG4-related disease	skos:closeMatch	ICD10CM:M35.5	Multifocal fibrosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	multifocal fibrosclerosis	LEXMATCH
+MONDO:0017287	immunoglobulin G4-related sclerosing disease	skos:closeMatch	ICD10CM:M35.5	Multifocal fibrosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	multifocal fibrosclerosis	LEXMATCH
+MONDO:0017287	immunoglobulin G4-related sclerosing disease	skos:closeMatch	ICD10CM:M35.5	Multifocal fibrosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	multifocal fibrosclerosis	LEXMATCH
 MONDO:0017305	syndromic oculocutaneous albinism	skos:closeMatch	ICD10CM:E70.3	Albinism	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0017305	LEXMATCH
 MONDO:0017314	Ehlers-Danlos syndrome, vascular type	skos:closeMatch	ICD10CM:Q79.63	Vascular Ehlers-Danlos syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	vascular eds	LEXMATCH
 MONDO:0017314	Ehlers-Danlos syndrome, vascular type	skos:closeMatch	ICD10CM:Q79.63	Vascular Ehlers-Danlos syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	vascular ehlers-danlos syndrome	LEXMATCH
@@ -6167,11 +6169,13 @@ MONDO:0044816	familial idiopathic torsion dystonia	skos:closeMatch	ICD10CM:G24.1
 MONDO:0044816	familial idiopathic torsion dystonia	skos:closeMatch	ICD10CM:G24.1	Genetic torsion dystonia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	genetic torsion dystonia	LEXMATCH
 MONDO:0060690	phenytoin toxicity	skos:closeMatch	ICD10CM:Q86.1	Fetal hydantoin syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	fetal hydantoin syndrome	LEXMATCH
 MONDO:0060690	phenytoin toxicity	skos:closeMatch	ICD10CM:Q86.1	Fetal hydantoin syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	fetal hydantoin syndrome	LEXMATCH
-MONDO:0100079	developmental and epileptic encephalopathy, 6	skos:closeMatch	ICD10CM:G40.83	Dravet syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	dravet syndrome	LEXMATCH
-MONDO:0100079	developmental and epileptic encephalopathy, 6	skos:closeMatch	ICD10CM:G40.83	Dravet syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	dravet syndrome	LEXMATCH
+MONDO:0100079	developmental and epileptic encephalopathy, 6A	skos:closeMatch	ICD10CM:G40.83	Dravet syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	dravet syndrome	LEXMATCH
+MONDO:0100079	developmental and epileptic encephalopathy, 6A	skos:closeMatch	ICD10CM:G40.83	Dravet syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	dravet syndrome	LEXMATCH
 MONDO:0100081	sleep disorder	skos:closeMatch	ICD10CM:G47.5	Parasomnia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	parasomnia	LEXMATCH
 MONDO:0100081	sleep disorder	skos:closeMatch	ICD10CM:G47.5	Parasomnia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	parasomnia	LEXMATCH
 MONDO:0100081	sleep disorder	skos:closeMatch	ICD10CM:G47.59	Other parasomnia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	parasomnia	LEXMATCH
+MONDO:0100116	Middle East respiratory syndrome	skos:closeMatch	ICD10CM:B34.2	Coronavirus infection, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:0080642	LEXMATCH
+MONDO:0100116	Middle East respiratory syndrome	skos:closeMatch	ICD10CM:B34.2	Coronavirus infection, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:0080642	LEXMATCH
 MONDO:0100125	hallucinogen-persisting perception disorder	skos:closeMatch	ICD10CM:F16.183	Hallucinogen abuse with hallucinogen persisting perception disorder (flashbacks)	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0100125	LEXMATCH
 MONDO:0100125	hallucinogen-persisting perception disorder	skos:closeMatch	ICD10CM:F16.183	Hallucinogen abuse with hallucinogen persisting perception disorder (flashbacks)	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	mondo:0100125	LEXMATCH
 MONDO:0100244	paroxysmal nocturnal hemoglobinuria	skos:closeMatch	ICD10CM:D59.5	Paroxysmal nocturnal hemoglobinuria [Marchiafava-Micheli]	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060284	LEXMATCH
