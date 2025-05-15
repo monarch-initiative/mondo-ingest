@@ -774,6 +774,7 @@ $(TMPDIR)/malacards.tsv:
 
 $(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv: $(TMPDIR)/malacards.tsv
 	awk 'NR==1 { print; print "ID	AT obo:mondo#curated_content_resource^^xsd:anyURI	>A oboInOwl:source"; next } { print }' $< > $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv
 
 ###### ClinGen #########
 
