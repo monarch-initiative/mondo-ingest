@@ -653,6 +653,7 @@ EXTERNAL_FILES = \
 	mondo-medgen \
 	mondo-omim-genes \
 	mondo-otar-subset \
+	mondo-malacards \
 	nando-mappings \
 	gard \
 	nord \
@@ -763,6 +764,17 @@ $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv:
 
 $(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv:
 	wget "https://github.com/monarch-initiative/medgen/releases/latest/download/medgen-xrefs.robot.template.tsv" -O $@
+
+###### MalaCards #########
+
+# Managed by support@genecards.org
+
+$(TMPDIR)/malacards.tsv:
+	wget "https://genecardscustomers.blob.core.windows.net/mondo/Mondo_MalaCards_Current.tsv" -O $@
+
+$(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv: $(TMPDIR)/malacards.tsv
+	awk 'NR==1 { print; print "ID	AT obo:mondo#curated_content_resource^^xsd:anyURI	>A oboInOwl:source"; next } { print }' $< > $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv
 
 ###### ClinGen #########
 
