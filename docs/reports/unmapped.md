@@ -5,9 +5,9 @@
 | [ICD10CM](./unmapped_icd10cm.md)                 | 95,847      | 15,452         | 0                | 0                         | 80,395                                    | 1,166                     | 79,229                      | 98.5%                     |
 | [ICD11FOUNDATION](./unmapped_icd11foundation.md) | 57,874      | 0              | 5,775            | 5,772                     | 52,099                                    | 4,104                     | 47,995                      | 92.1%                     |
 | [NCIT](./unmapped_ncit.md)                       | 191,123     | 169,937        | 5,221            | 5,216                     | 15,965                                    | 3,840                     | 12,125                      | 75.9%                     |
-| [DOID](./unmapped_doid.md)                       | 14,360      | 2,675          | 2,502            | 2,490                     | 11,683                                    | 11,442                    | 241                         | 2.1%                      |
+| [DOID](./unmapped_doid.md)                       | 14,372      | 2,675          | 2,502            | 2,490                     | 11,695                                    | 11,442                    | 253                         | 2.2%                      |
 | [ORDO](./unmapped_ordo.md)                       | 15,632      | 6,310          | 1,444            | 1,272                     | 9,322                                     | 9,196                     | 126                         | 1.4%                      |
-| [OMIM](./unmapped_omim.md)                       | 29,728      | 19,503         | 1,371            | 1,325                     | 8,855                                     | 8,841                     | 14                          | 0.2%                      |
+| [OMIM](./unmapped_omim.md)                       | 29,746      | 19,511         | 1,373            | 1,326                     | 8,863                                     | 8,839                     | 24                          | 0.3%                      |
 
 `Ontology`: Name of ontology  
 `Tot terms`: Total terms in ontology  

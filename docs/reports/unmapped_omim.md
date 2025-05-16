@@ -2,19 +2,29 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/omim_mapping_status.tsv)
 
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id    | subject_label                                                                         |
-|:--------------|:--------------------------------------------------------------------------------------|
-| OMIMPS:158000 | Monilethrix                                                                           |
-| OMIM:620975   | blood group, anton system                                                             |
-| OMIM:621140   | congenital disorder of glycosylation type 1ee with or without immunodeficiency        |
-| OMIM:621180   | cranioectodermal dysplasia 5                                                          |
-| OMIM:621160   | diarrhea 14, congenital                                                               |
-| OMIM:621179   | diarrhea 15, congenital                                                               |
-| OMIM:621143   | holoprosencephaly 10                                                                  |
-| OMIM:621169   | monilethrix 2                                                                         |
-| OMIM:621170   | monilethrix 3                                                                         |
-| OMIM:621154   | neurodevelopmental disorder with poor growth, seizures, and brain abnormalities       |
-| OMIM:621150   | neurodevelopmental disorder with thin corpus callosum, hypotonia, and absent language |
-| OMIM:621152   | neurodevelopmental disorder with white matter abnormalities and gait disturbance      |
-| OMIM:621122   | paul-chao neurodevelopmental syndrome                                                 |
-| OMIM:621164   | polycystic kidney disease 9, susceptibility to                                        |
+| subject_id    | subject_label                                                                                           |
+|:--------------|:--------------------------------------------------------------------------------------------------------|
+| OMIM:621193   | FICUS syndrome                                                                                          |
+| OMIMPS:125850 | Maturity-onset diabetes of the young                                                                    |
+| OMIMPS:158000 | Monilethrix                                                                                             |
+| OMIM:620975   | blood group, anton system                                                                               |
+| OMIM:621195   | combined oxidative phosphorylation deficiency 60                                                        |
+| OMIM:621140   | congenital disorder of glycosylation type 1ee with or without immunodeficiency                          |
+| OMIM:621180   | cranioectodermal dysplasia 5                                                                            |
+| OMIM:621192   | craniofaciocardiohepatic syndrome                                                                       |
+| OMIM:621160   | diarrhea 14, congenital                                                                                 |
+| OMIM:621179   | diarrhea 15, congenital                                                                                 |
+| OMIM:621143   | holoprosencephaly 10                                                                                    |
+| OMIM:621191   | leukodystrophy and cerebellar atrophy                                                                   |
+| OMIM:621196   | maturity-onset diabetes of the young, type 12                                                           |
+| OMIM:621169   | monilethrix 2                                                                                           |
+| OMIM:621170   | monilethrix 3                                                                                           |
+| OMIM:621154   | neurodevelopmental disorder with poor growth, seizures, and brain abnormalities                         |
+| OMIM:621182   | neurodevelopmental disorder with poor or absent speech, dysmorphic facies, and behavioral abnormalities |
+| OMIM:621150   | neurodevelopmental disorder with thin corpus callosum, hypotonia, and absent language                   |
+| OMIM:621152   | neurodevelopmental disorder with white matter abnormalities and gait disturbance                        |
+| OMIM:621122   | paul-chao neurodevelopmental syndrome                                                                   |
+| OMIM:621164   | polycystic kidney disease 9, susceptibility to                                                          |
+| OMIM:301148   | retinitis pigmentosa 99                                                                                 |
+| OMIM:621194   | spermatogenic failure 99                                                                                |
+| OMIM:621184   | tayoun-maawali syndrome                                                                                 |
