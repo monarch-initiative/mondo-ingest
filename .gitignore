@@ -1,23 +1,86 @@
+# ODK-managed rules, do not modify
+# If you need to add your own ignore rules, you may do so below
+# the "End ODK-managed rules" marker at the end of this file.
+.DS_Store
+semantic.cache
+bin/
+
+*.tmp
+*.tmp.obo
+*.tmp.owl
+*.tmp.json
+*-relation-graph.tsv.gz
+.template.db
+
+.github/token.txt
+
+/mondo-ingest.owl
+/mondo-ingest.obo
+/mondo-ingest.json
+/mondo-ingest.db
+/mondo-ingest-base.*
+/mondo-ingest-basic.*
+/mondo-ingest-full.*
+/mondo-ingest-simple.*
+/mondo-ingest-simple-non-classified.*
+/mappings/
+/patterns/
+/reports/
+/subsets/
+
+src/ontology/mirror
+src/ontology/mirror/*
+src/ontology/reports/*
+!src/ontology/reports/release-diff.md
+src/ontology/mondo-ingest.owl
+src/ontology/mondo-ingest.obo
+src/ontology/mondo-ingest.json
+src/ontology/mondo-ingest.db
+src/ontology/mondo-ingest-base.*
+src/ontology/mondo-ingest-basic.*
+src/ontology/mondo-ingest-full.*
+src/ontology/mondo-ingest-simple.*
+src/ontology/mondo-ingest-simple-non-classified.*
+
+src/ontology/seed.txt
+src/ontology/dosdp-tools.log
+src/ontology/ed_definitions_merged.owl
+src/ontology/ontologyterms.txt
+src/ontology/simple_seed.txt
+src/ontology/patterns
+src/ontology/merged-mondo-ingest-edit.owl
+src/ontology/mondo-ingest-edit.properties
+
+src/ontology/target/
+src/ontology/tmp/*
+!src/ontology/tmp/.gitkeep
+!src/ontology/tmp/README.md
+
+src/ontology/run.sh.conf
+src/ontology/run.sh.env
+
+src/ontology/imports/*_terms_combined.txt
+
+src/patterns/data/**/*.ofn
+src/patterns/data/**/*.txt
+src/patterns/pattern_owl_seed.txt
+src/patterns/all_pattern_terms.txt
+
+# End of ODK-managed rules
 # General
 # - directories
 __pycache__/
 /.idea/
 /.run/
-bin/
 cache/
 semantic.cache/
 # - patterns
 *.code-workspace
-*.tmp
-*.tmp.obo
-*.tmp.owl
-*.tmp.json
 *.db
 !/tests/input/**/*.db
 .vscode/*
 
 # - static
-.DS_Store
 
 # Specific files, patterns, and directories
 *relation-graph*
@@ -42,21 +105,6 @@ src/mappings/mondo-sources-all-lexical-2.sssom.tsv
 
 # src/ontology/
 src/ontology/.template.db
-src/ontology/mondo-ingest.owl
-src/ontology/mondo-ingest.obo
-src/ontology/mondo-ingest.json
-src/ontology/mondo-ingest-base.*
-src/ontology/mondo-ingest-basic.*
-src/ontology/mondo-ingest-full.*
-src/ontology/mondo-ingest-simple.*
-src/ontology/mondo-ingest-simple-non-classified.*
-src/ontology/seed.txt
-src/ontology/dosdp-tools.log
-src/ontology/ed_definitions_merged.owl
-src/ontology/ontologyterms.txt
-src/ontology/simple_seed.txt
-src/ontology/patterns
-src/ontology/merged-mondo-ingest-edit.owl
 
 # src/ontology/components/
 src/ontology/components/*
@@ -67,11 +115,8 @@ src/ontology/imports/*.owl
 !src/ontology/imports/omo_import.owl
 !src/ontology/imports/ro_import.owl
 src/ontology/imports/*.json
-src/ontology/imports/*_terms_combined.txt
 
 # src/ontology/mirror/
-src/ontology/mirror
-src/ontology/mirror/*
 
 # src/ontology/reports/
 src/ontology/reports/*.ttl
@@ -88,18 +133,10 @@ src/ontology/reports/mondo-ingest-edit.owl-obo-report.tsv
 #!src/ontology/reports/*excluded_terms.txt
 
 # src/ontology/target/
-src/ontology/target/
 
 # src/ontology/tmp/
-src/ontology/tmp/*
-!src/ontology/tmp/.gitkeep
-!src/ontology/tmp/README.md
 
 # src/patterns/
-src/patterns/data/**/*.ofn
-src/patterns/data/**/*.txt
-src/patterns/pattern_owl_seed.txt
-src/patterns/all_pattern_terms.txt
 
 src/scripts/.ipynb_checkpoints/*
 src/scripts/mondo_unmapped.tsv
