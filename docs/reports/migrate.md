@@ -3,11 +3,11 @@
 |:------------------------------------------------|:------|
 | [ORDO](./migrate_ordo.md)                       | 61    |
 | [ICD11FOUNDATION](./migrate_icd11foundation.md) | 4,587 |
-| [DOID](./migrate_doid.md)                       | 243   |
+| [ICD10CM](./migrate_icd10cm.md)                 | 3,696 |
+| [OMIM](./migrate_omim.md)                       | 28    |
+| [DOID](./migrate_doid.md)                       | 256   |
 | [NCIT](./migrate_ncit.md)                       | 2,250 |
-| [OMIM](./migrate_omim.md)                       | 15    |
 | [ICD10WHO](./migrate_icd10who.md)               | 119   |
-| [ICD10CM](./migrate_icd10cm.md)                 | 1,894 |
 
 ### Codebook
 `Ontology`: Name of ontology    

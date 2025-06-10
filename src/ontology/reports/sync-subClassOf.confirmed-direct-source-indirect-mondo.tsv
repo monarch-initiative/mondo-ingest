@@ -217,7 +217,6 @@ MONDO:0001402	vaginal cancer	MONDO:0001433	DOID:119	DOID:121	vaginal disorder
 MONDO:0001407	tracheal cancer	MONDO:0002567	DOID:11920	DOID:3225	tracheal disorder
 MONDO:0001416	female reproductive organ cancer	MONDO:0002263	DOID:120	DOID:229	female reproductive system disorder
 MONDO:0001418	trachea sarcoma	MONDO:0005089	DOID:12002	DOID:1115	sarcoma
-MONDO:0001449	lymphocytic choriomeningitis	MONDO:0005108	DOID:12155	DOID:934	viral infectious disease
 MONDO:0001461	tinea corporis	MONDO:0005093	DOID:12179	DOID:37	skin disorder
 MONDO:0001470	anal margin squamous cell carcinoma	MONDO:0005096	DOID:12239	DOID:1749	squamous cell carcinoma
 MONDO:0001516	spinal muscular atrophy	MONDO:0020128	DOID:12377	DOID:231	motor neuron disorder
@@ -1030,7 +1029,7 @@ MONDO:0005812	influenza	MONDO:0005087	DOID:8469	DOID:1579	respiratory system dis
 MONDO:0005812	influenza	MONDO:0005108	DOID:8469	DOID:934	viral infectious disease
 MONDO:0005813	interdigitating dendritic cell sarcoma	MONDO:0006247	DOID:7848	DOID:5621	histiocytic and dendritic cell neoplasm
 MONDO:0005814	intestinal cancer	MONDO:0005020	DOID:10155	DOID:5295	intestinal disorder
-MONDO:0005820	Lassa fever	MONDO:0005108	DOID:9537	DOID:934	viral infectious disease
+MONDO:0005820	Lassa fever	MONDO:0005650	DOID:9537	DOID:3944	Arenaviridae infectious disease
 MONDO:0005833	lymphatic system disorder	MONDO:0005046	DOID:75	DOID:2914	immune system disorder
 MONDO:0005835	Lynch syndrome	MONDO:0002254	DOID:3883	DOID:225	syndromic disease
 MONDO:0005836	male reproductive organ cancer	MONDO:0003150	DOID:3856	DOID:48	male reproductive system disorder
@@ -1189,7 +1188,7 @@ MONDO:0007019	vulvovaginitis	MONDO:0002263	DOID:2273	DOID:229	female reproductiv
 MONDO:0007040	Sakati-Nyhan syndrome	MONDO:0019796	DOID:0060359	DOID:12960	acrocephalosyndactyly
 MONDO:0007043	Pfeiffer syndrome	MONDO:0019796	DOID:14705	DOID:12960	acrocephalosyndactyly
 MONDO:0007052	growth hormone secreting pituitary adenoma 1	MONDO:0006373	DOID:0112009	DOID:3829	pituitary gland adenoma
-MONDO:0007057	Acroosteolysis dominant type	MONDO:0005381	DOID:2736	DOID:0080001	bone disorder
+MONDO:0007057	acroosteolysis dominant type	MONDO:0005381	DOID:2736	DOID:0080001	bone disorder
 MONDO:0007064	severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency	MONDO:0015974	DOID:5810	DOID:627	severe combined immunodeficiency
 MONDO:0007072	ADULT syndrome	MONDO:0002254	DOID:0050601	DOID:225	syndromic disease
 MONDO:0007079	alcohol dependence	MONDO:0004938	DOID:0050741	DOID:9973	substance dependence
@@ -1838,7 +1837,6 @@ MONDO:0011697	Waardenburg syndrome type 2C	MONDO:0018094	DOID:0110951	DOID:9258	
 MONDO:0011702	dilated cardiomyopathy 1L	MONDO:0005021	DOID:0110436	DOID:12930	dilated cardiomyopathy
 MONDO:0011706	Kufor-Rakeb syndrome	MONDO:0017279	DOID:0060556	DOID:0060894	young-onset Parkinson disease
 MONDO:0011717	hyperinsulinism-hyperammonemia syndrome	MONDO:0005803	DOID:0070217	DOID:13317	hyperinsulinemic hypoglycemia
-MONDO:0011738	bilateral frontoparietal polymicrogyria	MONDO:0000087	DOID:0080922	DOID:0080918	polymicrogyria
 MONDO:0011740	Carney-Stratakis syndrome	MONDO:0002254	DOID:0080533	DOID:225	syndromic disease
 MONDO:0011743	Alzheimer disease 4	MONDO:0000426	DOID:0110040	DOID:0050736	autosomal dominant disease
 MONDO:0011743	Alzheimer disease 4	MONDO:0004975	DOID:0110040	DOID:10652	Alzheimer disease
@@ -2007,6 +2005,7 @@ MONDO:0012688	cataract 17 multiple types	MONDO:0005129	DOID:0110270	DOID:83	cata
 MONDO:0012689	premature ovarian failure 5	MONDO:0005387	DOID:0080862	DOID:5426	primary ovarian failure
 MONDO:0012698	Waardenburg syndrome type 2E	MONDO:0018094	DOID:0110956	DOID:9258	Waardenburg syndrome
 MONDO:0012704	dilated cardiomyopathy 1X	MONDO:0005021	DOID:0110444	DOID:12930	dilated cardiomyopathy
+MONDO:0012705	familial temporal lobe epilepsy 3	MONDO:0005115	DOID:0060750	DOID:3328	temporal lobe epilepsy
 MONDO:0012714	early-onset myopathy with fatal cardiomyopathy	MONDO:0006025	DOID:0081341	DOID:0050737	autosomal recessive disease
 MONDO:0012714	early-onset myopathy with fatal cardiomyopathy	MONDO:0019952	DOID:0081341	DOID:0081337	congenital myopathy
 MONDO:0012717	renal hypomagnesemia 4	MONDO:0018100	DOID:0060882	DOID:0060879	familial primary hypomagnesemia
@@ -2602,12 +2601,7 @@ MONDO:0017814	primary bone lymphoma	MONDO:0005062	DOID:6759	DOID:0060058	lymphom
 MONDO:0017851	erythrokeratodermia variabilis	MONDO:0005093	DOID:0050467	DOID:37	skin disorder
 MONDO:0017853	hypersensitivity pneumonitis	MONDO:0005271	DOID:841	DOID:1205	allergic disease
 MONDO:0017858	acute erythroid leukemia	MONDO:0018874	DOID:0080780	DOID:9119	acute myeloid leukemia
-MONDO:0017872	Lujo hemorrhagic fever	MONDO:0005108	DOID:0050202	DOID:934	viral infectious disease
-MONDO:0017874	Argentine hemorrhagic fever	MONDO:0005108	DOID:0050194	DOID:934	viral infectious disease
-MONDO:0017875	Bolivian hemorrhagic fever	MONDO:0005108	DOID:0050195	DOID:934	viral infectious disease
-MONDO:0017876	Venezuelan hemorrhagic fever	MONDO:0005108	DOID:0050196	DOID:934	viral infectious disease
-MONDO:0017877	Brazilian hemorrhagic fever	MONDO:0005108	DOID:0050197	DOID:934	viral infectious disease
-MONDO:0017878	Chapare hemorrhagic fever	MONDO:0005108	DOID:0050198	DOID:934	viral infectious disease
+MONDO:0017874	Argentine hemorrhagic fever	MONDO:0005650	DOID:0050194	DOID:3944	Arenaviridae infectious disease
 MONDO:0017879	hantavirus pulmonary syndrome	MONDO:0005108	DOID:14472	DOID:934	viral infectious disease
 MONDO:0017880	Rift valley fever	MONDO:0005108	DOID:1328	DOID:934	viral infectious disease
 MONDO:0017881	Kyasanur forest disease	MONDO:0005108	DOID:11320	DOID:934	viral infectious disease
@@ -2805,6 +2799,8 @@ MONDO:0021503	benign neoplasm of gallbladder	MONDO:0005281	DOID:0080640	DOID:006
 MONDO:0021569	Emery-Dreifuss muscular dystrophy 2, autosomal dominant	MONDO:0000426	DOID:0070247	DOID:0050736	autosomal dominant disease
 MONDO:0021569	Emery-Dreifuss muscular dystrophy 2, autosomal dominant	MONDO:0016830	DOID:0070247	DOID:11726	Emery-Dreifuss muscular dystrophy
 MONDO:0022519	autoimmune myocarditis	MONDO:0000603	DOID:0080767	DOID:0060051	autoimmune disorder of cardiovascular system
+MONDO:0022529	BK-virus nephropathy	MONDO:0005108	DOID:0040086	DOID:934	viral infectious disease
+MONDO:0022529	BK-virus nephropathy	MONDO:0005240	DOID:0040086	DOID:557	kidney disorder
 MONDO:0022687	cerebellar degeneration	MONDO:0005560	DOID:1443	DOID:936	brain disorder
 MONDO:0023419	hyperprolinemia	MONDO:0004736	DOID:0080541	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0024240	eccrine carcinoma	MONDO:0004970	DOID:4920	DOID:299	adenocarcinoma
@@ -2965,31 +2961,64 @@ MONDO:0968949	palmoplantar keratoderma, epidermolytic	MONDO:0006590	DOID:0080223
 MONDO:8000008	Martsolf syndrome 1	MONDO:0002254	DOID:0111586	DOID:225	syndromic disease
 MONDO:0000245	tinea imbricata	MONDO:0004678	ICD10CM:B35.5	ICD10CM:B35	dermatophytosis
 MONDO:0000367	taeniasis	MONDO:0004664	ICD10CM:B68	ICD10CM:B65-B83	helminthiasis
+MONDO:0000620	breast benign neoplasm	MONDO:0005165	ICD10CM:D24	ICD10CM:D10-D36	benign neoplasm
+MONDO:0000751	cervical polyp	MONDO:0005079	ICD10CM:N84.1	ICD10CM:N84	polyp
 MONDO:0000916	intestinal infectious disease	MONDO:0005550	ICD10CM:A00-A09	ICD10CM:A00-B99	infectious disease
+MONDO:0000927	asymptomatic neurosyphilis	MONDO:0004497	ICD10CM:A52.2	ICD10CM:A52	tertiary syphilis
+MONDO:0000956	small intestine cancer	MONDO:0002516	ICD10CM:C17	ICD10CM:C15-C26	digestive system cancer
+MONDO:0001062	pyloric antrum cancer	MONDO:0001056	ICD10CM:C16.3	ICD10CM:C16	gastric cancer
 MONDO:0001176	lens disorder	MONDO:0002022	ICD10CM:H25-H28	ICD10CM:H00-H59	disorder of orbital region
 MONDO:0001195	spotted fever	MONDO:0006956	ICD10CM:A77	ICD10CM:A75-A79	Rickettsiosis
+MONDO:0001212	non-suppurative otitis media	MONDO:0003276	ICD10CM:H65	ICD10CM:H65-H75	middle ear disorder
+MONDO:0001213	serous glue ear	MONDO:0001212	ICD10CM:H65.2	ICD10CM:H65	non-suppurative otitis media
+MONDO:0001224	Angelucci syndrome	MONDO:0003799	ICD10CM:H10.1	ICD10CM:H10	conjunctivitis
+MONDO:0001235	appendix cancer	MONDO:0021063	ICD10CM:C18.1	ICD10CM:C18	malignant colon neoplasm
+MONDO:0001246	typhus	MONDO:0006956	ICD10CM:A75	ICD10CM:A75-A79	Rickettsiosis
+MONDO:0001249	trachoma	MONDO:0021697	ICD10CM:A71	ICD10CM:A70-A74	chlamydia infectious disease
+MONDO:0001262	African histoplasmosis	MONDO:0018312	ICD10CM:B39.5	ICD10CM:B39	histoplasmosis
+MONDO:0001312	acute serous otitis media	MONDO:0001212	ICD10CM:H65.0	ICD10CM:H65	non-suppurative otitis media
+MONDO:0001347	facioscapulohumeral muscular dystrophy	MONDO:0020121	ICD10CM:G71.02	ICD10CM:G71.0	muscular dystrophy
 MONDO:0001367	chronic congestive splenomegaly	MONDO:0002332	ICD10CM:D73.2	ICD10CM:D73	splenic disorder
 MONDO:0001416	female reproductive organ cancer	MONDO:0005070	ICD10CM:C51-C58	ICD10CM:C00-D49	neoplasm
 MONDO:0001444	Chagas disease	MONDO:0002428	ICD10CM:B57	ICD10CM:B50-B64	protozoa infectious disease
+MONDO:0001463	splenic flexure cancer	MONDO:0021063	ICD10CM:C18.5	ICD10CM:C18	malignant colon neoplasm
 MONDO:0001633	central retinal artery occlusion	MONDO:0002089	ICD10CM:H34.1	ICD10CM:H34	retinal vascular occlusion
 MONDO:0001797	chancroid	MONDO:0021681	ICD10CM:A57	ICD10CM:A50-A64	sexually transmitted disease
 MONDO:0001815	extrapyramidal and movement disease	MONDO:0005071	ICD10CM:G20-G26	ICD10CM:G00-G99	nervous system disorder
+MONDO:0001868	primary angle-closure glaucoma	MONDO:0005041	ICD10CM:H40.2	ICD10CM:H40	glaucoma
 MONDO:0001876	renal artery atheroma	MONDO:0005311	ICD10CM:I70.1	ICD10CM:I70	atherosclerosis
+MONDO:0001914	scleromalacia perforans	MONDO:0001718	ICD10CM:H15.05	ICD10CM:H15.0	scleritis
+MONDO:0001936	brawny scleritis	MONDO:0001718	ICD10CM:H15.02	ICD10CM:H15.0	scleritis
 MONDO:0001943	Plasmodium malariae malaria	MONDO:0002428	ICD10CM:B52	ICD10CM:B50-B64	protozoa infectious disease
+MONDO:0001952	parietal lobe cancer	MONDO:0001657	ICD10CM:C71.3	ICD10CM:C71	brain cancer
 MONDO:0002026	candidiasis	MONDO:0002041	ICD10CM:B37	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0002067	female breast upper-inner quadrant cancer	MONDO:0007254	ICD10CM:C50.2	ICD10CM:C50	breast cancer
 MONDO:0002068	female breast lower-inner quadrant cancer	MONDO:0007254	ICD10CM:C50.3	ICD10CM:C50	breast cancer
 MONDO:0002069	female breast axillary tail cancer	MONDO:0007254	ICD10CM:C50.6	ICD10CM:C50	breast cancer
+MONDO:0002178	placenta cancer	MONDO:0001416	ICD10CM:C58	ICD10CM:C51-C58	female reproductive organ cancer
+MONDO:0002218	temporal lobe cancer	MONDO:0001657	ICD10CM:C71.2	ICD10CM:C71	brain cancer
+MONDO:0002328	intracranial hemangioma	MONDO:0006500	ICD10CM:D18.02	ICD10CM:D18.0	hemangioma
+MONDO:0002357	hepatic flexure cancer	MONDO:0021063	ICD10CM:C18.3	ICD10CM:C18	malignant colon neoplasm
 MONDO:0002425	rectosigmoid junction cancer	MONDO:0002516	ICD10CM:C19	ICD10CM:C15-C26	digestive system cancer
 MONDO:0002428	protozoa infectious disease	MONDO:0005550	ICD10CM:B50-B64	ICD10CM:A00-B99	infectious disease
 MONDO:0002516	digestive system cancer	MONDO:0005070	ICD10CM:C15-C26	ICD10CM:C00-D49	neoplasm
+MONDO:0002679	cerebral infarction	MONDO:0011057	ICD10CM:I63	ICD10CM:I60-I69	cerebrovascular disorder
 MONDO:0002875	parasitic ectoparasitic infectious disease	MONDO:0005550	ICD10CM:B85-B89	ICD10CM:A00-B99	infectious disease
 MONDO:0002898	skin cancer	MONDO:0005070	ICD10CM:C43-C44	ICD10CM:C00-D49	neoplasm
+MONDO:0002912	brainstem cancer	MONDO:0001657	ICD10CM:C71.7	ICD10CM:C71	brain cancer
+MONDO:0002974	cervical cancer	MONDO:0001416	ICD10CM:C53	ICD10CM:C51-C58	female reproductive organ cancer
 MONDO:0003664	hemolytic anemia	MONDO:0005570	ICD10CM:D55-D59	ICD10CM:D50-D89	hematologic disorder
 MONDO:0004473	epiglottis cancer	MONDO:0004608	ICD10CM:C10.1	ICD10CM:C10	oropharynx cancer
+MONDO:0004497	tertiary syphilis	MONDO:0021681	ICD10CM:A52	ICD10CM:A50-A64	sexually transmitted disease
 MONDO:0004525	scabies	MONDO:0002875	ICD10CM:B86	ICD10CM:B85-B89	parasitic ectoparasitic infectious disease
+MONDO:0004633	Hodgkin's lymphoma, mixed cellularity	MONDO:0004952	ICD10CM:C81.2	ICD10CM:C81	Hodgkins lymphoma
 MONDO:0004664	helminthiasis	MONDO:0005550	ICD10CM:B65-B83	ICD10CM:A00-B99	infectious disease
+MONDO:0004665	nodular sclerosis classical Hodgkin lymphoma	MONDO:0004952	ICD10CM:C81.1	ICD10CM:C81	Hodgkins lymphoma
+MONDO:0004667	sublingual gland cancer	MONDO:0004669	ICD10CM:C08.1	ICD10CM:C08	salivary gland cancer
 MONDO:0004678	dermatophytosis	MONDO:0002041	ICD10CM:B35	ICD10CM:B35-B49	fungal infectious disease
+MONDO:0004724	submandibular gland cancer	MONDO:0004669	ICD10CM:C08.0	ICD10CM:C08	salivary gland cancer
+MONDO:0004847	senile cataract	MONDO:0001176	ICD10CM:H25	ICD10CM:H25-H28	lens disorder
+MONDO:0004948	B-cell chronic lymphocytic leukemia	MONDO:0005402	ICD10CM:C91.1	ICD10CM:C91	lymphoid leukemia
 MONDO:0005021	dilated cardiomyopathy	MONDO:0004994	ICD10CM:I42.0	ICD10CM:I42	cardiomyopathy
 MONDO:0005041	glaucoma	MONDO:0002022	ICD10CM:H40-H42	ICD10CM:H00-H59	disorder of orbital region
 MONDO:0005044	hypertensive disorder	MONDO:0005385	ICD10CM:I10-I16	ICD10CM:I00-I99	vascular disorder
@@ -3002,63 +3031,107 @@ MONDO:0005519	renal pelvis carcinoma	MONDO:0006295	ICD10CM:C65	ICD10CM:C64-C68	m
 MONDO:0005654	ascariasis	MONDO:0004664	ICD10CM:B77	ICD10CM:B65-B83	helminthiasis
 MONDO:0005657	aspergillosis	MONDO:0002041	ICD10CM:B44	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0005672	blastomycosis	MONDO:0002041	ICD10CM:B40	ICD10CM:B35-B49	fungal infectious disease
+MONDO:0005680	Brill-Zinsser disease	MONDO:0001246	ICD10CM:A75.1	ICD10CM:A75	typhus
 MONDO:0005706	coccidioidomycosis	MONDO:0002041	ICD10CM:B38	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0005714	congenital syphilis	MONDO:0021681	ICD10CM:A50	ICD10CM:A50-A64	sexually transmitted disease
 MONDO:0005724	cryptococcosis	MONDO:0002041	ICD10CM:B45	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0005738	echinococcosis	MONDO:0004664	ICD10CM:B67	ICD10CM:B65-B83	helminthiasis
 MONDO:0005746	enterobiasis	MONDO:0004664	ICD10CM:B80	ICD10CM:B65-B83	helminthiasis
 MONDO:0005777	granuloma inguinale	MONDO:0021681	ICD10CM:A58	ICD10CM:A50-A64	sexually transmitted disease
+MONDO:0005834	lymphogranuloma venereum	MONDO:0021681	ICD10CM:A55	ICD10CM:A50-A64	sexually transmitted disease
 MONDO:0005844	chalazion	MONDO:0003382	ICD10CM:H00.1	ICD10CM:H00	eyelid disorder
 MONDO:0005848	miliary tuberculosis	MONDO:0018076	ICD10CM:A19	ICD10CM:A15-A19	tuberculosis
 MONDO:0005894	paracoccidioidomycosis	MONDO:0002041	ICD10CM:B41	ICD10CM:B35-B49	fungal infectious disease
+MONDO:0005920	Plasmodium falciparum malaria	MONDO:0002428	ICD10CM:B50	ICD10CM:B50-B64	protozoa infectious disease
 MONDO:0005921	Plasmodium vivax malaria	MONDO:0002428	ICD10CM:B51	ICD10CM:B50-B64	protozoa infectious disease
+MONDO:0005974	strongyloidiasis	MONDO:0004664	ICD10CM:B78	ICD10CM:B65-B83	helminthiasis
 MONDO:0005989	toxoplasmosis	MONDO:0002428	ICD10CM:B58	ICD10CM:B50-B64	protozoa infectious disease
 MONDO:0005996	trichuriasis	MONDO:0004664	ICD10CM:B79	ICD10CM:B65-B83	helminthiasis
 MONDO:0006004	vasomotor rhinitis	MONDO:0003014	ICD10CM:J30.0	ICD10CM:J30	rhinitis
 MONDO:0006011	viral hepatitis	MONDO:0005550	ICD10CM:B15-B19	ICD10CM:A00-B99	infectious disease
 MONDO:0006014	vulvovaginal candidiasis	MONDO:0002026	ICD10CM:B37.3	ICD10CM:B37	candidiasis
+MONDO:0006107	benign thyroid gland neoplasm	MONDO:0005165	ICD10CM:D34	ICD10CM:D10-D36	benign neoplasm
 MONDO:0006170	conjunctival disorder	MONDO:0002022	ICD10CM:H10-H11	ICD10CM:H00-H59	disorder of orbital region
+MONDO:0006270	lobular breast carcinoma in situ	MONDO:0004658	ICD10CM:D05.0	ICD10CM:D05	breast carcinoma in situ
 MONDO:0006295	malignant urinary system neoplasm	MONDO:0005070	ICD10CM:C64-C68	ICD10CM:C00-D49	neoplasm
 MONDO:0006496	palsy	MONDO:0005071	ICD10CM:G80-G83	ICD10CM:G00-G99	nervous system disorder
+MONDO:0006519	rectal cancer	MONDO:0002516	ICD10CM:C20	ICD10CM:C15-C26	digestive system cancer
 MONDO:0006534	cholinergic urticaria	MONDO:0005492	ICD10CM:L50.5	ICD10CM:L50	urticaria
+MONDO:0006543	epidermolysis bullosa dystrophica	MONDO:0006541	ICD10CM:Q81.2	ICD10CM:Q81	epidermolysis bullosa
 MONDO:0006618	vibratory urticaria	MONDO:0005492	ICD10CM:L50.4	ICD10CM:L50	urticaria
 MONDO:0006643	alcoholic cardiomyopathy	MONDO:0004994	ICD10CM:I42.6	ICD10CM:I42	cardiomyopathy
 MONDO:0006826	kwashiorkor	MONDO:0006873	ICD10CM:E40	ICD10CM:E40-E46	nutritional deficiency disease
 MONDO:0006848	marasmus	MONDO:0006873	ICD10CM:E41	ICD10CM:E40-E46	nutritional deficiency disease
+MONDO:0006861	myeloid sarcoma	MONDO:0004643	ICD10CM:C92.3	ICD10CM:C92	myeloid leukemia
 MONDO:0006946	renal osteodystrophy	MONDO:0001343	ICD10CM:N25.0	ICD10CM:N25	impaired renal function disease
 MONDO:0006947	renovascular hypertension	MONDO:0005044	ICD10CM:I15.0	ICD10CM:I15	hypertensive disorder
 MONDO:0006956	Rickettsiosis	MONDO:0005550	ICD10CM:A75-A79	ICD10CM:A00-B99	infectious disease
+MONDO:0006982	subacute thyroiditis	MONDO:0004126	ICD10CM:E06.1	ICD10CM:E06	thyroiditis
 MONDO:0007080	glucocorticoid-remediable aldosteronism	MONDO:0001422	ICD10CM:E26.02	ICD10CM:E26.0	primary aldosteronism
 MONDO:0007448	familial dermatographia	MONDO:0005492	ICD10CM:L50.3	ICD10CM:L50	urticaria
+MONDO:0007699	Hashimoto thyroiditis	MONDO:0004126	ICD10CM:E06.3	ICD10CM:E06	thyroiditis
 MONDO:0007810	autosomal dominant ichthyosis vulgaris	MONDO:0015947	ICD10CM:Q80.0	ICD10CM:Q80	inherited ichthyosis
+MONDO:0007886	uterine corpus leiomyoma	MONDO:0005165	ICD10CM:D25	ICD10CM:D10-D36	benign neoplasm
+MONDO:0008090	cyclic hematopoiesis	MONDO:0001609	ICD10CM:D70.4	ICD10CM:D70	agranulocytosis
 MONDO:0008575	nicotine dependence	MONDO:0002494	ICD10CM:F17	ICD10CM:F10-F19	substance-related disorder
+MONDO:0008585	HELLP syndrome	MONDO:0005081	ICD10CM:O14.2	ICD10CM:O14	preeclampsia
+MONDO:0008608	Down syndrome	MONDO:0019040	ICD10CM:Q90	ICD10CM:Q90-Q99	chromosomal disorder
 MONDO:0008890	progressive bulbar palsy	MONDO:0020128	ICD10CM:G12.22	ICD10CM:G12.2	motor neuron disorder
+MONDO:0009182	junctional epidermolysis bullosa Herlitz type	MONDO:0006541	ICD10CM:Q81.1	ICD10CM:Q81	epidermolysis bullosa
+MONDO:0009696	juvenile myoclonic epilepsy	MONDO:0005027	ICD10CM:G40.B	ICD10CM:G40	epilepsy
+MONDO:0009756	Niemann-Pick disease type A	MONDO:0001982	ICD10CM:E75.240	ICD10CM:E75.24	Niemann-Pick disease
+MONDO:0010138	thyrotoxicosis	MONDO:0003240	ICD10CM:E05	ICD10CM:E00-E07	thyroid gland disorder
+MONDO:0010564	red-green color blindness	MONDO:0001703	ICD10CM:H53.53	ICD10CM:H53.5	color vision disorder
+MONDO:0010811	benign prostatic hyperplasia	MONDO:0003150	ICD10CM:N40	ICD10CM:N40-N53	male reproductive system disorder
 MONDO:0011057	cerebrovascular disorder	MONDO:0005385	ICD10CM:I60-I69	ICD10CM:I00-I99	vascular disorder
 MONDO:0011728	benign essential blepharospasm	MONDO:0003441	ICD10CM:G24.5	ICD10CM:G24	dystonic disorder
+MONDO:0011871	Niemann-Pick disease type B	MONDO:0001982	ICD10CM:E75.241	ICD10CM:E75.24	Niemann-Pick disease
+MONDO:0012883	acute promyelocytic leukemia	MONDO:0004643	ICD10CM:C92.4	ICD10CM:C92	myeloid leukemia
+MONDO:0013433	primary sclerosing cholangitis	MONDO:0004789	ICD10CM:K83.01	ICD10CM:K83.0	cholangitis
 MONDO:0015484	cysticercosis	MONDO:0004664	ICD10CM:B69	ICD10CM:B65-B83	helminthiasis
 MONDO:0015573	subacute cutaneous lupus erythematosus	MONDO:0004670	ICD10CM:L93.1	ICD10CM:L93	lupus erythematosus
+MONDO:0015622	wound myiasis	MONDO:0019147	ICD10CM:B87.1	ICD10CM:B87	myiasis
 MONDO:0015925	interstitial lung disease	MONDO:0005087	ICD10CM:J80-J84	ICD10CM:J00-J99	respiratory system disorder
+MONDO:0016020	frontal encephalocele	MONDO:0017078	ICD10CM:Q01.0	ICD10CM:Q01	cephalocele
 MONDO:0016158	narcolepsy-cataplexy syndrome	MONDO:0003406	ICD10CM:G47.4	ICD10CM:G47	sleep-wake disorder
+MONDO:0016215	spastic quadriplegic cerebral palsy	MONDO:0006497	ICD10CM:G80.0	ICD10CM:G80	cerebral palsy
+MONDO:0016451	idiopathic hypersomnia with long sleep time	MONDO:0005466	ICD10CM:G47.11	ICD10CM:G47.1	hypersomnia
+MONDO:0016452	idiopathic hypersomnia without long sleep time	MONDO:0005466	ICD10CM:G47.12	ICD10CM:G47.1	hypersomnia
 MONDO:0016472	dracunculiasis	MONDO:0004664	ICD10CM:B72	ICD10CM:B65-B83	helminthiasis
+MONDO:0017080	occipital encephalocele	MONDO:0017078	ICD10CM:Q01.2	ICD10CM:Q01	cephalocele
 MONDO:0017137	onchocerciasis	MONDO:0004664	ICD10CM:B73	ICD10CM:B65-B83	helminthiasis
 MONDO:0017610	epidermolysis bullosa simplex	MONDO:0006541	ICD10CM:Q81.0	ICD10CM:Q81	epidermolysis bullosa
 MONDO:0018076	tuberculosis	MONDO:0005550	ICD10CM:A15-A19	ICD10CM:A00-B99	infectious disease
+MONDO:0018155	lateral sclerosis	MONDO:0020128	ICD10CM:G12.23	ICD10CM:G12.2	motor neuron disorder
+MONDO:0018301	interstitial cystitis	MONDO:0006032	ICD10CM:N30.1	ICD10CM:N30	cystitis
 MONDO:0018312	histoplasmosis	MONDO:0002041	ICD10CM:B39	ICD10CM:B35-B49	fungal infectious disease
+MONDO:0018871	acute myelomonocytic leukemia M4	MONDO:0004643	ICD10CM:C92.5	ICD10CM:C92	myeloid leukemia
+MONDO:0018925	familial or sporadic hemiplegic migraine	MONDO:0005277	ICD10CM:G43.4	ICD10CM:G43	migraine disorder
+MONDO:0018935	hairy cell leukemia	MONDO:0005402	ICD10CM:C91.4	ICD10CM:C91	lymphoid leukemia
+MONDO:0019065	amyloidosis	MONDO:0005066	ICD10CM:E85	ICD10CM:E70-E88	metabolic disease
 MONDO:0019136	Zygomycosis	MONDO:0002041	ICD10CM:B46	ICD10CM:B35-B49	fungal infectious disease
+MONDO:0019210	cutaneous neuroendocrine carcinoma	MONDO:0002898	ICD10CM:C4A	ICD10CM:C43-C44	skin cancer
 MONDO:0019322	pemphigus vegetans	MONDO:0006594	ICD10CM:L10.1	ICD10CM:L10	pemphigus
 MONDO:0019345	shigellosis	MONDO:0000916	ICD10CM:A03	ICD10CM:A00-A09	intestinal infectious disease
 MONDO:0019356	urogenital tract malformation	MONDO:0021147	ICD10CM:Q60-Q64	ICD10CM:Q00-Q99	disorder of development or morphogenesis
 MONDO:0019444	trichinellosis	MONDO:0004664	ICD10CM:B75	ICD10CM:B65-B83	helminthiasis
+MONDO:0019456	acute myeloid leukemia with multilineage dysplasia	MONDO:0004643	ICD10CM:C92.A	ICD10CM:C92	myeloid leukemia
 MONDO:0019558	discoid lupus erythematosus	MONDO:0004670	ICD10CM:L93.0	ICD10CM:L93	lupus erythematosus
 MONDO:0019992	pseudohypoparathyroidism	MONDO:0001220	ICD10CM:E20.1	ICD10CM:E20	hypoparathyroidism
 MONDO:0020022	central nervous system malformation	MONDO:0021147	ICD10CM:Q00-Q07	ICD10CM:Q00-Q99	disorder of development or morphogenesis
 MONDO:0020800	demyelinating disease of central nervous system	MONDO:0005071	ICD10CM:G35-G37	ICD10CM:G00-G99	nervous system disorder
+MONDO:0021063	malignant colon neoplasm	MONDO:0002516	ICD10CM:C18	ICD10CM:C15-C26	digestive system cancer
 MONDO:0021527	benign neoplasm of meninges	MONDO:0005165	ICD10CM:D32	ICD10CM:D10-D36	benign neoplasm
 MONDO:0021697	chlamydia infectious disease	MONDO:0005550	ICD10CM:A70-A74	ICD10CM:A00-B99	infectious disease
 MONDO:0024356	primary central sleep apnea syndrome	MONDO:0005296	ICD10CM:G47.31	ICD10CM:G47.3	sleep apnea syndrome
 MONDO:0024644	myocardial ischemia	MONDO:0005385	ICD10CM:I20-I25	ICD10CM:I00-I99	vascular disorder
+MONDO:0043878	hereditary optic atrophy	MONDO:0003608	ICD10CM:H47.22	ICD10CM:H47.2	optic atrophy
 MONDO:0044210	thalassemia minor	MONDO:0000984	ICD10CM:D56.3	ICD10CM:D56	thalassemia
+MONDO:0044816	familial idiopathic torsion dystonia	MONDO:0003441	ICD10CM:G24.1	ICD10CM:G24	dystonic disorder
+MONDO:0044983	benign lipomatous neoplasm	MONDO:0005165	ICD10CM:D17	ICD10CM:D10-D36	benign neoplasm
 MONDO:0056798	disorder of appendix	MONDO:0004335	ICD10CM:K35-K38	ICD10CM:K00-K95	digestive system disorder
+MONDO:0100345	lactose intolerance	MONDO:0005066	ICD10CM:E73	ICD10CM:E70-E88	metabolic disease
+MONDO:0100370	acute hepatitis B virus infection	MONDO:0006011	ICD10CM:B16	ICD10CM:B15-B19	viral hepatitis
 MONDO:0100491	generalized pustular psoriasis	MONDO:0005083	ICD10CM:L40.1	ICD10CM:L40	psoriasis
 MONDO:0000240	invasive aspergillosis	MONDO:0005657	icd11.foundation:1314810340	icd11.foundation:1913468488	aspergillosis
 MONDO:0000450	secondary progressive multiple sclerosis	MONDO:0005301	icd11.foundation:1045965709	icd11.foundation:1298865187	multiple sclerosis
@@ -3802,7 +3875,7 @@ MONDO:0010319	syndromic X-linked intellectual disability Hedera type	MONDO:00201
 MONDO:0010335	X-linked cone-rod dystrophy 3	MONDO:0015993	OMIM:300476	OMIMPS:120970	cone-rod dystrophy
 MONDO:0010349	ovarian dysgenesis 2	MONDO:0019852	OMIM:300510	OMIMPS:311360	inherited primary ovarian failure
 MONDO:0010358	hypophosphatemic rickets, X-linked recessive	MONDO:0000044	OMIM:300554	OMIMPS:193100	hereditary hypophosphatemic rickets
-MONDO:0010360	parkinson disease 12	MONDO:0005180	OMIM:300557	OMIMPS:168600	Parkinson disease
+MONDO:0010360	Parkinson disease 12	MONDO:0005180	OMIM:300557	OMIMPS:168600	Parkinson disease
 MONDO:0010378	X-linked hereditary sensory and autonomic neuropathy with hearing loss	MONDO:0020768	OMIM:300614	OMIMPS:304500	X-linked deafness
 MONDO:0010385	X-linked lymphoproliferative disease due to XIAP deficiency	MONDO:0016537	OMIM:300635	OMIMPS:308240	lymphoproliferative syndrome
 MONDO:0010386	immunodeficiency 33	MONDO:0021094	OMIM:300636	OMIMPS:300755	immunodeficiency disease
@@ -3880,7 +3953,7 @@ MONDO:0011187	polydactyly, postaxial, type A2	MONDO:0020927	OMIM:602085	OMIMPS:1
 MONDO:0011195	Usher syndrome type 1E	MONDO:0019501	OMIM:602097	OMIMPS:276900	Usher syndrome
 MONDO:0011196	amyotrophic lateral sclerosis type 5	MONDO:0005144	OMIM:602099	OMIMPS:105400	familial amyotrophic lateral sclerosis
 MONDO:0011216	hemochromatosis type 2A	MONDO:0006507	OMIM:602390	OMIMPS:235200	hereditary hemochromatosis
-MONDO:0011220	parkinson disease 3, autosomal dominant	MONDO:0005180	OMIM:602404	OMIMPS:168600	Parkinson disease
+MONDO:0011220	Parkinson disease 3, autosomal dominant	MONDO:0005180	OMIM:602404	OMIMPS:168600	Parkinson disease
 MONDO:0011236	hyperinsulinism due to glucokinase deficiency	MONDO:0005803	OMIM:602485	OMIMPS:256450	hyperinsulinemic hypoglycemia
 MONDO:0011242	Bartter disease type 4A	MONDO:0015231	OMIM:602522	OMIMPS:601678	Bartter syndrome
 MONDO:0011264	torsion dystonia 6	MONDO:0044807	OMIM:602629	OMIMPS:128100	inherited dystonia
@@ -3925,7 +3998,7 @@ MONDO:0011702	dilated cardiomyopathy 1L	MONDO:0016333	OMIM:606685	OMIMPS:115200	
 MONDO:0011706	Kufor-Rakeb syndrome	MONDO:0005180	OMIM:606693	OMIMPS:168600	Parkinson disease
 MONDO:0011717	hyperinsulinism-hyperammonemia syndrome	MONDO:0005803	OMIM:606762	OMIMPS:256450	hyperinsulinemic hypoglycemia
 MONDO:0011725	Crigler-Najjar syndrome type 2	MONDO:0002408	OMIM:606785	OMIMPS:237450	hereditary hyperbilirubinemia
-MONDO:0011737	parkinson disease 10	MONDO:0005180	OMIM:606852	OMIMPS:168600	Parkinson disease
+MONDO:0011737	Parkinson disease 10	MONDO:0005180	OMIM:606852	OMIMPS:168600	Parkinson disease
 MONDO:0011748	Usher syndrome type 1G	MONDO:0019501	OMIM:606943	OMIMPS:276900	Usher syndrome
 MONDO:0011749	oculocutaneous albinism type 1B	MONDO:0018910	OMIM:606952	OMIMPS:203100	oculocutaneous albinism
 MONDO:0011758	Hurler syndrome	MONDO:0019249	OMIM:607014	OMIMPS:607014	mucopolysaccharidosis
@@ -4040,6 +4113,7 @@ MONDO:0012688	cataract 17 multiple types	MONDO:0005129	OMIM:611544	OMIMPS:116200
 MONDO:0012698	Waardenburg syndrome type 2E	MONDO:0018094	OMIM:611584	OMIMPS:193500	Waardenburg syndrome
 MONDO:0012703	lissencephaly due to TUBA1A mutation	MONDO:0018838	OMIM:611603	OMIMPS:607432	lissencephaly spectrum disorders
 MONDO:0012704	dilated cardiomyopathy 1X	MONDO:0016333	OMIM:611615	OMIMPS:115200	familial dilated cardiomyopathy
+MONDO:0012705	familial temporal lobe epilepsy 3	MONDO:0005115	OMIM:611630	OMIMPS:600512	temporal lobe epilepsy
 MONDO:0012714	early-onset myopathy with fatal cardiomyopathy	MONDO:0019952	OMIM:611705	OMIMPS:117000	congenital myopathy
 MONDO:0012717	renal hypomagnesemia 4	MONDO:0018100	OMIM:611718	OMIMPS:602014	familial primary hypomagnesemia
 MONDO:0012744	dilated cardiomyopathy 1Y	MONDO:0016333	OMIM:611878	OMIMPS:115200	familial dilated cardiomyopathy
@@ -4576,7 +4650,7 @@ MONDO:0006913	pneumococcal meningitis	MONDO:0020010	Orphanet:55655	Orphanet:9801
 MONDO:0007041	Apert syndrome	MONDO:0015338	Orphanet:87	Orphanet:139393	syndromic craniosynostosis
 MONDO:0007042	Saethre-Chotzen syndrome	MONDO:0015338	Orphanet:794	Orphanet:139393	syndromic craniosynostosis
 MONDO:0007043	Pfeiffer syndrome	MONDO:0015338	Orphanet:710	Orphanet:139393	syndromic craniosynostosis
-MONDO:0007057	Acroosteolysis dominant type	MONDO:0019707	Orphanet:955	Orphanet:93449	primary osteolysis
+MONDO:0007057	acroosteolysis dominant type	MONDO:0019707	Orphanet:955	Orphanet:93449	primary osteolysis
 MONDO:0007097	Finnish type amyloidosis	MONDO:0019065	Orphanet:85448	Orphanet:69	amyloidosis
 MONDO:0007099	familial visceral amyloidosis	MONDO:0019065	Orphanet:85450	Orphanet:69	amyloidosis
 MONDO:0007100	familial amyloid neuropathy	MONDO:0019065	Orphanet:271861	Orphanet:69	amyloidosis

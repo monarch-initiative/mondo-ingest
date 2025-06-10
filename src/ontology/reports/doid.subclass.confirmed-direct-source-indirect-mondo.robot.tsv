@@ -217,7 +217,6 @@ MONDO:0001402	vaginal cancer	MONDO:0001433	DOID:119	DOID:121	vaginal disorder
 MONDO:0001407	tracheal cancer	MONDO:0002567	DOID:11920	DOID:3225	tracheal disorder
 MONDO:0001416	female reproductive organ cancer	MONDO:0002263	DOID:120	DOID:229	female reproductive system disorder
 MONDO:0001418	trachea sarcoma	MONDO:0005089	DOID:12002	DOID:1115	sarcoma
-MONDO:0001449	lymphocytic choriomeningitis	MONDO:0005108	DOID:12155	DOID:934	viral infectious disease
 MONDO:0001461	tinea corporis	MONDO:0005093	DOID:12179	DOID:37	skin disorder
 MONDO:0001470	anal margin squamous cell carcinoma	MONDO:0005096	DOID:12239	DOID:1749	squamous cell carcinoma
 MONDO:0001516	spinal muscular atrophy	MONDO:0020128	DOID:12377	DOID:231	motor neuron disorder
@@ -1030,7 +1029,7 @@ MONDO:0005812	influenza	MONDO:0005087	DOID:8469	DOID:1579	respiratory system dis
 MONDO:0005812	influenza	MONDO:0005108	DOID:8469	DOID:934	viral infectious disease
 MONDO:0005813	interdigitating dendritic cell sarcoma	MONDO:0006247	DOID:7848	DOID:5621	histiocytic and dendritic cell neoplasm
 MONDO:0005814	intestinal cancer	MONDO:0005020	DOID:10155	DOID:5295	intestinal disorder
-MONDO:0005820	Lassa fever	MONDO:0005108	DOID:9537	DOID:934	viral infectious disease
+MONDO:0005820	Lassa fever	MONDO:0005650	DOID:9537	DOID:3944	Arenaviridae infectious disease
 MONDO:0005833	lymphatic system disorder	MONDO:0005046	DOID:75	DOID:2914	immune system disorder
 MONDO:0005835	Lynch syndrome	MONDO:0002254	DOID:3883	DOID:225	syndromic disease
 MONDO:0005836	male reproductive organ cancer	MONDO:0003150	DOID:3856	DOID:48	male reproductive system disorder
@@ -1189,7 +1188,7 @@ MONDO:0007019	vulvovaginitis	MONDO:0002263	DOID:2273	DOID:229	female reproductiv
 MONDO:0007040	Sakati-Nyhan syndrome	MONDO:0019796	DOID:0060359	DOID:12960	acrocephalosyndactyly
 MONDO:0007043	Pfeiffer syndrome	MONDO:0019796	DOID:14705	DOID:12960	acrocephalosyndactyly
 MONDO:0007052	growth hormone secreting pituitary adenoma 1	MONDO:0006373	DOID:0112009	DOID:3829	pituitary gland adenoma
-MONDO:0007057	Acroosteolysis dominant type	MONDO:0005381	DOID:2736	DOID:0080001	bone disorder
+MONDO:0007057	acroosteolysis dominant type	MONDO:0005381	DOID:2736	DOID:0080001	bone disorder
 MONDO:0007064	severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency	MONDO:0015974	DOID:5810	DOID:627	severe combined immunodeficiency
 MONDO:0007072	ADULT syndrome	MONDO:0002254	DOID:0050601	DOID:225	syndromic disease
 MONDO:0007079	alcohol dependence	MONDO:0004938	DOID:0050741	DOID:9973	substance dependence
@@ -1838,7 +1837,6 @@ MONDO:0011697	Waardenburg syndrome type 2C	MONDO:0018094	DOID:0110951	DOID:9258	
 MONDO:0011702	dilated cardiomyopathy 1L	MONDO:0005021	DOID:0110436	DOID:12930	dilated cardiomyopathy
 MONDO:0011706	Kufor-Rakeb syndrome	MONDO:0017279	DOID:0060556	DOID:0060894	young-onset Parkinson disease
 MONDO:0011717	hyperinsulinism-hyperammonemia syndrome	MONDO:0005803	DOID:0070217	DOID:13317	hyperinsulinemic hypoglycemia
-MONDO:0011738	bilateral frontoparietal polymicrogyria	MONDO:0000087	DOID:0080922	DOID:0080918	polymicrogyria
 MONDO:0011740	Carney-Stratakis syndrome	MONDO:0002254	DOID:0080533	DOID:225	syndromic disease
 MONDO:0011743	Alzheimer disease 4	MONDO:0000426	DOID:0110040	DOID:0050736	autosomal dominant disease
 MONDO:0011743	Alzheimer disease 4	MONDO:0004975	DOID:0110040	DOID:10652	Alzheimer disease
@@ -2007,6 +2005,7 @@ MONDO:0012688	cataract 17 multiple types	MONDO:0005129	DOID:0110270	DOID:83	cata
 MONDO:0012689	premature ovarian failure 5	MONDO:0005387	DOID:0080862	DOID:5426	primary ovarian failure
 MONDO:0012698	Waardenburg syndrome type 2E	MONDO:0018094	DOID:0110956	DOID:9258	Waardenburg syndrome
 MONDO:0012704	dilated cardiomyopathy 1X	MONDO:0005021	DOID:0110444	DOID:12930	dilated cardiomyopathy
+MONDO:0012705	familial temporal lobe epilepsy 3	MONDO:0005115	DOID:0060750	DOID:3328	temporal lobe epilepsy
 MONDO:0012714	early-onset myopathy with fatal cardiomyopathy	MONDO:0006025	DOID:0081341	DOID:0050737	autosomal recessive disease
 MONDO:0012714	early-onset myopathy with fatal cardiomyopathy	MONDO:0019952	DOID:0081341	DOID:0081337	congenital myopathy
 MONDO:0012717	renal hypomagnesemia 4	MONDO:0018100	DOID:0060882	DOID:0060879	familial primary hypomagnesemia
@@ -2602,12 +2601,7 @@ MONDO:0017814	primary bone lymphoma	MONDO:0005062	DOID:6759	DOID:0060058	lymphom
 MONDO:0017851	erythrokeratodermia variabilis	MONDO:0005093	DOID:0050467	DOID:37	skin disorder
 MONDO:0017853	hypersensitivity pneumonitis	MONDO:0005271	DOID:841	DOID:1205	allergic disease
 MONDO:0017858	acute erythroid leukemia	MONDO:0018874	DOID:0080780	DOID:9119	acute myeloid leukemia
-MONDO:0017872	Lujo hemorrhagic fever	MONDO:0005108	DOID:0050202	DOID:934	viral infectious disease
-MONDO:0017874	Argentine hemorrhagic fever	MONDO:0005108	DOID:0050194	DOID:934	viral infectious disease
-MONDO:0017875	Bolivian hemorrhagic fever	MONDO:0005108	DOID:0050195	DOID:934	viral infectious disease
-MONDO:0017876	Venezuelan hemorrhagic fever	MONDO:0005108	DOID:0050196	DOID:934	viral infectious disease
-MONDO:0017877	Brazilian hemorrhagic fever	MONDO:0005108	DOID:0050197	DOID:934	viral infectious disease
-MONDO:0017878	Chapare hemorrhagic fever	MONDO:0005108	DOID:0050198	DOID:934	viral infectious disease
+MONDO:0017874	Argentine hemorrhagic fever	MONDO:0005650	DOID:0050194	DOID:3944	Arenaviridae infectious disease
 MONDO:0017879	hantavirus pulmonary syndrome	MONDO:0005108	DOID:14472	DOID:934	viral infectious disease
 MONDO:0017880	Rift valley fever	MONDO:0005108	DOID:1328	DOID:934	viral infectious disease
 MONDO:0017881	Kyasanur forest disease	MONDO:0005108	DOID:11320	DOID:934	viral infectious disease
@@ -2805,6 +2799,8 @@ MONDO:0021503	benign neoplasm of gallbladder	MONDO:0005281	DOID:0080640	DOID:006
 MONDO:0021569	Emery-Dreifuss muscular dystrophy 2, autosomal dominant	MONDO:0000426	DOID:0070247	DOID:0050736	autosomal dominant disease
 MONDO:0021569	Emery-Dreifuss muscular dystrophy 2, autosomal dominant	MONDO:0016830	DOID:0070247	DOID:11726	Emery-Dreifuss muscular dystrophy
 MONDO:0022519	autoimmune myocarditis	MONDO:0000603	DOID:0080767	DOID:0060051	autoimmune disorder of cardiovascular system
+MONDO:0022529	BK-virus nephropathy	MONDO:0005108	DOID:0040086	DOID:934	viral infectious disease
+MONDO:0022529	BK-virus nephropathy	MONDO:0005240	DOID:0040086	DOID:557	kidney disorder
 MONDO:0022687	cerebellar degeneration	MONDO:0005560	DOID:1443	DOID:936	brain disorder
 MONDO:0023419	hyperprolinemia	MONDO:0004736	DOID:0080541	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0024240	eccrine carcinoma	MONDO:0004970	DOID:4920	DOID:299	adenocarcinoma

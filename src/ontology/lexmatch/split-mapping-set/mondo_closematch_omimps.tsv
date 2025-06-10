@@ -1,0 +1,5 @@
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0018911	maturity-onset diabetes of the young	skos:closeMatch	OMIMPS:125850	Maturity-onset diabetes of the young	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050524	LEXMATCH
+MONDO:0018911	maturity-onset diabetes of the young	skos:closeMatch	OMIMPS:125850	Maturity-onset diabetes of the young	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:0050524	LEXMATCH
+MONDO:0018911	maturity-onset diabetes of the young	skos:closeMatch	OMIMPS:125850	Maturity-onset diabetes of the young	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050524	LEXMATCH
+MONDO:0018911	maturity-onset diabetes of the young	skos:closeMatch	OMIMPS:125850	Maturity-onset diabetes of the young	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:0050524	LEXMATCH

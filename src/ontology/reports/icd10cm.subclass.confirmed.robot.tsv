@@ -1,142 +1,361 @@
 subject_mondo_id	subject_mondo_label	object_mondo_id	subject_source_id	object_source_id	object_mondo_label
 ID		SC %	>A oboInOwl:source		
 MONDO:0000226	mineral metabolism disease	MONDO:0005066	ICD10CM:E83	ICD10CM:E70-E88	metabolic disease
+MONDO:0000397	ataxic cerebral palsy	MONDO:0006497	ICD10CM:G80.4	ICD10CM:G80	cerebral palsy
+MONDO:0000703	collagenous colitis	MONDO:0000702	ICD10CM:K52.831	ICD10CM:K52.83	microscopic colitis
+MONDO:0000704	lymphocytic colitis	MONDO:0000702	ICD10CM:K52.832	ICD10CM:K52.83	microscopic colitis
+MONDO:0000920	duodenum cancer	MONDO:0000956	ICD10CM:C17.0	ICD10CM:C17	small intestine cancer
 MONDO:0000940	trypanosomiasis	MONDO:0002428	ICD10CM:B56	ICD10CM:B50-B64	protozoa infectious disease
 MONDO:0000952	cancer of long bone of lower limb	MONDO:0024311	ICD10CM:C40.2	ICD10CM:C40	cancer affecting bone of limb skeleton
 MONDO:0000953	cancer of short bone of lower limb	MONDO:0024311	ICD10CM:C40.3	ICD10CM:C40	cancer affecting bone of limb skeleton
+MONDO:0000955	ileum cancer	MONDO:0000956	ICD10CM:C17.2	ICD10CM:C17	small intestine cancer
+MONDO:0000980	aortic atherosclerosis	MONDO:0005311	ICD10CM:I70.0	ICD10CM:I70	atherosclerosis
 MONDO:0000987	cholesterolosis of gallbladder	MONDO:0005281	ICD10CM:K82.4	ICD10CM:K82	gallbladder disorder
+MONDO:0000997	monocular esotropia	MONDO:0004896	ICD10CM:H50.01	ICD10CM:H50.0	esotropia
 MONDO:0001024	pneumonic plague	MONDO:0019095	ICD10CM:A20.2	ICD10CM:A20	plague
+MONDO:0001033	mycotic corneal ulcer	MONDO:0004577	ICD10CM:H16.06	ICD10CM:H16.0	corneal ulcer
+MONDO:0001034	marginal corneal ulcer	MONDO:0004577	ICD10CM:H16.04	ICD10CM:H16.0	corneal ulcer
+MONDO:0001037	ring corneal ulcer	MONDO:0004577	ICD10CM:H16.02	ICD10CM:H16.0	corneal ulcer
+MONDO:0001038	perforated corneal ulcer	MONDO:0004577	ICD10CM:H16.07	ICD10CM:H16.0	corneal ulcer
 MONDO:0001050	malignant otitis externa	MONDO:0004795	ICD10CM:H60.2	ICD10CM:H60	otitis externa
 MONDO:0001056	gastric cancer	MONDO:0002516	ICD10CM:C16	ICD10CM:C15-C26	digestive system cancer
+MONDO:0001061	pylorus cancer	MONDO:0001056	ICD10CM:C16.4	ICD10CM:C16	gastric cancer
+MONDO:0001064	acute eustachian salpingitis	MONDO:0002172	ICD10CM:H68.01	ICD10CM:H68.0	otosalpingitis
 MONDO:0001066	late yaws	MONDO:0006019	ICD10CM:A66.4	ICD10CM:A66	yaws
+MONDO:0001074	chronic tic disorder	MONDO:0002420	ICD10CM:F95.1	ICD10CM:F95	tic disorder
+MONDO:0001084	primary optic atrophy	MONDO:0003608	ICD10CM:H47.21	ICD10CM:H47.2	optic atrophy
 MONDO:0001100	hypertrophy of breast	MONDO:0002657	ICD10CM:N62	ICD10CM:N60-N65	breast disorder
 MONDO:0001112	bubonic plague	MONDO:0019095	ICD10CM:A20.0	ICD10CM:A20	plague
 MONDO:0001113	Fiedler's myocarditis	MONDO:0004496	ICD10CM:I40.1	ICD10CM:I40	myocarditis
 MONDO:0001114	bacterial myocarditis	MONDO:0004496	ICD10CM:I40.0	ICD10CM:I40	myocarditis
+MONDO:0001118	Queensland tick typhus	MONDO:0001195	ICD10CM:A77.3	ICD10CM:A77	spotted fever
+MONDO:0001119	premature menopause	MONDO:0005387	ICD10CM:E28.31	ICD10CM:E28.3	primary ovarian failure
+MONDO:0001154	Siberian tick typhus	MONDO:0001195	ICD10CM:A77.2	ICD10CM:A77	spotted fever
+MONDO:0001187	urinary bladder cancer	MONDO:0006295	ICD10CM:C67	ICD10CM:C64-C68	malignant urinary system neoplasm
+MONDO:0001260	cercarial dermatitis	MONDO:0015254	ICD10CM:B65.3	ICD10CM:B65	schistosomiasis
 MONDO:0001281	alternating exotropia	MONDO:0001286	ICD10CM:H50.15	ICD10CM:H50.1	exotropia
+MONDO:0001282	fallopian tube endometriosis	MONDO:0005133	ICD10CM:N80.2	ICD10CM:N80	endometriosis
 MONDO:0001284	endometriosis of intestine	MONDO:0005133	ICD10CM:N80.5	ICD10CM:N80	endometriosis
 MONDO:0001285	endometriosis of pelvic peritoneum	MONDO:0005133	ICD10CM:N80.3	ICD10CM:N80	endometriosis
 MONDO:0001287	endometriosis in cutaneous scar	MONDO:0005133	ICD10CM:N80.6	ICD10CM:N80	endometriosis
 MONDO:0001288	endometriosis of rectovaginal septum and vagina	MONDO:0005133	ICD10CM:N80.4	ICD10CM:N80	endometriosis
+MONDO:0001293	subglottis cancer	MONDO:0002352	ICD10CM:C32.2	ICD10CM:C32	larynx cancer
 MONDO:0001296	acquired night blindness	MONDO:0004588	ICD10CM:H53.62	ICD10CM:H53.6	night blindness
+MONDO:0001317	phlyctenulosis	MONDO:0004768	ICD10CM:H16.25	ICD10CM:H16.2	keratoconjunctivitis
 MONDO:0001337	inflamed seborrheic keratosis	MONDO:0008420	ICD10CM:L82.0	ICD10CM:L82	seborrheic keratosis
+MONDO:0001364	regular astigmatism	MONDO:0011284	ICD10CM:H52.22	ICD10CM:H52.2	astigmatism
+MONDO:0001378	urachus cancer	MONDO:0001187	ICD10CM:C67.7	ICD10CM:C67	urinary bladder cancer
+MONDO:0001385	cortical blindness	MONDO:0003584	ICD10CM:H47.61	ICD10CM:H47.6	visual cortex disorder
+MONDO:0001388	glans penis cancer	MONDO:0001325	ICD10CM:C60.1	ICD10CM:C60	penile cancer
 MONDO:0001391	indeterminate leprosy	MONDO:0005124	ICD10CM:A30.0	ICD10CM:A30	leprosy
+MONDO:0001392	monocular exotropia	MONDO:0001286	ICD10CM:H50.11	ICD10CM:H50.1	exotropia
 MONDO:0001396	abnormal threshold of rods	MONDO:0004588	ICD10CM:H53.61	ICD10CM:H53.6	night blindness
+MONDO:0001402	vaginal cancer	MONDO:0001416	ICD10CM:C52	ICD10CM:C51-C58	female reproductive organ cancer
 MONDO:0001413	ulceroglandular tularemia	MONDO:0018077	ICD10CM:A21.0	ICD10CM:A21	tularemia
 MONDO:0001422	primary aldosteronism	MONDO:0003009	ICD10CM:E26.0	ICD10CM:E26	hyperaldosteronism
+MONDO:0001430	deep corneal vascularisation	MONDO:0006713	ICD10CM:H16.44	ICD10CM:H16.4	corneal neovascularization
 MONDO:0001431	toxic or nutritional optic neuropathy	MONDO:0005885	ICD10CM:H46.2	ICD10CM:H46	optic neuritis
+MONDO:0001440	neurotrophic keratoconjunctivitis	MONDO:0004768	ICD10CM:H16.23	ICD10CM:H16.2	keratoconjunctivitis
 MONDO:0001449	lymphocytic choriomeningitis	MONDO:0007015	ICD10CM:A87.2	ICD10CM:A87	viral meningitis
+MONDO:0001454	Blessig's cysts	MONDO:0001451	ICD10CM:H35.42	ICD10CM:H35.4	peripheral retinal degeneration
+MONDO:0001455	retinal lattice degeneration	MONDO:0001451	ICD10CM:H35.41	ICD10CM:H35.4	peripheral retinal degeneration
+MONDO:0001456	cobblestone retinal degeneration	MONDO:0001451	ICD10CM:H35.43	ICD10CM:H35.4	peripheral retinal degeneration
+MONDO:0001457	secondary vitreoretinal degeneration	MONDO:0001451	ICD10CM:H35.46	ICD10CM:H35.4	peripheral retinal degeneration
 MONDO:0001461	tinea corporis	MONDO:0004678	ICD10CM:B35.4	ICD10CM:B35	dermatophytosis
+MONDO:0001462	descending colon cancer	MONDO:0021063	ICD10CM:C18.6	ICD10CM:C18	malignant colon neoplasm
+MONDO:0001464	sigmoid colon cancer	MONDO:0021063	ICD10CM:C18.7	ICD10CM:C18	malignant colon neoplasm
 MONDO:0001479	cutaneous diphtheria	MONDO:0005504	ICD10CM:A36.3	ICD10CM:A36	diphtheria
+MONDO:0001480	malignant tumor of undescended testis	MONDO:0005447	ICD10CM:C62.0	ICD10CM:C62	testicular cancer
+MONDO:0001484	paranoid schizophrenia	MONDO:0005090	ICD10CM:F20.0	ICD10CM:F20	schizophrenia
+MONDO:0001488	anterior corneal pigmentation	MONDO:0001308	ICD10CM:H18.01	ICD10CM:H18.0	corneal deposit
+MONDO:0001503	primary eye hypotony	MONDO:0004390	ICD10CM:H44.44	ICD10CM:H44.4	ocular hypotension
+MONDO:0001505	alcoholic hepatitis	MONDO:0043693	ICD10CM:K70.1	ICD10CM:K70	alcoholic liver diseases
 MONDO:0001514	prolapse of urethra	MONDO:0001592	ICD10CM:N81.0	ICD10CM:N81	prolapse of female genital organ
+MONDO:0001526	labia minora cancer	MONDO:0001528	ICD10CM:C51.1	ICD10CM:C51	vulva cancer
+MONDO:0001528	vulva cancer	MONDO:0001416	ICD10CM:C51	ICD10CM:C51-C58	female reproductive organ cancer
+MONDO:0001588	chronic lacrimal gland enlargement	MONDO:0004804	ICD10CM:H04.03	ICD10CM:H04.0	dacryoadenitis
 MONDO:0001601	Plasmodium ovale malaria	MONDO:0005136	ICD10CM:B53.0	ICD10CM:B53	malaria
+MONDO:0001603	paralytic lagophthalmos	MONDO:0001604	ICD10CM:H02.23	ICD10CM:H02.2	lagophthalmos
+MONDO:0001615	epidemic keratoconjunctivitis	MONDO:0043541	ICD10CM:B30.0	ICD10CM:B30	viral conjunctivitis
 MONDO:0001620	louse-borne relapsing fever	MONDO:0019633	ICD10CM:A68.0	ICD10CM:A68	relapsing fever
 MONDO:0001621	tick-borne relapsing fever	MONDO:0019633	ICD10CM:A68.1	ICD10CM:A68	relapsing fever
 MONDO:0001622	mechanical lagophthalmos	MONDO:0001604	ICD10CM:H02.22	ICD10CM:H02.2	lagophthalmos
 MONDO:0001623	cicatricial lagophthalmos	MONDO:0001604	ICD10CM:H02.21	ICD10CM:H02.2	lagophthalmos
 MONDO:0001628	tinea unguium	MONDO:0004678	ICD10CM:B35.1	ICD10CM:B35	dermatophytosis
+MONDO:0001641	severe pre-eclampsia	MONDO:0005081	ICD10CM:O14.1	ICD10CM:O14	preeclampsia
+MONDO:0001650	acute cystitis	MONDO:0006032	ICD10CM:N30.0	ICD10CM:N30	cystitis
+MONDO:0001664	submucous uterine fibroid	MONDO:0007886	ICD10CM:D25.0	ICD10CM:D25	uterine corpus leiomyoma
 MONDO:0001665	oculoglandular tularemia	MONDO:0018077	ICD10CM:A21.1	ICD10CM:A21	tularemia
+MONDO:0001685	chronic follicular conjunctivitis	MONDO:0002314	ICD10CM:H10.43	ICD10CM:H10.4	chronic conjunctivitis
 MONDO:0001688	toxic optic neuropathy	MONDO:0005885	ICD10CM:H46.3	ICD10CM:H46	optic neuritis
+MONDO:0001691	laryngeal cartilage cancer	MONDO:0002352	ICD10CM:C32.3	ICD10CM:C32	larynx cancer
 MONDO:0001699	tinea manuum	MONDO:0004678	ICD10CM:B35.2	ICD10CM:B35	dermatophytosis
+MONDO:0001701	gastrointestinal anthrax	MONDO:0005119	ICD10CM:A22.2	ICD10CM:A22	anthrax infection
+MONDO:0001708	pulmonary sarcoidosis	MONDO:0019338	ICD10CM:D86.0	ICD10CM:D86	sarcoidosis
+MONDO:0001717	posterior corneal pigmentation	MONDO:0001308	ICD10CM:H18.05	ICD10CM:H18.0	corneal deposit
+MONDO:0001724	supraglottis cancer	MONDO:0002352	ICD10CM:C32.1	ICD10CM:C32	larynx cancer
+MONDO:0001732	trigonitis	MONDO:0006032	ICD10CM:N30.3	ICD10CM:N30	cystitis
+MONDO:0001742	interval angle-closure glaucoma	MONDO:0001868	ICD10CM:H40.23	ICD10CM:H40.2	primary angle-closure glaucoma
 MONDO:0001753	female infertility of uterine origin	MONDO:0021124	ICD10CM:N97.2	ICD10CM:N97	female infertility
+MONDO:0001774	posterior scleritis	MONDO:0001718	ICD10CM:H15.03	ICD10CM:H15.0	scleritis
+MONDO:0001792	epiphora due to insufficient drainage	MONDO:0001793	ICD10CM:H04.22	ICD10CM:H04.2	excessive tearing
+MONDO:0001804	anterior scleritis	MONDO:0001718	ICD10CM:H15.01	ICD10CM:H15.0	scleritis
+MONDO:0001813	squamous blepharitis	MONDO:0004785	ICD10CM:H01.02	ICD10CM:H01.0	blepharitis
+MONDO:0001816	scleroperikeratitis	MONDO:0001718	ICD10CM:H15.04	ICD10CM:H15.0	scleritis
+MONDO:0001817	acute closed-angle glaucoma	MONDO:0001868	ICD10CM:H40.21	ICD10CM:H40.2	primary angle-closure glaucoma
+MONDO:0001828	acquired color blindness	MONDO:0001703	ICD10CM:H53.52	ICD10CM:H53.5	color vision disorder
+MONDO:0001831	irregular astigmatism	MONDO:0011284	ICD10CM:H52.21	ICD10CM:H52.2	astigmatism
+MONDO:0001843	uterus interstitial leiomyoma	MONDO:0007886	ICD10CM:D25.1	ICD10CM:D25	uterine corpus leiomyoma
+MONDO:0001853	contact blepharoconjunctivitis	MONDO:0002307	ICD10CM:H10.53	ICD10CM:H10.5	blepharoconjunctivitis
+MONDO:0001864	residual stage angle-closure glaucoma	MONDO:0001868	ICD10CM:H40.24	ICD10CM:H40.2	primary angle-closure glaucoma
 MONDO:0001873	geniculate ganglionitis	MONDO:0002098	ICD10CM:G51.1	ICD10CM:G51	facial nerve disorder
 MONDO:0001896	obstructive hydrocephalus	MONDO:0001150	ICD10CM:G91.1	ICD10CM:G91	hydrocephalus
+MONDO:0001913	oligospermia	MONDO:0005372	ICD10CM:N46.1	ICD10CM:N46	male infertility
 MONDO:0001916	gastrointestinal tularemia	MONDO:0018077	ICD10CM:A21.3	ICD10CM:A21	tularemia
+MONDO:0001918	epiphora due to excess lacrimation	MONDO:0001793	ICD10CM:H04.21	ICD10CM:H04.2	excessive tearing
 MONDO:0001923	vitreoretinal dystrophy	MONDO:0019118	ICD10CM:H35.51	ICD10CM:H35.5	inherited retinal dystrophy
 MONDO:0001924	dystrophies primarily involving the retinal pigment epithelium	MONDO:0019118	ICD10CM:H35.54	ICD10CM:H35.5	inherited retinal dystrophy
+MONDO:0001945	postencephalitic Parkinson disease	MONDO:0006966	ICD10CM:G21.3	ICD10CM:G21	secondary Parkinson disease
+MONDO:0001949	acute thyroiditis	MONDO:0004126	ICD10CM:E06.0	ICD10CM:E06	thyroiditis
+MONDO:0001966	chronic closed-angle glaucoma	MONDO:0001868	ICD10CM:H40.22	ICD10CM:H40.2	primary angle-closure glaucoma
+MONDO:0002033	cecum cancer	MONDO:0021063	ICD10CM:C18.0	ICD10CM:C18	malignant colon neoplasm
 MONDO:0002041	fungal infectious disease	MONDO:0005550	ICD10CM:B35-B49	ICD10CM:A00-B99	infectious disease
 MONDO:0002045	communicating hydrocephalus	MONDO:0001150	ICD10CM:G91.0	ICD10CM:G91	hydrocephalus
 MONDO:0002050	depressive disorder	MONDO:0005371	ICD10CM:F32	ICD10CM:F30-F39	mood disorder
+MONDO:0002136	eczematous dermatitis of eyelid	MONDO:0002137	ICD10CM:H01.13	ICD10CM:H01.1	noninfectious dermatoses of eyelid
+MONDO:0002170	chronic eustachian salpingitis	MONDO:0002172	ICD10CM:H68.02	ICD10CM:H68.0	otosalpingitis
 MONDO:0002172	otosalpingitis	MONDO:0004866	ICD10CM:H68.0	ICD10CM:H68	eustachian tube disorder
 MONDO:0002202	outlet dysfunction constipation	MONDO:0002203	ICD10CM:K59.02	ICD10CM:K59.0	constipation disorder
+MONDO:0002212	pneumonic tularemia	MONDO:0018077	ICD10CM:A21.2	ICD10CM:A21	tularemia
+MONDO:0002238	ascending colon cancer	MONDO:0021063	ICD10CM:C18.2	ICD10CM:C18	malignant colon neoplasm
 MONDO:0002279	iron metabolism disease	MONDO:0000226	ICD10CM:E83.1	ICD10CM:E83	mineral metabolism disease
+MONDO:0002290	clitoris cancer	MONDO:0001528	ICD10CM:C51.2	ICD10CM:C51	vulva cancer
+MONDO:0002306	angular blepharoconjunctivitis	MONDO:0002307	ICD10CM:H10.52	ICD10CM:H10.5	blepharoconjunctivitis
+MONDO:0002307	blepharoconjunctivitis	MONDO:0003799	ICD10CM:H10.5	ICD10CM:H10	conjunctivitis
 MONDO:0002313	vernal conjunctivitis	MONDO:0002314	ICD10CM:H10.44	ICD10CM:H10.4	chronic conjunctivitis
+MONDO:0002314	chronic conjunctivitis	MONDO:0003799	ICD10CM:H10.4	ICD10CM:H10	conjunctivitis
 MONDO:0002319	phosphorus metabolism disease	MONDO:0000226	ICD10CM:E83.3	ICD10CM:E83	mineral metabolism disease
 MONDO:0002333	splenic abscess	MONDO:0002332	ICD10CM:D73.3	ICD10CM:D73	splenic disorder
+MONDO:0002337	intra-abdominal hemangioma	MONDO:0006500	ICD10CM:D18.03	ICD10CM:D18.0	hemangioma
+MONDO:0002351	glottis cancer	MONDO:0002352	ICD10CM:C32.0	ICD10CM:C32	larynx cancer
+MONDO:0002361	transverse colon cancer	MONDO:0021063	ICD10CM:C18.4	ICD10CM:C18	malignant colon neoplasm
 MONDO:0002413	glycogen storage disease I	MONDO:0002412	ICD10CM:E74.01	ICD10CM:E74.0	disorder of glycogen metabolism
+MONDO:0002419	transient tic disorder	MONDO:0002420	ICD10CM:F95.0	ICD10CM:F95	tic disorder
 MONDO:0002467	inner ear disorder	MONDO:0002409	ICD10CM:H80-H83	ICD10CM:H60-H95	auditory system disorder
 MONDO:0002776	external ear disorder	MONDO:0002409	ICD10CM:H60-H62	ICD10CM:H60-H95	auditory system disorder
+MONDO:0002967	dermatophytosis of scalp or beard	MONDO:0004678	ICD10CM:B35.0	ICD10CM:B35	dermatophytosis
 MONDO:0003276	middle ear disorder	MONDO:0002409	ICD10CM:H65-H75	ICD10CM:H60-H95	auditory system disorder
+MONDO:0003308	pleural mesothelioma	MONDO:0005065	ICD10CM:C45.0	ICD10CM:C45	mesothelioma
 MONDO:0003441	dystonic disorder	MONDO:0001815	ICD10CM:G24	ICD10CM:G20-G26	extrapyramidal and movement disease
 MONDO:0003522	male orgasm disorder	MONDO:0040674	ICD10CM:F52.32	ICD10CM:F52.3	orgasm disorder
+MONDO:0003799	conjunctivitis	MONDO:0006170	ICD10CM:H10	ICD10CM:H10-H11	conjunctival disorder
+MONDO:0004112	radiation cystitis	MONDO:0006032	ICD10CM:N30.4	ICD10CM:N30	cystitis
+MONDO:0004126	thyroiditis	MONDO:0003240	ICD10CM:E06	ICD10CM:E00-E07	thyroid gland disorder
+MONDO:0004151	spinal meninges cancer	MONDO:0021322	ICD10CM:C70.1	ICD10CM:C70	malignant tumor of meninges
+MONDO:0004215	cutaneous anthrax	MONDO:0005119	ICD10CM:A22.0	ICD10CM:A22	anthrax infection
 MONDO:0004258	female orgasmic disorder	MONDO:0040674	ICD10CM:F52.31	ICD10CM:F52.3	orgasm disorder
+MONDO:0004375	end stage renal failure	MONDO:0005300	ICD10CM:N18.5	ICD10CM:N18	chronic kidney disease
+MONDO:0004375	end stage renal failure	MONDO:0005300	ICD10CM:N18.6	ICD10CM:N18	chronic kidney disease
 MONDO:0004577	corneal ulcer	MONDO:0003085	ICD10CM:H16.0	ICD10CM:H16	keratitis
 MONDO:0004607	vallecula cancer	MONDO:0004608	ICD10CM:C10.0	ICD10CM:C10	oropharynx cancer
 MONDO:0004637	aryepiglottic fold cancer	MONDO:0005806	ICD10CM:C13.1	ICD10CM:C13	hypopharynx cancer
 MONDO:0004642	tonsillar pillar cancer	MONDO:0006998	ICD10CM:C09.1	ICD10CM:C09	tonsil cancer
 MONDO:0004690	tonsillar fossa cancer	MONDO:0006998	ICD10CM:C09.0	ICD10CM:C09	tonsil cancer
 MONDO:0004701	uterine polyp	MONDO:0005079	ICD10CM:N84.0	ICD10CM:N84	polyp
+MONDO:0004706	discoid lupus erythematosus of eyelid	MONDO:0002137	ICD10CM:H01.12	ICD10CM:H01.1	noninfectious dermatoses of eyelid
 MONDO:0004712	herpes simplex dermatitis	MONDO:0004609	ICD10CM:B00.0	ICD10CM:B00	herpes simplex infectious disease
+MONDO:0004718	xeroderma of eyelid	MONDO:0002137	ICD10CM:H01.14	ICD10CM:H01.1	noninfectious dermatoses of eyelid
 MONDO:0004768	keratoconjunctivitis	MONDO:0003085	ICD10CM:H16.2	ICD10CM:H16	keratitis
+MONDO:0004775	lens-induced iridocyclitis	MONDO:0004773	ICD10CM:H20.2	ICD10CM:H20	iridocyclitis
 MONDO:0004781	acute myocardial infarction	MONDO:0005068	ICD10CM:I21.9	ICD10CM:I21	myocardial infarction
+MONDO:0004794	exposure keratitis	MONDO:0004768	ICD10CM:H16.21	ICD10CM:H16.2	keratoconjunctivitis
 MONDO:0004795	otitis externa	MONDO:0002776	ICD10CM:H60	ICD10CM:H60-H62	external ear disorder
+MONDO:0004799	ulcerative blepharitis	MONDO:0004785	ICD10CM:H01.01	ICD10CM:H01.0	blepharitis
+MONDO:0004800	chronic dacryoadenitis	MONDO:0004804	ICD10CM:H04.02	ICD10CM:H04.0	dacryoadenitis
+MONDO:0004808	benign mammary dysplasia	MONDO:0002657	ICD10CM:N60	ICD10CM:N60-N65	breast disorder
+MONDO:0004811	simple chronic conjunctivitis	MONDO:0002314	ICD10CM:H10.42	ICD10CM:H10.4	chronic conjunctivitis
+MONDO:0004812	acute dacryoadenitis	MONDO:0004804	ICD10CM:H04.01	ICD10CM:H04.0	dacryoadenitis
 MONDO:0004828	lower urinary tract calculus	MONDO:0024647	ICD10CM:N21.9	ICD10CM:N21	urolithiasis
 MONDO:0004858	occlusion of gallbladder	MONDO:0005281	ICD10CM:K82.0	ICD10CM:K82	gallbladder disorder
 MONDO:0004859	hydrops of gallbladder	MONDO:0005281	ICD10CM:K82.1	ICD10CM:K82	gallbladder disorder
 MONDO:0004866	eustachian tube disorder	MONDO:0003276	ICD10CM:H68	ICD10CM:H65-H75	middle ear disorder
+MONDO:0004904	toxic maculopathy	MONDO:0002175	ICD10CM:H35.38	ICD10CM:H35.3	degeneration of macula and posterior pole
+MONDO:0004913	alternating esotropia	MONDO:0004896	ICD10CM:H50.05	ICD10CM:H50.0	esotropia
+MONDO:0004918	central corneal ulcer	MONDO:0004577	ICD10CM:H16.01	ICD10CM:H16.0	corneal ulcer
+MONDO:0004944	neurosyphilis	MONDO:0004497	ICD10CM:A52.3	ICD10CM:A52	tertiary syphilis
+MONDO:0004967	acute lymphoblastic leukemia	MONDO:0005402	ICD10CM:C91.0	ICD10CM:C91	lymphoid leukemia
 MONDO:0004976	amyotrophic lateral sclerosis	MONDO:0020128	ICD10CM:G12.21	ICD10CM:G12.2	motor neuron disorder
 MONDO:0004985	bipolar disorder	MONDO:0005371	ICD10CM:F31	ICD10CM:F30-F39	mood disorder
+MONDO:0005012	cutaneous melanoma	MONDO:0002898	ICD10CM:C43	ICD10CM:C43-C44	skin cancer
 MONDO:0005125	borderline leprosy	MONDO:0005124	ICD10CM:A30.3	ICD10CM:A30	leprosy
 MONDO:0005126	tuberculoid leprosy	MONDO:0005124	ICD10CM:A30.1	ICD10CM:A30	leprosy
 MONDO:0005127	lepromatous leprosy	MONDO:0005124	ICD10CM:A30.5	ICD10CM:A30	leprosy
 MONDO:0005136	malaria	MONDO:0002428	ICD10CM:B53	ICD10CM:B50-B64	protozoa infectious disease
+MONDO:0005147	type 1 diabetes mellitus	MONDO:0005015	ICD10CM:E10	ICD10CM:E08-E13	diabetes mellitus
+MONDO:0005148	type 2 diabetes mellitus	MONDO:0005015	ICD10CM:E11	ICD10CM:E08-E13	diabetes mellitus
 MONDO:0005165	benign neoplasm	MONDO:0005070	ICD10CM:D10-D36	ICD10CM:C00-D49	neoplasm
 MONDO:0005296	sleep apnea syndrome	MONDO:0003406	ICD10CM:G47.3	ICD10CM:G47	sleep-wake disorder
 MONDO:0005301	multiple sclerosis	MONDO:0020800	ICD10CM:G35	ICD10CM:G35-G37	demyelinating disease of central nervous system
+MONDO:0005338	open-angle glaucoma	MONDO:0005041	ICD10CM:H40.1	ICD10CM:H40	glaucoma
+MONDO:0005349	otosclerosis	MONDO:0002467	ICD10CM:H80	ICD10CM:H80-H83	inner ear disorder
+MONDO:0005361	eosinophilic esophagitis	MONDO:0001409	ICD10CM:K20.0	ICD10CM:K20	esophagitis
 MONDO:0005372	male infertility	MONDO:0003150	ICD10CM:N46	ICD10CM:N40-N53	male reproductive system disorder
 MONDO:0005387	primary ovarian failure	MONDO:0001889	ICD10CM:E28.3	ICD10CM:E28	ovarian dysfunction
+MONDO:0005411	gallbladder cancer	MONDO:0002516	ICD10CM:C23	ICD10CM:C15-C26	digestive system cancer
 MONDO:0005445	visceral leishmaniasis	MONDO:0011989	ICD10CM:B55.0	ICD10CM:B55	leishmaniasis
 MONDO:0005446	cutaneous leishmaniasis	MONDO:0011989	ICD10CM:B55.1	ICD10CM:B55	leishmaniasis
+MONDO:0005466	hypersomnia	MONDO:0003406	ICD10CM:G47.1	ICD10CM:G47	sleep-wake disorder
+MONDO:0005469	orthostatic hypotension	MONDO:0005468	ICD10CM:I95.1	ICD10CM:I95	hypotensive disorder
+MONDO:0005475	migraine with aura	MONDO:0005277	ICD10CM:G43.1	ICD10CM:G43	migraine disorder
 MONDO:0005518	pseudohermaphroditism	MONDO:0024665	ICD10CM:Q56.3	ICD10CM:Q56	indeterminate sex and/or pseudohermaphroditism
+MONDO:0005568	cholesterol embolism	MONDO:0005385	ICD10CM:I75	ICD10CM:I70-I79	vascular disorder
 MONDO:0005665	Bell's palsy	MONDO:0002098	ICD10CM:G51.0	ICD10CM:G51	facial nerve disorder
+MONDO:0005699	cervicofacial actinomycosis	MONDO:0005631	ICD10CM:A42.2	ICD10CM:A42	actinomycosis
+MONDO:0005820	Lassa fever	MONDO:0005651	ICD10CM:A96.2	ICD10CM:A96	arenavirus hemorrhagic fever
 MONDO:0005838	mansonelliasis	MONDO:0016075	ICD10CM:B74.4	ICD10CM:B74	filariasis
 MONDO:0005859	mucocutaneous leishmaniasis	MONDO:0011989	ICD10CM:B55.2	ICD10CM:B55	leishmaniasis
+MONDO:0005893	pancreatic endocrine carcinoma	MONDO:0009831	ICD10CM:C25.4	ICD10CM:C25	malignant pancreatic neoplasm
 MONDO:0005956	septicemic plague	MONDO:0019095	ICD10CM:A20.7	ICD10CM:A20	plague
 MONDO:0005968	sporotrichosis	MONDO:0002041	ICD10CM:B42	ICD10CM:B35-B49	fungal infectious disease
+MONDO:0005969	st. Louis encephalitis	MONDO:0020601	ICD10CM:A83.3	ICD10CM:A83	mosquito-borne viral encephalitis
 MONDO:0005984	tinea pedis	MONDO:0004678	ICD10CM:B35.3	ICD10CM:B35	dermatophytosis
 MONDO:0005993	Trichomonas vaginitis urogenital infection	MONDO:0002154	ICD10CM:A59.0	ICD10CM:A59	trichomoniasis
+MONDO:0006001	urinary schistosomiasis	MONDO:0015254	ICD10CM:B65.0	ICD10CM:B65	schistosomiasis
 MONDO:0006337	ovarian endometriosis	MONDO:0005133	ICD10CM:N80.1	ICD10CM:N80	endometriosis
+MONDO:0006362	peritoneal mesothelioma	MONDO:0005065	ICD10CM:C45.1	ICD10CM:C45	mesothelioma
 MONDO:0006497	cerebral palsy	MONDO:0006496	ICD10CM:G80	ICD10CM:G80-G83	palsy
 MONDO:0006526	allergic urticaria	MONDO:0005492	ICD10CM:L50.0	ICD10CM:L50	urticaria
+MONDO:0006531	cholesteatoma of attic	MONDO:0006533	ICD10CM:H71.0	ICD10CM:H71	cholesteatoma of middle ear
 MONDO:0006533	cholesteatoma of middle ear	MONDO:0003276	ICD10CM:H71	ICD10CM:H65-H75	middle ear disorder
+MONDO:0006567	kernicterus due to isoimmunization	MONDO:0018477	ICD10CM:P57.0	ICD10CM:P57	bilirubin encephalopathy
+MONDO:0006609	seborrheic infantile dermatitis	MONDO:0006608	ICD10CM:L21.1	ICD10CM:L21	seborrheic dermatitis
+MONDO:0006611	skin sarcoidosis	MONDO:0019338	ICD10CM:D86.3	ICD10CM:D86	sarcoidosis
+MONDO:0006613	stromal corneal pigmentation	MONDO:0001308	ICD10CM:H18.06	ICD10CM:H18.0	corneal deposit
+MONDO:0006637	acute kidney tubular necrosis	MONDO:0002492	ICD10CM:N17.0	ICD10CM:N17	acute kidney failure
+MONDO:0006644	alcoholic liver cirrhosis	MONDO:0043693	ICD10CM:K70.3	ICD10CM:K70	alcoholic liver diseases
+MONDO:0006713	corneal neovascularization	MONDO:0003085	ICD10CM:H16.4	ICD10CM:H16	keratitis
 MONDO:0006790	hypercementosis	MONDO:0002220	ICD10CM:K03.4	ICD10CM:K03	tooth hard tissue disease
 MONDO:0006795	hypersplenism	MONDO:0002332	ICD10CM:D73.1	ICD10CM:D73	splenic disorder
+MONDO:0006815	jejunal cancer	MONDO:0000956	ICD10CM:C17.1	ICD10CM:C17	small intestine cancer
+MONDO:0006879	optic papillitis	MONDO:0005885	ICD10CM:H46.0	ICD10CM:H46	optic neuritis
+MONDO:0006884	panophthalmitis	MONDO:0004863	ICD10CM:H44.01	ICD10CM:H44.0	purulent endophthalmitis
 MONDO:0006978	splenic infarction	MONDO:0002332	ICD10CM:D73.5	ICD10CM:D73	splenic disorder
+MONDO:0007039	NF2-related schwannomatosis	MONDO:0021061	ICD10CM:Q85.02	ICD10CM:Q85.0	neurofibromatosis
 MONDO:0007147	obstructive sleep apnea syndrome	MONDO:0005296	ICD10CM:G47.33	ICD10CM:G47.3	sleep apnea syndrome
+MONDO:0007150	arcus senilis	MONDO:0001515	ICD10CM:H18.41	ICD10CM:H18.4	corneal degeneration
+MONDO:0007338	cleft soft palate	MONDO:0016064	ICD10CM:Q35.3	ICD10CM:Q35	cleft palate
+MONDO:0007540	multiple endocrine neoplasia type 1	MONDO:0017169	ICD10CM:E31.21	ICD10CM:E31.2	multiple endocrine neoplasia
+MONDO:0007576	esophageal cancer	MONDO:0002516	ICD10CM:C15	ICD10CM:C15-C26	digestive system cancer
+MONDO:0007661	Tourette syndrome	MONDO:0002420	ICD10CM:F95.2	ICD10CM:F95	tic disorder
 MONDO:0007713	clonic hemifacial spasm	MONDO:0002098	ICD10CM:G51.3	ICD10CM:G51	facial nerve disorder
+MONDO:0007896	acute monocytic leukemia	MONDO:0004600	ICD10CM:C93.0	ICD10CM:C93	monocytic leukemia
+MONDO:0007925	myelodysplastic syndrome associated with isolated del(5q)	MONDO:0018881	ICD10CM:D46.C	ICD10CM:D46	myelodysplastic syndrome
+MONDO:0007969	Melkersson-Rosenthal syndrome	MONDO:0002098	ICD10CM:G51.2	ICD10CM:G51	facial nerve disorder
+MONDO:0008007	tooth ankylosis	MONDO:0002220	ICD10CM:K03.5	ICD10CM:K03	tooth hard tissue disease
+MONDO:0008054	juvenile dermatomyositis	MONDO:0016367	ICD10CM:M33.0	ICD10CM:M33	dermatomyositis
+MONDO:0008075	schwannomatosis	MONDO:0021061	ICD10CM:Q85.03	ICD10CM:Q85.0	neurofibromatosis
+MONDO:0008170	ovarian cancer	MONDO:0001416	ICD10CM:C56	ICD10CM:C51-C58	female reproductive organ cancer
 MONDO:0008219	pemphigus vulgaris	MONDO:0006594	ICD10CM:L10.0	ICD10CM:L10	pemphigus
+MONDO:0008243	Pick disease	MONDO:0017276	ICD10CM:G31.01	ICD10CM:G31.0	frontotemporal dementia
 MONDO:0008627	ureter cancer	MONDO:0006295	ICD10CM:C66	ICD10CM:C64-C68	malignant urinary system neoplasm
+MONDO:0009016	band keratopathy	MONDO:0001515	ICD10CM:H18.42	ICD10CM:H18.4	corneal degeneration
+MONDO:0009290	glycogen storage disease II	MONDO:0002412	ICD10CM:E74.02	ICD10CM:E74.0	disorder of glycogen metabolism
+MONDO:0009291	glycogen storage disease III	MONDO:0002412	ICD10CM:E74.03	ICD10CM:E74.0	disorder of glycogen metabolism
+MONDO:0009293	glycogen storage disease V	MONDO:0002412	ICD10CM:E74.04	ICD10CM:E74.0	disorder of glycogen metabolism
+MONDO:0009665	biotinidase deficiency	MONDO:0015454	ICD10CM:D81.810	ICD10CM:D81.81	multiple carboxylase deficiency
+MONDO:0009813	chronic recurrent multifocal osteomyelitis	MONDO:0005246	ICD10CM:M86.3	ICD10CM:M86	osteomyelitis
+MONDO:0009831	malignant pancreatic neoplasm	MONDO:0002516	ICD10CM:C25	ICD10CM:C15-C26	digestive system cancer
+MONDO:0009887	desquamative interstitial pneumonia	MONDO:0002429	ICD10CM:J84.117	ICD10CM:J84.11	idiopathic interstitial pneumonia
 MONDO:0010006	Sandhoff disease	MONDO:0017720	ICD10CM:E75.01	ICD10CM:E75.0	GM2 gangliosidosis
 MONDO:0010100	Tay-Sachs disease	MONDO:0017720	ICD10CM:E75.02	ICD10CM:E75.0	GM2 gangliosidosis
+MONDO:0010565	red color blindness	MONDO:0001703	ICD10CM:H53.54	ICD10CM:H53.5	color vision disorder
+MONDO:0010622	recessive X-linked ichthyosis	MONDO:0015947	ICD10CM:Q80.1	ICD10CM:Q80	inherited ichthyosis
+MONDO:0010683	X-linked myotubular myopathy	MONDO:0018947	ICD10CM:G71.220	ICD10CM:G71.22	centronuclear myopathy
+MONDO:0010720	partial androgen insensitivity syndrome	MONDO:0019154	ICD10CM:E34.52	ICD10CM:E34.5	androgen insensitivity syndrome
 MONDO:0011399	alpha thalassemia spectrum	MONDO:0000984	ICD10CM:D56.0	ICD10CM:D56	thalassemia
+MONDO:0011895	idiopathic hypereosinophilic syndrome	MONDO:0015691	ICD10CM:D72.110	ICD10CM:D72.11	hypereosinophilic syndrome
 MONDO:0011989	leishmaniasis	MONDO:0002428	ICD10CM:B55	ICD10CM:B50-B64	protozoa infectious disease
+MONDO:0014624	Brown syndrome	MONDO:0004753	ICD10CM:H50.61	ICD10CM:H50.6	mechanical strabismus
+MONDO:0015092	cleft hard palate	MONDO:0016064	ICD10CM:Q35.1	ICD10CM:Q35	cleft palate
+MONDO:0015254	schistosomiasis	MONDO:0004664	ICD10CM:B65	ICD10CM:B65-B83	helminthiasis
+MONDO:0015264	cryptogenic organizing pneumonia	MONDO:0002429	ICD10CM:J84.116	ICD10CM:J84.11	idiopathic interstitial pneumonia
 MONDO:0015597	pustulosis palmaris et plantaris	MONDO:0005083	ICD10CM:L40.3	ICD10CM:L40	psoriasis
 MONDO:0015766	cholera	MONDO:0000916	ICD10CM:A00	ICD10CM:A00-A09	intestinal infectious disease
 MONDO:0016044	cleft lip/palate	MONDO:0021147	ICD10CM:Q35-Q37	ICD10CM:Q00-Q99	disorder of development or morphogenesis
 MONDO:0016075	filariasis	MONDO:0004664	ICD10CM:B74	ICD10CM:B65-B83	helminthiasis
+MONDO:0016158	narcolepsy-cataplexy syndrome	MONDO:0021107	ICD10CM:G47.411	ICD10CM:G47.41	narcolepsy
 MONDO:0016373	isolated facial myokymia	MONDO:0002098	ICD10CM:G51.4	ICD10CM:G51	facial nerve disorder
 MONDO:0016383	nephrogenic diabetes insipidus	MONDO:0001343	ICD10CM:N25.1	ICD10CM:N25	impaired renal function disease
 MONDO:0016566	loiasis	MONDO:0016075	ICD10CM:B74.3	ICD10CM:B74	filariasis
+MONDO:0016595	inhalational anthrax	MONDO:0005119	ICD10CM:A22.1	ICD10CM:A22	anthrax infection
 MONDO:0017497	congenital absence of thigh and lower leg with foot present, bilateral	MONDO:0017442	ICD10CM:Q72.13	ICD10CM:Q72.1	congenital absence of thigh and lower leg with foot present
 MONDO:0017499	congenital absence of both forearm and hand, bilateral	MONDO:0017443	ICD10CM:Q71.23	ICD10CM:Q71.2	congenital absence of both forearm and hand
 MONDO:0017501	congenital absence of both lower leg and foot, bilateral	MONDO:0017444	ICD10CM:Q72.23	ICD10CM:Q72.2	congenital absence of both lower leg and foot
+MONDO:0017514	split foot, bilateral	MONDO:0017450	ICD10CM:Q72.73	ICD10CM:Q72.7	split foot
+MONDO:0017874	Argentine hemorrhagic fever	MONDO:0005651	ICD10CM:A96.0	ICD10CM:A96	arenavirus hemorrhagic fever
 MONDO:0018056	bullous lichen planus	MONDO:0006572	ICD10CM:L43.1	ICD10CM:L43	lichen planus
 MONDO:0018059	meningococcal meningitis	MONDO:0005373	ICD10CM:A39.0	ICD10CM:A39	meningococcal infection
+MONDO:0018852	achromatopsia	MONDO:0001703	ICD10CM:H53.51	ICD10CM:H53.5	color vision disorder
+MONDO:0018874	acute myeloid leukemia	MONDO:0004643	ICD10CM:C92.0	ICD10CM:C92	myeloid leukemia
+MONDO:0018963	hereditary methemoglobinemia	MONDO:0001117	ICD10CM:D74.0	ICD10CM:D74	methemoglobinemia
+MONDO:0018975	neurofibromatosis type 1	MONDO:0021061	ICD10CM:Q85.01	ICD10CM:Q85.0	neurofibromatosis
+MONDO:0018982	Niemann-Pick disease type C	MONDO:0001982	ICD10CM:E75.242	ICD10CM:E75.24	Niemann-Pick disease
 MONDO:0019137	non-24-hour sleep-wake syndrome	MONDO:0024361	ICD10CM:G47.24	ICD10CM:G47.2	circadian rhythm sleep disorder
+MONDO:0019147	myiasis	MONDO:0002875	ICD10CM:B87	ICD10CM:B85-B89	parasitic ectoparasitic infectious disease
+MONDO:0019157	myelodysplastic syndrome with ring sideroblasts	MONDO:0018881	ICD10CM:D46.1	ICD10CM:D46	myelodysplastic syndrome
+MONDO:0019203	acute interstitial pneumonia	MONDO:0002429	ICD10CM:J84.114	ICD10CM:J84.11	idiopathic interstitial pneumonia
+MONDO:0019209	Japanese encephalitis	MONDO:0020601	ICD10CM:A83.0	ICD10CM:A83	mosquito-borne viral encephalitis
 MONDO:0019323	pemphigus erythematosus	MONDO:0006594	ICD10CM:L10.4	ICD10CM:L10	pemphigus
+MONDO:0019359	Rocky mountain spotted fever	MONDO:0001195	ICD10CM:A77.0	ICD10CM:A77	spotted fever
+MONDO:0019365	scrub typhus	MONDO:0001246	ICD10CM:A75.3	ICD10CM:A75	typhus
+MONDO:0019371	narcolepsy without cataplexy	MONDO:0021107	ICD10CM:G47.419	ICD10CM:G47.41	narcolepsy
+MONDO:0019376	West-Nile encephalitis	MONDO:0002282	ICD10CM:A92.31	ICD10CM:A92.3	West Nile fever
+MONDO:0019380	western equine encephalitis	MONDO:0020601	ICD10CM:A83.1	ICD10CM:A83	mosquito-borne viral encephalitis
+MONDO:0019402	beta thalassemia	MONDO:0000984	ICD10CM:D56.1	ICD10CM:D56	thalassemia
+MONDO:0019453	myelodysplastic syndrome with multilineage dysplasia	MONDO:0018881	ICD10CM:D46.A	ICD10CM:D46	myelodysplastic syndrome
 MONDO:0020398	congenital mitral stenosis	MONDO:0019817	ICD10CM:Q23.2	ICD10CM:Q23	congenital mitral valve insufficiency and/or stenosis
 MONDO:0020528	ACTH-dependent Cushing syndrome	MONDO:0018912	ICD10CM:E24.0	ICD10CM:E24	Cushing syndrome
+MONDO:0020546	acute graft versus host disease	MONDO:0013730	ICD10CM:D89.810	ICD10CM:D89.81	graft versus host disease
+MONDO:0020547	chronic graft versus host disease	MONDO:0013730	ICD10CM:D89.811	ICD10CM:D89.81	graft versus host disease
+MONDO:0020568	cutaneous myiasis	MONDO:0019147	ICD10CM:B87.0	ICD10CM:B87	myiasis
+MONDO:0020863	laryngeal diphtheria	MONDO:0005504	ICD10CM:A36.2	ICD10CM:A36	diphtheria
+MONDO:0020866	nasopharyngeal diphtheria	MONDO:0005504	ICD10CM:A36.1	ICD10CM:A36	diphtheria
+MONDO:0021023	complete androgen insensitivity syndrome	MONDO:0019154	ICD10CM:E34.51	ICD10CM:E34.5	androgen insensitivity syndrome
+MONDO:0021104	alcoholic fatty liver disease	MONDO:0043693	ICD10CM:K70.0	ICD10CM:K70	alcoholic liver diseases
+MONDO:0021309	malignant neoplasm of endocervix	MONDO:0002974	ICD10CM:C53.0	ICD10CM:C53	cervical cancer
+MONDO:0021317	cancer of cerebellum	MONDO:0001657	ICD10CM:C71.6	ICD10CM:C71	brain cancer
+MONDO:0021377	hypertrophic lichen planus	MONDO:0006572	ICD10CM:L43.0	ICD10CM:L43	lichen planus
 MONDO:0021394	polyp of vagina	MONDO:0005079	ICD10CM:N84.2	ICD10CM:N84	polyp
 MONDO:0021396	polyp of vulva	MONDO:0005079	ICD10CM:N84.3	ICD10CM:N84	polyp
+MONDO:0021644	esophageal varices without bleeding	MONDO:0001221	ICD10CM:I85.00	ICD10CM:I85.0	esophageal varices
+MONDO:0021645	esophageal varices with bleeding	MONDO:0001221	ICD10CM:I85.01	ICD10CM:I85.0	esophageal varices
 MONDO:0021681	sexually transmitted disease	MONDO:0005550	ICD10CM:A50-A64	ICD10CM:A00-B99	infectious disease
 MONDO:0022171	chromhidrosis	MONDO:0024467	ICD10CM:L75.1	ICD10CM:L75	apocrine sweat gland disorder
 MONDO:0022697	athetoid cerebral palsy	MONDO:0006497	ICD10CM:G80.3	ICD10CM:G80	cerebral palsy
 MONDO:0023297	guttate psoriasis	MONDO:0005083	ICD10CM:L40.4	ICD10CM:L40	psoriasis
+MONDO:0024182	dry beriberi	MONDO:0006676	ICD10CM:E51.11	ICD10CM:E51.1	beriberi
+MONDO:0024183	wet beriberi	MONDO:0006676	ICD10CM:E51.12	ICD10CM:E51.1	beriberi
 MONDO:0024312	cancer of short bone of upper limb	MONDO:0024311	ICD10CM:C40.1	ICD10CM:C40	cancer affecting bone of limb skeleton
+MONDO:0024335	retrobulbar neuritis	MONDO:0005885	ICD10CM:H46.1	ICD10CM:H46	optic neuritis
 MONDO:0024361	circadian rhythm sleep disorder	MONDO:0003406	ICD10CM:G47.2	ICD10CM:G47	sleep-wake disorder
 MONDO:0024377	circadian rhythm sleep disorder, delayed sleep phase type	MONDO:0024361	ICD10CM:G47.21	ICD10CM:G47.2	circadian rhythm sleep disorder
 MONDO:0024378	circadian rhythm sleep disorder, advanced sleep phase type	MONDO:0024361	ICD10CM:G47.22	ICD10CM:G47.2	circadian rhythm sleep disorder
 MONDO:0024379	circadian rhythm sleep disorder, irregular sleep wake type	MONDO:0024361	ICD10CM:G47.23	ICD10CM:G47.2	circadian rhythm sleep disorder
 MONDO:0024381	circadian rhythm sleep disorder, jet lag type	MONDO:0024361	ICD10CM:G47.25	ICD10CM:G47.2	circadian rhythm sleep disorder
 MONDO:0024382	circadian rhythm sleep disorder, shift work type	MONDO:0024361	ICD10CM:G47.26	ICD10CM:G47.2	circadian rhythm sleep disorder
+MONDO:0030720	trichomonal vulvovaginitis	MONDO:0005993	ICD10CM:A59.01	ICD10CM:A59.0	Trichomonas vaginitis urogenital infection
+MONDO:0040653	autosomal recessive ocular albinism	MONDO:0017304	ICD10CM:E70.311	ICD10CM:E70.31	ocular albinism
+MONDO:0040925	latent yaws	MONDO:0006019	ICD10CM:A66.8	ICD10CM:A66	yaws
+MONDO:0042233	disseminated candidiasis	MONDO:0002026	ICD10CM:B37.7	ICD10CM:B37	candidiasis
+MONDO:0042484	disseminated sporotrichosis	MONDO:0005968	ICD10CM:B42.7	ICD10CM:B42	sporotrichosis
+MONDO:0043004	Weil's disease	MONDO:0005825	ICD10CM:A27.0	ICD10CM:A27	leptospirosis
+MONDO:0043693	alcoholic liver diseases	MONDO:0005154	ICD10CM:K70	ICD10CM:K70-K77	liver disorder
+MONDO:0043777	rhinophyma	MONDO:0006604	ICD10CM:L71.1	ICD10CM:L71	rosacea
+MONDO:0043994	acute cholecystitis	MONDO:0002155	ICD10CM:K81.0	ICD10CM:K81	cholecystitis
+MONDO:0044144	panic disorder with agoraphobia	MONDO:0003709	ICD10CM:F40.01	ICD10CM:F40.0	agoraphobia
 MONDO:0044211	idiopathic urticaria	MONDO:0005492	ICD10CM:L50.1	ICD10CM:L50	urticaria
+MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	MONDO:0004952	ICD10CM:C81.0	ICD10CM:C81	Hodgkins lymphoma
+MONDO:0100431	migraine without aura	MONDO:0005277	ICD10CM:G43.0	ICD10CM:G43	migraine disorder
+MONDO:0100459	azoospermia	MONDO:0005372	ICD10CM:N46.0	ICD10CM:N46	male infertility
+MONDO:0800029	interstitial lung disease 2	MONDO:0002429	ICD10CM:J84.112	ICD10CM:J84.11	idiopathic interstitial pneumonia
+MONDO:0850058	chronic neurovisceral acid sphingomyelinase deficiency	MONDO:0001982	ICD10CM:E75.244	ICD10CM:E75.24	Niemann-Pick disease

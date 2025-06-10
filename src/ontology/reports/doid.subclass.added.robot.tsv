@@ -16,6 +16,7 @@ MONDO:0000243	ectothrix infectious disease	MONDO:0002917	DOID:0050097	DOID:421	d
 MONDO:0000243	ectothrix infectious disease	MONDO:0002967	DOID:0050097	DOID:4337	dermatophytosis of scalp or beard
 MONDO:0000244	endothrix infectious disease	MONDO:0002967	DOID:0050105	DOID:4337	dermatophytosis of scalp or beard
 MONDO:0000265	aspiration pneumonia	MONDO:0004652	DOID:0050152	DOID:874	bacterial pneumonia
+MONDO:0000282	Whitewater Arroyo hemorrhagic fever	MONDO:0005650	DOID:0050199	DOID:3944	Arenaviridae infectious disease
 MONDO:0000291	granulomatous amebic encephalitis	MONDO:0000290	DOID:0050246	DOID:0050242	primary amebic meningoencephalitis
 MONDO:0000292	philophthalmiasis	MONDO:0005328	DOID:0050250	DOID:5614	eye disorder
 MONDO:0000293	coenurosis	MONDO:0002602	DOID:0050251	DOID:331	central nervous system disorder
@@ -61,7 +62,6 @@ MONDO:0000874	T-cell childhood lymphoblastic lymphoma	MONDO:0015760	DOID:0080148
 MONDO:0000898	malignant hemangioma	MONDO:0002095	DOID:0080189	DOID:175	vascular cancer
 MONDO:0000898	malignant hemangioma	MONDO:0005089	DOID:0080189	DOID:1115	sarcoma
 MONDO:0000902	agenesis of the corpus callosum with peripheral neuropathy	MONDO:0006025	DOID:0090003	DOID:0050737	autosomal recessive disease
-MONDO:0000904	complex cortical dysplasia with other brain malformations	MONDO:0000426	DOID:0090131	DOID:0050736	autosomal dominant disease
 MONDO:0000908	arrhythmogenic right ventricular dysplasia 13	MONDO:0000426	DOID:0110084	DOID:0050736	autosomal dominant disease
 MONDO:0000913	hereditary spherocytosis type 2	MONDO:0000426	DOID:0110917	DOID:0050736	autosomal dominant disease
 MONDO:0000914	cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 1	MONDO:0000426	DOID:0111035	DOID:0050736	autosomal dominant disease
@@ -1686,8 +1686,8 @@ MONDO:0011211	axial spondylometaphyseal dysplasia	MONDO:0006025	DOID:0112299	DOI
 MONDO:0011213	Pierpont syndrome	MONDO:0015802	DOID:0081362	DOID:0060307	autosomal dominant non-syndromic intellectual disability
 MONDO:0011214	progressive familial intrahepatic cholestasis type 3	MONDO:0006025	DOID:0070223	DOID:0050737	autosomal recessive disease
 MONDO:0011219	Fried's tooth and nail syndrome	MONDO:0006025	DOID:0111661	DOID:0050737	autosomal recessive disease
-MONDO:0011220	parkinson disease 3, autosomal dominant	MONDO:0000426	DOID:0111250	DOID:0050736	autosomal dominant disease
-MONDO:0011220	parkinson disease 3, autosomal dominant	MONDO:0008199	DOID:0111250	DOID:0060892	late-onset Parkinson disease
+MONDO:0011220	Parkinson disease 3, autosomal dominant	MONDO:0000426	DOID:0111250	DOID:0050736	autosomal dominant disease
+MONDO:0011220	Parkinson disease 3, autosomal dominant	MONDO:0008199	DOID:0111250	DOID:0060892	late-onset Parkinson disease
 MONDO:0011225	severe combined immunodeficiency due to DCLRE1C deficiency	MONDO:0006025	DOID:0090012	DOID:0050737	autosomal recessive disease
 MONDO:0011229	ethylmalonic encephalopathy	MONDO:0004069	DOID:0060640	DOID:700	inborn mitochondrial metabolism disorder
 MONDO:0011236	hyperinsulinism due to glucokinase deficiency	MONDO:0000426	DOID:0070216	DOID:0050736	autosomal dominant disease
@@ -1816,6 +1816,7 @@ MONDO:0011730	fumaric aciduria	MONDO:0006025	DOID:0111261	DOID:0050737	autosomal
 MONDO:0011731	glucose-galactose malabsorption	MONDO:0002908	DOID:0070563	DOID:4194	glucose metabolism disease
 MONDO:0011731	glucose-galactose malabsorption	MONDO:0006025	DOID:0070563	DOID:0050737	autosomal recessive disease
 MONDO:0011735	hyper-IgM syndrome type 3	MONDO:0006025	DOID:0060023	DOID:0050737	autosomal recessive disease
+MONDO:0011738	bilateral frontoparietal polymicrogyria	MONDO:0000904	DOID:0080922	DOID:0090131	complex cortical dysplasia with other brain malformations
 MONDO:0011738	bilateral frontoparietal polymicrogyria	MONDO:0006025	DOID:0080922	DOID:0050737	autosomal recessive disease
 MONDO:0011758	Hurler syndrome	MONDO:0006025	DOID:0111390	DOID:0050737	autosomal recessive disease
 MONDO:0011759	Hurler-Scheie syndrome	MONDO:0006025	DOID:0111389	DOID:0050737	autosomal recessive disease
@@ -1953,6 +1954,7 @@ MONDO:0012393	congenital brain dysgenesis due to glutamine synthetase deficiency
 MONDO:0012395	cataract 18	MONDO:0006025	DOID:0110238	DOID:0050737	autosomal recessive disease
 MONDO:0012396	exercise-induced hyperinsulinism	MONDO:0000426	DOID:0070214	DOID:0050736	autosomal dominant disease
 MONDO:0012398	retinal cone dystrophy 3A	MONDO:0000455	DOID:0081025	DOID:0050795	cone dystrophy
+MONDO:0012399	complex cortical dysplasia with other brain malformations 7	MONDO:0000426	DOID:0090132	DOID:0050736	autosomal dominant disease
 MONDO:0012400	cortical dysplasia-focal epilepsy syndrome	MONDO:0005560	DOID:0090130	DOID:936	brain disorder
 MONDO:0012400	cortical dysplasia-focal epilepsy syndrome	MONDO:0006025	DOID:0090130	DOID:0050737	autosomal recessive disease
 MONDO:0012409	isolated microphthalmia 2	MONDO:0006025	DOID:0060839	DOID:0050737	autosomal recessive disease
@@ -2281,6 +2283,7 @@ MONDO:0013516	retinitis pigmentosa 60	MONDO:0000426	DOID:0110411	DOID:0050736	au
 MONDO:0013526	progressive myoclonic epilepsy type 6	MONDO:0006025	DOID:0111449	DOID:0050737	autosomal recessive disease
 MONDO:0013527	lissencephaly 4	MONDO:0006025	DOID:0112235	DOID:0050737	autosomal recessive disease
 MONDO:0013534	apolipoprotein c-III deficiency	MONDO:0000426	DOID:0111370	DOID:0050736	autosomal dominant disease
+MONDO:0013541	complex cortical dysplasia with other brain malformations 1	MONDO:0000426	DOID:0090137	DOID:0050736	autosomal dominant disease
 MONDO:0013546	mitochondrial complex V (ATP synthase) deficiency nuclear type 2	MONDO:0014471	DOID:0060331	DOID:0111143	mitochondrial proton-transporting ATP synthase complex deficiency
 MONDO:0013551	hereditary spastic paraplegia 47	MONDO:0006025	DOID:0110799	DOID:0050737	autosomal recessive disease
 MONDO:0013552	hereditary spastic paraplegia 52	MONDO:0006025	DOID:0110804	DOID:0050737	autosomal recessive disease
@@ -2469,6 +2472,7 @@ MONDO:0014111	cataract 19 multiple types	MONDO:0006025	DOID:0110263	DOID:0050737
 MONDO:0014112	cardiofaciocutaneous syndrome 2	MONDO:0000426	DOID:0111461	DOID:0050736	autosomal dominant disease
 MONDO:0014113	cardiofaciocutaneous syndrome 3	MONDO:0000426	DOID:0111462	DOID:0050736	autosomal dominant disease
 MONDO:0014114	cardiofaciocutaneous syndrome 4	MONDO:0000426	DOID:0111463	DOID:0050736	autosomal dominant disease
+MONDO:0014116	complex cortical dysplasia with other brain malformations 2	MONDO:0000426	DOID:0090133	DOID:0050736	autosomal dominant disease
 MONDO:0014117	Charcot-Marie-Tooth disease type 4B3	MONDO:0006025	DOID:0110194	DOID:0050737	autosomal recessive disease
 MONDO:0014119	intellectual disability-strabismus syndrome	MONDO:0019502	DOID:0081099	DOID:0060308	autosomal recessive non-syndromic intellectual disability
 MONDO:0014132	multiple mitochondrial dysfunctions syndrome 3	MONDO:0006025	DOID:0080135	DOID:0050737	autosomal recessive disease
@@ -2485,6 +2489,8 @@ MONDO:0014160	TCR-alpha-beta-positive T-cell deficiency	MONDO:0006025	DOID:01119
 MONDO:0014162	infantile hypertrophic cardiomyopathy due to MRPL44 deficiency	MONDO:0006025	DOID:0111469	DOID:0050737	autosomal recessive disease
 MONDO:0014165	multiple congenital anomalies-hypotonia-seizures syndrome 3	MONDO:0006025	DOID:0080140	DOID:0050737	autosomal recessive disease
 MONDO:0014167	epilepsy, familial adult myoclonic, 5	MONDO:0006025	DOID:0111691	DOID:0050737	autosomal recessive disease
+MONDO:0014170	complex cortical dysplasia with other brain malformations 3	MONDO:0000426	DOID:0090134	DOID:0050736	autosomal dominant disease
+MONDO:0014171	complex cortical dysplasia with other brain malformations 4	MONDO:0000426	DOID:0090138	DOID:0050736	autosomal dominant disease
 MONDO:0014172	spermatogenic failure 12	MONDO:0000426	DOID:0070171	DOID:0050736	autosomal dominant disease
 MONDO:0014175	mitochondrial DNA depletion syndrome 12B (cardiomyopathic type), autosomal recessive	MONDO:0006025	DOID:0080335	DOID:0050737	autosomal recessive disease
 MONDO:0014178	inclusion body myopathy with early-onset Paget disease with or without frontotemporal dementia 2	MONDO:0000426	DOID:0111384	DOID:0050736	autosomal dominant disease
@@ -2563,6 +2569,8 @@ MONDO:0014328	developmental and epileptic encephalopathy, 19	MONDO:0000426	DOID:
 MONDO:0014329	atrial standstill 2	MONDO:0000992	DOID:0080663	DOID:10273	heart conduction disease
 MONDO:0014329	atrial standstill 2	MONDO:0006025	DOID:0080663	DOID:0050737	autosomal recessive disease
 MONDO:0014334	severe combined immunodeficiency due to LCK deficiency	MONDO:0006025	DOID:0111937	DOID:0050737	autosomal recessive disease
+MONDO:0014337	complex cortical dysplasia with other brain malformations 5	MONDO:0000426	DOID:0090135	DOID:0050736	autosomal dominant disease
+MONDO:0014341	complex cortical dysplasia with other brain malformations 6	MONDO:0000426	DOID:0090136	DOID:0050736	autosomal dominant disease
 MONDO:0014345	retinitis pigmentosa 69	MONDO:0006025	DOID:0110410	DOID:0050737	autosomal recessive disease
 MONDO:0014346	white sponge nevus 2	MONDO:0000426	DOID:0081288	DOID:0050736	autosomal dominant disease
 MONDO:0014353	immunodeficiency 23	MONDO:0006025	DOID:0111953	DOID:0050737	autosomal recessive disease
@@ -2961,6 +2969,11 @@ MONDO:0017810	variant ABeta2M amyloidosis	MONDO:0000426	DOID:0080929	DOID:005073
 MONDO:0017813	van Maldergem syndrome	MONDO:0002254	DOID:0060238	DOID:225	syndromic disease
 MONDO:0017813	van Maldergem syndrome	MONDO:0006025	DOID:0060238	DOID:0050737	autosomal recessive disease
 MONDO:0017842	Senior-Loken syndrome	MONDO:0002254	DOID:0050576	DOID:225	syndromic disease
+MONDO:0017872	Lujo hemorrhagic fever	MONDO:0005650	DOID:0050202	DOID:3944	Arenaviridae infectious disease
+MONDO:0017875	Bolivian hemorrhagic fever	MONDO:0005650	DOID:0050195	DOID:3944	Arenaviridae infectious disease
+MONDO:0017876	Venezuelan hemorrhagic fever	MONDO:0005650	DOID:0050196	DOID:3944	Arenaviridae infectious disease
+MONDO:0017877	Brazilian hemorrhagic fever	MONDO:0005650	DOID:0050197	DOID:3944	Arenaviridae infectious disease
+MONDO:0017878	Chapare hemorrhagic fever	MONDO:0005650	DOID:0050198	DOID:3944	Arenaviridae infectious disease
 MONDO:0017909	inherited glutathione synthetase deficiency	MONDO:0004736	DOID:0080699	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0017923	multiple synostoses syndrome	MONDO:0000426	DOID:0050794	DOID:0050736	autosomal dominant disease
 MONDO:0018029	congenital factor XIII deficiency	MONDO:0006025	DOID:2211	DOID:0050737	autosomal recessive disease
@@ -3513,7 +3526,7 @@ MONDO:0032879	megabladder, congenital	MONDO:0000426	DOID:0112014	DOID:0050736	au
 MONDO:0032879	megabladder, congenital	MONDO:0006026	DOID:0112014	DOID:365	urinary bladder disorder
 MONDO:0032880	developmental and epileptic encephalopathy, 82	MONDO:0006025	DOID:0080715	DOID:0050737	autosomal recessive disease
 MONDO:0032881	premature ovarian failure 16	MONDO:0000426	DOID:0080873	DOID:0050736	autosomal dominant disease
-MONDO:0032893	pachygyria, microcephaly, developmental delay, and dysmorphic facies, with or without seizures	MONDO:0018838	DOID:0081266	DOID:0050453	lissencephaly spectrum disorders
+MONDO:0032893	pachygyria, microcephaly, developmental delay, and dysmorphic facies, with or without seizures	MONDO:0000904	DOID:0081266	DOID:0090131	complex cortical dysplasia with other brain malformations
 MONDO:0032895	developmental and epileptic encephalopathy, 83	MONDO:0006025	DOID:0112218	DOID:0050737	autosomal recessive disease
 MONDO:0032896	spermatogenic failure 42	MONDO:0006025	DOID:0111923	DOID:0050737	autosomal recessive disease
 MONDO:0032898	spermatogenic failure 43	MONDO:0006025	DOID:0111917	DOID:0050737	autosomal recessive disease
@@ -3564,6 +3577,7 @@ MONDO:0033372	developmental and epileptic encephalopathy, 63	MONDO:0006025	DOID:
 MONDO:0033373	developmental and epileptic encephalopathy, 64	MONDO:0000426	DOID:0070375	DOID:0050736	autosomal dominant disease
 MONDO:0033374	developmental and epileptic encephalopathy, 65	MONDO:0000426	DOID:0080430	DOID:0050736	autosomal dominant disease
 MONDO:0033375	orofaciodigital syndrome 17	MONDO:0006025	DOID:0080289	DOID:0050737	autosomal recessive disease
+MONDO:0033482	spinocerebellar ataxia 47	MONDO:0015802	DOID:0111743	DOID:0060307	autosomal dominant non-syndromic intellectual disability
 MONDO:0033483	erythrocytosis, familial, 5	MONDO:0000426	DOID:0080290	DOID:0050736	autosomal dominant disease
 MONDO:0033485	short-rib thoracic dysplasia 19 with or without polydactyly	MONDO:0006025	DOID:0080295	DOID:0050737	autosomal recessive disease
 MONDO:0033486	leukodystrophy, hypomyelinating, 14	MONDO:0006025	DOID:0080296	DOID:0050737	autosomal recessive disease
@@ -3908,8 +3922,8 @@ MONDO:0957539	dystonia 22, juvenile-onset	MONDO:0006025	DOID:0060966	DOID:005073
 MONDO:0957541	neurodevelopmental disorder with hypotonia and speech delay, with or without seizures	MONDO:0000429	DOID:0070512	DOID:0050739	autosomal genetic disease
 MONDO:0957541	neurodevelopmental disorder with hypotonia and speech delay, with or without seizures	MONDO:0002254	DOID:0070512	DOID:225	syndromic disease
 MONDO:0957542	dystonia 22, adult-onset	MONDO:0006025	DOID:0060967	DOID:0050737	autosomal recessive disease
-MONDO:0957576	parkinson disease 25, autosomal recessive early-onset, with impaired intellectual development	MONDO:0006025	DOID:0070486	DOID:0050737	autosomal recessive disease
-MONDO:0957576	parkinson disease 25, autosomal recessive early-onset, with impaired intellectual development	MONDO:0017279	DOID:0070486	DOID:0060894	young-onset Parkinson disease
+MONDO:0957576	Parkinson disease 25, autosomal recessive early-onset, with impaired intellectual development	MONDO:0006025	DOID:0070486	DOID:0050737	autosomal recessive disease
+MONDO:0957576	Parkinson disease 25, autosomal recessive early-onset, with impaired intellectual development	MONDO:0017279	DOID:0070486	DOID:0060894	young-onset Parkinson disease
 MONDO:0957583	neurodevelopmental disorder with dysmorphic facies and behavioral abnormalities	MONDO:0015802	DOID:0070513	DOID:0060307	autosomal dominant non-syndromic intellectual disability
 MONDO:0957584	spermatogenic failure 85	MONDO:0006025	DOID:0070584	DOID:0050737	autosomal recessive disease
 MONDO:0957584	spermatogenic failure 85	MONDO:0015746	DOID:0070584	DOID:0112312	male infertility due to globozoospermia

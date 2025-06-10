@@ -1,4 +1,6 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
+OMIM:301148	retinitis pigmentosa 99	False	False	False
+OMIM:301149	retinal dystrophy, x-linked, gardner-hardcastle type	False	False	False
 OMIM:620975	blood group, anton system	False	False	False
 OMIM:621122	paul-chao neurodevelopmental syndrome	False	False	False
 OMIM:621140	congenital disorder of glycosylation type 1ee with or without immunodeficiency	False	False	False
@@ -14,7 +16,19 @@ OMIM:621179	diarrhea 15, congenital	False	False	False
 OMIM:621180	cranioectodermal dysplasia 5	False	False	False
 OMIM:621182	neurodevelopmental disorder with poor or absent speech, dysmorphic facies, and behavioral abnormalities	False	False	False
 OMIM:621184	tayoun-maawali syndrome	False	False	False
+OMIM:621185	houge-janssens syndrome 4	False	False	False
+OMIM:621191	leukodystrophy and cerebellar atrophy	False	False	False
+OMIM:621192	craniofaciocardiohepatic syndrome	False	False	False
+OMIM:621193	FICUS syndrome	False	False	False
+OMIM:621194	spermatogenic failure 99	False	False	False
+OMIM:621195	combined oxidative phosphorylation deficiency 60	False	False	False
+OMIM:621196	maturity-onset diabetes of the young, type 12	False	False	False
+OMIM:621199	neurodevelopmental disorder with ataxia and brain abnormalities	False	False	False
+OMIM:621201	neurodevelopmental disorder with dysmorphic facies, brain anomalies, and seizures	False	False	False
+OMIM:621209	spermatogenic failure 100	False	False	False
+OMIM:621212	li-takada-miyake syndrome	False	False	False
 OMIMPS:125850	Maturity-onset diabetes of the young	False	False	False
+OMIMPS:155310	Myopathy, visceral	False	False	False
 OMIMPS:158000	Monilethrix	False	False	False
 OMIM:100500		False	False	True
 OMIM:100680		False	False	True
@@ -1166,6 +1180,7 @@ OMIM:606354		False	False	True
 OMIM:606364		False	False	True
 OMIM:606375		False	False	True
 OMIM:606390		False	False	True
+OMIM:606391		False	False	True
 OMIM:606415		False	False	True
 OMIM:606437		False	False	True
 OMIM:606506		False	False	True
@@ -1339,6 +1354,7 @@ OMIM:616233		False	False	True
 OMIM:616369		False	False	True
 OMIM:616568		False	False	True
 OMIM:616964		False	False	True
+OMIM:617931		False	False	True
 OMIM:618007		False	False	True
 OMIM:618428	removed from database	False	False	True
 OMIM:100640	ALDH1A1	False	True	False
@@ -2654,7 +2670,7 @@ OMIM:152424	locus control region, beta	False	True	False
 OMIM:152425	ACSL1	False	True	False
 OMIM:152427	KCNH2	False	True	False
 OMIM:152430	longevity 1	False	True	False
-OMIM:152445	LOR	False	True	False
+OMIM:152445	LORICRIN	False	True	False
 OMIM:152690	XRCC6	False	True	False
 OMIM:152760	GNRH1	False	True	False
 OMIM:152780	LHB	False	True	False
@@ -4636,7 +4652,7 @@ OMIM:400011	acetylserotonin methyltransferase-like, Y-linked	False	True	False
 OMIM:400012	VCY	False	True	False
 OMIM:400013	BPY2	False	True	False
 OMIM:400014	EIF1AY	False	True	False
-OMIM:400015	xk-related protein on y chromosome	False	True	False
+OMIM:400015	XKRY	False	True	False
 OMIM:400016	CDY1	False	True	False
 OMIM:400017	TMSB4Y	False	True	False
 OMIM:400018	CDY2A	False	True	False
@@ -9282,7 +9298,7 @@ OMIM:605764	TDP2	False	True	False
 OMIM:605765	DLEU1	False	True	False
 OMIM:605766	DLEU2	False	True	False
 OMIM:605767	PAG1	False	True	False
-OMIM:605768	dual adaptor of phosphotyrosine and 3-phosphoinositides 1	False	True	False
+OMIM:605768	DAPP1	False	True	False
 OMIM:605769	TRIM33	False	True	False
 OMIM:605770	ILVBL	False	True	False
 OMIM:605771	COX7A2L	False	True	False
@@ -9560,7 +9576,7 @@ OMIM:606092	DNAJC14	False	True	False
 OMIM:606093	PPIG	False	True	False
 OMIM:606094	SIGLEC12	False	True	False
 OMIM:606095	PPIH	False	True	False
-OMIM:606096	lectin, galactoside-binding, soluble, 12	False	True	False
+OMIM:606096	LGALS12	False	True	False
 OMIM:606097	PIGN	False	True	False
 OMIM:606098	SNX6	False	True	False
 OMIM:606099	LGALS8	False	True	False
@@ -9586,7 +9602,7 @@ OMIM:606119	SLURP1	False	True	False
 OMIM:606121	CRCP	False	True	False
 OMIM:606122	TNFRSF19	False	True	False
 OMIM:606123	RNF16	False	True	False
-OMIM:606124	RNF18	False	True	False
+OMIM:606124	TRIM49	False	True	False
 OMIM:606125	TRIM8	False	True	False
 OMIM:606126	BCL2L14	False	True	False
 OMIM:606127	MYOCD	False	True	False
@@ -9890,7 +9906,7 @@ OMIM:606477	SRR	False	True	False
 OMIM:606478	POT1	False	True	False
 OMIM:606479	NLGN2	False	True	False
 OMIM:606480	ZMPSTE24	False	True	False
-OMIM:606481	PIB5PA	False	True	False
+OMIM:606481	INPP5J	False	True	False
 OMIM:606484	MTPN	False	True	False
 OMIM:606485	POLR2M	False	True	False
 OMIM:606486	CHMP1B	False	True	False
@@ -10068,8 +10084,8 @@ OMIM:606692	TRAF7	False	True	False
 OMIM:606694	NUP155	False	True	False
 OMIM:606695	OPN3	False	True	False
 OMIM:606696	KATNA1	False	True	False
-OMIM:606697	zinc finger protein zk1	False	True	False
-OMIM:606698	sry-box 30	False	True	False
+OMIM:606697	ZNF443	False	True	False
+OMIM:606698	SOX30	False	True	False
 OMIM:606699	HELZ	False	True	False
 OMIM:606700	MIDN	False	True	False
 OMIM:606701	DRGX	False	True	False
@@ -10377,7 +10393,7 @@ OMIM:607073	NAA80	False	True	False
 OMIM:607074	PRKD2	False	True	False
 OMIM:607075	PDAP1	False	True	False
 OMIM:607076	PI15	False	True	False
-OMIM:607077	PRKCN	False	True	False
+OMIM:607077	PRKD3	False	True	False
 OMIM:607079	RHBG	False	True	False
 OMIM:607081	TAPBPL	False	True	False
 OMIM:607082	CACNA2D2	False	True	False
@@ -10443,7 +10459,7 @@ OMIM:607167	DYNLRB1	False	True	False
 OMIM:607168	DYNLRB2	False	True	False
 OMIM:607169	PRSS16	False	True	False
 OMIM:607170	CRELD1	False	True	False
-OMIM:607171	cysteine-rich protein with egf-like domains 2	False	True	False
+OMIM:607171	CRELD2	False	True	False
 OMIM:607172	STK11IP	False	True	False
 OMIM:607173	PSMD14	False	True	False
 OMIM:607175	DUSP16	False	True	False
@@ -10516,7 +10532,7 @@ OMIM:607254	APOL4	False	True	False
 OMIM:607255	APOL5	False	True	False
 OMIM:607256	APOL6	False	True	False
 OMIM:607257	SOX6	False	True	False
-OMIM:607260	placental protein 13-like protein	False	True	False
+OMIM:607260	LGALS14	False	True	False
 OMIM:607261	EVC2	False	True	False
 OMIM:607262	EPN1	False	True	False
 OMIM:607263	EPN2	False	True	False
@@ -10616,7 +10632,7 @@ OMIM:607381	TIMM50	False	True	False
 OMIM:607382	CLIP3	False	True	False
 OMIM:607383	TIMM13	False	True	False
 OMIM:607384	TIMM9	False	True	False
-OMIM:607385	udp-n-acetylglucosamine:alpha-1,3-d-mannoside beta-1,4-n-acetylglucosaminyltransferase 4	False	True	False
+OMIM:607385	MGAT4C	False	True	False
 OMIM:607386	IFT172	False	True	False
 OMIM:607387	DCTN3	False	True	False
 OMIM:607388	TIMM10B	False	True	False
@@ -11603,7 +11619,7 @@ OMIM:608668	ZMYND11	False	True	False
 OMIM:608669	BNC2	False	True	False
 OMIM:608671	DZIP1	False	True	False
 OMIM:608672	DZIP3	False	True	False
-OMIM:608674	sh3 domain protein 19	False	True	False
+OMIM:608674	SH3D19	False	True	False
 OMIM:608675	FCSK	False	True	False
 OMIM:608676	TXLNA	False	True	False
 OMIM:608677	MIB1	False	True	False
@@ -17301,11 +17317,11 @@ OMIM:617423	PRR14	False	True	False
 OMIM:617424	WDR26	False	True	False
 OMIM:617426	CRCT1	False	True	False
 OMIM:617427	S100A7A	False	True	False
-OMIM:617428	C1ORF43	False	True	False
+OMIM:617428	LTAP1	False	True	False
 OMIM:617429	UBE2Q1	False	True	False
 OMIM:617430	ADGRF1	False	True	False
 OMIM:617431	USP53	False	True	False
-OMIM:617434	long noncoding RNA host2	False	True	False
+OMIM:617434	CERNA2	False	True	False
 OMIM:617436	GON7	False	True	False
 OMIM:617437	S100A16	False	True	False
 OMIM:617438	CBX6	False	True	False
@@ -17772,7 +17788,7 @@ OMIM:618337	FRMD8	False	True	False
 OMIM:618338	TMT1A	False	True	False
 OMIM:618340	SMR3A	False	True	False
 OMIM:618344	PRR15	False	True	False
-OMIM:618350	MAP11	False	True	False
+OMIM:618350	TRAPPC14	False	True	False
 OMIM:618355	ALG10	False	True	False
 OMIM:618359	ZNF197	False	True	False
 OMIM:618361	DUSP23	False	True	False
@@ -19244,6 +19260,28 @@ OMIM:621187	OR51B2	False	True	False
 OMIM:621188	ZCWPW2	False	True	False
 OMIM:621189	LINC02525	False	True	False
 OMIM:621190	MIR617	False	True	False
+OMIM:621197	BEND4	False	True	False
+OMIM:621198	BEND5	False	True	False
+OMIM:621200	ZNF385D	False	True	False
+OMIM:621202	C10ORF71	False	True	False
+OMIM:621203	MEIOSIN	False	True	False
+OMIM:621204	MIR129-1	False	True	False
+OMIM:621205	MIR129-2	False	True	False
+OMIM:621206	TMIGD1	False	True	False
+OMIM:621207	TMIGD3	False	True	False
+OMIM:621208	C19ORF44	False	True	False
+OMIM:621210	PIRAT1	False	True	False
+OMIM:621211	ADPRM	False	True	False
+OMIM:621213	FAM171A2	False	True	False
+OMIM:621215	NANOGP8	False	True	False
+OMIM:621216	PELATON	False	True	False
+OMIM:621217	BEND6	False	True	False
+OMIM:621218	RMP24	False	True	False
+OMIM:621219	TMEM179	False	True	False
+OMIM:621220	GGNS	False	True	False
+OMIM:621221	STX18AS1	False	True	False
+OMIM:621222	L1TD1	False	True	False
+OMIM:621223	AIF1L	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
@@ -25237,7 +25275,7 @@ OMIM:616324	myasthenic syndrome, congenital, 4b, fast-channel	True	False	False
 OMIM:616325	myasthenic syndrome, congenital, 9, associated with acetylcholine receptor deficiency	True	False	False
 OMIM:616326	myasthenic syndrome, congenital, 11, associated with acetylcholine receptor deficiency	True	False	False
 OMIM:616329	maturity-onset diabetes of the young, type 13	True	False	False
-OMIM:616330	myasthenic syndrome, congenital, 18	True	False	False
+OMIM:616330	developmental and epileptic encephalopathy 117	True	False	False
 OMIM:616331	robinow syndrome, autosomal dominant 2	True	False	False
 OMIM:616335	microcephaly and chorioretinopathy, autosomal recessive, 3	True	False	False
 OMIM:616339	developmental and epileptic encephalopathy 29	True	False	False
@@ -26595,7 +26633,7 @@ OMIM:619174	deafness, autosomal recessive 117	True	False	False
 OMIM:619175	proteasome-associated autoinflammatory syndrome 5	True	False	False
 OMIM:619176	oocyte/zygote/embryo maturation arrest 10	True	False	False
 OMIM:619177	spermatogenic failure 51	True	False	False
-OMIM:619178	myofibrillar myopathy 11	True	False	False
+OMIM:619178	myopathy, myofibrillar, 11	True	False	False
 OMIM:619179	microcephaly 26, primary, autosomal dominant	True	False	False
 OMIM:619180	microcephaly 27, primary, autosomal dominant	True	False	False
 OMIM:619182	gastric adenocarcinoma and proximal polyposis of the stomach	True	False	False
@@ -28120,7 +28158,6 @@ OMIM:600309		True	False	True
 OMIM:601251		True	False	True
 OMIM:601563		True	False	True
 OMIM:605365		True	False	True
-OMIM:606391		True	False	True
 OMIM:607683		True	False	True
 OMIM:607801		True	False	True
 OMIM:610269		True	False	True
@@ -28131,7 +28168,6 @@ OMIM:614192		True	False	True
 OMIM:614339		True	False	True
 OMIM:615057		True	False	True
 OMIM:616958		True	False	True
-OMIM:617931		True	False	True
 OMIM:100050	aarskog syndrome, autosomal dominant	True	True	False
 OMIM:100200	abducens palsy	True	True	False
 OMIM:100700	achard syndrome	True	True	False
