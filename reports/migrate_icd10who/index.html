@@ -1,0 +1,2429 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Migrate icd10who - Mondo Disease Ontology Ingest</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#icd10who" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-header__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mondo Disease Ontology Ingest
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Migrate icd10who
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-nav__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Mondo Disease Ontology Ingest
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Developers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Developers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapped_deprecated/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Deprecated terms w/ Mondo xrefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo sources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo sources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Externally managed content
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Externally managed content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../externally-managed-content/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/nord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NORD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo source metrics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo source metrics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#icd10who" class="md-nav__link">
+    <span class="md-ellipsis">
+      ICD10WHO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ICD10WHO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migratable-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migratable terms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Migrate icd10who</h1>
+
+<h2 id="icd10who">ICD10WHO</h2>
+<p><a href="https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/slurp/icd10who.tsv">Interactive FlatGithub table</a></p>
+<h3 id="migratable-terms">Migratable terms</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">mondo_id</th>
+<th style="text-align: left;">mondo_label</th>
+<th style="text-align: left;">xref</th>
+<th style="text-align: left;">xref_source</th>
+<th style="text-align: left;">original_label</th>
+<th style="text-align: left;">definition</th>
+<th style="text-align: left;">parents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ID</td>
+<td style="text-align: left;">LABEL</td>
+<td style="text-align: left;">A oboInOwl:hasDbXref</td>
+<td style="text-align: left;">&gt;A oboInOwl:source SPLIT=</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">A IAO:0000115</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852953</td>
+<td style="text-align: left;">acute poliomyelitis</td>
+<td style="text-align: left;">ICD10WHO:A80</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Acute poliomyelitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852954</td>
+<td style="text-align: left;">atypical virus infections of central nervous system</td>
+<td style="text-align: left;">ICD10WHO:A81</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Atypical virus infections of central nervous system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852955</td>
+<td style="text-align: left;">rabies</td>
+<td style="text-align: left;">ICD10WHO:A82</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rabies</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852956</td>
+<td style="text-align: left;">mosquito-borne viral encephalitis</td>
+<td style="text-align: left;">ICD10WHO:A83</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Mosquito-borne viral encephalitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852957</td>
+<td style="text-align: left;">tick-borne viral encephalitis</td>
+<td style="text-align: left;">ICD10WHO:A84</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Tick-borne viral encephalitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852958</td>
+<td style="text-align: left;">other viral encephalitis, not elsewhere classified</td>
+<td style="text-align: left;">ICD10WHO:A85</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other viral encephalitis, not elsewhere classified</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852959</td>
+<td style="text-align: left;">unspecified viral encephalitis</td>
+<td style="text-align: left;">ICD10WHO:A86</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Unspecified viral encephalitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852960</td>
+<td style="text-align: left;">viral meningitis</td>
+<td style="text-align: left;">ICD10WHO:A87</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Viral meningitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852961</td>
+<td style="text-align: left;">other viral infections of central nervous system, not elsewhere classified</td>
+<td style="text-align: left;">ICD10WHO:A88</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other viral infections of central nervous system, not elsewhere classified</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852962</td>
+<td style="text-align: left;">unspecified viral infection of central nervous system</td>
+<td style="text-align: left;">ICD10WHO:A89</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Unspecified viral infection of central nervous system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0024318</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852963</td>
+<td style="text-align: left;">benign neoplasm of mouth and pharynx</td>
+<td style="text-align: left;">ICD10WHO:D10</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of mouth and pharynx</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852964</td>
+<td style="text-align: left;">benign neoplasm of major salivary glands</td>
+<td style="text-align: left;">ICD10WHO:D11</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of major salivary glands</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852965</td>
+<td style="text-align: left;">benign neoplasm of colon, rectum, anus and anal canal</td>
+<td style="text-align: left;">ICD10WHO:D12</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of colon, rectum, anus and anal canal</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852966</td>
+<td style="text-align: left;">benign neoplasm of other and ill-defined parts of digestive system</td>
+<td style="text-align: left;">ICD10WHO:D13</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of other and ill-defined parts of digestive system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852967</td>
+<td style="text-align: left;">benign neoplasm of middle ear and respiratory system</td>
+<td style="text-align: left;">ICD10WHO:D14</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of middle ear and respiratory system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852968</td>
+<td style="text-align: left;">benign neoplasm of other and unspecified intrathoracic organs</td>
+<td style="text-align: left;">ICD10WHO:D15</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of other and unspecified intrathoracic organs</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852969</td>
+<td style="text-align: left;">benign neoplasm of bone and articular cartilage</td>
+<td style="text-align: left;">ICD10WHO:D16</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of bone and articular cartilage</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852970</td>
+<td style="text-align: left;">benign lipomatous neoplasm</td>
+<td style="text-align: left;">ICD10WHO:D17</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign lipomatous neoplasm</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852971</td>
+<td style="text-align: left;">haemangioma and lymphangioma, any site</td>
+<td style="text-align: left;">ICD10WHO:D18</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Haemangioma and lymphangioma, any site</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852972</td>
+<td style="text-align: left;">benign neoplasm of mesothelial tissue</td>
+<td style="text-align: left;">ICD10WHO:D19</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of mesothelial tissue</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852973</td>
+<td style="text-align: left;">benign neoplasm of soft tissue of retroperitoneum and peritoneum</td>
+<td style="text-align: left;">ICD10WHO:D20</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of soft tissue of retroperitoneum and peritoneum</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852974</td>
+<td style="text-align: left;">other benign neoplasms of connective and other soft tissue</td>
+<td style="text-align: left;">ICD10WHO:D21</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other benign neoplasms of connective and other soft tissue</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852975</td>
+<td style="text-align: left;">melanocytic naevi</td>
+<td style="text-align: left;">ICD10WHO:D22</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Melanocytic naevi</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852976</td>
+<td style="text-align: left;">other benign neoplasms of skin</td>
+<td style="text-align: left;">ICD10WHO:D23</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other benign neoplasms of skin</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852977</td>
+<td style="text-align: left;">benign neoplasm of breast</td>
+<td style="text-align: left;">ICD10WHO:D24</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of breast</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852978</td>
+<td style="text-align: left;">leiomyoma of uterus</td>
+<td style="text-align: left;">ICD10WHO:D25</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Leiomyoma of uterus</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852979</td>
+<td style="text-align: left;">other benign neoplasms of uterus</td>
+<td style="text-align: left;">ICD10WHO:D26</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other benign neoplasms of uterus</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852980</td>
+<td style="text-align: left;">benign neoplasm of ovary</td>
+<td style="text-align: left;">ICD10WHO:D27</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of ovary</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852981</td>
+<td style="text-align: left;">benign neoplasm of other and unspecified female genital organs</td>
+<td style="text-align: left;">ICD10WHO:D28</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of other and unspecified female genital organs</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852982</td>
+<td style="text-align: left;">benign neoplasm of male genital organs</td>
+<td style="text-align: left;">ICD10WHO:D29</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of male genital organs</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852983</td>
+<td style="text-align: left;">benign neoplasm of urinary organs</td>
+<td style="text-align: left;">ICD10WHO:D30</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of urinary organs</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852984</td>
+<td style="text-align: left;">benign neoplasm of eye and adnexa</td>
+<td style="text-align: left;">ICD10WHO:D31</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of eye and adnexa</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852985</td>
+<td style="text-align: left;">benign neoplasm of meninges</td>
+<td style="text-align: left;">ICD10WHO:D32</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of meninges</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852986</td>
+<td style="text-align: left;">benign neoplasm of brain and other parts of central nervous system</td>
+<td style="text-align: left;">ICD10WHO:D33</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of brain and other parts of central nervous system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852987</td>
+<td style="text-align: left;">benign neoplasm of thyroid gland</td>
+<td style="text-align: left;">ICD10WHO:D34</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of thyroid gland</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852988</td>
+<td style="text-align: left;">benign neoplasm of other and unspecified endocrine glands</td>
+<td style="text-align: left;">ICD10WHO:D35</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of other and unspecified endocrine glands</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852989</td>
+<td style="text-align: left;">benign neoplasm of other and unspecified sites</td>
+<td style="text-align: left;">ICD10WHO:D36</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Benign neoplasm of other and unspecified sites</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005165</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852990</td>
+<td style="text-align: left;">disorders of aromatic amino-acid metabolism</td>
+<td style="text-align: left;">ICD10WHO:E70</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of aromatic amino-acid metabolism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852991</td>
+<td style="text-align: left;">disorders of branched-chain amino-acid metabolism and fatty-acid metabolism</td>
+<td style="text-align: left;">ICD10WHO:E71</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of branched-chain amino-acid metabolism and fatty-acid metabolism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852992</td>
+<td style="text-align: left;">other disorders of amino-acid metabolism</td>
+<td style="text-align: left;">ICD10WHO:E72</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other disorders of amino-acid metabolism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852993</td>
+<td style="text-align: left;">lactose intolerance</td>
+<td style="text-align: left;">ICD10WHO:E73</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Lactose intolerance</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852994</td>
+<td style="text-align: left;">other disorders of carbohydrate metabolism</td>
+<td style="text-align: left;">ICD10WHO:E74</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other disorders of carbohydrate metabolism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852995</td>
+<td style="text-align: left;">disorders of sphingolipid metabolism and other lipid storage disorders</td>
+<td style="text-align: left;">ICD10WHO:E75</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of sphingolipid metabolism and other lipid storage disorders</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852996</td>
+<td style="text-align: left;">disorders of glycosaminoglycan metabolism</td>
+<td style="text-align: left;">ICD10WHO:E76</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of glycosaminoglycan metabolism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852997</td>
+<td style="text-align: left;">disorders of glycoprotein metabolism</td>
+<td style="text-align: left;">ICD10WHO:E77</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of glycoprotein metabolism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852998</td>
+<td style="text-align: left;">disorders of lipoprotein metabolism and other lipidaemias</td>
+<td style="text-align: left;">ICD10WHO:E78</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of lipoprotein metabolism and other lipidaemias</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0852999</td>
+<td style="text-align: left;">disorders of purine and pyrimidine metabolism</td>
+<td style="text-align: left;">ICD10WHO:E79</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of purine and pyrimidine metabolism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853000</td>
+<td style="text-align: left;">disorders of porphyrin and bilirubin metabolism</td>
+<td style="text-align: left;">ICD10WHO:E80</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of porphyrin and bilirubin metabolism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853001</td>
+<td style="text-align: left;">disorders of mineral metabolism</td>
+<td style="text-align: left;">ICD10WHO:E83</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of mineral metabolism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853002</td>
+<td style="text-align: left;">cystic fibrosis</td>
+<td style="text-align: left;">ICD10WHO:E84</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Cystic fibrosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853003</td>
+<td style="text-align: left;">amyloidosis</td>
+<td style="text-align: left;">ICD10WHO:E85</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Amyloidosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853004</td>
+<td style="text-align: left;">volume depletion</td>
+<td style="text-align: left;">ICD10WHO:E86</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Volume depletion</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853005</td>
+<td style="text-align: left;">other disorders of fluid, electrolyte and acid-base balance</td>
+<td style="text-align: left;">ICD10WHO:E87</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other disorders of fluid, electrolyte and acid-base balance</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853006</td>
+<td style="text-align: left;">other metabolic disorders</td>
+<td style="text-align: left;">ICD10WHO:E88</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other metabolic disorders</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853007</td>
+<td style="text-align: left;">postprocedural endocrine and metabolic disorders, not elsewhere classified</td>
+<td style="text-align: left;">ICD10WHO:E89</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Postprocedural endocrine and metabolic disorders, not elsewhere classified</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853008</td>
+<td style="text-align: left;">nutritional and metabolic disorders in diseases classified elsewhere</td>
+<td style="text-align: left;">ICD10WHO:E90</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Nutritional and metabolic disorders in diseases classified elsewhere</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853009</td>
+<td style="text-align: left;">bipolar affective disorder, current episode hypomanic</td>
+<td style="text-align: left;">ICD10WHO:F31.0</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Bipolar affective disorder, current episode hypomanic</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853010</td>
+<td style="text-align: left;">bipolar affective disorder, current episode manic without psychotic symptoms</td>
+<td style="text-align: left;">ICD10WHO:F31.1</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Bipolar affective disorder, current episode manic without psychotic symptoms</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853011</td>
+<td style="text-align: left;">bipolar affective disorder, current episode manic with psychotic symptoms</td>
+<td style="text-align: left;">ICD10WHO:F31.2</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Bipolar affective disorder, current episode manic with psychotic symptoms</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853012</td>
+<td style="text-align: left;">bipolar affective disorder, current episode mild or moderate depression</td>
+<td style="text-align: left;">ICD10WHO:F31.3</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Bipolar affective disorder, current episode mild or moderate depression</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853013</td>
+<td style="text-align: left;">bipolar affective disorder, current episode severe depression without psychotic symptoms</td>
+<td style="text-align: left;">ICD10WHO:F31.4</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Bipolar affective disorder, current episode severe depression without psychotic symptoms</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853014</td>
+<td style="text-align: left;">bipolar affective disorder, current episode severe depression with psychotic symptoms</td>
+<td style="text-align: left;">ICD10WHO:F31.5</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Bipolar affective disorder, current episode severe depression with psychotic symptoms</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853015</td>
+<td style="text-align: left;">bipolar affective disorder, current episode mixed</td>
+<td style="text-align: left;">ICD10WHO:F31.6</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Bipolar affective disorder, current episode mixed</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853016</td>
+<td style="text-align: left;">bipolar affective disorder, currently in remission</td>
+<td style="text-align: left;">ICD10WHO:F31.7</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Bipolar affective disorder, currently in remission</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853017</td>
+<td style="text-align: left;">other bipolar affective disorders</td>
+<td style="text-align: left;">ICD10WHO:F31.8</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other bipolar affective disorders</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853018</td>
+<td style="text-align: left;">bipolar affective disorder, unspecified</td>
+<td style="text-align: left;">ICD10WHO:F31.9</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Bipolar affective disorder, unspecified</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004985</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853019</td>
+<td style="text-align: left;">localization-related (focal)(partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset</td>
+<td style="text-align: left;">ICD10WHO:G40.0</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Localization-related (focal)(partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853020</td>
+<td style="text-align: left;">localization-related (focal)(partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures</td>
+<td style="text-align: left;">ICD10WHO:G40.1</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Localization-related (focal)(partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853021</td>
+<td style="text-align: left;">localization-related (focal)(partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures</td>
+<td style="text-align: left;">ICD10WHO:G40.2</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Localization-related (focal)(partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853022</td>
+<td style="text-align: left;">generalized idiopathic epilepsy and epileptic syndromes</td>
+<td style="text-align: left;">ICD10WHO:G40.3</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Generalized idiopathic epilepsy and epileptic syndromes</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853023</td>
+<td style="text-align: left;">other generalized epilepsy and epileptic syndromes</td>
+<td style="text-align: left;">ICD10WHO:G40.4</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other generalized epilepsy and epileptic syndromes</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853024</td>
+<td style="text-align: left;">special epileptic syndromes</td>
+<td style="text-align: left;">ICD10WHO:G40.5</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Special epileptic syndromes</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853025</td>
+<td style="text-align: left;">grand mal seizures, unspecified (with or without petit mal)</td>
+<td style="text-align: left;">ICD10WHO:G40.6</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Grand mal seizures, unspecified (with or without petit mal)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853026</td>
+<td style="text-align: left;">petit mal, unspecified, without grand mal seizures</td>
+<td style="text-align: left;">ICD10WHO:G40.7</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Petit mal, unspecified, without grand mal seizures</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853027</td>
+<td style="text-align: left;">other epilepsy</td>
+<td style="text-align: left;">ICD10WHO:G40.8</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other epilepsy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853028</td>
+<td style="text-align: left;">epilepsy, unspecified</td>
+<td style="text-align: left;">ICD10WHO:G40.9</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Epilepsy, unspecified</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005027</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853029</td>
+<td style="text-align: left;">hordeolum and chalazion</td>
+<td style="text-align: left;">ICD10WHO:H00</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hordeolum and chalazion</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000462</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853030</td>
+<td style="text-align: left;">other inflammation of eyelid</td>
+<td style="text-align: left;">ICD10WHO:H01</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other inflammation of eyelid</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000462</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853031</td>
+<td style="text-align: left;">other disorders of eyelid</td>
+<td style="text-align: left;">ICD10WHO:H02</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other disorders of eyelid</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000462</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853032</td>
+<td style="text-align: left;">disorders of eyelid in diseases classified elsewhere</td>
+<td style="text-align: left;">ICD10WHO:H03</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of eyelid in diseases classified elsewhere</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000462</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853033</td>
+<td style="text-align: left;">disorders of lacrimal system</td>
+<td style="text-align: left;">ICD10WHO:H04</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of lacrimal system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000462</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853034</td>
+<td style="text-align: left;">disorders of orbit</td>
+<td style="text-align: left;">ICD10WHO:H05</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of orbit</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000462</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853035</td>
+<td style="text-align: left;">disorders of lacrimal system and orbit in diseases classified elsewhere</td>
+<td style="text-align: left;">ICD10WHO:H06</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of lacrimal system and orbit in diseases classified elsewhere</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000462</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853036</td>
+<td style="text-align: left;">hyperplasia of prostate</td>
+<td style="text-align: left;">ICD10WHO:N40</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hyperplasia of prostate</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853037</td>
+<td style="text-align: left;">inflammatory diseases of prostate</td>
+<td style="text-align: left;">ICD10WHO:N41</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Inflammatory diseases of prostate</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853038</td>
+<td style="text-align: left;">other disorders of prostate</td>
+<td style="text-align: left;">ICD10WHO:N42</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other disorders of prostate</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853039</td>
+<td style="text-align: left;">hydrocele and spermatocele</td>
+<td style="text-align: left;">ICD10WHO:N43</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hydrocele and spermatocele</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853040</td>
+<td style="text-align: left;">torsion of testis</td>
+<td style="text-align: left;">ICD10WHO:N44</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Torsion of testis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853041</td>
+<td style="text-align: left;">orchitis and epididymitis</td>
+<td style="text-align: left;">ICD10WHO:N45</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Orchitis and epididymitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853042</td>
+<td style="text-align: left;">male infertility</td>
+<td style="text-align: left;">ICD10WHO:N46</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Male infertility</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853043</td>
+<td style="text-align: left;">redundant prepuce, phimosis and paraphimosis</td>
+<td style="text-align: left;">ICD10WHO:N47</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Redundant prepuce, phimosis and paraphimosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853044</td>
+<td style="text-align: left;">other disorders of penis</td>
+<td style="text-align: left;">ICD10WHO:N48</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other disorders of penis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853045</td>
+<td style="text-align: left;">inflammatory disorders of male genital organs, not elsewhere classified</td>
+<td style="text-align: left;">ICD10WHO:N49</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Inflammatory disorders of male genital organs, not elsewhere classified</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853046</td>
+<td style="text-align: left;">other disorders of male genital organs</td>
+<td style="text-align: left;">ICD10WHO:N50</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Other disorders of male genital organs</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0853047</td>
+<td style="text-align: left;">disorders of male genital organs in diseases classified elsewhere</td>
+<td style="text-align: left;">ICD10WHO:N51</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Disorders of male genital organs in diseases classified elsewhere</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0003150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859448</td>
+<td style="text-align: left;">certain infectious and parasitic diseases</td>
+<td style="text-align: left;">ICD10WHO:I</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Certain infectious and parasitic diseases</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859449</td>
+<td style="text-align: left;">neoplasms</td>
+<td style="text-align: left;">ICD10WHO:II</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Neoplasms</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859450</td>
+<td style="text-align: left;">diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism</td>
+<td style="text-align: left;">ICD10WHO:III</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859451</td>
+<td style="text-align: left;">endocrine, nutritional and metabolic diseases</td>
+<td style="text-align: left;">ICD10WHO:IV</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Endocrine, nutritional and metabolic diseases</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859452</td>
+<td style="text-align: left;">diseases of the circulatory system</td>
+<td style="text-align: left;">ICD10WHO:IX</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the circulatory system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859453</td>
+<td style="text-align: left;">mental and behavioural disorders</td>
+<td style="text-align: left;">ICD10WHO:V</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Mental and behavioural disorders</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859454</td>
+<td style="text-align: left;">diseases of the nervous system</td>
+<td style="text-align: left;">ICD10WHO:VI</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the nervous system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859455</td>
+<td style="text-align: left;">diseases of the eye and adnexa</td>
+<td style="text-align: left;">ICD10WHO:VII</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the eye and adnexa</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859456</td>
+<td style="text-align: left;">diseases of the ear and mastoid process</td>
+<td style="text-align: left;">ICD10WHO:VIII</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the ear and mastoid process</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859457</td>
+<td style="text-align: left;">diseases of the respiratory system</td>
+<td style="text-align: left;">ICD10WHO:X</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the respiratory system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859458</td>
+<td style="text-align: left;">diseases of the digestive system</td>
+<td style="text-align: left;">ICD10WHO:XI</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the digestive system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859459</td>
+<td style="text-align: left;">diseases of the skin and subcutaneous tissue</td>
+<td style="text-align: left;">ICD10WHO:XII</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the skin and subcutaneous tissue</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859460</td>
+<td style="text-align: left;">diseases of the musculoskeletal system and connective tissue</td>
+<td style="text-align: left;">ICD10WHO:XIII</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the musculoskeletal system and connective tissue</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859461</td>
+<td style="text-align: left;">diseases of the genitourinary system</td>
+<td style="text-align: left;">ICD10WHO:XIV</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diseases of the genitourinary system</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859462</td>
+<td style="text-align: left;">injury, poisoning and certain other consequences of external causes</td>
+<td style="text-align: left;">ICD10WHO:XIX</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Injury, poisoning and certain other consequences of external causes</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859463</td>
+<td style="text-align: left;">pregnancy, childbirth and the puerperium</td>
+<td style="text-align: left;">ICD10WHO:XV</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Pregnancy, childbirth and the puerperium</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859464</td>
+<td style="text-align: left;">certain conditions originating in the perinatal period</td>
+<td style="text-align: left;">ICD10WHO:XVI</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Certain conditions originating in the perinatal period</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859465</td>
+<td style="text-align: left;">congenital malformations, deformations and chromosomal abnormalities</td>
+<td style="text-align: left;">ICD10WHO:XVII</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital malformations, deformations and chromosomal abnormalities</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859466</td>
+<td style="text-align: left;">symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified</td>
+<td style="text-align: left;">ICD10WHO:XVIII</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859467</td>
+<td style="text-align: left;">external causes of morbidity and mortality</td>
+<td style="text-align: left;">ICD10WHO:XX</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">External causes of morbidity and mortality</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859468</td>
+<td style="text-align: left;">factors influencing health status and contact with health services</td>
+<td style="text-align: left;">ICD10WHO:XXI</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Factors influencing health status and contact with health services</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0859469</td>
+<td style="text-align: left;">codes for special purposes</td>
+<td style="text-align: left;">ICD10WHO:XXII</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Codes for special purposes</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0946091</td>
+<td style="text-align: left;">sudden infant death syndrome with mention of autopsy</td>
+<td style="text-align: left;">ICD10WHO:R95.0</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Sudden infant death syndrome with mention of autopsy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0010086</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0946092</td>
+<td style="text-align: left;">sudden infant death syndrome without mention of autopsy</td>
+<td style="text-align: left;">ICD10WHO:R95.9</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Sudden infant death syndrome without mention of autopsy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0010086</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
