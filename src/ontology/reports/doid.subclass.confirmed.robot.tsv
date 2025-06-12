@@ -28,7 +28,6 @@ MONDO:0000266	pulmonary aspergilloma	MONDO:0005657	DOID:0050153	DOID:13564	asper
 MONDO:0000270	lower respiratory tract disorder	MONDO:0005087	DOID:0050161	DOID:1579	respiratory system disorder
 MONDO:0000271	tuberculous salpingitis	MONDO:0006002	DOID:0050166	DOID:2149	urogenital tuberculosis
 MONDO:0000273	Kunjin virus infectous disease	MONDO:0019376	DOID:0050174	DOID:2365	West-Nile encephalitis
-MONDO:0000282	Whitewater Arroyo hemorrhagic fever	MONDO:0005108	DOID:0050199	DOID:934	viral infectious disease
 MONDO:0000283	Hantavirus hemorrhagic fever with renal syndrome, Seoul virus type	MONDO:0005784	DOID:0050200	DOID:11266	hantavirus hemorrhagic fever with renal syndrome
 MONDO:0000284	Hantavirus hemorrhagic fever with renal syndrome, Puumala virus type	MONDO:0005784	DOID:0050201	DOID:11266	hantavirus hemorrhagic fever with renal syndrome
 MONDO:0000286	Epstein-Barr virus hepatitis	MONDO:0005111	DOID:0050204	DOID:2938	Epstein-Barr virus infection
@@ -308,6 +307,7 @@ MONDO:0000878	cytomegalovirus retinitis	MONDO:0002708	DOID:0080160	DOID:3612	ret
 MONDO:0000879	cutaneous candidiasis	MONDO:0002026	DOID:0080161	DOID:1508	candidiasis
 MONDO:0000888	gastrointestinal mucositis	MONDO:0004335	DOID:0080178	DOID:77	digestive system disorder
 MONDO:0000889	haemophilus meningitis	MONDO:0006670	DOID:0080179	DOID:9470	bacterial meningitis
+MONDO:0000890	Zika virus congenital syndrome	MONDO:0005108	DOID:0080180	DOID:934	viral infectious disease
 MONDO:0000891	mixed fibrolamellar hepatocellular carcinoma	MONDO:0006210	DOID:0080182	DOID:5015	fibrolamellar hepatocellular carcinoma
 MONDO:0000893	mixed mucinous and nonmucinous bronchioloalveolar adenocarcinoma	MONDO:0004991	DOID:0080184	DOID:4926	minimally invasive lung adenocarcinoma
 MONDO:0000894	mucinous bronchioloalveolar adenocarcinoma	MONDO:0004991	DOID:0080185	DOID:4926	minimally invasive lung adenocarcinoma
@@ -736,6 +736,7 @@ MONDO:0001443	tympanosclerosis	MONDO:0003648	DOID:1214	DOID:5782	tympanic membra
 MONDO:0001444	Chagas disease	MONDO:0000940	DOID:12140	DOID:10113	trypanosomiasis
 MONDO:0001446	low compliance bladder	MONDO:0006026	DOID:12144	DOID:365	urinary bladder disorder
 MONDO:0001447	detrusor sphincter dyssynergia	MONDO:0006026	DOID:12145	DOID:365	urinary bladder disorder
+MONDO:0001449	lymphocytic choriomeningitis	MONDO:0005650	DOID:12155	DOID:3944	Arenaviridae infectious disease
 MONDO:0001451	peripheral retinal degeneration	MONDO:0004580	DOID:12161	DOID:8466	retinal degeneration
 MONDO:0001452	pseudoretinitis pigmentosa	MONDO:0001451	DOID:12162	DOID:12161	peripheral retinal degeneration
 MONDO:0001453	senile reticular retinal degeneration	MONDO:0001451	DOID:12163	DOID:12161	peripheral retinal degeneration
@@ -4147,7 +4148,7 @@ MONDO:0007042	Saethre-Chotzen syndrome	MONDO:0019796	DOID:14768	DOID:12960	acroc
 MONDO:0007045	acrofacial dysostosis, Catania type	MONDO:0018237	DOID:0060384	DOID:0060379	acrofacial dysostosis
 MONDO:0007047	punctate palmoplantar keratoderma type III	MONDO:0017675	DOID:0060362	DOID:0060361	punctate palmoplantar keratoderma
 MONDO:0007048	acrokeratosis verruciformis	MONDO:0006566	DOID:0050606	DOID:161	keratosis
-MONDO:0007057	Acroosteolysis dominant type	MONDO:0000426	DOID:2736	DOID:0050736	autosomal dominant disease
+MONDO:0007057	acroosteolysis dominant type	MONDO:0000426	DOID:2736	DOID:0050736	autosomal dominant disease
 MONDO:0007060	spermatogenic failure 6	MONDO:0015746	DOID:0070167	DOID:0112312	male infertility due to globozoospermia
 MONDO:0007068	adenylosuccinate lyase deficiency	MONDO:0004736	DOID:0050762	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0007070	adiposis dolorosa	MONDO:0006574	DOID:3928	DOID:3153	lipomatosis
@@ -5802,7 +5803,6 @@ MONDO:0012696	otosclerosis 4	MONDO:0005349	DOID:0060923	DOID:12185	otosclerosis
 MONDO:0012697	otosclerosis 7	MONDO:0005349	DOID:0060925	DOID:12185	otosclerosis
 MONDO:0012699	autosomal recessive limb-girdle muscular dystrophy type 2M	MONDO:0015152	DOID:0110296	DOID:0110274	autosomal recessive limb-girdle muscular dystrophy
 MONDO:0012701	cataract 12 multiple types	MONDO:0005129	DOID:0110239	DOID:83	cataract
-MONDO:0012705	familial temporal lobe epilepsy 3	MONDO:0005115	DOID:0060750	DOID:3328	temporal lobe epilepsy
 MONDO:0012706	familial temporal lobe epilepsy 4	MONDO:0005115	DOID:0060753	DOID:3328	temporal lobe epilepsy
 MONDO:0012707	familial febrile seizures 9	MONDO:0000032	DOID:0111303	DOID:0111297	febrile seizures, familial
 MONDO:0012713	spondylometaphyseal dysplasia, East African type	MONDO:0016763	DOID:0112302	DOID:0112295	spondylometaphyseal dysplasia
@@ -7278,7 +7278,6 @@ MONDO:0021463	benign neoplasm of parathyroid gland	MONDO:0000627	DOID:60008	DOID
 MONDO:0021553	transverse myelitis	MONDO:0002565	DOID:0080743	DOID:322	myelitis
 MONDO:0021657	ovarian sex cord-stromal tumor	MONDO:0006055	DOID:0080369	DOID:192	sex cord-stromal tumor
 MONDO:0022519	autoimmune myocarditis	MONDO:0004496	DOID:0080767	DOID:820	myocarditis
-MONDO:0022529	BK-virus nephropathy	MONDO:0005784	DOID:0040086	DOID:11266	hantavirus hemorrhagic fever with renal syndrome
 MONDO:0022697	athetoid cerebral palsy	MONDO:0006497	DOID:0050672	DOID:1969	cerebral palsy
 MONDO:0022993	dipsogenic diabetes insipidus	MONDO:0004782	DOID:0081058	DOID:9409	diabetes insipidus
 MONDO:0023227	gestational diabetes insipidus	MONDO:0004782	DOID:0081057	DOID:9409	diabetes insipidus

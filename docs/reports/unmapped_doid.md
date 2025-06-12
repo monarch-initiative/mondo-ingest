@@ -23,6 +23,7 @@
 | DOID:0061027 | Duane retraction syndrome 1                                                                   |
 | DOID:0061028 | Duane retraction syndrome 2                                                                   |
 | DOID:0061029 | Duane retraction syndrome 3                                                                   |
+| DOID:0061146 | Pan-Chung-Bellen syndrome                                                                     |
 | DOID:0061117 | Perrault syndrome 2                                                                           |
 | DOID:0061073 | Perrault syndrome 7                                                                           |
 | DOID:0050457 | Sertoli cell-only syndrome                                                                    |
@@ -91,6 +92,7 @@
 | DOID:0060992 | bent bone dysplasia syndrome 1                                                                |
 | DOID:0060993 | bent bone dysplasia syndrome 2                                                                |
 | DOID:5154    | borna disease                                                                                 |
+| DOID:0070635 | cardiovascular-kidney-metabolic syndrome                                                      |
 | DOID:0060160 | childhood spinal muscular atrophy                                                             |
 | DOID:0111368 | cholesterol-ester transfer protein deficiency                                                 |
 | DOID:0070614 | chromosome 11 partial duplication syndrome                                                    |
@@ -102,6 +104,11 @@
 | DOID:0061021 | combined pituitary hormone deficiency 3                                                       |
 | DOID:0061017 | combined pituitary hormone deficiency 4                                                       |
 | DOID:0061022 | combined pituitary hormone deficiency 6                                                       |
+| DOID:0061143 | complex cortical dysplasia with other brain malformations 10                                  |
+| DOID:0061142 | complex cortical dysplasia with other brain malformations 11                                  |
+| DOID:0061141 | complex cortical dysplasia with other brain malformations 12                                  |
+| DOID:0061144 | complex cortical dysplasia with other brain malformations 13                                  |
+| DOID:0061138 | complex cortical dysplasia with other brain malformations 9                                   |
 | DOID:0061005 | congenital amegakaryocytic thrombocytopenia 1                                                 |
 | DOID:0061002 | congenital amegakaryocytic thrombocytopenia 2                                                 |
 | DOID:0060991 | congenital disorder of deglycosylation                                                        |
@@ -123,6 +130,7 @@
 | DOID:0051006 | congenital nonspherocytic hemolytic anemia 5                                                  |
 | DOID:0051007 | congenital nonspherocytic hemolytic anemia 8                                                  |
 | DOID:0051008 | congenital nonspherocytic hemolytic anemia 9                                                  |
+| DOID:0061139 | coronary atherosclerosis                                                                      |
 | DOID:0061010 | craniosynostosis 1                                                                            |
 | DOID:0061009 | craniosynostosis 2                                                                            |
 | DOID:0061011 | craniosynostosis 3                                                                            |
@@ -186,6 +194,8 @@
 | DOID:0061067 | immunodeficiency 97                                                                           |
 | DOID:0061068 | immunodeficiency 98                                                                           |
 | DOID:0061069 | immunodeficiency 99                                                                           |
+| DOID:0061136 | infantile hypercalcemia 1                                                                     |
+| DOID:0061135 | infantile hypercalcemia 2                                                                     |
 | DOID:0051044 | infantile-onset myofibrillar myopathy 12 with cardiomyopathy                                  |
 | DOID:0061129 | intellectual developmental disorder with dysmorphic facies and behavioral abnormalities       |
 | DOID:0070600 | intellectual disability and myopathy syndrome                                                 |
@@ -196,6 +206,7 @@
 | DOID:0061128 | mucopolysaccharidosis X                                                                       |
 | DOID:0051045 | myofibrillar myopathy 13 with rimmed vacuoles                                                 |
 | DOID:0051030 | neurodevelopmental disorder with microcephaly, absent speech, and hypotonia                   |
+| DOID:0061147 | neurodevelopmental disorder with or without autism or seizures                                |
 | DOID:0061023 | nonphotosensitive trichothiodystrophy 8                                                       |
 | DOID:0061024 | nonphotosensitive trichothiodystrophy 9                                                       |
 | DOID:0061014 | ovarian dysgenesis 10                                                                         |
@@ -219,6 +230,7 @@
 | DOID:0051040 | primary autosomal recessive microcephaly 29                                                   |
 | DOID:0051041 | primary autosomal recessive microcephaly 30                                                   |
 | DOID:0051013 | pseudohypoparathyroidism type 1C                                                              |
+| DOID:0061140 | ragopathy                                                                                     |
 | DOID:0061103 | retinitis pigmentosa 76                                                                       |
 | DOID:0061113 | retinitis pigmentosa 78                                                                       |
 | DOID:0061108 | retinitis pigmentosa 79                                                                       |
@@ -242,6 +254,7 @@
 | DOID:0060989 | short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies 1 |
 | DOID:0061007 | sideroblastic anemia 5                                                                        |
 | DOID:0070634 | sitosterolemia 1                                                                              |
+| DOID:0061137 | spinocerebellar ataxia type 27B                                                               |
 | DOID:0051046 | spondyloepimetaphyseal dysplasia, Li-Shao-Li type                                             |
 | DOID:0060998 | striatal degeneration 2                                                                       |
 | DOID:0051016 | visceral heterotaxy 1                                                                         |

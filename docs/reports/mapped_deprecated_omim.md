@@ -43,12 +43,10 @@
 | MONDO:0014849 | OMIM:616958          | MONDO:equivalentObsolete |
 | MONDO:0017996 | OMIM:615057          | MONDO:equivalentObsolete |
 | MONDO:0018138 | OMIM:103470          | MONDO:equivalentObsolete |
-| MONDO:0018911 | OMIM:606391          | MONDO:equivalentObsolete |
 | MONDO:0019348 | OMIM:300537          | MONDO:equivalentObsolete |
 | MONDO:0020668 | OMIM:600146          | MONDO:equivalentObsolete |
 | MONDO:0023873 | OMIM:163955          | MONDO:equivalentObsolete |
 | MONDO:0024293 | OMIM:175020          | MONDO:equivalentObsolete |
 | MONDO:0024996 | OMIM:276905          | MONDO:equivalentObsolete |
 | MONDO:0027416 | OMIM:601251          | MONDO:equivalentObsolete |
-| MONDO:0033482 | OMIM:617931          | MONDO:equivalentObsolete |
 | MONDO:0042975 | OMIM:264150          | MONDO:equivalentObsolete |
