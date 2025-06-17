@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                96106b155c56dcf985ea2dc716aaaeb0cb34f47bbe55cb1cae81a9895138f6bf
+CONFIG_HASH=                acb8ade5a512f68254fdda17340fd0d4e495f9a394ee99b2564dade9fea39ea2
 
 
 # ----------------------------------------
@@ -399,8 +399,8 @@ ifeq ($(IMP),true)
 ## Default module type (slme)
 $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 			   $(IMPORTSEED) | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations --interpolate true \
-		          --link-annotation dc:source "%{version_iri}" \
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
 		 extract --term-file $(IMPORTDIR)/$*_terms.txt $(T_IMPORTSEED) \
 		         --force true --copy-ontology-annotations true \
 		         --individuals include \
@@ -417,10 +417,10 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 ## Module for ontology: omo (mirror)
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations --interpolate true \
-		          --link-annotation dc:source "%{version_iri}" \
+	$(ROBOT) annotate --input $< --remove-annotations \
 		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
 		               --subset-decls true --synonym-decls true \
+		               --add-source true \
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
@@ -498,139 +498,6 @@ $(COMPONENTSDIR)/%.owl: $(TMPDIR)/stamp-component-%.owl | $(COMPONENTSDIR)
 $(TMPDIR)/stamp-component-%.owl: | $(TMPDIR)
 	touch $@
 .PRECIOUS: $(TMPDIR)/stamp-component-%.owl
-
-ifeq ($(MIR),true)
-.PHONY: component-download-doid.owl
-component-download-doid.owl: | $(TMPDIR)
-	$(ROBOT) merge -I http://purl.obolibrary.org/obo/doid.owl \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $(TMPDIR)/$@.owl
-
-$(COMPONENTSDIR)/doid.owl: component-download-doid.owl $(TMPDIR)/stamp-component-doid.owl
-	@if cmp -s $(TMPDIR)/component-download-doid.owl.owl $(TMPDIR)/component-download-doid.owl.tmp.owl ; then \
-	        echo "Component identical." ; \
-	else \
-	        echo "Component different, updating." && \
-	        cp $(TMPDIR)/component-download-doid.owl.owl $(TMPDIR)/component-download-doid.owl.tmp.owl && \
-	        $(ROBOT) annotate --input $(TMPDIR)/component-download-doid.owl.owl \
-	                          --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-	                          --output $@ ; \
-	fi
-.PRECIOUS: $(COMPONENTSDIR)/doid.owl
-endif # MIR=true
-
-ifeq ($(MIR),true)
-.PHONY: component-download-icd10cm.owl
-component-download-icd10cm.owl: | $(TMPDIR)
-	$(ROBOT) merge -I https://data.bioontology.org/ontologies/ICD10CM/submissions/23/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $(TMPDIR)/$@.owl
-
-$(COMPONENTSDIR)/icd10cm.owl: component-download-icd10cm.owl $(TMPDIR)/stamp-component-icd10cm.owl
-	@if cmp -s $(TMPDIR)/component-download-icd10cm.owl.owl $(TMPDIR)/component-download-icd10cm.owl.tmp.owl ; then \
-	        echo "Component identical." ; \
-	else \
-	        echo "Component different, updating." && \
-	        cp $(TMPDIR)/component-download-icd10cm.owl.owl $(TMPDIR)/component-download-icd10cm.owl.tmp.owl && \
-	        $(ROBOT) annotate --input $(TMPDIR)/component-download-icd10cm.owl.owl \
-	                          --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-	                          --output $@ ; \
-	fi
-.PRECIOUS: $(COMPONENTSDIR)/icd10cm.owl
-endif # MIR=true
-
-ifeq ($(MIR),true)
-.PHONY: component-download-icd10who.owl
-component-download-icd10who.owl: | $(TMPDIR)
-	$(ROBOT) merge -I https://github.com/monarch-initiative/icd10who/releases/latest/download/icd10who.ttl \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $(TMPDIR)/$@.owl
-
-$(COMPONENTSDIR)/icd10who.owl: component-download-icd10who.owl $(TMPDIR)/stamp-component-icd10who.owl
-	@if cmp -s $(TMPDIR)/component-download-icd10who.owl.owl $(TMPDIR)/component-download-icd10who.owl.tmp.owl ; then \
-	        echo "Component identical." ; \
-	else \
-	        echo "Component different, updating." && \
-	        cp $(TMPDIR)/component-download-icd10who.owl.owl $(TMPDIR)/component-download-icd10who.owl.tmp.owl && \
-	        $(ROBOT) annotate --input $(TMPDIR)/component-download-icd10who.owl.owl \
-	                          --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-	                          --output $@ ; \
-	fi
-.PRECIOUS: $(COMPONENTSDIR)/icd10who.owl
-endif # MIR=true
-
-ifeq ($(MIR),true)
-.PHONY: component-download-icd11foundation.owl
-component-download-icd11foundation.owl: | $(TMPDIR)
-	$(ROBOT) merge -I https://github.com/monarch-initiative/icd11/releases/latest/download/icd11foundation.owl \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $(TMPDIR)/$@.owl
-
-$(COMPONENTSDIR)/icd11foundation.owl: component-download-icd11foundation.owl $(TMPDIR)/stamp-component-icd11foundation.owl
-	@if cmp -s $(TMPDIR)/component-download-icd11foundation.owl.owl $(TMPDIR)/component-download-icd11foundation.owl.tmp.owl ; then \
-	        echo "Component identical." ; \
-	else \
-	        echo "Component different, updating." && \
-	        cp $(TMPDIR)/component-download-icd11foundation.owl.owl $(TMPDIR)/component-download-icd11foundation.owl.tmp.owl && \
-	        $(ROBOT) annotate --input $(TMPDIR)/component-download-icd11foundation.owl.owl \
-	                          --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-	                          --output $@ ; \
-	fi
-.PRECIOUS: $(COMPONENTSDIR)/icd11foundation.owl
-endif # MIR=true
-
-ifeq ($(MIR),true)
-.PHONY: component-download-ncit.owl
-component-download-ncit.owl: | $(TMPDIR)
-	$(ROBOT) merge -I http://purl.obolibrary.org/obo/ncit.owl \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $(TMPDIR)/$@.owl
-
-$(COMPONENTSDIR)/ncit.owl: component-download-ncit.owl $(TMPDIR)/stamp-component-ncit.owl
-	@if cmp -s $(TMPDIR)/component-download-ncit.owl.owl $(TMPDIR)/component-download-ncit.owl.tmp.owl ; then \
-	        echo "Component identical." ; \
-	else \
-	        echo "Component different, updating." && \
-	        cp $(TMPDIR)/component-download-ncit.owl.owl $(TMPDIR)/component-download-ncit.owl.tmp.owl && \
-	        $(ROBOT) annotate --input $(TMPDIR)/component-download-ncit.owl.owl \
-	                          --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-	                          --output $@ ; \
-	fi
-.PRECIOUS: $(COMPONENTSDIR)/ncit.owl
-endif # MIR=true
-
-ifeq ($(MIR),true)
-.PHONY: component-download-omim.owl
-component-download-omim.owl: | $(TMPDIR)
-	$(ROBOT) merge -I https://github.com/monarch-initiative/omim/releases/latest/download/omim.owl \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $(TMPDIR)/$@.owl
-
-$(COMPONENTSDIR)/omim.owl: component-download-omim.owl $(TMPDIR)/stamp-component-omim.owl
-	@if cmp -s $(TMPDIR)/component-download-omim.owl.owl $(TMPDIR)/component-download-omim.owl.tmp.owl ; then \
-	        echo "Component identical." ; \
-	else \
-	        echo "Component different, updating." && \
-	        cp $(TMPDIR)/component-download-omim.owl.owl $(TMPDIR)/component-download-omim.owl.tmp.owl && \
-	        $(ROBOT) annotate --input $(TMPDIR)/component-download-omim.owl.owl \
-	                          --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-	                          --output $@ ; \
-	fi
-.PRECIOUS: $(COMPONENTSDIR)/omim.owl
-endif # MIR=true
-
-ifeq ($(MIR),true)
-.PHONY: component-download-ordo.owl
-component-download-ordo.owl: | $(TMPDIR)
-	$(ROBOT) merge -I http://www.orphadata.org/data/ORDO/ordo_orphanet.owl \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $(TMPDIR)/$@.owl
-
-$(COMPONENTSDIR)/ordo.owl: component-download-ordo.owl $(TMPDIR)/stamp-component-ordo.owl
-	@if cmp -s $(TMPDIR)/component-download-ordo.owl.owl $(TMPDIR)/component-download-ordo.owl.tmp.owl ; then \
-	        echo "Component identical." ; \
-	else \
-	        echo "Component different, updating." && \
-	        cp $(TMPDIR)/component-download-ordo.owl.owl $(TMPDIR)/component-download-ordo.owl.tmp.owl && \
-	        $(ROBOT) annotate --input $(TMPDIR)/component-download-ordo.owl.owl \
-	                          --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-	                          --output $@ ; \
-	fi
-.PRECIOUS: $(COMPONENTSDIR)/ordo.owl
-endif # MIR=true
 
 endif # COMP=true
 # ----------------------------------------
@@ -813,7 +680,9 @@ normalize_src: $(SRC)
 
 .PHONY: validate_idranges
 validate_idranges:
-	if [ -f mondo-ingest-idranges.owl ]; then dicer-cli policy mondo-ingest-idranges.owl ; fi
+	if [ -f mondo-ingest-idranges.owl ]; then \
+		dicer-cli policy --assume-manchester --show-owlapi-error mondo-ingest-idranges.owl ; \
+	fi
 
 # Deprecated: Use 'sh run.sh odk.py update' without using the Makefile.
 .PHONY: update_repo

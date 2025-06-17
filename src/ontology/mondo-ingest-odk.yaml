@@ -23,22 +23,17 @@ owltools_memory: '20G'
 create_obo_metadata: FALSE
 documentation:
   documentation_system: mkdocs
+# NOTE: Since ODK 1.6, we manage the download locations of the components
+# in the mondo-ingest.Makefile header
 components:
   products:
     - filename: doid.owl
-      source: http://purl.obolibrary.org/obo/doid.owl
     - filename: icd10cm.owl
-      source: https://data.bioontology.org/ontologies/ICD10CM/submissions/23/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
     - filename: icd10who.owl
-      source: https://github.com/monarch-initiative/icd10who/releases/latest/download/icd10who.ttl
     - filename: icd11foundation.owl
-      source: https://github.com/monarch-initiative/icd11/releases/latest/download/icd11foundation.owl
     - filename: ncit.owl
-      source: http://purl.obolibrary.org/obo/ncit.owl
     - filename: omim.owl
-      source: https://github.com/monarch-initiative/omim/releases/latest/download/omim.owl
     - filename: ordo.owl
-      source: http://www.orphadata.org/data/ORDO/ordo_orphanet.owl
 robot_report:
   release_reports: False
   fail_on: None

@@ -9,6 +9,70 @@
 #  todo #2: $(COMPONENTSDIR)/%.db's vs mondo-ingest.db. We're using both, but it may be possible we only need to use one. I feel inclined towards the former, but the latter should result in faster builds.
 
 ####################################
+### COMPONENT VERSIONS #############
+####################################
+
+# Since ODK 1.6, the download sources of the components are managed in the Makefile
+# Rather than the config file. For the Open Data Archeologist, check for context
+# https://github.com/INCATools/ontology-development-kit/issues/1272#issuecomment-2914089788
+DOID=				http://purl.obolibrary.org/obo/doid.owl
+ICD10CM=			https://data.bioontology.org/ontologies/ICD10CM/submissions/23/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
+ICD10WHO=			https://github.com/monarch-initiative/icd10who/releases/latest/download/icd10who.ttl
+ICD11FOUNDATION=	https://github.com/monarch-initiative/icd11/releases/latest/download/icd11foundation.owl
+NCIT=				http://purl.obolibrary.org/obo/ncit.owl
+OMIM=				https://github.com/monarch-initiative/omim/releases/latest/download/omim.owl
+ORDO=				http://www.orphadata.org/data/ORDO/ordo_orphanet.owl
+
+####################################
+#### MIRROR SOURCES ################
+####################################
+
+ifeq ($(MIR),true)
+$(TMPDIR)/mirror-ordo.owl: | $(TMPDIR)
+	$(ROBOT) merge -I $(ORDO) \
+		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+.PRECIOUS: $(TMPDIR)/mirror-ordo.owl
+
+$(TMPDIR)/mirror-doid.owl: | $(TMPDIR)
+	$(ROBOT) merge -I $(DOID) \
+		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+.PRECIOUS: $(TMPDIR)/mirror-doid.owl
+
+$(TMPDIR)/mirror-icd10who.owl: | $(TMPDIR)
+	$(ROBOT) merge -I $(ICD10WHO) \
+		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+.PRECIOUS: $(TMPDIR)/mirror-icd10who.owl
+
+$(TMPDIR)/mirror-icd11foundation.owl: | $(TMPDIR)
+	$(ROBOT) merge -I $(ICD11FOUNDATION) \
+		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+.PRECIOUS: $(TMPDIR)/mirror-icd11foundation.owl
+
+$(TMPDIR)/mirror-ncit.owl: | $(TMPDIR)
+	$(ROBOT) merge -I $(NCIT) \
+		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+.PRECIOUS: $(TMPDIR)/mirror-ncit.owl
+
+$(TMPDIR)/mirror-omim.owl: | $(TMPDIR)
+	$(ROBOT) merge -I $(OMIM) \
+		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+.PRECIOUS: $(TMPDIR)/mirror-omim.owl
+
+# The following preprocessing is necessary, because the bioportal version of ncit accidentally 
+# puns ICD10 terms to be individuals and classes at the same time
+# the remove step needs to run _before_ the first time the OWL API serialises the file, as 
+# The injected declaration axioms makes it very hard to remove the
+# Axioms that cause the codes to be individuals as well
+$(TMPDIR)/mirror-icd10cm.owl: | $(TMPDIR)
+	wget $(ICD10CM) -O $(TMPDIR)/icd10cm.tmp.owl
+	$(ROBOT) remove -i $(TMPDIR)/icd10cm.tmp.owl --select imports \
+		remove -T config/remove_properties.txt \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $@
+.PRECIOUS: $(TMPDIR)/mirror-icd10cm.owl
+
+endif
+
+####################################
 ### Standard constants #############
 ####################################
 MAPPINGSDIR=../mappings
@@ -46,13 +110,13 @@ dependencies: pip-pip pip-setuptools pip-oaklib pip-sssom pip-semsql
 ####################################
 # This section is concerned with identifiying the entities of interest that should be imported from the source.
 # Obtains the entities of interest from an ontology, as specified in a bespoke sparql query (bespoke for that ontology).
-$(TMPDIR)/%_relevant_signature.txt: component-download-%.owl | $(TMPDIR)
-	if [ $(COMP) = true ]; then $(ROBOT) query -i "$(TMPDIR)/$<.owl" -q "../sparql/$*-relevant-signature.sparql" $@; fi
+$(TMPDIR)/%_relevant_signature.txt: $(TMPDIR)/mirror-%.owl | $(TMPDIR)
+	if [ $(COMP) = true ]; then $(ROBOT) query -i $< -q "../sparql/$*-relevant-signature.sparql" $@; fi
 .PRECIOUS: $(TMPDIR)/%_relevant_signature.txt
 
 ### ORDO needs to be structurally changed before the query can be run..
-$(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
-	if [ $(COMP) = true ]; then $(ROBOT) query -i $(TMPDIR)/$<.owl --update ../sparql/ordo-construct-subclass-from-part-of.ru \
+$(TMPDIR)/ordo_relevant_signature.txt: $(TMPDIR)/mirror-ordo.owl | $(TMPDIR)
+	if [ $(COMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/ordo-construct-subclass-from-part-of.ru \
 		query -q "../sparql/ordo-relevant-signature.sparql" $@; fi
 .PRECIOUS: $(TMPDIR)/ordo_relevant_signature.txt
 
@@ -63,8 +127,8 @@ $(TMPDIR)/ordo_relevant_signature.txt: component-download-ordo.owl | $(TMPDIR)
 # Monarch Ingest schema.
 # todo: Illegal punning on some properties #60: https://github.com/monarch-initiative/omim/issues/60
 #  - #60 needs to be fixed at source, but a workaround can probably be implemented in this goal
-$(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-download-omim.owl
-	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-omim.owl.owl --select imports \
+$(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt $(TMPDIR)/mirror-omim.owl
+	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/mirror-omim.owl --select imports \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/omim_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T config/remove.txt --axioms equivalent \
@@ -77,8 +141,8 @@ $(COMPONENTSDIR)/omim.owl: $(TMPDIR)/omim_relevant_signature.txt | component-dow
 		annotate --ontology-iri $(URIBASE)/mondo/sources/omim.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/omim.owl -o $@; fi
 
 # todo: See #1 at top of file
-$(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt | component-download-ordo.owl
-	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ordo.owl.owl --select imports \
+$(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properties.txt $(TMPDIR)/mirror-ordo.owl
+	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/mirror-ordo.owl --select imports \
 		merge \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		query \
@@ -97,8 +161,8 @@ $(COMPONENTSDIR)/ordo.owl: $(TMPDIR)/ordo_relevant_signature.txt config/properti
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ordo.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ordo.owl -o $@; fi
 
-$(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-download-ncit.owl
-	if [ $(SKIP_HUGE) = false ] && [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-ncit.owl.owl --select imports \
+$(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | $(TMPDIR)/mirror-ncit.owl
+	if [ $(SKIP_HUGE) = false ] && [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/mirror-ncit.owl --select imports \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		query \
 			--update ../sparql/rm_xref_by_prefix.ru \
@@ -112,8 +176,8 @@ $(COMPONENTSDIR)/ncit.owl: $(TMPDIR)/ncit_relevant_signature.txt | component-dow
 		annotate --ontology-iri $(URIBASE)/mondo/sources/ncit.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/ncit.owl -o $@; fi
 
 # todo: See #1 at top of file
-$(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-download-doid.owl
-	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/component-download-doid.owl.owl --select imports \
+$(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | $(TMPDIR)/mirror-doid.owl
+	if [ $(COMP) = true ]; then $(ROBOT) remove -i $(TMPDIR)/mirror-doid.owl --select imports \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/doid_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		query \
@@ -126,21 +190,9 @@ $(COMPONENTSDIR)/doid.owl: $(TMPDIR)/doid_relevant_signature.txt | component-dow
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/doid.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/doid.owl -o $@; fi
 
-ICD10CM_URL="https://data.bioontology.org/ontologies/ICD10CM/submissions/22/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb"
-
-# This preprocessing is necessary, because the bioportal version of ncit accidentally 
-# puns ICD10 terms to be individuals and classes at the same time
-# the remove step needs to run _before_ the first time the OWL API serialises the file, as 
-# The injected declaration axioms makes it very hard to remove the
-# Axioms that cause the codes to be individuals as well
-component-download-icd10cm.owl: | $(TMPDIR)
-	if [ $(MIR) = true ]; then wget $(ICD10CM_URL) -O $(TMPDIR)/icd10cm.tmp.owl && $(ROBOT) remove -i $(TMPDIR)/icd10cm.tmp.owl --select imports \
-		remove -T config/remove_properties.txt \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $(TMPDIR)/$@.owl; fi
-
 # todo: See #1 at top of file
-$(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | component-download-icd10cm.owl
-	if [ $(COMP) = true ]; then $(ROBOT) merge -i $(TMPDIR)/component-download-icd10cm.owl.owl \
+$(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt $(TMPDIR)/mirror-icd10cm.owl
+	if [ $(COMP) = true ]; then $(ROBOT) merge -i $(TMPDIR)/mirror-icd10cm.owl \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd10cm_relevant_signature.txt --select individuals \
@@ -152,8 +204,8 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt | compone
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
 
 # todo: See #1 at top of file
-$(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | component-download-icd10who.owl
-	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd10who.owl.owl --select imports \
+$(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | $(TMPDIR)/mirror-icd10who.owl
+	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/mirror-icd10who.owl --select imports \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select complement --select "classes individuals" --trim false \
 		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select individuals \
@@ -164,8 +216,8 @@ $(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | compo
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
 
-$(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signature.txt | component-download-icd11foundation.owl
-	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/component-download-icd11foundation.owl.owl --select imports \
+$(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signature.txt $(TMPDIR)/mirror-icd11foundation.owl
+	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/mirror-icd11foundation.owl --select imports \
 		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
 		rename --mappings config/icd11foundation-property-map.sssom.tsv \
 		remove -T $(TMPDIR)/icd11foundation_relevant_signature.txt --select complement --select "classes individuals" \
@@ -256,10 +308,10 @@ recreate-unmapped-components: $(patsubst %, unmapped/%-unmapped.owl, $(ALL_COMPO
 ### Exclusions ##
 #################
 # Exclusions: by ontology
-$(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv component-download-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml
+$(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv: config/%_exclusions.tsv $(TMPDIR)/mirror-%.owl $(REPORTDIR)/mirror_signature-%.tsv $(REPORTDIR)/component_signature-%.tsv metadata/%.yml
 	python3 $(SCRIPTSDIR)/exclusion_table_creation.py \
 	--select-intensional-exclusions-path config/$*_exclusions.tsv \
-	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
+	--onto-path $(TMPDIR)/mirror-$*.owl \
 	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
 	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
 	--config-path metadata/$*.yml \
@@ -267,14 +319,13 @@ $(REPORTDIR)/%_term_exclusions.txt $(REPORTDIR)/%_exclusion_reasons.robot.templa
 	--outpath-robot-template-tsv $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv
 .PRECIOUS: $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
 
-$(REPORTDIR)/%_exclusion_reasons.ttl: component-download-%.owl $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv
-	$(ROBOT) template --input $(TMPDIR)/component-download-$*.owl.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
+$(REPORTDIR)/%_exclusion_reasons.ttl: $(REPORTDIR)/%_exclusion_reasons.robot.template.tsv $(TMPDIR)/mirror-%.owl
+	$(ROBOT) template --input $(TMPDIR)/mirror-$*.owl --add-prefixes config/context.json --template $(REPORTDIR)/$*_exclusion_reasons.robot.template.tsv --output $(REPORTDIR)/$*_exclusion_reasons.ttl
 
-# todo: Should this also be a prereq $(TMPDIR)/component-download-$*.owl.owl? Perhaps worried about refreshing when not need to? But then we'd just use COMP=false if so?
-$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv $(TMPDIR)/mondo.sssom.tsv
+$(REPORTDIR)/%_excluded_terms_in_mondo_xrefs.tsv $(REPORTDIR)/%_excluded_terms_in_mondo_xrefs_summary.tsv: metadata/%.yml $(REPORTDIR)/component_signature-%.tsv $(REPORTDIR)/mirror_signature-%.tsv $(TMPDIR)/mondo.sssom.tsv $(TMPDIR)/mirror-%.owl
 	python3 $(RELEASEDIR)/src/analysis/problematic_exclusions.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
-	--onto-path $(TMPDIR)/component-download-$*.owl.owl \
+	--onto-path  $(TMPDIR)/mirror-$*.owl \
 	--onto-config-path metadata/$*.yml \
 	--mirror-signature-path $(REPORTDIR)/mirror_signature-$*.tsv \
 	--component-signature-path $(REPORTDIR)/component_signature-$*.tsv \
@@ -409,8 +460,8 @@ reports/mirror_signature-mondo.tsv: $(TMPDIR)/mondo.owl
 reports/mirror_signature-ncit.tsv: $(COMPONENTSDIR)/ncit.db metadata/ncit.yml
 	python3 $(SCRIPTSDIR)/mirror_signature_via_oak.py --db-path $(COMPONENTSDIR)/ncit.db --onto-config-path metadata/ncit.yml --outpath $@
 
-reports/mirror_signature-%.tsv: component-download-%.owl
-	$(ROBOT) query -i $(TMPDIR)/$<.owl --query ../sparql/classes.sparql $@
+reports/mirror_signature-%.tsv: $(TMPDIR)/mirror-%.owl
+	$(ROBOT) query -i $< --query ../sparql/classes.sparql $@
 	(head -n 1 $@ && tail -n +2 $@ | sort) > $@-temp
 	mv $@-temp $@
 
@@ -721,9 +772,8 @@ $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-conte
 
 ###### ORDO #########
 
-$(TMPDIR)/ordo-subsets.tsv:
-	$(MAKE) component-download-ordo.owl
-	$(ROBOT) query -i $(TMPDIR)/component-download-ordo.owl.owl --query ../sparql/select-ordo-subsets.sparql $@
+$(TMPDIR)/ordo-subsets.tsv: $(TMPDIR)/mirror-ordo.owl
+	$(ROBOT) query -i $< --query ../sparql/select-ordo-subsets.sparql $@
 
 $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: $(TMPDIR)/ordo-subsets.tsv $(TMPDIR)/mondo.sssom.tsv
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
