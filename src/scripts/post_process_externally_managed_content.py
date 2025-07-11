@@ -12,8 +12,6 @@ def _get_column_of_external_source_related_to_qc_failure(qc_failure, erroneous_r
     # Now we only need to ensure that the qc failure is related to that specific external content
     
     columns = [] 
-
-    print(f'** erroneous_row: {erroneous_row}')
     
     if external == "nord":
         columns = ["report_ref", "preferred_name", "subset"]

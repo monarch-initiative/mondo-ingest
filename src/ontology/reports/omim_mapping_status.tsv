@@ -12,7 +12,30 @@ OMIM:621199	neurodevelopmental disorder with ataxia and brain abnormalities	Fals
 OMIM:621201	neurodevelopmental disorder with dysmorphic facies, brain anomalies, and seizures	False	False	False
 OMIM:621209	spermatogenic failure 100	False	False	False
 OMIM:621212	li-takada-miyake syndrome	False	False	False
+OMIM:621214	leukodystrophy, adult-onset, autosomal dominant, without amyloid angiopathy	False	False	False
+OMIM:621220	guillouet-gordon syndrome	False	False	False
+OMIM:621224	ectodermal dysplasia 17 with or without limb malformations	False	False	False
+OMIM:621225	congenital myopathy 26	False	False	False
+OMIM:621226	spastic ataxia 11, autosomal dominant	False	False	False
+OMIM:621231	oocyte/zygote/embryo maturation arrest 23	False	False	False
+OMIM:621232	oocyte/zygote/embryo maturation arrest 24	False	False	False
+OMIM:621233	immunodysregulation with variable immunodeficiency and autoimmunity	False	False	False
+OMIM:621234	ICHAD syndrome	False	False	False
+OMIM:621235	autoimmune disease, multisystem, infantile-onset, 5	False	False	False
+OMIM:621236	rhabdomyolysis, susceptibility to, 2	False	False	False
+OMIM:621237	cardiomyopathy, dilated, 2l	False	False	False
+OMIM:621248	pulmonary hypertension, primary, 7	False	False	False
+OMIM:621250	developmental and epileptic encephalopathy 118	False	False	False
+OMIM:621251	cardiomyopathy, dilated, 1qq	False	False	False
+OMIM:621252	cataract, alopecia, oral mucosal disorder, and psoriasis-like syndrome	False	False	False
+OMIM:621258	fanconi anemia, complementation group 10	False	False	False
+OMIM:621259	stargardt disease 5	False	False	False
+OMIM:621260	short-rib thoracic dysplasia 22 without polydactyly	False	False	False
 OMIMPS:155310	Myopathy, visceral	False	False	False
+OMIMPS:248200	Stargardt disease	False	False	False
+OMIMPS:253300	Spinal muscular atrophy	False	False	False
+OMIMPS:620138	Myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis	False	False	False
+OMIMPS:620235	Rhabdomyolysis, susceptibility to	False	False	False
 OMIM:100500		False	False	True
 OMIM:100680		False	False	True
 OMIM:100735		False	False	True
@@ -2715,7 +2738,7 @@ OMIM:155735	MCAM	False	True	False
 OMIM:155740	CD63	False	True	False
 OMIM:155750	MELTF	False	True	False
 OMIM:155760	ACAN	False	True	False
-OMIM:155970	MOX2	False	True	False
+OMIM:155970	CD200	False	True	False
 OMIM:156100	MN1	False	True	False
 OMIM:156225	LAMA2	False	True	False
 OMIM:156349	MT1B	False	True	False
@@ -3576,7 +3599,7 @@ OMIM:188860	MAL	False	True	False
 OMIM:189880	TRN-GTT2-7	False	True	False
 OMIM:189889	TFCP2	False	True	False
 OMIM:189890	TRNL	False	True	False
-OMIM:189901	TCF9	False	True	False
+OMIM:189901	GCFC2	False	True	False
 OMIM:189902	TFDP1	False	True	False
 OMIM:189903	NFYA	False	True	False
 OMIM:189904	NFYB	False	True	False
@@ -4545,6 +4568,15 @@ OMIM:301144	ARL13A	False	True	False
 OMIM:301145	HAPSTR2	False	True	False
 OMIM:301146	RADX	False	True	False
 OMIM:301147	LINC00632	False	True	False
+OMIM:301150	BEND2	False	True	False
+OMIM:301151	HSFX3	False	True	False
+OMIM:301152	TCEAL2	False	True	False
+OMIM:301153	TCEAL3	False	True	False
+OMIM:301154	TCEAL4	False	True	False
+OMIM:301155	TCEAL5	False	True	False
+OMIM:301156	TCEAL6	False	True	False
+OMIM:301157	TCEAL8	False	True	False
+OMIM:301158	TCEAL9	False	True	False
 OMIM:301300	ALAS2	False	True	False
 OMIM:301770	ARR3	False	True	False
 OMIM:301780	ARSC2	False	True	False
@@ -4663,6 +4695,7 @@ OMIM:400046	phospholipase c, phosphatidylinositol-specific, 10 domain-containing
 OMIM:400048	DAZ4	False	True	False
 OMIM:400049	DHRSY	False	True	False
 OMIM:400050	VCY1B	False	True	False
+OMIM:400051	TTTY15	False	True	False
 OMIM:402500	ASMT	False	True	False
 OMIM:403000	SLC25A6	False	True	False
 OMIM:410000	AMELY	False	True	False
@@ -10717,7 +10750,7 @@ OMIM:607513	ADAMTS19	False	True	False
 OMIM:607514	body mass index quantitative trait locus 10	False	True	False
 OMIM:607515	PLAC8	False	True	False
 OMIM:607517	LILRA4	False	True	False
-OMIM:607518	monocyte and plasmacytoid activated molecule	False	True	False
+OMIM:607518	LRRC25	False	True	False
 OMIM:607519	PARP4	False	True	False
 OMIM:607520	ZAR1	False	True	False
 OMIM:607521	HPS5	False	True	False
@@ -10991,11 +11024,11 @@ OMIM:607871	FBXO11	False	True	False
 OMIM:607873	SCARF1	False	True	False
 OMIM:607874	ZNF444	False	True	False
 OMIM:607875	INPP5K	False	True	False
-OMIM:607877	otospiralin	False	True	False
+OMIM:607877	OTOS	False	True	False
 OMIM:607878	NNT	False	True	False
 OMIM:607879	EXOC1	False	True	False
 OMIM:607880	EXOC6B	False	True	False
-OMIM:607881	signal-transducing adaptor protein 2	False	True	False
+OMIM:607881	STAP2	False	True	False
 OMIM:607882	SLC52A2	False	True	False
 OMIM:607883	SLC52A1	False	True	False
 OMIM:607884	CMTM1	False	True	False
@@ -11052,7 +11085,7 @@ OMIM:607943	RASA4	False	True	False
 OMIM:607945	ADIPOR1	False	True	False
 OMIM:607946	ADIPOR2	False	True	False
 OMIM:607947	KCNRG	False	True	False
-OMIM:607950	testis-specific protease 50	False	True	False
+OMIM:607950	PRSS50	False	True	False
 OMIM:607951	CEP57	False	True	False
 OMIM:607952	SLC6A11	False	True	False
 OMIM:607953	TAGLN3	False	True	False
@@ -11516,7 +11549,7 @@ OMIM:608530	BTBD1	False	True	False
 OMIM:608531	BTBD2	False	True	False
 OMIM:608532	NCAPG2	False	True	False
 OMIM:608533	FBXO38	False	True	False
-OMIM:608534	actin-related protein m1	False	True	False
+OMIM:608534	ACTRT3	False	True	False
 OMIM:608535	ACTRT2	False	True	False
 OMIM:608536	GTPBP3	False	True	False
 OMIM:608537	VHL	False	True	False
@@ -11843,7 +11876,7 @@ OMIM:608982	stature quantitative trait locus 5	False	True	False
 OMIM:608985	RNF2	False	True	False
 OMIM:608986	CRTC3	False	True	False
 OMIM:608987	P4HA3	False	True	False
-OMIM:608989	retinal dehydrogenase, epidermal, 2	False	True	False
+OMIM:608989	SDR16C5	False	True	False
 OMIM:608990	ADAMTS10	False	True	False
 OMIM:608991	MAML3	False	True	False
 OMIM:608992	BCL6B	False	True	False
@@ -12117,7 +12150,7 @@ OMIM:609358	ETV2	False	True	False
 OMIM:609359	HS1BP3	False	True	False
 OMIM:609360	RNLS	False	True	False
 OMIM:609361	MOB4	False	True	False
-OMIM:609362	LYPLA3	False	True	False
+OMIM:609362	PLA2G15	False	True	False
 OMIM:609364	NLRP2	False	True	False
 OMIM:609365	GNL2	False	True	False
 OMIM:609366	CTR9	False	True	False
@@ -12380,7 +12413,7 @@ OMIM:609702	PSMG2	False	True	False
 OMIM:609703	MIR15A	False	True	False
 OMIM:609704	MIR16-1	False	True	False
 OMIM:609705	MIR24-1	False	True	False
-OMIM:609707	DUS2L	False	True	False
+OMIM:609707	DUS2	False	True	False
 OMIM:609708	LPL	False	True	False
 OMIM:609709	GYLTL1B	False	True	False
 OMIM:609710	DCANP1	False	True	False
@@ -13289,7 +13322,7 @@ OMIM:610867	leucine-rich repeat transmembrane protein 1: lrrtm1	False	True	False
 OMIM:610868	LRRTM2	False	True	False
 OMIM:610869	LRRTM3	False	True	False
 OMIM:610870	LRRTM4	False	True	False
-OMIM:610872	IBRDC3	False	True	False
+OMIM:610872	RNF19B	False	True	False
 OMIM:610873	menarche, age at, quantitative trait locus 1	False	True	False
 OMIM:610874	SPATC1	False	True	False
 OMIM:610875	PPP6R1	False	True	False
@@ -13326,7 +13359,7 @@ OMIM:610914	ENOX1	False	True	False
 OMIM:610916	NSUN2	False	True	False
 OMIM:610917	RAB34	False	True	False
 OMIM:610918	SELENOM	False	True	False
-OMIM:610919	GTPBP5	False	True	False
+OMIM:610919	MTG2	False	True	False
 OMIM:610920	GTPBP10	False	True	False
 OMIM:610922	NPAP1	False	True	False
 OMIM:610923	SLC35B4	False	True	False
@@ -13464,7 +13497,7 @@ OMIM:611083	ADHFE1	False	True	False
 OMIM:611084	FOXD4L1	False	True	False
 OMIM:611085	FOXD4L4	False	True	False
 OMIM:611086	FOXD4L3	False	True	False
-OMIM:611088	CCDC65	False	True	False
+OMIM:611088	DRC2	False	True	False
 OMIM:611089	MTMR14	False	True	False
 OMIM:611098	STEAP4	False	True	False
 OMIM:611099	PDIA6	False	True	False
@@ -15084,7 +15117,7 @@ OMIM:613359	LYPD6	False	True	False
 OMIM:613360	DRAM2	False	True	False
 OMIM:613361	SLC18B1	False	True	False
 OMIM:613362	CINP	False	True	False
-OMIM:613363	WDR34	False	True	False
+OMIM:613363	DYNC2I2	False	True	False
 OMIM:613365	SLCO6A1	False	True	False
 OMIM:613366	SLC10A6	False	True	False
 OMIM:613367	LIN54	False	True	False
@@ -16201,7 +16234,7 @@ OMIM:615456	ELMOD1	False	True	False
 OMIM:615459	TRDV@	False	True	False
 OMIM:615460	TRDD@	False	True	False
 OMIM:615461	TRDJ@	False	True	False
-OMIM:615462	WDR60	False	True	False
+OMIM:615462	DYNC2I1	False	True	False
 OMIM:615463	SZT2	False	True	False
 OMIM:615464	DDX59	False	True	False
 OMIM:615466	TLNRD1	False	True	False
@@ -19262,10 +19295,27 @@ OMIM:621216	PELATON	False	True	False
 OMIM:621217	BEND6	False	True	False
 OMIM:621218	RMP24	False	True	False
 OMIM:621219	TMEM179	False	True	False
-OMIM:621220	GGNS	False	True	False
 OMIM:621221	STX18AS1	False	True	False
 OMIM:621222	L1TD1	False	True	False
 OMIM:621223	AIF1L	False	True	False
+OMIM:621227	OLAH	False	True	False
+OMIM:621228	LINC01013	False	True	False
+OMIM:621229	GATA2AS1	False	True	False
+OMIM:621238	RNU2-2	False	True	False
+OMIM:621239	INTS15	False	True	False
+OMIM:621240	WDR5B	False	True	False
+OMIM:621241	PLUT	False	True	False
+OMIM:621242	ZNF429	False	True	False
+OMIM:621243	TASOR2	False	True	False
+OMIM:621244	PGBD1	False	True	False
+OMIM:621245	PGBD4	False	True	False
+OMIM:621246	TRABD	False	True	False
+OMIM:621247	CPSF7	False	True	False
+OMIM:621249	ARB2A	False	True	False
+OMIM:621253	ZNF416	False	True	False
+OMIM:621255	SMAGP	False	True	False
+OMIM:621256	ZBTB45	False	True	False
+OMIM:621257	SPINDOC	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
@@ -21295,7 +21345,7 @@ OMIM:278760	xeroderma pigmentosum, complementation group f	True	False	False
 OMIM:278780	xeroderma pigmentosum, complementation group g	True	False	False
 OMIM:278800	lange sanctis-cacchione syndrome	True	False	False
 OMIM:278850	46,xx sex reversal 2	True	False	False
-OMIM:279000	young syndrome	True	False	False
+OMIM:279000	ciliary dyskinesia, primary, 55	True	False	False
 OMIM:280000	coloboma, congenital heart disease, ichthyosiform dermatosis, impaired intellectual development, and ear anomalies syndrome	True	False	False
 OMIM:300000	opitz GBBB syndrome	True	False	False
 OMIM:300001	ichthyosis, x-linked, without steroid sulfatase deficiency	True	False	False
@@ -25199,7 +25249,7 @@ OMIM:616200	ruijs-aalfs syndrome	True	False	False
 OMIM:616201	chronic atrial and intestinal dysrhythmia	True	False	False
 OMIM:616202	cerebellofaciodental syndrome	True	False	False
 OMIM:616204	spinocerebellar ataxia, autosomal recessive 18	True	False	False
-OMIM:616208	amyotrophic lateral sclerosis 22 with or without frontotemporal dementia	True	False	False
+OMIM:616208	frontotemporal dementia and/or amyotrophic lateral sclerosis 9	True	False	False
 OMIM:616209	myopathy, isolated mitochondrial, autosomal dominant	True	False	False
 OMIM:616211	developmental and epileptic encephalopathy 28	True	False	False
 OMIM:616212	lissencephaly 6 with microcephaly	True	False	False
@@ -27475,7 +27525,7 @@ OMIM:620996	retinitis pigmentosa 98	True	False	False
 OMIM:620999	fibromatosis, gingival, 6	True	False	False
 OMIM:621001	spermatogenic failure 96	True	False	False
 OMIM:621002	premature ovarian failure 25	True	False	False
-OMIM:621004	autoimmune disease with susceptibility to mycobacterium tuberculosis	True	False	False
+OMIM:621004	autoimmune disease, multisystem, infantile-onset, 4	True	False	False
 OMIM:621010	morimoto-ryu-malicdan neuromuscular syndrome	True	False	False
 OMIM:621012	neurodevelopmental disorder with dysmorphic facies, absent speech and ambulation, and brain abnormalities	True	False	False
 OMIM:621016	neurodevelopmental disorder with variable familial hypercholanemia	True	False	False
