@@ -716,7 +716,11 @@ $(TMPDIR)/nord.tsv:
 
 $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
 	mkdir -p $(EXTERNAL_CONTENT_DIR)
-	python ../scripts/add-robot-template-header.py $^ > $@
+	python ../scripts/add-robot-template-header.py $^ | \
+	awk 'NR==1 { gsub(/synonym_type/, "preferred_label_for_community") } \
+	     NR==2 { gsub(/>A oboInOwl:hasSynonymType/, ">A OMO:0002001") } \
+		 NR > 2 { gsub(/http:\/\/purl.obolibrary.org\/obo\/mondo#NORD_LABEL/, "https://w3id.org/information-resource-registry/nord") } \
+	     { print }' > $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv
 
 ###### ORDO #########
