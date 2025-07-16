@@ -181,7 +181,6 @@
 | ICD10WHO:F55     | Abuse of non-dependence-producing substances                                                                                                                                               |
 | ICD10WHO:B60.1   | Acanthamoebiasis                                                                                                                                                                           |
 | ICD10WHO:L11.9   | Acantholytic disorder, unspecified                                                                                                                                                         |
-| ICD10WHO:L83     | Acanthosis nigricans                                                                                                                                                                       |
 | ICD10WHO:Z73.1   | Accentuation of personality traits                                                                                                                                                         |
 | ICD10WHO:Q17.0   | Accessory auricle                                                                                                                                                                          |
 | ICD10WHO:Q83.1   | Accessory breast                                                                                                                                                                           |
@@ -259,7 +258,6 @@
 | ICD10WHO:Q77.4   | Achondroplasia                                                                                                                                                                             |
 | ICD10WHO:Y43.5   | Acidifying and alkalizing agents                                                                                                                                                           |
 | ICD10WHO:E87.2   | Acidosis                                                                                                                                                                                   |
-| ICD10WHO:L70     | Acne                                                                                                                                                                                       |
 | ICD10WHO:L70.1   | Acne conglobata                                                                                                                                                                            |
 | ICD10WHO:L73.0   | Acne keloid                                                                                                                                                                                |
 | ICD10WHO:L70.3   | Acne tropica                                                                                                                                                                               |
@@ -320,7 +318,6 @@
 | ICD10WHO:L57.0   | Actinic keratosis                                                                                                                                                                          |
 | ICD10WHO:L57.1   | Actinic reticuloid                                                                                                                                                                         |
 | ICD10WHO:B47.1   | Actinomycetoma                                                                                                                                                                             |
-| ICD10WHO:A42     | Actinomycosis                                                                                                                                                                              |
 | ICD10WHO:A42.9   | Actinomycosis, unspecified                                                                                                                                                                 |
 | ICD10WHO:A42.7   | Actinomycotic sepsis                                                                                                                                                                       |
 | ICD10WHO:A71.1   | Active stage of trachoma                                                                                                                                                                   |
@@ -345,7 +342,6 @@
 | ICD10WHO:K35.3   | Acute appendicitis with localized peritonitis                                                                                                                                              |
 | ICD10WHO:K35.8   | Acute appendicitis, other and unspecified                                                                                                                                                  |
 | ICD10WHO:H10.1   | Acute atopic conjunctivitis                                                                                                                                                                |
-| ICD10WHO:J21     | Acute bronchiolitis                                                                                                                                                                        |
 | ICD10WHO:J21.1   | Acute bronchiolitis due to human metapneumovirus                                                                                                                                           |
 | ICD10WHO:J21.8   | Acute bronchiolitis due to other specified organisms                                                                                                                                       |
 | ICD10WHO:J21.0   | Acute bronchiolitis due to respiratory syncytial virus                                                                                                                                     |
@@ -415,9 +411,7 @@
 | ICD10WHO:C92.6   | Acute myeloid leukaemia with 11q23-abnormality                                                                                                                                             |
 | ICD10WHO:C92.8   | Acute myeloid leukaemia with multilineage dysplasia                                                                                                                                        |
 | ICD10WHO:C92.5   | Acute myelomonocytic leukaemia                                                                                                                                                             |
-| ICD10WHO:I21     | Acute myocardial infarction                                                                                                                                                                |
 | ICD10WHO:I21.9   | Acute myocardial infarction, unspecified                                                                                                                                                   |
-| ICD10WHO:I40     | Acute myocarditis                                                                                                                                                                          |
 | ICD10WHO:I40.9   | Acute myocarditis, unspecified                                                                                                                                                             |
 | ICD10WHO:H73.0   | Acute myringitis                                                                                                                                                                           |
 | ICD10WHO:J00     | Acute nasopharyngitis [common cold]                                                                                                                                                        |
@@ -438,7 +432,6 @@
 | ICD10WHO:J05     | Acute obstructive laryngitis [croup] and epiglottitis                                                                                                                                      |
 | ICD10WHO:H60.5   | Acute otitis externa, noninfective                                                                                                                                                         |
 | ICD10WHO:R52.0   | Acute pain                                                                                                                                                                                 |
-| ICD10WHO:K85     | Acute pancreatitis                                                                                                                                                                         |
 | ICD10WHO:K85.9   | Acute pancreatitis, unspecified                                                                                                                                                            |
 | ICD10WHO:C94.4   | Acute panmyelosis with myelofibrosis                                                                                                                                                       |
 | ICD10WHO:J01.4   | Acute pansinusitis                                                                                                                                                                         |
@@ -451,7 +444,6 @@
 | ICD10WHO:I30.9   | Acute pericarditis, unspecified                                                                                                                                                            |
 | ICD10WHO:K05.2   | Acute periodontitis                                                                                                                                                                        |
 | ICD10WHO:K65.0   | Acute peritonitis                                                                                                                                                                          |
-| ICD10WHO:J02     | Acute pharyngitis                                                                                                                                                                          |
 | ICD10WHO:J02.8   | Acute pharyngitis due to other specified organisms                                                                                                                                         |
 | ICD10WHO:J02.9   | Acute pharyngitis, unspecified                                                                                                                                                             |
 | ICD10WHO:A80     | Acute poliomyelitis                                                                                                                                                                        |
@@ -491,7 +483,6 @@
 | ICD10WHO:I21.4   | Acute subendocardial myocardial infarction                                                                                                                                                 |
 | ICD10WHO:H66.0   | Acute suppurative otitis media                                                                                                                                                             |
 | ICD10WHO:E06.0   | Acute thyroiditis                                                                                                                                                                          |
-| ICD10WHO:J03     | Acute tonsillitis                                                                                                                                                                          |
 | ICD10WHO:J03.8   | Acute tonsillitis due to other specified organisms                                                                                                                                         |
 | ICD10WHO:J03.9   | Acute tonsillitis, unspecified                                                                                                                                                             |
 | ICD10WHO:J04.1   | Acute tracheitis                                                                                                                                                                           |
@@ -592,7 +583,6 @@
 | ICD10WHO:M89.0   | Algoneurodystrophy                                                                                                                                                                         |
 | ICD10WHO:E87.3   | Alkalosis                                                                                                                                                                                  |
 | ICD10WHO:K52.2   | Allergic and dietetic gastroenteritis and colitis                                                                                                                                          |
-| ICD10WHO:L23     | Allergic contact dermatitis                                                                                                                                                                |
 | ICD10WHO:L23.1   | Allergic contact dermatitis due to adhesives                                                                                                                                               |
 | ICD10WHO:L23.2   | Allergic contact dermatitis due to cosmetics                                                                                                                                               |
 | ICD10WHO:L23.3   | Allergic contact dermatitis due to drugs in contact with skin                                                                                                                              |
@@ -610,7 +600,6 @@
 | ICD10WHO:T78.4   | Allergy, unspecified                                                                                                                                                                       |
 | ICD10WHO:B48.2   | Allescheriasis                                                                                                                                                                             |
 | ICD10WHO:L63.0   | Alopecia (capitis) totalis                                                                                                                                                                 |
-| ICD10WHO:L63     | Alopecia areata                                                                                                                                                                            |
 | ICD10WHO:L63.9   | Alopecia areata, unspecified                                                                                                                                                               |
 | ICD10WHO:L65.2   | Alopecia mucinosa                                                                                                                                                                          |
 | ICD10WHO:L63.1   | Alopecia universalis                                                                                                                                                                       |
@@ -621,7 +610,6 @@
 | ICD10WHO:J63.0   | Aluminosis (of lung)                                                                                                                                                                       |
 | ICD10WHO:J84.0   | Alveolar and parietoalveolar conditions                                                                                                                                                    |
 | ICD10WHO:K10.3   | Alveolitis of jaws                                                                                                                                                                         |
-| ICD10WHO:G30     | Alzheimer disease                                                                                                                                                                          |
 | ICD10WHO:G30.0   | Alzheimer disease with early onset                                                                                                                                                         |
 | ICD10WHO:G30.1   | Alzheimer disease with late onset                                                                                                                                                          |
 | ICD10WHO:G30.9   | Alzheimer disease, unspecified                                                                                                                                                             |
@@ -640,7 +628,6 @@
 | ICD10WHO:A06.3   | Amoeboma of intestine                                                                                                                                                                      |
 | ICD10WHO:Y83.5   | Amputation of limb(s)                                                                                                                                                                      |
 | ICD10WHO:Q06.0   | Amyelia                                                                                                                                                                                    |
-| ICD10WHO:E85     | Amyloidosis                                                                                                                                                                                |
 | ICD10WHO:L99.0   | Amyloidosis of skin                                                                                                                                                                        |
 | ICD10WHO:E85.9   | Amyloidosis, unspecified                                                                                                                                                                   |
 | ICD10WHO:O99.0   | Anaemia complicating pregnancy, childbirth and the puerperium                                                                                                                              |
@@ -719,7 +706,6 @@
 | ICD10WHO:H52.3   | Anisometropia and aniseikonia                                                                                                                                                              |
 | ICD10WHO:Q38.1   | Ankyloglossia                                                                                                                                                                              |
 | ICD10WHO:M48.1   | Ankylosing hyperostosis [Forestier]                                                                                                                                                        |
-| ICD10WHO:M45     | Ankylosing spondylitis                                                                                                                                                                     |
 | ICD10WHO:M24.6   | Ankylosis of joint                                                                                                                                                                         |
 | ICD10WHO:K03.5   | Ankylosis of teeth                                                                                                                                                                         |
 | ICD10WHO:Q45.1   | Annular pancreas                                                                                                                                                                           |
@@ -855,14 +841,12 @@
 | ICD10WHO:Z31.1   | Artificial insemination                                                                                                                                                                    |
 | ICD10WHO:Z93     | Artificial opening status                                                                                                                                                                  |
 | ICD10WHO:Z93.9   | Artificial opening status, unspecified                                                                                                                                                     |
-| ICD10WHO:B77     | Ascariasis                                                                                                                                                                                 |
 | ICD10WHO:B77.0   | Ascariasis with intestinal complications                                                                                                                                                   |
 | ICD10WHO:B77.8   | Ascariasis with other complications                                                                                                                                                        |
 | ICD10WHO:B77.9   | Ascariasis, unspecified                                                                                                                                                                    |
 | ICD10WHO:R18     | Ascites                                                                                                                                                                                    |
 | ICD10WHO:E54     | Ascorbic acid deficiency                                                                                                                                                                   |
 | ICD10WHO:F84.5   | Asperger syndrome                                                                                                                                                                          |
-| ICD10WHO:B44     | Aspergillosis                                                                                                                                                                              |
 | ICD10WHO:B44.9   | Aspergillosis, unspecified                                                                                                                                                                 |
 | ICD10WHO:R09.0   | Asphyxia                                                                                                                                                                                   |
 | ICD10WHO:T71     | Asphyxiation                                                                                                                                                                               |
@@ -899,7 +883,6 @@
 | ICD10WHO:X88.9   | Assault by unspecified gases and vapours                                                                                                                                                   |
 | ICD10WHO:Y09     | Assault by unspecified means                                                                                                                                                               |
 | ICD10WHO:O83.9   | Assisted single delivery, unspecified                                                                                                                                                      |
-| ICD10WHO:J45     | Asthma                                                                                                                                                                                     |
 | ICD10WHO:J45.9   | Asthma, unspecified                                                                                                                                                                        |
 | ICD10WHO:H52.2   | Astigmatism                                                                                                                                                                                |
 | ICD10WHO:Z21     | Asymptomatic human immunodeficiency virus [HIV] infection status                                                                                                                           |
@@ -907,7 +890,6 @@
 | ICD10WHO:R27.0   | Ataxia, unspecified                                                                                                                                                                        |
 | ICD10WHO:G80.4   | Ataxic cerebral palsy                                                                                                                                                                      |
 | ICD10WHO:R26.0   | Ataxic gait                                                                                                                                                                                |
-| ICD10WHO:I70     | Atherosclerosis                                                                                                                                                                            |
 | ICD10WHO:I70.0   | Atherosclerosis of aorta                                                                                                                                                                   |
 | ICD10WHO:I70.2   | Atherosclerosis of arteries of extremities                                                                                                                                                 |
 | ICD10WHO:I70.8   | Atherosclerosis of other arteries                                                                                                                                                          |
@@ -1006,7 +988,6 @@
 | ICD10WHO:V96.0   | Balloon accident injuring occupant                                                                                                                                                         |
 | ICD10WHO:Y47.0   | Barbiturates, not elsewhere classified                                                                                                                                                     |
 | ICD10WHO:K22.7   | Barrett oesophagus                                                                                                                                                                         |
-| ICD10WHO:A44     | Bartonellosis                                                                                                                                                                              |
 | ICD10WHO:A44.9   | Bartonellosis, unspecified                                                                                                                                                                 |
 | ICD10WHO:J63.1   | Bauxite fibrosis (of lung)                                                                                                                                                                 |
 | ICD10WHO:L60.4   | Beau lines                                                                                                                                                                                 |
@@ -1016,7 +997,6 @@
 | ICD10WHO:G51.0   | Bell palsy                                                                                                                                                                                 |
 | ICD10WHO:R01.0   | Benign and innocent cardiac murmurs                                                                                                                                                        |
 | ICD10WHO:G93.2   | Benign intracranial hypertension                                                                                                                                                           |
-| ICD10WHO:D17     | Benign lipomatous neoplasm                                                                                                                                                                 |
 | ICD10WHO:D17.5   | Benign lipomatous neoplasm of intra-abdominal organs                                                                                                                                       |
 | ICD10WHO:D17.4   | Benign lipomatous neoplasm of intrathoracic organs                                                                                                                                         |
 | ICD10WHO:D17.7   | Benign lipomatous neoplasm of other sites                                                                                                                                                  |
@@ -1026,7 +1006,6 @@
 | ICD10WHO:D17.1   | Benign lipomatous neoplasm of skin and subcutaneous tissue of trunk                                                                                                                        |
 | ICD10WHO:D17.6   | Benign lipomatous neoplasm of spermatic cord                                                                                                                                               |
 | ICD10WHO:D17.9   | Benign lipomatous neoplasm, unspecified                                                                                                                                                    |
-| ICD10WHO:N60     | Benign mammary dysplasia                                                                                                                                                                   |
 | ICD10WHO:N60.9   | Benign mammary dysplasia, unspecified                                                                                                                                                      |
 | ICD10WHO:D16     | Benign neoplasm of bone and articular cartilage                                                                                                                                            |
 | ICD10WHO:D33     | Benign neoplasm of brain and other parts of central nervous system                                                                                                                         |
@@ -1035,7 +1014,6 @@
 | ICD10WHO:D31     | Benign neoplasm of eye and adnexa                                                                                                                                                          |
 | ICD10WHO:D11     | Benign neoplasm of major salivary glands                                                                                                                                                   |
 | ICD10WHO:D29     | Benign neoplasm of male genital organs                                                                                                                                                     |
-| ICD10WHO:D32     | Benign neoplasm of meninges                                                                                                                                                                |
 | ICD10WHO:D19     | Benign neoplasm of mesothelial tissue                                                                                                                                                      |
 | ICD10WHO:D14     | Benign neoplasm of middle ear and respiratory system                                                                                                                                       |
 | ICD10WHO:D10     | Benign neoplasm of mouth and pharynx                                                                                                                                                       |
@@ -1243,7 +1221,6 @@
 | ICD10WHO:N33.8   | Bladder disorders in other diseases classified elsewhere                                                                                                                                   |
 | ICD10WHO:N32.0   | Bladder-neck obstruction                                                                                                                                                                   |
 | ICD10WHO:C86.4   | Blastic NK-cell lymphoma                                                                                                                                                                   |
-| ICD10WHO:B40     | Blastomycosis                                                                                                                                                                              |
 | ICD10WHO:B40.9   | Blastomycosis, unspecified                                                                                                                                                                 |
 | ICD10WHO:H01.0   | Blepharitis                                                                                                                                                                                |
 | ICD10WHO:H02.3   | Blepharochalasis                                                                                                                                                                           |
@@ -1286,13 +1263,11 @@
 | ICD10WHO:O83.0   | Breech extraction                                                                                                                                                                          |
 | ICD10WHO:L75.0   | Bromhidrosis                                                                                                                                                                               |
 | ICD10WHO:Y47.4   | Bromine compounds                                                                                                                                                                          |
-| ICD10WHO:J47     | Bronchiectasis                                                                                                                                                                             |
 | ICD10WHO:J68.0   | Bronchitis and pneumonitis due to chemicals, gases, fumes and vapours                                                                                                                      |
 | ICD10WHO:J40     | Bronchitis, not specified as acute or chronic                                                                                                                                              |
 | ICD10WHO:J18.0   | Bronchopneumonia, unspecified                                                                                                                                                              |
 | ICD10WHO:P27.1   | Bronchopulmonary dysplasia originating in the perinatal period                                                                                                                             |
 | ICD10WHO:M49.1   | Brucella spondylitis                                                                                                                                                                       |
-| ICD10WHO:A23     | Brucellosis                                                                                                                                                                                |
 | ICD10WHO:A23.1   | Brucellosis due to Brucella abortus                                                                                                                                                        |
 | ICD10WHO:A23.3   | Brucellosis due to Brucella canis                                                                                                                                                          |
 | ICD10WHO:A23.0   | Brucellosis due to Brucella melitensis                                                                                                                                                     |
@@ -1532,7 +1507,6 @@
 | ICD10WHO:B37.5   | Candidal meningitis                                                                                                                                                                        |
 | ICD10WHO:B37.7   | Candidal sepsis                                                                                                                                                                            |
 | ICD10WHO:B37.0   | Candidal stomatitis                                                                                                                                                                        |
-| ICD10WHO:B37     | Candidiasis                                                                                                                                                                                |
 | ICD10WHO:B37.8   | Candidiasis of other sites                                                                                                                                                                 |
 | ICD10WHO:B37.4   | Candidiasis of other urogenital sites                                                                                                                                                      |
 | ICD10WHO:B37.2   | Candidiasis of skin and nail                                                                                                                                                               |
@@ -1688,7 +1662,6 @@
 | ICD10WHO:D02.1   | Carcinoma in situ: Trachea                                                                                                                                                                 |
 | ICD10WHO:D07.2   | Carcinoma in situ: Vagina                                                                                                                                                                  |
 | ICD10WHO:D07.1   | Carcinoma in situ: Vulva                                                                                                                                                                   |
-| ICD10WHO:I46     | Cardiac arrest                                                                                                                                                                             |
 | ICD10WHO:I46.0   | Cardiac arrest with successful resuscitation                                                                                                                                               |
 | ICD10WHO:I46.9   | Cardiac arrest, unspecified                                                                                                                                                                |
 | ICD10WHO:I49.9   | Cardiac arrhythmia, unspecified                                                                                                                                                            |
@@ -1703,7 +1676,6 @@
 | ICD10WHO:Y52.0   | Cardiac-stimulant glycosides and drugs of similar action                                                                                                                                   |
 | ICD10WHO:R57.0   | Cardiogenic shock                                                                                                                                                                          |
 | ICD10WHO:I51.7   | Cardiomegaly                                                                                                                                                                               |
-| ICD10WHO:I42     | Cardiomyopathy                                                                                                                                                                             |
 | ICD10WHO:I42.7   | Cardiomyopathy due to drugs and other external agents                                                                                                                                      |
 | ICD10WHO:I43     | Cardiomyopathy in diseases classified elsewhere                                                                                                                                            |
 | ICD10WHO:I43.0   | Cardiomyopathy in infectious and parasitic diseases classified elsewhere                                                                                                                   |
@@ -1755,7 +1727,6 @@
 | ICD10WHO:W23     | Caught, crushed, jammed or pinched in or between objects                                                                                                                                   |
 | ICD10WHO:M95.1   | Cauliflower ear                                                                                                                                                                            |
 | ICD10WHO:Y40.1   | Cefalosporins and other beta-lactam antibiotics                                                                                                                                            |
-| ICD10WHO:L03     | Cellulitis                                                                                                                                                                                 |
 | ICD10WHO:K12.2   | Cellulitis and abscess of mouth                                                                                                                                                            |
 | ICD10WHO:H60.1   | Cellulitis of external ear                                                                                                                                                                 |
 | ICD10WHO:L03.2   | Cellulitis of face                                                                                                                                                                         |
@@ -1792,7 +1763,6 @@
 | ICD10WHO:B45.1   | Cerebral cryptococcosis                                                                                                                                                                    |
 | ICD10WHO:G93.0   | Cerebral cysts                                                                                                                                                                             |
 | ICD10WHO:P10.1   | Cerebral haemorrhage due to birth injury                                                                                                                                                   |
-| ICD10WHO:I63     | Cerebral infarction                                                                                                                                                                        |
 | ICD10WHO:I63.6   | Cerebral infarction due to cerebral venous thrombosis, nonpyogenic                                                                                                                         |
 | ICD10WHO:I63.4   | Cerebral infarction due to embolism of cerebral arteries                                                                                                                                   |
 | ICD10WHO:I63.1   | Cerebral infarction due to embolism of precerebral arteries                                                                                                                                |
@@ -1803,7 +1773,6 @@
 | ICD10WHO:I63.9   | Cerebral infarction, unspecified                                                                                                                                                           |
 | ICD10WHO:G93.6   | Cerebral oedema                                                                                                                                                                            |
 | ICD10WHO:P11.0   | Cerebral oedema due to birth injury                                                                                                                                                        |
-| ICD10WHO:G80     | Cerebral palsy                                                                                                                                                                             |
 | ICD10WHO:G80-G83 | Cerebral palsy and other paralytic syndromes                                                                                                                                               |
 | ICD10WHO:G80.9   | Cerebral palsy, unspecified                                                                                                                                                                |
 | ICD10WHO:O22.5   | Cerebral venous thrombosis in pregnancy                                                                                                                                                    |
@@ -1833,13 +1802,11 @@
 | ICD10WHO:M53.0   | Cervicocranial syndrome                                                                                                                                                                    |
 | ICD10WHO:A42.2   | Cervicofacial actinomycosis                                                                                                                                                                |
 | ICD10WHO:B71.9   | Cestode infection, unspecified                                                                                                                                                             |
-| ICD10WHO:B57     | Chagas disease                                                                                                                                                                             |
 | ICD10WHO:B57.3   | Chagas disease (chronic) with digestive system involvement                                                                                                                                 |
 | ICD10WHO:B57.2   | Chagas disease (chronic) with heart involvement                                                                                                                                            |
 | ICD10WHO:B57.4   | Chagas disease (chronic) with nervous system involvement                                                                                                                                   |
 | ICD10WHO:B57.5   | Chagas disease (chronic) with other organ involvement                                                                                                                                      |
 | ICD10WHO:H00.1   | Chalazion                                                                                                                                                                                  |
-| ICD10WHO:A57     | Chancroid                                                                                                                                                                                  |
 | ICD10WHO:R19.4   | Change in bowel habit                                                                                                                                                                      |
 | ICD10WHO:Z56.1   | Change of job                                                                                                                                                                              |
 | ICD10WHO:H18.3   | Changes in corneal membranes                                                                                                                                                               |
@@ -1870,17 +1837,13 @@
 | ICD10WHO:Y40.2   | Chloramphenicol group                                                                                                                                                                      |
 | ICD10WHO:Q30.0   | Choanal atresia                                                                                                                                                                            |
 | ICD10WHO:K83.0   | Cholangitis                                                                                                                                                                                |
-| ICD10WHO:K81     | Cholecystitis                                                                                                                                                                              |
 | ICD10WHO:K81.9   | Cholecystitis, unspecified                                                                                                                                                                 |
 | ICD10WHO:Q44.4   | Choledochal cyst                                                                                                                                                                           |
-| ICD10WHO:K80     | Cholelithiasis                                                                                                                                                                             |
-| ICD10WHO:A00     | Cholera                                                                                                                                                                                    |
 | ICD10WHO:A00.0   | Cholera due to Vibrio cholerae 01, biovar cholerae                                                                                                                                         |
 | ICD10WHO:A00.1   | Cholera due to Vibrio cholerae 01, biovar eltor                                                                                                                                            |
 | ICD10WHO:Y58.2   | Cholera vaccine                                                                                                                                                                            |
 | ICD10WHO:A00.9   | Cholera, unspecified                                                                                                                                                                       |
 | ICD10WHO:H60.4   | Cholesteatoma of external ear                                                                                                                                                              |
-| ICD10WHO:H71     | Cholesteatoma of middle ear                                                                                                                                                                |
 | ICD10WHO:K82.4   | Cholesterolosis of gallbladder                                                                                                                                                             |
 | ICD10WHO:L50.5   | Cholinergic urticaria                                                                                                                                                                      |
 | ICD10WHO:M94.0   | Chondrocostal junction syndrome [Tietze]                                                                                                                                                   |
@@ -1941,7 +1904,6 @@
 | ICD10WHO:H20.1   | Chronic iridocyclitis                                                                                                                                                                      |
 | ICD10WHO:I25     | Chronic ischaemic heart disease                                                                                                                                                            |
 | ICD10WHO:I25.9   | Chronic ischaemic heart disease, unspecified                                                                                                                                               |
-| ICD10WHO:N18     | Chronic kidney disease                                                                                                                                                                     |
 | ICD10WHO:N18.1   | Chronic kidney disease, stage 1                                                                                                                                                            |
 | ICD10WHO:N18.2   | Chronic kidney disease, stage 2                                                                                                                                                            |
 | ICD10WHO:N18.3   | Chronic kidney disease, stage 3                                                                                                                                                            |
@@ -2041,12 +2003,10 @@
 | ICD10WHO:Q37.0   | Cleft hard palate with bilateral cleft lip                                                                                                                                                 |
 | ICD10WHO:Q35.5   | Cleft hard palate with cleft soft palate                                                                                                                                                   |
 | ICD10WHO:Q37.1   | Cleft hard palate with unilateral cleft lip                                                                                                                                                |
-| ICD10WHO:Q36     | Cleft lip                                                                                                                                                                                  |
 | ICD10WHO:Q35-Q37 | Cleft lip and cleft palate                                                                                                                                                                 |
 | ICD10WHO:Q36.0   | Cleft lip, bilateral                                                                                                                                                                       |
 | ICD10WHO:Q36.1   | Cleft lip, median                                                                                                                                                                          |
 | ICD10WHO:Q36.9   | Cleft lip, unilateral                                                                                                                                                                      |
-| ICD10WHO:Q35     | Cleft palate                                                                                                                                                                               |
 | ICD10WHO:Q37     | Cleft palate with cleft lip                                                                                                                                                                |
 | ICD10WHO:Q35.9   | Cleft palate, unspecified                                                                                                                                                                  |
 | ICD10WHO:Q35.3   | Cleft soft palate                                                                                                                                                                          |
@@ -2066,7 +2026,6 @@
 | ICD10WHO:D65-D69 | Coagulation defects, purpura and other haemorrhagic conditions                                                                                                                             |
 | ICD10WHO:J60     | Coalworker pneumoconiosis                                                                                                                                                                  |
 | ICD10WHO:Q25.1   | Coarctation of aorta                                                                                                                                                                       |
-| ICD10WHO:B38     | Coccidioidomycosis                                                                                                                                                                         |
 | ICD10WHO:B38.4   | Coccidioidomycosis meningitis                                                                                                                                                              |
 | ICD10WHO:B38.9   | Coccidioidomycosis, unspecified                                                                                                                                                            |
 | ICD10WHO:H80.2   | Cochlear otosclerosis                                                                                                                                                                      |
@@ -2089,7 +2048,6 @@
 | ICD10WHO:S68.3   | Combined traumatic amputation of (part of) finger(s) with other parts of wrist and hand                                                                                                    |
 | ICD10WHO:F95.2   | Combined vocal and multiple motor tic disorder [de la Tourette]                                                                                                                            |
 | ICD10WHO:Q20.0   | Common arterial trunk                                                                                                                                                                      |
-| ICD10WHO:D83     | Common variable immunodeficiency                                                                                                                                                           |
 | ICD10WHO:D83.2   | Common variable immunodeficiency with autoantibodies to B- or T-cells                                                                                                                      |
 | ICD10WHO:D83.0   | Common variable immunodeficiency with predominant abnormalities of B-cell numbers and function                                                                                             |
 | ICD10WHO:D83.1   | Common variable immunodeficiency with predominant immunoregulatory T-cell disorders                                                                                                        |
@@ -2231,7 +2189,6 @@
 | ICD10WHO:P35.2   | Congenital herpesviral [herpes simplex] infection                                                                                                                                          |
 | ICD10WHO:Q40.1   | Congenital hiatus hernia                                                                                                                                                                   |
 | ICD10WHO:P83.5   | Congenital hydrocele                                                                                                                                                                       |
-| ICD10WHO:Q03     | Congenital hydrocephalus                                                                                                                                                                   |
 | ICD10WHO:Q03.9   | Congenital hydrocephalus, unspecified                                                                                                                                                      |
 | ICD10WHO:Q62.0   | Congenital hydronephrosis                                                                                                                                                                  |
 | ICD10WHO:P94.1   | Congenital hypertonia                                                                                                                                                                      |
@@ -2391,7 +2348,6 @@
 | ICD10WHO:Q65.4   | Congenital subluxation of hip, bilateral                                                                                                                                                   |
 | ICD10WHO:Q65.3   | Congenital subluxation of hip, unilateral                                                                                                                                                  |
 | ICD10WHO:Q65.5   | Congenital subluxation of hip, unspecified                                                                                                                                                 |
-| ICD10WHO:A50     | Congenital syphilis                                                                                                                                                                        |
 | ICD10WHO:A50.9   | Congenital syphilis, unspecified                                                                                                                                                           |
 | ICD10WHO:Q50.2   | Congenital torsion of ovary                                                                                                                                                                |
 | ICD10WHO:P37.1   | Congenital toxoplasmosis                                                                                                                                                                   |
@@ -2409,7 +2365,6 @@
 | ICD10WHO:H11.1   | Conjunctival degenerations and deposits                                                                                                                                                    |
 | ICD10WHO:H11.3   | Conjunctival haemorrhage                                                                                                                                                                   |
 | ICD10WHO:H11.2   | Conjunctival scars                                                                                                                                                                         |
-| ICD10WHO:H10     | Conjunctivitis                                                                                                                                                                             |
 | ICD10WHO:B30.1   | Conjunctivitis due to adenovirus                                                                                                                                                           |
 | ICD10WHO:H13.1   | Conjunctivitis in infectious and parasitic diseases classified elsewhere                                                                                                                   |
 | ICD10WHO:H13.2   | Conjunctivitis in other diseases classified elsewhere                                                                                                                                      |
@@ -2664,13 +2619,11 @@
 | ICD10WHO:S97.1   | Crushing injury of toe(s)                                                                                                                                                                  |
 | ICD10WHO:S67     | Crushing injury of wrist and hand                                                                                                                                                          |
 | ICD10WHO:D89.1   | Cryoglobulinaemia                                                                                                                                                                          |
-| ICD10WHO:B45     | Cryptococcosis                                                                                                                                                                             |
 | ICD10WHO:B45.9   | Cryptococcosis, unspecified                                                                                                                                                                |
 | ICD10WHO:A07.2   | Cryptosporidiosis                                                                                                                                                                          |
 | ICD10WHO:M14.1   | Crystal arthropathy in other metabolic disorders                                                                                                                                           |
 | ICD10WHO:M11.9   | Crystal arthropathy, unspecified                                                                                                                                                           |
 | ICD10WHO:H43.2   | Crystalline deposits in vitreous body                                                                                                                                                      |
-| ICD10WHO:E24     | Cushing syndrome                                                                                                                                                                           |
 | ICD10WHO:E24.9   | Cushing syndrome, unspecified                                                                                                                                                              |
 | ICD10WHO:C84.8   | Cutaneous T-cell lymphoma, unspecified                                                                                                                                                     |
 | ICD10WHO:L02     | Cutaneous abscess, furuncle and carbuncle                                                                                                                                                  |
@@ -2713,20 +2666,16 @@
 | ICD10WHO:D73.4   | Cyst of spleen                                                                                                                                                                             |
 | ICD10WHO:Q44.6   | Cystic disease of liver                                                                                                                                                                    |
 | ICD10WHO:Q11.0   | Cystic eyeball                                                                                                                                                                             |
-| ICD10WHO:E84     | Cystic fibrosis                                                                                                                                                                            |
 | ICD10WHO:E84.1   | Cystic fibrosis with intestinal manifestations                                                                                                                                             |
 | ICD10WHO:E84.8   | Cystic fibrosis with other manifestations                                                                                                                                                  |
 | ICD10WHO:E84.0   | Cystic fibrosis with pulmonary manifestations                                                                                                                                              |
 | ICD10WHO:E84.9   | Cystic fibrosis, unspecified                                                                                                                                                               |
-| ICD10WHO:Q61     | Cystic kidney disease                                                                                                                                                                      |
 | ICD10WHO:Q61.9   | Cystic kidney disease, unspecified                                                                                                                                                         |
 | ICD10WHO:M23.0   | Cystic meniscus                                                                                                                                                                            |
-| ICD10WHO:B69     | Cysticercosis                                                                                                                                                                              |
 | ICD10WHO:B69.0   | Cysticercosis of central nervous system                                                                                                                                                    |
 | ICD10WHO:B69.1   | Cysticercosis of eye                                                                                                                                                                       |
 | ICD10WHO:B69.8   | Cysticercosis of other sites                                                                                                                                                               |
 | ICD10WHO:B69.9   | Cysticercosis, unspecified                                                                                                                                                                 |
-| ICD10WHO:N30     | Cystitis                                                                                                                                                                                   |
 | ICD10WHO:N30.9   | Cystitis, unspecified                                                                                                                                                                      |
 | ICD10WHO:N81.1   | Cystocele                                                                                                                                                                                  |
 | ICD10WHO:Z93.5   | Cystostomy status                                                                                                                                                                          |
@@ -2823,7 +2772,6 @@
 | ICD10WHO:A97.1   | Dengue with warning signs                                                                                                                                                                  |
 | ICD10WHO:A97.0   | Dengue without warning signs                                                                                                                                                               |
 | ICD10WHO:A97.9   | Dengue, unspecified                                                                                                                                                                        |
-| ICD10WHO:K02     | Dental caries                                                                                                                                                                              |
 | ICD10WHO:K02.9   | Dental caries, unspecified                                                                                                                                                                 |
 | ICD10WHO:Y56.7   | Dental drugs, topically applied                                                                                                                                                            |
 | ICD10WHO:Z01.2   | Dental examination                                                                                                                                                                         |
@@ -2856,7 +2804,6 @@
 | ICD10WHO:L30.9   | Dermatitis, unspecified                                                                                                                                                                    |
 | ICD10WHO:M36.0   | Dermato(poly)myositis in neoplastic disease                                                                                                                                                |
 | ICD10WHO:L50.3   | Dermatographic urticaria                                                                                                                                                                   |
-| ICD10WHO:B35     | Dermatophytosis                                                                                                                                                                            |
 | ICD10WHO:B35.9   | Dermatophytosis, unspecified                                                                                                                                                               |
 | ICD10WHO:M33     | Dermatopolymyositis                                                                                                                                                                        |
 | ICD10WHO:M33.9   | Dermatopolymyositis, unspecified                                                                                                                                                           |
@@ -2872,7 +2819,6 @@
 | ICD10WHO:Q24.0   | Dextrocardia                                                                                                                                                                               |
 | ICD10WHO:D82.1   | Di George syndrome                                                                                                                                                                         |
 | ICD10WHO:E23.2   | Diabetes insipidus                                                                                                                                                                         |
-| ICD10WHO:E10-E14 | Diabetes mellitus                                                                                                                                                                          |
 | ICD10WHO:O24.4   | Diabetes mellitus arising in pregnancy                                                                                                                                                     |
 | ICD10WHO:O24     | Diabetes mellitus in pregnancy                                                                                                                                                             |
 | ICD10WHO:O24.9   | Diabetes mellitus in pregnancy, unspecified                                                                                                                                                |
@@ -2909,7 +2855,6 @@
 | ICD10WHO:Y53.5   | Digestants                                                                                                                                                                                 |
 | ICD10WHO:P75-P78 | Digestive system disorders of fetus and newborn                                                                                                                                            |
 | ICD10WHO:I42.0   | Dilated cardiomyopathy                                                                                                                                                                     |
-| ICD10WHO:A36     | Diphtheria                                                                                                                                                                                 |
 | ICD10WHO:Y58.5   | Diphtheria vaccine                                                                                                                                                                         |
 | ICD10WHO:A36.9   | Diphtheria, unspecified                                                                                                                                                                    |
 | ICD10WHO:B70.0   | Diphyllobothriasis                                                                                                                                                                         |
@@ -3290,9 +3235,7 @@
 | ICD10WHO:Q20.1   | Double outlet right ventricle                                                                                                                                                              |
 | ICD10WHO:Q51.1   | Doubling of uterus with doubling of cervix and vagina                                                                                                                                      |
 | ICD10WHO:Q52.1   | Doubling of vagina                                                                                                                                                                         |
-| ICD10WHO:Q90     | Down syndrome                                                                                                                                                                              |
 | ICD10WHO:Q90.9   | Down syndrome, unspecified                                                                                                                                                                 |
-| ICD10WHO:B72     | Dracunculiasis                                                                                                                                                                             |
 | ICD10WHO:I24.1   | Dressler syndrome                                                                                                                                                                          |
 | ICD10WHO:V19.0   | Driver injured in collision with other and unspecified motor vehicles in nontraffic accident                                                                                               |
 | ICD10WHO:V29.0   | Driver injured in collision with other and unspecified motor vehicles in nontraffic accident                                                                                               |
@@ -3362,7 +3305,6 @@
 | ICD10WHO:Y40-Y59 | Drugs, medicaments and biological substances causing adverse effects in therapeutic use                                                                                                    |
 | ICD10WHO:R68.2   | Dry mouth, unspecified                                                                                                                                                                     |
 | ICD10WHO:F64.1   | Dual-role transvestism                                                                                                                                                                     |
-| ICD10WHO:K26     | Duodenal ulcer                                                                                                                                                                             |
 | ICD10WHO:K26.2   | Duodenal ulcer : acute with both haemorrhage and perforation                                                                                                                               |
 | ICD10WHO:K26.0   | Duodenal ulcer : acute with haemorrhage                                                                                                                                                    |
 | ICD10WHO:K26.1   | Duodenal ulcer : acute with perforation                                                                                                                                                    |
@@ -3446,7 +3388,6 @@
 | ICD10WHO:Q22.5   | Ebstein anomaly                                                                                                                                                                            |
 | ICD10WHO:L74.9   | Eccrine sweat disorder, unspecified                                                                                                                                                        |
 | ICD10WHO:L74     | Eccrine sweat disorders                                                                                                                                                                    |
-| ICD10WHO:B67     | Echinococcosis                                                                                                                                                                             |
 | ICD10WHO:B67.9   | Echinococcosis, other and unspecified                                                                                                                                                      |
 | ICD10WHO:B67.8   | Echinococcosis, unspecified, of liver                                                                                                                                                      |
 | ICD10WHO:B67.2   | Echinococcus granulosus infection of bone                                                                                                                                                  |
@@ -3457,7 +3398,6 @@
 | ICD10WHO:B67.5   | Echinococcus multilocularis infection of liver                                                                                                                                             |
 | ICD10WHO:B67.6   | Echinococcus multilocularis infection, other and multiple sites                                                                                                                            |
 | ICD10WHO:B67.7   | Echinococcus multilocularis infection, unspecified                                                                                                                                         |
-| ICD10WHO:O15     | Eclampsia                                                                                                                                                                                  |
 | ICD10WHO:O15.1   | Eclampsia in labour                                                                                                                                                                        |
 | ICD10WHO:O15.0   | Eclampsia in pregnancy                                                                                                                                                                     |
 | ICD10WHO:O15.2   | Eclampsia in the puerperium                                                                                                                                                                |
@@ -3467,7 +3407,6 @@
 | ICD10WHO:Q43.5   | Ectopic anus                                                                                                                                                                               |
 | ICD10WHO:E34.2   | Ectopic hormone secretion, not elsewhere classified                                                                                                                                        |
 | ICD10WHO:Q63.2   | Ectopic kidney                                                                                                                                                                             |
-| ICD10WHO:O00     | Ectopic pregnancy                                                                                                                                                                          |
 | ICD10WHO:O00.9   | Ectopic pregnancy, unspecified                                                                                                                                                             |
 | ICD10WHO:Q53.0   | Ectopic testis                                                                                                                                                                             |
 | ICD10WHO:Q33.5   | Ectopic tissue in lung                                                                                                                                                                     |
@@ -3582,7 +3521,6 @@
 | ICD10WHO:O99.2   | Endocrine, nutritional and metabolic diseases complicating pregnancy, childbirth and the puerperium                                                                                        |
 | ICD10WHO:N85.1   | Endometrial adenomatous hyperplasia                                                                                                                                                        |
 | ICD10WHO:N85.0   | Endometrial glandular hyperplasia                                                                                                                                                          |
-| ICD10WHO:N80     | Endometriosis                                                                                                                                                                              |
 | ICD10WHO:N80.6   | Endometriosis in cutaneous scar                                                                                                                                                            |
 | ICD10WHO:N80.2   | Endometriosis of fallopian tube                                                                                                                                                            |
 | ICD10WHO:N80.5   | Endometriosis of intestine                                                                                                                                                                 |
@@ -3604,7 +3542,6 @@
 | ICD10WHO:H05.4   | Enophthalmos                                                                                                                                                                               |
 | ICD10WHO:A04.6   | Enteritis due to Yersinia enterocolitica                                                                                                                                                   |
 | ICD10WHO:M49.2   | Enterobacterial spondylitis                                                                                                                                                                |
-| ICD10WHO:B80     | Enterobiasis                                                                                                                                                                               |
 | ICD10WHO:A04.7   | Enterocolitis due to Clostridium difficile                                                                                                                                                 |
 | ICD10WHO:A04.3   | Enterohaemorrhagic Escherichia coli infection                                                                                                                                              |
 | ICD10WHO:A04.2   | Enteroinvasive Escherichia coli infection                                                                                                                                                  |
@@ -3634,7 +3571,6 @@
 | ICD10WHO:A88.1   | Epidemic vertigo                                                                                                                                                                           |
 | ICD10WHO:L72.0   | Epidermal cyst                                                                                                                                                                             |
 | ICD10WHO:L85.9   | Epidermal thickening, unspecified                                                                                                                                                          |
-| ICD10WHO:Q81     | Epidermolysis bullosa                                                                                                                                                                      |
 | ICD10WHO:Q81.2   | Epidermolysis bullosa dystrophica                                                                                                                                                          |
 | ICD10WHO:Q81.1   | Epidermolysis bullosa letalis                                                                                                                                                              |
 | ICD10WHO:Q81.0   | Epidermolysis bullosa simplex                                                                                                                                                              |
@@ -3651,7 +3587,6 @@
 | ICD10WHO:N86     | Erosion and ectropion of cervix uteri                                                                                                                                                      |
 | ICD10WHO:K03.2   | Erosion of teeth                                                                                                                                                                           |
 | ICD10WHO:M15.4   | Erosive (osteo)arthrosis                                                                                                                                                                   |
-| ICD10WHO:A46     | Erysipelas                                                                                                                                                                                 |
 | ICD10WHO:A26     | Erysipeloid                                                                                                                                                                                |
 | ICD10WHO:A26.9   | Erysipeloid, unspecified                                                                                                                                                                   |
 | ICD10WHO:A26.7   | Erysipelothrix sepsis                                                                                                                                                                      |
@@ -3664,9 +3599,7 @@
 | ICD10WHO:L30.4   | Erythema intertrigo                                                                                                                                                                        |
 | ICD10WHO:L53.2   | Erythema marginatum                                                                                                                                                                        |
 | ICD10WHO:L54.0   | Erythema marginatum in acute rheumatic fever                                                                                                                                               |
-| ICD10WHO:L51     | Erythema multiforme                                                                                                                                                                        |
 | ICD10WHO:L51.9   | Erythema multiforme, unspecified                                                                                                                                                           |
-| ICD10WHO:L52     | Erythema nodosum                                                                                                                                                                           |
 | ICD10WHO:L53.9   | Erythematous condition, unspecified                                                                                                                                                        |
 | ICD10WHO:L08.1   | Erythrasma                                                                                                                                                                                 |
 | ICD10WHO:B96.2   | Escherichia coli [E. coli] as the cause of diseases classified to other chapters                                                                                                           |
@@ -3719,7 +3652,6 @@
 | ICD10WHO:O26.0   | Excessive weight gain in pregnancy                                                                                                                                                         |
 | ICD10WHO:N92     | Excessive, frequent and irregular menstruation                                                                                                                                             |
 | ICD10WHO:K08.0   | Exfoliation of teeth due to systemic causes                                                                                                                                                |
-| ICD10WHO:L26     | Exfoliative dermatitis                                                                                                                                                                     |
 | ICD10WHO:T73.3   | Exhaustion due to excessive exertion                                                                                                                                                       |
 | ICD10WHO:T73.2   | Exhaustion due to exposure                                                                                                                                                                 |
 | ICD10WHO:F65.2   | Exhibitionism                                                                                                                                                                              |
@@ -3926,7 +3858,6 @@
 | ICD10WHO:N82.9   | Female genital tract fistula, unspecified                                                                                                                                                  |
 | ICD10WHO:N82.5   | Female genital tract-skin fistulae                                                                                                                                                         |
 | ICD10WHO:N74.3   | Female gonococcal pelvic inflammatory disease                                                                                                                                              |
-| ICD10WHO:N97     | Female infertility                                                                                                                                                                         |
 | ICD10WHO:N97.0   | Female infertility associated with anovulation                                                                                                                                             |
 | ICD10WHO:N97.4   | Female infertility associated with male factors                                                                                                                                            |
 | ICD10WHO:N97.3   | Female infertility of cervical origin                                                                                                                                                      |
@@ -4023,7 +3954,6 @@
 | ICD10WHO:J94.1   | Fibrothorax                                                                                                                                                                                |
 | ICD10WHO:M85.0   | Fibrous dysplasia (monostotic)                                                                                                                                                             |
 | ICD10WHO:H13.0   | Filarial infection of conjunctiva                                                                                                                                                          |
-| ICD10WHO:B74     | Filariasis                                                                                                                                                                                 |
 | ICD10WHO:B74.1   | Filariasis due to Brugia malayi                                                                                                                                                            |
 | ICD10WHO:B74.2   | Filariasis due to Brugia timori                                                                                                                                                            |
 | ICD10WHO:B74.0   | Filariasis due to Wuchereria bancrofti                                                                                                                                                     |
@@ -4094,7 +4024,6 @@
 | ICD10WHO:L72.9   | Follicular cyst of skin and subcutaneous tissue, unspecified                                                                                                                               |
 | ICD10WHO:L72     | Follicular cysts of skin and subcutaneous tissue                                                                                                                                           |
 | ICD10WHO:L73.9   | Follicular disorder, unspecified                                                                                                                                                           |
-| ICD10WHO:C82     | Follicular lymphoma                                                                                                                                                                        |
 | ICD10WHO:C82.0   | Follicular lymphoma grade I                                                                                                                                                                |
 | ICD10WHO:C82.1   | Follicular lymphoma grade II                                                                                                                                                               |
 | ICD10WHO:C82.2   | Follicular lymphoma grade III, unspecified                                                                                                                                                 |
@@ -4273,7 +4202,6 @@
 | ICD10WHO:Q99.2   | Fragile X chromosome                                                                                                                                                                       |
 | ICD10WHO:L81.2   | Freckles                                                                                                                                                                                   |
 | ICD10WHO:Q01.0   | Frontal encephalocele                                                                                                                                                                      |
-| ICD10WHO:T33-T35 | Frostbite                                                                                                                                                                                  |
 | ICD10WHO:T35     | Frostbite involving multiple body regions and unspecified frostbite                                                                                                                        |
 | ICD10WHO:T34     | Frostbite with tissue necrosis                                                                                                                                                             |
 | ICD10WHO:T35.1   | Frostbite with tissue necrosis involving multiple body regions                                                                                                                             |
@@ -4308,7 +4236,6 @@
 | ICD10WHO:R02     | Gangrene, not elsewhere classified                                                                                                                                                         |
 | ICD10WHO:A48.0   | Gas gangrene                                                                                                                                                                               |
 | ICD10WHO:K31.4   | Gastric diverticulum                                                                                                                                                                       |
-| ICD10WHO:K25     | Gastric ulcer                                                                                                                                                                              |
 | ICD10WHO:K25.2   | Gastric ulcer : acute with both haemorrhage and perforation                                                                                                                                |
 | ICD10WHO:K25.0   | Gastric ulcer : acute with haemorrhage                                                                                                                                                     |
 | ICD10WHO:K25.1   | Gastric ulcer : acute with perforation                                                                                                                                                     |
@@ -4338,7 +4265,6 @@
 | ICD10WHO:K92.2   | Gastrointestinal haemorrhage, unspecified                                                                                                                                                  |
 | ICD10WHO:B46.2   | Gastrointestinal mucormycosis                                                                                                                                                              |
 | ICD10WHO:A21.3   | Gastrointestinal tularaemia                                                                                                                                                                |
-| ICD10WHO:K28     | Gastrojejunal ulcer                                                                                                                                                                        |
 | ICD10WHO:K28.2   | Gastrojejunal ulcer : acute with both haemorrhage and perforation                                                                                                                          |
 | ICD10WHO:K28.0   | Gastrojejunal ulcer : acute with haemorrhage                                                                                                                                               |
 | ICD10WHO:K28.1   | Gastrojejunal ulcer : acute with perforation                                                                                                                                               |
@@ -4403,8 +4329,6 @@
 | ICD10WHO:K05     | Gingivitis and periodontal diseases                                                                                                                                                        |
 | ICD10WHO:A24.0   | Glanders                                                                                                                                                                                   |
 | ICD10WHO:A24     | Glanders and melioidosis                                                                                                                                                                   |
-| ICD10WHO:H40     | Glaucoma                                                                                                                                                                                   |
-| ICD10WHO:H40-H42 | Glaucoma                                                                                                                                                                                   |
 | ICD10WHO:H42     | Glaucoma in diseases classified elsewhere                                                                                                                                                  |
 | ICD10WHO:H42.0   | Glaucoma in endocrine, nutritional and metabolic diseases                                                                                                                                  |
 | ICD10WHO:H42.8   | Glaucoma in other diseases classified elsewhere                                                                                                                                            |
@@ -4455,7 +4379,6 @@
 | ICD10WHO:K13.4   | Granuloma and granuloma-like lesions of oral mucosa                                                                                                                                        |
 | ICD10WHO:L92.0   | Granuloma annulare                                                                                                                                                                         |
 | ICD10WHO:L92.2   | Granuloma faciale [eosinophilic granuloma of skin]                                                                                                                                         |
-| ICD10WHO:A58     | Granuloma inguinale                                                                                                                                                                        |
 | ICD10WHO:L92.9   | Granulomatous disorder of skin and subcutaneous tissue, unspecified                                                                                                                        |
 | ICD10WHO:L92     | Granulomatous disorders of skin and subcutaneous tissue                                                                                                                                    |
 | ICD10WHO:K75.3   | Granulomatous hepatitis, not elsewhere classified                                                                                                                                          |
@@ -4562,7 +4485,6 @@
 | ICD10WHO:Z94.3   | Heart and lungs transplant status                                                                                                                                                          |
 | ICD10WHO:I51.9   | Heart disease, unspecified                                                                                                                                                                 |
 | ICD10WHO:Z52.7   | Heart donor                                                                                                                                                                                |
-| ICD10WHO:I50     | Heart failure                                                                                                                                                                              |
 | ICD10WHO:I50.9   | Heart failure, unspecified                                                                                                                                                                 |
 | ICD10WHO:T86.2   | Heart transplant failure and rejection                                                                                                                                                     |
 | ICD10WHO:Z94.1   | Heart transplant status                                                                                                                                                                    |
@@ -4582,7 +4504,6 @@
 | ICD10WHO:V95.0   | Helicopter accident injuring occupant                                                                                                                                                      |
 | ICD10WHO:B65-B83 | Helminthiases                                                                                                                                                                              |
 | ICD10WHO:B83.9   | Helminthiasis, unspecified                                                                                                                                                                 |
-| ICD10WHO:G81     | Hemiplegia                                                                                                                                                                                 |
 | ICD10WHO:G81.9   | Hemiplegia, unspecified                                                                                                                                                                    |
 | ICD10WHO:K72     | Hepatic failure, not elsewhere classified                                                                                                                                                  |
 | ICD10WHO:K72.9   | Hepatic failure, unspecified                                                                                                                                                               |
@@ -4599,7 +4520,6 @@
 | ICD10WHO:C86.1   | Hepatosplenic T-cell lymphoma                                                                                                                                                              |
 | ICD10WHO:G60     | Hereditary and idiopathic neuropathy                                                                                                                                                       |
 | ICD10WHO:G60.9   | Hereditary and idiopathic neuropathy, unspecified                                                                                                                                          |
-| ICD10WHO:G11     | Hereditary ataxia                                                                                                                                                                          |
 | ICD10WHO:G11.9   | Hereditary ataxia, unspecified                                                                                                                                                             |
 | ICD10WHO:H31.2   | Hereditary choroidal dystrophy                                                                                                                                                             |
 | ICD10WHO:H18.5   | Hereditary corneal dystrophies                                                                                                                                                             |
@@ -4654,7 +4574,6 @@
 | ICD10WHO:Y53.0   | Histamine H 2 -receptor antagonists                                                                                                                                                        |
 | ICD10WHO:D47.0   | Histiocytic and mast cell tumours of uncertain and unknown behaviour                                                                                                                       |
 | ICD10WHO:C96.8   | Histiocytic sarcoma                                                                                                                                                                        |
-| ICD10WHO:B39     | Histoplasmosis                                                                                                                                                                             |
 | ICD10WHO:B39.4   | Histoplasmosis capsulati, unspecified                                                                                                                                                      |
 | ICD10WHO:B39.5   | Histoplasmosis duboisii                                                                                                                                                                    |
 | ICD10WHO:B39.9   | Histoplasmosis, unspecified                                                                                                                                                                |
@@ -4683,13 +4602,10 @@
 | ICD10WHO:B23     | Human immunodeficiency virus [HIV] disease resulting in other conditions                                                                                                                   |
 | ICD10WHO:B22     | Human immunodeficiency virus [HIV] disease resulting in other specified diseases                                                                                                           |
 | ICD10WHO:J12.3   | Human metapneumovirus pneumonia                                                                                                                                                            |
-| ICD10WHO:G10     | Huntington disease                                                                                                                                                                         |
 | ICD10WHO:Y46.2   | Hydantoin derivatives                                                                                                                                                                      |
-| ICD10WHO:O01     | Hydatidiform mole                                                                                                                                                                          |
 | ICD10WHO:O01.9   | Hydatidiform mole, unspecified                                                                                                                                                             |
 | ICD10WHO:N43     | Hydrocele and spermatocele                                                                                                                                                                 |
 | ICD10WHO:N43.3   | Hydrocele, unspecified                                                                                                                                                                     |
-| ICD10WHO:G91     | Hydrocephalus                                                                                                                                                                              |
 | ICD10WHO:G94.0   | Hydrocephalus in infectious and parasitic diseases classified elsewhere                                                                                                                    |
 | ICD10WHO:G94.1   | Hydrocephalus in neoplastic disease                                                                                                                                                        |
 | ICD10WHO:G94.2   | Hydrocephalus in other diseases classified elsewhere                                                                                                                                       |
@@ -4707,7 +4623,6 @@
 | ICD10WHO:M11.0   | Hydroxyapatite deposition disease                                                                                                                                                          |
 | ICD10WHO:B71.0   | Hymenolepiasis                                                                                                                                                                             |
 | ICD10WHO:R20.3   | Hyperaesthesia                                                                                                                                                                             |
-| ICD10WHO:E26     | Hyperaldosteronism                                                                                                                                                                         |
 | ICD10WHO:E26.9   | Hyperaldosteronism, unspecified                                                                                                                                                            |
 | ICD10WHO:R17.0   | Hyperbilirubinaemia with mention of jaundice, not elsewhere classified                                                                                                                     |
 | ICD10WHO:R17.9   | Hyperbilirubinaemia without mention of jaundice, not elsewhere classified                                                                                                                  |
@@ -4757,14 +4672,12 @@
 | ICD10WHO:I13.2   | Hypertensive heart and renal disease with both (congestive) heart failure and renal failure                                                                                                |
 | ICD10WHO:I13.1   | Hypertensive heart and renal disease with renal failure                                                                                                                                    |
 | ICD10WHO:I13.9   | Hypertensive heart and renal disease, unspecified                                                                                                                                          |
-| ICD10WHO:I11     | Hypertensive heart disease                                                                                                                                                                 |
 | ICD10WHO:I11.0   | Hypertensive heart disease with (congestive) heart failure                                                                                                                                 |
 | ICD10WHO:I11.9   | Hypertensive heart disease without (congestive) heart failure                                                                                                                              |
 | ICD10WHO:I12     | Hypertensive renal disease                                                                                                                                                                 |
 | ICD10WHO:I12.0   | Hypertensive renal disease with renal failure                                                                                                                                              |
 | ICD10WHO:I12.9   | Hypertensive renal disease without renal failure                                                                                                                                           |
 | ICD10WHO:O62.4   | Hypertonic, incoordinate, and prolonged uterine contractions                                                                                                                               |
-| ICD10WHO:L68     | Hypertrichosis                                                                                                                                                                             |
 | ICD10WHO:L68.9   | Hypertrichosis, unspecified                                                                                                                                                                |
 | ICD10WHO:L91.9   | Hypertrophic disorder of skin, unspecified                                                                                                                                                 |
 | ICD10WHO:L91     | Hypertrophic disorders of skin                                                                                                                                                             |
@@ -4774,7 +4687,6 @@
 | ICD10WHO:M79.4   | Hypertrophy of (infrapatellar) fat pad                                                                                                                                                     |
 | ICD10WHO:J35.2   | Hypertrophy of adenoids                                                                                                                                                                    |
 | ICD10WHO:M89.3   | Hypertrophy of bone                                                                                                                                                                        |
-| ICD10WHO:N62     | Hypertrophy of breast                                                                                                                                                                      |
 | ICD10WHO:J34.3   | Hypertrophy of nasal turbinates                                                                                                                                                            |
 | ICD10WHO:K11.1   | Hypertrophy of salivary gland                                                                                                                                                              |
 | ICD10WHO:K14.3   | Hypertrophy of tongue papillae                                                                                                                                                             |
@@ -4795,7 +4707,6 @@
 | ICD10WHO:E16.2   | Hypoglycaemia, unspecified                                                                                                                                                                 |
 | ICD10WHO:E87.6   | Hypokalaemia                                                                                                                                                                               |
 | ICD10WHO:F30.0   | Hypomania                                                                                                                                                                                  |
-| ICD10WHO:E20     | Hypoparathyroidism                                                                                                                                                                         |
 | ICD10WHO:E20.9   | Hypoparathyroidism, unspecified                                                                                                                                                            |
 | ICD10WHO:E23.0   | Hypopituitarism                                                                                                                                                                            |
 | ICD10WHO:Q33.6   | Hypoplasia and dysplasia of lung                                                                                                                                                           |
@@ -4875,7 +4786,6 @@
 | ICD10WHO:K01.1   | Impacted teeth                                                                                                                                                                             |
 | ICD10WHO:Q52.3   | Imperforate hymen                                                                                                                                                                          |
 | ICD10WHO:L01.1   | Impetiginization of other dermatoses                                                                                                                                                       |
-| ICD10WHO:L01     | Impetigo                                                                                                                                                                                   |
 | ICD10WHO:L01.0   | Impetigo [any organism] [any site]                                                                                                                                                         |
 | ICD10WHO:M75.4   | Impingement syndrome of shoulder                                                                                                                                                           |
 | ICD10WHO:N48.4   | Impotence of organic origin                                                                                                                                                                |
@@ -4946,7 +4856,6 @@
 | ICD10WHO:P35-P39 | Infections specific to the perinatal period                                                                                                                                                |
 | ICD10WHO:A50-A64 | Infections with a predominantly sexual mode of transmission                                                                                                                                |
 | ICD10WHO:M00-M03 | Infectious arthropathies                                                                                                                                                                   |
-| ICD10WHO:B27     | Infectious mononucleosis                                                                                                                                                                   |
 | ICD10WHO:B27.9   | Infectious mononucleosis, unspecified                                                                                                                                                      |
 | ICD10WHO:L30.3   | Infective dermatitis                                                                                                                                                                       |
 | ICD10WHO:I40.0   | Infective myocarditis                                                                                                                                                                      |
@@ -5397,7 +5306,6 @@
 | ICD10WHO:E01.0   | Iodine-deficiency-related diffuse (endemic) goitre                                                                                                                                         |
 | ICD10WHO:E01.1   | Iodine-deficiency-related multinodular (endemic) goitre                                                                                                                                    |
 | ICD10WHO:E01     | Iodine-deficiency-related thyroid disorders and allied conditions                                                                                                                          |
-| ICD10WHO:H20     | Iridocyclitis                                                                                                                                                                              |
 | ICD10WHO:H22.0   | Iridocyclitis in infectious and parasitic diseases classified elsewhere                                                                                                                    |
 | ICD10WHO:H22.1   | Iridocyclitis in other diseases classified elsewhere                                                                                                                                       |
 | ICD10WHO:H20.9   | Iridocyclitis, unspecified                                                                                                                                                                 |
@@ -5409,7 +5317,6 @@
 | ICD10WHO:N30.4   | Irradiation cystitis                                                                                                                                                                       |
 | ICD10WHO:N92.6   | Irregular menstruation, unspecified                                                                                                                                                        |
 | ICD10WHO:R45.4   | Irritability and anger                                                                                                                                                                     |
-| ICD10WHO:K58     | Irritable bowel syndrome                                                                                                                                                                   |
 | ICD10WHO:K58.3   | Irritable bowel syndrome with mixed bowel habits [IBS-M]                                                                                                                                   |
 | ICD10WHO:K58.2   | Irritable bowel syndrome with predominant constipation [IBS-C]                                                                                                                             |
 | ICD10WHO:K58.1   | Irritable bowel syndrome with predominant diarrhoea [IBS-D]                                                                                                                                |
@@ -5495,7 +5402,6 @@
 | ICD10WHO:Q97.0   | Karyotype 47,XXX                                                                                                                                                                           |
 | ICD10WHO:Q98.5   | Karyotype 47,XYY                                                                                                                                                                           |
 | ICD10WHO:M12.1   | Kaschin-Beck disease                                                                                                                                                                       |
-| ICD10WHO:H16     | Keratitis                                                                                                                                                                                  |
 | ICD10WHO:H19.3   | Keratitis and keratoconjunctivitis in other diseases classified elsewhere                                                                                                                  |
 | ICD10WHO:H19.2   | Keratitis and keratoconjunctivitis in other infectious and parasitic diseases classified elsewhere                                                                                         |
 | ICD10WHO:H16.9   | Keratitis, unspecified                                                                                                                                                                     |
@@ -5525,7 +5431,6 @@
 | ICD10WHO:Q76.1   | Klippel-Feil syndrome                                                                                                                                                                      |
 | ICD10WHO:P14.1   | Klumpke paralysis due to birth injury                                                                                                                                                      |
 | ICD10WHO:M72.1   | Knuckle pads                                                                                                                                                                               |
-| ICD10WHO:E40     | Kwashiorkor                                                                                                                                                                                |
 | ICD10WHO:A98.2   | Kyasanur Forest disease                                                                                                                                                                    |
 | ICD10WHO:I27.1   | Kyphoscoliotic heart disease                                                                                                                                                               |
 | ICD10WHO:M40     | Kyphosis and lordosis                                                                                                                                                                      |
@@ -5559,7 +5464,6 @@
 | ICD10WHO:Z73.2   | Lack of relaxation and leisure                                                                                                                                                             |
 | ICD10WHO:X54     | Lack of water                                                                                                                                                                              |
 | ICD10WHO:F52.0   | Lack or loss of sexual desire                                                                                                                                                              |
-| ICD10WHO:E73     | Lactose intolerance                                                                                                                                                                        |
 | ICD10WHO:E73.9   | Lactose intolerance, unspecified                                                                                                                                                           |
 | ICD10WHO:Q24.1   | Laevocardia                                                                                                                                                                                |
 | ICD10WHO:H02.2   | Lagophthalmos                                                                                                                                                                              |
@@ -5606,13 +5510,11 @@
 | ICD10WHO:A48.1   | Legionnaires disease                                                                                                                                                                       |
 | ICD10WHO:D25     | Leiomyoma of uterus                                                                                                                                                                        |
 | ICD10WHO:D25.9   | Leiomyoma of uterus, unspecified                                                                                                                                                           |
-| ICD10WHO:B55     | Leishmaniasis                                                                                                                                                                              |
 | ICD10WHO:B55.9   | Leishmaniasis, unspecified                                                                                                                                                                 |
 | ICD10WHO:H20.2   | Lens-induced iridocyclitis                                                                                                                                                                 |
 | ICD10WHO:A30.5   | Lepromatous leprosy                                                                                                                                                                        |
 | ICD10WHO:A30     | Leprosy [Hansen disease]                                                                                                                                                                   |
 | ICD10WHO:A30.9   | Leprosy, unspecified                                                                                                                                                                       |
-| ICD10WHO:A27     | Leptospirosis                                                                                                                                                                              |
 | ICD10WHO:A27.0   | Leptospirosis icterohaemorrhagica                                                                                                                                                          |
 | ICD10WHO:A27.9   | Leptospirosis, unspecified                                                                                                                                                                 |
 | ICD10WHO:E79.1   | Lesch-Nyhan syndrome                                                                                                                                                                       |
@@ -5633,7 +5535,6 @@
 | ICD10WHO:N90.4   | Leukoplakia of vulva                                                                                                                                                                       |
 | ICD10WHO:L44.1   | Lichen nitidus                                                                                                                                                                             |
 | ICD10WHO:L66.1   | Lichen planopilaris                                                                                                                                                                        |
-| ICD10WHO:L43     | Lichen planus                                                                                                                                                                              |
 | ICD10WHO:L43.9   | Lichen planus, unspecified                                                                                                                                                                 |
 | ICD10WHO:L44.3   | Lichen ruber moniliformis                                                                                                                                                                  |
 | ICD10WHO:L90.0   | Lichen sclerosus et atrophicus                                                                                                                                                             |
@@ -5653,7 +5554,6 @@
 | ICD10WHO:Y57.1   | Lipotropic drugs                                                                                                                                                                           |
 | ICD10WHO:A32.1   | Listerial meningitis and meningoencephalitis                                                                                                                                               |
 | ICD10WHO:A32.7   | Listerial sepsis                                                                                                                                                                           |
-| ICD10WHO:A32     | Listeriosis                                                                                                                                                                                |
 | ICD10WHO:A32.9   | Listeriosis, unspecified                                                                                                                                                                   |
 | ICD10WHO:Z38     | Liveborn infants according to place of birth                                                                                                                                               |
 | ICD10WHO:L95.0   | Livedoid vasculitis                                                                                                                                                                        |
@@ -5725,7 +5625,6 @@
 | ICD10WHO:G54.4   | Lumbosacral root disorders, not elsewhere classified                                                                                                                                       |
 | ICD10WHO:J60-J70 | Lung diseases due to external agents                                                                                                                                                       |
 | ICD10WHO:Z94.2   | Lung transplant status                                                                                                                                                                     |
-| ICD10WHO:L93     | Lupus erythematosus                                                                                                                                                                        |
 | ICD10WHO:A69.2   | Lyme disease                                                                                                                                                                               |
 | ICD10WHO:D18.1   | Lymphangioma, any site                                                                                                                                                                     |
 | ICD10WHO:I89.1   | Lymphangitis                                                                                                                                                                               |
@@ -5755,7 +5654,6 @@
 | ICD10WHO:K90.4   | Malabsorption due to intolerance, not elsewhere classified                                                                                                                                 |
 | ICD10WHO:R53     | Malaise and fatigue                                                                                                                                                                        |
 | ICD10WHO:B53.1   | Malaria due to simian plasmodia                                                                                                                                                            |
-| ICD10WHO:N46     | Male infertility                                                                                                                                                                           |
 | ICD10WHO:Q56.1   | Male pseudohermaphroditism, not elsewhere classified                                                                                                                                       |
 | ICD10WHO:Q98.7   | Male with sex chromosome mosaicism                                                                                                                                                         |
 | ICD10WHO:Q98.6   | Male with structurally abnormal sex chromosome                                                                                                                                             |
@@ -6277,7 +6175,6 @@
 | ICD10WHO:C91.8   | Mature B-cell leukaemia Burkitt-type                                                                                                                                                       |
 | ICD10WHO:C84.9   | Mature T/NK-cell lymphoma, unspecified                                                                                                                                                     |
 | ICD10WHO:C84     | Mature T/NK-cell lymphomas                                                                                                                                                                 |
-| ICD10WHO:B05     | Measles                                                                                                                                                                                    |
 | ICD10WHO:B05.0   | Measles complicated by encephalitis                                                                                                                                                        |
 | ICD10WHO:B05.1   | Measles complicated by meningitis                                                                                                                                                          |
 | ICD10WHO:B05.3   | Measles complicated by otitis media                                                                                                                                                        |
@@ -6376,7 +6273,6 @@
 | ICD10WHO:A39.4   | Meningococcaemia, unspecified                                                                                                                                                              |
 | ICD10WHO:M01.0   | Meningococcal arthritis                                                                                                                                                                    |
 | ICD10WHO:A39.5   | Meningococcal heart disease                                                                                                                                                                |
-| ICD10WHO:A39     | Meningococcal infection                                                                                                                                                                    |
 | ICD10WHO:A39.9   | Meningococcal infection, unspecified                                                                                                                                                       |
 | ICD10WHO:A39.0   | Meningococcal meningitis                                                                                                                                                                   |
 | ICD10WHO:N95.1   | Menopausal and female climacteric states                                                                                                                                                   |
@@ -6514,7 +6410,6 @@
 | ICD10WHO:D74     | Methaemoglobinaemia                                                                                                                                                                        |
 | ICD10WHO:D74.9   | Methaemoglobinaemia, unspecified                                                                                                                                                           |
 | ICD10WHO:Y50.2   | Methylxanthines, not elsewhere classified                                                                                                                                                  |
-| ICD10WHO:Q02     | Microcephaly                                                                                                                                                                               |
 | ICD10WHO:Q18.7   | Microcheilia                                                                                                                                                                               |
 | ICD10WHO:Q11.2   | Microphthalmos                                                                                                                                                                             |
 | ICD10WHO:M31.7   | Microscopic polyangiitis                                                                                                                                                                   |
@@ -6548,7 +6443,6 @@
 | ICD10WHO:L74.2   | Miliaria profunda                                                                                                                                                                          |
 | ICD10WHO:L74.0   | Miliaria rubra                                                                                                                                                                             |
 | ICD10WHO:L74.3   | Miliaria, unspecified                                                                                                                                                                      |
-| ICD10WHO:A19     | Miliary tuberculosis                                                                                                                                                                       |
 | ICD10WHO:A19.9   | Miliary tuberculosis, unspecified                                                                                                                                                          |
 | ICD10WHO:Y54.9   | Mineral salts, not elsewhere classified                                                                                                                                                    |
 | ICD10WHO:Y54.1   | Mineralocorticoid antagonists [aldosterone antagonists]                                                                                                                                    |
@@ -6604,7 +6498,6 @@
 | ICD10WHO:B08.1   | Molluscum contagiosum                                                                                                                                                                      |
 | ICD10WHO:E61.5   | Molybdenum deficiency                                                                                                                                                                      |
 | ICD10WHO:P12.4   | Monitoring injury of scalp of newborn                                                                                                                                                      |
-| ICD10WHO:B04     | Monkeypox                                                                                                                                                                                  |
 | ICD10WHO:Y49.1   | Monoamine-oxidase-inhibitor antidepressants                                                                                                                                                |
 | ICD10WHO:M13.1   | Monoarthritis, not elsewhere classified                                                                                                                                                    |
 | ICD10WHO:D47.2   | Monoclonal gammopathy of undetermined significance (MGUS)                                                                                                                                  |
@@ -6626,7 +6519,6 @@
 | ICD10WHO:Q96.3   | Mosaicism, 45,X/46,XX or XY                                                                                                                                                                |
 | ICD10WHO:Q96.4   | Mosaicism, 45,X/other cell line(s) with abnormal sex chromosome                                                                                                                            |
 | ICD10WHO:Q97.2   | Mosaicism, lines with various numbers of X chromosomes                                                                                                                                     |
-| ICD10WHO:A83     | Mosquito-borne viral encephalitis                                                                                                                                                          |
 | ICD10WHO:A83.9   | Mosquito-borne viral encephalitis, unspecified                                                                                                                                             |
 | ICD10WHO:A92.9   | Mosquito-borne viral fever, unspecified                                                                                                                                                    |
 | ICD10WHO:T75.3   | Motion sickness                                                                                                                                                                            |
@@ -6781,7 +6673,6 @@
 | ICD10WHO:S61.7   | Multiple open wounds of wrist and hand                                                                                                                                                     |
 | ICD10WHO:T01.9   | Multiple open wounds, unspecified                                                                                                                                                          |
 | ICD10WHO:A66.1   | Multiple papillomata and wet crab yaws                                                                                                                                                     |
-| ICD10WHO:G35     | Multiple sclerosis                                                                                                                                                                         |
 | ICD10WHO:S30.7   | Multiple superficial injuries of abdomen, lower back and pelvis                                                                                                                            |
 | ICD10WHO:S90.7   | Multiple superficial injuries of ankle and foot                                                                                                                                            |
 | ICD10WHO:S50.7   | Multiple superficial injuries of forearm                                                                                                                                                   |
@@ -6815,7 +6706,6 @@
 | ICD10WHO:G70     | Myasthenia gravis and other myoneural disorders                                                                                                                                            |
 | ICD10WHO:G73.0   | Myasthenic syndromes in endocrine diseases                                                                                                                                                 |
 | ICD10WHO:G73.3   | Myasthenic syndromes in other diseases classified elsewhere                                                                                                                                |
-| ICD10WHO:B47     | Mycetoma                                                                                                                                                                                   |
 | ICD10WHO:B47.9   | Mycetoma, unspecified                                                                                                                                                                      |
 | ICD10WHO:A31.9   | Mycobacterial infection, unspecified                                                                                                                                                       |
 | ICD10WHO:A49.3   | Mycoplasma infection, unspecified site                                                                                                                                                     |
@@ -6830,7 +6720,6 @@
 | ICD10WHO:C92.9   | Myeloid leukaemia, unspecified                                                                                                                                                             |
 | ICD10WHO:C92.3   | Myeloid sarcoma                                                                                                                                                                            |
 | ICD10WHO:G99.2   | Myelopathy in diseases classified elsewhere                                                                                                                                                |
-| ICD10WHO:B87     | Myiasis                                                                                                                                                                                    |
 | ICD10WHO:B87.8   | Myiasis of other sites                                                                                                                                                                     |
 | ICD10WHO:B87.9   | Myiasis, unspecified                                                                                                                                                                       |
 | ICD10WHO:I51.5   | Myocardial degeneration                                                                                                                                                                    |
@@ -7054,7 +6943,6 @@
 | ICD10WHO:N14.3   | Nephropathy induced by heavy metals                                                                                                                                                        |
 | ICD10WHO:N14.1   | Nephropathy induced by other drugs, medicaments and biological substances                                                                                                                  |
 | ICD10WHO:N14.2   | Nephropathy induced by unspecified drug, medicament or biological substance                                                                                                                |
-| ICD10WHO:N04     | Nephrotic syndrome                                                                                                                                                                         |
 | ICD10WHO:N04.6   | Nephrotic syndrome : dense deposit disease                                                                                                                                                 |
 | ICD10WHO:N04.7   | Nephrotic syndrome : diffuse crescentic glomerulonephritis                                                                                                                                 |
 | ICD10WHO:N04.4   | Nephrotic syndrome : diffuse endocapillary proliferative glomerulonephritis                                                                                                                |
@@ -7103,7 +6991,6 @@
 | ICD10WHO:E52     | Niacin deficiency [pellagra]                                                                                                                                                               |
 | ICD10WHO:H53.6   | Night blindness                                                                                                                                                                            |
 | ICD10WHO:F51.5   | Nightmares                                                                                                                                                                                 |
-| ICD10WHO:A43     | Nocardiosis                                                                                                                                                                                |
 | ICD10WHO:A43.9   | Nocardiosis, unspecified                                                                                                                                                                   |
 | ICD10WHO:C81.0   | Nodular lymphocyte predominant Hodgkin lymphoma                                                                                                                                            |
 | ICD10WHO:C81.1   | Nodular sclerosis classical Hodgkin lymphoma                                                                                                                                               |
@@ -7198,7 +7085,6 @@
 | ICD10WHO:Z03.3   | Observation for suspected nervous system disorder                                                                                                                                          |
 | ICD10WHO:Z03.6   | Observation for suspected toxic effect from ingested substance                                                                                                                             |
 | ICD10WHO:Z03.0   | Observation for suspected tuberculosis                                                                                                                                                     |
-| ICD10WHO:F42     | Obsessive-compulsive disorder                                                                                                                                                              |
 | ICD10WHO:F42.9   | Obsessive-compulsive disorder, unspecified                                                                                                                                                 |
 | ICD10WHO:O88.0   | Obstetric air embolism                                                                                                                                                                     |
 | ICD10WHO:Y76     | Obstetric and gynaecological devices associated with adverse incidents                                                                                                                     |
@@ -7612,7 +7498,6 @@
 | ICD10WHO:N91.5   | Oligomenorrhoea, unspecified                                                                                                                                                               |
 | ICD10WHO:P38     | Omphalitis of newborn with or without mild haemorrhage                                                                                                                                     |
 | ICD10WHO:A98.1   | Omsk haemorrhagic fever                                                                                                                                                                    |
-| ICD10WHO:B73     | Onchocerciasis                                                                                                                                                                             |
 | ICD10WHO:L60.2   | Onychogryphosis                                                                                                                                                                            |
 | ICD10WHO:L60.1   | Onycholysis                                                                                                                                                                                |
 | ICD10WHO:S11.0   | Open wound involving larynx and trachea                                                                                                                                                    |
@@ -7697,7 +7582,6 @@
 | ICD10WHO:F91.3   | Oppositional defiant disorder                                                                                                                                                              |
 | ICD10WHO:H47.2   | Optic atrophy                                                                                                                                                                              |
 | ICD10WHO:H48.0   | Optic atrophy in diseases classified elsewhere                                                                                                                                             |
-| ICD10WHO:H46     | Optic neuritis                                                                                                                                                                             |
 | ICD10WHO:Y42.4   | Oral contraceptives                                                                                                                                                                        |
 | ICD10WHO:K12.3   | Oral mucositis (ulcerative)                                                                                                                                                                |
 | ICD10WHO:K13.5   | Oral submucous fibrosis                                                                                                                                                                    |
@@ -7739,11 +7623,9 @@
 | ICD10WHO:M93.9   | Osteochondropathy, unspecified                                                                                                                                                             |
 | ICD10WHO:Q78.0   | Osteogenesis imperfecta                                                                                                                                                                    |
 | ICD10WHO:M89.5   | Osteolysis                                                                                                                                                                                 |
-| ICD10WHO:M86     | Osteomyelitis                                                                                                                                                                              |
 | ICD10WHO:M46.2   | Osteomyelitis of vertebra                                                                                                                                                                  |
 | ICD10WHO:M86.9   | Osteomyelitis, unspecified                                                                                                                                                                 |
 | ICD10WHO:D47.4   | Osteomyelofibrosis                                                                                                                                                                         |
-| ICD10WHO:M87     | Osteonecrosis                                                                                                                                                                              |
 | ICD10WHO:M87.1   | Osteonecrosis due to drugs                                                                                                                                                                 |
 | ICD10WHO:M90.4   | Osteonecrosis due to haemoglobinopathy                                                                                                                                                     |
 | ICD10WHO:M87.2   | Osteonecrosis due to previous trauma                                                                                                                                                       |
@@ -9341,7 +9223,6 @@
 | ICD10WHO:A28     | Other zoonotic bacterial diseases, not elsewhere classified                                                                                                                                |
 | ICD10WHO:B46.8   | Other zygomycoses                                                                                                                                                                          |
 | ICD10WHO:T70.0   | Otitic barotrauma                                                                                                                                                                          |
-| ICD10WHO:H60     | Otitis externa                                                                                                                                                                             |
 | ICD10WHO:H62.0   | Otitis externa in bacterial diseases classified elsewhere                                                                                                                                  |
 | ICD10WHO:H62.2   | Otitis externa in mycoses                                                                                                                                                                  |
 | ICD10WHO:H62.4   | Otitis externa in other diseases classified elsewhere                                                                                                                                      |
@@ -9362,14 +9243,12 @@
 | ICD10WHO:Y56.6   | Otorhinolaryngological drugs and preparations                                                                                                                                              |
 | ICD10WHO:H92.2   | Otorrhagia                                                                                                                                                                                 |
 | ICD10WHO:H92.1   | Otorrhoea                                                                                                                                                                                  |
-| ICD10WHO:H80     | Otosclerosis                                                                                                                                                                               |
 | ICD10WHO:H80.0   | Otosclerosis involving oval window, nonobliterative                                                                                                                                        |
 | ICD10WHO:H80.1   | Otosclerosis involving oval window, obliterative                                                                                                                                           |
 | ICD10WHO:H80.9   | Otosclerosis, unspecified                                                                                                                                                                  |
 | ICD10WHO:H91.0   | Ototoxic hearing loss                                                                                                                                                                      |
 | ICD10WHO:Z37     | Outcome of delivery                                                                                                                                                                        |
 | ICD10WHO:Z37.9   | Outcome of delivery, unspecified                                                                                                                                                           |
-| ICD10WHO:E28     | Ovarian dysfunction                                                                                                                                                                        |
 | ICD10WHO:E28.9   | Ovarian dysfunction, unspecified                                                                                                                                                           |
 | ICD10WHO:E28.1   | Ovarian dysfunction: Androgen excess                                                                                                                                                       |
 | ICD10WHO:O00.2   | Ovarian pregnancy                                                                                                                                                                          |
@@ -9419,7 +9298,6 @@
 | ICD10WHO:L45     | Papulosquamous disorders in diseases classified elsewhere                                                                                                                                  |
 | ICD10WHO:O31.0   | Papyraceous fetus                                                                                                                                                                          |
 | ICD10WHO:V97.2   | Parachutist injured in air transport accident                                                                                                                                              |
-| ICD10WHO:B41     | Paracoccidioidomycosis                                                                                                                                                                     |
 | ICD10WHO:B41.9   | Paracoccidioidomycosis, unspecified                                                                                                                                                        |
 | ICD10WHO:R20.2   | Paraesthesia of skin                                                                                                                                                                       |
 | ICD10WHO:R43.2   | Parageusia                                                                                                                                                                                 |
@@ -9431,7 +9309,6 @@
 | ICD10WHO:R26.1   | Paralytic gait                                                                                                                                                                             |
 | ICD10WHO:K56.0   | Paralytic ileus                                                                                                                                                                            |
 | ICD10WHO:K56     | Paralytic ileus and intestinal obstruction without hernia                                                                                                                                  |
-| ICD10WHO:H49     | Paralytic strabismus                                                                                                                                                                       |
 | ICD10WHO:H49.9   | Paralytic strabismus, unspecified                                                                                                                                                          |
 | ICD10WHO:G83.9   | Paralytic syndrome, unspecified                                                                                                                                                            |
 | ICD10WHO:G13.0   | Paraneoplastic neuromyopathy and neuropathy                                                                                                                                                |
@@ -9439,7 +9316,6 @@
 | ICD10WHO:F20.0   | Paranoid schizophrenia                                                                                                                                                                     |
 | ICD10WHO:G82     | Paraplegia and tetraplegia                                                                                                                                                                 |
 | ICD10WHO:G82.2   | Paraplegia, unspecified                                                                                                                                                                    |
-| ICD10WHO:L41     | Parapsoriasis                                                                                                                                                                              |
 | ICD10WHO:L41.9   | Parapsoriasis, unspecified                                                                                                                                                                 |
 | ICD10WHO:H03.0   | Parasitic infestation of eyelid in diseases classified elsewhere                                                                                                                           |
 | ICD10WHO:H06.1   | Parasitic infestation of orbit in diseases classified elsewhere                                                                                                                            |
@@ -9452,7 +9328,6 @@
 | ICD10WHO:A01.4   | Paratyphoid fever, unspecified                                                                                                                                                             |
 | ICD10WHO:Z62.1   | Parental overprotection                                                                                                                                                                    |
 | ICD10WHO:Y48.1   | Parenteral anaesthetics                                                                                                                                                                    |
-| ICD10WHO:G20     | Parkinson disease                                                                                                                                                                          |
 | ICD10WHO:G22     | Parkinsonism in diseases classified elsewhere                                                                                                                                              |
 | ICD10WHO:R43.1   | Parosmia                                                                                                                                                                                   |
 | ICD10WHO:I48.0   | Paroxysmal atrial fibrillation                                                                                                                                                             |
@@ -9615,9 +9490,7 @@
 | ICD10WHO:K76.4   | Peliosis hepatis                                                                                                                                                                           |
 | ICD10WHO:R10.2   | Pelvic and perineal pain                                                                                                                                                                   |
 | ICD10WHO:I86.2   | Pelvic varices                                                                                                                                                                             |
-| ICD10WHO:L12     | Pemphigoid                                                                                                                                                                                 |
 | ICD10WHO:L12.9   | Pemphigoid, unspecified                                                                                                                                                                    |
-| ICD10WHO:L10     | Pemphigus                                                                                                                                                                                  |
 | ICD10WHO:L10.4   | Pemphigus erythematosus                                                                                                                                                                    |
 | ICD10WHO:L10.2   | Pemphigus foliaceus                                                                                                                                                                        |
 | ICD10WHO:L10.1   | Pemphigus vegetans                                                                                                                                                                         |
@@ -9674,9 +9547,7 @@
 | ICD10WHO:I73.9   | Peripheral vascular disease, unspecified                                                                                                                                                   |
 | ICD10WHO:Y52.7   | Peripheral vasodilators                                                                                                                                                                    |
 | ICD10WHO:K66.0   | Peritoneal adhesions                                                                                                                                                                       |
-| ICD10WHO:K65     | Peritonitis                                                                                                                                                                                |
 | ICD10WHO:K65.9   | Peritonitis, unspecified                                                                                                                                                                   |
-| ICD10WHO:J36     | Peritonsillar abscess                                                                                                                                                                      |
 | ICD10WHO:M76.7   | Peroneal tendinitis                                                                                                                                                                        |
 | ICD10WHO:I48.1   | Persistent atrial fibrillation                                                                                                                                                             |
 | ICD10WHO:Q43.7   | Persistent cloaca                                                                                                                                                                          |
@@ -9861,32 +9732,26 @@
 | ICD10WHO:L30.5   | Pityriasis alba                                                                                                                                                                            |
 | ICD10WHO:L41.1   | Pityriasis lichenoides chronica                                                                                                                                                            |
 | ICD10WHO:L41.0   | Pityriasis lichenoides et varioliformis acuta                                                                                                                                              |
-| ICD10WHO:L42     | Pityriasis rosea                                                                                                                                                                           |
 | ICD10WHO:L44.0   | Pityriasis rubra pilaris                                                                                                                                                                   |
 | ICD10WHO:B36.0   | Pityriasis versicolor                                                                                                                                                                      |
-| ICD10WHO:O44     | Placenta praevia                                                                                                                                                                           |
 | ICD10WHO:O44.0   | Placenta praevia specified as without haemorrhage                                                                                                                                          |
 | ICD10WHO:O44.1   | Placenta praevia with haemorrhage                                                                                                                                                          |
 | ICD10WHO:O43.9   | Placental disorder, unspecified                                                                                                                                                            |
 | ICD10WHO:O43     | Placental disorders                                                                                                                                                                        |
 | ICD10WHO:O43.0   | Placental transfusion syndromes                                                                                                                                                            |
 | ICD10WHO:Q67.3   | Plagiocephaly                                                                                                                                                                              |
-| ICD10WHO:A20     | Plague                                                                                                                                                                                     |
 | ICD10WHO:A20.3   | Plague meningitis                                                                                                                                                                          |
 | ICD10WHO:Y58.3   | Plague vaccine                                                                                                                                                                             |
 | ICD10WHO:A20.9   | Plague, unspecified                                                                                                                                                                        |
 | ICD10WHO:M72.2   | Plantar fascial fibromatosis                                                                                                                                                               |
 | ICD10WHO:C90.1   | Plasma cell leukaemia                                                                                                                                                                      |
 | ICD10WHO:Y44.7   | Plasma substitutes                                                                                                                                                                         |
-| ICD10WHO:B50     | Plasmodium falciparum malaria                                                                                                                                                              |
 | ICD10WHO:B50.0   | Plasmodium falciparum malaria with cerebral complications                                                                                                                                  |
 | ICD10WHO:B50.9   | Plasmodium falciparum malaria, unspecified                                                                                                                                                 |
-| ICD10WHO:B52     | Plasmodium malariae malaria                                                                                                                                                                |
 | ICD10WHO:B52.0   | Plasmodium malariae malaria with nephropathy                                                                                                                                               |
 | ICD10WHO:B52.8   | Plasmodium malariae malaria with other complications                                                                                                                                       |
 | ICD10WHO:B52.9   | Plasmodium malariae malaria without complication                                                                                                                                           |
 | ICD10WHO:B53.0   | Plasmodium ovale malaria                                                                                                                                                                   |
-| ICD10WHO:B51     | Plasmodium vivax malaria                                                                                                                                                                   |
 | ICD10WHO:B51.8   | Plasmodium vivax malaria with other complications                                                                                                                                          |
 | ICD10WHO:B51.0   | Plasmodium vivax malaria with rupture of spleen                                                                                                                                            |
 | ICD10WHO:B51.9   | Plasmodium vivax malaria without complication                                                                                                                                              |
@@ -9935,7 +9800,6 @@
 | ICD10WHO:J69.8   | Pneumonitis due to other solids and liquids                                                                                                                                                |
 | ICD10WHO:J69     | Pneumonitis due to solids and liquids                                                                                                                                                      |
 | ICD10WHO:P25.3   | Pneumopericardium originating in the perinatal period                                                                                                                                      |
-| ICD10WHO:J93     | Pneumothorax                                                                                                                                                                               |
 | ICD10WHO:P25.1   | Pneumothorax originating in the perinatal period                                                                                                                                           |
 | ICD10WHO:J93.9   | Pneumothorax, unspecified                                                                                                                                                                  |
 | ICD10WHO:L57.3   | Poikiloderma of Civatte                                                                                                                                                                    |
@@ -10123,13 +9987,11 @@
 | ICD10WHO:E28.2   | Polycystic ovarian syndrome                                                                                                                                                                |
 | ICD10WHO:P61.1   | Polycythaemia neonatorum                                                                                                                                                                   |
 | ICD10WHO:D45     | Polycythaemia vera                                                                                                                                                                         |
-| ICD10WHO:Q69     | Polydactyly                                                                                                                                                                                |
 | ICD10WHO:Q69.9   | Polydactyly, unspecified                                                                                                                                                                   |
 | ICD10WHO:R63.1   | Polydipsia                                                                                                                                                                                 |
 | ICD10WHO:E31     | Polyglandular dysfunction                                                                                                                                                                  |
 | ICD10WHO:E31.9   | Polyglandular dysfunction, unspecified                                                                                                                                                     |
 | ICD10WHO:E31.1   | Polyglandular hyperfunction                                                                                                                                                                |
-| ICD10WHO:O40     | Polyhydramnios                                                                                                                                                                             |
 | ICD10WHO:L56.4   | Polymorphous light eruption                                                                                                                                                                |
 | ICD10WHO:M35.3   | Polymyalgia rheumatica                                                                                                                                                                     |
 | ICD10WHO:M33.2   | Polymyositis                                                                                                                                                                               |
@@ -10164,7 +10026,6 @@
 | ICD10WHO:R35     | Polyuria                                                                                                                                                                                   |
 | ICD10WHO:E80.1   | Porphyria cutanea tarda                                                                                                                                                                    |
 | ICD10WHO:K76.6   | Portal hypertension                                                                                                                                                                        |
-| ICD10WHO:I81     | Portal vein thrombosis                                                                                                                                                                     |
 | ICD10WHO:Q26.6   | Portal vein-hepatic artery fistula                                                                                                                                                         |
 | ICD10WHO:F20.4   | Post-schizophrenic depression                                                                                                                                                              |
 | ICD10WHO:P08.2   | Post-term infant, not heavy for gestational age                                                                                                                                            |
@@ -10459,7 +10320,6 @@
 | ICD10WHO:L66.0   | Pseudopelade                                                                                                                                                                               |
 | ICD10WHO:M72.4   | Pseudosarcomatous fibromatosis                                                                                                                                                             |
 | ICD10WHO:M76.1   | Psoas tendinitis                                                                                                                                                                           |
-| ICD10WHO:L40     | Psoriasis                                                                                                                                                                                  |
 | ICD10WHO:L40.0   | Psoriasis vulgaris                                                                                                                                                                         |
 | ICD10WHO:L40.9   | Psoriasis, unspecified                                                                                                                                                                     |
 | ICD10WHO:M07     | Psoriatic and enteropathic arthropathies                                                                                                                                                   |
@@ -10487,7 +10347,6 @@
 | ICD10WHO:O29.0   | Pulmonary complications of anaesthesia during pregnancy                                                                                                                                    |
 | ICD10WHO:O89.0   | Pulmonary complications of anaesthesia during the puerperium                                                                                                                               |
 | ICD10WHO:B45.0   | Pulmonary cryptococcosis                                                                                                                                                                   |
-| ICD10WHO:I26     | Pulmonary embolism                                                                                                                                                                         |
 | ICD10WHO:I26.0   | Pulmonary embolism with mention of acute cor pulmonale                                                                                                                                     |
 | ICD10WHO:I26.9   | Pulmonary embolism without mention of acute cor pulmonale                                                                                                                                  |
 | ICD10WHO:J82     | Pulmonary eosinophilia, not elsewhere classified                                                                                                                                           |
@@ -10526,7 +10385,6 @@
 | ICD10WHO:L40.3   | Pustulosis palmaris et plantaris                                                                                                                                                           |
 | ICD10WHO:K31.3   | Pylorospasm, not elsewhere classified                                                                                                                                                      |
 | ICD10WHO:L08.0   | Pyoderma                                                                                                                                                                                   |
-| ICD10WHO:L88     | Pyoderma gangrenosum                                                                                                                                                                       |
 | ICD10WHO:M00     | Pyogenic arthritis                                                                                                                                                                         |
 | ICD10WHO:M00.9   | Pyogenic arthritis, unspecified                                                                                                                                                            |
 | ICD10WHO:L98.0   | Pyogenic granuloma                                                                                                                                                                         |
@@ -10537,17 +10395,14 @@
 | ICD10WHO:O75.2   | Pyrexia during labour, not elsewhere classified                                                                                                                                            |
 | ICD10WHO:O86.4   | Pyrexia of unknown origin following delivery                                                                                                                                               |
 | ICD10WHO:E53.1   | Pyridoxine deficiency                                                                                                                                                                      |
-| ICD10WHO:A78     | Q fever                                                                                                                                                                                    |
 | ICD10WHO:O30.2   | Quadruplet pregnancy                                                                                                                                                                       |
 | ICD10WHO:D69.1   | Qualitative platelet defects                                                                                                                                                               |
-| ICD10WHO:A82     | Rabies                                                                                                                                                                                     |
 | ICD10WHO:A82.9   | Rabies, unspecified                                                                                                                                                                        |
 | ICD10WHO:M65.4   | Radial styloid tenosynovitis [de Quervain]                                                                                                                                                 |
 | ICD10WHO:K62.7   | Radiation proctitis                                                                                                                                                                        |
 | ICD10WHO:L55-L59 | Radiation-related disorders of the skin and subcutaneous tissue                                                                                                                            |
 | ICD10WHO:K04.8   | Radicular cyst                                                                                                                                                                             |
 | ICD10WHO:M54.1   | Radiculopathy                                                                                                                                                                              |
-| ICD10WHO:L58     | Radiodermatitis                                                                                                                                                                            |
 | ICD10WHO:L58.9   | Radiodermatitis, unspecified                                                                                                                                                               |
 | ICD10WHO:Y78     | Radiological devices associated with adverse incidents                                                                                                                                     |
 | ICD10WHO:Y78.0   | Radiological devices associated with adverse incidents : diagnostic and monitoring devices                                                                                                 |
@@ -10791,7 +10646,6 @@
 | ICD10WHO:A92.4   | Rift Valley fever                                                                                                                                                                          |
 | ICD10WHO:I45.0   | Right fascicular block                                                                                                                                                                     |
 | ICD10WHO:A83.6   | Rocio virus disease                                                                                                                                                                        |
-| ICD10WHO:L71     | Rosacea                                                                                                                                                                                    |
 | ICD10WHO:L71.9   | Rosacea, unspecified                                                                                                                                                                       |
 | ICD10WHO:B33.1   | Ross River disease                                                                                                                                                                         |
 | ICD10WHO:A08.0   | Rotaviral enteritis                                                                                                                                                                        |
@@ -10833,7 +10687,6 @@
 | ICD10WHO:N70     | Salpingitis and oophoritis                                                                                                                                                                 |
 | ICD10WHO:N70.9   | Salpingitis and oophoritis, unspecified                                                                                                                                                    |
 | ICD10WHO:A93.1   | Sandfly fever                                                                                                                                                                              |
-| ICD10WHO:D86     | Sarcoidosis                                                                                                                                                                                |
 | ICD10WHO:D86.0   | Sarcoidosis of lung                                                                                                                                                                        |
 | ICD10WHO:D86.2   | Sarcoidosis of lung with sarcoidosis of lymph nodes                                                                                                                                        |
 | ICD10WHO:D86.1   | Sarcoidosis of lymph nodes                                                                                                                                                                 |
@@ -10841,9 +10694,7 @@
 | ICD10WHO:D86.3   | Sarcoidosis of skin                                                                                                                                                                        |
 | ICD10WHO:D86.9   | Sarcoidosis, unspecified                                                                                                                                                                   |
 | ICD10WHO:C96.4   | Sarcoma of dendritic cells (accessory cells)                                                                                                                                               |
-| ICD10WHO:B86     | Scabies                                                                                                                                                                                    |
 | ICD10WHO:L90.5   | Scar conditions and fibrosis of skin                                                                                                                                                       |
-| ICD10WHO:A38     | Scarlet fever                                                                                                                                                                              |
 | ICD10WHO:B65     | Schistosomiasis [bilharziasis]                                                                                                                                                             |
 | ICD10WHO:B65.0   | Schistosomiasis due to Schistosoma haematobium [urinary schistosomiasis]                                                                                                                   |
 | ICD10WHO:B65.2   | Schistosomiasis due to Schistosoma japonicum                                                                                                                                               |
@@ -10855,7 +10706,6 @@
 | ICD10WHO:F25.9   | Schizoaffective disorder, unspecified                                                                                                                                                      |
 | ICD10WHO:F25     | Schizoaffective disorders                                                                                                                                                                  |
 | ICD10WHO:F60.1   | Schizoid personality disorder                                                                                                                                                              |
-| ICD10WHO:F20     | Schizophrenia                                                                                                                                                                              |
 | ICD10WHO:F20-F29 | Schizophrenia, schizotypal and delusional disorders                                                                                                                                        |
 | ICD10WHO:F20.9   | Schizophrenia, unspecified                                                                                                                                                                 |
 | ICD10WHO:F21     | Schizotypal disorder                                                                                                                                                                       |
@@ -10866,7 +10716,6 @@
 | ICD10WHO:H15.0   | Scleritis                                                                                                                                                                                  |
 | ICD10WHO:H19.0   | Scleritis and episcleritis in diseases classified elsewhere                                                                                                                                |
 | ICD10WHO:L94.3   | Sclerodactyly                                                                                                                                                                              |
-| ICD10WHO:M41     | Scoliosis                                                                                                                                                                                  |
 | ICD10WHO:M41.9   | Scoliosis, unspecified                                                                                                                                                                     |
 | ICD10WHO:D53.2   | Scorbutic anaemia                                                                                                                                                                          |
 | ICD10WHO:I86.1   | Scrotal varices                                                                                                                                                                            |
@@ -10891,7 +10740,6 @@
 | ICD10WHO:N94.5   | Secondary dysmenorrhoea                                                                                                                                                                    |
 | ICD10WHO:E26.1   | Secondary hyperaldosteronism                                                                                                                                                               |
 | ICD10WHO:E21.1   | Secondary hyperparathyroidism, not elsewhere classified                                                                                                                                    |
-| ICD10WHO:I15     | Secondary hypertension                                                                                                                                                                     |
 | ICD10WHO:I15.9   | Secondary hypertension, unspecified                                                                                                                                                        |
 | ICD10WHO:E73.1   | Secondary lactase deficiency                                                                                                                                                               |
 | ICD10WHO:C79.7   | Secondary malignant neoplasm of adrenal gland                                                                                                                                              |
@@ -10935,7 +10783,6 @@
 | ICD10WHO:D80.2   | Selective deficiency of immunoglobulin A [IgA]                                                                                                                                             |
 | ICD10WHO:D80.3   | Selective deficiency of immunoglobulin G [IgG] subclasses                                                                                                                                  |
 | ICD10WHO:D80.4   | Selective deficiency of immunoglobulin M [IgM]                                                                                                                                             |
-| ICD10WHO:H25     | Senile cataract                                                                                                                                                                            |
 | ICD10WHO:H25.2   | Senile cataract, morgagnian type                                                                                                                                                           |
 | ICD10WHO:H25.9   | Senile cataract, unspecified                                                                                                                                                               |
 | ICD10WHO:G31.1   | Senile degeneration of brain, not elsewhere classified                                                                                                                                     |
@@ -11113,7 +10960,6 @@
 | ICD10WHO:F66.0   | Sexual maturation disorder                                                                                                                                                                 |
 | ICD10WHO:F66.2   | Sexual relationship disorder                                                                                                                                                               |
 | ICD10WHO:A56.8   | Sexually transmitted chlamydial infection of other sites                                                                                                                                   |
-| ICD10WHO:A03     | Shigellosis                                                                                                                                                                                |
 | ICD10WHO:A03.2   | Shigellosis due to Shigella boydii                                                                                                                                                         |
 | ICD10WHO:A03.0   | Shigellosis due to Shigella dysenteriae                                                                                                                                                    |
 | ICD10WHO:A03.1   | Shigellosis due to Shigella flexneri                                                                                                                                                       |
@@ -11182,7 +11028,6 @@
 | ICD10WHO:N27.0   | Small kidney, unilateral                                                                                                                                                                   |
 | ICD10WHO:N27.9   | Small kidney, unspecified                                                                                                                                                                  |
 | ICD10WHO:L41.3   | Small plaque parapsoriasis                                                                                                                                                                 |
-| ICD10WHO:B03     | Smallpox                                                                                                                                                                                   |
 | ICD10WHO:R06.7   | Sneezing                                                                                                                                                                                   |
 | ICD10WHO:F93.2   | Social anxiety disorder of childhood                                                                                                                                                       |
 | ICD10WHO:Z60.4   | Social exclusion and rejection                                                                                                                                                             |
@@ -11260,7 +11105,6 @@
 | ICD10WHO:N43.4   | Spermatocele                                                                                                                                                                               |
 | ICD10WHO:Q12.4   | Spherophakia                                                                                                                                                                               |
 | ICD10WHO:E75.3   | Sphingolipidosis, unspecified                                                                                                                                                              |
-| ICD10WHO:Q05     | Spina bifida                                                                                                                                                                               |
 | ICD10WHO:Q76.0   | Spina bifida occulta                                                                                                                                                                       |
 | ICD10WHO:Q05.9   | Spina bifida, unspecified                                                                                                                                                                  |
 | ICD10WHO:O74.5   | Spinal and epidural anaesthesia-induced headache during labour and delivery                                                                                                                |
@@ -11285,7 +11129,6 @@
 | ICD10WHO:M49.8   | Spondylopathy in other diseases classified elsewhere                                                                                                                                       |
 | ICD10WHO:M49.3   | Spondylopathy in other infectious and parasitic diseases classified elsewhere                                                                                                              |
 | ICD10WHO:M48.9   | Spondylopathy, unspecified                                                                                                                                                                 |
-| ICD10WHO:M47     | Spondylosis                                                                                                                                                                                |
 | ICD10WHO:M47.9   | Spondylosis, unspecified                                                                                                                                                                   |
 | ICD10WHO:O03     | Spontaneous abortion                                                                                                                                                                       |
 | ICD10WHO:O03.6   | Spontaneous abortion : complete or unspecified, complicated by delayed or excessive haemorrhage                                                                                            |
@@ -11307,7 +11150,6 @@
 | ICD10WHO:M66.5   | Spontaneous rupture of unspecified tendon                                                                                                                                                  |
 | ICD10WHO:J93.0   | Spontaneous tension pneumothorax                                                                                                                                                           |
 | ICD10WHO:O80.0   | Spontaneous vertex delivery                                                                                                                                                                |
-| ICD10WHO:B42     | Sporotrichosis                                                                                                                                                                             |
 | ICD10WHO:B42.9   | Sporotrichosis, unspecified                                                                                                                                                                |
 | ICD10WHO:A77     | Spotted fever [tick-borne rickettsioses]                                                                                                                                                   |
 | ICD10WHO:A77.3   | Spotted fever due to Rickettsia australis                                                                                                                                                  |
@@ -11350,11 +11192,9 @@
 | ICD10WHO:M00.0   | Staphylococcal arthritis and polyarthritis                                                                                                                                                 |
 | ICD10WHO:A49.0   | Staphylococcal infection, unspecified site                                                                                                                                                 |
 | ICD10WHO:G00.3   | Staphylococcal meningitis                                                                                                                                                                  |
-| ICD10WHO:L00     | Staphylococcal scalded skin syndrome                                                                                                                                                       |
 | ICD10WHO:B95.6   | Staphylococcus aureus as the cause of diseases classified to other chapters                                                                                                                |
 | ICD10WHO:R45.7   | State of emotional shock and stress, unspecified                                                                                                                                           |
 | ICD10WHO:N95.3   | States associated with artificial menopause                                                                                                                                                |
-| ICD10WHO:J46     | Status asthmaticus                                                                                                                                                                         |
 | ICD10WHO:G41     | Status epilepticus                                                                                                                                                                         |
 | ICD10WHO:G41.9   | Status epilepticus, unspecified                                                                                                                                                            |
 | ICD10WHO:G43.2   | Status migrainosus                                                                                                                                                                         |
@@ -11397,7 +11237,6 @@
 | ICD10WHO:W22     | Striking against or struck by other object(s)                                                                                                                                              |
 | ICD10WHO:W21     | Striking against or struck by sports equipment                                                                                                                                             |
 | ICD10WHO:I64     | Stroke, not specified as haemorrhage or infarction                                                                                                                                         |
-| ICD10WHO:B78     | Strongyloidiasis                                                                                                                                                                           |
 | ICD10WHO:B78.9   | Strongyloidiasis, unspecified                                                                                                                                                              |
 | ICD10WHO:W20     | Struck by thrown, projected or falling object(s)                                                                                                                                           |
 | ICD10WHO:R40.1   | Stupor                                                                                                                                                                                     |
@@ -11452,7 +11291,6 @@
 | ICD10WHO:R95.0   | Sudden infant death syndrome with mention of autopsy                                                                                                                                       |
 | ICD10WHO:R95.9   | Sudden infant death syndrome without mention of autopsy                                                                                                                                    |
 | ICD10WHO:Y41.0   | Sulfonamides                                                                                                                                                                               |
-| ICD10WHO:L55     | Sunburn                                                                                                                                                                                    |
 | ICD10WHO:L55.0   | Sunburn of first degree                                                                                                                                                                    |
 | ICD10WHO:L55.1   | Sunburn of second degree                                                                                                                                                                   |
 | ICD10WHO:L55.2   | Sunburn of third degree                                                                                                                                                                    |
@@ -11591,17 +11429,14 @@
 | ICD10WHO:M36     | Systemic disorders of connective tissue in diseases classified elsewhere                                                                                                                   |
 | ICD10WHO:M36.8   | Systemic disorders of connective tissue in other diseases classified elsewhere                                                                                                             |
 | ICD10WHO:M35.9   | Systemic involvement of connective tissue, unspecified                                                                                                                                     |
-| ICD10WHO:M32     | Systemic lupus erythematosus                                                                                                                                                               |
 | ICD10WHO:M32.1   | Systemic lupus erythematosus with organ or system involvement                                                                                                                              |
 | ICD10WHO:M32.9   | Systemic lupus erythematosus, unspecified                                                                                                                                                  |
-| ICD10WHO:M34     | Systemic sclerosis                                                                                                                                                                         |
 | ICD10WHO:M34.2   | Systemic sclerosis induced by drugs and chemicals                                                                                                                                          |
 | ICD10WHO:M34.9   | Systemic sclerosis, unspecified                                                                                                                                                            |
 | ICD10WHO:C84.1   | Sézary disease                                                                                                                                                                             |
 | ICD10WHO:R00.0   | Tachycardia, unspecified                                                                                                                                                                   |
 | ICD10WHO:B68.1   | Taenia saginata taeniasis                                                                                                                                                                  |
 | ICD10WHO:B68.0   | Taenia solium taeniasis                                                                                                                                                                    |
-| ICD10WHO:B68     | Taeniasis                                                                                                                                                                                  |
 | ICD10WHO:B68.9   | Taeniasis, unspecified                                                                                                                                                                     |
 | ICD10WHO:Q66.4   | Talipes calcaneovalgus                                                                                                                                                                     |
 | ICD10WHO:Q66.1   | Talipes calcaneovarus                                                                                                                                                                      |
@@ -11622,7 +11457,6 @@
 | ICD10WHO:E29.9   | Testicular dysfunction, unspecified                                                                                                                                                        |
 | ICD10WHO:E29.0   | Testicular hyperfunction                                                                                                                                                                   |
 | ICD10WHO:E29.1   | Testicular hypofunction                                                                                                                                                                    |
-| ICD10WHO:A33     | Tetanus neonatorum                                                                                                                                                                         |
 | ICD10WHO:Y58.4   | Tetanus vaccine                                                                                                                                                                            |
 | ICD10WHO:R29.0   | Tetany                                                                                                                                                                                     |
 | ICD10WHO:Y40.4   | Tetracyclines                                                                                                                                                                              |
@@ -11658,7 +11492,6 @@
 | ICD10WHO:M31.1   | Thrombotic microangiopathy                                                                                                                                                                 |
 | ICD10WHO:E05.5   | Thyroid crisis or storm                                                                                                                                                                    |
 | ICD10WHO:Y42.1   | Thyroid hormones and substitutes                                                                                                                                                           |
-| ICD10WHO:E06     | Thyroiditis                                                                                                                                                                                |
 | ICD10WHO:E06.9   | Thyroiditis, unspecified                                                                                                                                                                   |
 | ICD10WHO:E05     | Thyrotoxicosis [hyperthyroidism]                                                                                                                                                           |
 | ICD10WHO:E05.4   | Thyrotoxicosis factitia                                                                                                                                                                    |
@@ -11797,7 +11630,6 @@
 | ICD10WHO:T63.3   | Toxic effect: Venom of spider                                                                                                                                                              |
 | ICD10WHO:T56.5   | Toxic effect: Zinc and its compounds                                                                                                                                                       |
 | ICD10WHO:T51-T65 | Toxic effects of substances chiefly nonmedicinal as to source                                                                                                                              |
-| ICD10WHO:G92     | Toxic encephalopathy                                                                                                                                                                       |
 | ICD10WHO:L51.2   | Toxic epidermal necrolysis [Lyell]                                                                                                                                                         |
 | ICD10WHO:L53.0   | Toxic erythema                                                                                                                                                                             |
 | ICD10WHO:K52.1   | Toxic gastroenteritis and colitis                                                                                                                                                          |
@@ -11821,13 +11653,11 @@
 | ICD10WHO:B58.1   | Toxoplasma hepatitis                                                                                                                                                                       |
 | ICD10WHO:B58.2   | Toxoplasma meningoencephalitis                                                                                                                                                             |
 | ICD10WHO:B58.0   | Toxoplasma oculopathy                                                                                                                                                                      |
-| ICD10WHO:B58     | Toxoplasmosis                                                                                                                                                                              |
 | ICD10WHO:B58.8   | Toxoplasmosis with other organ involvement                                                                                                                                                 |
 | ICD10WHO:B58.9   | Toxoplasmosis, unspecified                                                                                                                                                                 |
 | ICD10WHO:P26.0   | Tracheobronchial haemorrhage originating in the perinatal period                                                                                                                           |
 | ICD10WHO:J95.0   | Tracheostomy malfunction                                                                                                                                                                   |
 | ICD10WHO:Z93.0   | Tracheostomy status                                                                                                                                                                        |
-| ICD10WHO:A71     | Trachoma                                                                                                                                                                                   |
 | ICD10WHO:A71.9   | Trachoma, unspecified                                                                                                                                                                      |
 | ICD10WHO:H33.4   | Traction detachment of retina                                                                                                                                                              |
 | ICD10WHO:V87     | Traffic accident of specified type but victim's mode of transport unknown                                                                                                                  |
@@ -11940,14 +11770,11 @@
 | ICD10WHO:R25.1   | Tremor, unspecified                                                                                                                                                                        |
 | ICD10WHO:A79.0   | Trench fever                                                                                                                                                                               |
 | ICD10WHO:L72.1   | Trichilemmal cyst                                                                                                                                                                          |
-| ICD10WHO:B75     | Trichinellosis                                                                                                                                                                             |
-| ICD10WHO:A59     | Trichomoniasis                                                                                                                                                                             |
 | ICD10WHO:A59.8   | Trichomoniasis of other sites                                                                                                                                                              |
 | ICD10WHO:A59.9   | Trichomoniasis, unspecified                                                                                                                                                                |
 | ICD10WHO:L67.0   | Trichorrhexis nodosa                                                                                                                                                                       |
 | ICD10WHO:B81.2   | Trichostrongyliasis                                                                                                                                                                        |
 | ICD10WHO:F63.3   | Trichotillomania                                                                                                                                                                           |
-| ICD10WHO:B79     | Trichuriasis                                                                                                                                                                               |
 | ICD10WHO:I07.1   | Tricuspid insufficiency                                                                                                                                                                    |
 | ICD10WHO:I07.0   | Tricuspid stenosis                                                                                                                                                                         |
 | ICD10WHO:I07.2   | Tricuspid stenosis with insufficiency                                                                                                                                                      |
@@ -11974,7 +11801,6 @@
 | ICD10WHO:K90.1   | Tropical sprue                                                                                                                                                                             |
 | ICD10WHO:O00.1   | Tubal pregnancy                                                                                                                                                                            |
 | ICD10WHO:A30.1   | Tuberculoid leprosy                                                                                                                                                                        |
-| ICD10WHO:A15-A19 | Tuberculosis                                                                                                                                                                               |
 | ICD10WHO:O98.0   | Tuberculosis complicating pregnancy, childbirth and the puerperium                                                                                                                         |
 | ICD10WHO:A18.7   | Tuberculosis of adrenal glands                                                                                                                                                             |
 | ICD10WHO:M90.0   | Tuberculosis of bone                                                                                                                                                                       |
@@ -12017,7 +11843,6 @@
 | ICD10WHO:A21.9   | Tularaemia, unspecified                                                                                                                                                                    |
 | ICD10WHO:E88.3   | Tumour lysis syndrome                                                                                                                                                                      |
 | ICD10WHO:B88.1   | Tungiasis [sandflea infestation]                                                                                                                                                           |
-| ICD10WHO:Q96     | Turner syndrome                                                                                                                                                                            |
 | ICD10WHO:Q96.9   | Turner syndrome, unspecified                                                                                                                                                               |
 | ICD10WHO:O30.0   | Twin pregnancy                                                                                                                                                                             |
 | ICD10WHO:Z38.3   | Twin, born in hospital                                                                                                                                                                     |
@@ -12027,7 +11852,6 @@
 | ICD10WHO:Z37.4   | Twins, both stillborn                                                                                                                                                                      |
 | ICD10WHO:Z37.3   | Twins, one liveborn and one stillborn                                                                                                                                                      |
 | ICD10WHO:H74.0   | Tympanosclerosis                                                                                                                                                                           |
-| ICD10WHO:E10     | Type 1 diabetes mellitus                                                                                                                                                                   |
 | ICD10WHO:E10.0   | Type 1 diabetes mellitus with coma                                                                                                                                                         |
 | ICD10WHO:E10.1   | Type 1 diabetes mellitus with ketoacidosis                                                                                                                                                 |
 | ICD10WHO:E10.7   | Type 1 diabetes mellitus with multiple complications                                                                                                                                       |
@@ -12038,7 +11862,6 @@
 | ICD10WHO:E10.2   | Type 1 diabetes mellitus with renal complications                                                                                                                                          |
 | ICD10WHO:E10.8   | Type 1 diabetes mellitus with unspecified complications                                                                                                                                    |
 | ICD10WHO:E10.9   | Type 1 diabetes mellitus without complications                                                                                                                                             |
-| ICD10WHO:E11     | Type 2 diabetes mellitus                                                                                                                                                                   |
 | ICD10WHO:E11.0   | Type 2 diabetes mellitus with coma                                                                                                                                                         |
 | ICD10WHO:E11.1   | Type 2 diabetes mellitus with ketoacidosis                                                                                                                                                 |
 | ICD10WHO:E11.7   | Type 2 diabetes mellitus with multiple complications                                                                                                                                       |
@@ -12068,7 +11891,6 @@
 | ICD10WHO:K51.0   | Ulcerative (chronic) pancolitis                                                                                                                                                            |
 | ICD10WHO:K51.2   | Ulcerative (chronic) proctitis                                                                                                                                                             |
 | ICD10WHO:K51.3   | Ulcerative (chronic) rectosigmoiditis                                                                                                                                                      |
-| ICD10WHO:K51     | Ulcerative colitis                                                                                                                                                                         |
 | ICD10WHO:K51.9   | Ulcerative colitis, unspecified                                                                                                                                                            |
 | ICD10WHO:A21.0   | Ulceroglandular tularaemia                                                                                                                                                                 |
 | ICD10WHO:V95.1   | Ultralight, microlight or powered-glider accident injuring occupant                                                                                                                        |
@@ -12294,7 +12116,6 @@
 | ICD10WHO:N37     | Urethral disorders in diseases classified elsewhere                                                                                                                                        |
 | ICD10WHO:N36.1   | Urethral diverticulum                                                                                                                                                                      |
 | ICD10WHO:N36.0   | Urethral fistula                                                                                                                                                                           |
-| ICD10WHO:N35     | Urethral stricture                                                                                                                                                                         |
 | ICD10WHO:N35.9   | Urethral stricture, unspecified                                                                                                                                                            |
 | ICD10WHO:N34.3   | Urethral syndrome, unspecified                                                                                                                                                             |
 | ICD10WHO:N34     | Urethritis and urethral syndrome                                                                                                                                                           |
@@ -12305,8 +12126,6 @@
 | ICD10WHO:O86.2   | Urinary tract infection following delivery                                                                                                                                                 |
 | ICD10WHO:N39.0   | Urinary tract infection, site not specified                                                                                                                                                |
 | ICD10WHO:A59.0   | Urogenital trichomoniasis                                                                                                                                                                  |
-| ICD10WHO:N20-N23 | Urolithiasis                                                                                                                                                                               |
-| ICD10WHO:L50     | Urticaria                                                                                                                                                                                  |
 | ICD10WHO:L50-L54 | Urticaria and erythema                                                                                                                                                                     |
 | ICD10WHO:L50.2   | Urticaria due to cold and heat                                                                                                                                                             |
 | ICD10WHO:L50.9   | Urticaria, unspecified                                                                                                                                                                     |
@@ -12339,7 +12158,6 @@
 | ICD10WHO:M21.1   | Varus deformity, not elsewhere classified                                                                                                                                                  |
 | ICD10WHO:T81.7   | Vascular complications following a procedure, not elsewhere classified                                                                                                                     |
 | ICD10WHO:T80.1   | Vascular complications following infusion, transfusion and therapeutic injection                                                                                                           |
-| ICD10WHO:F01     | Vascular dementia                                                                                                                                                                          |
 | ICD10WHO:F01.0   | Vascular dementia of acute onset                                                                                                                                                           |
 | ICD10WHO:F01.9   | Vascular dementia, unspecified                                                                                                                                                             |
 | ICD10WHO:K55.9   | Vascular disorder of intestine, unspecified                                                                                                                                                |
@@ -12395,15 +12213,12 @@
 | ICD10WHO:B97     | Viral agents as the cause of diseases classified to other chapters                                                                                                                         |
 | ICD10WHO:A08     | Viral and other specified intestinal infections                                                                                                                                            |
 | ICD10WHO:B33.2   | Viral carditis                                                                                                                                                                             |
-| ICD10WHO:B30     | Viral conjunctivitis                                                                                                                                                                       |
 | ICD10WHO:B30.9   | Viral conjunctivitis, unspecified                                                                                                                                                          |
-| ICD10WHO:B15-B19 | Viral hepatitis                                                                                                                                                                            |
 | ICD10WHO:O98.4   | Viral hepatitis complicating pregnancy, childbirth and the puerperium                                                                                                                      |
 | ICD10WHO:B34     | Viral infection of unspecified site                                                                                                                                                        |
 | ICD10WHO:B34.9   | Viral infection, unspecified                                                                                                                                                               |
 | ICD10WHO:B00-B09 | Viral infections characterized by skin and mucous membrane lesions                                                                                                                         |
 | ICD10WHO:A08.4   | Viral intestinal infection, unspecified                                                                                                                                                    |
-| ICD10WHO:A87     | Viral meningitis                                                                                                                                                                           |
 | ICD10WHO:A87.9   | Viral meningitis, unspecified                                                                                                                                                              |
 | ICD10WHO:B30.2   | Viral pharyngoconjunctivitis                                                                                                                                                               |
 | ICD10WHO:J12     | Viral pneumonia, not elsewhere classified                                                                                                                                                  |
@@ -12420,7 +12235,6 @@
 | ICD10WHO:H53.4   | Visual field defects                                                                                                                                                                       |
 | ICD10WHO:R44.1   | Visual hallucinations                                                                                                                                                                      |
 | ICD10WHO:H54     | Visual impairment including blindness (binocular or monocular)                                                                                                                             |
-| ICD10WHO:E50     | Vitamin A deficiency                                                                                                                                                                       |
 | ICD10WHO:E50.1   | Vitamin A deficiency with Bitot spot and conjunctival xerosis                                                                                                                              |
 | ICD10WHO:E50.0   | Vitamin A deficiency with conjunctival xerosis                                                                                                                                             |
 | ICD10WHO:E50.3   | Vitamin A deficiency with corneal ulceration and xerosis                                                                                                                                   |
@@ -12435,11 +12249,9 @@
 | ICD10WHO:D51.1   | Vitamin B 12 deficiency anaemia due to selective vitamin B 12 malabsorption with proteinuria                                                                                               |
 | ICD10WHO:D51.9   | Vitamin B 12 deficiency anaemia, unspecified                                                                                                                                               |
 | ICD10WHO:E53.9   | Vitamin B deficiency, unspecified                                                                                                                                                          |
-| ICD10WHO:E55     | Vitamin D deficiency                                                                                                                                                                       |
 | ICD10WHO:E55.9   | Vitamin D deficiency, unspecified                                                                                                                                                          |
 | ICD10WHO:E56.9   | Vitamin deficiency, unspecified                                                                                                                                                            |
 | ICD10WHO:Y57.7   | Vitamins, not elsewhere classified                                                                                                                                                         |
-| ICD10WHO:L80     | Vitiligo                                                                                                                                                                                   |
 | ICD10WHO:H43.1   | Vitreous haemorrhage                                                                                                                                                                       |
 | ICD10WHO:H45.0   | Vitreous haemorrhage in diseases classified elsewhere                                                                                                                                      |
 | ICD10WHO:H43.0   | Vitreous prolapse                                                                                                                                                                          |
@@ -12512,9 +12324,7 @@
 | ICD10WHO:H02.6   | Xanthelasma of eyelid                                                                                                                                                                      |
 | ICD10WHO:Q82.1   | Xeroderma pigmentosum                                                                                                                                                                      |
 | ICD10WHO:L85.3   | Xerosis cutis                                                                                                                                                                              |
-| ICD10WHO:A66     | Yaws                                                                                                                                                                                       |
 | ICD10WHO:A66.9   | Yaws, unspecified                                                                                                                                                                          |
-| ICD10WHO:A95     | Yellow fever                                                                                                                                                                               |
 | ICD10WHO:A95.9   | Yellow fever, unspecified                                                                                                                                                                  |
 | ICD10WHO:L60.5   | Yellow nail syndrome                                                                                                                                                                       |
 | ICD10WHO:A92.5   | Zika virus disease                                                                                                                                                                         |
@@ -12526,5 +12336,4 @@
 | ICD10WHO:B02.8   | Zoster with other complications                                                                                                                                                            |
 | ICD10WHO:B02.2   | Zoster with other nervous system involvement                                                                                                                                               |
 | ICD10WHO:B02.9   | Zoster without complication                                                                                                                                                                |
-| ICD10WHO:B46     | Zygomycosis                                                                                                                                                                                |
 | ICD10WHO:B46.9   | Zygomycosis, unspecified                                                                                                                                                                   |

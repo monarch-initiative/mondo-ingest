@@ -1982,7 +1982,9 @@ MONDO:0008332	platelet-type von Willebrand disease	skos:closeMatch	ICD10CM:D69.8
 MONDO:0008332	platelet-type von Willebrand disease	skos:closeMatch	ICD10CM:D69.8	Other specified hemorrhagic conditions	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0111056	LEXMATCH
 MONDO:0008337	familial pterygium of the conjunctiva	skos:closeMatch	ICD10CM:H11.0	Pterygium of eye	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0008337	LEXMATCH
 MONDO:0008340	ptosis, hereditary congenital, 1	skos:closeMatch	ICD10CM:Q10.0	Congenital ptosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060261	LEXMATCH
+MONDO:0008340	ptosis, hereditary congenital, 1	skos:closeMatch	ICD10CM:Q10.0	Congenital ptosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:0060261	LEXMATCH
 MONDO:0008340	ptosis, hereditary congenital, 1	skos:closeMatch	ICD10CM:Q10.0	Congenital ptosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060261	LEXMATCH
+MONDO:0008340	ptosis, hereditary congenital, 1	skos:closeMatch	ICD10CM:Q10.0	Congenital ptosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:0060261	LEXMATCH
 MONDO:0008346	pulmonary hemosiderosis	skos:closeMatch	ICD10CM:J63.4	Siderosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:10328	LEXMATCH
 MONDO:0008346	pulmonary hemosiderosis	skos:closeMatch	ICD10CM:J63.4	Siderosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	siderosis	LEXMATCH
 MONDO:0008346	pulmonary hemosiderosis	skos:closeMatch	ICD10CM:J63.4	Siderosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	siderosis	LEXMATCH
@@ -4212,6 +4214,10 @@ MONDO:0017853	hypersensitivity pneumonitis	skos:closeMatch	ICD10CM:J67.1	Bagasso
 MONDO:0017853	hypersensitivity pneumonitis	skos:closeMatch	ICD10CM:J67.2	Bird fancier's lung	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0017853	LEXMATCH
 MONDO:0017853	hypersensitivity pneumonitis	skos:closeMatch	ICD10CM:J67.9	Hypersensitivity pneumonitis due to unspecified organic dust	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:841	LEXMATCH
 MONDO:0017853	hypersensitivity pneumonitis	skos:closeMatch	ICD10CM:J67.9	Hypersensitivity pneumonitis due to unspecified organic dust	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:841	LEXMATCH
+MONDO:0017872	Lujo hemorrhagic fever	skos:closeMatch	ICD10CM:A96.8	Other arenaviral hemorrhagic fevers	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050202	LEXMATCH
+MONDO:0017872	Lujo hemorrhagic fever	skos:closeMatch	ICD10CM:A96.8	Other arenaviral hemorrhagic fevers	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:0050202	LEXMATCH
+MONDO:0017872	Lujo hemorrhagic fever	skos:closeMatch	ICD10CM:A96.8	Other arenaviral hemorrhagic fevers	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050202	LEXMATCH
+MONDO:0017872	Lujo hemorrhagic fever	skos:closeMatch	ICD10CM:A96.8	Other arenaviral hemorrhagic fevers	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:0050202	LEXMATCH
 MONDO:0017879	hantavirus pulmonary syndrome	skos:closeMatch	ICD10CM:B33.4	Hantavirus (cardio)-pulmonary syndrome [HPS] [HCPS]	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:14472	LEXMATCH
 MONDO:0017879	hantavirus pulmonary syndrome	skos:closeMatch	ICD10CM:B33.4	Hantavirus (cardio)-pulmonary syndrome [HPS] [HCPS]	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:14472	LEXMATCH
 MONDO:0017879	hantavirus pulmonary syndrome	skos:closeMatch	ICD10CM:B33.4	Hantavirus (cardio)-pulmonary syndrome [HPS] [HCPS]	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	hantavirus	LEXMATCH
@@ -4762,6 +4768,10 @@ MONDO:0100436	cataract 2, multiple types	skos:closeMatch	ICD10CM:Q12.0	Congenita
 MONDO:0100480	autoimmune primary adrenal insufficiency	skos:closeMatch	ICD10CM:E27.1	Primary adrenocortical insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	autoimmune adrenalitis	LEXMATCH
 MONDO:0700089	paroxysmal nonkinesigenic dyskinesia 1	skos:closeMatch	ICD10CM:G24.8	Other dystonia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0090049	LEXMATCH
 MONDO:0700089	paroxysmal nonkinesigenic dyskinesia 1	skos:closeMatch	ICD10CM:G24.8	Other dystonia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0090049	LEXMATCH
+MONDO:0700091	ring chromosome disorder	skos:closeMatch	ICD10CM:Q93.2	Chromosome replaced with ring, dicentric or isochromosome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0070620	LEXMATCH
+MONDO:0700091	ring chromosome disorder	skos:closeMatch	ICD10CM:Q93.2	Chromosome replaced with ring, dicentric or isochromosome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:0070620	LEXMATCH
+MONDO:0700091	ring chromosome disorder	skos:closeMatch	ICD10CM:Q93.2	Chromosome replaced with ring, dicentric or isochromosome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0070620	LEXMATCH
+MONDO:0700091	ring chromosome disorder	skos:closeMatch	ICD10CM:Q93.2	Chromosome replaced with ring, dicentric or isochromosome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:0070620	LEXMATCH
 MONDO:0800044	congenital disorder of deglycosylation 1	skos:closeMatch	ICD10CM:E77.8	Other disorders of glycoprotein metabolism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060728	LEXMATCH
 MONDO:0800044	congenital disorder of deglycosylation 1	skos:closeMatch	ICD10CM:E77.8	Other disorders of glycoprotein metabolism	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060728	LEXMATCH
 MONDO:0800268	atrioventricular septal defect, susceptibility to, 1	skos:closeMatch	ICD10CM:Q21.2	Atrioventricular septal defect	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	atrioventricular septal defect	LEXMATCH

@@ -1,5 +1,4 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
-ICD10WHO:A00	Cholera	False	False	False
 ICD10WHO:A00-A09	Intestinal infectious diseases	False	False	False
 ICD10WHO:A00.0	Cholera due to Vibrio cholerae 01, biovar cholerae	False	False	False
 ICD10WHO:A00.1	Cholera due to Vibrio cholerae 01, biovar eltor	False	False	False
@@ -16,7 +15,6 @@ ICD10WHO:A02.1	Salmonella sepsis	False	False	False
 ICD10WHO:A02.2	Localized salmonella infections	False	False	False
 ICD10WHO:A02.8	Other specified salmonella infections	False	False	False
 ICD10WHO:A02.9	Salmonella infection, unspecified	False	False	False
-ICD10WHO:A03	Shigellosis	False	False	False
 ICD10WHO:A03.0	Shigellosis due to Shigella dysenteriae	False	False	False
 ICD10WHO:A03.1	Shigellosis due to Shigella flexneri	False	False	False
 ICD10WHO:A03.2	Shigellosis due to Shigella boydii	False	False	False
@@ -71,7 +69,6 @@ ICD10WHO:A09	Other gastroenteritis and colitis of infectious and unspecified ori
 ICD10WHO:A09.0	Other and unspecified gastroenteritis and colitis of infectious origin	False	False	False
 ICD10WHO:A09.9	Gastroenteritis and colitis of unspecified origin	False	False	False
 ICD10WHO:A15	Respiratory tuberculosis, bacteriologically and histologically confirmed	False	False	False
-ICD10WHO:A15-A19	Tuberculosis	False	False	False
 ICD10WHO:A15.0	Tuberculosis of lung, confirmed by sputum microscopy with or without culture	False	False	False
 ICD10WHO:A15.1	Tuberculosis of lung, confirmed by culture only	False	False	False
 ICD10WHO:A15.2	Tuberculosis of lung, confirmed histologically	False	False	False
@@ -107,13 +104,11 @@ ICD10WHO:A18.5	Tuberculosis of eye	False	False	False
 ICD10WHO:A18.6	Tuberculosis of ear	False	False	False
 ICD10WHO:A18.7	Tuberculosis of adrenal glands	False	False	False
 ICD10WHO:A18.8	Tuberculosis of other specified organs	False	False	False
-ICD10WHO:A19	Miliary tuberculosis	False	False	False
 ICD10WHO:A19.0	Acute miliary tuberculosis of a single specified site	False	False	False
 ICD10WHO:A19.1	Acute miliary tuberculosis of multiple sites	False	False	False
 ICD10WHO:A19.2	Acute miliary tuberculosis, unspecified	False	False	False
 ICD10WHO:A19.8	Other miliary tuberculosis	False	False	False
 ICD10WHO:A19.9	Miliary tuberculosis, unspecified	False	False	False
-ICD10WHO:A20	Plague	False	False	False
 ICD10WHO:A20-A28	Certain zoonotic bacterial diseases	False	False	False
 ICD10WHO:A20.0	Bubonic plague	False	False	False
 ICD10WHO:A20.1	Cellulocutaneous plague	False	False	False
@@ -137,7 +132,6 @@ ICD10WHO:A22.2	Gastrointestinal anthrax	False	False	False
 ICD10WHO:A22.7	Anthrax sepsis	False	False	False
 ICD10WHO:A22.8	Other forms of anthrax	False	False	False
 ICD10WHO:A22.9	Anthrax, unspecified	False	False	False
-ICD10WHO:A23	Brucellosis	False	False	False
 ICD10WHO:A23.0	Brucellosis due to Brucella melitensis	False	False	False
 ICD10WHO:A23.1	Brucellosis due to Brucella abortus	False	False	False
 ICD10WHO:A23.2	Brucellosis due to Brucella suis	False	False	False
@@ -159,7 +153,6 @@ ICD10WHO:A26.0	Cutaneous erysipeloid	False	False	False
 ICD10WHO:A26.7	Erysipelothrix sepsis	False	False	False
 ICD10WHO:A26.8	Other forms of erysipeloid	False	False	False
 ICD10WHO:A26.9	Erysipeloid, unspecified	False	False	False
-ICD10WHO:A27	Leptospirosis	False	False	False
 ICD10WHO:A27.0	Leptospirosis icterohaemorrhagica	False	False	False
 ICD10WHO:A27.8	Other forms of leptospirosis	False	False	False
 ICD10WHO:A27.9	Leptospirosis, unspecified	False	False	False
@@ -184,16 +177,13 @@ ICD10WHO:A31.0	Pulmonary mycobacterial infection	False	False	False
 ICD10WHO:A31.1	Cutaneous mycobacterial infection	False	False	False
 ICD10WHO:A31.8	Other mycobacterial infections	False	False	False
 ICD10WHO:A31.9	Mycobacterial infection, unspecified	False	False	False
-ICD10WHO:A32	Listeriosis	False	False	False
 ICD10WHO:A32.0	Cutaneous listeriosis	False	False	False
 ICD10WHO:A32.1	Listerial meningitis and meningoencephalitis	False	False	False
 ICD10WHO:A32.7	Listerial sepsis	False	False	False
 ICD10WHO:A32.8	Other forms of listeriosis	False	False	False
 ICD10WHO:A32.9	Listeriosis, unspecified	False	False	False
-ICD10WHO:A33	Tetanus neonatorum	False	False	False
 ICD10WHO:A34	Obstetrical tetanus	False	False	False
 ICD10WHO:A35	Other tetanus	False	False	False
-ICD10WHO:A36	Diphtheria	False	False	False
 ICD10WHO:A36.0	Pharyngeal diphtheria	False	False	False
 ICD10WHO:A36.1	Nasopharyngeal diphtheria	False	False	False
 ICD10WHO:A36.2	Laryngeal diphtheria	False	False	False
@@ -205,8 +195,6 @@ ICD10WHO:A37.0	Whooping cough due to Bordetella pertussis	False	False	False
 ICD10WHO:A37.1	Whooping cough due to Bordetella parapertussis	False	False	False
 ICD10WHO:A37.8	Whooping cough due to other Bordetella species	False	False	False
 ICD10WHO:A37.9	Whooping cough, unspecified	False	False	False
-ICD10WHO:A38	Scarlet fever	False	False	False
-ICD10WHO:A39	Meningococcal infection	False	False	False
 ICD10WHO:A39.0	Meningococcal meningitis	False	False	False
 ICD10WHO:A39.1	Waterhouse-Friderichsen syndrome	False	False	False
 ICD10WHO:A39.2	Acute meningococcaemia	False	False	False
@@ -231,24 +219,20 @@ ICD10WHO:A41.4	Sepsis due to anaerobes	False	False	False
 ICD10WHO:A41.5	Sepsis due to other Gram-negative organisms	False	False	False
 ICD10WHO:A41.8	Other specified sepsis	False	False	False
 ICD10WHO:A41.9	Sepsis, unspecified	False	False	False
-ICD10WHO:A42	Actinomycosis	False	False	False
 ICD10WHO:A42.0	Pulmonary actinomycosis	False	False	False
 ICD10WHO:A42.1	Abdominal actinomycosis	False	False	False
 ICD10WHO:A42.2	Cervicofacial actinomycosis	False	False	False
 ICD10WHO:A42.7	Actinomycotic sepsis	False	False	False
 ICD10WHO:A42.8	Other forms of actinomycosis	False	False	False
 ICD10WHO:A42.9	Actinomycosis, unspecified	False	False	False
-ICD10WHO:A43	Nocardiosis	False	False	False
 ICD10WHO:A43.0	Pulmonary nocardiosis	False	False	False
 ICD10WHO:A43.1	Cutaneous nocardiosis	False	False	False
 ICD10WHO:A43.8	Other forms of nocardiosis	False	False	False
 ICD10WHO:A43.9	Nocardiosis, unspecified	False	False	False
-ICD10WHO:A44	Bartonellosis	False	False	False
 ICD10WHO:A44.0	Systemic bartonellosis	False	False	False
 ICD10WHO:A44.1	Cutaneous and mucocutaneous bartonellosis	False	False	False
 ICD10WHO:A44.8	Other forms of bartonellosis	False	False	False
 ICD10WHO:A44.9	Bartonellosis, unspecified	False	False	False
-ICD10WHO:A46	Erysipelas	False	False	False
 ICD10WHO:A48	Other bacterial diseases, not elsewhere classified	False	False	False
 ICD10WHO:A48.0	Gas gangrene	False	False	False
 ICD10WHO:A48.1	Legionnaires disease	False	False	False
@@ -263,7 +247,6 @@ ICD10WHO:A49.2	Haemophilus influenzae infection, unspecified site	False	False	Fa
 ICD10WHO:A49.3	Mycoplasma infection, unspecified site	False	False	False
 ICD10WHO:A49.8	Other bacterial infections of unspecified site	False	False	False
 ICD10WHO:A49.9	Bacterial infection, unspecified	False	False	False
-ICD10WHO:A50	Congenital syphilis	False	False	False
 ICD10WHO:A50-A64	Infections with a predominantly sexual mode of transmission	False	False	False
 ICD10WHO:A50.0	Early congenital syphilis, symptomatic	False	False	False
 ICD10WHO:A50.1	Early congenital syphilis, latent	False	False	False
@@ -311,9 +294,6 @@ ICD10WHO:A56.2	Chlamydial infection of genitourinary tract, unspecified	False	Fa
 ICD10WHO:A56.3	Chlamydial infection of anus and rectum	False	False	False
 ICD10WHO:A56.4	Chlamydial infection of pharynx	False	False	False
 ICD10WHO:A56.8	Sexually transmitted chlamydial infection of other sites	False	False	False
-ICD10WHO:A57	Chancroid	False	False	False
-ICD10WHO:A58	Granuloma inguinale	False	False	False
-ICD10WHO:A59	Trichomoniasis	False	False	False
 ICD10WHO:A59.0	Urogenital trichomoniasis	False	False	False
 ICD10WHO:A59.8	Trichomoniasis of other sites	False	False	False
 ICD10WHO:A59.9	Trichomoniasis, unspecified	False	False	False
@@ -327,7 +307,6 @@ ICD10WHO:A63.8	Other specified predominantly sexually transmitted diseases	False
 ICD10WHO:A64	Unspecified sexually transmitted disease	False	False	False
 ICD10WHO:A65	Nonvenereal syphilis	False	False	False
 ICD10WHO:A65-A69	Other spirochaetal diseases	False	False	False
-ICD10WHO:A66	Yaws	False	False	False
 ICD10WHO:A66.0	Initial lesions of yaws	False	False	False
 ICD10WHO:A66.1	Multiple papillomata and wet crab yaws	False	False	False
 ICD10WHO:A66.2	Other early skin lesions of yaws	False	False	False
@@ -356,7 +335,6 @@ ICD10WHO:A69.8	Other specified spirochaetal infections	False	False	False
 ICD10WHO:A69.9	Spirochaetal infection, unspecified	False	False	False
 ICD10WHO:A70	Chlamydia psittaci infection	False	False	False
 ICD10WHO:A70-A74	Other diseases caused by chlamydiae	False	False	False
-ICD10WHO:A71	Trachoma	False	False	False
 ICD10WHO:A71.0	Initial stage of trachoma	False	False	False
 ICD10WHO:A71.1	Active stage of trachoma	False	False	False
 ICD10WHO:A71.9	Trachoma, unspecified	False	False	False
@@ -378,7 +356,6 @@ ICD10WHO:A77.2	Spotted fever due to Rickettsia sibirica	False	False	False
 ICD10WHO:A77.3	Spotted fever due to Rickettsia australis	False	False	False
 ICD10WHO:A77.8	Other spotted fevers	False	False	False
 ICD10WHO:A77.9	Spotted fever, unspecified	False	False	False
-ICD10WHO:A78	Q fever	False	False	False
 ICD10WHO:A79	Other rickettsioses	False	False	False
 ICD10WHO:A79.0	Trench fever	False	False	False
 ICD10WHO:A79.1	Rickettsialpox due to Rickettsia akari	False	False	False
@@ -397,11 +374,9 @@ ICD10WHO:A81.1	Subacute sclerosing panencephalitis	False	False	False
 ICD10WHO:A81.2	Progressive multifocal leukoencephalopathy	False	False	False
 ICD10WHO:A81.8	Other atypical virus infections of central nervous system	False	False	False
 ICD10WHO:A81.9	Atypical virus infection of central nervous system, unspecified	False	False	False
-ICD10WHO:A82	Rabies	False	False	False
 ICD10WHO:A82.0	Sylvatic rabies	False	False	False
 ICD10WHO:A82.1	Urban rabies	False	False	False
 ICD10WHO:A82.9	Rabies, unspecified	False	False	False
-ICD10WHO:A83	Mosquito-borne viral encephalitis	False	False	False
 ICD10WHO:A83.0	Japanese encephalitis	False	False	False
 ICD10WHO:A83.1	Western equine encephalitis	False	False	False
 ICD10WHO:A83.2	Eastern equine encephalitis	False	False	False
@@ -422,7 +397,6 @@ ICD10WHO:A85.1	Adenoviral encephalitis	False	False	False
 ICD10WHO:A85.2	Arthropod-borne viral encephalitis, unspecified	False	False	False
 ICD10WHO:A85.8	Other specified viral encephalitis	False	False	False
 ICD10WHO:A86	Unspecified viral encephalitis	False	False	False
-ICD10WHO:A87	Viral meningitis	False	False	False
 ICD10WHO:A87.0	Enteroviral meningitis	False	False	False
 ICD10WHO:A87.1	Adenoviral meningitis	False	False	False
 ICD10WHO:A87.2	Lymphocytic choriomeningitis	False	False	False
@@ -449,7 +423,6 @@ ICD10WHO:A93.1	Sandfly fever	False	False	False
 ICD10WHO:A93.2	Colorado tick fever	False	False	False
 ICD10WHO:A93.8	Other specified arthropod-borne viral fevers	False	False	False
 ICD10WHO:A94	Unspecified arthropod-borne viral fever	False	False	False
-ICD10WHO:A95	Yellow fever	False	False	False
 ICD10WHO:A95.0	Sylvatic yellow fever	False	False	False
 ICD10WHO:A95.1	Urban yellow fever	False	False	False
 ICD10WHO:A95.9	Yellow fever, unspecified	False	False	False
@@ -498,9 +471,6 @@ ICD10WHO:B02.3	Zoster ocular disease	False	False	False
 ICD10WHO:B02.7	Disseminated zoster	False	False	False
 ICD10WHO:B02.8	Zoster with other complications	False	False	False
 ICD10WHO:B02.9	Zoster without complication	False	False	False
-ICD10WHO:B03	Smallpox	False	False	False
-ICD10WHO:B04	Monkeypox	False	False	False
-ICD10WHO:B05	Measles	False	False	False
 ICD10WHO:B05.0	Measles complicated by encephalitis	False	False	False
 ICD10WHO:B05.1	Measles complicated by meningitis	False	False	False
 ICD10WHO:B05.2	Measles complicated by pneumonia	False	False	False
@@ -523,7 +493,6 @@ ICD10WHO:B08.5	Enteroviral vesicular pharyngitis	False	False	False
 ICD10WHO:B08.8	Other specified viral infections characterized by skin and mucous membrane lesions	False	False	False
 ICD10WHO:B09	Unspecified viral infection characterized by skin and mucous membrane lesions	False	False	False
 ICD10WHO:B15	Acute hepatitis A	False	False	False
-ICD10WHO:B15-B19	Viral hepatitis	False	False	False
 ICD10WHO:B15.0	Hepatitis A with hepatic coma	False	False	False
 ICD10WHO:B15.9	Hepatitis A without hepatic coma	False	False	False
 ICD10WHO:B16	Acute hepatitis B	False	False	False
@@ -595,12 +564,10 @@ ICD10WHO:B26.2	Mumps encephalitis	False	False	False
 ICD10WHO:B26.3	Mumps pancreatitis	False	False	False
 ICD10WHO:B26.8	Mumps with other complications	False	False	False
 ICD10WHO:B26.9	Mumps without complication	False	False	False
-ICD10WHO:B27	Infectious mononucleosis	False	False	False
 ICD10WHO:B27.0	Gammaherpesviral mononucleosis	False	False	False
 ICD10WHO:B27.1	Cytomegaloviral mononucleosis	False	False	False
 ICD10WHO:B27.8	Other infectious mononucleosis	False	False	False
 ICD10WHO:B27.9	Infectious mononucleosis, unspecified	False	False	False
-ICD10WHO:B30	Viral conjunctivitis	False	False	False
 ICD10WHO:B30.0	Keratoconjunctivitis due to adenovirus	False	False	False
 ICD10WHO:B30.1	Conjunctivitis due to adenovirus	False	False	False
 ICD10WHO:B30.2	Viral pharyngoconjunctivitis	False	False	False
@@ -622,7 +589,6 @@ ICD10WHO:B34.3	Parvovirus infection, unspecified site	False	False	False
 ICD10WHO:B34.4	Papovavirus infection, unspecified site	False	False	False
 ICD10WHO:B34.8	Other viral infections of unspecified site	False	False	False
 ICD10WHO:B34.9	Viral infection, unspecified	False	False	False
-ICD10WHO:B35	Dermatophytosis	False	False	False
 ICD10WHO:B35-B49	Mycoses	False	False	False
 ICD10WHO:B35.0	Tinea barbae and tinea capitis	False	False	False
 ICD10WHO:B35.1	Tinea unguium	False	False	False
@@ -640,7 +606,6 @@ ICD10WHO:B36.2	White piedra	False	False	False
 ICD10WHO:B36.3	Black piedra	False	False	False
 ICD10WHO:B36.8	Other specified superficial mycoses	False	False	False
 ICD10WHO:B36.9	Superficial mycosis, unspecified	False	False	False
-ICD10WHO:B37	Candidiasis	False	False	False
 ICD10WHO:B37.0	Candidal stomatitis	False	False	False
 ICD10WHO:B37.1	Pulmonary candidiasis	False	False	False
 ICD10WHO:B37.2	Candidiasis of skin and nail	False	False	False
@@ -651,7 +616,6 @@ ICD10WHO:B37.6	Candidal endocarditis	False	False	False
 ICD10WHO:B37.7	Candidal sepsis	False	False	False
 ICD10WHO:B37.8	Candidiasis of other sites	False	False	False
 ICD10WHO:B37.9	Candidiasis, unspecified	False	False	False
-ICD10WHO:B38	Coccidioidomycosis	False	False	False
 ICD10WHO:B38.0	Acute pulmonary coccidioidomycosis	False	False	False
 ICD10WHO:B38.1	Chronic pulmonary coccidioidomycosis	False	False	False
 ICD10WHO:B38.2	Pulmonary coccidioidomycosis, unspecified	False	False	False
@@ -660,7 +624,6 @@ ICD10WHO:B38.4	Coccidioidomycosis meningitis	False	False	False
 ICD10WHO:B38.7	Disseminated coccidioidomycosis	False	False	False
 ICD10WHO:B38.8	Other forms of coccidioidomycosis	False	False	False
 ICD10WHO:B38.9	Coccidioidomycosis, unspecified	False	False	False
-ICD10WHO:B39	Histoplasmosis	False	False	False
 ICD10WHO:B39.0	Acute pulmonary histoplasmosis capsulati	False	False	False
 ICD10WHO:B39.1	Chronic pulmonary histoplasmosis capsulati	False	False	False
 ICD10WHO:B39.2	Pulmonary histoplasmosis capsulati, unspecified	False	False	False
@@ -668,7 +631,6 @@ ICD10WHO:B39.3	Disseminated histoplasmosis capsulati	False	False	False
 ICD10WHO:B39.4	Histoplasmosis capsulati, unspecified	False	False	False
 ICD10WHO:B39.5	Histoplasmosis duboisii	False	False	False
 ICD10WHO:B39.9	Histoplasmosis, unspecified	False	False	False
-ICD10WHO:B40	Blastomycosis	False	False	False
 ICD10WHO:B40.0	Acute pulmonary blastomycosis	False	False	False
 ICD10WHO:B40.1	Chronic pulmonary blastomycosis	False	False	False
 ICD10WHO:B40.2	Pulmonary blastomycosis, unspecified	False	False	False
@@ -676,12 +638,10 @@ ICD10WHO:B40.3	Cutaneous blastomycosis	False	False	False
 ICD10WHO:B40.7	Disseminated blastomycosis	False	False	False
 ICD10WHO:B40.8	Other forms of blastomycosis	False	False	False
 ICD10WHO:B40.9	Blastomycosis, unspecified	False	False	False
-ICD10WHO:B41	Paracoccidioidomycosis	False	False	False
 ICD10WHO:B41.0	Pulmonary paracoccidioidomycosis	False	False	False
 ICD10WHO:B41.7	Disseminated paracoccidioidomycosis	False	False	False
 ICD10WHO:B41.8	Other forms of paracoccidioidomycosis	False	False	False
 ICD10WHO:B41.9	Paracoccidioidomycosis, unspecified	False	False	False
-ICD10WHO:B42	Sporotrichosis	False	False	False
 ICD10WHO:B42.0	Pulmonary sporotrichosis	False	False	False
 ICD10WHO:B42.1	Lymphocutaneous sporotrichosis	False	False	False
 ICD10WHO:B42.7	Disseminated sporotrichosis	False	False	False
@@ -693,14 +653,12 @@ ICD10WHO:B43.1	Phaeomycotic brain abscess	False	False	False
 ICD10WHO:B43.2	Subcutaneous phaeomycotic abscess and cyst	False	False	False
 ICD10WHO:B43.8	Other forms of chromomycosis	False	False	False
 ICD10WHO:B43.9	Chromomycosis, unspecified	False	False	False
-ICD10WHO:B44	Aspergillosis	False	False	False
 ICD10WHO:B44.0	Invasive pulmonary aspergillosis	False	False	False
 ICD10WHO:B44.1	Other pulmonary aspergillosis	False	False	False
 ICD10WHO:B44.2	Tonsillar aspergillosis	False	False	False
 ICD10WHO:B44.7	Disseminated aspergillosis	False	False	False
 ICD10WHO:B44.8	Other forms of aspergillosis	False	False	False
 ICD10WHO:B44.9	Aspergillosis, unspecified	False	False	False
-ICD10WHO:B45	Cryptococcosis	False	False	False
 ICD10WHO:B45.0	Pulmonary cryptococcosis	False	False	False
 ICD10WHO:B45.1	Cerebral cryptococcosis	False	False	False
 ICD10WHO:B45.2	Cutaneous cryptococcosis	False	False	False
@@ -708,7 +666,6 @@ ICD10WHO:B45.3	Osseous cryptococcosis	False	False	False
 ICD10WHO:B45.7	Disseminated cryptococcosis	False	False	False
 ICD10WHO:B45.8	Other forms of cryptococcosis	False	False	False
 ICD10WHO:B45.9	Cryptococcosis, unspecified	False	False	False
-ICD10WHO:B46	Zygomycosis	False	False	False
 ICD10WHO:B46.0	Pulmonary mucormycosis	False	False	False
 ICD10WHO:B46.1	Rhinocerebral mucormycosis	False	False	False
 ICD10WHO:B46.2	Gastrointestinal mucormycosis	False	False	False
@@ -717,7 +674,6 @@ ICD10WHO:B46.4	Disseminated mucormycosis	False	False	False
 ICD10WHO:B46.5	Mucormycosis, unspecified	False	False	False
 ICD10WHO:B46.8	Other zygomycoses	False	False	False
 ICD10WHO:B46.9	Zygomycosis, unspecified	False	False	False
-ICD10WHO:B47	Mycetoma	False	False	False
 ICD10WHO:B47.0	Eumycetoma	False	False	False
 ICD10WHO:B47.1	Actinomycetoma	False	False	False
 ICD10WHO:B47.9	Mycetoma, unspecified	False	False	False
@@ -731,16 +687,13 @@ ICD10WHO:B48.5	Pneumocystosis	False	False	False
 ICD10WHO:B48.7	Opportunistic mycoses	False	False	False
 ICD10WHO:B48.8	Other specified mycoses	False	False	False
 ICD10WHO:B49	Unspecified mycosis	False	False	False
-ICD10WHO:B50	Plasmodium falciparum malaria	False	False	False
 ICD10WHO:B50-B64	Protozoal diseases	False	False	False
 ICD10WHO:B50.0	Plasmodium falciparum malaria with cerebral complications	False	False	False
 ICD10WHO:B50.8	Other severe and complicated Plasmodium falciparum malaria	False	False	False
 ICD10WHO:B50.9	Plasmodium falciparum malaria, unspecified	False	False	False
-ICD10WHO:B51	Plasmodium vivax malaria	False	False	False
 ICD10WHO:B51.0	Plasmodium vivax malaria with rupture of spleen	False	False	False
 ICD10WHO:B51.8	Plasmodium vivax malaria with other complications	False	False	False
 ICD10WHO:B51.9	Plasmodium vivax malaria without complication	False	False	False
-ICD10WHO:B52	Plasmodium malariae malaria	False	False	False
 ICD10WHO:B52.0	Plasmodium malariae malaria with nephropathy	False	False	False
 ICD10WHO:B52.8	Plasmodium malariae malaria with other complications	False	False	False
 ICD10WHO:B52.9	Plasmodium malariae malaria without complication	False	False	False
@@ -749,7 +702,6 @@ ICD10WHO:B53.0	Plasmodium ovale malaria	False	False	False
 ICD10WHO:B53.1	Malaria due to simian plasmodia	False	False	False
 ICD10WHO:B53.8	Other parasitologically confirmed malaria, not elsewhere classified	False	False	False
 ICD10WHO:B54	Unspecified malaria	False	False	False
-ICD10WHO:B55	Leishmaniasis	False	False	False
 ICD10WHO:B55.0	Visceral leishmaniasis	False	False	False
 ICD10WHO:B55.1	Cutaneous leishmaniasis	False	False	False
 ICD10WHO:B55.2	Mucocutaneous leishmaniasis	False	False	False
@@ -758,14 +710,12 @@ ICD10WHO:B56	African trypanosomiasis	False	False	False
 ICD10WHO:B56.0	Gambiense trypanosomiasis	False	False	False
 ICD10WHO:B56.1	Rhodesiense trypanosomiasis	False	False	False
 ICD10WHO:B56.9	African trypanosomiasis, unspecified	False	False	False
-ICD10WHO:B57	Chagas disease	False	False	False
 ICD10WHO:B57.0	Acute Chagas disease with heart involvement	False	False	False
 ICD10WHO:B57.1	Acute Chagas disease without heart involvement	False	False	False
 ICD10WHO:B57.2	Chagas disease (chronic) with heart involvement	False	False	False
 ICD10WHO:B57.3	Chagas disease (chronic) with digestive system involvement	False	False	False
 ICD10WHO:B57.4	Chagas disease (chronic) with nervous system involvement	False	False	False
 ICD10WHO:B57.5	Chagas disease (chronic) with other organ involvement	False	False	False
-ICD10WHO:B58	Toxoplasmosis	False	False	False
 ICD10WHO:B58.0	Toxoplasma oculopathy	False	False	False
 ICD10WHO:B58.1	Toxoplasma hepatitis	False	False	False
 ICD10WHO:B58.2	Toxoplasma meningoencephalitis	False	False	False
@@ -795,7 +745,6 @@ ICD10WHO:B66.4	Paragonimiasis	False	False	False
 ICD10WHO:B66.5	Fasciolopsiasis	False	False	False
 ICD10WHO:B66.8	Other specified fluke infections	False	False	False
 ICD10WHO:B66.9	Fluke infection, unspecified	False	False	False
-ICD10WHO:B67	Echinococcosis	False	False	False
 ICD10WHO:B67.0	Echinococcus granulosus infection of liver	False	False	False
 ICD10WHO:B67.1	Echinococcus granulosus infection of lung	False	False	False
 ICD10WHO:B67.2	Echinococcus granulosus infection of bone	False	False	False
@@ -806,11 +755,9 @@ ICD10WHO:B67.6	Echinococcus multilocularis infection, other and multiple sites	F
 ICD10WHO:B67.7	Echinococcus multilocularis infection, unspecified	False	False	False
 ICD10WHO:B67.8	Echinococcosis, unspecified, of liver	False	False	False
 ICD10WHO:B67.9	Echinococcosis, other and unspecified	False	False	False
-ICD10WHO:B68	Taeniasis	False	False	False
 ICD10WHO:B68.0	Taenia solium taeniasis	False	False	False
 ICD10WHO:B68.1	Taenia saginata taeniasis	False	False	False
 ICD10WHO:B68.9	Taeniasis, unspecified	False	False	False
-ICD10WHO:B69	Cysticercosis	False	False	False
 ICD10WHO:B69.0	Cysticercosis of central nervous system	False	False	False
 ICD10WHO:B69.1	Cysticercosis of eye	False	False	False
 ICD10WHO:B69.8	Cysticercosis of other sites	False	False	False
@@ -823,9 +770,6 @@ ICD10WHO:B71.0	Hymenolepiasis	False	False	False
 ICD10WHO:B71.1	Dipylidiasis	False	False	False
 ICD10WHO:B71.8	Other specified cestode infections	False	False	False
 ICD10WHO:B71.9	Cestode infection, unspecified	False	False	False
-ICD10WHO:B72	Dracunculiasis	False	False	False
-ICD10WHO:B73	Onchocerciasis	False	False	False
-ICD10WHO:B74	Filariasis	False	False	False
 ICD10WHO:B74.0	Filariasis due to Wuchereria bancrofti	False	False	False
 ICD10WHO:B74.1	Filariasis due to Brugia malayi	False	False	False
 ICD10WHO:B74.2	Filariasis due to Brugia timori	False	False	False
@@ -833,23 +777,18 @@ ICD10WHO:B74.3	Loiasis	False	False	False
 ICD10WHO:B74.4	Mansonelliasis	False	False	False
 ICD10WHO:B74.8	Other filariases	False	False	False
 ICD10WHO:B74.9	Filariasis, unspecified	False	False	False
-ICD10WHO:B75	Trichinellosis	False	False	False
 ICD10WHO:B76	Hookworm diseases	False	False	False
 ICD10WHO:B76.0	Ancylostomiasis	False	False	False
 ICD10WHO:B76.1	Necatoriasis	False	False	False
 ICD10WHO:B76.8	Other hookworm diseases	False	False	False
 ICD10WHO:B76.9	Hookworm disease, unspecified	False	False	False
-ICD10WHO:B77	Ascariasis	False	False	False
 ICD10WHO:B77.0	Ascariasis with intestinal complications	False	False	False
 ICD10WHO:B77.8	Ascariasis with other complications	False	False	False
 ICD10WHO:B77.9	Ascariasis, unspecified	False	False	False
-ICD10WHO:B78	Strongyloidiasis	False	False	False
 ICD10WHO:B78.0	Intestinal strongyloidiasis	False	False	False
 ICD10WHO:B78.1	Cutaneous strongyloidiasis	False	False	False
 ICD10WHO:B78.7	Disseminated strongyloidiasis	False	False	False
 ICD10WHO:B78.9	Strongyloidiasis, unspecified	False	False	False
-ICD10WHO:B79	Trichuriasis	False	False	False
-ICD10WHO:B80	Enterobiasis	False	False	False
 ICD10WHO:B81	Other intestinal helminthiases, not elsewhere classified	False	False	False
 ICD10WHO:B81.0	Anisakiasis	False	False	False
 ICD10WHO:B81.1	Intestinal capillariasis	False	False	False
@@ -875,8 +814,6 @@ ICD10WHO:B85.1	Pediculosis due to Pediculus humanus corporis	False	False	False
 ICD10WHO:B85.2	Pediculosis, unspecified	False	False	False
 ICD10WHO:B85.3	Phthiriasis	False	False	False
 ICD10WHO:B85.4	Mixed pediculosis and phthiriasis	False	False	False
-ICD10WHO:B86	Scabies	False	False	False
-ICD10WHO:B87	Myiasis	False	False	False
 ICD10WHO:B87.0	Cutaneous myiasis	False	False	False
 ICD10WHO:B87.1	Wound myiasis	False	False	False
 ICD10WHO:B87.2	Ocular myiasis	False	False	False
@@ -1397,7 +1334,6 @@ ICD10WHO:C81.3	Lymphocyte depleted classical Hodgkin lymphoma	False	False	False
 ICD10WHO:C81.4	Lymphocyte-rich (classical) Hodgkin lymphoma	False	False	False
 ICD10WHO:C81.7	Other classical Hodgkin lymphoma	False	False	False
 ICD10WHO:C81.9	Hodgkin lymphoma, unspecified	False	False	False
-ICD10WHO:C82	Follicular lymphoma	False	False	False
 ICD10WHO:C82.0	Follicular lymphoma grade I	False	False	False
 ICD10WHO:C82.1	Follicular lymphoma grade II	False	False	False
 ICD10WHO:C82.2	Follicular lymphoma grade III, unspecified	False	False	False
@@ -1624,7 +1560,6 @@ ICD10WHO:D16.6	Benign neoplasm: Vertebral column	False	False	False
 ICD10WHO:D16.7	Benign neoplasm: Ribs, sternum and clavicle	False	False	False
 ICD10WHO:D16.8	Benign neoplasm: Pelvic bones, sacrum and coccyx	False	False	False
 ICD10WHO:D16.9	Benign neoplasm: Bone and articular cartilage, unspecified	False	False	False
-ICD10WHO:D17	Benign lipomatous neoplasm	False	False	False
 ICD10WHO:D17.0	Benign lipomatous neoplasm of skin and subcutaneous tissue of head, face and neck	False	False	False
 ICD10WHO:D17.1	Benign lipomatous neoplasm of skin and subcutaneous tissue of trunk	False	False	False
 ICD10WHO:D17.2	Benign lipomatous neoplasm of skin and subcutaneous tissue of limbs	False	False	False
@@ -1717,7 +1652,6 @@ ICD10WHO:D31.4	Benign neoplasm: Ciliary body	False	False	False
 ICD10WHO:D31.5	Benign neoplasm: Lacrimal gland and duct	False	False	False
 ICD10WHO:D31.6	Benign neoplasm: Orbit, unspecified	False	False	False
 ICD10WHO:D31.9	Benign neoplasm: Eye, unspecified	False	False	False
-ICD10WHO:D32	Benign neoplasm of meninges	False	False	False
 ICD10WHO:D32.0	Benign neoplasm: Cerebral meninges	False	False	False
 ICD10WHO:D32.1	Benign neoplasm: Spinal meninges	False	False	False
 ICD10WHO:D32.9	Benign neoplasm: Meninges, unspecified	False	False	False
@@ -2007,7 +1941,6 @@ ICD10WHO:D82.3	Immunodeficiency following hereditary defective response to Epste
 ICD10WHO:D82.4	Hyperimmunoglobulin E [IgE] syndrome	False	False	False
 ICD10WHO:D82.8	Immunodeficiency associated with other specified major defects	False	False	False
 ICD10WHO:D82.9	Immunodeficiency associated with major defect, unspecified	False	False	False
-ICD10WHO:D83	Common variable immunodeficiency	False	False	False
 ICD10WHO:D83.0	Common variable immunodeficiency with predominant abnormalities of B-cell numbers and function	False	False	False
 ICD10WHO:D83.1	Common variable immunodeficiency with predominant immunoregulatory T-cell disorders	False	False	False
 ICD10WHO:D83.2	Common variable immunodeficiency with autoantibodies to B- or T-cells	False	False	False
@@ -2018,7 +1951,6 @@ ICD10WHO:D84.0	Lymphocyte function antigen-1 [LFA-1] defect	False	False	False
 ICD10WHO:D84.1	Defects in the complement system	False	False	False
 ICD10WHO:D84.8	Other specified immunodeficiencies	False	False	False
 ICD10WHO:D84.9	Immunodeficiency, unspecified	False	False	False
-ICD10WHO:D86	Sarcoidosis	False	False	False
 ICD10WHO:D86.0	Sarcoidosis of lung	False	False	False
 ICD10WHO:D86.1	Sarcoidosis of lymph nodes	False	False	False
 ICD10WHO:D86.2	Sarcoidosis of lung with sarcoidosis of lymph nodes	False	False	False
@@ -2068,7 +2000,6 @@ ICD10WHO:E05.4	Thyrotoxicosis factitia	False	False	False
 ICD10WHO:E05.5	Thyroid crisis or storm	False	False	False
 ICD10WHO:E05.8	Other thyrotoxicosis	False	False	False
 ICD10WHO:E05.9	Thyrotoxicosis, unspecified	False	False	False
-ICD10WHO:E06	Thyroiditis	False	False	False
 ICD10WHO:E06.0	Acute thyroiditis	False	False	False
 ICD10WHO:E06.1	Subacute thyroiditis	False	False	False
 ICD10WHO:E06.2	Chronic thyroiditis with transient thyrotoxicosis	False	False	False
@@ -2081,8 +2012,6 @@ ICD10WHO:E07.0	Hypersecretion of calcitonin	False	False	False
 ICD10WHO:E07.1	Dyshormogenetic goitre	False	False	False
 ICD10WHO:E07.8	Other specified disorders of thyroid	False	False	False
 ICD10WHO:E07.9	Disorder of thyroid, unspecified	False	False	False
-ICD10WHO:E10	Type 1 diabetes mellitus	False	False	False
-ICD10WHO:E10-E14	Diabetes mellitus	False	False	False
 ICD10WHO:E10.0	Type 1 diabetes mellitus with coma	False	False	False
 ICD10WHO:E10.1	Type 1 diabetes mellitus with ketoacidosis	False	False	False
 ICD10WHO:E10.2	Type 1 diabetes mellitus with renal complications	False	False	False
@@ -2093,7 +2022,6 @@ ICD10WHO:E10.6	Type 1 diabetes mellitus with other specified complications	False
 ICD10WHO:E10.7	Type 1 diabetes mellitus with multiple complications	False	False	False
 ICD10WHO:E10.8	Type 1 diabetes mellitus with unspecified complications	False	False	False
 ICD10WHO:E10.9	Type 1 diabetes mellitus without complications	False	False	False
-ICD10WHO:E11	Type 2 diabetes mellitus	False	False	False
 ICD10WHO:E11.0	Type 2 diabetes mellitus with coma	False	False	False
 ICD10WHO:E11.1	Type 2 diabetes mellitus with ketoacidosis	False	False	False
 ICD10WHO:E11.2	Type 2 diabetes mellitus with renal complications	False	False	False
@@ -2147,7 +2075,6 @@ ICD10WHO:E16.3	Increased secretion of glucagon	False	False	False
 ICD10WHO:E16.4	Abnormal secretion of gastrin	False	False	False
 ICD10WHO:E16.8	Other specified disorders of pancreatic internal secretion	False	False	False
 ICD10WHO:E16.9	Disorder of pancreatic internal secretion, unspecified	False	False	False
-ICD10WHO:E20	Hypoparathyroidism	False	False	False
 ICD10WHO:E20-E35	Disorders of other endocrine glands	False	False	False
 ICD10WHO:E20.0	Idiopathic hypoparathyroidism	False	False	False
 ICD10WHO:E20.1	Pseudohypoparathyroidism	False	False	False
@@ -2173,7 +2100,6 @@ ICD10WHO:E23.2	Diabetes insipidus	False	False	False
 ICD10WHO:E23.3	Hypothalamic dysfunction, not elsewhere classified	False	False	False
 ICD10WHO:E23.6	Other disorders of pituitary gland	False	False	False
 ICD10WHO:E23.7	Disorder of pituitary gland, unspecified	False	False	False
-ICD10WHO:E24	Cushing syndrome	False	False	False
 ICD10WHO:E24.0	Pituitary-dependent Cushing disease	False	False	False
 ICD10WHO:E24.1	Nelson syndrome	False	False	False
 ICD10WHO:E24.2	Drug-induced Cushing syndrome	False	False	False
@@ -2185,7 +2111,6 @@ ICD10WHO:E25	Adrenogenital disorders	False	False	False
 ICD10WHO:E25.0	Congenital adrenogenital disorders associated with enzyme deficiency	False	False	False
 ICD10WHO:E25.8	Other adrenogenital disorders	False	False	False
 ICD10WHO:E25.9	Adrenogenital disorder, unspecified	False	False	False
-ICD10WHO:E26	Hyperaldosteronism	False	False	False
 ICD10WHO:E26.0	Primary hyperaldosteronism	False	False	False
 ICD10WHO:E26.1	Secondary hyperaldosteronism	False	False	False
 ICD10WHO:E26.8	Other hyperaldosteronism	False	False	False
@@ -2199,7 +2124,6 @@ ICD10WHO:E27.4	Other and unspecified adrenocortical insufficiency	False	False	Fa
 ICD10WHO:E27.5	Adrenomedullary hyperfunction	False	False	False
 ICD10WHO:E27.8	Other specified disorders of adrenal gland	False	False	False
 ICD10WHO:E27.9	Disorder of adrenal gland, unspecified	False	False	False
-ICD10WHO:E28	Ovarian dysfunction	False	False	False
 ICD10WHO:E28.1	Ovarian dysfunction: Androgen excess	False	False	False
 ICD10WHO:E28.2	Polycystic ovarian syndrome	False	False	False
 ICD10WHO:E28.3	Primary ovarian failure	False	False	False
@@ -2238,7 +2162,6 @@ ICD10WHO:E35	Disorders of endocrine glands in diseases classified elsewhere	Fals
 ICD10WHO:E35.0	Disorders of thyroid gland in diseases classified elsewhere	False	False	False
 ICD10WHO:E35.1	Disorders of adrenal glands in diseases classified elsewhere	False	False	False
 ICD10WHO:E35.8	Disorders of other endocrine glands in diseases classified elsewhere	False	False	False
-ICD10WHO:E40	Kwashiorkor	False	False	False
 ICD10WHO:E40-E46	Malnutrition	False	False	False
 ICD10WHO:E41	Nutritional marasmus	False	False	False
 ICD10WHO:E42	Marasmic kwashiorkor	False	False	False
@@ -2248,7 +2171,6 @@ ICD10WHO:E44.0	Moderate protein-energy malnutrition	False	False	False
 ICD10WHO:E44.1	Mild protein-energy malnutrition	False	False	False
 ICD10WHO:E45	Retarded development following protein-energy malnutrition	False	False	False
 ICD10WHO:E46	Unspecified protein-energy malnutrition	False	False	False
-ICD10WHO:E50	Vitamin A deficiency	False	False	False
 ICD10WHO:E50-E64	Other nutritional deficiencies	False	False	False
 ICD10WHO:E50.0	Vitamin A deficiency with conjunctival xerosis	False	False	False
 ICD10WHO:E50.1	Vitamin A deficiency with Bitot spot and conjunctival xerosis	False	False	False
@@ -2272,7 +2194,6 @@ ICD10WHO:E53.1	Pyridoxine deficiency	False	False	False
 ICD10WHO:E53.8	Deficiency of other specified B group vitamins	False	False	False
 ICD10WHO:E53.9	Vitamin B deficiency, unspecified	False	False	False
 ICD10WHO:E54	Ascorbic acid deficiency	False	False	False
-ICD10WHO:E55	Vitamin D deficiency	False	False	False
 ICD10WHO:E55.0	Rickets, active	False	False	False
 ICD10WHO:E55.9	Vitamin D deficiency, unspecified	False	False	False
 ICD10WHO:E56	Other vitamin deficiencies	False	False	False
@@ -2342,7 +2263,6 @@ ICD10WHO:E72.4	Disorders of ornithine metabolism	False	False	False
 ICD10WHO:E72.5	Disorders of glycine metabolism	False	False	False
 ICD10WHO:E72.8	Other specified disorders of amino-acid metabolism	False	False	False
 ICD10WHO:E72.9	Disorder of amino-acid metabolism, unspecified	False	False	False
-ICD10WHO:E73	Lactose intolerance	False	False	False
 ICD10WHO:E73.0	Congenital lactase deficiency	False	False	False
 ICD10WHO:E73.1	Secondary lactase deficiency	False	False	False
 ICD10WHO:E73.8	Other lactose intolerance	False	False	False
@@ -2408,12 +2328,10 @@ ICD10WHO:E83.4	Disorders of magnesium metabolism	False	False	False
 ICD10WHO:E83.5	Disorders of calcium metabolism	False	False	False
 ICD10WHO:E83.8	Other disorders of mineral metabolism	False	False	False
 ICD10WHO:E83.9	Disorder of mineral metabolism, unspecified	False	False	False
-ICD10WHO:E84	Cystic fibrosis	False	False	False
 ICD10WHO:E84.0	Cystic fibrosis with pulmonary manifestations	False	False	False
 ICD10WHO:E84.1	Cystic fibrosis with intestinal manifestations	False	False	False
 ICD10WHO:E84.8	Cystic fibrosis with other manifestations	False	False	False
 ICD10WHO:E84.9	Cystic fibrosis, unspecified	False	False	False
-ICD10WHO:E85	Amyloidosis	False	False	False
 ICD10WHO:E85.0	Non-neuropathic heredofamilial amyloidosis	False	False	False
 ICD10WHO:E85.1	Neuropathic heredofamilial amyloidosis	False	False	False
 ICD10WHO:E85.2	Heredofamilial amyloidosis, unspecified	False	False	False
@@ -2456,7 +2374,6 @@ ICD10WHO:F00.0	Dementia in Alzheimer disease with early onset	False	False	False
 ICD10WHO:F00.1	Dementia in Alzheimer disease with late onset	False	False	False
 ICD10WHO:F00.2	Dementia in Alzheimer disease, atypical or mixed type	False	False	False
 ICD10WHO:F00.9	Dementia in Alzheimer disease, unspecified	False	False	False
-ICD10WHO:F01	Vascular dementia	False	False	False
 ICD10WHO:F01.0	Vascular dementia of acute onset	False	False	False
 ICD10WHO:F01.1	Multi-infarct dementia	False	False	False
 ICD10WHO:F01.2	Subcortical vascular dementia	False	False	False
@@ -2606,7 +2523,6 @@ ICD10WHO:F19.6	Mental and behavioural disorders due to multiple drug use and use
 ICD10WHO:F19.7	Mental and behavioural disorders due to multiple drug use and use of other psychoactive substances : residual and late-onset psychotic disorder	False	False	False
 ICD10WHO:F19.8	Mental and behavioural disorders due to multiple drug use and use of other psychoactive substances : other mental and behavioural disorders	False	False	False
 ICD10WHO:F19.9	Mental and behavioural disorders due to multiple drug use and use of other psychoactive substances : unspecified mental and behavioural disorder	False	False	False
-ICD10WHO:F20	Schizophrenia	False	False	False
 ICD10WHO:F20-F29	Schizophrenia, schizotypal and delusional disorders	False	False	False
 ICD10WHO:F20.0	Paranoid schizophrenia	False	False	False
 ICD10WHO:F20.1	Hebephrenic schizophrenia	False	False	False
@@ -2693,7 +2609,6 @@ ICD10WHO:F41.2	Mixed anxiety and depressive disorder	False	False	False
 ICD10WHO:F41.3	Other mixed anxiety disorders	False	False	False
 ICD10WHO:F41.8	Other specified anxiety disorders	False	False	False
 ICD10WHO:F41.9	Anxiety disorder, unspecified	False	False	False
-ICD10WHO:F42	Obsessive-compulsive disorder	False	False	False
 ICD10WHO:F42.0	Predominantly obsessional thoughts or ruminations	False	False	False
 ICD10WHO:F42.1	Predominantly compulsive acts [obsessional rituals]	False	False	False
 ICD10WHO:F42.2	Mixed obsessional thoughts and acts	False	False	False
@@ -2963,9 +2878,7 @@ ICD10WHO:G06.2	Extradural and subdural abscess, unspecified	False	False	False
 ICD10WHO:G07	Intracranial and intraspinal abscess and granuloma in diseases classified elsewhere	False	False	False
 ICD10WHO:G08	Intracranial and intraspinal phlebitis and thrombophlebitis	False	False	False
 ICD10WHO:G09	Sequelae of inflammatory diseases of central nervous system	False	False	False
-ICD10WHO:G10	Huntington disease	False	False	False
 ICD10WHO:G10-G14	Systemic atrophies primarily affecting the central nervous system	False	False	False
-ICD10WHO:G11	Hereditary ataxia	False	False	False
 ICD10WHO:G11.0	Congenital nonprogressive ataxia	False	False	False
 ICD10WHO:G11.1	Early-onset cerebellar ataxia	False	False	False
 ICD10WHO:G11.2	Late-onset cerebellar ataxia	False	False	False
@@ -2985,7 +2898,6 @@ ICD10WHO:G13.1	Other systemic atrophy primarily affecting central nervous system
 ICD10WHO:G13.2	Systemic atrophy primarily affecting central nervous system in myxoedema	False	False	False
 ICD10WHO:G13.8	Systemic atrophy primarily affecting central nervous system in other diseases classified elsewhere	False	False	False
 ICD10WHO:G14	Postpolio syndrome	False	False	False
-ICD10WHO:G20	Parkinson disease	False	False	False
 ICD10WHO:G20-G26	Extrapyramidal and movement disorders	False	False	False
 ICD10WHO:G21	Secondary parkinsonism	False	False	False
 ICD10WHO:G21.0	Malignant neuroleptic syndrome	False	False	False
@@ -3023,7 +2935,6 @@ ICD10WHO:G25.6	Drug-induced tics and other tics of organic origin	False	False	Fa
 ICD10WHO:G25.8	Other specified extrapyramidal and movement disorders	False	False	False
 ICD10WHO:G25.9	Extrapyramidal and movement disorder, unspecified	False	False	False
 ICD10WHO:G26	Extrapyramidal and movement disorders in diseases classified elsewhere	False	False	False
-ICD10WHO:G30	Alzheimer disease	False	False	False
 ICD10WHO:G30-G32	Other degenerative diseases of the nervous system	False	False	False
 ICD10WHO:G30.0	Alzheimer disease with early onset	False	False	False
 ICD10WHO:G30.1	Alzheimer disease with late onset	False	False	False
@@ -3038,7 +2949,6 @@ ICD10WHO:G31.9	Degenerative disease of nervous system, unspecified	False	False	F
 ICD10WHO:G32	Other degenerative disorders of nervous system in diseases classified elsewhere	False	False	False
 ICD10WHO:G32.0	Subacute combined degeneration of spinal cord in diseases classified elsewhere	False	False	False
 ICD10WHO:G32.8	Other specified degenerative disorders of nervous system in diseases classified elsewhere	False	False	False
-ICD10WHO:G35	Multiple sclerosis	False	False	False
 ICD10WHO:G35-G37	Demyelinating diseases of the central nervous system	False	False	False
 ICD10WHO:G36	Other acute disseminated demyelination	False	False	False
 ICD10WHO:G36.0	Neuromyelitis optica [Devic]	False	False	False
@@ -3240,7 +3150,6 @@ ICD10WHO:G73.4	Myopathy in infectious and parasitic diseases classified elsewher
 ICD10WHO:G73.5	Myopathy in endocrine diseases	False	False	False
 ICD10WHO:G73.6	Myopathy in metabolic diseases	False	False	False
 ICD10WHO:G73.7	Myopathy in other diseases classified elsewhere	False	False	False
-ICD10WHO:G80	Cerebral palsy	False	False	False
 ICD10WHO:G80-G83	Cerebral palsy and other paralytic syndromes	False	False	False
 ICD10WHO:G80.0	Spastic quadriplegic cerebral palsy	False	False	False
 ICD10WHO:G80.1	Spastic diplegic cerebral palsy	False	False	False
@@ -3249,7 +3158,6 @@ ICD10WHO:G80.3	Dyskinetic cerebral palsy	False	False	False
 ICD10WHO:G80.4	Ataxic cerebral palsy	False	False	False
 ICD10WHO:G80.8	Other cerebral palsy	False	False	False
 ICD10WHO:G80.9	Cerebral palsy, unspecified	False	False	False
-ICD10WHO:G81	Hemiplegia	False	False	False
 ICD10WHO:G81.0	Flaccid hemiplegia	False	False	False
 ICD10WHO:G81.1	Spastic hemiplegia	False	False	False
 ICD10WHO:G81.9	Hemiplegia, unspecified	False	False	False
@@ -3281,14 +3189,12 @@ ICD10WHO:G90.6	Complex regional pain syndrome type II	False	False	False
 ICD10WHO:G90.7	Complex regional pain syndrome, other and unspecified type	False	False	False
 ICD10WHO:G90.8	Other disorders of autonomic nervous system	False	False	False
 ICD10WHO:G90.9	Disorder of autonomic nervous system, unspecified	False	False	False
-ICD10WHO:G91	Hydrocephalus	False	False	False
 ICD10WHO:G91.0	Communicating hydrocephalus	False	False	False
 ICD10WHO:G91.1	Obstructive hydrocephalus	False	False	False
 ICD10WHO:G91.2	Normal-pressure hydrocephalus	False	False	False
 ICD10WHO:G91.3	Post-traumatic hydrocephalus, unspecified	False	False	False
 ICD10WHO:G91.8	Other hydrocephalus	False	False	False
 ICD10WHO:G91.9	Hydrocephalus, unspecified	False	False	False
-ICD10WHO:G92	Toxic encephalopathy	False	False	False
 ICD10WHO:G93	Other disorders of brain	False	False	False
 ICD10WHO:G93.0	Cerebral cysts	False	False	False
 ICD10WHO:G93.1	Anoxic brain damage, not elsewhere classified	False	False	False
@@ -3376,7 +3282,6 @@ ICD10WHO:H06.0	Disorders of lacrimal system in diseases classified elsewhere	Fal
 ICD10WHO:H06.1	Parasitic infestation of orbit in diseases classified elsewhere	False	False	False
 ICD10WHO:H06.2	Dysthyroid exophthalmos	False	False	False
 ICD10WHO:H06.3	Other disorders of orbit in diseases classified elsewhere	False	False	False
-ICD10WHO:H10	Conjunctivitis	False	False	False
 ICD10WHO:H10-H13	Disorders of conjunctiva	False	False	False
 ICD10WHO:H10.0	Mucopurulent conjunctivitis	False	False	False
 ICD10WHO:H10.1	Acute atopic conjunctivitis	False	False	False
@@ -3406,7 +3311,6 @@ ICD10WHO:H15.0	Scleritis	False	False	False
 ICD10WHO:H15.1	Episcleritis	False	False	False
 ICD10WHO:H15.8	Other disorders of sclera	False	False	False
 ICD10WHO:H15.9	Disorder of sclera, unspecified	False	False	False
-ICD10WHO:H16	Keratitis	False	False	False
 ICD10WHO:H16.0	Corneal ulcer	False	False	False
 ICD10WHO:H16.1	Other superficial keratitis without conjunctivitis	False	False	False
 ICD10WHO:H16.2	Keratoconjunctivitis	False	False	False
@@ -3436,7 +3340,6 @@ ICD10WHO:H19.1	Herpesviral keratitis and keratoconjunctivitis	False	False	False
 ICD10WHO:H19.2	Keratitis and keratoconjunctivitis in other infectious and parasitic diseases classified elsewhere	False	False	False
 ICD10WHO:H19.3	Keratitis and keratoconjunctivitis in other diseases classified elsewhere	False	False	False
 ICD10WHO:H19.8	Other disorders of sclera and cornea in diseases classified elsewhere	False	False	False
-ICD10WHO:H20	Iridocyclitis	False	False	False
 ICD10WHO:H20.0	Acute and subacute iridocyclitis	False	False	False
 ICD10WHO:H20.1	Chronic iridocyclitis	False	False	False
 ICD10WHO:H20.2	Lens-induced iridocyclitis	False	False	False
@@ -3455,7 +3358,6 @@ ICD10WHO:H22	Disorders of iris and ciliary body in diseases classified elsewhere
 ICD10WHO:H22.0	Iridocyclitis in infectious and parasitic diseases classified elsewhere	False	False	False
 ICD10WHO:H22.1	Iridocyclitis in other diseases classified elsewhere	False	False	False
 ICD10WHO:H22.8	Other disorders of iris and ciliary body in diseases classified elsewhere	False	False	False
-ICD10WHO:H25	Senile cataract	False	False	False
 ICD10WHO:H25-H28	Disorders of lens	False	False	False
 ICD10WHO:H25.0	Senile incipient cataract	False	False	False
 ICD10WHO:H25.1	Senile nuclear cataract	False	False	False
@@ -3525,8 +3427,6 @@ ICD10WHO:H35.9	Retinal disorder, unspecified	False	False	False
 ICD10WHO:H36	Retinal disorders in diseases classified elsewhere	False	False	False
 ICD10WHO:H36.0	Diabetic retinopathy	False	False	False
 ICD10WHO:H36.8	Other retinal disorders in diseases classified elsewhere	False	False	False
-ICD10WHO:H40	Glaucoma	False	False	False
-ICD10WHO:H40-H42	Glaucoma	False	False	False
 ICD10WHO:H40.0	Glaucoma suspect	False	False	False
 ICD10WHO:H40.1	Primary open-angle glaucoma	False	False	False
 ICD10WHO:H40.2	Primary angle-closure glaucoma	False	False	False
@@ -3562,7 +3462,6 @@ ICD10WHO:H45	Disorders of vitreous body and globe in diseases classified elsewhe
 ICD10WHO:H45.0	Vitreous haemorrhage in diseases classified elsewhere	False	False	False
 ICD10WHO:H45.1	Endophthalmitis in diseases classified elsewhere	False	False	False
 ICD10WHO:H45.8	Other disorders of vitreous body and globe in diseases classified elsewhere	False	False	False
-ICD10WHO:H46	Optic neuritis	False	False	False
 ICD10WHO:H46-H48	Disorders of optic nerve and visual pathways	False	False	False
 ICD10WHO:H47	Other disorders of optic [2nd] nerve and visual pathways	False	False	False
 ICD10WHO:H47.0	Disorders of optic nerve, not elsewhere classified	False	False	False
@@ -3577,7 +3476,6 @@ ICD10WHO:H48	Disorders of optic [2nd] nerve and visual pathways in diseases clas
 ICD10WHO:H48.0	Optic atrophy in diseases classified elsewhere	False	False	False
 ICD10WHO:H48.1	Retrobulbar neuritis in diseases classified elsewhere	False	False	False
 ICD10WHO:H48.8	Other disorders of optic nerve and visual pathways in diseases classified elsewhere	False	False	False
-ICD10WHO:H49	Paralytic strabismus	False	False	False
 ICD10WHO:H49-H52	Disorders of ocular muscles, binocular movement, accommodation and refraction	False	False	False
 ICD10WHO:H49.0	Third [oculomotor] nerve palsy	False	False	False
 ICD10WHO:H49.1	Fourth [trochlear] nerve palsy	False	False	False
@@ -3646,7 +3544,6 @@ ICD10WHO:H59	Postprocedural disorders of eye and adnexa, not elsewhere classifie
 ICD10WHO:H59.0	Keratopathy (bullous aphakic) following cataract surgery	False	False	False
 ICD10WHO:H59.8	Other postprocedural disorders of eye and adnexa	False	False	False
 ICD10WHO:H59.9	Postprocedural disorder of eye and adnexa, unspecified	False	False	False
-ICD10WHO:H60	Otitis externa	False	False	False
 ICD10WHO:H60-H62	Diseases of external ear	False	False	False
 ICD10WHO:H60.0	Abscess of external ear	False	False	False
 ICD10WHO:H60.1	Cellulitis of external ear	False	False	False
@@ -3702,7 +3599,6 @@ ICD10WHO:H70.1	Chronic mastoiditis	False	False	False
 ICD10WHO:H70.2	Petrositis	False	False	False
 ICD10WHO:H70.8	Other mastoiditis and related conditions	False	False	False
 ICD10WHO:H70.9	Mastoiditis, unspecified	False	False	False
-ICD10WHO:H71	Cholesteatoma of middle ear	False	False	False
 ICD10WHO:H72	Perforation of tympanic membrane	False	False	False
 ICD10WHO:H72.0	Central perforation of tympanic membrane	False	False	False
 ICD10WHO:H72.1	Attic perforation of tympanic membrane	False	False	False
@@ -3725,7 +3621,6 @@ ICD10WHO:H74.9	Disorder of middle ear and mastoid, unspecified	False	False	False
 ICD10WHO:H75	Other disorders of middle ear and mastoid in diseases classified elsewhere	False	False	False
 ICD10WHO:H75.0	Mastoiditis in infectious and parasitic diseases classified elsewhere	False	False	False
 ICD10WHO:H75.8	Other specified disorders of middle ear and mastoid in diseases classified elsewhere	False	False	False
-ICD10WHO:H80	Otosclerosis	False	False	False
 ICD10WHO:H80-H83	Diseases of inner ear	False	False	False
 ICD10WHO:H80.0	Otosclerosis involving oval window, nonobliterative	False	False	False
 ICD10WHO:H80.1	Otosclerosis involving oval window, obliterative	False	False	False
@@ -3831,7 +3726,6 @@ ICD10WHO:I09.8	Other specified rheumatic heart diseases	False	False	False
 ICD10WHO:I09.9	Rheumatic heart disease, unspecified	False	False	False
 ICD10WHO:I10	Essential (primary) hypertension	False	False	False
 ICD10WHO:I10-I15	Hypertensive diseases	False	False	False
-ICD10WHO:I11	Hypertensive heart disease	False	False	False
 ICD10WHO:I11.0	Hypertensive heart disease with (congestive) heart failure	False	False	False
 ICD10WHO:I11.9	Hypertensive heart disease without (congestive) heart failure	False	False	False
 ICD10WHO:I12	Hypertensive renal disease	False	False	False
@@ -3842,7 +3736,6 @@ ICD10WHO:I13.0	Hypertensive heart and renal disease with (congestive) heart fail
 ICD10WHO:I13.1	Hypertensive heart and renal disease with renal failure	False	False	False
 ICD10WHO:I13.2	Hypertensive heart and renal disease with both (congestive) heart failure and renal failure	False	False	False
 ICD10WHO:I13.9	Hypertensive heart and renal disease, unspecified	False	False	False
-ICD10WHO:I15	Secondary hypertension	False	False	False
 ICD10WHO:I15.0	Renovascular hypertension	False	False	False
 ICD10WHO:I15.1	Hypertension secondary to other renal disorders	False	False	False
 ICD10WHO:I15.2	Hypertension secondary to endocrine disorders	False	False	False
@@ -3854,7 +3747,6 @@ ICD10WHO:I20.0	Unstable angina	False	False	False
 ICD10WHO:I20.1	Angina pectoris with documented spasm	False	False	False
 ICD10WHO:I20.8	Other forms of angina pectoris	False	False	False
 ICD10WHO:I20.9	Angina pectoris, unspecified	False	False	False
-ICD10WHO:I21	Acute myocardial infarction	False	False	False
 ICD10WHO:I21.0	Acute transmural myocardial infarction of anterior wall	False	False	False
 ICD10WHO:I21.1	Acute transmural myocardial infarction of inferior wall	False	False	False
 ICD10WHO:I21.2	Acute transmural myocardial infarction of other sites	False	False	False
@@ -3890,7 +3782,6 @@ ICD10WHO:I25.5	Ischaemic cardiomyopathy	False	False	False
 ICD10WHO:I25.6	Silent myocardial ischaemia	False	False	False
 ICD10WHO:I25.8	Other forms of chronic ischaemic heart disease	False	False	False
 ICD10WHO:I25.9	Chronic ischaemic heart disease, unspecified	False	False	False
-ICD10WHO:I26	Pulmonary embolism	False	False	False
 ICD10WHO:I26-I28	Pulmonary heart disease and diseases of pulmonary circulation	False	False	False
 ICD10WHO:I26.0	Pulmonary embolism with mention of acute cor pulmonale	False	False	False
 ICD10WHO:I26.9	Pulmonary embolism without mention of acute cor pulmonale	False	False	False
@@ -3957,7 +3848,6 @@ ICD10WHO:I39.2	Tricuspid valve disorders in diseases classified elsewhere	False	
 ICD10WHO:I39.3	Pulmonary valve disorders in diseases classified elsewhere	False	False	False
 ICD10WHO:I39.4	Multiple valve disorders in diseases classified elsewhere	False	False	False
 ICD10WHO:I39.8	Endocarditis, valve unspecified, in diseases classified elsewhere	False	False	False
-ICD10WHO:I40	Acute myocarditis	False	False	False
 ICD10WHO:I40.0	Infective myocarditis	False	False	False
 ICD10WHO:I40.1	Isolated myocarditis	False	False	False
 ICD10WHO:I40.8	Other acute myocarditis	False	False	False
@@ -3967,7 +3857,6 @@ ICD10WHO:I41.0	Myocarditis in bacterial diseases classified elsewhere	False	Fals
 ICD10WHO:I41.1	Myocarditis in viral diseases classified elsewhere	False	False	False
 ICD10WHO:I41.2	Myocarditis in other infectious and parasitic diseases classified elsewhere	False	False	False
 ICD10WHO:I41.8	Myocarditis in other diseases classified elsewhere	False	False	False
-ICD10WHO:I42	Cardiomyopathy	False	False	False
 ICD10WHO:I42.0	Dilated cardiomyopathy	False	False	False
 ICD10WHO:I42.1	Obstructive hypertrophic cardiomyopathy	False	False	False
 ICD10WHO:I42.2	Other hypertrophic cardiomyopathy	False	False	False
@@ -4002,7 +3891,6 @@ ICD10WHO:I45.5	Other specified heart block	False	False	False
 ICD10WHO:I45.6	Pre-excitation syndrome	False	False	False
 ICD10WHO:I45.8	Other specified conduction disorders	False	False	False
 ICD10WHO:I45.9	Conduction disorder, unspecified	False	False	False
-ICD10WHO:I46	Cardiac arrest	False	False	False
 ICD10WHO:I46.0	Cardiac arrest with successful resuscitation	False	False	False
 ICD10WHO:I46.1	Sudden cardiac death, so described	False	False	False
 ICD10WHO:I46.9	Cardiac arrest, unspecified	False	False	False
@@ -4027,7 +3915,6 @@ ICD10WHO:I49.4	Other and unspecified premature depolarization	False	False	False
 ICD10WHO:I49.5	Sick sinus syndrome	False	False	False
 ICD10WHO:I49.8	Other specified cardiac arrhythmias	False	False	False
 ICD10WHO:I49.9	Cardiac arrhythmia, unspecified	False	False	False
-ICD10WHO:I50	Heart failure	False	False	False
 ICD10WHO:I50.0	Congestive heart failure	False	False	False
 ICD10WHO:I50.1	Left ventricular failure	False	False	False
 ICD10WHO:I50.9	Heart failure, unspecified	False	False	False
@@ -4072,7 +3959,6 @@ ICD10WHO:I62	Other nontraumatic intracranial haemorrhage	False	False	False
 ICD10WHO:I62.0	Nontraumatic subdural haemorrhage	False	False	False
 ICD10WHO:I62.1	Nontraumatic extradural haemorrhage	False	False	False
 ICD10WHO:I62.9	Intracranial haemorrhage (nontraumatic), unspecified	False	False	False
-ICD10WHO:I63	Cerebral infarction	False	False	False
 ICD10WHO:I63.0	Cerebral infarction due to thrombosis of precerebral arteries	False	False	False
 ICD10WHO:I63.1	Cerebral infarction due to embolism of precerebral arteries	False	False	False
 ICD10WHO:I63.2	Cerebral infarction due to unspecified occlusion or stenosis of precerebral arteries	False	False	False
@@ -4121,7 +4007,6 @@ ICD10WHO:I69.2	Sequelae of other nontraumatic intracranial haemorrhage	False	Fal
 ICD10WHO:I69.3	Sequelae of cerebral infarction	False	False	False
 ICD10WHO:I69.4	Sequelae of stroke, not specified as haemorrhage or infarction	False	False	False
 ICD10WHO:I69.8	Sequelae of other and unspecified cerebrovascular diseases	False	False	False
-ICD10WHO:I70	Atherosclerosis	False	False	False
 ICD10WHO:I70-I79	Diseases of arteries, arterioles and capillaries	False	False	False
 ICD10WHO:I70.0	Atherosclerosis of aorta	False	False	False
 ICD10WHO:I70.1	Atherosclerosis of renal artery	False	False	False
@@ -4190,7 +4075,6 @@ ICD10WHO:I80.2	Phlebitis and thrombophlebitis of other deep vessels of lower ext
 ICD10WHO:I80.3	Phlebitis and thrombophlebitis of lower extremities, unspecified	False	False	False
 ICD10WHO:I80.8	Phlebitis and thrombophlebitis of other sites	False	False	False
 ICD10WHO:I80.9	Phlebitis and thrombophlebitis of unspecified site	False	False	False
-ICD10WHO:I81	Portal vein thrombosis	False	False	False
 ICD10WHO:I82	Other venous embolism and thrombosis	False	False	False
 ICD10WHO:I82.0	Budd-Chiari syndrome	False	False	False
 ICD10WHO:I82.1	Thrombophlebitis migrans	False	False	False
@@ -4262,11 +4146,9 @@ ICD10WHO:J01.3	Acute sphenoidal sinusitis	False	False	False
 ICD10WHO:J01.4	Acute pansinusitis	False	False	False
 ICD10WHO:J01.8	Other acute sinusitis	False	False	False
 ICD10WHO:J01.9	Acute sinusitis, unspecified	False	False	False
-ICD10WHO:J02	Acute pharyngitis	False	False	False
 ICD10WHO:J02.0	Streptococcal pharyngitis	False	False	False
 ICD10WHO:J02.8	Acute pharyngitis due to other specified organisms	False	False	False
 ICD10WHO:J02.9	Acute pharyngitis, unspecified	False	False	False
-ICD10WHO:J03	Acute tonsillitis	False	False	False
 ICD10WHO:J03.0	Streptococcal tonsillitis	False	False	False
 ICD10WHO:J03.8	Acute tonsillitis due to other specified organisms	False	False	False
 ICD10WHO:J03.9	Acute tonsillitis, unspecified	False	False	False
@@ -4338,7 +4220,6 @@ ICD10WHO:J20.6	Acute bronchitis due to rhinovirus	False	False	False
 ICD10WHO:J20.7	Acute bronchitis due to echovirus	False	False	False
 ICD10WHO:J20.8	Acute bronchitis due to other specified organisms	False	False	False
 ICD10WHO:J20.9	Acute bronchitis, unspecified	False	False	False
-ICD10WHO:J21	Acute bronchiolitis	False	False	False
 ICD10WHO:J21.0	Acute bronchiolitis due to respiratory syncytial virus	False	False	False
 ICD10WHO:J21.1	Acute bronchiolitis due to human metapneumovirus	False	False	False
 ICD10WHO:J21.8	Acute bronchiolitis due to other specified organisms	False	False	False
@@ -4381,7 +4262,6 @@ ICD10WHO:J35.2	Hypertrophy of adenoids	False	False	False
 ICD10WHO:J35.3	Hypertrophy of tonsils with hypertrophy of adenoids	False	False	False
 ICD10WHO:J35.8	Other chronic diseases of tonsils and adenoids	False	False	False
 ICD10WHO:J35.9	Chronic disease of tonsils and adenoids, unspecified	False	False	False
-ICD10WHO:J36	Peritonsillar abscess	False	False	False
 ICD10WHO:J37	Chronic laryngitis and laryngotracheitis	False	False	False
 ICD10WHO:J37.0	Chronic laryngitis	False	False	False
 ICD10WHO:J37.1	Chronic laryngotracheitis	False	False	False
@@ -4419,13 +4299,10 @@ ICD10WHO:J44.0	Chronic obstructive pulmonary disease with acute lower respirator
 ICD10WHO:J44.1	Chronic obstructive pulmonary disease with acute exacerbation, unspecified	False	False	False
 ICD10WHO:J44.8	Other specified chronic obstructive pulmonary disease	False	False	False
 ICD10WHO:J44.9	Chronic obstructive pulmonary disease, unspecified	False	False	False
-ICD10WHO:J45	Asthma	False	False	False
 ICD10WHO:J45.0	Predominantly allergic asthma	False	False	False
 ICD10WHO:J45.1	Nonallergic asthma	False	False	False
 ICD10WHO:J45.8	Mixed asthma	False	False	False
 ICD10WHO:J45.9	Asthma, unspecified	False	False	False
-ICD10WHO:J46	Status asthmaticus	False	False	False
-ICD10WHO:J47	Bronchiectasis	False	False	False
 ICD10WHO:J60	Coalworker pneumoconiosis	False	False	False
 ICD10WHO:J60-J70	Lung diseases due to external agents	False	False	False
 ICD10WHO:J61	Pneumoconiosis due to asbestos and other mineral fibres	False	False	False
@@ -4502,7 +4379,6 @@ ICD10WHO:J91	Pleural effusion in conditions classified elsewhere	False	False	Fal
 ICD10WHO:J92	Pleural plaque	False	False	False
 ICD10WHO:J92.0	Pleural plaque with presence of asbestos	False	False	False
 ICD10WHO:J92.9	Pleural plaque without asbestos	False	False	False
-ICD10WHO:J93	Pneumothorax	False	False	False
 ICD10WHO:J93.0	Spontaneous tension pneumothorax	False	False	False
 ICD10WHO:J93.1	Other spontaneous pneumothorax	False	False	False
 ICD10WHO:J93.8	Other pneumothorax	False	False	False
@@ -4557,7 +4433,6 @@ ICD10WHO:K00.9	Disorder of tooth development, unspecified	False	False	False
 ICD10WHO:K01	Embedded and impacted teeth	False	False	False
 ICD10WHO:K01.0	Embedded teeth	False	False	False
 ICD10WHO:K01.1	Impacted teeth	False	False	False
-ICD10WHO:K02	Dental caries	False	False	False
 ICD10WHO:K02.0	Caries limited to enamel	False	False	False
 ICD10WHO:K02.1	Caries of dentine	False	False	False
 ICD10WHO:K02.2	Caries of cementum	False	False	False
@@ -4687,7 +4562,6 @@ ICD10WHO:K23	Disorders of oesophagus in diseases classified elsewhere	False	Fals
 ICD10WHO:K23.0	Tuberculous oesophagitis	False	False	False
 ICD10WHO:K23.1	Megaoesophagus in Chagas disease	False	False	False
 ICD10WHO:K23.8	Disorders of oesophagus in other diseases classified elsewhere	False	False	False
-ICD10WHO:K25	Gastric ulcer	False	False	False
 ICD10WHO:K25.0	Gastric ulcer : acute with haemorrhage	False	False	False
 ICD10WHO:K25.1	Gastric ulcer : acute with perforation	False	False	False
 ICD10WHO:K25.2	Gastric ulcer : acute with both haemorrhage and perforation	False	False	False
@@ -4697,7 +4571,6 @@ ICD10WHO:K25.5	Gastric ulcer : chronic or unspecified with perforation	False	Fal
 ICD10WHO:K25.6	Gastric ulcer : chronic or unspecified with both haemorrhage and perforation	False	False	False
 ICD10WHO:K25.7	Gastric ulcer : chronic without haemorrhage or perforation	False	False	False
 ICD10WHO:K25.9	Gastric ulcer : unspecified as acute or chronic, without haemorrhage or perforation	False	False	False
-ICD10WHO:K26	Duodenal ulcer	False	False	False
 ICD10WHO:K26.0	Duodenal ulcer : acute with haemorrhage	False	False	False
 ICD10WHO:K26.1	Duodenal ulcer : acute with perforation	False	False	False
 ICD10WHO:K26.2	Duodenal ulcer : acute with both haemorrhage and perforation	False	False	False
@@ -4717,7 +4590,6 @@ ICD10WHO:K27.5	Peptic ulcer, site unspecified : chronic or unspecified with perf
 ICD10WHO:K27.6	Peptic ulcer, site unspecified : chronic or unspecified with both haemorrhage and perforation	False	False	False
 ICD10WHO:K27.7	Peptic ulcer, site unspecified : chronic without haemorrhage or perforation	False	False	False
 ICD10WHO:K27.9	Peptic ulcer, site unspecified : unspecified as acute or chronic, without haemorrhage or perforation	False	False	False
-ICD10WHO:K28	Gastrojejunal ulcer	False	False	False
 ICD10WHO:K28.0	Gastrojejunal ulcer : acute with haemorrhage	False	False	False
 ICD10WHO:K28.1	Gastrojejunal ulcer : acute with perforation	False	False	False
 ICD10WHO:K28.2	Gastrojejunal ulcer : acute with both haemorrhage and perforation	False	False	False
@@ -4811,7 +4683,6 @@ ICD10WHO:K50.0	Crohn disease of small intestine	False	False	False
 ICD10WHO:K50.1	Crohn disease of large intestine	False	False	False
 ICD10WHO:K50.8	Other Crohn disease	False	False	False
 ICD10WHO:K50.9	Crohn disease, unspecified	False	False	False
-ICD10WHO:K51	Ulcerative colitis	False	False	False
 ICD10WHO:K51.0	Ulcerative (chronic) pancolitis	False	False	False
 ICD10WHO:K51.2	Ulcerative (chronic) proctitis	False	False	False
 ICD10WHO:K51.3	Ulcerative (chronic) rectosigmoiditis	False	False	False
@@ -4852,7 +4723,6 @@ ICD10WHO:K57.4	Diverticular disease of both small and large intestine with perfo
 ICD10WHO:K57.5	Diverticular disease of both small and large intestine without perforation or abscess	False	False	False
 ICD10WHO:K57.8	Diverticular disease of intestine, part unspecified, with perforation and abscess	False	False	False
 ICD10WHO:K57.9	Diverticular disease of intestine, part unspecified, without perforation or abscess	False	False	False
-ICD10WHO:K58	Irritable bowel syndrome	False	False	False
 ICD10WHO:K58.1	Irritable bowel syndrome with predominant diarrhoea [IBS-D]	False	False	False
 ICD10WHO:K58.2	Irritable bowel syndrome with predominant constipation [IBS-C]	False	False	False
 ICD10WHO:K58.3	Irritable bowel syndrome with mixed bowel habits [IBS-M]	False	False	False
@@ -4907,7 +4777,6 @@ ICD10WHO:K64.4	Residual haemorrhoidal skin tags	False	False	False
 ICD10WHO:K64.5	Perianal venous thrombosis	False	False	False
 ICD10WHO:K64.8	Other specified haemorrhoids	False	False	False
 ICD10WHO:K64.9	Haemorrhoids, unspecified	False	False	False
-ICD10WHO:K65	Peritonitis	False	False	False
 ICD10WHO:K65-K67	Diseases of peritoneum	False	False	False
 ICD10WHO:K65.0	Acute peritonitis	False	False	False
 ICD10WHO:K65.8	Other peritonitis	False	False	False
@@ -4983,7 +4852,6 @@ ICD10WHO:K76.9	Liver disease, unspecified	False	False	False
 ICD10WHO:K77	Liver disorders in diseases classified elsewhere	False	False	False
 ICD10WHO:K77.0	Liver disorders in infectious and parasitic diseases classified elsewhere	False	False	False
 ICD10WHO:K77.8	Liver disorders in other diseases classified elsewhere	False	False	False
-ICD10WHO:K80	Cholelithiasis	False	False	False
 ICD10WHO:K80-K87	Disorders of gallbladder, biliary tract and pancreas	False	False	False
 ICD10WHO:K80.0	Calculus of gallbladder with acute cholecystitis	False	False	False
 ICD10WHO:K80.1	Calculus of gallbladder with other cholecystitis	False	False	False
@@ -4992,7 +4860,6 @@ ICD10WHO:K80.3	Calculus of bile duct with cholangitis	False	False	False
 ICD10WHO:K80.4	Calculus of bile duct with cholecystitis	False	False	False
 ICD10WHO:K80.5	Calculus of bile duct without cholangitis or cholecystitis	False	False	False
 ICD10WHO:K80.8	Other cholelithiasis	False	False	False
-ICD10WHO:K81	Cholecystitis	False	False	False
 ICD10WHO:K81.0	Acute cholecystitis	False	False	False
 ICD10WHO:K81.1	Chronic cholecystitis	False	False	False
 ICD10WHO:K81.8	Other cholecystitis	False	False	False
@@ -5014,7 +4881,6 @@ ICD10WHO:K83.4	Spasm of sphincter of Oddi	False	False	False
 ICD10WHO:K83.5	Biliary cyst	False	False	False
 ICD10WHO:K83.8	Other specified diseases of biliary tract	False	False	False
 ICD10WHO:K83.9	Disease of biliary tract, unspecified	False	False	False
-ICD10WHO:K85	Acute pancreatitis	False	False	False
 ICD10WHO:K85.0	Idiopathic acute pancreatitis	False	False	False
 ICD10WHO:K85.1	Biliary acute pancreatitis	False	False	False
 ICD10WHO:K85.2	Alcohol-induced acute pancreatitis	False	False	False
@@ -5059,9 +4925,7 @@ ICD10WHO:K93	Disorders of other digestive organs in diseases classified elsewher
 ICD10WHO:K93.0	Tuberculous disorders of intestines, peritoneum and mesenteric glands	False	False	False
 ICD10WHO:K93.1	Megacolon in Chagas disease	False	False	False
 ICD10WHO:K93.8	Disorders of other specified digestive organs in diseases classified elsewhere	False	False	False
-ICD10WHO:L00	Staphylococcal scalded skin syndrome	False	False	False
 ICD10WHO:L00-L08	Infections of the skin and subcutaneous tissue	False	False	False
-ICD10WHO:L01	Impetigo	False	False	False
 ICD10WHO:L01.0	Impetigo [any organism] [any site]	False	False	False
 ICD10WHO:L01.1	Impetiginization of other dermatoses	False	False	False
 ICD10WHO:L02	Cutaneous abscess, furuncle and carbuncle	False	False	False
@@ -5072,7 +4936,6 @@ ICD10WHO:L02.3	Cutaneous abscess, furuncle and carbuncle of buttock	False	False	
 ICD10WHO:L02.4	Cutaneous abscess, furuncle and carbuncle of limb	False	False	False
 ICD10WHO:L02.8	Cutaneous abscess, furuncle and carbuncle of other sites	False	False	False
 ICD10WHO:L02.9	Cutaneous abscess, furuncle and carbuncle, unspecified	False	False	False
-ICD10WHO:L03	Cellulitis	False	False	False
 ICD10WHO:L03.0	Cellulitis of finger and toe	False	False	False
 ICD10WHO:L03.1	Cellulitis of other parts of limb	False	False	False
 ICD10WHO:L03.2	Cellulitis of face	False	False	False
@@ -5094,7 +4957,6 @@ ICD10WHO:L08.0	Pyoderma	False	False	False
 ICD10WHO:L08.1	Erythrasma	False	False	False
 ICD10WHO:L08.8	Other specified local infections of skin and subcutaneous tissue	False	False	False
 ICD10WHO:L08.9	Local infection of skin and subcutaneous tissue, unspecified	False	False	False
-ICD10WHO:L10	Pemphigus	False	False	False
 ICD10WHO:L10-L14	Bullous disorders	False	False	False
 ICD10WHO:L10.0	Pemphigus vulgaris	False	False	False
 ICD10WHO:L10.1	Pemphigus vegetans	False	False	False
@@ -5109,7 +4971,6 @@ ICD10WHO:L11.0	Acquired keratosis follicularis	False	False	False
 ICD10WHO:L11.1	Transient acantholytic dermatosis [Grover]	False	False	False
 ICD10WHO:L11.8	Other specified acantholytic disorders	False	False	False
 ICD10WHO:L11.9	Acantholytic disorder, unspecified	False	False	False
-ICD10WHO:L12	Pemphigoid	False	False	False
 ICD10WHO:L12.0	Bullous pemphigoid	False	False	False
 ICD10WHO:L12.1	Cicatricial pemphigoid	False	False	False
 ICD10WHO:L12.2	Chronic bullous disease of childhood	False	False	False
@@ -5133,7 +4994,6 @@ ICD10WHO:L21.1	Seborrhoeic infantile dermatitis	False	False	False
 ICD10WHO:L21.8	Other seborrhoeic dermatitis	False	False	False
 ICD10WHO:L21.9	Seborrhoeic dermatitis, unspecified	False	False	False
 ICD10WHO:L22	Diaper [napkin] dermatitis	False	False	False
-ICD10WHO:L23	Allergic contact dermatitis	False	False	False
 ICD10WHO:L23.0	Allergic contact dermatitis due to metals	False	False	False
 ICD10WHO:L23.1	Allergic contact dermatitis due to adhesives	False	False	False
 ICD10WHO:L23.2	Allergic contact dermatitis due to cosmetics	False	False	False
@@ -5164,7 +5024,6 @@ ICD10WHO:L25.4	Unspecified contact dermatitis due to food in contact with skin	F
 ICD10WHO:L25.5	Unspecified contact dermatitis due to plants, except food	False	False	False
 ICD10WHO:L25.8	Unspecified contact dermatitis due to other agents	False	False	False
 ICD10WHO:L25.9	Unspecified contact dermatitis, unspecified cause	False	False	False
-ICD10WHO:L26	Exfoliative dermatitis	False	False	False
 ICD10WHO:L27	Dermatitis due to substances taken internally	False	False	False
 ICD10WHO:L27.0	Generalized skin eruption due to drugs and medicaments	False	False	False
 ICD10WHO:L27.1	Localized skin eruption due to drugs and medicaments	False	False	False
@@ -5191,7 +5050,6 @@ ICD10WHO:L30.4	Erythema intertrigo	False	False	False
 ICD10WHO:L30.5	Pityriasis alba	False	False	False
 ICD10WHO:L30.8	Other specified dermatitis	False	False	False
 ICD10WHO:L30.9	Dermatitis, unspecified	False	False	False
-ICD10WHO:L40	Psoriasis	False	False	False
 ICD10WHO:L40-L45	Papulosquamous disorders	False	False	False
 ICD10WHO:L40.0	Psoriasis vulgaris	False	False	False
 ICD10WHO:L40.1	Generalized pustular psoriasis	False	False	False
@@ -5201,7 +5059,6 @@ ICD10WHO:L40.4	Guttate psoriasis	False	False	False
 ICD10WHO:L40.5	Arthropathic psoriasis	False	False	False
 ICD10WHO:L40.8	Other psoriasis	False	False	False
 ICD10WHO:L40.9	Psoriasis, unspecified	False	False	False
-ICD10WHO:L41	Parapsoriasis	False	False	False
 ICD10WHO:L41.0	Pityriasis lichenoides et varioliformis acuta	False	False	False
 ICD10WHO:L41.1	Pityriasis lichenoides chronica	False	False	False
 ICD10WHO:L41.3	Small plaque parapsoriasis	False	False	False
@@ -5209,8 +5066,6 @@ ICD10WHO:L41.4	Large plaque parapsoriasis	False	False	False
 ICD10WHO:L41.5	Retiform parapsoriasis	False	False	False
 ICD10WHO:L41.8	Other parapsoriasis	False	False	False
 ICD10WHO:L41.9	Parapsoriasis, unspecified	False	False	False
-ICD10WHO:L42	Pityriasis rosea	False	False	False
-ICD10WHO:L43	Lichen planus	False	False	False
 ICD10WHO:L43.0	Hypertrophic lichen planus	False	False	False
 ICD10WHO:L43.1	Bullous lichen planus	False	False	False
 ICD10WHO:L43.2	Lichenoid drug reaction	False	False	False
@@ -5226,7 +5081,6 @@ ICD10WHO:L44.4	Infantile papular acrodermatitis [Giannotti-Crosti]	False	False	F
 ICD10WHO:L44.8	Other specified papulosquamous disorders	False	False	False
 ICD10WHO:L44.9	Papulosquamous disorder, unspecified	False	False	False
 ICD10WHO:L45	Papulosquamous disorders in diseases classified elsewhere	False	False	False
-ICD10WHO:L50	Urticaria	False	False	False
 ICD10WHO:L50-L54	Urticaria and erythema	False	False	False
 ICD10WHO:L50.0	Allergic urticaria	False	False	False
 ICD10WHO:L50.1	Idiopathic urticaria	False	False	False
@@ -5237,13 +5091,11 @@ ICD10WHO:L50.5	Cholinergic urticaria	False	False	False
 ICD10WHO:L50.6	Contact urticaria	False	False	False
 ICD10WHO:L50.8	Other urticaria	False	False	False
 ICD10WHO:L50.9	Urticaria, unspecified	False	False	False
-ICD10WHO:L51	Erythema multiforme	False	False	False
 ICD10WHO:L51.0	Nonbullous erythema multiforme	False	False	False
 ICD10WHO:L51.1	Bullous erythema multiforme	False	False	False
 ICD10WHO:L51.2	Toxic epidermal necrolysis [Lyell]	False	False	False
 ICD10WHO:L51.8	Other erythema multiforme	False	False	False
 ICD10WHO:L51.9	Erythema multiforme, unspecified	False	False	False
-ICD10WHO:L52	Erythema nodosum	False	False	False
 ICD10WHO:L53	Other erythematous conditions	False	False	False
 ICD10WHO:L53.0	Toxic erythema	False	False	False
 ICD10WHO:L53.1	Erythema annulare centrifugum	False	False	False
@@ -5254,7 +5106,6 @@ ICD10WHO:L53.9	Erythematous condition, unspecified	False	False	False
 ICD10WHO:L54	Erythema in diseases classified elsewhere	False	False	False
 ICD10WHO:L54.0	Erythema marginatum in acute rheumatic fever	False	False	False
 ICD10WHO:L54.8	Erythema in other diseases classified elsewhere	False	False	False
-ICD10WHO:L55	Sunburn	False	False	False
 ICD10WHO:L55-L59	Radiation-related disorders of the skin and subcutaneous tissue	False	False	False
 ICD10WHO:L55.0	Sunburn of first degree	False	False	False
 ICD10WHO:L55.1	Sunburn of second degree	False	False	False
@@ -5278,7 +5129,6 @@ ICD10WHO:L57.4	Cutis laxa senilis	False	False	False
 ICD10WHO:L57.5	Actinic granuloma	False	False	False
 ICD10WHO:L57.8	Other skin changes due to chronic exposure to nonionizing radiation	False	False	False
 ICD10WHO:L57.9	Skin changes due to chronic exposure to nonionizing radiation, unspecified	False	False	False
-ICD10WHO:L58	Radiodermatitis	False	False	False
 ICD10WHO:L58.0	Acute radiodermatitis	False	False	False
 ICD10WHO:L58.1	Chronic radiodermatitis	False	False	False
 ICD10WHO:L58.9	Radiodermatitis, unspecified	False	False	False
@@ -5299,7 +5149,6 @@ ICD10WHO:L60.9	Nail disorder, unspecified	False	False	False
 ICD10WHO:L62	Nail disorders in diseases classified elsewhere	False	False	False
 ICD10WHO:L62.0	Clubbed nail pachydermoperiostosis	False	False	False
 ICD10WHO:L62.8	Nail disorders in other diseases classified elsewhere	False	False	False
-ICD10WHO:L63	Alopecia areata	False	False	False
 ICD10WHO:L63.0	Alopecia (capitis) totalis	False	False	False
 ICD10WHO:L63.1	Alopecia universalis	False	False	False
 ICD10WHO:L63.2	Ophiasis	False	False	False
@@ -5328,14 +5177,12 @@ ICD10WHO:L67.0	Trichorrhexis nodosa	False	False	False
 ICD10WHO:L67.1	Variations in hair colour	False	False	False
 ICD10WHO:L67.8	Other hair colour and hair shaft abnormalities	False	False	False
 ICD10WHO:L67.9	Hair colour and hair shaft abnormality, unspecified	False	False	False
-ICD10WHO:L68	Hypertrichosis	False	False	False
 ICD10WHO:L68.0	Hirsutism	False	False	False
 ICD10WHO:L68.1	Acquired hypertrichosis lanuginosa	False	False	False
 ICD10WHO:L68.2	Localized hypertrichosis	False	False	False
 ICD10WHO:L68.3	Polytrichia	False	False	False
 ICD10WHO:L68.8	Other hypertrichosis	False	False	False
 ICD10WHO:L68.9	Hypertrichosis, unspecified	False	False	False
-ICD10WHO:L70	Acne	False	False	False
 ICD10WHO:L70.0	Acne vulgaris	False	False	False
 ICD10WHO:L70.1	Acne conglobata	False	False	False
 ICD10WHO:L70.2	Acne varioliformis	False	False	False
@@ -5344,7 +5191,6 @@ ICD10WHO:L70.4	Infantile acne	False	False	False
 ICD10WHO:L70.5	Acné excoriée	False	False	False
 ICD10WHO:L70.8	Other acne	False	False	False
 ICD10WHO:L70.9	Acne, unspecified	False	False	False
-ICD10WHO:L71	Rosacea	False	False	False
 ICD10WHO:L71.0	Perioral dermatitis	False	False	False
 ICD10WHO:L71.1	Rhinophyma	False	False	False
 ICD10WHO:L71.8	Other rosacea	False	False	False
@@ -5375,7 +5221,6 @@ ICD10WHO:L75.1	Chromhidrosis	False	False	False
 ICD10WHO:L75.2	Apocrine miliaria	False	False	False
 ICD10WHO:L75.8	Other apocrine sweat disorders	False	False	False
 ICD10WHO:L75.9	Apocrine sweat disorder, unspecified	False	False	False
-ICD10WHO:L80	Vitiligo	False	False	False
 ICD10WHO:L80-L99	Other disorders of the skin and subcutaneous tissue	False	False	False
 ICD10WHO:L81	Other disorders of pigmentation	False	False	False
 ICD10WHO:L81.0	Postinflammatory hyperpigmentation	False	False	False
@@ -5389,7 +5234,6 @@ ICD10WHO:L81.7	Pigmented purpuric dermatosis	False	False	False
 ICD10WHO:L81.8	Other specified disorders of pigmentation	False	False	False
 ICD10WHO:L81.9	Disorder of pigmentation, unspecified	False	False	False
 ICD10WHO:L82	Seborrhoeic keratosis	False	False	False
-ICD10WHO:L83	Acanthosis nigricans	False	False	False
 ICD10WHO:L84	Corns and callosities	False	False	False
 ICD10WHO:L85	Other epidermal thickening	False	False	False
 ICD10WHO:L85.0	Acquired ichthyosis	False	False	False
@@ -5405,7 +5249,6 @@ ICD10WHO:L87.1	Reactive perforating collagenosis	False	False	False
 ICD10WHO:L87.2	Elastosis perforans serpiginosa	False	False	False
 ICD10WHO:L87.8	Other transepidermal elimination disorders	False	False	False
 ICD10WHO:L87.9	Transepidermal elimination disorder, unspecified	False	False	False
-ICD10WHO:L88	Pyoderma gangrenosum	False	False	False
 ICD10WHO:L89	Decubitus ulcer and pressure area	False	False	False
 ICD10WHO:L89.0	Stage I decubitus ulcer and pressure area	False	False	False
 ICD10WHO:L89.1	Stage II decubitus ulcer	False	False	False
@@ -5433,7 +5276,6 @@ ICD10WHO:L92.2	Granuloma faciale [eosinophilic granuloma of skin]	False	False	Fa
 ICD10WHO:L92.3	Foreign body granuloma of skin and subcutaneous tissue	False	False	False
 ICD10WHO:L92.8	Other granulomatous disorders of skin and subcutaneous tissue	False	False	False
 ICD10WHO:L92.9	Granulomatous disorder of skin and subcutaneous tissue, unspecified	False	False	False
-ICD10WHO:L93	Lupus erythematosus	False	False	False
 ICD10WHO:L93.0	Discoid lupus erythematosus	False	False	False
 ICD10WHO:L93.1	Subacute cutaneous lupus erythematosus	False	False	False
 ICD10WHO:L93.2	Other local lupus erythematosus	False	False	False
@@ -5686,7 +5528,6 @@ ICD10WHO:M31.6	Other giant cell arteritis	False	False	False
 ICD10WHO:M31.7	Microscopic polyangiitis	False	False	False
 ICD10WHO:M31.8	Other specified necrotizing vasculopathies	False	False	False
 ICD10WHO:M31.9	Necrotizing vasculopathy, unspecified	False	False	False
-ICD10WHO:M32	Systemic lupus erythematosus	False	False	False
 ICD10WHO:M32.0	Drug-induced systemic lupus erythematosus	False	False	False
 ICD10WHO:M32.1	Systemic lupus erythematosus with organ or system involvement	False	False	False
 ICD10WHO:M32.8	Other forms of systemic lupus erythematosus	False	False	False
@@ -5696,7 +5537,6 @@ ICD10WHO:M33.0	Juvenile dermatomyositis	False	False	False
 ICD10WHO:M33.1	Other dermatomyositis	False	False	False
 ICD10WHO:M33.2	Polymyositis	False	False	False
 ICD10WHO:M33.9	Dermatopolymyositis, unspecified	False	False	False
-ICD10WHO:M34	Systemic sclerosis	False	False	False
 ICD10WHO:M34.0	Progressive systemic sclerosis	False	False	False
 ICD10WHO:M34.1	CR(E)ST syndrome	False	False	False
 ICD10WHO:M34.2	Systemic sclerosis induced by drugs and chemicals	False	False	False
@@ -5729,7 +5569,6 @@ ICD10WHO:M40.2	Other and unspecified kyphosis	False	False	False
 ICD10WHO:M40.3	Flatback syndrome	False	False	False
 ICD10WHO:M40.4	Other lordosis	False	False	False
 ICD10WHO:M40.5	Lordosis, unspecified	False	False	False
-ICD10WHO:M41	Scoliosis	False	False	False
 ICD10WHO:M41.0	Infantile idiopathic scoliosis	False	False	False
 ICD10WHO:M41.1	Juvenile idiopathic scoliosis	False	False	False
 ICD10WHO:M41.2	Other idiopathic scoliosis	False	False	False
@@ -5752,7 +5591,6 @@ ICD10WHO:M43.5	Other recurrent vertebral subluxation	False	False	False
 ICD10WHO:M43.6	Torticollis	False	False	False
 ICD10WHO:M43.8	Other specified deforming dorsopathies	False	False	False
 ICD10WHO:M43.9	Deforming dorsopathy, unspecified	False	False	False
-ICD10WHO:M45	Ankylosing spondylitis	False	False	False
 ICD10WHO:M45-M49	Spondylopathies	False	False	False
 ICD10WHO:M46	Other inflammatory spondylopathies	False	False	False
 ICD10WHO:M46.0	Spinal enthesopathy	False	False	False
@@ -5763,7 +5601,6 @@ ICD10WHO:M46.4	Discitis, unspecified	False	False	False
 ICD10WHO:M46.5	Other infective spondylopathies	False	False	False
 ICD10WHO:M46.8	Other specified inflammatory spondylopathies	False	False	False
 ICD10WHO:M46.9	Inflammatory spondylopathy, unspecified	False	False	False
-ICD10WHO:M47	Spondylosis	False	False	False
 ICD10WHO:M47.0	Anterior spinal and vertebral artery compression syndromes	False	False	False
 ICD10WHO:M47.1	Other spondylosis with myelopathy	False	False	False
 ICD10WHO:M47.2	Other spondylosis with radiculopathy	False	False	False
@@ -6003,7 +5840,6 @@ ICD10WHO:M85.5	Aneurysmal bone cyst	False	False	False
 ICD10WHO:M85.6	Other cyst of bone	False	False	False
 ICD10WHO:M85.8	Other specified disorders of bone density and structure	False	False	False
 ICD10WHO:M85.9	Disorder of bone density and structure, unspecified	False	False	False
-ICD10WHO:M86	Osteomyelitis	False	False	False
 ICD10WHO:M86-M90	Other osteopathies	False	False	False
 ICD10WHO:M86.0	Acute haematogenous osteomyelitis	False	False	False
 ICD10WHO:M86.1	Other acute osteomyelitis	False	False	False
@@ -6014,7 +5850,6 @@ ICD10WHO:M86.5	Other chronic haematogenous osteomyelitis	False	False	False
 ICD10WHO:M86.6	Other chronic osteomyelitis	False	False	False
 ICD10WHO:M86.8	Other osteomyelitis	False	False	False
 ICD10WHO:M86.9	Osteomyelitis, unspecified	False	False	False
-ICD10WHO:M87	Osteonecrosis	False	False	False
 ICD10WHO:M87.0	Idiopathic aseptic necrosis of bone	False	False	False
 ICD10WHO:M87.1	Osteonecrosis due to drugs	False	False	False
 ICD10WHO:M87.2	Osteonecrosis due to previous trauma	False	False	False
@@ -6153,7 +5988,6 @@ ICD10WHO:N03.6	Chronic nephritic syndrome : dense deposit disease	False	False	Fa
 ICD10WHO:N03.7	Chronic nephritic syndrome : diffuse crescentic glomerulonephritis	False	False	False
 ICD10WHO:N03.8	Chronic nephritic syndrome : other	False	False	False
 ICD10WHO:N03.9	Chronic nephritic syndrome : unspecified	False	False	False
-ICD10WHO:N04	Nephrotic syndrome	False	False	False
 ICD10WHO:N04.0	Nephrotic syndrome : minor glomerular abnormality	False	False	False
 ICD10WHO:N04.1	Nephrotic syndrome : focal and segmental glomerular lesions	False	False	False
 ICD10WHO:N04.2	Nephrotic syndrome : diffuse membranous glomerulonephritis	False	False	False
@@ -6250,7 +6084,6 @@ ICD10WHO:N17.1	Acute renal failure with acute cortical necrosis	False	False	Fals
 ICD10WHO:N17.2	Acute renal failure with medullary necrosis	False	False	False
 ICD10WHO:N17.8	Other acute renal failure	False	False	False
 ICD10WHO:N17.9	Acute renal failure, unspecified	False	False	False
-ICD10WHO:N18	Chronic kidney disease	False	False	False
 ICD10WHO:N18.1	Chronic kidney disease, stage 1	False	False	False
 ICD10WHO:N18.2	Chronic kidney disease, stage 2	False	False	False
 ICD10WHO:N18.3	Chronic kidney disease, stage 3	False	False	False
@@ -6259,7 +6092,6 @@ ICD10WHO:N18.5	Chronic kidney disease, stage 5	False	False	False
 ICD10WHO:N18.9	Chronic kidney disease, unspecified	False	False	False
 ICD10WHO:N19	Unspecified kidney failure	False	False	False
 ICD10WHO:N20	Calculus of kidney and ureter	False	False	False
-ICD10WHO:N20-N23	Urolithiasis	False	False	False
 ICD10WHO:N20.0	Calculus of kidney	False	False	False
 ICD10WHO:N20.1	Calculus of ureter	False	False	False
 ICD10WHO:N20.2	Calculus of kidney with calculus of ureter	False	False	False
@@ -6293,7 +6125,6 @@ ICD10WHO:N29	Other disorders of kidney and ureter in diseases classified elsewhe
 ICD10WHO:N29.0	Late syphilis of kidney	False	False	False
 ICD10WHO:N29.1	Other disorders of kidney and ureter in infectious and parasitic diseases classified elsewhere	False	False	False
 ICD10WHO:N29.8	Other disorders of kidney and ureter in other diseases classified elsewhere	False	False	False
-ICD10WHO:N30	Cystitis	False	False	False
 ICD10WHO:N30-N39	Other diseases of urinary system	False	False	False
 ICD10WHO:N30.0	Acute cystitis	False	False	False
 ICD10WHO:N30.1	Interstitial cystitis (chronic)	False	False	False
@@ -6324,7 +6155,6 @@ ICD10WHO:N34.0	Urethral abscess	False	False	False
 ICD10WHO:N34.1	Nonspecific urethritis	False	False	False
 ICD10WHO:N34.2	Other urethritis	False	False	False
 ICD10WHO:N34.3	Urethral syndrome, unspecified	False	False	False
-ICD10WHO:N35	Urethral stricture	False	False	False
 ICD10WHO:N35.0	Post-traumatic urethral stricture	False	False	False
 ICD10WHO:N35.1	Postinfective urethral stricture, not elsewhere classified	False	False	False
 ICD10WHO:N35.8	Other urethral stricture	False	False	False
@@ -6371,7 +6201,6 @@ ICD10WHO:N44	Torsion of testis	False	False	False
 ICD10WHO:N45	Orchitis and epididymitis	False	False	False
 ICD10WHO:N45.0	Orchitis, epididymitis and epididymo-orchitis with abscess	False	False	False
 ICD10WHO:N45.9	Orchitis, epididymitis and epididymo-orchitis without abscess	False	False	False
-ICD10WHO:N46	Male infertility	False	False	False
 ICD10WHO:N47	Redundant prepuce, phimosis and paraphimosis	False	False	False
 ICD10WHO:N48	Other disorders of penis	False	False	False
 ICD10WHO:N48.0	Leukoplakia of penis	False	False	False
@@ -6398,7 +6227,6 @@ ICD10WHO:N51.0	Disorders of prostate in diseases classified elsewhere	False	Fals
 ICD10WHO:N51.1	Disorders of testis and epididymis in diseases classified elsewhere	False	False	False
 ICD10WHO:N51.2	Balanitis in diseases classified elsewhere	False	False	False
 ICD10WHO:N51.8	Other disorders of male genital organs in diseases classified elsewhere	False	False	False
-ICD10WHO:N60	Benign mammary dysplasia	False	False	False
 ICD10WHO:N60-N64	Disorders of breast	False	False	False
 ICD10WHO:N60.0	Solitary cyst of breast	False	False	False
 ICD10WHO:N60.1	Diffuse cystic mastopathy	False	False	False
@@ -6408,7 +6236,6 @@ ICD10WHO:N60.4	Mammary duct ectasia	False	False	False
 ICD10WHO:N60.8	Other benign mammary dysplasias	False	False	False
 ICD10WHO:N60.9	Benign mammary dysplasia, unspecified	False	False	False
 ICD10WHO:N61	Inflammatory disorders of breast	False	False	False
-ICD10WHO:N62	Hypertrophy of breast	False	False	False
 ICD10WHO:N63	Unspecified lump in breast	False	False	False
 ICD10WHO:N64	Other disorders of breast	False	False	False
 ICD10WHO:N64.0	Fissure and fistula of nipple	False	False	False
@@ -6464,7 +6291,6 @@ ICD10WHO:N77	Vulvovaginal ulceration and inflammation in diseases classified els
 ICD10WHO:N77.0	Ulceration of vulva in infectious and parasitic diseases classified elsewhere	False	False	False
 ICD10WHO:N77.1	Vaginitis, vulvitis and vulvovaginitis in infectious and parasitic diseases classified elsewhere	False	False	False
 ICD10WHO:N77.8	Vulvovaginal ulceration and inflammation in other diseases classified elsewhere	False	False	False
-ICD10WHO:N80	Endometriosis	False	False	False
 ICD10WHO:N80-N98	Noninflammatory disorders of female genital tract	False	False	False
 ICD10WHO:N80.0	Endometriosis of uterus	False	False	False
 ICD10WHO:N80.1	Endometriosis of ovary	False	False	False
@@ -6596,7 +6422,6 @@ ICD10WHO:N95.3	States associated with artificial menopause	False	False	False
 ICD10WHO:N95.8	Other specified menopausal and perimenopausal disorders	False	False	False
 ICD10WHO:N95.9	Menopausal and perimenopausal disorder, unspecified	False	False	False
 ICD10WHO:N96	Habitual aborter	False	False	False
-ICD10WHO:N97	Female infertility	False	False	False
 ICD10WHO:N97.0	Female infertility associated with anovulation	False	False	False
 ICD10WHO:N97.1	Female infertility of tubal origin	False	False	False
 ICD10WHO:N97.2	Female infertility of uterine origin	False	False	False
@@ -6621,14 +6446,12 @@ ICD10WHO:N99.4	Postprocedural pelvic peritoneal adhesions	False	False	False
 ICD10WHO:N99.5	Malfunction of external stoma of urinary tract	False	False	False
 ICD10WHO:N99.8	Other postprocedural disorders of genitourinary system	False	False	False
 ICD10WHO:N99.9	Postprocedural disorder of genitourinary system, unspecified	False	False	False
-ICD10WHO:O00	Ectopic pregnancy	False	False	False
 ICD10WHO:O00-O08	Pregnancy with abortive outcome	False	False	False
 ICD10WHO:O00.0	Abdominal pregnancy	False	False	False
 ICD10WHO:O00.1	Tubal pregnancy	False	False	False
 ICD10WHO:O00.2	Ovarian pregnancy	False	False	False
 ICD10WHO:O00.8	Other ectopic pregnancy	False	False	False
 ICD10WHO:O00.9	Ectopic pregnancy, unspecified	False	False	False
-ICD10WHO:O01	Hydatidiform mole	False	False	False
 ICD10WHO:O01.0	Classical hydatidiform mole	False	False	False
 ICD10WHO:O01.1	Incomplete and partial hydatidiform mole	False	False	False
 ICD10WHO:O01.9	Hydatidiform mole, unspecified	False	False	False
@@ -6722,7 +6545,6 @@ ICD10WHO:O14.0	Mild to moderate pre-eclampsia	False	False	False
 ICD10WHO:O14.1	Severe pre-eclampsia	False	False	False
 ICD10WHO:O14.2	HELLP syndrome	False	False	False
 ICD10WHO:O14.9	Pre-eclampsia, unspecified	False	False	False
-ICD10WHO:O15	Eclampsia	False	False	False
 ICD10WHO:O15.0	Eclampsia in pregnancy	False	False	False
 ICD10WHO:O15.1	Eclampsia in labour	False	False	False
 ICD10WHO:O15.2	Eclampsia in the puerperium	False	False	False
@@ -6860,7 +6682,6 @@ ICD10WHO:O36.6	Maternal care for excessive fetal growth	False	False	False
 ICD10WHO:O36.7	Maternal care for viable fetus in abdominal pregnancy	False	False	False
 ICD10WHO:O36.8	Maternal care for other specified fetal problems	False	False	False
 ICD10WHO:O36.9	Maternal care for fetal problem, unspecified	False	False	False
-ICD10WHO:O40	Polyhydramnios	False	False	False
 ICD10WHO:O41	Other disorders of amniotic fluid and membranes	False	False	False
 ICD10WHO:O41.0	Oligohydramnios	False	False	False
 ICD10WHO:O41.1	Infection of amniotic sac and membranes	False	False	False
@@ -6877,7 +6698,6 @@ ICD10WHO:O43.1	Malformation of placenta	False	False	False
 ICD10WHO:O43.2	Morbidly adherent placenta	False	False	False
 ICD10WHO:O43.8	Other placental disorders	False	False	False
 ICD10WHO:O43.9	Placental disorder, unspecified	False	False	False
-ICD10WHO:O44	Placenta praevia	False	False	False
 ICD10WHO:O44.0	Placenta praevia specified as without haemorrhage	False	False	False
 ICD10WHO:O44.1	Placenta praevia with haemorrhage	False	False	False
 ICD10WHO:O45	Premature separation of placenta [abruptio placentae]	False	False	False
@@ -7540,8 +7360,6 @@ ICD10WHO:Q01.1	Nasofrontal encephalocele	False	False	False
 ICD10WHO:Q01.2	Occipital encephalocele	False	False	False
 ICD10WHO:Q01.8	Encephalocele of other sites	False	False	False
 ICD10WHO:Q01.9	Encephalocele, unspecified	False	False	False
-ICD10WHO:Q02	Microcephaly	False	False	False
-ICD10WHO:Q03	Congenital hydrocephalus	False	False	False
 ICD10WHO:Q03.0	Malformations of aqueduct of Sylvius	False	False	False
 ICD10WHO:Q03.1	Atresia of foramina of Magendie and Luschka	False	False	False
 ICD10WHO:Q03.8	Other congenital hydrocephalus	False	False	False
@@ -7556,7 +7374,6 @@ ICD10WHO:Q04.5	Megalencephaly	False	False	False
 ICD10WHO:Q04.6	Congenital cerebral cysts	False	False	False
 ICD10WHO:Q04.8	Other specified congenital malformations of brain	False	False	False
 ICD10WHO:Q04.9	Congenital malformation of brain, unspecified	False	False	False
-ICD10WHO:Q05	Spina bifida	False	False	False
 ICD10WHO:Q05.0	Cervical spina bifida with hydrocephalus	False	False	False
 ICD10WHO:Q05.1	Thoracic spina bifida with hydrocephalus	False	False	False
 ICD10WHO:Q05.2	Lumbar spina bifida with hydrocephalus	False	False	False
@@ -7770,14 +7587,12 @@ ICD10WHO:Q34.0	Anomaly of pleura	False	False	False
 ICD10WHO:Q34.1	Congenital cyst of mediastinum	False	False	False
 ICD10WHO:Q34.8	Other specified congenital malformations of respiratory system	False	False	False
 ICD10WHO:Q34.9	Congenital malformation of respiratory system, unspecified	False	False	False
-ICD10WHO:Q35	Cleft palate	False	False	False
 ICD10WHO:Q35-Q37	Cleft lip and cleft palate	False	False	False
 ICD10WHO:Q35.1	Cleft hard palate	False	False	False
 ICD10WHO:Q35.3	Cleft soft palate	False	False	False
 ICD10WHO:Q35.5	Cleft hard palate with cleft soft palate	False	False	False
 ICD10WHO:Q35.7	Cleft uvula	False	False	False
 ICD10WHO:Q35.9	Cleft palate, unspecified	False	False	False
-ICD10WHO:Q36	Cleft lip	False	False	False
 ICD10WHO:Q36.0	Cleft lip, bilateral	False	False	False
 ICD10WHO:Q36.1	Cleft lip, median	False	False	False
 ICD10WHO:Q36.9	Cleft lip, unilateral	False	False	False
@@ -7927,7 +7742,6 @@ ICD10WHO:Q60.3	Renal hypoplasia, unilateral	False	False	False
 ICD10WHO:Q60.4	Renal hypoplasia, bilateral	False	False	False
 ICD10WHO:Q60.5	Renal hypoplasia, unspecified	False	False	False
 ICD10WHO:Q60.6	Potter syndrome	False	False	False
-ICD10WHO:Q61	Cystic kidney disease	False	False	False
 ICD10WHO:Q61.0	Congenital single renal cyst	False	False	False
 ICD10WHO:Q61.1	Polycystic kidney, autosomal recessive	False	False	False
 ICD10WHO:Q61.2	Polycystic kidney, autosomal dominant	False	False	False
@@ -8004,7 +7818,6 @@ ICD10WHO:Q68.3	Congenital bowing of femur	False	False	False
 ICD10WHO:Q68.4	Congenital bowing of tibia and fibula	False	False	False
 ICD10WHO:Q68.5	Congenital bowing of long bones of leg, unspecified	False	False	False
 ICD10WHO:Q68.8	Other specified congenital musculoskeletal deformities	False	False	False
-ICD10WHO:Q69	Polydactyly	False	False	False
 ICD10WHO:Q69.0	Accessory finger(s)	False	False	False
 ICD10WHO:Q69.1	Accessory thumb(s)	False	False	False
 ICD10WHO:Q69.2	Accessory toe(s)	False	False	False
@@ -8108,7 +7921,6 @@ ICD10WHO:Q80.3	Congenital bullous ichthyosiform erythroderma	False	False	False
 ICD10WHO:Q80.4	Harlequin fetus	False	False	False
 ICD10WHO:Q80.8	Other congenital ichthyosis	False	False	False
 ICD10WHO:Q80.9	Congenital ichthyosis, unspecified	False	False	False
-ICD10WHO:Q81	Epidermolysis bullosa	False	False	False
 ICD10WHO:Q81.0	Epidermolysis bullosa simplex	False	False	False
 ICD10WHO:Q81.1	Epidermolysis bullosa letalis	False	False	False
 ICD10WHO:Q81.2	Epidermolysis bullosa dystrophica	False	False	False
@@ -8166,7 +7978,6 @@ ICD10WHO:Q89.4	Conjoined twins	False	False	False
 ICD10WHO:Q89.7	Multiple congenital malformations, not elsewhere classified	False	False	False
 ICD10WHO:Q89.8	Other specified congenital malformations	False	False	False
 ICD10WHO:Q89.9	Congenital malformation, unspecified	False	False	False
-ICD10WHO:Q90	Down syndrome	False	False	False
 ICD10WHO:Q90-Q99	Chromosomal abnormalities, not elsewhere classified	False	False	False
 ICD10WHO:Q90.0	Trisomy 21, meiotic nondisjunction	False	False	False
 ICD10WHO:Q90.1	Trisomy 21, mosaicism (mitotic nondisjunction)	False	False	False
@@ -8212,7 +8023,6 @@ ICD10WHO:Q95.4	Individuals with marker heterochromatin	False	False	False
 ICD10WHO:Q95.5	Individuals with autosomal fragile site	False	False	False
 ICD10WHO:Q95.8	Other balanced rearrangements and structural markers	False	False	False
 ICD10WHO:Q95.9	Balanced rearrangement and structural marker, unspecified	False	False	False
-ICD10WHO:Q96	Turner syndrome	False	False	False
 ICD10WHO:Q96.0	Karyotype 45,X	False	False	False
 ICD10WHO:Q96.1	Karyotype 46,X iso (Xq)	False	False	False
 ICD10WHO:Q96.2	Karyotype 46,X with abnormal sex chromosome, except iso (Xq)	False	False	False
@@ -9632,7 +9442,6 @@ ICD10WHO:T32.7	Corrosions involving 70-79% of body surface	False	False	False
 ICD10WHO:T32.8	Corrosions involving 80-89% of body surface	False	False	False
 ICD10WHO:T32.9	Corrosions involving 90% or more of body surface	False	False	False
 ICD10WHO:T33	Superficial frostbite	False	False	False
-ICD10WHO:T33-T35	Frostbite	False	False	False
 ICD10WHO:T33.0	Superficial frostbite of head	False	False	False
 ICD10WHO:T33.1	Superficial frostbite of neck	False	False	False
 ICD10WHO:T33.2	Superficial frostbite of thorax	False	False	False
@@ -12523,21 +12332,212 @@ ICD10WHO:Z99.3	Dependence on wheelchair	False	False	False
 ICD10WHO:Z99.4	Dependence on artificial heart	False	False	False
 ICD10WHO:Z99.8	Dependence on other enabling machines and devices	False	False	False
 ICD10WHO:Z99.9	Dependence on unspecified enabling machine and device	False	False	False
+ICD10WHO:A00	Cholera	True	False	False
+ICD10WHO:A03	Shigellosis	True	False	False
+ICD10WHO:A15-A19	Tuberculosis	True	False	False
+ICD10WHO:A19	Miliary tuberculosis	True	False	False
+ICD10WHO:A20	Plague	True	False	False
+ICD10WHO:A23	Brucellosis	True	False	False
+ICD10WHO:A27	Leptospirosis	True	False	False
+ICD10WHO:A32	Listeriosis	True	False	False
+ICD10WHO:A33	Tetanus neonatorum	True	False	False
+ICD10WHO:A36	Diphtheria	True	False	False
+ICD10WHO:A38	Scarlet fever	True	False	False
+ICD10WHO:A39	Meningococcal infection	True	False	False
+ICD10WHO:A42	Actinomycosis	True	False	False
+ICD10WHO:A43	Nocardiosis	True	False	False
+ICD10WHO:A44	Bartonellosis	True	False	False
+ICD10WHO:A46	Erysipelas	True	False	False
+ICD10WHO:A50	Congenital syphilis	True	False	False
+ICD10WHO:A57	Chancroid	True	False	False
+ICD10WHO:A58	Granuloma inguinale	True	False	False
+ICD10WHO:A59	Trichomoniasis	True	False	False
+ICD10WHO:A66	Yaws	True	False	False
+ICD10WHO:A71	Trachoma	True	False	False
+ICD10WHO:A78	Q fever	True	False	False
 ICD10WHO:A80-A89	Viral infections of the central nervous system	True	False	False
+ICD10WHO:A82	Rabies	True	False	False
+ICD10WHO:A83	Mosquito-borne viral encephalitis	True	False	False
+ICD10WHO:A87	Viral meningitis	True	False	False
+ICD10WHO:A95	Yellow fever	True	False	False
+ICD10WHO:B03	Smallpox	True	False	False
+ICD10WHO:B04	Monkeypox	True	False	False
+ICD10WHO:B05	Measles	True	False	False
+ICD10WHO:B15-B19	Viral hepatitis	True	False	False
+ICD10WHO:B27	Infectious mononucleosis	True	False	False
+ICD10WHO:B30	Viral conjunctivitis	True	False	False
+ICD10WHO:B35	Dermatophytosis	True	False	False
+ICD10WHO:B37	Candidiasis	True	False	False
+ICD10WHO:B38	Coccidioidomycosis	True	False	False
+ICD10WHO:B39	Histoplasmosis	True	False	False
+ICD10WHO:B40	Blastomycosis	True	False	False
+ICD10WHO:B41	Paracoccidioidomycosis	True	False	False
+ICD10WHO:B42	Sporotrichosis	True	False	False
+ICD10WHO:B44	Aspergillosis	True	False	False
+ICD10WHO:B45	Cryptococcosis	True	False	False
+ICD10WHO:B46	Zygomycosis	True	False	False
+ICD10WHO:B47	Mycetoma	True	False	False
+ICD10WHO:B50	Plasmodium falciparum malaria	True	False	False
+ICD10WHO:B51	Plasmodium vivax malaria	True	False	False
+ICD10WHO:B52	Plasmodium malariae malaria	True	False	False
+ICD10WHO:B55	Leishmaniasis	True	False	False
+ICD10WHO:B57	Chagas disease	True	False	False
+ICD10WHO:B58	Toxoplasmosis	True	False	False
+ICD10WHO:B67	Echinococcosis	True	False	False
+ICD10WHO:B68	Taeniasis	True	False	False
+ICD10WHO:B69	Cysticercosis	True	False	False
+ICD10WHO:B72	Dracunculiasis	True	False	False
+ICD10WHO:B73	Onchocerciasis	True	False	False
+ICD10WHO:B74	Filariasis	True	False	False
+ICD10WHO:B75	Trichinellosis	True	False	False
+ICD10WHO:B77	Ascariasis	True	False	False
+ICD10WHO:B78	Strongyloidiasis	True	False	False
+ICD10WHO:B79	Trichuriasis	True	False	False
+ICD10WHO:B80	Enterobiasis	True	False	False
+ICD10WHO:B86	Scabies	True	False	False
+ICD10WHO:B87	Myiasis	True	False	False
+ICD10WHO:C82	Follicular lymphoma	True	False	False
 ICD10WHO:D10-D36	Benign neoplasms	True	False	False
+ICD10WHO:D17	Benign lipomatous neoplasm	True	False	False
+ICD10WHO:D32	Benign neoplasm of meninges	True	False	False
 ICD10WHO:D44.8	Neoplasm of uncertain or unknown behaviour: Pluriglandular involvement	True	False	False
 ICD10WHO:D70	Agranulocytosis	True	False	False
+ICD10WHO:D83	Common variable immunodeficiency	True	False	False
+ICD10WHO:D86	Sarcoidosis	True	False	False
+ICD10WHO:E06	Thyroiditis	True	False	False
+ICD10WHO:E10	Type 1 diabetes mellitus	True	False	False
+ICD10WHO:E10-E14	Diabetes mellitus	True	False	False
+ICD10WHO:E11	Type 2 diabetes mellitus	True	False	False
+ICD10WHO:E20	Hypoparathyroidism	True	False	False
+ICD10WHO:E24	Cushing syndrome	True	False	False
+ICD10WHO:E26	Hyperaldosteronism	True	False	False
+ICD10WHO:E28	Ovarian dysfunction	True	False	False
 ICD10WHO:E28.0	Ovarian dysfunction: Estrogen excess	True	False	False
+ICD10WHO:E40	Kwashiorkor	True	False	False
+ICD10WHO:E50	Vitamin A deficiency	True	False	False
+ICD10WHO:E55	Vitamin D deficiency	True	False	False
 ICD10WHO:E70-E90	Metabolic disorders	True	False	False
+ICD10WHO:E73	Lactose intolerance	True	False	False
+ICD10WHO:E84	Cystic fibrosis	True	False	False
+ICD10WHO:E85	Amyloidosis	True	False	False
+ICD10WHO:F01	Vascular dementia	True	False	False
+ICD10WHO:F20	Schizophrenia	True	False	False
 ICD10WHO:F22.0	Delusional disorder	True	False	False
 ICD10WHO:F31	Bipolar affective disorder	True	False	False
+ICD10WHO:F42	Obsessive-compulsive disorder	True	False	False
+ICD10WHO:G10	Huntington disease	True	False	False
+ICD10WHO:G11	Hereditary ataxia	True	False	False
+ICD10WHO:G20	Parkinson disease	True	False	False
+ICD10WHO:G30	Alzheimer disease	True	False	False
+ICD10WHO:G35	Multiple sclerosis	True	False	False
 ICD10WHO:G40	Epilepsy	True	False	False
 ICD10WHO:G47.0	Disorders of initiating and maintaining sleep [insomnias]	True	False	False
+ICD10WHO:G80	Cerebral palsy	True	False	False
+ICD10WHO:G81	Hemiplegia	True	False	False
+ICD10WHO:G91	Hydrocephalus	True	False	False
+ICD10WHO:G92	Toxic encephalopathy	True	False	False
 ICD10WHO:H00-H06	Disorders of eyelid, lacrimal system and orbit	True	False	False
+ICD10WHO:H10	Conjunctivitis	True	False	False
+ICD10WHO:H16	Keratitis	True	False	False
+ICD10WHO:H20	Iridocyclitis	True	False	False
+ICD10WHO:H25	Senile cataract	True	False	False
+ICD10WHO:H40	Glaucoma	True	False	False
+ICD10WHO:H40-H42	Glaucoma	True	False	False
+ICD10WHO:H46	Optic neuritis	True	False	False
+ICD10WHO:H49	Paralytic strabismus	True	False	False
+ICD10WHO:H60	Otitis externa	True	False	False
+ICD10WHO:H71	Cholesteatoma of middle ear	True	False	False
+ICD10WHO:H80	Otosclerosis	True	False	False
+ICD10WHO:I11	Hypertensive heart disease	True	False	False
+ICD10WHO:I15	Secondary hypertension	True	False	False
+ICD10WHO:I21	Acute myocardial infarction	True	False	False
+ICD10WHO:I26	Pulmonary embolism	True	False	False
+ICD10WHO:I40	Acute myocarditis	True	False	False
+ICD10WHO:I42	Cardiomyopathy	True	False	False
+ICD10WHO:I46	Cardiac arrest	True	False	False
+ICD10WHO:I50	Heart failure	True	False	False
+ICD10WHO:I63	Cerebral infarction	True	False	False
+ICD10WHO:I70	Atherosclerosis	True	False	False
+ICD10WHO:I81	Portal vein thrombosis	True	False	False
 ICD10WHO:I85.0	Oesophageal varices with bleeding	True	False	False
+ICD10WHO:J02	Acute pharyngitis	True	False	False
+ICD10WHO:J03	Acute tonsillitis	True	False	False
+ICD10WHO:J21	Acute bronchiolitis	True	False	False
+ICD10WHO:J36	Peritonsillar abscess	True	False	False
+ICD10WHO:J45	Asthma	True	False	False
+ICD10WHO:J46	Status asthmaticus	True	False	False
+ICD10WHO:J47	Bronchiectasis	True	False	False
+ICD10WHO:J93	Pneumothorax	True	False	False
+ICD10WHO:K02	Dental caries	True	False	False
+ICD10WHO:K25	Gastric ulcer	True	False	False
+ICD10WHO:K26	Duodenal ulcer	True	False	False
+ICD10WHO:K28	Gastrojejunal ulcer	True	False	False
+ICD10WHO:K51	Ulcerative colitis	True	False	False
+ICD10WHO:K58	Irritable bowel syndrome	True	False	False
+ICD10WHO:K65	Peritonitis	True	False	False
+ICD10WHO:K80	Cholelithiasis	True	False	False
+ICD10WHO:K81	Cholecystitis	True	False	False
+ICD10WHO:K85	Acute pancreatitis	True	False	False
+ICD10WHO:L00	Staphylococcal scalded skin syndrome	True	False	False
+ICD10WHO:L01	Impetigo	True	False	False
+ICD10WHO:L03	Cellulitis	True	False	False
+ICD10WHO:L10	Pemphigus	True	False	False
+ICD10WHO:L12	Pemphigoid	True	False	False
+ICD10WHO:L23	Allergic contact dermatitis	True	False	False
+ICD10WHO:L26	Exfoliative dermatitis	True	False	False
+ICD10WHO:L40	Psoriasis	True	False	False
+ICD10WHO:L41	Parapsoriasis	True	False	False
+ICD10WHO:L42	Pityriasis rosea	True	False	False
+ICD10WHO:L43	Lichen planus	True	False	False
+ICD10WHO:L50	Urticaria	True	False	False
+ICD10WHO:L51	Erythema multiforme	True	False	False
+ICD10WHO:L52	Erythema nodosum	True	False	False
+ICD10WHO:L55	Sunburn	True	False	False
+ICD10WHO:L58	Radiodermatitis	True	False	False
+ICD10WHO:L63	Alopecia areata	True	False	False
+ICD10WHO:L68	Hypertrichosis	True	False	False
+ICD10WHO:L70	Acne	True	False	False
+ICD10WHO:L71	Rosacea	True	False	False
+ICD10WHO:L80	Vitiligo	True	False	False
+ICD10WHO:L83	Acanthosis nigricans	True	False	False
+ICD10WHO:L88	Pyoderma gangrenosum	True	False	False
+ICD10WHO:L93	Lupus erythematosus	True	False	False
+ICD10WHO:M32	Systemic lupus erythematosus	True	False	False
+ICD10WHO:M34	Systemic sclerosis	True	False	False
+ICD10WHO:M41	Scoliosis	True	False	False
+ICD10WHO:M45	Ankylosing spondylitis	True	False	False
+ICD10WHO:M47	Spondylosis	True	False	False
 ICD10WHO:M75.1	Rotator cuff syndrome	True	False	False
+ICD10WHO:M86	Osteomyelitis	True	False	False
+ICD10WHO:M87	Osteonecrosis	True	False	False
+ICD10WHO:N04	Nephrotic syndrome	True	False	False
+ICD10WHO:N18	Chronic kidney disease	True	False	False
+ICD10WHO:N20-N23	Urolithiasis	True	False	False
+ICD10WHO:N30	Cystitis	True	False	False
+ICD10WHO:N35	Urethral stricture	True	False	False
 ICD10WHO:N40-N51	Diseases of male genital organs	True	False	False
 ICD10WHO:N42.2	Atrophy of prostate	True	False	False
+ICD10WHO:N46	Male infertility	True	False	False
 ICD10WHO:N48.1	Balanoposthitis	True	False	False
+ICD10WHO:N60	Benign mammary dysplasia	True	False	False
+ICD10WHO:N62	Hypertrophy of breast	True	False	False
+ICD10WHO:N80	Endometriosis	True	False	False
+ICD10WHO:N97	Female infertility	True	False	False
+ICD10WHO:O00	Ectopic pregnancy	True	False	False
+ICD10WHO:O01	Hydatidiform mole	True	False	False
+ICD10WHO:O15	Eclampsia	True	False	False
+ICD10WHO:O40	Polyhydramnios	True	False	False
+ICD10WHO:O44	Placenta praevia	True	False	False
+ICD10WHO:Q02	Microcephaly	True	False	False
+ICD10WHO:Q03	Congenital hydrocephalus	True	False	False
+ICD10WHO:Q05	Spina bifida	True	False	False
+ICD10WHO:Q35	Cleft palate	True	False	False
+ICD10WHO:Q36	Cleft lip	True	False	False
+ICD10WHO:Q61	Cystic kidney disease	True	False	False
+ICD10WHO:Q69	Polydactyly	True	False	False
+ICD10WHO:Q81	Epidermolysis bullosa	True	False	False
 ICD10WHO:Q82.2	Mastocytosis	True	False	False
+ICD10WHO:Q90	Down syndrome	True	False	False
+ICD10WHO:Q96	Turner syndrome	True	False	False
 ICD10WHO:R95	Sudden infant death syndrome	True	False	False
+ICD10WHO:T33-T35	Frostbite	True	False	False
