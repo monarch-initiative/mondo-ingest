@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ordo.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-06-11/ordo.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-07-15/ordo.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
-| Annotation properties | 20 |
-| Axioms | 180851 |
-| Logical axioms | 43059 |
-| Classes | 15157 |
+| Annotation properties | 19 |
+| Axioms | 190748 |
+| Logical axioms | 43615 |
+| Classes | 15370 |
 | Object properties | 4 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,23 +32,23 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 122612 |
+| AnnotationAssertion | 131741 |
 | SubAnnotationPropertyOf | 2 |
-| Declaration | 15178 |
-| SubClassOf | 43059 |
+| Declaration | 15390 |
+| SubClassOf | 43615 |
 
 
 #### Entity namespaces: distinct entity count by namespace
 
 | Metric | Value |
 | ------ | ----- |
-| prefix_unknown | 15157 |
+| prefix_unknown | 15370 |
 | oboInOwl | 6 |
 | owl | 2 |
 | xsd | 2 |
 | skos | 3 |
 | BFO | 1 |
-| rdfs | 2 |
+| rdfs | 1 |
 | dc11 | 1 |
 | rdf | 1 |
 | IAO | 1 |
@@ -61,8 +61,8 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 101275 |
-| ObjectSomeValuesFrom | 6799 |
+| Class | 102600 |
+| ObjectSomeValuesFrom | 6886 |
 
 
 More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).

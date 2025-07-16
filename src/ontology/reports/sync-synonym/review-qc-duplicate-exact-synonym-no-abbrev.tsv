@@ -10,6 +10,12 @@ synonym	mondo_id	source_id	case	synonym_type	filtered_because_this_mondo_id_alre
 5p partial monosomy syndrome	MONDO:0007404	DOID:12580	confirmed		
 5p partial monosomy syndrome	MONDO:0007404	NCIT:C34518	confirmed		
 5p partial monosomy syndrome	MONDO:0016887	icd11.foundation:1109271336	added		
+APC-related AFAP	MONDO:0016362	Orphanet:220460	added		
+APC-related AFAP	MONDO:0016613	Orphanet:247806	unconfirmed		
+APC-related attenuated FAP	MONDO:0016362	Orphanet:220460	added		
+APC-related attenuated FAP	MONDO:0016613	Orphanet:247806	unconfirmed		
+APC-related attenuated familial polyposis coli	MONDO:0016362	Orphanet:220460	added		
+APC-related attenuated familial polyposis coli	MONDO:0016613	Orphanet:247806	unconfirmed		
 Abdominal obesity-metabolic syndrome	MONDO:0000816	OMIMPS:605552	added		
 Abdominal obesity-metabolic syndrome	MONDO:0011566		unconfirmed		
 Accessory tricuspid valve tissue	MONDO:0009144	icd11.foundation:307157712	added		
@@ -20,8 +26,11 @@ Ackerman syndrome	MONDO:0019199	Orphanet:79099	added
 Ackerman syndrome	MONDO:0019199	Orphanet:79099	added		MONDO:0008706
 Acrania	MONDO:0000819	ICD10CM:Q00.0	added		
 Acrania	MONDO:0019795	icd11.foundation:1719021696	confirmed		
+Acute myocardial infarction	MONDO:0004781	ICD10WHO:I21	added		
 Acute myocardial infarction	MONDO:0004781	icd11.foundation:1334938734	added		
 Acute myocardial infarction	MONDO:0005068	ICD10CM:I21	added		
+Acute myocarditis	MONDO:0002815	ICD10WHO:I40	added		
+Acute myocarditis	MONDO:0004496	ICD10CM:I40	added		
 Addison disease	MONDO:0015129	DOID:13774	confirmed		
 Addison disease	MONDO:0015129	NCIT:C26689	confirmed		
 Addison disease	MONDO:0015129	OMIM:240200	confirmed		
@@ -164,6 +173,8 @@ Franklin disease	MONDO:0015046	NCIT:C3083	confirmed
 Franklin disease	MONDO:0015046	Orphanet:100026	confirmed		
 Franklin disease	MONDO:0015046	icd11.foundation:705015637	confirmed		
 Franklin disease	MONDO:0019464	ICD10CM:C88.2	added		
+Frantz tumor	MONDO:0018525	Orphanet:424065	added		
+Frantz tumor	MONDO:0044786		unconfirmed		
 GSD type 9A	MONDO:0010598	DOID:0111042	confirmed		
 GSD type 9A	MONDO:0020693	Orphanet:264580	added		
 GSD type 9C	MONDO:0013091	DOID:0111043	confirmed		
@@ -197,6 +208,7 @@ Hereditary acrokeratotic poikiloderma	MONDO:0017365	Orphanet:2907	added
 Heritable pulmonary arterial hypertension	MONDO:0001999	ICD10CM:I27.0	added		
 Heritable pulmonary arterial hypertension	MONDO:0017148	Orphanet:275777	added		
 Hyperaldosteronism	MONDO:0003009	ICD10CM:E26	added		
+Hyperaldosteronism	MONDO:0003009	ICD10WHO:E26	added		
 Hyperaldosteronism	MONDO:0003009	icd11.foundation:1937534076	added		
 Hyperaldosteronism	MONDO:0016525	OMIMPS:103900	added		
 Hypochondrogenesis	MONDO:0019648	ICD10CM:Q77.0	added		
@@ -302,6 +314,8 @@ Narcolepsy	MONDO:0021107	icd11.foundation:1201727099	added
 Narcolepsy	MONDO:0100554	OMIMPS:161400	added		
 Nephropathia epidemica	MONDO:0005784	ICD10CM:A98.5	added		
 Nephropathia epidemica	MONDO:0018081	icd11.foundation:1059069619	added		
+Non-syndromic hypogammaglobulinemia	MONDO:0011096	Orphanet:33110	added		
+Non-syndromic hypogammaglobulinemia	MONDO:0016462	Orphanet:229717	added		
 Okamoto syndrome	MONDO:0014700	OMIM:616580	confirmed		
 Okamoto syndrome	MONDO:0018681	Orphanet:453499	added		
 Optic atrophy	MONDO:0003608	ICD10CM:H47.2	added		
@@ -322,6 +336,7 @@ Parotitis	MONDO:0005900	NCIT:C114281	added
 Parotitis	MONDO:0006969	ICD10CM:K11.2	added		
 Peritonitis	MONDO:0004522	ICD10CM:K65	added		
 Peritonitis	MONDO:0004522	NCIT:C26849	added		
+Peritonitis	MONDO:1010128	ICD10WHO:K65	added		
 Peritonitis	MONDO:1010128	icd11.foundation:775356003	added		
 Precocious menstruation	MONDO:0000088	ICD10CM:E30.1	added		
 Precocious menstruation	MONDO:0015791	icd11.foundation:1495024153	added		
@@ -366,6 +381,7 @@ Schwartz-Jampel syndrome type 1	MONDO:0009717	Orphanet:800	added
 Schwartz-Jampel syndrome type 1	MONDO:0009717	Orphanet:800	added		MONDO:0100435
 Schwartz-Jampel syndrome type 1	MONDO:0100435	DOID:0090005	confirmed		
 Schwartz-Jampel syndrome type 1	MONDO:0100435	MONDORULE:1	unconfirmed		
+Secondary hypertension	MONDO:0001200	ICD10WHO:I15	added		
 Secondary hypertension	MONDO:0001200	icd11.foundation:1331849426	added		
 Secondary hypertension	MONDO:0005044	ICD10CM:I15	added		
 Secondary short bowel syndrome	MONDO:0015183	icd11.foundation:780637678	added		
@@ -430,6 +446,7 @@ Tibial muscular dystrophy	MONDO:0011721	icd11.foundation:651559966	added
 Toxic epidermal necrolysis	MONDO:0018890	Orphanet:537	added		
 Toxic epidermal necrolysis	MONDO:0019810	icd11.foundation:1575072695	added		
 Trachoma	MONDO:0001249	ICD10CM:A71	added		
+Trachoma	MONDO:0001249	ICD10WHO:A71	added		
 Trachoma	MONDO:0001249	icd11.foundation:372424530	added		
 Trachoma	MONDO:0005808	NCIT:C116817	confirmed		
 Treacher Collins syndrome	MONDO:0002457	DOID:2908	confirmed		
@@ -883,7 +900,7 @@ malignant struma ovarii	MONDO:0003332	DOID:5208	added
 malignant struma ovarii	MONDO:0006980	icd11.foundation:185581438	added		
 malignant struma ovarii	MONDO:0006980	icd11.foundation:185581438	added		MONDO:0003332
 malignant thymoma	MONDO:0006451	DOID:3284	confirmed		
-malignant thymoma	MONDO:0006451	Orphanet:99868	confirmed		
+malignant thymoma	MONDO:0006451	Orphanet:99868	unconfirmed		
 malignant thymoma	MONDO:0006456	icd11.foundation:33869057	added		
 maple syrup urine disease	MONDO:0009563	DOID:9269	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
 maple syrup urine disease	MONDO:0009563	MONDO:Lexical	unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	

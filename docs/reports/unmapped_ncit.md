@@ -1339,7 +1339,6 @@
 | NCIT:C63970  | Benign Sertoli Cell Tumor of the Rat Ovary                                                                                                                                  |
 | NCIT:C173095 | Benign Sinonasal Neoplasm                                                                                                                                                   |
 | NCIT:C173139 | Benign Sinonasal Soft Tissue Neoplasm                                                                                                                                       |
-| NCIT:C6515   | Benign Skeletal Muscle Neoplasm                                                                                                                                             |
 | NCIT:C4615   | Benign Skin Appendage Neoplasm                                                                                                                                              |
 | NCIT:C6806   | Benign Skin Fibroblastic Neoplasm                                                                                                                                           |
 | NCIT:C7343   | Benign Skin Fibrohistiocytic Neoplasm                                                                                                                                       |
