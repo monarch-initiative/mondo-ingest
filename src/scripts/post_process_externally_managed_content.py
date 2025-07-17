@@ -31,6 +31,8 @@ def _get_column_of_external_source_related_to_qc_failure(qc_failure, erroneous_r
         columns = ["subset"]
     elif external == "gard":
         columns = ["subset", "gard_id"]
+    elif external == "mondo-malacards":
+        columns = ["malacards_url", "source"]
     else:
         raise ValueError(f"Unknown external source {external}")
     
