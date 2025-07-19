@@ -26,6 +26,7 @@
 #   SNOMEDCT_US_2020_03_01: http://identifiers.org/snomedct/
 #   SYMP: http://purl.obolibrary.org/obo/SYMP_
 #   UMLS: http://linkedlifedata.com/resource/umls/id/
+#   icd11.foundation: http://id.who.int/icd/entity/
 #   oboInOwl: http://www.geneontology.org/formats/oboInOwl#
 #   owl: http://www.w3.org/2002/07/owl#
 #   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -1266,6 +1267,7 @@ DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	GARD:3178	semapv:U
 DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	ICDO:9680/3	semapv:UnspecifiedMatching
 DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	MESH:D016403	semapv:UnspecifiedMatching
 DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	NCI:C80280	semapv:UnspecifiedMatching
+DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	icd11.foundation:2A81.Z	semapv:UnspecifiedMatching
 DOID:0050746	mantle cell lymphoma	oboInOwl:hasDbXref	GARD:6969	semapv:UnspecifiedMatching
 DOID:0050746	mantle cell lymphoma	oboInOwl:hasDbXref	ICDO:9673/3	semapv:UnspecifiedMatching
 DOID:0050746	mantle cell lymphoma	oboInOwl:hasDbXref	MESH:D020522	semapv:UnspecifiedMatching
@@ -9972,6 +9974,7 @@ DOID:0081266	pachygyria, microcephaly, developmental delay, and dysmorphic facie
 DOID:0081267	graft-versus-host disease	oboInOwl:hasDbXref	MESH:D006086	semapv:UnspecifiedMatching
 DOID:0081267	graft-versus-host disease	oboInOwl:hasDbXref	OMIM:614395	semapv:UnspecifiedMatching
 DOID:0081267	graft-versus-host disease	oboInOwl:hasDbXref	ORDO:39812	semapv:UnspecifiedMatching
+DOID:0081267	graft-versus-host disease	oboInOwl:hasDbXref	icd11.foundation:4B24	semapv:UnspecifiedMatching
 DOID:0081267	graft-versus-host disease	skos:exactMatch	OMIM:614395	semapv:UnspecifiedMatching
 DOID:0081268	pulmonary venoocclusive disease 1	oboInOwl:hasDbXref	OMIM:265450	semapv:UnspecifiedMatching
 DOID:0081268	pulmonary venoocclusive disease 1	skos:exactMatch	OMIM:265450	semapv:UnspecifiedMatching
@@ -30844,6 +30847,7 @@ DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	MESH:D018263	semapv:Un
 DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	NCI:C8054	semapv:UnspecifiedMatching
 DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	OMIM:188470	semapv:UnspecifiedMatching
 DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	UMLS:C0206682	semapv:UnspecifiedMatching
+DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	icd11.foundation:2D10.0	semapv:UnspecifiedMatching
 DOID:3962	follicular thyroid carcinoma	skos:exactMatch	OMIM:188470	semapv:UnspecifiedMatching
 DOID:3963	thyroid gland carcinoma	oboInOwl:hasDbXref	EFO:0002892	semapv:UnspecifiedMatching
 DOID:3963	thyroid gland carcinoma	oboInOwl:hasDbXref	MESH:D013964	semapv:UnspecifiedMatching
@@ -30864,6 +30868,7 @@ DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	MESH:D000077273	semapv:
 DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	NCI:C4035	semapv:UnspecifiedMatching
 DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	OMIM:188550	semapv:UnspecifiedMatching
 DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	UMLS:C0238463	semapv:UnspecifiedMatching
+DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	icd11.foundation:2D10.1	semapv:UnspecifiedMatching
 DOID:3969	papillary thyroid carcinoma	skos:exactMatch	OMIM:188550	semapv:UnspecifiedMatching
 DOID:397	restrictive cardiomyopathy	oboInOwl:hasDbXref	ICD10CM:I42.5	semapv:UnspecifiedMatching
 DOID:397	restrictive cardiomyopathy	oboInOwl:hasDbXref	MESH:D002313	semapv:UnspecifiedMatching
