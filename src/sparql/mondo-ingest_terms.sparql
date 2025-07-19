@@ -5,3 +5,4 @@ WHERE {
   { ?term ?p2 ?o2 . }
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/MONDO-INGEST_")))
 }
+

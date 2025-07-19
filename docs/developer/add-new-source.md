@@ -51,9 +51,11 @@ Run `sh run.sh make ../../docs/metrics/*.md` from `src/ontology`.
 Add a link to your new `.md` file created in the last step.
 
 ## 4. The `components/` goal
-When `mondo-ingest-odk.yaml` is edited and `update_repo` is run, a new `component-download-SOURCE.owl` goal is added to 
-`src/ontology/Makefile`. This essentially downloads a copy of the source. But, for it to be used in `mondo-ingest`, it 
-needs to be modified. This is done by creating a `$(COMPONENTSDIR)/omim.owl` goal in `mondo-ingest.Makefile` which runs 
+When a new component is added, you need to:
+
+1. Add a URL parameter at the top of the mondo-ingest.Makefile
+2. Add a mirror goal for the new component
+3. Creating a `$(COMPONENTSDIR)/omim.owl` goal in `mondo-ingest.Makefile` which runs 
 a composite `robot` command. Here are some sections you'll likely want to add that command:  
 - `rename --mappings config/SOURCE-property-map.sssom.tsv`: You'll notice that all components goals have a such a line 
 using `property-map.sssom.tsv`. This is for some common property renamings. However, if your source has any properties 
