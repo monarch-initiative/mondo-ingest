@@ -29,32 +29,32 @@ ORDO=				http://www.orphadata.org/data/ORDO/ordo_orphanet.owl
 ####################################
 
 ifeq ($(MIR),true)
-$(TMPDIR)/mirror-ordo.owl: | $(TMPDIR)
+$(TMPDIR)/mirror-ordo.owl: | all_robot_plugins $(TMPDIR)
 	$(ROBOT) merge -I $(ORDO) \
 		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-ordo.owl
 
-$(TMPDIR)/mirror-doid.owl: | $(TMPDIR)
+$(TMPDIR)/mirror-doid.owl: | all_robot_plugins $(TMPDIR)
 	$(ROBOT) merge -I $(DOID) \
 		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-doid.owl
 
-$(TMPDIR)/mirror-icd10who.owl: | $(TMPDIR)
+$(TMPDIR)/mirror-icd10who.owl: | all_robot_plugins $(TMPDIR)
 	$(ROBOT) merge -I $(ICD10WHO) \
 		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-icd10who.owl
 
-$(TMPDIR)/mirror-icd11foundation.owl: | $(TMPDIR)
+$(TMPDIR)/mirror-icd11foundation.owl: | all_robot_plugins $(TMPDIR)
 	$(ROBOT) merge -I $(ICD11FOUNDATION) \
 		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-icd11foundation.owl
 
-$(TMPDIR)/mirror-ncit.owl: | $(TMPDIR)
+$(TMPDIR)/mirror-ncit.owl: | all_robot_plugins $(TMPDIR)
 	$(ROBOT) merge -I $(NCIT) \
 		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-ncit.owl
 
-$(TMPDIR)/mirror-omim.owl: | $(TMPDIR)
+$(TMPDIR)/mirror-omim.owl: | all_robot_plugins $(TMPDIR)
 	$(ROBOT) merge -I $(OMIM) \
 		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-omim.owl
@@ -64,7 +64,7 @@ $(TMPDIR)/mirror-omim.owl: | $(TMPDIR)
 # the remove step needs to run _before_ the first time the OWL API serialises the file, as 
 # The injected declaration axioms makes it very hard to remove the
 # Axioms that cause the codes to be individuals as well
-$(TMPDIR)/mirror-icd10cm.owl: | $(TMPDIR)
+$(TMPDIR)/mirror-icd10cm.owl: | all_robot_plugins $(TMPDIR)
 	wget $(ICD10CM) -O $(TMPDIR)/icd10cm.tmp.owl
 	$(ROBOT) remove -i $(TMPDIR)/icd10cm.tmp.owl --select imports \
 		remove -T config/remove_properties.txt \
