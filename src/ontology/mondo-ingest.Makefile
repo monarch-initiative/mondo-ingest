@@ -16,7 +16,8 @@
 # Rather than the config file. For the Open Data Archeologist, check for context
 # https://github.com/INCATools/ontology-development-kit/issues/1272#issuecomment-2914089788
 DOID=				http://purl.obolibrary.org/obo/doid.owl
-ICD10CM=			https://data.bioontology.org/ontologies/ICD10CM/submissions/23/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
+ICD10_BP_CODE=		27
+ICD10CM=			https://data.bioontology.org/ontologies/ICD10CM/submissions/$(ICD10_BP_CODE)/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
 ICD10WHO=			https://github.com/monarch-initiative/icd10who/releases/latest/download/icd10who.ttl
 ICD11FOUNDATION=	https://github.com/monarch-initiative/icd11/releases/latest/download/icd11foundation.owl
 NCIT=				http://purl.obolibrary.org/obo/ncit.owl
