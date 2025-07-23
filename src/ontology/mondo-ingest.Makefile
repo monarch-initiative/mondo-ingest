@@ -31,32 +31,32 @@ ORDO=				http://www.orphadata.org/data/ORDO/ordo_orphanet.owl
 ifeq ($(MIR),true)
 $(TMPDIR)/mirror-ordo.owl: | $(TMPDIR)
 	$(ROBOT) merge -I $(ORDO) \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-ordo.owl
 
 $(TMPDIR)/mirror-doid.owl: | $(TMPDIR)
 	$(ROBOT) merge -I $(DOID) \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-doid.owl
 
 $(TMPDIR)/mirror-icd10who.owl: | $(TMPDIR)
 	$(ROBOT) merge -I $(ICD10WHO) \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-icd10who.owl
 
 $(TMPDIR)/mirror-icd11foundation.owl: | $(TMPDIR)
 	$(ROBOT) merge -I $(ICD11FOUNDATION) \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-icd11foundation.owl
 
 $(TMPDIR)/mirror-ncit.owl: | $(TMPDIR)
 	$(ROBOT) merge -I $(NCIT) \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-ncit.owl
 
 $(TMPDIR)/mirror-omim.owl: | $(TMPDIR)
 	$(ROBOT) merge -I $(OMIM) \
-		 annotate --annotation owl:versionInfo $(VERSION) --output $@
+		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-omim.owl
 
 # The following preprocessing is necessary, because the bioportal version of ncit accidentally 
@@ -68,7 +68,10 @@ $(TMPDIR)/mirror-icd10cm.owl: | $(TMPDIR)
 	wget $(ICD10CM) -O $(TMPDIR)/icd10cm.tmp.owl
 	$(ROBOT) remove -i $(TMPDIR)/icd10cm.tmp.owl --select imports \
 		remove -T config/remove_properties.txt \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $@
+		annotate \
+			--ontology-iri https://bioportal.bioontology.org/ontologies/ICD10CM/$@ \
+			--version-iri https://data.bioontology.org/ontologies/ICD10CM/submissions/$(ICD10_BP_CODE)/icd10cm.owl \
+		odk:normalize --add-source true -o $@
 .PRECIOUS: $(TMPDIR)/mirror-icd10cm.owl
 
 endif
