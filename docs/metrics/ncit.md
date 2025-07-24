@@ -2,14 +2,14 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ncit.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-07-15/ncit.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-07-23/ncit.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
-| Annotation properties | 15 |
-| Axioms | 1328213 |
+| Annotation properties | 16 |
+| Axioms | 1328214 |
 | Logical axioms | 33655 |
 | Classes | 15971 |
 | Object properties | 0 |
@@ -37,7 +37,7 @@
 | DatatypeDefinition | 19 |
 | SubAnnotationPropertyOf | 1 |
 | AnnotationPropertyRangeOf | 1 |
-| Declaration | 16004 |
+| Declaration | 16005 |
 | SubClassOf | 27376 |
 
 
@@ -47,7 +47,7 @@
 | ------ | ----- |
 | prefix_unknown | 1 |
 | NCIT | 15993 |
-| oboInOwl | 5 |
+| oboInOwl | 6 |
 | owl | 2 |
 | rdf | 1 |
 | IAO | 1 |

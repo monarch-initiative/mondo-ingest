@@ -1,4 +1,5 @@
 subject_id	subject_label	is_mapped	is_excluded	is_deprecated
+OMIM:245570	epilepsy, focal, with speech disorder and with or without impaired intellectual development	False	False	False
 OMIM:301148	retinitis pigmentosa 99	False	False	False
 OMIM:301149	retinal dystrophy, x-linked, gardner-hardcastle type	False	False	False
 OMIM:621185	houge-janssens syndrome 4	False	False	False
@@ -28,6 +29,7 @@ OMIM:621248	pulmonary hypertension, primary, 7	False	False	False
 OMIM:621250	developmental and epileptic encephalopathy 118	False	False	False
 OMIM:621251	cardiomyopathy, dilated, 1qq	False	False	False
 OMIM:621252	cataract, alopecia, oral mucosal disorder, and psoriasis-like syndrome	False	False	False
+OMIM:621254	immunodeficiency 133 with ectodermal dysplasia with or without peripheral neuropathy	False	False	False
 OMIM:621258	fanconi anemia, complementation group 10	False	False	False
 OMIM:621259	stargardt disease 5	False	False	False
 OMIM:621260	short-rib thoracic dysplasia 22 without polydactyly	False	False	False
@@ -35,6 +37,9 @@ OMIM:621261	cardiomyopathy, dilated, 2m	False	False	False
 OMIM:621262	diamond-blackfan anemia 22	False	False	False
 OMIM:621263	neurodevelopmental disorder with behavioral, ear, and skeletal abnormalities	False	False	False
 OMIM:621265	nil-deshwan neurodevelopmental syndrome	False	False	False
+OMIM:621268	exudative vitreoretinopathy 8	False	False	False
+OMIM:621269	spermatogenic failure 101	False	False	False
+OMIM:621270	cardiomyopathy, familial hypertrophic, 31	False	False	False
 OMIMPS:155310	Myopathy, visceral	False	False	False
 OMIMPS:248200	Stargardt disease	False	False	False
 OMIMPS:253300	Spinal muscular atrophy	False	False	False
@@ -19320,6 +19325,8 @@ OMIM:621253	ZNF416	False	True	False
 OMIM:621255	SMAGP	False	True	False
 OMIM:621256	ZBTB45	False	True	False
 OMIM:621257	SPINDOC	False	True	False
+OMIM:621271	ZNF302	False	True	False
+OMIM:621272	ZNF345	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
@@ -19609,7 +19616,7 @@ OMIM:124480	deafness, congenital, with onychodystrophy, autosomal dominant	True	
 OMIM:124500	vohwinkel syndrome	True	False	False
 OMIM:124700	deafness, mid-tone neural	True	False	False
 OMIM:124900	deafness, autosomal dominant 1, with or without thrombocytopenia	True	False	False
-OMIM:125250	optic atrophy with or without deafness, ophthalmoplegia, myopathy, ataxia, and neuropathy	True	False	False
+OMIM:125250	optic atrophy plus syndrome	True	False	False
 OMIM:125310	cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 1	True	False	False
 OMIM:125350	failure of tooth eruption, primary	True	False	False
 OMIM:125370	dentatorubral-pallidoluysian atrophy	True	False	False
@@ -20603,7 +20610,7 @@ OMIM:218800	crigler-najjar syndrome, type 1	True	False	False
 OMIM:218900	crome syndrome	True	False	False
 OMIM:219000	fraser syndrome 1	True	False	False
 OMIM:219050	cryptorchidism, unilateral or bilateral	True	False	False
-OMIM:219080	acth-independent macronodular adrenal hyperplasia	True	False	False
+OMIM:219080	acth-independent macronodular adrenal hyperplasia 1	True	False	False
 OMIM:219090	pituitary adenoma 4, acth-secreting	True	False	False
 OMIM:219100	cutis laxa, autosomal recessive, type 1a	True	False	False
 OMIM:219150	cutis laxa, autosomal recessive, type 3a	True	False	False
@@ -20890,7 +20897,6 @@ OMIM:245400	mitochondrial DNA depletion syndrome 9 (encephalomyopathic type with
 OMIM:245450	d-lactic aciduria with gout	True	False	False
 OMIM:245480	specific granule deficiency 1	True	False	False
 OMIM:245552	lambotte syndrome	True	False	False
-OMIM:245570	epilepsy, focal, with speech disorder and with or without impaired intellectual development	True	False	False
 OMIM:245590	growth hormone insensitivity syndrome with immune dysregulation 1, autosomal recessive	True	False	False
 OMIM:245600	multiple joint dislocations, short stature, and craniofacial dysmorphism with or without congenital heart defects	True	False	False
 OMIM:245660	epidermolysis bullosa, junctional 2c, laryngoonychocutaneous	True	False	False

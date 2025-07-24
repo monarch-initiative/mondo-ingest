@@ -3,9 +3,9 @@
 |:------------------------------------------------|:------|
 | [ICD10WHO](./migrate_icd10who.md)               | 984   |
 | [DOID](./migrate_doid.md)                       | 51    |
+| [OMIM](./migrate_omim.md)                       | 44    |
 | [ICD11FOUNDATION](./migrate_icd11foundation.md) | 4,586 |
-| [OMIM](./migrate_omim.md)                       | 39    |
-| [ICD10CM](./migrate_icd10cm.md)                 | 3,696 |
+| [ICD10CM](./migrate_icd10cm.md)                 | 3,857 |
 | [NCIT](./migrate_ncit.md)                       | 2,250 |
 | [ORDO](./migrate_ordo.md)                       | 132   |
 
