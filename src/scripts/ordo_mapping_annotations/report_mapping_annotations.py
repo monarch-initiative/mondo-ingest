@@ -5,7 +5,7 @@ Resources
 1. https://www.orpha.net/orphacom/cahiers/docs/GB/Orphanet_ICD10_coding_rules.pdf
 
 Prerequisites to run this script:
-1. `src/ontology/mirror/ordo.owl.owl` must be present. To get it, run `sh src/ontology/run.sh make component-download-ordo.owl`.
+1. `src/ontology/mirror/ordo.owl.owl` must be present. To get it, run `sh src/ontology/run.sh make tmp/mirror-ordo.owl`.
 
 TODO's
 TODO 1: `robot` --> `sh run.sh robot...`
@@ -29,12 +29,12 @@ CACHE_DIR = TEMP_DIR
 SOURCES_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology', 'tmp')
 SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 # # Messages
-REQS_ERR = '`{}` must be present. To get it, run `sh src/ontology/run.sh make component-download-ordo.owl`.'
+REQS_ERR = '`{}` must be present. To get it, run `sh src/ontology/run.sh make tmp/mirror-ordo.owl`.'
 # # Config
 CONFIG = {
     'input_paths': {
-        'ontology': os.path.join(SOURCES_DIR, 'ordo.owl.owl'),
-        'ontology_backup': os.path.join(SOURCES_DIR, 'component-download-ordo.owl.owl'),
+        'ontology': os.path.join(SOURCES_DIR, 'mirror-ordo.owl'),
+        'ontology_backup': os.path.join(SOURCES_DIR, 'mirror-ordo.owl'),
         'mapping_code_meanings': os.path.join(
             PROJECT_DIR, 'src', 'ontology', 'config', 'ordo-mapping-codes_relationship-curie_list.csv'),
         'sparql_query': os.path.join(SPARQL_DIR, 'ordo-select-mapping-annotations.sparql'),

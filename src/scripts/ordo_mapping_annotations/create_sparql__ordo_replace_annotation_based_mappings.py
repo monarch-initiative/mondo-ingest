@@ -6,7 +6,7 @@ Resources
 
 Prerequisites to run this script:
 1. `src/ontology/mirror/ordo.owl.owl` must be present. To get it, run:
-`sh src/ontology/run.sh make component-download-ordo.owl`.
+`sh src/ontology/run.sh make tmp/mirror-ordo.owl`.
 2. Your pwd (present working directory) should be `src/scripts/ordo_report_mapping_annotations` in order for local
 imports to work.
 
@@ -35,12 +35,12 @@ CACHE_DIR = TEMP_DIR
 SOURCES_DIR = os.path.join(PROJECT_DIR, 'src', 'ontology', 'tmp')
 SPARQL_DIR = os.path.join(PROJECT_DIR, 'src', 'sparql')
 # # Messages
-REQS_ERR = '`{}` must be present. To get it, run `sh src/ontology/run.sh make component-download-ordo.owl`.'
+REQS_ERR = '`{}` must be present. To get it, run `sh src/ontology/run.sh make tmp/mirror-ordo.owl`.'
 # # Config
 CONFIG = {
     'input_paths': {
-        'ontology': os.path.join(SOURCES_DIR, 'ordo.owl.owl'),
-        'ontology_backup': os.path.join(SOURCES_DIR, 'component-download-ordo.owl.owl'),
+        'ontology': os.path.join(SOURCES_DIR, 'mirror-ordo.owl'),
+        'ontology_backup': os.path.join(SOURCES_DIR, 'mirror-ordo.owl'),
         'sparql_query': os.path.join(SPARQL_DIR, 'ordo-replace-annotation-based-mappings.ru.jinja2'),
     },
     # output_path: If `run_command` is True, will generate this. However, this is not part of the pipeline, so this

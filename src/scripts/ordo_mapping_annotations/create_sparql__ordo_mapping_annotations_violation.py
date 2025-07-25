@@ -5,7 +5,7 @@ Resources
 1. https://www.orpha.net/orphacom/cahiers/docs/GB/Orphanet_ICD10_coding_rules.pdf
 
 Prerequisites to run this script:
-1. `src/ontology/mirror/ordo.owl.owl` must be present. To get it, run `sh src/ontology/run.sh make component-download-ordo.owl`.
+1. `src/ontology/mirror/ordo.owl.owl` must be present. To get it, run `sh src/ontology/run.sh make tmp/mirror-ordo.owl`.
 2. Your pwd (present working directory) should be `src/scripts/ordo_report_mapping_annotations` in order for local imports to work.
 
 TODO's
