@@ -4,6 +4,7 @@ MONDO:0000001	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:377788
 MONDO:0000023	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:464724	infantile liver failure	Fever-associated acute infantile liver failure syndrome
 MONDO:0000044	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:437	hereditary hypophosphatemic rickets	Hypophosphatemic rickets
 MONDO:0000050	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:631	isolated congenital growth hormone deficiency	Non-acquired isolated growth hormone deficiency
+MONDO:0000066	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:254846	mitochondrial respiratory chain complex deficiency	Isolated oxidative phosphorylation complex disorder
 MONDO:0000087	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:35981	polymicrogyria	Polymicrogyria
 MONDO:0000088	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:95708	precocious puberty	Rare precocious puberty
 MONDO:0000107	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:137888	auriculocondylar syndrome	Auriculocondylar syndrome
@@ -674,7 +675,6 @@ MONDO:0007792	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Or
 MONDO:0007793	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:429	hypochondroplasia	Hypochondroplasia
 MONDO:0007795	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2491	mullerian duct anomalies-limb anomalies syndrome	Müllerian duct anomalies-limb anomalies syndrome
 MONDO:0007797	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2237	hypoparathyroidism-deafness-renal disease syndrome	Hypoparathyroidism-sensorineural deafness-renal disease syndrome
-MONDO:0007798	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:247676	obsolete adult hypophosphatasia	Adult hypophosphatasia
 MONDO:0007800	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1598	chromosome 18p deletion syndrome	Monosomy 18p syndrome
 MONDO:0007800	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:261974	chromosome 18p deletion syndrome	Partial deletion of the short arm of chromosome 18 syndrome
 MONDO:0007803	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:102	multiple system atrophy	Multiple system atrophy
@@ -1336,7 +1336,7 @@ MONDO:0009139	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:156731
 MONDO:0009140	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1865	Silverman-Handmaker type dyssegmental dysplasia	Dyssegmental dysplasia, Silverman-Handmaker type
 MONDO:0009141	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:99657	torsion dystonia 2	Primary dystonia, DYT2 type
 MONDO:0009144	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1880	Ebstein anomaly	Ebstein malformation of the tricuspid valve
-MONDO:0009145	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:50944	SchC6pf-Schulz-Passarge syndrome	Schöpf-Schulz-Passarge syndrome
+MONDO:0009145	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:50944	Schöpf-Schulz-Passarge syndrome	Schöpf-Schulz-Passarge syndrome
 MONDO:0009146	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1883	ectodermal dysplasia-sensorineural deafness syndrome	Ectodermal dysplasia-sensorineural deafness syndrome
 MONDO:0009149	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1812	ectodermal dysplasia-intellectual disability-central nervous system malformation syndrome	Ectodermal dysplasia-intellectual disability-central nervous system malformation syndrome
 MONDO:0009150	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1882	hypohidrotic ectodermal dysplasia-hypothyroidism-ciliary dyskinesia syndrome	Hypohidrotic ectodermal dysplasia-hypothyroidism-ciliary dyskinesia syndrome
@@ -1504,8 +1504,6 @@ MONDO:0009420	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2232	p
 MONDO:0009424	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:620220	Bartter disease type 2	Bartter syndrome type 2
 MONDO:0009425	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1790	hypomandibular faciocranial dysostosis	Hypomandibular faciocranial dysostosis
 MONDO:0009426	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2323	hypoparathyroidism-retardation-dysmorphism syndrome	Sanjad-Sakati syndrome
-MONDO:0009427	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:247651	obsolete infantile hypophosphatasia	Infantile hypophosphatasia
-MONDO:0009428	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:247667	obsolete childhood hypophosphatasia	Childhood-onset hypophosphatasia
 MONDO:0009431	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:157215	hereditary hypophosphatemic rickets with hypercalciuria	Hereditary hypophosphatemic rickets with hypercalciuria
 MONDO:0009435	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2261	hypospadias-intellectual disability, Goldblatt type syndrome	Hypospadias-intellectual disability, Goldblatt type syndrome
 MONDO:0009437	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1226	Bamforth-Lazarus syndrome	Bamforth-Lazarus syndrome
@@ -1867,7 +1865,6 @@ MONDO:0010049	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2818	s
 MONDO:0010051	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:3011	spastic tetraplegia-retinitis pigmentosa-intellectual disability syndrome	Spastic tetraplegia-retinitis pigmentosa-intellectual disability syndrome
 MONDO:0010056	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:83420	spinal muscular atrophy, type IV	Proximal spinal muscular atrophy type 4
 MONDO:0010060	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1186	mitochondrial DNA depletion syndrome 7 (hepatocerebral type)	Infantile-onset spinocerebellar ataxia
-MONDO:0010061	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:95433	autosomal recessive cerebellar ataxia-blindness-deafness syndrome	Autosomal recessive spinocerebellar ataxia-blindness-deafness syndrome
 MONDO:0010062	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1185	spinocerebellar ataxia-dysmorphism syndrome	Spinocerebellar ataxia-dysmorphism syndrome
 MONDO:0010063	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:3177	corneal-cerebellar syndrome	Spinocerebellar degeneration-corneal dystrophy syndrome
 MONDO:0010064	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2572	spastic ataxia-corneal dystrophy syndrome	Spastic ataxia-corneal dystrophy syndrome
@@ -2064,6 +2061,7 @@ MONDO:0010485	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:431140
 MONDO:0010490	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:370927	SSR4-congenital disorder of glycosylation	SSR4-CDG
 MONDO:0010496	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:457240	X-linked intellectual disability-short stature-overweight syndrome	X-linked intellectual disability-short stature-overweight syndrome
 MONDO:0010498	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:401973	MEND syndrome	MEND syndrome
+MONDO:0010500	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:480907	intellectual disability, X-linked, syndromic 33	X-linked intellectual disability-global development delay-facial dysmorphism-sacral caudal remnant syndrome
 MONDO:0010501	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:466791	syndromic X-linked intellectual disability 34	Macrocephaly-intellectual disability-left ventricular non compaction syndrome
 MONDO:0010503	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:570371	Bartter disease type 5	Bartter syndrome type 5
 MONDO:0010505	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:3041	intellectual disability-balding-patella luxation-acromicria syndrome	Intellectual disability-balding-patella luxation-acromicria syndrome
@@ -2282,7 +2280,7 @@ MONDO:0010926	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Or
 MONDO:0010930	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1104	anophthalmia plus syndrome	Anophthalmia plus syndrome
 MONDO:0010932	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:75373	progressive bifocal chorioretinal atrophy	Progressive bifocal chorioretinal atrophy
 MONDO:0010938	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:35078	T-B+ severe combined immunodeficiency due to JAK3 deficiency	T-B+ severe combined immunodeficiency due to JAK3 deficiency
-MONDO:0010939	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:69663	low phospholipid associated cholelithiasis	Low phospholipid-associated cholelithiasis
+MONDO:0010939	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:69663	gallbladder disease 1	Low phospholipid-associated cholelithiasis
 MONDO:0010947	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:131	Budd-Chiari syndrome	Budd-Chiari syndrome
 MONDO:0010949	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:99936	Charcot-Marie-Tooth disease type 2B	Autosomal dominant Charcot-Marie-Tooth disease type 2B
 MONDO:0010952	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:163	hereditary hyperferritinemia with congenital cataracts	Hereditary hyperferritinemia-cataract syndrome
@@ -3073,7 +3071,7 @@ MONDO:0013241	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:211017
 MONDO:0013245	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:228426	syndromic multisystem autoimmune disease due to ITCH deficiency	Syndromic multisystem autoimmune disease due to Itch deficiency
 MONDO:0013252	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:280558	Warsaw breakage syndrome	Warsaw breakage syndrome
 MONDO:0013256	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:94065	chromosome 15q24 deletion syndrome	15q24 microdeletion syndrome
-MONDO:0013266	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:664410	intellectual disability, autosomal dominant 20	Brain abnormalities-severe developmental delay-facial dysmorphism-intellectual disability syndrome
+MONDO:0013266	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:664410	neurodevelopmental disorder with hypotonia, stereotypic hand movements, and impaired language	Brain abnormalities-severe developmental delay-facial dysmorphism-intellectual disability syndrome
 MONDO:0013267	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:261222	distal 16p11.2 microdeletion syndrome	Distal 16p11.2 microdeletion syndrome
 MONDO:0013268	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:228390	frontonasal dysplasia with alopecia and genital anomaly	Frontonasal dysplasia-alopecia-genital anomalies syndrome
 MONDO:0013271	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:306542	frontonasal dysplasia - severe microphthalmia - severe facial clefting syndrome	Frontonasal dysplasia-severe microphthalmia-severe facial clefting syndrome
@@ -3160,7 +3158,7 @@ MONDO:0013533	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:140905
 MONDO:0013536	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:562509	heme oxygenase 1 deficiency	Heme oxygenase-1 deficiency
 MONDO:0013539	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:79507	hypotonia-failure to thrive-microcephaly syndrome	Hypotonia-failure to thrive-microcephaly syndrome
 MONDO:0013541	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:300570	complex cortical dysplasia with other brain malformations 1	Cortical dysgenesis with pontocerebellar hypoplasia due to TUBB3 mutation
-MONDO:0013546	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1194	mitochondrial complex V (ATP synthase) deficiency nuclear type 2	TMEM70-related mitochondrial encephalo-cardio-myopathy
+MONDO:0013546	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1194	mitochondrial complex V (ATP synthase) deficiency, nuclear type 2	TMEM70-related mitochondrial encephalo-cardio-myopathy
 MONDO:0013550	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:63273	distal myopathy with posterior leg and anterior hand involvement	Distal myopathy with posterior leg and anterior hand involvement
 MONDO:0013559	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:231531	Hermansky-Pudlak syndrome 7	Hermansky-Pudlak syndrome due to BLOC-1 deficiency
 MONDO:0013561	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:280586	chondrodysplasia with joint dislocations, gPAPP type	Chondrodysplasia with joint dislocations, gPAPP type
@@ -3280,6 +3278,7 @@ MONDO:0013918	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Or
 MONDO:0013922	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:319675	Seckel syndrome 7	Microcephalic primordial dwarfism, Dauber type
 MONDO:0013925	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:369955	methylmalonic acidemia with homocystinuria, type cblJ	Methylmalonic acidemia with homocystinuria, type cblJ
 MONDO:0013928	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:420492	dystonia 23	Adult-onset cervical dystonia, DYT23 type
+MONDO:0013931	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:95433	peroxisome biogenesis disorder 4B	Autosomal recessive spinocerebellar ataxia-blindness-deafness syndrome
 MONDO:0013934	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:314689	combined immunodeficiency due to STK4 deficiency	Combined immunodeficiency due to STK4 deficiency
 MONDO:0013941	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:99646	metaphyseal chondromatosis with D-2-hydroxyglutaric aciduria	Metaphyseal chondromatosis with D-2-hydroxyglutaric aciduria
 MONDO:0013944	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:324530	autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation	Autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation
@@ -3549,6 +3548,7 @@ MONDO:0014626	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:458798
 MONDO:0014627	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:464440	dystonia 27	Primary dystonia, DYT27 type
 MONDO:0014629	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:444092	autoimmune interstitial lung disease-arthritis syndrome	Autoimmune interstitial lung disease-arthritis syndrome
 MONDO:0014630	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:454840	familial adenomatous polyposis 3	NTHL1-related polyposis
+MONDO:0014632	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:481152	hypomyelinating leukodystrophy 10	PYCR2-related microcephaly-progressive leukoencephalopathy
 MONDO:0014633	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:1942	epilepsy with myoclonic atonic seizures	Epilepsy with myoclonic-atonic seizures
 MONDO:0014636	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:447954	combined oxidative phosphorylation defect type 25	Combined oxidative phosphorylation defect type 25
 MONDO:0014637	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:447737	DOCK2 deficiency	Combined immunodeficiency due to DOCK2 deficiency
@@ -4641,14 +4641,14 @@ MONDO:0016141	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orpha
 MONDO:0016142	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207063	qualitative or quantitative defects of beta-sarcoglycan	Qualitative or quantitative defects of beta-sarcoglycan
 MONDO:0016143	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207067	qualitative or quantitative defects of gamma-sarcoglycan	Qualitative or quantitative defects of gamma-sarcoglycan
 MONDO:0016144	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207070	qualitative or quantitative defects of delta-sarcoglycan	Qualitative or quantitative defects of delta-sarcoglycan
-MONDO:0016145	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207073	qualitative or quantitative defects of dysferlin	Qualitative or quantitative defects of dysferlin
+MONDO:0016145	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207073	neuromuscular disease caused by qualitative or quantitative defects of dysferlin	Qualitative or quantitative defects of dysferlin
 MONDO:0016146	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207078	caveolinopathy	Qualitative or quantitative defects of caveolin-3
-MONDO:0016147	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207085	qualitative or quantitative defects of dystrophin	Qualitative or quantitative defects of dystrophin
+MONDO:0016147	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207085	neuromuscular disease caused by qualitative or quantitative defects of dystrophin	Qualitative or quantitative defects of dystrophin
 MONDO:0016149	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207094	obsolete qualitative or quantitative defects of merosin	Laminin subunit alpha 2-related muscular dystrophy
 MONDO:0016150	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207098	obsolete qualitative or quantitative defects of integrin alpha-7	Qualitative or quantitative defects of integrin alpha-7
-MONDO:0016151	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207101	qualitative or quantitative defects of perlecan	Qualitative or quantitative defects of perlecan
+MONDO:0016151	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207101	neuromuscular disease caused by qualitative or quantitative defects of perlecan	Qualitative or quantitative defects of perlecan
 MONDO:0016152	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207104	obsolete qualitative or quantitative defects of calpain	Qualitative or quantitative defects of calpain
-MONDO:0016153	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207107	qualitative or quantitative defects of TRIM32	Qualitative or quantitative defects of TRIM32
+MONDO:0016153	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207107	neuromuscular disease caused by qualitative or quantitative defects of TRIM32	Qualitative or quantitative defects of TRIM32
 MONDO:0016154	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207110	obsolete qualitative or quantitative defects of myotubularin	Qualitative or quantitative defects of myotubularin
 MONDO:0016155	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207113	qualitative or quantitative defects of protein involved in O-glycosylation of alpha-dystroglycan	Qualitative or quantitative defects of protein involved in O-glycosylation of alpha-dystroglycan
 MONDO:0016156	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:207119	qualitative or quantitative defects of FKRP	Qualitative or quantitative defects of FKRP
@@ -4680,20 +4680,20 @@ MONDO:0016182	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orpha
 MONDO:0016183	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209027	obsolete qualitative or quantitative defects of protein glycosyltransferase-like	Qualitative or quantitative defects of protein glycosyltransferase-like
 MONDO:0016184	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209030	qualitative or quantitative defects of protein O-mannosyltransferase 1	Qualitative or quantitative defects of protein O-mannosyltransferase 1
 MONDO:0016185	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209033	qualitative or quantitative defects of protein O-mannosyltransferase 2	Qualitative or quantitative defects of protein O-mannosyltransferase 2
-MONDO:0016186	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209038	qualitative or quantitative defects of myofibrillar proteins	Qualitative or quantitative defects of myofibrillar proteins
+MONDO:0016186	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209038	neuromuscular disease caused by qualitative or quantitative defects of myofibrillar proteins	Qualitative or quantitative defects of myofibrillar proteins
 MONDO:0016187	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209041	qualitative or quantitative defects of desmin	Qualitative or quantitative defects of desmin
 MONDO:0016188	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209044	qualitative or quantitative defects of alphaB-cristallin	Qualitative or quantitative defects of alphaB-cristallin
 MONDO:0016189	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209047	qualitative or quantitative defects of filamin C	Qualitative or quantitative defects of filamin C
 MONDO:0016190	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209050	qualitative or quantitative defects of protein ZASP	Qualitative or quantitative defects of protein ZASP
-MONDO:0016191	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209053	qualitative or quantitative defects of titin	Qualitative or quantitative defects of titin
-MONDO:0016192	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209056	qualitative or quantitative defects of telethonin	Qualitative or quantitative defects of telethonin
-MONDO:0016193	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209059	qualitative or quantitative defects of alpha-actin	Qualitative or quantitative defects of alpha-actin
-MONDO:0016194	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209182	qualitative or quantitative defects of nebulin	Qualitative or quantitative defects of nebulin
-MONDO:0016195	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209185	qualitative or quantitative defects of beta-myosin heavy chain (MYH7)	Qualitative or quantitative defects of beta-myosin heavy chain (MYH7)
+MONDO:0016191	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209053	neuromuscular disease caused by qualitative or quantitative defects of titin	Qualitative or quantitative defects of titin
+MONDO:0016192	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209056	neuromuscular disease caused by qualitative or quantitative defects of telethonin	Qualitative or quantitative defects of telethonin
+MONDO:0016193	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209059	neuromuscular disease caused by qualitative or quantitative defects of alpha-actin	Qualitative or quantitative defects of alpha-actin
+MONDO:0016194	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209182	neuromuscular disease caused by qualitative or quantitative defects of nebulin	Qualitative or quantitative defects of nebulin
+MONDO:0016195	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209185	neuromuscular disease caused by qualitative or quantitative defects of beta-myosin heavy chain (MYH7)	Qualitative or quantitative defects of beta-myosin heavy chain (MYH7)
 MONDO:0016196	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209188	obsolete qualitative or quantitative defects of emerin	Qualitative or quantitative defects of emerin
-MONDO:0016197	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209193	qualitative or quantitative defects of selenoprotein N1	Qualitative or quantitative defects of selenoprotein N1
-MONDO:0016198	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209196	qualitative or quantitative defects of plectin	Qualitative or quantitative defects of plectin
-MONDO:0016199	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209199	qualitative or quantitative defects of protein SERCA1	Qualitative or quantitative defects of protein SERCA1
+MONDO:0016197	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209193	neuromuscular disease caused by qualitative or quantitative defects of selenoprotein N1	Qualitative or quantitative defects of selenoprotein N1
+MONDO:0016198	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209196	neuromuscular disease caused by qualitative or quantitative defects of plectin	Qualitative or quantitative defects of plectin
+MONDO:0016199	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209199	neuromuscular disease caused by qualitative or quantitative defects of protein SERCA1	Qualitative or quantitative defects of protein SERCA1
 MONDO:0016200	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209203	obsolete qualitative or quantitative defects of glucosamine (UDP-N-acetyl)-2-epimerase/N-acetylmannosamine kinase	Qualitative or quantitative defects of glucosamine (UDP-N-acetyl)-2-epimerase/N-acetylmannosamine kinase -
 MONDO:0016201	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:209224	obsolete qualitative or quantitative defects of myotilin	Myotilinopathy
 MONDO:0016202	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:209867	autosomal dominant rhegmatogenous retinal detachment	Autosomal dominant rhegmatogenous retinal detachment
@@ -5222,7 +5222,6 @@ MONDO:0016801	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orpha
 MONDO:0016802	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:254834	mitochondrial protein import disorder	Mitochondrial protein import disorder
 MONDO:0016803	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:254837	obsolete unspecified inborn mitochondrial disorder	Unspecified mitochondrial disorder
 MONDO:0016804	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:254843	obsolete exercise intolerance with lactic acidosis	Exercise intolerance with lactic acidosis
-MONDO:0016805	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:254846	obsolete isolated oxidative phosphorylation complex disorder	Isolated oxidative phosphorylation complex disorder
 MONDO:0016806	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:254851	maternally-inherited mitochondrial dystonia	Mitochondrial DNA-related dystonia
 MONDO:0016807	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:254854	pure mitochondrial myopathy	Pure mitochondrial myopathy
 MONDO:0016809	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:254881	spinocerebellar ataxia with epilepsy	Spinocerebellar ataxia with epilepsy
@@ -5652,7 +5651,7 @@ MONDO:0017299	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:284460
 MONDO:0017300	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:2846	congenital pericardium anomaly	Congenital pericardium anomaly
 MONDO:0017301	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2847	pericardial and diaphragmatic defect	Pericardial and diaphragmatic defect
 MONDO:0017302	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:284786	obsolete qualitative or quantitative defects of troponin	Qualitative or quantitative defects of troponin
-MONDO:0017303	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:284790	qualitative or quantitative defects of tropomyosin	Qualitative or quantitative defects of tropomyosin
+MONDO:0017303	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:284790	neuromuscular disease caused by qualitative or quantitative defects of tropomyosin	Qualitative or quantitative defects of tropomyosin
 MONDO:0017304	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:284804	ocular albinism	Ocular albinism
 MONDO:0017305	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:284811	syndromic oculocutaneous albinism	Syndromic oculocutaneous albinism
 MONDO:0017306	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:284814	disorder of phenylalanine metabolism	Disorder of phenylalanine metabolism
@@ -6445,7 +6444,7 @@ MONDO:0018277	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:370959
 MONDO:0018278	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:370968	congenital muscular dystrophy with intellectual disability	Congenital muscular dystrophy with intellectual disability
 MONDO:0018280	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:370997	muscle-eye-brain disease with bilateral multicystic leucodystrophy	Muscle-eye-brain disease with bilateral multicystic leucodystrophy
 MONDO:0018281	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:371007	congenital muscular dystrophy with hyperlaxity	Congenital muscular dystrophy with hyperlaxity
-MONDO:0018282	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:371024	qualitative or quantitative defects of alpha-dystroglycan	Qualitative or quantitative defects of alpha-dystroglycan
+MONDO:0018282	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:371024	neuromuscular disease caused by qualitative or quantitative defects of alpha-dystroglycan	Qualitative or quantitative defects of alpha-dystroglycan
 MONDO:0018283	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:371040	obsolete primary qualitative or quantitative defects of alpha-dystroglycan	Primary qualitative or quantitative defects of alpha-dystroglycan
 MONDO:0018284	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:371047	obsolete congenital disorder of glycosylation with neurological involvement	Congenital disorder of glycosylation with neurological involvement
 MONDO:0018287	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:371071	obsolete congenital disorder of glycosylation with epilepsy as a major feature	Congenital disorder of glycosylation with epilepsy as a major feature
@@ -6918,9 +6917,7 @@ MONDO:0018818	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:480701
 MONDO:0018820	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:480864	recurrent metabolic encephalomyopathic crises-rhabdomyolysis-cardiac arrhythmia-intellectual disability syndrome	Recurrent metabolic encephalomyopathic crises-rhabdomyolysis-cardiac arrhythmia-intellectual disability syndrome
 MONDO:0018821	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:480880	X-linked female restricted facial dysmorphism-short stature-choanal atresia-intellectual disability	X-linked female restricted facial dysmorphism-short stature-choanal atresia-intellectual disability
 MONDO:0018822	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:480898	global developmental delay-visual anomalies-progressive cerebellar atrophy-truncal hypotonia syndrome	Global developmental delay-visual anomalies-progressive cerebellar atrophy-truncal hypotonia syndrome
-MONDO:0018823	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:480907	X-linked intellectual disability-global development delay-facial dysmorphism-sacral caudal remnant syndrome	X-linked intellectual disability-global development delay-facial dysmorphism-sacral caudal remnant syndrome
 MONDO:0018824	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:48104	pyoderma gangrenosum	Pyoderma gangrenosum
-MONDO:0018825	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:481152	PYCR2-related microcephaly-progressive leukoencephalopathy	PYCR2-related microcephaly-progressive leukoencephalopathy
 MONDO:0018826	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:48162	Lewis-Sumner syndrome	Lewis-Sumner syndrome
 MONDO:0018827	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:481662	familial chilblain lupus	Familial Chilblain lupus
 MONDO:0018828	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:481665	pseudo-TORCH syndrome 2	USP18 deficiency
@@ -8508,6 +8505,7 @@ MONDO:0030524	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:662216
 MONDO:0030673	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:631085	spastic paraplegia 86, autosomal recessive	Autosomal recessive spastic paraplegia type 86
 MONDO:0030767	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:322126	obsolete genetic tumor of hematopoietic and lymphoid tissues	Genetic tumor of hematopoietic and lymphoid tissues
 MONDO:0030805	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:631106	spinocerebellar ataxia 49	Spinocerebellar ataxia type 49
+MONDO:0030831	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:436252	gastrointestinal defect and immunodeficiency syndrome	Combined immunodeficiency-multiple intestinal atresia
 MONDO:0030858	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:664729	immunodeficiency 75	EBV-induced lymphoproliferative disease due to TET2 deficiency
 MONDO:0030878	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:684240	Kaya-Barakat-Masson syndrome	Neurodevelopmental disorder-spasticity-movement disorder-epileptic syndrome
 MONDO:0030880	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:647667	mandibuloacral dysplasia progeroid syndrome	Mandibuloacral dysplasia associated to MTX2
@@ -8550,6 +8548,7 @@ MONDO:0032600	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:599082
 MONDO:0032601	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:565788	inflammatory bowel disease, immunodeficiency, and encephalopathy	Infantile inflammatory bowel disease with neurological involvement
 MONDO:0032642	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:565858	arthrogryposis, cleft palate, craniosynostosis, and impaired intellectual development	Craniosynostosis-microretrognathia-severe intellectual disability syndrome
 MONDO:0032643	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:611256	pontocerebellar hypoplasia, type 12	Pontocerebellar hypoplasia type 12
+MONDO:0032651	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:621758	fibrosis, neurodegeneration, and cerebral angiomatosis	Fibrosis-neurodegeneration-cerebral angiomatosis syndrome
 MONDO:0032653	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:647811	cardiac-urogenital syndrome	Cardiac-urogenital syndrome
 MONDO:0032654	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:641368	hyper-IgE recurrent infection syndrome 3, autosomal recessive	Autosomal recessive hyper-IgE syndrome due to ZNF341 deficiency
 MONDO:0032672	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:562569	intellectual developmental disorder with cardiac defects and dysmorphic facies	TMEM94-associated congenital heart defect-facial dysmorphism-developmental delay syndrome
@@ -8601,6 +8600,8 @@ MONDO:0033561	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:686495
 MONDO:0033613	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:641353	neurodevelopmental disorder with progressive spasticity and brain white matter abnormalities	Infantile neurodegeneration-progressive spasticity-intellectual disability-white matter lesions syndrome
 MONDO:0033614	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:631076	spastic paraplegia 83, autosomal recessive	Autosomal recessive spastic paraplegia type 83
 MONDO:0033642	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:544488	neurodevelopmental disorder with alopecia and brain abnormalities	Global developmental delay-alopecia-macrocephaly-facial dysmorphism-structural brain anomalies syndrome
+MONDO:0033664	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:633021	Kilquist syndrome	SLC12A2-related autosomal recessive neonatal-developmental delay-intellectual disability-feeding difficulty-sensorineural deafness syndrome
+MONDO:0033667	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:633024	Delpire-McNeill syndrome	SLC12A2-related autosomal dominant infantile-developmental delay-intellectual disability-sensorineural deafness syndrome
 MONDO:0033682	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:508533	skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome	Skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome
 MONDO:0033683	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:508542	congenital progressive bone marrow failure-B-cell immunodeficiency-skeletal dysplasia syndrome	Congenital progressive bone marrow failure-B-cell immunodeficiency-skeletal dysplasia syndrome
 MONDO:0033717	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:512260	congenital cerebellar ataxia due to RNU12 mutation	Congenital cerebellar ataxia due to RNU12 mutation
@@ -9036,6 +9037,7 @@ MONDO:0100130	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:70578	
 MONDO:0100131	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:685082	pediatric acute respiratory distress syndrome	Pediatric acute respiratory distress syndrome
 MONDO:0100133	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2609	mitochondrial complex I deficiency	Isolated complex I deficiency
 MONDO:0100147	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:576278	SATB2 associated disorder	SATB2-associated syndrome
+MONDO:0100150	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:98742	RYR1-related myopathy	Neurological muscular channelopathy due to a genetic ryanodine receptor defect
 MONDO:0100164	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:99885	permanent neonatal diabetes mellitus	Isolated permanent neonatal diabetes mellitus
 MONDO:0100186	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:2102	GTP cyclohydrolase I deficiency with hyperphenylalaninemia	GTP cyclohydrolase I deficiency
 MONDO:0100189	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:425	obsolete apolipoprotein A-I deficiency	Apolipoprotein A-I deficiency
@@ -9091,7 +9093,6 @@ MONDO:0800026	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:661	ce
 MONDO:0800027	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:313808	leukoencephalopathy, diffuse hereditary, with spheroids 1	Adult-onset leukoencephalopathy with axonal spheroids and pigmented glia
 MONDO:0800028	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:324588	dyskinesia with orofacial involvement, autosomal dominant	Familial dyskinesia and facial myokymia
 MONDO:0800029	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:2032	interstitial lung disease 2	Idiopathic pulmonary fibrosis
-MONDO:0800030	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:436252	gastrointestinal defects and immunodeficiency syndrome 1	Combined immunodeficiency-multiple intestinal atresia
 MONDO:0800043	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:3206	Stüve-Wiedemann syndrome 1	Stüve-Wiedemann syndrome
 MONDO:0800044	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:404454	congenital disorder of deglycosylation 1	Alacrimia-choreoathetosis-liver dysfunction syndrome
 MONDO:0800045	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:674762	autoinflammatory syndrome, familial, Behcet-like 1	Early-onset autoinflammatory syndrome due to A20 haploinsufficiency
@@ -9160,7 +9161,6 @@ MONDO:0850084	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:620212
 MONDO:0850087	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:620363	primary hypomagnesemia-generalized seizures-intellectual disability-obesity syndrome	Primary hypomagnesemia-generalized seizures-intellectual disability-obesity syndrome
 MONDO:0850088	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:620368	EGF-related primary hypomagnesemia with intellectual disability	EGF-related primary hypomagnesemia with intellectual disability
 MONDO:0850089	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:620371	Gitelman-like kidney tubulopathy due to mitochondrial DNA mutation	Gitelman-like kidney tubulopathy due to mitochondrial DNA mutation
-MONDO:0850090	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:621758	fibrosis-neurodegeneration-cerebral angiomatosis syndrome	Fibrosis-neurodegeneration-cerebral angiomatosis syndrome
 MONDO:0850095	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:622925	X-linked severe syndromic thoracic aortic aneurysm and dissection	X-linked severe syndromic thoracic aortic aneurysm and dissection
 MONDO:0850096	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:622934	SBDS-related severe neonatal spondylometaphyseal dysplasia	SBDS-related severe neonatal spondylometaphyseal dysplasia
 MONDO:0850097	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:623615	autoimmune limbic encephalitis	Autoimmune limbic encephalitis
@@ -9202,8 +9202,6 @@ MONDO:0859324	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:662762
 MONDO:0859340	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:675216	spinocerebellar ataxia 27B, late-onset	Spinocerebellar ataxia type 27B
 MONDO:0859526	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:664726	immunodeficiency 109 with lymphoproliferation	EBV-induced lymphoproliferative disease due to CD137 deficiency
 MONDO:0859692	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:623638	immune-mediated cerebellar ataxia	Immune-mediated cerebellar ataxia
-MONDO:0859761	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:633021	SLC12A2-related autosomal recessive neonatal-developmental delay-intellectual disability-feeding difficulty-sensorineural deafness syndrome	SLC12A2-related autosomal recessive neonatal-developmental delay-intellectual disability-feeding difficulty-sensorineural deafness syndrome
-MONDO:0859762	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:633024	SLC12A2-related autosomal dominant infantile-developmental delay-intellectual disability-sensorineural deafness syndrome	SLC12A2-related autosomal dominant infantile-developmental delay-intellectual disability-sensorineural deafness syndrome
 MONDO:0859763	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:634461	mosaic neurofibromatosis type 1	Mosaic neurofibromatosis type 1
 MONDO:0859764	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:634475	mosaic NF2-related schwannomatosis	Mosaic NF2-related schwannomatosis
 MONDO:0859765	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:634492	mosaic schwannomatosis	Mosaic schwannomatosis
@@ -9220,7 +9218,6 @@ MONDO:0957111	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orpha
 MONDO:0957112	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:98739	neurological muscular channelopathy due to a genetic chloride channel defect	Neurological muscular channelopathy due to a genetic chloride channel defect
 MONDO:0957113	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:98740	neurological muscular channelopathy due to a genetic calcium channel defect	Neurological muscular channelopathy due to a genetic calcium channel defect
 MONDO:0957114	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:98741	neurological muscular channelopathy due to a genetic potassium channel defect	Neurological muscular channelopathy due to a genetic potassium channel defect
-MONDO:0957115	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:98742	neurological muscular channelopathy due to a genetic ryanodine receptor defect	Neurological muscular channelopathy due to a genetic ryanodine receptor defect
 MONDO:0957270	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:653725	muscular dystrophy, limb-girdle, autosomal recessive 28	Autosomal recessive limb-girdle muscular dystrophy, type 28
 MONDO:0957337	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:519300	isolated chorioretinal dystrophy	Isolated chorioretinal dystrophy
 MONDO:0957341	http://purl.obolibrary.org/obo/mondo#ordo_group_of_disorders	Orphanet:519331	secondary early-onset glaucoma	Secondary early-onset glaucoma
@@ -9428,6 +9425,9 @@ MONDO:0975911	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:688543
 MONDO:0975918	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:689021	asymptomatic hyperckemia-myalgia-rhabdomyolysis syndrome	Asymptomatic hyperCKemia-myalgia-rhabdomyolysis syndrome
 MONDO:0975922	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:689401	acquired hypothalamic obesity	Acquired hypothalamic obesity
 MONDO:0975925	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:689430	adenoid ameloblastoma	Adenoid ameloblastoma
+MONDO:1010154	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:247676	adult hypophosphatasia	Adult hypophosphatasia
+MONDO:1010168	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:247667	childhood hypophosphatasia	Childhood-onset hypophosphatasia
+MONDO:1010169	http://purl.obolibrary.org/obo/mondo#ordo_subtype_of_a_disorder	Orphanet:247651	infantile hypophosphatasia	Infantile hypophosphatasia
 MONDO:1040011	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:689001	vertebral artery dissection	Isolated spontaneous cervical artery dissection
 MONDO:1040032	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:611223	EN1-related dorsoventral syndrome	EN1-related dorsoventral syndrome
 MONDO:1040033	http://purl.obolibrary.org/obo/mondo#ordo_disorder	Orphanet:370980	congenital muscular dystrophy without intellectual disability	Congenital muscular dystrophy without intellectual disability

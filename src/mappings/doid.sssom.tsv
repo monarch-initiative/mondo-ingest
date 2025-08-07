@@ -26,6 +26,7 @@
 #   SNOMEDCT_US_2020_03_01: http://identifiers.org/snomedct/
 #   SYMP: http://purl.obolibrary.org/obo/SYMP_
 #   UMLS: http://linkedlifedata.com/resource/umls/id/
+#   icd11.foundation: http://id.who.int/icd/entity/
 #   oboInOwl: http://www.geneontology.org/formats/oboInOwl#
 #   owl: http://www.w3.org/2002/07/owl#
 #   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -1266,6 +1267,7 @@ DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	GARD:3178	semapv:U
 DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	ICDO:9680/3	semapv:UnspecifiedMatching
 DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	MESH:D016403	semapv:UnspecifiedMatching
 DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	NCI:C80280	semapv:UnspecifiedMatching
+DOID:0050745	diffuse large B-cell lymphoma	oboInOwl:hasDbXref	icd11.foundation:2A81.Z	semapv:UnspecifiedMatching
 DOID:0050746	mantle cell lymphoma	oboInOwl:hasDbXref	GARD:6969	semapv:UnspecifiedMatching
 DOID:0050746	mantle cell lymphoma	oboInOwl:hasDbXref	ICDO:9673/3	semapv:UnspecifiedMatching
 DOID:0050746	mantle cell lymphoma	oboInOwl:hasDbXref	MESH:D020522	semapv:UnspecifiedMatching
@@ -1929,6 +1931,10 @@ DOID:0051052	congenital disorder of glycosylation type IIy	oboInOwl:hasDbXref	OM
 DOID:0051052	congenital disorder of glycosylation type IIy	skos:exactMatch	OMIM:620200	semapv:UnspecifiedMatching
 DOID:0051053	congenital disorder of glycosylation type IIz	oboInOwl:hasDbXref	OMIM:620201	semapv:UnspecifiedMatching
 DOID:0051053	congenital disorder of glycosylation type IIz	skos:exactMatch	OMIM:620201	semapv:UnspecifiedMatching
+DOID:0051054	coarctation of the aorta	oboInOwl:hasDbXref	MESH:D001017	semapv:UnspecifiedMatching
+DOID:0051054	coarctation of the aorta	oboInOwl:hasDbXref	NCI:C84567	semapv:UnspecifiedMatching
+DOID:0051054	coarctation of the aorta	oboInOwl:hasDbXref	OMIM:120000	semapv:UnspecifiedMatching
+DOID:0051054	coarctation of the aorta	skos:exactMatch	OMIM:120000	semapv:UnspecifiedMatching
 DOID:0051055	46,XY gonadal dysgenesis with minifascicular neuropathy	oboInOwl:hasDbXref	OMIM:607080	semapv:UnspecifiedMatching
 DOID:0051055	46,XY gonadal dysgenesis with minifascicular neuropathy	skos:exactMatch	OMIM:607080	semapv:UnspecifiedMatching
 DOID:0060000	infective endocarditis	oboInOwl:hasDbXref	GARD:6337	semapv:UnspecifiedMatching
@@ -2849,10 +2855,9 @@ DOID:0060332	mitochondrial complex V (ATP synthase) deficiency nuclear type 3	ob
 DOID:0060332	mitochondrial complex V (ATP synthase) deficiency nuclear type 3	skos:exactMatch	OMIM:614053	semapv:UnspecifiedMatching
 DOID:0060334	transient neonatal diabetes mellitus	oboInOwl:hasDbXref	GARD:1839	semapv:UnspecifiedMatching
 DOID:0060334	transient neonatal diabetes mellitus	oboInOwl:hasDbXref	ICD10CM:P70.2	semapv:UnspecifiedMatching
-DOID:0060334	transient neonatal diabetes mellitus	oboInOwl:hasDbXref	OMIM:601410	semapv:UnspecifiedMatching
 DOID:0060334	transient neonatal diabetes mellitus	oboInOwl:hasDbXref	OMIM:610374	semapv:UnspecifiedMatching
-DOID:0060334	transient neonatal diabetes mellitus	oboInOwl:hasDbXref	OMIM:610582	semapv:UnspecifiedMatching
 DOID:0060334	transient neonatal diabetes mellitus	oboInOwl:hasDbXref	ORDO:99886	semapv:UnspecifiedMatching
+DOID:0060334	transient neonatal diabetes mellitus	skos:exactMatch	OMIM:610374	semapv:UnspecifiedMatching
 DOID:0060335	autosomal dominant sideroblastic anemia 4	oboInOwl:hasDbXref	OMIM:182170	semapv:UnspecifiedMatching
 DOID:0060335	autosomal dominant sideroblastic anemia 4	skos:exactMatch	OMIM:182170	semapv:UnspecifiedMatching
 DOID:0060336	3-methylglutaconic aciduria	oboInOwl:hasDbXref	ICD10CM:E71.111	semapv:UnspecifiedMatching
@@ -5341,6 +5346,44 @@ DOID:0061153	monilethrix 3	skos:exactMatch	OMIM:621170	semapv:UnspecifiedMatchin
 DOID:0061154	Mulvihill-Smith syndrome	oboInOwl:hasDbXref	OMIM:176690	semapv:UnspecifiedMatching
 DOID:0061154	Mulvihill-Smith syndrome	oboInOwl:hasDbXref	ORDO:2959	semapv:UnspecifiedMatching
 DOID:0061154	Mulvihill-Smith syndrome	skos:exactMatch	OMIM:176690	semapv:UnspecifiedMatching
+DOID:0061155	kyphomelic dysplasia	oboInOwl:hasDbXref	OMIM:211350	semapv:UnspecifiedMatching
+DOID:0061155	kyphomelic dysplasia	skos:exactMatch	OMIM:211350	semapv:UnspecifiedMatching
+DOID:0061156	CASGID syndrome	oboInOwl:hasDbXref	OMIM:618339	semapv:UnspecifiedMatching
+DOID:0061156	CASGID syndrome	skos:exactMatch	OMIM:618339	semapv:UnspecifiedMatching
+DOID:0061157	retinopathy sensory neuropathy syndrome	oboInOwl:hasDbXref	OMIM:618339	semapv:UnspecifiedMatching
+DOID:0061157	retinopathy sensory neuropathy syndrome	skos:exactMatch	OMIM:618339	semapv:UnspecifiedMatching
+DOID:0061158	Kariminejad neurodevelopmental syndrome	oboInOwl:hasDbXref	OMIM:620937	semapv:UnspecifiedMatching
+DOID:0061158	Kariminejad neurodevelopmental syndrome	skos:exactMatch	OMIM:620937	semapv:UnspecifiedMatching
+DOID:0061159	infantile onset multisystem autoimmune disease	oboInOwl:hasDbXref	OMIMPS:615952	semapv:UnspecifiedMatching
+DOID:0061159	infantile onset multisystem autoimmune disease	skos:exactMatch	OMIMPS:615952	semapv:UnspecifiedMatching
+DOID:0061160	infantile onset multisystem autoimmune disease 1	oboInOwl:hasDbXref	OMIM:615952	semapv:UnspecifiedMatching
+DOID:0061160	infantile onset multisystem autoimmune disease 1	skos:exactMatch	OMIM:615952	semapv:UnspecifiedMatching
+DOID:0061161	infantile onset multisystem autoimmune disease 2	oboInOwl:hasDbXref	OMIM:617006	semapv:UnspecifiedMatching
+DOID:0061161	infantile onset multisystem autoimmune disease 2	skos:exactMatch	OMIM:617006	semapv:UnspecifiedMatching
+DOID:0061162	infantile onset multisystem autoimmune disease 3	oboInOwl:hasDbXref	OMIM:620430	semapv:UnspecifiedMatching
+DOID:0061162	infantile onset multisystem autoimmune disease 3	skos:exactMatch	OMIM:620430	semapv:UnspecifiedMatching
+DOID:0061163	infantile onset multisystem autoimmune disease 4	oboInOwl:hasDbXref	OMIM:621004	semapv:UnspecifiedMatching
+DOID:0061163	infantile onset multisystem autoimmune disease 4	skos:exactMatch	OMIM:621004	semapv:UnspecifiedMatching
+DOID:0061164	infantile onset multisystem autoimmune disease 5	oboInOwl:hasDbXref	OMIM:621235	semapv:UnspecifiedMatching
+DOID:0061164	infantile onset multisystem autoimmune disease 5	skos:exactMatch	OMIM:621235	semapv:UnspecifiedMatching
+DOID:0061165	proximal renal tubular acidosis	oboInOwl:hasDbXref	OMIM:179830	semapv:UnspecifiedMatching
+DOID:0061165	proximal renal tubular acidosis	oboInOwl:hasDbXref	ORDO:47159	semapv:UnspecifiedMatching
+DOID:0061165	proximal renal tubular acidosis	skos:exactMatch	OMIM:179830	semapv:UnspecifiedMatching
+DOID:0061166	autosomal recessive distal renal tubular acidosis 3 with or without sensorineural hearing loss	oboInOwl:hasDbXref	OMIM:602722	semapv:UnspecifiedMatching
+DOID:0061166	autosomal recessive distal renal tubular acidosis 3 with or without sensorineural hearing loss	skos:exactMatch	OMIM:602722	semapv:UnspecifiedMatching
+DOID:0061167	autosomal recessive proximal renal tubular acidosis	oboInOwl:hasDbXref	ORDO:93607	semapv:UnspecifiedMatching
+DOID:0061168	mitochondrial axonal Charcot-Marie-Tooth disease	oboInOwl:hasDbXref	OMIM:500013	semapv:UnspecifiedMatching
+DOID:0061168	mitochondrial axonal Charcot-Marie-Tooth disease	skos:exactMatch	OMIM:500013	semapv:UnspecifiedMatching
+DOID:0061169	autosomal dominant autoinflammation, panniculitis, and dermatosis syndrome	oboInOwl:hasDbXref	OMIM:621030	semapv:UnspecifiedMatching
+DOID:0061169	autosomal dominant autoinflammation, panniculitis, and dermatosis syndrome	skos:exactMatch	OMIM:621030	semapv:UnspecifiedMatching
+DOID:0061170	autoinflammation, panniculitis, and dermatosis syndrome	oboInOwl:hasDbXref	OMIMPS:617099	semapv:UnspecifiedMatching
+DOID:0061170	autoinflammation, panniculitis, and dermatosis syndrome	skos:exactMatch	OMIMPS:617099	semapv:UnspecifiedMatching
+DOID:0061171	immunodeficiency 130 with HPV-related verrucosis	oboInOwl:hasDbXref	OMIM:618309	semapv:UnspecifiedMatching
+DOID:0061171	immunodeficiency 130 with HPV-related verrucosis	skos:exactMatch	OMIM:618309	semapv:UnspecifiedMatching
+DOID:0061172	transient neonatal diabetes mellitus 3	oboInOwl:hasDbXref	OMIM:610582	semapv:UnspecifiedMatching
+DOID:0061172	transient neonatal diabetes mellitus 3	skos:exactMatch	OMIM:610582	semapv:UnspecifiedMatching
+DOID:0061173	transient neonatal diabetes mellitus 1	oboInOwl:hasDbXref	OMIM:601410	semapv:UnspecifiedMatching
+DOID:0061173	transient neonatal diabetes mellitus 1	skos:exactMatch	OMIM:601410	semapv:UnspecifiedMatching
 DOID:0070000	3-methylglutaconic aciduria type 8	oboInOwl:hasDbXref	OMIM:617248	semapv:UnspecifiedMatching
 DOID:0070000	3-methylglutaconic aciduria type 8	skos:exactMatch	OMIM:617248	semapv:UnspecifiedMatching
 DOID:0070002	3-methylglutaconic aciduria type 9	oboInOwl:hasDbXref	OMIM:617698	semapv:UnspecifiedMatching
@@ -7237,8 +7280,48 @@ DOID:0070638	mirror movements 4	oboInOwl:hasDbXref	OMIM:618264	semapv:Unspecifie
 DOID:0070638	mirror movements 4	skos:exactMatch	OMIM:618264	semapv:UnspecifiedMatching
 DOID:0070639	mirror movements 3	oboInOwl:hasDbXref	OMIM:616059	semapv:UnspecifiedMatching
 DOID:0070639	mirror movements 3	skos:exactMatch	OMIM:616059	semapv:UnspecifiedMatching
+DOID:0070640	hereditary spastic paraplegia 18A	oboInOwl:hasDbXref	OMIM:620512	semapv:UnspecifiedMatching
+DOID:0070640	hereditary spastic paraplegia 18A	skos:exactMatch	OMIM:620512	semapv:UnspecifiedMatching
+DOID:0070641	hereditary spastic paraplegia 18B	oboInOwl:hasDbXref	OMIM:611225	semapv:UnspecifiedMatching
+DOID:0070641	hereditary spastic paraplegia 18B	skos:exactMatch	OMIM:611225	semapv:UnspecifiedMatching
+DOID:0070642	hereditary spastic paraplegia 72B	oboInOwl:hasDbXref	OMIM:620606	semapv:UnspecifiedMatching
+DOID:0070642	hereditary spastic paraplegia 72B	oboInOwl:hasDbXref	ORDO:401849	semapv:UnspecifiedMatching
+DOID:0070642	hereditary spastic paraplegia 72B	skos:broadMatch	ORDO:401849	semapv:UnspecifiedMatching
+DOID:0070642	hereditary spastic paraplegia 72B	skos:exactMatch	OMIM:620606	semapv:UnspecifiedMatching
+DOID:0070643	hereditary spastic paraplegia 91	oboInOwl:hasDbXref	OMIM:620538	semapv:UnspecifiedMatching
+DOID:0070643	hereditary spastic paraplegia 91	skos:exactMatch	OMIM:620538	semapv:UnspecifiedMatching
 DOID:0070644	hereditary spastic paraplegia 92	oboInOwl:hasDbXref	OMIM:620911	semapv:UnspecifiedMatching
 DOID:0070644	hereditary spastic paraplegia 92	skos:exactMatch	OMIM:620911	semapv:UnspecifiedMatching
+DOID:0070645	hereditary spastic paraplegia 93	oboInOwl:hasDbXref	OMIM:620938	semapv:UnspecifiedMatching
+DOID:0070645	hereditary spastic paraplegia 93	skos:exactMatch	OMIM:620938	semapv:UnspecifiedMatching
+DOID:0070646	hereditary spastic paraplegia 30B	oboInOwl:hasDbXref	OMIM:620607	semapv:UnspecifiedMatching
+DOID:0070646	hereditary spastic paraplegia 30B	skos:exactMatch	OMIM:620607	semapv:UnspecifiedMatching
+DOID:0070647	hereditary spastic paraplegia 30A	oboInOwl:hasDbXref	OMIM:610357	semapv:UnspecifiedMatching
+DOID:0070647	hereditary spastic paraplegia 30A	skos:exactMatch	OMIM:610357	semapv:UnspecifiedMatching
+DOID:0070648	cherubism	oboInOwl:hasDbXref	MESH:D002636	semapv:UnspecifiedMatching
+DOID:0070648	cherubism	oboInOwl:hasDbXref	ORDO:184	semapv:UnspecifiedMatching
+DOID:0070648	cherubism	oboInOwl:hasDbXref	UMLS:C0008029	semapv:UnspecifiedMatching
+DOID:0070648	cherubism	skos:broadMatch	ICD10CM:M27.8	semapv:UnspecifiedMatching
+DOID:0070648	cherubism	skos:exactMatch	MESH:D002636	semapv:UnspecifiedMatching
+DOID:0070648	cherubism	skos:exactMatch	ORDO:184	semapv:UnspecifiedMatching
+DOID:0070648	cherubism	skos:exactMatch	UMLS:C0008029	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	oboInOwl:hasDbXref	GARD:7523	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	oboInOwl:hasDbXref	MESH:C535285	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	oboInOwl:hasDbXref	OMIM:266270	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	oboInOwl:hasDbXref	ORDO:3019	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	oboInOwl:hasDbXref	UMLS:C0796133	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	skos:broadMatch	ICD10CM:Q87.8	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	skos:exactMatch	GARD:7523	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	skos:exactMatch	MESH:C535285	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	skos:exactMatch	OMIM:266270	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	skos:exactMatch	ORDO:3019	semapv:UnspecifiedMatching
+DOID:0070650	Ramon syndrome	skos:exactMatch	UMLS:C0796133	semapv:UnspecifiedMatching
+DOID:0070651	neurodevelopmental disorder with seizures and gingival overgrowth	oboInOwl:hasDbXref	OMIM:619323	semapv:UnspecifiedMatching
+DOID:0070651	neurodevelopmental disorder with seizures and gingival overgrowth	skos:exactMatch	OMIM:619323	semapv:UnspecifiedMatching
+DOID:0070653	Fliedner-Zweier syndrome	oboInOwl:hasDbXref	OMIM:620511	semapv:UnspecifiedMatching
+DOID:0070653	Fliedner-Zweier syndrome	oboInOwl:hasDbXref	ORDO:528084	semapv:UnspecifiedMatching
+DOID:0070653	Fliedner-Zweier syndrome	skos:broadMatch	ORDO:528084	semapv:UnspecifiedMatching
+DOID:0070653	Fliedner-Zweier syndrome	skos:exactMatch	OMIM:620511	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	ICD10CM:M89.9	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	MESH:D001847	semapv:UnspecifiedMatching
 DOID:0080001	bone disease	oboInOwl:hasDbXref	UMLS:C0005940	semapv:UnspecifiedMatching
@@ -7637,9 +7720,16 @@ DOID:0080160	Cytomegalovirus retinitis	oboInOwl:hasDbXref	MESH:D017726	semapv:Un
 DOID:0080161	cutaneous candidiasis	oboInOwl:hasDbXref	MESH:D002179	semapv:UnspecifiedMatching
 DOID:0080162	lupus nephritis	oboInOwl:hasDbXref	GARD:10747	semapv:UnspecifiedMatching
 DOID:0080162	lupus nephritis	oboInOwl:hasDbXref	MESH:D008181	semapv:UnspecifiedMatching
-DOID:0080163	otulipenia	oboInOwl:hasDbXref	GARD:13198	semapv:UnspecifiedMatching
-DOID:0080163	otulipenia	oboInOwl:hasDbXref	OMIM:617099	semapv:UnspecifiedMatching
-DOID:0080163	otulipenia	skos:exactMatch	OMIM:617099	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	oboInOwl:hasDbXref	GARD:13198	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	oboInOwl:hasDbXref	NCI:C174441	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	oboInOwl:hasDbXref	OMIM:617099	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	oboInOwl:hasDbXref	ORDO:500062	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	oboInOwl:hasDbXref	UMLS:C4310614	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	skos:exactMatch	GARD:13198	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	skos:exactMatch	NCI:C174441	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	skos:exactMatch	OMIM:617099	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	skos:exactMatch	ORDO:500062	semapv:UnspecifiedMatching
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	skos:exactMatch	UMLS:C4310614	semapv:UnspecifiedMatching
 DOID:0080164	myeloid and lymphoid neoplasms with eosinophilia and abnormalities of PDGFRA, PDGFRB, and FGFR1	oboInOwl:hasDbXref	NCI:C84270	semapv:UnspecifiedMatching
 DOID:0080164	myeloid and lymphoid neoplasms with eosinophilia and abnormalities of PDGFRA, PDGFRB, and FGFR1	oboInOwl:hasDbXref	UMLS:C2827356	semapv:UnspecifiedMatching
 DOID:0080165	myeloid and lymphoid neoplasms associated with PDGFRA rearrangement	oboInOwl:hasDbXref	NCI:C84275	semapv:UnspecifiedMatching
@@ -9397,6 +9487,9 @@ DOID:0080980	arthrogryposis multiplex congenita-4	oboInOwl:hasDbXref	OMIM:618766
 DOID:0080980	arthrogryposis multiplex congenita-4	skos:exactMatch	OMIM:618766	semapv:UnspecifiedMatching
 DOID:0080981	arthrogryposis multiplex congenita-5	oboInOwl:hasDbXref	OMIM:618947	semapv:UnspecifiedMatching
 DOID:0080981	arthrogryposis multiplex congenita-5	skos:exactMatch	OMIM:618947	semapv:UnspecifiedMatching
+DOID:0080982	X-linked intellectual disability-hypotonic facies syndrome-1	oboInOwl:hasDbXref	OMIM:309580	semapv:UnspecifiedMatching
+DOID:0080982	X-linked intellectual disability-hypotonic facies syndrome-1	oboInOwl:hasDbXref	ORDO:73220	semapv:UnspecifiedMatching
+DOID:0080982	X-linked intellectual disability-hypotonic facies syndrome-1	skos:exactMatch	OMIM:309580	semapv:UnspecifiedMatching
 DOID:0080984	X-linked intellectual developmental disorder 109	oboInOwl:hasDbXref	GARD:2378	semapv:UnspecifiedMatching
 DOID:0080984	X-linked intellectual developmental disorder 109	oboInOwl:hasDbXref	OMIM:309548	semapv:UnspecifiedMatching
 DOID:0080984	X-linked intellectual developmental disorder 109	oboInOwl:hasDbXref	ORDO:100973	semapv:UnspecifiedMatching
@@ -9972,6 +10065,7 @@ DOID:0081266	pachygyria, microcephaly, developmental delay, and dysmorphic facie
 DOID:0081267	graft-versus-host disease	oboInOwl:hasDbXref	MESH:D006086	semapv:UnspecifiedMatching
 DOID:0081267	graft-versus-host disease	oboInOwl:hasDbXref	OMIM:614395	semapv:UnspecifiedMatching
 DOID:0081267	graft-versus-host disease	oboInOwl:hasDbXref	ORDO:39812	semapv:UnspecifiedMatching
+DOID:0081267	graft-versus-host disease	oboInOwl:hasDbXref	icd11.foundation:4B24	semapv:UnspecifiedMatching
 DOID:0081267	graft-versus-host disease	skos:exactMatch	OMIM:614395	semapv:UnspecifiedMatching
 DOID:0081268	pulmonary venoocclusive disease 1	oboInOwl:hasDbXref	OMIM:265450	semapv:UnspecifiedMatching
 DOID:0081268	pulmonary venoocclusive disease 1	skos:exactMatch	OMIM:265450	semapv:UnspecifiedMatching
@@ -13409,9 +13503,10 @@ DOID:0110770	hereditary spastic paraplegia 17	oboInOwl:hasDbXref	ORDO:100998	sem
 DOID:0110770	hereditary spastic paraplegia 17	skos:exactMatch	OMIM:270685	semapv:UnspecifiedMatching
 DOID:0110771	hereditary spastic paraplegia 18	oboInOwl:hasDbXref	GARD:4922	semapv:UnspecifiedMatching
 DOID:0110771	hereditary spastic paraplegia 18	oboInOwl:hasDbXref	ICD10CM:G11.4	semapv:UnspecifiedMatching
-DOID:0110771	hereditary spastic paraplegia 18	oboInOwl:hasDbXref	OMIM:611225	semapv:UnspecifiedMatching
 DOID:0110771	hereditary spastic paraplegia 18	oboInOwl:hasDbXref	ORDO:209951	semapv:UnspecifiedMatching
-DOID:0110771	hereditary spastic paraplegia 18	skos:exactMatch	OMIM:611225	semapv:UnspecifiedMatching
+DOID:0110771	hereditary spastic paraplegia 18	skos:broadMatch	ICD10CM:G11.4	semapv:UnspecifiedMatching
+DOID:0110771	hereditary spastic paraplegia 18	skos:exactMatch	GARD:4922	semapv:UnspecifiedMatching
+DOID:0110771	hereditary spastic paraplegia 18	skos:exactMatch	ORDO:209951	semapv:UnspecifiedMatching
 DOID:0110772	hereditary spastic paraplegia 19	oboInOwl:hasDbXref	GARD:9588	semapv:UnspecifiedMatching
 DOID:0110772	hereditary spastic paraplegia 19	oboInOwl:hasDbXref	ICD10CM:G11.4	semapv:UnspecifiedMatching
 DOID:0110772	hereditary spastic paraplegia 19	oboInOwl:hasDbXref	OMIM:607152	semapv:UnspecifiedMatching
@@ -13456,9 +13551,9 @@ DOID:0110780	hereditary spastic paraplegia 29	oboInOwl:hasDbXref	OMIM:609727	sem
 DOID:0110780	hereditary spastic paraplegia 29	oboInOwl:hasDbXref	ORDO:101009	semapv:UnspecifiedMatching
 DOID:0110780	hereditary spastic paraplegia 29	skos:exactMatch	OMIM:609727	semapv:UnspecifiedMatching
 DOID:0110781	hereditary spastic paraplegia 30	oboInOwl:hasDbXref	ICD10CM:G11.4	semapv:UnspecifiedMatching
-DOID:0110781	hereditary spastic paraplegia 30	oboInOwl:hasDbXref	OMIM:610357	semapv:UnspecifiedMatching
 DOID:0110781	hereditary spastic paraplegia 30	oboInOwl:hasDbXref	ORDO:101010	semapv:UnspecifiedMatching
-DOID:0110781	hereditary spastic paraplegia 30	skos:exactMatch	OMIM:610357	semapv:UnspecifiedMatching
+DOID:0110781	hereditary spastic paraplegia 30	skos:broadMatch	ICD10CM:G11.4	semapv:UnspecifiedMatching
+DOID:0110781	hereditary spastic paraplegia 30	skos:exactMatch	ORDO:101010	semapv:UnspecifiedMatching
 DOID:0110782	hereditary spastic paraplegia 31	oboInOwl:hasDbXref	GARD:10817	semapv:UnspecifiedMatching
 DOID:0110782	hereditary spastic paraplegia 31	oboInOwl:hasDbXref	ICD10CM:G11.4	semapv:UnspecifiedMatching
 DOID:0110782	hereditary spastic paraplegia 31	oboInOwl:hasDbXref	OMIM:610250	semapv:UnspecifiedMatching
@@ -13602,6 +13697,8 @@ DOID:0110816	hereditary spastic paraplegia 7	skos:exactMatch	OMIM:607259	semapv:
 DOID:0110817	hereditary spastic paraplegia 72A	oboInOwl:hasDbXref	ICD10CM:G11.4	semapv:UnspecifiedMatching
 DOID:0110817	hereditary spastic paraplegia 72A	oboInOwl:hasDbXref	OMIM:615625	semapv:UnspecifiedMatching
 DOID:0110817	hereditary spastic paraplegia 72A	oboInOwl:hasDbXref	ORDO:401849	semapv:UnspecifiedMatching
+DOID:0110817	hereditary spastic paraplegia 72A	skos:broadMatch	ICD10CM:G11.4	semapv:UnspecifiedMatching
+DOID:0110817	hereditary spastic paraplegia 72A	skos:broadMatch	ORDO:401849	semapv:UnspecifiedMatching
 DOID:0110817	hereditary spastic paraplegia 72A	skos:exactMatch	OMIM:615625	semapv:UnspecifiedMatching
 DOID:0110818	hereditary spastic paraplegia 73	oboInOwl:hasDbXref	ICD10CM:G11.4	semapv:UnspecifiedMatching
 DOID:0110818	hereditary spastic paraplegia 73	oboInOwl:hasDbXref	OMIM:616282	semapv:UnspecifiedMatching
@@ -24984,10 +25081,9 @@ DOID:14219	renal tubular acidosis	oboInOwl:hasDbXref	GARD:7552	semapv:Unspecifie
 DOID:14219	renal tubular acidosis	oboInOwl:hasDbXref	ICD10CM:N25.89	semapv:UnspecifiedMatching
 DOID:14219	renal tubular acidosis	oboInOwl:hasDbXref	MESH:D000141	semapv:UnspecifiedMatching
 DOID:14219	renal tubular acidosis	oboInOwl:hasDbXref	NCI:C28129	semapv:UnspecifiedMatching
-DOID:14219	renal tubular acidosis	oboInOwl:hasDbXref	OMIM:179830	semapv:UnspecifiedMatching
 DOID:14219	renal tubular acidosis	oboInOwl:hasDbXref	OMIM:267200	semapv:UnspecifiedMatching
-DOID:14219	renal tubular acidosis	oboInOwl:hasDbXref	OMIM:602722	semapv:UnspecifiedMatching
 DOID:14219	renal tubular acidosis	oboInOwl:hasDbXref	UMLS:C0001126	semapv:UnspecifiedMatching
+DOID:14219	renal tubular acidosis	skos:exactMatch	OMIM:267200	semapv:UnspecifiedMatching
 DOID:14221	abdominal obesity-metabolic syndrome 1	oboInOwl:hasDbXref	EFO:0000195	semapv:UnspecifiedMatching
 DOID:14221	abdominal obesity-metabolic syndrome 1	oboInOwl:hasDbXref	GARD:9226	semapv:UnspecifiedMatching
 DOID:14221	abdominal obesity-metabolic syndrome 1	oboInOwl:hasDbXref	ICD10CM:E88.81	semapv:UnspecifiedMatching
@@ -26618,13 +26714,12 @@ DOID:1852	intrahepatic cholestasis	oboInOwl:hasDbXref	MESH:D002780	semapv:Unspec
 DOID:1852	intrahepatic cholestasis	oboInOwl:hasDbXref	NCI:C84400	semapv:UnspecifiedMatching
 DOID:1852	intrahepatic cholestasis	oboInOwl:hasDbXref	ORDO:284385	semapv:UnspecifiedMatching
 DOID:1852	intrahepatic cholestasis	oboInOwl:hasDbXref	UMLS:C0008372	semapv:UnspecifiedMatching
-DOID:1856	cherubism	oboInOwl:hasDbXref	GARD:6036	semapv:UnspecifiedMatching
-DOID:1856	cherubism	oboInOwl:hasDbXref	ICD10CM:M27.8	semapv:UnspecifiedMatching
-DOID:1856	cherubism	oboInOwl:hasDbXref	MESH:D002636	semapv:UnspecifiedMatching
-DOID:1856	cherubism	oboInOwl:hasDbXref	NCI:C84630	semapv:UnspecifiedMatching
-DOID:1856	cherubism	oboInOwl:hasDbXref	OMIM:118400	semapv:UnspecifiedMatching
-DOID:1856	cherubism	oboInOwl:hasDbXref	UMLS:C0008029	semapv:UnspecifiedMatching
-DOID:1856	cherubism	skos:exactMatch	OMIM:118400	semapv:UnspecifiedMatching
+DOID:1856	cherubism 1	oboInOwl:hasDbXref	GARD:6036	semapv:UnspecifiedMatching
+DOID:1856	cherubism 1	oboInOwl:hasDbXref	NCI:C84630	semapv:UnspecifiedMatching
+DOID:1856	cherubism 1	oboInOwl:hasDbXref	OMIM:118400	semapv:UnspecifiedMatching
+DOID:1856	cherubism 1	skos:exactMatch	GARD:6036	semapv:UnspecifiedMatching
+DOID:1856	cherubism 1	skos:exactMatch	NCI:C84630	semapv:UnspecifiedMatching
+DOID:1856	cherubism 1	skos:exactMatch	OMIM:118400	semapv:UnspecifiedMatching
 DOID:1858	McCune Albright syndrome	oboInOwl:hasDbXref	GARD:6995	semapv:UnspecifiedMatching
 DOID:1858	McCune Albright syndrome	oboInOwl:hasDbXref	ICD10CM:Q78.1	semapv:UnspecifiedMatching
 DOID:1858	McCune Albright syndrome	oboInOwl:hasDbXref	ICD9CM:756.54	semapv:UnspecifiedMatching
@@ -30844,6 +30939,7 @@ DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	MESH:D018263	semapv:Un
 DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	NCI:C8054	semapv:UnspecifiedMatching
 DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	OMIM:188470	semapv:UnspecifiedMatching
 DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	UMLS:C0206682	semapv:UnspecifiedMatching
+DOID:3962	follicular thyroid carcinoma	oboInOwl:hasDbXref	icd11.foundation:2D10.0	semapv:UnspecifiedMatching
 DOID:3962	follicular thyroid carcinoma	skos:exactMatch	OMIM:188470	semapv:UnspecifiedMatching
 DOID:3963	thyroid gland carcinoma	oboInOwl:hasDbXref	EFO:0002892	semapv:UnspecifiedMatching
 DOID:3963	thyroid gland carcinoma	oboInOwl:hasDbXref	MESH:D013964	semapv:UnspecifiedMatching
@@ -30864,6 +30960,7 @@ DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	MESH:D000077273	semapv:
 DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	NCI:C4035	semapv:UnspecifiedMatching
 DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	OMIM:188550	semapv:UnspecifiedMatching
 DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	UMLS:C0238463	semapv:UnspecifiedMatching
+DOID:3969	papillary thyroid carcinoma	oboInOwl:hasDbXref	icd11.foundation:2D10.1	semapv:UnspecifiedMatching
 DOID:3969	papillary thyroid carcinoma	skos:exactMatch	OMIM:188550	semapv:UnspecifiedMatching
 DOID:397	restrictive cardiomyopathy	oboInOwl:hasDbXref	ICD10CM:I42.5	semapv:UnspecifiedMatching
 DOID:397	restrictive cardiomyopathy	oboInOwl:hasDbXref	MESH:D002313	semapv:UnspecifiedMatching
@@ -33280,10 +33377,16 @@ DOID:5362	focal epithelial hyperplasia	skos:exactMatch	OMIM:229045	semapv:Unspec
 DOID:5363	myxoid liposarcoma	oboInOwl:hasDbXref	GARD:7157	semapv:UnspecifiedMatching
 DOID:5363	myxoid liposarcoma	oboInOwl:hasDbXref	ICDO:8852/3	semapv:UnspecifiedMatching
 DOID:5363	myxoid liposarcoma	oboInOwl:hasDbXref	MESH:D018208	semapv:UnspecifiedMatching
+DOID:5363	myxoid liposarcoma	oboInOwl:hasDbXref	NCI:C27781	semapv:UnspecifiedMatching
 DOID:5363	myxoid liposarcoma	oboInOwl:hasDbXref	OMIM:613488	semapv:UnspecifiedMatching
 DOID:5363	myxoid liposarcoma	oboInOwl:hasDbXref	ORDO:99967	semapv:UnspecifiedMatching
 DOID:5363	myxoid liposarcoma	oboInOwl:hasDbXref	UMLS:C0206634	semapv:UnspecifiedMatching
+DOID:5363	myxoid liposarcoma	skos:exactMatch	ICDO:8852/3	semapv:UnspecifiedMatching
+DOID:5363	myxoid liposarcoma	skos:exactMatch	MESH:D018208	semapv:UnspecifiedMatching
+DOID:5363	myxoid liposarcoma	skos:exactMatch	NCI:C27781	semapv:UnspecifiedMatching
 DOID:5363	myxoid liposarcoma	skos:exactMatch	OMIM:613488	semapv:UnspecifiedMatching
+DOID:5363	myxoid liposarcoma	skos:exactMatch	ORDO:99967	semapv:UnspecifiedMatching
+DOID:5363	myxoid liposarcoma	skos:exactMatch	UMLS:C0206634	semapv:UnspecifiedMatching
 DOID:5364	pulmonary coin lesion	oboInOwl:hasDbXref	ICD10CM:R91.1	semapv:UnspecifiedMatching
 DOID:5364	pulmonary coin lesion	oboInOwl:hasDbXref	MESH:D003074	semapv:UnspecifiedMatching
 DOID:5364	pulmonary coin lesion	oboInOwl:hasDbXref	UMLS:C0009250	semapv:UnspecifiedMatching
@@ -33891,8 +33994,12 @@ DOID:5691	visual cortex disease	oboInOwl:hasDbXref	ICD10CM:H47.6	semapv:Unspecif
 DOID:5691	visual cortex disease	oboInOwl:hasDbXref	ICD9CM:377.7	semapv:UnspecifiedMatching
 DOID:5691	visual cortex disease	oboInOwl:hasDbXref	NCI:C35275	semapv:UnspecifiedMatching
 DOID:5691	visual cortex disease	oboInOwl:hasDbXref	UMLS:C0234398	semapv:UnspecifiedMatching
+DOID:5692	cellular myxoid liposarcoma	oboInOwl:hasDbXref	ICDO:8853/3	semapv:UnspecifiedMatching
 DOID:5692	cellular myxoid liposarcoma	oboInOwl:hasDbXref	NCI:C4252	semapv:UnspecifiedMatching
 DOID:5692	cellular myxoid liposarcoma	oboInOwl:hasDbXref	UMLS:C0334471	semapv:UnspecifiedMatching
+DOID:5692	cellular myxoid liposarcoma	skos:exactMatch	ICDO:8853/3	semapv:UnspecifiedMatching
+DOID:5692	cellular myxoid liposarcoma	skos:exactMatch	NCI:C4252	semapv:UnspecifiedMatching
+DOID:5692	cellular myxoid liposarcoma	skos:exactMatch	UMLS:C0334471	semapv:UnspecifiedMatching
 DOID:5693	adult liposarcoma	oboInOwl:hasDbXref	NCI:C7811	semapv:UnspecifiedMatching
 DOID:5693	adult liposarcoma	oboInOwl:hasDbXref	UMLS:C0278608	semapv:UnspecifiedMatching
 DOID:5694	esophagus liposarcoma	oboInOwl:hasDbXref	NCI:C5705	semapv:UnspecifiedMatching
@@ -33927,12 +34034,15 @@ DOID:5702	pleomorphic liposarcoma	oboInOwl:hasDbXref	UMLS:C0205825	semapv:Unspec
 DOID:5703	mixed liposarcoma	oboInOwl:hasDbXref	ICDO:8855/3	semapv:UnspecifiedMatching
 DOID:5703	mixed liposarcoma	oboInOwl:hasDbXref	NCI:C4253	semapv:UnspecifiedMatching
 DOID:5703	mixed liposarcoma	oboInOwl:hasDbXref	UMLS:C0334472	semapv:UnspecifiedMatching
+DOID:5703	mixed liposarcoma	skos:exactMatch	ICDO:8855/3	semapv:UnspecifiedMatching
+DOID:5703	mixed liposarcoma	skos:exactMatch	NCI:C4253	semapv:UnspecifiedMatching
+DOID:5703	mixed liposarcoma	skos:exactMatch	UMLS:C0334472	semapv:UnspecifiedMatching
 DOID:5704	sclerosing liposarcoma	oboInOwl:hasDbXref	NCI:C6507	semapv:UnspecifiedMatching
 DOID:5704	sclerosing liposarcoma	oboInOwl:hasDbXref	UMLS:C0334469	semapv:UnspecifiedMatching
 DOID:5705	spindle cell liposarcoma	oboInOwl:hasDbXref	NCI:C27489	semapv:UnspecifiedMatching
 DOID:5705	spindle cell liposarcoma	oboInOwl:hasDbXref	UMLS:C1275275	semapv:UnspecifiedMatching
-DOID:5709	mixed-type liposarcoma	oboInOwl:hasDbXref	NCI:C27781	semapv:UnspecifiedMatching
-DOID:5709	mixed-type liposarcoma	oboInOwl:hasDbXref	UMLS:C0545074	semapv:UnspecifiedMatching
+DOID:5709	obsolete mixed-type liposarcoma	oboInOwl:hasDbXref	NCI:C27781	semapv:UnspecifiedMatching
+DOID:5709	obsolete mixed-type liposarcoma	oboInOwl:hasDbXref	UMLS:C0545074	semapv:UnspecifiedMatching
 DOID:571	median neuropathy	oboInOwl:hasDbXref	ICD10CM:G56.10	semapv:UnspecifiedMatching
 DOID:571	median neuropathy	oboInOwl:hasDbXref	ICD9CM:354.1	semapv:UnspecifiedMatching
 DOID:571	median neuropathy	oboInOwl:hasDbXref	UMLS:C0154742	semapv:UnspecifiedMatching
