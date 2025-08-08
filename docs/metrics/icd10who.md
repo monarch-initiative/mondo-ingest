@@ -2,13 +2,13 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/icd10who.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-07-15/icd10who.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-08-07/icd10who.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
-| Annotation properties | 9 |
+| Annotation properties | 8 |
 | Axioms | 63010 |
 | Logical axioms | 12542 |
 | Classes | 12543 |
@@ -43,7 +43,7 @@
 | Metric | Value |
 | ------ | ----- |
 | prefix_unknown | 12542 |
-| owl | 2 |
+| owl | 1 |
 | oboInOwl | 3 |
 | rdf | 1 |
 | rdfs | 3 |

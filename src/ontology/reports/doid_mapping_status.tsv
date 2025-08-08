@@ -6,6 +6,7 @@ DOID:0051012	Bryant-Li-Bhoj neurodevelopmental syndrome 2	False	False	False
 DOID:0051014	atypical autosomal dominant adult-onset demyelinating leukodystrophy	False	False	False
 DOID:0051037	autosomal dominant primary microcephaly 26	False	False	False
 DOID:0051038	autosomal dominant primary microcephaly 27	False	False	False
+DOID:0051054	coarctation of the aorta	False	False	False
 DOID:0060160	childhood spinal muscular atrophy	False	False	False
 DOID:0060333	mitochondrial complex V (ATP synthase) deficiency nuclear type 4	False	False	False
 DOID:0060854	autosomal recessive pseudohypoaldosteronism type 1	False	False	False
@@ -33,6 +34,25 @@ DOID:0061151	familial isolated hypoparathyroidism 2	False	False	False
 DOID:0061152	monilethrix 2	False	False	False
 DOID:0061153	monilethrix 3	False	False	False
 DOID:0061154	Mulvihill-Smith syndrome	False	False	False
+DOID:0061155	kyphomelic dysplasia	False	False	False
+DOID:0061156	CASGID syndrome	False	False	False
+DOID:0061157	retinopathy sensory neuropathy syndrome	False	False	False
+DOID:0061158	Kariminejad neurodevelopmental syndrome	False	False	False
+DOID:0061159	infantile onset multisystem autoimmune disease	False	False	False
+DOID:0061160	infantile onset multisystem autoimmune disease 1	False	False	False
+DOID:0061161	infantile onset multisystem autoimmune disease 2	False	False	False
+DOID:0061162	infantile onset multisystem autoimmune disease 3	False	False	False
+DOID:0061163	infantile onset multisystem autoimmune disease 4	False	False	False
+DOID:0061164	infantile onset multisystem autoimmune disease 5	False	False	False
+DOID:0061165	proximal renal tubular acidosis	False	False	False
+DOID:0061166	autosomal recessive distal renal tubular acidosis 3 with or without sensorineural hearing loss	False	False	False
+DOID:0061167	autosomal recessive proximal renal tubular acidosis	False	False	False
+DOID:0061168	mitochondrial axonal Charcot-Marie-Tooth disease	False	False	False
+DOID:0061169	autosomal dominant autoinflammation, panniculitis, and dermatosis syndrome	False	False	False
+DOID:0061170	autoinflammation, panniculitis, and dermatosis syndrome	False	False	False
+DOID:0061171	immunodeficiency 130 with HPV-related verrucosis	False	False	False
+DOID:0061172	transient neonatal diabetes mellitus 3	False	False	False
+DOID:0061173	transient neonatal diabetes mellitus 1	False	False	False
 DOID:0070564	dialysis disequilibrium syndrome	False	False	False
 DOID:0070618	rhabdoid tumor predisposition syndrome 1	False	False	False
 DOID:0070621	ring chromosome 14 syndrome	False	False	False
@@ -42,7 +62,19 @@ DOID:0070636	mirror movements 1	False	False	False
 DOID:0070637	mirror movements 2	False	False	False
 DOID:0070638	mirror movements 4	False	False	False
 DOID:0070639	mirror movements 3	False	False	False
+DOID:0070640	hereditary spastic paraplegia 18A	False	False	False
+DOID:0070641	hereditary spastic paraplegia 18B	False	False	False
+DOID:0070642	hereditary spastic paraplegia 72B	False	False	False
+DOID:0070643	hereditary spastic paraplegia 91	False	False	False
 DOID:0070644	hereditary spastic paraplegia 92	False	False	False
+DOID:0070645	hereditary spastic paraplegia 93	False	False	False
+DOID:0070646	hereditary spastic paraplegia 30B	False	False	False
+DOID:0070647	hereditary spastic paraplegia 30A	False	False	False
+DOID:0070648	cherubism	False	False	False
+DOID:0070649	cherubism 2	False	False	False
+DOID:0070650	Ramon syndrome	False	False	False
+DOID:0070651	neurodevelopmental disorder with seizures and gingival overgrowth	False	False	False
+DOID:0070653	Fliedner-Zweier syndrome	False	False	False
 DOID:0111368	cholesterol-ester transfer protein deficiency	False	False	False
 DOID:146	papilledema	False	False	False
 DOID:2536	chronic inflammatory demyelinating polyneuritis	False	False	False
@@ -520,6 +552,7 @@ DOID:0080546	obsolete non-alcoholic fatty liver	False	True	True
 DOID:0080713	obsolete MECP2 duplication syndrome	False	True	True
 DOID:0080783	obsolete X-linked sensorineural deafness	False	True	True
 DOID:0081062	obsolete diabetes	False	True	True
+DOID:0081119	obsolete benign familial infantile seizures 6	False	True	True
 DOID:0081164	obsolete dilated cardiomyopathy 3B	False	True	True
 DOID:0081376	obsolete sorbitol dehydrogenase deficiency with peripheral neuropathy	False	True	True
 DOID:0090121	obsolete apparent mineralocorticoid excess	False	True	True
@@ -5087,7 +5120,7 @@ DOID:0080159	Cryptococcal meningitis	True	False	False
 DOID:0080160	Cytomegalovirus retinitis	True	False	False
 DOID:0080161	cutaneous candidiasis	True	False	False
 DOID:0080162	lupus nephritis	True	False	False
-DOID:0080163	otulipenia	True	False	False
+DOID:0080163	autosomal recessive autoinflammation, panniculitis, and dermatosis syndrome	True	False	False
 DOID:0080164	myeloid and lymphoid neoplasms with eosinophilia and abnormalities of PDGFRA, PDGFRB, and FGFR1	True	False	False
 DOID:0080165	myeloid and lymphoid neoplasms associated with PDGFRA rearrangement	True	False	False
 DOID:0080166	myeloid and lymphoid neoplasms associated with PDGFRB rearrangement	True	False	False
@@ -5866,7 +5899,7 @@ DOID:0080978	arthrogryposis multiplex congenita-1	True	False	False
 DOID:0080979	arthrogryposis multiplex congenita-3	True	False	False
 DOID:0080980	arthrogryposis multiplex congenita-4	True	False	False
 DOID:0080981	arthrogryposis multiplex congenita-5	True	False	False
-DOID:0080982	X-linked mental retardation-hypotonic facies syndrome-1	True	False	False
+DOID:0080982	X-linked intellectual disability-hypotonic facies syndrome-1	True	False	False
 DOID:0080984	X-linked intellectual developmental disorder 109	True	False	False
 DOID:0080985	syndromic X-linked intellectual disorder Lujan-Fryns-type	True	False	False
 DOID:0080986	Ehlers-Danlos syndrome periodontal type 1	True	False	False
@@ -10605,7 +10638,7 @@ DOID:184	bone cancer	True	False	False
 DOID:1844	mononeuritis of upper limb	True	False	False
 DOID:1849	cannabis dependence	True	False	False
 DOID:1852	intrahepatic cholestasis	True	False	False
-DOID:1856	cherubism	True	False	False
+DOID:1856	cherubism 1	True	False	False
 DOID:1858	McCune Albright syndrome	True	False	False
 DOID:1862	jaw cancer	True	False	False
 DOID:1863	skull cancer	True	False	False
@@ -12646,7 +12679,6 @@ DOID:5702	pleomorphic liposarcoma	True	False	False
 DOID:5703	mixed liposarcoma	True	False	False
 DOID:5704	sclerosing liposarcoma	True	False	False
 DOID:5705	spindle cell liposarcoma	True	False	False
-DOID:5709	mixed-type liposarcoma	True	False	False
 DOID:571	median neuropathy	True	False	False
 DOID:5711	vulvar liposarcoma	True	False	False
 DOID:5712	cutaneous liposarcoma	True	False	False
@@ -14387,13 +14419,13 @@ DOID:9415	allergic asthma	True	True	False
 DOID:0050068	obsolete pestis minor	True	True	True
 DOID:0050867	obsolete Jensen syndrome	True	True	True
 DOID:0060771	obsolete dextro-looped transposition of the great arteries 1	True	True	True
-DOID:0081119	obsolete benign familial infantile seizures 6	True	True	True
 DOID:0110302	obsolete autosomal dominant limb-girdle muscular dystrophy type 1C	True	True	True
 DOID:0110578	obsolete autosomal dominant nonsyndromic deafness 52	True	True	True
 DOID:10919	obsolete transsexualism	True	True	True
 DOID:11349	obsolete epilepsia partialis continua	True	True	True
 DOID:1634	obsolete breast papillomatosis	True	True	True
 DOID:5209	obsolete benign struma ovarii	True	True	True
+DOID:5709	obsolete mixed-type liposarcoma	True	True	True
 DOID:6809	obsolete vaginal tubular adenoma	True	True	True
 DOID:7922	obsolete benign mediastinal neurilemmoma	True	True	True
 DOID:955	obsolete benign neurilemmoma	True	True	True
