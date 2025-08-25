@@ -799,6 +799,11 @@ $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv:
 	wget "https://github.com/monarch-initiative/omim/releases/latest/download/mondo-omim-genes.robot.tsv" -O $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv
 
+$(EXTERNAL_CONTENT_DIR)/mondo-omim-susceptibility-subset.robot.tsv:
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
+	wget "https://github.com/monarch-initiative/omim/releases/latest/download/mondo-omim-susceptibility-subset.robot.tsv" -O $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-omim-susceptibility-subset.robot.tsv
+
 ###### NanDO #########
 
 $(MAPPINGSDIR)/mondo-nando.sssom.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
