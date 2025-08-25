@@ -707,6 +707,7 @@ EXTERNAL_FILES = \
 	mondo-efo \
 	mondo-medgen \
 	mondo-omim-genes \
+	mondo-omim-susceptibility-subset \
 	mondo-otar-subset \
 	mondo-malacards \
 	nando-mappings \
