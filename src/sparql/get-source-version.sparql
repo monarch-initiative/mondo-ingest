@@ -1,0 +1,9 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+# Get ontology version information
+
+SELECT ?ontologyIRI ?versionIRI ?versionInfo WHERE {
+  ?ontologyIRI a owl:Ontology .
+  OPTIONAL { ?ontologyIRI owl:versionIRI ?versionIRI . }
+  OPTIONAL { ?ontologyIRI owl:versionInfo ?versionInfo . }
+}

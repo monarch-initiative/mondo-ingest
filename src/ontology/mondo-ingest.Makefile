@@ -389,9 +389,40 @@ metadata/%-metrics.json: $(COMPONENTSDIR)/%.owl
 $(DOCS_DIR)/metrics/%.md: metadata/%-metrics.json | $(DOCS_DIR)/metrics/
 	jinjanate "$(SOURCE_METRICS_TEMPLATE)" metadata/$*-metrics.json > $@
 
-.PHONY: documentation
-documentation: $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs slurp-docs
+############################
+## Source version report  ##
+############################
 
+MIRROR_OWLS  := $(wildcard $(TMPDIR)/mirror-*.owl)
+VERSION_TSVS := $(patsubst $(TMPDIR)/mirror-%.owl,$(TMPDIR)/version-%.tsv,$(MIRROR_OWLS))
+
+$(TMPDIR)/version-%.tsv: $(TMPDIR)/mirror-%.owl $(SPARQLDIR)/get-source-version.sparql | $(TMPDIR)
+	$(ROBOT) query -i $< -f tsv --query $(SPARQLDIR)/get-source-version.sparql $@
+
+$(REPORTDIR)/source-versions.txt: $(VERSION_TSVS) | $(REPORTDIR)
+	@printf "source\tontology\tversionIRI\tversionInfo\n" > $@; \
+	for f in $^; do \
+	  src=$${f##*/version-}; src=$${src%.tsv}; \
+	  tail -n +2 "$$f" | awk 'BEGIN{FS="\t"; OFS="\t"} {print src, $$1, $$2, $$3}' src=$${src} >> $@; \
+	done
+
+$(REPORTDIR)/source-versions.md: $(REPORTDIR)/source-versions.txt | $(REPORTDIR)
+	@awk 'BEGIN{FS="\t"} \
+	     NR==1{ \
+	       printf("|"); \
+	       for(i=1;i<=NF;i++) printf(" %s |", $$i); \
+	       printf("\n|"); \
+	       for(i=1;i<=NF;i++) printf(" --- |"); \
+	       printf("\n"); \
+	       next \
+	     } \
+	     { printf("|"); for(i=1;i<=NF;i++) printf(" %s |", $$i); printf("\n") }' $< > $@
+
+.PHONY: source-version-docs
+source-version-docs: $(REPORTDIR)/source-versions.md
+
+.PHONY: documentation
+documentation: $(ALL_DOCS) unmapped-terms-docs mapped-deprecated-terms-docs slurp-docs source-version-docs
 
 .PHONY: build-mondo-ingest
 build-mondo-ingest:
