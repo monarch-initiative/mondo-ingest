@@ -7,6 +7,8 @@ DOID:0051014	atypical autosomal dominant adult-onset demyelinating leukodystroph
 DOID:0051037	autosomal dominant primary microcephaly 26	False	False	False
 DOID:0051038	autosomal dominant primary microcephaly 27	False	False	False
 DOID:0051054	coarctation of the aorta	False	False	False
+DOID:0051056	immunodeficiency 113	False	False	False
+DOID:0051057	avoidant/restrictive food intake disorder	False	False	False
 DOID:0060160	childhood spinal muscular atrophy	False	False	False
 DOID:0060333	mitochondrial complex V (ATP synthase) deficiency nuclear type 4	False	False	False
 DOID:0060854	autosomal recessive pseudohypoaldosteronism type 1	False	False	False
@@ -53,6 +55,23 @@ DOID:0061170	autoinflammation, panniculitis, and dermatosis syndrome	False	False
 DOID:0061171	immunodeficiency 130 with HPV-related verrucosis	False	False	False
 DOID:0061172	transient neonatal diabetes mellitus 3	False	False	False
 DOID:0061173	transient neonatal diabetes mellitus 1	False	False	False
+DOID:0061174	transient neonatal diabetes mellitus 2	False	False	False
+DOID:0061175	Gollop-Wolfgang complex	False	False	False
+DOID:0061176	developmental and epileptic encephalopathy 118	False	False	False
+DOID:0061177	X-linked spermatogenic failure 9	False	False	False
+DOID:0061178	autosomal recessive congenital nystagmus 8	False	False	False
+DOID:0061179	Adams-Oliver syndrome 3	False	False	False
+DOID:0061180	familial hypercholanemia 3	False	False	False
+DOID:0061181	familial hypercholanemia 1	False	False	False
+DOID:0061182	familial hypercholanemia 2	False	False	False
+DOID:0061183	myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 1	False	False	False
+DOID:0061184	myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 2	False	False	False
+DOID:0061185	autoinflammatory syndrome with cytopenia, hyperzincemia, and hypercalprotectinemia	False	False	False
+DOID:0061186	long chain 3-hydroxyacyl-CoA dehydrogenase deficiency	False	False	False
+DOID:0061187	multiple familial trichoepithelioma 1	False	False	False
+DOID:0061188	autosomal recessive sensory neuropathy with spastic paraplegia	False	False	False
+DOID:0061189	neuronal ceroid lipofuscinosis 15	False	False	False
+DOID:0061190	ReNU syndrome	False	False	False
 DOID:0070564	dialysis disequilibrium syndrome	False	False	False
 DOID:0070618	rhabdoid tumor predisposition syndrome 1	False	False	False
 DOID:0070621	ring chromosome 14 syndrome	False	False	False
@@ -74,11 +93,15 @@ DOID:0070648	cherubism	False	False	False
 DOID:0070649	cherubism 2	False	False	False
 DOID:0070650	Ramon syndrome	False	False	False
 DOID:0070651	neurodevelopmental disorder with seizures and gingival overgrowth	False	False	False
+DOID:0070652	Nil-Deshwan neurodevelopmental syndrome	False	False	False
 DOID:0070653	Fliedner-Zweier syndrome	False	False	False
+DOID:0070654	desmosterolosis	False	False	False
+DOID:0070656	hamartoma syndrome	False	False	False
 DOID:0111368	cholesterol-ester transfer protein deficiency	False	False	False
 DOID:146	papilledema	False	False	False
 DOID:2536	chronic inflammatory demyelinating polyneuritis	False	False	False
 DOID:2934	aleutian mink disease	False	False	False
+DOID:3462	hamartoma	False	False	False
 DOID:4668	congenital kyphosis	False	False	False
 DOID:5154	borna disease	False	False	False
 DOID:9373	postural kyphosis	False	False	False
@@ -1566,7 +1589,6 @@ DOID:3414	obsolete mannosidase deficiency disease	False	True	True
 DOID:3420	obsolete neoplasm of visual pathway	False	True	True
 DOID:344	obsolete disease of biological process	False	True	True
 DOID:3461	obsolete breast hamartoma	False	True	True
-DOID:3462	obsolete hamartoma	False	True	True
 DOID:3464	obsolete hamartoma of skin appendage	False	True	True
 DOID:3465	obsolete congenital nevus of skin	False	True	True
 DOID:3466	obsolete cartilaginous hamartoma	False	True	True
@@ -1938,6 +1960,7 @@ DOID:5663	obsolete helicobacter pylori-related carcinoma	False	True	True
 DOID:5687	obsolete flat adenoma syndrome	False	True	True
 DOID:5707	obsolete liposarcoma nonmetastatic	False	True	True
 DOID:5708	obsolete liposarcoma metastatic	False	True	True
+DOID:5709	obsolete mixed-type liposarcoma	False	True	True
 DOID:5710	obsolete liposarcoma recurrent	False	True	True
 DOID:5717	obsolete recurrent pituitary tumor	False	True	True
 DOID:5720	obsolete neuroblastomas of the adrenal gland and sympathetic nervous system	False	True	True
@@ -2996,7 +3019,7 @@ DOID:0050651	atrioventricular septal defect	True	False	False
 DOID:0050654	Baller-Gerold syndrome	True	False	False
 DOID:0050655	Bamforth-Lazarus syndrome	True	False	False
 DOID:0050656	pseudo-TORCH syndrome 1	True	False	False
-DOID:0050657	Bannayan-Riley-Ruvalcaba syndrome	True	False	False
+DOID:0050657	Cowden syndrome 1	True	False	False
 DOID:0050658	Bart-Pumphrey syndrome	True	False	False
 DOID:0050659	biotin-responsive basal ganglia disease	True	False	False
 DOID:0050660	Beare-Stevenson cutis gyrata syndrome	True	False	False
@@ -4324,7 +4347,6 @@ DOID:0061091	immunodeficiency 125	True	False	False
 DOID:0061092	immunodeficiency 127	True	False	False
 DOID:0061093	immunodeficiency 128	True	False	False
 DOID:0061094	immunodeficiency 129	True	False	False
-DOID:0061095	immunodeficiency 130	True	False	False
 DOID:0061096	immunodeficiency 133	True	False	False
 DOID:0061097	immunodeficiency 132B	True	False	False
 DOID:0061098	Carpenter syndrome 1	True	False	False
@@ -5147,7 +5169,6 @@ DOID:0080187	chronic neutrophilic leukemia	True	False	False
 DOID:0080188	chronic myelomonocytic leukemia	True	False	False
 DOID:0080189	malignant hemangioma	True	False	False
 DOID:0080190	malignant epithelioid hemangioendothelioma	True	False	False
-DOID:0080191	PTEN hamartoma tumor syndrome	True	False	False
 DOID:0080192	relapsed/refractory diffuse large B-cell lymphoma	True	False	False
 DOID:0080193	superior semicircular canal dehiscence	True	False	False
 DOID:0080194	Carey-Fineman-Ziter syndrome	True	False	False
@@ -8031,7 +8052,6 @@ DOID:0111608	distal arthrogryposis type 5	True	False	False
 DOID:0111609	distal arthrogryposis type 6	True	False	False
 DOID:0111610	distal arthrogryposis type 4	True	False	False
 DOID:0111611	autosomal recessive spinocerebellar ataxia 4	True	False	False
-DOID:0111612	autosomal recessive spinocerebellar ataxia 3	True	False	False
 DOID:0111613	autosomal recessive spinocerebellar ataxia 23	True	False	False
 DOID:0111614	autosomal recessive spinocerebellar ataxia 22	True	False	False
 DOID:0111615	autosomal recessive spinocerebellar ataxia 24	True	False	False
@@ -14034,7 +14054,7 @@ DOID:92	speech disorder	True	False	False
 DOID:9201	lichen planus	True	False	False
 DOID:9206	Barrett's esophagus	True	False	False
 DOID:9207	periodic limb movement disorder	True	False	False
-DOID:9210	herpes zoster oticus	True	False	False
+DOID:9210	Ramsay Hunt syndrome	True	False	False
 DOID:9212	pityriasis rubra pilaris	True	False	False
 DOID:9220	central sleep apnea	True	False	False
 DOID:9230	pompholyx	True	False	False
@@ -14419,13 +14439,15 @@ DOID:9415	allergic asthma	True	True	False
 DOID:0050068	obsolete pestis minor	True	True	True
 DOID:0050867	obsolete Jensen syndrome	True	True	True
 DOID:0060771	obsolete dextro-looped transposition of the great arteries 1	True	True	True
+DOID:0061095	obsolete immunodeficiency 130	True	True	True
+DOID:0080191	obsolete PTEN hamartoma tumor syndrome	True	True	True
 DOID:0110302	obsolete autosomal dominant limb-girdle muscular dystrophy type 1C	True	True	True
 DOID:0110578	obsolete autosomal dominant nonsyndromic deafness 52	True	True	True
+DOID:0111612	obsolete autosomal recessive spinocerebellar ataxia 3	True	True	True
 DOID:10919	obsolete transsexualism	True	True	True
 DOID:11349	obsolete epilepsia partialis continua	True	True	True
 DOID:1634	obsolete breast papillomatosis	True	True	True
 DOID:5209	obsolete benign struma ovarii	True	True	True
-DOID:5709	obsolete mixed-type liposarcoma	True	True	True
 DOID:6809	obsolete vaginal tubular adenoma	True	True	True
 DOID:7922	obsolete benign mediastinal neurilemmoma	True	True	True
 DOID:955	obsolete benign neurilemmoma	True	True	True

@@ -2,6 +2,7 @@ subject_id	subject_label	is_mapped	is_excluded	is_deprecated
 OMIM:245570	epilepsy, focal, with speech disorder and with or without impaired intellectual development	False	False	False
 OMIM:301148	retinitis pigmentosa 99	False	False	False
 OMIM:301149	retinal dystrophy, x-linked, gardner-hardcastle type	False	False	False
+OMIM:618428	popov-chang syndrome	False	False	False
 OMIM:621185	houge-janssens syndrome 4	False	False	False
 OMIM:621191	leukodystrophy and cerebellar atrophy	False	False	False
 OMIM:621192	craniofaciocardiohepatic syndrome	False	False	False
@@ -36,17 +37,34 @@ OMIM:621260	short-rib thoracic dysplasia 22 without polydactyly	False	False	Fals
 OMIM:621261	cardiomyopathy, dilated, 2m	False	False	False
 OMIM:621262	diamond-blackfan anemia 22	False	False	False
 OMIM:621263	neurodevelopmental disorder with behavioral, ear, and skeletal abnormalities	False	False	False
-OMIM:621265	nil-deshwan neurodevelopmental syndrome	False	False	False
+OMIM:621264	fetomaternal alloimmune thrombocytopenia 1	False	False	False
+OMIM:621265	nil-deshwar neurodevelopmental syndrome	False	False	False
+OMIM:621266	fetomaternal alloimmune thrombocytopenia 2	False	False	False
+OMIM:621267	fetomaternal alloimmune thrombocytopenia 3	False	False	False
 OMIM:621268	exudative vitreoretinopathy 8	False	False	False
 OMIM:621269	spermatogenic failure 101	False	False	False
 OMIM:621270	cardiomyopathy, familial hypertrophic, 31	False	False	False
+OMIM:621277	oculovertebral syndrome	False	False	False
 OMIM:621280	retinitis pigmentosa 100	False	False	False
 OMIM:621285	intellectual developmental disorder, autosomal dominant 76	False	False	False
+OMIM:621295	cerebral arteriopathy, autosomal recessive, with subcortical infarcts and leukoencephalopathy 1	False	False	False
+OMIM:621296	catechol-o-methyltransferase activity, variation 1n	False	False	False
+OMIM:621302	neurodevelopmental disorder with seizures and joint laxity	False	False	False
+OMIM:621304	developmental and epileptic encephalopathy 119	False	False	False
+OMIM:621307	alsahan-harris syndrome	False	False	False
+OMIM:621311	developmental dysplasia of the hip 4	False	False	False
+OMIM:621313	brain small vessel disease 4	False	False	False
+OMIM:621314	pompe disease, late-onset	False	False	False
+OMIM:621325	ververi-brady syndrome 2	False	False	False
+OMIM:621328	neurodevelopmental disorder with achalasia, polyneuropathy, and alacrima	False	False	False
+OMIM:621332	wilms tumor 7	False	False	False
 OMIMPS:155310	Myopathy, visceral	False	False	False
 OMIMPS:248200	Stargardt disease	False	False	False
 OMIMPS:253300	Spinal muscular atrophy	False	False	False
+OMIMPS:617982	Ververi-Brady syndrome	False	False	False
 OMIMPS:620138	Myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis	False	False	False
 OMIMPS:620235	Rhabdomyolysis, susceptibility to	False	False	False
+OMIMPS:621264	Fetomaternal alloimmune thrombocytopenia	False	False	False
 OMIM:100500		False	False	True
 OMIM:100680		False	False	True
 OMIM:100735		False	False	True
@@ -744,7 +762,6 @@ OMIM:313550	removed from database	False	False	True
 OMIM:313680		False	False	True
 OMIM:314350	removed from database	False	False	True
 OMIM:314555		False	False	True
-OMIM:314800		False	False	True
 OMIM:314920	removed from database	False	False	True
 OMIM:314940	removed from database	False	False	True
 OMIM:314960	removed from database	False	False	True
@@ -1373,7 +1390,6 @@ OMIM:616568		False	False	True
 OMIM:616964		False	False	True
 OMIM:617931		False	False	True
 OMIM:618007		False	False	True
-OMIM:618428	removed from database	False	False	True
 OMIM:100640	ALDH1A1	False	True	False
 OMIM:100650	ALDH2	False	True	False
 OMIM:100660	ALDH3A1	False	True	False
@@ -2127,7 +2143,7 @@ OMIM:136470	FST	False	True	False
 OMIM:136510	FPGS	False	True	False
 OMIM:136515	FOSL1	False	True	False
 OMIM:136530	FSHB	False	True	False
-OMIM:136533	FOXO1A	False	True	False
+OMIM:136533	FOXO1	False	True	False
 OMIM:136535	FMN1	False	True	False
 OMIM:136537	FPR1	False	True	False
 OMIM:136538	FPR2	False	True	False
@@ -3120,11 +3136,9 @@ OMIM:173460	PF4	False	True	False
 OMIM:173461	PF4V1	False	True	False
 OMIM:173470	ITGB3	False	True	False
 OMIM:173490	PDGFRA	False	True	False
-OMIM:173500	platelet groups--ko system	False	True	False
 OMIM:173510	CD36	False	True	False
 OMIM:173511	GP5	False	True	False
 OMIM:173515	GP9	False	True	False
-OMIM:173540	platelet groups--pl(e) system	False	True	False
 OMIM:173570	PLEK	False	True	False
 OMIM:173610	SELP	False	True	False
 OMIM:173850	PVR	False	True	False
@@ -4588,6 +4602,8 @@ OMIM:301155	TCEAL5	False	True	False
 OMIM:301156	TCEAL6	False	True	False
 OMIM:301157	TCEAL8	False	True	False
 OMIM:301158	TCEAL9	False	True	False
+OMIM:301159	BCLAF3	False	True	False
+OMIM:301160	CXORF65	False	True	False
 OMIM:301300	ALAS2	False	True	False
 OMIM:301770	ARR3	False	True	False
 OMIM:301780	ARSC2	False	True	False
@@ -4690,7 +4706,7 @@ OMIM:400025	TGIF2LY	False	True	False
 OMIM:400026	DAZ2	False	True	False
 OMIM:400027	DAZ3	False	True	False
 OMIM:400028	NLGN4Y	False	True	False
-OMIM:400029	HSFY	False	True	False
+OMIM:400029	HSFY1	False	True	False
 OMIM:400030	RPS4Y2	False	True	False
 OMIM:400031	TXLNGY	False	True	False
 OMIM:400033	TBL1Y	False	True	False
@@ -6539,7 +6555,7 @@ OMIM:602454	PTPRU	False	True	False
 OMIM:602457	FADD	False	True	False
 OMIM:602458	SORT1	False	True	False
 OMIM:602460	POU4F3	False	True	False
-OMIM:602461	PTPNS1	False	True	False
+OMIM:602461	SIRPA	False	True	False
 OMIM:602462	CRMP1	False	True	False
 OMIM:602463	DPYSL2	False	True	False
 OMIM:602464	TRAF4	False	True	False
@@ -6660,7 +6676,7 @@ OMIM:602625	MAGI1	False	True	False
 OMIM:602626	IL1RAP	False	True	False
 OMIM:602627	CDC6	False	True	False
 OMIM:602628	FOXN3	False	True	False
-OMIM:602630	TGIF	False	True	False
+OMIM:602630	TGIF1	False	True	False
 OMIM:602631	SLC22A18	False	True	False
 OMIM:602632	PODXL	False	True	False
 OMIM:602633	FHL2	False	True	False
@@ -6707,7 +6723,7 @@ OMIM:602677	RNF5	False	True	False
 OMIM:602678	MARK3	False	True	False
 OMIM:602679	PCYT2	False	True	False
 OMIM:602680	ARHGAP5	False	True	False
-OMIM:602681	FOXO3A	False	True	False
+OMIM:602681	FOXO3	False	True	False
 OMIM:602682	ADGRB1	False	True	False
 OMIM:602683	ADGRB2	False	True	False
 OMIM:602684	ADGRB3	False	True	False
@@ -13719,7 +13735,7 @@ OMIM:611338	ATG4B	False	True	False
 OMIM:611339	ATG4C	False	True	False
 OMIM:611340	ATG4D	False	True	False
 OMIM:611341	DNAJB11	False	True	False
-OMIM:611342	C9ORF64	False	True	False
+OMIM:611342	QNG1	False	True	False
 OMIM:611343	IDNK	False	True	False
 OMIM:611344	RASEF	False	True	False
 OMIM:611345	INTS1	False	True	False
@@ -15341,7 +15357,7 @@ OMIM:613734	CCDC115	False	True	False
 OMIM:613738	AGMO	False	True	False
 OMIM:613739	THYN1	False	True	False
 OMIM:613741	PYGL	False	True	False
-OMIM:613742	G6PC	False	True	False
+OMIM:613742	G6PC1	False	True	False
 OMIM:613745	ANAPC10	False	True	False
 OMIM:613746	BCAR4	False	True	False
 OMIM:613747	KIF24	False	True	False
@@ -16049,7 +16065,7 @@ OMIM:615111	DENND2D	False	True	False
 OMIM:615114	ZNF516	False	True	False
 OMIM:615115	ASXL3	False	True	False
 OMIM:615116	SPEM1	False	True	False
-OMIM:615117	C2ORF88	False	True	False
+OMIM:615117	AKAP19	False	True	False
 OMIM:615123	ANKRD13A	False	True	False
 OMIM:615124	ANKRD13B	False	True	False
 OMIM:615125	ANKRD13C	False	True	False
@@ -16436,7 +16452,7 @@ OMIM:615804	URAD	False	True	False
 OMIM:615805	URAHP	False	True	False
 OMIM:615806	SLC15A4	False	True	False
 OMIM:615808	TMA7	False	True	False
-OMIM:615810	C11ORF54	False	True	False
+OMIM:615810	BKGD	False	True	False
 OMIM:615811	PPIL3	False	True	False
 OMIM:615813	FAM193B	False	True	False
 OMIM:615814	STYX	False	True	False
@@ -19348,7 +19364,35 @@ OMIM:621291	ANKRD63	False	True	False
 OMIM:621292	GLIDR	False	True	False
 OMIM:621293	KNOP1	False	True	False
 OMIM:621294	ZBTB3	False	True	False
+OMIM:621297	LETR1	False	True	False
+OMIM:621298	GREP1	False	True	False
+OMIM:621299	CCDC201	False	True	False
+OMIM:621300	CROCC2	False	True	False
+OMIM:621301	PRRC1	False	True	False
+OMIM:621303	ARK2N	False	True	False
+OMIM:621305	CARMN	False	True	False
+OMIM:621306	JMJD7	False	True	False
+OMIM:621308	STK32C	False	True	False
+OMIM:621309	STK32B	False	True	False
+OMIM:621310	STK32A	False	True	False
+OMIM:621312	LRRC45	False	True	False
+OMIM:621315	MINDY4	False	True	False
+OMIM:621316	HSALR1	False	True	False
+OMIM:621317	SPRR5	False	True	False
+OMIM:621318	AKNAD1	False	True	False
+OMIM:621319	PHGR1	False	True	False
+OMIM:621320	SIRPD	False	True	False
+OMIM:621321	KIAA0087	False	True	False
+OMIM:621322	FILNC1	False	True	False
+OMIM:621323	SIRPB2	False	True	False
+OMIM:621324	SCPPPQ1	False	True	False
+OMIM:621326	ANKRD61	False	True	False
+OMIM:621327	FAM110D	False	True	False
+OMIM:621329	FAM81A	False	True	False
+OMIM:621330	OSER1	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
+OMIM:173500		False	True	True
+OMIM:173540		False	True	True
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
 OMIM:100100	prune belly syndrome	True	False	False
@@ -20786,7 +20830,7 @@ OMIM:231950	glutathionuria	True	False	False
 OMIM:232200	glycogen storage disease ia	True	False	False
 OMIM:232220	glycogen storage disease ib	True	False	False
 OMIM:232240	glycogen storage disease ic	True	False	False
-OMIM:232300	pompe disease	True	False	False
+OMIM:232300	pompe disease, infantile-onset	True	False	False
 OMIM:232400	glycogen storage disease 3	True	False	False
 OMIM:232500	glycogen storage disease 4	True	False	False
 OMIM:232600	glycogen storage disease 5	True	False	False
@@ -21934,7 +21978,7 @@ OMIM:600121	rhizomelic chondrodysplasia punctata, type 3	True	False	False
 OMIM:600131	epilepsy, childhood absence, susceptibility to, 1	True	False	False
 OMIM:600132	retinitis pigmentosa 14	True	False	False
 OMIM:600138	retinitis pigmentosa 11	True	False	False
-OMIM:600142	cerebral arteriopathy, autosomal recessive, with subcortical infarcts and leukoencephalopathy	True	False	False
+OMIM:600142	cerebral arteriopathy, autosomal recessive, with subcortical infarcts and leukoencephalopathy 2	True	False	False
 OMIM:600143	ceroid lipofuscinosis, neuronal, 8	True	False	False
 OMIM:600145	sacral defect with anterior meningocele	True	False	False
 OMIM:600151	bardet-biedl syndrome 3	True	False	False
@@ -23201,7 +23245,7 @@ OMIM:610015	glutamine deficiency, congenital	True	False	False
 OMIM:610017	multiple synostoses syndrome 2	True	False	False
 OMIM:610019	cataract 18	True	False	False
 OMIM:610021	hyperinsulinemic hypoglycemia, familial, 7	True	False	False
-OMIM:610024	retinal cone dystrophy 3a	True	False	False
+OMIM:610024	achromatopsia 6	True	False	False
 OMIM:610031	cortical dysplasia, complex, with other brain malformations 7	True	False	False
 OMIM:610042	pitt-hopkins-like syndrome 1	True	False	False
 OMIM:610048	corneal dystrophy, congenital stromal	True	False	False
@@ -23273,7 +23317,7 @@ OMIM:610321	prostate cancer, hereditary, 7	True	False	False
 OMIM:610329	aicardi-goutieres syndrome 3	True	False	False
 OMIM:610333	aicardi-goutieres syndrome 4	True	False	False
 OMIM:610353	epilepsy, nocturnal frontal lobe, 4	True	False	False
-OMIM:610356	retinal cone dystrophy 3b	True	False	False
+OMIM:610356	cone dystrophy with supernormal rod responses	True	False	False
 OMIM:610357	spastic paraplegia 30a, autosomal dominant	True	False	False
 OMIM:610359	retinitis pigmentosa 33	True	False	False
 OMIM:610361	orofacial cleft 9	True	False	False
@@ -26028,7 +26072,7 @@ OMIM:617976	developmental and epileptic encephalopathy 63	True	False	False
 OMIM:617977	neurodevelopmental disorder with spastic quadriplegia and brain abnormalities with or without seizures	True	False	False
 OMIM:617980	erythrocytosis, familial, 6	True	False	False
 OMIM:617981	erythrocytosis, familial, 7	True	False	False
-OMIM:617982	ververi-brady syndrome	True	False	False
+OMIM:617982	ververi-brady syndrome 1	True	False	False
 OMIM:617983	microcephaly 21, primary, autosomal recessive	True	False	False
 OMIM:617984	microcephaly 22, primary, autosomal recessive	True	False	False
 OMIM:617985	microcephaly 23, primary, autosomal recessive	True	False	False
@@ -28217,6 +28261,7 @@ OMIM:164891		True	False	True
 OMIM:168850		True	False	True
 OMIM:175020		True	False	True
 OMIM:181515		True	False	True
+OMIM:218050		True	False	True
 OMIM:242870		True	False	True
 OMIM:247440		True	False	True
 OMIM:252700		True	False	True
@@ -28233,6 +28278,7 @@ OMIM:300881		True	False	True
 OMIM:301590		True	False	True
 OMIM:306500		True	False	True
 OMIM:309605		True	False	True
+OMIM:314800		True	False	True
 OMIM:600048		True	False	True
 OMIM:600146		True	False	True
 OMIM:600309		True	False	True
@@ -28998,7 +29044,6 @@ OMIM:217200	convulsive disorder, familial, with prenatal or early onset	True	Tru
 OMIM:217520	corneal degeneration, band-shaped spheroid	True	True	False
 OMIM:217600	central cloudy dystrophy of francois	True	True	False
 OMIM:218010	cortical blindness, retardation, and postaxial polydactyly	True	True	False
-OMIM:218050	cramps, familial adolescent	True	True	False
 OMIM:218090	crane-heise syndrome	True	True	False
 OMIM:218200	cranial nerves, recurrent paresis of	True	True	False
 OMIM:218300	craniodiaphyseal dysplasia	True	True	False

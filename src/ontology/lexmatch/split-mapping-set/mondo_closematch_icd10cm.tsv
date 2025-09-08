@@ -1886,6 +1886,10 @@ MONDO:0007919	lymphatic malformation 1	skos:closeMatch	ICD10CM:Q82.0	Hereditary 
 MONDO:0007920	lymphatic malformation 5	skos:closeMatch	ICD10CM:I89.0	Lymphedema, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0070213	LEXMATCH
 MONDO:0007920	lymphatic malformation 5	skos:closeMatch	ICD10CM:I89.0	Lymphedema, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0070213	LEXMATCH
 MONDO:0007922	lymphedema-distichiasis syndrome	skos:closeMatch	ICD10CM:Q82.0	Hereditary lymphedema	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0007922	LEXMATCH
+MONDO:0007924	Bannayan-Riley-Ruvalcaba syndrome	skos:closeMatch	ICD10CM:Q85.81	PTEN hamartoma tumor syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050657	LEXMATCH
+MONDO:0007924	Bannayan-Riley-Ruvalcaba syndrome	skos:closeMatch	ICD10CM:Q85.81	PTEN hamartoma tumor syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:0050657	LEXMATCH
+MONDO:0007924	Bannayan-Riley-Ruvalcaba syndrome	skos:closeMatch	ICD10CM:Q85.81	PTEN hamartoma tumor syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050657	LEXMATCH
+MONDO:0007924	Bannayan-Riley-Ruvalcaba syndrome	skos:closeMatch	ICD10CM:Q85.81	PTEN hamartoma tumor syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:0050657	LEXMATCH
 MONDO:0007924	Bannayan-Riley-Ruvalcaba syndrome	skos:closeMatch	ICD10CM:Q87.89	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050657	LEXMATCH
 MONDO:0007924	Bannayan-Riley-Ruvalcaba syndrome	skos:closeMatch	ICD10CM:Q87.89	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050657	LEXMATCH
 MONDO:0007927	congenital macroglossia	skos:closeMatch	ICD10CM:Q38.2	Macroglossia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	macroglossia	LEXMATCH
@@ -4051,7 +4055,9 @@ MONDO:0015004	dystonia 28, childhood-onset	skos:closeMatch	ICD10CM:G24.8	Other d
 MONDO:0015013	retinitis pigmentosa 77	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0080350	LEXMATCH
 MONDO:0015013	retinitis pigmentosa 77	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0080350	LEXMATCH
 MONDO:0015043	extramedullary soft tissue plasmacytoma	skos:closeMatch	ICD10CM:C90.2	Extramedullary plasmacytoma	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0015043	LEXMATCH
+MONDO:0015128	primary adrenal insufficiency	skos:closeMatch	ICD10CM:E27.1	Primary adrenocortical insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	addisons disorder	LEXMATCH
 MONDO:0015129	chronic primary adrenal insufficiency	skos:closeMatch	ICD10CM:E27.1	Primary adrenocortical insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:13774	LEXMATCH
+MONDO:0015129	chronic primary adrenal insufficiency	skos:closeMatch	ICD10CM:E27.1	Primary adrenocortical insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	autoimmune adrenalitis	LEXMATCH
 MONDO:0015129	chronic primary adrenal insufficiency	skos:closeMatch	ICD10CM:E27.1	Primary adrenocortical insufficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:13774	LEXMATCH
 MONDO:0015131	combined immunodeficiency	skos:closeMatch	ICD10CM:D81	Combined immunodeficiencies	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:628	LEXMATCH
 MONDO:0015131	combined immunodeficiency	skos:closeMatch	ICD10CM:D81	Combined immunodeficiencies	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:628	LEXMATCH
@@ -4833,7 +4839,6 @@ MONDO:0100435	Schwartz-Jampel syndrome type 1	skos:closeMatch	ICD10CM:G71.1	Myot
 MONDO:0100435	Schwartz-Jampel syndrome type 1	skos:closeMatch	ICD10CM:G71.13	Myotonic chondrodystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	chondrodystrophic myotonia	LEXMATCH
 MONDO:0100436	cataract 2, multiple types	skos:closeMatch	ICD10CM:Q12.0	Congenital cataract	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110235	LEXMATCH
 MONDO:0100436	cataract 2, multiple types	skos:closeMatch	ICD10CM:Q12.0	Congenital cataract	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110235	LEXMATCH
-MONDO:0100480	autoimmune primary adrenal insufficiency	skos:closeMatch	ICD10CM:E27.1	Primary adrenocortical insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	autoimmune adrenalitis	LEXMATCH
 MONDO:0100610	autism spectrum disorder 1	skos:closeMatch	ICD10CM:F84.5	Asperger's syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050432	LEXMATCH
 MONDO:0100610	autism spectrum disorder 1	skos:closeMatch	ICD10CM:F84.5	Asperger's syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050432	LEXMATCH
 MONDO:0700089	paroxysmal nonkinesigenic dyskinesia 1	skos:closeMatch	ICD10CM:G24.8	Other dystonia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0090049	LEXMATCH
