@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mondo/external/nord.robot.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2025-08-25/nord.robot.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2025-09-04/nord.robot.owl"/>
     </owl:Ontology>
     
 
@@ -2353,20 +2353,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#omim_susceptibility"/>
         <oboInOwl:source>OMIM:609755</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0012419 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0012419">
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#omim_susceptibility"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0012419"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#omim_susceptibility"/>
-        <oboInOwl:source>OMIM:610149</oboInOwl:source>
     </owl:Axiom>
     
 

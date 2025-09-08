@@ -31,11 +31,9 @@ Acute myocardial infarction	MONDO:0004781	icd11.foundation:1334938734	added
 Acute myocardial infarction	MONDO:0005068	ICD10CM:I21	added		
 Acute myocarditis	MONDO:0002815	ICD10WHO:I40	added		
 Acute myocarditis	MONDO:0004496	ICD10CM:I40	added		
-Addison disease	MONDO:0015129	DOID:13774	confirmed		
-Addison disease	MONDO:0015129	NCIT:C26689	confirmed		
-Addison disease	MONDO:0015129	OMIM:240200	confirmed		
-Addison disease	MONDO:0100480	Orphanet:85138	added		
-Addison disease	MONDO:0100480	icd11.foundation:1920929898	added		
+Addison's disease	MONDO:0015129	DOID:13774	added		
+Addison's disease	MONDO:0100480	DOID:13774	unconfirmed		
+Addison's disease	MONDO:0100480	NCIT:C26689	unconfirmed		
 Adenocarcinoma	MONDO:0003193	NCIT:C27813	added		
 Adenocarcinoma	MONDO:0005028	NCIT:C4025	added		
 Adenocarcinoma	MONDO:0005036	NCIT:C4004	added		
@@ -99,27 +97,29 @@ Carey-Fineman-Ziter syndrome	MONDO:0800437	DOID:0080194	added
 Carey-Fineman-Ziter syndrome	MONDO:0800437	DOID:0080194	added		MONDO:0031415
 Cerebral folate deficiency	MONDO:0013110	Orphanet:217382	added		
 Cerebral folate deficiency	MONDO:0100034	icd11.foundation:1137222547	added		
-Charcot-Marie-Tooth disease	MONDO:0015358	ICD10CM:G60.0	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+Charcot-Marie-Tooth disease	MONDO:0015358	ICD10CM:G60.0	added		
 Charcot-Marie-Tooth disease	MONDO:0015358	ICD10CM:G60.0	added		MONDO:0015626
-Charcot-Marie-Tooth disease	MONDO:0015364	icd11.foundation:1091217288	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+Charcot-Marie-Tooth disease	MONDO:0015364	icd11.foundation:1091217288	added		
 Charcot-Marie-Tooth disease	MONDO:0015364	icd11.foundation:1091217288	added		MONDO:0015626
-Charcot-Marie-Tooth disease	MONDO:0015626	DOID:10595	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Charcot-Marie-Tooth disease	MONDO:0015626	NCIT:C75467	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Charcot-Marie-Tooth disease	MONDO:0015626	OMIMPS:118220	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+Charcot-Marie-Tooth disease	MONDO:0015626	DOID:10595	confirmed		
+Charcot-Marie-Tooth disease	MONDO:0015626	NCIT:C75467	confirmed		
+Charcot-Marie-Tooth disease	MONDO:0015626	OMIMPS:118220	confirmed		
 Chilblain lupus	MONDO:0018827	OMIMPS:610448	added		
 Chilblain lupus	MONDO:0019557	DOID:0060386	added		
 Chilblain lupus	MONDO:0019557	Orphanet:90280	added		
 Chronic Eosinophilic Pneumonia	MONDO:0004806	NCIT:C34471	added		
 Chronic Eosinophilic Pneumonia	MONDO:0017363	NORD:967	unconfirmed		
 Chronic Eosinophilic Pneumonia	MONDO:0017363	Orphanet:2902	confirmed		
-Chronic monocytic leukemia	MONDO:0004614	NCIT:C34774	added		
-Chronic monocytic leukemia	MONDO:0020311	ICD10CM:C93.1	added		
 Closed spina bifida	MONDO:0000859	Orphanet:645202	added		
 Closed spina bifida	MONDO:0017069	icd11.foundation:979482551	added		
 Cogan's syndrome	MONDO:0001694	ICD10CM:H16.32	added		
 Cogan's syndrome	MONDO:0015453	DOID:0060216	confirmed		
 Congenital entropion	MONDO:0020159	ICD10CM:Q10.2	added		
 Congenital entropion	MONDO:0034971	icd11.foundation:1290880184	added		
+Cowden syndrome 1	MONDO:0007924	DOID:0050657	added		
+Cowden syndrome 1	MONDO:0007924	DOID:0050657	added		MONDO:0008021
+Cowden syndrome 1	MONDO:0008021	MONDO:Lexical	unconfirmed		
+Cowden syndrome 1	MONDO:0008021	OMIM:158350	confirmed		
 Creeping myiasis	MONDO:0018857	Orphanet:504	added		
 Creeping myiasis	MONDO:0018857	icd11.foundation:1282509430	added		
 Creeping myiasis	MONDO:0020568	ICD10CM:B87.0	added		
@@ -138,8 +138,8 @@ Degos disease	MONDO:0011208	icd11.foundation:792094526	confirmed
 Degos disease	MONDO:0958110	Orphanet:656071	added		
 Devergie's disease	MONDO:0008251		unconfirmed		
 Devergie's disease	MONDO:0100017	icd11.foundation:2048594962	added		
-Dias-Logan syndrome	MONDO:0014914	OMIM:617101	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Dias-Logan syndrome	MONDO:0850059	Orphanet:619233	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+Dias-Logan syndrome	MONDO:0014914	OMIM:617101	confirmed		
+Dias-Logan syndrome	MONDO:0850059	Orphanet:619233	added		
 Dias-Logan syndrome	MONDO:0850059	Orphanet:619233	added		MONDO:0014914
 Dumping syndrome	MONDO:0001979	icd11.foundation:237191235	added		
 Dumping syndrome	MONDO:0004566	ICD10CM:K91.1	added		
@@ -158,9 +158,9 @@ Familial hypocalciuric hypercalcemia	MONDO:0018458	Orphanet:405	added
 Familial nasal acilia	MONDO:0016575	icd11.foundation:1713839459	added		
 Familial nasal acilia	MONDO:0019634	Orphanet:922	added		
 Fanconi renotubular syndrome	MONDO:0100238	OMIMPS:134600	added		MONDO:0001083
-Fowler syndrome	MONDO:0009168	DOID:0111666	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Fowler syndrome	MONDO:0009168	OMIM:225790	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Fowler syndrome	MONDO:0017200	Orphanet:2795	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+Fowler syndrome	MONDO:0009168	DOID:0111666	confirmed		
+Fowler syndrome	MONDO:0009168	OMIM:225790	confirmed		
+Fowler syndrome	MONDO:0017200	Orphanet:2795	added		
 Fowler syndrome	MONDO:0017200	Orphanet:2795	added		MONDO:0009168
 Franceschetti syndrome	MONDO:0002457	DOID:2908	confirmed		
 Franceschetti syndrome	MONDO:0015483	ICD10CM:Q75.4	added		
@@ -253,8 +253,8 @@ Knobloch syndrome	MONDO:0800167	Orphanet:1571	added
 Knobloch syndrome	MONDO:0800167	Orphanet:1571	added		MONDO:0800166
 Kocher-Debre-Semelaigne syndrome	MONDO:0016521		unconfirmed		
 Kocher-Debre-Semelaigne syndrome	MONDO:0023558	icd11.foundation:109007822	added		
-Koolen de Vries syndrome	MONDO:0012496		unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Koolen de Vries syndrome	MONDO:0018216	DOID:0050880	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+Koolen de Vries syndrome	MONDO:0012496		unconfirmed		
+Koolen de Vries syndrome	MONDO:0018216	DOID:0050880	added		
 Kufs disease	MONDO:0016295	ICD10CM:E75.4	added		
 Kufs disease	MONDO:0019260	icd11.foundation:1460031344	confirmed		
 Köhlmeier-Degos disease	MONDO:0011208		unconfirmed		
@@ -460,17 +460,17 @@ Vesicoureteral reflux	MONDO:0008653		unconfirmed
 Vesicoureteral reflux	MONDO:0017329	OMIMPS:193000	added		
 Vibratory urticaria	MONDO:0006618	ICD10CM:L50.4	added		
 Vibratory urticaria	MONDO:0007447	Orphanet:493342	added		
-Waardenburg syndrome type 4A	MONDO:0010192	DOID:0110953	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Waardenburg syndrome type 4A	MONDO:0019518	icd11.foundation:1420151003	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+Waardenburg syndrome type 4A	MONDO:0010192	DOID:0110953	confirmed		
+Waardenburg syndrome type 4A	MONDO:0019518	icd11.foundation:1420151003	added		
 Waardenburg syndrome type 4A	MONDO:0019518	icd11.foundation:1420151003	added		MONDO:0010192
 Westphal disease	MONDO:0016122	icd11.foundation:577112387	added		
 Westphal disease	MONDO:0016122	icd11.foundation:577112387	added		MONDO:0042980
 Westphal disease	MONDO:0042980	GTR:AN0099343	unconfirmed		
 Westphal disease	MONDO:0042980	MESH:C536694	unconfirmed		
-Wieacker-Wolff syndrome	MONDO:0010758	MONDO:Lexical	unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Wieacker-Wolff syndrome	MONDO:0010758	OMIM:314580	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Wieacker-Wolff syndrome	MONDO:0010758	Orphanet:3454	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-Wieacker-Wolff syndrome	MONDO:0025445	OMIMPS:314580	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+Wieacker-Wolff syndrome	MONDO:0010758	MONDO:Lexical	unconfirmed		
+Wieacker-Wolff syndrome	MONDO:0010758	OMIM:314580	confirmed		
+Wieacker-Wolff syndrome	MONDO:0010758	Orphanet:3454	confirmed		
+Wieacker-Wolff syndrome	MONDO:0025445	OMIMPS:314580	added		
 Wieacker-Wolff syndrome	MONDO:0025445	OMIMPS:314580	added		MONDO:0010758
 Wilms tumor	MONDO:0003321	OMIMPS:194070	added		
 Wilms tumor	MONDO:0003321	OMIMPS:194070	added		MONDO:0006058
@@ -480,8 +480,8 @@ Wolffian duct adenoma	MONDO:0004255	NCIT:C40141	added
 Wolffian duct adenoma	MONDO:0024889	DOID:2616	confirmed		
 Wolffian duct tumor	MONDO:0004255	NCIT:C40141	added		
 Wolffian duct tumor	MONDO:0024888		unconfirmed		
-X-linked chondrodysplasia punctata 1	MONDO:0010555		unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-X-linked chondrodysplasia punctata 1	MONDO:0010556	DOID:0060292	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+X-linked chondrodysplasia punctata 1	MONDO:0010555		unconfirmed		
+X-linked chondrodysplasia punctata 1	MONDO:0010556	DOID:0060292	added		
 X-linked chondrodysplasia punctata 1	MONDO:0010556	DOID:0060292	added		MONDO:0010555
 X-linked recessive hypophosphatemic rickets	MONDO:0010358	DOID:0080353	added		
 X-linked recessive hypophosphatemic rickets	MONDO:0015612	NCIT:C123260	confirmed		
@@ -642,16 +642,16 @@ coccidiosis	MONDO:0018769	icd11.foundation:137713224	added
 coccidiosis	MONDO:0018769	icd11.foundation:137713224	added		MONDO:0005707
 coloboma of eye	MONDO:0001476	DOID:12270	confirmed		
 coloboma of eye	MONDO:0020356	icd11.foundation:1552972259	added		
-congenital amegakaryocytic thrombocytopenia	MONDO:0800451	icd11.foundation:801723173	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-congenital amegakaryocytic thrombocytopenia	MONDO:0800452	DOID:0090118	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+congenital amegakaryocytic thrombocytopenia	MONDO:0800451	icd11.foundation:801723173	confirmed		
+congenital amegakaryocytic thrombocytopenia	MONDO:0800452	DOID:0090118	added		
 congenital amegakaryocytic thrombocytopenia	MONDO:0800452	DOID:0090118	added		MONDO:0800451
 congenital multiple arthrogryposis	MONDO:0008779	MESH:D001176	unconfirmed		
 congenital multiple arthrogryposis	MONDO:0015168	icd11.foundation:1930990330	added		
 congenital nephrotic syndrome	MONDO:0002350	DOID:2590	confirmed		
 congenital nephrotic syndrome	MONDO:0002350	NCIT:C35337	confirmed		
 congenital nephrotic syndrome	MONDO:0005377	ICD10CM:N04	added		
-constitutional mismatch repair deficiency syndrome	MONDO:0010159	OMIM:276300	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-constitutional mismatch repair deficiency syndrome	MONDO:0031219	https://www.clinicalgenome.org/working-groups/clinical-domain/hereditary-cancer/	unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+constitutional mismatch repair deficiency syndrome	MONDO:0010159	OMIM:276300	added		
+constitutional mismatch repair deficiency syndrome	MONDO:0031219	https://www.clinicalgenome.org/working-groups/clinical-domain/hereditary-cancer/	unconfirmed		
 cortical hyperostosis with hyperphosphatemia	MONDO:0100251	DOID:0111063	confirmed		
 cortical hyperostosis with hyperphosphatemia	MONDO:0100252	OMIM:211900	added		
 costovertebral dysplasia	MONDO:0000359	DOID:0050568	confirmed		
@@ -687,11 +687,11 @@ disorders of initiating and maintaining sleep	MONDO:0013600	ICD10WHO:G47.0	added
 disorders of initiating and maintaining sleep	MONDO:0024376		unconfirmed		
 distal myopathy with rimmed vacuoles	MONDO:0011603	Orphanet:602	confirmed		
 distal myopathy with rimmed vacuoles	MONDO:0014945	DOID:0081363	added		
-dopa-responsive dystonia	MONDO:0007495	DOID:0090043	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+dopa-responsive dystonia	MONDO:0007495	DOID:0090043	added		
 dopa-responsive dystonia	MONDO:0007495	DOID:0090043	added		MONDO:0016812
-dopa-responsive dystonia	MONDO:0016812	NCIT:C116719	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-dopa-responsive dystonia	MONDO:0016812	Orphanet:255	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-dopa-responsive dystonia	MONDO:0016812	icd11.foundation:1534901505	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+dopa-responsive dystonia	MONDO:0016812	NCIT:C116719	confirmed		
+dopa-responsive dystonia	MONDO:0016812	Orphanet:255	confirmed		
+dopa-responsive dystonia	MONDO:0016812	icd11.foundation:1534901505	confirmed		
 dysostosis multiplex	MONDO:0001586	icd11.foundation:1539226250	added		
 dysostosis multiplex	MONDO:0800088	Orphanet:93448	confirmed		
 dystrophia myotonica	MONDO:0008056	DOID:11722	confirmed		
@@ -707,11 +707,11 @@ ectrodactyly	MONDO:0017449	icd11.foundation:924222970	added
 endocervicitis	MONDO:0002345	ICD10CM:N72	added		
 endocervicitis	MONDO:0002345	ICD10CM:N72	added		MONDO:0003632
 endocervicitis	MONDO:0003632	DOID:5757	added		
-epidermodysplasia verruciformis	MONDO:0009176	DOID:13777	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-epidermodysplasia verruciformis	MONDO:0009176	MONDO:Lexical	unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-epidermodysplasia verruciformis	MONDO:0009176	NCIT:C126877	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-epidermodysplasia verruciformis	MONDO:0009176	icd11.foundation:1191479808	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-epidermodysplasia verruciformis	MONDO:0100045	OMIM:226400	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+epidermodysplasia verruciformis	MONDO:0009176	DOID:13777	confirmed		
+epidermodysplasia verruciformis	MONDO:0009176	MONDO:Lexical	unconfirmed		
+epidermodysplasia verruciformis	MONDO:0009176	NCIT:C126877	confirmed		
+epidermodysplasia verruciformis	MONDO:0009176	icd11.foundation:1191479808	confirmed		
+epidermodysplasia verruciformis	MONDO:0100045	OMIM:226400	added		
 epidermodysplasia verruciformis	MONDO:0100045	OMIM:226400	added		MONDO:0009176
 epidermolytic ichthyosis	MONDO:0007239	DOID:4603	confirmed		
 epidermolytic ichthyosis	MONDO:0007239	PMID:20643494	unconfirmed		
@@ -895,12 +895,12 @@ malignant struma ovarii	MONDO:0006980	icd11.foundation:185581438	added		MONDO:00
 malignant thymoma	MONDO:0006451	DOID:3284	confirmed		
 malignant thymoma	MONDO:0006451	Orphanet:99868	unconfirmed		
 malignant thymoma	MONDO:0006456	icd11.foundation:33869057	added		
-maple syrup urine disease	MONDO:0009563	DOID:9269	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-maple syrup urine disease	MONDO:0009563	MONDO:Lexical	unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-maple syrup urine disease	MONDO:0009563	NCIT:C34806	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-maple syrup urine disease	MONDO:0009563	OMIMPS:248600	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-maple syrup urine disease	MONDO:0009563	Orphanet:511	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-maple syrup urine disease	MONDO:0023691	OMIM:248600	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+maple syrup urine disease	MONDO:0009563	DOID:9269	confirmed		
+maple syrup urine disease	MONDO:0009563	MONDO:Lexical	unconfirmed		
+maple syrup urine disease	MONDO:0009563	NCIT:C34806	confirmed		
+maple syrup urine disease	MONDO:0009563	OMIMPS:248600	confirmed		
+maple syrup urine disease	MONDO:0009563	Orphanet:511	confirmed		
+maple syrup urine disease	MONDO:0023691	OMIM:248600	added		
 maple syrup urine disease	MONDO:0023691	OMIM:248600	added		MONDO:0009563
 maxillary sinus benign neoplasm	MONDO:0006850	DOID:1358	added		
 maxillary sinus benign neoplasm	MONDO:0021484	MONDO:patterns/location	unconfirmed		
@@ -934,8 +934,8 @@ multi-infarct dementia	MONDO:0043224	MESH:D015161	unconfirmed
 multi-infarct dementia	MONDO:0043224	NCIT:C34522	confirmed		
 multi-infarct dementia	MONDO:0043224	icd11.foundation:645643099	confirmed		
 multiminicore myopathy	MONDO:0009712	OMIM:255320	added		MONDO:0018948
-multiple intestinal atresia	MONDO:0009465	Orphanet:2300	unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-multiple intestinal atresia	MONDO:0800030	DOID:14671	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+multiple intestinal atresia	MONDO:0009465	Orphanet:2300	unconfirmed		
+multiple intestinal atresia	MONDO:0800030	DOID:14671	added		
 multiple intestinal atresia	MONDO:0800030	DOID:14671	added		MONDO:0009465
 muscular dystrophy, oculopharyngeal	MONDO:0008116	DOID:11719	confirmed		
 muscular dystrophy, oculopharyngeal	MONDO:0958176	OMIM:164300	added		
@@ -951,10 +951,10 @@ nephrotic syndrome type 4	MONDO:0009733	DOID:0080383	added
 neurosarcoidosis	MONDO:0001706	DOID:13403	added		
 neurosarcoidosis	MONDO:0001706	DOID:13403	added		MONDO:0045047
 neurosarcoidosis	MONDO:0045047	icd11.foundation:1479285656	confirmed		
-nevoid basal cell carcinoma syndrome	MONDO:0007187	DOID:2512	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-nevoid basal cell carcinoma syndrome	MONDO:0007187	NCIT:C2892	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-nevoid basal cell carcinoma syndrome	MONDO:0007187	Orphanet:377	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-nevoid basal cell carcinoma syndrome	MONDO:0958174	OMIM:109400	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+nevoid basal cell carcinoma syndrome	MONDO:0007187	DOID:2512	confirmed		
+nevoid basal cell carcinoma syndrome	MONDO:0007187	NCIT:C2892	confirmed		
+nevoid basal cell carcinoma syndrome	MONDO:0007187	Orphanet:377	confirmed		
+nevoid basal cell carcinoma syndrome	MONDO:0958174	OMIM:109400	added		
 nevoid basal cell carcinoma syndrome	MONDO:0958174	OMIM:109400	added		MONDO:0007187
 noninfectious pneumonia	MONDO:0002429	Wikipedia:Idiopathic_interstitial_pneumonia	unconfirmed		
 noninfectious pneumonia	MONDO:0043905	icd11.foundation:1324545867	added		
@@ -997,7 +997,7 @@ pancreatic cancer	MONDO:0009831	DOID:1793	confirmed
 pancreatic cancer	MONDO:0009831	https://orcid.org/0000-0002-6601-2165	unconfirmed		
 pancreatic cancer	MONDO:0015278	OMIM:260350	added		
 pancreatic carcinoma	MONDO:0005192	DOID:4905	confirmed		
-pancreatic carcinoma	MONDO:0005192	NCIT:C3850	confirmed		
+pancreatic carcinoma	MONDO:0005192	NCIT:C3850	unconfirmed		
 pancreatic carcinoma	MONDO:0015278	OMIM:260350	added		
 partial atrioventricular canal defect	MONDO:0015275	Orphanet:1330	confirmed		
 partial atrioventricular canal defect	MONDO:0020437	icd11.foundation:1159570489	added		
@@ -1011,12 +1011,12 @@ peripheral neuritis	MONDO:0002122	DOID:1803	confirmed
 peritonitis	MONDO:0004522	DOID:8283	added		MONDO:1010128
 peroneal muscular atrophy	MONDO:0015358	ICD10CM:G60.0	added		
 peroneal muscular atrophy	MONDO:0015626	ICD9CM:356.1	unconfirmed		
-peroxisome biogenesis disorder	MONDO:0011101	OMIM:601539	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+peroxisome biogenesis disorder	MONDO:0011101	OMIM:601539	added		
 peroxisome biogenesis disorder	MONDO:0011101	OMIM:601539	added		MONDO:0019234
-peroxisome biogenesis disorder	MONDO:0019234	NCIT:C155747	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-peroxisome biogenesis disorder	MONDO:0019234	OMIMPS:214100	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-peroxisome biogenesis disorder	MONDO:0019234	Orphanet:79189	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-peroxisome biogenesis disorder	MONDO:0019234	https://www.clinicalgenome.org/affiliation/40049/	unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+peroxisome biogenesis disorder	MONDO:0019234	NCIT:C155747	confirmed		
+peroxisome biogenesis disorder	MONDO:0019234	OMIMPS:214100	confirmed		
+peroxisome biogenesis disorder	MONDO:0019234	Orphanet:79189	confirmed		
+peroxisome biogenesis disorder	MONDO:0019234	https://www.clinicalgenome.org/affiliation/40049/	unconfirmed		
 phosphoethanolaminuria	MONDO:0018570	Orphanet:436	confirmed		
 phosphoethanolaminuria	MONDO:1010169	OMIM:241500	added		
 phytosterolemia	MONDO:0008863	DOID:0090019	confirmed		
@@ -1052,9 +1052,9 @@ primary familial brain calcification	MONDO:0024538	OMIM:213600	added
 primary hypoadrenalism	MONDO:0015129	DOID:13774	confirmed		
 primary hypoadrenalism	MONDO:0015129	NCIT:C26689	confirmed		
 primary hypoadrenalism	MONDO:0100480	icd11.foundation:1920929898	added		
-primary pulmonary hypertension	MONDO:0001999	DOID:14557	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-primary pulmonary hypertension	MONDO:0001999	ICD10CM:I27.0	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-primary pulmonary hypertension	MONDO:0015924	icd11.foundation:1931148955	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+primary pulmonary hypertension	MONDO:0001999	DOID:14557	confirmed		
+primary pulmonary hypertension	MONDO:0001999	ICD10CM:I27.0	confirmed		
+primary pulmonary hypertension	MONDO:0015924	icd11.foundation:1931148955	added		
 primary pulmonary hypertension	MONDO:0015924	icd11.foundation:1931148955	added		MONDO:0001999
 prostate cancer	MONDO:0008315	DOID:10283	added		
 prostate cancer	MONDO:0700275	OMIM:176807	added		
@@ -1067,9 +1067,9 @@ proximal myotonic myopathy	MONDO:0011266	NCIT:C84680	confirmed
 proximal myotonic myopathy	MONDO:0011266	OMIM:602668	confirmed		
 proximal myotonic myopathy	MONDO:0011266	Orphanet:606	confirmed		
 proximal myotonic myopathy	MONDO:0016107	ICD10CM:G71.11	added		
-pseudo-TORCH syndrome 1	MONDO:0009626	DOID:0050656	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+pseudo-TORCH syndrome 1	MONDO:0009626	DOID:0050656	added		
 pseudo-TORCH syndrome 1	MONDO:0009626	DOID:0050656	added		MONDO:0020789
-pseudo-TORCH syndrome 1	MONDO:0020789	OMIM:251290	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+pseudo-TORCH syndrome 1	MONDO:0020789	OMIM:251290	confirmed		
 pseudomembranous enterocolitis in newborn	MONDO:0004639	DOID:8677	confirmed		
 pseudomembranous enterocolitis in newborn	MONDO:0005313	icd11.foundation:141267925	added		
 pubertas praecox	MONDO:0000088	https://rarediseases.org/rare-diseases/precocious-puberty/	unconfirmed		
@@ -1102,12 +1102,12 @@ retinitis pigmentosa and congenital deafness	MONDO:0700087	OMIM:276900	added
 retinitis proliferans	MONDO:0100450	DOID:9719	confirmed		
 retinitis proliferans	MONDO:0100450	https://clinicalgenome.org/affiliation/40072/	unconfirmed		
 retinitis proliferans	MONDO:0700115	icd11.foundation:1908429642	added		
-retinoblastoma	MONDO:0008380	DOID:768	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-retinoblastoma	MONDO:0008380	MONDO:Lexical	unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-retinoblastoma	MONDO:0008380	NCIT:C7541	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-retinoblastoma	MONDO:0008380	Orphanet:790	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-retinoblastoma	MONDO:0008380	icd11.foundation:1855353671	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-retinoblastoma	MONDO:0018160	OMIM:180200	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+retinoblastoma	MONDO:0008380	DOID:768	confirmed		
+retinoblastoma	MONDO:0008380	MONDO:Lexical	unconfirmed		
+retinoblastoma	MONDO:0008380	NCIT:C7541	confirmed		
+retinoblastoma	MONDO:0008380	Orphanet:790	confirmed		
+retinoblastoma	MONDO:0008380	icd11.foundation:1855353671	confirmed		
+retinoblastoma	MONDO:0018160	OMIM:180200	added		
 retinoblastoma	MONDO:0018160	OMIM:180200	added		MONDO:0008380
 rhinitis	MONDO:0003014	DOID:4483	added		
 rhinitis	MONDO:0004514	icd11.foundation:1346915097	added		
@@ -1126,11 +1126,11 @@ secondary hypogonadism	MONDO:0005152	icd11.foundation:768216194	added
 secondary hypogonadism	MONDO:0018555	NCIT:C113347	confirmed		
 serine deficiency	MONDO:0000421	DOID:0050721	added		
 serine deficiency	MONDO:0018162	Orphanet:35705	confirmed		
-severe combined immunodeficiency	MONDO:0015974	DOID:627	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-severe combined immunodeficiency	MONDO:0015974	MONDO:ambiguous	unconfirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-severe combined immunodeficiency	MONDO:0015974	NCIT:C3472	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-severe combined immunodeficiency	MONDO:0015974	Orphanet:183660	confirmed	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
-severe combined immunodeficiency	MONDO:0031520	OMIMPS:601457	added	http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL|http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL	
+severe combined immunodeficiency	MONDO:0015974	DOID:627	confirmed		
+severe combined immunodeficiency	MONDO:0015974	MONDO:ambiguous	unconfirmed		
+severe combined immunodeficiency	MONDO:0015974	NCIT:C3472	confirmed		
+severe combined immunodeficiency	MONDO:0015974	Orphanet:183660	confirmed		
+severe combined immunodeficiency	MONDO:0031520	OMIMPS:601457	added		
 severe combined immunodeficiency	MONDO:0031520	OMIMPS:601457	added		MONDO:0015974
 severe myoclonic epilepsy of infancy	MONDO:0100079	OMIM:607208	added		
 severe myoclonic epilepsy of infancy	MONDO:0100135	DOID:0080422	confirmed		

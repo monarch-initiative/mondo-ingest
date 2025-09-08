@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/ncit.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-08-07/ncit.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2025-09-03/ncit.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 16 |
-| Axioms | 1328214 |
-| Logical axioms | 33655 |
-| Classes | 15971 |
+| Axioms | 1429381 |
+| Logical axioms | 36890 |
+| Classes | 17095 |
 | Object properties | 0 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,13 +32,13 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 1278552 |
-| EquivalentClasses | 6260 |
+| AnnotationAssertion | 1375360 |
+| EquivalentClasses | 7162 |
 | DatatypeDefinition | 19 |
 | SubAnnotationPropertyOf | 1 |
 | AnnotationPropertyRangeOf | 1 |
-| Declaration | 16005 |
-| SubClassOf | 27376 |
+| Declaration | 17129 |
+| SubClassOf | 29709 |
 
 
 #### Entity namespaces: distinct entity count by namespace
@@ -46,7 +46,7 @@
 | Metric | Value |
 | ------ | ----- |
 | prefix_unknown | 1 |
-| NCIT | 15993 |
+| NCIT | 17117 |
 | oboInOwl | 6 |
 | owl | 2 |
 | rdf | 1 |
@@ -61,8 +61,8 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 91288 |
-| ObjectIntersectionOf | 6260 |
+| Class | 100044 |
+| ObjectIntersectionOf | 7162 |
 
 
 More information about the source can be found [in the documentation](../sources.md). The raw data (ontology metrics) can be found [on GitHub](https://github.com/monarch-initiative/mondo-ingest/tree/main/src/ontology/metadata).
