@@ -399,14 +399,14 @@ VERSION_TSVS := $(patsubst $(TMPDIR)/mirror-%.owl,$(TMPDIR)/version-%.tsv,$(MIRR
 $(TMPDIR)/version-%.tsv: $(TMPDIR)/mirror-%.owl $(SPARQLDIR)/get-source-version.sparql | $(TMPDIR)
 	$(ROBOT) query -i $< -f tsv --query $(SPARQLDIR)/get-source-version.sparql $@
 
-$(REPORTDIR)/source-versions.txt: $(VERSION_TSVS) | $(REPORTDIR)
+$(REPORTDIR)/source-versions.tsv: $(VERSION_TSVS) | $(REPORTDIR)
 	@printf "source\tontology\tversionIRI\tversionInfo\n" > $@; \
 	for f in $^; do \
 	  src=$${f##*/version-}; src=$${src%.tsv}; \
 	  tail -n +2 "$$f" | awk 'BEGIN{FS="\t"; OFS="\t"} {print src, $$1, $$2, $$3}' src=$${src} >> $@; \
 	done
 
-$(REPORTDIR)/source-versions.md: $(REPORTDIR)/source-versions.txt | $(REPORTDIR)
+$(REPORTDIR)/source-versions.md: $(REPORTDIR)/source-versions.tsv | $(REPORTDIR)
 	@awk 'BEGIN{FS="\t"} \
 	     NR==1{ \
 	       printf("|"); \
@@ -429,6 +429,7 @@ build-mondo-ingest:
 	$(MAKE) refresh-imports exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
+		source-version-docs \
 		update-externally-managed-content \
 		prepare_release
 	@echo "Mondo Ingest has been fully completed"
@@ -438,6 +439,7 @@ build-mondo-ingest-no-imports:
 	$(MAKE_FAST) exclusions-all slurp-all mappings matches \
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
+		source-version-docs \
 		update-externally-managed-content \
 		prepare_release
 	@echo "Mondo Ingest (fast) has been fully completed"
