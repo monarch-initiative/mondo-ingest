@@ -16,6 +16,7 @@
 | OMIM:621307   | alsahan-harris syndrome                                                                             |
 | OMIM:621235   | autoimmune disease, multisystem, infantile-onset, 5                                                 |
 | OMIM:621313   | brain small vessel disease 4                                                                        |
+| OMIM:621331   | brain small vessel disease 5 with osteoporosis                                                      |
 | OMIM:621251   | cardiomyopathy, dilated, 1qq                                                                        |
 | OMIM:621237   | cardiomyopathy, dilated, 2l                                                                         |
 | OMIM:621261   | cardiomyopathy, dilated, 2m                                                                         |
@@ -25,6 +26,7 @@
 | OMIM:621295   | cerebral arteriopathy, autosomal recessive, with subcortical infarcts and leukoencephalopathy 1     |
 | OMIM:621195   | combined oxidative phosphorylation deficiency 60                                                    |
 | OMIM:621225   | congenital myopathy 26                                                                              |
+| OMIM:621337   | cranioectodermal dysplasia 6                                                                        |
 | OMIM:621192   | craniofaciocardiohepatic syndrome                                                                   |
 | OMIM:621250   | developmental and epileptic encephalopathy 118                                                      |
 | OMIM:621304   | developmental and epileptic encephalopathy 119                                                      |
@@ -41,6 +43,7 @@
 | OMIM:621185   | houge-janssens syndrome 4                                                                           |
 | OMIM:621254   | immunodeficiency 133 with ectodermal dysplasia with or without peripheral neuropathy                |
 | OMIM:621233   | immunodysregulation with variable immunodeficiency and autoimmunity                                 |
+| OMIM:621333   | infection-induced acute-onset axonal neuropathy                                                     |
 | OMIM:621285   | intellectual developmental disorder, autosomal dominant 76                                          |
 | OMIM:621191   | leukodystrophy and cerebellar atrophy                                                               |
 | OMIM:621214   | leukodystrophy, adult-onset, autosomal dominant, without amyloid angiopathy                         |
@@ -62,6 +65,7 @@
 | OMIM:621280   | retinitis pigmentosa 100                                                                            |
 | OMIM:301148   | retinitis pigmentosa 99                                                                             |
 | OMIM:621236   | rhabdomyolysis, susceptibility to, 2                                                                |
+| OMIM:621336   | short sleep, familial natural, 3                                                                    |
 | OMIM:621260   | short-rib thoracic dysplasia 22 without polydactyly                                                 |
 | OMIM:621226   | spastic ataxia 11, autosomal dominant                                                               |
 | OMIM:621209   | spermatogenic failure 100                                                                           |

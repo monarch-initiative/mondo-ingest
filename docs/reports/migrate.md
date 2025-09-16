@@ -3,7 +3,7 @@
 |:------------------------------------------------|:------|
 | [DOID](./migrate_doid.md)                       | 99    |
 | [ICD10WHO](./migrate_icd10who.md)               | 984   |
-| [OMIM](./migrate_omim.md)                       | 60    |
+| [OMIM](./migrate_omim.md)                       | 64    |
 | [ICD11FOUNDATION](./migrate_icd11foundation.md) | 4,586 |
 | [ICD10CM](./migrate_icd10cm.md)                 | 3,857 |
 | [NCIT](./migrate_ncit.md)                       | 2,358 |

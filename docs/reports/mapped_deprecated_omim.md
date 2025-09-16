@@ -52,3 +52,4 @@
 | MONDO:0024996 | OMIM:276905          | MONDO:equivalentObsolete |
 | MONDO:0027416 | OMIM:601251          | MONDO:equivalentObsolete |
 | MONDO:0042975 | OMIM:264150          | MONDO:equivalentObsolete |
+| MONDO:0044251 | OMIM:209800          | MONDO:equivalentObsolete |
