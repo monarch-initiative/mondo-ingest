@@ -17,7 +17,10 @@
 | DOID:0070650 | Ramon syndrome                                                                                        |
 | DOID:0061190 | ReNU syndrome                                                                                         |
 | DOID:0050457 | Sertoli cell-only syndrome                                                                            |
+| DOID:0070655 | Usher syndrome type 1B                                                                                |
 | DOID:0061177 | X-linked spermatogenic failure 9                                                                      |
+| DOID:0051058 | acute calcific periarthritis                                                                          |
+| DOID:0070658 | alcohol-associated liver disease                                                                      |
 | DOID:2934    | aleutian mink disease                                                                                 |
 | DOID:0051014 | atypical autosomal dominant adult-onset demyelinating leukodystrophy                                  |
 | DOID:0061170 | autoinflammation, panniculitis, and dermatosis syndrome                                               |
@@ -46,6 +49,7 @@
 | DOID:0061138 | complex cortical dysplasia with other brain malformations 9                                           |
 | DOID:0060990 | congenital disorder of deglycosylation 2                                                              |
 | DOID:4668    | congenital kyphosis                                                                                   |
+| DOID:0070657 | congenital variant of Rett syndrome                                                                   |
 | DOID:0061139 | coronary atherosclerosis                                                                              |
 | DOID:0070654 | desmosterolosis                                                                                       |
 | DOID:0061176 | developmental and epileptic encephalopathy 118                                                        |
@@ -92,6 +96,10 @@
 | DOID:0061187 | multiple familial trichoepithelioma 1                                                                 |
 | DOID:0061183 | myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 1 |
 | DOID:0061184 | myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 2 |
+| DOID:0061192 | neonatal inflammatory skin and bowel disease 1                                                        |
+| DOID:0061191 | neonatal nephrocutaneous inflammatory syndrome                                                        |
+| DOID:0061194 | nephrotic syndrome type 24                                                                            |
+| DOID:0061193 | nephrotic syndrome type 26                                                                            |
 | DOID:0061147 | neurodevelopmental disorder with or without autism or seizures                                        |
 | DOID:0070651 | neurodevelopmental disorder with seizures and gingival overgrowth                                     |
 | DOID:0061189 | neuronal ceroid lipofuscinosis 15                                                                     |

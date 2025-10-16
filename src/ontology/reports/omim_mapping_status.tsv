@@ -62,6 +62,10 @@ OMIM:621332	wilms tumor 7	False	False	False
 OMIM:621333	infection-induced acute-onset axonal neuropathy	False	False	False
 OMIM:621336	short sleep, familial natural, 3	False	False	False
 OMIM:621337	cranioectodermal dysplasia 6	False	False	False
+OMIM:621343	congenital myopathy 27	False	False	False
+OMIM:621344	dursun-ozgul neurodevelopmental syndrome	False	False	False
+OMIM:621345	spondyloepiphyseal dysplasia, holling type	False	False	False
+OMIMPS:131300	Camurati-Engelmann disease	False	False	False
 OMIMPS:155310	Myopathy, visceral	False	False	False
 OMIMPS:248200	Stargardt disease	False	False	False
 OMIMPS:253300	Spinal muscular atrophy	False	False	False
@@ -489,6 +493,7 @@ OMIM:214200		False	False	True
 OMIM:214380		False	False	True
 OMIM:216411		False	False	True
 OMIM:216920		False	False	True
+OMIM:218050		False	False	True
 OMIM:218455		False	False	True
 OMIM:218500		False	False	True
 OMIM:220700		False	False	True
@@ -4727,6 +4732,7 @@ OMIM:400048	DAZ4	False	True	False
 OMIM:400049	DHRSY	False	True	False
 OMIM:400050	VCY1B	False	True	False
 OMIM:400051	TTTY15	False	True	False
+OMIM:400052	PRORY	False	True	False
 OMIM:402500	ASMT	False	True	False
 OMIM:403000	SLC25A6	False	True	False
 OMIM:410000	AMELY	False	True	False
@@ -5684,7 +5690,7 @@ OMIM:601299	BMPR1A	False	True	False
 OMIM:601300	ACVR1B	False	True	False
 OMIM:601301	PPIL1	False	True	False
 OMIM:601302	PPP3R1	False	True	False
-OMIM:601303	CKAP1	False	True	False
+OMIM:601303	TBCB	False	True	False
 OMIM:601304	SNU13	False	True	False
 OMIM:601305	HTR5A	False	True	False
 OMIM:601306	HCLS1	False	True	False
@@ -9116,7 +9122,7 @@ OMIM:605494	ITGB3BP	False	True	False
 OMIM:605495	SLCO1B3	False	True	False
 OMIM:605496	CEP1	False	True	False
 OMIM:605497	CRTAP	False	True	False
-OMIM:605498	MPHOSPH1	False	True	False
+OMIM:605498	KIF20B	False	True	False
 OMIM:605499	zw10 interactor, antisense	False	True	False
 OMIM:605500	MPHOSPH6	False	True	False
 OMIM:605501	MPHOSPH9	False	True	False
@@ -13654,7 +13660,7 @@ OMIM:611239	GPRIN1	False	True	False
 OMIM:611240	GPRIN2	False	True	False
 OMIM:611241	GPRIN3	False	True	False
 OMIM:611243	TYW1	False	True	False
-OMIM:611244	TRMT12	False	True	False
+OMIM:611244	TYW2	False	True	False
 OMIM:611245	TYW3	False	True	False
 OMIM:611246	LCMT2	False	True	False
 OMIM:611248	KLHDC3	False	True	False
@@ -16548,7 +16554,7 @@ OMIM:615976	FOXCUT	False	True	False
 OMIM:615977	MIR339	False	True	False
 OMIM:615997	DEFB119	False	True	False
 OMIM:615998	RNF10	False	True	False
-OMIM:616003	APOPT1	False	True	False
+OMIM:616003	COA8	False	True	False
 OMIM:616008	COPS4	False	True	False
 OMIM:616009	COPS7A	False	True	False
 OMIM:616010	COPS7B	False	True	False
@@ -17934,7 +17940,7 @@ OMIM:618565	H1-7	False	True	False
 OMIM:618566	ANTKMT	False	True	False
 OMIM:618568	ATPSCKMT	False	True	False
 OMIM:618570	TRIM71	False	True	False
-OMIM:618574	DUPD1	False	True	False
+OMIM:618574	DUSP29	False	True	False
 OMIM:618575	EMSLR	False	True	False
 OMIM:618576	ZBTB10	False	True	False
 OMIM:618579	DMAC2L	False	True	False
@@ -19399,6 +19405,23 @@ OMIM:621335	SPATA31A1	False	True	False
 OMIM:621338	PCYOX1L	False	True	False
 OMIM:621339	HRCT1	False	True	False
 OMIM:621340	CRISPLD1	False	True	False
+OMIM:621341	TTPAL	False	True	False
+OMIM:621342	TMEM87A	False	True	False
+OMIM:621346	TEX50	False	True	False
+OMIM:621347	CYSTM1	False	True	False
+OMIM:621348	ZDHHC12	False	True	False
+OMIM:621349	PRXL2B	False	True	False
+OMIM:621350	COMTD1	False	True	False
+OMIM:621351	PRSS57	False	True	False
+OMIM:621352	DERPC	False	True	False
+OMIM:621353	GIRGL	False	True	False
+OMIM:621355	KRI1	False	True	False
+OMIM:621356	STAC2	False	True	False
+OMIM:621357	CYSRT1	False	True	False
+OMIM:621358	LSMEM2	False	True	False
+OMIM:621359	LRTM2	False	True	False
+OMIM:621360	human-accelerated regulatory enhancer 5	False	True	False
+OMIM:621361	GATD1	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:173500		False	True	True
 OMIM:173540		False	True	True
@@ -19760,7 +19783,7 @@ OMIM:130720	lateral meningocele syndrome	True	False	False
 OMIM:130900	amelogenesis imperfecta, type 3a	True	False	False
 OMIM:131100	multiple endocrine neoplasia, type 1	True	False	False
 OMIM:131200	endometriosis, susceptibility to, 1	True	False	False
-OMIM:131300	camurati-engelmann disease	True	False	False
+OMIM:131300	camurati-engelmann disease 1	True	False	False
 OMIM:131400	eosinophilia, familial	True	False	False
 OMIM:131440	myeloproliferative disorder, chronic, with eosinophilia	True	False	False
 OMIM:131705	transient bullous dermolysis of the newborn	True	False	False
@@ -22623,7 +22646,7 @@ OMIM:606593	lig4 syndrome	True	False	False
 OMIM:606595	charcot-marie-tooth disease, axonal, type 2f	True	False	False
 OMIM:606612	muscular dystrophy-dystroglycanopathy (congenital with or without impaired intellectual development), type b, 5	True	False	False
 OMIM:606616	dyslexia, susceptibility to, 6	True	False	False
-OMIM:606631	camurati-engelmann disease, type 2	True	False	False
+OMIM:606631	camurati-engelmann disease 2	True	False	False
 OMIM:606640	amyotrophic lateral sclerosis 3	True	False	False
 OMIM:606657	glaucoma, normal tension, susceptibility to	True	False	False
 OMIM:606658	spinocerebellar ataxia 15	True	False	False
@@ -25302,7 +25325,7 @@ OMIM:616111	mitochondrial complex 3 deficiency, nuclear type 9	True	False	False
 OMIM:616113	polyendocrine-polyneuropathy syndrome	True	False	False
 OMIM:616115	familial cold autoinflammatory syndrome 4	True	False	False
 OMIM:616116	intellectual developmental disorder, autosomal recessive 46	True	False	False
-OMIM:616117	cardiac conduction disease with or without dilated cardiomyopathy	True	False	False
+OMIM:616117	cardiac conduction disease with or without cardiomyopathy 1	True	False	False
 OMIM:616118	macular degeneration, early-onset	True	False	False
 OMIM:616126	immunodeficiency 38 with basal ganglia calcification	True	False	False
 OMIM:616127	spinocerebellar ataxia, autosomal recessive 17	True	False	False
@@ -28270,8 +28293,8 @@ OMIM:164891		True	False	True
 OMIM:168850		True	False	True
 OMIM:175020		True	False	True
 OMIM:181515		True	False	True
+OMIM:187750		True	False	True
 OMIM:209800		True	False	True
-OMIM:218050		True	False	True
 OMIM:242870		True	False	True
 OMIM:247440		True	False	True
 OMIM:252700		True	False	True
@@ -28869,7 +28892,6 @@ OMIM:187400	testicular torsion	True	True	False
 OMIM:187501	tetralogy of fallot and glaucoma	True	True	False
 OMIM:187510	tetramelic monodactyly	True	True	False
 OMIM:187550	thalassemia, beta+, silent allele	True	True	False
-OMIM:187750	thoracic dysostosis, isolated	True	True	False
 OMIM:187760	thoracolaryngopelvic dysplasia	True	True	False
 OMIM:187770	thoracopelvic dysostosis	True	True	False
 OMIM:188020	thrombocytopenia, cyclic	True	True	False
@@ -28952,7 +28974,7 @@ OMIM:202660	pagod syndrome	True	True	False
 OMIM:202900	alaninuria with microcephaly, dwarfism, enamel hypoplasia, and diabetes mellitus	True	True	False
 OMIM:203000	frontonasal dysplasia with alar clefts	True	True	False
 OMIM:203340	albinism-microcephaly-digital anomalies syndrome	True	True	False
-OMIM:203550	intellectual developmental syndrome with alopecia, contractures, and dwarfism	True	True	False
+OMIM:203550	alopecia, contractures, dwarfism, and impaired intellectual development syndrome	True	True	False
 OMIM:203600	alopecia-epilepsy-oligophrenia syndrome of moynahan	True	True	False
 OMIM:203760	alpha-2-deficient collagen disease	True	True	False
 OMIM:204110	amaurosis congenita, cone-rod type, with congenital hypertrichosis	True	True	False

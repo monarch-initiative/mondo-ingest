@@ -69,6 +69,7 @@
 | MONDO:0017541 | Orphanet:295183      | MONDO:equivalentObsolete |
 | MONDO:0017542 | Orphanet:295185      | MONDO:equivalentObsolete |
 | MONDO:0017655 | Orphanet:306762      | MONDO:equivalentObsolete |
+| MONDO:0017770 | Orphanet:3105        | MONDO:equivalentObsolete |
 | MONDO:0017984 | Orphanet:3267        | MONDO:equivalentObsolete |
 | MONDO:0017996 | Orphanet:329255      | MONDO:equivalentObsolete |
 | MONDO:0018104 | Orphanet:3460        | MONDO:equivalentObsolete |
@@ -166,6 +167,7 @@
 | MONDO:0020280 | Orphanet:98712       | MONDO:equivalentObsolete |
 | MONDO:0020281 | Orphanet:98713       | MONDO:equivalentObsolete |
 | MONDO:0020282 | Orphanet:98714       | MONDO:equivalentObsolete |
+| MONDO:0020474 | Orphanet:99647       | MONDO:equivalentObsolete |
 | MONDO:0020489 | Orphanet:99763       | MONDO:equivalentObsolete |
 | MONDO:0020524 | Orphanet:99878       | MONDO:equivalentObsolete |
 | MONDO:0020537 | Orphanet:99909       | MONDO:equivalentObsolete |

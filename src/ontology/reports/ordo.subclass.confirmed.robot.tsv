@@ -106,6 +106,7 @@ MONDO:0005737	Ebola hemorrhagic fever	MONDO:0018087	Orphanet:319218	Orphanet:341
 MONDO:0005761	filarial elephantiasis	MONDO:0016075	Orphanet:2035	Orphanet:2034	filariasis
 MONDO:0005764	follicular dendritic cell sarcoma	MONDO:0017345	Orphanet:86902	Orphanet:289656	Epstein-Barr virus-associated mesenchymal tumor
 MONDO:0005815	pancreatic neuroendocrine neoplasm	MONDO:0024503	Orphanet:506052	Orphanet:100092	digestive system neuroendocrine neoplasm
+MONDO:0005824	Legionnaires' disease	MONDO:0005823	Orphanet:549	Orphanet:600832	legionellosis
 MONDO:0005835	Lynch syndrome	MONDO:0018630	Orphanet:144	Orphanet:443909	hereditary nonpolyposis colon cancer
 MONDO:0005838	mansonelliasis	MONDO:0016075	Orphanet:2459	Orphanet:2034	filariasis
 MONDO:0005854	mixed connective tissue disease	MONDO:0016663	Orphanet:809	Orphanet:251312	overlapping connective tissue disease
@@ -171,8 +172,6 @@ MONDO:0007160	Stickler syndrome type 1	MONDO:0022800	Orphanet:90653	Orphanet:934
 MONDO:0007163	episodic ataxia type 2	MONDO:0016227	Orphanet:97	Orphanet:211062	hereditary episodic ataxia
 MONDO:0007164	spastic ataxia 1	MONDO:0017846	Orphanet:251282	Orphanet:316235	autosomal dominant spastic ataxia
 MONDO:0007165	spastic ataxia 7	MONDO:0017846	Orphanet:1182	Orphanet:316235	autosomal dominant spastic ataxia
-MONDO:0007167	atelosteogenesis type I	MONDO:0019690	Orphanet:1190	Orphanet:93425	filamin-related bone disorder
-MONDO:0007168	atelosteogenesis type III	MONDO:0019690	Orphanet:56305	Orphanet:93425	filamin-related bone disorder
 MONDO:0007182	Machado-Joseph disease	MONDO:0015548	Orphanet:98757	Orphanet:158266	Huntington disease-like syndrome
 MONDO:0007182	Machado-Joseph disease	MONDO:0019792	Orphanet:98757	Orphanet:94145	autosomal dominant cerebellar ataxia type I
 MONDO:0007187	nevoid basal cell carcinoma syndrome	MONDO:0015356	Orphanet:377	Orphanet:140162	hereditary neoplastic syndrome
@@ -183,7 +182,6 @@ MONDO:0007203	blue rubber bleb nevus	MONDO:0015356	Orphanet:1059	Orphanet:140162
 MONDO:0007203	blue rubber bleb nevus	MONDO:0019293	Orphanet:1059	Orphanet:79379	skin vascular disease
 MONDO:0007205	diaphyseal medullary stenosis-bone malignancy syndrome	MONDO:0019060	Orphanet:85182	Orphanet:68411	bone neoplasm
 MONDO:0007207	Böök syndrome	MONDO:0019287	Orphanet:1262	Orphanet:79373	ectodermal dysplasia syndrome
-MONDO:0007208	Boomerang dysplasia	MONDO:0019690	Orphanet:1263	Orphanet:93425	filamin-related bone disorder
 MONDO:0007209	Weismann-Netter syndrome	MONDO:0019698	Orphanet:3344	Orphanet:93439	bent bone dysplasia
 MONDO:0007212	brachydactyly-long thumb syndrome	MONDO:0016432	Orphanet:2946	Orphanet:228184	heart-hand syndrome
 MONDO:0007219	Osebold-Remondini syndrome	MONDO:0019696	Orphanet:93382	Orphanet:93437	acromesomelic dysplasia
@@ -345,7 +343,6 @@ MONDO:0007872	LADD syndrome	MONDO:0015161	Orphanet:2363	Orphanet:102285	multiple
 MONDO:0007874	trichorhinophalangeal syndrome type II	MONDO:0015159	Orphanet:502	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0007874	trichorhinophalangeal syndrome type II	MONDO:0016907	Orphanet:502	Orphanet:262065	partial deletion of the long arm of chromosome 8
 MONDO:0007874	trichorhinophalangeal syndrome type II	MONDO:0017951	Orphanet:502	Orphanet:324764	trichorhinophalangeal syndrome
-MONDO:0007875	Larsen syndrome	MONDO:0019690	Orphanet:503	Orphanet:93425	filamin-related bone disorder
 MONDO:0007885	Legg-Calve-Perthes disease	MONDO:0018381	Orphanet:2380	Orphanet:399319	osteochondrosis
 MONDO:0007891	familial generalized lentiginosis	MONDO:0019289	Orphanet:231040	Orphanet:79375	hyperpigmentation of the skin
 MONDO:0007892	Lenz-Majewski hyperostotic dwarfism	MONDO:0015159	Orphanet:2658	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
@@ -458,7 +455,6 @@ MONDO:0008338	contractures, pterygia, and spondylocarpotarsal fusion syndrome 1A
 MONDO:0008339	antecubital pterygium syndrome	MONDO:0021154	Orphanet:2987	Orphanet:79381	dermis disorder
 MONDO:0008343	pulmonary atresia with ventricular septal defect	MONDO:0016581	Orphanet:1207	Orphanet:2445	conotruncal heart malformations
 MONDO:0008357	radial hypoplasia-triphalangeal thumbs-hypospadias-maxillary diastema syndrome	MONDO:0015161	Orphanet:2252	Orphanet:102285	multiple congenital anomalies/dysmorphic syndrome without intellectual disability
-MONDO:0008368	autosomal dominant distal renal tubular acidosis	MONDO:0015827	Orphanet:93608	Orphanet:18	distal renal tubular acidosis
 MONDO:0008371	Dowling-Degos disease	MONDO:0017747	Orphanet:79145	Orphanet:309505	disorder of fucoglycosan synthesis
 MONDO:0008371	Dowling-Degos disease	MONDO:0019289	Orphanet:79145	Orphanet:79375	hyperpigmentation of the skin
 MONDO:0008389	autosomal dominant Robinow syndrome	MONDO:0019978	Orphanet:3107	Orphanet:97360	Robinow syndrome
@@ -1738,7 +1734,6 @@ MONDO:0012664	spastic ataxia 3	MONDO:0017847	Orphanet:314603	Orphanet:316240	aut
 MONDO:0012669	Legius syndrome	MONDO:0019289	Orphanet:137605	Orphanet:79375	hyperpigmentation of the skin
 MONDO:0012683	pontocerebellar hypoplasia type 6	MONDO:0020135	Orphanet:166073	Orphanet:98523	pontocerebellar hypoplasia
 MONDO:0012699	autosomal recessive limb-girdle muscular dystrophy type 2M	MONDO:0015152	Orphanet:206554	Orphanet:102015	autosomal recessive limb-girdle muscular dystrophy
-MONDO:0012700	renal tubular acidosis, distal, 4, with hemolytic anemia	MONDO:0015827	Orphanet:93610	Orphanet:18	distal renal tubular acidosis
 MONDO:0012721	progressive myoclonic epilepsy type 3	MONDO:0020074	Orphanet:263516	Orphanet:98261	progressive myoclonus epilepsy
 MONDO:0012725	lipoprotein glomerulopathy	MONDO:0015905	Orphanet:329481	Orphanet:181437	syndromic dyslipidemia
 MONDO:0012750	lethal arthrogryposis-anterior horn cell disease syndrome	MONDO:0015168	Orphanet:53696	Orphanet:1037	arthrogryposis multiplex congenita
@@ -1932,7 +1927,6 @@ MONDO:0013755	PYCR1-related de Barsy syndrome	MONDO:0017569	Orphanet:293633	Orph
 MONDO:0013758	Charcot-Marie-Tooth disease dominant intermediate E	MONDO:0019548	Orphanet:93114	Orphanet:90114	autosomal dominant intermediate Charcot-Marie-Tooth disease
 MONDO:0013762	lipoic acid synthetase deficiency	MONDO:0018424	Orphanet:401859	Orphanet:401854	inherited lipoic acid biosynthesis defect
 MONDO:0013776	spastic ataxia 5	MONDO:0017847	Orphanet:313772	Orphanet:316240	autosomal recessive spastic ataxia
-MONDO:0013776	spastic ataxia 5	MONDO:0018158	Orphanet:313772	Orphanet:35698	mitochondrial DNA depletion syndrome
 MONDO:0013777	pseudohypoaldosteronism type 2B	MONDO:0019162	Orphanet:88939	Orphanet:757	pseudohypoaldosteronism type 2
 MONDO:0013778	pseudohypoaldosteronism type 2C	MONDO:0019162	Orphanet:88940	Orphanet:757	pseudohypoaldosteronism type 2
 MONDO:0013781	pseudohypoaldosteronism type 2D	MONDO:0019162	Orphanet:300525	Orphanet:757	pseudohypoaldosteronism type 2
@@ -3499,7 +3493,6 @@ MONDO:0018428	9q31.1q31.3 microdeletion syndrome	MONDO:0016908	Orphanet:401923	O
 MONDO:0018429	14q24.1q24.3 microdeletion syndrome	MONDO:0015159	Orphanet:401935	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0018429	14q24.1q24.3 microdeletion syndrome	MONDO:0016912	Orphanet:401935	Orphanet:262110	partial deletion of the long arm of chromosome 14
 MONDO:0018432	lichen myxedematosus	MONDO:0021154	Orphanet:402007	Orphanet:79381	dermis disorder
-MONDO:0018440	autosomal recessive distal renal tubular acidosis	MONDO:0015827	Orphanet:402041	Orphanet:18	distal renal tubular acidosis
 MONDO:0018442	acitretin/etretinate embryopathy	MONDO:0016677	Orphanet:40366	Orphanet:251529	toxic or drug-related embryofetopathy
 MONDO:0018443	FBLN1-related developmental delay-central nervous system anomaly-syndactyly syndrome	MONDO:0015159	Orphanet:404451	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0018445	global developmental delay - lung cysts - overgrowth - Wilms tumor syndrome	MONDO:0019716	Orphanet:404476	Orphanet:93460	overgrowth syndrome

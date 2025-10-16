@@ -132,6 +132,7 @@ MONDO:0000503	lung adenocarcinoma in situ	MONDO:0004660	DOID:0050870	DOID:8800	l
 MONDO:0000507	inclusion body myopathy with Paget disease of bone and frontotemporal dementia	MONDO:0002254	DOID:0050881	DOID:225	syndromic disease
 MONDO:0000508	syndromic intellectual disability	MONDO:0001071	DOID:0050888	DOID:1059	intellectual disability
 MONDO:0000509	non-syndromic intellectual disability	MONDO:0001071	DOID:0050889	DOID:1059	intellectual disability
+MONDO:0000510	synucleinopathy	MONDO:0005559	DOID:0050890	DOID:1289	neurodegenerative disease
 MONDO:0000513	bone ameloblastoma	MONDO:0000631	DOID:0050895	DOID:0060094	bone benign neoplasm
 MONDO:0000514	bone squamous cell carcinoma	MONDO:0002415	DOID:0050896	DOID:2762	bone carcinoma
 MONDO:0000514	bone squamous cell carcinoma	MONDO:0005096	DOID:0050896	DOID:1749	squamous cell carcinoma
@@ -223,6 +224,7 @@ MONDO:0000662	amusia	MONDO:0005638	DOID:0060132	DOID:4090	agnosia
 MONDO:0000663	anosognosia	MONDO:0005638	DOID:0060133	DOID:4090	agnosia
 MONDO:0000667	auditory agnosia	MONDO:0005638	DOID:0060137	DOID:4090	agnosia
 MONDO:0000668	autotopagnosia	MONDO:0005638	DOID:0060138	DOID:4090	agnosia
+MONDO:0000670	cortical deafness	MONDO:0005638	DOID:0060140	DOID:4090	agnosia
 MONDO:0000671	finger agnosia	MONDO:0005638	DOID:0060141	DOID:4090	agnosia
 MONDO:0000673	integrative agnosia	MONDO:0005638	DOID:0060143	DOID:4090	agnosia
 MONDO:0000674	mirror agnosia	MONDO:0005638	DOID:0060144	DOID:4090	agnosia
@@ -809,7 +811,6 @@ MONDO:0001528	vulva cancer	MONDO:0001416	DOID:1245	DOID:120	female reproductive 
 MONDO:0001529	pancytopenia	MONDO:0002280	DOID:12450	DOID:2355	anemia
 MONDO:0001530	secondary hyperparathyroidism of renal origin	MONDO:0006964	DOID:12465	DOID:12466	secondary hyperparathyroidism
 MONDO:0001531	blood coagulation disease	MONDO:0005570	DOID:1247	DOID:74	hematologic disorder
-MONDO:0001533	pes anserinus tendinitis or bursitis	MONDO:0002183	DOID:12475	DOID:204	enthesopathy
 MONDO:0001534	ocular hyperemia	MONDO:0006170	DOID:1248	DOID:4251	conjunctival disorder
 MONDO:0001535	vagus nerve disorder	MONDO:0002639	DOID:12491	DOID:3418	glossopharyngeal nerve disorder
 MONDO:0001536	vaginal leiomyoma	MONDO:0000647	DOID:125	DOID:0060114	benign vaginal neoplasm
@@ -828,7 +829,6 @@ MONDO:0001553	phacolytic glaucoma	MONDO:0001554	DOID:12570	DOID:12571	phacogenic
 MONDO:0001554	phacogenic glaucoma	MONDO:0005041	DOID:12571	DOID:1686	glaucoma
 MONDO:0001555	neonatal thyrotoxicosis	MONDO:0010138	DOID:12573	DOID:7997	thyrotoxicosis
 MONDO:0001556	urethral obstruction	MONDO:0004184	DOID:12577	DOID:732	urethral disorder
-MONDO:0001557	olecranon bursitis	MONDO:0002183	DOID:12581	DOID:204	enthesopathy
 MONDO:0001557	olecranon bursitis	MONDO:0002471	DOID:12581	DOID:2965	bursitis
 MONDO:0001559	perineocele	MONDO:0001592	DOID:12637	DOID:1284	prolapse of female genital organ
 MONDO:0001560	hypertrophic pyloric stenosis	MONDO:0001561	DOID:12638	DOID:12639	pyloric stenosis
@@ -1492,7 +1492,6 @@ MONDO:0002466	eye carcinoma	MONDO:0002236	DOID:295	DOID:2174	ocular cancer
 MONDO:0002467	inner ear disorder	MONDO:0002409	DOID:2952	DOID:2742	auditory system disorder
 MONDO:0002468	hyperimmunoglobulin syndrome	MONDO:0002211	DOID:2959	DOID:2115	B cell deficiency
 MONDO:0002470	photosensitive trichothiodystrophy	MONDO:0018053	DOID:2960	DOID:0111866	trichothiodystrophy
-MONDO:0002471	bursitis	MONDO:0006816	DOID:2965	DOID:381	arthropathy
 MONDO:0002473	cystic kidney disease	MONDO:0005240	DOID:2975	DOID:557	kidney disorder
 MONDO:0002474	primary hyperoxaluria	MONDO:0019214	DOID:2977	DOID:2978	inborn carbohydrate metabolic disorder
 MONDO:0002475	lacrimal gland adenocarcinoma	MONDO:0002463	DOID:298	DOID:293	lacrimal gland carcinoma
@@ -1505,7 +1504,7 @@ MONDO:0002486	lobular neoplasia	MONDO:0004658	DOID:3010	DOID:8791	breast carcino
 MONDO:0002489	malignant breast phyllodes tumor	MONDO:0007254	DOID:3016	DOID:1612	breast cancer
 MONDO:0002490	breast sarcoma	MONDO:0007254	DOID:3017	DOID:1612	breast cancer
 MONDO:0002491	substance abuse	MONDO:0002494	DOID:302	DOID:303	substance-related disorder
-MONDO:0002492	acute kidney failure	MONDO:0001106	DOID:3021	DOID:1074	kidney failure
+MONDO:0002492	acute kidney injury	MONDO:0001106	DOID:3021	DOID:1074	kidney failure
 MONDO:0002493	prostatic acinar adenocarcinoma	MONDO:0005082	DOID:3024	DOID:2526	prostate adenocarcinoma
 MONDO:0002494	substance-related disorder	MONDO:0002025	DOID:303	DOID:150	psychiatric disorder
 MONDO:0002495	colon signet ring cell adenocarcinoma	MONDO:0002271	DOID:3033	DOID:234	colon adenocarcinoma
@@ -3917,7 +3916,7 @@ MONDO:0006624	overactive bladder	MONDO:0006026	DOID:0070355	DOID:365	urinary bla
 MONDO:0006626	diabetic neuropathy	MONDO:0005244	DOID:9743	DOID:870	peripheral neuropathy
 MONDO:0006633	acalculous cholecystitis	MONDO:0002155	DOID:2828	DOID:1949	cholecystitis
 MONDO:0006634	pituitary gland acidophil adenoma	MONDO:0006373	DOID:5392	DOID:3829	pituitary gland adenoma
-MONDO:0006637	acute kidney tubular necrosis	MONDO:0002492	DOID:12556	DOID:3021	acute kidney failure
+MONDO:0006637	acute kidney tubular necrosis	MONDO:0002492	DOID:12556	DOID:3021	acute kidney injury
 MONDO:0006638	acute retinal necrosis syndrome	MONDO:0002708	DOID:3611	DOID:3612	retinitis
 MONDO:0006641	afferent loop syndrome	MONDO:0004566	DOID:8438	DOID:8439	postgastrectomy syndrome
 MONDO:0006643	alcoholic cardiomyopathy	MONDO:0002824	DOID:12935	DOID:3978	extrinsic cardiomyopathy
@@ -4073,7 +4072,7 @@ MONDO:0006894	patellofemoral pain syndrome	MONDO:0006816	DOID:14284	DOID:381	art
 MONDO:0006895	penile neoplasm	MONDO:0002036	DOID:11624	DOID:1529	penile disorder
 MONDO:0006896	peptic esophagitis	MONDO:0001409	DOID:13976	DOID:11963	esophagitis
 MONDO:0006897	periapical granuloma	MONDO:0004508	DOID:4617	DOID:823	periapical periodontitis
-MONDO:0006898	periarthritis	MONDO:0002471	DOID:2964	DOID:2965	bursitis
+MONDO:0006898	periarthritis	MONDO:0005578	DOID:2964	DOID:848	arthritic joint disease
 MONDO:0006899	pericoronitis	MONDO:0002021	DOID:3671	DOID:1483	gingival disorder
 MONDO:0006900	perinephritis	MONDO:0005240	DOID:2982	DOID:557	kidney disorder
 MONDO:0006903	peroneal nerve paralysis	MONDO:0003620	DOID:6925	DOID:574	peripheral nervous system disorder
@@ -4266,6 +4265,7 @@ MONDO:0007478	autosomal dominant Kenny-Caffey syndrome	MONDO:0000426	DOID:008072
 MONDO:0007478	autosomal dominant Kenny-Caffey syndrome	MONDO:0016516	DOID:0080723	DOID:0080724	Kenny-Caffey syndrome
 MONDO:0007481	Leri-Weill dyschondrosteosis	MONDO:0005516	DOID:0060847	DOID:2256	osteochondrodysplasia
 MONDO:0007485	dyskeratosis congenita, autosomal dominant 1	MONDO:0015780	DOID:0070014	DOID:2729	dyskeratosis congenita
+MONDO:0007488	Lewy body dementia	MONDO:0001627	DOID:12217	DOID:1307	dementia
 MONDO:0007508	Rapp-Hodgkin syndrome	MONDO:0000426	DOID:0060330	DOID:0050736	autosomal dominant disease
 MONDO:0007508	Rapp-Hodgkin syndrome	MONDO:0019287	DOID:0060330	DOID:2121	ectodermal dysplasia syndrome
 MONDO:0007510	Clouston syndrome	MONDO:0019287	DOID:14693	DOID:2121	ectodermal dysplasia syndrome
@@ -4349,7 +4349,6 @@ MONDO:0007867	nonsyndromic congenital nail disorder 2	MONDO:0019284	DOID:0080080
 MONDO:0007868	hyperekplexia 1	MONDO:0021022	DOID:0060696	DOID:0060695	hereditary hyperekplexia
 MONDO:0007872	LADD syndrome	MONDO:0000426	DOID:0050331	DOID:0050736	autosomal dominant disease
 MONDO:0007874	trichorhinophalangeal syndrome type II	MONDO:0000426	DOID:4998	DOID:0050736	autosomal dominant disease
-MONDO:0007875	Larsen syndrome	MONDO:0000426	DOID:14764	DOID:0050736	autosomal dominant disease
 MONDO:0007878	congenital laryngomalacia	MONDO:0004382	DOID:0080833	DOID:786	laryngeal disorder
 MONDO:0007885	Legg-Calve-Perthes disease	MONDO:0018381	DOID:14415	DOID:8125	osteochondrosis
 MONDO:0007892	Lenz-Majewski hyperostotic dwarfism	MONDO:0002254	DOID:0111507	DOID:225	syndromic disease
@@ -4359,6 +4358,7 @@ MONDO:0007900	nonsyndromic congenital nail disorder 3	MONDO:0019284	DOID:0080081
 MONDO:0007906	familial partial lipodystrophy, Dunnigan type	MONDO:0020088	DOID:0070202	DOID:0050440	familial partial lipodystrophy
 MONDO:0007908	multiple symmetric lipomatosis	MONDO:0006574	DOID:14116	DOID:3153	lipomatosis
 MONDO:0007915	systemic lupus erythematosus	MONDO:0004670	DOID:9074	DOID:8857	lupus erythematosus
+MONDO:0007918	microcephaly with or without chorioretinopathy, lymphedema, or intellectual disability	MONDO:0000426	DOID:0060349	DOID:0050736	autosomal dominant disease
 MONDO:0007918	microcephaly with or without chorioretinopathy, lymphedema, or intellectual disability	MONDO:0002254	DOID:0060349	DOID:225	syndromic disease
 MONDO:0007919	lymphatic malformation 1	MONDO:0019313	DOID:0070210	DOID:0050580	lymphatic malformation
 MONDO:0007919	lymphatic malformation 1	MONDO:0019313	DOID:0070212	DOID:0050580	lymphatic malformation

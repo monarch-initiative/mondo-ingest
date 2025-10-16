@@ -106,6 +106,7 @@ MONDO:0001515	corneal degeneration	MONDO:0004884	DOID:1237	DOID:9799	eye degener
 MONDO:0001532	capillariasis	MONDO:0005020	DOID:12474	DOID:5295	intestinal disorder
 MONDO:0001532	capillariasis	MONDO:0005154	DOID:12474	DOID:409	liver disorder
 MONDO:0001532	capillariasis	MONDO:0005275	DOID:12474	DOID:850	lung disorder
+MONDO:0001533	pes anserinus tendinitis or bursitis	MONDO:0002471	DOID:12475	DOID:2965	bursitis
 MONDO:0001537	tuberculous epididymitis	MONDO:0850128	DOID:1251	DOID:0080373	epididymis disease
 MONDO:0001538	retinal ischemia	MONDO:0002311	DOID:12510	DOID:2462	retinal vascular disorder
 MONDO:0001549	hemolytic-uremic syndrome	MONDO:0005240	DOID:12554	DOID:557	kidney disorder
@@ -173,6 +174,7 @@ MONDO:0002407	capillary hemangioma	MONDO:0004751	DOID:2725	DOID:930	disease of o
 MONDO:0002433	malignant cranial nerve neoplasm	MONDO:0002714	DOID:2815	DOID:3620	central nervous system cancer
 MONDO:0002435	oculomotor nerve neoplasm	MONDO:0002433	DOID:2817	DOID:2815	malignant cranial nerve neoplasm
 MONDO:0002465	bronchiolitis	MONDO:0001358	DOID:2942	DOID:1176	bronchial disorder
+MONDO:0002471	bursitis	MONDO:0003900	DOID:2965	DOID:65	connective tissue disorder
 MONDO:0002477	prostate neuroendocrine neoplasm	MONDO:0008315	DOID:2992	DOID:10283	prostate cancer
 MONDO:0002478	mixed germ cell-sex cord-stromal tumor	MONDO:0005853	DOID:2996	DOID:154	malignant mixed neoplasm
 MONDO:0002482	nipple neoplasm	MONDO:0000620	DOID:3003	DOID:0060082	breast benign neoplasm
@@ -775,7 +777,6 @@ MONDO:0007900	nonsyndromic congenital nail disorder 3	MONDO:0006025	DOID:0080081
 MONDO:0007906	familial partial lipodystrophy, Dunnigan type	MONDO:0000426	DOID:0070202	DOID:0050736	autosomal dominant disease
 MONDO:0007909	familial multiple lipomatosis	MONDO:0000426	DOID:0070518	DOID:0050736	autosomal dominant disease
 MONDO:0007909	familial multiple lipomatosis	MONDO:0006574	DOID:0070518	DOID:3153	lipomatosis
-MONDO:0007918	microcephaly with or without chorioretinopathy, lymphedema, or intellectual disability	MONDO:0000426	DOID:0060349	DOID:0050736	autosomal dominant disease
 MONDO:0007919	lymphatic malformation 1	MONDO:0000426	DOID:0070210	DOID:0050736	autosomal dominant disease
 MONDO:0007920	lymphatic malformation 5	MONDO:0000426	DOID:0070213	DOID:0050736	autosomal dominant disease
 MONDO:0007921	yellow nail syndrome	MONDO:0002884	DOID:0050468	DOID:4123	nail disorder
@@ -1172,6 +1173,7 @@ MONDO:0009395	hyperostosis corticalis generalisata	MONDO:0006025	DOID:0080036	DO
 MONDO:0009400	hyperprolinemia type 1	MONDO:0006025	DOID:0080542	DOID:0050737	autosomal recessive disease
 MONDO:0009401	hyperprolinemia type 2	MONDO:0006025	DOID:0080543	DOID:0050737	autosomal recessive disease
 MONDO:0009404	hypertelorism, microtia, facial clefting syndrome	MONDO:0002254	DOID:14670	DOID:225	syndromic disease
+MONDO:0009413	immunodeficiency, common variable, 2	MONDO:0000426	DOID:0081145	DOID:0050736	autosomal dominant disease
 MONDO:0009415	hypoglycemia, leucine-induced	MONDO:0000426	DOID:0112262	DOID:0050736	autosomal dominant disease
 MONDO:0009415	hypoglycemia, leucine-induced	MONDO:0004736	DOID:0112262	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0009415	hypoglycemia, leucine-induced	MONDO:0004946	DOID:0112262	DOID:9993	hypoglycemia
@@ -1579,7 +1581,7 @@ MONDO:0010689	Charcot-Marie-Tooth disease X-linked recessive 4	MONDO:0020605	DOI
 MONDO:0010690	congenital stationary night blindness 1A	MONDO:0020605	DOID:0110870	DOID:0080012	X-linked recessive disease
 MONDO:0010691	Norrie disease	MONDO:0002254	DOID:0060844	DOID:225	syndromic disease
 MONDO:0010691	Norrie disease	MONDO:0020605	DOID:0060844	DOID:0080012	X-linked recessive disease
-MONDO:0010693	nystagmus 1, congenital, X-linked	MONDO:0000429	DOID:0111790	DOID:0050739	autosomal genetic disease
+MONDO:0010693	nystagmus 1, congenital, X-linked	MONDO:0020605	DOID:0111790	DOID:0080012	X-linked recessive disease
 MONDO:0010699	Charcot-Marie-Tooth disease X-linked recessive 5	MONDO:0020605	DOID:0110210	DOID:0080012	X-linked recessive disease
 MONDO:0010702	orofaciodigital syndrome I	MONDO:0020604	DOID:0060316	DOID:0080009	X-linked dominant disease
 MONDO:0010704	otopalatodigital syndrome type 1	MONDO:0020604	DOID:0111783	DOID:0080009	X-linked dominant disease
@@ -2576,6 +2578,7 @@ MONDO:0014245	Diamond-Blackfan anemia 12	MONDO:0000426	DOID:0111882	DOID:0050736
 MONDO:0014246	episodic pain syndrome, familial, 2	MONDO:0000426	DOID:0111730	DOID:0050736	autosomal dominant disease
 MONDO:0014247	familial episodic pain syndrome with predominantly lower limb involvement	MONDO:0000426	DOID:0111731	DOID:0050736	autosomal dominant disease
 MONDO:0014257	nephrotic syndrome, type 9	MONDO:0006025	DOID:0080391	DOID:0050737	autosomal recessive disease
+MONDO:0014260	immunodeficiency, common variable, 10	MONDO:0000426	DOID:0081152	DOID:0050736	autosomal dominant disease
 MONDO:0014261	growth and developmental delay-hypotonia-vision impairment-lactic acidosis syndrome	MONDO:0006025	DOID:0111484	DOID:0050737	autosomal recessive disease
 MONDO:0014267	severe combined immunodeficiency due to IKK2 deficiency	MONDO:0006025	DOID:0111959	DOID:0050737	autosomal recessive disease
 MONDO:0014268	combined immunodeficiency due to OX40 deficiency	MONDO:0006025	DOID:0111935	DOID:0050737	autosomal recessive disease
@@ -2833,6 +2836,7 @@ MONDO:0014794	Meier-Gorlin syndrome 6	MONDO:0000426	DOID:0080517	DOID:0050736	au
 MONDO:0014796	autosomal recessive early-onset Parkinson disease 23	MONDO:0006025	DOID:0060896	DOID:0050737	autosomal recessive disease
 MONDO:0014799	cataract 45	MONDO:0006025	DOID:0110262	DOID:0050737	autosomal recessive disease
 MONDO:0014808	congenital secretory sodium diarrhea 8	MONDO:0006025	DOID:0060777	DOID:0050737	autosomal recessive disease
+MONDO:0014810	pancytopenia due to IKZF1 mutations	MONDO:0000426	DOID:0081155	DOID:0050736	autosomal dominant disease
 MONDO:0014811	cerebellar atrophy, visual impairment, and psychomotor retardation;	MONDO:0002254	DOID:0081276	DOID:225	syndromic disease
 MONDO:0014811	cerebellar atrophy, visual impairment, and psychomotor retardation;	MONDO:0006025	DOID:0081276	DOID:0050737	autosomal recessive disease
 MONDO:0014813	hypomyelinating leukodystrophy 13	MONDO:0006025	DOID:0060795	DOID:0050737	autosomal recessive disease
@@ -2942,6 +2946,7 @@ MONDO:0015484	cysticercosis	MONDO:0005267	DOID:10079	DOID:114	heart disorder
 MONDO:0015484	cysticercosis	MONDO:0005328	DOID:10079	DOID:5614	eye disorder
 MONDO:0015487	fatal infantile encephalocardiomyopathy	MONDO:0033885	DOID:0050713	DOID:3762	mitochondrial complex IV deficiency, nuclear-type
 MONDO:0015515	carnitine palmitoyltransferase II deficiency	MONDO:0002525	DOID:0060235	DOID:3146	inherited lipid metabolism disorder
+MONDO:0015517	common variable immunodeficiency	MONDO:0006025	DOID:12177	DOID:0050737	autosomal recessive disease
 MONDO:0015523	epithelioid hemangioendothelioma	MONDO:0000898	DOID:0080190	DOID:0080189	malignant hemangioma
 MONDO:0015526	cold-induced sweating syndrome	MONDO:0002254	DOID:0060294	DOID:225	syndromic disease
 MONDO:0015526	cold-induced sweating syndrome	MONDO:0006025	DOID:0060294	DOID:0050737	autosomal recessive disease
@@ -3846,6 +3851,7 @@ MONDO:0054666	ovarian dysgenesis 5	MONDO:0006025	DOID:0080497	DOID:0050737	autos
 MONDO:0054669	pontocerebellar hypoplasia, type 11	MONDO:0006025	DOID:0112324	DOID:0050737	autosomal recessive disease
 MONDO:0054677	combined oxidative phosphorylation deficiency 33	MONDO:0006025	DOID:0111495	DOID:0050737	autosomal recessive disease
 MONDO:0054680	epiphyseal dysplasia, multiple, 7	MONDO:0006025	DOID:0070302	DOID:0050737	autosomal recessive disease
+MONDO:0054691	immunodeficiency, common variable, 14	MONDO:0000426	DOID:0081156	DOID:0050736	autosomal dominant disease
 MONDO:0054695	myopathy, centronuclear, 6, with fiber-type disproportion	MONDO:0015705	DOID:0111221	DOID:0111216	autosomal recessive centronuclear myopathy
 MONDO:0054696	immunodeficiency 53	MONDO:0006025	DOID:0111992	DOID:0050737	autosomal recessive disease
 MONDO:0054696	immunodeficiency 53	MONDO:0015131	DOID:0111992	DOID:628	combined immunodeficiency
