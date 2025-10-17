@@ -4,6 +4,7 @@
 ### Unmapped mappable terms _(!excluded, !deprecated)_
 | subject_id    | subject_label                                                                                       |
 |:--------------|:----------------------------------------------------------------------------------------------------|
+| OMIMPS:131300 | Camurati-Engelmann disease                                                                          |
 | OMIM:621193   | FICUS syndrome                                                                                      |
 | OMIMPS:621264 | Fetomaternal alloimmune thrombocytopenia                                                            |
 | OMIM:621234   | ICHAD syndrome                                                                                      |
@@ -26,12 +27,14 @@
 | OMIM:621295   | cerebral arteriopathy, autosomal recessive, with subcortical infarcts and leukoencephalopathy 1     |
 | OMIM:621195   | combined oxidative phosphorylation deficiency 60                                                    |
 | OMIM:621225   | congenital myopathy 26                                                                              |
+| OMIM:621343   | congenital myopathy 27                                                                              |
 | OMIM:621337   | cranioectodermal dysplasia 6                                                                        |
 | OMIM:621192   | craniofaciocardiohepatic syndrome                                                                   |
 | OMIM:621250   | developmental and epileptic encephalopathy 118                                                      |
 | OMIM:621304   | developmental and epileptic encephalopathy 119                                                      |
 | OMIM:621311   | developmental dysplasia of the hip 4                                                                |
 | OMIM:621262   | diamond-blackfan anemia 22                                                                          |
+| OMIM:621344   | dursun-ozgul neurodevelopmental syndrome                                                            |
 | OMIM:621224   | ectodermal dysplasia 17 with or without limb malformations                                          |
 | OMIM:245570   | epilepsy, focal, with speech disorder and with or without impaired intellectual development         |
 | OMIM:621268   | exudative vitreoretinopathy 8                                                                       |
@@ -71,6 +74,7 @@
 | OMIM:621209   | spermatogenic failure 100                                                                           |
 | OMIM:621269   | spermatogenic failure 101                                                                           |
 | OMIM:621194   | spermatogenic failure 99                                                                            |
+| OMIM:621345   | spondyloepiphyseal dysplasia, holling type                                                          |
 | OMIM:621259   | stargardt disease 5                                                                                 |
 | OMIM:621325   | ververi-brady syndrome 2                                                                            |
 | OMIM:621332   | wilms tumor 7                                                                                       |

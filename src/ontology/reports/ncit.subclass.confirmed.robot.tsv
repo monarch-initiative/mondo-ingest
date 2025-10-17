@@ -1240,8 +1240,8 @@ MONDO:0003525	pancreatic gastrin-producing neuroendocrine tumor	MONDO:0019954	NC
 MONDO:0003532	breast papillary carcinoma	MONDO:0002512	NCIT:C9134	NCIT:C2853	papillary adenocarcinoma
 MONDO:0003534	papillary thymic adenocarcinoma	MONDO:0002512	NCIT:C27937	NCIT:C2853	papillary adenocarcinoma
 MONDO:0003534	papillary thymic adenocarcinoma	MONDO:0003209	NCIT:C27937	NCIT:C6459	thymus gland adenocarcinoma
-MONDO:0003537	precursor T-lymphoblastic lymphoma/leukemia	MONDO:0003538	NCIT:C8694	NCIT:C7055	precursor lymphoblastic lymphoma/leukemia
-MONDO:0003537	precursor T-lymphoblastic lymphoma/leukemia	MONDO:0024615	NCIT:C8694	NCIT:C27908	T-cell and NK-cell neoplasm
+MONDO:0003537	T lymphoblastic leukemia/lymphoma	MONDO:0003538	NCIT:C8694	NCIT:C7055	precursor lymphoblastic lymphoma/leukemia
+MONDO:0003537	T lymphoblastic leukemia/lymphoma	MONDO:0024615	NCIT:C8694	NCIT:C27908	T-cell and NK-cell neoplasm
 MONDO:0003538	precursor lymphoblastic lymphoma/leukemia	MONDO:0005157	NCIT:C7055	NCIT:C7065	lymphoid neoplasm
 MONDO:0003539	T-cell adult acute lymphocytic leukemia	MONDO:0003541	NCIT:C9142	NCIT:C4967	adult acute lymphoblastic leukemia
 MONDO:0003541	adult acute lymphoblastic leukemia	MONDO:0004967	NCIT:C4967	NCIT:C3167	acute lymphoblastic leukemia
@@ -1945,9 +1945,9 @@ MONDO:0004398	mediastinal schwannoma	MONDO:0021521	NCIT:C6643	NCIT:C3604	benign 
 MONDO:0004400	malignant type A thymoma	MONDO:0002588	NCIT:C7999	NCIT:C6454	thymoma type A
 MONDO:0004401	testis refractory cancer	MONDO:0003510	NCIT:C9077	NCIT:C9063	malignant testicular germ cell tumor
 MONDO:0004402	testicular yolk sac tumor, glandular-alveolar pattern	MONDO:0003402	NCIT:C39926	NCIT:C8000	testicular yolk sac tumor
-MONDO:0004403	childhood precursor T-lymphoblastic lymphoma/leukemia	MONDO:0003537	NCIT:C5640	NCIT:C8694	precursor T-lymphoblastic lymphoma/leukemia
+MONDO:0004403	childhood precursor T-lymphoblastic lymphoma/leukemia	MONDO:0003537	NCIT:C5640	NCIT:C8694	T lymphoblastic leukemia/lymphoma
 MONDO:0004403	childhood precursor T-lymphoblastic lymphoma/leukemia	MONDO:0006517	NCIT:C5640	NCIT:C4005	childhood malignant neoplasm
-MONDO:0004404	refractory precursor T-lymphoblastic lymphoma/leukemia	MONDO:0003537	NCIT:C8696	NCIT:C8694	precursor T-lymphoblastic lymphoma/leukemia
+MONDO:0004404	refractory precursor T-lymphoblastic lymphoma/leukemia	MONDO:0003537	NCIT:C8696	NCIT:C8694	T lymphoblastic leukemia/lymphoma
 MONDO:0004406	adult central nervous system mixed germ cell tumor	MONDO:0003405	NCIT:C27402	NCIT:C6285	adult central nervous system germ cell tumor
 MONDO:0004406	adult central nervous system mixed germ cell tumor	MONDO:0016742	NCIT:C27402	NCIT:C7016	mixed germ cell tumor of central nervous system
 MONDO:0004407	stroma-dominant and stroma-poor composite ganglioneuroblastoma	MONDO:0003325	NCIT:C42060	NCIT:C42058	nodular ganglioneuroblastoma
@@ -3798,7 +3798,7 @@ MONDO:0044915	salivary duct carcinoma	MONDO:0006176	NCIT:C5904	NCIT:C3680	cribri
 MONDO:0044916	extrarenal rhabdoid tumor	MONDO:0002728	NCIT:C6586	NCIT:C3808	rhabdoid tumor
 MONDO:0044916	extrarenal rhabdoid tumor	MONDO:0006517	NCIT:C6586	NCIT:C4005	childhood malignant neoplasm
 MONDO:0044917	T-lymphoblastic lymphoma	MONDO:0000873	NCIT:C6919	NCIT:C9360	lymphoblastic lymphoma
-MONDO:0044917	T-lymphoblastic lymphoma	MONDO:0003537	NCIT:C6919	NCIT:C8694	precursor T-lymphoblastic lymphoma/leukemia
+MONDO:0044917	T-lymphoblastic lymphoma	MONDO:0003537	NCIT:C6919	NCIT:C8694	T lymphoblastic leukemia/lymphoma
 MONDO:0044919	malignant renal pelvis neoplasm	MONDO:0002367	NCIT:C7525	NCIT:C7548	kidney cancer
 MONDO:0044919	malignant renal pelvis neoplasm	MONDO:0003719	NCIT:C7525	NCIT:C8404	renal pelvis neoplasm
 MONDO:0044925	oral cavity carcinoma	MONDO:0005515	NCIT:C8990	NCIT:C9314	oral cavity cancer
@@ -3903,6 +3903,7 @@ MONDO:0956965	medulloblastoma SHH activated and TP53 wild-type	MONDO:0850197	NCI
 MONDO:0956966	medulloblastoma non-WNT/non-SHH group 3	MONDO:0850198	NCIT:C129445	NCIT:C129444	medulloblastoma non-WNT/non-SHH
 MONDO:0956967	medulloblastoma non-WNT/non-SHH group 4	MONDO:0850198	NCIT:C129446	NCIT:C129444	medulloblastoma non-WNT/non-SHH
 MONDO:0956989	CIC-rearranged sarcoma	MONDO:0858921	NCIT:C120224	NCIT:C165671	EWSR1-negative small round cell tumor
+MONDO:0957196	diffuse midline glioma, H3 K27M-mutant	MONDO:1060171	NCIT:C129309	NCIT:C185368	diffuse midline glioma, H3 K27-altered
 MONDO:0958159	sarcoma with BCOR genetic alterations	MONDO:0006974	NCIT:C178465	NCIT:C3746	small cell sarcoma
 MONDO:0958160	round cell sarcoma with EWSR1-non-ETS fusion	MONDO:0006974	NCIT:C178459	NCIT:C3746	small cell sarcoma
 MONDO:0958164	poorly differentiated chordoma	MONDO:0008978	NCIT:C177898	NCIT:C2947	chordoma

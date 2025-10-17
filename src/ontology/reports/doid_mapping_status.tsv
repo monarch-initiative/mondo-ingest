@@ -9,6 +9,7 @@ DOID:0051038	autosomal dominant primary microcephaly 27	False	False	False
 DOID:0051054	coarctation of the aorta	False	False	False
 DOID:0051056	immunodeficiency 113	False	False	False
 DOID:0051057	avoidant/restrictive food intake disorder	False	False	False
+DOID:0051058	acute calcific periarthritis	False	False	False
 DOID:0060160	childhood spinal muscular atrophy	False	False	False
 DOID:0060333	mitochondrial complex V (ATP synthase) deficiency nuclear type 4	False	False	False
 DOID:0060854	autosomal recessive pseudohypoaldosteronism type 1	False	False	False
@@ -72,6 +73,10 @@ DOID:0061187	multiple familial trichoepithelioma 1	False	False	False
 DOID:0061188	autosomal recessive sensory neuropathy with spastic paraplegia	False	False	False
 DOID:0061189	neuronal ceroid lipofuscinosis 15	False	False	False
 DOID:0061190	ReNU syndrome	False	False	False
+DOID:0061191	neonatal nephrocutaneous inflammatory syndrome	False	False	False
+DOID:0061192	neonatal inflammatory skin and bowel disease 1	False	False	False
+DOID:0061193	nephrotic syndrome type 26	False	False	False
+DOID:0061194	nephrotic syndrome type 24	False	False	False
 DOID:0070564	dialysis disequilibrium syndrome	False	False	False
 DOID:0070618	rhabdoid tumor predisposition syndrome 1	False	False	False
 DOID:0070621	ring chromosome 14 syndrome	False	False	False
@@ -96,7 +101,10 @@ DOID:0070651	neurodevelopmental disorder with seizures and gingival overgrowth	F
 DOID:0070652	Nil-Deshwan neurodevelopmental syndrome	False	False	False
 DOID:0070653	Fliedner-Zweier syndrome	False	False	False
 DOID:0070654	desmosterolosis	False	False	False
+DOID:0070655	Usher syndrome type 1B	False	False	False
 DOID:0070656	hamartoma syndrome	False	False	False
+DOID:0070657	congenital variant of Rett syndrome	False	False	False
+DOID:0070658	alcohol-associated liver disease	False	False	False
 DOID:0111368	cholesterol-ester transfer protein deficiency	False	False	False
 DOID:146	papilledema	False	False	False
 DOID:2536	chronic inflammatory demyelinating polyneuritis	False	False	False
@@ -2003,7 +2011,6 @@ DOID:5980	obsolete hemispheric anaplastic astrocytoma	False	True	True
 DOID:5981	obsolete hamartoma of hypothalamus	False	True	True
 DOID:5989	obsolete clear cell myomelanocytic tumor of the Falciform Ligament/Ligamentum Teres	False	True	True
 DOID:5991	obsolete early onset breast ovarian cancer syndrome	False	True	True
-DOID:5996	obsolete blunt duct adenosis of breast	False	True	True
 DOID:6013	obsolete mediastinum embryonal carcinoma	False	True	True
 DOID:6014	obsolete mediastinal germ cell cancer	False	True	True
 DOID:6020	obsolete metastatic MPNST	False	True	True
@@ -3721,7 +3728,7 @@ DOID:0060342	acromelic frontonasal dysostosis	True	False	False
 DOID:0060343	glucocorticoid-induced osteoporosis	True	False	False
 DOID:0060344	acrodermatitis chronica atrophicans	True	False	False
 DOID:0060345	bacillary angiomatosis	True	False	False
-DOID:0060346	Native American myopathy	True	False	False
+DOID:0060346	congenital myopathy 13	True	False	False
 DOID:0060347	acrorenal syndrome	True	False	False
 DOID:0060348	hypoparathyroidism-retardation-dysmorphism syndrome	True	False	False
 DOID:0060349	microcephaly with or without chorioretinopathy, lymphedema, or mental retardation	True	False	False
@@ -3955,7 +3962,7 @@ DOID:0060668	anencephaly	True	False	False
 DOID:0060669	cerebral cavernous malformation	True	False	False
 DOID:0060670	cerebral cavernous malformation 2	True	False	False
 DOID:0060671	cerebral cavernous malformation 3	True	False	False
-DOID:0060672	Grn-related frontotemporal lobar degeneration with Tdp43 inclusions	True	False	False
+DOID:0060672	GRN-related frontotemporal lobar degeneration with Tdp43 inclusions	True	False	False
 DOID:0060673	Peters anomaly	True	False	False
 DOID:0060674	catecholaminergic polymorphic ventricular tachycardia	True	False	False
 DOID:0060675	catecholaminergic polymorphic ventricular tachycardia 1	True	False	False
@@ -5238,7 +5245,7 @@ DOID:0080261	autosomal recessive nonsyndromic deafness 106	True	False	False
 DOID:0080262	autosomal recessive nonsyndromic deafness 107	True	False	False
 DOID:0080263	autosomal recessive nonsyndromic deafness 108	True	False	False
 DOID:0080264	exudative vitreoretinopathy 7	True	False	False
-DOID:0080265	nephrotic syndrome type 14	True	False	False
+DOID:0080265	RENI syndrome	True	False	False
 DOID:0080266	primary ciliary dyskinesia 37	True	False	False
 DOID:0080267	autosomal dominant nonsyndromic deafness 71	True	False	False
 DOID:0080268	autosomal dominant nonsyndromic deafness 72	True	False	False
@@ -9631,7 +9638,6 @@ DOID:12211	filarial elephantiasis	True	False	False
 DOID:12215	oligohydramnios	True	False	False
 DOID:12217	Lewy body dementia	True	False	False
 DOID:1222	cartilage disease	True	False	False
-DOID:12223	specific bursitis often of occupational origin	True	False	False
 DOID:12225	Plica syndrome	True	False	False
 DOID:12234	cascade stomach	True	False	False
 DOID:12236	primary biliary cholangitis	True	False	False
@@ -9724,7 +9730,7 @@ DOID:12465	secondary hyperparathyroidism of renal origin	True	False	False
 DOID:12466	secondary hyperparathyroidism	True	False	False
 DOID:1247	blood coagulation disease	True	False	False
 DOID:12474	capillariasis	True	False	False
-DOID:12475	pes anserinus tendinitis or bursitis	True	False	False
+DOID:12475	pes anserinus bursitis	True	False	False
 DOID:1248	ocular hyperemia	True	False	False
 DOID:12491	Vagus nerve disease	True	False	False
 DOID:125	vagina leiomyoma	True	False	False
@@ -9830,7 +9836,7 @@ DOID:12841	ancylostomiasis	True	False	False
 DOID:12842	Guillain-Barre syndrome	True	False	False
 DOID:12849	autistic disorder	True	False	False
 DOID:1285	rectal disease	True	False	False
-DOID:12857	Achilles bursitis	True	False	False
+DOID:12857	retrocalcaneal bursitis	True	False	False
 DOID:12858	Huntington's disease	True	False	False
 DOID:12859	choreatic disease	True	False	False
 DOID:1287	cardiovascular system disease	True	False	False
@@ -14446,8 +14452,10 @@ DOID:0110578	obsolete autosomal dominant nonsyndromic deafness 52	True	True	True
 DOID:0111612	obsolete autosomal recessive spinocerebellar ataxia 3	True	True	True
 DOID:10919	obsolete transsexualism	True	True	True
 DOID:11349	obsolete epilepsia partialis continua	True	True	True
+DOID:12223	obsolete specific bursitis often of occupational origin	True	True	True
 DOID:1634	obsolete breast papillomatosis	True	True	True
 DOID:5209	obsolete benign struma ovarii	True	True	True
+DOID:5996	obsolete blunt duct adenosis of breast	True	True	True
 DOID:6809	obsolete vaginal tubular adenoma	True	True	True
 DOID:7922	obsolete benign mediastinal neurilemmoma	True	True	True
 DOID:955	obsolete benign neurilemmoma	True	True	True

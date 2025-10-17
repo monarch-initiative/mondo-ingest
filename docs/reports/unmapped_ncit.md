@@ -2833,7 +2833,6 @@
 | NCIT:C182151 | Diffuse Midline Glioma                                                                                                                                                      |
 | NCIT:C185370 | Diffuse Midline Glioma with EZHIP Overexpression                                                                                                                            |
 | NCIT:C185369 | Diffuse Midline Glioma, EGFR-Mutant                                                                                                                                         |
-| NCIT:C185368 | Diffuse Midline Glioma, H3 K27-Altered                                                                                                                                      |
 | NCIT:C3463   | Diffuse Mixed Cell Lymphoma                                                                                                                                                 |
 | NCIT:C22099  | Diffuse Mucosal Hyperplasia of the Mouse Intestinal Tract                                                                                                                   |
 | NCIT:C8426   | Diffuse Neurofibroma                                                                                                                                                        |
