@@ -60,6 +60,7 @@ MONDO:0000339	spinal polio	MONDO:0000341	DOID:0050513	DOID:0050515	paralytic pol
 MONDO:0000340	bulbospinal polio	MONDO:0000341	DOID:0050514	DOID:0050515	paralytic poliomyelitis
 MONDO:0000341	paralytic poliomyelitis	MONDO:0017373	DOID:0050515	DOID:4953	poliomyelitis
 MONDO:0000346	Hantavirus hemorrhagic fever with renal syndrome, Dobrava-Belgrade virus type	MONDO:0005784	DOID:0050522	DOID:11266	hantavirus hemorrhagic fever with renal syndrome
+MONDO:0000351	disorder of methionine catabolism	MONDO:0004736	DOID:0050544	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0000355	Ullrich congenital muscular dystrophy	MONDO:0019950	DOID:0050558	DOID:0050557	congenital muscular dystrophy
 MONDO:0000359	spondylocostal dysostosis	MONDO:0000812	DOID:0050568	DOID:0060564	vertebral column disorder
 MONDO:0000359	spondylocostal dysostosis	MONDO:0018234	DOID:0050568	DOID:1934	dysostosis
@@ -88,6 +89,7 @@ MONDO:0000397	ataxic cerebral palsy	MONDO:0006497	DOID:0050670	DOID:1969	cerebra
 MONDO:0000400	mixed cerebral palsy	MONDO:0006497	DOID:0050673	DOID:1969	cerebral palsy
 MONDO:0000407	malignant pleural solitary fibrous tumor	MONDO:0006294	DOID:0050695	DOID:5158	pleural cancer
 MONDO:0000408	fetal alcohol spectrum disorder	MONDO:0000592	DOID:0050696	DOID:0060038	specific developmental disorder
+MONDO:0000421	inborn serine deficiency	MONDO:0004736	DOID:0050721	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0000426	autosomal dominant disease	MONDO:0000429	DOID:0050736	DOID:0050739	autosomal genetic disease
 MONDO:0000430	mature T-cell and NK-cell non-Hodgkin lymphoma	MONDO:0015760	DOID:0050743	DOID:0081312	T-cell non-Hodgkin lymphoma
 MONDO:0000446	midface dysplasia	MONDO:0005516	DOID:0050767	DOID:2256	osteochondrodysplasia
@@ -1169,7 +1171,7 @@ MONDO:0001994	sphenoidal sinus cancer	MONDO:0000380	DOID:14546	DOID:0050619	para
 MONDO:0001995	sphenoid sinus squamous cell carcinoma	MONDO:0001994	DOID:14547	DOID:14546	sphenoidal sinus cancer
 MONDO:0001996	steroid-induced glaucoma - borderline	MONDO:0004744	DOID:14548	DOID:9283	borderline glaucoma
 MONDO:0001997	root resorption	MONDO:0001670	DOID:14550	DOID:13240	tooth resorption
-MONDO:0001999	primary pulmonary hypertension	MONDO:0001493	DOID:14557	DOID:12326	chronic pulmonary heart disease
+MONDO:0001999	idiopathic pulmonary arterial hypertension	MONDO:0001493	DOID:14557	DOID:12326	chronic pulmonary heart disease
 MONDO:0002000	anaerobic meningitis	MONDO:0006670	DOID:14559	DOID:9470	bacterial meningitis
 MONDO:0002002	postsurgical hypothyroidism	MONDO:0005420	DOID:1458	DOID:1459	hypothyroidism
 MONDO:0002004	atheroembolism of kidney	MONDO:0005240	DOID:1460	DOID:557	kidney disorder
@@ -3577,7 +3579,6 @@ MONDO:0005776	gnathomiasis	MONDO:0004664	DOID:11379	DOID:883	helminthiasis
 MONDO:0005777	granuloma inguinale	MONDO:0000314	DOID:9113	DOID:0050338	primary bacterial infectious disease
 MONDO:0005778	haemonchiasis	MONDO:0005994	DOID:3332	DOID:1255	trichostrongyloidiasis
 MONDO:0005783	hemopericardium	MONDO:0001370	DOID:11482	DOID:118	pericardial effusion
-MONDO:0005784	hantavirus hemorrhagic fever with renal syndrome	MONDO:0005240	DOID:11266	DOID:557	kidney disorder
 MONDO:0005787	hepatic tuberculosis	MONDO:0005768	DOID:407	DOID:404	gastrointestinal tuberculosis
 MONDO:0005788	hepatitis E virus infection	MONDO:0006011	DOID:4411	DOID:1884	viral hepatitis
 MONDO:0005789	hepatitis D virus infection	MONDO:0006011	DOID:2047	DOID:1884	viral hepatitis
@@ -3662,7 +3663,6 @@ MONDO:0005922	pleural tuberculosis	MONDO:0000368	DOID:106	DOID:0050598	extrapulm
 MONDO:0005928	post-thrombotic syndrome	MONDO:0000945	DOID:2364	DOID:10128	venous insufficiency
 MONDO:0005933	pulmonary blastoma	MONDO:0005565	DOID:4765	DOID:0070003	blastoma
 MONDO:0005937	REM sleep behavior disorder	MONDO:0003406	DOID:9091	DOID:535	sleep-wake disorder
-MONDO:0005938	renal tuberculosis	MONDO:0005240	DOID:9733	DOID:557	kidney disorder
 MONDO:0005938	renal tuberculosis	MONDO:0006002	DOID:9733	DOID:2149	urogenital tuberculosis
 MONDO:0005942	Reye syndrome	MONDO:0002254	DOID:14525	DOID:225	syndromic disease
 MONDO:0005945	rhinoscleroma	MONDO:0000314	DOID:11336	DOID:0050338	primary bacterial infectious disease
@@ -3805,7 +3805,6 @@ MONDO:0006427	spindle cell melanoma	MONDO:0005105	DOID:3162	DOID:1909	melanoma
 MONDO:0006432	stromal predominant kidney Wilms tumor	MONDO:0019004	DOID:5191	DOID:2154	kidney Wilms tumor
 MONDO:0006444	teratoma with malignant transformation	MONDO:0002601	DOID:0081246	DOID:3307	teratoma
 MONDO:0006446	testicular embryonal carcinoma	MONDO:0005440	DOID:5680	DOID:3308	embryonal carcinoma
-MONDO:0006447	testicular non-seminomatous germ cell tumor	MONDO:0010108	DOID:4086	DOID:5557	testicular germ cell tumor
 MONDO:0006451	thymic carcinoma	MONDO:0002586	DOID:3284	DOID:3277	thymus cancer
 MONDO:0006451	thymic carcinoma	MONDO:0004993	DOID:3284	DOID:305	carcinoma
 MONDO:0006452	thymic sarcomatoid carcinoma	MONDO:0006451	DOID:8138	DOID:3284	thymic carcinoma
@@ -3924,7 +3923,6 @@ MONDO:0006644	alcoholic liver cirrhosis	MONDO:0005155	DOID:14018	DOID:5082	cirrh
 MONDO:0006647	anterior cerebral artery infarction	MONDO:0002679	DOID:3528	DOID:3526	cerebral infarction
 MONDO:0006648	anterior compartment of tibia syndrome	MONDO:0004001	DOID:3933	DOID:682	compartment syndrome
 MONDO:0006649	anterior ischemic optic neuropathy	MONDO:0002135	DOID:12010	DOID:1891	optic nerve disorder
-MONDO:0006650	anterior spinal artery syndrome	MONDO:0000473	DOID:6712	DOID:0050828	arterial disorder
 MONDO:0006650	anterior spinal artery syndrome	MONDO:0002254	DOID:6712	DOID:225	syndromic disease
 MONDO:0006652	anterolateral myocardial infarction	MONDO:0005068	DOID:5845	DOID:5844	myocardial infarction
 MONDO:0006653	anthracosilicosis	MONDO:0015926	DOID:10324	DOID:10316	pneumoconiosis
@@ -4739,6 +4737,7 @@ MONDO:0009366	normal pressure hydrocephalus	MONDO:0002045	DOID:1572	DOID:1573	co
 MONDO:0009370	L-2-hydroxyglutaric aciduria	MONDO:0016001	DOID:0050574	DOID:0050573	2-hydroxyglutaric aciduria
 MONDO:0009380	Dubin-Johnson syndrome	MONDO:0002408	DOID:12308	DOID:2741	hereditary hyperbilirubinemia
 MONDO:0009387	familial lipoprotein lipase deficiency	MONDO:0018637	DOID:14118	DOID:0111417	familial chylomicronemia syndrome
+MONDO:0009388	hyperlysinemia	MONDO:0004736	DOID:9274	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0009394	juvenile Paget disease	MONDO:0005382	DOID:0081368	DOID:5408	bone Paget disease
 MONDO:0009395	hyperostosis corticalis generalisata	MONDO:0002185	DOID:0080036	DOID:205	hyperostosis
 MONDO:0009398	hyperphosphatasia with intellectual disability syndrome 1	MONDO:0016596	DOID:0070433	DOID:0070431	hyperphosphatasia-intellectual disability syndrome
@@ -5452,6 +5451,7 @@ MONDO:0011593	seizures, benign familial infantile, 2	MONDO:0017615	DOID:0081115	
 MONDO:0011595	nonsyndromic congenital nail disorder 7	MONDO:0019284	DOID:0080085	DOID:0080683	inherited isolated nail anomaly
 MONDO:0011599	birdshot chorioretinopathy	MONDO:0006918	DOID:0111079	DOID:12574	posterior uveitis
 MONDO:0011602	autosomal recessive nonsyndromic hearing loss 27	MONDO:0019588	DOID:0110485	DOID:0050565	hearing loss, autosomal recessive
+MONDO:0011612	glycine encephalopathy	MONDO:0004736	DOID:9268	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0011613	autosomal recessive early-onset Parkinson disease 6	MONDO:0017279	DOID:0060369	DOID:0060894	young-onset Parkinson disease
 MONDO:0011616	holoprosencephaly 6	MONDO:0016296	DOID:0110874	DOID:4621	holoprosencephaly
 MONDO:0011625	autosomal dominant nonsyndromic hearing loss 18	MONDO:0019587	DOID:0110549	DOID:0050564	autosomal dominant nonsyndromic hearing loss
