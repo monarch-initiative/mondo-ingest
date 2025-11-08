@@ -1599,7 +1599,6 @@
 | NCIT:C201975 | Brain Pilocytic Astrocytoma                                                                                                                                                 |
 | NCIT:C213860 | Brain Polymorphic Post-Transplant Lymphoproliferative Disorder                                                                                                              |
 | NCIT:C213851 | Brain Post-Transplant Lymphoproliferative Disorder                                                                                                                          |
-| NCIT:C5097   | Brain Stem Glioblastoma                                                                                                                                                     |
 | NCIT:C113665 | Branch Duct Pancreatic Intraductal Papillary-Mucinous Neoplasm                                                                                                              |
 | NCIT:C53595  | Branchioma                                                                                                                                                                  |
 | NCIT:C40360  | Breast Adenocarcinoma with Spindle Cell Metaplasia                                                                                                                          |

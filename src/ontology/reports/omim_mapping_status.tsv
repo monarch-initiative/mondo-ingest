@@ -49,8 +49,6 @@ OMIM:621280	retinitis pigmentosa 100	False	False	False
 OMIM:621285	intellectual developmental disorder, autosomal dominant 76	False	False	False
 OMIM:621295	cerebral arteriopathy, autosomal recessive, with subcortical infarcts and leukoencephalopathy 1	False	False	False
 OMIM:621296	catechol-o-methyltransferase activity, variation 1n	False	False	False
-OMIM:621302	neurodevelopmental disorder with seizures and joint laxity	False	False	False
-OMIM:621304	developmental and epileptic encephalopathy 119	False	False	False
 OMIM:621307	alsahan-harris syndrome	False	False	False
 OMIM:621311	developmental dysplasia of the hip 4	False	False	False
 OMIM:621313	brain small vessel disease 4	False	False	False
@@ -65,10 +63,29 @@ OMIM:621337	cranioectodermal dysplasia 6	False	False	False
 OMIM:621343	congenital myopathy 27	False	False	False
 OMIM:621344	dursun-ozgul neurodevelopmental syndrome	False	False	False
 OMIM:621345	spondyloepiphyseal dysplasia, holling type	False	False	False
+OMIM:621354	neurodevelopmental disorder with growth impairment, quadriparesis, and poor or absent speech	False	False	False
+OMIM:621367	cardiac conduction disease with or without cardiomyopathy 2	False	False	False
+OMIM:621371	enhanced s-cone syndrome 2	False	False	False
+OMIM:621372	neurodevelopmental disorder with speech delay and behavioral abnormalities	False	False	False
+OMIM:621373	molybdenum cofactor deficiency, type b2	False	False	False
+OMIM:621375	immune dysregulation, neurodevelopmental defects, and colitis	False	False	False
+OMIM:621377	harel-tora neurodevelopmental syndrome	False	False	False
+OMIM:621379	neurocardiorenal malformation syndrome	False	False	False
+OMIM:621381	congenital disorder of glycosylation, type iicc	False	False	False
+OMIM:621382	neurodevelopmental disorder with behavioral abnormalities and childhood-onset spastic paraplegia	False	False	False
+OMIM:621386	valence-farazi cerebellar ataxia syndrome	False	False	False
+OMIM:621387	spermatogenic failure 102	False	False	False
+OMIM:621390	neurodevelopmental disorder with early-onset seizures, facial dysmorphism, and behavioral abnormalities	False	False	False
+OMIM:621393	neurodevelopmental disorder with structural brain abnormalities and craniofacial abnormalities	False	False	False
+OMIM:621394	brain small vessel disease 6 with leukoencephalopathy	False	False	False
+OMIM:621400	dyschromatosis, ichthyosis, deafness, and atopic disease	False	False	False
 OMIMPS:131300	Camurati-Engelmann disease	False	False	False
 OMIMPS:155310	Myopathy, visceral	False	False	False
 OMIMPS:248200	Stargardt disease	False	False	False
 OMIMPS:253300	Spinal muscular atrophy	False	False	False
+OMIMPS:268100	Enhanced S-cone syndrome	False	False	False
+OMIMPS:601744	Systemic lupus erythematosus	False	False	False
+OMIMPS:616117	Cardiac conduction disease with or without cardiomyoopathy	False	False	False
 OMIMPS:617982	Ververi-Brady syndrome	False	False	False
 OMIMPS:620138	Myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis	False	False	False
 OMIMPS:620235	Rhabdomyolysis, susceptibility to	False	False	False
@@ -414,6 +431,7 @@ OMIM:186710		False	False	True
 OMIM:186920	removed from database	False	False	True
 OMIM:187010		False	False	True
 OMIM:187450		False	False	True
+OMIM:187750		False	False	True
 OMIM:188200		False	False	True
 OMIM:188395		False	False	True
 OMIM:188530		False	False	True
@@ -2051,7 +2069,7 @@ OMIM:130593	EEF1G	False	True	False
 OMIM:130610	EEF2	False	True	False
 OMIM:130620	RPS14	False	True	False
 OMIM:130660	EMILIN1	False	True	False
-OMIM:131150	ERV1	False	True	False
+OMIM:131150	endogenous retroviral sequence 1	False	True	False
 OMIM:131170	ERV3	False	True	False
 OMIM:131180	ERPL2	False	True	False
 OMIM:131190	endogenous retroviral pol-like sequence-1	False	True	False
@@ -4282,7 +4300,7 @@ OMIM:300592	CT47A11	False	True	False
 OMIM:300593	SPACA5	False	True	False
 OMIM:300594	GAGE1	False	True	False
 OMIM:300595	GAGE2C	False	True	False
-OMIM:300596	GAGE3	False	True	False
+OMIM:300596	g antigen 3	False	True	False
 OMIM:300597	GAGE4	False	True	False
 OMIM:300598	GAGE5	False	True	False
 OMIM:300599	GAGE6	False	True	False
@@ -4418,7 +4436,6 @@ OMIM:300791	NRK	False	True	False
 OMIM:300792	MIR106A	False	True	False
 OMIM:300793	CT45A2	False	True	False
 OMIM:300794	CT45A3	False	True	False
-OMIM:300795	CT45A4	False	True	False
 OMIM:300796	CT45A5	False	True	False
 OMIM:300797	CT45A6	False	True	False
 OMIM:300798	PHKA2	False	True	False
@@ -7384,7 +7401,7 @@ OMIM:603407	PABPC4	False	True	False
 OMIM:603408	FZD1	False	True	False
 OMIM:603409	FZD6	False	True	False
 OMIM:603410	FZD7	False	True	False
-OMIM:603411	EPR1	False	True	False
+OMIM:603411	effector cell protease receptor 1	False	True	False
 OMIM:603412	CDC42BPA	False	True	False
 OMIM:603413	TIAL1	False	True	False
 OMIM:603414	TM7SF2	False	True	False
@@ -7874,7 +7891,7 @@ OMIM:603995	zinc finger protein 113	False	True	False
 OMIM:603996	ZNF114	False	True	False
 OMIM:603997	zinc finger protein 118	False	True	False
 OMIM:603998	zinc finger protein 119	False	True	False
-OMIM:603999	ZNF120	False	True	False
+OMIM:603999	zinc finger protein 120	False	True	False
 OMIM:604000	zinc finger protein 122	False	True	False
 OMIM:604001	AKAP9	False	True	False
 OMIM:604002	ROCK2	False	True	False
@@ -8326,7 +8343,7 @@ OMIM:604573	ATP5MPL	False	True	False
 OMIM:604574	FRRS1L	False	True	False
 OMIM:604575	ZNHIT2	False	True	False
 OMIM:604576	ERG28	False	True	False
-OMIM:604577	BVES	False	True	False
+OMIM:604577	POPDC1	False	True	False
 OMIM:604578	AIM2	False	True	False
 OMIM:604579	FZD4	False	True	False
 OMIM:604580	FBLN5	False	True	False
@@ -8831,7 +8848,7 @@ OMIM:605143	ACTR1A	False	True	False
 OMIM:605144	ACTR1B	False	True	False
 OMIM:605145	ANKH	False	True	False
 OMIM:605146	S1PR5	False	True	False
-OMIM:605147	LECT1	False	True	False
+OMIM:605147	CNMD	False	True	False
 OMIM:605148	GALNT6	False	True	False
 OMIM:605149	CXCL13	False	True	False
 OMIM:605152	CFAP45	False	True	False
@@ -9120,7 +9137,7 @@ OMIM:605492	LRRN2	False	True	False
 OMIM:605493	TRIM3	False	True	False
 OMIM:605494	ITGB3BP	False	True	False
 OMIM:605495	SLCO1B3	False	True	False
-OMIM:605496	CEP1	False	True	False
+OMIM:605496	CNTRL	False	True	False
 OMIM:605497	CRTAP	False	True	False
 OMIM:605498	KIF20B	False	True	False
 OMIM:605499	zw10 interactor, antisense	False	True	False
@@ -12887,7 +12904,7 @@ OMIM:610274	PIGV	False	True	False
 OMIM:610275	PIGW	False	True	False
 OMIM:610276	PIGX	False	True	False
 OMIM:610277	ORAI1	False	True	False
-OMIM:610278	platelet endothelial aggregation receptor 1	False	True	False
+OMIM:610278	PEAR1	False	True	False
 OMIM:610280	OSTN	False	True	False
 OMIM:610281	ZFP62	False	True	False
 OMIM:610284	LIPT1	False	True	False
@@ -15115,7 +15132,7 @@ OMIM:613296	LAPTM4B	False	True	False
 OMIM:613297	MARCHF6	False	True	False
 OMIM:613298	TICRR	False	True	False
 OMIM:613299	FAM13A	False	True	False
-OMIM:613300	FAM13AOS	False	True	False
+OMIM:613300	FAM13AAS1	False	True	False
 OMIM:613301	FEZF1	False	True	False
 OMIM:613302	ALKBH4	False	True	False
 OMIM:613303	ALKBH5	False	True	False
@@ -16253,7 +16270,7 @@ OMIM:615421	CCDC111	False	True	False
 OMIM:615423	TRMT10C	False	True	False
 OMIM:615427	ELMOD3	False	True	False
 OMIM:615428	DDX47	False	True	False
-OMIM:615430	TMEM241	False	True	False
+OMIM:615430	SLC35D4	False	True	False
 OMIM:615435	ERO1L	False	True	False
 OMIM:615437	ERO1LB	False	True	False
 OMIM:615442	TRAV@	False	True	False
@@ -19422,9 +19439,32 @@ OMIM:621358	LSMEM2	False	True	False
 OMIM:621359	LRTM2	False	True	False
 OMIM:621360	human-accelerated regulatory enhancer 5	False	True	False
 OMIM:621361	GATD1	False	True	False
+OMIM:621362	SMLR1	False	True	False
+OMIM:621363	MAP7D1	False	True	False
+OMIM:621364	MIR382	False	True	False
+OMIM:621365	PRR33	False	True	False
+OMIM:621366	SSMEM1	False	True	False
+OMIM:621368	XKR4	False	True	False
+OMIM:621370	XKR9	False	True	False
+OMIM:621374	STYXL2	False	True	False
+OMIM:621376	CFAP206	False	True	False
+OMIM:621378	CFAP161	False	True	False
+OMIM:621380	TMEM68	False	True	False
+OMIM:621383	SRRM3	False	True	False
+OMIM:621385	NOL12	False	True	False
+OMIM:621388	CFAP229	False	True	False
+OMIM:621389	DNAJC25	False	True	False
+OMIM:621391	XKR5	False	True	False
+OMIM:621392	CFAP157	False	True	False
+OMIM:621395	DDX19A	False	True	False
+OMIM:621396	SPATS1	False	True	False
+OMIM:621397	PABPN1L	False	True	False
+OMIM:621398	CFAP100	False	True	False
+OMIM:621399	UBAC2	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:173500		False	True	True
 OMIM:173540		False	True	True
+OMIM:300795		False	True	True
 OMIM:616915	removed from database	False	True	True
 OMIM:100070	aortic aneurysm, familial abdominal, 1	True	False	False
 OMIM:100100	prune belly syndrome	True	False	False
@@ -21079,7 +21119,7 @@ OMIM:252010	mitochondrial complex 1 deficiency, nuclear type 1	True	False	False
 OMIM:252011	mitochondrial complex 2 deficiency, nuclear type 1	True	False	False
 OMIM:252100	orofaciodigital syndrome 2	True	False	False
 OMIM:252150	molybdenum cofactor deficiency, type a	True	False	False
-OMIM:252160	molybdenum cofactor deficiency, type B	True	False	False
+OMIM:252160	molybdenum cofactor deficiency, type b1	True	False	False
 OMIM:252270	monosomy 7 myelodysplasia and leukemia syndrome 1	True	False	False
 OMIM:252350	moyamoya disease 1	True	False	False
 OMIM:252500	mucolipidosis 2 alpha/beta	True	False	False
@@ -21308,7 +21348,7 @@ OMIM:267700	hemophagocytic lymphohistiocytosis, familial, 1	True	False	False
 OMIM:267750	knobloch syndrome 1	True	False	False
 OMIM:268000	retinitis pigmentosa	True	False	False
 OMIM:268080	retinoschisis of fovea	True	False	False
-OMIM:268100	enhanced s-cone syndrome	True	False	False
+OMIM:268100	enhanced s-cone syndrome 1	True	False	False
 OMIM:268130	revesz syndrome	True	False	False
 OMIM:268150	rh-null, regulator type	True	False	False
 OMIM:268200	myoglobinuria, acute recurrent, autosomal recessive	True	False	False
@@ -27200,7 +27240,7 @@ OMIM:620010	cholestasis, progressive familial intrahepatic, 12	True	False	False
 OMIM:620011	neuronopathy, distal hereditary motor, autosomal recessive 6	True	False	False
 OMIM:620012	developmental delay, hypotonia, and impaired language	True	False	False
 OMIM:620014	lymphatic malformation 12	True	False	False
-OMIM:620015	advance sleep phase syndrome, familial, 4	True	False	False
+OMIM:620015	advanced sleep phase syndrome, familial, 4	True	False	False
 OMIM:620019	arthrogryposis, distal, type 11	True	False	False
 OMIM:620021	intellectual developmental disorder with autism and dysmorphic facies	True	False	False
 OMIM:620022	stickler syndrome, type 6	True	False	False
@@ -27685,6 +27725,9 @@ OMIM:621179	diarrhea 15, congenital	True	False	False
 OMIM:621180	cranioectodermal dysplasia 5	True	False	False
 OMIM:621182	neurodevelopmental disorder with poor or absent speech, dysmorphic facies, and behavioral abnormalities	True	False	False
 OMIM:621184	tayoun-maawali syndrome	True	False	False
+OMIM:621302	neurodevelopmental disorder with seizures and joint laxity	True	False	False
+OMIM:621304	developmental and epileptic encephalopathy 119	True	False	False
+OMIM:621369	systemic lupus erythematosus 18	True	False	False
 OMIMPS:100070	Aortic aneurysm, familial abdominal	True	False	False
 OMIMPS:100300	Adams-Oliver syndrome	True	False	False
 OMIMPS:101800	Acrodysostosis	True	False	False
@@ -28293,7 +28336,6 @@ OMIM:164891		True	False	True
 OMIM:168850		True	False	True
 OMIM:175020		True	False	True
 OMIM:181515		True	False	True
-OMIM:187750		True	False	True
 OMIM:209800		True	False	True
 OMIM:242870		True	False	True
 OMIM:247440		True	False	True
@@ -28309,6 +28351,7 @@ OMIM:300640		True	False	True
 OMIM:300660		True	False	True
 OMIM:300881		True	False	True
 OMIM:301590		True	False	True
+OMIM:302900		True	False	True
 OMIM:306500		True	False	True
 OMIM:309605		True	False	True
 OMIM:314800		True	False	True
@@ -29523,7 +29566,6 @@ OMIM:302400	central incisors, absence of	True	True	False
 OMIM:302600	spinocerebellar ataxia, X-linked 2	True	True	False
 OMIM:302700	cerebral sclerosis, diffuse, scholz type	True	True	False
 OMIM:302803	charcot-marie-tooth peroneal muscular atrophy, x-linked, with aplasia cutis congenita	True	True	False
-OMIM:302900	charcot-marie-tooth peroneal muscular atrophy and friedreich ataxia, combined	True	True	False
 OMIM:303650	colonic atresia	True	True	False
 OMIM:304030	cone dystrophy, x-linked, with tapetal-like sheen	True	True	False
 OMIM:304200	cutis verticis gyrata, thyroid aplasia, and impaired intellectual development	True	True	False
@@ -29557,7 +29599,7 @@ OMIM:308850	laryngeal abductor paralysis, X-linked	True	True	False
 OMIM:308950	lesch-nyhan phenotype with normal hgprt	True	True	False
 OMIM:308960	leukemia, acute, X-linked	True	True	False
 OMIM:309480	impaired intellectual development and psoriasis	True	True	False
-OMIM:309640	mental retardation with spastic paraplegia	True	True	False
+OMIM:309640	impaired intellectual development with spastic paraplegia	True	True	False
 OMIM:309840	modifier, x-linked, for neurofunctional defects	True	True	False
 OMIM:309930	muscular dystrophy, cardiac type	True	True	False
 OMIM:309950	muscular dystrophy, hemizygous lethal type	True	True	False

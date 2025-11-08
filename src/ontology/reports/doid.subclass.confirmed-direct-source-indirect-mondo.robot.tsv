@@ -39,7 +39,6 @@ MONDO:0000342	O'nyong'nyong fever	MONDO:0005108	DOID:0050516	DOID:934	viral infe
 MONDO:0000343	Barmah forest virus disease	MONDO:0005108	DOID:0050517	DOID:934	viral infectious disease
 MONDO:0000344	Ross river fever	MONDO:0005108	DOID:0050518	DOID:934	viral infectious disease
 MONDO:0000345	Oropouche fever	MONDO:0005108	DOID:0050521	DOID:934	viral infectious disease
-MONDO:0000351	disorder of methionine catabolism	MONDO:0004736	DOID:0050544	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0000365	primary congenital glaucoma	MONDO:0005041	DOID:0050593	DOID:1686	glaucoma
 MONDO:0000367	taeniasis	MONDO:0004664	DOID:0050596	DOID:883	helminthiasis
 MONDO:0000371	oral cavity carcinoma in situ	MONDO:0006858	DOID:0050610	DOID:403	mouth disorder
@@ -54,7 +53,6 @@ MONDO:0000383	benign reproductive system neoplasm	MONDO:0005039	DOID:0050622	DOI
 MONDO:0000384	bladder benign neoplasm	MONDO:0006026	DOID:0050623	DOID:365	urinary bladder disorder
 MONDO:0000402	small cell carcinoma	MONDO:0004993	DOID:0050685	DOID:305	carcinoma
 MONDO:0000409	chorioamnionitis	MONDO:0005917	DOID:0050697	DOID:780	placenta disorder
-MONDO:0000421	inborn serine deficiency	MONDO:0004736	DOID:0050721	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0000437	cerebellar ataxia	MONDO:0002427	DOID:0050753	DOID:2786	cerebellar disorder
 MONDO:0000450	secondary progressive multiple sclerosis	MONDO:0005301	DOID:0050783	DOID:2377	multiple sclerosis
 MONDO:0000451	primary progressive multiple sclerosis	MONDO:0005301	DOID:0050784	DOID:2377	multiple sclerosis
@@ -1017,6 +1015,7 @@ MONDO:0005764	follicular dendritic cell sarcoma	MONDO:0004805	DOID:6262	DOID:950
 MONDO:0005769	geniculate herpes zoster	MONDO:0002098	DOID:9210	DOID:1756	facial nerve disorder
 MONDO:0005779	hand, foot and mouth disease	MONDO:0005108	DOID:10881	DOID:934	viral infectious disease
 MONDO:0005784	hantavirus hemorrhagic fever with renal syndrome	MONDO:0005108	DOID:11266	DOID:934	viral infectious disease
+MONDO:0005784	hantavirus hemorrhagic fever with renal syndrome	MONDO:0005240	DOID:11266	DOID:557	kidney disorder
 MONDO:0005787	hepatic tuberculosis	MONDO:0005154	DOID:407	DOID:409	liver disorder
 MONDO:0005800	hordeolum	MONDO:0003382	DOID:9909	DOID:530	eyelid disorder
 MONDO:0005800	hordeolum	MONDO:0005113	DOID:9909	DOID:104	bacterial infectious disease
@@ -1039,6 +1038,7 @@ MONDO:0005903	pericardial tuberculosis	MONDO:0000474	DOID:4962	DOID:0050829	peri
 MONDO:0005913	phlebotomus fever	MONDO:0005108	DOID:11360	DOID:934	viral infectious disease
 MONDO:0005922	pleural tuberculosis	MONDO:0002037	DOID:106	DOID:1532	pleural disorder
 MONDO:0005933	pulmonary blastoma	MONDO:0008903	DOID:4765	DOID:1324	lung cancer
+MONDO:0005938	renal tuberculosis	MONDO:0005240	DOID:9733	DOID:557	kidney disorder
 MONDO:0005952	scarlet fever	MONDO:0005113	DOID:8596	DOID:104	bacterial infectious disease
 MONDO:0005963	sparganosis	MONDO:0004664	DOID:10080	DOID:883	helminthiasis
 MONDO:0005966	spleen cancer	MONDO:0002332	DOID:672	DOID:2529	splenic disorder
@@ -1421,7 +1421,6 @@ MONDO:0008768	ceroid lipofuscinosis, neuronal, 6B (Kufs type)	MONDO:0016295	DOID
 MONDO:0008769	neuronal ceroid lipofuscinosis 2	MONDO:0016295	DOID:0110726	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0008770	amelogenesis imperfecta type 1C	MONDO:0019507	DOID:0110056	DOID:2187	amelogenesis imperfecta
 MONDO:0008772	amelogenesis imperfecta type 2A1	MONDO:0019507	DOID:0110057	DOID:2187	amelogenesis imperfecta
-MONDO:0008774	2-aminoadipic 2-oxoadipic aciduria	MONDO:0004736	DOID:0111453	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0008780	amyotrophic lateral sclerosis type 2, juvenile	MONDO:0004976	DOID:0060194	DOID:332	amyotrophic lateral sclerosis
 MONDO:0008781	juvenile amyotrophic lateral sclerosis with dementia	MONDO:0004976	DOID:0110067	DOID:332	amyotrophic lateral sclerosis
 MONDO:0008785	sideroblastic anemia 2	MONDO:0006025	DOID:0060065	DOID:0050737	autosomal recessive disease
@@ -1516,7 +1515,6 @@ MONDO:0009354	methylcobalamin deficiency type cblE	MONDO:0006025	DOID:0112255	DO
 MONDO:0009372	encephalopathy due to hydroxykynureninuria	MONDO:0004736	DOID:0112257	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0009376	carbamoyl phosphate synthetase I deficiency disease	MONDO:0004739	DOID:9280	DOID:9267	urea cycle disorder
 MONDO:0009377	hyperammonemia due to N-acetylglutamate synthase deficiency	MONDO:0004739	DOID:0112258	DOID:9267	urea cycle disorder
-MONDO:0009388	hyperlysinemia	MONDO:0004736	DOID:9274	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0009393	ornithine translocase deficiency	MONDO:0004736	DOID:0050720	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0009412	scurvy	MONDO:0006873	DOID:13724	DOID:5113	nutritional deficiency disease
 MONDO:0009431	hereditary hypophosphatemic rickets with hypercalciuria	MONDO:0005520	DOID:0050947	DOID:10609	rickets
@@ -1817,7 +1815,6 @@ MONDO:0011591	cataract 26 multiple types	MONDO:0005129	DOID:0110246	DOID:83	cata
 MONDO:0011600	congenital myasthenic syndrome 4A	MONDO:0018940	DOID:0110678	DOID:3635	congenital myasthenic syndrome
 MONDO:0011601	neonatal intrahepatic cholestasis due to citrin deficiency	MONDO:0015991	DOID:0070341	DOID:9273	citrullinemia
 MONDO:0011603	GNE myopathy	MONDO:0005336	DOID:0080718	DOID:423	myopathy
-MONDO:0011612	glycine encephalopathy	MONDO:0004736	DOID:9268	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0011628	propionic acidemia	MONDO:0000688	DOID:14701	DOID:0060159	inborn organic aciduria
 MONDO:0011632	amyotrophic lateral sclerosis type 21	MONDO:0004976	DOID:0060212	DOID:332	amyotrophic lateral sclerosis
 MONDO:0011647	Alzheimer disease 7	MONDO:0004975	DOID:0110039	DOID:10652	Alzheimer disease
@@ -1917,7 +1914,7 @@ MONDO:0012215	myofibrillar myopathy 3	MONDO:0000426	DOID:0080094	DOID:0050736	au
 MONDO:0012237	nemaline myopathy 6	MONDO:0018958	DOID:0110935	DOID:3191	nemaline myopathy
 MONDO:0012238	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 2	MONDO:0000426	DOID:0111517	DOID:0050736	autosomal dominant disease
 MONDO:0012238	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 2	MONDO:0005181	DOID:0111517	DOID:12558	progressive external ophthalmoplegia
-MONDO:0012239	congenital myopathy 4B, autosomal recessive	MONDO:0018958	DOID:0110926	DOID:3191	nemaline myopathy
+MONDO:0012239	congenital myopathy 4B, autosomal recessive	MONDO:0019952	DOID:0110926	DOID:0081337	congenital myopathy
 MONDO:0012240	congenital myopathy 23	MONDO:0018958	DOID:0110932	DOID:3191	nemaline myopathy
 MONDO:0012241	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 3	MONDO:0000426	DOID:0111520	DOID:0050736	autosomal dominant disease
 MONDO:0012241	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 3	MONDO:0005181	DOID:0111520	DOID:12558	progressive external ophthalmoplegia
@@ -2372,7 +2369,6 @@ MONDO:0014377	developmental and epileptic encephalopathy, 24	MONDO:0100062	DOID:
 MONDO:0014383	myopathy, tubular aggregate, 2	MONDO:0005336	DOID:0080686	DOID:423	myopathy
 MONDO:0014385	amelogenesis imperfecta hypomaturation type 2A5	MONDO:0019507	DOID:0110063	DOID:2187	amelogenesis imperfecta
 MONDO:0014387	leukoencephalopathy, progressive, with ovarian failure	MONDO:0019046	DOID:0070396	DOID:10579	leukodystrophy
-MONDO:0014391	severe combined immunodeficiency due to CTPS1 deficiency	MONDO:0015974	DOID:0111938	DOID:627	severe combined immunodeficiency
 MONDO:0014392	developmental and epileptic encephalopathy, 25	MONDO:0100062	DOID:0080453	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0014395	frontotemporal dementia and/or amyotrophic lateral sclerosis 2	MONDO:0004976	DOID:0060214	DOID:332	amyotrophic lateral sclerosis
 MONDO:0014396	dilated cardiomyopathy 1NN	MONDO:0005021	DOID:0110432	DOID:12930	dilated cardiomyopathy

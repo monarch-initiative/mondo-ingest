@@ -2,8 +2,10 @@ subject_id	predicate_id	object_id	subject_label	object_label	mapping_justificati
 ID	>A oboInOwl:source	A oboInOwl:hasDbXref								
 MONDO:0001516	MONDO:equivalentTo	OMIMPS:253300	spinal muscular atrophy	Spinal muscular atrophy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	spinal muscular atrophy
 MONDO:0007542	MONDO:equivalentTo	OMIMPS:131300	Camurati-Engelmann disease	Camurati-Engelmann disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	camurati-engelmann disorder
+MONDO:0007915	MONDO:equivalentTo	OMIMPS:601744	systemic lupus erythematosus	Systemic lupus erythematosus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	systemic lupus erythematosus
 MONDO:0019353	MONDO:equivalentTo	OMIMPS:248200	Stargardt disease	Stargardt disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	stargardt disorder
 MONDO:0060707	MONDO:equivalentTo	OMIMPS:617982	Ververi-Brady syndrome	Ververi-Brady syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ververi-brady syndrome
+MONDO:0100288	MONDO:equivalentTo	OMIMPS:268100	enhanced S-cone syndrome	Enhanced S-cone syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	enhanced s-cone syndrome
 MONDO:0859322	MONDO:equivalentTo	OMIMPS:620138	myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis	Myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis
 MONDO:0000022	MONDO:equivalentTo	ICD10CM:N39.44	nocturnal enuresis	Nocturnal enuresis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nocturnal enuresis
 MONDO:0001711	MONDO:equivalentTo	ICD10CM:K76.82	hepatic encephalopathy	Hepatic encephalopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hepatic encephalopathy
@@ -119,39 +121,55 @@ MONDO:1040026	MONDO:equivalentTo	NCIT:C3813	metastatic malignant neoplasm in the
 MONDO:0005641	MONDO:equivalentTo	DOID:2934	aleutian mink disease	aleutian mink disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	aleutian mink disorder
 MONDO:0005676	MONDO:equivalentTo	DOID:5154	borna disease	borna disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	borna disorder
 MONDO:0006499	MONDO:equivalentTo	DOID:3462	hamartoma	hamartoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hamartoma
+MONDO:0007273	MONDO:equivalentTo	DOID:0061219	pheochromocytoma/paraganglioma syndrome 4	pheochromocytoma/paraganglioma syndrome 4	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:115310
 MONDO:0007315	MONDO:equivalentTo	DOID:0070648	cherubism	cherubism	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	mesh:d002636
 MONDO:0007744	MONDO:equivalentTo	DOID:0111368	cholesterol-ester transfer protein deficiency	cholesterol-ester transfer protein deficiency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cholesterol-ester transfer protein deficiency
 MONDO:0008002	MONDO:equivalentTo	DOID:0070636	mirror movements 1	mirror movements 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:157600
+MONDO:0008192	MONDO:equivalentTo	DOID:0061216	pheochromocytoma/paraganglioma syndrome 1	pheochromocytoma/paraganglioma syndrome 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:168000
 MONDO:0008369	MONDO:equivalentTo	DOID:0061165	proximal renal tubular acidosis	proximal renal tubular acidosis	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:179830
 MONDO:0008881	MONDO:equivalentTo	DOID:0061155	kyphomelic dysplasia	kyphomelic dysplasia	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:211350
 MONDO:0009222	MONDO:equivalentTo	DOID:0061175	Gollop-Wolfgang complex	Gollop-Wolfgang complex	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:228250
 MONDO:0009465	MONDO:equivalentTo	DOID:14671	multiple intestinal atresia	multiple intestinal atresia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	multiple intestinal atresia
+MONDO:0009582	MONDO:equivalentTo	DOID:0061196	Mietens syndrome	Mietens syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:249600
 MONDO:0009954	MONDO:equivalentTo	DOID:0070650	Ramon syndrome	Ramon syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	mesh:c535285
 MONDO:0009954	MONDO:equivalentTo	DOID:0070650	Ramon syndrome	Ramon syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:266270
+MONDO:0011121	MONDO:equivalentTo	DOID:0061217	pheochromocytoma/paraganglioma syndrome 2	pheochromocytoma/paraganglioma syndrome 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:601650
 MONDO:0011217	MONDO:equivalentTo	DOID:0070654	desmosterolosis	desmosterolosis	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	mesh:c566555
 MONDO:0011217	MONDO:equivalentTo	DOID:0070654	desmosterolosis	desmosterolosis	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:602398
+MONDO:0011258	MONDO:equivalentTo	DOID:0061209	branchiootic syndrome 1	branchiootic syndrome 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:602588
 MONDO:0011422	MONDO:equivalentTo	DOID:0061167	autosomal recessive proximal renal tubular acidosis	autosomal recessive proximal renal tubular acidosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	autosomal recessive proximal renal tubular acidosis
+MONDO:0011544	MONDO:equivalentTo	DOID:0061218	pheochromocytoma/paraganglioma syndrome 3	pheochromocytoma/paraganglioma syndrome 3	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:605373
+MONDO:0012025	MONDO:equivalentTo	DOID:0061210	branchiootic syndrome 3	branchiootic syndrome 3	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:608389
 MONDO:0012173	MONDO:equivalentTo	DOID:0061186	long chain 3-hydroxyacyl-CoA dehydrogenase deficiency	long chain 3-hydroxyacyl-CoA dehydrogenase deficiency	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:609016
 MONDO:0012252	MONDO:equivalentTo	DOID:0070618	rhabdoid tumor predisposition syndrome 1	rhabdoid tumor predisposition syndrome 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:609322
 MONDO:0013224	MONDO:equivalentTo	DOID:0060997	rhabdoid tumor predisposition syndrome 2	rhabdoid tumor predisposition syndrome 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:613325
+MONDO:0013602	MONDO:equivalentTo	DOID:0061220	pheochromocytoma/paraganglioma syndrome 5	pheochromocytoma/paraganglioma syndrome 5	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614165
 MONDO:0013790	MONDO:equivalentTo	DOID:0070637	mirror movements 2	mirror movements 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614508
 MONDO:0013895	MONDO:equivalentTo	DOID:0061179	Adams-Oliver syndrome 3	Adams-Oliver syndrome 3	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:614814
 MONDO:0014478	MONDO:equivalentTo	DOID:0070639	mirror movements 3	mirror movements 3	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:616059
 MONDO:0021661	MONDO:equivalentTo	DOID:0061139	coronary atherosclerosis	coronary atherosclerosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	coronary atherosclerosis
+MONDO:0024530	MONDO:equivalentTo	DOID:0061198	Bethlem myopathy 1A	Bethlem myopathy 1A	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:158810
 MONDO:0030606	MONDO:equivalentTo	DOID:0051011	Bryant-Li-Bhoj neurodevelopmental syndrome 1	Bryant-Li-Bhoj neurodevelopmental syndrome 1	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619720
 MONDO:0030607	MONDO:equivalentTo	DOID:0051012	Bryant-Li-Bhoj neurodevelopmental syndrome 2	Bryant-Li-Bhoj neurodevelopmental syndrome 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619721
 MONDO:0030770	MONDO:equivalentTo	DOID:0060990	congenital disorder of deglycosylation 2	congenital disorder of deglycosylation 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619775
 MONDO:0030994	MONDO:equivalentTo	DOID:0061147	neurodevelopmental disorder with or without autism or seizures	neurodevelopmental disorder with or without autism or seizures	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619239
 MONDO:0032641	MONDO:equivalentTo	DOID:0070638	mirror movements 4	mirror movements 4	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:618264
+MONDO:0032767	MONDO:equivalentTo	DOID:0061221	pheochromocytoma/paraganglioma syndrome 6	pheochromocytoma/paraganglioma syndrome 6	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:618464
+MONDO:0032771	MONDO:equivalentTo	DOID:0061222	pheochromocytoma/paraganglioma syndrome 7	pheochromocytoma/paraganglioma syndrome 7	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:618475
+MONDO:0034022	MONDO:equivalentTo	DOID:0061201	Bethlem myopathy 2	Bethlem myopathy 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:616471
+MONDO:0100001	MONDO:equivalentTo	DOID:0070659	alpha-gal syndrome	alpha-gal syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	alpha-gal syndrome
 MONDO:0700087	MONDO:equivalentTo	DOID:0070655	Usher syndrome type 1B	Usher syndrome type 1B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	mesh:c536485
 MONDO:0700087	MONDO:equivalentTo	DOID:0070655	Usher syndrome type 1B	Usher syndrome type 1B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:276900
 MONDO:0800504	MONDO:equivalentTo	DOID:0050156	idiopathic pulmonary fibrosis	idiopathic pulmonary fibrosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	idiopathic pulmonary fibrosis
 MONDO:0859148	MONDO:equivalentTo	DOID:0070651	neurodevelopmental disorder with seizures and gingival overgrowth	neurodevelopmental disorder with seizures and gingival overgrowth	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619323
 MONDO:0957787	MONDO:equivalentTo	DOID:0070653	Fliedner-Zweier syndrome	Fliedner-Zweier syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620511
+MONDO:0958233	MONDO:equivalentTo	DOID:0061199	Bethlem myopathy 1B	Bethlem myopathy 1B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620725
+MONDO:0958234	MONDO:equivalentTo	DOID:0061200	Bethlem myopathy 1C	Bethlem myopathy 1C	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620726
 MONDO:0975795	MONDO:equivalentTo	DOID:0061158	Kariminejad neurodevelopmental syndrome	Kariminejad neurodevelopmental syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620937
 MONDO:0975830	MONDO:equivalentTo	DOID:0061184	myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 2	myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620971
 MONDO:0975953	MONDO:equivalentTo	DOID:0061146	Pan-Chung-Bellen syndrome	Pan-Chung-Bellen syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621049
 MONDO:0975955	MONDO:equivalentTo	DOID:0061170	autoinflammation, panniculitis, and dermatosis syndrome	autoinflammation, panniculitis, and dermatosis syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omimps:617099
+MONDO:7770002	MONDO:equivalentTo	DOID:0051057	avoidant/restrictive food intake disorder	avoidant/restrictive food intake disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	avoidant/restrictive food intake disorder
 MONDO:0000088	MONDO:equivalentTo	ICD10WHO:E30.1	precocious puberty	Precocious puberty	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	precocious puberty
 MONDO:0000245	MONDO:equivalentTo	ICD10WHO:B35.5	tinea imbricata	Tinea imbricata	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tinea imbricata
 MONDO:0000397	MONDO:equivalentTo	ICD10WHO:G80.4	ataxic cerebral palsy	Ataxic cerebral palsy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ataxic cerebral palsy
@@ -278,7 +296,6 @@ MONDO:0001942	MONDO:equivalentTo	ICD10WHO:F41.1	generalized anxiety disorder	Gen
 MONDO:0001949	MONDO:equivalentTo	ICD10WHO:E06.0	acute thyroiditis	Acute thyroiditis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	acute thyroiditis
 MONDO:0001954	MONDO:equivalentTo	ICD10WHO:I82.1	thrombophlebitis migrans	Thrombophlebitis migrans	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	thrombophlebitis migrans
 MONDO:0001964	MONDO:equivalentTo	ICD10WHO:H66.1	chronic tubotympanic suppurative otitis media	Chronic tubotympanic suppurative otitis media	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	chronic tubotympanic suppurative otitis media
-MONDO:0001999	MONDO:equivalentTo	ICD10WHO:I27.0	primary pulmonary hypertension	Primary pulmonary hypertension	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary pulmonary hypertension
 MONDO:0002008	MONDO:equivalentTo	ICD10WHO:H83.0	labyrinthitis	Labyrinthitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	labyrinthitis
 MONDO:0002045	MONDO:equivalentTo	ICD10WHO:G91.0	communicating hydrocephalus	Communicating hydrocephalus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	communicating hydrocephalus
 MONDO:0002070	MONDO:equivalentTo	ICD10WHO:Q21.0	ventricular septal defect	Ventricular septal defect	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ventricular septal defect
