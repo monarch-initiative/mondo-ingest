@@ -1991,10 +1991,6 @@ MONDO:0008332	platelet-type von Willebrand disease	skos:closeMatch	ICD10CM:D68.0
 MONDO:0008332	platelet-type von Willebrand disease	skos:closeMatch	ICD10CM:D69.8	Other specified hemorrhagic conditions	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0111056	LEXMATCH
 MONDO:0008332	platelet-type von Willebrand disease	skos:closeMatch	ICD10CM:D69.8	Other specified hemorrhagic conditions	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0111056	LEXMATCH
 MONDO:0008337	familial pterygium of the conjunctiva	skos:closeMatch	ICD10CM:H11.0	Pterygium of eye	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0008337	LEXMATCH
-MONDO:0008340	ptosis, hereditary congenital, 1	skos:closeMatch	ICD10CM:Q10.0	Congenital ptosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060261	LEXMATCH
-MONDO:0008340	ptosis, hereditary congenital, 1	skos:closeMatch	ICD10CM:Q10.0	Congenital ptosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:0060261	LEXMATCH
-MONDO:0008340	ptosis, hereditary congenital, 1	skos:closeMatch	ICD10CM:Q10.0	Congenital ptosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060261	LEXMATCH
-MONDO:0008340	ptosis, hereditary congenital, 1	skos:closeMatch	ICD10CM:Q10.0	Congenital ptosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:0060261	LEXMATCH
 MONDO:0008346	pulmonary hemosiderosis	skos:closeMatch	ICD10CM:J63.4	Siderosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:10328	LEXMATCH
 MONDO:0008346	pulmonary hemosiderosis	skos:closeMatch	ICD10CM:J63.4	Siderosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	siderosis	LEXMATCH
 MONDO:0008346	pulmonary hemosiderosis	skos:closeMatch	ICD10CM:J63.4	Siderosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	siderosis	LEXMATCH
@@ -2399,6 +2395,8 @@ MONDO:0009934	alveolar capillary dysplasia with misalignment of pulmonary veins	
 MONDO:0009934	alveolar capillary dysplasia with misalignment of pulmonary veins	skos:closeMatch	ICD10CM:P29.38	Other persistent fetal circulation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	persistent fetal circulation	LEXMATCH
 MONDO:0009949	pyruvate carboxylase deficiency disease	skos:closeMatch	ICD10CM:E74.4	Disorders of pyruvate metabolism and gluconeogenesis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3651	LEXMATCH
 MONDO:0009949	pyruvate carboxylase deficiency disease	skos:closeMatch	ICD10CM:E74.4	Disorders of pyruvate metabolism and gluconeogenesis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3651	LEXMATCH
+MONDO:0009954	Ramon syndrome	skos:closeMatch	ICD10CM:Q87.8	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:0070650	LEXMATCH
+MONDO:0009954	Ramon syndrome	skos:closeMatch	ICD10CM:Q87.8	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:0070650	LEXMATCH
 MONDO:0009960	inflammatory bowel disease 1	skos:closeMatch	ICD10CM:K51.8	Other ulcerative colitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	ulcerative colitis	LEXMATCH
 MONDO:0009964	short-rib thoracic dysplasia 9 with or without polydactyly	skos:closeMatch	ICD10CM:Q87.5	Other congenital malformation syndromes with other skeletal changes	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110097	LEXMATCH
 MONDO:0009964	short-rib thoracic dysplasia 9 with or without polydactyly	skos:closeMatch	ICD10CM:Q87.5	Other congenital malformation syndromes with other skeletal changes	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110097	LEXMATCH
@@ -2761,6 +2759,10 @@ MONDO:0011195	Usher syndrome type 1E	skos:closeMatch	ICD10CM:H35.5	Hereditary re
 MONDO:0011195	Usher syndrome type 1E	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0011195	LEXMATCH
 MONDO:0011195	Usher syndrome type 1E	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110833	LEXMATCH
 MONDO:0011215	osteocraniostenosis	skos:closeMatch	ICD10CM:Q78.0	Osteogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0011215	LEXMATCH
+MONDO:0011217	desmosterolosis	skos:closeMatch	ICD10CM:Q87.89	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0070654	LEXMATCH
+MONDO:0011217	desmosterolosis	skos:closeMatch	ICD10CM:Q87.89	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:0070654	LEXMATCH
+MONDO:0011217	desmosterolosis	skos:closeMatch	ICD10CM:Q87.89	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0070654	LEXMATCH
+MONDO:0011217	desmosterolosis	skos:closeMatch	ICD10CM:Q87.89	Other specified congenital malformation syndromes, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:0070654	LEXMATCH
 MONDO:0011218	autosomal recessive congenital ichthyosis 11	skos:closeMatch	ICD10CM:Q80.8	Other congenital ichthyosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060720	LEXMATCH
 MONDO:0011218	autosomal recessive congenital ichthyosis 11	skos:closeMatch	ICD10CM:Q80.8	Other congenital ichthyosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060720	LEXMATCH
 MONDO:0011223	amyotrophic lateral sclerosis type 4	skos:closeMatch	ICD10CM:G12.2	Motor neuron disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060196	LEXMATCH
