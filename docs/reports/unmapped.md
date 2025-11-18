@@ -6,8 +6,8 @@
 | [ICD11FOUNDATION](./unmapped_icd11foundation.md) | 57,874      | 0              | 5,775            | 5,773                     | 52,099                                    | 4,572                     | 47,527                      | 91.2%                     |
 | [NCIT](./unmapped_ncit.md)                       | 203,691     | 181,107        | 5,495            | 5,489                     | 17,089                                    | 3,812                     | 13,277                      | 77.7%                     |
 | [ORDO](./unmapped_ordo.md)                       | 15,841      | 6,386          | 1,468            | 1,293                     | 9,455                                     | 9,227                     | 228                         | 2.4%                      |
-| [DOID](./unmapped_doid.md)                       | 14,493      | 2,681          | 2,508            | 2,489                     | 11,810                                    | 11,663                    | 147                         | 1.2%                      |
-| [OMIM](./unmapped_omim.md)                       | 29,974      | 19,651         | 1,379            | 1,331                     | 8,948                                     | 8,857                     | 91                          | 1.0%                      |
+| [DOID](./unmapped_doid.md)                       | 14,493      | 2,681          | 2,508            | 2,489                     | 11,810                                    | 11,737                    | 73                          | 0.6%                      |
+| [OMIM](./unmapped_omim.md)                       | 29,985      | 19,654         | 1,382            | 1,331                     | 8,953                                     | 8,915                     | 38                          | 0.4%                      |
 
 `Ontology`: Name of ontology  
 `Tot terms`: Total terms in ontology  
