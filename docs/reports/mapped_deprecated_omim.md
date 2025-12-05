@@ -16,8 +16,6 @@
 | MONDO:0008126 | OMIM:164891          | MONDO:equivalentObsolete |
 | MONDO:0008204 | OMIM:168850          | MONDO:equivalentObsolete |
 | MONDO:0008415 | OMIM:181515          | MONDO:equivalentObsolete |
-| MONDO:0009327 | OMIM:140500          | MONDO:equivalentObsolete |
-| MONDO:0009327 | OMIM:234750          | MONDO:equivalentObsolete |
 | MONDO:0009455 | OMIM:242870          | MONDO:equivalentObsolete |
 | MONDO:0009535 | OMIM:247440          | MONDO:equivalentObsolete |
 | MONDO:0009654 | OMIM:252700          | MONDO:equivalentObsolete |
@@ -30,7 +28,6 @@
 | MONDO:0010394 | OMIM:300660          | MONDO:equivalentObsolete |
 | MONDO:0010470 | OMIM:300881          | MONDO:equivalentObsolete |
 | MONDO:0010527 | OMIM:301590          | MONDO:equivalentObsolete |
-| MONDO:0010553 | OMIM:302900          | MONDO:equivalentObsolete |
 | MONDO:0010601 | OMIM:306500          | MONDO:equivalentObsolete |
 | MONDO:0010666 | OMIM:309605          | MONDO:equivalentObsolete |
 | MONDO:0010804 | OMIM:600048          | MONDO:equivalentObsolete |
@@ -39,12 +36,12 @@
 | MONDO:0011543 | OMIM:605365          | MONDO:equivalentObsolete |
 | MONDO:0011893 | OMIM:607683          | MONDO:equivalentObsolete |
 | MONDO:0011910 | OMIM:607801          | MONDO:equivalentObsolete |
+| MONDO:0011961 | OMIM:608088          | MONDO:equivalentObsolete |
 | MONDO:0012461 | OMIM:610269          | MONDO:equivalentObsolete |
 | MONDO:0012560 | OMIM:610799          | MONDO:equivalentObsolete |
 | MONDO:0013596 | OMIM:614157          | MONDO:equivalentObsolete |
 | MONDO:0013617 | OMIM:614192          | MONDO:equivalentObsolete |
 | MONDO:0013701 | OMIM:614339          | MONDO:equivalentObsolete |
-| MONDO:0013935 | OMIM:614869          | MONDO:equivalentObsolete |
 | MONDO:0014849 | OMIM:616958          | MONDO:equivalentObsolete |
 | MONDO:0017996 | OMIM:615057          | MONDO:equivalentObsolete |
 | MONDO:0018138 | OMIM:103470          | MONDO:equivalentObsolete |

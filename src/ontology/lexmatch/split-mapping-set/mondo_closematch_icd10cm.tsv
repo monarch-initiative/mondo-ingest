@@ -274,7 +274,9 @@ MONDO:0001376	urinary bladder anterior wall cancer	skos:closeMatch	ICD10CM:C67.3
 MONDO:0001377	vitreous syneresis	skos:closeMatch	ICD10CM:H43.81	Vitreous degeneration	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11816	LEXMATCH
 MONDO:0001377	vitreous syneresis	skos:closeMatch	ICD10CM:H43.81	Vitreous degeneration	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11816	LEXMATCH
 MONDO:0001379	ureteric orifice cancer	skos:closeMatch	ICD10CM:C67.6	Malignant neoplasm of ureteric orifice	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11818	LEXMATCH
+MONDO:0001379	ureteric orifice cancer	skos:closeMatch	ICD10CM:C67.6	Malignant neoplasm of ureteric orifice	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:11818	LEXMATCH
 MONDO:0001379	ureteric orifice cancer	skos:closeMatch	ICD10CM:C67.6	Malignant neoplasm of ureteric orifice	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11818	LEXMATCH
+MONDO:0001379	ureteric orifice cancer	skos:closeMatch	ICD10CM:C67.6	Malignant neoplasm of ureteric orifice	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	doid:11818	LEXMATCH
 MONDO:0001380	bladder dome cancer	skos:closeMatch	ICD10CM:C67.1	Malignant neoplasm of dome of bladder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11820	LEXMATCH
 MONDO:0001380	bladder dome cancer	skos:closeMatch	ICD10CM:C67.1	Malignant neoplasm of dome of bladder	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11820	LEXMATCH
 MONDO:0001397	mononeuropathy	skos:closeMatch	ICD10CM:G58.9	Mononeuropathy, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:1188	LEXMATCH
@@ -847,12 +849,6 @@ MONDO:0004604	Hodgkin's lymphoma, lymphocytic-histiocytic predominance	skos:clos
 MONDO:0004604	Hodgkin's lymphoma, lymphocytic-histiocytic predominance	skos:closeMatch	ICD10CM:C81.4	Lymphocyte-rich Hodgkin lymphoma	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:8543	LEXMATCH
 MONDO:0004605	chronic ulcer of skin	skos:closeMatch	ICD10CM:L98.4	Non-pressure chronic ulcer of skin, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:8549	LEXMATCH
 MONDO:0004605	chronic ulcer of skin	skos:closeMatch	ICD10CM:L98.4	Non-pressure chronic ulcer of skin, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:8549	LEXMATCH
-MONDO:0004608	oropharynx cancer	skos:closeMatch	ICD10CM:C10.2	Malignant neoplasm of lateral wall of oropharynx	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:8557	LEXMATCH
-MONDO:0004608	oropharynx cancer	skos:closeMatch	ICD10CM:C10.2	Malignant neoplasm of lateral wall of oropharynx	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:8557	LEXMATCH
-MONDO:0004608	oropharynx cancer	skos:closeMatch	ICD10CM:C10.3	Malignant neoplasm of posterior wall of oropharynx	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:8557	LEXMATCH
-MONDO:0004608	oropharynx cancer	skos:closeMatch	ICD10CM:C10.3	Malignant neoplasm of posterior wall of oropharynx	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:8557	LEXMATCH
-MONDO:0004608	oropharynx cancer	skos:closeMatch	ICD10CM:C10.8	Malignant neoplasm of overlapping sites of oropharynx	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:8557	LEXMATCH
-MONDO:0004608	oropharynx cancer	skos:closeMatch	ICD10CM:C10.8	Malignant neoplasm of overlapping sites of oropharynx	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:8557	LEXMATCH
 MONDO:0004609	herpes simplex infectious disease	skos:closeMatch	ICD10CM:B00.9	Herpesviral infection, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:8566	LEXMATCH
 MONDO:0004609	herpes simplex infectious disease	skos:closeMatch	ICD10CM:B00.9	Herpesviral infection, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch-INVERSE	doid:8566	LEXMATCH
 MONDO:0004609	herpes simplex infectious disease	skos:closeMatch	ICD10CM:B00.9	Herpesviral infection, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:8566	LEXMATCH
@@ -3760,9 +3756,7 @@ MONDO:0013928	dystonia 23	skos:closeMatch	ICD10CM:G24.8	Other dystonia	semapv:Le
 MONDO:0013928	dystonia 23	skos:closeMatch	ICD10CM:G24.8	Other dystonia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0090051	LEXMATCH
 MONDO:0013929	autosomal recessive nonsyndromic hearing loss 98	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110540	LEXMATCH
 MONDO:0013929	autosomal recessive nonsyndromic hearing loss 98	skos:closeMatch	ICD10CM:H90.3	Sensorineural hearing loss, bilateral	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110540	LEXMATCH
-MONDO:0013935	Usher syndrome type 1J	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110836	LEXMATCH
 MONDO:0013935	Usher syndrome type 1J	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0013935	LEXMATCH
-MONDO:0013935	Usher syndrome type 1J	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110836	LEXMATCH
 MONDO:0013940	primary ciliary dyskinesia 18	skos:closeMatch	ICD10CM:Q34.8	Other specified congenital malformations of respiratory system	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110604	LEXMATCH
 MONDO:0013940	primary ciliary dyskinesia 18	skos:closeMatch	ICD10CM:Q34.8	Other specified congenital malformations of respiratory system	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110604	LEXMATCH
 MONDO:0013959	Charcot-Marie-Tooth disease type 4F	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110193	LEXMATCH
