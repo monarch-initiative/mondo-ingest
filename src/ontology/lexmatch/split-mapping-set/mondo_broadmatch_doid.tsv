@@ -1,2 +1,4 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0011057	cerebrovascular disorder	skos:broadMatch	DOID:0051061	stroke	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	stroke	LEXMATCH
+MONDO:0011057	cerebrovascular disorder	skos:broadMatch	DOID:0051061	stroke	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	rdfs:label	stroke	LEXMATCH
 MONDO:0100449	FLVCR1-related retinopathy with or without ataxia	skos:broadMatch	DOID:0061157	retinopathy sensory neuropathy syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasNarrowSynonym	oio:hasExactSynonym	posterior column ataxia with retinitis pigmentosa	LEXMATCH
