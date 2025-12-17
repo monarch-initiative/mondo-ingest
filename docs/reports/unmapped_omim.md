@@ -12,6 +12,7 @@
 | OMIMPS:170650 | Periodontitis, aggressive                                                                               |
 | OMIMPS:610954 | Pitt-Hopkins syndrome                                                                                   |
 | OMIMPS:614389 | Pregnancy loss, recurrent                                                                               |
+| OMIMPS:181800 | Scoliosis, isolated, susceptibility to                                                                  |
 | OMIMPS:601744 | Systemic lupus erythematosus                                                                            |
 | OMIMPS:278700 | Xeroderma pigmentosum                                                                                   |
 | OMIM:621420   | angiotensin i-converting enzyme, plasma level of                                                        |
@@ -24,6 +25,7 @@
 | OMIM:621381   | congenital disorder of glycosylation, type iicc                                                         |
 | OMIM:621343   | congenital myopathy 27                                                                                  |
 | OMIM:621433   | congenital myopathy 28 with rigid spine                                                                 |
+| OMIM:621434   | dental radicular dysplasia                                                                              |
 | OMIM:621402   | developmental delay with sleep apnea                                                                    |
 | OMIM:621384   | developmental delay with variable cardiac and renal congenital anomalies and dysmorphic facies          |
 | OMIM:621426   | drug metabolism, altered, cyp2a6-related                                                                |
@@ -60,3 +62,4 @@
 | OMIM:621386   | valence-farazi cerebellar ataxia syndrome                                                               |
 | OMIMPS:119300 | van der Woude syndrome                                                                                  |
 | OMIM:621325   | ververi-brady syndrome 2                                                                                |
+| OMIM:621435   | xeroderma pigmentosum, complementation group j                                                          |

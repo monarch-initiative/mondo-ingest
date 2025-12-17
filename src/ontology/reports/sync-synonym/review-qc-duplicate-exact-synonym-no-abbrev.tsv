@@ -5,11 +5,11 @@ synonym	mondo_id	source_id	case	synonym_type	filtered_because_this_mondo_id_alre
 5p partial monosomy syndrome	MONDO:0007404	NCIT:C34518	confirmed		
 5p partial monosomy syndrome	MONDO:0016887	icd11.foundation:1109271336	added		
 APC-related AFAP	MONDO:0016362	Orphanet:220460	added		
-APC-related AFAP	MONDO:0016613	Orphanet:247806	unconfirmed		
+APC-related AFAP	MONDO:0016613		unconfirmed		
 APC-related attenuated FAP	MONDO:0016362	Orphanet:220460	added		
-APC-related attenuated FAP	MONDO:0016613	Orphanet:247806	unconfirmed		
+APC-related attenuated FAP	MONDO:0016613		unconfirmed		
 APC-related attenuated familial polyposis coli	MONDO:0016362	Orphanet:220460	added		
-APC-related attenuated familial polyposis coli	MONDO:0016613	Orphanet:247806	unconfirmed		
+APC-related attenuated familial polyposis coli	MONDO:0016613		unconfirmed		
 Abdominal obesity-metabolic syndrome	MONDO:0000816	OMIMPS:605552	added		
 Abdominal obesity-metabolic syndrome	MONDO:0011566		unconfirmed		
 Accessory tricuspid valve tissue	MONDO:0009144	icd11.foundation:307157712	added		
@@ -26,8 +26,7 @@ Acute myocardial infarction	MONDO:0005068	ICD10CM:I21	added
 Acute myocarditis	MONDO:0002815	ICD10WHO:I40	added		
 Acute myocarditis	MONDO:0004496	ICD10CM:I40	added		
 Addison's disease	MONDO:0015129	DOID:13774	added		
-Addison's disease	MONDO:0100480	DOID:13774	unconfirmed		
-Addison's disease	MONDO:0100480	NCIT:C26689	unconfirmed		
+Addison's disease	MONDO:0100480		unconfirmed		
 Adenocarcinoma	MONDO:0003193	NCIT:C27813	added		
 Adenocarcinoma	MONDO:0005028	NCIT:C4025	added		
 Adenocarcinoma	MONDO:0005036	NCIT:C4004	added		
@@ -61,7 +60,7 @@ Atelencephaly	MONDO:0035450	icd11.foundation:1740361952	added
 Au-Kline syndrome	MONDO:0014700	OMIM:616580	confirmed		
 Au-Kline syndrome	MONDO:0018681	Orphanet:453499	added		
 Au-Kline syndrome	MONDO:0018681	Orphanet:453499	added		MONDO:0014700
-Autoinflammation, panniculitis, and dermatosis syndrome	MONDO:0014912	OMIM:617099	unconfirmed		
+Autoinflammation, panniculitis, and dermatosis syndrome	MONDO:0014912		unconfirmed		
 Autoinflammation, panniculitis, and dermatosis syndrome	MONDO:0975955	OMIMPS:617099	added		
 Axenfeld syndrome	MONDO:0019187	DOID:14686	confirmed		
 Axenfeld syndrome	MONDO:0019187	Orphanet:782	confirmed		
@@ -83,7 +82,6 @@ Buckley syndrome	MONDO:0007818	Orphanet:2314	confirmed
 Buckley syndrome	MONDO:0018037	icd11.foundation:223461798	added		
 Buphthalmus	MONDO:0009277	Orphanet:98976	added		
 Buphthalmus	MONDO:0020366		unconfirmed		
-CTCF-related neurodevelopmental disorder	MONDO:0014213	Orphanet:363611	added		MONDO:0700294
 Carey-Fineman-Ziter syndrome	MONDO:0031415	OMIMPS:254940	added		
 Carey-Fineman-Ziter syndrome	MONDO:0031415	Orphanet:1358	added		
 Carey-Fineman-Ziter syndrome	MONDO:0031415	icd11.foundation:1784462638	added		
@@ -193,9 +191,10 @@ Guillain Barre syndrome	MONDO:0016218	NCIT:C116345	confirmed
 Guillain Barre syndrome	MONDO:0020347	icd11.foundation:1196874419	added		
 Gynecomastia	MONDO:0001100	ICD10CM:N62	added		
 Gynecomastia	MONDO:0001571	NCIT:C3073	added		
-Hallervorden-Spatz disease	MONDO:0009319	DOID:3981	confirmed	http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
-Hallervorden-Spatz disease	MONDO:0009319	OMIM:234200	confirmed	http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
-Hallervorden-Spatz disease	MONDO:0018307	icd11.foundation:440483530	added	http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+Hallervorden-Spatz disease	MONDO:0009319	DOID:3981	confirmed	http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+Hallervorden-Spatz disease	MONDO:0009319	ICD10CM:G23.0	confirmed	http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+Hallervorden-Spatz disease	MONDO:0009319	OMIM:234200	confirmed	http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
+Hallervorden-Spatz disease	MONDO:0018307	icd11.foundation:440483530	added	http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED|http://purl.obolibrary.org/obo/mondo#DEPRECATED	
 Hereditary acrokeratotic poikiloderma	MONDO:0008260	icd11.foundation:726317303	added		
 Hereditary acrokeratotic poikiloderma	MONDO:0017365	Orphanet:2907	added		
 Heritable pulmonary arterial hypertension	MONDO:0001999	ICD10CM:I27.0	added		
@@ -222,8 +221,6 @@ Indolent systemic mastocytosis	MONDO:0016586	ICD10CM:D47.02	added
 Indolent systemic mastocytosis	MONDO:0020331	NCIT:C9286	added		
 Indolent systemic mastocytosis	MONDO:0020331	Orphanet:98848	added		
 Indolent systemic mastocytosis	MONDO:0020331	icd11.foundation:353283231	added		
-Isaacs-Mertens syndrome	MONDO:0008047	OMIM:160120	unconfirmed		
-Isaacs-Mertens syndrome	MONDO:0008047	Orphanet:84142	unconfirmed		
 Isaacs-Mertens syndrome	MONDO:0008047	https://www.ncbi.nlm.nih.gov/books/NBK25442/	unconfirmed		
 Isaacs-Mertens syndrome	MONDO:0019399	Orphanet:84142	added		
 Isaacs-Mertens syndrome	MONDO:0019399	icd11.foundation:646523932	added		
@@ -462,6 +459,7 @@ Westphal disease	MONDO:0016122	icd11.foundation:577112387	added
 Westphal disease	MONDO:0016122	icd11.foundation:577112387	added		MONDO:0042980
 Westphal disease	MONDO:0042980	GTR:AN0099343	unconfirmed		
 Westphal disease	MONDO:0042980	MESH:C536694	unconfirmed		
+Wieacker-Wolff syndrome	MONDO:0010758	DOID:0060815	confirmed		
 Wieacker-Wolff syndrome	MONDO:0010758	MONDO:Lexical	unconfirmed		
 Wieacker-Wolff syndrome	MONDO:0010758	OMIM:314580	confirmed		
 Wieacker-Wolff syndrome	MONDO:0010758	Orphanet:3454	confirmed		
@@ -531,9 +529,11 @@ aortic valve stenosis	MONDO:0032783	OMIM:618496	added		MONDO:0042981
 aortic valve stenosis	MONDO:0042981	DOID:1712	added		
 aortopulmonary septal defect	MONDO:0016077	icd11.foundation:1988278118	added		
 aortopulmonary septal defect	MONDO:0021902	GARD:0000745	unconfirmed		
+aortopulmonary septal defect	MONDO:0021902	ICD10CM:Q21.4	confirmed		
 aortopulmonary septal defect	MONDO:0021902	NCIT:C101050	confirmed		
 aortopulmonary window	MONDO:0016077	icd11.foundation:1988278118	added		
 aortopulmonary window	MONDO:0016077	icd11.foundation:1988278118	added		MONDO:0021902
+aortopulmonary window	MONDO:0021902	ICD10CM:Q21.4	confirmed		
 aortopulmonary window	MONDO:0021902	NCIT:C101050	confirmed		
 arteriolosclerosis	MONDO:0005311	ICD10CM:I70	added		
 arteriolosclerosis	MONDO:0005311	ICD10CM:I70	added		MONDO:0006658
@@ -590,7 +590,7 @@ benign neoplasm of epiglottis	MONDO:0002354	ICD10CM:D14.1	added		MONDO:0021446
 benign vascular tumor	MONDO:0024286	DOID:60006	added		MONDO:0971115
 biliary malformation with renal tubular insufficiency	MONDO:0008822	OMIM:208085	added		
 biliary malformation with renal tubular insufficiency	MONDO:0008822	OMIM:208085	added		MONDO:0008868
-biliary malformation with renal tubular insufficiency	MONDO:0008868	OMIM:210550	unconfirmed		
+biliary malformation with renal tubular insufficiency	MONDO:0008868		unconfirmed		
 bipolar I disorder	MONDO:0001866	DOID:14042	confirmed		
 bipolar I disorder	MONDO:0004985	ICD10CM:F31	added		
 bipolar I disorder	MONDO:0004985	ICD10CM:F31	added		MONDO:0001866
@@ -598,6 +598,7 @@ branched-chain ketoaciduria	MONDO:0009563	Orphanet:511	confirmed
 branched-chain ketoaciduria	MONDO:0023691	OMIM:248600	added		
 breast cancer	MONDO:0007254	DOID:1612	confirmed		
 breast cancer	MONDO:0007254	MONDO:patterns/location	unconfirmed		
+breast cancer	MONDO:0007254	icd11.foundation:1047754165	confirmed		
 breast cancer	MONDO:0016419	OMIM:114480	added		
 breast cancer	MONDO:0016419	OMIM:114480	added		MONDO:0007254
 bronchogenic carcinoma	MONDO:0002806	NCIT:C35875	confirmed		
@@ -640,6 +641,7 @@ carcinoma of vagina	MONDO:0015867	NCIT:C3917	confirmed
 cardiac infarction	MONDO:0004781	icd11.foundation:1334938734	added		
 cardiac infarction	MONDO:0005068	ICD10CM:I21	added		
 celiac artery compression syndrome	MONDO:0004914	DOID:9892	confirmed		
+celiac artery compression syndrome	MONDO:0004914	ICD10CM:I77.4	confirmed		
 celiac artery compression syndrome	MONDO:0004914	ICD9CM:447.4	unconfirmed		
 celiac artery compression syndrome	MONDO:0017388	icd11.foundation:1666443751	added		
 childhood autism	MONDO:0005258	icd11.foundation:437815624	added		
@@ -673,6 +675,9 @@ congenital nephrotic syndrome	MONDO:0002350	DOID:2590	confirmed
 congenital nephrotic syndrome	MONDO:0002350	NCIT:C35337	confirmed		
 congenital nephrotic syndrome	MONDO:0005377	ICD10CM:N04	added		
 constitutional mismatch repair deficiency syndrome	MONDO:0010159	OMIM:276300	added		
+constitutional mismatch repair deficiency syndrome	MONDO:0031219	DOID:0112182	confirmed		
+constitutional mismatch repair deficiency syndrome	MONDO:0031219	NCIT:C130202	confirmed		
+constitutional mismatch repair deficiency syndrome	MONDO:0031219	Orphanet:252202	confirmed		
 constitutional mismatch repair deficiency syndrome	MONDO:0031219	https://www.clinicalgenome.org/working-groups/clinical-domain/hereditary-cancer/	unconfirmed		
 cortical hyperostosis with hyperphosphatemia	MONDO:0100251	DOID:0111063	confirmed		
 cortical hyperostosis with hyperphosphatemia	MONDO:0100252	OMIM:211900	added		
@@ -767,6 +772,7 @@ extrinsic asthma	MONDO:0850284	DOID:0080811	added
 eyelid benign neoplasm	MONDO:0002235	DOID:2173	added		
 eyelid benign neoplasm	MONDO:0021605	MONDO:patterns/location	unconfirmed		
 facioscapulohumeral muscular dystrophy	MONDO:0001347	DOID:11727	confirmed		
+facioscapulohumeral muscular dystrophy	MONDO:0001347	ICD10CM:G71.02	confirmed		
 facioscapulohumeral muscular dystrophy	MONDO:0001347	NCIT:C84704	confirmed		
 facioscapulohumeral muscular dystrophy	MONDO:0001347	OMIMPS:158900	confirmed		
 facioscapulohumeral muscular dystrophy	MONDO:0001347	Orphanet:269	confirmed		
@@ -797,6 +803,7 @@ fetal circulation	MONDO:0022430	icd11.foundation:346808536	added
 fibroadenoma of breast	MONDO:0000620	ICD10CM:D24	added		
 fibroadenoma of breast	MONDO:0002056	DOID:1618	confirmed		
 fibroadenoma of breast	MONDO:0002056	NCIT:C3744	confirmed		
+fibroadenoma of breast	MONDO:0002056	icd11.foundation:143326763	confirmed		
 fibrocystic disease	MONDO:0005219	NCIT:C3039	confirmed		
 fibrocystic disease	MONDO:0009061	icd11.foundation:514403112	added		
 fibrocystic mastopathy	MONDO:0004808	ICD10CM:N60	added		
@@ -849,6 +856,7 @@ hyperostosis with hyperphosphatemia	MONDO:0100251	DOID:0111063	confirmed
 hyperostosis with hyperphosphatemia	MONDO:0100252	OMIM:211900	added		
 hyperpiesia	MONDO:0001134	icd11.foundation:761947693	added		
 hyperpiesia	MONDO:0005044	DOID:10763	confirmed		
+hypersomnia	MONDO:0005466	ICD10CM:G47.1	confirmed		
 hypersomnia	MONDO:0005466	MONDO:ambiguous	unconfirmed		
 hypersomnia	MONDO:0005466	NCIT:C78346	confirmed		
 hypersomnia	MONDO:0018044	icd11.foundation:631826564	added		
@@ -879,6 +887,7 @@ idiopathic osteoporosis	MONDO:0005298	icd11.foundation:2113001430	added
 idiopathic osteoporosis	MONDO:0019409	DOID:12559	confirmed		
 infantile autism	MONDO:0005258	icd11.foundation:437815624	added		
 infantile autism	MONDO:0005260	DOID:12849	confirmed		
+infantile autism	MONDO:0005260	ICD10CM:F84.0	confirmed		
 infectious thyroiditis	MONDO:0001947	DOID:14350	confirmed		
 infectious thyroiditis	MONDO:0001949	icd11.foundation:737694495	added		
 inflammation of tonsil	MONDO:0001039		unconfirmed		
@@ -950,7 +959,7 @@ malignant struma ovarii	MONDO:0003332	DOID:5208	added
 malignant struma ovarii	MONDO:0006980	icd11.foundation:185581438	added		
 malignant struma ovarii	MONDO:0006980	icd11.foundation:185581438	added		MONDO:0003332
 malignant thymoma	MONDO:0006451	DOID:3284	confirmed		
-malignant thymoma	MONDO:0006451	Orphanet:99868	unconfirmed		
+malignant thymoma	MONDO:0006451	NCIT:C7612	confirmed		
 malignant thymoma	MONDO:0006456	icd11.foundation:33869057	added		
 maple syrup urine disease	MONDO:0009563	DOID:9269	confirmed		
 maple syrup urine disease	MONDO:0009563	MONDO:Lexical	unconfirmed		
@@ -993,7 +1002,7 @@ multi-infarct dementia	MONDO:0043224	MESH:D015161	unconfirmed
 multi-infarct dementia	MONDO:0043224	NCIT:C34522	confirmed		
 multi-infarct dementia	MONDO:0043224	icd11.foundation:645643099	confirmed		
 multiminicore myopathy	MONDO:0009712	OMIM:255320	added		MONDO:0018948
-multiple intestinal atresia	MONDO:0009465	Orphanet:2300	unconfirmed		
+multiple intestinal atresia	MONDO:0009465		unconfirmed		
 multiple intestinal atresia	MONDO:0800030	DOID:14671	added		
 multiple intestinal atresia	MONDO:0800030	DOID:14671	added		MONDO:0009465
 muscular dystrophy, oculopharyngeal	MONDO:0008116	DOID:11719	confirmed		
@@ -1055,9 +1064,9 @@ pagetoid neuroskeletal syndrome	MONDO:0000507	Orphanet:52430	confirmed
 pagetoid neuroskeletal syndrome	MONDO:0008178	OMIM:167320	added		
 pancreatic cancer	MONDO:0009831	DOID:1793	confirmed		
 pancreatic cancer	MONDO:0009831	https://orcid.org/0000-0002-6601-2165	unconfirmed		
+pancreatic cancer	MONDO:0009831	icd11.foundation:542147910	confirmed		
 pancreatic cancer	MONDO:0015278	OMIM:260350	added		
 pancreatic carcinoma	MONDO:0005192	DOID:4905	confirmed		
-pancreatic carcinoma	MONDO:0005192	NCIT:C3850	unconfirmed		
 pancreatic carcinoma	MONDO:0015278	OMIM:260350	added		
 partial atrioventricular canal defect	MONDO:0015275	Orphanet:1330	confirmed		
 partial atrioventricular canal defect	MONDO:0020437	icd11.foundation:1159570489	added		
