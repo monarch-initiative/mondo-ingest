@@ -469,7 +469,7 @@ SKIP_REFRESH=false
 
 $(TMPDIR)/mondo_repo_built: .FORCE
 	@if [ ! -f $@ ]; then \
-		$(call build_mondo, $@); \
+		$(call build_mondo,$(abspath $@)); \
 	elif [ "$(SKIP_REFRESH)" != "true" ]; then \
 		current_hash=$$(cat $@); \
 		cd $(TMPDIR)/mondo; \
@@ -477,7 +477,7 @@ $(TMPDIR)/mondo_repo_built: .FORCE
 		latest_hash=$$(git rev-parse origin/master); \
 		if [ ! "$$current_hash" = "$$latest_hash" ]; then \
 			cd .. && mv mondo mondo-bak && mv mondo_repo_built mondo_repo_built-bak; \
-			cd .. && $(call build_mondo, $@); \
+			cd .. && $(call build_mondo,$(abspath $@)); \
 			rm -rf $(TMPDIR)/mondo-bak $(TMPDIR)/mondo_repo_built-bak; \
 		fi; \
 	fi
