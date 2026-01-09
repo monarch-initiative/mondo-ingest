@@ -7,8 +7,11 @@
 | OMIMPS:616414 | Autoinflammation and autoimmunity, systemic, with immune dysregulation                                  |
 | OMIMPS:131300 | Camurati-Engelmann disease                                                                              |
 | OMIMPS:616117 | Cardiac conduction disease with or without cardiomyoopathy                                              |
+| OMIMPS:125400 | Dentin dysplasia, type I                                                                                |
+| OMIMPS:608902 | Drug metabolism, altered (select examples)                                                              |
 | OMIMPS:268100 | Enhanced S-cone syndrome                                                                                |
 | OMIMPS:613024 | Follicular lymphoma, susceptibility to                                                                  |
+| OMIMPS:256030 | Nemaline myopathy                                                                                       |
 | OMIMPS:170650 | Periodontitis, aggressive                                                                               |
 | OMIMPS:610954 | Pitt-Hopkins syndrome                                                                                   |
 | OMIMPS:614389 | Pregnancy loss, recurrent                                                                               |
@@ -18,6 +21,7 @@
 | OMIM:621420   | angiotensin i-converting enzyme, plasma level of                                                        |
 | OMIM:621417   | apolipoprotein a-ii deficiency                                                                          |
 | OMIM:621409   | autoinflammation and autoimmunity, systemic, with immune dysregulation 2                                |
+| OMIM:621452   | basal ganglia calcification, idiopathic, 11, autosomal recessive                                        |
 | OMIM:621414   | brain small vessel disease 2b, autosomal recessive                                                      |
 | OMIM:621394   | brain small vessel disease 6 with leukoencephalopathy                                                   |
 | OMIM:621367   | cardiac conduction disease with or without cardiomyopathy 2                                             |
@@ -26,6 +30,7 @@
 | OMIM:621343   | congenital myopathy 27                                                                                  |
 | OMIM:621433   | congenital myopathy 28 with rigid spine                                                                 |
 | OMIM:621434   | dental radicular dysplasia                                                                              |
+| OMIM:621440   | dentin dysplasia, type 1b                                                                               |
 | OMIM:621402   | developmental delay with sleep apnea                                                                    |
 | OMIM:621384   | developmental delay with variable cardiac and renal congenital anomalies and dysmorphic facies          |
 | OMIM:621426   | drug metabolism, altered, cyp2a6-related                                                                |
@@ -40,17 +45,24 @@
 | OMIM:621375   | immune dysregulation, neurodevelopmental defects, and colitis                                           |
 | OMIM:621405   | immunodeficiency 134 (epstein-barr virus-specific)                                                      |
 | OMIM:621333   | infection-induced acute-onset axonal neuropathy                                                         |
+| OMIM:621457   | intellectual developmental disorder with seizures and dysmorphic facies                                 |
 | OMIM:621415   | intellectual developmental disorder, autosomal dominant 77                                              |
 | OMIM:620401   | intellectual developmental disorder, autosomal recessive 84                                             |
 | OMIM:621424   | leukoencephalopathy without lacunae, adult-onset                                                        |
+| OMIM:621436   | microcephaly, progressive, with simplified gyral pattern and cerebellar hypoplasia                      |
 | OMIM:621431   | mitochondrial complex 4 deficiency, nuclear type 24                                                     |
 | OMIM:621373   | molybdenum cofactor deficiency, type b2                                                                 |
 | OMIM:621379   | neurocardiorenal malformation syndrome                                                                  |
 | OMIM:621382   | neurodevelopmental disorder with behavioral abnormalities and childhood-onset spastic paraplegia        |
 | OMIM:621390   | neurodevelopmental disorder with early-onset seizures, facial dysmorphism, and behavioral abnormalities |
 | OMIM:621354   | neurodevelopmental disorder with growth impairment, quadriparesis, and poor or absent speech            |
+| OMIM:621455   | neurodevelopmental disorder with hypotonia, epilepsy, and absent speech                                 |
 | OMIM:621372   | neurodevelopmental disorder with speech delay and behavioral abnormalities                              |
+| OMIM:621456   | neurodevelopmental disorder with speech delay, movement abnormalities, and seizures                     |
 | OMIM:621393   | neurodevelopmental disorder with structural brain abnormalities and craniofacial abnormalities          |
+| OMIM:621439   | neutropenia, severe congenital, 12, autosomal recessive                                                 |
+| OMIM:621446   | oculopharyngodistal myopathy 5                                                                          |
+| OMIM:621449   | osteopetrosis, autosomal dominant 4                                                                     |
 | OMIM:621421   | ramond-elliott neurodevelopmental syndrome                                                              |
 | OMIM:621236   | rhabdomyolysis, susceptibility to, 2                                                                    |
 | OMIM:621407   | schizophrenia 17                                                                                        |

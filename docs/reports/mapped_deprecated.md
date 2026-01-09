@@ -2,11 +2,11 @@
 | Ontology                                                  |   Tot deprecated in Mondo |
 |:----------------------------------------------------------|--------------------------:|
 | [NCIT](./mapped_deprecated_ncit.md)                       |                         6 |
-| [OMIM](./mapped_deprecated_omim.md)                       |                        48 |
+| [OMIM](./mapped_deprecated_omim.md)                       |                        47 |
 | [ICD11FOUNDATION](./mapped_deprecated_icd11foundation.md) |                         2 |
 | [ORDO](./mapped_deprecated_ordo.md)                       |                       175 |
-| [DOID](./mapped_deprecated_doid.md)                       |                         1 |
 | [ICD10CM](./mapped_deprecated_icd10cm.md)                 |                         0 |
+| [DOID](./mapped_deprecated_doid.md)                       |                         0 |
 | [ICD10WHO](./mapped_deprecated_icd10who.md)               |                         0 |
 
 `Ontology`: Name of ontology    

@@ -46,13 +46,25 @@ OMIM:621431	mitochondrial complex 4 deficiency, nuclear type 24	False	False	Fals
 OMIM:621433	congenital myopathy 28 with rigid spine	False	False	False
 OMIM:621434	dental radicular dysplasia	False	False	False
 OMIM:621435	xeroderma pigmentosum, complementation group j	False	False	False
+OMIM:621436	microcephaly, progressive, with simplified gyral pattern and cerebellar hypoplasia	False	False	False
+OMIM:621439	neutropenia, severe congenital, 12, autosomal recessive	False	False	False
+OMIM:621440	dentin dysplasia, type 1b	False	False	False
+OMIM:621446	oculopharyngodistal myopathy 5	False	False	False
+OMIM:621449	osteopetrosis, autosomal dominant 4	False	False	False
+OMIM:621452	basal ganglia calcification, idiopathic, 11, autosomal recessive	False	False	False
+OMIM:621455	neurodevelopmental disorder with hypotonia, epilepsy, and absent speech	False	False	False
+OMIM:621456	neurodevelopmental disorder with speech delay, movement abnormalities, and seizures	False	False	False
+OMIM:621457	intellectual developmental disorder with seizures and dysmorphic facies	False	False	False
 OMIMPS:119300	van der Woude syndrome	False	False	False
+OMIMPS:125400	Dentin dysplasia, type I	False	False	False
 OMIMPS:131300	Camurati-Engelmann disease	False	False	False
 OMIMPS:170650	Periodontitis, aggressive	False	False	False
 OMIMPS:181800	Scoliosis, isolated, susceptibility to	False	False	False
+OMIMPS:256030	Nemaline myopathy	False	False	False
 OMIMPS:268100	Enhanced S-cone syndrome	False	False	False
 OMIMPS:278700	Xeroderma pigmentosum	False	False	False
 OMIMPS:601744	Systemic lupus erythematosus	False	False	False
+OMIMPS:608902	Drug metabolism, altered (select examples)	False	False	False
 OMIMPS:610954	Pitt-Hopkins syndrome	False	False	False
 OMIMPS:613024	Follicular lymphoma, susceptibility to	False	False	False
 OMIMPS:614389	Pregnancy loss, recurrent	False	False	False
@@ -1262,6 +1274,7 @@ OMIM:607920		False	False	True
 OMIM:608001		False	False	True
 OMIM:608032		False	False	True
 OMIM:608056		False	False	True
+OMIM:608088		False	False	True
 OMIM:608128		False	False	True
 OMIM:608297	removed from database	False	False	True
 OMIM:608319		False	False	True
@@ -1765,7 +1778,7 @@ OMIM:118440	CCK	False	True	False
 OMIM:118444	CCKAR	False	True	False
 OMIM:118445	CCKBR	False	True	False
 OMIM:118455	CYP7A1	False	True	False
-OMIM:118457	CCI	False	True	False
+OMIM:118457	cholesterol crystallization inhibitor	False	True	False
 OMIM:118470	CETP	False	True	False
 OMIM:118485	CYP11A1	False	True	False
 OMIM:118490	CHAT	False	True	False
@@ -3856,7 +3869,7 @@ OMIM:238331	DLD	False	True	False
 OMIM:243305	INVS	False	True	False
 OMIM:246530	LTC4S	False	True	False
 OMIM:246600	PNLIP	False	True	False
-OMIM:247980	LIPB	False	True	False
+OMIM:247980	lipase b, lysosomal acid	False	True	False
 OMIM:248610	DBT	False	True	False
 OMIM:248611	BCKDHB	False	True	False
 OMIM:251170	MVK	False	True	False
@@ -4602,6 +4615,7 @@ OMIM:301157	TCEAL8	False	True	False
 OMIM:301158	TCEAL9	False	True	False
 OMIM:301159	BCLAF3	False	True	False
 OMIM:301160	CXORF65	False	True	False
+OMIM:301161	SYAP1	False	True	False
 OMIM:301300	ALAS2	False	True	False
 OMIM:301770	ARR3	False	True	False
 OMIM:301780	ARSC2	False	True	False
@@ -11739,7 +11753,7 @@ OMIM:608767	FEM1C	False	True	False
 OMIM:608769	PDHX	False	True	False
 OMIM:608770	DLAT	False	True	False
 OMIM:608771	MED13L	False	True	False
-OMIM:608772	invasion inhibitory protein, 45-kd	False	True	False
+OMIM:608772	MIIP	False	True	False
 OMIM:608773	TPPP	False	True	False
 OMIM:608774	ANKK1	False	True	False
 OMIM:608775	HAUS1	False	True	False
@@ -12615,7 +12629,7 @@ OMIM:609911	SLC25A47	False	True	False
 OMIM:609912	KAT8	False	True	False
 OMIM:609914	AQP11	False	True	False
 OMIM:609916	AZI2	False	True	False
-OMIM:609917	PRNPIP	False	True	False
+OMIM:609917	ERI3	False	True	False
 OMIM:609920	CDH22	False	True	False
 OMIM:609921	LRP10	False	True	False
 OMIM:609922	EHBP1	False	True	False
@@ -14801,7 +14815,7 @@ OMIM:612773	BCAM	False	True	False
 OMIM:612774	TAS2R46	False	True	False
 OMIM:612778	SETD2	False	True	False
 OMIM:612779	DPYD	False	True	False
-OMIM:612784	huntingtin-interacting protein k	False	True	False
+OMIM:612784	HYPK	False	True	False
 OMIM:612786	CCNY	False	True	False
 OMIM:612787	PUS10	False	True	False
 OMIM:612788	FOXQ1	False	True	False
@@ -19455,6 +19469,18 @@ OMIM:621430	FIRRM	False	True	False
 OMIM:621432	WDR64	False	True	False
 OMIM:621437	SH3D21	False	True	False
 OMIM:621438	GRIP2	False	True	False
+OMIM:621441	SPATA32	False	True	False
+OMIM:621442	CORO6	False	True	False
+OMIM:621443	LIMD2	False	True	False
+OMIM:621444	TBC1D31	False	True	False
+OMIM:621445	EPCIP	False	True	False
+OMIM:621447	ZNF787	False	True	False
+OMIM:621448	CYRIA	False	True	False
+OMIM:621450	ARPC5L	False	True	False
+OMIM:621451	SNHG12	False	True	False
+OMIM:621453	MVB12A	False	True	False
+OMIM:621454	MVB12B	False	True	False
+OMIM:621459	TMEM217	False	True	False
 OMIMPS:151623	Li-Fraumeni syndrome	False	True	False
 OMIM:173500		False	True	True
 OMIM:173540		False	True	True
@@ -19751,7 +19777,7 @@ OMIM:125250	optic atrophy plus syndrome	True	False	False
 OMIM:125310	cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 1	True	False	False
 OMIM:125350	failure of tooth eruption, primary	True	False	False
 OMIM:125370	dentatorubral-pallidoluysian atrophy	True	False	False
-OMIM:125400	dentin dysplasia, type 1	True	False	False
+OMIM:125400	dentin dysplasia, type 1a	True	False	False
 OMIM:125420	dentin dysplasia, type 2	True	False	False
 OMIM:125440	dentin dysplasia with sclerotic bones	True	False	False
 OMIM:125480	major affective disorder 1	True	False	False
@@ -22785,7 +22811,7 @@ OMIM:607239	deafness, autosomal recessive 33	True	False	False
 OMIM:607248	glioma susceptibility 4	True	False	False
 OMIM:607250	spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 1	True	False	False
 OMIM:607258	hypercalciuria, absorptive, 1	True	False	False
-OMIM:607259	spastic paraplegia 7, autosomal recessive	True	False	False
+OMIM:607259	spastic paraplegia 7, autosomal recessive, with or without cerebellar ataxia	True	False	False
 OMIM:607271	caspase 8 deficiency	True	False	False
 OMIM:607277	asthma-related traits, susceptibility to, 1	True	False	False
 OMIM:607278	osteofibrous dysplasia, susceptibility to	True	False	False
@@ -27813,7 +27839,7 @@ OMIMPS:115210	Familial restrictive cardiomyopathy	True	False	False
 OMIMPS:115430	Carpal tunnel syndrome	True	False	False
 OMIMPS:116200	Cataract	True	False	False
 OMIMPS:116860	Cerebral cavernous malformations	True	False	False
-OMIMPS:117000	Myopathy, congenital (see also nemaline myopathy ({PS161800}), myofibrillar myopathy ({PS601419}), and centronuclear myopathy ({PS160150})	True	False	False
+OMIMPS:117000	Myopathy, congenital (see also nemaline myopathy ({PS256030}), myofibrillar myopathy ({PS601419}), and centronuclear myopathy ({PS160150})	True	False	False
 OMIMPS:118100	Klippel-Feil syndrome	True	False	False
 OMIMPS:118220	Charcot-Marie-Tooth disease	True	False	False
 OMIMPS:118450	Alagille syndrome	True	False	False
@@ -27916,7 +27942,7 @@ OMIMPS:160700	Myopia	True	False	False
 OMIMPS:160900	Myotonic dystrophy	True	False	False
 OMIMPS:161050	Nail disorder, nonsyndromic congenital	True	False	False
 OMIMPS:161400	Narcolepsy	True	False	False
-OMIMPS:161800	Nemaline myopathy	True	False	False
+OMIMPS:161800		True	False	False
 OMIMPS:161950	IgA nephropathy	True	False	False
 OMIMPS:162000	Tubulointerstitial kidney disease	True	False	False
 OMIMPS:162091	Schwannomatosis	True	False	False
@@ -28413,7 +28439,6 @@ OMIM:601563		True	False	True
 OMIM:605365		True	False	True
 OMIM:607683		True	False	True
 OMIM:607801		True	False	True
-OMIM:608088		True	False	True
 OMIM:610269		True	False	True
 OMIM:610799		True	False	True
 OMIM:613740		True	False	True

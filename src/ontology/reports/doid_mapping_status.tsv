@@ -58,6 +58,7 @@ DOID:0061221	pheochromocytoma/paraganglioma syndrome 6	False	False	False
 DOID:0061222	pheochromocytoma/paraganglioma syndrome 7	False	False	False
 DOID:0061223	epidermolytic hyperkeratosis 2A	False	False	False
 DOID:0061224	Majeed syndrome	False	False	False
+DOID:0061225	interleukin-1 receptor antagonist deficiency	False	False	False
 DOID:0070564	dialysis disequilibrium syndrome	False	False	False
 DOID:0070622	ring chromosome 20 syndrome	False	False	False
 DOID:0070635	cardiovascular-kidney-metabolic syndrome	False	False	False
@@ -74,6 +75,9 @@ DOID:0070661	muscle dysmorphic disorder	False	False	False
 DOID:0070662	subcutaneous panniculitis-like T-cell lymphoma	False	False	False
 DOID:0070663	soft tissue sarcoma	False	False	False
 DOID:0070664	oropharyngeal squamous cell carcinoma	False	False	False
+DOID:0070665	lipofibromatosis	False	False	False
+DOID:0070666	infantile myofibromatosis 1	False	False	False
+DOID:0070667	infantile myofibromatosis 2	False	False	False
 DOID:0111368	cholesterol-ester transfer protein deficiency	False	False	False
 DOID:0111797	autosomal recessive congenital nystagmus	False	False	False
 DOID:146	papilledema	False	False	False
@@ -85,7 +89,6 @@ DOID:3972	poorly differentiated thyroid carcinoma	False	False	False
 DOID:4668	congenital kyphosis	False	False	False
 DOID:5154	borna disease	False	False	False
 DOID:9373	postural kyphosis	False	False	False
-DOID:2214	obsolete inherited blood coagulation disease	False	False	True
 DOID:0040003	benzylpenicillin allergy	False	True	False
 DOID:0040004	amoxicillin allergy	False	True	False
 DOID:0040005	ceftriaxone allergy	False	True	False
@@ -570,6 +573,7 @@ DOID:0110631	obsolete arthrogryposis due to muscular dystrophy	False	True	True
 DOID:0110638	obsolete congenital muscular dystrophy merosin-positive	False	True	True
 DOID:0110748	obsolete type 1 diabetes mellitus 9	False	True	True
 DOID:0110762	obsolete hereditary spastic paraplegia 1	False	True	True
+DOID:0110836	obsolete Usher syndrome type 1J	False	True	True
 DOID:0111201	obsolete distal hereditary motor neuronopathy type 7A	False	True	True
 DOID:0111204	obsolete distal hereditary motor neuronopathy type 5A	False	True	True
 DOID:0111208	obsolete distal hereditary motor neuronopathy type 2A	False	True	True
@@ -1361,6 +1365,7 @@ DOID:2179	obsolete diabetes mellitus insulin dependent type, uncontrolled, with 
 DOID:2180	obsolete diabetic oculopathy	False	True	True
 DOID:2186	obsolete macrocephaly	False	True	True
 DOID:2212	obsolete coagulation protein disease	False	True	True
+DOID:2214	obsolete inherited blood coagulation disease	False	True	True
 DOID:2225	obsolete megakaryocytic tumor	False	True	True
 DOID:2227	obsolete malignant neoplasm of lymphatic and hemopoietic tissue	False	True	True
 DOID:2230	obsolete hemophilia	False	True	True
@@ -4702,7 +4707,7 @@ DOID:0070292	primary autosomal recessive microcephaly 9	True	False	False
 DOID:0070293	primary autosomal recessive microcephaly 2 with or without cortical malformations	True	False	False
 DOID:0070294	primary autosomal recessive microcephaly 10	True	False	False
 DOID:0070295	primary autosomal dominant microcephaly 18	True	False	False
-DOID:0070296	primary autosomal recessive microcephaly	True	False	False
+DOID:0070296	autosomal recessive primary microcephaly	True	False	False
 DOID:0070297	primary microcephaly	True	False	False
 DOID:0070298	multiple epiphyseal dysplasia 2	True	False	False
 DOID:0070299	multiple epiphyseal dysplasia 5	True	False	False
@@ -13210,7 +13215,7 @@ DOID:6752	internal auditory canal lipoma	True	False	False
 DOID:6755	amyloid tumor	True	False	False
 DOID:6758	chest wall lymphoma	True	False	False
 DOID:6759	bone lymphoma	True	False	False
-DOID:676	juvenile rheumatoid arthritis	True	False	False
+DOID:676	systemic juvenile rheumatoid arthritis	True	False	False
 DOID:6760	lung lymphoma	True	False	False
 DOID:6762	sternum lymphoma	True	False	False
 DOID:6774	polyembryoma of the ovary	True	False	False
@@ -14493,7 +14498,6 @@ DOID:0061095	obsolete immunodeficiency 130	True	True	True
 DOID:0080191	obsolete PTEN hamartoma tumor syndrome	True	True	True
 DOID:0110302	obsolete autosomal dominant limb-girdle muscular dystrophy type 1C	True	True	True
 DOID:0110578	obsolete autosomal dominant nonsyndromic deafness 52	True	True	True
-DOID:0110836	obsolete Usher syndrome type 1J	True	True	True
 DOID:0111612	obsolete autosomal recessive spinocerebellar ataxia 3	True	True	True
 DOID:10919	obsolete transsexualism	True	True	True
 DOID:11349	obsolete epilepsia partialis continua	True	True	True

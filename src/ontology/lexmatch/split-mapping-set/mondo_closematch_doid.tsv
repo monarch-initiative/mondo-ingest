@@ -4,6 +4,7 @@ MONDO:0000380	paranasal sinus carcinoma	skos:closeMatch	DOID:2442	paranasal sinu
 MONDO:0000380	paranasal sinus carcinoma	skos:closeMatch	DOID:2442	paranasal sinus squamous cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	squamous cell carcinoma of paranasal sinus	LEXMATCH
 MONDO:0000380	paranasal sinus carcinoma	skos:closeMatch	DOID:2442	paranasal sinus squamous cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	paranasal sinus squamous cell carcinoma	LEXMATCH
 MONDO:0001516	spinal muscular atrophy	skos:closeMatch	DOID:0060160	childhood spinal muscular atrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	gard:7674	LEXMATCH
+MONDO:0002211	B cell deficiency	skos:closeMatch	DOID:0061225	interleukin-1 receptor antagonist deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	immunoglobulin heavy chain deletion	LEXMATCH
 MONDO:0004037	retinal edema	skos:closeMatch	DOID:146	papilledema	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010211	LEXMATCH
 MONDO:0005098	stroke disorder	skos:closeMatch	DOID:0051061	stroke	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	cerebrovascular accident	LEXMATCH
 MONDO:0005641	aleutian mink disease	skos:closeMatch	DOID:2934	aleutian mink disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000453	LEXMATCH
@@ -48,6 +49,11 @@ MONDO:0008192	pheochromocytoma/paraganglioma syndrome 1	skos:closeMatch	DOID:006
 MONDO:0008192	pheochromocytoma/paraganglioma syndrome 1	skos:closeMatch	DOID:0061216	pheochromocytoma/paraganglioma syndrome 1	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:168000	LEXMATCH
 MONDO:0008227	peripheral dysostosis	skos:closeMatch	DOID:14669	acrodysostosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	gard:2015	LEXMATCH
 MONDO:0009133	cerebellar ataxia, intellectual disability, and dysequilibrium	skos:closeMatch	DOID:0070564	dialysis disequilibrium syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	dysequilibrium syndrome	LEXMATCH
+MONDO:0009227	myofibromatosis, infantile, 1	skos:closeMatch	DOID:0070666	infantile myofibromatosis 1	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:228550	LEXMATCH
+MONDO:0009227	myofibromatosis, infantile, 1	skos:closeMatch	DOID:0070666	infantile myofibromatosis 1	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	omim:228550	LEXMATCH
+MONDO:0009227	myofibromatosis, infantile, 1	skos:closeMatch	DOID:0070666	infantile myofibromatosis 1	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:228550	LEXMATCH
+MONDO:0009227	myofibromatosis, infantile, 1	skos:closeMatch	DOID:0070666	infantile myofibromatosis 1	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:228550	LEXMATCH
+MONDO:0009227	myofibromatosis, infantile, 1	skos:closeMatch	DOID:0070666	infantile myofibromatosis 1	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:228550	LEXMATCH
 MONDO:0009465	multiple intestinal atresia	skos:closeMatch	DOID:14671	multiple intestinal atresia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	gard:3013	LEXMATCH
 MONDO:0009465	multiple intestinal atresia	skos:closeMatch	DOID:14671	multiple intestinal atresia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	meddra:10028210	LEXMATCH
 MONDO:0009465	multiple intestinal atresia	skos:closeMatch	DOID:14671	multiple intestinal atresia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:c562441	LEXMATCH
@@ -130,6 +136,13 @@ MONDO:0012892	bone fragility with contractures, arterial rupture, and deafness	s
 MONDO:0012892	bone fragility with contractures, arterial rupture, and deafness	skos:closeMatch	DOID:0061197	BCARD syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:612394	LEXMATCH
 MONDO:0012892	bone fragility with contractures, arterial rupture, and deafness	skos:closeMatch	DOID:0061197	BCARD syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:612394	LEXMATCH
 MONDO:0012892	bone fragility with contractures, arterial rupture, and deafness	skos:closeMatch	DOID:0061197	BCARD syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:612394	LEXMATCH
+MONDO:0013021	sterile multifocal osteomyelitis with periostitis and pustulosis	skos:closeMatch	DOID:0061225	interleukin-1 receptor antagonist deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	gard:10516	LEXMATCH
+MONDO:0013021	sterile multifocal osteomyelitis with periostitis and pustulosis	skos:closeMatch	DOID:0061225	interleukin-1 receptor antagonist deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:612852	LEXMATCH
+MONDO:0013021	sterile multifocal osteomyelitis with periostitis and pustulosis	skos:closeMatch	DOID:0061225	interleukin-1 receptor antagonist deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	gard:10516	LEXMATCH
+MONDO:0013021	sterile multifocal osteomyelitis with periostitis and pustulosis	skos:closeMatch	DOID:0061225	interleukin-1 receptor antagonist deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	omim:612852	LEXMATCH
+MONDO:0013021	sterile multifocal osteomyelitis with periostitis and pustulosis	skos:closeMatch	DOID:0061225	interleukin-1 receptor antagonist deficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:612852	LEXMATCH
+MONDO:0013021	sterile multifocal osteomyelitis with periostitis and pustulosis	skos:closeMatch	DOID:0061225	interleukin-1 receptor antagonist deficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:612852	LEXMATCH
+MONDO:0013021	sterile multifocal osteomyelitis with periostitis and pustulosis	skos:closeMatch	DOID:0061225	interleukin-1 receptor antagonist deficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:612852	LEXMATCH
 MONDO:0013602	pheochromocytoma/paraganglioma syndrome 5	skos:closeMatch	DOID:0061220	pheochromocytoma/paraganglioma syndrome 5	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:614165	LEXMATCH
 MONDO:0013602	pheochromocytoma/paraganglioma syndrome 5	skos:closeMatch	DOID:0061220	pheochromocytoma/paraganglioma syndrome 5	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	omim:614165	LEXMATCH
 MONDO:0013602	pheochromocytoma/paraganglioma syndrome 5	skos:closeMatch	DOID:0061220	pheochromocytoma/paraganglioma syndrome 5	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:614165	LEXMATCH
@@ -148,6 +161,11 @@ MONDO:0014057	maple syrup urine disease, mild variant	skos:closeMatch	DOID:00612
 MONDO:0014057	maple syrup urine disease, mild variant	skos:closeMatch	DOID:0061205	mild variant of maple syrup urine disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:615135	LEXMATCH
 MONDO:0014057	maple syrup urine disease, mild variant	skos:closeMatch	DOID:0061205	mild variant of maple syrup urine disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:615135	LEXMATCH
 MONDO:0014057	maple syrup urine disease, mild variant	skos:closeMatch	DOID:0061205	mild variant of maple syrup urine disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:615135	LEXMATCH
+MONDO:0014122	myofibromatosis, infantile, 2	skos:closeMatch	DOID:0070667	infantile myofibromatosis 2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:615293	LEXMATCH
+MONDO:0014122	myofibromatosis, infantile, 2	skos:closeMatch	DOID:0070667	infantile myofibromatosis 2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	omim:615293	LEXMATCH
+MONDO:0014122	myofibromatosis, infantile, 2	skos:closeMatch	DOID:0070667	infantile myofibromatosis 2	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:615293	LEXMATCH
+MONDO:0014122	myofibromatosis, infantile, 2	skos:closeMatch	DOID:0070667	infantile myofibromatosis 2	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	oio:hasDbXref	omim:615293	LEXMATCH
+MONDO:0014122	myofibromatosis, infantile, 2	skos:closeMatch	DOID:0070667	infantile myofibromatosis 2	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	omim:615293	LEXMATCH
 MONDO:0014481	inflammatory skin and bowel disease, neonatal, 2	skos:closeMatch	DOID:0061191	neonatal nephrocutaneous inflammatory syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:616069	LEXMATCH
 MONDO:0014481	inflammatory skin and bowel disease, neonatal, 2	skos:closeMatch	DOID:0061191	neonatal nephrocutaneous inflammatory syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	omim:616069	LEXMATCH
 MONDO:0014481	inflammatory skin and bowel disease, neonatal, 2	skos:closeMatch	DOID:0061191	neonatal nephrocutaneous inflammatory syndrome	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	omim:616069	LEXMATCH

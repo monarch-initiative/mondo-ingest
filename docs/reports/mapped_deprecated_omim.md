@@ -36,7 +36,6 @@
 | MONDO:0011543 | OMIM:605365          | MONDO:equivalentObsolete |
 | MONDO:0011893 | OMIM:607683          | MONDO:equivalentObsolete |
 | MONDO:0011910 | OMIM:607801          | MONDO:equivalentObsolete |
-| MONDO:0011961 | OMIM:608088          | MONDO:equivalentObsolete |
 | MONDO:0012461 | OMIM:610269          | MONDO:equivalentObsolete |
 | MONDO:0012560 | OMIM:610799          | MONDO:equivalentObsolete |
 | MONDO:0013596 | OMIM:614157          | MONDO:equivalentObsolete |
