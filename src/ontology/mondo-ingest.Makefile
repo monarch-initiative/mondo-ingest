@@ -430,6 +430,7 @@ build-mondo-ingest:
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
 		source-version-docs \
+		ingest-labels \
 		update-externally-managed-content \
 		prepare_release
 	@echo "Mondo Ingest has been fully completed"
@@ -440,11 +441,12 @@ build-mondo-ingest-no-imports:
 		mapped-deprecated-terms mapping-progress-report \
 		recreate-unmapped-components sync documentation \
 		source-version-docs \
+		ingest-labels \
 		update-externally-managed-content \
 		prepare_release
 	@echo "Mondo Ingest (fast) has been fully completed"
 
-DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo
+DEPLOY_ASSETS_MONDO_INGEST=$(OTHER_SRC) $(ALL_MAPPINGS) ../../mondo-ingest.owl ../../mondo-ingest.obo tmp/mondo-labels.tsv
 
 .PHONY: deploy-mondo-ingest
 deploy-mondo-ingest:
@@ -728,6 +730,11 @@ $(TMPDIR)/%-synonyms.added.robot.tsv $(TMPDIR)/%-synonyms.updated.robot.tsv $(TM
 	--outpath-confirmed $(TMPDIR)/$*.synonyms.confirmed.robot.tsv \
 	--outpath-updated $(TMPDIR)/$*.synonyms.updated.robot.tsv \
    	--doid-added-filtration
+
+ingest-labels:  $(TMPDIR)/mondo-labels.tsv
+
+$(TMPDIR)/mondo-labels.tsv: $(TMPDIR)/mondo-ingest.db
+	runoak -i sqlite:$(TMPDIR)/mondo-ingest.db labels .all -o $@
 
 ##################################
 ## Externally managed content ####
