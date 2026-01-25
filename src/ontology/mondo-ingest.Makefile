@@ -282,7 +282,10 @@ mapping-progress-report: unmapped-terms-tables unmapped-terms-docs
 unmapped-terms-docs: docs/reports/unmapped.md
 
 # todo: ideally `unmapped_docs.py` would also take file path(s) as input args. Currently, running `unmapped_%.md` for any source will trigger this for all sources.
-docs/reports/unmapped.md docs/reports/unmapped_%.md: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
+docs/reports/unmapped.md: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
+	python3 $(SCRIPTSDIR)/unmapped_docs.py
+
+docs/reports/unmapped_%.md: $(foreach n,$(ALL_COMPONENT_IDS), reports/$(n)_unmapped_terms.tsv)
 	python3 $(SCRIPTSDIR)/unmapped_docs.py
 
 .PHONY: unmapped-terms-tables
@@ -899,8 +902,11 @@ mapped-deprecated-terms: mapped-deprecated-terms-docs
 mapped-deprecated-terms-docs: $(DOCS_DIR)/reports/mapped_deprecated.md
 
 # todo: ideally `deprecated_in_mondo.py` would also take file path(s) as input args. Currently, running `mapped_deprecated_%.md` for any source will trigger this for all sources.
-$(DOCS_DIR)/reports/mapped_deprecated.md $(DOCS_DIR)/reports/mapped_deprecated_%.md: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
+$(DOCS_DIR)/reports/mapped_deprecated.md: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
+	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py --docs
+
 #$(DOCS_DIR)/reports/mapped_deprecated.md $(foreach n,$(ALL_COMPONENT_IDS), $(DOCS_DIR)/reports/mapped_deprecated_$(n).md): $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
+$(DOCS_DIR)/reports/mapped_deprecated_%.md: $(foreach n,$(ALL_COMPONENT_IDS), $(REPORTDIR)/$(n)_mapped_deprecated_terms.robot.template.tsv)
 	python3 $(SCRIPTSDIR)/deprecated_in_mondo.py --docs
 
 .PHONY: mapped-deprecated-terms-artefacts
