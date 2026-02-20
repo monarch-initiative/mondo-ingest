@@ -226,8 +226,8 @@ MONDO:0001249	trachoma	skos:closeMatch	ICD10CM:A71.0	Initial stage of trachoma	s
 MONDO:0001249	trachoma	skos:closeMatch	ICD10CM:A71.0	Initial stage of trachoma	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11265	LEXMATCH
 MONDO:0001249	trachoma	skos:closeMatch	ICD10CM:A71.1	Active stage of trachoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11265	LEXMATCH
 MONDO:0001249	trachoma	skos:closeMatch	ICD10CM:A71.1	Active stage of trachoma	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11265	LEXMATCH
-MONDO:0001252	Plummer disease	skos:closeMatch	ICD10CM:E05.2	Thyrotoxicosis with toxic multinodular goiter	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11277	LEXMATCH
-MONDO:0001252	Plummer disease	skos:closeMatch	ICD10CM:E05.2	Thyrotoxicosis with toxic multinodular goiter	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11277	LEXMATCH
+MONDO:0001252	toxic multinodular goitre	skos:closeMatch	ICD10CM:E05.2	Thyrotoxicosis with toxic multinodular goiter	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11277	LEXMATCH
+MONDO:0001252	toxic multinodular goitre	skos:closeMatch	ICD10CM:E05.2	Thyrotoxicosis with toxic multinodular goiter	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11277	LEXMATCH
 MONDO:0001255	ventilation pneumonitis	skos:closeMatch	ICD10CM:J67.7	Air conditioner and humidifier lung	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11289	LEXMATCH
 MONDO:0001255	ventilation pneumonitis	skos:closeMatch	ICD10CM:J67.7	Air conditioner and humidifier lung	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:11289	LEXMATCH
 MONDO:0001256	arteriovenous hemangioma/malformation	skos:closeMatch	ICD10CM:I77.0	Arteriovenous fistula, acquired	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:11294	LEXMATCH
@@ -3018,6 +3018,10 @@ MONDO:0011945	Gaucher disease perinatal lethal	skos:closeMatch	ICD10CM:E75.2	Oth
 MONDO:0011953	familial acute necrotizing encephalopathy	skos:closeMatch	ICD10CM:G04.31	Postinfectious acute necrotizing hemorrhagic encephalopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	postinfectious acute necrotizing hemorrhagic encephalopathy	LEXMATCH
 MONDO:0011953	familial acute necrotizing encephalopathy	skos:closeMatch	ICD10CM:G04.31	Postinfectious acute necrotizing hemorrhagic encephalopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	postinfectious acute necrotizing hemorrhagic encephalopathy	LEXMATCH
 MONDO:0011957	retinal macular dystrophy type 2	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0011957	LEXMATCH
+MONDO:0011961	hereditary sensory and autonomic neuropathy type 1B	skos:closeMatch	ICD10CM:G11.2	Late-onset cerebellar ataxia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:0070148	LEXMATCH
+MONDO:0011961	hereditary sensory and autonomic neuropathy type 1B	skos:closeMatch	ICD10CM:G11.2	Late-onset cerebellar ataxia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:0070148	LEXMATCH
+MONDO:0011961	hereditary sensory and autonomic neuropathy type 1B	skos:closeMatch	ICD10CM:G60.8	Other hereditary and idiopathic neuropathies	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:broadMatch-INVERSE	doid:0070148	LEXMATCH
+MONDO:0011961	hereditary sensory and autonomic neuropathy type 1B	skos:closeMatch	ICD10CM:G60.8	Other hereditary and idiopathic neuropathies	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch-INVERSE	doid:0070148	LEXMATCH
 MONDO:0011968	autosomal recessive limb-girdle muscular dystrophy type 2D	skos:closeMatch	ICD10CM:G71.0	Muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110278	LEXMATCH
 MONDO:0011968	autosomal recessive limb-girdle muscular dystrophy type 2D	skos:closeMatch	ICD10CM:G71.0	Muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110278	LEXMATCH
 MONDO:0011974	retinitis pigmentosa 7	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110383	LEXMATCH
@@ -4305,8 +4309,8 @@ MONDO:0018103	Quinquaud's folliculitis decalvans	skos:closeMatch	ICD10CM:L66.2	F
 MONDO:0018106	hereditary xanthinuria	skos:closeMatch	ICD10CM:E79.8	Other disorders of purine and pyrimidine metabolism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060236	LEXMATCH
 MONDO:0018106	hereditary xanthinuria	skos:closeMatch	ICD10CM:E79.8	Other disorders of purine and pyrimidine metabolism	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060236	LEXMATCH
 MONDO:0018133	attenuated Chédiak-Higashi syndrome	skos:closeMatch	ICD10CM:E70.3	Albinism	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0018133	LEXMATCH
-MONDO:0018146	idiopathic macular telangiectasia type 1	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0018146	LEXMATCH
-MONDO:0018147	idiopathic macular telangiectasia type 3	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0018147	LEXMATCH
+MONDO:0018146	macular telangiectasia type 1	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0018146	LEXMATCH
+MONDO:0018147	macular telangiectasia type 3	skos:closeMatch	ICD10CM:H35.5	Hereditary retinal dystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0018147	LEXMATCH
 MONDO:0018149	GM1 gangliosidosis	skos:closeMatch	ICD10CM:E75.19	Other gangliosidosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3322	LEXMATCH
 MONDO:0018149	GM1 gangliosidosis	skos:closeMatch	ICD10CM:E75.19	Other gangliosidosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3322	LEXMATCH
 MONDO:0018163	autosomal recessive cutis laxa type 2A	skos:closeMatch	ICD10CM:Q82.8	Other specified congenital malformations of skin	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0070134	LEXMATCH

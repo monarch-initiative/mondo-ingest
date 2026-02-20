@@ -1,0 +1,4 @@
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
+MONDO:0018940	congenital myasthenic syndrome	skos:closeMatch	OMIM:621455	neurodevelopmental disorder with hypotonia, epilepsy, and absent speech	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	orphanet:590	LEXMATCH
+MONDO:0018940	congenital myasthenic syndrome	skos:closeMatch	OMIM:621455	neurodevelopmental disorder with hypotonia, epilepsy, and absent speech	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	orphanet:590	LEXMATCH
+MONDO:0700466	presynaptic congenital myasthenic syndrome	skos:closeMatch	OMIM:621455	neurodevelopmental disorder with hypotonia, epilepsy, and absent speech	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	orphanet:98914	LEXMATCH

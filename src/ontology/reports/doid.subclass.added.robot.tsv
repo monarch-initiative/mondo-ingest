@@ -366,8 +366,8 @@ MONDO:0004533	perineural angioma	MONDO:0000628	DOID:8331	DOID:0060090	central ne
 MONDO:0004574	pyridoxine deficiency anemia	MONDO:0002280	DOID:8455	DOID:2355	anemia
 MONDO:0004580	retinal degeneration	MONDO:0004884	DOID:8466	DOID:9799	eye degenerative disorder
 MONDO:0004582	rheumatic myocarditis	MONDO:0005113	DOID:8481	DOID:104	bacterial infectious disease
-MONDO:0004586	rheumatoid lung disease	MONDO:0003778	DOID:849	DOID:612	inborn error of immunity
-MONDO:0004586	rheumatoid lung disease	MONDO:0015925	DOID:849	DOID:3082	interstitial lung disease
+MONDO:0004586	rheumatoid arthritis-associated interstitial lung disease	MONDO:0003778	DOID:849	DOID:612	inborn error of immunity
+MONDO:0004586	rheumatoid arthritis-associated interstitial lung disease	MONDO:0015925	DOID:849	DOID:3082	interstitial lung disease
 MONDO:0004593	Bartholin duct cyst	MONDO:0851103	DOID:851	DOID:60002	Bartholin's gland disease
 MONDO:0004597	pulmonary embolism and infarction	MONDO:0004598	DOID:8516	DOID:8514	acute cor pulmonale
 MONDO:0004600	monocytic leukemia	MONDO:0004643	DOID:8527	DOID:8692	myeloid leukemia
@@ -420,6 +420,7 @@ MONDO:0005167	fibroma	MONDO:0000654	DOID:0050871	DOID:0060123	benign connective 
 MONDO:0005170	myeloid neoplasm	MONDO:0005374	DOID:0070004	DOID:4960	bone marrow neoplasm
 MONDO:0005230	cellulitis	MONDO:0003900	DOID:3488	DOID:65	connective tissue disorder
 MONDO:0005246	osteomyelitis	MONDO:0002041	DOID:1019	DOID:1564	fungal infectious disease
+MONDO:0005276	dental caries	MONDO:0005113	DOID:216	DOID:104	bacterial infectious disease
 MONDO:0005279	pulmonary embolism	MONDO:0851102	DOID:9477	DOID:60001	pulmonary artery disease
 MONDO:0005282	cutaneous lupus erythematosus	MONDO:0005093	DOID:0050169	DOID:37	skin disorder
 MONDO:0005289	paranasal sinus neoplasm	MONDO:0000382	DOID:1350	DOID:0050621	respiratory system benign neoplasm
@@ -455,8 +456,6 @@ MONDO:0005674	bone giant cell tumor	MONDO:0002171	DOID:4305	DOID:200	giant cell 
 MONDO:0005705	clonorchiasis	MONDO:0005154	DOID:13767	DOID:409	liver disorder
 MONDO:0005710	composite lymphoma	MONDO:0004095	DOID:5820	DOID:707	B-cell neoplasm
 MONDO:0005717	contagious pustular dermatitis	MONDO:0005093	DOID:8771	DOID:37	skin disorder
-MONDO:0005731	dipetalonemiasis	MONDO:0005093	DOID:14422	DOID:37	skin disorder
-MONDO:0005731	dipetalonemiasis	MONDO:0005328	DOID:14422	DOID:5614	eye disorder
 MONDO:0005749	eosinophilic pneumonia	MONDO:0004802	DOID:5870	DOID:9498	pulmonary eosinophilia
 MONDO:0005751	epidemic pleurodynia	MONDO:0003939	DOID:10882	DOID:0080000	muscle tissue disorder
 MONDO:0005761	filarial elephantiasis	MONDO:0005093	DOID:12211	DOID:37	skin disorder
@@ -467,6 +466,8 @@ MONDO:0005815	pancreatic neuroendocrine neoplasm	MONDO:0009831	DOID:1799	DOID:17
 MONDO:0005829	louping ill	MONDO:0005108	DOID:10250	DOID:934	viral infectious disease
 MONDO:0005834	lymphogranuloma venereum	MONDO:0018181	DOID:13819	DOID:9063	staphylococcal scalded skin syndrome
 MONDO:0005838	mansonelliasis	MONDO:0005093	DOID:1081	DOID:37	skin disorder
+MONDO:0005838	mansonelliasis	MONDO:0005093	DOID:14422	DOID:37	skin disorder
+MONDO:0005838	mansonelliasis	MONDO:0005328	DOID:14422	DOID:5614	eye disorder
 MONDO:0005841	maxillary neoplasm	MONDO:0002131	DOID:4618	DOID:1862	jaw cancer
 MONDO:0005851	Miller Fisher syndrome	MONDO:0016218	DOID:12889	DOID:12842	Guillain-Barre syndrome
 MONDO:0005854	mixed connective tissue disease	MONDO:0003778	DOID:3492	DOID:612	inborn error of immunity
@@ -1924,7 +1925,8 @@ MONDO:0011936	microphthalmia with brain and digit anomalies	MONDO:0000426	DOID:0
 MONDO:0011938	atrial septal defect 2	MONDO:0000426	DOID:0110107	DOID:0050736	autosomal dominant disease
 MONDO:0011959	sweet syndrome	MONDO:0005271	DOID:0080746	DOID:1205	allergic disease
 MONDO:0011960	schizophrenia 11	MONDO:0000426	DOID:0070087	DOID:0050736	autosomal dominant disease
-MONDO:0011961	hereditary sensory and autonomic neuropathy type 1B	MONDO:0000426	DOID:0070148	DOID:0050736	autosomal dominant disease
+MONDO:0011961	hereditary sensory and autonomic neuropathy type 1B	MONDO:0002254	DOID:0070148	DOID:225	syndromic disease
+MONDO:0011961	hereditary sensory and autonomic neuropathy type 1B	MONDO:0006025	DOID:0070148	DOID:0050737	autosomal recessive disease
 MONDO:0011962	endometrial cancer	MONDO:0005133	DOID:1380	DOID:289	endometriosis
 MONDO:0011964	DPAGT1-congenital disorder of glycosylation	MONDO:0006025	DOID:0080562	DOID:0050737	autosomal recessive disease
 MONDO:0011965	familial temporal lobe epilepsy 2	MONDO:0000426	DOID:0060755	DOID:0050736	autosomal dominant disease
@@ -2015,7 +2017,7 @@ MONDO:0012393	congenital brain dysgenesis due to glutamine synthetase deficiency
 MONDO:0012393	congenital brain dysgenesis due to glutamine synthetase deficiency	MONDO:0006025	DOID:0070544	DOID:0050737	autosomal recessive disease
 MONDO:0012395	cataract 18	MONDO:0006025	DOID:0110238	DOID:0050737	autosomal recessive disease
 MONDO:0012396	exercise-induced hyperinsulinism	MONDO:0000426	DOID:0070214	DOID:0050736	autosomal dominant disease
-MONDO:0012398	retinal cone dystrophy 3A	MONDO:0000455	DOID:0081025	DOID:0050795	cone dystrophy
+MONDO:0012398	achromatopsia 6	MONDO:0000455	DOID:0081025	DOID:0050795	cone dystrophy
 MONDO:0012399	complex cortical dysplasia with other brain malformations 7	MONDO:0000426	DOID:0090132	DOID:0050736	autosomal dominant disease
 MONDO:0012400	cortical dysplasia-focal epilepsy syndrome	MONDO:0005560	DOID:0090130	DOID:936	brain disorder
 MONDO:0012400	cortical dysplasia-focal epilepsy syndrome	MONDO:0006025	DOID:0090130	DOID:0050737	autosomal recessive disease
