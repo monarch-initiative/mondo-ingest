@@ -805,7 +805,7 @@ $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 # Managed here: https://docs.google.com/spreadsheets/d/1W2wDcnU4Nw0OApe3AvHtXSaOlA4RtmG5/edit?gid=1163320745#gid=1163320745
 
 $(EXTERNAL_CONTENT_DIR)/gard.robot.tsv:
-	wget "https://docs.google.com/spreadsheets/d/1W2wDcnU4Nw0OApe3AvHtXSaOlA4RtmG5/pub?gid=1163320745&single=true&output=tsv" -O $@
+	wget "https://docs.google.com/spreadsheets/d/e/2PACX-1vTGh0fO79utQPPmjSykHatfQMc6P_bnkqPfiqHJDdmqWJk7H1pSm8OkrJclJT9SiA/pub?gid=1723191699&single=true&output=tsv" -O $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/gard.robot.tsv
 
 ###### NORD #########
