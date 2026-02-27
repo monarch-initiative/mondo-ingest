@@ -29,6 +29,8 @@ def _get_column_of_external_source_related_to_qc_failure(qc_failure, erroneous_r
         columns = ["object_id"]
     elif external == "ordo-subsets":
         columns = ["subset"]
+    elif external == "ncit-rare":
+        columns = ["subset", "ncit_id"]
     elif external == "gard":
         columns = ["subset", "gard_id"]
     elif external == "mondo-malacards":

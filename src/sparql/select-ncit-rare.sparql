@@ -1,0 +1,8 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?cls ?lbl
+WHERE {
+    ?cls rdfs:subClassOf+ obo:NCIT_C4873 .
+    ?cls rdfs:label ?lbl .
+}

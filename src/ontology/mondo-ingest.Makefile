@@ -756,7 +756,8 @@ EXTERNAL_FILES = \
 	nando-mappings \
 	gard \
 	nord \
-	ordo-subsets
+	ordo-subsets \
+	ncit-rare
 
 # The following target simulates the EMC pipeline. It runs it in exactly the same way
 # as it would be run in the context of the Mondo repo. This way, we can test Mondo 
@@ -835,6 +836,20 @@ $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: $(TMPDIR)/ordo-subsets.tsv $(TMP
 	--onto-config-path metadata/ordo.yml \
 	--outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv
+
+###### NCIT #########
+
+$(TMPDIR)/ncit-rare.tsv: $(TMPDIR)/mirror-ncit.owl
+	$(ROBOT) query -i $< --query ../sparql/select-ncit-rare.sparql $@
+
+$(EXTERNAL_CONTENT_DIR)/ncit-rare.robot.tsv: $(TMPDIR)/ncit-rare.tsv $(TMPDIR)/mondo.sssom.tsv
+	mkdir -p $(EXTERNAL_CONTENT_DIR)
+	python3 $(SCRIPTSDIR)/ncit_rare.py \
+	--ncit-rare-tsv-path $(TMPDIR)/ncit-rare.tsv \
+	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
+	--onto-config-path metadata/ncit.yml \
+	--outpath $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/ncit-rare.robot.tsv
 
 ###### OMIM #########
 
