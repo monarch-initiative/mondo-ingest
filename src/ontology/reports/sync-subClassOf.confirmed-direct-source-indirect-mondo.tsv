@@ -260,6 +260,7 @@ MONDO:0001824	polyneuropathy	MONDO:0003620	DOID:1389	DOID:574	peripheral nervous
 MONDO:0001827	white piedra	MONDO:0024268	DOID:13902	DOID:0050133	superficial mycosis
 MONDO:0001829	lumbosacral plexus lesion	MONDO:0003620	DOID:13913	DOID:574	peripheral nervous system disorder
 MONDO:0001833	lacrimal duct obstruction	MONDO:0001854	DOID:13929	DOID:1400	lacrimal apparatus disorder
+MONDO:0001836	amenorrhea	MONDO:0002263	DOID:13938	DOID:229	female reproductive system disorder
 MONDO:0001838	acute gonococcal prostatitis	MONDO:0005280	DOID:13943	DOID:14654	prostatitis
 MONDO:0001846	uterine corpus bizarre leiomyoma	MONDO:0000632	DOID:13958	DOID:0060095	uterine benign neoplasm
 MONDO:0001846	uterine corpus bizarre leiomyoma	MONDO:0001572	DOID:13958	DOID:127	leiomyoma
@@ -744,6 +745,7 @@ MONDO:0004148	gallbladder papillary neoplasm with an associated invasive carcino
 MONDO:0004162	uterine corpus cellular leiomyoma	MONDO:0000632	DOID:7242	DOID:0060095	uterine benign neoplasm
 MONDO:0004162	uterine corpus cellular leiomyoma	MONDO:0001572	DOID:7242	DOID:127	leiomyoma
 MONDO:0004164	lymphoepithelioma-like acinar prostate adenocarcinoma	MONDO:0005082	DOID:7246	DOID:2526	prostate adenocarcinoma
+MONDO:0004169	premenstrual tension	MONDO:0002263	DOID:727	DOID:229	female reproductive system disorder
 MONDO:0004173	adenocarcinoma of skene gland origin	MONDO:0004993	DOID:7284	DOID:305	carcinoma
 MONDO:0004177	benign urethral neoplasm	MONDO:0004184	DOID:730	DOID:732	urethral disorder
 MONDO:0004180	benign urinary system neoplasm	MONDO:0002118	DOID:731	DOID:18	urinary system disorder
@@ -1159,6 +1161,7 @@ MONDO:0006717	cutaneous fibrous histiocytoma	MONDO:0002531	DOID:4418	DOID:3165	s
 MONDO:0006734	benign duodenal neoplasm	MONDO:0002866	DOID:1737	DOID:4072	duodenal disorder
 MONDO:0006734	benign duodenal neoplasm	MONDO:0004251	DOID:1737	DOID:7505	small intestine neoplasm
 MONDO:0006793	hyperpituitarism	MONDO:0003381	DOID:2444	DOID:53	pituitary gland disorder
+MONDO:0006809	intracranial embolism	MONDO:0011057	DOID:4372	DOID:6713	cerebrovascular disorder
 MONDO:0006834	lip cancer	MONDO:0004748	DOID:8564	DOID:9297	lip disorder
 MONDO:0006851	meconium aspiration syndrome	MONDO:0005275	DOID:11049	DOID:850	lung disorder
 MONDO:0006861	myeloid sarcoma	MONDO:0002334	DOID:8683	DOID:2531	hematopoietic and lymphoid system neoplasm
@@ -1420,9 +1423,6 @@ MONDO:0008758	mitochondrial DNA depletion syndrome 4a	MONDO:0018158	DOID:0080122
 MONDO:0008760	beta-ketothiolase deficiency	MONDO:0004736	DOID:14723	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0008764	Leber congenital amaurosis 1	MONDO:0006025	DOID:0110078	DOID:0050737	autosomal recessive disease
 MONDO:0008765	Leber congenital amaurosis 2	MONDO:0006025	DOID:0110016	DOID:0050737	autosomal recessive disease
-MONDO:0008767	neuronal ceroid lipofuscinosis 3	MONDO:0016295	DOID:0110731	DOID:14503	neuronal ceroid lipofuscinosis
-MONDO:0008768	ceroid lipofuscinosis, neuronal, 6B (Kufs type)	MONDO:0016295	DOID:0110730	DOID:14503	neuronal ceroid lipofuscinosis
-MONDO:0008769	neuronal ceroid lipofuscinosis 2	MONDO:0016295	DOID:0110726	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0008770	amelogenesis imperfecta type 1C	MONDO:0019507	DOID:0110056	DOID:2187	amelogenesis imperfecta
 MONDO:0008772	amelogenesis imperfecta type 2A1	MONDO:0019507	DOID:0110057	DOID:2187	amelogenesis imperfecta
 MONDO:0008780	amyotrophic lateral sclerosis type 2, juvenile	MONDO:0004976	DOID:0060194	DOID:332	amyotrophic lateral sclerosis
@@ -1663,6 +1663,7 @@ MONDO:0010397	severe neonatal-onset encephalopathy with microcephaly	MONDO:00055
 MONDO:0010399	chromosome Xp21 deletion syndrome	MONDO:0000761	DOID:0060427	DOID:0060388	syndrome caused by partial chromosomal deletion
 MONDO:0010401	X-linked myopathy with postural muscle atrophy	MONDO:0016830	DOID:0070251	DOID:11726	Emery-Dreifuss muscular dystrophy
 MONDO:0010415	myopathy, reducing body, X-linked, childhood-onset	MONDO:0005336	DOID:0080687	DOID:423	myopathy
+MONDO:0010417	syndromic X-linked intellectual disability Najm type	MONDO:0020119	DOID:0060807	DOID:0060309	X-linked syndromic intellectual disability
 MONDO:0010418	hereditary spastic paraplegia 34	MONDO:0019064	DOID:0110785	DOID:2476	hereditary spastic paraplegia
 MONDO:0010421	Bruton-type agammaglobulinemia	MONDO:0015977	DOID:14179	DOID:2583	agammaglobulinemia
 MONDO:0010428	chromosome Xp11.23-p11.22 duplication syndrome	MONDO:0000762	DOID:0060461	DOID:0060429	syndrome caused by partial chromosomal duplication
@@ -1716,7 +1717,6 @@ MONDO:0010771	histiocytoid cardiomyopathy	MONDO:0000591	DOID:0080198	DOID:006003
 MONDO:0010788	Leber hereditary optic neuropathy	MONDO:0002135	DOID:705	DOID:1891	optic nerve disorder
 MONDO:0010794	NARP syndrome	MONDO:0004069	DOID:0111273	DOID:700	inborn mitochondrial metabolism disorder
 MONDO:0010810	vitamin D hydroxylation-deficient rickets, type 1B	MONDO:0024299	DOID:0080887	DOID:0080883	vitamin D-dependent rickets
-MONDO:0010830	neuronal ceroid lipofuscinosis 8	MONDO:0016295	DOID:0110723	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0010841	Waardenburg syndrome type 2B	MONDO:0018094	DOID:0110947	DOID:9258	Waardenburg syndrome
 MONDO:0010847	spinocerebellar ataxia type 4	MONDO:0020380	DOID:0050957	DOID:1441	autosomal dominant cerebellar ataxia
 MONDO:0010848	spinocerebellar ataxia type 5	MONDO:0020380	DOID:0050882	DOID:1441	autosomal dominant cerebellar ataxia
@@ -1757,7 +1757,6 @@ MONDO:0011094	dilated cardiomyopathy 1C	MONDO:0005021	DOID:0110423	DOID:12930	di
 MONDO:0011095	dilated cardiomyopathy 1D	MONDO:0005021	DOID:0110426	DOID:12930	dilated cardiomyopathy
 MONDO:0011101	peroxisome biogenesis disorder 1B	MONDO:0006025	DOID:0081240	DOID:0050737	autosomal recessive disease
 MONDO:0011101	peroxisome biogenesis disorder 1B	MONDO:0019234	DOID:0081240	DOID:0080377	peroxisome biogenesis disorder
-MONDO:0011144	ceroid lipofuscinosis, neuronal, 6A	MONDO:0016295	DOID:0110729	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0011147	chromosome 18q deletion syndrome	MONDO:0000761	DOID:0060407	DOID:0060388	syndrome caused by partial chromosomal deletion
 MONDO:0011151	exudative vitreoretinopathy 4	MONDO:0019516	DOID:0111411	DOID:0050535	exudative vitreoretinopathy
 MONDO:0011152	PHGDH deficiency	MONDO:0000421	DOID:0050722	DOID:0050721	inborn serine deficiency
@@ -1956,7 +1955,6 @@ MONDO:0012410	Finnish upper limb-onset distal myopathy	MONDO:0000426	DOID:011118
 MONDO:0012410	Finnish upper limb-onset distal myopathy	MONDO:0018949	DOID:0111189	DOID:11720	distal myopathy
 MONDO:0012411	giant axonal neuropathy 2	MONDO:0004183	DOID:0090069	DOID:7319	axonal neuropathy
 MONDO:0012412	complement component 7 deficiency	MONDO:0003832	DOID:0060300	DOID:626	complement deficiency
-MONDO:0012414	neuronal ceroid lipofuscinosis 10	MONDO:0016295	DOID:0110725	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0012415	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 4	MONDO:0000426	DOID:0111525	DOID:0050736	autosomal dominant disease
 MONDO:0012415	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 4	MONDO:0005181	DOID:0111525	DOID:12558	progressive external ophthalmoplegia
 MONDO:0012426	immunodeficiency 25	MONDO:0015974	DOID:0060007	DOID:627	severe combined immunodeficiency
@@ -3880,6 +3878,7 @@ MONDO:0008002	mirror movements 1	MONDO:0016558	OMIM:157600	OMIMPS:157600	familia
 MONDO:0008024	neuronopathy, distal hereditary motor, type 7A	MONDO:0015362	OMIM:158580	OMIMPS:182960	neuronopathy, distal hereditary motor, autosomal dominant
 MONDO:0008025	neuronopathy, distal hereditary motor, type 2A	MONDO:0015362	OMIM:158590	OMIMPS:182960	neuronopathy, distal hereditary motor, autosomal dominant
 MONDO:0008044	myoclonic dystonia 11	MONDO:0044807	OMIM:159900	OMIMPS:128100	inherited dystonia
+MONDO:0008070	congenital myopathy 2a, typical, autosomal dominant	MONDO:0018958	OMIM:161800	OMIMPS:256030	nemaline myopathy
 MONDO:0008070	congenital myopathy 2a, typical, autosomal dominant	MONDO:0019952	OMIM:161800	OMIMPS:117000	congenital myopathy
 MONDO:0008082	multiple endocrine neoplasia type 2B	MONDO:0017169	OMIM:162300	OMIMPS:131100	multiple endocrine neoplasia
 MONDO:0008083	ceroid lipofuscinosis, neuronal, 4 (Kufs type)	MONDO:0016295	OMIM:162350	OMIMPS:256730	neuronal ceroid lipofuscinosis
@@ -3906,9 +3905,6 @@ MONDO:0008736	peroxisome biogenesis disorder 2B	MONDO:0019234	OMIM:202370	OMIMPS
 MONDO:0008745	oculocutaneous albinism type 1A	MONDO:0018910	OMIM:203100	OMIMPS:203100	oculocutaneous albinism
 MONDO:0008748	Hermansky-Pudlak syndrome 1	MONDO:0019312	OMIM:203300	OMIMPS:203300	Hermansky-Pudlak syndrome
 MONDO:0008758	mitochondrial DNA depletion syndrome 4a	MONDO:0018158	OMIM:203700	OMIMPS:603041	mitochondrial DNA depletion syndrome
-MONDO:0008767	neuronal ceroid lipofuscinosis 3	MONDO:0016295	OMIM:204200	OMIMPS:256730	neuronal ceroid lipofuscinosis
-MONDO:0008768	ceroid lipofuscinosis, neuronal, 6B (Kufs type)	MONDO:0016295	OMIM:204300	OMIMPS:256730	neuronal ceroid lipofuscinosis
-MONDO:0008769	neuronal ceroid lipofuscinosis 2	MONDO:0016295	OMIM:204500	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0008770	amelogenesis imperfecta type 1C	MONDO:0019507	OMIM:204650	OMIMPS:104500	amelogenesis imperfecta
 MONDO:0008772	amelogenesis imperfecta type 2A1	MONDO:0019507	OMIM:204700	OMIMPS:104500	amelogenesis imperfecta
 MONDO:0008780	amyotrophic lateral sclerosis type 2, juvenile	MONDO:0005144	OMIM:205100	OMIMPS:105400	familial amyotrophic lateral sclerosis
@@ -3957,6 +3953,7 @@ MONDO:0009689	congenital myasthenic syndrome 6	MONDO:0018940	OMIM:254210	OMIMPS:
 MONDO:0009690	congenital myasthenic syndrome 10	MONDO:0018940	OMIM:254300	OMIMPS:601462	congenital myasthenic syndrome
 MONDO:0009709	myopathy, centronuclear, 2	MONDO:0018947	OMIM:255200	OMIMPS:160150	centronuclear myopathy
 MONDO:0009712	congenital multicore myopathy with external ophthalmoplegia	MONDO:0019952	OMIM:255320	OMIMPS:117000	congenital myopathy
+MONDO:0009725	nemaline myopathy 2	MONDO:0018958	OMIM:256030	OMIMPS:256030	nemaline myopathy
 MONDO:0009747	mitochondrial DNA depletion syndrome 6 (hepatocerebral type)	MONDO:0018158	OMIM:256810	OMIMPS:603041	mitochondrial DNA depletion syndrome
 MONDO:0009760	Norman-Roberts syndrome	MONDO:0018838	OMIM:257320	OMIMPS:607432	lissencephaly spectrum disorders
 MONDO:0009773	odonto-onycho-dermal dysplasia	MONDO:0019287	OMIM:257980	OMIMPS:305100	ectodermal dysplasia syndrome
@@ -3999,6 +3996,7 @@ MONDO:0010378	X-linked hereditary sensory and autonomic neuropathy with hearing 
 MONDO:0010385	X-linked lymphoproliferative disease due to XIAP deficiency	MONDO:0016537	OMIM:300635	OMIMPS:308240	lymphoproliferative syndrome
 MONDO:0010386	immunodeficiency 33	MONDO:0021094	OMIM:300636	OMIMPS:300755	immunodeficiency disease
 MONDO:0010401	X-linked myopathy with postural muscle atrophy	MONDO:0016830	OMIM:300696	OMIMPS:310300	Emery-Dreifuss muscular dystrophy
+MONDO:0010417	syndromic X-linked intellectual disability Najm type	MONDO:0020119	OMIM:300749	OMIMPS:309510	X-linked syndromic intellectual disability
 MONDO:0010418	hereditary spastic paraplegia 34	MONDO:0019064	OMIM:300750	OMIMPS:303350	hereditary spastic paraplegia
 MONDO:0010421	Bruton-type agammaglobulinemia	MONDO:0015977	OMIM:300755	OMIMPS:601495	agammaglobulinemia
 MONDO:0010421	Bruton-type agammaglobulinemia	MONDO:0021094	OMIM:300755	OMIMPS:300755	immunodeficiency disease
@@ -4032,7 +4030,6 @@ MONDO:0010730	combined immunodeficiency, X-linked	MONDO:0021094	OMIM:312863	OMIM
 MONDO:0010747	X-linked dystonia-parkinsonism	MONDO:0044807	OMIM:314250	OMIMPS:128100	inherited dystonia
 MONDO:0010820	autosomal recessive juvenile Parkinson disease 2	MONDO:0005180	OMIM:600116	OMIMPS:168600	Parkinson disease
 MONDO:0010829	CARASIL syndrome	MONDO:0007432	OMIM:600142	OMIMPS:125310	cerebral arteriopathy with subcortical infarcts and leukoencephalopathy
-MONDO:0010830	neuronal ceroid lipofuscinosis 8	MONDO:0016295	OMIM:600143	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0010841	Waardenburg syndrome type 2B	MONDO:0018094	OMIM:600193	OMIMPS:193500	Waardenburg syndrome
 MONDO:0010844	epiphyseal dysplasia, multiple, 2	MONDO:0016648	OMIM:600204	OMIMPS:132400	multiple epiphyseal dysplasia
 MONDO:0010847	spinocerebellar ataxia type 4	MONDO:0020380	OMIM:600223	OMIMPS:164400	autosomal dominant cerebellar ataxia
@@ -4061,7 +4058,6 @@ MONDO:0011095	dilated cardiomyopathy 1D	MONDO:0016333	OMIM:601494	OMIMPS:115200	
 MONDO:0011101	peroxisome biogenesis disorder 1B	MONDO:0019234	OMIM:601539	OMIMPS:214100	peroxisome biogenesis disorder
 MONDO:0011113	Charcot-Marie-Tooth disease type 4C	MONDO:0015626	OMIM:601596	OMIMPS:118220	Charcot-Marie-Tooth disease
 MONDO:0011125	trichothiodystrophy 1, photosensitive	MONDO:0018053	OMIM:601675	OMIMPS:601675	trichothiodystrophy
-MONDO:0011144	ceroid lipofuscinosis, neuronal, 6A	MONDO:0016295	OMIM:601780	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0011151	exudative vitreoretinopathy 4	MONDO:0019516	OMIM:601813	OMIMPS:133780	exudative vitreoretinopathy
 MONDO:0011153	hyperinsulinemic hypoglycemia, familial, 2	MONDO:0005803	OMIM:601820	OMIMPS:256450	hyperinsulinemic hypoglycemia
 MONDO:0011162	cataract 14 multiple types	MONDO:0005129	OMIM:601885	OMIMPS:116200	cataract
@@ -4172,8 +4168,10 @@ MONDO:0012181	hereditary spastic paraplegia 27	MONDO:0019064	OMIM:609041	OMIMPS:
 MONDO:0012188	neuronal ceroid lipofuscinosis 9	MONDO:0016295	OMIM:609055	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0012213	hereditary spastic paraplegia 26	MONDO:0019064	OMIM:609195	OMIMPS:303350	hereditary spastic paraplegia
 MONDO:0012231	Charcot-Marie-Tooth disease type 2A2	MONDO:0015626	OMIM:609260	OMIMPS:118220	Charcot-Marie-Tooth disease
+MONDO:0012237	nemaline myopathy 6	MONDO:0018958	OMIM:609273	OMIMPS:256030	nemaline myopathy
 MONDO:0012238	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 2	MONDO:0000090	OMIM:609283	OMIMPS:157640	progressive external ophthalmoplegia with mitochondrial DNA deletions
 MONDO:0012239	congenital myopathy 4B, autosomal recessive	MONDO:0019952	OMIM:609284	OMIMPS:117000	congenital myopathy
+MONDO:0012240	congenital myopathy 23	MONDO:0018958	OMIM:609285	OMIMPS:256030	nemaline myopathy
 MONDO:0012240	congenital myopathy 23	MONDO:0019952	OMIM:609285	OMIMPS:117000	congenital myopathy
 MONDO:0012241	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 3	MONDO:0000090	OMIM:609286	OMIMPS:157640	progressive external ophthalmoplegia with mitochondrial DNA deletions
 MONDO:0012246	spinocerebellar ataxia type 26	MONDO:0020380	OMIM:609306	OMIMPS:164400	autosomal dominant cerebellar ataxia
@@ -4192,9 +4190,9 @@ MONDO:0012381	hyperinsulinism due to INSR deficiency	MONDO:0005803	OMIM:609968	O
 MONDO:0012382	hyperinsulinemic hypoglycemia, familial, 4	MONDO:0005803	OMIM:609975	OMIMPS:256450	hyperinsulinemic hypoglycemia
 MONDO:0012391	neuronal ceroid lipofuscinosis 8 northern epilepsy variant	MONDO:0016295	OMIM:610003	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0012396	exercise-induced hyperinsulinism	MONDO:0005803	OMIM:610021	OMIMPS:256450	hyperinsulinemic hypoglycemia
+MONDO:0012400	cortical dysplasia-focal epilepsy syndrome	MONDO:0980732	OMIM:610042	OMIMPS:610954	Pitt-Hopkins or Pitt-Hopkins-like syndrome
 MONDO:0012406	hyperparathyroidism 3	MONDO:0016166	OMIM:610071	OMIMPS:145000	hereditary hyperparathyroidism
 MONDO:0012410	Finnish upper limb-onset distal myopathy	MONDO:0018949	OMIM:610099	OMIMPS:160500	distal myopathy
-MONDO:0012414	neuronal ceroid lipofuscinosis 10	MONDO:0016295	OMIM:610127	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0012415	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 4	MONDO:0000090	OMIM:610131	OMIMPS:157640	progressive external ophthalmoplegia with mitochondrial DNA deletions
 MONDO:0012426	immunodeficiency 25	MONDO:0021094	OMIM:610163	OMIMPS:300755	immunodeficiency disease
 MONDO:0012437	cataract 21 multiple types	MONDO:0005129	OMIM:610202	OMIMPS:116200	cataract
@@ -4207,6 +4205,7 @@ MONDO:0012519	Rubinstein-Taybi syndrome due to 16p13.3 microdeletion	MONDO:00191
 MONDO:0012527	cataract 11 multiple types	MONDO:0005129	OMIM:610623	OMIMPS:116200	cataract
 MONDO:0012528	hypogonadotropic hypogonadism 4 with or without anosmia	MONDO:0018555	OMIM:610628	OMIMPS:147950	hypogonadotropic hypogonadism
 MONDO:0012536	osteogenesis imperfecta type 7	MONDO:0019019	OMIM:610682	OMIMPS:166200	osteogenesis imperfecta
+MONDO:0012538	nemaline myopathy 7	MONDO:0018958	OMIM:610687	OMIMPS:256030	nemaline myopathy
 MONDO:0012543	optic atrophy 5	MONDO:0043878	OMIM:610708	OMIMPS:165500	hereditary optic atrophy
 MONDO:0012546	nephrotic syndrome, type 3	MONDO:0002350	OMIM:610725	OMIMPS:256300	familial nephrotic syndrome
 MONDO:0012548	Kostmann syndrome	MONDO:0018542	OMIM:610738	OMIMPS:202700	severe congenital neutropenia
@@ -4357,6 +4356,7 @@ MONDO:0013671	hydatidiform mole, recurrent, 2	MONDO:0006248	OMIM:614293	OMIMPS:2
 MONDO:0013677	Emery-Dreifuss muscular dystrophy 7, autosomal dominant	MONDO:0016830	OMIM:614302	OMIMPS:310300	Emery-Dreifuss muscular dystrophy
 MONDO:0013686	distal myopathy, Tateyama type	MONDO:0018949	OMIM:614321	OMIMPS:160500	distal myopathy
 MONDO:0013687	autosomal recessive spinocerebellar ataxia 12	MONDO:0015244	OMIM:614322	OMIMPS:213200	autosomal recessive cerebellar ataxia
+MONDO:0013690	Pitt-Hopkins-like syndrome 2	MONDO:0980732	OMIM:614325	OMIMPS:610954	Pitt-Hopkins or Pitt-Hopkins-like syndrome
 MONDO:0013698	arthrogryposis, distal, type 1B	MONDO:0019942	OMIM:614335	OMIMPS:108120	distal arthrogryposis
 MONDO:0013699	Lynch syndrome 4	MONDO:0018630	OMIM:614337	OMIMPS:120435	hereditary nonpolyposis colon cancer
 MONDO:0013710	Lynch syndrome 5	MONDO:0018630	OMIM:614350	OMIMPS:120435	hereditary nonpolyposis colon cancer
@@ -4456,6 +4456,7 @@ MONDO:0014118	congenital neutropenia-myelofibrosis-nephromegaly syndrome	MONDO:0
 MONDO:0014128	TCF12-related craniosynostosis	MONDO:0015469	OMIM:615314	OMIMPS:123100	craniosynostosis
 MONDO:0014130	Dowling-Degos disease 2	MONDO:0000118	OMIM:615327	OMIMPS:179850	reticulate pigment disorder
 MONDO:0014133	developmental and epileptic encephalopathy, 16	MONDO:0100062	OMIM:615338	OMIMPS:308350	genetic developmental and epileptic encephalopathy
+MONDO:0014138	nemaline myopathy 8	MONDO:0018958	OMIM:615348	OMIMPS:256030	nemaline myopathy
 MONDO:0014139	Ehlers-Danlos syndrome, spondylodysplastic type, 2	MONDO:0020066	OMIM:615349	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0014147	neuronal ceroid lipofuscinosis 13	MONDO:0016295	OMIM:615362	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0014150	developmental and epileptic encephalopathy 94	MONDO:0100062	OMIM:615369	OMIMPS:308350	genetic developmental and epileptic encephalopathy
@@ -4492,6 +4493,7 @@ MONDO:0014305	hereditary spastic paraplegia 63	MONDO:0019064	OMIM:615686	OMIMPS:
 MONDO:0014307	Dowling-Degos disease 4	MONDO:0000118	OMIM:615696	OMIMPS:179850	reticulate pigment disorder
 MONDO:0014308	familial temporal lobe epilepsy 6	MONDO:0005115	OMIM:615697	OMIMPS:600512	temporal lobe epilepsy
 MONDO:0014311	autosomal recessive spinocerebellar ataxia 15	MONDO:0015244	OMIM:615705	OMIMPS:213200	autosomal recessive cerebellar ataxia
+MONDO:0014326	nemaline myopathy 9	MONDO:0018958	OMIM:615731	OMIMPS:256030	nemaline myopathy
 MONDO:0014334	severe combined immunodeficiency due to LCK deficiency	MONDO:0021094	OMIM:615758	OMIMPS:300755	immunodeficiency disease
 MONDO:0014360	developmental and epileptic encephalopathy, 21	MONDO:0100062	OMIM:615833	OMIMPS:308350	genetic developmental and epileptic encephalopathy
 MONDO:0014361	autism spectrum disorder due to AUTS2 deficiency	MONDO:0100172	OMIM:615834	OMIMPS:156200	intellectual disability, autosomal dominant
@@ -4518,6 +4520,7 @@ MONDO:0014503	autosomal recessive spinocerebellar ataxia 17	MONDO:0015244	OMIM:6
 MONDO:0014508	vitelliform macular dystrophy 4	MONDO:0000390	OMIM:616151	OMIMPS:153840	vitelliform macular dystrophy
 MONDO:0014509	vitelliform macular dystrophy 5	MONDO:0000390	OMIM:616152	OMIMPS:153840	vitelliform macular dystrophy
 MONDO:0014511	Charcot-Marie-Tooth disease axonal type 2S	MONDO:0015626	OMIM:616155	OMIMPS:118220	Charcot-Marie-Tooth disease
+MONDO:0014513	nemaline myopathy 10	MONDO:0018958	OMIM:616165	OMIMPS:256030	nemaline myopathy
 MONDO:0014530	autosomal recessive spinocerebellar ataxia 18	MONDO:0015244	OMIM:616204	OMIMPS:213200	autosomal recessive cerebellar ataxia
 MONDO:0014533	developmental and epileptic encephalopathy, 28	MONDO:0100062	OMIM:616211	OMIMPS:308350	genetic developmental and epileptic encephalopathy
 MONDO:0014534	lissencephaly 6 with microcephaly	MONDO:0018838	OMIM:616212	OMIMPS:607432	lissencephaly spectrum disorders
@@ -4776,6 +4779,7 @@ MONDO:0005620	cerebral amyloid angiopathy	MONDO:0019065	Orphanet:85458	Orphanet:
 MONDO:0005696	central nervous system tuberculosis	MONDO:0018076	Orphanet:641396	Orphanet:3389	tuberculosis
 MONDO:0005696	central nervous system tuberculosis	MONDO:0020010	Orphanet:641396	Orphanet:98010	infectious disorder of the nervous system
 MONDO:0005744	yolk sac tumor	MONDO:0020539	Orphanet:876	Orphanet:99913	extragonadal non-dysgerminomatous germ cell tumor
+MONDO:0005754	epilepsy with generalized tonic-clonic seizures	MONDO:0100619	Orphanet:698005	Orphanet:699645	variable age epilepsy syndrome
 MONDO:0005820	Lassa fever	MONDO:0018087	Orphanet:99824	Orphanet:341	viral hemorrhagic fever
 MONDO:0005969	st. Louis encephalitis	MONDO:0006009	Orphanet:83484	Orphanet:98252	viral encephalitis
 MONDO:0006009	viral encephalitis	MONDO:0019956	Orphanet:98252	Orphanet:97275	encephalitis
@@ -4785,6 +4789,7 @@ MONDO:0006210	fibrolamellar hepatocellular carcinoma	MONDO:0018531	Orphanet:4019
 MONDO:0006335	ovarian endometrioid adenocarcinoma	MONDO:0018364	Orphanet:454723	Orphanet:398934	malignant epithelial tumor of ovary
 MONDO:0006558	pemphigoid gestationis	MONDO:0019337	Orphanet:63275	Orphanet:79669	autoimmune bullous skin disease
 MONDO:0006639	adrenal cortex carcinoma	MONDO:0021227	Orphanet:1501	Orphanet:100091	adrenal gland neoplasm
+MONDO:0006770	giant cell reparative granuloma	MONDO:0019060	Orphanet:696078	Orphanet:68411	bone neoplasm
 MONDO:0006913	pneumococcal meningitis	MONDO:0020010	Orphanet:55655	Orphanet:98010	infectious disorder of the nervous system
 MONDO:0007041	Apert syndrome	MONDO:0015338	Orphanet:87	Orphanet:139393	syndromic craniosynostosis
 MONDO:0007042	Saethre-Chotzen syndrome	MONDO:0015338	Orphanet:794	Orphanet:139393	syndromic craniosynostosis
@@ -4842,8 +4847,6 @@ MONDO:0008720	congenital isolated adrenocorticotropic hormone deficiency	MONDO:0
 MONDO:0008737	congenital afibrinogenemia	MONDO:0018060	Orphanet:98880	Orphanet:335	congenital fibrinogen deficiency
 MONDO:0008752	Alexander disease	MONDO:0024237	Orphanet:58	Orphanet:183500	inherited neurodegenerative disorder
 MONDO:0008757	alopecia universalis congenita	MONDO:0004907	Orphanet:701	Orphanet:79364	alopecia
-MONDO:0008767	neuronal ceroid lipofuscinosis 3	MONDO:0016295	Orphanet:228346	Orphanet:216	neuronal ceroid lipofuscinosis
-MONDO:0008769	neuronal ceroid lipofuscinosis 2	MONDO:0016295	Orphanet:228349	Orphanet:216	neuronal ceroid lipofuscinosis
 MONDO:0008814	arginase deficiency	MONDO:0004739	Orphanet:90	Orphanet:79167	urea cycle disorder
 MONDO:0008815	argininosuccinic aciduria	MONDO:0004739	Orphanet:23	Orphanet:79167	urea cycle disorder
 MONDO:0008818	arterial tortuosity syndrome	MONDO:0016175	Orphanet:3342	Orphanet:209	cutis laxa
@@ -4882,6 +4885,7 @@ MONDO:0009583	blepharophimosis - intellectual disability syndrome, Ohdo type	MON
 MONDO:0009593	spondylometaphyseal dysplasia, Sedaghatian type	MONDO:0019694	Orphanet:93317	Orphanet:93434	spondylodysplastic dysplasia
 MONDO:0009650	mucolipidosis type II	MONDO:0019248	Orphanet:576	Orphanet:79212	mucolipidosis
 MONDO:0009653	mucolipidosis type IV	MONDO:0019248	Orphanet:578	Orphanet:79212	mucolipidosis
+MONDO:0009696	juvenile myoclonic epilepsy	MONDO:0100619	Orphanet:307	Orphanet:699645	variable age epilepsy syndrome
 MONDO:0009705	carnitine palmitoyl transferase 1A deficiency	MONDO:0017716	Orphanet:156	Orphanet:309130	disorder of carnitine cycle and carnitine transport
 MONDO:0009711	congenital fiber-type disproportion myopathy	MONDO:0019952	Orphanet:2020	Orphanet:97245	congenital myopathy
 MONDO:0009726	proteosome-associated autoinflammatory syndrome	MONDO:0700264	Orphanet:324977	Orphanet:477647	type 1 interferonopathy
@@ -4913,6 +4917,7 @@ MONDO:0010271	X-linked myotubular myopathy-abnormal genitalia syndrome	MONDO:001
 MONDO:0010293	ectodermal dysplasia and immune deficiency	MONDO:0019287	Orphanet:98813	Orphanet:79373	ectodermal dysplasia syndrome
 MONDO:0010339	epilepsy, X-linked 1, with variable learning disabilities and behavior disorders	MONDO:0015653	Orphanet:85294	Orphanet:166472	monogenic epilepsy
 MONDO:0010375	developmental and epileptic encephalopathy, 8	MONDO:0017658	Orphanet:163985	Orphanet:306773	hyperekplexia
+MONDO:0010396	developmental and epileptic encephalopathy, 2	MONDO:0100022	Orphanet:505652	Orphanet:693802	neonatal/infantile epilepsy syndrome
 MONDO:0010401	X-linked myopathy with postural muscle atrophy	MONDO:0016106	Orphanet:178461	Orphanet:206644	progressive muscular dystrophy
 MONDO:0010466	multiple congenital anomalies-hypotonia-seizures syndrome 2	MONDO:0015159	Orphanet:300496	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0010477	blepharophimosis - intellectual disability syndrome, MKB type	MONDO:0017393	Orphanet:293707	Orphanet:293642	blepharophimosis - intellectual disability syndrome
@@ -4933,16 +4938,15 @@ MONDO:0010787	Kearns-Sayre syndrome	MONDO:0009637	Orphanet:480	Orphanet:206966	i
 MONDO:0010789	MELAS syndrome	MONDO:0009637	Orphanet:550	Orphanet:206966	inborn mitochondrial myopathy
 MONDO:0010790	MERRF syndrome	MONDO:0009637	Orphanet:551	Orphanet:206966	inborn mitochondrial myopathy
 MONDO:0010826	childhood absence epilepsy	MONDO:0020072	Orphanet:64280	Orphanet:98259	childhood-onset epilepsy syndrome
-MONDO:0010830	neuronal ceroid lipofuscinosis 8	MONDO:0016295	Orphanet:228354	Orphanet:216	neuronal ceroid lipofuscinosis
 MONDO:0010857	semantic dementia	MONDO:0017276	Orphanet:100069	Orphanet:282	frontotemporal dementia
 MONDO:0010857	semantic dementia	MONDO:0019806	Orphanet:100069	Orphanet:95432	primary progressive aphasia
 MONDO:0010870	tibial muscular dystrophy	MONDO:0016191	Orphanet:609	Orphanet:209053	neuromuscular disease caused by qualitative or quantitative defects of titin
+MONDO:0010898	autosomal dominant epilepsy with auditory features	MONDO:0100619	Orphanet:101046	Orphanet:699645	variable age epilepsy syndrome
 MONDO:0010921	nasal dermoid cyst	MONDO:0015476	Orphanet:141103	Orphanet:155835	cysts and fistulae of the face and oral cavity
 MONDO:0010988	aplasia cutis-myopia syndrome	MONDO:0019294	Orphanet:1117	Orphanet:79380	mixed dermis disorder
 MONDO:0011006	hereditary spastic paraplegia 9A	MONDO:0015087	Orphanet:447753	Orphanet:100979	autosomal dominant complex spastic paraplegia
 MONDO:0011012	African iron overload	MONDO:0017763	Orphanet:139507	Orphanet:309842	disorder of iron metabolism and transport
 MONDO:0011073	diabetes mellitus, transient neonatal, 1	MONDO:0016391	Orphanet:99886	Orphanet:224	neonatal diabetes mellitus
-MONDO:0011144	ceroid lipofuscinosis, neuronal, 6A	MONDO:0016295	Orphanet:228363	Orphanet:216	neuronal ceroid lipofuscinosis
 MONDO:0011176	intestinal hypomagnesemia 1	MONDO:0015962	Orphanet:30924	Orphanet:183592	inherited renal tubular disease
 MONDO:0011176	intestinal hypomagnesemia 1	MONDO:0017765	Orphanet:30924	Orphanet:309848	disorder of magnesium transport
 MONDO:0011217	desmosterolosis	MONDO:0019240	Orphanet:35107	Orphanet:79195	sterol biosynthesis disorder
@@ -4973,10 +4977,10 @@ MONDO:0011996	chronic myelogenous leukemia, BCR-ABL1 positive	MONDO:0020076	Orph
 MONDO:0012041	familial adenomatous polyposis 2	MONDO:0015185	Orphanet:247798	Orphanet:104010	intestinal polyposis syndrome
 MONDO:0012127	autosomal recessive limb-girdle muscular dystrophy type 2J	MONDO:0016191	Orphanet:140922	Orphanet:209053	neuromuscular disease caused by qualitative or quantitative defects of titin
 MONDO:0012177	posterior column ataxia-retinitis pigmentosa syndrome	MONDO:0020046	Orphanet:88628	Orphanet:98098	autosomal recessive degenerative and progressive cerebellar ataxia
-MONDO:0012414	neuronal ceroid lipofuscinosis 10	MONDO:0016295	Orphanet:228337	Orphanet:216	neuronal ceroid lipofuscinosis
 MONDO:0012447	synpolydactyly type 3	MONDO:0021651	Orphanet:295199	Orphanet:93403	synpolydactyly
 MONDO:0012519	Rubinstein-Taybi syndrome due to 16p13.3 microdeletion	MONDO:0016894	Orphanet:353281	Orphanet:261956	partial deletion of the short arm of chromosome 16
 MONDO:0012519	Rubinstein-Taybi syndrome due to 16p13.3 microdeletion	MONDO:0019188	Orphanet:353281	Orphanet:783	Rubinstein-Taybi syndrome
+MONDO:0012589	Pitt-Hopkins syndrome	MONDO:0015159	Orphanet:2896	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0012591	osteogenesis imperfecta type 5	MONDO:0019019	Orphanet:216828	Orphanet:666	osteogenesis imperfecta
 MONDO:0012669	Legius syndrome	MONDO:0021060	Orphanet:137605	Orphanet:536391	RASopathy
 MONDO:0012679	autosomal recessive osteopetrosis 6	MONDO:0017198	Orphanet:210110	Orphanet:2781	osteopetrosis
@@ -4986,6 +4990,7 @@ MONDO:0012714	early-onset myopathy with fatal cardiomyopathy	MONDO:0016191	Orpha
 MONDO:0012719	combined PSAP deficiency	MONDO:0019255	Orphanet:139406	Orphanet:79225	sphingolipidosis
 MONDO:0012724	familial cold autoinflammatory syndrome 2	MONDO:0017953	Orphanet:247868	Orphanet:324924	hereditary periodic fever syndrome
 MONDO:0012740	chromosome 22q11.2 deletion syndrome, distal	MONDO:0022760	Orphanet:261330	Orphanet:262182	chromosome 22q deletion
+MONDO:0012853	Fontaine progeroid syndrome	MONDO:0019303	Orphanet:697101	Orphanet:79389	premature aging syndrome
 MONDO:0012859	autosomal recessive osteopetrosis 7	MONDO:0017198	Orphanet:178389	Orphanet:2781	osteopetrosis
 MONDO:0013016	leukocyte adhesion deficiency 3	MONDO:0017198	Orphanet:99844	Orphanet:2781	osteopetrosis
 MONDO:0013115	RIN2 syndrome	MONDO:0016175	Orphanet:217335	Orphanet:209	cutis laxa
@@ -5152,6 +5157,7 @@ MONDO:0018023	hemoglobin M disease	MONDO:0019050	Orphanet:330041	Orphanet:68364	
 MONDO:0018031	granulomatous slack skin disease	MONDO:0015821	Orphanet:33111	Orphanet:178566	mycosis fungoides and variants
 MONDO:0018059	meningococcal meningitis	MONDO:0020010	Orphanet:33475	Orphanet:98010	infectious disorder of the nervous system
 MONDO:0018083	transient tyrosinemia of the newborn	MONDO:0017307	Orphanet:3402	Orphanet:284818	disorder of tyrosine metabolism
+MONDO:0018097	infantile spasms	MONDO:0100022	Orphanet:697160	Orphanet:693802	neonatal/infantile epilepsy syndrome
 MONDO:0018155	lateral sclerosis	MONDO:0020128	Orphanet:35689	Orphanet:98503	motor neuron disorder
 MONDO:0018155	lateral sclerosis	MONDO:0024237	Orphanet:35689	Orphanet:183500	inherited neurodegenerative disorder
 MONDO:0018159	atypical hemolytic-uremic syndrome with DGKE deficiency	MONDO:0001549	Orphanet:357008	Orphanet:544458	hemolytic-uremic syndrome
@@ -5234,6 +5240,8 @@ MONDO:0019930	Leydig cell hypoplasia due to complete LH resistance	MONDO:0019155
 MONDO:0019931	Leydig cell hypoplasia due to partial LH resistance	MONDO:0019155	Orphanet:96266	Orphanet:755	Leydig cell hypoplasia
 MONDO:0019949	zebra body myopathy	MONDO:0019952	Orphanet:97240	Orphanet:97245	congenital myopathy
 MONDO:0019962	thyroid lymphoma	MONDO:0015074	Orphanet:97285	Orphanet:100087	thyroid tumor
+MONDO:0020074	progressive myoclonus epilepsy	MONDO:0100619	Orphanet:98261	Orphanet:699645	variable age epilepsy syndrome
+MONDO:0020310	familial focal epilepsy with variable foci	MONDO:0100619	Orphanet:98820	Orphanet:699645	variable age epilepsy syndrome
 MONDO:0020325	anaplastic large cell lymphoma	MONDO:0015760	Orphanet:98841	Orphanet:171918	T-cell non-Hodgkin lymphoma
 MONDO:0020378	early-onset posterior polar cataract	MONDO:0020377	Orphanet:98993	Orphanet:98992	early-onset partial cataract
 MONDO:0020380	autosomal dominant cerebellar ataxia	MONDO:0100309	Orphanet:99	Orphanet:183518	hereditary ataxia
@@ -5270,6 +5278,8 @@ MONDO:0035764	idiopathic steroid-sensitive nephrotic syndrome with secondary ste
 MONDO:0035826	symptomatic form of X-linked centronuclear myopathy in female carriers	MONDO:0018947	Orphanet:604680	Orphanet:595	centronuclear myopathy
 MONDO:0043317	amyopathic dermatomyositis	MONDO:0016367	Orphanet:645617	Orphanet:221	dermatomyositis
 MONDO:0044300	familial adenomatous polyposis 4	MONDO:0015185	Orphanet:480536	Orphanet:104010	intestinal polyposis syndrome
+MONDO:0044638	hypopharynx squamous cell carcinoma	MONDO:0010150	Orphanet:494547	Orphanet:67037	head and neck squamous cell carcinoma
+MONDO:0044704	oropharynx squamous cell carcinoma	MONDO:0010150	Orphanet:500478	Orphanet:67037	head and neck squamous cell carcinoma
 MONDO:0044742	autosomal recessive epidermolytic ichthyosis	MONDO:0017266	Orphanet:512103	Orphanet:281103	keratinopathic ichthyosis
 MONDO:0044791	combined hepatocellular carcinoma and cholangiocarcinoma	MONDO:0018531	Orphanet:529852	Orphanet:424936	carcinoma of liver and intrahepatic biliary tract
 MONDO:0044791	combined hepatocellular carcinoma and cholangiocarcinoma	MONDO:0018918	Orphanet:529852	Orphanet:56044	carcinoma of gallbladder and extrahepatic biliary tract
@@ -5282,7 +5292,10 @@ MONDO:0100294	mitochondrial complex II deficiency, nuclear type 1	MONDO:0009637	
 MONDO:0100325	odontochondrodysplasia 1	MONDO:0016763	Orphanet:166272	Orphanet:254	spondylometaphyseal dysplasia
 MONDO:0100462	short stature and advanced bone age, with or without early-onset osteoarthritis and/or osteochondritis dissecans	MONDO:0005380	Orphanet:251262	Orphanet:399158	osteonecrosis
 MONDO:0100552	ATTRV30M amyloidosis	MONDO:0007100	Orphanet:85447	Orphanet:271861	familial amyloid neuropathy
+MONDO:0100566	myoclonic epilepsy in infancy	MONDO:0100022	Orphanet:86909	Orphanet:693802	neonatal/infantile epilepsy syndrome
 MONDO:0100600	hypomyelinating leukodystrophy-ataxia-hypodontia-hypomyelination syndrome	MONDO:0100605	Orphanet:137639	Orphanet:289494	POLR-related leukodystrophy
+MONDO:0800453	juvenile absence epilepsy	MONDO:0100619	Orphanet:1941	Orphanet:699645	variable age epilepsy syndrome
+MONDO:0800491	early-infantile DEE	MONDO:0100022	Orphanet:1934	Orphanet:693802	neonatal/infantile epilepsy syndrome
 MONDO:0800493	familial mesial temporal lobe epilepsy	MONDO:0017704	Orphanet:163717	Orphanet:309	familial partial epilepsy
 MONDO:0800501	developmental and/or epileptic encephalopathy with spike-wave activation in sleep	MONDO:0020072	Orphanet:725	Orphanet:98259	childhood-onset epilepsy syndrome
 MONDO:0850088	EGF-related primary hypomagnesemia with intellectual disability	MONDO:0015962	Orphanet:620368	Orphanet:183592	inherited renal tubular disease

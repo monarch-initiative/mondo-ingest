@@ -49,6 +49,7 @@ MONDO:0008002	mirror movements 1	MONDO:0016558	OMIM:157600	OMIMPS:157600	familia
 MONDO:0008024	neuronopathy, distal hereditary motor, type 7A	MONDO:0015362	OMIM:158580	OMIMPS:182960	neuronopathy, distal hereditary motor, autosomal dominant
 MONDO:0008025	neuronopathy, distal hereditary motor, type 2A	MONDO:0015362	OMIM:158590	OMIMPS:182960	neuronopathy, distal hereditary motor, autosomal dominant
 MONDO:0008044	myoclonic dystonia 11	MONDO:0044807	OMIM:159900	OMIMPS:128100	inherited dystonia
+MONDO:0008070	congenital myopathy 2a, typical, autosomal dominant	MONDO:0018958	OMIM:161800	OMIMPS:256030	nemaline myopathy
 MONDO:0008070	congenital myopathy 2a, typical, autosomal dominant	MONDO:0019952	OMIM:161800	OMIMPS:117000	congenital myopathy
 MONDO:0008082	multiple endocrine neoplasia type 2B	MONDO:0017169	OMIM:162300	OMIMPS:131100	multiple endocrine neoplasia
 MONDO:0008083	ceroid lipofuscinosis, neuronal, 4 (Kufs type)	MONDO:0016295	OMIM:162350	OMIMPS:256730	neuronal ceroid lipofuscinosis
@@ -75,9 +76,6 @@ MONDO:0008736	peroxisome biogenesis disorder 2B	MONDO:0019234	OMIM:202370	OMIMPS
 MONDO:0008745	oculocutaneous albinism type 1A	MONDO:0018910	OMIM:203100	OMIMPS:203100	oculocutaneous albinism
 MONDO:0008748	Hermansky-Pudlak syndrome 1	MONDO:0019312	OMIM:203300	OMIMPS:203300	Hermansky-Pudlak syndrome
 MONDO:0008758	mitochondrial DNA depletion syndrome 4a	MONDO:0018158	OMIM:203700	OMIMPS:603041	mitochondrial DNA depletion syndrome
-MONDO:0008767	neuronal ceroid lipofuscinosis 3	MONDO:0016295	OMIM:204200	OMIMPS:256730	neuronal ceroid lipofuscinosis
-MONDO:0008768	ceroid lipofuscinosis, neuronal, 6B (Kufs type)	MONDO:0016295	OMIM:204300	OMIMPS:256730	neuronal ceroid lipofuscinosis
-MONDO:0008769	neuronal ceroid lipofuscinosis 2	MONDO:0016295	OMIM:204500	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0008770	amelogenesis imperfecta type 1C	MONDO:0019507	OMIM:204650	OMIMPS:104500	amelogenesis imperfecta
 MONDO:0008772	amelogenesis imperfecta type 2A1	MONDO:0019507	OMIM:204700	OMIMPS:104500	amelogenesis imperfecta
 MONDO:0008780	amyotrophic lateral sclerosis type 2, juvenile	MONDO:0005144	OMIM:205100	OMIMPS:105400	familial amyotrophic lateral sclerosis
@@ -126,6 +124,7 @@ MONDO:0009689	congenital myasthenic syndrome 6	MONDO:0018940	OMIM:254210	OMIMPS:
 MONDO:0009690	congenital myasthenic syndrome 10	MONDO:0018940	OMIM:254300	OMIMPS:601462	congenital myasthenic syndrome
 MONDO:0009709	myopathy, centronuclear, 2	MONDO:0018947	OMIM:255200	OMIMPS:160150	centronuclear myopathy
 MONDO:0009712	congenital multicore myopathy with external ophthalmoplegia	MONDO:0019952	OMIM:255320	OMIMPS:117000	congenital myopathy
+MONDO:0009725	nemaline myopathy 2	MONDO:0018958	OMIM:256030	OMIMPS:256030	nemaline myopathy
 MONDO:0009747	mitochondrial DNA depletion syndrome 6 (hepatocerebral type)	MONDO:0018158	OMIM:256810	OMIMPS:603041	mitochondrial DNA depletion syndrome
 MONDO:0009760	Norman-Roberts syndrome	MONDO:0018838	OMIM:257320	OMIMPS:607432	lissencephaly spectrum disorders
 MONDO:0009773	odonto-onycho-dermal dysplasia	MONDO:0019287	OMIM:257980	OMIMPS:305100	ectodermal dysplasia syndrome
@@ -168,6 +167,7 @@ MONDO:0010378	X-linked hereditary sensory and autonomic neuropathy with hearing 
 MONDO:0010385	X-linked lymphoproliferative disease due to XIAP deficiency	MONDO:0016537	OMIM:300635	OMIMPS:308240	lymphoproliferative syndrome
 MONDO:0010386	immunodeficiency 33	MONDO:0021094	OMIM:300636	OMIMPS:300755	immunodeficiency disease
 MONDO:0010401	X-linked myopathy with postural muscle atrophy	MONDO:0016830	OMIM:300696	OMIMPS:310300	Emery-Dreifuss muscular dystrophy
+MONDO:0010417	syndromic X-linked intellectual disability Najm type	MONDO:0020119	OMIM:300749	OMIMPS:309510	X-linked syndromic intellectual disability
 MONDO:0010418	hereditary spastic paraplegia 34	MONDO:0019064	OMIM:300750	OMIMPS:303350	hereditary spastic paraplegia
 MONDO:0010421	Bruton-type agammaglobulinemia	MONDO:0015977	OMIM:300755	OMIMPS:601495	agammaglobulinemia
 MONDO:0010421	Bruton-type agammaglobulinemia	MONDO:0021094	OMIM:300755	OMIMPS:300755	immunodeficiency disease
@@ -201,7 +201,6 @@ MONDO:0010730	combined immunodeficiency, X-linked	MONDO:0021094	OMIM:312863	OMIM
 MONDO:0010747	X-linked dystonia-parkinsonism	MONDO:0044807	OMIM:314250	OMIMPS:128100	inherited dystonia
 MONDO:0010820	autosomal recessive juvenile Parkinson disease 2	MONDO:0005180	OMIM:600116	OMIMPS:168600	Parkinson disease
 MONDO:0010829	CARASIL syndrome	MONDO:0007432	OMIM:600142	OMIMPS:125310	cerebral arteriopathy with subcortical infarcts and leukoencephalopathy
-MONDO:0010830	neuronal ceroid lipofuscinosis 8	MONDO:0016295	OMIM:600143	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0010841	Waardenburg syndrome type 2B	MONDO:0018094	OMIM:600193	OMIMPS:193500	Waardenburg syndrome
 MONDO:0010844	epiphyseal dysplasia, multiple, 2	MONDO:0016648	OMIM:600204	OMIMPS:132400	multiple epiphyseal dysplasia
 MONDO:0010847	spinocerebellar ataxia type 4	MONDO:0020380	OMIM:600223	OMIMPS:164400	autosomal dominant cerebellar ataxia
@@ -230,7 +229,6 @@ MONDO:0011095	dilated cardiomyopathy 1D	MONDO:0016333	OMIM:601494	OMIMPS:115200	
 MONDO:0011101	peroxisome biogenesis disorder 1B	MONDO:0019234	OMIM:601539	OMIMPS:214100	peroxisome biogenesis disorder
 MONDO:0011113	Charcot-Marie-Tooth disease type 4C	MONDO:0015626	OMIM:601596	OMIMPS:118220	Charcot-Marie-Tooth disease
 MONDO:0011125	trichothiodystrophy 1, photosensitive	MONDO:0018053	OMIM:601675	OMIMPS:601675	trichothiodystrophy
-MONDO:0011144	ceroid lipofuscinosis, neuronal, 6A	MONDO:0016295	OMIM:601780	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0011151	exudative vitreoretinopathy 4	MONDO:0019516	OMIM:601813	OMIMPS:133780	exudative vitreoretinopathy
 MONDO:0011153	hyperinsulinemic hypoglycemia, familial, 2	MONDO:0005803	OMIM:601820	OMIMPS:256450	hyperinsulinemic hypoglycemia
 MONDO:0011162	cataract 14 multiple types	MONDO:0005129	OMIM:601885	OMIMPS:116200	cataract
@@ -341,8 +339,10 @@ MONDO:0012181	hereditary spastic paraplegia 27	MONDO:0019064	OMIM:609041	OMIMPS:
 MONDO:0012188	neuronal ceroid lipofuscinosis 9	MONDO:0016295	OMIM:609055	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0012213	hereditary spastic paraplegia 26	MONDO:0019064	OMIM:609195	OMIMPS:303350	hereditary spastic paraplegia
 MONDO:0012231	Charcot-Marie-Tooth disease type 2A2	MONDO:0015626	OMIM:609260	OMIMPS:118220	Charcot-Marie-Tooth disease
+MONDO:0012237	nemaline myopathy 6	MONDO:0018958	OMIM:609273	OMIMPS:256030	nemaline myopathy
 MONDO:0012238	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 2	MONDO:0000090	OMIM:609283	OMIMPS:157640	progressive external ophthalmoplegia with mitochondrial DNA deletions
 MONDO:0012239	congenital myopathy 4B, autosomal recessive	MONDO:0019952	OMIM:609284	OMIMPS:117000	congenital myopathy
+MONDO:0012240	congenital myopathy 23	MONDO:0018958	OMIM:609285	OMIMPS:256030	nemaline myopathy
 MONDO:0012240	congenital myopathy 23	MONDO:0019952	OMIM:609285	OMIMPS:117000	congenital myopathy
 MONDO:0012241	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 3	MONDO:0000090	OMIM:609286	OMIMPS:157640	progressive external ophthalmoplegia with mitochondrial DNA deletions
 MONDO:0012246	spinocerebellar ataxia type 26	MONDO:0020380	OMIM:609306	OMIMPS:164400	autosomal dominant cerebellar ataxia
@@ -361,9 +361,9 @@ MONDO:0012381	hyperinsulinism due to INSR deficiency	MONDO:0005803	OMIM:609968	O
 MONDO:0012382	hyperinsulinemic hypoglycemia, familial, 4	MONDO:0005803	OMIM:609975	OMIMPS:256450	hyperinsulinemic hypoglycemia
 MONDO:0012391	neuronal ceroid lipofuscinosis 8 northern epilepsy variant	MONDO:0016295	OMIM:610003	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0012396	exercise-induced hyperinsulinism	MONDO:0005803	OMIM:610021	OMIMPS:256450	hyperinsulinemic hypoglycemia
+MONDO:0012400	cortical dysplasia-focal epilepsy syndrome	MONDO:0980732	OMIM:610042	OMIMPS:610954	Pitt-Hopkins or Pitt-Hopkins-like syndrome
 MONDO:0012406	hyperparathyroidism 3	MONDO:0016166	OMIM:610071	OMIMPS:145000	hereditary hyperparathyroidism
 MONDO:0012410	Finnish upper limb-onset distal myopathy	MONDO:0018949	OMIM:610099	OMIMPS:160500	distal myopathy
-MONDO:0012414	neuronal ceroid lipofuscinosis 10	MONDO:0016295	OMIM:610127	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0012415	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 4	MONDO:0000090	OMIM:610131	OMIMPS:157640	progressive external ophthalmoplegia with mitochondrial DNA deletions
 MONDO:0012426	immunodeficiency 25	MONDO:0021094	OMIM:610163	OMIMPS:300755	immunodeficiency disease
 MONDO:0012437	cataract 21 multiple types	MONDO:0005129	OMIM:610202	OMIMPS:116200	cataract
@@ -376,6 +376,7 @@ MONDO:0012519	Rubinstein-Taybi syndrome due to 16p13.3 microdeletion	MONDO:00191
 MONDO:0012527	cataract 11 multiple types	MONDO:0005129	OMIM:610623	OMIMPS:116200	cataract
 MONDO:0012528	hypogonadotropic hypogonadism 4 with or without anosmia	MONDO:0018555	OMIM:610628	OMIMPS:147950	hypogonadotropic hypogonadism
 MONDO:0012536	osteogenesis imperfecta type 7	MONDO:0019019	OMIM:610682	OMIMPS:166200	osteogenesis imperfecta
+MONDO:0012538	nemaline myopathy 7	MONDO:0018958	OMIM:610687	OMIMPS:256030	nemaline myopathy
 MONDO:0012543	optic atrophy 5	MONDO:0043878	OMIM:610708	OMIMPS:165500	hereditary optic atrophy
 MONDO:0012546	nephrotic syndrome, type 3	MONDO:0002350	OMIM:610725	OMIMPS:256300	familial nephrotic syndrome
 MONDO:0012548	Kostmann syndrome	MONDO:0018542	OMIM:610738	OMIMPS:202700	severe congenital neutropenia
@@ -526,6 +527,7 @@ MONDO:0013671	hydatidiform mole, recurrent, 2	MONDO:0006248	OMIM:614293	OMIMPS:2
 MONDO:0013677	Emery-Dreifuss muscular dystrophy 7, autosomal dominant	MONDO:0016830	OMIM:614302	OMIMPS:310300	Emery-Dreifuss muscular dystrophy
 MONDO:0013686	distal myopathy, Tateyama type	MONDO:0018949	OMIM:614321	OMIMPS:160500	distal myopathy
 MONDO:0013687	autosomal recessive spinocerebellar ataxia 12	MONDO:0015244	OMIM:614322	OMIMPS:213200	autosomal recessive cerebellar ataxia
+MONDO:0013690	Pitt-Hopkins-like syndrome 2	MONDO:0980732	OMIM:614325	OMIMPS:610954	Pitt-Hopkins or Pitt-Hopkins-like syndrome
 MONDO:0013698	arthrogryposis, distal, type 1B	MONDO:0019942	OMIM:614335	OMIMPS:108120	distal arthrogryposis
 MONDO:0013699	Lynch syndrome 4	MONDO:0018630	OMIM:614337	OMIMPS:120435	hereditary nonpolyposis colon cancer
 MONDO:0013710	Lynch syndrome 5	MONDO:0018630	OMIM:614350	OMIMPS:120435	hereditary nonpolyposis colon cancer
@@ -625,6 +627,7 @@ MONDO:0014118	congenital neutropenia-myelofibrosis-nephromegaly syndrome	MONDO:0
 MONDO:0014128	TCF12-related craniosynostosis	MONDO:0015469	OMIM:615314	OMIMPS:123100	craniosynostosis
 MONDO:0014130	Dowling-Degos disease 2	MONDO:0000118	OMIM:615327	OMIMPS:179850	reticulate pigment disorder
 MONDO:0014133	developmental and epileptic encephalopathy, 16	MONDO:0100062	OMIM:615338	OMIMPS:308350	genetic developmental and epileptic encephalopathy
+MONDO:0014138	nemaline myopathy 8	MONDO:0018958	OMIM:615348	OMIMPS:256030	nemaline myopathy
 MONDO:0014139	Ehlers-Danlos syndrome, spondylodysplastic type, 2	MONDO:0020066	OMIM:615349	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0014147	neuronal ceroid lipofuscinosis 13	MONDO:0016295	OMIM:615362	OMIMPS:256730	neuronal ceroid lipofuscinosis
 MONDO:0014150	developmental and epileptic encephalopathy 94	MONDO:0100062	OMIM:615369	OMIMPS:308350	genetic developmental and epileptic encephalopathy
@@ -661,6 +664,7 @@ MONDO:0014305	hereditary spastic paraplegia 63	MONDO:0019064	OMIM:615686	OMIMPS:
 MONDO:0014307	Dowling-Degos disease 4	MONDO:0000118	OMIM:615696	OMIMPS:179850	reticulate pigment disorder
 MONDO:0014308	familial temporal lobe epilepsy 6	MONDO:0005115	OMIM:615697	OMIMPS:600512	temporal lobe epilepsy
 MONDO:0014311	autosomal recessive spinocerebellar ataxia 15	MONDO:0015244	OMIM:615705	OMIMPS:213200	autosomal recessive cerebellar ataxia
+MONDO:0014326	nemaline myopathy 9	MONDO:0018958	OMIM:615731	OMIMPS:256030	nemaline myopathy
 MONDO:0014334	severe combined immunodeficiency due to LCK deficiency	MONDO:0021094	OMIM:615758	OMIMPS:300755	immunodeficiency disease
 MONDO:0014360	developmental and epileptic encephalopathy, 21	MONDO:0100062	OMIM:615833	OMIMPS:308350	genetic developmental and epileptic encephalopathy
 MONDO:0014361	autism spectrum disorder due to AUTS2 deficiency	MONDO:0100172	OMIM:615834	OMIMPS:156200	intellectual disability, autosomal dominant
@@ -687,6 +691,7 @@ MONDO:0014503	autosomal recessive spinocerebellar ataxia 17	MONDO:0015244	OMIM:6
 MONDO:0014508	vitelliform macular dystrophy 4	MONDO:0000390	OMIM:616151	OMIMPS:153840	vitelliform macular dystrophy
 MONDO:0014509	vitelliform macular dystrophy 5	MONDO:0000390	OMIM:616152	OMIMPS:153840	vitelliform macular dystrophy
 MONDO:0014511	Charcot-Marie-Tooth disease axonal type 2S	MONDO:0015626	OMIM:616155	OMIMPS:118220	Charcot-Marie-Tooth disease
+MONDO:0014513	nemaline myopathy 10	MONDO:0018958	OMIM:616165	OMIMPS:256030	nemaline myopathy
 MONDO:0014530	autosomal recessive spinocerebellar ataxia 18	MONDO:0015244	OMIM:616204	OMIMPS:213200	autosomal recessive cerebellar ataxia
 MONDO:0014533	developmental and epileptic encephalopathy, 28	MONDO:0100062	OMIM:616211	OMIMPS:308350	genetic developmental and epileptic encephalopathy
 MONDO:0014534	lissencephaly 6 with microcephaly	MONDO:0018838	OMIM:616212	OMIMPS:607432	lissencephaly spectrum disorders

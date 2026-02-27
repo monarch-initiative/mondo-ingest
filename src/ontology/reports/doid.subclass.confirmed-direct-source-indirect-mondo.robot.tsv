@@ -260,6 +260,7 @@ MONDO:0001824	polyneuropathy	MONDO:0003620	DOID:1389	DOID:574	peripheral nervous
 MONDO:0001827	white piedra	MONDO:0024268	DOID:13902	DOID:0050133	superficial mycosis
 MONDO:0001829	lumbosacral plexus lesion	MONDO:0003620	DOID:13913	DOID:574	peripheral nervous system disorder
 MONDO:0001833	lacrimal duct obstruction	MONDO:0001854	DOID:13929	DOID:1400	lacrimal apparatus disorder
+MONDO:0001836	amenorrhea	MONDO:0002263	DOID:13938	DOID:229	female reproductive system disorder
 MONDO:0001838	acute gonococcal prostatitis	MONDO:0005280	DOID:13943	DOID:14654	prostatitis
 MONDO:0001846	uterine corpus bizarre leiomyoma	MONDO:0000632	DOID:13958	DOID:0060095	uterine benign neoplasm
 MONDO:0001846	uterine corpus bizarre leiomyoma	MONDO:0001572	DOID:13958	DOID:127	leiomyoma
@@ -744,6 +745,7 @@ MONDO:0004148	gallbladder papillary neoplasm with an associated invasive carcino
 MONDO:0004162	uterine corpus cellular leiomyoma	MONDO:0000632	DOID:7242	DOID:0060095	uterine benign neoplasm
 MONDO:0004162	uterine corpus cellular leiomyoma	MONDO:0001572	DOID:7242	DOID:127	leiomyoma
 MONDO:0004164	lymphoepithelioma-like acinar prostate adenocarcinoma	MONDO:0005082	DOID:7246	DOID:2526	prostate adenocarcinoma
+MONDO:0004169	premenstrual tension	MONDO:0002263	DOID:727	DOID:229	female reproductive system disorder
 MONDO:0004173	adenocarcinoma of skene gland origin	MONDO:0004993	DOID:7284	DOID:305	carcinoma
 MONDO:0004177	benign urethral neoplasm	MONDO:0004184	DOID:730	DOID:732	urethral disorder
 MONDO:0004180	benign urinary system neoplasm	MONDO:0002118	DOID:731	DOID:18	urinary system disorder
@@ -1159,6 +1161,7 @@ MONDO:0006717	cutaneous fibrous histiocytoma	MONDO:0002531	DOID:4418	DOID:3165	s
 MONDO:0006734	benign duodenal neoplasm	MONDO:0002866	DOID:1737	DOID:4072	duodenal disorder
 MONDO:0006734	benign duodenal neoplasm	MONDO:0004251	DOID:1737	DOID:7505	small intestine neoplasm
 MONDO:0006793	hyperpituitarism	MONDO:0003381	DOID:2444	DOID:53	pituitary gland disorder
+MONDO:0006809	intracranial embolism	MONDO:0011057	DOID:4372	DOID:6713	cerebrovascular disorder
 MONDO:0006834	lip cancer	MONDO:0004748	DOID:8564	DOID:9297	lip disorder
 MONDO:0006851	meconium aspiration syndrome	MONDO:0005275	DOID:11049	DOID:850	lung disorder
 MONDO:0006861	myeloid sarcoma	MONDO:0002334	DOID:8683	DOID:2531	hematopoietic and lymphoid system neoplasm
@@ -1420,9 +1423,6 @@ MONDO:0008758	mitochondrial DNA depletion syndrome 4a	MONDO:0018158	DOID:0080122
 MONDO:0008760	beta-ketothiolase deficiency	MONDO:0004736	DOID:14723	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0008764	Leber congenital amaurosis 1	MONDO:0006025	DOID:0110078	DOID:0050737	autosomal recessive disease
 MONDO:0008765	Leber congenital amaurosis 2	MONDO:0006025	DOID:0110016	DOID:0050737	autosomal recessive disease
-MONDO:0008767	neuronal ceroid lipofuscinosis 3	MONDO:0016295	DOID:0110731	DOID:14503	neuronal ceroid lipofuscinosis
-MONDO:0008768	ceroid lipofuscinosis, neuronal, 6B (Kufs type)	MONDO:0016295	DOID:0110730	DOID:14503	neuronal ceroid lipofuscinosis
-MONDO:0008769	neuronal ceroid lipofuscinosis 2	MONDO:0016295	DOID:0110726	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0008770	amelogenesis imperfecta type 1C	MONDO:0019507	DOID:0110056	DOID:2187	amelogenesis imperfecta
 MONDO:0008772	amelogenesis imperfecta type 2A1	MONDO:0019507	DOID:0110057	DOID:2187	amelogenesis imperfecta
 MONDO:0008780	amyotrophic lateral sclerosis type 2, juvenile	MONDO:0004976	DOID:0060194	DOID:332	amyotrophic lateral sclerosis
@@ -1663,6 +1663,7 @@ MONDO:0010397	severe neonatal-onset encephalopathy with microcephaly	MONDO:00055
 MONDO:0010399	chromosome Xp21 deletion syndrome	MONDO:0000761	DOID:0060427	DOID:0060388	syndrome caused by partial chromosomal deletion
 MONDO:0010401	X-linked myopathy with postural muscle atrophy	MONDO:0016830	DOID:0070251	DOID:11726	Emery-Dreifuss muscular dystrophy
 MONDO:0010415	myopathy, reducing body, X-linked, childhood-onset	MONDO:0005336	DOID:0080687	DOID:423	myopathy
+MONDO:0010417	syndromic X-linked intellectual disability Najm type	MONDO:0020119	DOID:0060807	DOID:0060309	X-linked syndromic intellectual disability
 MONDO:0010418	hereditary spastic paraplegia 34	MONDO:0019064	DOID:0110785	DOID:2476	hereditary spastic paraplegia
 MONDO:0010421	Bruton-type agammaglobulinemia	MONDO:0015977	DOID:14179	DOID:2583	agammaglobulinemia
 MONDO:0010428	chromosome Xp11.23-p11.22 duplication syndrome	MONDO:0000762	DOID:0060461	DOID:0060429	syndrome caused by partial chromosomal duplication
@@ -1716,7 +1717,6 @@ MONDO:0010771	histiocytoid cardiomyopathy	MONDO:0000591	DOID:0080198	DOID:006003
 MONDO:0010788	Leber hereditary optic neuropathy	MONDO:0002135	DOID:705	DOID:1891	optic nerve disorder
 MONDO:0010794	NARP syndrome	MONDO:0004069	DOID:0111273	DOID:700	inborn mitochondrial metabolism disorder
 MONDO:0010810	vitamin D hydroxylation-deficient rickets, type 1B	MONDO:0024299	DOID:0080887	DOID:0080883	vitamin D-dependent rickets
-MONDO:0010830	neuronal ceroid lipofuscinosis 8	MONDO:0016295	DOID:0110723	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0010841	Waardenburg syndrome type 2B	MONDO:0018094	DOID:0110947	DOID:9258	Waardenburg syndrome
 MONDO:0010847	spinocerebellar ataxia type 4	MONDO:0020380	DOID:0050957	DOID:1441	autosomal dominant cerebellar ataxia
 MONDO:0010848	spinocerebellar ataxia type 5	MONDO:0020380	DOID:0050882	DOID:1441	autosomal dominant cerebellar ataxia
@@ -1757,7 +1757,6 @@ MONDO:0011094	dilated cardiomyopathy 1C	MONDO:0005021	DOID:0110423	DOID:12930	di
 MONDO:0011095	dilated cardiomyopathy 1D	MONDO:0005021	DOID:0110426	DOID:12930	dilated cardiomyopathy
 MONDO:0011101	peroxisome biogenesis disorder 1B	MONDO:0006025	DOID:0081240	DOID:0050737	autosomal recessive disease
 MONDO:0011101	peroxisome biogenesis disorder 1B	MONDO:0019234	DOID:0081240	DOID:0080377	peroxisome biogenesis disorder
-MONDO:0011144	ceroid lipofuscinosis, neuronal, 6A	MONDO:0016295	DOID:0110729	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0011147	chromosome 18q deletion syndrome	MONDO:0000761	DOID:0060407	DOID:0060388	syndrome caused by partial chromosomal deletion
 MONDO:0011151	exudative vitreoretinopathy 4	MONDO:0019516	DOID:0111411	DOID:0050535	exudative vitreoretinopathy
 MONDO:0011152	PHGDH deficiency	MONDO:0000421	DOID:0050722	DOID:0050721	inborn serine deficiency
@@ -1956,7 +1955,6 @@ MONDO:0012410	Finnish upper limb-onset distal myopathy	MONDO:0000426	DOID:011118
 MONDO:0012410	Finnish upper limb-onset distal myopathy	MONDO:0018949	DOID:0111189	DOID:11720	distal myopathy
 MONDO:0012411	giant axonal neuropathy 2	MONDO:0004183	DOID:0090069	DOID:7319	axonal neuropathy
 MONDO:0012412	complement component 7 deficiency	MONDO:0003832	DOID:0060300	DOID:626	complement deficiency
-MONDO:0012414	neuronal ceroid lipofuscinosis 10	MONDO:0016295	DOID:0110725	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0012415	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 4	MONDO:0000426	DOID:0111525	DOID:0050736	autosomal dominant disease
 MONDO:0012415	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 4	MONDO:0005181	DOID:0111525	DOID:12558	progressive external ophthalmoplegia
 MONDO:0012426	immunodeficiency 25	MONDO:0015974	DOID:0060007	DOID:627	severe combined immunodeficiency

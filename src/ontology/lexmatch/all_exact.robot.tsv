@@ -1,13 +1,7 @@
 subject_id	predicate_id	object_id	subject_label	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ID	>A oboInOwl:source	A oboInOwl:hasDbXref								
-MONDO:0007542	MONDO:equivalentTo	OMIMPS:131300	Camurati-Engelmann disease	Camurati-Engelmann disease	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	camurati-engelmann disorder
 MONDO:0007915	MONDO:equivalentTo	OMIMPS:601744	systemic lupus erythematosus	Systemic lupus erythematosus	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	systemic lupus erythematosus
-MONDO:0012589	MONDO:equivalentTo	OMIMPS:610954	Pitt-Hopkins syndrome	Pitt-Hopkins syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pitt-hopkins syndrome
-MONDO:0018958	MONDO:equivalentTo	OMIMPS:256030	nemaline myopathy	Nemaline myopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nemaline myopathy
-MONDO:0019508	MONDO:equivalentTo	OMIMPS:119300	van der Woude syndrome	van der Woude syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	van der woude syndrome
-MONDO:0019600	MONDO:equivalentTo	OMIMPS:278700	xeroderma pigmentosum	Xeroderma pigmentosum	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	xeroderma pigmentosum
-MONDO:0100288	MONDO:equivalentTo	OMIMPS:268100	enhanced S-cone syndrome	Enhanced S-cone syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	enhanced s-cone syndrome
-MONDO:0800358	MONDO:equivalentTo	OMIM:621407	schizophrenia 17	schizophrenia 17	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	schizophrenia type 17
+MONDO:0980715	MONDO:equivalentTo	OMIMPS:616117	cardiac conduction disease with or without cardiomyoopathy	Cardiac conduction disease with or without cardiomyoopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cardiac conduction disorder with or without cardiomyoopathy
 MONDO:0000022	MONDO:equivalentTo	ICD10CM:N39.44	nocturnal enuresis	Nocturnal enuresis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	nocturnal enuresis
 MONDO:0001711	MONDO:equivalentTo	ICD10CM:K76.82	hepatic encephalopathy	Hepatic encephalopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hepatic encephalopathy
 MONDO:0002571	MONDO:equivalentTo	ICD10CM:C83.390	primary central nervous system lymphoma	Primary central nervous system lymphoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary central nervous system lymphoma
@@ -52,6 +46,10 @@ MONDO:1010182	MONDO:equivalentTo	ICD10CM:F32.81	premenstrual dysphoric disorder	
 MONDO:1030007	MONDO:equivalentTo	ICD10CM:I16.0	hypertensive urgency	Hypertensive urgency	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hypertensive urgency
 MONDO:1060188	MONDO:equivalentTo	ICD10CM:L41.3	small plaque parapsoriasis	Small plaque parapsoriasis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	small plaque parapsoriasis
 MONDO:1060189	MONDO:equivalentTo	ICD10CM:L41.4	large plaque parapsoriasis	Large plaque parapsoriasis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	large plaque parapsoriasis
+MONDO:1060206	MONDO:equivalentTo	ICD10CM:N94.4	primary dysmenorrhea	Primary dysmenorrhea	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary dysmenorrhea
+MONDO:1060207	MONDO:equivalentTo	ICD10CM:N94.5	secondary dysmenorrhea	Secondary dysmenorrhea	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	secondary dysmenorrhea
+MONDO:1060208	MONDO:equivalentTo	ICD10CM:N91.0	primary amenorrhea	Primary amenorrhea	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	primary amenorrhea
+MONDO:1060209	MONDO:equivalentTo	ICD10CM:N91.1	secondary amenorrhea	Secondary amenorrhea	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	secondary amenorrhea
 MONDO:0004762	MONDO:equivalentTo	icd11.foundation:2109588852	pelvic congestion syndrome	Pelvic congestion syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	pelvic congestion syndrome
 MONDO:0016001	MONDO:equivalentTo	icd11.foundation:896211058	2-hydroxyglutaric aciduria	2-hydroxyglutaric aciduria	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	2-hydroxyglutaric aciduria
 MONDO:0019504	MONDO:equivalentTo	icd11.foundation:1532846455	superior limbic keratoconjunctivitis	Superior limbic keratoconjunctivitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	superior limbic keratoconjunctivitis
@@ -65,20 +63,6 @@ MONDO:1010184	MONDO:equivalentTo	icd11.foundation:1860932788	macular telangiecta
 MONDO:1060162	MONDO:equivalentTo	icd11.foundation:1557051590	acquired distal renal tubular acidosis	Acquired distal renal tubular acidosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	acquired distal renal tubular acidosis
 MONDO:1060188	MONDO:equivalentTo	icd11.foundation:682646804	small plaque parapsoriasis	Small plaque parapsoriasis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	small plaque parapsoriasis
 MONDO:1060189	MONDO:equivalentTo	icd11.foundation:1532939912	large plaque parapsoriasis	Large plaque parapsoriasis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	large plaque parapsoriasis
-MONDO:0004835	MONDO:equivalentTo	Orphanet:699697	necrotizing fasciitis	Necrotizing fasciitis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	necrotizing fasciitis
-MONDO:0006761	MONDO:equivalentTo	Orphanet:698012	fibromuscular dysplasia	Fibromuscular dysplasia	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	fibromuscular dysplasia
-MONDO:0010020	MONDO:equivalentTo	Orphanet:696289	congenital generalized lipodystrophy type 2	Congenital generalized lipodystrophy type 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:269700
-MONDO:0012071	MONDO:equivalentTo	Orphanet:696189	congenital generalized lipodystrophy type 1	Congenital generalized lipodystrophy type 1	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	congenital generalized lipodystrophy type 1
-MONDO:0012853	MONDO:equivalentTo	Orphanet:697101	Fontaine progeroid syndrome	Fontaine progeroid syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:612289
-MONDO:0012923	MONDO:equivalentTo	Orphanet:696206	congenital generalized lipodystrophy type 3	Congenital generalized lipodystrophy type 3	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:612526
-MONDO:0014931	MONDO:equivalentTo	Orphanet:694946	Alazami-Yuan syndrome	Alazami-Yuan syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:617126
-MONDO:0015474	MONDO:equivalentTo	Orphanet:697096	cryptosporidiosis	Cryptosporidiosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cryptosporidiosis
-MONDO:0035423	MONDO:equivalentTo	Orphanet:692305	triglyceride deposit cardiomyovasculopathy	Triglyceride deposit cardiomyovasculopathy	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	triglyceride deposit cardiomyovasculopathy
-MONDO:0700340	MONDO:equivalentTo	Orphanet:696897	congenital megaprepuce	Congenital megaprepuce	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	congenital megaprepuce
-MONDO:0858940	MONDO:equivalentTo	Orphanet:695136	infant-type hemispheric glioma	Infant-type hemispheric glioma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	infant-type hemispheric glioma
-MONDO:0859214	MONDO:equivalentTo	Orphanet:692173	Marbach-Schaaf neurodevelopmental syndrome	Marbach-Schaaf neurodevelopmental syndrome	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:619680
-MONDO:0979234	MONDO:equivalentTo	Orphanet:699599	ICHAD syndrome	ICHAD syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ichad syndrome
-MONDO:1010131	MONDO:equivalentTo	Orphanet:696175	encapsulating peritoneal sclerosis	Encapsulating peritoneal sclerosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	encapsulating peritoneal sclerosis
 MONDO:0000407	MONDO:equivalentTo	NCIT:C213601	malignant pleural solitary fibrous tumor	Malignant Pleural Solitary Fibrous Tumor	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	malignant pleural solitary fibrous tumor
 MONDO:0000502	MONDO:equivalentTo	NCIT:C209284	villous adenoma	Villous Adenoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	villous adenoma
 MONDO:0000549	MONDO:equivalentTo	NCIT:C213638	cervical neuroblastoma	Cervical Neuroblastoma	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	cervical neuroblastoma
@@ -162,6 +146,7 @@ MONDO:0044705	MONDO:equivalentTo	DOID:2442	paranasal sinus squamous cell carcino
 MONDO:0100001	MONDO:equivalentTo	DOID:0070659	alpha-gal syndrome	alpha-gal syndrome	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	alpha-gal syndrome
 MONDO:0700087	MONDO:equivalentTo	DOID:0070655	Usher syndrome type 1B	Usher syndrome type 1B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	mesh:c536485
 MONDO:0700087	MONDO:equivalentTo	DOID:0070655	Usher syndrome type 1B	Usher syndrome type 1B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:276900
+MONDO:0700386	MONDO:equivalentTo	DOID:0061232	enhanced S-cone syndrome 2	enhanced S-cone syndrome 2	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621371
 MONDO:0800504	MONDO:equivalentTo	DOID:0050156	idiopathic pulmonary fibrosis	idiopathic pulmonary fibrosis	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	idiopathic pulmonary fibrosis
 MONDO:0958233	MONDO:equivalentTo	DOID:0061199	Bethlem myopathy 1B	Bethlem myopathy 1B	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620725
 MONDO:0958234	MONDO:equivalentTo	DOID:0061200	Bethlem myopathy 1C	Bethlem myopathy 1C	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:620726
@@ -169,6 +154,9 @@ MONDO:0978291	MONDO:equivalentTo	DOID:0061127	retinitis pigmentosa 99	retinitis 
 MONDO:0979238	MONDO:equivalentTo	DOID:0061176	developmental and epileptic encephalopathy 118	developmental and epileptic encephalopathy 118	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621250
 MONDO:0979873	MONDO:equivalentTo	DOID:0061234	brain small vessel disease 4	brain small vessel disease 4	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621313
 MONDO:0979880	MONDO:equivalentTo	DOID:0061235	brain small vessel disease 5 with osteoporosis	brain small vessel disease 5 with osteoporosis	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621331
+MONDO:0980711	MONDO:equivalentTo	DOID:0061236	brain small vessel disease 6 with leukoencephalopathy	brain small vessel disease 6 with leukoencephalopathy	semapv:LexicalMatching	oaklib	0.9411764705882352	skos:exactMatch	skos:exactMatch	omim:621394
+MONDO:1060198	MONDO:equivalentTo	DOID:0051062	ischemic stroke	ischemic stroke	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	ischemic stroke
+MONDO:1060199	MONDO:equivalentTo	DOID:0051063	hemorrhagic stroke	hemorrhagic stroke	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	hemorrhagic stroke
 MONDO:7770002	MONDO:equivalentTo	DOID:0051057	avoidant/restrictive food intake disorder	avoidant/restrictive food intake disorder	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	avoidant/restrictive food intake disorder
 MONDO:0000088	MONDO:equivalentTo	ICD10WHO:E30.1	precocious puberty	Precocious puberty	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	precocious puberty
 MONDO:0000245	MONDO:equivalentTo	ICD10WHO:B35.5	tinea imbricata	Tinea imbricata	semapv:LexicalMatching	oaklib	0.8497788951776651	rdfs:label	rdfs:label	tinea imbricata
