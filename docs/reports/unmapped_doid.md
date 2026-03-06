@@ -15,10 +15,16 @@
 | DOID:0061211 | Lafora disease 2                                                                              |
 | DOID:0061224 | Majeed syndrome                                                                               |
 | DOID:0061196 | Mietens syndrome                                                                              |
-| DOID:0070652 | Nil-Deshwan neurodevelopmental syndrome                                                       |
+| DOID:0070652 | Nil-Deshwar neurodevelopmental syndrome                                                       |
 | DOID:0050457 | Sertoli cell-only syndrome                                                                    |
+| DOID:0070668 | Snijders Blok-Campeau syndrome                                                                |
+| DOID:0061241 | Stargardt disease 1                                                                           |
+| DOID:0061238 | Stargardt disease 3                                                                           |
+| DOID:0061239 | Stargardt disease 4                                                                           |
+| DOID:0061240 | Stargardt disease 5                                                                           |
 | DOID:0070655 | Usher syndrome type 1B                                                                        |
 | DOID:0051058 | acute calcific periarthritis                                                                  |
+| DOID:0061237 | aggressive periodontitis 1                                                                    |
 | DOID:0070658 | alcohol-associated liver disease                                                              |
 | DOID:2934    | aleutian mink disease                                                                         |
 | DOID:0070659 | alpha-gal syndrome                                                                            |
@@ -59,6 +65,9 @@
 | DOID:0061208 | epidermolytic hyperkeratosis 2B                                                               |
 | DOID:0061151 | familial isolated hypoparathyroidism 2                                                        |
 | DOID:0051060 | frontotemporal dementia 1                                                                     |
+| DOID:0061242 | glucocorticoid deficiency 2                                                                   |
+| DOID:0061243 | glucocorticoid deficiency 4 with or without mineralocorticoid deficiency                      |
+| DOID:0061244 | glucocorticoid deficiency 5                                                                   |
 | DOID:3462    | hamartoma                                                                                     |
 | DOID:0070656 | hamartoma syndrome                                                                            |
 | DOID:0051063 | hemorrhagic stroke                                                                            |
@@ -85,6 +94,8 @@
 | DOID:0070664 | oropharyngeal squamous cell carcinoma                                                         |
 | DOID:146     | papilledema                                                                                   |
 | DOID:2442    | paranasal sinus squamous cell carcinoma                                                       |
+| DOID:0061245 | periventricular nodular heterotopia 8                                                         |
+| DOID:0061246 | periventricular nodular heterotopia 9                                                         |
 | DOID:0061216 | pheochromocytoma/paraganglioma syndrome 1                                                     |
 | DOID:0061217 | pheochromocytoma/paraganglioma syndrome 2                                                     |
 | DOID:0061218 | pheochromocytoma/paraganglioma syndrome 3                                                     |
