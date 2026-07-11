@@ -19,6 +19,8 @@ def _get_column_of_external_source_related_to_qc_failure(qc_failure, erroneous_r
         columns = ["subset"]
     elif external == "mondo-omim-genes":
         columns = ["hgnc_id"]
+    elif external == "mondo-omim-susceptibility-subset":
+        columns = ["subset", "omim_id"]
     elif external == "mondo-clingen":
         columns = ["synonym", "subset"]
     elif external == "mondo-medgen":
