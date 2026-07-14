@@ -119,6 +119,19 @@ def _remove_erroneous_values_from_externally_managed_content(external_content_fi
         report.append(error_report)
     df_external_content.drop(index=rows_to_drop, inplace=True)
     
+    # Missing MONDO ID (bare "MONDO:" with no number afterward)
+    pattern = r"^MONDO:$"
+    result = df_external_content.map(lambda x: bool(re.match(pattern, str(x))))
+    rows_to_drop = result.any(axis=1).index[result.any(axis=1)].tolist()
+    for row in rows_to_drop:
+        error_report = df_external_content.loc[row].to_dict()
+        error_report['Source'] = source
+        rule = "MONDO:_with_no_id"
+        property = "IRI"
+        error_report['Check'] = f"{rule} ({property})"
+        report.append(error_report)
+    df_external_content.drop(index=rows_to_drop, inplace=True)
+
     # X ERROR: TBD
     
     df_external_content.to_csv(external_content_file_out, sep="\t", index=False)
