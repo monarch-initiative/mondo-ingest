@@ -108,7 +108,7 @@ def _remove_erroneous_values_from_externally_managed_content(external_content_fi
     
     # BANANA ERROR: Search the entire external content for occurrences of the pattern 'MONDO:MONDO'
     pattern = r"^MONDO:MONDO:.*$"
-    result = df_external_content.applymap(lambda x: bool(re.match(pattern, str(x))))
+    result = df_external_content.map(lambda x: bool(re.match(pattern, str(x))))
     rows_to_drop = result.any(axis=1).index[result.any(axis=1)].tolist()
     for row in rows_to_drop:
         error_report = df_external_content.loc[row].to_dict()
