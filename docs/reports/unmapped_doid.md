@@ -6,6 +6,7 @@
 |:-------------|:----------------------------------------------------------------------------------------------------------------|
 | DOID:0070738 | Al Kaissi syndrome                                                                                              |
 | DOID:0051080 | Alport syndrome 3B                                                                                              |
+| DOID:0051092 | Damseh-Danson neurodevelopmental disorder                                                                       |
 | DOID:0070692 | Davis-Wells syndrome                                                                                            |
 | DOID:0070693 | Ebstein-Bezieau neurodevelopmental syndrome                                                                     |
 | DOID:0061293 | Galloway-Mowat syndrome 10                                                                                      |
@@ -14,6 +15,8 @@
 | DOID:0061291 | Galloway-Mowat syndrome 8                                                                                       |
 | DOID:0061292 | Galloway-Mowat syndrome 9                                                                                       |
 | DOID:0070746 | HELIX syndrome                                                                                                  |
+| DOID:0070781 | HER2-low breast cancer                                                                                          |
+| DOID:0070782 | HER2-ultralow breast cancer                                                                                     |
 | DOID:0070711 | Harel-Tora neurodevelopmental syndrome                                                                          |
 | DOID:0061300 | Hermansky-Pudlak syndrome 10                                                                                    |
 | DOID:0061301 | Hermansky-Pudlak syndrome 11                                                                                    |
@@ -24,6 +27,7 @@
 | DOID:0070703 | Meckel syndrome 14                                                                                              |
 | DOID:0061294 | Meckel syndrome 9                                                                                               |
 | DOID:0070749 | Mendez-Johnson immunoneurologic syndrome                                                                        |
+| DOID:0051099 | Paget disease of bone 7                                                                                         |
 | DOID:0051082 | Parkinson's disease 27                                                                                          |
 | DOID:0070757 | Pilarowski-Bjornsson syndrome                                                                                   |
 | DOID:0070709 | Popov-Chang syndrome                                                                                            |
@@ -81,15 +85,24 @@
 | DOID:0070745 | early-onset progressive encephalopathy with brain atrophy and spasticity                                        |
 | DOID:0070734 | episodic mitochondrial myopathy with optic atrophy and reversible leukoencephalopathy                           |
 | DOID:0070732 | familial juvenile hyperuricemic nephropathy 3                                                                   |
+| DOID:0070771 | gingival fibromatosis 1                                                                                         |
+| DOID:0070772 | gingival fibromatosis 2                                                                                         |
+| DOID:0070773 | gingival fibromatosis 3                                                                                         |
+| DOID:0070774 | gingival fibromatosis 4                                                                                         |
+| DOID:0070775 | gingival fibromatosis 6                                                                                         |
 | DOID:0061285 | glycogen storage disease X                                                                                      |
 | DOID:0061286 | glycogen storage disease XI                                                                                     |
 | DOID:0061287 | glycogen storage disease XII                                                                                    |
 | DOID:0061288 | glycogen storage disease XIII                                                                                   |
 | DOID:0070656 | hamartoma syndrome                                                                                              |
 | DOID:0070689 | hereditary sensory and autonomic neuropathy type 2D                                                             |
+| DOID:0070778 | hormone receptor-negative/HER2-positive breast cancer                                                           |
+| DOID:0070780 | hormone receptor-positive/HER2-negative breast cancer                                                           |
+| DOID:0070779 | hormone receptor-positive/HER2-positive breast cancer                                                           |
 | DOID:0061212 | hypocholesteremia                                                                                               |
 | DOID:0070720 | immune dysregulation, neurodevelopmental defects, and colitis                                                   |
 | DOID:0070747 | immunodeficiency, developmental delay, and hypohomocysteinemia                                                  |
+| DOID:0070776 | impaired intellectual development and distinctive facial features with or without cardiac defects               |
 | DOID:0070748 | joint laxity, short stature, and myopia                                                                         |
 | DOID:0061271 | liver glycogen storage disease                                                                                  |
 | DOID:0070690 | lobodontia                                                                                                      |
@@ -115,11 +128,29 @@
 | DOID:0070756 | neurodevelopmental disorder with variable motor and speech impairment                                           |
 | DOID:0070687 | normal pressure hydrocephalus 1                                                                                 |
 | DOID:146     | papilledema                                                                                                     |
+| DOID:0070768 | peri-implant disease                                                                                            |
+| DOID:0070769 | peri-implant mucositis                                                                                          |
+| DOID:0070770 | peri-implantitis                                                                                                |
 | DOID:0051081 | polycystic kidney disease 8                                                                                     |
+| DOID:0070758 | primary ciliary dyskinesia 46                                                                                   |
+| DOID:0070760 | primary ciliary dyskinesia 47 and lissencephaly                                                                 |
+| DOID:0070761 | primary ciliary dyskinesia 48                                                                                   |
+| DOID:0070762 | primary ciliary dyskinesia 49                                                                                   |
+| DOID:0070763 | primary ciliary dyskinesia 50                                                                                   |
+| DOID:0070764 | primary ciliary dyskinesia 51                                                                                   |
+| DOID:0070765 | primary ciliary dyskinesia 52                                                                                   |
+| DOID:0070766 | primary ciliary dyskinesia 53                                                                                   |
+| DOID:0070767 | primary ciliary dyskinesia 54                                                                                   |
 | DOID:0070716 | progressive microcephaly with simplified gyral pattern and cerebellar hypoplasia                                |
 | DOID:0081463 | recurrent respiratory papillomatosis                                                                            |
 | DOID:0061298 | retinitis pigmentosa 100                                                                                        |
 | DOID:0061299 | retinitis pigmentosa 101                                                                                        |
+| DOID:0051093 | retinitis pigmentosa 102                                                                                        |
+| DOID:0051094 | retinitis pigmentosa 103                                                                                        |
+| DOID:0051095 | retinitis pigmentosa 104                                                                                        |
+| DOID:0051096 | retinitis pigmentosa 105                                                                                        |
+| DOID:0051097 | retinitis pigmentosa 106                                                                                        |
+| DOID:0051098 | retinitis pigmentosa 107                                                                                        |
 | DOID:0070701 | small fiber neuropathy                                                                                          |
 | DOID:0070729 | spermatogenic failure 100                                                                                       |
 | DOID:0070730 | spermatogenic failure 101                                                                                       |
@@ -128,4 +159,5 @@
 | DOID:0070726 | spermatogenic failure 97                                                                                        |
 | DOID:0070727 | spermatogenic failure 98                                                                                        |
 | DOID:0070728 | spermatogenic failure 99                                                                                        |
+| DOID:0070777 | syndromic X-linked intellectual developmental disorder, Snijders Blok type                                      |
 | DOID:0061213 | telomere biology disorder                                                                                       |
