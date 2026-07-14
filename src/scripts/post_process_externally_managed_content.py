@@ -117,7 +117,7 @@ def _remove_erroneous_values_from_externally_managed_content(external_content_fi
         property = "IRI"
         error_report['Check'] = f"{rule} ({property})"
         report.append(error_report)
-        df_external_content.drop(index=rows_to_drop, inplace=True)
+    df_external_content.drop(index=rows_to_drop, inplace=True)
     
     # X ERROR: TBD
     
