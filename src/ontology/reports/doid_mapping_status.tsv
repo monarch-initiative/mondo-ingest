@@ -13,6 +13,14 @@ DOID:0051088	developmental and epileptic encephalopathy 119	False	False	False
 DOID:0051089	developmental and epileptic encephalopathy 120	False	False	False
 DOID:0051090	developmental and epileptic encephalopathy 121	False	False	False
 DOID:0051091	developmental and epileptic encephalopathy 122	False	False	False
+DOID:0051092	Damseh-Danson neurodevelopmental disorder	False	False	False
+DOID:0051093	retinitis pigmentosa 102	False	False	False
+DOID:0051094	retinitis pigmentosa 103	False	False	False
+DOID:0051095	retinitis pigmentosa 104	False	False	False
+DOID:0051096	retinitis pigmentosa 105	False	False	False
+DOID:0051097	retinitis pigmentosa 106	False	False	False
+DOID:0051098	retinitis pigmentosa 107	False	False	False
+DOID:0051099	Paget disease of bone 7	False	False	False
 DOID:0060160	childhood spinal muscular atrophy	False	False	False
 DOID:0060854	autosomal recessive pseudohypoaldosteronism type 1	False	False	False
 DOID:0061212	hypocholesteremia	False	False	False
@@ -116,7 +124,31 @@ DOID:0070754	neurodevelopmental disorder with microcephaly, ataxia, and seizures
 DOID:0070755	neurodevelopmental disorder with microcephaly, seizures, and cortical atrophy	False	False	False
 DOID:0070756	neurodevelopmental disorder with variable motor and speech impairment	False	False	False
 DOID:0070757	Pilarowski-Bjornsson syndrome	False	False	False
+DOID:0070758	primary ciliary dyskinesia 46	False	False	False
 DOID:0070759	autosomal recessive progressive external ophthalmoplegia with mitochondrial DNA deletions 6	False	False	False
+DOID:0070760	primary ciliary dyskinesia 47 and lissencephaly	False	False	False
+DOID:0070761	primary ciliary dyskinesia 48	False	False	False
+DOID:0070762	primary ciliary dyskinesia 49	False	False	False
+DOID:0070763	primary ciliary dyskinesia 50	False	False	False
+DOID:0070764	primary ciliary dyskinesia 51	False	False	False
+DOID:0070765	primary ciliary dyskinesia 52	False	False	False
+DOID:0070766	primary ciliary dyskinesia 53	False	False	False
+DOID:0070767	primary ciliary dyskinesia 54	False	False	False
+DOID:0070768	peri-implant disease	False	False	False
+DOID:0070769	peri-implant mucositis	False	False	False
+DOID:0070770	peri-implantitis	False	False	False
+DOID:0070771	gingival fibromatosis 1	False	False	False
+DOID:0070772	gingival fibromatosis 2	False	False	False
+DOID:0070773	gingival fibromatosis 3	False	False	False
+DOID:0070774	gingival fibromatosis 4	False	False	False
+DOID:0070775	gingival fibromatosis 6	False	False	False
+DOID:0070776	impaired intellectual development and distinctive facial features with or without cardiac defects	False	False	False
+DOID:0070777	syndromic X-linked intellectual developmental disorder, Snijders Blok type	False	False	False
+DOID:0070778	hormone receptor-negative/HER2-positive breast cancer	False	False	False
+DOID:0070779	hormone receptor-positive/HER2-positive breast cancer	False	False	False
+DOID:0070780	hormone receptor-positive/HER2-negative breast cancer	False	False	False
+DOID:0070781	HER2-low breast cancer	False	False	False
+DOID:0070782	HER2-ultralow breast cancer	False	False	False
 DOID:0081462	Zeitz-Han retinal dystrophy	False	False	False
 DOID:0081463	recurrent respiratory papillomatosis	False	False	False
 DOID:0111368	cholesterol-ester transfer protein deficiency	False	False	False
@@ -3521,9 +3553,9 @@ DOID:0060075	estrogen-receptor positive breast cancer	True	False	False
 DOID:0060076	estrogen-receptor negative breast cancer	True	False	False
 DOID:0060077	progesterone-receptor positive breast cancer	True	False	False
 DOID:0060078	progesterone-receptor negative breast cancer	True	False	False
-DOID:0060079	Her2-receptor positive breast cancer	True	False	False
-DOID:0060080	Her2-receptor negative breast cancer	True	False	False
-DOID:0060081	triple-receptor negative breast cancer	True	False	False
+DOID:0060079	HER2 positive breast cancer	True	False	False
+DOID:0060080	HER2 negative breast cancer	True	False	False
+DOID:0060081	triple-negative breast cancer	True	False	False
 DOID:0060082	breast benign neoplasm	True	False	False
 DOID:0060083	immune system cancer	True	False	False
 DOID:0060084	cell type benign neoplasm	True	False	False
@@ -6211,7 +6243,7 @@ DOID:0081026	benign peritoneal solitary fibrous tumor	True	False	False
 DOID:0081028	glycogen-rich carcinoma	True	False	False
 DOID:0081030	central conducting lymphatic anomaly	True	False	False
 DOID:0081031	generalized lymphatic anomaly	True	False	False
-DOID:0081034	glutatione synthetase deficiency with 5-oxoprolinuria	True	False	False
+DOID:0081034	glutathione synthetase deficiency with 5-oxoprolinuria	True	False	False
 DOID:0081036	mixed phenotype acute leukemia with BCR-ABL1	True	False	False
 DOID:0081037	mixed phenotype acute leukemia with MLL rearranged	True	False	False
 DOID:0081038	mixed phenotype acute leukemia, B/myeloid	True	False	False
@@ -6521,11 +6553,11 @@ DOID:0081361	spastic quadriplegic cerebral palsy 3	True	False	False
 DOID:0081362	Pierpont syndrome	True	False	False
 DOID:0081363	distal myopathy with rimmed vacuoles	True	False	False
 DOID:0081364	neurodegeneration with ataxia, dystonia, and gaze palsy, childhood-onset	True	False	False
-DOID:0081365	Paget's disease of bone 2	True	False	False
-DOID:0081366	Paget's disease of bone 3	True	False	False
-DOID:0081367	Paget's disease of bone 4	True	False	False
-DOID:0081368	Paget's disease of bone 5	True	False	False
-DOID:0081369	Paget's disease of bone 6	True	False	False
+DOID:0081365	Paget disease of bone 2	True	False	False
+DOID:0081366	Paget disease of bone 3	True	False	False
+DOID:0081367	Paget disease of bone 4	True	False	False
+DOID:0081368	Paget disease of bone 5	True	False	False
+DOID:0081369	Paget disease of bone 6	True	False	False
 DOID:0081370	LADD syndrome	True	False	False
 DOID:0081371	lacrimoauriculodentodigital syndrome 2	True	False	False
 DOID:0081372	lacrimoauriculodentodigital syndrome 3	True	False	False
@@ -6807,7 +6839,6 @@ DOID:0110047	Alzheimer's disease 14	True	False	False
 DOID:0110048	Alzheimer's disease 15	True	False	False
 DOID:0110049	Alzheimer's disease 17	True	False	False
 DOID:0110050	Alzheimer's disease 18	True	False	False
-DOID:0110051	Alzheimer's disease 19	True	False	False
 DOID:0110052	amelogenesis imperfecta type 1B	True	False	False
 DOID:0110053	amelogenesis imperfecta type 4	True	False	False
 DOID:0110054	amelogenesis imperfecta type 1A	True	False	False
@@ -12753,7 +12784,7 @@ DOID:540	strabismus	True	False	False
 DOID:5401	water-clear cell adenoma	True	False	False
 DOID:5402	vaginal adenoma	True	False	False
 DOID:5403	microcystic adenoma	True	False	False
-DOID:5408	Paget's disease of bone	True	False	False
+DOID:5408	Paget disease of bone	True	False	False
 DOID:5409	lung small cell carcinoma	True	False	False
 DOID:5410	pulmonary neuroendocrine tumor	True	False	False
 DOID:5411	lung oat cell carcinoma	True	False	False
@@ -13206,7 +13237,6 @@ DOID:624	transient hypogammaglobulinemia of infancy	True	False	False
 DOID:6244	familial renal oncocytoma	True	False	False
 DOID:6245	renal oncocytoma	True	False	False
 DOID:6249	mediastinum seminoma	True	False	False
-DOID:625	transient hypogammaglobulinemia	True	False	False
 DOID:6255	growth hormone secreting pituitary adenoma	True	False	False
 DOID:6256	malignant growth hormone secreting neoplasm of pituitary	True	False	False
 DOID:6257	chromophil adenoma of the kidney	True	False	False
@@ -14689,6 +14719,7 @@ DOID:0050867	obsolete Jensen syndrome	True	True	True
 DOID:0060771	obsolete dextro-looped transposition of the great arteries 1	True	True	True
 DOID:0061095	obsolete immunodeficiency 130	True	True	True
 DOID:0080191	obsolete PTEN hamartoma tumor syndrome	True	True	True
+DOID:0110051	obsolete Alzheimer's disease 19	True	True	True
 DOID:0110302	obsolete autosomal dominant limb-girdle muscular dystrophy type 1C	True	True	True
 DOID:0110578	obsolete autosomal dominant nonsyndromic deafness 52	True	True	True
 DOID:0111612	obsolete autosomal recessive spinocerebellar ataxia 3	True	True	True
@@ -14699,6 +14730,7 @@ DOID:1634	obsolete breast papillomatosis	True	True	True
 DOID:4086	obsolete testicular germ cell tumor non-seminomatous	True	True	True
 DOID:5209	obsolete benign struma ovarii	True	True	True
 DOID:5996	obsolete blunt duct adenosis of breast	True	True	True
+DOID:625	obsolete transient hypogammaglobulinemia	True	True	True
 DOID:6809	obsolete vaginal tubular adenoma	True	True	True
 DOID:7922	obsolete benign mediastinal neurilemmoma	True	True	True
 DOID:955	obsolete benign neurilemmoma	True	True	True

@@ -3453,6 +3453,7 @@ MONDO:0005485	psychotic disorder	MONDO:0002039	DOID:2468	DOID:1561	cognitive dis
 MONDO:0005486	tooth agenesis	MONDO:0006999	DOID:0050591	DOID:1091	tooth disorder
 MONDO:0005487	schizoaffective disorder	MONDO:0005485	DOID:5418	DOID:2468	psychotic disorder
 MONDO:0005489	dyslexia	MONDO:0001697	DOID:4428	DOID:13365	reading disorder
+MONDO:0005494	triple-negative breast carcinoma	MONDO:0000618	DOID:0060081	DOID:0060080	Her2-receptor negative breast cancer
 MONDO:0005495	adrenal gland disorder	MONDO:0005151	DOID:9553	DOID:28	endocrine system disorder
 MONDO:0005496	bile duct carcinoma	MONDO:0003059	DOID:4897	DOID:4606	bile duct cancer
 MONDO:0005497	bone development disease	MONDO:0005381	DOID:0080006	DOID:0080001	bone disorder
@@ -3696,7 +3697,6 @@ MONDO:0005989	toxoplasmosis	MONDO:0005707	DOID:9965	DOID:2113	coccidiosis
 MONDO:0005990	tracheitis	MONDO:0002567	DOID:9392	DOID:3225	tracheal disorder
 MONDO:0005991	trench fever	MONDO:0005664	DOID:11101	DOID:11102	bartonellosis
 MONDO:0005993	Trichomonas vaginitis urogenital infection	MONDO:0002154	DOID:0050269	DOID:1947	trichomoniasis
-MONDO:0005994	trichostrongyloidiasis	MONDO:0004664	DOID:1255	DOID:883	helminthiasis
 MONDO:0005995	trichostrongylosis	MONDO:0005994	DOID:1254	DOID:1255	trichostrongyloidiasis
 MONDO:0005997	tricuspid valve stenosis	MONDO:0000471	DOID:4078	DOID:0050826	tricuspid valve disorder
 MONDO:0005998	trombiculiasis	MONDO:0004389	DOID:8399	DOID:7894	mite infestation
@@ -4311,6 +4311,7 @@ MONDO:0007698	hand-foot-genital syndrome	MONDO:0000426	DOID:0060739	DOID:0050736
 MONDO:0007698	hand-foot-genital syndrome	MONDO:0002254	DOID:0060739	DOID:225	syndromic disease
 MONDO:0007701	progressive familial heart block type II	MONDO:0019490	DOID:0111075	DOID:0111073	progressive familial heart block
 MONDO:0007710	facial hemiatrophy	MONDO:0002098	DOID:1757	DOID:1756	facial nerve disorder
+MONDO:0007716	alpha thalassemia-intellectual disability syndrome type 1	MONDO:0002254	DOID:0110029	DOID:225	syndromic disease
 MONDO:0007718	hepatic adenomas, familial	MONDO:0018902	DOID:0111366	DOID:0050868	hepatocellular adenoma
 MONDO:0007721	hiatus hernia	MONDO:0004298	DOID:12642	DOID:76	stomach disorder
 MONDO:0007729	developmental dysplasia of the hip 1	MONDO:0000158	DOID:0060931	DOID:0060930	developmental dysplasia of the hip
@@ -4850,7 +4851,6 @@ MONDO:0009734	hyperinsulinemic hypoglycemia, familial, 1	MONDO:0005803	DOID:0070
 MONDO:0009735	Netherton syndrome	MONDO:0006025	DOID:0050474	DOID:0050737	autosomal recessive disease
 MONDO:0009744	neuronal ceroid lipofuscinosis 1	MONDO:0016295	DOID:0110721	DOID:14503	neuronal ceroid lipofuscinosis
 MONDO:0009745	neuronal ceroid lipofuscinosis 5	MONDO:0016295	DOID:0110728	DOID:14503	neuronal ceroid lipofuscinosis
-MONDO:0009746	hereditary sensory and autonomic neuropathy type 4	MONDO:0015364	DOID:0070146	DOID:0050548	hereditary sensory and autonomic neuropathy
 MONDO:0009751	neuropathy, hereditary sensory, atypical	MONDO:0015364	DOID:0070160	DOID:0050548	hereditary sensory and autonomic neuropathy
 MONDO:0009758	congenital stationary night blindness 1B	MONDO:0016293	DOID:0110865	DOID:0050534	congenital stationary night blindness
 MONDO:0009759	mosaic variegated aneuploidy syndrome 1	MONDO:0000141	DOID:0080141	DOID:0080688	mosaic variegated aneuploidy syndrome
@@ -5274,7 +5274,7 @@ MONDO:0010992	Ayme-Gripp syndrome	MONDO:0002254	DOID:0111688	DOID:225	syndromic 
 MONDO:0010995	Charcot-Marie-Tooth disease type 1C	MONDO:0019011	DOID:0110151	DOID:0050538	Charcot-Marie-Tooth disease type 1
 MONDO:0010998	ALG3-congenital disorder of glycosylation	MONDO:0005500	DOID:0080556	DOID:0050570	congenital disorder of glycosylation type I
 MONDO:0011001	Brugada syndrome 1	MONDO:0015263	DOID:0110218	DOID:0050451	Brugada syndrome
-MONDO:0011010	Matthew-Wood syndrome	MONDO:0016073	DOID:0111807	DOID:0080636	syndromic microphthalmia
+MONDO:0011010	microphthalmia, syndromic 9	MONDO:0016073	DOID:0111807	DOID:0080636	syndromic microphthalmia
 MONDO:0011012	African iron overload	MONDO:0006507	DOID:0111033	DOID:2352	hereditary hemochromatosis
 MONDO:0011013	autosomal dominant hypocalcemia 1	MONDO:0018543	DOID:0090107	DOID:0090109	autosomal dominant hypocalcemia
 MONDO:0011014	pleuropulmonary blastoma	MONDO:0005933	DOID:4769	DOID:4765	pulmonary blastoma
@@ -5649,7 +5649,6 @@ MONDO:0012087	primary ciliary dyskinesia 4	MONDO:0016575	DOID:0110614	DOID:9562	
 MONDO:0012088	primary ciliary dyskinesia 5	MONDO:0016575	DOID:0110617	DOID:9562	primary ciliary dyskinesia
 MONDO:0012090	autosomal dominant nonsyndromic hearing loss 47	MONDO:0019587	DOID:0110570	DOID:0050564	autosomal dominant nonsyndromic hearing loss
 MONDO:0012091	autosomal recessive nonsyndromic hearing loss 32	MONDO:0019588	DOID:0110491	DOID:0050565	hearing loss, autosomal recessive
-MONDO:0012092	hereditary sensory and autonomic neuropathy type 5	MONDO:0015364	DOID:0070145	DOID:0050548	hereditary sensory and autonomic neuropathy
 MONDO:0012096	Charcot-Marie-Tooth disease axonal type 2L	MONDO:0018993	DOID:0110174	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0012106	microcephaly 5, primary, autosomal recessive	MONDO:0016660	DOID:0070280	DOID:0070296	autosomal recessive primary microcephaly
 MONDO:0012111	hypertrophic cardiomyopathy 8	MONDO:0024573	DOID:0110314	DOID:0080326	familial hypertrophic cardiomyopathy
@@ -6465,7 +6464,6 @@ MONDO:0014233	early-onset Parkinson disease 20	MONDO:0017279	DOID:0060898	DOID:0
 MONDO:0014237	autosomal recessive nonsyndromic hearing loss 76	MONDO:0019588	DOID:0110524	DOID:0050565	hearing loss, autosomal recessive
 MONDO:0014240	periventricular nodular heterotopia 6	MONDO:0020341	DOID:0061269	DOID:0050454	periventricular nodular heterotopia
 MONDO:0014242	van Maldergem syndrome 2	MONDO:0017813	DOID:0080586	DOID:0060238	van Maldergem syndrome
-MONDO:0014244	hereditary sensory and autonomic neuropathy type 7	MONDO:0015364	DOID:0070149	DOID:0050548	hereditary sensory and autonomic neuropathy
 MONDO:0014245	Diamond-Blackfan anemia 12	MONDO:0015253	DOID:0111882	DOID:1339	Diamond-Blackfan anemia
 MONDO:0014246	episodic pain syndrome, familial, 2	MONDO:0018319	DOID:0111730	DOID:0111728	familial episodic pain syndrome
 MONDO:0014247	familial episodic pain syndrome with predominantly lower limb involvement	MONDO:0018319	DOID:0111731	DOID:0111728	familial episodic pain syndrome
@@ -6495,7 +6493,6 @@ MONDO:0014297	Joubert syndrome 22	MONDO:0018772	DOID:0110991	DOID:0050777	Jouber
 MONDO:0014299	LZTR1-related schwannomatosis	MONDO:0008075	DOID:0070481	DOID:3204	schwannomatosis
 MONDO:0014300	proximal myopathy with extrapyramidal signs	MONDO:0005336	DOID:0111335	DOID:423	myopathy
 MONDO:0014313	autosomal recessive primary immunodeficiency with defective spontaneous natural killer cell cytotoxicity	MONDO:0003778	DOID:0111941	DOID:612	inborn error of immunity
-MONDO:0014316	Alzheimer disease 19	MONDO:0004975	DOID:0110051	DOID:10652	Alzheimer disease
 MONDO:0014318	hyperphosphatasia with intellectual disability syndrome 4	MONDO:0016596	DOID:0070436	DOID:0070431	hyperphosphatasia-intellectual disability syndrome
 MONDO:0014323	retinitis pigmentosa 68	MONDO:0019200	DOID:0110374	DOID:10584	retinitis pigmentosa
 MONDO:0014328	developmental and epileptic encephalopathy, 19	MONDO:0100062	DOID:0080431	DOID:0112202	genetic developmental and epileptic encephalopathy
@@ -6640,7 +6637,6 @@ MONDO:0014654	Ullrich congenital muscular dystrophy 2	MONDO:0000355	DOID:0060948
 MONDO:0014657	primary ciliary dyskinesia 32	MONDO:0016575	DOID:0110603	DOID:9562	primary ciliary dyskinesia
 MONDO:0014658	severe achondroplasia-developmental delay-acanthosis nigricans syndrome	MONDO:0000426	DOID:0111158	DOID:0050736	autosomal dominant disease
 MONDO:0014660	microcephaly 15, primary, autosomal recessive	MONDO:0016660	DOID:0070277	DOID:0070296	autosomal recessive primary microcephaly
-MONDO:0014662	congenital insensitivity to pain-hypohidrosis syndrome	MONDO:0015364	DOID:0070153	DOID:0050548	hereditary sensory and autonomic neuropathy
 MONDO:0014664	Joubert syndrome 23	MONDO:0018772	DOID:0110992	DOID:0050777	Joubert syndrome
 MONDO:0014665	Charcot-Marie-Tooth disease axonal type 2V	MONDO:0018993	DOID:0110178	DOID:0050539	Charcot-Marie-Tooth disease type 2
 MONDO:0014667	cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3	MONDO:0015487	DOID:0080359	DOID:0050713	fatal infantile encephalocardiomyopathy
@@ -6864,7 +6860,6 @@ MONDO:0015681	childhood disintegrative disorder	MONDO:0000594	DOID:13487	DOID:00
 MONDO:0015687	chronic eosinophilic leukemia	MONDO:0001014	DOID:0080367	DOID:1036	chronic leukemia
 MONDO:0015689	myeloid neoplasm associated with PDGFRA rearrangement	MONDO:0015688	DOID:0080165	DOID:0080164	myeloid/lymphoid neoplasms associated with eosinophilia and abnormality of PDGFRA, PDGFRB, FGFR1 or JAK2
 MONDO:0015690	myeloid neoplasm associated with PDGFRB rearrangement	MONDO:0015688	DOID:0080166	DOID:0080164	myeloid/lymphoid neoplasms associated with eosinophilia and abnormality of PDGFRA, PDGFRB, FGFR1 or JAK2
-MONDO:0015698	transient hypogammaglobulinemia of infancy	MONDO:0003827	DOID:624	DOID:625	transient hypogammaglobulinemia
 MONDO:0015705	autosomal recessive centronuclear myopathy	MONDO:0018947	DOID:0111216	DOID:14717	centronuclear myopathy
 MONDO:0015742	periventricular leukomalacia	MONDO:0006741	DOID:13088	DOID:2034	encephalomalacia
 MONDO:0015760	T-cell non-Hodgkin lymphoma	MONDO:0018908	DOID:0081312	DOID:0060060	non-Hodgkin lymphoma
