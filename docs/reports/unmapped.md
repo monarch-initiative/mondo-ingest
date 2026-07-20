@@ -7,7 +7,7 @@
 | [NCIT](./unmapped_ncit.md)                       | 209,933     | 186,872        | 5,614            | 5,608                     | 17,447                                    | 3,802                     | 13,645                      | 78.2%                     |
 | [DOID](./unmapped_doid.md)                       | 14,735      | 2,694          | 2,514            | 2,493                     | 12,040                                    | 11,883                    | 157                         | 1.3%                      |
 | [ORDO](./unmapped_ordo.md)                       | 15,841      | 6,391          | 1,468            | 1,293                     | 9,450                                     | 9,373                     | 77                          | 0.8%                      |
-| [OMIM](./unmapped_omim.md)                       | 30,237      | 19,815         | 1,383            | 1,334                     | 9,043                                     | 9,013                     | 30                          | 0.3%                      |
+| [OMIM](./unmapped_omim.md)                       | 30,240      | 19,815         | 1,383            | 1,334                     | 9,046                                     | 9,013                     | 33                          | 0.4%                      |
 
 `Ontology`: Name of ontology  
 `Tot terms`: Total terms in ontology  
