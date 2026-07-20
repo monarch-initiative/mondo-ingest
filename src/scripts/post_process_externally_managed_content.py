@@ -19,6 +19,8 @@ def _get_column_of_external_source_related_to_qc_failure(qc_failure, erroneous_r
         columns = ["subset"]
     elif external == "mondo-omim-genes":
         columns = ["hgnc_id"]
+    elif external == "mondo-omim-susceptibility-subset":
+        columns = ["subset", "omim_id"]
     elif external == "mondo-clingen":
         columns = ["synonym", "subset"]
     elif external == "mondo-medgen":
@@ -106,7 +108,7 @@ def _remove_erroneous_values_from_externally_managed_content(external_content_fi
     
     # BANANA ERROR: Search the entire external content for occurrences of the pattern 'MONDO:MONDO'
     pattern = r"^MONDO:MONDO:.*$"
-    result = df_external_content.applymap(lambda x: bool(re.match(pattern, str(x))))
+    result = df_external_content.map(lambda x: bool(re.match(pattern, str(x))))
     rows_to_drop = result.any(axis=1).index[result.any(axis=1)].tolist()
     for row in rows_to_drop:
         error_report = df_external_content.loc[row].to_dict()
@@ -115,8 +117,21 @@ def _remove_erroneous_values_from_externally_managed_content(external_content_fi
         property = "IRI"
         error_report['Check'] = f"{rule} ({property})"
         report.append(error_report)
-        df_external_content.drop(index=rows_to_drop, inplace=True)
+    df_external_content.drop(index=rows_to_drop, inplace=True)
     
+    # Missing MONDO ID (bare "MONDO:" with no number afterward)
+    pattern = r"^MONDO:$"
+    result = df_external_content.map(lambda x: bool(re.match(pattern, str(x))))
+    rows_to_drop = result.any(axis=1).index[result.any(axis=1)].tolist()
+    for row in rows_to_drop:
+        error_report = df_external_content.loc[row].to_dict()
+        error_report['Source'] = source
+        rule = "MONDO:_with_no_id"
+        property = "IRI"
+        error_report['Check'] = f"{rule} ({property})"
+        report.append(error_report)
+    df_external_content.drop(index=rows_to_drop, inplace=True)
+
     # X ERROR: TBD
     
     df_external_content.to_csv(external_content_file_out, sep="\t", index=False)
