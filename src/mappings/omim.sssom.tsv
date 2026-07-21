@@ -8110,7 +8110,7 @@ MONDO:0020620		skos:exactMatch	OMIM:111740	blood group, Ss	semapv:UnspecifiedMat
 MONDO:0020621		skos:exactMatch	OMIM:111750	blood group--scianna system	semapv:UnspecifiedMatching
 MONDO:0020622		skos:exactMatch	OMIM:111800	blood group--stoltzfus system	semapv:UnspecifiedMatching
 MONDO:0020623		skos:exactMatch	OMIM:112000	blood group--ul system	semapv:UnspecifiedMatching
-MONDO:0020624		skos:exactMatch	OMIM:112010	blood group--waldner type	semapv:UnspecifiedMatching
+MONDO:0020624		skos:exactMatch	OMIM:112010	blood group, waldner	semapv:UnspecifiedMatching
 MONDO:0020625		skos:exactMatch	OMIM:112050	blood group--wright antigen	semapv:UnspecifiedMatching
 MONDO:0020626		skos:exactMatch	OMIM:112100	yt blood group antigen	semapv:UnspecifiedMatching
 MONDO:0020627		skos:exactMatch	OMIMPS:617711		semapv:UnspecifiedMatching
@@ -12611,8 +12611,8 @@ OMIM:111800	blood group--stoltzfus system	skos:exactMatch	MONDO:0020622		semapv:
 OMIM:111800	blood group--stoltzfus system	skos:exactMatch	UMLS:C1862193		semapv:UnspecifiedMatching
 OMIM:112000	blood group--ul system	skos:exactMatch	MONDO:0020623		semapv:UnspecifiedMatching
 OMIM:112000	blood group--ul system	skos:exactMatch	UMLS:C1862192		semapv:UnspecifiedMatching
-OMIM:112010	blood group--waldner type	skos:exactMatch	MONDO:0020624		semapv:UnspecifiedMatching
-OMIM:112010	blood group--waldner type	skos:exactMatch	UMLS:C1862191		semapv:UnspecifiedMatching
+OMIM:112010	blood group, waldner	skos:exactMatch	MONDO:0020624		semapv:UnspecifiedMatching
+OMIM:112010	blood group, waldner	skos:exactMatch	UMLS:C1862191		semapv:UnspecifiedMatching
 OMIM:112050	blood group--wright antigen	skos:exactMatch	MONDO:0020625		semapv:UnspecifiedMatching
 OMIM:112050	blood group--wright antigen	skos:exactMatch	UMLS:C1862190		semapv:UnspecifiedMatching
 OMIM:112100	yt blood group antigen	skos:exactMatch	MONDO:0020626		semapv:UnspecifiedMatching
@@ -60767,7 +60767,7 @@ OMIM:605275	noonan syndrome 2	skos:exactMatch	Orphanet:648		semapv:UnspecifiedMa
 OMIM:605275	noonan syndrome 2	skos:exactMatch	UMLS:C1854469		semapv:UnspecifiedMatching
 OMIM:605276	AATK	skos:exactMatch	UMLS:C1412055		semapv:UnspecifiedMatching
 OMIM:605276	AATK	skos:exactMatch	hgnc.symbol:21		semapv:UnspecifiedMatching
-OMIM:605276	AATK	skos:exactMatch	hgnc.symbol:AATK		semapv:UnspecifiedMatching
+OMIM:605276	AATK	skos:exactMatch	hgnc.symbol:LMTK1		semapv:UnspecifiedMatching
 OMIM:605276	AATK	skos:exactMatch	ncbigene:9625		semapv:UnspecifiedMatching
 OMIM:605277	ARHGAP35	skos:exactMatch	UMLS:C1415304		semapv:UnspecifiedMatching
 OMIM:605277	ARHGAP35	skos:exactMatch	hgnc.symbol:4591		semapv:UnspecifiedMatching
@@ -97776,13 +97776,16 @@ OMIM:614709	LYRM1	skos:exactMatch	hgnc.symbol:25074		semapv:UnspecifiedMatching
 OMIM:614709	LYRM1	skos:exactMatch	hgnc.symbol:LYRM1		semapv:UnspecifiedMatching
 OMIM:614709	LYRM1	skos:exactMatch	ncbigene:57149		semapv:UnspecifiedMatching
 OMIM:614710	FAM72A	skos:exactMatch	UMLS:C1825137		semapv:UnspecifiedMatching
-OMIM:614710	FAM72A	skos:exactMatch	hgnc.symbol:FAM72A		semapv:UnspecifiedMatching
+OMIM:614710	FAM72A	skos:exactMatch	hgnc.symbol:24044		semapv:UnspecifiedMatching
+OMIM:614710	FAM72A	skos:exactMatch	hgnc.symbol:RUMY1		semapv:UnspecifiedMatching
 OMIM:614710	FAM72A	skos:exactMatch	ncbigene:729533		semapv:UnspecifiedMatching
 OMIM:614711	FAM72B	skos:exactMatch	UMLS:C1825138		semapv:UnspecifiedMatching
-OMIM:614711	FAM72B	skos:exactMatch	hgnc.symbol:FAM72B		semapv:UnspecifiedMatching
+OMIM:614711	FAM72B	skos:exactMatch	hgnc.symbol:24805		semapv:UnspecifiedMatching
+OMIM:614711	FAM72B	skos:exactMatch	hgnc.symbol:RUMY2		semapv:UnspecifiedMatching
 OMIM:614711	FAM72B	skos:exactMatch	ncbigene:653820		semapv:UnspecifiedMatching
 OMIM:614712	FAM72D	skos:exactMatch	UMLS:C2239400		semapv:UnspecifiedMatching
-OMIM:614712	FAM72D	skos:exactMatch	hgnc.symbol:FAM72D		semapv:UnspecifiedMatching
+OMIM:614712	FAM72D	skos:exactMatch	hgnc.symbol:33593		semapv:UnspecifiedMatching
+OMIM:614712	FAM72D	skos:exactMatch	hgnc.symbol:RUMY4		semapv:UnspecifiedMatching
 OMIM:614712	FAM72D	skos:exactMatch	ncbigene:728833		semapv:UnspecifiedMatching
 OMIM:614713	RASSF10	skos:exactMatch	UMLS:C2239870		semapv:UnspecifiedMatching
 OMIM:614713	RASSF10	skos:exactMatch	hgnc.symbol:33984		semapv:UnspecifiedMatching
@@ -105716,7 +105719,8 @@ OMIM:616852	myopathy, scapulohumeroperoneal	skos:exactMatch	MONDO:0014800		semap
 OMIM:616852	myopathy, scapulohumeroperoneal	skos:exactMatch	Orphanet:447977		semapv:UnspecifiedMatching
 OMIM:616852	myopathy, scapulohumeroperoneal	skos:exactMatch	UMLS:C4225181		semapv:UnspecifiedMatching
 OMIM:616853	family with sequence similarity 72, member c: fam72c	skos:exactMatch	UMLS:C4225668		semapv:UnspecifiedMatching
-OMIM:616853	family with sequence similarity 72, member c: fam72c	skos:exactMatch	hgnc.symbol:FAM72C		semapv:UnspecifiedMatching
+OMIM:616853	family with sequence similarity 72, member c: fam72c	skos:exactMatch	hgnc.symbol:30602		semapv:UnspecifiedMatching
+OMIM:616853	family with sequence similarity 72, member c: fam72c	skos:exactMatch	hgnc.symbol:RUMY3		semapv:UnspecifiedMatching
 OMIM:616853	family with sequence similarity 72, member c: fam72c	skos:exactMatch	ncbigene:554282		semapv:UnspecifiedMatching
 OMIM:616854	even-plus syndrome	skos:exactMatch	MONDO:0014801		semapv:UnspecifiedMatching
 OMIM:616854	even-plus syndrome	skos:exactMatch	Orphanet:496751		semapv:UnspecifiedMatching
