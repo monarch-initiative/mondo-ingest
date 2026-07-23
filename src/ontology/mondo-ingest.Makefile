@@ -753,6 +753,7 @@ EXTERNAL_FILES = \
 	mondo-omim-susceptibility-subset \
 	mondo-otar-subset \
 	mondo-malacards \
+	mondo-dismech \
 	nando-mappings \
 	gard \
 	nord \
@@ -912,6 +913,29 @@ $(TMPDIR)/malacards.tsv:
 $(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv: $(TMPDIR)/malacards.tsv
 	awk 'NR==1 { print; print "ID	AT obo:mondo#curated_content_resource^^xsd:anyURI	>A oboInOwl:source"; next } { print }' $< > $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv
+
+###### DisMech #########
+
+# Disorder Mechanisms Knowledge Base (https://dismech.monarchinitiative.org).
+# dismech publishes a stable "Mondo EMC" export (mondo_id, mondo_label, dismech_url,
+# dismech_definition, dismech_exact_synonyms, dismech_pmids). We keep only mondo_id +
+# dismech_url and emit a curated_content_resource linkout tagged source="MONDO:DisMech",
+# exactly as MalaCards/ClinGen linkouts are handled.
+# Preferred source once dismech's release workflow (mondo-emc-release.yaml) has run against
+# a published release:
+#   https://github.com/monarch-initiative/dismech/releases/latest/download/mondo_emc.tsv
+# Until that asset is attached, pull the committed export from main:
+DISMECH_EMC_URL=https://raw.githubusercontent.com/monarch-initiative/dismech/main/exports/mondo_emc.tsv
+
+$(TMPDIR)/dismech-emc.tsv:
+	wget "$(DISMECH_EMC_URL)" -O $@
+
+$(EXTERNAL_CONTENT_DIR)/mondo-dismech.robot.tsv: $(TMPDIR)/dismech-emc.tsv
+	awk -F'\t' 'BEGIN { OFS="\t" } \
+		NR==1 { print "mondo_id", "dismech_url", "source"; \
+		        print "ID", "AT obo:mondo#curated_content_resource^^xsd:anyURI", ">A oboInOwl:source"; next } \
+		{ print $$1, $$3, "MONDO:DisMech" }' $< > $@
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-dismech.robot.tsv
 
 ###### ClinGen #########
 
