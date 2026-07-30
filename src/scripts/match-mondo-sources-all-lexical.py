@@ -26,10 +26,10 @@ import yaml
 import pandas as pd
 
 from sssom.constants import SUBJECT_ID, OBJECT_ID, PREDICATE_MODIFIER
-from sssom.util import filter_prefixes
+from sssom.util import get_prefix_from_curie
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
-from sssom.io import get_metadata_and_prefix_map, filter_file
+from sssom.io import get_metadata_and_prefix_map
 
 SRC = Path(__file__).resolve().parents[1]
 ONTOLOGY_DIR = SRC / "ontology"
@@ -108,7 +108,7 @@ def run(input: str, config: str, rules: str, rejects: str, output: str):
     #     .reset_index(drop=True)
     # )
 
-    prefix_of_interest = yml["subject_prefixes"]
+    prefixes_of_interest = yml["subject_prefixes"]
 
     resource = OntologyResource(slug=f"sqlite:///{Path(input).absolute()}")
     oi = SqlImplementation(resource=resource)
@@ -132,20 +132,26 @@ def run(input: str, config: str, rules: str, rejects: str, output: str):
     # msdf.df[OBJECT_ID] = msdf.df[OBJECT_ID].apply(
     #     lambda x: iri_to_curie(x) if x.startswith("<http") else x
     # )
-    msdf.df = filter_prefixes(
-        df=msdf.df, filter_prefixes=prefix_of_interest, features=[SUBJECT_ID, OBJECT_ID]
-    )
+
     msdf.remove_mappings(mapping_msdf)
 
-    with open(str(Path(output)), "w", encoding="utf8") as f:
+    # Select matches with prefixes defined in the configuration
+    prefix_set = set(prefixes_of_interest)
+    msdf.df = msdf.df[
+        msdf.df[SUBJECT_ID].apply(get_prefix_from_curie).isin(prefix_set) &
+        msdf.df[OBJECT_ID].apply(get_prefix_from_curie).isin(prefix_set)
+    ].reset_index(drop=True)
+    msdf.clean_prefix_map()
+    with Path(output).open("w") as f:
         write_table(msdf, f)
 
-    objects = msdf.df[OBJECT_ID].drop_duplicates()
-    prefixes = objects.str.split(":").str.get(0).drop_duplicates()
-    prefix_args = tuple([x + ":%" for _, x in prefixes.items() if x != "MONDO"])
-    kwargs = {"subject_id": ("MONDO:%",), "object_id": prefix_args}
-    with open(str(Path(output.replace("lexical", "lexical-2"))), "w") as f:
-        filter_file(input=str(Path(output)), output=f, **kwargs)
+    # Select MONDO->NOT MONDO matches
+    msdf.df = msdf.df[
+        msdf.df[SUBJECT_ID].str.startswith("MONDO:") &
+        ~msdf.df[OBJECT_ID].str.startswith("MONDO:")
+    ].reset_index(drop=True)
+    with Path(output.replace("lexical", "lexical-2")).open("w") as f:
+        write_table(msdf, f)
 
 if __name__ == "__main__":
     main()
