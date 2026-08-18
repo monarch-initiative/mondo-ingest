@@ -42,7 +42,7 @@ import pandas as pd
 TEST_DIR = Path(os.path.abspath(os.path.dirname(__file__)))
 PROJECT_ROOT = TEST_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
-from src.scripts.sync_synonym import sync_synonyms
+from src.scripts.sync_synonym import PIPE_DELIMITED_COLS, _sort_delimited_values, sync_synonyms
 
 ONTO_DIR = PROJECT_ROOT / 'src' / 'ontology'
 META_DIR = ONTO_DIR / 'metadata'
@@ -85,7 +85,6 @@ class TestSyncSynonyms(unittest.TestCase):
             outpath_confirmed=OUTPUT_CONFIRMED,
             # outpath_deleted=OUTPUT_DELETED,
             outpath_updated=OUTPUT_UPDATED,
-            combined_outpath_template_str=None
         )
         cls.df_lookup: Dict[str, pd.DataFrame] = {
             'added': cls._read_df(OUTPUT_ADDED),
@@ -312,3 +311,37 @@ class TestSyncSynonyms(unittest.TestCase):
             'synonym': 'Unmapped: Synonym exists in 1 source and 1 Mondo term, but no mapping',
             'source_id': 'OMIM:999999',
         })
+
+    def test_multi_valued_cells_are_sorted(self):
+        """Multi-valued cells must be sorted"""
+        col_delims: Dict[str, str] = {col: '|' for col in PIPE_DELIMITED_COLS}
+        col_delims['mondo_evidence'] = ', '
+        for template, df in self.df_lookup.items():
+            if len(df) == 0:
+                continue
+            for col, delim in [(k, v) for k, v in col_delims.items() if k in df.columns]:
+                for val in df[col].drop(0).fillna(''):  # drop(0): the ROBOT subheader row
+                    if not val or delim not in val:
+                        continue
+                    vals: List[str] = val.split(delim)
+                    self.assertEqual(sorted(vals), vals, f'Unsorted cell in {template}.{col}: {val}')
+
+
+class TestSortDelimitedValues(unittest.TestCase):
+    """Tests for _sort_delimited_values()"""
+
+    def test_sorts_only_known_cols(self):
+        """Sorts the multi-valued cols it is given, and leaves everything else alone."""
+        df = pd.DataFrame([
+            {'synonym_case_source': 'Del(16)|del(16)', 'synonym': 'b|a'},
+            {'synonym_case_source': 'del(16)|Del(16)', 'synonym': 'b|a'},
+        ])
+        df = _sort_delimited_values(df, cols=['synonym_case_source'])
+        self.assertEqual(['Del(16)|del(16)', 'Del(16)|del(16)'], list(df['synonym_case_source']))
+        self.assertEqual(['b|a', 'b|a'], list(df['synonym']))
+
+    def test_handles_empty_and_missing(self):
+        """Empty cells, NaN, and absent columns are all no-ops."""
+        df = pd.DataFrame([{'synonym_type': ''}, {'synonym_type': None}, {'synonym_type': 'b|a'}])
+        df = _sort_delimited_values(df, cols=['synonym_type', 'col_that_does_not_exist'])
+        self.assertEqual(['', '', 'a|b'], list(df['synonym_type']))

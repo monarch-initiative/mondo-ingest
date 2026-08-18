@@ -14,7 +14,12 @@ HERE = Path(os.path.abspath(os.path.dirname(__file__)))
 SRC_DIR = HERE.parent
 PROJECT_ROOT = SRC_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
-from src.scripts.sync_synonym import _common_operations, _read_sparql_output_tsv, _curies_to_uris_from_delim_str
+from src.scripts.sync_synonym import (
+    _common_operations,
+    _read_sparql_output_tsv,
+    _curies_to_uris_from_delim_str,
+    _sort_delimited_values
+)
 from src.scripts.utils import remove_angle_brackets
 
 
@@ -123,6 +128,8 @@ def sync_synonyms_curation_filtering(
         df_review = df_review[['synonym', 'mondo_id', 'source_id', 'case', 'synonym_type',
             'filtered_because_this_mondo_id_already_has_this_synonym_as_its_label']]\
         .sort_values(['synonym', 'mondo_id'])
+    # - Some multi-valued cells are built via `set()`, which does not have deterministic ordering.
+    df_review = _sort_delimited_values(df_review, cols=['synonym_type'])
     df_review.to_csv(review_outpath, sep='\t', index=False)
     # - filtered outputs
     key_columns = ['synonym', 'mondo_id', 'source_id']
