@@ -84,8 +84,6 @@ MONDO:0000552	breast lobular carcinoma	MONDO:0004989	DOID:0050938	DOID:3459	brea
 MONDO:0000554	endocervical adenocarcinoma	MONDO:0004970	DOID:0050940	DOID:299	adenocarcinoma
 MONDO:0000596	paraphilic disorder	MONDO:0000595	DOID:0060044	DOID:0060043	sexual disorder
 MONDO:0000608	familial juvenile hyperuricemic nephropathy	MONDO:0005240	DOID:0060062	DOID:557	kidney disorder
-MONDO:0000615	progesterone-receptor positive breast cancer	MONDO:0007254	DOID:0060077	DOID:1612	breast cancer
-MONDO:0000616	progesterone-receptor negative breast cancer	MONDO:0007254	DOID:0060078	DOID:1612	breast cancer
 MONDO:0000618	Her2-receptor negative breast cancer	MONDO:0007254	DOID:0060080	DOID:1612	breast cancer
 MONDO:0000620	breast benign neoplasm	MONDO:0002657	DOID:0060082	DOID:3463	breast disorder
 MONDO:0000624	benign female reproductive system neoplasm	MONDO:0002263	DOID:0060086	DOID:229	female reproductive system disorder
@@ -655,6 +653,7 @@ MONDO:0003792	ovarian carcinosarcoma	MONDO:0018364	DOID:6170	DOID:2151	malignant
 MONDO:0003800	conventional malignant hemangiopericytoma	MONDO:0005094	DOID:6197	DOID:264	hemangiopericytoma
 MONDO:0003801	corneal intraepithelial neoplasm	MONDO:0000942	DOID:6198	DOID:10124	corneal disorder
 MONDO:0003802	cornea cancer	MONDO:0000942	DOID:6199	DOID:10124	corneal disorder
+MONDO:0003808	mediastinal extraskeletal osteosarcoma	MONDO:0009807	DOID:6208	DOID:3347	osteosarcoma
 MONDO:0003809	malignant mediastinum hemangiopericytoma	MONDO:0005094	DOID:6209	DOID:264	hemangiopericytoma
 MONDO:0003812	ovarian endometrial cancer	MONDO:0002229	DOID:6212	DOID:2152	ovarian epithelial tumor
 MONDO:0003826	mediastinum seminoma	MONDO:0005040	DOID:6249	DOID:2994	germ cell tumor
@@ -670,6 +669,7 @@ MONDO:0003856	adult malignant hemangiopericytoma	MONDO:0005094	DOID:6332	DOID:26
 MONDO:0003858	anterior optic tract meningioma	MONDO:0016642	DOID:6334	DOID:3565	meningioma
 MONDO:0003859	bilateral meningioma of optic nerve	MONDO:0016642	DOID:6335	DOID:3565	meningioma
 MONDO:0003866	liver extraskeletal osteosarcoma	MONDO:0002691	DOID:6370	DOID:3571	liver cancer
+MONDO:0003866	liver extraskeletal osteosarcoma	MONDO:0009807	DOID:6370	DOID:3347	osteosarcoma
 MONDO:0003874	ovarian serous surface papillary adenocarcinoma	MONDO:0005140	DOID:6408	DOID:4001	ovarian carcinoma
 MONDO:0003876	eyelid carcinoma	MONDO:0003382	DOID:6425	DOID:530	eyelid disorder
 MONDO:0003884	lipoma of the rectum	MONDO:0002165	DOID:6459	DOID:1984	rectal neoplasm
@@ -1133,8 +1133,6 @@ MONDO:0006497	cerebral palsy	MONDO:0005560	DOID:1969	DOID:936	brain disorder
 MONDO:0006500	hemangioma	MONDO:0000629	DOID:255	DOID:0060091	cardiovascular organ benign neoplasm
 MONDO:0006500	hemangioma	MONDO:0005165	DOID:255	DOID:0060084	benign neoplasm
 MONDO:0006500	hemangioma	MONDO:0005385	DOID:255	DOID:178	vascular disorder
-MONDO:0006512	estrogen-receptor positive breast cancer	MONDO:0007254	DOID:0060075	DOID:1612	breast cancer
-MONDO:0006513	estrogen-receptor negative breast cancer	MONDO:0007254	DOID:0060076	DOID:1612	breast cancer
 MONDO:0006525	allergic contact dermatitis	MONDO:0005271	DOID:3042	DOID:1205	allergic disease
 MONDO:0006526	allergic urticaria	MONDO:0005271	DOID:10612	DOID:1205	allergic disease
 MONDO:0006528	bacterial exanthem	MONDO:0005113	DOID:0050487	DOID:104	bacterial infectious disease
@@ -1403,7 +1401,6 @@ MONDO:0008684	Wolf-Hirschhorn syndrome	MONDO:0000761	DOID:0050460	DOID:0060388	s
 MONDO:0008686	isolated familial wooly hair disorder	MONDO:0002917	DOID:0111572	DOID:421	disorder of pilosebaceous unit
 MONDO:0008692	abetalipoproteinemia	MONDO:0001822	DOID:1386	DOID:1387	hypolipoproteinemia
 MONDO:0008692	abetalipoproteinemia	MONDO:0006025	DOID:1386	DOID:0050737	autosomal recessive disease
-MONDO:0008715	acrofrontofacionasal dysostosis	MONDO:0018234	DOID:0060226	DOID:1934	dysostosis
 MONDO:0008720	congenital isolated adrenocorticotropic hormone deficiency	MONDO:0005152	DOID:0080150	DOID:9406	hypopituitarism
 MONDO:0008721	medium chain acyl-CoA dehydrogenase deficiency	MONDO:0002525	DOID:0080153	DOID:3146	inherited lipid metabolism disorder
 MONDO:0008722	short chain acyl-CoA dehydrogenase deficiency	MONDO:0002525	DOID:0080154	DOID:3146	inherited lipid metabolism disorder
@@ -1515,6 +1512,7 @@ MONDO:0009341	Mowat-Wilson syndrome	MONDO:0000426	DOID:0060485	DOID:0050736	auto
 MONDO:0009341	Mowat-Wilson syndrome	MONDO:0002254	DOID:0060485	DOID:225	syndromic disease
 MONDO:0009354	methylcobalamin deficiency type cblE	MONDO:0004736	DOID:0112255	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0009354	methylcobalamin deficiency type cblE	MONDO:0006025	DOID:0112255	DOID:0050737	autosomal recessive disease
+MONDO:0009372	encephalopathy due to hydroxykynureninuria	MONDO:0004736	DOID:0112257	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0009376	carbamoyl phosphate synthetase I deficiency disease	MONDO:0004739	DOID:9280	DOID:9267	urea cycle disorder
 MONDO:0009377	hyperammonemia due to N-acetylglutamate synthase deficiency	MONDO:0004739	DOID:0112258	DOID:9267	urea cycle disorder
 MONDO:0009393	ornithine translocase deficiency	MONDO:0004736	DOID:0050720	DOID:9252	inborn disorder of amino acid metabolism
@@ -1580,7 +1578,7 @@ MONDO:0009817	autosomal recessive osteopetrosis 5	MONDO:0017198	DOID:0110939	DOI
 MONDO:0009818	autosomal recessive osteopetrosis 3	MONDO:0006025	DOID:0110941	DOID:0050737	autosomal recessive disease
 MONDO:0009818	autosomal recessive osteopetrosis 3	MONDO:0017198	DOID:0110941	DOID:13533	osteopetrosis
 MONDO:0009831	malignant pancreatic neoplasm	MONDO:0002356	DOID:1793	DOID:26	pancreas disorder
-MONDO:0009843	hypomyelinating leukodystrophy 3	MONDO:0019046	DOID:0060790	DOID:0060786	leukodystrophy
+MONDO:0009843	leukodystrophy, hypomyelinating, 3	MONDO:0019046	DOID:0060790	DOID:0060786	leukodystrophy
 MONDO:0009855	d-bifunctional protein deficiency	MONDO:0019053	DOID:0090031	DOID:906	peroxisomal disease
 MONDO:0009857	persistent Mullerian duct syndrome	MONDO:0005039	DOID:0050791	DOID:15	reproductive system disorder
 MONDO:0009861	phenylketonuria	MONDO:0004736	DOID:9281	DOID:9252	inborn disorder of amino acid metabolism
@@ -1689,7 +1687,6 @@ MONDO:0010566	X-linked cone-rod dystrophy 1	MONDO:0015993	DOID:0111008	DOID:0050
 MONDO:0010571	otopalatodigital syndrome type 2	MONDO:0018233	DOID:0111784	DOID:0111782	otopalatodigital syndrome spectrum disorder
 MONDO:0010580	immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome	MONDO:0007179	DOID:0090110	DOID:417	autoimmune disease
 MONDO:0010584	dyskeratosis congenita, X-linked	MONDO:0015780	DOID:0070025	DOID:2729	dyskeratosis congenita
-MONDO:0010598	glycogen storage disease IXa1	MONDO:0002412	DOID:2751	DOID:2747	disorder of glycogen metabolism
 MONDO:0010618	familial isolated hypoparathyroidism due to agenesis of parathyroid gland	MONDO:0001220	DOID:0111388	DOID:11199	hypoparathyroidism
 MONDO:0010619	X-linked dominant hypophosphatemic rickets	MONDO:0005520	DOID:0050445	DOID:10609	rickets
 MONDO:0010621	CHILD syndrome	MONDO:0002254	DOID:0111822	DOID:225	syndromic disease
@@ -1717,7 +1714,6 @@ MONDO:0010771	histiocytoid cardiomyopathy	MONDO:0000591	DOID:0080198	DOID:006003
 MONDO:0010788	Leber hereditary optic neuropathy	MONDO:0002135	DOID:705	DOID:1891	optic nerve disorder
 MONDO:0010794	NARP syndrome	MONDO:0004069	DOID:0111273	DOID:700	inborn mitochondrial metabolism disorder
 MONDO:0010810	vitamin D hydroxylation-deficient rickets, type 1B	MONDO:0024299	DOID:0080887	DOID:0080883	vitamin D-dependent rickets
-MONDO:0010829	CARASIL syndrome	MONDO:0007432	DOID:0061228	DOID:13945	cerebral arteriopathy with subcortical infarcts and leukoencephalopathy
 MONDO:0010841	Waardenburg syndrome type 2B	MONDO:0018094	DOID:0110947	DOID:9258	Waardenburg syndrome
 MONDO:0010847	spinocerebellar ataxia type 4	MONDO:0020380	DOID:0050957	DOID:1441	autosomal dominant cerebellar ataxia
 MONDO:0010848	spinocerebellar ataxia type 5	MONDO:0020380	DOID:0050882	DOID:1441	autosomal dominant cerebellar ataxia
@@ -1729,6 +1725,7 @@ MONDO:0010870	tibial muscular dystrophy	MONDO:0018949	DOID:0111078	DOID:11720	di
 MONDO:0010886	2q37 microdeletion syndrome	MONDO:0000761	DOID:0111704	DOID:0060388	syndrome caused by partial chromosomal deletion
 MONDO:0010888	adenomyosis	MONDO:0002654	DOID:288	DOID:345	uterine disorder
 MONDO:0010906	orofacial cleft 11	MONDO:0000358	DOID:0080404	DOID:0050567	orofacial cleft
+MONDO:0010907	familial hypertryptophanemia	MONDO:0004736	DOID:0111703	DOID:9252	inborn disorder of amino acid metabolism
 MONDO:0010913	Caroli disease	MONDO:0002887	DOID:0050876	DOID:4138	bile duct disorder
 MONDO:0010927	orofacial cleft 3	MONDO:0000358	DOID:0080397	DOID:0050567	orofacial cleft
 MONDO:0010929	craniosynostosis 4	MONDO:0015469	DOID:0061012	DOID:2340	craniosynostosis
@@ -1906,7 +1903,7 @@ MONDO:0012098	spinocerebellar ataxia type 20	MONDO:0020380	DOID:0050971	DOID:144
 MONDO:0012103	spinocerebellar ataxia type 25	MONDO:0020380	DOID:0050974	DOID:1441	autosomal dominant cerebellar ataxia
 MONDO:0012105	granulomatosis with polyangiitis	MONDO:0005240	DOID:12132	DOID:557	kidney disorder
 MONDO:0012116	spinocerebellar ataxia type 8	MONDO:0020380	DOID:0050959	DOID:1441	autosomal dominant cerebellar ataxia
-MONDO:0012125	hypomyelinating leukodystrophy 2	MONDO:0019046	DOID:0060787	DOID:0060786	leukodystrophy
+MONDO:0012125	leukodystrophy, hypomyelinating, 2	MONDO:0019046	DOID:0060787	DOID:0060786	leukodystrophy
 MONDO:0012130	myofibrillar myopathy 2	MONDO:0000426	DOID:0080093	DOID:0050736	autosomal dominant disease
 MONDO:0012142	orofacial cleft 5	MONDO:0000358	DOID:0080399	DOID:0050567	orofacial cleft
 MONDO:0012146	familial hemophagocytic lymphohistiocytosis 3	MONDO:0015540	DOID:0110923	DOID:0050120	hemophagocytic syndrome
@@ -2040,7 +2037,7 @@ MONDO:0012796	retinitis pigmentosa 41	MONDO:0006025	DOID:0110376	DOID:0050737	au
 MONDO:0012802	oculoauricular syndrome	MONDO:0002254	DOID:0060482	DOID:225	syndromic disease
 MONDO:0012805	childhood onset GLUT1 deficiency syndrome 2	MONDO:0003441	DOID:0090045	DOID:543	dystonic disorder
 MONDO:0012808	dilated cardiomyopathy 1AA	MONDO:0005021	DOID:0110428	DOID:12930	dilated cardiomyopathy
-MONDO:0012824	hypomyelinating leukodystrophy 4	MONDO:0019046	DOID:0060789	DOID:0060786	leukodystrophy
+MONDO:0012824	leukodystrophy, hypomyelinating, 4	MONDO:0019046	DOID:0060789	DOID:0060786	leukodystrophy
 MONDO:0012830	chromosome 10q23 deletion syndrome	MONDO:0000761	DOID:0060389	DOID:0060388	syndrome caused by partial chromosomal deletion
 MONDO:0012833	Crouzon syndrome-acanthosis nigricans syndrome	MONDO:0002254	DOID:0111161	DOID:225	syndromic disease
 MONDO:0012833	Crouzon syndrome-acanthosis nigricans syndrome	MONDO:0005381	DOID:0111161	DOID:0080001	bone disorder
@@ -2228,7 +2225,7 @@ MONDO:0013693	inflammatory skin and bowel disease, neonatal, 1	MONDO:0019751	DOI
 MONDO:0013715	amyotrophic lateral sclerosis type 16	MONDO:0004976	DOID:0060207	DOID:332	amyotrophic lateral sclerosis
 MONDO:0013720	complement component 4b deficiency	MONDO:0003832	DOID:0060298	DOID:626	complement deficiency
 MONDO:0013721	complement component 4a deficiency	MONDO:0003832	DOID:0060297	DOID:626	complement deficiency
-MONDO:0013722	hypomyelinating leukodystrophy 8 with or without oligodontia and-or hypogonadotropic hypogonadism	MONDO:0019046	DOID:0060797	DOID:0060786	leukodystrophy
+MONDO:0013722	leukodystrophy, hypomyelinating, 8, with or without oligodontia and/or hypogonadotropic hypogonadism	MONDO:0019046	DOID:0060797	DOID:0060786	leukodystrophy
 MONDO:0013737	hereditary spastic paraplegia 46	MONDO:0019064	DOID:0110798	DOID:2476	hereditary spastic paraplegia
 MONDO:0013741	familial temporal lobe epilepsy 5	MONDO:0005115	DOID:0060752	DOID:3328	temporal lobe epilepsy
 MONDO:0013744	cataract 37	MONDO:0005129	DOID:0110252	DOID:83	cataract
@@ -2454,7 +2451,7 @@ MONDO:0014641	frontotemporal dementia and/or amyotrophic lateral sclerosis 4	MON
 MONDO:0014644	hereditary spastic paraplegia 74	MONDO:0019064	DOID:0110819	DOID:2476	hereditary spastic paraplegia
 MONDO:0014656	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 2	MONDO:0005181	DOID:0111515	DOID:12558	progressive external ophthalmoplegia
 MONDO:0014662	congenital insensitivity to pain-hypohidrosis syndrome	MONDO:0015364	DOID:0070153	DOID:0050548	hereditary sensory and autonomic neuropathy
-MONDO:0014666	hypomyelinating leukodystrophy 11	MONDO:0019046	DOID:0060792	DOID:0060786	leukodystrophy
+MONDO:0014666	leukodystrophy, hypomyelinating, 11	MONDO:0019046	DOID:0060792	DOID:0060786	leukodystrophy
 MONDO:0014672	osteogenesis imperfecta type 17	MONDO:0019019	DOID:0110338	DOID:12347	osteogenesis imperfecta
 MONDO:0014673	cataract 44	MONDO:0005129	DOID:0110267	DOID:83	cataract
 MONDO:0014688	short-rib thoracic dysplasia 14 with polydactyly	MONDO:0006025	DOID:0110096	DOID:0050737	autosomal recessive disease
@@ -2631,7 +2628,12 @@ MONDO:0017814	primary bone lymphoma	MONDO:0005062	DOID:6759	DOID:0060058	lymphom
 MONDO:0017851	erythrokeratodermia variabilis	MONDO:0005093	DOID:0050467	DOID:37	skin disorder
 MONDO:0017853	hypersensitivity pneumonitis	MONDO:0005271	DOID:841	DOID:1205	allergic disease
 MONDO:0017858	acute erythroid leukemia	MONDO:0018874	DOID:0080780	DOID:9119	acute myeloid leukemia
+MONDO:0017872	Lujo hemorrhagic fever	MONDO:0005650	DOID:0050202	DOID:3944	Arenaviridae infectious disease
 MONDO:0017874	Argentine hemorrhagic fever	MONDO:0005650	DOID:0050194	DOID:3944	Arenaviridae infectious disease
+MONDO:0017875	Bolivian hemorrhagic fever	MONDO:0005650	DOID:0050195	DOID:3944	Arenaviridae infectious disease
+MONDO:0017876	Venezuelan hemorrhagic fever	MONDO:0005650	DOID:0050196	DOID:3944	Arenaviridae infectious disease
+MONDO:0017877	Brazilian hemorrhagic fever	MONDO:0005650	DOID:0050197	DOID:3944	Arenaviridae infectious disease
+MONDO:0017878	Chapare hemorrhagic fever	MONDO:0005650	DOID:0050198	DOID:3944	Arenaviridae infectious disease
 MONDO:0017879	hantavirus pulmonary syndrome	MONDO:0005108	DOID:14472	DOID:934	viral infectious disease
 MONDO:0017880	Rift valley fever	MONDO:0005108	DOID:1328	DOID:934	viral infectious disease
 MONDO:0017881	Kyasanur forest disease	MONDO:0005108	DOID:11320	DOID:934	viral infectious disease
@@ -3010,6 +3012,7 @@ MONDO:0859380	episodic kinesigenic dyskinesia 3	MONDO:0003441	DOID:0060944	DOID:
 MONDO:0859529	amyotrophic lateral sclerosis 27, juvenile	MONDO:0004976	DOID:0081381	DOID:332	amyotrophic lateral sclerosis
 MONDO:0859577	lacrimoauriculodentodigital syndrome 2	MONDO:0000426	DOID:0081371	DOID:0050736	autosomal dominant disease
 MONDO:0859578	lacrimoauriculodentodigital syndrome 3	MONDO:0000426	DOID:0081372	DOID:0050736	autosomal dominant disease
+MONDO:0957196	diffuse midline glioma, H3 K27M-mutant	MONDO:0100342	DOID:0080684	DOID:3070	malignant glioma
 MONDO:0957248	developmental and epileptic encephalopathy, 31B	MONDO:0100062	DOID:0070376	DOID:0112202	genetic developmental and epileptic encephalopathy
 MONDO:0957385	dystonia 37, early-onset, with striatal lesions	MONDO:0003441	DOID:0060956	DOID:543	dystonic disorder
 MONDO:0957538	amyotrophic lateral sclerosis 28	MONDO:0004976	DOID:0081382	DOID:332	amyotrophic lateral sclerosis
@@ -3024,4 +3027,5 @@ MONDO:0976133	myopathy, myofibrillar, 13, with rimmed vacuoles	MONDO:0000426	DOI
 MONDO:0980992	Meier-Gorlin syndrome 9	MONDO:0006025	DOID:0051069	DOID:0050737	autosomal recessive disease
 MONDO:0981022	cardiomyopathy, dilated, 3C	MONDO:0005021	DOID:0051073	DOID:12930	dilated cardiomyopathy
 MONDO:0981050	Meier-Gorlin syndrome 10	MONDO:0006025	DOID:0051070	DOID:0050737	autosomal recessive disease
+MONDO:1010154	adult hypophosphatasia	MONDO:0018570	DOID:0110913	DOID:14213	hypophosphatasia
 MONDO:8000008	Martsolf syndrome 1	MONDO:0002254	DOID:0111586	DOID:225	syndromic disease

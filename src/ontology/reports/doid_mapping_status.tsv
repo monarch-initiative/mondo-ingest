@@ -21,6 +21,11 @@ DOID:0051096	retinitis pigmentosa 105	False	False	False
 DOID:0051097	retinitis pigmentosa 106	False	False	False
 DOID:0051098	retinitis pigmentosa 107	False	False	False
 DOID:0051099	Paget disease of bone 7	False	False	False
+DOID:0051100	hydroxyprolinemia	False	False	False
+DOID:0051101	retinitis pigmentosa 108	False	False	False
+DOID:0051102	acrofrontofacionasal dysostosis	False	False	False
+DOID:0051103	acrofrontofacionasal dysostosis 2	False	False	False
+DOID:0051104	acrofrontofacionasal dysostosis 3	False	False	False
 DOID:0060160	childhood spinal muscular atrophy	False	False	False
 DOID:0060854	autosomal recessive pseudohypoaldosteronism type 1	False	False	False
 DOID:0061212	hypocholesteremia	False	False	False
@@ -149,8 +154,30 @@ DOID:0070779	hormone receptor-positive/HER2-positive breast cancer	False	False	F
 DOID:0070780	hormone receptor-positive/HER2-negative breast cancer	False	False	False
 DOID:0070781	HER2-low breast cancer	False	False	False
 DOID:0070782	HER2-ultralow breast cancer	False	False	False
+DOID:0070783	idiopathic generalized epilepsy 20	False	False	False
+DOID:0070784	hormone receptor-positive breast cancer	False	False	False
+DOID:0070785	hormone receptor-negative breast cancer	False	False	False
+DOID:0070786	triple positive breast cancer	False	False	False
+DOID:0070787	Alsahan-Harris syndrome	False	False	False
+DOID:0070788	autosomal dominant adult-onset leukodystrophy without amyloid angiopathy	False	False	False
+DOID:0070789	cataract, alopecia, oral mucosal disorder, and psoriasis-like syndrome	False	False	False
+DOID:0070790	congenital nonprogressive movement disorder with ataxia and eye movement abnormalities	False	False	False
+DOID:0070791	craniofaciocardiohepatic syndrome	False	False	False
+DOID:0070792	Dursun-Ozgul neurodevelopmental syndrome	False	False	False
+DOID:0070793	FICUS syndrome	False	False	False
+DOID:0070794	Guillouet-Gordon syndrome	False	False	False
+DOID:0070795	hyposulfatemia with skeletal dysplasia	False	False	False
+DOID:0070796	ICHAD syndrome	False	False	False
+DOID:0070797	immunodysregulation with variable immunodeficiency and autoimmunity	False	False	False
 DOID:0081462	Zeitz-Han retinal dystrophy	False	False	False
 DOID:0081463	recurrent respiratory papillomatosis	False	False	False
+DOID:0081464	isolated glycolic aciduria	False	False	False
+DOID:0081465	neurodevelopmental disorder with spasticity, hypoplasia of the corpus callosum, and recurrent infections	False	False	False
+DOID:0081466	neurodevelopmental disorder with intellectual, visual, and language impairment	False	False	False
+DOID:0081467	autosomal dominant intellectual developmental disorder 78	False	False	False
+DOID:0081468	autosomal dominant intellectual developmental disorder 76	False	False	False
+DOID:0081469	autosomal dominant intellectual developmental disorder 77	False	False	False
+DOID:0081470	spermatogenic failure 103	False	False	False
 DOID:0111368	cholesterol-ester transfer protein deficiency	False	False	False
 DOID:146	papilledema	False	False	False
 DOID:2536	chronic inflammatory demyelinating polyneuritis	False	False	False
@@ -638,6 +665,7 @@ DOID:0081119	obsolete benign familial infantile seizures 6	False	True	True
 DOID:0081164	obsolete dilated cardiomyopathy 3B	False	True	True
 DOID:0081376	obsolete sorbitol dehydrogenase deficiency with peripheral neuropathy	False	True	True
 DOID:0090121	obsolete apparent mineralocorticoid excess	False	True	True
+DOID:0110051	obsolete Alzheimer's disease 19	False	True	True
 DOID:0110071	obsolete arrhythmogenic right ventricular dysplasia 2	False	True	True
 DOID:0110172	obsolete Charcot-Marie-Tooth disease axonal type 2G	False	True	True
 DOID:0110286	obsolete autosomal recessive limb-girdle muscular dystrophy type 2R	False	True	True
@@ -2105,6 +2133,7 @@ DOID:6213	obsolete ovarian serous tumor	False	True	True
 DOID:622	obsolete Lentivirus infectious disease	False	True	True
 DOID:6240	obsolete transitional cell intraepithelial neoplasm	False	True	True
 DOID:6246	obsolete oncocytic neoplasm	False	True	True
+DOID:625	obsolete transient hypogammaglobulinemia	False	True	True
 DOID:6250	obsolete Epstein-Barr virus related carcinoma	False	True	True
 DOID:6268	obsolete recurrent extraskeletal chondrosarcoma	False	True	True
 DOID:6273	obsolete metastasis to pituitary gland	False	True	True
@@ -3549,10 +3578,10 @@ DOID:0060071	pre-malignant neoplasm	True	False	False
 DOID:0060072	benign neoplasm	True	False	False
 DOID:0060073	lymphatic system cancer	True	False	False
 DOID:0060074	ductal carcinoma in situ	True	False	False
-DOID:0060075	estrogen-receptor positive breast cancer	True	False	False
-DOID:0060076	estrogen-receptor negative breast cancer	True	False	False
-DOID:0060077	progesterone-receptor positive breast cancer	True	False	False
-DOID:0060078	progesterone-receptor negative breast cancer	True	False	False
+DOID:0060075	estrogen receptor-positive breast cancer	True	False	False
+DOID:0060076	estrogen receptor-negative breast cancer	True	False	False
+DOID:0060077	progesterone receptor-positive breast cancer	True	False	False
+DOID:0060078	progesterone receptor-negative breast cancer	True	False	False
 DOID:0060079	HER2 positive breast cancer	True	False	False
 DOID:0060080	HER2 negative breast cancer	True	False	False
 DOID:0060081	triple-negative breast cancer	True	False	False
@@ -3690,7 +3719,7 @@ DOID:0060222	Scheie syndrome	True	False	False
 DOID:0060223	agraphia	True	False	False
 DOID:0060224	atrial fibrillation	True	False	False
 DOID:0060225	3MC syndrome	True	False	False
-DOID:0060226	acrofrontofacionasal dysostosis	True	False	False
+DOID:0060226	acrofrontofacionasal dysostosis 1	True	False	False
 DOID:0060227	Adams-Oliver syndrome	True	False	False
 DOID:0060228	intracranial berry aneurysm	True	False	False
 DOID:0060229	Baraitser-Winter syndrome	True	False	False
@@ -11348,7 +11377,6 @@ DOID:2748	glycogen storage disease III	True	False	False
 DOID:2749	glycogen storage disease Ia	True	False	False
 DOID:275	gastric hemangioma	True	False	False
 DOID:2750	glycogen storage disease IV	True	False	False
-DOID:2751	glycogen storage disease VIII	True	False	False
 DOID:2752	glycogen storage disease II	True	False	False
 DOID:2754	glycogen storage disease VI	True	False	False
 DOID:2755	Mycobacterium avium complex disease	True	False	False
@@ -13459,7 +13487,7 @@ DOID:6812	childhood pilocytic astrocytoma	True	False	False
 DOID:682	compartment syndrome	True	False	False
 DOID:6823	pancreatoblastoma	True	False	False
 DOID:6827	pancreatic solid pseudopapillary carcinoma	True	False	False
-DOID:683	motor neuritis	True	False	False
+DOID:683	multifocal motor neuropathy	True	False	False
 DOID:6837	rete ovarii adenoma	True	False	False
 DOID:6838	rete ovarii cystadenofibroma	True	False	False
 DOID:6839	breast intraductal proliferative lesion	True	False	False
@@ -14719,7 +14747,6 @@ DOID:0050867	obsolete Jensen syndrome	True	True	True
 DOID:0060771	obsolete dextro-looped transposition of the great arteries 1	True	True	True
 DOID:0061095	obsolete immunodeficiency 130	True	True	True
 DOID:0080191	obsolete PTEN hamartoma tumor syndrome	True	True	True
-DOID:0110051	obsolete Alzheimer's disease 19	True	True	True
 DOID:0110302	obsolete autosomal dominant limb-girdle muscular dystrophy type 1C	True	True	True
 DOID:0110578	obsolete autosomal dominant nonsyndromic deafness 52	True	True	True
 DOID:0111612	obsolete autosomal recessive spinocerebellar ataxia 3	True	True	True
@@ -14727,10 +14754,10 @@ DOID:10919	obsolete transsexualism	True	True	True
 DOID:11349	obsolete epilepsia partialis continua	True	True	True
 DOID:12223	obsolete specific bursitis often of occupational origin	True	True	True
 DOID:1634	obsolete breast papillomatosis	True	True	True
+DOID:2751	obsolete glycogen storage disease VIII	True	True	True
 DOID:4086	obsolete testicular germ cell tumor non-seminomatous	True	True	True
 DOID:5209	obsolete benign struma ovarii	True	True	True
 DOID:5996	obsolete blunt duct adenosis of breast	True	True	True
-DOID:625	obsolete transient hypogammaglobulinemia	True	True	True
 DOID:6809	obsolete vaginal tubular adenoma	True	True	True
 DOID:7922	obsolete benign mediastinal neurilemmoma	True	True	True
 DOID:955	obsolete benign neurilemmoma	True	True	True
