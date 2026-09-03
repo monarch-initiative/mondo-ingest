@@ -4,7 +4,16 @@ import re
 import pandas as pd
 import logging
 
+from collections import defaultdict
+
 logger = logging.getLogger(__name__)
+
+# Columns a source treats as a unique key. Listing a source here is opt-in: one
+# identifier shared by several MONDO terms is legitimate in general, and within
+# externally managed content a parent and its subtype may share one by design.
+UNIQUE_ID_COLUMNS = {
+    "nord": "report_ref",
+}
 
 
 def _get_column_of_external_source_related_to_qc_failure(qc_failure, erroneous_row, external):
@@ -56,6 +65,80 @@ def _get_column_of_external_source_related_to_qc_failure(qc_failure, erroneous_r
     
     return None
 
+def data_rows(df_external_content):
+    # Row 0 is the ROBOT template row, not data.
+    return df_external_content.iloc[1:].iterrows()
+
+
+def cell(row, column):
+    """The value of a cell, as a string. Empty cells come back as ""."""
+    value = row[column]
+    return "" if pd.isna(value) else str(value)
+
+
+def report_row(df_external_content, row, report, source, rule, property, detail=None):
+    error_report = df_external_content.loc[row].to_dict()
+    error_report['Source'] = source
+    error_report['Check'] = f"{rule} ({property})"
+    if detail:
+        error_report['Detail'] = detail
+    report.append(error_report)
+
+
+def check_invalid_mondo_ids(df_external_content, source, report):
+    """Rows whose first column is present but is not a well-formed MONDO term.
+
+    Sources write the term either as a CURIE or as a full IRI. A blank is not a
+    violation: a source may list a term it has not mapped to MONDO yet.
+    """
+    id_column = df_external_content.columns[0]
+    pattern = r"(MONDO:|http://purl\.obolibrary\.org/obo/MONDO_)\d{7}"
+
+    rows_to_drop = []
+    for index, row in data_rows(df_external_content):
+        mondo_id = cell(row, id_column)
+        if not mondo_id.strip():
+            continue
+        if not re.fullmatch(pattern, mondo_id):
+            report_row(df_external_content, index, report, source, "invalid_mondo_id", "IRI")
+            rows_to_drop.append(index)
+    return rows_to_drop
+
+
+def check_duplicate_external_ids(df_external_content, source, report):
+    """Rows whose external identifier is claimed by more than one MONDO term."""
+    column = UNIQUE_ID_COLUMNS.get(source)
+    if column is None or column not in df_external_content.columns:
+        return []
+
+    id_column = df_external_content.columns[0]
+
+    # Which MONDO terms claim each identifier. A set means one identifier
+    # repeated on a single term is not counted as a conflict. Blanks are
+    # skipped: a row may assert subset membership without an identifier.
+    claimed_by = defaultdict(set)
+    for _, row in data_rows(df_external_content):
+        identifier = cell(row, column).strip()
+        if identifier:
+            claimed_by[identifier].add(cell(row, id_column))
+
+    rows_to_drop = []
+    for index, row in data_rows(df_external_content):
+        identifier = cell(row, column).strip()
+        if not identifier:
+            continue
+        others = sorted(claimed_by[identifier] - {cell(row, id_column)})
+        if not others:
+            continue
+        report_row(
+            df_external_content, index, report, source,
+            "duplicate_external_id", column,
+            detail=f"{identifier} is also on {', '.join(others)}",
+        )
+        rows_to_drop.append(index)
+    return rows_to_drop
+
+
 def _write_nice_report(report, external):
     nice_report = f"../ontology/external/{external}-qc-failures.md"
     
@@ -104,36 +187,20 @@ def _remove_erroneous_values_from_externally_managed_content(external_content_fi
                     report.append(error_report)
                     df_external_content.at[index, erroneous_column] = ""
 
-    # Additional checks on the pandas dataframe that are not covered by SPARQL
-    
-    # BANANA ERROR: Search the entire external content for occurrences of the pattern 'MONDO:MONDO'
-    pattern = r"^MONDO:MONDO:.*$"
-    result = df_external_content.map(lambda x: bool(re.match(pattern, str(x))))
-    rows_to_drop = result.any(axis=1).index[result.any(axis=1)].tolist()
-    for row in rows_to_drop:
-        error_report = df_external_content.loc[row].to_dict()
-        error_report['Source'] = source
-        rule = "MONDO:MONDO_pattern"
-        property = "IRI"
-        error_report['Check'] = f"{rule} ({property})"
-        report.append(error_report)
-    df_external_content.drop(index=rows_to_drop, inplace=True)
-    
-    # Missing MONDO ID (bare "MONDO:" with no number afterward)
-    pattern = r"^MONDO:$"
-    result = df_external_content.map(lambda x: bool(re.match(pattern, str(x))))
-    rows_to_drop = result.any(axis=1).index[result.any(axis=1)].tolist()
-    for row in rows_to_drop:
-        error_report = df_external_content.loc[row].to_dict()
-        error_report['Source'] = source
-        rule = "MONDO:_with_no_id"
-        property = "IRI"
-        error_report['Check'] = f"{rule} ({property})"
-        report.append(error_report)
-    df_external_content.drop(index=rows_to_drop, inplace=True)
+    # Checks not covered by the ROBOT report. A failing row is dropped, not
+    # repaired. Every check sees the same rows, so one failing two checks is
+    # reported under both.
+    rows_to_drop = set()
 
-    # X ERROR: TBD
-    
+    checks = (
+        check_invalid_mondo_ids,
+        check_duplicate_external_ids,
+    )
+
+    for check in checks:
+        rows_to_drop.update(check(df_external_content, source, report))
+    df_external_content.drop(index=sorted(rows_to_drop), inplace=True)
+
     df_external_content.to_csv(external_content_file_out, sep="\t", index=False)
     _write_nice_report(report, source)
 
