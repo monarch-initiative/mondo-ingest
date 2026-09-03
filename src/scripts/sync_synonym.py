@@ -58,8 +58,21 @@ HEADERS_TO_ROBOT_SUBHEADERS = {
     'related_source_id': '>A oboInOwl:hasDbXref',
     'related_synonym_type': '>AI oboInOwl:hasSynonymType SPLIT=|',
 }
+
 SORT_COLS = ['case', 'mondo_id', 'source_id', 'synonym_scope_source', 'synonym_type', 'synonym_type_mondo', 'synonym']
+
 MONDO_ABBREV_URI = 'http://purl.obolibrary.org/obo/mondo#ABBREVIATION'
+
+# Columns whose cells may hold multiple `|`-delimited values in an order that isn't meaningful
+PIPE_DELIMITED_COLS = [
+    'synonym_case_mondo',
+    'synonym_case_source',
+    'synonym_case_diff_mondo',
+    'synonym_case_diff_source',
+    'synonym_type',
+    'synonym_type_internal',
+    'synonym_type_mondo',
+]
 
 
 def _query_synonyms(ids: List[CURIE], db: SqlImplementation) -> pd.DataFrame:
@@ -134,9 +147,7 @@ def _handle_synonym_casing_variations(df: pd.DataFrame) -> pd.DataFrame:
 
     df = pd.concat([df_unique, df_duplicates], ignore_index=True)
 
-    # Sort
-    for col in ['synonym_case_mondo', 'synonym_case_source']:
-        df[col] = df[col].apply(lambda x: '|'.join(sorted(x.split('|'))))
+    # note: multi-valued cells are sorted in _common_operations(), after all derived cols exist
 
     return df
 
@@ -188,13 +199,26 @@ def _handle_internal_synonym_types(df, internal_types=["http://purl.obolibrary.o
     return df
 
 
+def _sort_delimited_values(df: pd.DataFrame, cols: List[str] = PIPE_DELIMITED_COLS, delim='|') -> pd.DataFrame:
+    """Impose a stable order on multi-valued cells.
+
+    Upstream sources of multiple values (SPARQL GROUP_CONCAT & pandas groupby) do not have deterministic ordering.
+    Without this function, the same content will serialise differently between runs, creating noise in data releases.
+    """
+    for col in cols:
+        if col in df.columns:
+            df[col] = df[col].fillna('').apply(
+                lambda x: delim.join(sorted(x.split(delim))) if x else x)
+    return df
+
+
 def _common_operations(
     df: pd.DataFrame, outpath: Union[Path, str], order_cols: List[str] = list(HEADERS_TO_ROBOT_SUBHEADERS.keys()),
     sort_cols: List[str] = SORT_COLS, mondo_exclusions_df=pd.DataFrame(), save=True, dont_make_scope_cols=False
 ) -> pd.DataFrame:
     """Merges synonym types, filters exclusions, does some formatting, and optionally saves.
 
-    Formatting: Add columns, format column order and sorting, drop any superfluous columns.
+    Formatting: Add columns, sort multi-valued cells, format column order and sorting, drop any superfluous columns.
 
     :param: df_is_combined: At the end, we combine all cases into a single file. But for this combined case, we want to
      skip certain operations.
@@ -210,6 +234,9 @@ def _common_operations(
     # Format
     # - Internal synonym types: Things we don't want to add to Mondo, but want to retain in the sync file
     df = _handle_internal_synonym_types(df)
+    # - Stable order within multi-valued cells: must run after all derived cols exist, and before the
+    #   scope cols copy 'synonym_type' and before the row sort, which sorts on it.
+    df = _sort_delimited_values(df)
     if not dont_make_scope_cols:
         # - Add ROBOT columns for each synonym scope
         synonym_scopes = ['exact', 'broad', 'narrow', 'related']
@@ -388,7 +415,8 @@ def sync_synonyms(
     # - add evidence column
     mondo_evidence_lookup: Dict[Tuple, List[str]] = mondo_df.groupby(
         ['mondo_id', 'synonym_scope', 'synonym'])['source_id'].agg(list).to_dict()
-    mondo_evidence_lookup: Dict[Tuple, str] = {k: ', '.join(v) for k, v in mondo_evidence_lookup.items()}
+    #   sorted: `agg(list)` follows mondo_df row order, i.e. SPARQL result order, which isn't stable between runs
+    mondo_evidence_lookup: Dict[Tuple, str] = {k: ', '.join(sorted(v)) for k, v in mondo_evidence_lookup.items()}
     mondo_evidence_rows: List[List[str]] = []
     for k, v in mondo_evidence_lookup.items():
         mondo_evidence_rows.append(list(k) + [v])
