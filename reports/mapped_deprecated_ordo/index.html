@@ -1,0 +1,2225 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Mapped deprecated ordo - Mondo Disease Ontology Ingest</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ordo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-header__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mondo Disease Ontology Ingest
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Mapped deprecated ordo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-nav__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Mondo Disease Ontology Ingest
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Developers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Developers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapped_deprecated/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Deprecated terms w/ Mondo xrefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo sources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo sources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Externally managed content
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Externally managed content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../externally-managed-content/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/nord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NORD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo source metrics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo source metrics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ordo" class="md-nav__link">
+    <span class="md-ellipsis">
+      ORDO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ORDO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mapped-deprecated-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapped deprecated terms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Mapped deprecated ordo</h1>
+
+<h2 id="ordo">ORDO</h2>
+<p><a href="https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/ordo_mapped_deprecated_terms.robot.template.tsv">Interactive FlatGithub table</a></p>
+<h3 id="mapped-deprecated-terms">Mapped deprecated terms</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">mondo_id</th>
+<th style="text-align: left;">source_id</th>
+<th style="text-align: left;">source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ID</td>
+<td style="text-align: left;">A oboInOwl:hasDbXref</td>
+<td style="text-align: left;">&gt;A oboInOwl:source</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0001153</td>
+<td style="text-align: left;">Orphanet:459690</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0001807</td>
+<td style="text-align: left;">Orphanet:79211</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0007761</td>
+<td style="text-align: left;">Orphanet:413</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0007779</td>
+<td style="text-align: left;">Orphanet:306588</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0009317</td>
+<td style="text-align: left;">Orphanet:1245</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0010045</td>
+<td style="text-align: left;">Orphanet:2823</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0010994</td>
+<td style="text-align: left;">Orphanet:2641</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0011910</td>
+<td style="text-align: left;">Orphanet:265</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0013742</td>
+<td style="text-align: left;">Orphanet:165805</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015120</td>
+<td style="text-align: left;">Orphanet:101949</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015163</td>
+<td style="text-align: left;">Orphanet:102373</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015172</td>
+<td style="text-align: left;">Orphanet:103912</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015173</td>
+<td style="text-align: left;">Orphanet:103916</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015217</td>
+<td style="text-align: left;">Orphanet:108985</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015218</td>
+<td style="text-align: left;">Orphanet:108987</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015255</td>
+<td style="text-align: left;">Orphanet:1256</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015297</td>
+<td style="text-align: left;">Orphanet:137653</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015343</td>
+<td style="text-align: left;">Orphanet:139420</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015422</td>
+<td style="text-align: left;">Orphanet:141330</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015424</td>
+<td style="text-align: left;">Orphanet:1420</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015551</td>
+<td style="text-align: left;">Orphanet:158665</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015560</td>
+<td style="text-align: left;">Orphanet:158796</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015591</td>
+<td style="text-align: left;">Orphanet:163903</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015593</td>
+<td style="text-align: left;">Orphanet:163914</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015594</td>
+<td style="text-align: left;">Orphanet:163918</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015602</td>
+<td style="text-align: left;">Orphanet:163988</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015902</td>
+<td style="text-align: left;">Orphanet:181425</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015919</td>
+<td style="text-align: left;">Orphanet:182073</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015920</td>
+<td style="text-align: left;">Orphanet:182076</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015937</td>
+<td style="text-align: left;">Orphanet:182214</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015964</td>
+<td style="text-align: left;">Orphanet:183598</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015965</td>
+<td style="text-align: left;">Orphanet:183601</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0015985</td>
+<td style="text-align: left;">Orphanet:1844</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016082</td>
+<td style="text-align: left;">Orphanet:2042</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016111</td>
+<td style="text-align: left;">Orphanet:206659</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016124</td>
+<td style="text-align: left;">Orphanet:206985</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016254</td>
+<td style="text-align: left;">Orphanet:213574</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016626</td>
+<td style="text-align: left;">Orphanet:248305</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016667</td>
+<td style="text-align: left;">Orphanet:251355</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016795</td>
+<td style="text-align: left;">Orphanet:254793</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016815</td>
+<td style="text-align: left;">Orphanet:255241</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016816</td>
+<td style="text-align: left;">Orphanet:255249</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0016997</td>
+<td style="text-align: left;">Orphanet:263676</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017036</td>
+<td style="text-align: left;">Orphanet:264955</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017083</td>
+<td style="text-align: left;">Orphanet:268832</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017240</td>
+<td style="text-align: left;">Orphanet:280651</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017336</td>
+<td style="text-align: left;">Orphanet:289527</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017378</td>
+<td style="text-align: left;">Orphanet:2925</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017421</td>
+<td style="text-align: left;">Orphanet:294929</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017422</td>
+<td style="text-align: left;">Orphanet:294931</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017423</td>
+<td style="text-align: left;">Orphanet:294935</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017448</td>
+<td style="text-align: left;">Orphanet:294990</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017458</td>
+<td style="text-align: left;">Orphanet:295008</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017459</td>
+<td style="text-align: left;">Orphanet:295010</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017494</td>
+<td style="text-align: left;">Orphanet:295085</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017495</td>
+<td style="text-align: left;">Orphanet:295087</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017506</td>
+<td style="text-align: left;">Orphanet:295110</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017507</td>
+<td style="text-align: left;">Orphanet:295112</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017508</td>
+<td style="text-align: left;">Orphanet:295114</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017539</td>
+<td style="text-align: left;">Orphanet:295179</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017540</td>
+<td style="text-align: left;">Orphanet:295181</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017541</td>
+<td style="text-align: left;">Orphanet:295183</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017542</td>
+<td style="text-align: left;">Orphanet:295185</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017655</td>
+<td style="text-align: left;">Orphanet:306762</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017770</td>
+<td style="text-align: left;">Orphanet:3105</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017984</td>
+<td style="text-align: left;">Orphanet:3267</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0017996</td>
+<td style="text-align: left;">Orphanet:329255</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018104</td>
+<td style="text-align: left;">Orphanet:3460</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018107</td>
+<td style="text-align: left;">Orphanet:35061</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018110</td>
+<td style="text-align: left;">Orphanet:35064</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018113</td>
+<td style="text-align: left;">Orphanet:35098</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018138</td>
+<td style="text-align: left;">Orphanet:352740</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018239</td>
+<td style="text-align: left;">Orphanet:364817</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018285</td>
+<td style="text-align: left;">Orphanet:371054</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018286</td>
+<td style="text-align: left;">Orphanet:371064</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018627</td>
+<td style="text-align: left;">Orphanet:443287</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018665</td>
+<td style="text-align: left;">Orphanet:448348</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018718</td>
+<td style="text-align: left;">Orphanet:458827</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0018722</td>
+<td style="text-align: left;">Orphanet:458841</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019116</td>
+<td style="text-align: left;">Orphanet:717</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019348</td>
+<td style="text-align: left;">Orphanet:82004</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019389</td>
+<td style="text-align: left;">Orphanet:83648</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019410</td>
+<td style="text-align: left;">Orphanet:85196</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019520</td>
+<td style="text-align: left;">Orphanet:89832</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019657</td>
+<td style="text-align: left;">Orphanet:93221</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019658</td>
+<td style="text-align: left;">Orphanet:93222</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019689</td>
+<td style="text-align: left;">Orphanet:93424</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019723</td>
+<td style="text-align: left;">Orphanet:93550</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019724</td>
+<td style="text-align: left;">Orphanet:93551</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019765</td>
+<td style="text-align: left;">Orphanet:93942</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019779</td>
+<td style="text-align: left;">Orphanet:93975</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019800</td>
+<td style="text-align: left;">Orphanet:95161</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019826</td>
+<td style="text-align: left;">Orphanet:95493</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019847</td>
+<td style="text-align: left;">Orphanet:95701</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019894</td>
+<td style="text-align: left;">Orphanet:96136</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019899</td>
+<td style="text-align: left;">Orphanet:96152</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0019987</td>
+<td style="text-align: left;">Orphanet:97556</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020092</td>
+<td style="text-align: left;">Orphanet:98345</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020146</td>
+<td style="text-align: left;">Orphanet:98554</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020149</td>
+<td style="text-align: left;">Orphanet:98558</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020150</td>
+<td style="text-align: left;">Orphanet:98559</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020160</td>
+<td style="text-align: left;">Orphanet:98569</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020163</td>
+<td style="text-align: left;">Orphanet:98572</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020164</td>
+<td style="text-align: left;">Orphanet:98573</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020168</td>
+<td style="text-align: left;">Orphanet:98577</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020170</td>
+<td style="text-align: left;">Orphanet:98579</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020174</td>
+<td style="text-align: left;">Orphanet:98583</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020176</td>
+<td style="text-align: left;">Orphanet:98585</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020177</td>
+<td style="text-align: left;">Orphanet:98586</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020178</td>
+<td style="text-align: left;">Orphanet:98587</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020180</td>
+<td style="text-align: left;">Orphanet:98590</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020181</td>
+<td style="text-align: left;">Orphanet:98591</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020182</td>
+<td style="text-align: left;">Orphanet:98592</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020185</td>
+<td style="text-align: left;">Orphanet:98595</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020186</td>
+<td style="text-align: left;">Orphanet:98596</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020187</td>
+<td style="text-align: left;">Orphanet:98597</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020188</td>
+<td style="text-align: left;">Orphanet:98598</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020189</td>
+<td style="text-align: left;">Orphanet:98599</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020190</td>
+<td style="text-align: left;">Orphanet:98600</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020191</td>
+<td style="text-align: left;">Orphanet:98601</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020193</td>
+<td style="text-align: left;">Orphanet:98603</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020196</td>
+<td style="text-align: left;">Orphanet:98608</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020199</td>
+<td style="text-align: left;">Orphanet:98611</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020200</td>
+<td style="text-align: left;">Orphanet:98612</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020201</td>
+<td style="text-align: left;">Orphanet:98613</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020202</td>
+<td style="text-align: left;">Orphanet:98614</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020203</td>
+<td style="text-align: left;">Orphanet:98615</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020205</td>
+<td style="text-align: left;">Orphanet:98617</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020208</td>
+<td style="text-align: left;">Orphanet:98620</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020217</td>
+<td style="text-align: left;">Orphanet:98632</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020218</td>
+<td style="text-align: left;">Orphanet:98633</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020220</td>
+<td style="text-align: left;">Orphanet:98636</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020221</td>
+<td style="text-align: left;">Orphanet:98637</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020227</td>
+<td style="text-align: left;">Orphanet:98643</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020229</td>
+<td style="text-align: left;">Orphanet:98645</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020231</td>
+<td style="text-align: left;">Orphanet:98647</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020238</td>
+<td style="text-align: left;">Orphanet:98657</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020241</td>
+<td style="text-align: left;">Orphanet:98662</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020243</td>
+<td style="text-align: left;">Orphanet:98665</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020244</td>
+<td style="text-align: left;">Orphanet:98666</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020245</td>
+<td style="text-align: left;">Orphanet:98667</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020259</td>
+<td style="text-align: left;">Orphanet:98689</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020260</td>
+<td style="text-align: left;">Orphanet:98690</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020261</td>
+<td style="text-align: left;">Orphanet:98691</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020262</td>
+<td style="text-align: left;">Orphanet:98692</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020263</td>
+<td style="text-align: left;">Orphanet:98693</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020264</td>
+<td style="text-align: left;">Orphanet:98694</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020265</td>
+<td style="text-align: left;">Orphanet:98695</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020266</td>
+<td style="text-align: left;">Orphanet:98696</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020267</td>
+<td style="text-align: left;">Orphanet:98697</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020268</td>
+<td style="text-align: left;">Orphanet:98698</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020269</td>
+<td style="text-align: left;">Orphanet:98699</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020270</td>
+<td style="text-align: left;">Orphanet:98700</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020271</td>
+<td style="text-align: left;">Orphanet:98701</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020273</td>
+<td style="text-align: left;">Orphanet:98703</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020274</td>
+<td style="text-align: left;">Orphanet:98704</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020276</td>
+<td style="text-align: left;">Orphanet:98708</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020278</td>
+<td style="text-align: left;">Orphanet:98710</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020279</td>
+<td style="text-align: left;">Orphanet:98711</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020280</td>
+<td style="text-align: left;">Orphanet:98712</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020281</td>
+<td style="text-align: left;">Orphanet:98713</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020282</td>
+<td style="text-align: left;">Orphanet:98714</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020474</td>
+<td style="text-align: left;">Orphanet:99647</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020489</td>
+<td style="text-align: left;">Orphanet:99763</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020524</td>
+<td style="text-align: left;">Orphanet:99878</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020537</td>
+<td style="text-align: left;">Orphanet:99909</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020742</td>
+<td style="text-align: left;">Orphanet:1317</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0020871</td>
+<td style="text-align: left;">Orphanet:623</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0021062</td>
+<td style="text-align: left;">Orphanet:306539</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0022414</td>
+<td style="text-align: left;">Orphanet:1526</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0022921</td>
+<td style="text-align: left;">Orphanet:2861</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0023072</td>
+<td style="text-align: left;">Orphanet:1939</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0043007</td>
+<td style="text-align: left;">Orphanet:330197</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0044683</td>
+<td style="text-align: left;">Orphanet:498700</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0100343</td>
+<td style="text-align: left;">Orphanet:93604</td>
+<td style="text-align: left;">MONDO:equivalentObsolete</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

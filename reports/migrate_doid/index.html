@@ -1,0 +1,2888 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Migrate doid - Mondo Disease Ontology Ingest</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#doid" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-header__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mondo Disease Ontology Ingest
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Migrate doid
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-nav__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Mondo Disease Ontology Ingest
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Developers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Developers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapped_deprecated/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Deprecated terms w/ Mondo xrefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo sources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo sources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Externally managed content
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Externally managed content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../externally-managed-content/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/nord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NORD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo source metrics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo source metrics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#doid" class="md-nav__link">
+    <span class="md-ellipsis">
+      DOID
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DOID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migratable-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migratable terms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Migrate doid</h1>
+
+<h2 id="doid">DOID</h2>
+<p><a href="https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/slurp/doid.tsv">Interactive FlatGithub table</a></p>
+<h3 id="migratable-terms">Migratable terms</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">mondo_id</th>
+<th style="text-align: left;">mondo_label</th>
+<th style="text-align: left;">xref</th>
+<th style="text-align: left;">xref_source</th>
+<th style="text-align: left;">original_label</th>
+<th style="text-align: left;">definition</th>
+<th style="text-align: left;">parents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ID</td>
+<td style="text-align: left;">LABEL</td>
+<td style="text-align: left;">A oboInOwl:hasDbXref</td>
+<td style="text-align: left;">&gt;A oboInOwl:source SPLIT=</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">A IAO:0000115</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0958318</td>
+<td style="text-align: left;">chronic inflammatory demyelinating polyneuritis</td>
+<td style="text-align: left;">DOID:2536</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">chronic inflammatory demyelinating polyneuritis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002336</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0958359</td>
+<td style="text-align: left;">childhood spinal muscular atrophy</td>
+<td style="text-align: left;">DOID:0060160</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">childhood spinal muscular atrophy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0001516</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0958360</td>
+<td style="text-align: left;">cholesterol-ester transfer protein deficiency</td>
+<td style="text-align: left;">DOID:0111368</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">cholesterol-ester transfer protein deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002525</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0968993</td>
+<td style="text-align: left;">aleutian mink disease</td>
+<td style="text-align: left;">DOID:2934</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">aleutian mink disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005108</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0968994</td>
+<td style="text-align: left;">borna disease</td>
+<td style="text-align: left;">DOID:5154</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">borna disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005108,MONDO:0002602</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0970991</td>
+<td style="text-align: left;">papilledema</td>
+<td style="text-align: left;">DOID:146</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">papilledema</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002135</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0971183</td>
+<td style="text-align: left;">autosomal recessive pseudohypoaldosteronism type 1</td>
+<td style="text-align: left;">DOID:0060854</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">autosomal recessive pseudohypoaldosteronism type 1</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018638,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0975812</td>
+<td style="text-align: left;">sertoli cell-only syndrome</td>
+<td style="text-align: left;">DOID:0050457</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Sertoli cell-only syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005372</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0979397</td>
+<td style="text-align: left;">cherubism</td>
+<td style="text-align: left;">DOID:0070648</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">cherubism</td>
+<td style="text-align: left;">A bone resorption disease characterized by replacement of bone in the jaws with fibrous tissue leading to facial swelling.</td>
+<td style="text-align: left;">MONDO:0000837</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0979598</td>
+<td style="text-align: left;">hamartoma syndrome</td>
+<td style="text-align: left;">DOID:0070656</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">hamartoma syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0979921</td>
+<td style="text-align: left;">hypocholesteremia</td>
+<td style="text-align: left;">DOID:0061212</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">hypocholesteremia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005066</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0979922</td>
+<td style="text-align: left;">telomere biology disorder</td>
+<td style="text-align: left;">DOID:0061213</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">telomere biology disorder</td>
+<td style="text-align: left;">A genetic disease that is characterized by telomeres that are longer or shorter than usual.</td>
+<td style="text-align: left;">MONDO:0003847</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981181</td>
+<td style="text-align: left;">congenital anomalies of the kidney and urinary tract 3</td>
+<td style="text-align: left;">DOID:0051078</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">congenital anomalies of the kidney and urinary tract 3</td>
+<td style="text-align: left;">A congenital anomalies of the kidney and urinary tract that has_material_basis_in heterozygous mutation in the NRIP1 gene on chromosome 21q11-q21.</td>
+<td style="text-align: left;">MONDO:0019719</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981183</td>
+<td style="text-align: left;">alport syndrome 3b</td>
+<td style="text-align: left;">DOID:0051080</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Alport syndrome 3B</td>
+<td style="text-align: left;">An Alport syndrome that is characterized by glomerular basement membrane abnormalities and that has_material_basis_in homozygous or compound heterozygous mutation in the COL4A3 gene on chromosome 2q36. Sensorineural hearing loss and ocular manifestations may be present.</td>
+<td style="text-align: left;">MONDO:0018965,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981184</td>
+<td style="text-align: left;">polycystic kidney disease 8</td>
+<td style="text-align: left;">DOID:0051081</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">polycystic kidney disease 8</td>
+<td style="text-align: left;">An autosomal dominant polycystic kidney disease that is characterized by enlarged kidneys, arterial hypertension, and kidney failure and that has_material_basis_in heterozygous mutation in the NEK8 gene on chromosome 17q11.</td>
+<td style="text-align: left;">MONDO:0004691</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981185</td>
+<td style="text-align: left;">parkinson's disease 27</td>
+<td style="text-align: left;">DOID:0051082</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Parkinson's disease 27</td>
+<td style="text-align: left;">A Parkinson's disease that has_material_basis_in mutation in the GBA1 gene on chromosome 1q22.</td>
+<td style="text-align: left;">MONDO:0005180</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981186</td>
+<td style="text-align: left;">liver glycogen storage disease</td>
+<td style="text-align: left;">DOID:0061271</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">liver glycogen storage disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002412,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981187</td>
+<td style="text-align: left;">muscle glycogen storage disease</td>
+<td style="text-align: left;">DOID:0061272</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">muscle glycogen storage disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002412,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981188</td>
+<td style="text-align: left;">glycogen storage disease x</td>
+<td style="text-align: left;">DOID:0061285</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">glycogen storage disease X</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002412,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981189</td>
+<td style="text-align: left;">glycogen storage disease xi</td>
+<td style="text-align: left;">DOID:0061286</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">glycogen storage disease XI</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002412,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981190</td>
+<td style="text-align: left;">glycogen storage disease xii</td>
+<td style="text-align: left;">DOID:0061287</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">glycogen storage disease XII</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002412,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981191</td>
+<td style="text-align: left;">glycogen storage disease xiii</td>
+<td style="text-align: left;">DOID:0061288</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">glycogen storage disease XIII</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002412,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981192</td>
+<td style="text-align: left;">galloway-mowat syndrome 6</td>
+<td style="text-align: left;">DOID:0061289</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Galloway-Mowat syndrome 6</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0009627,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981193</td>
+<td style="text-align: left;">galloway-mowat syndrome 7</td>
+<td style="text-align: left;">DOID:0061290</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Galloway-Mowat syndrome 7</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0009627,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981194</td>
+<td style="text-align: left;">galloway-mowat syndrome 8</td>
+<td style="text-align: left;">DOID:0061291</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Galloway-Mowat syndrome 8</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0009627,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981195</td>
+<td style="text-align: left;">galloway-mowat syndrome 9</td>
+<td style="text-align: left;">DOID:0061292</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Galloway-Mowat syndrome 9</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0009627,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981196</td>
+<td style="text-align: left;">galloway-mowat syndrome 10</td>
+<td style="text-align: left;">DOID:0061293</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Galloway-Mowat syndrome 10</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0009627,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981197</td>
+<td style="text-align: left;">meckel syndrome 9</td>
+<td style="text-align: left;">DOID:0061294</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Meckel syndrome 9</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018921,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981198</td>
+<td style="text-align: left;">meckel syndrome 10</td>
+<td style="text-align: left;">DOID:0061295</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Meckel syndrome 10</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018921,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981199</td>
+<td style="text-align: left;">meckel syndrome 11</td>
+<td style="text-align: left;">DOID:0061296</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Meckel syndrome 11</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018921,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981200</td>
+<td style="text-align: left;">meckel syndrome 12</td>
+<td style="text-align: left;">DOID:0061297</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Meckel syndrome 12</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018921,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981201</td>
+<td style="text-align: left;">retinitis pigmentosa 100</td>
+<td style="text-align: left;">DOID:0061298</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">retinitis pigmentosa 100</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019200,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981202</td>
+<td style="text-align: left;">retinitis pigmentosa 101</td>
+<td style="text-align: left;">DOID:0061299</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">retinitis pigmentosa 101</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019200,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981203</td>
+<td style="text-align: left;">hermansky-pudlak syndrome 10</td>
+<td style="text-align: left;">DOID:0061300</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hermansky-Pudlak syndrome 10</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019312</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981204</td>
+<td style="text-align: left;">hermansky-pudlak syndrome 11</td>
+<td style="text-align: left;">DOID:0061301</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hermansky-Pudlak syndrome 11</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019312</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981205</td>
+<td style="text-align: left;">congenital hydrocephalus</td>
+<td style="text-align: left;">DOID:0070681</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">congenital hydrocephalus</td>
+<td style="text-align: left;">A hydrocephalus characterized by fetal or congenital onset.</td>
+<td style="text-align: left;">MONDO:0001150</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981206</td>
+<td style="text-align: left;">normal pressure hydrocephalus 1</td>
+<td style="text-align: left;">DOID:0070687</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">normal pressure hydrocephalus 1</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000426,MONDO:0009366</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981207</td>
+<td style="text-align: left;">autosomal recessive congenital indifference to pain</td>
+<td style="text-align: left;">DOID:0070688</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">autosomal recessive congenital indifference to pain</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0005244</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981208</td>
+<td style="text-align: left;">hereditary sensory and autonomic neuropathy type 2d</td>
+<td style="text-align: left;">DOID:0070689</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">hereditary sensory and autonomic neuropathy type 2D</td>
+<td style="text-align: left;">A hereditary sensory and autonomic neuropathy type 2 characterized by congenital to pediatric onset of distal loss of pain and temperature sensation and variable autonomic dysfunction that has_material_basis_in homozygous loss-of-function mutation in the SCN9A gene on chromosome 2q24.</td>
+<td style="text-align: left;">MONDO:0019941</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981209</td>
+<td style="text-align: left;">lobodontia</td>
+<td style="text-align: left;">DOID:0070690</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">lobodontia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000426,MONDO:0006999</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981210</td>
+<td style="text-align: left;">craniosynostosis-scoliosis syndrome</td>
+<td style="text-align: left;">DOID:0070691</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">craniosynostosis-scoliosis syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0005528</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981211</td>
+<td style="text-align: left;">davis-wells syndrome</td>
+<td style="text-align: left;">DOID:0070692</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Davis-Wells syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981212</td>
+<td style="text-align: left;">ebstein-bezieau neurodevelopmental syndrome</td>
+<td style="text-align: left;">DOID:0070693</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Ebstein-Bezieau neurodevelopmental syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981213</td>
+<td style="text-align: left;">neurodevelopmental disorder with congenital cardiac defects and variable renal and ocular abnormalities</td>
+<td style="text-align: left;">DOID:0070694</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with congenital cardiac defects and variable renal and ocular abnormalities</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981214</td>
+<td style="text-align: left;">yu-kury neurodevelopmental syndrome</td>
+<td style="text-align: left;">DOID:0070695</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Yu-Kury neurodevelopmental syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981215</td>
+<td style="text-align: left;">neurodevelopmental disorder with seizures, hypotonia, and variable spasticity</td>
+<td style="text-align: left;">DOID:0070696</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with seizures, hypotonia, and variable spasticity</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981216</td>
+<td style="text-align: left;">neurodevelopmental disorder with spasticity, thin corpus callosum, and decreased brain white matter</td>
+<td style="text-align: left;">DOID:0070697</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with spasticity, thin corpus callosum, and decreased brain white matter</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981217</td>
+<td style="text-align: left;">x-linked neurodevelopmental disorder with poor or absent speech and behavioral abnormalities</td>
+<td style="text-align: left;">DOID:0070698</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">X-linked neurodevelopmental disorder with poor or absent speech and behavioral abnormalities</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020604,MONDO:0020119</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981218</td>
+<td style="text-align: left;">stad syndrome</td>
+<td style="text-align: left;">DOID:0070699</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">STAD syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981219</td>
+<td style="text-align: left;">luo-agrawal neurodevelopmental syndrome</td>
+<td style="text-align: left;">DOID:0070700</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Luo-Agrawal neurodevelopmental syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981220</td>
+<td style="text-align: left;">small fiber neuropathy</td>
+<td style="text-align: left;">DOID:0070701</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">small fiber neuropathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005244</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981221</td>
+<td style="text-align: left;">measles inclusion body encephalitis</td>
+<td style="text-align: left;">DOID:0070702</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">measles inclusion body encephalitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006009,MONDO:0001773</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981222</td>
+<td style="text-align: left;">meckel syndrome 14</td>
+<td style="text-align: left;">DOID:0070703</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Meckel syndrome 14</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018921,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981223</td>
+<td style="text-align: left;">zeitz-han retinal dystrophy</td>
+<td style="text-align: left;">DOID:0081462</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Zeitz-Han retinal dystrophy</td>
+<td style="text-align: left;">A retinal degeneration that is characterized by a variable retinal phenotypes, predominantly described as rod-cone dystrophy with some patients clinically diagnosed as having retinitis pigmentosa, but also including cases of cone-rod and cone dystrophy and that has_material_basis_in homozygous or compound heterozygous mutation in the ubiquitin-associated protein (UBAP1L) gene on chromosome 15q22.</td>
+<td style="text-align: left;">MONDO:0004580</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981237</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 111</td>
+<td style="text-align: left;">DOID:0051083</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 111</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0100062,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981238</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 112</td>
+<td style="text-align: left;">DOID:0051084</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 112</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0100062,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981239</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 113</td>
+<td style="text-align: left;">DOID:0051085</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 113</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0100062,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981240</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 114</td>
+<td style="text-align: left;">DOID:0051086</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 114</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0100062,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981241</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 115</td>
+<td style="text-align: left;">DOID:0051087</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 115</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0100062,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981242</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 119</td>
+<td style="text-align: left;">DOID:0051088</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 119</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0100062,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981243</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 120</td>
+<td style="text-align: left;">DOID:0051089</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 120</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0100062,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981244</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 121</td>
+<td style="text-align: left;">DOID:0051090</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 121</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0100062,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981245</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 122</td>
+<td style="text-align: left;">DOID:0051091</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental and epileptic encephalopathy 122</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0100062,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981246</td>
+<td style="text-align: left;">dentin dysplasia type ia</td>
+<td style="text-align: left;">DOID:0070704</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">dentin dysplasia type IA</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015613,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981247</td>
+<td style="text-align: left;">dentin dysplasia type ib</td>
+<td style="text-align: left;">DOID:0070705</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">dentin dysplasia type IB</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015613,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981248</td>
+<td style="text-align: left;">dentin dysplasia type ic</td>
+<td style="text-align: left;">DOID:0070706</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">dentin dysplasia type IC</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015613,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981249</td>
+<td style="text-align: left;">dentin dysplasia type ii</td>
+<td style="text-align: left;">DOID:0070707</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">dentin dysplasia type II</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015613,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981250</td>
+<td style="text-align: left;">dentin dysplasia with sclerotic bones</td>
+<td style="text-align: left;">DOID:0070708</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">dentin dysplasia with sclerotic bones</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000426,MONDO:0002254,MONDO:0006999,MONDO:0005381</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981251</td>
+<td style="text-align: left;">popov-chang syndrome</td>
+<td style="text-align: left;">DOID:0070709</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Popov-Chang syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981252</td>
+<td style="text-align: left;">neurodevelopmental disorder with speech delay and behavioral abnormalities</td>
+<td style="text-align: left;">DOID:0070710</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with speech delay and behavioral abnormalities</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981253</td>
+<td style="text-align: left;">harel-tora neurodevelopmental syndrome</td>
+<td style="text-align: left;">DOID:0070711</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Harel-Tora neurodevelopmental syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981254</td>
+<td style="text-align: left;">developmental delay with variable cardiac and renal congenital anomalies and dysmorphic facies</td>
+<td style="text-align: left;">DOID:0070712</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental delay with variable cardiac and renal congenital anomalies and dysmorphic facies</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981255</td>
+<td style="text-align: left;">neurodevelopmental disorder with early-onset seizures, facial dysmorphism, and behavioral abnormalities</td>
+<td style="text-align: left;">DOID:0070713</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with early-onset seizures, facial dysmorphism, and behavioral abnormalities</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981256</td>
+<td style="text-align: left;">neurodevelopmental disorder with structural brain abnormalities and craniofacial abnormalities</td>
+<td style="text-align: left;">DOID:0070714</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with structural brain abnormalities and craniofacial abnormalities</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002320,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981257</td>
+<td style="text-align: left;">ramond-elliott neurodevelopmental syndrome</td>
+<td style="text-align: left;">DOID:0070715</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Ramond-Elliott neurodevelopmental syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981258</td>
+<td style="text-align: left;">progressive microcephaly with simplified gyral pattern and cerebellar hypoplasia</td>
+<td style="text-align: left;">DOID:0070716</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">progressive microcephaly with simplified gyral pattern and cerebellar hypoplasia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002320,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981259</td>
+<td style="text-align: left;">developmental delay with sleep apnea</td>
+<td style="text-align: left;">DOID:0070717</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">developmental delay with sleep apnea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981260</td>
+<td style="text-align: left;">neurodevelopmental disorder with behavioral abnormalities and childhood-onset spastic paraplegia</td>
+<td style="text-align: left;">DOID:0070718</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with behavioral abnormalities and childhood-onset spastic paraplegia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019064,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981261</td>
+<td style="text-align: left;">neurocardiorenal malformation syndrome</td>
+<td style="text-align: left;">DOID:0070719</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurocardiorenal malformation syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000839,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981262</td>
+<td style="text-align: left;">immune dysregulation, neurodevelopmental defects, and colitis</td>
+<td style="text-align: left;">DOID:0070720</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">immune dysregulation, neurodevelopmental defects, and colitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000839,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981263</td>
+<td style="text-align: left;">valence-farazi cerebellar ataxia syndrome</td>
+<td style="text-align: left;">DOID:0070721</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Valence-Farazi cerebellar ataxia syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015244</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981264</td>
+<td style="text-align: left;">adult-onset leukoencephalopathy without lacunae</td>
+<td style="text-align: left;">DOID:0070722</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">adult-onset leukoencephalopathy without lacunae</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019046,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981265</td>
+<td style="text-align: left;">dyschromatosis, ichthyosis, deafness, and atopic disease</td>
+<td style="text-align: left;">DOID:0070723</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">dyschromatosis, ichthyosis, deafness, and atopic disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981266</td>
+<td style="text-align: left;">dental radicular dysplasia</td>
+<td style="text-align: left;">DOID:0070724</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">dental radicular dysplasia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006858,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981267</td>
+<td style="text-align: left;">spermatogenic failure 96</td>
+<td style="text-align: left;">DOID:0070725</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">spermatogenic failure 96</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004983,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981268</td>
+<td style="text-align: left;">spermatogenic failure 97</td>
+<td style="text-align: left;">DOID:0070726</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">spermatogenic failure 97</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004983,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981269</td>
+<td style="text-align: left;">spermatogenic failure 98</td>
+<td style="text-align: left;">DOID:0070727</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">spermatogenic failure 98</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004983,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981270</td>
+<td style="text-align: left;">spermatogenic failure 99</td>
+<td style="text-align: left;">DOID:0070728</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">spermatogenic failure 99</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004983,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981271</td>
+<td style="text-align: left;">spermatogenic failure 100</td>
+<td style="text-align: left;">DOID:0070729</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">spermatogenic failure 100</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004983,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981272</td>
+<td style="text-align: left;">spermatogenic failure 101</td>
+<td style="text-align: left;">DOID:0070730</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">spermatogenic failure 101</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004983,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981273</td>
+<td style="text-align: left;">spermatogenic failure 102</td>
+<td style="text-align: left;">DOID:0070731</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">spermatogenic failure 102</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004983,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981274</td>
+<td style="text-align: left;">familial juvenile hyperuricemic nephropathy 3</td>
+<td style="text-align: left;">DOID:0070732</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">familial juvenile hyperuricemic nephropathy 3</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000608</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981275</td>
+<td style="text-align: left;">multiple mitochondrial dysfunctions syndrome 7</td>
+<td style="text-align: left;">DOID:0070733</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">multiple mitochondrial dysfunctions syndrome 7</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017338,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981276</td>
+<td style="text-align: left;">episodic mitochondrial myopathy with optic atrophy and reversible leukoencephalopathy</td>
+<td style="text-align: left;">DOID:0070734</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">episodic mitochondrial myopathy with optic atrophy and reversible leukoencephalopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0017338</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981277</td>
+<td style="text-align: left;">auditory neuropathy and optic atrophy</td>
+<td style="text-align: left;">DOID:0070735</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">auditory neuropathy and optic atrophy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002135,MONDO:0017338,MONDO:0006025,MONDO:0001563</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981278</td>
+<td style="text-align: left;">multiple mitochondrial dysfunctions syndrome 9b</td>
+<td style="text-align: left;">DOID:0070736</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">multiple mitochondrial dysfunctions syndrome 9B</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017338,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981279</td>
+<td style="text-align: left;">multiple mitochondrial dysfunctions syndrome 10</td>
+<td style="text-align: left;">DOID:0070737</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">multiple mitochondrial dysfunctions syndrome 10</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0017338</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981280</td>
+<td style="text-align: left;">al kaissi syndrome</td>
+<td style="text-align: left;">DOID:0070738</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Al Kaissi syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981281</td>
+<td style="text-align: left;">autosomal recessive neurodevelopmental disorder with or without hyperkinetic movements and seizures</td>
+<td style="text-align: left;">DOID:0070739</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">autosomal recessive neurodevelopmental disorder with or without hyperkinetic movements and seizures</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981282</td>
+<td style="text-align: left;">cerebellar atrophy, developmental delay, and seizures</td>
+<td style="text-align: left;">DOID:0070740</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">cerebellar atrophy, developmental delay, and seizures</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981283</td>
+<td style="text-align: left;">cerebellar atrophy with seizures and variable developmental delay</td>
+<td style="text-align: left;">DOID:0070741</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">cerebellar atrophy with seizures and variable developmental delay</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981284</td>
+<td style="text-align: left;">combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia</td>
+<td style="text-align: left;">DOID:0070742</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0005528</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981285</td>
+<td style="text-align: left;">congenital facial palsy with ptosis and velopharyngeal dysfunction</td>
+<td style="text-align: left;">DOID:0070743</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">congenital facial palsy with ptosis and velopharyngeal dysfunction</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981286</td>
+<td style="text-align: left;">early childhood-onset progressive leukodystrophy</td>
+<td style="text-align: left;">DOID:0070744</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">early childhood-onset progressive leukodystrophy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019046,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981287</td>
+<td style="text-align: left;">early-onset progressive encephalopathy with brain atrophy and spasticity</td>
+<td style="text-align: left;">DOID:0070745</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">early-onset progressive encephalopathy with brain atrophy and spasticity</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981288</td>
+<td style="text-align: left;">helix syndrome</td>
+<td style="text-align: left;">DOID:0070746</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">HELIX syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0002254</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981289</td>
+<td style="text-align: left;">immunodeficiency, developmental delay, and hypohomocysteinemia</td>
+<td style="text-align: left;">DOID:0070747</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">immunodeficiency, developmental delay, and hypohomocysteinemia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981290</td>
+<td style="text-align: left;">joint laxity, short stature, and myopia</td>
+<td style="text-align: left;">DOID:0070748</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">joint laxity, short stature, and myopia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981291</td>
+<td style="text-align: left;">mendez-johnson immunoneurologic syndrome</td>
+<td style="text-align: left;">DOID:0070749</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Mendez-Johnson immunoneurologic syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981292</td>
+<td style="text-align: left;">mitochondrial myopathy and ataxia</td>
+<td style="text-align: left;">DOID:0070750</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">mitochondrial myopathy and ataxia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0009637,MONDO:0018158,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981293</td>
+<td style="text-align: left;">mitochondrial neurodevelopmental disorder with abnormal movements and lactic acidosis, with or without seizures</td>
+<td style="text-align: left;">DOID:0070751</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">mitochondrial neurodevelopmental disorder with abnormal movements and lactic acidosis, with or without seizures</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981294</td>
+<td style="text-align: left;">neonatal severe encephalopathy with lactic acidosis and brain abnormalities</td>
+<td style="text-align: left;">DOID:0070752</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neonatal severe encephalopathy with lactic acidosis and brain abnormalities</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0004069</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981295</td>
+<td style="text-align: left;">neurodevelopmental disorder with ataxic gait, absent speech, and decreased cortical white matter</td>
+<td style="text-align: left;">DOID:0070753</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with ataxic gait, absent speech, and decreased cortical white matter</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981296</td>
+<td style="text-align: left;">neurodevelopmental disorder with microcephaly, ataxia, and seizures</td>
+<td style="text-align: left;">DOID:0070754</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with microcephaly, ataxia, and seizures</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981297</td>
+<td style="text-align: left;">neurodevelopmental disorder with microcephaly, seizures, and cortical atrophy</td>
+<td style="text-align: left;">DOID:0070755</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with microcephaly, seizures, and cortical atrophy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981298</td>
+<td style="text-align: left;">neurodevelopmental disorder with variable motor and speech impairment</td>
+<td style="text-align: left;">DOID:0070756</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with variable motor and speech impairment</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981299</td>
+<td style="text-align: left;">pilarowski-bjornsson syndrome</td>
+<td style="text-align: left;">DOID:0070757</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Pilarowski-Bjornsson syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981300</td>
+<td style="text-align: left;">autosomal recessive progressive external ophthalmoplegia with mitochondrial dna deletions 6</td>
+<td style="text-align: left;">DOID:0070759</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">autosomal recessive progressive external ophthalmoplegia with mitochondrial DNA deletions 6</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005181</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981301</td>
+<td style="text-align: left;">recurrent respiratory papillomatosis</td>
+<td style="text-align: left;">DOID:0081463</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">recurrent respiratory papillomatosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002363,MONDO:0005161,MONDO:0000382</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981308</td>
+<td style="text-align: left;">damseh-danson neurodevelopmental disorder</td>
+<td style="text-align: left;">DOID:0051092</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Damseh-Danson neurodevelopmental disorder</td>
+<td style="text-align: left;">An autosomal recessive intellectual developmental disability that is characterized by global developmental delay apparent from infancy and that has_material_basis_in homozygous or compound heterozygous mutation in the SNX27 gene on chromosome 1q21.</td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981309</td>
+<td style="text-align: left;">retinitis pigmentosa 102</td>
+<td style="text-align: left;">DOID:0051093</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">retinitis pigmentosa 102</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019200,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981310</td>
+<td style="text-align: left;">retinitis pigmentosa 103</td>
+<td style="text-align: left;">DOID:0051094</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">retinitis pigmentosa 103</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019200,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981311</td>
+<td style="text-align: left;">retinitis pigmentosa 104</td>
+<td style="text-align: left;">DOID:0051095</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">retinitis pigmentosa 104</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019200,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981312</td>
+<td style="text-align: left;">retinitis pigmentosa 105</td>
+<td style="text-align: left;">DOID:0051096</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">retinitis pigmentosa 105</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019200,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981313</td>
+<td style="text-align: left;">retinitis pigmentosa 106</td>
+<td style="text-align: left;">DOID:0051097</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">retinitis pigmentosa 106</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019200,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981314</td>
+<td style="text-align: left;">retinitis pigmentosa 107</td>
+<td style="text-align: left;">DOID:0051098</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">retinitis pigmentosa 107</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019200,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981315</td>
+<td style="text-align: left;">paget disease of bone 7</td>
+<td style="text-align: left;">DOID:0051099</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Paget disease of bone 7</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005382</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981316</td>
+<td style="text-align: left;">primary ciliary dyskinesia 46</td>
+<td style="text-align: left;">DOID:0070758</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">primary ciliary dyskinesia 46</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016575,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981317</td>
+<td style="text-align: left;">primary ciliary dyskinesia 47 and lissencephaly</td>
+<td style="text-align: left;">DOID:0070760</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">primary ciliary dyskinesia 47 and lissencephaly</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016575,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981318</td>
+<td style="text-align: left;">primary ciliary dyskinesia 48</td>
+<td style="text-align: left;">DOID:0070761</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">primary ciliary dyskinesia 48</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0016575</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981319</td>
+<td style="text-align: left;">primary ciliary dyskinesia 49</td>
+<td style="text-align: left;">DOID:0070762</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">primary ciliary dyskinesia 49</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0016575</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981320</td>
+<td style="text-align: left;">primary ciliary dyskinesia 50</td>
+<td style="text-align: left;">DOID:0070763</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">primary ciliary dyskinesia 50</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016575,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981321</td>
+<td style="text-align: left;">primary ciliary dyskinesia 51</td>
+<td style="text-align: left;">DOID:0070764</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">primary ciliary dyskinesia 51</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0016575</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981322</td>
+<td style="text-align: left;">primary ciliary dyskinesia 52</td>
+<td style="text-align: left;">DOID:0070765</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">primary ciliary dyskinesia 52</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0016575</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981323</td>
+<td style="text-align: left;">primary ciliary dyskinesia 53</td>
+<td style="text-align: left;">DOID:0070766</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">primary ciliary dyskinesia 53</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0016575</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981324</td>
+<td style="text-align: left;">primary ciliary dyskinesia 54</td>
+<td style="text-align: left;">DOID:0070767</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">primary ciliary dyskinesia 54</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0016575</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981325</td>
+<td style="text-align: left;">peri-implant disease</td>
+<td style="text-align: left;">DOID:0070768</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">peri-implant disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002635</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981326</td>
+<td style="text-align: left;">gingival fibromatosis 1</td>
+<td style="text-align: left;">DOID:0070771</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">gingival fibromatosis 1</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016070,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981327</td>
+<td style="text-align: left;">gingival fibromatosis 2</td>
+<td style="text-align: left;">DOID:0070772</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">gingival fibromatosis 2</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016070</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981328</td>
+<td style="text-align: left;">gingival fibromatosis 3</td>
+<td style="text-align: left;">DOID:0070773</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">gingival fibromatosis 3</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016070,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981329</td>
+<td style="text-align: left;">gingival fibromatosis 4</td>
+<td style="text-align: left;">DOID:0070774</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">gingival fibromatosis 4</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016070</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981330</td>
+<td style="text-align: left;">gingival fibromatosis 6</td>
+<td style="text-align: left;">DOID:0070775</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">gingival fibromatosis 6</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016070,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981331</td>
+<td style="text-align: left;">impaired intellectual development and distinctive facial features with or without cardiac defects</td>
+<td style="text-align: left;">DOID:0070776</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">impaired intellectual development and distinctive facial features with or without cardiac defects</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000508,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981332</td>
+<td style="text-align: left;">syndromic x-linked intellectual developmental disorder, snijders blok type</td>
+<td style="text-align: left;">DOID:0070777</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">syndromic X-linked intellectual developmental disorder, Snijders Blok type</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020119</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981336</td>
+<td style="text-align: left;">her2-low breast cancer</td>
+<td style="text-align: left;">DOID:0070781</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">HER2-low breast cancer</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0007254</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981337</td>
+<td style="text-align: left;">her2-ultralow breast cancer</td>
+<td style="text-align: left;">DOID:0070782</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">HER2-ultralow breast cancer</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0007254</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981357</td>
+<td style="text-align: left;">hydroxyprolinemia</td>
+<td style="text-align: left;">DOID:0051100</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">hydroxyprolinemia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0004736,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981358</td>
+<td style="text-align: left;">retinitis pigmentosa 108</td>
+<td style="text-align: left;">DOID:0051101</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">retinitis pigmentosa 108</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019200,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981359</td>
+<td style="text-align: left;">acrofrontofacionasal dysostosis</td>
+<td style="text-align: left;">DOID:0051102</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">acrofrontofacionasal dysostosis</td>
+<td style="text-align: left;">A dysostosis that is characterized by the association of facial and skeletal anomalies with severe intellectual deficit and occasional genitourinary anomalies.</td>
+<td style="text-align: left;">MONDO:0018234</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981360</td>
+<td style="text-align: left;">idiopathic generalized epilepsy 20</td>
+<td style="text-align: left;">DOID:0070783</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">idiopathic generalized epilepsy 20</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005579,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981361</td>
+<td style="text-align: left;">hormone receptor-positive breast cancer</td>
+<td style="text-align: left;">DOID:0070784</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">hormone receptor-positive breast cancer</td>
+<td style="text-align: left;">A breast cancer characterized by the presence of at least one of the estrogen or progesterone receptors.</td>
+<td style="text-align: left;">MONDO:0007254</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981362</td>
+<td style="text-align: left;">hormone receptor-negative breast cancer</td>
+<td style="text-align: left;">DOID:0070785</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">hormone receptor-negative breast cancer</td>
+<td style="text-align: left;">A breast cancer characterized by the absence of hormone receptors.</td>
+<td style="text-align: left;">MONDO:0007254</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981363</td>
+<td style="text-align: left;">alsahan-harris syndrome</td>
+<td style="text-align: left;">DOID:0070787</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Alsahan-Harris syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0005308</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981364</td>
+<td style="text-align: left;">autosomal dominant adult-onset leukodystrophy without amyloid angiopathy</td>
+<td style="text-align: left;">DOID:0070788</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">autosomal dominant adult-onset leukodystrophy without amyloid angiopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019046,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981365</td>
+<td style="text-align: left;">cataract, alopecia, oral mucosal disorder, and psoriasis-like syndrome</td>
+<td style="text-align: left;">DOID:0070789</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">cataract, alopecia, oral mucosal disorder, and psoriasis-like syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0002254</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981366</td>
+<td style="text-align: left;">congenital nonprogressive movement disorder with ataxia and eye movement abnormalities</td>
+<td style="text-align: left;">DOID:0070790</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">congenital nonprogressive movement disorder with ataxia and eye movement abnormalities</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981367</td>
+<td style="text-align: left;">craniofaciocardiohepatic syndrome</td>
+<td style="text-align: left;">DOID:0070791</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">craniofaciocardiohepatic syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981368</td>
+<td style="text-align: left;">dursun-ozgul neurodevelopmental syndrome</td>
+<td style="text-align: left;">DOID:0070792</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Dursun-Ozgul neurodevelopmental syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981369</td>
+<td style="text-align: left;">ficus syndrome</td>
+<td style="text-align: left;">DOID:0070793</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">FICUS syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981370</td>
+<td style="text-align: left;">guillouet-gordon syndrome</td>
+<td style="text-align: left;">DOID:0070794</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Guillouet-Gordon syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0002254,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981371</td>
+<td style="text-align: left;">hyposulfatemia with skeletal dysplasia</td>
+<td style="text-align: left;">DOID:0070795</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">hyposulfatemia with skeletal dysplasia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006025,MONDO:0100510,MONDO:0019052</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981372</td>
+<td style="text-align: left;">ichad syndrome</td>
+<td style="text-align: left;">DOID:0070796</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">ICHAD syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005046,MONDO:0000426</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981373</td>
+<td style="text-align: left;">immunodysregulation with variable immunodeficiency and autoimmunity</td>
+<td style="text-align: left;">DOID:0070797</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">immunodysregulation with variable immunodeficiency and autoimmunity</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005046,MONDO:0000426,MONDO:0006025</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981374</td>
+<td style="text-align: left;">isolated glycolic aciduria</td>
+<td style="text-align: left;">DOID:0081464</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">isolated glycolic aciduria</td>
+<td style="text-align: left;">A carbohydrate metabolic disorder that is characterized by markedly elevated urinary and plasma glycolate without further metabolic disease consequences and that has_material_basis_in homozygous mutation in the HAO1 gene on chromosome 20p12.</td>
+<td style="text-align: left;">MONDO:0019214</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981375</td>
+<td style="text-align: left;">neurodevelopmental disorder with spasticity, hypoplasia of the corpus callosum, and recurrent infections</td>
+<td style="text-align: left;">DOID:0081465</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with spasticity, hypoplasia of the corpus callosum, and recurrent infections</td>
+<td style="text-align: left;">An autosomal recessive intellectual developmental disorder that is characterized by global developmental delay apparent from infancy, failure to thrive with poor overall growth, delayed walking or inability to walk, and severe to profoundly impaired intellectual development with absent or poor speech, and that has_material_basis_in homozygous mutation in the EIPR1 gene on chromosome 2p25.</td>
+<td style="text-align: left;">MONDO:0019502</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981376</td>
+<td style="text-align: left;">neurodevelopmental disorder with intellectual, visual, and language impairment</td>
+<td style="text-align: left;">DOID:0081466</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">neurodevelopmental disorder with intellectual, visual, and language impairment</td>
+<td style="text-align: left;">An autosomal dominant intellectual developmental disorder that is characterized by these cardinal features as well as motor delay, seizures, microcephaly, and dysmorphic features and that has_material_basis_in heterozygous mutation in the PIP5K1C gene on chromosome 19p13.</td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981377</td>
+<td style="text-align: left;">autosomal dominant intellectual developmental disorder 78</td>
+<td style="text-align: left;">DOID:0081467</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">autosomal dominant intellectual developmental disorder 78</td>
+<td style="text-align: left;">An autosomal dominant intellectual developmental disorder that is characterized by neurodevelopmental abnormalities including intellectual disability, language and motor delays, autism spectrum disorder, and epilepsy or seizures and that has_material_basis_in heterozygous mutation in the INTS6 gene on chromosome 13q14.</td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981378</td>
+<td style="text-align: left;">autosomal dominant intellectual developmental disorder 76</td>
+<td style="text-align: left;">DOID:0081468</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">autosomal dominant intellectual developmental disorder 76</td>
+<td style="text-align: left;">An autosomal dominant intellectual developmental disorder that is characterized by developmental delay, mildly to severely impaired intellectual development with speech and language deficits, and autism and that has_material_basis_in heterozygous mutation in the MARK2 gene on chromosome 11q13.</td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981379</td>
+<td style="text-align: left;">autosomal dominant intellectual developmental disorder 77</td>
+<td style="text-align: left;">DOID:0081469</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">autosomal dominant intellectual developmental disorder 77</td>
+<td style="text-align: left;">An autosomal dominant intellectual developmental disorder that is characterized by global developmental delay that leads to mild to moderate intellectual disability and that has_material_basis_in heterozygous mutation in the LRRC7 gene on chromosome 1q31.1.</td>
+<td style="text-align: left;">MONDO:0015802</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981380</td>
+<td style="text-align: left;">spermatogenic failure 103</td>
+<td style="text-align: left;">DOID:0081470</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">spermatogenic failure 103</td>
+<td style="text-align: left;">A spermatogenic failure that is characterized by male infertility due to nonobstructive azoospermia resulting from meiotic arrest and that has_material_basis_in homozygous or compound heterozygous mutation in the MEI1 gene on chromosome 22q13.</td>
+<td style="text-align: left;">MONDO:0004983,MONDO:0000426</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
