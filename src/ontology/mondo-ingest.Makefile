@@ -18,7 +18,7 @@
 DOID=				http://purl.obolibrary.org/obo/doid.owl
 ICD10_BP_CODE=		27
 ICD10CM=			https://data.bioontology.org/ontologies/ICD10CM/submissions/$(ICD10_BP_CODE)/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
-ICD10WHO=			https://github.com/monarch-initiative/icd10who/releases/latest/download/icd10who.ttl
+ICD10WHO_RELEASE_BASE=	https://github.com/Reasat/icd10who/releases/latest/download
 ICD11FOUNDATION=	https://github.com/monarch-initiative/icd11/releases/latest/download/icd11foundation.owl
 NCIT=				http://purl.obolibrary.org/obo/ncit.owl
 OMIM=				https://github.com/monarch-initiative/omim/releases/latest/download/omim.owl
@@ -38,11 +38,6 @@ $(TMPDIR)/mirror-doid.owl: | all_robot_plugins $(TMPDIR)
 	$(ROBOT) merge -I $(DOID) \
 		 odk:normalize --add-source true --output $@
 .PRECIOUS: $(TMPDIR)/mirror-doid.owl
-
-$(TMPDIR)/mirror-icd10who.owl: | all_robot_plugins $(TMPDIR)
-	$(ROBOT) merge -I $(ICD10WHO) \
-		 odk:normalize --add-source true --output $@
-.PRECIOUS: $(TMPDIR)/mirror-icd10who.owl
 
 $(TMPDIR)/mirror-icd11foundation.owl: | all_robot_plugins $(TMPDIR)
 	$(ROBOT) merge -I $(ICD11FOUNDATION) \
@@ -207,18 +202,26 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt $(TMPDIR)
 		remove -T config/properties.txt --select complement --select properties --trim true \
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
 
-# todo: See #1 at top of file
-$(COMPONENTSDIR)/icd10who.owl: $(TMPDIR)/icd10who_relevant_signature.txt | $(TMPDIR)/mirror-icd10who.owl
-	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/mirror-icd10who.owl --select imports \
-		rename --mappings config/property-map.sssom.tsv --allow-missing-entities true --allow-duplicates true \
-		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select complement --select "classes individuals" --trim false \
-		remove -T $(TMPDIR)/icd10who_relevant_signature.txt --select individuals \
-		query \
-			--update ../sparql/fix_omimps.ru \
-			--update ../sparql/fix-labels-with-brackets.ru \
-			--update ../sparql/exact_syn_from_label.ru \
-		remove -T config/properties.txt --select complement --select properties --trim true \
-		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10who.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10who.owl -o $@; fi
+####################################
+### ICD10WHO external release ######
+####################################
+# Preprocessing lives in the icd10who source repo; mondo-ingest wget's the release bundle.
+# Release asset basenames must match local targets (see $(@F) below).
+
+ICD10WHO_DOWNLOADS := $(REPORTDIR)/mirror_signature-icd10who.tsv \
+		      $(REPORTDIR)/component_signature-icd10who.tsv \
+		      $(MAPPINGSDIR)/icd10who.sssom.tsv \
+		      metadata/icd10who-metrics.json
+
+ifeq ($(COMP),true)
+ICD10WHO_DOWNLOADS += $(COMPONENTSDIR)/icd10who.owl \
+		      $(COMPONENTSDIR)/icd10who.db \
+		      $(TMPDIR)/mirror-icd10who.owl
+endif
+
+$(ICD10WHO_DOWNLOADS): | $(REPORTDIR) $(COMPONENTSDIR) $(TMPDIR) $(MAPPINGSDIR)/
+	wget -nv $(ICD10WHO_RELEASE_BASE)/$(@F) -O $@.tmp && mv $@.tmp $@
+.PRECIOUS: $(TMPDIR)/mirror-icd10who.owl
 
 $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signature.txt $(TMPDIR)/mirror-icd11foundation.owl
 	if [ $(COMP) = true ] ; then $(ROBOT) remove -i $(TMPDIR)/mirror-icd11foundation.owl --select imports \
