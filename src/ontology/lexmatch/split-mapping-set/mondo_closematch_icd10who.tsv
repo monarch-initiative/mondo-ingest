@@ -1,5 +1,4 @@
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string	comment
-MONDO:0000408	fetal alcohol spectrum disorder	skos:closeMatch	ICD10WHO:Q86.0	Fetal alcohol syndrome (dysmorphic)	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	fetal alcohol syndrome	LEXMATCH
 MONDO:0001195	spotted fever	skos:closeMatch	ICD10WHO:A77.8	Other spotted fevers	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	spotted fevers	LEXMATCH
 MONDO:0001336	familial hyperlipidemia	skos:closeMatch	ICD10WHO:E78.4	Other hyperlipidaemia	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	hyperlipidaemia	LEXMATCH
 MONDO:0001714	bejel	skos:closeMatch	ICD10WHO:A65	Nonvenereal syphilis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	nonvenereal syphilis	LEXMATCH
@@ -65,7 +64,6 @@ MONDO:0016057	isolated encephalocele	skos:closeMatch	ICD10WHO:Q01	Encephalocele	
 MONDO:0016057	isolated encephalocele	skos:closeMatch	ICD10WHO:Q01	Encephalocele	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	encephalocele	LEXMATCH
 MONDO:0017287	immunoglobulin G4-related sclerosing disease	skos:closeMatch	ICD10WHO:M35.5	Multifocal fibrosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	multifocal fibrosclerosis	LEXMATCH
 MONDO:0017287	immunoglobulin G4-related sclerosing disease	skos:closeMatch	ICD10WHO:M35.5	Multifocal fibrosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	multifocal fibrosclerosis	LEXMATCH
-MONDO:0017879	hantavirus pulmonary syndrome	skos:closeMatch	ICD10WHO:B33.4	Hantavirus (cardio-)pulmonary syndrome [HPS] [HCPS]	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	hantavirus	LEXMATCH
 MONDO:0018103	Quinquaud's folliculitis decalvans	skos:closeMatch	ICD10WHO:L66.2	Folliculitis decalvans	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	folliculitis decalvans	LEXMATCH
 MONDO:0018103	Quinquaud's folliculitis decalvans	skos:closeMatch	ICD10WHO:L66.2	Folliculitis decalvans	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	folliculitis decalvans	LEXMATCH
 MONDO:0018626	paratyphoid fever	skos:closeMatch	ICD10WHO:A01.1	Paratyphoid fever A	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	paratyphoid fever a	LEXMATCH

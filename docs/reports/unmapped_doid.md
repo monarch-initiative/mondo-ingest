@@ -2,189 +2,224 @@
 [Interactive FlatGithub table](https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/doid_mapping_status.tsv)
 
 ### Unmapped mappable terms _(!excluded, !deprecated)_
-| subject_id   | subject_label                                                                                                   |
-|:-------------|:----------------------------------------------------------------------------------------------------------------|
-| DOID:0070738 | Al Kaissi syndrome                                                                                              |
-| DOID:0051080 | Alport syndrome 3B                                                                                              |
-| DOID:0070787 | Alsahan-Harris syndrome                                                                                         |
-| DOID:0051092 | Damseh-Danson neurodevelopmental disorder                                                                       |
-| DOID:0070692 | Davis-Wells syndrome                                                                                            |
-| DOID:0070792 | Dursun-Ozgul neurodevelopmental syndrome                                                                        |
-| DOID:0070693 | Ebstein-Bezieau neurodevelopmental syndrome                                                                     |
-| DOID:0070793 | FICUS syndrome                                                                                                  |
-| DOID:0061293 | Galloway-Mowat syndrome 10                                                                                      |
-| DOID:0061289 | Galloway-Mowat syndrome 6                                                                                       |
-| DOID:0061290 | Galloway-Mowat syndrome 7                                                                                       |
-| DOID:0061291 | Galloway-Mowat syndrome 8                                                                                       |
-| DOID:0061292 | Galloway-Mowat syndrome 9                                                                                       |
-| DOID:0070794 | Guillouet-Gordon syndrome                                                                                       |
-| DOID:0070746 | HELIX syndrome                                                                                                  |
-| DOID:0070781 | HER2-low breast cancer                                                                                          |
-| DOID:0070782 | HER2-ultralow breast cancer                                                                                     |
-| DOID:0070711 | Harel-Tora neurodevelopmental syndrome                                                                          |
-| DOID:0061300 | Hermansky-Pudlak syndrome 10                                                                                    |
-| DOID:0061301 | Hermansky-Pudlak syndrome 11                                                                                    |
-| DOID:0070796 | ICHAD syndrome                                                                                                  |
-| DOID:0070700 | Luo-Agrawal neurodevelopmental syndrome                                                                         |
-| DOID:0061295 | Meckel syndrome 10                                                                                              |
-| DOID:0061296 | Meckel syndrome 11                                                                                              |
-| DOID:0061297 | Meckel syndrome 12                                                                                              |
-| DOID:0070703 | Meckel syndrome 14                                                                                              |
-| DOID:0061294 | Meckel syndrome 9                                                                                               |
-| DOID:0070749 | Mendez-Johnson immunoneurologic syndrome                                                                        |
-| DOID:0051099 | Paget disease of bone 7                                                                                         |
-| DOID:0051082 | Parkinson's disease 27                                                                                          |
-| DOID:0070757 | Pilarowski-Bjornsson syndrome                                                                                   |
-| DOID:0070709 | Popov-Chang syndrome                                                                                            |
-| DOID:0070715 | Ramond-Elliott neurodevelopmental syndrome                                                                      |
-| DOID:0070699 | STAD syndrome                                                                                                   |
-| DOID:0050457 | Sertoli cell-only syndrome                                                                                      |
-| DOID:0070721 | Valence-Farazi cerebellar ataxia syndrome                                                                       |
-| DOID:0070686 | X-linked congenital hydrocephalus                                                                               |
-| DOID:0070698 | X-linked neurodevelopmental disorder with poor or absent speech and behavioral abnormalities                    |
-| DOID:0070695 | Yu-Kury neurodevelopmental syndrome                                                                             |
-| DOID:0081462 | Zeitz-Han retinal dystrophy                                                                                     |
-| DOID:0051102 | acrofrontofacionasal dysostosis                                                                                 |
-| DOID:0051103 | acrofrontofacionasal dysostosis 2                                                                               |
-| DOID:0051104 | acrofrontofacionasal dysostosis 3                                                                               |
-| DOID:0070722 | adult-onset leukoencephalopathy without lacunae                                                                 |
-| DOID:2934    | aleutian mink disease                                                                                           |
-| DOID:0070735 | auditory neuropathy and optic atrophy                                                                           |
-| DOID:0070788 | autosomal dominant adult-onset leukodystrophy without amyloid angiopathy                                        |
-| DOID:0081468 | autosomal dominant intellectual developmental disorder 76                                                       |
-| DOID:0081469 | autosomal dominant intellectual developmental disorder 77                                                       |
-| DOID:0081467 | autosomal dominant intellectual developmental disorder 78                                                       |
-| DOID:0070688 | autosomal recessive congenital indifference to pain                                                             |
-| DOID:0070739 | autosomal recessive neurodevelopmental disorder with or without hyperkinetic movements and seizures             |
-| DOID:0070759 | autosomal recessive progressive external ophthalmoplegia with mitochondrial DNA deletions 6                     |
-| DOID:0060854 | autosomal recessive pseudohypoaldosteronism type 1                                                              |
-| DOID:5154    | borna disease                                                                                                   |
-| DOID:0070789 | cataract, alopecia, oral mucosal disorder, and psoriasis-like syndrome                                          |
-| DOID:0070741 | cerebellar atrophy with seizures and variable developmental delay                                               |
-| DOID:0070740 | cerebellar atrophy, developmental delay, and seizures                                                           |
-| DOID:0070648 | cherubism                                                                                                       |
-| DOID:0070649 | cherubism 2                                                                                                     |
-| DOID:0060160 | childhood spinal muscular atrophy                                                                               |
-| DOID:0111368 | cholesterol-ester transfer protein deficiency                                                                   |
-| DOID:2536    | chronic inflammatory demyelinating polyneuritis                                                                 |
-| DOID:0070742 | combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia                         |
-| DOID:0051078 | congenital anomalies of the kidney and urinary tract 3                                                          |
-| DOID:0070743 | congenital facial palsy with ptosis and velopharyngeal dysfunction                                              |
-| DOID:0070681 | congenital hydrocephalus                                                                                        |
-| DOID:0070682 | congenital hydrocephalus 1                                                                                      |
-| DOID:0070683 | congenital hydrocephalus 2                                                                                      |
-| DOID:0070684 | congenital hydrocephalus 3                                                                                      |
-| DOID:0070685 | congenital hydrocephalus 4                                                                                      |
-| DOID:0070790 | congenital nonprogressive movement disorder with ataxia and eye movement abnormalities                          |
-| DOID:0070791 | craniofaciocardiohepatic syndrome                                                                               |
-| DOID:0070691 | craniosynostosis-scoliosis syndrome                                                                             |
-| DOID:0070724 | dental radicular dysplasia                                                                                      |
-| DOID:0070704 | dentin dysplasia type IA                                                                                        |
-| DOID:0070705 | dentin dysplasia type IB                                                                                        |
-| DOID:0070706 | dentin dysplasia type IC                                                                                        |
-| DOID:0070707 | dentin dysplasia type II                                                                                        |
-| DOID:0070708 | dentin dysplasia with sclerotic bones                                                                           |
-| DOID:0051083 | developmental and epileptic encephalopathy 111                                                                  |
-| DOID:0051084 | developmental and epileptic encephalopathy 112                                                                  |
-| DOID:0051085 | developmental and epileptic encephalopathy 113                                                                  |
-| DOID:0051086 | developmental and epileptic encephalopathy 114                                                                  |
-| DOID:0051087 | developmental and epileptic encephalopathy 115                                                                  |
-| DOID:0051088 | developmental and epileptic encephalopathy 119                                                                  |
-| DOID:0051089 | developmental and epileptic encephalopathy 120                                                                  |
-| DOID:0051090 | developmental and epileptic encephalopathy 121                                                                  |
-| DOID:0051091 | developmental and epileptic encephalopathy 122                                                                  |
-| DOID:0070717 | developmental delay with sleep apnea                                                                            |
-| DOID:0070712 | developmental delay with variable cardiac and renal congenital anomalies and dysmorphic facies                  |
-| DOID:0070723 | dyschromatosis, ichthyosis, deafness, and atopic disease                                                        |
-| DOID:0070744 | early childhood-onset progressive leukodystrophy                                                                |
-| DOID:0070745 | early-onset progressive encephalopathy with brain atrophy and spasticity                                        |
-| DOID:0070734 | episodic mitochondrial myopathy with optic atrophy and reversible leukoencephalopathy                           |
-| DOID:0070732 | familial juvenile hyperuricemic nephropathy 3                                                                   |
-| DOID:0070771 | gingival fibromatosis 1                                                                                         |
-| DOID:0070772 | gingival fibromatosis 2                                                                                         |
-| DOID:0070773 | gingival fibromatosis 3                                                                                         |
-| DOID:0070774 | gingival fibromatosis 4                                                                                         |
-| DOID:0070775 | gingival fibromatosis 6                                                                                         |
-| DOID:0061285 | glycogen storage disease X                                                                                      |
-| DOID:0061286 | glycogen storage disease XI                                                                                     |
-| DOID:0061287 | glycogen storage disease XII                                                                                    |
-| DOID:0061288 | glycogen storage disease XIII                                                                                   |
-| DOID:0070656 | hamartoma syndrome                                                                                              |
-| DOID:0070689 | hereditary sensory and autonomic neuropathy type 2D                                                             |
-| DOID:0070785 | hormone receptor-negative breast cancer                                                                         |
-| DOID:0070778 | hormone receptor-negative/HER2-positive breast cancer                                                           |
-| DOID:0070784 | hormone receptor-positive breast cancer                                                                         |
-| DOID:0070780 | hormone receptor-positive/HER2-negative breast cancer                                                           |
-| DOID:0070779 | hormone receptor-positive/HER2-positive breast cancer                                                           |
-| DOID:0051100 | hydroxyprolinemia                                                                                               |
-| DOID:0061212 | hypocholesteremia                                                                                               |
-| DOID:0070795 | hyposulfatemia with skeletal dysplasia                                                                          |
-| DOID:0070783 | idiopathic generalized epilepsy 20                                                                              |
-| DOID:0070720 | immune dysregulation, neurodevelopmental defects, and colitis                                                   |
-| DOID:0070747 | immunodeficiency, developmental delay, and hypohomocysteinemia                                                  |
-| DOID:0070797 | immunodysregulation with variable immunodeficiency and autoimmunity                                             |
-| DOID:0070776 | impaired intellectual development and distinctive facial features with or without cardiac defects               |
-| DOID:0081464 | isolated glycolic aciduria                                                                                      |
-| DOID:0070748 | joint laxity, short stature, and myopia                                                                         |
-| DOID:0061271 | liver glycogen storage disease                                                                                  |
-| DOID:0070690 | lobodontia                                                                                                      |
-| DOID:0070702 | measles inclusion body encephalitis                                                                             |
-| DOID:0070750 | mitochondrial myopathy and ataxia                                                                               |
-| DOID:0070751 | mitochondrial neurodevelopmental disorder with abnormal movements and lactic acidosis, with or without seizures |
-| DOID:0070737 | multiple mitochondrial dysfunctions syndrome 10                                                                 |
-| DOID:0070733 | multiple mitochondrial dysfunctions syndrome 7                                                                  |
-| DOID:0070736 | multiple mitochondrial dysfunctions syndrome 9B                                                                 |
-| DOID:0061272 | muscle glycogen storage disease                                                                                 |
-| DOID:0070752 | neonatal severe encephalopathy with lactic acidosis and brain abnormalities                                     |
-| DOID:0070719 | neurocardiorenal malformation syndrome                                                                          |
-| DOID:0070753 | neurodevelopmental disorder with ataxic gait, absent speech, and decreased cortical white matter                |
-| DOID:0070718 | neurodevelopmental disorder with behavioral abnormalities and childhood-onset spastic paraplegia                |
-| DOID:0070694 | neurodevelopmental disorder with congenital cardiac defects and variable renal and ocular abnormalities         |
-| DOID:0070713 | neurodevelopmental disorder with early-onset seizures, facial dysmorphism, and behavioral abnormalities         |
-| DOID:0081466 | neurodevelopmental disorder with intellectual, visual, and language impairment                                  |
-| DOID:0070754 | neurodevelopmental disorder with microcephaly, ataxia, and seizures                                             |
-| DOID:0070755 | neurodevelopmental disorder with microcephaly, seizures, and cortical atrophy                                   |
-| DOID:0070696 | neurodevelopmental disorder with seizures, hypotonia, and variable spasticity                                   |
-| DOID:0081465 | neurodevelopmental disorder with spasticity, hypoplasia of the corpus callosum, and recurrent infections        |
-| DOID:0070697 | neurodevelopmental disorder with spasticity, thin corpus callosum, and decreased brain white matter             |
-| DOID:0070710 | neurodevelopmental disorder with speech delay and behavioral abnormalities                                      |
-| DOID:0070714 | neurodevelopmental disorder with structural brain abnormalities and craniofacial abnormalities                  |
-| DOID:0070756 | neurodevelopmental disorder with variable motor and speech impairment                                           |
-| DOID:0070687 | normal pressure hydrocephalus 1                                                                                 |
-| DOID:146     | papilledema                                                                                                     |
-| DOID:0070768 | peri-implant disease                                                                                            |
-| DOID:0070769 | peri-implant mucositis                                                                                          |
-| DOID:0070770 | peri-implantitis                                                                                                |
-| DOID:0051081 | polycystic kidney disease 8                                                                                     |
-| DOID:0070758 | primary ciliary dyskinesia 46                                                                                   |
-| DOID:0070760 | primary ciliary dyskinesia 47 and lissencephaly                                                                 |
-| DOID:0070761 | primary ciliary dyskinesia 48                                                                                   |
-| DOID:0070762 | primary ciliary dyskinesia 49                                                                                   |
-| DOID:0070763 | primary ciliary dyskinesia 50                                                                                   |
-| DOID:0070764 | primary ciliary dyskinesia 51                                                                                   |
-| DOID:0070765 | primary ciliary dyskinesia 52                                                                                   |
-| DOID:0070766 | primary ciliary dyskinesia 53                                                                                   |
-| DOID:0070767 | primary ciliary dyskinesia 54                                                                                   |
-| DOID:0070716 | progressive microcephaly with simplified gyral pattern and cerebellar hypoplasia                                |
-| DOID:0081463 | recurrent respiratory papillomatosis                                                                            |
-| DOID:0061298 | retinitis pigmentosa 100                                                                                        |
-| DOID:0061299 | retinitis pigmentosa 101                                                                                        |
-| DOID:0051093 | retinitis pigmentosa 102                                                                                        |
-| DOID:0051094 | retinitis pigmentosa 103                                                                                        |
-| DOID:0051095 | retinitis pigmentosa 104                                                                                        |
-| DOID:0051096 | retinitis pigmentosa 105                                                                                        |
-| DOID:0051097 | retinitis pigmentosa 106                                                                                        |
-| DOID:0051098 | retinitis pigmentosa 107                                                                                        |
-| DOID:0051101 | retinitis pigmentosa 108                                                                                        |
-| DOID:0070701 | small fiber neuropathy                                                                                          |
-| DOID:0070729 | spermatogenic failure 100                                                                                       |
-| DOID:0070730 | spermatogenic failure 101                                                                                       |
-| DOID:0070731 | spermatogenic failure 102                                                                                       |
-| DOID:0081470 | spermatogenic failure 103                                                                                       |
-| DOID:0070725 | spermatogenic failure 96                                                                                        |
-| DOID:0070726 | spermatogenic failure 97                                                                                        |
-| DOID:0070727 | spermatogenic failure 98                                                                                        |
-| DOID:0070728 | spermatogenic failure 99                                                                                        |
-| DOID:0070777 | syndromic X-linked intellectual developmental disorder, Snijders Blok type                                      |
-| DOID:0061213 | telomere biology disorder                                                                                       |
-| DOID:0070786 | triple positive breast cancer                                                                                   |
+| subject_id   | subject_label                                                                                                                          |
+|:-------------|:---------------------------------------------------------------------------------------------------------------------------------------|
+| DOID:0070738 | Al Kaissi syndrome                                                                                                                     |
+| DOID:0051080 | Alport syndrome 3B                                                                                                                     |
+| DOID:0070787 | Alsahan-Harris syndrome                                                                                                                |
+| DOID:0051092 | Damseh-Danson neurodevelopmental disorder                                                                                              |
+| DOID:0070692 | Davis-Wells syndrome                                                                                                                   |
+| DOID:0070792 | Dursun-Ozgul neurodevelopmental syndrome                                                                                               |
+| DOID:0070693 | Ebstein-Bezieau neurodevelopmental syndrome                                                                                            |
+| DOID:0070793 | FICUS syndrome                                                                                                                         |
+| DOID:0070802 | Gabriele-de Vries syndrome                                                                                                             |
+| DOID:0061293 | Galloway-Mowat syndrome 10                                                                                                             |
+| DOID:0061289 | Galloway-Mowat syndrome 6                                                                                                              |
+| DOID:0061290 | Galloway-Mowat syndrome 7                                                                                                              |
+| DOID:0061291 | Galloway-Mowat syndrome 8                                                                                                              |
+| DOID:0061292 | Galloway-Mowat syndrome 9                                                                                                              |
+| DOID:0070794 | Guillouet-Gordon syndrome                                                                                                              |
+| DOID:0070746 | HELIX syndrome                                                                                                                         |
+| DOID:0070781 | HER2-low breast cancer                                                                                                                 |
+| DOID:0070782 | HER2-ultralow breast cancer                                                                                                            |
+| DOID:0070711 | Harel-Tora neurodevelopmental syndrome                                                                                                 |
+| DOID:0061300 | Hermansky-Pudlak syndrome 10                                                                                                           |
+| DOID:0061301 | Hermansky-Pudlak syndrome 11                                                                                                           |
+| DOID:0070796 | ICHAD syndrome                                                                                                                         |
+| DOID:0070801 | Li-Takada-Miyake syndrome                                                                                                              |
+| DOID:0070700 | Luo-Agrawal neurodevelopmental syndrome                                                                                                |
+| DOID:0061295 | Meckel syndrome 10                                                                                                                     |
+| DOID:0061296 | Meckel syndrome 11                                                                                                                     |
+| DOID:0061297 | Meckel syndrome 12                                                                                                                     |
+| DOID:0070703 | Meckel syndrome 14                                                                                                                     |
+| DOID:0061294 | Meckel syndrome 9                                                                                                                      |
+| DOID:0070749 | Mendez-Johnson immunoneurologic syndrome                                                                                               |
+| DOID:0070805 | Muggenthaler-Chowdhury-Chioza syndrome                                                                                                 |
+| DOID:0051099 | Paget disease of bone 7                                                                                                                |
+| DOID:0051082 | Parkinson's disease 27                                                                                                                 |
+| DOID:0070823 | Paul-Chao neurodevelopmental syndrome                                                                                                  |
+| DOID:0070757 | Pilarowski-Bjornsson syndrome                                                                                                          |
+| DOID:0070709 | Popov-Chang syndrome                                                                                                                   |
+| DOID:0070715 | Ramond-Elliott neurodevelopmental syndrome                                                                                             |
+| DOID:0070699 | STAD syndrome                                                                                                                          |
+| DOID:0050457 | Sertoli cell-only syndrome                                                                                                             |
+| DOID:0070826 | Tayoun-Maawali syndrome                                                                                                                |
+| DOID:0070721 | Valence-Farazi cerebellar ataxia syndrome                                                                                              |
+| DOID:0070803 | Witteveen-Kolk syndrome                                                                                                                |
+| DOID:0070686 | X-linked congenital hydrocephalus                                                                                                      |
+| DOID:0070827 | X-linked female-restricted neurodegenerative disorder with Parkinsonism and cognitive impairment                                       |
+| DOID:0070698 | X-linked neurodevelopmental disorder with poor or absent speech and behavioral abnormalities                                           |
+| DOID:0070828 | X-linked retinal dystrophy, Gardner-Hardcastle type                                                                                    |
+| DOID:0070695 | Yu-Kury neurodevelopmental syndrome                                                                                                    |
+| DOID:0081462 | Zeitz-Han retinal dystrophy                                                                                                            |
+| DOID:0051102 | acrofrontofacionasal dysostosis                                                                                                        |
+| DOID:0051103 | acrofrontofacionasal dysostosis 2                                                                                                      |
+| DOID:0051104 | acrofrontofacionasal dysostosis 3                                                                                                      |
+| DOID:0070722 | adult-onset leukoencephalopathy without lacunae                                                                                        |
+| DOID:2934    | aleutian mink disease                                                                                                                  |
+| DOID:0070735 | auditory neuropathy and optic atrophy                                                                                                  |
+| DOID:0070788 | autosomal dominant adult-onset leukodystrophy without amyloid angiopathy                                                               |
+| DOID:0081468 | autosomal dominant intellectual developmental disorder 76                                                                              |
+| DOID:0081469 | autosomal dominant intellectual developmental disorder 77                                                                              |
+| DOID:0081467 | autosomal dominant intellectual developmental disorder 78                                                                              |
+| DOID:0070688 | autosomal recessive congenital indifference to pain                                                                                    |
+| DOID:0070739 | autosomal recessive neurodevelopmental disorder with or without hyperkinetic movements and seizures                                    |
+| DOID:0070759 | autosomal recessive progressive external ophthalmoplegia with mitochondrial DNA deletions 6                                            |
+| DOID:0060854 | autosomal recessive pseudohypoaldosteronism type 1                                                                                     |
+| DOID:5154    | borna disease                                                                                                                          |
+| DOID:0070789 | cataract, alopecia, oral mucosal disorder, and psoriasis-like syndrome                                                                 |
+| DOID:0070741 | cerebellar atrophy with seizures and variable developmental delay                                                                      |
+| DOID:0070740 | cerebellar atrophy, developmental delay, and seizures                                                                                  |
+| DOID:0070648 | cherubism                                                                                                                              |
+| DOID:0070649 | cherubism 2                                                                                                                            |
+| DOID:0060160 | childhood spinal muscular atrophy                                                                                                      |
+| DOID:0111368 | cholesterol-ester transfer protein deficiency                                                                                          |
+| DOID:2536    | chronic inflammatory demyelinating polyneuritis                                                                                        |
+| DOID:0070742 | combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia                                                |
+| DOID:0051078 | congenital anomalies of the kidney and urinary tract 3                                                                                 |
+| DOID:0070743 | congenital facial palsy with ptosis and velopharyngeal dysfunction                                                                     |
+| DOID:0070681 | congenital hydrocephalus                                                                                                               |
+| DOID:0070682 | congenital hydrocephalus 1                                                                                                             |
+| DOID:0070683 | congenital hydrocephalus 2                                                                                                             |
+| DOID:0070684 | congenital hydrocephalus 3                                                                                                             |
+| DOID:0070685 | congenital hydrocephalus 4                                                                                                             |
+| DOID:0070790 | congenital nonprogressive movement disorder with ataxia and eye movement abnormalities                                                 |
+| DOID:0070791 | craniofaciocardiohepatic syndrome                                                                                                      |
+| DOID:0070691 | craniosynostosis-scoliosis syndrome                                                                                                    |
+| DOID:0070724 | dental radicular dysplasia                                                                                                             |
+| DOID:0070704 | dentin dysplasia type IA                                                                                                               |
+| DOID:0070705 | dentin dysplasia type IB                                                                                                               |
+| DOID:0070706 | dentin dysplasia type IC                                                                                                               |
+| DOID:0070707 | dentin dysplasia type II                                                                                                               |
+| DOID:0070708 | dentin dysplasia with sclerotic bones                                                                                                  |
+| DOID:0051083 | developmental and epileptic encephalopathy 111                                                                                         |
+| DOID:0051084 | developmental and epileptic encephalopathy 112                                                                                         |
+| DOID:0051085 | developmental and epileptic encephalopathy 113                                                                                         |
+| DOID:0051086 | developmental and epileptic encephalopathy 114                                                                                         |
+| DOID:0051087 | developmental and epileptic encephalopathy 115                                                                                         |
+| DOID:0051088 | developmental and epileptic encephalopathy 119                                                                                         |
+| DOID:0051089 | developmental and epileptic encephalopathy 120                                                                                         |
+| DOID:0051090 | developmental and epileptic encephalopathy 121                                                                                         |
+| DOID:0051091 | developmental and epileptic encephalopathy 122                                                                                         |
+| DOID:0070717 | developmental delay with sleep apnea                                                                                                   |
+| DOID:0070712 | developmental delay with variable cardiac and renal congenital anomalies and dysmorphic facies                                         |
+| DOID:0070723 | dyschromatosis, ichthyosis, deafness, and atopic disease                                                                               |
+| DOID:0070744 | early childhood-onset progressive leukodystrophy                                                                                       |
+| DOID:0070806 | early-childhood-onset neurodegeneration with retinitis pigmentosa, sensorineural hearing loss, and demyelinating peripheral neuropathy |
+| DOID:0070745 | early-onset progressive encephalopathy with brain atrophy and spasticity                                                               |
+| DOID:0070734 | episodic mitochondrial myopathy with optic atrophy and reversible leukoencephalopathy                                                  |
+| DOID:0070732 | familial juvenile hyperuricemic nephropathy 3                                                                                          |
+| DOID:0070771 | gingival fibromatosis 1                                                                                                                |
+| DOID:0070772 | gingival fibromatosis 2                                                                                                                |
+| DOID:0070773 | gingival fibromatosis 3                                                                                                                |
+| DOID:0070774 | gingival fibromatosis 4                                                                                                                |
+| DOID:0070775 | gingival fibromatosis 6                                                                                                                |
+| DOID:0061285 | glycogen storage disease X                                                                                                             |
+| DOID:0061286 | glycogen storage disease XI                                                                                                            |
+| DOID:0061287 | glycogen storage disease XII                                                                                                           |
+| DOID:0061288 | glycogen storage disease XIII                                                                                                          |
+| DOID:0070656 | hamartoma syndrome                                                                                                                     |
+| DOID:0070689 | hereditary sensory and autonomic neuropathy type 2D                                                                                    |
+| DOID:0070785 | hormone receptor-negative breast cancer                                                                                                |
+| DOID:0070778 | hormone receptor-negative/HER2-positive breast cancer                                                                                  |
+| DOID:0070784 | hormone receptor-positive breast cancer                                                                                                |
+| DOID:0070780 | hormone receptor-positive/HER2-negative breast cancer                                                                                  |
+| DOID:0070779 | hormone receptor-positive/HER2-positive breast cancer                                                                                  |
+| DOID:0051100 | hydroxyprolinemia                                                                                                                      |
+| DOID:0061212 | hypocholesteremia                                                                                                                      |
+| DOID:0070795 | hyposulfatemia with skeletal dysplasia                                                                                                 |
+| DOID:0070783 | idiopathic generalized epilepsy 20                                                                                                     |
+| DOID:0070720 | immune dysregulation, neurodevelopmental defects, and colitis                                                                          |
+| DOID:0070747 | immunodeficiency, developmental delay, and hypohomocysteinemia                                                                         |
+| DOID:0070797 | immunodysregulation with variable immunodeficiency and autoimmunity                                                                    |
+| DOID:0070776 | impaired intellectual development and distinctive facial features with or without cardiac defects                                      |
+| DOID:0070798 | infection-induced acute-onset axonal neuropathy                                                                                        |
+| DOID:0081464 | isolated glycolic aciduria                                                                                                             |
+| DOID:0070748 | joint laxity, short stature, and myopia                                                                                                |
+| DOID:0070799 | kyphomelic dysplasia, Itai-Ikegawa type                                                                                                |
+| DOID:0070800 | leukodystrophy and cerebellar atrophy                                                                                                  |
+| DOID:0061271 | liver glycogen storage disease                                                                                                         |
+| DOID:0070690 | lobodontia                                                                                                                             |
+| DOID:0070804 | lung-brain developmental disorder                                                                                                      |
+| DOID:0070702 | measles inclusion body encephalitis                                                                                                    |
+| DOID:0070829 | microcephaly, epilepsy, and diabetes syndrome                                                                                          |
+| DOID:0070830 | microcephaly, epilepsy, and diabetes syndrome 1                                                                                        |
+| DOID:0070831 | microcephaly, epilepsy, and diabetes syndrome 2                                                                                        |
+| DOID:0070750 | mitochondrial myopathy and ataxia                                                                                                      |
+| DOID:0070751 | mitochondrial neurodevelopmental disorder with abnormal movements and lactic acidosis, with or without seizures                        |
+| DOID:0070737 | multiple mitochondrial dysfunctions syndrome 10                                                                                        |
+| DOID:0070733 | multiple mitochondrial dysfunctions syndrome 7                                                                                         |
+| DOID:0070736 | multiple mitochondrial dysfunctions syndrome 9B                                                                                        |
+| DOID:0061272 | muscle glycogen storage disease                                                                                                        |
+| DOID:0070752 | neonatal severe encephalopathy with lactic acidosis and brain abnormalities                                                            |
+| DOID:0070719 | neurocardiorenal malformation syndrome                                                                                                 |
+| DOID:0070807 | neurodevelopmental disorder with achalasia, polyneuropathy, and alacrima                                                               |
+| DOID:0070808 | neurodevelopmental disorder with ataxia and brain abnormalities                                                                        |
+| DOID:0070753 | neurodevelopmental disorder with ataxic gait, absent speech, and decreased cortical white matter                                       |
+| DOID:0070718 | neurodevelopmental disorder with behavioral abnormalities and childhood-onset spastic paraplegia                                       |
+| DOID:0070809 | neurodevelopmental disorder with behavioral, ear, and skeletal abnormalities                                                           |
+| DOID:0070694 | neurodevelopmental disorder with congenital cardiac defects and variable renal and ocular abnormalities                                |
+| DOID:0070810 | neurodevelopmental disorder with dysmorphic facies, brain anomalies, and seizures                                                      |
+| DOID:0070713 | neurodevelopmental disorder with early-onset seizures, facial dysmorphism, and behavioral abnormalities                                |
+| DOID:0070811 | neurodevelopmental disorder with growth impairment, quadriparesis, and poor or absent speech                                           |
+| DOID:0070812 | neurodevelopmental disorder with hypotonia, poor growth, dysmorphic facies, and agammaglobulinemia                                     |
+| DOID:0081466 | neurodevelopmental disorder with intellectual, visual, and language impairment                                                         |
+| DOID:0070754 | neurodevelopmental disorder with microcephaly, ataxia, and seizures                                                                    |
+| DOID:0070832 | neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity                                                  |
+| DOID:0070755 | neurodevelopmental disorder with microcephaly, seizures, and cortical atrophy                                                          |
+| DOID:0070814 | neurodevelopmental disorder with poor growth, seizures, and brain abnormalities                                                        |
+| DOID:0070815 | neurodevelopmental disorder with poor or absent speech, dysmorphic facies, and behavioral abnormalities                                |
+| DOID:0070816 | neurodevelopmental disorder with progressive spasticity and brain abnormalities                                                        |
+| DOID:0070817 | neurodevelopmental disorder with seizures and joint laxity                                                                             |
+| DOID:0070696 | neurodevelopmental disorder with seizures, hypotonia, and variable spasticity                                                          |
+| DOID:0070818 | neurodevelopmental disorder with seizures, spastic tetraparesis, and vision impairment                                                 |
+| DOID:0081465 | neurodevelopmental disorder with spasticity, hypoplasia of the corpus callosum, and recurrent infections                               |
+| DOID:0070697 | neurodevelopmental disorder with spasticity, thin corpus callosum, and decreased brain white matter                                    |
+| DOID:0070710 | neurodevelopmental disorder with speech delay and behavioral abnormalities                                                             |
+| DOID:0070714 | neurodevelopmental disorder with structural brain abnormalities and craniofacial abnormalities                                         |
+| DOID:0070819 | neurodevelopmental disorder with thin corpus callosum, hypotonia, and absent language                                                  |
+| DOID:0070756 | neurodevelopmental disorder with variable motor and speech impairment                                                                  |
+| DOID:0070820 | neurodevelopmental disorder with white matter abnormalities and gait disturbance                                                       |
+| DOID:0070687 | normal pressure hydrocephalus 1                                                                                                        |
+| DOID:0070821 | ocular pterygium-digital keloid dysplasia syndrome                                                                                     |
+| DOID:0070822 | oculovertebral syndrome                                                                                                                |
+| DOID:146     | papilledema                                                                                                                            |
+| DOID:0070768 | peri-implant disease                                                                                                                   |
+| DOID:0070769 | peri-implant mucositis                                                                                                                 |
+| DOID:0070770 | peri-implantitis                                                                                                                       |
+| DOID:0051081 | polycystic kidney disease 8                                                                                                            |
+| DOID:0070758 | primary ciliary dyskinesia 46                                                                                                          |
+| DOID:0070760 | primary ciliary dyskinesia 47 and lissencephaly                                                                                        |
+| DOID:0070761 | primary ciliary dyskinesia 48                                                                                                          |
+| DOID:0070762 | primary ciliary dyskinesia 49                                                                                                          |
+| DOID:0070763 | primary ciliary dyskinesia 50                                                                                                          |
+| DOID:0070764 | primary ciliary dyskinesia 51                                                                                                          |
+| DOID:0070765 | primary ciliary dyskinesia 52                                                                                                          |
+| DOID:0070766 | primary ciliary dyskinesia 53                                                                                                          |
+| DOID:0070767 | primary ciliary dyskinesia 54                                                                                                          |
+| DOID:0070813 | progressive ataxia absent speech neurodevelopmental disorder with poor growth and dysmorphic facies                                    |
+| DOID:0070716 | progressive microcephaly with simplified gyral pattern and cerebellar hypoplasia                                                       |
+| DOID:0081463 | recurrent respiratory papillomatosis                                                                                                   |
+| DOID:0061298 | retinitis pigmentosa 100                                                                                                               |
+| DOID:0061299 | retinitis pigmentosa 101                                                                                                               |
+| DOID:0051093 | retinitis pigmentosa 102                                                                                                               |
+| DOID:0051094 | retinitis pigmentosa 103                                                                                                               |
+| DOID:0051095 | retinitis pigmentosa 104                                                                                                               |
+| DOID:0051096 | retinitis pigmentosa 105                                                                                                               |
+| DOID:0051097 | retinitis pigmentosa 106                                                                                                               |
+| DOID:0051098 | retinitis pigmentosa 107                                                                                                               |
+| DOID:0051101 | retinitis pigmentosa 108                                                                                                               |
+| DOID:0070701 | small fiber neuropathy                                                                                                                 |
+| DOID:0070729 | spermatogenic failure 100                                                                                                              |
+| DOID:0070730 | spermatogenic failure 101                                                                                                              |
+| DOID:0070731 | spermatogenic failure 102                                                                                                              |
+| DOID:0081470 | spermatogenic failure 103                                                                                                              |
+| DOID:0070725 | spermatogenic failure 96                                                                                                               |
+| DOID:0070726 | spermatogenic failure 97                                                                                                               |
+| DOID:0070727 | spermatogenic failure 98                                                                                                               |
+| DOID:0070728 | spermatogenic failure 99                                                                                                               |
+| DOID:0070824 | spondyloepimetaphyseal dysplasia with tracheal stenosis and ectodermal dysplasia                                                       |
+| DOID:0070825 | spondyloepiphyseal dysplasia, Holling type                                                                                             |
+| DOID:0070777 | syndromic X-linked intellectual developmental disorder, Snijders Blok type                                                             |
+| DOID:0061213 | telomere biology disorder                                                                                                              |
+| DOID:0070786 | triple positive breast cancer                                                                                                          |

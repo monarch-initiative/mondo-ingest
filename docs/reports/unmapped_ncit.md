@@ -1205,9 +1205,6 @@
 | NCIT:C206109 | Atypical Proliferating Trichilemmal Tumor                                                                                                                                   |
 | NCIT:C37268  | Atypical Small Acinar Proliferation of the Prostate Gland                                                                                                                   |
 | NCIT:C200597 | Atypical Teratoid/Rhabdoid Tumor Molecular Subtypes                                                                                                                         |
-| NCIT:C200599 | Atypical Teratoid/Rhabdoid Tumor-MYC                                                                                                                                        |
-| NCIT:C200598 | Atypical Teratoid/Rhabdoid Tumor-SHH                                                                                                                                        |
-| NCIT:C200600 | Atypical Teratoid/Rhabdoid Tumor-TYR                                                                                                                                        |
 | NCIT:C146640 | Atypical Type A Thymoma                                                                                                                                                     |
 | NCIT:C39578  | Autoimmune Lymphoproliferative Syndrome-Related Lymphoma                                                                                                                    |
 | NCIT:C215035 | Axial Skeleton Chordoma                                                                                                                                                     |
@@ -2700,7 +2697,6 @@
 | NCIT:C160974 | Cribriform Adenocarcinoma of Minor Salivary Gland                                                                                                                           |
 | NCIT:C201124 | Cribriform Comedo-Type Adenocarcinoma                                                                                                                                       |
 | NCIT:C21683  | Cribriform Mammary Carcinoma of Mouse                                                                                                                                       |
-| NCIT:C121963 | Cribriform Neuroepithelial Tumor                                                                                                                                            |
 | NCIT:C43322  | Cribriform Trichoblastoma                                                                                                                                                   |
 | NCIT:C96497  | Crohn Disease-Associated Colorectal Adenocarcinoma                                                                                                                          |
 | NCIT:C154342 | Crooke Cell Tumor                                                                                                                                                           |
@@ -2821,7 +2817,6 @@
 | NCIT:C27515  | Desmoplastic Fibroblastoma                                                                                                                                                  |
 | NCIT:C3740   | Desmoplastic Fibroma                                                                                                                                                        |
 | NCIT:C6747   | Desmoplastic Mesothelioma                                                                                                                                                   |
-| NCIT:C178507 | Desmoplastic Myxoid Tumor of the Pineal Region, SMARCB1-Mutant                                                                                                              |
 | NCIT:C48614  | Desmoplastic Neurotropic Melanoma                                                                                                                                           |
 | NCIT:C27522  | Desmoplastic Trichilemmoma                                                                                                                                                  |
 | NCIT:C136978 | Devil Facial Tumor Disease                                                                                                                                                  |
@@ -4162,7 +4157,6 @@
 | NCIT:C5444   | Intracranial Lipoma                                                                                                                                                         |
 | NCIT:C22033  | Intracranial Liposarcoma of the Mouse Nervous System                                                                                                                        |
 | NCIT:C5442   | Intracranial Melanoma                                                                                                                                                       |
-| NCIT:C186614 | Intracranial Mesenchymal Tumor, FET-CREB Fusion-Positive                                                                                                                    |
 | NCIT:C7008   | Intracranial Myeloid Sarcoma                                                                                                                                                |
 | NCIT:C4953   | Intracranial Neoplasm                                                                                                                                                       |
 | NCIT:C213452 | Intraductal Carcinoma                                                                                                                                                       |
@@ -7360,7 +7354,6 @@
 | NCIT:C39984  | Ovarian Leydig Cell Tumor, Not Otherwise Specified                                                                                                                          |
 | NCIT:C199159 | Ovarian Low Grade Endometrioid Adenocarcinoma                                                                                                                               |
 | NCIT:C40063  | Ovarian Low Grade Endometrioid Stromal Sarcoma                                                                                                                              |
-| NCIT:C105556 | Ovarian Low Grade Serous Adenocarcinoma                                                                                                                                     |
 | NCIT:C4203   | Ovarian Luteinized Thecoma                                                                                                                                                  |
 | NCIT:C126321 | Ovarian Luteinized Thecoma Associated with Sclerosing Peritonitis                                                                                                           |
 | NCIT:C223968 | Ovarian Mesonephric Carcinosarcoma                                                                                                                                          |
