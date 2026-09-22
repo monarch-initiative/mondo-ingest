@@ -906,6 +906,7 @@ MONDO:0008438	hereditary spastic paraplegia 4	MONDO:0000426	DOID:0110792	DOID:00
 MONDO:0008447	hereditary spherocytosis type 1	MONDO:0000426	DOID:0110916	DOID:0050736	autosomal dominant disease
 MONDO:0008447	hereditary spherocytosis type 1	MONDO:0006025	DOID:0110916	DOID:0050737	autosomal recessive disease
 MONDO:0008449	spina bifida	MONDO:0018075	DOID:0080016	DOID:0080074	neural tube defect
+MONDO:0008458	spinocerebellar ataxia type 2	MONDO:0004976	DOID:0060204	DOID:332	amyotrophic lateral sclerosis
 MONDO:0008464	split hand-foot malformation 1	MONDO:0000426	DOID:0090021	DOID:0050736	autosomal dominant disease
 MONDO:0008471	spondyloepiphyseal dysplasia congenita	MONDO:0000426	DOID:14789	DOID:0050736	autosomal dominant disease
 MONDO:0008473	spondyloepimetaphyseal dysplasia, Maroteaux type	MONDO:0000426	DOID:0111553	DOID:0050736	autosomal dominant disease
@@ -932,7 +933,6 @@ MONDO:0008515	syndactyly type 4	MONDO:0000426	DOID:0111818	DOID:0050736	autosoma
 MONDO:0008516	syndactyly type 5	MONDO:0000426	DOID:0111819	DOID:0050736	autosomal dominant disease
 MONDO:0008521	tarsal-carpal coalition syndrome	MONDO:0018234	DOID:0050789	DOID:1934	dysostosis
 MONDO:0008538	temporal arteritis	MONDO:0003778	DOID:13375	DOID:612	inborn error of immunity
-MONDO:0008552	platelet-type bleeding disorder 16	MONDO:0000426	DOID:0060691	DOID:0050736	autosomal dominant disease
 MONDO:0008553	platelet-type bleeding disorder 17	MONDO:0000426	DOID:0111049	DOID:0050736	autosomal dominant disease
 MONDO:0008559	thrombophilia due to thrombin defect	MONDO:0000426	DOID:0111907	DOID:0050736	autosomal dominant disease
 MONDO:0008560	thrombophilia due to activated protein C resistance	MONDO:0000426	DOID:0111902	DOID:0050736	autosomal dominant disease
@@ -1756,8 +1756,6 @@ MONDO:0011257	MPI-congenital disorder of glycosylation	MONDO:0006025	DOID:008055
 MONDO:0011258	branchiootic syndrome 1	MONDO:0000426	DOID:0061209	DOID:0050736	autosomal dominant disease
 MONDO:0011261	spondyloepiphyseal dysplasia with coronal craniosynostosis, cataracts, cleft palate, and intellectual disability	MONDO:0002254	DOID:0112294	DOID:225	syndromic disease
 MONDO:0011264	torsion dystonia 6	MONDO:0000426	DOID:0090039	DOID:0050736	autosomal dominant disease
-MONDO:0011271	rigid spine muscular dystrophy 1	MONDO:0000812	DOID:0110633	DOID:0060564	vertebral column disorder
-MONDO:0011271	rigid spine muscular dystrophy 1	MONDO:0006025	DOID:0110633	DOID:0050737	autosomal recessive disease
 MONDO:0011272	retinitis pigmentosa 25	MONDO:0006025	DOID:0110384	DOID:0050737	autosomal recessive disease
 MONDO:0011273	H syndrome	MONDO:0002254	DOID:0111278	DOID:225	syndromic disease
 MONDO:0011273	H syndrome	MONDO:0006025	DOID:0111278	DOID:0050737	autosomal recessive disease
@@ -3164,7 +3162,6 @@ MONDO:0018931	mucolipidosis type III, alpha/beta	MONDO:0006025	DOID:0080071	DOID
 MONDO:0018944	gestational trophoblastic neoplasm	MONDO:0011962	DOID:3590	DOID:1380	endometrial cancer
 MONDO:0018945	XK-related neurodegenerative disease	MONDO:0000425	DOID:0112107	DOID:0050735	X-linked disease
 MONDO:0018947	centronuclear myopathy	MONDO:0002921	DOID:14717	DOID:422	congenital structural myopathy
-MONDO:0018948	multiminicore myopathy	MONDO:0019952	DOID:0080991	DOID:0081337	congenital myopathy
 MONDO:0018950	3-methylcrotonyl-CoA carboxylase deficiency	MONDO:0003939	DOID:0050710	DOID:0080000	muscle tissue disorder
 MONDO:0018950	3-methylcrotonyl-CoA carboxylase deficiency	MONDO:0006025	DOID:0050710	DOID:0050737	autosomal recessive disease
 MONDO:0018974	paraneoplastic pemphigus	MONDO:0006594	DOID:0080852	DOID:9182	pemphigus
@@ -3276,7 +3273,7 @@ MONDO:0020727	combined oxidative phosphorylation deficiency 22	MONDO:0006025	DOI
 MONDO:0020729	autosomal recessive agammaglobulinemia 1	MONDO:0006025	DOID:0081136	DOID:0050737	autosomal recessive disease
 MONDO:0020730	carpal tunnel syndrome 1	MONDO:0000426	DOID:0070466	DOID:0050736	autosomal dominant disease
 MONDO:0020737	optic atrophy 10 with or without ataxia, intellectual disability, and seizures	MONDO:0000426	DOID:0111434	DOID:0050736	autosomal dominant disease
-MONDO:0020738	multiple benign circumferential skin creases on limbs 1	MONDO:0000426	DOID:0112242	DOID:0050736	autosomal dominant disease
+MONDO:0020738	skin creases, congenital symmetric circumferential, 1	MONDO:0000426	DOID:0112242	DOID:0050736	autosomal dominant disease
 MONDO:0020740	ectodermal dysplasia and immunodeficiency 1	MONDO:0020605	DOID:0081078	DOID:0080012	X-linked recessive disease
 MONDO:0020765	neuropathy, congenital hypomyelinating, 2	MONDO:0000426	DOID:0070679	DOID:0050736	autosomal dominant disease
 MONDO:0020766	neuropathy, congenital hypomyelinating, 3	MONDO:0006025	DOID:0070680	DOID:0050737	autosomal recessive disease
@@ -4012,6 +4009,8 @@ MONDO:0060760	intellectual developmental disorder with dysmorphic facies and beh
 MONDO:0060764	tetraamelia syndrome 1	MONDO:0006025	DOID:0112192	DOID:0050737	autosomal recessive disease
 MONDO:0100040	FOXG1 disorder	MONDO:0000426	DOID:0070657	DOID:0050736	autosomal dominant disease
 MONDO:0100058	hypervalinemia and hyperleucine-isoleucinemia	MONDO:0006025	DOID:0060950	DOID:0050737	autosomal recessive disease
+MONDO:0100100	congenital myopathy 3 with rigid spine	MONDO:0000812	DOID:0110633	DOID:0060564	vertebral column disorder
+MONDO:0100100	congenital myopathy 3 with rigid spine	MONDO:0006025	DOID:0110633	DOID:0050737	autosomal recessive disease
 MONDO:0100101	fetal akinesia deformation sequence 1	MONDO:0006025	DOID:0111377	DOID:0050737	autosomal recessive disease
 MONDO:0100102	fetal akinesia deformation sequence 2	MONDO:0006025	DOID:0111378	DOID:0050737	autosomal recessive disease
 MONDO:0100103	fetal akinesia deformation sequence 3	MONDO:0006025	DOID:0111376	DOID:0050737	autosomal recessive disease
@@ -4141,7 +4140,6 @@ MONDO:0859308	retinitis pigmentosa 95	MONDO:0006025	DOID:0061112	DOID:0050737	au
 MONDO:0859309	spastic paraplegia 88, autosomal dominant	MONDO:0000426	DOID:0070457	DOID:0050736	autosomal dominant disease
 MONDO:0859310	orofaciodigital syndrome 19	MONDO:0006025	DOID:0060960	DOID:0050737	autosomal recessive disease
 MONDO:0859314	developmental and epileptic encephalopathy 108	MONDO:0000426	DOID:0070394	DOID:0050736	autosomal dominant disease
-MONDO:0859322	myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 1	MONDO:0003939	DOID:0061183	DOID:0080000	muscle tissue disorder
 MONDO:0859322	myopathy with myalgia, increased serum creatine kinase, and with or without episodic rhabdomyolysis 1	MONDO:0006025	DOID:0061183	DOID:0050737	autosomal recessive disease
 MONDO:0859323	combined oxidative phosphorylation deficiency 56	MONDO:0006025	DOID:0070429	DOID:0050737	autosomal recessive disease
 MONDO:0859325	developmental and epileptic encephalopathy 109	MONDO:0000426	DOID:0070378	DOID:0050736	autosomal dominant disease
@@ -4169,7 +4167,6 @@ MONDO:0859478	spermatogenic failure, X-linked, 6	MONDO:0000425	DOID:0070597	DOID
 MONDO:0859514	congenital myopathy 18	MONDO:0000426	DOID:0081350	DOID:0050736	autosomal dominant disease
 MONDO:0859514	congenital myopathy 18	MONDO:0006025	DOID:0081350	DOID:0050737	autosomal recessive disease
 MONDO:0859515	congenital myopathy 10b, mild variant	MONDO:0006025	DOID:0081345	DOID:0050737	autosomal recessive disease
-MONDO:0859517	congenital myopathy 2b, severe infantile, autosomal recessive	MONDO:0006025	DOID:0081339	DOID:0050737	autosomal recessive disease
 MONDO:0859518	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	MONDO:0006025	DOID:0070403	DOID:0050737	autosomal recessive disease
 MONDO:0859520	mitochondrial complex IV deficiency, nuclear type 23	MONDO:0006025	DOID:0070485	DOID:0050737	autosomal recessive disease
 MONDO:0859522	spermatogenic failure 81	MONDO:0006025	DOID:0070580	DOID:0050737	autosomal recessive disease

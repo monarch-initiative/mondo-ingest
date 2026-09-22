@@ -93,7 +93,6 @@ MONDO:0003187	Bartholin gland adenoid cystic carcinoma	MONDO:0002829	NCIT:C40295
 MONDO:0003196	appendix carcinoma	MONDO:0006181	NCIT:C9330	NCIT:C96963	digestive system carcinoma
 MONDO:0003199	anal carcinoma	MONDO:0006181	NCIT:C9291	NCIT:C96963	digestive system carcinoma
 MONDO:0003208	breast secretory carcinoma	MONDO:0006256	NCIT:C4189	NCIT:C9245	invasive breast carcinoma
-MONDO:0003210	intrahepatic cholangiocarcinoma	MONDO:0018531	NCIT:C35417	NCIT:C7927	carcinoma of liver and intrahepatic biliary tract
 MONDO:0003223	meninges hemangiopericytoma	MONDO:0016743	NCIT:C4660	NCIT:C3229	tumor of meninges
 MONDO:0003249	pineal gland cancer	MONDO:0002071	NCIT:C3573	NCIT:C4964	supratentorial cancer
 MONDO:0003250	benign granular cell tumor	MONDO:0000648	NCIT:C3252	NCIT:C4789	nervous system benign neoplasm
@@ -146,6 +145,7 @@ MONDO:0003646	rectum neuroendocrine neoplasm	MONDO:0002165	NCIT:C5698	NCIT:C3350
 MONDO:0003680	periosteal chondrosarcoma	MONDO:0008977	NCIT:C7357	NCIT:C2946	chondrosarcoma
 MONDO:0003684	clear cell chondrosarcoma	MONDO:0008977	NCIT:C6475	NCIT:C2946	chondrosarcoma
 MONDO:0003688	well differentiated papillary mesothelioma	MONDO:0006856	NCIT:C7635	NCIT:C3786	mesothelial neoplasm
+MONDO:0003707	distal cholangiocarcinoma	MONDO:0003090	NCIT:C7109	NCIT:C3860	extrahepatic bile duct carcinoma
 MONDO:0003719	renal pelvis neoplasm	MONDO:0021066	NCIT:C8404	NCIT:C192666	urinary system neoplasm
 MONDO:0003746	ciliary body spindle cell melanoma	MONDO:0003744	NCIT:C6117	NCIT:C7986	spindle cell intraocular melanoma
 MONDO:0003761	leptomeningeal melanoma	MONDO:0006320	NCIT:C5317	NCIT:C8711	non-cutaneous melanoma
@@ -166,7 +166,6 @@ MONDO:0004005	rete ovarii adenoma	MONDO:0004972	NCIT:C40018	NCIT:C2855	adenoma
 MONDO:0004005	rete ovarii adenoma	MONDO:0036976	NCIT:C40018	NCIT:C4092	benign epithelial neoplasm
 MONDO:0004041	urothelial papilloma	MONDO:0002363	NCIT:C3842	NCIT:C7440	papilloma
 MONDO:0004066	intermediate cell type ciliary body melanoma	MONDO:0004062	NCIT:C6118	NCIT:C7989	intermediate cell type uveal melanoma
-MONDO:0004078	mucinous intrahepatic cholangiocarcinoma	MONDO:0004957	NCIT:C41618	NCIT:C26712	mucinous adenocarcinoma
 MONDO:0004079	lung mucous gland adenoma	MONDO:0003422	NCIT:C5664	NCIT:C4455	lung adenoma
 MONDO:0004095	B-cell neoplasm	MONDO:0005157	NCIT:C27907	NCIT:C7065	lymphoid neoplasm
 MONDO:0004131	anal verrucous carcinoma	MONDO:0006006	NCIT:C7470	NCIT:C3781	verrucous carcinoma
@@ -176,7 +175,6 @@ MONDO:0004173	adenocarcinoma of skene gland origin	MONDO:0004970	NCIT:C39863	NCI
 MONDO:0004230	adenomatoid tumor	MONDO:0006856	NCIT:C3762	NCIT:C3786	mesothelial neoplasm
 MONDO:0004311	carcinoma of Cowper glands	MONDO:0004197	NCIT:C39864	NCIT:C39867	male urethral cancer
 MONDO:0004333	pancreatic ACTH-producing neuroendocrine tumor	MONDO:0019954	NCIT:C27466	NCIT:C27720	pancreatic neuroendocrine tumor
-MONDO:0004346	signet ring cell intrahepatic cholangiocarcinoma	MONDO:0005092	NCIT:C41619	NCIT:C3774	signet ring cell carcinoma
 MONDO:0004412	malignant spiradenoma	MONDO:0005524	NCIT:C5117	NCIT:C6938	sweat gland carcinoma
 MONDO:0004420	breast malignant eccrine spiradenoma	MONDO:0007254	NCIT:C5180	NCIT:C9335	breast cancer
 MONDO:0004462	extrahepatic bile duct cystadenoma	MONDO:0021385	NCIT:C5851	NCIT:C4441	extrahepatic bile duct neoplasm
@@ -184,7 +182,6 @@ MONDO:0004465	periampullary adenocarcinoma	MONDO:0006186	NCIT:C27322	NCIT:C7889	
 MONDO:0004473	epiglottis cancer	MONDO:0001724	NCIT:C4836	NCIT:C3545	supraglottis cancer
 MONDO:0004477	adrenal gland ganglioneuroblastoma	MONDO:0003606	NCIT:C7646	NCIT:C4396	adrenal medulla cancer
 MONDO:0004491	uterine corpus choriocarcinoma	MONDO:0006003	NCIT:C27246	NCIT:C61574	uterine corpus cancer
-MONDO:0004509	intrahepatic biliary papillomatosis	MONDO:0024477	NCIT:C7125	NCIT:C7106	liver and intrahepatic bile duct neoplasm
 MONDO:0004555	kidney angiomyolipoma	MONDO:0021163	NCIT:C3888	NCIT:C3150	kidney neoplasm
 MONDO:0004643	myeloid leukemia	MONDO:0005170	NCIT:C3172	NCIT:C9290	myeloid neoplasm
 MONDO:0004643	myeloid leukemia	MONDO:0021138	NCIT:C3172	NCIT:C35501	bone marrow cancer
@@ -322,7 +319,6 @@ MONDO:0018744	oligodendroglial tumor	MONDO:0021042	NCIT:C6960	NCIT:C3059	glioma
 MONDO:0018935	hairy cell leukemia	MONDO:0001014	NCIT:C7402	NCIT:C3483	chronic leukemia
 MONDO:0018935	hairy cell leukemia	MONDO:0004949	NCIT:C7402	NCIT:C27910	neoplasm of mature B-cells
 MONDO:0018935	hairy cell leukemia	MONDO:0005402	NCIT:C7402	NCIT:C7539	lymphoid leukemia
-MONDO:0019087	cholangiocarcinoma	MONDO:0003193	NCIT:C4436	NCIT:C27813	bile duct adenocarcinoma
 MONDO:0019460	acute leukemia of ambiguous lineage	MONDO:0010643	NCIT:C7464	NCIT:C9300	acute leukemia
 MONDO:0019464	heavy chain disease	MONDO:0004949	NCIT:C3082	NCIT:C27910	neoplasm of mature B-cells
 MONDO:0019468	T-cell prolymphocytic leukemia	MONDO:0005169	NCIT:C4752	NCIT:C27909	neoplasm of mature T-cells or NK-cells
@@ -381,7 +377,6 @@ MONDO:0044740	salivary gland squamous cell carcinoma	MONDO:0010150	NCIT:C7991	NC
 MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	MONDO:0005062	NCIT:C7258	NCIT:C3208	lymphoma
 MONDO:0044789	digital papillary eccrine carcinoma	MONDO:0002512	NCIT:C27534	NCIT:C2853	papillary adenocarcinoma
 MONDO:0044789	digital papillary eccrine carcinoma	MONDO:0024240	NCIT:C27534	NCIT:C27255	eccrine carcinoma
-MONDO:0044791	combined hepatocellular carcinoma and cholangiocarcinoma	MONDO:0018531	NCIT:C3828	NCIT:C7927	carcinoma of liver and intrahepatic biliary tract
 MONDO:0044794	benign melanocytic skin nevus	MONDO:0021440	NCIT:C7571	NCIT:C2896	benign neoplasm of skin
 MONDO:0044794	benign melanocytic skin nevus	MONDO:0021583	NCIT:C7571	NCIT:C7161	melanocytic skin neoplasm
 MONDO:0044881	hematopoietic and lymphoid cell neoplasm	MONDO:0005570	NCIT:C27134	NCIT:C26323	hematologic disorder

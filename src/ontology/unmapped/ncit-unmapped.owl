@@ -161,22 +161,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C105556 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105556">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156482"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156484"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181162"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C212117"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C213448"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C215409"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4741"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7062"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8505"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C107671 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C107671">
@@ -3255,14 +3239,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3263"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7062"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7390"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C121963 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C121963">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C6990"/>
     </owl:Class>
     
 
@@ -24315,8 +24291,16 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C156455 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C156455">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105556"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C153615"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156482"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156484"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181162"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C212117"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C213448"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C215409"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4741"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7062"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8505"/>
     </owl:Class>
     
 
@@ -42550,15 +42534,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C178507 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C178507">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178506"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3397"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C178517 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C178517">
@@ -42911,8 +42886,16 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C178679 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C178679">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105556"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156482"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156484"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C171015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181162"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C212117"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C213448"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C215409"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4741"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7062"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8505"/>
     </owl:Class>
     
 
@@ -47502,18 +47485,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C6588"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C6990"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7062"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C186614 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C186614">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C102871"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27042"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27574"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3263"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4953"/>
     </owl:Class>
     
 
@@ -57685,30 +57656,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C200597">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C6990"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7062"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C200598 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C200598">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C200597"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C200599 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C200599">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C200597"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C200600 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C200600">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C200597"/>
     </owl:Class>
     
 
@@ -72454,8 +72401,16 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C215219 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C215219">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105556"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156482"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156484"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160782"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181162"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C212117"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C213448"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C215409"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4741"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7062"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8505"/>
     </owl:Class>
     
 
@@ -72463,8 +72418,16 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C215220 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C215220">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105556"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156482"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C156484"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160781"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C181162"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C212117"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C213448"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C215409"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4741"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7062"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8505"/>
     </owl:Class>
     
 

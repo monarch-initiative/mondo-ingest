@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2026-08-17/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2026-09-15/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 31 |
-| Axioms | 137282 |
-| Logical axioms | 17352 |
-| Classes | 13925 |
+| Axioms | 137676 |
+| Logical axioms | 17405 |
+| Classes | 13960 |
 | Object properties | 2 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,12 +32,12 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 105970 |
+| AnnotationAssertion | 106276 |
 | EquivalentClasses | 3 |
 | SubAnnotationPropertyOf | 3 |
 | DisjointClasses | 26 |
-| Declaration | 13957 |
-| SubClassOf | 17323 |
+| Declaration | 13992 |
+| SubClassOf | 17376 |
 
 
 #### Entity namespaces: distinct entity count by namespace
@@ -47,7 +47,7 @@
 | DISDRIV | 2 |
 | oboInOwl | 13 |
 | owl | 2 |
-| DOID | 12248 |
+| DOID | 12283 |
 | HP | 127 |
 | xsd | 1 |
 | CL | 61 |
@@ -74,7 +74,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 48793 |
+| Class | 48934 |
 | ObjectIntersectionOf | 3 |
 
 
