@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2026-09-15/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2026-09-22/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 31 |
-| Axioms | 137676 |
+| Axioms | 137684 |
 | Logical axioms | 17405 |
-| Classes | 13960 |
+| Classes | 13962 |
 | Object properties | 2 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,11 +32,11 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 106276 |
+| AnnotationAssertion | 106282 |
 | EquivalentClasses | 3 |
 | SubAnnotationPropertyOf | 3 |
 | DisjointClasses | 26 |
-| Declaration | 13992 |
+| Declaration | 13994 |
 | SubClassOf | 17376 |
 
 
@@ -65,7 +65,7 @@
 | IAO | 2 |
 | UBERON | 419 |
 | SO | 20 |
-| obo | 263 |
+| obo | 265 |
 | GENO | 11 |
 | dc | 1 |
 
@@ -74,7 +74,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 48934 |
+| Class | 48936 |
 | ObjectIntersectionOf | 3 |
 
 

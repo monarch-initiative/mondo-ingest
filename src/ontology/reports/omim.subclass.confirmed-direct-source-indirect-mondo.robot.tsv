@@ -45,7 +45,6 @@ MONDO:0007794	hypogonadotropic hypogonadism 7 with or without anosmia	MONDO:0018
 MONDO:0007844	hypogonadotropic hypogonadism 2 with or without anosmia	MONDO:0018555	OMIM:147950	OMIMPS:147950	hypogonadotropic hypogonadism
 MONDO:0007933	vitelliform macular dystrophy 1	MONDO:0000390	OMIM:153840	OMIMPS:153840	vitelliform macular dystrophy
 MONDO:0007937	renal hypomagnesemia 2	MONDO:0018100	OMIM:154020	OMIMPS:602014	familial primary hypomagnesemia
-MONDO:0008002	mirror movements 1	MONDO:0016558	OMIM:157600	OMIMPS:157600	familial congenital mirror movements
 MONDO:0008024	neuronopathy, distal hereditary motor, type 7A	MONDO:0015362	OMIM:158580	OMIMPS:182960	neuronopathy, distal hereditary motor, autosomal dominant
 MONDO:0008025	neuronopathy, distal hereditary motor, type 2A	MONDO:0015362	OMIM:158590	OMIMPS:182960	neuronopathy, distal hereditary motor, autosomal dominant
 MONDO:0008044	myoclonic dystonia 11	MONDO:0044807	OMIM:159900	OMIMPS:128100	inherited dystonia
@@ -271,6 +270,7 @@ MONDO:0011613	autosomal recessive early-onset Parkinson disease 6	MONDO:0005180	
 MONDO:0011633	Charcot-Marie-Tooth disease axonal type 2C	MONDO:0015626	OMIM:606071	OMIMPS:118220	Charcot-Marie-Tooth disease
 MONDO:0011653	thyroid cancer, nonmedullary, 3	MONDO:0017896	OMIM:606240	OMIMPS:188550	familial nonmedullary thyroid carcinoma
 MONDO:0011658	autosomal recessive early-onset Parkinson disease 7	MONDO:0005180	OMIM:606324	OMIMPS:168600	Parkinson disease
+MONDO:0011670	Ehlers-Danlos syndrome due to tenascin-X deficiency	MONDO:0020066	OMIM:606408	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0011674	Charcot-Marie-Tooth disease dominant intermediate B	MONDO:0015626	OMIM:606482	OMIMPS:118220	Charcot-Marie-Tooth disease
 MONDO:0011675	Charcot-Marie-Tooth Disease, axonal, type 2GG	MONDO:0015626	OMIM:606483	OMIMPS:118220	Charcot-Marie-Tooth disease
 MONDO:0011680	autosomal recessive congenital ichthyosis 3	MONDO:0017265	OMIM:606545	OMIMPS:242300	autosomal recessive congenital ichthyosis
@@ -414,7 +414,7 @@ MONDO:0012860	thrombophilia due to protein C deficiency, autosomal recessive	MON
 MONDO:0012867	hereditary spastic paraplegia 38	MONDO:0019064	OMIM:612335	OMIMPS:303350	hereditary spastic paraplegia
 MONDO:0012868	thrombophilia due to protein S deficiency, autosomal dominant	MONDO:0100240	OMIM:612336	OMIMPS:188050	inherited thrombophilia
 MONDO:0012869	intellectual disability, autosomal dominant 22	MONDO:0100172	OMIM:612337	OMIMPS:156200	intellectual disability, autosomal dominant
-MONDO:0012873	Ehlers-Danlos syndrome, spondylocheirodysplastic type	MONDO:0020066	OMIM:612350	OMIMPS:130000	Ehlers-Danlos syndrome
+MONDO:0012873	Ehlers-Danlos syndrome, spondylodysplastic type, 3	MONDO:0020066	OMIM:612350	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0012874	porokeratosis 6, disseminated superficial actinic type	MONDO:0006602	OMIM:612353	OMIMPS:175800	porokeratosis
 MONDO:0012880	hypogonadotropic hypogonadism 5 with or without anosmia	MONDO:0018555	OMIM:612370	OMIMPS:147950	hypogonadotropic hypogonadism
 MONDO:0012890	pontocerebellar hypoplasia type 2B	MONDO:0020135	OMIM:612389	OMIMPS:607596	pontocerebellar hypoplasia
@@ -539,6 +539,7 @@ MONDO:0013758	Charcot-Marie-Tooth disease dominant intermediate E	MONDO:0015626	
 MONDO:0013776	spastic ataxia 5	MONDO:0017845	OMIM:614487	OMIMPS:108600	spastic ataxia
 MONDO:0013788	Usher syndrome type 3B	MONDO:0019501	OMIM:614504	OMIMPS:276900	Usher syndrome
 MONDO:0013791	thrombophilia due to protein S deficiency, autosomal recessive	MONDO:0100240	OMIM:614514	OMIMPS:188050	inherited thrombophilia
+MONDO:0013800	Ehlers-Danlos syndrome, kyphoscoliotic type, 2	MONDO:0020066	OMIM:614557	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0013801	developmental and epileptic encephalopathy, 13	MONDO:0100062	OMIM:614558	OMIMPS:308350	genetic developmental and epileptic encephalopathy
 MONDO:0013813	dystonia 21	MONDO:0044807	OMIM:614588	OMIMPS:128100	inherited dystonia
 MONDO:0013848	dilated cardiomyopathy 2B	MONDO:0016333	OMIM:614672	OMIMPS:115200	familial dilated cardiomyopathy
@@ -783,12 +784,13 @@ MONDO:0014983	congenital myasthenic syndrome 21	MONDO:0018940	OMIM:617239	OMIMPS
 MONDO:0015008	amelogenesis imperfecta, type 1J	MONDO:0019507	OMIM:617297	OMIMPS:104500	amelogenesis imperfecta
 MONDO:0015023	MYPN-related myopathy	MONDO:0019952	OMIM:617336	OMIMPS:117000	congenital myopathy
 MONDO:0015353	neuronopathy, distal hereditary motor, type 5A	MONDO:0015362	OMIM:600794	OMIMPS:182960	neuronopathy, distal hereditary motor, autosomal dominant
+MONDO:0016002	Ehlers-Danlos syndrome, kyphoscoliotic type 1	MONDO:0020066	OMIM:225400	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0017694	glycogen storage disease due to acid maltase deficiency, infantile onset	MONDO:0002412	OMIM:232300	OMIMPS:232200	disorder of glycogen metabolism
 MONDO:0018163	autosomal recessive cutis laxa type 2A	MONDO:0100237	OMIM:219200	OMIMPS:123700	inherited cutis laxa
 MONDO:0018422	autosomal recessive spastic paraplegia type 70	MONDO:0019064	OMIM:620323	OMIMPS:303350	hereditary spastic paraplegia
 MONDO:0019567	Ehlers-Danlos syndrome, classic type, 1	MONDO:0020066	OMIM:130000	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0019568	Ehlers-Danlos syndrome, classic type, 2	MONDO:0020066	OMIM:130010	OMIMPS:130000	Ehlers-Danlos syndrome
-MONDO:0020521	Ehlers-Danlos syndrome type 7A	MONDO:0020066	OMIM:130060	OMIMPS:130000	Ehlers-Danlos syndrome
+MONDO:0020521	Ehlers-Danlos syndrome arthrochalasia type 1	MONDO:0020066	OMIM:130060	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0020681	Ehlers-Danlos syndrome, musculocontractural type 1	MONDO:0020066	OMIM:601776	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0020682	Ehlers-Danlos syndrome, spondylodysplastic type, 1	MONDO:0020066	OMIM:130070	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0020684	Ehlers-Danlos syndrome, periodontal type 1	MONDO:0020066	OMIM:130080	OMIMPS:130000	Ehlers-Danlos syndrome
@@ -875,6 +877,7 @@ MONDO:0044721	severe combined immunodeficiency due to LAT deficiency	MONDO:00210
 MONDO:0044725	combined immunodeficiency due to GINS1 deficiency	MONDO:0021094	OMIM:617827	OMIMPS:300755	immunodeficiency disease
 MONDO:0049223	osteogenesis imperfecta, type 19	MONDO:0019019	OMIM:301014	OMIMPS:166200	osteogenesis imperfecta
 MONDO:0054549	peroxisome biogenesis disorder 10B	MONDO:0019234	OMIM:617370	OMIMPS:214100	peroxisome biogenesis disorder
+MONDO:0054813	Ehlers-Danlos syndrome, classic-like, 2	MONDO:0020066	OMIM:618000	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0054833	Charcot-Marie-tooth disease, axonal, type 2DD	MONDO:0015626	OMIM:618036	OMIMPS:118220	Charcot-Marie-Tooth disease
 MONDO:0054837	intellectual disability, autosomal dominant 57	MONDO:0100172	OMIM:618050	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0054842	polycystic kidney disease 6 with or without polycystic liver disease	MONDO:0020642	OMIM:618061	OMIMPS:173900	polycystic kidney disease
@@ -900,6 +903,7 @@ MONDO:0800341	congenital myopathy 4A, autosomal dominant	MONDO:0019952	OMIM:2553
 MONDO:0859358	cardiomyopathy, dilated, 2H	MONDO:0016333	OMIM:620203	OMIMPS:115200	familial dilated cardiomyopathy
 MONDO:0859380	episodic kinesigenic dyskinesia 3	MONDO:0044807	OMIM:620245	OMIMPS:128100	inherited dystonia
 MONDO:0859526	immunodeficiency 109 with lymphoproliferation	MONDO:0021094	OMIM:620282	OMIMPS:300755	immunodeficiency disease
+MONDO:0859529	amyotrophic lateral sclerosis 27, juvenile	MONDO:0005144	OMIM:620285	OMIMPS:105400	familial amyotrophic lateral sclerosis
 MONDO:0957248	developmental and epileptic encephalopathy, 31B	MONDO:0100062	OMIM:620352	OMIMPS:308350	genetic developmental and epileptic encephalopathy
 MONDO:0957536	intellectual developmental disorder, autosomal dominant 73	MONDO:0100172	OMIM:620450	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0957788	spastic paraplegia 18a, autosomal dominant	MONDO:0019064	OMIM:620512	OMIMPS:303350	hereditary spastic paraplegia
@@ -909,6 +913,7 @@ MONDO:0958199	myoclonic epilepsy of Lafora 1	MONDO:0020074	OMIM:254780	OMIMPS:25
 MONDO:0958335	cutis laxa, autosomal recessive, type 1d	MONDO:0100237	OMIM:620780	OMIMPS:123700	inherited cutis laxa
 MONDO:0970994	immunodeficiency 120	MONDO:0021094	OMIM:620836	OMIMPS:300755	immunodeficiency disease
 MONDO:0971005	MHC class II deficiency 1	MONDO:0031520	OMIM:209920	OMIMPS:601457	familial severe combined immunodeficiency
+MONDO:0971044	Ehlers-Danlos syndrome, classic-like, 3	MONDO:0020066	OMIM:620865	OMIMPS:130000	Ehlers-Danlos syndrome
 MONDO:0971149	spastic paraplegia 30B, autosomal recessive	MONDO:0019064	OMIM:620607	OMIMPS:303350	hereditary spastic paraplegia
 MONDO:0971178	polycystic kidney disease 8	MONDO:0020642	OMIM:620903	OMIMPS:173900	polycystic kidney disease
 MONDO:0976229	immunodeficiency 131	MONDO:0021094	OMIM:621097	OMIMPS:300755	immunodeficiency disease
