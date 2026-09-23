@@ -4092,7 +4092,6 @@
 | NCIT:C27223  | Infection-Related Malignant Neoplasm                                                                                                                                        |
 | NCIT:C27224  | Infection-Related Neoplasm                                                                                                                                                  |
 | NCIT:C21700  | Infectious Granulomatous Prostatitis of Mouse                                                                                                                               |
-| NCIT:C5372   | Inferior Vena Cava Leiomyosarcoma                                                                                                                                           |
 | NCIT:C121131 | Infiltrating Intramuscular Lipoma                                                                                                                                           |
 | NCIT:C6158   | Infiltrating Ureter Urothelial Carcinoma with Mixed Differentiation                                                                                                         |
 | NCIT:C174448 | Inflamed Juvenile Conjunctival Nevus                                                                                                                                        |

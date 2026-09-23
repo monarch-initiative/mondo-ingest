@@ -12,6 +12,7 @@
 | Orphanet:409980 | >1 / 1000                                                                                             |
 | Orphanet:2346   | Angioosteohypertrophic syndrome                                                                       |
 | Orphanet:698945 | Autoimmune heparin-induced thrombocytopenia                                                           |
+| Orphanet:220443 | Bleeding diathesis due to thromboxane synthesis deficiency                                            |
 | Orphanet:699596 | Combined immunodeficiency-hypogammaglobulinemia-cancer predisposing syndrome due to AIOLOS deficiency |
 | Orphanet:699593 | Combined immunodeficiency-lymphopenia-cancer predisposing syndrome due to AIOLOS deficiency           |
 | Orphanet:696881 | Common variable immunodeficiency phenotype due to CD19/CD81 deficiency                                |
