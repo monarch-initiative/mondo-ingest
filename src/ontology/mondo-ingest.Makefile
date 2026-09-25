@@ -919,8 +919,8 @@ $(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv: $(TMPDIR)/malacards.tsv
 # Disorder Mechanisms Knowledge Base (https://dismech.monarchinitiative.org).
 # dismech publishes a stable "Mondo EMC" export (mondo_id, mondo_label, dismech_url,
 # dismech_definition, dismech_exact_synonyms, dismech_pmids). We keep only mondo_id +
-# dismech_url and emit a curated_content_resource linkout tagged source="MONDO:DisMech",
-# exactly as MalaCards/ClinGen linkouts are handled.
+# dismech_url and emit an rdfs:seeAlso linkout tagged source="MONDO:DisMech",
+# handled like the MalaCards/ClinGen EMC linkouts (which use curated_content_resource).
 # Preferred source once dismech's release workflow (mondo-emc-release.yaml) has run against
 # a published release:
 #   https://github.com/monarch-initiative/dismech/releases/latest/download/mondo_emc.tsv
@@ -933,7 +933,7 @@ $(TMPDIR)/dismech-emc.tsv:
 $(EXTERNAL_CONTENT_DIR)/mondo-dismech.robot.tsv: $(TMPDIR)/dismech-emc.tsv
 	awk -F'\t' 'BEGIN { OFS="\t" } \
 		NR==1 { print "mondo_id", "dismech_url", "source"; \
-		        print "ID", "AT obo:mondo#curated_content_resource^^xsd:anyURI", ">A oboInOwl:source"; next } \
+		        print "ID", "AT rdfs:seeAlso^^xsd:anyURI", ">A oboInOwl:source"; next } \
 		{ print $$1, $$3, "MONDO:DisMech" }' $< > $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-dismech.robot.tsv
 
