@@ -203,6 +203,47 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt $(TMPDIR)
 		annotate --ontology-iri $(URIBASE)/mondo/sources/icd10cm.owl --version-iri $(URIBASE)/mondo/sources/$(TODAY)/icd10cm.owl -o $@; fi
 
 ####################################
+### External downloads #############
+####################################
+# Helpers for files that are fetched from outside this repository and then
+# committed to it. (These are the ICD10WHO release bundle immediately below
+# and the externally managed content templates further down).
+#
+# To download an external file that will be tracked in version control, add
+# a target with $(REFRESH_DOWNLOADS) as a prerequisite, and then use one of
+# the following functions as a recipe:
+#
+# For ROBOT templates with `mondo_id` in the first column, use:
+#   $(call download_robot_template,URL)
+#
+# For any other file, use:
+#   $(call download_external,URL)
+#
+# If files already exist, they are only re-downloaded if $(MIR) is set
+# to `true`, and they are only replaced if they differ from the committed
+# version. (Both of these mirror the functionality of ODK).
+
+ifeq ($(MIR),true)
+REFRESH_DOWNLOADS = .FORCE
+endif
+
+# Download URL to $@.tmp and move it to $@ only if it differs from $@.
+define download_external
+wget -nv "$(1)" -O $@.tmp
+if cmp -s $@.tmp $@; then echo "$@ unchanged"; rm -f $@.tmp; else mv $@.tmp $@; fi
+endef
+
+# Same as above, but ensure that this file is a table whose first column has
+# the exact title `mondo_id`. This is especially to guard against TSV downloads
+# from Google Sheets, which responds with a 200 status code and an HTML document
+# when there is an error.
+define download_robot_template
+wget -nv "$(1)" -O $@.tmp
+head -1 $@.tmp | cut -f1 | grep -qx mondo_id || { echo "$@: download from $(1) is not a ROBOT template"; rm -f $@.tmp; exit 1; }
+if cmp -s $@.tmp $@; then echo "$@ unchanged"; rm -f $@.tmp; else mv $@.tmp $@; fi
+endef
+
+####################################
 ### ICD10WHO external release ######
 ####################################
 # Preprocessing lives in the icd10who source repo; mondo-ingest wget's the release bundle.
@@ -219,8 +260,8 @@ ICD10WHO_DOWNLOADS += $(COMPONENTSDIR)/icd10who.owl \
 		      $(TMPDIR)/mirror-icd10who.owl
 endif
 
-$(ICD10WHO_DOWNLOADS): | $(REPORTDIR) $(COMPONENTSDIR) $(TMPDIR) $(MAPPINGSDIR)/
-	wget -nv $(ICD10WHO_RELEASE_BASE)/$(@F) -O $@.tmp && mv $@.tmp $@
+$(ICD10WHO_DOWNLOADS): $(REFRESH_DOWNLOADS) | $(REPORTDIR) $(COMPONENTSDIR) $(TMPDIR) $(MAPPINGSDIR)/
+	$(call download_external,$(ICD10WHO_RELEASE_BASE)/$(@F))
 .PRECIOUS: $(TMPDIR)/mirror-icd10who.owl
 
 $(COMPONENTSDIR)/icd11foundation.owl: $(TMPDIR)/icd11foundation_relevant_signature.txt $(TMPDIR)/mirror-icd11foundation.owl
@@ -746,7 +787,10 @@ $(TMPDIR)/mondo-labels.tsv: $(TMPDIR)/mondo-ingest.db
 ## Externally managed content ####
 ##################################
 
-EXTERNAL_CONTENT_DIR=external
+EXTERNAL_CONTENT_DIR ?= external
+
+$(EXTERNAL_CONTENT_DIR):
+	mkdir -p $@
 
 EXTERNAL_FILES = \
 	mondo-clingen \
@@ -809,8 +853,8 @@ $(EXTERNAL_CONTENT_DIR)/%.robot.owl: $(EXTERNAL_CONTENT_DIR)/%.robot.tsv
 
 # Managed here: https://docs.google.com/spreadsheets/d/1W2wDcnU4Nw0OApe3AvHtXSaOlA4RtmG5/edit?gid=1163320745#gid=1163320745
 
-$(EXTERNAL_CONTENT_DIR)/gard.robot.tsv:
-	wget "https://docs.google.com/spreadsheets/d/e/2PACX-1vTGh0fO79utQPPmjSykHatfQMc6P_bnkqPfiqHJDdmqWJk7H1pSm8OkrJclJT9SiA/pub?gid=1723191699&single=true&output=tsv" -O $@
+$(EXTERNAL_CONTENT_DIR)/gard.robot.tsv: $(REFRESH_DOWNLOADS) | $(EXTERNAL_CONTENT_DIR)
+	$(call download_robot_template,https://docs.google.com/spreadsheets/d/e/2PACX-1vTGh0fO79utQPPmjSykHatfQMc6P_bnkqPfiqHJDdmqWJk7H1pSm8OkrJclJT9SiA/pub?gid=1723191699&single=true&output=tsv)
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/gard.robot.tsv
 
 ###### NORD #########
@@ -818,8 +862,7 @@ $(EXTERNAL_CONTENT_DIR)/gard.robot.tsv:
 $(TMPDIR)/nord.tsv:
 	wget "https://rdbdev.wpengine.com/wp-content/uploads/mondo-export/rare_export.tsv" -O $@
 
-$(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json
-	mkdir -p $(EXTERNAL_CONTENT_DIR)
+$(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-content-robot-headers.json | $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/add-robot-template-header.py $^ | \
 	awk 'NR==1 { gsub(/synonym_type/, "preferred_label_for_community") } \
 	     NR==2 { gsub(/>A oboInOwl:hasSynonymType/, ">A OMO:0002001") } \
@@ -832,8 +875,7 @@ $(EXTERNAL_CONTENT_DIR)/nord.robot.tsv: $(TMPDIR)/nord.tsv config/external-conte
 $(TMPDIR)/ordo-subsets.tsv: $(TMPDIR)/mirror-ordo.owl
 	$(ROBOT) query -i $< --query ../sparql/select-ordo-subsets.sparql $@
 
-$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: $(TMPDIR)/ordo-subsets.tsv $(TMPDIR)/mondo.sssom.tsv
-	mkdir -p $(EXTERNAL_CONTENT_DIR)
+$(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: $(TMPDIR)/ordo-subsets.tsv $(TMPDIR)/mondo.sssom.tsv | $(EXTERNAL_CONTENT_DIR)
 	python3 $(SCRIPTSDIR)/ordo_subsets.py \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
 	--class-subsets-tsv-path $(TMPDIR)/ordo-subsets.tsv \
@@ -846,8 +888,7 @@ $(EXTERNAL_CONTENT_DIR)/ordo-subsets.robot.tsv: $(TMPDIR)/ordo-subsets.tsv $(TMP
 $(TMPDIR)/ncit-rare.tsv: $(TMPDIR)/mirror-ncit.owl
 	$(ROBOT) query -i $< --query ../sparql/select-ncit-rare.sparql $@
 
-$(EXTERNAL_CONTENT_DIR)/ncit-rare.robot.tsv: $(TMPDIR)/ncit-rare.tsv $(TMPDIR)/mondo.sssom.tsv
-	mkdir -p $(EXTERNAL_CONTENT_DIR)
+$(EXTERNAL_CONTENT_DIR)/ncit-rare.robot.tsv: $(TMPDIR)/ncit-rare.tsv $(TMPDIR)/mondo.sssom.tsv | $(EXTERNAL_CONTENT_DIR)
 	python3 $(SCRIPTSDIR)/ncit_rare.py \
 	--ncit-rare-tsv-path $(TMPDIR)/ncit-rare.tsv \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
@@ -860,8 +901,7 @@ $(EXTERNAL_CONTENT_DIR)/ncit-rare.robot.tsv: $(TMPDIR)/ncit-rare.tsv $(TMPDIR)/m
 $(TMPDIR)/doid-rare.tsv: $(TMPDIR)/mirror-doid.owl
 	$(ROBOT) query -i $< --query ../sparql/select-doid-rare.sparql $@
 
-$(EXTERNAL_CONTENT_DIR)/doid-rare.robot.tsv: $(TMPDIR)/doid-rare.tsv #$(TMPDIR)/mondo.sssom.tsv
-	mkdir -p $(EXTERNAL_CONTENT_DIR)
+$(EXTERNAL_CONTENT_DIR)/doid-rare.robot.tsv: $(TMPDIR)/doid-rare.tsv $(TMPDIR)/mondo.sssom.tsv | $(EXTERNAL_CONTENT_DIR)
 	python3 $(SCRIPTSDIR)/doid_rare.py \
 	--doid-rare-tsv-path $(TMPDIR)/doid-rare.tsv \
 	--mondo-mappings-path $(TMPDIR)/mondo.sssom.tsv \
@@ -871,14 +911,12 @@ $(EXTERNAL_CONTENT_DIR)/doid-rare.robot.tsv: $(TMPDIR)/doid-rare.tsv #$(TMPDIR)/
 
 ###### OMIM #########
 
-$(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv:
-	mkdir -p $(EXTERNAL_CONTENT_DIR)
-	wget "https://github.com/monarch-initiative/omim/releases/latest/download/mondo-omim-genes.robot.tsv" -O $@
+$(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv: $(REFRESH_DOWNLOADS) | $(EXTERNAL_CONTENT_DIR)
+	$(call download_robot_template,https://github.com/monarch-initiative/omim/releases/latest/download/mondo-omim-genes.robot.tsv)
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-omim-genes.robot.tsv
 
-$(EXTERNAL_CONTENT_DIR)/mondo-omim-susceptibility-subset.robot.tsv:
-	mkdir -p $(EXTERNAL_CONTENT_DIR)
-	wget "https://github.com/monarch-initiative/omim/releases/latest/download/mondo-omim-susceptibility-subset.robot.tsv" -O $@
+$(EXTERNAL_CONTENT_DIR)/mondo-omim-susceptibility-subset.robot.tsv: $(REFRESH_DOWNLOADS) | $(EXTERNAL_CONTENT_DIR)
+	$(call download_robot_template,https://github.com/monarch-initiative/omim/releases/latest/download/mondo-omim-susceptibility-subset.robot.tsv)
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-omim-susceptibility-subset.robot.tsv
 
 ###### NanDO #########
@@ -887,23 +925,25 @@ $(MAPPINGSDIR)/mondo-nando.sssom.tsv: $(MAPPINGSDIR)/nando-mondo.sssom.tsv
 	sssom invert $(MAPPINGSDIR)/nando-mondo.sssom.tsv --no-merge-inverted -o $@
 	sssom annotate $@ --mapping_provider "MONDO:NANDO" -o $@
 
-$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sssom.tsv
-	mkdir -p $(EXTERNAL_CONTENT_DIR)
+$(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv: $(MAPPINGSDIR)/mondo-nando.sssom.tsv | $(EXTERNAL_CONTENT_DIR)
 	python ../scripts/sssom_to_robot_template.py --inpath $< --outpath $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/nando-mappings.robot.tsv
 
 ###### OTAR / EFO #########
 
-$(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.tsv:
-	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-efo.robot.tsv" -O $@
+$(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.tsv: $(REFRESH_DOWNLOADS) | $(EXTERNAL_CONTENT_DIR)
+	$(call download_robot_template,https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-efo.robot.tsv)
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-efo.robot.tsv
 
-$(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv:
-	wget "https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-otar-subset.robot.tsv" -O $@
+$(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv: $(REFRESH_DOWNLOADS) | $(EXTERNAL_CONTENT_DIR)
+	$(call download_robot_template,https://raw.githubusercontent.com/EBISPOT/efo/master/src/ontology/reports/mondo-otar-subset.robot.tsv)
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-otar-subset.robot.tsv
 
 ###### MedGen #########
 
-$(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv:
-	wget "https://github.com/monarch-initiative/medgen/releases/latest/download/medgen-xrefs.robot.template.tsv" -O $@
+$(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv: $(REFRESH_DOWNLOADS) | $(EXTERNAL_CONTENT_DIR)
+	$(call download_robot_template,https://github.com/monarch-initiative/medgen/releases/latest/download/medgen-xrefs.robot.template.tsv)
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv
 
 ###### MalaCards #########
 
@@ -912,7 +952,7 @@ $(EXTERNAL_CONTENT_DIR)/mondo-medgen.robot.tsv:
 $(TMPDIR)/malacards.tsv:
 	wget "https://genecardscustomers.blob.core.windows.net/mondo/Mondo_MalaCards_Current.tsv" -O $@
 
-$(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv: $(TMPDIR)/malacards.tsv
+$(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv: $(TMPDIR)/malacards.tsv | $(EXTERNAL_CONTENT_DIR)
 	awk 'NR==1 { print; print "ID	AT obo:mondo#curated_content_resource^^xsd:anyURI	>A oboInOwl:source"; next } { print }' $< > $@
 .PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv
 
@@ -921,8 +961,9 @@ $(EXTERNAL_CONTENT_DIR)/mondo-malacards.robot.tsv: $(TMPDIR)/malacards.tsv
 # Managed in Google Sheets:
 # https://docs.google.com/spreadsheets/d/1JAgySABpRkmXl-8lu5Yrxd9yjTGNbH8aoDcMlHqpssQ/edit?gid=637121472#gid=637121472
 
-$(EXTERNAL_CONTENT_DIR)/mondo-clingen.robot.tsv:
-	wget "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiYDV1n1nDuJOgnlFx6DsYGyIGlbgI1HeDzI740OgmOKYy2RCCyBqLHiBh-IMadYXjVglsxDPypArh/pub?gid=637121472&single=true&output=tsv" -O $@
+$(EXTERNAL_CONTENT_DIR)/mondo-clingen.robot.tsv: $(REFRESH_DOWNLOADS) | $(EXTERNAL_CONTENT_DIR)
+	$(call download_robot_template,https://docs.google.com/spreadsheets/d/e/2PACX-1vRiYDV1n1nDuJOgnlFx6DsYGyIGlbgI1HeDzI740OgmOKYy2RCCyBqLHiBh-IMadYXjVglsxDPypArh/pub?gid=637121472&single=true&output=tsv)
+.PRECIOUS: $(EXTERNAL_CONTENT_DIR)/mondo-clingen.robot.tsv
 
 
 #############################
