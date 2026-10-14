@@ -22,7 +22,7 @@ ICD10WHO_RELEASE_BASE=	https://github.com/Reasat/icd10who/releases/latest/downlo
 ICD11FOUNDATION=	https://github.com/monarch-initiative/icd11/releases/latest/download/icd11foundation.owl
 NCIT=				http://purl.obolibrary.org/obo/ncit.owl
 OMIM=				https://github.com/monarch-initiative/omim/releases/latest/download/omim.owl
-ORDO=				http://www.orphadata.org/data/ORDO/ordo_orphanet.owl
+ORDO=				https://www.orphadata.com/data/ontologies/ordo/last_version/ordo_orphanet.owl
 
 ####################################
 #### MIRROR SOURCES ################
