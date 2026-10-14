@@ -39,9 +39,11 @@ It works like this:
    # Managed in Google Sheets:
    # https://docs.google.com/spreadsheets/d/1JAgySABpRkmXl-8lu5Yrxd9yjTGNbH8aoDcMlHqpssQ/edit?gid=637121472#gid=637121472
 
-   $(EXTERNAL_CONTENT_DIR)/mondo-clingen.robot.tsv:
-      wget "https://docs.google.com/spreadsheets/d/e/2PACX-1vRiYDV1n1nDuJOgnlFx6DsYGyIGlbgI1HeDzI740OgmOKYy2RCCyBqLHiBh-IMadYXjVglsxDPypArh/pub?gid=637121472&single=true&output=tsv" -O $@
+   $(EXTERNAL_CONTENT_DIR)/mondo-clingen.robot.tsv: $(REFRESH_DOWNLOADS)
+      mkdir -p $(EXTERNAL_CONTENT_DIR)
+      $(call download_robot_template,https://docs.google.com/spreadsheets/d/e/2PACX-1vRiYDV1n1nDuJOgnlFx6DsYGyIGlbgI1HeDzI740OgmOKYy2RCCyBqLHiBh-IMadYXjVglsxDPypArh/pub?gid=637121472&single=true&output=tsv)
    ```
+   Downloaded files are committed to the repository, so a bare download target would never run again once the file exists. The `$(REFRESH_DOWNLOADS)` prerequisite makes the download run on every build when mirrors are being refreshed (`MIR=true`, the default), and `download_robot_template` only replaces the committed file when the content actually changed, after checking that the download is a ROBOT template rather than an error page. Under `MIR=false` the file is only fetched when it is missing. Sources that are not ROBOT templates can use `download_external` instead, which skips the header check.
 3. Add the active columns in that file to `src/scripts/post_process_externally_managed_content.py`, to the method `def _get_column_of_external_source_related_to_qc_failure(qc_failure, erroneous_row, external)`. Only add the columns which actually contain values, like xrefs and synonyms, not the columns which contain provenance information.
 
 ### Related issues and PRs:
