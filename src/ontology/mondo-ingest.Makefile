@@ -219,11 +219,15 @@ $(COMPONENTSDIR)/icd10cm.owl: $(TMPDIR)/icd10cm_relevant_signature.txt $(TMPDIR)
 # For any other file, use:
 #   $(call download_external,URL)
 #
-# If files already exist, they are only re-downloaded if $(MIR) is set
-# to `true`, and they are only replaced if they differ from the committed
-# version. (Both of these mirror the functionality of ODK).
+# Files that already exist are re-downloaded on every run unless
+# $(REFRESH_EXTERNAL) is set to `false` (e.g. when working offline), and
+# they are only replaced if they differ from the committed version. This
+# is deliberately independent of $(MIR), since MAKE_FAST sets MIR=false to
+# skip the expensive ontology mirrors, but these downloads are small and the
+# fast pipeline still needs them to be current.
 
-ifeq ($(MIR),true)
+REFRESH_EXTERNAL ?= true
+ifeq ($(REFRESH_EXTERNAL),true)
 REFRESH_DOWNLOADS = .FORCE
 endif
 
