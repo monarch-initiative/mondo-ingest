@@ -231,10 +231,13 @@ ifeq ($(REFRESH_EXTERNAL),true)
 REFRESH_DOWNLOADS = .FORCE
 endif
 
-# Download URL to $@.tmp and move it to $@ only if it differs from $@.
+# Where a download is staged before it replaces $@. Expanded per target.
+DOWNLOAD_TMP = $(TMPDIR)/$(@F).tmp
+
+# Download URL to $(DOWNLOAD_TMP) and move it to $@ only if it differs from $@.
 define download_external
-wget -nv "$(1)" -O $@.tmp
-if cmp -s $@.tmp $@; then echo "$@ unchanged"; rm -f $@.tmp; else mv $@.tmp $@; fi
+wget -nv "$(1)" -O $(DOWNLOAD_TMP) || { rm -f $(DOWNLOAD_TMP); exit 1; }
+if cmp -s $(DOWNLOAD_TMP) $@; then echo "$@ unchanged"; rm -f $(DOWNLOAD_TMP); else mv $(DOWNLOAD_TMP) $@; fi
 endef
 
 # Same as above, but ensure that this file is a table whose first column has
@@ -242,9 +245,9 @@ endef
 # from Google Sheets, which responds with a 200 status code and an HTML document
 # when there is an error.
 define download_robot_template
-wget -nv "$(1)" -O $@.tmp
-head -1 $@.tmp | cut -f1 | grep -qx mondo_id || { echo "$@: download from $(1) is not a ROBOT template"; rm -f $@.tmp; exit 1; }
-if cmp -s $@.tmp $@; then echo "$@ unchanged"; rm -f $@.tmp; else mv $@.tmp $@; fi
+wget -nv "$(1)" -O $(DOWNLOAD_TMP) || { rm -f $(DOWNLOAD_TMP); exit 1; }
+head -1 $(DOWNLOAD_TMP) | cut -f1 | grep -qx mondo_id || { echo "$@: download from $(1) is not a ROBOT template"; rm -f $(DOWNLOAD_TMP); exit 1; }
+if cmp -s $(DOWNLOAD_TMP) $@; then echo "$@ unchanged"; rm -f $(DOWNLOAD_TMP); else mv $(DOWNLOAD_TMP) $@; fi
 endef
 
 ####################################
