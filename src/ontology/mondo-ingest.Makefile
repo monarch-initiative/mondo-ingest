@@ -794,7 +794,7 @@ $(TMPDIR)/mondo-labels.tsv: $(TMPDIR)/mondo-ingest.db
 ## Externally managed content ####
 ##################################
 
-EXTERNAL_CONTENT_DIR ?= external
+EXTERNAL_CONTENT_DIR=external
 
 $(EXTERNAL_CONTENT_DIR):
 	mkdir -p $@
