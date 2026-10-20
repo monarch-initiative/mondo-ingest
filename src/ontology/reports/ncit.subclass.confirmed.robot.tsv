@@ -40,6 +40,7 @@ MONDO:0000548	ovarian clear cell cancer	MONDO:0018364	NCIT:C40077	NCIT:C40026	ma
 MONDO:0000548	ovarian clear cell cancer	MONDO:0021144	NCIT:C40077	NCIT:C40076	ovarian clear cell tumor
 MONDO:0000550	extra-adrenal sympathetic paraganglioma	MONDO:0021072	NCIT:C48576	NCIT:C4216	sympathetic paraganglioma
 MONDO:0000552	breast lobular carcinoma	MONDO:0004988	NCIT:C3771	NCIT:C5214	breast adenocarcinoma
+MONDO:0000607	primary cutaneous T-cell non-Hodgkin lymphoma	MONDO:0000430	NCIT:C3467	NCIT:C3468	mature T-cell and NK-cell non-Hodgkin lymphoma
 MONDO:0000620	breast benign neoplasm	MONDO:0021100	NCIT:C4505	NCIT:C2910	breast neoplasm
 MONDO:0000624	benign female reproductive system neoplasm	MONDO:0000383	NCIT:C4934	NCIT:C7617	benign reproductive system neoplasm
 MONDO:0000624	benign female reproductive system neoplasm	MONDO:0021148	NCIT:C4934	NCIT:C3053	female reproductive system neoplasm
@@ -1596,6 +1597,7 @@ MONDO:0003982	bilateral breast carcinoma	MONDO:0004989	NCIT:C8287	NCIT:C4872	bre
 MONDO:0003983	synchronous bilateral breast carcinoma	MONDO:0003982	NCIT:C40370	NCIT:C8287	bilateral breast carcinoma
 MONDO:0003985	chest wall lymphoma	MONDO:0021323	NCIT:C6712	NCIT:C4580	malignant neoplasm of chest wall
 MONDO:0003987	lung lymphoma	MONDO:0008903	NCIT:C4794	NCIT:C7377	lung cancer
+MONDO:0003987	lung lymphoma	MONDO:0017207	NCIT:C4794	NCIT:C7185	primary organ-specific lymphoma
 MONDO:0003988	sternum lymphoma	MONDO:0003273	NCIT:C6716	NCIT:C8408	sternum cancer
 MONDO:0003989	polyembryoma of the ovary	MONDO:0015863	NCIT:C39990	NCIT:C66776	polyembryoma
 MONDO:0003989	polyembryoma of the ovary	MONDO:0016096	NCIT:C39990	NCIT:C102870	malignant non-dysgerminomatous germ cell tumor of ovary
@@ -2160,6 +2162,7 @@ MONDO:0004958	oral cavity squamous cell carcinoma	MONDO:0044710	NCIT:C4833	NCIT:
 MONDO:0004958	oral cavity squamous cell carcinoma	MONDO:0044925	NCIT:C4833	NCIT:C8990	oral cavity carcinoma
 MONDO:0004959	plasma cell neoplasm	MONDO:0004949	NCIT:C4665	NCIT:C27910	neoplasm of mature B-cells
 MONDO:0004963	T-cell acute lymphoblastic leukemia	MONDO:0004967	NCIT:C3183	NCIT:C3167	acute lymphoblastic leukemia
+MONDO:0004964	peripheral T-cell lymphoma, not otherwise specified	MONDO:0000430	NCIT:C4340	NCIT:C3468	mature T-cell and NK-cell non-Hodgkin lymphoma
 MONDO:0004965	acinar cell carcinoma	MONDO:0004970	NCIT:C3768	NCIT:C2852	adenocarcinoma
 MONDO:0004967	acute lymphoblastic leukemia	MONDO:0003538	NCIT:C3167	NCIT:C7055	precursor lymphoblastic lymphoma/leukemia
 MONDO:0004967	acute lymphoblastic leukemia	MONDO:0005402	NCIT:C3167	NCIT:C7539	lymphoid leukemia
@@ -2234,7 +2237,6 @@ MONDO:0005096	squamous cell carcinoma	MONDO:0002532	NCIT:C2929	NCIT:C3792	squamo
 MONDO:0005096	squamous cell carcinoma	MONDO:0004993	NCIT:C2929	NCIT:C2916	carcinoma
 MONDO:0005097	squamous cell lung carcinoma	MONDO:0005096	NCIT:C3493	NCIT:C2929	squamous cell carcinoma
 MONDO:0005097	squamous cell lung carcinoma	MONDO:0005138	NCIT:C3493	NCIT:C4878	lung carcinoma
-MONDO:0005102	undifferentiated (embryonal) sarcoma	MONDO:0002397	NCIT:C27096	NCIT:C4437	liver sarcoma
 MONDO:0005105	melanoma	MONDO:0021143	NCIT:C3224	NCIT:C7058	melanocytic neoplasm
 MONDO:0005106	lipoma	MONDO:0044983	NCIT:C3192	NCIT:C4502	benign lipomatous neoplasm
 MONDO:0005112	malignant pleural mesothelioma	MONDO:0003308	NCIT:C7376	NCIT:C9351	pleural mesothelioma
@@ -2705,6 +2707,7 @@ MONDO:0006621	vulvar inverted follicular keratosis	MONDO:0006563	NCIT:C40291	NCI
 MONDO:0006621	vulvar inverted follicular keratosis	MONDO:0006622	NCIT:C40291	NCIT:C6375	vulvar seborrheic keratosis
 MONDO:0006622	vulvar seborrheic keratosis	MONDO:0002195	NCIT:C6375	NCIT:C40283	vulvar squamous neoplasm
 MONDO:0006622	vulvar seborrheic keratosis	MONDO:0008420	NCIT:C6375	NCIT:C9006	seborrheic keratosis
+MONDO:0006639	adrenal cortex carcinoma	MONDO:0001502	NCIT:C9325	NCIT:C7352	retroperitoneum carcinoma
 MONDO:0006639	adrenal cortex carcinoma	MONDO:0021312	NCIT:C9325	NCIT:C9327	malignant tumor of adrenal cortex
 MONDO:0006646	angioleiomyoma	MONDO:0003342	NCIT:C3747	NCIT:C6529	benign perivascular tumor
 MONDO:0006700	choroid cancer	MONDO:0002659	NCIT:C3566	NCIT:C6105	uveal cancer
@@ -2786,7 +2789,6 @@ MONDO:0008978	chordoma	MONDO:0002597	NCIT:C2947	NCIT:C7063	notochordal tumor
 MONDO:0009227	myofibromatosis, infantile, 1	MONDO:0016824	NCIT:C176943	NCIT:C3742	infantile myofibromatosis
 MONDO:0009330	hemangiopericytoma, malignant	MONDO:0005094	NCIT:C4301	NCIT:C3087	hemangiopericytoma
 MONDO:0009348	classic Hodgkin lymphoma	MONDO:0004952	NCIT:C7164	NCIT:C9357	Hodgkins lymphoma
-MONDO:0009691	mycosis fungoides	MONDO:0000607	NCIT:C3246	NCIT:C3467	primary cutaneous T-cell non-Hodgkin lymphoma
 MONDO:0009693	plasma cell myeloma	MONDO:0004959	NCIT:C3242	NCIT:C4665	plasma cell neoplasm
 MONDO:0009807	osteosarcoma	MONDO:0005089	NCIT:C9145	NCIT:C9118	sarcoma
 MONDO:0009808	osteoid osteoma	MONDO:0000631	NCIT:C3297	NCIT:C4880	bone benign neoplasm
@@ -2822,6 +2824,7 @@ MONDO:0012817	Ewing sarcoma	MONDO:0005089	NCIT:C4817	NCIT:C9118	sarcoma
 MONDO:0012817	Ewing sarcoma	MONDO:0021038	NCIT:C4817	NCIT:C27291	Ewing sarcoma/peripheral primitive neuroectodermal tumor
 MONDO:0012825	extraskeletal myxoid chondrosarcoma	MONDO:0018078	NCIT:C27502	NCIT:C9306	soft tissue sarcoma
 MONDO:0013074	encephalocraniocutaneous lipomatosis	MONDO:0006574	NCIT:C4701	NCIT:C3193	lipomatosis
+MONDO:0013280	myxoid liposarcoma	MONDO:0005060	NCIT:C27781	NCIT:C3194	liposarcoma
 MONDO:0013296	myeloid neoplasm associated with FGFR1 rearrangement	MONDO:0015688	NCIT:C84277	NCIT:C84270	myeloid/lymphoid neoplasms associated with eosinophilia and abnormality of PDGFRA, PDGFRB, FGFR1 or JAK2
 MONDO:0014122	myofibromatosis, infantile, 2	MONDO:0016824	NCIT:C176944	NCIT:C3742	infantile myofibromatosis
 MONDO:0014299	LZTR1-related schwannomatosis	MONDO:0008075	NCIT:C186704	NCIT:C6557	schwannomatosis
@@ -2858,8 +2861,10 @@ MONDO:0015689	myeloid neoplasm associated with PDGFRA rearrangement	MONDO:001568
 MONDO:0015690	myeloid neoplasm associated with PDGFRB rearrangement	MONDO:0015688	NCIT:C84276	NCIT:C84270	myeloid/lymphoid neoplasms associated with eosinophilia and abnormality of PDGFRA, PDGFRB, FGFR1 or JAK2
 MONDO:0015759	B-cell non-Hodgkin lymphoma	MONDO:0018908	NCIT:C3457	NCIT:C3211	non-Hodgkin lymphoma
 MONDO:0015760	T-cell non-Hodgkin lymphoma	MONDO:0018908	NCIT:C3466	NCIT:C3211	non-Hodgkin lymphoma
+MONDO:0015795	undifferentiated embryonal sarcoma of the liver	MONDO:0002397	NCIT:C27096	NCIT:C4437	liver sarcoma
 MONDO:0015808	folliculotropic mycosis fungoides	MONDO:0045071	NCIT:C35685	NCIT:C39644	mycosis fungoides variant
 MONDO:0015809	localized pagetoid reticulosis	MONDO:0045071	NCIT:C35794	NCIT:C39644	mycosis fungoides variant
+MONDO:0015811	primary cutaneous aggressive epidermotropic CD8+ T-cell lymphoma	MONDO:0000607	NCIT:C45339	NCIT:C3467	primary cutaneous T-cell non-Hodgkin lymphoma
 MONDO:0015864	mixed germ cell tumor	MONDO:0006290	NCIT:C4290	NCIT:C4925	malignant germ cell tumor
 MONDO:0015867	vaginal carcinoma	MONDO:0001402	NCIT:C3917	NCIT:C7410	vaginal cancer
 MONDO:0015871	benign breast phyllodes tumor	MONDO:0000620	NCIT:C5196	NCIT:C4505	breast benign neoplasm
@@ -2897,10 +2902,16 @@ MONDO:0016680	high grade astrocytic tumor	MONDO:0100342	NCIT:C102897	NCIT:C4822	
 MONDO:0016684	anaplastic astrocytoma	MONDO:0016680	NCIT:C9477	NCIT:C102897	high grade astrocytic tumor
 MONDO:0016684	anaplastic astrocytoma	MONDO:0019781	NCIT:C9477	NCIT:C60781	astrocytoma (excluding glioblastoma)
 MONDO:0016684	anaplastic astrocytoma	MONDO:0020633	NCIT:C9477	NCIT:C36025	anaplastic cancer
+MONDO:0016685	low-grade astrocytoma	MONDO:0019781	NCIT:C116342	NCIT:C60781	astrocytoma (excluding glioblastoma)
+MONDO:0016685	low-grade astrocytoma	MONDO:0021637	NCIT:C116342	NCIT:C132067	low grade glioma
+MONDO:0016686	diffuse astrocytoma	MONDO:0016685	NCIT:C7173	NCIT:C116342	low-grade astrocytoma
 MONDO:0016686	diffuse astrocytoma	MONDO:0021639	NCIT:C7173	NCIT:C132505	grade II glioma
 MONDO:0016687	protoplasmic astrocytoma	MONDO:0016686	NCIT:C4320	NCIT:C7173	diffuse astrocytoma
 MONDO:0016688	fibrillary astrocytoma	MONDO:0016686	NCIT:C4322	NCIT:C7173	diffuse astrocytoma
 MONDO:0016689	gemistocytic astrocytoma	MONDO:0016686	NCIT:C4321	NCIT:C7173	diffuse astrocytoma
+MONDO:0016690	pleomorphic xanthoastrocytoma	MONDO:0016685	NCIT:C4323	NCIT:C116342	low-grade astrocytoma
+MONDO:0016691	pilocytic astrocytoma	MONDO:0016685	NCIT:C4047	NCIT:C116342	low-grade astrocytoma
+MONDO:0016693	subependymal giant cell astrocytoma	MONDO:0016685	NCIT:C3696	NCIT:C116342	low-grade astrocytoma
 MONDO:0016695	oligodendroglioma	MONDO:0018744	NCIT:C3288	NCIT:C6960	oligodendroglial tumor
 MONDO:0016695	oligodendroglioma	MONDO:0021639	NCIT:C3288	NCIT:C132505	grade II glioma
 MONDO:0016696	anaplastic oligodendroglioma	MONDO:0018744	NCIT:C4326	NCIT:C6960	oligodendroglial tumor
@@ -2918,7 +2929,6 @@ MONDO:0016703	anaplastic oligoastrocytoma	MONDO:0005853	NCIT:C6959	NCIT:C3729	ma
 MONDO:0016703	anaplastic oligoastrocytoma	MONDO:0020633	NCIT:C6959	NCIT:C36025	anaplastic cancer
 MONDO:0016703	anaplastic oligoastrocytoma	MONDO:0021640	NCIT:C6959	NCIT:C127816	grade III glioma
 MONDO:0016706	chordoid glioma of the third ventricle	MONDO:0002682	NCIT:C5592	NCIT:C2937	cerebral ventricle cancer
-MONDO:0016707	astroblastoma	MONDO:0021042	NCIT:C4324	NCIT:C3059	glioma
 MONDO:0016709	anaplastic/large cell medulloblastoma	MONDO:0007959	NCIT:C129436	NCIT:C3222	medulloblastoma
 MONDO:0016710	medulloblastoma with extensive nodularity	MONDO:0007959	NCIT:C5407	NCIT:C3222	medulloblastoma
 MONDO:0016711	desmoplastic/nodular medulloblastoma	MONDO:0007959	NCIT:C4956	NCIT:C3222	medulloblastoma
@@ -2964,7 +2974,6 @@ MONDO:0017582	pituitary adenocarcinoma	MONDO:0002109	NCIT:C4536	NCIT:C4769	pitui
 MONDO:0017590	carcinoma of the ampulla of vater	MONDO:0000919	NCIT:C3908	NCIT:C3536	ampulla of vater cancer
 MONDO:0017595	aggressive B-cell non-Hodgkin lymphoma	MONDO:0015759	NCIT:C178541	NCIT:C3457	B-cell non-Hodgkin lymphoma
 MONDO:0017597	T-cell/histiocyte rich large B cell lymphoma	MONDO:0018905	NCIT:C9496	NCIT:C8851	diffuse large B-cell lymphoma
-MONDO:0017598	primary cutaneous anaplastic large cell lymphoma	MONDO:0000607	NCIT:C6860	NCIT:C3467	primary cutaneous T-cell non-Hodgkin lymphoma
 MONDO:0017598	primary cutaneous anaplastic large cell lymphoma	MONDO:0018897	NCIT:C6860	NCIT:C7195	primary cutaneous CD30+ T-cell lymphoproliferative disease
 MONDO:0017598	primary cutaneous anaplastic large cell lymphoma	MONDO:0020325	NCIT:C6860	NCIT:C3720	anaplastic large cell lymphoma
 MONDO:0017601	diffuse large B-cell lymphoma with chronic inflammation	MONDO:0018905	NCIT:C80289	NCIT:C8851	diffuse large B-cell lymphoma
@@ -2985,7 +2994,7 @@ MONDO:0017858	acute erythroid leukemia	MONDO:0015667	NCIT:C8923	NCIT:C27753	acut
 MONDO:0017858	acute erythroid leukemia	MONDO:0020703	NCIT:C8923	NCIT:C7064	erythroid neoplasm
 MONDO:0017884	papillary renal cell carcinoma	MONDO:0002512	NCIT:C6975	NCIT:C2853	papillary adenocarcinoma
 MONDO:0017887	renal cell carcinoma associated with neuroblastoma	MONDO:0005549	NCIT:C100051	NCIT:C9385	renal cell adenocarcinoma
-MONDO:0017895	familial papillary or follicular thyroid carcinoma	MONDO:0015447	NCIT:C118829	NCIT:C7153	differentiated thyroid carcinoma
+MONDO:0017896	familial nonmedullary thyroid carcinoma	MONDO:0015447	NCIT:C118829	NCIT:C7153	differentiated thyroid carcinoma
 MONDO:0017907	primary lymphoma of the conjunctiva	MONDO:0003454	NCIT:C175432	NCIT:C3564	conjunctival cancer
 MONDO:0017907	primary lymphoma of the conjunctiva	MONDO:0004034	NCIT:C175432	NCIT:C35690	eye lymphoma
 MONDO:0018031	granulomatous slack skin disease	MONDO:0045071	NCIT:C35464	NCIT:C39644	mycosis fungoides variant
@@ -3091,6 +3100,10 @@ MONDO:0019468	T-cell prolymphocytic leukemia	MONDO:0001023	NCIT:C4752	NCIT:C3181
 MONDO:0019469	T-cell large granular lymphocyte leukemia	MONDO:0001014	NCIT:C4664	NCIT:C3483	chronic leukemia
 MONDO:0019469	T-cell large granular lymphocyte leukemia	MONDO:0005402	NCIT:C4664	NCIT:C7539	lymphoid leukemia
 MONDO:0019470	aggressive NK-cell leukemia	MONDO:0001014	NCIT:C8647	NCIT:C3483	chronic leukemia
+MONDO:0019471	adult T-cell leukemia/lymphoma	MONDO:0000430	NCIT:C3184	NCIT:C3468	mature T-cell and NK-cell non-Hodgkin lymphoma
+MONDO:0019472	extranodal nasal NK/T cell lymphoma	MONDO:0000430	NCIT:C4684	NCIT:C3468	mature T-cell and NK-cell non-Hodgkin lymphoma
+MONDO:0019474	hepatosplenic T-cell lymphoma	MONDO:0000430	NCIT:C8459	NCIT:C3468	mature T-cell and NK-cell non-Hodgkin lymphoma
+MONDO:0019476	primary cutaneous peripheral T-cell lymphoma not otherwise specified	MONDO:0000607	NCIT:C201080	NCIT:C3467	primary cutaneous T-cell non-Hodgkin lymphoma
 MONDO:0019478	adult nodular lymphocyte predominant Hodgkin lymphoma	MONDO:0003660	NCIT:C7942	NCIT:C7587	adult lymphoma
 MONDO:0019478	adult nodular lymphocyte predominant Hodgkin lymphoma	MONDO:0044778	NCIT:C7942	NCIT:C7258	nodular lymphocyte predominant Hodgkin lymphoma
 MONDO:0019496	neuroendocrine neoplasm	MONDO:0002082	NCIT:C3809	NCIT:C3010	endocrine gland neoplasm
@@ -3537,7 +3550,6 @@ MONDO:0021634	epithelial skin neoplasm	MONDO:0002531	NCIT:C7342	NCIT:C3372	skin 
 MONDO:0021634	epithelial skin neoplasm	MONDO:0005626	NCIT:C7342	NCIT:C3709	epithelial neoplasm
 MONDO:0021636	astrocytic tumor	MONDO:0021042	NCIT:C6958	NCIT:C3059	glioma
 MONDO:0021637	low grade glioma	MONDO:0021042	NCIT:C132067	NCIT:C3059	glioma
-MONDO:0021638	low grade astrocytic tumor	MONDO:0021637	NCIT:C116342	NCIT:C132067	low grade glioma
 MONDO:0021639	grade II glioma	MONDO:0021637	NCIT:C132505	NCIT:C132067	low grade glioma
 MONDO:0021640	grade III glioma	MONDO:0100342	NCIT:C127816	NCIT:C4822	malignant glioma
 MONDO:0021650	uterine corpus neuroendocrine neoplasm	MONDO:0019496	NCIT:C126771	NCIT:C3809	neuroendocrine neoplasm
@@ -3681,13 +3693,9 @@ MONDO:0027772	lung colloid adenocarcinoma	MONDO:0005061	NCIT:C45512	NCIT:C3512	l
 MONDO:0030604	cystic partially differentiated nephroblastoma	MONDO:0004356	NCIT:C6897	NCIT:C6566	childhood multilocular cystic kidney neoplasm
 MONDO:0030604	cystic partially differentiated nephroblastoma	MONDO:0024676	NCIT:C6897	NCIT:C27730	childhood kidney Wilms tumor
 MONDO:0035121	myeloid/lymphoid neoplasm associated with JAK2 rearrangement	MONDO:0015688	NCIT:C129853	NCIT:C84270	myeloid/lymphoid neoplasms associated with eosinophilia and abnormality of PDGFRA, PDGFRB, FGFR1 or JAK2
-MONDO:0035642	mixed phenotype acute leukemia with t(v;11q23.3)	MONDO:0020743	NCIT:C82203	NCIT:C82179	mixed phenotype acute leukemia
 MONDO:0035940	B-lymphoblastic leukemia/lymphoma with t(9;22)(q34.1;q11.2)	MONDO:0035605	NCIT:C80331	NCIT:C80328	B-lymphoblastic leukemia/lymphoma with recurrent genetic abnormality
-MONDO:0035941	B-lymphoblastic leukemia/lymphoma with t(v;11q23.3)	MONDO:0035605	NCIT:C80332	NCIT:C80328	B-lymphoblastic leukemia/lymphoma with recurrent genetic abnormality
-MONDO:0035942	B-lymphoblastic leukemia/lymphoma with t(12;21)(p13.2;q22.1)	MONDO:0035605	NCIT:C80334	NCIT:C80328	B-lymphoblastic leukemia/lymphoma with recurrent genetic abnormality
 MONDO:0035943	B-lymphoblastic leukemia/lymphoma with hyperdiploidy	MONDO:0035605	NCIT:C80335	NCIT:C80328	B-lymphoblastic leukemia/lymphoma with recurrent genetic abnormality
 MONDO:0035944	B-lymphoblastic leukemia/lymphoma with hypodiploidy	MONDO:0035605	NCIT:C80338	NCIT:C80328	B-lymphoblastic leukemia/lymphoma with recurrent genetic abnormality
-MONDO:0035945	B-lymphoblastic leukemia/lymphoma with t(5;14)(q31.1;q32.3)	MONDO:0035605	NCIT:C80340	NCIT:C80328	B-lymphoblastic leukemia/lymphoma with recurrent genetic abnormality
 MONDO:0036501	refractory malignant neoplasm	MONDO:0004992	NCIT:C120186	NCIT:C9305	cancer
 MONDO:0036511	childhood malignant kidney neoplasm	MONDO:0002367	NCIT:C123907	NCIT:C7548	kidney cancer
 MONDO:0036511	childhood malignant kidney neoplasm	MONDO:0002730	NCIT:C123907	NCIT:C6563	childhood kidney neoplasm
@@ -3857,7 +3865,6 @@ MONDO:0700164	canine nephroblastoma	MONDO:0700139	NCIT:C158786	NCIT:C134526	cani
 MONDO:0700166	canine transmissible venereal tumor	MONDO:0700139	NCIT:C162473	NCIT:C134526	canine neoplasm
 MONDO:0700167	canine sebaceous gland epithelioma	MONDO:0700139	NCIT:C176701	NCIT:C134526	canine neoplasm
 MONDO:0700168	canine oral melanoma	MONDO:0700141	NCIT:C185639	NCIT:C120298	canine melanoma
-MONDO:0700169	canine cutaneous t-cell lymphoma	MONDO:0700145	NCIT:C186279	NCIT:C128121	canine lymphoma
 MONDO:0700191	chicken fibrosarcoma	MONDO:0700189	NCIT:C134557	NCIT:C135005	chicken neoplasm
 MONDO:0700192	chicken hepatoma	MONDO:0700189	NCIT:C134558	NCIT:C135005	chicken neoplasm
 MONDO:0700193	chicken monocytic leukemia	MONDO:0700189	NCIT:C134945	NCIT:C135005	chicken neoplasm
@@ -3868,6 +3875,9 @@ MONDO:0850144	germ cell benign neoplasm	MONDO:0005040	NCIT:C6449	NCIT:C3708	germ
 MONDO:0850144	germ cell benign neoplasm	MONDO:0005165	NCIT:C6449	NCIT:C3677	benign neoplasm
 MONDO:0850154	tongue carcinoma	MONDO:0004631	NCIT:C4824	NCIT:C9345	tongue cancer
 MONDO:0850154	tongue carcinoma	MONDO:0044925	NCIT:C4824	NCIT:C8990	oral cavity carcinoma
+MONDO:0850156	B-lymphoblastic leukemia/lymphoma MLL rearranged	MONDO:0035605	NCIT:C80332	NCIT:C80328	B-lymphoblastic leukemia/lymphoma with recurrent genetic abnormality
+MONDO:0850157	B-lymphoblastic leukemia/lymphoma with ETV6-RUNX1	MONDO:0035605	NCIT:C80334	NCIT:C80328	B-lymphoblastic leukemia/lymphoma with recurrent genetic abnormality
+MONDO:0850160	B-lymphoblastic leukemia/lymphoma with IL3-IGH	MONDO:0035605	NCIT:C80340	NCIT:C80328	B-lymphoblastic leukemia/lymphoma with recurrent genetic abnormality
 MONDO:0850267	childhood acute megakaryoblastic leukemia	MONDO:0018872	NCIT:C7972	NCIT:C3170	acute megakaryoblastic leukemia
 MONDO:0850273	salivary gland mucinous adenocarcinoma	MONDO:0004957	NCIT:C62193	NCIT:C26712	mucinous adenocarcinoma
 MONDO:0850333	IDH-wildtype anaplastic astrocytoma	MONDO:0016684	NCIT:C129291	NCIT:C9477	anaplastic astrocytoma

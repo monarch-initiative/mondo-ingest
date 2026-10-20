@@ -2,12 +2,12 @@
 | Ontology                                        | Tot   |
 |:------------------------------------------------|:------|
 | [ICD10WHO](./migrate_icd10who.md)               | 984   |
+| [OMIM](./migrate_omim.md)                       | 63    |
 | [ICD11FOUNDATION](./migrate_icd11foundation.md) | 5,452 |
-| [OMIM](./migrate_omim.md)                       | 48    |
-| [ICD10CM](./migrate_icd10cm.md)                 | 3,881 |
-| [ORDO](./migrate_ordo.md)                       | 22    |
-| [DOID](./migrate_doid.md)                       | 203   |
-| [NCIT](./migrate_ncit.md)                       | 2,384 |
+| [ICD10CM](./migrate_icd10cm.md)                 | 3,914 |
+| [ORDO](./migrate_ordo.md)                       | 266   |
+| [DOID](./migrate_doid.md)                       | 233   |
+| [NCIT](./migrate_ncit.md)                       | 2,382 |
 
 ### Codebook
 `Ontology`: Name of ontology    

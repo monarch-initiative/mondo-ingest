@@ -500,7 +500,6 @@ ICD10CM:A80.30	Acute paralytic poliomyelitis, unspecified	False	False	False
 ICD10CM:A80.39	Other acute paralytic poliomyelitis	False	False	False
 ICD10CM:A80.9	Acute poliomyelitis, unspecified	False	False	False
 ICD10CM:A81	Atypical virus infections of central nervous system	False	False	False
-ICD10CM:A81.0	Creutzfeldt-Jakob disease	False	False	False
 ICD10CM:A81.00	Creutzfeldt-Jakob disease, unspecified	False	False	False
 ICD10CM:A81.09	Other Creutzfeldt-Jakob disease	False	False	False
 ICD10CM:A81.8	Other atypical virus infections of central nervous system	False	False	False
@@ -2063,7 +2062,6 @@ ICD10CM:C84.07	Mycosis fungoides, spleen	False	False	False
 ICD10CM:C84.08	Mycosis fungoides, lymph nodes of multiple sites	False	False	False
 ICD10CM:C84.09	Mycosis fungoides, extranodal and solid organ sites	False	False	False
 ICD10CM:C84.0A	Mycosis fungoides, in remission	False	False	False
-ICD10CM:C84.1	Sézary disease	False	False	False
 ICD10CM:C84.10	Sézary disease, unspecified site	False	False	False
 ICD10CM:C84.11	Sézary disease, lymph nodes of head, face, and neck	False	False	False
 ICD10CM:C84.12	Sézary disease, intrathoracic lymph nodes	False	False	False
@@ -2275,7 +2273,6 @@ ICD10CM:C91.Z2	Other lymphoid leukemia, in relapse	False	False	False
 ICD10CM:C92.00	Acute myeloblastic leukemia, not having achieved remission	False	False	False
 ICD10CM:C92.01	Acute myeloblastic leukemia, in remission	False	False	False
 ICD10CM:C92.02	Acute myeloblastic leukemia, in relapse	False	False	False
-ICD10CM:C92.1	Chronic myeloid leukemia, BCR/ABL-positive	False	False	False
 ICD10CM:C92.10	Chronic myeloid leukemia, BCR/ABL-positive, not having achieved remission	False	False	False
 ICD10CM:C92.11	Chronic myeloid leukemia, BCR/ABL-positive, in remission	False	False	False
 ICD10CM:C92.12	Chronic myeloid leukemia, BCR/ABL-positive, in relapse	False	False	False
@@ -2884,7 +2881,6 @@ ICD10CM:D47.Z9	Other specified neoplasms of uncertain behavior of lymphoid, hema
 ICD10CM:D48	Neoplasm of uncertain behavior of other and unspecified sites	False	False	False
 ICD10CM:D48.0	Neoplasm of uncertain behavior of bone and articular cartilage	False	False	False
 ICD10CM:D48.1	Neoplasm of uncertain behavior of connective and other soft tissue	False	False	False
-ICD10CM:D48.11	Desmoid tumor	False	False	False
 ICD10CM:D48.110	Desmoid tumor of head and neck	False	False	False
 ICD10CM:D48.111	Desmoid tumor of chest wall	False	False	False
 ICD10CM:D48.112	Desmoid tumor, intrathoracic	False	False	False
@@ -3032,8 +3028,6 @@ ICD10CM:D60.8	Other acquired pure red cell aplasias	False	False	False
 ICD10CM:D60.9	Acquired pure red cell aplasia, unspecified	False	False	False
 ICD10CM:D61	Other aplastic anemias and other bone marrow failure syndromes	False	False	False
 ICD10CM:D61.01	Constitutional (pure) red blood cell aplasia	False	False	False
-ICD10CM:D61.02	Shwachman-Diamond syndrome	False	False	False
-ICD10CM:D61.03	Fanconi anemia	False	False	False
 ICD10CM:D61.09	Other constitutional aplastic anemia	False	False	False
 ICD10CM:D61.1	Drug-induced aplastic anemia	False	False	False
 ICD10CM:D61.2	Aplastic anemia due to other external agents	False	False	False
@@ -3077,7 +3071,6 @@ ICD10CM:D68.312	Antiphospholipid antibody with hemorrhagic disorder	False	False	
 ICD10CM:D68.318	Other hemorrhagic disorder due to intrinsic circulating anticoagulants, antibodies, or inhibitors	False	False	False
 ICD10CM:D68.32	Hemorrhagic disorder due to extrinsic circulating anticoagulants	False	False	False
 ICD10CM:D68.5	Primary thrombophilia	False	False	False
-ICD10CM:D68.51	Activated protein C resistance	False	False	False
 ICD10CM:D68.52	Prothrombin gene mutation	False	False	False
 ICD10CM:D68.59	Other primary thrombophilia	False	False	False
 ICD10CM:D68.6	Other thrombophilia	False	False	False
@@ -3159,9 +3152,7 @@ ICD10CM:D80-D89	Certain disorders involving the immune mechanism (D80-D89)	False
 ICD10CM:D80.0	Hereditary hypogammaglobulinemia	False	False	False
 ICD10CM:D80.1	Nonfamilial hypogammaglobulinemia	False	False	False
 ICD10CM:D80.2	Selective deficiency of immunoglobulin A [IgA]	False	False	False
-ICD10CM:D80.3	Selective deficiency of immunoglobulin G [IgG] subclasses	False	False	False
 ICD10CM:D80.4	Selective deficiency of immunoglobulin M [IgM]	False	False	False
-ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	False	False	False
 ICD10CM:D80.6	Antibody deficiency with near-normal immunoglobulins or with hyperimmunoglobulinemia	False	False	False
 ICD10CM:D80.8	Other immunodeficiencies with predominantly antibody defects	False	False	False
 ICD10CM:D80.9	Immunodeficiency with predominantly antibody defects, unspecified	False	False	False
@@ -3172,9 +3163,7 @@ ICD10CM:D81.2	Severe combined immunodeficiency [SCID] with low or normal B-cell 
 ICD10CM:D81.3	Adenosine deaminase [ADA] deficiency	False	False	False
 ICD10CM:D81.30	Adenosine deaminase deficiency, unspecified	False	False	False
 ICD10CM:D81.31	Severe combined immunodeficiency due to adenosine deaminase deficiency	False	False	False
-ICD10CM:D81.32	Adenosine deaminase 2 deficiency	False	False	False
 ICD10CM:D81.39	Other adenosine deaminase deficiency	False	False	False
-ICD10CM:D81.5	Purine nucleoside phosphorylase [PNP] deficiency	False	False	False
 ICD10CM:D81.6	Major histocompatibility complex class I deficiency	False	False	False
 ICD10CM:D81.7	Major histocompatibility complex class II deficiency	False	False	False
 ICD10CM:D81.8	Other combined immunodeficiencies	False	False	False
@@ -3185,7 +3174,6 @@ ICD10CM:D81.9	Combined immunodeficiency, unspecified	False	False	False
 ICD10CM:D82	Immunodeficiency associated with other major defects	False	False	False
 ICD10CM:D82.2	Immunodeficiency with short-limbed stature	False	False	False
 ICD10CM:D82.3	Immunodeficiency following hereditary defective response to Epstein-Barr virus	False	False	False
-ICD10CM:D82.4	Hyperimmunoglobulin E [IgE] syndrome	False	False	False
 ICD10CM:D82.8	Immunodeficiency associated with other specified major defects	False	False	False
 ICD10CM:D82.9	Immunodeficiency associated with major defect, unspecified	False	False	False
 ICD10CM:D83.0	Common variable immunodeficiency with predominant abnormalities of B-cell numbers and function	False	False	False
@@ -3243,7 +3231,6 @@ ICD10CM:E01.8	Other iodine-deficiency related thyroid disorders and allied condi
 ICD10CM:E02	Subclinical iodine-deficiency hypothyroidism	False	False	False
 ICD10CM:E03	Other hypothyroidism	False	False	False
 ICD10CM:E03.0	Congenital hypothyroidism with diffuse goiter	False	False	False
-ICD10CM:E03.1	Congenital hypothyroidism without goiter	False	False	False
 ICD10CM:E03.2	Hypothyroidism due to medicaments and other exogenous substances	False	False	False
 ICD10CM:E03.3	Postinfectious hypothyroidism	False	False	False
 ICD10CM:E03.4	Atrophy of thyroid (acquired)	False	False	False
@@ -3938,8 +3925,6 @@ ICD10CM:E30.9	Disorder of puberty, unspecified	False	False	False
 ICD10CM:E31	Polyglandular dysfunction	False	False	False
 ICD10CM:E31.1	Polyglandular hyperfunction	False	False	False
 ICD10CM:E31.20	Multiple endocrine neoplasia [MEN] syndrome, unspecified	False	False	False
-ICD10CM:E31.22	Multiple endocrine neoplasia [MEN] type IIA	False	False	False
-ICD10CM:E31.23	Multiple endocrine neoplasia [MEN] type IIB	False	False	False
 ICD10CM:E31.8	Other polyglandular dysfunction	False	False	False
 ICD10CM:E31.9	Polyglandular dysfunction, unspecified	False	False	False
 ICD10CM:E32	Diseases of thymus	False	False	False
@@ -4104,8 +4089,6 @@ ICD10CM:E71.548	Other peroxisomal disorders	False	False	False
 ICD10CM:E72	Other disorders of amino-acid metabolism	False	False	False
 ICD10CM:E72.0	Disorders of amino-acid transport	False	False	False
 ICD10CM:E72.00	Disorders of amino-acid transport, unspecified	False	False	False
-ICD10CM:E72.02	Hartnup's disease	False	False	False
-ICD10CM:E72.03	Lowe's syndrome	False	False	False
 ICD10CM:E72.09	Other disorders of amino-acid transport	False	False	False
 ICD10CM:E72.1	Disorders of sulfur-bearing amino-acid metabolism	False	False	False
 ICD10CM:E72.10	Disorders of sulfur-bearing amino-acid metabolism, unspecified	False	False	False
@@ -4118,7 +4101,6 @@ ICD10CM:E72.29	Other disorders of urea cycle metabolism	False	False	False
 ICD10CM:E72.4	Disorders of ornithine metabolism	False	False	False
 ICD10CM:E72.5	Disorders of glycine metabolism	False	False	False
 ICD10CM:E72.50	Disorder of glycine metabolism, unspecified	False	False	False
-ICD10CM:E72.51	Non-ketotic hyperglycinemia	False	False	False
 ICD10CM:E72.59	Other disorders of glycine metabolism	False	False	False
 ICD10CM:E72.8	Other specified disorders of amino-acid metabolism	False	False	False
 ICD10CM:E72.81	Disorders of gamma aminobutyric acid metabolism	False	False	False
@@ -4143,11 +4125,9 @@ ICD10CM:E74.39	Other disorders of intestinal carbohydrate absorption	False	False
 ICD10CM:E74.4	Disorders of pyruvate metabolism and gluconeogenesis	False	False	False
 ICD10CM:E74.8	Other specified disorders of carbohydrate metabolism	False	False	False
 ICD10CM:E74.81	Disorders of glucose transport, not elsewhere classified	False	False	False
-ICD10CM:E74.810	Glucose transporter protein type 1 deficiency	False	False	False
 ICD10CM:E74.818	Other disorders of glucose transport	False	False	False
 ICD10CM:E74.819	Disorders of glucose transport, unspecified	False	False	False
 ICD10CM:E74.82	Disorders of citrate metabolism	False	False	False
-ICD10CM:E74.820	SLC13A5 Citrate Transporter Disorder	False	False	False
 ICD10CM:E74.829	Other disorders of citrate metabolism	False	False	False
 ICD10CM:E74.89	Other specified disorders of carbohydrate metabolism	False	False	False
 ICD10CM:E74.9	Disorder of carbohydrate metabolism, unspecified	False	False	False
@@ -4158,22 +4138,15 @@ ICD10CM:E75.1	Other and unspecified gangliosidosis	False	False	False
 ICD10CM:E75.10	Unspecified gangliosidosis	False	False	False
 ICD10CM:E75.19	Other gangliosidosis	False	False	False
 ICD10CM:E75.2	Other sphingolipidosis	False	False	False
-ICD10CM:E75.21	Fabry (-Anderson) disease	False	False	False
 ICD10CM:E75.243	Niemann-Pick disease type D	False	False	False
 ICD10CM:E75.248	Other Niemann-Pick disease	False	False	False
 ICD10CM:E75.249	Niemann-Pick disease, unspecified	False	False	False
 ICD10CM:E75.26	Sulfatase deficiency	False	False	False
-ICD10CM:E75.27	Pelizaeus-Merzbacher disease	False	False	False
-ICD10CM:E75.28	Canavan disease	False	False	False
 ICD10CM:E75.29	Other sphingolipidosis	False	False	False
 ICD10CM:E75.3	Sphingolipidosis, unspecified	False	False	False
 ICD10CM:E75.6	Lipid storage disorder, unspecified	False	False	False
 ICD10CM:E76	Disorders of glycosaminoglycan metabolism	False	False	False
-ICD10CM:E76.0	Mucopolysaccharidosis, type I	False	False	False
-ICD10CM:E76.01	Hurler's syndrome	False	False	False
-ICD10CM:E76.03	Scheie's syndrome	False	False	False
 ICD10CM:E76.2	Other mucopolysaccharidoses	False	False	False
-ICD10CM:E76.21	Morquio mucopolysaccharidoses	False	False	False
 ICD10CM:E76.219	Morquio mucopolysaccharidoses, unspecified	False	False	False
 ICD10CM:E76.22	Sanfilippo mucopolysaccharidoses	False	False	False
 ICD10CM:E76.29	Other mucopolysaccharidoses	False	False	False
@@ -4212,7 +4185,6 @@ ICD10CM:E80	Disorders of porphyrin and bilirubin metabolism	False	False	False
 ICD10CM:E80.0	Hereditary erythropoietic porphyria	False	False	False
 ICD10CM:E80.2	Other and unspecified porphyria	False	False	False
 ICD10CM:E80.20	Unspecified porphyria	False	False	False
-ICD10CM:E80.21	Acute intermittent (hepatic) porphyria	False	False	False
 ICD10CM:E80.29	Other porphyria	False	False	False
 ICD10CM:E80.3	Defects of catalase and peroxidase	False	False	False
 ICD10CM:E80.6	Other disorders of bilirubin metabolism	False	False	False
@@ -4256,7 +4228,6 @@ ICD10CM:E85.2	Heredofamilial amyloidosis, unspecified	False	False	False
 ICD10CM:E85.3	Secondary systemic amyloidosis	False	False	False
 ICD10CM:E85.4	Organ-limited amyloidosis	False	False	False
 ICD10CM:E85.8	Other amyloidosis	False	False	False
-ICD10CM:E85.81	Light chain (AL) amyloidosis	False	False	False
 ICD10CM:E85.89	Other amyloidosis	False	False	False
 ICD10CM:E85.9	Amyloidosis, unspecified	False	False	False
 ICD10CM:E86	Volume depletion	False	False	False
@@ -5273,7 +5244,6 @@ ICD10CM:F72	Severe intellectual disabilities	False	False	False
 ICD10CM:F73	Profound intellectual disabilities	False	False	False
 ICD10CM:F78	Other intellectual disabilities	False	False	False
 ICD10CM:F78.A	Other genetic related intellectual disabilities	False	False	False
-ICD10CM:F78.A1	SYNGAP1-related intellectual disability	False	False	False
 ICD10CM:F78.A9	Other genetic related intellectual disability	False	False	False
 ICD10CM:F79	Unspecified intellectual disabilities	False	False	False
 ICD10CM:F80	Specific developmental disorders of speech and language	False	False	False
@@ -5293,7 +5263,6 @@ ICD10CM:F81.89	Other developmental disorders of scholastic skills	False	False	Fa
 ICD10CM:F81.9	Developmental disorder of scholastic skills, unspecified	False	False	False
 ICD10CM:F82	Specific developmental disorder of motor function	False	False	False
 ICD10CM:F84	Pervasive developmental disorders	False	False	False
-ICD10CM:F84.2	Rett's syndrome	False	False	False
 ICD10CM:F84.3	Other childhood disintegrative disorder	False	False	False
 ICD10CM:F84.5	Asperger's syndrome	False	False	False
 ICD10CM:F84.9	Pervasive developmental disorder, unspecified	False	False	False
@@ -5387,7 +5356,6 @@ ICD10CM:G11.6	Leukodystrophy with vanishing white matter disease	False	False	Fal
 ICD10CM:G11.8	Other hereditary ataxias	False	False	False
 ICD10CM:G11.9	Hereditary ataxia, unspecified	False	False	False
 ICD10CM:G12	Spinal muscular atrophy and related syndromes	False	False	False
-ICD10CM:G12.0	Infantile spinal muscular atrophy, type I [Werdnig-Hoffman]	False	False	False
 ICD10CM:G12.1	Other inherited spinal muscular atrophy	False	False	False
 ICD10CM:G12.20	Motor neuron disease, unspecified	False	False	False
 ICD10CM:G12.24	Familial motor neuron disease	False	False	False
@@ -5414,7 +5382,6 @@ ICD10CM:G21.2	Secondary parkinsonism due to other external agents	False	False	Fa
 ICD10CM:G21.8	Other secondary parkinsonism	False	False	False
 ICD10CM:G21.9	Secondary parkinsonism, unspecified	False	False	False
 ICD10CM:G23	Other degenerative diseases of basal ganglia	False	False	False
-ICD10CM:G23.3	Hypomyelination with atrophy of the basal ganglia and cerebellum	False	False	False
 ICD10CM:G23.8	Other specified degenerative diseases of basal ganglia	False	False	False
 ICD10CM:G23.9	Degenerative disease of basal ganglia, unspecified	False	False	False
 ICD10CM:G24.0	Drug induced dystonia	False	False	False
@@ -5454,7 +5421,6 @@ ICD10CM:G31.2	Degeneration of nervous system due to alcohol	False	False	False
 ICD10CM:G31.8	Other specified degenerative diseases of nervous system	False	False	False
 ICD10CM:G31.80	Leukodystrophy, unspecified	False	False	False
 ICD10CM:G31.84	Mild cognitive impairment of uncertain or unknown etiology	False	False	False
-ICD10CM:G31.86	Alexander disease	False	False	False
 ICD10CM:G31.89	Other specified degenerative diseases of nervous system	False	False	False
 ICD10CM:G31.9	Degenerative disease of nervous system, unspecified	False	False	False
 ICD10CM:G32	Other degenerative disorders of nervous system in diseases classified elsewhere	False	False	False
@@ -5509,7 +5475,6 @@ ICD10CM:G40.409	Other generalized epilepsy and epileptic syndromes, not intracta
 ICD10CM:G40.41	Other generalized epilepsy and epileptic syndromes, intractable	False	False	False
 ICD10CM:G40.411	Other generalized epilepsy and epileptic syndromes, intractable, with status epilepticus	False	False	False
 ICD10CM:G40.419	Other generalized epilepsy and epileptic syndromes, intractable, without status epilepticus	False	False	False
-ICD10CM:G40.42	Cyclin-Dependent Kinase-Like 5 Deficiency Disorder	False	False	False
 ICD10CM:G40.5	Epileptic seizures related to external causes	False	False	False
 ICD10CM:G40.50	Epileptic seizures related to external causes, not intractable	False	False	False
 ICD10CM:G40.501	Epileptic seizures related to external causes, not intractable, with status epilepticus	False	False	False
@@ -5557,7 +5522,6 @@ ICD10CM:G40.B09	Juvenile myoclonic epilepsy, not intractable, without status epi
 ICD10CM:G40.B1	Juvenile myoclonic epilepsy, intractable	False	False	False
 ICD10CM:G40.B11	Juvenile myoclonic epilepsy, intractable, with status epilepticus	False	False	False
 ICD10CM:G40.B19	Juvenile myoclonic epilepsy, intractable, without status epilepticus	False	False	False
-ICD10CM:G40.C	Lafora progressive myoclonus epilepsy	False	False	False
 ICD10CM:G40.C0	Lafora progressive myoclonus epilepsy, not intractable	False	False	False
 ICD10CM:G40.C01	Lafora progressive myoclonus epilepsy, not intractable, with status epilepticus	False	False	False
 ICD10CM:G40.C09	Lafora progressive myoclonus epilepsy, not intractable, without status epilepticus	False	False	False
@@ -5896,7 +5860,6 @@ ICD10CM:G71.00	Muscular dystrophy, unspecified	False	False	False
 ICD10CM:G71.01	Duchenne or Becker muscular dystrophy	False	False	False
 ICD10CM:G71.03	Limb girdle muscular dystrophies	False	False	False
 ICD10CM:G71.031	Autosomal dominant limb girdle muscular dystrophy	False	False	False
-ICD10CM:G71.032	Autosomal recessive limb girdle muscular dystrophy due to calpain-3 dysfunction	False	False	False
 ICD10CM:G71.033	Limb girdle muscular dystrophy due to dysferlin dysfunction	False	False	False
 ICD10CM:G71.034	Limb girdle muscular dystrophy due to sarcoglycan dysfunction	False	False	False
 ICD10CM:G71.0340	Limb girdle muscular dystrophy due to sarcoglycan dysfunction, unspecified	False	False	False
@@ -8307,7 +8270,6 @@ ICD10CM:H40.1291	Low-tension glaucoma, unspecified eye, mild stage	False	False	F
 ICD10CM:H40.1292	Low-tension glaucoma, unspecified eye, moderate stage	False	False	False
 ICD10CM:H40.1293	Low-tension glaucoma, unspecified eye, severe stage	False	False	False
 ICD10CM:H40.1294	Low-tension glaucoma, unspecified eye, indeterminate stage	False	False	False
-ICD10CM:H40.13	Pigmentary glaucoma	False	False	False
 ICD10CM:H40.131	Pigmentary glaucoma, right eye	False	False	False
 ICD10CM:H40.1310	Pigmentary glaucoma, right eye, stage unspecified	False	False	False
 ICD10CM:H40.1311	Pigmentary glaucoma, right eye, mild stage	False	False	False
@@ -8770,7 +8732,6 @@ ICD10CM:H46.8	Other optic neuritis	False	False	False
 ICD10CM:H46.9	Unspecified optic neuritis	False	False	False
 ICD10CM:H47	Other disorders of optic [2nd] nerve and visual pathways	False	False	False
 ICD10CM:H47.0	Disorders of optic nerve, not elsewhere classified	False	False	False
-ICD10CM:H47.01	Ischemic optic neuropathy	False	False	False
 ICD10CM:H47.011	Ischemic optic neuropathy, right eye	False	False	False
 ICD10CM:H47.012	Ischemic optic neuropathy, left eye	False	False	False
 ICD10CM:H47.013	Ischemic optic neuropathy, bilateral	False	False	False
@@ -9823,7 +9784,6 @@ ICD10CM:H80.91	Unspecified otosclerosis, right ear	False	False	False
 ICD10CM:H80.92	Unspecified otosclerosis, left ear	False	False	False
 ICD10CM:H80.93	Unspecified otosclerosis, bilateral	False	False	False
 ICD10CM:H81	Disorders of vestibular function	False	False	False
-ICD10CM:H81.0	Ménière's disease	False	False	False
 ICD10CM:H81.01	Ménière's disease, right ear	False	False	False
 ICD10CM:H81.02	Ménière's disease, left ear	False	False	False
 ICD10CM:H81.03	Ménière's disease, bilateral	False	False	False
@@ -13411,7 +13371,6 @@ ICD10CM:L50.8	Other urticaria	False	False	False
 ICD10CM:L50.9	Urticaria, unspecified	False	False	False
 ICD10CM:L51.0	Nonbullous erythema multiforme	False	False	False
 ICD10CM:L51.2	Toxic epidermal necrolysis [Lyell]	False	False	False
-ICD10CM:L51.3	Stevens-Johnson syndrome-toxic epidermal necrolysis overlap syndrome	False	False	False
 ICD10CM:L51.8	Other erythema multiforme	False	False	False
 ICD10CM:L51.9	Erythema multiforme, unspecified	False	False	False
 ICD10CM:L53	Other erythematous conditions	False	False	False
@@ -13456,7 +13415,6 @@ ICD10CM:L60.4	Beau's lines	False	False	False
 ICD10CM:L60.8	Other nail disorders	False	False	False
 ICD10CM:L60.9	Nail disorder, unspecified	False	False	False
 ICD10CM:L62	Nail disorders in diseases classified elsewhere	False	False	False
-ICD10CM:L63.0	Alopecia (capitis) totalis	False	False	False
 ICD10CM:L63.2	Ophiasis	False	False	False
 ICD10CM:L63.8	Other alopecia areata	False	False	False
 ICD10CM:L63.9	Alopecia areata, unspecified	False	False	False
@@ -14351,7 +14309,6 @@ ICD10CM:M02.89	Other reactive arthropathies, multiple sites	False	False	False
 ICD10CM:M02.9	Reactive arthropathy, unspecified	False	False	False
 ICD10CM:M04	Autoinflammatory syndromes	False	False	False
 ICD10CM:M04.1	Periodic fever syndromes	False	False	False
-ICD10CM:M04.2	Cryopyrin-associated periodic syndromes	False	False	False
 ICD10CM:M04.8	Other autoinflammatory syndromes	False	False	False
 ICD10CM:M04.9	Autoinflammatory syndrome, unspecified	False	False	False
 ICD10CM:M05	Rheumatoid arthritis with rheumatoid factor	False	False	False
@@ -17195,7 +17152,6 @@ ICD10CM:M35.0A	Sjögren syndrome with glomerular disease	False	False	False
 ICD10CM:M35.0B	Sjögren syndrome with vasculitis	False	False	False
 ICD10CM:M35.0C	Sjögren syndrome with dental involvement	False	False	False
 ICD10CM:M35.1	Other overlap syndromes	False	False	False
-ICD10CM:M35.2	Behçet's disease	False	False	False
 ICD10CM:M35.4	Diffuse (eosinophilic) fasciitis	False	False	False
 ICD10CM:M35.6	Relapsing panniculitis [Weber-Christian]	False	False	False
 ICD10CM:M35.8	Other specified systemic involvement of connective tissue	False	False	False
@@ -23232,7 +23188,6 @@ ICD10CM:N97.8	Female infertility of other origin	False	False	False
 ICD10CM:N97.9	Female infertility, unspecified	False	False	False
 ICD10CM:N98	Complications associated with artificial fertilization	False	False	False
 ICD10CM:N98.0	Infection associated with artificial insemination	False	False	False
-ICD10CM:N98.1	Hyperstimulation of ovaries	False	False	False
 ICD10CM:N98.2	Complications of attempted introduction of fertilized ovum following in vitro fertilization	False	False	False
 ICD10CM:N98.3	Complications of attempted introduction of embryo in embryo transfer	False	False	False
 ICD10CM:N98.8	Other complications associated with artificial fertilization	False	False	False
@@ -23561,7 +23516,6 @@ ICD10CM:O26.613	Liver and biliary tract disorders in pregnancy, third trimester	
 ICD10CM:O26.619	Liver and biliary tract disorders in pregnancy, unspecified trimester	False	False	False
 ICD10CM:O26.62	Liver and biliary tract disorders in childbirth	False	False	False
 ICD10CM:O26.63	Liver and biliary tract disorders in the puerperium	False	False	False
-ICD10CM:O26.64	Intrahepatic cholestasis of pregnancy	False	False	False
 ICD10CM:O26.641	Intrahepatic cholestasis of pregnancy, first trimester	False	False	False
 ICD10CM:O26.642	Intrahepatic cholestasis of pregnancy, second trimester	False	False	False
 ICD10CM:O26.643	Intrahepatic cholestasis of pregnancy, third trimester	False	False	False
@@ -25987,7 +25941,6 @@ ICD10CM:Q31.2	Laryngeal hypoplasia	False	False	False
 ICD10CM:Q31.8	Other congenital malformations of larynx	False	False	False
 ICD10CM:Q31.9	Congenital malformation of larynx, unspecified	False	False	False
 ICD10CM:Q32	Congenital malformations of trachea and bronchus	False	False	False
-ICD10CM:Q32.0	Congenital tracheomalacia	False	False	False
 ICD10CM:Q32.1	Other congenital malformations of trachea	False	False	False
 ICD10CM:Q32.2	Congenital bronchomalacia	False	False	False
 ICD10CM:Q32.3	Congenital stenosis of bronchus	False	False	False
@@ -26072,7 +26025,6 @@ ICD10CM:Q44.3	Congenital stenosis and stricture of bile ducts	False	False	False
 ICD10CM:Q44.5	Other congenital malformations of bile ducts	False	False	False
 ICD10CM:Q44.7	Other congenital malformations of liver	False	False	False
 ICD10CM:Q44.70	Other congenital malformation of liver, unspecified	False	False	False
-ICD10CM:Q44.71	Alagille syndrome	False	False	False
 ICD10CM:Q44.79	Other congenital malformations of liver	False	False	False
 ICD10CM:Q45	Other congenital malformations of digestive system	False	False	False
 ICD10CM:Q45.0	Agenesis, aplasia and hypoplasia of pancreas	False	False	False
@@ -26521,7 +26473,6 @@ ICD10CM:Q77.2	Short rib syndrome	False	False	False
 ICD10CM:Q77.8	Other osteochondrodysplasia with defects of growth of tubular bones and spine	False	False	False
 ICD10CM:Q77.9	Osteochondrodysplasia with defects of growth of tubular bones and spine, unspecified	False	False	False
 ICD10CM:Q78	Other osteochondrodysplasias	False	False	False
-ICD10CM:Q78.6	Multiple congenital exostoses	False	False	False
 ICD10CM:Q78.8	Other specified osteochondrodysplasias	False	False	False
 ICD10CM:Q78.9	Osteochondrodysplasia, unspecified	False	False	False
 ICD10CM:Q79	Congenital malformations of musculoskeletal system, not elsewhere classified	False	False	False
@@ -26531,15 +26482,12 @@ ICD10CM:Q79.5	Other congenital malformations of abdominal wall	False	False	False
 ICD10CM:Q79.51	Congenital hernia of bladder	False	False	False
 ICD10CM:Q79.59	Other congenital malformations of abdominal wall	False	False	False
 ICD10CM:Q79.60	Ehlers-Danlos syndrome, unspecified	False	False	False
-ICD10CM:Q79.61	Classical Ehlers-Danlos syndrome	False	False	False
 ICD10CM:Q79.62	Hypermobile Ehlers-Danlos syndrome	False	False	False
-ICD10CM:Q79.63	Vascular Ehlers-Danlos syndrome	False	False	False
 ICD10CM:Q79.69	Other Ehlers-Danlos syndromes	False	False	False
 ICD10CM:Q79.8	Other congenital malformations of musculoskeletal system	False	False	False
 ICD10CM:Q79.9	Congenital malformation of musculoskeletal system, unspecified	False	False	False
 ICD10CM:Q80-Q89	Other congenital malformations (Q80-Q89)	False	False	False
 ICD10CM:Q80.3	Congenital bullous ichthyosiform erythroderma	False	False	False
-ICD10CM:Q80.4	Harlequin fetus	False	False	False
 ICD10CM:Q80.8	Other congenital ichthyosis	False	False	False
 ICD10CM:Q80.9	Congenital ichthyosis, unspecified	False	False	False
 ICD10CM:Q81.8	Other epidermolysis bullosa	False	False	False
@@ -26570,9 +26518,7 @@ ICD10CM:Q85	Phakomatoses, not elsewhere classified	False	False	False
 ICD10CM:Q85.00	Neurofibromatosis, unspecified	False	False	False
 ICD10CM:Q85.09	Other neurofibromatosis	False	False	False
 ICD10CM:Q85.8	Other phakomatoses, not elsewhere classified	False	False	False
-ICD10CM:Q85.81	PTEN hamartoma tumor syndrome	False	False	False
 ICD10CM:Q85.82	Other Cowden syndrome	False	False	False
-ICD10CM:Q85.83	Von Hippel-Lindau syndrome	False	False	False
 ICD10CM:Q85.89	Other phakomatoses, not elsewhere classified	False	False	False
 ICD10CM:Q85.9	Phakomatosis, unspecified	False	False	False
 ICD10CM:Q86	Congenital malformation syndromes due to known exogenous causes, not elsewhere classified	False	False	False
@@ -26591,10 +26537,7 @@ ICD10CM:Q87.42	Marfan syndrome with ocular manifestations	False	False	False
 ICD10CM:Q87.43	Marfan syndrome with skeletal manifestation	False	False	False
 ICD10CM:Q87.5	Other congenital malformation syndromes with other skeletal changes	False	False	False
 ICD10CM:Q87.8	Other specified congenital malformation syndromes, not elsewhere classified	False	False	False
-ICD10CM:Q87.83	Bardet-Biedl syndrome	False	False	False
 ICD10CM:Q87.84	Laurence-Moon syndrome	False	False	False
-ICD10CM:Q87.85	MED13L syndrome	False	False	False
-ICD10CM:Q87.86	Kleefstra syndrome	False	False	False
 ICD10CM:Q87.89	Other specified congenital malformation syndromes, not elsewhere classified	False	False	False
 ICD10CM:Q89	Other congenital malformations, not elsewhere classified	False	False	False
 ICD10CM:Q89.0	Congenital absence and malformations of spleen	False	False	False
@@ -26635,11 +26578,9 @@ ICD10CM:Q93.1	Whole chromosome monosomy, mosaicism (mitotic nondisjunction)	Fals
 ICD10CM:Q93.2	Chromosome replaced with ring, dicentric or isochromosome	False	False	False
 ICD10CM:Q93.4	Deletion of short arm of chromosome 5	False	False	False
 ICD10CM:Q93.5	Other deletions of part of a chromosome	False	False	False
-ICD10CM:Q93.52	Phelan-McDermid syndrome	False	False	False
 ICD10CM:Q93.59	Other deletions of part of a chromosome	False	False	False
 ICD10CM:Q93.7	Deletions with other complex rearrangements	False	False	False
 ICD10CM:Q93.8	Other deletions from the autosomes	False	False	False
-ICD10CM:Q93.81	Velo-cardio-facial syndrome	False	False	False
 ICD10CM:Q93.88	Other microdeletions	False	False	False
 ICD10CM:Q93.89	Other deletions from the autosomes	False	False	False
 ICD10CM:Q93.9	Deletion from autosomes, unspecified	False	False	False
@@ -26678,7 +26619,6 @@ ICD10CM:Q98.9	Sex chromosome abnormality, male phenotype, unspecified	False	Fals
 ICD10CM:Q99	Other chromosome abnormalities, not elsewhere classified	False	False	False
 ICD10CM:Q99.0	Chimera 46, XX/46, XY	False	False	False
 ICD10CM:Q99.1	46, XX true hermaphrodite	False	False	False
-ICD10CM:Q99.2	Fragile X chromosome	False	False	False
 ICD10CM:Q99.8	Other specified chromosome abnormalities	False	False	False
 ICD10CM:Q99.9	Chromosomal abnormality, unspecified	False	False	False
 ICD10CM:S00	Superficial injury of head	False	False	False
@@ -95932,6 +95872,7 @@ ICD10CM:A79.1	Rickettsialpox due to Rickettsia akari	True	False	False
 ICD10CM:A79.82	Anaplasmosis [A. phagocytophilum]	True	False	False
 ICD10CM:A80-A89	Viral and prion infections of the central nervous system (A80-A89)	True	False	False
 ICD10CM:A80.4	Acute nonparalytic poliomyelitis	True	False	False
+ICD10CM:A81.0	Creutzfeldt-Jakob disease	True	False	False
 ICD10CM:A81.01	Variant Creutzfeldt-Jakob disease	True	False	False
 ICD10CM:A81.1	Subacute sclerosing panencephalitis	True	False	False
 ICD10CM:A81.2	Progressive multifocal leukoencephalopathy	True	False	False
@@ -96242,6 +96183,7 @@ ICD10CM:C83.1	Mantle cell lymphoma	True	False	False
 ICD10CM:C83.3	Diffuse large B-cell lymphoma	True	False	False
 ICD10CM:C83.7	Burkitt lymphoma	True	False	False
 ICD10CM:C84.0	Mycosis fungoides	True	False	False
+ICD10CM:C84.1	Sézary disease	True	False	False
 ICD10CM:C84.4	Peripheral T-cell lymphoma, not elsewhere classified	True	False	False
 ICD10CM:C84.6	Anaplastic large cell lymphoma, ALK-positive	True	False	False
 ICD10CM:C84.7	Anaplastic large cell lymphoma, ALK-negative	True	False	False
@@ -96264,6 +96206,7 @@ ICD10CM:C91.1	Chronic lymphocytic leukemia of B-cell type	True	False	False
 ICD10CM:C91.4	Hairy cell leukemia	True	False	False
 ICD10CM:C92	Myeloid leukemia	True	False	False
 ICD10CM:C92.0	Acute myeloblastic leukemia	True	False	False
+ICD10CM:C92.1	Chronic myeloid leukemia, BCR/ABL-positive	True	False	False
 ICD10CM:C92.3	Myeloid sarcoma	True	False	False
 ICD10CM:C92.4	Acute promyelocytic leukemia	True	False	False
 ICD10CM:C92.5	Acute myelomonocytic leukemia	True	False	False
@@ -96363,6 +96306,7 @@ ICD10CM:D47.3	Essential (hemorrhagic) thrombocythemia	True	False	False
 ICD10CM:D47.4	Osteomyelofibrosis	True	False	False
 ICD10CM:D47.Z1	Post-transplant lymphoproliferative disorder (PTLD)	True	False	False
 ICD10CM:D47.Z2	Castleman disease	True	False	False
+ICD10CM:D48.11	Desmoid tumor	True	False	False
 ICD10CM:D50	Iron deficiency anemia	True	False	False
 ICD10CM:D50-D89	Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)	True	False	False
 ICD10CM:D50.1	Sideropenic dysphagia	True	False	False
@@ -96387,6 +96331,8 @@ ICD10CM:D59.12	Cold autoimmune hemolytic anemia	True	False	False
 ICD10CM:D59.3	Hemolytic-uremic syndrome	True	False	False
 ICD10CM:D59.5	Paroxysmal nocturnal hemoglobinuria [Marchiafava-Micheli]	True	False	False
 ICD10CM:D61.0	Constitutional aplastic anemia	True	False	False
+ICD10CM:D61.02	Shwachman-Diamond syndrome	True	False	False
+ICD10CM:D61.03	Fanconi anemia	True	False	False
 ICD10CM:D61.3	Idiopathic aplastic anemia	True	False	False
 ICD10CM:D61.81	Pancytopenia	True	False	False
 ICD10CM:D61.82	Myelophthisis	True	False	False
@@ -96398,6 +96344,7 @@ ICD10CM:D68.0	Von Willebrand disease	True	False	False
 ICD10CM:D68.1	Hereditary factor XI deficiency	True	False	False
 ICD10CM:D68.311	Acquired hemophilia	True	False	False
 ICD10CM:D68.4	Acquired coagulation factor deficiency	True	False	False
+ICD10CM:D68.51	Activated protein C resistance	True	False	False
 ICD10CM:D68.61	Antiphospholipid syndrome	True	False	False
 ICD10CM:D69.0	Allergic purpura	True	False	False
 ICD10CM:D69.3	Immune thrombocytopenic purpura	True	False	False
@@ -96420,13 +96367,18 @@ ICD10CM:D74.0	Congenital methemoglobinemia	True	False	False
 ICD10CM:D75.0	Familial erythrocytosis	True	False	False
 ICD10CM:D75.1	Secondary polycythemia	True	False	False
 ICD10CM:D76.1	Hemophagocytic lymphohistiocytosis	True	False	False
+ICD10CM:D80.3	Selective deficiency of immunoglobulin G [IgG] subclasses	True	False	False
+ICD10CM:D80.5	Immunodeficiency with increased immunoglobulin M [IgM]	True	False	False
 ICD10CM:D80.7	Transient hypogammaglobulinemia of infancy	True	False	False
+ICD10CM:D81.32	Adenosine deaminase 2 deficiency	True	False	False
 ICD10CM:D81.4	Nezelof's syndrome	True	False	False
+ICD10CM:D81.5	Purine nucleoside phosphorylase [PNP] deficiency	True	False	False
 ICD10CM:D81.81	Biotin-dependent carboxylase deficiency	True	False	False
 ICD10CM:D81.810	Biotinidase deficiency	True	False	False
 ICD10CM:D81.819	Biotin-dependent carboxylase deficiency, unspecified	True	False	False
 ICD10CM:D82.0	Wiskott-Aldrich syndrome	True	False	False
 ICD10CM:D82.1	Di George's syndrome	True	False	False
+ICD10CM:D82.4	Hyperimmunoglobulin E [IgE] syndrome	True	False	False
 ICD10CM:D83	Common variable immunodeficiency	True	False	False
 ICD10CM:D84.1	Defects in the complement system	True	False	False
 ICD10CM:D84.8	Other specified immunodeficiencies	True	False	False
@@ -96447,6 +96399,7 @@ ICD10CM:D89.811	Chronic graft-versus-host disease	True	False	False
 ICD10CM:D89.82	Autoimmune lymphoproliferative syndrome [ALPS]	True	False	False
 ICD10CM:D89.83	Cytokine release syndrome	True	False	False
 ICD10CM:E00-E07	Disorders of thyroid gland (E00-E07)	True	False	False
+ICD10CM:E03.1	Congenital hypothyroidism without goiter	True	False	False
 ICD10CM:E05	Thyrotoxicosis [hyperthyroidism]	True	False	False
 ICD10CM:E05.0	Thyrotoxicosis with diffuse goiter	True	False	False
 ICD10CM:E06	Thyroiditis	True	False	False
@@ -96485,6 +96438,8 @@ ICD10CM:E30.1	Precocious puberty	True	False	False
 ICD10CM:E31.0	Autoimmune polyglandular failure	True	False	False
 ICD10CM:E31.2	Multiple endocrine neoplasia [MEN] syndromes	True	False	False
 ICD10CM:E31.21	Multiple endocrine neoplasia [MEN] type I	True	False	False
+ICD10CM:E31.22	Multiple endocrine neoplasia [MEN] type IIA	True	False	False
+ICD10CM:E31.23	Multiple endocrine neoplasia [MEN] type IIB	True	False	False
 ICD10CM:E34.0	Carcinoid syndrome	True	False	False
 ICD10CM:E34.5	Androgen insensitivity syndrome	True	False	False
 ICD10CM:E34.51	Complete androgen insensitivity syndrome	True	False	False
@@ -96534,11 +96489,14 @@ ICD10CM:E71.511	Neonatal adrenoleukodystrophy	True	False	False
 ICD10CM:E71.522	Adrenomyeloneuropathy	True	False	False
 ICD10CM:E71.540	Rhizomelic chondrodysplasia punctata	True	False	False
 ICD10CM:E72.01	Cystinuria	True	False	False
+ICD10CM:E72.02	Hartnup's disease	True	False	False
+ICD10CM:E72.03	Lowe's syndrome	True	False	False
 ICD10CM:E72.04	Cystinosis	True	False	False
 ICD10CM:E72.11	Homocystinuria	True	False	False
 ICD10CM:E72.21	Argininemia	True	False	False
 ICD10CM:E72.23	Citrullinemia	True	False	False
 ICD10CM:E72.3	Disorders of lysine and hydroxylysine metabolism	True	False	False
+ICD10CM:E72.51	Non-ketotic hyperglycinemia	True	False	False
 ICD10CM:E72.52	Trimethylaminuria	True	False	False
 ICD10CM:E72.53	Primary hyperoxaluria	True	False	False
 ICD10CM:E73	Lactose intolerance	True	False	False
@@ -96551,10 +96509,13 @@ ICD10CM:E74.04	McArdle disease	True	False	False
 ICD10CM:E74.11	Essential fructosuria	True	False	False
 ICD10CM:E74.12	Hereditary fructose intolerance	True	False	False
 ICD10CM:E74.21	Galactosemia	True	False	False
+ICD10CM:E74.810	Glucose transporter protein type 1 deficiency	True	False	False
+ICD10CM:E74.820	SLC13A5 Citrate Transporter Disorder	True	False	False
 ICD10CM:E75.0	GM2 gangliosidosis	True	False	False
 ICD10CM:E75.01	Sandhoff disease	True	False	False
 ICD10CM:E75.02	Tay-Sachs disease	True	False	False
 ICD10CM:E75.11	Mucolipidosis IV	True	False	False
+ICD10CM:E75.21	Fabry (-Anderson) disease	True	False	False
 ICD10CM:E75.22	Gaucher disease	True	False	False
 ICD10CM:E75.23	Krabbe disease	True	False	False
 ICD10CM:E75.24	Niemann-Pick disease	True	False	False
@@ -96563,10 +96524,16 @@ ICD10CM:E75.241	Niemann-Pick disease type B	True	False	False
 ICD10CM:E75.242	Niemann-Pick disease type C	True	False	False
 ICD10CM:E75.244	Niemann-Pick disease type A/B	True	False	False
 ICD10CM:E75.25	Metachromatic leukodystrophy	True	False	False
+ICD10CM:E75.27	Pelizaeus-Merzbacher disease	True	False	False
+ICD10CM:E75.28	Canavan disease	True	False	False
 ICD10CM:E75.4	Neuronal ceroid lipofuscinosis	True	False	False
 ICD10CM:E75.5	Other lipid storage disorders	True	False	False
+ICD10CM:E76.0	Mucopolysaccharidosis, type I	True	False	False
+ICD10CM:E76.01	Hurler's syndrome	True	False	False
 ICD10CM:E76.02	Hurler-Scheie syndrome	True	False	False
+ICD10CM:E76.03	Scheie's syndrome	True	False	False
 ICD10CM:E76.1	Mucopolysaccharidosis, type II	True	False	False
+ICD10CM:E76.21	Morquio mucopolysaccharidoses	True	False	False
 ICD10CM:E76.210	Morquio A mucopolysaccharidoses	True	False	False
 ICD10CM:E76.211	Morquio B mucopolysaccharidoses	True	False	False
 ICD10CM:E78.01	Familial hypercholesterolemia	True	False	False
@@ -96577,6 +96544,7 @@ ICD10CM:E78.81	Lipoid dermatoarthritis	True	False	False
 ICD10CM:E79.1	Lesch-Nyhan syndrome	True	False	False
 ICD10CM:E79.2	Myoadenylate deaminase deficiency	True	False	False
 ICD10CM:E80.1	Porphyria cutanea tarda	True	False	False
+ICD10CM:E80.21	Acute intermittent (hepatic) porphyria	True	False	False
 ICD10CM:E80.4	Gilbert syndrome	True	False	False
 ICD10CM:E80.5	Crigler-Najjar syndrome	True	False	False
 ICD10CM:E83	Disorders of mineral metabolism	True	False	False
@@ -96587,6 +96555,7 @@ ICD10CM:E83.3	Disorders of phosphorus metabolism and phosphatases	True	False	Fal
 ICD10CM:E83.52	Hypercalcemia	True	False	False
 ICD10CM:E84	Cystic fibrosis	True	False	False
 ICD10CM:E85	Amyloidosis	True	False	False
+ICD10CM:E85.81	Light chain (AL) amyloidosis	True	False	False
 ICD10CM:E85.82	Wild-type transthyretin-related (ATTR) amyloidosis	True	False	False
 ICD10CM:E87.2	Acidosis	True	False	False
 ICD10CM:E87.6	Hypokalemia	True	False	False
@@ -96669,10 +96638,12 @@ ICD10CM:F65.4	Pedophilia	True	False	False
 ICD10CM:F65.51	Sexual masochism	True	False	False
 ICD10CM:F65.52	Sexual sadism	True	False	False
 ICD10CM:F70-F79	Intellectual Disabilities (F70-F79)	True	False	False
+ICD10CM:F78.A1	SYNGAP1-related intellectual disability	True	False	False
 ICD10CM:F80.1	Expressive language disorder	True	False	False
 ICD10CM:F80.2	Mixed receptive-expressive language disorder	True	False	False
 ICD10CM:F81.2	Mathematics disorder	True	False	False
 ICD10CM:F84.0	Autistic disorder	True	False	False
+ICD10CM:F84.2	Rett's syndrome	True	False	False
 ICD10CM:F84.8	Other pervasive developmental disorders	True	False	False
 ICD10CM:F91.3	Oppositional defiant disorder	True	False	False
 ICD10CM:F95	Tic disorder	True	False	False
@@ -96691,6 +96662,7 @@ ICD10CM:G10	Huntington's disease	True	False	False
 ICD10CM:G11	Hereditary ataxia	True	False	False
 ICD10CM:G11.11	Friedreich ataxia	True	False	False
 ICD10CM:G11.4	Hereditary spastic paraplegia	True	False	False
+ICD10CM:G12.0	Infantile spinal muscular atrophy, type I [Werdnig-Hoffman]	True	False	False
 ICD10CM:G12.2	Motor neuron disease	True	False	False
 ICD10CM:G12.21	Amyotrophic lateral sclerosis	True	False	False
 ICD10CM:G12.22	Progressive bulbar palsy	True	False	False
@@ -96705,6 +96677,7 @@ ICD10CM:G21.4	Vascular parkinsonism	True	False	False
 ICD10CM:G23.0	Hallervorden-Spatz disease	True	False	False
 ICD10CM:G23.1	Progressive supranuclear ophthalmoplegia [Steele-Richardson-Olszewski]	True	False	False
 ICD10CM:G23.2	Striatonigral degeneration	True	False	False
+ICD10CM:G23.3	Hypomyelination with atrophy of the basal ganglia and cerebellum	True	False	False
 ICD10CM:G24	Dystonia	True	False	False
 ICD10CM:G24.1	Genetic torsion dystonia	True	False	False
 ICD10CM:G24.5	Blepharospasm	True	False	False
@@ -96720,6 +96693,7 @@ ICD10CM:G31.81	Alpers disease	True	False	False
 ICD10CM:G31.82	Leigh's disease	True	False	False
 ICD10CM:G31.83	Neurocognitive disorder with Lewy bodies	True	False	False
 ICD10CM:G31.85	Corticobasal degeneration	True	False	False
+ICD10CM:G31.86	Alexander disease	True	False	False
 ICD10CM:G35	Multiple sclerosis	True	False	False
 ICD10CM:G35-G37	Demyelinating diseases of the central nervous system (G35-G37)	True	False	False
 ICD10CM:G36.0	Neuromyelitis optica [Devic]	True	False	False
@@ -96728,9 +96702,11 @@ ICD10CM:G37.2	Central pontine myelinolysis	True	False	False
 ICD10CM:G37.3	Acute transverse myelitis in demyelinating disease of central nervous system	True	False	False
 ICD10CM:G40	Epilepsy and recurrent seizures	True	False	False
 ICD10CM:G40.3	Generalized idiopathic epilepsy and epileptic syndromes	True	False	False
+ICD10CM:G40.42	Cyclin-Dependent Kinase-Like 5 Deficiency Disorder	True	False	False
 ICD10CM:G40.81	Lennox-Gastaut syndrome	True	False	False
 ICD10CM:G40.83	Dravet syndrome	True	False	False
 ICD10CM:G40.B	Juvenile myoclonic epilepsy [impulsive petit mal]	True	False	False
+ICD10CM:G40.C	Lafora progressive myoclonus epilepsy	True	False	False
 ICD10CM:G43	Migraine	True	False	False
 ICD10CM:G43.0	Migraine without aura	True	False	False
 ICD10CM:G43.1	Migraine with aura	True	False	False
@@ -96794,6 +96770,7 @@ ICD10CM:G62.9	Polyneuropathy, unspecified	True	False	False
 ICD10CM:G70.0	Myasthenia gravis	True	False	False
 ICD10CM:G71.0	Muscular dystrophy	True	False	False
 ICD10CM:G71.02	Facioscapulohumeral muscular dystrophy	True	False	False
+ICD10CM:G71.032	Autosomal recessive limb girdle muscular dystrophy due to calpain-3 dysfunction	True	False	False
 ICD10CM:G71.1	Myotonic disorders	True	False	False
 ICD10CM:G71.11	Myotonic muscular dystrophy	True	False	False
 ICD10CM:G71.12	Myotonia congenita	True	False	False
@@ -96991,6 +96968,7 @@ ICD10CM:H40-H42	Glaucoma (H40-H42)	True	False	False
 ICD10CM:H40.03	Anatomical narrow angle	True	False	False
 ICD10CM:H40.05	Ocular hypertension	True	False	False
 ICD10CM:H40.1	Open-angle glaucoma	True	False	False
+ICD10CM:H40.13	Pigmentary glaucoma	True	False	False
 ICD10CM:H40.2	Primary angle-closure glaucoma	True	False	False
 ICD10CM:H40.21	Acute angle-closure glaucoma	True	False	False
 ICD10CM:H40.22	Chronic angle-closure glaucoma	True	False	False
@@ -97013,6 +96991,7 @@ ICD10CM:H46.0	Optic papillitis	True	False	False
 ICD10CM:H46.1	Retrobulbar neuritis	True	False	False
 ICD10CM:H46.2	Nutritional optic neuropathy	True	False	False
 ICD10CM:H46.3	Toxic optic neuropathy	True	False	False
+ICD10CM:H47.01	Ischemic optic neuropathy	True	False	False
 ICD10CM:H47.14	Foster-Kennedy syndrome	True	False	False
 ICD10CM:H47.2	Optic atrophy	True	False	False
 ICD10CM:H47.21	Primary optic atrophy	True	False	False
@@ -97098,6 +97077,7 @@ ICD10CM:H74.1	Adhesive middle ear disease	True	False	False
 ICD10CM:H74.4	Polyp of middle ear	True	False	False
 ICD10CM:H80	Otosclerosis	True	False	False
 ICD10CM:H80-H83	Diseases of inner ear (H80-H83)	True	False	False
+ICD10CM:H81.0	Ménière's disease	True	False	False
 ICD10CM:H81.2	Vestibular neuronitis	True	False	False
 ICD10CM:H83.0	Labyrinthitis	True	False	False
 ICD10CM:H83.2	Labyrinthine dysfunction	True	False	False
@@ -97422,6 +97402,7 @@ ICD10CM:L50.4	Vibratory urticaria	True	False	False
 ICD10CM:L50.5	Cholinergic urticaria	True	False	False
 ICD10CM:L51	Erythema multiforme	True	False	False
 ICD10CM:L51.1	Stevens-Johnson syndrome	True	False	False
+ICD10CM:L51.3	Stevens-Johnson syndrome-toxic epidermal necrolysis overlap syndrome	True	False	False
 ICD10CM:L52	Erythema nodosum	True	False	False
 ICD10CM:L55	Sunburn	True	False	False
 ICD10CM:L56.3	Solar urticaria	True	False	False
@@ -97433,6 +97414,7 @@ ICD10CM:L58	Radiodermatitis	True	False	False
 ICD10CM:L60-L75	Disorders of skin appendages (L60-L75)	True	False	False
 ICD10CM:L60.5	Yellow nail syndrome	True	False	False
 ICD10CM:L63	Alopecia areata	True	False	False
+ICD10CM:L63.0	Alopecia (capitis) totalis	True	False	False
 ICD10CM:L63.1	Alopecia universalis	True	False	False
 ICD10CM:L65.0	Telogen effluvium	True	False	False
 ICD10CM:L65.2	Alopecia mucinosa	True	False	False
@@ -97478,6 +97460,7 @@ ICD10CM:L95.1	Erythema elevatum diutinum	True	False	False
 ICD10CM:L98.0	Pyogenic granuloma	True	False	False
 ICD10CM:L98.3	Eosinophilic cellulitis [Wells]	True	False	False
 ICD10CM:M04-M04	Autoinflammatory syndromes (M04)	True	False	False
+ICD10CM:M04.2	Cryopyrin-associated periodic syndromes	True	False	False
 ICD10CM:M05.0	Felty's syndrome	True	False	False
 ICD10CM:M06.1	Adult-onset Still's disease	True	False	False
 ICD10CM:M08.1	Juvenile ankylosing spondylitis	True	False	False
@@ -97506,6 +97489,7 @@ ICD10CM:M33.0	Juvenile dermatomyositis	True	False	False
 ICD10CM:M33.2	Polymyositis	True	False	False
 ICD10CM:M34	Systemic sclerosis [scleroderma]	True	False	False
 ICD10CM:M35.0	Sjögren syndrome	True	False	False
+ICD10CM:M35.2	Behçet's disease	True	False	False
 ICD10CM:M35.3	Polymyalgia rheumatica	True	False	False
 ICD10CM:M35.5	Multifocal fibrosclerosis	True	False	False
 ICD10CM:M35.7	Hypermobility syndrome	True	False	False
@@ -97667,6 +97651,7 @@ ICD10CM:N94.81	Vulvodynia	True	False	False
 ICD10CM:N95.2	Postmenopausal atrophic vaginitis	True	False	False
 ICD10CM:N97	Female infertility	True	False	False
 ICD10CM:N97.2	Female infertility of uterine origin	True	False	False
+ICD10CM:N98.1	Hyperstimulation of ovaries	True	False	False
 ICD10CM:O14	Pre-eclampsia	True	False	False
 ICD10CM:O14.1	Severe pre-eclampsia	True	False	False
 ICD10CM:O14.2	HELLP syndrome	True	False	False
@@ -97674,6 +97659,7 @@ ICD10CM:O15	Eclampsia	True	False	False
 ICD10CM:O24.4	Gestational diabetes mellitus	True	False	False
 ICD10CM:O26.4	Herpes gestationis	True	False	False
 ICD10CM:O26.5	Maternal hypotension syndrome	True	False	False
+ICD10CM:O26.64	Intrahepatic cholestasis of pregnancy	True	False	False
 ICD10CM:O26.86	Pruritic urticarial papules and plaques of pregnancy (PUPPP)	True	False	False
 ICD10CM:O40	Polyhydramnios	True	False	False
 ICD10CM:O41.0	Oligohydramnios	True	False	False
@@ -97767,6 +97753,7 @@ ICD10CM:Q30.0	Choanal atresia	True	False	False
 ICD10CM:Q31.1	Congenital subglottic stenosis	True	False	False
 ICD10CM:Q31.3	Laryngocele	True	False	False
 ICD10CM:Q31.5	Congenital laryngomalacia	True	False	False
+ICD10CM:Q32.0	Congenital tracheomalacia	True	False	False
 ICD10CM:Q33.3	Agenesis of lung	True	False	False
 ICD10CM:Q35	Cleft palate	True	False	False
 ICD10CM:Q35-Q37	Cleft lip and cleft palate (Q35-Q37)	True	False	False
@@ -97784,6 +97771,7 @@ ICD10CM:Q43.1	Hirschsprung's disease	True	False	False
 ICD10CM:Q44.2	Atresia of bile ducts	True	False	False
 ICD10CM:Q44.4	Choledochal cyst	True	False	False
 ICD10CM:Q44.6	Cystic disease of liver	True	False	False
+ICD10CM:Q44.71	Alagille syndrome	True	False	False
 ICD10CM:Q45.1	Annular pancreas	True	False	False
 ICD10CM:Q45.2	Congenital pancreatic cyst	True	False	False
 ICD10CM:Q50.4	Embryonic cyst of fallopian tube	True	False	False
@@ -97839,14 +97827,18 @@ ICD10CM:Q78.2	Osteopetrosis	True	False	False
 ICD10CM:Q78.3	Progressive diaphyseal dysplasia	True	False	False
 ICD10CM:Q78.4	Enchondromatosis	True	False	False
 ICD10CM:Q78.5	Metaphyseal dysplasia	True	False	False
+ICD10CM:Q78.6	Multiple congenital exostoses	True	False	False
 ICD10CM:Q79.0	Congenital diaphragmatic hernia	True	False	False
 ICD10CM:Q79.3	Gastroschisis	True	False	False
 ICD10CM:Q79.4	Prune belly syndrome	True	False	False
 ICD10CM:Q79.6	Ehlers-Danlos syndromes	True	False	False
+ICD10CM:Q79.61	Classical Ehlers-Danlos syndrome	True	False	False
+ICD10CM:Q79.63	Vascular Ehlers-Danlos syndrome	True	False	False
 ICD10CM:Q80	Congenital ichthyosis	True	False	False
 ICD10CM:Q80.0	Ichthyosis vulgaris	True	False	False
 ICD10CM:Q80.1	X-linked ichthyosis	True	False	False
 ICD10CM:Q80.2	Lamellar ichthyosis	True	False	False
+ICD10CM:Q80.4	Harlequin fetus	True	False	False
 ICD10CM:Q81	Epidermolysis bullosa	True	False	False
 ICD10CM:Q81.0	Epidermolysis bullosa simplex	True	False	False
 ICD10CM:Q81.1	Epidermolysis bullosa letalis	True	False	False
@@ -97861,6 +97853,8 @@ ICD10CM:Q85.01	Neurofibromatosis, type 1	True	False	False
 ICD10CM:Q85.02	Neurofibromatosis, type 2	True	False	False
 ICD10CM:Q85.03	Schwannomatosis	True	False	False
 ICD10CM:Q85.1	Tuberous sclerosis	True	False	False
+ICD10CM:Q85.81	PTEN hamartoma tumor syndrome	True	False	False
+ICD10CM:Q85.83	Von Hippel-Lindau syndrome	True	False	False
 ICD10CM:Q86.0	Fetal alcohol syndrome (dysmorphic)	True	False	False
 ICD10CM:Q86.1	Fetal hydantoin syndrome	True	False	False
 ICD10CM:Q87.11	Prader-Willi syndrome	True	False	False
@@ -97868,14 +97862,20 @@ ICD10CM:Q87.3	Congenital malformation syndromes involving early overgrowth	True	
 ICD10CM:Q87.4	Marfan syndrome	True	False	False
 ICD10CM:Q87.81	Alport syndrome	True	False	False
 ICD10CM:Q87.82	Arterial tortuosity syndrome	True	False	False
+ICD10CM:Q87.83	Bardet-Biedl syndrome	True	False	False
+ICD10CM:Q87.85	MED13L syndrome	True	False	False
+ICD10CM:Q87.86	Kleefstra syndrome	True	False	False
 ICD10CM:Q89.3	Situs inversus	True	False	False
 ICD10CM:Q89.4	Conjoined twins	True	False	False
 ICD10CM:Q90	Down syndrome	True	False	False
 ICD10CM:Q90-Q99	Chromosomal abnormalities, not elsewhere classified (Q90-Q99)	True	False	False
 ICD10CM:Q93.3	Deletion of short arm of chromosome 4	True	False	False
 ICD10CM:Q93.51	Angelman syndrome	True	False	False
+ICD10CM:Q93.52	Phelan-McDermid syndrome	True	False	False
+ICD10CM:Q93.81	Velo-cardio-facial syndrome	True	False	False
 ICD10CM:Q93.82	Williams syndrome	True	False	False
 ICD10CM:Q96.0	Karyotype 45, X	True	False	False
+ICD10CM:Q99.2	Fragile X chromosome	True	False	False
 ICD10CM:T20-T25	Burns and corrosions of external body surface, specified by site (T20-T25)	True	False	False
 ICD10CM:T33-T34	Frostbite (T33-T34)	True	False	False
 ICD10CM:T61.0	Ciguatera fish poisoning	True	False	False

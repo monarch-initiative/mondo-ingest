@@ -44,6 +44,7 @@
 | MONDO:0013596 | OMIM:614157          | MONDO:equivalentObsolete |
 | MONDO:0013617 | OMIM:614192          | MONDO:equivalentObsolete |
 | MONDO:0013701 | OMIM:614339          | MONDO:equivalentObsolete |
+| MONDO:0014009 | OMIM:615022          | MONDO:equivalentObsolete |
 | MONDO:0014849 | OMIM:616958          | MONDO:equivalentObsolete |
 | MONDO:0017996 | OMIM:615057          | MONDO:equivalentObsolete |
 | MONDO:0018138 | OMIM:103470          | MONDO:equivalentObsolete |

@@ -2,12 +2,12 @@
   "metrics": {
     "abox_axiom_count": 0,
     "abox_axiom_count_incl": 0,
-    "annotation_property_count": 8,
-    "annotation_property_count_incl": 8,
-    "axiom_count": 63010,
-    "axiom_count_incl": 63010,
-    "class_count": 12543,
-    "class_count_incl": 12543,
+    "annotation_property_count": 6,
+    "annotation_property_count_incl": 6,
+    "axiom_count": 50373,
+    "axiom_count_incl": 50373,
+    "class_count": 12597,
+    "class_count_incl": 12597,
     "dataproperty_count": 0,
     "dataproperty_count_incl": 0,
     "datatypes_count": 1,
@@ -20,30 +20,30 @@
     "expressivity_incl": "",
     "individual_count": 0,
     "individual_count_incl": 0,
-    "logical_axiom_count": 12542,
-    "logical_axiom_count_incl": 12542,
+    "logical_axiom_count": 12575,
+    "logical_axiom_count_incl": 12575,
     "obj_property_count": 0,
     "obj_property_count_incl": 0,
-    "ontology_anno_count": 3,
+    "ontology_anno_count": 0,
     "ontology_iri": "http://purl.obolibrary.org/obo/mondo/sources/icd10who.owl",
-    "ontology_version_iri": "http://purl.obolibrary.org/obo/mondo/sources/2026-08-17/icd10who.owl",
+    "ontology_version_iri": "http://purl.obolibrary.org/obo/mondo/sources/2026-10-12/icd10who.owl",
     "owl2": true,
     "owl2_dl": true,
     "owl2_el": true,
     "owl2_ql": true,
-    "owl2_rl": false,
+    "owl2_rl": true,
     "rbox_axiom_count": 0,
     "rbox_axiom_count_incl": 0,
     "rdfs": true,
     "rule_count": 0,
     "rule_count_incl": 0,
-    "signature_entity_count": 12552,
-    "signature_entity_count_incl": 12552,
+    "signature_entity_count": 12604,
+    "signature_entity_count_incl": 12604,
     "syntax": "RDF/XML Syntax",
-    "tbox_axiom_count": 12542,
-    "tbox_axiom_count_incl": 12542,
-    "tboxrbox_axiom_count": 12542,
-    "tboxrbox_axiom_count_incl": 12542,
+    "tbox_axiom_count": 12575,
+    "tbox_axiom_count_incl": 12575,
+    "tboxrbox_axiom_count": 12575,
+    "tboxrbox_axiom_count_incl": 12575,
     "axiom_types": [
       "AnnotationAssertion",
       "SubAnnotationPropertyOf",
@@ -61,58 +61,53 @@
     "valid_imports": [],
     "valid_imports_incl": [],
     "axiom_type_count": {
-      "AnnotationAssertion": 37919,
+      "AnnotationAssertion": 25194,
       "SubAnnotationPropertyOf": 2,
-      "Declaration": 12547,
-      "SubClassOf": 12542
+      "Declaration": 12602,
+      "SubClassOf": 12575
     },
     "axiom_type_count_incl": {
-      "AnnotationAssertion": 37919,
+      "AnnotationAssertion": 25194,
       "SubAnnotationPropertyOf": 2,
-      "Declaration": 12547,
-      "SubClassOf": 12542
+      "Declaration": 12602,
+      "SubClassOf": 12575
     },
     "class_expression_count": {
-      "Class": 37626
+      "Class": 37747
     },
     "class_expression_count_incl": {
-      "Class": 37626
+      "Class": 37747
     },
     "curie_map": {
       "oboInOwl": "http://www.geneontology.org/formats/oboInOwl#",
-      "owl": "http://www.w3.org/2002/07/owl#",
       "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
       "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
       "obo": "http://purl.obolibrary.org/obo/"
     },
     "namespace_axiom_count": {
-      "prefix_unknown": 37604,
-      "oboInOwl": 25675,
-      "owl": 22,
-      "rdfs": 25084,
+      "prefix_unknown": 37747,
+      "oboInOwl": 25199,
+      "rdfs": 12597,
       "obo": 4
     },
     "namespace_axiom_count_incl": {
-      "prefix_unknown": 37604,
-      "oboInOwl": 25675,
-      "owl": 22,
-      "rdfs": 25084,
+      "prefix_unknown": 37747,
+      "oboInOwl": 25199,
+      "rdfs": 12597,
       "obo": 4
     },
     "namespace_entity_count": {
-      "prefix_unknown": 12542,
-      "owl": 1,
+      "prefix_unknown": 12597,
       "oboInOwl": 3,
       "rdf": 1,
-      "rdfs": 3,
+      "rdfs": 1,
       "obo": 2
     },
     "namespace_entity_count_incl": {
-      "prefix_unknown": 12542,
-      "owl": 1,
+      "prefix_unknown": 12597,
       "oboInOwl": 3,
       "rdf": 1,
-      "rdfs": 3,
+      "rdfs": 1,
       "obo": 2
     },
     "owl2dl_profile_violation": {}
