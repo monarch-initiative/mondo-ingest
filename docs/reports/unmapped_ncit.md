@@ -1179,6 +1179,7 @@
 | NCIT:C5923   | Astler-Coller C2 Rectal Carcinoma                                                                                                                                           |
 | NCIT:C5929   | Astler-Coller C3 Colorectal Carcinoma                                                                                                                                       |
 | NCIT:C5921   | Astler-Coller C3 Rectal Carcinoma                                                                                                                                           |
+| NCIT:C4324   | Astroblastoma, MN1-Altered                                                                                                                                                  |
 | NCIT:C185167 | Astrocytoma, IDH-Mutant                                                                                                                                                     |
 | NCIT:C185184 | Astrocytoma, IDH-Wildtype                                                                                                                                                   |
 | NCIT:C185185 | Astrocytoma, Not Otherwise Specified                                                                                                                                        |
@@ -4286,7 +4287,6 @@
 | NCIT:C198682 | Juvenile Myelomonocytic Leukemia Associated with Noonan Syndrome-Like Disorder                                                                                              |
 | NCIT:C198661 | Juvenile Myelomonocytic Leukemia-Like Neoplasm                                                                                                                              |
 | NCIT:C7289   | Juvenile Ovarian Granulosa Cell Tumor                                                                                                                                       |
-| NCIT:C202205 | Juvenile Trabecular Ossifying Fibroma                                                                                                                                       |
 | NCIT:C6580   | Juxta-Articular Myxoma                                                                                                                                                      |
 | NCIT:C22969  | Juxtacortical Chondroma of the Mouse Skeletal System                                                                                                                        |
 | NCIT:C22970  | Juxtacortical Chondrosarcoma of the Mouse Skeletal System                                                                                                                   |
@@ -8179,7 +8179,6 @@
 | NCIT:C165628 | Proximal Gastric Adenocarcinoma                                                                                                                                             |
 | NCIT:C115334 | Proximal Urethral Carcinoma                                                                                                                                                 |
 | NCIT:C176887 | Psammocarcinoma                                                                                                                                                             |
-| NCIT:C202209 | Psammomatoid Ossifying Fibroma                                                                                                                                              |
 | NCIT:C207448 | Pseudoangiomatous Atypical Fibroxanthoma                                                                                                                                    |
 | NCIT:C121668 | Pseudomyogenic Hemangioendothelioma                                                                                                                                         |
 | NCIT:C3763   | Pulmonary Adenomatosis                                                                                                                                                      |

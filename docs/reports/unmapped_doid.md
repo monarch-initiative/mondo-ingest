@@ -4,9 +4,22 @@
 ### Unmapped mappable terms _(!excluded, !deprecated)_
 | subject_id   | subject_label                                                                                                                          |
 |:-------------|:---------------------------------------------------------------------------------------------------------------------------------------|
+| DOID:0061344 | Adams-Oliver syndrome 1                                                                                                                |
+| DOID:0061345 | Adams-Oliver syndrome 2                                                                                                                |
+| DOID:0061346 | Adams-Oliver syndrome 4                                                                                                                |
+| DOID:0061347 | Adams-Oliver syndrome 5                                                                                                                |
+| DOID:0061348 | Adams-Oliver syndrome 6                                                                                                                |
 | DOID:0070738 | Al Kaissi syndrome                                                                                                                     |
 | DOID:0051080 | Alport syndrome 3B                                                                                                                     |
 | DOID:0070787 | Alsahan-Harris syndrome                                                                                                                |
+| DOID:0070836 | Charcot-Marie-tooth disease axonal type 2FF                                                                                            |
+| DOID:0070837 | Charcot-Marie-tooth disease axonal type 2HH                                                                                            |
+| DOID:0070838 | Charcot-Marie-tooth disease axonal type 2II                                                                                            |
+| DOID:0070839 | Charcot-Marie-tooth disease axonal type 2LL                                                                                            |
+| DOID:0070840 | Charcot-Marie-tooth disease axonal type 2MM                                                                                            |
+| DOID:0070833 | Charcot-Marie-tooth disease type 1H                                                                                                    |
+| DOID:0070834 | Charcot-Marie-tooth disease type 1I                                                                                                    |
+| DOID:0070835 | Charcot-Marie-tooth disease type 1J                                                                                                    |
 | DOID:0051092 | Damseh-Danson neurodevelopmental disorder                                                                                              |
 | DOID:0070692 | Davis-Wells syndrome                                                                                                                   |
 | DOID:0070792 | Dursun-Ozgul neurodevelopmental syndrome                                                                                               |
@@ -18,6 +31,7 @@
 | DOID:0061290 | Galloway-Mowat syndrome 7                                                                                                              |
 | DOID:0061291 | Galloway-Mowat syndrome 8                                                                                                              |
 | DOID:0061292 | Galloway-Mowat syndrome 9                                                                                                              |
+| DOID:0061332 | Glanzmann thrombasthenia 2                                                                                                             |
 | DOID:0070794 | Guillouet-Gordon syndrome                                                                                                              |
 | DOID:0070746 | HELIX syndrome                                                                                                                         |
 | DOID:0070781 | HER2-low breast cancer                                                                                                                 |
@@ -26,6 +40,13 @@
 | DOID:0061300 | Hermansky-Pudlak syndrome 10                                                                                                           |
 | DOID:0061301 | Hermansky-Pudlak syndrome 11                                                                                                           |
 | DOID:0070796 | ICHAD syndrome                                                                                                                         |
+| DOID:0061336 | Joubert syndrome 34                                                                                                                    |
+| DOID:0061337 | Joubert syndrome 35                                                                                                                    |
+| DOID:0061338 | Joubert syndrome 36                                                                                                                    |
+| DOID:0061340 | Joubert syndrome 37                                                                                                                    |
+| DOID:0061341 | Joubert syndrome 38                                                                                                                    |
+| DOID:0061342 | Joubert syndrome 39                                                                                                                    |
+| DOID:0061343 | Joubert syndrome 40                                                                                                                    |
 | DOID:0070801 | Li-Takada-Miyake syndrome                                                                                                              |
 | DOID:0070700 | Luo-Agrawal neurodevelopmental syndrome                                                                                                |
 | DOID:0061295 | Meckel syndrome 10                                                                                                                     |
@@ -63,6 +84,7 @@
 | DOID:0081469 | autosomal dominant intellectual developmental disorder 77                                                                              |
 | DOID:0081467 | autosomal dominant intellectual developmental disorder 78                                                                              |
 | DOID:0070688 | autosomal recessive congenital indifference to pain                                                                                    |
+| DOID:0061284 | autosomal recessive dyskeratosis congenita 8                                                                                           |
 | DOID:0070739 | autosomal recessive neurodevelopmental disorder with or without hyperkinetic movements and seizures                                    |
 | DOID:0070759 | autosomal recessive progressive external ophthalmoplegia with mitochondrial DNA deletions 6                                            |
 | DOID:0060854 | autosomal recessive pseudohypoaldosteronism type 1                                                                                     |
@@ -75,6 +97,7 @@
 | DOID:0060160 | childhood spinal muscular atrophy                                                                                                      |
 | DOID:0111368 | cholesterol-ester transfer protein deficiency                                                                                          |
 | DOID:2536    | chronic inflammatory demyelinating polyneuritis                                                                                        |
+| DOID:0051105 | clear cell odontogenic carcinoma                                                                                                       |
 | DOID:0070742 | combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia                                                |
 | DOID:0051078 | congenital anomalies of the kidney and urinary tract 3                                                                                 |
 | DOID:0070743 | congenital facial palsy with ptosis and velopharyngeal dysfunction                                                                     |
@@ -125,6 +148,7 @@
 | DOID:0070784 | hormone receptor-positive breast cancer                                                                                                |
 | DOID:0070780 | hormone receptor-positive/HER2-negative breast cancer                                                                                  |
 | DOID:0070779 | hormone receptor-positive/HER2-positive breast cancer                                                                                  |
+| DOID:0051106 | hyalinizing clear cell carcinoma                                                                                                       |
 | DOID:0051100 | hydroxyprolinemia                                                                                                                      |
 | DOID:0061212 | hypocholesteremia                                                                                                                      |
 | DOID:0070795 | hyposulfatemia with skeletal dysplasia                                                                                                 |
@@ -183,10 +207,43 @@
 | DOID:0070687 | normal pressure hydrocephalus 1                                                                                                        |
 | DOID:0070821 | ocular pterygium-digital keloid dysplasia syndrome                                                                                     |
 | DOID:0070822 | oculovertebral syndrome                                                                                                                |
+| DOID:0061333 | omphalocele-exstrophy-imperforate anus-spinal defects complex                                                                          |
+| DOID:0061302 | oocyte/zygote/embryo maturation arrest                                                                                                 |
+| DOID:0061303 | oocyte/zygote/embryo maturation arrest 1                                                                                               |
+| DOID:0061312 | oocyte/zygote/embryo maturation arrest 10                                                                                              |
+| DOID:0061313 | oocyte/zygote/embryo maturation arrest 11                                                                                              |
+| DOID:0061314 | oocyte/zygote/embryo maturation arrest 12                                                                                              |
+| DOID:0061315 | oocyte/zygote/embryo maturation arrest 13                                                                                              |
+| DOID:0061316 | oocyte/zygote/embryo maturation arrest 14                                                                                              |
+| DOID:0061317 | oocyte/zygote/embryo maturation arrest 15                                                                                              |
+| DOID:0061318 | oocyte/zygote/embryo maturation arrest 16                                                                                              |
+| DOID:0061319 | oocyte/zygote/embryo maturation arrest 17                                                                                              |
+| DOID:0061320 | oocyte/zygote/embryo maturation arrest 18                                                                                              |
+| DOID:0061321 | oocyte/zygote/embryo maturation arrest 19                                                                                              |
+| DOID:0061304 | oocyte/zygote/embryo maturation arrest 2                                                                                               |
+| DOID:0061322 | oocyte/zygote/embryo maturation arrest 20                                                                                              |
+| DOID:0061323 | oocyte/zygote/embryo maturation arrest 21                                                                                              |
+| DOID:0061324 | oocyte/zygote/embryo maturation arrest 22                                                                                              |
+| DOID:0061325 | oocyte/zygote/embryo maturation arrest 23                                                                                              |
+| DOID:0061326 | oocyte/zygote/embryo maturation arrest 24                                                                                              |
+| DOID:0061327 | oocyte/zygote/embryo maturation arrest 25                                                                                              |
+| DOID:0061334 | oocyte/zygote/embryo maturation arrest 26                                                                                              |
+| DOID:0061335 | oocyte/zygote/embryo maturation arrest 27                                                                                              |
+| DOID:0061305 | oocyte/zygote/embryo maturation arrest 3                                                                                               |
+| DOID:0061306 | oocyte/zygote/embryo maturation arrest 4                                                                                               |
+| DOID:0061307 | oocyte/zygote/embryo maturation arrest 5                                                                                               |
+| DOID:0061308 | oocyte/zygote/embryo maturation arrest 6                                                                                               |
+| DOID:0061309 | oocyte/zygote/embryo maturation arrest 7                                                                                               |
+| DOID:0061310 | oocyte/zygote/embryo maturation arrest 8                                                                                               |
+| DOID:0061311 | oocyte/zygote/embryo maturation arrest 9                                                                                               |
 | DOID:146     | papilledema                                                                                                                            |
 | DOID:0070768 | peri-implant disease                                                                                                                   |
 | DOID:0070769 | peri-implant mucositis                                                                                                                 |
 | DOID:0070770 | peri-implantitis                                                                                                                       |
+| DOID:0061328 | platelet-type bleeding disorder 21                                                                                                     |
+| DOID:0061329 | platelet-type bleeding disorder 22                                                                                                     |
+| DOID:0061330 | platelet-type bleeding disorder 24                                                                                                     |
+| DOID:0061331 | platelet-type bleeding disorder 25                                                                                                     |
 | DOID:0051081 | polycystic kidney disease 8                                                                                                            |
 | DOID:0070758 | primary ciliary dyskinesia 46                                                                                                          |
 | DOID:0070760 | primary ciliary dyskinesia 47 and lissencephaly                                                                                        |
