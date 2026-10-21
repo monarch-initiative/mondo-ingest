@@ -1,0 +1,4020 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Migrate ordo - Mondo Disease Ontology Ingest</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ordo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-header__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mondo Disease Ontology Ingest
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Migrate ordo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-nav__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Mondo Disease Ontology Ingest
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Developers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Developers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapped_deprecated/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Deprecated terms w/ Mondo xrefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo sources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo sources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Externally managed content
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Externally managed content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../externally-managed-content/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/nord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NORD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo source metrics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo source metrics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ordo" class="md-nav__link">
+    <span class="md-ellipsis">
+      ORDO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ORDO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migratable-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migratable terms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Migrate ordo</h1>
+
+<h2 id="ordo">ORDO</h2>
+<p><a href="https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/slurp/ordo.tsv">Interactive FlatGithub table</a></p>
+<h3 id="migratable-terms">Migratable terms</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">mondo_id</th>
+<th style="text-align: left;">mondo_label</th>
+<th style="text-align: left;">xref</th>
+<th style="text-align: left;">xref_source</th>
+<th style="text-align: left;">original_label</th>
+<th style="text-align: left;">definition</th>
+<th style="text-align: left;">parents</th>
+<th style="text-align: left;">subset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ID</td>
+<td style="text-align: left;">LABEL</td>
+<td style="text-align: left;">A oboInOwl:hasDbXref</td>
+<td style="text-align: left;">&gt;A oboInOwl:source SPLIT=</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">A IAO:0000115</td>
+<td style="text-align: left;">SC %</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981002</td>
+<td style="text-align: left;">combined immunodeficiency-lymphopenia-cancer predisposing syndrome due to aiolos deficiency</td>
+<td style="text-align: left;">Orphanet:699593</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Combined immunodeficiency-lymphopenia-cancer predisposing syndrome due to AIOLOS deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0030333</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981003</td>
+<td style="text-align: left;">combined immunodeficiency-hypogammaglobulinemia-cancer predisposing syndrome due to aiolos deficiency</td>
+<td style="text-align: left;">Orphanet:699596</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Combined immunodeficiency-hypogammaglobulinemia-cancer predisposing syndrome due to AIOLOS deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0030333</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981006</td>
+<td style="text-align: left;">sickle cell s-other specified hemoglobin variant</td>
+<td style="text-align: left;">Orphanet:700107</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Sickle cell S-other specified hemoglobin variant</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0979354,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981034</td>
+<td style="text-align: left;">common variable immunodeficiency without known genetic defect</td>
+<td style="text-align: left;">Orphanet:231205</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Common variable immunodeficiency without known genetic defect</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981035</td>
+<td style="text-align: left;">uterine arteriovenous malformation</td>
+<td style="text-align: left;">Orphanet:693815</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Uterine arteriovenous malformation</td>
+<td style="text-align: left;">A rare visceral arteriovenous malformation characterized by abnormal connections between uterine arteries and veins. Vaginal bleeding is the most common clinical feature, may be very severe, and is refractory to conventional treatments. Variable clinical features may include abdominal pulsatile masses, frequent urination or urinary incontinence, dyspareunia, and hematuria. Some patients remain asymptomatic.</td>
+<td style="text-align: left;">MONDO:0015106,MONDO:8000034,MONDO:8000032</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981036</td>
+<td style="text-align: left;">pancreatic arteriovenous malformation</td>
+<td style="text-align: left;">Orphanet:693826</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Pancreatic arteriovenous malformation</td>
+<td style="text-align: left;">A rare visceral arteriovenous malformation of the pancreas characterized by abnormal blood flow from the arterial system directly into the venous system without passing through the capillaries. Patients may present with episodic gastrointestinal bleeding or hemoperitoneum, epigastric or abdominal pain, pancreatitis, portal hypertension, and pseudocysts. Some patients remain asymptomatic.</td>
+<td style="text-align: left;">MONDO:8000034,MONDO:8000032,MONDO:0015213</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981037</td>
+<td style="text-align: left;">gastrointestinal tract arteriovenous malformation</td>
+<td style="text-align: left;">Orphanet:693832</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Gastrointestinal tract arteriovenous malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015245,MONDO:0015621,MONDO:8000032,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981038</td>
+<td style="text-align: left;">renal arteriovenous malformation</td>
+<td style="text-align: left;">Orphanet:693839</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Renal arteriovenous malformation</td>
+<td style="text-align: left;">A rare visceral arteriovenous malformation characterized by abnormal communications between renal arteries and the venous system. Most cases are asymptomatic but patients may present with clinical symptoms including hematuria, nausea, lumbar and abdominal pain, hypertension, cardiomegaly and high output heart failure. This type of malformation is more commonly reported in females.</td>
+<td style="text-align: left;">MONDO:0019748,MONDO:8000034,MONDO:8000032</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981039</td>
+<td style="text-align: left;">hepatic arteriovenous malformation</td>
+<td style="text-align: left;">Orphanet:693846</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hepatic arteriovenous malformation</td>
+<td style="text-align: left;">A rare visceral arteriovenous malformation characterized by direct arterial-to-venous connections within the liver. Patients may be asymptomatic or present with symptoms such as anemia, consumptive coagulopathy, portal hypertension, hepatomegaly and may develop complications including congestive heart failure, necrosis of the liver or hydrops fetalis.</td>
+<td style="text-align: left;">MONDO:0015113,MONDO:8000032,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981040</td>
+<td style="text-align: left;">splenic arteriovenous malformation</td>
+<td style="text-align: left;">Orphanet:693863</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Splenic arteriovenous malformation</td>
+<td style="text-align: left;">A rare visceral arteriovenous malformation characterized by abnormal communication between splenic artery and the splenic vein at the level of the splenic hilum. These malformations may lead to the formation of splenic artery aneurysms that can rupture. Clinical features include abdominal pain, hematemesis, melena, diarrhea, and portal hypertension due to venous congestion. The spleen is typically enlarged with extensive areas of infarction and dilated vessels.</td>
+<td style="text-align: left;">MONDO:8000032,MONDO:8000034,MONDO:0015213</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981041</td>
+<td style="text-align: left;">gallblader arteriovenous malformation</td>
+<td style="text-align: left;">Orphanet:693869</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Gallblader arteriovenous malformation</td>
+<td style="text-align: left;">A rare visceral arteriovenous malformation characterized by dilated and tortuous feeding arteries and veins of the gallblader. Patients present with abdominal pain. Association with hepatocellular carcinoma in some patients have been reported.</td>
+<td style="text-align: left;">MONDO:0015213,MONDO:8000032,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981042</td>
+<td style="text-align: left;">urinary tract arteriovenous malformation</td>
+<td style="text-align: left;">Orphanet:693872</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Urinary tract arteriovenous malformation</td>
+<td style="text-align: left;">A rare visceral arteriovenous malformation characterized by abnormal communication between veins and arteries of the ureter, urethra, or urinary bladder. Major clinical signs include hematuria and suprapubic pain. Additional clinical features may include acute urinary retention and increased urinary frequency.</td>
+<td style="text-align: left;">MONDO:8000032,MONDO:0015106,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981043</td>
+<td style="text-align: left;">common variable immunodeficiency phenotype due to germinal digenic/polygenic mutations</td>
+<td style="text-align: left;">Orphanet:696857</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Common variable immunodeficiency phenotype due to germinal digenic/polygenic mutations</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981044</td>
+<td style="text-align: left;">common variable immunodeficiency phenotype due to somatic mutations</td>
+<td style="text-align: left;">Orphanet:696863</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Common variable immunodeficiency phenotype due to somatic mutations</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981045</td>
+<td style="text-align: left;">common variable immunodeficiency phenotype due to germinal monogenic mutation</td>
+<td style="text-align: left;">Orphanet:696870</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Common variable immunodeficiency phenotype due to germinal monogenic mutation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981046</td>
+<td style="text-align: left;">autoimmune heparin-induced thrombocytopenia</td>
+<td style="text-align: left;">Orphanet:698945</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Autoimmune heparin-induced thrombocytopenia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981047</td>
+<td style="text-align: left;">spontaneous heparin-induced thrombocytopenia</td>
+<td style="text-align: left;">Orphanet:699021</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Spontaneous heparin-induced thrombocytopenia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981048</td>
+<td style="text-align: left;">vaccine-induced immune thrombotic thrombocytopenia</td>
+<td style="text-align: left;">Orphanet:699029</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Vaccine-induced immune thrombotic thrombocytopenia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981230</td>
+<td style="text-align: left;">primary hypophysitis</td>
+<td style="text-align: left;">Orphanet:95506</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Primary hypophysitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019832,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981235</td>
+<td style="text-align: left;">young adult-onset distal hereditary motor neuropathy</td>
+<td style="text-align: left;">Orphanet:314485</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Young adult-onset distal hereditary motor neuropathy</td>
+<td style="text-align: left;">Young adult-onset distal hereditary motor neuropathy is a rare autosomal recessive distal hereditary motor neuropathy characterized by slowly progressive muscular weakness, hypotonia and atrophy of the lower limbs, more pronounced distally, leading to paralysis, and loss of tendon reflexes. Additional features may include pes cavus and mild dysphonia. The upper limbs are relatively spared.</td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0015363,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981538</td>
+<td style="text-align: left;">3q27.3 microdeletion syndrome</td>
+<td style="text-align: left;">Orphanet:397695</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">3q27.3 microdeletion syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0015159,MONDO:0035863,MONDO:0016902,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981539</td>
+<td style="text-align: left;">unstable alpha globin chain variant disease</td>
+<td style="text-align: left;">Orphanet:707789</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Unstable alpha globin chain variant disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017144,MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981540</td>
+<td style="text-align: left;">unstable gamma globin chain variant disease</td>
+<td style="text-align: left;">Orphanet:707792</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Unstable gamma globin chain variant disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0034039,MONDO:0019050,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981541</td>
+<td style="text-align: left;">distal arthrogryposis-progressive scoliosis-thumb deformity-impaired proprioception syndrome</td>
+<td style="text-align: left;">Orphanet:707937</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Distal arthrogryposis-progressive scoliosis-thumb deformity-impaired proprioception syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019942,MONDO:8000034,MONDO:8000032,MONDO:0016132</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981542</td>
+<td style="text-align: left;">early-onset autosomal recessive ttn-related distal myopathy</td>
+<td style="text-align: left;">Orphanet:707983</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Early-onset autosomal recessive TTN-related distal myopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016109,MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981543</td>
+<td style="text-align: left;">methemoglobinemia-related cyanosis</td>
+<td style="text-align: left;">Orphanet:707993</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Methemoglobinemia-related cyanosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0005570,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981544</td>
+<td style="text-align: left;">ectodermal dysplasia-natal teeth-skin abscesses-plantar hyperkeratosis-hearing impairment syndrome</td>
+<td style="text-align: left;">Orphanet:708014</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Ectodermal dysplasia-natal teeth-skin abscesses-plantar hyperkeratosis-hearing impairment syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0019287,MONDO:8000032,MONDO:0019589</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981545</td>
+<td style="text-align: left;">congenital heart defect-ectodermal dysplasia- brachydactyly-telangiectasia syndrome</td>
+<td style="text-align: left;">Orphanet:708019</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital heart defect-ectodermal dysplasia- brachydactyly-telangiectasia syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019287,MONDO:8000032,MONDO:0015506,MONDO:0015159,MONDO:8000034,MONDO:0035863</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981546</td>
+<td style="text-align: left;">ectodermal dysplasia with agenesis of maxillary lateral incisors and mandibular anterior teeth</td>
+<td style="text-align: left;">Orphanet:708036</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Ectodermal dysplasia with agenesis of maxillary lateral incisors and mandibular anterior teeth</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019287,MONDO:8000032,MONDO:0020014,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981547</td>
+<td style="text-align: left;">ectodermal dysplasia with oligodontia-hand and foot malformation-hypoplastic nipples</td>
+<td style="text-align: left;">Orphanet:708043</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Ectodermal dysplasia with oligodontia-hand and foot malformation-hypoplastic nipples</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0800090,MONDO:8000032,MONDO:0020014,MONDO:0019287</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981548</td>
+<td style="text-align: left;">autosomal dominant distal nebulin myopathy</td>
+<td style="text-align: left;">Orphanet:708123</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Autosomal dominant distal nebulin myopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016108,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981549</td>
+<td style="text-align: left;">dnajb6-related distal myopathy</td>
+<td style="text-align: left;">Orphanet:708126</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">DNAJB6-related distal myopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0016108,MONDO:8000034,MONDO:0018943</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981550</td>
+<td style="text-align: left;">autosomal recessive actn2-related distal myopathy</td>
+<td style="text-align: left;">Orphanet:708129</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Autosomal recessive ACTN2-related distal myopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0016109</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981551</td>
+<td style="text-align: left;">autosomal dominant actn2-related distal myopathy</td>
+<td style="text-align: left;">Orphanet:708133</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Autosomal dominant ACTN2-related distal myopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018943,MONDO:8000034,MONDO:0000001,MONDO:0016108</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981552</td>
+<td style="text-align: left;">severe neurodevelopmental disorder-facial dysmorphism-cerebral-renal-cardiac anomalies syndrome</td>
+<td style="text-align: left;">Orphanet:708166</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Severe neurodevelopmental disorder-facial dysmorphism-cerebral-renal-cardiac anomalies syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015159,MONDO:8000032,MONDO:8000034,MONDO:0015506,MONDO:0017119,MONDO:0019721,MONDO:0035863</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981553</td>
+<td style="text-align: left;">facial dysmorphism-corpus callosum hypoplasia-infantile epileptic encephalopathy</td>
+<td style="text-align: left;">Orphanet:708171</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Facial dysmorphism-corpus callosum hypoplasia-infantile epileptic encephalopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0016055,MONDO:0015159,MONDO:8000032,MONDO:0035863,MONDO:0015653</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981554</td>
+<td style="text-align: left;">global developmental delay-speech apraxia-facial dysmorphism-limb and palpebral anomalies syndrome</td>
+<td style="text-align: left;">Orphanet:708178</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-speech apraxia-facial dysmorphism-limb and palpebral anomalies syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015159,MONDO:8000034,MONDO:8000032,MONDO:0035863</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981555</td>
+<td style="text-align: left;">intellectual disability-small hands and feet-drug-resistant epilepsy syndrome</td>
+<td style="text-align: left;">Orphanet:708203</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Intellectual disability-small hands and feet-drug-resistant epilepsy syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015653,MONDO:0015159,MONDO:0035863,MONDO:8000032,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981556</td>
+<td style="text-align: left;">developmental delay-white matter abnormalities-strabismus-recurrent respiratory tract infections syndrome</td>
+<td style="text-align: left;">Orphanet:708208</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Developmental delay-white matter abnormalities-strabismus-recurrent respiratory tract infections syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017120,MONDO:8000034,MONDO:8000032,MONDO:0015159,MONDO:0035863</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981557</td>
+<td style="text-align: left;">phosphoribosylformylglycinamidine synthase deficiency</td>
+<td style="text-align: left;">Orphanet:708651</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Phosphoribosylformylglycinamidine synthase deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0019058,MONDO:0016406,MONDO:8000034,MONDO:0019236</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981558</td>
+<td style="text-align: left;">eosinophilic cystitis</td>
+<td style="text-align: left;">Orphanet:708684</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Eosinophilic cystitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0015106</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981559</td>
+<td style="text-align: left;">congenital stationary night blindness, schubert-bornschein type</td>
+<td style="text-align: left;">Orphanet:714090</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital stationary night blindness, Schubert-Bornschein type</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0016293,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981560</td>
+<td style="text-align: left;">congenital stationary night blindness, riggs type</td>
+<td style="text-align: left;">Orphanet:714096</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital stationary night blindness, Riggs type</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016293,MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981561</td>
+<td style="text-align: left;">global developmental delay-high pain tolerance-intellectual disability syndrome</td>
+<td style="text-align: left;">Orphanet:714385</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-high pain tolerance-intellectual disability syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0035862,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981562</td>
+<td style="text-align: left;">global developmental delay-dental enamel defects-ataxia syndrome</td>
+<td style="text-align: left;">Orphanet:714399</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-dental enamel defects-ataxia syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0035862,MONDO:0020014</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981563</td>
+<td style="text-align: left;">developmental delay-macrocephaly-corpus callosum dysgenesis-intellectual disability syndrome</td>
+<td style="text-align: left;">Orphanet:714404</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Developmental delay-macrocephaly-corpus callosum dysgenesis-intellectual disability syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015159,MONDO:0035863,MONDO:8000032,MONDO:0016055,MONDO:8000034,MONDO:0017122</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981564</td>
+<td style="text-align: left;">card8-related inflammatory bowel disease</td>
+<td style="text-align: left;">Orphanet:714410</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">CARD8-related inflammatory bowel disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981565</td>
+<td style="text-align: left;">infantile-onset inflammatory bowel disease-hearing loss-recurrent infections syndrome</td>
+<td style="text-align: left;">Orphanet:714423</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Infantile-onset inflammatory bowel disease-hearing loss-recurrent infections syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019589,MONDO:8000034,MONDO:0015710,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981566</td>
+<td style="text-align: left;">pseudo-torch syndrome type 3</td>
+<td style="text-align: left;">Orphanet:714429</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Pseudo-TORCH syndrome type 3</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0700264,MONDO:0015144,MONDO:0000001,MONDO:0035862,MONDO:8000034,MONDO:0957408</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981567</td>
+<td style="text-align: left;">inflammatory bowel disease-autoimmunity-sinopulmonary infections-lymphadenopathy syndrome</td>
+<td style="text-align: left;">Orphanet:714472</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Inflammatory bowel disease-autoimmunity-sinopulmonary infections-lymphadenopathy syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0015710,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981568</td>
+<td style="text-align: left;">early-onset inflammatory bowel disease-ulcerative skin lesions-immunodeficiency syndrome</td>
+<td style="text-align: left;">Orphanet:714477</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Early-onset inflammatory bowel disease-ulcerative skin lesions-immunodeficiency syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019305,MONDO:0000001,MONDO:8000034,MONDO:0015710</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981569</td>
+<td style="text-align: left;">scgn-related severe early-onset hereditary ulcerative colitis</td>
+<td style="text-align: left;">Orphanet:714481</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">SCGN-related severe early-onset hereditary ulcerative colitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981570</td>
+<td style="text-align: left;">agr2-related infantile-onset inflammatory bowel disease</td>
+<td style="text-align: left;">Orphanet:714484</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">AGR2-related infantile-onset inflammatory bowel disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981571</td>
+<td style="text-align: left;">congenital diarrhea-chronic gastrointestinal inflammation-ocular dysgenesis syndrome</td>
+<td style="text-align: left;">Orphanet:714487</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital diarrhea-chronic gastrointestinal inflammation-ocular dysgenesis syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0031697,MONDO:0019126</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981572</td>
+<td style="text-align: left;">percc1-related congenital intractable malabsorptive diarrhea</td>
+<td style="text-align: left;">Orphanet:714490</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">PERCC1-related congenital intractable malabsorptive diarrhea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0031697,MONDO:0019126,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981573</td>
+<td style="text-align: left;">congenital thrombocytopenia-recurrent infections syndrome due to wip deficiency</td>
+<td style="text-align: left;">Orphanet:714493</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital thrombocytopenia-recurrent infections syndrome due to WIP deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018795,MONDO:0000001,MONDO:0018035,MONDO:0026166,MONDO:8000034,MONDO:0019305</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981574</td>
+<td style="text-align: left;">immunodeficiency-congenital thrombocytopenia-hypereosinophilia-colitis-vasculitis syndrome</td>
+<td style="text-align: left;">Orphanet:714496</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Immunodeficiency-congenital thrombocytopenia-hypereosinophilia-colitis-vasculitis syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018795,MONDO:8000034,MONDO:0000001,MONDO:0015710</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981575</td>
+<td style="text-align: left;">pcdh19 clustering epilepsy</td>
+<td style="text-align: left;">Orphanet:714652</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">PCDH19 clustering epilepsy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0100022</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981576</td>
+<td style="text-align: left;">congenital disseminated pyogenic granuloma</td>
+<td style="text-align: left;">Orphanet:714692</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital disseminated pyogenic granuloma</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0971115,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981577</td>
+<td style="text-align: left;">immune checkpoint inhibitor-induced myositis</td>
+<td style="text-align: left;">Orphanet:714829</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Immune checkpoint inhibitor-induced myositis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015940,MONDO:0016105,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981578</td>
+<td style="text-align: left;">hyperpituitarism</td>
+<td style="text-align: left;">Orphanet:715120</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hyperpituitarism</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0015889</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981579</td>
+<td style="text-align: left;">hemoglobin e-beta-thalassemia intermedia</td>
+<td style="text-align: left;">Orphanet:715125</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hemoglobin E-beta-thalassemia intermedia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0016491</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981580</td>
+<td style="text-align: left;">hemoglobin e-beta-thalassemia major</td>
+<td style="text-align: left;">Orphanet:715128</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hemoglobin E-beta-thalassemia major</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016491,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981581</td>
+<td style="text-align: left;">hemoglobin lepore-beta-thalassemia intermedia</td>
+<td style="text-align: left;">Orphanet:715135</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hemoglobin Lepore-beta-thalassemia intermedia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0018022</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981582</td>
+<td style="text-align: left;">hemoglobin lepore-beta-thalassemia major</td>
+<td style="text-align: left;">Orphanet:715140</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hemoglobin Lepore-beta-thalassemia major</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0018022</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981583</td>
+<td style="text-align: left;">heterozygous beta-thalassemia intermedia with supernumerary alpha-globin gene</td>
+<td style="text-align: left;">Orphanet:715143</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Heterozygous beta-thalassemia intermedia with supernumerary alpha-globin gene</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0019402,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981584</td>
+<td style="text-align: left;">low oxygen affinity hemoglobin disease</td>
+<td style="text-align: left;">Orphanet:715147</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Low oxygen affinity hemoglobin disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0034039,MONDO:0019050,MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981585</td>
+<td style="text-align: left;">unifocal peripheral venous malformation</td>
+<td style="text-align: left;">Orphanet:715334</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Unifocal peripheral venous malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016232</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981586</td>
+<td style="text-align: left;">multifocal peripheral venous malformation</td>
+<td style="text-align: left;">Orphanet:715339</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Multifocal peripheral venous malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016232</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981587</td>
+<td style="text-align: left;">geographic pattern capillary malformation</td>
+<td style="text-align: left;">Orphanet:715446</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Geographic pattern capillary malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016231</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981588</td>
+<td style="text-align: left;">reticulated capillary malformation</td>
+<td style="text-align: left;">Orphanet:715453</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Reticulated capillary malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016231</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981589</td>
+<td style="text-align: left;">low resistance capillary malformation</td>
+<td style="text-align: left;">Orphanet:715463</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Low resistance capillary malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016231</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981590</td>
+<td style="text-align: left;">motor incoordination-myopathy-respiratory insufficiency-progressive cerebellar atrophy syndrome</td>
+<td style="text-align: left;">Orphanet:715623</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Motor incoordination-myopathy-respiratory insufficiency-progressive cerebellar atrophy syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000032,MONDO:0020047,MONDO:0016136,MONDO:8000034,MONDO:0016110</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981591</td>
+<td style="text-align: left;">rothmund-thomson syndrome type 4</td>
+<td style="text-align: left;">Orphanet:715635</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rothmund-Thomson syndrome type 4</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0010002,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981592</td>
+<td style="text-align: left;">rothmund-thomson syndrome type 3</td>
+<td style="text-align: left;">Orphanet:715640</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rothmund-Thomson syndrome type 3</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0010002</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981593</td>
+<td style="text-align: left;">infant-type hemispheric glioma ntrk-altered</td>
+<td style="text-align: left;">Orphanet:715694</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Infant-type hemispheric glioma NTRK-altered</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0858940,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981594</td>
+<td style="text-align: left;">infant-type hemispheric glioma alk-altered</td>
+<td style="text-align: left;">Orphanet:715697</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Infant-type hemispheric glioma ALK-altered</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0858940,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981595</td>
+<td style="text-align: left;">infant-type hemispheric glioma ros1-altered</td>
+<td style="text-align: left;">Orphanet:715701</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Infant-type hemispheric glioma ROS1-altered</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0858940,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981596</td>
+<td style="text-align: left;">infant-type hemispheric glioma met-altered</td>
+<td style="text-align: left;">Orphanet:715704</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Infant-type hemispheric glioma MET-altered</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0858940,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981597</td>
+<td style="text-align: left;">diffuse pediatric-type high-grade glioma-h3-wildtype-idh-wildtype</td>
+<td style="text-align: left;">Orphanet:715724</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diffuse pediatric-type high-grade glioma-H3-wildtype-IDH-wildtype</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0016680,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981598</td>
+<td style="text-align: left;">unifocal fast-flow vascular malformation</td>
+<td style="text-align: left;">Orphanet:715762</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Unifocal fast-flow vascular malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016234</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981599</td>
+<td style="text-align: left;">diffuse hemispheric glioma-h3 g34-mutant</td>
+<td style="text-align: left;">Orphanet:715950</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diffuse hemispheric glioma-H3 G34-mutant</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0016680,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981600</td>
+<td style="text-align: left;">global developmental delay-facial dysmorphism-brachydactyly syndrome</td>
+<td style="text-align: left;">Orphanet:716109</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-facial dysmorphism-brachydactyly syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015159,MONDO:8000032,MONDO:0035863,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981601</td>
+<td style="text-align: left;">global developmental delay-facial dysmorphism-hands and feet anomalies syndrome</td>
+<td style="text-align: left;">Orphanet:716116</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-facial dysmorphism-hands and feet anomalies syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000032,MONDO:8000034,MONDO:0035863,MONDO:0015159</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981602</td>
+<td style="text-align: left;">rare inflammatory choroidal disorder</td>
+<td style="text-align: left;">Orphanet:716195</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare inflammatory choroidal disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981603</td>
+<td style="text-align: left;">rare paraneoplastic choroidal disorder</td>
+<td style="text-align: left;">Orphanet:716198</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare paraneoplastic choroidal disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0015121</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981604</td>
+<td style="text-align: left;">rare vascular choroidal disorder</td>
+<td style="text-align: left;">Orphanet:716201</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare vascular choroidal disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981605</td>
+<td style="text-align: left;">rare neoplastic choroidal disorder</td>
+<td style="text-align: left;">Orphanet:716204</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare neoplastic choroidal disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0015121</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981606</td>
+<td style="text-align: left;">rare isolated developmental choroidal disorder</td>
+<td style="text-align: left;">Orphanet:716213</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare isolated developmental choroidal disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020145,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981607</td>
+<td style="text-align: left;">rare predominantly chorioretinal disorder</td>
+<td style="text-align: left;">Orphanet:716290</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare predominantly chorioretinal disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981608</td>
+<td style="text-align: left;">rare generalized retinal disorder</td>
+<td style="text-align: left;">Orphanet:716358</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare generalized retinal disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981609</td>
+<td style="text-align: left;">rare non-progressive predominantly macular disorder</td>
+<td style="text-align: left;">Orphanet:716413</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare non-progressive predominantly macular disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981610</td>
+<td style="text-align: left;">rare progressive predominantly macular disorder</td>
+<td style="text-align: left;">Orphanet:716416</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare progressive predominantly macular disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981611</td>
+<td style="text-align: left;">rare non-progressive vitreoretinopathy</td>
+<td style="text-align: left;">Orphanet:716435</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare non-progressive vitreoretinopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020246,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981612</td>
+<td style="text-align: left;">rare progressive vitreoretinopathy</td>
+<td style="text-align: left;">Orphanet:716438</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare progressive vitreoretinopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020246,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981613</td>
+<td style="text-align: left;">rare non-progressive retinal vasculopathy</td>
+<td style="text-align: left;">Orphanet:716450</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare non-progressive retinal vasculopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981614</td>
+<td style="text-align: left;">rare progressive retinal vasculopathy</td>
+<td style="text-align: left;">Orphanet:716455</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare progressive retinal vasculopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981615</td>
+<td style="text-align: left;">congenital myasthenic syndrome with kinetic defect</td>
+<td style="text-align: left;">Orphanet:716742</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome with kinetic defect</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020344,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981616</td>
+<td style="text-align: left;">congenital myasthenic syndrome with primary acetylcholine receptor deficiency</td>
+<td style="text-align: left;">Orphanet:716816</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome with primary acetylcholine receptor deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020344,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981617</td>
+<td style="text-align: left;">congenital myasthenic syndrome due to defects in endplate development and maintenance</td>
+<td style="text-align: left;">Orphanet:716825</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defects in endplate development and maintenance</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020344,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981618</td>
+<td style="text-align: left;">congenital myasthenic syndrome due to a sodium channel 1.4 defect</td>
+<td style="text-align: left;">Orphanet:716881</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to a sodium channel 1.4 defect</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0020344</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981619</td>
+<td style="text-align: left;">congenital myasthenic syndrome due to defective axonal transport</td>
+<td style="text-align: left;">Orphanet:716889</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective axonal transport</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0700466</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981620</td>
+<td style="text-align: left;">congenital myasthenic syndrome due to defective synthesis or recycling of acetylcholine</td>
+<td style="text-align: left;">Orphanet:716893</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective synthesis or recycling of acetylcholine</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0700466,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981621</td>
+<td style="text-align: left;">congenital myasthenic syndrome due to defective synaptic vesicles exocytosis</td>
+<td style="text-align: left;">Orphanet:716899</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective synaptic vesicles exocytosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0700466</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981622</td>
+<td style="text-align: left;">congenital myasthenic syndrome associated with ubiquitously expressed proteins</td>
+<td style="text-align: left;">Orphanet:716913</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome associated with ubiquitously expressed proteins</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018940,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981623</td>
+<td style="text-align: left;">rare genetic predominantly chorioretinal disorder</td>
+<td style="text-align: left;">Orphanet:717257</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare genetic predominantly chorioretinal disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981624</td>
+<td style="text-align: left;">rare genetic generalized retinal disorder</td>
+<td style="text-align: left;">Orphanet:717260</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare genetic generalized retinal disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981625</td>
+<td style="text-align: left;">circumscribed astrocytic glioma</td>
+<td style="text-align: left;">Orphanet:717268</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Circumscribed astrocytic glioma</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0021042</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981626</td>
+<td style="text-align: left;">rare genetic non-progressive predominantly macular disorder</td>
+<td style="text-align: left;">Orphanet:717327</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare genetic non-progressive predominantly macular disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981627</td>
+<td style="text-align: left;">rare genetic progressive predominantly macular disorder</td>
+<td style="text-align: left;">Orphanet:717333</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare genetic progressive predominantly macular disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981628</td>
+<td style="text-align: left;">rare genetic non-progressive retinal vasculopathy</td>
+<td style="text-align: left;">Orphanet:717339</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare genetic non-progressive retinal vasculopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981629</td>
+<td style="text-align: left;">rare genetic progressive retinal vasculopathy</td>
+<td style="text-align: left;">Orphanet:717342</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare genetic progressive retinal vasculopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981630</td>
+<td style="text-align: left;">coagulation abnormality associated with a vascular anomaly</td>
+<td style="text-align: left;">Orphanet:717582</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Coagulation abnormality associated with a vascular anomaly</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019063,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981631</td>
+<td style="text-align: left;">aquagenic urticaria</td>
+<td style="text-align: left;">Orphanet:717638</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Aquagenic urticaria</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019298,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981632</td>
+<td style="text-align: left;">congenital midnasal stenosis</td>
+<td style="text-align: left;">Orphanet:717646</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital midnasal stenosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:8000030,MONDO:0015503</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981633</td>
+<td style="text-align: left;">partial trisomy 12q syndrome</td>
+<td style="text-align: left;">Orphanet:717784</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Partial trisomy 12q syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:8000032,MONDO:0020052,MONDO:0015159,MONDO:0035863</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981634</td>
+<td style="text-align: left;">12q24.31 microdeletion syndrome</td>
+<td style="text-align: left;">Orphanet:717812</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">12q24.31 microdeletion syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016877,MONDO:0015159,MONDO:0035863,MONDO:8000032,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981635</td>
+<td style="text-align: left;">global developmental delay-recurrent infections-facial dysmorphism syndrome</td>
+<td style="text-align: left;">Orphanet:717823</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-recurrent infections-facial dysmorphism syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0035863,MONDO:0015159,MONDO:8000032</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981636</td>
+<td style="text-align: left;">2p14p15 microdeletion syndrome</td>
+<td style="text-align: left;">Orphanet:717830</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">2p14p15 microdeletion syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0035863,MONDO:0015159,MONDO:8000032,MONDO:0016884</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981637</td>
+<td style="text-align: left;">global developmental delay-facial dysmorphism-atrial septal defect syndrome</td>
+<td style="text-align: left;">Orphanet:717841</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-facial dysmorphism-atrial septal defect syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000032,MONDO:0015159,MONDO:0015506,MONDO:0035863,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981638</td>
+<td style="text-align: left;">developmental delay-facial dysmorphism-blaschko lines hypopigmentation-obesity-intellectual disability syndrome</td>
+<td style="text-align: left;">Orphanet:717846</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Developmental delay-facial dysmorphism-Blaschko lines hypopigmentation-obesity-intellectual disability syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:8000032,MONDO:0015159,MONDO:0035863,MONDO:0019290</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981639</td>
+<td style="text-align: left;">developmental delay-microcephaly-short stature-ocular disorders-intellectual disability syndrome</td>
+<td style="text-align: left;">Orphanet:717854</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Developmental delay-microcephaly-short stature-ocular disorders-intellectual disability syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000032,MONDO:0017119,MONDO:0035863,MONDO:0015159,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981640</td>
+<td style="text-align: left;">global developmental delay-acquired macrocephaly-ataxia-febrile seizures syndrome</td>
+<td style="text-align: left;">Orphanet:717884</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-acquired macrocephaly-ataxia-febrile seizures syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0035863,MONDO:0015653,MONDO:0015159,MONDO:8000032</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981641</td>
+<td style="text-align: left;">combined immunodeficiency due to copg1 deficiency</td>
+<td style="text-align: left;">Orphanet:718017</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Combined immunodeficiency due to COPG1 deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981642</td>
+<td style="text-align: left;">microcephalic primordial dwarfism syndrome with combined immunodeficiency due to prim1 deficiency</td>
+<td style="text-align: left;">Orphanet:718037</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Microcephalic primordial dwarfism syndrome with combined immunodeficiency due to PRIM1 deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017950,MONDO:0018035,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981643</td>
+<td style="text-align: left;">combined immunodeficiency due to polymerase delta deficiency</td>
+<td style="text-align: left;">Orphanet:718047</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Combined immunodeficiency due to polymerase delta deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981644</td>
+<td style="text-align: left;">y-linked non-syndromic genetic deafness</td>
+<td style="text-align: left;">Orphanet:718255</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Y-linked non-syndromic genetic deafness</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0019497</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981645</td>
+<td style="text-align: left;">congenital myasthenic syndrome due to acetylcholine receptor clustering defect</td>
+<td style="text-align: left;">Orphanet:719880</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to acetylcholine receptor clustering defect</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0020344</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981646</td>
+<td style="text-align: left;">congenital myasthenic syndrome due to defective nuclear membrane protein</td>
+<td style="text-align: left;">Orphanet:719914</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective nuclear membrane protein</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0020344</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981647</td>
+<td style="text-align: left;">congenital myasthenic syndrome due to defective structural molecule at the neuromuscular junction</td>
+<td style="text-align: left;">Orphanet:719921</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective structural molecule at the neuromuscular junction</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0700466,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981648</td>
+<td style="text-align: left;">angiokeratoma circumscriptum</td>
+<td style="text-align: left;">Orphanet:719931</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Angiokeratoma circumscriptum</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000030,MONDO:8000034,MONDO:0002013</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981649</td>
+<td style="text-align: left;">angiokeratoma of mibelli</td>
+<td style="text-align: left;">Orphanet:719936</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Angiokeratoma of Mibelli</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019293,MONDO:8000034,MONDO:8000030</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981650</td>
+<td style="text-align: left;">complex lymphatic anomaly</td>
+<td style="text-align: left;">Orphanet:719950</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Complex lymphatic anomaly</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0002013</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981651</td>
+<td style="text-align: left;">multifocal fast-flow vascular malformation</td>
+<td style="text-align: left;">Orphanet:719955</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Multifocal fast-flow vascular malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016234</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981652</td>
+<td style="text-align: left;">developmental delay-blepharophimosis-telecanthus-facial dysmorphism-intellectual disability syndrome</td>
+<td style="text-align: left;">Orphanet:720321</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Developmental delay-blepharophimosis-telecanthus-facial dysmorphism-intellectual disability syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015159,MONDO:8000032,MONDO:0017393,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981653</td>
+<td style="text-align: left;">developmental delay-cervical spine anomalies-facial dysmorphism-intellectual disability syndrome</td>
+<td style="text-align: left;">Orphanet:720326</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Developmental delay-cervical spine anomalies-facial dysmorphism-intellectual disability syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000032,MONDO:0019711,MONDO:0035863,MONDO:0015159,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981654</td>
+<td style="text-align: left;">otofaciocervical syndrome without thymic hypoplasia</td>
+<td style="text-align: left;">Orphanet:720341</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Otofaciocervical syndrome without thymic hypoplasia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0008163</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981655</td>
+<td style="text-align: left;">otofaciocervical syndrome with thymic hypoplasia</td>
+<td style="text-align: left;">Orphanet:720357</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Otofaciocervical syndrome with thymic hypoplasia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0008163,MONDO:0018036</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981656</td>
+<td style="text-align: left;">t-b+nk+ severe combined immunodeficiency due to lcp2 deficiency</td>
+<td style="text-align: left;">Orphanet:720371</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">T-B+NK+ severe combined immunodeficiency due to LCP2 deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981657</td>
+<td style="text-align: left;">galactose-1-phosphate uridylyltransferase deficiency</td>
+<td style="text-align: left;">Orphanet:723094</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Galactose-1-phosphate uridylyltransferase deficiency</td>
+<td style="text-align: left;">A group of galactosemias characterized by GALT deficiency and presenting with variable clinical features depending on the residual GALT activity present in affected individuals, going from classic galactosemia manifesting with life-threatening complications triggered by breastfeeding or the ingestion of lactose/galactose-containing formula in untreated infants and long term-complications despite diet (GALT activity &lt;1%), to a less severe phenotype (GALT activity 1-10%) or completely asymptomatic patients (GALT activity 25-30%).</td>
+<td style="text-align: left;">MONDO:0015115,MONDO:8000033,MONDO:0018116</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981658</td>
+<td style="text-align: left;">multifocal ectopic purkinje-related premature contraction</td>
+<td style="text-align: left;">Orphanet:723139</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Multifocal ectopic Purkinje-related premature contraction</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015110,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981659</td>
+<td style="text-align: left;">hyper-igm syndrome due to ino80 deficiency</td>
+<td style="text-align: left;">Orphanet:723146</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hyper-IgM syndrome due to INO80 deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015976,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981660</td>
+<td style="text-align: left;">fetal acetylcholine receptor antibody-related disorder</td>
+<td style="text-align: left;">Orphanet:723156</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Fetal acetylcholine receptor antibody-related disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016678,MONDO:0000001,MONDO:0015225,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981661</td>
+<td style="text-align: left;">combined immunodeficiency due to nfatc1 deficiency</td>
+<td style="text-align: left;">Orphanet:723161</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Combined immunodeficiency due to NFATC1 deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981662</td>
+<td style="text-align: left;">iris melanoma</td>
+<td style="text-align: left;">Orphanet:723195</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Iris melanoma</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0015121</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981663</td>
+<td style="text-align: left;">sitrame syndrome</td>
+<td style="text-align: left;">Orphanet:723218</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">SITRAME Syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0032013,MONDO:0017957,MONDO:0017370,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981664</td>
+<td style="text-align: left;">extrapulmonary non-tuberculous mycobacterial infection</td>
+<td style="text-align: left;">Orphanet:723223</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Extrapulmonary non-tuberculous mycobacterial infection</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0015575,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981665</td>
+<td style="text-align: left;">rare vascular malformation</td>
+<td style="text-align: left;">Orphanet:723256</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare vascular malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019063,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981666</td>
+<td style="text-align: left;">syndromic venous malformation</td>
+<td style="text-align: left;">Orphanet:723261</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Syndromic venous malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016232</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981667</td>
+<td style="text-align: left;">syndromic port-wine capillary malformation</td>
+<td style="text-align: left;">Orphanet:723264</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Syndromic port-wine capillary malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016231</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981668</td>
+<td style="text-align: left;">rare isolated port-wine capillary malformation</td>
+<td style="text-align: left;">Orphanet:723267</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare isolated port-wine capillary malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016231</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981669</td>
+<td style="text-align: left;">isolated glomeruloid hemangioma</td>
+<td style="text-align: left;">Orphanet:723270</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Isolated glomeruloid hemangioma</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0971115,MONDO:8000034,MONDO:8000030</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981670</td>
+<td style="text-align: left;">cutaneous epithelioid angiomatous nodule</td>
+<td style="text-align: left;">Orphanet:723286</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Cutaneous epithelioid angiomatous nodule</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0971115,MONDO:8000034,MONDO:0019300,MONDO:8000030</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981671</td>
+<td style="text-align: left;">pregnancy-associated spontaneous coronary artery dissection</td>
+<td style="text-align: left;">Orphanet:723290</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Pregnancy-associated spontaneous coronary artery dissection</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019996,MONDO:8000034,MONDO:0000001,MONDO:0015582</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981672</td>
+<td style="text-align: left;">flow limitation in the iliac artery</td>
+<td style="text-align: left;">Orphanet:723342</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Flow limitation in the iliac artery</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0024471,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981673</td>
+<td style="text-align: left;">diffuse midline glioma, h3 k27-altered</td>
+<td style="text-align: left;">Orphanet:723358</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Diffuse midline glioma, H3 K27-altered</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0016680,MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981674</td>
+<td style="text-align: left;">genetic arthrogryposis syndrome</td>
+<td style="text-align: left;">Orphanet:723416</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Genetic arthrogryposis syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981675</td>
+<td style="text-align: left;">syndromic fast-flow vascular malformation</td>
+<td style="text-align: left;">Orphanet:723427</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Syndromic fast-flow vascular malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016234</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981676</td>
+<td style="text-align: left;">central nervous system venous vascular malformation</td>
+<td style="text-align: left;">Orphanet:723432</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Central nervous system venous vascular malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016232,MONDO:0015145</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981677</td>
+<td style="text-align: left;">isolated combined vascular malformation</td>
+<td style="text-align: left;">Orphanet:723518</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Isolated combined vascular malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0018721</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981678</td>
+<td style="text-align: left;">global developmental delay-nystagmus-short stature-corpus callosum hypoplasia-white matter abnormalities syndrome</td>
+<td style="text-align: left;">Orphanet:724143</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-nystagmus-short stature-corpus callosum hypoplasia-white matter abnormalities syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015159,MONDO:8000034,MONDO:8000032,MONDO:0035863,MONDO:0016055,MONDO:0017122</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981679</td>
+<td style="text-align: left;">global developmental delay-early-onset refractory epilepsy-spastic quadriplegia-microcephaly-cerebral atrophy syndrome</td>
+<td style="text-align: left;">Orphanet:724148</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-early-onset refractory epilepsy-spastic quadriplegia-microcephaly-cerebral atrophy syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000032,MONDO:8000034,MONDO:0017119,MONDO:0035863,MONDO:0015159,MONDO:0015653</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981680</td>
+<td style="text-align: left;">appendiceal mucinous neoplasm</td>
+<td style="text-align: left;">Orphanet:725964</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Appendiceal mucinous neoplasm</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0018511,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981681</td>
+<td style="text-align: left;">astrocytoma grade 4</td>
+<td style="text-align: left;">Orphanet:726004</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Astrocytoma grade 4</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0016680</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981682</td>
+<td style="text-align: left;">congenital amegakaryocytic thrombocytopenia-mpl</td>
+<td style="text-align: left;">Orphanet:726047</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital amegakaryocytic thrombocytopenia-MPL</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0800452</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981683</td>
+<td style="text-align: left;">congenital amegakaryocytic thrombocytopenia-thpo</td>
+<td style="text-align: left;">Orphanet:726050</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital amegakaryocytic thrombocytopenia-THPO</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0800452,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981684</td>
+<td style="text-align: left;">congenital amegakaryocytic thrombocytopenia without known causal genetic defect</td>
+<td style="text-align: left;">Orphanet:726053</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital amegakaryocytic thrombocytopenia without known causal genetic defect</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0800452</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981685</td>
+<td style="text-align: left;">combined immunodeficiency with hypo/agammaglobulinemia and opportunistic infections</td>
+<td style="text-align: left;">Orphanet:726442</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Combined immunodeficiency with hypo/agammaglobulinemia and opportunistic infections</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981686</td>
+<td style="text-align: left;">combined immunodeficiency with early gray hairing</td>
+<td style="text-align: left;">Orphanet:726452</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Combined immunodeficiency with early gray hairing</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0019290</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981687</td>
+<td style="text-align: left;">genetic predisposition to whipple disease due to irf4 haploinsufficiency</td>
+<td style="text-align: left;">Orphanet:726479</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Genetic predisposition to Whipple disease due to IRF4 haploinsufficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0015979</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981688</td>
+<td style="text-align: left;">houge-janssens syndrome</td>
+<td style="text-align: left;">Orphanet:726644</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Houge-Janssens syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0035863,MONDO:8000032,MONDO:8000034,MONDO:0015159</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981689</td>
+<td style="text-align: left;">global developmental delay-bilateral cataract-cerebellar atrophy-movement disorder syndrome</td>
+<td style="text-align: left;">Orphanet:726677</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-bilateral cataract-cerebellar atrophy-movement disorder syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0017118,MONDO:8000032,MONDO:0020225,MONDO:0035863,MONDO:0015159</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981690</td>
+<td style="text-align: left;">global developmental delay-urogenital anomalies-cerebellar atrophy-cleft palate syndrome</td>
+<td style="text-align: left;">Orphanet:726684</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-urogenital anomalies-cerebellar atrophy-cleft palate syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0035863,MONDO:0015159,MONDO:8000032,MONDO:0017122,MONDO:0016055,MONDO:0017118,MONDO:0015620,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981691</td>
+<td style="text-align: left;">developmental delay-vision anomalies-hand stereotypies-intellectual disability syndrome</td>
+<td style="text-align: left;">Orphanet:726695</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Developmental delay-vision anomalies-hand stereotypies-intellectual disability syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000032,MONDO:8000034,MONDO:0015159,MONDO:0035863</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981692</td>
+<td style="text-align: left;">chitayat syndrome</td>
+<td style="text-align: left;">Orphanet:726700</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Chitayat syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0043008,MONDO:8000032,MONDO:0015161,MONDO:0017434,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981693</td>
+<td style="text-align: left;">polydactyly-macrocephaly syndrome</td>
+<td style="text-align: left;">Orphanet:726703</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Polydactyly-macrocephaly syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017434,MONDO:8000034,MONDO:0015159,MONDO:0035863,MONDO:8000032</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981694</td>
+<td style="text-align: left;">intellectual disability-myopathy-white matter abnormality syndrome</td>
+<td style="text-align: left;">Orphanet:726782</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Intellectual disability-myopathy-white matter abnormality syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0035863,MONDO:0000001,MONDO:8000034,MONDO:0015159</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981695</td>
+<td style="text-align: left;">calcium release deficiency syndrome</td>
+<td style="text-align: left;">Orphanet:726788</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Calcium release deficiency syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0015110</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981696</td>
+<td style="text-align: left;">venezuelan equine encephalitis</td>
+<td style="text-align: left;">Orphanet:726793</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Venezuelan equine encephalitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0006009,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981697</td>
+<td style="text-align: left;">tshz3-related congenital anomalies of kidney-urinary tract-intellectual disability syndrome</td>
+<td style="text-align: left;">Orphanet:726799</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">TSHZ3-related congenital anomalies of kidney-urinary tract-intellectual disability syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0035863,MONDO:8000032,MONDO:0019721,MONDO:0015159,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981698</td>
+<td style="text-align: left;">self limited focal childhood epilepsy</td>
+<td style="text-align: left;">Orphanet:726812</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Self limited focal childhood epilepsy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020072,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981699</td>
+<td style="text-align: left;">hepatorenocardiac degenerative fibrosis</td>
+<td style="text-align: left;">Orphanet:726824</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hepatorenocardiac degenerative fibrosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019741,MONDO:8000034,MONDO:0026989,MONDO:0015114,MONDO:0000001,MONDO:0005308,MONDO:0015508</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981700</td>
+<td style="text-align: left;">radiation-induced moyamoya syndrome</td>
+<td style="text-align: left;">Orphanet:726832</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Radiation-induced Moyamoya syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0018791,MONDO:0043459,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981701</td>
+<td style="text-align: left;">sweat glands anomaly</td>
+<td style="text-align: left;">Orphanet:726843</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Sweat glands anomaly</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019277,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981702</td>
+<td style="text-align: left;">isolated congenital long qt syndrome without known causative genetic defect</td>
+<td style="text-align: left;">Orphanet:727126</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Isolated congenital long QT syndrome without known causative genetic defect</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:1060291</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981703</td>
+<td style="text-align: left;">kcnq1-related isolated congenital long qt syndrome</td>
+<td style="text-align: left;">Orphanet:727141</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">KCNQ1-related isolated congenital long QT syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:1060291,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981704</td>
+<td style="text-align: left;">kcnh2-related isolated congenital long qt syndrome</td>
+<td style="text-align: left;">Orphanet:727149</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">KCNH2-related isolated congenital long QT syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:1060291</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981705</td>
+<td style="text-align: left;">cacna1c-related isolated congenital long qt syndrome</td>
+<td style="text-align: left;">Orphanet:727156</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">CACNA1C-related isolated congenital Long QT syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:1060291,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981706</td>
+<td style="text-align: left;">trdn-related isolated congenital long qt syndrome</td>
+<td style="text-align: left;">Orphanet:727163</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">TRDN-related isolated congenital long QT syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:1060291</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981707</td>
+<td style="text-align: left;">kcne2-related isolated congenital long qt syndrome</td>
+<td style="text-align: left;">Orphanet:727178</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">KCNE2-related isolated congenital long QT syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:1060291</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981708</td>
+<td style="text-align: left;">kcne1-related isolated congenital long qt syndrome</td>
+<td style="text-align: left;">Orphanet:727185</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">KCNE1-related isolated congenital long QT syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:1060291</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981709</td>
+<td style="text-align: left;">calmodulin-related isolated congenital long qt syndrome</td>
+<td style="text-align: left;">Orphanet:727192</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Calmodulin-related isolated congenital long QT syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:1060291</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981710</td>
+<td style="text-align: left;">scn5a-related isolated congenital long qt syndrome</td>
+<td style="text-align: left;">Orphanet:727203</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">SCN5A-related isolated congenital long QT syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:1060291,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981711</td>
+<td style="text-align: left;">progressive muscle weakness-respiratory insufficiency-learning difficulty syndrome</td>
+<td style="text-align: left;">Orphanet:727296</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Progressive muscle weakness-respiratory insufficiency-learning difficulty syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0017763</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981712</td>
+<td style="text-align: left;">autosomal recessive klf1-related severe anemia</td>
+<td style="text-align: left;">Orphanet:727394</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Autosomal recessive KLF1-related severe anemia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015910,MONDO:0019403,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981713</td>
+<td style="text-align: left;">16p13.11p11.2 triplication/16p11.2 duplication syndrome</td>
+<td style="text-align: left;">Orphanet:727620</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">16p13.11p11.2 triplication/16p11.2 duplication syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015159,MONDO:8000032,MONDO:0016998,MONDO:8000034,MONDO:0035863</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981714</td>
+<td style="text-align: left;">loin pain-hematuria syndrome</td>
+<td style="text-align: left;">Orphanet:727651</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Loin pain-hematuria syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019750,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981715</td>
+<td style="text-align: left;">monoamine oxidase a and monoamine oxidase b deficiency</td>
+<td style="text-align: left;">Orphanet:727719</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Monoamine oxidase A and monoamine oxidase B deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019219,MONDO:0000001,MONDO:8000034,MONDO:0035862,MONDO:0019058</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981716</td>
+<td style="text-align: left;">isolated global cerebellar hypoplasia</td>
+<td style="text-align: left;">Orphanet:727803</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Isolated global cerebellar hypoplasia</td>
+<td style="text-align: left;">A rare isolated cerebellar malformation characterized by a normal shape but reduced volume of the cerebellar vermis and hemispheres with no other neurological anomalies or extracerebral congenital malformations. The majority of patients present with impaired ambulation, global developmental delay, with or without intellectual disability. Other signs might include hypotonia, truncal, appendicular and gait ataxia, as well as oculomotor abnormalities.</td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0017114,MONDO:8000030</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981717</td>
+<td style="text-align: left;">yars1-related multisystemic disease</td>
+<td style="text-align: left;">Orphanet:727861</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">YARS1-related multisystemic disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0035862,MONDO:0019602,MONDO:0019058,MONDO:0000001,MONDO:0015115,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981718</td>
+<td style="text-align: left;">apob-related familial hypobetalipoproteinemia</td>
+<td style="text-align: left;">Orphanet:727915</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">APOB-related familial hypobetalipoproteinemia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017774,MONDO:0031698,MONDO:0015180,MONDO:0015115,MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981719</td>
+<td style="text-align: left;">familial combined hypolipidemia</td>
+<td style="text-align: left;">Orphanet:727925</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Familial combined hypolipidemia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017774,MONDO:8000034,MONDO:0032011</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981720</td>
+<td style="text-align: left;">hypocholesterolemia due to pcsk9 deficiency</td>
+<td style="text-align: left;">Orphanet:727932</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Hypocholesterolemia due to PCSK9 deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0032011,MONDO:0017774,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981721</td>
+<td style="text-align: left;">pla2g6-related neurodegeneration, juvenile-onset</td>
+<td style="text-align: left;">Orphanet:728432</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">PLA2G6-related neurodegeneration, juvenile-onset</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017847,MONDO:0017998,MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981722</td>
+<td style="text-align: left;">congenital macrothrombocytopenia with focal myelofibrosis</td>
+<td style="text-align: left;">Orphanet:728467</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital macrothrombocytopenia with focal myelofibrosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0018795,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981723</td>
+<td style="text-align: left;">inherited bone marrow failure disorder with immune defect</td>
+<td style="text-align: left;">Orphanet:728475</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Inherited bone marrow failure disorder with immune defect</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020008,MONDO:8000033,MONDO:0015984</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981724</td>
+<td style="text-align: left;">pontocerebellar hypoplasia type 16</td>
+<td style="text-align: left;">Orphanet:728514</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Pontocerebellar hypoplasia type 16</td>
+<td style="text-align: left;">A rare subtype of pontocerebellar hypoplasia (PCH) characterized by an almost complete absence of motor and cognitive development, microcephaly, epilepsy, spastic tetraplegia, vision impairment, extrapyramidal movements, and stereotypies. Brain imaging is distinct from other PCH subtypes and consists of mild-to-severe PCH, ventriculomegaly, thin corpus callosum and hypoplasia and T2-weighted hyperintensity of the basal ganglia and thalamus.</td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0020135</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981725</td>
+<td style="text-align: left;">pontocerebellar hypoplasia type 17</td>
+<td style="text-align: left;">Orphanet:728521</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Pontocerebellar hypoplasia type 17</td>
+<td style="text-align: left;">A rare subtype of pontocerebellar hypoplasia characterized by global developmental delay, motor impairment, axial hypotonia and distal hypotonia as well as severe brainstem dysfunctions (feeding and respiratory difficulties, central apnea, bradycardia). Other variable clinical features can include ophtalmological, cardiac and gastrointestinal anomalies, facial dysmorphism and epilepsy. This subtype is associated with perinatal lethality. Brain imaging usually shows cerebellar hypoplasia together with brainstem hypoplasia.</td>
+<td style="text-align: left;">MONDO:0020135,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981726</td>
+<td style="text-align: left;">pik3ca-related overgrowth spectrum disorder with vascular malformation</td>
+<td style="text-align: left;">Orphanet:728584</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">PIK3CA-related overgrowth spectrum disorder with vascular malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0016235</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981727</td>
+<td style="text-align: left;">early repolarization syndrome</td>
+<td style="text-align: left;">Orphanet:728619</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Early repolarization syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0015110</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981728</td>
+<td style="text-align: left;">idiopathic orbital inflammation syndrome</td>
+<td style="text-align: left;">Orphanet:728633</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Idiopathic orbital inflammation syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981729</td>
+<td style="text-align: left;">genetic syndrome or malformation associated with head and neck malformations</td>
+<td style="text-align: left;">Orphanet:728642</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Genetic syndrome or malformation associated with head and neck malformations</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0015961</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981730</td>
+<td style="text-align: left;">fetus in fetu</td>
+<td style="text-align: left;">Orphanet:728725</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Fetus in fetu</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0019755,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981731</td>
+<td style="text-align: left;">nit1-related cerebral small vessel disease</td>
+<td style="text-align: left;">Orphanet:728764</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">NIT1-related cerebral small vessel disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019241,MONDO:0000001,MONDO:8000034,MONDO:0018787</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981732</td>
+<td style="text-align: left;">immune effector cell-associated neurotoxicity syndrome</td>
+<td style="text-align: left;">Orphanet:728866</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Immune effector cell-associated neurotoxicity syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0032014,MONDO:0015916</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981733</td>
+<td style="text-align: left;">esophageal atresia type a</td>
+<td style="text-align: left;">Orphanet:728877</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Esophageal atresia type A</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0008586</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981734</td>
+<td style="text-align: left;">esophageal atresia type b</td>
+<td style="text-align: left;">Orphanet:728882</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Esophageal atresia type B</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0008586</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981735</td>
+<td style="text-align: left;">esophageal atresia type c</td>
+<td style="text-align: left;">Orphanet:728885</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Esophageal atresia type C</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0008586</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981736</td>
+<td style="text-align: left;">esophageal atresia type d</td>
+<td style="text-align: left;">Orphanet:728888</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Esophageal atresia type D</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0008586</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981737</td>
+<td style="text-align: left;">esophageal atresia type e</td>
+<td style="text-align: left;">Orphanet:728891</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Esophageal atresia type E</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0008586</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981738</td>
+<td style="text-align: left;">progestogen hypersensitivity</td>
+<td style="text-align: left;">Orphanet:728894</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Progestogen Hypersensitivity</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019274,MONDO:0020027,MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981739</td>
+<td style="text-align: left;">craniotubular dysplasia, ikegawa type</td>
+<td style="text-align: left;">Orphanet:728902</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Craniotubular dysplasia, Ikegawa type</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000032,MONDO:8000034,MONDO:0800084</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981740</td>
+<td style="text-align: left;">epilepsy-mild cortical malformation-oligodendroglial hyperplasia</td>
+<td style="text-align: left;">Orphanet:729224</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Epilepsy-mild cortical malformation-oligodendroglial hyperplasia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0017094,MONDO:0000001</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981741</td>
+<td style="text-align: left;">isolated cerebellar malformation</td>
+<td style="text-align: left;">Orphanet:729527</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Isolated cerebellar malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0015915</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981742</td>
+<td style="text-align: left;">syndromic rhombencephalosynapsis</td>
+<td style="text-align: left;">Orphanet:729538</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Syndromic rhombencephalosynapsis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0017118</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981743</td>
+<td style="text-align: left;">midbrain-hindbrain malformation</td>
+<td style="text-align: left;">Orphanet:729554</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Midbrain-Hindbrain malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020022,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981744</td>
+<td style="text-align: left;">forebrain malformation</td>
+<td style="text-align: left;">Orphanet:729560</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Forebrain malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020022,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981745</td>
+<td style="text-align: left;">early-onset leucoencephalopaty-spasticity-stroke-neurodevelopmental disorder</td>
+<td style="text-align: left;">Orphanet:729649</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Early-onset leucoencephalopaty-spasticity-stroke-neurodevelopmental disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0019046,MONDO:0035863,MONDO:0018787,MONDO:0015159</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981746</td>
+<td style="text-align: left;">sandestig-stefanova syndrome</td>
+<td style="text-align: left;">Orphanet:729761</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Sandestig-Stefanova syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0020225,MONDO:0035863,MONDO:0017120,MONDO:8000032,MONDO:0015159</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981747</td>
+<td style="text-align: left;">congenital generalized alopecia-hypoplastic kidneys-facial dysmorphism-sensorineural deafness syndrome</td>
+<td style="text-align: left;">Orphanet:729781</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Congenital generalized alopecia-hypoplastic kidneys-facial dysmorphism-sensorineural deafness syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019589,MONDO:0019721,MONDO:8000032,MONDO:0004907,MONDO:0021034,MONDO:0015159,MONDO:0035863,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981748</td>
+<td style="text-align: left;">infant-type hemispheric glioma, fusion-negative</td>
+<td style="text-align: left;">Orphanet:730226</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Infant-type hemispheric glioma, fusion-negative</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0858940,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981749</td>
+<td style="text-align: left;">autoimmune nodopathy</td>
+<td style="text-align: left;">Orphanet:730230</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Autoimmune nodopathy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0015916</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981750</td>
+<td style="text-align: left;">low-grade fibromyxoid sarcoma</td>
+<td style="text-align: left;">Orphanet:730256</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Low-grade fibromyxoid sarcoma</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0018078</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981751</td>
+<td style="text-align: left;">x-linked intellectual disability, basilicata-akhtar type</td>
+<td style="text-align: left;">Orphanet:730261</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">X-linked intellectual disability, Basilicata-Akhtar type</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0035862,MONDO:8000032,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981752</td>
+<td style="text-align: left;">primary autoimmune ear disease</td>
+<td style="text-align: left;">Orphanet:730276</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Primary autoimmune ear disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019047,MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981753</td>
+<td style="text-align: left;">sclerosing epithelioid fibrosarcoma</td>
+<td style="text-align: left;">Orphanet:730281</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Sclerosing epithelioid fibrosarcoma</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0018078</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981754</td>
+<td style="text-align: left;">megalencephaly-postaxial polydactyly-ventriculomegaly-neuroblastoma syndrome</td>
+<td style="text-align: left;">Orphanet:730286</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Megalencephaly-postaxial polydactyly-ventriculomegaly-neuroblastoma syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0015159,MONDO:0035863,MONDO:8000032</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981755</td>
+<td style="text-align: left;">paraduodenal pancreatitis</td>
+<td style="text-align: left;">Orphanet:730289</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Paraduodenal pancreatitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0015112,MONDO:0000001,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981756</td>
+<td style="text-align: left;">squalene synthase deficiency</td>
+<td style="text-align: left;">Orphanet:730300</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Squalene synthase deficiency</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0019240</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981757</td>
+<td style="text-align: left;">itpr3-related combined immunodeficiency-ectodermal dysplasia syndrome</td>
+<td style="text-align: left;">Orphanet:730318</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">ITPR3-related combined immunodeficiency-ectodermal dysplasia syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:0018035,MONDO:0019287,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981758</td>
+<td style="text-align: left;">isolated anophthalmia</td>
+<td style="text-align: left;">Orphanet:730322</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Isolated anophthalmia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:8000030,MONDO:0016764</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981759</td>
+<td style="text-align: left;">global developmental delay-microcephaly-ataxia-perpipheral demyelinating neuropathy-intellectual disability syndrome</td>
+<td style="text-align: left;">Orphanet:730327</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-microcephaly-ataxia-perpipheral demyelinating neuropathy-intellectual disability syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0035863,MONDO:0015159,MONDO:8000034,MONDO:8000032</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981760</td>
+<td style="text-align: left;">charcot-marie-tooth disease type 1j</td>
+<td style="text-align: left;">Orphanet:730332</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Charcot-Marie-Tooth disease type 1J</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0019011</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981761</td>
+<td style="text-align: left;">global developmental delay-severe feeding difficulties-short stature-multiple congenital anomalies syndrome</td>
+<td style="text-align: left;">Orphanet:730355</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Global developmental delay-severe feeding difficulties-short stature-multiple congenital anomalies syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000032,MONDO:0035863,MONDO:0015159,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981762</td>
+<td style="text-align: left;">ethanol-producing endogenous fermentation syndrome</td>
+<td style="text-align: left;">Orphanet:730363</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Ethanol-producing endogenous fermentation syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0035328,MONDO:0032013,MONDO:8000034</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981763</td>
+<td style="text-align: left;">tuberculid</td>
+<td style="text-align: left;">Orphanet:730373</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Tuberculid</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019546,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981764</td>
+<td style="text-align: left;">genetic midbrain-hindbrain malformation</td>
+<td style="text-align: left;">Orphanet:730382</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Genetic midbrain-hindbrain malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0026170</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981765</td>
+<td style="text-align: left;">invasive meningococcal disease</td>
+<td style="text-align: left;">Orphanet:730396</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Invasive meningococcal disease</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0015575</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981766</td>
+<td style="text-align: left;">ryr2-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;">Orphanet:730618</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">RYR2-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0017990</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981767</td>
+<td style="text-align: left;">casq2-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;">Orphanet:730631</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">CASQ2-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017990,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981768</td>
+<td style="text-align: left;">tecrl-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;">Orphanet:730644</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">TECRL-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017990,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981769</td>
+<td style="text-align: left;">calmodulin-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;">Orphanet:730657</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Calmodulin-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0017990</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981770</td>
+<td style="text-align: left;">trdn-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;">Orphanet:730682</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">TRDN-related catecholaminergic polymorphic ventricular tachycardia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0017990,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981771</td>
+<td style="text-align: left;">rare complex neurodevelopmental disorder without intellectual disability or autism spectrum disorder</td>
+<td style="text-align: left;">Orphanet:730693</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Rare complex neurodevelopmental disorder without intellectual disability or autism spectrum disorder</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0020009,MONDO:0019117,MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981772</td>
+<td style="text-align: left;">genetic syndromic rhombencephalosynapsis</td>
+<td style="text-align: left;">Orphanet:730699</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Genetic syndromic rhombencephalosynapsis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981773</td>
+<td style="text-align: left;">primary extra-pulmonary tuberculosis</td>
+<td style="text-align: left;">Orphanet:730702</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Primary extra-pulmonary tuberculosis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0018076</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981774</td>
+<td style="text-align: left;">genetic forebrain malformation</td>
+<td style="text-align: left;">Orphanet:730707</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Genetic forebrain malformation</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000033,MONDO:0026170</td>
+<td style="text-align: left;">Group of disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981775</td>
+<td style="text-align: left;">isolated partial colobomatous microphthalmia</td>
+<td style="text-align: left;">Orphanet:730721</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Isolated partial colobomatous microphthalmia</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000170,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981776</td>
+<td style="text-align: left;">catecholaminergic polymorphic ventricular tachycardia without known causative genetic defect</td>
+<td style="text-align: left;">Orphanet:730728</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Catecholaminergic polymorphic ventricular tachycardia without known causative genetic defect</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0017990</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981777</td>
+<td style="text-align: left;">infantile-onset tk2-related mitochondrial dna maintenance defect, myopathic form</td>
+<td style="text-align: left;">Orphanet:730740</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Infantile-onset TK2-related mitochondrial DNA maintenance defect, myopathic form</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0012301,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981778</td>
+<td style="text-align: left;">childhood-onset tk2-related mitochondrial dna maintenance defect, myopathic form</td>
+<td style="text-align: left;">Orphanet:730743</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Childhood-onset TK2-related mitochondrial DNA maintenance defect, myopathic form</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0012301</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981779</td>
+<td style="text-align: left;">late-onset tk2-related mitochondrial dna maintenance defect, myopathic form</td>
+<td style="text-align: left;">Orphanet:730746</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Late-onset TK2-related mitochondrial DNA maintenance defect, myopathic form</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000031,MONDO:0012301</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981780</td>
+<td style="text-align: left;">wisconsin syndrome</td>
+<td style="text-align: left;">Orphanet:730866</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Wisconsin syndrome</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0000001,MONDO:8000034,MONDO:0015159,MONDO:0035863,MONDO:0016902</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981781</td>
+<td style="text-align: left;">primary amoebic meningoencephalitis</td>
+<td style="text-align: left;">Orphanet:730882</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Primary amoebic meningoencephalitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019036,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981782</td>
+<td style="text-align: left;">granulomatous amoebic encephalitis</td>
+<td style="text-align: left;">Orphanet:730887</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Granulomatous amoebic encephalitis</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:0019036,MONDO:8000031</td>
+<td style="text-align: left;">Subtype of a disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">MONDO:0981783</td>
+<td style="text-align: left;">ossifying fibromyxoid tumor</td>
+<td style="text-align: left;">Orphanet:730892</td>
+<td style="text-align: left;">MONDO:equivalentTo</td>
+<td style="text-align: left;">Ossifying fibromyxoid tumor</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MONDO:8000034,MONDO:0000001,MONDO:0018078</td>
+<td style="text-align: left;">Disorder</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

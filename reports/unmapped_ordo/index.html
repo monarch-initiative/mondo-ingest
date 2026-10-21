@@ -1,0 +1,3184 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Unmapped ordo - Mondo Disease Ontology Ingest</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ordo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-header__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mondo Disease Ontology Ingest
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unmapped ordo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mondo Disease Ontology Ingest" class="md-nav__button md-logo" aria-label="Mondo Disease Ontology Ingest" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Mondo Disease Ontology Ingest
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/EditorsWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ReleaseWorkflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepoManagement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/SettingUpDockerForODK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/UpdateImports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ManageDocumentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/ContinuousIntegration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odk-workflows/RepositoryFileStructure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Developers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Developers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unmapped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Mapping progress report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapped_deprecated/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mondo sources: Deprecated terms w/ Mondo xrefs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo sources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo sources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sources/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Externally managed content
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Externally managed content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../externally-managed-content/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external/nord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NORD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mondo source metrics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Mondo source metrics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/doid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10cm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10CM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd10who/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD10WHO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/icd11foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ICD11Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ncit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCIT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/omim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/ordo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ORDO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ordo" class="md-nav__link">
+    <span class="md-ellipsis">
+      ORDO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ORDO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unmapped-mappable-terms-excluded-deprecated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unmapped mappable terms (!excluded, !deprecated)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Unmapped ordo</h1>
+
+<h2 id="ordo">ORDO</h2>
+<p><a href="https://flatgithub.com/monarch-initiative/mondo-ingest?filename=src/ontology/reports/ordo_mapping_status.tsv">Interactive FlatGithub table</a></p>
+<h3 id="unmapped-mappable-terms-excluded-deprecated">Unmapped mappable terms <em>(!excluded, !deprecated)</em></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">subject_id</th>
+<th style="text-align: left;">subject_label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Orphanet:409975</td>
+<td style="text-align: left;">1-5 / 10 000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409976</td>
+<td style="text-align: left;">1-9 / 1 000 000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409977</td>
+<td style="text-align: left;">1-9 / 100 000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717812</td>
+<td style="text-align: left;">12q24.31 microdeletion syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727620</td>
+<td style="text-align: left;">16p13.11p11.2 triplication/16p11.2 duplication syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717830</td>
+<td style="text-align: left;">2p14p15 microdeletion syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:397695</td>
+<td style="text-align: left;">3q27.3 microdeletion syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409978</td>
+<td style="text-align: left;">6-9 / 10 000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714413</td>
+<td style="text-align: left;">9p23p22.2 microdeletion syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409979</td>
+<td style="text-align: left;">&lt;1 / 1 000 000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409980</td>
+<td style="text-align: left;">&gt;1 / 1000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714484</td>
+<td style="text-align: left;">AGR2-related infantile-onset inflammatory bowel disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727915</td>
+<td style="text-align: left;">APOB-related familial hypobetalipoproteinemia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714702</td>
+<td style="text-align: left;">Abdominal arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715307</td>
+<td style="text-align: left;">Acquired spinal dural arteriovenous fistula</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715855</td>
+<td style="text-align: left;">Acute exudative polymorphous vitelliform maculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714101</td>
+<td style="text-align: left;">Acute idiopathic maculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714164</td>
+<td style="text-align: left;">Acute posterior multifocal placoid pigment epitheliopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:719931</td>
+<td style="text-align: left;">Angiokeratoma circumscriptum</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:719936</td>
+<td style="text-align: left;">Angiokeratoma of Mibelli</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730248</td>
+<td style="text-align: left;">Anti-CASPR1 nodopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730243</td>
+<td style="text-align: left;">Anti-CNTN1 nodopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730233</td>
+<td style="text-align: left;">Anti-NF155 nodopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730238</td>
+<td style="text-align: left;">Anti-pan-neurofascin nodopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:725964</td>
+<td style="text-align: left;">Appendiceal mucinous neoplasm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717638</td>
+<td style="text-align: left;">Aquagenic urticaria</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726004</td>
+<td style="text-align: left;">Astrocytoma grade 4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:698945</td>
+<td style="text-align: left;">Autoimmune heparin-induced thrombocytopenia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730230</td>
+<td style="text-align: left;">Autoimmune nodopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708133</td>
+<td style="text-align: left;">Autosomal dominant ACTN2-related distal myopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716908</td>
+<td style="text-align: left;">Autosomal dominant congenital myasthenic syndrome due to defective synaptic vesicles exocytosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708123</td>
+<td style="text-align: left;">Autosomal dominant distal nebulin myopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708129</td>
+<td style="text-align: left;">Autosomal recessive ACTN2-related distal myopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727394</td>
+<td style="text-align: left;">Autosomal recessive KLF1-related severe anemia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716903</td>
+<td style="text-align: left;">Autosomal recessive congenital myasthenic syndrome due to defective synaptic vesicles exocytosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723106</td>
+<td style="text-align: left;">Biochemical variant galactosemia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:725898</td>
+<td style="text-align: left;">Bone marrow failure-diabetes mellitus syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727820</td>
+<td style="text-align: left;">Brainstem disconnection syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727156</td>
+<td style="text-align: left;">CACNA1C-related isolated congenital Long QT syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714410</td>
+<td style="text-align: left;">CARD8-related inflammatory bowel disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730631</td>
+<td style="text-align: left;">CASQ2-related catecholaminergic polymorphic ventricular tachycardia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726788</td>
+<td style="text-align: left;">Calcium release deficiency syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730657</td>
+<td style="text-align: left;">Calmodulin-related catecholaminergic polymorphic ventricular tachycardia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727192</td>
+<td style="text-align: left;">Calmodulin-related isolated congenital long QT syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717605</td>
+<td style="text-align: left;">Capillary-lymphatic malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717619</td>
+<td style="text-align: left;">Capillary-lymphatic-venous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717611</td>
+<td style="text-align: left;">Capillary-venous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730728</td>
+<td style="text-align: left;">Catecholaminergic polymorphic ventricular tachycardia without known causative genetic defect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:557495</td>
+<td style="text-align: left;">Category</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:719939</td>
+<td style="text-align: left;">Central conducting lymphatic anomaly</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723432</td>
+<td style="text-align: left;">Central nervous system venous vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730332</td>
+<td style="text-align: left;">Charcot-Marie-Tooth disease type 1J</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730743</td>
+<td style="text-align: left;">Childhood-onset TK2-related mitochondrial DNA maintenance defect, myopathic form</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726700</td>
+<td style="text-align: left;">Chitayat syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723203</td>
+<td style="text-align: left;">Choroidal and ciliary body melanoma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717268</td>
+<td style="text-align: left;">Circumscribed astrocytic glioma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714138</td>
+<td style="text-align: left;">Circumscribed choroidal hemangioma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:377794</td>
+<td style="text-align: left;">Clinical group</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:377796</td>
+<td style="text-align: left;">Clinical subtype</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723101</td>
+<td style="text-align: left;">Clinical variant galactosemia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717582</td>
+<td style="text-align: left;">Coagulation abnormality associated with a vascular anomaly</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:718017</td>
+<td style="text-align: left;">Combined immunodeficiency due to COPG1 deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723161</td>
+<td style="text-align: left;">Combined immunodeficiency due to NFATC1 deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:718047</td>
+<td style="text-align: left;">Combined immunodeficiency due to polymerase delta deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726452</td>
+<td style="text-align: left;">Combined immunodeficiency with early gray hairing</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726442</td>
+<td style="text-align: left;">Combined immunodeficiency with hypo/agammaglobulinemia and opportunistic infections</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:699596</td>
+<td style="text-align: left;">Combined immunodeficiency-hypogammaglobulinemia-cancer predisposing syndrome due to AIOLOS deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:699593</td>
+<td style="text-align: left;">Combined immunodeficiency-lymphopenia-cancer predisposing syndrome due to AIOLOS deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:696881</td>
+<td style="text-align: left;">Common variable immunodeficiency phenotype due to CD19/CD81 deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:696931</td>
+<td style="text-align: left;">Common variable immunodeficiency phenotype due to TWEAK deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:696857</td>
+<td style="text-align: left;">Common variable immunodeficiency phenotype due to germinal digenic/polygenic mutations</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:696870</td>
+<td style="text-align: left;">Common variable immunodeficiency phenotype due to germinal monogenic mutation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:696907</td>
+<td style="text-align: left;">Common variable immunodeficiency phenotype due to homozygous TACI deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:696863</td>
+<td style="text-align: left;">Common variable immunodeficiency phenotype due to somatic mutations</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:231205</td>
+<td style="text-align: left;">Common variable immunodeficiency without known genetic defect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714079</td>
+<td style="text-align: left;">Complete congenital stationary night blindness, Schubert-Bornschein type</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:719950</td>
+<td style="text-align: left;">Complex lymphatic anomaly</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730418</td>
+<td style="text-align: left;">Complex neurodevelopmental disorder with unspecific dysmorphic features/congenital anomalies without ID/ASD of genetic/genomic origin</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730415</td>
+<td style="text-align: left;">Complex neurodevelopmental disorder with unspecific dysmorphic features/congenital anomalies without ID/ASD of not yet identified genetic/genomic cause</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730421</td>
+<td style="text-align: left;">Complex neurodevelopmental disorder with unspecific dysmorphic features/congenital anomalies without intellectual disability or autism spectrum disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726053</td>
+<td style="text-align: left;">Congenital amegakaryocytic thrombocytopenia without known causal genetic defect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726047</td>
+<td style="text-align: left;">Congenital amegakaryocytic thrombocytopenia-MPL</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726050</td>
+<td style="text-align: left;">Congenital amegakaryocytic thrombocytopenia-THPO</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714487</td>
+<td style="text-align: left;">Congenital diarrhea-chronic gastrointestinal inflammation-ocular dysgenesis syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714692</td>
+<td style="text-align: left;">Congenital disseminated pyogenic granuloma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729781</td>
+<td style="text-align: left;">Congenital generalized alopecia-hypoplastic kidneys-facial dysmorphism-sensorineural deafness syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708019</td>
+<td style="text-align: left;">Congenital heart defect-ectodermal dysplasia- brachydactyly-telangiectasia syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728467</td>
+<td style="text-align: left;">Congenital macrothrombocytopenia with focal myelofibrosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717646</td>
+<td style="text-align: left;">Congenital midnasal stenosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716913</td>
+<td style="text-align: left;">Congenital myasthenic syndrome associated with ubiquitously expressed proteins</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716881</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to a sodium channel 1.4 defect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:719880</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to acetylcholine receptor clustering defect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716889</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective axonal transport</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:719914</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective nuclear membrane protein</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:719921</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective structural molecule at the neuromuscular junction</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716899</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective synaptic vesicles exocytosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716893</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defective synthesis or recycling of acetylcholine</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716825</td>
+<td style="text-align: left;">Congenital myasthenic syndrome due to defects in endplate development and maintenance</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716742</td>
+<td style="text-align: left;">Congenital myasthenic syndrome with kinetic defect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716772</td>
+<td style="text-align: left;">Congenital myasthenic syndrome with kinetic defect due to reduced ion channel conductance</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716917</td>
+<td style="text-align: left;">Congenital myasthenic syndrome with mitochondrial defect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716816</td>
+<td style="text-align: left;">Congenital myasthenic syndrome with primary acetylcholine receptor deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714096</td>
+<td style="text-align: left;">Congenital stationary night blindness, Riggs type</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714090</td>
+<td style="text-align: left;">Congenital stationary night blindness, Schubert-Bornschein type</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714493</td>
+<td style="text-align: left;">Congenital thrombocytopenia-recurrent infections syndrome due to WIP deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728902</td>
+<td style="text-align: left;">Craniotubular dysplasia, Ikegawa type</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723286</td>
+<td style="text-align: left;">Cutaneous epithelioid angiomatous nodule</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708126</td>
+<td style="text-align: left;">DNAJB6-related distal myopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:720321</td>
+<td style="text-align: left;">Developmental delay-blepharophimosis-telecanthus-facial dysmorphism-intellectual disability syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:720326</td>
+<td style="text-align: left;">Developmental delay-cervical spine anomalies-facial dysmorphism-intellectual disability syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717846</td>
+<td style="text-align: left;">Developmental delay-facial dysmorphism-Blaschko lines hypopigmentation-obesity-intellectual disability syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714404</td>
+<td style="text-align: left;">Developmental delay-macrocephaly-corpus callosum dysgenesis-intellectual disability syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714407</td>
+<td style="text-align: left;">Developmental delay-macrocephaly-corpus callosum dysgenesis-intellectual disability syndrome due to NFIB mutation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717854</td>
+<td style="text-align: left;">Developmental delay-microcephaly-short stature-ocular disorders-intellectual disability syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726695</td>
+<td style="text-align: left;">Developmental delay-vision anomalies-hand stereotypies-intellectual disability syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708208</td>
+<td style="text-align: left;">Developmental delay-white matter abnormalities-strabismus-recurrent respiratory tract infections syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714737</td>
+<td style="text-align: left;">Diffuse capillary malformation with overgrowth</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715950</td>
+<td style="text-align: left;">Diffuse hemispheric glioma-H3 G34-mutant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723358</td>
+<td style="text-align: left;">Diffuse midline glioma, H3 K27-altered</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715724</td>
+<td style="text-align: left;">Diffuse pediatric-type high-grade glioma-H3-wildtype-IDH-wildtype</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717593</td>
+<td style="text-align: left;">Disseminated intravascular coagulation associated with a vascular anomaly</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:707937</td>
+<td style="text-align: left;">Distal arthrogryposis-progressive scoliosis-thumb deformity-impaired proprioception syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717564</td>
+<td style="text-align: left;">Dural sinus malformation without arteriovenous shunt</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728619</td>
+<td style="text-align: left;">Early repolarization syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:707983</td>
+<td style="text-align: left;">Early-onset autosomal recessive TTN-related distal myopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714477</td>
+<td style="text-align: left;">Early-onset inflammatory bowel disease-ulcerative skin lesions-immunodeficiency syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729649</td>
+<td style="text-align: left;">Early-onset leucoencephalopaty-spasticity-stroke-neurodevelopmental disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708036</td>
+<td style="text-align: left;">Ectodermal dysplasia with agenesis of maxillary lateral incisors and mandibular anterior teeth</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708043</td>
+<td style="text-align: left;">Ectodermal dysplasia with oligodontia-hand and foot malformation-hypoplastic nipples</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708014</td>
+<td style="text-align: left;">Ectodermal dysplasia-natal teeth-skin abscesses-plantar hyperkeratosis-hearing impairment syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708684</td>
+<td style="text-align: left;">Eosinophilic cystitis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729224</td>
+<td style="text-align: left;">Epilepsy-mild cortical malformation-oligodendroglial hyperplasia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730401</td>
+<td style="text-align: left;">Erythema induratum of Bazin</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728877</td>
+<td style="text-align: left;">Esophageal atresia type A</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728882</td>
+<td style="text-align: left;">Esophageal atresia type B</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728885</td>
+<td style="text-align: left;">Esophageal atresia type C</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728888</td>
+<td style="text-align: left;">Esophageal atresia type D</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728891</td>
+<td style="text-align: left;">Esophageal atresia type E</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730363</td>
+<td style="text-align: left;">Ethanol-producing endogenous fermentation syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:377795</td>
+<td style="text-align: left;">Etiological subtype</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723223</td>
+<td style="text-align: left;">Extrapulmonary non-tuberculous mycobacterial infection</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708171</td>
+<td style="text-align: left;">Facial dysmorphism-corpus callosum hypoplasia-infantile epileptic encephalopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727925</td>
+<td style="text-align: left;">Familial combined hypolipidemia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716758</td>
+<td style="text-align: left;">Fast-channel congenital myasthenic syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715744</td>
+<td style="text-align: left;">Fast-flow vascular malformation of the central nervous system</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714698</td>
+<td style="text-align: left;">Fast-flow vascular malformation of the thoraco-abdominal-pelvic cavity</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723156</td>
+<td style="text-align: left;">Fetal acetylcholine receptor antibody-related disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728725</td>
+<td style="text-align: left;">Fetus in fetu</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723342</td>
+<td style="text-align: left;">Flow limitation in the iliac artery</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729560</td>
+<td style="text-align: left;">Forebrain malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723094</td>
+<td style="text-align: left;">Galactose-1-phosphate uridylyltransferase deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:693869</td>
+<td style="text-align: left;">Gallblader arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:693832</td>
+<td style="text-align: left;">Gastrointestinal tract arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723416</td>
+<td style="text-align: left;">Genetic arthrogryposis syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730707</td>
+<td style="text-align: left;">Genetic forebrain malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730393</td>
+<td style="text-align: left;">Genetic isolated posterior fossa cystic malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730382</td>
+<td style="text-align: left;">Genetic midbrain-hindbrain malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730390</td>
+<td style="text-align: left;">Genetic posterior fossa cystic malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726479</td>
+<td style="text-align: left;">Genetic predisposition to Whipple disease due to IRF4 haploinsufficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728642</td>
+<td style="text-align: left;">Genetic syndrome or malformation associated with head and neck malformations</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730696</td>
+<td style="text-align: left;">Genetic syndrome with a brainstem malformation as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730406</td>
+<td style="text-align: left;">Genetic syndrome with a posterior fossa cystic malformation as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730699</td>
+<td style="text-align: left;">Genetic syndromic rhombencephalosynapsis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715446</td>
+<td style="text-align: left;">Geographic pattern capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717884</td>
+<td style="text-align: left;">Global developmental delay-acquired macrocephaly-ataxia-febrile seizures syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726677</td>
+<td style="text-align: left;">Global developmental delay-bilateral cataract-cerebellar atrophy-movement disorder syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714399</td>
+<td style="text-align: left;">Global developmental delay-dental enamel defects-ataxia syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:724148</td>
+<td style="text-align: left;">Global developmental delay-early-onset refractory epilepsy-spastic quadriplegia-microcephaly-cerebral atrophy syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717841</td>
+<td style="text-align: left;">Global developmental delay-facial dysmorphism-atrial septal defect syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716109</td>
+<td style="text-align: left;">Global developmental delay-facial dysmorphism-brachydactyly syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716116</td>
+<td style="text-align: left;">Global developmental delay-facial dysmorphism-hands and feet anomalies syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714385</td>
+<td style="text-align: left;">Global developmental delay-high pain tolerance-intellectual disability syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730327</td>
+<td style="text-align: left;">Global developmental delay-microcephaly-ataxia-perpipheral demyelinating neuropathy-intellectual disability syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:724143</td>
+<td style="text-align: left;">Global developmental delay-nystagmus-short stature-corpus callosum hypoplasia-white matter abnormalities syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717823</td>
+<td style="text-align: left;">Global developmental delay-recurrent infections-facial dysmorphism syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730355</td>
+<td style="text-align: left;">Global developmental delay-severe feeding difficulties-short stature-multiple congenital anomalies syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708178</td>
+<td style="text-align: left;">Global developmental delay-speech apraxia-facial dysmorphism-limb and palpebral anomalies syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726684</td>
+<td style="text-align: left;">Global developmental delay-urogenital anomalies-cerebellar atrophy-cleft palate syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730887</td>
+<td style="text-align: left;">Granulomatous amoebic encephalitis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726837</td>
+<td style="text-align: left;">Hematohidrosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715125</td>
+<td style="text-align: left;">Hemoglobin E-beta-thalassemia intermedia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715128</td>
+<td style="text-align: left;">Hemoglobin E-beta-thalassemia major</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715135</td>
+<td style="text-align: left;">Hemoglobin Lepore-beta-thalassemia intermedia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715140</td>
+<td style="text-align: left;">Hemoglobin Lepore-beta-thalassemia major</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:693846</td>
+<td style="text-align: left;">Hepatic arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726824</td>
+<td style="text-align: left;">Hepatorenocardiac degenerative fibrosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715143</td>
+<td style="text-align: left;">Heterozygous beta-thalassemia intermedia with supernumerary alpha-globin gene</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:725992</td>
+<td style="text-align: left;">High-grade appendiceal mucinous neoplasm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715721</td>
+<td style="text-align: left;">High-grade astrocytoma with piloid features</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:377797</td>
+<td style="text-align: left;">Histopathological subtype</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726644</td>
+<td style="text-align: left;">Houge-Janssens syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726659</td>
+<td style="text-align: left;">Houge-Janssens syndrome type 3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726667</td>
+<td style="text-align: left;">Houge-Janssens syndrome type 4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:3322</td>
+<td style="text-align: left;">Hoyeraal-Hreidarsson syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723146</td>
+<td style="text-align: left;">Hyper-IgM syndrome due to INO80 deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715120</td>
+<td style="text-align: left;">Hyperpituitarism</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727932</td>
+<td style="text-align: left;">Hypocholesterolemia due to PCSK9 deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730318</td>
+<td style="text-align: left;">ITPR3-related combined immunodeficiency-ectodermal dysplasia syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715845</td>
+<td style="text-align: left;">Idiopathic acute exudative polymorphous vitelliform maculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714154</td>
+<td style="text-align: left;">Idiopathic multifocal choroiditis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728633</td>
+<td style="text-align: left;">Idiopathic orbital inflammation syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714829</td>
+<td style="text-align: left;">Immune checkpoint inhibitor-induced myositis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728866</td>
+<td style="text-align: left;">Immune effector cell-associated neurotoxicity syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714496</td>
+<td style="text-align: left;">Immunodeficiency-congenital thrombocytopenia-hypereosinophilia-colitis-vasculitis syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714070</td>
+<td style="text-align: left;">Incomplete congenital stationary night blindness, Schubert-Bornschein type</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715697</td>
+<td style="text-align: left;">Infant-type hemispheric glioma ALK-altered</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715704</td>
+<td style="text-align: left;">Infant-type hemispheric glioma MET-altered</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715694</td>
+<td style="text-align: left;">Infant-type hemispheric glioma NTRK-altered</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715701</td>
+<td style="text-align: left;">Infant-type hemispheric glioma ROS1-altered</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730226</td>
+<td style="text-align: left;">Infant-type hemispheric glioma, fusion-negative</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730740</td>
+<td style="text-align: left;">Infantile-onset TK2-related mitochondrial DNA maintenance defect, myopathic form</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714423</td>
+<td style="text-align: left;">Infantile-onset inflammatory bowel disease-hearing loss-recurrent infections syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714472</td>
+<td style="text-align: left;">Inflammatory bowel disease-autoimmunity-sinopulmonary infections-lymphadenopathy syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728475</td>
+<td style="text-align: left;">Inherited bone marrow failure disorder with immune defect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726782</td>
+<td style="text-align: left;">Intellectual disability-myopathy-white matter abnormality syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708203</td>
+<td style="text-align: left;">Intellectual disability-small hands and feet-drug-resistant epilepsy syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715318</td>
+<td style="text-align: left;">Intracranial dural arteriovenous fistula</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715750</td>
+<td style="text-align: left;">Intracranial fast-flow vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708007</td>
+<td style="text-align: left;">Intramuscular fast-flow vascular anomaly</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715923</td>
+<td style="text-align: left;">Intraosseous venous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730396</td>
+<td style="text-align: left;">Invasive meningococcal disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723195</td>
+<td style="text-align: left;">Iris melanoma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730322</td>
+<td style="text-align: left;">Isolated anophthalmia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729527</td>
+<td style="text-align: left;">Isolated cerebellar malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723518</td>
+<td style="text-align: left;">Isolated combined vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730675</td>
+<td style="text-align: left;">Isolated complex neurodevelopmental disorder without ID/ASD of genetic/genomic origin</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730679</td>
+<td style="text-align: left;">Isolated complex neurodevelopmental disorder without ID/ASD of not yet identified genetic/genomic cause</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730672</td>
+<td style="text-align: left;">Isolated complex neurodevelopmental disorder without intellectual disability or autism spectrum disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727126</td>
+<td style="text-align: left;">Isolated congenital long QT syndrome without known causative genetic defect</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715345</td>
+<td style="text-align: left;">Isolated geographic pattern capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727803</td>
+<td style="text-align: left;">Isolated global cerebellar hypoplasia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723270</td>
+<td style="text-align: left;">Isolated glomeruloid hemangioma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715359</td>
+<td style="text-align: left;">Isolated low resistance capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730721</td>
+<td style="text-align: left;">Isolated partial colobomatous microphthalmia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729563</td>
+<td style="text-align: left;">Isolated posterior fossa cystic malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715353</td>
+<td style="text-align: left;">Isolated reticulated capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727185</td>
+<td style="text-align: left;">KCNE1-related isolated congenital long QT syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727178</td>
+<td style="text-align: left;">KCNE2-related isolated congenital long QT syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727149</td>
+<td style="text-align: left;">KCNH2-related isolated congenital long QT syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727141</td>
+<td style="text-align: left;">KCNQ1-related isolated congenital long QT syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717585</td>
+<td style="text-align: left;">Kasabach-Merritt-like phenomenon</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730746</td>
+<td style="text-align: left;">Late-onset TK2-related mitochondrial DNA maintenance defect, myopathic form</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:720017</td>
+<td style="text-align: left;">Late-onset brain arteriovenous fistula</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:720027</td>
+<td style="text-align: left;">Late-onset spinal arteriovenous fistula</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730385</td>
+<td style="text-align: left;">Lichen scrofulosorum</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717588</td>
+<td style="text-align: left;">Localized intravascular coagulation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727651</td>
+<td style="text-align: left;">Loin pain-hematuria syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715154</td>
+<td style="text-align: left;">Low oxygen affinity alpha chain hemoglobin disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715157</td>
+<td style="text-align: left;">Low oxygen affinity beta chain hemoglobin disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715147</td>
+<td style="text-align: left;">Low oxygen affinity hemoglobin disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715463</td>
+<td style="text-align: left;">Low resistance capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:725984</td>
+<td style="text-align: left;">Low-grade appendiceal mucinous neoplasm</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730256</td>
+<td style="text-align: left;">Low-grade fibromyxoid sarcoma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717598</td>
+<td style="text-align: left;">Lymphatic-venous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714709</td>
+<td style="text-align: left;">Mediastinal arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727881</td>
+<td style="text-align: left;">Medullary tegmental cap dysplasia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730286</td>
+<td style="text-align: left;">Megalencephaly-postaxial polydactyly-ventriculomegaly-neuroblastoma syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715862</td>
+<td style="text-align: left;">Melanocytoma of the optic disc and optic nerve</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715757</td>
+<td style="text-align: left;">Metameric fast-flow vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:707993</td>
+<td style="text-align: left;">Methemoglobinemia-related cyanosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:718037</td>
+<td style="text-align: left;">Microcephalic primordial dwarfism syndrome with combined immunodeficiency due to PRIM1 deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729554</td>
+<td style="text-align: left;">Midbrain-Hindbrain malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727719</td>
+<td style="text-align: left;">Monoamine oxidase A and monoamine oxidase B deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715623</td>
+<td style="text-align: left;">Motor incoordination-myopathy-respiratory insufficiency-progressive cerebellar atrophy syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723139</td>
+<td style="text-align: left;">Multifocal ectopic Purkinje-related premature contraction</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:719955</td>
+<td style="text-align: left;">Multifocal fast-flow vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715339</td>
+<td style="text-align: left;">Multifocal peripheral venous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714806</td>
+<td style="text-align: left;">Multifocal sporadic venous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728764</td>
+<td style="text-align: left;">NIT1-related cerebral small vessel disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:720014</td>
+<td style="text-align: left;">Neonatal/infantile-onset brain arteriovenous fistula</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:720023</td>
+<td style="text-align: left;">Neonatal/infantile-onset spinal arteriovenous fistula</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714109</td>
+<td style="text-align: left;">Ocular siderosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730892</td>
+<td style="text-align: left;">Ossifying fibromyxoid tumor</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:720357</td>
+<td style="text-align: left;">Otofaciocervical syndrome with thymic hypoplasia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:720341</td>
+<td style="text-align: left;">Otofaciocervical syndrome without thymic hypoplasia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714652</td>
+<td style="text-align: left;">PCDH19 clustering epilepsy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714490</td>
+<td style="text-align: left;">PERCC1-related congenital intractable malabsorptive diarrhea</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728584</td>
+<td style="text-align: left;">PIK3CA-related overgrowth spectrum disorder with vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728432</td>
+<td style="text-align: left;">PLA2G6-related neurodegeneration, juvenile-onset</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726807</td>
+<td style="text-align: left;">PTEN hamartoma of soft tissue</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:693826</td>
+<td style="text-align: left;">Pancreatic arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730379</td>
+<td style="text-align: left;">Papulonecrotic tuberculid</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730289</td>
+<td style="text-align: left;">Paraduodenal pancreatitis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715850</td>
+<td style="text-align: left;">Paraneoplastic acute exudative polymorphous vitelliform maculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715331</td>
+<td style="text-align: left;">Paraspinal arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717784</td>
+<td style="text-align: left;">Partial trisomy 12q syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714715</td>
+<td style="text-align: left;">Pelvic arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708051</td>
+<td style="text-align: left;">Peripheral arteriovenous fistula</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708046</td>
+<td style="text-align: left;">Peripheral arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:707944</td>
+<td style="text-align: left;">Peripheral fast-flow vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708651</td>
+<td style="text-align: left;">Phosphoribosylformylglycinamidine synthase deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:719766</td>
+<td style="text-align: left;">Photic retinopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726703</td>
+<td style="text-align: left;">Polydactyly-macrocephaly syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728528</td>
+<td style="text-align: left;">Pontocerebellar hypoplasia and related disorders</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728514</td>
+<td style="text-align: left;">Pontocerebellar hypoplasia type 16</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728521</td>
+<td style="text-align: left;">Pontocerebellar hypoplasia type 17</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729557</td>
+<td style="text-align: left;">Posterior fossa cystic malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723290</td>
+<td style="text-align: left;">Pregnancy-associated spontaneous coronary artery dissection</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714160</td>
+<td style="text-align: left;">Presumed ocular histoplasmosis syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730882</td>
+<td style="text-align: left;">Primary amoebic meningoencephalitis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730276</td>
+<td style="text-align: left;">Primary autoimmune ear disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714046</td>
+<td style="text-align: left;">Primary choroidal lymphoma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730702</td>
+<td style="text-align: left;">Primary extra-pulmonary tuberculosis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:95506</td>
+<td style="text-align: left;">Primary hypophysitis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728894</td>
+<td style="text-align: left;">Progestogen Hypersensitivity</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727296</td>
+<td style="text-align: left;">Progressive muscle weakness-respiratory insufficiency-learning difficulty syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714429</td>
+<td style="text-align: left;">Pseudo-TORCH syndrome type 3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730618</td>
+<td style="text-align: left;">RYR2-related catecholaminergic polymorphic ventricular tachycardia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726832</td>
+<td style="text-align: left;">Radiation-induced Moyamoya syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730376</td>
+<td style="text-align: left;">Rare acquired isolated progressive generalized retinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716207</td>
+<td style="text-align: left;">Rare benign neoplastic choroidal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730693</td>
+<td style="text-align: left;">Rare complex neurodevelopmental disorder without intellectual disability or autism spectrum disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716393</td>
+<td style="text-align: left;">Rare disorder with non-progressive generalized retinal disorder as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716299</td>
+<td style="text-align: left;">Rare disorder with non-progressive predominantly chorioretinal disorder as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716422</td>
+<td style="text-align: left;">Rare disorder with non-progressive predominantly macular disorder as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716405</td>
+<td style="text-align: left;">Rare disorder with progressive generalized retinal disorder as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716342</td>
+<td style="text-align: left;">Rare disorder with progressive predominantly chorioretinal disorder as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716427</td>
+<td style="text-align: left;">Rare disorder with progressive predominantly macular disorder as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716459</td>
+<td style="text-align: left;">Rare disorder with progressive retinal vasculopathy as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716446</td>
+<td style="text-align: left;">Rare disorder with progressive vitreoretinopathy disorder as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716358</td>
+<td style="text-align: left;">Rare generalized retinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717348</td>
+<td style="text-align: left;">Rare genetic disorder with progressive retinal vasculopathy as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717260</td>
+<td style="text-align: left;">Rare genetic generalized retinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717311</td>
+<td style="text-align: left;">Rare genetic isolated non-progressive predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717330</td>
+<td style="text-align: left;">Rare genetic isolated non-progressive predominantly macular disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717324</td>
+<td style="text-align: left;">Rare genetic isolated progressive generalized retinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717317</td>
+<td style="text-align: left;">Rare genetic isolated progressive predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717336</td>
+<td style="text-align: left;">Rare genetic isolated progressive predominantly macular disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717345</td>
+<td style="text-align: left;">Rare genetic isolated progressive retinal vasculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717308</td>
+<td style="text-align: left;">Rare genetic non-progressive predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717327</td>
+<td style="text-align: left;">Rare genetic non-progressive predominantly macular disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717339</td>
+<td style="text-align: left;">Rare genetic non-progressive retinal vasculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717257</td>
+<td style="text-align: left;">Rare genetic predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717321</td>
+<td style="text-align: left;">Rare genetic progressive generalized retinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717314</td>
+<td style="text-align: left;">Rare genetic progressive predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717333</td>
+<td style="text-align: left;">Rare genetic progressive predominantly macular disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:717342</td>
+<td style="text-align: left;">Rare genetic progressive retinal vasculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716195</td>
+<td style="text-align: left;">Rare inflammatory choroidal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716213</td>
+<td style="text-align: left;">Rare isolated developmental choroidal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716367</td>
+<td style="text-align: left;">Rare isolated non-progressive generalized retinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716296</td>
+<td style="text-align: left;">Rare isolated non-progressive predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716419</td>
+<td style="text-align: left;">Rare isolated non-progressive predominantly macular disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723267</td>
+<td style="text-align: left;">Rare isolated port-wine capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716410</td>
+<td style="text-align: left;">Rare isolated progressive generalized retinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716348</td>
+<td style="text-align: left;">Rare isolated progressive predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716432</td>
+<td style="text-align: left;">Rare isolated progressive predominantly macular disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716466</td>
+<td style="text-align: left;">Rare isolated progressive retinal vasculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716441</td>
+<td style="text-align: left;">Rare isolated progressive vitreoretinopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716210</td>
+<td style="text-align: left;">Rare malignant neoplastic choroidal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716204</td>
+<td style="text-align: left;">Rare neoplastic choroidal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716364</td>
+<td style="text-align: left;">Rare non-progressive generalized retinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716293</td>
+<td style="text-align: left;">Rare non-progressive predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716413</td>
+<td style="text-align: left;">Rare non-progressive predominantly macular disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716450</td>
+<td style="text-align: left;">Rare non-progressive retinal vasculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716435</td>
+<td style="text-align: left;">Rare non-progressive vitreoretinopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716198</td>
+<td style="text-align: left;">Rare paraneoplastic choroidal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716290</td>
+<td style="text-align: left;">Rare predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716361</td>
+<td style="text-align: left;">Rare progressive generalized retinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716304</td>
+<td style="text-align: left;">Rare progressive predominantly chorioretinal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716416</td>
+<td style="text-align: left;">Rare progressive predominantly macular disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716455</td>
+<td style="text-align: left;">Rare progressive retinal vasculopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716438</td>
+<td style="text-align: left;">Rare progressive vitreoretinopathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716201</td>
+<td style="text-align: left;">Rare vascular choroidal disorder</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723256</td>
+<td style="text-align: left;">Rare vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726036</td>
+<td style="text-align: left;">Red cell aplasia-microcephaly-seizure-developmental delay syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:693839</td>
+<td style="text-align: left;">Renal arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715453</td>
+<td style="text-align: left;">Reticulated capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714726</td>
+<td style="text-align: left;">Retroperitoneal arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715640</td>
+<td style="text-align: left;">Rothmund-Thomson syndrome type 3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715635</td>
+<td style="text-align: left;">Rothmund-Thomson syndrome type 4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714481</td>
+<td style="text-align: left;">SCGN-related severe early-onset hereditary ulcerative colitis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727203</td>
+<td style="text-align: left;">SCN5A-related isolated congenital long QT syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723218</td>
+<td style="text-align: left;">SITRAME Syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729761</td>
+<td style="text-align: left;">Sandestig-Stefanova syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730281</td>
+<td style="text-align: left;">Sclerosing epithelioid fibrosarcoma</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726812</td>
+<td style="text-align: left;">Self limited focal childhood epilepsy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:728662</td>
+<td style="text-align: left;">Sensorineural hearing loss-brainstem malformation-motor delay-balance impairment syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:708166</td>
+<td style="text-align: left;">Severe neurodevelopmental disorder-facial dysmorphism-cerebral-renal-cardiac anomalies syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:700107</td>
+<td style="text-align: left;">Sickle cell S-other specified hemoglobin variant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714734</td>
+<td style="text-align: left;">Sinus pericranii</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:716765</td>
+<td style="text-align: left;">Slow-channel congenital myasthenic syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715284</td>
+<td style="text-align: left;">Spinal cord arteriovenous malformation, nidus type</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715326</td>
+<td style="text-align: left;">Spinal epidural arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715025</td>
+<td style="text-align: left;">Spinal fast-flow vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:693863</td>
+<td style="text-align: left;">Splenic arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:699021</td>
+<td style="text-align: left;">Spontaneous heparin-induced thrombocytopenia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730300</td>
+<td style="text-align: left;">Squalene synthase deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714150</td>
+<td style="text-align: left;">Stellate non-hereditary idiopathic foveomacular retinoschisis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714041</td>
+<td style="text-align: left;">Straatsma syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726843</td>
+<td style="text-align: left;">Sweat glands anomaly</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729519</td>
+<td style="text-align: left;">Syndrome with a brainstem malformation as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729566</td>
+<td style="text-align: left;">Syndrome with a posterior fossa cystic malformation as a major feature</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723427</td>
+<td style="text-align: left;">Syndromic fast-flow vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715460</td>
+<td style="text-align: left;">Syndromic geographic pattern capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715466</td>
+<td style="text-align: left;">Syndromic low resistance capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723264</td>
+<td style="text-align: left;">Syndromic port-wine capillary malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:729538</td>
+<td style="text-align: left;">Syndromic rhombencephalosynapsis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:723261</td>
+<td style="text-align: left;">Syndromic venous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:720371</td>
+<td style="text-align: left;">T-B+NK+ severe combined immunodeficiency due to LCP2 deficiency</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730644</td>
+<td style="text-align: left;">TECRL-related catecholaminergic polymorphic ventricular tachycardia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730682</td>
+<td style="text-align: left;">TRDN-related catecholaminergic polymorphic ventricular tachycardia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727163</td>
+<td style="text-align: left;">TRDN-related isolated congenital long QT syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726799</td>
+<td style="text-align: left;">TSHZ3-related congenital anomalies of kidney-urinary tract-intellectual disability syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730373</td>
+<td style="text-align: left;">Tuberculid</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715762</td>
+<td style="text-align: left;">Unifocal fast-flow vascular malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:715334</td>
+<td style="text-align: left;">Unifocal peripheral venous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:714785</td>
+<td style="text-align: left;">Unifocal sporadic venous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:707789</td>
+<td style="text-align: left;">Unstable alpha globin chain variant disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:707792</td>
+<td style="text-align: left;">Unstable gamma globin chain variant disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:693872</td>
+<td style="text-align: left;">Urinary tract arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:693815</td>
+<td style="text-align: left;">Uterine arteriovenous malformation</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:699029</td>
+<td style="text-align: left;">Vaccine-induced immune thrombotic thrombocytopenia</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:726793</td>
+<td style="text-align: left;">Venezuelan equine encephalitis</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730866</td>
+<td style="text-align: left;">Wisconsin syndrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409934</td>
+<td style="text-align: left;">X-linked dominant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:730261</td>
+<td style="text-align: left;">X-linked intellectual disability, Basilicata-Akhtar type</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409932</td>
+<td style="text-align: left;">X-linked recessive</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409938</td>
+<td style="text-align: left;">Y-linked</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:718255</td>
+<td style="text-align: left;">Y-linked non-syndromic genetic deafness</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:727861</td>
+<td style="text-align: left;">YARS1-related multisystemic disease</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:314485</td>
+<td style="text-align: left;">Young adult-onset distal hereditary motor neuropathy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409947</td>
+<td style="text-align: left;">adolescent</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409948</td>
+<td style="text-align: left;">adult</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C023</td>
+<td style="text-align: left;">age of onset</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409950</td>
+<td style="text-align: left;">all ages</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409967</td>
+<td style="text-align: left;">annual incidence</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409943</td>
+<td style="text-align: left;">antenatal</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409929</td>
+<td style="text-align: left;">autosomal dominant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409930</td>
+<td style="text-align: left;">autosomal recessive</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409968</td>
+<td style="text-align: left;">birth prevalence</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409973</td>
+<td style="text-align: left;">case</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409970</td>
+<td style="text-align: left;">cases/families</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409946</td>
+<td style="text-align: left;">childhood</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409949</td>
+<td style="text-align: left;">elderly</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C003</td>
+<td style="text-align: left;">epidemiology</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409974</td>
+<td style="text-align: left;">family</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C009</td>
+<td style="text-align: left;">geography</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C032</td>
+<td style="text-align: left;">has_annual_incidence_average_value</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C020</td>
+<td style="text-align: left;">has_annual_incidence_range</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C029</td>
+<td style="text-align: left;">has_birth_prevalence_average_value</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C026</td>
+<td style="text-align: left;">has_birth_prevalence_range</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C024</td>
+<td style="text-align: left;">has_cases/families_value</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C030</td>
+<td style="text-align: left;">has_lifetime_prevalence_average_value</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C027</td>
+<td style="text-align: left;">has_lifetime_prevalence_range</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C028</td>
+<td style="text-align: left;">has_point_prevalence_average_value</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C025</td>
+<td style="text-align: left;">has_point_prevalence_range</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409945</td>
+<td style="text-align: left;">infancy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C005</td>
+<td style="text-align: left;">inheritance</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409969</td>
+<td style="text-align: left;">lifetime prevalence</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409933</td>
+<td style="text-align: left;">mitochondrial</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409931</td>
+<td style="text-align: left;">multigenic/multifactorial</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409944</td>
+<td style="text-align: left;">neonatal</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409951</td>
+<td style="text-align: left;">no age of onset data available</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409940</td>
+<td style="text-align: left;">no inheritance data available</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409936</td>
+<td style="text-align: left;">oligogenic</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409966</td>
+<td style="text-align: left;">point prevalence</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:C004</td>
+<td style="text-align: left;">prevalence</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409937</td>
+<td style="text-align: left;">semi-dominant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409939</td>
+<td style="text-align: left;">unknown inheritance</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orphanet:409981</td>
+<td style="text-align: left;">unknown_epidemiological_range</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
