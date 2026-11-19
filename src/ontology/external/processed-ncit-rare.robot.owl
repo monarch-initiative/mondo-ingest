@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mondo/external/processed-ncit-rare.robot.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2026-10-19/processed-ncit-rare.robot.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2026-11-18/processed-ncit-rare.robot.owl"/>
     </owl:Ontology>
     
 
@@ -7593,20 +7593,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0013000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0013000">
-        <oboInOwl:inSubset>http://purl.obolibrary.org/obo/mondo#ncit_rare</oboInOwl:inSubset>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0013000"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#ncit_rare</owl:annotatedTarget>
-        <oboInOwl:source>NCIT:C133887</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0013038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0013038">
@@ -11941,6 +11927,20 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#ncit_rare</owl:annotatedTarget>
         <oboInOwl:source>NCIT:C122662</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0700519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0700519">
+        <oboInOwl:inSubset>http://purl.obolibrary.org/obo/mondo#ncit_rare</oboInOwl:inSubset>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0700519"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#ncit_rare</owl:annotatedTarget>
+        <oboInOwl:source>NCIT:C133887</oboInOwl:source>
     </owl:Axiom>
     
 

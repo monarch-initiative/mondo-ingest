@@ -11,7 +11,6 @@ MONDO:0001062	pyloric antrum cancer	MONDO:0001056	ICD10CM:C16.3	ICD10CM:C16	gast
 MONDO:0001176	lens disorder	MONDO:0002022	ICD10CM:H25-H28	ICD10CM:H00-H59	disorder of orbital region
 MONDO:0001195	spotted fever	MONDO:0006956	ICD10CM:A77	ICD10CM:A75-A79	Rickettsiosis
 MONDO:0001212	non-suppurative otitis media	MONDO:0003276	ICD10CM:H65	ICD10CM:H65-H75	middle ear disorder
-MONDO:0001213	serous glue ear	MONDO:0001212	ICD10CM:H65.2	ICD10CM:H65	non-suppurative otitis media
 MONDO:0001224	Angelucci syndrome	MONDO:0003799	ICD10CM:H10.1	ICD10CM:H10	conjunctivitis
 MONDO:0001235	appendix cancer	MONDO:0021063	ICD10CM:C18.1	ICD10CM:C18	malignant colon neoplasm
 MONDO:0001246	typhus	MONDO:0006956	ICD10CM:A75	ICD10CM:A75-A79	Rickettsiosis
@@ -81,6 +80,7 @@ MONDO:0005777	granuloma inguinale	MONDO:0021681	ICD10CM:A58	ICD10CM:A50-A64	sexu
 MONDO:0005834	lymphogranuloma venereum	MONDO:0021681	ICD10CM:A55	ICD10CM:A50-A64	sexually transmitted disease
 MONDO:0005844	chalazion	MONDO:0003382	ICD10CM:H00.1	ICD10CM:H00	eyelid disorder
 MONDO:0005848	miliary tuberculosis	MONDO:0018076	ICD10CM:A19	ICD10CM:A15-A19	tuberculosis
+MONDO:0005892	otitis media with effusion	MONDO:0001212	ICD10CM:H65.2	ICD10CM:H65	non-suppurative otitis media
 MONDO:0005894	paracoccidioidomycosis	MONDO:0002041	ICD10CM:B41	ICD10CM:B35-B49	fungal infectious disease
 MONDO:0005920	Plasmodium falciparum malaria	MONDO:0002428	ICD10CM:B50	ICD10CM:B50-B64	protozoa infectious disease
 MONDO:0005921	Plasmodium vivax malaria	MONDO:0002428	ICD10CM:B51	ICD10CM:B50-B64	protozoa infectious disease
@@ -120,13 +120,13 @@ MONDO:0008234	multiple endocrine neoplasia type 2A	MONDO:0017169	ICD10CM:E31.22	
 MONDO:0008575	nicotine dependence	MONDO:0002494	ICD10CM:F17	ICD10CM:F10-F19	substance-related disorder
 MONDO:0008585	HELLP syndrome	MONDO:0005081	ICD10CM:O14.2	ICD10CM:O14	preeclampsia
 MONDO:0008608	Down syndrome	MONDO:0019040	ICD10CM:Q90	ICD10CM:Q90-Q99	chromosomal disorder
+MONDO:0009050	Cushing disease due to pituitary adenoma	MONDO:0018912	ICD10CM:E24.0	ICD10CM:E24	Cushing syndrome
 MONDO:0009182	junctional epidermolysis bullosa Herlitz type	MONDO:0006541	ICD10CM:Q81.1	ICD10CM:Q81	epidermolysis bullosa
 MONDO:0009443	autosomal recessive congenital ichthyosis 4B	MONDO:0015947	ICD10CM:Q80.4	ICD10CM:Q80	inherited ichthyosis
 MONDO:0009696	juvenile myoclonic epilepsy	MONDO:0005027	ICD10CM:G40.B	ICD10CM:G40	epilepsy
 MONDO:0009697	Lafora disease	MONDO:0005027	ICD10CM:G40.C	ICD10CM:G40	epilepsy
 MONDO:0009756	Niemann-Pick disease type A	MONDO:0001982	ICD10CM:E75.240	ICD10CM:E75.24	Niemann-Pick disease
 MONDO:0010138	thyrotoxicosis	MONDO:0003240	ICD10CM:E05	ICD10CM:E00-E07	thyroid gland disorder
-MONDO:0010564	red-green color blindness	MONDO:0001703	ICD10CM:H53.53	ICD10CM:H53.5	color vision disorder
 MONDO:0010811	benign prostatic hyperplasia	MONDO:0003150	ICD10CM:N40	ICD10CM:N40-N53	male reproductive system disorder
 MONDO:0011728	benign essential blepharospasm	MONDO:0003441	ICD10CM:G24.5	ICD10CM:G24	dystonic disorder
 MONDO:0011871	Niemann-Pick disease type B	MONDO:0001982	ICD10CM:E75.241	ICD10CM:E75.24	Niemann-Pick disease
@@ -164,7 +164,6 @@ MONDO:0019456	acute myeloid leukemia with multilineage dysplasia	MONDO:0004643	I
 MONDO:0019558	discoid lupus erythematosus	MONDO:0004670	ICD10CM:L93.0	ICD10CM:L93	lupus erythematosus
 MONDO:0019992	pseudohypoparathyroidism	MONDO:0001220	ICD10CM:E20.1	ICD10CM:E20	hypoparathyroidism
 MONDO:0020022	central nervous system malformation	MONDO:0021147	ICD10CM:Q00-Q07	ICD10CM:Q00-Q99	disorder of development or morphogenesis
-MONDO:0020528	ACTH-dependent Cushing syndrome	MONDO:0018912	ICD10CM:E24.0	ICD10CM:E24	Cushing syndrome
 MONDO:0020800	demyelinating disease of central nervous system	MONDO:0005071	ICD10CM:G35-G37	ICD10CM:G00-G99	nervous system disorder
 MONDO:0021063	malignant colon neoplasm	MONDO:0002516	ICD10CM:C18	ICD10CM:C15-C26	digestive system cancer
 MONDO:0021527	benign neoplasm of meninges	MONDO:0005165	ICD10CM:D32	ICD10CM:D10-D36	benign neoplasm

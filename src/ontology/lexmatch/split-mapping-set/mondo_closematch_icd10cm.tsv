@@ -622,6 +622,8 @@ MONDO:0002654	uterine disorder	skos:closeMatch	ICD10CM:N85.9	Noninflammatory dis
 MONDO:0002654	uterine disorder	skos:closeMatch	ICD10CM:N85.9	Noninflammatory disorder of uterus, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:345	LEXMATCH
 MONDO:0002657	breast disorder	skos:closeMatch	ICD10CM:N64.9	Disorder of breast, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3463	LEXMATCH
 MONDO:0002657	breast disorder	skos:closeMatch	ICD10CM:N64.9	Disorder of breast, unspecified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3463	LEXMATCH
+MONDO:0002679	cerebral infarction	skos:closeMatch	ICD10CM:I67.82	Cerebral ischemia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	cerebral ischemia	LEXMATCH
+MONDO:0002679	cerebral infarction	skos:closeMatch	ICD10CM:I67.82	Cerebral ischemia	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	cerebral ischemia	LEXMATCH
 MONDO:0002682	cerebral ventricle cancer	skos:closeMatch	ICD10CM:C71.5	Malignant neoplasm of cerebral ventricle	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3541	LEXMATCH
 MONDO:0002682	cerebral ventricle cancer	skos:closeMatch	ICD10CM:C71.5	Malignant neoplasm of cerebral ventricle	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3541	LEXMATCH
 MONDO:0002688	duodenal obstruction	skos:closeMatch	ICD10CM:K31.5	Obstruction of duodenum	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3558	LEXMATCH
@@ -1628,8 +1630,8 @@ MONDO:0007289	cataract 13 with adult I phenotype	skos:closeMatch	ICD10CM:Q12.0	C
 MONDO:0007289	cataract 13 with adult I phenotype	skos:closeMatch	ICD10CM:Q12.0	Congenital cataract	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110242	LEXMATCH
 MONDO:0007290	cataract 5 multiple types	skos:closeMatch	ICD10CM:Q12.0	Congenital cataract	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110255	LEXMATCH
 MONDO:0007290	cataract 5 multiple types	skos:closeMatch	ICD10CM:Q12.0	Congenital cataract	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110255	LEXMATCH
-MONDO:0007294	central core myopathy	skos:closeMatch	ICD10CM:G71.29	Other congenital myopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3529	LEXMATCH
-MONDO:0007294	central core myopathy	skos:closeMatch	ICD10CM:G71.29	Other congenital myopathy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3529	LEXMATCH
+MONDO:0007294	congenital myopathy 1A, autosomal dominant, with susceptibility to malignant hyperthermia	skos:closeMatch	ICD10CM:G71.29	Other congenital myopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:3529	LEXMATCH
+MONDO:0007294	congenital myopathy 1A, autosomal dominant, with susceptibility to malignant hyperthermia	skos:closeMatch	ICD10CM:G71.29	Other congenital myopathy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:3529	LEXMATCH
 MONDO:0007307	Charcot-Marie-Tooth disease type 1B	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110152	LEXMATCH
 MONDO:0007307	Charcot-Marie-Tooth disease type 1B	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110152	LEXMATCH
 MONDO:0007308	Charcot-Marie-Tooth disease type 2A1	skos:closeMatch	ICD10CM:G60.0	Hereditary motor and sensory neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110154	LEXMATCH
@@ -1967,8 +1969,6 @@ MONDO:0009080	split hand-foot malformation 1 with sensorineural hearing loss	sko
 MONDO:0009080	split hand-foot malformation 1 with sensorineural hearing loss	skos:closeMatch	ICD10CM:Q87.2	Congenital malformation syndromes predominantly involving limbs	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0090024	LEXMATCH
 MONDO:0009101	Wolfram syndrome 1	skos:closeMatch	ICD10CM:E13.8	Other specified diabetes mellitus with unspecified complications	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110629	LEXMATCH
 MONDO:0009101	Wolfram syndrome 1	skos:closeMatch	ICD10CM:E13.8	Other specified diabetes mellitus with unspecified complications	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110629	LEXMATCH
-MONDO:0009112	rhizomelic chondrodysplasia punctata type 2	skos:closeMatch	ICD10CM:Q77.3	Chondrodysplasia punctata	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110852	LEXMATCH
-MONDO:0009112	rhizomelic chondrodysplasia punctata type 2	skos:closeMatch	ICD10CM:Q77.3	Chondrodysplasia punctata	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110852	LEXMATCH
 MONDO:0009114	congenital sucrase-isomaltase deficiency	skos:closeMatch	ICD10CM:E74.31	Sucrase-isomaltase deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0111633	LEXMATCH
 MONDO:0009114	congenital sucrase-isomaltase deficiency	skos:closeMatch	ICD10CM:E74.31	Sucrase-isomaltase deficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0111633	LEXMATCH
 MONDO:0009124	Dubowitz syndrome	skos:closeMatch	ICD10CM:Q87.19	Other congenital malformation syndromes predominantly associated with short stature	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:14796	LEXMATCH
@@ -3955,6 +3955,10 @@ MONDO:0019347	peeling skin syndrome	skos:closeMatch	ICD10CM:Q80.8	Other congenit
 MONDO:0019349	Sotos syndrome	skos:closeMatch	ICD10CM:Q87.3	Congenital malformation syndromes involving early overgrowth	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0112103	LEXMATCH
 MONDO:0019349	Sotos syndrome	skos:closeMatch	ICD10CM:Q87.3	Congenital malformation syndromes involving early overgrowth	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0112103	LEXMATCH
 MONDO:0019369	complex regional pain syndrome	skos:closeMatch	ICD10CM:G90.5	Complex regional pain syndrome I (CRPS I)	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	reflex sympathetic dystrophy	LEXMATCH
+MONDO:0019369	complex regional pain syndrome	skos:closeMatch	ICD10CM:M89.0	Algoneurodystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:14022	LEXMATCH
+MONDO:0019369	complex regional pain syndrome	skos:closeMatch	ICD10CM:M89.0	Algoneurodystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref-INVERSE	mondo:0019369	LEXMATCH
+MONDO:0019369	complex regional pain syndrome	skos:closeMatch	ICD10CM:M89.0	Algoneurodystrophy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	mondo:0019369	LEXMATCH
+MONDO:0019369	complex regional pain syndrome	skos:closeMatch	ICD10CM:M89.0	Algoneurodystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:14022	LEXMATCH
 MONDO:0019378	la Crosse encephalitis	skos:closeMatch	ICD10CM:A83.5	California encephalitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0050118	LEXMATCH
 MONDO:0019378	la Crosse encephalitis	skos:closeMatch	ICD10CM:A83.5	California encephalitis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0050118	LEXMATCH
 MONDO:0019384	encephalitis lethargica	skos:closeMatch	ICD10CM:A85.8	Other specified viral encephalitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:5225	LEXMATCH
@@ -4042,6 +4046,8 @@ MONDO:0020641	respiratory tract neoplasm	skos:closeMatch	ICD10CM:C30-C39	Maligna
 MONDO:0020678	sensorineural hearing loss disorder	skos:closeMatch	ICD10CM:H90.5	Unspecified sensorineural hearing loss	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:10003	LEXMATCH
 MONDO:0020678	sensorineural hearing loss disorder	skos:closeMatch	ICD10CM:H90.5	Unspecified sensorineural hearing loss	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:10003	LEXMATCH
 MONDO:0020686	acute tonsillitis	skos:closeMatch	ICD10CM:J03.9	Acute tonsillitis, unspecified	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	infective tonsillitis	LEXMATCH
+MONDO:0020724	cerebral cavernous malformation 1	skos:closeMatch	ICD10CM:Q28.3	Other malformations of cerebral vessels	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0080491	LEXMATCH
+MONDO:0020724	cerebral cavernous malformation 1	skos:closeMatch	ICD10CM:Q28.3	Other malformations of cerebral vessels	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0080491	LEXMATCH
 MONDO:0020860	faucial diphtheria	skos:closeMatch	ICD10CM:A36.0	Pharyngeal diphtheria	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	diphtheritic membranous angina	LEXMATCH
 MONDO:0021018	autosomal dominant limb-girdle muscular dystrophy type 1D (DNAJB6)	skos:closeMatch	ICD10CM:G71.0	Muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110305	LEXMATCH
 MONDO:0021018	autosomal dominant limb-girdle muscular dystrophy type 1D (DNAJB6)	skos:closeMatch	ICD10CM:G71.0	Muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110305	LEXMATCH
@@ -4182,6 +4188,8 @@ MONDO:0100251	familial hyperphosphatemic tumoral calcinosis/hyperphosphatemic hy
 MONDO:0100251	familial hyperphosphatemic tumoral calcinosis/hyperphosphatemic hyperostosis syndrome	skos:closeMatch	ICD10CM:M11.2	Other chondrocalcinosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0111063	LEXMATCH
 MONDO:0100255	adenosine kinase deficiency	skos:closeMatch	ICD10CM:E72.1	Disorders of sulfur-bearing amino-acid metabolism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0111038	LEXMATCH
 MONDO:0100255	adenosine kinase deficiency	skos:closeMatch	ICD10CM:E72.1	Disorders of sulfur-bearing amino-acid metabolism	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0111038	LEXMATCH
+MONDO:0100273	rhizomelic chondrodysplasia punctata, type 2	skos:closeMatch	ICD10CM:Q77.3	Chondrodysplasia punctata	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110852	LEXMATCH
+MONDO:0100273	rhizomelic chondrodysplasia punctata, type 2	skos:closeMatch	ICD10CM:Q77.3	Chondrodysplasia punctata	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0110852	LEXMATCH
 MONDO:0100294	mitochondrial complex II deficiency, nuclear type 1	skos:closeMatch	ICD10CM:G71.3	Mitochondrial myopathy, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0060537	LEXMATCH
 MONDO:0100294	mitochondrial complex II deficiency, nuclear type 1	skos:closeMatch	ICD10CM:G71.3	Mitochondrial myopathy, not elsewhere classified	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref-INVERSE	doid:0060537	LEXMATCH
 MONDO:0100316	long QT syndrome 1	skos:closeMatch	ICD10CM:I45.8	Other specified conduction disorders	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref-INVERSE	doid:0110644	LEXMATCH

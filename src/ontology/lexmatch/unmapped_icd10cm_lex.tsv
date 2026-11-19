@@ -124,8 +124,6 @@ MONDO:0002462	glomerulonephritis	ICD10CM:N08	MONDO:equivalentTo	Glomerular disor
 MONDO:0002465	bronchiolitis	ICD10CM:J21.9	MONDO:equivalentTo	Acute bronchiolitis, unspecified	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	bronchiolitis
 MONDO:0002465	bronchiolitis	ICD10CM:J21.9	MONDO:equivalentTo	Acute bronchiolitis, unspecified	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	bronchiolitis
 MONDO:0002492	acute kidney injury	ICD10CM:N17.9	MONDO:equivalentTo	Acute kidney failure, unspecified	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	acute kidney injury
-MONDO:0002679	cerebral infarction	ICD10CM:I67.82	MONDO:equivalentTo	Cerebral ischemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	cerebral ischemia
-MONDO:0002679	cerebral infarction	ICD10CM:I67.82	MONDO:equivalentTo	Cerebral ischemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	cerebral ischemia
 MONDO:0002691	liver cancer	ICD10CM:C22.9	MONDO:equivalentTo	Malignant neoplasm of liver, not specified as primary or secondary	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	malignant neoplasm of liver, not specified as primary or secondary
 MONDO:0002691	liver cancer	ICD10CM:C22.9	MONDO:equivalentTo	Malignant neoplasm of liver, not specified as primary or secondary	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	malignant neoplasm of liver, not specified as primary or secondary
 MONDO:0002768	true hermaphroditism	ICD10CM:Q56.0	MONDO:equivalentTo	Hermaphroditism, not elsewhere classified	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	ovotestis
@@ -204,6 +202,8 @@ MONDO:0005258	autism spectrum disorder	ICD10CM:F84	MONDO:equivalentTo	Pervasive 
 MONDO:0005258	autism spectrum disorder	ICD10CM:F84.0	MONDO:equivalentTo	Autistic disorder	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	autism spectrum disorder
 MONDO:0005258	autism spectrum disorder	ICD10CM:F84.0	MONDO:equivalentTo	Autistic disorder	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	autism spectrum disorder
 MONDO:0005293	flatfoot	ICD10CM:M21.4	MONDO:equivalentTo	Flat foot [pes planus] (acquired)	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	flat foot
+MONDO:0005299	brain ischemia	ICD10CM:I67.82	MONDO:equivalentTo	Cerebral ischemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	cerebral ischemia
+MONDO:0005299	brain ischemia	ICD10CM:I67.82	MONDO:equivalentTo	Cerebral ischemia	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	cerebral ischemia
 MONDO:0005324	seasonal allergic rhinitis	ICD10CM:J30.1	MONDO:equivalentTo	Allergic rhinitis due to pollen	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	hay fever
 MONDO:0005348	keloid	ICD10CM:L91.0	MONDO:equivalentTo	Hypertrophic scar	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	keloid
 MONDO:0005404	myalgic encephalomeyelitis/chronic fatigue syndrome	ICD10CM:G93.32	MONDO:equivalentTo	Myalgic encephalomyelitis/chronic fatigue syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	chronic fatigue syndrome
@@ -302,7 +302,9 @@ MONDO:0007145	aplasia cutis congenita	ICD10CM:Q84.8	MONDO:equivalentTo	Other spe
 MONDO:0007145	aplasia cutis congenita	ICD10CM:Q84.8	MONDO:equivalentTo	Other specified congenital malformations of integument	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	aplasia cutis congenita
 MONDO:0007174	Lown-Ganong-Levine syndrome	ICD10CM:I45.6	MONDO:equivalentTo	Pre-excitation syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	lown-ganong-levine syndrome
 MONDO:0007174	Lown-Ganong-Levine syndrome	ICD10CM:I45.6	MONDO:equivalentTo	Pre-excitation syndrome	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	lown-ganong-levine syndrome
-MONDO:0007294	central core myopathy	ICD10CM:G71.29	MONDO:equivalentTo	Other congenital myopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	central core disorder
+MONDO:0007294	congenital myopathy 1A, autosomal dominant, with susceptibility to malignant hyperthermia	ICD10CM:G71.29	MONDO:equivalentTo	Other congenital myopathy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	central core disorder
+MONDO:0007306	Klippel-Feil syndrome 1, autosomal dominant	ICD10CM:Q76.1	MONDO:equivalentTo	Klippel-Feil syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	klippel-feil syndrome
+MONDO:0007306	Klippel-Feil syndrome 1, autosomal dominant	ICD10CM:Q76.1	MONDO:equivalentTo	Klippel-Feil syndrome	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	klippel-feil syndrome
 MONDO:0007315	cherubism	ICD10CM:M27.8	MONDO:equivalentTo	Other specified diseases of jaws	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	cherubism
 MONDO:0007315	cherubism	ICD10CM:M27.8	MONDO:equivalentTo	Other specified diseases of jaws	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	cherubism
 MONDO:0007340	cleidocranial dysplasia 1	ICD10CM:Q74.0	MONDO:equivalentTo	Other congenital malformations of upper limb(s), including shoulder girdle	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	cleidocranial dysostosis
@@ -430,7 +432,8 @@ MONDO:0009767	oculocerebral hypopigmentation syndrome, Cross type	ICD10CM:E70.32
 MONDO:0009846	pentosuria	ICD10CM:E74.89	MONDO:equivalentTo	Other specified disorders of carbohydrate metabolism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	essential pentosuria
 MONDO:0009887	desquamative interstitial pneumonia	ICD10CM:J84.115	MONDO:equivalentTo	Respiratory bronchiolitis interstitial lung disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	respiratory bronchiolitis interstitial lung disorder
 MONDO:0009887	desquamative interstitial pneumonia	ICD10CM:J84.115	MONDO:equivalentTo	Respiratory bronchiolitis interstitial lung disease	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	respiratory bronchiolitis interstitial lung disorder
-MONDO:0009902	cutaneous porphyria	ICD10CM:E80.0	MONDO:equivalentTo	Hereditary erythropoietic porphyria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	congenital erythropoietic porphyria
+MONDO:0009902	congenital erythropoietic porphyria	ICD10CM:E80.0	MONDO:equivalentTo	Hereditary erythropoietic porphyria	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	congenital erythropoietic porphyria
+MONDO:0009902	congenital erythropoietic porphyria	ICD10CM:E80.0	MONDO:equivalentTo	Hereditary erythropoietic porphyria	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	congenital erythropoietic porphyria
 MONDO:0010011	schizencephaly	ICD10CM:Q04.6	MONDO:equivalentTo	Congenital cerebral cysts	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	schizencephaly
 MONDO:0010011	schizencephaly	ICD10CM:Q04.6	MONDO:equivalentTo	Congenital cerebral cysts	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	schizencephaly
 MONDO:0010083	succinic semialdehyde dehydrogenase deficiency	ICD10CM:E72.81	MONDO:equivalentTo	Disorders of gamma aminobutyric acid metabolism	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	4-hydroxybutyric aciduria
@@ -659,6 +662,8 @@ MONDO:0019338	sarcoidosis	ICD10CM:D80-D89	MONDO:equivalentTo	Certain disorders i
 MONDO:0019349	Sotos syndrome	ICD10CM:Q87.3	MONDO:equivalentTo	Congenital malformation syndromes involving early overgrowth	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	sotos syndrome
 MONDO:0019349	Sotos syndrome	ICD10CM:Q87.3	MONDO:equivalentTo	Congenital malformation syndromes involving early overgrowth	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	sotos syndrome
 MONDO:0019367	regional odontodysplasia	ICD10CM:K00.4	MONDO:equivalentTo	Disturbances in tooth formation	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	regional odontodysplasia
+MONDO:0019369	complex regional pain syndrome	ICD10CM:M89.0	MONDO:equivalentTo	Algoneurodystrophy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	algoneurodystrophy
+MONDO:0019369	complex regional pain syndrome	ICD10CM:M89.0	MONDO:equivalentTo	Algoneurodystrophy	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	rdfs:label	algoneurodystrophy
 MONDO:0019378	la Crosse encephalitis	ICD10CM:A83.5	MONDO:equivalentTo	California encephalitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	la crosse encephalitis
 MONDO:0019384	encephalitis lethargica	ICD10CM:A85.8	MONDO:equivalentTo	Other specified viral encephalitis	semapv:LexicalMatching	oaklib	0.8	oio:hasExactSynonym	oio:hasExactSynonym	encephalitis lethargica
 MONDO:0019384	encephalitis lethargica	ICD10CM:A85.8	MONDO:equivalentTo	Other specified viral encephalitis	semapv:LexicalMatching	oaklib	0.8	rdfs:label	oio:hasExactSynonym	encephalitis lethargica

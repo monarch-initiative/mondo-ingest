@@ -207,7 +207,7 @@ MONDO:0007256	hepatocellular carcinoma	MONDO:0018531	Orphanet:88673	Orphanet:424
 MONDO:0007259	craniofaciofrontodigital syndrome	MONDO:0015159	Orphanet:363705	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0007277	cataract-aberrant oral frenula-growth delay syndrome	MONDO:0015161	Orphanet:1373	Orphanet:102285	multiple congenital anomalies/dysmorphic syndrome without intellectual disability
 MONDO:0007293	leukocyte adhesion deficiency 1	MONDO:0017570	Orphanet:99842	Orphanet:2968	leukocyte adhesion deficiency
-MONDO:0007294	central core myopathy	MONDO:0100150	Orphanet:597	Orphanet:98742	RYR1-related myopathy
+MONDO:0007294	congenital myopathy 1A, autosomal dominant, with susceptibility to malignant hyperthermia	MONDO:0100150	Orphanet:597	Orphanet:98742	RYR1-related myopathy
 MONDO:0007296	spinocerebellar ataxia type 31	MONDO:0019793	Orphanet:217012	Orphanet:94148	autosomal dominant cerebellar ataxia type III
 MONDO:0007297	ADan amyloidosis	MONDO:0018591	Orphanet:97346	Orphanet:439254	ITM2B amyloidosis
 MONDO:0007298	spinocerebellar ataxia type 29	MONDO:0019792	Orphanet:208513	Orphanet:94145	autosomal dominant cerebellar ataxia type I
@@ -302,6 +302,7 @@ MONDO:0007636	frontorhiny	MONDO:0016643	Orphanet:391474	Orphanet:250	frontonasal
 MONDO:0007648	hereditary diffuse gastric adenocarcinoma	MONDO:0018502	Orphanet:26106	Orphanet:423776	hereditary gastric cancer
 MONDO:0007650	MALT lymphoma	MONDO:0017604	Orphanet:52417	Orphanet:300912	marginal zone lymphoma
 MONDO:0007651	gastrocutaneous syndrome	MONDO:0019289	Orphanet:2069	Orphanet:79375	hyperpigmentation of the skin
+MONDO:0007667	subependymoma	MONDO:0003266	Orphanet:251639	Orphanet:301	ependymal tumor
 MONDO:0007671	fibronectin glomerulopathy	MONDO:0019722	Orphanet:84090	Orphanet:93548	glomerular disorder
 MONDO:0007680	multinodular goiter-cystic kidney-polydactyly syndrome	MONDO:0015161	Orphanet:2091	Orphanet:102285	multiple congenital anomalies/dysmorphic syndrome without intellectual disability
 MONDO:0007681	goiter, multinodular 1, with or without Sertoli-Leydig cell tumors	MONDO:0015356	Orphanet:276399	Orphanet:140162	hereditary neoplastic syndrome
@@ -709,7 +710,6 @@ MONDO:0009105	trichohepatoenteric syndrome	MONDO:0957408	Orphanet:84064	Orphanet
 MONDO:0009109	lysinuric protein intolerance	MONDO:0019216	Orphanet:470	Orphanet:79166	inborn disorder of amino acid transport
 MONDO:0009110	dicarboxylic aminoaciduria	MONDO:0019216	Orphanet:2195	Orphanet:79166	inborn disorder of amino acid transport
 MONDO:0009111	dihydropyrimidinuria	MONDO:0019238	Orphanet:38874	Orphanet:79193	inborn disorder of pyrimidine metabolism
-MONDO:0009112	rhizomelic chondrodysplasia punctata type 2	MONDO:0015776	Orphanet:309796	Orphanet:177	rhizomelic chondrodysplasia punctata
 MONDO:0009114	congenital sucrase-isomaltase deficiency	MONDO:0017706	Orphanet:35122	Orphanet:309001	disorder of carbohydrate transmembrane transport and absorption
 MONDO:0009115	congenital lactase deficiency	MONDO:0017706	Orphanet:53690	Orphanet:309001	disorder of carbohydrate transmembrane transport and absorption
 MONDO:0009121	von Voss-Cherstvoy syndrome	MONDO:0015161	Orphanet:3439	Orphanet:102285	multiple congenital anomalies/dysmorphic syndrome without intellectual disability
@@ -1563,7 +1563,7 @@ MONDO:0011909	Charcot-Marie-Tooth disease dominant intermediate D	MONDO:0019548	
 MONDO:0011911	craniolenticulosutural dysplasia	MONDO:0015161	Orphanet:50814	Orphanet:102285	multiple congenital anomalies/dysmorphic syndrome without intellectual disability
 MONDO:0011925	congenital merosin-deficient muscular dystrophy 1A	MONDO:0019950	Orphanet:258	Orphanet:97242	congenital muscular dystrophy
 MONDO:0011929	chromosome 1p36 deletion syndrome	MONDO:0016883	Orphanet:1606	Orphanet:261857	partial deletion of the short arm of chromosome 1
-MONDO:0011933	ALG2-congenital disorder of glycosylation	MONDO:0017740	Orphanet:79326	Orphanet:309347	disorder of protein N-glycosylation
+MONDO:0011933	congenital disorder of glycosylation, type Ii	MONDO:0017740	Orphanet:79326	Orphanet:309347	disorder of protein N-glycosylation
 MONDO:0011936	microphthalmia with brain and digit anomalies	MONDO:0016073	Orphanet:139471	Orphanet:202948	syndromic microphthalmia
 MONDO:0011939	Spondyloenchondrodysplasia with immune dysregulation	MONDO:0016763	Orphanet:1855	Orphanet:254	spondylometaphyseal dysplasia
 MONDO:0011939	Spondyloenchondrodysplasia with immune dysregulation	MONDO:0957408	Orphanet:1855	Orphanet:481671	type 1 interferonopathy of childhood
@@ -1778,6 +1778,7 @@ MONDO:0012986	bilateral parasagittal parieto-occipital polymicrogyria	MONDO:0017
 MONDO:0012994	dopa-responsive dystonia due to sepiapterin reductase deficiency	MONDO:0016812	Orphanet:70594	Orphanet:255	dopa-responsive dystonia
 MONDO:0012996	AGAT deficiency	MONDO:0000456	Orphanet:35704	Orphanet:79172	cerebral creatine deficiency syndrome
 MONDO:0012999	guanidinoacetate methyltransferase deficiency	MONDO:0000456	Orphanet:382	Orphanet:79172	cerebral creatine deficiency syndrome
+MONDO:0013000	porphyria due to ALA dehydratase deficiency	MONDO:0700519	Orphanet:100924	Orphanet:95157	acute hepatic porphyria
 MONDO:0013005	EAST syndrome	MONDO:0015962	Orphanet:199343	Orphanet:183592	inherited renal tubular disease
 MONDO:0013005	EAST syndrome	MONDO:0100309	Orphanet:199343	Orphanet:183518	hereditary ataxia
 MONDO:0013006	isolated growth hormone deficiency type IB	MONDO:0000050	Orphanet:231671	Orphanet:631	isolated congenital growth hormone deficiency
@@ -1826,6 +1827,7 @@ MONDO:0013182	chromosome 17p13.3 duplication syndrome	MONDO:0015159	Orphanet:217
 MONDO:0013182	chromosome 17p13.3 duplication syndrome	MONDO:0016950	Orphanet:217385	Orphanet:262803	partial duplication of the short arm of chromosome 17
 MONDO:0013208	cirrhosis - dystonia - polycythemia - hypermanganesemia syndrome	MONDO:0017766	Orphanet:309854	Orphanet:309851	disorder of manganese transport
 MONDO:0013212	Charcot-Marie-Tooth disease axonal type 2N	MONDO:0018993	Orphanet:228174	Orphanet:64746	Charcot-Marie-Tooth disease type 2
+MONDO:0013229	hot water reflex epilepsy	MONDO:0017768	Orphanet:166412	Orphanet:310	reflex epilepsy
 MONDO:0013238	chromosome 17q23.1-q23.2 deletion syndrome	MONDO:0016915	Orphanet:261279	Orphanet:262137	partial deletion of the long arm of chromosome 17
 MONDO:0013241	spinocerebellar ataxia type 30	MONDO:0019793	Orphanet:211017	Orphanet:94148	autosomal dominant cerebellar ataxia type III
 MONDO:0013245	syndromic multisystem autoimmune disease due to ITCH deficiency	MONDO:0015159	Orphanet:228426	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
@@ -2014,7 +2016,7 @@ MONDO:0014185	chromosome 3q13.31 deletion syndrome	MONDO:0016902	Orphanet:1621	O
 MONDO:0014196	Hartsfield-Bixler-Demyer syndrome	MONDO:0015159	Orphanet:2117	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0014198	mitochondrial DNA depletion syndrome 13	MONDO:0016796	Orphanet:369897	Orphanet:254803	mitochondrial DNA depletion syndrome, encephalomyopathic form
 MONDO:0014200	aldosterone-producing adenoma with seizures and neurological abnormalities	MONDO:0016525	Orphanet:369929	Orphanet:371861	familial hyperaldosteronism
-MONDO:0014205	severe feeding difficulties-failure to thrive-microcephaly due to ASXL3 deficiency syndrome	MONDO:0015159	Orphanet:352577	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
+MONDO:0014205	Bainbridge-Ropers syndrome	MONDO:0015159	Orphanet:352577	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0014212	sulfite oxidase deficiency due to molybdenum cofactor deficiency type C	MONDO:0020480	Orphanet:308400	Orphanet:99732	sulfite oxidase deficiency due to molybdenum cofactor deficiency
 MONDO:0014213	CTCF-related neurodevelopmental disorder	MONDO:0015159	Orphanet:363611	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0014221	triosephosphate isomerase deficiency	MONDO:0017688	Orphanet:868	Orphanet:308459	disorder of glycolysis
@@ -2112,7 +2114,7 @@ MONDO:0014611	multiple mitochondrial dysfunctions syndrome 4	MONDO:0019046	Orpha
 MONDO:0014626	spinocerebellar ataxia type 41	MONDO:0019793	Orphanet:458798	Orphanet:94148	autosomal dominant cerebellar ataxia type III
 MONDO:0014627	dystonia 27	MONDO:0015990	Orphanet:464440	Orphanet:1866	focal, segmental or multifocal dystonia
 MONDO:0014632	leukodystrophy, hypomyelinating, 10	MONDO:0015159	Orphanet:481152	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
-MONDO:0014643	congenital cataract-microcephaly-nevus flammeus simplex-severe intellectual disability syndrome	MONDO:0015159	Orphanet:464738	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
+MONDO:0014643	Basel-Vanagaite-Smirin-Yosef syndrome	MONDO:0015159	Orphanet:464738	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0014647	developmental and epileptic encephalopathy, 50	MONDO:0017749	Orphanet:448010	Orphanet:309526	disorder of multiple glycosylation
 MONDO:0014647	developmental and epileptic encephalopathy, 50	MONDO:0019238	Orphanet:448010	Orphanet:79193	inborn disorder of pyrimidine metabolism
 MONDO:0014658	severe achondroplasia-developmental delay-acanthosis nigricans syndrome	MONDO:0019685	Orphanet:85165	Orphanet:93420	FGFR3-related chondrodysplasia
@@ -2399,6 +2401,7 @@ MONDO:0015627	multiple epiphyseal dysplasia due to collagen 9 anomaly	MONDO:0016
 MONDO:0015629	von Willebrand disease type 2B	MONDO:0013304	Orphanet:166087	Orphanet:166081	von Willebrand disease 2
 MONDO:0015631	von Willebrand disease type 2N	MONDO:0013304	Orphanet:166093	Orphanet:166081	von Willebrand disease 2
 MONDO:0015636	dirofilariasis	MONDO:0016075	Orphanet:166291	Orphanet:2034	filariasis
+MONDO:0015643	photosensitive epilepsy	MONDO:0017768	Orphanet:166409	Orphanet:310	reflex epilepsy
 MONDO:0015644	audiogenic seizures	MONDO:0017768	Orphanet:166415	Orphanet:310	reflex epilepsy
 MONDO:0015645	eating seizures	MONDO:0017768	Orphanet:166418	Orphanet:310	reflex epilepsy
 MONDO:0015646	orgasm-induced seizures	MONDO:0017768	Orphanet:166421	Orphanet:310	reflex epilepsy
@@ -3511,6 +3514,7 @@ MONDO:0018593	primary polyarteritis nodosa	MONDO:0019170	Orphanet:439737	Orphane
 MONDO:0018594	secondary polyarteritis nodosa	MONDO:0019170	Orphanet:439746	Orphanet:767	polyarteritis nodosa
 MONDO:0018595	single-organ polyarteritis nodosa	MONDO:0018593	Orphanet:439755	Orphanet:439737	primary polyarteritis nodosa
 MONDO:0018596	systemic polyarteritis nodosa	MONDO:0018593	Orphanet:439762	Orphanet:439737	primary polyarteritis nodosa
+MONDO:0018599	congenital oculomotor nerve palsy	MONDO:0001309	Orphanet:440221	Orphanet:98685	oculomotor nerve paralysis
 MONDO:0018604	familial colorectal cancer type X	MONDO:0018630	Orphanet:440437	Orphanet:443909	hereditary nonpolyposis colon cancer
 MONDO:0018605	disorders of pentose/polyol metabolism	MONDO:0019214	Orphanet:440701	Orphanet:79161	inborn carbohydrate metabolic disorder
 MONDO:0018610	early-onset posterior subcapsular cataract	MONDO:0020377	Orphanet:441447	Orphanet:98992	early-onset partial cataract
@@ -3698,7 +3702,6 @@ MONDO:0019127	polymyositis	MONDO:0020122	Orphanet:732	Orphanet:98482	acquired id
 MONDO:0019131	ossification anomalies-psychomotor developmental delay syndrome	MONDO:0015929	Orphanet:73230	Orphanet:182108	thoracic malformation
 MONDO:0019133	visceral neuropathy-brain anomalies-facial dysmorphism-developmental delay syndrome	MONDO:0015159	Orphanet:73246	Orphanet:102283	multiple congenital anomalies/dysmorphic syndrome-intellectual disability
 MONDO:0019141	porokeratosis of Mibelli	MONDO:0006602	Orphanet:735	Orphanet:79358	porokeratosis
-MONDO:0019142	inherited porphyria	MONDO:0015951	Orphanet:738	Orphanet:183490	hereditary photodermatosis
 MONDO:0019142	inherited porphyria	MONDO:0017754	Orphanet:738	Orphanet:309813	inborn disorder of porphyrin metabolism
 MONDO:0019148	Wolman disease	MONDO:0800449	Orphanet:75233	Orphanet:275761	lysosomal acid lipase deficiency
 MONDO:0019149	cholesteryl ester storage disease	MONDO:0800449	Orphanet:75234	Orphanet:275761	lysosomal acid lipase deficiency
@@ -4482,6 +4485,7 @@ MONDO:0100164	permanent neonatal diabetes mellitus	MONDO:0016391	Orphanet:99885	
 MONDO:0100186	GTP cyclohydrolase I deficiency with hyperphenylalaninemia	MONDO:0016543	Orphanet:2102	Orphanet:238583	hyperphenylalaninemia due to tetrahydrobiopterin deficiency
 MONDO:0100244	paroxysmal nocturnal hemoglobinuria	MONDO:0015610	Orphanet:447	Orphanet:164823	acquired aplastic anemia
 MONDO:0100251	familial hyperphosphatemic tumoral calcinosis/hyperphosphatemic hyperostosis syndrome	MONDO:0018891	Orphanet:306661	Orphanet:53715	familial tumoral calcinosis
+MONDO:0100273	rhizomelic chondrodysplasia punctata, type 2	MONDO:0015776	Orphanet:309796	Orphanet:177	rhizomelic chondrodysplasia punctata
 MONDO:0100280	Waldenstrom macroglobulinemia	MONDO:0017594	Orphanet:33226	Orphanet:300842	indolent B-cell non-Hodgkin lymphoma
 MONDO:0100339	Friedreich ataxia	MONDO:0020046	Orphanet:95	Orphanet:98098	autosomal recessive degenerative and progressive cerebellar ataxia
 MONDO:0100344	Bartter disease type 1	MONDO:0015231	Orphanet:620217	Orphanet:112	Bartter syndrome
@@ -4508,6 +4512,7 @@ MONDO:0700428	hypomyelination neuropathy-arthrogryposis syndrome	MONDO:0015168	O
 MONDO:0700447	anterior urethral valve	MONDO:0018559	Orphanet:435372	Orphanet:435365	fetal lower urinary tract obstruction
 MONDO:0700466	presynaptic congenital myasthenic syndrome	MONDO:0018940	Orphanet:98914	Orphanet:590	congenital myasthenic syndrome
 MONDO:0700513	apolipoprotein A-I deficiency	MONDO:0017773	Orphanet:425	Orphanet:31153	hypoalphalipoproteinemia
+MONDO:0700519	acute hepatic porphyria	MONDO:0002520	Orphanet:95157	Orphanet:659694	hepatic porphyria
 MONDO:0800027	leukoencephalopathy, diffuse hereditary, with spheroids 1	MONDO:0019046	Orphanet:313808	Orphanet:68356	leukodystrophy
 MONDO:0800043	Stüve-Wiedemann syndrome 1	MONDO:0019698	Orphanet:3206	Orphanet:93439	bent bone dysplasia
 MONDO:0800448	leukoencephalopathy with vanishing white matter	MONDO:0019046	Orphanet:135	Orphanet:68356	leukodystrophy

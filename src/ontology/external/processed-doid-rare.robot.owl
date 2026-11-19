@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mondo/external/processed-doid-rare.robot.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2026-10-19/processed-doid-rare.robot.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2026-11-18/processed-doid-rare.robot.owl"/>
     </owl:Ontology>
     
 
@@ -14629,20 +14629,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#doid_rare</owl:annotatedTarget>
         <oboInOwl:source>DOID:0111629</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0009112 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0009112">
-        <oboInOwl:inSubset>http://purl.obolibrary.org/obo/mondo#doid_rare</oboInOwl:inSubset>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0009112"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#doid_rare</owl:annotatedTarget>
-        <oboInOwl:source>DOID:0110852</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -42266,12 +42252,6 @@
         <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#doid_rare</owl:annotatedTarget>
         <oboInOwl:source>DOID:0112103</oboInOwl:source>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0019349"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#doid_rare</owl:annotatedTarget>
-        <oboInOwl:source>DOID:14748</oboInOwl:source>
-    </owl:Axiom>
     
 
 
@@ -43955,6 +43935,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0020724 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020724">
+        <oboInOwl:inSubset>http://purl.obolibrary.org/obo/mondo#doid_rare</oboInOwl:inSubset>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020724"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#doid_rare</owl:annotatedTarget>
+        <oboInOwl:source>DOID:0080491</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0020740 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020740">
@@ -44935,6 +44929,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0033092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0033092">
+        <oboInOwl:inSubset>http://purl.obolibrary.org/obo/mondo#doid_rare</oboInOwl:inSubset>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0033092"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#doid_rare</owl:annotatedTarget>
+        <oboInOwl:source>DOID:0080257</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0033135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0033135">
@@ -45701,6 +45709,20 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#doid_rare</owl:annotatedTarget>
         <oboInOwl:source>DOID:0111038</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0100273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100273">
+        <oboInOwl:inSubset>http://purl.obolibrary.org/obo/mondo#doid_rare</oboInOwl:inSubset>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100273"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget>http://purl.obolibrary.org/obo/mondo#doid_rare</owl:annotatedTarget>
+        <oboInOwl:source>DOID:0110852</oboInOwl:source>
     </owl:Axiom>
     
 

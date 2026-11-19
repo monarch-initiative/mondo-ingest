@@ -2,16 +2,16 @@
 
 **IRI:** http://purl.obolibrary.org/obo/mondo/sources/doid.owl
 
-**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2026-10-19/doid.owl
+**Version IRI:** http://purl.obolibrary.org/obo/mondo/sources/2026-11-18/doid.owl
 
 ### Entities and axioms
 
 | Metric | Value |
 | ------ | ----- |
 | Annotation properties | 31 |
-| Axioms | 138415 |
-| Logical axioms | 17508 |
-| Classes | 14017 |
+| Axioms | 139273 |
+| Logical axioms | 17664 |
+| Classes | 14110 |
 | Object properties | 2 |
 | Data properties | 0 |
 | Individuals | 0 |
@@ -32,12 +32,12 @@
 
 | Metric | Value |
 | ------ | ----- |
-| AnnotationAssertion | 106855 |
+| AnnotationAssertion | 107464 |
 | EquivalentClasses | 3 |
 | SubAnnotationPropertyOf | 3 |
 | DisjointClasses | 26 |
-| Declaration | 14049 |
-| SubClassOf | 17479 |
+| Declaration | 14142 |
+| SubClassOf | 17635 |
 
 
 #### Entity namespaces: distinct entity count by namespace
@@ -47,8 +47,8 @@
 | DISDRIV | 2 |
 | oboInOwl | 13 |
 | owl | 2 |
-| DOID | 12336 |
-| HP | 127 |
+| DOID | 12420 |
+| HP | 132 |
 | xsd | 1 |
 | CL | 61 |
 | skos | 5 |
@@ -63,9 +63,9 @@
 | rdf | 1 |
 | CHEBI | 94 |
 | IAO | 2 |
-| UBERON | 420 |
+| UBERON | 421 |
 | SO | 20 |
-| obo | 266 |
+| obo | 269 |
 | GENO | 11 |
 | dc | 1 |
 
@@ -74,7 +74,7 @@
 
 | Metric | Value |
 | ------ | ----- |
-| Class | 49197 |
+| Class | 49602 |
 | ObjectIntersectionOf | 3 |
 
 
