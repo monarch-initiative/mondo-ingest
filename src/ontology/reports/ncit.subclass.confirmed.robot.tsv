@@ -1617,6 +1617,8 @@ MONDO:0003997	colon Kaposi sarcoma	MONDO:0024659	NCIT:C5516	NCIT:C96510	colorect
 MONDO:0003999	juvenile pilocytic astrocytoma	MONDO:0004000	NCIT:C27081	NCIT:C4048	childhood pilocytic astrocytoma
 MONDO:0004000	childhood pilocytic astrocytoma	MONDO:0016691	NCIT:C4048	NCIT:C4047	pilocytic astrocytoma
 MONDO:0004005	rete ovarii adenoma	MONDO:0003192	NCIT:C40018	NCIT:C40016	rete ovarii neoplasm
+MONDO:0004005	rete ovarii adenoma	MONDO:0004972	NCIT:C40018	NCIT:C2855	adenoma
+MONDO:0004005	rete ovarii adenoma	MONDO:0036976	NCIT:C40018	NCIT:C4092	benign epithelial neoplasm
 MONDO:0004006	rete ovarii cystadenofibroma	MONDO:0003192	NCIT:C40020	NCIT:C40016	rete ovarii neoplasm
 MONDO:0004006	rete ovarii cystadenofibroma	MONDO:0003464	NCIT:C40020	NCIT:C8985	cystadenofibroma
 MONDO:0004007	breast intraductal proliferative lesion	MONDO:0002488	NCIT:C27942	NCIT:C36083	intraductal breast neoplasm
@@ -2295,6 +2297,7 @@ MONDO:0005402	lymphoid leukemia	MONDO:0005059	NCIT:C7539	NCIT:C3161	leukemia
 MONDO:0005402	lymphoid leukemia	MONDO:0005157	NCIT:C7539	NCIT:C7065	lymphoid neoplasm
 MONDO:0005411	gallbladder cancer	MONDO:0021253	NCIT:C7481	NCIT:C3048	gallbladder neoplasm
 MONDO:0005438	metastatic malignant neoplasm in the lymph nodes	MONDO:0001082	NCIT:C4904	NCIT:C35812	lymph node cancer
+MONDO:0005438	metastatic malignant neoplasm in the lymph nodes	MONDO:0024880	NCIT:C4904	NCIT:C36263	metastatic malignant neoplasm
 MONDO:0005447	testicular cancer	MONDO:0005836	NCIT:C7251	NCIT:C8561	male reproductive organ cancer
 MONDO:0005447	testicular cancer	MONDO:0021348	NCIT:C7251	NCIT:C3404	neoplasm of testis
 MONDO:0005454	lung neuroendocrine neoplasm	MONDO:0019496	NCIT:C5670	NCIT:C3809	neuroendocrine neoplasm
@@ -2758,6 +2761,7 @@ MONDO:0007576	esophageal cancer	MONDO:0021355	NCIT:C7478	NCIT:C3028	neoplasm of 
 MONDO:0007608	desmoid tumor	MONDO:0005031	NCIT:C9182	NCIT:C3042	fibromatosis
 MONDO:0007648	hereditary diffuse gastric adenocarcinoma	MONDO:0005017	NCIT:C43295	NCIT:C9159	diffuse gastric adenocarcinoma
 MONDO:0007650	MALT lymphoma	MONDO:0017604	NCIT:C3898	NCIT:C4341	marginal zone lymphoma
+MONDO:0007667	subependymoma	MONDO:0003266	NCIT:C3795	NCIT:C6770	ependymal tumor
 MONDO:0007886	uterine corpus leiomyoma	MONDO:0021525	NCIT:C3434	NCIT:C3608	benign neoplasm of corpus uteri
 MONDO:0007888	hereditary leiomyomatosis and renal cell cancer	MONDO:0015356	NCIT:C51302	NCIT:C3266	hereditary neoplastic syndrome
 MONDO:0007908	multiple symmetric lipomatosis	MONDO:0006574	NCIT:C4392	NCIT:C3193	lipomatosis
@@ -3117,6 +3121,7 @@ MONDO:0019962	thyroid lymphoma	MONDO:0002108	NCIT:C5265	NCIT:C7510	thyroid cance
 MONDO:0019964	thymic neuroendocrine tumor	MONDO:0019496	NCIT:C6430	NCIT:C188218	neuroendocrine neoplasm
 MONDO:0020076	myeloproliferative neoplasm	MONDO:0005170	NCIT:C4345	NCIT:C9290	myeloid neoplasm
 MONDO:0020076	myeloproliferative neoplasm	MONDO:0021138	NCIT:C4345	NCIT:C35501	bone marrow cancer
+MONDO:0020179	palpebral nevus	MONDO:0021605	NCIT:C3880	NCIT:C4354	benign eyelid neoplasm
 MONDO:0020204	conjunctival tumor	MONDO:0006170	NCIT:C2961	NCIT:C27605	conjunctival disorder
 MONDO:0020204	conjunctival tumor	MONDO:0021220	NCIT:C2961	NCIT:C3030	eye neoplasm
 MONDO:0020311	chronic myelomonocytic leukemia	MONDO:0001014	NCIT:C3178	NCIT:C3483	chronic leukemia
@@ -3779,8 +3784,8 @@ MONDO:0044800	desmoplastic spitz nevus	MONDO:0044797	NCIT:C82864	NCIT:C4497	desm
 MONDO:0044873	childhood myelodysplastic syndrome	MONDO:0018881	NCIT:C68744	NCIT:C3247	myelodysplastic syndrome
 MONDO:0044878	adult germ cell tumor	MONDO:0005040	NCIT:C114777	NCIT:C3708	germ cell tumor
 MONDO:0044879	pancreatic mucinous-cystic neoplasm	MONDO:0024338	NCIT:C41247	NCIT:C7070	mucinous neoplasm
-MONDO:0044879	pancreatic mucinous-cystic neoplasm	MONDO:0044880	NCIT:C41247	NCIT:C200227	cystic tumor of the pancreas
-MONDO:0044880	cystic tumor of the pancreas	MONDO:0021076	NCIT:C200227	NCIT:C4445	pancreatic exocrine neoplasm
+MONDO:0044879	pancreatic mucinous-cystic neoplasm	MONDO:0044880	NCIT:C41247	NCIT:C200227	pancreatic cystic neoplasm
+MONDO:0044880	pancreatic cystic neoplasm	MONDO:0021076	NCIT:C200227	NCIT:C4445	pancreatic exocrine neoplasm
 MONDO:0044881	hematopoietic and lymphoid cell neoplasm	MONDO:0002334	NCIT:C27134	NCIT:C35813	hematopoietic and lymphoid system neoplasm
 MONDO:0044884	tonsillar lymphoma	MONDO:0006998	NCIT:C5918	NCIT:C7404	tonsil cancer
 MONDO:0044885	tonsillar lipoma	MONDO:0005106	NCIT:C5989	NCIT:C3192	lipoma

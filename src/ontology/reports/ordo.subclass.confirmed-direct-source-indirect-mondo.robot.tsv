@@ -62,6 +62,7 @@ MONDO:0007208	Boomerang dysplasia	MONDO:0019690	Orphanet:1263	Orphanet:93425	fil
 MONDO:0007259	craniofaciofrontodigital syndrome	MONDO:0016175	Orphanet:363705	Orphanet:209	cutis laxa
 MONDO:0007269	dilated cardiomyopathy 1A	MONDO:0016333	Orphanet:300751	Orphanet:217607	familial dilated cardiomyopathy
 MONDO:0007322	chondrodysplasia punctata, tibial-metacarpal type	MONDO:0015775	Orphanet:79346	Orphanet:176	non-rhizomelic chondrodysplasia punctata
+MONDO:0007369	hereditary coproporphyria	MONDO:0700519	Orphanet:79273	Orphanet:95157	acute hepatic porphyria
 MONDO:0007380	lattice corneal dystrophy type I	MONDO:0020213	Orphanet:98964	Orphanet:98626	stromal corneal dystrophy
 MONDO:0007400	Jackson-Weiss syndrome	MONDO:0015338	Orphanet:1540	Orphanet:139393	syndromic craniosynostosis
 MONDO:0007437	dentin dysplasia type II	MONDO:0015613	Orphanet:99791	Orphanet:1653	dentin dysplasia
@@ -69,7 +70,6 @@ MONDO:0007492	early-onset generalized limb-onset dystonia	MONDO:0000476	Orphanet
 MONDO:0007572	primary familial polycythemia due to EPO receptor mutation	MONDO:0005571	Orphanet:90042	Orphanet:98427	polycythemia
 MONDO:0007600	primary Fanconi syndrome	MONDO:0015962	Orphanet:3337	Orphanet:183592	inherited renal tubular disease
 MONDO:0007660	familial ossifying fibroma	MONDO:0019060	Orphanet:435329	Orphanet:68411	bone neoplasm
-MONDO:0007667	subependymoma	MONDO:0003266	Orphanet:251639	Orphanet:301	ependymal tumor
 MONDO:0007669	renal cysts and diabetes syndrome	MONDO:0015967	Orphanet:93111	Orphanet:183625	monogenic diabetes
 MONDO:0007702	heart-hand syndrome type 3	MONDO:0015161	Orphanet:1342	Orphanet:102285	multiple congenital anomalies/dysmorphic syndrome without intellectual disability
 MONDO:0007702	heart-hand syndrome type 3	MONDO:0016432	Orphanet:1342	Orphanet:228184	heart-hand syndrome
@@ -94,6 +94,8 @@ MONDO:0008222	Andersen-Tawil syndrome	MONDO:0016122	Orphanet:37553	Orphanet:2069
 MONDO:0008223	hypokalemic periodic paralysis	MONDO:0016122	Orphanet:681	Orphanet:206976	periodic paralysis
 MONDO:0008224	hyperkalemic periodic paralysis	MONDO:0016122	Orphanet:682	Orphanet:206976	periodic paralysis
 MONDO:0008251	familial pityriasis rubra pilaris	MONDO:0019270	Orphanet:2897	Orphanet:79355	erythrokeratoderma
+MONDO:0008294	acute intermittent porphyria (autosomal dominant)	MONDO:0700519	Orphanet:79276	Orphanet:95157	acute hepatic porphyria
+MONDO:0008297	variegate porphyria	MONDO:0700519	Orphanet:79473	Orphanet:95157	acute hepatic porphyria
 MONDO:0008310	Hutchinson-Gilford progeria syndrome	MONDO:0019303	Orphanet:740	Orphanet:79389	premature aging syndrome
 MONDO:0008338	contractures, pterygia, and spondylocarpotarsal fusion syndrome 1A	MONDO:0017415	Orphanet:65743	Orphanet:294060	multiple pterygium syndrome
 MONDO:0008368	autosomal dominant distal renal tubular acidosis	MONDO:0015827	Orphanet:93608	Orphanet:18	distal renal tubular acidosis
@@ -258,10 +260,8 @@ MONDO:0012859	autosomal recessive osteopetrosis 7	MONDO:0017198	Orphanet:178389	
 MONDO:0013016	leukocyte adhesion deficiency 3	MONDO:0017198	Orphanet:99844	Orphanet:2781	osteopetrosis
 MONDO:0013115	RIN2 syndrome	MONDO:0016175	Orphanet:217335	Orphanet:209	cutis laxa
 MONDO:0013127	asphyxiating thoracic dystrophy 3	MONDO:0015461	Orphanet:93270	Orphanet:1505	short rib-polydactyly syndrome
-MONDO:0013127	asphyxiating thoracic dystrophy 3	MONDO:0015461	Orphanet:93271	Orphanet:1505	short rib-polydactyly syndrome
 MONDO:0013170	cutis laxa with severe pulmonary, gastrointestinal and urinary anomalies	MONDO:0016175	Orphanet:221145	Orphanet:209	cutis laxa
 MONDO:0013223	autosomal recessive spondylometaphyseal dysplasia, Megarbane type	MONDO:0019694	Orphanet:401979	Orphanet:93434	spondylodysplastic dysplasia
-MONDO:0013229	hot water reflex epilepsy	MONDO:0017768	Orphanet:166412	Orphanet:310	reflex epilepsy
 MONDO:0013291	glycogen storage disease XV	MONDO:0002412	Orphanet:263297	Orphanet:79201	disorder of glycogen metabolism
 MONDO:0013304	von Willebrand disease 2	MONDO:0019565	Orphanet:166081	Orphanet:903	hereditary von Willebrand disease
 MONDO:0013313	ectodermal dysplasia-cutaneous syndactyly syndrome	MONDO:0019287	Orphanet:247827	Orphanet:79373	ectodermal dysplasia syndrome
@@ -332,7 +332,6 @@ MONDO:0015579	Hb Bart's hydrops fetalis	MONDO:0011399	Orphanet:163596	Orphanet:8
 MONDO:0015595	posttransplant acute limbic encephalitis	MONDO:0019956	Orphanet:163921	Orphanet:97275	encephalitis
 MONDO:0015628	von Willebrand disease type 2A	MONDO:0013304	Orphanet:166084	Orphanet:166081	von Willebrand disease 2
 MONDO:0015630	von Willebrand disease type 2M	MONDO:0013304	Orphanet:166090	Orphanet:166081	von Willebrand disease 2
-MONDO:0015643	photosensitive epilepsy	MONDO:0017768	Orphanet:166409	Orphanet:310	reflex epilepsy
 MONDO:0015705	autosomal recessive centronuclear myopathy	MONDO:0016191	Orphanet:169186	Orphanet:209053	neuromuscular disease caused by qualitative or quantitative defects of titin
 MONDO:0015753	cap myopathy	MONDO:0017303	Orphanet:171881	Orphanet:284790	neuromuscular disease caused by qualitative or quantitative defects of tropomyosin
 MONDO:0015753	cap myopathy	MONDO:0019952	Orphanet:171881	Orphanet:97245	congenital myopathy
@@ -452,7 +451,6 @@ MONDO:0018481	undifferentiated carcinoma of esophagus	MONDO:0019086	Orphanet:418
 MONDO:0018528	congenital myopathy with myasthenic-like onset	MONDO:0019952	Orphanet:424107	Orphanet:97245	congenital myopathy
 MONDO:0018544	adrenoleukodystrophy	MONDO:0024237	Orphanet:43	Orphanet:183500	inherited neurodegenerative disorder
 MONDO:0018591	ITM2B amyloidosis	MONDO:0019065	Orphanet:439254	Orphanet:69	amyloidosis
-MONDO:0018599	congenital oculomotor nerve palsy	MONDO:0001309	Orphanet:440221	Orphanet:98685	oculomotor nerve paralysis
 MONDO:0018611	early-onset lamellar cataract	MONDO:0020379	Orphanet:441452	Orphanet:98995	early-onset zonular cataract
 MONDO:0018653	Polymerase proofreading-related adenomatous polyposis	MONDO:0015185	Orphanet:447877	Orphanet:104010	intestinal polyposis syndrome
 MONDO:0018655	hypomyelination-cerebellar atrophy-hypoplasia of the corpus callosum syndrome	MONDO:0100605	Orphanet:447893	Orphanet:289494	POLR-related leukodystrophy

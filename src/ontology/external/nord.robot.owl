@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mondo/external/nord.robot.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2026-10-19/nord.robot.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2026-11-18/nord.robot.owl"/>
     </owl:Ontology>
     
 
@@ -63,42 +63,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_ -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_">
-        <oboInOwl:hasDbXref>NORD:839</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>Fibrous Dysplasia / McCune-Albright Syndrome</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>NORD:839</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Fibrous Dysplasia / McCune-Albright Syndrome</owl:annotatedTarget>
-        <obo:OMO_0002001>https://w3id.org/information-resource-registry/nord</obo:OMO_0002001>
-        <oboInOwl:hasDbXref>NORD:839</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
-        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
-        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
-        <oboInOwl:source>NORD:839</oboInOwl:source>
-    </owl:Axiom>
     
 
 
@@ -1217,21 +1181,13 @@
     <!-- http://purl.obolibrary.org/obo/MONDO_0000845 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000845">
-        <oboInOwl:hasDbXref>NORD:1147</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000845"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>NORD:1147</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000845"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
         <oboInOwl:source>MONDO:NORD</oboInOwl:source>
-        <oboInOwl:source>NORD:1147</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -12463,29 +12419,13 @@
     <!-- http://purl.obolibrary.org/obo/MONDO_0007306 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0007306">
-        <oboInOwl:hasDbXref>NORD:1336</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>Klippel-Feil Syndrome</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0007306"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>NORD:1336</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0007306"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Klippel-Feil Syndrome</owl:annotatedTarget>
-        <obo:OMO_0002001>https://w3id.org/information-resource-registry/nord</obo:OMO_0002001>
-        <oboInOwl:hasDbXref>NORD:1336</oboInOwl:hasDbXref>
-    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0007306"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
         <oboInOwl:source>MONDO:NORD</oboInOwl:source>
-        <oboInOwl:source>NORD:1336</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -41054,6 +40994,20 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0010385"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0010386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0010386">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0010386"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
         <oboInOwl:source>MONDO:NORD</oboInOwl:source>
@@ -122190,6 +122144,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0019147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019147">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0019147"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0019148 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0019148">
@@ -142697,6 +142665,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0032836 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0032836">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0032836"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0032839 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0032839">
@@ -151361,6 +151343,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0100162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100162">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100162"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0100164 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100164">
@@ -154245,6 +154241,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0958006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0958006">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0958006"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0958231 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0958231">
@@ -154495,6 +154505,50 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
         <oboInOwl:source>MONDO:NORD</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_1060257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_1060257">
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060257"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_1060267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_1060267">
+        <oboInOwl:hasDbXref>NORD:839</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Fibrous Dysplasia / McCune-Albright Syndrome</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060267"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>NORD:839</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060267"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Fibrous Dysplasia / McCune-Albright Syndrome</owl:annotatedTarget>
+        <obo:OMO_0002001>https://w3id.org/information-resource-registry/nord</obo:OMO_0002001>
+        <oboInOwl:hasDbXref>NORD:839</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060267"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/mondo#nord_rare"/>
+        <oboInOwl:source>MONDO:NORD</oboInOwl:source>
+        <oboInOwl:source>NORD:839</oboInOwl:source>
     </owl:Axiom>
     
 

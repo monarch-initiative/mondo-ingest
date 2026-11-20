@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mondo/external/mondo-medgen.robot.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2026-10-19/mondo-medgen.robot.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mondo/external/2026-11-18/mondo-medgen.robot.owl"/>
     </owl:Ontology>
     
 
@@ -5615,6 +5615,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000607">
+        <oboInOwl:hasDbXref>MEDGEN:36336</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0079773</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000607"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:36336</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000607"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0079773</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:36336</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0000610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000610">
@@ -6506,18 +6530,42 @@
     <!-- http://purl.obolibrary.org/obo/MONDO_0000680 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000680">
+        <oboInOwl:hasDbXref>MEDGEN:1848654</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C5848065</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000680"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:1848654</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000680"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C5848065</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:1848654</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0000681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0000681">
         <oboInOwl:hasDbXref>MEDGEN:65881</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS:C0234505</oboInOwl:hasDbXref>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000680"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000681"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>MEDGEN:65881</owl:annotatedTarget>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000680"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0000681"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C0234505</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:65881</oboInOwl:source>
@@ -11984,15 +12032,15 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001068"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:14533</owl:annotatedTarget>
+        <owl:annotatedTarget>UMLS:C0029442</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:14533</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001068"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0029442</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:14533</oboInOwl:source>
+        <owl:annotatedTarget>MEDGEN:14533</owl:annotatedTarget>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -12032,15 +12080,15 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001072"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0269658</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:542203</oboInOwl:source>
+        <owl:annotatedTarget>MEDGEN:542203</owl:annotatedTarget>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001072"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:542203</owl:annotatedTarget>
+        <owl:annotatedTarget>UMLS:C0269658</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:542203</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -15089,30 +15137,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C0271446</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:543351</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0001213 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0001213">
-        <oboInOwl:hasDbXref>MEDGEN:509959</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C0155421</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001213"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:509959</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0001213"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0155421</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:509959</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -45233,30 +45257,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C0341728</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:574605</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0002675 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0002675">
-        <oboInOwl:hasDbXref>MEDGEN:104927</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C0206729</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002675"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:104927</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0002675"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0206729</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:104927</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -78242,21 +78242,21 @@
     <!-- http://purl.obolibrary.org/obo/MONDO_0004322 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0004322">
-        <oboInOwl:hasDbXref>MEDGEN:274798</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C1518355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:906353</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C4274424</oboInOwl:hasDbXref>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004322"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:274798</owl:annotatedTarget>
+        <owl:annotatedTarget>MEDGEN:906353</owl:annotatedTarget>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0004322"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C1518355</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:274798</oboInOwl:source>
+        <owl:annotatedTarget>UMLS:C4274424</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:906353</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -94457,30 +94457,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C0009324</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:3532</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0005102 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0005102">
-        <oboInOwl:hasDbXref>MEDGEN:163512</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C0855073</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005102"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:163512</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0005102"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0855073</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:163512</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -116993,6 +116969,30 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C0028879</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:14461</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0006329 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0006329">
+        <oboInOwl:hasDbXref>MEDGEN:60217</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0206717</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0006329"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:60217</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0006329"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0206717</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:60217</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -158495,6 +158495,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0008327 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0008327">
+        <oboInOwl:hasDbXref>MEDGEN:60133</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0206368</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0008327"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:60133</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0008327"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0206368</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:60133</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0008328 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0008328">
@@ -175751,30 +175775,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0009112 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0009112">
-        <oboInOwl:hasDbXref>MEDGEN:341734</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C1857242</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0009112"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:341734</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0009112"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C1857242</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:341734</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0009113 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0009113">
@@ -192407,6 +192407,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0009861 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0009861">
+        <oboInOwl:hasDbXref>MEDGEN:19244</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0031485</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0009861"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:19244</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0009861"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0031485</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:19244</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0009862 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0009862">
@@ -194633,6 +194657,30 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C1849450</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:341456</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0009958 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0009958">
+        <oboInOwl:hasDbXref>MEDGEN:1830728</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C5781059</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0009958"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:1830728</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0009958"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C5781059</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:1830728</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -222770,21 +222818,21 @@
     <!-- http://purl.obolibrary.org/obo/MONDO_0011225 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0011225">
-        <oboInOwl:hasDbXref>MEDGEN:355454</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C1865370</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MEDGEN:400751</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1865371</oboInOwl:hasDbXref>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0011225"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:355454</owl:annotatedTarget>
+        <owl:annotatedTarget>MEDGEN:400751</owl:annotatedTarget>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0011225"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C1865370</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:355454</oboInOwl:source>
+        <owl:annotatedTarget>UMLS:C1865371</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:400751</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -298487,30 +298535,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0014519 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0014519">
-        <oboInOwl:hasDbXref>MEDGEN:545568</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C0274294</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0014519"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:545568</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0014519"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0274294</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:545568</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0014520 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0014520">
@@ -311951,30 +311975,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0015166 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015166">
-        <oboInOwl:hasDbXref>MEDGEN:224862</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C1292774</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015166"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:224862</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015166"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C1292774</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:224862</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0015167 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015167">
@@ -320351,30 +320351,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0015694 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015694">
-        <oboInOwl:hasDbXref>MEDGEN:1676191</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C5191057</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015694"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:1676191</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015694"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C5191057</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:1676191</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0015695 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015695">
@@ -321665,30 +321641,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C5680515</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:1842533</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0015758 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0015758">
-        <oboInOwl:hasDbXref>MEDGEN:36336</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C0079773</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015758"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:36336</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0015758"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0079773</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:36336</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -325097,30 +325049,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C0014804</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:8687</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0016029 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0016029">
-        <oboInOwl:hasDbXref>MEDGEN:60217</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C0206717</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0016029"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:60217</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0016029"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0206717</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:60217</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -334193,30 +334121,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C4707726</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:1646729</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0016570 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0016570">
-        <oboInOwl:hasDbXref>MEDGEN:903876</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C4273669</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0016570"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:903876</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0016570"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C4273669</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:903876</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -347207,30 +347111,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0017327 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017327">
-        <oboInOwl:hasDbXref>MEDGEN:906353</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C4274424</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0017327"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:906353</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0017327"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C4274424</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:906353</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0017328 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017328">
@@ -356423,30 +356303,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0017895 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017895">
-        <oboInOwl:hasDbXref>MEDGEN:1681657</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C5191836</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0017895"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:1681657</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0017895"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C5191836</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:1681657</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0017896 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0017896">
@@ -365081,30 +364937,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C5848049</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:1848864</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0018433 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0018433">
-        <oboInOwl:hasDbXref>MEDGEN:1376401</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C4518837</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018433"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:1376401</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0018433"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C4518837</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:1376401</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -399287,30 +399119,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0020561 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020561">
-        <oboInOwl:hasDbXref>MEDGEN:107784</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C0545074</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020561"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:107784</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0020561"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0545074</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:107784</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0020562 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0020562">
@@ -408113,30 +407921,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C0271447</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:543352</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0021203 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0021203">
-        <oboInOwl:hasDbXref>MEDGEN:75752</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C0271453</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021203"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:75752</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0021203"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C0271453</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:75752</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -456503,30 +456287,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0035437 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0035437">
-        <oboInOwl:hasDbXref>MEDGEN:1799987</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C5568564</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0035437"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:1799987</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0035437"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C5568564</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:1799987</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0035441 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0035441">
@@ -457145,54 +456905,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C5567889</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:1799312</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0035639 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0035639">
-        <oboInOwl:hasDbXref>MEDGEN:414807</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C2826037</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0035639"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:414807</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0035639"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C2826037</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:414807</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0035642 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0035642">
-        <oboInOwl:hasDbXref>MEDGEN:443130</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C2826048</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0035642"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:443130</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0035642"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C2826048</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:443130</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -458273,30 +457985,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C2698312</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:437498</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MONDO_0035945 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0035945">
-        <oboInOwl:hasDbXref>MEDGEN:396325</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C2698316</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0035945"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:396325</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0035945"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C2698316</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:396325</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -470327,30 +470015,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0044923 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0044923">
-        <oboInOwl:hasDbXref>MEDGEN:414842</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C2826177</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0044923"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:414842</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0044923"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C2826177</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:414842</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0044925 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0044925">
@@ -479951,6 +479615,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0100273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100273">
+        <oboInOwl:hasDbXref>MEDGEN:341734</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1857242</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100273"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:341734</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100273"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C1857242</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:341734</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0100280 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100280">
@@ -480935,6 +480623,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0100382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100382">
+        <oboInOwl:hasDbXref>MEDGEN:1376401</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C4518837</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100382"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:1376401</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100382"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C4518837</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:1376401</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0100428 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100428">
@@ -481025,6 +480737,30 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C5882677</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:1851006</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0100434 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0100434">
+        <oboInOwl:hasDbXref>MEDGEN:545568</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0274294</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100434"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:545568</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0100434"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0274294</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:545568</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -491543,6 +491279,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_0850450 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0850450">
+        <oboInOwl:hasDbXref>MEDGEN:443130</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C2826048</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0850450"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:443130</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0850450"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C2826048</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:443130</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_0850451 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0850451">
@@ -491729,6 +491489,30 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C5707085</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:1815990</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_0850492 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0850492">
+        <oboInOwl:hasDbXref>MEDGEN:224862</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1292774</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0850492"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:224862</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0850492"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C1292774</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:224862</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>
@@ -513719,30 +513503,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MONDO_0979233 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0979233">
-        <oboInOwl:hasDbXref>MEDGEN:1876466</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS:C6012736</oboInOwl:hasDbXref>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0979233"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>MEDGEN:1876466</owl:annotatedTarget>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_0979233"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>UMLS:C6012736</owl:annotatedTarget>
-        <oboInOwl:source>MEDGEN:1876466</oboInOwl:source>
-        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
-        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MONDO_0979234 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_0979234">
@@ -519455,6 +519215,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MONDO_1060256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_1060256">
+        <oboInOwl:hasDbXref>MEDGEN:1830657</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C5780941</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060256"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:1830657</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060256"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C5780941</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:1830657</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MONDO_1060260 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_1060260">
@@ -519737,6 +519521,54 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>UMLS:C1321345</owl:annotatedTarget>
         <oboInOwl:source>MEDGEN:729944</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_1060292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_1060292">
+        <oboInOwl:hasDbXref>MEDGEN:752674</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C2732979</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060292"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:752674</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060292"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C2732979</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:752674</oboInOwl:source>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MONDO_1060297 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MONDO_1060297">
+        <oboInOwl:hasDbXref>MEDGEN:141667</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0494165</oboInOwl:hasDbXref>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060297"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>MEDGEN:141667</owl:annotatedTarget>
+        <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
+        <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MONDO_1060297"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0494165</owl:annotatedTarget>
+        <oboInOwl:source>MEDGEN:141667</oboInOwl:source>
         <oboInOwl:source>MONDO:MEDGEN</oboInOwl:source>
         <oboInOwl:source>MONDO:equivalentTo</oboInOwl:source>
     </owl:Axiom>

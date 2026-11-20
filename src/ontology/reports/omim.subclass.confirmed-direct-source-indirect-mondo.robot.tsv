@@ -19,7 +19,7 @@ MONDO:0007287	cataract 41	MONDO:0005129	OMIM:116400	OMIMPS:116200	cataract
 MONDO:0007288	cataract 6 multiple types	MONDO:0005129	OMIM:116600	OMIMPS:116200	cataract
 MONDO:0007289	cataract 13 with adult I phenotype	MONDO:0005129	OMIM:116700	OMIMPS:116200	cataract
 MONDO:0007290	cataract 5 multiple types	MONDO:0005129	OMIM:116800	OMIMPS:116200	cataract
-MONDO:0007294	central core myopathy	MONDO:0019952	OMIM:117000	OMIMPS:117000	congenital myopathy
+MONDO:0007294	congenital myopathy 1A, autosomal dominant, with susceptibility to malignant hyperthermia	MONDO:0019952	OMIM:117000	OMIMPS:117000	congenital myopathy
 MONDO:0007296	spinocerebellar ataxia type 31	MONDO:0020380	OMIM:117210	OMIMPS:164400	autosomal dominant cerebellar ataxia
 MONDO:0007298	spinocerebellar ataxia type 29	MONDO:0020380	OMIM:117360	OMIMPS:164400	autosomal dominant cerebellar ataxia
 MONDO:0007307	Charcot-Marie-Tooth disease type 1B	MONDO:0015626	OMIM:118200	OMIMPS:118220	Charcot-Marie-Tooth disease
@@ -219,7 +219,7 @@ MONDO:0011006	hereditary spastic paraplegia 9A	MONDO:0019064	OMIM:601162	OMIMPS:
 MONDO:0011015	cataract 24	MONDO:0005129	OMIM:601202	OMIMPS:116200	cataract
 MONDO:0011066	Charcot-Marie-Tooth disease type 4B1	MONDO:0015626	OMIM:601382	OMIMPS:118220	Charcot-Marie-Tooth disease
 MONDO:0011085	Charcot-Marie-Tooth disease type 4D	MONDO:0015626	OMIM:601455	OMIMPS:118220	Charcot-Marie-Tooth disease
-MONDO:0011088	congenital myasthenic syndrome 1A	MONDO:0018940	OMIM:601462	OMIMPS:601462	congenital myasthenic syndrome
+MONDO:0011088	myasthenic syndrome, congenital, 1A, slow-channel	MONDO:0018940	OMIM:601462	OMIMPS:601462	congenital myasthenic syndrome
 MONDO:0011091	Charcot-Marie-Tooth disease type 2D	MONDO:0015626	OMIM:601472	OMIMPS:118220	Charcot-Marie-Tooth disease
 MONDO:0011094	dilated cardiomyopathy 1C	MONDO:0016333	OMIM:601493	OMIMPS:115200	familial dilated cardiomyopathy
 MONDO:0011095	dilated cardiomyopathy 1D	MONDO:0016333	OMIM:601494	OMIMPS:115200	familial dilated cardiomyopathy
@@ -778,7 +778,6 @@ MONDO:0014837	thrombocytopenia 6	MONDO:0100241	OMIM:616937	OMIMPS:313900	inherit
 MONDO:0014840	agammaglobulinemia 8, autosomal dominant	MONDO:0015977	OMIM:616941	OMIMPS:601495	agammaglobulinemia
 MONDO:0014842	intellectual developmental disorder, autosomal dominant 41	MONDO:0100172	OMIM:616944	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0014846	spinocerebellar ataxia, autosomal recessive 23	MONDO:0015244	OMIM:616949	OMIMPS:213200	autosomal recessive cerebellar ataxia
-MONDO:0014858	intellectual developmental disorder, autosomal dominant 43	MONDO:0100172	OMIM:616977	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0014865	autosomal recessive severe congenital neutropenia due to CSF3R deficiency	MONDO:0018542	OMIM:617014	OMIMPS:202700	severe congenital neutropenia
 MONDO:0014874	pontocerebellar hypoplasia, type 2F	MONDO:0020135	OMIM:617026	OMIMPS:607596	pontocerebellar hypoplasia
 MONDO:0014892	intellectual developmental disorder, autosomal dominant 44, with microcephaly	MONDO:0100172	OMIM:617061	OMIMPS:156200	intellectual disability, autosomal dominant
@@ -867,6 +866,7 @@ MONDO:0032569	isolated growth hormone deficiency, type 5	MONDO:0013099	OMIM:6181
 MONDO:0032592	cardiomyopathy, dilated, 2c	MONDO:0016333	OMIM:618189	OMIMPS:115200	familial dilated cardiomyopathy
 MONDO:0032596	myasthenic syndrome, congenital, 23, presynaptic	MONDO:0018940	OMIM:618197	OMIMPS:601462	congenital myasthenic syndrome
 MONDO:0032597	myasthenic syndrome, congenital, 24, presynaptic	MONDO:0018940	OMIM:618198	OMIMPS:601462	congenital myasthenic syndrome
+MONDO:0032667	immunodeficiency 130 with HPV-related verrucosis	MONDO:0021094	OMIM:618309	OMIMPS:300755	immunodeficiency disease
 MONDO:0032675	myasthenic syndrome, congenital, 25, presynaptic	MONDO:0018940	OMIM:618323	OMIMPS:601462	congenital myasthenic syndrome
 MONDO:0032677	lissencephaly 9 with complex brainstem malformation	MONDO:0018838	OMIM:618325	OMIMPS:607432	lissencephaly spectrum disorders
 MONDO:0032717	amelogenesis imperfecta, type 3C	MONDO:0019507	OMIM:618386	OMIMPS:104500	amelogenesis imperfecta
@@ -875,6 +875,7 @@ MONDO:0032750	arthrogryposis, distal, type 2B2	MONDO:0019942	OMIM:618435	OMIMPS:
 MONDO:0032751	arthrogryposis, distal, type 2B3	MONDO:0019942	OMIM:618436	OMIMPS:108120	distal arthrogryposis
 MONDO:0032756	long QT syndrome 8	MONDO:0019171	OMIM:618447	OMIMPS:192500	familial long QT syndrome
 MONDO:0032795	intellectual developmental disorder 59	MONDO:0100172	OMIM:618522	OMIMPS:156200	intellectual disability, autosomal dominant
+MONDO:0032800	Robinow syndrome, autosomal recessive 2	MONDO:0019978	OMIM:618529	OMIMPS:268310	Robinow syndrome
 MONDO:0032823	intellectual developmental disorder 60 with seizures	MONDO:0100172	OMIM:618587	OMIMPS:156200	intellectual disability, autosomal dominant
 MONDO:0032915	long QT syndrome 16	MONDO:0019171	OMIM:618782	OMIMPS:192500	familial long QT syndrome
 MONDO:0032919	intellectual developmental disorder 62	MONDO:0100172	OMIM:618793	OMIMPS:156200	intellectual disability, autosomal dominant
@@ -939,3 +940,4 @@ MONDO:0971178	polycystic kidney disease 8	MONDO:0020642	OMIM:620903	OMIMPS:17390
 MONDO:0976229	immunodeficiency 131	MONDO:0021094	OMIM:621097	OMIMPS:300755	immunodeficiency disease
 MONDO:0979230	spastic ataxia 11, autosomal dominant	MONDO:0017845	OMIM:621226	OMIMPS:108600	spastic ataxia
 MONDO:0980988	epilepsy, idiopathic generalized 20	MONDO:0005579	OMIM:621500	OMIMPS:600669	idiopathic generalized epilepsy
+MONDO:1060325	Robinow syndrome, autosomal recessive 1	MONDO:0019978	OMIM:268310	OMIMPS:268310	Robinow syndrome

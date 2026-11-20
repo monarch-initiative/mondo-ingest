@@ -10,6 +10,7 @@
 | OMIMPS:620987 | Neurodegeneration, infantile-onset, with optic atrophy and                                                                          |
 | OMIM:621629   | acrofrontofacionasal dysostosis 3                                                                                                   |
 | OMIM:621695   | arthrogryposis multiplex congenita 8, neurogenic type                                                                               |
+| OMIM:621758   | arthrogryposis multiplex congenita 9, with immunodeficiency                                                                         |
 | OMIM:621722   | camptodactyly, impaired intellectual development, and facial dysmorphism syndrome                                                   |
 | OMIM:621595   | cardiomyopathy, dilated, 2n                                                                                                         |
 | OMIM:621567   | congenital disorder of glycosylation, type ibb                                                                                      |
@@ -22,28 +23,36 @@
 | OMIM:621728   | deafness, autosomal dominant 55                                                                                                     |
 | OMIM:621559   | dentin dysplasia, type 1c                                                                                                           |
 | OMIM:621608   | developmental and epileptic encephalopathy 122                                                                                      |
+| OMIM:621777   | developmental and epileptic encephalopathy 123                                                                                      |
 | OMIM:621692   | developmental and epileptic encephalopathy 42b                                                                                      |
 | OMIM:621426   | drug metabolism, altered, cyp2a6-related                                                                                            |
+| OMIM:621749   | ectodermal dysplasia 19, hypohidrotic/tooth/nail type                                                                               |
+| OMIM:621791   | ectodermal dysplasia 20, hair/nail type                                                                                             |
 | OMIM:621588   | epidermodysplasia verruciformis, susceptibility to, 6                                                                               |
 | OMIM:621642   | glycolic aciduria, isolated                                                                                                         |
 | OMIM:621720   | hydatidiform mole, recurrent, 5                                                                                                     |
 | OMIM:621721   | hydatidiform mole, recurrent, 6                                                                                                     |
 | OMIM:621654   | hyposulfatemia with skeletal dysplasia                                                                                              |
 | OMIM:621671   | immune dysregulation with autoimmunity, autoinflammation, and immunodeficiency                                                      |
+| OMIM:621699   | immunodeficiency 135                                                                                                                |
+| OMIM:621743   | immunodeficiency, common variable, 16                                                                                               |
 | OMIM:621601   | inflammatory bowel disease 32, autosomal recessive                                                                                  |
 | OMIM:621627   | intellectual developmental disorder, autosomal dominant 78                                                                          |
 | OMIM:621649   | intellectual developmental disorder, autosomal recessive 85                                                                         |
 | OMIM:621738   | intellectual developmental disorder, autosomal recessive 86                                                                         |
+| OMIM:621788   | kruer syndrome                                                                                                                      |
 | OMIM:621644   | kyphomelic dysplasia, itai-ikegawa type                                                                                             |
 | OMIM:621676   | lemire-marshall-drivas-chitayat syndrome                                                                                            |
+| OMIM:621786   | li-hakonarson syndrome                                                                                                              |
 | OMIM:621645   | lung-brain developmental disorder                                                                                                   |
 | OMIM:621585   | mendez-johnson immunoneurologic syndrome                                                                                            |
 | OMIM:621639   | movement disorder, congenital nonprogressive, with ataxia and eye movement abnormalities                                            |
 | OMIM:621678   | multiple endocrine neoplasia, type 5                                                                                                |
-| OMIM:621734   | myopathy with rigid spine, scoliosis, and male-limited hypogonadotropic hypogonadism                                                |
+| OMIM:621734   | myopathy with rigid spine, scoliosis, and male-limited hypergonadotropic hypogonadism                                               |
 | OMIM:621694   | neurodegeneration, childhood-onset, with movement disorders, cognitive decline, and brain abnormalities                             |
 | OMIM:621704   | neurodegeneration, infantile-onset, with optic atrophy and structural brain abnormalities 2                                         |
 | OMIM:621635   | neurodevelopmental disorder with intellectual, visual, and language impairment                                                      |
+| OMIM:301174   | neurodevelopmental disorder with or without macrocephaly                                                                            |
 | OMIM:621710   | neurodevelopmental disorder with seizures and cerebellar hypoplasia                                                                 |
 | OMIM:621643   | neurodevelopmental disorder with seizures, spastic tetraparesis, and vision impairment                                              |
 | OMIM:621622   | neurodevelopmental disorder with spasticity, hypoplasia of the corpus callosum, and recurrent infections                            |
@@ -52,6 +61,7 @@
 | OMIM:621620   | oocyte/zygote/embryo maturation arrest 26                                                                                           |
 | OMIM:621713   | oocyte/zygote/embryo maturation arrest 27                                                                                           |
 | OMIM:621730   | oocyte/zygote/embryo maturation arrest 28                                                                                           |
+| OMIM:621770   | oocyte/zygote/embryo maturation arrest 29                                                                                           |
 | OMIM:621600   | paget disease of bone 7, early-onset                                                                                                |
 | OMIM:621693   | parkinson disease 27, autosomal recessive early-onset                                                                               |
 | OMIM:621687   | pheochromocytoma/paraganglioma syndrome 8                                                                                           |
@@ -67,6 +77,8 @@
 | OMIM:621637   | retinitis pigmentosa 108                                                                                                            |
 | OMIM:621656   | retinitis pigmentosa 109                                                                                                            |
 | OMIM:621619   | spermatogenic failure 103                                                                                                           |
+| OMIM:621766   | spermatogenic failure 104                                                                                                           |
+| OMIM:621783   | spermatogenic failure 105                                                                                                           |
 | OMIM:621650   | spondyloepimetaphyseal dysplasia with tracheal stenosis and ectodermal dysplasia                                                    |
 | OMIM:301172   | systemic lupus erythematosus 19                                                                                                     |
 | OMIM:621565   | yu-kury neurodevelopmental syndrome                                                                                                 |

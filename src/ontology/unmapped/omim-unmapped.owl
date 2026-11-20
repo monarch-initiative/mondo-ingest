@@ -1105,6 +1105,12 @@
     
 
 
+    <!-- http://identifiers.org/hgnc/10830 -->
+
+    <owl:Class rdf:about="http://identifiers.org/hgnc/10830"/>
+    
+
+
     <!-- http://identifiers.org/hgnc/10848 -->
 
     <owl:Class rdf:about="http://identifiers.org/hgnc/10848"/>
@@ -1615,6 +1621,12 @@
     
 
 
+    <!-- http://identifiers.org/hgnc/11097 -->
+
+    <owl:Class rdf:about="http://identifiers.org/hgnc/11097"/>
+    
+
+
     <!-- http://identifiers.org/hgnc/11098 -->
 
     <owl:Class rdf:about="http://identifiers.org/hgnc/11098"/>
@@ -1624,6 +1636,12 @@
     <!-- http://identifiers.org/hgnc/11100 -->
 
     <owl:Class rdf:about="http://identifiers.org/hgnc/11100"/>
+    
+
+
+    <!-- http://identifiers.org/hgnc/11101 -->
+
+    <owl:Class rdf:about="http://identifiers.org/hgnc/11101"/>
     
 
 
@@ -9727,6 +9745,12 @@
     
 
 
+    <!-- http://identifiers.org/hgnc/19841 -->
+
+    <owl:Class rdf:about="http://identifiers.org/hgnc/19841"/>
+    
+
+
     <!-- http://identifiers.org/hgnc/19849 -->
 
     <owl:Class rdf:about="http://identifiers.org/hgnc/19849"/>
@@ -10864,6 +10888,12 @@
     <!-- http://identifiers.org/hgnc/21208 -->
 
     <owl:Class rdf:about="http://identifiers.org/hgnc/21208"/>
+    
+
+
+    <!-- http://identifiers.org/hgnc/21212 -->
+
+    <owl:Class rdf:about="http://identifiers.org/hgnc/21212"/>
     
 
 
@@ -12748,6 +12778,12 @@
     <!-- http://identifiers.org/hgnc/24555 -->
 
     <owl:Class rdf:about="http://identifiers.org/hgnc/24555"/>
+    
+
+
+    <!-- http://identifiers.org/hgnc/24560 -->
+
+    <owl:Class rdf:about="http://identifiers.org/hgnc/24560"/>
     
 
 
@@ -17149,6 +17185,12 @@
     
 
 
+    <!-- http://identifiers.org/hgnc/30402 -->
+
+    <owl:Class rdf:about="http://identifiers.org/hgnc/30402"/>
+    
+
+
     <!-- http://identifiers.org/hgnc/30414 -->
 
     <owl:Class rdf:about="http://identifiers.org/hgnc/30414"/>
@@ -17896,6 +17938,12 @@
     <!-- http://identifiers.org/hgnc/32550 -->
 
     <owl:Class rdf:about="http://identifiers.org/hgnc/32550"/>
+    
+
+
+    <!-- http://identifiers.org/hgnc/32554 -->
+
+    <owl:Class rdf:about="http://identifiers.org/hgnc/32554"/>
     
 
 
@@ -31429,12 +31477,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHR_9606chr2p25-p12 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHR_9606chr2p25-p12"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHR_9606chr2p25-p22 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHR_9606chr2p25-p22"/>
@@ -36674,12 +36716,6 @@
     <!-- https://omim.org/entry/101850 -->
 
     <owl:Class rdf:about="https://omim.org/entry/101850">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr2p25-p12"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>AKE</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PPKP3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>acrokeratoelastoidosis</oboInOwl:hasExactSynonym>
@@ -48854,16 +48890,37 @@
     <!-- https://omim.org/entry/114100 -->
 
     <owl:Class rdf:about="https://omim.org/entry/114100">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS213600"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/10947"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/158378"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>PFBC1B</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, childhood-onset</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cerebral calcification, nonarteriosclerotic, idiopathic, childhood-onset</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ibgc, childhood-onset</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 1b, childhood-onset, autosomal recessive</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>striopallidodentate calcinosis, bilateral, childhood-onset</oboInOwl:hasExactSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, childhood-onset</rdfs:label>
+        <rdfs:label>primary familial brain calcification 1b, childhood-onset, autosomal recessive</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/114100"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, childhood-onset</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC1B</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/114100"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 1b, childhood-onset, autosomal recessive</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -74232,8 +74289,8 @@
         <oboInOwl:hasExactSynonym>glucose 1-dehydrogenase</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>glucose dehydrogenase</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>glucose-6-phosphate dehydrogenase, salivary</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>hexose-6-phosphate dehydrogenase</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hexose-6-phosphate dehydrogenase precursor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hexose-6-phosphate dehydrogenase/glucose 1-dehydrogenase</oboInOwl:hasExactSynonym>
         <rdfs:label>H6PD</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/4795"/>
     </owl:Class>
@@ -78569,6 +78626,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>HBG1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hemoglobin, gamma a</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hemoglobin, subunit gamma-1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hemoglobin--gamma locus, 136 alanine</oboInOwl:hasExactSynonym>
         <rdfs:label>HBG1</rdfs:label>
     </owl:Class>
@@ -78645,6 +78703,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>HBG2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hemoglobin, gamma g</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>hemoglobin, subunit gamma-2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hemoglobin--gamma locus, 136 glycine</oboInOwl:hasExactSynonym>
         <rdfs:label>HBG2</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/4832"/>
@@ -87563,13 +87622,13 @@
     <owl:Class rdf:about="https://omim.org/entry/148360">
         <oboInOwl:hasExactSynonym>axonal neuropathy with palmoplantar keratoderma</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>charcot-marie-tooth disease with palmoplantar keratoderma and nail dystrophy</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>keratoderma, palmoplantar, with nail dystrophy and hereditary motor-sensory neuropathy</oboInOwl:hasExactSynonym>
-        <rdfs:label>keratoderma, palmoplantar, with nail dystrophy and hereditary motor-sensory neuropathy</rdfs:label>
+        <oboInOwl:hasExactSynonym>palmoplantar keratoderma with nail dystrophy and hereditary motor-sensory neuropathy</oboInOwl:hasExactSynonym>
+        <rdfs:label>palmoplantar keratoderma with nail dystrophy and hereditary motor-sensory neuropathy</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/148360"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>keratoderma, palmoplantar, with nail dystrophy and hereditary motor-sensory neuropathy</owl:annotatedTarget>
+        <owl:annotatedTarget>palmoplantar keratoderma with nail dystrophy and hereditary motor-sensory neuropathy</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -95584,7 +95643,7 @@
         <oboInOwl:hasExactSynonym>PUM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>breast cancer-associated DF3 antigen</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>epithelial membrane antigen</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>mucin 1, cell surface associated</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mucin 1, cell surface-associated</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mucin 1, transmembrane</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mucin 1, urinary</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mucin, tumor-associated epithelial</oboInOwl:hasExactSynonym>
@@ -95797,6 +95856,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>MUC7</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mucin 7, salivary</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mucin 7, secreted</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mucin, salivary, low molecular weight</oboInOwl:hasExactSynonym>
         <rdfs:label>MUC7</rdfs:label>
     </owl:Class>
@@ -95822,6 +95882,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr8p11.21"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/114100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -97358,6 +97424,7 @@
         <oboInOwl:hasExactSynonym>MYHCA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myh, cardiac</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, cardiac, heavy chain, alpha</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, heavy chain 6</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain 6, cardiac muscle, alpha</oboInOwl:hasExactSynonym>
         <rdfs:label>MYH6</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/7576"/>
@@ -97425,6 +97492,7 @@
         <oboInOwl:hasExactSynonym>MYH3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MYHSE1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myhc-emb</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, heavy chain 3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain 3, skeletal muscle, embryonic</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, skeletal, heavy chain, embryonic 1</oboInOwl:hasExactSynonym>
         <rdfs:label>MYH3</rdfs:label>
@@ -97472,6 +97540,7 @@
         <oboInOwl:hasExactSynonym>MYHSA2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mhc iia</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myhc iia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, heavy chain 2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain 2, skeletal muscle, adult</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain, iia</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, skeletal, heavy chain, adult 2</oboInOwl:hasExactSynonym>
@@ -97535,6 +97604,7 @@
         <oboInOwl:hasExactSynonym>MYH8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myhc-peri</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myhc-pn</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, heavy chain 8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain 8, skeletal muscle, perinatal</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain, perinatal</oboInOwl:hasExactSynonym>
         <rdfs:label>MYH8</rdfs:label>
@@ -97586,6 +97656,7 @@
         <oboInOwl:hasExactSynonym>MYH11</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SMHC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SMMHC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, heavy chain 11</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain 11, smooth muscle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, smooth muscle, heavy chain 11</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>smooth muscle myosin heavy chain</oboInOwl:hasExactSynonym>
@@ -97685,6 +97756,7 @@
         <oboInOwl:hasExactSynonym>MYH7</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MYHCB</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, cardiac, heavy chain, beta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, heavy chain 7</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain 7, cardiac muscle, beta</oboInOwl:hasExactSynonym>
         <rdfs:label>MYH7</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/7577"/>
@@ -97728,6 +97800,7 @@
         <oboInOwl:hasExactSynonym>MYL4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>embryonic/atrial myosin alkali light chain</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, atrial/fetal muscle, light chain</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, light chain 4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, light chain 4, alkali, atrial, embryonic</oboInOwl:hasExactSynonym>
         <rdfs:label>MYL4</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/7585"/>
@@ -97771,6 +97844,7 @@
         <oboInOwl:hasExactSynonym>MYH9</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>NMMHCA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cellular myosin heavy chain, type a</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, heavy chain 9</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain 9, nonmuscle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain, nonmuscle, type a</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nmhc 2a</oboInOwl:hasExactSynonym>
@@ -97861,6 +97935,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>MYL1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, light chain 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, light chain 1, alkali, skeletal, fast</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, light chain, fast skeletal</oboInOwl:hasExactSynonym>
         <rdfs:label>MYL1</rdfs:label>
@@ -97904,6 +97979,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>MYL2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mlc2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, light chain 2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, light chain 2, regulatory, cardiac, slow</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, light chain, regulatory ventricular</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>regulatory light chain of myosin</oboInOwl:hasExactSynonym>
@@ -97948,6 +98024,7 @@
         <oboInOwl:hasExactSynonym>essential light chain of myosin</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, light chain 1, slow, B</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, light chain 1, ventricular</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, light chain 3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, light chain 3, alkali, ventricular, skeletal, slow</oboInOwl:hasExactSynonym>
         <rdfs:label>MYL3</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/7584"/>
@@ -98009,6 +98086,7 @@
         <oboInOwl:hasExactSynonym>MYBPC1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mybpcs</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin-binding protein c, slow type</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin-binding protein c1</oboInOwl:hasExactSynonym>
         <rdfs:label>MYBPC1</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/7549"/>
     </owl:Class>
@@ -113046,43 +113124,6 @@
     
 
 
-    <!-- https://omim.org/entry/176885 -->
-
-    <owl:Class rdf:about="https://omim.org/entry/176885">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr20q13.13"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>PTP1B</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>PTPN1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>protein phosphotyrosylphosphatase 1b</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>protein-tyrosine phosphatase, nonreceptor-type, 1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>protein-tyrosine phosphatase, placental</oboInOwl:hasExactSynonym>
-        <rdfs:label>PTPN1</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://omim.org/entry/176885"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>PTP1B</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://omim.org/entry/176885"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>PTPN1</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://omim.org/entry/176885"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>PTPN1</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
-    </owl:Axiom>
-    
-
-
     <!-- https://omim.org/entry/176892 -->
 
     <owl:Class rdf:about="https://omim.org/entry/176892">
@@ -113548,6 +113589,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>ECK</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>EPHA2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>eph receptor a2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ephrin receptor EPHA2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>epithelial cell receptor protein-tyrosine kinase</oboInOwl:hasExactSynonym>
         <rdfs:label>EPHA2</rdfs:label>
@@ -142251,11 +142293,13 @@
         <oboInOwl:hasExactSynonym>BSPDC</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IBGC1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PFBC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PFBC1A</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cerebral calcification, nonarteriosclerotic, idiopathic, adult-onset</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ferrocalcinosis, cerebrovascular</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ibgc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>primary familial brain calcification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 1a, autosomal dominant</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>striopallidodentate calcinosis, autosomal dominant, adult-onset</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>striopallidodentate calcinosis, bilateral</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>IBGC2</oboInOwl:hasRelatedSynonym>
@@ -142263,7 +142307,7 @@
         <oboInOwl:hasRelatedSynonym>basal ganglia calcification, idiopathic, 2</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>basal ganglia calcification, idiopathic, 3</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>fahr disease, familial</oboInOwl:hasRelatedSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, 1</rdfs:label>
+        <rdfs:label>primary familial brain calcification 1a, autosomal dominant</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/213600"/>
@@ -142286,7 +142330,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/213600"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, 1</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC1A</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/213600"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 1a, autosomal dominant</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -180838,6 +180888,51 @@
     
 
 
+    <!-- https://omim.org/entry/300012 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/300012">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chrXq25-q26.1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/301174"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>SMARCA1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SNF2L1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>snf2-like 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>snf2-related chromatin remodeling atpase 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sucrose nonfermenting, yeast, homolog-like 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>swi/snf-related, matrix-associated, actin-dependent regulator of chromatin, subfamily a, member 1</oboInOwl:hasExactSynonym>
+        <rdfs:label>SMARCA1</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/11097"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/300012"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SMARCA1</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/300012"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SMARCA1</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/300012"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SNF2L1</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    
+
+
     <!-- https://omim.org/entry/300013 -->
 
     <owl:Class rdf:about="https://omim.org/entry/300013">
@@ -199147,6 +199242,7 @@
         <oboInOwl:hasExactSynonym>PIH1D3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>dynein, axonemal, assembly factor 6</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pih1 domain-containing protein 3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>twister</oboInOwl:hasExactSynonym>
         <rdfs:label>DNAAF6</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/28570"/>
     </owl:Class>
@@ -203405,6 +203501,40 @@
         <owl:annotatedSource rdf:resource="https://omim.org/entry/301172"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>systemic lupus erythematosus 19</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/301174 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/301174">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/11097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/300012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>NEDMAC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurodevelopmental disorder with or without macrocephaly</oboInOwl:hasExactSynonym>
+        <rdfs:label>neurodevelopmental disorder with or without macrocephaly</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/301174"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>NEDMAC</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/301174"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>neurodevelopmental disorder with or without macrocephaly</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -215555,6 +215685,7 @@
         <oboInOwl:hasExactSynonym>EPHB4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HTK</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MYK1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>eph receptor b4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ephrin receptor EPHB4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hepatoma transmembrane kinase</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myk, mouse, homolog of</oboInOwl:hasExactSynonym>
@@ -215653,6 +215784,7 @@
         <oboInOwl:hasExactSynonym>snf2-like 2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>snf2/swi2, yeast, homolog of</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sucrose nonfermenting, yeast, homolog-like 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>swi/snf-related baf chromatin remodeling complex subunit atpase 2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>swi/snf-related, matrix-associated, actin-dependent regulator of chromatin, subfamily a, member 2</oboInOwl:hasExactSynonym>
         <rdfs:label>SMARCA2</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/11098"/>
@@ -216641,6 +216773,7 @@
     <!-- https://omim.org/entry/600078 -->
 
     <owl:Class rdf:about="https://omim.org/entry/600078">
+        <obo:IAO_0100001 rdf:resource="https://omim.org/entry/300012"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -227611,11 +227744,19 @@
                 <owl:someValuesFrom rdf:resource="https://omim.org/entry/619908"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>T-CELL LYMPHOMA INVASION AND METASTASIS 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TIAM1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>t-cell lymphoma invasion and metastasis 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tiam rac1-associated gef 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tiam rac1-associated guanine nucleotide exchange factor 1</oboInOwl:hasExactSynonym>
         <rdfs:label>TIAM1</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/11805"/>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/600687"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>T-CELL LYMPHOMA INVASION AND METASTASIS 1</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/600687"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -229194,6 +229335,7 @@
         <oboInOwl:hasExactSynonym>MUC5B</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>muc5</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mucin 5, subtype b, tracheobronchial</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mucin 5b, oligomeric mucus/gel-forming</oboInOwl:hasExactSynonym>
         <rdfs:label>MUC5B</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -229245,6 +229387,7 @@
         <oboInOwl:hasExactSynonym>TAF13 RNA polymerase ii, tata box-binding protein-associated factor, 18-kd</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TAF2K</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TAFII18</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor 13</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor 2k</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tbp-associated factor, RNA polymerase ii, 18-kd</oboInOwl:hasExactSynonym>
         <rdfs:label>TAF13</rdfs:label>
@@ -233150,6 +233293,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>MYBPC3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin-binding protein c, cardiac</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin-binding protein c3</oboInOwl:hasExactSynonym>
         <rdfs:label>MYBPC3</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/7551"/>
     </owl:Class>
@@ -234191,6 +234335,7 @@
         <oboInOwl:hasExactSynonym>ERK</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>developmentally regulated eph-related tyrosine kinase</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>elk-related tyrosine kinase</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>eph receptor b2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>eph tyrosine kinase 3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ephrin receptor EPHB2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hek5</oboInOwl:hasExactSynonym>
@@ -245798,6 +245943,7 @@
         <oboInOwl:hasExactSynonym>integrase interactor 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>malignant rhabdoid tumor suppressor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>snf5, yeast, homolog of</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>swi/snf-related baf chromatin remodeling complex subunit b1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>swi/snf-related, matrix-associated, actin-dependent regulator of chromatin, subfamily b, member 1</oboInOwl:hasExactSynonym>
         <rdfs:label>SMARCB1</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/11103"/>
@@ -246629,6 +246775,8 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>PPP2R5C</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit B (b56), gamma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit b-prime, gamma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit b-prime-gamma</oboInOwl:hasExactSynonym>
         <rdfs:label>PPP2R5C</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/9311"/>
     </owl:Class>
@@ -246664,6 +246812,8 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>PPP2R5D</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit B (b56), delta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit b-prime, delta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit b-prime-delta</oboInOwl:hasExactSynonym>
         <rdfs:label>PPP2R5D</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/9312"/>
     </owl:Class>
@@ -247101,6 +247251,7 @@
         <oboInOwl:hasExactSynonym>REQ</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>UBID4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>d4, zinc, and double phd fingers family, member 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>double phd fingers protein 2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>requiem, apoptosis response zinc finger gene</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ubi-d4/requiem homolog</oboInOwl:hasExactSynonym>
         <rdfs:label>DPF2</rdfs:label>
@@ -247514,6 +247665,7 @@
         <oboInOwl:hasExactSynonym>TAF4B</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TAF4B RNA polymerase ii, tata box-binding protein-associated factor, 105-kd</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TAFII105</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor 4b</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor c2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tbp-associated factor, RNA polymerase ii, 105-kd</oboInOwl:hasExactSynonym>
         <rdfs:label>TAF4B</rdfs:label>
@@ -248548,6 +248700,7 @@
         <oboInOwl:hasExactSynonym>brg1-associated factor, 170-kd</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>chromatin remodeling complex BAF170 subunit</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mammalian chromatin remodeling complex, brg1-associated factor 170</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>swi/snf-related baf chromatin remodeling complex subunit c2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>swi/snf-related, matrix-associated, actin-dependent regulator of chromatin, subfamily c, member 2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>swi3, yeast, homolog of</oboInOwl:hasExactSynonym>
         <rdfs:label>SMARCC2</rdfs:label>
@@ -248594,6 +248747,7 @@
         <oboInOwl:hasExactSynonym>brg1-associated factor, 60-kd, a</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>chromatin remodeling complex BAF60A subunit</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mammalian chromatin remodeling complex, brg1-associated factor 60a</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>swi/snf-related baf chromatin remodeling complex subunit d1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>swi/snf-related, matrix-associated, actin-dependent regulator of chromatin, subfamily d, member 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>swp73, yeast, homolog of</oboInOwl:hasExactSynonym>
         <rdfs:label>SMARCD1</rdfs:label>
@@ -249303,6 +249457,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr19p13.3"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621743"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <mondo:omim_included>een/mll fusion gene</mondo:omim_included>
         <oboInOwl:hasExactSynonym>EEN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>EEN fusion partner of mll</oboInOwl:hasExactSynonym>
@@ -249311,9 +249471,11 @@
         <oboInOwl:hasExactSynonym>endophilin a2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>extra eleven-nineteen leukemia fusion gene</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sh3 domain, grb2-like, 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sh3 domain-containing grb2-like protein 1, endophilin a2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sh3p8</oboInOwl:hasExactSynonym>
         <rdfs:comment>This term has one or more labels that end with &apos;, INCLUDED&apos;.</rdfs:comment>
         <rdfs:label>SH3GL1</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/10830"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/601768"/>
@@ -249841,6 +250003,7 @@
         <oboInOwl:hasExactSynonym>TAFII130</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>taf2c</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tafii135</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor 4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor c1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tbp-associated factor, RNA polymerase ii, 130-kd</oboInOwl:hasExactSynonym>
         <rdfs:label>TAF4</rdfs:label>
@@ -252888,6 +253051,7 @@
         <oboInOwl:hasExactSynonym>SIGMAR1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>SRBP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sigma nonopioid intracellular receptor 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sigma receptor chaperone 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sigma receptor, type 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>sr31747a-binding protein</oboInOwl:hasExactSynonym>
         <rdfs:label>SIGMAR1</rdfs:label>
@@ -257720,6 +257884,7 @@
         <oboInOwl:hasExactSynonym>GALNT2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GalNAcT2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>galnac transferase 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>polypeptide n-acetylgalactosaminyltransferase 2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>udp-n-acetyl-alpha-d-galactosamine:polypeptide n-acetylgalactosaminyltransferase 2</oboInOwl:hasExactSynonym>
         <rdfs:label>GALNT2</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/4124"/>
@@ -267870,6 +268035,7 @@
         <oboInOwl:hasExactSynonym>tafii80</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tafii85</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor 2e</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor 6</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tbp-associated factor, RNA polymerase ii, 70- to 85-kd</oboInOwl:hasExactSynonym>
         <rdfs:label>TAF6</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/11540"/>
@@ -270209,6 +270375,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>PPP2R1B</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pp2aa-beta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein phosphatase 2, scaffold subunit a-beta</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>protein phosphatase 2, structural/regulatory subunit a, beta</oboInOwl:hasExactSynonym>
         <rdfs:label>PPP2R1B</rdfs:label>
     </owl:Class>
@@ -272221,6 +272388,7 @@
         <oboInOwl:hasExactSynonym>SMARCA4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>brm/swi2-related gene 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>snf2-beta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>swi/snf-related baf chromatin remodeling complex subunit atpase 4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>swi/snf-related, matrix-associated, actin-dependent regulator of chromatin, subfamily a, member 4</oboInOwl:hasExactSynonym>
         <rdfs:label>SMARCA4</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/11100"/>
@@ -274513,6 +274681,50 @@
     <owl:Class rdf:about="https://omim.org/entry/603374">
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- https://omim.org/entry/603375 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/603375">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr4q31.21"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621786"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>SMARCA5</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SNF2H</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sucrose nonfermenting, yeast, homolog of</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>swi/snf-related, matrix-associated, actin-dependent regulator of chromatin, subfamily a, member 5</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>wcrf135</oboInOwl:hasExactSynonym>
+        <rdfs:label>SMARCA5</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/11101"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/603375"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SMARCA5</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/603375"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SMARCA5</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/603375"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SNF2H</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
     
 
 
@@ -280585,7 +280797,7 @@
         <oboInOwl:hasExactSynonym>ELP1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IKAP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>IKBKAP</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>elongator acetyltransferase complex, subunit 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>elongator acyltransferase complex, subunit 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>elongator complex protein 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>elp1, yeast, homolog of</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ikk complex-associated protein</oboInOwl:hasExactSynonym>
@@ -282040,6 +282252,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>GNE</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>glcne</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>glucosamine (udp-n-acetyl)-2-epimerase/n-acetylmannosamine kinase</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>udp-n-acetylglucosamine 2-epimerase/n-acetylmannosamine kinase</oboInOwl:hasExactSynonym>
         <rdfs:label>GNE</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/23657"/>
@@ -289988,6 +290201,7 @@
         <oboInOwl:hasExactSynonym>pp2apr55-beta</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pr55-beta</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit b, beta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit b-beta</oboInOwl:hasExactSynonym>
         <rdfs:label>PPP2R2B</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/9305"/>
     </owl:Class>
@@ -297855,6 +298069,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>TAS2R16</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>t2r16</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>taste 2 receptor, member 16</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>taste receptor, type 2, member 16</oboInOwl:hasExactSynonym>
         <rdfs:label>TAS2R16</rdfs:label>
     </owl:Class>
@@ -298524,6 +298739,7 @@
         <oboInOwl:hasExactSynonym>TAF2B</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TAFII150</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cofactor of initiator function, 150-kd subunit</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor 2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tata box-binding protein-associated factor 2b</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tbp-associated factor, RNA polymerase ii, 150-kd</oboInOwl:hasExactSynonym>
         <rdfs:label>TAF2</rdfs:label>
@@ -299079,6 +299295,34 @@
         <owl:annotatedSource rdf:resource="https://omim.org/entry/604961"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>PDE11A</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/604964 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/604964">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr9p13.3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>SIT1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>shp2-interacting transmembrane adaptor protein 1</oboInOwl:hasExactSynonym>
+        <rdfs:label>SIT1</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/604964"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SIT1</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/604964"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SIT1</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -313113,7 +313357,7 @@
         <oboInOwl:hasExactSynonym>ZASP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cypher, mouse, homolog of</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>kiaa0613</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>lim domain-binding 3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>lim domain-binding protein 3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>z-band alternatively spliced pdz motif-containing protein</oboInOwl:hasExactSynonym>
         <rdfs:label>LDB3</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/15710"/>
@@ -314151,6 +314395,7 @@
         <oboInOwl:hasExactSynonym>PPP2R1A</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pr65-alpha</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>protein phosphatase 2, 65-kd regulatory subunit a, alpha</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein phosphatase 2, scaffold subunit a-alpha</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>protein phosphatase 2, structural/regulatory subunit a, alpha</oboInOwl:hasExactSynonym>
         <rdfs:label>PPP2R1A</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/9302"/>
@@ -323205,6 +323450,7 @@
         <oboInOwl:hasExactSynonym>SMARCAL1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hepa-related protein</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>smarca-like protein 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>snf2-related chromatin remodeling annealing helicase 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>swi/snf-related, matrix-associated, actin-dependent regulator of chromatin, subfamily a-like protein 1</oboInOwl:hasExactSynonym>
         <rdfs:label>SMARCAL1</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/11102"/>
@@ -333347,6 +333593,12 @@
                 <owl:someValuesFrom rdf:resource="https://omim.org/entry/119500"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621749"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>IRF6</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>interferon regulatory factor 6</oboInOwl:hasExactSynonym>
         <rdfs:label>IRF6</rdfs:label>
@@ -333667,6 +333919,7 @@
         <oboInOwl:hasExactSynonym>CARMA3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>bcl10-interacting maguk protein 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>card-maguk protein 3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>caspase recruitment domain family, member 10</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>caspase recruitment domain-containing protein 10</oboInOwl:hasExactSynonym>
         <rdfs:label>CARD10</rdfs:label>
     </owl:Class>
@@ -333729,6 +333982,7 @@
         <oboInOwl:hasExactSynonym>CARMA1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>bcl10-interacting maguk protein 3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>card-maguk protein 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>caspase recruitment domain family, member 11</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>caspase recruitment domain-containing protein 11</oboInOwl:hasExactSynonym>
         <rdfs:label>CARD11</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/16393"/>
@@ -333786,6 +334040,7 @@
         <oboInOwl:hasExactSynonym>CARMA2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>bcl10-interacting maguk protein 2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>card-maguk protein 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>caspase recruitment domain family, member 14</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>caspase recruitment domain-containing protein 14</oboInOwl:hasExactSynonym>
         <rdfs:label>CARD14</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/16446"/>
@@ -333833,6 +334088,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>CARD9</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>caspase recruitment domain family, member 9</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>caspase recruitment domain-containing protein 9</oboInOwl:hasExactSynonym>
         <rdfs:label>CARD9</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/16391"/>
@@ -335105,7 +335361,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>PRPF3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>hprp3</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>pre-mrna processing factor 3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pre-mrna-processing factor 3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>precursor mrna-processing factor 3, s. cerevisiae, homolog of</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>prp3</oboInOwl:hasExactSynonym>
         <rdfs:label>PRPF3</rdfs:label>
@@ -343052,6 +343308,7 @@
         <oboInOwl:hasExactSynonym>TSC22</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ptc</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>t2r61</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>taste 2 receptor, member 38</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>taste receptor, type 2, member 38</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>transforming growth factor beta-stimulated clone 22</oboInOwl:hasExactSynonym>
         <rdfs:label>TAS2R38</rdfs:label>
@@ -356647,6 +356904,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>MYH14</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>kiaa2034</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, heavy chain 14</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, heavy chain 14, nonmuscle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nmhc 2c</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nonmuscle myosin heavy chain 2c</oboInOwl:hasExactSynonym>
@@ -356900,28 +357158,6 @@
         <owl:annotatedSource rdf:resource="https://omim.org/entry/608579"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>severe cutaneous adverse reaction, susceptibility to</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
-    </owl:Axiom>
-    
-
-
-    <!-- https://omim.org/entry/608580 -->
-
-    <owl:Class rdf:about="https://omim.org/entry/608580">
-        <oboInOwl:hasExactSynonym>MYH16</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>myosin, heavy chain 16, skeletal muscle, pseudogene</oboInOwl:hasExactSynonym>
-        <rdfs:label>myosin, heavy chain 16, skeletal muscle, pseudogene</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://omim.org/entry/608580"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>MYH16</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://omim.org/entry/608580"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>myosin, heavy chain 16, skeletal muscle, pseudogene</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -363880,6 +364116,49 @@
     
 
 
+    <!-- https://omim.org/entry/608964 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/608964">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr14q22.3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621770"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>TBPL2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>TRF3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tata box-binding protein-like protein 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tpb-related factor 3</oboInOwl:hasExactSynonym>
+        <rdfs:label>TBPL2</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/19841"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/608964"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>TBPL2</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/608964"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>TBPL2</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/608964"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>TRF3</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    
+
+
     <!-- https://omim.org/entry/608965 -->
 
     <owl:Class rdf:about="https://omim.org/entry/608965">
@@ -365315,6 +365594,7 @@
         <oboInOwl:hasExactSynonym>CARDINAL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TUCAN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>card inhibitor of nfkb-activating ligands</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>caspase recruitment domain family, member 8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>caspase recruitment domain-containing protein 8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>kiaa0955</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ndpp1</oboInOwl:hasExactSynonym>
@@ -366021,6 +366301,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
                 <owl:someValuesFrom rdf:resource="https://omim.org/entry/615979"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621788"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>FBX14</oboInOwl:hasExactSynonym>
@@ -378351,9 +378637,9 @@
                 <owl:someValuesFrom rdf:resource="https://omim.org/entry/616566"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>C6ORF59</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C6ORF159</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RIPPLY2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>chromosome 6 open reading frame 59</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>chromosome 6 open reading frame 159</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ripply transcriptional repressor 2</oboInOwl:hasExactSynonym>
         <rdfs:label>RIPPLY2</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/21390"/>
@@ -378361,7 +378647,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/609891"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>C6ORF59</owl:annotatedTarget>
+        <owl:annotatedTarget>C6ORF159</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -378547,6 +378833,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>MYL9</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mlc2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>myosin, light chain 9</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>myosin, light chain 9, regulatory</oboInOwl:hasExactSynonym>
         <rdfs:label>MYL9</rdfs:label>
     </owl:Class>
@@ -385265,6 +385552,7 @@
         <oboInOwl:hasExactSynonym>GALNT12</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GalNAcT12</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>galnac transferase 12</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>polypeptide n-acetylgalactosaminyltransferase 12</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>udp-n-acetyl-alpha-d-galactosamine:polypeptide n-acetylgalactosaminyltransferase 12</oboInOwl:hasExactSynonym>
         <rdfs:label>GALNT12</rdfs:label>
     </owl:Class>
@@ -397068,6 +397356,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>EPHA10</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>eph receptor a10</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ephrin receptor EPHA10</oboInOwl:hasExactSynonym>
         <rdfs:label>EPHA10</rdfs:label>
     </owl:Class>
@@ -420999,6 +421288,7 @@
         <oboInOwl:hasExactSynonym>enhancer trap locus 1, mouse, homolog of</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>human helicase 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>kiaa1122</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>snf2-related chromatin remodeling atpase with dexd box 1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>swi/snf-related, matrix-associated actin-dependent regulator of chromatin, subfamily a, dead/h box-containing, 1</oboInOwl:hasExactSynonym>
         <rdfs:label>SMARCAD1</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/18398"/>
@@ -422366,6 +422656,43 @@
         <owl:annotatedSource rdf:resource="https://omim.org/entry/612843"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>keratosis follicularis spinulosa decalvans, autosomal dominant</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/612846 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/612846">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr3q12.3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621758"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>SENP7</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>kiaa1707</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sentrin-specific protease family, member 7</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sumo-specific protease 7</oboInOwl:hasExactSynonym>
+        <rdfs:label>SENP7</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/30402"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/612846"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SENP7</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/612846"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SENP7</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -461977,6 +462304,41 @@
     
 
 
+    <!-- https://omim.org/entry/614630 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/614630">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr6q24.3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621783"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>ADGB</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>androglobin</oboInOwl:hasExactSynonym>
+        <rdfs:label>ADGB</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/21212"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/614630"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ADGB</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/614630"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ADGB</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
     <!-- https://omim.org/entry/614631 -->
 
     <owl:Class rdf:about="https://omim.org/entry/614631">
@@ -470582,8 +470944,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>IBGC4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PFBC4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, 4</oboInOwl:hasExactSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, 4</rdfs:label>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 4, autosomal dominant</oboInOwl:hasExactSynonym>
+        <rdfs:label>primary familial brain calcification 4, autosomal dominant</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/615007"/>
@@ -470594,7 +470958,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/615007"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, 4</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC4</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/615007"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 4, autosomal dominant</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -479831,8 +480201,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>IBGC5</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PFBC5</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, 5</oboInOwl:hasExactSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, 5</rdfs:label>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 5, autosomal dominant</oboInOwl:hasExactSynonym>
+        <rdfs:label>primary familial brain calcification 5, autosomal dominant</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/615483"/>
@@ -479843,7 +480215,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/615483"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, 5</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC5</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/615483"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 5, autosomal dominant</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -488465,6 +488843,57 @@
     
 
 
+    <!-- https://omim.org/entry/615886 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/615886">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr17p11.2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621791"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>FAM83G</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PAWS1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>SACK1G</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>family with sequence similarity 83, member g</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein associated with smad1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>scaffolding ck1-anchoring protein g</oboInOwl:hasExactSynonym>
+        <rdfs:label>SACK1G</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/32554"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/615886"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>FAM83G</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/615886"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>PAWS1</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/615886"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SACK1G</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/615886"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SACK1G</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
     <!-- https://omim.org/entry/615887 -->
 
     <owl:Class rdf:about="https://omim.org/entry/615887">
@@ -488813,7 +489242,8 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>PPP2R3C</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>g5pr</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit b-double prime, gamma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit b-double-prime, gamma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protein phosphatase 2, regulatory subunit b-double-prime-gamma</oboInOwl:hasExactSynonym>
         <rdfs:label>PPP2R3C</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/17485"/>
     </owl:Class>
@@ -499614,8 +500044,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>IBGC6</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PFBC6</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, 6</oboInOwl:hasExactSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, 6</rdfs:label>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 6, autosomal dominant</oboInOwl:hasExactSynonym>
+        <rdfs:label>primary familial brain calcification 6, autosomal dominant</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/616413"/>
@@ -499626,7 +500058,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/616413"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, 6</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC6</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/616413"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 6, autosomal dominant</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -514576,6 +515014,7 @@
         <oboInOwl:hasExactSynonym>TMTC3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>smile</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>transmembrane and tetratricopeptide repeat domains-containing protein 3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>transmembrane o-mannosyltransferase targeting cadherins 3</oboInOwl:hasExactSynonym>
         <rdfs:label>TMTC3</rdfs:label>
         <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/26899"/>
     </owl:Class>
@@ -515265,6 +515704,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
                 <owl:someValuesFrom rdf:resource="https://omim.org/entry/617268"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621777"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>HECW2</oboInOwl:hasExactSynonym>
@@ -517374,6 +517819,35 @@
         <owl:annotatedSource rdf:resource="https://omim.org/entry/617364"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>congenital heart defects and ectodermal dysplasia</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/617366 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/617366">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr12p11.22"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>CCDC91</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>coiled-coil domain-containing protein 91</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>p56</oboInOwl:hasExactSynonym>
+        <rdfs:label>CCDC91</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/617366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CCDC91</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/617366"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CCDC91</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -533798,6 +534272,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>TMTC4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>transmembrane and tetratricopeptide repeat domains-containing protein 4</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>transmembrane o-mannosyltransferase targeting cadherins 4</oboInOwl:hasExactSynonym>
         <rdfs:label>TMTC4</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -536683,8 +537158,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>IBGC7</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PFBC7</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, 7, autosomal recessive</oboInOwl:hasExactSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, 7, autosomal recessive</rdfs:label>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 7, autosomal recessive</oboInOwl:hasExactSynonym>
+        <rdfs:label>primary familial brain calcification 7, autosomal recessive</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/618317"/>
@@ -536695,7 +537172,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/618317"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, 7, autosomal recessive</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC7</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/618317"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 7, autosomal recessive</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -546959,8 +547442,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>IBGC8</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PFBC8</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, 8, autosomal recessive</oboInOwl:hasExactSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, 8, autosomal recessive</rdfs:label>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 8, autosomal recessive</oboInOwl:hasExactSynonym>
+        <rdfs:label>primary familial brain calcification 8, autosomal recessive</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/618824"/>
@@ -546971,7 +547456,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/618824"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, 8, autosomal recessive</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC8</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/618824"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 8, autosomal recessive</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -582932,8 +583423,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>IBGC9</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PFBC9</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, 9, autosomal recessive</oboInOwl:hasExactSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, 9, autosomal recessive</rdfs:label>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 9, autosomal recessive</oboInOwl:hasExactSynonym>
+        <rdfs:label>primary familial brain calcification 9, autosomal recessive</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/620786"/>
@@ -582944,7 +583437,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/620786"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, 9, autosomal recessive</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC9</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/620786"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 9, autosomal recessive</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -585873,8 +586372,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>IBGC10</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PFBC10</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, 10, autosomal recessive</oboInOwl:hasExactSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, 10, autosomal recessive</rdfs:label>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 10, autosomal recessive</oboInOwl:hasExactSynonym>
+        <rdfs:label>primary familial brain calcification 10, autosomal recessive</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/621018"/>
@@ -585885,7 +586386,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/621018"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, 10, autosomal recessive</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC10</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621018"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 10, autosomal recessive</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -588137,6 +588644,7 @@
     <!-- https://omim.org/entry/621224 -->
 
     <owl:Class rdf:about="https://omim.org/entry/621224">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS305100"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
@@ -591148,8 +591656,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>IBGC11</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PFBC11</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>basal ganglia calcification, idiopathic, 11, autosomal recessive</oboInOwl:hasExactSynonym>
-        <rdfs:label>basal ganglia calcification, idiopathic, 11, autosomal recessive</rdfs:label>
+        <oboInOwl:hasExactSynonym>primary familial brain calcification 11, autosomal recessive</oboInOwl:hasExactSynonym>
+        <rdfs:label>primary familial brain calcification 11, autosomal recessive</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/621452"/>
@@ -591160,7 +591670,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/621452"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>basal ganglia calcification, idiopathic, 11, autosomal recessive</owl:annotatedTarget>
+        <owl:annotatedTarget>PFBC11</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621452"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>primary familial brain calcification 11, autosomal recessive</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -593089,6 +593605,7 @@
     <!-- https://omim.org/entry/621608 -->
 
     <owl:Class rdf:about="https://omim.org/entry/621608">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS308350"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
@@ -593123,6 +593640,7 @@
     <!-- https://omim.org/entry/621619 -->
 
     <owl:Class rdf:about="https://omim.org/entry/621619">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS258150"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
@@ -594037,6 +594555,29 @@
     
 
 
+    <!-- https://omim.org/entry/621699 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621699">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS300755"/>
+        <oboInOwl:hasExactSynonym>IMD135</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immunodeficiency 135</oboInOwl:hasExactSynonym>
+        <rdfs:label>immunodeficiency 135</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621699"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>IMD135</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621699"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>immunodeficiency 135</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
     <!-- https://omim.org/entry/621704 -->
 
     <owl:Class rdf:about="https://omim.org/entry/621704">
@@ -594421,8 +594962,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>MRSG</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>myopathy with rigid spine, scoliosis, and male-limited hypogonadotropic hypogonadism</oboInOwl:hasExactSynonym>
-        <rdfs:label>myopathy with rigid spine, scoliosis, and male-limited hypogonadotropic hypogonadism</rdfs:label>
+        <oboInOwl:hasExactSynonym>myopathy with rigid spine, scoliosis, and male-limited hypergonadotropic hypogonadism</oboInOwl:hasExactSynonym>
+        <rdfs:label>myopathy with rigid spine, scoliosis, and male-limited hypergonadotropic hypogonadism</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/621734"/>
@@ -594433,7 +594974,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://omim.org/entry/621734"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>myopathy with rigid spine, scoliosis, and male-limited hypogonadotropic hypogonadism</owl:annotatedTarget>
+        <owl:annotatedTarget>myopathy with rigid spine, scoliosis, and male-limited hypergonadotropic hypogonadism</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -594469,6 +595010,398 @@
         <owl:annotatedSource rdf:resource="https://omim.org/entry/621738"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>intellectual developmental disorder, autosomal recessive 86</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621741 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621741">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002525"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHR_9606chr19q13.32"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004013"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621766"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>CCDC9</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>coiled-coil domain-containing protein 9</oboInOwl:hasExactSynonym>
+        <rdfs:label>CCDC9</rdfs:label>
+        <skos:exactMatch rdf:resource="http://identifiers.org/hgnc/24560"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621741"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CCDC9</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621741"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CCDC9</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621743 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621743">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS607594"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/10830"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/601768"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>CVID16</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>immunodeficiency, common variable, 16</oboInOwl:hasExactSynonym>
+        <rdfs:label>immunodeficiency, common variable, 16</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621743"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>CVID16</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621743"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>immunodeficiency, common variable, 16</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621749 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621749">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS305100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/6121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/607199"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>ECTD19</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ectodermal dysplasia 19, hypohidrotic/tooth/nail type</oboInOwl:hasExactSynonym>
+        <rdfs:label>ectodermal dysplasia 19, hypohidrotic/tooth/nail type</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621749"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ECTD19</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621749"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ectodermal dysplasia 19, hypohidrotic/tooth/nail type</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621758 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621758">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS617468"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/30402"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/612846"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>AMC9</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>arthrogryposis multiplex congenita 9, with immunodeficiency</oboInOwl:hasExactSynonym>
+        <rdfs:label>arthrogryposis multiplex congenita 9, with immunodeficiency</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621758"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>AMC9</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621758"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>arthrogryposis multiplex congenita 9, with immunodeficiency</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621766 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621766">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS258150"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/24560"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/621741"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>SPGF104</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spermatogenic failure 104</oboInOwl:hasExactSynonym>
+        <rdfs:label>spermatogenic failure 104</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621766"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SPGF104</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621766"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>spermatogenic failure 104</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621770 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621770">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS615774"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/19841"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/608964"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>OZEMA29</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>oocyte/zygote/embryo maturation arrest 29</oboInOwl:hasExactSynonym>
+        <rdfs:label>oocyte/zygote/embryo maturation arrest 29</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621770"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>OZEMA29</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621770"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>oocyte/zygote/embryo maturation arrest 29</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621777 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621777">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS308350"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/29853"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/617245"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>DEE123</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>developmental and epileptic encephalopathy 123</oboInOwl:hasExactSynonym>
+        <rdfs:label>developmental and epileptic encephalopathy 123</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621777"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>DEE123</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621777"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>developmental and epileptic encephalopathy 123</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621781 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621781">
+        <obo:IAO_0100001 rdf:resource="https://omim.org/entry/301174"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- https://omim.org/entry/621783 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621783">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS258150"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/21212"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/614630"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>SPGF105</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>spermatogenic failure 105</oboInOwl:hasExactSynonym>
+        <rdfs:label>spermatogenic failure 105</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621783"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>SPGF105</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621783"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>spermatogenic failure 105</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621786 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621786">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/11101"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/603375"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>LHS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>li-hakonarson syndrome</oboInOwl:hasExactSynonym>
+        <rdfs:label>li-hakonarson syndrome</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621786"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>LHS</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621786"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>li-hakonarson syndrome</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621788 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621788">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/16510"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/609102"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>KRRS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>kruer syndrome</oboInOwl:hasExactSynonym>
+        <rdfs:label>kruer syndrome</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621788"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>KRRS</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621788"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>kruer syndrome</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://omim.org/entry/621791 -->
+
+    <owl:Class rdf:about="https://omim.org/entry/621791">
+        <rdfs:subClassOf rdf:resource="https://omim.org/phenotypicSeries/PS305100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/hgnc/32554"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004003"/>
+                <owl:someValuesFrom rdf:resource="https://omim.org/entry/615886"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>ECTD20</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ectodermal dysplasia 20, hair/nail type</oboInOwl:hasExactSynonym>
+        <rdfs:label>ectodermal dysplasia 20, hair/nail type</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621791"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ECTD20</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#ABBREVIATION"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://omim.org/entry/621791"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ectodermal dysplasia 20, hair/nail type</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/mondo#GENERATED_FROM_LABEL"/>
     </owl:Axiom>
     
@@ -617347,19 +618280,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002200"/>
                 <owl:someValuesFrom rdf:resource="https://omim.org/entry/603176"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://www.ncbi.nlm.nih.gov/gene/84176 -->
-
-    <owl:Class rdf:about="https://www.ncbi.nlm.nih.gov/gene/84176">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002200"/>
-                <owl:someValuesFrom rdf:resource="https://omim.org/entry/608580"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
